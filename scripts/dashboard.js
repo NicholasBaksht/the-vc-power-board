@@ -105,17 +105,16 @@ function computeGenomeScores(firm) {
   const philScores = computePhilosophyScores(firm);
   const philIntensity = (philScores.reduce((sum, c) => sum + c.score, 0) / (philScores.length * 5)) * 100;
 
-  const dimensions = [
-    { key: 'fundSize', label: 'Fund Size', value: Math.round((parseAumNumber(firm.aum) / maxAUM) * 100), color: '#C9A227' },
-    { key: 'portfolio', label: 'Portfolio Breadth', value: Math.round((firm.holdings.length / maxHoldings) * 100), color: '#D4AF37' },
-    { key: 'stageBreadth', label: 'Stage Breadth', value: Math.round(((firmStages[firm.slug] || []).length / 6) * 100), color: '#E8C466' },
-    { key: 'sectorBreadth', label: 'Sector Breadth', value: Math.round((firm.sectors.length / maxSectors) * 100), color: '#B8860B' },
-    { key: 'geoReach', label: 'Geographic Reach', value: Math.round((computeGeography(firm).length / maxRegions) * 100), color: '#8FA5B3' },
-    { key: 'longevity', label: 'Years Active', value: Math.round(((currentYear - firm.founded) / maxYearsActive) * 100), color: '#6B8E9E' },
-  { key: 'powerScore', label: 'Power Score™', value: computePowerScore(firm), color: '#C9A227' },
-{ key: 'philosophy', label: 'Focus Intensity', value: Math.round(philIntensity), color: '#E8C466' }
+const dimensions = [
+    { key: 'fundSize', label: 'Fund Size', value: Math.round((parseAumNumber(firm.aum) / maxAUM) * 100), color: '#2F6FED' },
+    { key: 'portfolio', label: 'Portfolio Breadth', value: Math.round((firm.holdings.length / maxHoldings) * 100), color: '#5B8DEF' },
+    { key: 'stageBreadth', label: 'Stage Breadth', value: Math.round(((firmStages[firm.slug] || []).length / 6) * 100), color: '#7CA8F7' },
+    { key: 'sectorBreadth', label: 'Sector Breadth', value: Math.round((firm.sectors.length / maxSectors) * 100), color: '#1E4FBF' },
+    { key: 'geoReach', label: 'Geographic Reach', value: Math.round((computeGeography(firm).length / maxRegions) * 100), color: '#4DD2E8' },
+    { key: 'longevity', label: 'Years Active', value: Math.round(((currentYear - firm.founded) / maxYearsActive) * 100), color: '#6C8CB8' },
+  { key: 'powerScore', label: 'Power Score™', value: computePowerScore(firm), color: '#2F6FED' },
+{ key: 'philosophy', label: 'Focus Intensity', value: Math.round(philIntensity), color: '#8B5CF6' }
   ];
-
   return dimensions;
 }
 
