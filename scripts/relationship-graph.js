@@ -151,6 +151,16 @@ function expandNode(node) {
         edges.push(makeEdge(node.id, prevFirm.slug, REL_TYPES.PREVIOUSLY_AT, yearLabel));
       });
     }
+    getPartnerBoardCompanies(node.profileSlug).slice(0, 8).forEach(name => {
+      const companyId = `company:${name}`;
+      nodes.push(makeNode(companyId, NODE_TYPES.COMPANY, name));
+      edges.push(makeEdge(node.id, companyId, REL_TYPES.BOARD_SEAT, 'Board seat'));
+    });
+    getPartnerNotableInvestments(node.profileSlug).slice(0, 8).forEach(inv => {
+      const companyId = `company:${inv.name}`;
+      nodes.push(makeNode(companyId, NODE_TYPES.COMPANY, inv.name, { ticker: inv.ticker }));
+      edges.push(makeEdge(node.id, companyId, REL_TYPES.INVESTED_IN, inv.ticker || 'Notable investment'));
+    });
   }
 
   if (node.type === NODE_TYPES.FIRM) {
@@ -163,18 +173,61 @@ function expandNode(node) {
       const otherFirm = firms.find(f => f.slug === ov.firmSlug);
       if (!otherFirm) return;
       nodes.push(makeNode(otherFirm.slug, NODE_TYPES.FIRM, otherFirm.name, { aum: otherFirm.aum }));
-      const label = `Connected through ${ov.companies.length} portfolio compan${ov.companies.length === 1 ? 'y' : 'ies'}: ${ov.companies.slice(0, 3).join(', ')}`;
-      edges.push(makeEdge(node.id, otherFirm.slug, REL_TYPES.PORTFOLIO_CONNECTION, label));
+      const label = `Connected through ${ov.companies.length} shared portfolio compan${ov.companies.length === 1 ? 'y' : 'ies'}`;
+      edges.push(makeEdge(node.id, otherFirm.slug, REL_TYPES.PORTFOLIO_CONNECTION, label, { companies: ov.companies }));
     });
+    getFormerPartnerBridges(node.id).forEach(bridge => {
+      const otherFirm = firms.find(f => f.slug === bridge.firmSlug);
+      if (!otherFirm) return;
+      nodes.push(makeNode(otherFirm.slug, NODE_TYPES.FIRM, otherFirm.name, { aum: otherFirm.aum }));
+      const names = bridge.people.map(p => p.name);
+      const label = `Connected through ${names.length} former partner${names.length === 1 ? '' : 's'}: ${names.join(', ')}`;
+      edges.push(makeEdge(node.id, otherFirm.slug, REL_TYPES.FORMER_PARTNER, label, { people: bridge.people }));
+    });
+    // One sector hub and one geo hub per expansion, so a firm click
+    // adds a manageable amount rather than every sector at once -
+    // clicking the hub itself reveals the real peer firms.
+    const firm = firms.find(f => f.slug === node.id);
+    if (firm && firm.sectors && firm.sectors[0]) {
+      const sectorId = `sector:${firm.sectors[0]}`;
+      nodes.push(makeNode(sectorId, NODE_TYPES.SECTOR, firm.sectors[0]));
+      edges.push(makeEdge(node.id, sectorId, REL_TYPES.SECTOR_PEER, `Sector: ${firm.sectors[0]}`));
+    }
+    if (firm && firm.hq) {
+      const country = getCountryFromHQ(firm.hq);
+      if (country) {
+        const geoId = `geo:${country}`;
+        nodes.push(makeNode(geoId, NODE_TYPES.GEO, country));
+        edges.push(makeEdge(node.id, geoId, REL_TYPES.GEO_PEER, `Headquartered in ${country}`));
+      }
+    }
   }
 
   if (node.type === NODE_TYPES.COMPANY) {
     const companyName = node.label;
-    firms.forEach(f => {
-      if (f.holdings.some(h => h.name === companyName)) {
-        nodes.push(makeNode(f.slug, NODE_TYPES.FIRM, f.name, { aum: f.aum }));
-        edges.push(makeEdge(node.id, f.slug, REL_TYPES.INVESTED_IN, f.name));
-      }
+    getCompanyHolders(companyName).forEach(f => {
+      nodes.push(makeNode(f.slug, NODE_TYPES.FIRM, f.name, { aum: f.aum }));
+      edges.push(makeEdge(node.id, f.slug, REL_TYPES.INVESTED_IN, f.name));
+    });
+    getCompanyBoardMembers(companyName).forEach(m => {
+      nodes.push(makeNode(m.profileSlug, NODE_TYPES.PARTNER, m.name, { profileSlug: m.profileSlug }));
+      edges.push(makeEdge(node.id, m.profileSlug, REL_TYPES.BOARD_SEAT, 'Board seat'));
+    });
+  }
+
+  if (node.type === NODE_TYPES.SECTOR) {
+    const sectorName = node.label;
+    firms.filter(f => (f.sectors || []).includes(sectorName)).slice(0, 15).forEach(f => {
+      nodes.push(makeNode(f.slug, NODE_TYPES.FIRM, f.name, { aum: f.aum }));
+      edges.push(makeEdge(node.id, f.slug, REL_TYPES.SECTOR_PEER, `Both in ${sectorName}`));
+    });
+  }
+
+  if (node.type === NODE_TYPES.GEO) {
+    const country = node.label;
+    firms.filter(f => getCountryFromHQ(f.hq) === country).slice(0, 15).forEach(f => {
+      nodes.push(makeNode(f.slug, NODE_TYPES.FIRM, f.name, { aum: f.aum }));
+      edges.push(makeEdge(node.id, f.slug, REL_TYPES.GEO_PEER, `Both headquartered in ${country}`));
     });
   }
 
