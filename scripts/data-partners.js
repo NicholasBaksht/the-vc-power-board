@@ -777,7 +777,10 @@ const partnerProfiles = {
   education: ["College of Engineering, Guindy (Chennai), B.E. Electronics and Communication", "University of Michigan, M.S. Electrical Engineering", "University of Chicago Booth School of Business, MBA"],
   previousExperience: [
     "Technical & product marketing roles, three Silicon Valley semiconductor/wireless startups (3G, WiFi, Bluetooth)",
-    "Corporate Vice President & Managing Director, Qualcomm Ventures (11 years)"
+"Corporate Vice President & Managing Director, Qualcomm Ventures (11 years)"
+  ],
+  firmHistory: [
+    { firmSlug: "qualcomm-ventures", role: "Corporate VP & Managing Director", startYear: null, endYear: null }
   ],
   boardSeats: [],
   ipoCount: null,
