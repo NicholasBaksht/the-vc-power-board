@@ -1,0 +1,247 @@
+/* ============================================================
+   DISCOVERY-ENGINE.CSS
+   The free-text search bar, example query chips, parsed-criteria
+   summary, and the enriched result cards (score, checks, relevant
+   partners/companies, cross-feature links).
+   ============================================================ */
+.disc-search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.disc-search-input {
+  flex: 1;
+  font-family: var(--sans);
+  font-size: 15px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  padding: 13px 16px;
+}
+.disc-search-input:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+.disc-search-btn {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--bg);
+  background: var(--gold);
+  border: none;
+  border-radius: 6px;
+  padding: 0 22px;
+  cursor: pointer;
+}
+.disc-search-btn:hover {
+  background: var(--gold-bright);
+}
+.disc-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.disc-example-chip {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-dim);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 20px;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+.disc-example-chip:hover {
+  border-color: var(--gold);
+  color: var(--gold-bright);
+}
+
+.disc-notes {
+  margin-bottom: 16px;
+}
+.disc-note {
+  font-size: 13px;
+  color: var(--ink-dim);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--gold);
+  border-radius: 3px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+.disc-parsed {
+  font-size: 13px;
+  color: var(--ink-dim);
+  margin-bottom: 16px;
+  line-height: 2;
+}
+.disc-parsed-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-right: 6px;
+}
+.disc-parsed-tag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--ink);
+  background: var(--surface-raised);
+  border: 1px solid var(--hairline);
+  border-radius: 20px;
+  padding: 4px 11px;
+  margin-right: 6px;
+}
+.disc-refine-btn {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--gold);
+  background: none;
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: 9px 14px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+.disc-refine-btn:hover {
+  border-color: var(--gold);
+}
+.disc-results-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 24px 0 14px;
+}
+
+.disc-result-card {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+.disc-result-head {
+  display: flex;
+  gap: 18px;
+}
+.disc-score-block {
+  text-align: center;
+  min-width: 84px;
+  flex-shrink: 0;
+}
+.disc-score-pct {
+  font-family: var(--mono);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gold-bright);
+  line-height: 1;
+}
+.disc-score-quality {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 4px;
+}
+.disc-result-main {
+  flex: 1;
+  min-width: 0;
+}
+.disc-result-name {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 19px;
+}
+.disc-result-name a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.disc-result-name a:hover {
+  color: var(--gold-bright);
+}
+.disc-result-meta {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-dim);
+  margin: 3px 0 10px;
+}
+.disc-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.disc-check {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--ink);
+  background: var(--surface-raised);
+  border: 1px solid var(--hairline);
+  border-radius: 20px;
+  padding: 4px 10px;
+}
+.disc-check-sector, .disc-check-stage, .disc-check-location, .disc-check-fund, .disc-check-focus, .disc-check-company {
+  border-color: #4ade80;
+  color: #4ade80;
+}
+.disc-check-network {
+  border-color: #7dd3fc;
+  color: #7dd3fc;
+}
+.disc-check-miss {
+  border-color: #f472b6;
+  color: #f472b6;
+}
+.disc-network-detail {
+  font-size: 12px;
+  color: var(--ink-dim);
+  margin-top: 8px;
+  font-style: italic;
+}
+.disc-relevant-row {
+  font-size: 13px;
+  color: var(--ink-dim);
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--hairline);
+}
+.disc-relevant-label {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin-right: 6px;
+}
+.disc-relevant-link {
+  color: var(--gold);
+  text-decoration: none;
+}
+.disc-relevant-link:hover {
+  color: var(--gold-bright);
+}
+.disc-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--hairline);
+}
+.disc-link {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--gold);
+  text-decoration: none;
+}
+.disc-link:hover {
+  color: var(--gold-bright);
+}
