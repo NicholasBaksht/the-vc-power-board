@@ -342,7 +342,6 @@ const firmStages = {
   'mucker-capital': ['Pre-Seed', 'Seed', 'Series A'],
   'struck-capital': ['Pre-Seed', 'Seed'],
   'science-inc': ['Pre-Seed', 'Seed'],
-  'wing-venture-capital': ['Seed', 'Series A'],
   'soma-capital': ['Seed'],
   'vy-capital': ['Growth', 'Late Stage'],
   'iconiq-capital': ['Series A', 'Series B', 'Growth'],
