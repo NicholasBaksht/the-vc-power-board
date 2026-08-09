@@ -310,18 +310,19 @@ function renderMarketSignals() {
   marketSignalFilters = { types: new Set(), sector: '', geo: '', firmSlug: '', strength: '' };
   marketSignalSort = 'strongest';
 
-  document.getElementById('powerSignalsView').innerHTML = `
+document.getElementById('powerSignalsView').innerHTML = `
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">VC Market Signals</div>
     <div class="reports-intro">
-      <p>Signals calculated from real, dated data already tracked on this page — not written, not summarized by AI. A signal only appears once there's enough real underlying data to support it; thin or ambiguous trends are left out rather than shown as fact.</p>
+      <p>Signals calculated from real, dated data already tracked on this page — not written, not summarized by AI. A signal only appears once there's enough real underlying data to support it; thin or ambiguous trends are left out rather than shown as fact. Only 3 signal types are currently supported (Momentum, Partner Momentum, Network Expansion) — 5 others (Emerging Sector, Geographic Expansion, Capital Deployment, Portfolio Momentum, Strategic Shift) require data this app doesn't have yet, so they're withheld rather than faked.</p>
     </div>
 
     <div id="marketSignalTop"></div>
+    <div id="marketSignalSections"></div>
+    <div class="detail-subhead">Firm Signals — Browse All</div>
     <div id="marketSignalFilterBar"></div>
     <div id="marketSignalResults"></div>
   `;
-
   const marketSignal = computeMarketPartnerMovementSignal();
   document.getElementById('marketSignalTop').innerHTML = marketSignal ? `
     <div class="ps-market-card">
