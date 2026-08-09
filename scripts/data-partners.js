@@ -308,7 +308,10 @@ const partnerProfiles = {
     "Investment Banking, Goldman Sachs & Co.",
     "Head of Mergers and Acquisitions, CMGI",
     "Founding Member, AOLTW Ventures / Managing Director, TimeWarner Investments",
-    "Managing Director, General Catalyst Partners (12 years)"
+  "Managing Director, General Catalyst Partners (12 years)"
+  ],
+  firmHistory: [
+    { firmSlug: "general-catalyst", role: "Managing Director", startYear: null, endYear: null }
   ],
   boardSeats: [],
   ipoCount: null,
