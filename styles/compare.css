@@ -128,3 +128,149 @@
     border-radius: 3px;
     margin: 2px 4px 2px 0;
   }
+/* ---------- VC DNA COMPARISON (extends the Compare page) ---------- */
+.dna-comparison {
+  margin-top: 20px;
+}
+.dna-comparison-sub {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink-dim);
+  max-width: 680px;
+  margin-bottom: 20px;
+}
+.dna-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+.dna-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--ink-dim);
+}
+.dna-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dna-personality-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 32px;
+}
+.dna-personality-card {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid;
+  border-radius: 3px;
+  padding: 16px 18px;
+}
+.dna-personality-firm {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.dna-personality-sentence {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.dna-section-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 28px 0 14px;
+}
+
+.dna-genome-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.dna-genome-dimension {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  padding: 14px 16px;
+}
+.dna-genome-dimension-label {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.dna-genome-bar-row {
+  display: grid;
+  grid-template-columns: 90px 1fr 34px;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 0;
+}
+.dna-genome-bar-firm {
+  font-family: var(--mono);
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dna-genome-bar-track {
+  height: 8px;
+  background: var(--surface-raised);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.dna-genome-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+.dna-genome-bar-value {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-dim);
+  text-align: right;
+}
+
+.dna-focus-row, .dna-geo-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.dna-focus-col, .dna-geo-col {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  padding: 14px 16px;
+}
+.dna-focus-firm, .dna-geo-firm {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.dna-focus-empty {
+  font-size: 12.5px;
+  color: var(--ink-dim);
+  font-style: italic;
+}
+.dna-geo-region {
+  font-size: 13px;
+  color: var(--ink);
+  padding: 3px 0;
+}
