@@ -109,12 +109,19 @@
     color: var(--ink);
     border-bottom-color: var(--hairline);
   }
- .nav-link:active,
+.nav-link:active,
   .nav-link.active {
     color: var(--gold-bright);
     border-bottom-color: var(--gold);
   }
-
+  .nav-divider {
+    flex-shrink: 0;
+    width: 1px;
+    align-self: center;
+    height: 20px;
+    background: var(--hairline);
+    margin: 0 4px;
+  }
   /* ---------- TICKER ---------- */
   .ticker-outer {
     background: var(--surface);
