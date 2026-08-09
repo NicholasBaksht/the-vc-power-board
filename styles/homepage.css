@@ -45,8 +45,8 @@
     margin: 8px 0 24px;
     padding: 26px 28px;
     border-radius: 3px;
-    background: linear-gradient(135deg, rgba(201,162,39,0.08), rgba(201,162,39,0.01));
-    border: 1px solid rgba(201,162,39,0.30);
+  background: linear-gradient(135deg, rgba(47,111,237,0.08), rgba(47,111,237,0.01));
+    border: 1px solid rgba(47,111,237,0.30);
   }
   .featured-firm-label {
     font-family: var(--mono);
