@@ -94,7 +94,7 @@ function buildEcosystemGraph() {
 
   return { nodes, edges };
 }
-const EDGE_COLORS = { lineage: '#a78bfa', portfolio: '#e8c34a', board: '#4ade80' };
+const EDGE_COLORS = { lineage: '#a78bfa', portfolio: '#2F6FED', board: '#4ade80' };
 const EDGE_LABELS = { lineage: 'Firm Lineage', portfolio: 'Portfolio Overlap', board: 'Shared Board Seat' };
 
 let selectedNodeId = null;
