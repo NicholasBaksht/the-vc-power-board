@@ -834,7 +834,10 @@ const partnerProfiles = {
   joinedYear: 2018,
   education: [],
   previousExperience: [
-    "Partner, Lightspeed Venture Partners (12 years)"
+"Partner, Lightspeed Venture Partners (12 years)"
+  ],
+  firmHistory: [
+    { firmSlug: "lightspeed", role: "Partner", startYear: null, endYear: null }
   ],
   boardSeats: [],
   ipoCount: null,
