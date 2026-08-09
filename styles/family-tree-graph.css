@@ -1,0 +1,229 @@
+/* ============================================================
+   FAMILY-TREE-GRAPH.CSS
+   The interactive VC Family Tree: search, legend, zoomable/
+   pannable canvas, and the click-to-explain side panel.
+   ============================================================ */
+
+.ft-controls {
+  position: relative;
+  margin-bottom: 16px;
+}
+.ft-search-input {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  padding: 12px 16px;
+}
+.ft-search-input:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+.ft-search-results {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0; right: 0;
+  background: var(--surface-raised);
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  z-index: 20;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.ft-search-result {
+  padding: 10px 16px;
+  font-size: 13.5px;
+  color: var(--ink);
+  cursor: pointer;
+}
+.ft-search-result:hover {
+  background: var(--surface);
+  color: var(--gold-bright);
+}
+.ft-search-empty {
+  padding: 10px 16px;
+  font-size: 13px;
+  color: var(--ink-dim);
+  font-style: italic;
+}
+
+.ft-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 12px 18px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+.ft-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-dim);
+}
+.ft-legend-line {
+  width: 18px;
+  height: 3px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.ft-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+}
+@media (max-width: 860px) {
+  .ft-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ft-canvas-wrap {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+  overflow: hidden;
+}
+#ftSvg {
+  display: block;
+  cursor: grab;
+}
+.ft-canvas-hint {
+  position: absolute;
+  bottom: 10px;
+  left: 14px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-dim);
+  opacity: 0.7;
+  pointer-events: none;
+}
+.ft-node {
+  cursor: pointer;
+}
+.ft-node-label {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  fill: var(--ink-dim);
+  pointer-events: none;
+}
+
+.ft-side-panel {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+  padding: 20px;
+  align-self: start;
+  max-height: 560px;
+  overflow-y: auto;
+}
+.ft-panel-empty, .ft-panel-empty-small {
+  color: var(--ink-dim);
+  font-style: italic;
+}
+.ft-panel-empty-small {
+  padding: 14px 0;
+  font-size: 13px;
+}
+.ft-panel-header {
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.ft-panel-type-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  padding: 2px 7px;
+  margin-bottom: 8px;
+}
+.ft-panel-name {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 19px;
+  color: var(--ink);
+}
+.ft-panel-role {
+  font-size: 12.5px;
+  color: var(--ink-dim);
+  margin-top: 2px;
+}
+.ft-panel-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--gold);
+  text-decoration: none;
+}
+.ft-panel-link:hover {
+  color: var(--gold-bright);
+}
+.ft-panel-connections-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin-bottom: 10px;
+}
+.ft-panel-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.ft-panel-row:last-child {
+  border-bottom: none;
+}
+.ft-panel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+.ft-panel-row-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ft-panel-row-name {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--ink);
+}
+.ft-panel-row-type {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--gold);
+}
+.ft-panel-row-label {
+  font-size: 12px;
+  color: var(--ink-dim);
+}
+.ft-panel-note {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--hairline);
+  font-size: 12px;
+  color: var(--ink-dim);
+  font-style: italic;
+}
