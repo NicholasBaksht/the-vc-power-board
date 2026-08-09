@@ -134,7 +134,10 @@ const partnerProfiles = {
   education: [],
   previousExperience: [
     "Systems Engineer, BAE Systems (~10 years, military systems design)",
-    "Investment Lead, In-Q-Tel"
+ "Investment Lead, In-Q-Tel"
+  ],
+  firmHistory: [
+    { firmSlug: "in-q-tel", role: "Investment Lead", startYear: null, endYear: null }
   ],
   boardSeats: [],
   ipoCount: null,
