@@ -661,7 +661,10 @@ const partnerProfiles = {
   education: ["Johann Wolfgang Goethe University, Frankfurt"],
   previousExperience: [
     "Technology M&A, Goldman Sachs, London",
-    "Partner, DST Global (2008 onward)"
+ "Partner, DST Global (2008 onward)"
+  ],
+  firmHistory: [
+    { firmSlug: "dst-global", role: "Partner", startYear: 2008, endYear: null }
   ],
   boardSeats: [],
   ipoCount: null,
