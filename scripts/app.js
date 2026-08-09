@@ -151,7 +151,11 @@ document.getElementById('discoveryView').style.display = 'none';
       renderRelationshipGraph(null, null);
     }
     window.scrollTo(0, 0);
- } else if (slug === 'discover') {
+ } else if (slug === 'feed') {
+    document.getElementById('intelligenceFeedView').style.display = 'block';
+    renderIntelligenceFeed();
+    window.scrollTo(0, 0);
+  } else if (slug === 'discover') {
     document.getElementById('discoveryView').style.display = 'block';
     renderDiscoveryEngine();
     window.scrollTo(0, 0);
