@@ -98,3 +98,107 @@ function renderComparison() {
     window.location.hash = '';
   });
 }
+// ============================================================
+// VC DNA COMPARISON — reuses the exact same real, already-computed
+// functions that power each firm's own profile page (Genome,
+// Philosophy Scorecard, Geographic Heatmap, Investment Personality
+// from dashboard.js) and places them side by side for 2-3 selected
+// firms. No new calculations, no new data - this is purely a
+// different view of numbers already live and sourced elsewhere.
+// computeDnaComparisonData is intentionally DOM-free so Search,
+// Rankings, and Discovery can call it too, the same way
+// computeGenomeScores/computeSimilarFirms already get reused
+// beyond the firm detail page.
+// ============================================================
+const DNA_FIRM_COLORS = ['#E8C34A', '#7dd3fc', '#4ade80'];
+
+function computeDnaComparisonData(selected) {
+  return selected.map((f, i) => ({
+    firm: f,
+    color: DNA_FIRM_COLORS[i % DNA_FIRM_COLORS.length],
+    personality: computeInvestmentPersonality(f),
+    genome: computeGenomeScores(f),
+    geography: computeGeography(f),
+    topFocus: computePhilosophyScores(f).filter(p => p.score === 5)
+  }));
+}
+
+function renderDnaComparison(selected) {
+  const data = computeDnaComparisonData(selected);
+
+  const legendHTML = data.map(d => `
+    <span class="dna-legend-item"><span class="dna-legend-dot" style="background:${d.color}"></span>${d.firm.short}</span>
+  `).join('');
+
+  const personalityHTML = data.map(d => `
+    <div class="dna-personality-card" style="border-color:${d.color}">
+      <div class="dna-personality-firm" style="color:${d.color}">${d.firm.short}</div>
+      <div class="dna-personality-sentence">${d.personality.sentence}</div>
+    </div>
+  `).join('');
+
+  // One row per real Genome dimension, one bar per firm within it -
+  // same 8 dimensions from computeGenomeScores(), just grouped by
+  // dimension instead of by firm so differences jump out immediately.
+  const dimensionKeys = data[0].genome.map(g => g.key);
+  const dimensionLabels = {};
+  data[0].genome.forEach(g => { dimensionLabels[g.key] = g.label; });
+
+  const genomeRowsHTML = dimensionKeys.map(key => {
+    const barsHTML = data.map(d => {
+      const dim = d.genome.find(g => g.key === key);
+      const val = dim ? dim.value : 0;
+      return `
+        <div class="dna-genome-bar-row">
+          <span class="dna-genome-bar-firm" style="color:${d.color}">${d.firm.short}</span>
+          <div class="dna-genome-bar-track">
+            <div class="dna-genome-bar-fill" style="width:${val}%; background:${d.color};"></div>
+          </div>
+          <span class="dna-genome-bar-value">${val}</span>
+        </div>
+      `;
+    }).join('');
+    return `
+      <div class="dna-genome-dimension">
+        <div class="dna-genome-dimension-label">${dimensionLabels[key]}</div>
+        ${barsHTML}
+      </div>
+    `;
+  }).join('');
+
+  const focusHTML = data.map(d => `
+    <div class="dna-focus-col">
+      <div class="dna-focus-firm" style="color:${d.color}">${d.firm.short}</div>
+      ${d.topFocus.length > 0
+        ? d.topFocus.map(p => `<span class="compare-sector-tag">${p.icon} ${p.label.replace(' Focus', '')}</span>`).join('')
+        : `<span class="dna-focus-empty">Generalist — no single standout focus area</span>`}
+    </div>
+  `).join('');
+
+  const geoHTML = data.map(d => `
+    <div class="dna-geo-col">
+      <div class="dna-geo-firm" style="color:${d.color}">${d.firm.short}</div>
+      ${d.geography.map(r => `<div class="dna-geo-region">${regionFlags[r.region] || '🌐'} ${r.region}${r.score === 5 ? ' (HQ)' : ''}</div>`).join('')}
+    </div>
+  `).join('');
+
+  return `
+    <div class="dna-comparison">
+      <div class="detail-subhead">VC DNA Comparison</div>
+      <div class="dna-comparison-sub">The same real Genome, Philosophy, and Geography data shown on each firm's own profile page — placed side by side. Nothing here is calculated separately; every number is pulled from the same functions already live elsewhere on the site.</div>
+
+      <div class="dna-legend">${legendHTML}</div>
+
+      <div class="dna-personality-row">${personalityHTML}</div>
+
+      <div class="dna-section-label">Genome — Relative to Every Tracked Firm</div>
+      <div class="dna-genome-grid">${genomeRowsHTML}</div>
+
+      <div class="dna-section-label">Top Stated Focus Areas</div>
+      <div class="dna-focus-row">${focusHTML}</div>
+
+      <div class="dna-section-label">Geographic Presence</div>
+      <div class="dna-geo-row">${geoHTML}</div>
+    </div>
+  `;
+}
