@@ -39,6 +39,897 @@ const partnerProfiles = {
       { label: "Wikipedia", url: "https://en.wikipedia.org/wiki/Alfred_Lin" }
     ]
   },
+  // ============ CAVALRY VENTURES ============
+"claude-ritter": {
+  name: "Claude Ritter",
+  firm: "Cavalry Ventures",
+  firmSlug: "cavalry-ventures",
+  title: "Co-Founder & Managing Partner",
+  joinedYear: 2015,
+  education: ["University of Applied Sciences of Northwestern Switzerland (FHNW), Information Systems Management"],
+  previousExperience: [
+    "Co-Founder & CEO, NetCircle",
+    "Co-Founder & CPO, Lieferheld/Delivery Hero (2010–2014)",
+    "Co-Founder & CEO, Tiger Facility Services (2014–2019, acquired by Helpling)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2010", event: "Co-founds Lieferheld (later Delivery Hero), serving as Chief Product Officer for four years as it expanded to 40 markets." },
+    { year: "2014", event: "Co-founds Tiger Facility Services, a digital facility-services platform employing 500+ cleaning staff." },
+    { year: "2015", event: "Co-founds Cavalry Ventures as an Entrepreneurial Partner." },
+    { year: "2019", event: "Tiger Facility Services is acquired by Helpling." },
+    { year: "2020", event: "Becomes Managing Partner at Cavalry Ventures." }
+  ],
+  biography: "Claude Ritter built his venture capital career on the back of two real operating companies — Delivery Hero and Tiger Facility Services — before co-founding Cavalry Ventures in 2015, becoming one of two founding partners who remain at the firm after several colleagues departed in 2024.",
+  sources: [
+    { label: "Streamly — Claude Ritter", url: "https://streamly.video/expert/claude-ritter" },
+    { label: "Sifted — Cavalry Ventures partner departures", url: "https://sifted.eu/articles/cavalry-ventures-loses-third-partner-news" }
+  ]
+},
+"stefan-walter": {
+  name: "Stefan Walter",
+  firm: "Cavalry Ventures",
+  firmSlug: "cavalry-ventures",
+  title: "Co-Founder & Managing Partner",
+  joinedYear: 2015,
+  education: ["Stenden University, Business Administration"],
+  previousExperience: [
+    "Co-Founder & Managing Director, undsoehne network",
+    "Investment Manager, Rheingau Founders (2014–2015)"
+  ],
+  boardSeats: ["Loctax", "ShowHeroes Group", "Usercentrics", "PlanRadar"],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2014", event: "Joins Rheingau Founders as an Investment Manager." },
+    { year: "2015", event: "Co-founds Cavalry Ventures alongside Claude Ritter and four other partners." },
+    { year: "2017", event: "Joins the board of PlanRadar as it becomes one of Cavalry's notable portfolio companies." }
+  ],
+  biography: "Stefan Walter co-founded Cavalry Ventures in 2015 after a background in tax, corporate law, and business economics, and remains one of two original founding partners still active at the firm today, sitting on the boards of several portfolio companies including PlanRadar and Usercentrics.",
+  sources: [
+    { label: "How to Web — Stefan Walter", url: "https://www.howtoweb.co/speaker/stefan-walter/" },
+    { label: "Crunchbase — Stefan Walter", url: "https://www.crunchbase.com/person/stefan-walter" }
+  ]
+},
+
+// ============ POINT72 VENTURES ============
+"dan-gwak": {
+  name: "Dan Gwak",
+  firm: "Point72 Ventures",
+  firmSlug: "point72-ventures",
+  title: "Managing Partner",
+  joinedYear: null,
+  education: [],
+  previousExperience: [
+    "Fireteam Leader, United States Marine Corps (Operation Enduring Freedom, Helmand Province)",
+    "Investment Banking Analyst, M&A Group, Credit Suisse",
+    "Private Equity Associate, The Carlyle Group",
+    "Partner, In-Q-Tel"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Serves as a Marine Corps fireteam leader in Helmand Province, Afghanistan, earning the Combat Action Ribbon and Purple Heart." },
+    { year: null, event: "Works in investment banking M&A at Credit Suisse, then private equity at The Carlyle Group." },
+    { year: null, event: "Joins In-Q-Tel, the CIA and U.S. intelligence community's strategic investment firm, focusing on enterprise analytics and infrastructure." },
+    { year: null, event: "Joins Point72, eventually overseeing its Defense Tech and Growth investment teams as Managing Partner." }
+  ],
+  biography: "Dan Gwak brings a genuinely unusual path into venture capital — from combat service in Afghanistan as a Marine, through Wall Street and private equity, to strategic investing for the U.S. intelligence community at In-Q-Tel, before joining Point72 to lead its Defense Tech and Growth investing.",
+  sources: [
+    { label: "TechCrunch — Dan Gwak author bio", url: "https://techcrunch.com/author/dan-gwak" }
+  ]
+},
+"sri-chandrasekar": {
+  name: "Sri Chandrasekar",
+  firm: "Point72 Ventures",
+  firmSlug: "point72-ventures",
+  title: "Managing Partner",
+  joinedYear: null,
+  education: [],
+  previousExperience: [
+    "Systems Engineer, BAE Systems (~10 years, military systems design)",
+    "Investment Lead, In-Q-Tel"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Spends nearly a decade at BAE Systems designing and building systems for the military." },
+    { year: null, event: "Joins In-Q-Tel, leading investments and building research teams for U.S. intelligence community challenges." },
+    { year: null, event: "Joins Point72 as Managing Partner, working alongside Dan Gwak." }
+  ],
+  biography: "Sri Chandrasekar moved from nearly a decade of hands-on military systems engineering at BAE Systems into strategic investing at In-Q-Tel, before joining Point72 Ventures as Managing Partner.",
+  sources: [
+    { label: "TechCrunch — Sri Chandrasekar author bio", url: "https://techcrunch.com/author/all-sri-chandrasekar" }
+  ]
+},
+
+// ============ PLAYGROUND GLOBAL ============
+"peter-barrett": {
+  name: "Peter Barrett",
+  firm: "Playground Global",
+  firmSlug: "playground-global",
+  title: "Co-Founder, General Partner & CTO",
+  joinedYear: 2015,
+  education: [],
+  previousExperience: [
+    "Engineer, SuperMac (through its IPO)",
+    "Founder, Rocket Science Games (1993, mentored by Steve Blank; early employer of Elon Musk)",
+    "Executive, WebTV (acquired by Microsoft)",
+    "CTO, CloudCar"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "1993", event: "Co-founds video game company Rocket Science Games with Bruce Leak and Steve Blank as mentor; the company employs a young Elon Musk as a software engineer." },
+    { year: null, event: "Joins WebTV, later acquired by Microsoft, working alongside future Playground co-founders Andy Rubin and Bruce Leak." },
+    { year: null, event: "Serves as CTO of CloudCar, a cloud-based consumer products startup." },
+    { year: "2015", event: "Co-founds Playground Global with Andy Rubin, Bruce Leak, and Matt Hershenson." },
+    { year: "2023", event: "Playground closes Fund III at $410 million, bringing total AUM over $1.2 billion." }
+  ],
+  biography: "Peter Barrett's path into venture capital runs through video games, not finance — he co-founded Rocket Science Games in 1993 (where a young Elon Musk worked as an engineer), then WebTV and CloudCar, before co-founding Playground Global in 2015 to back deep-tech founders the way he wished someone had backed him.",
+  sources: [
+    { label: "TechCrunch — Playground Global Fund III", url: "https://techcrunch.com/2023/12/14/playground-global-fund-iii-410m-early-stage-deep-tech-venture-capital/" },
+    { label: "Wikipedia — Peter Barrett (entrepreneur)", url: "https://en.wikipedia.org/wiki/Peter_Barrett_(entrepreneur)" }
+  ]
+},
+"bruce-leak": {
+  name: "Bruce Leak",
+  firm: "Playground Global",
+  firmSlug: "playground-global",
+  title: "Co-Founder, Founding Partner & General Partner",
+  joinedYear: 2015,
+  education: ["Stanford University, M.S. Electrical Engineering"],
+  previousExperience: [
+    "Intern, Microsoft (tested early Word for IBM PC prototype)",
+    "Engineer, Apple System Software team (led 32-bit Color QuickDraw, birth of QuickTime)",
+    "Engineer, General Magic (recruited by Steve Perlman)",
+    "Co-Founder, Rocket Science Games (1993)",
+    "Co-Founder, WebTV (acquired by Microsoft)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Spends five years at Apple's System Software team, leading development of 32-bit Color QuickDraw, which becomes the foundation of QuickTime." },
+    { year: null, event: "Recruited by Steve Perlman to General Magic to build a color gaming platform." },
+    { year: "1993", event: "Joins Peter Barrett and Steve Blank to found Rocket Science Games." },
+    { year: null, event: "Co-founds WebTV with General Magic alumni Steve Perlman and Phil Goldman; WebTV is later acquired by Microsoft." },
+    { year: "2015", event: "Co-founds Playground Global." }
+  ],
+  biography: "Bruce Leak's career traces the earliest days of consumer computing — Apple's System Software team (where he helped invent QuickTime), General Magic, and WebTV — before co-founding Playground Global in 2015 to invest in the kind of deep-tech company he spent decades building.",
+  sources: [
+    { label: "Wikipedia — Bruce Leak", url: "https://en.wikipedia.org/wiki/Bruce_Leak" },
+    { label: "Playground Global — Bruce Leak", url: "https://www.playground.vc/people/bruce-leak" }
+  ]
+},
+"jory-bell": {
+  name: "Jory Bell",
+  firm: "Playground Global",
+  firmSlug: "playground-global",
+  title: "General Partner",
+  joinedYear: null,
+  education: ["Massachusetts Institute of Technology, Literature"],
+  previousExperience: [
+    "Design, Apple",
+    "Co-Founder, CEO & Board Member, OQO",
+    "CTO & Director, Miselu"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [],
+  biography: "Jory Bell joined Playground Global as a General Partner after operating roles at Apple, OQO (which he co-founded), and Miselu, and now focuses much of his investing on biotech, including Playground's investment in Manifold Bio.",
+  sources: [
+    { label: "Crunchbase — Playground Global profiles", url: "https://www.crunchbase.com/organization/playground-global/profiles_and_contacts" }
+  ]
+},
+"pat-gelsinger": {
+  name: "Pat Gelsinger",
+  firm: "Playground Global",
+  firmSlug: "playground-global",
+  title: "General Partner",
+  joinedYear: 2025,
+  education: ["Stanford University, EE & CS"],
+  previousExperience: [
+    "Chief Technology Officer, Intel (first CTO in company history)",
+    "CEO, EMC (joined 2009)",
+    "CEO, VMware (2012–2021)",
+    "CEO, Intel (2021–2024)"
+  ],
+  boardSeats: ["xLight (Executive Chair)", "Gloo"],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2009", event: "Leaves Intel after three decades, including serving as the company's first-ever Chief Technology Officer, to join EMC." },
+    { year: "2012", event: "Becomes CEO of VMware, leading its transition to hybrid cloud and software-defined infrastructure." },
+    { year: "2021", event: "Steps down as VMware CEO (effective February 12) to become CEO of Intel." },
+    { year: "2024", event: "Departs Intel as CEO in December, following struggles with delayed chip generations and stock decline." },
+    { year: "2025", event: "Joins Playground Global as a General Partner in March, focusing on semiconductors, and becomes Executive Chair of portfolio company xLight." }
+  ],
+  biography: "Pat Gelsinger's 45-year career shaped modern computing at the highest level — Intel's first CTO, then CEO of both VMware and Intel — before joining Playground Global in 2025 to invest in the next generation of deep-tech and semiconductor founders.",
+  sources: [
+    { label: "CNBC — Gelsinger joins Playground Global", url: "https://www.cnbc.com/2025/03/26/former-intel-ceo-pat-gelsinger-joins-venture-firm-playground-global.html" },
+    { label: "VMware SEC 8-K — CEO transition", url: "https://www.sec.gov/Archives/edgar/data/1124610/000112461021000003/gelsinger11321newsrelease.htm" }
+  ]
+},
+
+// ============ GRISHIN ROBOTICS ============
+"dmitry-grishin": {
+  name: "Dmitry Grishin",
+  firm: "Grishin Robotics",
+  firmSlug: "grishin-robotics",
+  title: "Founding Partner",
+  joinedYear: 2012,
+  education: ["Moscow State Technical University, Robotics and Complex Automation"],
+  previousExperience: [
+    "Software Engineer, various projects (from 2001)",
+    "CEO, Mail.Ru (2003–2010)",
+    "Co-Founder & Chairman, Mail.Ru Group (2005–2022)"
+  ],
+  boardSeats: [],
+  ipoCount: 1,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2003", event: "Becomes CEO of Mail.Ru." },
+    { year: "2005", event: "Co-founds Mail.Ru Group." },
+    { year: "2010", event: "Takes Mail.Ru Group public on the London Stock Exchange as CEO." },
+    { year: "2012", event: "Founds Grishin Robotics with a $100M fund focused on smart hardware, robotics, and IoT." },
+    { year: "2016", event: "Steps down as CEO of Mail.Ru, remaining as Chairman." },
+    { year: "2022", event: "Steps down as Chairman of Mail.Ru Group in May." }
+  ],
+  biography: "Dmitry Grishin took Mail.Ru Group public on the London Stock Exchange in 2010 as one of Russia's most prominent internet entrepreneurs, then founded Grishin Robotics in 2012 to back early-stage hardware and robotics companies including Ring (acquired by Amazon) and Sphero.",
+  sources: [
+    { label: "Wikipedia — Dmitry Grishin", url: "https://en.wikipedia.org/wiki/Grishin_Robotics" },
+    { label: "Grishin Robotics — Team", url: "https://www.grishinrobotics.com/team" }
+  ]
+},
+
+// ============ DEFY PARTNERS ============
+"neil-sequeira": {
+  name: "Neil Sequeira",
+  firm: "Defy Partners",
+  firmSlug: "defy-partners",
+  title: "Co-Founder & Partner",
+  joinedYear: 2016,
+  education: ["University of California, Santa Barbara", "Harvard Business School"],
+  previousExperience: [
+    "Senior Consultant, Accenture",
+    "Investment Banking, Goldman Sachs & Co.",
+    "Head of Mergers and Acquisitions, CMGI",
+    "Founding Member, AOLTW Ventures / Managing Director, TimeWarner Investments",
+    "Managing Director, General Catalyst Partners (12 years)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Works as a senior consultant at Accenture, then in investment banking at Goldman Sachs." },
+    { year: null, event: "Leads Mergers and Acquisitions at CMGI, a diversified technology holding company." },
+    { year: null, event: "Becomes a founding member of AOLTW Ventures and Managing Director at TimeWarner Investments." },
+    { year: null, event: "Joins General Catalyst Partners as Managing Director, investing for 12 years." },
+    { year: "2016", event: "Co-founds Defy Partners with Trae Vassallo." }
+  ],
+  biography: "Neil Sequeira spent 12 years as a Managing Director at General Catalyst before co-founding Defy Partners in 2016, bringing decades of investing experience across internet and media, software, commerce, and network infrastructure.",
+  sources: [
+    { label: "Defy VC — Neil Sequeira", url: "https://defy.vc/team_member/neil-sequeira/" }
+  ]
+},
+"trae-vassallo": {
+  name: "Trae Vassallo",
+  firm: "Defy Partners",
+  firmSlug: "defy-partners",
+  title: "Co-Founder & Managing Director",
+  joinedYear: 2016,
+  education: ["Stanford University, B.S. & M.S. Mechanical Engineering", "Stanford Graduate School of Business, MBA"],
+  previousExperience: [
+    "Design Engineer, IDEO (Palm V, Dell Latitude Docking Station)",
+    "Co-Founder & Product Manager, Good Technology (2000–2002, acquired by Motorola)",
+    "General Partner, Kleiner Perkins Caufield & Byers (2002–2014)"
+  ],
+  boardSeats: ["Enlighted"],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Begins career as a design engineer at IDEO, developing products for Palm and Dell." },
+    { year: "2000", event: "Co-founds Good Technology, an enterprise wireless email company later acquired by Motorola." },
+    { year: "2002", event: "Joins Kleiner Perkins Caufield & Byers, eventually becoming a General Partner." },
+    { year: null, event: "Originates Kleiner's investments in Enphase and Silver Spring Networks; leads investment in Nest Labs (acquired by Google)." },
+    { year: "2014", event: "Departs Kleiner Perkins following a firm reorganization; co-authors 'Elephant in the Valley' study on women's experiences in tech." },
+    { year: "2016", event: "Co-founds Defy Partners with Neil Sequeira." }
+  ],
+  biography: "Trae Vassallo holds 13 patents from her early engineering career at IDEO, co-founded Good Technology, then spent 14 years as a General Partner at Kleiner Perkins where she led the firm's investment in Nest Labs — before co-founding Defy Partners in 2016 and co-authoring an influential study on gender in the tech industry.",
+  sources: [
+    { label: "Kauffman Fellows — Trae Vassallo", url: "https://www.kauffmanfellows.org/fellows/trae-vassallo" },
+    { label: "Broadway Angels — Trae Vassallo bio", url: "https://www.broadway-angels.com/trae-vassallo-bio" }
+  ]
+},
+
+// ============ BAUKUNST ============
+"kate-mcandrew": {
+  name: "Kate McAndrew",
+  firm: "Baukunst",
+  firmSlug: "baukunst",
+  title: "Co-Founder & General Partner",
+  joinedYear: 2022,
+  education: ["McGill University, Cultural Studies/Critical Theory and Analysis"],
+  previousExperience: [
+    "Investor, Social Capital",
+    "Investor, Lightspeed Venture Partners",
+    "First Employee & Partner, Bolt (2012–2022)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2012", event: "Enters venture capital, eventually joining Bolt as its first employee." },
+    { year: null, event: "Spends nearly a decade at Bolt, building its venture capital practice and community across two funds, and founds Women in Hardware." },
+    { year: "2022", event: "Co-founds Baukunst with Axel Bichara, Matt Thoms, and Tyler Mincey; the firm announces its $100M debut fund in April." }
+  ],
+  biography: "Kate McAndrew was Bolt's first employee and spent nearly a decade building its venture capital practice before co-founding Baukunst in 2022, which raised the largest debut pre-seed fund on record at $100 million.",
+  sources: [
+    { label: "YesPress — Kate McAndrew", url: "https://yespress.io/kate-mcandrew" },
+    { label: "Startup Intros — Kate McAndrew", url: "https://startupintros.com/people/kate-mcandrew" }
+  ]
+},
+"tyler-mincey": {
+  name: "Tyler Mincey",
+  firm: "Baukunst",
+  firmSlug: "baukunst",
+  title: "Co-Founder & General Partner",
+  joinedYear: 2022,
+  education: ["Princeton University, Mechanical and Aerospace Engineering"],
+  previousExperience: [
+    "Engineering, Apple (built the first iPhone and multiple iPod generations)",
+    "Founding team, Pearl Automation",
+    "VP of Engineering → Partner, Bolt (5 years)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Works as an engineer at Apple, part of the team that built the first iPhone and several generations of iPod." },
+    { year: null, event: "Joins the founding team of Pearl Automation as VP of Product." },
+    { year: null, event: "Joins Bolt as VP of Engineering, eventually becoming a Partner, and pioneers embedding a full in-house engineering team inside a venture fund." },
+    { year: "2022", event: "Co-founds Baukunst in April with Kate McAndrew, Axel Bichara, and Matt Thoms." }
+  ],
+  biography: "Tyler Mincey helped build the first iPhone at Apple before moving into hardware startups and then venture capital at Bolt, where he pioneered embedding engineers directly inside a fund — a model that became Baukunst's blueprint when he co-founded it in 2022.",
+  sources: [
+    { label: "YesPress — Tyler Mincey", url: "https://yespress.io/tyler-mincey" }
+  ]
+},
+"axel-bichara": {
+  name: "Axel Bichara",
+  firm: "Baukunst",
+  firmSlug: "baukunst",
+  title: "Co-Founder & General Partner",
+  joinedYear: 2022,
+  education: [],
+  previousExperience: [
+    "Co-Founder, two startups (both acquired)",
+    "General Partner, Atlas Venture",
+    "General Partner, Bolt"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Co-founds two startups, both later acquired." },
+    { year: null, event: "Spends roughly 30 years as a first-round lead investor and company builder, including as General Partner at Atlas Venture and Bolt, raising and investing $2.8 billion as a managing partner." },
+    { year: "2022", event: "Co-founds Baukunst with Kate McAndrew, Matt Thoms, and Tyler Mincey." }
+  ],
+  biography: "Axel Bichara brings roughly three decades of venture investing experience from Atlas Venture and Bolt, including two of his own startups that were acquired, to his role as a founding General Partner at Baukunst.",
+  sources: [
+    { label: "Baukunst — The Collective", url: "https://baukunst.co/collective" }
+  ]
+},
+"matt-thoms": {
+  name: "Matt Thoms",
+  firm: "Baukunst",
+  firmSlug: "baukunst",
+  title: "Co-Founder & General Partner",
+  joinedYear: 2022,
+  education: ["Tufts University, Mechanical Engineering", "Massachusetts Institute of Technology, M.S."],
+  previousExperience: [
+    "Graduate Research Assistant, MIT (2010–2012)",
+    "Management Consultant, OC&C Strategy Consultants (2012–2014)",
+    "Vice President, Investment Team, Allied Minds (2014–2019)",
+    "Partner, Bolt"
+  ],
+  boardSeats: ["Orange Charger", "Wildgrain"],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2010", event: "Serves as a Graduate Research Assistant at MIT while earning his master's degree." },
+    { year: "2012", event: "Joins OC&C Strategy Consultants as a Management Consultant." },
+    { year: "2014", event: "Joins Allied Minds as Vice President on the investment team, leading investments including HawkEye 360 and Orbital Sidekick." },
+    { year: "2019", event: "Leaves Allied Minds after 9 years combined investing experience there and later at Bolt." },
+    { year: "2022", event: "Co-founds Baukunst with Kate McAndrew, Axel Bichara, and Tyler Mincey." }
+  ],
+  biography: "Matt Thoms combined mechanical engineering degrees from Tufts and MIT with nine years as a first-round investor at Allied Minds and Bolt — including founding several of his own startups — before co-founding Baukunst in 2022.",
+  sources: [
+    { label: "The Network — Matt Thoms", url: "https://www.thenetwork.com/profile/matt-thoms-07950a7a" }
+  ]
+},
+
+// ============ MUCKER CAPITAL ============
+"william-hsu": {
+  name: "William Hsu",
+  firm: "Mucker Capital",
+  firmSlug: "mucker-capital",
+  title: "Co-Founder & Managing Partner",
+  joinedYear: 2011,
+  education: [],
+  previousExperience: [
+    "Founder, BuildPoint (acquired by NYSE:ROP)",
+    "Product Teams, eBay",
+    "Product Teams, Green Dot (NYSE:GDOT)",
+    "SVP & Chief Product Officer, AT&T Interactive"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Founds BuildPoint straight out of college, a bid-management SaaS company for commercial construction, later acquired by NYSE-listed Roper Technologies." },
+    { year: null, event: "Leads product teams at eBay and Green Dot." },
+    { year: null, event: "Serves as SVP and Chief Product Officer of AT&T Interactive, doubling revenue to over $1 billion in three years." },
+    { year: "2011", event: "Co-founds Mucker Capital with Erik Rannala in Santa Monica." }
+  ],
+  biography: "William Hsu doubled AT&T Interactive's revenue to over $1 billion as its Chief Product Officer before co-founding Mucker Capital in 2011, which led the first institutional checks into Honey, AuditBoard, and ServiceTitan.",
+  sources: [
+    { label: "LA Business Journal — William Hsu", url: "https://labusinessjournal.com/news/william-hsu/" },
+    { label: "Mucker Capital — William Hsu", url: "https://mucker.com/team/william-hsu/" }
+  ]
+},
+"erik-rannala": {
+  name: "Erik Rannala",
+  firm: "Mucker Capital",
+  firmSlug: "mucker-capital",
+  title: "Co-Founder & Managing Partner",
+  joinedYear: 2011,
+  education: ["University of Delaware, B.S.", "Duke University, MBA"],
+  previousExperience: [
+    "Software Developer, Accenture (Internet strategy practice)",
+    "White House Domestic Policy Council",
+    "Various roles, eBay (grew premium features business to $400M+ revenue)",
+    "VP Global Product Strategy, TripAdvisor",
+    "Seed Investor, Harrison Metal Capital"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Serves at the White House Domestic Policy Council early in his career." },
+    { year: null, event: "Works at Accenture as a software developer in its first internet strategy practice group." },
+    { year: null, event: "Holds multiple roles at eBay, growing its premium features business to over $400 million in revenue." },
+    { year: null, event: "Becomes VP of Global Product Strategy and Development at TripAdvisor." },
+    { year: null, event: "Joins Harrison Metal Capital, one of the original seed-stage 'micro-VC' firms." },
+    { year: "2011", event: "Co-founds Mucker Capital with William Hsu." }
+  ],
+  biography: "Erik Rannala's path ran from the White House Domestic Policy Council through Accenture, eBay, and TripAdvisor, then early-stage investing at Harrison Metal Capital, before co-founding Mucker Capital in 2011.",
+  sources: [
+    { label: "Mucker Capital — Erik Rannala", url: "https://mucker.com/team/erik-rannala/" }
+  ]
+},
+
+// ============ STRUCK CAPITAL ============
+"adam-struck": {
+  name: "Adam Struck",
+  firm: "Struck Capital",
+  firmSlug: "struck-capital",
+  title: "Founder & Managing Partner",
+  joinedYear: 2015,
+  education: ["Northwestern University, Kellogg School of Management", "Georgetown University Law Center, J.D."],
+  previousExperience: [
+    "M&A/PE Attorney, Kirkland & Ellis",
+    "Co-Founder, Long Island Brand Beverages (taken public on NASDAQ, acquired by Cullen Investments)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Works as an M&A and private equity attorney at Kirkland & Ellis." },
+    { year: "2011", event: "Co-founds Long Island Brand Beverages, a CPG company, with his brother." },
+    { year: null, event: "Long Island Brand Beverages is taken public on NASDAQ and later acquired by Cullen Investments." },
+    { year: "2015", event: "Founds Struck Capital in Santa Monica, an industry-agnostic seed fund." }
+  ],
+  biography: "Adam Struck left a law career at Kirkland & Ellis to co-found a beverage company that went public on NASDAQ, then founded Struck Capital in 2015, becoming an early backer of Postmates, Nutanix, Ramp, and Whatnot.",
+  sources: [
+    { label: "Struck Capital — Team", url: "https://struckcapital.com/team/" },
+    { label: "AI for Good — Adam Struck", url: "https://aiforgood.itu.int/speaker/adam-struck/" }
+  ]
+},
+
+// ============ SCIENCE INC. ============
+"michael-jones": {
+  name: "Michael Jones",
+  firm: "Science Inc.",
+  firmSlug: "science-inc",
+  title: "Co-Founder & CEO",
+  joinedYear: 2011,
+  education: ["University of Oregon, B.A. International Business and Marketing"],
+  previousExperience: [
+    "Founder & CEO, Userplane (2001–2006, acquired by AOL)",
+    "SVP, AOL",
+    "Founder, Tsavo Media (2008, sold to Cybernex for $75M)",
+    "CEO, Myspace (2010)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2001", event: "Founds Userplane, an instant-messaging platform used by Myspace and Honda." },
+    { year: "2006", event: "Userplane is acquired by AOL; Jones becomes the company's youngest-ever SVP." },
+    { year: "2008", event: "Launches Tsavo Media, an online media network later sold to Cybernex for $75 million." },
+    { year: "2010", event: "Appointed CEO of Myspace by News Corporation to lead its turnaround." },
+    { year: "2011", event: "Co-founds Science Inc. as an incubator and venture capital firm in Santa Monica, securing initial funding from Google's Eric Schmidt." }
+  ],
+  biography: "Michael Jones built and sold Userplane to AOL, ran Myspace through a high-profile turnaround as its CEO, and then co-founded Science Inc. in 2011, which went on to incubate Dollar Shave Club and back Liquid Death.",
+  sources: [
+    { label: "Wikipedia — Michael Jones (entrepreneur)", url: "https://en.wikipedia.org/wiki/Michael_Jones_(entrepreneur)" },
+    { label: "LA Business Journal — Michael Jones", url: "https://labusinessjournal.com/la500-2025/technology-2025/la500-2025-michael-jones/" }
+  ]
+},
+"peter-pham": {
+  name: "Peter Pham",
+  firm: "Science Inc.",
+  firmSlug: "science-inc",
+  title: "President",
+  joinedYear: null,
+  education: [],
+  previousExperience: [
+    "Co-Founder & CEO, BillShrink/TruAxis (acquired by MasterCard, 2012)",
+    "VP of Business Development, Photobucket (led growth to 61M users, $300M sale to Fox Interactive Media, 2007)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2007", event: "As part of Photobucket's founding team and VP of Business Development, drives growth to 61 million users, leading to a $300 million sale to Fox Interactive Media." },
+    { year: "2012", event: "BillShrink/TruAxis, which Pham co-founded and led as CEO, is acquired by MasterCard." },
+    { year: null, event: "Joins Science Inc. as President." }
+  ],
+  biography: "Peter Pham led Photobucket's growth to a $300 million sale to Fox Interactive Media, then co-founded and sold BillShrink/TruAxis to MasterCard, before becoming President of Science Inc.",
+  sources: [
+    { label: "Science Inc. — Leadership", url: "https://dev.science-inc.com/ssac.html" }
+  ]
+},
+
+// ============ SOMA CAPITAL ============
+"aneel-ranadive": {
+  name: "Aneel Ranadive",
+  firm: "Soma Capital",
+  firmSlug: "soma-capital",
+  title: "Founder & Managing Partner",
+  joinedYear: 2015,
+  education: ["Columbia University, B.S. Mathematics (2006)"],
+  previousExperience: [
+    "Investment Banking Analyst, Bank of America",
+    "Founder, BoredAt (early anonymous college social network)",
+    "Co-Founder & CEO, Pinchit (backed by Eduardo Saverin, Tim Draper)",
+    "Co-Founder, GlanceGuide (video analytics, sold to Nielsen)",
+    "Founder, Tag (location-sharing app, acquired by Mark Cuban, 2015)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2006", event: "Graduates Columbia University with a B.S. in Mathematics; begins in investment banking before pivoting to startups." },
+    { year: null, event: "Launches BoredAt while at Columbia, one of the first anonymous college social networks." },
+    { year: null, event: "Co-founds Pinchit, a daily-deal site backed by Eduardo Saverin and Tim Draper, generating $2M in first-year revenue." },
+    { year: null, event: "Co-founds GlanceGuide, a video analytics company later sold to Nielsen." },
+    { year: "2015", event: "Founds Tag, a location-sharing app, and separately founds Soma Capital, a seed-stage venture fund." },
+    { year: "2015", event: "Tag is acquired by Mark Cuban." }
+  ],
+  biography: "Aneel Ranadive built and sold multiple startups — including Tag, acquired by Mark Cuban — before founding Soma Capital in 2015, which has since seeded more than 40 companies valued above $1 billion, including Ramp, Cognition, and Rippling.",
+  sources: [
+    { label: "Forbes — Aneel Ranadive", url: "https://www.forbes.com/profile/aneel-ranadive/" },
+    { label: "Soma Capital — About", url: "https://somacap.com/about" }
+  ]
+},
+
+// ============ VY CAPITAL ============
+"alexander-tamas": {
+  name: "Alexander Tamas",
+  firm: "Vy Capital",
+  firmSlug: "vy-capital",
+  title: "Founder",
+  joinedYear: null,
+  education: ["Johann Wolfgang Goethe University, Frankfurt"],
+  previousExperience: [
+    "Technology M&A, Goldman Sachs, London",
+    "Partner, DST Global (2008 onward)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Works in the technology mergers and acquisitions group at Goldman Sachs in London." },
+    { year: "2008", event: "Joins DST Global as Partner, leading and sourcing early primary investments in Facebook, Airbnb, Spotify, Twitter, JD.com, Alibaba, Xiaomi, and Zalando." },
+    { year: null, event: "Helps consolidate the Russian internet sector around Mail.ru as its Managing Director, taking the company public in 2010." },
+    { year: null, event: "Leaves DST to found Vy Capital, which has since grown to manage over $5 billion in assets." }
+  ],
+  biography: "Alexander Tamas was described by Marc Andreessen and Ben Horowitz as 'Yuri Milner's human supercomputer' for the landmark early bets he sourced at DST Global — Facebook, Airbnb, Spotify, and Twitter among them — before founding Vy Capital, which later contributed to Elon Musk's Twitter acquisition.",
+  sources: [
+    { label: "SEC filing — Alexander Tamas bio", url: "https://www.sec.gov/Archives/edgar/data/1822877/000110465922035010/tm223923d1_10ka.htm" },
+    { label: "The Frederik Journals — Alexander Tamas", url: "https://www.frederikjournals.com/p/alexander-tamas-the-vc-youve-never" }
+  ]
+},
+"john-hering": {
+  name: "John Hering",
+  firm: "Vy Capital",
+  firmSlug: "vy-capital",
+  title: "Co-Founder",
+  joinedYear: null,
+  education: ["University of Southern California, Public Policy"],
+  previousExperience: [
+    "Founder, DailyWireless.com (acquired by Tippit, Inc.)",
+    "Founder & CEO, Lookout (2007–2014, then Executive Chairman)",
+    "Co-Founder, Coalition (cybersecurity insurance)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2005", event: "While a USC student, hacks a Bluetooth network from over a mile away and scans celebrities' phones at the Academy Awards red carpet." },
+    { year: "2007", event: "Co-founds Lookout, a mobile security company, while still attending USC." },
+    { year: "2014", event: "Steps down as Lookout CEO in March, remaining as Executive Chairman; Lookout later protects over 175 million devices globally." },
+    { year: null, event: "Co-founds Coalition, a cybersecurity insurance company backed by Allianz and other investors." },
+    { year: null, event: "Co-founds Vy Capital with Alexander Tamas." }
+  ],
+  biography: "John Hering co-founded mobile security company Lookout while still a USC student, growing it to protect over 175 million devices, before co-founding both the cybersecurity insurer Coalition and Vy Capital.",
+  sources: [
+    { label: "Founders Pledge — John Hering", url: "https://www.founderspledge.com/members/2490" },
+    { label: "Fortune 40 Under 40 — John Hering", url: "https://fortune.com/40-under-40/2012/john-hering/" }
+  ]
+},
+
+// ============ ICONIQ CAPITAL ============
+"divesh-makan": {
+  name: "Divesh Makan",
+  firm: "ICONIQ Capital",
+  firmSlug: "iconiq-capital",
+  title: "Co-Founder",
+  joinedYear: 2011,
+  education: ["University of Natal, South Africa, Electrical Engineering", "Wharton School, MBA"],
+  previousExperience: [
+    "Broker/Vice President, Goldman Sachs, San Francisco (met Mark Zuckerberg in 2004)",
+    "Executive Director, Morgan Stanley (2008–2011)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2004", event: "Meets Mark Zuckerberg while working as a broker at Goldman Sachs' San Francisco wealth advisory office." },
+    { year: "2008", event: "Leaves Goldman Sachs and joins Morgan Stanley." },
+    { year: "2011", event: "Leaves Morgan Stanley in December, co-founding ICONIQ Capital with Michael Anders and Chad Boeding to serve as independent wealth advisors to tech founders including Zuckerberg, Sheryl Sandberg, and Dustin Moskovitz." },
+    { year: "2013", event: "Launches ICONIQ Growth, the firm's venture/growth investing arm, encouraged and seed-funded by early client Dave Goldberg." }
+  ],
+  biography: "Divesh Makan met Mark Zuckerberg in 2004 while working as a Goldman Sachs broker, and built that relationship into ICONIQ Capital, co-founded in 2011, which now manages tens of billions for a small roster of the tech industry's wealthiest families.",
+  sources: [
+    { label: "Fortune — Inside Iconiq Growth", url: "https://www.aol.com/inside-iconiq-growth-one-silicon-130000568.html" },
+    { label: "Forbes India — Divesh Makan", url: "https://www.forbesindia.com/article/cross-border/how-divesh-makan-gained-entry-into-zuckerbergs-inner-circle/39295/1" }
+  ]
+},
+"michael-anders": {
+  name: "Michael Anders",
+  firm: "ICONIQ Capital",
+  firmSlug: "iconiq-capital",
+  title: "Co-Founder & General Partner",
+  joinedYear: 2011,
+  education: ["University of Rhode Island, B.A./B.S. Political Science and Communication Studies", "Columbia University, Certificate in International Economics"],
+  previousExperience: [
+    "Credit Analyst, Société Générale, Paris/London (1997)",
+    "Vice President, Franklin Templeton Investments",
+    "Vice President, Fidelity Charitable Services (2005–2007)",
+    "Founder, GivingCapital",
+    "Vice President, Goldman Sachs (2008)",
+    "Vice President, Morgan Stanley (2011)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "1997", event: "Begins career as a Credit Analyst at Société Générale in Paris and London." },
+    { year: null, event: "Holds roles at Franklin Templeton and Fidelity Charitable Services; founds GivingCapital, building turnkey charitable-giving products for large financial firms." },
+    { year: "2008", event: "Joins Goldman Sachs as Vice President." },
+    { year: "2011", event: "Joins Morgan Stanley, then co-founds ICONIQ Capital in December with Divesh Makan and Chad Boeding." }
+  ],
+  biography: "Michael Anders spent over a decade across Société Générale, Franklin Templeton, Fidelity, Goldman Sachs, and Morgan Stanley — including founding a charitable-giving startup — before co-founding ICONIQ Capital in 2011.",
+  sources: [
+    { label: "Milken Institute — Mike Anders", url: "https://milkeninstitute.org/events/middle-east-and-africa-summit-2024/speakers/mike-anders" }
+  ]
+},
+
+// ============ MFV PARTNERS ============
+"karthee-madasamy": {
+  name: "Karthee Madasamy",
+  firm: "MFV Partners",
+  firmSlug: "mfv-partners",
+  title: "Founding Managing Partner",
+  joinedYear: 2018,
+  education: ["College of Engineering, Guindy (Chennai), B.E. Electronics and Communication", "University of Michigan, M.S. Electrical Engineering", "University of Chicago Booth School of Business, MBA"],
+  previousExperience: [
+    "Technical & product marketing roles, three Silicon Valley semiconductor/wireless startups (3G, WiFi, Bluetooth)",
+    "Corporate Vice President & Managing Director, Qualcomm Ventures (11 years)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Leads technical and product marketing roles at three Silicon Valley semiconductor and wireless startups." },
+    { year: null, event: "Joins Qualcomm Ventures, spending 11 years as Corporate VP and Managing Director, starting its investment activities in both Israel and India, and investing in Waze (acquired by Google) and BORQS (NASDAQ IPO)." },
+    { year: "2018", event: "Founds MFV Partners, a Palo Alto deep-tech venture fund." }
+  ],
+  biography: "Karthee Madasamy spent 11 years running Qualcomm Ventures' investment activities across the US, Israel, and India — including an early bet on Waze — before founding MFV Partners in 2018 to back deep-tech companies like PsiQuantum and Agility Robotics.",
+  sources: [
+    { label: "Polsky Center — Karthee Madasamy", url: "https://polsky.uchicago.edu/people/karthee-madasamy/" }
+  ]
+},
+
+// ============ LIQUID 2 VENTURES ============
+"mike-miller": {
+  name: "Mike Miller",
+  firm: "Liquid 2 Ventures",
+  firmSlug: "liquid2-ventures",
+  title: "Co-Founder",
+  joinedYear: 2015,
+  education: ["Michigan State University, B.S. Physics and Philosophy", "Yale University, Ph.D. Particle Physics"],
+  previousExperience: [
+    "Undergraduate researcher, MSU Cyclotron",
+    "Faculty positions, MIT and University of Washington",
+    "Co-Founder, Cloudant (Y Combinator-backed, acquired by IBM in 2014)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Earns undergraduate degrees in Physics and Philosophy at Michigan State, conducting research at the Cyclotron." },
+    { year: null, event: "Completes a Ph.D. in Particle Physics at Yale, followed by faculty positions at MIT and the University of Washington." },
+    { year: null, event: "Co-founds Cloudant, a Y Combinator-backed company that helped create the NoSQL/database-as-a-service market." },
+    { year: "2014", event: "Cloudant is acquired by IBM." },
+    { year: "2015", event: "Co-founds Liquid 2 Ventures with Joe Montana and Michael Ma." }
+  ],
+  biography: "Mike Miller left a career path toward academic particle physics — with faculty positions at MIT and UW — to co-found Cloudant, a database company acquired by IBM in 2014, then co-founded Liquid 2 Ventures with Joe Montana the following year.",
+  sources: [
+    { label: "Liquid 2 Ventures — Team", url: "https://www.liquid2.vc/team" }
+  ]
+},
+
+// ============ UNUSUAL VENTURES ============
+"john-vrionis": {
+  name: "John Vrionis",
+  firm: "Unusual Ventures",
+  firmSlug: "unusual-ventures",
+  title: "Co-Founder & Managing Partner",
+  joinedYear: 2018,
+  education: [],
+  previousExperience: [
+    "Partner, Lightspeed Venture Partners (12 years)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Spends 12 years at Lightspeed Venture Partners, making early investments in AppDynamics, MuleSoft, Nimble Storage, and DataStax." },
+    { year: null, event: "Makes an early investment in Jyoti Bansal's AppDynamics, which is later acquired by Cisco for $3.7 billion." },
+    { year: "2018", event: "Co-founds Unusual Ventures with Jyoti Bansal." }
+  ],
+  biography: "John Vrionis spent 12 years investing at Lightspeed Venture Partners — including an early bet on AppDynamics — before teaming up with that company's own founder, Jyoti Bansal, to co-found Unusual Ventures in 2018.",
+  sources: [
+    { label: "Wikipedia — Unusual Ventures", url: "https://en.wikipedia.org/wiki/Unusual_Ventures" },
+    { label: "Unusual Ventures — John Vrionis", url: "https://www.unusual.vc/team/john-vrionis/" }
+  ]
+},
+"jyoti-bansal": {
+  name: "Jyoti Bansal",
+  firm: "Unusual Ventures",
+  firmSlug: "unusual-ventures",
+  title: "Co-Founder & Entrepreneur Partner",
+  joinedYear: 2018,
+  education: ["Indian Institute of Technology, Delhi, B.S. Computer Science"],
+  previousExperience: [
+    "Software Engineer & Architect, various Silicon Valley startups",
+    "Founder & CEO, AppDynamics (2008–2016, then Chairman until 2017)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: 1,
+  careerTimeline: [
+    { year: "2008", event: "Founds AppDynamics, an application performance management company." },
+    { year: "2017", event: "AppDynamics is acquired by Cisco Systems for $3.7 billion, a day before its scheduled IPO." },
+    { year: "2017", event: "Launches BIG Labs, a startup studio, and co-founds Harness the same year." },
+    { year: "2018", event: "Co-founds Unusual Ventures with John Vrionis." },
+    { year: "2020", event: "Launches Traceable, a second company out of BIG Labs." },
+    { year: "2025", event: "Merges Harness and Traceable into a single company worth approximately $5 billion." }
+  ],
+  biography: "Jyoti Bansal sold AppDynamics to Cisco for $3.7 billion a day before its scheduled IPO, then went on to found Harness and Traceable simultaneously while co-founding Unusual Ventures with longtime investor John Vrionis.",
+  sources: [
+    { label: "Wikipedia — Jyoti Bansal", url: "https://en.wikipedia.org/wiki/Jyoti_Bansal" },
+    { label: "CNBC — Bansal merges Harness and Traceable", url: "https://www.cnbc.com/2025/02/10/appdynamics-founder-jyoti-bansal-merges-startups-harness-traceable-.html" }
+  ]
+},
+
+// ============ COLLABORATIVE FUND ============
+"craig-shapiro": {
+  name: "Craig Shapiro",
+  firm: "Collaborative Fund",
+  firmSlug: "collaborative-fund",
+  title: "Founder & Managing Partner",
+  joinedYear: 2010,
+  education: ["Washington University in St. Louis, B.A. Political Science"],
+  previousExperience: [
+    "President, GOOD Worldwide",
+    "Early angel investor, Facebook and Kickstarter"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Serves as President of GOOD Worldwide before founding his own fund." },
+    { year: null, event: "Makes early angel investments in Facebook and Kickstarter." },
+    { year: "2010", event: "Founds Collaborative Fund in New York City." },
+    { year: "2026", event: "Raises $250 million to launch Collab Holdings, a private equity fund for long-term consumer brands." }
+  ],
+  biography: "Craig Shapiro made early angel bets on Facebook and Kickstarter before founding Collaborative Fund in 2010, building it into a $1 billion-plus platform backing purpose-driven consumer companies including Lyft, Reddit, and Beyond Meat.",
+  sources: [
+    { label: "Collaborative Fund — Craig Shapiro", url: "https://collabfund.com/about/craig-shapiro" },
+    { label: "Inc. — Craig Shapiro raises Collab Holdings", url: "https://www.inc.com/ali-donaldson/with-his-new-fund-this-investor-aims-to-win-over-private-equity-skeptics/91330857" }
+  ]
+},
+
+// ============ SHRUG CAPITAL ============
+"niv-dror": {
+  name: "Niv Dror",
+  firm: "Shrug Capital",
+  firmSlug: "shrug-capital",
+  title: "Founder & Managing Partner",
+  joinedYear: 2018,
+  education: ["University of California, Santa Barbara, B.A. Business Economics"],
+  previousExperience: [
+    "Analyst, DataFox Inc. (2013–2015)",
+    "Community Manager, Meerkat/Houseparty (2015)",
+    "Marketing, Product Hunt (2015–2018)",
+    "Marketing, AngelList (2017–2018)"
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2013", event: "Works as an analyst at DataFox." },
+    { year: "2015", event: "Serves as Community Manager at Meerkat/Houseparty, then joins Product Hunt in marketing." },
+    { year: "2017", event: "Joins AngelList in marketing while continuing at Product Hunt." },
+    { year: "2018", event: "Co-founds Shrug Capital with Moshe Lifschitz, growing what started as a viral tweet into a fund backed by Marc Andreessen, Chris Dixon, and Kevin Rose." }
+  ],
+  biography: "Niv Dror built his network through community and marketing roles at Product Hunt, AngelList, and Meerkat before co-founding Shrug Capital in 2018 — a fund whose origin, famously, was a joke tweet that turned into real backing from Marc Andreessen and Chris Dixon.",
+  sources: [
+    { label: "Signal — Niv Dror investing profile", url: "https://signal.nfx.com/investors/niv-dror" },
+    { label: "Startup Intros — Shrug Capital", url: "https://startupintros.com/orgs/shrug-capital" }
+  ]
+},
+"moshe-lifschitz": {
+  name: "Moshe Lifschitz",
+  firm: "Shrug Capital",
+  firmSlug: "shrug-capital",
+  title: "Founder & Managing Partner",
+  joinedYear: 2018,
+  education: [],
+  previousExperience: [],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: "2018", event: "Co-founds Shrug Capital with Niv Dror." }
+  ],
+  biography: "Moshe Lifschitz co-founded Shrug Capital with Niv Dror in 2018; detailed pre-Shrug career history wasn't consistently confirmed across sources, so it's left out here rather than guessed.",
+  sources: [
+    { label: "Crunchbase — Shrug Capital", url: "https://www.crunchbase.com/organization/shrug-capital" }
+  ]
+},
   "samsung-ventures-lead": {
     name: "Samsung Venture Investment Corporation",
     firm: "Samsung Ventures",
