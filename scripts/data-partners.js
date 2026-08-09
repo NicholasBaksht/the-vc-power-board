@@ -372,7 +372,11 @@ const partnerProfiles = {
   previousExperience: [
     "Investor, Social Capital",
     "Investor, Lightspeed Venture Partners",
-    "First Employee & Partner, Bolt (2012–2022)"
+"First Employee & Partner, Bolt (2012–2022)"
+  ],
+  firmHistory: [
+    { firmSlug: "social-capital", role: "Investor", startYear: null, endYear: null },
+    { firmSlug: "lightspeed", role: "Investor", startYear: null, endYear: null }
   ],
   boardSeats: [],
   ipoCount: null,
