@@ -34,7 +34,7 @@ const EVENT_TYPE_LABELS = {
   milestone: 'Milestone'
 };
 const EVENT_TYPE_COLORS = {
-  firm_founded: '#E8C34A',
+  firm_founded: '#2F6FED',
   partner_joined: '#7dd3fc',
   partner_departed: '#f472b6',
   spinout_child: '#a78bfa',
