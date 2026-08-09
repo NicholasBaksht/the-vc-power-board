@@ -424,13 +424,16 @@ const partnerProfiles = {
   firmSlug: "baukunst",
   title: "Co-Founder & General Partner",
   joinedYear: 2022,
-  education: [],
-  previousExperience: [
-    "Co-Founder, two startups (both acquired)",
-    "General Partner, Atlas Venture",
-    "General Partner, Bolt"
+"General Partner, Bolt"
+  ],
+  firmHistory: [
+    { firmSlug: "atlas-venture", role: "General Partner", startYear: null, endYear: null }
   ],
   boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Co-founds two startups, both later acquired." },
   ipoCount: null,
   majorExits: null,
   careerTimeline: [
