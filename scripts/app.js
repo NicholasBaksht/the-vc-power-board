@@ -223,12 +223,23 @@ document.getElementById('discoveryView').style.display = 'none';
     document.getElementById('listView').style.display = 'block';
     renderFirms();
   }
-  renderCompareBar();
+ renderCompareBar();
   renderComparePartnersBar();
+  syncActiveNav();
+}
+
+// Highlights whichever nav link matches the current top-level
+// section, so the nav gives real "where am I" feedback instead of
+// only reacting during the click itself.
+function syncActiveNav() {
+  const topSlug = window.location.hash.replace('#', '').split('/')[0];
+  document.querySelectorAll('.nav-link').forEach(link => {
+    const linkSlug = (link.getAttribute('href') || '').replace('#', '').split('/')[0];
+    link.classList.toggle('active', linkSlug !== '' && linkSlug === topSlug);
+  });
 }
 
 window.addEventListener('hashchange', router);
-
 // Ticker tape at top — pulls every unique ticker + whatever price is set
 function buildTicker() {
   const track = document.getElementById('tickerTrack');
