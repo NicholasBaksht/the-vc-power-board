@@ -131,7 +131,8 @@ document.getElementById('familyTreeView').style.display = 'none';
 document.getElementById('ecosystemGraphView').style.display = 'none';
 document.getElementById('relationshipGraphView').style.display = 'none';
 document.getElementById('discoveryView').style.display = 'none';
-  document.getElementById('intelligenceFeedView').style.display = 'none';
+document.getElementById('intelligenceFeedView').style.display = 'none';
+  document.getElementById('powerSignalsView').style.display = 'none';
   document.getElementById('historicalSnapshotView').style.display = 'none';
  if (slug === 'historical-snapshot' || slug.startsWith('historical-snapshot/')) {
     document.getElementById('historicalSnapshotView').style.display = 'block';
