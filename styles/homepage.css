@@ -131,8 +131,8 @@
     margin: 24px 0 0;
     padding: 22px;
     border-radius: 2px;
-    background: linear-gradient(135deg, rgba(201,162,39,0.10), rgba(201,162,39,0.02));
-    border: 1px solid rgba(201,162,39,0.35);
+  background: linear-gradient(135deg, rgba(47,111,237,0.10), rgba(47,111,237,0.02));
+    border: 1px solid rgba(47,111,237,0.35);
   }
   .highlight .tag {
     font-family: var(--mono);
