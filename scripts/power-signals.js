@@ -210,3 +210,294 @@ function computeMarketPartnerMovementSignal() {
     caveat: 'Based on real joinedYear/firmHistory data. Coverage is uneven across firms, so this reflects what has been researched and dated, not a complete census of every real move in the industry.'
   };
 }
+// ---------- Rendering ----------
+
+const SIGNAL_STRENGTH_COLORS = { Strong: '#4ade80', Moderate: '#5B8DEF', Emerging: '#8FA5B3' };
+
+function renderSignalStrengthBadge(strength) {
+  return `<span class="ps-strength-badge" style="--sig-color:${SIGNAL_STRENGTH_COLORS[strength]}">${strength}</span>`;
+}
+
+function renderPowerSignalsSection(firm) {
+  const signals = computeFirmPowerSignals(firm.slug);
+  if (signals.length === 0) return '';
+
+  const cardsHTML = signals.map((s, i) => `
+    <div class="ps-mini-card" data-signal-index="${i}">
+      <div class="ps-mini-head">
+        <span class="ps-mini-icon">${SIGNAL_TYPE_ICONS[s.type]}</span>
+        <span class="ps-mini-label">${SIGNAL_TYPE_LABELS[s.type]}</span>
+        ${renderSignalStrengthBadge(s.strength)}
+      </div>
+      <div class="ps-mini-headline">${s.headline}</div>
+      <div class="ps-mini-explanation">${s.explanation}</div>
+      <div class="ps-mini-detail" id="psMiniDetail-${firm.slug}-${i}" style="display:none;"></div>
+    </div>
+  `).join('');
+
+  return `
+    <div class="power-signals-panel">
+      <div class="detail-subhead">Power Signals</div>
+      <div class="power-signals-sub">Automatically computed from real, dated events on file for ${firm.short} — not a summary, a calculation. Click any signal for the full breakdown.</div>
+      <div class="ps-mini-grid">${cardsHTML}</div>
+    </div>
+  `;
+}
+
+function wirePowerSignalsSection(firm) {
+  const signals = computeFirmPowerSignals(firm.slug);
+  document.querySelectorAll(`.ps-mini-card`).forEach(card => {
+    card.addEventListener('click', () => {
+      const i = card.dataset.signalIndex;
+      const detailEl = document.getElementById(`psMiniDetail-${firm.slug}-${i}`);
+      if (!detailEl) return;
+      const isOpen = detailEl.style.display !== 'none';
+      document.querySelectorAll('.ps-mini-detail').forEach(d => d.style.display = 'none');
+      if (!isOpen) {
+        detailEl.innerHTML = renderSignalDrilldown(signals[i], firm);
+        detailEl.style.display = 'block';
+      }
+    });
+  });
+}
+
+function renderSignalDrilldown(signal, firm) {
+  const links = [`<a href="#historical-snapshot/${firm.slug}" class="disc-link">Timeline</a>`];
+
+  if (signal.type === 'momentum') {
+    return `
+      <div class="ps-detail-row"><strong>Compared:</strong> last 2 years (${signal.recent} events) vs the 2 years before (${signal.prior} events)</div>
+      ${signal.caveat ? `<div class="ps-caveat">${signal.caveat}</div>` : ''}
+      <div class="ps-detail-links">${links.join('')} <a href="#compare" class="disc-link">VC DNA</a></div>
+    `;
+  }
+
+  if (signal.type === 'partner_momentum') {
+    const joinRows = signal.joins.map(p => `<div class="ps-detail-person">→ <a href="#partner/${p.profileSlug}" class="disc-link">${p.name}</a> joined as ${p.role}</div>`).join('');
+    const departRows = signal.departures.map(p => `<div class="ps-detail-person">← ${p.name} left (${p.role}, ${p.endYear})</div>`).join('');
+    links.push(`<a href="#family-tree" class="disc-link">Family Tree</a>`);
+    return `
+      <div class="ps-detail-row"><strong>Window:</strong> last 2 years</div>
+      ${joinRows}${departRows}
+      ${signal.caveat ? `<div class="ps-caveat">${signal.caveat}</div>` : ''}
+      <div class="ps-detail-links">${links.join('')}</div>
+    `;
+  }
+
+  if (signal.type === 'network_expansion') {
+    const relatedRows = signal.relatedFirmSlugs.map(slug => {
+      const f = firms.find(x => x.slug === slug);
+      return f ? `<div class="ps-detail-person">↔ <a href="#${f.slug}" class="disc-link">${f.name}</a></div>` : '';
+    }).join('');
+    links.push(`<a href="#relationship-graph/firm/${firm.slug}" class="disc-link">Relationship Graph</a>`);
+    return `
+      <div class="ps-detail-row"><strong>Window:</strong> last 2 years</div>
+      ${relatedRows}
+      ${signal.caveat ? `<div class="ps-caveat">${signal.caveat}</div>` : ''}
+      <div class="ps-detail-links">${links.join('')}</div>
+    `;
+  }
+
+  return '';
+}
+
+// ---------- Market Signals page ----------
+
+let marketSignalFilters = { types: new Set(), sector: '', geo: '', firmSlug: '', strength: '' };
+let marketSignalSort = 'strongest';
+
+function renderMarketSignals() {
+  marketSignalFilters = { types: new Set(), sector: '', geo: '', firmSlug: '', strength: '' };
+  marketSignalSort = 'strongest';
+
+  document.getElementById('powerSignalsView').innerHTML = `
+    <a href="#" class="detail-back">← Back to all firms</a>
+    <div class="dashboard-title">VC Market Signals</div>
+    <div class="reports-intro">
+      <p>Signals calculated from real, dated data already tracked on this page — not written, not summarized by AI. A signal only appears once there's enough real underlying data to support it; thin or ambiguous trends are left out rather than shown as fact.</p>
+    </div>
+
+    <div id="marketSignalTop"></div>
+    <div id="marketSignalFilterBar"></div>
+    <div id="marketSignalResults"></div>
+  `;
+
+  const marketSignal = computeMarketPartnerMovementSignal();
+  document.getElementById('marketSignalTop').innerHTML = marketSignal ? `
+    <div class="ps-market-card">
+      <div class="ps-market-head">
+        <span class="ps-mini-icon">🌐</span>
+        <span class="ps-mini-label">Market-Wide Signal</span>
+        ${renderSignalStrengthBadge(marketSignal.strength)}
+      </div>
+      <div class="ps-market-headline">${marketSignal.headline}</div>
+      <div class="ps-mini-explanation">${marketSignal.explanation}</div>
+      <div class="ps-caveat">${marketSignal.caveat}</div>
+      <div class="ps-market-firms">${marketSignal.firmSlugs.slice(0, 12).map(slug => {
+        const f = firms.find(x => x.slug === slug);
+        return f ? `<a href="#${f.slug}" class="compare-sector-tag">${f.short}</a>` : '';
+      }).join('')}</div>
+    </div>
+  ` : `<div class="intel-empty">Not enough real, dated partner-movement data on file yet to compute a market-wide signal.</div>`;
+
+  renderAllFirmSignals();
+  renderMarketSignalFilterBar();
+  renderMarketSignalResults();
+}
+
+function renderAllFirmSignals() {
+  window.marketAllFirmSignals = firms.flatMap(firm =>
+    computeFirmPowerSignals(firm.slug).map(signal => ({ signal, firm }))
+  );
+}
+
+function renderMarketSignalFilterBar() {
+  const all = window.marketAllFirmSignals || [];
+  const typesPresent = Array.from(new Set(all.map(x => x.signal.type)));
+  const sectorsPresent = Array.from(new Set(all.flatMap(x => getFirmCanonicalSectors(x.firm))));
+  const geosPresent = Array.from(new Set(all.map(x => getFirmCanonicalLocation(x.firm)).filter(Boolean)));
+  const firmsPresent = Array.from(new Set(all.map(x => x.firm.slug)))
+    .map(slug => firms.find(f => f.slug === slug)).sort((a, b) => a.name.localeCompare(b.name));
+
+  document.getElementById('marketSignalFilterBar').innerHTML = `
+    <div class="tl-filter-bar">
+      <div class="tl-filter-group">
+        <div class="tl-filter-label">Signal Type</div>
+        <div class="tl-type-chips">
+          ${typesPresent.map(t => `<button class="snapshot-type-chip ps-type-chip ${marketSignalFilters.types.has(t) ? 'active' : ''}" data-type="${t}" style="--chip-color:${SIGNAL_STRENGTH_COLORS.Moderate}">${SIGNAL_TYPE_ICONS[t]} ${SIGNAL_TYPE_LABELS[t]}</button>`).join('')}
+        </div>
+      </div>
+      <div class="tl-filter-group">
+        <div class="tl-filter-label">Strength</div>
+        <select id="psStrengthFilter" class="snapshot-select">
+          <option value="">Any Strength</option>
+          <option value="Strong">Strong</option>
+          <option value="Moderate">Moderate</option>
+          <option value="Emerging">Emerging</option>
+        </select>
+      </div>
+      ${sectorsPresent.length ? `
+      <div class="tl-filter-group">
+        <div class="tl-filter-label">Sector</div>
+        <select id="psSectorFilter" class="snapshot-select">
+          <option value="">All Sectors</option>
+          ${sectorsPresent.map(s => `<option value="${s}">${SECTOR_MAP[s].label}</option>`).join('')}
+        </select>
+      </div>` : ''}
+      ${geosPresent.length ? `
+      <div class="tl-filter-group">
+        <div class="tl-filter-label">Geography</div>
+        <select id="psGeoFilter" class="snapshot-select">
+          <option value="">All Geographies</option>
+          ${geosPresent.map(g => `<option value="${g}">${LOCATION_MAP[g].label}</option>`).join('')}
+        </select>
+      </div>` : ''}
+      <div class="tl-filter-group">
+        <div class="tl-filter-label">Firm</div>
+        <select id="psFirmFilter" class="snapshot-select">
+          <option value="">All Firms</option>
+          ${firmsPresent.map(f => `<option value="${f.slug}">${f.name}</option>`).join('')}
+        </select>
+      </div>
+      <div class="tl-filter-group">
+        <div class="tl-filter-label">Sort By</div>
+        <select id="psSortSelect" class="snapshot-select">
+          <option value="strongest">Strongest</option>
+          <option value="recent">Most Recent</option>
+          <option value="significant">Most Significant (Event Volume)</option>
+          <option value="fastest">Fastest Changing</option>
+        </select>
+      </div>
+    </div>
+    <div class="tl-disabled-filters-note">Every signal here is computed over a fixed trailing 2-year window — the underlying data only has year-level precision, so finer time-period controls (30/90 days) aren't offered since they'd be misleading.</div>
+  `;
+
+  document.querySelectorAll('.ps-type-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const t = chip.dataset.type;
+      if (marketSignalFilters.types.has(t)) marketSignalFilters.types.delete(t); else marketSignalFilters.types.add(t);
+      renderMarketSignalResults();
+    });
+  });
+  document.getElementById('psStrengthFilter').addEventListener('change', (e) => { marketSignalFilters.strength = e.target.value; renderMarketSignalResults(); });
+  const sectorSel = document.getElementById('psSectorFilter');
+  if (sectorSel) sectorSel.addEventListener('change', (e) => { marketSignalFilters.sector = e.target.value; renderMarketSignalResults(); });
+  const geoSel = document.getElementById('psGeoFilter');
+  if (geoSel) geoSel.addEventListener('change', (e) => { marketSignalFilters.geo = e.target.value; renderMarketSignalResults(); });
+  document.getElementById('psFirmFilter').addEventListener('change', (e) => { marketSignalFilters.firmSlug = e.target.value; renderMarketSignalResults(); });
+  document.getElementById('psSortSelect').addEventListener('change', (e) => { marketSignalSort = e.target.value; renderMarketSignalResults(); });
+}
+
+function signalMagnitude(signal) {
+  if (signal.type === 'momentum') return signal.recent + signal.prior;
+  if (signal.type === 'partner_momentum') return signal.joins.length + signal.departures.length;
+  if (signal.type === 'network_expansion') return signal.events.length;
+  return 0;
+}
+function signalMostRecentYear(signal) {
+  if (signal.type === 'momentum') return new Date().getFullYear();
+  if (signal.type === 'partner_momentum') {
+    const years = [...signal.joins.map(() => new Date().getFullYear()), ...signal.departures.map(d => d.endYear)];
+    return years.length ? Math.max(...years) : 0;
+  }
+  if (signal.type === 'network_expansion') return signal.events.length ? Math.max(...signal.events.map(e => e.year)) : 0;
+  return 0;
+}
+
+function renderMarketSignalResults() {
+  const all = window.marketAllFirmSignals || [];
+
+  const filtered = all.filter(({ signal, firm }) => {
+    if (marketSignalFilters.types.size > 0 && !marketSignalFilters.types.has(signal.type)) return false;
+    if (marketSignalFilters.strength && signal.strength !== marketSignalFilters.strength) return false;
+    if (marketSignalFilters.sector && !getFirmCanonicalSectors(firm).includes(marketSignalFilters.sector)) return false;
+    if (marketSignalFilters.geo && getFirmCanonicalLocation(firm) !== marketSignalFilters.geo) return false;
+    if (marketSignalFilters.firmSlug && firm.slug !== marketSignalFilters.firmSlug) return false;
+    return true;
+  });
+
+  const strengthOrder = { Strong: 3, Moderate: 2, Emerging: 1 };
+  filtered.sort((a, b) => {
+    if (marketSignalSort === 'strongest') return strengthOrder[b.signal.strength] - strengthOrder[a.signal.strength];
+    if (marketSignalSort === 'recent') return signalMostRecentYear(b.signal) - signalMostRecentYear(a.signal);
+    if (marketSignalSort === 'significant') return signalMagnitude(b.signal) - signalMagnitude(a.signal);
+    if (marketSignalSort === 'fastest') return Math.abs(b.signal.changePct || 0) - Math.abs(a.signal.changePct || 0);
+    return 0;
+  });
+
+  const resultsEl = document.getElementById('marketSignalResults');
+  resultsEl.innerHTML = `<div class="intel-results-label">${filtered.length} Firm Signal${filtered.length === 1 ? '' : 's'}</div><div id="psResultsList"></div>`;
+
+  if (filtered.length === 0) {
+    document.getElementById('psResultsList').innerHTML = `<div class="intel-empty">No signals match the current filters.</div>`;
+    return;
+  }
+
+  document.getElementById('psResultsList').innerHTML = filtered.map(({ signal, firm }, i) => `
+    <div class="ps-card" data-index="${i}">
+      <div class="ps-card-head">
+        <span class="ps-mini-icon">${SIGNAL_TYPE_ICONS[signal.type]}</span>
+        <a href="#${firm.slug}" class="ps-card-firm">${firm.name}</a>
+        <span class="ps-mini-label">${SIGNAL_TYPE_LABELS[signal.type]}</span>
+        ${renderSignalStrengthBadge(signal.strength)}
+      </div>
+      <div class="ps-mini-headline">${signal.headline}</div>
+      <div class="ps-mini-explanation">${signal.explanation}</div>
+      <div class="ps-card-detail" id="psCardDetail-${i}" style="display:none;"></div>
+    </div>
+  `).join('');
+
+  document.querySelectorAll('.ps-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('a')) return;
+      const i = card.dataset.index;
+      const detailEl = document.getElementById(`psCardDetail-${i}`);
+      const isOpen = detailEl.style.display !== 'none';
+      document.querySelectorAll('.ps-card-detail').forEach(d => d.style.display = 'none');
+      if (!isOpen) {
+        detailEl.innerHTML = renderSignalDrilldown(filtered[i].signal, filtered[i].firm);
+        detailEl.style.display = 'block';
+      }
+    });
+  });
+}
