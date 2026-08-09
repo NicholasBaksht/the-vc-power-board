@@ -156,3 +156,24 @@
 .ps-card-firm:hover {
   color: var(--gold-bright);
 }
+.ps-section {
+  margin-bottom: 32px;
+}
+.ps-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+.ps-preview-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: 14px 16px;
+  transition: border-color 0.15s ease;
+}
+.ps-preview-card:hover {
+  border-color: var(--gold);
+}
