@@ -132,9 +132,10 @@ document.getElementById('ecosystemGraphView').style.display = 'none';
   document.getElementById('relationshipGraphView').style.display = 'none';
   document.getElementById('historicalSnapshotView').style.display = 'none';
 
-  if (slug === 'historical-snapshot') {
+ if (slug === 'historical-snapshot' || slug.startsWith('historical-snapshot/')) {
     document.getElementById('historicalSnapshotView').style.display = 'block';
-    renderHistoricalSnapshot();
+    const snapshotDeepLink = slug.match(/^historical-snapshot\/(.+)$/);
+    renderHistoricalSnapshot(snapshotDeepLink ? snapshotDeepLink[1] : null);
     window.scrollTo(0, 0);
   } else if (slug === 'ecosystem-graph') {
     document.getElementById('ecosystemGraphView').style.display = 'block';
