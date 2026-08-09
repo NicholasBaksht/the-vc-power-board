@@ -112,10 +112,11 @@ ${renderWhyThisVC(firm)}
       ${renderPeerFirmLinks(firm)}
     </div>
   `;
-  document.getElementById('backToList').addEventListener('click', (e) => {
+document.getElementById('backToList').addEventListener('click', (e) => {
     e.preventDefault();
     window.location.hash = '';
   });
 
+  wirePowerSignalsSection(firm);
   buildTicker();
 }
