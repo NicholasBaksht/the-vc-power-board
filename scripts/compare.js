@@ -110,7 +110,7 @@ function renderComparison() {
 // computeGenomeScores/computeSimilarFirms already get reused
 // beyond the firm detail page.
 // ============================================================
-const DNA_FIRM_COLORS = ['#E8C34A', '#7dd3fc', '#4ade80'];
+const DNA_FIRM_COLORS = ['#2F6FED', '#7dd3fc', '#4ade80'];
 
 function computeDnaComparisonData(selected) {
   return selected.map((f, i) => ({
