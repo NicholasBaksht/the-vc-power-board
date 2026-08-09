@@ -11,7 +11,16 @@
 let snapshotFirmSlug = null;
 let snapshotYear = null;
 
-function renderHistoricalSnapshot() {
+function renderHistoricalSnapshot(deepLinkFirmSlug) {
+  if (deepLinkFirmSlug && firms.some(f => f.slug === deepLinkFirmSlug)) {
+    snapshotFirmSlug = deepLinkFirmSlug;
+    snapshotMode = 'timeline';
+    snapshotActiveTypes = new Set();
+    snapshotActivePartner = '';
+    snapshotYearMin = null;
+    snapshotYearMax = null;
+  }
+  if (!snapshotFirmSlug) snapshotFirmSlug = firms[0].slug;
   // Default to the featured firm (or the first firm) and the
   // current year, so the page shows something meaningful on first
   // load rather than an empty state.
