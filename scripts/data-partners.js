@@ -106,7 +106,10 @@ const partnerProfiles = {
     "Fireteam Leader, United States Marine Corps (Operation Enduring Freedom, Helmand Province)",
     "Investment Banking Analyst, M&A Group, Credit Suisse",
     "Private Equity Associate, The Carlyle Group",
-    "Partner, In-Q-Tel"
+ "Partner, In-Q-Tel"
+  ],
+  firmHistory: [
+    { firmSlug: "in-q-tel", role: "Partner", startYear: null, endYear: null }
   ],
   boardSeats: [],
   ipoCount: null,
