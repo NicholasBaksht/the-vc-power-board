@@ -339,7 +339,7 @@ function rgDraw() {
     .data(nodes).join('circle')
     .attr('class', 'rg-node ft-node')
     .attr('r', d => rgNodeRadius(d))
-    .attr('fill', '#0C0F14')
+  .attr('fill', '#070B14')
     .attr('stroke', d => RG_NODE_COLORS[d.type])
     .attr('stroke-width', d => d.id === rg.selectedId ? 3 : 1.5)
     .call(d3.drag()
