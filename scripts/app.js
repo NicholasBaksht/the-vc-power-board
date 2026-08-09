@@ -140,7 +140,16 @@ document.getElementById('ecosystemGraphView').style.display = 'none';
     document.getElementById('ecosystemGraphView').style.display = 'block';
     renderEcosystemGraph();
     window.scrollTo(0, 0);
- } else if (slug === 'family-tree') {
+} else if (slug === 'relationship-graph' || slug.startsWith('relationship-graph/')) {
+    document.getElementById('relationshipGraphView').style.display = 'block';
+    const rgMatch = slug.match(/^relationship-graph\/(firm|partner|company)\/(.+)$/);
+    if (rgMatch) {
+      renderRelationshipGraph(rgMatch[1], decodeURIComponent(rgMatch[2]));
+    } else {
+      renderRelationshipGraph(null, null);
+    }
+    window.scrollTo(0, 0);
+  } else if (slug === 'family-tree') {
     document.getElementById('familyTreeView').style.display = 'block';
     renderFamilyTree();
     window.scrollTo(0, 0);
