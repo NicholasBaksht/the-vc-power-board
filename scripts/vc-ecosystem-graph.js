@@ -9,12 +9,9 @@
  * (nothing in the data model supports that claim honestly).
  */
 
-// Builds the full graph: one node per firm that has at least one
-// real connection, plus edges for each verified relationship type.
 function buildEcosystemGraph() {
   const edges = [];
 
-  // --- Lineage edges (reuses the already-verified FAMILY_TREE data) ---
   FAMILY_TREE.forEach(group => {
     group.children.forEach(child => {
       edges.push({
@@ -26,13 +23,12 @@ function buildEcosystemGraph() {
     });
   });
 
-  // --- Portfolio overlap edges (real shared holdings) ---
   const companyHolders = {};
   firms.forEach(f => f.holdings.forEach(h => {
     if (!companyHolders[h.name]) companyHolders[h.name] = [];
     companyHolders[h.name].push(f.slug);
   }));
-  const overlapPairs = {}; // "slugA|slugB" -> [company names]
+  const overlapPairs = {};
   Object.entries(companyHolders).forEach(([company, slugs]) => {
     if (slugs.length < 2) return;
     for (let i = 0; i < slugs.length; i++) {
@@ -51,12 +47,7 @@ function buildEcosystemGraph() {
     });
   });
 
-  // --- Shared board seat edges (real, matched across different firms) ---
-  // Normalizes each board seat string to just its leading company name
-  // (stripping anything after a parenthesis, e.g. "Microsoft
-  // (1981-2014)" -> "Microsoft") so genuinely equivalent seats match
-  // even when partners recorded the date range differently.
-  const boardHolders = {}; // normalized company -> [{firmSlug, partnerName}]
+  const boardHolders = {};
   Object.entries(partnerProfiles).forEach(([slug, p]) => {
     (p.boardSeats || []).forEach(seat => {
       const normalized = seat.split('(')[0].trim();
@@ -69,7 +60,7 @@ function buildEcosystemGraph() {
   Object.entries(boardHolders).forEach(([company, holders]) => {
     for (let i = 0; i < holders.length; i++) {
       for (let j = i + 1; j < holders.length; j++) {
-        if (holders[i].firmSlug === holders[j].firmSlug) continue; // same firm, not cross-firm
+        if (holders[i].firmSlug === holders[j].firmSlug) continue;
         const key = [holders[i].firmSlug, holders[j].firmSlug].sort().join('|');
         if (!boardPairs[key]) boardPairs[key] = [];
         boardPairs[key].push(`${company} (${holders[i].partnerName} & ${holders[j].partnerName})`);
@@ -84,9 +75,6 @@ function buildEcosystemGraph() {
     });
   });
 
-  // Only include firms that actually appear in at least one edge -
-  // an isolated firm with zero real connections would just be a
-  // meaningless floating dot.
   const connectedSlugs = new Set(edges.flatMap(e => [e.source, e.target]));
   const nodes = firms
     .filter(f => connectedSlugs.has(f.slug))
@@ -94,6 +82,7 @@ function buildEcosystemGraph() {
 
   return { nodes, edges };
 }
+
 const EDGE_COLORS = { lineage: '#a78bfa', portfolio: '#2F6FED', board: '#4ade80' };
 const EDGE_LABELS = { lineage: 'Firm Lineage', portfolio: 'Portfolio Overlap', board: 'Shared Board Seat' };
 
@@ -140,7 +129,6 @@ function drawGraph(nodes, edges) {
 
   const container = svg.append('g');
 
-  // Zoom/pan support - a graph with 60+ nodes needs this to be usable
   svg.call(d3.zoom().scaleExtent([0.3, 3]).on('zoom', (event) => {
     container.attr('transform', event.transform);
   }));
@@ -166,7 +154,7 @@ function drawGraph(nodes, edges) {
     .join('circle')
     .attr('class', 'graph-node')
     .attr('r', d => nodeRadius(d))
- .attr('fill', '#070B14')
+    .attr('fill', '#070B14')
     .attr('stroke', '#5B8DEF')
     .attr('stroke-width', 1.5)
     .call(d3.drag()
@@ -198,13 +186,9 @@ function drawGraph(nodes, edges) {
 }
 
 function nodeRadius(d) {
-  // Square-root scaling on AUM, same reasoning as the World Map pins -
-  // keeps the largest firms readable without dwarfing everything else.
   return Math.max(6, Math.min(22, Math.sqrt(d.aum || 0.1) * 3));
 }
 
-// Dims every node/link not connected to the clicked firm, so its
-// real relationships are immediately visually obvious.
 function highlightNode(selectedId, nodes, edges, linkSel, nodeSel) {
   const connectedIds = new Set([selectedId]);
   edges.forEach(e => {
@@ -221,8 +205,6 @@ function highlightNode(selectedId, nodes, edges, linkSel, nodeSel) {
   });
 }
 
-// Renders the real connection list below the graph for whichever
-// firm was just clicked.
 function renderGraphSelection(selectedId, edges) {
   const panel = document.getElementById('graphSelectionPanel');
   const firm = firms.find(f => f.slug === selectedId);
