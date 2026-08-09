@@ -1,1 +1,63 @@
+/* ============================================================
+   INTERACTIONS.CSS
+   Sitewide micro-interactions: hover/press feedback for existing
+   components that don't already have their own (firm cards had
+   none at all), a consistent focus-visible ring for keyboard
+   users, and a global press-state on buttons. Purely additive -
+   loaded last, and only adds rules for states components didn't
+   already define, so nothing here overrides an existing file's
+   own hover/transition behavior.
+   ============================================================ */
 
+/* Rankings cards had zero hover feedback before this. */
+.firm {
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.firm:hover {
+  border-color: var(--gold);
+  box-shadow: 0 6px 20px -10px rgba(47, 111, 237, 0.3);
+}
+
+/* Generic press feedback for every button on the site, regardless
+   of which file defines its base styling. */
+button:active,
+.chip:active,
+.shortlist-btn:active,
+.compare-btn:active {
+  transform: scale(0.97);
+}
+button,
+.chip,
+.shortlist-btn {
+  transition: transform 0.1s ease, border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+/* Consistent keyboard focus ring in the new brand accent, since
+   none of the individual component files define one. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Chips (sector/stage/era filters, event-type chips, example-query
+   chips, etc.) get a consistent hover lift to signal interactivity,
+   on top of whatever active-state color each feature already sets. */
+.chip:hover,
+.snapshot-type-chip:hover,
+.disc-example-chip:hover {
+  border-color: var(--gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .firm,
+  button,
+  .chip,
+  .shortlist-btn,
+  .feature-card,
+  .feature-card-arrow-glyph {
+    transition: none !important;
+  }
+}
