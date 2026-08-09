@@ -96,6 +96,7 @@ const holdingsHTML = firm.holdings.map(h => {
         </div>
       </div>
 ${renderWhyThisVC(firm)}
+      ${renderPowerSignalsSection(firm)}
       ${renderGenome(firm)}
       ${renderPerformanceDashboard(firm)}
       ${renderGeographicHeatmap(firm)}
