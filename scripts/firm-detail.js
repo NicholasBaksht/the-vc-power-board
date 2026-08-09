@@ -59,7 +59,8 @@ const holdingsHTML = firm.holdings.map(h => {
      <div class="detail-meta">
         <a href="${firm.website}" target="_blank" rel="noopener noreferrer" class="firm-link">${firm.website.replace('https://', '')} ↗</a>
         ${firm.seoPage ? ` · <a href="${firm.seoPage}" class="firm-link">Standalone Profile Page ↗</a>` : ''}
-        ${TEAM_PAGES[firm.slug] ? ` · <a href="${TEAM_PAGES[firm.slug]}" target="_blank" rel="noopener noreferrer" class="firm-link">Team Page ↗</a>` : ''}
+     ${TEAM_PAGES[firm.slug] ? ` · <a href="${TEAM_PAGES[firm.slug]}" target="_blank" rel="noopener noreferrer" class="firm-link">Team Page ↗</a>` : ''}
+        · <a href="#historical-snapshot/${firm.slug}" class="firm-link">View Historical Timeline →</a>
       </div>
       <div class="detail-stats">
         <div class="detail-stat">
