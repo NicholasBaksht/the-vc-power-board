@@ -338,7 +338,10 @@ const partnerProfiles = {
   previousExperience: [
     "Design Engineer, IDEO (Palm V, Dell Latitude Docking Station)",
     "Co-Founder & Product Manager, Good Technology (2000–2002, acquired by Motorola)",
-    "General Partner, Kleiner Perkins Caufield & Byers (2002–2014)"
+  "General Partner, Kleiner Perkins Caufield & Byers (2002–2014)"
+  ],
+  firmHistory: [
+    { firmSlug: "kleiner-perkins", role: "General Partner", startYear: 2002, endYear: 2014 }
   ],
   boardSeats: ["Enlighted"],
   ipoCount: null,
