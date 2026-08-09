@@ -82,7 +82,7 @@ function renderComparison() {
     </tr>
   `).join('');
 
-  document.getElementById('compareView').innerHTML = `
+ document.getElementById('compareView').innerHTML = `
     <a href="#" class="detail-back" id="backFromCompare">← Back to all firms</a>
     <div class="scroll-hint">← Swipe to see all firms →</div>
     <div class="compare-table-wrap">
@@ -91,8 +91,8 @@ function renderComparison() {
         <tbody>${bodyRows}</tbody>
       </table>
     </div>
+    ${renderDnaComparison(selected)}
   `;
-
   document.getElementById('backFromCompare').addEventListener('click', (e) => {
     e.preventDefault();
     window.location.hash = '';
