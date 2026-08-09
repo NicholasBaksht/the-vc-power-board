@@ -503,3 +503,48 @@ function renderMarketSignalResults() {
     });
   });
 }
+// The three curated preview sections (item 5) - all pulled from the
+// exact same computeFirmPowerSignals() results as the full Firm
+// Signals list below, just re-sorted/re-filtered differently. No
+// new data, no separate calculation.
+function renderMarketSignalPreviewSections() {
+  const all = window.marketAllFirmSignals || [];
+  const container = document.getElementById('marketSignalSections');
+  if (all.length === 0) {
+    container.innerHTML = `<div class="intel-empty">No firm-level signals clear the minimum data threshold yet.</div>`;
+    return;
+  }
+
+  const latest = [...all].sort((a, b) => signalMostRecentYear(b.signal) - signalMostRecentYear(a.signal)).slice(0, 4);
+  const strengthOrder = { Strong: 3, Moderate: 2, Emerging: 1 };
+  const strongest = [...all].sort((a, b) =>
+    (strengthOrder[b.signal.strength] - strengthOrder[a.signal.strength]) || (signalMagnitude(b.signal) - signalMagnitude(a.signal))
+  ).slice(0, 4);
+  const emerging = all.filter(x => x.signal.strength === 'Emerging').slice(0, 4);
+
+  function section(title, items) {
+    if (items.length === 0) return '';
+    return `
+      <div class="ps-section">
+        <div class="detail-subhead">${title}</div>
+        <div class="ps-preview-grid">${items.map(({ signal, firm }) => renderPreviewCard(signal, firm)).join('')}</div>
+      </div>
+    `;
+  }
+
+  container.innerHTML = section('Latest Signals', latest) + section('Strongest Changes', strongest) + section('Emerging Trends', emerging);
+}
+
+function renderPreviewCard(signal, firm) {
+  return `
+    <a href="#${firm.slug}" class="ps-preview-card">
+      <div class="ps-card-head">
+        <span class="ps-mini-icon">${SIGNAL_TYPE_ICONS[signal.type]}</span>
+        <span class="ps-card-firm">${firm.name}</span>
+        ${renderSignalStrengthBadge(signal.strength)}
+      </div>
+      <div class="ps-mini-headline">${signal.headline}</div>
+      <div class="ps-mini-explanation">${signal.explanation}</div>
+    </a>
+  `;
+}
