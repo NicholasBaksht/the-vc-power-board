@@ -150,6 +150,10 @@ document.getElementById('relationshipGraphView').style.display = 'none';
       renderRelationshipGraph(null, null);
     }
     window.scrollTo(0, 0);
+ } else if (slug === 'discover') {
+    document.getElementById('discoveryView').style.display = 'block';
+    renderDiscoveryEngine();
+    window.scrollTo(0, 0);
   } else if (slug === 'family-tree') {
     document.getElementById('familyTreeView').style.display = 'block';
     renderFamilyTree();
