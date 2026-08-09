@@ -252,7 +252,7 @@ const TEAM_PAGES = {
   "gobi-partners": null,
   "rise-of-the-rest-seed-fund": "https://www.revolution.com/our-team",
   "barclays-uk-ventures": null,
-  cavalry-ventures": "https://cavalry.vc/",
+  "cavalry-ventures": "https://cavalry.vc/",
   "point72-ventures": "https://www.point72.com/leadership",
   "playground-global": "https://www.playground.vc/people",
   "grishin-robotics": "https://www.grishinrobotics.com/team",
