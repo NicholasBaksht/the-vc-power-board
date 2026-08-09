@@ -1,80 +1,119 @@
 /**
  * FAMILY-TREE.JS
- * Renders the VC Family Tree: for each verified parent firm in
- * FAMILY_TREE, shows the real firm card, then the real spinout
- * firms below it, connected by simple visual lines. Every name,
- * year, and note is drawn from FAMILY_TREE's already-verified data
- * plus the real firm objects themselves - nothing computed or
- * invented here, just laid out.
+ * The VC Family Tree - an interactive, firm-centered relationship
+ * graph built entirely on relationship-graph.js's real data layer.
+ * Progressive expansion: starts with one firm's immediate real
+ * relationships, and reveals more only as the user clicks through -
+ * never renders the whole network at once.
  */
 
+let ftState = {
+  centerSlug: null,
+  nodes: [],
+  edges: [],
+  expandedIds: new Set(),
+  selectedNode: null,
+  simulation: null
+};
+
+const FT_REL_STYLE = {
+  current_partner:      { color: '#E8C34A', dash: 'none',  width: 2 },
+  former_partner:        { color: '#E8C34A', dash: '4,3',   width: 1.5 },
+  previously_at:          { color: '#8B93A6', dash: '4,3',   width: 1.5 },
+  joined:                 { color: '#E8C34A', dash: 'none',  width: 2 },
+  founded:                { color: '#a78bfa', dash: 'none',  width: 2 },
+  invested_in:            { color: '#4ade80', dash: 'none',  width: 1.2 },
+  portfolio_connection:   { color: '#4ade80', dash: '2,3',   width: 1.2 },
+  spinout:                { color: '#a78bfa', dash: 'none',  width: 2.5 }
+};
+
+const FT_REL_LABELS = {
+  current_partner: 'Current Partner',
+  former_partner: 'Former Partner',
+  previously_at: 'Previously At',
+  joined: 'Joined',
+  founded: 'Founded',
+  invested_in: 'Invested In',
+  portfolio_connection: 'Portfolio Connection',
+  spinout: 'Spinout'
+};
+
 function renderFamilyTree() {
-  const totalParents = FAMILY_TREE.length;
-  const totalChildren = FAMILY_TREE.reduce((sum, group) => sum + group.children.length, 0);
-  const totalAlumniFounders = new Set(
-    FAMILY_TREE.flatMap(group => group.children.flatMap(c => c.founders))
-  ).size;
-
-  const groupsHTML = FAMILY_TREE.map(group => {
-    const parent = firms.find(f => f.slug === group.parentSlug);
-    if (!parent) return ''; // fails quietly if a slug ever goes stale
-
-    const childrenHTML = group.children.map(child => {
-      const childFirm = firms.find(f => f.slug === child.slug);
-      if (!childFirm) return '';
-
-      const foundersHTML = child.founders.map(name =>
-        `<span class="tree-founder-tag">${name}</span>`
-      ).join('');
-
-      // Show up to 3 real holdings from the child firm as its
-      // "notable companies" row, same real data already on its
-      // own firm card - no separate invented list per child.
-      const holdingsHTML = childFirm.holdings.slice(0, 3).map(h => `
-        <div class="tree-company-row">
-          <span class="tree-company-name">${h.name}</span>
-          <span class="tree-company-ticker">${h.ticker}</span>
-        </div>
-      `).join('');
-
-      return `
-        <div class="tree-child-branch">
-          <a href="#${child.slug}" class="tree-child-card">
-            <div class="tree-child-name">${childFirm.name}</div>
-            <div class="tree-child-meta">Founded ${child.year} by ${child.founders.join(', ')}</div>
-            <div class="tree-child-note">${child.note}</div>
-            <div class="tree-founders-row">${foundersHTML}</div>
-          </a>
-          ${holdingsHTML ? `<div class="tree-companies">${holdingsHTML}</div>` : ''}
-        </div>
-      `;
-    }).join('');
-
-    return `
-      <div class="tree-group">
-        <a href="#${parent.slug}" class="tree-parent-card">
-          <div class="tree-parent-name">${parent.name}</div>
-          <div class="tree-parent-meta">${parent.aum} AUM · Founded ${parent.founded} · ${parent.hq}</div>
-        </a>
-        <div class="tree-connector-label">Spun Out / Founded</div>
-        <div class="tree-children-row">${childrenHTML}</div>
-      </div>
-    `;
-  }).join('');
+  const defaultSlug = ftState.centerSlug || featuredFirm.slug;
 
   document.getElementById('familyTreeView').innerHTML = `
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">VC Family Tree</div>
     <div class="reports-intro">
-      <p>Real, independently verified spinout relationships between firms tracked on this page — partners who left one firm to found another. This is not a complete map of every VC lineage in existence, just the connections specifically fact-checked while each firm was researched and added here.</p>
+      <p>Trace how firms, partners, and portfolio companies really connect — click any node to reveal its real relationships. Every connection here is backed by verified data already on this site; nothing is inferred.</p>
     </div>
 
-    <div class="scale-bar" style="margin-bottom: 32px;">
-      <div class="stat-card"><span class="stat-card-num">${totalParents}</span><span class="stat-card-label">Parent Firms</span></div>
-      <div class="stat-card"><span class="stat-card-num">${totalChildren}</span><span class="stat-card-label">Verified Spinouts</span></div>
-      <div class="stat-card"><span class="stat-card-num">${totalAlumniFounders}</span><span class="stat-card-label">Alumni Founders</span></div>
+    <div class="ft-controls">
+      <input type="text" id="ftFirmSearch" class="ft-search-input" placeholder="Search for a firm to center the tree on..." autocomplete="off">
+      <div id="ftSearchResults" class="ft-search-results"></div>
     </div>
 
-    ${groupsHTML}
+    <div class="ft-legend">
+      ${Object.entries(FT_REL_LABELS).map(([key, label]) => `
+        <span class="ft-legend-item">
+          <span class="ft-legend-line" style="background:${FT_REL_STYLE[key].color}; ${FT_REL_STYLE[key].dash !== 'none' ? 'background-image: repeating-linear-gradient(90deg,' + FT_REL_STYLE[key].color + ' 0 4px, transparent 4px 7px); background-color: transparent;' : ''}"></span>
+          ${label}
+        </span>
+      `).join('')}
+    </div>
+
+    <div class="ft-layout">
+      <div class="ft-canvas-wrap">
+        <svg id="ftSvg"></svg>
+        <div class="ft-canvas-hint">Scroll to zoom · Drag to pan · Click a node to expand it</div>
+      </div>
+      <div id="ftSidePanel" class="ft-side-panel">
+        <div class="ft-panel-empty">Click any node in the tree to see why it's connected.</div>
+      </div>
+    </div>
   `;
+
+  setupFtSearch();
+  selectFamilyTreeFirm(defaultSlug);
+}
+
+function setupFtSearch() {
+  const input = document.getElementById('ftFirmSearch');
+  const results = document.getElementById('ftSearchResults');
+
+  input.addEventListener('input', () => {
+    const term = input.value.trim().toLowerCase();
+    if (term.length < 2) { results.innerHTML = ''; results.style.display = 'none'; return; }
+    const matches = firms.filter(f => f.name.toLowerCase().includes(term)).slice(0, 8);
+    if (matches.length === 0) { results.innerHTML = '<div class="ft-search-empty">No firms found.</div>'; results.style.display = 'block'; return; }
+    results.innerHTML = matches.map(f => `<div class="ft-search-result" data-slug="${f.slug}">${f.name}</div>`).join('');
+    results.style.display = 'block';
+    results.querySelectorAll('.ft-search-result').forEach(el => {
+      el.addEventListener('click', () => {
+        input.value = '';
+        results.style.display = 'none';
+        selectFamilyTreeFirm(el.dataset.slug);
+      });
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!input.contains(e.target) && !results.contains(e.target)) results.style.display = 'none';
+  });
+}
+
+function selectFamilyTreeFirm(slug) {
+  const firm = firms.find(f => f.slug === slug);
+  if (!firm) {
+    document.getElementById('ftSidePanel').innerHTML = `<div class="ft-panel-empty">Firm not found.</div>`;
+    return;
+  }
+  ftState.centerSlug = slug;
+  ftState.expandedIds = new Set([slug]);
+  const graph = buildInitialGraph(slug);
+  ftState.nodes = graph.nodes;
+  ftState.edges = graph.edges;
+  ftState.selectedNode = null;
+  drawFamilyTreeGraph();
+  renderFtSidePanel(null);
 }
