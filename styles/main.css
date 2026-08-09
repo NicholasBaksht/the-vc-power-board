@@ -7,22 +7,40 @@
    Load this FIRST - every other file depends on the --variables
    defined here.
    ============================================================ */
-  :root {
-    --bg: #0C0F14;
-    --surface: #14181F;
-    --surface-raised: #191E27;
-    --hairline: #2A3140;
-    --ink: #EDEFF3;
-    --ink-dim: #8B93A7;
-    --gold: #C9A227;
-    --gold-bright: #E8C34A;
+:root {
+    /* Deep navy surfaces - same structure as before (bg darkest,
+       surface-raised lightest), shifted from near-black to a real
+       navy so the "premium financial institution" base color reads
+       as blue rather than charcoal. */
+    --bg: #070B14;
+    --surface: #0E1524;
+    --surface-raised: #141C30;
+    --hairline: #263048;
+
+    --ink: #EDF1F8;
+    --ink-dim: #8994AC;
+
+    /* The real brand tokens going forward - a strong royal/electric
+       blue for primary actions and active states, and a brighter
+       highlight blue for hover/emphasis. --gold and --gold-bright
+       are kept as aliases pointing at these so every existing file
+       (firm cards, firm detail, compare, dashboard, family tree,
+       relationship graph, discovery, intelligence feed, etc.) picks
+       up the new identity without being individually touched. */
+    --accent: #2F6FED;
+    --accent-bright: #5B8DEF;
+    --gold: var(--accent);
+    --gold-bright: var(--accent-bright);
+
+    /* Financial up/down convention - left as-is deliberately, not
+       part of the brand accent system. */
     --green: #4ADE80;
     --red: #F87171;
+
     --serif: 'Fraunces', serif;
     --sans: 'Inter', sans-serif;
     --mono: 'IBM Plex Mono', monospace;
   }
-
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
 
