@@ -129,9 +129,9 @@ document.getElementById('reportsHubView').style.display = 'none';
   document.getElementById('sectorReportView').style.display = 'none';
 document.getElementById('familyTreeView').style.display = 'none';
 document.getElementById('ecosystemGraphView').style.display = 'none';
-  document.getElementById('relationshipGraphView').style.display = 'none';
+document.getElementById('relationshipGraphView').style.display = 'none';
+  document.getElementById('discoveryView').style.display = 'none';
   document.getElementById('historicalSnapshotView').style.display = 'none';
-
  if (slug === 'historical-snapshot' || slug.startsWith('historical-snapshot/')) {
     document.getElementById('historicalSnapshotView').style.display = 'block';
     const snapshotDeepLink = slug.match(/^historical-snapshot\/(.+)$/);
