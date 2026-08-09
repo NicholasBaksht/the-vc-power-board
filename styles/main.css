@@ -109,7 +109,8 @@
     color: var(--ink);
     border-bottom-color: var(--hairline);
   }
-  .nav-link:active {
+ .nav-link:active,
+  .nav-link.active {
     color: var(--gold-bright);
     border-bottom-color: var(--gold);
   }
