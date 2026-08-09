@@ -341,7 +341,8 @@ document.getElementById('powerSignalsView').innerHTML = `
     </div>
   ` : `<div class="intel-empty">Not enough real, dated partner-movement data on file yet to compute a market-wide signal.</div>`;
 
-  renderAllFirmSignals();
+renderAllFirmSignals();
+  renderMarketSignalPreviewSections();
   renderMarketSignalFilterBar();
   renderMarketSignalResults();
 }
