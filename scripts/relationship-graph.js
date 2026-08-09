@@ -249,3 +249,138 @@ function dedupeGraph({ nodes, edges }) {
   });
   return { nodes: Array.from(seenNodes.values()), edges: dedupedEdges };
 }
+// ===== Additions below support the Relationship Graph explorer =====
+REL_TYPES.SECTOR_PEER = 'sector_peer';
+REL_TYPES.GEO_PEER = 'geo_peer';
+REL_TYPES.BOARD_SEAT = 'board_seat';
+
+NODE_TYPES.SECTOR = 'sector';
+NODE_TYPES.GEO = 'geo';
+
+function getSectorPeers(firmSlug, cap = 15) {
+  const firm = firms.find(f => f.slug === firmSlug);
+  if (!firm || !firm.sectors) return [];
+  const overlaps = {};
+  firm.sectors.forEach(sector => {
+    firms.forEach(other => {
+      if (other.slug === firmSlug) return;
+      if ((other.sectors || []).includes(sector)) {
+        if (!overlaps[other.slug]) overlaps[other.slug] = new Set();
+        overlaps[other.slug].add(sector);
+      }
+    });
+  });
+  return Object.entries(overlaps)
+    .map(([slug, sectors]) => ({ firmSlug: slug, sectors: Array.from(sectors) }))
+    .sort((a, b) => b.sectors.length - a.sectors.length)
+    .slice(0, cap);
+}
+
+function getGeoPeers(firmSlug, cap = 15) {
+  const firm = firms.find(f => f.slug === firmSlug);
+  if (!firm || !firm.hq) return [];
+  const country = getCountryFromHQ(firm.hq);
+  if (!country) return [];
+  return firms
+    .filter(f => f.slug !== firmSlug && getCountryFromHQ(f.hq) === country)
+    .slice(0, cap)
+    .map(f => ({ firmSlug: f.slug, country }));
+}
+
+function getFormerPartnerBridges(firmSlug) {
+  const bridges = {};
+  getCurrentPartners(firmSlug).forEach(p => {
+    if (!p.profileSlug) return;
+    const profile = partnerProfiles[p.profileSlug];
+    if (!profile || !profile.firmHistory) return;
+    profile.firmHistory.forEach(fh => {
+      if (fh.firmSlug === firmSlug) return;
+      if (!bridges[fh.firmSlug]) bridges[fh.firmSlug] = [];
+      bridges[fh.firmSlug].push({ name: profile.name, role: fh.role, startYear: fh.startYear, endYear: fh.endYear });
+    });
+  });
+  return Object.entries(bridges).map(([slug, people]) => ({ firmSlug: slug, people }));
+}
+
+function getPartnerBoardCompanies(partnerSlug) {
+  const profile = partnerProfiles[partnerSlug];
+  if (!profile || !profile.boardSeats) return [];
+  return profile.boardSeats.map(seat => seat.split('(')[0].trim()).filter(Boolean);
+}
+
+function getPartnerNotableInvestments(partnerSlug) {
+  const profile = partnerProfiles[partnerSlug];
+  if (!profile || !profile.notableInvestments) return [];
+  return profile.notableInvestments;
+}
+
+function getCompanyHolders(companyName) {
+  return firms.filter(f => f.holdings.some(h => h.name === companyName));
+}
+
+function getCompanyBoardMembers(companyName) {
+  return Object.entries(partnerProfiles)
+    .filter(([slug, p]) => (p.boardSeats || []).some(seat => seat.split('(')[0].trim() === companyName))
+    .map(([slug, p]) => ({ profileSlug: slug, name: p.name, firmSlug: p.firmSlug }));
+}
+
+function buildPartnerCenteredGraph(partnerSlug) {
+  const profile = partnerProfiles[partnerSlug];
+  if (!profile) return { nodes: [], edges: [] };
+
+  const nodes = [makeNode(partnerSlug, NODE_TYPES.PARTNER, profile.name, { center: true, role: profile.title, profileSlug: partnerSlug })];
+  const edges = [];
+
+  const currentFirm = firms.find(f => f.slug === profile.firmSlug);
+  if (currentFirm) {
+    nodes.push(makeNode(currentFirm.slug, NODE_TYPES.FIRM, currentFirm.name, { aum: currentFirm.aum }));
+    edges.push(makeEdge(currentFirm.slug, partnerSlug, REL_TYPES.CURRENT_PARTNER, profile.title));
+  }
+
+  (profile.firmHistory || []).forEach(fh => {
+    const prevFirm = firms.find(f => f.slug === fh.firmSlug);
+    if (!prevFirm) return;
+    nodes.push(makeNode(prevFirm.slug, NODE_TYPES.FIRM, prevFirm.name, { aum: prevFirm.aum }));
+    const yearLabel = fh.startYear ? `${fh.role}, ${fh.startYear}${fh.endYear ? '–' + fh.endYear : '–present'}` : fh.role;
+    edges.push(makeEdge(partnerSlug, prevFirm.slug, REL_TYPES.PREVIOUSLY_AT, yearLabel));
+  });
+
+  getPartnerBoardCompanies(partnerSlug).slice(0, 8).forEach(name => {
+    const companyId = `company:${name}`;
+    nodes.push(makeNode(companyId, NODE_TYPES.COMPANY, name));
+    edges.push(makeEdge(partnerSlug, companyId, REL_TYPES.BOARD_SEAT, 'Board seat'));
+  });
+
+  getPartnerNotableInvestments(partnerSlug).slice(0, 8).forEach(inv => {
+    const companyId = `company:${inv.name}`;
+    nodes.push(makeNode(companyId, NODE_TYPES.COMPANY, inv.name, { ticker: inv.ticker }));
+    edges.push(makeEdge(partnerSlug, companyId, REL_TYPES.INVESTED_IN, inv.ticker || 'Notable investment'));
+  });
+
+  return dedupeGraph({ nodes, edges });
+}
+
+function buildCompanyCenteredGraph(companyName) {
+  const companyId = `company:${companyName}`;
+  const nodes = [makeNode(companyId, NODE_TYPES.COMPANY, companyName, { center: true })];
+  const edges = [];
+
+  getCompanyHolders(companyName).forEach(f => {
+    nodes.push(makeNode(f.slug, NODE_TYPES.FIRM, f.name, { aum: f.aum }));
+    edges.push(makeEdge(f.slug, companyId, REL_TYPES.INVESTED_IN, f.name));
+  });
+
+  getCompanyBoardMembers(companyName).forEach(m => {
+    nodes.push(makeNode(m.profileSlug, NODE_TYPES.PARTNER, m.name, { profileSlug: m.profileSlug }));
+    edges.push(makeEdge(m.profileSlug, companyId, REL_TYPES.BOARD_SEAT, 'Board seat'));
+  });
+
+  return dedupeGraph({ nodes, edges });
+}
+
+function buildGraphFor(entityType, id) {
+  if (entityType === NODE_TYPES.FIRM) return buildInitialGraph(id);
+  if (entityType === NODE_TYPES.PARTNER) return buildPartnerCenteredGraph(id);
+  if (entityType === NODE_TYPES.COMPANY) return buildCompanyCenteredGraph(id.replace(/^company:/, ''));
+  return { nodes: [], edges: [] };
+}
