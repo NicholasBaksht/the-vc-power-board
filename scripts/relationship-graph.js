@@ -35,10 +35,9 @@ function makeNode(id, type, label, extra = {}) {
   return { id, type, label, ...extra };
 }
 
-function makeEdge(source, target, relType, label) {
-  return { source, target, relType, label };
+function makeEdge(source, target, relType, label, extra = {}) {
+  return { source, target, relType, label, ...extra };
 }
-
 // Finds every partner currently at a firm - both from firm.leadership
 // (the simple name/role list) and cross-checked against partnerProfiles
 // where a fuller profile exists (so the graph can link to it).
