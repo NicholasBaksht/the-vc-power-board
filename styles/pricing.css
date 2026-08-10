@@ -29,7 +29,7 @@
   }
   .pricing-card.pro {
     border-color: rgba(201,162,39,0.4);
-    background: linear-gradient(135deg, rgba(201,162,39,0.06), rgba(201,162,39,0.01));
+    background: linear-gradient(135deg, rgba(75,130,239,0.06), rgba(75,130,239,0.01));
   }
   .pricing-tier-name {
     font-family: var(--serif);
@@ -96,7 +96,7 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--gold-bright);
-    background: rgba(201,162,39,0.15);
+    background: rgba(75,130,239,0.15);
     padding: 2px 8px;
     border-radius: 3px;
     margin-left: 6px;
