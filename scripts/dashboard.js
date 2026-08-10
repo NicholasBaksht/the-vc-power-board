@@ -105,8 +105,18 @@ function computeGenomeScores(firm) {
   const philScores = computePhilosophyScores(firm);
   const philIntensity = (philScores.reduce((sum, c) => sum + c.score, 0) / (philScores.length * 5)) * 100;
 
+  // Fund Size uses the same log+sqrt curve as computePowerScore's
+  // Capital Scale component, not a straight linear ratio. A linear
+  // ratio against the single largest fund on the page punishes any
+  // firm that isn't literally #1 - a16z at ~$45B was landing around
+  // 51 purely because a bigger fund exists, despite being globally
+  // elite. This keeps the Genome's fund-size bar consistent with
+  // how Power Score already treats the same real AUM number.
+  const fundSizeRatio = maxAUM > 0 ? Math.log10(parseAumNumber(firm.aum) + 1) / Math.log10(maxAUM + 1) : 0;
+  const fundSizeScore = Math.round(Math.sqrt(fundSizeRatio) * 100);
+
 const dimensions = [
-    { key: 'fundSize', label: 'Fund Size', value: Math.round((parseAumNumber(firm.aum) / maxAUM) * 100), color: '#2F6FED' },
+    { key: 'fundSize', label: 'Fund Size', value: fundSizeScore, color: '#2F6FED' },
     { key: 'portfolio', label: 'Portfolio Breadth', value: Math.round((firm.holdings.length / maxHoldings) * 100), color: '#5B8DEF' },
     { key: 'stageBreadth', label: 'Stage Breadth', value: Math.round(((firmStages[firm.slug] || []).length / 6) * 100), color: '#7CA8F7' },
     { key: 'sectorBreadth', label: 'Sector Breadth', value: Math.round((firm.sectors.length / maxSectors) * 100), color: '#1E4FBF' },
