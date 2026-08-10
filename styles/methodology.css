@@ -43,7 +43,23 @@
     border-color: var(--gold);
     color: var(--gold-bright);
   }
-
+.criteria-list {
+  margin: 0 0 20px;
+  padding-left: 20px;
+}
+.criteria-list li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-dim);
+  margin-bottom: 10px;
+}
+.criteria-list li strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+.criteria-list li::marker {
+  color: var(--gold);
+}
   /* ---------- POWER SCORE™ METHODOLOGY SECTION ---------- */
   .power-score-block {
     margin: 32px 0 40px;
