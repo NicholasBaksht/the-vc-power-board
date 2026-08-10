@@ -851,11 +851,11 @@ holdings: [
     { name: "Brian Olson", role: "Co-Chief Investment Officer" }
   ],
   timeline: [
-    { year: "1999", event: "Andreas Halvorsen co-founds Viking Global Investors." }
+{ year: "1999", event: "Andreas Halvorsen co-founds Viking Global Investors." }
   ],
   holdings: []
-}
-  {
+},
+{
     slug: 'cavalry-ventures',
     rank: null,
     name: 'Cavalry Ventures',
