@@ -1330,7 +1330,9 @@ const firms = [
     ],
     holdings: [
       { name: "Snap", ticker: "SNAP", historicalPrice: null, price: 4.53 },
+       { name: "Snap", ticker: "SNAP", investedYear: 2013, historicalPrice: null, price: 4.53 },
       { name: "DoorDash", ticker: "DASH", historicalPrice: 170.65, price: 175.00 }
+      { name: "DoorDash", ticker: "DASH", investedYear: 2018, historicalPrice: 170.65, price: 175.00 }
     ]
   },
   {
@@ -1358,7 +1360,9 @@ const firms = [
     ],
     holdings: [
       { name: "HubSpot", ticker: "HUBS", historicalPrice: null, price: 224.26 },
+      { name: "HubSpot", ticker: "HUBS", investedYear: 2007, historicalPrice: null, price: 224.26 },
       { name: "Samsara", ticker: "IOT", historicalPrice: null, price: 38.32 }
+      { name: "Samsara", ticker: "IOT", investedYear: 2017, historicalPrice: null, price: 38.32 }
     ]
   },
    {
@@ -1388,7 +1392,9 @@ const firms = [
     ],
     holdings: [
       { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: 141.10 },
+      { name: "Airbnb", ticker: "ABNB", investedYear: 2014, historicalPrice: null, price: 141.10 },
       { name: "DoorDash", ticker: "DASH", historicalPrice: 170.65, price: 175.00 }
+      { name: "DoorDash", ticker: "DASH", investedYear: 2019, historicalPrice: 170.65, price: 175.00 }
     ]
   },
   {
@@ -1417,7 +1423,9 @@ const firms = [
     ],
     holdings: [
       { name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: 99.96 },
+      { name: "Robinhood", ticker: "HOOD", investedYear: 2015, historicalPrice: null, price: 99.96 },
       { name: "Workday", ticker: "WDAY", historicalPrice: null, price: 144.78 }
+      { name: "Workday", ticker: "WDAY", investedYear: 2009, historicalPrice: null, price: 144.78 }
     ]
   },
    {
@@ -1447,8 +1455,11 @@ const firms = [
     ],
     holdings: [
       { name: "Netflix", ticker: "NFLX", historicalPrice: null, price: 72.39 },
+       { name: "Netflix", ticker: "NFLX", investedYear: 1999, historicalPrice: null, price: 72.39 },
       { name: "Spotify", ticker: "SPOT", historicalPrice: null, price: 482.66 },
+      { name: "Spotify", ticker: "SPOT", investedYear: 2013, historicalPrice: null, price: 482.66 },
       { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: 141.10 }
+      { name: "Airbnb", ticker: "ABNB", investedYear: 2017, historicalPrice: null, price: 141.10 }
     ]
   },
   {
