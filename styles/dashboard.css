@@ -131,19 +131,15 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 14px;
   }
-  .perf-stat-card {
+ .perf-stat-card {
     background: var(--surface-raised);
     border: 1px solid var(--hairline);
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 16px 16px 14px;
-    opacity: 0;
-    transform: translateY(6px);
-    animation: perfCardIn 0.4s ease forwards;
-    transition: border-color 0.2s ease, transform 0.2s ease;
+    transition: border-color 0.15s ease;
   }
   .perf-stat-card:hover {
     border-color: var(--gold);
-    transform: translateY(-2px);
   }
   
   .perf-stat-value {
