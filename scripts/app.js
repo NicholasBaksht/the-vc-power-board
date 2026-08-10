@@ -117,10 +117,16 @@ function router() {
   // previously always rendered regardless of page, which is the
   // real reason navigating anywhere felt like "one long page."
   // Shown only for the true homepage/Rankings route.
-  const isHomepage = (slug === '' || slug === 'rankings' || slug === 'firmsContainer');
+const isHomepage = (slug === '' || slug === 'rankings' || slug === 'firmsContainer');
   const homeIntroEl = document.getElementById('homeIntro');
   if (homeIntroEl) homeIntroEl.style.display = isHomepage ? '' : 'none';
-
+  // "By the Numbers" is homepage-flavored summary content, same
+  // category as the hero/feature-grid above - it was never gated
+  // by router() at all, so it's been rendering underneath every
+  // single route (Relationship Graph, Family Tree, etc.) this
+  // whole time, same root cause as the original homeIntro bug.
+  const byTheNumbersEl = document.getElementById('byTheNumbersSection');
+  if (byTheNumbersEl) byTheNumbersEl.style.display = isHomepage ? '' : 'none';
   document.getElementById('listView').style.display = 'none';
   document.getElementById('detailView').style.display = 'none';
   document.getElementById('compareView').style.display = 'none';
