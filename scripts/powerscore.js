@@ -56,6 +56,25 @@ function computePowerScore(firm) {
     performanceScore = Math.max(0, Math.min(100, 50 + (avgReturn / 2)));
   }
 
-  const score = (0.35 * breadthScore) + (0.35 * aumScore) + (0.15 * longevityScore) + (0.15 * performanceScore);
-  return Math.round(score);
+const rawScore = (0.35 * breadthScore) + (0.35 * aumScore) + (0.15 * longevityScore) + (0.15 * performanceScore);
+
+  // Rating curve — the four weighted components above are the real,
+  // transparent inputs; this final step just maps their raw 0-100
+  // composite onto a proper rating scale (like a curve on a
+  // percentile), the same way FIFA/EA Sports ratings rarely dip
+  // below the 40s or exceed the low 90s even for real elite talent.
+  // RATING_FLOOR/CEILING set the realistic bounds; the exponent
+  // lifts the middle of the distribution rather than leaving most
+  // firms bunched near the floor. Purely a presentation calibration
+  // — it doesn't change what's being measured or its weighting,
+  // and it preserves ranking order exactly (a firm that scores
+  // higher pre-curve always scores higher post-curve).
+  const RATING_FLOOR = 47;
+  const RATING_CEILING = 93;
+  const RATING_CURVE_EXPONENT = 0.6;
+  const normalized = Math.max(0, Math.min(1, rawScore / 100));
+  const curved = Math.pow(normalized, RATING_CURVE_EXPONENT);
+  const rating = RATING_FLOOR + curved * (RATING_CEILING - RATING_FLOOR);
+
+  return Math.round(rating);
 }
