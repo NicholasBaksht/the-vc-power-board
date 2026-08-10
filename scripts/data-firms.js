@@ -33,6 +33,155 @@ const firms = [
   },
   {
   rank: null,
+  name: "Speedinvest",
+  sectors: ["Fintech", "AI", "Healthcare"],
+  signatureExit: "No single defined public exit documented — Speedinvest's portfolio includes fintech infrastructure companies like Bitpanda",
+  slug: "speedinvest",
+  website: null,
+  short: "Speedinvest",
+  founded: 2011,
+  hq: "Vienna, Austria",
+  aum: "€1B+ (mid-2020s)",
+  thesis: "Speedinvest invests from pre-seed through growth across fintech, deep tech, AI, climate, and marketplaces through six specialized sector teams, describing its approach as 'seed at scale' with conviction-led capital and offices across Europe.",
+  leadership: [
+    { name: "Christian Miele", role: "Founder & CEO" },
+    { name: "Stefan Klestil", role: "Managing Partner" }
+  ],
+  timeline: [
+    { year: "2011", event: "Speedinvest founded in Vienna." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Creandum",
+  sectors: ["Enterprise Software", "Fintech", "Healthcare", "Gaming"],
+  signatureExit: "Spotify's 2018 NYSE direct listing — an early Creandum investment and one of Europe's defining tech IPOs",
+  slug: "creandum",
+  website: null,
+  short: "Creandum",
+  founded: 2003,
+  hq: "Stockholm, Sweden",
+  aum: "€500M+ across funds (approximate)",
+  thesis: "Creandum, one of Europe's oldest technology VCs, invests early in ambitious founders building category-defining software and consumer companies across Europe and the US, with a portfolio that includes Spotify and Klarna.",
+  leadership: [
+    { name: "Staffan Helgesson", role: "General Partner" }
+  ],
+  timeline: [
+    { year: "2003", event: "Creandum founded in Stockholm." },
+    { year: "2018", event: "Spotify completes its NYSE direct listing." }
+  ],
+  holdings: [
+    { name: "Spotify", ticker: "SPOT", historicalPrice: null, price: null }
+  ]
+},
+{
+  rank: null,
+  name: "HV Capital",
+  sectors: ["Consumer Internet", "Enterprise Software", "Fintech"],
+  signatureExit: "Zalando's IPO on the Frankfurt Stock Exchange — HV Capital (then Holtzbrinck Ventures) was Zalando's first institutional investor",
+  slug: "hv-capital",
+  website: null,
+  short: "HV Capital",
+  founded: 2000,
+  hq: "Munich, Germany",
+  aum: "€2.8B",
+  thesis: "HV Capital, founded as Holtzbrinck Ventures, backs founders from seed through IPO across e-commerce, SaaS, fintech, and deep tech, with a dedicated Growth arm for later-stage European technology investing.",
+  leadership: [],
+  timeline: [
+    { year: "2000", event: "Founded as Holtzbrinck Ventures in Munich; later rebranded HV Capital." }
+  ],
+  holdings: [
+    { name: "Zalando", ticker: "ZAL.DE", historicalPrice: null, price: null }
+  ]
+},
+{
+  rank: null,
+  name: "HongShan Capital",
+  sectors: ["Technology", "Healthcare", "Consumer Internet"],
+  signatureExit: "No single defined public exit documented — HongShan's portfolio has produced 180+ public listings since its founding as Sequoia China",
+  slug: "hongshan-capital",
+  website: null,
+  short: "HongShan",
+  founded: 2005,
+  hq: "Hong Kong",
+  aum: "$61B (2026)",
+  thesis: "HongShan, the rebranded continuation of Sequoia China following its 2024 regional split, invests across the full venture lifecycle — from seed to growth to buyout funds — in technology, healthcare, and consumer companies across Asia and globally. Note: HongShan's own materials describe its funds as spanning venture capital through buyouts, the same PE-crossover pattern already flagged for review on Hillhouse and GGV.",
+  leadership: [
+    { name: "Neil Shen", role: "Founder", profileSlug: "neil-shen" }
+  ],
+  timeline: [
+    { year: "2005", event: "Neil Shen founds Sequoia Capital China." },
+    { year: "2024", event: "The firm completes its split from Sequoia Capital and rebrands as HongShan." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Vertex Ventures",
+  sectors: ["Technology", "Healthcare"],
+  signatureExit: "CyberArk's NASDAQ listing (NASDAQ: CYBR) — a notable holding across Vertex's regional fund network",
+  slug: "vertex-ventures",
+  website: null,
+  short: "Vertex Ventures",
+  founded: 1988,
+  hq: "Singapore",
+  aum: "$6B (2024)",
+  thesis: "Vertex Ventures is the global venture arm of Temasek, organized as regional funds (US, China, India, Southeast Asia, Israel) investing in technology and healthcare companies from startup through growth stage, anchored by Temasek's Singapore network.",
+  leadership: [],
+  timeline: [
+    { year: "1988", event: "Founded as ST Ventures, later becoming Vertex Holdings under Temasek." }
+  ],
+  holdings: [
+    { name: "Grab", ticker: "GRAB", historicalPrice: null, price: null },
+    { name: "CyberArk", ticker: "CYBR", historicalPrice: null, price: null }
+  ]
+},
+{
+  rank: null,
+  name: "ZhenFund",
+  sectors: ["Consumer Internet", "Fintech"],
+  signatureExit: "No single defined public exit documented — ZhenFund has backed over 800 portfolio companies including 30+ unicorns",
+  slug: "zhenfund",
+  website: null,
+  short: "ZhenFund",
+  founded: 2011,
+  hq: "Beijing, China",
+  aum: "Not publicly disclosed",
+  thesis: "ZhenFund is one of China's most active early-stage investors, backing entrepreneurial founders at seed and Series A across technology, consumer, and education, leveraging co-founders Bob Xu and Victor Wang's serial-entrepreneur network from New Oriental.",
+  leadership: [
+    { name: "Bob Xiaoping Xu", role: "Co-Founder" },
+    { name: "Victor Wang", role: "Co-Founder" },
+    { name: "Anna Fang", role: "Partner & Co-CEO" }
+  ],
+  timeline: [
+    { year: "2011", event: "Bob Xu and Victor Wang found ZhenFund in partnership with Sequoia China." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Golden Gate Ventures",
+  sectors: ["Fintech", "Marketplaces", "Enterprise Software"],
+  signatureExit: "No single defined public exit documented — Golden Gate backs early-stage fintech, mobility, and SaaS startups across Southeast Asia",
+  slug: "golden-gate-ventures",
+  website: null,
+  short: "Golden Gate Ventures",
+  founded: 2011,
+  hq: "Singapore",
+  aum: "$250M (2025)",
+  thesis: "Golden Gate Ventures backs early-stage founders across Southeast Asia, India, and the Middle East in fintech, marketplaces, SaaS, and consumer tech, blending Silicon Valley experience with local market expertise. Founders include Vinnie Lauria and Justin Hall.",
+  leadership: [
+    { name: "Vinnie Lauria", role: "Co-Founder" },
+    { name: "Justin Hall", role: "Co-Founder" }
+  ],
+  timeline: [
+    { year: "2011", event: "Golden Gate Ventures founded in Singapore." }
+  ],
+  holdings: []
+}
+  {
+  rank: null,
   name: "Elad Gil",
   sectors: ["AI", "Fintech", "SaaS", "Marketplaces"],
   signatureExit: "Airbnb's 2020 IPO — one of dozens of pre-IPO checks across a track record including Coinbase, Instacart, Pinterest, and Roblox",
