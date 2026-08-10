@@ -1200,15 +1200,10 @@ const firms = [
       { year: "2022", event: "Raises a $4.5 billion fund dedicated to crypto, one of the largest ever raised for the category." }
     ],
     holdings: [
-      { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: 147.00 },
-      { name: "Airbnb", ticker: "ABNB", investedYear: 2011, historicalPrice: null, price: 147.00 },
-      { name: "Coinbase", ticker: "COIN", historicalPrice: 257.21, price: 161.00 },
+   { name: "Airbnb", ticker: "ABNB", investedYear: 2011, historicalPrice: null, price: 147.00 },
       { name: "Coinbase", ticker: "COIN", investedYear: 2013, historicalPrice: 257.21, price: 161.00 },
-      { name: "Roblox", ticker: "RBLX", historicalPrice: null, price: 51.68 },
       { name: "Roblox", ticker: "RBLX", investedYear: 2020, historicalPrice: null, price: 51.68 },
-      { name: "Lyft", ticker: "LYFT", historicalPrice: null, price: 15.67 },
       { name: "Lyft", ticker: "LYFT", investedYear: 2013, historicalPrice: null, price: 15.67 },
-      { name: "Pinterest", ticker: "PINS", historicalPrice: null, price: 23.20 }
       { name: "Pinterest", ticker: "PINS", investedYear: 2011, historicalPrice: null, price: 23.20 }
     ]
   },
@@ -1237,9 +1232,7 @@ const firms = [
       { year: "2023", event: "Splits into three independent firms — Sequoia Capital, Peak XV Partners (India/Southeast Asia), and HongShan (China)." }
     ],
     holdings: [
-      { name: "Nvidia", ticker: "NVDA", historicalPrice: 138.1, price: 202.81 },
-      { name: "Nvidia", ticker: "NVDA", investedYear: 1993, historicalPrice: 138.1, price: 202.81 },
-      { name: "DoorDash", ticker: "DASH", historicalPrice: 170.65, price: 175.00 }
+   { name: "Nvidia", ticker: "NVDA", investedYear: 1993, historicalPrice: 138.1, price: 202.81 },
       { name: "DoorDash", ticker: "DASH", investedYear: 2014, historicalPrice: 170.65, price: 175.00 }
     ]
   },
@@ -1267,7 +1260,6 @@ const firms = [
       { year: "2025", event: "Assets under management surpass $90 billion, with over 875 companies invested in to date." }
     ],
     holdings: [
-      { name: "Shopify", ticker: "SHOP", historicalPrice: 107.53, price: 123.56 },
       { name: "Shopify", ticker: "SHOP", investedYear: 2013, historicalPrice: 107.53, price: 123.56 },
       { name: "DocuSign", ticker: "DOCU", historicalPrice: null, price: 52.74 }
     ]
@@ -1295,9 +1287,7 @@ const firms = [
       { year: "2021", event: "Becomes one of the most active venture investors globally, deploying capital at unusually high speed." }
     ],
     holdings: [
-      { name: "Coinbase", ticker: "COIN", historicalPrice: 257.21, price: 161.00 },
       { name: "Coinbase", ticker: "COIN", investedYear: 2018, historicalPrice: 257.21, price: 161.00 },
-      { name: "JD.com", ticker: "JD", historicalPrice: null, price: 29.62 }
       { name: "JD.com", ticker: "JD", investedYear: 2011, historicalPrice: null, price: 29.62 }
     ]
   },
@@ -1325,9 +1315,7 @@ const firms = [
       { year: "2020s", event: "Backs ByteDance, DoorDash, and OpenAI as the firm's venture practice accelerates alongside the AI boom." }
     ],
     holdings: [
-      { name: "Snap", ticker: "SNAP", historicalPrice: null, price: 4.53 },
        { name: "Snap", ticker: "SNAP", investedYear: 2013, historicalPrice: null, price: 4.53 },
-      { name: "DoorDash", ticker: "DASH", historicalPrice: 170.65, price: 175.00 }
       { name: "DoorDash", ticker: "DASH", investedYear: 2018, historicalPrice: 170.65, price: 175.00 }
     ]
   },
@@ -1355,9 +1343,7 @@ const firms = [
       { year: "2017", event: "Portfolio company Snap goes public in one of the largest consumer tech IPOs of its era." }
     ],
     holdings: [
-      { name: "HubSpot", ticker: "HUBS", historicalPrice: null, price: 224.26 },
       { name: "HubSpot", ticker: "HUBS", investedYear: 2007, historicalPrice: null, price: 224.26 },
-      { name: "Samsara", ticker: "IOT", historicalPrice: null, price: 38.32 }
       { name: "Samsara", ticker: "IOT", investedYear: 2017, historicalPrice: null, price: 38.32 }
     ]
   },
@@ -1387,9 +1373,7 @@ const firms = [
       { year: "2025", event: "Co-leads Anthropic's $30 billion funding round; firm AUM surpasses $30 billion." }
     ],
     holdings: [
-      { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: 141.10 },
       { name: "Airbnb", ticker: "ABNB", investedYear: 2014, historicalPrice: null, price: 141.10 },
-      { name: "DoorDash", ticker: "DASH", historicalPrice: 170.65, price: 175.00 }
       { name: "DoorDash", ticker: "DASH", investedYear: 2019, historicalPrice: 170.65, price: 175.00 }
     ]
   },
@@ -1418,9 +1402,7 @@ const firms = [
       { year: "2021", event: "Portfolio company Robinhood goes public, bringing retail stock trading to the public markets." }
     ],
     holdings: [
-      { name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: 99.96 },
       { name: "Robinhood", ticker: "HOOD", investedYear: 2015, historicalPrice: null, price: 99.96 },
-      { name: "Workday", ticker: "WDAY", historicalPrice: null, price: 144.78 }
       { name: "Workday", ticker: "WDAY", investedYear: 2009, historicalPrice: null, price: 144.78 }
     ]
   },
@@ -1450,11 +1432,8 @@ const firms = [
       { year: "2026", event: "Total capital raised since inception reaches approximately $24 billion." }
     ],
     holdings: [
-      { name: "Netflix", ticker: "NFLX", historicalPrice: null, price: 72.39 },
        { name: "Netflix", ticker: "NFLX", investedYear: 1999, historicalPrice: null, price: 72.39 },
-      { name: "Spotify", ticker: "SPOT", historicalPrice: null, price: 482.66 },
       { name: "Spotify", ticker: "SPOT", investedYear: 2013, historicalPrice: null, price: 482.66 },
-      { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: 141.10 }
       { name: "Airbnb", ticker: "ABNB", investedYear: 2017, historicalPrice: null, price: 141.10 }
     ]
   },
@@ -1482,9 +1461,7 @@ const firms = [
       { year: "2020s", event: "Expands heavily into enterprise infrastructure alongside its consumer roots." }
     ],
     holdings: [
-      { name: "Snap", ticker: "SNAP", historicalPrice: null, price: 4.53 },
       { name: "Snap", ticker: "SNAP", investedYear: 2012, historicalPrice: null, price: 4.53 },
-      { name: "Affirm", ticker: "AFRM", historicalPrice: null, price: 64.71 }
       { name: "Affirm", ticker: "AFRM", investedYear: 2013, historicalPrice: null, price: 64.71 }
     ]
   },
@@ -1514,10 +1491,8 @@ const firms = [
       { year: "2016", event: "John Doerr steps down from day-to-day leadership, becoming chairman." }
     ],
     holdings: [
-      { name: "Amazon", ticker: "AMZN", historicalPrice: null, price: 247.55 },
       { name: "Amazon", ticker: "AMZN", investedYear: 1996, historicalPrice: null, price: 247.55 },
       { name: "Palo Alto Networks", ticker: "PANW", historicalPrice: null, price: 341.59 },
-      { name: "Snap", ticker: "SNAP", historicalPrice: null, price: 4.53 }
       { name: "Snap", ticker: "SNAP", investedYear: 2014, historicalPrice: null, price: 4.53 }
     ]
   },
@@ -1544,11 +1519,8 @@ const firms = [
       { year: "2026", event: "Ribbit's Form ADV reports approximately $20.78 billion in regulatory assets under management." }
     ],
     holdings: [
-      { name: "Coinbase", ticker: "COIN", historicalPrice: 257.21, price: 161.00 },
       { name: "Coinbase", ticker: "COIN", investedYear: 2013, historicalPrice: 257.21, price: 161.00 },
-      { name: "Nubank", ticker: "NU", historicalPrice: null, price: null },
       { name: "Nubank", ticker: "NU", investedYear: 2016, historicalPrice: null, price: null },
-      { name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: 99.96 },
       { name: "Robinhood", ticker: "HOOD", investedYear: 2014, historicalPrice: null, price: 99.96 },
       { name: "Affirm", ticker: "AFRM", historicalPrice: null, price: 64.71 },
       { name: "SoFi", ticker: "SOFI", historicalPrice: null, price: null }
@@ -1577,9 +1549,7 @@ const firms = [
       { year: "2010s", event: "Backs Slack, Atlassian, and Dropbox as the firm builds a reputation in enterprise software." }
     ],
     holdings: [
-      { name: "Meta Platforms", ticker: "META", historicalPrice: null, price: 646.01 },
       { name: "Meta Platforms", ticker: "META", investedYear: 2005, historicalPrice: null, price: 646.01 },
-      { name: "Etsy", ticker: "ETSY", historicalPrice: null, price: 84.10 }
       { name: "Etsy", ticker: "ETSY", investedYear: 2008, historicalPrice: null, price: 84.10 }
     ]
   },
@@ -1635,7 +1605,6 @@ const firms = [
     ],
     holdings: [
       { name: "Spotify", ticker: "SPOT", historicalPrice: null, price: null },
-      { name: "LendingClub", ticker: "LC", historicalPrice: null, price: null }
        { name: "LendingClub", ticker: "LC", investedYear: 2007, historicalPrice: null, price: null }
     ]
   },
@@ -1661,9 +1630,7 @@ const firms = [
       { year: "2020s", event: "Shifts significant focus toward artificial intelligence alongside its long-running clean energy bets." }
     ],
     holdings: [
-      { name: "Block", ticker: "XYZ", historicalPrice: null, price: 79.94 },
 { name: "Block", ticker: "XYZ", investedYear: 2009, historicalPrice: null, price: 79.94 },
-{ name: "Instacart", ticker: "CART", historicalPrice: null, price: 45.82 }
 { name: "Instacart", ticker: "CART", investedYear: 2012, historicalPrice: null, price: 45.82 }
     ]
   },
@@ -1692,11 +1659,8 @@ const firms = [
       { year: "2020s", event: "Continues investing across venture, growth equity, and buyouts from its 15th flagship fund, capitalized at $3.25 billion." }
     ],
     holdings: [
-     { name: "Wayfair", ticker: "W", historicalPrice: null, price: null },
  { name: "Wayfair", ticker: "W", investedYear: 2011, historicalPrice: null, price: null },
-{ name: "Nutanix", ticker: "NTNX", historicalPrice: null, price: null },
 { name: "Nutanix", ticker: "NTNX", investedYear: 2012, historicalPrice: null, price: null },
-{ name: "Guidewire", ticker: "GWRE", historicalPrice: null, price: null }
  { name: "Guidewire", ticker: "GWRE", investedYear: 2007, historicalPrice: null, price: null }
     ]
   },
@@ -2339,11 +2303,8 @@ const firms = [
       { year: "2019", event: "Uber goes public." }
     ],
     holdings: [
-    { name: "Uber", ticker: "UBER", historicalPrice: null, price: 72.46 },
  { name: "Uber", ticker: "UBER", investedYear: 2013, historicalPrice: null, price: 72.46 },
-{ name: "GitLab", ticker: "GTLB", historicalPrice: null, price: null },
  { name: "GitLab", ticker: "GTLB", investedYear: 2017, historicalPrice: null, price: null },
-{ name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: 99.96 }
  { name: "Robinhood", ticker: "HOOD", investedYear: 2013, historicalPrice: null, price: 99.96 }
     ]
   },
@@ -2400,7 +2361,6 @@ const firms = [
       { year: "2026", event: "Cumulative invested capital reaches $12.9 billion across more than 1,582 companies, with 692 IPO or M&A outcomes." }
     ],
     holdings: [
-      { name: "Joby Aviation", ticker: "JOBY", historicalPrice: 8.09, price: 7.24 }
       { name: "Joby Aviation", ticker: "JOBY", investedYear: 2018, historicalPrice: 8.09, price: 7.24 }
     ]
   },
