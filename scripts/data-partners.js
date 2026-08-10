@@ -193,7 +193,7 @@ const partnerProfiles = {
   ],
   biography: "Brad Stephens co-founded Blockchain Capital in 2013 with his brother Bart, creating one of the first venture funds dedicated entirely to blockchain. A Duke graduate in Economics and Religion, he has led the fund's investments in crypto infrastructure, including its pre-IPO position in Coinbase, and serves on the board of Coinbase Developer Platform.",
   sources: []
-}
+},
   // ============ CAVALRY VENTURES ============
 "claude-ritter": {
   name: "Claude Ritter",
@@ -466,7 +466,7 @@ const partnerProfiles = {
   ],
   biography: "Andreas Halvorsen co-founded Viking Global Investors in 1999 and serves as its CEO. A Williams College graduate with an MBA from Stanford, he began as a healthcare analyst at Morgan Stanley before becoming one of the first employees at Tiger Management. He has since built Viking into one of the largest hedge funds in the world, investing long and short across technology, healthcare, and consumer sectors.",
   sources: []
-}
+},
 "elad-gil": {
   name: "Elad Gil",
   firm: "Elad Gil",
@@ -648,7 +648,7 @@ const partnerProfiles = {
   ],
   biography: "Abdulrahman Tarabzouni founded STV in 2018, building it into the largest independent technology venture firm in the Middle East. Anchored by Saudi Telecom as a key limited partner, STV invests in MENA tech startups from Series A through growth.",
   sources: []
-}
+},
 // ============ PLAYGROUND GLOBAL ============
 "peter-barrett": {
   name: "Peter Barrett",
