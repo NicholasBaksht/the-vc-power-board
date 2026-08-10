@@ -27,7 +27,7 @@
        (firm cards, firm detail, compare, dashboard, family tree,
        relationship graph, discovery, intelligence feed, etc.) picks
        up the new identity without being individually touched. */
-    --accent: #2F6FED;
+       --accent: #4B82EF;
     --accent-bright: #5B8DEF;
     --gold: var(--accent);
     --gold-bright: var(--accent-bright);
