@@ -264,6 +264,30 @@ function syncActiveNav() {
   });
 }
 window.addEventListener('hashchange', router);
+
+// Dropdown open/close for the Insights/Explore/Data nav menus.
+// Click the trigger to toggle; click anywhere else to close;
+// clicking a real link inside just navigates normally (router()
+// handles hiding the menu implicitly via syncActiveNav's re-render,
+// but we also close it explicitly so it doesn't stay open after
+// navigating).
+document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+  trigger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const dropdown = trigger.closest('.nav-dropdown');
+    const wasOpen = dropdown.classList.contains('open');
+    document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+    if (!wasOpen) dropdown.classList.add('open');
+  });
+});
+document.addEventListener('click', () => {
+  document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+});
+document.querySelectorAll('.nav-dropdown-item').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+  });
+});
 // Ticker tape at top — pulls every unique ticker + whatever price is set
 function buildTicker() {
   const track = document.getElementById('tickerTrack');
