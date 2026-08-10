@@ -40,13 +40,28 @@
     }
   }
 
+/* ---------- HOMEPAGE WIDGET ROW (Featured Firm + News, side by side) ---------- */
+  .home-widgets-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    margin: 8px 0 24px;
+  }
+  @media (max-width: 800px) {
+    .home-widgets-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
   /* ---------- FEATURED FIRM ---------- */
   .featured-firm {
-    margin: 8px 0 24px;
+    margin: 0;
     padding: 26px 28px;
-    border-radius: 3px;
-  background: linear-gradient(135deg, rgba(47,111,237,0.08), rgba(47,111,237,0.01));
-    border: 1px solid rgba(47,111,237,0.30);
+    border-radius: 4px;
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-left: 3px solid var(--accent);
   }
   .featured-firm-label {
     font-family: var(--mono);
