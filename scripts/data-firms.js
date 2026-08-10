@@ -33,6 +33,137 @@ const firms = [
   },
   {
   rank: null,
+  name: "Polychain Capital",
+  sectors: ["Crypto", "DeFi"],
+  signatureExit: "No public equity exit — Polychain was an early investor in Coinbase (NASDAQ: COIN) ahead of its 2021 direct listing",
+  slug: "polychain-capital",
+  website: null,
+  short: "Polychain",
+  founded: 2016,
+  hq: "San Francisco, CA",
+  aum: "$5B (2024)",
+  thesis: "Polychain invests in blockchain protocols and cryptocurrency projects, focused on the foundational infrastructure of decentralized networks. Founder Olaf Carlson-Wee was Coinbase's first Head of Risk before launching Polychain in 2016.",
+  leadership: [
+    { name: "Olaf Carlson-Wee", role: "Founder & CEO", profileSlug: "olaf-carlson-wee" }
+  ],
+  timeline: [
+    { year: "2016", event: "Olaf Carlson-Wee founds Polychain Capital after leaving Coinbase." }
+  ],
+  holdings: [
+    { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null }
+  ]
+},
+{
+  rank: null,
+  name: "Multicoin Capital",
+  sectors: ["Crypto", "DeFi"],
+  signatureExit: "No public equity exit documented — Multicoin invests primarily in tokens and blockchain protocols rather than public equities",
+  slug: "multicoin-capital",
+  website: null,
+  short: "Multicoin",
+  founded: 2017,
+  hq: "Austin, TX",
+  aum: "Not publicly disclosed",
+  thesis: "Multicoin is a thesis-driven crypto investment firm backing projects it believes are reshaping trillion-dollar markets through decentralized networks and new token economics. Co-founders Kyle Samani and Tushar Jain lead the firm's investments across crypto infrastructure and DeFi.",
+  leadership: [
+    { name: "Kyle Samani", role: "Co-Founder & Managing Partner", profileSlug: "kyle-samani" },
+    { name: "Tushar Jain", role: "Co-Founder & Managing Partner", profileSlug: "tushar-jain" }
+  ],
+  timeline: [
+    { year: "2017", event: "Kyle Samani and Tushar Jain co-found Multicoin Capital in May." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Electric Capital",
+  sectors: ["Crypto", "AI", "Healthcare"],
+  signatureExit: "No public equity exit documented — Electric Capital invests primarily in early-stage crypto, developer tools, and frontier technology",
+  slug: "electric-capital",
+  website: null,
+  short: "Electric Capital",
+  founded: 2018,
+  hq: "Palo Alto, CA",
+  aum: "$3B+ deployed cumulatively since 2018 (not a stated current fund AUM)",
+  thesis: "Electric Capital invests from seed through growth across crypto, blockchain, developer tools, AI, and healthtech, supporting founders it describes as building 'trust-minimized' technology from inception through IPO. Co-founder Avichal Garg previously worked at Facebook and Greylock Partners.",
+  leadership: [
+    { name: "Avichal Garg", role: "Co-Founder & General Partner", profileSlug: "avichal-garg" },
+    { name: "Curtis Spencer", role: "Co-Founder & General Partner" }
+  ],
+  timeline: [
+    { year: "2018", event: "Avichal Garg and Curtis Spencer co-found Electric Capital." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Pantera Capital",
+  sectors: ["Crypto", "DeFi"],
+  signatureExit: "No public equity exit documented — Pantera launched the first licensed Bitcoin fund in the U.S. in 2013",
+  slug: "pantera-capital",
+  website: null,
+  short: "Pantera",
+  founded: 2003,
+  hq: "Menlo Park, CA",
+  aum: "$5B (2025)",
+  thesis: "Pantera invests in digital currencies and blockchain-enabled companies across all stages, and is one of the oldest funds in the crypto space. Founder Dan Morehead previously ran macro trading at Tiger Management before launching Pantera in 2003 and later pivoting it fully to digital assets.",
+  leadership: [
+    { name: "Dan Morehead", role: "Founder & CEO", profileSlug: "dan-morehead" },
+    { name: "Paul Veradittakit", role: "Managing Partner" }
+  ],
+  timeline: [
+    { year: "2003", event: "Dan Morehead founds Pantera Capital." },
+    { year: "2013", event: "Pantera launches the first licensed Bitcoin fund in the United States." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Variant Fund",
+  sectors: ["Crypto", "DeFi"],
+  signatureExit: "No public equity exit documented — Variant invests in foundational crypto protocols, including an early stake in Uniswap",
+  slug: "variant-fund",
+  website: null,
+  short: "Variant",
+  founded: 2020,
+  hq: "New York, NY",
+  aum: "Not publicly disclosed",
+  thesis: "Variant invests in foundational blockchain protocols and crypto-native networks, backing projects like Uniswap, Phantom, Mirror, and Flashbots. Founder Jesse Walden previously led crypto investments at a16z before launching Variant in 2020.",
+  leadership: [
+    { name: "Jesse Walden", role: "Founder & Managing Partner", profileSlug: "jesse-walden" },
+    { name: "Alana Levin", role: "Partner" }
+  ],
+  timeline: [
+    { year: "2020", event: "Jesse Walden founds Variant Fund after leading crypto investments at a16z." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Blockchain Capital",
+  sectors: ["Crypto", "DeFi"],
+  signatureExit: "Coinbase's 2021 direct listing — Blockchain Capital invested pre-IPO and participated directly in the listing",
+  slug: "blockchain-capital",
+  website: null,
+  short: "Blockchain Capital",
+  founded: 2013,
+  hq: "San Francisco, CA",
+  aum: "$2B+ (across multiple funds)",
+  thesis: "Founded by brothers Bart and Brad Stephens, Blockchain Capital was one of the first venture funds dedicated entirely to blockchain ventures, aiming to build the infrastructure of the crypto economy from seed through growth stage.",
+  leadership: [
+    { name: "Bart Stephens", role: "Co-Founder & General Partner" },
+    { name: "Brad Stephens", role: "Co-Founder & General Partner", profileSlug: "brad-stephens" }
+  ],
+  timeline: [
+    { year: "2013", event: "Bart Stephens and Brad Stephens co-found Blockchain Capital." },
+    { year: "2021", event: "Coinbase completes its direct listing; Blockchain Capital participates as a pre-IPO investor." }
+  ],
+  holdings: [
+    { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null }
+  ]
+}
+  {
+  rank: null,
   name: "Greenoaks Capital",
   sectors: ["Consumer Internet", "Fintech", "Logistics"],
   signatureExit: "Coupang's 2021 NYSE listing — Greenoaks was an early backer and co-founder Neil Mehta sits on Coupang's board",
