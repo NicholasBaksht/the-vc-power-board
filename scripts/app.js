@@ -251,12 +251,18 @@ document.getElementById('intelligenceFeedView').style.display = 'none';
 // only reacting during the click itself.
 function syncActiveNav() {
   const topSlug = window.location.hash.replace('#', '').split('/')[0];
-  document.querySelectorAll('.nav-link').forEach(link => {
+  document.querySelectorAll('.nav-link, .nav-dropdown-item').forEach(link => {
     const linkSlug = (link.getAttribute('href') || '').replace('#', '').split('/')[0];
     link.classList.toggle('active', linkSlug !== '' && linkSlug === topSlug);
   });
+  // If the active route lives inside a dropdown, highlight that
+  // dropdown's own trigger button too, so "where am I" still works
+  // when the matching link itself is hidden inside a closed menu.
+  document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+    const hasActiveChild = dropdown.querySelector('.nav-dropdown-item.active');
+    dropdown.querySelector('.nav-dropdown-trigger')?.classList.toggle('active', !!hasActiveChild);
+  });
 }
-
 window.addEventListener('hashchange', router);
 // Ticker tape at top — pulls every unique ticker + whatever price is set
 function buildTicker() {
