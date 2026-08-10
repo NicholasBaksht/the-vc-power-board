@@ -67,68 +67,34 @@
 </head>
 <body>
 
-<div class="byline-bar">
-  <svg class="site-logo" width="44" height="44" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="110" cy="110" r="104" fill="none" stroke="#C9A227" stroke-width="4"/>
-    <text x="110" y="130" font-family="Fraunces, serif" font-size="90" font-weight="600" text-anchor="middle">
-      <tspan fill="#EDEFF3">P</tspan><tspan fill="#E8C34A">B</tspan>
-    </text>
-    <rect x="82" y="150" width="10" height="14" fill="#C9A227"/>
-    <rect x="96" y="142" width="10" height="22" fill="#C9A227"/>
-    <rect x="110" y="132" width="10" height="32" fill="#C9A227"/>
-    <rect x="124" y="122" width="10" height="42" fill="#C9A227"/>
-  </svg>
-  <div class="byline">Created by Nicholas Baksht</div>
-</div>
+<header class="pb-header">
+  <a href="#rankings" class="pb-brand">
+    <svg class="site-logo" width="34" height="34" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="110" cy="110" r="104" fill="none" stroke="#C9A227" stroke-width="4"/>
+      <text x="110" y="130" font-family="Inter, sans-serif" font-size="90" font-weight="600" text-anchor="middle">
+        <tspan fill="#EDEFF3">P</tspan><tspan fill="#E8C34A">B</tspan>
+      </text>
+      <rect x="82" y="150" width="10" height="14" fill="#C9A227"/>
+      <rect x="96" y="142" width="10" height="22" fill="#C9A227"/>
+      <rect x="110" y="132" width="10" height="32" fill="#C9A227"/>
+      <rect x="124" y="122" width="10" height="42" fill="#C9A227"/>
+    </svg>
+    <span class="pb-wordmark">Power Board</span>
+  </a>
 
-<nav class="site-nav">
- <a href="#rankings" class="nav-link" id="navRankingsLink">Rankings</a>
+  <nav class="pb-nav">
+    <a href="#rankings" class="nav-link">Rankings</a>
+    <a href="#discover" class="nav-link">Discover</a>
+    <a href="#relationship-graph" class="nav-link">Network</a>
+    <a href="#market-signals" class="nav-link">Signals</a>
+    <a href="#pricing" class="nav-link">Pricing</a>
+  </nav>
 
-  <div class="nav-dropdown">
-    <button class="nav-link nav-dropdown-trigger" id="navInsightsTrigger">Insights <span class="nav-caret">▾</span></button>
-    <div class="nav-dropdown-menu">
-      <a href="#analytics" class="nav-dropdown-item">Power Score &amp; Analytics</a>
-      <a href="#market-signals" class="nav-dropdown-item">Market Signals</a>
-     <a href="#feed" class="nav-dropdown-item">Intelligence Feed</a>
-      <a href="#news" class="nav-dropdown-item">News &amp; Updates</a>
-      <a href="#reports" class="nav-dropdown-item">Reports</a>
-    </div>
+  <div class="pb-header-actions">
+    <a href="#signin" class="pb-signin">Sign in</a>
+    <a href="#find-investors" class="pb-cta">Find your investors</a>
   </div>
-
-  <div class="nav-dropdown">
-    <button class="nav-link nav-dropdown-trigger" id="navExploreTrigger">Explore <span class="nav-caret">▾</span></button>
-    <div class="nav-dropdown-menu">
-      <a href="#discover" class="nav-dropdown-item">Discovery Engine</a>
-      <a href="#relationship-graph" class="nav-dropdown-item">Relationship Graph</a>
-      <a href="#family-tree" class="nav-dropdown-item">Family Tree</a>
-      <a href="#compare" class="nav-dropdown-item">VC DNA</a>
-      <a href="#historical-snapshot" class="nav-dropdown-item">Timeline</a>
-      <a href="#ecosystem-graph" class="nav-dropdown-item">Ecosystem Graph</a>
-      <a href="#world-map" class="nav-dropdown-item">World Map</a>
-    </div>
-  </div>
-
-  <div class="nav-dropdown">
-    <button class="nav-link nav-dropdown-trigger" id="navDataTrigger">Data <span class="nav-caret">▾</span></button>
-    <div class="nav-dropdown-menu">
-      <a href="#analytics" class="nav-dropdown-item">Companies</a>
-      <a href="#people" class="nav-dropdown-item">People</a>
-      <a href="#portfolio" class="nav-dropdown-item">Portfolio</a>
-      <a href="#find-investors" class="nav-dropdown-item">Find Investors</a>
-      <a href="#shortlist" class="nav-dropdown-item">Shortlist</a>
-      <span class="nav-dropdown-divider"></span>
-      <a href="companies/" class="nav-dropdown-item">By Category</a>
-      <a href="locations/" class="nav-dropdown-item">By Location</a>
-      <a href="stages/" class="nav-dropdown-item">By Stage</a>
-    </div>
-  </div>
-
-  <a href="#pricing" class="nav-link">Pricing</a>
-  <a href="#methodologyAnchor" class="nav-link">Methodology</a>
-  <a href="#signin" class="nav-link">Sign in</a>
-  <a href="terms/" class="nav-link nav-link-quiet">Terms</a>
-  <a href="privacy/" class="nav-link nav-link-quiet">Privacy</a>
-</nav>
+</header>
   
 <div class="ticker-outer">
   <div class="ticker-track" id="tickerTrack"></div>
