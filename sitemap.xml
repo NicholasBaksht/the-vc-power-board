@@ -1221,6 +1221,10 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/general-atlantic-vs-iconiq-capital/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/iconiq-capital-vs-tiger-global/</loc>
     <priority>0.5</priority>
   </url>
@@ -1241,15 +1245,15 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/a16z-vs-coatue-management/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/a16z-vs-idg-capital/</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/a16z-vs-kleiner-perkins/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/a16z-vs-coatue-management/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1265,11 +1269,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/a16z-vs-index-ventures/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/a16z-vs-legend-capital/</loc>
+    <loc>https://thevcpowerboard.com/compare/a16z-vs-dragoneer-investment-group/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1285,15 +1285,15 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-softbank-vision-fund/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/idg-capital-vs-softbank-vision-fund/</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/kleiner-perkins-vs-softbank-vision-fund/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-softbank-vision-fund/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1309,11 +1309,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/index-ventures-vs-softbank-vision-fund/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/legend-capital-vs-softbank-vision-fund/</loc>
+    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-softbank-vision-fund/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1325,15 +1321,15 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-hillhouse-investment-group/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/hillhouse-investment-group-vs-idg-capital/</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/hillhouse-investment-group-vs-kleiner-perkins/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-hillhouse-investment-group/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1349,15 +1345,15 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/hillhouse-investment-group-vs-index-ventures/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/hillhouse-investment-group-vs-legend-capital/</loc>
+    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-hillhouse-investment-group/</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/ribbit-capital-vs-sequoia/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-ribbit-capital/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1366,10 +1362,6 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/kleiner-perkins-vs-ribbit-capital/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-ribbit-capital/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1385,11 +1377,11 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/index-ventures-vs-ribbit-capital/</loc>
+    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-ribbit-capital/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/legend-capital-vs-ribbit-capital/</loc>
+    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-sequoia/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1398,10 +1390,6 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/kleiner-perkins-vs-sequoia/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-sequoia/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1417,19 +1405,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/index-ventures-vs-sequoia/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/legend-capital-vs-sequoia/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/tcv-vs-tiger-global/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/idg-capital-vs-kleiner-perkins/</loc>
+    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-sequoia/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1437,47 +1413,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/gv-vs-idg-capital/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-idg-capital/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-idg-capital/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/idg-capital-vs-index-ventures/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/idg-capital-vs-legend-capital/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://thevcpowerboard.com/compare/coatue-management-vs-kleiner-perkins/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/gv-vs-kleiner-perkins/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-kleiner-perkins/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-kleiner-perkins/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/index-ventures-vs-kleiner-perkins/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/kleiner-perkins-vs-legend-capital/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1493,11 +1429,51 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-index-ventures/</loc>
+    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-dragoneer-investment-group/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-legend-capital/</loc>
+    <loc>https://thevcpowerboard.com/compare/general-atlantic-vs-tcv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/tcv-vs-tiger-global/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/idg-capital-vs-kleiner-perkins/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/gv-vs-idg-capital/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-idg-capital/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-idg-capital/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-idg-capital/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/gv-vs-kleiner-perkins/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-kleiner-perkins/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-kleiner-perkins/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-kleiner-perkins/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1509,11 +1485,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/gv-vs-index-ventures/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/gv-vs-legend-capital/</loc>
+    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-gv/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1521,23 +1493,15 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-index-ventures/</loc>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-dragoneer-investment-group/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-legend-capital/</loc>
+    <loc>https://thevcpowerboard.com/compare/general-atlantic-vs-tiger-global/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-index-ventures/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-legend-capital/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/index-ventures-vs-legend-capital/</loc>
+    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-general-catalyst/</loc>
     <priority>0.5</priority>
   </url>
   <url>
