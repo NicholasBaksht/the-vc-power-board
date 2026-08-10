@@ -317,13 +317,12 @@
   }
 
   /* ---------- VC GENOME ---------- */
-  .genome-panel {
+.genome-panel {
     margin: 32px 0;
     padding: 28px 26px;
     background: var(--surface);
-    border: 1px solid var(--gold);
-    border-radius: 6px;
-    box-shadow: 0 0 0 1px rgba(201,162,39,0.08), 0 12px 28px rgba(0,0,0,0.35);
+    border: 1px solid var(--hairline);
+    border-radius: 4px;
   }
   .genome-panel-label {
     font-family: var(--mono);
