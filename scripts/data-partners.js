@@ -39,6 +39,161 @@ const partnerProfiles = {
       { label: "Wikipedia", url: "https://en.wikipedia.org/wiki/Alfred_Lin" }
     ]
   },
+  "olaf-carlson-wee": {
+  name: "Olaf Carlson-Wee",
+  firm: "Polychain Capital",
+  firmSlug: "polychain-capital",
+  title: "Founder & CEO",
+  joinedYear: 2016,
+  education: [
+    "BA, Sociology, Vassar College"
+  ],
+  previousExperience: [
+    "Head of Risk, Coinbase (first employee)"
+  ],
+  firmHistory: [],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Joins Coinbase as its first employee, later serving as Head of Risk." },
+    { year: 2016, event: "Founds Polychain Capital after leaving Coinbase." }
+  ],
+  biography: "Olaf Carlson-Wee founded Polychain Capital in 2016 after serving as Coinbase's first employee and Head of Risk. A Vassar College sociology graduate, he built Polychain into one of the largest crypto-native investment firms, backing blockchain protocols and the foundational infrastructure of decentralized networks.",
+  sources: []
+},
+"kyle-samani": {
+  name: "Kyle Samani",
+  firm: "Multicoin Capital",
+  firmSlug: "multicoin-capital",
+  title: "Co-Founder & Managing Partner",
+  joinedYear: 2017,
+  education: [],
+  previousExperience: [],
+  firmHistory: [],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: 2017, event: "Co-founds Multicoin Capital with Tushar Jain in May." }
+  ],
+  biography: "Kyle Samani co-founded Multicoin Capital in 2017 and serves as Managing Partner. The firm takes a thesis-driven approach to crypto investing, backing tokens and blockchain-enabled businesses it believes are reshaping trillion-dollar markets.",
+  sources: []
+},
+"tushar-jain": {
+  name: "Tushar Jain",
+  firm: "Multicoin Capital",
+  firmSlug: "multicoin-capital",
+  title: "Co-Founder & Managing Partner",
+  joinedYear: 2017,
+  education: [
+    "MBA, New York University"
+  ],
+  previousExperience: [],
+  firmHistory: [],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: 2017, event: "Co-founds Multicoin Capital with Kyle Samani in May." }
+  ],
+  biography: "Tushar Jain co-founded Multicoin Capital in 2017 and serves as Managing Partner. He holds an MBA from New York University. Multicoin invests across crypto infrastructure and DeFi, focused on projects pioneering new token economics.",
+  sources: []
+},
+"avichal-garg": {
+  name: "Avichal Garg",
+  firm: "Electric Capital",
+  firmSlug: "electric-capital",
+  title: "Co-Founder & General Partner",
+  joinedYear: 2018,
+  education: [],
+  previousExperience: [
+    "Facebook",
+    "Greylock Partners"
+  ],
+  firmHistory: [
+    { firmSlug: "greylock", role: "Investor", startYear: null, endYear: null }
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Works at Facebook, and later at Greylock Partners." },
+    { year: 2018, event: "Co-founds Electric Capital with Curtis Spencer." }
+  ],
+  biography: "Avichal Garg co-founded Electric Capital in 2018 with Curtis Spencer, after working at Facebook and Greylock Partners. Electric invests from seed through growth across crypto, blockchain, developer tools, AI, and healthtech.",
+  sources: []
+},
+"dan-morehead": {
+  name: "Dan Morehead",
+  firm: "Pantera Capital",
+  firmSlug: "pantera-capital",
+  title: "Founder & CEO",
+  joinedYear: 2003,
+  education: [
+    "BA, Engineering, Princeton University"
+  ],
+  previousExperience: [
+    "Head of Macro Trading, Tiger Management"
+  ],
+  firmHistory: [
+    { firmSlug: "tiger-global", role: "Head of Macro Trading, Tiger Management", startYear: null, endYear: null }
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Runs macro trading at Tiger Management." },
+    { year: 2003, event: "Founds Pantera Capital." },
+    { year: 2013, event: "Launches the Pantera Bitcoin Fund, the first licensed Bitcoin fund in the United States." }
+  ],
+  biography: "Dan Morehead founded Pantera Capital in 2003 after running macro trading at Tiger Management. A Princeton engineering graduate, he grew Pantera into one of the earliest and largest dedicated crypto funds, launching the first licensed Bitcoin fund in the United States in 2013.",
+  sources: []
+},
+"jesse-walden": {
+  name: "Jesse Walden",
+  firm: "Variant Fund",
+  firmSlug: "variant-fund",
+  title: "Founder & Managing Partner",
+  joinedYear: 2020,
+  education: [],
+  previousExperience: [
+    "Crypto investing, Andreessen Horowitz (a16z)"
+  ],
+  firmHistory: [
+    { firmSlug: "a16z", role: "Crypto investing", startYear: null, endYear: 2020 }
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Works on crypto investments at Andreessen Horowitz." },
+    { year: 2020, event: "Founds Variant Fund." }
+  ],
+  biography: "Jesse Walden founded Variant Fund in 2020 after working on crypto investments at a16z. Variant backs foundational blockchain protocols and crypto-native networks, with early positions in Uniswap, Phantom, Mirror, and Flashbots. The firm's team is built largely from former founders and operators.",
+  sources: []
+},
+"brad-stephens": {
+  name: "Brad Stephens",
+  firm: "Blockchain Capital",
+  firmSlug: "blockchain-capital",
+  title: "Co-Founder & General Partner",
+  joinedYear: 2013,
+  education: [
+    "BA, Economics and Religion, Duke University"
+  ],
+  previousExperience: [],
+  firmHistory: [],
+  boardSeats: ["Coinbase Developer Platform"],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: 2013, event: "Co-founds Blockchain Capital with his brother Bart Stephens." },
+    { year: 2021, event: "Coinbase completes its direct listing; Blockchain Capital participates as a pre-IPO investor." }
+  ],
+  biography: "Brad Stephens co-founded Blockchain Capital in 2013 with his brother Bart, creating one of the first venture funds dedicated entirely to blockchain. A Duke graduate in Economics and Religion, he has led the fund's investments in crypto infrastructure, including its pre-IPO position in Coinbase, and serves on the board of Coinbase Developer Platform.",
+  sources: []
+}
   // ============ CAVALRY VENTURES ============
 "claude-ritter": {
   name: "Claude Ritter",
