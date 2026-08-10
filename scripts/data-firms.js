@@ -52,6 +52,60 @@ const firms = [
   ],
   holdings: []
 },
+  {
+  rank: null,
+  name: "Valor Capital Group",
+  sectors: ["Fintech", "Consumer Internet"],
+  signatureExit: "No single defined public exit documented — Valor bridges Silicon Valley and Brazil, investing in cross-border tech companies",
+  slug: "valor-capital-group",
+  website: null,
+  short: "Valor Capital",
+  founded: 2011,
+  hq: "New York, NY",
+  aum: "Not publicly disclosed",
+  thesis: "Valor invests in early-stage Brazilian startups and U.S. companies expanding into Brazil, built on the thesis that international connectivity unlocks value in emerging markets. The firm is stage-agnostic within tech-enabled fintech, education, and consumer companies.",
+  leadership: [
+    { name: "Raymundo Campos", role: "Founding Partner" },
+    { name: "Julio Vasconcellos", role: "Founding Partner" }
+  ],
+  timeline: [
+    { year: "2011", event: "Valor Capital Group founded, bridging Silicon Valley and Brazil." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "ALLVP",
+  sectors: ["Fintech", "Marketplaces", "Healthcare"],
+  signatureExit: "Cornershop's acquisition by Uber — an early ALLVP investment and one of the defining exits in Mexican tech",
+  slug: "allvp",
+  website: null,
+  short: "ALLVP",
+  founded: 2012,
+  hq: "Mexico City, Mexico",
+  aum: "Not publicly disclosed",
+  thesis: "ALLVP backs high-impact innovators improving access to services through technology across Mexico and Latin America, investing in fintech, marketplaces, and healthtech. Co-founders Federico Antoni and Fernando Lelo de Larrea built the firm into one of Mexico's most active early-stage investors.",
+  leadership: [
+    { name: "Federico Antoni", role: "Co-Founder" },
+    { name: "Fernando Lelo de Larrea", role: "Co-Founder" }
+  ],
+  timeline: [
+    { year: "2012", event: "Federico Antoni and Fernando Lelo de Larrea found ALLVP in Mexico City." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "CRE Venture Capital",
+  sectors: ["Fintech", "Enterprise Software"],
+  signatureExit: "No single defined public exit documented — CRE VC backs African tech companies in fintech, education, and digital infrastructure",
+  slug: "cre-venture-capital",
+  website: null,
+  short: "CRE Venture Capital",
+  founded: 2015,
+  hq: "Mahwah, NJ",
+  aum: "$100M (Fund III, closed 2022)",
+  thesis: "CRE Venture Capital partners with African entrepreneurs building category-defining technology companies in fintech, e-commerce, education, and
 {
   rank: null,
   name: "Creandum",
