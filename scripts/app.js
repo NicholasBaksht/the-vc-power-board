@@ -77,18 +77,61 @@ function renderHeroTop5() {
 }
 
 function renderNews() {
-  // Render the news feed: newest item as the big featured box,
-  // everything else as a compact dated list underneath.
+  // Homepage widget version: the latest item plus up to 2 more for
+  // context, then a link out to the full News page - the full
+  // archive used to render entirely on the homepage, which is
+  // exactly the "everything stacked vertically" pattern the site
+  // overhaul was meant to move away from.
   const newsContainer = document.getElementById('newsContainer');
-  if (newsItems.length > 0) {
-    const [latest, ...older] = newsItems;
+  if (newsItems.length === 0) return;
 
+  const [latest, ...older] = newsItems;
+  const preview = older.slice(0, 2);
+
+  let html = `
+    <div class="news-widget-label">Latest Update</div>
+    <div class="highlight">
+      <div class="tag">${latest.tag} — ${latest.date}</div>
+      <p>${latest.text}</p>
+    </div>`;
+
+  if (preview.length > 0) {
+    html += `<div class="news-archive">`;
+    preview.forEach(item => {
+      html += `
+        <div class="news-item">
+          <div class="date">${item.date}</div>
+          <p>${item.text}</p>
+        </div>`;
+    });
+    html += `</div>`;
+  }
+
+  html += `<a href="#news" class="news-view-all">View All Updates →</a>`;
+  newsContainer.innerHTML = html;
+}
+
+// Full News page - every item, newest first, no truncation. Reuses
+// the exact same .highlight/.news-archive/.news-item CSS as the
+// homepage widget so it feels like the same feature, just complete.
+function renderNewsPage() {
+  document.getElementById('newsView').innerHTML = `
+    <a href="#" class="detail-back" id="backFromNews">← Back to all firms</a>
+    <div class="dashboard-title">News &amp; Updates</div>
+    <p class="dashboard-sub">Every update posted about The VC Power Board's data and features, newest first.</p>
+    <div id="newsPageList"></div>
+  `;
+
+  const listEl = document.getElementById('newsPageList');
+  if (newsItems.length === 0) {
+    listEl.innerHTML = `<div class="intel-empty">No updates yet.</div>`;
+  } else {
+    const [latest, ...older] = newsItems;
     let html = `
       <div class="highlight">
         <div class="tag">${latest.tag} — ${latest.date}</div>
         <p>${latest.text}</p>
       </div>`;
-
     if (older.length > 0) {
       html += `<div class="news-archive"><div class="news-archive-label">Earlier Updates</div>`;
       older.forEach(item => {
@@ -100,9 +143,13 @@ function renderNews() {
       });
       html += `</div>`;
     }
-
-    newsContainer.innerHTML = html;
+    listEl.innerHTML = html;
   }
+
+  document.getElementById('backFromNews').addEventListener('click', (e) => {
+    e.preventDefault();
+    window.location.hash = '';
+  });
 }
 
 function router() {
