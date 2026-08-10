@@ -152,7 +152,7 @@
     padding: 22px 24px;
     border: 1px dashed var(--gold);
     border-radius: 4px;
-    background: linear-gradient(135deg, rgba(201,162,39,0.06), transparent);
+    background: linear-gradient(135deg, rgba(75,130,239,0.06), transparent);
   }
   .power-callout-label {
     font-family: var(--mono);
@@ -170,7 +170,7 @@
   .power-philosophy {
     margin: 40px 0 8px;
     padding: 36px 32px;
-    background: linear-gradient(135deg, rgba(201,162,39,0.08), rgba(201,162,39,0.01));
+    background: linear-gradient(135deg, rgba(75,130,239,0.08), rgba(75,130,239,0.01));
     border: 1px solid var(--gold);
     border-radius: 6px;
     text-align: center;
