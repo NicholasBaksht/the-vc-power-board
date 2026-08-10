@@ -66,8 +66,12 @@ function renderScaleBar() {
   if (seeAllLink) seeAllLink.textContent = `See All ${totalFirms} Firms →`;
 }
 function renderHeroTop5() {
+  // The redesigned hero has no Top 5 widget. Guarded rather than
+  // deleted so this stays safe if the widget ever comes back.
+  const listEl = document.getElementById('heroTop5List');
+  if (!listEl) return;
   const top5 = firms.slice(0, 5);
-  document.getElementById('heroTop5List').innerHTML = top5.map(f => `
+  listEl.innerHTML = top5.map(f => `
     <a href="#${f.slug}" class="hero-widget-row">
       <span class="hero-widget-rank">${String(f.rank).padStart(2, '0')}</span>
       <span class="hero-widget-name">${f.short}</span>
