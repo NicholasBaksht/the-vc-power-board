@@ -28,8 +28,7 @@
     transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
   .fr-cta-button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(75,130,239,0.35);
+    background: var(--accent-bright);
   }
   .fr-cta-hint {
     font-size: 13px;
