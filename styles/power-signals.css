@@ -101,9 +101,10 @@
 
 /* ---------- Market Signals page ---------- */
 .ps-market-card {
-  background: linear-gradient(135deg, rgba(47,111,237,0.10), rgba(47,111,237,0.02));
-  border: 1px solid rgba(47,111,237,0.35);
-  border-radius: 6px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
   padding: 22px 24px;
   margin-bottom: 24px;
 }
