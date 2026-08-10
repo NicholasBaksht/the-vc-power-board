@@ -380,7 +380,6 @@ fetch('prices.json')
     console.log('Could not load live prices, using built-in defaults.', err);
   })
   .finally(() => {
-    renderNews();
     renderHeroTop5();
     renderScaleBar();
     renderFeaturedFirm();
