@@ -429,11 +429,11 @@ holdings: []
     { name: "Michael Magaro", role: "SVP, Workday" },
     { name: "Barbry McGann", role: "SVP, Workday" }
   ],
-  timeline: [
+timeline: [
     { year: "2018", event: "Workday Ventures launches with a $500 million fund." }
   ],
   holdings: []
-}
+},
 {
   rank: null,
   name: "Not Boring Capital",
