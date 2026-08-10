@@ -33,6 +33,26 @@ const firms = [
   },
   {
   rank: null,
+  name: "STV",
+  sectors: ["Fintech", "Enterprise Software", "Healthcare"],
+  signatureExit: "Careem's acquisition by Uber — a landmark exit for STV's MENA portfolio",
+  slug: "stv",
+  website: null,
+  short: "STV",
+  founded: 2018,
+  hq: "Riyadh, Saudi Arabia",
+  aum: "$1.4B+ (across multiple funds)",
+  thesis: "STV is the largest independent technology VC in the Middle East, anchored by Saudi Telecom as a key limited partner, investing in GCC and broader MENA tech startups from Series A through growth. Founder Abdulrahman Tarabzouni built the firm around the thesis that MENA's tech market offers steep growth potential despite lagging Silicon Valley by years.",
+  leadership: [
+    { name: "Abdulrahman Tarabzouni", role: "Founder", profileSlug: "abdulrahman-tarabzouni" }
+  ],
+  timeline: [
+    { year: "2018", event: "Abdulrahman Tarabzouni founds STV in Riyadh." }
+  ],
+  holdings: []
+},
+  {
+  rank: null,
   name: "Speedinvest",
   sectors: ["Fintech", "AI", "Healthcare"],
   signatureExit: "No single defined public exit documented — Speedinvest's portfolio includes fintech infrastructure companies like Bitpanda",
