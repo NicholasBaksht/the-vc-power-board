@@ -576,13 +576,13 @@ timeline: [
   timeline: [
     { year: "2016", event: "Olaf Carlson-Wee founds Polychain Capital after leaving Coinbase." }
   ],
-  holdings: [
+holdings: [
     { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null }
   ]
 },
 {
   rank: null,
-  name: "Multicoin Capital",
+  name: "Greenoaks Capital",
   sectors: ["Crypto", "DeFi"],
   signatureExit: "No public equity exit documented — Multicoin invests primarily in tokens and blockchain protocols rather than public equities",
   slug: "multicoin-capital",
