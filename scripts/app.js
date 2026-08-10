@@ -219,6 +219,10 @@ document.getElementById('powerSignalsView').style.display = 'none';
     document.getElementById('powerSignalsView').style.display = 'block';
     renderMarketSignals();
     window.scrollTo(0, 0);
+} else if (slug === 'news') {
+    document.getElementById('newsView').style.display = 'block';
+    renderNewsPage();
+    window.scrollTo(0, 0);
   } else if (slug === 'feed') {
     document.getElementById('intelligenceFeedView').style.display = 'block';
     renderIntelligenceFeed();
