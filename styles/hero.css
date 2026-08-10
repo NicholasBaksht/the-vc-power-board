@@ -62,6 +62,32 @@
 .pb-nav .nav-link:hover { color: var(--ink); background: var(--surface); }
 .pb-nav .nav-link.active { color: var(--ink); background: var(--surface-raised); }
 
+/* Dropdown triggers are <button>, so they need the link styling
+   restated rather than inherited. nav-dropdown.css still handles
+   the menu panel itself — this only aligns the trigger with the
+   flat links beside it. */
+.pb-nav .nav-dropdown-trigger {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-dim);
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+.pb-nav .nav-dropdown-trigger:hover { color: var(--ink); background: var(--surface); }
+.pb-nav .nav-dropdown-trigger.active,
+.pb-nav .nav-dropdown.open .nav-dropdown-trigger {
+    color: var(--ink);
+    background: var(--surface-raised);
+}
+.pb-nav .nav-dropdown-menu { min-width: 232px; }
+
+/* The header is the dropdowns' positioning context. It must stay
+   overflow: visible or the menus get clipped at its bottom edge. */
+.pb-header { overflow: visible; }
+.pb-nav { overflow: visible; }
+
 .pb-header-actions {
     display: flex;
     align-items: center;
@@ -263,11 +289,11 @@
         margin: 0;
         gap: 2px;
         justify-content: flex-start;
-        /* Safe here only because the dropdown menus are gone; an
-           overflow value other than visible clips absolutely
-           positioned children, which is what broke the old nav. */
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        /* Wraps rather than scrolls. Do NOT put overflow-x here:
+           any overflow value other than visible forces overflow-y
+           non-visible too, which invisibly clips the dropdown
+           menus. That is what broke this nav once already. */
+        flex-wrap: wrap;
     }
     .pb-nav .nav-link { padding: 8px 11px; }
 }
