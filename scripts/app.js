@@ -112,6 +112,15 @@ function router() {
   const companyMatch = slug.match(/^company\/(.+)$/);
   const reportMatch = slug.match(/^reports\/(.+)$/);
 
+  // The hero, feature-grid, and below-hero content is homepage-only
+  // chrome, not something every route should carry - it was
+  // previously always rendered regardless of page, which is the
+  // real reason navigating anywhere felt like "one long page."
+  // Shown only for the true homepage/Rankings route.
+  const isHomepage = (slug === '' || slug === 'rankings' || slug === 'firmsContainer');
+  const homeIntroEl = document.getElementById('homeIntro');
+  if (homeIntroEl) homeIntroEl.style.display = isHomepage ? '' : 'none';
+
   document.getElementById('listView').style.display = 'none';
   document.getElementById('detailView').style.display = 'none';
   document.getElementById('compareView').style.display = 'none';
