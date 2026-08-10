@@ -349,7 +349,39 @@ const firmStages = {
   'liquid2-ventures': ['Seed', 'Series A'],
   'unusual-ventures': ['Seed'],
   'collaborative-fund': ['Seed', 'Series A', 'Growth'],
-  'shrug-capital': ['Seed']
+  'shrug-capital': ['Seed'],
+   'greenoaks-capital': ['Growth', 'Late Stage'], // explicit: "growth equity firm"
+'altimeter-capital': ['Growth', 'Late Stage'], // explicit: "growth-stage technology companies, public and private"
+'durable-capital-partners': ['Growth', 'Late Stage'], // explicit: "early-stage and durable growth companies" — tagged Growth/Late per actual public holdings (Coinbase, Affirm, Datadog)
+'baillie-gifford': ['Growth', 'Late Stage'], // explicit: "global growth equity approach"
+'electric-capital': ['Seed', 'Series A', 'Series B', 'Growth'], // explicit: "invests from seed through growth"
+'variant-fund': ['Seed'], // explicit: "early-stage crypto fund"
+'blockchain-capital': ['Seed', 'Series A', 'Series B', 'Growth'], // explicit: "seed through growth"
+'elad-gil': ['Pre-Seed', 'Seed'], // explicit: "angel investor," pre-IPO backer
+'not-boring-capital': ['Seed'], // explicit: "invests in early-stage startups"
+'south-park-commons': ['Pre-Seed', 'Seed'], // explicit: "-1 to 0 investing," "very early-stage"
+'contrary-capital': ['Seed'], // explicit: "early-stage startups"
+'makers-fund': ['Seed', 'Series A'], // explicit: "seed to Series A"
+'bitkraft-ventures': ['Seed', 'Series A', 'Series B', 'Growth'], // explicit: "all stages, from early seed to growth"
+'foresite-capital': ['Seed', 'Series A', 'Series B', 'Growth'], // explicit: "invests across all stages"
+'polaris-partners': ['Seed', 'Series A', 'Series B', 'Growth'], // explicit: "seed to growth"
+'servicenow-ventures': ['Seed'], // explicit: "early-stage companies"
+'speedinvest': ['Pre-Seed', 'Seed', 'Series A', 'Series B', 'Growth'], // explicit: "pre-seed to growth stages"
+'creandum': ['Seed'], // explicit: "early-stage tech and healthcare startups"
+'hv-capital': ['Seed', 'Series A', 'Series B', 'Growth', 'Late Stage'], // explicit: "seed through growth," "seed to IPO"
+'hongshan-capital': ['Seed', 'Series A', 'Series B', 'Growth', 'Late Stage'], // explicit: "all stages... seed through buyouts" (buyout portion excluded — PE, not VC)
+'vertex-ventures': ['Seed', 'Series A', 'Series B', 'Growth'], // explicit: "ranging from startups to growth"
+'zhenfund': ['Seed', 'Series A'], // explicit: "seed and Series A stages"
+'golden-gate-ventures': ['Seed'], // explicit: "early-stage tech"
+'valor-capital-group': ['Seed'], // explicit: "seed to early-stage tech companies"
+'allvp': ['Seed'], // explicit: "early-stage Latin American tech companies"
+'cre-venture-capital': ['Seed', 'Series A'], // explicit: "seed to Series A"
+'stv': ['Series A', 'Series B', 'Growth'], // explicit: "Series A through growth stages"
+
+// Inferred from described public holdings, not a direct stage quote in source — flagging separately per your honesty standard:
+'d1-capital-partners': ['Late Stage'], // holdings are all post-IPO/late private (Instacart, Robinhood, Rivian, Procore)
+'whale-rock-capital-management': ['Late Stage'], // public equity fund, no private-stage language in source
+'viking-global-investors': ['Late Stage'], // public equity hedge fund, no private-stage language in source
 };
 
 // ============================================================
