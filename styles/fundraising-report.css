@@ -39,11 +39,9 @@
     margin-right: auto;
   }
 
-  .fr-report {
+    .fr-report {
     margin-top: 20px;
-    animation: frFadeIn 0.4s ease;
   }
-  
 
   .fr-exec-summary {
     padding: 32px;
