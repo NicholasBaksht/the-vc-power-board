@@ -389,3 +389,9 @@
     .legal-clauses > li { padding-left: 38px; }
     .legal-conspicuous { padding: 16px 18px; }
 }
+  .nav-link-quiet {
+    font-size: 12px;
+    color: var(--ink-dim);
+    opacity: 0.75;
+  }
+  .nav-link-quiet:hover { opacity: 1; }
