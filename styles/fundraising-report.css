@@ -48,7 +48,7 @@
 
   .fr-exec-summary {
     padding: 32px;
-    background: linear-gradient(135deg, rgba(201,162,39,0.08), transparent);
+    background: linear-gradient(135deg, rgba(75,130,239,0.08), transparent);
     border: 1px solid var(--gold);
     border-radius: 8px;
     margin-bottom: 36px;
@@ -149,7 +149,7 @@
     margin-top: 4px;
   }
   .fr-tier-start-here { background: rgba(74,222,128,0.15); color: #4ade80; }
-  .fr-tier-stretch-targets { background: rgba(201,162,39,0.15); color: var(--gold-bright); }
+  .fr-tier-stretch-targets { background: rgba(75,130,239,0.15); color: var(--gold-bright); }
   .fr-tier-reach-later { background: rgba(148,163,184,0.15); color: var(--ink-dim); }
   .fr-card-score { text-align: right; flex-shrink: 0; }
   .fr-card-score-pct {
