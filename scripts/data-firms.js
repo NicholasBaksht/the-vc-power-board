@@ -239,9 +239,9 @@ const firms = [
   timeline: [
     { year: "2011", event: "Golden Gate Ventures founded in Singapore." }
   ],
-  holdings: []
-}
-  {
+holdings: []
+},
+{
   rank: null,
   name: "Elad Gil",
   sectors: ["AI", "Fintech", "SaaS", "Marketplaces"],
