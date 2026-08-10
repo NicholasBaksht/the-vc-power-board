@@ -9,11 +9,17 @@
  * (buildFirmTimelineEvents, getSpinoutRelations) rather than a new
  * pipeline - this IS that data, scored and thresholded differently.
  *
- * Deliberately NOT built, because nothing in the data supports it:
+* Deliberately NOT built, because nothing in the data supports it:
  * Emerging Sector, Geographic Expansion, Capital Deployment,
- * Portfolio Momentum, Strategic Shift - all of these require either
- * per-investment dates or historical sector/stage snapshots that
+ * Strategic Shift - all of these require either per-investment
+ * dates AND sector tags, or historical sector/stage snapshots, that
  * don't exist anywhere in this app's data.
+ *
+ * Portfolio Momentum was added later, scoped down from the original
+ * spec: with investedYear now sourced for 47 holdings across 19
+ * firms, this signal reports the most recent dated investment on
+ * file rather than a recent-vs-prior trend, since per-firm holding
+ * counts are too sparse to support a real trend comparison.
  */
 
 const SIGNAL_TYPE_LABELS = {
