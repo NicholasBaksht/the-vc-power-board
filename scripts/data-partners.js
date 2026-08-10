@@ -467,7 +467,188 @@ const partnerProfiles = {
   biography: "Andreas Halvorsen co-founded Viking Global Investors in 1999 and serves as its CEO. A Williams College graduate with an MBA from Stanford, he began as a healthcare analyst at Morgan Stanley before becoming one of the first employees at Tiger Management. He has since built Viking into one of the largest hedge funds in the world, investing long and short across technology, healthcare, and consumer sectors.",
   sources: []
 }
-
+"elad-gil": {
+  name: "Elad Gil",
+  firm: "Elad Gil",
+  firmSlug: "elad-gil",
+  title: "Solo General Partner",
+  joinedYear: 2012,
+  education: [
+    "BA, Harvard University",
+    "PhD, Massachusetts Institute of Technology"
+  ],
+  previousExperience: [
+    "Product Manager, Google",
+    "Co-founder, Mixer Labs (acquired by Twitter)",
+    "VP of Product, Twitter",
+    "Co-founder & COO, Color Genomics"
+  ],
+  firmHistory: [],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: 2004, event: "Joins Google as a product manager, helping build the mobile team and Google Mobile Maps." },
+    { year: 2007, event: "Co-founds Mixer Labs, a location-based services company." },
+    { year: 2009, event: "Twitter acquires Mixer Labs; Gil stays on as a VP." },
+    { year: 2012, event: "Transitions to full-time independent angel investing after leaving Twitter." },
+    { year: 2020, event: "Airbnb, one of his early pre-IPO investments, goes public." }
+  ],
+  biography: "Elad Gil is one of the most prolific independent investors in technology, backing pre-IPO companies including Airbnb, Stripe, Coinbase, Instacart, Pinterest, and Roblox. He holds a BA from Harvard and a PhD from MIT, joined Google as a product manager in 2004, then co-founded Mixer Labs — acquired by Twitter in 2009 — before serving as a Twitter VP. He later co-founded Color Genomics and authored the High Growth Handbook. He moved to full-time investing around 2012.",
+  sources: []
+},
+"packy-mccormick": {
+  name: "Packy McCormick",
+  firm: "Not Boring Capital",
+  firmSlug: "not-boring-capital",
+  title: "Founder & General Partner",
+  joinedYear: 2021,
+  education: [],
+  previousExperience: [
+    "Writer, Not Boring newsletter"
+  ],
+  firmHistory: [],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: 2021, event: "Launches Not Boring Capital alongside the Not Boring newsletter." }
+  ],
+  biography: "Patrick 'Packy' McCormick is a writer and investor who runs Not Boring Capital, a venture fund and content studio launched in 2021 alongside his widely-read Not Boring newsletter. The fund backs early-stage companies with strong narratives, often in fintech and deep tech.",
+  sources: []
+},
+"ruchi-sanghvi": {
+  name: "Ruchi Sanghvi",
+  firm: "South Park Commons",
+  firmSlug: "south-park-commons",
+  title: "Co-Founder & CEO",
+  joinedYear: 2016,
+  education: [
+    "Carnegie Mellon University (engineering)"
+  ],
+  previousExperience: [
+    "First female engineer, Facebook",
+    "VP of Operations, Dropbox"
+  ],
+  firmHistory: [],
+  boardSeats: ["Paytm"],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Joins Facebook as its first female engineer." },
+    { year: null, event: "Serves as a VP at Dropbox." },
+    { year: 2016, event: "Co-founds South Park Commons as a community space for engineers and entrepreneurs." },
+    { year: 2018, event: "South Park Commons launches its venture fund." }
+  ],
+  biography: "Ruchi Sanghvi co-founded South Park Commons in 2016 and serves as its CEO. A Carnegie Mellon engineering graduate, she was Facebook's first female engineer and later a VP at Dropbox. At SPC she supports deep-tech and software founders at the earliest possible stage — what the firm calls '-1 to 0' — through its community, studio, and venture fund. She serves on the board of Paytm and has taught entrepreneurship at UC Berkeley.",
+  sources: []
+},
+"eric-tarczynski": {
+  name: "Eric Tarczynski",
+  firm: "Contrary Capital",
+  firmSlug: "contrary-capital",
+  title: "Co-Founder & CEO",
+  joinedYear: 2014,
+  education: [
+    "Northeastern University"
+  ],
+  previousExperience: [],
+  firmHistory: [],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: 2014, event: "Founds Contrary Capital while a student at Northeastern University." }
+  ],
+  biography: "Eric Tarczynski founded Contrary Capital while still a student at Northeastern and runs it as CEO. The firm operates a network of on-campus partners who identify talent early, backing university-founded startups across the US, Latin America, and Asia.",
+  sources: []
+},
+"christoph-westphal": {
+  name: "Christoph Westphal",
+  firm: "RA Capital Management",
+  firmSlug: "ra-capital-management",
+  title: "Co-Founder & CEO",
+  joinedYear: 2004,
+  education: [],
+  previousExperience: [
+    "CEO, Millennium Pharmaceuticals"
+  ],
+  firmHistory: [],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Serves as CEO of Millennium Pharmaceuticals." },
+    { year: 2004, event: "Co-founds RA Capital Management in Boston." }
+  ],
+  biography: "Dr. Christoph Westphal co-founded RA Capital Management in 2004 and serves as its CEO, having previously led Millennium Pharmaceuticals. RA Capital invests across biotech, pharma, diagnostics, and digital health, backing companies translating scientific breakthroughs into medicines and technologies.",
+  sources: []
+},
+"jim-tananbaum": {
+  name: "Jim Tananbaum",
+  firm: "Foresite Capital",
+  firmSlug: "foresite-capital",
+  title: "Founder & CEO",
+  joinedYear: 2011,
+  education: [],
+  previousExperience: [
+    "CEO, BioOptions"
+  ],
+  firmHistory: [],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Serves as CEO of BioOptions." },
+    { year: 2011, event: "Founds Foresite Capital in San Francisco." },
+    { year: 2024, event: "Foresite closes Fund VI at approximately $900 million." }
+  ],
+  biography: "Jim Tananbaum founded Foresite Capital in 2011 and leads the firm as CEO, having previously served as CEO of BioOptions. Foresite invests across all stages in biotechnology and life sciences, with an emphasis on platform technologies and transformative biopharma.",
+  sources: []
+},
+"neil-shen": {
+  name: "Neil Shen",
+  firm: "HongShan Capital",
+  firmSlug: "hongshan-capital",
+  title: "Founder",
+  joinedYear: 2005,
+  education: [],
+  previousExperience: [
+    "Co-founder, Ctrip",
+    "Co-founder, Home Inns"
+  ],
+  firmHistory: [
+    { firmSlug: "sequoia", role: "Founding Partner, Sequoia Capital China", startYear: 2005, endYear: 2024 }
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Co-founds travel company Ctrip and budget hotel chain Home Inns." },
+    { year: 2005, event: "Partners with Sequoia Capital to found Sequoia Capital China." },
+    { year: 2024, event: "The firm completes its separation from Sequoia and rebrands as HongShan." }
+  ],
+  biography: "Neil Shen founded Sequoia Capital China in 2005 in partnership with Sequoia Capital, bringing operator credibility as a serial entrepreneur who co-founded both Ctrip and Home Inns. Following the 2023 announcement of Sequoia's regional split, the firm became fully independent in 2024 and rebranded as HongShan, retaining the portfolio and team built over nearly two decades.",
+  sources: []
+},
+"abdulrahman-tarabzouni": {
+  name: "Abdulrahman Tarabzouni",
+  firm: "STV",
+  firmSlug: "stv",
+  title: "Founder",
+  joinedYear: 2018,
+  education: [],
+  previousExperience: [],
+  firmHistory: [],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: 2018, event: "Founds STV in Riyadh, Saudi Arabia." }
+  ],
+  biography: "Abdulrahman Tarabzouni founded STV in 2018, building it into the largest independent technology venture firm in the Middle East. Anchored by Saudi Telecom as a key limited partner, STV invests in MENA tech startups from Series A through growth.",
+  sources: []
+}
 // ============ PLAYGROUND GLOBAL ============
 "peter-barrett": {
   name: "Peter Barrett",
