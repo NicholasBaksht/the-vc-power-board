@@ -141,13 +141,14 @@
   }
   .stamp strong { color: var(--ink); font-weight: 600; }
 
-  /* ---------- NEWS: FEATURED (most recent) ---------- */
+/* ---------- NEWS: FEATURED (most recent) ---------- */
   .highlight {
-    margin: 24px 0 0;
+    margin: 0;
     padding: 22px;
-    border-radius: 2px;
-  background: linear-gradient(135deg, rgba(47,111,237,0.10), rgba(47,111,237,0.02));
-    border: 1px solid rgba(47,111,237,0.35);
+    border-radius: 4px;
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-left: 3px solid var(--accent);
   }
   .highlight .tag {
     font-family: var(--mono);
