@@ -160,7 +160,7 @@
     color: var(--ink);
   }
   .chip.active {
-    background: rgba(201,162,39,0.12);
+    background: rgba(75,130,239,0.12);
     border-color: var(--gold);
     color: var(--gold-bright);
   }
