@@ -80,15 +80,15 @@
   .stage-card:hover {
     border-color: var(--gold);
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.35), 0 0 0 1px rgba(201,162,39,0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35), 0 0 0 1px rgba(75,130,239,0.2);
   }
   .stage-card:active {
     transform: translateY(-1px);
   }
   .stage-card.active {
-    background: linear-gradient(135deg, rgba(201,162,39,0.14), rgba(201,162,39,0.03));
+    background: linear-gradient(135deg, rgba(75,130,239,0.14), rgba(75,130,239,0.03));
     border-color: var(--gold);
-    box-shadow: 0 8px 20px rgba(201,162,39,0.15), 0 0 0 1px var(--gold);
+    box-shadow: 0 8px 20px rgba(75,130,239,0.15), 0 0 0 1px var(--gold);
   }
   .stage-card-icon {
     font-size: 28px;
