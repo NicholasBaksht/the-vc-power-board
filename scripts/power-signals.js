@@ -548,3 +548,45 @@ function renderPreviewCard(signal, firm) {
     </a>
   `;
 }
+// ---------- Portfolio Momentum (data-available version) ----------
+// Built ONLY on investedYear, a real sourced field on individual
+// holdings (currently populated for 47 of ~271 firms' holdings,
+// researched and dated one by one - not estimated). Unlike the
+// event-based Momentum signal, holdings are too sparse per firm
+// (avg ~2.5 dated) to support a real "recent window vs prior
+// window" trend, so this is honestly scoped down to a single
+// factual claim: how recent is the firm's most recent dated
+// investment. No comparison is fabricated where the data can't
+// support one.
+
+const PORTFOLIO_MOMENTUM_RECENCY_YEARS = 3;
+
+function computePortfolioMomentumSignal(firmSlug) {
+  const firm = firms.find(f => f.slug === firmSlug);
+  if (!firm || !firm.holdings) return null;
+
+  const dated = firm.holdings.filter(h => typeof h.investedYear === 'number');
+  if (dated.length === 0) return null;
+
+  const sorted = [...dated].sort((a, b) => b.investedYear - a.investedYear);
+  const mostRecent = sorted[0];
+  const currentYear = new Date().getFullYear();
+  const yearsSince = currentYear - mostRecent.investedYear;
+
+  if (yearsSince > PORTFOLIO_MOMENTUM_RECENCY_YEARS) return null; // not recent enough to be a "momentum" claim
+
+  const strength = yearsSince <= 1 ? 'Strong' : (yearsSince <= 2 ? 'Moderate' : 'Emerging');
+  const coverageNote = dated.length < firm.holdings.length
+    ? ` Only ${dated.length} of this firm's ${firm.holdings.length} tracked holdings have a confirmed investment date on file — this reflects known data, not the firm's full portfolio.`
+    : '';
+
+  return {
+    type: 'portfolio_momentum',
+    strength,
+    headline: `Most recent tracked investment: ${mostRecent.name} (${mostRecent.investedYear})`,
+    explanation: `${mostRecent.name} is the most recently dated investment on file for ${firm.short}, ${yearsSince === 0 ? 'this year' : yearsSince + ' year' + (yearsSince === 1 ? '' : 's') + ' ago'}.`,
+    caveat: `Based on ${dated.length} sourced investment date${dated.length === 1 ? '' : 's'} out of this firm's tracked holdings — not a full transaction history.${coverageNote}`,
+    datedHoldings: sorted.map(h => ({ name: h.name, year: h.investedYear })),
+    firmSlug
+  };
+}
