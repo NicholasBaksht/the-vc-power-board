@@ -429,8 +429,8 @@ holdings: []
     { name: "Michael Magaro", role: "SVP, Workday" },
     { name: "Barbry McGann", role: "SVP, Workday" }
   ],
-timeline: [
-  { year: "2018", event: "Workday Ventures launches with a $500 million fund." }
+  timeline: [
+    { year: "2018", event: "Workday Ventures launches with a $500 million fund." }
   ],
   holdings: []
 },
@@ -554,11 +554,11 @@ timeline: [
     { name: "Scott Rupp", role: "Co-Founder & General Partner" }
   ],
   timeline: [
-{ year: "2018", event: "Jens Hilgers and Scott Rupp found BITKRAFT Ventures." }
+    { year: "2018", event: "Jens Hilgers and Scott Rupp found BITKRAFT Ventures." }
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Polychain Capital",
   sectors: ["Crypto", "DeFi"],
@@ -576,13 +576,13 @@ timeline: [
   timeline: [
     { year: "2016", event: "Olaf Carlson-Wee founds Polychain Capital after leaving Coinbase." }
   ],
-holdings: [
+  holdings: [
     { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null }
   ]
 },
 {
   rank: null,
-  name: "Greenoaks Capital",
+  name: "Multicoin Capital",
   sectors: ["Crypto", "DeFi"],
   signatureExit: "No public equity exit documented — Multicoin invests primarily in tokens and blockchain protocols rather than public equities",
   slug: "multicoin-capital",
@@ -688,7 +688,7 @@ holdings: [
   holdings: [
     { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null }
   ]
-}
+},
   {
   rank: null,
   name: "Greenoaks Capital",
@@ -851,11 +851,11 @@ holdings: [
     { name: "Brian Olson", role: "Co-Chief Investment Officer" }
   ],
   timeline: [
-{ year: "1999", event: "Andreas Halvorsen co-founds Viking Global Investors." }
+    { year: "1999", event: "Andreas Halvorsen co-founds Viking Global Investors." }
   ],
   holdings: []
 },
-{
+  {
     slug: 'cavalry-ventures',
     rank: null,
     name: 'Cavalry Ventures',
