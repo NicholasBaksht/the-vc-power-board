@@ -32,6 +32,172 @@ const firms = [
     ]
   },
   {
+  rank: null,
+  name: "Greenoaks Capital",
+  sectors: ["Consumer Internet", "Fintech", "Logistics"],
+  signatureExit: "Coupang's 2021 NYSE listing — Greenoaks was an early backer and co-founder Neil Mehta sits on Coupang's board",
+  slug: "greenoaks-capital",
+  website: null,
+  short: "Greenoaks",
+  founded: 2012,
+  hq: "San Francisco, CA",
+  aum: "$15B (2025)",
+  thesis: "Greenoaks makes concentrated, large initial bets in a small number of 'generation-defining' technology companies, then maintains those positions through multiple private rounds and into the public markets rather than exiting early. Founder Neil Mehta, previously at Kayne Anderson and D.E. Shaw, has built the firm around long-duration conviction rather than portfolio breadth.",
+  leadership: [
+    { name: "Neil Mehta", role: "Founder & Managing Partner", profileSlug: "neil-mehta" },
+    { name: "Neil Shah", role: "Partner" },
+    { name: "Patrick Backhouse", role: "Partner" },
+    { name: "Ben Solarz", role: "Partner" }
+  ],
+  timeline: [
+    { year: "2012", event: "Greenoaks Capital founded by Neil Mehta and Benny Peretz." },
+    { year: "2021", event: "Coupang goes public on the NYSE; Mehta joins the board." }
+  ],
+  holdings: [
+    { name: "Coupang", ticker: "CPNG", historicalPrice: null, price: null },
+    { name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: null }
+  ]
+},
+{
+  rank: null,
+  name: "Altimeter Capital",
+  sectors: ["AI", "Enterprise Software", "Consumer Internet"],
+  signatureExit: "Snowflake's 2020 IPO, one of the largest software IPOs on record — an early Altimeter position that helped earn founder Brad Gerstner a Forbes Midas List spot",
+  slug: "altimeter-capital",
+  website: null,
+  short: "Altimeter",
+  founded: 2008,
+  hq: "Menlo Park, CA",
+  aum: "$18.7B (2025, advisory AUM)",
+  thesis: "Altimeter partners with visionary entrepreneurs across both late-stage private and public technology investing, spanning growth equity through public-market positions in the same names. Founder Brad Gerstner, previously a co-founder of General Catalyst, has built the firm's reputation on early conviction in category leaders like Snowflake and Grab.",
+  leadership: [
+    { name: "Brad Gerstner", role: "Founder, Chairman & CEO", profileSlug: "brad-gerstner" },
+    { name: "Michael Patel", role: "Managing Partner" },
+    { name: "Gabriel Bonilla", role: "Managing Partner" }
+  ],
+  timeline: [
+    { year: "2008", event: "Brad Gerstner founds Altimeter Capital." },
+    { year: "2020", event: "Snowflake goes public in one of the largest software IPOs on record." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "D1 Capital Partners",
+  sectors: ["Fintech", "Consumer Internet", "Enterprise Software"],
+  signatureExit: "No single defined public exit — D1 has instead held large concentrated public positions in growth-stage names post-IPO, including Instacart and Procore",
+  slug: "d1-capital-partners",
+  website: null,
+  short: "D1 Capital Partners",
+  founded: 2018,
+  hq: "New York, NY",
+  aum: "$24B (2022)",
+  thesis: "D1 practices principled, multi-asset investing across global public and private markets with no fixed sector focus, deploying capital across tech, media, consumer, and healthcare. Founder Daniel Sundheim spent 15 years as CIO of Viking Global Investors before launching D1 in 2018.",
+  leadership: [
+    { name: "Daniel Sundheim", role: "Founder & Chief Investment Officer", profileSlug: "daniel-sundheim" }
+  ],
+  timeline: [
+    { year: "2018", event: "Daniel Sundheim founds D1 Capital Partners in July, after 15 years at Viking Global Investors." }
+  ],
+  holdings: [
+    { name: "Instacart", ticker: "CART", historicalPrice: null, price: null },
+    { name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: null },
+    { name: "Rivian", ticker: "RIVN", historicalPrice: null, price: null },
+    { name: "Procore Technologies", ticker: "PCOR", historicalPrice: null, price: null },
+    { name: "Squarespace", ticker: "SQSP", historicalPrice: null, price: null }
+  ]
+},
+{
+  rank: null,
+  name: "Durable Capital Partners",
+  sectors: ["Fintech", "Enterprise Software"],
+  signatureExit: "No single defined public exit documented — Durable holds public growth-stage positions including Coinbase, Affirm, and Datadog",
+  slug: "durable-capital-partners",
+  website: null,
+  short: "Durable Capital",
+  founded: 2019,
+  hq: "Bethesda, MD",
+  aum: "$19B (Nov 2024)",
+  thesis: "Durable Capital backs 'durable' growth businesses from early stage onward across both public and private markets. Founder Henry Ellenbogen spent 18 years as a portfolio manager at T. Rowe Price before launching the firm in 2019.",
+  leadership: [
+    { name: "Henry Ellenbogen", role: "Founder, Managing Partner & CIO", profileSlug: "henry-ellenbogen" }
+  ],
+  timeline: [
+    { year: "2019", event: "Henry Ellenbogen founds Durable Capital Partners after 18 years at T. Rowe Price." }
+  ],
+  holdings: [
+    { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null },
+    { name: "Affirm", ticker: "AFRM", historicalPrice: null, price: null },
+    { name: "Datadog", ticker: "DDOG", historicalPrice: null, price: null }
+  ]
+},
+{
+  rank: null,
+  name: "Baillie Gifford",
+  sectors: ["Consumer Internet", "AI", "Healthcare"],
+  signatureExit: "Tesla — an early, long-held position that realized approximately $14.8 billion in profit for the firm",
+  slug: "baillie-gifford",
+  website: null,
+  short: "Baillie Gifford",
+  founded: 1908,
+  hq: "Edinburgh, UK",
+  aum: "£286.3B (2025)",
+  thesis: "Baillie Gifford takes a patient, long-term global growth equity approach, holding large positions in innovative companies for years rather than quarters. The firm's most famous position, an early stake in Tesla, became one of the most profitable single holdings in its history.",
+  leadership: [
+    { name: "Tim Campbell", role: "CEO & Managing Partner" },
+    { name: "Malcolm MacColl", role: "Co-CEO" },
+    { name: "Amy Atack", role: "Co-CEO" }
+  ],
+  timeline: [
+    { year: "1908", event: "Baillie Gifford founded in Edinburgh." }
+  ],
+  holdings: [
+    { name: "Tesla", ticker: "TSLA", historicalPrice: null, price: null }
+  ]
+},
+{
+  rank: null,
+  name: "Whale Rock Capital Management",
+  sectors: ["AI", "Consumer Internet"],
+  signatureExit: "No single defined public exit documented — Whale Rock runs a public-equity technology, media, and telecom strategy",
+  slug: "whale-rock-capital-management",
+  website: null,
+  short: "Whale Rock",
+  founded: 2006,
+  hq: "Boston, MA",
+  aum: "$8B (mid-2020s)",
+  thesis: "Whale Rock positions itself at the intersection of technology and media, running concentrated global equity strategies around long-duration trends like AI, cloud infrastructure, and electric vehicles. Founder Alex Sacerdote previously managed technology and media positions at Fidelity before launching the firm in 2006.",
+  leadership: [
+    { name: "Alex Sacerdote", role: "Founder, CEO & Portfolio Manager", profileSlug: "alex-sacerdote" }
+  ],
+  timeline: [
+    { year: "2006", event: "Alex Sacerdote founds Whale Rock Capital Management in Boston." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Viking Global Investors",
+  sectors: ["AI", "Healthcare", "Consumer Internet"],
+  signatureExit: "No single defined public exit documented — Viking runs a long/short global equity strategy across tech, healthcare, and consumer",
+  slug: "viking-global-investors",
+  website: null,
+  short: "Viking Global",
+  founded: 1999,
+  hq: "Stamford, CT",
+  aum: "$56B (mid-2026)",
+  thesis: "Viking invests both long and short across sectors with a fundamental, long-term emphasis on innovative growth companies. Co-founder Andreas Halvorsen previously worked as a healthcare analyst at Morgan Stanley and was among the first employees at Tiger Management; D1 Capital's Daniel Sundheim is a Viking alumnus.",
+  leadership: [
+    { name: "Andreas Halvorsen", role: "Co-Founder & CEO", profileSlug: "andreas-halvorsen" },
+    { name: "David Ott", role: "Co-Chief Investment Officer" },
+    { name: "Brian Olson", role: "Co-Chief Investment Officer" }
+  ],
+  timeline: [
+    { year: "1999", event: "Andreas Halvorsen co-founds Viking Global Investors." }
+  ],
+  holdings: []
+}
+  {
     slug: 'cavalry-ventures',
     rank: null,
     name: 'Cavalry Ventures',
