@@ -152,6 +152,166 @@ const partnerProfiles = {
     { label: "TechCrunch — Sri Chandrasekar author bio", url: "https://techcrunch.com/author/all-sri-chandrasekar" }
   ]
 },
+  "neil-mehta": {
+  name: "Neil Mehta",
+  firm: "Greenoaks Capital",
+  firmSlug: "greenoaks-capital",
+  title: "Founder & Managing Partner",
+  joinedYear: 2012,
+  education: [
+    "BSc, Government and Economics, London School of Economics"
+  ],
+  previousExperience: [
+    "D.E. Shaw & Co.",
+    "Kayne Anderson Capital Advisors"
+  ],
+  firmHistory: [],
+  boardSeats: ["Coupang"],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Works at Kayne Anderson Capital Advisors, then D.E. Shaw & Co." },
+    { year: 2012, event: "Co-founds Greenoaks Capital with Benny Peretz after leaving D.E. Shaw." },
+    { year: 2021, event: "Coupang goes public on the NYSE; Mehta serves on its board." }
+  ],
+  biography: "Neil Mehta co-founded Greenoaks in 2012 after leaving D.E. Shaw, having previously worked at Kayne Anderson. He built the firm around concentrated, long-duration positions in a small number of technology companies — holding through private rounds into the public markets rather than exiting at IPO. He sits on the board of Coupang, one of the firm's defining investments.",
+  sources: []
+},
+"brad-gerstner": {
+  name: "Brad Gerstner",
+  firm: "Altimeter Capital",
+  firmSlug: "altimeter-capital",
+  title: "Founder, Chairman & CEO",
+  joinedYear: 2008,
+  education: [
+    "BA, Wabash College",
+    "MBA, Harvard Business School"
+  ],
+  previousExperience: [
+    "Co-founder, General Catalyst",
+    "Government official, State of Indiana"
+  ],
+  firmHistory: [
+    { firmSlug: "general-catalyst", role: "Co-founder", startYear: null, endYear: null }
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Serves as a government official in Indiana before entering investing." },
+    { year: null, event: "Co-founds General Catalyst." },
+    { year: 2008, event: "Founds Altimeter Capital." },
+    { year: 2020, event: "Snowflake, an early Altimeter position, goes public." }
+  ],
+  biography: "Brad Gerstner founded Altimeter Capital in 2008 and remains its CEO. A Wabash College graduate with an MBA from Harvard Business School, he began his career as a government official in Indiana before co-founding General Catalyst. At Altimeter he became known for early conviction in Snowflake and Grab, investments that earned him a place on the Forbes Midas List.",
+  sources: []
+},
+"daniel-sundheim": {
+  name: "Daniel Sundheim",
+  firm: "D1 Capital Partners",
+  firmSlug: "d1-capital-partners",
+  title: "Founder & Chief Investment Officer",
+  joinedYear: 2018,
+  education: [
+    "BS, Economics, The Wharton School, University of Pennsylvania"
+  ],
+  previousExperience: [
+    "Chief Investment Officer, Viking Global Investors",
+    "Bear Stearns"
+  ],
+  firmHistory: [
+    { firmSlug: "viking-global-investors", role: "Chief Investment Officer", startYear: null, endYear: 2018 }
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Begins his investment career at Bear Stearns." },
+    { year: null, event: "Joins Viking Global Investors, ultimately serving as Chief Investment Officer across a 15-year tenure." },
+    { year: 2018, event: "Founds D1 Capital Partners in July." }
+  ],
+  biography: "Daniel Sundheim founded D1 Capital Partners in 2018 after a 15-year tenure at Viking Global Investors, where he served as Chief Investment Officer. A Wharton economics graduate who began his career at Bear Stearns, he built D1 as a multi-asset firm investing across global public and private markets, with concentrated positions in growth companies including Instacart and Procore.",
+  sources: []
+},
+"henry-ellenbogen": {
+  name: "Henry Ellenbogen",
+  firm: "Durable Capital Partners",
+  firmSlug: "durable-capital-partners",
+  title: "Founder, Managing Partner & Chief Investment Officer",
+  joinedYear: 2019,
+  education: [
+    "BA, History, Harvard University",
+    "JD, Harvard Law School",
+    "MBA, Harvard Business School (Baker Scholar)"
+  ],
+  previousExperience: [
+    "Portfolio Manager, T. Rowe Price",
+    "Analyst, Goldman Sachs"
+  ],
+  firmHistory: [],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Works as an analyst at Goldman Sachs." },
+    { year: null, event: "Joins T. Rowe Price, spending 18 years there as a portfolio manager." },
+    { year: 2019, event: "Founds Durable Capital Partners." }
+  ],
+  biography: "Henry Ellenbogen founded Durable Capital Partners in 2019 after 18 years as a portfolio manager at T. Rowe Price, preceded by an analyst role at Goldman Sachs. He holds a BA in History from Harvard, along with a JD from Harvard Law School and an MBA from Harvard Business School, where he was a Baker Scholar. Durable backs long-term growth businesses across both public and private markets.",
+  sources: []
+},
+"alex-sacerdote": {
+  name: "Alex Sacerdote",
+  firm: "Whale Rock Capital Management",
+  firmSlug: "whale-rock-capital-management",
+  title: "Founder, CEO & Portfolio Manager",
+  joinedYear: 2006,
+  education: [
+    "BA, Hamilton College",
+    "MBA, Harvard Business School"
+  ],
+  previousExperience: [
+    "Portfolio Manager, Fidelity Investments"
+  ],
+  firmHistory: [],
+  boardSeats: ["Hamilton College"],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Works as a portfolio manager at Fidelity, focusing on technology and media investments." },
+    { year: 2006, event: "Founds Whale Rock Capital Management in Boston." }
+  ],
+  biography: "Alex Sacerdote founded Whale Rock Capital Management in 2006 and serves as its CEO and Chief Investment Officer. A Hamilton College graduate with an MBA from Harvard, he was previously a portfolio manager at Fidelity focused on technology and media. At Whale Rock he runs a concentrated growth strategy built around long-duration technology trends. He serves on the board of his alma mater, Hamilton College.",
+  sources: []
+},
+"andreas-halvorsen": {
+  name: "Andreas Halvorsen",
+  firm: "Viking Global Investors",
+  firmSlug: "viking-global-investors",
+  title: "Co-Founder & CEO",
+  joinedYear: 1999,
+  education: [
+    "BA, Williams College",
+    "MBA, Stanford Graduate School of Business"
+  ],
+  previousExperience: [
+    "Healthcare analyst, Morgan Stanley",
+    "Tiger Management (early employee)"
+  ],
+  firmHistory: [
+    { firmSlug: "tiger-global", role: "Early employee, Tiger Management", startYear: null, endYear: null }
+  ],
+  boardSeats: [],
+  ipoCount: null,
+  majorExits: null,
+  careerTimeline: [
+    { year: null, event: "Works as a healthcare analyst at Morgan Stanley." },
+    { year: null, event: "Joins Tiger Management as one of its first employees." },
+    { year: 1999, event: "Co-founds Viking Global Investors." }
+  ],
+  biography: "Andreas Halvorsen co-founded Viking Global Investors in 1999 and serves as its CEO. A Williams College graduate with an MBA from Stanford, he began as a healthcare analyst at Morgan Stanley before becoming one of the first employees at Tiger Management. He has since built Viking into one of the largest hedge funds in the world, investing long and short across technology, healthcare, and consumer sectors.",
+  sources: []
+}
 
 // ============ PLAYGROUND GLOBAL ============
 "peter-barrett": {
