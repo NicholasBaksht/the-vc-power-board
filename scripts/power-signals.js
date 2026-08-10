@@ -445,6 +445,7 @@ function signalMagnitude(signal) {
   if (signal.type === 'momentum') return signal.recent + signal.prior;
   if (signal.type === 'partner_momentum') return signal.joins.length + signal.departures.length;
   if (signal.type === 'network_expansion') return signal.events.length;
+  if (signal.type === 'portfolio_momentum') return signal.datedHoldings.length;
   return 0;
 }
 function signalMostRecentYear(signal) {
@@ -454,9 +455,9 @@ function signalMostRecentYear(signal) {
     return years.length ? Math.max(...years) : 0;
   }
   if (signal.type === 'network_expansion') return signal.events.length ? Math.max(...signal.events.map(e => e.year)) : 0;
+  if (signal.type === 'portfolio_momentum') return signal.datedHoldings[0].year;
   return 0;
 }
-
 function renderMarketSignalResults() {
   const all = window.marketAllFirmSignals || [];
 
