@@ -19,14 +19,15 @@
 const SIGNAL_TYPE_LABELS = {
   momentum: 'Momentum',
   partner_momentum: 'Partner Momentum',
-  network_expansion: 'Network Expansion'
+  network_expansion: 'Network Expansion',
+  portfolio_momentum: 'Portfolio Momentum'
 };
 const SIGNAL_TYPE_ICONS = {
   momentum: '📈',
   partner_momentum: '👥',
-  network_expansion: '🔗'
+  network_expansion: '🔗',
+  portfolio_momentum: '🚀'
 };
-
 // Minimum real event counts required before a signal is shown at
 // each strength tier. Below the "emerging" floor, nothing is shown
 // at all - a firm with 1 dated event doesn't get a "signal."
