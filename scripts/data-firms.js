@@ -1487,7 +1487,9 @@ const firms = [
     ],
     holdings: [
       { name: "Snap", ticker: "SNAP", historicalPrice: null, price: 4.53 },
+      { name: "Snap", ticker: "SNAP", investedYear: 2012, historicalPrice: null, price: 4.53 },
       { name: "Affirm", ticker: "AFRM", historicalPrice: null, price: 64.71 }
+      { name: "Affirm", ticker: "AFRM", investedYear: 2013, historicalPrice: null, price: 64.71 }
     ]
   },
   {
@@ -1517,8 +1519,10 @@ const firms = [
     ],
     holdings: [
       { name: "Amazon", ticker: "AMZN", historicalPrice: null, price: 247.55 },
+      { name: "Amazon", ticker: "AMZN", investedYear: 1996, historicalPrice: null, price: 247.55 },
       { name: "Palo Alto Networks", ticker: "PANW", historicalPrice: null, price: 341.59 },
       { name: "Snap", ticker: "SNAP", historicalPrice: null, price: 4.53 }
+      { name: "Snap", ticker: "SNAP", investedYear: 2014, historicalPrice: null, price: 4.53 }
     ]
   },
  {
@@ -1545,8 +1549,11 @@ const firms = [
     ],
     holdings: [
       { name: "Coinbase", ticker: "COIN", historicalPrice: 257.21, price: 161.00 },
+      { name: "Coinbase", ticker: "COIN", investedYear: 2013, historicalPrice: 257.21, price: 161.00 },
       { name: "Nubank", ticker: "NU", historicalPrice: null, price: null },
+      { name: "Nubank", ticker: "NU", investedYear: 2016, historicalPrice: null, price: null },
       { name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: 99.96 },
+      { name: "Robinhood", ticker: "HOOD", investedYear: 2014, historicalPrice: null, price: 99.96 },
       { name: "Affirm", ticker: "AFRM", historicalPrice: null, price: 64.71 },
       { name: "SoFi", ticker: "SOFI", historicalPrice: null, price: null }
     ]
@@ -1575,7 +1582,9 @@ const firms = [
     ],
     holdings: [
       { name: "Meta Platforms", ticker: "META", historicalPrice: null, price: 646.01 },
+      { name: "Meta Platforms", ticker: "META", investedYear: 2005, historicalPrice: null, price: 646.01 },
       { name: "Etsy", ticker: "ETSY", historicalPrice: null, price: 84.10 }
+      { name: "Etsy", ticker: "ETSY", investedYear: 2008, historicalPrice: null, price: 84.10 }
     ]
   },
    {
@@ -1631,6 +1640,7 @@ const firms = [
     holdings: [
       { name: "Spotify", ticker: "SPOT", historicalPrice: null, price: null },
       { name: "LendingClub", ticker: "LC", historicalPrice: null, price: null }
+       { name: "LendingClub", ticker: "LC", investedYear: 2007, historicalPrice: null, price: null }
     ]
   },
   {
@@ -1656,7 +1666,9 @@ const firms = [
     ],
     holdings: [
       { name: "Block", ticker: "XYZ", historicalPrice: null, price: 79.94 },
-      { name: "Instacart", ticker: "CART", historicalPrice: null, price: 45.82 }
+{ name: "Block", ticker: "XYZ", investedYear: 2009, historicalPrice: null, price: 79.94 },
+{ name: "Instacart", ticker: "CART", historicalPrice: null, price: 45.82 }
+{ name: "Instacart", ticker: "CART", investedYear: 2012, historicalPrice: null, price: 45.82 }
     ]
   },
   {
@@ -1684,9 +1696,12 @@ const firms = [
       { year: "2020s", event: "Continues investing across venture, growth equity, and buyouts from its 15th flagship fund, capitalized at $3.25 billion." }
     ],
     holdings: [
-      { name: "Wayfair", ticker: "W", historicalPrice: null, price: null },
-      { name: "Nutanix", ticker: "NTNX", historicalPrice: null, price: null },
-      { name: "Guidewire", ticker: "GWRE", historicalPrice: null, price: null }
+     { name: "Wayfair", ticker: "W", historicalPrice: null, price: null },
+ { name: "Wayfair", ticker: "W", investedYear: 2011, historicalPrice: null, price: null },
+{ name: "Nutanix", ticker: "NTNX", historicalPrice: null, price: null },
+{ name: "Nutanix", ticker: "NTNX", investedYear: 2012, historicalPrice: null, price: null },
+{ name: "Guidewire", ticker: "GWRE", historicalPrice: null, price: null }
+ { name: "Guidewire", ticker: "GWRE", investedYear: 2007, historicalPrice: null, price: null }
     ]
   },
    {
