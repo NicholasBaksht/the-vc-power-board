@@ -82,13 +82,13 @@
   }
 
   /* ---------- SITE NAV ---------- */
-  .site-nav {
+.site-nav {
     position: sticky;
     top: 0;
     z-index: 300;
     display: flex;
+    flex-wrap: wrap;
     gap: 4px;
-    overflow-x: auto;
     background: var(--bg);
     border-bottom: 1px solid var(--hairline);
     padding: 0 24px;
