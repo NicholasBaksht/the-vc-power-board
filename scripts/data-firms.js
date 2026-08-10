@@ -1205,10 +1205,15 @@ const firms = [
     ],
     holdings: [
       { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: 147.00 },
+      { name: "Airbnb", ticker: "ABNB", investedYear: 2011, historicalPrice: null, price: 147.00 },
       { name: "Coinbase", ticker: "COIN", historicalPrice: 257.21, price: 161.00 },
+      { name: "Coinbase", ticker: "COIN", investedYear: 2013, historicalPrice: 257.21, price: 161.00 },
       { name: "Roblox", ticker: "RBLX", historicalPrice: null, price: 51.68 },
+      { name: "Roblox", ticker: "RBLX", investedYear: 2020, historicalPrice: null, price: 51.68 },
       { name: "Lyft", ticker: "LYFT", historicalPrice: null, price: 15.67 },
+      { name: "Lyft", ticker: "LYFT", investedYear: 2013, historicalPrice: null, price: 15.67 },
       { name: "Pinterest", ticker: "PINS", historicalPrice: null, price: 23.20 }
+      { name: "Pinterest", ticker: "PINS", investedYear: 2011, historicalPrice: null, price: 23.20 }
     ]
   },
   {
