@@ -458,19 +458,18 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 14px;
   }
-  .similar-firm-card {
+ .similar-firm-card {
     display: block;
     background: var(--surface);
     border: 1px solid var(--hairline);
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 16px 18px;
     text-decoration: none;
     cursor: pointer;
-    transition: border-color 0.2s ease, transform 0.2s ease;
+    transition: border-color 0.15s ease;
   }
   .similar-firm-card:hover {
     border-color: var(--gold);
-    transform: translateY(-2px);
   }
   .similar-firm-name {
     font-family: var(--sans);
