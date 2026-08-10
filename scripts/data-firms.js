@@ -33,6 +33,159 @@ const firms = [
   },
   {
   rank: null,
+  name: "Elad Gil",
+  sectors: ["AI", "Fintech", "SaaS", "Marketplaces"],
+  signatureExit: "Airbnb's 2020 IPO — one of dozens of pre-IPO checks across a track record including Coinbase, Instacart, Pinterest, and Roblox",
+  slug: "elad-gil",
+  website: null,
+  short: "Elad Gil",
+  founded: 2012,
+  hq: "San Francisco, CA",
+  aum: "$2B+ personal fund (2026, per CB Insights)",
+  thesis: "Elad Gil is an independent solo General Partner backing pre-IPO technology companies across marketplaces, fintech, SaaS, and AI. A former Google product manager and co-founder of Mixer Labs (acquired by Twitter) and Color Genomics, Gil became a full-time angel investor around 2012 after leaving Twitter, building one of the most consistently successful individual track records in the industry.",
+  leadership: [
+    { name: "Elad Gil", role: "Solo General Partner", profileSlug: "elad-gil" }
+  ],
+  timeline: [
+    { year: "2009", event: "Twitter acquires Mixer Labs, the location-based service Gil co-founded." },
+    { year: "2012", event: "Gil transitions to full-time independent angel investing after leaving Twitter." },
+    { year: "2020", event: "Airbnb, one of Gil's early pre-IPO investments, goes public." }
+  ],
+  holdings: [
+    { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: null },
+    { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null },
+    { name: "Instacart", ticker: "CART", historicalPrice: null, price: null },
+    { name: "Block", ticker: "XYZ", historicalPrice: null, price: null },
+    { name: "Pinterest", ticker: "PINS", historicalPrice: null, price: null },
+    { name: "Roblox", ticker: "RBLX", historicalPrice: null, price: null }
+  ]
+},
+{
+  rank: null,
+  name: "Not Boring Capital",
+  sectors: ["Fintech", "AI"],
+  signatureExit: "No public exit documented — Not Boring Capital's first investments were fintech and AI startups",
+  slug: "not-boring-capital",
+  website: null,
+  short: "Not Boring Capital",
+  founded: 2021,
+  hq: "New York, NY",
+  aum: "$8M (initial fund, 2021)",
+  thesis: "Not Boring Capital, run by writer-investor Packy McCormick, backs early-stage startups with 'stories to tell,' often in fintech and deep tech, and pairs its investing with the widely-read Not Boring newsletter and media studio.",
+  leadership: [
+    { name: "Packy McCormick", role: "Founder & General Partner", profileSlug: "packy-mccormick" }
+  ],
+  timeline: [
+    { year: "2021", event: "Packy McCormick launches Not Boring Capital alongside the Not Boring newsletter." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "South Park Commons",
+  sectors: ["Enterprise Software", "Consumer Internet"],
+  signatureExit: "No public exit documented — South Park Commons backs founders at the idea stage, before a company typically exists",
+  slug: "south-park-commons",
+  website: null,
+  short: "South Park Commons",
+  founded: 2016,
+  hq: "San Francisco, CA",
+  aum: "Not publicly disclosed",
+  thesis: "South Park Commons began as a community and lab space for engineers and entrepreneurs before adding a venture fund around 2018, investing in founders at what it calls '-1 to 0' — the idea stage, before a company has fully formed. Co-founder Ruchi Sanghvi was Facebook's first female engineer and later a VP at Dropbox.",
+  leadership: [
+    { name: "Ruchi Sanghvi", role: "Co-Founder & CEO", profileSlug: "ruchi-sanghvi" }
+  ],
+  timeline: [
+    { year: "2016", event: "Ruchi Sanghvi co-founds South Park Commons as a community space." },
+    { year: "2018", event: "South Park Commons launches its venture fund." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Contrary Capital",
+  sectors: ["Enterprise Software", "Consumer Internet"],
+  signatureExit: "No public exit documented — Contrary backs university-founded startups sourced through its network of campus chapters",
+  slug: "contrary-capital",
+  website: null,
+  short: "Contrary Capital",
+  founded: 2014,
+  hq: "San Francisco, CA",
+  aum: "Not publicly disclosed",
+  thesis: "Contrary Capital began as a student-run fund and built a network of on-campus partners to identify talent early, backing university-founded startups across the US, Latin America, and Asia. Founder Eric Tarczynski started the firm while a student at Northeastern.",
+  leadership: [
+    { name: "Eric Tarczynski", role: "Co-Founder & CEO", profileSlug: "eric-tarczynski" }
+  ],
+  timeline: [
+    { year: "2014", event: "Eric Tarczynski co-founds Contrary Capital while a student at Northeastern." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Konvoy Ventures",
+  sectors: ["Gaming"],
+  signatureExit: "No public exit documented — Konvoy backs startups building new gaming platforms and interactive-entertainment technology",
+  slug: "konvoy-ventures",
+  website: null,
+  short: "Konvoy",
+  founded: 2018,
+  hq: "Denver, CO",
+  aum: "$270M (Fund I)",
+  thesis: "Konvoy invests at the intersection of gaming, culture, and technology, betting on the future of interactive entertainment through fintech-for-games tools, live-ops infrastructure, and new platforms. Founders Jackson Vaughan and Josh Chapman are both former gaming industry executives.",
+  leadership: [
+    { name: "Jackson Vaughan", role: "Co-Founder & General Partner" },
+    { name: "Josh Chapman", role: "Co-Founder & Managing Partner" }
+  ],
+  timeline: [
+    { year: "2018", event: "Konvoy Ventures founded by Jackson Vaughan and Josh Chapman." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Makers Fund",
+  sectors: ["Gaming"],
+  signatureExit: "No public exit documented — Makers Fund backs game studios and consumer entertainment platforms globally",
+  slug: "makers-fund",
+  website: null,
+  short: "Makers Fund",
+  founded: 2018,
+  hq: "San Francisco, CA",
+  aum: "$200M (Fund I)",
+  thesis: "Makers Fund is a global early-stage fund backing video game studios and consumer entertainment platforms across the value chain of gaming and XR, with an international presence spanning San Francisco, Seoul, and Beijing.",
+  leadership: [
+    { name: "Jay Chi", role: "CEO & Co-Founder" },
+    { name: "Michael Cheung", role: "Co-Founder" }
+  ],
+  timeline: [
+    { year: "2018", event: "Jay Chi and Michael Cheung found Makers Fund and raise its $200M debut fund." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "BITKRAFT Ventures",
+  sectors: ["Gaming", "Crypto"],
+  signatureExit: "No public exit documented — BITKRAFT invests across games, esports, and immersive media at all stages",
+  slug: "bitkraft-ventures",
+  website: null,
+  short: "BITKRAFT",
+  founded: 2018,
+  hq: "Berlin, Germany",
+  aum: "$1.05B+ (across funds)",
+  thesis: "BITKRAFT invests at all stages, from early seed through growth, across games, esports, immersive media, and Web3-for-entertainment. Founder Jens Hilgers previously founded ESL Gaming, one of the largest esports organizations in the world.",
+  leadership: [
+    { name: "Jens Hilgers", role: "Co-Founder & General Partner" },
+    { name: "Scott Rupp", role: "Co-Founder & General Partner" }
+  ],
+  timeline: [
+    { year: "2018", event: "Jens Hilgers and Scott Rupp found BITKRAFT Ventures." }
+  ],
+  holdings: []
+}
+  {
+  rank: null,
   name: "Polychain Capital",
   sectors: ["Crypto", "DeFi"],
   signatureExit: "No public equity exit — Polychain was an early investor in Coinbase (NASDAQ: COIN) ahead of its 2021 direct listing",
