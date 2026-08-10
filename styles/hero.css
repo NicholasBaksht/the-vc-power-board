@@ -1,0 +1,284 @@
+/* ============================================================
+   HEADER + HERO
+   ------------------------------------------------------------
+   The redesigned top of the homepage: brand bar, flat nav,
+   headline block, and the orbit graphic.
+
+   Deliberately no glow. The reference mockup put a colored
+   box-shadow under the primary CTA and a radial wash behind the
+   hero; both are omitted. Emphasis comes from weight, scale and
+   contrast instead — which is also what keeps this reading as a
+   terminal rather than a SaaS landing page.
+
+   Consumes tokens from main.css only.
+   ============================================================ */
+
+/* ---------- HEADER ---------- */
+.pb-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--hairline);
+}
+
+.pb-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+.pb-brand .site-logo { width: 34px; height: 34px; }
+
+.pb-wordmark {
+    font-family: var(--sans);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    white-space: nowrap;
+}
+
+.pb-nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0 auto;
+}
+.pb-nav .nav-link {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-dim);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+.pb-nav .nav-link:hover { color: var(--ink); background: var(--surface); }
+.pb-nav .nav-link.active { color: var(--ink); background: var(--surface-raised); }
+
+.pb-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+.pb-signin {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-dim);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+.pb-signin:hover { color: var(--ink); }
+
+.pb-cta {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    padding: 9px 18px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+.pb-cta:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
+
+/* ---------- HERO ---------- */
+.pb-hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 72px 24px 0;
+    text-align: center;
+}
+
+.pb-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--ink-dim);
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    padding: 7px 16px;
+    margin-bottom: 28px;
+}
+.pb-badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+}
+.pb-badge strong { color: var(--ink); font-weight: 500; }
+
+.pb-hero-title {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: clamp(38px, 6.4vw, 72px);
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    margin: 0 0 22px;
+}
+.pb-hero-title .accent { color: var(--accent-bright); }
+
+.pb-hero-sub {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--ink-dim);
+    max-width: 580px;
+    margin: 0 auto 32px;
+}
+
+.pb-hero-ctas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.pb-btn {
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 14px 26px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.pb-btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #FFFFFF;
+}
+.pb-btn-primary:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
+
+.pb-btn-ghost {
+    background: var(--surface);
+    border-color: var(--hairline);
+    color: var(--ink);
+}
+.pb-btn-ghost:hover { border-color: var(--accent); background: var(--surface-raised); }
+
+/* ---------- ORBIT ----------
+   Real holdings with confirmed investment dates, arranged on an
+   arc by year. Not decoration: every ticker and year below is a
+   sourced entry in data-firms.js. */
+.pb-orbit {
+    position: relative;
+    max-width: 900px;
+    height: 300px;
+    margin: 56px auto 0;
+    overflow: hidden;
+}
+.pb-orbit-rings {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 600px;
+    pointer-events: none;
+}
+.pb-orbit-rings circle {
+    fill: none;
+    stroke: var(--hairline);
+    stroke-width: 1;
+}
+
+.pb-chip {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-dim);
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    padding: 6px 13px;
+    white-space: nowrap;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+.pb-chip:hover { border-color: var(--accent); background: var(--surface-raised); }
+.pb-chip-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+}
+.pb-chip-ticker { color: var(--ink); font-weight: 500; }
+.pb-chip.is-lead {
+    background: var(--surface-raised);
+    border-color: var(--accent);
+}
+.pb-chip.is-lead .pb-chip-dot { background: var(--accent-bright); }
+
+.pb-orbit-caption {
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* ---------- RESPONSIVE ----------
+   The nav drops to its own full-width row rather than being
+   hidden. There is no hamburger menu on this site, so a
+   display:none here would make every route — and the whole
+   account feature — unreachable on a phone. */
+@media (max-width: 960px) {
+    .pb-header {
+        flex-wrap: wrap;
+        gap: 12px 16px;
+        justify-content: space-between;
+    }
+    .pb-nav {
+        order: 3;
+        width: 100%;
+        margin: 0;
+        gap: 2px;
+        justify-content: flex-start;
+        /* Safe here only because the dropdown menus are gone; an
+           overflow value other than visible clips absolutely
+           positioned children, which is what broke the old nav. */
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .pb-nav .nav-link { padding: 8px 11px; }
+}
+@media (max-width: 640px) {
+    .pb-header { padding: 12px 16px; }
+    .pb-wordmark { font-size: 16px; }
+    .pb-cta { padding: 8px 14px; font-size: 13px; }
+    .pb-hero { padding-top: 48px; }
+    .pb-btn { width: 100%; text-align: center; }
+    .pb-hero-ctas { flex-direction: column; }
+    .pb-orbit { height: 210px; }
+    .pb-orbit-rings { width: 620px; height: 420px; }
+    .pb-chip { font-size: 11px; padding: 5px 10px; }
+}
