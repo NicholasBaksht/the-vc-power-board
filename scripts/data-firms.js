@@ -60,6 +60,150 @@ const firms = [
     { name: "Roblox", ticker: "RBLX", historicalPrice: null, price: null }
   ]
 },
+  {
+  rank: null,
+  name: "RA Capital Management",
+  sectors: ["Healthcare"],
+  signatureExit: "No single defined public exit documented — RA Capital invests across biotech, pharma, diagnostics, and digital health",
+  slug: "ra-capital-management",
+  website: null,
+  short: "RA Capital",
+  founded: 2004,
+  hq: "Boston, MA",
+  aum: "$14.4B (2025)",
+  thesis: "RA Capital backs companies turning groundbreaking science into transformative medicines and technologies, investing across biotech R&D, therapeutics, and diagnostics through both hedge and venture funds. Founder Christoph Westphal previously served as CEO of Millennium Pharmaceuticals.",
+  leadership: [
+    { name: "Christoph Westphal", role: "Co-Founder & CEO", profileSlug: "christoph-westphal" }
+  ],
+  timeline: [
+    { year: "2004", event: "Christoph Westphal co-founds RA Capital Management." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Deerfield Management",
+  sectors: ["Healthcare"],
+  signatureExit: "No single defined public exit documented — Deerfield backs biotech R&D and healthcare businesses across hedge, private equity, and venture strategies",
+  slug: "deerfield-management",
+  website: null,
+  short: "Deerfield",
+  founded: 1994,
+  hq: "New York, NY",
+  aum: "$15B (2023)",
+  thesis: "Deerfield specializes in pharmaceutical, biotech, and healthcare-services investing, backing life-sciences R&D and healthcare businesses globally. CEO James Flynn joined in 2000 and has since expanded the firm's life-sciences funds; founder Arnold Snider remains Chairman. Note: Deerfield's own materials describe it as spanning hedge, private-equity, and venture strategies — worth the same PE-crossover review already flagged for Hillhouse, GGV, and HongShan.",
+  leadership: [
+    { name: "James Flynn", role: "CEO" },
+    { name: "Arnold Snider", role: "Chairman & Founder" }
+  ],
+  timeline: [
+    { year: "1994", event: "Deerfield Management founded." },
+    { year: "2000", event: "James Flynn joins the firm, later becoming CEO." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Foresite Capital",
+  sectors: ["Healthcare"],
+  signatureExit: "No single defined public exit documented — Foresite invests across biotech and life-sciences platform technologies",
+  slug: "foresite-capital",
+  website: null,
+  short: "Foresite Capital",
+  founded: 2011,
+  hq: "San Francisco, CA",
+  aum: "$900M (Fund VI, 2024)",
+  thesis: "Foresite Capital invests across all stages in biotechnology and life sciences, with an emphasis on platform technologies and transformative biopharma. Founder and CEO Jim Tananbaum previously led BioOptions.",
+  leadership: [
+    { name: "Jim Tananbaum", role: "Founder & CEO", profileSlug: "jim-tananbaum" }
+  ],
+  timeline: [
+    { year: "2011", event: "Jim Tananbaum founds Foresite Capital." },
+    { year: "2024", event: "Foresite closes Fund VI at approximately $900 million." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Polaris Partners",
+  sectors: ["Healthcare", "Enterprise Software"],
+  signatureExit: "Alnylam Pharmaceuticals' 2004 IPO (NASDAQ: ALNY) — an early Polaris healthcare investment",
+  slug: "polaris-partners",
+  website: null,
+  short: "Polaris Partners",
+  founded: 1996,
+  hq: "Boston, MA",
+  aum: "$19B invested cumulatively across funds (not a current single fund figure)",
+  thesis: "Polaris invests across healthtech, life sciences, and B2B software, with a long history of backing biotech companies through to IPO — including Alnylam Pharmaceuticals, which went public in 2004. The firm supports entrepreneurs from seed through growth stage.",
+  leadership: [
+    { name: "Amy Schulman", role: "General Partner" },
+    { name: "Brian Chee", role: "General Partner" }
+  ],
+  timeline: [
+    { year: "1996", event: "Polaris Partners founded." },
+    { year: "2004", event: "Alnylam Pharmaceuticals, an early Polaris healthcare investment, goes public." }
+  ],
+  holdings: [
+    { name: "Alnylam Pharmaceuticals", ticker: "ALNY", historicalPrice: null, price: null }
+  ]
+},
+{
+  rank: null,
+  name: "Adobe Ventures",
+  sectors: ["AI", "Enterprise Software"],
+  signatureExit: "No single defined public exit documented — Adobe Ventures backs startups aligned with Adobe's creative, marketing, and AI strategy",
+  slug: "adobe-ventures",
+  website: null,
+  short: "Adobe Ventures",
+  founded: 1994,
+  hq: "San Jose, CA",
+  aum: "Not publicly disclosed (corporate fund, backed directly by Adobe's balance sheet)",
+  thesis: "Adobe Ventures is Adobe's corporate venture arm, backing founders shaping the future of creativity, marketing, and AI. It invests in startups that integrate with or extend Adobe's Creative Cloud and Experience Cloud offerings.",
+  leadership: [],
+  timeline: [
+    { year: "1994", event: "Adobe Ventures founded as Adobe's corporate venture capital arm." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "ServiceNow Ventures",
+  sectors: ["Enterprise Software", "AI"],
+  signatureExit: "No single defined public exit documented — ServiceNow Ventures backs early-stage companies extending the Now Platform",
+  slug: "servicenow-ventures",
+  website: null,
+  short: "ServiceNow Ventures",
+  founded: 2015,
+  hq: "Santa Clara, CA",
+  aum: "$300M deployed toward a $1B target by 2026",
+  thesis: "ServiceNow Ventures invests in early-stage companies that extend the Now Platform across enterprise cloud, AI, and workflow automation, describing its portfolio as 'mission-driven innovators' in enterprise software.",
+  leadership: [],
+  timeline: [
+    { year: "2015", event: "ServiceNow Ventures launched as ServiceNow's corporate venture fund." }
+  ],
+  holdings: []
+},
+{
+  rank: null,
+  name: "Workday Ventures",
+  sectors: ["Enterprise Software", "AI"],
+  signatureExit: "No single defined public exit documented — Workday Ventures backs emerging enterprise software companies in AI, data, and infrastructure",
+  slug: "workday-ventures",
+  website: null,
+  short: "Workday Ventures",
+  founded: 2018,
+  hq: "Pleasanton, CA",
+  aum: "$500M fund",
+  thesis: "Workday Ventures backs emerging enterprise software companies across AI, data, and infrastructure that Workday sees as shaping the future of work, leveraging Workday's own AI platform and customer ecosystem.",
+  leadership: [
+    { name: "Michael Magaro", role: "SVP, Workday" },
+    { name: "Barbry McGann", role: "SVP, Workday" }
+  ],
+  timeline: [
+    { year: "2018", event: "Workday Ventures launches with a $500 million fund." }
+  ],
+  holdings: []
+}
 {
   rank: null,
   name: "Not Boring Capital",
