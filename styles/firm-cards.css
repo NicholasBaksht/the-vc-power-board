@@ -245,8 +245,8 @@ background: rgba(47,111,237,0.08);
     border-color: var(--gold);
     color: var(--ink);
   }
-  .shortlist-btn.saved {
-    background: rgba(201,162,39,0.12);
+.shortlist-btn.saved {
+    background: rgba(47,111,237,0.12);
     border-color: var(--gold);
     color: var(--gold-bright);
   }
