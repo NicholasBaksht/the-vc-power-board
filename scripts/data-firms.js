@@ -105,7 +105,14 @@ const firms = [
   founded: 2015,
   hq: "Mahwah, NJ",
   aum: "$100M (Fund III, closed 2022)",
-  thesis: "CRE Venture Capital partners with African entrepreneurs building category-defining technology companies in fintech, e-commerce, education, and
+ thesis: "CRE Venture Capital partners with African entrepreneurs building category-defining technology companies in fintech, e-commerce, education, and digital infrastructure, connecting them to global markets through offices in the U.S., Kenya, and Nigeria.",
+  leadership: [],
+  timeline: [
+    { year: "2015", event: "CRE Venture Capital founded." },
+    { year: "2022", event: "CRE VC closes its $100 million Fund III." }
+  ],
+  holdings: []
+},
 {
   rank: null,
   name: "Creandum",
