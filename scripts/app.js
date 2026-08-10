@@ -229,9 +229,13 @@ document.getElementById('intelligenceFeedView').style.display = 'none';
     document.getElementById('partnerView').style.display = 'block';
     renderPartnerProfile(partnerMatch[1]);
     window.scrollTo(0, 0);
-  } else if (firm) {
+} else if (firm) {
     document.getElementById('detailView').style.display = 'block';
     renderDetail(firm);
+    window.scrollTo(0, 0);
+} else if (slug === 'rankings') {
+    document.getElementById('listView').style.display = 'block';
+    renderFirms();
     window.scrollTo(0, 0);
 } else {
     document.getElementById('listView').style.display = 'block';
