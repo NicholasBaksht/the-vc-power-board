@@ -26,19 +26,15 @@
   position: relative;
   background: var(--surface);
   border: 1px solid var(--hairline);
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 22px 22px 20px;
   text-decoration: none;
   color: inherit;
-  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: border-color 0.15s ease, background 0.15s ease;
 }
 .feature-card:hover {
-  transform: translateY(-3px);
   border-color: var(--gold);
-  box-shadow: 0 8px 24px -8px rgba(47, 111, 237, 0.35);
-}
-.feature-card:active {
-  transform: translateY(-1px);
+  background: var(--surface-raised);
 }
 .feature-card-title {
   font-family: var(--serif);
