@@ -197,7 +197,26 @@ document.getElementById('intelligenceFeedView').style.display = 'none';
 document.getElementById('powerSignalsView').style.display = 'none';
   document.getElementById('historicalSnapshotView').style.display = 'none';
   document.getElementById('newsView').style.display = 'none';
- if (slug === 'historical-snapshot' || slug.startsWith('historical-snapshot/')) {
+
+  // Null-guarded on purpose. These two views were added after the
+  // original router was written; an unguarded getElementById on a
+  // div that isn't in index.html yet returns null, throws on
+  // .style, and takes the whole router — and so the whole site —
+  // down with it.
+  const signinViewEl = document.getElementById('signinView');
+  if (signinViewEl) signinViewEl.style.display = 'none';
+  const accountViewEl = document.getElementById('accountView');
+  if (accountViewEl) accountViewEl.style.display = 'none';
+
+ if (slug === 'signin') {
+    if (signinViewEl) signinViewEl.style.display = 'block';
+    if (typeof renderSignIn === 'function') renderSignIn();
+    window.scrollTo(0, 0);
+  } else if (slug === 'account') {
+    if (accountViewEl) accountViewEl.style.display = 'block';
+    if (typeof renderAccount === 'function') renderAccount();
+    window.scrollTo(0, 0);
+  } else if (slug === 'historical-snapshot' || slug.startsWith('historical-snapshot/')) {
     document.getElementById('historicalSnapshotView').style.display = 'block';
     const snapshotDeepLink = slug.match(/^historical-snapshot\/(.+)$/);
     renderHistoricalSnapshot(snapshotDeepLink ? snapshotDeepLink[1] : null);
