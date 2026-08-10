@@ -430,7 +430,7 @@ holdings: []
     { name: "Barbry McGann", role: "SVP, Workday" }
   ],
 timeline: [
-    { year: "2018", event: "Workday Ventures launches with a $500 million fund." }
+  { year: "2018", event: "Workday Ventures launches with a $500 million fund." }
   ],
   holdings: []
 },
