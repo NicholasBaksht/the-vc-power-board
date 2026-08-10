@@ -41,7 +41,7 @@ function renderFirms() {
       <div class="firm-head">
         <div>
       <div class="firm-rank">NO. ${String(firm.rank).padStart(2, '0')} <span class="power-score">· POWER SCORE™ ${computePowerScore(firm)}</span></div>
-          <div class="firm-name"><a href="${firm.website}" target="_blank" rel="noopener noreferrer" class="firm-link">${firm.name} ↗</a></div>
+                          <div class="firm-name">${firm.website ? `<a href="${firm.website}" target="_blank" rel="noopener noreferrer" class="firm-link">${firm.name} ↗</a>` : firm.name}</div>
         <div class="firm-meta">Founded ${firm.founded} · ${firm.hq}</div>
           <div class="firm-personality">${computeInvestmentPersonality(firm).sentence}</div>
         </div>
