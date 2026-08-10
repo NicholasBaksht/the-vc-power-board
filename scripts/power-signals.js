@@ -168,7 +168,8 @@ function computeFirmPowerSignals(firmSlug) {
   return [
     computeMomentumSignal(firmSlug),
     computePartnerMomentumSignal(firmSlug),
-    computeNetworkExpansionSignal(firmSlug)
+    computeNetworkExpansionSignal(firmSlug),
+    computePortfolioMomentumSignal(firmSlug)
   ].filter(Boolean);
 }
 
