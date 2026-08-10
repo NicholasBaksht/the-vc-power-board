@@ -1242,7 +1242,9 @@ const firms = [
     ],
     holdings: [
       { name: "Nvidia", ticker: "NVDA", historicalPrice: 138.1, price: 202.81 },
+      { name: "Nvidia", ticker: "NVDA", investedYear: 1993, historicalPrice: 138.1, price: 202.81 },
       { name: "DoorDash", ticker: "DASH", historicalPrice: 170.65, price: 175.00 }
+      { name: "DoorDash", ticker: "DASH", investedYear: 2014, historicalPrice: 170.65, price: 175.00 }
     ]
   },
   {
