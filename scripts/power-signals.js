@@ -286,7 +286,7 @@ function renderSignalDrilldown(signal, firm) {
     `;
   }
 
-  if (signal.type === 'network_expansion') {
+ if (signal.type === 'network_expansion') {
     const relatedRows = signal.relatedFirmSlugs.map(slug => {
       const f = firms.find(x => x.slug === slug);
       return f ? `<div class="ps-detail-person">↔ <a href="#${f.slug}" class="disc-link">${f.name}</a></div>` : '';
@@ -300,9 +300,18 @@ function renderSignalDrilldown(signal, firm) {
     `;
   }
 
+  if (signal.type === 'portfolio_momentum') {
+    const rows = signal.datedHoldings.map(h => `<div class="ps-detail-person">• ${h.name} — ${h.year}</div>`).join('');
+    return `
+      <div class="ps-detail-row"><strong>Dated holdings on file:</strong></div>
+      ${rows}
+      ${signal.caveat ? `<div class="ps-caveat">${signal.caveat}</div>` : ''}
+      <div class="ps-detail-links">${links.join('')}</div>
+    `;
+  }
+
   return '';
 }
-
 // ---------- Market Signals page ----------
 
 let marketSignalFilters = { types: new Set(), sector: '', geo: '', firmSlug: '', strength: '' };
