@@ -1270,6 +1270,7 @@ const firms = [
     ],
     holdings: [
       { name: "Shopify", ticker: "SHOP", historicalPrice: 107.53, price: 123.56 },
+      { name: "Shopify", ticker: "SHOP", investedYear: 2013, historicalPrice: 107.53, price: 123.56 },
       { name: "DocuSign", ticker: "DOCU", historicalPrice: null, price: 52.74 }
     ]
   },
