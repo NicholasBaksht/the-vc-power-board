@@ -1298,7 +1298,9 @@ const firms = [
     ],
     holdings: [
       { name: "Coinbase", ticker: "COIN", historicalPrice: 257.21, price: 161.00 },
+      { name: "Coinbase", ticker: "COIN", investedYear: 2018, historicalPrice: 257.21, price: 161.00 },
       { name: "JD.com", ticker: "JD", historicalPrice: null, price: 29.62 }
+      { name: "JD.com", ticker: "JD", investedYear: 2011, historicalPrice: null, price: 29.62 }
     ]
   },
   {
