@@ -554,11 +554,11 @@ timeline: [
     { name: "Scott Rupp", role: "Co-Founder & General Partner" }
   ],
   timeline: [
-    { year: "2018", event: "Jens Hilgers and Scott Rupp found BITKRAFT Ventures." }
+{ year: "2018", event: "Jens Hilgers and Scott Rupp found BITKRAFT Ventures." }
   ],
   holdings: []
-}
-  {
+},
+{
   rank: null,
   name: "Polychain Capital",
   sectors: ["Crypto", "DeFi"],
