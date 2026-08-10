@@ -26,9 +26,13 @@ const firms = [
     ],
     holdings: [
       { name: "DoorDash", ticker: "DASH", historicalPrice: 170.65, price: 175.00 },
+       { name: "DoorDash", ticker: "DASH", investedYear: 2018, historicalPrice: 170.65, price: 175.00 },
       { name: "Uber", ticker: "UBER", historicalPrice: null, price: 65.94 },
+      { name: "Uber", ticker: "UBER", investedYear: 2018, historicalPrice: null, price: 65.94 },
       { name: "Coupang", ticker: "CPNG", historicalPrice: null, price: null },
+      { name: "Coupang", ticker: "CPNG", investedYear: 2018, historicalPrice: null, price: null },
       { name: "Arm", ticker: "ARM", historicalPrice: null, price: null }
+      { name: "Arm", ticker: "ARM", investedYear: 2017, historicalPrice: null, price: null }
     ]
   },
   {
