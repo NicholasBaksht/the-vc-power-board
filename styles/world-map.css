@@ -179,7 +179,7 @@
   margin-top: 3px;
 }
 .worldmap-continent {
-  fill: rgba(201,162,39,0.05);
-  stroke: rgba(201,162,39,0.25);
+  fill: rgba(75,130,239,0.05);
+  stroke: rgba(75,130,239,0.25);
   stroke-width: 0.15;
 }
