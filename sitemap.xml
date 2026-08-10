@@ -133,6 +133,10 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/baillie-gifford/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/softbank-vision-fund/</loc>
     <priority>0.6</priority>
   </url>
@@ -157,7 +161,15 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/hongshan-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/tiger-global/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/viking-global-investors/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -185,6 +197,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/d1-capital-partners/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/tcv/</loc>
     <priority>0.6</priority>
   </url>
@@ -209,11 +225,35 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/polaris-partners/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/durable-capital-partners/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/altimeter-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/norwest-venture-partners/</loc>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/deerfield-management/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/greenoaks-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/khosla-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/ra-capital-management/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -297,6 +337,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/whale-rock-capital-management/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/source-code-capital/</loc>
     <priority>0.6</priority>
   </url>
@@ -329,6 +373,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/vertex-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/8vc/</loc>
     <priority>0.6</priority>
   </url>
@@ -350,6 +398,14 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/iconiq-growth/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/polychain-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/pantera-capital/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -449,6 +505,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/electric-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/venrock/</loc>
     <priority>0.6</priority>
   </url>
@@ -486,6 +546,10 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/forerunner-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/hv-capital/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -550,6 +614,14 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/social-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/elad-gil/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/blockchain-capital/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -665,6 +737,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/stv/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/high-tech-grunderfonds/</loc>
     <priority>0.6</priority>
   </url>
@@ -702,6 +778,18 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/bmw-i-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/bitkraft-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/speedinvest/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/servicenow-ventures/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -765,6 +853,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/foresite-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/felicis/</loc>
     <priority>0.6</priority>
   </url>
@@ -822,6 +914,14 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/boxgroup/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/creandum/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/workday-ventures/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -909,11 +1009,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/konvoy-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/cowboy-ventures/</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/novastar-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/golden-gate-ventures/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -926,6 +1034,10 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/norrsken22/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/makers-fund/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1013,6 +1125,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/cre-venture-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/baukunst/</loc>
     <priority>0.6</priority>
   </url>
@@ -1090,6 +1206,42 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/the-fintech-fund/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/not-boring-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/valor-capital-group/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/allvp/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/zhenfund/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/adobe-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/south-park-commons/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/contrary-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/multicoin-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/variant-fund/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1217,6 +1369,10 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/d1-capital-partners-vs-iconiq-capital/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/iconiq-capital-vs-tcv/</loc>
     <priority>0.5</priority>
   </url>
@@ -1241,6 +1397,10 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/a16z-vs-baillie-gifford/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/a16z-vs-sequoia/</loc>
     <priority>0.5</priority>
   </url>
@@ -1261,15 +1421,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-a16z/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/a16z-vs-general-catalyst/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/a16z-vs-dragoneer-investment-group/</loc>
+    <loc>https://thevcpowerboard.com/compare/a16z-vs-elad-gil/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1278,6 +1430,10 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/ribbit-capital-vs-softbank-vision-fund/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-softbank-vision-fund/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1301,19 +1457,15 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-softbank-vision-fund/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-softbank-vision-fund/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-softbank-vision-fund/</loc>
+    <loc>https://thevcpowerboard.com/compare/elad-gil-vs-softbank-vision-fund/</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/hillhouse-investment-group-vs-ribbit-capital/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-hillhouse-investment-group/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1337,15 +1489,11 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-hillhouse-investment-group/</loc>
+    <loc>https://thevcpowerboard.com/compare/elad-gil-vs-hillhouse-investment-group/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-hillhouse-investment-group/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-hillhouse-investment-group/</loc>
+    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-ribbit-capital/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1369,15 +1517,31 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-ribbit-capital/</loc>
+    <loc>https://thevcpowerboard.com/compare/elad-gil-vs-ribbit-capital/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-ribbit-capital/</loc>
+    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-sequoia/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-ribbit-capital/</loc>
+    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-coatue-management/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-idg-capital/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-kleiner-perkins/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-gv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-elad-gil/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1397,15 +1561,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-sequoia/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-sequoia/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-sequoia/</loc>
+    <loc>https://thevcpowerboard.com/compare/elad-gil-vs-sequoia/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1421,15 +1577,19 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-coatue-management/</loc>
+    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-elad-gil/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-general-catalyst/</loc>
+    <loc>https://thevcpowerboard.com/compare/d1-capital-partners-vs-tcv/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/coatue-management-vs-dragoneer-investment-group/</loc>
+    <loc>https://thevcpowerboard.com/compare/d1-capital-partners-vs-general-atlantic/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/d1-capital-partners-vs-tiger-global/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1449,15 +1609,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-idg-capital/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-idg-capital/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-idg-capital/</loc>
+    <loc>https://thevcpowerboard.com/compare/elad-gil-vs-idg-capital/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1465,43 +1617,15 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-kleiner-perkins/</loc>
+    <loc>https://thevcpowerboard.com/compare/elad-gil-vs-kleiner-perkins/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-kleiner-perkins/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-kleiner-perkins/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-gv/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-gv/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-gv/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-general-catalyst/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/8vc-vs-dragoneer-investment-group/</loc>
+    <loc>https://thevcpowerboard.com/compare/elad-gil-vs-gv/</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/general-atlantic-vs-tiger-global/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/dragoneer-investment-group-vs-general-catalyst/</loc>
     <priority>0.5</priority>
   </url>
   <url>
