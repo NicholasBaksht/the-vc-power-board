@@ -2343,9 +2343,12 @@ const firms = [
       { year: "2019", event: "Uber goes public." }
     ],
     holdings: [
-      { name: "Uber", ticker: "UBER", historicalPrice: null, price: 72.46 },
-      { name: "GitLab", ticker: "GTLB", historicalPrice: null, price: null },
-      { name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: 99.96 }
+    { name: "Uber", ticker: "UBER", historicalPrice: null, price: 72.46 },
+ { name: "Uber", ticker: "UBER", investedYear: 2013, historicalPrice: null, price: 72.46 },
+{ name: "GitLab", ticker: "GTLB", historicalPrice: null, price: null },
+ { name: "GitLab", ticker: "GTLB", investedYear: 2017, historicalPrice: null, price: null },
+{ name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: 99.96 }
+ { name: "Robinhood", ticker: "HOOD", investedYear: 2013, historicalPrice: null, price: 99.96 }
     ]
   },
    {
@@ -2402,6 +2405,7 @@ const firms = [
     ],
     holdings: [
       { name: "Joby Aviation", ticker: "JOBY", historicalPrice: 8.09, price: 7.24 }
+      { name: "Joby Aviation", ticker: "JOBY", investedYear: 2018, historicalPrice: 8.09, price: 7.24 }
     ]
   },
   {
