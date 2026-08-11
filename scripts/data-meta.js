@@ -338,7 +338,6 @@ const firmStages = {
   'science-inc': ['Pre-Seed', 'Seed'],
   'soma-capital': ['Seed'],
   'vy-capital': ['Growth', 'Late Stage'],
-  'iconiq-capital': ['Series A', 'Series B', 'Growth'],
   'mfv-partners': ['Seed', 'Series A'],
   'liquid2-ventures': ['Seed', 'Series A'],
   'unusual-ventures': ['Seed'],
