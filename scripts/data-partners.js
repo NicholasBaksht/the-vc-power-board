@@ -603,31 +603,6 @@ const partnerProfiles = {
   biography: "Jim Tananbaum founded Foresite Capital in 2011 and leads the firm as CEO, having previously served as CEO of BioOptions. Foresite invests across all stages in biotechnology and life sciences, with an emphasis on platform technologies and transformative biopharma.",
   sources: []
 },
-  "neil-shen": {
-  name: "Neil Shen",
-  firm: "HongShan Capital",
-  firmSlug: "hongshan-capital",
-  title: "Founder",
-  joinedYear: 2005,
-  education: [],
-  previousExperience: [
-    "Co-founder, Ctrip",
-    "Co-founder, Home Inns"
-  ],
-  firmHistory: [
-    { firmSlug: "sequoia", role: "Founding Partner, Sequoia Capital China", startYear: 2005, endYear: 2024 }
-  ],
-  boardSeats: [],
-  ipoCount: null,
-  majorExits: null,
-  careerTimeline: [
-    { year: null, event: "Co-founds travel company Ctrip and budget hotel chain Home Inns." },
-    { year: 2005, event: "Partners with Sequoia Capital to found Sequoia Capital China." },
-    { year: 2024, event: "The firm completes its separation from Sequoia and rebrands as HongShan." }
-  ],
-  biography: "Neil Shen founded Sequoia Capital China in 2005 in partnership with Sequoia Capital, bringing operator credibility as a serial entrepreneur who co-founded both Ctrip and Home Inns. Following the 2023 announcement of Sequoia's regional split, the firm became fully independent in 2024 and rebranded as HongShan, retaining the portfolio and team built over nearly two decades.",
-  sources: []
-},
   "abdulrahman-tarabzouni": {
   name: "Abdulrahman Tarabzouni",
   firm: "STV",
@@ -5780,33 +5755,6 @@ sources: [
       { label: "Vision Fund Team", url: "https://visionfund.com/team/alex-clavel" }
     ]
   },
-  "jenny-lee": {
-    name: "Jenny Lee",
-    firm: "GGV Capital",
-    firmSlug: "ggv-capital",
-    title: "Senior Managing Partner (now Granite Asia)",
-    joinedYear: 2005,
-    education: ["Cornell University", "Kellogg School of Management"],
-    previousExperience: [
-      "Early career, Morgan Stanley",
-      "Early career, JAFCO Asia"
-    ],
-    investmentFocus: ["Edtech", "Fintech", "Consumer Internet", "APAC Scale Investing"],
-    notableInvestments: [
-      { name: "Grab", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 0,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2005", event: "Establishes GGV's Shanghai office as one of the architects of the firm's Asia strategy." },
-      { year: "2024", event: "Continues to lead the Asia franchise as it rebrands to Granite Asia following the GGV split." }
-    ],
-    biography: "Jenny Lee is the single most important person for understanding GGV Capital's Asia strategy. After early career roles at Morgan Stanley and JAFCO Asia, she joined GGV's senior leadership in 2005 and established its Shanghai office, helping turn a transpacific venture firm into one of the few franchises with durable credibility across Southeast Asia, China, and India. Her record includes Grab and other APAC champions, and she now anchors Granite Asia's post-split identity as the successor to GGV's Asia business.",
-    sources: [
-      { label: "Granite Asia", url: "https://www.graniteasia.com/who-we-are?p=jenny-lee" }
-    ]
-  },
   "rajan-anandan": {
     name: "Rajan Anandan",
     firm: "Peak XV Partners",
@@ -7182,42 +7130,6 @@ sources: [
       { label: "Forbes Asia", url: "https://www.forbes.com/sites/ardianwibisono/2024/12/04/singapore-based-vc-firm-jungle-ventures-is-on-the-prowl-to-tap-new-frontiers/" }
     ]
   },
-  "garheng-kong": {
-    name: "Garheng Kong",
-    firm: "HealthQuest Capital",
-    firmSlug: "healthquest-capital",
-    title: "Founder & Managing Partner",
-    joinedYear: 2012,
-    education: ["BS, Chemical Engineering, Stanford University", "BS, Biological Sciences, Stanford University", "MD, Duke University", "PhD, Duke University", "MBA, Duke University"],
-    previousExperience: [
-      "GlaxoSmithKline",
-      "McKinsey & Company",
-      "TherOx (medical device startup)",
-      "Investor, Intersouth Partners",
-      "Investor, Sofinnova Investments"
-    ],
-    investmentFocus: ["Medical Devices", "Diagnostics", "Digital Health", "Biopharma"],
-    notableInvestments: [
-      { name: "Castle Biosciences", ticker: "CSTL" },
-      { name: "Pulmonx", ticker: "LUNG" },
-      { name: "Amwell", ticker: "AMWL" }
-    ],
-    boardSeats: ["LabCorp (Lead Independent Director)", "Smith & Nephew", "Xeris Biopharma"],
-    ipoCount: 13,
-    majorExits: 40,
-    careerTimeline: [
-      { year: "2000s", event: "Works at GlaxoSmithKline, McKinsey, and medical device startup TherOx, before moving into venture investing at Intersouth Partners and Sofinnova Investments." },
-      { year: "2012", event: "Founds HealthQuest Capital." },
-      { year: "2013", event: "Closes HealthQuest Fund I at $111 million." },
-      { year: "2022", event: "Closes HealthQuest Fund IV, the firm's largest, at $685 million." },
-      { year: "2025", event: "Named GrowthCap's Healthcare Investor of the Year." }
-    ],
-    biography: "Garheng Kong is a physician, scientist, and engineer by training — a rare triple credential earned through a Stanford dual degree on athletic scholarship followed by an MD, PhD, and MBA from Duke, graduating at the top of his class each time. He spent his early career at GlaxoSmithKline, McKinsey, and medical device startup TherOx before moving into healthcare venture investing at Intersouth Partners and Sofinnova, then founded HealthQuest Capital in 2012 to focus specifically on growth-stage, commercial-stage healthcare companies. Over more than two decades investing, he's been part of 40 IPO and M&A exits, including public listings for Castle Biosciences, Pulmonx, Amwell, and Alimera, and currently serves as Lead Independent Director of LabCorp alongside board seats at Smith & Nephew and Xeris Biopharma. He was named GrowthCap's Healthcare Investor of the Year for 2024, presented in March 2025, capping three consecutive years on their Top 25 Healthcare Investors list.",
-    sources: [
-      { label: "HealthQuest Capital — Garheng Kong", url: "https://www.healthquestcapital.com/people/garheng-kong" },
-      { label: "GrowthCap", url: "https://growthcapadvisory.com/top-healthcare-investor-healthquests-garheng-kong/" }
-    ]
-  },
   "gili-raanan": {
     name: "Gili Raanan",
     firm: "Cyberstarts",
@@ -7483,40 +7395,6 @@ sources: [
     sources: [
       { label: "TechCrunch", url: "https://techcrunch.com/2023/11/02/norrsken22s-debut-fund-closes-at-205m-to-back-growth-stage-startups-in-africa/" },
       { label: "Norrsken22", url: "https://www.norrsken22.com" }
-    ]
-  },
-  "shane-shin": {
-    name: "Shane Shin",
-    firm: "Shorooq Partners",
-    firmSlug: "shorooq-partners",
-    title: "Co-Founding Partner",
-    joinedYear: 2016,
-    education: ["BA, The Wharton School, University of Pennsylvania (Summa Cum Laude, Joseph Wharton Scholar, Benjamin Franklin Scholar)"],
-    previousExperience: [
-      "Investment Banker, UBS",
-      "Investment Banker, TD Securities",
-      "Investment Banker, Lazard Frères & Co.",
-      "Private Equity, Alpine Investors (San Francisco)",
-      "GlobalFoundries (Mubadala Investment Company subsidiary)"
-    ],
-    investmentFocus: ["Fintech", "AI Infrastructure", "Applied AI", "Logistics"],
-    notableInvestments: [
-      { name: "Tamara", ticker: null },
-      { name: "TruKKer", ticker: null },
-      { name: "NymCard", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 0,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2017", event: "Leaves Silicon Valley and Mubadala's GlobalFoundries to co-found Shorooq Partners in Abu Dhabi with Mahmoud Adi." },
-      { year: "2017", event: "Leads Shorooq's pre-seed and seed rounds in Pure Harvest, one of the firm's first regional investments." },
-      { year: "2024", event: "Reports the firm meets 4,000-5,000 companies a year and invests in roughly 15." }
-    ],
-    biography: "Shane Shin grew up in South Korea, studied at the Wharton School, and built his early career as an investment banker at UBS, TD Securities, and Lazard Frères before moving into private equity at Alpine Investors and later Mubadala's GlobalFoundries. In 2017, he left Silicon Valley to co-found Shorooq Partners in Abu Dhabi with his close friend Mahmoud Adi, telling colleagues his parents called him 'insane' for leaving an established career to build a venture firm in a region with little existing venture infrastructure. That bet paid off: Shorooq became one of the most active early-stage investors across the Middle East, North Africa, and Pakistan, backing more than 45 companies including Tamara, TruKKer, NymCard, and Pure Harvest, and Shin has described the firm's approach as deliberately hands-on — proactive involvement in portfolio companies rather than passive capital.",
-    sources: [
-      { label: "Entrepreneur Middle East", url: "https://www.entrepreneur.com/en-ae/finance/vc-voices-shane-shin-founding-partner-shorooq/495382" },
-      { label: "Zawya", url: "https://www.zawya.com/en/business/shorooq-partners-in-a-habit-to-back-winning-horses-yfzvh8h0" }
     ]
   },
   "dany-farha": {
@@ -9215,96 +9093,6 @@ sources: [
       { label: "Crunchbase — Dixon Doll", url: "https://www.crunchbase.com/person/dixon-doll" }
     ]
   },
-  "hugo-shong": {
-    name: "Hugo Shong",
-    firm: "IDG Capital",
-    firmSlug: "idg-capital",
-    title: "Founding Chairman",
-    joinedYear: 1993,
-    education: ["BA, Hunan University", "MA, Chinese Academy of Social Sciences", "MS, Boston University College of Communication", "PhD Studies, Fletcher School of Law and Diplomacy"],
-    previousExperience: [
-      "Factory Worker",
-      "Journalist, launched and published 40+ magazines across China and Vietnam (Chinese editions of Cosmopolitan, Harper's Bazaar, National Geographic)"
-    ],
-    investmentFocus: ["Consumer Internet", "AI", "Enterprise Software", "Fintech"],
-    notableInvestments: [
-      { name: "Tencent", ticker: "0700.HK" },
-      { name: "Baidu", ticker: "BIDU" },
-      { name: "Xiaomi", ticker: "1810.HK" }
-    ],
-    boardSeats: [],
-    ipoCount: 15,
-    majorExits: 100,
-    careerTimeline: [
-      { year: "1982", event: "Earns a BA from Hunan University, after working as a factory worker." },
-      { year: "1987", event: "Earns an MS from Boston University's College of Communication, then begins PhD studies at the Fletcher School of Law and Diplomacy." },
-      { year: "1993", event: "Partners with International Data Group founder Patrick McGovern to launch IDG Capital's China operations, the first foreign-backed venture capital firm to enter the country." },
-      { year: "2004", event: "Tencent, an early IDG Capital investment, completes its IPO on the Hong Kong Stock Exchange." },
-      { year: "2017", event: "IDG Capital and China Oceanwide Holdings acquire the firm's own former parent company, International Data Group, and its subsidiaries." }
-    ],
-    biography: "Hugo Shong's path to becoming known as 'the godfather of Chinese venture capital' began as a factory worker, then a journalist who launched more than 40 magazines across China and Vietnam, including Chinese editions of Cosmopolitan and National Geographic. A chance dinner conversation with International Data Group founder Patrick McGovern in the early 1990s led to a legendary pitch — Shong famously argued the size of China's opportunity using a whiteboard comparison to the US population and movie screen count — convincing McGovern to fund what became IDG Capital's China operations in 1993, the first foreign-backed venture capital firm to enter the country. That early, singular access produced a genuinely legendary portfolio: Tencent, Baidu, Xiaomi, Meituan, Pinduoduo, Nio, Ctrip, and SenseTime among more than 1,300 companies backed, with over 100 unicorns and nearly 400 successful exits. In a remarkable turn in 2017, IDG Capital and China Oceanwide Holdings acquired International Data Group itself, the American company that had originally backed Shong's China expansion 24 years earlier.",
-    sources: [
-      { label: "Wikipedia — Hugo Shong", url: "https://en.wikipedia.org/wiki/Hugo_Shong" },
-      { label: "Boston University — Hugo Shong Profile", url: "https://www.bu.edu/articles/2014/hugo-shong-the-producer/" }
-    ]
-  },
-  "richard-li-legend": {
-    name: "Richard Li",
-    firm: "Legend Capital",
-    firmSlug: "legend-capital",
-    title: "President",
-    joinedYear: 2001,
-    education: [],
-    previousExperience: [],
-    investmentFocus: ["Enterprise Software", "Healthcare", "AI", "Consumer"],
-    notableInvestments: [
-      { name: "Meituan", ticker: "3690.HK" },
-      { name: "NIO", ticker: "NIO" },
-      { name: "ZTO Express", ticker: "ZTO" }
-    ],
-    boardSeats: [],
-    ipoCount: 10,
-    majorExits: 70,
-    careerTimeline: [
-      { year: "2001", event: "Legend Capital is founded as the venture capital arm of Legend Holdings, the parent company of Lenovo Group." },
-      { year: "2023", event: "Named to the Forbes China Venture Capital 100 list, ranking in the top four." },
-      { year: "2024", event: "Portfolio companies Aidite and Yonz Technology list on China's ChiNext and Shanghai Stock Exchange respectively; Qunabox Group goes public on the Hong Kong Stock Exchange." }
-    ],
-    biography: "Richard Li serves as President of Legend Capital, the venture capital and private equity arm of Legend Holdings, the parent company of Lenovo Group. Legend Capital's unique heritage — spinning out of the same conglomerate that built Lenovo into a global technology company — gives the firm deep relationships with entrepreneurs, government officials, and co-investors across China's innovation ecosystem, spanning enterprise software, healthcare, semiconductors, and consumer technology. Under Li's leadership as President, the firm has grown into one of China's most established and successful investors, backing more than 600 companies including Meituan, NIO, ZTO Express, and CATL, with more than $10 billion in committed capital across USD and RMB-denominated funds. Li was ranked in the top four on the Forbes China Venture Capital 100 list in 2023.",
-    sources: [
-      { label: "Legend Capital — Team", url: "https://www.legendcapitalco.com/c/we.html" },
-      { label: "Legend Capital LinkedIn", url: "https://www.linkedin.com/company/legend-capital" }
-    ]
-  },
-  "arnold-snider": {
-    name: "Arnold Snider",
-    firm: "Deerfield Management",
-    firmSlug: "deerfield-management",
-    title: "Founder (Retired 2005; d. 2014)",
-    joinedYear: 1994,
-    education: [],
-    previousExperience: [
-      "Pharmaceutical Analyst, Kidder Peabody",
-      "Managing Director, Tiger Management (under Julian Robertson)"
-    ],
-    investmentFocus: ["Healthcare", "Biotechnology", "Pharmaceuticals"],
-    notableInvestments: [],
-    boardSeats: [],
-    ipoCount: 0,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "1980s", event: "Works as a pharmaceutical analyst at Kidder Peabody before becoming a Managing Director at Julian Robertson's Tiger Management." },
-      { year: "1994", event: "Founds Deerfield Management with $17 million in equity, becoming one of the original 'Tiger Cub' funds spun out of Tiger Management." },
-      { year: "2000", event: "James Flynn joins Deerfield, beginning a transition period toward eventual leadership succession." },
-      { year: "2005", event: "Formally retires from Deerfield, handing full leadership to James Flynn." },
-      { year: "2014", event: "Passes away, leaving behind a firm that had grown into one of the largest dedicated healthcare investment platforms in the world." }
-    ],
-    biography: "Arnold Snider built his early career as a pharmaceutical analyst at Kidder Peabody before becoming a Managing Director at Julian Robertson's legendary Tiger Management, giving him both deep sector knowledge in healthcare and rigorous hedge-fund investing discipline. He founded Deerfield Management in 1994 with $17 million in equity, making it one of the original 'Tiger Cub' funds started by former Tiger Management employees, and built it specifically around dedicated healthcare and biotechnology investing at a time few generalist funds concentrated that deeply in one sector. James Flynn joined the firm in 2000, and Snider formally retired in 2005, handing full leadership to Flynn. Snider passed away in 2014, having built the foundation for what has grown into one of the world's largest dedicated healthcare investment firms.",
-    sources: [
-      { label: "Wikipedia — Deerfield Management", url: "https://en.wikipedia.org/wiki/Deerfield_Management" },
-      { label: "Institutional Investor", url: "https://www.institutionalinvestor.com/article/b1d7hrkxb9sfnk/Deerfield-Posts-Another-Double-Digit-Gain-in-2018" }
-    ]
-  },
   "alex-macpherson": {
     name: "Alex Macpherson",
     firm: "Octopus Ventures",
@@ -9597,42 +9385,6 @@ sources: [
     sources: [
       { label: "Draper.vc — Tim Draper", url: "https://www.draper.vc/tim-draper" },
       { label: "Draper.vc — History", url: "https://www.draper.vc/history" }
-    ]
-  },
-  "david-wei": {
-    name: "David Wei",
-    firm: "Vision Knight Capital",
-    firmSlug: "vision-knight-capital",
-    title: "Founding Partner & Chairman",
-    joinedYear: 2011,
-    education: [],
-    previousExperience: [
-      "Corporate Finance Manager, Coopers & Lybrand",
-      "Head of Investment Banking, Orient Securities",
-      "CFO, then CEO, B&Q China (2000-2006, grew it into China's largest home improvement retailer)",
-      "CEO, Alibaba.com (led its 2007 listing on the Hong Kong Stock Exchange)"
-    ],
-    investmentFocus: ["Consumer", "E-Commerce", "Retail Brands"],
-    notableInvestments: [
-      { name: "POP MART", ticker: "1993.HK" },
-      { name: "Anker", ticker: null },
-      { name: "Smoore", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 1,
-    majorExits: 1,
-    careerTimeline: [
-      { year: "2000", event: "Becomes CFO, then CEO, of B&Q China, growing it into the country's largest home improvement retailer." },
-      { year: "2006", event: "Becomes CEO of Alibaba.com." },
-      { year: "2007", event: "Leads Alibaba.com's listing on the Hong Kong Stock Exchange." },
-      { year: "2011", event: "Founds Vision Knight Capital with Daming Zhu in Shanghai." },
-      { year: "2020", event: "POP MART, a company Vision Knight co-founded and invested in, completes its Hong Kong IPO." },
-      { year: "2025", event: "Raises more than $560 million in new funds, pushing total AUM to nearly $2.8 billion." }
-    ],
-    biography: "David Wei built more than two decades of real operating experience in China before turning to venture capital — corporate finance at Coopers & Lybrand, investment banking at Orient Securities, then CFO and later CEO of B&Q China, where he grew the company into the country's largest home improvement retailer. He became CEO of Alibaba.com in 2006 and personally led its 2007 listing on the Hong Kong Stock Exchange, giving him a rare combination of consumer retail and public-markets experience. He founded Vision Knight Capital with Daming Zhu in 2011, applying that operating background to bold growth-stage bets in China's consumer and digital retail sectors, most notably co-founding and backing POP MART, whose 2020 Hong Kong IPO was the largest internet offering in the market that year. Wei has grown Vision Knight into a firm managing nearly $2.8 billion across USD and RMB funds, with a portfolio spanning POP MART, Anker, and Smoore.",
-    sources: [
-      { label: "Vision Knight Capital — About Us", url: "http://www.vkc-partners.com/htmlsen/about.php" },
-      { label: "DealStreetAsia", url: "https://www.dealstreetasia.com/stories/vision-knight-new-funds-465981" }
     ]
   },
 };
