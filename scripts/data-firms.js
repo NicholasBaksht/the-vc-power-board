@@ -7762,4 +7762,571 @@ holdings: []
       { name: "JD.com", ticker: "JD", investedYear: 2011, historicalPrice: null, price: 29.62 }
     ]
   },
+  {
+    rank: null,
+    name: "Passion Capital",
+    sectors: [
+      "AI",
+      "Fintech"
+    ],
+    slug: "passion-capital",
+    website: null,
+    short: "Passion",
+    founded: 2011,
+    hq: "London, UK",
+    aum: "Not publicly disclosed",
+    thesis: "A founder-first European firm, described as the first operator-led venture fund in Europe. Typically invests £400,000–£500,000 and will lead, co-lead or participate.",
+    leadership: [
+      {
+        name: "Eileen Burbidge",
+        role: "Founding Partner",
+        profileSlug: "eileen-burbidge"
+      },
+      {
+        name: "Stefan Glaenzer",
+        role: "Founding Partner"
+      },
+      {
+        name: "Robert Dighero",
+        role: "Founding Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2011",
+        event: "Launched in March as a private-public hybrid with a $60M debut fund, $40M of it UK government-backed."
+      },
+      {
+        year: "2015",
+        event: "Second fund raised at $69M."
+      },
+      {
+        year: "2026",
+        event: "Closed a €46M seed fund for AI and fintech startups."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Alven",
+    sectors: [
+      "Marketplaces",
+      "Developer Tools",
+      "AI",
+      "Consumer"
+    ],
+    slug: "alven",
+    website: "https://alven.co/",
+    short: "Alven",
+    founded: 2000,
+    hq: "Paris, France",
+    aum: "€2B+ (2025)",
+    thesis: "An independent early-stage firm investing mainly at seed and Series A, with a long-term commitment to entrepreneurs building category-defining European companies with global reach.",
+    leadership: [
+      {
+        name: "Guillaume Aubin",
+        role: "Co-Founder",
+        profileSlug: "guillaume-aubin"
+      },
+      {
+        name: "Charles Letourneur",
+        role: "Co-Founder",
+        profileSlug: "charles-letourneur"
+      }
+    ],
+    timeline: [
+      {
+        year: "2000",
+        event: "Founded in Paris by Guillaume Aubin and Charles Letourneur."
+      },
+      {
+        year: "2013",
+        event: "Alven Capital IV closed at €120M."
+      },
+      {
+        year: "2017",
+        event: "Alven Capital V closed at €250M."
+      },
+      {
+        year: "2022",
+        event: "Sixth fund closed at its €350M hard cap, oversubscribed against a €300M target."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Ventech",
+    sectors: [
+      "AI",
+      "Healthcare",
+      "Enterprise Software",
+      "Cybersecurity"
+    ],
+    slug: "ventech",
+    website: "https://www.ventechvc.com/",
+    short: "Ventech",
+    founded: 1998,
+    hq: "Paris, France",
+    aum: "€1.1B+ raised since inception (2025)",
+    thesis: "A pan-European, multi-sector early-stage firm backing tech founders from seed and Series A through to IPO or exit, operating across Paris, Munich, Berlin, Helsinki and Stockholm alongside a sister platform in Asia.",
+    leadership: [
+      {
+        name: "Jean Bourcereau",
+        role: "Chairman & Managing Partner",
+        profileSlug: "jean-bourcereau"
+      },
+      {
+        name: "Stephan Wirries",
+        role: "General Partner"
+      },
+      {
+        name: "Audrey Soussan",
+        role: "General Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "1998",
+        event: "Ventech founded in Paris."
+      },
+      {
+        year: "2018",
+        event: "Fund V first close at €140M against a €200M hard cap."
+      },
+      {
+        year: "2025",
+        event: "Fund VI final close at €175M, the largest in the firm's history."
+      }
+    ],
+    holdings: [
+      {
+        name: "Arteris",
+        ticker: "AIP",
+        historicalPrice: null,
+        price: null
+      }
+    ]
+  },
+  {
+    rank: null,
+    name: "Bayern Kapital",
+    sectors: [
+      "Deep Tech",
+      "Healthcare",
+      "Climate",
+      "Enterprise Software"
+    ],
+    slug: "bayern-kapital",
+    website: "https://bayernkapital.de/en/",
+    short: "Bayern Kapital",
+    founded: 1995,
+    hq: "Landshut, Germany",
+    aum: "Not publicly disclosed",
+    thesis: "The venture capital company of the Free State of Bavaria, providing equity to young technology businesses based in Bavaria as an anchor investor from pre-seed through growth, alongside private co-investors.",
+    leadership: [
+      {
+        name: "Georg Ried",
+        role: "Managing Director",
+        profileSlug: "georg-ried"
+      },
+      {
+        name: "Monika Steger",
+        role: "Managing Director",
+        profileSlug: "monika-steger"
+      }
+    ],
+    timeline: [
+      {
+        year: "1995",
+        event: "Founded by the Bavarian state government as a wholly owned subsidiary of LfA Förderbank Bayern."
+      },
+      {
+        year: "2021",
+        event: "European Investment Bank committed €50M to Wachstumsfonds Bayern 2, expanding its resources to €165M."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Amadeus Capital Partners",
+    sectors: [
+      "Deep Tech",
+      "AI",
+      "Cybersecurity",
+      "Healthcare"
+    ],
+    slug: "amadeus-capital-partners",
+    website: "https://www.amadeuscapital.com/",
+    short: "Amadeus",
+    founded: 1997,
+    hq: "Cambridge, UK",
+    aum: "Not publicly disclosed",
+    thesis: "A deep tech firm backing AI, human-centric technology and sustainability companies at all stages from seed to venture buyout.",
+    leadership: [
+      {
+        name: "Anne Glover",
+        role: "CEO & Co-Founder",
+        profileSlug: "anne-glover"
+      },
+      {
+        name: "Hermann Hauser",
+        role: "Co-Founder",
+        profileSlug: "hermann-hauser"
+      }
+    ],
+    timeline: [
+      {
+        year: "1997",
+        event: "Founded by Anne Glover and Hermann Hauser with a first fund of £50M."
+      },
+      {
+        year: "2025",
+        event: "Portfolio company OrganOx acquired by Terumo for $1.5B, one of the largest UK medtech exits on record."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Amadeus APEX Technology Fund",
+    sectors: [
+      "Deep Tech",
+      "AI",
+      "Robotics"
+    ],
+    slug: "amadeus-apex-technology-fund",
+    website: null,
+    short: "Amadeus APEX",
+    founded: 2023,
+    hq: "Cambridge, UK",
+    aum: "€28M (first close, 2023)",
+    thesis: "A joint venture fund between Amadeus Capital Partners and APEX Ventures, investing €1–1.5M at seed and Series A into deep tech companies with defendable technology built on significant scientific advances, focused on the DACH region.",
+    leadership: [
+      {
+        name: "Anne Glover",
+        role: "Investment Committee",
+        profileSlug: "anne-glover"
+      },
+      {
+        name: "Hermann Hauser",
+        role: "Investment Committee",
+        profileSlug: "hermann-hauser"
+      },
+      {
+        name: "Andreas Riegler",
+        role: "Investment Committee",
+        profileSlug: "andreas-riegler"
+      },
+      {
+        name: "Wolfgang Neubert",
+        role: "Investment Committee"
+      }
+    ],
+    timeline: [
+      {
+        year: "2023",
+        event: "Launched with a €28M first close against an €80M target; first investment made into OKAPI:Orbits."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Hoxton Ventures",
+    sectors: [
+      "SaaS",
+      "Enterprise Software",
+      "Consumer"
+    ],
+    slug: "hoxton-ventures",
+    website: null,
+    short: "Hoxton",
+    founded: 2013,
+    hq: "London, UK",
+    aum: "Not publicly disclosed",
+    thesis: "Focuses on startups inventing new market categories or transforming large existing industries, investing primarily at Series A with cheques of $1–5M and following capital through the life of the investment.",
+    leadership: [
+      {
+        name: "Hussein Kanji",
+        role: "Co-Founder",
+        profileSlug: "hussein-kanji"
+      }
+    ],
+    timeline: [
+      {
+        year: "2013",
+        event: "Founded by Hussein Kanji and Rob Kniaz; Fund I closed at $40M."
+      },
+      {
+        year: "2019",
+        event: "Fund II formed."
+      },
+      {
+        year: "2023",
+        event: "Co-founder Rob Kniaz departed to launch a new deep tech fund."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Kindred Capital",
+    sectors: [
+      "Fintech",
+      "Healthcare",
+      "Sector-Agnostic"
+    ],
+    slug: "kindred-capital",
+    website: "https://kindredcapital.vc/",
+    short: "Kindred Capital",
+    founded: 2016,
+    hq: "London, UK",
+    aum: "$130M (Fund III, 2023)",
+    thesis: "Practises equitable venture: every founder it backs becomes a co-owner of the fund through allocated carry, sharing in the fund's profits alongside its LPs. Leads or co-leads pre-seed and seed rounds of $200K–$3M into no more than 30 companies per fund.",
+    leadership: [
+      {
+        name: "Leila Zegna",
+        role: "General Partner",
+        profileSlug: "leila-zegna"
+      }
+    ],
+    timeline: [
+      {
+        year: "2016",
+        event: "First fund launched."
+      },
+      {
+        year: "2020",
+        event: "Fund II closed at £81M."
+      },
+      {
+        year: "2023",
+        event: "Fund III closed at $130M."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Plural",
+    sectors: [
+      "AI",
+      "Deep Tech",
+      "Climate",
+      "Fintech"
+    ],
+    slug: "plural",
+    website: null,
+    short: "Plural",
+    founded: 2022,
+    hq: "London, UK",
+    aum: "€400M (second fund, 2024)",
+    thesis: "An investment platform run exclusively by former founders and operators rather than career investors, created because only around 8% of European investors have operator backgrounds against more than half in the US. Leads seed through Series A rounds.",
+    leadership: [
+      {
+        name: "Taavet Hinrikus",
+        role: "Co-Founder"
+      },
+      {
+        name: "Sten Tamkivi",
+        role: "Co-Founder & Partner",
+        profileSlug: "sten-tamkivi"
+      },
+      {
+        name: "Ian Hogarth",
+        role: "Co-Founder"
+      },
+      {
+        name: "Khaled Helioui",
+        role: "Co-Founder"
+      },
+      {
+        name: "Carina Namih",
+        role: "Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2022",
+        event: "Launched in June with a €250M debut fund."
+      },
+      {
+        year: "2024",
+        event: "Second fund closed at €400M."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Air Street Capital",
+    sectors: [
+      "AI"
+    ],
+    slug: "air-street-capital",
+    website: "https://www.airstreet.com/",
+    short: "Air Street",
+    founded: 2019,
+    hq: "London, UK",
+    aum: "$400M (2026)",
+    thesis: "Backs AI-first companies — those whose product would not function without AI — at the earliest stages across Europe and North America, leading rounds as a solo-GP fund.",
+    leadership: [
+      {
+        name: "Nathan Benaich",
+        role: "Founder & General Partner",
+        profileSlug: "nathan-benaich"
+      }
+    ],
+    timeline: [
+      {
+        year: "2020",
+        event: "Fund I raised at $17M."
+      },
+      {
+        year: "2026",
+        event: "Fund III closed at $232M, the largest solo-GP venture fund in Europe."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Fly Ventures",
+    sectors: [
+      "Deep Tech",
+      "Enterprise Software"
+    ],
+    slug: "fly-ventures",
+    website: null,
+    short: "Fly",
+    founded: 2016,
+    hq: "Berlin, Germany",
+    aum: "€80M (Fund III, 2024)",
+    thesis: "Backs technical founders at inception, writing €1–4M cheques into rounds of €2–10M, operating deliberately as a boutique with an equal-GP model across Berlin, London, Paris and Zurich, and using an in-house machine-learning platform to source deals before founders start fundraising.",
+    leadership: [
+      {
+        name: "Gabriel Matuschka",
+        role: "Co-Founder & General Partner",
+        profileSlug: "gabriel-matuschka"
+      },
+      {
+        name: "Fredrik Bergenlid",
+        role: "Co-Founder & General Partner"
+      },
+      {
+        name: "Matt Wichrowski",
+        role: "General Partner"
+      },
+      {
+        name: "Marie Brayer",
+        role: "General Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2016",
+        event: "Founded in Berlin by Gabriel Matuschka and Fredrik Bergenlid."
+      },
+      {
+        year: "2017",
+        event: "Fund I closed at $41M."
+      },
+      {
+        year: "2020",
+        event: "Fund II closed at €53M."
+      },
+      {
+        year: "2024",
+        event: "Fund III closed oversubscribed at €80M in a single close."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Backed VC",
+    sectors: [
+      "Deep Tech",
+      "Biotech",
+      "Fintech"
+    ],
+    slug: "backed-vc",
+    website: "https://www.backed.vc/",
+    short: "Backed",
+    founded: 2016,
+    hq: "London, UK",
+    aum: "$100M (Fund III, 2025)",
+    thesis: "Partners with founders building in spaces most investors avoid, leading pre-seed and seed rounds of $500K–$5M with a community-driven model that treats founders' personal growth and company growth as directly correlated.",
+    leadership: [
+      {
+        name: "Andre de Haes",
+        role: "Co-Founder",
+        profileSlug: "andre-de-haes"
+      },
+      {
+        name: "Alex Brunicki",
+        role: "Co-Founder"
+      },
+      {
+        name: "Matt Fitzpatrick",
+        role: "Chief Executive Officer"
+      }
+    ],
+    timeline: [
+      {
+        year: "2016",
+        event: "Founded by Andre de Haes and Alex Brunicki."
+      },
+      {
+        year: "2022",
+        event: "Fund II unveiled at €150M, split between a seed fund and a follow-on fund."
+      },
+      {
+        year: "2025",
+        event: "Backed 3 closed at its $100M cap alongside the firm's 100th investment."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Firstminute Capital",
+    sectors: [
+      "AI",
+      "Deep Tech",
+      "Sector-Agnostic"
+    ],
+    slug: "firstminute-capital",
+    website: "https://www.firstminute.capital/",
+    short: "Firstminute",
+    founded: 2017,
+    hq: "London, UK",
+    aum: "$500M (2026)",
+    thesis: "Backs European founders at seed who are building global technology businesses, seeking talent magnets whose conviction attracts top-tier people. Writes £1–3M cheques targeting roughly 10% ownership, supported by a base of over 130 unicorn founders as LPs.",
+    leadership: [
+      {
+        name: "Brent Hoberman",
+        role: "Co-Founder & Managing Partner",
+        profileSlug: "brent-hoberman"
+      },
+      {
+        name: "Spencer Crawley",
+        role: "Co-Founder & General Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2017",
+        event: "Fund I closed oversubscribed at $85M after a $60M first close cornerstoned by Atomico."
+      },
+      {
+        year: "2020",
+        event: "Fund II announced at $111M, taking assets to $211M."
+      }
+    ],
+    holdings: []
+  },
 ];
