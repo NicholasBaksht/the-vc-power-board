@@ -133,23 +133,11 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/firms/baillie-gifford/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://thevcpowerboard.com/firms/softbank-vision-fund/</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/a16z/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/firms/tiger-global/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/firms/viking-global-investors/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -161,19 +149,11 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/firms/dragoneer-investment-group/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://thevcpowerboard.com/firms/nea/</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/lightspeed/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/firms/d1-capital-partners/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -198,14 +178,6 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/polaris-partners/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/firms/durable-capital-partners/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/firms/altimeter-capital/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -294,10 +266,6 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/spark-capital/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/firms/whale-rock-capital-management/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -426,10 +394,6 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/third-rock-ventures/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/firms/helios-investment-partners/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -574,10 +538,6 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/blockchain-capital/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/firms/deviation-capital/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1249,10 +1209,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/firms/crossboundary/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://thevcpowerboard.com/firms/rakuten-capital/</loc>
     <priority>0.6</priority>
   </url>
@@ -1317,10 +1273,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/a16z-vs-baillie-gifford/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://thevcpowerboard.com/compare/a16z-vs-sequoia/</loc>
     <priority>0.5</priority>
   </url>
@@ -1341,10 +1293,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-softbank-vision-fund/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://thevcpowerboard.com/compare/sequoia-vs-softbank-vision-fund/</loc>
     <priority>0.5</priority>
   </url>
@@ -1358,10 +1306,6 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/elad-gil-vs-softbank-vision-fund/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-ribbit-capital/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1381,22 +1325,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-sequoia/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-kleiner-perkins/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-gv/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/baillie-gifford-vs-elad-gil/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://thevcpowerboard.com/compare/kleiner-perkins-vs-sequoia/</loc>
     <priority>0.5</priority>
   </url>
@@ -1406,18 +1334,6 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/elad-gil-vs-sequoia/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/d1-capital-partners-vs-tcv/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/d1-capital-partners-vs-tiger-global/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/tcv-vs-tiger-global/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1486,26 +1402,6 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/people/neil-mehta/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/people/brad-gerstner/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/people/daniel-sundheim/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/people/henry-ellenbogen/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/people/alex-sacerdote/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/people/andreas-halvorsen/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1653,10 +1549,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/people/colin-beirne/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://thevcpowerboard.com/people/adeyemi-ajao/</loc>
     <priority>0.5</priority>
   </url>
@@ -1798,10 +1690,6 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/people/alana-palmedo/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/people/chase-coleman/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -2181,10 +2069,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/people/marc-stad/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://thevcpowerboard.com/people/eduardo-saverin/</loc>
     <priority>0.5</priority>
   </url>
@@ -2357,10 +2241,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/people/tope-lawani/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://thevcpowerboard.com/people/kola-aina/</loc>
     <priority>0.5</priority>
   </url>
@@ -2410,10 +2290,6 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/people/amar-inamdar/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/people/jake-cusack/</loc>
     <priority>0.5</priority>
   </url>
   <url>
