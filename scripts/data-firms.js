@@ -7623,8 +7623,12 @@ holdings: []
     thesis: "States that ambitious builders turn great ideas into great companies, and invests in founders, teams and startups that share that mindset.",
     leadership: [
       {
+        name: "Armaan Ali",
+        role: "Co-Founder & CEO"
+      },
+      {
         name: "Baris Akis",
-        role: "Partner"
+        role: "Co-Founder & President"
       }
     ],
     timeline: [
