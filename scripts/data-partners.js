@@ -1181,35 +1181,6 @@ const partnerProfiles = {
     { label: "Fortune 40 Under 40 — John Hering", url: "https://fortune.com/40-under-40/2012/john-hering/" }
   ]
 },
-  "michael-anders": {
-  name: "Michael Anders",
-  firm: "ICONIQ Capital",
-  firmSlug: "iconiq-capital",
-  title: "Co-Founder & General Partner",
-  joinedYear: 2011,
-  education: ["University of Rhode Island, B.A./B.S. Political Science and Communication Studies", "Columbia University, Certificate in International Economics"],
-  previousExperience: [
-    "Credit Analyst, Société Générale, Paris/London (1997)",
-    "Vice President, Franklin Templeton Investments",
-    "Vice President, Fidelity Charitable Services (2005–2007)",
-    "Founder, GivingCapital",
-    "Vice President, Goldman Sachs (2008)",
-    "Vice President, Morgan Stanley (2011)"
-  ],
-  boardSeats: [],
-  ipoCount: null,
-  majorExits: null,
-  careerTimeline: [
-    { year: "1997", event: "Begins career as a Credit Analyst at Société Générale in Paris and London." },
-    { year: null, event: "Holds roles at Franklin Templeton and Fidelity Charitable Services; founds GivingCapital, building turnkey charitable-giving products for large financial firms." },
-    { year: "2008", event: "Joins Goldman Sachs as Vice President." },
-    { year: "2011", event: "Joins Morgan Stanley, then co-founds ICONIQ Capital in December with Divesh Makan and Chad Boeding." }
-  ],
-  biography: "Michael Anders spent over a decade across Société Générale, Franklin Templeton, Fidelity, Goldman Sachs, and Morgan Stanley — including founding a charitable-giving startup — before co-founding ICONIQ Capital in 2011.",
-  sources: [
-    { label: "Milken Institute — Mike Anders", url: "https://milkeninstitute.org/events/middle-east-and-africa-summit-2024/speakers/mike-anders" }
-  ]
-},
   "karthee-madasamy": {
   name: "Karthee Madasamy",
   firm: "MFV Partners",
