@@ -1,4 +1,6 @@
 const TEAM_PAGES = {
+  "insight-partners": "https://www.insightpartners.com/team/",
+  "tiger-global": null,
   "south-park-commons": "https://www.southparkcommons.com/team",
   "zhenfund": "https://zhenfund.com/Team",
   "contrary-capital": "https://contrary.com/team",
