@@ -674,145 +674,6 @@ holdings: []
   ]
 },
   {
-  rank: null,
-  name: "Altimeter Capital",
-  sectors: ["AI", "Enterprise Software", "Consumer Internet"],
-  signatureExit: "Snowflake's 2020 IPO, one of the largest software IPOs on record — an early Altimeter position that helped earn founder Brad Gerstner a Forbes Midas List spot",
-  slug: "altimeter-capital",
-  website: null,
-  short: "Altimeter",
-  founded: 2008,
-  hq: "Menlo Park, CA",
-  aum: "$18.7B (2025, advisory AUM)",
-  thesis: "Altimeter partners with visionary entrepreneurs across both late-stage private and public technology investing, spanning growth equity through public-market positions in the same names. Founder Brad Gerstner, previously a co-founder of General Catalyst, has built the firm's reputation on early conviction in category leaders like Snowflake and Grab.",
-  leadership: [
-    { name: "Brad Gerstner", role: "Founder, Chairman & CEO", profileSlug: "brad-gerstner" },
-    { name: "Michael Patel", role: "Managing Partner" },
-    { name: "Gabriel Bonilla", role: "Managing Partner" }
-  ],
-  timeline: [
-    { year: "2008", event: "Brad Gerstner founds Altimeter Capital." },
-    { year: "2020", event: "Snowflake goes public in one of the largest software IPOs on record." }
-  ],
-  holdings: []
-},
-  {
-  rank: null,
-  name: "D1 Capital Partners",
-  sectors: ["Fintech", "Consumer Internet", "Enterprise Software"],
-  signatureExit: "No single defined public exit — D1 has instead held large concentrated public positions in growth-stage names post-IPO, including Instacart and Procore",
-  slug: "d1-capital-partners",
-  website: null,
-  short: "D1 Capital Partners",
-  founded: 2018,
-  hq: "New York, NY",
-  aum: "$24B (2022)",
-  thesis: "D1 practices principled, multi-asset investing across global public and private markets with no fixed sector focus, deploying capital across tech, media, consumer, and healthcare. Founder Daniel Sundheim spent 15 years as CIO of Viking Global Investors before launching D1 in 2018.",
-  leadership: [
-    { name: "Daniel Sundheim", role: "Founder & Chief Investment Officer", profileSlug: "daniel-sundheim" }
-  ],
-  timeline: [
-    { year: "2018", event: "Daniel Sundheim founds D1 Capital Partners in July, after 15 years at Viking Global Investors." }
-  ],
-  holdings: [
-    { name: "Instacart", ticker: "CART", historicalPrice: null, price: null },
-    { name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: null },
-    { name: "Rivian", ticker: "RIVN", historicalPrice: null, price: null },
-    { name: "Procore Technologies", ticker: "PCOR", historicalPrice: null, price: null },
-    { name: "Squarespace", ticker: "SQSP", historicalPrice: null, price: null }
-  ]
-},
-  {
-  rank: null,
-  name: "Durable Capital Partners",
-  sectors: ["Fintech", "Enterprise Software"],
-  signatureExit: "No single defined public exit documented — Durable holds public growth-stage positions including Coinbase, Affirm, and Datadog",
-  slug: "durable-capital-partners",
-  website: null,
-  short: "Durable Capital",
-  founded: 2019,
-  hq: "Bethesda, MD",
-  aum: "$19B (Nov 2024)",
-  thesis: "Durable Capital backs 'durable' growth businesses from early stage onward across both public and private markets. Founder Henry Ellenbogen spent 18 years as a portfolio manager at T. Rowe Price before launching the firm in 2019.",
-  leadership: [
-    { name: "Henry Ellenbogen", role: "Founder, Managing Partner & CIO", profileSlug: "henry-ellenbogen" }
-  ],
-  timeline: [
-    { year: "2019", event: "Henry Ellenbogen founds Durable Capital Partners after 18 years at T. Rowe Price." }
-  ],
-  holdings: [
-    { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null },
-    { name: "Affirm", ticker: "AFRM", historicalPrice: null, price: null },
-    { name: "Datadog", ticker: "DDOG", historicalPrice: null, price: null }
-  ]
-},
-  {
-  rank: null,
-  name: "Baillie Gifford",
-  sectors: ["Consumer Internet", "AI", "Healthcare"],
-  signatureExit: "Tesla — an early, long-held position that realized approximately $14.8 billion in profit for the firm",
-  slug: "baillie-gifford",
-  website: null,
-  short: "Baillie Gifford",
-  founded: 1908,
-  hq: "Edinburgh, UK",
-  aum: "£286.3B (2025)",
-  thesis: "Baillie Gifford takes a patient, long-term global growth equity approach, holding large positions in innovative companies for years rather than quarters. The firm's most famous position, an early stake in Tesla, became one of the most profitable single holdings in its history.",
-  leadership: [
-    { name: "Tim Campbell", role: "CEO & Managing Partner" },
-    { name: "Malcolm MacColl", role: "Co-CEO" },
-    { name: "Amy Atack", role: "Co-CEO" }
-  ],
-  timeline: [
-    { year: "1908", event: "Baillie Gifford founded in Edinburgh." }
-  ],
-  holdings: [
-    { name: "Tesla", ticker: "TSLA", historicalPrice: null, price: null }
-  ]
-},
-  {
-  rank: null,
-  name: "Whale Rock Capital Management",
-  sectors: ["AI", "Consumer Internet"],
-  signatureExit: "No single defined public exit documented — Whale Rock runs a public-equity technology, media, and telecom strategy",
-  slug: "whale-rock-capital-management",
-  website: null,
-  short: "Whale Rock",
-  founded: 2006,
-  hq: "Boston, MA",
-  aum: "$8B (mid-2020s)",
-  thesis: "Whale Rock positions itself at the intersection of technology and media, running concentrated global equity strategies around long-duration trends like AI, cloud infrastructure, and electric vehicles. Founder Alex Sacerdote previously managed technology and media positions at Fidelity before launching the firm in 2006.",
-  leadership: [
-    { name: "Alex Sacerdote", role: "Founder, CEO & Portfolio Manager", profileSlug: "alex-sacerdote" }
-  ],
-  timeline: [
-    { year: "2006", event: "Alex Sacerdote founds Whale Rock Capital Management in Boston." }
-  ],
-  holdings: []
-},
-  {
-  rank: null,
-  name: "Viking Global Investors",
-  sectors: ["AI", "Healthcare", "Consumer Internet"],
-  signatureExit: "No single defined public exit documented — Viking runs a long/short global equity strategy across tech, healthcare, and consumer",
-  slug: "viking-global-investors",
-  website: null,
-  short: "Viking Global",
-  founded: 1999,
-  hq: "Stamford, CT",
-  aum: "$56B (mid-2026)",
-  thesis: "Viking invests both long and short across sectors with a fundamental, long-term emphasis on innovative growth companies. Co-founder Andreas Halvorsen previously worked as a healthcare analyst at Morgan Stanley and was among the first employees at Tiger Management; D1 Capital's Daniel Sundheim is a Viking alumnus.",
-  leadership: [
-    { name: "Andreas Halvorsen", role: "Co-Founder & CEO", profileSlug: "andreas-halvorsen" },
-    { name: "David Ott", role: "Co-Chief Investment Officer" },
-    { name: "Brian Olson", role: "Co-Chief Investment Officer" }
-  ],
-  timeline: [
-    { year: "1999", event: "Andreas Halvorsen co-founds Viking Global Investors." }
-  ],
-  holdings: []
-},
-  {
     slug: 'cavalry-ventures',
     rank: null,
     name: 'Cavalry Ventures',
@@ -1234,32 +1095,6 @@ holdings: []
       { year: "2026", event: "AUM reaches $5.9 billion across 176 investments and 51 unicorns." }
     ],
     holdings: []
-  },
-  {
-    rank: 59,
-    name: "Deviation Capital",
-    sectors: ["AI", "Deep Tech", "Healthcare", "Enterprise Software"],
-    signatureExit: "Recursion Pharmaceuticals' April 2021 NASDAQ IPO at $18 a share, an initial market cap of roughly $3 billion — a bet made while the firm still operated as Two Sigma Ventures, before its 2026 spinout",
-    slug: "deviation-capital",
-    website: "https://deviation.com",
-    short: "Deviation Capital",
-    founded: 2012,
-    hq: "New York, NY",
-    aum: "$2.0B",
-    thesis: "Deviation Capital was founded as Two Sigma Ventures in 2012, when Colin Beirne proposed launching a venture arm of the quantitative hedge fund Two Sigma on Pi Day, betting that data science and advanced computing would drive innovation for the next 30-plus years — a thesis that predated the current AI investing boom by more than a decade. Operating inside Two Sigma for 14 years let the team apply the parent firm's rigorous quantitative culture to early-stage investing in technical founders building at the intersection of data, software, and computation, producing Recursion Pharmaceuticals' 2021 IPO and stakes in WHOOP, Kalshi, and Etched. In May 2026, the team spun out cleanly into an independent firm, Deviation Capital, retaining $2 billion in AUM and 79 active portfolio companies while gaining full GP autonomy, maintaining a formal ongoing relationship with Two Sigma's technical bench.",
-    leadership: [
-      { name: "Colin Beirne", role: "Founding Partner", profileSlug: "colin-beirne" },
-      { name: "Jonathan Golden", role: "Founding Partner" },
-      { name: "Dusan Perovic", role: "Founding Partner" }
-    ],
-    timeline: [
-      { year: "2012", event: "Colin Beirne founds Two Sigma Ventures on Pi Day at a Two Sigma strategy offsite." },
-      { year: "2021", event: "Recursion Pharmaceuticals completes its NASDAQ IPO." },
-      { year: "2026", event: "Spins out as an independent firm, Deviation Capital, in May with $2 billion in AUM." }
-    ],
-    holdings: [
-      { name: "Recursion Pharmaceuticals", ticker: "RXRX", historicalPrice: null, price: null }
-    ]
   },
   {
     rank: 29,
@@ -1940,33 +1775,6 @@ holdings: []
     ]
   },
   {
-  rank: 4,
-    name: "Tiger Global Management",
-    sectors: ["Internet", "Fintech", "Consumer Tech"],
-    signatureExit: "An early pre-IPO stake in Facebook that helped define Tiger Global's hybrid public-private strategy",
-    slug: "tiger-global",
-    website: "https://www.tigerglobal.com",
-    short: "Tiger Global",
-    founded: 2001,
-    hq: "New York, NY",
-    aum: "$58B+",
-    thesis: "Chase Coleman was only 25 when he launched Tiger Global (originally named Tiger Technology) in 2001, seeded with roughly $25 million from his mentor Julian Robertson after Robertson's own famed hedge fund, Tiger Management, wound down. Coleman built Tiger Global as a hybrid the industry hadn't quite seen before — a fund equally comfortable buying public stocks and writing private venture checks, a strategy that let it move unusually fast into deals other VCs took months to close.",
-    leadership: [
-      { name: "Chase Coleman", role: "Founder", profileSlug: "chase-coleman" },
-      { name: "Scott Shleifer", role: "Partner, led expansion into private equity" }
-    ],
-    timeline: [
-      { year: "2001", event: "Chase Coleman, then 25, launches the firm (originally Tiger Technology) with $25 million seeded by mentor Julian Robertson." },
-      { year: "2003", event: "Scott Shleifer joins and helps expand the firm from public markets into private equity and venture deals." },
-      { year: "2010s", event: "Builds an early pre-IPO stake in Facebook, defining the firm's hybrid public-private strategy." },
-      { year: "2021", event: "Becomes one of the most active venture investors globally, deploying capital at unusually high speed." }
-    ],
-    holdings: [
-      { name: "Coinbase", ticker: "COIN", investedYear: 2018, historicalPrice: 257.21, price: 161.00 },
-      { name: "JD.com", ticker: "JD", investedYear: 2011, historicalPrice: null, price: 29.62 }
-    ]
-  },
-  {
     rank: 6,
     name: "General Catalyst",
     sectors: ["Healthcare", "Fintech", "AI Infrastructure"],
@@ -1992,36 +1800,6 @@ holdings: []
     holdings: [
       { name: "HubSpot", ticker: "HUBS", investedYear: 2007, historicalPrice: null, price: 224.26 },
       { name: "Samsara", ticker: "IOT", investedYear: 2017, historicalPrice: null, price: 38.32 }
-    ]
-  },
-  {
-    rank: 7,
-    name: "Dragoneer Investment Group",
-    sectors: ["Consumer Internet", "SaaS", "Fintech", "AI"],
-    signatureExit: "Airbnb's 2020 Nasdaq IPO, valuing the company at approximately $47 billion on debut — one of two landmark 2020 IPOs Dragoneer backed, alongside DoorDash",
-    slug: "dragoneer-investment-group",
-    website: "https://www.dragoneer.com",
-    short: "Dragoneer",
-    founded: 2012,
-    hq: "San Francisco, CA",
-    aum: "$30B+ (as of late 2025)",
-    thesis: "Dragoneer Investment Group was founded in 2012 by Marc Stad, who built the firm on long-duration, conviction-driven capital rather than the shorter recycling cycles typical of growth equity. That patience has produced a genuinely rare crossover track record: Dragoneer backed both DoorDash and Airbnb ahead of their landmark 2020 IPOs, pioneered using SPACs to take portfolio companies like CCC Information Services and Cvent public, and co-led Anthropic's massive $30 billion funding round. The firm now manages more than $30 billion across public and private technology investments, with a flexible mandate that lets it move fluidly between growth-stage private rounds and public-market positions in the same category-defining companies.",
-    leadership: [
-      { name: "Marc Stad", role: "Founder & Managing Partner", profileSlug: "marc-stad" },
-      { name: "Christian Jensen", role: "Partner" },
-      { name: "Pat Robertson", role: "Partner, Public Markets" }
-    ],
-    timeline: [
-      { year: "2012", event: "Marc Stad founds Dragoneer Investment Group in San Francisco." },
-      { year: "2016", event: "Leads a $2.6 billion leveraged buyout of AmWINS, becoming its largest outside shareholder." },
-      { year: "2019", event: "Invests in DoorDash's Series F ahead of its 2020 IPO." },
-      { year: "2020", event: "Both DoorDash and Airbnb go public; Airbnb debuts at a roughly $47 billion valuation." },
-      { year: "2024", event: "Reported AUM reaches approximately $25 billion." },
-      { year: "2025", event: "Co-leads Anthropic's $30 billion funding round; firm AUM surpasses $30 billion." }
-    ],
-    holdings: [
-      { name: "Airbnb", ticker: "ABNB", investedYear: 2014, historicalPrice: null, price: 141.10 },
-      { name: "DoorDash", ticker: "DASH", investedYear: 2019, historicalPrice: 170.65, price: 175.00 }
     ]
   },
   {
@@ -4301,33 +4079,6 @@ holdings: []
   },
   {
     rank: 35,
-    name: "Helios Investment Partners",
-    sectors: ["Fintech", "Enterprise Software", "Climate", "Mobility"],
-    signatureExit: "Helios Towers' 2019 listing on the London Stock Exchange — one of several exits generating more than $2 billion in aggregate proceeds for Helios, alongside major stakes in Interswitch and Equity Bank",
-    slug: "helios-investment-partners",
-    website: "https://www.heliosinvestment.com",
-    short: "Helios",
-    founded: 2004,
-    hq: "London, UK",
-    aum: "$3.6B",
-    thesis: "Helios Investment Partners was founded in 2004 by Tope Lawani and Babatunde Soyoye, both veterans of Texas Pacific Group's telecommunications and media buyout practice, who set out to build an Africa-focused investment platform spanning growth equity, buyouts, and large-scale infrastructure. The firm's defining early bet came almost by accident: while researching a Nigerian telecom license bid, the founders recognized that unreliable grid electricity made independently-owned tower infrastructure essential across Africa, leading them to found the continent's first independent telecom tower company in 2005. That pattern-recognition — spotting infrastructure gaps beneath consumer-facing growth stories — has defined Helios ever since, producing more than $2 billion in aggregate exit proceeds across telecom, fintech, and financial services, and growing the firm into the largest Africa-focused private investment platform with $3.6 billion under management.",
-    leadership: [
-      { name: "Tope Lawani", role: "Co-Founder & Managing Partner", profileSlug: "tope-lawani" },
-      { name: "Babatunde Soyoye", role: "Co-Founder & Managing Partner" }
-    ],
-    timeline: [
-      { year: "2004", event: "Tope Lawani and Babatunde Soyoye found Helios Investment Partners in London." },
-      { year: "2005", event: "Founds HTN Towers, Africa's first independent telecom tower company." },
-      { year: "2011", event: "Invests in Interswitch, a Nigerian electronic payments processor." },
-      { year: "2019", event: "Helios Towers completes its London Stock Exchange listing." },
-      { year: "2020", event: "Combines with Fairfax Africa Holdings to form Helios Fairfax Partners." }
-    ],
-    holdings: [
-      { name: "Helios Towers", ticker: "HTWS.L", historicalPrice: null, price: null }
-    ]
-  },
-  {
-    rank: 35,
     name: "Molten Ventures",
     sectors: ["Enterprise Software", "Fintech", "Deep Tech", "Healthcare", "Climate"],
     signatureExit: "UiPath, which Molten highlights at a $35.8 billion closing price post-IPO",
@@ -5702,29 +5453,6 @@ holdings: []
       { year: "2017", event: "KawiSafi Ventures launches with initial investors." },
       { year: "2019", event: "Closes at nearly $70 million in April through Acumen Capital Partners." },
       { year: "2024", event: "Portfolio companies have cumulatively impacted more than 200 million lives and averted approximately 48 million tons of CO2 since fund inception." }
-    ],
-    holdings: []
-  },
-  {
-    rank: 79,
-    name: "CrossBoundary",
-    sectors: ["Climate", "Enterprise Software"],
-    signatureExit: "No confirmed dollar-verified exit — CrossBoundary's scale is better measured by reach: more than 200 employees across offices including Nairobi and Dubai, and a growing platform spanning energy infrastructure, mini-grid financing, and advisory work across underserved and frontier markets",
-    slug: "crossboundary",
-    website: "https://crossboundary.com",
-    short: "CrossBoundary",
-    founded: 2011,
-    hq: "Nairobi, Kenya",
-    aum: "Not publicly disclosed",
-    thesis: "CrossBoundary was founded in 2011 by Jake Cusack and Matt Tilleard, whose two years of private-sector development work in Iraq and Afghanistan convinced them that locally-disciplined, bottom-up capital, not top-down state intervention, was the more durable path to sustainable growth in conflict-affected and underserved markets. That conviction shaped a genuinely distinctive investment platform, more infrastructure and growth-equity investor than traditional venture fund — CrossBoundary finances mini-grids and commercial-and-industrial solar projects through CrossBoundary Energy, operates Africa's first R&D fund dedicated to mini-grid business model innovation, and runs an advisory practice structuring bankable transactions across frontier markets. The firm has grown to more than 200 employees across offices including Nairobi and Dubai, with a deliberate emphasis on staffing predominantly from the societies where it invests rather than relying on expatriate teams.",
-    leadership: [
-      { name: "Jake Cusack", role: "Co-Founder & Managing Partner", profileSlug: "jake-cusack" },
-      { name: "Matt Tilleard", role: "Co-Founder & Managing Partner" }
-    ],
-    timeline: [
-      { year: "2011", event: "Jake Cusack and Matt Tilleard found CrossBoundary." },
-      { year: "2010s", event: "Expands into Sub-Saharan Africa, building out advisory, energy, and mini-grid financing businesses." },
-      { year: "2020s", event: "Launches the Mini-Grid Innovation Lab, Africa's first R&D fund focused on mini-grid business model innovation." }
     ],
     holdings: []
   },
