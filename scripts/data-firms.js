@@ -7138,4 +7138,569 @@ holdings: []
     ],
 holdings: []
   },
+  {
+    rank: null,
+    name: "Kima Ventures",
+    sectors: [
+      "Sector-Agnostic"
+    ],
+    slug: "kima-ventures",
+    website: null,
+    short: "Kima",
+    founded: 2010,
+    hq: "Paris, France",
+    aum: "Not publicly disclosed",
+    thesis: "A high-frequency angel model: two to three investments a week, worldwide, on standardised one-off tickets of roughly €150,000, sector- and geography-agnostic, backing founders judged on ambition and rate of learning rather than category.",
+    leadership: [
+      {
+        name: "Xavier Niel",
+        role: "Co-Founder"
+      },
+      {
+        name: "Jeremie Berrebi",
+        role: "Co-Founder"
+      }
+    ],
+    timeline: [
+      {
+        year: "2010",
+        event: "Kima Ventures founded by Xavier Niel and Jeremie Berrebi in Paris."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Afore Capital",
+    sectors: [
+      "Software"
+    ],
+    slug: "afore-capital",
+    website: null,
+    short: "Afore",
+    founded: 2016,
+    hq: "San Francisco, CA",
+    aum: "Not publicly disclosed",
+    thesis: "Invests exclusively at pre-seed, before there is a company or a business — only a product-oriented founder. Writes $1–2M+ into a founder's first institutional round, sometimes leading alongside operator angels.",
+    leadership: [
+      {
+        name: "Gaurav Jain",
+        role: "Co-Founder & Managing Partner"
+      },
+      {
+        name: "Anamitra Banerji",
+        role: "Co-Founder"
+      }
+    ],
+    timeline: [
+      {
+        year: "2016",
+        event: "Afore Capital founded by Gaurav Jain and Anamitra Banerji as a dedicated pre-seed firm."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Techstars",
+    sectors: [
+      "Sector-Agnostic"
+    ],
+    slug: "techstars",
+    website: "https://www.techstars.com/",
+    short: "Techstars",
+    founded: 2006,
+    hq: "New York, NY",
+    aum: "Not publicly disclosed",
+    thesis: "A pre-seed and early-stage venture firm built around accelerator programs: Accelerator Funds invest on standardised terms in companies inside Techstars programs, and Venture Funds take follow-on positions in graduates. Operates on a stated 'Give First' philosophy.",
+    leadership: [
+      {
+        name: "David Cohen",
+        role: "Co-Founder, Chairman & CEO"
+      },
+      {
+        name: "Brad Feld",
+        role: "Co-Founder"
+      }
+    ],
+    timeline: [
+      {
+        year: "2006",
+        event: "Techstars founded in Boulder, Colorado; first accelerator program run in 2007."
+      },
+      {
+        year: "2009",
+        event: "Techstars Ventures 2009, the firm's $5M debut fund, launched."
+      },
+      {
+        year: "2012",
+        event: "Techstars Ventures 2012 raised at $25M."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Conviction",
+    sectors: [
+      "AI"
+    ],
+    slug: "conviction",
+    website: "https://www.conviction.com/",
+    short: "Conviction",
+    founded: 2022,
+    hq: "San Francisco, CA",
+    aum: "$230M (Fund II, 2025)",
+    thesis: "Purpose-built for AI-native 'Software 3.0' companies, on the view that the translation of powerful models into products that reshape industries is still at a very early stage. Writes $1–25M cheques, frequently as first institutional investor.",
+    leadership: [
+      {
+        name: "Sarah Guo",
+        role: "Founder & Managing Partner",
+        profileSlug: "sarah-guo"
+      },
+      {
+        name: "Mike Vernal",
+        role: "General Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2022",
+        event: "Conviction launched by Sarah Guo with a $101M debut fund."
+      },
+      {
+        year: "2025",
+        event: "Fund II closed at $230M; Mike Vernal joined as General Partner."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Haun Ventures",
+    sectors: [
+      "Crypto",
+      "Web3"
+    ],
+    slug: "haun-ventures",
+    website: "https://www.haun.co/",
+    short: "Haun",
+    founded: 2022,
+    hq: "Menlo Park, CA",
+    aum: "$1.5B (initial funds, 2022)",
+    thesis: "Backs founders building the next generation of the internet, investing across every layer of the crypto stack and at every company stage.",
+    leadership: [
+      {
+        name: "Katie Haun",
+        role: "Founder & CEO",
+        profileSlug: "katie-haun"
+      }
+    ],
+    timeline: [
+      {
+        year: "2022",
+        event: "Launched with $1.5B across a $500M early-stage fund and a $1B acceleration fund — the largest debut raised by a solo venture capitalist at the time."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Kindred Ventures",
+    sectors: [
+      "Sector-Agnostic"
+    ],
+    slug: "kindred-ventures",
+    website: "https://kindredventures.com/",
+    short: "Kindred",
+    founded: 2014,
+    hq: "San Francisco, CA",
+    aum: "$312M (Kindred Ventures III and Selector I, 2023)",
+    thesis: "Backs founders at the earliest possible moment — pre-seed and seed, sometimes before a company formally exists — and deliberately keeps each fund concentrated in roughly 20 to 25 companies.",
+    leadership: [
+      {
+        name: "Steve Jang",
+        role: "Founder & Managing Partner",
+        profileSlug: "steve-jang"
+      },
+      {
+        name: "Kanyi Maqubela",
+        role: "Managing Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2014",
+        event: "Founded by Steve Jang as an angel fund."
+      },
+      {
+        year: "2018",
+        event: "Became a full venture firm as Kanyi Maqubela joined."
+      },
+      {
+        year: "2023",
+        event: "Raised $312M across Kindred Ventures III and Selector I."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "S32",
+    sectors: [
+      "Healthcare",
+      "Biotech",
+      "Deep Tech"
+    ],
+    slug: "s32",
+    website: null,
+    short: "S32",
+    founded: 2017,
+    hq: "Palo Alto, CA",
+    aum: "$740M (Fund 4, 2021)",
+    thesis: "States its goal as improving the human condition by accelerating the discovery, development and distribution of important technologies and life-saving medicines — investing across software, security, computation, space, climate, machine learning, therapeutics, diagnostics and genomics.",
+    leadership: [
+      {
+        name: "Bill Maris",
+        role: "Founder",
+        profileSlug: "bill-maris"
+      },
+      {
+        name: "Andy Harrison",
+        role: "CEO & General Partner"
+      },
+      {
+        name: "Andy Conrad",
+        role: "General Partner"
+      },
+      {
+        name: "Michael Pellini",
+        role: "General Partner"
+      },
+      {
+        name: "Steve Kafka",
+        role: "General Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2017",
+        event: "Founded by Bill Maris; debut fund closed at $150M against a $100M target."
+      },
+      {
+        year: "2019",
+        event: "Second fund closed at $199.4M."
+      },
+      {
+        year: "2021",
+        event: "Fund 4 closed at $740M, taking total firm assets past $1.8B."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Underscore VC",
+    sectors: [
+      "B2B Software",
+      "SaaS"
+    ],
+    slug: "underscore-vc",
+    website: "https://underscore.vc/",
+    short: "Underscore",
+    founded: 2015,
+    hq: "Boston, MA",
+    aum: "Not publicly disclosed",
+    thesis: "Backs B2B software founders at pre-seed and seed, dedicated since its second fund to earliest-stage SaaS application and infrastructure companies in or moving to Boston. Runs an open-source investing model that profit-shares with the expert community supporting its startups.",
+    leadership: [
+      {
+        name: "Michael Skok",
+        role: "Co-Founder & Partner"
+      },
+      {
+        name: "John Pearce",
+        role: "Co-Founder & Partner",
+        profileSlug: "john-pearce"
+      },
+      {
+        name: "Richard Dulude",
+        role: "Co-Founder & Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2015",
+        event: "Founded in Boston by Michael Skok, John Pearce and Richard Dulude."
+      },
+      {
+        year: "2016",
+        event: "Fund I closed at $85M, oversubscribed against a $75M target."
+      },
+      {
+        year: "2024",
+        event: "Fund III closed at $58M."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Basis Set Ventures",
+    sectors: [
+      "AI",
+      "Enterprise Software"
+    ],
+    slug: "basis-set-ventures",
+    website: null,
+    short: "Basis Set",
+    founded: 2017,
+    hq: "San Francisco, CA",
+    aum: "$850M (2026)",
+    thesis: "One of the earliest funds to specialise in AI and automation at seed and Series A, founded on the idea of uniting machine intelligence with human ingenuity to augment rather than replace human capability.",
+    leadership: [
+      {
+        name: "Lan Xuezhao",
+        role: "Founder & Managing Partner",
+        profileSlug: "lan-xuezhao"
+      }
+    ],
+    timeline: [
+      {
+        year: "2017",
+        event: "Founded in June; first fund announced that August."
+      },
+      {
+        year: "2021",
+        event: "Fund II closed at $165M."
+      },
+      {
+        year: "2024",
+        event: "Fund III closed at $185M."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Hummingbird Ventures",
+    sectors: [
+      "Sector-Agnostic"
+    ],
+    slug: "hummingbird-ventures",
+    website: null,
+    short: "Hummingbird",
+    founded: 2010,
+    hq: "London, UK",
+    aum: "Not publicly disclosed",
+    thesis: "Describes itself as a global seed fund seeking outlier founders, deliberately investing outside established technology hubs.",
+    leadership: [
+      {
+        name: "Barend Van den Brande",
+        role: "Founder & General Partner",
+        profileSlug: "barend-van-den-brande"
+      },
+      {
+        name: "Firat Ileri",
+        role: "Managing Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2010",
+        event: "Founded by Barend Van den Brande."
+      },
+      {
+        year: "2013",
+        event: "Invested in Kraken."
+      },
+      {
+        year: "2021",
+        event: "Sold roughly half its Kraken stake at a $5B company valuation."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "M13",
+    sectors: [
+      "Consumer"
+    ],
+    slug: "m13",
+    website: null,
+    short: "M13",
+    founded: 2016,
+    hq: "Santa Monica, CA",
+    aum: "$400M (consumer technology fund, 2022)",
+    thesis: "A full-stack team of operators backing consumer technology founders from seed to Series B across work, commerce, health and money. Its full-time partners are former founders and operators rather than career investors.",
+    leadership: [
+      {
+        name: "Carter Reum",
+        role: "Co-Founder"
+      },
+      {
+        name: "Courtney Reum",
+        role: "Co-Founder"
+      },
+      {
+        name: "Karl Alomar",
+        role: "Partner",
+        profileSlug: "karl-alomar"
+      }
+    ],
+    timeline: [
+      {
+        year: "2016",
+        event: "Founded by Carter and Courtney Reum."
+      },
+      {
+        year: "2019",
+        event: "Fund II closed at $175M."
+      },
+      {
+        year: "2022",
+        event: "Announced a $400M consumer technology fund."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Neo",
+    sectors: [
+      "Sector-Agnostic"
+    ],
+    slug: "neo",
+    website: null,
+    short: "Neo",
+    founded: 2017,
+    hq: "San Francisco, CA",
+    aum: "$320M (Fund IV, 2025)",
+    thesis: "Built on the premise that community matters more than capital: identifies and mentors exceptional technical talent early, often while founders are still at university, through a scholars fellowship, an accelerator and a mentor community, and then invests.",
+    leadership: [
+      {
+        name: "Ali Partovi",
+        role: "Founder & CEO",
+        profileSlug: "ali-partovi"
+      }
+    ],
+    timeline: [
+      {
+        year: "2017",
+        event: "Founded by Ali Partovi."
+      },
+      {
+        year: "2018",
+        event: "Debut fund closed at $80M."
+      },
+      {
+        year: "2021",
+        event: "Fund II raised at $130M."
+      },
+      {
+        year: "2023",
+        event: "Raised $235M across two new funds."
+      },
+      {
+        year: "2025",
+        event: "Fund IV closed at $320M."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Human Capital",
+    sectors: [
+      "Sector-Agnostic"
+    ],
+    slug: "human-capital",
+    website: "https://human.capital/",
+    short: "Human Capital",
+    founded: 2015,
+    hq: "San Francisco, CA",
+    aum: "Not publicly disclosed",
+    thesis: "States that ambitious builders turn great ideas into great companies, and invests in founders, teams and startups that share that mindset.",
+    leadership: [
+      {
+        name: "Baris Akis",
+        role: "Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2015",
+        event: "Human Capital founded in San Francisco."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Entrepreneur First",
+    sectors: [
+      "Sector-Agnostic"
+    ],
+    slug: "entrepreneur-first",
+    website: "https://www.joinef.com/",
+    short: "EF",
+    founded: 2011,
+    hq: "London, UK",
+    aum: "$200M (capital raise reported 2026)",
+    thesis: "Pioneered talent investing: the discovery and cultivation of exceptional people with founder potential before they have a co-founder, or even an idea. Invests in individuals first, then helps them find co-founders, form a company and raise a first round.",
+    leadership: [
+      {
+        name: "Alice Bentinck",
+        role: "Co-Founder"
+      },
+      {
+        name: "Matt Clifford",
+        role: "Co-Founder"
+      }
+    ],
+    timeline: [
+      {
+        year: "2011",
+        event: "Founded in London, pioneering the talent-investing model."
+      },
+      {
+        year: "2026",
+        event: "Raised $200M in fresh capital from institutional and individual backers."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Boost VC",
+    sectors: [
+      "Crypto",
+      "Deep Tech"
+    ],
+    slug: "boost-vc",
+    website: null,
+    short: "Boost",
+    founded: 2012,
+    hq: "San Mateo, CA",
+    aum: "Not publicly disclosed",
+    thesis: "Sets out to accelerate the sci-fi future, leading pre-seed rounds with a standardised $500K cheque alongside a twice-yearly three-month accelerator that includes housing and workspace.",
+    leadership: [
+      {
+        name: "Adam Draper",
+        role: "Co-Founder",
+        profileSlug: "adam-draper"
+      },
+      {
+        name: "Brayton Williams",
+        role: "Co-Founder"
+      }
+    ],
+    timeline: [
+      {
+        year: "2012",
+        event: "Boost VC founded by Adam Draper and Brayton Williams in San Mateo."
+      }
+    ],
+    holdings: []
+  },
 ];
