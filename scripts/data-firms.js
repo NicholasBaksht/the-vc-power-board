@@ -93,7 +93,7 @@ const firms = [
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "ALLVP",
   sectors: ["Fintech", "Marketplaces", "Healthcare"],
@@ -114,7 +114,7 @@ const firms = [
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "CRE Venture Capital",
   sectors: ["Fintech", "Enterprise Software"],
@@ -133,7 +133,7 @@ const firms = [
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Creandum",
   sectors: ["Enterprise Software", "Fintech", "Healthcare", "Gaming"],
@@ -156,7 +156,7 @@ const firms = [
     { name: "Spotify", ticker: "SPOT", historicalPrice: null, price: null }
   ]
 },
-{
+  {
   rank: null,
   name: "HV Capital",
   sectors: ["Consumer Internet", "Enterprise Software", "Fintech"],
@@ -176,7 +176,7 @@ const firms = [
     { name: "Zalando", ticker: "ZAL.DE", historicalPrice: null, price: null }
   ]
 },
-{
+  {
   rank: null,
   name: "HongShan Capital",
   sectors: ["Technology", "Healthcare", "Consumer Internet"],
@@ -197,7 +197,7 @@ const firms = [
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Vertex Ventures",
   sectors: ["Technology", "Healthcare"],
@@ -218,7 +218,7 @@ const firms = [
     { name: "CyberArk", ticker: "CYBR", historicalPrice: null, price: null }
   ]
 },
-{
+  {
   rank: null,
   name: "ZhenFund",
   sectors: ["Consumer Internet", "Fintech"],
@@ -240,7 +240,7 @@ const firms = [
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Golden Gate Ventures",
   sectors: ["Fintech", "Marketplaces", "Enterprise Software"],
@@ -261,7 +261,7 @@ const firms = [
   ],
 holdings: []
 },
-{
+  {
   rank: null,
   name: "Elad Gil",
   sectors: ["AI", "Fintech", "SaaS", "Marketplaces"],
@@ -310,7 +310,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Deerfield Management",
   sectors: ["Healthcare"],
@@ -332,7 +332,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Foresite Capital",
   sectors: ["Healthcare"],
@@ -353,7 +353,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Polaris Partners",
   sectors: ["Healthcare", "Enterprise Software"],
@@ -377,7 +377,7 @@ holdings: []
     { name: "Alnylam Pharmaceuticals", ticker: "ALNY", historicalPrice: null, price: null }
   ]
 },
-{
+  {
   rank: null,
   name: "Adobe Ventures",
   sectors: ["AI", "Enterprise Software"],
@@ -395,7 +395,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "ServiceNow Ventures",
   sectors: ["Enterprise Software", "AI"],
@@ -413,7 +413,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Workday Ventures",
   sectors: ["Enterprise Software", "AI"],
@@ -434,7 +434,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Not Boring Capital",
   sectors: ["Fintech", "AI"],
@@ -454,7 +454,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "South Park Commons",
   sectors: ["Enterprise Software", "Consumer Internet"],
@@ -475,7 +475,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Contrary Capital",
   sectors: ["Enterprise Software", "Consumer Internet"],
@@ -495,7 +495,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Konvoy Ventures",
   sectors: ["Gaming"],
@@ -516,7 +516,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Makers Fund",
   sectors: ["Gaming"],
@@ -537,7 +537,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "BITKRAFT Ventures",
   sectors: ["Gaming", "Crypto"],
@@ -580,7 +580,7 @@ holdings: []
     { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null }
   ]
 },
-{
+  {
   rank: null,
   name: "Multicoin Capital",
   sectors: ["Crypto", "DeFi"],
@@ -601,7 +601,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Electric Capital",
   sectors: ["Crypto", "AI", "Healthcare"],
@@ -622,7 +622,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Pantera Capital",
   sectors: ["Crypto", "DeFi"],
@@ -644,7 +644,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Variant Fund",
   sectors: ["Crypto", "DeFi"],
@@ -665,7 +665,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Blockchain Capital",
   sectors: ["Crypto", "DeFi"],
@@ -716,7 +716,7 @@ holdings: []
     { name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: null }
   ]
 },
-{
+  {
   rank: null,
   name: "Altimeter Capital",
   sectors: ["AI", "Enterprise Software", "Consumer Internet"],
@@ -739,7 +739,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "D1 Capital Partners",
   sectors: ["Fintech", "Consumer Internet", "Enterprise Software"],
@@ -765,7 +765,7 @@ holdings: []
     { name: "Squarespace", ticker: "SQSP", historicalPrice: null, price: null }
   ]
 },
-{
+  {
   rank: null,
   name: "Durable Capital Partners",
   sectors: ["Fintech", "Enterprise Software"],
@@ -789,7 +789,7 @@ holdings: []
     { name: "Datadog", ticker: "DDOG", historicalPrice: null, price: null }
   ]
 },
-{
+  {
   rank: null,
   name: "Baillie Gifford",
   sectors: ["Consumer Internet", "AI", "Healthcare"],
@@ -813,7 +813,7 @@ holdings: []
     { name: "Tesla", ticker: "TSLA", historicalPrice: null, price: null }
   ]
 },
-{
+  {
   rank: null,
   name: "Whale Rock Capital Management",
   sectors: ["AI", "Consumer Internet"],
@@ -833,7 +833,7 @@ holdings: []
   ],
   holdings: []
 },
-{
+  {
   rank: null,
   name: "Viking Global Investors",
   sectors: ["AI", "Healthcare", "Consumer Internet"],
@@ -1298,36 +1298,6 @@ holdings: []
     holdings: []
   },
   {
-    rank: 10,
-    name: "Iconiq Growth",
-    sectors: ["Enterprise Software", "Fintech", "Consumer", "Healthcare"],
-    signatureExit: "Snowflake's September 2020 NYSE IPO at a $68 billion valuation — Iconiq led its Series D investment in 2015 and held roughly 14% at the time of listing, one of 27 completed IPOs across its portfolio",
-    slug: "iconiq-growth",
-    website: "https://www.iconiqcapital.com",
-    short: "Iconiq Growth",
-    founded: 2013,
-    hq: "San Francisco, CA",
-    aum: "$5.75B (Fund VII, 2024)",
-    thesis: "Iconiq Growth launched in 2013 as the venture arm of Iconiq Capital, the wealth management firm Divesh Makan co-founded in 2011 to serve Silicon Valley's elite — Mark Zuckerberg, Sheryl Sandberg, Jack Dorsey, and Reid Hoffman among its earliest clients. It was Dave Goldberg, the late SurveyMonkey CEO and an important early client, who encouraged Makan to formalize a venture strategy and helped recruit Will Griffith from Technology Crossover Ventures to lead it. Rather than chase the consumer technology most investors favored at the time, Makan and Griffith made a deliberately contrarian bet on enterprise SaaS, a decision that produced Snowflake, Datadog, and GitLab — all now public — and Iconiq Growth has since deployed $21 billion across more than 140 companies, with its seventh fund closing at $5.75 billion in 2024, its largest ever, backed by an advisory council including Zuckerberg, Hoffman, and Mary Barra.",
-    leadership: [
-      { name: "Divesh Makan", role: "Co-Founder & Managing Partner", profileSlug: "divesh-makan" },
-      { name: "Will Griffith", role: "Co-Founder & Managing Partner" },
-      { name: "Matthew Jacobson", role: "Partner" }
-    ],
-    timeline: [
-      { year: "2011", event: "Divesh Makan co-founds Iconiq Capital." },
-      { year: "2013", event: "Launches Iconiq Growth with Will Griffith, encouraged by Dave Goldberg." },
-      { year: "2015", event: "Leads Snowflake's Series D." },
-      { year: "2020", event: "Snowflake completes its NYSE IPO at a $68 billion valuation." },
-      { year: "2024", event: "Closes Fund VII at $5.75 billion, its largest ever." }
-    ],
-    holdings: [
-      { name: "Snowflake", ticker: "SNOW", historicalPrice: null, price: null },
-      { name: "Datadog", ticker: "DDOG", historicalPrice: null, price: null },
-      { name: "GitLab", ticker: "GTLB", historicalPrice: null, price: null }
-    ]
-  },
-  {
     rank: 59,
     name: "Deviation Capital",
     sectors: ["AI", "Deep Tech", "Healthcare", "Enterprise Software"],
@@ -1709,35 +1679,6 @@ holdings: []
       { name: "Li Auto", ticker: "LI", historicalPrice: null, price: null }
     ]
   },
-   {
-    rank: 2,
-    name: "General Atlantic",
-    sectors: ["Consumer Internet", "Fintech", "Healthcare", "Enterprise Software"],
-    signatureExit: "Slack's 2019 NYSE direct listing at an approximately $19.5 billion valuation — one of several landmark growth-equity outcomes for the firm",
-    slug: "general-atlantic",
-    website: "https://www.generalatlantic.com",
-    short: "General Atlantic",
-    founded: 1980,
-    hq: "New York, NY",
-    aum: "$126B",
-    thesis: "General Atlantic was founded in 1980 as the captive investment team for Atlantic Philanthropies, the foundation of Duty Free Shoppers co-founder Charles F. Feeney, and functioned as his sole family office for more than a decade before taking on outside capital partners. That origin as patient, philanthropically-minded capital rather than a fee-driven fund is still central to the firm's identity: General Atlantic pioneered the growth equity asset class itself, and under Chairman and CEO Bill Ford — who joined in 1991 and became CEO in 2007 — it has invested more than $60 billion across 830-plus companies including ByteDance, Airbnb, and Slack. The firm now manages approximately $126 billion across growth equity, credit, climate, and sustainable infrastructure strategies, ranking 13th globally among the world's largest private equity firms.",
-    leadership: [
-      { name: "Bill Ford", role: "Chairman & CEO", profileSlug: "bill-ford" },
-      { name: "Gabriel Caillaux", role: "Co-President" },
-      { name: "Martín Escobari", role: "Co-President" }
-    ],
-    timeline: [
-      { year: "1980", event: "Charles F. Feeney establishes General Atlantic as his direct investment entity, funded solely by his own capital." },
-      { year: "1991", event: "Bill Ford joins the firm; General Atlantic begins accepting outside capital partners as Feeney gives away his fortune." },
-      { year: "2007", event: "Bill Ford becomes CEO." },
-      { year: "2019", event: "Portfolio company Slack completes its NYSE direct listing at approximately $19.5 billion." },
-      { year: "2021", event: "Bill Ford is appointed Chairman." },
-      { year: "2025", event: "AUM reaches approximately $126 billion; firm ranks 13th on Private Equity International's PEI 300." }
-    ],
-    holdings: [
-      { name: "Alibaba", ticker: "BABA", historicalPrice: null, price: 115.00 }
-    ]
-  },
   {
     rank: 12,
     name: "Paradigm",
@@ -1994,7 +1935,7 @@ holdings: []
       { name: "Doximity", ticker: "DOCS", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 1,
     name: "Andreessen Horowitz",
     sectors: ["AI", "Crypto", "Fintech", "Consumer"],
@@ -2061,34 +2002,6 @@ holdings: []
     ]
   },
   {
-    rank: 3,
-    name: "Insight Partners",
-    sectors: ["Software", "SaaS", "Cybersecurity"],
-    signatureExit: "Shopify's 2015 IPO, one of the defining e-commerce software exits of the decade",
-    slug: "insight-partners",
-    seoPage: "firms/insight-partners/",
-    website: "https://www.insightpartners.com",
-    short: "Insight",
-    founded: 1995,
-    hq: "New York, NY",
-    aum: "$90B+",
-    thesis: "Founded in 1995 by Jeff Horing and Jerry Murdock in New York, Insight built its identity on outbound sourcing long before that was common practice — in the firm's earliest years, the two co-founders would comb through trade publications by hand looking for software companies that were hiring, and therefore growing. That research-driven, find-them-before-anyone-else approach scaled into a firm managing tens of billions of dollars, still built around the same instinct to spot momentum early.",
-    leadership: [
-      { name: "Jeff Horing", role: "Co-Founder & Managing Director", profileSlug: "jeff-horing" },
-      { name: "Jerry Murdock", role: "Co-Founder (Managing Director until 2011)" }
-    ],
-    timeline: [
-      { year: "1995", event: "Jeff Horing and Jerry Murdock found the firm in New York, betting early on B2B software." },
-      { year: "1995-2000", event: "Sources deals by manually reading trade publications for software companies that were hiring." },
-      { year: "2015", event: "Portfolio company Shopify goes public, one of the firm's defining software exits." },
-      { year: "2025", event: "Assets under management surpass $90 billion, with over 875 companies invested in to date." }
-    ],
-    holdings: [
-      { name: "Shopify", ticker: "SHOP", investedYear: 2013, historicalPrice: 107.53, price: 123.56 },
-      { name: "DocuSign", ticker: "DOCU", historicalPrice: null, price: 52.74 }
-    ]
-  },
-  {
   rank: 4,
     name: "Tiger Global Management",
     sectors: ["Internet", "Fintech", "Consumer Tech"],
@@ -2113,34 +2026,6 @@ holdings: []
     holdings: [
       { name: "Coinbase", ticker: "COIN", investedYear: 2018, historicalPrice: 257.21, price: 161.00 },
       { name: "JD.com", ticker: "JD", investedYear: 2011, historicalPrice: null, price: 29.62 }
-    ]
-  },
-  {
-    rank: 5,
-    name: "Coatue Management",
-    sectors: ["Technology", "Consumer", "Fintech", "AI"],
-    signatureExit: "Snap's 2017 IPO — Coatue's private investing arm, launched by co-founder Thomas Laffont in 2003, made an early 2013 investment in Snap years before its public debut",
-    slug: "coatue-management",
-    website: "https://www.coatue.com",
-    short: "Coatue",
-    founded: 1999,
-    hq: "New York, NY",
-    aum: "$54B+",
-    thesis: "Coatue Management was founded in 1999 by Philippe Laffont, a 'Tiger Cub' alumnus of Julian Robertson's Tiger Management, initially as a technology-focused public equities hedge fund. In 2003, Philippe's brother Thomas Laffont joined after seven years at Creative Artists Agency to launch Coatue's private investing business, transforming the firm into one of the most active crossover investors in technology — moving fluidly between public stocks and early-stage venture bets. That range led Coatue to back Snap years before its 2017 IPO, along with ByteDance, DoorDash, and OpenAI, while its public portfolio holds major stakes in Nvidia, Meta, and other dominant technology companies.",
-    leadership: [
-      { name: "Philippe Laffont", role: "Founder & Portfolio Manager" },
-      { name: "Thomas Laffont", role: "Co-Founder & CIO of Privates", profileSlug: "thomas-laffont" }
-    ],
-    timeline: [
-      { year: "1999", event: "Philippe Laffont founds Coatue Management as a technology-focused hedge fund with $45 million in starting capital." },
-      { year: "2003", event: "Thomas Laffont joins to launch Coatue's private investing and venture capital business." },
-      { year: "2013", event: "Coatue makes an early investment in Snap, years before its IPO." },
-      { year: "2017", event: "Snap goes public." },
-      { year: "2020s", event: "Backs ByteDance, DoorDash, and OpenAI as the firm's venture practice accelerates alongside the AI boom." }
-    ],
-    holdings: [
-       { name: "Snap", ticker: "SNAP", investedYear: 2013, historicalPrice: null, price: 4.53 },
-      { name: "DoorDash", ticker: "DASH", investedYear: 2018, historicalPrice: 170.65, price: 175.00 }
     ]
   },
   {
@@ -2171,7 +2056,7 @@ holdings: []
       { name: "Samsara", ticker: "IOT", investedYear: 2017, historicalPrice: null, price: 38.32 }
     ]
   },
-   {
+  {
     rank: 7,
     name: "Dragoneer Investment Group",
     sectors: ["Consumer Internet", "SaaS", "Fintech", "AI"],
@@ -2230,7 +2115,7 @@ holdings: []
       { name: "Workday", ticker: "WDAY", investedYear: 2009, historicalPrice: null, price: 144.78 }
     ]
   },
-   {
+  {
     rank: 9,
     name: "TCV",
     sectors: ["Consumer Internet", "SaaS", "Fintech", "Media"],
@@ -2320,7 +2205,7 @@ holdings: []
       { name: "Snap", ticker: "SNAP", investedYear: 2014, historicalPrice: null, price: 4.53 }
     ]
   },
- {
+  {
     rank: 10,
     name: "Ribbit Capital",
     sectors: ["Fintech", "Crypto", "Consumer Internet", "AI"],
@@ -2350,7 +2235,7 @@ holdings: []
       { name: "SoFi", ticker: "SOFI", historicalPrice: null, price: null }
     ]
   },
-    {
+  {
     rank: 11,
     name: "Accel",
     sectors: ["Enterprise Software", "Consumer", "Security"],
@@ -2377,7 +2262,7 @@ holdings: []
       { name: "Etsy", ticker: "ETSY", investedYear: 2008, historicalPrice: null, price: 84.10 }
     ]
   },
-   {
+  {
     rank: 12,
     name: "OrbiMed",
     sectors: ["Biotech", "Pharmaceuticals", "Healthcare", "Diagnostics"],
@@ -2488,7 +2373,7 @@ holdings: []
  { name: "Guidewire", ticker: "GWRE", investedYear: 2007, historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 19,
     name: "8VC",
     sectors: ["Enterprise Software", "Defense Tech", "Healthcare", "AI", "Industrial Tech"],
@@ -2543,7 +2428,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 22,
     name: "SignalFire",
     sectors: ["AI", "Enterprise Software", "Cybersecurity", "Healthcare"],
@@ -2620,7 +2505,7 @@ holdings: []
       { name: "The RealReal", ticker: "REAL", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 40,
     name: "Slow Ventures",
     sectors: ["Consumer", "Fintech", "Enterprise Software", "Crypto", "Healthcare"],
@@ -2650,7 +2535,7 @@ holdings: []
       { name: "BuzzFeed", ticker: "BZFD", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 41,
     name: "Primary Venture Partners",
     sectors: ["Fintech", "Consumer", "Healthcare", "Enterprise Software"],
@@ -2675,7 +2560,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 42,
     name: "Lerer Hippeau",
     sectors: ["Consumer", "Healthcare", "Fintech", "Enterprise Software"],
@@ -2705,7 +2590,7 @@ holdings: []
       { name: "BuzzFeed", ticker: "BZFD", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 82,
     name: "BoxGroup",
     sectors: ["Fintech", "Enterprise Software", "Consumer", "Deep Tech"],
@@ -2935,7 +2820,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 43,
     name: "Pear VC",
     sectors: ["Fintech", "AI", "Cybersecurity", "Healthcare", "Consumer"],
@@ -2964,7 +2849,7 @@ holdings: []
       { name: "Dropbox", ticker: "DBX", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 44,
     name: "Upfront Ventures",
     sectors: ["Consumer", "Enterprise Software", "Fintech", "Media"],
@@ -2992,7 +2877,7 @@ holdings: []
       { name: "TrueCar", ticker: "TRUE", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 45,
     name: "Acrew Capital",
     sectors: ["Fintech", "AI", "Cybersecurity", "Healthcare"],
@@ -3047,7 +2932,7 @@ holdings: []
       { name: "Root Insurance", ticker: "ROOT", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 15,
     name: "ARCH Venture Partners",
     sectors: ["Biotech", "Healthcare", "AI", "Deep Tech"],
@@ -3076,7 +2961,7 @@ holdings: []
       { name: "Illumina", ticker: "ILMN", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 16,
     name: "B Capital Group",
     sectors: ["Enterprise Software", "Fintech", "Healthcare", "Climate"],
@@ -3132,7 +3017,7 @@ holdings: []
  { name: "Robinhood", ticker: "HOOD", investedYear: 2013, historicalPrice: null, price: 99.96 }
     ]
   },
-   {
+  {
     rank: 17,
     name: "Sapphire Ventures",
     sectors: ["Enterprise Software", "SaaS", "AI", "Cybersecurity"],
@@ -3161,7 +3046,7 @@ holdings: []
       { name: "Braze", ticker: "BRZE", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 16,
     name: "Intel Capital",
     sectors: ["AI", "Cloud Infrastructure", "Cybersecurity", "5G", "Robotics"],
@@ -3330,7 +3215,7 @@ holdings: []
       { name: "Twilio", ticker: "TWLO", historicalPrice: null, price: 206.78 }
     ]
   },
-   {
+  {
     rank: 21,
     name: "Eclipse Ventures",
     sectors: ["Robotics", "AI Infrastructure", "Manufacturing", "Defense", "Climate"],
@@ -3354,7 +3239,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 22,
     name: "Altos Ventures",
     sectors: ["Consumer", "Enterprise Software", "Marketplaces", "Fintech"],
@@ -3381,7 +3266,7 @@ holdings: []
       { name: "Coupang", ticker: "CPNG", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 23,
     name: "Peak XV Partners",
     sectors: ["AI", "Fintech", "Enterprise Software", "Consumer", "Cloud"],
@@ -3440,7 +3325,7 @@ holdings: []
       { name: "Snap", ticker: "SNAP", historicalPrice: null, price: 4.53 }
     ]
   },
-   {
+  {
     rank: 22,
     name: "GGV Capital",
     sectors: ["AI", "Fintech", "Enterprise Software", "Consumer Internet"],
@@ -3530,7 +3415,7 @@ holdings: []
       { name: "Coinbase", ticker: "COIN", historicalPrice: 257.21, price: 161.00 }
     ]
   },
-   {
+  {
     rank: 24,
     name: "CapitalG",
     sectors: ["AI", "Enterprise Software", "Cybersecurity", "Fintech"],
@@ -3588,7 +3473,7 @@ holdings: []
       { name: "Roku", ticker: "ROKU", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 25,
     name: "Salesforce Ventures",
     sectors: ["AI", "Enterprise Software", "Fintech", "Cybersecurity"],
@@ -3617,7 +3502,7 @@ holdings: []
       { name: "nCino", ticker: "NCNO", historicalPrice: null, price: null }
     ]
   },
-    {
+  {
     rank: 25,
     name: "Lux Capital",
     sectors: ["Deep Tech", "AI", "Healthcare", "Defense Tech", "Clean Energy"],
@@ -3677,7 +3562,7 @@ holdings: []
       { name: "Snowflake", ticker: "SNOW", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 27,
     name: "Crosslink Capital",
     sectors: ["AI", "Enterprise Software", "Consumer Internet", "Fintech", "Cloud Infrastructure"],
@@ -3703,7 +3588,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 28,
     name: "Breakthrough Energy Ventures",
     sectors: ["Climate", "Energy", "Agriculture", "Industrial Technology"],
@@ -3729,7 +3614,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 27,
     name: "Balderton Capital",
     sectors: ["AI", "Fintech", "Enterprise Software", "Cybersecurity", "Healthcare"],
@@ -3760,7 +3645,7 @@ holdings: []
       { name: "Flywire", ticker: "FLYW", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 28,
     name: "5Y Capital",
     sectors: ["AI", "Consumer Internet", "Enterprise Software", "Deep Tech"],
@@ -3788,7 +3673,7 @@ holdings: []
       { name: "XPeng", ticker: "XPEV", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 28,
     name: "FirstMark Capital",
     sectors: ["Enterprise Software", "Consumer", "AI", "Fintech", "Healthcare"],
@@ -3819,7 +3704,7 @@ holdings: []
       { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: 141.10 }
     ]
   },
-   {
+  {
     rank: 27,
     name: "Flagship Pioneering",
     sectors: ["Biotech", "Healthcare", "Climate", "Life Sciences"],
@@ -3847,7 +3732,7 @@ holdings: []
       { name: "Moderna", ticker: "MRNA", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 29,
     name: "F-Prime Capital",
     sectors: ["Biotech", "Healthcare", "Enterprise Software", "Fintech"],
@@ -3876,7 +3761,7 @@ holdings: []
       { name: "Denali Therapeutics", ticker: "DNLI", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 30,
     name: "Energy Impact Partners",
     sectors: ["Energy", "Climate", "Grid Technology", "Cybersecurity"],
@@ -3902,7 +3787,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 29,
     name: "JAFCO Group",
     sectors: ["Enterprise Software", "Fintech", "Robotics", "Healthcare"],
@@ -3928,7 +3813,7 @@ holdings: []
       { name: "Cybozu", ticker: "4776.T", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 29,
     name: "Cisco Investments",
     sectors: ["AI", "Cybersecurity", "Cloud Infrastructure", "Enterprise Software"],
@@ -4161,7 +4046,7 @@ holdings: []
      { name: "Lyft", ticker: "LYFT", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 33,
     name: "Pitango Venture Capital",
     sectors: ["Enterprise Software", "Fintech", "Cybersecurity", "Healthcare", "AI"],
@@ -4250,7 +4135,7 @@ holdings: []
       { name: "Box", ticker: "BOX", historicalPrice: null, price: null }
     ]
   },
-{
+  {
     rank: 20,
     name: "Foundation Capital",
     sectors: ["Fintech", "Enterprise Software", "Consumer", "AI"],
@@ -4278,7 +4163,7 @@ holdings: []
       { name: "Netflix", ticker: "NFLX", historicalPrice: null, price: null }
     ]
   },
-{
+  {
     rank: 21,
     name: "RRE Ventures",
     sectors: ["Enterprise Software", "Fintech", "Consumer", "AI", "Healthcare"],
@@ -4338,7 +4223,7 @@ holdings: []
       { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 34,
     name: "Northzone",
     sectors: ["AI", "Fintech", "Healthcare", "Enterprise Software", "Climate", "Consumer"],
@@ -4398,7 +4283,7 @@ holdings: []
       { name: "Box", ticker: "BOX", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 34,
     name: "Jerusalem Venture Partners",
     sectors: ["Cybersecurity", "AI", "Enterprise Software", "Fintech"],
@@ -4426,7 +4311,7 @@ holdings: []
       { name: "Cogent Communications", ticker: "CCOI", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 36,
     name: "Social Capital",
     sectors: ["AI", "Healthcare", "Climate", "Enterprise Software"],
@@ -4453,7 +4338,7 @@ holdings: []
       { name: "Box", ticker: "BOX", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 37,
     name: "Nexus Venture Partners",
     sectors: ["Enterprise Software", "AI", "Fintech", "Consumer"],
@@ -4480,7 +4365,7 @@ holdings: []
       { name: "Delhivery", ticker: "DELHIVERY.NS", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 38,
     name: "500 Global",
     sectors: ["Fintech", "Enterprise Software", "Consumer"],
@@ -4507,7 +4392,7 @@ holdings: []
       { name: "Twilio", ticker: "TWLO", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 35,
     name: "Helios Investment Partners",
     sectors: ["Fintech", "Enterprise Software", "Climate", "Mobility"],
@@ -4534,7 +4419,7 @@ holdings: []
       { name: "Helios Towers", ticker: "HTWS.L", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 35,
     name: "Molten Ventures",
     sectors: ["Enterprise Software", "Fintech", "Deep Tech", "Healthcare", "Climate"],
@@ -4564,7 +4449,7 @@ holdings: []
       { name: "UiPath", ticker: "PATH", historicalPrice: null, price: null }
     ]
   },
-    {
+  {
     rank: 35,
     name: "PeakSpan Capital",
     sectors: ["AI", "Enterprise Software", "Vertical SaaS", "Fintech", "Ecommerce Infrastructure"],
@@ -4591,7 +4476,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 36,
     name: "Inovia Capital",
     sectors: ["AI", "Cybersecurity", "Digital Health", "Fintech", "Infrastructure"],
@@ -4619,7 +4504,7 @@ holdings: []
       { name: "Lightspeed Commerce", ticker: "LSPD", historicalPrice: 15.74, price: 11.68 }
     ]
   },
-   {
+  {
     rank: 37,
     name: "Qualcomm Ventures",
     sectors: ["AI", "5G", "Automotive", "IoT", "Cybersecurity"],
@@ -4646,7 +4531,7 @@ holdings: []
       { name: "SentinelOne", ticker: "S", historicalPrice: 22.57, price: 18.55 }
     ]
   },
-   {
+  {
     rank: 38,
     name: "Dell Technologies Capital",
     sectors: ["AI", "Cybersecurity", "Data & Analytics", "Enterprise Software"],
@@ -4707,7 +4592,7 @@ holdings: []
       { name: "Duolingo", ticker: "DUOL", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 54,
     name: "QED Investors",
     sectors: ["Fintech", "Insurance", "Lending", "Banking Infrastructure"],
@@ -4736,7 +4621,7 @@ holdings: []
       { name: "SoFi", ticker: "SOFI", historicalPrice: null, price: 16.74 }
     ]
   },
-   {
+  {
     rank: 53,
     name: "Canaan Partners",
     sectors: ["Enterprise Software", "Fintech", "Consumer Internet", "Healthcare"],
@@ -4765,7 +4650,7 @@ holdings: []
       { name: "LendingClub", ticker: "LC", historicalPrice: null, price: 19.21 }
     ]
   },
-   {
+  {
     rank: 35,
     name: "Maveron",
     sectors: ["Consumer", "Ecommerce", "Fintech", "Healthcare", "Education"],
@@ -4792,7 +4677,7 @@ holdings: []
       { name: "Allbirds", ticker: "BIRD", historicalPrice: null, price: null }
     ]
   },
-    {
+  {
     rank: 36,
     name: "RTP Global",
     sectors: ["AI", "Enterprise Software", "Fintech", "Developer Tools", "Climate"],
@@ -4819,7 +4704,7 @@ holdings: []
       { name: "Datadog", ticker: "DDOG", historicalPrice: 143.63, price: 255.00 }
     ]
   },
-   {
+  {
     rank: 55,
     name: "Kaszek Ventures",
     sectors: ["Fintech", "Ecommerce", "Marketplaces", "Enterprise Software"],
@@ -4847,7 +4732,7 @@ holdings: []
       { name: "Nubank", ticker: "NU", historicalPrice: null, price: 14.68 }
     ]
   },
-   {
+  {
     rank: 56,
     name: "SOSV",
     sectors: ["Deep Tech", "Biotech", "Climate", "Hardware"],
@@ -4873,7 +4758,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 55,
     name: "monashees",
     sectors: ["Fintech", "Marketplaces", "Logistics", "Edtech"],
@@ -4897,7 +4782,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 56,
     name: "Partech",
     sectors: ["Fintech", "Deep Tech", "Enterprise Software", "Energy"],
@@ -4923,7 +4808,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 57,
     name: "HealthQuest Capital",
     sectors: ["Healthcare", "Medical Devices", "Diagnostics", "Digital Health"],
@@ -4980,7 +4865,7 @@ holdings: []
       { name: "Auto1 Group", ticker: "AG1.DE", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 57,
     name: "DN Capital",
     sectors: ["Fintech", "SaaS", "Consumer Internet", "AI"],
@@ -5007,7 +4892,7 @@ holdings: []
       { name: "AUTO1 Group", ticker: "AG1.DE", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 58,
     name: "Chiratae Ventures",
     sectors: ["Consumer Internet", "Fintech", "Healthcare", "Deep Tech"],
@@ -5060,7 +4945,7 @@ holdings: []
       { name: "Prenetics", ticker: "PRE", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 60,
     name: "Seedcamp",
     sectors: ["Fintech", "SaaS", "AI", "Cybersecurity"],
@@ -5089,7 +4974,7 @@ holdings: []
       { name: "Wise", ticker: "WISE", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 61,
     name: "High-Tech Gründerfonds",
     sectors: ["Deep Tech", "Healthcare", "Climate", "Enterprise Software"],
@@ -5115,7 +5000,7 @@ holdings: []
       { name: "CureVac", ticker: "CVAC", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 62,
     name: "Forerunner Ventures",
     sectors: ["Consumer", "Commerce", "Digital Health", "Fintech"],
@@ -5144,7 +5029,7 @@ holdings: []
       { name: "Warby Parker", ticker: "WRBY", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 63,
     name: "Third Rock Ventures",
     sectors: ["Biotech", "Therapeutics", "Life Sciences"],
@@ -5174,7 +5059,7 @@ holdings: []
       { name: "Agios Pharmaceuticals", ticker: "AGIO", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 64,
     name: "Lowercarbon Capital",
     sectors: ["Climate", "Carbon Removal", "Energy", "Industrial Technology"],
@@ -5199,7 +5084,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 65,
     name: "Forgepoint Capital",
     sectors: ["Cybersecurity", "AI Security", "Infrastructure Software"],
@@ -5225,7 +5110,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 66,
     name: "NFX",
     sectors: ["Marketplaces", "AI", "Consumer", "SaaS", "Fintech"],
@@ -5255,7 +5140,7 @@ holdings: []
       { name: "DoorDash", ticker: "DASH", historicalPrice: 170.65, price: 175.00 }
     ]
   },
-   {
+  {
     rank: 67,
     name: "Congruent Ventures",
     sectors: ["Climate", "Energy", "Mobility", "Food & Agriculture"],
@@ -5280,7 +5165,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 68,
     name: "Shield Capital",
     sectors: ["AI", "Cybersecurity", "Defense Tech", "Deep Tech"],
@@ -5306,7 +5191,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 67,
     name: "Point Nine",
     sectors: ["SaaS", "Marketplaces", "AI", "Fintech"],
@@ -5333,7 +5218,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 68,
     name: "Lakestar",
     sectors: ["Fintech", "Deep Tech", "Defense & Dual-Use", "Consumer Internet"],
@@ -5361,7 +5246,7 @@ holdings: []
       { name: "SoFi", ticker: "SOFI", historicalPrice: null, price: 16.74 }
     ]
   },
-   {
+  {
     rank: 69,
     name: "East Ventures",
     sectors: ["Consumer Internet", "Fintech", "Marketplaces", "Logistics"],
@@ -5390,7 +5275,7 @@ holdings: []
       { name: "Fore Coffee", ticker: "FORE.JK", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 36,
     name: "Atomico",
     sectors: ["AI", "Enterprise Software", "Fintech", "Healthcare", "Consumer Internet"],
@@ -5419,7 +5304,7 @@ holdings: []
       { name: "Hinge Health", ticker: "HNGE", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 37,
     name: "BMW i Ventures",
     sectors: ["Mobility", "Climate", "AI"],
@@ -5478,7 +5363,7 @@ holdings: []
       { name: "Ginkgo Bioworks", ticker: "DNA", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 37,
     name: "Amplify Partners",
     sectors: ["AI", "Developer Tools", "Cybersecurity", "Enterprise Software", "Cloud Infrastructure"],
@@ -5506,7 +5391,7 @@ holdings: []
       { name: "Datadog", ticker: "DDOG", historicalPrice: 143.63, price: 255.00 }
     ]
   },
-   {
+  {
     rank: 39,
     name: "Toyota Ventures",
     sectors: ["AI", "Robotics", "Climate", "Enterprise Software"],
@@ -5530,7 +5415,7 @@ holdings: []
     ],
     holdings: []
   },
-{
+  {
     rank: 39,
     name: "BECO Capital",
     sectors: ["Fintech", "Enterprise Software", "Consumer", "AI"],
@@ -5555,7 +5440,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 38,
     name: "Wing Venture Capital",
     sectors: ["AI", "Data Infrastructure", "Enterprise Software", "Cybersecurity", "Developer Tools"],
@@ -5581,7 +5466,7 @@ holdings: []
       { name: "Snowflake", ticker: "SNOW", historicalPrice: 157.51, price: 250.00 }
     ]
   },
-   {
+  {
     rank: 39,
     name: "Cherry Ventures",
     sectors: ["AI", "Enterprise Software", "Fintech", "Climate", "Healthcare"],
@@ -5693,7 +5578,7 @@ holdings: []
       { name: "HubSpot", ticker: "HUBS", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 40,
     name: "BOLD Capital Partners",
     sectors: ["AI", "Healthcare", "Robotics", "Climate"],
@@ -5718,7 +5603,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 41,
     name: "Bloomberg Beta",
     sectors: ["AI", "Enterprise Software", "Fintech", "Future of Work"],
@@ -5744,7 +5629,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 42,
     name: "Ventures Platform",
     sectors: ["Fintech", "Healthcare", "Enterprise Software", "AI"],
@@ -5767,7 +5652,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 42,
     name: "Comcast Ventures",
     sectors: ["Consumer Internet", "Enterprise Software", "Media Tech", "Fintech"],
@@ -5795,7 +5680,7 @@ holdings: []
       { name: "Sprinklr", ticker: "CXM", historicalPrice: null, price: null }
     ]
   },
-{
+  {
     rank: 44,
     name: "TLcom Capital",
     sectors: ["Fintech", "Agritech", "Edtech", "Mobility"],
@@ -5821,7 +5706,7 @@ holdings: []
     ],
     holdings: []
   },
-{
+  {
     rank: 45,
     name: "YL Ventures",
     sectors: ["Cybersecurity", "AI Security"],
@@ -5846,7 +5731,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 46,
     name: "Cyberstarts",
     sectors: ["Cybersecurity", "Cloud Security", "AI Security"],
@@ -5872,7 +5757,7 @@ holdings: []
     ],
     holdings: []
   },
-{
+  {
     rank: 43,
     name: "Novastar Ventures",
     sectors: ["Consumer", "Climate", "Healthcare", "Enterprise Software"],
@@ -5896,7 +5781,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 77,
     name: "Enza Capital",
     sectors: ["Fintech", "Healthcare", "Climate", "Enterprise Software"],
@@ -5919,7 +5804,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 78,
     name: "KawiSafi Ventures",
     sectors: ["Climate", "Enterprise Software"],
@@ -5942,7 +5827,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 79,
     name: "CrossBoundary",
     sectors: ["Climate", "Enterprise Software"],
@@ -5965,7 +5850,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 80,
     name: "Launch Africa Ventures",
     sectors: ["Fintech", "Healthcare", "Climate", "Edtech"],
@@ -5988,7 +5873,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 47,
     name: "Canary",
     sectors: ["Fintech", "Enterprise Software", "Consumer", "Climate"],
@@ -6013,7 +5898,7 @@ holdings: []
       { name: "Méliuz", ticker: "CASH3.SA", historicalPrice: null, price: null }
     ]
   },
-   {
+  {
     rank: 48,
     name: "Jungle Ventures",
     sectors: ["SaaS", "B2B", "Fintech", "Consumer Tech"],
@@ -6038,7 +5923,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 43,
     name: "Rakuten Capital",
     sectors: ["Consumer Internet", "Fintech", "Mobility", "Marketplaces"],
@@ -6064,7 +5949,7 @@ holdings: []
       { name: "Lyft", ticker: "LYFT", historicalPrice: null, price: 15.45 }
     ]
   },
-   {
+  {
     rank: 41,
     name: "Porsche Ventures",
     sectors: ["Mobility", "Climate", "Enterprise Software"],
@@ -6090,7 +5975,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 42,
     name: "LocalGlobe",
     sectors: ["Fintech", "Consumer", "Marketplaces", "Enterprise Software", "Climate"],
@@ -6705,7 +6590,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 63,
     name: "Samsung NEXT",
     sectors: ["AI", "Fintech", "Healthcare", "Cloud Infrastructure"],
@@ -6729,7 +6614,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 64,
     name: "M12",
     sectors: ["AI", "Enterprise Software", "Cybersecurity"],
@@ -6756,7 +6641,7 @@ holdings: []
       { name: "TaskUs", ticker: "TASK", historicalPrice: null, price: 5.52 }
     ]
   },
-   {
+  {
     rank: 65,
     name: "SKY VC",
     sectors: ["Mobility", "Climate", "Enterprise Software"],
@@ -6783,7 +6668,7 @@ holdings: []
       { name: "Joby Aviation", ticker: "JOBY", historicalPrice: 8.09, price: 7.24 }
     ]
   },
-   {
+  {
     rank: 66,
     name: "Citi Ventures",
     sectors: ["Fintech", "AI", "Enterprise Software", "Cybersecurity"],
@@ -6809,7 +6694,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 69,
     name: "Barclays UK Ventures",
     sectors: ["Fintech", "Cybersecurity", "Data & AI"],
@@ -6832,7 +6717,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 71,
     name: "EchoVC Partners",
     sectors: ["Fintech", "Healthcare", "Mobility", "Enterprise Software"],
@@ -6855,7 +6740,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 72,
     name: "Voltron Capital",
     sectors: ["Fintech", "Healthcare", "Enterprise Software"],
@@ -6877,7 +6762,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 83,
     name: "Amazon Alexa Fund",
     sectors: ["AI", "Consumer", "Enterprise Software"],
@@ -7369,35 +7254,6 @@ holdings: []
     ]
   },
   {
-    rank: 2,
-    name: "Hillhouse Investment Group",
-    sectors: ["Consumer", "AI", "Healthcare", "Enterprise Software"],
-    signatureExit: "JD.com's 2014 NASDAQ IPO — Zhang Lei insisted founder Richard Liu take a $255 million investment in 2010 instead of the $75 million Liu had requested, a stake worth roughly $3.9 billion by the time JD.com went public four years later",
-    slug: "hillhouse-investment-group",
-    website: "https://www.hillhouseinvestment.com",
-    short: "Hillhouse",
-    founded: 2005,
-    hq: "Singapore",
-    aum: "$100B+",
-    thesis: "Hillhouse Investment Group was founded in June 2005 by Zhang Lei, a Yale-trained protégé of legendary endowment chief investment officer David Swensen, who secured $20 million in seed capital directly from Yale's own endowment to launch the firm. Named after Hillhouse Avenue, the New Haven street where Yale's endowment office sits, the firm applied Swensen's long-term, fundamentals-driven value investing philosophy to a market few Western investors understood well: early-2000s China. That patient conviction produced an extraordinary early stake in Tencent that Hillhouse still holds today, and a defining bet on JD.com in 2010, when Zhang insisted founder Richard Liu accept $255 million rather than the $75 million he'd requested, funding the logistics infrastructure that became JD.com's core competitive moat. Hillhouse has since evolved from a China-focused fund into a genuinely global investment platform spanning venture capital, growth equity, and buyouts, managing more than $100 billion across offices in Singapore, Hong Kong, Beijing, and New York.",
-    leadership: [
-      { name: "Zhang Lei", role: "Founder, Chairman & CEO", profileSlug: "zhang-lei" },
-      { name: "Tracy Ma", role: "Partner & COO" }
-    ],
-    timeline: [
-      { year: "2005", event: "Zhang Lei founds Hillhouse Capital in June with $20 million in seed capital from Yale's endowment." },
-      { year: "2004", event: "Makes an early investment in Tencent, before Hillhouse's formal 2005 founding, via Zhang's earlier work with the Yale endowment." },
-      { year: "2010", event: "Invests $255 million in JD.com's logistics build-out." },
-      { year: "2014", event: "JD.com completes its NASDAQ IPO; the 2010 stake is worth roughly $3.9 billion." },
-      { year: "2019", event: "Rebrands operations and establishes a dedicated technology investment platform exceeding $10 billion." }
-    ],
-    holdings: [
-      { name: "Tencent", ticker: "0700.HK", historicalPrice: null, price: null },
-      { name: "JD.com", ticker: "JD", historicalPrice: null, price: null },
-      { name: "Baidu", ticker: "BIDU", historicalPrice: null, price: null }
-    ]
-  },
-  {
     rank: 19,
     name: "Oak HC/FT",
     sectors: ["Healthcare", "Fintech"],
@@ -7448,7 +7304,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 84,
     name: "Gradient Ventures",
     sectors: ["AI", "Developer Tools", "Enterprise Software", "Fintech"],
@@ -7473,7 +7329,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 73,
     name: "Norrsken22",
     sectors: ["Fintech", "Healthcare", "Edtech", "Enterprise Software"],
@@ -7498,7 +7354,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 76,
     name: "Future Africa",
     sectors: ["Fintech", "Healthcare", "Edtech", "Climate"],
@@ -7521,7 +7377,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 81,
     name: "In-Q-Tel",
     sectors: ["AI", "Cybersecurity", "Deep Tech", "Defense Tech"],
@@ -7574,7 +7430,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 74,
     name: "Shorooq Partners",
     sectors: ["Fintech", "Enterprise Software", "Mobility", "AI"],
@@ -7598,7 +7454,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 75,
     name: "VentureSouq",
     sectors: ["Fintech", "Climate", "Enterprise Software"],
@@ -7622,7 +7478,7 @@ holdings: []
     ],
     holdings: []
   },
-   {
+  {
     rank: 68,
     name: "Y Combinator",
     sectors: ["AI", "SaaS", "Consumer Internet", "Fintech", "Biotech"],
@@ -7654,37 +7510,6 @@ holdings: []
       { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: 141.10 },
       { name: "Dropbox", ticker: "DBX", historicalPrice: null, price: 32.06 },
       { name: "Reddit", ticker: "RDDT", historicalPrice: null, price: 178.44 }
-    ]
-  },
-   {
-    rank: 67,
-    name: "DST Global",
-    sectors: ["Consumer Internet", "Fintech", "AI"],
-    signatureExit: "Facebook's 2012 IPO, which valued the company at $104 billion — DST was one of the best-known early crossover investors into Facebook",
-    slug: "dst-global",
-    website: "https://dst-global.com",
-    short: "DST Global",
-    founded: 2009,
-    hq: "Cayman Islands (registered office; no single operating HQ disclosed)",
-    aum: "Not publicly disclosed; DST Global IV reported closing at just over $1B (2014)",
-    thesis: "DST Global's distinctiveness is concentration plus timing. Founded by Yuri Milner in 2009, the firm was built to invest into already-obvious but not-yet-publicly-liquid internet winners, becoming famous for writing large checks into companies like Facebook, Alibaba, Twitter, and Spotify before many institutional investors were comfortable with that strategy. The firm's official site remains notably sparse, which is itself a signal: DST still behaves more like a private compounder than a brand-heavy platform venture franchise, and continued to back growth-stage technology as recently as 2023's Reka AI financing.",
-    leadership: [
-      { name: "Yuri Milner", role: "Founder", profileSlug: "yuri-milner" },
-      { name: "Saurabh Gupta", role: "Co-Founder" },
-      { name: "John Lindfors", role: "Co-Founder" },
-      { name: "Rahul Mehta", role: "Co-Founder" }
-    ],
-    timeline: [
-      { year: "2009", event: "Yuri Milner founds DST Global." },
-      { year: "2012", event: "Facebook goes public at a $104 billion valuation." },
-      { year: "2014", event: "DST Global IV closes at just over $1 billion, per Reuters." },
-      { year: "2021", event: "Reuters identifies DST as an active backer of growth-stage tech including Clubhouse and CloudWalk." },
-      { year: "2023", event: "DST participates in AI company Reka's financing." }
-    ],
-    holdings: [
-      { name: "Meta Platforms", ticker: "META", historicalPrice: null, price: 593.87 },
-      { name: "Alibaba", ticker: "BABA", historicalPrice: null, price: 115.00 },
-      { name: "Spotify", ticker: "SPOT", historicalPrice: null, price: 482.66 }
     ]
   },
   {
