@@ -7707,4 +7707,59 @@ holdings: []
     ],
     holdings: []
   },
+  {
+    rank: 3,
+    name: "Insight Partners",
+    sectors: ["Software", "SaaS", "Cybersecurity"],
+    signatureExit: "Shopify's 2015 IPO, one of the defining e-commerce software exits of the decade",
+    slug: "insight-partners",
+    seoPage: "firms/insight-partners/",
+    website: "https://www.insightpartners.com",
+    short: "Insight",
+    founded: 1995,
+    hq: "New York, NY",
+    aum: "$90B+",
+    thesis: "Founded in 1995 by Jeff Horing and Jerry Murdock in New York, Insight built its identity on outbound sourcing long before that was common practice — in the firm's earliest years, the two co-founders would comb through trade publications by hand looking for software companies that were hiring, and therefore growing. That research-driven, find-them-before-anyone-else approach scaled into a firm managing tens of billions of dollars, still built around the same instinct to spot momentum early.",
+    leadership: [
+      { name: "Jeff Horing", role: "Co-Founder & Managing Director", profileSlug: "jeff-horing" },
+      { name: "Jerry Murdock", role: "Co-Founder (Managing Director until 2011)" }
+    ],
+    timeline: [
+      { year: "1995", event: "Jeff Horing and Jerry Murdock found the firm in New York, betting early on B2B software." },
+      { year: "1995-2000", event: "Sources deals by manually reading trade publications for software companies that were hiring." },
+      { year: "2015", event: "Portfolio company Shopify goes public, one of the firm's defining software exits." },
+      { year: "2025", event: "Assets under management surpass $90 billion, with over 875 companies invested in to date." }
+    ],
+    holdings: [
+      { name: "Shopify", ticker: "SHOP", investedYear: 2013, historicalPrice: 107.53, price: 123.56 },
+      { name: "DocuSign", ticker: "DOCU", historicalPrice: null, price: 52.74 }
+    ]
+  },
+  {
+  rank: 4,
+    name: "Tiger Global Management",
+    sectors: ["Internet", "Fintech", "Consumer Tech"],
+    signatureExit: "An early pre-IPO stake in Facebook that helped define Tiger Global's hybrid public-private strategy",
+    slug: "tiger-global",
+    website: "https://www.tigerglobal.com",
+    short: "Tiger Global",
+    founded: 2001,
+    hq: "New York, NY",
+    aum: "$58B+",
+    thesis: "Chase Coleman was only 25 when he launched Tiger Global (originally named Tiger Technology) in 2001, seeded with roughly $25 million from his mentor Julian Robertson after Robertson's own famed hedge fund, Tiger Management, wound down. Coleman built Tiger Global as a hybrid the industry hadn't quite seen before — a fund equally comfortable buying public stocks and writing private venture checks, a strategy that let it move unusually fast into deals other VCs took months to close.",
+    leadership: [
+      { name: "Chase Coleman", role: "Founder", profileSlug: "chase-coleman" },
+      { name: "Scott Shleifer", role: "Partner, led expansion into private equity" }
+    ],
+    timeline: [
+      { year: "2001", event: "Chase Coleman, then 25, launches the firm (originally Tiger Technology) with $25 million seeded by mentor Julian Robertson." },
+      { year: "2003", event: "Scott Shleifer joins and helps expand the firm from public markets into private equity and venture deals." },
+      { year: "2010s", event: "Builds an early pre-IPO stake in Facebook, defining the firm's hybrid public-private strategy." },
+      { year: "2021", event: "Becomes one of the most active venture investors globally, deploying capital at unusually high speed." }
+    ],
+    holdings: [
+      { name: "Coinbase", ticker: "COIN", investedYear: 2018, historicalPrice: 257.21, price: 161.00 },
+      { name: "JD.com", ticker: "JD", investedYear: 2011, historicalPrice: null, price: 29.62 }
+    ]
+  },
 ];
