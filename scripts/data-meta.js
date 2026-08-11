@@ -174,7 +174,6 @@ const firmStages = {
    "northzone": ["Seed", "Series A", "Series B", "Growth"],
    "molten-ventures": ["Series A", "Series B", "Growth", "Late Stage"],
    "softbank-vision-fund": ["Series B", "Growth", "Late Stage"],
-   "ggv-capital": ["Seed", "Series A", "Series B", "Growth"],
    "peak-xv-partners": ["Seed", "Series A", "Series B", "Growth"],
     "eclipse-ventures": ["Seed", "Series A", "Series B", "Growth"],
   "qualcomm-ventures": ["Seed", "Series A", "Series B", "Growth"],
@@ -220,7 +219,6 @@ const firmStages = {
    "congruent-ventures": ["Seed", "Series A", "Series B"],
    "canary": ["Pre-Seed", "Seed", "Series A"],
    "jungle-ventures": ["Seed", "Series A", "Series B", "Growth"],
-   "healthquest-capital": ["Growth", "Late Stage"],
    "cyberstarts": ["Seed", "Series A"],
    "pitango-venture-capital": ["Seed", "Series A", "Series B", "Growth"],
    "jerusalem-venture-partners": ["Seed", "Series A", "Growth"],
@@ -229,7 +227,6 @@ const firmStages = {
    "echovc-partners": ["Seed", "Series A", "Growth"],
    "voltron-capital": ["Pre-Seed", "Seed"],
    "norrsken22": ["Series A", "Series B"],
-   "shorooq-partners": ["Pre-Seed", "Seed", "Series A"],
    "beco-capital": ["Pre-Seed", "Seed", "Series A", "Growth"],
    "venturesouq": ["Seed", "Series A"],
    "firstmark-capital": ["Seed", "Series A"],
@@ -281,8 +278,6 @@ const firmStages = {
    "openview-venture-partners": ["Series A", "Series B", "Growth"],
    "foundry-group": ["Seed", "Series A", "Series B"],
    "dcm-ventures": ["Seed", "Series A", "Series B", "Series C"],
-   "idg-capital": ["Series A", "Series B", "Growth", "Late Stage"],
-   "legend-capital": ["Series A", "Series B", "Series C", "Growth"],
    "octopus-ventures": ["Pre-Seed", "Seed", "Series A", "Series B", "Growth"],
    "gaingels": ["Series A", "Series B", "Growth"],
       "sinovation-ventures": ["Seed", "Series A", "Series B"],
@@ -293,7 +288,6 @@ const firmStages = {
       "innovation-endeavors": ["Seed", "Series A", "Series B"],
       "draper-associates": ["Seed", "Series A"],
       "bdc-capital": ["Seed", "Series A", "Series B", "Growth", "Late Stage"],
-      "vision-knight-capital": ["Series A", "Series B", "Series C", "Growth"],
    "threshold-ventures": ["Seed", "Series A", "Series B"],
       "paradigm": ["Seed", "Series A", "Series B", "Growth", "Late Stage"],
    "hustle-fund": ["Pre-Seed", "Seed"],
@@ -362,7 +356,6 @@ const firmStages = {
 'speedinvest': ['Pre-Seed', 'Seed', 'Series A', 'Series B', 'Growth'], // explicit: "pre-seed to growth stages"
 'creandum': ['Seed'], // explicit: "early-stage tech and healthcare startups"
 'hv-capital': ['Seed', 'Series A', 'Series B', 'Growth', 'Late Stage'], // explicit: "seed through growth," "seed to IPO"
-'hongshan-capital': ['Seed', 'Series A', 'Series B', 'Growth', 'Late Stage'], // explicit: "all stages... seed through buyouts" (buyout portion excluded — PE, not VC)
 'vertex-ventures': ['Seed', 'Series A', 'Series B', 'Growth'], // explicit: "ranging from startups to growth"
 'zhenfund': ['Seed', 'Series A'], // explicit: "seed and Series A stages"
 'golden-gate-ventures': ['Seed'], // explicit: "early-stage tech"
