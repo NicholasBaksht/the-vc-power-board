@@ -65,6 +65,27 @@ function renderScaleBar() {
   const seeAllLink = document.getElementById('heroSeeAllLink');
   if (seeAllLink) seeAllLink.textContent = `See All ${totalFirms} Firms →`;
 }
+/* Hero badge counts, computed from the dataset rather than typed
+   in. A hardcoded count goes stale the moment a firm is added or
+   removed — this one already had, reading 308/313 against a
+   dataset of 293/293. */
+function renderHeroBadge() {
+  const firmEl = document.getElementById('heroFirmCount');
+  const betEl = document.getElementById('heroBetCount');
+  if (!firmEl && !betEl) return;
+
+  if (firmEl) firmEl.textContent = firms.length;
+
+  if (betEl) {
+    // "Verified bets" = holdings with a real ticker, which is the
+    // only claim the data actually supports.
+    const bets = firms.reduce(function (n, f) {
+      return n + (f.holdings || []).filter(function (h) { return h.ticker; }).length;
+    }, 0);
+    betEl.textContent = bets;
+  }
+}
+
 function renderHeroTop5() {
   // The redesigned hero has no Top 5 widget. Guarded rather than
   // deleted so this stays safe if the widget ever comes back.
