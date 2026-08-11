@@ -9084,4 +9084,357 @@ sources: [
       { label: "Draper.vc — History", url: "https://www.draper.vc/history" }
     ]
   },
+  "sarah-guo": {
+    name: "Sarah Guo",
+    firm: "Conviction",
+    firmSlug: "conviction",
+    title: "Founder & Managing Partner",
+    joinedYear: 2022,
+    education: [
+      "B.S. Economics (Wharton), B.A.S. Engineering, University of Pennsylvania"
+    ],
+    previousExperience: [
+      "General Partner, Greylock Partners (c. 2013–2022) — became one of the firm's youngest general partners",
+      "Goldman Sachs (early career)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2018",
+        event: "Named a general partner at Greylock Partners while in her twenties."
+      },
+      {
+        year: "2022",
+        event: "Left Greylock and launched Conviction with a $101M debut fund."
+      },
+      {
+        year: "2025",
+        event: "Closed Conviction's $230M second fund."
+      }
+    ],
+    biography: "Sarah Guo is founder and managing partner of Conviction, an AI-native venture firm she launched in October 2022 after roughly a decade at Greylock Partners, where she became one of the firm's youngest general partners. She holds four degrees from the University of Pennsylvania and co-hosts the AI podcast No Priors.",
+    sources: [
+      {
+        label: "Wikipedia — Sarah Guo",
+        url: "https://en.wikipedia.org/wiki/Sarah_Guo"
+      },
+      {
+        label: "TechCrunch — Conviction raises $230M, adds Mike Vernal",
+        url: "https://techcrunch.com/2025/01/31/guos-conviction-partners-adds-mike-vernal-as-gp-raises-230m-fund"
+      }
+    ]
+  },
+  "katie-haun": {
+    name: "Katie Haun",
+    firm: "Haun Ventures",
+    firmSlug: "haun-ventures",
+    title: "Founder & CEO",
+    joinedYear: 2022,
+    education: [
+      "B.A., Boston University",
+      "J.D., Stanford Law School"
+    ],
+    previousExperience: [
+      "General Partner, Andreessen Horowitz (2018–2022) — co-led the firm's crypto franchise across three funds",
+      "Federal Prosecutor, U.S. Department of Justice (over a decade) — led Silk Road task force prosecutions and established the DOJ's first digital currency task force"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2018",
+        event: "Joined Andreessen Horowitz as a general partner, co-leading its crypto investing franchise."
+      },
+      {
+        year: "2022",
+        event: "Launched Haun Ventures with $1.5B, the largest debut fund raised by a solo venture capitalist at the time."
+      }
+    ],
+    biography: "Katie Haun is founder and chief executive of Haun Ventures, a crypto-focused venture firm launched in 2022. She spent over a decade as a federal prosecutor at the U.S. Department of Justice, where she established its first digital currency task force, before joining Andreessen Horowitz as a general partner co-leading its crypto funds.",
+    sources: [
+      {
+        label: "Haun Ventures — Team",
+        url: "https://www.haun.co/team/katie-haun"
+      },
+      {
+        label: "Wikipedia — Katie Haun",
+        url: "https://en.wikipedia.org/wiki/Katie_Haun"
+      }
+    ]
+  },
+  "steve-jang": {
+    name: "Steve Jang",
+    firm: "Kindred Ventures",
+    firmSlug: "kindred-ventures",
+    title: "Founder & Managing Partner",
+    joinedYear: 2014,
+    education: [],
+    previousExperience: [
+      "Founding team, imeem — acquired by MySpace",
+      "Co-Founder, SoundTracking — acquired by Rhapsody",
+      "Co-Founder, Bitski — acquired by Phantom",
+      "Founding advisor and angel investor, Uber"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2014",
+        event: "Founded Kindred Ventures as an angel fund."
+      },
+      {
+        year: "2018",
+        event: "Kindred became a full venture firm as Kanyi Maqubela joined."
+      },
+      {
+        year: "2023",
+        event: "Raised $312M across Kindred Ventures III and Selector I."
+      }
+    ],
+    biography: "Steve Jang is founder and managing partner of Kindred Ventures. Before investing full time he was a co-founder or founding team member at several mobile and media startups, including imeem, SoundTracking and Bitski, and was a founding advisor and early investor in Uber. Born in South Korea and raised in Los Angeles.",
+    sources: [
+      {
+        label: "Kindred Ventures — Steve Jang",
+        url: "https://kindredventures.com/about/steve-jang/"
+      },
+      {
+        label: "Forbes — Steve Jang",
+        url: "https://www.forbes.com/profile/steve-jang/"
+      }
+    ]
+  },
+  "bill-maris": {
+    name: "Bill Maris",
+    firm: "S32",
+    firmSlug: "s32",
+    title: "Founder",
+    joinedYear: 2017,
+    education: [],
+    previousExperience: [
+      "Founder & CEO, Google Ventures (GV)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: null,
+        event: "Founded Google Ventures and served as its chief executive."
+      },
+      {
+        year: "2017",
+        event: "Founded Section 32, now operating as S32."
+      }
+    ],
+    biography: "Bill Maris founded Section 32, now operating as S32, in 2017, after founding and leading Google Ventures as its chief executive. The firm was named in reference to Section 31, a fictional intelligence agency in the Star Trek universe.",
+    sources: [
+      {
+        label: "Wikipedia — S32",
+        url: "https://en.wikipedia.org/wiki/S32_(company)"
+      },
+      {
+        label: "PR Newswire — Section 32 raises $740M",
+        url: "https://www.prnewswire.com/news-releases/section-32-raises-740-million-venture-fund-301416494.html"
+      }
+    ]
+  },
+  "john-pearce": {
+    name: "John Pearce",
+    firm: "Underscore VC",
+    firmSlug: "underscore-vc",
+    title: "Co-Founder & Partner",
+    joinedYear: 2015,
+    education: [],
+    previousExperience: [
+      "Chief Executive Officer, Demandware"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2015",
+        event: "Co-founded Underscore VC in Boston."
+      }
+    ],
+    biography: "John Pearce is a co-founder and partner at Underscore VC in Boston. Before venture investing he was chief executive of Demandware.",
+    sources: [
+      {
+        label: "Boston Startups Guide — Underscore VC's first fund",
+        url: "https://bostonstartupsguide.com/community-news/underscore-vcs-first-fund-actually-85m-heres-structured/"
+      }
+    ]
+  },
+  "lan-xuezhao": {
+    name: "Lan Xuezhao",
+    firm: "Basis Set Ventures",
+    firmSlug: "basis-set-ventures",
+    title: "Founder & Managing Partner",
+    joinedYear: 2017,
+    education: [
+      "M.A. Statistics, University of Michigan (2008)",
+      "Ph.D. Psychology (cognitive science), University of Michigan (2009)"
+    ],
+    previousExperience: [
+      "Head of Corporate Development Strategy, Dropbox (from 2013)",
+      "Engagement Manager, McKinsey & Company (New York and Shanghai)",
+      "Founder, brain-training games startup for children — later acquired"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2013",
+        event: "Joined Dropbox to lead its Corporate Development Strategy team."
+      },
+      {
+        year: "2017",
+        event: "Founded Basis Set Ventures."
+      }
+    ],
+    biography: "Lan Xuezhao is founder and managing partner of Basis Set Ventures, one of the earliest venture firms to specialise in AI and automation. She holds a doctorate in psychology and a master's in statistics from the University of Michigan, and previously led corporate development strategy at Dropbox after advising clients at McKinsey.",
+    sources: [
+      {
+        label: "Wikipedia — Lan Xuezhao",
+        url: "https://en.wikipedia.org/wiki/Lan_Xuezhao"
+      }
+    ]
+  },
+  "barend-van-den-brande": {
+    name: "Barend Van den Brande",
+    firm: "Hummingbird Ventures",
+    firmSlug: "hummingbird-ventures",
+    title: "Founder & General Partner",
+    joinedYear: 2010,
+    education: [
+      "Catholic University of Louvain, Belgium"
+    ],
+    previousExperience: [
+      "Founder, Big Bang Ventures (2001)",
+      "Financial Analyst, SG Cowen, Boston"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2001",
+        event: "Founded his first fund, Big Bang Ventures."
+      },
+      {
+        year: "2010",
+        event: "Founded Hummingbird Ventures."
+      },
+      {
+        year: "2013",
+        event: "Led Hummingbird's investment in Kraken."
+      }
+    ],
+    biography: "Barend Van den Brande is founder and general partner of Hummingbird Ventures. Belgian-born, he began his career as an analyst at SG Cowen in Boston before returning to Belgium to raise his first fund, Big Bang Ventures, in 2001, and founding Hummingbird in 2010.",
+    sources: [
+      {
+        label: "Forbes — Barend Van den Brande",
+        url: "https://www.forbes.com/profile/barend-van-den-brande/"
+      },
+      {
+        label: "Crunchbase — Barend Van den Brande",
+        url: "https://www.crunchbase.com/person/barend-van-den-brande"
+      }
+    ]
+  },
+  "karl-alomar": {
+    name: "Karl Alomar",
+    firm: "M13",
+    firmSlug: "m13",
+    title: "Partner",
+    joinedYear: null,
+    education: [],
+    previousExperience: [
+      "Chief Operating Officer, DigitalOcean — the company's first COO",
+      "Founder of two companies, both exited"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Karl Alomar is a partner at M13. He founded and exited two companies before becoming DigitalOcean's first chief operating officer.",
+    sources: [
+      {
+        label: "Business Wire — M13 announces $400M consumer technology fund",
+        url: "https://www.businesswire.com/news/home/20220303005263/en/M13-Announces-$400-Million-Consumer-Technology-Fund"
+      }
+    ]
+  },
+  "ali-partovi": {
+    name: "Ali Partovi",
+    firm: "Neo",
+    firmSlug: "neo",
+    title: "Founder & CEO",
+    joinedYear: 2017,
+    education: [
+      "Computer Science, Harvard University"
+    ],
+    previousExperience: [
+      "Co-Founder, LinkExchange — acquired by Microsoft for $265M",
+      "Co-Founder, iLike",
+      "Co-Founder, Code.org",
+      "Early advisor, Dropbox"
+    ],
+    boardSeats: [
+      "FoodCorps"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: null,
+        event: "Co-founded LinkExchange, later sold to Microsoft for $265M."
+      },
+      {
+        year: "2017",
+        event: "Stopped angel investing to found Neo."
+      }
+    ],
+    biography: "Ali Partovi is founder and chief executive of Neo, a venture firm and mentorship community he founded in 2017. Raised in Tehran, he studied computer science at Harvard. He previously co-founded LinkExchange, sold to Microsoft for $265M, as well as iLike and Code.org, the latter with his twin brother Hadi.",
+    sources: [
+      {
+        label: "Wikipedia — Neo (venture capital firm)",
+        url: "https://en.wikipedia.org/wiki/Neo_(venture_capital_firm)"
+      },
+      {
+        label: "Forbes — Ali Partovi",
+        url: "https://www.forbes.com/profile/ali-partovi/"
+      }
+    ]
+  },
+  "adam-draper": {
+    name: "Adam Draper",
+    firm: "Boost VC",
+    firmSlug: "boost-vc",
+    title: "Co-Founder",
+    joinedYear: 2012,
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2012",
+        event: "Co-founded Boost VC with Brayton Williams in San Mateo."
+      }
+    ],
+    biography: "Adam Draper is co-founder of Boost VC, a pre-seed firm and accelerator focused on deep technology, which he started with Brayton Williams in 2012.",
+    sources: [
+      {
+        label: "Crunchbase — Boost VC",
+        url: "https://www.crunchbase.com/organization/boostfunder"
+      }
+    ]
+  },
 };
