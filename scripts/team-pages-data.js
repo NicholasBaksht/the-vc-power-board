@@ -258,7 +258,6 @@ const TEAM_PAGES = {
   "wing-venture-capital": "https://www.wing.vc/people",
   "soma-capital": "https://somacap.com/about",
   "vy-capital": null,
-  "iconiq-capital": null,
   "mfv-partners": "https://www.mfvpartners.com/team/",
   "liquid2-ventures": "https://www.liquid2.vc/team",
   "unusual-ventures": null,
