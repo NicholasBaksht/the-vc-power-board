@@ -75,7 +75,6 @@ const featuredFirm = {
 const firmStages = {
   "a16z": ["Seed", "Series A", "Series B", "Growth", "Late Stage"],
   "sequoia": ["Seed", "Series A", "Series B", "Growth", "Late Stage"],
-  "tiger-global": ["Series B", "Growth", "Late Stage"],
   "general-catalyst": ["Seed", "Series A", "Series B", "Growth"],
   "nea": ["Seed", "Series A", "Series B", "Growth"],
   "lightspeed": ["Seed", "Series A", "Series B", "Growth"],
@@ -178,7 +177,6 @@ const firmStages = {
     "eclipse-ventures": ["Seed", "Series A", "Series B", "Growth"],
   "qualcomm-ventures": ["Seed", "Series A", "Series B", "Growth"],
    "arch-venture-partners": ["Seed", "Series A", "Growth"],
-   "dragoneer-investment-group": ["Series B", "Growth", "Late Stage"],
    "b-capital-group": ["Series B", "Series C", "Growth", "Late Stage"],
    "y-combinator": ["Pre-Seed", "Seed"],
    "kaszek-ventures": ["Seed", "Series A", "Series B", "Growth"],
@@ -222,7 +220,6 @@ const firmStages = {
    "cyberstarts": ["Seed", "Series A"],
    "pitango-venture-capital": ["Seed", "Series A", "Series B", "Growth"],
    "jerusalem-venture-partners": ["Seed", "Series A", "Growth"],
-   "helios-investment-partners": ["Series B", "Growth", "Late Stage"],
    "ventures-platform": ["Pre-Seed", "Seed", "Series A"],
    "echovc-partners": ["Seed", "Series A", "Growth"],
    "voltron-capital": ["Pre-Seed", "Seed"],
@@ -236,7 +233,6 @@ const firmStages = {
    "novastar-ventures": ["Seed", "Series A", "Series B"],
    "enza-capital": ["Pre-Seed", "Seed", "Series A", "Series B"],
    "kawisafi-ventures": ["Series A", "Series B", "Growth"],
-   "crossboundary": ["Growth", "Late Stage"],
    "launch-africa-ventures": ["Seed", "Series A"],
    "foundation-capital": ["Seed", "Series A", "Growth"],
    "nexus-venture-partners": ["Seed", "Series A"],
@@ -315,7 +311,6 @@ const firmStages = {
       "samsung-ventures": ["Series A", "Series B", "Growth"],
       "gaorong-capital": ["Series A", "Series B", "Growth"],
    "bond-capital": ["Growth", "Late Stage"],
-      "deviation-capital": ["Seed", "Series A"],
       "obvious-ventures": ["Seed", "Series A"],
       "base10-partners": ["Seed", "Series A", "Series B"],
       "village-global": ["Pre-Seed", "Seed"],
@@ -338,9 +333,6 @@ const firmStages = {
   'collaborative-fund': ['Seed', 'Series A', 'Growth'],
   'shrug-capital': ['Seed'],
    'greenoaks-capital': ['Growth', 'Late Stage'], // explicit: "growth equity firm"
-'altimeter-capital': ['Growth', 'Late Stage'], // explicit: "growth-stage technology companies, public and private"
-'durable-capital-partners': ['Growth', 'Late Stage'], // explicit: "early-stage and durable growth companies" — tagged Growth/Late per actual public holdings (Coinbase, Affirm, Datadog)
-'baillie-gifford': ['Growth', 'Late Stage'], // explicit: "global growth equity approach"
 'electric-capital': ['Seed', 'Series A', 'Series B', 'Growth'], // explicit: "invests from seed through growth"
 'variant-fund': ['Seed'], // explicit: "early-stage crypto fund"
 'blockchain-capital': ['Seed', 'Series A', 'Series B', 'Growth'], // explicit: "seed through growth"
@@ -365,9 +357,6 @@ const firmStages = {
 'stv': ['Series A', 'Series B', 'Growth'], // explicit: "Series A through growth stages"
 
 // Inferred from described public holdings, not a direct stage quote in source — flagging separately per your honesty standard:
-'d1-capital-partners': ['Late Stage'], // holdings are all post-IPO/late private (Instacart, Robinhood, Rivian, Procore)
-'whale-rock-capital-management': ['Late Stage'], // public equity fund, no private-stage language in source
-'viking-global-investors': ['Late Stage'], // public equity hedge fund, no private-stage language in source
 };
 
 // ============================================================
