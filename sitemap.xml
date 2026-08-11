@@ -141,6 +141,14 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/insight-partners/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/tiger-global/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/sequoia/</loc>
     <priority>0.6</priority>
   </url>
@@ -589,6 +597,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/alven/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/tribe-capital/</loc>
     <priority>0.6</priority>
   </url>
@@ -641,6 +653,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/haun-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/oxford-science-enterprises/</loc>
     <priority>0.6</priority>
   </url>
@@ -686,6 +702,10 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/bmw-i-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/ventech/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -777,6 +797,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/basis-set-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/canvas-prime/</loc>
     <priority>0.6</priority>
   </url>
@@ -806,6 +830,10 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/blumberg-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/s32/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -853,6 +881,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/firstminute-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/airbus-ventures/</loc>
     <priority>0.6</priority>
   </url>
@@ -889,11 +921,31 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/m13/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/plural/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/air-street-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/zetta-venture-partners/</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/radical-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/neo/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/kindred-ventures/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -941,6 +993,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/conviction/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/norrsken22/</loc>
     <priority>0.6</priority>
   </url>
@@ -958,6 +1014,10 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/amazon-alexa-fund/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/entrepreneur-first/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1029,6 +1089,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/kindred-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/hustle-fund/</loc>
     <priority>0.6</priority>
   </url>
@@ -1049,11 +1113,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/backed-vc/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/founder-collective/</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/homebrew/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/fly-ventures/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1094,6 +1166,10 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/female-founders-fund/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/amadeus-apex-technology-fund/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1261,6 +1337,50 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/kima-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/afore-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/techstars/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/underscore-vc/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/hummingbird-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/human-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/boost-vc/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/passion-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/bayern-kapital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/amadeus-capital-partners/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/hoxton-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/</loc>
     <priority>0.9</priority>
   </url>
@@ -1277,11 +1397,23 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/a16z-vs-general-catalyst/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/a16z-vs-kleiner-perkins/</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/a16z-vs-gv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/a16z-vs-index-ventures/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-a16z/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1297,11 +1429,23 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-softbank-vision-fund/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/kleiner-perkins-vs-softbank-vision-fund/</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/gv-vs-softbank-vision-fund/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/index-ventures-vs-softbank-vision-fund/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-softbank-vision-fund/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1313,6 +1457,10 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-ribbit-capital/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/kleiner-perkins-vs-ribbit-capital/</loc>
     <priority>0.5</priority>
   </url>
@@ -1321,7 +1469,23 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/index-ventures-vs-ribbit-capital/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-ribbit-capital/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/elad-gil-vs-ribbit-capital/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/accel-vs-insight-partners/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-sequoia/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1333,7 +1497,43 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/index-ventures-vs-sequoia/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-sequoia/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/elad-gil-vs-sequoia/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/tcv-vs-tiger-global/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/norwest-venture-partners-vs-tcv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-kleiner-perkins/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-gv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-index-ventures/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-general-catalyst/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/elad-gil-vs-general-catalyst/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1341,11 +1541,51 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/index-ventures-vs-kleiner-perkins/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-kleiner-perkins/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/elad-gil-vs-kleiner-perkins/</loc>
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/battery-ventures-vs-lightspeed/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/gv-vs-index-ventures/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-gv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/elad-gil-vs-gv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-index-ventures/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/elad-gil-vs-index-ventures/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/bessemer-vs-nea/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-elad-gil/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/norwest-venture-partners-vs-tiger-global/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -2493,27 +2733,43 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/people/</loc>
-    <priority>0.8</priority>
+    <loc>https://thevcpowerboard.com/people/sarah-guo/</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/terms/</loc>
-    <priority>0.3</priority>
+    <loc>https://thevcpowerboard.com/people/katie-haun/</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/privacy/</loc>
-    <priority>0.3</priority>
+    <loc>https://thevcpowerboard.com/people/steve-jang/</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/firms/tiger-global/</loc>
-    <priority>0.7</priority>
+    <loc>https://thevcpowerboard.com/people/bill-maris/</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/firms/insight-partners/</loc>
-    <priority>0.7</priority>
+    <loc>https://thevcpowerboard.com/people/john-pearce/</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/people/chase-coleman/</loc>
+    <loc>https://thevcpowerboard.com/people/lan-xuezhao/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/barend-van-den-brande/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/karl-alomar/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/ali-partovi/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/adam-draper/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -2521,7 +2777,75 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/tcv-vs-tiger-global/</loc>
-    <priority>0.6</priority>
+    <loc>https://thevcpowerboard.com/people/chase-coleman/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/sten-tamkivi/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/nathan-benaich/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/gabriel-matuschka/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/brent-hoberman/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/eileen-burbidge/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/guillaume-aubin/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/charles-letourneur/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jean-bourcereau/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/georg-ried/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/monika-steger/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/anne-glover/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/hermann-hauser/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/andreas-riegler/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/hussein-kanji/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/leila-zegna/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/andre-de-haes/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/</loc>
+    <priority>0.8</priority>
   </url>
 </urlset>
