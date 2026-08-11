@@ -136,9 +136,7 @@ const partnerProfiles = {
   previousExperience: [
     "Head of Macro Trading, Tiger Management"
   ],
-  firmHistory: [
-    { firmSlug: "tiger-global", role: "Head of Macro Trading, Tiger Management", startYear: null, endYear: null }
-  ],
+  firmHistory: [],
   boardSeats: [],
   ipoCount: null,
   majorExits: null,
@@ -327,141 +325,6 @@ const partnerProfiles = {
     { year: 2021, event: "Coupang goes public on the NYSE; Mehta serves on its board." }
   ],
   biography: "Neil Mehta co-founded Greenoaks in 2012 after leaving D.E. Shaw, having previously worked at Kayne Anderson. He built the firm around concentrated, long-duration positions in a small number of technology companies — holding through private rounds into the public markets rather than exiting at IPO. He sits on the board of Coupang, one of the firm's defining investments.",
-  sources: []
-},
-  "brad-gerstner": {
-  name: "Brad Gerstner",
-  firm: "Altimeter Capital",
-  firmSlug: "altimeter-capital",
-  title: "Founder, Chairman & CEO",
-  joinedYear: 2008,
-  education: [
-    "BA, Wabash College",
-    "MBA, Harvard Business School"
-  ],
-  previousExperience: [
-    "Co-founder, General Catalyst",
-    "Government official, State of Indiana"
-  ],
-  firmHistory: [
-    { firmSlug: "general-catalyst", role: "Co-founder", startYear: null, endYear: null }
-  ],
-  boardSeats: [],
-  ipoCount: null,
-  majorExits: null,
-  careerTimeline: [
-    { year: null, event: "Serves as a government official in Indiana before entering investing." },
-    { year: null, event: "Co-founds General Catalyst." },
-    { year: 2008, event: "Founds Altimeter Capital." },
-    { year: 2020, event: "Snowflake, an early Altimeter position, goes public." }
-  ],
-  biography: "Brad Gerstner founded Altimeter Capital in 2008 and remains its CEO. A Wabash College graduate with an MBA from Harvard Business School, he began his career as a government official in Indiana before co-founding General Catalyst. At Altimeter he became known for early conviction in Snowflake and Grab, investments that earned him a place on the Forbes Midas List.",
-  sources: []
-},
-  "daniel-sundheim": {
-  name: "Daniel Sundheim",
-  firm: "D1 Capital Partners",
-  firmSlug: "d1-capital-partners",
-  title: "Founder & Chief Investment Officer",
-  joinedYear: 2018,
-  education: [
-    "BS, Economics, The Wharton School, University of Pennsylvania"
-  ],
-  previousExperience: [
-    "Chief Investment Officer, Viking Global Investors",
-    "Bear Stearns"
-  ],
-  firmHistory: [
-    { firmSlug: "viking-global-investors", role: "Chief Investment Officer", startYear: null, endYear: 2018 }
-  ],
-  boardSeats: [],
-  ipoCount: null,
-  majorExits: null,
-  careerTimeline: [
-    { year: null, event: "Begins his investment career at Bear Stearns." },
-    { year: null, event: "Joins Viking Global Investors, ultimately serving as Chief Investment Officer across a 15-year tenure." },
-    { year: 2018, event: "Founds D1 Capital Partners in July." }
-  ],
-  biography: "Daniel Sundheim founded D1 Capital Partners in 2018 after a 15-year tenure at Viking Global Investors, where he served as Chief Investment Officer. A Wharton economics graduate who began his career at Bear Stearns, he built D1 as a multi-asset firm investing across global public and private markets, with concentrated positions in growth companies including Instacart and Procore.",
-  sources: []
-},
-  "henry-ellenbogen": {
-  name: "Henry Ellenbogen",
-  firm: "Durable Capital Partners",
-  firmSlug: "durable-capital-partners",
-  title: "Founder, Managing Partner & Chief Investment Officer",
-  joinedYear: 2019,
-  education: [
-    "BA, History, Harvard University",
-    "JD, Harvard Law School",
-    "MBA, Harvard Business School (Baker Scholar)"
-  ],
-  previousExperience: [
-    "Portfolio Manager, T. Rowe Price",
-    "Analyst, Goldman Sachs"
-  ],
-  firmHistory: [],
-  boardSeats: [],
-  ipoCount: null,
-  majorExits: null,
-  careerTimeline: [
-    { year: null, event: "Works as an analyst at Goldman Sachs." },
-    { year: null, event: "Joins T. Rowe Price, spending 18 years there as a portfolio manager." },
-    { year: 2019, event: "Founds Durable Capital Partners." }
-  ],
-  biography: "Henry Ellenbogen founded Durable Capital Partners in 2019 after 18 years as a portfolio manager at T. Rowe Price, preceded by an analyst role at Goldman Sachs. He holds a BA in History from Harvard, along with a JD from Harvard Law School and an MBA from Harvard Business School, where he was a Baker Scholar. Durable backs long-term growth businesses across both public and private markets.",
-  sources: []
-},
-  "alex-sacerdote": {
-  name: "Alex Sacerdote",
-  firm: "Whale Rock Capital Management",
-  firmSlug: "whale-rock-capital-management",
-  title: "Founder, CEO & Portfolio Manager",
-  joinedYear: 2006,
-  education: [
-    "BA, Hamilton College",
-    "MBA, Harvard Business School"
-  ],
-  previousExperience: [
-    "Portfolio Manager, Fidelity Investments"
-  ],
-  firmHistory: [],
-  boardSeats: ["Hamilton College"],
-  ipoCount: null,
-  majorExits: null,
-  careerTimeline: [
-    { year: null, event: "Works as a portfolio manager at Fidelity, focusing on technology and media investments." },
-    { year: 2006, event: "Founds Whale Rock Capital Management in Boston." }
-  ],
-  biography: "Alex Sacerdote founded Whale Rock Capital Management in 2006 and serves as its CEO and Chief Investment Officer. A Hamilton College graduate with an MBA from Harvard, he was previously a portfolio manager at Fidelity focused on technology and media. At Whale Rock he runs a concentrated growth strategy built around long-duration technology trends. He serves on the board of his alma mater, Hamilton College.",
-  sources: []
-},
-  "andreas-halvorsen": {
-  name: "Andreas Halvorsen",
-  firm: "Viking Global Investors",
-  firmSlug: "viking-global-investors",
-  title: "Co-Founder & CEO",
-  joinedYear: 1999,
-  education: [
-    "BA, Williams College",
-    "MBA, Stanford Graduate School of Business"
-  ],
-  previousExperience: [
-    "Healthcare analyst, Morgan Stanley",
-    "Tiger Management (early employee)"
-  ],
-  firmHistory: [
-    { firmSlug: "tiger-global", role: "Early employee, Tiger Management", startYear: null, endYear: null }
-  ],
-  boardSeats: [],
-  ipoCount: null,
-  majorExits: null,
-  careerTimeline: [
-    { year: null, event: "Works as a healthcare analyst at Morgan Stanley." },
-    { year: null, event: "Joins Tiger Management as one of its first employees." },
-    { year: 1999, event: "Co-founds Viking Global Investors." }
-  ],
-  biography: "Andreas Halvorsen co-founded Viking Global Investors in 1999 and serves as its CEO. A Williams College graduate with an MBA from Stanford, he began as a healthcare analyst at Morgan Stanley before becoming one of the first employees at Tiger Management. He has since built Viking into one of the largest hedge funds in the world, investing long and short across technology, healthcare, and consumer sectors.",
   sources: []
 },
   "elad-gil": {
@@ -1424,40 +1287,6 @@ const partnerProfiles = {
     sources: [
       { label: "Forbes — Mary Meeker", url: "https://www.forbes.com/profile/mary-meeker/" },
       { label: "TechCrunch", url: "https://techcrunch.com/2019/04/24/mary-meeker-raises-1-25b-for-bond-her-debut-growth-fund" }
-    ]
-  },
-  "colin-beirne": {
-    name: "Colin Beirne",
-    firm: "Deviation Capital",
-    firmSlug: "deviation-capital",
-    title: "Founding Partner",
-    joinedYear: 2012,
-    education: ["BA (dual), Economics & Law, Jurisprudence and Social Thought, Amherst College"],
-    previousExperience: [
-      "Technology Investment Banker",
-      "Corporate Strategist",
-      "7 years, Two Sigma Investments (business strategy)"
-    ],
-    investmentFocus: ["AI", "Deep Tech", "Life Sciences", "Robotics"],
-    notableInvestments: [
-      { name: "Recursion Pharmaceuticals", ticker: "RXRX" },
-      { name: "WHOOP", ticker: null },
-      { name: "Kalshi", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 1,
-    majorExits: 1,
-    careerTimeline: [
-      { year: "1990s", event: "Interns at Andromedia during the late-'90s dot-com boom, sparking a lasting interest in startups." },
-      { year: "2005", event: "Joins Two Sigma Investments, spending seven years helping shape the quant hedge fund's business strategy." },
-      { year: "2012", event: "Proposes and founds Two Sigma Ventures on Pi Day (March 14) at a Two Sigma strategy offsite." },
-      { year: "2021", event: "Recursion Pharmaceuticals completes its NASDAQ IPO at $18 a share, an initial market cap of roughly $3 billion." },
-      { year: "2026", event: "Leads Two Sigma Ventures' spinout into an independent firm, Deviation Capital, with $2 billion in AUM in May." }
-    ],
-    biography: "Colin Beirne spent seven years at Two Sigma Investments helping shape the quantitative hedge fund's business strategy before proposing, on Pi Day 2012, that the firm launch a venture arm betting on three convictions: New York was becoming a real startup ecosystem, data and advanced computing would drive innovation for decades, and Two Sigma had the technical talent to help. That thesis, effectively a bet on AI before the term became mainstream, produced Recursion Pharmaceuticals' 2021 IPO and stakes in WHOOP, Kalshi, and Etched. After 14 years building Two Sigma Ventures into an operationally mature platform, Beirne led its clean spinout into an independent firm, Deviation Capital, in May 2026, retaining $2 billion in AUM and access to Two Sigma's technical bench while gaining full GP autonomy over fund mechanics and succession.",
-    sources: [
-      { label: "Deviation Capital — Colin Beirne", url: "https://deviation.com/team/colin-beirne" },
-      { label: "citybiz", url: "https://www.citybiz.co/article/841330/deviation-capital-launches-with-2-billion-aum-after-spinout-from-two-sigma-ventures/" }
     ]
   },
   "adeyemi-ajao": {
@@ -2622,40 +2451,6 @@ const partnerProfiles = {
     sources: [
       { label: "TechCrunch", url: "https://techcrunch.com/2026/07/08/crypto-vc-firm-paradigm-raises-1-2b-to-invest-in-technical-frontier-startups/" },
       { label: "CoinDesk", url: "https://www.coindesk.com/markets/2026/07/08/crypto-vc-paradigm-launches-usd1-2-billion-ai-fund-as-it-broadens-beyond-digital-assets-bbg" }
-    ]
-  },
-  "chase-coleman": {
-    name: "Chase Coleman",
-    firm: "Tiger Global Management",
-    firmSlug: "tiger-global",
-    title: "Founder & Managing Partner",
-    joinedYear: 2001,
-    education: ["B.A. Economics & Spanish, Williams College (1997)"],
-    previousExperience: [
-      "Technology Analyst & Partner, Tiger Management (1997–2000) — under Julian Robertson"
-    ],
-    investmentFocus: ["Internet", "Fintech", "Consumer Tech", "Global Public & Private Equity"],
-    notableInvestments: [
-      { name: "Facebook", ticker: "META" },
-      { name: "Coinbase", ticker: "COIN" },
-      { name: "JD.com", ticker: "JD" },
-      { name: "Stripe", ticker: null },
-      { name: "Uber", ticker: "UBER" }
-    ],
-    boardSeats: ["Tiger Foundation", "Hospital for Special Surgery (Investment Committee Co-Chair)"],
-    ipoCount: 4,
-    majorExits: 1,
-    careerTimeline: [
-      { year: "1997", event: "Joins Julian Robertson's Tiger Management as a technology analyst straight out of Williams College." },
-      { year: "2000", event: "Robertson closes Tiger Management and entrusts Coleman with over $25 million to manage as one of the original 'Tiger Cubs.'" },
-      { year: "2001", event: "Launches Tiger Technology (later renamed Tiger Global Management) as a public-markets hedge fund." },
-      { year: "2010s", event: "Builds an early pre-IPO stake in Facebook, later selling it for an estimated $1 billion." },
-      { year: "2021", event: "Tiger Global becomes one of the most active venture investors globally, expanding aggressively into private markets." }
-    ],
-    biography: "Chase Coleman was only 25 when Julian Robertson closed Tiger Management in 2000 and handed him roughly $25 million to manage — one of the original 'Tiger Cubs' who launched their own funds from Tiger's wind-down. A childhood friend of Robertson's son, Coleman had joined Tiger Management as a technology analyst straight out of Williams College in 1997. He founded Tiger Global in 2001 and built it into a hybrid the industry hadn't quite seen before: a fund equally comfortable buying public stocks and writing private venture checks, moving unusually fast into deals other investors took months to close. His early, high-conviction stake in Facebook — sold for an estimated $1 billion in 2013 — remains one of the defining bets of his career.",
-    sources: [
-      { label: "Tiger Global — Chase Coleman", url: "https://www.tigerglobal.com/chase-coleman" },
-      { label: "Wikipedia", url: "https://en.wikipedia.org/wiki/Chase_Coleman_III" }
     ]
   },
   "hemant-taneja": {
@@ -5812,44 +5607,6 @@ sources: [
       { label: "Forbes Profile", url: "https://www.forbes.com/profile/robert-nelsen/" }
     ]
   },
-  "marc-stad": {
-    name: "Marc Stad",
-    firm: "Dragoneer Investment Group",
-    firmSlug: "dragoneer-investment-group",
-    title: "Founder & Managing Partner",
-    joinedYear: 2012,
-    education: ["AB, Government, Harvard College (magna cum laude)", "MBA, Stanford Graduate School of Business"],
-    previousExperience: [
-      "Consultant, McKinsey & Company",
-      "Investment Professional, TPG Capital",
-      "Associate, Parthenon Capital",
-      "Partner & Portfolio Manager, Investment Group of Santa Barbara",
-      "President & Commissioner, City and County of San Francisco Finance Corporation"
-    ],
-    investmentFocus: ["Growth Equity", "Crossover Investing", "AI", "Enterprise Software", "Consumer Internet"],
-    notableInvestments: [
-      { name: "Airbnb", ticker: "ABNB" },
-      { name: "DoorDash", ticker: "DASH" },
-      { name: "Snowflake", ticker: "SNOW" },
-      { name: "Anthropic", ticker: null },
-      { name: "Roblox", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 5,
-    majorExits: 2,
-    careerTimeline: [
-      { year: "2012", event: "Founds Dragoneer Investment Group after roles at McKinsey, TPG Capital, and the Investment Group of Santa Barbara." },
-      { year: "2016", event: "Leads a $2.6 billion leveraged buyout of AmWINS Group." },
-      { year: "2019", event: "Invests in DoorDash's Series F, ahead of its 2020 IPO at a $55 billion market cap." },
-      { year: "2020", event: "Airbnb, another Dragoneer investment, debuts at approximately $47 billion." },
-      { year: "2025", event: "Co-leads Anthropic's $30 billion funding round." }
-    ],
-    biography: "Marc Stad founded Dragoneer Investment Group in 2012 after a career built on depth over display — stints at McKinsey, TPG Capital, and the Investment Group of Santa Barbara, following a Harvard degree and Stanford MBA. His investing philosophy centers on long-duration capital and concentrated conviction rather than a large volume of smaller bets, a discipline that produced back-to-back landmark outcomes: Dragoneer backed both DoorDash and Airbnb ahead of their 2020 IPOs, and Stad personally led a $2.6 billion leveraged buyout of insurance services company AmWINS in 2016, becoming its largest outside shareholder. He has continued that pattern into the AI era, co-leading Anthropic's $30 billion funding round in 2025, and has been featured on the Forbes Midas List, Fortune's 40 Under 40, and the Recode 100.",
-    sources: [
-      { label: "Forbes Profile", url: "https://www.forbes.com/profile/marc-stad/" },
-      { label: "Milken Institute", url: "https://milkeninstitute.org/events/global-conference-2023/speakers/marc-stad" }
-    ]
-  },
   "eduardo-saverin": {
     name: "Eduardo Saverin",
     firm: "B Capital Group",
@@ -7236,38 +6993,6 @@ sources: [
       { label: "JVP — Erel Margalit", url: "https://jvpvc.com/jvp_team/erel-n-margalit-4/" }
     ]
   },
-  "tope-lawani": {
-    name: "Tope Lawani",
-    firm: "Helios Investment Partners",
-    firmSlug: "helios-investment-partners",
-    title: "Co-Founder & Managing Partner",
-    joinedYear: 2004,
-    education: ["BS, Chemical Engineering, MIT", "JD, Harvard Law School", "MBA, Harvard Business School"],
-    previousExperience: [
-      "9 years, Texas Pacific Group (TPG Capital), San Francisco & London (led acquisitions of Burger King, Debenhams, J. Crew)"
-    ],
-    investmentFocus: ["Telecom Infrastructure", "Fintech", "Financial Services", "Growth Equity"],
-    notableInvestments: [
-      { name: "Interswitch", ticker: null },
-      { name: "Helios Towers", ticker: "HTWS.L" },
-      { name: "Equity Bank", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 1,
-    majorExits: 6,
-    careerTimeline: [
-      { year: "1995", event: "Joins Texas Pacific Group, spending nine years leading telecommunications and media investments across the US and Europe." },
-      { year: "2004", event: "Co-founds Helios Investment Partners with Babatunde Soyoye in London." },
-      { year: "2005", event: "Helios founds Africa's first independent telecom tower company, HTN Towers." },
-      { year: "2011", event: "Leads Helios' investment in Interswitch, a Nigerian electronic payments processor." },
-      { year: "2019", event: "Helios Towers completes its listing on the London Stock Exchange." }
-    ],
-    biography: "Tope Lawani grew up in Ibadan, Nigeria, before earning a chemical engineering degree from MIT and a joint JD/MBA from Harvard, then spending nine years at Texas Pacific Group leading telecommunications and media buyouts including Burger King, Debenhams, and J. Crew. He co-founded Helios Investment Partners with Babatunde Soyoye in 2004, initially intending to build businesses directly rather than run a traditional private equity fund — a plan that shifted when OPIC approached Helios to manage the struggling Modern Africa Growth Fund. Lawani and Soyoye stumbled into what became one of Helios' signature bets while researching a Nigerian mobile telecom license: recognizing that unreliable grid electricity made shared tower infrastructure essential across the continent, they founded Africa's first independent tower company. Under his leadership, Helios has grown into the largest Africa-focused private investment firm, generating more than $2 billion in aggregate exit proceeds through listings, dividend recaps, and strategic sales including Interswitch, Helios Towers, Vivo Energy, and Equity Bank.",
-    sources: [
-      { label: "How We Made It In Africa", url: "https://www.howwemadeitinafrica.com/the-nigerian-investor-behind-some-of-africas-biggest-deals/170376/" },
-      { label: "Helios Investment Partners", url: "https://www.heliosinvestment.com/team" }
-    ]
-  },
   "kola-aina": {
     name: "Kola Aina",
     firm: "Ventures Platform",
@@ -7693,34 +7418,6 @@ sources: [
     sources: [
       { label: "NextBillion", url: "https://nextbillion.net/africa-energy-sector-kawisafi-ventures/" },
       { label: "KawiSafi Ventures Fund Team", url: "https://www.kawisafi.com/fund" }
-    ]
-  },
-  "jake-cusack": {
-    name: "Jake Cusack",
-    firm: "CrossBoundary",
-    firmSlug: "crossboundary",
-    title: "Co-Founder & Managing Partner",
-    joinedYear: 2011,
-    education: [],
-    previousExperience: [
-      "Private-sector development work, Iraq and Afghanistan (2010-2012)",
-      "Research on capital access and bankable transactions with Afghan entrepreneurs"
-    ],
-    investmentFocus: ["Energy Infrastructure", "Mini-Grids", "Solar", "Emerging & Frontier Markets"],
-    notableInvestments: [],
-    boardSeats: [],
-    ipoCount: 0,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2010", event: "Begins private-sector development work in Iraq and Afghanistan alongside Matt Tilleard." },
-      { year: "2011", event: "Co-founds CrossBoundary, initially focused on bottom-up private-sector solutions in conflict-affected states." },
-      { year: "2010s", event: "Expands CrossBoundary into Sub-Saharan Africa, building out its advisory, energy, and mini-grid financing businesses." },
-      { year: "2020s", event: "Announces a strategic partnership with Brown Advisory to expand access to sustainable and inclusive investment opportunities." }
-    ],
-    biography: "Jake Cusack co-founded CrossBoundary in 2011 after spending two years working on private-sector development in Iraq and Afghanistan, where his on-the-ground research with local entrepreneurs convinced him that bottom-up, locally-disciplined capital, not top-down state intervention, was the more sustainable path to development. That conviction shaped CrossBoundary's growth from a small advisory practice into a genuinely diversified investment platform spanning energy infrastructure, mini-grid financing, and direct investment across underserved and frontier markets, with a particular concentration in Sub-Saharan Africa. Cusack has emphasized the firm's deliberate localization over time — CrossBoundary now employs predominantly people from the societies where it invests rather than expatriate staff — and has grown the platform to more than 200 employees across offices including Nairobi and Dubai, while continuing to publish research on capital access and investment facilitation in emerging markets.",
-    sources: [
-      { label: "CrossBoundary — Jake Cusack", url: "https://crossboundary.com/people/jake-cusack/" },
-      { label: "CrossBoundary Group", url: "https://crossboundary.com/crossboundary-group/" }
     ]
   },
   "zachariah-george": {
