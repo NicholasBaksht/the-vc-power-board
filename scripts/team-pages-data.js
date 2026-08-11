@@ -1,4 +1,10 @@
 const TEAM_PAGES = {
+  "kindred-ventures": "https://kindredventures.com/about/",
+  "underscore-vc": "https://underscore.vc/team/",
+  "human-capital": "https://human.capital/about",
+  "entrepreneur-first": "https://www.joinef.com/about-us/",
+  "techstars": null,
+  "haun-ventures": "https://www.haun.co/team",
   "softbank-vision-fund": "https://visionfund.com/team",
   "base10-partners": "https://base10.vc/team/",
   "village-global": "https://www.villageglobal.com/team",
@@ -244,7 +250,6 @@ const TEAM_PAGES = {
   "mucker-capital": "https://www.mucker.com/team",
   "struck-capital": "https://struckcapital.com/team",
   "science-inc": null,
-  "wing-venture-capital": "https://www.wing.vc/people",
   "soma-capital": "https://somacap.com/about",
   "vy-capital": null,
   "mfv-partners": "https://www.mfvpartners.com/team/",
