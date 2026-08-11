@@ -73,6 +73,8 @@ const featuredFirm = {
 // ============================================================
 
 const firmStages = {
+  "insight-partners": ["Series A", "Series B", "Growth", "Late Stage"],
+  "tiger-global": ["Series B", "Growth", "Late Stage"],
   "kima-ventures": ["Pre-Seed", "Seed", "Series A"],
   "afore-capital": ["Pre-Seed"],
   "techstars": ["Pre-Seed", "Seed"],
@@ -380,6 +382,7 @@ const firmStages = {
 // Fill in more over time as research is done on more firms.
 // ============================================================
 const firmPerformance = {
+  "insight-partners": { totalPortfolio: 875 },
   "kleiner-perkins": { totalPortfolio: 900 },
   "battery-ventures": { totalPortfolio: 450, ipoExits: 65, acquisitions: 185 },
   "gv": { totalPortfolio: 400 },
