@@ -136,7 +136,9 @@ const partnerProfiles = {
   previousExperience: [
     "Head of Macro Trading, Tiger Management"
   ],
-  firmHistory: [],
+  firmHistory: [
+    { firmSlug: "tiger-global", role: "Head of Macro Trading, Tiger Management", startYear: null, endYear: null }
+  ],
   boardSeats: [],
   ipoCount: null,
   majorExits: null,
@@ -9435,6 +9437,78 @@ sources: [
         label: "Crunchbase — Boost VC",
         url: "https://www.crunchbase.com/organization/boostfunder"
       }
+    ]
+  },
+  "jeff-horing": {
+    name: "Jeff Horing",
+    firm: "Insight Partners",
+    firmSlug: "insight-partners",
+    title: "Co-Founder & Managing Director",
+    joinedYear: 1995,
+    education: ["B.A. Electrical Engineering, University of Pennsylvania", "M.B.A., MIT Sloan School of Management"],
+    previousExperience: [
+      "Principal, Goldman Sachs",
+      "Principal, Warburg Pincus & Company"
+    ],
+    investmentFocus: ["Software", "SaaS", "Data & Analytics", "Cybersecurity"],
+    notableInvestments: [
+      { name: "Alteryx", ticker: null },
+      { name: "Wix", ticker: "WIX" },
+      { name: "Shutterstock", ticker: "SSTK" },
+      { name: "JFrog", ticker: "FROG" },
+      { name: "nCino", ticker: "NCNO" },
+      { name: "AirWatch", ticker: null }
+    ],
+    boardSeats: ["monday.com (Chairman)", "Wiz", "JFrog", "Alteryx"],
+    ipoCount: 5,
+    majorExits: 2,
+    careerTimeline: [
+      { year: "1995", event: "Co-founds Insight Partners with Jerry Murdock, betting that 'software is the best business in the world.'" },
+      { year: "2012", event: "Leads Insight's investment in Shutterstock ahead of its IPO." },
+      { year: "2013", event: "Leads Insight's investment in Wix ahead of its IPO." },
+      { year: "2014", event: "AirWatch, an Insight portfolio company, is acquired by VMware for $1.5 billion." },
+      { year: "2017", event: "Leads Insight's investment in Alteryx ahead of its IPO." },
+      { year: "2025", event: "Insight Partners surpasses $90 billion in assets under management, with over 875 companies invested in to date." }
+    ],
+    biography: "Jeff Horing co-founded Insight Partners in 1995 after working as a principal at Goldman Sachs and Warburg Pincus, building the firm around a then-contrarian thesis: software, not hardware, was the best business in the world. In the firm's earliest years, Horing and his co-founder famously sourced deals by manually reading trade publications for growing software companies — an outbound, research-driven approach that still defines Insight's culture. Over three decades, he has led investments in more than 140 companies and personally led the firm to public exits including Wix, Shutterstock, Alteryx, JFrog, and nCino. He currently chairs the board of monday.com and sits on the boards of Wiz, JFrog, and Alteryx.",
+    sources: [
+      { label: "Insight Partners — Jeff Horing", url: "https://www.insightpartners.com/team/jeff-horing/" },
+      { label: "Forbes Profile", url: "https://www.forbes.com/profile/jeff-horing/" },
+      { label: "Wikipedia — Insight Partners", url: "https://en.wikipedia.org/wiki/Insight_Partners" }
+    ]
+  },
+  "chase-coleman": {
+    name: "Chase Coleman",
+    firm: "Tiger Global Management",
+    firmSlug: "tiger-global",
+    title: "Founder & Managing Partner",
+    joinedYear: 2001,
+    education: ["B.A. Economics & Spanish, Williams College (1997)"],
+    previousExperience: [
+      "Technology Analyst & Partner, Tiger Management (1997–2000) — under Julian Robertson"
+    ],
+    investmentFocus: ["Internet", "Fintech", "Consumer Tech", "Global Public & Private Equity"],
+    notableInvestments: [
+      { name: "Facebook", ticker: "META" },
+      { name: "Coinbase", ticker: "COIN" },
+      { name: "JD.com", ticker: "JD" },
+      { name: "Stripe", ticker: null },
+      { name: "Uber", ticker: "UBER" }
+    ],
+    boardSeats: ["Tiger Foundation", "Hospital for Special Surgery (Investment Committee Co-Chair)"],
+    ipoCount: 4,
+    majorExits: 1,
+    careerTimeline: [
+      { year: "1997", event: "Joins Julian Robertson's Tiger Management as a technology analyst straight out of Williams College." },
+      { year: "2000", event: "Robertson closes Tiger Management and entrusts Coleman with over $25 million to manage as one of the original 'Tiger Cubs.'" },
+      { year: "2001", event: "Launches Tiger Technology (later renamed Tiger Global Management) as a public-markets hedge fund." },
+      { year: "2010s", event: "Builds an early pre-IPO stake in Facebook, later selling it for an estimated $1 billion." },
+      { year: "2021", event: "Tiger Global becomes one of the most active venture investors globally, expanding aggressively into private markets." }
+    ],
+    biography: "Chase Coleman was only 25 when Julian Robertson closed Tiger Management in 2000 and handed him roughly $25 million to manage — one of the original 'Tiger Cubs' who launched their own funds from Tiger's wind-down. A childhood friend of Robertson's son, Coleman had joined Tiger Management as a technology analyst straight out of Williams College in 1997. He founded Tiger Global in 2001 and built it into a hybrid the industry hadn't quite seen before: a fund equally comfortable buying public stocks and writing private venture checks, moving unusually fast into deals other investors took months to close. His early, high-conviction stake in Facebook — sold for an estimated $1 billion in 2013 — remains one of the defining bets of his career.",
+    sources: [
+      { label: "Tiger Global — Chase Coleman", url: "https://www.tigerglobal.com/chase-coleman" },
+      { label: "Wikipedia", url: "https://en.wikipedia.org/wiki/Chase_Coleman_III" }
     ]
   },
 };
