@@ -424,6 +424,7 @@ fetch('prices.json')
     console.log('Could not load live prices, using built-in defaults.', err);
   })
   .finally(() => {
+      renderHeroBadge();
     renderHeroTop5();
     renderScaleBar();
     renderFeaturedFirm();
