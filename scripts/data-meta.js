@@ -73,6 +73,16 @@ const featuredFirm = {
 // ============================================================
 
 const firmStages = {
+  "kima-ventures": ["Pre-Seed", "Seed", "Series A"],
+  "afore-capital": ["Pre-Seed"],
+  "techstars": ["Pre-Seed", "Seed"],
+  "conviction": ["Seed", "Series A"],
+  "kindred-ventures": ["Pre-Seed", "Seed"],
+  "underscore-vc": ["Pre-Seed", "Seed"],
+  "basis-set-ventures": ["Seed", "Series A"],
+  "hummingbird-ventures": ["Seed"],
+  "m13": ["Seed", "Series A", "Series B"],
+  "boost-vc": ["Pre-Seed"],
   "a16z": ["Seed", "Series A", "Series B", "Growth", "Late Stage"],
   "sequoia": ["Seed", "Series A", "Series B", "Growth", "Late Stage"],
   "general-catalyst": ["Seed", "Series A", "Series B", "Growth"],
