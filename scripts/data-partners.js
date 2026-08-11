@@ -62,7 +62,7 @@ const partnerProfiles = {
   biography: "Olaf Carlson-Wee founded Polychain Capital in 2016 after serving as Coinbase's first employee and Head of Risk. A Vassar College sociology graduate, he built Polychain into one of the largest crypto-native investment firms, backing blockchain protocols and the foundational infrastructure of decentralized networks.",
   sources: []
 },
-"kyle-samani": {
+  "kyle-samani": {
   name: "Kyle Samani",
   firm: "Multicoin Capital",
   firmSlug: "multicoin-capital",
@@ -80,7 +80,7 @@ const partnerProfiles = {
   biography: "Kyle Samani co-founded Multicoin Capital in 2017 and serves as Managing Partner. The firm takes a thesis-driven approach to crypto investing, backing tokens and blockchain-enabled businesses it believes are reshaping trillion-dollar markets.",
   sources: []
 },
-"tushar-jain": {
+  "tushar-jain": {
   name: "Tushar Jain",
   firm: "Multicoin Capital",
   firmSlug: "multicoin-capital",
@@ -100,7 +100,7 @@ const partnerProfiles = {
   biography: "Tushar Jain co-founded Multicoin Capital in 2017 and serves as Managing Partner. He holds an MBA from New York University. Multicoin invests across crypto infrastructure and DeFi, focused on projects pioneering new token economics.",
   sources: []
 },
-"avichal-garg": {
+  "avichal-garg": {
   name: "Avichal Garg",
   firm: "Electric Capital",
   firmSlug: "electric-capital",
@@ -124,7 +124,7 @@ const partnerProfiles = {
   biography: "Avichal Garg co-founded Electric Capital in 2018 with Curtis Spencer, after working at Facebook and Greylock Partners. Electric invests from seed through growth across crypto, blockchain, developer tools, AI, and healthtech.",
   sources: []
 },
-"dan-morehead": {
+  "dan-morehead": {
   name: "Dan Morehead",
   firm: "Pantera Capital",
   firmSlug: "pantera-capital",
@@ -150,7 +150,7 @@ const partnerProfiles = {
   biography: "Dan Morehead founded Pantera Capital in 2003 after running macro trading at Tiger Management. A Princeton engineering graduate, he grew Pantera into one of the earliest and largest dedicated crypto funds, launching the first licensed Bitcoin fund in the United States in 2013.",
   sources: []
 },
-"jesse-walden": {
+  "jesse-walden": {
   name: "Jesse Walden",
   firm: "Variant Fund",
   firmSlug: "variant-fund",
@@ -173,7 +173,7 @@ const partnerProfiles = {
   biography: "Jesse Walden founded Variant Fund in 2020 after working on crypto investments at a16z. Variant backs foundational blockchain protocols and crypto-native networks, with early positions in Uniswap, Phantom, Mirror, and Flashbots. The firm's team is built largely from former founders and operators.",
   sources: []
 },
-"brad-stephens": {
+  "brad-stephens": {
   name: "Brad Stephens",
   firm: "Blockchain Capital",
   firmSlug: "blockchain-capital",
@@ -194,8 +194,7 @@ const partnerProfiles = {
   biography: "Brad Stephens co-founded Blockchain Capital in 2013 with his brother Bart, creating one of the first venture funds dedicated entirely to blockchain. A Duke graduate in Economics and Religion, he has led the fund's investments in crypto infrastructure, including its pre-IPO position in Coinbase, and serves on the board of Coinbase Developer Platform.",
   sources: []
 },
-  // ============ CAVALRY VENTURES ============
-"claude-ritter": {
+  "claude-ritter": {
   name: "Claude Ritter",
   firm: "Cavalry Ventures",
   firmSlug: "cavalry-ventures",
@@ -223,7 +222,7 @@ const partnerProfiles = {
     { label: "Sifted — Cavalry Ventures partner departures", url: "https://sifted.eu/articles/cavalry-ventures-loses-third-partner-news" }
   ]
 },
-"stefan-walter": {
+  "stefan-walter": {
   name: "Stefan Walter",
   firm: "Cavalry Ventures",
   firmSlug: "cavalry-ventures",
@@ -248,9 +247,7 @@ const partnerProfiles = {
     { label: "Crunchbase — Stefan Walter", url: "https://www.crunchbase.com/person/stefan-walter" }
   ]
 },
-
-// ============ POINT72 VENTURES ============
-"dan-gwak": {
+  "dan-gwak": {
   name: "Dan Gwak",
   firm: "Point72 Ventures",
   firmSlug: "point72-ventures",
@@ -280,7 +277,7 @@ const partnerProfiles = {
     { label: "TechCrunch — Dan Gwak author bio", url: "https://techcrunch.com/author/dan-gwak" }
   ]
 },
-"sri-chandrasekar": {
+  "sri-chandrasekar": {
   name: "Sri Chandrasekar",
   firm: "Point72 Ventures",
   firmSlug: "point72-ventures",
@@ -332,7 +329,7 @@ const partnerProfiles = {
   biography: "Neil Mehta co-founded Greenoaks in 2012 after leaving D.E. Shaw, having previously worked at Kayne Anderson. He built the firm around concentrated, long-duration positions in a small number of technology companies — holding through private rounds into the public markets rather than exiting at IPO. He sits on the board of Coupang, one of the firm's defining investments.",
   sources: []
 },
-"brad-gerstner": {
+  "brad-gerstner": {
   name: "Brad Gerstner",
   firm: "Altimeter Capital",
   firmSlug: "altimeter-capital",
@@ -361,7 +358,7 @@ const partnerProfiles = {
   biography: "Brad Gerstner founded Altimeter Capital in 2008 and remains its CEO. A Wabash College graduate with an MBA from Harvard Business School, he began his career as a government official in Indiana before co-founding General Catalyst. At Altimeter he became known for early conviction in Snowflake and Grab, investments that earned him a place on the Forbes Midas List.",
   sources: []
 },
-"daniel-sundheim": {
+  "daniel-sundheim": {
   name: "Daniel Sundheim",
   firm: "D1 Capital Partners",
   firmSlug: "d1-capital-partners",
@@ -388,7 +385,7 @@ const partnerProfiles = {
   biography: "Daniel Sundheim founded D1 Capital Partners in 2018 after a 15-year tenure at Viking Global Investors, where he served as Chief Investment Officer. A Wharton economics graduate who began his career at Bear Stearns, he built D1 as a multi-asset firm investing across global public and private markets, with concentrated positions in growth companies including Instacart and Procore.",
   sources: []
 },
-"henry-ellenbogen": {
+  "henry-ellenbogen": {
   name: "Henry Ellenbogen",
   firm: "Durable Capital Partners",
   firmSlug: "durable-capital-partners",
@@ -415,7 +412,7 @@ const partnerProfiles = {
   biography: "Henry Ellenbogen founded Durable Capital Partners in 2019 after 18 years as a portfolio manager at T. Rowe Price, preceded by an analyst role at Goldman Sachs. He holds a BA in History from Harvard, along with a JD from Harvard Law School and an MBA from Harvard Business School, where he was a Baker Scholar. Durable backs long-term growth businesses across both public and private markets.",
   sources: []
 },
-"alex-sacerdote": {
+  "alex-sacerdote": {
   name: "Alex Sacerdote",
   firm: "Whale Rock Capital Management",
   firmSlug: "whale-rock-capital-management",
@@ -439,7 +436,7 @@ const partnerProfiles = {
   biography: "Alex Sacerdote founded Whale Rock Capital Management in 2006 and serves as its CEO and Chief Investment Officer. A Hamilton College graduate with an MBA from Harvard, he was previously a portfolio manager at Fidelity focused on technology and media. At Whale Rock he runs a concentrated growth strategy built around long-duration technology trends. He serves on the board of his alma mater, Hamilton College.",
   sources: []
 },
-"andreas-halvorsen": {
+  "andreas-halvorsen": {
   name: "Andreas Halvorsen",
   firm: "Viking Global Investors",
   firmSlug: "viking-global-investors",
@@ -467,7 +464,7 @@ const partnerProfiles = {
   biography: "Andreas Halvorsen co-founded Viking Global Investors in 1999 and serves as its CEO. A Williams College graduate with an MBA from Stanford, he began as a healthcare analyst at Morgan Stanley before becoming one of the first employees at Tiger Management. He has since built Viking into one of the largest hedge funds in the world, investing long and short across technology, healthcare, and consumer sectors.",
   sources: []
 },
-"elad-gil": {
+  "elad-gil": {
   name: "Elad Gil",
   firm: "Elad Gil",
   firmSlug: "elad-gil",
@@ -497,7 +494,7 @@ const partnerProfiles = {
   biography: "Elad Gil is one of the most prolific independent investors in technology, backing pre-IPO companies including Airbnb, Stripe, Coinbase, Instacart, Pinterest, and Roblox. He holds a BA from Harvard and a PhD from MIT, joined Google as a product manager in 2004, then co-founded Mixer Labs — acquired by Twitter in 2009 — before serving as a Twitter VP. He later co-founded Color Genomics and authored the High Growth Handbook. He moved to full-time investing around 2012.",
   sources: []
 },
-"packy-mccormick": {
+  "packy-mccormick": {
   name: "Packy McCormick",
   firm: "Not Boring Capital",
   firmSlug: "not-boring-capital",
@@ -517,7 +514,7 @@ const partnerProfiles = {
   biography: "Patrick 'Packy' McCormick is a writer and investor who runs Not Boring Capital, a venture fund and content studio launched in 2021 alongside his widely-read Not Boring newsletter. The fund backs early-stage companies with strong narratives, often in fintech and deep tech.",
   sources: []
 },
-"ruchi-sanghvi": {
+  "ruchi-sanghvi": {
   name: "Ruchi Sanghvi",
   firm: "South Park Commons",
   firmSlug: "south-park-commons",
@@ -543,7 +540,7 @@ const partnerProfiles = {
   biography: "Ruchi Sanghvi co-founded South Park Commons in 2016 and serves as its CEO. A Carnegie Mellon engineering graduate, she was Facebook's first female engineer and later a VP at Dropbox. At SPC she supports deep-tech and software founders at the earliest possible stage — what the firm calls '-1 to 0' — through its community, studio, and venture fund. She serves on the board of Paytm and has taught entrepreneurship at UC Berkeley.",
   sources: []
 },
-"eric-tarczynski": {
+  "eric-tarczynski": {
   name: "Eric Tarczynski",
   firm: "Contrary Capital",
   firmSlug: "contrary-capital",
@@ -563,7 +560,7 @@ const partnerProfiles = {
   biography: "Eric Tarczynski founded Contrary Capital while still a student at Northeastern and runs it as CEO. The firm operates a network of on-campus partners who identify talent early, backing university-founded startups across the US, Latin America, and Asia.",
   sources: []
 },
-"christoph-westphal": {
+  "christoph-westphal": {
   name: "Christoph Westphal",
   firm: "RA Capital Management",
   firmSlug: "ra-capital-management",
@@ -584,7 +581,7 @@ const partnerProfiles = {
   biography: "Dr. Christoph Westphal co-founded RA Capital Management in 2004 and serves as its CEO, having previously led Millennium Pharmaceuticals. RA Capital invests across biotech, pharma, diagnostics, and digital health, backing companies translating scientific breakthroughs into medicines and technologies.",
   sources: []
 },
-"jim-tananbaum": {
+  "jim-tananbaum": {
   name: "Jim Tananbaum",
   firm: "Foresite Capital",
   firmSlug: "foresite-capital",
@@ -606,7 +603,7 @@ const partnerProfiles = {
   biography: "Jim Tananbaum founded Foresite Capital in 2011 and leads the firm as CEO, having previously served as CEO of BioOptions. Foresite invests across all stages in biotechnology and life sciences, with an emphasis on platform technologies and transformative biopharma.",
   sources: []
 },
-"neil-shen": {
+  "neil-shen": {
   name: "Neil Shen",
   firm: "HongShan Capital",
   firmSlug: "hongshan-capital",
@@ -631,7 +628,7 @@ const partnerProfiles = {
   biography: "Neil Shen founded Sequoia Capital China in 2005 in partnership with Sequoia Capital, bringing operator credibility as a serial entrepreneur who co-founded both Ctrip and Home Inns. Following the 2023 announcement of Sequoia's regional split, the firm became fully independent in 2024 and rebranded as HongShan, retaining the portfolio and team built over nearly two decades.",
   sources: []
 },
-"abdulrahman-tarabzouni": {
+  "abdulrahman-tarabzouni": {
   name: "Abdulrahman Tarabzouni",
   firm: "STV",
   firmSlug: "stv",
@@ -649,8 +646,7 @@ const partnerProfiles = {
   biography: "Abdulrahman Tarabzouni founded STV in 2018, building it into the largest independent technology venture firm in the Middle East. Anchored by Saudi Telecom as a key limited partner, STV invests in MENA tech startups from Series A through growth.",
   sources: []
 },
-// ============ PLAYGROUND GLOBAL ============
-"peter-barrett": {
+  "peter-barrett": {
   name: "Peter Barrett",
   firm: "Playground Global",
   firmSlug: "playground-global",
@@ -679,7 +675,7 @@ const partnerProfiles = {
     { label: "Wikipedia — Peter Barrett (entrepreneur)", url: "https://en.wikipedia.org/wiki/Peter_Barrett_(entrepreneur)" }
   ]
 },
-"bruce-leak": {
+  "bruce-leak": {
   name: "Bruce Leak",
   firm: "Playground Global",
   firmSlug: "playground-global",
@@ -709,7 +705,7 @@ const partnerProfiles = {
     { label: "Playground Global — Bruce Leak", url: "https://www.playground.vc/people/bruce-leak" }
   ]
 },
-"jory-bell": {
+  "jory-bell": {
   name: "Jory Bell",
   firm: "Playground Global",
   firmSlug: "playground-global",
@@ -730,7 +726,7 @@ const partnerProfiles = {
     { label: "Crunchbase — Playground Global profiles", url: "https://www.crunchbase.com/organization/playground-global/profiles_and_contacts" }
   ]
 },
-"pat-gelsinger": {
+  "pat-gelsinger": {
   name: "Pat Gelsinger",
   firm: "Playground Global",
   firmSlug: "playground-global",
@@ -759,9 +755,7 @@ const partnerProfiles = {
     { label: "VMware SEC 8-K — CEO transition", url: "https://www.sec.gov/Archives/edgar/data/1124610/000112461021000003/gelsinger11321newsrelease.htm" }
   ]
 },
-
-// ============ GRISHIN ROBOTICS ============
-"dmitry-grishin": {
+  "dmitry-grishin": {
   name: "Dmitry Grishin",
   firm: "Grishin Robotics",
   firmSlug: "grishin-robotics",
@@ -790,9 +784,7 @@ const partnerProfiles = {
     { label: "Grishin Robotics — Team", url: "https://www.grishinrobotics.com/team" }
   ]
 },
-
-// ============ DEFY PARTNERS ============
-"neil-sequeira": {
+  "neil-sequeira": {
   name: "Neil Sequeira",
   firm: "Defy Partners",
   firmSlug: "defy-partners",
@@ -824,7 +816,7 @@ const partnerProfiles = {
     { label: "Defy VC — Neil Sequeira", url: "https://defy.vc/team_member/neil-sequeira/" }
   ]
 },
-"trae-vassallo": {
+  "trae-vassallo": {
   name: "Trae Vassallo",
   firm: "Defy Partners",
   firmSlug: "defy-partners",
@@ -856,9 +848,7 @@ const partnerProfiles = {
     { label: "Broadway Angels — Trae Vassallo bio", url: "https://www.broadway-angels.com/trae-vassallo-bio" }
   ]
 },
-
-// ============ BAUKUNST ============
-"kate-mcandrew": {
+  "kate-mcandrew": {
   name: "Kate McAndrew",
   firm: "Baukunst",
   firmSlug: "baukunst",
@@ -888,7 +878,7 @@ const partnerProfiles = {
     { label: "Startup Intros — Kate McAndrew", url: "https://startupintros.com/people/kate-mcandrew" }
   ]
 },
-"tyler-mincey": {
+  "tyler-mincey": {
   name: "Tyler Mincey",
   firm: "Baukunst",
   firmSlug: "baukunst",
@@ -914,7 +904,7 @@ const partnerProfiles = {
     { label: "YesPress — Tyler Mincey", url: "https://yespress.io/tyler-mincey" }
   ]
 },
-"axel-bichara": {
+  "axel-bichara": {
   name: "Axel Bichara",
   firm: "Baukunst",
   firmSlug: "baukunst",
@@ -940,7 +930,7 @@ const partnerProfiles = {
     { label: "Baukunst — The Collective", url: "https://baukunst.co/collective" }
   ]
 },
-"matt-thoms": {
+  "matt-thoms": {
   name: "Matt Thoms",
   firm: "Baukunst",
   firmSlug: "baukunst",
@@ -968,9 +958,7 @@ const partnerProfiles = {
     { label: "The Network — Matt Thoms", url: "https://www.thenetwork.com/profile/matt-thoms-07950a7a" }
   ]
 },
-
-// ============ MUCKER CAPITAL ============
-"william-hsu": {
+  "william-hsu": {
   name: "William Hsu",
   firm: "Mucker Capital",
   firmSlug: "mucker-capital",
@@ -998,7 +986,7 @@ const partnerProfiles = {
     { label: "Mucker Capital — William Hsu", url: "https://mucker.com/team/william-hsu/" }
   ]
 },
-"erik-rannala": {
+  "erik-rannala": {
   name: "Erik Rannala",
   firm: "Mucker Capital",
   firmSlug: "mucker-capital",
@@ -1028,9 +1016,7 @@ const partnerProfiles = {
     { label: "Mucker Capital — Erik Rannala", url: "https://mucker.com/team/erik-rannala/" }
   ]
 },
-
-// ============ STRUCK CAPITAL ============
-"adam-struck": {
+  "adam-struck": {
   name: "Adam Struck",
   firm: "Struck Capital",
   firmSlug: "struck-capital",
@@ -1056,9 +1042,7 @@ const partnerProfiles = {
     { label: "AI for Good — Adam Struck", url: "https://aiforgood.itu.int/speaker/adam-struck/" }
   ]
 },
-
-// ============ SCIENCE INC. ============
-"michael-jones": {
+  "michael-jones": {
   name: "Michael Jones",
   firm: "Science Inc.",
   firmSlug: "science-inc",
@@ -1087,7 +1071,7 @@ const partnerProfiles = {
     { label: "LA Business Journal — Michael Jones", url: "https://labusinessjournal.com/la500-2025/technology-2025/la500-2025-michael-jones/" }
   ]
 },
-"peter-pham": {
+  "peter-pham": {
   name: "Peter Pham",
   firm: "Science Inc.",
   firmSlug: "science-inc",
@@ -1111,9 +1095,7 @@ const partnerProfiles = {
     { label: "Science Inc. — Leadership", url: "https://dev.science-inc.com/ssac.html" }
   ]
 },
-
-// ============ SOMA CAPITAL ============
-"aneel-ranadive": {
+  "aneel-ranadive": {
   name: "Aneel Ranadive",
   firm: "Soma Capital",
   firmSlug: "soma-capital",
@@ -1144,9 +1126,7 @@ const partnerProfiles = {
     { label: "Soma Capital — About", url: "https://somacap.com/about" }
   ]
 },
-
-// ============ VY CAPITAL ============
-"alexander-tamas": {
+  "alexander-tamas": {
   name: "Alexander Tamas",
   firm: "Vy Capital",
   firmSlug: "vy-capital",
@@ -1157,9 +1137,7 @@ const partnerProfiles = {
     "Technology M&A, Goldman Sachs, London",
  "Partner, DST Global (2008 onward)"
   ],
-  firmHistory: [
-    { firmSlug: "dst-global", role: "Partner", startYear: 2008, endYear: null }
-  ],
+  firmHistory: [],
   boardSeats: [],
   ipoCount: null,
   majorExits: null,
@@ -1175,7 +1153,7 @@ const partnerProfiles = {
     { label: "The Frederik Journals — Alexander Tamas", url: "https://www.frederikjournals.com/p/alexander-tamas-the-vc-youve-never" }
   ]
 },
-"john-hering": {
+  "john-hering": {
   name: "John Hering",
   firm: "Vy Capital",
   firmSlug: "vy-capital",
@@ -1203,35 +1181,7 @@ const partnerProfiles = {
     { label: "Fortune 40 Under 40 — John Hering", url: "https://fortune.com/40-under-40/2012/john-hering/" }
   ]
 },
-
-// ============ ICONIQ CAPITAL ============
-"divesh-makan": {
-  name: "Divesh Makan",
-  firm: "ICONIQ Capital",
-  firmSlug: "iconiq-capital",
-  title: "Co-Founder",
-  joinedYear: 2011,
-  education: ["University of Natal, South Africa, Electrical Engineering", "Wharton School, MBA"],
-  previousExperience: [
-    "Broker/Vice President, Goldman Sachs, San Francisco (met Mark Zuckerberg in 2004)",
-    "Executive Director, Morgan Stanley (2008–2011)"
-  ],
-  boardSeats: [],
-  ipoCount: null,
-  majorExits: null,
-  careerTimeline: [
-    { year: "2004", event: "Meets Mark Zuckerberg while working as a broker at Goldman Sachs' San Francisco wealth advisory office." },
-    { year: "2008", event: "Leaves Goldman Sachs and joins Morgan Stanley." },
-    { year: "2011", event: "Leaves Morgan Stanley in December, co-founding ICONIQ Capital with Michael Anders and Chad Boeding to serve as independent wealth advisors to tech founders including Zuckerberg, Sheryl Sandberg, and Dustin Moskovitz." },
-    { year: "2013", event: "Launches ICONIQ Growth, the firm's venture/growth investing arm, encouraged and seed-funded by early client Dave Goldberg." }
-  ],
-  biography: "Divesh Makan met Mark Zuckerberg in 2004 while working as a Goldman Sachs broker, and built that relationship into ICONIQ Capital, co-founded in 2011, which now manages tens of billions for a small roster of the tech industry's wealthiest families.",
-  sources: [
-    { label: "Fortune — Inside Iconiq Growth", url: "https://www.aol.com/inside-iconiq-growth-one-silicon-130000568.html" },
-    { label: "Forbes India — Divesh Makan", url: "https://www.forbesindia.com/article/cross-border/how-divesh-makan-gained-entry-into-zuckerbergs-inner-circle/39295/1" }
-  ]
-},
-"michael-anders": {
+  "michael-anders": {
   name: "Michael Anders",
   firm: "ICONIQ Capital",
   firmSlug: "iconiq-capital",
@@ -1260,9 +1210,7 @@ const partnerProfiles = {
     { label: "Milken Institute — Mike Anders", url: "https://milkeninstitute.org/events/middle-east-and-africa-summit-2024/speakers/mike-anders" }
   ]
 },
-
-// ============ MFV PARTNERS ============
-"karthee-madasamy": {
+  "karthee-madasamy": {
   name: "Karthee Madasamy",
   firm: "MFV Partners",
   firmSlug: "mfv-partners",
@@ -1289,9 +1237,7 @@ const partnerProfiles = {
     { label: "Polsky Center — Karthee Madasamy", url: "https://polsky.uchicago.edu/people/karthee-madasamy/" }
   ]
 },
-
-// ============ LIQUID 2 VENTURES ============
-"mike-miller": {
+  "mike-miller": {
   name: "Mike Miller",
   firm: "Liquid 2 Ventures",
   firmSlug: "liquid2-ventures",
@@ -1318,9 +1264,7 @@ const partnerProfiles = {
     { label: "Liquid 2 Ventures — Team", url: "https://www.liquid2.vc/team" }
   ]
 },
-
-// ============ UNUSUAL VENTURES ============
-"john-vrionis": {
+  "john-vrionis": {
   name: "John Vrionis",
   firm: "Unusual Ventures",
   firmSlug: "unusual-ventures",
@@ -1347,7 +1291,7 @@ const partnerProfiles = {
     { label: "Unusual Ventures — John Vrionis", url: "https://www.unusual.vc/team/john-vrionis/" }
   ]
 },
-"jyoti-bansal": {
+  "jyoti-bansal": {
   name: "Jyoti Bansal",
   firm: "Unusual Ventures",
   firmSlug: "unusual-ventures",
@@ -1375,9 +1319,7 @@ const partnerProfiles = {
     { label: "CNBC — Bansal merges Harness and Traceable", url: "https://www.cnbc.com/2025/02/10/appdynamics-founder-jyoti-bansal-merges-startups-harness-traceable-.html" }
   ]
 },
-
-// ============ COLLABORATIVE FUND ============
-"craig-shapiro": {
+  "craig-shapiro": {
   name: "Craig Shapiro",
   firm: "Collaborative Fund",
   firmSlug: "collaborative-fund",
@@ -1403,9 +1345,7 @@ const partnerProfiles = {
     { label: "Inc. — Craig Shapiro raises Collab Holdings", url: "https://www.inc.com/ali-donaldson/with-his-new-fund-this-investor-aims-to-win-over-private-equity-skeptics/91330857" }
   ]
 },
-
-// ============ SHRUG CAPITAL ============
-"niv-dror": {
+  "niv-dror": {
   name: "Niv Dror",
   firm: "Shrug Capital",
   firmSlug: "shrug-capital",
@@ -1433,7 +1373,7 @@ const partnerProfiles = {
     { label: "Startup Intros — Shrug Capital", url: "https://startupintros.com/orgs/shrug-capital" }
   ]
 },
-"moshe-lifschitz": {
+  "moshe-lifschitz": {
   name: "Moshe Lifschitz",
   firm: "Shrug Capital",
   firmSlug: "shrug-capital",
@@ -1480,7 +1420,6 @@ const partnerProfiles = {
       { label: "Tracxn — Samsung Venture Investment", url: "https://tracxn.com/d/venture-capital/samsung-venture-investment" }
     ]
   },
-
   "al-gore-david-blood": {
     name: "Al Gore & David Blood",
     firm: "Generation Investment Management",
@@ -1507,7 +1446,7 @@ const partnerProfiles = {
       { label: "Wikipedia — Generation Investment Management", url: "https://en.wikipedia.org/wiki/Generation_Investment_Management" }
     ]
   },
-"mary-meeker": {
+  "mary-meeker": {
     name: "Mary Meeker",
     firm: "Bond Capital",
     firmSlug: "bond-capital",
@@ -1541,41 +1480,6 @@ const partnerProfiles = {
       { label: "TechCrunch", url: "https://techcrunch.com/2019/04/24/mary-meeker-raises-1-25b-for-bond-her-debut-growth-fund" }
     ]
   },
-
-  "divesh-makan": {
-    name: "Divesh Makan",
-    firm: "Iconiq Growth",
-    firmSlug: "iconiq-growth",
-    title: "Co-Founder & Managing Partner",
-    joinedYear: 2013,
-    education: [],
-    previousExperience: [
-      "Wealth Advisor, Morgan Stanley"
-    ],
-    investmentFocus: ["Enterprise Software", "Fintech", "Consumer Internet", "Healthcare IT"],
-    notableInvestments: [
-      { name: "Snowflake", ticker: "SNOW" },
-      { name: "Datadog", ticker: "DDOG" },
-      { name: "GitLab", ticker: "GTLB" }
-    ],
-    boardSeats: [],
-    ipoCount: 3,
-    majorExits: 4,
-    careerTimeline: [
-      { year: "2002", event: "Meets Dave Goldberg and Sheryl Sandberg, forming relationships that shape the next two decades of his career." },
-      { year: "2011", event: "Leaves Morgan Stanley to found Iconiq Capital, managing wealth for Facebook's inner circle including Mark Zuckerberg and Sheryl Sandberg." },
-      { year: "2013", event: "Launches Iconiq Growth with Will Griffith, encouraged by client and mentor Dave Goldberg, deliberately betting on SaaS over consumer technology." },
-      { year: "2015", event: "Leads Iconiq's early investment in Snowflake." },
-      { year: "2020", event: "Snowflake completes its NYSE IPO at a $68 billion valuation." },
-      { year: "2024", event: "Closes Iconiq Growth's seventh fund, its largest ever, at $5.75 billion." }
-    ],
-    biography: "Divesh Makan left Morgan Stanley in 2011 to found Iconiq Capital, building a wealth management practice for Silicon Valley's most prominent tech executives, including early client and eventual mentor Dave Goldberg, the SurveyMonkey CEO whose sudden death in 2015 profoundly shaped Makan's approach to the business. It was Goldberg who encouraged Makan to launch Iconiq Growth in 2013, recruiting Will Griffith from Technology Crossover Ventures to lead it, and the two made a deliberately contrarian call to focus on enterprise SaaS rather than the consumer technology most investors chased at the time. That bet produced Snowflake, Datadog, and GitLab — three of Iconiq's clearest public-market outcomes — and Makan has grown Iconiq Growth into one of Silicon Valley's largest and most private growth funds, managing more than $21 billion deployed across 140-plus companies, with its seventh fund closing at $5.75 billion in 2024, its largest ever.",
-    sources: [
-      { label: "Fortune", url: "https://fortune.com/2024/07/22/iconiq-growth-venture-capital-fund-startups-divesh-makan/" },
-      { label: "Wikipedia — Iconiq Capital", url: "https://en.wikipedia.org/wiki/Iconiq_Capital" }
-    ]
-  },
-
   "colin-beirne": {
     name: "Colin Beirne",
     firm: "Deviation Capital",
@@ -1610,7 +1514,7 @@ const partnerProfiles = {
       { label: "citybiz", url: "https://www.citybiz.co/article/841330/deviation-capital-launches-with-2-billion-aum-after-spinout-from-two-sigma-ventures/" }
     ]
   },
-"adeyemi-ajao": {
+  "adeyemi-ajao": {
     name: "Adeyemi 'Ade' Ajao",
     firm: "Base10 Partners",
     firmSlug: "base10-partners",
@@ -1645,7 +1549,6 @@ const partnerProfiles = {
       { label: "AfroTech via Yahoo Finance", url: "https://finance.yahoo.com/technology/ai/articles/base10-vc-firm-co-founded-151255672.html" }
     ]
   },
-
   "ben-casnocha": {
     name: "Ben Casnocha",
     firm: "Village Global",
@@ -1675,7 +1578,6 @@ const partnerProfiles = {
       { label: "Superscout — Village Global", url: "https://superscout.co/investor/village-global" }
     ]
   },
-
   "arjun-sethi": {
     name: "Arjun Sethi",
     firm: "Tribe Capital",
@@ -1703,7 +1605,6 @@ const partnerProfiles = {
       { label: "Wikipedia — Arjun Sethi", url: "https://en.wikipedia.org/wiki/Arjun_Sethi_(entrepreneur)" }
     ]
   },
-
   "ryan-floyd": {
     name: "Ryan Floyd",
     firm: "Storm Ventures",
@@ -1868,7 +1769,6 @@ const partnerProfiles = {
       { label: "Wikipedia — Seraphim Space", url: "https://en.wikipedia.org/wiki/Seraphim_Space" }
     ]
   },
-
   "amy-nauiokas": {
     name: "Amy Nauiokas",
     firm: "Anthemis Group",
@@ -1906,7 +1806,6 @@ const partnerProfiles = {
       { label: "SEC S-1 Filing", url: "https://www.sec.gov/Archives/edgar/data/1853928/000119312521289843/d79631ds1.htm" }
     ]
   },
-
   "uwe-horstmann": {
     name: "Uwe Horstmann",
     firm: "Project A Ventures",
@@ -1938,7 +1837,6 @@ const partnerProfiles = {
       { label: "Project A — Uwe Horstmann", url: "https://techround.co.uk/interviews/meet-uwe-horstmann-project-a-ventures/" }
     ]
   },
-
   "antoine-papiernik": {
     name: "Antoine Papiernik",
     firm: "Sofinnova Partners",
@@ -1967,7 +1865,6 @@ const partnerProfiles = {
       { label: "Caplight — Sofinnova Partners", url: "https://www.caplight.com/investor/sofinnovapartners" }
     ]
   },
-
   "jamie-montgomery": {
     name: "Jamie Montgomery",
     firm: "March Capital",
@@ -2000,7 +1897,6 @@ const partnerProfiles = {
       { label: "March Capital — About", url: "https://marchcp.com/about/" }
     ]
   },
-
   "daniel-petre": {
     name: "Daniel Petre",
     firm: "AirTree Ventures",
@@ -2142,7 +2038,6 @@ const partnerProfiles = {
       { label: "Wikipedia — Josh B. Stein", url: "https://en.wikipedia.org/wiki/Josh_B._Stein" }
     ]
   },
-
   "emily-melton": {
     name: "Emily Melton",
     firm: "Threshold Ventures",
@@ -2205,7 +2100,7 @@ const partnerProfiles = {
       { label: "Mergr", url: "https://mergr.com/investor/warburg-pincus/team/max-fowinkel" }
     ]
   },
-"elizabeth-yin": {
+  "elizabeth-yin": {
     name: "Elizabeth Yin",
     firm: "Hustle Fund",
     firmSlug: "hustle-fund",
@@ -2240,7 +2135,7 @@ const partnerProfiles = {
       { label: "Wikipedia — Hustle Fund", url: "https://en.wikipedia.org/wiki/Hustle_Fund" }
     ]
   },
-"hjalmar-winbladh": {
+  "hjalmar-winbladh": {
     name: "Hjalmar Winbladh",
     firm: "EQT Ventures",
     firmSlug: "eqt-ventures",
@@ -2274,7 +2169,6 @@ const partnerProfiles = {
       { label: "Wikipedia — EQT Ventures", url: "https://en.wikipedia.org/wiki/EQT_Ventures" }
     ]
   },
-
   "ed-bussey": {
     name: "Ed Bussey",
     firm: "Oxford Science Enterprises",
@@ -2305,7 +2199,6 @@ const partnerProfiles = {
       { label: "GlobeNewswire — CEO Appointment", url: "https://www.globenewswire.com/news-release/2023/08/31/2734925/0/en/Oxford-Science-Enterprises-Appoints-Ed-Bussey-as-Chief-Executive-Officer.html" }
     ]
   },
-
   "eric-collins": {
     name: "Eric D. Collins",
     firm: "Impact X Capital",
@@ -2338,7 +2231,6 @@ const partnerProfiles = {
       { label: "Wikipedia — Impact X", url: "https://en.wikipedia.org/wiki/Impact_X" }
     ]
   },
-
   "amir-gal-or": {
     name: "Amir Gal-Or",
     firm: "Infinity Group",
@@ -2373,7 +2265,6 @@ const partnerProfiles = {
       { label: "World Economic Forum", url: "https://www.weforum.org/people/amir-gal-or/" }
     ]
   },
-
   "james-tan": {
     name: "James Tan",
     firm: "Quest Ventures",
@@ -2405,7 +2296,6 @@ const partnerProfiles = {
       { label: "Wikipedia — Quest Ventures", url: "https://en.wikipedia.org/wiki/Quest_Ventures" }
     ]
   },
-
   "feng-deng": {
     name: "Feng Deng",
     firm: "Northern Light Venture Capital",
@@ -2438,7 +2328,6 @@ const partnerProfiles = {
       { label: "NLVC — Feng Deng", url: "https://www3.nlvc.com/en/team/feng-deng" }
     ]
   },
-
   "yi-cao": {
     name: "Yi Cao",
     firm: "Source Code Capital",
@@ -2471,7 +2360,6 @@ const partnerProfiles = {
       { label: "Source Code Capital — About", url: "https://sourcecodecap.com/about-en/" }
     ]
   },
-
   "yh-do": {
     name: "Y.H. Do",
     firm: "STIC Investments",
@@ -2533,7 +2421,6 @@ const partnerProfiles = {
       { label: "Ignite VC Podcast", url: "https://teamignite.vc/blog/ignite-vc-how-hustle-fund-backs-founders" }
     ]
   },
-
   "lee-fixel": {
     name: "Lee Fixel",
     firm: "Addition",
@@ -2566,7 +2453,6 @@ const partnerProfiles = {
       { label: "Forbes Profile", url: "https://www.forbes.com/profile/lee-fixel/" }
     ]
   },
-
   "alexander-galitsky": {
     name: "Alexander Galitsky",
     firm: "Almaz Capital",
@@ -2601,7 +2487,6 @@ const partnerProfiles = {
       { label: "Almaz Capital", url: "https://www.webit.org/en/2014/alexander_galitsky.html" }
     ]
   },
-
   "david-blumberg": {
     name: "David J. Blumberg",
     firm: "Blumberg Capital",
@@ -2637,7 +2522,6 @@ const partnerProfiles = {
       { label: "TechCrunch", url: "https://techcrunch.com/2021/09/17/longtime-vc-and-happy-miami-resident-david-blumberg-has-raised-a-new-225-million-fund/" }
     ]
   },
-
   "bryan-roberts": {
     name: "Bryan Roberts",
     firm: "Venrock",
@@ -2667,7 +2551,6 @@ const partnerProfiles = {
       { label: "Forbes — How Venrock Is Reinventing Itself", url: "https://www.forbes.com/sites/kerryadolan/2013/05/09/how-venrock-is-reinventing-itself/" }
     ]
   },
-
   "peter-dicks": {
     name: "Peter Dicks",
     firm: "Abingworth",
@@ -2699,7 +2582,6 @@ const partnerProfiles = {
       { label: "Abingworth", url: "https://www.abingworth.com/" }
     ]
   },
-
   "christoph-braun": {
     name: "Christoph Braun",
     firm: "Acton Capital",
@@ -2765,7 +2647,6 @@ const partnerProfiles = {
       { label: "Wikipedia — Paradigm", url: "https://en.wikipedia.org/wiki/Paradigm_(venture_capital_firm)" }
     ]
   },
-
   "alana-palmedo": {
     name: "Alana Palmedo",
     firm: "Paradigm",
@@ -2795,44 +2676,6 @@ const partnerProfiles = {
     sources: [
       { label: "TechCrunch", url: "https://techcrunch.com/2026/07/08/crypto-vc-firm-paradigm-raises-1-2b-to-invest-in-technical-frontier-startups/" },
       { label: "CoinDesk", url: "https://www.coindesk.com/markets/2026/07/08/crypto-vc-paradigm-launches-usd1-2-billion-ai-fund-as-it-broadens-beyond-digital-assets-bbg" }
-    ]
-  },
-  "jeff-horing": {
-    name: "Jeff Horing",
-    firm: "Insight Partners",
-    firmSlug: "insight-partners",
-    title: "Co-Founder & Managing Director",
-    joinedYear: 1995,
-    education: ["B.A. Electrical Engineering, University of Pennsylvania", "M.B.A., MIT Sloan School of Management"],
-    previousExperience: [
-      "Principal, Goldman Sachs",
-      "Principal, Warburg Pincus & Company"
-    ],
-    investmentFocus: ["Software", "SaaS", "Data & Analytics", "Cybersecurity"],
-    notableInvestments: [
-      { name: "Alteryx", ticker: null },
-      { name: "Wix", ticker: "WIX" },
-      { name: "Shutterstock", ticker: "SSTK" },
-      { name: "JFrog", ticker: "FROG" },
-      { name: "nCino", ticker: "NCNO" },
-      { name: "AirWatch", ticker: null }
-    ],
-    boardSeats: ["monday.com (Chairman)", "Wiz", "JFrog", "Alteryx"],
-    ipoCount: 5,
-    majorExits: 2,
-    careerTimeline: [
-      { year: "1995", event: "Co-founds Insight Partners with Jerry Murdock, betting that 'software is the best business in the world.'" },
-      { year: "2012", event: "Leads Insight's investment in Shutterstock ahead of its IPO." },
-      { year: "2013", event: "Leads Insight's investment in Wix ahead of its IPO." },
-      { year: "2014", event: "AirWatch, an Insight portfolio company, is acquired by VMware for $1.5 billion." },
-      { year: "2017", event: "Leads Insight's investment in Alteryx ahead of its IPO." },
-      { year: "2025", event: "Insight Partners surpasses $90 billion in assets under management, with over 875 companies invested in to date." }
-    ],
-    biography: "Jeff Horing co-founded Insight Partners in 1995 after working as a principal at Goldman Sachs and Warburg Pincus, building the firm around a then-contrarian thesis: software, not hardware, was the best business in the world. In the firm's earliest years, Horing and his co-founder famously sourced deals by manually reading trade publications for growing software companies — an outbound, research-driven approach that still defines Insight's culture. Over three decades, he has led investments in more than 140 companies and personally led the firm to public exits including Wix, Shutterstock, Alteryx, JFrog, and nCino. He currently chairs the board of monday.com and sits on the boards of Wiz, JFrog, and Alteryx.",
-    sources: [
-      { label: "Insight Partners — Jeff Horing", url: "https://www.insightpartners.com/team/jeff-horing/" },
-      { label: "Forbes Profile", url: "https://www.forbes.com/profile/jeff-horing/" },
-      { label: "Wikipedia — Insight Partners", url: "https://en.wikipedia.org/wiki/Insight_Partners" }
     ]
   },
   "chase-coleman": {
@@ -3735,42 +3578,6 @@ sources: [
     sources: [
  { label: "Emergence Capital — Santi Subotovsky", url: "https://www.emcap.com/people/santi-subotovsky" },
       { label: "Forbes Profile", url: "https://www.forbes.com/profile/santi-subotovsky/" }
-    ]
-  },
-  "thomas-laffont": {
-    name: "Thomas Laffont",
-    firm: "Coatue Management",
-    firmSlug: "coatue-management",
-    title: "Co-Founder & Chief Investment Officer of Privates",
-    joinedYear: 2003,
-    education: ["B.A., Yale University (1997)"],
-    previousExperience: [
-      "Creative Artists Agency (CAA), Beverly Hills (1997–2003) — Agent Trainee, then Principal in the Motion Picture Group, representing film and television talent"
-    ],
-    investmentFocus: ["Technology", "Consumer", "Fintech"],
-    notableInvestments: [
-      { name: "Snap", ticker: "SNAP" },
-      { name: "DoorDash", ticker: "DASH" },
-      { name: "ByteDance", ticker: null },
-      { name: "OpenAI", ticker: null },
-      { name: "Lime", ticker: null },
-      { name: "OneTrust", ticker: null }
-    ],
-    boardSeats: ["OneTrust", "Lime"],
-    ipoCount: 2,
-    majorExits: 1,
-    careerTimeline: [
-      { year: "1997", event: "Graduates Yale University." },
-      { year: "1997", event: "Joins Creative Artists Agency in Beverly Hills, spending seven years representing film and television talent." },
-      { year: "2003", event: "Joins his brother Philippe at Coatue Management to launch the firm's private investing business." },
-      { year: "2013", event: "Leads an early investment in Snap, years before its IPO." },
-      { year: "2017", event: "Snap goes public." },
-      { year: "2020s", event: "Backs ByteDance, DoorDash, and OpenAI as Coatue's venture practice accelerates." }
-    ],
-    biography: "Thomas Laffont spent seven years at Creative Artists Agency in Beverly Hills, representing artists in film and television, before joining his brother Philippe at Coatue Management in 2003 to build the firm's private investing business from scratch. What started as a public equities hedge fund became one of the most prolific technology crossover investors of its era under Thomas's direction, backing ByteDance, Snap, DoorDash, and OpenAI as the venture and growth practice grew alongside Coatue's public portfolio. He led Coatue's early 2013 investment in Snap, years before its 2017 IPO, and continues to spearhead the firm's annual East Meets West Conference, which brings together technology founders and executives from the U.S. and Asia.",
-    sources: [
-      { label: "Coatue — Why CTEK (team bios)", url: "https://www.coatuectek.com/why-ctek" },
-{ label: "Wikipedia", url: "https://en.wikipedia.org/wiki/Coatue_Management" }
     ]
   },
   "ajay-agarwal": {
@@ -4861,7 +4668,7 @@ sources: [
       { label: "TechCrunch — Felicis Fund X", url: "https://techcrunch.com/2025/06/12/after-a-string-of-successes-early-stage-fund-felicis-raises-fresh-900m/" }
      ]
   },
-      "micky-malka": {
+  "micky-malka": {
     name: "Micky Malka",
     firm: "Ribbit Capital",
     firmSlug: "ribbit-capital",
@@ -5033,7 +4840,7 @@ sources: [
       { label: "DCVC", url: "https://www.dcvc.com" }
     ]
   },
-   "leonid-boguslavsky": {
+  "leonid-boguslavsky": {
     name: "Leonid Boguslavsky",
     firm: "RTP Global",
     firmSlug: "rtp-global",
@@ -5064,7 +4871,7 @@ sources: [
       { label: "RTP Global", url: "https://rtp.vc" }
     ]
   },
-"sunil-dhaliwal": {
+  "sunil-dhaliwal": {
     name: "Sunil Dhaliwal",
     firm: "Amplify Partners",
     firmSlug: "amplify-partners",
@@ -5097,7 +4904,7 @@ sources: [
       { label: "TechCrunch — Amplify Partners", url: "https://techcrunch.com/2018/09/18/amplify-partners-locks-in-200-million-to-transform-technical-founders-into-people-who-can-actually-lead-a-startup/" }
     ]
   },
-"teymour-boutros-ghali": {
+  "teymour-boutros-ghali": {
     name: "Teymour Boutros-Ghali",
     firm: "BOLD Capital Partners",
     firmSlug: "bold-capital-partners",
@@ -5132,7 +4939,7 @@ sources: [
       { label: "Wikipedia — Teymour Boutros-Ghali", url: "https://en.wikipedia.org/wiki/Teymour_Boutros-Ghali" }
     ]
   },
-"matt-melymuka": {
+  "matt-melymuka": {
     name: "Matt Melymuka",
     firm: "PeakSpan Capital",
     firmSlug: "peakspan-capital",
@@ -5163,7 +4970,7 @@ sources: [
       { label: "PeakSpan Capital", url: "https://www.peakspancapital.com/investment-team/matt-melymuka" }
     ]
   },
-"gaurav-garg": {
+  "gaurav-garg": {
     name: "Gaurav Garg",
     firm: "Wing Venture Capital",
     firmSlug: "wing-vc",
@@ -5200,7 +5007,7 @@ sources: [
       { label: "Wing Launch Announcement", url: "https://www.wing.vc/content/wing-launches-with-new-111-million-venture-fund" }
     ]
   },
-"lior-susan": {
+  "lior-susan": {
     name: "Lior Susan",
     firm: "Eclipse Ventures",
     firmSlug: "eclipse-ventures",
@@ -5237,7 +5044,7 @@ sources: [
       { label: "Heidrick & Struggles Interview", url: "https://www.heidrick.com/en/insights/podcasts/e189_traits-successful-venture-capital-leader-lior-susan" }
     ]
   },
-"chris-arsenault": {
+  "chris-arsenault": {
     name: "Chris Arsenault",
     firm: "Inovia Capital",
     firmSlug: "inovia-capital",
@@ -5272,7 +5079,7 @@ sources: [
       { label: "Réseau Capital", url: "https://reseaucapital.com/en/speakers/chris-arsenault/" }
     ]
   },
-"matt-bigge": {
+  "matt-bigge": {
     name: "Matt Bigge",
     firm: "Crosslink Capital",
     firmSlug: "crosslink-capital",
@@ -5307,7 +5114,7 @@ sources: [
       { label: "Silicon Valley Defense Group", url: "https://www.siliconvalleydefense.org/our-team-1/matt-bigge" }
     ]
   },
-"dan-levitan": {
+  "dan-levitan": {
     name: "Dan Levitan",
     firm: "Maveron",
     firmSlug: "maveron",
@@ -5341,7 +5148,7 @@ sources: [
       { label: "Wikipedia — Dan Levitan", url: "https://en.wikipedia.org/wiki/Dan_Levitan" }
     ]
   },
-"ho-nam": {
+  "ho-nam": {
     name: "Ho Nam",
     firm: "Altos Ventures",
     firmSlug: "altos-ventures",
@@ -5376,7 +5183,7 @@ sources: [
       { label: "uAspire", url: "https://www.uaspire.org/about/team/ho-nam" }
     ]
   },
-"anthony-lin": {
+  "anthony-lin": {
     name: "Anthony Lin",
     firm: "Intel Capital",
     firmSlug: "intel-capital",
@@ -5411,7 +5218,7 @@ sources: [
       { label: "Intel Capital", url: "https://www.intelcapital.com/team/anthony-lin/" }
     ]
   },
-"quinn-li": {
+  "quinn-li": {
     name: "Quinn Li",
     firm: "Qualcomm Ventures",
     firmSlug: "qualcomm-ventures",
@@ -5447,7 +5254,7 @@ sources: [
       { label: "Corporate Venturing Insider", url: "https://medium.com/@corporateventuringinsider/qualcomm-ventures-quinn-li-levering-an-unfair-advantage-c18a04516f9e" }
     ]
   },
-"noah-yago": {
+  "noah-yago": {
     name: "Noah Yago",
     firm: "Cisco Investments",
     firmSlug: "cisco-investments",
@@ -5478,7 +5285,7 @@ sources: [
       { label: "Cisco Investments Team", url: "https://www.ciscoinvestments.com/team" }
     ]
   },
-"john-somorjai": {
+  "john-somorjai": {
     name: "John Somorjai",
     firm: "Salesforce Ventures",
     firmSlug: "salesforce-ventures",
@@ -5509,7 +5316,7 @@ sources: [
       { label: "Salesforce Ventures People", url: "https://salesforceventures.com/people/" }
     ]
   },
-"laela-sturdy": {
+  "laela-sturdy": {
     name: "Laela Sturdy",
     firm: "CapitalG",
     firmSlug: "capitalg",
@@ -5539,7 +5346,7 @@ sources: [
       { label: "CapitalG Team", url: "https://capitalg.com/team/" }
     ]
   },
-"david-lee-samsung-next": {
+  "david-lee-samsung-next": {
     name: "David Lee",
     firm: "Samsung NEXT",
     firmSlug: "samsung-next",
@@ -5576,7 +5383,7 @@ sources: [
       { label: "Grokipedia — David Lee", url: "https://grokipedia.com/page/David_Lee_(investor)" }
     ]
   },
-"michelle-gonzalez": {
+  "michelle-gonzalez": {
     name: "Michelle Gonzalez",
     firm: "M12",
     firmSlug: "m12",
@@ -5611,7 +5418,7 @@ sources: [
       { label: "Global Venturing Powerlist 2022", url: "https://globalventuring.com/corporate/gcv-powerlist-2022-13-michelle-gonzalez/" }
     ]
   },
-"scott-darling": {
+  "scott-darling": {
     name: "Scott Darling",
     firm: "Dell Technologies Capital",
     firmSlug: "dell-technologies-capital",
@@ -5649,7 +5456,7 @@ sources: [
       { label: "Global Venturing Powerlist 2025", url: "https://globalventuring.com/corporate/awards/powerlist-2025-scott-darling/" }
     ]
   },
-"ulrich-thiem": {
+  "ulrich-thiem": {
     name: "Ulrich Thiem",
     firm: "Porsche Ventures",
     firmSlug: "porsche-ventures",
@@ -5683,7 +5490,7 @@ sources: [
       { label: "Global Venturing Powerlist 2023", url: "https://globalventuring.com/corporate/corporate-venturer/powerlist-2023-ulrich-thiem/" }
     ]
   },
- "baris-guzel": {
+  "baris-guzel": {
     name: "Baris Guzel",
     firm: "BMW i Ventures",
     firmSlug: "bmw-i-ventures",
@@ -5718,7 +5525,7 @@ sources: [
       { label: "Xometry IPO Note", url: "https://www.bmwiventures.com/news/xometry-ipo" }
     ]
   },
-"amy-burr": {
+  "amy-burr": {
     name: "Amy Burr",
     firm: "SKY VC",
     firmSlug: "sky-vc",
@@ -5749,7 +5556,7 @@ sources: [
       { label: "JetBlue Press Release", url: "https://news.jetblue.com/latest-news/press-release-details/2021/JetBlue-Promotes-Amy-Burr-to-President-JetBlue-Technology-Ventures-07-01-2021/default.aspx" }
     ]
   },
-"arvind-purushotham": {
+  "arvind-purushotham": {
     name: "Arvind Purushotham",
     firm: "Citi Ventures",
     firmSlug: "citi-ventures",
@@ -5783,7 +5590,7 @@ sources: [
       { label: "Global Venturing Powerlist 2023", url: "https://globalventuring.com/corporate/corporate-venturer/powerlist-2023-arvind-purushotham/" }
     ]
   },
-   "bernard-liautaud": {
+  "bernard-liautaud": {
     name: "Bernard Liautaud",
     firm: "Balderton Capital",
     firmSlug: "balderton-capital",
@@ -5807,7 +5614,7 @@ sources: [
       { label: "Balderton Capital Team", url: "https://www.balderton.com/team/bernard-liautaud/" }
     ]
   },
-   "niklas-zennstrom": {
+  "niklas-zennstrom": {
     name: "Niklas Zennström",
     firm: "Atomico",
     firmSlug: "atomico",
@@ -5838,7 +5645,7 @@ sources: [
       { label: "Atomico Team", url: "https://atomico.com/team/niklas-zennstrom" }
     ]
   },
-   "ben-blume": {
+  "ben-blume": {
     name: "Ben Blume",
     firm: "Atomico",
     firmSlug: "atomico",
@@ -5864,7 +5671,7 @@ sources: [
       { label: "Atomico Insights", url: "https://atomico.com/insights/home-grown-talent-our-newest-partner-ben-blume-and-two-new-principals" }
     ]
   },
-   "saul-klein": {
+  "saul-klein": {
     name: "Saul Klein",
     firm: "LocalGlobe",
     firmSlug: "localglobe",
@@ -5896,7 +5703,7 @@ sources: [
       { label: "Phoenix Court Team", url: "https://www.phoenixcourt.vc/phoenix-court-team/saul-klein" }
     ]
   },
-   "filip-dames": {
+  "filip-dames": {
     name: "Filip Dames",
     firm: "Cherry Ventures",
     firmSlug: "cherry-ventures",
@@ -5920,7 +5727,7 @@ sources: [
       { label: "Cherry Ventures About", url: "https://cherry.vc/about" }
     ]
   },
-   "par-jorgen-parson": {
+  "par-jorgen-parson": {
     name: "Pär-Jörgen Pärson",
     firm: "Northzone",
     firmSlug: "northzone",
@@ -5949,7 +5756,7 @@ sources: [
       { label: "Northzone Team", url: "https://northzone.com/team/par-jorgen-parson" }
     ]
   },
-   "ben-wilkinson": {
+  "ben-wilkinson": {
     name: "Ben Wilkinson",
     firm: "Molten Ventures",
     firmSlug: "molten-ventures",
@@ -5974,7 +5781,7 @@ sources: [
       { label: "Molten Ventures People", url: "https://www.moltenventures.com/people/partnership/ben-wilkinson" }
     ]
   },
-   "alex-clavel": {
+  "alex-clavel": {
     name: "Alex Clavel",
     firm: "SoftBank Vision Fund",
     firmSlug: "softbank-vision-fund",
@@ -6002,36 +5809,7 @@ sources: [
       { label: "Vision Fund Team", url: "https://visionfund.com/team/alex-clavel" }
     ]
   },
-   "yuri-milner": {
-    name: "Yuri Milner",
-    firm: "DST Global",
-    firmSlug: "dst-global",
-    title: "Founder",
-    joinedYear: 2009,
-    education: [],
-    previousExperience: [
-      "Built Digital Sky Technologies, which later became Mail.ru Group / VK"
-    ],
-    investmentFocus: ["Consumer Internet", "Social Platforms", "Global Growth Equity"],
-    notableInvestments: [
-      { name: "Meta Platforms", ticker: "META" },
-      { name: "Alibaba", ticker: "BABA" },
-      { name: "Spotify", ticker: "SPOT" }
-    ],
-    boardSeats: [],
-    ipoCount: 3,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2009", event: "Founds DST Global after building Digital Sky Technologies, later Mail.ru Group." },
-      { year: "2012", event: "Facebook, one of his best-known early crossover investments, goes public at a $104 billion valuation." }
-    ],
-    biography: "Yuri Milner's importance in venture history is less about operational platform building and more about capital formation: he helped normalize large private late-stage rounds for internet leaders before that market was institutionally mature. Before founding DST Global in 2009, he built Digital Sky Technologies, which later became Mail.ru Group and then VK. DST's enduring mystique comes from that original playbook — writing outsized, high-conviction checks into companies like Facebook, Alibaba, Twitter, and Spotify years before they went public, with Facebook's $104 billion 2012 IPO standing as the clearest proof of that early conviction.",
-    sources: [
-      { label: "DST Global", url: "https://dst-global.com" },
-      { label: "Wikipedia — DST Global", url: "https://en.wikipedia.org/wiki/DST_Global" }
-    ]
-  },
-   "jenny-lee": {
+  "jenny-lee": {
     name: "Jenny Lee",
     firm: "GGV Capital",
     firmSlug: "ggv-capital",
@@ -6058,7 +5836,7 @@ sources: [
       { label: "Granite Asia", url: "https://www.graniteasia.com/who-we-are?p=jenny-lee" }
     ]
   },
-   "rajan-anandan": {
+  "rajan-anandan": {
     name: "Rajan Anandan",
     firm: "Peak XV Partners",
     firmSlug: "peak-xv-partners",
@@ -6083,7 +5861,7 @@ sources: [
       { label: "Peak XV Team", url: "https://www.peakxv.com/team/rajan-anandan" }
     ]
   },
-   "robert-nelsen": {
+  "robert-nelsen": {
     name: "Robert Nelsen",
     firm: "ARCH Venture Partners",
     firmSlug: "arch-venture-partners",
@@ -6115,7 +5893,7 @@ sources: [
       { label: "Forbes Profile", url: "https://www.forbes.com/profile/robert-nelsen/" }
     ]
   },
-   "marc-stad": {
+  "marc-stad": {
     name: "Marc Stad",
     firm: "Dragoneer Investment Group",
     firmSlug: "dragoneer-investment-group",
@@ -6153,7 +5931,7 @@ sources: [
       { label: "Milken Institute", url: "https://milkeninstitute.org/events/global-conference-2023/speakers/marc-stad" }
     ]
   },
-   "eduardo-saverin": {
+  "eduardo-saverin": {
     name: "Eduardo Saverin",
     firm: "B Capital Group",
     firmSlug: "b-capital-group",
@@ -6182,7 +5960,7 @@ sources: [
       { label: "Wikipedia — B Capital", url: "https://en.wikipedia.org/wiki/B_Capital" }
     ]
   },
-   "garry-tan": {
+  "garry-tan": {
     name: "Garry Tan",
     firm: "Y Combinator",
     firmSlug: "y-combinator",
@@ -6216,7 +5994,7 @@ sources: [
       { label: "TechCrunch", url: "https://techcrunch.com/?p=2383301" }
     ]
   },
-   "hernan-kazah": {
+  "hernan-kazah": {
     name: "Hernán Kazah",
     firm: "Kaszek Ventures",
     firmSlug: "kaszek-ventures",
@@ -6250,37 +6028,7 @@ sources: [
       { label: "Americas Quarterly", url: "https://www.americasquarterly.org/article/still-betting-big-argentine-venture-capitalists-hernan-kazah-and-nicolas-szekasy/" }
     ]
   },
-   "bill-ford": {
-    name: "Bill Ford",
-    firm: "General Atlantic",
-    firmSlug: "general-atlantic",
-    title: "Chairman & CEO",
-    joinedYear: 1991,
-    education: ["Amherst College"],
-    previousExperience: [],
-    investmentFocus: ["Growth Equity", "Technology", "Financial Services", "Global Expansion"],
-    notableInvestments: [
-      { name: "ByteDance", ticker: null },
-      { name: "Slack", ticker: null },
-      { name: "Alibaba", ticker: "BABA" }
-    ],
-    boardSeats: ["BlackRock", "ByteDance"],
-    ipoCount: 1,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "1991", event: "Joins General Atlantic." },
-      { year: "2007", event: "Becomes CEO of General Atlantic." },
-      { year: "2019", event: "Portfolio company Slack completes its NYSE direct listing." },
-      { year: "2021", event: "Appointed Chairman of General Atlantic, adding the title to his CEO role." },
-      { year: "2025", event: "Under his leadership, firm AUM reaches approximately $126 billion." }
-    ],
-    biography: "Bill Ford has spent more than three decades at General Atlantic, joining in 1991 and becoming CEO in 2007 before adding the Chairman title in 2021. Under his leadership the firm has expanded from a small family office serving founder Charles F. Feeney into a $126 billion global growth investor spanning 20 countries, broadening its platform well beyond traditional growth equity into credit, climate, and sustainable infrastructure strategies. Ford has overseen the firm's highest-profile bets in this era, including ByteDance, Slack, and Alibaba, and currently sits on the boards of BlackRock and ByteDance, giving him a rare vantage point across both public financial markets and one of the world's largest private technology companies.",
-    sources: [
-      { label: "General Atlantic — Bill Ford", url: "https://www.generalatlantic.com/people/william-ford/" },
-      { label: "World Economic Forum", url: "https://www.weforum.org/people/william-ford/" }
-    ]
-  },
-   "maha-ibrahim": {
+  "maha-ibrahim": {
     name: "Maha Ibrahim",
     firm: "Canaan Partners",
     firmSlug: "canaan-partners",
@@ -6310,7 +6058,7 @@ sources: [
       { label: "Canaan — Maha Ibrahim", url: "https://www.canaan.com/team/maha-ibrahim" }
     ]
   },
-   "sean-osullivan": {
+  "sean-osullivan": {
     name: "Sean O'Sullivan",
     firm: "SOSV",
     firmSlug: "sosv",
@@ -6344,7 +6092,7 @@ sources: [
       { label: "Asia Tech Daily", url: "https://asiatechdaily.com/sean-osullivan-founder-and-managing-partner-of-sosv/" }
     ]
   },
-   "jay-hoag": {
+  "jay-hoag": {
     name: "Jay Hoag",
     firm: "TCV",
     firmSlug: "tcv",
@@ -6376,7 +6124,7 @@ sources: [
       { label: "Forbes Profile", url: "https://www.forbes.com/profile/jay-hoag/" }
     ]
   },
-   "nenad-marovac": {
+  "nenad-marovac": {
     name: "Nenad Marovac",
     firm: "DN Capital",
     firmSlug: "dn-capital",
@@ -6410,7 +6158,7 @@ sources: [
       { label: "The Marque", url: "https://www.themarque.com/profile/nenad-marovac" }
     ]
   },
-   "roy-bahat": {
+  "roy-bahat": {
     name: "Roy Bahat",
     firm: "Bloomberg Beta",
     firmSlug: "bloomberg-beta",
@@ -6445,7 +6193,7 @@ sources: [
       { label: "Newcomer", url: "https://www.newcomer.co/p/my-conversation-with-roy-bahat-as" }
     ]
   },
-   "allison-goldberg": {
+  "allison-goldberg": {
     name: "Allison Goldberg",
     firm: "Comcast Ventures",
     firmSlug: "comcast-ventures",
@@ -6469,7 +6217,7 @@ sources: [
       { label: "Wikipedia — Comcast Ventures", url: "https://en.wikipedia.org/wiki/Comcast_Ventures" }
     ]
   },
- "saemin-ahn": {
+  "saemin-ahn": {
     name: "Saemin Ahn",
     firm: "Rakuten Capital",
     firmSlug: "rakuten-capital",
@@ -6494,7 +6242,7 @@ sources: [
       { label: "Rakuten Capital", url: "https://capital.rakuten.com/" }
     ]
   },
-   "jim-adler": {
+  "jim-adler": {
     name: "Jim Adler",
     firm: "Toyota Ventures",
     firmSlug: "toyota-ventures",
@@ -6528,7 +6276,7 @@ sources: [
       { label: "Global Venturing Powerlist 2025", url: "https://globalventuring.com/corporate/awards/powerlist-2025-jim-adler/" }
     ]
   },
-   "ben-davey": {
+  "ben-davey": {
     name: "Ben Davey",
     firm: "Barclays UK Ventures",
     firmSlug: "barclays-uk-ventures",
@@ -6552,7 +6300,7 @@ sources: [
       { label: "Barclays — Barclays UK Ventures", url: "https://home.barclays/news/2019/2/barclays-uk-ventures--developing-business-models-for-the-future-/" }
     ]
   },
-   "sudhir-sethi": {
+  "sudhir-sethi": {
     name: "Sudhir Sethi",
     firm: "Chiratae Ventures",
     firmSlug: "chiratae-ventures",
@@ -6586,7 +6334,7 @@ sources: [
       { label: "Wikipedia — Chiratae Ventures", url: "https://en.wikipedia.org/wiki/Chiratae_Ventures" }
     ]
   },
-   "richard-liu-5y": {
+  "richard-liu-5y": {
     name: "Richard Liu",
     firm: "5Y Capital",
     firmSlug: "5y-capital",
@@ -6618,7 +6366,7 @@ sources: [
       { label: "The Wire China", url: "https://www.thewirechina.com/2021/07/18/who-is-5y-capital/" }
     ]
   },
-   "shinichi-fuki": {
+  "shinichi-fuki": {
     name: "Shinichi Fuki",
     firm: "JAFCO Group",
     firmSlug: "jafco-group",
@@ -6644,7 +6392,7 @@ sources: [
       { label: "SuperScout", url: "https://superscout.co/investor/jafco-group" }
     ]
   },
-   "thomas-tsao": {
+  "thomas-tsao": {
     name: "Thomas Tsao",
     firm: "Gobi Partners",
     firmSlug: "gobi-partners",
@@ -6679,7 +6427,7 @@ sources: [
       { label: "The Org", url: "https://theorg.com/org/gobi-partners/org-chart/thomas-g-tsao" }
     ]
   },
-   "reshma-sohoni": {
+  "reshma-sohoni": {
     name: "Reshma Sohoni",
     firm: "Seedcamp",
     firmSlug: "seedcamp",
@@ -6713,7 +6461,7 @@ sources: [
       { label: "Seedcamp Team", url: "https://seedcamp.com/our-team/" }
     ]
   },
-   "alex-von-frankenberg": {
+  "alex-von-frankenberg": {
     name: "Alex von Frankenberg",
     firm: "High-Tech Gründerfonds",
     firmSlug: "high-tech-grunderfonds",
@@ -6739,7 +6487,7 @@ sources: [
       { label: "High-Tech Gründerfonds", url: "https://www.htgf.de" }
     ]
   },
-   "noubar-afeyan": {
+  "noubar-afeyan": {
     name: "Noubar Afeyan",
     firm: "Flagship Pioneering",
     firmSlug: "flagship-pioneering",
@@ -6773,7 +6521,7 @@ sources: [
       { label: "Wikipedia — Noubar Afeyan", url: "https://en.wikipedia.org/wiki/Noubar_Afeyan" }
     ]
   },
-   "nigel-morris": {
+  "nigel-morris": {
     name: "Nigel Morris",
     firm: "QED Investors",
     firmSlug: "qed-investors",
@@ -6805,7 +6553,7 @@ sources: [
       { label: "BusinessWire", url: "https://www.businesswire.com/news/home/20240606701949/en/" }
     ]
   },
-   "carmichael-roberts": {
+  "carmichael-roberts": {
     name: "Carmichael Roberts",
     firm: "Breakthrough Energy Ventures",
     firmSlug: "breakthrough-energy-ventures",
@@ -6835,7 +6583,7 @@ sources: [
       { label: "Breakthrough Energy", url: "https://breakthroughenergy.org" }
     ]
   },
-   "carl-gordon": {
+  "carl-gordon": {
     name: "Carl Gordon",
     firm: "OrbiMed",
     firmSlug: "orbimed",
@@ -6863,7 +6611,7 @@ sources: [
       { label: "Wikipedia — OrbiMed", url: "https://en.wikipedia.org/wiki/OrbiMed" }
     ]
   },
-   "nino-marakovic": {
+  "nino-marakovic": {
     name: "Nino Marakovic",
     firm: "Sapphire Ventures",
     firmSlug: "sapphire-ventures",
@@ -6896,7 +6644,7 @@ sources: [
       { label: "Grokipedia — Sapphire Ventures", url: "https://grokipedia.com/page/Sapphire_Ventures" }
     ]
   },
-   "kirsten-green": {
+  "kirsten-green": {
     name: "Kirsten Green",
     firm: "Forerunner Ventures",
     firmSlug: "forerunner-ventures",
@@ -6930,7 +6678,7 @@ sources: [
       { label: "Wikipedia — Forerunner Ventures", url: "https://en.wikipedia.org/wiki/Forerunner_Ventures" }
     ]
   },
-   "stephen-knight": {
+  "stephen-knight": {
     name: "Stephen Knight",
     firm: "F-Prime Capital",
     firmSlug: "f-prime-capital",
@@ -6963,7 +6711,7 @@ sources: [
       { label: "Beam Therapeutics SEC Filing", url: "https://www.sec.gov/Archives/edgar/data/1745999/000156459020014308/beam-10k_20191231.htm" }
     ]
   },
-   "kevin-starr": {
+  "kevin-starr": {
     name: "Kevin Starr",
     firm: "Third Rock Ventures",
     firmSlug: "third-rock-ventures",
@@ -6994,7 +6742,7 @@ sources: [
       { label: "Fortune", url: "https://fortune.com/2015/02/19/third-rock-ventures-giving-birth-to-a-new-generation-of-biotechs/" }
     ]
   },
-   "chris-sacca": {
+  "chris-sacca": {
     name: "Chris Sacca",
     firm: "Lowercarbon Capital",
     firmSlug: "lowercarbon-capital",
@@ -7026,7 +6774,7 @@ sources: [
       { label: "ImpactAlpha", url: "https://impactalpha.com/chris-saccas-lowercarbon-capital-raises-800-million-for-climate-tech/" }
     ]
   },
-   "hans-kobler": {
+  "hans-kobler": {
     name: "Hans Kobler",
     firm: "Energy Impact Partners",
     firmSlug: "energy-impact-partners",
@@ -7060,7 +6808,7 @@ sources: [
       { label: "The Org — Hans Kobler", url: "https://theorg.com/org/energy-impact-partners/org-chart/hans-kobler" }
     ]
   },
-   "alberto-yepez": {
+  "alberto-yepez": {
     name: "Alberto Yépez",
     firm: "Forgepoint Capital",
     firmSlug: "forgepoint-capital",
@@ -7097,7 +6845,7 @@ sources: [
       { label: "Aspen Digital", url: "https://www.aspendigital.org/person/alberto-yepez/" }
     ]
   },
-   "james-currier": {
+  "james-currier": {
     name: "James Currier",
     firm: "NFX",
     firmSlug: "nfx",
@@ -7131,7 +6879,7 @@ sources: [
       { label: "KoreaTechDesk", url: "https://koreatechdesk.com/james-currier-nfx-the-investor-you-can-rely-on-for-grand-business-success" }
     ]
   },
-   "christoph-janz": {
+  "christoph-janz": {
     name: "Christoph Janz",
     firm: "Point Nine",
     firmSlug: "point-nine",
@@ -7168,7 +6916,7 @@ sources: [
       { label: "Sifted", url: "https://sifted.eu/articles/brunch-with-point-nine-janz" }
     ]
   },
-   "klaus-hommels": {
+  "klaus-hommels": {
     name: "Klaus Hommels",
     firm: "Lakestar",
     firmSlug: "lakestar",
@@ -7204,7 +6952,7 @@ sources: [
       { label: "Forbes — Lakestar Pivot", url: "https://www.forbes.com/sites/iainmartin/2025/10/23/europe-venture-fund-lakestar-calls-halt-on-new-startup-bets/" }
     ]
   },
-   "eric-acher": {
+  "eric-acher": {
     name: "Eric Acher",
     firm: "monashees",
     firmSlug: "monashees",
@@ -7237,7 +6985,7 @@ sources: [
       { label: "Insignia Business Review", url: "https://review.insignia.vc/2021/07/13/parallels-and-synergies-between-latin-america-and-southeast-asia-from-eric-acher-founding-managing-partner-of-monashees-brazils-first-venture-capital-firm/" }
     ]
   },
-   "willson-cuaca": {
+  "willson-cuaca": {
     name: "Willson Cuaca",
     firm: "East Ventures",
     firmSlug: "east-ventures",
@@ -7272,7 +7020,7 @@ sources: [
       { label: "Asia Tech Daily", url: "https://asiatechdaily.com/willson-cuaca-east-ventures/" }
     ]
   },
-   "philippe-collombel": {
+  "philippe-collombel": {
     name: "Philippe Collombel",
     firm: "Partech",
     firmSlug: "partech",
@@ -7301,7 +7049,7 @@ sources: [
       { label: "EU Tech Future", url: "https://eutechfuture.com/venture-capital/partech-partners-a-deep-dive-into-the-global-tech-investment-powerhouse/" }
     ]
   },
-   "maurizio-caio": {
+  "maurizio-caio": {
     name: "Maurizio Caio",
     firm: "TLcom Capital",
     firmSlug: "tlcom-capital",
@@ -7333,7 +7081,7 @@ sources: [
       { label: "TechCrunch", url: "https://techcrunch.com/2021/11/10/tlcom-capital-managing-partner-maurizio-caio-on-african-unicorns-valuations-and-exits" }
     ]
   },
-   "yoav-leitersdorf": {
+  "yoav-leitersdorf": {
     name: "Yoav Leitersdorf",
     firm: "YL Ventures",
     firmSlug: "yl-ventures",
@@ -7364,7 +7112,7 @@ sources: [
       { label: "TechCrunch", url: "https://techcrunch.com/2022/05/11/investors-reward-yl-ventures-for-selling-certain-stakes-when-the-market-was-still-bubbly/" }
     ]
   },
-   "joshua-posamentier": {
+  "joshua-posamentier": {
     name: "Joshua Posamentier",
     firm: "Congruent Ventures",
     firmSlug: "congruent-ventures",
@@ -7399,7 +7147,7 @@ sources: [
       { label: "Congruent Ventures Team", url: "https://www.congruentvc.com/team" }
     ]
   },
-   "marcos-toledo": {
+  "marcos-toledo": {
     name: "Marcos Toledo",
     firm: "Canary",
     firmSlug: "canary",
@@ -7427,7 +7175,7 @@ sources: [
       { label: "Canary", url: "https://www.canary.com.br" }
     ]
   },
-   "amit-anand": {
+  "amit-anand": {
     name: "Amit Anand",
     firm: "Jungle Ventures",
     firmSlug: "jungle-ventures",
@@ -7463,7 +7211,7 @@ sources: [
       { label: "Forbes Asia", url: "https://www.forbes.com/sites/ardianwibisono/2024/12/04/singapore-based-vc-firm-jungle-ventures-is-on-the-prowl-to-tap-new-frontiers/" }
     ]
   },
-   "garheng-kong": {
+  "garheng-kong": {
     name: "Garheng Kong",
     firm: "HealthQuest Capital",
     firmSlug: "healthquest-capital",
@@ -7499,7 +7247,7 @@ sources: [
       { label: "GrowthCap", url: "https://growthcapadvisory.com/top-healthcare-investor-healthquests-garheng-kong/" }
     ]
   },
-   "gili-raanan": {
+  "gili-raanan": {
     name: "Gili Raanan",
     firm: "Cyberstarts",
     firmSlug: "cyberstarts",
@@ -7537,7 +7285,7 @@ sources: [
       { label: "Forbes Profile", url: "https://www.forbes.com/profile/gili-raanan/" }
     ]
   },
-   "chemi-peres": {
+  "chemi-peres": {
     name: "Chemi Peres",
     firm: "Pitango Venture Capital",
     firmSlug: "pitango-venture-capital",
@@ -7571,7 +7319,7 @@ sources: [
       { label: "Pitango Venture Capital", url: "https://www.pitango.com" }
     ]
   },
-   "erel-margalit": {
+  "erel-margalit": {
     name: "Erel Margalit",
     firm: "Jerusalem Venture Partners",
     firmSlug: "jerusalem-venture-partners",
@@ -7605,7 +7353,7 @@ sources: [
       { label: "JVP — Erel Margalit", url: "https://jvpvc.com/jvp_team/erel-n-margalit-4/" }
     ]
   },
-   "tope-lawani": {
+  "tope-lawani": {
     name: "Tope Lawani",
     firm: "Helios Investment Partners",
     firmSlug: "helios-investment-partners",
@@ -7637,7 +7385,7 @@ sources: [
       { label: "Helios Investment Partners", url: "https://www.heliosinvestment.com/team" }
     ]
   },
-   "kola-aina": {
+  "kola-aina": {
     name: "Kola Aina",
     firm: "Ventures Platform",
     firmSlug: "ventures-platform",
@@ -7669,7 +7417,7 @@ sources: [
       { label: "Ventures Platform", url: "https://www.venturesplatform.com" }
     ]
   },
-   "eghosa-omoigui": {
+  "eghosa-omoigui": {
     name: "Eghosa Omoigui",
     firm: "EchoVC Partners",
     firmSlug: "echovc-partners",
@@ -7701,7 +7449,7 @@ sources: [
       { label: "Wharton FinTech", url: "https://medium.com/wharton-fintech/spotlight-on-the-african-fintech-ecosystem-podcast-with-eghosa-omoigui-founder-and-managing-23d05f1d425c" }
     ]
   },
-   "olumide-soyombo": {
+  "olumide-soyombo": {
     name: "Olumide Soyombo",
     firm: "Voltron Capital",
     firmSlug: "voltron-capital",
@@ -7734,7 +7482,7 @@ sources: [
       { label: "TechCrunch", url: "https://techcrunch.com/2021/07/26/one-of-nigerias-high-profile-angel-investors-is-launching-a-fund-for-african-startups/" }
     ]
   },
-   "niklas-adalberth": {
+  "niklas-adalberth": {
     name: "Niklas Adalberth",
     firm: "Norrsken22",
     firmSlug: "norrsken22",
@@ -7766,7 +7514,7 @@ sources: [
       { label: "Norrsken22", url: "https://www.norrsken22.com" }
     ]
   },
-   "shane-shin": {
+  "shane-shin": {
     name: "Shane Shin",
     firm: "Shorooq Partners",
     firmSlug: "shorooq-partners",
@@ -7800,7 +7548,7 @@ sources: [
       { label: "Zawya", url: "https://www.zawya.com/en/business/shorooq-partners-in-a-habit-to-back-winning-horses-yfzvh8h0" }
     ]
   },
-   "dany-farha": {
+  "dany-farha": {
     name: "Dany Farha",
     firm: "BECO Capital",
     firmSlug: "beco-capital",
@@ -7838,7 +7586,7 @@ sources: [
       { label: "Entrepreneur — The 100", url: "https://www.entrepreneur.com/en-ae/leadership/the-100-dany-farha-co-founder-and-ceo-beco-capital/484841" }
     ]
   },
-   "sonia-weymuller": {
+  "sonia-weymuller": {
     name: "Sonia Weymuller",
     firm: "VentureSouq",
     firmSlug: "venturesouq",
@@ -7865,7 +7613,7 @@ sources: [
       { label: "Unicorn Nest", url: "https://unicorn-nest.com/funds/venturesouq/" }
     ]
   },
-   "rick-heitzmann": {
+  "rick-heitzmann": {
     name: "Rick Heitzmann",
     firm: "FirstMark Capital",
     firmSlug: "firstmark-capital",
@@ -7897,7 +7645,7 @@ sources: [
       { label: "Wikipedia — FirstMark Capital", url: "https://en.wikipedia.org/wiki/FirstMark_Capital" }
     ]
   },
-   "chamath-palihapitiya": {
+  "chamath-palihapitiya": {
     name: "Chamath Palihapitiya",
     firm: "Social Capital",
     firmSlug: "social-capital",
@@ -7932,7 +7680,7 @@ sources: [
       { label: "All-In Podcast", url: "https://allin.com/about/chamath-palihapitiya" }
     ]
   },
-   "raj-shah": {
+  "raj-shah": {
     name: "Raj Shah",
     firm: "Shield Capital",
     firmSlug: "shield-capital",
@@ -7965,7 +7713,7 @@ sources: [
       { label: "Axios", url: "https://www.axios.com/2022/03/16/national-security-focused-vc-firm-raises-125-million" }
     ]
   },
-   "iyinoluwa-aboyeji": {
+  "iyinoluwa-aboyeji": {
     name: "Iyinoluwa Aboyeji",
     firm: "Future Africa",
     firmSlug: "future-africa",
@@ -8000,7 +7748,7 @@ sources: [
       { label: "Future Africa — About Us", url: "https://www.future.africa/about-us" }
     ]
   },
-   "andrew-carruthers": {
+  "andrew-carruthers": {
     name: "Andrew Carruthers",
     firm: "Novastar Ventures",
     firmSlug: "novastar-ventures",
@@ -8035,7 +7783,7 @@ sources: [
       { label: "The Org — Andrew Carruthers", url: "https://theorg.com/org/novastar-ventures/org-chart/andrew-carruthers" }
     ]
   },
-   "mike-mompi": {
+  "mike-mompi": {
     name: "Mike Mompi",
     firm: "Enza Capital",
     firmSlug: "enza-capital",
@@ -8066,7 +7814,7 @@ sources: [
       { label: "Empower Africa", url: "https://empowerafrica.com/fatimatou-ousmanou-samba-is-helping-the-african-diaspora-send-money-home-easily-copy/" }
     ]
   },
-   "amar-inamdar": {
+  "amar-inamdar": {
     name: "Amar Inamdar",
     firm: "KawiSafi Ventures",
     firmSlug: "kawisafi-ventures",
@@ -8098,7 +7846,7 @@ sources: [
       { label: "KawiSafi Ventures Fund Team", url: "https://www.kawisafi.com/fund" }
     ]
   },
-   "jake-cusack": {
+  "jake-cusack": {
     name: "Jake Cusack",
     firm: "CrossBoundary",
     firmSlug: "crossboundary",
@@ -8126,7 +7874,7 @@ sources: [
       { label: "CrossBoundary Group", url: "https://crossboundary.com/crossboundary-group/" }
     ]
   },
-   "zachariah-george": {
+  "zachariah-george": {
     name: "Zachariah George",
     firm: "Launch Africa Ventures",
     firmSlug: "launch-africa-ventures",
@@ -8161,7 +7909,7 @@ sources: [
       { label: "Launch Africa Ventures", url: "https://www.launchafrica.vc" }
     ]
   },
-   "kathryn-gould": {
+  "kathryn-gould": {
     name: "Kathryn Gould",
     firm: "Foundation Capital",
     firmSlug: "foundation-capital",
@@ -8192,7 +7940,7 @@ sources: [
       { label: "Foundation Capital", url: "https://foundationcapital.com" }
     ]
   },
-   "sandeep-singhal": {
+  "sandeep-singhal": {
     name: "Sandeep Singhal",
     firm: "Nexus Venture Partners",
     firmSlug: "nexus-venture-partners",
@@ -8228,7 +7976,7 @@ sources: [
       { label: "Strategic Investment Fund", url: "https://sif.gatesfoundation.org/our-team/sandeep-singhal/" }
     ]
   },
-   "christine-tsai": {
+  "christine-tsai": {
     name: "Christine Tsai",
     firm: "500 Global",
     firmSlug: "500-global",
@@ -8260,7 +8008,7 @@ sources: [
       { label: "Global Private Capital Association", url: "https://www.globalprivatecapital.org/team_member/christine-tsai/" }
     ]
   },
-   "gilman-louie": {
+  "gilman-louie": {
     name: "Gilman Louie",
     firm: "In-Q-Tel",
     firmSlug: "in-q-tel",
@@ -8293,7 +8041,7 @@ sources: [
       { label: "Boss Hunting", url: "https://www.bosshunting.com.au/hustle/in-q-tel-cia-venture-capital-firm" }
     ]
   },
-   "james-robinson-iv": {
+  "james-robinson-iv": {
     name: "James D. Robinson IV",
     firm: "RRE Ventures",
     firmSlug: "rre-ventures",
@@ -8328,7 +8076,7 @@ sources: [
       { label: "Institutional Investor", url: "https://www.institutionalinvestor.com/article/2bsxtrq555krtftscxn9c/corner-office/the-fintech-finance-40-james-d-robinson-iii-and-james-d-robinson-iv" }
     ]
   },
-   "joe-lonsdale": {
+  "joe-lonsdale": {
     name: "Joe Lonsdale",
     firm: "8VC",
     firmSlug: "8vc",
@@ -8366,7 +8114,7 @@ sources: [
       { label: "Wikipedia — Joe Lonsdale", url: "https://en.wikipedia.org/wiki/Joe_Lonsdale" }
     ]
   },
-   "kevin-colleran": {
+  "kevin-colleran": {
     name: "Kevin Colleran",
     firm: "Slow Ventures",
     firmSlug: "slow-ventures",
@@ -8398,7 +8146,7 @@ sources: [
       { label: "Slow Ventures — About", url: "https://slow.co/about/" }
     ]
   },
-   "brad-svrluga": {
+  "brad-svrluga": {
     name: "Brad Svrluga",
     firm: "Primary Venture Partners",
     firmSlug: "primary-venture-partners",
@@ -8430,7 +8178,7 @@ sources: [
       { label: "AlleyWatch", url: "https://www.alleywatch.com/2018/06/inside-the-mind-of-a-nyc-vc-brad-svrluga-of-primary-venture-partners/" }
     ]
   },
-   "ben-lerer": {
+  "ben-lerer": {
     name: "Ben Lerer",
     firm: "Lerer Hippeau",
     firmSlug: "lerer-hippeau",
@@ -8464,7 +8212,7 @@ sources: [
       { label: "SEC S-1 Filing", url: "https://www.sec.gov/Archives/edgar/data/1841948/000119312521041594/d87587ds1.htm" }
     ]
   },
-   "david-tisch": {
+  "david-tisch": {
     name: "David Tisch",
     firm: "BoxGroup",
     firmSlug: "boxgroup",
@@ -8498,7 +8246,7 @@ sources: [
       { label: "Fortune", url: "https://fortune.com/2025/10/21/david-tisch-boxgroup-venture-capital-tech-nyc-ramp-cursor-early-stage/" }
     ]
   },
-   "pejman-nozad": {
+  "pejman-nozad": {
     name: "Pejman Nozad",
     firm: "Pear VC",
     firmSlug: "pear-vc",
@@ -8534,7 +8282,7 @@ sources: [
       { label: "Pear VC — Pejman Nozad", url: "https://pear.vc/team/pejman-nozad/" }
     ]
   },
-   "mark-suster": {
+  "mark-suster": {
     name: "Mark Suster",
     firm: "Upfront Ventures",
     firmSlug: "upfront-ventures",
@@ -8568,7 +8316,7 @@ sources: [
       { label: "Venture Unlocked", url: "https://ventureunlocked.substack.com/p/marksuster" }
     ]
   },
-   "theresia-gouw": {
+  "theresia-gouw": {
     name: "Theresia Gouw",
     firm: "Acrew Capital",
     firmSlug: "acrew-capital",
@@ -8602,7 +8350,7 @@ sources: [
       { label: "Forbes", url: "https://www.forbes.com/sites/alexkonrad/2019/12/18/theresia-gouw-acrew-capital-raises-250-million-debut-fund/" }
     ]
   },
-   "chris-farmer": {
+  "chris-farmer": {
     name: "Chris Farmer",
     firm: "SignalFire",
     firmSlug: "signalfire",
@@ -8636,7 +8384,7 @@ sources: [
       { label: "BusinessWire", url: "https://www.businesswire.com/news/home/20250407594969/en/AI-Native-VC-SignalFire-Raises-Over-$1B-to-Fuel-the-Next-Wave-of-Applied-AI-Startups-Pushing-AUM-to-$3B" }
     ]
   },
-   "paul-bernard": {
+  "paul-bernard": {
     name: "Paul Bernard",
     firm: "Amazon Alexa Fund",
     firmSlug: "amazon-alexa-fund",
@@ -8669,7 +8417,7 @@ sources: [
       { label: "Global Venturing Powerlist", url: "https://globalventuring.com/corporate/corporate-venturer/powerlist-2023-paul-bernard/" }
     ]
   },
-   "anna-patterson": {
+  "anna-patterson": {
     name: "Anna Patterson",
     firm: "Gradient Ventures",
     firmSlug: "gradient-ventures",
@@ -9296,7 +9044,7 @@ sources: [
       { label: "Prosus Ventures", url: "https://www.prosus.com/prosus-ventures" }
   ]
     },
-    "magnus-grimeland": {
+  "magnus-grimeland": {
     name: "Magnus Grimeland",
     firm: "Antler",
     firmSlug: "antler",
@@ -9330,7 +9078,7 @@ sources: [
       { label: "Fortune", url: "https://fortune.com/2026/05/20/antler-ceo-magnus-grimeland-innovation-global-silicon-valley/" }
     ]
   },
-"ajay-chopra": {
+  "ajay-chopra": {
     name: "Ajay Chopra",
     firm: "Trinity Ventures",
     firmSlug: "trinity-ventures",
@@ -9363,7 +9111,7 @@ sources: [
       { label: "Wikipedia — Pinnacle Systems", url: "https://en.wikipedia.org/wiki/Pinnacle_Systems" }
     ]
   },
-"rob-coneybeer": {
+  "rob-coneybeer": {
     name: "Rob Coneybeer",
     firm: "Shasta Ventures",
     firmSlug: "shasta-ventures",
@@ -9395,7 +9143,7 @@ sources: [
       { label: "TechCrunch", url: "https://techcrunch.com/2016/06/29/shasta-ventures-is-raising-a-300-million-fifth-fund/" }
     ]
   },
-"scott-maxwell": {
+  "scott-maxwell": {
     name: "Scott Maxwell",
     firm: "OpenView Venture Partners",
     firmSlug: "openview-venture-partners",
@@ -9429,7 +9177,7 @@ sources: [
       { label: "Tracxn", url: "https://tracxn.com/d/venture-capital/openview" }
     ]
   },
-"brad-feld": {
+  "brad-feld": {
     name: "Brad Feld",
     firm: "Foundry Group",
     firmSlug: "foundry-group",
@@ -9464,7 +9212,7 @@ sources: [
       { label: "DevCuration — VC Spotlight: Foundry Group", url: "https://devcuration.substack.com/p/vc-spotlight-foundry-group" }
     ]
   },
-"dixon-doll": {
+  "dixon-doll": {
     name: "Dixon Doll",
     firm: "DCM Ventures",
     firmSlug: "dcm-ventures",
@@ -9496,7 +9244,7 @@ sources: [
       { label: "Crunchbase — Dixon Doll", url: "https://www.crunchbase.com/person/dixon-doll" }
     ]
   },
-"hugo-shong": {
+  "hugo-shong": {
     name: "Hugo Shong",
     firm: "IDG Capital",
     firmSlug: "idg-capital",
@@ -9529,7 +9277,7 @@ sources: [
       { label: "Boston University — Hugo Shong Profile", url: "https://www.bu.edu/articles/2014/hugo-shong-the-producer/" }
     ]
   },
-"richard-li-legend": {
+  "richard-li-legend": {
     name: "Richard Li",
     firm: "Legend Capital",
     firmSlug: "legend-capital",
@@ -9557,39 +9305,7 @@ sources: [
       { label: "Legend Capital LinkedIn", url: "https://www.linkedin.com/company/legend-capital" }
     ]
   },
-"zhang-lei": {
-    name: "Zhang Lei",
-    firm: "Hillhouse Investment Group",
-    firmSlug: "hillhouse-investment-group",
-    title: "Founder, Chairman & CEO",
-    joinedYear: 2005,
-    education: ["BA, Economics, Renmin University of China (1994)", "MBA, Yale School of Management (2002)", "MA, International Relations, Yale University (2002)"],
-    previousExperience: [
-      "Analyst, Yale Investments Office (under Chief Investment Officer David Swensen)"
-    ],
-    investmentFocus: ["Consumer Internet", "AI", "Biotech", "Enterprise Software"],
-    notableInvestments: [
-      { name: "Tencent", ticker: "0700.HK" },
-      { name: "JD.com", ticker: "JD" },
-      { name: "Baidu", ticker: "BIDU" }
-    ],
-    boardSeats: [],
-    ipoCount: 20,
-    majorExits: 50,
-    careerTimeline: [
-      { year: "1994", event: "Earns a bachelor's degree in economics from Renmin University of China on scholarship, after a childhood spent selling noodles, water, and magazines to support his family." },
-      { year: "1999", event: "Takes a class taught by David Swensen, Yale's legendary chief investment officer, who becomes his mentor and later helps him secure Hillhouse's seed capital." },
-      { year: "2002", event: "Earns an MBA and MA in international relations from Yale University." },
-      { year: "2005", event: "Founds Hillhouse Capital in June with $20 million in seed capital from Yale's own endowment, becoming an early investor in Tencent." },
-      { year: "2010", event: "Insists JD.com founder Richard Liu take a $255 million investment instead of the $75 million Liu requested; the stake is worth roughly $3.9 billion four years later at JD.com's IPO." }
-    ],
-    biography: "Zhang Lei grew up in modest circumstances in Henan province, once earning a total profit of 800 yuan selling noodles, water, and magazines to travelers at train stations as a teenager. A scholarship took him to Renmin University and eventually to Yale, where a class taught by legendary Yale endowment chief investment officer David Swensen changed the course of his life — Zhang translated Swensen's book into Chinese, coining new Mandarin terms for 'endowment' and 'fiduciary' along the way, and Swensen became his lasting mentor. Zhang founded Hillhouse in 2005 with $20 million in seed capital directly from Yale's own endowment, building an early, high-conviction stake in Tencent that the firm still holds today. His defining early bet came in 2010, when JD.com founder Richard Liu asked for a $75 million investment to build out logistics infrastructure competitors thought was too expensive — Zhang told him to take $255 million instead, a stake worth roughly $3.9 billion four years later at JD.com's IPO. Zhang has grown Hillhouse into one of Asia's largest investment platforms, managing more than $100 billion, while remaining a trustee of Yale University and Vice Chairman of Renmin University's board.",
-    sources: [
-      { label: "Wikipedia — Zhang Lei", url: "https://en.wikipedia.org/wiki/Zhang_Lei_(investor)" },
-      { label: "The Wire China", url: "https://www.thewirechina.com/2020/09/27/who-is-hillhouse-capital/" }
-    ]
-  },
-"arnold-snider": {
+  "arnold-snider": {
     name: "Arnold Snider",
     firm: "Deerfield Management",
     firmSlug: "deerfield-management",
@@ -9618,7 +9334,7 @@ sources: [
       { label: "Institutional Investor", url: "https://www.institutionalinvestor.com/article/b1d7hrkxb9sfnk/Deerfield-Posts-Another-Double-Digit-Gain-in-2018" }
     ]
   },
-"alex-macpherson": {
+  "alex-macpherson": {
     name: "Alex Macpherson",
     firm: "Octopus Ventures",
     firmSlug: "octopus-ventures",
@@ -9652,7 +9368,7 @@ sources: [
       { label: "Octopus Ventures", url: "https://octopusventures.com" }
     ]
   },
-"paul-grossinger": {
+  "paul-grossinger": {
     name: "Paul Grossinger",
     firm: "Gaingels",
     firmSlug: "gaingels",
@@ -9686,7 +9402,6 @@ sources: [
       { label: "BBH — Next Gen Summit", url: "https://www.bbh.com/us/en/insights/capital-partners-insights/next-gen-summit-paul-grossinger-gayatri-sarkar-on-entrepreneurship.html" }
     ]
   },
-
   "kai-fu-lee": {
     name: "Kai-Fu Lee",
     firm: "Sinovation Ventures",
@@ -9723,7 +9438,6 @@ sources: [
       { label: "Sinovation Ventures — Team", url: "https://www.sinovationventures.com/team" }
     ]
   },
-
   "yaron-valler": {
     name: "Yaron Valler",
     firm: "Target Global",
@@ -9758,7 +9472,6 @@ sources: [
       { label: "Tagesspiegel", url: "https://digitalpresent.tagesspiegel.de/die-einhornjaeger-vom-schinkelplatz" }
     ]
   },
-
   "gary-rieschel": {
     name: "Gary Rieschel",
     firm: "Qiming Venture Partners",
@@ -9790,7 +9503,6 @@ sources: [
       { label: "Wikipedia — Qiming Venture Partners", url: "https://en.wikipedia.org/wiki/Qiming_Venture_Partners" }
     ]
   },
-
   "annie-lamont": {
     name: "Annie Lamont",
     firm: "Oak HC/FT",
@@ -9822,7 +9534,6 @@ sources: [
       { label: "AcademyHealth", url: "https://academyhealth.org/about/people/annie-lamont-0" }
     ]
   },
-
   "ciaran-oleary": {
     name: "Ciarán O'Leary",
     firm: "BlueYard Capital",
@@ -9854,7 +9565,6 @@ sources: [
       { label: "Newcomer", url: "https://www.newcomer.co/p/exclusive-blueyard-capital-returns" }
     ]
   },
-
   "dror-berman": {
     name: "Dror Berman",
     firm: "Innovation Endeavors",
@@ -9886,7 +9596,6 @@ sources: [
       { label: "TechCrunch", url: "https://techcrunch.com/2024/01/25/innovation-endeavors-630m-fund-science-technology/" }
     ]
   },
-
   "tim-draper": {
     name: "Tim Draper",
     firm: "Draper Associates",
@@ -9919,7 +9628,6 @@ sources: [
       { label: "Draper.vc — History", url: "https://www.draper.vc/history" }
     ]
   },
-
   "david-wei": {
     name: "David Wei",
     firm: "Vision Knight Capital",
