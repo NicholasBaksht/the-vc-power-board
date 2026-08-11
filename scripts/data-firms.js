@@ -178,27 +178,6 @@ const firms = [
 },
   {
   rank: null,
-  name: "HongShan Capital",
-  sectors: ["Technology", "Healthcare", "Consumer Internet"],
-  signatureExit: "No single defined public exit documented — HongShan's portfolio has produced 180+ public listings since its founding as Sequoia China",
-  slug: "hongshan-capital",
-  website: null,
-  short: "HongShan",
-  founded: 2005,
-  hq: "Hong Kong",
-  aum: "$61B (2026)",
-  thesis: "HongShan, the rebranded continuation of Sequoia China following its 2024 regional split, invests across the full venture lifecycle — from seed to growth to buyout funds — in technology, healthcare, and consumer companies across Asia and globally. Note: HongShan's own materials describe its funds as spanning venture capital through buyouts, the same PE-crossover pattern already flagged for review on Hillhouse and GGV.",
-  leadership: [
-    { name: "Neil Shen", role: "Founder", profileSlug: "neil-shen" }
-  ],
-  timeline: [
-    { year: "2005", event: "Neil Shen founds Sequoia Capital China." },
-    { year: "2024", event: "The firm completes its split from Sequoia Capital and rebrands as HongShan." }
-  ],
-  holdings: []
-},
-  {
-  rank: null,
   name: "Vertex Ventures",
   sectors: ["Technology", "Healthcare"],
   signatureExit: "CyberArk's NASDAQ listing (NASDAQ: CYBR) — a notable holding across Vertex's regional fund network",
@@ -307,28 +286,6 @@ holdings: []
   ],
   timeline: [
     { year: "2004", event: "Christoph Westphal co-founds RA Capital Management." }
-  ],
-  holdings: []
-},
-  {
-  rank: null,
-  name: "Deerfield Management",
-  sectors: ["Healthcare"],
-  signatureExit: "No single defined public exit documented — Deerfield backs biotech R&D and healthcare businesses across hedge, private equity, and venture strategies",
-  slug: "deerfield-management",
-  website: null,
-  short: "Deerfield",
-  founded: 1994,
-  hq: "New York, NY",
-  aum: "$15B (2023)",
-  thesis: "Deerfield specializes in pharmaceutical, biotech, and healthcare-services investing, backing life-sciences R&D and healthcare businesses globally. CEO James Flynn joined in 2000 and has since expanded the firm's life-sciences funds; founder Arnold Snider remains Chairman. Note: Deerfield's own materials describe it as spanning hedge, private-equity, and venture strategies — worth the same PE-crossover review already flagged for Hillhouse, GGV, and HongShan.",
-  leadership: [
-    { name: "James Flynn", role: "CEO" },
-    { name: "Arnold Snider", role: "Chairman & Founder" }
-  ],
-  timeline: [
-    { year: "1994", event: "Deerfield Management founded." },
-    { year: "2000", event: "James Flynn joins the firm, later becoming CEO." }
   ],
   holdings: []
 },
@@ -3308,37 +3265,6 @@ holdings: []
   },
   {
     rank: 22,
-    name: "GGV Capital",
-    sectors: ["AI", "Fintech", "Enterprise Software", "Consumer Internet"],
-    signatureExit: "Airbnb's 2020 IPO, which valued the company at just over $100 billion — GGV is widely documented as a portfolio investor in Airbnb",
-    slug: "ggv-capital",
-    website: "https://www.ggvc.com",
-    short: "GGV Capital",
-    founded: 2000,
-    hq: "Silicon Valley, CA",
-    aum: "$9.2B (legacy AUM, 2020, before 2024 split)",
-    thesis: "GGV Capital, founded in 2000 as Granite Global Ventures, was one of the earliest firms to build genuinely dual-strength practices across the U.S. and Asia rather than simply scouting one market from the other. That transpacific model produced differentiated dealflow for years — Jenny Lee established the Shanghai office in 2005, and the firm's AUM reached $9.2 billion by 2020 — but became harder to sustain as outbound-investment scrutiny and geopolitical fragmentation intensified. The firm's split into Notable Capital (U.S.) and Granite Asia on March 29, 2024, should be read not as an operational footnote but as the resolution of a strategic contradiction: the same cross-border model that once created edge later became a governance constraint, following Airbnb's 2020 IPO at just over $100 billion as the legacy franchise's signature outcome.",
-    leadership: [
-      { name: "Jenny Lee", role: "Senior Managing Partner (now Granite Asia)", profileSlug: "jenny-lee" },
-      { name: "Jeff Richards", role: "Managing Partner (now Notable Capital)", profileSlug: "jeff-richards" },
-      { name: "Hans Tung", role: "Managing Partner" },
-      { name: "Jixun Foo", role: "Managing Partner" }
-    ],
-    timeline: [
-      { year: "2000", event: "Founded as Granite Global Ventures." },
-      { year: "2001", event: "First fund closes at $161 million." },
-      { year: "2005", event: "Jenny Lee establishes the Shanghai office." },
-      { year: "2020", event: "Total AUM reaches $9.2 billion; Airbnb goes public at just over $100 billion." },
-      { year: "2024", event: "GGV splits into Granite Asia and Notable Capital on March 29." }
-    ],
-    holdings: [
-      { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: 141.10 },
-      { name: "Affirm", ticker: "AFRM", historicalPrice: null, price: 64.71 },
-      { name: "XPeng", ticker: "XPEV", historicalPrice: null, price: null }
-    ]
-  },
-  {
-    rank: 22,
     name: "Spark Capital",
     sectors: ["Consumer Internet", "Enterprise Software", "Fintech", "AI"],
     signatureExit: "Twitter's 2013 IPO — Spark led the company's early investment in 2007 when it had fewer than a dozen employees",
@@ -4788,35 +4714,6 @@ holdings: []
       { year: "2026", event: "Firm AUM reaches approximately €2.5 billion across 220-plus companies in 40 countries." }
     ],
     holdings: []
-  },
-  {
-    rank: 57,
-    name: "HealthQuest Capital",
-    sectors: ["Healthcare", "Medical Devices", "Diagnostics", "Digital Health"],
-    signatureExit: "Castle Biosciences' Nasdaq IPO — one of 13 public listings founder Garheng Kong has been directly involved in, out of 40 total IPO and M&A exits across his healthcare investing career",
-    slug: "healthquest-capital",
-    website: "https://www.healthquestcapital.com",
-    short: "HealthQuest Capital",
-    founded: 2012,
-    hq: "Belmont, CA",
-    aum: "~$1.5B (across four funds)",
-    thesis: "HealthQuest Capital was founded in 2012 by Garheng Kong, a physician, scientist, and engineer by training who spent his early career at GlaxoSmithKline, McKinsey, and a medical device startup before moving into healthcare-focused venture investing. That rare combination of clinical, scientific, and operating credentials shapes the firm's specific investment lens: rather than backing early-stage science, HealthQuest exclusively targets commercial-stage healthcare companies already generating real revenue, spanning medical devices, diagnostics, biopharma, and digital health, and provides growth capital to help them scale toward profitability, IPO, or acquisition. The firm has grown from an $111 million debut fund in 2013 to a $685 million fourth fund in 2022, its largest yet, and Kong has personally been involved in 40 IPO and M&A exits across more than two decades of healthcare investing.",
-    leadership: [
-      { name: "Garheng Kong", role: "Founder & Managing Partner", profileSlug: "garheng-kong" },
-      { name: "Randy Thurman", role: "Founding Partner" },
-      { name: "Sharath Reddy", role: "Partner" }
-    ],
-    timeline: [
-      { year: "2012", event: "Garheng Kong founds HealthQuest Capital." },
-      { year: "2013", event: "Closes HealthQuest Fund I at $111 million." },
-      { year: "2016", event: "Closes HealthQuest Fund II at $228 million." },
-      { year: "2019", event: "Closes HealthQuest Fund III at $447 million." },
-      { year: "2022", event: "Closes HealthQuest Fund IV, its largest to date, at $685 million." }
-    ],
-    holdings: [
-      { name: "Castle Biosciences", ticker: "CSTL", historicalPrice: null, price: null },
-      { name: "Pulmonx", ticker: "LUNG", historicalPrice: null, price: null }
-    ]
   },
   {
     rank: 58,
@@ -7043,32 +6940,6 @@ holdings: []
     holdings: []
   },
   {
-    rank: 31,
-    name: "Vision Knight Capital",
-    sectors: ["Consumer", "Marketplaces"],
-    signatureExit: "POP MART's 2020 Hong Kong IPO at a $1.4 billion market cap — Hong Kong's largest internet offering that year, and Vision Knight was both a co-founder and lead investor in the collectible toy company",
-    slug: "vision-knight-capital",
-    website: "http://www.vkc-partners.com",
-    short: "Vision Knight Capital",
-    founded: 2011,
-    hq: "Shanghai, China",
-    aum: "$2.8B",
-    thesis: "Vision Knight Capital was founded in 2011 by David Wei, who brought a rare combination of retail operating experience and public-markets credibility from more than two decades in China — CFO and later CEO of B&Q China, then CEO of Alibaba.com, where he personally led its 2007 Hong Kong listing — alongside co-founder Daming Zhu. That operating pedigree shaped a specifically bold, growth-stage approach to China's consumer and digital retail sectors, most famously co-founding and leading the investment in POP MART, the collectible toy company whose 2020 Hong Kong IPO was the market's largest internet offering that year. Vision Knight has grown into a firm managing nearly $2.8 billion across USD and RMB funds, raising more than $560 million in new capital in late 2025 to expand into AI infrastructure, cross-border e-commerce, and life sciences.",
-    leadership: [
-      { name: "David Wei", role: "Founding Partner & Chairman", profileSlug: "david-wei" },
-      { name: "Daming Zhu", role: "Co-Founder" }
-    ],
-    timeline: [
-      { year: "2011", event: "David Wei and Daming Zhu found Vision Knight Capital in Shanghai." },
-      { year: "2014", event: "Co-founds and invests in POP MART." },
-      { year: "2020", event: "POP MART completes its Hong Kong IPO at a $1.4 billion market cap." },
-      { year: "2025", event: "Raises more than $560 million in new funds, pushing AUM to nearly $2.8 billion." }
-    ],
-    holdings: [
-      { name: "POP MART", ticker: "1993.HK", historicalPrice: null, price: null }
-    ]
-  },
-  {
     rank: 30,
     name: "Shasta Ventures",
     sectors: ["Enterprise Software", "Cybersecurity", "Deep Tech", "Consumer"],
@@ -7173,65 +7044,6 @@ holdings: []
     holdings: [
       { name: "Bill.com", ticker: "BILL", historicalPrice: null, price: null },
       { name: "SoFi", ticker: "SOFI", historicalPrice: null, price: null }
-    ]
-  },
-  {
-    rank: 9,
-    name: "IDG Capital",
-    sectors: ["Consumer", "AI", "Enterprise Software", "Fintech"],
-    signatureExit: "Tencent's 2004 IPO on the Hong Kong Stock Exchange — one of IDG Capital's earliest and most consequential bets, backing a company that grew into one of the world's most valuable technology companies",
-    slug: "idg-capital",
-    website: "https://www.idgcapital.com",
-    short: "IDG Capital",
-    founded: 1992,
-    hq: "Beijing, China",
-    aum: "$23B",
-    thesis: "IDG Capital was established in Boston in 1992 as the venture arm of International Data Group, and became China's first foreign-backed venture capital firm in 1993 when founding chairman Hugo Shong, a former factory worker and journalist, convinced IDG founder Patrick McGovern to fund the country's still-nascent technology sector. That first-mover position, secured before nearly any other institutional capital recognized China's opportunity, produced one of the most consequential venture portfolios in history: Tencent, Baidu, Xiaomi, Meituan, Pinduoduo, Nio, Ctrip, and SenseTime among more than 1,300 companies backed across mainland China, Hong Kong, the United States, and Europe. In a remarkable reversal in 2017, IDG Capital and China Oceanwide Holdings acquired International Data Group itself, the American parent company that had originally financed IDG's expansion into China 24 years earlier. The firm now manages $23 billion, with more than 100 unicorns and nearly 400 successful exits through IPOs and acquisitions.",
-    leadership: [
-      { name: "Hugo Shong", role: "Founding Chairman", profileSlug: "hugo-shong" }
-    ],
-    timeline: [
-      { year: "1992", event: "IDG Capital is established in Boston as the venture arm of International Data Group." },
-      { year: "1993", event: "Hugo Shong partners with Patrick McGovern to launch IDG Capital's China operations, the first foreign-backed VC firm in the country." },
-      { year: "2004", event: "Tencent completes its IPO on the Hong Kong Stock Exchange." },
-      { year: "2005", event: "Baidu completes its NASDAQ IPO." },
-      { year: "2017", event: "IDG Capital and China Oceanwide Holdings acquire International Data Group itself, in January." },
-      { year: "2021", event: "AUM reaches $23 billion." }
-    ],
-    holdings: [
-      { name: "Tencent", ticker: "0700.HK", historicalPrice: null, price: null },
-      { name: "Baidu", ticker: "BIDU", historicalPrice: null, price: null },
-      { name: "Xiaomi", ticker: "1810.HK", historicalPrice: null, price: null }
-    ]
-  },
-  {
-    rank: 17,
-    name: "Legend Capital",
-    sectors: ["Enterprise Software", "Healthcare", "Consumer", "AI"],
-    signatureExit: "No single named signature exit — Legend Capital's track record spans more than 70 exits across 600-plus portfolio companies, including public listings for Meituan, NIO, ZTO Express, and CATL",
-    slug: "legend-capital",
-    website: "https://www.legendcapitalco.com",
-    short: "Legend Capital",
-    founded: 2001,
-    hq: "Beijing, China",
-    aum: "$10B+ (across USD and RMB funds)",
-    thesis: "Legend Capital was founded in April 2001 as the venture capital arm of Legend Holdings, the diversified conglomerate that also built Lenovo Group into a global technology company, launching with a $35 million debut fund. That heritage gives Legend Capital a genuinely rare structural advantage among China-focused venture firms: decades-deep relationships with entrepreneurs, government officials, and co-investors built through Legend Holdings' broader industrial operations spanning real estate, financial services, and agriculture, alongside patient, long-horizon capital rare among typical VC funds. The firm has grown into one of China's most established early and growth-stage investors, backing more than 600 companies across technology, healthcare, and consumer sectors, including Meituan, NIO, ZTO Express, and CATL, with more than $10 billion in committed capital across USD and RMB-denominated funds and offices spanning Beijing, Shanghai, Shenzhen, Hong Kong, Seoul, and Singapore.",
-    leadership: [
-      { name: "Richard Li", role: "President", profileSlug: "richard-li-legend" },
-      { name: "Linan Zhu", role: "Chairman" },
-      { name: "Hank Zhou", role: "Co-Chief Investment Officer" }
-    ],
-    timeline: [
-      { year: "2001", event: "Legend Holdings founds Legend Capital in April, with a $35 million debut fund." },
-      { year: "2012", event: "Rebrands to 'Junlian' (君联资本) in Chinese." },
-      { year: "2018", event: "Meituan completes its Hong Kong IPO." },
-      { year: "2023", event: "President Richard Li ranks in the top four on the Forbes China Venture Capital 100 list." },
-      { year: "2024", event: "Portfolio companies Aidite, Yonz Technology, and Qunabox Group all complete public listings." }
-    ],
-    holdings: [
-      { name: "Meituan", ticker: "3690.HK", historicalPrice: null, price: null },
-      { name: "NIO", ticker: "NIO", historicalPrice: null, price: null },
-      { name: "ZTO Express", ticker: "ZTO", historicalPrice: null, price: null }
     ]
   },
   {
@@ -7408,30 +7220,6 @@ holdings: []
       { year: "2018", event: "Transitions from an angel group into a formal venture investment firm in January." },
       { year: "2021", event: "Jennifer Jeronimo joins as CEO." },
       { year: "2026", event: "Surpasses $1 billion in AUM across 2,500-plus companies and 75-plus unicorns." }
-    ],
-    holdings: []
-  },
-  {
-    rank: 74,
-    name: "Shorooq Partners",
-    sectors: ["Fintech", "Enterprise Software", "Mobility", "AI"],
-    signatureExit: "No confirmed dollar-verified public exit — Shorooq's clearest proof points are its 45-plus portfolio companies, including regional unicorns Tamara and TruKKer, which have generated a reported $1.5 billion-plus in combined equity value while remaining privately held",
-    slug: "shorooq-partners",
-    website: "https://www.shorooq.com",
-    short: "Shorooq Partners",
-    founded: 2016,
-    hq: "Abu Dhabi, UAE",
-  aum: "Not publicly disclosed (45+ portfolio companies with a combined equity value exceeding $1.5B)",
-    thesis: "Shorooq Partners was founded in 2016 by Shane Shin and Mahmoud Adi, who left established careers in Silicon Valley and Mubadala's GlobalFoundries to build one of the Middle East's earliest institutional venture firms, at a time the region had little existing venture infrastructure. The firm became the first regional fund manager to be regulated by the Abu Dhabi Global Market, and has built out a genuinely multi-dimensional platform spanning early-stage venture equity, venture debt through its Nahda Fund, and private credit — an unusually broad capital-structure presence for a firm still focused primarily on Pre-Seed through Series A equity checks. Shorooq's hands-on, actively-involved investing philosophy has backed more than 45 companies including Tamara, TruKKer, NymCard, Sarwa, and Lean Technologies, generating a reported $1.5 billion-plus in combined portfolio equity value.",
-    leadership: [
-      { name: "Shane Shin", role: "Co-Founding Partner", profileSlug: "shane-shin" },
-      { name: "Mahmoud Adi", role: "Co-Founding Partner" }
-    ],
-    timeline: [
-      { year: "2016", event: "Shane Shin and Mahmoud Adi found Shorooq Partners in Abu Dhabi." },
-      { year: "2017", event: "Leads its first regional investment, co-founding and incubating Pure Harvest Smart Farms." },
-      { year: "2020", event: "Becomes the first regional fund manager regulated by the Abu Dhabi Global Market." },
-      { year: "2023", event: "Launches the Nahda Fund, the Middle East's first tech-focused venture debt fund." }
     ],
     holdings: []
   },
