@@ -75,7 +75,6 @@ const featuredFirm = {
 const firmStages = {
   "a16z": ["Seed", "Series A", "Series B", "Growth", "Late Stage"],
   "sequoia": ["Seed", "Series A", "Series B", "Growth", "Late Stage"],
-  "insight-partners": ["Series A", "Series B", "Growth", "Late Stage"],
   "tiger-global": ["Series B", "Growth", "Late Stage"],
   "general-catalyst": ["Seed", "Series A", "Series B", "Growth"],
   "nea": ["Seed", "Series A", "Series B", "Growth"],
@@ -104,7 +103,6 @@ const firmStages = {
   // focus (e.g. Uncork's "one stage: seed" framing, Norwest's
   // "every stage" positioning, K9 and Precursor's explicit
   // pre-seed/seed specialization).
-  "coatue-management": ["Seed", "Series A", "Series B", "Growth", "Late Stage"],
   "norwest-venture-partners": ["Pre-Seed", "Seed", "Series A", "Series B", "Growth", "Late Stage"],
   "bain-capital-ventures": ["Seed", "Series A", "Series B", "Growth", "Late Stage"],
   "menlo-ventures": ["Seed", "Series A", "Series B", "Growth"],
@@ -176,7 +174,6 @@ const firmStages = {
    "northzone": ["Seed", "Series A", "Series B", "Growth"],
    "molten-ventures": ["Series A", "Series B", "Growth", "Late Stage"],
    "softbank-vision-fund": ["Series B", "Growth", "Late Stage"],
-   "dst-global": ["Growth", "Late Stage"],
    "ggv-capital": ["Seed", "Series A", "Series B", "Growth"],
    "peak-xv-partners": ["Seed", "Series A", "Series B", "Growth"],
     "eclipse-ventures": ["Seed", "Series A", "Series B", "Growth"],
@@ -186,7 +183,6 @@ const firmStages = {
    "b-capital-group": ["Series B", "Series C", "Growth", "Late Stage"],
    "y-combinator": ["Pre-Seed", "Seed"],
    "kaszek-ventures": ["Seed", "Series A", "Series B", "Growth"],
-   "general-atlantic": ["Growth", "Late Stage"],
    "canaan-partners": ["Seed", "Series A", "Growth"],
    "sosv": ["Pre-Seed", "Seed", "Series A"],
     "tcv": ["Series B", "Series C", "Growth", "Late Stage"],
@@ -287,7 +283,6 @@ const firmStages = {
    "dcm-ventures": ["Seed", "Series A", "Series B", "Series C"],
    "idg-capital": ["Series A", "Series B", "Growth", "Late Stage"],
    "legend-capital": ["Series A", "Series B", "Series C", "Growth"],
-   "hillhouse-investment-group": ["Series A", "Series B", "Growth", "Late Stage"],
    "octopus-ventures": ["Pre-Seed", "Seed", "Series A", "Series B", "Growth"],
    "gaingels": ["Series A", "Series B", "Growth"],
       "sinovation-ventures": ["Seed", "Series A", "Series B"],
@@ -326,7 +321,6 @@ const firmStages = {
       "samsung-ventures": ["Series A", "Series B", "Growth"],
       "gaorong-capital": ["Series A", "Series B", "Growth"],
    "bond-capital": ["Growth", "Late Stage"],
-      "iconiq-growth": ["Series B", "Series C", "Growth"],
       "deviation-capital": ["Seed", "Series A"],
       "obvious-ventures": ["Seed", "Series A"],
       "base10-partners": ["Seed", "Series A", "Series B"],
@@ -395,7 +389,6 @@ const firmStages = {
 // Fill in more over time as research is done on more firms.
 // ============================================================
 const firmPerformance = {
-  "insight-partners": { totalPortfolio: 875 },
   "kleiner-perkins": { totalPortfolio: 900 },
   "battery-ventures": { totalPortfolio: 450, ipoExits: 65, acquisitions: 185 },
   "gv": { totalPortfolio: 400 },
