@@ -9511,4 +9511,758 @@ sources: [
       { label: "Wikipedia", url: "https://en.wikipedia.org/wiki/Chase_Coleman_III" }
     ]
   },
+  "sten-tamkivi": {
+    name: "Sten Tamkivi",
+    firm: "Plural",
+    firmSlug: "plural",
+    title: "Co-Founder & Partner",
+    joinedYear: 2022,
+    education: [],
+    previousExperience: [
+      "Early executive, Skype (8+ years) — grew the Tallinn R&D office to 450 people ahead of Microsoft's $8.5B acquisition",
+      "Co-Founder, Teleport — acquired by Topia in 2017",
+      "Entrepreneur-in-Residence, Andreessen Horowitz",
+      "Co-Founder, Taavet+Sten angel partnership — roughly 40–50 angel investments"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2020",
+        event: "Co-founded the Taavet+Sten angel partnership with Taavet Hinrikus."
+      },
+      {
+        year: "2022",
+        event: "Co-founded Plural."
+      }
+    ],
+    biography: "Sten Tamkivi is an Estonian entrepreneur and investor and a partner at Plural. He spent more than eight years as an early Skype executive, growing its Tallinn R&D office ahead of Microsoft's $8.5B acquisition, later co-founded Teleport, and made roughly 40 to 50 angel investments before co-founding Plural in 2022.",
+    sources: [
+      {
+        label: "Europe Startup Guide — Plural",
+        url: "https://europe-startup-guide.com/united-kingdom/venture-capital/plural"
+      }
+    ]
+  },
+  "nathan-benaich": {
+    name: "Nathan Benaich",
+    firm: "Air Street Capital",
+    firmSlug: "air-street-capital",
+    title: "Founder & General Partner",
+    joinedYear: 2019,
+    education: [
+      "Ph.D. Cancer Biology, University of Cambridge"
+    ],
+    previousExperience: [
+      "Computational cancer researcher",
+      "Co-author, annual State of AI Report (since 2018)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2018",
+        event: "Co-created the first State of AI Report."
+      },
+      {
+        year: "2019",
+        event: "Founded Air Street Capital."
+      },
+      {
+        year: "2023",
+        event: "UK Government adopted university spinout policy reforms he proposed through Spinout.fyi."
+      }
+    ],
+    biography: "Nathan Benaich is founder and general partner of Air Street Capital, a solo-GP firm investing exclusively in AI-first companies. He holds a doctorate in cancer biology from Cambridge, co-authors the annual State of AI Report, and founded the RAAIS Summit and Foundation. His Spinout.fyi research on university spinout terms led to reforms adopted by the UK government in 2023.",
+    sources: [
+      {
+        label: "Air Street Capital — Team",
+        url: "https://www.airstreet.com/team"
+      },
+      {
+        label: "Nathan Benaich — personal site",
+        url: "https://www.nathanbenaich.com/"
+      }
+    ]
+  },
+  "gabriel-matuschka": {
+    name: "Gabriel Matuschka",
+    firm: "Fly Ventures",
+    firmSlug: "fly-ventures",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2016,
+    education: [],
+    previousExperience: [
+      "Founder, TripHunter — a travel shopping club acquired by brands4friends, now owned by eBay"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2016",
+        event: "Co-founded Fly Ventures in Berlin with Fredrik Bergenlid."
+      }
+    ],
+    biography: "Gabriel Matuschka is co-founder and general partner of Fly Ventures in Berlin. Before venture investing he founded TripHunter, a travel shopping club later acquired by brands4friends, now owned by eBay.",
+    sources: [
+      {
+        label: "TechCrunch — Fly Ventures €80M fund",
+        url: "https://techcrunch.com/2024/12/06/fly-ventures-sets-its-eyes-on-technical-founders-with-a-fresh-e80m-fund/"
+      }
+    ]
+  },
+  "brent-hoberman": {
+    name: "Brent Hoberman",
+    firm: "Firstminute Capital",
+    firmSlug: "firstminute-capital",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2017,
+    education: [],
+    previousExperience: [
+      "Co-Founder & CEO, lastminute.com (1998–2005) — sold to Sabre for $1.1B",
+      "Co-Founder, Made.com (2010) — departed before its 2021 IPO",
+      "Co-Founder, Founders Factory",
+      "Co-Founder, Founders Forum"
+    ],
+    boardSeats: [
+      "LetterOne Technology (advisory board)",
+      "Oxford Foundry (advisory board)",
+      "UK Government Digital Advisory Board"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1998",
+        event: "Co-founded lastminute.com."
+      },
+      {
+        year: "2005",
+        event: "lastminute.com sold to Sabre for $1.1B."
+      },
+      {
+        year: "2010",
+        event: "Co-founded Made.com."
+      },
+      {
+        year: "2017",
+        event: "Co-founded Firstminute Capital."
+      },
+      {
+        year: "2021",
+        event: "Made.com listed publicly at a $1.1B valuation, after his departure."
+      }
+    ],
+    biography: "Brent Hoberman CBE is co-founder and managing partner of Firstminute Capital. He co-founded and led lastminute.com from 1998, selling it to Sabre in 2005 for $1.1B, and later co-founded Made.com, leaving before its 2021 listing. He also co-founded Founders Factory and Founders Forum.",
+    sources: [
+      {
+        label: "Firstminute Capital — Brent Hoberman",
+        url: "https://www.firstminute.capital/team/brent-hoberman"
+      }
+    ]
+  },
+  "eileen-burbidge": {
+    name: "Eileen Burbidge",
+    firm: "Passion Capital",
+    firmSlug: "passion-capital",
+    title: "Founding Partner",
+    joinedYear: 2011,
+    education: [
+      "BSc Engineering, Computer Science, University of Illinois at Urbana-Champaign"
+    ],
+    previousExperience: [
+      "Director, Product, Skype (2004–2005) — one of its earliest employees, moving to London in 2004",
+      "Director, Communication Products, Yahoo! (2005–2006)",
+      "Director, Business Development, Openwave Systems (1999–2000)",
+      "Group Manager, Market Development, Sun Microsystems (1996–1999)",
+      "Market Development Manager, Newton Systems Group, Apple (1995–1996)",
+      "Engineering Associate, Verizon (1993–1994)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Monzo Bank",
+      "Digital Shadows",
+      "Focal Point Positioning",
+      "Butternut Box"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2004",
+        event: "Moved from the US to London to join Skype."
+      },
+      {
+        year: "2011",
+        event: "Co-founded Passion Capital."
+      },
+      {
+        year: "2015",
+        event: "Appointed MBE for services to business, and named HM Treasury's Special Envoy for FinTech."
+      }
+    ],
+    biography: "Eileen Burbidge is a founding partner of Passion Capital. Born in Chicago and a computer science graduate of the University of Illinois Urbana-Champaign, she held product and business development roles at Apple, Sun Microsystems, Yahoo! and Skype — moving to London in 2004 as one of Skype's earliest employees — before co-founding Passion Capital. She was appointed MBE in 2015 and served as HM Treasury's Special Envoy for FinTech.",
+    sources: [
+      {
+        label: "Wikipedia — Eileen Burbidge",
+        url: "https://en.wikipedia.org/wiki/Eileen_Burbidge"
+      },
+      {
+        label: "NFX Signal — Eileen Burbidge",
+        url: "https://signal.nfx.com/investors/eileen-burbidge"
+      }
+    ]
+  },
+  "guillaume-aubin": {
+    name: "Guillaume Aubin",
+    firm: "Alven",
+    firmSlug: "alven",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2000,
+    education: [
+      "Engineering degree, École Polytechnique",
+      "École Nationale des Ponts et Chaussées",
+      "Sciences Po (IEP Paris), 1989–1991"
+    ],
+    previousExperience: [
+      "Co-Head, ECM France, BNP Paribas Corporate and Investment Banking (1999–2000)",
+      "Corporate Finance (M&A, IPO), BNP Paribas — Paris, New York and London (1991–1999)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1991",
+        event: "Joined Paribas, working across Paris, New York and London on technology M&A and IPOs."
+      },
+      {
+        year: "2000",
+        event: "Co-founded Alven with Charles Letourneur."
+      }
+    ],
+    biography: "Guillaume Aubin is co-founder and managing partner of Alven. A graduate of École Polytechnique, École Nationale des Ponts et Chaussées and Sciences Po, he spent the 1990s in BNP Paribas's corporate finance division across Paris, New York and London, focused on M&A and IPOs for technology companies, before co-founding Alven in 2000.",
+    sources: [
+      {
+        label: "Crunchbase — Guillaume Aubin",
+        url: "https://www.crunchbase.com/person/guillaume-aubin"
+      },
+      {
+        label: "Alven — About",
+        url: "https://alven.co/about-us"
+      }
+    ]
+  },
+  "charles-letourneur": {
+    name: "Charles Letourneur",
+    firm: "Alven",
+    firmSlug: "alven",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2000,
+    education: [
+      "École Polytechnique",
+      "ENSAE Paris",
+      "Sciences Po (IEP Paris)"
+    ],
+    previousExperience: [
+      "Member of the Executive Committee, Gaz & Eaux — later renamed Eurazeo (from 2000)",
+      "M&A, Lazard — New York then Paris (from 1991)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1991",
+        event: "Joined Lazard's M&A department in New York."
+      },
+      {
+        year: "2000",
+        event: "Appointed to the executive committee of Gaz & Eaux, later renamed Eurazeo, and co-founded Alven with Guillaume Aubin."
+      }
+    ],
+    biography: "Charles Letourneur is co-founder and managing partner of Alven. A graduate of École Polytechnique, ENSAE Paris and Sciences Po, he began his career in Lazard's M&A department in New York and Paris, then joined the executive committee of Gaz & Eaux — later renamed Eurazeo — before co-founding Alven in 2000.",
+    sources: [
+      {
+        label: "Alven — About",
+        url: "https://alven.co/about-us"
+      },
+      {
+        label: "Topio Networks — Charles Letourneur",
+        url: "https://www.topionetworks.com/people/charles-letourneur-561b52d0ace9d6db560002f9"
+      }
+    ]
+  },
+  "jean-bourcereau": {
+    name: "Jean Bourcereau",
+    firm: "Ventech",
+    firmSlug: "ventech",
+    title: "Chairman & Managing Partner",
+    joinedYear: 2000,
+    education: [
+      "Engineering degree in physics, École Polytechnique",
+      "École Nationale Supérieure des Télécommunications"
+    ],
+    previousExperience: [
+      "New business development in semiconductors and IP networks, Altran Group (from 1997) — co-founded a subsidiary providing strategic due diligence to private equity investors",
+      "Telecom Argentina — early career, South America",
+      "AT&T Bell Labs — early career, United States"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Arteris",
+      "Ateme",
+      "Crocus Technology",
+      "Ekinops"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2000",
+        event: "Joined Ventech, leading investments in hardware and communications."
+      },
+      {
+        year: "2025",
+        event: "Became Chairman as founding partner Alain Caffi retired at the Fund VI close."
+      }
+    ],
+    biography: "Jean Bourcereau is chairman and managing partner of Ventech, which he joined in 2000. An engineering graduate of École Polytechnique with a further degree from École Nationale Supérieure des Télécommunications, he began his career at AT&T Bell Labs and Telecom Argentina before developing new business at Altran Group across semiconductors and IP networks. He became chairman when founding partner Alain Caffi retired at the firm's Fund VI close in September 2025.",
+    sources: [
+      {
+        label: "Ventech — Jean Bourcereau",
+        url: "https://www.ventechvc.com/people/jean-bourcereau"
+      },
+      {
+        label: "Crunchbase — Jean Bourcereau",
+        url: "https://www.crunchbase.com/person/jean-bourcereau"
+      }
+    ]
+  },
+  "georg-ried": {
+    name: "Georg Ried",
+    firm: "Bayern Kapital",
+    firmSlug: "bayern-kapital",
+    title: "Managing Director",
+    joinedYear: 2013,
+    education: [
+      "PhD — qualified biochemist"
+    ],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2013",
+        event: "Became a member of Bayern Kapital's management."
+      },
+      {
+        year: "2022",
+        event: "Became co-managing director alongside Monika Steger in April, forming the firm's current dual leadership as Roman Huber retired."
+      }
+    ],
+    biography: "Dr. Georg Ried is a managing director of Bayern Kapital, the venture capital company of the Free State of Bavaria, a role he has held since 2013. Since April 2022 he has co-led the firm in a dual-leadership structure with Monika Steger, following the retirement of long-serving managing director Roman Huber. He is described in sourcing as a qualified biochemist; his earlier career history is not documented in available sources.",
+    sources: [
+      {
+        label: "Munich Startup — Bayern Kapital gets new managing director",
+        url: "https://www.munich-startup.de/en/80026/bayern-capital-gets-new-managing-director/"
+      }
+    ]
+  },
+  "monika-steger": {
+    name: "Monika Steger",
+    firm: "Bayern Kapital",
+    firmSlug: "bayern-kapital",
+    title: "Managing Director",
+    joinedYear: 2003,
+    education: [],
+    previousExperience: [
+      "Deputy member of management, Bayern Kapital (from 2012)",
+      "Prokuristin (authorised signatory), Bayern Kapital (from 2010)",
+      "Senior positions, Bayern Kapital (from 2003)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2003",
+        event: "Joined Bayern Kapital in a senior role."
+      },
+      {
+        year: "2010",
+        event: "Became Prokuristin, an authorised signatory of the firm."
+      },
+      {
+        year: "2012",
+        event: "Became a deputy member of management."
+      },
+      {
+        year: "2022",
+        event: "Promoted to managing director in April, forming the current dual leadership with Georg Ried."
+      }
+    ],
+    biography: "Monika Steger is a managing director of Bayern Kapital, having risen through the firm since joining in a senior role in 2003 — becoming authorised signatory in 2010 and a deputy management member in 2012, before her promotion to managing director in April 2022. She co-leads the firm with Dr. Georg Ried, succeeding Roman Huber, who retired after more than 25 years.",
+    sources: [
+      {
+        label: "Munich Startup — Bayern Kapital gets new managing director",
+        url: "https://www.munich-startup.de/en/80026/bayern-capital-gets-new-managing-director/"
+      },
+      {
+        label: "Startbase — Monika Steger rückt in die Geschäftsführung auf",
+        url: "https://www.startbase.com/news/monika-steger-rueckt-in-die-geschaeftsfuehrung-von-bayern-kapital-auf/"
+      }
+    ]
+  },
+  "anne-glover": {
+    name: "Anne Glover",
+    firm: "Amadeus Capital Partners",
+    firmSlug: "amadeus-capital-partners",
+    title: "CEO & Co-Founder",
+    joinedYear: 1997,
+    education: [
+      "MA Metallurgy & Materials Science, Clare College, Cambridge",
+      "Masters in Public and Private Management, Yale School of Management"
+    ],
+    previousExperience: [
+      "Chief Operating Officer, Virtuality Group plc (after its 1993 LSE listing)",
+      "Investment team, Apax Partners (from 1989) — early-stage investing",
+      "Strategy consultant, Bain & Company, Boston (~5 years)",
+      "Manufacturing, Cummins Engine Company"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Bank of England Court (Non-Executive Director)",
+      "Yale Corporation Investment Committee"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1989",
+        event: "Joined Apax Partners to invest in early-stage companies."
+      },
+      {
+        year: "1993",
+        event: "Became COO of Virtuality Group following its LSE listing."
+      },
+      {
+        year: "1997",
+        event: "Co-founded Amadeus Capital Partners with Hermann Hauser."
+      },
+      {
+        year: "2006",
+        event: "Awarded CBE for services to business."
+      },
+      {
+        year: "2018",
+        event: "Appointed a Non-Executive Director of the Court of the Bank of England."
+      }
+    ],
+    biography: "Dame Anne Glover is CEO and co-founder of Amadeus Capital Partners, which she launched with Hermann Hauser in 1997. She holds an MA in Metallurgy & Materials Science from Clare College, Cambridge and a management degree from Yale. Before Amadeus she worked in manufacturing at Cummins Engine, strategy consulting at Bain & Company, early-stage investing at Apax Partners, and as COO of Virtuality Group after its LSE listing. She has chaired both the British Private Equity and Venture Capital Association and Invest Europe.",
+    sources: [
+      {
+        label: "Amadeus Capital Partners — Anne Glover",
+        url: "https://www.amadeuscapital.com/team/anne-glover/"
+      },
+      {
+        label: "Wikipedia — Anne Glover",
+        url: "https://en.wikipedia.org/wiki/Anne_Glover_(businesswoman)"
+      }
+    ]
+  },
+  "hermann-hauser": {
+    name: "Hermann Hauser",
+    firm: "Amadeus Capital Partners",
+    firmSlug: "amadeus-capital-partners",
+    title: "Co-Founder & Venture Partner",
+    joinedYear: 1997,
+    education: [
+      "MA, University of Vienna",
+      "PhD, King's College, Cambridge (1977)"
+    ],
+    previousExperience: [
+      "Co-Founder, Olivetti Research Laboratory, Cambridge (1986)",
+      "Vice-President for Research, Olivetti (from 1985) — overseeing US and European labs",
+      "Co-Founder, Acorn Computers (1978) — developer of the BBC Micro, from which ARM was spun out"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "XMOS (Non-Executive Director)"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1978",
+        event: "Co-founded Acorn Computers with Chris Curry."
+      },
+      {
+        year: "1990",
+        event: "Helped spin ARM out of Acorn."
+      },
+      {
+        year: "1997",
+        event: "Co-founded Amadeus Capital Partners with Anne Glover."
+      },
+      {
+        year: "2007",
+        event: "Portfolio company Solexa acquired by Illumina for $600M."
+      },
+      {
+        year: "2011",
+        event: "Portfolio company Icera acquired by Nvidia."
+      }
+    ],
+    biography: "Hermann Hauser is co-founder and a venture partner at Amadeus Capital Partners, launched with Anne Glover in 1997. Born in Vienna, he holds a PhD from King's College, Cambridge. He is best known for co-founding Acorn Computers in 1978, creator of the BBC Micro, and for helping spin ARM out of it in 1990. His Amadeus portfolio has included CSR plc, Solexa — acquired by Illumina for $600M — and Icera, acquired by Nvidia. He holds an honorary KBE for services to UK enterprise.",
+    sources: [
+      {
+        label: "Amadeus Capital Partners — Hermann Hauser",
+        url: "https://www.amadeuscapital.com/team/hermann-hauser/"
+      },
+      {
+        label: "Wikipedia — Hermann Hauser",
+        url: "https://en.wikipedia.org/wiki/Hermann_Hauser"
+      }
+    ]
+  },
+  "andreas-riegler": {
+    name: "Andreas Riegler",
+    firm: "Amadeus APEX Technology Fund",
+    firmSlug: "amadeus-apex-technology-fund",
+    title: "Founding Partner, APEX Ventures",
+    joinedYear: 2023,
+    education: [
+      "MSc Engineering and Business Administration, TU Graz",
+      "International Business program, Harvard University"
+    ],
+    previousExperience: [
+      "Global Senior Vice President, Sony — around two decades in media services, establishing service companies in the US, UK and Germany",
+      "Managing Director, Imagine Ventures",
+      "Co-Founder and Board Member, Authentic Vision"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "ImageBiopsy Lab"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2023",
+        event: "Amadeus APEX Technology Fund launched with a €28M first close in partnership with Amadeus Capital Partners."
+      }
+    ],
+    biography: "Andreas Riegler is a founding partner of APEX Ventures and co-manages the Amadeus APEX Technology Fund, a joint deep-tech vehicle with Amadeus Capital Partners launched in 2023. He holds a master's in engineering and business administration from TU Graz and studied international business at Harvard. Before venture investing he spent roughly two decades at Sony as a Global Senior Vice President, building media-services operations across the US, UK and Germany.",
+    sources: [
+      {
+        label: "APEX Ventures — Andreas Riegler",
+        url: "https://www.apex.ventures/people/andreas-riegler"
+      },
+      {
+        label: "Silicon Republic — Amadeus APEX Technology Fund",
+        url: "https://www.siliconrepublic.com/start-ups/amadeus-apex-technology-fund-deep-tech-startups-europe"
+      }
+    ]
+  },
+  "hussein-kanji": {
+    name: "Hussein Kanji",
+    firm: "Hoxton Ventures",
+    firmSlug: "hoxton-ventures",
+    title: "Founding Partner",
+    joinedYear: 2013,
+    education: [
+      "Symbolic Systems, Stanford University",
+      "MBA, London Business School (2005–2007)"
+    ],
+    previousExperience: [
+      "Venture Consultant then Associate, Accel Partners, London (2005–2009)",
+      "Product Manager then Platform Planner, Microsoft, Seattle (2002–2005)",
+      "Founding team, Studio Verso — acquired by KPMG for $15.5M in 1999"
+    ],
+    firmHistory: [
+      {
+        firmSlug: "accel",
+        role: "Associate",
+        startYear: 2005,
+        endYear: 2009
+      }
+    ],
+    boardSeats: [
+      "AI-6",
+      "Baseimmune",
+      "Behavox",
+      "Biocortex",
+      "Biotx",
+      "Cogna",
+      "DruidAI",
+      "Eterna Regen",
+      "Everbloom",
+      "Finesse",
+      "Giraffe360",
+      "Global Food Ventures",
+      "Kitt",
+      "Machenta",
+      "Milvus Advanced",
+      "Mubit",
+      "Otera",
+      "Peptone",
+      "Pentabind",
+      "PillSorted",
+      "Prefrontal",
+      "Quantrolox",
+      "Raptor Supplies",
+      "Rensair",
+      "Replai",
+      "Roli",
+      "Skin Analytics",
+      "TourRadar",
+      "Veridion",
+      "XYZ Reality"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1999",
+        event: "Studio Verso acquired by KPMG for $15.5M."
+      },
+      {
+        year: "2002",
+        event: "Joined Microsoft in Seattle."
+      },
+      {
+        year: "2005",
+        event: "Joined Accel Partners in London while completing his MBA."
+      },
+      {
+        year: "2013",
+        event: "Co-founded Hoxton Ventures with Rob Kniaz."
+      },
+      {
+        year: "2023",
+        event: "Named on the Forbes Midas List Europe."
+      }
+    ],
+    biography: "Hussein Kanji is founding partner of Hoxton Ventures. Educated at Stanford and London Business School, he was on the founding team of a web-design startup acquired by KPMG in 1999, then spent around four years at Microsoft in Seattle before joining Accel Partners in London in 2005. He co-founded Hoxton Ventures with Rob Kniaz in 2013 and appeared on the Forbes Midas List Europe in 2023.",
+    sources: [
+      {
+        label: "Hoxton Ventures — Hussein Kanji",
+        url: "https://hoxtonventures.com/team-member/hussein-kanji/"
+      },
+      {
+        label: "Forbes — Midas Europe newcomer Hussein Kanji",
+        url: "https://www.forbes.com/sites/rashishrivastava/2023/11/29/midas-europe-newcomer-hussein-kanji/"
+      }
+    ]
+  },
+  "leila-zegna": {
+    name: "Leila Rastegar Zegna",
+    firm: "Kindred Capital",
+    firmSlug: "kindred-capital",
+    title: "Founding General Partner",
+    joinedYear: 2015,
+    education: [
+      "BA Mathematics & Philosophy, cum laude with distinction, Yale University (2001–2005)",
+      "MBA, Harvard Business School (2009–2011)"
+    ],
+    previousExperience: [
+      "Chief Operating Officer, GenapSys (2012–2015) — sole business hire for the genomics startup's first two years",
+      "General Manager, Plum District (2011–2012)",
+      "Senior Associate Consultant, Bain & Company, New York (2005–2008)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Cradle Bio",
+      "Lottie",
+      "Gaia",
+      "Nomia",
+      "Sure",
+      "Pave"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2012",
+        event: "Joined the GenapSys founding team as COO."
+      },
+      {
+        year: "2015",
+        event: "Co-founded Kindred Capital."
+      }
+    ],
+    biography: "Leila Rastegar Zegna is a founding general partner of Kindred Capital. She graduated cum laude in Mathematics and Philosophy from Yale before an MBA at Harvard Business School. After starting her career at Bain & Company she became general manager of Plum District, then COO of the genomics startup GenapSys, before co-founding Kindred Capital in 2015 to build its equitable venture model.",
+    sources: [
+      {
+        label: "Kindred Capital — Equitable Venture",
+        url: "https://kindredcapital.vc/equitable-venture"
+      },
+      {
+        label: "The Alan Turing Institute — Leila Zegna",
+        url: "https://www.turing.ac.uk/people/external-researchers/leila-zegna"
+      }
+    ]
+  },
+  "andre-de-haes": {
+    name: "Andre de Haes",
+    firm: "Backed VC",
+    firmSlug: "backed-vc",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2016,
+    education: [
+      "BA Philosophy and Modern Languages, University of Oxford (2006–2010)",
+      "MBA, Stanford Graduate School of Business (2012–2014)"
+    ],
+    previousExperience: [
+      "Summer Associate, Andreessen Horowitz (during MBA)",
+      "Index Ventures",
+      "Management consultant, McKinsey & Company",
+      "Investment banking, Goldman Sachs",
+      "Financial Times"
+    ],
+    firmHistory: [
+      {
+        firmSlug: "a16z",
+        role: "Summer Associate",
+        startYear: null,
+        endYear: null
+      }
+    ],
+    boardSeats: [
+      "Thought Machine",
+      "THIS",
+      "Flexciton",
+      "Garten",
+      "Jelly",
+      "Banked"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2016",
+        event: "Co-founded Backed VC with Alex Brunicki, raising the firm's first fund at 27."
+      }
+    ],
+    biography: "Andre de Haes is co-founder and general partner of Backed VC. He read philosophy and modern languages at Oxford before an MBA at Stanford. His pre-venture career included investment banking at Goldman Sachs, consulting at McKinsey and a summer associate role at Andreessen Horowitz. He co-founded Backed VC with Alex Brunicki in 2016, raising its first fund at the age of 27.",
+    sources: [
+      {
+        label: "Backed VC — Andre de Haes",
+        url: "https://www.backed.vc/team/andre-de-haes"
+      },
+      {
+        label: "VC Sheet — Andre de Haes",
+        url: "https://www.vcsheet.com/who/andre-de-haes"
+      }
+    ]
+  },
 };
