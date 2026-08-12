@@ -30,7 +30,16 @@ function matchesAumTier(firm) {
 
 function matchesSectorFilter(firm) {
   if (activeSectors.size === 0) return true; // no sectors selected = show all
-  return firm.sectors.some(s => activeSectors.has(s));
+  // activeSectors holds SECTOR_MAP bucket keys (plus the synthetic
+  // '__generalist'), not raw tags - so a firm matches if any of its
+  // own raw sector strings falls inside any selected bucket.
+  return firm.sectors.some(s =>
+    [...activeSectors].some(k =>
+      k === '__generalist'
+        ? UNMAPPED_DESCRIPTOR_TAGS.has(s)
+        : (SECTOR_MAP[k] && SECTOR_MAP[k].rawTags.indexOf(s) !== -1)
+    )
+  );
 }
 
 // Investment Stage cards - multi-select, OR within the group (e.g.
@@ -51,14 +60,33 @@ function matchesFilter(firm) {
   return eraMatch && matchesAumTier(firm) && matchesSectorFilter(firm) && matchesStageFilter(firm);
 }
 
-// Builds the sector filter chips dynamically from every unique
-// sector across all tracked firms - never hardcoded, so a new
-// sector added to any firm automatically gets its own filter chip.
+// Builds the sector filter chips from taxonomy.js rather than from
+// the raw tags. The raw `sectors` strings in data-firms.js are each
+// firm's own wording and are never rewritten - but there are 126 of
+// them, many near-duplicates ("AI", "AI/ML", "Applied AI"), which is
+// a wall of chips rather than a usable filter. One chip per canonical
+// SECTOR_MAP bucket, plus a synthetic "Generalist" chip built from
+// UNMAPPED_DESCRIPTOR_TAGS so sector-agnostic firms stay reachable.
+// Buckets with no firms are not rendered at all.
 function renderSectorFilterChips() {
-  const allSectors = [...new Set(firms.flatMap(f => f.sectors))].sort();
-  document.getElementById('sectorFilterChips').innerHTML = allSectors.map(s => `
-    <button class="chip" data-sector="${s}">${s}</button>
-  `).join('');
+  const el = document.getElementById('sectorFilterChips');
+  if (!el) return;
+  const counts = {};
+  const bump = (key, slug) => {
+    if (!counts[key]) counts[key] = new Set();
+    counts[key].add(slug);
+  };
+  firms.forEach(f => (f.sectors || []).forEach(s => {
+    Object.keys(SECTOR_MAP).forEach(k => {
+      if (SECTOR_MAP[k].rawTags.indexOf(s) !== -1) bump(k, f.slug);
+    });
+    if (UNMAPPED_DESCRIPTOR_TAGS.has(s)) bump('__generalist', f.slug);
+  }));
+  const keys = Object.keys(counts).sort((a, b) => counts[b].size - counts[a].size);
+  el.innerHTML = keys.map(k => {
+    const label = k === '__generalist' ? 'Generalist' : SECTOR_MAP[k].label;
+    return `<button class="chip" data-sector="${k}">${label}</button>`;
+  }).join('');
 }
 
 // Filter chips - clicking one sets the active era filter
