@@ -8339,4 +8339,556 @@ holdings: []
     ],
     holdings: []
   },
+  {
+    rank: null,
+    name: "Sutter Hill Ventures",
+    sectors: [
+      "Enterprise Software",
+      "Infrastructure",
+      "Cybersecurity",
+      "Cloud"
+    ],
+    slug: "sutter-hill-ventures",
+    website: null,
+    short: "Sutter Hill",
+    founded: 1964,
+    hq: "Palo Alto, CA",
+    aum: "$2.3B (2026)",
+    thesis: "Runs a proactive incubation model: partners identify a market gap, recruit a founder-in-residence and drive company creation from day one, providing space, hiring the first engineers and sometimes serving as interim management to de-risk the earliest stage.",
+    leadership: [],
+    timeline: [
+      {
+        year: "1964",
+        event: "Founded by Bill Draper and Paul Wythes."
+      },
+      {
+        year: "2012",
+        event: "Led Snowflake's $5M Series A."
+      },
+      {
+        year: "2024",
+        event: "Led Observe's $115M Series B."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Sierra Ventures",
+    sectors: [
+      "Enterprise Software",
+      "AI",
+      "Cybersecurity",
+      "Cloud Infrastructure",
+      "Deep Tech"
+    ],
+    slug: "sierra-ventures",
+    website: "https://www.sierraventures.com/",
+    short: "Sierra",
+    founded: 1982,
+    hq: "San Mateo, CA",
+    aum: "$265M (Fund XIII, 2023)",
+    thesis: "Backs first-principles founders building the future of enterprise technology, on the view that generative AI is creating the next wave of transformational enterprise software the way cloud computing did before it. Invests from inception through Series A.",
+    leadership: [
+      {
+        name: "Mark Fernandes",
+        role: "Managing Director"
+      },
+      {
+        name: "Tim Guleri",
+        role: "Managing Director"
+      },
+      {
+        name: "Ben Yu",
+        role: "Managing Director"
+      }
+    ],
+    timeline: [
+      {
+        year: "1982",
+        event: "Founded by Peter Wendell."
+      },
+      {
+        year: "2023",
+        event: "Fund XIII closed at $265M, taking total firm assets past $2B."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Heavybit",
+    sectors: [
+      "Developer Tools",
+      "Cloud Infrastructure",
+      "Enterprise Software"
+    ],
+    slug: "heavybit",
+    website: null,
+    short: "Heavybit",
+    founded: 2013,
+    hq: "San Francisco, CA",
+    aum: "Not publicly disclosed",
+    thesis: "Backs highly technical founders redefining how teams build, deploy, secure and scale enterprise software, investing from day zero and pairing capital with hands-on operational support through a network of several hundred advisors.",
+    leadership: [
+      {
+        name: "Tom Drummond",
+        role: "Co-Founder & Managing Director"
+      },
+      {
+        name: "James Lindenbaum",
+        role: "Co-Founder"
+      },
+      {
+        name: "Jesse Robbins",
+        role: "General Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2013",
+        event: "Founded by Tom Drummond and James Lindenbaum."
+      },
+      {
+        year: "2022",
+        event: "$80M fund closed; Jesse Robbins joined as a full-time general partner."
+      },
+      {
+        year: "2025",
+        event: "Fifth flagship pre-seed fund and a second opportunity fund closed at a combined $180M+."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Blume Ventures",
+    sectors: [
+      "Fintech",
+      "SaaS",
+      "Healthcare",
+      "Deep Tech",
+      "Consumer"
+    ],
+    slug: "blume-ventures",
+    website: null,
+    short: "Blume",
+    founded: 2010,
+    hq: "Mumbai, India",
+    aum: "$250M (Fund IV, 2022)",
+    thesis: "A market-thesis-driven firm bridging angel networks and institutional venture capital, addressing uniquely Indian problems while enabling global scale, with roughly two thirds of capital in domestic-heavy sectors and the remainder in India-built, globally scalable B2B businesses.",
+    leadership: [
+      {
+        name: "Karthik Reddy",
+        role: "Co-Founder"
+      },
+      {
+        name: "Sanjay Nath",
+        role: "Co-Founder"
+      },
+      {
+        name: "Ashish Fafadia",
+        role: "Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2010",
+        event: "Founded by Karthik Reddy and Sanjay Nath."
+      },
+      {
+        year: "2011",
+        event: "Fund I closed at $22M."
+      },
+      {
+        year: "2015",
+        event: "Fund II closed at $60M."
+      },
+      {
+        year: "2018",
+        event: "Fund III closed at $102M."
+      },
+      {
+        year: "2022",
+        event: "Fund IV closed at $250M, oversubscribed against a $200M target."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Kalaari Capital",
+    sectors: [
+      "SaaS",
+      "Fintech",
+      "Healthcare",
+      "Consumer",
+      "AI",
+      "Deep Tech"
+    ],
+    slug: "kalaari-capital",
+    website: "https://kalaari.com/",
+    short: "Kalaari",
+    founded: 2006,
+    hq: "Bengaluru, India",
+    aum: "$650M",
+    thesis: "States that pedigree is not important, potential is. Backs visionary entrepreneurs, particularly first-time founders, building solutions that reshape how Indians live, work, consume and transact.",
+    leadership: [
+      {
+        name: "Vani Kola",
+        role: "Founder & Managing Director"
+      }
+    ],
+    timeline: [
+      {
+        year: "2006",
+        event: "Founded as Indo-US Venture Partners by Vani Kola and Vinod Dham."
+      },
+      {
+        year: "2012",
+        event: "Rebranded to Kalaari Capital."
+      },
+      {
+        year: "2020",
+        event: "Fund IV launched, anchored by Reliance Industries."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Shunwei Capital",
+    sectors: [
+      "Consumer",
+      "Deep Tech",
+      "AI",
+      "Mobility",
+      "Fintech"
+    ],
+    slug: "shunwei-capital",
+    website: null,
+    short: "Shunwei",
+    founded: 2011,
+    hq: "Beijing, China",
+    aum: "$3B (2023)",
+    thesis: "Combines Lei Jun's entrepreneurial insight and the Xiaomi ecosystem with deep technology expertise, investing across internet, mobile and hardware companies at the forefront of China's digital economy and expanding into India and Indonesia.",
+    leadership: [
+      {
+        name: "Lei Jun",
+        role: "Founding Partner & Chairman"
+      },
+      {
+        name: "Tuck Lye Koh",
+        role: "Co-Founder"
+      }
+    ],
+    timeline: [
+      {
+        year: "2011",
+        event: "Founded by Lei Jun and Tuck Lye Koh."
+      },
+      {
+        year: "2023",
+        event: "Assets under management reported at $3B."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Maya Capital",
+    sectors: [
+      "Sector-Agnostic",
+      "Fintech",
+      "Healthcare",
+      "Consumer"
+    ],
+    slug: "maya-capital",
+    website: "https://www.maya.capital/",
+    short: "Maya",
+    founded: 2018,
+    hq: "São Paulo, Brazil",
+    aum: "$100M (Fund II, 2022)",
+    thesis: "The first pan-Latin American early-stage fund, built on leading the first venture round of the best teams in the region and bringing more than capital. Female-founded, with an explicit commitment to gender diversity across the portfolio.",
+    leadership: [
+      {
+        name: "Lara Lemann",
+        role: "Co-Founder & Managing Partner"
+      },
+      {
+        name: "Monica Saggioro",
+        role: "Co-Founder & Managing Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2018",
+        event: "Co-founded by Lara Lemann and Monica Saggioro."
+      },
+      {
+        year: "2022",
+        event: "Fund II closed at $100M, tripling the firm's assets."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "NXTP Ventures",
+    sectors: [
+      "SaaS",
+      "Fintech",
+      "Marketplaces",
+      "Logistics"
+    ],
+    slug: "nxtp-ventures",
+    website: null,
+    short: "NXTP",
+    founded: 2011,
+    hq: "Buenos Aires, Argentina",
+    aum: "$98M (Fund III, 2023)",
+    thesis: "Latin America's B2B-focused early-stage fund, built on founder-aligned partnerships: showing up early and supporting go-to-market development, access to a global network of enterprise customers, recruiting and ongoing fundraising guidance.",
+    leadership: [],
+    timeline: [
+      {
+        year: "2011",
+        event: "NXTP founded in Buenos Aires."
+      },
+      {
+        year: "2023",
+        event: "Fund III closed at $98M, twice the size of Fund II, taking total assets past $250M."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "3one4 Capital",
+    sectors: [
+      "SaaS",
+      "Fintech",
+      "Consumer Internet",
+      "Digital Health",
+      "Climate"
+    ],
+    slug: "3one4-capital",
+    website: null,
+    short: "3one4",
+    founded: 2015,
+    hq: "Bengaluru, India",
+    aum: "₹4,400 crore (2026)",
+    thesis: "Invests on the thesis that India is approaching a historic economic convergence driven by a large consumer install base, the India Stack, rising digital penetration and a deep technology talent pool, partnering with mission-oriented early-stage companies.",
+    leadership: [
+      {
+        name: "Pranav Pai",
+        role: "Co-Founder & Managing Partner"
+      },
+      {
+        name: "Siddarth Pai",
+        role: "Co-Founder & Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2015",
+        event: "Founded by Pranav Pai and Siddarth Pai."
+      },
+      {
+        year: "2023",
+        event: "Fund IV closed at $200M, capped despite being oversubscribed to $250M."
+      },
+      {
+        year: "2026",
+        event: "Ten-year mark reported with 29 profitable exits and portfolio enterprise value above $9.4B."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "India Quotient",
+    sectors: [
+      "Enterprise Software",
+      "Fintech",
+      "Consumer",
+      "SaaS"
+    ],
+    slug: "india-quotient",
+    website: null,
+    short: "India Quotient",
+    founded: 2013,
+    hq: "Mumbai, India",
+    aum: "Not publicly disclosed",
+    thesis: "Solve for real India, solve for the rest of the world. Backs teams building uniquely Indian products with network effects and capital-efficient models, favouring demos over decks and investing before a theme becomes sector consensus.",
+    leadership: [
+      {
+        name: "Anand Lunia",
+        role: "Co-Founder"
+      },
+      {
+        name: "Madhukar Sinha",
+        role: "Co-Founder"
+      },
+      {
+        name: "Gagan Goyal",
+        role: "Partner"
+      },
+      {
+        name: "Kanika Agarrwal",
+        role: "Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2013",
+        event: "Founded by Anand Lunia and Madhukar Sinha."
+      },
+      {
+        year: "2025",
+        event: "Kanika Agarrwal joined as partner and Sahil Makkar as vice president."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "WaterBridge Ventures",
+    sectors: [
+      "Commerce",
+      "SaaS",
+      "Fintech",
+      "Healthcare",
+      "Consumer"
+    ],
+    slug: "waterbridge-ventures",
+    website: "https://waterbridge.vc/",
+    short: "WaterBridge",
+    founded: 2017,
+    hq: "Bengaluru, India",
+    aum: "$150M (Fund II)",
+    thesis: "A thesis-driven early-stage firm built for India on India's own form factors rather than as a replica of another market. Calls a theme before it becomes consensus, then finds the founder who can execute against it.",
+    leadership: [
+      {
+        name: "Manish Kheterpal",
+        role: "Co-Founder & Managing Partner"
+      },
+      {
+        name: "Ashish Jain",
+        role: "Co-Founder & Partner"
+      },
+      {
+        name: "Anjali Sosale",
+        role: "Partner"
+      },
+      {
+        name: "Ravi Kaushik",
+        role: "Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2017",
+        event: "Founded by Manish Kheterpal, Ashish Jain and Anjali Sosale."
+      },
+      {
+        year: "2020",
+        event: "Fund I first close."
+      },
+      {
+        year: "2021",
+        event: "Fund II final close at $150M, 50% above its $100M target."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Prime Venture Partners",
+    sectors: [
+      "Fintech",
+      "Edtech",
+      "Healthcare",
+      "Consumer Internet",
+      "SaaS"
+    ],
+    slug: "prime-venture-partners",
+    website: null,
+    short: "Prime",
+    founded: 2011,
+    hq: "Bengaluru, India",
+    aum: "$100M (Fund V, 2025)",
+    thesis: "Positions itself as the first institutional investor for early-stage startups, bringing operating experience alongside capital. Currently focused on vertical-specific, capital-efficient plays reflecting the maturity of India's digital infrastructure.",
+    leadership: [
+      {
+        name: "Sanjay Swamy",
+        role: "Managing Partner"
+      },
+      {
+        name: "Shripati Acharya",
+        role: "Managing Partner"
+      },
+      {
+        name: "Amit Somani",
+        role: "Managing Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2011",
+        event: "Founded as AngelPrime by Sanjay Swamy and Shripati Acharya."
+      },
+      {
+        year: "2015",
+        event: "Amit Somani joined as partner; the firm rebranded to Prime Venture Partners."
+      },
+      {
+        year: "2025",
+        event: "Fund V launched at $100M."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "4DX Ventures",
+    sectors: [
+      "Fintech",
+      "Ecommerce",
+      "Healthcare",
+      "B2B Software",
+      "Logistics"
+    ],
+    slug: "4dx-ventures",
+    website: null,
+    short: "4DX",
+    founded: 2017,
+    hq: "Brooklyn, NY",
+    aum: "$60M (Fund II, 2021)",
+    thesis: "A pan-African firm backing technology founders addressing underserved markets, combining global capital-market access with local operator proximity across Nigeria, South Africa, Egypt and Kenya, and expanding into Francophone Africa.",
+    leadership: [
+      {
+        name: "Walter Baddoo",
+        role: "Co-Founder & Managing Partner"
+      },
+      {
+        name: "Peter Orth",
+        role: "Co-Founder & Managing Partner"
+      },
+      {
+        name: "Daniel Marlo",
+        role: "Managing Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2017",
+        event: "Founded by Walter Baddoo and Peter Orth."
+      },
+      {
+        year: "2021",
+        event: "Fund II final close at $60M, surpassing its target."
+      }
+    ],
+    holdings: []
+  },
 ];
