@@ -120,6 +120,27 @@
 }
 .pb-cta:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
 
+/* ---------- LEGAL LINKS IN NAV ----------
+   Terms and Privacy sit after a hairline divider: present and
+   clickable in the header, but visually subordinate to the
+   product nav beside them. They are also in the footer; a
+   213,000-pixel homepage makes footer-only links unreachable
+   in practice, which is why they are duplicated up here. */
+.pb-nav-sep {
+    width: 1px;
+    height: 18px;
+    background: var(--hairline);
+    margin: 0 8px;
+    flex-shrink: 0;
+    align-self: center;
+}
+.pb-nav .nav-link-quiet {
+    font-size: 13px;
+    opacity: 0.72;
+    padding: 8px 10px;
+}
+.pb-nav .nav-link-quiet:hover { opacity: 1; }
+
 /* ---------- HERO ---------- */
 .pb-hero {
     max-width: 900px;
@@ -277,7 +298,7 @@
    hidden. There is no hamburger menu on this site, so a
    display:none here would make every route — and the whole
    account feature — unreachable on a phone. */
-@media (max-width: 960px) {
+@media (max-width: 1180px) {
     .pb-header {
         flex-wrap: wrap;
         gap: 12px 16px;
