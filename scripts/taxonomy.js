@@ -27,13 +27,13 @@ const SECTOR_MAP = {
     label: 'AI',
     slug: 'ai',
     description: 'artificial intelligence and machine learning',
-    rawTags: ['AI', 'AI Infrastructure', 'AI Security', 'AI Services', 'Applied AI', 'AI & Data Infrastructure', 'AI/ML', 'AI-First Vertical Software', 'Data & AI', 'Machine Learning'],
+    rawTags: ['AI', 'AI Infrastructure', 'AI Security', 'AI Services', 'Applied AI', 'AI & Data Infrastructure', 'AI/ML', 'AI-First Vertical Software', 'Data & AI', 'Machine Learning', 'Enterprise AI', 'Artificial Intelligence', 'Machine Intelligence', 'Physical AI'],
   },
   'fintech': {
     label: 'Fintech',
     slug: 'fintech',
     description: 'financial technology, banking, and payments',
-    rawTags: ['Fintech', 'Fintech Infrastructure', 'Banking Infrastructure', 'Lending', 'Insurance', 'Wealth', 'Insurtech'],
+    rawTags: ['Fintech', 'Fintech Infrastructure', 'Banking Infrastructure', 'Lending', 'Insurance', 'Wealth', 'Insurtech', 'Financial Technology'],
   },
   'crypto': {
     label: 'Crypto & Web3',
@@ -51,7 +51,7 @@ const SECTOR_MAP = {
     label: 'Climate & Energy',
     slug: 'climate',
     description: 'climate technology, clean energy, and sustainability',
-    rawTags: ['Climate', 'Clean Energy', 'Energy', 'Carbon Removal', 'Climate Resilience', 'Grid Technology', 'Agriculture', 'Food & Agriculture', 'Agritech'],
+    rawTags: ['Climate', 'Clean Energy', 'Energy', 'Carbon Removal', 'Climate Resilience', 'Grid Technology', 'Agriculture', 'Food & Agriculture', 'Agritech', 'Climate Technology', 'Agtech', 'Sustainability', 'Food-Agtech'],
   },
   'cybersecurity': {
     label: 'Cybersecurity',
@@ -63,19 +63,19 @@ const SECTOR_MAP = {
     label: 'Enterprise Software',
     slug: 'enterprise-software',
     description: 'enterprise software, SaaS, and B2B technology',
-    rawTags: ['Enterprise Software', 'Enterprise', 'Enterprise Infrastructure', 'Software', 'Business Software', 'B2B', 'B2B Software', 'Cloud Software', 'SaaS', 'Vertical SaaS', 'Infrastructure Software', 'Ecommerce Infrastructure', 'Future of Work'],
+    rawTags: ['Enterprise Software', 'Enterprise', 'Enterprise Infrastructure', 'Software', 'Business Software', 'B2B', 'B2B Software', 'Cloud Software', 'SaaS', 'Vertical SaaS', 'Infrastructure Software', 'Ecommerce Infrastructure', 'Future of Work', 'B2B Technology'],
   },
   'consumer': {
     label: 'Consumer',
     slug: 'consumer',
     description: 'consumer internet, media, and direct-to-consumer brands',
-    rawTags: ['Consumer', 'Consumer Internet', 'Consumer Tech', 'Media', 'Media Tech', 'Beauty & Personal Care', 'Ecommerce', 'Retail', 'Gaming'],
+    rawTags: ['Consumer', 'Consumer Internet', 'Consumer Tech', 'Media', 'Media Tech', 'Beauty & Personal Care', 'Ecommerce', 'Retail', 'Gaming', 'Consumer Products', 'Proptech'],
   },
   'deep-tech': {
     label: 'Deep Tech',
     slug: 'deep-tech',
     description: 'deep technology, semiconductors, and frontier science',
-    rawTags: ['Deep Tech', 'Hard Tech', 'Frontier Technologies', 'Semiconductors', 'Semiconductors/Deep Tech', 'Robotics', 'Aerospace', 'New Technology'],
+    rawTags: ['Deep Tech', 'Hard Tech', 'Frontier Technologies', 'Semiconductors', 'Semiconductors/Deep Tech', 'Robotics', 'Aerospace', 'New Technology', 'Sensor Technology'],
   },
   'defense-tech': {
     label: 'Defense Tech',
@@ -93,25 +93,25 @@ const SECTOR_MAP = {
     label: 'Developer Tools & Infrastructure',
     slug: 'developer-tools',
     description: 'developer tools, cloud infrastructure, and data platforms',
-    rawTags: ['Developer Tools', 'Developer Tooling', 'Cloud Infrastructure', 'Cloud/Infrastructure', 'Cloud', 'Data Infrastructure', 'Data & Analytics', 'Data', 'Infrastructure', 'Infrastructure & Developer Tools', 'Cloud/SaaS'],
+    rawTags: ['Developer Tools', 'Developer Tooling', 'Cloud Infrastructure', 'Cloud/Infrastructure', 'Cloud', 'Data Infrastructure', 'Data & Analytics', 'Data', 'Infrastructure', 'Infrastructure & Developer Tools', 'Cloud/SaaS', 'Data Science', 'Distributed Systems', 'Cloud Computing', 'Developer-First Infrastructure'],
   },
   'mobility': {
     label: 'Mobility & Logistics',
     slug: 'mobility',
     description: 'mobility, transportation, and supply chain technology',
-    rawTags: ['Mobility', 'Automotive', 'Logistics', 'Supply Chain', 'Travel'],
+    rawTags: ['Mobility', 'Automotive', 'Logistics', 'Supply Chain', 'Travel', 'Transportation'],
   },
   'edtech': {
     label: 'Edtech',
     slug: 'edtech',
     description: 'education technology and workforce development',
-    rawTags: ['Education', 'Edtech', 'Education Technology', 'Workforce Development'],
+    rawTags: ['Education', 'Edtech', 'Education Technology', 'Workforce Development', 'Workforce and Education'],
   },
   'industrial-tech': {
     label: 'Industrial & Manufacturing Technology',
     slug: 'industrial-tech',
     description: 'industrial technology, manufacturing, and IoT',
-    rawTags: ['Manufacturing', 'Industrial Technology', 'IoT', 'Hardware', '5G', 'Industrial Tech'],
+    rawTags: ['Manufacturing', 'Industrial Technology', 'IoT', 'Hardware', '5G', 'Industrial Tech', 'Construction Tech', 'Smart Cities', 'Critical Infrastructure', 'Industrial Manufacturing', 'Automation'],
   },
 };
 
