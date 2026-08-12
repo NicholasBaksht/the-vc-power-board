@@ -73,6 +73,19 @@ const featuredFirm = {
 // ============================================================
 
 const firmStages = {
+  "passion-capital": ["Pre-Seed", "Series A"],
+  "alven": ["Seed", "Series A"],
+  "ventech": ["Pre-Seed", "Seed", "Series A"],
+  "bayern-kapital": ["Pre-Seed", "Seed", "Series A", "Series B", "Growth", "Late Stage"],
+  "amadeus-capital-partners": ["Seed", "Series A", "Series B", "Growth", "Late Stage"],
+  "amadeus-apex-technology-fund": ["Seed", "Series A"],
+  "hoxton-ventures": ["Pre-Seed", "Seed", "Series A"],
+  "kindred-capital": ["Pre-Seed", "Seed"],
+  "plural": ["Pre-Seed", "Seed", "Series A"],
+  "air-street-capital": ["Pre-Seed", "Seed"],
+  "fly-ventures": ["Pre-Seed", "Seed"],
+  "backed-vc": ["Pre-Seed", "Seed"],
+  "firstminute-capital": ["Pre-Seed", "Seed"],
   "insight-partners": ["Series A", "Series B", "Growth", "Late Stage"],
   "tiger-global": ["Series B", "Growth", "Late Stage"],
   "kima-ventures": ["Pre-Seed", "Seed", "Series A"],
