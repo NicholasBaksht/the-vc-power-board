@@ -145,7 +145,7 @@
 .pb-hero {
     max-width: 900px;
     margin: 0 auto;
-    padding: 72px 24px 0;
+    padding: 104px 24px 0;
     text-align: center;
 }
 
@@ -160,7 +160,7 @@
     border: 1px solid var(--hairline);
     border-radius: 999px;
     padding: 7px 16px;
-    margin-bottom: 28px;
+    margin-bottom: 34px;
 }
 .pb-badge-dot {
     width: 7px;
@@ -174,7 +174,7 @@
 .pb-hero-title {
     font-family: var(--sans);
     font-weight: 700;
-    font-size: clamp(38px, 6.4vw, 72px);
+    font-size: clamp(40px, 7vw, 84px);
     line-height: 1.04;
     letter-spacing: -0.035em;
     color: var(--ink);
