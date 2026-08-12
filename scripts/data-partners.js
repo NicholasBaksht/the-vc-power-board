@@ -10095,4 +10095,655 @@ sources: [
       }
     ]
   },
+  "robert-dighero": {
+    name: "Robert Dighero",
+    firm: "Passion Capital",
+    firmSlug: "passion-capital",
+    title: "Co-Founder & Founding Partner",
+    joinedYear: 2009,
+    education: [
+      "MA/MEng Engineering, University of Cambridge (1985–1989)",
+      "MBA, INSEAD"
+    ],
+    previousExperience: [
+      "Chief Financial Officer, Tradus plc (formerly QXL Ricardo) (1998–2008) — took the company from start-up through IPO to a £1bn sale to Naspers, overseeing nine acquisitions",
+      "Chief Financial Officer, AOL UK — built the finance function from scratch as the business became UK market leader",
+      "Partner, White Bear Yard (from 2009)",
+      "Non-Executive Director, Adconion Media Group"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "CultureAI",
+      "Xihelm",
+      "HomeTouch",
+      "Cazana"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1998",
+        event: "Became CFO of QXL Ricardo, overseeing its dual-listing IPO and nine acquisitions."
+      },
+      {
+        year: "2008",
+        event: "Negotiated the £1bn sale of QXL/Tradus by public takeover offer."
+      },
+      {
+        year: "2009",
+        event: "Co-founded Passion Capital."
+      }
+    ],
+    biography: "Robert Dighero is co-founder and a founding partner of Passion Capital. He holds an MA/MEng in engineering from Cambridge and an MBA from INSEAD. Before Passion Capital he spent over three decades in technology finance, including a decade as CFO of QXL Ricardo — later Tradus plc — taking it from start-up through IPO to a £1bn sale to Naspers, and as CFO of AOL UK, where he built the finance function from scratch.",
+    sources: [
+      {
+        label: "Passion Capital — About",
+        url: "https://passioncapital.com/about/"
+      },
+      {
+        label: "Crunchbase — Robert Dighero",
+        url: "https://www.crunchbase.com/person/robert-dighero"
+      }
+    ]
+  },
+  "mike-speiser": {
+    name: "Mike Speiser",
+    firm: "Sutter Hill Ventures",
+    firmSlug: "sutter-hill-ventures",
+    title: "Managing Director",
+    joinedYear: 2008,
+    education: [],
+    previousExperience: [
+      "Vice President and technical advisor to the CEO, Symantec",
+      "Vice President of Marketing, F5 Networks",
+      "Product management and marketing, Hewlett-Packard"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2008",
+        event: "Joined Sutter Hill Ventures as a managing director."
+      },
+      {
+        year: "2009",
+        event: "Helped originate Pure Storage and served as its founding chief executive."
+      },
+      {
+        year: "2012",
+        event: "Served as Snowflake's founding chief executive and led its $5M Series A."
+      }
+    ],
+    biography: "Mike Speiser is a managing director at Sutter Hill Ventures, where since 2008 he has driven the firm's incubation-style investing — personally serving as founding chief executive of both Pure Storage and Snowflake before handing each to permanent leadership. He previously held product, marketing and executive roles at Hewlett-Packard, F5 Networks and Symantec.",
+    sources: [
+      {
+        label: "CNBC — How Mike Speiser and Sutter Hill are changing the rules for VC",
+        url: "https://www.cnbc.com/2021/01/24/how-mike-speiser-and-sutter-hill-are-changing-the-rules-for-vc.html"
+      }
+    ]
+  },
+  "tim-guleri": {
+    name: "Tim Guleri",
+    firm: "Sierra Ventures",
+    firmSlug: "sierra-ventures",
+    title: "Managing Director",
+    joinedYear: 2001,
+    education: [
+      "BS Electrical Engineering, Punjab Engineering College, Chandigarh",
+      "MS Robotics and Industrial Engineering, Virginia Tech (1988)"
+    ],
+    previousExperience: [
+      "Executive Vice President, Epiphany, Inc. (2000–2001) — after leading the merger of Octane into Epiphany",
+      "Founder & Chief Executive, Octane Software (1996–2000)",
+      "VP of Field Operations, Scopus Technology (1992–1996) — IPO 1995, later acquired by Siebel Systems for $750M",
+      "Information technology, LSI Logic Corporation (from 1989)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: 2,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1995",
+        event: "Scopus Technology IPO."
+      },
+      {
+        year: "1996",
+        event: "Founded Octane Software."
+      },
+      {
+        year: "2000",
+        event: "Octane Software merged into Epiphany in a $3.2B deal."
+      },
+      {
+        year: "2001",
+        event: "Joined Sierra Ventures as a managing director."
+      },
+      {
+        year: "2007",
+        event: "Led Sourcefire's IPO on Nasdaq."
+      }
+    ],
+    biography: "Tim Guleri is a managing director of Sierra Ventures, which he joined in 2001 after a career as a serial enterprise-software entrepreneur. He holds a BS in electrical engineering from Punjab Engineering College and an MS in robotics and industrial engineering from Virginia Tech. He built and sold Scopus Technology, which listed in 1995, and founded Octane Software, which merged into Epiphany. At Sierra he has taken two companies public: Sourcefire and MakeMyTrip.",
+    sources: [
+      {
+        label: "Wikipedia — Tim Guleri",
+        url: "https://en.wikipedia.org/wiki/Tim_Guleri"
+      },
+      {
+        label: "Sierra Ventures — Tim Guleri",
+        url: "https://www.sierraventures.com/tim-guleri"
+      }
+    ]
+  },
+  "tom-drummond": {
+    name: "Tom Drummond",
+    firm: "Heavybit",
+    firmSlug: "heavybit",
+    title: "Founding Managing Director",
+    joinedYear: 2013,
+    education: [
+      "MEng and MA Electrical & Information Sciences, Clare College, University of Cambridge (1999–2003)"
+    ],
+    previousExperience: [
+      "West Coast lead, Reed Elsevier Ventures — a $250M corporate venture fund; worked on 35+ transactions totalling over $150M invested, including Palantir, Recorded Future, Babbel and Healthline",
+      "Software engineer at a London technology start-up",
+      "Electronic engineer, British National Grid"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2013",
+        event: "Co-founded Heavybit with James Lindenbaum."
+      }
+    ],
+    biography: "Tom Drummond is founding managing director of Heavybit. He holds an MEng and MA in electrical and information sciences from Clare College, Cambridge, and began his career as an electronic engineer at the British National Grid before moving into venture capital at Reed Elsevier Ventures, where he ran the West Coast office. He co-founded Heavybit in 2013 and has led it since, growing capital raised past $150M from backers including Accel, Redpoint and Bessemer.",
+    sources: [
+      {
+        label: "Heavybit — Tom Drummond",
+        url: "https://www.heavybit.com/team/tom-drummond"
+      }
+    ]
+  },
+  "karthik-reddy": {
+    name: "Karthik B. Reddy",
+    firm: "Blume Ventures",
+    firmSlug: "blume-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2010,
+    education: [
+      "Undergraduate engineering, IIT Roorkee",
+      "Management, IIM Bangalore",
+      "The Wharton School, University of Pennsylvania"
+    ],
+    previousExperience: [
+      "Vice President, Brand Capital, Bennett Coleman & Co. (Times Group) (from 2007) — investing on the group's behalf via Mumbai Angels and India Angels Network",
+      "Member, Mumbai Angels — where he met co-founder Sanjay Nath",
+      "Financial markets, Instinet",
+      "Financial markets, American Express Bank"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2006",
+        event: "Returned to India from the United States."
+      },
+      {
+        year: "2010",
+        event: "Co-founded Blume Ventures with Sanjay Nath."
+      },
+      {
+        year: "2020",
+        event: "Served as Vice Chair of the Indian Venture and Alternative Capital Association through 2022."
+      },
+      {
+        year: "2022",
+        event: "Served as Chairperson of the IVCA Executive Committee through 2024."
+      }
+    ],
+    biography: "Karthik B. Reddy is co-founder and managing partner of Blume Ventures, which he started with Sanjay Nath in 2010. An alumnus of IIT Roorkee, IIM Bangalore and Wharton, he began his career at American Express Bank and Instinet before joining the Times Group's Brand Capital arm, where he first invested in Indian startups through angel networks. He has since held senior leadership roles at IVCA, India's venture and alternative capital industry association.",
+    sources: [
+      {
+        label: "Blume Ventures — Karthik Reddy",
+        url: "https://blume.vc/team/karthik-reddy"
+      },
+      {
+        label: "Forbes India — Bridging the investment divide",
+        url: "https://www.forbesindia.com/article/8th-anniversary-special/blume-ventures-karthik-reddy-is-bridging-the-investment-divide-in-the-country/46989/1"
+      }
+    ]
+  },
+  "vani-kola": {
+    name: "Vani Kola",
+    firm: "Kalaari Capital",
+    firmSlug: "kalaari-capital",
+    title: "Founder & Managing Director",
+    joinedYear: 2006,
+    education: [
+      "B.Eng Electrical Engineering, Osmania University, Hyderabad",
+      "M.Eng, Arizona State University (1987)"
+    ],
+    previousExperience: [
+      "Founder & Chief Executive, Certus Software (2001–2005) — financial compliance software",
+      "Founder & Chief Executive, RightWorks (1996) — e-procurement software, acquired by Internet Capital Group for $657M in 2000"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1996",
+        event: "Founded RightWorks in Silicon Valley."
+      },
+      {
+        year: "2000",
+        event: "RightWorks acquired by Internet Capital Group for $657M."
+      },
+      {
+        year: "2006",
+        event: "Returned to India after 22 years and co-founded Indo-US Venture Partners with Vinod Dham."
+      },
+      {
+        year: "2012",
+        event: "The firm rebranded to Kalaari Capital and began operating as a $150M fund."
+      },
+      {
+        year: "2014",
+        event: "Named one of the most powerful women in Indian business by Fortune India."
+      }
+    ],
+    biography: "Vani Kola is founder and managing director of Kalaari Capital. She earned a bachelor's in electrical engineering from Osmania University before moving to the United States in 1985 for a master's at Arizona State. She spent 22 years as a Silicon Valley entrepreneur, founding and selling RightWorks and later founding Certus Software, then returned to India in 2006 to co-found what became Kalaari Capital.",
+    sources: [
+      {
+        label: "Wikipedia — Vani Kola",
+        url: "https://en.wikipedia.org/wiki/Vani_Kola"
+      }
+    ]
+  },
+  "lei-jun": {
+    name: "Lei Jun",
+    firm: "Shunwei Capital",
+    firmSlug: "shunwei-capital",
+    title: "Founding Partner & Chairman",
+    joinedYear: 2011,
+    education: [],
+    previousExperience: [
+      "Founder and Chief Executive, Xiaomi (founded 2010)",
+      "Kingsoft — joined 1992, chief executive from 1998; returned as Chairman in July 2011"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2010",
+        event: "Founded Xiaomi."
+      },
+      {
+        year: "2011",
+        event: "Co-founded Shunwei Capital with Tuck Lye Koh and returned to Kingsoft as chairman."
+      },
+      {
+        year: "2012",
+        event: "Elected a deputy to the Beijing Municipal People's Congress."
+      },
+      {
+        year: "2013",
+        event: "Elected a delegate to the 12th National People's Congress."
+      }
+    ],
+    biography: "Lei Jun is founding partner and chairman of Shunwei Capital, which he co-founded with Tuck Lye Koh in 2011 to invest across China's internet, mobile and e-commerce sectors. He is best known as founder and chief executive of Xiaomi, and previously led Kingsoft as chief executive before returning as its chairman in 2011.",
+    sources: [
+      {
+        label: "Wikipedia — Shunwei Capital",
+        url: "https://en.wikipedia.org/wiki/Shunwei_Capital"
+      },
+      {
+        label: "Wikipedia — Lei Jun",
+        url: "https://en.wikipedia.org/wiki/Lei_Jun"
+      }
+    ]
+  },
+  "lara-lemann": {
+    name: "Lara Lemann",
+    firm: "Maya Capital",
+    firmSlug: "maya-capital",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2018,
+    education: [
+      "BA Human Rights & Political Science, Columbia University"
+    ],
+    previousExperience: [
+      "Independent angel investor across multiple sectors",
+      "Corporate social responsibility and Global Management Trainee, Ambev",
+      "Brazilian Ministry of Education — early career in public policy"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Fundação Estudar"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2018",
+        event: "Co-founded Maya Capital with Monica Saggioro."
+      }
+    ],
+    biography: "Lara Lemann is co-founder and managing partner of Maya Capital, the first pan-Latin American early-stage fund, which she started with Monica Saggioro in 2018. Brazilian and Swiss, she holds a degree in human rights and political science from Columbia University. She began her career in Brazil's public sector at the Ministry of Education, moved to Ambev, and then into angel investing. She is a Kauffman Fellow.",
+    sources: [
+      {
+        label: "Maya Capital — About us",
+        url: "https://www.maya.capital/about-us"
+      },
+      {
+        label: "Kauffman Fellows — Lara Lemann",
+        url: "https://www.kauffmanfellows.org/fellows/lara-lemann"
+      }
+    ]
+  },
+  "ariel-arrieta": {
+    name: "Ariel Arrieta",
+    firm: "NXTP Ventures",
+    firmSlug: "nxtp-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2011,
+    education: [
+      "Kauffman Fellow, Class 18",
+      "OPM Class 41, Harvard Business School (2011)",
+      "Executive Education, Singularity University"
+    ],
+    previousExperience: [
+      "Founder and Co-Director, Nextperience (founded 2009)",
+      "Managing Director & VP Technology, Fox International Channels (2007–2009), later Senior Advisor — expanded the acquired ad network from 3 to 21 offices across four continents",
+      "Co-Founder & Director, Digital Ventures / InZearch (2003–2007) — a leading Latin American ad network acquired by Fox International Channels in 2007",
+      "Co-Founder & Chief Executive, I-SOLUTION (1998–2001)",
+      "Sales Manager, VIA Networks (1997–1998)",
+      "Business Development Manager, Inea Internet (1994–1997)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Arquivei",
+      "RetailApp",
+      "Junior Achievement Argentina"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2003",
+        event: "Co-founded Digital Ventures and InZearch."
+      },
+      {
+        year: "2007",
+        event: "Digital Ventures and InZearch acquired by Fox International Channels."
+      },
+      {
+        year: "2011",
+        event: "Co-founded NXTP, originally NXTP Labs."
+      },
+      {
+        year: "2013",
+        event: "Published Aprender a Emprender."
+      },
+      {
+        year: "2018",
+        event: "Published El Sentido Común Emprendedor."
+      }
+    ],
+    biography: "Ariel Arrieta is co-founder and managing partner of NXTP Ventures, which he co-founded in 2011. A Kauffman Fellow and Harvard Business School OPM graduate, he began his career in Argentina's early internet industry in 1994, later co-founding Digital Ventures and InZearch — an ad network acquired by Fox International Channels in 2007, where he then helped scale the business from three to twenty-one offices across four continents. He is the author of two books on entrepreneurship.",
+    sources: [
+      {
+        label: "NXTP Ventures — Team",
+        url: "https://www.nxtp.vc/team"
+      },
+      {
+        label: "Crunchbase — Ariel Arrieta",
+        url: "https://www.crunchbase.com/person/ariel-arrieta"
+      }
+    ]
+  },
+  "pranav-pai": {
+    name: "Pranav Pai",
+    firm: "3one4 Capital",
+    firmSlug: "3one4-capital",
+    title: "Founding Partner & Chief Investment Officer",
+    joinedYear: 2015,
+    education: [
+      "Bachelor's Electronics and Communications Engineering, RV College, Bangalore",
+      "Master's Electrical Engineering, Stanford University"
+    ],
+    previousExperience: [
+      "Senior Product Manager, EdCast"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2015",
+        event: "Co-founded 3one4 Capital with his brother Siddarth Pai."
+      },
+      {
+        year: "2017",
+        event: "Named in Entrepreneur Magazine's 35 under 35."
+      }
+    ],
+    biography: "Pranav Pai is founding partner and chief investment officer of 3one4 Capital, which he co-founded with his brother Siddarth Pai in 2015. He holds a master's in electrical engineering from Stanford, following an undergraduate degree from RV College, Bangalore, and previously worked as a senior product manager at the ed-tech company EdCast. He is a former co-president of Stanford Angels & Entrepreneurs India.",
+    sources: [
+      {
+        label: "3one4 Capital — Pranav Pai",
+        url: "https://www.3one4capital.com/team/pranav-pai"
+      },
+      {
+        label: "Crunchbase — Pranav Pai",
+        url: "https://www.crunchbase.com/person/pranav-pai"
+      }
+    ]
+  },
+  "anand-lunia": {
+    name: "Anand Lunia",
+    firm: "India Quotient",
+    firmSlug: "india-quotient",
+    title: "Founding Partner",
+    joinedYear: 2012,
+    education: [
+      "B.Eng Electrical and Electronics Engineering, L.D. College of Engineering",
+      "MBA, Indian Institute of Management Lucknow"
+    ],
+    previousExperience: [
+      "Partner, Seedfund — exits included CarWale and Redbus",
+      "Co-Founder, Brainvisa Technologies (2000) — ed-tech, sold in 2005",
+      "Finance, Asian Paints",
+      "Banker, ICICI"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2000",
+        event: "Co-founded Brainvisa Technologies."
+      },
+      {
+        year: "2005",
+        event: "Sold Brainvisa Technologies."
+      },
+      {
+        year: "2012",
+        event: "Co-founded India Quotient with Madhukar Sinha."
+      },
+      {
+        year: "2025",
+        event: "Led India Quotient's shift to a majority-global LP base for Fund V."
+      }
+    ],
+    biography: "Anand Lunia is a founding partner of India Quotient. An MBA from IIM Lucknow, he began his career in banking at ICICI and finance at Asian Paints before co-founding the ed-tech venture Brainvisa Technologies in 2000, which he sold in 2005. He was then a partner at Seedfund, known for exits including CarWale and Redbus, before co-founding India Quotient with Madhukar Sinha.",
+    sources: [
+      {
+        label: "India Quotient — Anand Lunia",
+        url: "https://www.indiaquotient.in/team/anand-lunia"
+      },
+      {
+        label: "100x.vc — Anand Lunia",
+        url: "https://www.100x.vc/vc-partners/anand-lunia"
+      }
+    ]
+  },
+  "manish-kheterpal": {
+    name: "Manish Kheterpal",
+    firm: "WaterBridge Ventures",
+    firmSlug: "waterbridge-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2016,
+    education: [
+      "Bachelor's in Engineering, IIT Delhi (1996)",
+      "MBA, Stanford Graduate School of Business (2004)"
+    ],
+    previousExperience: [
+      "Director, Providence Equity Partners — investments included Idea Cellular and Hathway Cable",
+      "Principal, Actis Capital — investments included Phoenix Lamps and the Dalmia Group",
+      "Associate, Rho Ventures"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Spectra",
+      "Fortune Institute of International Business",
+      "Stanford India Alumni board",
+      "LetsMD"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1996",
+        event: "Graduated from IIT Delhi."
+      },
+      {
+        year: "2004",
+        event: "Completed an MBA at Stanford Graduate School of Business."
+      },
+      {
+        year: "2016",
+        event: "Co-founded WaterBridge Ventures."
+      }
+    ],
+    biography: "Manish Kheterpal is co-founder and managing partner of WaterBridge Ventures. He holds an engineering degree from IIT Delhi and an MBA from Stanford, and spent eleven years in senior investment roles at Rho Ventures, Actis Capital and Providence Equity Partners before co-founding WaterBridge. He has managed over $500M in investments across his career, primarily in India and along the US–India corridor.",
+    sources: [
+      {
+        label: "WaterBridge Ventures — Manish Kheterpal",
+        url: "https://waterbridge.vc/team/manish-kheterpal/"
+      },
+      {
+        label: "Entrepreneur India — Manish Kheterpal",
+        url: "https://www.entrepreneurindia.com/2019/manish-khetarpal.php"
+      }
+    ]
+  },
+  "sanjay-swamy": {
+    name: "Sanjay Swamy",
+    firm: "Prime Venture Partners",
+    firmSlug: "prime-venture-partners",
+    title: "Managing Partner",
+    joinedYear: 2011,
+    education: [
+      "Bachelor's Electrical and Electronics Engineering, Bangalore University",
+      "Master's Avionics and Control Systems Engineering, SUPAERO, Toulouse",
+      "Master's Aeronautics and Flight Control Systems, University of Washington (1992)"
+    ],
+    previousExperience: [
+      "Co-Founder, Ezetap (2010)",
+      "Co-Founder, ZipDial — acquired by Twitter in January 2015",
+      "Core team member, UIDAI — India's Aadhaar national identity programme, under Nandan Nilekani",
+      "mChek — secure mobile payments",
+      "Portal Software",
+      "Xerox PARC, Palo Alto",
+      "Sales, support, engineering and marketing, Integrated Systems (from 1992)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Ezetap"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1992",
+        event: "Began his career in Silicon Valley at Integrated Systems."
+      },
+      {
+        year: "2003",
+        event: "Returned to India."
+      },
+      {
+        year: "2010",
+        event: "Co-founded Ezetap."
+      },
+      {
+        year: "2011",
+        event: "Co-founded AngelPrime, later renamed Prime Venture Partners."
+      },
+      {
+        year: "2015",
+        event: "ZipDial acquired by Twitter."
+      }
+    ],
+    biography: "Sanjay Swamy is a founding managing partner of Prime Venture Partners, launched as AngelPrime in 2011. An Indian technologist and mobile-payments specialist, he holds degrees from Bangalore University, SUPAERO in Toulouse and the University of Washington. After beginning his career in Silicon Valley in 1992 he returned to India in 2003, working at mChek and on the Aadhaar national identity programme, before co-founding ZipDial and Ezetap alongside launching Prime.",
+    sources: [
+      {
+        label: "Wikipedia — Sanjay Swamy",
+        url: "https://en.wikipedia.org/wiki/Sanjay_Swamy"
+      },
+      {
+        label: "YourStory — 100x Entrepreneur podcast",
+        url: "https://yourstory.com/2019/11/100x-entrepreneur-podcast-sanjay-swamy-prime-ventures"
+      }
+    ]
+  },
+  "walter-baddoo": {
+    name: "Walter Baddoo",
+    firm: "4DX Ventures",
+    firmSlug: "4dx-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2017,
+    education: [
+      "BA International Relations, concentration in Economic Development, Tufts University",
+      "Art history, The Sorbonne, Paris"
+    ],
+    previousExperience: [
+      "Vice President, Institutional Equity Group Prime Brokerage, Morgan Stanley, New York and San Francisco (~10 years) — advised hedge funds on capital formation and helped build the firm's Canadian prime brokerage business"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "mPharma",
+      "Tizeti"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2017",
+        event: "Co-founded 4DX Ventures with Peter Orth."
+      }
+    ],
+    biography: "Walter Baddoo is co-founder and managing partner of 4DX Ventures. Born and raised in Accra, Ghana, he holds a BA in international relations from Tufts and studied art history at the Sorbonne. Before founding 4DX he spent roughly a decade in Morgan Stanley's Institutional Equity Group prime brokerage division across New York and San Francisco. He serves on the boards of mPharma and Tizeti.",
+    sources: [
+      {
+        label: "4DX Ventures — Walter Baddoo",
+        url: "https://www.4dxventures.com/team/walter-baddoo"
+      }
+    ]
+  },
 };
