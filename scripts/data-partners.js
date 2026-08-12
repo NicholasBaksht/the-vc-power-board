@@ -1231,32 +1231,6 @@ const partnerProfiles = {
       { label: "Tracxn — Samsung Venture Investment", url: "https://tracxn.com/d/venture-capital/samsung-venture-investment" }
     ]
   },
-  "al-gore-david-blood": {
-    name: "Al Gore & David Blood",
-    firm: "Generation Investment Management",
-    firmSlug: "generation-investment-management",
-    title: "Chairman & Senior Partner",
-    joinedYear: 2004,
-    education: [],
-    previousExperience: [
-      "45th Vice President of the United States (Al Gore)",
-      "CEO, Goldman Sachs Asset Management (David Blood)"
-    ],
-    investmentFocus: ["Sustainability", "Climate", "Public & Private Equity"],
-    notableInvestments: [],
-    boardSeats: [],
-    ipoCount: 0,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2001", event: "Al Gore, following his time as US Vice President, begins developing the thesis that would become Generation Investment Management." },
-      { year: "2004", event: "Al Gore and David Blood co-found Generation Investment Management in London in April, alongside five other founding partners." },
-      { year: "2021", event: "Launches Just Climate, a dedicated climate-focused investment business, as an offshoot of Generation." }
-    ],
-    biography: "Al Gore, the 45th Vice President of the United States, and David Blood, former CEO of Goldman Sachs Asset Management, co-founded Generation Investment Management in April 2004 alongside five other founding partners, built around a specific, at-the-time contrarian thesis: that integrating sustainability research into fundamental equity analysis would drive superior long-term returns, not sacrifice them. That conviction predated the current ESG investing boom by nearly two decades, and Generation has since built a global research platform spanning public and private equity strategies, investing worldwide with the explicit goal of making sustainable capitalism the enduring economic model rather than a niche. In 2021 the firm launched Just Climate, a dedicated climate investment business, extending its original thesis into a new standalone platform focused specifically on decarbonization at scale.",
-    sources: [
-      { label: "Wikipedia — Generation Investment Management", url: "https://en.wikipedia.org/wiki/Generation_Investment_Management" }
-    ]
-  },
   "mary-meeker": {
     name: "Mary Meeker",
     firm: "Bond Capital",
@@ -1847,36 +1821,6 @@ const partnerProfiles = {
       { label: "Crunchbase News", url: "https://news.crunchbase.com/venture/threshold-formerly-known-as-dfj-targets-250m-for-latest-venture-fund/" }
     ]
   },
-  "max-fowinkel": {
-    name: "Max Fowinkel",
-    firm: "Warburg Pincus",
-    firmSlug: "warburg-pincus",
-    title: "Managing Director, Head of European Technology & Telecommunications",
-    joinedYear: 2007,
-    education: ["Diploma, Mechanical Engineering & Business Administration, Technische Universität Berlin", "MBA, Harvard Business School"],
-    previousExperience: [
-      "Consultant, McKinsey & Company (financial services, automotive & technology clients across Europe)"
-    ],
-    investmentFocus: ["Enterprise Software", "Telecommunications", "Fintech"],
-    notableInvestments: [
-      { name: "Blue Yonder", ticker: null },
-      { name: "Ionos", ticker: null }
-    ],
-    boardSeats: ["Ionos", "Community Fibre", "Infoniqa"],
-    ipoCount: 0,
-    majorExits: 3,
-    careerTimeline: [
-      { year: "2000s", event: "Works as a consultant at McKinsey & Company, advising European financial services, automotive, and technology clients." },
-      { year: "2007", event: "Joins Warburg Pincus as Managing Director, based initially in London." },
-      { year: "2019", event: "Relocates to Berlin, continuing to lead the firm's European Technology and Telecommunications group." },
-      { year: "2021", event: "Blue Yonder, a supply-chain AI company he helped scale, is acquired by Panasonic for approximately $8.5 billion." }
-    ],
-    biography: "Max Fowinkel combines a genuinely technical foundation — a dual degree in mechanical engineering and business administration from TU Berlin — with a Harvard MBA and consulting experience at McKinsey, before joining Warburg Pincus in 2007 to lead its European Technology and Telecommunications group. He has led investments spanning enterprise software, telecommunications, and fintech across Europe, including PSI Software, Ionos, Network International, and Community Fibre, and helped scale Blue Yonder, a supply-chain AI company, through to its roughly $8.5 billion acquisition by Panasonic in 2021. Fowinkel remains an active voice on European technology investment, speaking at conferences including Handelsblatt's Tech summit on the intersection of industry, investment, and policy.",
-    sources: [
-      { label: "Warburg Pincus — Max Fowinkel", url: "https://warburgpincus.com/team/max-fowinkel/" },
-      { label: "Mergr", url: "https://mergr.com/investor/warburg-pincus/team/max-fowinkel" }
-    ]
-  },
   "elizabeth-yin": {
     name: "Elizabeth Yin",
     firm: "Hustle Fund",
@@ -2135,36 +2079,6 @@ const partnerProfiles = {
     sources: [
       { label: "Wikipedia — Source Code Capital", url: "https://en.wikipedia.org/wiki/Source_Code_Capital" },
       { label: "Source Code Capital — About", url: "https://sourcecodecap.com/about-en/" }
-    ]
-  },
-  "yh-do": {
-    name: "Y.H. Do",
-    firm: "STIC Investments",
-    firmSlug: "stic-investments",
-    title: "Founder & Chairman",
-    joinedYear: 1999,
-    education: ["MBA, KAIST"],
-    previousExperience: [
-      "Telecom Executive, SK Telecom"
-    ],
-    investmentFocus: ["ICT", "Healthcare", "Materials"],
-    notableInvestments: [
-      { name: "Jeil Hydraulics", ticker: null },
-      { name: "Golfzon", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 0,
-    majorExits: 3,
-    careerTimeline: [
-      { year: "1990s", event: "Builds a career as a telecom executive at SK Telecom before moving into private investing." },
-      { year: "1999", event: "Founds STIC (originally SoftBank Telecom Investment Company) in Seoul in July." },
-      { year: "2012", event: "Sells Jeil Hydraulics, in which STIC held a 21% stake, to Eaton Corporation for approximately $29 million." },
-      { year: "2014", event: "Rebrands from STIC Partners to STIC Investments, moving to an open-funds model." },
-      { year: "2024", event: "STIC surpasses KRW 7.9 trillion (approximately $6.7 billion) in assets under management." }
-    ],
-    biography: "Y.H. Do built his early career as a telecom executive at SK Telecom before founding STIC in Seoul in 1999, originally as SoftBank Telecom Investment Company, growing it into one of South Korea's largest private equity and growth investment platforms. Under Do's leadership, STIC has combined late-stage growth equity and structured financing across ICT, healthcare, and materials, backing real outcomes including the sale of Jeil Hydraulics to Eaton Corporation and an exit from Golfzon, while also managing public REIT and CIM funds. The firm rebranded from STIC Partners to STIC Investments in 2014, reflecting a shift toward an open-funds model, and now manages approximately KRW 7.9 trillion (roughly $6.7 billion) across seven offices spanning Seoul, Busan, Hong Kong, Ho Chi Minh City, Shanghai, and Taipei.",
-    sources: [
-      { label: "Wikipedia — STIC Investments", url: "https://en.wikipedia.org/wiki/STIC_Investments" }
     ]
   },
   "eric-bahn": {
