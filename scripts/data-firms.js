@@ -8895,4 +8895,344 @@ holdings: []
     ],
     holdings: []
   },
+  {
+    rank: null,
+    name: "Global Founders Capital",
+    sectors: ["Fintech", "Software", "Health Tech", "Consumer Tech", "Marketplaces"],
+    slug: "global-founders-capital",
+    website: 'https://globalfounderscapital.com/',
+    short: "GFC",
+    founded: 2013,
+    hq: "Berlin, Germany",
+    aum: "€300M (Rocket Internet balance-sheet allocation, 2024)",
+    thesis: "A global early-stage investor operating a borderless model on the view that category-defining founders emerge anywhere. Since restructuring in April 2024 as Rocket Internet's dedicated venture arm it has become more concentrated, favouring early-stage opportunities where it can be deeply operationally involved.",
+    leadership: [
+      {
+        name: "Oliver Samwer",
+        role: "Partner",
+        profileSlug: "oliver-samwer"
+      },
+      {
+        name: "Fabricio Pettena",
+        role: "Partner"
+      },
+      {
+        name: "Don Stalter",
+        role: "Partner"
+      },
+      {
+        name: "Cedric Asselman",
+        role: "Partner"
+      },
+      {
+        name: "David Sainteff",
+        role: "Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2013",
+        event: "Formed by Rocket Internet co-founders Oliver and Marc Samwer; two $1bn funds were subsequently raised and fully deployed."
+      },
+      {
+        year: "2024",
+        event: "Restructured in April as Rocket Internet's exclusive venture arm, investing only from its balance sheet, with a five-partner team."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Alumni Ventures",
+    sectors: ["AI", "Fintech", "Healthcare", "Climate Technology", "Construction Tech", "Consumer Products", "Cybersecurity", "Edtech", "SaaS", "Web3"],
+    slug: "alumni-ventures",
+    website: "https://www.av.vc/",
+    short: "Alumni Ventures",
+    founded: 2014,
+    hq: "Manchester, NH",
+    aum: "$1.5B (2025)",
+    thesis: "A network-powered venture platform offering diversified venture portfolios to accredited individuals and institutions. Strictly a co-investor — it does not lead rounds, set terms or take board seats — instead investing alongside established leads, drawing on a community of over 850,000 members and eighteen university-linked funds.",
+    leadership: [
+      {
+        name: "Mike Collins",
+        role: "Founder & CEO",
+        profileSlug: "mike-collins"
+      }
+    ],
+    timeline: [
+      {
+        year: "2014",
+        event: "Founded by Mike Collins and Luke Antal; Collins raised $1.5M from Dartmouth alumni for the first fund, Green D Ventures."
+      },
+      {
+        year: "2022",
+        event: "Ranked the most active venture firm in the US by PitchBook, repeated in 2023."
+      },
+      {
+        year: "2024",
+        event: "Named a Top 20 Venture Firm by CB Insights."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Plug and Play Ventures",
+    sectors: ["Fintech", "Insurtech", "Health", "Mobility", "Smart Cities", "Enterprise AI", "Agtech", "Sustainability", "IoT"],
+    slug: "plug-and-play-ventures",
+    website: 'https://www.plugandplaytechcenter.com/',
+    short: "Plug and Play",
+    founded: 2006,
+    hq: "Sunnyvale, CA",
+    aum: "$500M (2023)",
+    thesis: "An open-innovation platform connecting startups with more than 550 corporate partners that have real business problems to solve, creating a flywheel of pilots, proofs of concept, enterprise customers and follow-on capital. Startups are assessed on product differentiation, founder quality and strategic fit with those partners.",
+    leadership: [
+      {
+        name: "Saeed Amidi",
+        role: "Founder & CEO",
+        profileSlug: "saeed-amidi"
+      }
+    ],
+    timeline: [
+      {
+        year: "1988",
+        event: "The Amidi Group acquired 165 University Avenue in Palo Alto, later renting space to early tenants including Google and PayPal."
+      },
+      {
+        year: "2006",
+        event: "Plug and Play Tech Center founded."
+      },
+      {
+        year: "2020",
+        event: "Ranked the world's most active startup accelerator by CB Insights, repeated through 2022."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Construct Capital",
+    sectors: ["Manufacturing", "Logistics", "Defense", "Energy", "Transportation", "Critical Infrastructure"],
+    slug: "construct-capital",
+    website: "https://www.constructcap.com/",
+    short: "Construct",
+    founded: 2020,
+    hq: "Washington, DC",
+    aum: "$300M (Fund III, 2025)",
+    thesis: "A thesis-driven fund focused on transforming America's foundational industries — manufacturing, logistics, transportation, energy, defence and critical infrastructure — into tech-first industrials that operate more like software companies, with higher R&D spend and asset-light models.",
+    leadership: [
+      {
+        name: "Dayna Grayson",
+        role: "Co-Founder & Managing Partner",
+        profileSlug: "dayna-grayson"
+      },
+      {
+        name: "Rachel Holt",
+        role: "Co-Founder & Managing Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2020",
+        event: "Founded by Dayna Grayson and Rachel Holt."
+      },
+      {
+        year: "2025",
+        event: "Closed an oversubscribed third fund at $300M, taking total assets past $750M."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "FJ Labs",
+    sectors: ["Marketplaces"],
+    slug: "fj-labs",
+    website: 'https://fjlabs.com/',
+    short: "FJ Labs",
+    founded: 2015,
+    hq: "New York, NY",
+    aum: "Not publicly disclosed",
+    thesis: "A stage-agnostic firm investing exclusively in marketplace and network-effect businesses, backing founders who combine vision with demonstrated grit. The thesis comes directly from co-founder Fabrice Grinda's experience scaling OLX into one of the world's largest classifieds marketplaces.",
+    leadership: [
+      {
+        name: "Fabrice Grinda",
+        role: "Co-Founder",
+        profileSlug: "fabrice-grinda"
+      },
+      {
+        name: "Jose Marin",
+        role: "Co-Founder"
+      }
+    ],
+    timeline: [
+      {
+        year: "2004",
+        event: "Fabrice Grinda began angel investing, well before the firm was formalised."
+      },
+      {
+        year: "2015",
+        event: "FJ Labs formally founded by Fabrice Grinda and Jose Marin."
+      },
+      {
+        year: "2026",
+        event: "Passed 900 total investments with more than 30 unicorn exits."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Inspired Capital",
+    sectors: ["Financial Technology", "Healthcare", "Artificial Intelligence", "Workforce and Education", "Industrial Manufacturing", "Climate", "Deep Tech"],
+    slug: "inspired-capital",
+    website: "https://www.inspiredcapital.com/",
+    short: "Inspired",
+    founded: 2019,
+    hq: "New York, NY",
+    aum: "$330M (Inspired III)",
+    thesis: "A generalist, operator-led firm backing entrepreneurs tackling the hardest problems, organised around three themes: digitisation of the industrial economy, financial equilibrium in a volatile society, and ensuring AI unlocks rather than inhibits human potential. Leads pre-seed through Series A with cheques of $500K to $20M.",
+    leadership: [
+      {
+        name: "Alexa von Tobel",
+        role: "Founder & Managing Partner",
+        profileSlug: "alexa-von-tobel"
+      },
+      {
+        name: "Penny Pritzker",
+        role: "Co-Founder"
+      }
+    ],
+    timeline: [
+      {
+        year: "2019",
+        event: "Founded by Alexa von Tobel and Penny Pritzker."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Hyperplane",
+    sectors: ["Machine Intelligence", "Data Science", "Distributed Systems", "Automation", "Cloud Computing", "Robotics", "Sensor Technology"],
+    slug: "hyperplane",
+    website: "https://www.hyperplane.vc/",
+    short: "Hyperplane",
+    founded: 2014,
+    hq: "Boston, MA",
+    aum: "Not publicly disclosed",
+    thesis: "A seed-stage firm backing technically intense founders combining machine intelligence and sensor technology to solve physical-world problems in regulated and industrial sectors — categories that are rarely obvious deals at the time but become category-creators in AI infrastructure for complex systems.",
+    leadership: [
+      {
+        name: "Vivjan Myrto",
+        role: "Founder & Managing Partner",
+        profileSlug: "vivjan-myrto"
+      }
+    ],
+    timeline: [
+      {
+        year: "2014",
+        event: "Founded by Vivjan Myrto in Boston."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Boldstart Ventures",
+    sectors: ["Cybersecurity", "AI Infrastructure", "Physical AI", "Developer-First Infrastructure", "Cloud", "SaaS"],
+    slug: "boldstart-ventures",
+    website: "https://boldstart.vc/",
+    short: "Boldstart",
+    founded: 2010,
+    hq: "New York, NY",
+    aum: "$250M (Fund VII, 2025)",
+    thesis: "Pioneered inception investing — partnering with technical founders before the first line of code, before incorporation and before revenue. Backs teams building the autonomous enterprise through AI-native infrastructure, security and applications, and deliberately avoids consumer apps, gaming, hardware-only plays and non-technical founding teams.",
+    leadership: [
+      {
+        name: "Ed Sim",
+        role: "Founder",
+        profileSlug: "ed-sim"
+      }
+    ],
+    timeline: [
+      {
+        year: "2010",
+        event: "Founded by Ed Sim with an initial $1M fund."
+      },
+      {
+        year: "2023",
+        event: "Ed Sim ranked first on Business Insider's Seed 100, repeated in 2024."
+      },
+      {
+        year: "2025",
+        event: "Fund VII closed at $250M, taking total assets to roughly $1.1B."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Operator Collective",
+    sectors: ["Enterprise Software", "B2B"],
+    slug: "operator-collective",
+    website: "https://www.operatorcollective.com/",
+    short: "Operator Collective",
+    founded: 2019,
+    hq: "San Francisco, CA",
+    aum: "$92M (Fund II, 2022)",
+    thesis: "Built on the belief that companies succeed because of the people who build them. Connects founders directly with more than 200 enterprise operators — executives from companies including Salesforce, Stripe, Zoom and Cloudflare — who participate as active, invested limited partners rather than passive capital.",
+    leadership: [
+      {
+        name: "Mallun Yen",
+        role: "Founder, CEO & General Partner",
+        profileSlug: "mallun-yen"
+      }
+    ],
+    timeline: [
+      {
+        year: "2019",
+        event: "Debuted with a $45M fund, founded by Mallun Yen."
+      },
+      {
+        year: "2022",
+        event: "Fund II closed at over $92M."
+      }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Correlation Ventures",
+    sectors: ["Biotech", "Healthcare", "Fintech", "Consumer Products", "Media", "Food-Agtech", "Proptech", "Enterprise Software", "Developer Tools"],
+    slug: "correlation-ventures",
+    website: 'https://correlationvc.com/',
+    short: "Correlation",
+    founded: 2009,
+    hq: "San Diego, CA",
+    aum: "$130M (Fund III, 2023)",
+    thesis: "A data-driven co-investor using proprietary predictive analytics built on tens of thousands of historical venture financings to reach investment decisions unusually quickly, often within two weeks. Never leads rounds or takes board seats, aiming instead to reduce friction for founders and lead investors alike.",
+    leadership: [
+      {
+        name: "David Coats",
+        role: "Managing Director & Co-Founder",
+        profileSlug: "david-coats"
+      },
+      {
+        name: "Trevor Kienzle",
+        role: "Managing Director & Co-Founder"
+      }
+    ],
+    timeline: [
+      {
+        year: "2009",
+        event: "Correlation Ventures founded."
+      },
+      {
+        year: "2023",
+        event: "Third fund closed in June at $130M, alongside the promotions of Wesley Barrow and Moiz Saifee."
+      }
+    ],
+    holdings: []
+  },
 ];
