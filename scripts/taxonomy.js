@@ -27,19 +27,19 @@ const SECTOR_MAP = {
     label: 'AI',
     slug: 'ai',
     description: 'artificial intelligence and machine learning',
-    rawTags: ['AI', 'AI Infrastructure', 'AI Security', 'AI Services', 'Applied AI', 'AI & Data Infrastructure', 'AI/ML', 'AI-First Vertical Software', 'Data & AI'],
+    rawTags: ['AI', 'AI Infrastructure', 'AI Security', 'AI Services', 'Applied AI', 'AI & Data Infrastructure', 'AI/ML', 'AI-First Vertical Software', 'Data & AI', 'Machine Learning'],
   },
   'fintech': {
     label: 'Fintech',
     slug: 'fintech',
     description: 'financial technology, banking, and payments',
-    rawTags: ['Fintech', 'Fintech Infrastructure', 'Banking Infrastructure', 'Lending', 'Insurance', 'Wealth'],
+    rawTags: ['Fintech', 'Fintech Infrastructure', 'Banking Infrastructure', 'Lending', 'Insurance', 'Wealth', 'Insurtech'],
   },
   'crypto': {
     label: 'Crypto & Web3',
     slug: 'crypto',
     description: 'cryptocurrency, blockchain, and decentralized finance',
-    rawTags: ['Crypto', 'Blockchain', 'DeFi'],
+    rawTags: ['Crypto', 'Blockchain', 'DeFi', 'Web3'],
   },
   'healthcare': {
     label: 'Healthcare',
@@ -63,13 +63,13 @@ const SECTOR_MAP = {
     label: 'Enterprise Software',
     slug: 'enterprise-software',
     description: 'enterprise software, SaaS, and B2B technology',
-    rawTags: ['Enterprise Software', 'Enterprise', 'Enterprise Infrastructure', 'Software', 'Business Software', 'B2B', 'B2B Software', 'Cloud Software', 'SaaS', 'Vertical SaaS', 'Infrastructure Software', 'Ecommerce Infrastructure'],
+    rawTags: ['Enterprise Software', 'Enterprise', 'Enterprise Infrastructure', 'Software', 'Business Software', 'B2B', 'B2B Software', 'Cloud Software', 'SaaS', 'Vertical SaaS', 'Infrastructure Software', 'Ecommerce Infrastructure', 'Future of Work'],
   },
   'consumer': {
     label: 'Consumer',
     slug: 'consumer',
     description: 'consumer internet, media, and direct-to-consumer brands',
-    rawTags: ['Consumer', 'Consumer Internet', 'Consumer Tech', 'Media', 'Media Tech', 'Beauty & Personal Care', 'Ecommerce', 'Retail'],
+    rawTags: ['Consumer', 'Consumer Internet', 'Consumer Tech', 'Media', 'Media Tech', 'Beauty & Personal Care', 'Ecommerce', 'Retail', 'Gaming'],
   },
   'deep-tech': {
     label: 'Deep Tech',
@@ -111,7 +111,7 @@ const SECTOR_MAP = {
     label: 'Industrial & Manufacturing Technology',
     slug: 'industrial-tech',
     description: 'industrial technology, manufacturing, and IoT',
-    rawTags: ['Manufacturing', 'Industrial Technology', 'IoT', 'Hardware', '5G'],
+    rawTags: ['Manufacturing', 'Industrial Technology', 'IoT', 'Hardware', '5G', 'Industrial Tech'],
   },
 };
 
