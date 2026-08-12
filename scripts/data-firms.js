@@ -13,7 +13,7 @@ const firms = [
     thesis: "SoftBank Vision Fund remains the clearest example of venture capital run at platform scale, having launched Vision Fund 1 at $100 billion in 2017. Its current messaging has become far more coherent than the early 'invest in everything transformed by AI' caricature: the firm is now organized around a full-stack AI ecosystem of hardware, infrastructure, and applications, with CEO Alex Clavel's leadership stressing discipline, monetization, and cash-runway quality across the portfolio. That shift matters because it shows the platform institutionalizing what was previously perceived as founder-led opportunism under Masayoshi Son, while still concentrating unusually large checks into category leaders — DoorDash's $71.2 billion IPO valuation stands as SVF1's best fully-exited outcome, with a $7.3 billion gain.",
     leadership: [
       { name: "Alex Clavel", role: "CEO", profileSlug: "alex-clavel" },
-      { name: "Sumer Juneja", role: "Managing Partner, EMEA/India", profileSlug: "sumer-juneja" },
+      { name: "Sumer Juneja", role: "Managing Partner, EMEA/India" },
       { name: "Vikas J. Parekh", role: "Managing Partner" },
       { name: "Kentaro Matsui", role: "Managing Partner, Asia" }
     ],
@@ -1238,7 +1238,7 @@ holdings: []
     aum: "$2B",
     thesis: "August Capital was founded in 1995 by David Marquardt and John Johnston, both spinning out of Technology Venture Investors, the firm Marquardt had co-founded in 1980 that became the sole institutional investor in Microsoft — a bet that put Marquardt on Microsoft's board for 33 consecutive years. That extraordinary pattern-recognition carried directly into August Capital's focus on enterprise IT infrastructure, data center technology, systems management, security, storage, and cloud computing, closing a $100 million debut fund and backing companies through every phase of the entrepreneurial process from seed investments to public offerings. The firm's portfolio has included Splunk, Compaq, Adaptec, Zulily, and Grand Junction Networks (acquired by Cisco), and August Capital now manages approximately $2 billion.",
     leadership: [
-      { name: "David Marquardt", role: "Co-Founder & General Partner", profileSlug: "david-marquardt" },
+      { name: "David Marquardt", role: "Co-Founder & General Partner" },
       { name: "David Hornik", role: "General Partner" }
     ],
     timeline: [
@@ -2691,7 +2691,7 @@ holdings: []
     thesis: "B Capital Group was founded in 2015 by Facebook co-founder Eduardo Saverin, former Bain Capital investor Raj Ganguly, and ARPANET pioneer Howard Morgan, built from inception around a genuinely multinational approach rather than a U.S. firm that later expanded abroad. Its defining structural feature is a strategic partnership with Boston Consulting Group, giving portfolio companies direct access to BCG's consulting expertise and global client relationships whenever founders want it. That platform has scaled from a $360 million first fund in 2018 to $9 billion under management today, and the firm's ambitions have grown correspondingly — leading a 2026 investor consortium with CalPERS to acquire Russell Investments, a legacy asset manager overseeing more than $400 billion, shows B Capital moving well beyond traditional venture-stage investing.",
     leadership: [
       { name: "Eduardo Saverin", role: "Co-Founder & Co-CEO", profileSlug: "eduardo-saverin" },
-      { name: "Raj Ganguly", role: "Co-Founder & Co-CEO", profileSlug: "raj-ganguly" },
+      { name: "Raj Ganguly", role: "Co-Founder & Co-CEO" },
       { name: "Howard Morgan", role: "Co-Founder & Chairman" }
     ],
     timeline: [
@@ -2996,7 +2996,7 @@ holdings: []
  thesis: "Peak XV Partners traces its origins to 2006 as Sequoia Capital India, rebranding to Peak XV in 2023 after Sequoia's India/Southeast Asia business formally separated from the global Sequoia franchise. The firm is best understood as a region-building institution rather than just a fund complex: its current messaging emphasizes 'global maxima,' trying to persuade founders in India and Southeast Asia to benchmark against the world's best companies rather than merely regional peers. That is continuous with the old Sequoia India/SEA ethos, but the 2023 rebrand and current global posture also reflect a deliberate attempt to decouple geography from ambition — reinforced by Freshworks, the firm's clearest signature exit, which Reuters reported was targeting nearly $9.6 billion ahead of its IPO before debuting at a $12.2 billion valuation.",
     leadership: [
       { name: "Rajan Anandan", role: "Managing Director", profileSlug: "rajan-anandan" },
-      { name: "Sakshi Chopra", role: "Managing Director", profileSlug: "sakshi-chopra" },
+      { name: "Sakshi Chopra", role: "Managing Director" },
       { name: "Rohit Agarwal", role: "Managing Director" }
     ],
     timeline: [
@@ -3313,7 +3313,7 @@ holdings: []
     thesis: "Balderton Capital has stayed tightly focused on European-founded technology companies since 2000, building enough follow-on capacity over 25 years to avoid outsourcing the growth-stage relationship to U.S. crossover funds. The firm explicitly supports founders from Seed to IPO through separate early and growth vehicles, backed by structured platform support across talent, marketing, finance, legal, and ESG. Its 2024 raise of $1.3 billion in new early and growth capital confirmed continued LP appetite for a Europe-only franchise at real scale, more than two decades after MySQL's $1 billion acquisition by Sun Microsystems gave the firm one of European venture's first landmark exits.",
     leadership: [
       { name: "Bernard Liautaud", role: "Managing Partner", profileSlug: "bernard-liautaud" },
-      { name: "Suranga Chandratillake", role: "General Partner", profileSlug: "suranga-chandratillake" },
+      { name: "Suranga Chandratillake", role: "General Partner" },
       { name: "Daniel Waterhouse", role: "General Partner" },
       { name: "Rana Yared", role: "General Partner" }
     ],
@@ -3922,7 +3922,7 @@ holdings: []
     thesis: "Northzone has operated since 1996, giving it a rare through-line from the pre-mobile era to today's AI investing cycle while staying relevant across seed, Series A, and growth stages — the firm explicitly markets itself as 'Seed to Growth.' That long-cycle consistency has translated into a multi-office, multi-theme platform: consumer and fintech legacy on one side, newer AI, climate, infrastructure, and health investments on the other. Spotify's 2018 direct listing, which closed its first trading day at a roughly $26.5 billion valuation, remains the firm's signature outcome, and its 2022 €1 billion raise is evidence that LPs view Northzone as far more than a 'Spotify-era' brand.",
     leadership: [
       { name: "Pär-Jörgen Pärson", role: "Partner", profileSlug: "par-jorgen-parson" },
-      { name: "Michiel Kotting", role: "Partner", profileSlug: "michiel-kotting" },
+      { name: "Michiel Kotting", role: "Partner" },
       { name: "Jessica Schultz", role: "Partner" },
       { name: "Wendy Xiao", role: "Partner" }
     ],
@@ -4091,7 +4091,7 @@ holdings: []
     thesis: "Molten Ventures is structurally different from a typical venture firm: it's a publicly listed venture platform, originally founded in 2006 as Esprit Capital and later known as Draper Esprit before its 2021 rebrand. That listed structure means gross portfolio value and net assets are more meaningful than a generic 'AUM' figure, and the firm's liquidity model, secondaries capability, and listed-company disclosure cadence make it closer to a hybrid of venture manager and permanent-capital vehicle than a traditional closed-end fund. The current strategy is clearly thematic — enterprise, deep tech, healthtech, and climate-adjacent industrial technologies — backing founders 'from Series A and beyond,' with UiPath's post-IPO run to a $35.8 billion valuation as its highlighted signature outcome.",
     leadership: [
       { name: "Ben Wilkinson", role: "Chief Executive Officer", profileSlug: "ben-wilkinson" },
-      { name: "Nicola McClafferty", role: "Partner", profileSlug: "nicola-mcclafferty" },
+      { name: "Nicola McClafferty", role: "Partner" },
       { name: "Franco Danesi", role: "Senior Partner" },
       { name: "Inga Deakin", role: "Partner" }
     ],
@@ -4264,7 +4264,7 @@ holdings: []
     thesis: "QED Investors was founded in 2007 by Nigel Morris and Frank Rotman, who met at Capital One and helped take it public in the 1990s before deciding fintech needed a specialist investor built by former financial-services operators rather than generalist technology investors. That operational lens shows up directly in QED's hands-on model, which leverages decades of credit-risk, lending, and portfolio-management experience to help founders navigate regulatory and unit-economics challenges most VCs can't meaningfully advise on. The firm has backed more than 250 portfolio companies across 27 countries, including 31 unicorns, with Credit Karma's $7.1 billion sale to Intuit and Nubank's 2021 NYSE IPO — where Morris sat on the advisory board — among its clearest signature outcomes.",
     leadership: [
       { name: "Nigel Morris", role: "Co-Founder & Managing Partner", profileSlug: "nigel-morris" },
-      { name: "Frank Rotman", role: "Co-Founder & Chief Investment Officer", profileSlug: "frank-rotman" },
+      { name: "Frank Rotman", role: "Co-Founder & Chief Investment Officer" },
       { name: "Amias Gerety", role: "Partner" }
     ],
     timeline: [
@@ -5109,7 +5109,7 @@ holdings: []
     thesis: "Cherry Ventures was founded in 2012 by Filip Dames and Christian Meermann, both out of Zalando, and turned 'operator DNA' from a slogan into an organizational design principle. Its later partner bench added Spotify and Atomico experience, and the firm now openly argues that Europe's next trillion-dollar company could emerge from a wider set of domains than classic SaaS alone, including AI infrastructure, energy, and deep tech. The firm's 2025 fundraise — $500 million across its flagship early-stage fund and a new opportunity fund — was strategically designed to preserve Cherry's seed identity while adding enough later-stage capital to avoid losing influence once its companies scale, following AUTO1 Group's roughly €10.6 billion Frankfurt debut in 2021.",
     leadership: [
       { name: "Filip Dames", role: "Founding Partner", profileSlug: "filip-dames" },
-      { name: "Christian Meermann", role: "Founding Partner", profileSlug: "christian-meermann" },
+      { name: "Christian Meermann", role: "Founding Partner" },
       { name: "Sophia Bendz", role: "Partner" },
       { name: "Dinika Mahtani", role: "Partner" }
     ],
@@ -5595,7 +5595,7 @@ holdings: []
     thesis: "LocalGlobe was co-founded by Robin and Saul Klein and has evolved into something closer to an urban operating system for London and European early-stage company formation than a standalone seed fund. As the pre-seed and seed vehicle inside the broader Phoenix Court family — alongside sister vehicles Latitude, Solar, and Basecamp — it benefits from unusually strong recycling of operator knowledge, angel networks, and neighborhood density rather than simply advertising founder support as a slogan. That ecosystem-design approach produced Wise, whose 2021 direct listing on the London Stock Exchange valued the fintech company at about $11 billion, one of the clearest proof points of London's fintech maturity.",
     leadership: [
       { name: "Saul Klein", role: "Co-Founder & Managing Partner", profileSlug: "saul-klein" },
-      { name: "Robin Klein", role: "Co-Founder", profileSlug: "robin-klein" },
+      { name: "Robin Klein", role: "Co-Founder" },
       { name: "Remus Brett", role: "General Partner" },
       { name: "Paul Bishop", role: "General Partner" }
     ],
