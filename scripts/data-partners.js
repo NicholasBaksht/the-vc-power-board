@@ -9664,58 +9664,6 @@ sources: [
       }
     ]
   },
-  "eileen-burbidge": {
-    name: "Eileen Burbidge",
-    firm: "Passion Capital",
-    firmSlug: "passion-capital",
-    title: "Founding Partner",
-    joinedYear: 2011,
-    education: [
-      "BSc Engineering, Computer Science, University of Illinois at Urbana-Champaign"
-    ],
-    previousExperience: [
-      "Director, Product, Skype (2004–2005) — one of its earliest employees, moving to London in 2004",
-      "Director, Communication Products, Yahoo! (2005–2006)",
-      "Director, Business Development, Openwave Systems (1999–2000)",
-      "Group Manager, Market Development, Sun Microsystems (1996–1999)",
-      "Market Development Manager, Newton Systems Group, Apple (1995–1996)",
-      "Engineering Associate, Verizon (1993–1994)"
-    ],
-    firmHistory: [],
-    boardSeats: [
-      "Monzo Bank",
-      "Digital Shadows",
-      "Focal Point Positioning",
-      "Butternut Box"
-    ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      {
-        year: "2004",
-        event: "Moved from the US to London to join Skype."
-      },
-      {
-        year: "2011",
-        event: "Co-founded Passion Capital."
-      },
-      {
-        year: "2015",
-        event: "Appointed MBE for services to business, and named HM Treasury's Special Envoy for FinTech."
-      }
-    ],
-    biography: "Eileen Burbidge is a founding partner of Passion Capital. Born in Chicago and a computer science graduate of the University of Illinois Urbana-Champaign, she held product and business development roles at Apple, Sun Microsystems, Yahoo! and Skype — moving to London in 2004 as one of Skype's earliest employees — before co-founding Passion Capital. She was appointed MBE in 2015 and served as HM Treasury's Special Envoy for FinTech.",
-    sources: [
-      {
-        label: "Wikipedia — Eileen Burbidge",
-        url: "https://en.wikipedia.org/wiki/Eileen_Burbidge"
-      },
-      {
-        label: "NFX Signal — Eileen Burbidge",
-        url: "https://signal.nfx.com/investors/eileen-burbidge"
-      }
-    ]
-  },
   "guillaume-aubin": {
     name: "Guillaume Aubin",
     firm: "Alven",
@@ -9841,38 +9789,6 @@ sources: [
       {
         label: "Crunchbase — Jean Bourcereau",
         url: "https://www.crunchbase.com/person/jean-bourcereau"
-      }
-    ]
-  },
-  "georg-ried": {
-    name: "Georg Ried",
-    firm: "Bayern Kapital",
-    firmSlug: "bayern-kapital",
-    title: "Managing Director",
-    joinedYear: 2013,
-    education: [
-      "PhD — qualified biochemist"
-    ],
-    previousExperience: [],
-    firmHistory: [],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      {
-        year: "2013",
-        event: "Became a member of Bayern Kapital's management."
-      },
-      {
-        year: "2022",
-        event: "Became co-managing director alongside Monika Steger in April, forming the firm's current dual leadership as Roman Huber retired."
-      }
-    ],
-    biography: "Dr. Georg Ried is a managing director of Bayern Kapital, the venture capital company of the Free State of Bavaria, a role he has held since 2013. Since April 2022 he has co-led the firm in a dual-leadership structure with Monika Steger, following the retirement of long-serving managing director Roman Huber. He is described in sourcing as a qualified biochemist; his earlier career history is not documented in available sources.",
-    sources: [
-      {
-        label: "Munich Startup — Bayern Kapital gets new managing director",
-        url: "https://www.munich-startup.de/en/80026/bayern-capital-gets-new-managing-director/"
       }
     ]
   },
