@@ -392,7 +392,11 @@ document.querySelectorAll('.nav-dropdown-item').forEach(item => {
 });
 // Ticker tape at top — pulls every unique ticker + whatever price is set
 function buildTicker() {
+  // The ticker tape was removed from the homepage. firm-cards.js
+  // still calls this on render and on every price edit, so it
+  // returns quietly rather than throwing on a missing element.
   const track = document.getElementById('tickerTrack');
+  if (!track) return;
   const seen = new Map();
   firms.forEach(f => f.holdings.forEach(h => {
     if (!seen.has(h.ticker)) seen.set(h.ticker, h.price);
