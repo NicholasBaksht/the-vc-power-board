@@ -73,6 +73,19 @@ const featuredFirm = {
 // ============================================================
 
 const firmStages = {
+  "sutter-hill-ventures": ["Seed", "Series A", "Series B"],
+  "sierra-ventures": ["Seed", "Series A"],
+  "heavybit": ["Pre-Seed", "Seed", "Series A"],
+  "blume-ventures": ["Seed", "Series A"],
+  "kalaari-capital": ["Pre-Seed", "Seed", "Series A"],
+  "shunwei-capital": ["Seed", "Series A", "Series B", "Growth"],
+  "maya-capital": ["Seed"],
+  "nxtp-ventures": ["Pre-Seed", "Seed", "Series A"],
+  "3one4-capital": ["Seed", "Series A", "Series B"],
+  "india-quotient": ["Pre-Seed", "Seed"],
+  "waterbridge-ventures": ["Pre-Seed", "Seed", "Series A"],
+  "prime-venture-partners": ["Pre-Seed", "Seed", "Series A"],
+  "4dx-ventures": ["Pre-Seed", "Seed", "Series A"],
   "passion-capital": ["Pre-Seed", "Series A"],
   "alven": ["Seed", "Series A"],
   "ventech": ["Pre-Seed", "Seed", "Series A"],
