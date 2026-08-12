@@ -7779,7 +7779,7 @@ holdings: []
     leadership: [
       {
         name: "Robert Dighero",
-        role: "Founding Partner"
+        role: "Founding Partner", profileSlug: "robert-dighero"
       },
       {
         name: "Sarah Stafford",
@@ -8355,7 +8355,9 @@ holdings: []
     hq: "Palo Alto, CA",
     aum: "$2.3B (2026)",
     thesis: "Runs a proactive incubation model: partners identify a market gap, recruit a founder-in-residence and drive company creation from day one, providing space, hiring the first engineers and sometimes serving as interim management to de-risk the earliest stage.",
-    leadership: [],
+    leadership: [
+      { name: "Mike Speiser", role: "Managing Director", profileSlug: "mike-speiser" }
+    ],
     timeline: [
       {
         year: "1964",
@@ -8396,7 +8398,7 @@ holdings: []
       },
       {
         name: "Tim Guleri",
-        role: "Managing Director"
+        role: "Managing Director", profileSlug: "tim-guleri"
       },
       {
         name: "Ben Yu",
@@ -8433,7 +8435,7 @@ holdings: []
     leadership: [
       {
         name: "Tom Drummond",
-        role: "Co-Founder & Managing Director"
+        role: "Co-Founder & Managing Director", profileSlug: "tom-drummond"
       },
       {
         name: "James Lindenbaum",
@@ -8480,7 +8482,7 @@ holdings: []
     leadership: [
       {
         name: "Karthik Reddy",
-        role: "Co-Founder"
+        role: "Co-Founder", profileSlug: "karthik-reddy"
       },
       {
         name: "Sanjay Nath",
@@ -8536,7 +8538,7 @@ holdings: []
     leadership: [
       {
         name: "Vani Kola",
-        role: "Founder & Managing Director"
+        role: "Founder & Managing Director", profileSlug: "vani-kola"
       }
     ],
     timeline: [
@@ -8575,7 +8577,7 @@ holdings: []
     leadership: [
       {
         name: "Lei Jun",
-        role: "Founding Partner & Chairman"
+        role: "Founding Partner & Chairman", profileSlug: "lei-jun"
       },
       {
         name: "Tuck Lye Koh",
@@ -8613,7 +8615,7 @@ holdings: []
     leadership: [
       {
         name: "Lara Lemann",
-        role: "Co-Founder & Managing Partner"
+        role: "Co-Founder & Managing Partner", profileSlug: "lara-lemann"
       },
       {
         name: "Monica Saggioro",
@@ -8648,7 +8650,9 @@ holdings: []
     hq: "Buenos Aires, Argentina",
     aum: "$98M (Fund III, 2023)",
     thesis: "Latin America's B2B-focused early-stage fund, built on founder-aligned partnerships: showing up early and supporting go-to-market development, access to a global network of enterprise customers, recruiting and ongoing fundraising guidance.",
-    leadership: [],
+    leadership: [
+      { name: "Ariel Arrieta", role: "Co-Founder & Managing Partner", profileSlug: "ariel-arrieta" }
+    ],
     timeline: [
       {
         year: "2011",
@@ -8681,7 +8685,7 @@ holdings: []
     leadership: [
       {
         name: "Pranav Pai",
-        role: "Co-Founder & Managing Partner"
+        role: "Co-Founder & Managing Partner", profileSlug: "pranav-pai"
       },
       {
         name: "Siddarth Pai",
@@ -8723,7 +8727,7 @@ holdings: []
     leadership: [
       {
         name: "Anand Lunia",
-        role: "Co-Founder"
+        role: "Co-Founder", profileSlug: "anand-lunia"
       },
       {
         name: "Madhukar Sinha",
@@ -8770,7 +8774,7 @@ holdings: []
     leadership: [
       {
         name: "Manish Kheterpal",
-        role: "Co-Founder & Managing Partner"
+        role: "Co-Founder & Managing Partner", profileSlug: "manish-kheterpal"
       },
       {
         name: "Ashish Jain",
@@ -8821,7 +8825,7 @@ holdings: []
     leadership: [
       {
         name: "Sanjay Swamy",
-        role: "Managing Partner"
+        role: "Managing Partner", profileSlug: "sanjay-swamy"
       },
       {
         name: "Shripati Acharya",
@@ -8868,7 +8872,7 @@ holdings: []
     leadership: [
       {
         name: "Walter Baddoo",
-        role: "Co-Founder & Managing Partner"
+        role: "Co-Founder & Managing Partner", profileSlug: "walter-baddoo"
       },
       {
         name: "Peter Orth",
