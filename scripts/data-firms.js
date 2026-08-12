@@ -7772,7 +7772,7 @@ holdings: []
     slug: "passion-capital",
     website: null,
     short: "Passion",
-    founded: 2011,
+    founded: 2009,
     hq: "London, UK",
     aum: "Not publicly disclosed",
     thesis: "A founder-first European firm, described as the first operator-led venture fund in Europe. Typically invests £400,000–£500,000 and will lead, co-lead or participate.",
@@ -7799,6 +7799,10 @@ holdings: []
       }
     ],
     timeline: [
+      {
+        year: "2009",
+        event: "Passion Capital co-founded in London by Robert Dighero, Eileen Burbidge and Stefan Glaenzer."
+      },
       {
         year: "2011",
         event: "Launched in March as a private-public hybrid with a $60M debut fund, $40M of it UK government-backed."
