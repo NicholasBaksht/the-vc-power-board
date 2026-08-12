@@ -7778,17 +7778,24 @@ holdings: []
     thesis: "A founder-first European firm, described as the first operator-led venture fund in Europe. Typically invests £400,000–£500,000 and will lead, co-lead or participate.",
     leadership: [
       {
-        name: "Eileen Burbidge",
-        role: "Founding Partner",
-        profileSlug: "eileen-burbidge"
-      },
-      {
-        name: "Stefan Glaenzer",
-        role: "Founding Partner"
-      },
-      {
         name: "Robert Dighero",
         role: "Founding Partner"
+      },
+      {
+        name: "Sarah Stafford",
+        role: "Partner, General Counsel"
+      },
+      {
+        name: "Andrew Jenkins",
+        role: "Partner"
+      },
+      {
+        name: "Will Orde",
+        role: "Partner"
+      },
+      {
+        name: "Greg Bennett",
+        role: "Partner"
       }
     ],
     timeline: [
@@ -7927,14 +7934,13 @@ holdings: []
     thesis: "The venture capital company of the Free State of Bavaria, providing equity to young technology businesses based in Bavaria as an anchor investor from pre-seed through growth, alongside private co-investors.",
     leadership: [
       {
-        name: "Georg Ried",
-        role: "Managing Director",
-        profileSlug: "georg-ried"
-      },
-      {
         name: "Monika Steger",
         role: "Managing Director",
         profileSlug: "monika-steger"
+      },
+      {
+        name: "Markus Mrachacz",
+        role: "Managing Director"
       }
     ],
     timeline: [
@@ -8200,7 +8206,7 @@ holdings: []
       "Enterprise Software"
     ],
     slug: "fly-ventures",
-    website: null,
+    website: "https://fly.vc",
     short: "Fly",
     founded: 2016,
     hq: "Berlin, Germany",
