@@ -43,6 +43,11 @@ const POWER_ALERT_CONFIG = {
                                // and emit nothing. A site rewrite or a partial
                                // render must never read as a mass exodus.
 
+  // --- fund history ---
+  minFundStepRatio: 1.5,       // fund-over-fund growth worth reporting
+  minFundsForYearAlert: 3,     // firms closing in a year before it is a signal
+  fundYearWindowFrom: 2023,
+
   // --- effect-size thresholds ---
   minPointChange: 3,           // percentage-point move to be worth an alert
   partnerHireWindowFrom: 2015, // hires counted from this year
@@ -485,6 +490,143 @@ function computePowerAlerts(options) {
     });
   }
 
+  /* --- 8. FUND-OVER-FUND STEP UP / DOWN ---
+     Compares a firm's two most recent SIZED, DATED, single-vehicle
+     funds. Deliberately narrow, because the fund records are honest
+     about their own gaps:
+       - combinedVehicles records cover two funds behind one total,
+         so a step ratio against them is meaningless
+       - a null sizeUSD or vintageYear cannot be compared at all
+       - a firm flagged complete:false may be missing the fund that
+         actually sits between the two being compared, so the copy
+         says "most recent recorded", never "its last two funds"
+  */
+  const FUNDS = typeof FIRM_FUNDS !== 'undefined' && FIRM_FUNDS ? FIRM_FUNDS : null;
+  if (!FUNDS) {
+    skip('fund_step', 'FIRM_FUNDS not loaded');
+  } else {
+    Object.keys(FUNDS).forEach(function (slug) {
+      const firm = firmBySlug[slug];
+      const rec = FUNDS[slug];
+      if (!firm || !rec || !Array.isArray(rec.funds)) return;
+      const usable = rec.funds.filter(function (f) {
+        return f.sizeUSD !== null && f.vintageYear !== null && !f.combinedVehicles;
+      }).sort(function (a, b) { return a.vintageYear - b.vintageYear; });
+      if (usable.length < 2) return;
+      // Only compare within the same fund SERIES. Stripping the numeral
+      // leaves the family name, so "Sinovation Fund V" pairs with
+      // "Sinovation Fund IV" and not with "RMB Fund III", and NEA's
+      // flagship is never measured against its opportunity vehicle.
+      const family = {};
+      usable.forEach(function (f) {
+        const key = f.name
+          .replace(/\(\s*\d{4}[^)]*\)/gi, ' ')
+          .replace(/\b(19|20)\d{2}\b/g, ' ')
+          .replace(/\b[IVXLC]+\b/g, ' ')
+          .replace(/\b\d+\b/g, ' ')
+          .replace(/\b(one|two|three|four|five|six|seven|eight|nine|ten)\b/gi, ' ')
+          .replace(/\s+/g, ' ').trim().toLowerCase();
+        (family[key] = family[key] || []).push(f);
+      });
+      // Use the series whose most recent fund is newest.
+      let series = null;
+      Object.keys(family).forEach(function (k) {
+        if (family[k].length < 2) return;
+        const last = family[k][family[k].length - 1];
+        if (!series || last.vintageYear > series[series.length - 1].vintageYear) series = family[k];
+      });
+      if (!series) return;
+      const latest = series[series.length - 1];
+      const prev = series[series.length - 2];
+      if (latest.vintageYear === prev.vintageYear) return; // same vintage, not a step
+      const ratio = latest.sizeUSD / prev.sizeUSD;
+      if (ratio < cfg.minFundStepRatio && ratio > 1 / cfg.minFundStepRatio) return;
+      const up = ratio > 1;
+      const lowConf = latest.confidence === 'low' || prev.confidence === 'low';
+      alerts.push({
+        id: pa_fingerprint(['fund_step', slug, prev.name, latest.name, Math.round(ratio * 100)]),
+        type: 'fund_step',
+        firmId: slug,
+        sector: null,
+        subject: firm.name,
+        metric: 'size of the most recent recorded fund against the one before it',
+        previousValue: prev.sizeUSD,
+        currentValue: latest.sizeUSD,
+        absoluteChange: latest.sizeUSD - prev.sizeUSD,
+        percentChange: pa_round((ratio - 1) * 100, 1),
+        unit: 'USD',
+        period: prev.vintageYear + ' to ' + latest.vintageYear,
+        direction: up ? 'up' : 'down',
+        generatedAt: generatedAt,
+        confidence: pa_round(lowConf ? 0.4 : (rec.complete ? 0.9 : 0.65), 3),
+        score: pa_score({
+          magnitude: up ? ratio : 1 / ratio, magnitudeCeiling: 4,
+          sample: usable.length, sampleCeiling: 10,
+          confidence: lowConf ? 0.4 : (rec.complete ? 0.9 : 0.65),
+          recency: Math.max(0, Math.min(1, 1 - (nowYear - latest.vintageYear) / 8))
+        }),
+        evidence: {
+          firm: firm.name,
+          from: { name: prev.name, vintageYear: prev.vintageYear, sizeUSD: prev.sizeUSD, source: prev.source },
+          to: { name: latest.name, vintageYear: latest.vintageYear, sizeUSD: latest.sizeUSD, source: latest.source },
+          recordedFunds: rec.funds.length,
+          listComplete: rec.complete,
+          note: (rec.complete
+            ? 'Compares the two most recent sized, single-vehicle funds on record.'
+            : 'This firm\'s recorded fund list is known to be incomplete, so an intervening fund may exist that is not counted here.') +
+            (lowConf ? ' At least one figure rests on a single secondary source.' : '')
+        }
+      });
+    });
+
+    /* --- 9. FUNDRAISING ACTIVITY BY YEAR ---
+       A floor, not a total: counts firms with a RECORDED close, across
+       the 17 firms that have fund records at all. Never presented as
+       market-wide. */
+    const byYear = {};
+    Object.keys(FUNDS).forEach(function (slug) {
+      (FUNDS[slug].funds || []).forEach(function (f) {
+        if (f.vintageYear === null || f.vintageYear < cfg.fundYearWindowFrom) return;
+        (byYear[f.vintageYear] = byYear[f.vintageYear] || {})[slug] = 1;
+      });
+    });
+    const coveredFirms = Object.keys(FUNDS).length;
+    Object.keys(byYear).forEach(function (year) {
+      const slugsIn = Object.keys(byYear[year]);
+      if (slugsIn.length < cfg.minFundsForYearAlert) return;
+      alerts.push({
+        id: pa_fingerprint(['fund_year_activity', year, slugsIn.length]),
+        type: 'fund_year_activity',
+        firmId: null,
+        sector: null,
+        subject: year,
+        metric: 'firms with a recorded fund close in the year',
+        previousValue: null,
+        currentValue: slugsIn.length,
+        absoluteChange: null,
+        percentChange: null,
+        unit: 'firms',
+        period: String(year),
+        direction: 'flat',
+        generatedAt: generatedAt,
+        confidence: pa_round(Math.min(1, slugsIn.length / coveredFirms), 3),
+        score: pa_score({
+          magnitude: slugsIn.length, magnitudeCeiling: 10,
+          sample: slugsIn.length, sampleCeiling: coveredFirms,
+          confidence: Math.min(1, slugsIn.length / coveredFirms),
+          recency: Math.max(0, Math.min(1, 1 - (nowYear - Number(year)) / 6))
+        }),
+        evidence: {
+          year: Number(year),
+          firms: slugsIn.map(function (s) { return (firmBySlug[s] || {}).name || s; }),
+          coverage: coveredFirms + ' firms currently have any fund history recorded',
+          note: 'A floor across firms with recorded fund history, not a market-wide count. ' +
+                'Firms without fund records cannot contribute to this number.'
+        }
+      });
+    });
+  }
+
   /* ---------- copy generation (spec §8) ----------
      Templates interpolate computed values only. No template
      asserts a cause, an intention or a trend beyond the number. */
@@ -519,6 +661,29 @@ function computePowerAlerts(options) {
       a.title = a.subject + ' removed ' + n + ' ' + (n === 1 ? 'person' : 'people') + ' from its team page';
       a.description = n + ' ' + (n === 1 ? 'name' : 'names') + ' listed on ' + a.subject +
         '’s team page on ' + a.evidence.capturedOn[0] + ' are no longer published.';
+    } else if (a.type === 'fund_step') {
+      const usd = function (n) {
+        return n >= 1e9 ? '$' + pa_round(n / 1e9, 2) + 'B' : '$' + Math.round(n / 1e6) + 'M';
+      };
+      const mult = a.currentValue / a.previousValue;
+      // Don't say "Sinovation Ventures's Sinovation Fund V" - if the fund
+      // name already carries the firm name, drop the possessive. And a
+      // firm ending in s takes a bare apostrophe.
+      const firstWord = a.subject.split(' ')[0].toLowerCase();
+      const owns = a.evidence.to.name.toLowerCase().indexOf(firstWord) === 0;
+      const prefix = owns ? '' : a.subject + (/s$/i.test(a.subject) ? '’ ' : '’s ');
+      // A fall must never be phrased as a multiple of growth.
+      a.title = prefix + a.evidence.to.name + (mult >= 1
+        ? ' is ' + pa_round(mult, 1) + '× the size of ' + a.evidence.from.name
+        : ' is ' + Math.round((1 - mult) * 100) + '% smaller than ' + a.evidence.from.name);
+      if (owns) a.title = a.subject + ': ' + a.title;
+      a.description = a.evidence.from.name + ' closed at ' + usd(a.previousValue) + ' in ' +
+        a.evidence.from.vintageYear + '; ' + a.evidence.to.name + ' closed at ' + usd(a.currentValue) +
+        ' in ' + a.evidence.to.vintageYear + '.';
+    } else if (a.type === 'fund_year_activity') {
+      a.title = a.currentValue + ' firms recorded a fund close in ' + a.subject;
+      a.description = a.currentValue + ' of the ' + Object.keys(FUNDS || {}).length +
+        ' firms with fund history on file closed at least one vehicle in ' + a.subject + '.';
     } else if (a.type === 'firm_milestone_activity') {
       a.title = a.subject + ' recorded ' + a.currentValue + ' milestones since ' + cfg.timelineWindowFrom;
       a.description = a.subject + ' has ' + a.currentValue + ' dated timeline events from ' +
