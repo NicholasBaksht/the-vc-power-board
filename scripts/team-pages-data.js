@@ -328,4 +328,13 @@ const TEAM_PAGES = {
   "shunwei-capital": "https://shunwei.com/team",
   "afore-capital": "https://afore.vc/",
   "conviction": "https://conviction.com/",
+  "caffeinated-capital": "https://www.caffeinated.com/team",
+  "forum-ventures": "https://www.forumvc.com/team",
+  "hof-capital": "https://hofcapital.com/team",
+  "fifty-years": "https://fiftyyears.com/team",
+  "kapor-capital": "https://www.kaporcapital.com/who-we-are/#meet-the-team",
+  "compound": "https://www.compound.vc/about",
+  "ulu-ventures": "https://uluventures.com/who-we-are/",
+  "thayer-ventures": null,
+  "serena-ventures": "https://www.serenaventures.com/team",
 };
