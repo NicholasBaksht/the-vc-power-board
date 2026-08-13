@@ -10746,4 +10746,796 @@ sources: [
       }
     ]
   },
+  "oliver-samwer": {
+    name: "Oliver Samwer",
+    firm: "Global Founders Capital",
+    firmSlug: "global-founders-capital",
+    title: "Partner",
+    joinedYear: 2013,
+    education: [
+      "M.Sc. Business Administration, WHU – Otto Beisheim School of Management"
+    ],
+    previousExperience: [
+      "Co-Founder and Chief Executive, Rocket Internet (2007)",
+      "Co-Founder, Jamba! AG (2000) — sold to VeriSign in 2004 for $273M",
+      "Managing Director for Germany, Switzerland and Austria, eBay",
+      "Co-Founder, Alando.de (1999) — sold to eBay the same year for $43M",
+      "Trainee, Sal. Oppenheim"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1999",
+        event: "Co-founded Alando.de and sold it to eBay for $43M."
+      },
+      {
+        year: "2000",
+        event: "Co-founded Jamba! AG, sold to VeriSign in 2004 for $273M."
+      },
+      {
+        year: "2007",
+        event: "Co-founded Rocket Internet with his brothers Marc and Alexander."
+      },
+      {
+        year: "2013",
+        event: "Global Founders Capital formed."
+      },
+      {
+        year: "2014",
+        event: "Became chief executive of Rocket Internet and took it public on the Frankfurt Stock Exchange."
+      }
+    ],
+    biography: "Oliver Samwer is a partner at Global Founders Capital and chief executive of its parent, Rocket Internet, which he co-founded with his brothers in 2007. He holds a business degree from WHU – Otto Beisheim School of Management. Before Rocket Internet he co-founded and sold Alando.de to eBay in 1999 and Jamba! AG to VeriSign in 2004.",
+    sources: [
+      {
+        label: "Global Venturing — GFC becomes CVC of Rocket Internet",
+        url: "https://globalventuring.com/corporate/information-technology/global-founders-capital-becomes-cvc-of-rocket-internet/"
+      },
+      {
+        label: "Crunchbase — Oliver Samwer",
+        url: "https://www.crunchbase.com/person/oliver-samwer"
+      }
+    ]
+  },
+  "mike-collins": {
+    name: "Mike Collins",
+    firm: "Alumni Ventures",
+    firmSlug: "alumni-ventures",
+    title: "Founder & CEO",
+    joinedYear: 2014,
+    education: [
+      "BE Engineering Science, Dartmouth College",
+      "MBA, Harvard Business School"
+    ],
+    previousExperience: [
+      "Founder, Big Idea Group — partially owned by WPP",
+      "Founder, Kid Galaxy",
+      "Founder, RDM",
+      "Began his venture capital career at TA Associates"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2014",
+        event: "Launched Green D Ventures, Alumni Ventures' first fund, with $1.5M raised from Dartmouth alumni."
+      },
+      {
+        year: "2025",
+        event: "Grew Alumni Ventures past $1.5B in assets from more than 11,000 investors."
+      }
+    ],
+    biography: "Mike Collins is founder and chief executive of Alumni Ventures. He holds an engineering science degree from Dartmouth and an MBA from Harvard Business School, and began his career at TA Associates before founding several companies including Kid Galaxy and Big Idea Group. He launched Alumni Ventures in 2014 with $1.5M raised from fellow Dartmouth alumni.",
+    sources: [
+      {
+        label: "Alumni Ventures — Michael Collins",
+        url: "https://www.av.vc/people/michael-collins"
+      },
+      {
+        label: "Wikipedia — Alumni Ventures",
+        url: "https://en.wikipedia.org/wiki/Alumni_Ventures"
+      }
+    ]
+  },
+  "saeed-amidi": {
+    name: "Saeed Amidi",
+    firm: "Plug and Play Ventures",
+    firmSlug: "plug-and-play-ventures",
+    title: "Founder & CEO",
+    joinedYear: 2006,
+    education: [
+      "Business Administration, Menlo College"
+    ],
+    previousExperience: [
+      "Founder, Amidzad — personal investment company predating Plug and Play",
+      "Co-Founder, Amidi Group (1980) — a diversified holding company spanning real estate, manufacturing and bottled water",
+      "Medallion Rug Gallery — family business launched after emigrating from Iran"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1979",
+        event: "Family emigrated to the United States following the Iranian Revolution."
+      },
+      {
+        year: "1988",
+        event: "The Amidi Group acquired 165 University Avenue in Palo Alto, later renting to early tenants including Google and PayPal."
+      },
+      {
+        year: "2006",
+        event: "Founded Plug and Play Tech Center."
+      }
+    ],
+    biography: "Saeed Amidi is founder and chief executive of Plug and Play Tech Center. Born into a manufacturing family in Iran, he came to the United States to study business at Menlo College; after the 1979 revolution cut off his family's finances he helped rebuild through the Amidi Group. That group's ownership of 165 University Avenue in Palo Alto — home to early tenants including Google and PayPal — directly inspired Plug and Play, which he founded in 2006.",
+    sources: [
+      {
+        label: "Wikipedia — Plug and Play Tech Center",
+        url: "https://en.wikipedia.org/wiki/Plug_and_Play_Tech_Center"
+      },
+      {
+        label: "The Epoch Times — Founder of Plug and Play shares his success story",
+        url: "https://www.theepochtimes.com/article/founder-of-plug-and-play-shares-his-success-story-1107455"
+      }
+    ]
+  },
+  "dayna-grayson": {
+    name: "Dayna Grayson",
+    firm: "Construct Capital",
+    firmSlug: "construct-capital",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2020,
+    education: [
+      "University of Virginia",
+      "Harvard Business School"
+    ],
+    previousExperience: [
+      "Partner, New Enterprise Associates — led investments including Desktop Metal, Onshape, Framebridge, Tulip, Formlabs and Guideline",
+      "Investor, North Bridge Venture Partners, Boston"
+    ],
+    firmHistory: [
+      {
+        firmSlug: "nea",
+        role: "Partner",
+        startYear: null,
+        endYear: null
+      }
+    ],
+    boardSeats: [
+      "Podium Automation"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2020",
+        event: "Co-founded Construct Capital with Rachel Holt."
+      }
+    ],
+    biography: "Dayna Grayson is co-founder and managing partner of Construct Capital, launched with Rachel Holt in 2020. She began her career at North Bridge Venture Partners in Boston before becoming a partner at New Enterprise Associates, where she built one of the first venture portfolios centred on transforming industrial and manufacturing sectors, leading investments in Desktop Metal, Onshape and Formlabs.",
+    sources: [
+      {
+        label: "Construct Capital",
+        url: "https://www.constructcap.com/"
+      },
+      {
+        label: "Crunchbase — Dayna Grayson",
+        url: "https://www.crunchbase.com/person/dayna-grayson"
+      }
+    ]
+  },
+  "fabrice-grinda": {
+    name: "Fabrice Grinda",
+    firm: "FJ Labs",
+    firmSlug: "fj-labs",
+    title: "Co-Founder",
+    joinedYear: 2015,
+    education: [
+      "BA Economics, summa cum laude, Princeton University (1996)"
+    ],
+    previousExperience: [
+      "Co-Founder & Executive Chairman, Beepi",
+      "Co-Founder & Co-Chief Executive, OLX — grown into one of the world's largest classifieds sites, with over 200M monthly visitors across 40 countries",
+      "Co-Founder, Zingy",
+      "Co-Founder, Aucland"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1996",
+        event: "Graduated from Princeton summa cum laude in economics."
+      },
+      {
+        year: "2004",
+        event: "Began angel investing, well before FJ Labs was formalised."
+      },
+      {
+        year: "2015",
+        event: "Co-founded FJ Labs with Jose Marin."
+      }
+    ],
+    biography: "Fabrice Grinda is co-founder of FJ Labs. Born and raised in France, he graduated summa cum laude in economics from Princeton in 1996. He co-founded and served as co-chief executive of OLX, one of the world's largest classifieds sites, before co-founding FJ Labs with Jose Marin in 2015 to focus exclusively on marketplace and network-effect businesses.",
+    sources: [
+      {
+        label: "Crunchbase — Fabrice Grinda",
+        url: "https://www.crunchbase.com/person/fabrice-grinda"
+      },
+      {
+        label: "Fabrice Grinda — The genesis of FJ Labs",
+        url: "https://fabricegrinda.com/the-genesis-of-fj-labs/"
+      }
+    ]
+  },
+  "alexa-von-tobel": {
+    name: "Alexa von Tobel",
+    firm: "Inspired Capital",
+    firmSlug: "inspired-capital",
+    title: "Founder & Managing Partner",
+    joinedYear: 2019,
+    education: [
+      "AB Psychology with Honors, Harvard College"
+    ],
+    previousExperience: [
+      "Chief Digital Officer then Chief Innovation Officer, Northwestern Mutual — overseeing its venture arm",
+      "Founder, LearnVest (2008) — raised roughly $75M before its acquisition by Northwestern Mutual in 2015 for about $375M",
+      "Drop.io — helped build the early-stage startup later acquired by Facebook",
+      "Proprietary trading desk, Morgan Stanley"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2008",
+        event: "Founded LearnVest."
+      },
+      {
+        year: "2015",
+        event: "LearnVest acquired by Northwestern Mutual for roughly $375M."
+      },
+      {
+        year: "2019",
+        event: "Co-founded Inspired Capital with Penny Pritzker."
+      }
+    ],
+    biography: "Alexa von Tobel is founder and managing partner of Inspired Capital, co-founded with Penny Pritzker in 2019. A Certified Financial Planner with an AB in psychology from Harvard, she began her career on Morgan Stanley's trading desk before founding LearnVest in 2008, which she sold to Northwestern Mutual for roughly $375M in 2015. She then served as Northwestern Mutual's first chief digital officer and later chief innovation officer.",
+    sources: [
+      {
+        label: "Inspired Capital — Alexa von Tobel",
+        url: "https://www.inspiredcapital.com/team-member/alexa-von-tobel"
+      }
+    ]
+  },
+  "vivjan-myrto": {
+    name: "Vivjan Myrto",
+    firm: "Hyperplane",
+    firmSlug: "hyperplane",
+    title: "Founder & Managing Partner",
+    joinedYear: 2014,
+    education: [],
+    previousExperience: [
+      "Founder of his first US software company, bootstrapped from a college dorm room",
+      "Co-founder of two further companies"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2004",
+        event: "Moved to the United States for cancer treatment, ultimately undergoing a bone-marrow transplant."
+      },
+      {
+        year: "2014",
+        event: "Founded Hyperplane in Boston."
+      }
+    ],
+    biography: "Vivjan Myrto is founder and managing partner of Hyperplane. Born and raised in communist-era Albania, he started his first business at seven and helped bring the internet to Albania as an eleven-year-old. Diagnosed with cancer at fifteen, he moved to the United States for treatment, learned English from hospital nurses and later left college to build his first US software company. After co-founding two more companies he founded Hyperplane in 2014.",
+    sources: [
+      {
+        label: "Hyperplane — Vivjan Myrto",
+        url: "https://www.hyperplane.vc/team/vivjan-myrto/"
+      }
+    ]
+  },
+  "ed-sim": {
+    name: "Ed Sim",
+    firm: "Boldstart Ventures",
+    firmSlug: "boldstart-ventures",
+    title: "Founder",
+    joinedYear: 2010,
+    education: [
+      "BA Economics, Harvard College"
+    ],
+    previousExperience: [
+      "Co-Founder, MState — an enterprise blockchain lab run with IBM; early investments included Fireblocks",
+      "Co-Founder, Dawntreader Ventures (1998) — board seats included Greenplum, GoToMeeting and LivePerson",
+      "Quantitative trading models, J.P. Morgan"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1998",
+        event: "Co-founded Dawntreader Ventures."
+      },
+      {
+        year: "2010",
+        event: "Founded Boldstart Ventures with a $1M fund."
+      },
+      {
+        year: "2021",
+        event: "Appeared on the Forbes Midas Seed List top ten, repeated through 2025."
+      },
+      {
+        year: "2023",
+        event: "Ranked first on Business Insider's Seed 100, repeated in 2024."
+      }
+    ],
+    biography: "Ed Sim is founder of Boldstart Ventures, launched in 2010 with a $1M fund, pioneering the inception-investing model of backing technical founders before a company or product exists. He holds a BA in economics from Harvard and began his career at J.P. Morgan working on quantitative trading models, co-founding Dawntreader Ventures in 1998 before starting Boldstart.",
+    sources: [
+      {
+        label: "Boldstart Ventures — Ed Sim",
+        url: "https://boldstart.vc/team/ed-sim/"
+      },
+      {
+        label: "Venture Unlocked — Ed Sim on starting Boldstart",
+        url: "https://ventureunlocked.substack.com/p/boldstart-ventures-ed-sim-on-starting"
+      }
+    ]
+  },
+  "mallun-yen": {
+    name: "Mallun Yen",
+    firm: "Operator Collective",
+    firmSlug: "operator-collective",
+    title: "Founder, CEO & General Partner",
+    joinedYear: 2019,
+    education: [],
+    previousExperience: [
+      "Built up SaaStr, described as the world's largest B2B software community",
+      "RPX Corporation — built the company from zero to $100M revenue and an IPO within three years",
+      "VP of Worldwide Intellectual Property, Cisco",
+      "Co-Founder, ChIPsNetwork.org (2005) — a global nonprofit advancing women in tech, law and policy"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Pure Storage"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2005",
+        event: "Co-founded ChIPsNetwork.org."
+      },
+      {
+        year: "2019",
+        event: "Founded Operator Collective with a $45M debut fund."
+      }
+    ],
+    biography: "Mallun Yen is founder, chief executive and general partner of Operator Collective, launched in 2019 with a $45M debut fund. Before it she was VP of worldwide intellectual property at Cisco, then built RPX Corporation from zero to $100M in revenue and an IPO within three years, and later built up SaaStr. She co-founded the nonprofit ChIPsNetwork.org in 2005 and sits on the board of Pure Storage.",
+    sources: [
+      {
+        label: "Operator Collective — Team",
+        url: "https://www.operatorcollective.com/team"
+      },
+      {
+        label: "Forbes — Mallun Yen",
+        url: "https://www.forbes.com/profile/mallun-yen/"
+      }
+    ]
+  },
+  "david-coats": {
+    name: "David Coats",
+    firm: "Correlation Ventures",
+    firmSlug: "correlation-ventures",
+    title: "Managing Director & Co-Founder",
+    joinedYear: null,
+    education: [
+      "BA Biology, summa cum laude and Phi Beta Kappa, Princeton University (1987)",
+      "MBA, Harvard Business School"
+    ],
+    previousExperience: [
+      "Managing Director, Hamilton BioVentures (2002–2006) — board seats included PhotoThera, Transcept and Egea Biopharmaceuticals",
+      "Venture Partner, Windamere Venture Partners",
+      "President, Forge Medical Ventures — an incubator funded by Enterprise Partners, Mayfield Fund and Johnson & Johnson Development Corporation",
+      "Founder, Spine Wave",
+      "Director of Business Development, UroMed Corporation"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1987",
+        event: "Graduated from Princeton summa cum laude and Phi Beta Kappa."
+      },
+      {
+        year: "1997",
+        event: "Began his venture capital career."
+      },
+      {
+        year: "2002",
+        event: "Became managing director of Hamilton BioVentures."
+      },
+      {
+        year: "2023",
+        event: "Announced the close of Correlation Ventures' third fund in June."
+      }
+    ],
+    biography: "David Coats is managing director and co-founder of Correlation Ventures. He graduated summa cum laude and Phi Beta Kappa in biology from Princeton and holds an MBA from Harvard Business School. He spent his early career in life-sciences venture capital and as a medical-device entrepreneur — founding Spine Wave, leading Forge Medical Ventures and serving as managing director of Hamilton BioVentures — before co-founding Correlation Ventures, where he originated its predictive-analytics approach to venture investing.",
+    sources: [
+      {
+        label: "VC Sheet — David Coats",
+        url: "https://www.vcsheet.com/who/david-coats"
+      },
+      {
+        label: "Young Startup — David Coats",
+        url: "https://events.youngstartup.com/Speaker/david-coats/"
+      }
+    ]
+  },
+  "raymond-tonsing": {
+    name: "Raymond Tonsing",
+    firm: "Caffeinated Capital",
+    firmSlug: "caffeinated-capital",
+    title: "Founder & Partner",
+    joinedYear: 2008,
+    education: [
+      "BA, University of Colorado Boulder"
+    ],
+    previousExperience: [
+      "Partner, Akkadian Ventures — a secondaries fund providing liquidity to founders, early employees and angel investors of private high-growth technology companies",
+      "Helped develop and manage energy-industry information platforms Rigzone and Energy Central"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Onebrief",
+      "Saronic",
+      "Seneca",
+      "Twenty"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2008",
+        event: "Founded Caffeinated Capital as one of the first solo-GP venture funds."
+      },
+      {
+        year: "2025",
+        event: "Announced Fund V in January, targeting $400M with $160M already secured."
+      }
+    ],
+    biography: "Raymond Tonsing is founder and partner of Caffeinated Capital, which he started in 2008. As one of the first solo GPs he pioneered the single-partner fund model and scaled the firm to billions in assets. He holds a BA from the University of Colorado Boulder and began his career helping build the energy-industry platforms Rigzone and Energy Central before becoming a partner at secondaries firm Akkadian Ventures. His firm's own team page states he backed Affirm and Opendoor from seed through to IPO, alongside companies later acquired by BlackRock, Google, JPMorgan Chase, Meta and Spotify.",
+    sources: [
+      {
+        label: "Caffeinated Capital — Team",
+        url: "https://www.caffeinated.com/team"
+      },
+      {
+        label: "Crunchbase — Raymond Tonsing",
+        url: "https://www.crunchbase.com/person/raymond-tonsing"
+      }
+    ]
+  },
+  "michael-cardamone": {
+    name: "Michael Cardamone",
+    firm: "Forum Ventures",
+    firmSlug: "forum-ventures",
+    title: "Managing Partner & CEO",
+    joinedYear: 2014,
+    education: [
+      "MBA, Columbia Business School"
+    ],
+    previousExperience: [
+      "Business development, Box — one of the first 30 employees",
+      "Led partnerships, AcademixDirect"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2014",
+        event: "Founded Forum Ventures, originally as Acceleprise, after six-plus years in operating roles."
+      }
+    ],
+    biography: "Michael Cardamone is managing partner and chief executive of Forum Ventures, which he founded in 2014 as Acceleprise. He holds an MBA from Columbia Business School and spent six-plus years in operating roles beforehand, including as one of the first 30 employees at Box and leading partnerships at AcademixDirect. Under his leadership Forum has invested in several hundred B2B SaaS companies that have gone on to raise over $1B in follow-on funding.",
+    sources: [
+      {
+        label: "Forum Ventures — Team",
+        url: "https://www.forumvc.com/team"
+      },
+      {
+        label: "Crunchbase — Forum Ventures",
+        url: "https://www.crunchbase.com/organization/forumventures"
+      }
+    ]
+  },
+  "fady-yacoub": {
+    name: "Fady Yacoub",
+    firm: "HOF Capital",
+    firmSlug: "hof-capital",
+    title: "Partner",
+    joinedYear: 2016,
+    education: [],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2016",
+        event: "Co-founded HOF Capital with Hisham Elhaddad and Onsi Sawiris."
+      }
+    ],
+    biography: "Fady Yacoub is a partner and co-founder of HOF Capital, the global multi-stage venture firm he launched in 2016 with Hisham Elhaddad and Onsi Sawiris. Detailed prior career history and education were not found in available sourcing.",
+    sources: [
+      {
+        label: "HOF Capital — Team",
+        url: "https://hofcapital.com/team"
+      }
+    ]
+  },
+  "seth-bannon": {
+    name: "Seth Bannon",
+    firm: "Fifty Years",
+    firmSlug: "fifty-years",
+    title: "Founding Partner",
+    joinedYear: 2016,
+    education: [
+      "Attended Harvard University"
+    ],
+    previousExperience: [
+      "Founder of a Y Combinator-backed startup prior to Fifty Years"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2016",
+        event: "Co-founded Fifty Years with Ela Madej."
+      },
+      {
+        year: "2021",
+        event: "Fifty Years raises a $90M fund backed by dozens of unicorn founders."
+      }
+    ],
+    biography: "Seth Bannon is founding partner of Fifty Years, which he co-founded with Ela Madej in 2016. A Y Combinator alumnus and two-time Forbes 30 Under 30 honoree for social entrepreneurship, he built his career advocating for technology addressing sustainability, food and digital-divide challenges before turning to venture investing to back deep-tech founders tackling civilization-scale problems.",
+    sources: [
+      {
+        label: "Fifty Years — Team",
+        url: "https://fiftyyears.com/team"
+      },
+      {
+        label: "SOSV — Seth Bannon interview",
+        url: "https://medium.com/sosv/seth-bannon-founding-partner-at-fifty-years-on-how-science-startups-build-the-future-49fecf896774"
+      }
+    ]
+  },
+  "mitch-kapor": {
+    name: "Mitch Kapor",
+    firm: "Kapor Capital",
+    firmSlug: "kapor-capital",
+    title: "Co-Founder",
+    joinedYear: 2011,
+    education: [],
+    previousExperience: [
+      "Co-Founder, Lotus Development Corporation (1982) — creator of Lotus 1-2-3",
+      "Co-Founder and Chairman until 1994, Electronic Frontier Foundation (1990)",
+      "Founding Chair, Mozilla Foundation (2003)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "SMASH"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "1982",
+        event: "Co-founded Lotus Development Corporation, creator of Lotus 1-2-3."
+      },
+      {
+        year: "1990",
+        event: "Co-founded the Electronic Frontier Foundation."
+      },
+      {
+        year: "2003",
+        event: "Became founding chair of the Mozilla Foundation."
+      },
+      {
+        year: "2011",
+        event: "Co-founded Kapor Capital with Freada Kapor Klein."
+      },
+      {
+        year: "2022",
+        event: "Stepped back from day-to-day operations at Kapor Capital."
+      }
+    ],
+    biography: "Mitch Kapor is co-founder of Kapor Capital and a pioneer of the personal computing industry, best known for co-founding Lotus Development Corporation and creating Lotus 1-2-3 in 1982. He later co-founded the Electronic Frontier Foundation and served as founding chair of the Mozilla Foundation. In 2011 he and Freada Kapor Klein co-founded Kapor Capital around a gap-closing investment thesis, stepping back from day-to-day operations in 2022.",
+    sources: [
+      {
+        label: "Kapor Capital — About Us",
+        url: "https://www.kaporcapital.com/who-we-are/"
+      },
+      {
+        label: "Wikipedia — Kapor Capital",
+        url: "https://en.wikipedia.org/wiki/Kapor_Capital"
+      }
+    ]
+  },
+  "michael-dempsey": {
+    name: "Michael Dempsey",
+    firm: "Compound",
+    firmSlug: "compound",
+    title: "Managing Partner",
+    joinedYear: 2016,
+    education: [],
+    previousExperience: [
+      "Research and analysis covering emerging technologies including drones, space, VR/AR and food tech, CB Insights",
+      "Investment team, Rothenberg Ventures — led investing in space, robotics, drones and autonomous vehicles"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2016",
+        event: "Joined Compound as the firm relaunched under that name, later becoming managing partner."
+      }
+    ],
+    biography: "Michael Dempsey is managing partner of Compound. He began his career at CB Insights covering emerging technology categories including drones, space, VR/AR and food tech, before joining the investment team at Rothenberg Ventures to fund frontier-tech startups in space, robotics, drones and autonomous vehicles. He joined Compound in 2016 as it relaunched as a thesis-driven, research-centric firm.",
+    sources: [
+      {
+        label: "Compound — About us",
+        url: "https://www.compound.vc/about"
+      },
+      {
+        label: "Michael Dempsey — About",
+        url: "https://www.michaeldempsey.me/about.html"
+      }
+    ]
+  },
+  "miriam-rivera": {
+    name: "Miriam Rivera",
+    firm: "Ulu Ventures",
+    firmSlug: "ulu-ventures",
+    title: "Cofounder & Managing Director",
+    joinedYear: 2008,
+    education: [
+      "Four degrees from Stanford University, including a simultaneous JD/MBA"
+    ],
+    previousExperience: [
+      "VP & Deputy General Counsel, Google — joined in 2001 as the company's second attorney and helped build its global legal department",
+      "Counsel, Ariba",
+      "Co-Founder, Outcome Software"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Sesame Workshop"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2001",
+        event: "Joined Google as its second attorney."
+      },
+      {
+        year: "2008",
+        event: "Co-founded Ulu Ventures with Clint Korver."
+      },
+      {
+        year: "2022",
+        event: "Joined Sesame Workshop's board, chairing its HR and compensation committee."
+      },
+      {
+        year: "2025",
+        event: "Ulu closes Fund IV at $208M in February."
+      }
+    ],
+    biography: "Miriam Rivera is cofounder and managing director of Ulu Ventures, which she co-founded with Clint Korver in 2008 and which is among the largest Latina-led venture funds in the US. She holds four Stanford degrees including a simultaneous JD/MBA. Before Ulu she co-founded Outcome Software, practised law at Ariba, and became Google's second attorney in 2001, helping build its global legal department as the company scaled. She is a Stanford University trustee and Stanford Medal recipient.",
+    sources: [
+      {
+        label: "Ulu Ventures — Who We Are",
+        url: "https://uluventures.com/who-we-are/"
+      },
+      {
+        label: "Ulu Ventures — The Passionate Pioneer",
+        url: "https://uluventures.com/the-passionate-pioneer/"
+      }
+    ]
+  },
+  "chris-hemmeter": {
+    name: "Chris Hemmeter",
+    firm: "Thayer Ventures",
+    firmSlug: "thayer-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2008,
+    education: [],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2008",
+        event: "Co-founded Thayer Ventures with Mark Farrell."
+      },
+      {
+        year: "2024",
+        event: "Led the September combination with Derive Ventures to form Thayer Investment Partners."
+      }
+    ],
+    biography: "Chris Hemmeter is co-founder and managing partner of Thayer Ventures, now Thayer Investment Partners, which he co-founded with Mark Farrell as a venture firm dedicated exclusively to travel, transportation and hospitality technology. He led the firm's September 2024 combination with Derive Ventures. Detailed pre-Thayer career history was not found in available sourcing.",
+    sources: [
+      {
+        label: "Thayer Investment Partners",
+        url: "https://www.thayerventures.com/"
+      },
+      {
+        label: "Private Equity International — Thayer Ventures",
+        url: "https://www.privateequityinternational.com/institution-profiles/thayer-ventures.html"
+      }
+    ]
+  },
+  "serena-williams": {
+    name: "Serena Williams",
+    firm: "Serena Ventures",
+    firmSlug: "serena-ventures",
+    title: "Managing Partner",
+    joinedYear: 2014,
+    education: [],
+    previousExperience: [
+      "Professional tennis player, widely regarded as one of the greatest of all time"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2014",
+        event: "Began personal angel investing, later formalised as Serena Ventures."
+      },
+      {
+        year: "2022",
+        event: "Launched Serena Ventures' $111M debut institutional fund."
+      }
+    ],
+    biography: "Serena Williams is managing partner of Serena Ventures. A professional tennis champion widely regarded as one of the greatest athletes of all time, she began angel investing in 2014, building a track record over nine years that TechCrunch credits with 13 unicorns and six exits, before formalising Serena Ventures with a $111M debut institutional fund in 2022.",
+    sources: [
+      {
+        label: "Serena Ventures — Team",
+        url: "https://www.serenaventures.com/team"
+      },
+      {
+        label: "TechCrunch — Serena Williams on her expanding focus on VC",
+        url: "https://techcrunch.com/2022/08/24/serena-williams-will-discuss-her-expanding-focus-on-vc-at-tc-disrupt"
+      }
+    ]
+  },
 };
