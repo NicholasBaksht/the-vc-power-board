@@ -510,7 +510,11 @@ function computePowerAlerts(options) {
       const rec = FUNDS[slug];
       if (!firm || !rec || !Array.isArray(rec.funds)) return;
       const usable = rec.funds.filter(function (f) {
-        return f.sizeUSD !== null && f.vintageYear !== null && !f.combinedVehicles;
+        // status must be "closed": a fund still being raised has no final
+        // size, so comparing a target against a closed fund is not a step.
+        // "disputed" marks a record whose size sources genuinely conflict.
+        return f.sizeUSD !== null && f.vintageYear !== null &&
+               !f.combinedVehicles && f.status === 'closed' && !f.disputed;
       }).sort(function (a, b) { return a.vintageYear - b.vintageYear; });
       if (usable.length < 2) return;
       // Only compare within the same fund SERIES. Stripping the numeral
@@ -519,7 +523,9 @@ function computePowerAlerts(options) {
       // flagship is never measured against its opportunity vehicle.
       const family = {};
       usable.forEach(function (f) {
-        const key = f.name
+        // Prefer the series stated in the data. The name-stripping below is
+        // only a fallback for records captured before that field existed.
+        const key = f.series ? String(f.series).toLowerCase() : f.name
           .replace(/\(\s*\d{4}[^)]*\)/gi, ' ')
           .replace(/\b(19|20)\d{2}\b/g, ' ')
           .replace(/\b[IVXLC]+\b/g, ' ')
