@@ -953,6 +953,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/caffeinated-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/zetta-venture-partners/</loc>
     <priority>0.6</priority>
   </url>
@@ -1038,6 +1042,14 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/conviction/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/kapor-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/ulu-ventures/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1149,6 +1161,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/serena-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/cre-venture-capital/</loc>
     <priority>0.6</priority>
   </url>
@@ -1177,6 +1193,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/forum-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/nxtp-ventures/</loc>
     <priority>0.6</priority>
   </url>
@@ -1189,11 +1209,23 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/fifty-years/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/homebrew/</loc>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/compound/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/fly-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/thayer-ventures/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1470,6 +1502,10 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/hyperplane/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/hof-capital/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -2970,6 +3006,82 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/people/walter-baddoo/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/oliver-samwer/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/mike-collins/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/saeed-amidi/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/dayna-grayson/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/fabrice-grinda/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/alexa-von-tobel/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/vivjan-myrto/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/ed-sim/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/mallun-yen/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/david-coats/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/raymond-tonsing/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/michael-cardamone/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/fady-yacoub/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/seth-bannon/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/mitch-kapor/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/michael-dempsey/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/miriam-rivera/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/chris-hemmeter/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/serena-williams/</loc>
     <priority>0.5</priority>
   </url>
   <url>
