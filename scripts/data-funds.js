@@ -34,6 +34,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "SoftBank Vision Fund 1",
+      series: "softbank vision fund",
         vintageYear: 2017,
         announcedDate: "2017-05",
         sizeUSD: 98600000000,
@@ -47,6 +48,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "SoftBank Vision Fund 2",
+      series: "softbank vision fund",
         vintageYear: 2019,
         announcedDate: null,
         sizeUSD: 56000000000,
@@ -66,6 +68,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Fund I",
+      series: "fund",
         vintageYear: 2018,
         announcedDate: null,
         sizeUSD: 137000000,
@@ -79,6 +82,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund II",
+      series: "fund",
         vintageYear: 2020,
         announcedDate: null,
         sizeUSD: 250000000,
@@ -92,6 +96,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Advancement Initiative Growth Fund",
+      series: "advancement initiative growth fund",
         vintageYear: 2021,
         announcedDate: null,
         sizeUSD: 300000000,
@@ -105,6 +110,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund III",
+      series: "fund",
         vintageYear: 2022,
         announcedDate: "2022-04",
         sizeUSD: 460000000,
@@ -118,6 +124,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund IV and Series B Fund (combined close)",
+      series: "fund and series b fund (combined close)",
         vintageYear: 2026,
         announcedDate: "2026-06",
         sizeUSD: 850000000,
@@ -136,6 +143,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Fund I",
+      series: "fund",
         vintageYear: 2019,
         announcedDate: "2019-04",
         sizeUSD: 1250000000,
@@ -149,6 +157,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund II",
+      series: "fund",
         vintageYear: 2021,
         announcedDate: "2021-03",
         sizeUSD: 2000000000,
@@ -162,6 +171,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund III",
+      series: "fund",
         vintageYear: 2022,
         announcedDate: null,
         sizeUSD: 2500000000,
@@ -181,6 +191,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Fund I",
+      series: "fund",
         vintageYear: 2018,
         announcedDate: null,
         sizeUSD: 400000000,
@@ -194,6 +205,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund II",
+      series: "fund",
         vintageYear: 2021,
         announcedDate: "2021-11",
         sizeUSD: 2500000000,
@@ -207,6 +219,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund III",
+      series: "fund",
         vintageYear: 2024,
         announcedDate: "2024-06",
         sizeUSD: 850000000,
@@ -220,6 +233,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund IV",
+      series: "fund",
         vintageYear: 2026,
         announcedDate: "2026-07",
         sizeUSD: 1200000000,
@@ -238,6 +252,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Fund I",
+      series: "fund",
         vintageYear: 2018,
         announcedDate: "2018-09",
         sizeUSD: 11500000,
@@ -251,6 +266,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund II",
+      series: "fund",
         vintageYear: 2020,
         announcedDate: null,
         sizeUSD: 33600000,
@@ -264,6 +280,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund III",
+      series: "fund",
         vintageYear: 2022,
         announcedDate: "2022-09",
         sizeUSD: 46100000,
@@ -282,6 +299,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Addition One",
+      series: "addition",
         vintageYear: 2020,
         announcedDate: "2020-06",
         sizeUSD: 1300000000,
@@ -295,6 +313,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Addition Two",
+      series: "addition",
         vintageYear: 2020,
         announcedDate: "2020-10",
         sizeUSD: 1400000000,
@@ -308,6 +327,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Addition Three",
+      series: "addition",
         vintageYear: 2021,
         announcedDate: null,
         sizeUSD: 1400000000,
@@ -321,6 +341,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Addition Four",
+      series: "addition",
         vintageYear: 2022,
         announcedDate: null,
         sizeUSD: 1500000000,
@@ -340,6 +361,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Fund VIII",
+      series: "fund",
         vintageYear: 2022,
         announcedDate: "2022-01",
         sizeUSD: 2500000000,
@@ -353,6 +375,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Crypto Fund IV",
+      series: "crypto fund",
         vintageYear: 2022,
         announcedDate: "2022-05",
         sizeUSD: 4500000000,
@@ -366,6 +389,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Growth (2024 vintage)",
+      series: "growth",
         vintageYear: 2024,
         announcedDate: "2024-04",
         sizeUSD: 3500000000,
@@ -379,6 +403,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Infrastructure/AI (2024 vintage)",
+      series: "infrastructure/ai",
         vintageYear: 2024,
         announcedDate: "2024-04",
         sizeUSD: 1250000000,
@@ -392,6 +417,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Apps (2024 vintage)",
+      series: "apps",
         vintageYear: 2024,
         announcedDate: "2024-04",
         sizeUSD: 1000000000,
@@ -405,6 +431,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "American Dynamism (2024 vintage)",
+      series: "american dynamism",
         vintageYear: 2024,
         announcedDate: "2024-04",
         sizeUSD: 600000000,
@@ -418,6 +445,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Games Fund (2024 vintage)",
+      series: "games fund",
         vintageYear: 2024,
         announcedDate: "2024-04",
         sizeUSD: 600000000,
@@ -431,6 +459,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund IX",
+      series: "fund",
         vintageYear: 2024,
         announcedDate: "2024-05",
         sizeUSD: 1250000000,
@@ -444,6 +473,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Growth (2026 vintage)",
+      series: "growth",
         vintageYear: 2026,
         announcedDate: "2026-01",
         sizeUSD: 6750000000,
@@ -457,6 +487,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Apps (2026 vintage)",
+      series: "apps",
         vintageYear: 2026,
         announcedDate: "2026-01",
         sizeUSD: 1700000000,
@@ -470,6 +501,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Infrastructure (2026 vintage)",
+      series: "infrastructure",
         vintageYear: 2026,
         announcedDate: "2026-01",
         sizeUSD: 1700000000,
@@ -483,6 +515,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "American Dynamism (2026 vintage)",
+      series: "american dynamism",
         vintageYear: 2026,
         announcedDate: "2026-01",
         sizeUSD: 1176000000,
@@ -502,6 +535,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "NEA I",
+      series: "nea",
         vintageYear: 1978,
         announcedDate: null,
         sizeUSD: 16000000,
@@ -515,6 +549,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "NEA 15",
+      series: "nea",
         vintageYear: 2015,
         announcedDate: "2015-04",
         sizeUSD: 2800000000,
@@ -528,6 +563,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "NEA 15 Opportunity Fund",
+      series: "nea opportunity fund",
         vintageYear: 2015,
         announcedDate: "2015-04",
         sizeUSD: 350000000,
@@ -541,6 +577,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "NEA 16",
+      series: "nea",
         vintageYear: 2017,
         announcedDate: null,
         sizeUSD: 3300000000,
@@ -554,6 +591,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "NEA 18 and NEA 18 VGE (combined close)",
+      series: "nea and nea vge (combined close)",
         vintageYear: 2023,
         announcedDate: "2023-01",
         sizeUSD: 6200000000,
@@ -573,6 +611,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Growth Equity Partners Fund III",
+      series: "growth equity partners fund",
         vintageYear: 2024,
         announcedDate: null,
         sizeUSD: null,
@@ -586,6 +625,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Growth Venture Fund (additional commitment)",
+      series: "growth venture fund (additional commitment)",
         vintageYear: 2025,
         announcedDate: "2025-02",
         sizeUSD: null,
@@ -599,6 +639,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Growth Equity Partners (additional commitment)",
+      series: "growth equity partners (additional commitment)",
         vintageYear: 2025,
         announcedDate: "2025-02",
         sizeUSD: null,
@@ -617,6 +658,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Sinovation Fund I",
+      series: "sinovation fund",
         vintageYear: 2011,
         announcedDate: null,
         sizeUSD: 180000000,
@@ -630,6 +672,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Sinovation Fund II",
+      series: "sinovation fund",
         vintageYear: 2012,
         announcedDate: null,
         sizeUSD: 275000000,
@@ -643,6 +686,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "RMB Fund I",
+      series: "rmb fund",
         vintageYear: 2012,
         announcedDate: null,
         sizeUSD: 48500000,
@@ -656,6 +700,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Sinovation Fund III",
+      series: "sinovation fund",
         vintageYear: 2016,
         announcedDate: null,
         sizeUSD: 207000000,
@@ -669,6 +714,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "RMB Fund II",
+      series: "rmb fund",
         vintageYear: 2016,
         announcedDate: null,
         sizeUSD: 380000000,
@@ -682,6 +728,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Sinovation Fund IV",
+      series: "sinovation fund",
         vintageYear: 2018,
         announcedDate: "2018-04",
         sizeUSD: 500000000,
@@ -695,6 +742,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Artificial Intelligence Fund",
+      series: "artificial intelligence fund",
         vintageYear: 2018,
         announcedDate: "2018-05",
         sizeUSD: 391000000,
@@ -708,6 +756,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "RMB Fund III",
+      series: "rmb fund",
         vintageYear: 2019,
         announcedDate: null,
         sizeUSD: 361000000,
@@ -721,6 +770,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Sinovation Fund V",
+      series: "sinovation fund",
         vintageYear: 2022,
         announcedDate: null,
         sizeUSD: 203000000,
@@ -740,6 +790,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Greycroft VI",
+      series: "greycroft",
         vintageYear: 2020,
         announcedDate: null,
         sizeUSD: 310000000,
@@ -753,6 +804,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Greycroft Growth III",
+      series: "greycroft growth",
         vintageYear: 2020,
         announcedDate: null,
         sizeUSD: 368000000,
@@ -766,6 +818,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Greycroft Partners VII and Growth IV (combined close)",
+      series: "greycroft partners and growth (combined close)",
         vintageYear: 2023,
         announcedDate: "2023-04",
         sizeUSD: 980000000,
@@ -785,6 +838,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Fund IV",
+      series: "fund",
         vintageYear: 2025,
         announcedDate: null,
         sizeUSD: 275000000,
@@ -798,6 +852,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund IV Select",
+      series: "fund select",
         vintageYear: 2025,
         announcedDate: "2025-09",
         sizeUSD: 150000000,
@@ -811,6 +866,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund V",
+      series: "fund",
         vintageYear: null,
         announcedDate: null,
         sizeUSD: 625000000,
@@ -830,6 +886,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Revolution Ventures I",
+      series: "revolution ventures",
         vintageYear: 2013,
         announcedDate: "2013-09",
         sizeUSD: 200000000,
@@ -843,6 +900,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Revolution Growth III",
+      series: "revolution growth",
         vintageYear: 2016,
         announcedDate: "2016-06",
         sizeUSD: 525000000,
@@ -856,6 +914,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Revolution Ventures III",
+      series: "revolution ventures",
         vintageYear: 2019,
         announcedDate: null,
         sizeUSD: 215000000,
@@ -875,6 +934,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Rise of the Rest Seed Fund I",
+      series: "rise of the rest seed fund",
         vintageYear: 2017,
         announcedDate: "2017-12",
         sizeUSD: 150000000,
@@ -888,6 +948,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Rise of the Rest Seed Fund II",
+      series: "rise of the rest seed fund",
         vintageYear: 2019,
         announcedDate: "2019-10",
         sizeUSD: 150000000,
@@ -907,6 +968,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Homebrew I",
+      series: "homebrew",
         vintageYear: 2013,
         announcedDate: null,
         sizeUSD: 35000000,
@@ -920,6 +982,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Homebrew II",
+      series: "homebrew",
         vintageYear: 2015,
         announcedDate: null,
         sizeUSD: 50000000,
@@ -933,6 +996,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Homebrew III",
+      series: "homebrew",
         vintageYear: 2018,
         announcedDate: "2018-02",
         sizeUSD: 90000000,
@@ -946,6 +1010,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Homebrew IV",
+      series: "homebrew",
         vintageYear: null,
         announcedDate: null,
         sizeUSD: null,
@@ -965,6 +1030,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Fund I",
+      series: "fund",
         vintageYear: 2012,
         announcedDate: "2012-07",
         sizeUSD: 40000000,
@@ -978,6 +1044,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund II",
+      series: "fund",
         vintageYear: 2014,
         announcedDate: null,
         sizeUSD: 55000000,
@@ -991,6 +1058,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund III",
+      series: "fund",
         vintageYear: 2018,
         announcedDate: "2018-08",
         sizeUSD: 95000000,
@@ -1004,6 +1072,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund IV",
+      series: "fund",
         vintageYear: 2023,
         announcedDate: "2023-01",
         sizeUSD: 140000000,
@@ -1017,6 +1086,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Mustang Fund",
+      series: "mustang fund",
         vintageYear: 2023,
         announcedDate: "2023-01",
         sizeUSD: 120000000,
@@ -1036,6 +1106,7 @@ const FIRM_FUNDS = {
     funds: [
       {
         name: "Fund I",
+      series: "fund",
         vintageYear: 2013,
         announcedDate: null,
         sizeUSD: null,
@@ -1049,6 +1120,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund II",
+      series: "fund",
         vintageYear: 2017,
         announcedDate: null,
         sizeUSD: 125000000,
@@ -1062,6 +1134,7 @@ const FIRM_FUNDS = {
       },
       {
         name: "Fund III",
+      series: "fund",
         vintageYear: 2020,
         announcedDate: "2020-01",
         sizeUSD: 180000000,
@@ -1072,6 +1145,1197 @@ const FIRM_FUNDS = {
         combinedVehicles: false,
         confidence: "high",
         source: "https://www.prnewswire.com/news-releases/zetta-venture-partners-fuels-the-future-of-ai-with-180-million-fund-301040135.html"
+      }
+    ]
+  },
+  "bloomberg-beta": {
+    complete: true,
+    note: "Capitalised solely by Bloomberg L.P. with no outside LPs, so every vehicle is corporate. Fund IV's size was never published.",
+    funds: [
+      {
+        name: "Fund I",
+        series: "flagship",
+        vintageYear: 2013,
+        announcedDate: null,
+        sizeUSD: 75000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "corporate",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://grokipedia.com/page/bloomberg_beta"
+      },
+      {
+        name: "Fund II",
+        series: "flagship",
+        vintageYear: 2016,
+        announcedDate: "2016-07",
+        sizeUSD: 75000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "corporate",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://fortune.com/2016/07/19/bloomberg-is-back-with-another-venture-capital-fund"
+      },
+      {
+        name: "Fund III",
+        series: "flagship",
+        vintageYear: 2019,
+        announcedDate: "2019-10",
+        sizeUSD: 75000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "corporate",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://techcrunch.com/2019/10/18/bloomberg-beta-now-six-years-old-closes-its-third-75-million-fund/"
+      },
+      {
+        name: "Fund IV",
+        series: "flagship",
+        vintageYear: 2022,
+        announcedDate: null,
+        sizeUSD: null,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "corporate",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://grokipedia.com/page/bloomberg_beta"
+      }
+    ]
+  },
+  "craft-ventures": {
+    complete: true,
+    note: "Craft publishes individual sizes for each parallel vehicle rather than a combined total.",
+    funds: [
+      {
+        name: "Craft Ventures I",
+        series: "flagship",
+        vintageYear: 2017,
+        announcedDate: "2017-10",
+        sizeUSD: 350000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://news.crunchbase.com/news/craft-ventures-closes-43-more-cash-with-500m-fund-ii"
+      },
+      {
+        name: "Craft Ventures II",
+        series: "flagship",
+        vintageYear: 2019,
+        announcedDate: "2019-10",
+        sizeUSD: 500000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://techcrunch.com/2019/10/15/david-sackss-craft-ventures-just-closed-its-second-fund-with-500-million/"
+      },
+      {
+        name: "Craft Ventures III",
+        series: "flagship",
+        vintageYear: 2021,
+        announcedDate: null,
+        sizeUSD: 612000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.craftventures.com/articles/announcing-craft-iii-1-1-billion-for-saas-and-marketplaces"
+      },
+      {
+        name: "Craft Ventures Growth I",
+        series: "growth",
+        vintageYear: 2021,
+        announcedDate: null,
+        sizeUSD: 510000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.craftventures.com/articles/announcing-craft-iii-1-1-billion-for-saas-and-marketplaces"
+      },
+      {
+        name: "Craft Ventures IV",
+        series: "flagship",
+        vintageYear: 2023,
+        announcedDate: "2023-11",
+        sizeUSD: 712000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://medium.com/craft-ventures/announcing-1-3-billion-for-craft-ventures-iv-and-growth-ii-19ae15e705bc"
+      },
+      {
+        name: "Craft Ventures Growth II",
+        series: "growth",
+        vintageYear: 2023,
+        announcedDate: "2023-11",
+        sizeUSD: 608000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://medium.com/craft-ventures/announcing-1-3-billion-for-craft-ventures-iv-and-growth-ii-19ae15e705bc"
+      },
+      {
+        name: "Craft Ventures V",
+        series: "flagship",
+        vintageYear: 2026,
+        announcedDate: "2026-08",
+        sizeUSD: 1000000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "targeting",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://techstartups.com/2026/08/11/david-sacks-craft-ventures-targets-1-billion-for-first-new-fund-since-leaving-white-house/"
+      }
+    ]
+  },
+  "kaszek-ventures": {
+    complete: true,
+    note: "Complete numbered lineage with individual sizes; the 2023 $975M announcement was split by the firm itself.",
+    funds: [
+      {
+        name: "KV-I",
+        series: "flagship",
+        vintageYear: 2011,
+        announcedDate: null,
+        sizeUSD: 95000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.bloomberglinea.com/english/kaszek-raises-975m-targets-early-stage-and-mature-latin-american-startups/"
+      },
+      {
+        name: "KV-II",
+        series: "flagship",
+        vintageYear: 2014,
+        announcedDate: null,
+        sizeUSD: 135000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.bloomberglinea.com/english/kaszek-raises-975m-targets-early-stage-and-mature-latin-american-startups/"
+      },
+      {
+        name: "KV-III",
+        series: "flagship",
+        vintageYear: 2017,
+        announcedDate: null,
+        sizeUSD: 200000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.bloomberglinea.com/english/kaszek-raises-975m-targets-early-stage-and-mature-latin-american-startups/"
+      },
+      {
+        name: "Kaszek Ventures IV",
+        series: "flagship",
+        vintageYear: 2019,
+        announcedDate: null,
+        sizeUSD: 375000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.bloomberglinea.com/english/kaszek-raises-975m-targets-early-stage-and-mature-latin-american-startups/"
+      },
+      {
+        name: "Kaszek Ventures Opportunity I",
+        series: "opportunity",
+        vintageYear: 2019,
+        announcedDate: null,
+        sizeUSD: 225000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.bloomberglinea.com/english/kaszek-raises-975m-targets-early-stage-and-mature-latin-american-startups/"
+      },
+      {
+        name: "Kaszek Ventures V",
+        series: "flagship",
+        vintageYear: 2021,
+        announcedDate: null,
+        sizeUSD: 475000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://pitchbook.com/profiles/fund/18823-51F"
+      },
+      {
+        name: "Kaszek Ventures Opportunity II",
+        series: "opportunity",
+        vintageYear: 2021,
+        announcedDate: null,
+        sizeUSD: 525000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.bloomberglinea.com/english/kaszek-raises-975m-targets-early-stage-and-mature-latin-american-startups/"
+      },
+      {
+        name: "Kaszek Ventures VI",
+        series: "flagship",
+        vintageYear: 2023,
+        announcedDate: "2023-04",
+        sizeUSD: 540000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://techcrunch.com/2023/04/03/kaszek-closes-on-975m-across-two-new-funds-to-back-latin-american-startups"
+      },
+      {
+        name: "Kaszek Ventures Opportunity III",
+        series: "opportunity",
+        vintageYear: 2023,
+        announcedDate: "2023-04",
+        sizeUSD: 435000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://techcrunch.com/2023/04/03/kaszek-closes-on-975m-across-two-new-funds-to-back-latin-american-startups"
+      }
+    ]
+  },
+  "nfx": {
+    complete: true,
+    note: "Fund IV closed smaller than Fund III; the firm attributed this to lower early-stage check sizes rather than LP demand.",
+    funds: [
+      {
+        name: "Fund I",
+        series: "flagship",
+        vintageYear: 2017,
+        announcedDate: null,
+        sizeUSD: 150000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://news.crunchbase.com/seed/nfx-closes-on-pre-seed-and-seed-fund-3-at-450m/"
+      },
+      {
+        name: "Fund II",
+        series: "flagship",
+        vintageYear: 2019,
+        announcedDate: null,
+        sizeUSD: 275000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://news.crunchbase.com/seed/nfx-closes-on-pre-seed-and-seed-fund-3-at-450m/"
+      },
+      {
+        name: "Fund III",
+        series: "flagship",
+        vintageYear: 2021,
+        announcedDate: "2021-10",
+        sizeUSD: 450000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.nfx.com/post/announcing-fund-3"
+      },
+      {
+        name: "Fund IV",
+        series: "flagship",
+        vintageYear: 2024,
+        announcedDate: "2024-10",
+        sizeUSD: 325000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.calcalistech.com/ctechnews/article/bk2miixaxl"
+      }
+    ]
+  },
+  "toyota-ventures": {
+    complete: true,
+    note: "Subsidiary of Toyota Research Institute, funded from the parent balance sheet. The 2017/2019 funds predate the Frontier branding and are not retro-labelled.",
+    funds: [
+      {
+        name: "Fund I (Toyota AI Ventures)",
+        series: "flagship",
+        vintageYear: 2017,
+        announcedDate: "2017-07",
+        sizeUSD: 100000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "corporate",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.forbes.com/sites/alanohnsman/2017/07/11/toyota-plays-silicon-valley-vc-with-launch-of-100-million-ai-ventures-fund/"
+      },
+      {
+        name: "Fund II (Toyota AI Ventures)",
+        series: "flagship",
+        vintageYear: 2019,
+        announcedDate: "2019-05",
+        sizeUSD: 100000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "corporate",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://pressroom.toyota.com/toyota-ai-ventures-launch-new-100m-fund/"
+      },
+      {
+        name: "Toyota Ventures Climate Fund I",
+        series: "climate",
+        vintageYear: 2021,
+        announcedDate: null,
+        sizeUSD: 150000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "corporate",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://global.toyota/en/newsroom/corporate/35382520.html"
+      },
+      {
+        name: "Toyota Ventures Frontier Fund II",
+        series: "frontier",
+        vintageYear: 2024,
+        announcedDate: "2024-04",
+        sizeUSD: 150000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "corporate",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://pressroom.toyota.com/toyota-ventures-raises-another-300-million-to-expand-early-stage-investments-in-frontier-technology-and-climate-solutions/"
+      },
+      {
+        name: "Toyota Ventures Climate Fund II",
+        series: "climate",
+        vintageYear: 2024,
+        announcedDate: "2024-04",
+        sizeUSD: 150000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "corporate",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://pressroom.toyota.com/toyota-ventures-raises-another-300-million-to-expand-early-stage-investments-in-frontier-technology-and-climate-solutions/"
+      }
+    ]
+  },
+  "neo": {
+    complete: true,
+    note: "The 2023 $235M was split into $180M and $55M by TechCrunch, but neither piece was explicitly labelled with a fund number. One source gives $150M rather than $130M for the 2021 fund.",
+    funds: [
+      {
+        name: "Debut fund",
+        series: "flagship",
+        vintageYear: 2018,
+        announcedDate: "2018-08",
+        sizeUSD: 80000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://techcrunch.com/2018/08/neo-ali-partovi/"
+      },
+      {
+        name: "Fund II",
+        series: "flagship",
+        vintageYear: 2021,
+        announcedDate: null,
+        sizeUSD: 130000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://www.eaglerockcfo.com/blog/venture-capital-firms/neo-ventures-review"
+      },
+      {
+        name: "Fund III",
+        series: "flagship",
+        vintageYear: 2023,
+        announcedDate: "2023-05",
+        sizeUSD: 180000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://techcrunch.com/2023/05/23/vc-firm-neo/"
+      },
+      {
+        name: "Later-stage companion fund",
+        series: "opportunity",
+        vintageYear: 2023,
+        announcedDate: "2023-05",
+        sizeUSD: 55000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://techcrunch.com/2023/05/23/vc-firm-neo/"
+      },
+      {
+        name: "Fund IV",
+        series: "flagship",
+        vintageYear: 2025,
+        announcedDate: "2025-04",
+        sizeUSD: 320000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.tbpndigest.com/story/2025-04-16/ali-partovi-raises-320m-fund-iv-for-neo-silicon-valleys-most-selective-college-talent-incubator"
+      }
+    ]
+  },
+  "blume-ventures": {
+    complete: true,
+    note: "Recent AUM figures above $900M may point to an unannounced Fund V.",
+    funds: [
+      {
+        name: "Fund I",
+        series: "flagship",
+        vintageYear: 2011,
+        announcedDate: null,
+        sizeUSD: 22000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.ut-ec.co.jp/english/our_companies/blume/"
+      },
+      {
+        name: "Fund II",
+        series: "flagship",
+        vintageYear: 2015,
+        announcedDate: null,
+        sizeUSD: 60000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.ut-ec.co.jp/english/our_companies/blume/"
+      },
+      {
+        name: "Fund III",
+        series: "flagship",
+        vintageYear: 2018,
+        announcedDate: null,
+        sizeUSD: 102000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.ut-ec.co.jp/english/our_companies/blume/"
+      },
+      {
+        name: "Fund IV",
+        series: "flagship",
+        vintageYear: 2022,
+        announcedDate: "2022-12",
+        sizeUSD: 250000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.business-standard.com/article/companies/blume-ventures-announces-closing-its-fund-for-start-ups-at-250-mn-122120700792_1.html"
+      }
+    ]
+  },
+  "b-capital-group": {
+    complete: false,
+    note: "Ascent Fund I was never sized. Ascent Fund III is disputed: $307M reported November 2025 and $500M reported July 2026, which may be an interim and a final close of one fund or two separate vehicles.",
+    funds: [
+      {
+        name: "Growth Fund II",
+        series: "growth",
+        vintageYear: 2020,
+        announcedDate: "2020-06",
+        sizeUSD: 820000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.caproasia.com/2025/11/11/facebook-co-founder-eduardo-saverin-9-billion-b-capital-raised-307-million-for-early-stage-fund-b-capital-ascent-fund-iii/"
+      },
+      {
+        name: "Growth Fund III",
+        series: "growth",
+        vintageYear: 2023,
+        announcedDate: "2023-01",
+        sizeUSD: 2100000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.businesswire.com/news/home/20230119005125/en/B-Capital-Closes-Third-Growth-Fund-Series-at-2.1-Billion"
+      },
+      {
+        name: "B Capital Ascent Fund II",
+        series: "ascent",
+        vintageYear: 2022,
+        announcedDate: null,
+        sizeUSD: 254000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.forbes.com/sites/yessarrosendar/2026/07/08/billionaire-eduardo-saverin-backed-b-capital-raises-500-million-to-fund-early-stage-startups/"
+      },
+      {
+        name: "B Capital Opportunities Fund II",
+        series: "opportunities",
+        vintageYear: 2024,
+        announcedDate: "2024-03",
+        sizeUSD: 750000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.businesswire.com/news/home/20240318360069/en"
+      },
+      {
+        name: "B Capital Ascent Fund III",
+        series: "ascent",
+        vintageYear: 2026,
+        announcedDate: "2026-07",
+        sizeUSD: 500000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: true,
+        confidence: "low",
+        source: "https://www.forbes.com/sites/yessarrosendar/2026/07/08/billionaire-eduardo-saverin-backed-b-capital-raises-500-million-to-fund-early-stage-startups/"
+      }
+    ]
+  },
+  "eclipse-ventures": {
+    complete: false,
+    note: "Funds I-III were not found. Fund IV's own size was never stated.",
+    funds: [
+      {
+        name: "Fund IV",
+        series: "flagship",
+        vintageYear: 2021,
+        announcedDate: "2021-04",
+        sizeUSD: null,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://eclipse.capital/blog/eclipse-fund-iv/"
+      },
+      {
+        name: "Eclipse Fund V",
+        series: "flagship",
+        vintageYear: 2023,
+        announcedDate: "2023-04",
+        sizeUSD: 720000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://eclipse.capital/blog/forging-the-new-economy-eclipse-fund-v-and-early-growth-fund-ii/"
+      },
+      {
+        name: "Eclipse Early Growth Fund II",
+        series: "early-growth",
+        vintageYear: 2023,
+        announcedDate: "2023-04",
+        sizeUSD: 510000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://eclipse.capital/blog/forging-the-new-economy-eclipse-fund-v-and-early-growth-fund-ii/"
+      },
+      {
+        name: "Eclipse Fund VI",
+        series: "flagship",
+        vintageYear: 2026,
+        announcedDate: "2026-04",
+        sizeUSD: 720000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://eclipse.capital/blog/announcing-eclipse-fund-vi-and-early-growth-iii"
+      },
+      {
+        name: "Eclipse Early Growth Fund III",
+        series: "early-growth",
+        vintageYear: 2026,
+        announcedDate: "2026-04",
+        sizeUSD: 591000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://eclipse.capital/blog/announcing-eclipse-fund-vi-and-early-growth-iii"
+      }
+    ]
+  },
+  "breakthrough-energy-ventures": {
+    complete: true,
+    note: "BEV III's figure comes from an SEC Form D snapshot and the fund may have continued raising past it.",
+    funds: [
+      {
+        name: "BEV I",
+        series: "flagship",
+        vintageYear: 2016,
+        announcedDate: "2016-12",
+        sizeUSD: 1000000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.malaymail.com/news/tech-gadgets/2016/12/13/bill-gates-leads-us1b-fund-to-invest-in-clean-energy/1270927"
+      },
+      {
+        name: "BEV II",
+        series: "flagship",
+        vintageYear: 2021,
+        announcedDate: null,
+        sizeUSD: 1250000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.utilitydive.com/news/bill-gates-backed-energy-investment-firm-pulls-in-839m-for-new-climate-fund/723575/"
+      },
+      {
+        name: "BEV III",
+        series: "flagship",
+        vintageYear: 2024,
+        announcedDate: "2024-08",
+        sizeUSD: 839368421,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.utilitydive.com/news/bill-gates-backed-energy-investment-firm-pulls-in-839m-for-new-climate-fund/723575/"
+      }
+    ]
+  },
+  "pitango-venture-capital": {
+    complete: false,
+    note: "Pitango has raised roughly 14 funds over 32 years; only four fund events were sourced. Pitango First and HealthTech closed on a combined $300M with no individual split disclosed.",
+    funds: [
+      {
+        name: "Fund (2013 vintage)",
+        series: "flagship",
+        vintageYear: 2013,
+        announcedDate: "2013-10",
+        sizeUSD: 270000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://techcrunch.com/2013/10/01/pitango-closes-new-270m-fund-to-fuel-more-startups-coming-out-of-israel/"
+      },
+      {
+        name: "Pitango Growth (2020 vintage)",
+        series: "growth",
+        vintageYear: 2020,
+        announcedDate: null,
+        sizeUSD: 750000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://en.wikipedia.org/wiki/Pitango"
+      },
+      {
+        name: "Pitango First",
+        series: "first",
+        vintageYear: 2025,
+        announcedDate: "2025-11",
+        sizeUSD: null,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://en.globes.co.il/en/article-pitango-closes-300m-for-early-stage-and-healthcare-vc-funds-1001525720"
+      },
+      {
+        name: "Pitango HealthTech",
+        series: "healthtech",
+        vintageYear: 2025,
+        announcedDate: "2025-11",
+        sizeUSD: null,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://en.globes.co.il/en/article-pitango-closes-300m-for-early-stage-and-healthcare-vc-funds-1001525720"
+      }
+    ]
+  },
+  "peakspan-capital": {
+    complete: true,
+    note: "One press release confirms all three funds. PitchBook lists Fund III at $585M against the firm's own $567M.",
+    funds: [
+      {
+        name: "Fund I",
+        series: "flagship",
+        vintageYear: 2016,
+        announcedDate: "2016-01",
+        sizeUSD: 150000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.prnewswire.com/news-releases/peakspan-capital-closes-third-growth-fund-at-567-million-301463867.html"
+      },
+      {
+        name: "Fund II",
+        series: "flagship",
+        vintageYear: 2018,
+        announcedDate: "2018-12",
+        sizeUSD: 265000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.prnewswire.com/news-releases/peakspan-capital-closes-third-growth-fund-at-567-million-301463867.html"
+      },
+      {
+        name: "Fund III",
+        series: "flagship",
+        vintageYear: 2022,
+        announcedDate: "2022-01",
+        sizeUSD: 567000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.prnewswire.com/news-releases/peakspan-capital-closes-third-growth-fund-at-567-million-301463867.html"
+      }
+    ]
+  },
+  "felicis": {
+    complete: false,
+    note: "Funds II-VII were not sourced. The 2021 fund is reported as 'Fund XIII' across several syndicated articles, which cannot precede Fund IX and Fund X chronologically; recorded as Fund VIII with the conflict noted.",
+    funds: [
+      {
+        name: "Debut institutional fund",
+        series: "debut",
+        vintageYear: 2009,
+        announcedDate: null,
+        sizeUSD: 41000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://fortune.com/2025/06/12/exclusive-felicis-has-raised-900-million-tenth-fund/"
+      },
+      {
+        name: "Fund VIII",
+        series: "flagship",
+        vintageYear: 2021,
+        announcedDate: null,
+        sizeUSD: 600000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://techcrunch.com/2025/06/12/after-a-string-of-successes-early-stage-fund-felicis-raises-fresh-900m/"
+      },
+      {
+        name: "Fund IX",
+        series: "flagship",
+        vintageYear: 2023,
+        announcedDate: "2023-03",
+        sizeUSD: 825000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://x.com/asenkut/status/1631369495834136576"
+      },
+      {
+        name: "Fund X",
+        series: "flagship",
+        vintageYear: 2025,
+        announcedDate: "2025-06",
+        sizeUSD: 900000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://techcrunch.com/2025/06/12/after-a-string-of-successes-early-stage-fund-felicis-raises-fresh-900m/"
+      }
+    ]
+  },
+  "madrona": {
+    complete: false,
+    note: "Founded 1995; only the two most recent vintages were sourced. Acceleration Fund IV's individual size was never stated, only the $770M combined total.",
+    funds: [
+      {
+        name: "Madrona Venture Fund IX",
+        series: "flagship",
+        vintageYear: 2023,
+        announcedDate: null,
+        sizeUSD: 452000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://pitchbook.com/profiles/fund/22356-73F"
+      },
+      {
+        name: "Madrona Fund X",
+        series: "flagship",
+        vintageYear: 2025,
+        announcedDate: "2025-01",
+        sizeUSD: 490000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.businesswire.com/news/home/20250123249755/en/Madrona-Announces-$770-Million-in-New-Capital-for-Madrona-Fund-X-and-Acceleration-Fund-IV"
+      },
+      {
+        name: "Madrona Acceleration Fund IV",
+        series: "acceleration",
+        vintageYear: 2025,
+        announcedDate: "2025-01",
+        sizeUSD: null,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.businesswire.com/news/home/20250123249755/en/Madrona-Announces-$770-Million-in-New-Capital-for-Madrona-Fund-X-and-Acceleration-Fund-IV"
+      }
+    ]
+  },
+  "floodgate": {
+    complete: true,
+    note: "Funds I and II were never publicly announced by the firm. Floodgate drops roman numerals from Fund 6 onward. Funds III and IV have sizes but no sourced vintage year.",
+    funds: [
+      {
+        name: "Fund III",
+        series: "flagship",
+        vintageYear: null,
+        announcedDate: null,
+        sizeUSD: 73500000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://en.wikipedia.org/wiki/Floodgate_Fund"
+      },
+      {
+        name: "Fund IV",
+        series: "flagship",
+        vintageYear: null,
+        announcedDate: null,
+        sizeUSD: 75000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://en.wikipedia.org/wiki/Floodgate_Fund"
+      },
+      {
+        name: "Fund V",
+        series: "flagship",
+        vintageYear: 2014,
+        announcedDate: null,
+        sizeUSD: 76000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://techcrunch.com/2017/03/02/floodgate-closes-sixth-fund-with-131-million/"
+      },
+      {
+        name: "Fund 6",
+        series: "flagship",
+        vintageYear: 2017,
+        announcedDate: "2017-03",
+        sizeUSD: 131000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://medium.com/floodgate-fund/floodgate-fund-6-the-beginning-of-our-second-act-ea3c71a0f756"
+      },
+      {
+        name: "Fund 7",
+        series: "flagship",
+        vintageYear: 2021,
+        announcedDate: "2021-10",
+        sizeUSD: 146000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://en.wikipedia.org/wiki/Floodgate_Fund"
+      }
+    ]
+  },
+  "m25": {
+    complete: false,
+    note: "Fund II was never sized; Fund III's announcement describes it as nearly triple its predecessor, which is a comparative statement rather than a figure.",
+    funds: [
+      {
+        name: "Fund I",
+        series: "flagship",
+        vintageYear: 2015,
+        announcedDate: null,
+        sizeUSD: 1000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://wisconsintechnologycouncil.com/techcrunch-m25-announced-a-new-fund-worth-31-8-million/"
+      },
+      {
+        name: "Fund III",
+        series: "flagship",
+        vintageYear: 2021,
+        announcedDate: "2021-05",
+        sizeUSD: 31800000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://m25vc.medium.com/m25-announces-31-8m-fund-iii-to-expand-funding-of-midwest-based-startups-3e6a023e4e6c"
+      },
+      {
+        name: "Fund IV",
+        series: "flagship",
+        vintageYear: 2025,
+        announcedDate: "2025-05",
+        sizeUSD: 36500000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://blog.midweststartups.com/m25-celebrates-10-years-announces-fund-iv-50f9c15e5304"
       }
     ]
   },
