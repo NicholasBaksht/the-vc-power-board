@@ -45,7 +45,7 @@ const SECTOR_MAP = {
     label: 'Healthcare',
     slug: 'healthcare',
     description: 'healthcare, biotech, and life sciences',
-    rawTags: ['Healthcare', 'Health', 'Healthtech', 'Health Tech', 'Healthcare IT', 'Digital Health', 'Biotech', 'Pharmaceuticals', 'Diagnostics', 'Therapeutics', 'Life Sciences', 'Human Health', 'Medical Devices'],
+    rawTags: ['Healthcare', 'Health', 'Healthtech', 'Health Tech', 'Healthcare IT', 'Digital Health', 'Biotech', 'Pharmaceuticals', 'Diagnostics', 'Therapeutics', 'Life Sciences', 'Human Health', 'Medical Devices', 'Synthetic Biology'],
   },
   'climate': {
     label: 'Climate & Energy',
@@ -63,13 +63,13 @@ const SECTOR_MAP = {
     label: 'Enterprise Software',
     slug: 'enterprise-software',
     description: 'enterprise software, SaaS, and B2B technology',
-    rawTags: ['Enterprise Software', 'Enterprise', 'Enterprise Infrastructure', 'Software', 'Business Software', 'B2B', 'B2B Software', 'Cloud Software', 'SaaS', 'Vertical SaaS', 'Infrastructure Software', 'Ecommerce Infrastructure', 'Future of Work', 'B2B Technology'],
+    rawTags: ['Enterprise Software', 'Enterprise', 'Enterprise Infrastructure', 'Software', 'Business Software', 'B2B', 'B2B Software', 'Cloud Software', 'SaaS', 'Vertical SaaS', 'Infrastructure Software', 'Ecommerce Infrastructure', 'Future of Work', 'B2B Technology', 'Enterprise Applications'],
   },
   'consumer': {
     label: 'Consumer',
     slug: 'consumer',
     description: 'consumer internet, media, and direct-to-consumer brands',
-    rawTags: ['Consumer', 'Consumer Internet', 'Consumer Tech', 'Media', 'Media Tech', 'Beauty & Personal Care', 'Ecommerce', 'Retail', 'Gaming', 'Consumer Products', 'Proptech'],
+    rawTags: ['Consumer', 'Consumer Internet', 'Consumer Tech', 'Media', 'Media Tech', 'Beauty & Personal Care', 'Ecommerce', 'Retail', 'Gaming', 'Consumer Products', 'Proptech', 'Hospitality'],
   },
   'deep-tech': {
     label: 'Deep Tech',
@@ -111,7 +111,7 @@ const SECTOR_MAP = {
     label: 'Industrial & Manufacturing Technology',
     slug: 'industrial-tech',
     description: 'industrial technology, manufacturing, and IoT',
-    rawTags: ['Manufacturing', 'Industrial Technology', 'IoT', 'Hardware', '5G', 'Industrial Tech', 'Construction Tech', 'Smart Cities', 'Critical Infrastructure', 'Industrial Manufacturing', 'Automation'],
+    rawTags: ['Manufacturing', 'Industrial Technology', 'IoT', 'Hardware', '5G', 'Industrial Tech', 'Construction Tech', 'Smart Cities', 'Critical Infrastructure', 'Industrial Manufacturing', 'Automation', 'Advanced Manufacturing'],
   },
 };
 
