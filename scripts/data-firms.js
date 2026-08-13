@@ -57,7 +57,7 @@ const firms = [
   sectors: ["Fintech", "AI", "Healthcare"],
   signatureExit: "No single defined public exit documented — Speedinvest's portfolio includes fintech infrastructure companies like Bitpanda",
   slug: "speedinvest",
-  website: null,
+  website: 'https://www.speedinvest.com/',
   short: "Speedinvest",
   founded: 2011,
   hq: "Vienna, Austria",
@@ -99,7 +99,7 @@ const firms = [
   sectors: ["Fintech", "Marketplaces", "Healthcare"],
   signatureExit: "Cornershop's acquisition by Uber — an early ALLVP investment and one of the defining exits in Mexican tech",
   slug: "allvp",
-  website: null,
+  website: 'https://www.hi.vc/',
   short: "ALLVP",
   founded: 2012,
   hq: "Mexico City, Mexico",
@@ -6004,7 +6004,7 @@ holdings: []
     sectors: ["Post-Seed / Early-Stage Technology (Generalist)"],
     signatureExit: "No public exit yet documented — Bullpen's distinct 'post-seed' strategy focuses on backing overlooked companies after their earliest funding round",
     slug: "bullpen-capital",
-    website: "https://www.bullpencapital.com",
+    website: 'https://bullpencap.com/',
     short: "Bullpen Capital",
     founded: 2010,
     hq: "San Francisco, CA",
@@ -7060,7 +7060,7 @@ holdings: []
     sectors: ["Infrastructure", "Data", "Security", "Developer Tooling"],
     signatureExit: "No public exit yet — Modern Technical Fund closed its debut fund in 2025 and is still building its earliest cohort of technical founders",
     slug: "modern-technical-fund",
-    website: "https://moderntechnical.com",
+    website: 'https://moderntechnicalfund.com/',
     short: "Modern Technical Fund",
     founded: 2025,
     hq: "San Francisco, CA",
@@ -8129,7 +8129,7 @@ holdings: []
       "Fintech"
     ],
     slug: "plural",
-    website: null,
+    website: 'https://www.pluralplatform.com/',
     short: "Plural",
     founded: 2022,
     hq: "London, UK",
@@ -8426,7 +8426,7 @@ holdings: []
       "Enterprise Software"
     ],
     slug: "heavybit",
-    website: null,
+    website: 'https://heavybit.com/',
     short: "Heavybit",
     founded: 2013,
     hq: "San Francisco, CA",
@@ -8473,7 +8473,7 @@ holdings: []
       "Consumer"
     ],
     slug: "blume-ventures",
-    website: null,
+    website: 'https://blume.vc/',
     short: "Blume",
     founded: 2010,
     hq: "Mumbai, India",
@@ -8568,7 +8568,7 @@ holdings: []
       "Fintech"
     ],
     slug: "shunwei-capital",
-    website: null,
+    website: 'https://shunwei.com/',
     short: "Shunwei",
     founded: 2011,
     hq: "Beijing, China",
@@ -8644,7 +8644,7 @@ holdings: []
       "Logistics"
     ],
     slug: "nxtp-ventures",
-    website: null,
+    website: 'https://nxtp.vc/',
     short: "NXTP",
     founded: 2011,
     hq: "Buenos Aires, Argentina",
@@ -8676,7 +8676,7 @@ holdings: []
       "Climate"
     ],
     slug: "3one4-capital",
-    website: null,
+    website: 'https://3one4capital.com/',
     short: "3one4",
     founded: 2015,
     hq: "Bengaluru, India",
@@ -8718,7 +8718,7 @@ holdings: []
       "SaaS"
     ],
     slug: "india-quotient",
-    website: null,
+    website: 'https://indiaquotient.in/',
     short: "India Quotient",
     founded: 2013,
     hq: "Mumbai, India",
@@ -8816,7 +8816,7 @@ holdings: []
       "SaaS"
     ],
     slug: "prime-venture-partners",
-    website: null,
+    website: 'https://www.primevp.in/',
     short: "Prime",
     founded: 2011,
     hq: "Bengaluru, India",
@@ -8863,7 +8863,7 @@ holdings: []
       "Logistics"
     ],
     slug: "4dx-ventures",
-    website: null,
+    website: 'https://4dxventures.com/',
     short: "4DX",
     founded: 2017,
     hq: "Brooklyn, NY",
@@ -9231,6 +9231,432 @@ holdings: []
       {
         year: "2023",
         event: "Third fund closed in June at $130M, alongside the promotions of Wesley Barrow and Moiz Saifee."
+      }
+    ],
+    holdings: []
+  },
+  {
+    name: "Caffeinated Capital",
+    short: "Caffeinated Capital",
+    slug: "caffeinated-capital",
+    founded: 2008,
+    hq: "San Francisco, CA",
+    aum: "$400M target, Fund V, announced January 2025 ($160M secured at announcement)",
+    website: "https://www.caffeinated.com",
+    rank: null,
+    sectors: [
+      "Enterprise Applications",
+      "Fintech",
+      "Deep Tech",
+      "AI",
+      "Proptech",
+      "Insurtech",
+      "Life Sciences",
+      "Healthcare",
+      "Climate",
+      "Defense"
+    ],
+    thesis: "A thesis- and stage-agnostic firm that partners with founders at the inception stage and invests throughout the life of the company, led by solo GP Raymond Tonsing. Known for being first money into breakout companies before consensus forms, with particular recent conviction in defense technology and hard engineering.",
+    signatureExit: "Affirm and Opendoor, both of which the firm's own team page states Raymond Tonsing backed from seed through to IPO.",
+    leadership: [
+      {
+        name: "Raymond Tonsing",
+        role: "Founder & Partner",
+        profileSlug: "raymond-tonsing"
+      },
+      {
+        name: "Varun Gupta",
+        role: "Partner"
+      },
+      {
+        name: "Matthew Volosin",
+        role: "Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2008",
+        event: "Raymond Tonsing founds Caffeinated Capital as one of the first solo-GP venture funds."
+      },
+      {
+        year: "2025",
+        event: "Fund V announced in January targeting $400M, with $160M already secured."
+      }
+    ],
+    holdings: []
+  },
+  {
+    name: "Forum Ventures",
+    short: "Forum Ventures",
+    slug: "forum-ventures",
+    founded: 2014,
+    hq: "New York, NY",
+    aum: "$100M+ across three investment vehicles",
+    website: "https://www.forumvc.com",
+    rank: null,
+    sectors: [
+      "B2B Software",
+      "Vertical SaaS",
+      "Fintech",
+      "Health Tech",
+      "Future of Work",
+      "Supply Chain",
+      "Ecommerce Infrastructure",
+      "AI",
+      "Frontier Technologies"
+    ],
+    thesis: "A founder-first fund, accelerator and AI venture studio committed to the B2B SaaS journey from zero to one. Operates three engagement models: an accelerator with small cohorts, an AI-focused venture studio building companies from scratch alongside founders, and a traditional pre-seed and seed fund.",
+    signatureExit: null,
+    leadership: [
+      {
+        name: "Michael Cardamone",
+        role: "Managing Partner & CEO",
+        profileSlug: "michael-cardamone"
+      },
+      {
+        name: "Jonah Midanik",
+        role: "General Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2014",
+        event: "Founded as Acceleprise by Michael Cardamone, later rebranded to Forum Ventures."
+      }
+    ],
+    holdings: []
+  },
+  {
+    name: "HOF Capital",
+    short: "HOF Capital",
+    slug: "hof-capital",
+    founded: 2016,
+    hq: "New York, NY",
+    aum: "Not publicly disclosed",
+    website: "https://hofcapital.com",
+    rank: null,
+    sectors: [
+      "Artificial Intelligence",
+      "Fintech",
+      "Biotech",
+      "Defense Tech",
+      "Consumer Tech",
+      "Climate",
+      "Cybersecurity",
+      "Enterprise Software",
+      "Robotics",
+      "Semiconductors"
+    ],
+    thesis: "Operates under a long-term thesis it calls 'March to Abundance' — backing ambitious founders working on fundamental technology and business-model innovations rather than safe ventures built on proven technology. Positions itself as an idea-to-IPO investor, drawing on a network of over 200 families and organizations across dozens of countries to facilitate cross-border deals.",
+    signatureExit: null,
+    leadership: [
+      {
+        name: "Hisham Elhaddad",
+        role: "Managing Partner"
+      },
+      {
+        name: "Onsi Sawiris",
+        role: "Partner"
+      },
+      {
+        name: "Fady Yacoub",
+        role: "Partner",
+        profileSlug: "fady-yacoub"
+      }
+    ],
+    timeline: [
+      {
+        year: "2016",
+        event: "Founded by Fady Yacoub, Hisham Elhaddad and Onsi Sawiris."
+      },
+      {
+        year: "2022",
+        event: "Raised a $300M fund dedicated to a specific thematic focus."
+      }
+    ],
+    holdings: []
+  },
+  {
+    name: "Fifty Years",
+    short: "Fifty Years",
+    slug: "fifty-years",
+    founded: 2016,
+    hq: "San Francisco, CA",
+    aum: "$90M fund raised in 2021, following an initial $5M first fund",
+    website: "https://fiftyyears.com",
+    rank: null,
+    sectors: [
+      "Deep Tech",
+      "Climate",
+      "Synthetic Biology",
+      "Food & Agriculture",
+      "Aerospace",
+      "Health",
+      "Advanced Manufacturing"
+    ],
+    thesis: "Backs mission-driven, often scientist- and PhD-founders using deep technology to tackle civilization-scale problems — climate change, disease, malnutrition and global connectivity — while explicitly aiming for large financial returns. Named for Winston Churchill's 1931 essay 'Fifty Years Hence', and runs a company-builder programme helping scientists and engineers become founders.",
+    signatureExit: null,
+    leadership: [
+      {
+        name: "Ela Madej",
+        role: "Founding Partner"
+      },
+      {
+        name: "Seth Bannon",
+        role: "Founding Partner",
+        profileSlug: "seth-bannon"
+      }
+    ],
+    timeline: [
+      {
+        year: "2016",
+        event: "Founded by Seth Bannon and Ela Madej."
+      },
+      {
+        year: "2021",
+        event: "$90M fund raised, backed by dozens of unicorn founders."
+      }
+    ],
+    holdings: []
+  },
+  {
+    name: "Kapor Capital",
+    short: "Kapor Capital",
+    slug: "kapor-capital",
+    founded: 2011,
+    hq: "Oakland, CA",
+    aum: "$224M (as of 2023)",
+    website: "https://www.kaporcapital.com",
+    rank: null,
+    sectors: [
+      "Social-Impact Software",
+      "Edtech",
+      "Health Tech",
+      "Fintech",
+      "Future of Work"
+    ],
+    thesis: "A 'gap-closing' investment thesis: backing founders explicitly building companies that close gaps of access and opportunity for low-income communities and communities of colour, on the belief that this can be pursued as core business strategy rather than philanthropy and can deliver strong financial returns without a concessionary trade-off.",
+    signatureExit: null,
+    leadership: [
+      {
+        name: "Brian Dixon",
+        role: "Managing Partner"
+      },
+      {
+        name: "Batul Joffrey",
+        role: "Partner"
+      },
+      {
+        name: "Mitch Kapor",
+        role: "Co-Founder",
+        profileSlug: "mitch-kapor"
+      }
+    ],
+    timeline: [
+      {
+        year: "2011",
+        event: "Founded by Mitch Kapor and Freada Kapor Klein; invests exclusively in impact startups."
+      },
+      {
+        year: "2015",
+        event: "Brian Dixon becomes the youngest Black partner at Kapor Capital and in Silicon Valley."
+      },
+      {
+        year: "2021",
+        event: "Brian Dixon and Ulili Onovakpuri become co-managing partners."
+      },
+      {
+        year: "2022",
+        event: "Mitch Kapor and Freada Kapor Klein step back from day-to-day operations."
+      }
+    ],
+    holdings: []
+  },
+  {
+    name: "Compound",
+    short: "Compound",
+    slug: "compound",
+    founded: 2016,
+    hq: "New York, NY",
+    aum: "$85M",
+    website: "https://www.compound.vc",
+    rank: null,
+    sectors: [
+      "AI/ML",
+      "Robotics",
+      "Biotech",
+      "Crypto",
+      "Energy",
+      "Deep Tech"
+    ],
+    thesis: "A thesis-driven, research-centric firm that generates original investment theses through research and publication rather than following market trends, then invests in founders building toward those futures. Focuses on contrarian, white-space startups tackling scientific and technical breakthroughs, seeking technical founders with evidence of original research.",
+    signatureExit: null,
+    leadership: [
+      {
+        name: "Michael Dempsey",
+        role: "Managing Partner",
+        profileSlug: "michael-dempsey"
+      },
+      {
+        name: "David Hirsch",
+        role: "General Partner"
+      },
+      {
+        name: "Tara Eckert",
+        role: "CFO"
+      }
+    ],
+    timeline: [
+      {
+        year: "2016",
+        event: "Michael Dempsey joins as the firm relaunches under the Compound name, having previously operated as Metamorphic Ventures."
+      }
+    ],
+    holdings: []
+  },
+  {
+    name: "Ulu Ventures",
+    short: "Ulu Ventures",
+    slug: "ulu-ventures",
+    founded: 2008,
+    hq: "Palo Alto, CA",
+    aum: "$208M Fund IV close, February 2025, bringing total firm AUM to approximately $400M",
+    website: "https://uluventures.com",
+    rank: null,
+    sectors: [
+      "Enterprise Software",
+      "Fintech",
+      "Consumer",
+      "Health",
+      "Sustainability",
+      "Edtech",
+      "Digital Health"
+    ],
+    thesis: "A quantitative, bias-minimising approach to seed-stage investing built on the belief that diversity is profitable — using a disciplined, repeatable decision process grounded in structured judgement and probabilistic reasoning to analyse risk-reward trade-offs. More than three-quarters of the entrepreneurs across its funds are women, minority, underrepresented minority and/or immigrant founders.",
+    signatureExit: null,
+    leadership: [
+      {
+        name: "Miriam Rivera",
+        role: "Cofounder & Managing Director",
+        profileSlug: "miriam-rivera"
+      },
+      {
+        name: "Clint Korver",
+        role: "Cofounder & Managing Director"
+      },
+      {
+        name: "Steve Reale",
+        role: "General Partner & CFO"
+      }
+    ],
+    timeline: [
+      {
+        year: "2008",
+        event: "Founded in Palo Alto by Miriam Rivera and Clint Korver."
+      },
+      {
+        year: "2022",
+        event: "Kathy Chen and Nancy Torres promoted to partner."
+      },
+      {
+        year: "2025",
+        event: "Fund IV closes in February at $208M, more than 50% larger than Fund III."
+      }
+    ],
+    holdings: []
+  },
+  {
+    name: "Thayer Ventures",
+    short: "Thayer Ventures",
+    slug: "thayer-ventures",
+    founded: 2008,
+    hq: "San Francisco, CA",
+    aum: "$80M Fund III close, 2020, with over $300M deployed across four active vehicles",
+    website: "https://www.thayerventures.com",
+    rank: null,
+    sectors: [
+      "Travel",
+      "Transportation",
+      "Hospitality",
+      "Mobility",
+      "Proptech"
+    ],
+    thesis: "A US venture platform focused exclusively on technology innovation across the global travel, transportation and hospitality industries. Prioritises early-stage B2B companies while selectively pursuing seed, later-stage and B2C deals, and will lead rounds. Differentiates through a network of industry advisors and LPs spanning founders and former chief executives across the travel sector.",
+    signatureExit: null,
+    leadership: [
+      {
+        name: "Chris Hemmeter",
+        role: "Co-Founder & Managing Partner",
+        profileSlug: "chris-hemmeter"
+      },
+      {
+        name: "Mark Farrell",
+        role: "Co-Founder"
+      },
+      {
+        name: "Tyler Carrico",
+        role: "Managing Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2008",
+        event: "Firm founded; its own site dates its travel technology investing to this year."
+      },
+      {
+        year: "2020",
+        event: "Fund III closes at $80M."
+      },
+      {
+        year: "2024",
+        event: "Combines with Derive Ventures in September to form Thayer Investment Partners."
+      }
+    ],
+    holdings: []
+  },
+  {
+    name: "Serena Ventures",
+    short: "Serena Ventures",
+    slug: "serena-ventures",
+    founded: 2014,
+    hq: "San Francisco, CA",
+    aum: "$111M debut institutional fund, announced 2022",
+    website: "https://www.serenaventures.com",
+    rank: null,
+    sectors: [
+      "Fintech",
+      "Ecommerce",
+      "Health",
+      "Consumer",
+      "Enterprise Software",
+      "Media",
+      "Web3"
+    ],
+    thesis: "Treats the systematic underfunding of women and founders of colour as a market inefficiency rather than a charitable cause, with the large majority of the portfolio founded by women and people of colour. Leverages networks in elite sport, entertainment and communities of colour to source deal flow conventional firms do not reach, primarily co-leading or following strong lead investors.",
+    signatureExit: null,
+    leadership: [
+      {
+        name: "Serena Williams",
+        role: "Managing Partner",
+        profileSlug: "serena-williams"
+      },
+      {
+        name: "Beth Ferreira",
+        role: "General Partner"
+      },
+      {
+        name: "Sharla Grass",
+        role: "Partner"
+      }
+    ],
+    timeline: [
+      {
+        year: "2014",
+        event: "Serena Williams begins angel investing, later formalised as Serena Ventures."
+      },
+      {
+        year: "2022",
+        event: "$111M inaugural institutional fund announced."
       }
     ],
     holdings: []
