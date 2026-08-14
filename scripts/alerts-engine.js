@@ -56,6 +56,15 @@ const POWER_ALERT_CONFIG = {
                                // not news. 11 of 12 firms invested in AI - true,
                                // and far too obvious to occupy a board slot.
 
+  // --- deal recency (new_investments) ---
+  newInvestmentWindowDays: 90, // lookback for "recently announced"
+  minNewInvestments: 4,        // disclosed rounds in the window before it is news
+  maxDealDataAgeDays: 30,      // if the newest deal on file is older than this, the
+                               // whole alert type is withheld. A recency claim built
+                               // on stale data does not degrade gracefully - it
+                               // quietly reports every firm as dormant. Withholding
+                               // is the only safe failure mode.
+
   // --- effect-size thresholds ---
   minPointChange: 3,           // percentage-point move to be worth an alert
   partnerHireWindowFrom: 2015, // hires counted from this year
@@ -73,7 +82,6 @@ const POWER_ALERT_CONFIG = {
 const UNSUPPORTED_ALERTS = {
   sector_exposure_change: 'firm.sectors is a single current list with no history - a 31% -> 42% exposure change cannot be derived.',
   investment_activity_30d: 'no dated per-investment records exist; holdings carry investedYear on only 40 of 283 rows.',
-  new_investments: 'no deal-level feed in the dataset.',
   // partner_departures is IMPLEMENTED as of the team-snapshot crawler
   // (see snapshot_partner_departure below). It stays listed here until a
   // second capture exists, because one snapshot cannot be diffed.
@@ -852,6 +860,132 @@ function computePowerAlerts(options) {
     });
   }
 
+  /* --- 11. RECENTLY DISCLOSED INVESTMENTS ---
+     "Firm X has at least N disclosed investments announced in the
+     last 90 days."
+
+     Two properties make this safe despite the sampling caps:
+
+       1. IT IS A FLOOR, AND THE COPY SAYS SO. Each firm contributed
+          at most a fixed number of most-recent deals, so a firm whose
+          entire sample lands inside the window is CENSORED - its true
+          count is unknown and higher. atCap flags exactly that.
+
+       2. THE BIAS RUNS IN THE SAFE DIRECTION. A firm that publishes
+          no news is under-counted and simply fails the threshold. Poor
+          press coverage can only hide a firm from this alert, never
+          invent activity for one. Every counted round carries its own
+          source URL.
+
+     The staleness guard is the load-bearing part. Deal data arrives in
+     hand-assembled batches, so "the last 90 days" silently becomes a
+     lie as the file ages: counts collapse toward zero and the busiest
+     firms read as dormant. Rather than degrade, the type withholds
+     entirely once the newest deal on file passes maxDealDataAgeDays. */
+  if (!DEALS || !DEALS.length) {
+    skip('new_investments', 'FIRM_DEALS not loaded');
+  } else {
+    // Only full ISO dates can support a day-precision window. A
+    // month-precision row cannot say which side of a cutoff it falls on.
+    // Future dates are dropped rather than trusted: a typo'd year would
+    // both inflate the count AND push asOf forward, which would make
+    // ageDays negative and silently disable the staleness guard below.
+    const nowMs = Date.parse(generatedAt);
+    const dated = DEALS.filter(function (d) {
+      if (!d.firmSlug || !d.announcedDate) return false;
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(String(d.announcedDate))) return false;
+      return Date.parse(d.announcedDate + 'T00:00:00Z') <= nowMs;
+    });
+    const asOf = dated.reduce(function (m, d) {
+      return !m || d.announcedDate > m ? d.announcedDate : m;
+    }, null);
+    const ageDays = asOf
+      ? Math.floor((Date.parse(generatedAt) - Date.parse(asOf + 'T00:00:00Z')) / 86400000)
+      : null;
+
+    if (!dated.length) {
+      skip('new_investments', 'no deal rows carry a full day-precision date');
+    } else if (ageDays > cfg.maxDealDataAgeDays) {
+      skip('new_investments', 'deal data is ' + ageDays + ' days stale (newest ' + asOf +
+        '); a ' + cfg.newInvestmentWindowDays + '-day recency claim needs data no older than ' +
+        cfg.maxDealDataAgeDays + ' days');
+    } else {
+      const cutoffMs = Date.parse(generatedAt) - cfg.newInvestmentWindowDays * 86400000;
+      const totalBySlug = {};
+      DEALS.forEach(function (d) {
+        if (d.firmSlug) totalBySlug[d.firmSlug] = (totalBySlug[d.firmSlug] || 0) + 1;
+      });
+      const inWindow = {};
+      dated.forEach(function (d) {
+        if (Date.parse(d.announcedDate + 'T00:00:00Z') >= cutoffMs) {
+          (inWindow[d.firmSlug] = inWindow[d.firmSlug] || []).push(d);
+        }
+      });
+
+      Object.keys(inWindow).forEach(function (slug) {
+        const rows = inWindow[slug];
+        if (rows.length < cfg.minNewInvestments) return;
+        const firm = firmBySlug[slug];
+        if (!firm) return;
+        // Censored: the window swallowed every row this firm has, so the
+        // cap - not the firm - decided the number.
+        const atCap = rows.length >= (totalBySlug[slug] || 0);
+        rows.sort(function (a, b) { return a.announcedDate < b.announcedDate ? 1 : -1; });
+
+        alerts.push({
+          id: pa_fingerprint(['new_investments', slug, cfg.newInvestmentWindowDays, rows.length]),
+          type: 'new_investments',
+          firmId: slug,
+          sector: null,
+          subject: firm.name,
+          metric: 'disclosed investments announced in the last ' + cfg.newInvestmentWindowDays + ' days',
+          previousValue: null,
+          currentValue: rows.length,
+          absoluteChange: null,
+          percentChange: null,
+          unit: 'investments',
+          period: 'last ' + cfg.newInvestmentWindowDays + ' days',
+          direction: 'up',
+          generatedAt: generatedAt,
+          // A censored count is a weaker statement about the firm, not a
+          // less reliable one - every row is still individually sourced.
+          confidence: atCap ? 0.6 : 0.9,
+          score: pa_score({
+            magnitude: rows.length, magnitudeCeiling: 6,
+            sample: totalBySlug[slug] || rows.length, sampleCeiling: 6,
+            confidence: atCap ? 0.6 : 0.9,
+            recency: 1
+          }),
+          evidence: {
+            firm: firm.name,
+            windowDays: cfg.newInvestmentWindowDays,
+            dataAsOf: asOf,
+            dataAgeDays: ageDays,
+            atCap: atCap,
+            deals: rows.map(function (r) {
+              return {
+                firm: firm.name,
+                company: r.company,
+                date: r.announcedDate,
+                role: r.role,
+                rawSector: r.sector,
+                source: r.sourceUrl
+              };
+            }),
+            note: (atCap
+              ? 'AT CAP: every deal on file for this firm falls inside the window, so ' +
+                'the true count is higher than shown and cannot be determined from this ' +
+                'dataset. Read it as "at least ' + rows.length + '". '
+              : '') +
+              'A floor, not a total. Only disclosed, dated and individually sourced ' +
+              'rounds are counted; unannounced rounds and rounds this firm did not ' +
+              'publicise are invisible here. Deal data as of ' + asOf + '.'
+          }
+        });
+      });
+    }
+  }
+
   /* ---------- copy generation (spec §8) ----------
      Templates interpolate computed values only. No template
      asserts a cause, an intention or a trend beyond the number. */
@@ -915,6 +1049,17 @@ function computePowerAlerts(options) {
       a.title = a.currentValue + ' firms recorded a fund close in ' + a.subject;
       a.description = a.currentValue + ' of the ' + Object.keys(FUNDS || {}).length +
         ' firms with fund history on file closed at least one vehicle in ' + a.subject + '.';
+    } else if (a.type === 'new_investments') {
+      // "at least" is not hedging here - it is the literal reading of a
+      // capped sample, and the title must not imply a complete count.
+      a.title = a.subject + ' announced at least ' + a.currentValue +
+        ' investments in ' + a.evidence.windowDays + ' days';
+      a.description = 'At least ' + a.currentValue + ' disclosed investments by ' +
+        a.subject + ' were announced in the last ' + a.evidence.windowDays + ' days' +
+        (a.evidence.atCap
+          ? ', which is every deal on file for this firm - the real number is higher.'
+          : '.') +
+        ' Each is individually sourced; unannounced rounds are not counted.';
     } else if (a.type === 'sector_breadth') {
       // Deliberately says "have a disclosed investment", never "are
       // moving into" or "increased activity" - the sample cannot
