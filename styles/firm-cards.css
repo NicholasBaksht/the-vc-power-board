@@ -64,11 +64,9 @@
     margin-top: 6px;
     max-width: 480px;
   }
-   .firm-aum {
+  .firm-aum {
     text-align: right;
-    flex-shrink: 1;
-    min-width: 0;
-    max-width: 300px;
+    flex-shrink: 0;
   }
   .firm-aum .num {
     font-family: var(--mono);
@@ -251,4 +249,19 @@ background: rgba(47,111,237,0.08);
     background: rgba(47,111,237,0.12);
     border-color: var(--gold);
     color: var(--gold-bright);
+  }
+
+  /* AUM cell: keep it from blowing the row out horizontally, and set the
+     qualifier apart from the figure instead of rendering it as a headline. */
+  .firm-aum {
+    flex-shrink: 1;
+    min-width: 0;
+    max-width: 300px;
+  }
+  .firm-aum .qual {
+    font-family: var(--mono);
+    font-size: 11px;
+    line-height: 1.45;
+    color: var(--ink-dim);
+    margin-top: 5px;
   }
