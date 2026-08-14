@@ -189,7 +189,11 @@ function router() {
   // previously always rendered regardless of page, which is the
   // real reason navigating anywhere felt like "one long page."
   // Shown only for the true homepage/Rankings route.
-const isHomepage = (slug === '' || slug === 'rankings' || slug === 'firmsContainer');
+// #powerAlerts is an in-page anchor, not a view of its own. It has to
+  // count as the homepage: the section lives INSIDE #homeIntro, so any
+  // slug failing this test hides the very thing the link points at.
+  const isHomepage = (slug === '' || slug === 'rankings' || slug === 'firmsContainer'
+                      || slug === 'powerAlerts');
   const homeIntroEl = document.getElementById('homeIntro');
   if (homeIntroEl) homeIntroEl.style.display = isHomepage ? '' : 'none';
   // "By the Numbers" is homepage-flavored summary content, same
@@ -339,7 +343,19 @@ document.getElementById('powerSignalsView').style.display = 'none';
     document.getElementById('listView').style.display = 'block';
     renderFirms();
     window.scrollTo(0, 0);
-} else {
+} else if (slug === 'powerAlerts') {
+    // Homepage chrome stays visible (see isHomepage above); the list is
+    // still rendered so everything below the alerts is intact. The scroll
+    // waits a frame because renderFirms() changes the page height.
+    document.getElementById('listView').style.display = 'block';
+    renderFirms();
+    const paEl = document.getElementById('powerAlerts');
+    if (paEl) {
+      requestAnimationFrame(function () {
+        window.scrollTo({ top: paEl.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+      });
+    }
+  } else {
     document.getElementById('listView').style.display = 'block';
     renderFirms();
   }
