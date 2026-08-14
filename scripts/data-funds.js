@@ -3335,6 +3335,792 @@ const FIRM_FUNDS = {
       }
     ]
   },
+  "lakestar": {
+    complete: false,
+    note: "Lakestar Early IV and Growth II closed together at roughly $600M with no split ever disclosed, so no individual size is recorded. Funds I-III were not found.",
+    funds: [
+      {
+        name: "Lakestar Early IV",
+        series: "flagship",
+        vintageYear: 2024,
+        announcedDate: "2024-04",
+        sizeUSD: null,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: true,
+        disputed: false,
+        confidence: "high",
+        source: "https://tech.eu/2024/04/12/lakestar-closes-600m-funds-aims-to-strengthen-europes-innovation-ecosystem/"
+      },
+      {
+        name: "Lakestar Continuation Fund I",
+        series: "continuity",
+        vintageYear: null,
+        announcedDate: null,
+        sizeUSD: 265000000,
+        originalCurrency: "EUR",
+        sizeOriginal: 228000000,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://lakestar.com/news/lakestar-closes-a-usd-265-million-continuation-vehicle"
+      }
+    ]
+  },
+  "beco-capital": {
+    complete: false,
+    note: "Fund IV and the Growth Fund closed together but were individually broken out by the firm. Funds I-III were not sized.",
+    funds: [
+      {
+        name: "BECO Fund IV",
+        series: "flagship",
+        vintageYear: 2025,
+        announcedDate: "2025-09",
+        sizeUSD: 120000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: true,
+        confidence: "medium",
+        source: "https://www.businesswire.com/news/home/20250928385582/en/"
+      },
+      {
+        name: "BECO Growth Fund",
+        series: "growth",
+        vintageYear: 2025,
+        announcedDate: "2025-09",
+        sizeUSD: 250000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.businesswire.com/news/home/20250928385582/en/"
+      }
+    ]
+  },
+  "wing-vc": {
+    complete: false,
+    note: "Wing Three is confirmed to exist by the firm's own framing of Wing Four as its fourth fund, but was never named, dated or sized. Recorded with nulls so the lineage gap stays visible.",
+    funds: [
+      {
+        name: "Wing Two",
+        series: "flagship",
+        vintageYear: 2016,
+        announcedDate: null,
+        sizeUSD: 250000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://en.wikipedia.org/wiki/Wing_Venture_Capital"
+      },
+      {
+        name: "Wing Three",
+        series: "flagship",
+        vintageYear: null,
+        announcedDate: null,
+        sizeUSD: null,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://www.wing.vc/content/ten-years-good-announcing-wing-four"
+      },
+      {
+        name: "Wing Four",
+        series: "flagship",
+        vintageYear: 2023,
+        announcedDate: "2023-07",
+        sizeUSD: 600000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.wing.vc/content/wing-announces-wing-four-a-600-million-fund-fueling-the-ai-first-transformation-of-business"
+      }
+    ]
+  },
+  "tlcom-capital": {
+    complete: false,
+    note: "The TIDE Africa strategy began in 2020; earlier TLcom vehicles from its 1999 founding were not found.",
+    funds: [
+      {
+        name: "TIDE Africa Fund I",
+        series: "flagship",
+        vintageYear: 2020,
+        announcedDate: "2020-02",
+        sizeUSD: 71000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://techcabal.com/2020/02/06/closing-at-71m-tlcom-tide-africa-fund-set-to-invest-in-mostly-infrastructure-type-tech-startups/"
+      },
+      {
+        name: "TIDE Africa Fund II",
+        series: "flagship",
+        vintageYear: 2024,
+        announcedDate: "2024-04",
+        sizeUSD: 154000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://techcrunch.com/2024/04/22/tlcom-capital-closes-second-fund-at-154m-to-back-early-stage-startups-across-africa/"
+      }
+    ]
+  },
+  "yl-ventures": {
+    complete: false,
+    note: "Funds I and II were not found; the firm describes itself as 15 years old as of the 2022 Fund V close.",
+    funds: [
+      {
+        name: "YLV III",
+        series: "flagship",
+        vintageYear: 2017,
+        announcedDate: null,
+        sizeUSD: 130000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.helpnetsecurity.com/2022/05/11/yl-ventures-fund/"
+      },
+      {
+        name: "YLV IV",
+        series: "flagship",
+        vintageYear: 2020,
+        announcedDate: null,
+        sizeUSD: 135000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://pitchbook.com/news/articles/yl-ventures-israel-cybersecurity-startups"
+      },
+      {
+        name: "YLV V",
+        series: "flagship",
+        vintageYear: 2022,
+        announcedDate: "2022-05",
+        sizeUSD: 400000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.ylventures.com/magazine/blog/ylv-fund-v-at-400m-the-largest-seed-fund-ever-raised-for-cybersecurity/"
+      }
+    ]
+  },
+  "jungle-ventures": {
+    complete: true,
+    note: "Fund IV's $600M covers a $450M main fund plus $150M in additional managed commitments, disclosed by the firm as one total.",
+    funds: [
+      {
+        name: "Debut fund",
+        series: "flagship",
+        vintageYear: 2012,
+        announcedDate: null,
+        sizeUSD: 10000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://techcrunch.com/2022/05/17/jungle-ventures-closes-a-600m-fund-bringing-its-total-assets-under-management-to-over-1b"
+      },
+      {
+        name: "Jungle Ventures II",
+        series: "flagship",
+        vintageYear: 2016,
+        announcedDate: null,
+        sizeUSD: 100000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://techcrunch.com/2016/11/30/jungle-ventures-100-million-fund-southeast-asia"
+      },
+      {
+        name: "Jungle Ventures III",
+        series: "flagship",
+        vintageYear: 2019,
+        announcedDate: null,
+        sizeUSD: 240000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://techcrunch.com/2022/05/17/jungle-ventures-closes-a-600m-fund-bringing-its-total-assets-under-management-to-over-1b"
+      },
+      {
+        name: "Jungle Ventures IV",
+        series: "flagship",
+        vintageYear: 2022,
+        announcedDate: "2022-05",
+        sizeUSD: 600000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: true,
+        disputed: false,
+        confidence: "high",
+        source: "https://techcrunch.com/2022/05/17/jungle-ventures-closes-a-600m-fund-bringing-its-total-assets-under-management-to-over-1b"
+      }
+    ]
+  },
+  "uncork-capital": {
+    complete: false,
+    note: "Formerly SoftTech VC, renamed 2017; Funds I-IV predate the sourcing here. Uncork VII and Plus III rest on a single aggregator.",
+    funds: [
+      {
+        name: "Uncork V",
+        series: "flagship",
+        vintageYear: 2016,
+        announcedDate: null,
+        sizeUSD: 100000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://techcrunch.com/2016/uncork-softtech-fund-v/"
+      },
+      {
+        name: "Uncork Plus I",
+        series: "opportunity",
+        vintageYear: 2016,
+        announcedDate: null,
+        sizeUSD: 50000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://techcrunch.com/2016/uncork-softtech-fund-v/"
+      },
+      {
+        name: "Uncork VI",
+        series: "flagship",
+        vintageYear: 2019,
+        announcedDate: "2019-08",
+        sizeUSD: 100000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://medium.com/uncorkcapital/uncork-raises-200m-to-support-the-next-generation-of-seed-stage-startups-346b33bae867"
+      },
+      {
+        name: "Uncork Plus II",
+        series: "opportunity",
+        vintageYear: 2019,
+        announcedDate: "2019-08",
+        sizeUSD: 100000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://medium.com/uncorkcapital/uncork-raises-200m-to-support-the-next-generation-of-seed-stage-startups-346b33bae867"
+      },
+      {
+        name: "Uncork VII",
+        series: "flagship",
+        vintageYear: 2023,
+        announcedDate: null,
+        sizeUSD: 200000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://vc-mapping.gilion.com/vc-firms/uncork-capital"
+      },
+      {
+        name: "Uncork Plus III",
+        series: "opportunity",
+        vintageYear: 2023,
+        announcedDate: null,
+        sizeUSD: 200000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://vc-mapping.gilion.com/vc-firms/uncork-capital"
+      },
+      {
+        name: "Uncork VIII",
+        series: "flagship",
+        vintageYear: 2025,
+        announcedDate: "2025-05",
+        sizeUSD: 225000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://medium.com/uncorkcapital/uncork-capital-closes-300m-to-support-early-stage-founders-e1015b772be1"
+      },
+      {
+        name: "Uncork Plus IV",
+        series: "opportunity",
+        vintageYear: 2025,
+        announcedDate: "2025-05",
+        sizeUSD: 75000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://medium.com/uncorkcapital/uncork-capital-closes-300m-to-support-early-stage-founders-e1015b772be1"
+      }
+    ]
+  },
+  "nextview-ventures": {
+    complete: false,
+    note: "Fund IV is disputed: the firm says $100M, TechCrunch cites an SEC filing at $89.6M. Fund V is confirmed but unsized; Fund VI is listed as open, not closed.",
+    funds: [
+      {
+        name: "Fund III",
+        series: "flagship",
+        vintageYear: 2017,
+        announcedDate: null,
+        sizeUSD: 50000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://techcrunch.com/2017/nextview-fund-iii/"
+      },
+      {
+        name: "Fund IV",
+        series: "flagship",
+        vintageYear: 2020,
+        announcedDate: "2020-11",
+        sizeUSD: 100000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: true,
+        confidence: "medium",
+        source: "https://nextview.vc/blog/announcing-nextview-iv/"
+      },
+      {
+        name: "Fund V",
+        series: "flagship",
+        vintageYear: 2023,
+        announcedDate: null,
+        sizeUSD: null,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://pitchbook.com/profiles/fund/20648-08F"
+      },
+      {
+        name: "Fund VI",
+        series: "flagship",
+        vintageYear: null,
+        announcedDate: null,
+        sizeUSD: null,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "announced",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://pitchbook.com/profiles/fund/27270-19F"
+      }
+    ]
+  },
+  "fika-ventures": {
+    complete: false,
+    note: "Fund III's size comes from the firm's own statement that Fund IV was kept the same size. Funds I and II were not sized.",
+    funds: [
+      {
+        name: "Fund III",
+        series: "flagship",
+        vintageYear: 2021,
+        announcedDate: null,
+        sizeUSD: 160000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.businesswire.com/news/home/20240911666641/en/"
+      },
+      {
+        name: "Fund IV",
+        series: "flagship",
+        vintageYear: 2024,
+        announcedDate: "2024-09",
+        sizeUSD: 160000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.businesswire.com/news/home/20240911666641/en/"
+      }
+    ]
+  },
+  "harlem-capital": {
+    complete: true,
+    note: "Funds I and II are firm-confirmed in a single post. Fund III's size rests on one aggregator.",
+    funds: [
+      {
+        name: "Fund I",
+        series: "flagship",
+        vintageYear: 2019,
+        announcedDate: "2019-11",
+        sizeUSD: 40000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://harlem.capital/harlem-capital-134-million-fund/"
+      },
+      {
+        name: "Fund II",
+        series: "flagship",
+        vintageYear: 2021,
+        announcedDate: "2021-03",
+        sizeUSD: 134000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://harlem.capital/harlem-capital-134-million-fund/"
+      },
+      {
+        name: "Fund III",
+        series: "flagship",
+        vintageYear: 2023,
+        announcedDate: null,
+        sizeUSD: 140000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://pipeseed.com/investor/harlem-capital-partners-366137"
+      }
+    ]
+  },
+  "founder-collective": {
+    complete: false,
+    note: "Founded 2009; Funds I and II were not sized. A comparative remark that Fund II was about the same size as Fund III was deliberately not used as a figure.",
+    funds: [
+      {
+        name: "Fund III",
+        series: "flagship",
+        vintageYear: 2016,
+        announcedDate: "2016-11",
+        sizeUSD: 75000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://techcrunch.com/2016/11/30/founder-collective-easily-finds-75-million-for-fund-three/"
+      },
+      {
+        name: "Fund IV",
+        series: "flagship",
+        vintageYear: 2020,
+        announcedDate: "2020-05",
+        sizeUSD: 85000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://techcrunch.com/2020/05/20/founder-collective-barrels-forward-closing-its-fourth-and-newest-fund-with-85-million/"
+      },
+      {
+        name: "Founder Collective V",
+        series: "flagship",
+        vintageYear: 2023,
+        announcedDate: null,
+        sizeUSD: 95000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.gunder.com/en/news-insights/client-news/founder-collective-raises-95m-fund-v-for-seed-stage-investing"
+      }
+    ]
+  },
+  "amazon-alexa-fund": {
+    complete: true,
+    note: "A single ongoing balance-sheet vehicle rather than a series of closed-end funds. Sources disagree on $100M versus $200M, with no dated top-up.",
+    funds: [
+      {
+        name: null,
+        series: "flagship",
+        vintageYear: 2015,
+        announcedDate: null,
+        sizeUSD: 200000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "corporate",
+        combinedVehicles: false,
+        disputed: true,
+        confidence: "medium",
+        source: "https://www.amazon.science/tag/alexa-fund"
+      }
+    ]
+  },
+  "notion-capital": {
+    complete: false,
+    note: "Fund V was published only in EUR, so sizeUSD is null. Opportunities III was published in both currencies. Funds I-IV were not sized.",
+    funds: [
+      {
+        name: "Notion Capital V",
+        series: "flagship",
+        vintageYear: 2023,
+        announcedDate: "2023-07",
+        sizeUSD: null,
+        originalCurrency: "EUR",
+        sizeOriginal: 300000000,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://tech.eu/2023/07/06/notion-capital-closes-its-fund-for-european-business-software-and-fintech-firms-at-300-million/"
+      },
+      {
+        name: "Notion Capital Opportunities III",
+        series: "growth",
+        vintageYear: 2025,
+        announcedDate: "2025-09",
+        sizeUSD: 130000000,
+        originalCurrency: "EUR",
+        sizeOriginal: 114000000,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.eu-startups.com/2025/09/with-new-e114-million-fund-british-vc-firm-notion-capital-expands-focus-on-ai-driven-software-and-fintech/"
+      }
+    ]
+  },
+  "innovation-endeavors": {
+    complete: false,
+    note: "Five sources give $630M against one at $600M. Funds I-IV were not individually sized.",
+    funds: [
+      {
+        name: "Fund V",
+        series: "flagship",
+        vintageYear: 2024,
+        announcedDate: "2024-01",
+        sizeUSD: 630000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: true,
+        confidence: "medium",
+        source: "https://techcrunch.com/2024/01/25/innovation-endeavors-630m-fund-science-technology/"
+      }
+    ]
+  },
+  "cambrian-ventures": {
+    complete: false,
+    note: "An unrelated, older firm shares this name; these records belong to the Rex Salisbury fund at cambrian.vc, which matches this dataset's entry.",
+    funds: [
+      {
+        name: "Debut fund",
+        series: "flagship",
+        vintageYear: 2022,
+        announcedDate: null,
+        sizeUSD: 20000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://www.cbinsights.com/investor/cambrian-ventures"
+      },
+      {
+        name: "Sophomore fund",
+        series: "flagship",
+        vintageYear: 2025,
+        announcedDate: "2025-07",
+        sizeUSD: 20000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.venturecapitaljournal.com/cambrian-ventures-raises-20m-for-sophomore-fintech-fund/"
+      }
+    ]
+  },
+  "techstars": {
+    complete: false,
+    note: "The firm calls the 2021 vehicle its third institutionally-backed fund, which does not reconcile cleanly with the 2009 and 2012 funds; a second fund may be unaccounted for. The 2024 accelerator fund's close is aggregator-only and its size was never published.",
+    funds: [
+      {
+        name: null,
+        series: "flagship",
+        vintageYear: 2009,
+        announcedDate: null,
+        sizeUSD: 5000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.techstars.com/about"
+      },
+      {
+        name: null,
+        series: "flagship",
+        vintageYear: 2012,
+        announcedDate: null,
+        sizeUSD: 25000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "medium",
+        source: "https://www.techstars.com/about"
+      },
+      {
+        name: "Techstars Accelerator 2021",
+        series: "accelerator",
+        vintageYear: 2021,
+        announcedDate: "2021-07",
+        sizeUSD: 150000000,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "high",
+        source: "https://www.techstars.com/newsroom/techstars-closes-oversubscribed-usd150m-fund-to-support-accelerators-high"
+      },
+      {
+        name: "Techstars Accelerator 2024",
+        series: "accelerator",
+        vintageYear: 2024,
+        announcedDate: null,
+        sizeUSD: null,
+        originalCurrency: null,
+        sizeOriginal: null,
+        status: "closed",
+        vehicleType: "fund",
+        combinedVehicles: false,
+        disputed: false,
+        confidence: "low",
+        source: "https://pitchbook.com/profiles/fund/24152-68F"
+      }
+    ]
+  },
 };
 
 if (typeof module !== 'undefined' && module.exports) {
