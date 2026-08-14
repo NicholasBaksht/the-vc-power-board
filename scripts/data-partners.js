@@ -13758,4 +13758,1071 @@ sources: [
       }
     ]
   },
+  "cheryl-cheng": {
+    name: "Cheryl Cheng",
+    firm: "M12",
+    firmSlug: "m12",
+    title: "Managing Partner",
+    joinedYear: 2025,
+    sectors: [
+      "Healthcare",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://m12.vc/team/cheryl-cheng",
+    sectorsEvidence: "Cheryl has spent the last 16 years investing in early to growth stage software companies ranging from healthcare and enterprise applications to developer tools",
+    education: [
+      "B.A., Public Policy, Stanford University",
+      "M.B.A., Kellogg School of Management, Northwestern University"
+    ],
+    previousExperience: [
+      "Founder & CEO, Vive Collective",
+      "General Partner, BlueRun Ventures",
+      "Brand Manager, The Clorox Company",
+      "Brand Manager, The Sharper Image",
+      "Technology M&A, Broadview International"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2025",
+        event: "Joined M12 as Managing Partner."
+      }
+    ],
+    biography: "Cheryl Cheng is Managing Partner at M12. She has spent 16 years investing in early- to growth-stage software companies ranging from healthcare to enterprise applications. Before M12, she founded and led Vive Collective and was a General Partner at BlueRun Ventures. She also worked in brand management at Clorox and Sharper Image and in technology M&A at Broadview International.",
+    sources: [
+      {
+        label: "M12 — Cheryl Cheng",
+        url: "https://m12.vc/team/cheryl-cheng/"
+      },
+      {
+        label: "Global Venturing — Cheryl Cheng Joins M12",
+        url: "https://globalventuring.com/corporate/people/cheng-joins-microsoft-vc-fund-as-managing-partner/"
+      }
+    ]
+  },
+  "alan-du": {
+    name: "Alan Du",
+    firm: "M12",
+    firmSlug: "m12",
+    title: "Partner",
+    joinedYear: 2025,
+    sectors: [
+      "AI",
+      "Fintech"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://m12.vc/team/alan-du",
+    sectorsEvidence: "focusing on the intersection of Artificial Intelligence and Fintech",
+    education: [
+      "B.A., University of California, Berkeley",
+      "MBA, Harvard Business School"
+    ],
+    previousExperience: [
+      "Investment Partner, PayPal Ventures",
+      "Head of Operations, Greater China (interim), Docker",
+      "Investment Team, Revolution (Washington DC growth equity firm)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2025",
+        event: "Joined M12 as Partner."
+      }
+    ],
+    biography: "Alan Du is a Partner at M12 focusing on AI and fintech. He joined M12 in 2025. Previously he was an Investment Partner at PayPal Ventures focusing on AI and fintech, and served as interim Head of Operations for Greater China at Docker.",
+    sources: [
+      {
+        label: "M12 — Alan Du",
+        url: "https://m12.vc/team/alan-du/"
+      },
+      {
+        label: "Global Corporate Venturing (LinkedIn) — Alan Du Announcement",
+        url: "https://www.linkedin.com/posts/alan-du_investmentpartner-paypalventures-activity-xxxx"
+      }
+    ]
+  },
+  "todd-graham": {
+    name: "Todd Graham",
+    firm: "M12",
+    firmSlug: "m12",
+    title: "Managing Partner",
+    joinedYear: null,
+    sectors: [
+      "Cybersecurity",
+      "Developer Tools",
+      "Infrastructure"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://m12.vc/team/todd-graham",
+    sectorsEvidence: "he leads investments in cybersecurity, developer tools, and cloud infrastructure",
+    education: [],
+    previousExperience: [
+      "Vice President, Venrock",
+      "Head of Corporate Strategy (Security & Collaboration), Cisco",
+      "Product Manager, VMware (IT Business Management)",
+      "Co-founder, Bluenose Analytics",
+      "Founder, Data security startup (acquired by RSA)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Todd Graham is a Managing Partner at M12 leading investments in cybersecurity, developer tools, and cloud infrastructure. Before M12, he was a VP at Venrock focusing on enterprise infrastructure and cybersecurity. He also led corporate strategy at Cisco’s security businesses and co-founded Bluenose Analytics.",
+    sources: [
+      {
+        label: "M12 — Todd Graham",
+        url: "https://m12.vc/team/todd-graham/"
+      }
+    ]
+  },
+  "peter-lenke": {
+    name: "Peter Lenke",
+    firm: "M12",
+    firmSlug: "m12",
+    title: "Managing Partner",
+    joinedYear: null,
+    sectors: [
+      "AI",
+      "Developer Tools"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://m12.vc/team/peter-lenke",
+    sectorsEvidence: "leads investments in AI applications, developer tools, and cloud infrastructure",
+    education: [],
+    previousExperience: [
+      "Head of Atlassian Ventures",
+      "Corporate Development, Twitter",
+      "Corporate Development, Criteo",
+      "Investment Team, SVB Capital (now Pinegrove)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Peter Lenke is a Managing Partner at M12 leading investments in AI applications, developer tools, and enterprise software. He previously served as Head of Atlassian Ventures and held corporate development roles at Twitter and Criteo, and worked on the investment team at SVB Capital.",
+    sources: [
+      {
+        label: "M12 — Peter Lenke",
+        url: "https://m12.vc/team/peter-lenke/"
+      }
+    ]
+  },
+  "andy-harrison": {
+    name: "Andy Harrison",
+    firm: "S32",
+    firmSlug: "s32",
+    title: "General Partner, CEO",
+    joinedYear: 2021,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.S., Biochemical Engineering, McGill University",
+      "M.S., Biomedical Engineering, Cornell University"
+    ],
+    previousExperience: [
+      "Executive roles, Alphabet X and Verily",
+      "Co-founder, Verily Ventures",
+      "Executive, Verily (Alphabet)",
+      "Doctoral research, UC Berkeley (biomedical engineering)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2021",
+        event: "Joined S32 as General Partner."
+      },
+      {
+        year: "2023",
+        event: "Named CEO of S32."
+      }
+    ],
+    biography: "Andy Harrison is CEO and General Partner of S32 with a background in healthcare and deep tech. He co-founded Verily (Alphabet’s healthcare company) and held executive roles at GoogleX and Verily Ventures. He joined S32 in 2021 and was named CEO in 2023. He holds degrees from McGill University and Cornell University.",
+    sources: [
+      {
+        label: "S32 — Andy Harrison",
+        url: "https://s32.com/team#andy-harrison"
+      },
+      {
+        label: "Wikipedia — S32 (company)",
+        url: "https://en.wikipedia.org/wiki/S32"
+      }
+    ]
+  },
+  "alice-cheung": {
+    name: "Alice Cheung",
+    firm: "S32",
+    firmSlug: "s32",
+    title: "Partner, Talent",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.A., Mass Communications & Political Science, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "Recruiter, Google (Alphabet)",
+      "Recruiter, Google X",
+      "Principal Recruiter, Playground Global",
+      "Head of Staffing, Essential"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Alice Cheung is Partner of Talent at S32 focusing on talent strategy for portfolio companies. She spent a decade at Alphabet (Google and X) as a top recruiter building engineering teams for Waymo, Loon, Glass, Wing, and Verily. She later served as Principal Recruiter at Playground Global and Head of Staffing at Essential.",
+    sources: [
+      {
+        label: "S32 — Alice Cheung",
+        url: "https://s32.com/team#alice-cheung"
+      }
+    ]
+  },
+  "bayan-alizadeh": {
+    name: "Bayan Alizadeh",
+    firm: "S32",
+    firmSlug: "s32",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "Enterprise Software",
+      "AI",
+      "Deep Tech"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://s32.com/team#bayan-alizadeh",
+    sectorsEvidence: "focuses on enterprise software, AI, and deep tech investment opportunities",
+    education: [
+      "B.S., Business Administration, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "Investor, Norwest Venture Partners",
+      "Investment Banker, Morgan Stanley"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Bayan Alizadeh is a Partner at S32 focusing on enterprise software, AI, and deep tech. Previously, he was an investor at Norwest Venture Partners (working on applied AI and enterprise software) and earlier an investment banker at Morgan Stanley advising fintech and tech companies. He holds a B.S. from UC Berkeley.",
+    sources: [
+      {
+        label: "S32 — Bayan Alizadeh",
+        url: "https://s32.com/team#bayan-alizadeh"
+      }
+    ]
+  },
+  "derrick-chow": {
+    name: "Derrick Chow",
+    firm: "S32",
+    firmSlug: "s32",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "Enterprise Software",
+      "AI",
+      "Infrastructure"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://s32.com/team#derrick-chow",
+    sectorsEvidence: "focuses on enterprise software, AI and data infrastructure",
+    education: [
+      "B.S., Business Administration, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "Investment team, CapitalG (Alphabet/Google)",
+      "Analyst, Morgan Stanley"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Derrick Chow is a Partner at S32 focusing on enterprise software, AI, and data infrastructure. He previously worked on the investment team at CapitalG (Alphabet’s growth fund) and began his career as an investment banking analyst at Morgan Stanley. He holds a B.S. from UC Berkeley.",
+    sources: [
+      {
+        label: "S32 — Derrick Chow",
+        url: "https://s32.com/team#derrick-chow"
+      }
+    ]
+  },
+  "darian-shirazi": {
+    name: "Darian Shirazi",
+    firm: "Gradient Ventures",
+    firmSlug: "gradient-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: [
+      "AI"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.gradient.com/team/darian-shirazi/",
+    sectorsEvidence: "leading seed investments in category-defining AI companies and working with AI-first founders",
+    education: [
+      "Studied Computer Science & Philosophy, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "Founder & CEO, Radius (acquired by Kabbage)",
+      "Software Engineer, Facebook"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "MainStreet",
+      "Contractbook",
+      "Chili Piper"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Darian Shirazi is a General Partner at Gradient Ventures focused on seed-stage AI companies. He founded Radius, a B2B customer data platform acquired by Kabbage, and was an early software engineer at Facebook. He studied computer science and philosophy at UC Berkeley.",
+    sources: [
+      {
+        label: "Gradient — Darian Shirazi",
+        url: "https://www.gradient.com/team/darian-shirazi/"
+      }
+    ]
+  },
+  "zach-bratun-glennon": {
+    name: "Zach Bratun-Glennon",
+    firm: "Gradient Ventures",
+    firmSlug: "gradient-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: [
+      "AI",
+      "Fintech",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.gradient.com/team/zach-bratun-glennon/",
+    sectorsEvidence: "He invests in AI/ML and data science, vertical software, B2B marketplaces, fintech, and more",
+    education: [
+      "B.S., Computer Science & Applied Mathematics, University of Virginia",
+      "J.D., UCLA School of Law",
+      "MBA, UCLA Anderson School of Management"
+    ],
+    previousExperience: [
+      "Led acquisitions and strategic investments, Google Cloud",
+      "Investment Banker (software sector)",
+      "Quantitative Engineer, Hedge Fund"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Zach Bratun-Glennon is a General Partner at Gradient Ventures who invests in AI and fintech companies. Before Gradient, he led acquisitions and strategic investments for Google Cloud. He earned a B.S. in CS and Applied Math from University of Virginia, and a J.D. and MBA from UCLA.",
+    sources: [
+      {
+        label: "Gradient — Zach Bratun-Glennon",
+        url: "https://www.gradient.com/team/zach-bratun-glennon/"
+      }
+    ]
+  },
+  "andrew-brackin": {
+    name: "Andrew Brackin",
+    firm: "Gradient Ventures",
+    firmSlug: "gradient-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "AI",
+      "Healthcare"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.gradient.com/team/andrew-brackin/",
+    sectorsEvidence: "invests across vertical AI, healthcare, and the application layer",
+    education: [],
+    previousExperience: [
+      "Co-founder & CEO, Vial (clinical trial platform)",
+      "Head of Growth, Newfront (acquired by WTW)",
+      "Product Lead, Jobr (acquired by Monster)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Andrew Brackin is a Partner at Gradient Ventures investing in AI and healthcare. He co-founded Vial, a tech-enabled clinical trial platform, and was Head of Growth at Newfront (acquired by WTW in 2025). He was a Thiel Fellow in 2013 and studied entrepreneurship at Stanford.",
+    sources: [
+      {
+        label: "Gradient — Andrew Brackin",
+        url: "https://www.gradient.com/team/andrew-brackin/"
+      }
+    ]
+  },
+  "clayton-petty": {
+    name: "Clayton Petty",
+    firm: "Gradient Ventures",
+    firmSlug: "gradient-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "Cybersecurity",
+      "Infrastructure",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.gradient.com/team/clayton-petty/",
+    sectorsEvidence: "helped founders and growth investors scale cybersecurity, infrastructure, and vertical software businesses",
+    education: [
+      "B.S., Computer Science, Texas A&M University"
+    ],
+    previousExperience: [
+      "Consultant, McKinsey & Company (Technology & Investing)",
+      "Software Engineer, Microsoft",
+      "Software Engineer, Expedia"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Clayton Petty is a Partner at Gradient Ventures. Prior to Gradient, he was a consultant at McKinsey & Company in their technology and investing practice. Earlier, he worked as a software engineer at Microsoft and Expedia. He holds a B.S. in Computer Science from Texas A&M University.",
+    sources: [
+      {
+        label: "Gradient — Clayton Petty",
+        url: "https://www.gradient.com/team/clayton-petty/"
+      }
+    ]
+  },
+  "brian-smith": {
+    name: "Brian Smith",
+    firm: "Multicoin Capital",
+    firmSlug: "multicoin-capital",
+    title: "Partner, CFO and COO",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [],
+    previousExperience: [
+      "Public Equity Analyst, Tiger Management",
+      "Private Equity Investor, Fox Paine & Co.",
+      "Investment Banker, Greenhill & Co.",
+      "Finance Team, Bazaarvoice (through IPO)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Board of Trustees, Texas State Pension (TSERS)"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Brian Smith is Partner, CFO and COO at Multicoin Capital, leading finance and operations. He has over 22 years of experience in investing and corporate finance, including roles at Tiger Management, Fox Paine, and Greenhill. He also served on the finance team at Bazaarvoice through its IPO. He serves on the board of the Texas State Teachers Retirement System (TSERS).",
+    sources: [
+      {
+        label: "Multicoin — Brian Smith",
+        url: "https://multicoin.capital/about/"
+      }
+    ]
+  },
+  "matt-shapiro": {
+    name: "Matt Shapiro",
+    firm: "Multicoin Capital",
+    firmSlug: "multicoin-capital",
+    title: "Partner, Head of Investor Relations",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.A., Finance and International Business, University of Maryland"
+    ],
+    previousExperience: [
+      "Vice President, Investment Banking, Teneo"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Matt Shapiro is a Partner and Head of Investor Relations at Multicoin. Prior to Multicoin, he was a VP in investment banking at Teneo, raising institutional capital across diverse industries. He holds a degree in Finance and International Business from the University of Maryland.",
+    sources: [
+      {
+        label: "Multicoin — Matt Shapiro",
+        url: "https://multicoin.capital/about/"
+      }
+    ]
+  },
+  "spencer-applebaum": {
+    name: "Spencer Applebaum",
+    firm: "Multicoin Capital",
+    firmSlug: "multicoin-capital",
+    title: "General Partner, Co-Head of Venture",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [],
+    previousExperience: [
+      "Intern, Bitspark (blockchain remittance)",
+      "Consultant, Deloitte (audit & tax)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Spencer Applebaum is a General Partner at Multicoin Capital. As one of the firm's first hires, he specializes in decentralized finance (DeFi) and crypto infrastructure. Prior to Multicoin, he interned at Bitspark (a Bitcoin remittance platform) and worked at Deloitte in audit and tax advisory.",
+    sources: [
+      {
+        label: "Multicoin — Spencer Applebaum",
+        url: "https://multicoin.capital/about/"
+      }
+    ]
+  },
+  "shayon-sengupta": {
+    name: "Shayon Sengupta",
+    firm: "Multicoin Capital",
+    firmSlug: "multicoin-capital",
+    title: "General Partner, Co-Head of Venture",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [],
+    previousExperience: [
+      "Operations, Abodewell (IoT real estate startup)",
+      "Strategy & Business Development, SAP"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Shayon Sengupta is a General Partner at Multicoin Capital. Previously, he worked at Abodewell (a quantitative real estate market maker) leading operations and IoT development, and earlier on the strategy team at SAP.",
+    sources: [
+      {
+        label: "Multicoin — Shayon Sengupta",
+        url: "https://multicoin.capital/about/"
+      }
+    ]
+  },
+  "lily-lyman": {
+    name: "Lily Lyman",
+    firm: "Underscore VC",
+    firmSlug: "underscore-vc",
+    title: "Partner",
+    joinedYear: 2018,
+    sectors: [
+      "AI",
+      "Healthcare"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://underscore.vc/team/lily-lyman/",
+    sectorsEvidence: "Lily drives our investments in the areas of workflow automation and Vertical AI, including insurance and healthcare",
+    education: [
+      "A.B., Harvard University",
+      "MBA, Stanford Graduate School of Business"
+    ],
+    previousExperience: [
+      "Growth Leader, Facebook",
+      "Co-founder, Agtech startup (Stanford)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "New England Venture Capital Association",
+      "MIT Sandbox Funding Board",
+      "Harvard Allston Fund",
+      "WBUR"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2018",
+        event: "Joined Underscore VC as Partner."
+      }
+    ],
+    biography: "Lily Lyman is a Partner at Underscore VC focusing on vertical AI and workflow automation in industries like insurance and healthcare. She joined Underscore in 2018 after working as a growth leader at Facebook. She earned an A.B. from Harvard and an MBA from Stanford. She serves on the boards of NEVCA, MIT Sandbox Funding, Harvard Allston Fund, and WBUR.",
+    sources: [
+      {
+        label: "Underscore — Lily Lyman",
+        url: "https://underscore.vc/team/lily-lyman/"
+      },
+      {
+        label: "Underscore Blog — Lily Lyman Announcement",
+        url: "https://underscore.vc/blog/announcing-our-newest-partner-lily-lyman/"
+      }
+    ]
+  },
+  "chris-gardner": {
+    name: "Chris Gardner",
+    firm: "Underscore VC",
+    firmSlug: "underscore-vc",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.A., Communications, University of Massachusetts Amherst"
+    ],
+    previousExperience: [
+      "Co-founder, Paydiant (acquired by PayPal in 2015)",
+      "Executive, PayPal (P2P and mobile payments)",
+      "CMO, ExtendMedia (acquired by Cisco)",
+      "SVP, m-Qube (acquired by Verisign)",
+      "VP, edocs (acquired by Siebel Systems)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2015",
+        event: "Co-founded Paydiant (later acquired by PayPal)."
+      }
+    ],
+    biography: "Chris Gardner is a Partner at Underscore VC and a fintech entrepreneur. He co-founded Paydiant (acquired by PayPal in 2015) and led PayPal’s payments products. Earlier he was CMO at ExtendMedia (acquired by Cisco) and SVP at m-Qube (acquired by Verisign). He has a B.A. from UMass Amherst.",
+    sources: [
+      {
+        label: "Underscore — Chris Gardner",
+        url: "https://underscore.vc/team/chris-gardner/"
+      }
+    ]
+  },
+  "brian-devaney": {
+    name: "Brian Devaney",
+    firm: "Underscore VC",
+    firmSlug: "underscore-vc",
+    title: "Partner",
+    joinedYear: 2020,
+    sectors: [
+      "AI",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://underscore.vc/team/brian-devaney/",
+    sectorsEvidence: "Brian focuses on vertical-specific applications of AI and B2B software",
+    education: [
+      "B.A., Economics & Business Admin & Computer Science, University of Vermont"
+    ],
+    previousExperience: [
+      "Investor, First Round Capital",
+      "Head of Go-to-Market, Strava Metro",
+      "Analyst, Internet Bank (fintech)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2020",
+        event: "Joined Underscore VC as Partner."
+      }
+    ],
+    biography: "Brian Devaney is a Partner at Underscore VC focusing on AI and enterprise software for legacy business processes. He joined Underscore in 2020 from First Round Capital. Before that, he led GTM for Strava Metro and started in fintech banking. He earned a B.A. from the University of Vermont.",
+    sources: [
+      {
+        label: "Underscore — Brian Devaney",
+        url: "https://underscore.vc/team/brian-devaney/"
+      },
+      {
+        label: "Underscore Blog — Brian Devaney Announcement",
+        url: "https://underscore.vc/blog/the-next-generation-of-underscore-vc/"
+      }
+    ]
+  },
+  "lauren-kolodny": {
+    name: "Lauren Kolodny",
+    firm: "Acrew Capital",
+    firmSlug: "acrew-capital",
+    title: "Founding Partner",
+    joinedYear: null,
+    sectors: [
+      "Fintech"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.acrewcapital.com/team#lauren-kolodny",
+    sectorsEvidence: "Lauren leads the fintech thesis area at Acrew",
+    education: [],
+    previousExperience: [
+      "Partner, Aspect Ventures",
+      "Product Marketing (Workspace), Google"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Lauren Kolodny is a Founding Partner at Acrew Capital who leads the firm’s fintech investment area. Previously, she was a partner at Aspect Ventures and earlier worked in product marketing at Google (including launches for Workspace like Google Drive).",
+    sources: [
+      {
+        label: "Acrew — Lauren Kolodny",
+        url: "https://www.acrewcapital.com/team#lauren-kolodny"
+      }
+    ]
+  },
+  "asad-khaliq": {
+    name: "Asad Khaliq",
+    firm: "Acrew Capital",
+    firmSlug: "acrew-capital",
+    title: "Founding Partner",
+    joinedYear: null,
+    sectors: [
+      "AI",
+      "Cybersecurity"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.acrewcapital.com/team#asad-khaliq",
+    sectorsEvidence: "Asad is excited about applied machine learning and enabling security & privacy",
+    education: [
+      "M.S.E., Management Science & Engineering, Stanford University"
+    ],
+    previousExperience: [
+      "Investor, Aspect Ventures (first fund)",
+      "Co-led investments in Coinbase, Ciphertrace, etc."
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "NextGen Partners"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Asad Khaliq is a Founding Partner at Acrew Capital interested in applied machine learning, security, and privacy. He joined Aspect Ventures in its first fund and co-led investments in companies like Ciphertrace and Coinbase. He is on the board of NextGen Partners and studied Management Science & Engineering at Stanford.",
+    sources: [
+      {
+        label: "Acrew — Asad Khaliq",
+        url: "https://www.acrewcapital.com/team#asad-khaliq"
+      }
+    ]
+  },
+  "mark-kraynak": {
+    name: "Mark Kraynak",
+    firm: "Acrew Capital",
+    firmSlug: "acrew-capital",
+    title: "Founding Partner",
+    joinedYear: null,
+    sectors: [
+      "Cybersecurity"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.acrewcapital.com/team#mark-kraynak",
+    sectorsEvidence: "Mark has led or co-led investments in cybersecurity companies and was a marketing & strategy lead at Imperva",
+    education: [],
+    previousExperience: [
+      "Entrepreneur in Residence, Aspect Ventures",
+      "Marketing & Strategy roles, Imperva"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Mark Kraynak is a Founding Partner at Acrew Capital. Before Acrew, he was an EIR at Aspect Ventures and spent nearly 13 years at Imperva in marketing, product, and strategy roles. He later led Acrew’s investments in security companies and served as an advisor in cyber startups.",
+    sources: [
+      {
+        label: "Acrew — Mark Kraynak",
+        url: "https://www.acrewcapital.com/team#mark-kraynak"
+      }
+    ]
+  },
+  "aliisa-rosenthal": {
+    name: "Aliisa Rosenthal",
+    firm: "Acrew Capital",
+    firmSlug: "acrew-capital",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: [
+      "AI",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.acrewcapital.com/team#aliisa-rosenthal",
+    sectorsEvidence: "Aliisa focuses on AI-native companies and platforms reshaping enterprise software",
+    education: [],
+    previousExperience: [
+      "Executive, OpenAI (go-to-market for ChatGPT Enterprise)",
+      "Operations, Mixpanel",
+      "Operations, WalkMe"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Aliisa Rosenthal is a General Partner at Acrew Capital focusing on AI-native enterprise software. Before joining Acrew, she was an executive at OpenAI where she scaled the go-to-market function (helping to launch ChatGPT Enterprise). Earlier she held senior roles at Mixpanel and WalkMe.",
+    sources: [
+      {
+        label: "Acrew — Aliisa Rosenthal",
+        url: "https://www.acrewcapital.com/team#aliisa-rosenthal"
+      }
+    ]
+  },
+  "abe-yokell": {
+    name: "Abe Yokell",
+    firm: "Congruent Ventures",
+    firmSlug: "congruent-ventures",
+    title: "Managing Partner and Co-Founder",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.A., Economics, University of Pennsylvania"
+    ],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Abe Yokell is Co-Founder and Managing Partner of Congruent Ventures with 19 years of investment experience. He emphasizes deep tech and innovative business models in climate tech. He oversees Congruent’s investments in companies like Enphase Energy, Amply Power, and Blueprint Power. He holds a B.A. in Economics from the University of Pennsylvania.",
+    sources: [
+      {
+        label: "Congruent — Abe Yokell",
+        url: "https://www.congruentvc.com/team/abe-yokell"
+      }
+    ]
+  },
+  "tanuj-dutta": {
+    name: "Tanuj Dutta",
+    firm: "Congruent Ventures",
+    firmSlug: "congruent-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.Sc., Chemical Engineering, University of Western Ontario",
+      "HBA, University of Western Ontario"
+    ],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [
+      "AMP Sortation",
+      "FirstElement Exploration",
+      "Halcyon",
+      "Span.IO",
+      "STOR Preservation Systems"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tanuj Dutta is a General Partner at Congruent Ventures focused on supporting portfolio companies at growth inflection points. He brings cross-asset investing experience across venture and finance. He serves on the boards of AMP Sortation, FirstElement Exploration, Halcyon, Span.IO, and STOR Preservation Systems. He earned a B.Sc. in Chemical Engineering and an HBA from Western Ontario.",
+    sources: [
+      {
+        label: "Congruent — Tanuj Dutta",
+        url: "https://www.congruentvc.com/team/tanuj-dutta"
+      }
+    ]
+  },
+  "kevin-kopczynski": {
+    name: "Kevin Kopczynski",
+    firm: "Congruent Ventures",
+    firmSlug: "congruent-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.S.E., Mechanical Engineering, Princeton University",
+      "M.S., Mechanical Engineering, Stanford University",
+      "MBA, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "VP, M&A & Project Development, Plug Power",
+      "Integration Lead, First Solar (Enki Technology acquisition)",
+      "CEO, Enki Technology (acquired by First Solar)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kevin Kopczynski is a Partner at Congruent Ventures and an energy technology executive with 15+ years of experience. He was VP of M&A at Plug Power and led integration at First Solar. From 2013 to 2016, he was CEO of Enki Technology and led it through acquisition by First Solar. He holds degrees from Princeton, Stanford, and UC Berkeley.",
+    sources: [
+      {
+        label: "Congruent — Kevin Kopczynski",
+        url: "https://www.congruentvc.com/team/kevin-kopczynski"
+      }
+    ]
+  },
+  "eliza-cushman": {
+    name: "Eliza Cushman",
+    firm: "Congruent Ventures",
+    firmSlug: "congruent-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "MBA, Columbia Business School",
+      "B.S., Finance, Wake Forest University"
+    ],
+    previousExperience: [
+      "Associate, KKR (private credit)",
+      "Analyst, Bank of America (Leveraged Finance)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Ezra Climate"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Eliza Cushman is a Partner at Congruent Ventures managing investments and portfolio support. She was previously an Associate at KKR (origination in private credit) and began her career in leveraged finance at Bank of America. She holds an MBA from Columbia and a B.S. from Wake Forest University. She serves on the board of Ezra Climate.",
+    sources: [
+      {
+        label: "Congruent — Eliza Cushman",
+        url: "https://www.congruentvc.com/team/eliza-cushman"
+      }
+    ]
+  },
+  "curtis-spencer": {
+    name: "Curtis Spencer",
+    firm: "Electric Capital",
+    firmSlug: "electric-capital",
+    title: "General Partner, Co-founder",
+    joinedYear: null,
+    sectors: [
+      "AI",
+      "Cybersecurity"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://electriccapital.com/team/curtis-spencer/",
+    sectorsEvidence: "focusing on open source developer ecosystems, DeFi, AI, and cybersecurity",
+    education: [],
+    previousExperience: [
+      "CTO, Cruxlux (acquired by Walmart Labs)",
+      "CTO, Spool (acquired by Facebook)",
+      "Engineering Lead, Facebook (News Feed, Events)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Curtis Spencer is Co-Founder and General Partner at Electric Capital focusing on open-source developer ecosystems, DeFi, AI, and cybersecurity. Before Electric, he was CTO at Cruxlux (acquired by Walmart Labs) and CTO at Spool (acquired by Facebook) and served as an engineering lead at Facebook.",
+    sources: [
+      {
+        label: "Electric Capital — Curtis Spencer",
+        url: "https://electriccapital.com/team/curtis-spencer/"
+      }
+    ]
+  },
+  "ken-deeter": {
+    name: "Ken Deeter",
+    firm: "Electric Capital",
+    firmSlug: "electric-capital",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "M.S., Computer Science, University of British Columbia",
+      "B.S.E., Computer Science, Princeton University"
+    ],
+    previousExperience: [
+      "Software Engineer, VMware (systems software)",
+      "Software Engineer, Facebook (News Feed)",
+      "Product Manager, Facebook (Events)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ken Deeter is a General Partner at Electric Capital focusing on decentralized finance and tokenomics. He was previously a software engineer and product manager building systems at VMware and Facebook. He earned an M.S. from UBC and a B.S.E. from Princeton.",
+    sources: [
+      {
+        label: "Electric Capital — Ken Deeter",
+        url: "https://electriccapital.com/team/ken-deeter/"
+      }
+    ]
+  },
+  "maria-shen": {
+    name: "Maria Shen",
+    firm: "Electric Capital",
+    firmSlug: "electric-capital",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "A.B., Government, Harvard University",
+      "M.Eng., Computer Science, Cornell University"
+    ],
+    previousExperience: [
+      "CTO & Co-founder, Supply-chain startup",
+      "Search Engineer, Microsoft"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Maria Shen is a General Partner at Electric Capital. Prior to Electric, she was CTO and co-founder of a startup for SMB supply chains, and earlier worked on search technology at Microsoft. She holds an A.B. from Harvard and an M.Eng. from Cornell.",
+    sources: [
+      {
+        label: "Electric Capital — Maria Shen",
+        url: "https://electriccapital.com/team/maria-shen/"
+      }
+    ]
+  },
+  "ren-cf": {
+    name: "Ren CF",
+    firm: "Electric Capital",
+    firmSlug: "electric-capital",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [],
+    previousExperience: [
+      "Quantitative Researcher, Citadel (commodities markets)",
+      "Blockchain Researcher, Electric Capital (smart contract analysis)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ren CF is a General Partner at Electric Capital. He began his career as a quantitative researcher at Citadel building trading infrastructure, and at Electric he co-created Codeslaw (a smart contract search tool) and contributed to Bitcoin consensus analysis.",
+    sources: [
+      {
+        label: "Electric Capital — Ren CF",
+        url: "https://electriccapital.com/team/ren-cf/"
+      }
+    ]
+  },
 };
