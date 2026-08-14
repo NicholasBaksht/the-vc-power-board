@@ -28,8 +28,8 @@
    public client identifier — it grants nothing on its own,
    because every table is protected by row level security that
    checks auth.uid(). It is designed to ship in browser code. */
-const SUPABASE_URL = 'https://bwghtmbaqljbconbgpup.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_KeWlq_12xJElNifqEo5GYA_4IlTE1KG';
+const SUPABASE_URL = 'https://YOUR-PROJECT-REF.supabase.co';
+const SUPABASE_ANON_KEY = 'YOUR-ANON-KEY';
 
 /* Where the magic link returns to. Must exactly match one of the
    redirect URLs allowed in the Supabase dashboard.
