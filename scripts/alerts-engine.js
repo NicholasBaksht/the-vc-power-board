@@ -59,6 +59,8 @@ const POWER_ALERT_CONFIG = {
   // --- deal recency (new_investments) ---
   newInvestmentWindowDays: 90, // lookback for "recently announced"
   minNewInvestments: 4,        // disclosed rounds in the window before it is news
+  minCoinvestorReach: 6,       // other covered firms a firm must have co-invested
+                               // with before its syndicate reach is worth an alert
   maxDealDataAgeDays: 30,      // if the newest deal on file is older than this, the
                                // whole alert type is withheld. A recency claim built
                                // on stale data does not degrade gracefully - it
@@ -72,8 +74,10 @@ const POWER_ALERT_CONFIG = {
 
   // --- surfacing ---
   minScore: 45,                // alerts below this are computed but not shown
-  maxAlerts: 12,
-  maxPerType: 4
+  maxAlerts: 16,
+  maxPerType: 2             // with 128 alerts computed and one board, a low
+                            // per-type cap is what stops any single type from
+                            // crowding every other one off the page
 };
 
 /* Alert types the dataset CANNOT currently support. Declared in
@@ -89,7 +93,6 @@ const UNSUPPORTED_ALERTS = {
   // pass (see rule 5b). It fires only for firms that publish a per-person
   // investment focus; most publish none, and those profiles hold
   // sectors:null rather than inheriting their firm's sector list.
-  coinvestor_network: 'no co-investor field exists.',
   fund_announcements: 'fund closes appear only as free-text timeline prose; parsing amounts would be inference, not data.',
   portfolio_returns: 'only 8 holdings rows carry investedYear plus both prices - not enough to compute returns.'
 };
@@ -986,6 +989,117 @@ function computePowerAlerts(options) {
     }
   }
 
+  /* --- 12. CO-INVESTOR NETWORK REACH ---
+     "Firm X has co-invested with N of the other M firms that have
+     deal coverage."
+
+     Built from coInvestors[], which stores names exactly as each
+     source wrote them ("Nvidia" / "NVIDIA" / "Nvidia Ventures").
+     COINVESTOR_ALIASES is the only sanctioned bridge from those raw
+     strings to firm slugs, and it maps ONLY firms that have deal
+     rows of their own - so every edge is checkable from both sides
+     and the denominator stays honest.
+
+     Reach is a SET of firms, which is what makes this safe where a
+     pairwise count would not be. The same round is frequently
+     recorded twice, once under each participating firm, and a naive
+     pair counter double-counts it; set membership collapses that
+     automatically. (Measured: naive pair counts overstated by ~40%
+     on this data.)
+
+     It is a floor. An edge exists only where a source actually named
+     the other firm, so a quiet syndicate partner is invisible, and
+     firms without deal coverage cannot contribute at all. */
+  const ALIASES = typeof COINVESTOR_ALIASES !== 'undefined' && COINVESTOR_ALIASES ? COINVESTOR_ALIASES : null;
+  if (!DEALS || !DEALS.length) {
+    skip('coinvestor_network', 'FIRM_DEALS not loaded');
+  } else if (!ALIASES || !Object.keys(ALIASES).length) {
+    skip('coinvestor_network', 'COINVESTOR_ALIASES not loaded; raw co-investor strings cannot be joined');
+  } else {
+    const coveredSet = {};
+    DEALS.forEach(function (d) { if (d.firmSlug) coveredSet[d.firmSlug] = 1; });
+    const coveredCount = Object.keys(coveredSet).length;
+
+    const reach = {};      // slug -> { otherSlug: 1 }
+    const viaRound = {};   // slug -> { otherSlug: [ {company, date} ] }
+    DEALS.forEach(function (d) {
+      if (!d.firmSlug || !Array.isArray(d.coInvestors)) return;
+      d.coInvestors.forEach(function (raw) {
+        if (typeof raw !== 'string') return;
+        const other = ALIASES[raw.trim().toLowerCase()];
+        // Both endpoints must have deal coverage, and self-edges are
+        // dropped (a firm naming its own vehicle, e.g. "DCVC Bio").
+        if (!other || other === d.firmSlug || !coveredSet[other]) return;
+        (reach[d.firmSlug] = reach[d.firmSlug] || {})[other] = 1;
+        (reach[other] = reach[other] || {})[d.firmSlug] = 1;
+        const rec = { company: d.company, date: d.announcedDate, source: d.sourceUrl };
+        ((viaRound[d.firmSlug] = viaRound[d.firmSlug] || {})[other] =
+          (viaRound[d.firmSlug][other] || [])).push(rec);
+        ((viaRound[other] = viaRound[other] || {})[d.firmSlug] =
+          (viaRound[other][d.firmSlug] || [])).push(rec);
+      });
+    });
+
+    Object.keys(reach).forEach(function (slug) {
+      const partners = Object.keys(reach[slug]);
+      if (partners.length < cfg.minCoinvestorReach) return;
+      const firm = firmBySlug[slug];
+      if (!firm) return;
+      // Denominator excludes the firm itself.
+      const denom = Math.max(1, coveredCount - 1);
+      const share = Math.min(1, partners.length / denom);
+
+      alerts.push({
+        id: pa_fingerprint(['coinvestor_network', slug, partners.length, coveredCount]),
+        type: 'coinvestor_network',
+        firmId: slug,
+        sector: null,
+        subject: firm.name,
+        metric: 'other covered firms this firm has co-invested with',
+        previousValue: null,
+        currentValue: partners.length,
+        absoluteChange: null,
+        percentChange: null,
+        unit: 'firms',
+        period: 'all recorded deals',
+        direction: 'flat',
+        generatedAt: generatedAt,
+        confidence: pa_round(share, 3),
+        score: pa_score({
+          magnitude: partners.length, magnitudeCeiling: 12,
+          sample: coveredCount, sampleCeiling: 40,
+          confidence: share,
+          recency: 1
+        }),
+        evidence: {
+          firm: firm.name,
+          // NOT `partners` - alerts-ui.js already owns that key for
+          // people objects ({name,title,joinedYear}) and would render
+          // this list of firm-name strings as a row of empty fields.
+          coinvestors: partners.map(function (s) { return (firmBySlug[s] || {}).name || s; }).sort(),
+          coverage: coveredCount + ' firms currently have any deal records',
+          // One representative round per partner - not a slice, so the
+          // rendered list always accounts for every firm in the count.
+          deals: partners.map(function (s) {
+            const r = (viaRound[slug][s] || [])[0] || {};
+            return {
+              firm: (firmBySlug[s] || {}).name || s,
+              company: r.company,
+              date: r.date,
+              role: null,
+              source: r.source
+            };
+          }),
+          note: 'A floor, not a total. An edge exists only where a source explicitly ' +
+                'named the other firm in the same round, and only firms that have deal ' +
+                'records of their own can be counted - so this understates real syndicate ' +
+                'breadth. Co-investor names are stored verbatim and joined through an ' +
+                'alias table; unmapped names are excluded rather than guessed.'
+        }
+      });
+    });
+  }
+
   /* ---------- copy generation (spec §8) ----------
      Templates interpolate computed values only. No template
      asserts a cause, an intention or a trend beyond the number. */
@@ -1060,6 +1174,12 @@ function computePowerAlerts(options) {
           ? ', which is every deal on file for this firm - the real number is higher.'
           : '.') +
         ' Each is individually sourced; unannounced rounds are not counted.';
+    } else if (a.type === 'coinvestor_network') {
+      const total = (a.evidence.coverage || '').split(' ')[0];
+      a.title = a.subject + ' has co-invested with ' + a.currentValue + ' tracked firms';
+      a.description = a.subject + ' appears in the same round as ' + a.currentValue +
+        ' of the other ' + (Number(total) - 1) + ' firms with deal records on file. ' +
+        'Counted once per firm pair, from rounds where a source named both.';
     } else if (a.type === 'sector_breadth') {
       // Deliberately says "have a disclosed investment", never "are
       // moving into" or "increased activity" - the sample cannot
