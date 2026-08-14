@@ -128,6 +128,20 @@ function paEvidenceHtml(a) {
     list = '<div class="pa-ev-list"><div class="pa-ev-label">Names changed between captures</div><ul>' +
       e.people.map(function (p) { return '<li>' + paEsc(p.name) + ' &middot; ' + paEsc(p.title) + '</li>'; }).join('') +
       '</ul></div>';
+  } else if (e.deals && e.deals.length) {
+    // Every row carries its own source. The link is what makes a deal
+    // claim checkable, so it is rendered before the plain firm list.
+    list = '<div class="pa-ev-list"><div class="pa-ev-label">Disclosed rounds counted</div><ul>' +
+      e.deals.map(function (d) {
+        const who = paEsc(d.firm) + ' &rarr; ' + paEsc(d.company);
+        const when = d.date ? ' &middot; ' + paEsc(d.date) : '';
+        const role = d.role ? ' &middot; ' + paEsc(d.role) : '';
+        const safe = typeof d.source === 'string' && /^https?:\/\//i.test(d.source);
+        const src = safe
+          ? ' &middot; <a href="' + paEsc(d.source) + '" target="_blank" rel="noopener noreferrer">source</a>'
+          : '';
+        return '<li>' + who + when + role + src + '</li>';
+      }).join('') + '</ul></div>';
   } else if (e.firms && e.firms.length) {
     list = '<div class="pa-ev-list"><div class="pa-ev-label">Firms counted</div><ul>' +
       e.firms.map(function (f) { return '<li>' + paEsc(f) + '</li>'; }).join('') + '</ul></div>';
