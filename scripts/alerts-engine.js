@@ -111,6 +111,29 @@ function pa_fingerprint(parts) {
   return 'pa_' + (h >>> 0).toString(36);
 }
 
+
+/* Parses a fund's ordinal from its name: roman ("Fund VIII"), arabic
+   ("Fund 5") or written ("Addition Three"). Returns null when the name
+   carries no number, which is common and not an error. */
+function pa_fundOrdinal(name) {
+  if (!name) return null;
+  const words = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
+  const w = name.toLowerCase().match(/\b(one|two|three|four|five|six|seven|eight|nine|ten)\b/);
+  if (w) return words[w[1]];
+  const a = name.match(/\b(\d{1,2})\b/);
+  if (a) return parseInt(a[1], 10);
+  const r = name.toUpperCase().match(/\b([IVX]{1,6})\b/);
+  if (!r) return null;
+  const map = { I: 1, V: 5, X: 10 };
+  let n = 0, prev = 0;
+  for (let i = r[1].length - 1; i >= 0; i--) {
+    const v = map[r[1][i]];
+    n += v < prev ? -v : v;
+    prev = Math.max(prev, v);
+  }
+  return n || null;
+}
+
 /* ---------- scoring (spec §6) ---------- */
 // Blends effect magnitude, sample size, statistical confidence and
 // recency into 0-100. Weights are config, not magic constants.
@@ -545,6 +568,13 @@ function computePowerAlerts(options) {
       const latest = series[series.length - 1];
       const prev = series[series.length - 2];
       if (latest.vintageYear === prev.vintageYear) return; // same vintage, not a step
+      // Only compare CONSECUTIVE funds. monashees has Fund I (2011) and
+      // Fund VIII (2018) on record with II-VII missing; "Fund VIII is 4.7x
+      // Fund I" reads as a step between successive funds and is not one.
+      // When both ordinals are known and differ by more than one, the
+      // funds in between are missing and the comparison is withheld.
+      const nA = pa_fundOrdinal(prev.name), nB = pa_fundOrdinal(latest.name);
+      if (nA !== null && nB !== null && Math.abs(nB - nA) > 1) return;
       const ratio = latest.sizeUSD / prev.sizeUSD;
       if (ratio < cfg.minFundStepRatio && ratio > 1 / cfg.minFundStepRatio) return;
       const up = ratio > 1;
@@ -675,16 +705,22 @@ function computePowerAlerts(options) {
       // Don't say "Sinovation Ventures's Sinovation Fund V" - if the fund
       // name already carries the firm name, drop the possessive. And a
       // firm ending in s takes a bare apostrophe.
+      // Some funds are sized and dated but were never publicly named
+      // (Third Rock's 2013/2016/2019 vintages). Fall back to the year
+      // rather than printing "null".
+      const label = function (f) { return f.name || ('its ' + f.vintageYear + ' fund'); };
+      a.evidence.from.displayName = label(a.evidence.from);
+      a.evidence.to.displayName = label(a.evidence.to);
       const firstWord = a.subject.split(' ')[0].toLowerCase();
-      const owns = a.evidence.to.name.toLowerCase().indexOf(firstWord) === 0;
+      const owns = !!a.evidence.to.name && a.evidence.to.name.toLowerCase().indexOf(firstWord) === 0;
       const prefix = owns ? '' : a.subject + (/s$/i.test(a.subject) ? '’ ' : '’s ');
       // A fall must never be phrased as a multiple of growth.
-      a.title = prefix + a.evidence.to.name + (mult >= 1
-        ? ' is ' + pa_round(mult, 1) + '× the size of ' + a.evidence.from.name
-        : ' is ' + Math.round((1 - mult) * 100) + '% smaller than ' + a.evidence.from.name);
+      a.title = prefix + a.evidence.to.displayName + (mult >= 1
+        ? ' is ' + pa_round(mult, 1) + '× the size of ' + a.evidence.from.displayName
+        : ' is ' + Math.round((1 - mult) * 100) + '% smaller than ' + a.evidence.from.displayName);
       if (owns) a.title = a.subject + ': ' + a.title;
-      a.description = a.evidence.from.name + ' closed at ' + usd(a.previousValue) + ' in ' +
-        a.evidence.from.vintageYear + '; ' + a.evidence.to.name + ' closed at ' + usd(a.currentValue) +
+      a.description = a.evidence.from.displayName + ' closed at ' + usd(a.previousValue) + ' in ' +
+        a.evidence.from.vintageYear + '; ' + a.evidence.to.displayName + ' closed at ' + usd(a.currentValue) +
         ' in ' + a.evidence.to.vintageYear + '.';
     } else if (a.type === 'fund_year_activity') {
       a.title = a.currentValue + ' firms recorded a fund close in ' + a.subject;
