@@ -342,25 +342,21 @@ document.getElementById('powerSignalsView').style.display = 'none';
     document.getElementById('detailView').style.display = 'block';
     renderDetail(firm);
     window.scrollTo(0, 0);
-} else if (slug === 'rankings') {
+} else if (isAlerts) {
+    // The board was populated once at load; this just reveals it.
+    // renderFirms() is deliberately NOT called here.
+    window.scrollTo(0, 0);
+  } else if (isFirms) {
     document.getElementById('listView').style.display = 'block';
     renderFirms();
     window.scrollTo(0, 0);
-} else if (slug === 'powerAlerts') {
-    // Homepage chrome stays visible (see isHomepage above); the list is
-    // still rendered so everything below the alerts is intact. The scroll
-    // waits a frame because renderFirms() changes the page height.
-    document.getElementById('listView').style.display = 'block';
-    renderFirms();
-    const paEl = document.getElementById('powerAlerts');
-    if (paEl) {
-      requestAnimationFrame(function () {
-        window.scrollTo({ top: paEl.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
-      });
-    }
+  } else if (isHome) {
+    window.scrollTo(0, 0);
   } else {
-    document.getElementById('listView').style.display = 'block';
-    renderFirms();
+    // Unknown slug falls back to Home rather than a bare firm list.
+    if (homeIntroEl) homeIntroEl.style.display = '';
+    if (byTheNumbersEl) byTheNumbersEl.style.display = '';
+    window.scrollTo(0, 0);
   }
  renderCompareBar();
   renderComparePartnersBar();
