@@ -434,5 +434,6 @@ fetch('prices.json')
     renderFeaturedFirm();
     renderSectorFilterChips();
     renderAnalytics();
+    renderPowerAlerts();
     router();
   });
