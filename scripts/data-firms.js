@@ -2,7 +2,7 @@ const firms = [
   {
     rank: 1,
     name: "SoftBank Vision Fund",
-    sectors: ["AI", "Enterprise Software", "Consumer Internet", "Logistics"],
+    sectors: ["AI", "Enterprise Software", "Consumer Internet", "Logistics", "Cybersecurity", "Climate", "Developer Tools", "Deep Tech"],
     signatureExit: "DoorDash's 2020 IPO, which implied a fully diluted valuation of $71.2 billion — CEO Alex Clavel later called it SVF1's best-performing asset, with a $7.3 billion gain on full exit",
     slug: "softbank-vision-fund",
     website: "https://visionfund.com",
@@ -244,7 +244,7 @@ holdings: []
   {
   rank: null,
   name: "Elad Gil",
-  sectors: ["AI", "Fintech", "SaaS", "Marketplaces"],
+  sectors: ["AI", "Fintech", "SaaS", "Marketplaces", "Industrial Tech", "Cybersecurity", "Developer Tools", "Healthcare"],
   signatureExit: "Airbnb's 2020 IPO — one of dozens of pre-IPO checks across a track record including Coinbase, Instacart, Pinterest, and Roblox",
   slug: "elad-gil",
   website: "https://eladgil.com",
@@ -1685,7 +1685,7 @@ holdings: []
   {
     rank: 33,
     name: "Threshold Ventures",
-    sectors: ["Enterprise Software", "Fintech", "Healthcare", "Developer Tools"],
+    sectors: ["Enterprise Software", "Fintech", "Healthcare", "Developer Tools", "Climate", "AI"],
     signatureExit: "Livongo's $18.5 billion acquisition by Teladoc Health in October 2020 — Threshold (then DFJ) backed Livongo in its earlier stages, making this one of the firm's largest realized exits",
     slug: "threshold-ventures",
     website: "https://threshold.vc",
@@ -1717,7 +1717,7 @@ holdings: []
   {
     rank: 1,
     name: "Andreessen Horowitz",
-    sectors: ["AI", "Crypto", "Fintech", "Consumer"],
+    sectors: ["AI", "Crypto", "Fintech", "Consumer", "Enterprise Software", "Developer Tools", "Cybersecurity"],
     signatureExit: "Coinbase's 2021 direct listing on Nasdaq — one of the largest crypto IPOs ever",
     slug: "a16z",
     seoPage: "firms/a16z/",
@@ -1840,7 +1840,7 @@ holdings: []
   {
     rank: 9,
     name: "TCV",
-    sectors: ["Consumer Internet", "SaaS", "Fintech", "Media"],
+    sectors: ["Consumer Internet", "SaaS", "Fintech", "Media", "Cybersecurity", "AI", "Deep Tech"],
     signatureExit: "Netflix's 2002 Nasdaq IPO — TCV owned roughly 43% of the company pre-IPO and co-founder Jay Hoag has served on Netflix's board since 1999, watching it grow into a company worth more than $400 billion",
     slug: "tcv",
     website: "https://www.tcv.com",
@@ -1899,7 +1899,7 @@ holdings: []
   {
     rank: 9,
     name: "Kleiner Perkins",
-    sectors: ["Enterprise Software", "Consumer Internet", "Healthcare", "AI"],
+    sectors: ["Enterprise Software", "Consumer Internet", "Healthcare", "AI", "Deep Tech", "Industrial Tech", "Fintech"],
     signatureExit: "Google's 2004 IPO — the firm's $12.5 million bet alongside Sequoia Capital remains one of the most celebrated investments in venture capital history",
     slug: "kleiner-perkins",
     website: "https://www.kleinerperkins.com",
@@ -1930,7 +1930,7 @@ holdings: []
   {
     rank: 10,
     name: "Ribbit Capital",
-    sectors: ["Fintech", "Crypto", "Consumer Internet", "AI"],
+    sectors: ["Fintech", "Crypto", "Consumer Internet", "AI", "Deep Tech", "Defense Tech", "Enterprise Software"],
     signatureExit: "Nubank's 2021 NYSE IPO — Ribbit was an early backer of the Brazilian neobank, which reached a market capitalization of roughly $67.4 billion by July 2026",
     slug: "ribbit-capital",
     website: "https://ribbitcap.com",
@@ -2101,7 +2101,7 @@ holdings: []
   {
     rank: 19,
     name: "8VC",
-    sectors: ["Enterprise Software", "Defense Tech", "Healthcare", "AI", "Industrial Tech"],
+    sectors: ["Enterprise Software", "Defense Tech", "Healthcare", "AI", "Industrial Tech", "Deep Tech", "Fintech"],
     signatureExit: "Wish's NASDAQ IPO in December 2020 at a $14.1 billion valuation — Joe Lonsdale was an early institutional investor in the e-commerce company",
     slug: "8vc",
     website: "https://8vc.com",
@@ -3693,7 +3693,7 @@ holdings: []
   {
     rank: 32,
     name: "Initialized Capital",
-    sectors: ["Enterprise Software", "AI", "Infrastructure", "Consumer", "Crypto", "Healthcare"],
+    sectors: ["Enterprise Software", "AI", "Infrastructure", "Consumer", "Crypto", "Healthcare", "Deep Tech", "Mobility", "Cybersecurity", "Climate"],
     signatureExit: "Coinbase's 2021 direct listing — Initialized was an early backer of the exchange, which carried a market capitalization of roughly $41.9 billion by July 2026",
     slug: "initialized-capital",
     website: "https://initialized.com",
@@ -4216,7 +4216,7 @@ holdings: []
   {
     rank: 38,
     name: "Dell Technologies Capital",
-    sectors: ["AI", "Cybersecurity", "Data & Analytics", "Enterprise Software"],
+    sectors: ["AI", "Cybersecurity", "Data & Analytics", "Enterprise Software", "Industrial Tech"],
     signatureExit: "JFrog's September 2020 Nasdaq IPO — DTC published a case study celebrating the DevOps company's public debut, part of a run of exits including Arista, DocuSign, MongoDB, Nutanix, SumoLogic, and Zscaler that generated more than $160 billion in combined market value",
     slug: "dell-technologies-capital",
     website: "https://www.delltechnologiescapital.com",
@@ -7005,7 +7005,7 @@ holdings: []
   {
     rank: 68,
     name: "Y Combinator",
-    sectors: ["AI", "SaaS", "Consumer Internet", "Fintech", "Biotech"],
+    sectors: ["AI", "SaaS", "Consumer Internet", "Fintech", "Biotech", "Developer Tools"],
     signatureExit: "Coinbase's 2021 Nasdaq direct listing at an $85 billion valuation — the most valuable company in YC history at time of listing",
     slug: "y-combinator",
     website: "https://www.ycombinator.com",
