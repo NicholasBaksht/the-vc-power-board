@@ -64,6 +64,11 @@ const partnerProfiles = {
 },
   "kyle-samani": {
   name: "Kyle Samani",
+  sectors: ["Crypto"],
+  sectorsConfidence: "medium",
+  sectorsSource: "https://www.theblock.co/profile/348664/kyle-samani",
+  departedYear: 2026,
+  departedNote: "Stepped down from Multicoin in February 2026; absent from the firm's own team page as captured 2026-08-12. Sectors describe his tenure, not a current role.",
   firm: "Multicoin Capital",
   firmSlug: "multicoin-capital",
   title: "Co-Founder & Managing Partner",
@@ -82,6 +87,9 @@ const partnerProfiles = {
 },
   "tushar-jain": {
   name: "Tushar Jain",
+  sectors: ["Crypto"],
+  sectorsConfidence: "high",
+  sectorsSource: "https://multicoin.capital/about/",
   firm: "Multicoin Capital",
   firmSlug: "multicoin-capital",
   title: "Co-Founder & Managing Partner",
@@ -196,6 +204,9 @@ const partnerProfiles = {
 },
   "claude-ritter": {
   name: "Claude Ritter",
+  sectors: null,
+  sectorsConfidence: null,
+  sectorsSource: "https://cavalry.vc/",
   firm: "Cavalry Ventures",
   firmSlug: "cavalry-ventures",
   title: "Co-Founder & Managing Partner",
@@ -224,6 +235,9 @@ const partnerProfiles = {
 },
   "stefan-walter": {
   name: "Stefan Walter",
+  sectors: null,
+  sectorsConfidence: null,
+  sectorsSource: "https://cavalry.vc/",
   firm: "Cavalry Ventures",
   firmSlug: "cavalry-ventures",
   title: "Co-Founder & Managing Partner",
@@ -488,6 +502,9 @@ const partnerProfiles = {
 },
   "peter-barrett": {
   name: "Peter Barrett",
+  sectors: ["Biotech", "Deep Tech", "Infrastructure"],
+  sectorsConfidence: "high",
+  sectorsSource: "https://www.playground.vc/people/peter-barrett",
   firm: "Playground Global",
   firmSlug: "playground-global",
   title: "Co-Founder, General Partner & CTO",
@@ -517,6 +534,9 @@ const partnerProfiles = {
 },
   "bruce-leak": {
   name: "Bruce Leak",
+  sectors: ["Robotics", "Infrastructure", "Climate"],
+  sectorsConfidence: "high",
+  sectorsSource: "https://www.playground.vc/people/bruce-leak",
   firm: "Playground Global",
   firmSlug: "playground-global",
   title: "Co-Founder, Founding Partner & General Partner",
@@ -547,6 +567,9 @@ const partnerProfiles = {
 },
   "jory-bell": {
   name: "Jory Bell",
+  sectors: ["Biotech"],
+  sectorsConfidence: "high",
+  sectorsSource: "https://www.playground.vc/people/jory-bell",
   firm: "Playground Global",
   firmSlug: "playground-global",
   title: "General Partner",
@@ -568,6 +591,9 @@ const partnerProfiles = {
 },
   "pat-gelsinger": {
   name: "Pat Gelsinger",
+  sectors: ["Deep Tech", "Infrastructure", "Climate"],
+  sectorsConfidence: "high",
+  sectorsSource: "https://www.playground.vc/people/pat-gelsinger",
   firm: "Playground Global",
   firmSlug: "playground-global",
   title: "General Partner",
@@ -626,6 +652,9 @@ const partnerProfiles = {
 },
   "neil-sequeira": {
   name: "Neil Sequeira",
+  sectors: null,
+  sectorsConfidence: null,
+  sectorsSource: "https://defy.vc/team_member/neil-sequeira/",
   firm: "Defy Partners",
   firmSlug: "defy-partners",
   title: "Co-Founder & Partner",
@@ -658,6 +687,9 @@ const partnerProfiles = {
 },
   "trae-vassallo": {
   name: "Trae Vassallo",
+  sectors: null,
+  sectorsConfidence: null,
+  sectorsSource: "https://defy.vc/team/",
   firm: "Defy Partners",
   firmSlug: "defy-partners",
   title: "Co-Founder & Managing Director",
@@ -690,6 +722,9 @@ const partnerProfiles = {
 },
   "kate-mcandrew": {
   name: "Kate McAndrew",
+  sectors: null,
+  sectorsConfidence: null,
+  sectorsSource: "https://baukunst.co/collective",
   firm: "Baukunst",
   firmSlug: "baukunst",
   title: "Co-Founder & General Partner",
@@ -720,6 +755,9 @@ const partnerProfiles = {
 },
   "tyler-mincey": {
   name: "Tyler Mincey",
+  sectors: null,
+  sectorsConfidence: null,
+  sectorsSource: "https://baukunst.co/collective",
   firm: "Baukunst",
   firmSlug: "baukunst",
   title: "Co-Founder & General Partner",
@@ -746,6 +784,9 @@ const partnerProfiles = {
 },
   "axel-bichara": {
   name: "Axel Bichara",
+  sectors: null,
+  sectorsConfidence: null,
+  sectorsSource: "https://baukunst.co/collective",
   firm: "Baukunst",
   firmSlug: "baukunst",
   title: "Co-Founder & General Partner",
@@ -772,6 +813,9 @@ const partnerProfiles = {
 },
   "matt-thoms": {
   name: "Matt Thoms",
+  sectors: null,
+  sectorsConfidence: null,
+  sectorsSource: "https://baukunst.co/collective",
   firm: "Baukunst",
   firmSlug: "baukunst",
   title: "Co-Founder & General Partner",
@@ -1077,6 +1121,9 @@ const partnerProfiles = {
 },
   "john-vrionis": {
   name: "John Vrionis",
+  sectors: null,
+  sectorsConfidence: null,
+  sectorsSource: "https://www.unusual.vc/team/john-vrionis/",
   firm: "Unusual Ventures",
   firmSlug: "unusual-ventures",
   title: "Co-Founder & Managing Partner",
@@ -1104,6 +1151,9 @@ const partnerProfiles = {
 },
   "jyoti-bansal": {
   name: "Jyoti Bansal",
+  sectors: null,
+  sectorsConfidence: null,
+  sectorsSource: "https://www.unusual.vc/team/jyoti-bansal/",
   firm: "Unusual Ventures",
   firmSlug: "unusual-ventures",
   title: "Co-Founder & Entrepreneur Partner",
@@ -1158,6 +1208,9 @@ const partnerProfiles = {
 },
   "niv-dror": {
   name: "Niv Dror",
+  sectors: null,
+  sectorsConfidence: null,
+  sectorsSource: "https://www.crunchbase.com/organization/shrug-capital",
   firm: "Shrug Capital",
   firmSlug: "shrug-capital",
   title: "Founder & Managing Partner",
@@ -1186,6 +1239,9 @@ const partnerProfiles = {
 },
   "moshe-lifschitz": {
   name: "Moshe Lifschitz",
+  sectors: null,
+  sectorsConfidence: null,
+  sectorsSource: "https://www.zoominfo.com/p/Moshe-Lifschitz/4150701099",
   firm: "Shrug Capital",
   firmSlug: "shrug-capital",
   title: "Founder & Managing Partner",
@@ -1755,6 +1811,9 @@ const partnerProfiles = {
   },
   "josh-stein": {
     name: "Josh Stein",
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: "https://threshold.vc/team/josh-stein/",
     firm: "Threshold Ventures",
     firmSlug: "threshold-ventures",
     title: "Co-Founder & Managing Partner",
@@ -1791,6 +1850,9 @@ const partnerProfiles = {
   },
   "emily-melton": {
     name: "Emily Melton",
+    sectors: ["Healthcare", "Consumer", "Enterprise Software"],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://threshold.vc/team/emily-melton/",
     firm: "Threshold Ventures",
     firmSlug: "threshold-ventures",
     title: "Co-Founder & Managing Partner",
@@ -1823,6 +1885,9 @@ const partnerProfiles = {
   },
   "elizabeth-yin": {
     name: "Elizabeth Yin",
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: "https://www.hustlefund.vc/team",
     firm: "Hustle Fund",
     firmSlug: "hustle-fund",
     title: "Co-Founder & General Partner",
@@ -2083,6 +2148,9 @@ const partnerProfiles = {
   },
   "eric-bahn": {
     name: "Eric Bahn",
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: "https://www.hustlefund.vc/team",
     firm: "Hustle Fund",
     firmSlug: "hustle-fund",
     title: "Co-Founder & General Partner",
@@ -2307,6 +2375,9 @@ const partnerProfiles = {
   },
   "matt-huang": {
     name: "Matt Huang",
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: "https://www.paradigm.xyz/team/matt-huang",
     firm: "Paradigm",
     firmSlug: "paradigm",
     title: "Co-Founder & Managing Partner",
