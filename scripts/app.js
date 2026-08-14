@@ -189,12 +189,12 @@ function router() {
   // previously always rendered regardless of page, which is the
   // real reason navigating anywhere felt like "one long page."
   // Shown only for the true homepage/Rankings route.
-// #powerAlerts is an in-page anchor, not a view of its own. It has to
-  // count as the homepage: the section lives INSIDE #homeIntro, so any
-  // slug failing this test hides the very thing the link points at.
-  const powerAlertsEl = document.getElementById('powerAlerts');
-  if (powerAlertsEl) powerAlertsEl.style.display = isAlerts ? '' : 'none';
-  document.getElementById('listView').style.display = 'none';
+  // Three separate destinations where there used to be one homepage.
+  // Legacy #rankings / #firmsContainer land on Firms.
+  const isHome   = (slug === '' || slug === 'home');
+  const isFirms  = (slug === 'firms' || slug === 'rankings' || slug === 'firmsContainer');
+  const isAlerts = (slug === 'powerAlerts');
+  const isHomepage = isHome;
   const homeIntroEl = document.getElementById('homeIntro');
   if (homeIntroEl) homeIntroEl.style.display = isHomepage ? '' : 'none';
   // "By the Numbers" is homepage-flavored summary content, same
