@@ -12735,4 +12735,1027 @@ sources: [
       }
     ]
   },
+  "aidan-madigan-curtis": {
+    name: "Aidan Madigan-Curtis",
+    firm: "Eclipse Ventures",
+    firmSlug: "eclipse-ventures",
+    title: "Partner",
+    joinedYear: 2021,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Economics, Harvard University",
+      "MBA, Stanford University"
+    ],
+    previousExperience: [
+      "VP & GM, Connected Sites, Samsara",
+      "Operations Leader, Apple's Global Operations team",
+      "Investment Analyst, Bridgewater Associates"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2021",
+        event: "Joined Eclipse Ventures as Partner."
+      }
+    ],
+    biography: "Aidan Madigan-Curtis is a Partner at Eclipse Ventures who joined in 2021. She spent five years at IoT company Samsara as VP & GM of Connected Sites, and earlier worked in operations at Apple. She also worked as an investment analyst at Bridgewater Associates. Aidan’s experience spans scaling hardware products for consumer tech and industrial IoT, though her stated investment focus was not explicitly published.",
+    sources: [
+      {
+        label: "Eclipse Ventures (Press Release)",
+        url: "https://eclipse.capital/blog/welcome-aidan-madigan-curtis-and-jay-knafel"
+      }
+    ]
+  },
+  "charly-mwangi": {
+    name: "Charly Mwangi",
+    firm: "Eclipse Ventures",
+    firmSlug: "eclipse-ventures",
+    title: "Partner and Head of Strategy",
+    joinedYear: 2022,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Executive VP, Manufacturing, Rivian",
+      "Senior manufacturing roles at Tesla",
+      "Senior manufacturing roles at Nissan",
+      "Senior manufacturing roles at Toyota"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2022",
+        event: "Joined Eclipse Ventures as Partner."
+      }
+    ],
+    biography: "Charly Mwangi is a Partner at Eclipse Ventures who joined in 2022. He previously served as Executive Vice President of Manufacturing at EV maker Rivian. Over an 18-year auto industry career, he held senior manufacturing leadership roles at Tesla, Nissan and Toyota. He is now a partner focusing on Eclipse’s investments in industrial technology.",
+    sources: [
+      {
+        label: "CIO Africa – Charly Mwangi Joins Eclipse Ventures",
+        url: "https://cioafrica.co/charly-mwangi-joins-eclipse-ventures-as-partner/"
+      },
+      {
+        label: "Manufacturing Happy Hour Podcast",
+        url: "https://manufacturinghappyhour.com/262-reimagining-manufacturing-how-a-return-to-first-principles-is-reshaping-factories-hard-tech-and-venture-capital-with-eclipse-ventures-charly-mwangi/"
+      }
+    ]
+  },
+  "allyson-johnson": {
+    name: "Allyson Johnson",
+    firm: "Eclipse Ventures",
+    firmSlug: "eclipse-ventures",
+    title: "Partner Emeritus",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Mathematics, Duke University"
+    ],
+    previousExperience: [
+      "Associate Director, Standard Chartered Bank"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2022",
+        event: "Appointed VP of Investor Relations at Eclipse Ventures."
+      }
+    ],
+    biography: "Allyson Johnson is Partner Emeritus at Eclipse Ventures, later taking on an IR role. In 2022 she became VP of Investor Relations for the firm. Previously she worked as an Associate Director at Standard Chartered Bank. She holds a BA in Mathematics from Duke University.",
+    sources: [
+      {
+        label: "Eclipse Ventures — Allyson Johnson",
+        url: "https://www.crunchbase.com/person/allyson-johnson"
+      }
+    ]
+  },
+  "claire-brown": {
+    name: "Claire Brown",
+    firm: "Oxford Science Enterprises",
+    firmSlug: "oxford-science-enterprises",
+    title: "Partner, Life Sciences",
+    joinedYear: 2020,
+    sectors: [
+      "Healthcare"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.oxfordscienceenterprises.com/who/claire-brown",
+    education: [
+      "BSc, Physiology, University of Glasgow",
+      "PhD, Physiology, University of Glasgow",
+      "MBA, Duke University (Entrepreneurship)"
+    ],
+    previousExperience: [
+      "Head of Investment, Pioneer Group",
+      "Investment Director, BioCity Life Science incubator"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2020",
+        event: "Joined Oxford Science Enterprises as Partner, Life Sciences."
+      }
+    ],
+    biography: "Claire Brown is a Partner (Life Sciences) at Oxford Science Enterprises. She joined OSE in 2020. Prior to OSE, she served as Head of Investment at Pioneer Group and was an Investment Director at BioCity, a life-science incubator. She has worked in R&D and licensing at UCB, Sanofi-Genzyme, and AstraZeneca. She holds a BSc and PhD in Physiology from the University of Glasgow and an MBA focused on entrepreneurship.",
+    sources: [
+      {
+        label: "Oxford Science Enterprises — Claire Brown",
+        url: "https://www.oxfordscienceenterprises.com/who/claire-brown"
+      },
+      {
+        label: "StEP Ignite Fireside Chat",
+        url: "https://stepignite.com/2020/09/24/life-sciences-partnership-claire-brown/2020/"
+      }
+    ]
+  },
+  "lilly-bussmann": {
+    name: "Lilly Bussmann",
+    firm: "Oxford Science Enterprises",
+    firmSlug: "oxford-science-enterprises",
+    title: "Partner",
+    joinedYear: 2021,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Philosophy/Politics/Economics, University of Oxford"
+    ],
+    previousExperience: [
+      "Partner, RT Ventures",
+      "Investor, Mosaic Ventures",
+      "Analyst, Lansdowne Partners"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2021",
+        event: "Rejoined Oxford Science Enterprises as Partner."
+      }
+    ],
+    biography: "Lilly Bussmann is a Partner at Oxford Science Enterprises who rejoined the firm in 2021. Earlier she was a founding Principal at OSE and later a Partner at RT Ventures. She also worked at Mosaic Ventures and Lansdowne Partners. She holds a BA in PPE from Oxford University.",
+    sources: [
+      {
+        label: "Oxford Science Enterprises — Lilly Bussmann",
+        url: "https://www.oxfordscienceenterprises.com/who/lilly-bussmann"
+      }
+    ]
+  },
+  "sanne-de-jongh": {
+    name: "Sanne De Jongh",
+    firm: "Oxford Science Enterprises",
+    firmSlug: "oxford-science-enterprises",
+    title: "Partner, Life Sciences",
+    joinedYear: 2023,
+    sectors: [
+      "Healthcare"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.oxfordscienceenterprises.com/who/sanne-de-jongh",
+    education: [
+      "BSc, Biochemistry, Leiden University",
+      "MSc, Biochemical Engineering, Delft University of Technology"
+    ],
+    previousExperience: [
+      "Investment Manager, Gilde Healthcare",
+      "Associate, Anterra Capital",
+      "Analyst, M Ventures"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2023",
+        event: "Joined Oxford Science Enterprises as Partner, Life Sciences."
+      }
+    ],
+    biography: "Sanne De Jongh is Partner (Life Sciences) at Oxford Science Enterprises, joining in 2023. She previously held investment roles at biotech venture funds Gilde Healthcare, Anterra Capital, and M Ventures. She earned a BSc in Biochemistry from Leiden University and an MSc in Biochemical Engineering from Delft University of Technology.",
+    sources: [
+      {
+        label: "Oxford Science Enterprises — Sanne De Jongh",
+        url: "https://www.oxfordscienceenterprises.com/who/sanne-de-jongh"
+      }
+    ]
+  },
+  "nick-dixon-clegg": {
+    name: "Nick Dixon-Clegg",
+    firm: "Oxford Science Enterprises",
+    firmSlug: "oxford-science-enterprises",
+    title: "Partner, Head of Independent Investments",
+    joinedYear: 2020,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "MA (Cantab), Natural Sciences, University of Cambridge"
+    ],
+    previousExperience: [
+      "Investment Principal, Valiance",
+      "Private Equity Investor, Nordic Capital",
+      "Investment Banker, Bank of America Merrill Lynch"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2020",
+        event: "Joined Oxford Science Enterprises as Partner."
+      }
+    ],
+    biography: "Nick Dixon-Clegg is Partner and Head of Independent Investments at Oxford Science Enterprises. He joined OSE in 2020. Previously, he was an Investment Principal at MedTech VC firm Valiance, and earlier worked in private equity at Nordic Capital and in banking at Bank of America Merrill Lynch. He holds a degree in Natural Sciences from Cambridge University.",
+    sources: [
+      {
+        label: "Oxford Science Enterprises — Nick Dixon-Clegg",
+        url: "https://www.oxfordscienceenterprises.com/who/nick-dixon-clegg"
+      }
+    ]
+  },
+  "ben-sun": {
+    name: "Ben Sun",
+    firm: "Primary Venture Partners",
+    firmSlug: "primary-venture-partners",
+    title: "Partner, Co-CIO",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Economics, University of Michigan"
+    ],
+    previousExperience: [
+      "Founder, Community Connect (BlackPlanet)",
+      "Founder, LaunchTime"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ben Sun is Cofounder and Co-CIO of Primary Venture Partners. He is a two-time tech founder (notably creating early social networks Community Connect/BlackPlanet and LaunchTime). He has been named to the Forbes Midas List and holds a BA in Economics from the University of Michigan.",
+    sources: [
+      {
+        label: "Primary — Ben Sun",
+        url: "https://www.primary.vc/team/ben-sun"
+      },
+      {
+        label: "Forbes Profile – Ben Sun",
+        url: "https://tollbit.forbes.com/profile/ben-sun/"
+      }
+    ]
+  },
+  "brian-schechter": {
+    name: "Brian Schechter",
+    firm: "Primary Venture Partners",
+    firmSlug: "primary-venture-partners",
+    title: "Partner, Infrastructure",
+    joinedYear: 2020,
+    sectors: [
+      "Infrastructure"
+    ],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://www.primary.vc/team/brian-schechter",
+    education: [],
+    previousExperience: [
+      "Founder & CEO, SelfMade",
+      "Co-founder, HowAboutWe"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2020",
+        event: "Joined Primary Venture Partners as Partner, Infrastructure."
+      }
+    ],
+    biography: "Brian Schechter is a Partner (Infrastructure) at Primary Venture Partners. He joined Primary in 2020 after co-founding and serving as CEO of consumer brand startup SelfMade (2015–2020). He is a two-time founder turned investor who has led investments in AI infrastructure companies, including co-leading the Seed round for AI hardware firm Etched.",
+    sources: [
+      {
+        label: "Primary — Brian Schechter",
+        url: "https://www.primary.vc/team/brian-schechter"
+      },
+      {
+        label: "Mesh (LinkedIn scrape) – Brian Schechter",
+        url: "https://me.sh/profile/brian-schechter"
+      }
+    ]
+  },
+  "cassie-young": {
+    name: "Cassie Young",
+    firm: "Primary Venture Partners",
+    firmSlug: "primary-venture-partners",
+    title: "Partner, GTM Tech",
+    joinedYear: null,
+    sectors: [
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://www.primary.vc/team/cassie-young",
+    education: [
+      "BS, Duke University",
+      "MBA, Dartmouth College (Tuck)"
+    ],
+    previousExperience: [
+      "Chief Revenue Officer, Sailthru",
+      "Head of M&A, Marigold Ventures"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Cassie Young is a Partner (GTM Tech) at Primary Venture Partners. She has 15 years of go-to-market leadership experience, including serving as Chief Revenue Officer at Sailthru. She also led a major marketing technology roll-up at private equity firm Marigold. She holds degrees from Duke University and Dartmouth College (Tuck).",
+    sources: [
+      {
+        label: "Primary — Cassie Young",
+        url: "https://www.primary.vc/team/cassie-young"
+      }
+    ]
+  },
+  "emily-man": {
+    name: "Emily Man",
+    firm: "Primary Venture Partners",
+    firmSlug: "primary-venture-partners",
+    title: "Partner, Fintech & Enterprise AI",
+    joinedYear: null,
+    sectors: [
+      "Fintech",
+      "AI"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.primary.vc/team/emily-man",
+    education: [
+      "BA (summa cum laude), Columbia University"
+    ],
+    previousExperience: [
+      "Investor, Redpoint Ventures",
+      "Investor, Point72 Ventures"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Emily Man is a Partner (Fintech & Enterprise AI) at Primary Venture Partners. She previously invested at Redpoint Ventures and Point72 Ventures across early and later stages before joining Primary. She graduated summa cum laude from Columbia University.",
+    sources: [
+      {
+        label: "Primary — Emily Man",
+        url: "https://www.primary.vc/team/emily-man"
+      }
+    ]
+  },
+  "brian-murray": {
+    name: "Brian Murray",
+    firm: "Craft Ventures",
+    firmSlug: "craft-ventures",
+    title: "Partner & COO",
+    joinedYear: 2017,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Leadership roles at Yammer",
+      "Leadership roles at Zenefits"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2017",
+        event: "Joined Craft Ventures as Partner & COO."
+      }
+    ],
+    biography: "Brian Murray is Partner & COO at Craft Ventures. He has been with the firm since its founding in 2017. Before Craft, he held leadership roles at SaaS companies Yammer and Zenefits, and he built much of Craft’s investment infrastructure after joining.",
+    sources: [
+      {
+        label: "Craft Ventures — Brian Murray",
+        url: "https://www.craftventures.com/team/brian-murray"
+      }
+    ]
+  },
+  "michael-robinson": {
+    name: "Michael Robinson",
+    firm: "Craft Ventures",
+    firmSlug: "craft-ventures",
+    title: "Partner, Head of Investment Team",
+    joinedYear: 2022,
+    sectors: [
+      "Cybersecurity",
+      "AI"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.craftventures.com/team/michael-robinson",
+    education: [],
+    previousExperience: [
+      "Lead Investor, Georgian Partners",
+      "Associate, Goldman Sachs (TMT Group)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2022",
+        event: "Joined Craft Ventures as Partner, Head of Investment Team."
+      },
+      {
+        year: "2026",
+        event: "Named to Forbes Midas List."
+      }
+    ],
+    biography: "Michael Robinson is Partner and Head of the Investment Team at Craft Ventures. He joined Craft in 2022. Before Craft, he was a Lead Investor at Georgian Partners and worked at Goldman Sachs in technology investment banking. In 2026 he was included on the Forbes Midas List of top venture capitalists.",
+    sources: [
+      {
+        label: "Craft Ventures — Michael Robinson",
+        url: "https://www.craftventures.com/team/michael-robinson"
+      }
+    ]
+  },
+  "kevin-gabura": {
+    name: "Kevin Gabura",
+    firm: "Craft Ventures",
+    firmSlug: "craft-ventures",
+    title: "Partner",
+    joinedYear: 2022,
+    sectors: [
+      "Cybersecurity",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.craftventures.com/team/kevin-gabura",
+    education: [
+      "HBA, Ivey Business School (University of Western Ontario)"
+    ],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2022",
+        event: "Joined Craft Ventures as Partner."
+      }
+    ],
+    biography: "Kevin Gabura is a Partner at Craft Ventures. He joined in 2022 and focuses on cybersecurity, infrastructure, and application software investments. He graduated with distinction from Ivey Business School (Western University) with an Honors Business Administration degree.",
+    sources: [
+      {
+        label: "Craft Ventures — Kevin Gabura",
+        url: "https://www.craftventures.com/team/kevin-gabura"
+      }
+    ]
+  },
+  "mike-marg": {
+    name: "Mike Marg",
+    firm: "Craft Ventures",
+    firmSlug: "craft-ventures",
+    title: "Partner",
+    joinedYear: 2020,
+    sectors: [
+      "AI",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.craftventures.com/team/mike-marg",
+    education: [
+      "BA, University of Pennsylvania"
+    ],
+    previousExperience: [
+      "Go-to-Market Leader, Dropbox",
+      "Go-to-Market Leader, Slack",
+      "Head of GTM, Clearbit"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2020",
+        event: "Joined Craft Ventures as Partner."
+      }
+    ],
+    biography: "Mike Marg is a Partner at Craft Ventures. He joined Craft in 2020. Prior to Craft, he led go-to-market efforts at Dropbox, Slack, and Clearbit. At Craft, he focuses on generative AI and enterprise AI applications. He graduated from the University of Pennsylvania.",
+    sources: [
+      {
+        label: "Craft Ventures — Mike Marg",
+        url: "https://www.craftventures.com/team/mike-marg"
+      }
+    ]
+  },
+  "gustav-von-sydow": {
+    name: "Gustav von Sydow",
+    firm: "EQT Ventures",
+    firmSlug: "eqt-ventures",
+    title: "Partner",
+    joinedYear: 2022,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Co-founder & CEO, Burt Corporation"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2022",
+        event: "Joined EQT Ventures (EIR, later Partner)."
+      }
+    ],
+    biography: "Gustav von Sydow is a Partner at EQT Ventures. He joined EQT in 2022 as an Entrepreneur-in-Residence and now leads US expansion and AI strategy for EQT’s early-stage funds. Previously he co-founded and ran Burt Corporation, a startup studio developing data-driven internet products.",
+    sources: [
+      {
+        label: "EQT Group — Gustav von Sydow",
+        url: "https://eqtgroup.com/about/people/gustav-von-sydow"
+      }
+    ]
+  },
+  "kaushik-subramanian": {
+    name: "Kaushik Subramanian",
+    firm: "EQT Ventures",
+    firmSlug: "eqt-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "Fintech",
+      "AI"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://eqtgroup.com/about/people/kaushik-subramanian",
+    education: [
+      "MBA, INSEAD",
+      "BS, Computer Engineering"
+    ],
+    previousExperience: [
+      "Product Leader, Stripe",
+      "Product Roles, Meta",
+      "Consultant, McKinsey"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kaushik Subramanian is a Partner at EQT Ventures based in London. He invests in AI and fintech companies. Prior to EQT, he was a product leader at Stripe (scaling their FX/multicurrency business) and worked at Meta building ad-tech infrastructure. He holds an MBA from INSEAD and a BS in computer engineering.",
+    sources: [
+      {
+        label: "EQT Group — Kaushik Subramanian",
+        url: "https://eqtgroup.com/about/people/kaushik-subramanian"
+      }
+    ]
+  },
+  "rania-belkahia": {
+    name: "Rania Belkahia",
+    firm: "EQT Ventures",
+    firmSlug: "eqt-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "MSc, Entrepreneurship, HEC Paris",
+      "BEng, Télécom ParisTech"
+    ],
+    previousExperience: [
+      "Co-founder & CEO, Afrimarkets"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Rania Belkahia is a Partner at EQT Ventures. She is a fintech and e-commerce entrepreneur-turned-investor. She co-founded and led Afrimarkets, a multi-category e-commerce platform in Africa with operations across five countries. She earned an engineering degree from Télécom ParisTech and a Master's in Entrepreneurship from HEC Paris.",
+    sources: [
+      {
+        label: "EQT Group — Rania Belkahia",
+        url: "https://eqtgroup.com/about/people/rania-belkahia"
+      }
+    ]
+  },
+  "sandra-malmberg": {
+    name: "Sandra Malmberg",
+    firm: "EQT Ventures",
+    firmSlug: "eqt-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Sandra Malmberg is a Partner at EQT Ventures. She focuses on visionary founders and breakthrough technologies. Her portfolio includes AI-powered learning platform Sana and humanoid robotics company 1X. She has been instrumental in EQT Ventures’ early-stage investments.",
+    sources: [
+      {
+        label: "EQT Group — Sandra Malmberg",
+        url: "https://eqtgroup.com/about/people/sandra-malmberg"
+      }
+    ]
+  },
+  "hisham-elhaddad": {
+    name: "Hisham Elhaddad",
+    firm: "HOF Capital",
+    firmSlug: "hof-capital",
+    title: "Managing Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BSc, Electrical and Electronics Engineering, Boston University"
+    ],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Hisham Elhaddad is Co-Founder and Managing Partner of HOF Capital. He has led the firm’s growth to over $10B in AUM. He focuses on frontier technologies and has led HOF’s investments in companies like SpaceX, xAI, Anthropic, Bugatti Rimac, and Crusoe. He holds a BSc in Electrical and Electronics Engineering from Boston University.",
+    sources: [
+      {
+        label: "HOF Capital — Hisham Elhaddad",
+        url: "https://hofcapital.com/team/hisham-elhaddad/"
+      }
+    ]
+  },
+  "onsi-sawiris": {
+    name: "Onsi Sawiris",
+    firm: "HOF Capital",
+    firmSlug: "hof-capital",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://hofcapital.com/team/onsi-sawiris/",
+    education: [
+      "BSc, Mechanical Engineering, MIT"
+    ],
+    previousExperience: [
+      "TMT M&A, Arma Partners"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "ItaliaOnline",
+      "Riverbank",
+      "Orascom Financial Holding"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Onsi Sawiris is Co-Founder and Partner at HOF Capital, focusing on cloud-based technologies and enterprise software. He currently sits on the boards of ItaliaOnline, Riverbank, and Orascom Financial Holding. Previously he worked in technology M&A at Arma Partners. He holds a BSc in Mechanical Engineering from MIT.",
+    sources: [
+      {
+        label: "HOF Capital — Onsi Sawiris",
+        url: "https://hofcapital.com/team/onsi-sawiris/"
+      }
+    ]
+  },
+  "victor-wang": {
+    name: "Victor Wang",
+    firm: "HOF Capital",
+    firmSlug: "hof-capital",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BS, Molecular & Cell Biology, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "Technology Investment Banker",
+      "Business Unit Leader, Fortune 100 company"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Victor Wang is a Partner at HOF Capital. Prior to HOF, he was a technology investment banker and startup advisor, and led a business unit at a Fortune 100 company. He has a background in science (conducting genomic research at Stanford) and earned a BS in Molecular & Cell Biology from UC Berkeley.",
+    sources: [
+      {
+        label: "HOF Capital — Victor Wang",
+        url: "https://hofcapital.com/team/victor-wang/"
+      }
+    ]
+  },
+  "ryan-shmeizer": {
+    name: "Ryan Shmeizer",
+    firm: "HOF Capital",
+    firmSlug: "hof-capital",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "AI",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://hofcapital.com/team/ryan-shmeizer/",
+    education: [
+      "BS, Wharton School of Business, University of Pennsylvania"
+    ],
+    previousExperience: [
+      "Investor, Insight Partners",
+      "Investor, Spark Capital",
+      "Investor, Thrive Capital",
+      "General Partner, GreenPoint Partners"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ryan Shmeizer is a Partner at HOF Capital. He focuses on AI infrastructure, enterprise software, and physical-world tech. He began his venture career at Insight Partners in 2011, and later invested at Spark Capital and Thrive Capital (backing companies like Affirm, Slack). He also served as a GP and Head of Venture Investing at GreenPoint Partners. He graduated magna cum laude from Wharton.",
+    sources: [
+      {
+        label: "HOF Capital — Ryan Shmeizer",
+        url: "https://hofcapital.com/team/ryan-shmeizer/"
+      }
+    ]
+  },
+  "annie-shapiro": {
+    name: "Annie Shapiro",
+    firm: "Inspired Capital",
+    firmSlug: "inspired-capital",
+    title: "Partner, Platform",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "AB, Art History and Italian, Princeton University"
+    ],
+    previousExperience: [
+      "Director of Marketing, Namely",
+      "Marketing Lead, LearnVest"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Annie Shapiro is Partner and Head of Platform at Inspired Capital. She has spent 15 years in tech marketing and operations, focusing on founder support and storytelling. She co-produces the firm’s podcast “Inspired with Alexa von Tobel.” Earlier, she was one of the first employees at financial startup LearnVest and later Director of Marketing at HR platform Namely. She earned an AB in Art History from Princeton University.",
+    sources: [
+      {
+        label: "Inspired Capital — Annie Shapiro",
+        url: "https://www.inspiredcapital.com/team"
+      }
+    ]
+  },
+  "chris-brown": {
+    name: "Chris Brown",
+    firm: "Inspired Capital",
+    firmSlug: "inspired-capital",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Political Science & Economics, Middlebury College"
+    ],
+    previousExperience: [
+      "Investor, First Round Capital",
+      "Analyst, The Blackstone Group"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Chris Brown is a Partner at Inspired Capital. He is a career venture investor with early-stage and later-stage experience. Previously he invested at First Round Capital and began his career at The Blackstone Group. He focuses on bridging the “zero-to-one” startups with the processes needed to scale, particularly in sectors like fintech, healthcare, and logistics.",
+    sources: [
+      {
+        label: "Inspired Capital — Chris Brown",
+        url: "https://www.inspiredcapital.com/team"
+      }
+    ]
+  },
+  "kamran-ali": {
+    name: "Kamran Ali",
+    firm: "Inspired Capital",
+    firmSlug: "inspired-capital",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Economics & Public Policy, Dartmouth College"
+    ],
+    previousExperience: [
+      "Investor, Point72 Ventures",
+      "Investment Banking Analyst, Goldman Sachs"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kamran Ali is a Partner at Inspired Capital. He joined the firm after a stint as a multi-stage investor at Point72 Ventures (working across public, venture, and growth investments). He began in investment banking at Goldman Sachs in the Consumer, Healthcare and Financial sectors. He holds a BA in Economics and Public Policy from Dartmouth College.",
+    sources: [
+      {
+        label: "Inspired Capital — Kamran Ali",
+        url: "https://www.inspiredcapital.com/team"
+      }
+    ]
+  },
+  "charlotte-ross": {
+    name: "Charlotte Ross",
+    firm: "Inspired Capital",
+    firmSlug: "inspired-capital",
+    title: "Partner",
+    joinedYear: 2019,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Economics, Yale University"
+    ],
+    previousExperience: [
+      "Investor, New Enterprise Associates (NEA)",
+      "Analyst, Goldman Sachs (TMT group)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2019",
+        event: "Joined Inspired Capital at its founding as Partner."
+      }
+    ],
+    biography: "Charlotte Ross is a Partner at Inspired Capital and has been with the firm since its founding in 2019. Before Inspired, she was an investor at NEA where she led investments in companies like Duolingo, Framebridge, Mejuri, and served on their boards. She started her career at Goldman Sachs (TMT group) and holds a BA in Economics from Yale.",
+    sources: [
+      {
+        label: "Inspired Capital — Charlotte Ross",
+        url: "https://www.inspiredcapital.com/team"
+      }
+    ]
+  },
+  "lior-simon": {
+    name: "Lior Simon",
+    firm: "Cyberstarts",
+    firmSlug: "cyberstarts",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Investor, Sequoia Capital (Israel)",
+      "Head of Israel, Arbor Ventures"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Cyera",
+      "Oasis",
+      "Zafran"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Lior Simon is a General Partner at Cyberstarts with over a decade of VC experience. She sits on the boards of cybersecurity startups Cyera, Oasis, and Zafran and works closely with portfolio companies like Wiz, Island, and Fireblocks. She began her VC career at Sequoia Capital in 2012 and later led Arbor Ventures in Israel.",
+    sources: [
+      {
+        label: "Cyberstarts — Lior Simon",
+        url: "https://www.cyberstarts.com/team/lior-simon"
+      }
+    ]
+  },
+  "hila-zigman": {
+    name: "Hila Zigman",
+    firm: "Cyberstarts",
+    firmSlug: "cyberstarts",
+    title: "General Partner",
+    joinedYear: 2023,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Founding Chief Product Officer, Noname Security"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2023",
+        event: "Joined Cyberstarts as General Partner."
+      }
+    ],
+    biography: "Hila Zigman is a General Partner at Cyberstarts who joined in 2023. She was the founding Chief Product Officer of API-security company Noname Security, scaling its product organization from day one; Noname grew into a category leader and was acquired by Akamai for $500M. Earlier, she served in an elite Israeli intelligence unit and at a growth-stage cybersecurity startup.",
+    sources: [
+      {
+        label: "Cyberstarts — Hila Zigman",
+        url: "https://www.cyberstarts.com/team/hila-zigman"
+      }
+    ]
+  },
+  "adam-aarons": {
+    name: "Adam Aarons",
+    firm: "Cyberstarts",
+    firmSlug: "cyberstarts",
+    title: "Operating Partner",
+    joinedYear: 2024,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Chief Revenue Officer, Okta",
+      "Sales leadership at Drata, Classy, BMC Software, BladeLogic, OpenPages, Agile Software, PTC"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2024",
+        event: "Joined Cyberstarts as GTM Venture Partner."
+      },
+      {
+        year: "2025",
+        event: "Named Operating Partner at Cyberstarts."
+      }
+    ],
+    biography: "Adam Aarons is Operating Partner at Cyberstarts. He joined the firm in 2024 and became Operating Partner in 2025. He has three decades of GTM experience, most notably as CRO at Okta, where he scaled the business from $1M to over $300M ARR and led Okta through its IPO. He now mentors Cyberstarts’ portfolio on go-to-market strategy.",
+    sources: [
+      {
+        label: "Cyberstarts — Adam Aarons",
+        url: "https://www.cyberstarts.com/team/adam-aarons"
+      }
+    ]
+  },
+  "angela-hayward": {
+    name: "Angela Hayward",
+    firm: "Eclipse Ventures",
+    firmSlug: "eclipse-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Business Management, Menlo College"
+    ],
+    previousExperience: [
+      "Operating Partner, Formation 8 (venture capital firm)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Angela Hayward is a Partner at Eclipse Ventures, serving as head of investor and portfolio relations. She earned a BA in Business Management from Menlo College. Prior to Eclipse, she worked as an Operating Partner at venture firm Formation 8.",
+    sources: [
+      {
+        label: "Crunchbase – Angela Hayward",
+        url: "https://www.crunchbase.com/person/angela-hayward"
+      }
+    ]
+  },
 };
