@@ -49,6 +49,13 @@ const POWER_ALERT_CONFIG = {
   minFundsForYearAlert: 3,     // firms closing in a year before it is a signal
   fundYearWindowFrom: 2023,
 
+  // --- deal-level data ---
+  minFirmsForSectorBreadth: 3, // firms with a disclosed deal in one sector
+                               // before that sector is worth reporting
+  maxSectorBreadthShare: 0.9,  // a sector nearly every covered firm touches is
+                               // not news. 11 of 12 firms invested in AI - true,
+                               // and far too obvious to occupy a board slot.
+
   // --- effect-size thresholds ---
   minPointChange: 3,           // percentage-point move to be worth an alert
   partnerHireWindowFrom: 2015, // hires counted from this year
@@ -746,6 +753,105 @@ function computePowerAlerts(options) {
     });
   }
 
+  /* --- 10. SECTOR BREADTH ACROSS FIRMS WITH DEAL COVERAGE ---
+     "N of the M firms with deal coverage have a disclosed investment
+     in sector X."
+
+     This is the ONLY safe shape for the current deal sample. Deals
+     were collected as each firm's most recent N, which forbids two
+     things this alert therefore never does:
+       - it does not compare periods (the recency skew is an artifact
+         of the sampling rule, not a trend in the market)
+       - it does not compare firms by volume (every firm contributed
+         the same cap, so counting rows per firm measures the cap)
+
+     What survives is a presence claim over an explicit denominator,
+     counting each firm at most once per sector no matter how many
+     deals it did there. It is a floor: a firm with no deal coverage
+     cannot contribute, and an unannounced deal cannot either. */
+  const DEALS = typeof FIRM_DEALS !== 'undefined' && Array.isArray(FIRM_DEALS) ? FIRM_DEALS : null;
+  const DMAP = typeof DEAL_SECTOR_MAP !== 'undefined' && DEAL_SECTOR_MAP ? DEAL_SECTOR_MAP : {};
+  const TAX = typeof SECTOR_MAP !== 'undefined' && SECTOR_MAP ? SECTOR_MAP : {};
+  if (!DEALS || !DEALS.length) {
+    skip('sector_breadth', 'FIRM_DEALS not loaded');
+  } else {
+    const coveredSlugs = {};
+    DEALS.forEach(function (d) { if (d.firmSlug) coveredSlugs[d.firmSlug] = 1; });
+    const dealFirmCount = Object.keys(coveredSlugs).length;
+
+    // firm -> sector presence, deduped. One firm, one vote per sector.
+    const firmsBySector = {};
+    const companiesBySector = {};
+    DEALS.forEach(function (d) {
+      const buckets = DMAP[d.sector];
+      if (!Array.isArray(buckets) || !buckets.length) return;
+      // An undated row cannot support a dated claim, and would render
+      // the period as "null to null". Drop it rather than print it.
+      if (!d.announcedDate || !/^\d{4}/.test(String(d.announcedDate))) return;
+      if (!d.firmSlug) return;
+      buckets.forEach(function (b) {
+        (firmsBySector[b] = firmsBySector[b] || {})[d.firmSlug] = 1;
+        (companiesBySector[b] = companiesBySector[b] || []).push(d);
+      });
+    });
+
+    Object.keys(firmsBySector).forEach(function (bucket) {
+      const slugsIn = Object.keys(firmsBySector[bucket]);
+      if (slugsIn.length < cfg.minFirmsForSectorBreadth) return;
+      // Guard: near-universal sectors are true but not informative.
+      if (slugsIn.length / dealFirmCount > cfg.maxSectorBreadthShare) return;
+
+      const label = (TAX[bucket] && TAX[bucket].label) || bucket;
+      const rows = companiesBySector[bucket];
+      const dates = rows.map(function (r) { return r.announcedDate; }).sort();
+      const share = slugsIn.length / dealFirmCount;
+
+      alerts.push({
+        id: pa_fingerprint(['sector_breadth', bucket, slugsIn.length, dealFirmCount]),
+        type: 'sector_breadth',
+        firmId: null,
+        sector: label,
+        subject: label,
+        metric: 'firms with a disclosed investment in the sector',
+        previousValue: null,
+        currentValue: slugsIn.length,
+        absoluteChange: null,
+        percentChange: null,
+        unit: 'firms',
+        period: dates[0] + ' to ' + dates[dates.length - 1],
+        direction: 'flat',
+        generatedAt: generatedAt,
+        confidence: pa_round(share, 3),
+        score: pa_score({
+          magnitude: slugsIn.length, magnitudeCeiling: 8,
+          sample: dealFirmCount, sampleCeiling: 40,
+          confidence: share,
+          recency: 1
+        }),
+        evidence: {
+          sector: label,
+          firms: slugsIn.map(function (s) { return (firmBySlug[s] || {}).name || s; }),
+          deals: rows.map(function (r) {
+            return {
+              firm: (firmBySlug[r.firmSlug] || {}).name || r.firmSlug,
+              company: r.company,
+              date: r.announcedDate,
+              role: r.role,
+              rawSector: r.sector,
+              source: r.sourceUrl
+            };
+          }),
+          coverage: dealFirmCount + ' firms currently have any deal records',
+          note: 'A floor, not a total. Counts each firm once regardless of how ' +
+                'many deals it did in the sector, and only firms with deal ' +
+                'coverage can contribute. Deals were sampled as each firm\'s most ' +
+                'recent disclosed rounds, so this number must not be read as a ' +
+                'rate, a trend, or a market share.'
+        }
+      });
+    });
+  }
+
   /* ---------- copy generation (spec §8) ----------
      Templates interpolate computed values only. No template
      asserts a cause, an intention or a trend beyond the number. */
@@ -809,6 +915,16 @@ function computePowerAlerts(options) {
       a.title = a.currentValue + ' firms recorded a fund close in ' + a.subject;
       a.description = a.currentValue + ' of the ' + Object.keys(FUNDS || {}).length +
         ' firms with fund history on file closed at least one vehicle in ' + a.subject + '.';
+    } else if (a.type === 'sector_breadth') {
+      // Deliberately says "have a disclosed investment", never "are
+      // moving into" or "increased activity" - the sample cannot
+      // support a claim about direction.
+      const total = (a.evidence.coverage || '').split(' ')[0];
+      a.title = a.currentValue + ' firms have a disclosed ' + a.sector + ' investment';
+      a.description = a.currentValue + ' of the ' + total + ' firms with deal records on file ' +
+        'have at least one disclosed investment in ' + a.sector + ', across ' +
+        a.evidence.deals.length + ' rounds announced ' + a.period + '. ' +
+        'A floor: firms without deal coverage cannot contribute.';
     } else if (a.type === 'partner_sector_focus') {
       a.title = a.subject + ' has ' + a.currentValue + ' partners focused on ' + a.sector;
       a.description = a.currentValue + ' partners at ' + a.subject +
@@ -855,7 +971,11 @@ function computePowerAlerts(options) {
         return n + (f.timeline || []).filter(function (e) { return /^\d{4}$/.test(String(e.year)); }).length;
       }, 0),
       recentCohort: recent.length,
-      priorCohort: prior.length
+      priorCohort: prior.length,
+      dealRows: DEALS ? DEALS.length : 0,
+      dealFirms: DEALS
+        ? Object.keys(DEALS.reduce(function (m, d) { if (d.firmSlug) m[d.firmSlug] = 1; return m; }, {})).length
+        : 0
     }
   };
 }
