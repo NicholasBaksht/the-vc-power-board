@@ -27,8 +27,9 @@ const firms = [
     holdings: [
   { name: "DoorDash", ticker: "DASH", investedYear: 2018, historicalPrice: 170.65, price: 175.00 },
       { name: "Uber", ticker: "UBER", investedYear: 2018, historicalPrice: null, price: 65.94 },
-      { name: "Coupang", ticker: "CPNG", investedYear: 2018, historicalPrice: null, price: null },
-      { name: "Arm", ticker: "ARM", investedYear: 2017, historicalPrice: null, price: null }
+      { name: "Coupang", ticker: "CPNG", investedYear: 2018, historicalPrice: null, price: 16.29 },
+       { name: "Arm", ticker: "ARM", investedYear: 2017, historicalPrice: null, price: 278.65 }
+
     ]
   },
   {
@@ -153,7 +154,7 @@ const firms = [
     { year: "2018", event: "Spotify completes its NYSE direct listing." }
   ],
   holdings: [
-    { name: "Spotify", ticker: "SPOT", historicalPrice: null, price: null }
+    { name: "Spotify", ticker: "SPOT", historicalPrice: null, price: 498.24 }
   ]
 },
   {
@@ -193,7 +194,7 @@ const firms = [
     { year: "1988", event: "Founded as ST Ventures, later becoming Vertex Holdings under Temasek." }
   ],
   holdings: [
-    { name: "Grab", ticker: "GRAB", historicalPrice: null, price: null },
+    { name: "Grab", ticker: "GRAB", historicalPrice: null, price: 3.7 },
     { name: "CyberArk", ticker: "CYBR", historicalPrice: null, price: null }
   ]
 },
@@ -261,12 +262,17 @@ holdings: []
     { year: "2020", event: "Airbnb, one of Gil's early pre-IPO investments, goes public." }
   ],
   holdings: [
-    { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: null },
-    { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null },
-    { name: "Instacart", ticker: "CART", historicalPrice: null, price: null },
-    { name: "Block", ticker: "XYZ", historicalPrice: null, price: null },
-    { name: "Pinterest", ticker: "PINS", historicalPrice: null, price: null },
-    { name: "Roblox", ticker: "RBLX", historicalPrice: null, price: null }
+    { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: 185.13 },
+    { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: 153.9 },
+,
+    ame: "Instacart", ticker: "CART", historicalPrice: null, price: 50.08 },
+ ,
+    me: "Block", ticker: "XYZ", historicalPrice: null, price: 83.09 },
+  ,
+    e: "Pinterest", ticker: "PINS", historicalPrice: null, price: 23.32 },
+   ,
+    : "Roblox", ticker: "RBLX", historicalPrice: null, price: 37.95 }
+  
   ]
 },
   {
@@ -331,7 +337,7 @@ holdings: []
     { year: "2004", event: "Alnylam Pharmaceuticals, an early Polaris healthcare investment, goes public." }
   ],
   holdings: [
-    { name: "Alnylam Pharmaceuticals", ticker: "ALNY", historicalPrice: null, price: null }
+    { name: "Alnylam Pharmaceuticals", ticker: "ALNY", historicalPrice: null, price: 227.12 }
   ]
 },
   {
@@ -534,7 +540,7 @@ holdings: []
     { year: "2016", event: "Olaf Carlson-Wee founds Polychain Capital after leaving Coinbase." }
   ],
   holdings: [
-    { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null }
+    { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: 153.9 }
   ]
 },
   {
@@ -643,7 +649,7 @@ holdings: []
     { year: "2021", event: "Coinbase completes its direct listing; Blockchain Capital participates as a pre-IPO investor." }
   ],
   holdings: [
-    { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null }
+    { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: 153.9 }
   ]
 },
   {
@@ -669,8 +675,9 @@ holdings: []
     { year: "2021", event: "Coupang goes public on the NYSE; Mehta joins the board." }
   ],
   holdings: [
-    { name: "Coupang", ticker: "CPNG", historicalPrice: null, price: null },
-    { name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: null }
+    { name: "Coupang", ticker: "CPNG", historicalPrice: null, price: 16.29 },
+     { name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: 99.37 }
+
   ]
 },
   {
@@ -765,8 +772,8 @@ holdings: []
     sectors: ['Consumer', 'Fintech', 'SaaS'],
     thesis: 'Mucker backs exceptional entrepreneurs, often outside Silicon Valley\'s norm, at very early stages, emphasizing founder empowerment and hands-on support across consumer, insurtech, and e-commerce startups.',
     holdings: [
-      { name: 'ServiceTitan', ticker: 'TTAN', price: null, historicalPrice: null },
-      { name: 'Surf Air Mobility', ticker: 'SRFM', price: null, historicalPrice: null },
+      { name: 'ServiceTitan', ticker: 'TTAN', price: 93.7, historicalPrice: null },
+      { name: 'Surf Air Mobility', ticker: 'SRFM', price: 0.7911, historicalPrice: null },
     ],
     signatureExit: 'Early investor in Honey Science, the browser-extension startup PayPal acquired in 2020 for about $4B',
   },
@@ -848,8 +855,8 @@ holdings: []
     sectors: ['SaaS', 'Consumer Internet'],
     thesis: 'Founded by Joe Montana and partners, Liquid 2 invests in high-growth sector companies at seed and Series A, leveraging its team\'s network to accelerate customer acquisition and follow-on funding.',
     holdings: [
-      { name: 'GitLab', ticker: 'GTLB', price: null, historicalPrice: null },
-      { name: 'Pinterest', ticker: 'PINS', price: null, historicalPrice: null },
+      { name: 'GitLab', ticker: 'GTLB', price: 43.35, historicalPrice: null },
+      { name: 'Pinterest', ticker: 'PINS', price: 23.32, historicalPrice: null },
     ],
     signatureExit: 'Part of GitLab\'s $1.5M seed round in 2015, held through its 2021 IPO for a reported ~420x return',
   },
@@ -878,8 +885,8 @@ holdings: []
     sectors: ['Consumer', 'Climate', 'Fintech'],
     thesis: 'Collaborative Fund backs founders pushing the world forward, investing in businesses that combine strong growth with positive social impact across green tech, consumer health, and fintech.',
     holdings: [
-      { name: 'Lyft', ticker: 'LYFT', price: null, historicalPrice: null },
-      { name: 'Upstart', ticker: 'UPST', price: null, historicalPrice: null },
+      { name: 'Lyft', ticker: 'LYFT', price: 17.13, historicalPrice: null },
+      { name: 'Upstart', ticker: 'UPST', price: 30.97, historicalPrice: null },
     ],
     signatureExit: 'Early investor in Lyft ahead of its 2019 IPO',
   },
@@ -919,7 +926,7 @@ holdings: []
       { year: "2026", event: "Closes $850 million in new capital, pushing AUM to $2.6 billion; Ajao joins Motive's board." }
     ],
     holdings: [
-      { name: "Nubank", ticker: "NU", historicalPrice: null, price: null }
+      { name: "Nubank", ticker: "NU", historicalPrice: null, price: 13.93 }
     ]
   },
   {
@@ -1067,7 +1074,7 @@ holdings: []
       { year: "2019", event: "CrowdStrike completes its NASDAQ IPO." }
     ],
     holdings: [
-      { name: "CrowdStrike", ticker: "CRWD", historicalPrice: null, price: null }
+      { name: "CrowdStrike", ticker: "CRWD", historicalPrice: null, price: 225.53 }
     ]
   },
   {
@@ -1121,8 +1128,9 @@ holdings: []
       { year: "2026", event: "Closes Fund V at $360,360,360 in January." }
     ],
     holdings: [
-      { name: "Planet Labs", ticker: "PL", historicalPrice: null, price: null },
-      { name: "Recursion Pharmaceuticals", ticker: "RXRX", historicalPrice: null, price: null }
+      { name: "Planet Labs", ticker: "PL", historicalPrice: null, price: 24.75 },
+       { name: "Recursion Pharmaceuticals", ticker: "RXRX", historicalPrice: null, price: 3.31 }
+
     ]
   },
   {
@@ -1169,7 +1177,7 @@ holdings: []
       { year: "2025", event: "AUM reaches approximately $2.8 billion." }
     ],
     holdings: [
-      { name: "SentinelOne", ticker: "S", historicalPrice: null, price: null }
+      { name: "SentinelOne", ticker: "S", historicalPrice: null, price: 23.84 }
     ]
   },
   {
@@ -1195,7 +1203,7 @@ holdings: []
       { year: "2020", event: "Kuaishou completes its Hong Kong IPO; AUM reaches approximately $4 billion." }
     ],
     holdings: [
-      { name: "Pinduoduo", ticker: "PDD", historicalPrice: null, price: null }
+      { name: "Pinduoduo", ticker: "PDD", historicalPrice: null, price: 84.17 }
     ]
   },
   {
@@ -1274,8 +1282,9 @@ holdings: []
       { year: "2026", event: "Portfolio and alumni companies have collectively raised more than $12 billion, producing nine unicorns and six IPOs." }
     ],
     holdings: [
-      { name: "Spire Global", ticker: "SPIR", historicalPrice: null, price: null },
-      { name: "Arqit", ticker: "ARQQ", historicalPrice: null, price: null }
+      { name: "Spire Global", ticker: "SPIR", historicalPrice: null, price: 13.94 },
+       { name: "Arqit", ticker: "ARQQ", historicalPrice: null, price: 23.75 }
+
     ]
   },
   {
@@ -1449,7 +1458,7 @@ holdings: []
     ],
     holdings: [
       { name: "Meituan", ticker: "3690.HK", historicalPrice: null, price: null },
-      { name: "Li Auto", ticker: "LI", historicalPrice: null, price: null }
+      { name: "Li Auto", ticker: "LI", historicalPrice: null, price: 12.27 }
     ]
   },
   {
@@ -1478,7 +1487,7 @@ holdings: []
       { year: "2026", event: "Closes a $1.2 billion Fund III in July, formally expanding the firm's mandate into AI and robotics." }
     ],
     holdings: [
-      { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null }
+      { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: 153.9 }
     ]
   },
   {
@@ -1529,7 +1538,7 @@ holdings: []
       { year: "2026", event: "Total AUM surpasses $7 billion across five funds." }
     ],
     holdings: [
-      { name: "dLocal", ticker: "DLO", historicalPrice: null, price: null }
+      { name: "dLocal", ticker: "DLO", historicalPrice: null, price: 14.76 }
     ]
   },
   {
@@ -1577,7 +1586,7 @@ holdings: []
       { year: "2022", event: "Opens an Opportunity Fund for follow-on investment." }
     ],
     holdings: [
-      { name: "DoubleVerify", ticker: "DV", historicalPrice: null, price: null }
+      { name: "DoubleVerify", ticker: "DV", historicalPrice: null, price: 13.3 }
     ]
   },
   {
@@ -1702,10 +1711,11 @@ holdings: []
       { year: "2022", event: "Emily Melton is elected Chair of the NVCA board of directors." }
     ],
     holdings: [
-      { name: "Box", ticker: "BOX", historicalPrice: null, price: null },
+      { name: "Box", ticker: "BOX", historicalPrice: null, price: 33.64 },
       { name: "Redfin", ticker: "RDFN", historicalPrice: null, price: null },
-      { name: "Twilio", ticker: "TWLO", historicalPrice: null, price: null },
-      { name: "Doximity", ticker: "DOCS", historicalPrice: null, price: null }
+       { name: "Twilio", ticker: "TWLO", historicalPrice: null, price: 249.42 },,
+      ame: "Doximity", ticker: "DOCS", historicalPrice: null, price: 26.59 }
+  
     ]
   },
   {
@@ -1945,10 +1955,11 @@ holdings: []
     ],
     holdings: [
       { name: "Coinbase", ticker: "COIN", investedYear: 2013, historicalPrice: 257.21, price: 161.00 },
-      { name: "Nubank", ticker: "NU", investedYear: 2016, historicalPrice: null, price: null },
+      { name: "Nubank", ticker: "NU", investedYear: 2016, historicalPrice: null, price: 13.93 },
       { name: "Robinhood", ticker: "HOOD", investedYear: 2014, historicalPrice: null, price: 99.96 },
       { name: "Affirm", ticker: "AFRM", historicalPrice: null, price: 64.71 },
-      { name: "SoFi", ticker: "SOFI", historicalPrice: null, price: null }
+       { name: "SoFi", ticker: "SOFI", historicalPrice: null, price: 18.43 }
+
     ]
   },
   {
@@ -2029,8 +2040,9 @@ holdings: []
       { year: "2018", event: "Portfolio company Spotify goes public via direct listing." }
     ],
     holdings: [
-      { name: "Spotify", ticker: "SPOT", historicalPrice: null, price: null },
-       { name: "LendingClub", ticker: "LC", investedYear: 2007, historicalPrice: null, price: null }
+      { name: "Spotify", ticker: "SPOT", historicalPrice: null, price: 498.24 },
+       { name: "LendingClub", ticker: "LC", investedYear: 2007, historicalPrice: null, price: 19.21 }
+ 
     ]
   },
   {
@@ -2084,9 +2096,11 @@ holdings: []
       { year: "2020s", event: "Continues investing across venture, growth equity, and buyouts from its 15th flagship fund, capitalized at $3.25 billion." }
     ],
     holdings: [
- { name: "Wayfair", ticker: "W", investedYear: 2011, historicalPrice: null, price: null },
-{ name: "Nutanix", ticker: "NTNX", investedYear: 2012, historicalPrice: null, price: null },
- { name: "Guidewire", ticker: "GWRE", investedYear: 2007, historicalPrice: null, price: null }
+ { name: "Wayfair", ticker: "W", investedYear: 2011, historicalPrice: null, price: 101.13 },
+{ name: "Nutanix", ticker: "NTNX", investedYear: 2012, historicalPrice: null, price: 67.95 },
+,
+ ame: "Guidewire", ticker: "GWRE", investedYear: 2007, historicalPrice: null, price: 182.62 }
+  
     ]
   },
   {
@@ -2114,11 +2128,14 @@ holdings: []
       { year: "2023", event: "AUM reaches approximately $6 billion." }
     ],
     holdings: [
-      { name: "Palantir", ticker: "PLTR", historicalPrice: null, price: null },
-      { name: "Oscar Health", ticker: "OSCR", historicalPrice: null, price: null },
+      { name: "Palantir", ticker: "PLTR", historicalPrice: null, price: 179.01 },
+      { name: "Oscar Health", ticker: "OSCR", historicalPrice: null, price: 30.78 },
+,
       { name: "Wish", ticker: "WISH", historicalPrice: null, price: null },
-      { name: "Blend", ticker: "BLND", historicalPrice: null, price: null },
-      { name: "Joby Aviation", ticker: "JOBY", historicalPrice: null, price: null }
+      ame: "Blend", ticker: "BLND", historicalPrice: null, price: 1.55 },
+ ,
+      ame: "Joby Aviation", ticker: "JOBY", historicalPrice: null, price: 8.26 }
+  
     ]
   },
   {
@@ -2218,7 +2235,7 @@ holdings: []
       { year: "2023", event: "Closes more than $1 billion across new funds in April, pushing total AUM past $3 billion." }
     ],
     holdings: [
-      { name: "The RealReal", ticker: "REAL", historicalPrice: null, price: null }
+      { name: "The RealReal", ticker: "REAL", historicalPrice: null, price: 10.94 }
     ]
   },
   {
@@ -2246,9 +2263,10 @@ holdings: []
       { year: "2020", event: "PagerDuty completes its NYSE IPO." }
     ],
     holdings: [
-      { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null },
-      { name: "PagerDuty", ticker: "PD", historicalPrice: null, price: null },
-      { name: "BuzzFeed", ticker: "BZFD", historicalPrice: null, price: null }
+      { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: 153.9 },
+       { name: "PagerDuty", ticker: "PD", historicalPrice: null, price: 12.09 },,
+      { name: "BuzzFeed", ticker: "BZFD", historicalPrice: null, price: 1.14 }
+ 
     ]
   },
   {
@@ -2301,9 +2319,10 @@ holdings: []
       { year: "2026", event: "Portfolio reaches 456 companies with 12 unicorns and 10 IPOs since founding." }
     ],
     holdings: [
-      { name: "Warby Parker", ticker: "WRBY", historicalPrice: null, price: null },
+      { name: "Warby Parker", ticker: "WRBY", historicalPrice: null, price: 25.88 },
       { name: "Olo", ticker: "OLO", historicalPrice: null, price: null },
-      { name: "BuzzFeed", ticker: "BZFD", historicalPrice: null, price: null }
+       { name: "BuzzFeed", ticker: "BZFD", historicalPrice: null, price: 1.14 }
+
     ]
   },
   {
@@ -2354,9 +2373,10 @@ holdings: []
       { year: "2023", event: "Casetext is acquired by Thomson Reuters for $650 million in cash in June." }
     ],
     holdings: [
-      { name: "LendingClub", ticker: "LC", historicalPrice: null, price: null },
-      { name: "Doximity", ticker: "DOCS", historicalPrice: null, price: null },
-      { name: "Luminar Technologies", ticker: "LAZR", historicalPrice: null, price: null }
+      { name: "LendingClub", ticker: "LC", historicalPrice: null, price: 19.21 },
+       { name: "Doximity", ticker: "DOCS", historicalPrice: null, price: 26.59 },,
+      { name: "Luminar Technologies", ticker: "LAZR", historicalPrice: null, price: 46.44 }
+ 
     ]
   },
   {
@@ -2384,7 +2404,7 @@ holdings: []
       { year: "2023", event: "Closes a $215 million fund to continue backing transformative early-stage companies." }
     ],
     holdings: [
-      { name: "Sweetgreen", ticker: "SG", historicalPrice: null, price: null }
+      { name: "Sweetgreen", ticker: "SG", historicalPrice: null, price: 6.06 }
     ]
   },
   {
@@ -2410,7 +2430,7 @@ holdings: []
       { year: "2025", event: "Announces Homebrew Forever, transitioning away from outside LP capital to a self-funded investing model." }
     ],
     holdings: [
-      { name: "Chime", ticker: "CHYM", historicalPrice: null, price: null }
+      { name: "Chime", ticker: "CHYM", historicalPrice: null, price: 32.18 }
     ]
   },
   {
@@ -2560,9 +2580,11 @@ holdings: []
       { year: "2023", event: "Closes an oversubscribed $432 million Fund IV in May, pushing total AUM to approximately $800 million." }
     ],
     holdings: [
-      { name: "DoorDash", ticker: "DASH", historicalPrice: null, price: null },
-      { name: "Guardant Health", ticker: "GH", historicalPrice: null, price: null },
-      { name: "Dropbox", ticker: "DBX", historicalPrice: null, price: null }
+      { name: "DoorDash", ticker: "DASH", historicalPrice: null, price: 216.26 },
+      { name: "Guardant Health", ticker: "GH", historicalPrice: null, price: 159.54 },
+,
+      me: "Dropbox", ticker: "DBX", historicalPrice: null, price: 35.93 }
+   
     ]
   },
   {
@@ -2643,9 +2665,10 @@ holdings: []
       { year: "2022", event: "Closes a $900 million eighth fund, pushing total AUM to $2.8 billion." }
     ],
     holdings: [
-      { name: "Bill.com", ticker: "BILL", historicalPrice: null, price: null },
-      { name: "JFrog", ticker: "FROG", historicalPrice: null, price: null },
-      { name: "Root Insurance", ticker: "ROOT", historicalPrice: null, price: null }
+      { name: "Bill.com", ticker: "BILL", historicalPrice: null, price: 51.31 },
+       { name: "JFrog", ticker: "FROG", historicalPrice: null, price: 95.15 },,
+      { name: "Root Insurance", ticker: "ROOT", historicalPrice: null, price: 49.83 }
+ 
     ]
   },
   {
@@ -2674,7 +2697,7 @@ holdings: []
       { year: "2026", event: "Portfolio reaches 279 companies with more than 50 billion-dollar outcomes; total AUM reaches roughly $12 billion." }
     ],
     holdings: [
-      { name: "Illumina", ticker: "ILMN", historicalPrice: null, price: null }
+      { name: "Illumina", ticker: "ILMN", historicalPrice: null, price: 192.64 }
     ]
   },
   {
@@ -2729,7 +2752,7 @@ holdings: []
     ],
     holdings: [
  { name: "Uber", ticker: "UBER", investedYear: 2013, historicalPrice: null, price: 72.46 },
- { name: "GitLab", ticker: "GTLB", investedYear: 2017, historicalPrice: null, price: null },
+ { name: "GitLab", ticker: "GTLB", investedYear: 2017, historicalPrice: null, price: 43.35 },
  { name: "Robinhood", ticker: "HOOD", investedYear: 2013, historicalPrice: null, price: 99.96 }
     ]
   },
@@ -2759,7 +2782,7 @@ holdings: []
       { year: "2026", event: "Firm AUM surpasses $11 billion across direct and fund investing strategies." }
     ],
     holdings: [
-      { name: "Braze", ticker: "BRZE", historicalPrice: null, price: null }
+      { name: "Braze", ticker: "BRZE", historicalPrice: null, price: 29.87 }
     ]
   },
   {
@@ -2816,7 +2839,7 @@ holdings: []
     holdings: [
       { name: "Etsy", ticker: "ETSY", historicalPrice: null, price: 84.10 },
       { name: "Figma", ticker: "FIG", historicalPrice: null, price: 23.95 },
-      { name: "Dropbox", ticker: "DBX", historicalPrice: null, price: null }
+      { name: "Dropbox", ticker: "DBX", historicalPrice: null, price: 35.93 }
     ]
   },
   {
@@ -2927,7 +2950,7 @@ holdings: []
       { year: "2018", event: "Portfolio company DocuSign goes public." }
     ],
     holdings: [
-      { name: "DocuSign", ticker: "DOCU", historicalPrice: null, price: null },
+      { name: "DocuSign", ticker: "DOCU", historicalPrice: null, price: 64.09 },
       { name: "Twilio", ticker: "TWLO", historicalPrice: null, price: 206.78 }
     ]
   },
@@ -2979,7 +3002,7 @@ holdings: []
       { year: "2026", event: "Firm surpasses $10 billion in regulatory assets under management." }
     ],
     holdings: [
-      { name: "Coupang", ticker: "CPNG", historicalPrice: null, price: null }
+      { name: "Coupang", ticker: "CPNG", historicalPrice: null, price: 16.29 }
     ]
   },
   {
@@ -3068,7 +3091,7 @@ holdings: []
     holdings: [
       { name: "Coinbase", ticker: "COIN", historicalPrice: 257.21, price: 161.00 },
       { name: "Affirm", ticker: "AFRM", historicalPrice: null, price: 64.71 },
-      { name: "Wayfair", ticker: "W", historicalPrice: null, price: null }
+      { name: "Wayfair", ticker: "W", historicalPrice: null, price: 101.13 }
     ]
   },
   {
@@ -3125,8 +3148,9 @@ holdings: []
     ],
     holdings: [
       { name: "Duolingo", ticker: "DUOL", historicalPrice: null, price: 132.82 },
-      { name: "UiPath", ticker: "PATH", historicalPrice: null, price: null },
-      { name: "Zscaler", ticker: "ZS", historicalPrice: null, price: null }
+      { name: "UiPath", ticker: "PATH", historicalPrice: null, price: 16.68 },
+       { name: "Zscaler", ticker: "ZS", historicalPrice: null, price: 188.18 }
+
     ]
   },
   {
@@ -3155,7 +3179,7 @@ holdings: []
     ],
     holdings: [
       { name: "Uber", ticker: "UBER", historicalPrice: null, price: 72.46 },
-      { name: "Roku", ticker: "ROKU", historicalPrice: null, price: null }
+      { name: "Roku", ticker: "ROKU", historicalPrice: null, price: 154.08 }
     ]
   },
   {
@@ -3183,8 +3207,9 @@ holdings: []
     ],
     holdings: [
       { name: "DocuSign", ticker: "DOCU", historicalPrice: null, price: 52.91 },
-      { name: "monday.com", ticker: "MNDY", historicalPrice: null, price: null },
-      { name: "nCino", ticker: "NCNO", historicalPrice: null, price: null }
+      { name: "monday.com", ticker: "MNDY", historicalPrice: null, price: 94.29 },
+       { name: "nCino", ticker: "NCNO", historicalPrice: null, price: 20.66 }
+
     ]
   },
   {
@@ -3213,8 +3238,8 @@ holdings: []
       { year: "2026", event: "Firm materials continue to cite $7 billion under management across AI, biotech, defense, energy, and robotics." }
     ],
     holdings: [
-      { name: "Recursion", ticker: "RXRX", historicalPrice: null, price: null },
-      { name: "Aeva", ticker: "AEVA", historicalPrice: null, price: null }
+      { name: "Recursion", ticker: "RXRX", historicalPrice: null, price: 3.31 },
+      { name: "Aeva", ticker: "AEVA", historicalPrice: null, price: 22.42 }
     ]
   },
   {
@@ -3244,7 +3269,7 @@ holdings: []
     holdings: [
       { name: "Netflix", ticker: "NFLX", historicalPrice: null, price: 68.20 },
       { name: "Twilio", ticker: "TWLO", historicalPrice: null, price: 206.78 },
-      { name: "Snowflake", ticker: "SNOW", historicalPrice: null, price: null }
+      { name: "Snowflake", ticker: "SNOW", historicalPrice: null, price: 337.38 }
     ]
   },
   {
@@ -3326,8 +3351,8 @@ holdings: []
       { year: "2025", event: "Marks the firm's 25-year history." }
     ],
     holdings: [
-      { name: "SOPHiA Genetics", ticker: "SOPH", historicalPrice: null, price: null },
-      { name: "Flywire", ticker: "FLYW", historicalPrice: null, price: null }
+      { name: "SOPHiA Genetics", ticker: "SOPH", historicalPrice: null, price: 7.62 },
+      { name: "Flywire", ticker: "FLYW", historicalPrice: null, price: 18.24 }
     ]
   },
   {
@@ -3355,7 +3380,7 @@ holdings: []
     ],
     holdings: [
       { name: "Xiaomi", ticker: "1810.HK", historicalPrice: null, price: null },
-      { name: "XPeng", ticker: "XPEV", historicalPrice: null, price: null }
+      { name: "XPeng", ticker: "XPEV", historicalPrice: null, price: 11.78 }
     ]
   },
   {
@@ -3385,7 +3410,7 @@ holdings: []
     ],
     holdings: [
       { name: "Pinterest", ticker: "PINS", historicalPrice: null, price: 23.50 },
-      { name: "DraftKings", ticker: "DKNG", historicalPrice: null, price: null },
+      { name: "DraftKings", ticker: "DKNG", historicalPrice: null, price: 25.42 },
       { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: 141.10 }
     ]
   },
@@ -3414,7 +3439,7 @@ holdings: []
       { year: "2021", event: "Flagship raises $3.4 billion for a new fund in June, one of the largest biotech venture funds ever raised." }
     ],
     holdings: [
-      { name: "Moderna", ticker: "MRNA", historicalPrice: null, price: null }
+      { name: "Moderna", ticker: "MRNA", historicalPrice: null, price: 63.65 }
     ]
   },
   {
@@ -3442,8 +3467,9 @@ holdings: []
       { year: "2026", event: "AUM reaches approximately $4.8 billion across a portfolio of more than 300 companies worldwide." }
     ],
     holdings: [
-      { name: "Beam Therapeutics", ticker: "BEAM", historicalPrice: null, price: null },
-      { name: "Denali Therapeutics", ticker: "DNLI", historicalPrice: null, price: null }
+      { name: "Beam Therapeutics", ticker: "BEAM", historicalPrice: null, price: 26.51 },
+       { name: "Denali Therapeutics", ticker: "DNLI", historicalPrice: null, price: 24.82 }
+
     ]
   },
   {
@@ -3522,7 +3548,7 @@ holdings: []
       { year: "2025", event: "HashiCorp, one of the firm's signature IPO outcomes, is acquired by IBM and taken private." }
     ],
     holdings: [
-    { name: "GitLab", ticker: "GTLB", historicalPrice: null, price: null }
+    { name: "GitLab", ticker: "GTLB", historicalPrice: null, price: 43.35 }
     ]
   },
   {
@@ -3551,7 +3577,7 @@ holdings: []
     ],
     holdings: [
       { name: "DoorDash", ticker: "DASH", historicalPrice: 170.65, price: 175.00 },
-      { name: "Amgen", ticker: "AMGN", historicalPrice: null, price: null }
+      { name: "Amgen", ticker: "AMGN", historicalPrice: null, price: 417.84 }
     ]
   },
   {
@@ -3578,8 +3604,8 @@ holdings: []
       { year: "2020s", event: "Expands deep into AI, with more than 85 AI-focused investments." }
     ],
     holdings: [
-      { name: "Peloton", ticker: "PTON", historicalPrice: null, price: null },
-      { name: "Sweetgreen", ticker: "SG", historicalPrice: null, price: null }
+      { name: "Peloton", ticker: "PTON", historicalPrice: null, price: 5.56 },
+      { name: "Sweetgreen", ticker: "SG", historicalPrice: null, price: 6.06 }
     ]
   },
   {
@@ -3605,10 +3631,11 @@ holdings: []
       { year: "2026", event: "DCVC publishes its inaugural Deep Tech Opportunities report alongside fresh fund capital." }
     ],
     holdings: [
-      { name: "Planet Labs", ticker: "PL", historicalPrice: null, price: null },
-      { name: "Rocket Lab", ticker: "RKLB", historicalPrice: null, price: null },
-      { name: "Recursion", ticker: "RXRX", historicalPrice: null, price: null },
-      { name: "SentinelOne", ticker: "S", historicalPrice: null, price: null }
+      { name: "Planet Labs", ticker: "PL", historicalPrice: null, price: 24.75 },
+       { name: "Rocket Lab", ticker: "RKLB", historicalPrice: null, price: 80.1 },,
+       { name: "Recursion", ticker: "RXRX", historicalPrice: null, price: 3.31 },,
+       { name: "SentinelOne", ticker: "S", historicalPrice: null, price: 23.84 }
+
     ]
   },
   {
@@ -3638,7 +3665,7 @@ holdings: []
     holdings: [
       { name: "Workday", ticker: "WDAY", historicalPrice: null, price: 144.78 },
       { name: "Palo Alto Networks", ticker: "PANW", historicalPrice: null, price: 341.59 },
-  { name: "Arista Networks", ticker: "ANET", historicalPrice: null, price: null }
+  { name: "Arista Networks", ticker: "ANET", historicalPrice: null, price: 203.62 }
     ]
   },
   {
@@ -3666,7 +3693,7 @@ holdings: []
       { year: "2024", event: "Portfolio company Reddit goes public on NYSE." }
     ],
     holdings: [
-      { name: "Reddit", ticker: "RDDT", historicalPrice: null, price: null },
+      { name: "Reddit", ticker: "RDDT", historicalPrice: null, price: 158.12 },
       { name: "Uber", ticker: "UBER", historicalPrice: null, price: 72.46 },
       { name: "Twilio", ticker: "TWLO", historicalPrice: null, price: 206.78 }
     ]
@@ -3700,8 +3727,8 @@ holdings: []
     holdings: [
       { name: "Coinbase", ticker: "COIN", historicalPrice: 257.21, price: 161.00 },
       { name: "Instacart", ticker: "CART", historicalPrice: null, price: 45.82 },
-      { name: "Opendoor", ticker: "OPEN", historicalPrice: null, price: null },
-      { name: "Reddit", ticker: "RDDT", historicalPrice: null, price: null }
+      { name: "Opendoor", ticker: "OPEN", historicalPrice: null, price: 3.65 },
+      { name: "Reddit", ticker: "RDDT", historicalPrice: null, price: 158.12 }
     ]
   },
   {
@@ -3728,7 +3755,7 @@ holdings: []
       { year: "2023", event: "Launches a dedicated $250 million 'AI Start' seed fund for AI-first founders." }
     ],
     holdings: [
-     { name: "Lyft", ticker: "LYFT", historicalPrice: null, price: null }
+     { name: "Lyft", ticker: "LYFT", historicalPrice: null, price: 17.13 }
     ]
   },
   {
@@ -3784,8 +3811,9 @@ holdings: []
     ],
     holdings: [
       { name: "Xiaomi", ticker: "1810.HK", historicalPrice: null, price: null },
-      { name: "Bilibili", ticker: "BILI", historicalPrice: null, price: null },
-      { name: "Zhihu", ticker: "ZH", historicalPrice: null, price: null }
+      { name: "Bilibili", ticker: "BILI", historicalPrice: null, price: 17.07 },
+       { name: "Zhihu", ticker: "ZH", historicalPrice: null, price: 3.19 }
+
     ]
   },
   {
@@ -3815,9 +3843,11 @@ holdings: []
       { year: "2022", event: "Closes its thirteenth fund, USVP XIII, at $400 million in December." }
     ],
     holdings: [
-      { name: "Check Point Software", ticker: "CHKP", historicalPrice: null, price: null },
-      { name: "Ross Stores", ticker: "ROST", historicalPrice: null, price: null },
-      { name: "Box", ticker: "BOX", historicalPrice: null, price: null }
+      { name: "Check Point Software", ticker: "CHKP", historicalPrice: null, price: 134.23 },
+      { name: "Ross Stores", ticker: "ROST", historicalPrice: null, price: 244.96 },
+,
+      me: "Box", ticker: "BOX", historicalPrice: null, price: 33.64 }
+   
     ]
   },
   {
@@ -3845,7 +3875,7 @@ holdings: []
       { year: "2024", event: "Raises its eleventh fund at $600 million." }
     ],
     holdings: [
-      { name: "Netflix", ticker: "NFLX", historicalPrice: null, price: null }
+      { name: "Netflix", ticker: "NFLX", historicalPrice: null, price: 78.24 }
     ]
   },
   {
@@ -3874,9 +3904,10 @@ holdings: []
       { year: "2023", event: "AUM surpasses $2.5 billion across 10 funds and 400-plus portfolio companies." }
     ],
     holdings: [
-      { name: "Bark", ticker: "BARK", historicalPrice: null, price: null },
-      { name: "BlackSky", ticker: "BKSY", historicalPrice: null, price: null },
-      { name: "BuzzFeed", ticker: "BZFD", historicalPrice: null, price: null }
+      { name: "Bark", ticker: "BARK", historicalPrice: null, price: 10.44 },
+       { name: "BlackSky", ticker: "BKSY", historicalPrice: null, price: 30.99 },,
+      { name: "BuzzFeed", ticker: "BZFD", historicalPrice: null, price: 1.14 }
+ 
     ]
   },
   {
@@ -3903,9 +3934,11 @@ holdings: []
       { year: "2025", event: "Raises $200 million for an eighth fund." }
     ],
     holdings: [
-      { name: "Tesla", ticker: "TSLA", historicalPrice: null, price: null },
-      { name: "Baidu", ticker: "BIDU", historicalPrice: null, price: null },
-      { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: null }
+      { name: "Tesla", ticker: "TSLA", historicalPrice: null, price: 339.96 },
+      { name: "Baidu", ticker: "BIDU", historicalPrice: null, price: 104.68 },
+,
+      me: "Coinbase", ticker: "COIN", historicalPrice: null, price: 153.9 }
+   
     ]
   },
   {
@@ -3935,7 +3968,7 @@ holdings: []
     ],
     holdings: [
       { name: "Spotify", ticker: "SPOT", historicalPrice: null, price: 482.66 },
-      { name: "fuboTV", ticker: "FUBO", historicalPrice: null, price: null }
+      { name: "fuboTV", ticker: "FUBO", historicalPrice: null, price: 9.8 }
     ]
   },
   {
@@ -3963,9 +3996,11 @@ holdings: []
       { year: "2021", event: "Subotovsky makes his Forbes Midas List debut, one of the first three Latin American VCs on the list." }
     ],
     holdings: [
-      { name: "Zoom", ticker: "ZM", historicalPrice: null, price: null },
-      { name: "Veeva Systems", ticker: "VEEV", historicalPrice: null, price: null },
-      { name: "Box", ticker: "BOX", historicalPrice: null, price: null }
+      { name: "Zoom", ticker: "ZM", historicalPrice: null, price: 109.84 },
+      { name: "Veeva Systems", ticker: "VEEV", historicalPrice: null, price: 252.64 },
+,
+      me: "Box", ticker: "BOX", historicalPrice: null, price: 33.64 }
+   
     ]
   },
   {
@@ -3993,7 +4028,7 @@ holdings: []
     ],
     holdings: [
       { name: "CyberArk", ticker: "CYBR", historicalPrice: null, price: null },
-      { name: "Cogent Communications", ticker: "CCOI", historicalPrice: null, price: null }
+      { name: "Cogent Communications", ticker: "CCOI", historicalPrice: null, price: 10.35 }
     ]
   },
   {
@@ -4020,7 +4055,7 @@ holdings: []
       { year: "2025", event: "Reports $2.147 billion in assets under management in June annual letter." }
     ],
     holdings: [
-      { name: "Box", ticker: "BOX", historicalPrice: null, price: null }
+      { name: "Box", ticker: "BOX", historicalPrice: null, price: 33.64 }
     ]
   },
   {
@@ -4074,7 +4109,7 @@ holdings: []
       { year: "2025", event: "AUM reaches $2.7 billion across more than 2,600 portfolio companies." }
     ],
     holdings: [
-      { name: "Twilio", ticker: "TWLO", historicalPrice: null, price: null }
+      { name: "Twilio", ticker: "TWLO", historicalPrice: null, price: 249.42 }
     ]
   },
   {
@@ -4104,7 +4139,7 @@ holdings: []
       { year: "2026", event: "Reports £1.525 billion gross portfolio value as of March 31." }
     ],
     holdings: [
-      { name: "UiPath", ticker: "PATH", historicalPrice: null, price: null }
+      { name: "UiPath", ticker: "PATH", historicalPrice: null, price: 16.68 }
     ]
   },
   {
@@ -4214,8 +4249,8 @@ holdings: []
     ],
     holdings: [
       { name: "Zscaler", ticker: "ZS", historicalPrice: 181.66, price: 167.33 },
-      { name: "JFrog", ticker: "FROG", historicalPrice: null, price: null },
-      { name: "MongoDB", ticker: "MDB", historicalPrice: null, price: null },
+      { name: "JFrog", ticker: "FROG", historicalPrice: null, price: 95.15 },
+       { name: "MongoDB", ticker: "MDB", historicalPrice: null, price: 472.29 },,
       { name: "DocuSign", ticker: "DOCU", historicalPrice: null, price: 52.91 }
     ]
   },
@@ -4247,7 +4282,7 @@ holdings: []
     holdings: [
       { name: "Etsy", ticker: "ETSY", historicalPrice: null, price: 84.10 },
       { name: "Coinbase", ticker: "COIN", historicalPrice: 257.21, price: 161.00 },
-      { name: "Duolingo", ticker: "DUOL", historicalPrice: null, price: null }
+      { name: "Duolingo", ticker: "DUOL", historicalPrice: null, price: 144.1 }
     ]
   },
   {
@@ -4304,7 +4339,7 @@ holdings: []
       { year: "2024", event: "Closes its thirteenth flagship fund, Fund XIII, at $850 million." }
     ],
     holdings: [
-      { name: "The RealReal", ticker: "REAL", historicalPrice: null, price: null },
+      { name: "The RealReal", ticker: "REAL", historicalPrice: null, price: 10.94 },
       { name: "LendingClub", ticker: "LC", historicalPrice: null, price: 19.21 }
     ]
   },
@@ -4332,7 +4367,7 @@ holdings: []
       { year: "2020", event: "Firm's assets under management stand at $1.3 billion." }
     ],
     holdings: [
-      { name: "Allbirds", ticker: "BIRD", historicalPrice: null, price: null }
+      { name: "Allbirds", ticker: "BIRD", historicalPrice: null, price: 2.64 }
     ]
   },
   {
@@ -4571,7 +4606,7 @@ holdings: []
       { year: "2024", event: "Firm AUM reaches approximately $1.6-2 billion across 16 locations." }
     ],
     holdings: [
-      { name: "Prenetics", ticker: "PRE", historicalPrice: null, price: null }
+      { name: "Prenetics", ticker: "PRE", historicalPrice: null, price: 19.7 }
     ]
   },
   {
@@ -4600,7 +4635,7 @@ holdings: []
     ],
     holdings: [
       { name: "UiPath", ticker: "PATH", historicalPrice: null, price: 12.19 },
-      { name: "Wise", ticker: "WISE", historicalPrice: null, price: null }
+      { name: "Wise", ticker: "WISE", historicalPrice: null, price: 38.455 }
     ]
   },
   {
@@ -4655,7 +4690,7 @@ holdings: []
       { year: "2025", event: "Closes Fund VII at $500 million, bringing total AUM to nearly $3 billion." }
     ],
     holdings: [
-      { name: "Warby Parker", ticker: "WRBY", historicalPrice: null, price: null }
+      { name: "Warby Parker", ticker: "WRBY", historicalPrice: null, price: 25.88 }
     ]
   },
   {
@@ -4685,7 +4720,7 @@ holdings: []
     ],
     holdings: [
       { name: "Bluebird Bio", ticker: "BLUE", historicalPrice: null, price: null },
-      { name: "Agios Pharmaceuticals", ticker: "AGIO", historicalPrice: null, price: null }
+      { name: "Agios Pharmaceuticals", ticker: "AGIO", historicalPrice: null, price: 33.47 }
     ]
   },
   {
@@ -4930,7 +4965,7 @@ holdings: []
       { year: "2025", event: "Portfolio company Hinge Health completes its IPO." }
     ],
     holdings: [
-      { name: "Hinge Health", ticker: "HNGE", historicalPrice: null, price: null }
+      { name: "Hinge Health", ticker: "HNGE", historicalPrice: null, price: 87.42 }
     ]
   },
   {
@@ -4988,8 +5023,9 @@ holdings: []
     ],
     holdings: [
       { name: "Shopify", ticker: "SHOP", historicalPrice: 107.53, price: 123.56 },
-      { name: "Guardant Health", ticker: "GH", historicalPrice: null, price: null },
-      { name: "Ginkgo Bioworks", ticker: "DNA", historicalPrice: null, price: null }
+      { name: "Guardant Health", ticker: "GH", historicalPrice: null, price: 159.54 },
+      { name: "Ginkgo Bioworks", ticker: "DNA", historicalPrice: null, price: 7.24 }
+ 
     ]
   },
   {
@@ -5149,7 +5185,7 @@ holdings: []
       { year: "2025", event: "Closes its largest fundraise yet, $770 million across Fund X and Acceleration Fund IV, marking the firm's 30th year." }
     ],
     holdings: [
-    { name: "Impinj", ticker: "PI", historicalPrice: null, price: null }
+    { name: "Impinj", ticker: "PI", historicalPrice: null, price: 178.81 }
     ]
   },
   {
@@ -5204,7 +5240,7 @@ holdings: []
       { year: "2016", event: "Ilya Sukhar joins as a General Partner after selling Parse to Facebook." }
     ],
     holdings: [
-      { name: "HubSpot", ticker: "HUBS", historicalPrice: null, price: null }
+      { name: "HubSpot", ticker: "HUBS", historicalPrice: null, price: 240.51 }
     ]
   },
   {
@@ -5306,7 +5342,7 @@ holdings: []
       { year: "2021", event: "Allison Goldberg joins as Managing Partner in November, after running Time Warner Investments." }
     ],
     holdings: [
-      { name: "Sprinklr", ticker: "CXM", historicalPrice: null, price: null }
+      { name: "Sprinklr", ticker: "CXM", historicalPrice: null, price: 7.03 }
     ]
   },
   {
@@ -5606,7 +5642,7 @@ holdings: []
       { year: "2023", event: "Saul Klein publicly discusses the family's ambition to help European companies scale to megacap status." }
     ],
     holdings: [
-      { name: "Wise", ticker: "WISE", historicalPrice: null, price: null },
+      { name: "Wise", ticker: "WISE", historicalPrice: null, price: 38.455 },
       { name: "Robinhood", ticker: "HOOD", historicalPrice: null, price: 99.96 }
     ]
   },
@@ -5659,7 +5695,7 @@ holdings: []
       { year: "2021", event: "Portfolio company ThredUp goes public on Nasdaq." }
     ],
     holdings: [
-      { name: "ThredUp", ticker: "TDUP", historicalPrice: null, price: null }
+      { name: "ThredUp", ticker: "TDUP", historicalPrice: null, price: 3.17 }
     ]
   },
   {
@@ -6089,8 +6125,8 @@ holdings: []
       { year: "2019", event: "PagerDuty goes public." }
     ],
     holdings: [
-      { name: "Stitch Fix", ticker: "SFIX", historicalPrice: null, price: null },
-      { name: "PagerDuty", ticker: "PD", historicalPrice: null, price: null }
+      { name: "Stitch Fix", ticker: "SFIX", historicalPrice: null, price: 3.65 },
+      { name: "PagerDuty", ticker: "PD", historicalPrice: null, price: 12.09 }
     ]
   },
   {
@@ -6120,7 +6156,7 @@ holdings: []
     ],
     holdings: [
       { name: "Uber", ticker: "UBER", historicalPrice: null, price: 72.46 },
-      { name: "The Trade Desk", ticker: "TTD", historicalPrice: null, price: null }
+      { name: "The Trade Desk", ticker: "TTD", historicalPrice: null, price: 14.56 }
     ]
   },
   {
@@ -6147,7 +6183,7 @@ holdings: []
     ],
     holdings: [
       { name: "Twilio", ticker: "TWLO", historicalPrice: null, price: 206.78 },
-      { name: "Lyft", ticker: "LYFT", historicalPrice: null, price: null }
+      { name: "Lyft", ticker: "LYFT", historicalPrice: null, price: 17.13 }
     ]
   },
   {
@@ -6438,7 +6474,7 @@ holdings: []
       { year: "2023", event: "Announces Fund III, targeting approximately $250 million." }
     ],
     holdings: [
-      { name: "IonQ", ticker: "IONQ", historicalPrice: null, price: null }
+      { name: "IonQ", ticker: "IONQ", historicalPrice: null, price: 44.98 }
     ]
   },
   {
@@ -6462,7 +6498,7 @@ holdings: []
       { year: "2024", event: "Portfolio surpasses 90 companies across 17 countries, with more than $400 million under management." }
     ],
     holdings: [
-      { name: "Enphase Energy", ticker: "ENPH", historicalPrice: null, price: null },
+      { name: "Enphase Energy", ticker: "ENPH", historicalPrice: null, price: 40.78 },
       { name: "Adesto Technologies", ticker: "IOTS", historicalPrice: null, price: null }
     ]
   },
@@ -6564,7 +6600,7 @@ holdings: []
       { year: "2024", event: "Closes Fund V at $630 million; reports 115 total investments and 34 exits over 14 years." }
     ],
     holdings: [
-      { name: "SoFi", ticker: "SOFI", historicalPrice: null, price: null }
+      { name: "SoFi", ticker: "SOFI", historicalPrice: null, price: 18.43 }
     ]
   },
   {
@@ -6717,7 +6753,7 @@ holdings: []
       { year: "2025", event: "PartsTech, a portfolio company, is acquired by OEC in February." }
     ],
     holdings: [
-      { name: "Datadog", ticker: "DDOG", historicalPrice: null, price: null }
+      { name: "Datadog", ticker: "DDOG", historicalPrice: null, price: 252.24 }
     ]
   },
   {
@@ -6770,8 +6806,9 @@ holdings: []
       { year: "2024", event: "AUM reaches $4.5 billion across ten funds, with seven IPOs since 2019 and 84 total exits." }
     ],
     holdings: [
-      { name: "Bill.com", ticker: "BILL", historicalPrice: null, price: null },
-      { name: "SoFi", ticker: "SOFI", historicalPrice: null, price: null }
+      { name: "Bill.com", ticker: "BILL", historicalPrice: null, price: 51.31 },
+       { name: "SoFi", ticker: "SOFI", historicalPrice: null, price: 18.43 }
+
     ]
   },
   {
@@ -6798,7 +6835,7 @@ holdings: []
       { year: "2023", event: "Named one of the ten best-performing venture capital firms in the world." }
     ],
     holdings: [
-      { name: "Oscar Health", ticker: "OSCR", historicalPrice: null, price: null }
+      { name: "Oscar Health", ticker: "OSCR", historicalPrice: null, price: 30.78 }
     ]
   },
   {
@@ -6922,8 +6959,9 @@ holdings: []
       { year: "2021", event: "Ginkgo Bioworks goes public via SPAC merger under ticker DNA." }
     ],
     holdings: [
-      { name: "Palantir", ticker: "PLTR", historicalPrice: null, price: null },
-      { name: "Ginkgo Bioworks", ticker: "DNA", historicalPrice: null, price: null }
+      { name: "Palantir", ticker: "PLTR", historicalPrice: null, price: 179.01 },
+      { name: "Ginkgo Bioworks", ticker: "DNA", historicalPrice: null, price: 7.24 }
+ 
     ]
   },
   {
@@ -7051,7 +7089,7 @@ holdings: []
       { year: "2025", event: "Closes Female Founders Fund's $29 million Fund IV, bringing total firm capital to $140 million." }
     ],
     holdings: [
-      { name: "Rent the Runway", ticker: "RENT", historicalPrice: null, price: null }
+      { name: "Rent the Runway", ticker: "RENT", historicalPrice: null, price: 3.64 }
     ]
   },
   {
@@ -7916,7 +7954,7 @@ holdings: []
         name: "Arteris",
         ticker: "AIP",
         historicalPrice: null,
-        price: null
+        price: 27.59
       }
     ]
   },
