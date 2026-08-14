@@ -11609,4 +11609,1130 @@ sources: [
       }
     ]
   },
+  "amanda-sanchez-barry": {
+    name: "Amanda Sanchez-Barry",
+    firm: "SoftBank Vision Fund",
+    firmSlug: "softbank-vision-fund",
+    title: "Managing Partner, General Counsel",
+    joinedYear: 2018,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "Law degree, Brunel University",
+      "Diploma in Legal Practice, BPP Law School"
+    ],
+    previousExperience: [
+      "Partner, Investment Funds team, Linklaters (2005-2018)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2018",
+        event: "Joined SoftBank Investment Advisers as a partner from Linklaters."
+      }
+    ],
+    biography: "Amanda Sanchez-Barry is Managing Partner and General Counsel at SoftBank Investment Advisers, overseeing the legal management and operation of the Vision Fund and SBIA's legal strategy. She joined SBIA in 2018 after more than a decade on Linklaters' Investment Funds team, where she advised financial services companies and investors. She holds a law degree from Brunel University and a diploma in legal practice from BPP Law School.",
+    sources: [
+      {
+        label: "SoftBank Vision Fund — Amanda Sanchez-Barry",
+        url: "https://visionfund.com/team/amanda-sanchez-barry"
+      },
+      {
+        label: "Bloomberg Law — SoftBank Vision Fund Names New Top Lawyer",
+        url: "https://news.bloomberglaw.com/business-and-practice/softbank-vision-fund-names-new-top-lawyer-amid-layoffs-losses"
+      }
+    ]
+  },
+  "angela-du": {
+    name: "Angela Du",
+    firm: "SoftBank Vision Fund",
+    firmSlug: "softbank-vision-fund",
+    title: "Partner, Americas",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Began career at Goldman Sachs",
+      "Roles at three investment firms across private and public asset classes prior to SBIA"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Angela Du is a Partner, Americas at SoftBank Vision Fund. Her firm biography states she began her career at Goldman Sachs and spent the following decade at three investment firms across private and public asset classes before joining SBIA, with an investing focus informed by an interest in sustainability and economic development. Third-party databases name additional prior employers and a graduate degree, but conflict with one another and are not corroborated by the firm's own page, so they are omitted.",
+    sources: [
+      {
+        label: "SoftBank Vision Fund — Angela Du",
+        url: "https://visionfund.com/team/angela-du"
+      }
+    ]
+  },
+  "brett-rochkind": {
+    name: "Brett Rochkind",
+    firm: "SoftBank Vision Fund",
+    firmSlug: "softbank-vision-fund",
+    title: "Managing Partner, Americas",
+    joinedYear: 2022,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BS, Finance & Accounting, NYU Stern School of Business",
+      "MBA, Columbia Business School"
+    ],
+    previousExperience: [
+      "Managing Director and Global Co-Head of Technology, General Atlantic (2002-2017)",
+      "Investment banking analyst, Technology Group, Morgan Stanley"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2002",
+        event: "Joined General Atlantic, later becoming Managing Director and Global Co-Head of Technology."
+      },
+      {
+        year: "2022",
+        event: "Joined SoftBank Investment Advisers as Managing Partner, Americas."
+      }
+    ],
+    biography: "Brett Rochkind is Managing Partner, Americas at SoftBank Vision Fund, which he joined in 2022 with more than 20 years of global growth investing experience. He spent 15 years at General Atlantic, where he served as global co-head of the technology sector and led the firm's Silicon Valley office. He began his career as an analyst in Morgan Stanley's Technology Group. He holds a BS from NYU Stern and an MBA from Columbia Business School.",
+    sources: [
+      {
+        label: "SoftBank Vision Fund — Brett Rochkind",
+        url: "https://visionfund.com/team/brett-rochkind"
+      }
+    ]
+  },
+  "cecilia-chen": {
+    name: "Cecilia Chen",
+    firm: "SoftBank Vision Fund",
+    firmSlug: "softbank-vision-fund",
+    title: "Partner, Asia",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BBA, Shanghai Jiao Tong University",
+      "MBA, The Wharton School, University of Pennsylvania"
+    ],
+    previousExperience: [
+      "Executive Director, Asian Special Situations Group, Goldman Sachs",
+      "Associate Director, UBS",
+      "Investment banking analyst, China International Capital Corporation"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Cecilia Chen is a Partner, Asia at SoftBank Vision Fund. Before joining SoftBank Investment Advisers she was an executive director in Goldman Sachs' Asian Special Situations Group covering growth equity investment in China, and previously worked at UBS and began her career as an investment banking analyst at China International Capital Corporation. She holds a BBA from Shanghai Jiao Tong University and an MBA from the Wharton School.",
+    sources: [
+      {
+        label: "SoftBank Vision Fund — Cecilia Chen",
+        url: "https://visionfund.com/team/cecilia-chen"
+      }
+    ]
+  },
+  "damien-henault": {
+    name: "Damien Henault",
+    firm: "Forgepoint Capital",
+    firmSlug: "forgepoint-capital",
+    title: "Managing Director & Partner, Forgepoint Capital International",
+    joinedYear: null,
+    sectors: [
+      "Cybersecurity",
+      "AI",
+      "Infrastructure"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://forgepointcap.com/team/damien-henault/",
+    education: [
+      "Degrees in Philosophy and Economics, Sorbonne University",
+      "MSc in Finance, Institut d'Etudes Politiques (Sciences Po), Paris"
+    ],
+    previousExperience: [
+      "Partner, TempoCap",
+      "Partner, Andurance Ventures",
+      "Senior Director of Strategy and Corporate Development, Hewlett-Packard",
+      "TMT M&A investment banker, J.P. Morgan"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Damien Henault is Managing Director and Partner at Forgepoint Capital International, leading the firm's cybersecurity, AI and infrastructure software investments across Europe, Israel and Latin America. He has over 30 years of experience as a technology investor, M&A advisor and corporate development executive. Before Forgepoint he was a partner at TempoCap and at Andurance Ventures, a senior director of strategy and corporate development at Hewlett-Packard, and a TMT M&A investment banker at J.P. Morgan.",
+    sources: [
+      {
+        label: "Forgepoint Capital — Damien Henault",
+        url: "https://forgepointcap.com/team/damien-henault/"
+      }
+    ]
+  },
+  "don-dixon": {
+    name: "Don Dixon",
+    firm: "Forgepoint Capital",
+    firmSlug: "forgepoint-capital",
+    title: "Co-Founder and Senior Advisor",
+    joinedYear: null,
+    sectors: [
+      "Cybersecurity"
+    ],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://forgepointcap.com/team/don-dixon/",
+    education: [
+      "BSE, Princeton University",
+      "MBA, Stanford Graduate School of Business"
+    ],
+    previousExperience: [
+      "Founder, Trident Capital",
+      "Co-President, Partech International",
+      "Managing Director, Alex. Brown & Sons",
+      "Vice President, Morgan Stanley"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Don Dixon is Co-Founder and Senior Advisor at Forgepoint and has been a technology investor for over 30 years, among the earliest investors in cybersecurity. Prior to Forgepoint he founded and led Trident Capital for more than 20 years. Before that he was co-president at Partech International, a managing director at Alex. Brown & Sons and a vice president at Morgan Stanley.",
+    sources: [
+      {
+        label: "Forgepoint Capital — Don Dixon",
+        url: "https://forgepointcap.com/team/don-dixon/"
+      }
+    ]
+  },
+  "ernie-bio": {
+    name: "Ernie Bio",
+    firm: "Forgepoint Capital",
+    firmSlug: "forgepoint-capital",
+    title: "Managing Director",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BS, Loyola University",
+      "MBA, NYU Leonard N. Stern School of Business"
+    ],
+    previousExperience: [
+      "Chief Operating Officer, Defense Innovation Unit",
+      "Director, U.S. Cyber Command Point of Partnership",
+      "U.S. Air Force fighter pilot"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Huntress",
+      "DataBahn.ai",
+      "1Kosmos",
+      "Synadia",
+      "RAD Security",
+      "Bishop Fox",
+      "NowSecure"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ernie Bio is a Managing Director at Forgepoint focused on early-stage investments. Before Forgepoint he was chief operating officer of the Defense Innovation Unit, where he oversaw approval of over $250 million in contracts across cybersecurity, AI/ML, autonomy and human systems technologies. He previously directed the U.S. Cyber Command Point of Partnership and began his career as an Air Force fighter pilot.",
+    sources: [
+      {
+        label: "Forgepoint Capital — Ernie Bio",
+        url: "https://forgepointcap.com/team/ernie-bio/"
+      }
+    ]
+  },
+  "leo-casusol": {
+    name: "Leo Casusol",
+    firm: "Forgepoint Capital",
+    firmSlug: "forgepoint-capital",
+    title: "Managing Director",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BASc, Universidad Catolica de Santa Maria",
+      "MBA, Universidad Nacional de San Agustin"
+    ],
+    previousExperience: [
+      "CIO, Cyxtera Technologies",
+      "CIO, Verizon Business",
+      "CIO, Terremark Worldwide",
+      "CIO, Liquidity Services",
+      "Founding member and technology architect, Quadrem US"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Cinchy",
+      "Rafay Systems",
+      "SolCyber"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Leo Casusol is a Managing Director at Forgepoint with over 20 years of executive experience building and operating large-scale global technology companies. Before Forgepoint he spent over two decades as CIO at Cyxtera Technologies, Verizon Business, Terremark Worldwide and Liquidity Services, and was a founding member and technology architect for Quadrem US.",
+    sources: [
+      {
+        label: "Forgepoint Capital — Leo Casusol",
+        url: "https://forgepointcap.com/team/leo-casusol/"
+      }
+    ]
+  },
+  "howard-morgan": {
+    name: "Howard Morgan",
+    firm: "B Capital Group",
+    firmSlug: "b-capital-group",
+    title: "Co-Founder, Chair and General Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BS, Physics, City College of the City University of New York",
+      "PhD, Operations Research, Cornell University"
+    ],
+    previousExperience: [
+      "Co-Founder, First Round Capital",
+      "Co-Founder, Idealab",
+      "Founding President, Renaissance Technologies",
+      "Professor, University of Pennsylvania and Cornell University",
+      "Executive Fellow, UC Berkeley"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Idealab"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Howard Morgan is Co-Founder, Chair and General Partner of B Capital and one of the pioneers of early-stage investing and the early internet. He co-founded First Round Capital, helped found Idealab, and served as founding president of Renaissance Technologies. Before moving into technology investing he was a professor at the University of Pennsylvania and Cornell University and an executive fellow at UC Berkeley; his research helped bring the ARPAnet to Philadelphia in the 1970s.",
+    sources: [
+      {
+        label: "B Capital — Howard Morgan",
+        url: "https://b.capital/team/howard-morgan/"
+      }
+    ]
+  },
+  "raj-ganguly": {
+    name: "Raj Ganguly",
+    firm: "B Capital Group",
+    firmSlug: "b-capital-group",
+    title: "Co-Founder and Co-CEO",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BSE and BAS, Wharton School and School of Engineering and Applied Science, University of Pennsylvania",
+      "MBA, Harvard Business School"
+    ],
+    previousExperience: [
+      "Bain Capital, co-leader of the firm's global technology initiative",
+      "McKinsey & Company",
+      "Diageo plc",
+      "Miradiant, an internet payment startup acquired by J.P. Morgan"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Raj Ganguly is Co-Founder and Co-CEO of B Capital. Prior to founding the firm he was at Bain Capital investing in technology-driven companies across the US and Asia and co-led the firm's global technology initiative. Earlier in his career he worked at McKinsey & Company, Diageo plc and Miradiant, an early internet payment startup acquired by J.P. Morgan.",
+    sources: [
+      {
+        label: "B Capital — Raj Ganguly",
+        url: "https://b.capital/team/raj-ganguly/"
+      }
+    ]
+  },
+  "adam-seabrook": {
+    name: "Adam Seabrook",
+    firm: "B Capital Group",
+    firmSlug: "b-capital-group",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "Healthcare"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://b.capital/team/adam-seabrook/",
+    education: [
+      "BS, Mechanical and Biomedical Engineering, Cornell University",
+      "MBA, University of Chicago"
+    ],
+    previousExperience: [
+      "Hyde Park Angels",
+      "Early employee, Imaging Advantage, acquired by Envision Healthcare"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Positive Development",
+      "Synapticure",
+      "Atomwise",
+      "Evidation",
+      "Sift Healthcare",
+      "PicnicHealth"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Adam Seabrook is a Partner at B Capital leading the firm's investments in healthcare and digital health. Prior to joining B Capital he worked at Hyde Park Angels and was an early employee at Imaging Advantage, a teleradiology startup later acquired by Envision Healthcare. He was named to GrowthCap's Top 40 Under 40 Growth Investors of 2023.",
+    sources: [
+      {
+        label: "B Capital — Adam Seabrook",
+        url: "https://b.capital/team/adam-seabrook/"
+      }
+    ]
+  },
+  "andrew-jackson": {
+    name: "Andrew Jackson",
+    firm: "B Capital Group",
+    firmSlug: "b-capital-group",
+    title: "General Partner and Chief AI Officer",
+    joinedYear: null,
+    sectors: [
+      "AI"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://b.capital/team/andrew-jackson/",
+    education: [
+      "PhD, Machine Learning, Trinity College Dublin"
+    ],
+    previousExperience: [
+      "Chief AI Officer, G42",
+      "Founder and CEO, Inception, an AI lab and G42 company",
+      "Founder, regional Microsoft-backed AI Foundation",
+      "Expanded Palantir's presence across the Middle East"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Andrew Jackson is General Partner and Chief AI Officer at B Capital, leading the firm's global artificial intelligence strategy across investment, portfolio management and operations. He brings more than 20 years of experience in AI, machine learning and data. Prior to B Capital he was chief AI officer at G42 and founded Inception, an AI lab that built a family of open-source AI models in the MENA region. Earlier he played a key role in expanding Palantir's Middle East presence.",
+    sources: [
+      {
+        label: "B Capital — Andrew Jackson",
+        url: "https://b.capital/team/andrew-jackson/"
+      }
+    ]
+  },
+  "lindsay-luger": {
+    name: "Lindsay Luger",
+    firm: "Energy Impact Partners",
+    firmSlug: "energy-impact-partners",
+    title: "Co-founder & Partner",
+    joinedYear: 2015,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Psychology, Columbia University"
+    ],
+    previousExperience: [
+      "Vice President, Digital Power Capital (2012-2015)",
+      "Vice President, Wexford Capital (2007-2012)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2015",
+        event: "Became a partner at Energy Impact Partners as a co-founder, in October 2015."
+      }
+    ],
+    biography: "Lindsay Luger is a co-founder of Energy Impact Partners, where she has served as a partner since October 2015. She has over a decade of experience investing in energy technology companies and serves on the boards of several EIP portfolio companies. Prior to EIP she was vice president of Digital Power Capital and vice president of Wexford Capital.",
+    sources: [
+      {
+        label: "Energy Impact Partners — Team",
+        url: "https://www.energyimpactpartners.com/team"
+      }
+    ]
+  },
+  "sameer-reddy": {
+    name: "Sameer Reddy",
+    firm: "Energy Impact Partners",
+    firmSlug: "energy-impact-partners",
+    title: "Managing Partner, Flagship",
+    joinedYear: 2015,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "Dual degree, Finance and Economics, University of Florida"
+    ],
+    previousExperience: [
+      "Evercore, Power and Renewable Energy Group",
+      "GE Capital, energy venture capital group"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2015",
+        event: "Joined Energy Impact Partners."
+      }
+    ],
+    biography: "Sameer Reddy is a Managing Partner at Energy Impact Partners who joined the firm in 2015 and oversees its Flagship strategy. He has over 15 years of experience in energy transition and climate technology, having led investments in Arcadia, Dragos and Urbint. Prior to EIP he spent five years at Evercore's Power and Renewable Energy Group advising on over $15 billion in M&A transactions, and three years at GE Capital's energy venture capital group.",
+    sources: [
+      {
+        label: "Energy Impact Partners — Team",
+        url: "https://www.energyimpactpartners.com/team"
+      }
+    ]
+  },
+  "joshua-feldman": {
+    name: "Joshua Feldman",
+    firm: "Energy Impact Partners",
+    firmSlug: "energy-impact-partners",
+    title: "Co-founder, Partner, General Counsel & Chief Operating Officer",
+    joinedYear: 2015,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Economics and Government, Lehigh University",
+      "JD, Stanford Law School"
+    ],
+    previousExperience: [
+      "General Counsel, Cedrus Park Management",
+      "General Counsel, King Street Capital Management",
+      "Corporate transactional attorney, Covington & Burling",
+      "Corporate transactional attorney, Willkie Farr & Gallagher"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2015",
+        event: "Joined Energy Impact Partners as co-founder, general counsel and chief operating officer."
+      }
+    ],
+    biography: "Joshua Feldman is a co-founder, partner, general counsel and chief operating officer of Energy Impact Partners, leading the firm's legal, compliance, operations and finance functions. He has over 25 years of experience as a corporate transactional and regulatory attorney. Prior to joining EIP in 2015 he was general counsel for Cedrus Park Management and spent 10 years as general counsel of King Street Capital Management.",
+    sources: [
+      {
+        label: "Energy Impact Partners — Team",
+        url: "https://www.energyimpactpartners.com/team"
+      }
+    ]
+  },
+  "cassie-bowe": {
+    name: "Cassie Bowe",
+    firm: "Energy Impact Partners",
+    firmSlug: "energy-impact-partners",
+    title: "Partner",
+    joinedYear: 2017,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Economics, Harvard University",
+      "MBA, Stanford Graduate School of Business"
+    ],
+    previousExperience: [
+      "SunPower, policy, corporate strategy and market development",
+      "Operating roles at energy storage, micro-grid and energy asset management startups"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2017",
+        event: "Joined Energy Impact Partners."
+      },
+      {
+        year: "2018",
+        event: "Selected for the Forbes 30 Under 30 list in Energy."
+      }
+    ],
+    biography: "Cassie Bowe is a Partner at Energy Impact Partners leading investments across multiple energy transition verticals, including Viriciti, HopSkipDrive and Ion Solar. She has 15 years of experience in energy and climate technology. Prior to joining EIP in 2017 she worked at SunPower in policy, corporate strategy and market development, and gained operating experience at energy storage, micro-grid and energy asset management startups.",
+    sources: [
+      {
+        label: "Energy Impact Partners — Team",
+        url: "https://www.energyimpactpartners.com/team"
+      }
+    ]
+  },
+  "dominic-barton": {
+    name: "Dominic Barton",
+    firm: "Radical Ventures",
+    firmSlug: "radical-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA Honours, Economics, University of British Columbia",
+      "MPhil, Economics, Brasenose College, Oxford University"
+    ],
+    previousExperience: [
+      "Global Managing Partner, McKinsey & Company (2009-2018)",
+      "Asia Chairman, McKinsey & Company (2004-2009)",
+      "Canadian Ambassador to the People's Republic of China (2019-2021)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Rio Tinto",
+      "LeapFrog Investments"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2009",
+        event: "Became Global Managing Partner of McKinsey & Company, serving three terms through 2018."
+      },
+      {
+        year: "2019",
+        event: "Appointed Canada's Ambassador to the People's Republic of China, serving until 2021."
+      }
+    ],
+    biography: "Dominic Barton is a Partner at Radical Ventures, where he advises portfolio companies on commercialisation and go-to-market strategy. He is chair of Rio Tinto and of LeapFrog Investments, recently completed a term as Canada's Ambassador to China, and was global managing partner of McKinsey & Company from 2009 to 2018. He studied as a Rhodes Scholar at Oxford.",
+    sources: [
+      {
+        label: "Radical Ventures — Dominic Barton",
+        url: "https://radical.vc/team/dominic-barton/"
+      },
+      {
+        label: "Prime Minister of Canada — Dominic Barton backgrounder",
+        url: "https://www.pm.gc.ca/en/news/backgrounders/2019/09/04/dominic-barton"
+      }
+    ]
+  },
+  "sanjana-basu": {
+    name: "Sanjana Basu",
+    firm: "Radical Ventures",
+    firmSlug: "radical-ventures",
+    title: "Partner",
+    joinedYear: 2019,
+    sectors: [
+      "AI"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://radical.vc/team/sanjana-basu/",
+    education: [
+      "BA, Economics and International Relations, Tufts University",
+      "MBA, Indian Institute of Management, Bangalore"
+    ],
+    previousExperience: [
+      "Investment banking, Barclays",
+      "Venture investing, Tata"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2019",
+        event: "Joined Radical Ventures at the firm's inception."
+      }
+    ],
+    biography: "Sanjana Basu is a Partner at Radical Ventures who joined the firm at its inception in 2019, investing in AI-native companies across generative science and multimodal intelligence. She began her career in investment banking at Barclays, followed by venture investing at Tata focused on deep tech, AI and consumer tech.",
+    sources: [
+      {
+        label: "Radical Ventures — Sanjana Basu",
+        url: "https://radical.vc/team/sanjana-basu/"
+      }
+    ]
+  },
+  "blair-bernholtz": {
+    name: "Blair Bernholtz",
+    firm: "Radical Ventures",
+    firmSlug: "radical-ventures",
+    title: "Partner, CFO",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "HBA, Richard Ivey School of Business"
+    ],
+    previousExperience: [
+      "Director, Onex",
+      "Audit and Assurance, PricewaterhouseCoopers"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Blair Bernholtz is Partner and CFO at Radical Ventures, responsible for financial matters relating to the firm's corporate entities, partnerships, limited partners, investments and investor relations. Prior to Radical he was a director at Onex handling fund financial reporting, transaction treasury support and investor relations, and previously worked in audit and assurance at PricewaterhouseCoopers. He is a CPA, CA in Ontario.",
+    sources: [
+      {
+        label: "Radical Ventures — Blair Bernholtz",
+        url: "https://radical.vc/team/blair-bernholtz/"
+      }
+    ]
+  },
+  "aaron-brindle": {
+    name: "Aaron Brindle",
+    firm: "Radical Ventures",
+    firmSlug: "radical-ventures",
+    title: "Partner, Public Affairs",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Head of Public Affairs, Google Canada",
+      "Communications lead, Google AI",
+      "Director of Marketing, Incognito Software",
+      "Founding producer, The Current, CBC"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Canadian Journalism Foundation"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Aaron Brindle oversees public affairs for Radical Ventures, managing strategic communications and policy. Prior to Radical he served as head of public affairs for Google Canada and managed communications for Google AI, supporting Geoffrey Hinton's team. Before Google he worked at the intersection of technology and journalism, including as a founding producer of CBC's The Current.",
+    sources: [
+      {
+        label: "Radical Ventures — Aaron Brindle",
+        url: "https://radical.vc/team/aaron-brindle/"
+      }
+    ]
+  },
+  "ngetha-waithaka": {
+    name: "Ngetha Waithaka",
+    firm: "Norrsken22",
+    firmSlug: "norrsken22",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: [
+      "Fintech"
+    ],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://www.norrsken22.com/team",
+    education: [
+      "BA, Middlebury College",
+      "MBA, Wharton School, University of Pennsylvania"
+    ],
+    previousExperience: [
+      "Actis",
+      "PCG Capital Partners",
+      "Investment Banking division, Credit Suisse"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2011",
+        event: "Joined Actis, beginning more than a decade of African investing experience."
+      }
+    ],
+    biography: "Ngetha Waithaka is a General Partner of Norrsken22, based in Nairobi. He joined Actis in 2011 and brought over 10 years of investing experience across the African continent, including a notable role in Actis's investment in Fawry, Egypt's leading payments enablement company. Prior to Actis he worked at PCG Capital Partners and began his career in the investment banking division of Credit Suisse.",
+    sources: [
+      {
+        label: "Norrsken22 — Team",
+        url: "https://www.norrsken22.com/team"
+      }
+    ]
+  },
+  "hans-otterling": {
+    name: "Hans Otterling",
+    firm: "Norrsken22",
+    firmSlug: "norrsken22",
+    title: "Founding Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Partner, Northzone",
+      "Serial entrepreneur who founded, scaled and exited three media and technology businesses"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2006",
+        event: "Became a partner at Northzone."
+      }
+    ],
+    biography: "Hans Otterling is a Founding Partner of Norrsken22. He has been a partner at Northzone since 2006, whose track record includes Spotify and Klarna. Before moving into venture capital he was a serial entrepreneur who founded, scaled and exited three media and technology businesses.",
+    sources: [
+      {
+        label: "Norrsken22 — Team",
+        url: "https://www.norrsken22.com/team"
+      }
+    ]
+  },
+  "natalie-kolbe": {
+    name: "Natalie Kolbe",
+    firm: "Norrsken22",
+    firmSlug: "norrsken22",
+    title: "Managing Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BComm, University of Witwatersrand",
+      "MBA, Wits Business School"
+    ],
+    previousExperience: [
+      "Global Head of Private Equity, Actis"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Natalie Kolbe is the Managing Partner of Norrsken22, responsible for overall management of the fund, based in Johannesburg. She spent 18 years at Actis, most recently as global head of private equity overseeing eight funds across Africa, Latin America, India, China and Southeast Asia with roughly $2.5 billion in assets under management. She is a CFA charterholder.",
+    sources: [
+      {
+        label: "Norrsken22 — Team",
+        url: "https://www.norrsken22.com/team"
+      }
+    ]
+  },
+  "lexi-novitske": {
+    name: "Lexi Novitske",
+    firm: "Norrsken22",
+    firmSlug: "norrsken22",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: [
+      "Fintech"
+    ],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://www.norrsken22.com/team",
+    education: [
+      "BBA, University of Hawaii"
+    ],
+    previousExperience: [
+      "Founder, Acuity Venture Partners",
+      "Founder, Singularity Investments",
+      "Verod Capital",
+      "Small Enterprise Assistance Fund",
+      "Sandler O'Neill Asset Management"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2012",
+        event: "Moved to Nigeria to support growth-stage businesses at Verod Capital."
+      },
+      {
+        year: "2014",
+        event: "Launched Singularity Investments."
+      },
+      {
+        year: "2019",
+        event: "Acquired Singularity Investments' portfolio and launched Acuity Venture Partners."
+      }
+    ],
+    biography: "Lexi Novitske is a General Partner of Norrsken22, based in Lagos, with more than 10 years of investment banking, emerging-market private equity and venture capital experience. She moved to Nigeria in 2012 to support growth-stage businesses at Verod Capital, launched Singularity Investments in 2014 investing in Paystack, Flutterwave and mPharma, and in 2019 acquired the portfolio to launch Acuity Venture Partners. She is a CFA charterholder and Kauffman Fellow.",
+    sources: [
+      {
+        label: "Norrsken22 — Team",
+        url: "https://www.norrsken22.com/team"
+      }
+    ]
+  },
+  "carter-reum": {
+    name: "Carter Reum",
+    firm: "M13",
+    firmSlug: "m13",
+    title: "Co-founder, Managing Partner",
+    joinedYear: 2016,
+    sectors: [
+      "Commerce",
+      "Healthcare"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.m13.co/people/carter-reum",
+    education: [],
+    previousExperience: [
+      "Investment banker, Goldman Sachs",
+      "Co-founder, VEEV Spirits"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "LACMA"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2016",
+        event: "Co-founded M13 with his brother Courtney Reum after building and selling VEEV Spirits."
+      }
+    ],
+    biography: "Carter Reum is M13's co-founder and managing partner. After building and selling VEEV Spirits, he and his brother Courtney co-founded M13 in 2016. Before M13 he was an investment banker at Goldman Sachs and co-authored the book Shortcut Your Startup. He serves on the board of LACMA.",
+    sources: [
+      {
+        label: "M13 — Carter Reum",
+        url: "https://www.m13.co/people/carter-reum"
+      }
+    ]
+  },
+  "courtney-reum": {
+    name: "Courtney Reum",
+    firm: "M13",
+    firmSlug: "m13",
+    title: "Co-founder, Managing Partner",
+    joinedYear: 2016,
+    sectors: [
+      "Healthcare",
+      "Consumer"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.m13.co/people/courtney-reum",
+    education: [],
+    previousExperience: [
+      "Investment banker, Goldman Sachs",
+      "Co-founder, VEEV Spirits"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Arena Club",
+      "Lifeforce",
+      "Thrive Global",
+      "US Soccer Federation and Foundation"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2016",
+        event: "Co-founded M13 with his brother Carter Reum after building and selling VEEV Spirits."
+      }
+    ],
+    biography: "Courtney Reum is M13's co-founder and managing partner. After building and selling VEEV Spirits, he and his brother Carter co-founded M13 in 2016. Before M13 he was an investment banker at Goldman Sachs and co-authored the book Shortcut Your Startup.",
+    sources: [
+      {
+        label: "M13 — Courtney Reum",
+        url: "https://www.m13.co/people/courtney-reum"
+      }
+    ]
+  },
+  "latif-peracha": {
+    name: "Latif Peracha",
+    firm: "M13",
+    firmSlug: "m13",
+    title: "Managing Partner",
+    joinedYear: 2019,
+    sectors: [
+      "Fintech",
+      "Healthcare"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.m13.co/people/latif-peracha",
+    education: [],
+    previousExperience: [
+      "Managing Director, Virgin Group"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2019",
+        event: "Became a partner at M13."
+      }
+    ],
+    biography: "Latif Peracha is a Managing Partner at M13, leading the firm's investing strategy since becoming a partner in 2019. He was previously managing director at Virgin Group, where he led investing in the Americas, including investments in Ring, Slack and Virgin Galactic. A generalist investor, his investments span healthcare, fintech, government and consumer, including OpenFX, Polimorphic and Rho.",
+    sources: [
+      {
+        label: "M13 — Latif Peracha",
+        url: "https://www.m13.co/people/latif-peracha"
+      }
+    ]
+  },
+  "brent-murri": {
+    name: "Brent Murri",
+    firm: "M13",
+    firmSlug: "m13",
+    title: "Partner, Investing",
+    joinedYear: 2023,
+    sectors: [
+      "AI",
+      "Consumer"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.m13.co/people/brent-murri",
+    education: [],
+    previousExperience: [
+      "Battery Ventures",
+      "Samsung NEXT"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2023",
+        event: "Became a partner at M13."
+      }
+    ],
+    biography: "Brent Murri is a Partner at M13, leading early-stage investments in AI apps, commerce and consumer since becoming a partner in 2023. He joined M13 from Battery Ventures, where he focused on growth-stage enterprise software, and before that worked in strategy and business development at Samsung NEXT. His investments include Pietra, Rebuy and Passport.",
+    sources: [
+      {
+        label: "M13 — Brent Murri",
+        url: "https://www.m13.co/people/brent-murri"
+      }
+    ]
+  },
+  "boris-revsin": {
+    name: "Boris Revsin",
+    firm: "Tribe Capital",
+    firmSlug: "tribe-capital",
+    title: "Managing Director",
+    joinedYear: 2022,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "Attended University of Massachusetts, Amherst"
+    ],
+    previousExperience: [
+      "Co-founder, Republic Capital",
+      "Co-founder, Breaktime Media",
+      "Co-founder, VentureApp"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2022",
+        event: "Joined Tribe Capital."
+      }
+    ],
+    biography: "Boris Revsin is a Managing Director at Tribe Capital, helping set the firm's strategy since joining in 2022. Before Tribe he co-founded Republic Capital, growing it from inception to over $1 billion in assets under management, and prior to that co-founded Breaktime Media and VentureApp. His investments include Polygon, Avalanche, Kraken, Robinhood and Klarna.",
+    sources: [
+      {
+        label: "Tribe Capital — Team",
+        url: "https://tribecap.co/team"
+      }
+    ]
+  },
+  "jonathan-hsu": {
+    name: "Jonathan Hsu",
+    firm: "Tribe Capital",
+    firmSlug: "tribe-capital",
+    title: "Co-founder, Managing Director",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "PhD, Physics, Stanford University"
+    ],
+    previousExperience: [
+      "Partner, Social Capital",
+      "Early data science leader, Facebook",
+      "Co-founder of a social gaming company acquired by Slide"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jonathan Hsu is a co-founder and managing director of Tribe Capital, combining an analytical and quantitative background with an operating history across several companies. Before Tribe Capital he pioneered applying data science to venture capital as a partner at Social Capital. Before entering venture capital he was an early data science leader at Facebook.",
+    sources: [
+      {
+        label: "Tribe Capital — Team",
+        url: "https://tribecap.co/team"
+      }
+    ]
+  },
+  "ted-maidenberg": {
+    name: "Ted Maidenberg",
+    firm: "Tribe Capital",
+    firmSlug: "tribe-capital",
+    title: "Co-founder, Managing Director",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "Washington University in St. Louis"
+    ],
+    previousExperience: [
+      "Co-Founder, Social Capital",
+      "Partner, USVP",
+      "Director, Time Warner Investments"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ted Maidenberg is a co-founder and managing director of Tribe Capital with 16 years of venture experience, including as a co-founder at Social Capital, a partner at USVP and a director at Time Warner Investments. He has managed portfolios through two market downturns, working with companies including Slack, Trunk Club and Saildrone.",
+    sources: [
+      {
+        label: "Tribe Capital — Team",
+        url: "https://tribecap.co/team"
+      }
+    ]
+  },
+  "ali-nahm": {
+    name: "Ali Nahm",
+    firm: "Tribe Capital",
+    firmSlug: "tribe-capital",
+    title: "Partner, Venture",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "A.B./S.M., Computer Science and Applied Mathematics, Harvard University",
+      "Attended Stanford Graduate School of Business"
+    ],
+    previousExperience: [
+      "Machine learning engineer, Airbnb",
+      "Founding engineer and Chief of Staff, Humu",
+      "Researcher, MIT Media Lab"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ali Nahm is a Partner on Tribe Capital's venture team, with a background spanning engineering, product and company building. She previously worked as a machine learning engineer on Airbnb's search ranking team and was a founding engineer and later chief of staff at Humu. Earlier in her career she conducted research at the MIT Media Lab.",
+    sources: [
+      {
+        label: "Tribe Capital — Team",
+        url: "https://tribecap.co/team"
+      }
+    ]
+  },
 };
