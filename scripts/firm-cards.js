@@ -3,6 +3,21 @@
    The main rankings list renderer (renderFirms) and the live
    price-input editing feature on each firm card's holdings table.
    ============================================================ */
+/* An AUM value is usually "<figure> (<qualifier>)". Rendering the whole
+   string in .num sets a sentence in 20px mono, which is what made the
+   NVentures cell 742px wide and blew the page out horizontally.
+
+   Splitting keeps every character of the data - the qualifier moves to
+   a small line underneath instead of being deleted. Values with no
+   parenthetical are returned unchanged. */
+function splitAum(aum) {
+  const raw = String(aum == null ? '' : aum);
+  const m = raw.match(/^([^(]+?)\s*\((.+)\)\s*$/);
+  if (!m) return '<div class="num">' + raw + '</div>';
+  return '<div class="num">' + m[1].trim() + '</div>' +
+         '<div class="qual">' + m[2].trim() + '</div>';
+}
+
 function renderFirms() {
   const container = document.getElementById('firmsContainer');
   const noResults = document.getElementById('noResults');
@@ -46,7 +61,7 @@ function renderFirms() {
           <div class="firm-personality">${computeInvestmentPersonality(firm).sentence}</div>
         </div>
         <div class="firm-aum">
-          <div class="num">${firm.aum}</div>
+          ${splitAum(firm.aum)}
           <div class="lbl">Assets Managed</div>
         </div>
       </div>
