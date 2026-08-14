@@ -204,6 +204,8 @@ function router() {
   // whole time, same root cause as the original homeIntro bug.
   const byTheNumbersEl = document.getElementById('byTheNumbersSection');
   if (byTheNumbersEl) byTheNumbersEl.style.display = isHomepage ? '' : 'none';
+   const powerAlertsEl = document.getElementById('powerAlerts');
+  if (powerAlertsEl) powerAlertsEl.style.display = isAlerts ? '' : 'none';
   document.getElementById('listView').style.display = 'none';
   document.getElementById('detailView').style.display = 'none';
   document.getElementById('compareView').style.display = 'none';
