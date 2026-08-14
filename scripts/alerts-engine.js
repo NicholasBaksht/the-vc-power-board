@@ -33,6 +33,7 @@ const POWER_ALERT_CONFIG = {
   minSectorFirms: 8,           // a sector needs this many firms in the recent cohort
   minCoHolders: 4,             // a ticker needs this many distinct holders
   minPartnerHires: 2,          // a firm needs this many dated hires in the window
+  minSectorPartners: 2,        // partners sharing a published sector focus at one firm
   minFirmTimelineEvents: 3,    // dated milestones in the recent window
 
   // --- team-snapshot diffing ---
@@ -69,7 +70,10 @@ const UNSUPPORTED_ALERTS = {
   // partner_departures is IMPLEMENTED as of the team-snapshot crawler
   // (see snapshot_partner_departure below). It stays listed here until a
   // second capture exists, because one snapshot cannot be diffed.
-  partner_sector_focus: 'partner profiles carry no sector field, so "added N partners focused on robotics" is not derivable.',
+  // partner_sector_focus is IMPLEMENTED as of the partner-sector research
+  // pass (see rule 5b). It fires only for firms that publish a per-person
+  // investment focus; most publish none, and those profiles hold
+  // sectors:null rather than inheriting their firm's sector list.
   coinvestor_network: 'no co-investor field exists.',
   fund_announcements: 'fund closes appear only as free-text timeline prose; parsing amounts would be inference, not data.',
   portfolio_returns: 'only 8 holdings rows carry investedYear plus both prices - not enough to compute returns.'
@@ -351,6 +355,9 @@ function computePowerAlerts(options) {
     const p = PROFILES[k];
     if (!p || !p.firmSlug || p.joinedYear == null) return;
     if (p.joinedYear < cfg.partnerHireWindowFrom) return;
+    // A partner who has left is not part of the firm's current bench.
+    // Counting them would report a hire the firm no longer has.
+    if (p.departedYear != null) return;
     (hiresByFirm[p.firmSlug] = hiresByFirm[p.firmSlug] || []).push({ slug: k, name: p.name, title: p.title, joinedYear: p.joinedYear });
   });
   const firmBySlug = {};
@@ -389,6 +396,80 @@ function computePowerAlerts(options) {
         windowFrom: cfg.partnerHireWindowFrom,
         partners: hires.sort(function (a, b) { return b.joinedYear - a.joinedYear; }),
         note: 'Counted from partnerProfiles joinedYear. Reflects profiles present in the dataset, not a complete hiring record.'
+      }
+    });
+  });
+
+  /* --- 5b. PARTNER SECTOR FOCUS ---
+     "Firm X added N partners focused on robotics." Needs the sectors
+     field on partner profiles, which only exists where a firm actually
+     publishes a per-person specialty - most do not, and those profiles
+     carry sectors:null rather than their firm's overall sector list.
+
+     Only ONE alert per firm, for its strongest shared sector: a firm
+     like Playground Global tags every partner with an investment focus,
+     which would otherwise emit four near-identical alerts and drown out
+     every other firm. */
+  const sectorPartnersByFirm = {};
+  Object.keys(PROFILES).forEach(function (k) {
+    const p = PROFILES[k];
+    if (!p || !p.firmSlug || p.joinedYear == null) return;
+    if (p.joinedYear < cfg.partnerHireWindowFrom) return;
+    if (p.departedYear != null) return;
+    if (!Array.isArray(p.sectors) || !p.sectors.length) return;
+    (sectorPartnersByFirm[p.firmSlug] = sectorPartnersByFirm[p.firmSlug] || [])
+      .push({ slug: k, name: p.name, title: p.title, joinedYear: p.joinedYear, sectors: p.sectors });
+  });
+  Object.keys(sectorPartnersByFirm).forEach(function (slug) {
+    const people = sectorPartnersByFirm[slug];
+    const firm = firmBySlug[slug];
+    if (!firm) return;
+    const bySector = {};
+    people.forEach(function (p) {
+      p.sectors.forEach(function (s) { (bySector[s] = bySector[s] || []).push(p); });
+    });
+    let best = null;
+    Object.keys(bySector).forEach(function (s) {
+      if (bySector[s].length < cfg.minSectorPartners) return;
+      if (!best || bySector[s].length > bySector[best].length) best = s;
+    });
+    if (!best) return;
+    const matched = bySector[best];
+    const latest = Math.max.apply(null, matched.map(function (p) { return p.joinedYear; }));
+    const conf = Math.min(1, matched.length / (cfg.minSectorPartners * 2));
+    alerts.push({
+      id: pa_fingerprint(['partner_sector_focus', slug, best, matched.length, latest]),
+      type: 'partner_sector_focus',
+      firmId: slug,
+      sector: best,
+      subject: firm.name,
+      metric: 'partners with a published focus in this sector who joined in the window',
+      previousValue: null,
+      currentValue: matched.length,
+      absoluteChange: matched.length,
+      percentChange: null,
+      unit: 'partners',
+      period: cfg.partnerHireWindowFrom + '–' + nowYear,
+      direction: 'up',
+      generatedAt: generatedAt,
+      confidence: pa_round(conf, 3),
+      score: pa_score({
+        magnitude: matched.length, magnitudeCeiling: 4,
+        sample: matched.length, sampleCeiling: 8,
+        confidence: conf,
+        recency: Math.max(0, Math.min(1, 1 - (nowYear - latest) / 12))
+      }),
+      evidence: {
+        firm: firm.name,
+        sector: best,
+        windowFrom: cfg.partnerHireWindowFrom,
+        partners: matched.map(function (p) {
+          return { name: p.name, title: p.title, joinedYear: p.joinedYear, sectors: p.sectors.join(', ') };
+        }).sort(function (a, b) { return b.joinedYear - a.joinedYear; }),
+        otherSectorsAtFirm: Object.keys(bySector).filter(function (s) { return s !== best; }),
+        note: 'Counts only partners whose own firm publishes a per-person investment focus. ' +
+              'A firm\'s overall sector list is never used as a stand-in, so firms that do ' +
+              'not publish individual specialisms are absent here rather than assumed generalist.'
       }
     });
   });
@@ -728,6 +809,11 @@ function computePowerAlerts(options) {
       a.title = a.currentValue + ' firms recorded a fund close in ' + a.subject;
       a.description = a.currentValue + ' of the ' + Object.keys(FUNDS || {}).length +
         ' firms with fund history on file closed at least one vehicle in ' + a.subject + '.';
+    } else if (a.type === 'partner_sector_focus') {
+      a.title = a.subject + ' has ' + a.currentValue + ' partners focused on ' + a.sector;
+      a.description = a.currentValue + ' partners at ' + a.subject +
+        ' publish an investment focus that includes ' + a.sector +
+        ', among those who joined since ' + cfg.partnerHireWindowFrom + '.';
     } else if (a.type === 'firm_milestone_activity') {
       a.title = a.subject + ' recorded ' + a.currentValue + ' milestones since ' + cfg.timelineWindowFrom;
       a.description = a.subject + ' has ' + a.currentValue + ' dated timeline events from ' +
