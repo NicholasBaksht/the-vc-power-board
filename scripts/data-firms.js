@@ -264,14 +264,10 @@ holdings: []
   holdings: [
     { name: "Airbnb", ticker: "ABNB", historicalPrice: null, price: 185.13 },
     { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: 153.9 },
-,
-    ame: "Instacart", ticker: "CART", historicalPrice: null, price: 50.08 },
- ,
-    me: "Block", ticker: "XYZ", historicalPrice: null, price: 83.09 },
-  ,
-    e: "Pinterest", ticker: "PINS", historicalPrice: null, price: 23.32 },
-   ,
-    : "Roblox", ticker: "RBLX", historicalPrice: null, price: 37.95 }
+    { name: "Instacart", ticker: "CART", historicalPrice: null, price: 50.08 },
+    { name: "Block", ticker: "XYZ", historicalPrice: null, price: 83.09 },
+    { name: "Pinterest", ticker: "PINS", historicalPrice: null, price: 23.32 },
+    { name: "Roblox", ticker: "RBLX", historicalPrice: null, price: 37.95 }
   
   ]
 },
@@ -1713,8 +1709,8 @@ holdings: []
     holdings: [
       { name: "Box", ticker: "BOX", historicalPrice: null, price: 33.64 },
       { name: "Redfin", ticker: "RDFN", historicalPrice: null, price: null },
-       { name: "Twilio", ticker: "TWLO", historicalPrice: null, price: 249.42 },,
-      ame: "Doximity", ticker: "DOCS", historicalPrice: null, price: 26.59 }
+       { name: "Twilio", ticker: "TWLO", historicalPrice: null, price: 249.42 },
+      { name: "Doximity", ticker: "DOCS", historicalPrice: null, price: 26.59 }
   
     ]
   },
@@ -2098,8 +2094,7 @@ holdings: []
     holdings: [
  { name: "Wayfair", ticker: "W", investedYear: 2011, historicalPrice: null, price: 101.13 },
 { name: "Nutanix", ticker: "NTNX", investedYear: 2012, historicalPrice: null, price: 67.95 },
-,
- ame: "Guidewire", ticker: "GWRE", investedYear: 2007, historicalPrice: null, price: 182.62 }
+ { name: "Guidewire", ticker: "GWRE", investedYear: 2007, historicalPrice: null, price: 182.62 }
   
     ]
   },
@@ -2130,11 +2125,9 @@ holdings: []
     holdings: [
       { name: "Palantir", ticker: "PLTR", historicalPrice: null, price: 179.01 },
       { name: "Oscar Health", ticker: "OSCR", historicalPrice: null, price: 30.78 },
-,
       { name: "Wish", ticker: "WISH", historicalPrice: null, price: null },
-      ame: "Blend", ticker: "BLND", historicalPrice: null, price: 1.55 },
- ,
-      ame: "Joby Aviation", ticker: "JOBY", historicalPrice: null, price: 8.26 }
+      { name: "Blend", ticker: "BLND", historicalPrice: null, price: 1.55 },
+      { name: "Joby Aviation", ticker: "JOBY", historicalPrice: null, price: 8.26 }
   
     ]
   },
@@ -2264,7 +2257,7 @@ holdings: []
     ],
     holdings: [
       { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: 153.9 },
-       { name: "PagerDuty", ticker: "PD", historicalPrice: null, price: 12.09 },,
+       { name: "PagerDuty", ticker: "PD", historicalPrice: null, price: 12.09 },
       { name: "BuzzFeed", ticker: "BZFD", historicalPrice: null, price: 1.14 }
  
     ]
@@ -2374,7 +2367,7 @@ holdings: []
     ],
     holdings: [
       { name: "LendingClub", ticker: "LC", historicalPrice: null, price: 19.21 },
-       { name: "Doximity", ticker: "DOCS", historicalPrice: null, price: 26.59 },,
+       { name: "Doximity", ticker: "DOCS", historicalPrice: null, price: 26.59 },
       { name: "Luminar Technologies", ticker: "LAZR", historicalPrice: null, price: 46.44 }
  
     ]
@@ -2582,8 +2575,7 @@ holdings: []
     holdings: [
       { name: "DoorDash", ticker: "DASH", historicalPrice: null, price: 216.26 },
       { name: "Guardant Health", ticker: "GH", historicalPrice: null, price: 159.54 },
-,
-      me: "Dropbox", ticker: "DBX", historicalPrice: null, price: 35.93 }
+      { name: "Dropbox", ticker: "DBX", historicalPrice: null, price: 35.93 }
    
     ]
   },
@@ -2666,7 +2658,7 @@ holdings: []
     ],
     holdings: [
       { name: "Bill.com", ticker: "BILL", historicalPrice: null, price: 51.31 },
-       { name: "JFrog", ticker: "FROG", historicalPrice: null, price: 95.15 },,
+       { name: "JFrog", ticker: "FROG", historicalPrice: null, price: 95.15 },
       { name: "Root Insurance", ticker: "ROOT", historicalPrice: null, price: 49.83 }
  
     ]
@@ -3632,8 +3624,8 @@ holdings: []
     ],
     holdings: [
       { name: "Planet Labs", ticker: "PL", historicalPrice: null, price: 24.75 },
-       { name: "Rocket Lab", ticker: "RKLB", historicalPrice: null, price: 80.1 },,
-       { name: "Recursion", ticker: "RXRX", historicalPrice: null, price: 3.31 },,
+       { name: "Rocket Lab", ticker: "RKLB", historicalPrice: null, price: 80.1 },
+       { name: "Recursion", ticker: "RXRX", historicalPrice: null, price: 3.31 },
        { name: "SentinelOne", ticker: "S", historicalPrice: null, price: 23.84 }
 
     ]
@@ -3845,8 +3837,7 @@ holdings: []
     holdings: [
       { name: "Check Point Software", ticker: "CHKP", historicalPrice: null, price: 134.23 },
       { name: "Ross Stores", ticker: "ROST", historicalPrice: null, price: 244.96 },
-,
-      me: "Box", ticker: "BOX", historicalPrice: null, price: 33.64 }
+      { name: "Box", ticker: "BOX", historicalPrice: null, price: 33.64 }
    
     ]
   },
@@ -3905,7 +3896,7 @@ holdings: []
     ],
     holdings: [
       { name: "Bark", ticker: "BARK", historicalPrice: null, price: 10.44 },
-       { name: "BlackSky", ticker: "BKSY", historicalPrice: null, price: 30.99 },,
+       { name: "BlackSky", ticker: "BKSY", historicalPrice: null, price: 30.99 },
       { name: "BuzzFeed", ticker: "BZFD", historicalPrice: null, price: 1.14 }
  
     ]
@@ -3936,8 +3927,7 @@ holdings: []
     holdings: [
       { name: "Tesla", ticker: "TSLA", historicalPrice: null, price: 339.96 },
       { name: "Baidu", ticker: "BIDU", historicalPrice: null, price: 104.68 },
-,
-      me: "Coinbase", ticker: "COIN", historicalPrice: null, price: 153.9 }
+      { name: "Coinbase", ticker: "COIN", historicalPrice: null, price: 153.9 }
    
     ]
   },
@@ -3998,8 +3988,7 @@ holdings: []
     holdings: [
       { name: "Zoom", ticker: "ZM", historicalPrice: null, price: 109.84 },
       { name: "Veeva Systems", ticker: "VEEV", historicalPrice: null, price: 252.64 },
-,
-      me: "Box", ticker: "BOX", historicalPrice: null, price: 33.64 }
+      { name: "Box", ticker: "BOX", historicalPrice: null, price: 33.64 }
    
     ]
   },
@@ -4250,7 +4239,7 @@ holdings: []
     holdings: [
       { name: "Zscaler", ticker: "ZS", historicalPrice: 181.66, price: 167.33 },
       { name: "JFrog", ticker: "FROG", historicalPrice: null, price: 95.15 },
-       { name: "MongoDB", ticker: "MDB", historicalPrice: null, price: 472.29 },,
+       { name: "MongoDB", ticker: "MDB", historicalPrice: null, price: 472.29 },
       { name: "DocuSign", ticker: "DOCU", historicalPrice: null, price: 52.91 }
     ]
   },
