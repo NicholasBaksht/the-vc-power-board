@@ -99,8 +99,8 @@ function paEvidenceHtml(a) {
   }
   if (e.holderCount) rows.push(['Holders counted', e.holderCount]);
   if (e.from && e.to) {
-    rows.push([e.from.name, paUsd(e.from.sizeUSD) + '  (' + e.from.vintageYear + ')']);
-    rows.push([e.to.name, paUsd(e.to.sizeUSD) + '  (' + e.to.vintageYear + ')']);
+    rows.push([e.from.displayName || e.from.name || 'Earlier fund', paUsd(e.from.sizeUSD) + '  (' + e.from.vintageYear + ')']);
+    rows.push([e.to.displayName || e.to.name || 'Later fund', paUsd(e.to.sizeUSD) + '  (' + e.to.vintageYear + ')']);
     rows.push(['Funds on record', e.recordedFunds + (e.listComplete ? '' : ' (list known incomplete)')]);
   }
   if (e.coverage) rows.push(['Coverage', e.coverage]);
