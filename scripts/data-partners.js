@@ -263,10 +263,12 @@ const partnerProfiles = {
 },
   "dan-gwak": {
   name: "Dan Gwak",
+    departedYear: 2026,
+    departedNote: "Moved to In-Q-Tel as Chief Investment Officer; absent from Point72's leadership page as checked 2026-08-14.",
   firm: "Point72 Ventures",
   firmSlug: "point72-ventures",
   title: "Managing Partner",
-  joinedYear: null,
+  joinedYear: 2017,
   education: [],
   previousExperience: [
     "Fireteam Leader, United States Marine Corps (Operation Enduring Freedom, Helmand Province)",
@@ -293,10 +295,12 @@ const partnerProfiles = {
 },
   "sri-chandrasekar": {
   name: "Sri Chandrasekar",
+    departedYear: 2025,
+    departedNote: "Left Point72 Ventures (Crunchbase end date Dec 2025); joined AI House as managing director per GeekWire, June 2026. Absent from Point72's leadership page.",
   firm: "Point72 Ventures",
   firmSlug: "point72-ventures",
   title: "Managing Partner",
-  joinedYear: null,
+  joinedYear: 2017,
   education: [],
   previousExperience: [
     "Systems Engineer, BAE Systems (~10 years, military systems design)",
@@ -11749,7 +11753,7 @@ sources: [
     firm: "Forgepoint Capital",
     firmSlug: "forgepoint-capital",
     title: "Managing Director & Partner, Forgepoint Capital International",
-    joinedYear: null,
+    joinedYear: 2024,
     sectors: [
       "Cybersecurity",
       "AI",
@@ -11785,7 +11789,7 @@ sources: [
     firm: "Forgepoint Capital",
     firmSlug: "forgepoint-capital",
     title: "Co-Founder and Senior Advisor",
-    joinedYear: null,
+    joinedYear: 2015,
     sectors: [
       "Cybersecurity"
     ],
@@ -11819,7 +11823,7 @@ sources: [
     firm: "Forgepoint Capital",
     firmSlug: "forgepoint-capital",
     title: "Managing Director",
-    joinedYear: null,
+    joinedYear: 2018,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
@@ -11858,7 +11862,7 @@ sources: [
     firm: "Forgepoint Capital",
     firmSlug: "forgepoint-capital",
     title: "Managing Director",
-    joinedYear: null,
+    joinedYear: 2020,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
@@ -11895,7 +11899,7 @@ sources: [
     firm: "B Capital Group",
     firmSlug: "b-capital-group",
     title: "Co-Founder, Chair and General Partner",
-    joinedYear: null,
+    joinedYear: 2017,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
@@ -11930,7 +11934,7 @@ sources: [
     firm: "B Capital Group",
     firmSlug: "b-capital-group",
     title: "Co-Founder and Co-CEO",
-    joinedYear: null,
+    joinedYear: 2015,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
@@ -11962,7 +11966,7 @@ sources: [
     firm: "B Capital Group",
     firmSlug: "b-capital-group",
     title: "Partner",
-    joinedYear: null,
+    joinedYear: 2015,
     sectors: [
       "Healthcare"
     ],
@@ -12001,7 +12005,7 @@ sources: [
     firm: "B Capital Group",
     firmSlug: "b-capital-group",
     title: "General Partner and Chief AI Officer",
-    joinedYear: null,
+    joinedYear: 2026,
     sectors: [
       "AI"
     ],
@@ -12322,7 +12326,7 @@ sources: [
     firm: "Norrsken22",
     firmSlug: "norrsken22",
     title: "General Partner",
-    joinedYear: null,
+    joinedYear: 2022,
     sectors: [
       "Fintech"
     ],
@@ -12360,7 +12364,7 @@ sources: [
     firm: "Norrsken22",
     firmSlug: "norrsken22",
     title: "Founding Partner",
-    joinedYear: null,
+    joinedYear: 2022,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
@@ -12392,7 +12396,7 @@ sources: [
     firm: "Norrsken22",
     firmSlug: "norrsken22",
     title: "Managing Partner",
-    joinedYear: null,
+    joinedYear: 2022,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
@@ -12421,7 +12425,7 @@ sources: [
     firm: "Norrsken22",
     firmSlug: "norrsken22",
     title: "General Partner",
-    joinedYear: null,
+    joinedYear: 2022,
     sectors: [
       "Fintech"
     ],
@@ -13393,7 +13397,7 @@ sources: [
     firm: "HOF Capital",
     firmSlug: "hof-capital",
     title: "Managing Partner",
-    joinedYear: null,
+    joinedYear: 2016,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
@@ -13419,7 +13423,7 @@ sources: [
     firm: "HOF Capital",
     firmSlug: "hof-capital",
     title: "Partner",
-    joinedYear: null,
+    joinedYear: 2016,
     sectors: [
       "Enterprise Software"
     ],
@@ -14067,7 +14071,7 @@ sources: [
     firm: "Gradient Ventures",
     firmSlug: "gradient-ventures",
     title: "General Partner",
-    joinedYear: null,
+    joinedYear: 2019,
     sectors: [
       "AI"
     ],
@@ -14103,7 +14107,7 @@ sources: [
     firm: "Gradient Ventures",
     firmSlug: "gradient-ventures",
     title: "General Partner",
-    joinedYear: null,
+    joinedYear: 2017,
     sectors: [
       "AI",
       "Fintech",
@@ -14140,7 +14144,7 @@ sources: [
     firm: "Gradient Ventures",
     firmSlug: "gradient-ventures",
     title: "Partner",
-    joinedYear: null,
+    joinedYear: 2024,
     sectors: [
       "AI",
       "Healthcare"
@@ -14207,7 +14211,7 @@ sources: [
     firm: "Multicoin Capital",
     firmSlug: "multicoin-capital",
     title: "Partner, CFO and COO",
-    joinedYear: null,
+    joinedYear: 2017,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
@@ -14268,7 +14272,7 @@ sources: [
     firm: "Multicoin Capital",
     firmSlug: "multicoin-capital",
     title: "General Partner, Co-Head of Venture",
-    joinedYear: null,
+    joinedYear: 2018,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
@@ -14296,7 +14300,7 @@ sources: [
     firm: "Multicoin Capital",
     firmSlug: "multicoin-capital",
     title: "General Partner, Co-Head of Venture",
-    joinedYear: null,
+    joinedYear: 2020,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
@@ -14453,7 +14457,7 @@ sources: [
     firm: "Acrew Capital",
     firmSlug: "acrew-capital",
     title: "Founding Partner",
-    joinedYear: null,
+    joinedYear: 2019,
     sectors: [
       "Fintech"
     ],
@@ -14483,7 +14487,7 @@ sources: [
     firm: "Acrew Capital",
     firmSlug: "acrew-capital",
     title: "Founding Partner",
-    joinedYear: null,
+    joinedYear: 2019,
     sectors: [
       "AI",
       "Cybersecurity"
@@ -14518,7 +14522,7 @@ sources: [
     firm: "Acrew Capital",
     firmSlug: "acrew-capital",
     title: "Founding Partner",
-    joinedYear: null,
+    joinedYear: 2019,
     sectors: [
       "Cybersecurity"
     ],
@@ -14548,7 +14552,7 @@ sources: [
     firm: "Acrew Capital",
     firmSlug: "acrew-capital",
     title: "General Partner",
-    joinedYear: null,
+    joinedYear: 2026,
     sectors: [
       "AI",
       "Enterprise Software"
@@ -14580,7 +14584,7 @@ sources: [
     firm: "Congruent Ventures",
     firmSlug: "congruent-ventures",
     title: "Managing Partner and Co-Founder",
-    joinedYear: null,
+    joinedYear: 2017,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
@@ -14607,7 +14611,7 @@ sources: [
     firm: "Congruent Ventures",
     firmSlug: "congruent-ventures",
     title: "General Partner",
-    joinedYear: null,
+    joinedYear: 2022,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
@@ -14707,7 +14711,7 @@ sources: [
     firm: "Electric Capital",
     firmSlug: "electric-capital",
     title: "General Partner, Co-founder",
-    joinedYear: null,
+    joinedYear: 2018,
     sectors: [
       "AI",
       "Cybersecurity"
@@ -14802,7 +14806,7 @@ sources: [
     firm: "Electric Capital",
     firmSlug: "electric-capital",
     title: "General Partner",
-    joinedYear: null,
+    joinedYear: 2021,
     sectors: null,
     sectorsConfidence: null,
     sectorsSource: null,
