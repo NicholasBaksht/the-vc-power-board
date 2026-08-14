@@ -963,8 +963,8 @@ holdings: []
     thesis: "Tribe Capital was founded in July 2018 by Arjun Sethi, Jonathan Hsu, and Ted Maidenberg, all three departing Social Capital together as part of a broader wave of spinouts following Chamath Palihapitiya's restructuring of that firm. Drawing on Hsu's data-science background from Social Capital's internal analytics team, Tribe built a genuinely quantitative approach to venture investing — using proprietary data models to inform diligence while remaining deeply founder-focused rather than purely algorithmic — investing at seed and early Series A in enterprise SaaS, fintech, crypto, and AI-driven businesses. The firm's first investment was in sFOX in 2018, and it sponsored a SPAC that went public on NASDAQ with $240 million in capital in 2021. Tribe has raised multiple funds since founding, including two roughly $450 million vehicles, reaching $1.9 billion in assets under management.",
     leadership: [
       { name: "Arjun Sethi", role: "Co-Founder & General Partner", profileSlug: "arjun-sethi" },
-      { name: "Jonathan Hsu", role: "Co-Founder & General Partner" },
-      { name: "Ted Maidenberg", role: "Co-Founder & General Partner" }
+      { name: "Jonathan Hsu", role: "Co-Founder & General Partner", profileSlug: "jonathan-hsu" },
+      { name: "Ted Maidenberg", role: "Co-Founder & General Partner", profileSlug: "ted-maidenberg" }
     ],
     timeline: [
       { year: "2018", event: "Arjun Sethi, Jonathan Hsu, and Ted Maidenberg found Tribe Capital in July, all departing Social Capital together." },
@@ -2706,8 +2706,8 @@ holdings: []
     thesis: "B Capital Group was founded in 2015 by Facebook co-founder Eduardo Saverin, former Bain Capital investor Raj Ganguly, and ARPANET pioneer Howard Morgan, built from inception around a genuinely multinational approach rather than a U.S. firm that later expanded abroad. Its defining structural feature is a strategic partnership with Boston Consulting Group, giving portfolio companies direct access to BCG's consulting expertise and global client relationships whenever founders want it. That platform has scaled from a $360 million first fund in 2018 to $9 billion under management today, and the firm's ambitions have grown correspondingly — leading a 2026 investor consortium with CalPERS to acquire Russell Investments, a legacy asset manager overseeing more than $400 billion, shows B Capital moving well beyond traditional venture-stage investing.",
     leadership: [
       { name: "Eduardo Saverin", role: "Co-Founder & Co-CEO", profileSlug: "eduardo-saverin" },
-      { name: "Raj Ganguly", role: "Co-Founder & Co-CEO" },
-      { name: "Howard Morgan", role: "Co-Founder & Chairman" }
+      { name: "Raj Ganguly", role: "Co-Founder & Co-CEO", profileSlug: "raj-ganguly" },
+      { name: "Howard Morgan", role: "Co-Founder & Chairman", profileSlug: "howard-morgan" }
     ],
     timeline: [
       { year: "2015", event: "Eduardo Saverin, Raj Ganguly, and Howard Morgan found B Capital Group." },
@@ -3478,8 +3478,8 @@ holdings: []
     thesis: "Energy Impact Partners was founded in 2015 by Hans Kobler, who spent his earlier career at Bain & Company, then GE — where he pioneered the company's strategic investment model — before founding Digital Power Capital and co-founding ICx Technologies, which he led through a Nasdaq IPO and eventual strategic sale. That operator background shaped EIP's most distinctive structural feature: the fund is a collaborative coalition backed by more than 30 global energy and industrial companies, who invest alongside EIP and give portfolio companies direct commercial access to utilities and industrial buyers that might otherwise take years to reach. The firm's 2017 partnership with industrial cybersecurity company Dragos, made when the category was still nascent, became one of its clearest proof points once Accenture acquired a majority stake in the company at a $3.2 billion valuation, and EIP now manages more than $4.5 billion across the energy transition, smart infrastructure, and climate technology.",
     leadership: [
       { name: "Hans Kobler", role: "Founder & Managing Partner", profileSlug: "hans-kobler" },
-      { name: "Lindsay Luger", role: "Co-Founder & Partner" },
-      { name: "Joshua Feldman", role: "Co-Founder, Partner, General Counsel & COO" }
+      { name: "Lindsay Luger", role: "Co-Founder & Partner", profileSlug: "lindsay-luger" },
+      { name: "Joshua Feldman", role: "Co-Founder, Partner, General Counsel & COO", profileSlug: "joshua-feldman" }
     ],
     timeline: [
       { year: "2015", event: "Hans Kobler founds Energy Impact Partners in New York, backed by a coalition of global energy companies." },
@@ -4751,8 +4751,8 @@ holdings: []
     thesis: "Forgepoint Capital was founded in 2015 by Alberto Yépez and Don Dixon, two Trident Capital colleagues who had already spent years building and investing in cybersecurity companies together, and set out to create one of the first venture funds exclusively dedicated to the category. That focus produced the largest sector-specific investment team in cybersecurity venture capital, backed by a Global Advisory Council of more than 100 industry leaders spanning former entrepreneurs, government officials, and practicing CISOs, CIOs, and CTOs. The firm's roughly $1 billion under management has funded nearly 80 companies across cybersecurity, AI security, and infrastructure software, producing three unicorns, two IPOs, and more than 35 acquisitions — including Attivo Networks, Area 1, and BehavioSec, all led personally by Yépez.",
     leadership: [
       { name: "Alberto Yépez", role: "Co-Founder & Managing Director", profileSlug: "alberto-yepez" },
-      { name: "Don Dixon", role: "Co-Founder & Senior Advisor" },
-      { name: "Damien Henault", role: "Managing Director, Forgepoint Capital International" }
+      { name: "Don Dixon", role: "Co-Founder & Senior Advisor", profileSlug: "don-dixon" },
+      { name: "Damien Henault", role: "Managing Director, Forgepoint Capital International", profileSlug: "damien-henault" }
     ],
     timeline: [
       { year: "2015", event: "Alberto Yépez and Don Dixon co-found Forgepoint Capital in San Mateo." },
@@ -6890,9 +6890,9 @@ holdings: []
     thesis: "Norrsken22 was founded in January 2022 by Niklas Adalberth, the Klarna co-founder behind the Norrsken Foundation, and Hans Otterling, a partner at Northzone, built specifically to close a gap the founders identified in African venture capital: real abundance at pre-seed and seed, but a genuine shortage of growth-stage capital for companies ready to scale past Series A. The firm allocates roughly half its capital to new Series A and B deals and the rest to follow-on investment in later rounds, run by a team with decades of combined experience investing across the continent, including Managing Partner Natalie Kolbe, formerly global head of private equity at Actis. Norrsken22 closed its debut $205 million African Tech Growth Fund in November 2023, above its $200 million target, backed by more than 30 unicorn founders including Flutterwave's Olugbenga Agboola and Skype's Niklas Zennström.",
     leadership: [
       { name: "Niklas Adalberth", role: "Co-Founder", profileSlug: "niklas-adalberth" },
-      { name: "Hans Otterling", role: "Co-Founder" },
-      { name: "Natalie Kolbe", role: "Managing Partner" },
-      { name: "Lexi Novitske", role: "General Partner" }
+      { name: "Hans Otterling", role: "Co-Founder", profileSlug: "hans-otterling" },
+      { name: "Natalie Kolbe", role: "Managing Partner", profileSlug: "natalie-kolbe" },
+      { name: "Lexi Novitske", role: "General Partner", profileSlug: "lexi-novitske" }
     ],
     timeline: [
       { year: "2022", event: "Niklas Adalberth and Hans Otterling found Norrsken22 in Kigali, Rwanda, in January." },
@@ -7563,11 +7563,11 @@ holdings: []
     leadership: [
       {
         name: "Carter Reum",
-        role: "Co-Founder"
+        role: "Co-Founder", profileSlug: "carter-reum"
       },
       {
         name: "Courtney Reum",
-        role: "Co-Founder"
+        role: "Co-Founder", profileSlug: "courtney-reum"
       },
       {
         name: "Karl Alomar",
