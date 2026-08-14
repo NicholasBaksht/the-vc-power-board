@@ -64,9 +64,11 @@
     margin-top: 6px;
     max-width: 480px;
   }
-  .firm-aum {
+   .firm-aum {
     text-align: right;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    min-width: 0;
+    max-width: 300px;
   }
   .firm-aum .num {
     font-family: var(--mono);
