@@ -557,61 +557,63 @@ function computePowerAlerts(options) {
           .replace(/\s+/g, ' ').trim().toLowerCase();
         (family[key] = family[key] || []).push(f);
       });
-      // Use the series whose most recent fund is newest.
-      let series = null;
-      Object.keys(family).forEach(function (k) {
-        if (family[k].length < 2) return;
-        const last = family[k][family[k].length - 1];
-        if (!series || last.vintageYear > series[series.length - 1].vintageYear) series = family[k];
-      });
-      if (!series) return;
-      const latest = series[series.length - 1];
-      const prev = series[series.length - 2];
-      if (latest.vintageYear === prev.vintageYear) return; // same vintage, not a step
-      // Only compare CONSECUTIVE funds. monashees has Fund I (2011) and
-      // Fund VIII (2018) on record with II-VII missing; "Fund VIII is 4.7x
-      // Fund I" reads as a step between successive funds and is not one.
-      // When both ordinals are known and differ by more than one, the
-      // funds in between are missing and the comparison is withheld.
-      const nA = pa_fundOrdinal(prev.name), nB = pa_fundOrdinal(latest.name);
-      if (nA !== null && nB !== null && Math.abs(nB - nA) > 1) return;
-      const ratio = latest.sizeUSD / prev.sizeUSD;
-      if (ratio < cfg.minFundStepRatio && ratio > 1 / cfg.minFundStepRatio) return;
-      const up = ratio > 1;
-      const lowConf = latest.confidence === 'low' || prev.confidence === 'low';
-      alerts.push({
-        id: pa_fingerprint(['fund_step', slug, prev.name, latest.name, Math.round(ratio * 100)]),
-        type: 'fund_step',
-        firmId: slug,
-        sector: null,
-        subject: firm.name,
-        metric: 'size of the most recent recorded fund against the one before it',
-        previousValue: prev.sizeUSD,
-        currentValue: latest.sizeUSD,
-        absoluteChange: latest.sizeUSD - prev.sizeUSD,
-        percentChange: pa_round((ratio - 1) * 100, 1),
-        unit: 'USD',
-        period: prev.vintageYear + ' to ' + latest.vintageYear,
-        direction: up ? 'up' : 'down',
-        generatedAt: generatedAt,
-        confidence: pa_round(lowConf ? 0.4 : (rec.complete ? 0.9 : 0.65), 3),
-        score: pa_score({
-          magnitude: up ? ratio : 1 / ratio, magnitudeCeiling: 4,
-          sample: usable.length, sampleCeiling: 10,
-          confidence: lowConf ? 0.4 : (rec.complete ? 0.9 : 0.65),
-          recency: Math.max(0, Math.min(1, 1 - (nowYear - latest.vintageYear) / 8))
-        }),
-        evidence: {
-          firm: firm.name,
-          from: { name: prev.name, vintageYear: prev.vintageYear, sizeUSD: prev.sizeUSD, source: prev.source },
-          to: { name: latest.name, vintageYear: latest.vintageYear, sizeUSD: latest.sizeUSD, source: latest.source },
-          recordedFunds: rec.funds.length,
-          listComplete: rec.complete,
-          note: (rec.complete
-            ? 'Compares the two most recent sized, single-vehicle funds on record.'
-            : 'This firm\'s recorded fund list is known to be incomplete, so an intervening fund may exist that is not counted here.') +
-            (lowConf ? ' At least one figure rests on a single secondary source.' : '')
-        }
+      // Check EVERY series with 2+ usable funds, not just whichever is
+      // most recent. A firm running several concurrent fund families
+      // (a16z alone has flagship, growth, crypto, bio-health, American
+      // Dynamism and Games) has a real, comparable step in each one -
+      // picking only the newest family silently discarded the rest.
+      Object.keys(family).forEach(function (seriesKey) {
+        const series = family[seriesKey];
+        if (series.length < 2) return;
+        const latest = series[series.length - 1];
+        const prev = series[series.length - 2];
+        if (latest.vintageYear === prev.vintageYear) return; // same vintage, not a step
+        // Only compare CONSECUTIVE funds. monashees has Fund I (2011) and
+        // Fund VIII (2018) on record with II-VII missing; "Fund VIII is 4.7x
+        // Fund I" reads as a step between successive funds and is not one.
+        // When both ordinals are known and differ by more than one, the
+        // funds in between are missing and the comparison is withheld.
+        const nA = pa_fundOrdinal(prev.name), nB = pa_fundOrdinal(latest.name);
+        if (nA !== null && nB !== null && Math.abs(nB - nA) > 1) return;
+        const ratio = latest.sizeUSD / prev.sizeUSD;
+        if (ratio < cfg.minFundStepRatio && ratio > 1 / cfg.minFundStepRatio) return;
+        const up = ratio > 1;
+        const lowConf = latest.confidence === 'low' || prev.confidence === 'low';
+        alerts.push({
+          id: pa_fingerprint(['fund_step', slug, prev.name, latest.name, Math.round(ratio * 100)]),
+          type: 'fund_step',
+          firmId: slug,
+          sector: null,
+          subject: firm.name,
+          metric: 'size of the most recent recorded fund against the one before it, within the same fund family',
+          previousValue: prev.sizeUSD,
+          currentValue: latest.sizeUSD,
+          absoluteChange: latest.sizeUSD - prev.sizeUSD,
+          percentChange: pa_round((ratio - 1) * 100, 1),
+          unit: 'USD',
+          period: prev.vintageYear + ' to ' + latest.vintageYear,
+          direction: up ? 'up' : 'down',
+          generatedAt: generatedAt,
+          confidence: pa_round(lowConf ? 0.4 : (rec.complete ? 0.9 : 0.65), 3),
+          score: pa_score({
+            magnitude: up ? ratio : 1 / ratio, magnitudeCeiling: 4,
+            sample: usable.length, sampleCeiling: 10,
+            confidence: lowConf ? 0.4 : (rec.complete ? 0.9 : 0.65),
+            recency: Math.max(0, Math.min(1, 1 - (nowYear - latest.vintageYear) / 8))
+          }),
+          evidence: {
+            firm: firm.name,
+            series: seriesKey,
+            from: { name: prev.name, vintageYear: prev.vintageYear, sizeUSD: prev.sizeUSD, source: prev.source },
+            to: { name: latest.name, vintageYear: latest.vintageYear, sizeUSD: latest.sizeUSD, source: latest.source },
+            recordedFunds: rec.funds.length,
+            listComplete: rec.complete,
+            note: (rec.complete
+              ? 'Compares the two most recent sized, single-vehicle funds on record in the "' + seriesKey + '" family.'
+              : 'This firm\'s recorded fund list is known to be incomplete, so an intervening fund in the "' + seriesKey + '" family may exist that is not counted here.') +
+              (lowConf ? ' At least one figure rests on a single secondary source.' : '')
+          }
+        });
       });
     });
 
