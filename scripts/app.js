@@ -192,8 +192,9 @@ function router() {
 // #powerAlerts is an in-page anchor, not a view of its own. It has to
   // count as the homepage: the section lives INSIDE #homeIntro, so any
   // slug failing this test hides the very thing the link points at.
-  const isHomepage = (slug === '' || slug === 'rankings' || slug === 'firmsContainer'
-                      || slug === 'powerAlerts');
+  const powerAlertsEl = document.getElementById('powerAlerts');
+  if (powerAlertsEl) powerAlertsEl.style.display = isAlerts ? '' : 'none';
+  document.getElementById('listView').style.display = 'none';
   const homeIntroEl = document.getElementById('homeIntro');
   if (homeIntroEl) homeIntroEl.style.display = isHomepage ? '' : 'none';
   // "By the Numbers" is homepage-flavored summary content, same
