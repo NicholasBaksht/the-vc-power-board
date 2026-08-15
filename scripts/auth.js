@@ -1,5 +1,5 @@
 /* ============================================================
-   AUTH — Supabase magic-link authentication
+   AUTH — Supabase one-time-code authentication
    ------------------------------------------------------------
    Declares the globals `supabaseClient` and `currentUser`, plus
    the sign-in/sign-out helpers used by the sign-in view, the
@@ -18,6 +18,14 @@
       the keys are wrong, supabaseClient stays null, isSignedIn()
       returns false, and the site behaves exactly as it did
       before accounts existed. Auth is additive, never required.
+
+   3. SIGN-IN IS A 6-DIGIT CODE, not a link. Supabase decides
+      which to send purely from the email template: a template
+      containing {{ .Token }} sends a code, one containing
+      {{ .ConfirmationURL }} sends a link. The code path never
+      leaves the site, so there is no redirect to mishandle.
+      The magic-link handling below is kept anyway so links
+      already sitting in someone's inbox still work.
 
    Load order: after the Supabase CDN script, before shortlist.js
    and app.js.
@@ -52,6 +60,11 @@ const ARRIVED_FROM_MAGIC_LINK = /[?&]code=/.test(window.location.search);
 let supabaseClient = null;
 let currentUser = null;
 let authReady = false;
+
+/* The signed-in user's row from public.profiles, or null if they
+   have not chosen a username yet. Kept separate from currentUser
+   because Supabase owns that object and we do not. */
+let currentProfile = null;
 
 /* Files that need to re-render when sign-in state changes push a
    callback in here rather than importing each other. */
@@ -102,6 +115,8 @@ function initAuth() {
   supabaseClient.auth.onAuthStateChange(function (event, session) {
     currentUser = session ? session.user : null;
     authReady = true;
+    if (!currentUser) currentProfile = null;
+    else fetchProfile().then(notifyAuthListeners);
 
     // Only redirect people who genuinely just arrived from an email
     // link. Setting the hash triggers hashchange, so router() picks
@@ -120,6 +135,7 @@ function initAuth() {
     const session = res && res.data ? res.data.session : null;
     currentUser = session ? session.user : null;
     authReady = true;
+    if (currentUser) return fetchProfile().then(notifyAuthListeners);
     notifyAuthListeners();
   }).catch(function () {
     authReady = true;
@@ -162,16 +178,128 @@ function signInWithEmail(email) {
   });
 }
 
+/* Verifies the 6-digit code from the email. type:'email' covers
+   both a brand-new signup and a returning sign-in, so there is no
+   need to know which one this is. */
+function verifyEmailCode(email, code) {
+  if (!supabaseClient) {
+    return Promise.resolve({ ok: false, error: 'Sign-in is unavailable right now.' });
+  }
+
+  const cleanEmail = (email || '').trim();
+  // Strip spaces and dashes people paste in; only digits are real.
+  const cleanCode = (code || '').replace(/\D/g, '');
+  if (cleanCode.length !== 6) {
+    return Promise.resolve({ ok: false, error: 'Enter the 6-digit code from your email.' });
+  }
+
+  return supabaseClient.auth.verifyOtp({
+    email: cleanEmail,
+    token: cleanCode,
+    type: 'email'
+  }).then(function (res) {
+    if (res.error) {
+      // Supabase says "Token has expired or is invalid" for both a
+      // wrong code and an expired one. Do not guess which.
+      return { ok: false, error: res.error.message };
+    }
+    currentUser = res.data && res.data.user ? res.data.user : currentUser;
+    return fetchProfile().then(function () {
+      notifyAuthListeners();
+      return { ok: true };
+    });
+  }).catch(function (e) {
+    return { ok: false, error: e && e.message ? e.message : 'Could not verify that code.' };
+  });
+}
+
+/* ---------- PROFILE / USERNAME ---------- */
+
+/* Reads the signed-in user's own profile row. Returns null rather
+   than throwing when the table does not exist yet, so the site
+   keeps working before the SQL migration is applied. */
+function fetchProfile() {
+  if (!supabaseClient || !currentUser) {
+    currentProfile = null;
+    return Promise.resolve(null);
+  }
+  return supabaseClient
+    .from('profiles')
+    .select('username')
+    .eq('id', currentUser.id)
+    .maybeSingle()
+    .then(function (res) {
+      currentProfile = (res && res.data) ? res.data : null;
+      return currentProfile;
+    })
+    .catch(function () {
+      currentProfile = null;
+      return null;
+    });
+}
+
+function getUsername() {
+  return currentProfile ? currentProfile.username : null;
+}
+
+function hasUsername() {
+  return !!(currentProfile && currentProfile.username);
+}
+
+/* Claims or changes a username. Uniqueness is enforced by the
+   UNIQUE constraint in the database, not by a lookup here - a
+   check-then-insert would race, and reading other people's rows
+   would mean loosening row level security for no good reason. */
+function saveUsername(name) {
+  if (!supabaseClient || !currentUser) {
+    return Promise.resolve({ ok: false, error: 'You are not signed in.' });
+  }
+
+  const clean = (name || '').trim();
+  if (!/^[A-Za-z0-9_]{3,20}$/.test(clean)) {
+    return Promise.resolve({
+      ok: false,
+      error: 'Usernames are 3-20 characters: letters, numbers and underscores only.'
+    });
+  }
+
+  return supabaseClient
+    .from('profiles')
+    .upsert({ id: currentUser.id, username: clean }, { onConflict: 'id' })
+    .select('username')
+    .single()
+    .then(function (res) {
+      if (res.error) {
+        const raw = res.error.message || '';
+        if (/duplicate key|unique constraint/i.test(raw)) {
+          return { ok: false, error: 'That username is already taken.' };
+        }
+        if (/violates check constraint/i.test(raw)) {
+          return { ok: false, error: 'Usernames are 3-20 characters: letters, numbers and underscores only.' };
+        }
+        return { ok: false, error: raw || 'Could not save that username.' };
+      }
+      currentProfile = res.data;
+      notifyAuthListeners();
+      return { ok: true };
+    })
+    .catch(function (e) {
+      return { ok: false, error: e && e.message ? e.message : 'Could not save that username.' };
+    });
+}
+
 function signOut() {
   if (!supabaseClient) return Promise.resolve({ ok: true });
 
   return supabaseClient.auth.signOut().then(function (res) {
     currentUser = null;
+    currentProfile = null;
     notifyAuthListeners();
     if (res && res.error) return { ok: false, error: res.error.message };
     return { ok: true };
   }).catch(function (e) {
     currentUser = null;
+    currentProfile = null;
     notifyAuthListeners();
     return { ok: false, error: e && e.message ? e.message : 'Sign out failed.' };
   });
