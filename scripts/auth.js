@@ -189,8 +189,11 @@ function verifyEmailCode(email, code) {
   const cleanEmail = (email || '').trim();
   // Strip spaces and dashes people paste in; only digits are real.
   const cleanCode = (code || '').replace(/\D/g, '');
-  if (cleanCode.length !== 6) {
-    return Promise.resolve({ ok: false, error: 'Enter the 6-digit code from your email.' });
+  // Supabase's OTP length is a project setting, adjustable from 6 to 10.
+  // Hard-coding 6 here silently breaks sign-in the moment that setting
+  // changes, so accept the whole supported range instead.
+  if (cleanCode.length < 6 || cleanCode.length > 10) {
+    return Promise.resolve({ ok: false, error: 'Enter the code from your email.' });
   }
 
   return supabaseClient.auth.verifyOtp({
