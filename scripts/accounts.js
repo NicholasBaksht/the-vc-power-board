@@ -42,7 +42,27 @@ function authUnavailableMarkup() {
     </div>`;
 }
 
-/* ---------- SIGN IN ---------- */
+/* ---------- SIGN IN ----------
+   Three steps in one view, swapped by re-rendering rather than by
+   routing, so a half-finished sign-in can never be deep-linked to
+   or restored by the back button:
+
+     1. email     ask for the address, send a 6-digit code
+     2. code      verify it; this is what creates the session
+     3. username  only if the account has not claimed one yet
+*/
+function signinShell(inner) {
+  return `
+    <div class="acct-card">
+      <div class="acct-kicker">The VC Power Board</div>
+      ${inner}
+      <div class="acct-note">
+        <p><strong>An account only does one thing:</strong> it saves your Shortlist so it follows you between devices instead of living in one browser.</p>
+        <p>Everything else on the board — every firm, partner, ranking and score — is public and needs no account. Your email is never sold, shared, or used for marketing. See the <a href="privacy/">Privacy Policy</a>.</p>
+      </div>
+    </div>`;
+}
+
 function renderSignIn() {
   const el = document.getElementById('signinView');
   if (!el) return;
@@ -53,7 +73,13 @@ function renderSignIn() {
     return;
   }
 
+  // Already signed in but never picked a username - finish that
+  // rather than showing "you're already signed in" and stranding them.
   if (typeof isSignedIn === 'function' && isSignedIn()) {
+    if (typeof hasUsername === 'function' && !hasUsername()) {
+      renderUsernameStep(el);
+      return;
+    }
     el.innerHTML = `
       <div class="acct-card">
         <h1 class="acct-title">You're already signed in</h1>
@@ -63,26 +89,24 @@ function renderSignIn() {
     return;
   }
 
-  el.innerHTML = `
-    <div class="acct-card">
-      <div class="acct-kicker">The VC Power Board</div>
-      <h1 class="acct-title">Sign in</h1>
-      <p class="acct-lead">Enter your email and we'll send you a one-time sign-in link. There is no password to create or remember.</p>
+  renderEmailStep(el);
+}
 
-      <form id="signinForm" class="acct-form" novalidate>
-        <label class="acct-label" for="signinEmail">Email address</label>
-        <input class="acct-input" type="email" id="signinEmail" name="email"
-               autocomplete="email" placeholder="you@firm.com" required>
-        <button class="acct-btn acct-btn-primary" type="submit" id="signinSubmit">Email me a link</button>
-      </form>
+/* Step 1 - email */
+function renderEmailStep(el) {
+  el.innerHTML = signinShell(`
+    <h1 class="acct-title">Sign in</h1>
+    <p class="acct-lead">Enter your email and we'll send you a 6-digit code. There is no password to create or remember.</p>
 
-      <div class="acct-status" id="signinStatus" role="status" aria-live="polite"></div>
+    <form id="signinForm" class="acct-form" novalidate>
+      <label class="acct-label" for="signinEmail">Email address</label>
+      <input class="acct-input" type="email" id="signinEmail" name="email"
+             autocomplete="email" placeholder="you@firm.com" required>
+      <button class="acct-btn acct-btn-primary" type="submit" id="signinSubmit">Send my code</button>
+    </form>
 
-      <div class="acct-note">
-        <p><strong>An account only does one thing:</strong> it saves your Shortlist so it follows you between devices instead of living in one browser.</p>
-        <p>Everything else on the board — every firm, partner, ranking and score — is public and needs no account. Your email is never sold, shared, or used for marketing. See the <a href="privacy/">Privacy Policy</a>.</p>
-      </div>
-    </div>`;
+    <div class="acct-status" id="signinStatus" role="status" aria-live="polite"></div>
+  `);
 
   const form = document.getElementById('signinForm');
   const status = document.getElementById('signinStatus');
@@ -92,7 +116,7 @@ function renderSignIn() {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     const input = document.getElementById('signinEmail');
-    const email = input ? input.value : '';
+    const email = input ? input.value.trim() : '';
 
     button.disabled = true;
     button.textContent = 'Sending…';
@@ -101,17 +125,134 @@ function renderSignIn() {
 
     signInWithEmail(email).then(function (res) {
       button.disabled = false;
-      button.textContent = 'Email me a link';
+      button.textContent = 'Send my code';
 
       if (res.ok) {
-        status.className = 'acct-status acct-status-ok';
-        // Deliberately does not confirm whether the address exists.
-        status.textContent = 'Check your inbox. If that address is valid, a sign-in link is on its way. The link expires shortly and can only be used once.';
-        form.style.display = 'none';
+        renderCodeStep(el, email);
       } else {
         status.className = 'acct-status acct-status-err';
         status.textContent = res.error;
       }
+    });
+  });
+}
+
+/* Step 2 - code */
+function renderCodeStep(el, email) {
+  el.innerHTML = signinShell(`
+    <h1 class="acct-title">Enter your code</h1>
+    <p class="acct-lead">We sent a 6-digit code to <span class="acct-email">${email}</span>. It expires shortly and can only be used once.</p>
+
+    <form id="codeForm" class="acct-form" novalidate>
+      <label class="acct-label" for="signinCode">6-digit code</label>
+      <input class="acct-input" type="text" id="signinCode" name="code"
+             inputmode="numeric" autocomplete="one-time-code" maxlength="6"
+             placeholder="123456" required>
+      <button class="acct-btn acct-btn-primary" type="submit" id="codeSubmit">Verify code</button>
+    </form>
+
+    <div class="acct-status" id="codeStatus" role="status" aria-live="polite"></div>
+
+    <p class="acct-lead">
+      <a href="#" id="codeResend">Send a new code</a> &middot;
+      <a href="#" id="codeBack">Use a different email</a>
+    </p>
+  `);
+
+  const form = document.getElementById('codeForm');
+  const status = document.getElementById('codeStatus');
+  const button = document.getElementById('codeSubmit');
+  const input = document.getElementById('signinCode');
+  if (input) input.focus();
+
+  // Digits only, so a pasted "123 456" still verifies.
+  if (input) {
+    input.addEventListener('input', function () {
+      const cleaned = input.value.replace(/\D/g, '').slice(0, 6);
+      if (cleaned !== input.value) input.value = cleaned;
+    });
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    button.disabled = true;
+    button.textContent = 'Verifying…';
+    status.className = 'acct-status';
+    status.textContent = '';
+
+    verifyEmailCode(email, input ? input.value : '').then(function (res) {
+      button.disabled = false;
+      button.textContent = 'Verify code';
+
+      if (!res.ok) {
+        status.className = 'acct-status acct-status-err';
+        status.textContent = res.error;
+        return;
+      }
+      // Signed in. New accounts pick a username; returning ones go straight through.
+      if (typeof hasUsername === 'function' && !hasUsername()) {
+        renderUsernameStep(el);
+      } else {
+        window.location.hash = '#account';
+      }
+    });
+  });
+
+  document.getElementById('codeResend').addEventListener('click', function (e) {
+    e.preventDefault();
+    status.className = 'acct-status';
+    status.textContent = 'Sending a new code…';
+    signInWithEmail(email).then(function (res) {
+      status.className = 'acct-status ' + (res.ok ? 'acct-status-ok' : 'acct-status-err');
+      status.textContent = res.ok ? 'A new code is on its way.' : res.error;
+    });
+  });
+
+  document.getElementById('codeBack').addEventListener('click', function (e) {
+    e.preventDefault();
+    renderEmailStep(el);
+  });
+}
+
+/* Step 3 - username */
+function renderUsernameStep(el) {
+  el.innerHTML = signinShell(`
+    <h1 class="acct-title">Choose a username</h1>
+    <p class="acct-lead">This is the name shown on your account. 3-20 characters: letters, numbers and underscores.</p>
+
+    <form id="usernameForm" class="acct-form" novalidate>
+      <label class="acct-label" for="usernameInput">Username</label>
+      <input class="acct-input" type="text" id="usernameInput" name="username"
+             autocomplete="username" maxlength="20" placeholder="powerboard_pete" required>
+      <button class="acct-btn acct-btn-primary" type="submit" id="usernameSubmit">Claim it</button>
+    </form>
+
+    <div class="acct-status" id="usernameStatus" role="status" aria-live="polite"></div>
+  `);
+
+  const form = document.getElementById('usernameForm');
+  const status = document.getElementById('usernameStatus');
+  const button = document.getElementById('usernameSubmit');
+  const input = document.getElementById('usernameInput');
+  if (input) input.focus();
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    button.disabled = true;
+    button.textContent = 'Saving…';
+    status.className = 'acct-status';
+    status.textContent = '';
+
+    saveUsername(input ? input.value : '').then(function (res) {
+      button.disabled = false;
+      button.textContent = 'Claim it';
+
+      if (!res.ok) {
+        status.className = 'acct-status acct-status-err';
+        status.textContent = res.error;
+        return;
+      }
+      window.location.hash = '#account';
     });
   });
 }
