@@ -289,12 +289,25 @@ function renderAccount() {
     ? new Date(currentUser.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
     : '—';
 
+  // The username is the account's public-facing name, so it leads;
+  // the email drops to a metadata row. Falls back to the email when
+  // no username exists yet (an account created before usernames).
+  const uname = (typeof getUsername === 'function' && getUsername()) ? getUsername() : null;
+
   el.innerHTML = `
     <div class="acct-card">
       <div class="acct-kicker">Your account</div>
-      <h1 class="acct-title">${getUserEmail()}</h1>
+      <h1 class="acct-title">${uname ? '@' + uname : getUserEmail()}</h1>
 
       <div class="acct-meta">
+        <div class="acct-meta-item">
+          <span class="acct-meta-label">Username</span>
+          <span class="acct-meta-value">${uname ? '@' + uname : '<a href="#signin">Choose one</a>'}</span>
+        </div>
+        <div class="acct-meta-item">
+          <span class="acct-meta-label">Email</span>
+          <span class="acct-meta-value">${getUserEmail()}</span>
+        </div>
         <div class="acct-meta-item">
           <span class="acct-meta-label">Member since</span>
           <span class="acct-meta-value">${created}</span>
