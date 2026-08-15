@@ -18,72 +18,71 @@ function splitAum(aum) {
          '<div class="qual">' + m[2].trim() + '</div>';
 }
 
+/* Builds one tile. The whole card links to the firm profile, except
+   the Save / Compare controls, which sit OUTSIDE the anchor - a
+   <button> nested inside an <a> is invalid HTML and swallows clicks. */
+function firmTileHtml(firm) {
+  const logo = (typeof FIRM_LOGOS !== 'undefined' && FIRM_LOGOS) ? FIRM_LOGOS[firm.slug] : null;
+  let art;
+  if (logo) {
+    // darkInk logos get a light chip; without it they vanish into the
+    // tile. 133 of 273 need this, so it is the common path, not an edge.
+    const chip = logo[1] ? ' is-dark-ink' : '';
+    art = '<div class="firm-tile-art' + chip + '">' +
+            '<img src="assets/logos/' + firm.slug + '.' + logo[0] + '" alt="" loading="lazy" decoding="async">' +
+          '</div>';
+  } else {
+    // No logo published by this firm. A wordmark reads as designed;
+    // an empty box reads as broken.
+    art = '<div class="firm-tile-art firm-tile-art-mark">' +
+            '<span class="firm-tile-mark">' + (firm.short || firm.name) + '</span>' +
+          '</div>';
+  }
+
+  const saved = getShortlist().has(firm.slug);
+  return '<article class="firm-tile" data-slug="' + firm.slug + '">' +
+    '<a class="firm-tile-link" href="#' + firm.slug + '">' +
+      art +
+      '<span class="firm-tile-rank">' + String(firm.rank).padStart(2, '0') + '</span>' +
+      '<div class="firm-tile-body">' +
+        '<div class="firm-tile-name">' + firm.name + '</div>' +
+        '<div class="firm-tile-meta">' + splitAumShort(firm.aum) + ' &middot; ' + firm.hq + '</div>' +
+      '</div>' +
+    '</a>' +
+    '<div class="firm-tile-actions">' +
+      '<button class="shortlist-btn' + (saved ? ' saved' : '') + '" data-slug="' + firm.slug + '" ' +
+              'title="' + (saved ? 'Saved to shortlist' : 'Save to shortlist') + '">' +
+        (saved ? '\u2605' : '\u2606') +
+      '</button>' +
+      '<label class="compare-check">' +
+        '<input type="checkbox" class="compare-checkbox" data-slug="' + firm.slug + '"' +
+          (compareSet.has(firm.slug) ? ' checked' : '') + '> Compare' +
+      '</label>' +
+    '</div>' +
+  '</article>';
+}
+
+/* The tile shows only the headline figure. The full AUM string, with
+   its qualifier, still appears in full on the firm profile. */
+function splitAumShort(aum) {
+  const raw = String(aum == null ? '' : aum);
+  const m = raw.match(/^([^(]+?)\s*\(.+\)\s*$/);
+  const head = (m ? m[1] : raw).trim();
+  return head.length > 26 ? head.slice(0, 25) + '\u2026' : head;
+}
+
 function renderFirms() {
   const container = document.getElementById('firmsContainer');
   const noResults = document.getElementById('noResults');
-  container.innerHTML = '';
 
   scrollToResultsIfNeeded();
 
   const visibleFirms = firms.filter(f => matchesFilter(f) && matchesSearch(f));
-
   noResults.style.display = visibleFirms.length === 0 ? 'block' : 'none';
 
-  visibleFirms.forEach(firm => {
-    const card = document.createElement('div');
-    card.className = 'firm';
-
-    const holdingsHTML = firm.holdings.map(h => {
-      const val = h.price !== null ? h.price.toFixed(2) : '';
-      const placeholderCls = h.price === null ? 'placeholder-empty' : '';
-      return `
-        <div class="holding-row">
-          <div class="holding-name">${h.name}</div>
-          <div class="holding-ticker">${h.ticker}</div>
-          <div class="price-input-wrap">
-            <span class="dollar">$</span>
-            <input class="price-input ${placeholderCls}" type="text" inputmode="decimal"
-                   value="${val}" placeholder="type price"
-                   data-ticker="${h.ticker}">
-          </div>
-          <div class="price-hint">per share</div>
-          ${buildReturnBadge(h)}
-          <a href="https://finance.yahoo.com/quote/${h.ticker}" target="_blank" rel="noopener noreferrer" class="source-link-small">Verify Price ↗</a>
-        </div>`;
-    }).join('');
-
-    card.innerHTML = `
-      <div class="firm-head">
-        <div>
-      <div class="firm-rank">NO. ${String(firm.rank).padStart(2, '0')} <span class="power-score">· POWER SCORE™ ${computePowerScore(firm)}</span></div>
-                          <div class="firm-name">${firm.website ? `<a href="${firm.website}" target="_blank" rel="noopener noreferrer" class="firm-link">${firm.name} ↗</a>` : firm.name}</div>
-        <div class="firm-meta">Founded ${firm.founded} · ${firm.hq}</div>
-          <div class="firm-personality">${computeInvestmentPersonality(firm).sentence}</div>
-        </div>
-        <div class="firm-aum">
-          ${splitAum(firm.aum)}
-          <div class="lbl">Assets Managed</div>
-        </div>
-      </div>
-      <div class="firm-thesis">${firm.thesis}</div>
-      <div class="holdings">
-        <div class="holdings-label">Notable Public Portfolio Companies</div>
-        ${holdingsHTML}
-      </div>
-    <div class="card-footer">
-        <a href="#${firm.slug}" class="firm-page-link">View Firm Page →</a>
-        ${firm.seoPage ? `<a href="${firm.seoPage}" class="seo-page-link">Standalone Profile ↗</a>` : ''}
-        <button class="shortlist-btn ${getShortlist().has(firm.slug) ? 'saved' : ''}" data-slug="${firm.slug}">
-          ${getShortlist().has(firm.slug) ? '★ Saved' : '☆ Save'}
-        </button>
-        <label class="compare-check">
-          <input type="checkbox" class="compare-checkbox" data-slug="${firm.slug}" ${compareSet.has(firm.slug) ? 'checked' : ''}>
-          Compare
-        </label>
-      </div>
-    `;
-    container.appendChild(card);
-  });
+  // One innerHTML write rather than 344 appendChild calls.
+  container.className = 'firm-tile-grid';
+  container.innerHTML = visibleFirms.map(firmTileHtml).join('');
 
   buildTicker();
 }
