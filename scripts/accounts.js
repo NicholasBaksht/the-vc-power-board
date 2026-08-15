@@ -47,7 +47,7 @@ function authUnavailableMarkup() {
    routing, so a half-finished sign-in can never be deep-linked to
    or restored by the back button:
 
-     1. email     ask for the address, send a 6-digit code
+     1. email     ask for the address, send a one-time code
      2. code      verify it; this is what creates the session
      3. username  only if the account has not claimed one yet
 */
@@ -96,7 +96,7 @@ function renderSignIn() {
 function renderEmailStep(el) {
   el.innerHTML = signinShell(`
     <h1 class="acct-title">Sign in</h1>
-    <p class="acct-lead">Enter your email and we'll send you a 6-digit code. There is no password to create or remember.</p>
+    <p class="acct-lead">Enter your email and we'll send you a one-time code. There is no password to create or remember.</p>
 
     <form id="signinForm" class="acct-form" novalidate>
       <label class="acct-label" for="signinEmail">Email address</label>
@@ -141,12 +141,12 @@ function renderEmailStep(el) {
 function renderCodeStep(el, email) {
   el.innerHTML = signinShell(`
     <h1 class="acct-title">Enter your code</h1>
-    <p class="acct-lead">We sent a 6-digit code to <span class="acct-email">${email}</span>. It expires shortly and can only be used once.</p>
+    <p class="acct-lead">We sent a code to <span class="acct-email">${email}</span>. It expires shortly and can only be used once.</p>
 
     <form id="codeForm" class="acct-form" novalidate>
-      <label class="acct-label" for="signinCode">6-digit code</label>
+      <label class="acct-label" for="signinCode">Verification code</label>
       <input class="acct-input" type="text" id="signinCode" name="code"
-             inputmode="numeric" autocomplete="one-time-code" maxlength="6"
+             inputmode="numeric" autocomplete="one-time-code" maxlength="10"
              placeholder="123456" required>
       <button class="acct-btn acct-btn-primary" type="submit" id="codeSubmit">Verify code</button>
     </form>
@@ -168,7 +168,7 @@ function renderCodeStep(el, email) {
   // Digits only, so a pasted "123 456" still verifies.
   if (input) {
     input.addEventListener('input', function () {
-      const cleaned = input.value.replace(/\D/g, '').slice(0, 6);
+      const cleaned = input.value.replace(/\D/g, '').slice(0, 10);
       if (cleaned !== input.value) input.value = cleaned;
     });
   }
