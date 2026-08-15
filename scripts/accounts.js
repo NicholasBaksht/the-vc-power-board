@@ -294,6 +294,8 @@ function renderAccount() {
   // no username exists yet (an account created before usernames).
   const uname = (typeof getUsername === 'function' && getUsername()) ? getUsername() : null;
 
+  const uname = (typeof getUsername === 'function' && getUsername()) ? getUsername() : null;
+
   el.innerHTML = `
     <div class="acct-card">
       <div class="acct-kicker">Your account</div>
@@ -302,6 +304,14 @@ function renderAccount() {
       <div class="acct-meta">
         <div class="acct-meta-item">
           <span class="acct-meta-label">Username</span>
+          <span class="acct-meta-value">${uname ? '@' + uname : '<a href="#signin">Choose one</a>'}</span>
+        </div>
+        <div class="acct-meta-item">
+          <span class="acct-meta-label">Email</span>
+          <span class="acct-meta-value">${getUserEmail()}</span>
+        </div>
+        <div class="acct-meta-item">
+          <span class="acct-meta-label">Member since</span>
           <span class="acct-meta-value">${uname ? '@' + uname : '<a href="#signin">Choose one</a>'}</span>
         </div>
         <div class="acct-meta-item">
