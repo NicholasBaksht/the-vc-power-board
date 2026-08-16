@@ -481,6 +481,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/fifth-wall/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/hv-capital/</loc>
     <priority>0.6</priority>
   </url>
@@ -793,6 +797,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/flybridge/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/foresite-capital/</loc>
     <priority>0.6</priority>
   </url>
@@ -845,11 +853,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/bling-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/s32/</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/cyberstarts/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/360-capital/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -957,6 +973,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/anterra-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/zetta-venture-partners/</loc>
     <priority>0.6</priority>
   </url>
@@ -1041,6 +1061,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/ludlow-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/conviction/</loc>
     <priority>0.6</priority>
   </url>
@@ -1097,6 +1121,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/s28-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/645-ventures/</loc>
     <priority>0.6</priority>
   </url>
@@ -1141,6 +1169,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/volta-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/harlem-capital/</loc>
     <priority>0.6</priority>
   </url>
@@ -1157,11 +1189,27 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/newion/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/hustle-fund/</loc>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/peak-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/seroba-life-sciences/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/serena-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/foodlabs/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1234,6 +1282,14 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/kawisafi-ventures/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/cantos/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/henq/</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1509,6 +1565,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/accomplice/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/quiet-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/bowery-capital/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/</loc>
     <priority>0.9</priority>
   </url>
@@ -1522,6 +1590,10 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/a16z-vs-sequoia/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/a16z-vs-tcv/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1557,6 +1629,10 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/softbank-vision-fund-vs-tcv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-softbank-vision-fund/</loc>
     <priority>0.5</priority>
   </url>
@@ -1582,6 +1658,10 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/ribbit-capital-vs-sequoia/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/ribbit-capital-vs-tcv/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1613,6 +1693,10 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/compare/sequoia-vs-tcv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-sequoia/</loc>
     <priority>0.5</priority>
   </url>
@@ -1637,11 +1721,27 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/tcv-vs-tiger-global/</loc>
+    <loc>https://thevcpowerboard.com/compare/general-catalyst-vs-tcv/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://thevcpowerboard.com/compare/norwest-venture-partners-vs-tcv/</loc>
+    <loc>https://thevcpowerboard.com/compare/kleiner-perkins-vs-tcv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/gv-vs-tcv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/index-ventures-vs-tcv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/8vc-vs-tcv/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/elad-gil-vs-tcv/</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -3458,6 +3558,258 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/people/ren-cf/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/chip-hazard/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jeff-bussgang/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jesse-middleton/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jeff-fagnan/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/ryan-moore/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/sarah-downey/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jonathon-triest/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/brett-demarrais/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/ben-ling/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/kyle-lui/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/eric-theis/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/charlie-pinto/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/michael-brown/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/loren-straub/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/shashank-saxena/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/bersabel-tadesse/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/patrick-mcgovern/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/kent-ho/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/shvet-jain/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/andrew-miklas/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/victor-pang/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/ian-rountree/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/grant-gregory/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/amee-kapadia/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/brendan-wallace/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/brad-greiwe/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/dan-wenhold/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/peter-gajdos/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/miguel-nigorra/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/stefan-bary/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/marnix-broer/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/tea-elezi/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/thijs-dijkman/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/david-zwagemaker/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/mathijs-de-wit/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/pieter-welten/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/fatin-el-azear/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/dorus-olgers/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/patrick-polak/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/frank-maene/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/sander-vonk/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/koen-de-waele/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/stan-jeanty/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/coen-van-duiven/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jan-andriessen/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/mick-mackaay/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/rob-rousseau/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/fausto-boni/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/francois-tison/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/cesare-maifredi/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/alexandre-mordacq/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/alessandro-zaccaria/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/adam-anders/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/phil-austin/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/maarten-goossens/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/brett-wong/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/daniel-omahony/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/alan-oconnell/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/bruno-montanari/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jennifer-mcmahon/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jeanne-bolger/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/christophe-maire/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/patrick-noller/</loc>
     <priority>0.5</priority>
   </url>
   <url>
