@@ -3,66 +3,115 @@
    Renders an individual partner's bio page as a three-column
    layout: sidebar stats/focus/education, a center career
    timeline, and a right-hand panel of investments and board
-   seats. Every field here already exists on the partner object -
-   nothing new is computed or invented for this redesign.
+   seats.
+
+   DEFENSIVE ON PURPOSE. The 435 partner profiles were assembled
+   from several research passes with slightly different shapes,
+   so not every field is present on every partner:
+
+     notableInvestments  absent on 196
+     investmentFocus     absent on 196 (45 of those carry `sectors`
+                         instead, which is the same idea under an
+                         older key - so we fall back to it)
+     joinedYear          null on 42
+     ipoCount            null on 194
+     majorExits          null on 195
+
+   Reading .map() or .length off any of those threw and blanked
+   the whole page. Every access below is guarded, and a missing
+   value renders an honest em-dash rather than "null" or a
+   nonsense figure like "2026 years at firm".
    ============================================================ */
 function renderPartnerProfile(slug) {
   const p = partnerProfiles[slug];
   if (!p) return;
 
-  const investmentsHTML = p.notableInvestments.map(inv => `
+  // ---- guarded accessors ----
+  const arr = (v) => (Array.isArray(v) ? v : []);
+  const num = (v) => (typeof v === 'number' && isFinite(v) ? v : null);
+  const show = (v) => (v === null || v === undefined || v === '' ? '—' : v);
+
+  const investments = arr(p.notableInvestments);
+  const boardSeats  = arr(p.boardSeats);
+  const experience  = arr(p.previousExperience);
+  const education   = arr(p.education);
+  // `sectors` is the older key for the same concept; prefer the new one.
+  const focus       = arr(p.investmentFocus).length ? arr(p.investmentFocus) : arr(p.sectors);
+  const timeline    = arr(p.careerTimeline);
+  const sources     = arr(p.sources);
+
+  const joined      = num(p.joinedYear);
+  const yearsAtFirm = joined === null ? null : new Date().getFullYear() - joined;
+
+  const investmentsHTML = investments.map(inv => `
     <div class="pg-investment-row">
-      <span>${inv.name}</span>
-      ${inv.ticker ? `<span class="ticker-tag">${inv.ticker}</span>` : ''}
+      <span>${inv && inv.name ? inv.name : '&mdash;'}</span>
+      ${inv && inv.ticker ? `<span class="ticker-tag">${inv.ticker}</span>` : ''}
     </div>
   `).join('');
 
-  const boardHTML = p.boardSeats.length > 0
-    ? p.boardSeats.map(b => `<div class="pg-board-row">${b}</div>`).join('')
+  const boardHTML = boardSeats.length > 0
+    ? boardSeats.map(b => `<div class="pg-board-row">${b}</div>`).join('')
     : `<div class="pg-empty">No board seats on file.</div>`;
 
-  const experienceHTML = p.previousExperience.map(e => `<li>${e}</li>`).join('');
-  const educationHTML = p.education.map(e => `<li>${e}</li>`).join('');
-  const focusHTML = p.investmentFocus.map(f => `<span class="partner-tag">${f}</span>`).join('');
+  const experienceHTML = experience.map(e => `<li>${e}</li>`).join('');
+  const educationHTML  = education.map(e => `<li>${e}</li>`).join('');
+  const focusHTML      = focus.map(f => `<span class="partner-tag">${f}</span>`).join('');
 
-  const timelineHTML = p.careerTimeline.map(t => `
+  // A timeline entry can carry a null year - the event is known but
+  // the date isn't. Print the event without a year rather than the
+  // word "null" next to it.
+  const timelineHTML = timeline.map(t => `
     <div class="timeline-item">
-      <div class="timeline-year">${t.year}</div>
-      <div class="timeline-event">${t.event}</div>
+      <div class="timeline-year">${t && t.year != null ? t.year : '&mdash;'}</div>
+      <div class="timeline-event">${t && t.event ? t.event : ''}</div>
     </div>
   `).join('');
 
-  const sourcesHTML = p.sources.map(s => `<a href="${s.url}" target="_blank" rel="noopener noreferrer">${s.label} ↗</a>`).join('');
+  const sourcesHTML = sources
+    .filter(s => s && s.url)
+    .map(s => `<a href="${s.url}" target="_blank" rel="noopener noreferrer">${s.label || s.url} ↗</a>`)
+    .join('');
 
   // Career Path Summary: a real, honest sequence built from actual
   // previousExperience entries plus the partner's current role -
   // not invented, just the same data already shown above,
   // presented as a compact path rather than a bulleted list.
-  const pathSteps = [...p.previousExperience, `${p.title}, ${p.firm} (${p.joinedYear})`];
+  // The join year is only appended when we actually know it.
+  const currentRole = joined === null
+    ? `${p.title}, ${p.firm}`
+    : `${p.title}, ${p.firm} (${joined})`;
+  const pathSteps = experience.concat([currentRole]);
   const pathHTML = pathSteps.map((step, i) => `
     ${i > 0 ? '<div class="pg-path-arrow">↓</div>' : ''}
     <div class="pg-path-step ${i === pathSteps.length - 1 ? 'pg-path-current' : ''}">${step}</div>
   `).join('');
+
+  // "Joined 2009" is dropped entirely rather than printed as
+  // "Joined null" for the 42 partners whose start year is unknown.
+  const roleLine = joined === null
+    ? `${p.title} · <a href="#${p.firmSlug}">${p.firm}</a>`
+    : `${p.title} · <a href="#${p.firmSlug}">${p.firm}</a> · Joined ${joined}`;
 
   document.getElementById('partnerView').innerHTML = `
     <a href="#${p.firmSlug}" class="detail-back">← Back to ${p.firm}</a>
 
     <div class="pg-header">
       <div class="partner-title" style="margin: 0;">${p.name}</div>
-      <div class="partner-role-line" style="margin-bottom: 0;">${p.title} · <a href="#${p.firmSlug}">${p.firm}</a> · Joined ${p.joinedYear}</div>
+      <div class="partner-role-line" style="margin-bottom: 0;">${roleLine}</div>
     </div>
 
     <div class="pg-layout">
       <div class="pg-sidebar-left">
         <div class="pg-stats-grid">
-          <div class="pg-stat"><span class="pg-stat-num">${new Date().getFullYear() - p.joinedYear}</span><span class="pg-stat-label">Years at Firm</span></div>
-          <div class="pg-stat"><span class="pg-stat-num">${p.ipoCount}</span><span class="pg-stat-label">IPOs</span></div>
-          <div class="pg-stat"><span class="pg-stat-num">${p.majorExits}</span><span class="pg-stat-label">Major Exits</span></div>
-          <div class="pg-stat"><span class="pg-stat-num">${p.boardSeats.length}</span><span class="pg-stat-label">Board Seats</span></div>
+          <div class="pg-stat"><span class="pg-stat-num">${show(yearsAtFirm)}</span><span class="pg-stat-label">Years at Firm</span></div>
+          <div class="pg-stat"><span class="pg-stat-num">${show(num(p.ipoCount))}</span><span class="pg-stat-label">IPOs</span></div>
+          <div class="pg-stat"><span class="pg-stat-num">${show(num(p.majorExits))}</span><span class="pg-stat-label">Major Exits</span></div>
+          <div class="pg-stat"><span class="pg-stat-num">${boardSeats.length}</span><span class="pg-stat-label">Board Seats</span></div>
         </div>
 
         <div class="pg-side-label">Investment Focus</div>
-        <div class="partner-tag-row">${focusHTML}</div>
+        <div class="partner-tag-row">${focusHTML || '<span class="pg-empty">Not publicly disclosed.</span>'}</div>
 
         <div class="pg-side-label">Education</div>
         <ul class="partner-list">${educationHTML || '<li>Not publicly disclosed.</li>'}</ul>
@@ -73,16 +122,16 @@ function renderPartnerProfile(slug) {
 
       <div class="pg-center">
         <div class="pg-side-label" style="margin-top: 0;">Career Timeline</div>
-        <div class="timeline">${timelineHTML}</div>
+        <div class="timeline">${timelineHTML || '<div class="pg-empty">No dated milestones on file.</div>'}</div>
 
         <div class="pg-side-label">Biography</div>
-        <p class="partner-bio">${p.biography}</p>
+        <p class="partner-bio">${p.biography || 'No biography on file.'}</p>
 
         <div class="pg-side-label">Previous Experience</div>
         <ul class="partner-list">${experienceHTML || '<li>Not publicly disclosed.</li>'}</ul>
 
         <div class="pg-side-label">Sources &amp; References</div>
-        <div class="partner-source-list">${sourcesHTML}</div>
+        <div class="partner-source-list">${sourcesHTML || '<span class="pg-empty">No sources on file.</span>'}</div>
       </div>
 
       <div class="pg-sidebar-right">
