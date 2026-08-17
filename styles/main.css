@@ -455,3 +455,30 @@
 @media (prefers-reduced-motion: reduce) {
   .exits-toggle { transition: none; }
 }
+
+/* --- collapsed methodology --- */
+.methodology-rest[hidden] { display: none; }
+
+.methodology-toggle {
+  display: inline-block;
+  margin: 14px 0 0;
+  padding: 9px 16px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .15s ease, border-color .15s ease;
+}
+.methodology-toggle:hover { background: var(--surface-raised); border-color: var(--accent); }
+.methodology-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.methodology-rest { margin-top: 18px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .methodology-toggle { transition: none; }
+}
