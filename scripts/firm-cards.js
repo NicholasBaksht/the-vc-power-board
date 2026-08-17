@@ -91,7 +91,26 @@ function renderFirms() {
   scrollToResultsIfNeeded();
 
   const visibleFirms = firms.filter(f => matchesFilter(f) && matchesSearch(f));
-  noResults.style.display = visibleFirms.length === 0 ? 'block' : 'none';
+  const empty = visibleFirms.length === 0;
+  noResults.style.display = empty ? 'block' : 'none';
+
+  /* An empty search is a signal, not a dead end: it tells us which firm
+     someone expected to find. Rather than "no results", ask them. */
+  if (empty && typeof frRenderNoResults === 'function') {
+    frRenderNoResults(noResults, typeof searchTerm === 'string' ? searchTerm : '');
+  }
+
+  // The standing "request to be listed" entry point, built once.
+  if (typeof frRenderListingCta === 'function') {
+    let cta = document.getElementById('frListingCta');
+    if (!cta && container && container.parentNode) {
+      cta = document.createElement('div');
+      cta.id = 'frListingCta';
+      cta.className = 'fr-cta-wrap';
+      container.parentNode.insertBefore(cta, container.nextSibling);
+    }
+    frRenderListingCta(cta);
+  }
 
   // One innerHTML write rather than 344 appendChild calls.
   container.className = 'firm-tile-grid';
