@@ -329,3 +329,77 @@
     .pb-orbit-rings { width: 620px; height: 420px; }
     .pb-chip { font-size: 11px; padding: 5px 10px; }
 }
+
+
+/* ============================================================
+   HERO SEARCH
+   The same search system as the explorer box, surfaced as the
+   first thing on the page. The placeholder's firm count is set
+   from the dataset in search.js - never typed in the HTML.
+   ============================================================ */
+.pb-hero-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: min(560px, 92%);
+  margin: 22px auto 4px;
+}
+
+/* Label exists for screen readers; the placeholder is not a label. */
+.pb-hero-search-label {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.pb-hero-search-icon {
+  position: absolute;
+  left: 15px;
+  width: 17px; height: 17px;
+  fill: none;
+  stroke: var(--ink-dim);
+  stroke-width: 2;
+  stroke-linecap: round;
+  pointer-events: none;
+  transition: stroke .15s ease;
+}
+
+.pb-hero-search-input {
+  width: 100%;
+  padding: 14px 16px 14px 42px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 4px;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.3;
+  transition: border-color .15s ease, background .15s ease;
+}
+.pb-hero-search-input::placeholder { color: var(--ink-dim); }
+.pb-hero-search-input:hover { border-color: var(--ink-dim); }
+.pb-hero-search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--surface-raised);
+}
+.pb-hero-search:focus-within .pb-hero-search-icon { stroke: var(--accent); }
+
+/* Safari renders a native clear button on type=search that collides
+   with the border radius; the field is already clearable by keyboard. */
+.pb-hero-search-input::-webkit-search-decoration,
+.pb-hero-search-input::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+@media (max-width: 640px) {
+  .pb-hero-search { width: 94%; margin-top: 18px; }
+  .pb-hero-search-input { font-size: 14px; padding: 12px 14px 12px 38px; }
+  .pb-hero-search-icon { left: 13px; width: 15px; height: 15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pb-hero-search-input, .pb-hero-search-icon { transition: none; }
+}
