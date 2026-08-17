@@ -144,3 +144,61 @@ function formatCombinedAUM(billions) {
   }
   return '$' + billions + 'B+';
 }
+
+/* ============================================================
+   CANONICAL FIRM COUNT
+   One source of truth: the firms array itself. Every place that
+   shows a firm count reads this, so adding a firm to data-firms.js
+   updates the whole site with no other edit.
+
+   WHY THIS EXISTS: the <head> of index.html carried three different
+   answers - the title said 248, the meta/OG/Twitter tags said 146,
+   and the hero placeholder said 293, against a real dataset of 361.
+   Each was written by hand at a different time and then went stale.
+   ============================================================ */
+
+// Counts DISTINCT slugs, not array length, so a duplicated firm
+// object can never quietly inflate the number.
+function canonicalFirmCount() {
+  if (typeof firms === 'undefined' || !Array.isArray(firms)) return null;
+  const seen = {};
+  let n = 0;
+  firms.forEach(function (f) {
+    if (f && f.slug && !seen[f.slug]) { seen[f.slug] = true; n++; }
+  });
+  return n || null;
+}
+
+/* Rewrites every count the page displays from that one number.
+
+   The digits in index.html's <head> are a FALLBACK for crawlers that
+   do not execute JavaScript - they are not the source of truth, and
+   this function overwrites them on load. The regex targets only a
+   number that directly precedes "firms" or "Venture Capital Firms",
+   so no other figure in a title or description can be caught by it. */
+function applyCanonicalFirmCount() {
+  const n = canonicalFirmCount();
+  if (!n || typeof document === 'undefined') return;
+
+  const swap = (s) => String(s).replace(
+    /\b\d{2,4}\b(?=\+?\s+(?:venture capital\s+)?firms?\b)/gi, n);
+
+  // Opt-in elements: <span data-firm-count>361</span>
+  const nodes = document.querySelectorAll('[data-firm-count]');
+  for (let i = 0; i < nodes.length; i++) nodes[i].textContent = n;
+
+  if (document.title) document.title = swap(document.title);
+
+  [['meta[name="description"]', 'content'],
+   ['meta[property="og:title"]', 'content'],
+   ['meta[property="og:description"]', 'content'],
+   ['meta[name="twitter:title"]', 'content'],
+   ['meta[name="twitter:description"]', 'content']].forEach(function (pair) {
+    const el = document.querySelector(pair[0]);
+    if (!el) return;
+    const v = el.getAttribute(pair[1]);
+    if (v) el.setAttribute(pair[1], swap(v));
+  });
+}
+
+if (typeof document !== 'undefined') applyCanonicalFirmCount();
