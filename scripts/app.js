@@ -235,12 +235,25 @@ document.getElementById('powerSignalsView').style.display = 'none';
   // div that isn't in index.html yet returns null, throws on
   // .style, and takes the whole router — and so the whole site —
   // down with it.
+  /* Conflict Check. The container is created by ensureConflictCheckView()
+     below rather than living in index.html, so this must stay null-guarded
+     for exactly the reason the comment above describes. */
+  const conflictViewEl = document.getElementById('conflictCheckView');
+  if (conflictViewEl) conflictViewEl.style.display = 'none';
+
   const signinViewEl = document.getElementById('signinView');
   if (signinViewEl) signinViewEl.style.display = 'none';
   const accountViewEl = document.getElementById('accountView');
   if (accountViewEl) accountViewEl.style.display = 'none';
 
- if (slug === 'signin') {
+ if (slug === 'conflict-check') {
+    const el = ensureConflictCheckView();
+    if (el) {
+      el.style.display = 'block';
+      if (typeof renderConflictCheck === 'function') renderConflictCheck();
+    }
+    window.scrollTo(0, 0);
+  } else if (slug === 'signin') {
     if (signinViewEl) signinViewEl.style.display = 'block';
     if (typeof renderSignIn === 'function') renderSignIn();
     window.scrollTo(0, 0);
@@ -523,4 +536,24 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', collapseMethodology);
 } else {
   collapseMethodology();
+}
+
+
+/* ============================================================
+   CONFLICT CHECK VIEW CONTAINER
+   Created here rather than added to index.html so the feature
+   ships as script + stylesheet only. Inserted next to the other
+   view divs so it inherits the same layout context.
+   ============================================================ */
+function ensureConflictCheckView() {
+  let el = document.getElementById('conflictCheckView');
+  if (el) return el;
+  const anchor = document.getElementById('findInvestorsView')
+              || document.getElementById('detailView');
+  if (!anchor || !anchor.parentNode) return null;
+  el = document.createElement('div');
+  el.id = 'conflictCheckView';
+  el.style.display = 'none';
+  anchor.parentNode.insertBefore(el, anchor.nextSibling);
+  return el;
 }
