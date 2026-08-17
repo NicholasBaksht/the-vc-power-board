@@ -45,7 +45,7 @@ const SECTOR_MAP = {
     label: 'Healthcare',
     slug: 'healthcare',
     description: 'healthcare, biotech, and life sciences',
-    rawTags: ['Healthcare', 'Health', 'Healthtech', 'Health Tech', 'Healthcare IT', 'Digital Health', 'Biotech', 'Pharmaceuticals', 'Diagnostics', 'Therapeutics', 'Life Sciences', 'Human Health', 'Medical Devices', 'Synthetic Biology'],
+    rawTags: ['Healthcare', 'Health', 'Healthtech', 'Health Tech', 'Healthcare IT', 'Digital Health', 'Biotech', 'Pharmaceuticals', 'Diagnostics', 'Therapeutics', 'Life Sciences', 'Human Health', 'Medical Devices', 'Synthetic Biology', 'Medtech'],
   },
   'climate': {
     label: 'Climate & Energy',
@@ -112,6 +112,49 @@ const SECTOR_MAP = {
     slug: 'industrial-tech',
     description: 'industrial technology, manufacturing, and IoT',
     rawTags: ['Manufacturing', 'Industrial Technology', 'IoT', 'Hardware', '5G', 'Industrial Tech', 'Construction Tech', 'Smart Cities', 'Critical Infrastructure', 'Industrial Manufacturing', 'Automation', 'Advanced Manufacturing'],
+  },
+
+  /* ---- Buckets added when the sector chips needed finer granularity. ----
+     Every rawTag below ALSO stays in whichever bucket already held it -
+     'Robotics' is still Deep Tech, 'Hardware' is still Industrial. A tag
+     belonging to two buckets is not new: 'AI Security' has always been both
+     AI and Cybersecurity. So this is purely additive - no existing category
+     page and no existing filter chip loses a single firm.
+
+     There is deliberately no 'generalist' bucket here. Sector-agnostic firms
+     are handled by UNMAPPED_DESCRIPTOR_TAGS below and surfaced by the
+     synthetic '__generalist' chip in filters.js; adding one here would
+     render that chip twice and put a thin-content page in the generator. */
+
+  'robotics': {
+    label: 'Robotics',
+    slug: 'robotics',
+    description: 'robotics, automation, and autonomous systems',
+    rawTags: ['Robotics', 'Automation', 'Autonomy', 'Physical AI'],
+  },
+  'space': {
+    label: 'Space',
+    slug: 'space',
+    description: 'space technology, launch, and satellites',
+    rawTags: ['Space', 'Aerospace', 'Satellites'],
+  },
+  'proptech': {
+    label: 'PropTech & Real Estate',
+    slug: 'proptech',
+    description: 'property technology, real estate, and the built environment',
+    rawTags: ['Proptech', 'Real Estate', 'Construction Tech', 'Smart Cities'],
+  },
+  'food-agriculture': {
+    label: 'Food & Agriculture',
+    slug: 'food-agriculture',
+    description: 'agriculture technology, food systems, and agtech',
+    rawTags: ['Agriculture', 'Food & Agriculture', 'Agritech', 'Agtech', 'Foodtech', 'Food-Agtech'],
+  },
+  'hardware': {
+    label: 'Hardware & Semiconductors',
+    slug: 'hardware',
+    description: 'hardware, semiconductors, and connected devices',
+    rawTags: ['Hardware', 'Semiconductors', 'Semiconductors/Deep Tech', 'IoT', '5G'],
   },
 };
 
@@ -194,9 +237,80 @@ const LOCATION_MAP = {
   },
 };
 
+/* ------------------------------------------------------------------
+   DERIVED LOOKUPS
+   Built once from SECTOR_MAP above rather than maintained by hand, so
+   they can never drift out of sync with it. Adding a rawTag to a bucket
+   is the only edit ever needed - everything below updates itself.
+
+   These mirror the rules filters.js already applies, including its
+   synthetic '__generalist' key, so the two can never disagree about
+   which sector a firm belongs to.
+   ------------------------------------------------------------------ */
+
+// 'Robotics' -> ['deep-tech', 'robotics'].  One raw tag may legitimately
+// belong to several canonical sectors, so the value is always an array.
+const RAW_TO_CANONICAL = (function () {
+  const out = {};
+  Object.keys(SECTOR_MAP).forEach(function (slug) {
+    SECTOR_MAP[slug].rawTags.forEach(function (tag) {
+      (out[tag] = out[tag] || []).push(slug);
+    });
+  });
+  return out;
+})();
+
+// Every canonical sector a firm belongs to, de-duplicated. A firm tagged
+// both 'Robotics' and 'Semiconductors' resolves to deep-tech once, not
+// twice. A firm carrying only descriptor tags ('Sector-Agnostic') resolves
+// to ['__generalist'] - the same key filters.js uses for its chip.
+function canonicalSectorsFor(firm) {
+  const seen = {};
+  const out = [];
+  const tags = (firm && firm.sectors) || [];
+  tags.forEach(function (tag) {
+    (RAW_TO_CANONICAL[tag] || []).forEach(function (slug) {
+      if (!seen[slug]) { seen[slug] = true; out.push(slug); }
+    });
+  });
+  if (!out.length && tags.some(function (t) { return UNMAPPED_DESCRIPTOR_TAGS.has(t); })) {
+    out.push('__generalist');
+  }
+  return out;
+}
+
+// How many firms sit in each canonical sector. Counts FIRMS, not tags, so
+// a firm carrying three AI-ish labels still counts once toward 'ai'.
+function sectorFirmCounts(firmList) {
+  const counts = {};
+  (firmList || []).forEach(function (firm) {
+    canonicalSectorsFor(firm).forEach(function (slug) {
+      counts[slug] = (counts[slug] || 0) + 1;
+    });
+  });
+  return counts;
+}
+
+// Display order for the filter row: biggest sectors first so the most
+// useful chips are reachable without scrolling, with the generalist
+// bucket pinned last because it is a fallback rather than a sector.
+function sectorFilterOrder(firmList) {
+  const counts = sectorFirmCounts(firmList);
+  return Object.keys(counts)
+    .filter(function (slug) { return counts[slug] > 0; })
+    .sort(function (a, b) {
+      if (a === '__generalist') return 1;
+      if (b === '__generalist') return -1;
+      return counts[b] - counts[a];
+    });
+}
+
 // Works both in Node (the generator script, via require) and in the
 // browser (the live app, via a plain <script> tag) - same taxonomy,
 // zero risk of the two environments drifting out of sync.
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { SECTOR_MAP, UNMAPPED_DESCRIPTOR_TAGS, LOCATION_MAP };
+  module.exports = {
+    SECTOR_MAP, UNMAPPED_DESCRIPTOR_TAGS, LOCATION_MAP,
+    RAW_TO_CANONICAL, canonicalSectorsFor, sectorFirmCounts, sectorFilterOrder,
+  };
 }
