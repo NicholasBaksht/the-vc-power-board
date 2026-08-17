@@ -120,9 +120,12 @@ function buildReturnBadge(h) {
     return `<span class="return-badge unknown">— since Jan '25</span>`;
   }
   const pct = ((h.price - h.historicalPrice) / h.historicalPrice) * 100;
-  const cls = pct >= 0 ? 'positive' : 'negative';
-  const sign = pct >= 0 ? '+' : '';
-  return `<span class="return-badge ${cls}">${sign}${pct.toFixed(1)}% since Jan '25</span>`;
+  const r = Number(pct.toFixed(1));
+  const cls = r > 0 ? 'positive' : r < 0 ? 'negative' : 'flat';
+  const sign = r > 0 ? '+' : '';
+  // Rounded value drives the arrow, so a badge reading "0.0%" shows the
+  // flat arrow rather than an up arrow from an invisible +0.04.
+  return `<span class="return-badge ${cls}">${directionLabel(r)}${sign}${r.toFixed(1)}% since Jan '25</span>`;
 }
 // ---------- RANKINGS ORDER ----------
 // Sort every firm by real AUM, highest to lowest, then derive rank from
@@ -202,3 +205,32 @@ function applyCanonicalFirmCount() {
 }
 
 if (typeof document !== 'undefined') applyCanonicalFirmCount();
+
+/* ============================================================
+   DIRECTION MARKS
+   Every directional figure on the site carries an arrow as well
+   as a colour. Red/green alone fails for the ~8% of men with a
+   colour vision deficiency, in high-contrast modes, in print,
+   and in a screenshot pasted into a deck. The arrow states the
+   direction; colour only reinforces it.
+
+   Flat is an arrow too. A metric that has not moved is a real
+   result and should not be silently indistinguishable from one
+   we have no reading for - "no change" and "unknown" are
+   different claims.
+   ============================================================ */
+function directionMark(value) {
+  if (value === null || value === undefined || (typeof value === 'number' && !isFinite(value))) return '';
+  if (value > 0) return '\u2191';   // up
+  if (value < 0) return '\u2193';   // down
+  return '\u2192';                  // flat
+}
+
+// The arrow plus a screen-reader word, so a reader that ignores the
+// glyph still hears the direction rather than just a number.
+function directionLabel(value) {
+  if (value === null || value === undefined || (typeof value === 'number' && !isFinite(value))) return '';
+  const word = value > 0 ? 'up' : value < 0 ? 'down' : 'no change';
+  return '<span class="dir-mark" aria-hidden="true">' + directionMark(value) + '</span>' +
+         '<span class="sr-only">' + word + ' </span>';
+}
