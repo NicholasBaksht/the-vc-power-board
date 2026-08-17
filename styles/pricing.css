@@ -28,8 +28,8 @@
     padding: 28px 26px;
   }
   .pricing-card.pro {
-    border-color:rgba(75,130,239,0.4);
-    background: linear-gradient(135deg, rgba(75,130,239,0.06), rgba(75,130,239,0.01));
+    border-color:rgba(var(--accent-rgb),0.4);
+    background: linear-gradient(135deg, rgba(var(--accent-rgb),0.06), rgba(var(--accent-rgb),0.01));
   }
   .pricing-tier-name {
     font-family: var(--serif);
@@ -96,7 +96,7 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--gold-bright);
-    background: rgba(75,130,239,0.15);
+    background: rgba(var(--accent-rgb),0.15);
     padding: 2px 8px;
     border-radius: 3px;
     margin-left: 6px;
