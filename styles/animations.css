@@ -27,3 +27,67 @@
     from { opacity: 0; transform: translateY(8px); }
     to { opacity: 1; transform: translateY(0); }
   }
+
+/* ------------------------------------------------------------------
+   SECTION REVEAL
+   Applied by JS, never by default. A section is visible in plain CSS;
+   the script opts it INTO being hidden and then reveals it. If the
+   script never runs, or fails, or reduced motion is on, the page is
+   simply visible - content is never hidden by a stylesheet waiting on
+   JavaScript to bring it back.
+   ------------------------------------------------------------------ */
+.pb-reveal {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .5s ease, transform .5s ease;
+  will-change: opacity, transform;
+}
+.pb-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* The live indicator - the ONLY thing on the site that loops forever.
+   Everything else animates once, on arrival or on interaction. */
+@keyframes pbLivePulse {
+  0%, 100% { opacity: 1;   box-shadow: 0 0 0 0 rgba(74, 222, 128, .45); }
+  50%      { opacity: .72; box-shadow: 0 0 0 4px rgba(74, 222, 128, 0); }
+}
+
+/* ==================================================================
+   REDUCED MOTION
+   One global switch. Everything above, every keyframe in this file,
+   and every transition anywhere on the site stops - including the
+   ticker, the bar fills, the counters (disabled in JS) and the live
+   pulse. Durations go to 0.01ms rather than 0 so animationend and
+   transitionend still fire and nothing that waits on them hangs.
+
+   The page must still look finished with all of this off, which is
+   why .pb-reveal resolves to fully visible rather than merely
+   un-animated.
+   ================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html { scroll-behavior: auto !important; }
+
+  .pb-reveal,
+  .pb-reveal.is-visible {
+    opacity: 1 !important;
+    transform: none !important;
+    will-change: auto;
+  }
+
+  /* The tape stops rather than jumping: no transform, no loop. */
+  .ticker-track { animation: none !important; transform: none !important; }
+
+  /* Bars sit at their final width instead of growing into it. */
+  .phil-bar-fill, .geo-bar-fill, .genome-bar-fill {
+    animation: none !important;
+    transform: none !important;
+  }
+}
