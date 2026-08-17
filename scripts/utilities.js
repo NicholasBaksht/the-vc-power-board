@@ -22,7 +22,13 @@ function parseAumNumber(aumStr) {
   // the firm as if it were a confirmed current AUM figure - the exact
   // opposite of the honesty this field is meant to convey. Checked
   // first, before either regex runs.
-  if (/not (?:publicly )?disclosed/i.test(aumStr)) return 0;
+  // Scoped to the HEADLINE (everything before the first parenthesis)
+  // rather than the whole string. A qualifier like "$405M (final fund,
+  // closed 2022 per Axios; firm-wide AUM not publicly disclosed)" states
+  // a real figure and then notes what ISN'T disclosed - testing the full
+  // string made that phrase win and ranked Accomplice at 0, which is the
+  // opposite of what this override is for.
+  if (/not (?:publicly )?disclosed/i.test(String(aumStr).split('(')[0])) return 0;
 
  // Accepts $, £, or € - Molten Ventures reports in pounds and Porsche
   // Ventures in euros, and without this they'd parse as 0 and land in
