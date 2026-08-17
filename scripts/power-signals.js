@@ -75,7 +75,9 @@ function computeMomentumSignal(firmSlug) {
   return {
     type: 'momentum', firmSlug, strength, direction,
     recent, prior, changePct: change,
-    headline: direction === 'up' ? 'Accelerating' : direction === 'down' ? 'Decelerating' : 'Stable',
+    // Arrow rides with the word, so direction survives a screenshot,
+    // a greyscale print and a colour-blind reader.
+    headline: (direction === 'up' ? '\u2191 Accelerating' : direction === 'down' ? '\u2193 Decelerating' : '\u2192 Stable'),
     explanation: change !== null
       ? `${recent} documented events in the last 2 years vs ${prior} in the 2 years before that (${change >= 0 ? '+' : ''}${change}%).`
       : `${recent} documented events in the last 2 years, up from none in the 2 years before that.`,
@@ -114,7 +116,7 @@ function computePartnerMomentumSignal(firmSlug) {
     type: 'partner_momentum', firmSlug, strength, direction,
     joins: joins.map(p => ({ name: p.name, role: p.title, profileSlug: Object.keys(partnerProfiles).find(k => partnerProfiles[k] === p) })),
     departures,
-    headline: direction === 'up' ? 'Positive' : direction === 'down' ? 'Negative' : 'Mixed',
+    headline: (direction === 'up' ? '\u2191 Positive' : direction === 'down' ? '\u2193 Negative' : '\u2192 Mixed'),
     explanation: `${joins.length} notable partner${joins.length === 1 ? '' : 's'} joined and ${departures.length} left in the last 2 years.`,
     caveat: departures.length > 0 && Object.values(partnerProfiles).filter(p => p.firmHistory && p.firmHistory.length).length < 15
       ? 'Departure tracking depends on firmHistory data, which is only populated for a subset of tracked partners - real departures may be undercounted.'
@@ -162,7 +164,7 @@ function computeNetworkExpansionSignal(firmSlug) {
   return {
     type: 'network_expansion', firmSlug, strength, direction: 'up',
     events, relatedFirmSlugs,
-    headline: `+${total} new tracked relationship${total === 1 ? '' : 's'}`,
+    headline: `\u2191 +${total} new tracked relationship${total === 1 ? '' : 's'}`,
     explanation: `${total} new, dated relationship${total === 1 ? '' : 's'} formed in the last 2 years via spinout activity or partner moves.`,
     caveat: 'Only counts relationships with a real formation date - existing portfolio overlap with other firms isn\'t included here since it carries no date, and can\'t honestly be called "new."'
   };
