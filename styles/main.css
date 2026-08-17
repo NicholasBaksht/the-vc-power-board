@@ -307,3 +307,102 @@
     opacity: 0.75;
   }
   .nav-link-quiet:hover { opacity: 1; }
+
+
+/* ============================================================
+   ORG BADGES  (corporate / government / affiliate)
+   Lives in main.css because it is a design-system primitive used on
+   both the firm tiles and the firm profile, not a component detail.
+
+   Colour comes only from existing tokens - --accent, --ink-dim,
+   --hairline - so when the theme switcher re-points --accent these
+   badges follow it automatically and need no further edit.
+   ============================================================ */
+
+/* --- firm profile --- */
+.org-badge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  margin: 8px 0 2px;
+  padding: 4px 10px;
+  border: 1px solid var(--hairline);
+  border-left: 2px solid var(--accent);
+  border-radius: 3px;
+  background: var(--surface);
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+.org-badge-label { color: var(--accent); text-transform: uppercase; font-weight: 600; }
+.org-badge-sep { color: var(--hairline); }
+.org-badge-parent { color: var(--ink); letter-spacing: .02em; }
+
+/* Government and affiliate are deliberately quieter than corporate -
+   they are rarer and a founder scanning the page is usually looking
+   for the operating-company case. */
+.org-badge-government .org-badge-label,
+.org-badge-affiliate  .org-badge-label { color: var(--ink-dim); }
+.org-badge-government,
+.org-badge-affiliate { border-left-color: var(--ink-dim); }
+
+/* --- former parent, shown as history --- */
+.org-lineage {
+  margin: 10px 0 0;
+  padding: 8px 12px;
+  border-left: 2px solid var(--hairline);
+  background: var(--surface);
+  font-size: 12.5px;
+  color: var(--ink);
+  border-radius: 0 3px 3px 0;
+}
+.org-lineage-label {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--ink-dim);
+}
+.org-lineage-note { display: block; margin-top: 3px; font-size: 11.5px; color: var(--ink-dim); }
+
+/* --- firm tile --- */
+/* min-height reserves the row on every tile, badged or not, so tiles
+   do not end up different heights inside the grid. */
+.firm-tile-org {
+  min-height: 13px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.org-chip {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--hairline);
+  border-radius: 2px;
+  padding: 1px 4px;
+  line-height: 1.4;
+}
+.org-chip-government, .org-chip-affiliate { color: var(--ink-dim); }
+.org-chip-parent {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--ink-dim);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .firm-tile-org { min-height: 12px; }
+  .org-chip { font-size: 7.5px; }
+  .org-chip-parent { font-size: 8.5px; }
+  .org-badge { font-size: 9.5px; white-space: normal; }
+}
