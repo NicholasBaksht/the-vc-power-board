@@ -452,3 +452,75 @@ fetch('prices.json')
     renderPowerAlerts();
     router();
   });
+
+
+/* ============================================================
+   COLLAPSE THE METHODOLOGY SECTION
+   Methodology is 3,171px - 45% of the homepage after the exits
+   list was compacted. It is also the section that earns trust,
+   so none of it is removed: the heading and the opening
+   paragraph stay visible, and everything after is moved into a
+   collapsible container.
+
+   Done here in JS rather than by restructuring 144 lines of
+   markup, so index.html keeps its existing methodology block
+   untouched and there is nothing to re-paste if that copy
+   changes later.
+   ============================================================ */
+function collapseMethodology() {
+  const sec = document.getElementById('methodologyAnchor');
+  if (!sec || sec.dataset.collapsed === '1') return;
+
+  const kids = Array.from(sec.children);
+  // Keep the <h2> and the first paragraph as the visible summary.
+  let keep = 0;
+  for (let i = 0; i < kids.length; i++) {
+    keep = i + 1;
+    if (kids[i].tagName === 'P') break;
+  }
+  const rest = kids.slice(keep);
+  if (!rest.length) return;
+
+  const wrap = document.createElement('div');
+  wrap.className = 'methodology-rest';
+  wrap.id = 'methodologyRest';
+  wrap.hidden = true;
+  rest.forEach(function (el) { wrap.appendChild(el); });
+
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'methodology-toggle';
+  btn.id = 'methodologyToggle';
+  btn.setAttribute('aria-expanded', 'false');
+  btn.setAttribute('aria-controls', 'methodologyRest');
+  btn.textContent = 'Read the full methodology';
+
+  sec.appendChild(btn);
+  sec.appendChild(wrap);
+  sec.dataset.collapsed = '1';
+
+  const setOpen = (open) => {
+    wrap.hidden = !open;
+    btn.setAttribute('aria-expanded', String(open));
+    btn.textContent = open ? 'Hide methodology' : 'Read the full methodology';
+  };
+  btn.addEventListener('click', function () { setOpen(wrap.hidden); });
+
+  /* The nav has a Methodology link pointing at this anchor. Landing on
+     a collapsed section from that link would be a dead end, so arriving
+     via the anchor opens it. */
+  const openIfTargeted = () => {
+    if (location.hash === '#methodologyAnchor') {
+      setOpen(true);
+      sec.scrollIntoView({ block: 'start' });
+    }
+  };
+  window.addEventListener('hashchange', openIfTargeted);
+  openIfTargeted();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', collapseMethodology);
+} else {
+  collapseMethodology();
+}
