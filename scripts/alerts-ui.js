@@ -41,26 +41,35 @@ function paUsd(n) {
 
 // The change chip: signed points for cohort shifts, a plain
 // count for the count-based alert types.
+/* Arrow for a change chip. Falls back to a bare glyph if utilities.js
+   has not loaded, so an alert never renders a direction-free number. */
+function paDir(value) {
+  if (typeof directionLabel === 'function') return directionLabel(value);
+  if (value === null || value === undefined) return '';
+  return '<span class="dir-mark" aria-hidden="true">' +
+    (value > 0 ? '\u2191' : value < 0 ? '\u2193' : '\u2192') + '</span>';
+}
+
 function paChangeChip(a) {
   if (a.absoluteChange !== null && a.unit === 'percentage points') {
     const sign = a.absoluteChange > 0 ? '+' : '';
-    const cls = a.absoluteChange > 0 ? 'pa-up' : 'pa-down';
-    return '<span class="pa-delta ' + cls + '">' + sign + a.absoluteChange + ' pts</span>';
+    const cls = a.absoluteChange > 0 ? 'pa-up' : a.absoluteChange < 0 ? 'pa-down' : 'pa-flat';
+    return '<span class="pa-delta ' + cls + '">' + paDir(a.absoluteChange) + sign + a.absoluteChange + ' pts</span>';
   }
   // Fund steps read as a multiple or a fall, not a raw dollar delta.
   if (a.unit === 'USD' && a.previousValue) {
     const mult = a.currentValue / a.previousValue;
-    const cls = mult >= 1 ? 'pa-up' : 'pa-down';
+    const cls = mult > 1 ? 'pa-up' : mult < 1 ? 'pa-down' : 'pa-flat';
     const label = mult >= 1 ? (Math.round(mult * 10) / 10) + '\u00D7'
                             : '\u2212' + Math.round((1 - mult) * 100) + '%';
-    return '<span class="pa-delta ' + cls + '">' + label + '</span>';
+    return '<span class="pa-delta ' + cls + '">' + paDir(mult - 1) + label + '</span>';
   }
   // Signed counts (team-page arrivals and departures) must show the
   // CHANGE, not the roster size - "+3 people", never "16 people".
   if (a.absoluteChange !== null && a.direction !== 'flat') {
     const n = a.absoluteChange;
-    const cls = n > 0 ? 'pa-up' : 'pa-down';
-    return '<span class="pa-delta ' + cls + '">' + (n > 0 ? '+' : '−') +
+    const cls = n > 0 ? 'pa-up' : n < 0 ? 'pa-down' : 'pa-flat';
+    return '<span class="pa-delta ' + cls + '">' + paDir(n) + (n > 0 ? '+' : '−') +
       Math.abs(n) + ' ' + paEsc(a.unit) + '</span>';
   }
   return '<span class="pa-delta pa-flat">' + paEsc(a.currentValue) + ' ' + paEsc(a.unit) + '</span>';
