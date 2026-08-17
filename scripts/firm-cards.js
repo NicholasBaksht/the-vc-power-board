@@ -47,6 +47,7 @@ function firmTileHtml(firm) {
       '<div class="firm-tile-body">' +
         '<div class="firm-tile-name">' + firm.name + '</div>' +
         '<div class="firm-tile-meta">' + splitAumShort(firm.aum) + ' &middot; ' + firm.hq + '</div>' +
+        '<div class="firm-tile-org">' + orgTileLine(firm) + '</div>' +
       '</div>' +
     '</a>' +
     '<div class="firm-tile-actions">' +
@@ -69,6 +70,18 @@ function splitAumShort(aum) {
   const m = raw.match(/^([^(]+?)\s*\(.+\)\s*$/);
   const head = (m ? m[1] : raw).trim();
   return head.length > 26 ? head.slice(0, 25) + '\u2026' : head;
+}
+
+/* The tile's corporate/government/affiliate line. Reads data-orgs.js;
+   no firm or parent name is written here. The wrapper div renders on
+   EVERY tile, even when empty, so that badged and unbadged tiles keep
+   identical heights and the grid stays on a single baseline. */
+function orgTileLine(firm) {
+  if (typeof orgBadge !== 'function') return '';
+  const b = orgBadge(firm);
+  if (!b) return '';
+  return '<span class="org-chip org-chip-' + b.kind + '">' + b.label + '</span>' +
+         '<span class="org-chip-parent">' + b.parent + '</span>';
 }
 
 function renderFirms() {
