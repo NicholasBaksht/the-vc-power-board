@@ -655,3 +655,167 @@ if (document.readyState === 'loading') {
 } else {
   renderThemeSwitcher();
 }
+
+
+/* ============================================================
+   MOTION
+   Two effects: numbers counting into place, and sections fading
+   in as they arrive. Both are opt-in enhancements layered onto a
+   page that is already complete and readable without them.
+
+   THE RULE: if reduced motion is set, neither runs at all - the
+   counter never starts (so the final value is what renders, not
+   a zero that gets animated), and no section is ever hidden. The
+   CSS half of this lives in animations.css.
+   ============================================================ */
+function pbPrefersReducedMotion() {
+  return typeof matchMedia === 'function' &&
+         matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+/* Splits "  $1,234M+ " into prefix / number / suffix so only the numeric
+   part animates and the formatting survives. Returns null when there is
+   nothing sensible to count - a sector name, an empty cell, a year. */
+function pbParseCountable(text) {
+  const raw = String(text == null ? '' : text).trim();
+  if (!raw) return null;
+  const m = raw.match(/^([^0-9-]*)(-?[0-9][0-9,]*(?:\.[0-9]+)?)(.*)$/);
+  if (!m) return null;
+  const digits = m[2].replace(/,/g, '');
+  const value = parseFloat(digits);
+  if (!isFinite(value)) return null;
+
+  /* A year must not count up from zero - watching "Avg. Founded Year"
+     sprint from 0 to 2001 is a gag, not a data product. Detected as a
+     bare 4-digit number in a plausible year range with no prefix or
+     suffix attached. */
+  const bareFourDigit = !m[1] && !m[3] && /^[0-9]{4}$/.test(digits);
+  if (bareFourDigit && value >= 1900 && value <= 2100) return null;
+
+  /* Nothing to watch below ~8 - it lands before the eye registers it.
+     Unless a magnitude suffix is attached: "$1.223T+" is numerically
+     small but is a headline figure, and counting it up reads correctly. */
+  const hasMagnitude = /[TBMK]/.test(m[3] || '');
+  if (!hasMagnitude && Math.abs(value) < 8) return null;
+
+  const decimals = (digits.split('.')[1] || '').length;
+  const grouped = m[2].indexOf(',') !== -1;
+  return { prefix: m[1], suffix: m[3], value, decimals, grouped };
+}
+
+function pbFormatCount(n, spec) {
+  let s = spec.decimals ? n.toFixed(spec.decimals) : String(Math.round(n));
+  if (spec.grouped) {
+    const parts = s.split('.');
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    s = parts.join('.');
+  }
+  return spec.prefix + s + spec.suffix;
+}
+
+function pbAnimateCount(el) {
+  if (el.dataset.counted === '1') return;
+  const spec = pbParseCountable(el.textContent);
+  if (!spec) { el.dataset.counted = '1'; return; }
+  el.dataset.counted = '1';
+
+  const DURATION = 620;
+  const start = (typeof performance !== 'undefined' ? performance.now() : Date.now());
+  // easeOutCubic: quick to start, settles rather than stopping dead
+  const ease = t => 1 - Math.pow(1 - t, 3);
+
+  const step = (now) => {
+    const t = Math.min(1, ((now || Date.now()) - start) / DURATION);
+    el.textContent = pbFormatCount(spec.value * ease(t), spec);
+    if (t < 1) requestAnimationFrame(step);
+    else el.textContent = pbFormatCount(spec.value, spec);  // exact final value
+  };
+  requestAnimationFrame(step);
+}
+
+const PB_COUNT_SELECTOR = '.stat-card-num, .stat-box .num, .coverage-pct, .worldmap-stat-num';
+const PB_REVEAL_SELECTOR = '#byTheNumbersSection, .feature-grid-section, .below-hero, .coverage-block, #methodologyAnchor';
+
+function pbInView(el) {
+  const r = el.getBoundingClientRect();
+  if (r.width === 0 && r.height === 0) return false;   // display:none
+  return r.top < (window.innerHeight || 0) && r.bottom > 0;
+}
+
+/* One pass over everything waiting on motion: reveal what has scrolled
+   into view, start any counter that has. Idempotent, so it is safe to
+   call from several triggers at once.
+
+   `force` reveals everything regardless of position. It is the safety
+   net: content is never allowed to stay hidden because an observer did
+   not fire, and this runs on a timer whether or not anything else works. */
+function pbSweep(force) {
+  const reveals = document.querySelectorAll('.pb-reveal:not(.is-visible)');
+  for (let i = 0; i < reveals.length; i++) {
+    if (force || pbInView(reveals[i])) reveals[i].classList.add('is-visible');
+  }
+  const counters = document.querySelectorAll(PB_COUNT_SELECTOR);
+  for (let i = 0; i < counters.length; i++) {
+    const el = counters[i];
+    if (el.dataset.counted === '1') continue;
+    if (force) { el.dataset.counted = '1'; continue; }  // leave the real value alone
+    if (pbInView(el)) pbAnimateCount(el);
+  }
+}
+
+let pbSweepQueued = false;
+function pbQueueSweep() {
+  if (pbSweepQueued) return;
+  pbSweepQueued = true;
+  requestAnimationFrame(function () { pbSweepQueued = false; pbSweep(false); });
+}
+
+function pbInitMotion() {
+  if (pbPrefersReducedMotion()) return;   // nothing hidden, nothing animated
+
+  const sections = document.querySelectorAll(PB_REVEAL_SELECTOR);
+  for (let i = 0; i < sections.length; i++) {
+    // Anything already on screen is left alone rather than hidden and
+    // faded back in - that reads as a flash on load.
+    if (!pbInView(sections[i])) sections[i].classList.add('pb-reveal');
+  }
+
+  /* THREE triggers, deliberately redundant.
+
+     IntersectionObserver is the efficient one, but it cannot be the only
+     one: if it is unavailable, throttled, or silently fails to deliver
+     (which it does in some embedded and headless contexts), every
+     .pb-reveal section would stay at opacity 0 forever - the page would
+     ship with its content invisible. Scroll covers that, and the timer
+     covers the case where the user never scrolls at all. */
+  if (typeof IntersectionObserver === 'function') {
+    const io = new IntersectionObserver(function (entries) {
+      let any = false;
+      for (let i = 0; i < entries.length; i++) if (entries[i].isIntersecting) any = true;
+      if (any) pbSweep(false);
+    }, { threshold: 0.05 });
+    const watched = document.querySelectorAll('.pb-reveal, ' + PB_COUNT_SELECTOR);
+    for (let i = 0; i < watched.length; i++) io.observe(watched[i]);
+  }
+
+  window.addEventListener('scroll', pbQueueSweep, { passive: true });
+  window.addEventListener('resize', pbQueueSweep, { passive: true });
+
+  pbSweep(false);                          // whatever is already on screen
+  setTimeout(function () { pbSweep(false); }, 400);   // after late renders
+  setTimeout(function () { pbSweep(true); }, 2500);   // hard safety net
+}
+
+/* Re-run after a route change: the router swaps views, so a section that
+   was not in the DOM on first load still gets its counters. */
+function pbRefreshMotion() {
+  if (pbPrefersReducedMotion()) return;
+  pbSweep(false);
+}
+window.addEventListener('hashchange', function () { setTimeout(pbRefreshMotion, 60); });
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', pbInitMotion);
+} else {
+  pbInitMotion();
+}
