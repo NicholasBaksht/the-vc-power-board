@@ -2,6 +2,37 @@
    FIRM-DETAIL.JS
    Renders a single firm's full detail page.
    ============================================================ */
+
+/* The badge and the lineage line both read data-orgs.js. Neither the
+   parent company nor the word "Corporate VC" is written here - this
+   file only decides where they sit on the page. Guarded with typeof so
+   the profile still renders if data-orgs.js ever fails to load. */
+function renderOrgBadge(firm) {
+  if (typeof orgBadge !== 'function') return '';
+  const b = orgBadge(firm);
+  if (!b) return '';
+  return '<div class="org-badge org-badge-' + b.kind + '">' +
+           '<span class="org-badge-label">' + b.label + '</span>' +
+           '<span class="org-badge-sep">\u00B7</span>' +
+           '<span class="org-badge-parent">Parent: ' + b.parent + '</span>' +
+         '</div>';
+}
+
+/* Firms with a corporate ORIGIN that are independent today. Shown as
+   history, never as a badge - Sapphire left SAP in 2011 and labelling
+   it SAP's arm now would simply be wrong. */
+function renderOrgLineage(firm) {
+  if (typeof orgLineage !== 'function') return '';
+  const l = orgLineage(firm);
+  if (!l) return '';
+  const yr = l.spunOutYear ? ' (' + l.spunOutYear + ')' : '';
+  return '<div class="org-lineage">' +
+           '<span class="org-lineage-label">Former parent</span> ' +
+           l.formerParent + yr +
+           (l.note ? '<span class="org-lineage-note">' + l.note + '</span>' : '') +
+         '</div>';
+}
+
 function renderDetail(firm) {
   const totalHoldings = firm.holdings.length;
   const pricedHoldings = firm.holdings.filter(h => h.price !== null).length;
@@ -55,6 +86,7 @@ const holdingsHTML = firm.holdings.map(h => {
     <div class="detail-card">
       <div class="detail-rank">NO. ${String(firm.rank).padStart(2, '0')} BY AUM</div>
 <div class="detail-name">${firm.name}</div>
+      ${renderOrgBadge(firm)}
       <div class="detail-personality">${computeInvestmentPersonality(firm).sentence}</div>
           <div class="detail-meta">
         ${[
@@ -87,6 +119,7 @@ const holdingsHTML = firm.holdings.map(h => {
         </div>
       </div>
       <p class="detail-about">${firm.thesis}</p>
+      ${renderOrgLineage(firm)}
       <div class="founder-callout">
         <div class="founder-callout-label">For Founders</div>
     <div class="founder-callout-row">
