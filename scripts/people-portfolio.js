@@ -136,8 +136,9 @@ function renderPortfolioResults() {
         let returnCls = 'return-unknown', returnText = '—';
         if (c.holding.historicalPrice !== null && c.holding.price !== null) {
           const pct = ((c.holding.price - c.holding.historicalPrice) / c.holding.historicalPrice) * 100;
-          returnCls = pct >= 0 ? 'return-positive' : 'return-negative';
-          returnText = `${pct >= 0 ? '+' : ''}${pct.toFixed(1)}%`;
+          const r1 = Number(pct.toFixed(1));
+          returnCls = r1 > 0 ? 'return-positive' : r1 < 0 ? 'return-negative' : 'return-flat';
+          returnText = `${typeof directionLabel === 'function' ? directionLabel(r1) : ''}${r1 > 0 ? '+' : ''}${r1.toFixed(1)}%`;
         }
       const priceText = c.holding.price !== null ? `$${c.holding.price.toFixed(2)}` : '—';
         return `
@@ -182,8 +183,9 @@ function renderCompanyProfile(companySlug) {
     priceHTML = `$${h.price.toFixed(2)}`;
     if (h.historicalPrice !== null) {
       const pct = ((h.price - h.historicalPrice) / h.historicalPrice) * 100;
-      const cls = pct >= 0 ? 'return-positive' : 'return-negative';
-      returnHTML = `<div class="company-detail-return ${cls}">${pct >= 0 ? '+' : ''}${pct.toFixed(1)}% since Jan 2, 2025</div>`;
+      const r2 = Number(pct.toFixed(1));
+      const cls = r2 > 0 ? 'return-positive' : r2 < 0 ? 'return-negative' : 'return-flat';
+      returnHTML = `<div class="company-detail-return ${cls}">${typeof directionLabel === 'function' ? directionLabel(r2) : ''}${r2 > 0 ? '+' : ''}${r2.toFixed(1)}% since Jan 2, 2025</div>`;
     }
   }
 
