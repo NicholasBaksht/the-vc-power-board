@@ -168,6 +168,11 @@
     border-radius: 50%;
     background: var(--green);
     flex-shrink: 0;
+    /* The one continuous loop on the site. It means "this data is live",
+       so it is the one thing that should keep moving; the pulse is slow
+       and low-contrast so it reads as a status light, not a blinker.
+       Disabled wholesale by the reduced-motion block in animations.css. */
+    animation: pbLivePulse 2.6s ease-in-out infinite;
 }
 .pb-badge strong { color: var(--ink); font-weight: 500; }
 
