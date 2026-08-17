@@ -302,7 +302,7 @@
     background: linear-gradient(90deg, var(--gold), var(--gold-bright));
   }
 .geo-row.secondary .geo-bar-fill {
-    background: linear-gradient(90deg, rgba(47,111,237,0.5), rgba(47,111,237,0.3));
+    background: linear-gradient(90deg, rgba(var(--accent-rgb),0.5), rgba(var(--accent-rgb),0.3));
   }
   .geo-heatmap-note {
     font-family: var(--mono);
