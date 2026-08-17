@@ -202,7 +202,7 @@
   .company-story {
     margin: 24px 0;
     padding: 20px 22px;
-    background: linear-gradient(135deg,rgba(75,130,239,0.07), transparent);
+    background: linear-gradient(135deg,rgba(var(--accent-rgb),0.07), transparent);
     border: 1px solid var(--gold);
     border-radius: 6px;
     font-size: 14.5px;
