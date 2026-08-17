@@ -696,6 +696,8 @@ function renderAnalytics() {
       });
     }
   }
+
+  renderDataCoverage();
 }
 // ============================================================
 // PEER FIRMS BY CATEGORY / LOCATION / STAGE — a second, distinct
@@ -832,4 +834,120 @@ function renderPeerFirmLinks(firm) {
     <div class="detail-subhead">Explore Related Firms</div>
     ${groupsHtml}
   `;
+}
+
+
+/* ============================================================
+   DATA COVERAGE
+   How complete the dataset actually is, counted from the dataset
+   itself. Every number below is computed at render time - there
+   are no stored percentages, so a firm added tomorrow moves these
+   bars without anyone editing this file.
+
+   The point is not to look finished. Portfolio pricing in
+   particular is thin, and saying so plainly is worth more than a
+   bar quietly rounded up. Where a figure is low it is shown low.
+   ============================================================ */
+function computeDataCoverage() {
+  const num = v => typeof v === 'number' && isFinite(v);
+  const F = typeof firms !== 'undefined' && Array.isArray(firms) ? firms : [];
+  const P = (typeof partnerProfiles !== 'undefined' && partnerProfiles)
+    ? Object.keys(partnerProfiles).map(k => partnerProfiles[k]) : [];
+
+  // flatten every holding row once
+  const H = [];
+  F.forEach(f => (f.holdings || []).forEach(h => H.push(h)));
+
+  const firmHas = fn => F.filter(fn).length;
+  const holdHas = fn => H.filter(fn).length;
+
+  return {
+    groups: [
+      {
+        label: 'Firm records',
+        denom: F.length,
+        denomLabel: 'firms',
+        rows: [
+          { label: 'Founding year on file',   n: firmHas(f => num(f.founded)) },
+          { label: 'Leadership listed',       n: firmHas(f => (f.leadership || []).length > 0) },
+          { label: 'Firm timeline',           n: firmHas(f => (f.timeline || []).length > 0) },
+          { label: 'Signature exit recorded', n: firmHas(f => !!f.signatureExit) }
+        ]
+      },
+      {
+        label: 'Portfolio pricing',
+        denom: F.length,
+        denomLabel: 'firms',
+        rows: [
+          { label: 'Has tracked holdings',    n: firmHas(f => (f.holdings || []).length > 0) },
+          { label: 'Has a current price',     n: firmHas(f => (f.holdings || []).some(h => num(h.price))) },
+          { label: 'Has a buy-in price',      n: firmHas(f => (f.holdings || []).some(h => num(h.historicalPrice))) },
+          { label: 'Has both, same holding',  n: firmHas(f => (f.holdings || []).some(h => num(h.price) && num(h.historicalPrice))) }
+        ]
+      },
+      {
+        label: 'Partner profiles',
+        denom: P.length,
+        denomLabel: 'partners',
+        rows: [
+          { label: 'At least one source',     n: P.filter(p => (p.sources || []).length > 0).length },
+          { label: 'Career timeline',         n: P.filter(p => (p.careerTimeline || []).length > 0).length },
+          { label: 'Education on file',       n: P.filter(p => (p.education || []).length > 0).length },
+          { label: 'Notable investments',     n: P.filter(p => (p.notableInvestments || []).length > 0).length }
+        ]
+      }
+    ],
+    holdingRows: H.length,
+    holdingsPriced: holdHas(h => num(h.price)),
+    holdingsWithBuy: holdHas(h => num(h.historicalPrice))
+  };
+}
+
+function renderDataCoverage() {
+  const host = document.getElementById('byTheNumbersSection');
+  if (!host) return;
+
+  let el = document.getElementById('dataCoverage');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'dataCoverage';
+    el.className = 'coverage-block';
+    host.appendChild(el);
+  }
+
+  const c = computeDataCoverage();
+  const pct = (n, d) => (d ? Math.round((n / d) * 100) : 0);
+
+  // Bars below 25% are marked so a thin figure reads as thin rather
+  // than as a short bar someone might not look at twice.
+  const bar = (row, denom) => {
+    const p = pct(row.n, denom);
+    const thin = p < 25 ? ' is-thin' : '';
+    return `
+      <div class="coverage-row">
+        <div class="coverage-label">${row.label}</div>
+        <div class="coverage-track">
+          <div class="coverage-fill${thin}" style="width: ${p}%"></div>
+        </div>
+        <div class="coverage-figure"><span class="coverage-pct">${p}%</span>
+          <span class="coverage-count">${row.n} of ${denom}</span></div>
+      </div>`;
+  };
+
+  el.innerHTML = `
+    <div class="analytics-subhead">Data Coverage</div>
+    <p class="coverage-intro">How complete this dataset actually is, counted from the data on this
+       page rather than claimed. Where a field is thinly covered, the bar shows it.</p>
+    ${c.groups.map(g => `
+      <div class="coverage-group">
+        <div class="coverage-group-label">${g.label}
+          <span class="coverage-group-denom">${g.denom} ${g.denomLabel}</span></div>
+        ${g.rows.map(r => bar(r, g.denom)).join('')}
+      </div>`).join('')}
+    <p class="coverage-note">Pricing is the thinnest part of the dataset:
+       ${c.holdingsPriced} of ${c.holdingRows} tracked holdings carry a current price, but only
+       ${c.holdingsWithBuy} carry a buy-in price, so a return can be computed for a minority of
+       positions. Holdings are public-market positions only - private portfolio companies are not
+       priced here, and a firm with no tracked holdings is one we have not verified holdings for,
+       not one without a portfolio.</p>`;
 }
