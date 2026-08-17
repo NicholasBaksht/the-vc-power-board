@@ -557,3 +557,86 @@ function ensureConflictCheckView() {
   anchor.parentNode.insertBefore(el, anchor.nextSibling);
   return el;
 }
+
+
+/* ============================================================
+   ACCENT THEME SWITCHER
+   Writes one attribute - data-theme on <html> - and lets CSS do
+   the rest. Persisted in localStorage under 'pb-theme'.
+
+   index.html carries a one-line inline script in <head> that
+   applies the stored value before first paint. Without it the
+   page renders in the default accent and then flips, which is
+   visible on every load. This function only builds the control.
+   ============================================================ */
+const PB_THEMES = ['navy', 'blue', 'amber'];
+const PB_THEME_KEY = 'pb-theme';
+
+function pbGetTheme() {
+  try {
+    const t = localStorage.getItem(PB_THEME_KEY);
+    return PB_THEMES.indexOf(t) !== -1 ? t : 'blue';
+  } catch (e) { return 'blue'; }
+}
+
+function pbSetTheme(name) {
+  if (PB_THEMES.indexOf(name) === -1) return;
+  const root = document.documentElement;
+
+  /* Transitions are suppressed for the duration of the swap.
+
+     Two reasons. First a correctness one: when a custom property changes
+     on an ancestor, elements with a transition on a property that READS
+     that custom property do not reliably re-interpolate - they hold the
+     old value until something else invalidates them. The header CTA
+     stayed blue after switching to amber until you hovered it. Second, a
+     200ms colour animation running across every themed element at once
+     looks like a glitch rather than a choice. */
+  root.classList.add('pb-theming');
+  root.setAttribute('data-theme', name);
+  void root.offsetWidth;  // force the recalc while transitions are off
+  if (typeof requestAnimationFrame === 'function') {
+    requestAnimationFrame(function () { root.classList.remove('pb-theming'); });
+  } else {
+    root.classList.remove('pb-theming');
+  }
+  try { localStorage.setItem(PB_THEME_KEY, name); } catch (e) { /* private mode */ }
+  const dots = document.querySelectorAll('.pb-theme-dot');
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].setAttribute('aria-pressed', String(dots[i].dataset.themeSet === name));
+  }
+}
+
+function renderThemeSwitcher() {
+  const host = document.querySelector('.pb-header-actions');
+  if (!host || document.querySelector('.pb-theme')) return;
+
+  const current = pbGetTheme();
+  const wrap = document.createElement('div');
+  wrap.className = 'pb-theme';
+  wrap.setAttribute('role', 'group');
+  wrap.setAttribute('aria-label', 'Accent colour');
+
+  PB_THEMES.forEach(function (name) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'pb-theme-dot';
+    b.dataset.themeSet = name;
+    b.title = name.charAt(0).toUpperCase() + name.slice(1) + ' accent';
+    b.setAttribute('aria-label', b.title);
+    b.setAttribute('aria-pressed', String(name === current));
+    b.addEventListener('click', function () { pbSetTheme(name); });
+    wrap.appendChild(b);
+  });
+
+  host.insertBefore(wrap, host.firstChild);
+  // Re-assert on load: the inline head script set the attribute, this
+  // makes the control agree with it.
+  pbSetTheme(current);
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', renderThemeSwitcher);
+} else {
+  renderThemeSwitcher();
+}
