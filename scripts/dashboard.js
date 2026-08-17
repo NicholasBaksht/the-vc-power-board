@@ -612,15 +612,34 @@ function renderAnalytics() {
     </div>
   `;
 
-  // Count how many firms touch each sector
-  const sectorCounts = {};
-  firms.forEach(f => {
-    f.sectors.forEach(s => {
+  /* Sector coverage, counted in CANONICAL buckets rather than raw tags.
+
+     The raw `sectors` strings are each firm's own wording - there are
+     157 of them, and charting all 157 produced a 5,585px column that
+     trailed off into dozens of one-firm rows ("Sensor Technology 1",
+     "Cloud Computing 1"). Rolling them up through taxonomy.js gives 21
+     real categories and the same information in a readable block.
+
+     No raw tag is discarded: every firm still shows its own wording on
+     its profile, and the rollup is the same SECTOR_MAP the filter chips
+     and the /companies/ pages already use, so the three always agree. */
+  const useCanonical = typeof sectorFirmCounts === 'function' && typeof SECTOR_MAP !== 'undefined';
+  let sortedSectors;
+  if (useCanonical) {
+    const counts = sectorFirmCounts(firms);
+    sortedSectors = Object.keys(counts)
+      .filter(k => counts[k] > 0)
+      .map(k => [k === '__generalist' ? 'Generalist' : SECTOR_MAP[k].label, counts[k]])
+      .sort((a, b) => b[1] - a[1]);
+  } else {
+    // taxonomy.js absent - fall back to the raw tally rather than blank
+    const sectorCounts = {};
+    firms.forEach(f => (f.sectors || []).forEach(s => {
       sectorCounts[s] = (sectorCounts[s] || 0) + 1;
-    });
-  });
-  const maxCount = Math.max(...Object.values(sectorCounts));
-  const sortedSectors = Object.entries(sectorCounts).sort((a, b) => b[1] - a[1]);
+    }));
+    sortedSectors = Object.entries(sectorCounts).sort((a, b) => b[1] - a[1]);
+  }
+  const maxCount = sortedSectors.length ? sortedSectors[0][1] : 1;
 
   document.getElementById('sectorChart').innerHTML = sortedSectors.map(([sector, count]) => `
     <div class="sector-row">
@@ -632,12 +651,51 @@ function renderAnalytics() {
     </div>
   `).join('');
 
-  document.getElementById('exitsList').innerHTML = firms.map(f => `
+  /* Signature exits.
+
+     TWO fixes here. First, this mapped over every firm, but only 300 of
+     361 have a signatureExit - so 71 rows rendered the literal string
+     "undefined" on the homepage (Vy Capital, Sutter Hill, Alven and 68
+     others). Filtering first is the actual bug fix.
+
+     Second, printing 300 rows down the homepage produced a 41,273px
+     block - 72% of the entire page. The full list is still built and
+     still in the DOM; it is just collapsed behind a control, so the
+     data is complete but the page is readable. Nothing is dropped. */
+  const EXIT_PREVIEW = 8;
+  const withExits = firms.filter(f => f.signatureExit);
+  const exitRow = f => `
     <div class="exit-row">
       <div class="exit-firm">${f.name}</div>
       <div class="exit-detail">${f.signatureExit}</div>
-    </div>
-  `).join('');
+    </div>`;
+
+  const exitsEl = document.getElementById('exitsList');
+  if (exitsEl) {
+    exitsEl.innerHTML =
+      `<div class="exits-preview">${withExits.slice(0, EXIT_PREVIEW).map(exitRow).join('')}</div>` +
+      `<div class="exits-rest" id="exitsRest" hidden>${withExits.slice(EXIT_PREVIEW).map(exitRow).join('')}</div>` +
+      `<button type="button" class="exits-toggle" id="exitsToggle"
+               aria-expanded="false" aria-controls="exitsRest">
+         Show all ${withExits.length} signature exits
+       </button>` +
+      `<p class="exits-note">${withExits.length} of ${firms.length} tracked firms have a
+       verified signature exit on file. The remaining ${firms.length - withExits.length}
+       have none recorded - shown as absent rather than guessed.</p>`;
+
+    const toggle = document.getElementById('exitsToggle');
+    const rest = document.getElementById('exitsRest');
+    if (toggle && rest) {
+      toggle.addEventListener('click', () => {
+        const open = !rest.hidden;
+        rest.hidden = open;
+        toggle.setAttribute('aria-expanded', String(!open));
+        toggle.textContent = open
+          ? `Show all ${withExits.length} signature exits`
+          : 'Show fewer';
+      });
+    }
+  }
 }
 // ============================================================
 // PEER FIRMS BY CATEGORY / LOCATION / STAGE — a second, distinct
