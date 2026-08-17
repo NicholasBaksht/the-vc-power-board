@@ -544,13 +544,14 @@ function renderDashboard() {
   const leaderboard = [...seen.values()].sort((a, b) => b.pct - a.pct);
 
   const leaderboardHTML = leaderboard.length > 0 ? leaderboard.map((item, i) => {
-    const cls = item.pct >= 0 ? 'positive' : 'negative';
+    const r = Number(item.pct.toFixed(1));
+    const cls = r > 0 ? 'positive' : r < 0 ? 'negative' : 'flat';
     const sign = item.pct >= 0 ? '+' : '';
     return `
       <div class="leaderboard-row">
         <div class="leaderboard-rank">${i + 1}</div>
         <div class="leaderboard-name">${item.name}<span class="ticker">${item.ticker}</span></div>
-        <span class="return-badge ${cls}">${sign}${item.pct.toFixed(1)}%</span>
+        <span class="return-badge ${cls}">${typeof directionLabel === 'function' ? directionLabel(r) : ''}${sign}${r.toFixed(1)}%</span>
       </div>`;
   }).join('') : `<p class="leaderboard-note">No holdings with verified historical prices yet.</p>`;
 
