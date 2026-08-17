@@ -29,6 +29,10 @@
        up the new identity without being individually touched. */
        --accent: #4B82EF;
     --accent-bright: #5B8DEF;
+    /* The same accent as channels, for the translucent washes. 22 rules
+       across 7 stylesheets used to hard-code rgba(75,130,239,...) and so
+       ignored the theme entirely; they read this instead. */
+    --accent-rgb: 75, 130, 239;
     --gold: var(--accent);
     --gold-bright: var(--accent-bright);
 
@@ -678,3 +682,86 @@
   .cc-btn { flex: 1 1 auto; text-align: center; }
 }
 @media (prefers-reduced-motion: reduce) { .cc-btn { transition: none; } }
+
+
+/* ============================================================
+   ACCENT THEMES
+   A real theme switch, not a repaint: only --accent,
+   --accent-bright and --accent-rgb change. Everything downstream
+   - buttons, chips, badges, bars, links, gradient washes, the
+   org badges, the coverage meter - already reads those three, so
+   no component needs its own theme rule.
+
+   Surfaces stay navy in all three. This switches the ACCENT, not
+   the light/dark mode; a data product should not have its
+   background yanked out from under a reader mid-session.
+   ============================================================ */
+
+/* Navy - muted and institutional. */
+:root[data-theme="navy"] {
+  --accent: #5479B5;
+  --accent-bright: #6389C4;
+  --accent-rgb: 84, 121, 181;
+}
+
+/* Blue - the current identity, and the default. */
+:root[data-theme="blue"] {
+  --accent: #4B82EF;
+  --accent-bright: #5B8DEF;
+  --accent-rgb: 75, 130, 239;
+}
+
+/* Amber - the financial-terminal reading. */
+:root[data-theme="amber"] {
+  --accent: #D9963F;
+  --accent-bright: #E8A94F;
+  --accent-rgb: 217, 150, 63;
+}
+
+/* --- the switcher itself --- */
+.pb-theme {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 12px;
+  padding: 4px 6px;
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+}
+.pb-theme-dot {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  border-radius: 2px;
+  border: 1px solid var(--hairline);
+  cursor: pointer;
+  background: var(--swatch);
+  transition: transform .12s ease, border-color .12s ease;
+}
+.pb-theme-dot[data-theme-set="navy"]  { --swatch: #5479B5; }
+.pb-theme-dot[data-theme-set="blue"]  { --swatch: #4B82EF; }
+.pb-theme-dot[data-theme-set="amber"] { --swatch: #D9963F; }
+
+.pb-theme-dot:hover { transform: scale(1.12); }
+.pb-theme-dot:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* The active swatch is marked by a ring AND by aria-pressed, so the
+   selection is not communicated by colour alone. */
+.pb-theme-dot[aria-pressed="true"] {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 1px var(--ink);
+}
+
+/* Applied only while the accent is being swapped - see pbSetTheme(). */
+:root.pb-theming,
+:root.pb-theming *,
+:root.pb-theming *::before,
+:root.pb-theming *::after {
+  transition: none !important;
+}
+
+@media (max-width: 900px) { .pb-theme { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .pb-theme-dot { transition: none; }
+  .pb-theme-dot:hover { transform: none; }
+}
