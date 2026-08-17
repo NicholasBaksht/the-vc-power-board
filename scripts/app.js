@@ -427,12 +427,27 @@ function buildTicker() {
   if (!track) return;
   const seen = new Map();
   firms.forEach(f => f.holdings.forEach(h => {
-    if (!seen.has(h.ticker)) seen.set(h.ticker, h.price);
+    if (!seen.has(h.ticker)) seen.set(h.ticker, h);
   }));
   const parts = [];
-  seen.forEach((price, ticker) => {
-    const priceStr = price !== null ? `$${price.toFixed(2)}` : '—';
-    parts.push(`<span>${ticker} <span class="up">${priceStr}</span></span>`);
+  /* Every ticker price used to render with class "up", which painted the
+     whole tape green regardless of which way anything had actually moved.
+     A green number reads as a gain, so the tape was making a directional
+     claim it had not checked. Direction now comes from historicalPrice
+     where one exists; where it does not, the price is neutral rather than
+     optimistic. */
+  seen.forEach((h, ticker) => {
+    const price = h.price;
+    const priceStr = price !== null ? `$${price.toFixed(2)}` : '\u2014';
+    let cls = 'flat', mark = '';
+    if (price !== null && h.historicalPrice !== null && h.historicalPrice !== 0) {
+      const pct = Number((((price - h.historicalPrice) / h.historicalPrice) * 100).toFixed(1));
+      cls = pct > 0 ? 'up' : pct < 0 ? 'down' : 'flat';
+      mark = typeof directionMark === 'function' ? directionMark(pct)
+           : (pct > 0 ? '\u2191' : pct < 0 ? '\u2193' : '\u2192');
+      mark = '<span class="dir-mark" aria-hidden="true">' + mark + '</span>';
+    }
+    parts.push(`<span>${ticker} <span class="${cls}">${mark}${priceStr}</span></span>`);
   });
   const line = parts.join('');
   track.innerHTML = line + line; // duplicate for seamless scroll
