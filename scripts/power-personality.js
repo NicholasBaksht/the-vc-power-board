@@ -39,6 +39,10 @@ const PP_ARCHETYPES = {
   'research-driven':  { emoji: '\u{1F52C}', label: 'Research-Driven',  kind: 'sector' },
   'fintech':          { emoji: '\u{1F4B3}', label: 'Fintech',          kind: 'sector' },
   'crypto':           { emoji: '\u26D3', label: 'Crypto & Web3',   kind: 'sector' },
+  'defense':          { emoji: '\u{1F6E1}', label: 'Defense',          kind: 'sector' },
+  'industrial':       { emoji: '\u{1F3D7}', label: 'Industrial',       kind: 'sector' },
+  'mobility':         { emoji: '\u{1F69A}', label: 'Mobility & Logistics', kind: 'sector' },
+  'edtech':           { emoji: '\u{1F393}', label: 'Education',        kind: 'sector' },
   'mission-driven':   { emoji: '\u{1F331}', label: 'Mission-Driven',   kind: 'sector' },
   'sector-specialist':{ emoji: '\u{1F3AF}', label: 'Sector Specialist',kind: 'shape' , secondaryOnly: true },
   'early-mover':      { emoji: '⚡',     label: 'Early-Mover',      kind: 'stage' , secondaryOnly: true },
@@ -62,6 +66,10 @@ const PP_SECTOR_GROUPS = {
   'research-driven': ['healthcare'],
   'fintech':         ['fintech'],
   'crypto':          ['crypto'],
+  'defense':         ['defense-tech'],
+  'industrial':      ['industrial-tech'],
+  'mobility':        ['mobility'],
+  'edtech':          ['edtech'],
   'mission-driven':  ['climate', 'food-agriculture'],
   'technical':       ['ai', 'developer-tools', 'deep-tech', 'cybersecurity', 'hardware', 'robotics', 'space']
 };
@@ -266,7 +274,8 @@ const PP_MAX_SECONDARY   = 3;
    more than "Technical", and "Technical" overlaps it by construction,
    so the sharper label wins a tie and the vaguer one falls to a trait. */
 const PP_SPECIFICITY = {
-  'ai-native': 10, 'crypto': 10, 'deep-tech': 9, 'research-driven': 9,
+  'ai-native': 10, 'crypto': 10, 'defense': 10, 'edtech': 10,
+  'deep-tech': 9, 'research-driven': 9, 'mobility': 9, 'industrial': 8,
   'mission-driven': 9, 'fintech': 9,
   'strategic': 8, 'enterprise': 7, 'consumer': 7, 'founder-first': 6,
   'operator-led': 6, 'early-mover': 5, 'scale-focused': 5, 'capital-heavy': 4,
