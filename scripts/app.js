@@ -37,7 +37,10 @@ function renderFeaturedFirm() {
 function renderScaleBar() {
   const totalFirms = firms.length;
   const totalPartners = Object.keys(partnerProfiles).length;
-  const countryCount = new Set(firms.map(f => getCountryFromHQ(f.hq))).size;
+  // Firms with no HQ on file resolve to null and are excluded, so the
+  // country count stays a count of known countries rather than gaining a
+  // phantom entry for "unknown".
+  const countryCount = new Set(firms.map(f => getCountryFromHQ(f.hq)).filter(Boolean)).size;
   const avgFoundedYear = Math.round(firms.reduce((sum, f) => sum + f.founded, 0) / totalFirms);
 
   // firms is already sorted by AUM descending (see utilities.js), so the
