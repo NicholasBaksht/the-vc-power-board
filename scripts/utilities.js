@@ -20,29 +20,68 @@ function parseAumNumber(aumStr) {
   // estimates $1.8B deployed since 1999)"). Without this check, the
   // regexes below would grab that contextual number and silently rank
   // the firm as if it were a confirmed current AUM figure - the exact
-  // opposite of the honesty this field is meant to convey. Checked
-  // first, before either regex runs.
-  // Scoped to the HEADLINE (everything before the first parenthesis)
-  // rather than the whole string. A qualifier like "$405M (final fund,
-  // closed 2022 per Axios; firm-wide AUM not publicly disclosed)" states
-  // a real figure and then notes what ISN'T disclosed - testing the full
-  // string made that phrase win and ranked Accomplice at 0, which is the
-  // opposite of what this override is for.
-  if (/not (?:publicly )?disclosed/i.test(String(aumStr).split('(')[0])) return 0;
+  // opposite of the honesty this field is meant to convey.
+  //
+  // Scoped to the HEADLINE (everything before the first parenthesis).
+  // A qualifier like "$405M (final fund, closed 2022 per Axios; firm-wide
+  // AUM not publicly disclosed)" states a real figure and then notes what
+  // ISN'T disclosed - testing the full string made that phrase win and
+  // ranked Accomplice at 0.
+  const head = String(aumStr == null ? '' : aumStr).split('(')[0];
+  if (/not (?:publicly )?disclosed/i.test(head)) return 0;
 
- // Accepts $, £, or € - Molten Ventures reports in pounds and Porsche
-  // Ventures in euros, and without this they'd parse as 0 and land in
-  // the wrong fund-size tier (and at the bottom of the rankings).
-  // Currencies are treated as equivalent rather than FX-converted, which
-  // is consistent with AUM already being an approximate figure here.
-  const bMatch = aumStr.match(/[$£€](\d+\.?\d*)B/);
-  if (bMatch) return parseFloat(bMatch[1]);
-  // Handles fund sizes stated in millions (e.g. "$200M+"), converting
-  // to the same billions-denominated scale everything else uses -
-  // without this, any millions-denominated firm would silently
-  // parse as 0 and land in the wrong tier once tiers below $1B exist.
-const mMatch = aumStr.match(/[$£€](\d+\.?\d*)M/);
-  if (mMatch) return parseFloat(mMatch[1]) / 1000;
+  /* EVERYTHING BELOW READS `head`, NEVER THE FULL STRING.
+     The numeric match used to scan the whole value, so a qualifier could
+     supply the number: Kembara reads "€750M (... €1B target ...)" and
+     parsed as 1.0 instead of 0.75 - the firm ranked on its target rather
+     than on what it has actually raised. A parenthetical is context, not
+     the figure. */
+
+  /* Currency handling.
+     $, £ and € are treated as EQUIVALENT rather than FX-converted. That is
+     a deliberate, long-standing choice: AUM here is already an approximate,
+     self-reported figure, and those three sit close enough that converting
+     would imply a precision the data does not have.
+
+     INR and JPY are different. A crore is 10 million and an 億 is 100
+     million, so "₹4,400 crore" and "1,300億円" would parse as 4400 and 1300
+     against a board where the largest firm is 175 - putting two mid-sized
+     funds at the top of the rankings. Those two ARE converted, with the
+     approximate rates below, and the conversion affects RANKING ONLY - the
+     profile always displays the firm's own string, untouched. */
+  const INR_CRORE_TO_USD_BN = 0.00012;   // 1 crore INR ~ $120k
+  const JPY_OKU_TO_USD_BN   = 0.00067;   // 1 oku (1e8) JPY ~ $670k
+
+  const num = (t) => parseFloat(String(t).replace(/,/g, ''));
+
+  // ₹4,400 crore  /  INR 4,400 crore
+  const crore = head.match(/(?:₹|\bINR\b)?\s*([\d,]+(?:\.\d+)?)\s*crore/i);
+  if (crore) return num(crore[1]) * INR_CRORE_TO_USD_BN;
+
+  // 1,300億円
+  const oku = head.match(/([\d,]+(?:\.\d+)?)\s*億/);
+  if (oku) return num(oku[1]) * JPY_OKU_TO_USD_BN;
+
+  /* A currency marker is either a symbol or a word: "€850M", "EUR 850M",
+     "US$500M" and "CHF 1B" are all the same statement. Case-insensitive on
+     the magnitude too, since firms write "$1.4bn+" as readily as "$1.4B". */
+  const CUR = '(?:[$£€¥]|\\bUS\\$|\\bUSD\\b|\\bEUR\\b|\\bGBP\\b|\\bCHF\\b|\\bSGD\\b|\\bAED\\b)';
+
+  /* A range takes its LOW end: Soma Capital reports "~$1-2B", and ranking it
+     at 2 would credit the firm with the most favourable reading of its own
+     estimate. 1 is the number it can actually stand behind. */
+  const bRange = head.match(new RegExp(CUR + '\\s*~?\\s*([\\d,]+(?:\\.\\d+)?)\\s*[-\u2013]\\s*[\\d,.]+\\s*(?:B\\b|bn\\b|billion)', 'i'));
+  if (bRange) return num(bRange[1]);
+  const mRange = head.match(new RegExp(CUR + '\\s*~?\\s*([\\d,]+(?:\\.\\d+)?)\\s*[-\u2013]\\s*[\\d,.]+\\s*(?:M\\b|mn\\b|million)', 'i'));
+  if (mRange) return num(mRange[1]) / 1000;
+
+  const bMatch = head.match(new RegExp(CUR + '\\s*([\\d,]+(?:\\.\\d+)?)\\s*(?:B\\b|bn\\b|billion)', 'i'));
+  if (bMatch) return num(bMatch[1]);
+
+  // Millions, converted to the same billions-denominated scale.
+  const mMatch = head.match(new RegExp(CUR + '\\s*([\\d,]+(?:\\.\\d+)?)\\s*(?:M\\b|mn\\b|million)', 'i'));
+  if (mMatch) return num(mMatch[1]) / 1000;
+
   return 0;
 }
 // Returns a plain-language fund scale label for a firm, using the
