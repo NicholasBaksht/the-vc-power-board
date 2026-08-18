@@ -33,7 +33,7 @@ const SECTOR_MAP = {
     label: 'Fintech',
     slug: 'fintech',
     description: 'financial technology, banking, and payments',
-    rawTags: ['Fintech', 'Fintech Infrastructure', 'Banking Infrastructure', 'Lending', 'Insurance', 'Wealth', 'Insurtech', 'Financial Technology'],
+    rawTags: ['Fintech', 'Fintech Infrastructure', 'Banking Infrastructure', 'Lending', 'Insurance', 'Wealth', 'Insurtech', 'Financial Technology', 'Regtech'],
   },
   'crypto': {
     label: 'Crypto & Web3',
