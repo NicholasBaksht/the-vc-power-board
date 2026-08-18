@@ -168,12 +168,117 @@ function paEvidenceHtml(a) {
     '</tbody></table>' + list + caveat + '</div>';
 }
 
+/* ============================================================
+   POWER ALERTS 2.0
+   Everything below EXTENDS the renderer above rather than
+   replacing it: the same computePowerAlerts() output, the same
+   card markup, the same evidence tables and dismiss behaviour.
+   What is added is who an alert is FOR, how urgent it is, and
+   whether this user has already seen it.
+   ============================================================ */
+
+/* Priority is derived, not assigned. It reads the score and
+   confidence the engine already produced plus the alert type, so
+   the same alert always lands in the same band and the reasoning
+   can be shown to the user.
+
+   The weighting says: an alert about a firm you follow matters more
+   than the same alert about a firm you do not. That is the entire
+   premise of Power Alerts 2.0. */
+const PA2_TYPE_WEIGHT = {
+  fund_step: 0.9,            // a new fund changes what a firm can do for you
+  new_investments: 0.8,      // fresh deployment, and a possible conflict
+  partner_momentum: 0.6,
+  partner_sector_focus: 0.5,
+  coinvestor_network: 0.5,
+  sector_breadth: 0.4,
+  portfolio_overlap: 0.4,
+  firm_milestone_activity: 0.35,
+  fund_year_activity: 0.35
+};
+
+function pa2Priority(a) {
+  const followed = (typeof isFollowing === 'function' && a.firmId) ? isFollowing(a.firmId) : false;
+  const base = (PA2_TYPE_WEIGHT[a.type] || 0.4);
+  /* The engine scores 0-100, not 0-1. Reading it raw put every surfaced
+     alert past the Critical threshold, which made the badge meaningless.
+     Normalise before weighting. */
+  const score = typeof a.score === 'number' ? Math.min(1, a.score / 100) : 0.5;
+  const conf = typeof a.confidence === 'number' ? a.confidence : 0.5;
+  let v = base * 0.4 + score * 0.35 + conf * 0.25;
+  if (followed) v += 0.28;                 // relevance is the dominant term
+
+  /* Thresholds calibrated against the live distribution. The engine only
+     surfaces its top signals, so raw scores cluster at 0.72-0.97 and a
+     naive cutoff bands everything the same. Critical is reserved for a
+     strong signal on a firm the user actually follows. */
+  const label = v >= 0.92 ? 'Critical' : v >= 0.70 ? 'High' : 'Standard';
+  return {
+    label: label,
+    followed: followed,
+    why: (followed ? 'You follow this firm. ' : '') +
+         'Type weight ' + base.toFixed(2) + ', signal score ' +
+         score.toFixed(2) + ', confidence ' + conf.toFixed(2) + '.'
+  };
+}
+
+function pa2IsRead(id) { return typeof isAlertRead === 'function' ? isAlertRead(id) : false; }
+function pa2Muted() { return typeof getMutedTypes === 'function' ? getMutedTypes() : new Set(); }
+
+/* Splits the engine's output into the two sections that actually mean
+   something with the data available: alerts about firms this user
+   follows, and everything else. Sections that would need saved
+   fundraising criteria - Match and Conflict - are deliberately absent
+   rather than shown empty; see the note in the footer. */
+function pa2Partition(alerts) {
+  const muted = pa2Muted();
+  const visible = alerts.filter(function (a) { return !muted.has(a.type); });
+  const forYou = visible.filter(function (a) {
+    return a.firmId && typeof isFollowing === 'function' && isFollowing(a.firmId);
+  });
+  const rest = visible.filter(function (a) { return forYou.indexOf(a) === -1; });
+  const rank = function (x, y) {
+    const px = pa2Priority(x), py = pa2Priority(y);
+    const order = { Critical: 0, High: 1, Standard: 2 };
+    if (order[px.label] !== order[py.label]) return order[px.label] - order[py.label];
+    return (y.score || 0) - (x.score || 0);
+  };
+  return { forYou: forYou.sort(rank), rest: rest.sort(rank), visible: visible };
+}
+
+function pa2FilterBar(alerts) {
+  const muted = pa2Muted();
+  const types = {};
+  alerts.forEach(function (a) { types[a.type] = (types[a.type] || 0) + 1; });
+  const chips = Object.keys(types).sort().map(function (t) {
+    const off = muted.has(t);
+    return '<button type="button" class="pa2-chip' + (off ? ' is-off' : '') +
+      '" data-mute-type="' + paEsc(t) + '" aria-pressed="' + (!off) + '">' +
+      paEsc(t.replace(/_/g, ' ')) + ' <span class="pa2-chip-n">' + types[t] + '</span></button>';
+  }).join('');
+  return '<div class="pa2-filters"><span class="pa2-filters-label">Alert types</span>' +
+    '<div class="pa2-chips">' + chips + '</div></div>';
+}
+
 function paCardHtml(a) {
-  return '<article class="pa-card" data-alert-id="' + paEsc(a.id) + '" data-type="' + paEsc(a.type) + '">' +
+  const pr = pa2Priority(a);
+  const read = pa2IsRead(a.id);
+  const firmLink = (a.firmId && typeof firms !== 'undefined')
+    ? (function () {
+        const f = firms.find(function (x) { return x.slug === a.firmId; });
+        return f ? '<a class="pa2-firm" href="#' + paEsc(f.slug) + '">' + paEsc(f.name) + ' &rarr;</a>' : '';
+      })()
+    : '';
+  return '<article class="pa-card pa2-p-' + pr.label.toLowerCase() +
+      (read ? ' is-read' : '') + (pr.followed ? ' is-followed' : '') +
+      '" data-alert-id="' + paEsc(a.id) + '" data-type="' + paEsc(a.type) + '">' +
     '<header class="pa-card-head">' +
       '<span class="pa-badge">&#128276; Power Alert</span>' +
+      '<span class="pa2-priority" title="' + paEsc(pr.why) + '">' + pr.label + '</span>' +
+      (pr.followed ? '<span class="pa2-following">Following</span>' : '') +
+      (read ? '' : '<span class="pa2-unread" aria-label="Unread">&bull;</span>') +
       '<button class="pa-dismiss" type="button" aria-label="Dismiss this alert">&times;</button>' +
-    '</header>' +
+    '</header>' + firmLink +
     '<h3 class="pa-title">' + paEsc(a.title) + '</h3>' +
     '<p class="pa-desc">' + paEsc(a.description) + '</p>' +
     '<div class="pa-metrics">' + paChangeChip(a) + paBasisLine(a) + '</div>' +
@@ -214,16 +319,51 @@ function renderPowerAlerts() {
     return;
   }
 
+  const part = pa2Partition(live);
+  const unread = part.visible.filter(function (a) { return !pa2IsRead(a.id); }).length;
+  const followCount = (typeof getFollowedFirms === 'function') ? getFollowedFirms().size : 0;
+
+  const section = function (title, note, list) {
+    if (!list.length) return '';
+    return '<div class="pa2-section">' +
+      '<div class="pa2-section-head"><h3>' + title + '</h3>' +
+      '<span class="pa2-section-n">' + list.length + '</span></div>' +
+      (note ? '<p class="pa2-section-note">' + note + '</p>' : '') +
+      '<div class="pa-grid">' + list.map(paCardHtml).join('') + '</div></div>';
+  };
+
+  /* FOR YOU only appears once the user follows something. An empty
+     personalised section with a prompt in it is the same nagging
+     pattern this feature is meant to replace. */
+  const forYouBlock = followCount
+    ? section('For you', 'Signals on the ' + followCount + ' firm' + (followCount === 1 ? '' : 's') +
+        ' you follow, ranked by priority.', part.forYou) ||
+      '<div class="pa2-section"><div class="pa2-section-head"><h3>For you</h3></div>' +
+      '<p class="pa2-empty-inline">Nothing new on the firms you follow right now.</p></div>'
+    : '<div class="pa2-onboard">' +
+        '<strong>Follow a firm to personalise this feed.</strong> ' +
+        'Open any firm profile and use Follow — alerts about those firms will surface here first.' +
+      '</div>';
+
   el.innerHTML = header +
-    '<div class="pa-grid">' + live.map(paCardHtml).join('') + '</div>' +
+    '<div class="pa2-bar">' +
+      '<span class="pa2-unread-count">' + unread + ' unread</span>' +
+      '<button class="pa2-mark-all" type="button"' + (unread ? '' : ' disabled') + '>Mark all read</button>' +
+    '</div>' +
+    pa2FilterBar(live) +
+    forYouBlock +
+    section('All signals', null, part.rest) +
     '<footer class="pa-meta">' +
-      '<span>' + live.length + ' of ' + result.computed + ' computed signals shown</span>' +
+      '<span>' + part.visible.length + ' of ' + result.computed + ' computed signals shown</span>' +
       '<span class="pa-meta-sep">&middot;</span>' +
       '<span>' + result.coverage.firms + ' firms, ' + result.coverage.profilesWithJoinYear +
         ' dated partner records, ' + result.coverage.datedTimelineEvents + ' dated events</span>' +
       '<span class="pa-meta-sep">&middot;</span>' +
       '<button class="pa-reset" type="button">Restore dismissed</button>' +
-    '</footer>';
+    '</footer>' +
+    '<p class="pa2-roadmap">In-app alerts are live. Email and push digests are not yet delivered — ' +
+    'the preference is stored but nothing is sent. Match and conflict alerts need saved fundraising ' +
+    'criteria, which Power Board does not store per user yet.</p>';
 
   // Delegated handlers - one listener for the whole section.
   el.onclick = function (ev) {
@@ -235,6 +375,25 @@ function renderPowerAlerts() {
       panel.hidden = open;
       view.setAttribute('aria-expanded', String(!open));
       view.innerHTML = open ? 'View data &rarr;' : 'Hide data';
+
+      /* Opening the evidence is what counts as reading an alert - not
+         rendering it, which would empty the unread badge before anyone
+         looked. This lives inside the branch because the branch returns;
+         appending it further down meant it never ran. */
+      if (!open && card.dataset.alertId && typeof markAlertRead === 'function'
+          && !card.classList.contains('is-read')) {
+        markAlertRead(card.dataset.alertId);
+        card.classList.add('is-read');
+        const dot = card.querySelector('.pa2-unread');
+        if (dot) dot.remove();
+        const counter = el.querySelector('.pa2-unread-count');
+        if (counter) {
+          const n = Math.max(0, parseInt(counter.textContent, 10) - 1);
+          counter.textContent = n + ' unread';
+          const mark = el.querySelector('.pa2-mark-all');
+          if (mark && n === 0) mark.disabled = true;
+        }
+      }
       return;
     }
     const kill = ev.target.closest('.pa-dismiss');
@@ -248,6 +407,29 @@ function renderPowerAlerts() {
     if (ev.target.closest('.pa-reset')) {
       paSaveDismissed([]);
       renderPowerAlerts();
+      return;
+    }
+    const mute = ev.target.closest('[data-mute-type]');
+    if (mute) {
+      if (typeof toggleMutedType === 'function') toggleMutedType(mute.dataset.muteType);
+      renderPowerAlerts();
+      return;
+    }
+    if (ev.target.closest('.pa2-mark-all')) {
+      if (typeof markAllAlertsRead === 'function') {
+        markAllAlertsRead(part.visible.map(function (a) { return a.id; }));
+      }
+      renderPowerAlerts();
+      return;
     }
   };
 }
+
+/* Following a firm from a profile page re-ranks this feed, so the
+   section listens rather than waiting for a reload. */
+document.addEventListener('pb:follows-changed', function () {
+  if (document.getElementById('powerAlerts')) renderPowerAlerts();
+});
+document.addEventListener('pb:alerts-changed', function () {
+  if (document.getElementById('powerAlerts')) renderPowerAlerts();
+});
