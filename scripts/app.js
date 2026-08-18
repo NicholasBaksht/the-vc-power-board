@@ -819,3 +819,36 @@ if (document.readyState === 'loading') {
 } else {
   pbInitMotion();
 }
+
+
+/* ============================================================
+   POWER PERSONALITY HOSTS
+   Created here rather than added to index.html, so the feature
+   ships as script + stylesheet with no markup to paste. Both are
+   inserted next to the elements they belong beside.
+   ============================================================ */
+function ensurePersonalityHosts() {
+  // distribution, at the end of By the Numbers
+  const analytics = document.getElementById('byTheNumbersSection');
+  if (analytics && !document.getElementById('personalityDistribution')) {
+    const d = document.createElement('div');
+    d.id = 'personalityDistribution';
+    d.className = 'pp-dist-block';
+    analytics.appendChild(d);
+  }
+  // discovery chips, directly under the sector chips
+  const sector = document.getElementById('sectorFilterChips');
+  if (sector && !document.getElementById('personalityChips')) {
+    const wrap = document.createElement('div');
+    wrap.className = 'pp-chip-group';
+    wrap.innerHTML = '<div class="pp-chip-label">Power Personality</div>' +
+                     '<div class="filter-chips" id="personalityChips"></div>';
+    sector.parentNode.insertBefore(wrap, sector.nextSibling);
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', ensurePersonalityHosts);
+} else {
+  ensurePersonalityHosts();
+}
