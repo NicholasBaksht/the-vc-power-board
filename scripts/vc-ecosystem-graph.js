@@ -10,7 +10,7 @@
  */
 
 function buildEcosystemGraph() {
-  const edges = [];
+  let edges = [];
 
   FAMILY_TREE.forEach(group => {
     group.children.forEach(child => {
@@ -74,6 +74,27 @@ function buildEcosystemGraph() {
       label: `Shared board seat: ${seats[0]}`
     });
   });
+
+  /* Drop any edge whose endpoint is not a firm in the dataset.
+
+     d3.forceLink().id() THROWS ("node not found: <id>") the moment an
+     edge names a node that was never added, and that exception aborts
+     graph construction entirely - the SVG renders with zero nodes and
+     zero links while the heading above it still claims a map.
+
+     family-tree-data.js records a TCV spinout to 'iconiq-growth', a
+     firm not tracked here, which was enough to blank the whole graph.
+     Filtering by the real firm list keeps a dangling lineage entry from
+     taking the visualisation down, and means a future entry added ahead
+     of its firm degrades to a missing edge instead of a missing page. */
+  const firmSlugs = new Set(firms.map(f => f.slug));
+  const dropped = edges.filter(e => !firmSlugs.has(e.source) || !firmSlugs.has(e.target));
+  if (dropped.length && typeof console !== 'undefined') {
+    console.warn('Ecosystem graph: skipped ' + dropped.length +
+      ' edge(s) referencing untracked firms:',
+      Array.from(new Set(dropped.flatMap(e => [e.source, e.target]).filter(s => !firmSlugs.has(s)))));
+  }
+  edges = edges.filter(e => firmSlugs.has(e.source) && firmSlugs.has(e.target));
 
   const connectedSlugs = new Set(edges.flatMap(e => [e.source, e.target]));
   const nodes = firms
