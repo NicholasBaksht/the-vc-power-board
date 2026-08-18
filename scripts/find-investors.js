@@ -1,8 +1,19 @@
 /* ============================================================
    FIND-INVESTORS.JS
-   The "Find My Investors" founder questionnaire: all its answer
-   state, the match-scoring engine (computeFinderMatches and its
+   POWER MATCH - the founder questionnaire: all its answer state,
+   the match-scoring engine (computeFinderMatches and its
    supporting label/range helpers), and the results renderer.
+
+   "Power Match" is the user-facing brand. Every identifier in
+   this file - the route #find-investors, findInvestorsView,
+   renderFindInvestors, computeFinderMatches, the finder-* CSS
+   classes - deliberately keeps its original name. A rebrand is
+   not a reason to rename working internals, and the route stays
+   put so existing links and bookmarks keep resolving.
+
+   Not to be confused with discovery-engine.js, which is the
+   separate free-text search feature branded "VC Discovery
+   Engine". Two different features, two different names.
    ============================================================ */
 // Renders a full partner profile page into #partnerView, using the
 // data in partnerProfiles keyed by slug.
@@ -279,9 +290,12 @@ function renderFindInvestors() {
 
   document.getElementById('findInvestorsView').innerHTML = `
     <a href="#" class="detail-back">← Back to all firms</a>
-    <div class="dashboard-title">Find My Investors</div>
-    <div class="finder-intro">
-      <p>Answer a few questions and we'll match you against all ${firms.length} firms tracked on this page — using only real data already here, never guesses. Skip any question you're not sure about.</p>
+    <div class="pm-header">
+      <div class="pm-eyebrow">Power Match</div>
+      <h1 class="pm-title">Find the investors that fit your startup.</h1>
+      <p class="pm-sub">Answer a few questions and Power Match scores every one of the ${firms.length} firms
+      tracked here against your answers — using only data already on this page, never guesses. Each result
+      shows which of your criteria it actually met. Skip anything you are not sure about.</p>
     </div>
 
     <div class="finder-question">
@@ -345,7 +359,7 @@ function renderFindInvestors() {
     </div>
 
    <div class="finder-results">
-      <div class="finder-results-label">Your Matches</div>
+      <div class="finder-results-label">Your Power Matches</div>
       <div id="finderResultsList"></div>
     </div>
 
