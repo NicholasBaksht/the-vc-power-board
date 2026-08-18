@@ -95,6 +95,12 @@ const CITY_COORDS = {
 // but are conventionally grouped as "Middle East" in this kind of
 // breakdown - matching how most real VC ecosystem reports do it.
 function classifyRegion(hq) {
+  /* Same null-HQ guard as getCountryFromHQ below. This one only surfaced
+     after that fix let execution reach the world map at all - it takes the
+     raw hq string, not a country, so it needed its own guard. Returns null
+     so the region breakdown can skip the firm instead of inventing a
+     "North America" for a firm whose location is simply unknown. */
+  if (typeof hq !== 'string' || !hq) return null;
   const h = hq.toLowerCase();
   if (h.includes('israel') || h.includes('uae') || h.includes('dubai') || h.includes('abu dhabi')) return 'Middle East';
   if (h.includes('kenya') || h.includes('nigeria') || h.includes('rwanda') || h.includes('mauritius')) return 'Africa';
@@ -119,6 +125,15 @@ function classifyRegion(hq) {
 // the last comma, which covers the rest of the dataset correctly.
 const US_STATE_SUFFIXES = ['CA', 'NY', 'MA', 'WA', 'IL', 'TX', 'CO', 'CT', 'NJ', 'PA', 'MD', 'VT', 'WY', 'VA', 'DC'];
 function getCountryFromHQ(hq) {
+  /* A firm may legitimately have no HQ on file. Illuminate Ventures does not
+     publish one, so the dataset stores null rather than inventing a city, and
+     this function was calling .includes() straight through it - which threw and
+     took renderScaleBar, the world map and the relationship graph down with it.
+
+     null is returned rather than a placeholder string: an unknown HQ is not a
+     country, and callers that count or compare countries must not treat it as
+     one. Call sites that build a country count filter it out. */
+  if (typeof hq !== 'string' || !hq) return null;
   if (hq.includes('Cayman')) return 'Cayman Islands';
   if (hq.includes('Washington, D.C.')) return 'United States';
   if (US_STATE_SUFFIXES.some(st => hq.endsWith(', ' + st))) return 'United States';
