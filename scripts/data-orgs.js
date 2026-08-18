@@ -81,6 +81,13 @@ const FIRM_ORGS = {
   "revolution-ventures": { type: "affiliate", parent: "Revolution LLC", parentAliases: ["Revolution"], evidence: "thesis" },
   "rise-of-the-rest-seed-fund": { type: "affiliate", parent: "Revolution LLC", parentAliases: ["Revolution"], evidence: "name" },
 
+  /* ---- Added with the 20-firm batch ---- */
+  "mouro-capital": { type: "independent", formerParent: "Banco Santander", spunOutYear: 2020, evidence: "thesis",
+    note: "Spun out of Banco Santander in 2020; independent today." },
+  "viola-ventures": { type: "affiliate", parent: "Viola Group", parentAliases: ["Viola Group"], evidence: "thesis" },
+  "flourish-ventures": { type: "affiliate", parent: "The Omidyar Group", parentAliases: ["The Omidyar Group"], evidence: "thesis" },
+  "next47": { type: "corporate", parent: "Siemens", parentAliases: ["Siemens"], evidence: "thesis" },
+  "viola-growth": { type: "affiliate", parent: "Viola Group", parentAliases: ["Viola Group"], evidence: "thesis" },
   /* ---- FORMER corporate parents: independent today, NOT badged ---- */
   "sapphire-ventures": { type: "independent", formerParent: "SAP", spunOutYear: 2011, evidence: "thesis",
     note: "Founded 1996 as SAP's corporate venture arm; spun out as an independent firm in 2011." },
