@@ -21,7 +21,7 @@ function renderPricing() {
     <li>Browse all ${firms.length} tracked VC firms</li>
           <li>Search &amp; advanced filters</li>
           <li>Compare up to 3 firms side-by-side</li>
-          <li>Find My Investors match scoring</li>
+          <li>Power Match investor scoring</li>
       <li>Power Score™ &amp; Analytics Dashboard</li>
           <li>Save up to 3 firms to your shortlist</li>
         </ul>
