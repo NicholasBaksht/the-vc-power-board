@@ -87,6 +87,7 @@ const holdingsHTML = firm.holdings.map(h => {
       <div class="detail-rank">NO. ${String(firm.rank).padStart(2, '0')} BY AUM</div>
 <div class="detail-name">${firm.name}</div>
       ${renderOrgBadge(firm)}
+      ${typeof renderFirmPersonalityCard === 'function' ? renderFirmPersonalityCard(firm) : ''}
       <div class="detail-personality">${computeInvestmentPersonality(firm).sentence}</div>
           <div class="detail-meta">
         ${[
