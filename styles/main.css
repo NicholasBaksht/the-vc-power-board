@@ -869,3 +869,100 @@
 #frListingPanel { margin-top: 12px; }
 
 @media (prefers-reduced-motion: reduce) { .fr-btn, .fr-cta { transition: none; } }
+
+/* ============================================================
+   POWER PERSONALITY
+   Sits alongside Power Score as a first-class read on a firm, so
+   it gets real weight on the page - a bordered block with a
+   proper eyebrow, not a metadata line. Institutional, flat, no
+   glow: the same tokens as everything else, so it follows the
+   theme switcher without its own colour rules.
+   ============================================================ */
+.pp-card {
+  margin: 14px 0 6px;
+  padding: 15px 17px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--accent);
+  border-radius: 3px;
+}
+.pp-eyebrow {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin-bottom: 9px;
+}
+.pp-primary { display: flex; align-items: center; gap: 9px; margin-bottom: 8px; }
+.pp-emoji { font-size: 19px; line-height: 1; }
+.pp-label {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.pp-traits { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 11px; }
+.pp-trait { font-size: 12.5px; color: var(--accent); }
+.pp-dot { color: var(--hairline); font-size: 12px; }
+
+.pp-conf { display: inline-flex; align-items: baseline; gap: 7px; margin-bottom: 10px; }
+.pp-conf-key {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--ink-dim);
+}
+.pp-conf-val {
+  font-family: var(--mono); font-size: 10.5px; font-weight: 600; letter-spacing: .06em;
+  padding: 2px 7px; border-radius: 2px; border: 1px solid var(--hairline); color: var(--ink);
+}
+/* Confidence is stated in words as well as weight - never colour alone. */
+.pp-conf-high .pp-conf-val   { border-color: var(--accent); color: var(--accent); }
+.pp-conf-medium .pp-conf-val { color: var(--ink); }
+.pp-conf-low .pp-conf-val    { color: var(--ink-dim); }
+
+.pp-why { margin: 0; font-size: 12.5px; line-height: 1.6; color: var(--ink-dim); }
+.pp-card-empty { border-left-color: var(--hairline); }
+.pp-none { margin: 0; font-size: 12.5px; line-height: 1.6; color: var(--ink-dim); }
+
+/* --- partner sidebar: narrower column, so scale it down --- */
+.pg-sidebar-left .pp-card { padding: 12px 13px; margin: 0 0 14px; }
+.pg-sidebar-left .pp-label { font-size: 15px; }
+.pg-sidebar-left .pp-emoji { font-size: 16px; }
+.pg-sidebar-left .pp-why { font-size: 11.5px; }
+
+/* --- discovery chips --- */
+.pp-chip-group { margin-top: 12px; }
+.pp-chip-label {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--ink-dim); margin-bottom: 7px;
+}
+.pp-chip-n { color: var(--ink-dim); font-size: 10px; margin-left: 2px; }
+.chip.pp-chip.active .pp-chip-n { color: inherit; }
+
+/* --- distribution --- */
+.pp-dist-block { margin-top: 26px; }
+.pp-dist-intro, .pp-dist-note {
+  font-size: 12.5px; line-height: 1.6; color: var(--ink-dim); margin: 0 0 14px;
+}
+.pp-dist-note { margin: 12px 0 0; padding-top: 11px; border-top: 1px solid var(--hairline); }
+.pp-dist-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 1.4fr) 3fr 46px;
+  align-items: center; gap: 12px;
+  padding: 5px 0; text-decoration: none; color: inherit;
+}
+.pp-dist-row:hover .pp-dist-label { color: var(--accent); }
+.pp-dist-label { font-size: 12.5px; color: var(--ink); }
+.pp-dist-track {
+  height: 6px; background: var(--surface);
+  border: 1px solid var(--hairline); border-radius: 3px; overflow: hidden;
+}
+.pp-dist-fill { height: 100%; background: var(--accent); }
+.pp-dist-count { font-family: var(--mono); font-size: 11.5px; color: var(--ink-dim); text-align: right; }
+
+@media (max-width: 640px) {
+  .pp-label { font-size: 16px; }
+  .pp-dist-row { grid-template-columns: 1fr 46px; row-gap: 3px; }
+  .pp-dist-track { grid-column: 1 / -1; order: 3; }
+}
