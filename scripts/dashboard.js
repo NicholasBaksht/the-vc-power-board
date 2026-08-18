@@ -699,6 +699,7 @@ function renderAnalytics() {
   }
 
   renderDataCoverage();
+  if (typeof renderPersonalityDistribution === 'function') renderPersonalityDistribution();
 }
 // ============================================================
 // PEER FIRMS BY CATEGORY / LOCATION / STAGE — a second, distinct
