@@ -57,7 +57,13 @@ function matchesFilter(firm) {
     activeFilter === '2000s' ? (firm.founded >= 2000 && firm.founded < 2010) :
     activeFilter === '2010s' ? firm.founded >= 2010 :
     true; // 'all'
-  return eraMatch && matchesAumTier(firm) && matchesSectorFilter(firm) && matchesStageFilter(firm);
+  /* Personality is ANDed with everything else, exactly like sector and
+     stage, so "AI Native firms founded after 2010" behaves as expected.
+     Guarded because power-personality.js loads after this file. */
+  const personalityMatch = (typeof matchesPersonalityFilter === 'function')
+    ? matchesPersonalityFilter(firm) : true;
+  return eraMatch && matchesAumTier(firm) && matchesSectorFilter(firm) &&
+         matchesStageFilter(firm) && personalityMatch;
 }
 
 // Builds the sector filter chips from taxonomy.js rather than from
@@ -69,6 +75,7 @@ function matchesFilter(firm) {
 // UNMAPPED_DESCRIPTOR_TAGS so sector-agnostic firms stay reachable.
 // Buckets with no firms are not rendered at all.
 function renderSectorFilterChips() {
+  if (typeof renderPersonalityChips === 'function') renderPersonalityChips();
   const el = document.getElementById('sectorFilterChips');
   if (!el) return;
   const counts = {};
