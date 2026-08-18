@@ -110,6 +110,8 @@ function renderPartnerProfile(slug) {
           <div class="pg-stat"><span class="pg-stat-num">${boardSeats.length}</span><span class="pg-stat-label">Board Seats</span></div>
         </div>
 
+        ${typeof renderPartnerPersonalityCard === 'function' ? renderPartnerPersonalityCard(p) : ''}
+
         <div class="pg-side-label">Investment Focus</div>
         <div class="partner-tag-row">${focusHTML || '<span class="pg-empty">Not publicly disclosed.</span>'}</div>
 
