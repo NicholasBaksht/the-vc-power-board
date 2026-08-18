@@ -966,3 +966,92 @@
   .pp-dist-row { grid-template-columns: 1fr 46px; row-gap: 3px; }
   .pp-dist-track { grid-column: 1 / -1; order: 3; }
 }
+
+/* ============================================================
+   POWER CAPABILITIES
+   Sits directly under Power Personality and reads as its sibling:
+   same eyebrow, same accent rule, same flat institutional
+   treatment. Bands are stated in words, never as a bar or a
+   number out of ten - the evidence does not support that kind of
+   precision and the UI should not imply it does.
+   ============================================================ */
+.pc-card {
+  margin: 14px 0 6px;
+  padding: 15px 17px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--accent);
+  border-radius: 3px;
+}
+.pc-eyebrow {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .11em;
+  text-transform: uppercase; color: var(--ink-dim); margin-bottom: 9px;
+}
+.pc-summary {
+  margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: var(--ink);
+}
+
+.pc-rows { border-top: 1px solid var(--hairline); }
+.pc-row { border-bottom: 1px solid var(--hairline); }
+
+/* The whole row is the control, so the hit target is the full width
+   rather than a chevron a thumb has to find. */
+button.pc-row-head {
+  display: flex; align-items: center; gap: 10px;
+  width: 100%; padding: 9px 2px;
+  background: none; border: 0; cursor: pointer; text-align: left;
+  font-family: var(--sans); color: inherit;
+}
+button.pc-row-head:hover .pc-cap { color: var(--accent); }
+button.pc-row-head:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.pc-row-none .pc-row-head { display: flex; align-items: center; gap: 10px; padding: 9px 2px; }
+
+.pc-cap { flex: 1 1 auto; font-size: 13px; color: var(--ink); }
+.pc-band {
+  flex: 0 0 auto; font-family: var(--mono); font-size: 10.5px;
+  letter-spacing: .05em; white-space: nowrap;
+}
+/* Strength is carried by the WORD. Weight and colour only reinforce it,
+   so the scale survives greyscale, a screenshot and colour blindness. */
+.pc-band-exceptional     { color: var(--accent); font-weight: 600; }
+.pc-band-very-strong     { color: var(--accent); }
+.pc-band-strong          { color: var(--ink); }
+.pc-band-moderate        { color: var(--ink-dim); }
+.pc-band-limited-evidence{ color: var(--ink-dim); font-style: italic; }
+.pc-band-none            { color: var(--ink-dim); font-style: italic; }
+
+.pc-chev {
+  flex: 0 0 auto; color: var(--ink-dim); font-size: 15px;
+  transition: transform .15s ease;
+}
+button.pc-row-head[aria-expanded="true"] .pc-chev { transform: rotate(90deg); }
+
+.pc-detail[hidden] { display: none; }
+.pc-detail { padding: 2px 2px 12px; }
+.pc-blurb { margin: 0 0 8px; font-size: 12px; line-height: 1.55; color: var(--ink-dim); }
+.pc-evidence { margin: 0 0 8px; padding-left: 17px; }
+.pc-evidence li {
+  font-size: 12.5px; line-height: 1.6; color: var(--ink); margin-bottom: 4px;
+}
+.pc-meta { margin: 0; font-family: var(--mono); font-size: 10px; color: var(--ink-dim); }
+.pc-none { margin: 0 0 10px; font-size: 12px; line-height: 1.55; color: var(--ink-dim); }
+
+.pc-foot {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+  margin-top: 12px; padding-top: 11px; border-top: 1px solid var(--hairline);
+}
+.pc-conf {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .06em;
+  padding: 2px 7px; border: 1px solid var(--hairline); border-radius: 2px;
+}
+.pc-conf-high { color: var(--accent); border-color: var(--accent); }
+.pc-conf-medium { color: var(--ink); }
+.pc-conf-low { color: var(--ink-dim); }
+.pc-foot-note { flex: 1 1 220px; font-size: 11px; line-height: 1.5; color: var(--ink-dim); }
+
+@media (max-width: 640px) {
+  .pc-cap { font-size: 12.5px; }
+  .pc-band { font-size: 9.5px; }
+  .pc-summary { font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) { .pc-chev { transition: none; } }
