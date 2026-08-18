@@ -408,3 +408,34 @@
 @media (prefers-reduced-motion: reduce) {
   .pb-hero-search-input, .pb-hero-search-icon { transition: none; }
 }
+
+
+/* ============================================================
+   HEADER OVERFLOW FIX
+   The header row asked for ~1570px of content inside a container
+   capped at max-width 1180px, so the page scrolled sideways at
+   every viewport - 201px of that predates the theme switcher,
+   which added a further 89px.
+
+   The nav now takes its own centred row beneath the wordmark and
+   the actions, instead of competing with them for one line. That
+   removes the overflow entirely rather than hiding it with
+   overflow-x, which would have left the nav unreachable.
+
+   Terms and Privacy leave the header. They were put there when
+   the homepage was 213,000px tall and footer links were
+   effectively unreachable - the comment above says as much. The
+   homepage is now about 4,600px, so the footer is a normal
+   scroll away and the duplication costs more than it buys.
+   ============================================================ */
+.pb-header { flex-wrap: wrap; row-gap: 8px; }
+
+.pb-nav {
+  flex: 1 1 100%;
+  order: 3;
+  justify-content: center;
+  margin: 0;
+}
+
+.pb-nav .nav-link-quiet,
+.pb-nav .pb-nav-sep { display: none; }
