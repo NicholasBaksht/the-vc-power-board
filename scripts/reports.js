@@ -89,7 +89,7 @@ function renderSectorReport(reportSlug) {
   const avgFoundedYear = totalFirms > 0
     ? Math.round(sectorFirms.reduce((sum, f) => sum + f.founded, 0) / totalFirms)
     : '—';
-  const countryCount = new Set(sectorFirms.map(f => getCountryFromHQ(f.hq))).size;
+  const countryCount = new Set(sectorFirms.map(f => getCountryFromHQ(f.hq)).filter(Boolean)).size;
 
   const topFirmsHTML = sectorFirms.slice(0, 10).map((f, i) => `
     <a href="#${f.slug}" class="report-firm-row">
@@ -168,7 +168,7 @@ function renderAnnualReport(cfg) {
   const totalFirms = firms.length;
   const totalPartners = Object.keys(partnerProfiles).length;
   const combinedAUM = Math.round(firms.reduce((sum, f) => sum + parseAumNumber(f.aum), 0));
-  const countryCount = new Set(firms.map(f => getCountryFromHQ(f.hq))).size;
+  const countryCount = new Set(firms.map(f => getCountryFromHQ(f.hq)).filter(Boolean)).size;
 
   const sectorCounts = {};
   firms.forEach(f => (f.sectors || []).forEach(s => { sectorCounts[s] = (sectorCounts[s] || 0) + 1; }));
