@@ -185,3 +185,54 @@
     color: var(--ink-dim);
     margin: -2px 0 4px;
   }
+
+
+/* ============================================================
+   POWER MATCH IDENTITY
+   Uses the same eyebrow-over-title structure as Power Personality
+   and Power Capabilities, so the three read as one family. The
+   brand name sits above the sentence that explains it - a founder
+   who has never heard "Power Match" still understands the page
+   from the line underneath.
+
+   Only existing tokens are used, so this follows the theme
+   switcher without any colour of its own.
+   ============================================================ */
+.pm-header {
+  padding-bottom: 18px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--hairline);
+}
+.pm-eyebrow {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding: 3px 9px;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  margin-bottom: 13px;
+}
+.pm-title {
+  margin: 0 0 9px;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.pm-sub {
+  margin: 0;
+  max-width: 62ch;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink-dim);
+}
+
+@media (max-width: 640px) {
+  .pm-title { font-size: 21px; }
+  .pm-sub { font-size: 13px; }
+  .pm-header { padding-bottom: 15px; margin-bottom: 18px; }
+}
