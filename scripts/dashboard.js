@@ -67,6 +67,8 @@ matched = stages.some(s => cat.stageMatches.includes(s));
 // performance dashboard and philosophy scorecard.
 // ============================================================
 function getRegionFromHQ(hq) {
+  // Same guard as getCountryFromHQ: hq is null for firms that publish none.
+  if (typeof hq !== 'string' || !hq) return null;
   if (hq.includes(', UK') || hq.includes('London')) return 'United Kingdom';
   // Every other firm's HQ in this dataset is a US city/state
   return 'United States';
@@ -75,7 +77,9 @@ function getRegionFromHQ(hq) {
 function computeGeography(firm) {
   const primary = getRegionFromHQ(firm.hq);
   const secondary = (firmGeography[firm.slug] && firmGeography[firm.slug].secondary) || [];
-  const regions = [{ region: primary, score: 5 }];
+  // No HQ on file means no primary region to plot - the firm still gets any
+  // secondary regions its own research recorded, rather than a fabricated one.
+  const regions = primary ? [{ region: primary, score: 5 }] : [];
   secondary.forEach(r => {
     if (r !== primary) regions.push({ region: r, score: 3 });
   });
