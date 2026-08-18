@@ -1757,7 +1757,7 @@ holdings: []
     sectors: ["Enterprise Software", "Consumer", "AI", "Semiconductors"],
     signatureExit: "Nvidia — an early investor that rode the company to become one of the most valuable in the world",
     slug: "sequoia",
-    seoPage: "firms/sequoia-capital/",
+       seoPage: "firms/sequoia/",
     website: "https://www.sequoiacap.com",
     short: "Sequoia",
     founded: 1972,
