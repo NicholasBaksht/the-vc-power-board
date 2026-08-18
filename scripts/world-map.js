@@ -42,6 +42,9 @@ function getRegionBreakdown() {
   const counts = {};
   firms.forEach(f => {
     const region = classifyRegion(f.hq);
+    // A firm with no HQ on file belongs to no region. Counting it would
+    // create a literal "null" row in the sidebar breakdown.
+    if (!region) return;
     counts[region] = (counts[region] || 0) + 1;
   });
   return Object.entries(counts).sort((a, b) => b[1] - a[1]);
@@ -53,7 +56,10 @@ function renderWorldMap() {
   const clusters = getMapClusters();
   const totalFirms = firms.length;
   const combinedAUM = Math.round(firms.reduce((sum, f) => sum + parseAumNumber(f.aum), 0));
-  const countryCount = new Set(firms.map(f => getCountryFromHQ(f.hq))).size;
+  // Firms with no HQ on file resolve to null and are excluded, so the
+  // country count stays a count of known countries rather than gaining a
+  // phantom entry for "unknown".
+  const countryCount = new Set(firms.map(f => getCountryFromHQ(f.hq)).filter(Boolean)).size;
   const sectorCount = new Set(firms.flatMap(f => f.sectors || [])).size;
   const portfolioCompanyCount = new Set(firms.flatMap(f => f.holdings.map(h => h.name))).size;
   const regions = getRegionBreakdown();
