@@ -88,6 +88,14 @@ const FIRM_ORGS = {
   "flourish-ventures": { type: "affiliate", parent: "The Omidyar Group", parentAliases: ["The Omidyar Group"], evidence: "thesis" },
   "next47": { type: "corporate", parent: "Siemens", parentAliases: ["Siemens"], evidence: "thesis" },
   "viola-growth": { type: "affiliate", parent: "Viola Group", parentAliases: ["Viola Group"], evidence: "thesis" },
+  /* ---- Added with the third 20-firm batch ---- */
+  "kurma-partners": { type: "affiliate", parent: "Eurazeo", parentAliases: ["Eurazeo"], evidence: "thesis" },
+  "vives-partners": { type: "independent", formerParent: "Sopartec (UCLouvain technology transfer company)", spunOutYear: 2024, evidence: "thesis",
+    note: "Spun out of Sopartec (UCLouvain technology transfer company) in 2024; independent today." },
+  "openspace-ventures": { type: "independent", formerParent: "Northstar Group", spunOutYear: 2018, evidence: "thesis",
+    note: "Spun out of Northstar Group in 2018; independent today." },
+  "wamda-capital": { type: "affiliate", parent: "Wamda", parentAliases: ["Wamda"], evidence: "thesis" },
+  "kembara": { type: "affiliate", parent: "Mundi Ventures (Alma Mundi Ventures, SGEIC, S.A.)", parentAliases: ["Mundi Ventures (Alma Mundi Ventures, SGEIC, S.A.)"], evidence: "thesis" },
   /* ---- FORMER corporate parents: independent today, NOT badged ---- */
   "sapphire-ventures": { type: "independent", formerParent: "SAP", spunOutYear: 2011, evidence: "thesis",
     note: "Founded 1996 as SAP's corporate venture arm; spun out as an independent firm in 2011." },
