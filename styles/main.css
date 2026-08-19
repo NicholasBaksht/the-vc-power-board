@@ -1055,3 +1055,101 @@ button.pc-row-head[aria-expanded="true"] .pc-chev { transform: rotate(90deg); }
   .pc-summary { font-size: 13px; }
 }
 @media (prefers-reduced-motion: reduce) { .pc-chev { transition: none; } }
+
+/* ============================================================
+   CLAIM YOUR LISTING
+   Deliberately understated. VC Power Board is a founders'
+   product; the claim entry point should be findable by an
+   investor without competing for a founder's attention. It is a
+   quiet text button low on the profile, not a banner.
+   ============================================================ */
+.fc-open {
+  display: block; margin: 18px 0 0; padding: 0;
+  background: none; border: 0; cursor: pointer;
+  color: var(--ink-dim); font-family: var(--sans); font-size: 12px;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+.fc-open:hover { color: var(--accent); }
+.fc-open:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.fc-panel, .fc-updates {
+  margin: 16px 0 4px; padding: 17px 18px;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-left: 3px solid var(--accent); border-radius: 3px;
+}
+.fc-head { display: flex; align-items: center; gap: 10px; margin-bottom: 9px; }
+.fc-eyebrow {
+  flex: 1 1 auto; font-family: var(--mono); font-size: 9.5px;
+  letter-spacing: .11em; text-transform: uppercase; color: var(--ink-dim);
+}
+.fc-close {
+  background: none; border: 0; cursor: pointer;
+  color: var(--ink-dim); font-size: 20px; line-height: 1; padding: 0 3px;
+}
+.fc-close:hover { color: var(--ink); }
+.fc-intro { margin: 0 0 15px; font-size: 12.5px; line-height: 1.6; color: var(--ink-dim); }
+.fc-intro strong { color: var(--ink); }
+
+.fc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+.fc-field { display: flex; flex-direction: column; gap: 5px; }
+.fc-field.fc-wide { grid-column: 1 / -1; }
+.fc-field > span {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-dim);
+}
+.fc-field > span em { text-transform: none; letter-spacing: .02em; opacity: .8; font-style: normal; }
+.fc-field input, .fc-field textarea, .fc-proposed, .fc-src-url, .fc-src-type {
+  width: 100%; padding: 8px 10px;
+  background: var(--bg); border: 1px solid var(--hairline); border-radius: 3px;
+  color: var(--ink); font-family: var(--sans); font-size: 13px; line-height: 1.4;
+}
+.fc-field input:focus, .fc-field textarea:focus, .fc-proposed:focus,
+.fc-src-url:focus, .fc-src-type:focus { outline: none; border-color: var(--accent); }
+
+.fc-actions { display: flex; align-items: center; gap: 11px; flex-wrap: wrap; margin-top: 14px; }
+.fc-btn {
+  padding: 9px 16px; cursor: pointer; border-radius: 3px;
+  background: var(--accent); border: 1px solid var(--accent); color: #fff;
+  font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+}
+.fc-btn:hover:not(:disabled) { background: var(--accent-bright); }
+.fc-btn:disabled { opacity: .55; cursor: default; }
+.fc-status { flex: 1 1 200px; font-size: 12px; line-height: 1.5; color: var(--ink-dim); }
+.fc-status a { color: var(--accent); }
+
+.fc-note {
+  margin: 15px 0 0; padding-top: 12px; border-top: 1px solid var(--hairline);
+  font-size: 11.5px; line-height: 1.65; color: var(--ink-dim);
+}
+.fc-note strong { color: var(--ink); }
+
+/* --- per-field correction rows --- */
+.fc-row { border-top: 1px solid var(--hairline); }
+.fc-row-head { display: flex; align-items: center; gap: 10px; padding: 9px 0; }
+.fc-row-label { flex: 1 1 auto; font-size: 12.5px; color: var(--ink); }
+.fc-row-toggle {
+  background: none; border: 0; cursor: pointer; padding: 0;
+  color: var(--accent); font-family: var(--mono); font-size: 10px;
+  letter-spacing: .05em; text-transform: uppercase;
+}
+.fc-row-body { padding: 2px 0 13px; }
+.fc-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; margin-bottom: 9px; }
+.fc-compare-col { display: flex; flex-direction: column; gap: 5px; }
+.fc-compare-k {
+  font-family: var(--mono); font-size: 9px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-dim);
+}
+.fc-compare-v {
+  padding: 8px 10px; background: var(--bg);
+  border: 1px solid var(--hairline); border-radius: 3px;
+  font-size: 12.5px; line-height: 1.45; color: var(--ink);
+  max-height: 92px; overflow-y: auto;
+}
+.fc-compare-v.is-empty { color: var(--ink-dim); font-style: italic; }
+.fc-src { display: grid; grid-template-columns: minmax(140px, 1fr) 2fr; gap: 9px; }
+
+@media (max-width: 640px) {
+  .fc-grid, .fc-compare, .fc-src { grid-template-columns: 1fr; }
+  .fc-panel, .fc-updates { padding: 14px 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .fc-open { transition: none; } }
