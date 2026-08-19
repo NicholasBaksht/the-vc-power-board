@@ -48,7 +48,22 @@ function saveShortlistToStorage(set) {
 // ============================================================
 const SHORTLIST_DETAILS_KEY = 'powerboard_shortlist_details';
 
+/* Superseded by the six-stage ladder in outcomes.js, which is shared with
+   Power Match and synced to the account when signed in. Kept as a fallback
+   only for the case where outcomes.js has not loaded, so this file never
+   renders an empty chip row. The legacy labels are migrated on read - see
+   IO_LEGACY_MAP - so an existing pipeline is not reset. */
 const SHORTLIST_STATUSES = ['Not Contacted', 'Warm Intro', 'Meeting Scheduled', 'Passed'];
+function slStatusList() {
+  return (typeof IO_STATUSES !== 'undefined')
+    ? IO_STATUSES.map(function (x) { return { key: x.key, label: x.label }; })
+    : SHORTLIST_STATUSES.map(function (x) { return { key: x, label: x }; });
+}
+function slCurrentStatus(slug) {
+  return (typeof getOutcome === 'function')
+    ? getOutcome(slug)
+    : (getShortlistEntry(slug) || {}).status;
+}
 
 const SHORTLIST_PRIORITIES = ['High', 'Medium', 'Low'];
 
@@ -171,7 +186,7 @@ function renderShortlistBuilder() {
         <div class="sl-field-row">
           <div class="sl-field-label">Status</div>
           <div class="sl-chip-row" data-status-row="${firm.slug}">
-            ${SHORTLIST_STATUSES.map(s => `<button class="sl-chip ${entry.status === s ? 'active' : ''}" data-set-status="${firm.slug}" data-value="${s}">${s}</button>`).join('')}
+            ${slStatusList().map(s => `<button class="sl-chip ${slCurrentStatus(firm.slug) === s.key ? 'active' : ''}" data-set-status="${firm.slug}" data-value="${s.key}">${s.label}</button>`).join('')}
           </div>
         </div>
 
@@ -225,8 +240,15 @@ function renderShortlistBuilder() {
 
   document.querySelectorAll('[data-set-status]').forEach(btn => {
     btn.addEventListener('click', () => {
-      updateShortlistEntry(btn.dataset.setStatus, { status: btn.dataset.value });
-      renderShortlistBuilder();
+      /* Route through setOutcome so the change reaches the account when
+         signed in. It writes localStorage first either way, so the
+         signed-out behaviour is exactly what it was before. */
+      if (typeof setOutcome === 'function') {
+        setOutcome(btn.dataset.setStatus, btn.dataset.value, 'shortlist').then(renderShortlistBuilder);
+      } else {
+        updateShortlistEntry(btn.dataset.setStatus, { status: btn.dataset.value });
+        renderShortlistBuilder();
+      }
     });
   });
 
