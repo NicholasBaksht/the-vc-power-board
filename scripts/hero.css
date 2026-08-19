@@ -1,0 +1,441 @@
+/* ============================================================
+   HEADER + HERO
+   ------------------------------------------------------------
+   The redesigned top of the homepage: brand bar, flat nav,
+   headline block, and the orbit graphic.
+
+   Deliberately no glow. The reference mockup put a colored
+   box-shadow under the primary CTA and a radial wash behind the
+   hero; both are omitted. Emphasis comes from weight, scale and
+   contrast instead - which is also what keeps this reading as a
+   terminal rather than a SaaS landing page.
+
+   Consumes tokens from main.css only.
+   ============================================================ */
+
+/* ---------- HEADER ---------- */
+.pb-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--hairline);
+}
+
+.pb-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+.pb-brand .site-logo { width: 34px; height: 34px; }
+
+.pb-wordmark {
+    font-family: var(--sans);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    white-space: nowrap;
+}
+
+.pb-nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0 auto;
+}
+.pb-nav .nav-link {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-dim);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+.pb-nav .nav-link:hover { color: var(--ink); background: var(--surface); }
+.pb-nav .nav-link.active { color: var(--ink); background: var(--surface-raised); }
+
+/* Dropdown triggers are <button>, so they need the link styling
+   restated rather than inherited. nav-dropdown.css still handles
+   the menu panel itself - this only aligns the trigger with the
+   flat links beside it. */
+.pb-nav .nav-dropdown-trigger {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-dim);
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+.pb-nav .nav-dropdown-trigger:hover { color: var(--ink); background: var(--surface); }
+.pb-nav .nav-dropdown-trigger.active,
+.pb-nav .nav-dropdown.open .nav-dropdown-trigger {
+    color: var(--ink);
+    background: var(--surface-raised);
+}
+.pb-nav .nav-dropdown-menu { min-width: 232px; }
+
+/* The header is the dropdowns' positioning context. It must stay
+   overflow: visible or the menus get clipped at its bottom edge. */
+.pb-header { overflow: visible; }
+.pb-nav { overflow: visible; }
+
+.pb-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+.pb-signin {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-dim);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+.pb-signin:hover { color: var(--ink); }
+
+.pb-cta {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    padding: 9px 18px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+.pb-cta:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
+
+/* ---------- LEGAL LINKS IN NAV ----------
+   Terms and Privacy sit after a hairline divider: present and
+   clickable in the header, but visually subordinate to the
+   product nav beside them. They are also in the footer; a
+   213,000-pixel homepage makes footer-only links unreachable
+   in practice, which is why they are duplicated up here. */
+.pb-nav-sep {
+    width: 1px;
+    height: 18px;
+    background: var(--hairline);
+    margin: 0 8px;
+    flex-shrink: 0;
+    align-self: center;
+}
+.pb-nav .nav-link-quiet {
+    font-size: 13px;
+    opacity: 0.72;
+    padding: 8px 10px;
+}
+.pb-nav .nav-link-quiet:hover { opacity: 1; }
+
+/* ---------- HERO ---------- */
+.pb-hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 104px 24px 0;
+    text-align: center;
+}
+
+.pb-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--ink-dim);
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    padding: 7px 16px;
+    margin-bottom: 34px;
+}
+.pb-badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+    /* The one continuous loop on the site. It means "this data is live",
+       so it is the one thing that should keep moving; the pulse is slow
+       and low-contrast so it reads as a status light, not a blinker.
+       Disabled wholesale by the reduced-motion block in animations.css. */
+    animation: pbLivePulse 2.6s ease-in-out infinite;
+}
+.pb-badge strong { color: var(--ink); font-weight: 500; }
+
+.pb-hero-title {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: clamp(40px, 7vw, 84px);
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    margin: 0 0 22px;
+}
+.pb-hero-title .accent { color: var(--accent-bright); }
+
+.pb-hero-sub {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--ink-dim);
+    max-width: 580px;
+    margin: 0 auto 32px;
+}
+
+.pb-hero-ctas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.pb-btn {
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 14px 26px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.pb-btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #FFFFFF;
+}
+.pb-btn-primary:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
+
+.pb-btn-ghost {
+    background: var(--surface);
+    border-color: var(--hairline);
+    color: var(--ink);
+}
+.pb-btn-ghost:hover { border-color: var(--accent); background: var(--surface-raised); }
+
+/* ---------- ORBIT ----------
+   Real holdings with confirmed investment dates, arranged on an
+   arc by year. Not decoration: every ticker and year below is a
+   sourced entry in data-firms.js. */
+.pb-orbit {
+    position: relative;
+    max-width: 900px;
+    height: 300px;
+    margin: 56px auto 0;
+    overflow: hidden;
+}
+.pb-orbit-rings {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 600px;
+    pointer-events: none;
+}
+.pb-orbit-rings circle {
+    fill: none;
+    stroke: var(--hairline);
+    stroke-width: 1;
+}
+
+.pb-chip {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-dim);
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    padding: 6px 13px;
+    white-space: nowrap;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+.pb-chip:hover { border-color: var(--accent); background: var(--surface-raised); }
+.pb-chip-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+}
+.pb-chip-ticker { color: var(--ink); font-weight: 500; }
+.pb-chip.is-lead {
+    background: var(--surface-raised);
+    border-color: var(--accent);
+}
+.pb-chip.is-lead .pb-chip-dot { background: var(--accent-bright); }
+
+.pb-orbit-caption {
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* ---------- RESPONSIVE ----------
+   The nav drops to its own full-width row rather than being
+   hidden. There is no hamburger menu on this site, so a
+   display:none here would make every route - and the whole
+   account feature - unreachable on a phone. */
+@media (max-width: 1180px) {
+    .pb-header {
+        flex-wrap: wrap;
+        gap: 12px 16px;
+        justify-content: space-between;
+    }
+    .pb-nav {
+        order: 3;
+        width: 100%;
+        margin: 0;
+        gap: 2px;
+        justify-content: flex-start;
+        /* Wraps rather than scrolls. Do NOT put overflow-x here:
+           any overflow value other than visible forces overflow-y
+           non-visible too, which invisibly clips the dropdown
+           menus. That is what broke this nav once already. */
+        flex-wrap: wrap;
+    }
+    .pb-nav .nav-link { padding: 8px 11px; }
+}
+@media (max-width: 640px) {
+    .pb-header { padding: 12px 16px; }
+    .pb-wordmark { font-size: 16px; }
+    .pb-cta { padding: 8px 14px; font-size: 13px; }
+    .pb-hero { padding-top: 48px; }
+    .pb-btn { width: 100%; text-align: center; }
+    .pb-hero-ctas { flex-direction: column; }
+    .pb-orbit { height: 210px; }
+    .pb-orbit-rings { width: 620px; height: 420px; }
+    .pb-chip { font-size: 11px; padding: 5px 10px; }
+}
+
+
+/* ============================================================
+   HERO SEARCH
+   The same search system as the explorer box, surfaced as the
+   first thing on the page. The placeholder's firm count is set
+   from the dataset in search.js - never typed in the HTML.
+   ============================================================ */
+.pb-hero-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: min(560px, 92%);
+  margin: 22px auto 4px;
+}
+
+/* Label exists for screen readers; the placeholder is not a label. */
+.pb-hero-search-label {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.pb-hero-search-icon {
+  position: absolute;
+  left: 15px;
+  width: 17px; height: 17px;
+  fill: none;
+  stroke: var(--ink-dim);
+  stroke-width: 2;
+  stroke-linecap: round;
+  pointer-events: none;
+  transition: stroke .15s ease;
+}
+
+.pb-hero-search-input {
+  width: 100%;
+  padding: 14px 16px 14px 42px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 4px;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.3;
+  transition: border-color .15s ease, background .15s ease;
+}
+.pb-hero-search-input::placeholder { color: var(--ink-dim); }
+.pb-hero-search-input:hover { border-color: var(--ink-dim); }
+.pb-hero-search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--surface-raised);
+}
+.pb-hero-search:focus-within .pb-hero-search-icon { stroke: var(--accent); }
+
+/* Safari renders a native clear button on type=search that collides
+   with the border radius; the field is already clearable by keyboard. */
+.pb-hero-search-input::-webkit-search-decoration,
+.pb-hero-search-input::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+@media (max-width: 640px) {
+  .pb-hero-search { width: 94%; margin-top: 18px; }
+  .pb-hero-search-input { font-size: 14px; padding: 12px 14px 12px 38px; }
+  .pb-hero-search-icon { left: 13px; width: 15px; height: 15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pb-hero-search-input, .pb-hero-search-icon { transition: none; }
+}
+
+
+/* ============================================================
+   HEADER OVERFLOW FIX
+   The header row asked for ~1570px of content inside a container
+   capped at max-width 1180px, so the page scrolled sideways at
+   every viewport - 201px of that predates the theme switcher,
+   which added a further 89px.
+
+   The nav now takes its own centred row beneath the wordmark and
+   the actions, instead of competing with them for one line. That
+   removes the overflow entirely rather than hiding it with
+   overflow-x, which would have left the nav unreachable.
+
+   Terms and Privacy leave the header. They were put there when
+   the homepage was 213,000px tall and footer links were
+   effectively unreachable - the comment above says as much. The
+   homepage is now about 4,600px, so the footer is a normal
+   scroll away and the duplication costs more than it buys.
+   ============================================================ */
+.pb-header { flex-wrap: wrap; row-gap: 8px; }
+
+.pb-nav {
+  flex: 1 1 100%;
+  order: 3;
+  justify-content: center;
+  margin: 0;
+}
+
+.pb-nav .nav-link-quiet,
+.pb-nav .pb-nav-sep { display: none; }
