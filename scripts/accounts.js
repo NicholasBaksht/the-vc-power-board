@@ -484,3 +484,48 @@ function wireAccountControls() {
     });
   }
 }
+
+
+/* ============================================================
+   HEADER ACCOUNT STATE
+   The header shipped with a hard-coded "Sign in" link and nothing
+   ever changed it, so a signed-in founder still saw an invitation
+   to sign in on every page.
+
+   This swaps that one link for the account's username once a
+   session exists. It touches only the anchor's text and href -
+   the element, its class and its position are untouched, so the
+   header layout and the Power Match CTA beside it are unaffected.
+   ============================================================ */
+function renderHeaderAccount() {
+  const link = document.querySelector('.pb-signin');
+  if (!link) return;
+
+  const signedIn = typeof isSignedIn === 'function' && isSignedIn();
+  if (!signedIn) {
+    link.textContent = 'Sign in';
+    link.setAttribute('href', '#signin');
+    link.classList.remove('is-account');
+    link.removeAttribute('title');
+    return;
+  }
+
+  /* A username is set in a later step of sign-up, so a session can exist
+     before one does. Falling back to the email local-part means the header
+     never shows a blank or a raw uuid during that window. */
+  const name = (typeof getUsername === 'function' && getUsername()) ||
+               ((typeof getUserEmail === 'function' && getUserEmail() || '').split('@')[0]) ||
+               'Account';
+
+  link.textContent = '@' + name;
+  link.setAttribute('href', '#account');
+  link.setAttribute('title', 'Your account');
+  link.classList.add('is-account');
+}
+
+if (typeof onAuthChange === 'function') onAuthChange(renderHeaderAccount);
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', renderHeaderAccount);
+} else {
+  renderHeaderAccount();
+}
