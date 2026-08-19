@@ -174,60 +174,13 @@ function computeSimilarFirms(firm, count = 3) {
 // sentence - the same "small number of rules, many combinations"
 // pattern used by the Philosophy Scorecard and Genome above.
 // ============================================================
-function computeInvestmentPersonality(firm) {
-  const stages = firmStages[firm.slug] || [];
-  const regions = computeGeography(firm);
-  const philScores = computePhilosophyScores(firm);
-  const power = computePowerScore(firm);
-  const aum = parseAumNumber(firm.aum);
-
-  // --- Intensity, from the firm's real Power Score ---
-  let intensity;
-  if (power >= 60) intensity = 'Aggressive';
-  else if (power >= 35) intensity = 'Active';
-  else intensity = 'Measured';
-
-  // --- Stage focus, from firmStages ---
-  const hasEarly = stages.includes('Pre-Seed') || stages.includes('Seed');
-  const hasLate = stages.includes('Growth') || stages.includes('Late Stage');
-  let stageLabel;
-  if (hasEarly && hasLate) stageLabel = 'multi-stage';
-  else if (hasEarly) stageLabel = 'early-stage';
-  else if (hasLate) stageLabel = 'growth-stage';
-  else stageLabel = 'stage-agnostic';
-
-  // --- Sector focus, from the Philosophy Scorecard's real 5-star
-  // categories. Priority order favors the more specific/distinctive
-  // category over generic ones when a firm scores 5 in more than one.
-  const sectorPriority = ['ai', 'fintech', 'healthcare', 'climate', 'devtools', 'marketplace', 'enterprise', 'consumer'];
-  const sectorLabels = {
-    ai: 'AI', fintech: 'fintech', healthcare: 'healthcare', climate: 'climate',
-    devtools: 'developer tools', marketplace: 'marketplace', enterprise: 'enterprise', consumer: 'consumer'
-  };
-  const topSectorKey = sectorPriority.find(key => philScores.find(p => p.key === key)?.score === 5);
-  const sectorLabel = topSectorKey ? sectorLabels[topSectorKey] : 'generalist';
-
-  // --- Portfolio concentration, from real sector breadth ---
-  let concentration;
-  if (firm.sectors.length <= 2) concentration = 'concentrated';
-  else if (firm.sectors.length >= 4) concentration = 'diversified';
-  else concentration = 'focused';
-
-  // --- Geographic reach, from real confirmed regions ---
-  const geoLabel = regions.length >= 2 ? 'global' : 'domestic';
-
-  // --- Fund scale modifier, shown only at the extremes ---
-  let scaleNote = '';
-  if (aum >= 50) scaleNote = ' from a mega-fund';
-  else if (aum > 0 && aum < 5) scaleNote = ' from a boutique fund';
-
-  const sentence = `${intensity} ${stageLabel} ${sectorLabel} investor with a ${concentration} portfolio and ${geoLabel} reach${scaleNote}.`;
-
-  return {
-sentence,
-    factors: { intensity, stageLabel, sectorLabel, concentration, geoLabel, scaleNote: scaleNote.trim() }
-  };
-}
+/* computeInvestmentPersonality() lived here. It assembled a sentence
+   from adjectives picked off the Power Score, stage list and sector
+   count, which produced confident-sounding filler that fit almost any
+   firm. Power Personality (power-personality.js) does the same job from
+   the firm's own tags, states its evidence, and declines to classify
+   the 32 firms that do not clear the floor. Both were rendering on the
+   firm page, one directly under the other. */
 
 // ============================================================
 // WHY THIS VC - four persuasive, plain-English bullets per firm,
