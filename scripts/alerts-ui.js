@@ -64,6 +64,13 @@ function paChangeChip(a) {
                             : '\u2212' + Math.round((1 - mult) * 100) + '%';
     return '<span class="pa-delta ' + cls + '">' + paDir(mult - 1) + label + '</span>';
   }
+  /* A USD figure with no previous value is an event, not a change: a
+     fund close has nothing to compare against. Without this it fell to
+     the generic branch and rendered "2200000000 USD". Deliberately no
+     arrow and no colour - there is no direction to state. */
+  if (a.unit === 'USD' && !a.previousValue && a.currentValue) {
+    return '<span class="pa-delta pa-flat">' + paEsc(paUsd(a.currentValue)) + '</span>';
+  }
   // Signed counts (team-page arrivals and departures) must show the
   // CHANGE, not the roster size - "+3 people", never "16 people".
   if (a.absoluteChange !== null && a.direction !== 'flat') {
@@ -186,6 +193,8 @@ function paEvidenceHtml(a) {
    than the same alert about a firm you do not. That is the entire
    premise of Power Alerts 2.0. */
 const PA2_TYPE_WEIGHT = {
+  fund_announcements: 0.95,  // fresh capital, deployable now - the most
+                             // actionable single fact about a firm
   fund_step: 0.9,            // a new fund changes what a firm can do for you
   new_investments: 0.8,      // fresh deployment, and a possible conflict
   partner_momentum: 0.6,
