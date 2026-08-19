@@ -47,6 +47,10 @@ const POWER_ALERT_CONFIG = {
   // --- fund history ---
   minFundStepRatio: 1.5,       // fund-over-fund growth worth reporting
   minFundsForYearAlert: 3,     // firms closing in a year before it is a signal
+  fundAnnouncementDays: 365,   // a fund close stays news for a year. Firms
+                               // raise every 2-4 years, so a 90-day window
+                               // like the deals one would report almost
+                               // nothing and then go silent for months.
   fundYearWindowFrom: 2023,
 
   // --- deal-level data ---
@@ -84,8 +88,22 @@ const POWER_ALERT_CONFIG = {
    code rather than only in documentation so that the absence is
    auditable, and so nothing silently invents them later. */
 const UNSUPPORTED_ALERTS = {
-  sector_exposure_change: 'firm.sectors is a single current list with no history - a 31% -> 42% exposure change cannot be derived.',
-  investment_activity_30d: 'no dated per-investment records exist; holdings carry investedYear on only 40 of 283 rows.',
+  /* FIRM_DEALS now carries a dated sector on every row, so the original
+     reason here (no history at all) is obsolete. It stays unsupported for
+     a harder one: the median firm has 6 recorded deals, so splitting into
+     two periods compares about 3 against 3, and one deal landing either
+     side of the cut moves the figure by 33 points. */
+  sector_exposure_change: 'FIRM_DEALS gives dated sectors, but the median firm has 6 deals - a two-period split compares ~3 against ~3, where one deal moves the number 33 points.',
+
+  /* Obsolete as originally written too: dated deals exist, and
+     new_investments already reports them on a 90-day window. What is not
+     supportable is the period-over-period RATE this type implies.
+     FIRM_DEALS is a research sample with recency-biased collection - 1
+     deal recorded in 2025-02 rising monotonically to 40 in 2026-07 - so
+     "activity up X%" would measure when the research ran, not when the
+     firms invested. A raw count inside one window is honest; a comparison
+     between windows is not. */
+  investment_activity_30d: 'covered as a raw count by new_investments (90-day window). The 30-day rate comparison is withheld: FIRM_DEALS collection is recency-biased (1 deal in 2025-02 rising to 40 in 2026-07), so period-over-period change would measure research timing, not investment activity.',
   // partner_departures is IMPLEMENTED as of the team-snapshot crawler
   // (see snapshot_partner_departure below). It stays listed here until a
   // second capture exists, because one snapshot cannot be diffed.
@@ -93,8 +111,11 @@ const UNSUPPORTED_ALERTS = {
   // pass (see rule 5b). It fires only for firms that publish a per-person
   // investment focus; most publish none, and those profiles hold
   // sectors:null rather than inheriting their firm's sector list.
-  fund_announcements: 'fund closes appear only as free-text timeline prose; parsing amounts would be inference, not data.',
-  portfolio_returns: 'only 8 holdings rows carry investedYear plus both prices - not enough to compute returns.'
+  // fund_announcements is IMPLEMENTED as of data-funds.js, which promoted
+  // the free-text timeline prose into structured, sourced records (rule 9).
+  // Unlike the deals file its dates show no collection bias: closes run
+  // 2007 to 2026 and peak in 2023, not in the month the research ran.
+  portfolio_returns: 'no holdings row carries investedYear plus both an entry and a current price; 40 of 283 have the year, 0 have both prices.'
 };
 
 /* ---------- small statistical helpers ---------- */
@@ -716,7 +737,91 @@ function computePowerAlerts(options) {
       });
     });
 
-    /* --- 9. FUNDRAISING ACTIVITY BY YEAR ---
+    /* --- 9. FUND ANNOUNCEMENTS ---
+       One firm, one recently announced fund, at the size it actually
+       published. This is an EVENT, not a comparison. fund_step already
+       reports fund-over-fund growth and fund_year_activity counts closes
+       per year across the board; neither tells a founder "this firm just
+       raised and has capital to deploy now", which is the thing that
+       changes whether they should be in the room.
+
+       previousValue stays null deliberately. A fund close has no "before" -
+       inventing one would turn an event into a trend. */
+    Object.keys(FUNDS).forEach(function (slug) {
+      const firm = firmBySlug[slug];
+      const rec = FUNDS[slug];
+      if (!firm || !rec || !Array.isArray(rec.funds)) return;
+
+      /* announcedDate is "YYYY-MM" or "YYYY-MM-DD". Month precision
+         resolves to the first of the month, which can only make a fund
+         look older than it is - never newer, and so never pulls one into
+         the window that belongs outside it. */
+      const dated = rec.funds.filter(function (f) {
+        return f.announcedDate && f.sizeUSD !== null &&
+               f.status === 'closed' && !f.disputed && !f.combinedVehicles &&
+               f.confidence !== 'low';
+      }).map(function (f) {
+        const iso = f.announcedDate.length === 7 ? f.announcedDate + '-01' : f.announcedDate;
+        return { fund: f, ms: Date.parse(iso + 'T00:00:00Z') };
+      }).filter(function (x) { return !isNaN(x.ms); });
+
+      if (!dated.length) return;
+      dated.sort(function (a, b) { return b.ms - a.ms; });
+
+      const newest = dated[0];
+      const ageDays = Math.floor((Date.parse(generatedAt) - newest.ms) / 86400000);
+      if (ageDays < 0 || ageDays > cfg.fundAnnouncementDays) return;
+
+      const f = newest.fund;
+      const conf = f.confidence === 'high' ? (rec.complete ? 0.95 : 0.85) : 0.65;
+
+      alerts.push({
+        id: pa_fingerprint(['fund_announcements', slug, f.name || f.series, f.sizeUSD]),
+        type: 'fund_announcements',
+        firmId: slug,
+        sector: null,
+        subject: firm.name,
+        metric: 'size of the most recently announced fund on record',
+        previousValue: null,
+        currentValue: f.sizeUSD,
+        absoluteChange: null,
+        percentChange: null,
+        unit: 'USD',
+        period: f.announcedDate,
+        direction: 'flat',
+        generatedAt: generatedAt,
+        confidence: pa_round(conf, 3),
+        score: pa_score({
+          // $2B is a ceiling, not a maximum: past it, one fund being larger
+          // than another stops changing what it means for a founder.
+          magnitude: f.sizeUSD / 1e9, magnitudeCeiling: 2,
+          sample: 1, sampleCeiling: 1,
+          confidence: conf,
+          recency: Math.max(0, 1 - ageDays / cfg.fundAnnouncementDays)
+        }),
+        evidence: {
+          firm: firm.name,
+          fundName: f.name,
+          series: f.series,
+          vintageYear: f.vintageYear,
+          announcedDate: f.announcedDate,
+          sizeUSD: f.sizeUSD,
+          originalCurrency: f.originalCurrency,
+          sizeOriginal: f.sizeOriginal,
+          vehicleType: f.vehicleType,
+          sourceConfidence: f.confidence,
+          source: f.source,
+          listComplete: rec.complete,
+          note: 'Announced ' + f.announcedDate + ', ' + ageDays + ' days ago. Size as published; ' +
+                (f.originalCurrency
+                  ? 'reported in ' + f.originalCurrency + ', shown here as the published USD figure.'
+                  : 'no currency conversion was performed.') +
+                (rec.complete ? '' : ' This firm\'s recorded fund list is known to be incomplete, so a more recent close may exist that is not on record.')
+        }
+      });
+    });
+
+    /* --- 10. FUNDRAISING ACTIVITY BY YEAR ---
        A floor, not a total: counts firms with a RECORDED close, across
        the 17 firms that have fund records at all. Never presented as
        market-wide. */
@@ -1159,6 +1264,27 @@ function computePowerAlerts(options) {
       a.description = a.evidence.from.displayName + ' closed at ' + usd(a.previousValue) + ' in ' +
         a.evidence.from.vintageYear + '; ' + a.evidence.to.displayName + ' closed at ' + usd(a.currentValue) +
         ' in ' + a.evidence.to.vintageYear + '.';
+    } else if (a.type === 'fund_announcements') {
+      const usd = a.currentValue >= 1e9
+        ? '$' + pa_round(a.currentValue / 1e9, 2) + 'B'
+        : '$' + Math.round(a.currentValue / 1e6) + 'M';
+      const named = a.evidence.fundName || null;
+      /* "Eclipse Ventures closed Eclipse Fund VI" repeats itself. Matching
+         the FULL firm name misses it, because the fund starts with only the
+         first word - so compare on that, and let the fund name lead the
+         sentence instead. The fund's real name is never shortened to avoid
+         the repetition: "Eclipse Fund VI" is what it is called. Words under
+         three characters are ignored, since a firm like 3one4 would
+         otherwise match far too much. */
+      const firmWord = a.subject.split(/[\s,.]+/)[0].toLowerCase();
+      const carriesFirm = !!named && firmWord.length >= 3 &&
+                          named.toLowerCase().indexOf(firmWord) === 0;
+      a.headline = (named
+        ? (carriesFirm ? named + ' closed' : a.subject + ' closed ' + named)
+        : a.subject + ' closed a new fund') + ' at ' + usd;
+      a.description = a.subject + ' announced ' + (named || 'a new fund') + ' at ' + usd +
+        ' in ' + a.evidence.announcedDate + '. That is the figure published at close, not an estimate' +
+        (a.evidence.listComplete ? '.' : ", and this firm's recorded fund list is known to be incomplete.");
     } else if (a.type === 'fund_year_activity') {
       a.title = a.currentValue + ' firms recorded a fund close in ' + a.subject;
       a.description = a.currentValue + ' of the ' + Object.keys(FUNDS || {}).length +
