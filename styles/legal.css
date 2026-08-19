@@ -1,8 +1,8 @@
 /* ============================================================
-   LEGAL DOCUMENTS — Terms of Service, Privacy Policy
+   LEGAL DOCUMENTS - Terms of Service, Privacy Policy
    ------------------------------------------------------------
    Shared stylesheet for the standalone /terms/ and /privacy/
-   pages. Consumes design tokens from main.css only — no
+   pages. Consumes design tokens from main.css only - no
    hardcoded colors, no gradients, no glow shadows, no hover
    lifts. Section numbers, metadata and defined-term labels use
    var(--mono) deliberately: this is filing-header typography,
@@ -192,7 +192,7 @@
     border-bottom-color: var(--accent-bright);
 }
 
-/* Numbered sub-clauses — 1.1, 1.2. Mono markers, hanging indent. */
+/* Numbered sub-clauses - 1.1, 1.2. Mono markers, hanging indent. */
 .legal-clauses {
     list-style: none;
     margin: 0 0 14px;
@@ -230,7 +230,7 @@
 /* ---------- CONSPICUOUS BLOCKS ----------
    Warranty disclaimers and liability limits are set in caps
    inside a ruled block. This is a legal conspicuousness
-   convention, not a design flourish — it is why these two
+   convention, not a design flourish - it is why these two
    sections look different from the rest of the document. */
 .legal-conspicuous {
     border: 1px solid var(--hairline);
@@ -288,7 +288,7 @@
     margin-bottom: 0;
 }
 .legal-summary li::before {
-    content: "—";
+    content: "-";
     position: absolute;
     left: 0;
     color: var(--accent);

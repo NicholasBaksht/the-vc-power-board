@@ -172,7 +172,7 @@
     padding: 60px 0;
   }
   /* ---------- SECTOR FOCUS: DENSITY OVERRIDE ----------
-     Sector Focus renders ~126 chips — roughly 25x the Founding Era
+     Sector Focus renders ~126 chips - roughly 25x the Founding Era
      and AUM groups that share .chip. At the shared size that one
      block ran 952px tall. Scoped by id so only sectors shrink and
      the other two filter groups keep their original proportions. */

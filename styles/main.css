@@ -1188,3 +1188,16 @@ button.pc-row-head[aria-expanded="true"] .pc-chev { transform: rotate(90deg); }
   .io-control { flex-wrap: wrap; gap: 6px; }
   .io-select { flex: 1 1 auto; }
 }
+
+/* ============================================================
+   EMPTY ICON SLOTS
+   The emoji that used to sit in these spans is gone, but the
+   spans remain in the markup and still claimed their flex gap,
+   leaving a hole before each label. Collapsing them is cleaner
+   than editing every renderer, and keeps the slot available if
+   an icon is ever reintroduced.
+   ============================================================ */
+.pp-emoji:empty,
+.pa-badge:empty,
+.org-chip:empty,
+.dir-mark:empty { display: none; }

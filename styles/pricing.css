@@ -61,7 +61,7 @@
   }
   .pricing-feature-list li:last-child { border-bottom: none; }
   .pricing-feature-list li::before {
-    content: '✓ ';
+    content: ' ';
     color: var(--gold);
   }
   .pricing-cta {

@@ -7,7 +7,7 @@
    Deliberately no glow. The reference mockup put a colored
    box-shadow under the primary CTA and a radial wash behind the
    hero; both are omitted. Emphasis comes from weight, scale and
-   contrast instead — which is also what keeps this reading as a
+   contrast instead - which is also what keeps this reading as a
    terminal rather than a SaaS landing page.
 
    Consumes tokens from main.css only.
@@ -64,7 +64,7 @@
 
 /* Dropdown triggers are <button>, so they need the link styling
    restated rather than inherited. nav-dropdown.css still handles
-   the menu panel itself — this only aligns the trigger with the
+   the menu panel itself - this only aligns the trigger with the
    flat links beside it. */
 .pb-nav .nav-dropdown-trigger {
     font-family: var(--sans);
@@ -301,8 +301,8 @@
 /* ---------- RESPONSIVE ----------
    The nav drops to its own full-width row rather than being
    hidden. There is no hamburger menu on this site, so a
-   display:none here would make every route — and the whole
-   account feature — unreachable on a phone. */
+   display:none here would make every route - and the whole
+   account feature - unreachable on a phone. */
 @media (max-width: 1180px) {
     .pb-header {
         flex-wrap: wrap;
