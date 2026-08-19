@@ -10,7 +10,7 @@ function renderPricing() {
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">Pricing</div>
     <div class="pricing-intro">
-      <p>The Power Board is free to use. This page shows what a future Pro tier could include — nothing here processes real payments yet.</p>
+      <p>The Power Board is free to use. This page shows what a future Pro tier could include - nothing here processes real payments yet.</p>
     </div>
 
     <div class="pricing-tiers">
@@ -42,7 +42,7 @@ function renderPricing() {
       </div>
     </div>
 
-    <p class="pricing-note">Built as a demonstration of paywall-ready structure — the free shortlist limit (3 firms) is real and functional; Pro itself is not yet available for purchase.</p>
+    <p class="pricing-note">Built as a demonstration of paywall-ready structure - the free shortlist limit (3 firms) is real and functional; Pro itself is not yet available for purchase.</p>
   `;
 
   document.querySelector('#pricingView .detail-back').addEventListener('click', (e) => {

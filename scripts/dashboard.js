@@ -7,7 +7,7 @@
    page (AUM bars + leaderboard), and the "By the Numbers" section.
    ============================================================ */
 // ============================================================
-// INVESTMENT PHILOSOPHY SCORECARD — every score below is computed
+// INVESTMENT PHILOSOPHY SCORECARD - every score below is computed
 // DETERMINISTICALLY from data already researched and sourced
 // elsewhere on this page (firm.sectors, firmStages). Nothing here
 // is a subjective judgment call: 5 stars means "this is one of the
@@ -19,16 +19,16 @@
 // array; the renderer handles the rest automatically.
 // ============================================================
 const philosophyCategories = [
-  { key: 'ai', label: 'AI Focus', icon: '🤖', sectorMatches: ['AI', 'AI Infrastructure'] },
-  { key: 'enterprise', label: 'Enterprise Focus', icon: '🏢', sectorMatches: ['Enterprise', 'Enterprise Infrastructure', 'Enterprise Software'] },
-  { key: 'consumer', label: 'Consumer Focus', icon: '🛍️', sectorMatches: ['Consumer', 'Consumer Internet', 'Consumer Tech'] },
-  { key: 'fintech', label: 'Fintech Focus', icon: '💳', sectorMatches: ['Fintech'] },
-  { key: 'healthcare', label: 'Healthcare Focus', icon: '🩺', sectorMatches: ['Healthcare', 'Life Sciences'] },
-  { key: 'climate', label: 'Climate Focus', icon: '🌎', sectorMatches: ['Clean Energy'] },
-  { key: 'marketplace', label: 'Marketplace Focus', icon: '🔀', sectorMatches: ['Marketplaces'] },
-  { key: 'devtools', label: 'Dev Tools & Infrastructure', icon: '🛠️', sectorMatches: ['Cloud Infrastructure', 'Cloud Software', 'Cybersecurity', 'Security', 'SaaS'] },
-  { key: 'earlyStage', label: 'Early-Stage Focus', icon: '🌱', stageMatches: ['Pre-Seed', 'Seed'] },
-  { key: 'growthStage', label: 'Growth Investing', icon: '📈', stageMatches: ['Growth', 'Late Stage'] }
+  { key: 'ai', label: 'AI Focus', icon: '', sectorMatches: ['AI', 'AI Infrastructure'] },
+  { key: 'enterprise', label: 'Enterprise Focus', icon: '', sectorMatches: ['Enterprise', 'Enterprise Infrastructure', 'Enterprise Software'] },
+  { key: 'consumer', label: 'Consumer Focus', icon: '', sectorMatches: ['Consumer', 'Consumer Internet', 'Consumer Tech'] },
+  { key: 'fintech', label: 'Fintech Focus', icon: '', sectorMatches: ['Fintech'] },
+  { key: 'healthcare', label: 'Healthcare Focus', icon: '', sectorMatches: ['Healthcare', 'Life Sciences'] },
+  { key: 'climate', label: 'Climate Focus', icon: '', sectorMatches: ['Clean Energy'] },
+  { key: 'marketplace', label: 'Marketplace Focus', icon: '', sectorMatches: ['Marketplaces'] },
+  { key: 'devtools', label: 'Dev Tools & Infrastructure', icon: '', sectorMatches: ['Cloud Infrastructure', 'Cloud Software', 'Cybersecurity', 'Security', 'SaaS'] },
+  { key: 'earlyStage', label: 'Early-Stage Focus', icon: '', stageMatches: ['Pre-Seed', 'Seed'] },
+  { key: 'growthStage', label: 'Growth Investing', icon: '', stageMatches: ['Growth', 'Late Stage'] }
 ];
 
 // Score is binary by design (5 = stated focus, 1 = not) rather than
@@ -47,7 +47,7 @@ matched = stages.some(s => cat.stageMatches.includes(s));
 }
 
 // ============================================================
-// GEOGRAPHIC INVESTMENT HEATMAP — like the philosophy scorecard,
+// GEOGRAPHIC INVESTMENT HEATMAP - like the philosophy scorecard,
 // every region score here is derived from real, sourced data
 // rather than invented. Two tiers, deliberately not a fake 1-5
 // precision scale:
@@ -87,7 +87,7 @@ function computeGeography(firm) {
 }
 
 // ============================================================
-// VC GENOME — synthesizes everything already computed elsewhere
+// VC GENOME - synthesizes everything already computed elsewhere
 // on the page (sectors, stages, geography, philosophy, Power
 // Score, AUM, years active, tracked holdings) into one visual
 // signature per firm. Every dimension is a real percentile or
@@ -133,7 +133,7 @@ const dimensions = [
 }
 
 // ============================================================
-// SIMILAR FIRMS — finds the firms with the closest overall
+// SIMILAR FIRMS - finds the firms with the closest overall
 // investment profile to a given firm, using straight-line
 // (Euclidean) distance across the same 8 real, already-computed
 // Genome dimensions (fund size, portfolio breadth, stage breadth,
@@ -160,7 +160,7 @@ function computeSimilarFirms(firm, count = 3) {
 }
 
 // ============================================================
-// INVESTMENT PERSONALITY — a one-line, plain-English description
+// INVESTMENT PERSONALITY - a one-line, plain-English description
 // of each firm's investing style, assembled entirely from simple
 // rules against real data already computed elsewhere on this page
 // (firmStages, sectors, computeGeography, computePhilosophyScores,
@@ -230,7 +230,7 @@ sentence,
 }
 
 // ============================================================
-// WHY THIS VC — four persuasive, plain-English bullets per firm,
+// WHY THIS VC - four persuasive, plain-English bullets per firm,
 // entirely rule-based from real data already computed elsewhere
 // on this page (rank, AUM, the firm's own sourced signatureExit
 // text, the Philosophy Scorecard's real 5-star categories, and
@@ -338,9 +338,9 @@ function renderPerformanceDashboard(firm) {
   return `
     <div class="performance-dashboard">
       <div class="performance-dashboard-label">Investment Performance</div>
-      <div class="performance-dashboard-sub">Real, sourced metrics — figures with a "+" are approximate, gathered from the firm's own reporting or reputable coverage.</div>
+      <div class="performance-dashboard-sub">Real, sourced metrics - figures with a "+" are approximate, gathered from the firm's own reporting or reputable coverage.</div>
       <div class="perf-stat-grid">${cardsHTML}</div>
-      ${!hasResearchedStats ? '<div class="performance-dashboard-note">Total portfolio, unicorn, IPO, and acquisition counts for this firm haven\'t been researched yet — shown here are only the metrics already verified on this page.</div>' : ''}
+      ${!hasResearchedStats ? '<div class="performance-dashboard-note">Total portfolio, unicorn, IPO, and acquisition counts for this firm haven\'t been researched yet - shown here are only the metrics already verified on this page.</div>' : ''}
     </div>
   `;
 }
@@ -355,7 +355,7 @@ function renderPhilosophyScorecard(firm) {
   const scores = computePhilosophyScores(firm);
 
   const rowsHTML = scores.map((c, i) => {
-    const starGlyphs = '★'.repeat(c.score) + '☆'.repeat(5 - c.score);
+    const starGlyphs = ''.repeat(c.score) + ''.repeat(5 - c.score);
     const fillPct = c.score * 20;
     return `
       <div class="phil-row">
@@ -374,7 +374,7 @@ function renderPhilosophyScorecard(firm) {
   return `
     <div class="philosophy-scorecard">
       <div class="philosophy-scorecard-label">Investment Philosophy Scorecard</div>
-      <div class="philosophy-scorecard-sub">Derived directly from this firm's researched sector and stage focus — 5 stars means it's one of their stated areas, 1 star means it isn't.</div>
+      <div class="philosophy-scorecard-sub">Derived directly from this firm's researched sector and stage focus - 5 stars means it's one of their stated areas, 1 star means it isn't.</div>
       <div class="philosophy-grid">${rowsHTML}</div>
     </div>
   `;
@@ -384,18 +384,18 @@ function renderPhilosophyScorecard(firm) {
 // to a globe icon for any future region without a specific flag,
 // so adding new regions never requires touching this function.
 const regionFlags = {
-  'United States': '🇺🇸',
-  'United Kingdom': '🇬🇧',
-  'Israel': '🇮🇱',
-  'Canada': '🇨🇦',
-  'Europe': '🇪🇺',
-  'India': '🇮🇳',
-  'Australia & New Zealand': '🇦🇺',
-  'Latin America': '🌎',
-  'Southeast Asia': '🌏',
-  'East Asia': '🌏',
-  'Middle East': '🌍',
-  'Africa': '🌍'
+  'United States': '',
+  'United Kingdom': '',
+  'Israel': '',
+  'Canada': '',
+  'Europe': '',
+  'India': '',
+  'Australia & New Zealand': '',
+  'Latin America': '',
+  'Southeast Asia': '',
+  'East Asia': '',
+  'Middle East': '',
+  'Africa': ''
 };
 
 // Builds the Geographic Investment Heatmap for a firm's detail
@@ -410,7 +410,7 @@ function renderGeographicHeatmap(firm) {
   const rowsHTML = regions.map((r, i) => {
     const tier = r.score === 5 ? 'primary' : 'secondary';
     const tierLabel = r.score === 5 ? 'Headquarters Region' : 'Confirmed Office';
-    const flag = regionFlags[r.region] || '🌐';
+    const flag = regionFlags[r.region] || '';
     const fillPct = r.score * 20;
     return `
       <div class="geo-row ${tier}">
@@ -431,7 +431,7 @@ function renderGeographicHeatmap(firm) {
       <div class="geo-heatmap-label">Geographic Investment</div>
       <div class="geo-heatmap-sub">Headquarters region is confirmed for every firm; additional regions are shown only where a specific office or market was verified during research.</div>
       ${rowsHTML}
-      ${!hasSecondary ? '<div class="geo-heatmap-note">No additional regions have been researched for this firm yet — shown here is its confirmed headquarters region only.</div>' : ''}
+      ${!hasSecondary ? '<div class="geo-heatmap-note">No additional regions have been researched for this firm yet - shown here is its confirmed headquarters region only.</div>' : ''}
     </div>
   `;
 }
@@ -459,7 +459,7 @@ function renderGenome(firm) {
   return `
     <div class="genome-panel">
       <div class="genome-panel-label">VC Genome</div>
-      <div class="genome-panel-sub">A visual signature of this firm relative to every other firm tracked on the page — computed live from its real sector, stage, geographic, and performance data.</div>
+      <div class="genome-panel-sub">A visual signature of this firm relative to every other firm tracked on the page - computed live from its real sector, stage, geographic, and performance data.</div>
       <div class="genome-strip">${barsHTML}</div>
       <div class="genome-strongest">Strongest in: <strong>${strongest.join('</strong> and <strong>')}</strong></div>
     </div>
@@ -571,7 +571,7 @@ function renderDashboard() {
 
     <div class="dashboard-section">
       <div class="analytics-subhead">Portfolio Performance Leaderboard (Since Jan '25)</div>
-      <p class="leaderboard-note" style="margin-bottom: 12px;">Only companies with a verified historical starting price are included — see the Methodology section for how the rest get filled in over time.</p>
+      <p class="leaderboard-note" style="margin-bottom: 12px;">Only companies with a verified historical starting price are included - see the Methodology section for how the rest get filled in over time.</p>
       ${leaderboardHTML}
     </div>
   `;
@@ -706,7 +706,7 @@ function renderAnalytics() {
   if (typeof renderPersonalityDistribution === 'function') renderPersonalityDistribution();
 }
 // ============================================================
-// PEER FIRMS BY CATEGORY / LOCATION / STAGE — a second, distinct
+// PEER FIRMS BY CATEGORY / LOCATION / STAGE - a second, distinct
 // form of "similar firms" alongside computeSimilarFirms() above.
 // That function finds statistically similar firms across 8 Genome
 // dimensions; this one finds EXPLICIT shared-criteria peers (same

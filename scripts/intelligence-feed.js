@@ -1,5 +1,5 @@
 /**
- * INTELLIGENCE-FEED.JS (Part 1 of 2 — data & enrichment layer)
+ * INTELLIGENCE-FEED.JS (Part 1 of 2 - data & enrichment layer)
  * Turns real, already-dated events from across the app into a
  * single chronological "what changed" feed, with each card
  * enriched into actual intelligence (career context, real
@@ -190,7 +190,7 @@ function buildIntelCard(e) {
   } else if (e.type === 'rising_activity') {
     headline = `${firm.name} shows rising documented activity`;
     context = `${e.recent} dated event${e.recent === 1 ? '' : 's'} on file in the last 2 years, up from ${e.prior} in the two years before that.`;
-    supportingData.push('This reflects what has been researched and dated on file for this firm, not a confirmed measure of real-world investment pace — firms researched more recently or more thoroughly will naturally show up here more often.');
+    supportingData.push('This reflects what has been researched and dated on file for this firm, not a confirmed measure of real-world investment pace - firms researched more recently or more thoroughly will naturally show up here more often.');
   }
 
   links.push({ label: 'Relationship Graph', href: `#relationship-graph/firm/${firm.slug}` });

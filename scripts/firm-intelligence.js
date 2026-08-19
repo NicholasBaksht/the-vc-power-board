@@ -95,7 +95,7 @@ function renderIntelligenceFeed() {
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">VC Intelligence Feed</div>
     <div class="reports-intro">
-      <p>What changed in the tracked VC ecosystem — partner moves with real career and portfolio context, spinouts, fund milestones, and a computed activity signal. Every card is built from real, dated data already on this page; nothing here is invented. Follow firms, partners, sectors, companies, or geographies to bring their events to the top.</p>
+      <p>What changed in the tracked VC ecosystem - partner moves with real career and portfolio context, spinouts, fund milestones, and a computed activity signal. Every card is built from real, dated data already on this page; nothing here is invented. Follow firms, partners, sectors, companies, or geographies to bring their events to the top.</p>
     </div>
 
     <div class="intel-follow-panel">
@@ -152,7 +152,7 @@ function wireFollowSearch() {
     if (!q) { results.style.display = 'none'; results.innerHTML = ''; return; }
     const matches = INTEL_SEARCH_INDEX.filter(e => e.label.toLowerCase().includes(q)).slice(0, 20);
     results.innerHTML = matches.length
-      ? matches.map(m => `<div class="ft-search-result" data-kind="${m.kind}" data-id="${m.id}">${m.label} <span style="color:var(--ink-dim); font-size:11.5px;">— ${m.meta}</span></div>`).join('')
+      ? matches.map(m => `<div class="ft-search-result" data-kind="${m.kind}" data-id="${m.id}">${m.label} <span style="color:var(--ink-dim); font-size:11.5px;">- ${m.meta}</span></div>`).join('')
       : `<div class="ft-search-empty">No matches.</div>`;
     results.style.display = 'block';
   });
@@ -191,7 +191,7 @@ function renderFollowChips() {
   const chipsEl = document.getElementById('intelFollowChips');
   chipsEl.innerHTML = chips.length > 0
     ? chips.map(c => `<span class="intel-follow-chip">${c.label} <button class="intel-unfollow-btn" data-kind="${c.kind}" data-id="${c.id}">×</button></span>`).join('')
-    : `<div class="intel-follow-empty">Nothing followed yet — search above to prioritize firms, partners, sectors, companies, or geographies in your feed.</div>`;
+    : `<div class="intel-follow-empty">Nothing followed yet - search above to prioritize firms, partners, sectors, companies, or geographies in your feed.</div>`;
 
   chipsEl.querySelectorAll('.intel-unfollow-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -263,7 +263,7 @@ function renderIntelFilterBar() {
         </div>
       </div>
     </div>
-    <div class="tl-disabled-filters-note">Not shown here: discrete investment/funding-round dates, partner promotions, and dated office openings — none of these are tracked with real dates anywhere on this site.</div>
+    <div class="tl-disabled-filters-note">Not shown here: discrete investment/funding-round dates, partner promotions, and dated office openings - none of these are tracked with real dates anywhere on this site.</div>
   `);
 
   document.querySelectorAll('.intel-type-chip').forEach(chip => {
@@ -346,7 +346,7 @@ function renderIntelCard(card, followScore) {
       <div class="intel-card-head">
         <span class="intel-type-badge" style="--chip-color:${INTEL_TYPE_COLORS[card.type]}">${INTEL_TYPE_LABELS[card.type]}</span>
         <span class="intel-card-year">${card.year}</span>
-        ${followScore > 0 ? `<span class="intel-followed-badge">★ Followed</span>` : ''}
+        ${followScore > 0 ? `<span class="intel-followed-badge"> Followed</span>` : ''}
       </div>
       <div class="intel-card-headline">${card.headline}</div>
       ${card.context ? `<div class="intel-card-context">${card.context}</div>` : ''}
@@ -354,8 +354,8 @@ function renderIntelCard(card, followScore) {
       <div class="intel-card-footer">
         <div class="disc-links intel-card-links">${linksHTML}</div>
         <div class="intel-follow-inline">
-          <button class="intel-follow-inline-btn" data-kind="firms" data-id="${card.firm.slug}">${isFollowingFirm ? '★ Following ' + card.firm.short : '☆ Follow ' + card.firm.short}</button>
-          ${primaryPartnerSlug ? `<button class="intel-follow-inline-btn" data-kind="partners" data-id="${primaryPartnerSlug}">${isFollowingPartner ? '★ Following ' + partnerProfiles[primaryPartnerSlug].name : '☆ Follow ' + partnerProfiles[primaryPartnerSlug].name}</button>` : ''}
+          <button class="intel-follow-inline-btn" data-kind="firms" data-id="${card.firm.slug}">${isFollowingFirm ? ' Following ' + card.firm.short : ' Follow ' + card.firm.short}</button>
+          ${primaryPartnerSlug ? `<button class="intel-follow-inline-btn" data-kind="partners" data-id="${primaryPartnerSlug}">${isFollowingPartner ? ' Following ' + partnerProfiles[primaryPartnerSlug].name : ' Follow ' + partnerProfiles[primaryPartnerSlug].name}</button>` : ''}
         </div>
       </div>
     </div>

@@ -99,7 +99,7 @@ function renderComparison() {
   });
 }
 // ============================================================
-// VC DNA COMPARISON — reuses the exact same real, already-computed
+// VC DNA COMPARISON - reuses the exact same real, already-computed
 // functions that power each firm's own profile page (Genome,
 // Philosophy Scorecard, Geographic Heatmap, Investment Personality
 // from dashboard.js) and places them side by side for 2-3 selected
@@ -171,27 +171,27 @@ function renderDnaComparison(selected) {
       <div class="dna-focus-firm" style="color:${d.color}">${d.firm.short}</div>
       ${d.topFocus.length > 0
         ? d.topFocus.map(p => `<span class="compare-sector-tag">${p.icon} ${p.label.replace(' Focus', '')}</span>`).join('')
-        : `<span class="dna-focus-empty">Generalist — no single standout focus area</span>`}
+        : `<span class="dna-focus-empty">Generalist - no single standout focus area</span>`}
     </div>
   `).join('');
 
   const geoHTML = data.map(d => `
     <div class="dna-geo-col">
       <div class="dna-geo-firm" style="color:${d.color}">${d.firm.short}</div>
-      ${d.geography.map(r => `<div class="dna-geo-region">${regionFlags[r.region] || '🌐'} ${r.region}${r.score === 5 ? ' (HQ)' : ''}</div>`).join('')}
+      ${d.geography.map(r => `<div class="dna-geo-region">${regionFlags[r.region] || ''} ${r.region}${r.score === 5 ? ' (HQ)' : ''}</div>`).join('')}
     </div>
   `).join('');
 
   return `
     <div class="dna-comparison">
       <div class="detail-subhead">VC DNA Comparison</div>
-      <div class="dna-comparison-sub">The same real Genome, Philosophy, and Geography data shown on each firm's own profile page — placed side by side. Nothing here is calculated separately; every number is pulled from the same functions already live elsewhere on the site.</div>
+      <div class="dna-comparison-sub">The same real Genome, Philosophy, and Geography data shown on each firm's own profile page - placed side by side. Nothing here is calculated separately; every number is pulled from the same functions already live elsewhere on the site.</div>
 
       <div class="dna-legend">${legendHTML}</div>
 
       <div class="dna-personality-row">${personalityHTML}</div>
 
-      <div class="dna-section-label">Genome — Relative to Every Tracked Firm</div>
+      <div class="dna-section-label">Genome - Relative to Every Tracked Firm</div>
       <div class="dna-genome-grid">${genomeRowsHTML}</div>
 
       <div class="dna-section-label">Top Stated Focus Areas</div>

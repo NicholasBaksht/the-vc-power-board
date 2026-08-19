@@ -29,7 +29,7 @@ function renderPartnerProfile(slug) {
   // ---- guarded accessors ----
   const arr = (v) => (Array.isArray(v) ? v : []);
   const num = (v) => (typeof v === 'number' && isFinite(v) ? v : null);
-  const show = (v) => (v === null || v === undefined || v === '' ? '—' : v);
+  const show = (v) => (v === null || v === undefined || v === '' ? '-' : v);
 
   const investments = arr(p.notableInvestments);
   const boardSeats  = arr(p.boardSeats);

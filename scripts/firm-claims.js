@@ -169,7 +169,7 @@ function fcSubmitUpdates(firmSlug, claimId, rows) {
 }
 
 /* ==================================================================
-   UI — a two-step drawer on the firm profile.
+   UI - a two-step drawer on the firm profile.
    Step 1 establishes who you are. Step 2 is the correction form,
    which only appears once step 1 is submitted, so nobody proposes
    changes without leaving a way to check who proposed them.
@@ -216,11 +216,11 @@ function fcClaimFormHtml(firm) {
     '</div>' +
 
     '<p class="fc-note"><strong>What claiming does and does not do.</strong> ' +
-    'It lets you send us verified facts about your firm — website, headquarters, team, ' +
+    'It lets you send us verified facts about your firm - website, headquarters, team, ' +
     'fund size, sectors, check size. It does not change Power Board’s own analysis. ' +
     'Power Personality, Power Capabilities, Power Score, Power Match ranking and Conflict Check ' +
     'are produced independently from the data we hold, and a firm cannot edit its own conclusions. ' +
-    'Better facts can move them — but only through the same computation every other firm gets.</p>' +
+    'Better facts can move them - but only through the same computation every other firm gets.</p>' +
     '</div>';
 }
 
@@ -312,7 +312,7 @@ document.addEventListener('click', function (e) {
       const firm = firms.find(function (f) { return f.slug === fcOpenSlug; });
       document.getElementById('fcPanel').innerHTML =
         '<div class="fc-head"><div class="fc-eyebrow">Claim received</div></div>' +
-        '<p class="fc-intro"><strong>Thank you — that is logged for review.</strong> ' +
+        '<p class="fc-intro"><strong>Thank you - that is logged for review.</strong> ' +
         'We check claims against the firm’s own published sources before marking one verified. ' +
         'We cannot promise a turnaround time, and a claim is not a commitment to change anything. ' +
         'You can suggest corrections now.</p>' + fcUpdateFormHtml(firm);

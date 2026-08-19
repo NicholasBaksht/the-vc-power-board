@@ -152,11 +152,11 @@ function getSuggestedFirm(shortlistFirms) {
 }
 // Builds the small colored badge showing return since Jan 2, 2025,
 // for any holding that has a real historicalPrice on file. Holdings
-// without one yet (historicalPrice: null) show a neutral "—" badge
+// without one yet (historicalPrice: null) show a neutral "-" badge
 // instead of guessing.
 function buildReturnBadge(h) {
   if (h.historicalPrice === null || h.price === null) {
-    return `<span class="return-badge unknown">— since Jan '25</span>`;
+    return `<span class="return-badge unknown">- since Jan '25</span>`;
   }
   const pct = ((h.price - h.historicalPrice) / h.historicalPrice) * 100;
   const r = Number(pct.toFixed(1));

@@ -68,7 +68,7 @@ function buildIndexes(data) {
     });
   });
   if (unmappedSeen.size > 0) {
-    console.warn('\n⚠️  Unmapped sector tags (add to taxonomy.js):');
+    console.warn('\n  Unmapped sector tags (add to taxonomy.js):');
     unmappedSeen.forEach(t => console.warn(`   - "${t}"`));
   }
 
@@ -83,7 +83,7 @@ function buildIndexes(data) {
     else unmappedHq.add(firm.hq);
   });
   if (unmappedHq.size > 0) {
-    console.warn('\n⚠️  Unmapped HQ locations (add to taxonomy.js):');
+    console.warn('\n  Unmapped HQ locations (add to taxonomy.js):');
     unmappedHq.forEach(h => console.warn(`   - "${h}"`));
   }
 
@@ -243,7 +243,7 @@ function renderFirmCard(firm) {
         <div>
           <div class="firm-rank">${escapeHtml(firm.hq || '')}</div>
           <div class="firm-name"><a href="${appHashLink(firm.slug)}" class="firm-link">${escapeHtml(firm.name)}</a></div>
-          <div class="firm-meta">Founded ${firm.founded || '—'}</div>
+          <div class="firm-meta">Founded ${firm.founded || '-'}</div>
         </div>
         <div class="firm-aum"><div class="num">${escapeHtml(firm.aum || '')}</div><div class="lbl">Assets Managed</div></div>
       </div>
@@ -350,7 +350,7 @@ function renderFirmPage(firm, allFirms, data, comparisonsByFirmSlug) {
     <div class="seo-stats">
       <span><strong>${escapeHtml(firm.aum || '')}</strong> AUM</span>
       <span><strong>${powerScore}</strong>/100 Power Score™</span>
-      <span><strong>${firm.founded || '—'}</strong> Founded</span>
+      <span><strong>${firm.founded || '-'}</strong> Founded</span>
       <span><strong>${escapeHtml(firm.hq || '')}</strong></span>
     </div>
     <div style="margin-bottom: 28px;">${sectorTagsHtml}</div>
@@ -369,8 +369,8 @@ function renderFirmPage(firm, allFirms, data, comparisonsByFirmSlug) {
 
   return renderPage({
     depth: 2,
-    title: `${firm.name} — Power Score ${powerScore}/100 | The VC Power Board`,
-    description: `${firm.name}: ${escapeHtml(firm.aum || '')} AUM, founded ${firm.founded || ''}, headquartered in ${firm.hq || ''}. Real, sourced venture capital firm data — Power Score ${powerScore}/100.`,
+    title: `${firm.name} - Power Score ${powerScore}/100 | The VC Power Board`,
+    description: `${firm.name}: ${escapeHtml(firm.aum || '')} AUM, founded ${firm.founded || ''}, headquartered in ${firm.hq || ''}. Real, sourced venture capital firm data - Power Score ${powerScore}/100.`,
     canonicalPath: `/firms/${firm.slug}/`,
     ogType: 'website',
     breadcrumbs: [
@@ -441,7 +441,7 @@ function renderPartnerPage(slug, partner, firmsBySlug, allPartnerEntries) {
 
   return renderPage({
     depth: 2,
-    title: `${partner.name} — ${partner.title || 'Partner'}${firm ? ` at ${firm.name}` : ''} | The VC Power Board`,
+    title: `${partner.name} - ${partner.title || 'Partner'}${firm ? ` at ${firm.name}` : ''} | The VC Power Board`,
     description: `${partner.name} is ${partner.title || 'a partner'}${firm ? ` at ${firm.name}` : ''}. Real, sourced background, career history, and notable investments.`,
     canonicalPath: `/people/${slug}/`,
     ogType: 'profile',
@@ -465,9 +465,9 @@ function renderComparePage(firmA, firmB, sectorSlug, computePowerScore) {
 
   const rows = [
     ['Power Score™', `${scoreA}/100`, `${scoreB}/100`],
-    ['Assets Managed', firmA.aum || '—', firmB.aum || '—'],
-    ['Founded', firmA.founded || '—', firmB.founded || '—'],
-    ['Headquarters', firmA.hq || '—', firmB.hq || '—'],
+    ['Assets Managed', firmA.aum || '-', firmB.aum || '-'],
+    ['Founded', firmA.founded || '-', firmB.founded || '-'],
+    ['Headquarters', firmA.hq || '-', firmB.hq || '-'],
     ['Sectors', (firmA.sectors || []).join(', '), (firmB.sectors || []).join(', ')],
   ];
 
@@ -515,7 +515,7 @@ function renderComparePage(firmA, firmB, sectorSlug, computePowerScore) {
   return renderPage({
     depth: 2,
     title: `${firmA.name} vs ${firmB.name}: Compared | The VC Power Board`,
-    description: `Compare ${firmA.name} and ${firmB.name} — AUM, Power Score, founding year, headquarters, and sector focus, side by side with real sourced data.`,
+    description: `Compare ${firmA.name} and ${firmB.name} - AUM, Power Score, founding year, headquarters, and sector focus, side by side with real sourced data.`,
     canonicalPath: `/compare/${pairSlug}/`,
     ogType: 'website',
     breadcrumbs: [
@@ -641,7 +641,7 @@ const data = loadCombinedScripts(['data-meta.js', 'data-partners.js', 'data-firm
   });
   {
     const sorted = [...firms].sort((a, b) => parseAumBillions(b.aum) - parseAumBillions(a.aum));
-    const bodyHtml = `<h1 class="seo-h1">All Venture Capital Firms</h1><p class="seo-intro">Every firm tracked on The VC Power Board, ranked by assets under management.</p><div class="firms">${sorted.map(f => `<div class="firm"><div class="firm-name"><a href="${f.slug}/" class="firm-link">${escapeHtml(f.name)}</a></div><div class="firm-meta">${escapeHtml(f.aum || '')} · Founded ${f.founded || '—'}</div></div>`).join('')}</div>`;
+    const bodyHtml = `<h1 class="seo-h1">All Venture Capital Firms</h1><p class="seo-intro">Every firm tracked on The VC Power Board, ranked by assets under management.</p><div class="firms">${sorted.map(f => `<div class="firm"><div class="firm-name"><a href="${f.slug}/" class="firm-link">${escapeHtml(f.name)}</a></div><div class="firm-meta">${escapeHtml(f.aum || '')} · Founded ${f.founded || '-'}</div></div>`).join('')}</div>`;
     writeFile('firms/index.html', renderPage({ depth: 1, title: 'All Venture Capital Firms | The VC Power Board', description: `Browse all ${firms.length} venture capital firms tracked on The VC Power Board, ranked by assets under management.`, canonicalPath: '/firms/', ogType: 'website', breadcrumbs: [{ label: 'Home', href: '../index.html', absoluteUrl: `${SITE_URL}/` }, { label: 'Firms', href: '', absoluteUrl: `${SITE_URL}/firms/` }], h1: 'All Venture Capital Firms', bodyHtml, jsonLd: buildItemListJsonLd(sorted, `${SITE_URL}/firms/`) }));
     allGeneratedUrls.push({ url: `${SITE_URL}/firms/`, priority: '0.9' });
   }
@@ -652,7 +652,7 @@ const data = loadCombinedScripts(['data-meta.js', 'data-partners.js', 'data-firm
     allGeneratedUrls.push({ url: `${SITE_URL}/compare/${pairSlug}/`, priority: '0.5' });
   });
   {
-    const bodyHtml = `<h1 class="seo-h1">Venture Capital Firm Comparisons</h1><p class="seo-intro">Side-by-side comparisons of leading venture capital firms within the same sector — real, sourced AUM, Power Score, and founding data.</p><div class="firms">${comparisonPairs.map(({ firmA, firmB }) => `<div class="firm"><div class="firm-name"><a href="${firmA.slug}-vs-${firmB.slug}/" class="firm-link">${escapeHtml(firmA.name)} vs ${escapeHtml(firmB.name)}</a></div></div>`).join('')}</div>`;
+    const bodyHtml = `<h1 class="seo-h1">Venture Capital Firm Comparisons</h1><p class="seo-intro">Side-by-side comparisons of leading venture capital firms within the same sector - real, sourced AUM, Power Score, and founding data.</p><div class="firms">${comparisonPairs.map(({ firmA, firmB }) => `<div class="firm"><div class="firm-name"><a href="${firmA.slug}-vs-${firmB.slug}/" class="firm-link">${escapeHtml(firmA.name)} vs ${escapeHtml(firmB.name)}</a></div></div>`).join('')}</div>`;
     writeFile('compare/index.html', renderPage({ depth: 1, title: 'Venture Capital Firm Comparisons | The VC Power Board', description: `Browse ${comparisonPairs.length} side-by-side venture capital firm comparisons, ranked and sourced.`, canonicalPath: '/compare/', ogType: 'website', breadcrumbs: [{ label: 'Home', href: '../index.html', absoluteUrl: `${SITE_URL}/` }, { label: 'Compare', href: '', absoluteUrl: `${SITE_URL}/compare/` }], h1: 'Venture Capital Firm Comparisons', bodyHtml, jsonLd: null }));
     allGeneratedUrls.push({ url: `${SITE_URL}/compare/`, priority: '0.7' });
   }
@@ -672,7 +672,7 @@ const data = loadCombinedScripts(['data-meta.js', 'data-partners.js', 'data-firm
   writeFile('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls.map(u => `  <url>\n    <loc>${u.url}</loc>\n    <priority>${u.priority}</priority>\n  </url>`).join('\n')}\n</urlset>`);
   writeFile('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
-  console.log(`\n✅ Generated ${allGeneratedUrls.length} static pages + sitemap.xml + robots.txt`);
+  console.log(`\n Generated ${allGeneratedUrls.length} static pages + sitemap.xml + robots.txt`);
   console.log(`   Companies: ${Object.keys(SECTOR_MAP).filter(s => sectorIndex[s].size > 0).length} category pages`);
   console.log(`   Locations: ${Object.keys(LOCATION_MAP).filter(s => locationIndex[s].size >= MIN_FIRMS_FOR_LOCATION_PAGE).length} location pages`);
   console.log(`   Stages: ${CANONICAL_STAGES.filter(s => stageIndex[s.slug].size > 0).length} stage pages`);

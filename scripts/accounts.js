@@ -1,5 +1,5 @@
 /* ============================================================
-   ACCOUNT — the #signin and #account views
+   ACCOUNT - the #signin and #account views
    ------------------------------------------------------------
    Renders sign-in (magic link, no password field) and the
    account page. The account page is not decoration: Privacy
@@ -37,7 +37,7 @@ function authUnavailableMarkup() {
   return `
     <div class="acct-card">
       <h1 class="acct-title">Accounts are unavailable</h1>
-      <p class="acct-lead">Sign-in isn't reachable right now. Everything on the board is public and works without an account — rankings, firms, partners and scores are all still available.</p>
+      <p class="acct-lead">Sign-in isn't reachable right now. Everything on the board is public and works without an account - rankings, firms, partners and scores are all still available.</p>
       <a href="#rankings" class="acct-btn acct-btn-ghost">Back to the rankings</a>
     </div>`;
 }
@@ -58,7 +58,7 @@ function signinShell(inner) {
       ${inner}
       <div class="acct-note">
         <p><strong>An account only does one thing:</strong> it saves your Shortlist so it follows you between devices instead of living in one browser.</p>
-        <p>Everything else on the board — every firm, partner, ranking and score — is public and needs no account. Your email is never sold, shared, or used for marketing. See the <a href="privacy/">Privacy Policy</a>.</p>
+        <p>Everything else on the board - every firm, partner, ranking and score - is public and needs no account. Your email is never sold, shared, or used for marketing. See the <a href="privacy/">Privacy Policy</a>.</p>
       </div>
     </div>`;
 }
@@ -268,7 +268,7 @@ function renderAccount() {
     return;
   }
 
-  // Session still resolving — say so rather than flashing "signed out".
+  // Session still resolving - say so rather than flashing "signed out".
   if (typeof authReady !== 'undefined' && !authReady) {
     el.innerHTML = `<div class="acct-card"><p class="acct-lead">Checking your session…</p></div>`;
     return;
@@ -287,7 +287,7 @@ function renderAccount() {
 
   const created = currentUser && currentUser.created_at
     ? new Date(currentUser.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
-    : '—';
+    : '-';
 
   // The username is the account's public-facing name, so it leads;
   // the email drops to a metadata row. Falls back to the email when
@@ -314,7 +314,7 @@ function renderAccount() {
         </div>
         <div class="acct-meta-item">
           <span class="acct-meta-label">Saved firms</span>
-          <span class="acct-meta-value" id="acctCount">—</span>
+          <span class="acct-meta-value" id="acctCount">-</span>
         </div>
       </div>
 
@@ -336,7 +336,7 @@ function renderAccount() {
 
       <div class="acct-danger">
         <h2 class="acct-h2">Delete your account</h2>
-        <p>This removes your email address and your entire Shortlist from the database immediately and permanently. There is no soft-delete and no archive — it cannot be undone, and it cannot be restored on request.</p>
+        <p>This removes your email address and your entire Shortlist from the database immediately and permanently. There is no soft-delete and no archive - it cannot be undone, and it cannot be restored on request.</p>
         <button class="acct-btn acct-btn-danger" id="acctDelete">Delete my account</button>
         <div class="acct-status" id="acctDeleteStatus" role="status" aria-live="polite"></div>
       </div>
@@ -451,7 +451,7 @@ function wireAccountControls() {
           return;
         }
         status.className = 'acct-status acct-status-ok';
-        status.textContent = 'Check both inboxes — a confirmation link has been sent to the new address, and the change takes effect once you click it.';
+        status.textContent = 'Check both inboxes - a confirmation link has been sent to the new address, and the change takes effect once you click it.';
       });
     });
   }

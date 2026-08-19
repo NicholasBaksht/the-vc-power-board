@@ -8,7 +8,7 @@
  // slugs of firms picked for comparison, max 3
 
 // ============================================================
-// SAVED SHORTLIST — lets founders save firms they're interested
+// SAVED SHORTLIST - lets founders save firms they're interested
 // in, persisted in the browser's local storage so it survives
 // page reloads. Nothing is sent anywhere; it only ever lives on
 // this device. Wrapped in try/catch since some browsers (private
@@ -38,11 +38,11 @@ function saveShortlistToStorage(set) {
 }
 
 // ============================================================
-// SHORTLIST DETAILS — extends the existing star/save toggle above
+// SHORTLIST DETAILS - extends the existing star/save toggle above
 // with the real per-firm CRM fields a founder tracks while
 // fundraising: notes, priority, and outreach status. Stored under
 // a separate localStorage key so the original getShortlist()/
-// toggleShortlist() behavior (used by the simple ★ Saved button on
+// toggleShortlist() behavior (used by the simple  Saved button on
 // every firm page) is never touched or put at risk - this is pure
 // addition, not a rework of working code.
 // ============================================================
@@ -119,8 +119,8 @@ function toggleShortlist(slug) {
 }
 
 // ============================================================
-// SHORTLIST BUILDER — a lightweight fundraising CRM built on top
-// of the existing ★ Saved shortlist. "Average Check" is the mean
+// SHORTLIST BUILDER - a lightweight fundraising CRM built on top
+// of the existing  Saved shortlist. "Average Check" is the mean
 // of each firm's real stage-derived check midpoint (see
 // getTypicalCheckMidpointM above) - an estimate, labeled as such,
 // never a reported figure. "Average Match" only appears if the
@@ -173,7 +173,7 @@ function renderShortlistBuilder() {
             <div class="sl-card-meta">${firm.aum} · Typical check: ${getTypicalCheckRange(firm)}</div>
           </div>
           ${matchBadge}
-          <button class="sl-remove-btn" data-remove="${firm.slug}" title="Remove from shortlist">✕</button>
+          <button class="sl-remove-btn" data-remove="${firm.slug}" title="Remove from shortlist"></button>
         </div>
 
         <div class="sl-field-row">
@@ -192,7 +192,7 @@ function renderShortlistBuilder() {
 
         <div class="sl-field-row">
           <div class="sl-field-label">Notes</div>
-          <textarea class="sl-notes" data-notes="${firm.slug}" placeholder="Add notes — who you talked to, next steps, anything worth remembering...">${entry.notes}</textarea>
+          <textarea class="sl-notes" data-notes="${firm.slug}" placeholder="Add notes - who you talked to, next steps, anything worth remembering...">${entry.notes}</textarea>
         </div>
       </div>
     `;
@@ -214,7 +214,7 @@ function renderShortlistBuilder() {
           <button class="sl-export-btn" id="exportPdfBtn">Export PDF</button>
         </div>
       </div>
-      <div class="sl-limit-note">${SHORTLIST_FREE_LIMIT} firms max on the free plan — see Pricing to upgrade.</div>
+      <div class="sl-limit-note">${SHORTLIST_FREE_LIMIT} firms max on the free plan - see Pricing to upgrade.</div>
       <div class="sl-cards-list">${cardsHTML}</div>
     `}
   `;
@@ -316,10 +316,10 @@ document.addEventListener('click', (e) => {
   const slug = e.target.dataset.slug;
   const result = toggleShortlist(slug);
   if (result.limitReached) {
-    alert(`Free plan limit reached (${SHORTLIST_FREE_LIMIT}/${SHORTLIST_FREE_LIMIT} saved firms). Upgrade to Pro for unlimited saves — see Pricing in the nav bar.`);
+    alert(`Free plan limit reached (${SHORTLIST_FREE_LIMIT}/${SHORTLIST_FREE_LIMIT} saved firms). Upgrade to Pro for unlimited saves - see Pricing in the nav bar.`);
     return;
   }
   const isSaved = result.shortlist.has(slug);
   e.target.classList.toggle('saved', isSaved);
-  e.target.textContent = isSaved ? '★ Saved' : '☆ Save';
+  e.target.textContent = isSaved ? ' Saved' : ' Save';
 });

@@ -41,19 +41,19 @@ function getConcerns(firm, reasons) {
   reasons.forEach(r => {
     if (r.passed === false) {
       if (r.label === 'Strong track record') {
-        concerns.push(`Below-average track record on this site's own scoring — ${r.detail}`);
+        concerns.push(`Below-average track record on this site's own scoring - ${r.detail}`);
       } else {
         concerns.push(r.detail);
       }
     }
   });
   const num = parseAumNumber(firm.aum);
-  if (num >= 20) concerns.push(`Large fund (${firm.aum}) — typically writes bigger checks and may be more competitive to access`);
+  if (num >= 20) concerns.push(`Large fund (${firm.aum}) - typically writes bigger checks and may be more competitive to access`);
   const regions = computeGeography(firm);
-  if (regions.length === 1) concerns.push(`Limited confirmed international presence — primarily active in ${regions[0].region}`);
+  if (regions.length === 1) concerns.push(`Limited confirmed international presence - primarily active in ${regions[0].region}`);
   const power = computePowerScore(firm);
-  if (power >= 70) concerns.push(`High Power Score (${power}/100) reflects a highly sought-after firm — expect real competition for allocation`);
-  if (firm.sectors.length <= 2) concerns.push(`Concentrated sector focus (${firm.sectors.join(', ')}) — may not fit adjacent industries well`);
+  if (power >= 70) concerns.push(`High Power Score (${power}/100) reflects a highly sought-after firm - expect real competition for allocation`);
+  if (firm.sectors.length <= 2) concerns.push(`Concentrated sector focus (${firm.sectors.join(', ')}) - may not fit adjacent industries well`);
   return concerns;
 }
 
@@ -70,10 +70,10 @@ function getOutreachTips(firm) {
   const philScores = computePhilosophyScores(firm);
   const aiScore = philScores.find(p => p.key === 'ai').score;
   const enterpriseScore = philScores.find(p => p.key === 'enterprise').score;
-  if (aiScore === 5) tips.push('Lead with your technical differentiation — this firm has a stated focus on AI.');
-  if (enterpriseScore === 5) tips.push('Highlight enterprise traction and revenue metrics — a stated focus area for this firm.');
+  if (aiScore === 5) tips.push('Lead with your technical differentiation - this firm has a stated focus on AI.');
+  if (enterpriseScore === 5) tips.push('Highlight enterprise traction and revenue metrics - a stated focus area for this firm.');
   const partnerWithProfile = (firm.leadership || []).find(l => l.profileSlug);
-  if (partnerWithProfile) tips.push(`Research ${partnerWithProfile.name} specifically before reaching out — see their full profile on this site.`);
+  if (partnerWithProfile) tips.push(`Research ${partnerWithProfile.name} specifically before reaching out - see their full profile on this site.`);
   tips.push("Reference relevant portfolio companies below to show you understand the firm's real investment pattern.");
   return tips;
 }
@@ -89,7 +89,7 @@ function getFundraisingTier(firm, score) {
 }
 
 // ============================================================
-// FOUNDER FUNDRAISING REPORT — the flagship feature. Assembles a
+// FOUNDER FUNDRAISING REPORT - the flagship feature. Assembles a
 // premium research-report-style view entirely from real,
 // already-computed data: computeFinderMatches for scoring,
 // computeSimilarFirms for alternatives, firm.holdings for
@@ -113,7 +113,7 @@ function renderFundraisingReport() {
   if (finderRegion !== 'any') narrativeParts.push(`based in ${finderRegion}`);
   const profileDesc = narrativeParts.length > 0 ? narrativeParts.join(', ') : 'your startup';
   const topFirmNames = topMatches.slice(0, 3).map(m => m.firm.short).join(', ');
-  const narrative = `Based on a founder ${profileDesc}, the strongest fits on this page are led by ${topFirmNames}. ${confidence.answered < 3 ? 'Answer more questions above for a more precise match — this summary is based on limited input so far.' : `This assessment draws on ${confidence.answered} of ${confidence.total} possible signals you provided.`}`;
+  const narrative = `Based on a founder ${profileDesc}, the strongest fits on this page are led by ${topFirmNames}. ${confidence.answered < 3 ? 'Answer more questions above for a more precise match - this summary is based on limited input so far.' : `This assessment draws on ${confidence.answered} of ${confidence.total} possible signals you provided.`}`;
 
   const execHTML = `
     <div class="fr-exec-summary">
@@ -188,13 +188,13 @@ function renderFundraisingReport() {
           <div class="fr-card-col">
             <div class="fr-card-col-label fr-col-positive">Why This VC Fits</div>
             ${whyFits.length > 0
-              ? whyFits.map(r => `<div class="fr-fit-item fr-fit-positive">✓ ${r.label} — ${r.detail}</div>`).join('')
+              ? whyFits.map(r => `<div class="fr-fit-item fr-fit-positive"> ${r.label} - ${r.detail}</div>`).join('')
               : `<div class="fr-fit-empty">Answer more questions above for specific fit reasons.</div>`}
           </div>
           <div class="fr-card-col">
             <div class="fr-card-col-label fr-col-concern">Potential Concerns</div>
             ${concerns.length > 0
-              ? concerns.map(c => `<div class="fr-fit-item fr-fit-concern">⚠ ${c}</div>`).join('')
+              ? concerns.map(c => `<div class="fr-fit-item fr-fit-concern"> ${c}</div>`).join('')
               : `<div class="fr-fit-empty">No significant concerns flagged for this firm.</div>`}
           </div>
         </div>
@@ -204,7 +204,7 @@ function renderFundraisingReport() {
           <div class="fr-comparables-row">
             ${firm.holdings.map(h => `<a href="#company/${slugifyCompany(h.name)}" class="fr-comparable-chip">${h.name} <span class="fr-comparable-ticker">${h.ticker}</span></a>`).join('')}
           </div>
-          <div class="fr-comparables-caveat">Shown as evidence of ${firm.short}'s real sector focus — individual portfolio companies aren't tagged by sector on this site, so this isn't a claim that each one matches your specific industry.</div>
+          <div class="fr-comparables-caveat">Shown as evidence of ${firm.short}'s real sector focus - individual portfolio companies aren't tagged by sector on this site, so this isn't a claim that each one matches your specific industry.</div>
         ` : ''}
 
         <div class="fr-card-section-label">Suggested Outreach Strategy</div>
@@ -232,8 +232,8 @@ function renderFundraisingReport() {
   const tiers = ['Start Here', 'Stretch Targets', 'Reach Later'];
   const tierDescriptions = {
     'Start Here': 'Strong compatibility and a fund size where founders typically have real access. Prioritize these first.',
-    'Stretch Targets': 'Strong compatibility, but a larger, more competitive fund — worth pursuing, expect more competition for allocation.',
-    'Reach Later': 'Lower current compatibility — often a better fit after more traction, a later round, or a sharper pitch.'
+    'Stretch Targets': 'Strong compatibility, but a larger, more competitive fund - worth pursuing, expect more competition for allocation.',
+    'Reach Later': 'Lower current compatibility - often a better fit after more traction, a later round, or a sharper pitch.'
   };
   const tiersHTML = tiers.map(tier => {
     const inTier = topMatches.filter(({ firm, score }) => getFundraisingTier(firm, score) === tier);
@@ -252,7 +252,7 @@ function renderFundraisingReport() {
   const strategyHTML = `
     <div class="fr-section">
       <div class="fr-section-title">Fundraising Strategy</div>
-      <p class="fr-section-intro">A prioritized action plan based on the ${topMatches.length} firms above — sequenced by realistic access, not just raw score.</p>
+      <p class="fr-section-intro">A prioritized action plan based on the ${topMatches.length} firms above - sequenced by realistic access, not just raw score.</p>
       <div class="fr-tiers-grid">${tiersHTML}</div>
     </div>
   `;
@@ -262,7 +262,7 @@ function renderFundraisingReport() {
       ${execHTML}
       <div class="fr-section">
         <div class="fr-section-title">Top Recommended Investors</div>
-        <p class="fr-section-intro">Ranked by real compatibility score, computed the same way as the matches above — this is the same engine, just presented as a full research report.</p>
+        <p class="fr-section-intro">Ranked by real compatibility score, computed the same way as the matches above - this is the same engine, just presented as a full research report.</p>
         <div class="fr-cards-list">${cardsHTML}</div>
       </div>
       ${strategyHTML}

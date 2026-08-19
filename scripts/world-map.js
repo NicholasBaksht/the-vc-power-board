@@ -139,7 +139,7 @@ function renderWorldMapSelection() {
   if (!cluster) return;
 
   container.innerHTML = `
-    <div class="worldmap-selection-label">${cluster.hq} — ${cluster.count} firm${cluster.count === 1 ? '' : 's'}</div>
+    <div class="worldmap-selection-label">${cluster.hq} - ${cluster.count} firm${cluster.count === 1 ? '' : 's'}</div>
     <div class="worldmap-selection-grid">
       ${cluster.firms.map(f => `
         <a href="#${f.slug}" class="worldmap-firm-card">

@@ -161,7 +161,7 @@ function renderHistoricalSnapshot(deepLinkFirmSlug) {
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">Historical Timeline</div>
     <div class="reports-intro">
-      <p>Pick a firm to see every real, dated event on file for it — partners joining and leaving, spinout lineage, and firm milestones. This can't show individual dated investments, partner promotions, or dated office openings, since none of those are tracked with real dates anywhere on this site — showing them here would mean guessing, not reporting.</p>
+      <p>Pick a firm to see every real, dated event on file for it - partners joining and leaving, spinout lineage, and firm milestones. This can't show individual dated investments, partner promotions, or dated office openings, since none of those are tracked with real dates anywhere on this site - showing them here would mean guessing, not reporting.</p>
     </div>
 
     <div class="snapshot-controls">
@@ -278,7 +278,7 @@ function renderTimeline(firm, container) {
       ${(snapshotActiveTypes.size > 0 || snapshotActivePartner) ? `<button class="tl-clear-filters" id="tlClearFilters">Clear Filters</button>` : ''}
     </div>
 
-    <div class="tl-disabled-filters-note">Sector and Geography filters aren't shown here — both are fixed attributes of ${firm.short}, not of individual events, so filtering this firm's own timeline by its own unchanging sector or geography wouldn't do anything.</div>
+    <div class="tl-disabled-filters-note">Sector and Geography filters aren't shown here - both are fixed attributes of ${firm.short}, not of individual events, so filtering this firm's own timeline by its own unchanging sector or geography wouldn't do anything.</div>
 
     <div id="tlEventList"></div>
   `;
@@ -477,6 +477,6 @@ function renderCompareYears(firm, container) {
     ${listBlock('Partners Departed', departed, 'No partner departure dates on file in this range.')}
     ${listBlock('Spinout Activity', spinouts, 'No spinout events on file in this range.')}
     ${listBlock('Firm Milestones', milestones, 'No dated milestones on file in this range.')}
-    <div class="cmp-caveat">Sectors, portfolio holdings, and AUM aren't tracked historically anywhere on this site — only current figures exist for those, so they can't be honestly compared across years. What's shown above is limited to what's actually dated in the data.</div>
+    <div class="cmp-caveat">Sectors, portfolio holdings, and AUM aren't tracked historically anywhere on this site - only current figures exist for those, so they can't be honestly compared across years. What's shown above is limited to what's actually dated in the data.</div>
   `;
 }

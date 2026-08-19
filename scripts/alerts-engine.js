@@ -1,5 +1,5 @@
 /* ============================================================
-   ALERTS-ENGINE.JS  —  Power Alerts computation layer
+   ALERTS-ENGINE.JS  -  Power Alerts computation layer
 
    DATA -> METRIC -> THRESHOLD -> SCORE -> ALERT.
 

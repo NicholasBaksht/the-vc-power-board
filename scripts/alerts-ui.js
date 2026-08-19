@@ -1,5 +1,5 @@
 /* ============================================================
-   ALERTS-UI.JS  —  Power Alerts rendering layer
+   ALERTS-UI.JS  -  Power Alerts rendering layer
 
    Reads the output of computePowerAlerts() and renders it.
    Contains no analysis of its own: if the engine returns
@@ -113,7 +113,7 @@ function paEvidenceHtml(a) {
     rows.push(['Funds on record', e.recordedFunds + (e.listComplete ? '' : ' (list known incomplete)')]);
   }
   if (e.coverage) rows.push(['Coverage', e.coverage]);
-  if (e.capturedOn) rows.push(['Captured on', e.capturedOn.join('  and  ')]);
+  if (e.capturedOn) rows.push(['Captured on', e.capturedOn.join(' and  ')]);
   if (e.rosterSize) rows.push(['Roster size', e.rosterSize.before + ' \u2192 ' + e.rosterSize.after +
     ' (' + e.rosterSize.retained + ' retained)']);
   if (e.teamPage) rows.push(['Team page', e.teamPage]);
@@ -273,7 +273,7 @@ function paCardHtml(a) {
       (read ? ' is-read' : '') + (pr.followed ? ' is-followed' : '') +
       '" data-alert-id="' + paEsc(a.id) + '" data-type="' + paEsc(a.type) + '">' +
     '<header class="pa-card-head">' +
-      '<span class="pa-badge">&#128276; Power Alert</span>' +
+      '<span class="pa-badge"> Power Alert</span>' +
       '<span class="pa2-priority" title="' + paEsc(pr.why) + '">' + pr.label + '</span>' +
       (pr.followed ? '<span class="pa2-following">Following</span>' : '') +
       (read ? '' : '<span class="pa2-unread" aria-label="Unread">&bull;</span>') +
@@ -342,7 +342,7 @@ function renderPowerAlerts() {
       '<p class="pa2-empty-inline">Nothing new on the firms you follow right now.</p></div>'
     : '<div class="pa2-onboard">' +
         '<strong>Follow a firm to personalise this feed.</strong> ' +
-        'Open any firm profile and use Follow — alerts about those firms will surface here first.' +
+        'Open any firm profile and use Follow - alerts about those firms will surface here first.' +
       '</div>';
 
   el.innerHTML = header +
@@ -361,7 +361,7 @@ function renderPowerAlerts() {
       '<span class="pa-meta-sep">&middot;</span>' +
       '<button class="pa-reset" type="button">Restore dismissed</button>' +
     '</footer>' +
-    '<p class="pa2-roadmap">In-app alerts are live. Email and push digests are not yet delivered — ' +
+    '<p class="pa2-roadmap">In-app alerts are live. Email and push digests are not yet delivered - ' +
     'the preference is stored but nothing is sent. Match and conflict alerts need saved fundraising ' +
     'criteria, which Power Board does not store per user yet.</p>';
 

@@ -1,5 +1,5 @@
 /* ============================================================
-   DATA-LOGOS.JS  —  generated, do not hand-edit
+   DATA-LOGOS.JS  -  generated, do not hand-edit
 
    One entry per firm that has a real logo file in assets/logos/.
    Firms absent from this map render a wordmark tile instead; that

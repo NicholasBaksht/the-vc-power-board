@@ -184,7 +184,7 @@ function renderFollowButton(firm) {
   const on = isFollowing(firm.slug);
   return '<button type="button" class="pf-follow' + (on ? ' is-following' : '') + '" ' +
     'data-follow-slug="' + firm.slug + '" aria-pressed="' + on + '">' +
-    '<span class="pf-follow-icon" aria-hidden="true">' + (on ? '✓' : '+') + '</span>' +
+    '<span class="pf-follow-icon" aria-hidden="true">' + (on ? '' : '+') + '</span>' +
     '<span class="pf-follow-label">' + (on ? 'Following' : 'Follow firm') + '</span>' +
     '</button>';
 }
@@ -198,7 +198,7 @@ document.addEventListener('click', function (e) {
   btn.setAttribute('aria-pressed', String(now));
   const icon = btn.querySelector('.pf-follow-icon');
   const label = btn.querySelector('.pf-follow-label');
-  if (icon) icon.textContent = now ? '✓' : '+';
+  if (icon) icon.textContent = now ? '' : '+';
   if (label) label.textContent = now ? 'Following' : 'Follow firm';
 });
 

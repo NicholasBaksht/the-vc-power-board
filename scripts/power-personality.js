@@ -31,28 +31,28 @@
    ============================================================ */
 
 const PP_ARCHETYPES = {
-  'ai-native':        { emoji: '\u{1F916}', label: 'AI Native',        kind: 'sector' },
-  'technical':        { emoji: '\u{1F9E0}', label: 'Technical',        kind: 'sector' },
-  'deep-tech':        { emoji: '\u{1F9EC}', label: 'Deep Tech',        kind: 'sector' },
-  'enterprise':       { emoji: '\u{1F3E2}', label: 'Enterprise',       kind: 'sector' },
-  'consumer':         { emoji: '\u{1F6CD}', label: 'Consumer',         kind: 'sector' },
-  'research-driven':  { emoji: '\u{1F52C}', label: 'Research-Driven',  kind: 'sector' },
-  'fintech':          { emoji: '\u{1F4B3}', label: 'Fintech',          kind: 'sector' },
-  'crypto':           { emoji: '\u26D3', label: 'Crypto & Web3',   kind: 'sector' },
-  'defense':          { emoji: '\u{1F6E1}', label: 'Defense',          kind: 'sector' },
-  'industrial':       { emoji: '\u{1F3D7}', label: 'Industrial',       kind: 'sector' },
-  'mobility':         { emoji: '\u{1F69A}', label: 'Mobility & Logistics', kind: 'sector' },
-  'edtech':           { emoji: '\u{1F393}', label: 'Education',        kind: 'sector' },
-  'mission-driven':   { emoji: '\u{1F331}', label: 'Mission-Driven',   kind: 'sector' },
-  'sector-specialist':{ emoji: '\u{1F3AF}', label: 'Sector Specialist',kind: 'shape' , secondaryOnly: true },
-  'early-mover':      { emoji: '⚡',     label: 'Early-Mover',      kind: 'stage' , secondaryOnly: true },
-  'scale-focused':    { emoji: '\u{1F4C8}', label: 'Scale-Focused',    kind: 'stage' , secondaryOnly: true },
-  'capital-heavy':    { emoji: '\u{1F4B0}', label: 'Capital-Heavy',    kind: 'scale' , secondaryOnly: true },
-  'boutique':         { emoji: '\u{1F48E}', label: 'Boutique',         kind: 'scale' , secondaryOnly: true },
-  'strategic':        { emoji: '\u{1F3ED}', label: 'Strategic',        kind: 'org'    },
-  'operator-led':     { emoji: '\u{1F9D1}‍\u{1F4BB}', label: 'Operator-Led', kind: 'people' },
-  'founder-first':    { emoji: '\u{1F680}', label: 'Founder-First',    kind: 'people' },
-  'network-driven':   { emoji: '\u{1F91D}', label: 'Network-Driven',   kind: 'network', secondaryOnly: true }
+  'ai-native':        { emoji: '', label: 'AI Native',        kind: 'sector' },
+  'technical':        { emoji: '', label: 'Technical',        kind: 'sector' },
+  'deep-tech':        { emoji: '', label: 'Deep Tech',        kind: 'sector' },
+  'enterprise':       { emoji: '', label: 'Enterprise',       kind: 'sector' },
+  'consumer':         { emoji: '', label: 'Consumer',         kind: 'sector' },
+  'research-driven':  { emoji: '', label: 'Research-Driven',  kind: 'sector' },
+  'fintech':          { emoji: '', label: 'Fintech',          kind: 'sector' },
+  'crypto':           { emoji: '', label: 'Crypto & Web3',   kind: 'sector' },
+  'defense':          { emoji: '', label: 'Defense',          kind: 'sector' },
+  'industrial':       { emoji: '', label: 'Industrial',       kind: 'sector' },
+  'mobility':         { emoji: '', label: 'Mobility & Logistics', kind: 'sector' },
+  'edtech':           { emoji: '', label: 'Education',        kind: 'sector' },
+  'mission-driven':   { emoji: '', label: 'Mission-Driven',   kind: 'sector' },
+  'sector-specialist':{ emoji: '', label: 'Sector Specialist',kind: 'shape' , secondaryOnly: true },
+  'early-mover':      { emoji: '',     label: 'Early-Mover',      kind: 'stage' , secondaryOnly: true },
+  'scale-focused':    { emoji: '', label: 'Scale-Focused',    kind: 'stage' , secondaryOnly: true },
+  'capital-heavy':    { emoji: '', label: 'Capital-Heavy',    kind: 'scale' , secondaryOnly: true },
+  'boutique':         { emoji: '', label: 'Boutique',         kind: 'scale' , secondaryOnly: true },
+  'strategic':        { emoji: '', label: 'Strategic',        kind: 'org'    },
+  'operator-led':     { emoji: '', label: 'Operator-Led', kind: 'people' },
+  'founder-first':    { emoji: '', label: 'Founder-First',    kind: 'people' },
+  'network-driven':   { emoji: '', label: 'Network-Driven',   kind: 'network', secondaryOnly: true }
 };
 
 /* Canonical sector buckets that feed each sector archetype. These are
@@ -444,20 +444,20 @@ function firmsWithPersonality(key, firmList) {
    beyond the professional record already published on the site.
    ================================================================== */
 const PP_PARTNER_ARCHETYPES = {
-  'ai-native':       { emoji: '\u{1F916}', label: 'AI Specialist' },
-  'enterprise':      { emoji: '\u{1F3E2}', label: 'Enterprise Specialist' },
-  'consumer':        { emoji: '\u{1F6CD}', label: 'Consumer Investor' },
-  'deep-tech':       { emoji: '\u{1F9EC}', label: 'Deep-Tech Investor' },
-  'research-driven': { emoji: '\u{1F52C}', label: 'Research Investor' },
-  'mission-driven':  { emoji: '\u{1F331}', label: 'Climate Investor' },
-  'fintech':         { emoji: '\u{1F4B3}', label: 'Fintech Investor' },
-  'crypto':          { emoji: '⛓',    label: 'Crypto Investor' },
-  'technical':       { emoji: '\u{1F9E0}', label: 'Technical Investor' },
-  'founder-first':   { emoji: '\u{1F680}', label: 'Founder-Operator' },
-  'operator-led':    { emoji: '\u{1F9D1}‍\u{1F4BB}', label: 'Operator-Investor' },
-  'board-heavy':     { emoji: '\u{1F91D}', label: 'Board-Active', secondaryOnly: true },
-  'exit-proven':     { emoji: '\u{1F4C8}', label: 'Exit-Proven',  secondaryOnly: true },
-  'sector-specialist': { emoji: '\u{1F3AF}', label: 'Sector Specialist', secondaryOnly: true }
+  'ai-native':       { emoji: '', label: 'AI Specialist' },
+  'enterprise':      { emoji: '', label: 'Enterprise Specialist' },
+  'consumer':        { emoji: '', label: 'Consumer Investor' },
+  'deep-tech':       { emoji: '', label: 'Deep-Tech Investor' },
+  'research-driven': { emoji: '', label: 'Research Investor' },
+  'mission-driven':  { emoji: '', label: 'Climate Investor' },
+  'fintech':         { emoji: '', label: 'Fintech Investor' },
+  'crypto':          { emoji: '',    label: 'Crypto Investor' },
+  'technical':       { emoji: '', label: 'Technical Investor' },
+  'founder-first':   { emoji: '', label: 'Founder-Operator' },
+  'operator-led':    { emoji: '', label: 'Operator-Investor' },
+  'board-heavy':     { emoji: '', label: 'Board-Active', secondaryOnly: true },
+  'exit-proven':     { emoji: '', label: 'Exit-Proven',  secondaryOnly: true },
+  'sector-specialist': { emoji: '', label: 'Sector Specialist', secondaryOnly: true }
 };
 
 function ppScorePartner(p) {
@@ -565,7 +565,7 @@ function ppCard(p, opts) {
       '<div class="pp-eyebrow">' + ppEsc(title) + '</div>' +
       '<p class="pp-none">Not enough recorded data to classify how this ' +
       (opts.kind || 'firm') + ' invests. ' +
-      'A classification needs a clear sector emphasis, stage pattern or team record — ' +
+      'A classification needs a clear sector emphasis, stage pattern or team record - ' +
       'we would rather show nothing than a label the data cannot carry.</p>' +
       '</section>';
   }
@@ -609,7 +609,7 @@ function renderPersonalityDistribution() {
   host.innerHTML =
     '<div class="analytics-subhead">Power Personalities</div>' +
     '<p class="pp-dist-intro">How the ' + d.total + ' tracked firms classify by primary investment personality. ' +
-    'Computed from sector, stage, scale, structure and team data — not assigned by hand.</p>' +
+    'Computed from sector, stage, scale, structure and team data - not assigned by hand.</p>' +
     '<div class="pp-dist">' + d.rows.map(function (r) {
       return '<a class="pp-dist-row" href="#firms" data-personality="' + r.key + '">' +
         '<span class="pp-dist-label"><span aria-hidden="true">' + r.emoji + '</span> ' + ppEsc(r.label) + '</span>' +
@@ -618,7 +618,7 @@ function renderPersonalityDistribution() {
         '<span class="pp-dist-count">' + r.count + '</span></a>';
     }).join('') + '</div>' +
     (d.unclassified ? '<p class="pp-dist-note">' + d.unclassified +
-      ' firms are not classified — their recorded sectors are too broad or too sparse to support a ' +
+      ' firms are not classified - their recorded sectors are too broad or too sparse to support a ' +
       'primary personality. They still appear everywhere else on the site.</p>' : '');
 }
 

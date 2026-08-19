@@ -286,7 +286,7 @@ function renderDiscoveryEngine() {
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">VC Discovery Engine</div>
     <div class="reports-intro">
-      <p>Describe the kind of investor you're looking for in plain English. This reads your query for real, existing signals — sector, stage, location, fund size, and network relationships already tracked on this page — and explains exactly why each firm matched. It can't understand arbitrary language, so it tells you plainly when it couldn't parse something.</p>
+      <p>Describe the kind of investor you're looking for in plain English. This reads your query for real, existing signals - sector, stage, location, fund size, and network relationships already tracked on this page - and explains exactly why each firm matched. It can't understand arbitrary language, so it tells you plainly when it couldn't parse something.</p>
     </div>
 
     <div class="disc-search-bar">
@@ -327,7 +327,7 @@ function runDiscoverySearch() {
   const matches = computeDiscoveryMatches(discoveryCriteria);
 
   const notesHTML = discoveryCriteria.notes.length > 0
-    ? `<div class="disc-notes">${discoveryCriteria.notes.map(n => `<div class="disc-note">⚠ ${n}</div>`).join('')}</div>`
+    ? `<div class="disc-notes">${discoveryCriteria.notes.map(n => `<div class="disc-note"> ${n}</div>`).join('')}</div>`
     : '';
 
   const parsedSummary = [];
@@ -349,7 +349,7 @@ function runDiscoverySearch() {
 
   const topScore = matches.length > 0 ? matches[0].score : 0;
   const lowConfidenceNote = topScore < 40
-    ? `<div class="disc-note">⚠ No firm in the dataset strongly matches every part of this query — showing the closest real matches below.</div>`
+    ? `<div class="disc-note"> No firm in the dataset strongly matches every part of this query - showing the closest real matches below.</div>`
     : '';
 
   resultsEl.innerHTML = `
@@ -369,8 +369,8 @@ function renderDiscoveryCard(m, criteria) {
   const { firm, score, checks, networkDetail, matchingHoldings, holdingsCount } = m;
   const relevantPartners = getRelevantPartnersForQuery(firm, criteria);
 
-  const checksHTML = checks.filter(c => c.kind !== 'miss').map(c => `<span class="disc-check disc-check-${c.kind}">✓ ${c.label}</span>`).join('');
-  const missesHTML = checks.filter(c => c.kind === 'miss').map(c => `<span class="disc-check disc-check-miss">✗ ${c.label}</span>`).join('');
+  const checksHTML = checks.filter(c => c.kind !== 'miss').map(c => `<span class="disc-check disc-check-${c.kind}"> ${c.label}</span>`).join('');
+  const missesHTML = checks.filter(c => c.kind === 'miss').map(c => `<span class="disc-check disc-check-miss"> ${c.label}</span>`).join('');
 
   const networkHTML = networkDetail ? `
     <div class="disc-network-detail">

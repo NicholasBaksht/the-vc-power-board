@@ -18,7 +18,7 @@
 // Renders a full partner profile page into #partnerView, using the
 // data in partnerProfiles keyed by slug.
   // ============================================================
-// FIND MY INVESTORS — a founder-facing questionnaire that matches
+// FIND MY INVESTORS - a founder-facing questionnaire that matches
 // against three real data points already on this page: sector
 // focus, firm scale (AUM tier), and firm maturity (founding era).
 // No invented "check size" or "stage" data - just what's real.
@@ -175,7 +175,7 @@ function getMatchQualityLabel(score) {
 }
 
 // ============================================================
-// FOUNDER FUNDRAISING REPORT — every function below is a pure
+// FOUNDER FUNDRAISING REPORT - every function below is a pure
 // derivation from data already computed elsewhere on this page
 // (computeFinderMatches, firmStages, computeGeography,
 // computePowerScore, computePhilosophyScores, computeSimilarFirms,
@@ -264,7 +264,7 @@ function renderFinderResults() {
       ${passedReasons.length > 0 ? `
         <div class="finder-reasons">
           <div class="finder-reasons-label">Reason:</div>
-          ${passedReasons.map(r => `<div class="finder-reason-check">✓ ${r.label}</div>`).join('')}
+          ${passedReasons.map(r => `<div class="finder-reason-check"> ${r.label}</div>`).join('')}
         </div>
       ` : `<div class="finder-reasons-empty">Add more preferences above to see specific reasons this firm fits.</div>`}
       <div class="finder-breakdown">
@@ -295,13 +295,13 @@ function renderFindInvestors() {
       <div class="pm-eyebrow">Power Match</div>
       <h1 class="pm-title">Find the investors that fit your startup.</h1>
       <p class="pm-sub">Answer a few questions and Power Match scores every one of the ${firms.length} firms
-      tracked here against your answers — using only data already on this page, never guesses. Each result
+      tracked here against your answers - using only data already on this page, never guesses. Each result
       shows which of your criteria it actually met. Skip anything you are not sure about.</p>
     </div>
 
     <div class="finder-question">
       <div class="finder-question-title">What sector is your startup in?</div>
-      <div class="finder-question-hint">Select any that apply — leave blank to skip</div>
+      <div class="finder-question-hint">Select any that apply - leave blank to skip</div>
       <div class="filter-chips" id="finderSectorChips">
         ${allSectors.map(s => `<button class="chip ${finderSectors.has(s) ? 'active' : ''}" data-sector="${s}">${s}</button>`).join('')}
       </div>
@@ -309,7 +309,7 @@ function renderFindInvestors() {
 
     <div class="finder-question">
       <div class="finder-question-title">What stage is your startup at?</div>
-      <div class="finder-question-hint">Select any that apply — leave blank to skip</div>
+      <div class="finder-question-hint">Select any that apply - leave blank to skip</div>
       <div class="filter-chips" id="finderStageChips">
         ${allStages.map(s => `<button class="chip ${finderStages.has(s) ? 'active' : ''}" data-stage="${s}">${s}</button>`).join('')}
       </div>
@@ -365,8 +365,8 @@ function renderFindInvestors() {
     </div>
 
     <div class="fr-cta-block">
-      <button class="fr-cta-button" id="generateReportBtn">📊 Generate My Fundraising Report</button>
-      <div class="fr-cta-hint">A full research-report breakdown of your top matches — why each fits, what to watch for, and what to do next.</div>
+      <button class="fr-cta-button" id="generateReportBtn"> Generate My Fundraising Report</button>
+      <div class="fr-cta-hint">A full research-report breakdown of your top matches - why each fits, what to watch for, and what to do next.</div>
     </div>
     <div id="fundraisingReportContainer"></div>
   `;

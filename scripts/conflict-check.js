@@ -398,7 +398,7 @@ function renderConflictCheck() {
     ccReadDeck(file).then(res => {
       if (!res.ok) { statusEl.textContent = res.reason; return; }
       textEl.value = res.text.slice(0, 20000);
-      statusEl.textContent = file.name + ' — ' + res.how + '. Nothing was uploaded.';
+      statusEl.textContent = file.name + ' - ' + res.how + '. Nothing was uploaded.';
       ccRun(textEl.value);
     });
   });
@@ -410,7 +410,7 @@ function ccRun(text) {
   const clean = String(text || '').trim();
 
   if (clean.length < 15) {
-    out.innerHTML = `<div class="cc-empty">Add a sentence or two about what you are building —
+    out.innerHTML = `<div class="cc-empty">Add a sentence or two about what you are building -
       the more specific the product and market, the more usable the comparison.</div>`;
     return;
   }
@@ -429,7 +429,7 @@ function ccRun(text) {
               : 'partner notable investment' + via;
     const reason = m.described && m.overlap.length
       ? 'Shared language with this company&rsquo;s own description: <em>' + m.overlap.join(', ') + '</em>.'
-      : 'You named this company. It is recorded in this firm&rsquo;s portfolio — the comparison is the name itself, not a market judgement.';
+      : 'You named this company. It is recorded in this firm&rsquo;s portfolio - the comparison is the name itself, not a market judgement.';
     return `
       <div class="cc-card cc-${m.tier}">
         <div class="cc-card-top">
@@ -452,7 +452,7 @@ function ccRun(text) {
       <strong>No portfolio overlap found in the recorded data.</strong>
       That is not a clean bill of health. Most portfolio companies on this site are recorded by name
       only, and only ${CC_INDEX.describedCount} carry a description detailed enough to compare a
-      market against — so an overlap can easily exist without being visible here.
+      market against - so an overlap can easily exist without being visible here.
     </div>`;
   }
 
@@ -466,7 +466,7 @@ function ccRun(text) {
         </div>
         <div class="cc-company">Parent: <strong>${p.parent}</strong></div>
         <div class="cc-reason">You mentioned <em>${p.alias}</em>. This firm is the venture arm of
-        ${p.parent}, so the parent may itself be a competitor, a customer or an acquirer —
+        ${p.parent}, so the parent may itself be a competitor, a customer or an acquirer -
         a different kind of exposure from a portfolio clash.</div>
       </div>`).join('');
   }
@@ -480,7 +480,7 @@ function ccRun(text) {
     }).join('');
     html += '</div>';
     html += `<p class="cc-sector-note">Your description mentions
-      ${sectors.slice(0, 4).map(s => s.label).join(', ')}. These firms invest in that space —
+      ${sectors.slice(0, 4).map(s => s.label).join(', ')}. These firms invest in that space -
       that is <strong>not</strong> a conflict, just where to look harder.</p>`;
   }
 

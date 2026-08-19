@@ -53,7 +53,7 @@ function firmTileHtml(firm) {
     '<div class="firm-tile-actions">' +
       '<button class="shortlist-btn' + (saved ? ' saved' : '') + '" data-slug="' + firm.slug + '" ' +
               'title="' + (saved ? 'Saved to shortlist' : 'Save to shortlist') + '">' +
-        (saved ? '\u2605' : '\u2606') +
+        (saved ? '' : '') +
       '</button>' +
       '<label class="compare-check">' +
         '<input type="checkbox" class="compare-checkbox" data-slug="' + firm.slug + '"' +

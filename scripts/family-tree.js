@@ -45,7 +45,7 @@ function renderFamilyTree() {
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">VC Family Tree</div>
     <div class="reports-intro">
-      <p>Trace how firms, partners, and portfolio companies really connect — click any node to reveal its real relationships. Every connection here is backed by verified data already on this site; nothing is inferred.</p>
+      <p>Trace how firms, partners, and portfolio companies really connect - click any node to reveal its real relationships. Every connection here is backed by verified data already on this site; nothing is inferred.</p>
     </div>
 
     <div class="ft-controls">

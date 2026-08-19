@@ -8,7 +8,7 @@
    Load this FIRST - everything else reads from it.
    ============================================================ */
 // ============================================================
-// WEEKLY NEWS — Peter edits this part every week.
+// WEEKLY NEWS - Peter edits this part every week.
 // Add a new entry to the TOP of this array (right after the
 // opening bracket below). The newest entry becomes the big
 // featured box; everything else drops into the list below it.
@@ -19,18 +19,18 @@ const newsItems = [
   {
     date: "August 6, 2026",
     tag: "This week",
-    text: 'We set out to build a simple relationship map between firms on this page — nothing more than showing which firms had backed the same public companies. What came back surprised us: <strong>DoorDash alone connects nine different tracked firms</strong> — SoftBank Vision Fund, Sequoia Capital, Coatue Management, Dragoneer Investment Group, Pear VC, CRV, NFX, Haystack, and Y Combinator all hold a real stake in the same company. Across the full dataset, we found 62 real public companies held by two or more tracked firms, producing 324 verified relationships between 119 firms — now fully explorable in the new <strong>VC Ecosystem Graph</strong>.'
+    text: 'We set out to build a simple relationship map between firms on this page - nothing more than showing which firms had backed the same public companies. What came back surprised us: <strong>DoorDash alone connects nine different tracked firms</strong> - SoftBank Vision Fund, Sequoia Capital, Coatue Management, Dragoneer Investment Group, Pear VC, CRV, NFX, Haystack, and Y Combinator all hold a real stake in the same company. Across the full dataset, we found 62 real public companies held by two or more tracked firms, producing 324 verified relationships between 119 firms - now fully explorable in the new <strong>VC Ecosystem Graph</strong>.'
   },
   {
     date: "July 30, 2026",
     tag: "Last week",
-    text: '<strong>Blue Origin raised $10 billion in its first-ever outside funding round</strong>, at a $130 billion pre-money valuation — the first time Jeff Bezos has taken outside capital in the rocket company\'s 26-year history. <strong>Coatue Management</strong> (see below) led with a $4 billion commitment, alongside $2 billion from Bezos personally and $4 billion more from other institutional investors. The round comes weeks after rival SpaceX\'s own record-setting Nasdaq debut in June.'
+    text: '<strong>Blue Origin raised $10 billion in its first-ever outside funding round</strong>, at a $130 billion pre-money valuation - the first time Jeff Bezos has taken outside capital in the rocket company\'s 26-year history. <strong>Coatue Management</strong> (see below) led with a $4 billion commitment, alongside $2 billion from Bezos personally and $4 billion more from other institutional investors. The round comes weeks after rival SpaceX\'s own record-setting Nasdaq debut in June.'
   },
 ];
 
  
 // ============================================================
-// FEATURED FIRM — Peter edits this whenever he wants to spotlight
+// FEATURED FIRM - Peter edits this whenever he wants to spotlight
 // a different firm. Just change the "slug" below to any firm's
 // slug (see the firms array further down for valid slugs, e.g.
 // "a16z", "sequoia", "founders-fund"), and write a short reason
@@ -40,10 +40,10 @@ const newsItems = [
 // ============================================================
 const featuredFirm = {
   slug: "bond-capital",
-  reason: "Mary Meeker spent nearly a decade leading Kleiner Perkins' growth investing practice before an internal leadership dispute led her to leave in September 2018 and found Bond Capital. Her very first bet as an independent investor was Canva — a $70 million check in May 2019 that helped fuel the design platform's climb to a $42 billion valuation. Bond's lineage back to Kleiner Perkins is now fully mapped in the new VC Family Tree."
+  reason: "Mary Meeker spent nearly a decade leading Kleiner Perkins' growth investing practice before an internal leadership dispute led her to leave in September 2018 and found Bond Capital. Her very first bet as an independent investor was Canva - a $70 million check in May 2019 that helped fuel the design platform's climb to a $42 billion valuation. Bond's lineage back to Kleiner Perkins is now fully mapped in the new VC Family Tree."
 };
 // ============================================================
-// FULL PROFILE PAGES — optional, works for ANY firm below.
+// FULL PROFILE PAGES - optional, works for ANY firm below.
 // Right now only Andreessen Horowitz (a16z) has one, but any
 // firm can get the same treatment. Two fields are all it takes:
 //
@@ -58,13 +58,13 @@ const featuredFirm = {
 //
 // Paste both blocks in right after that firm's "thesis" line (see
 // how a16z does it below for the exact placement). A firm with
-// NEITHER field still works completely normally — the page just
+// NEITHER field still works completely normally - the page just
 // won't show a leadership grid or timeline for it. Nothing else
 // in the code needs to change; the detail page renders whatever
 // fields it finds automatically.
 // ============================================================
 // ============================================================
-// PARTNER PROFILES — deep-dive pages for individual VC partners.
+// PARTNER PROFILES - deep-dive pages for individual VC partners.
 // Each key is a slug used in the URL (#partner/alfred-lin). To
 // give a leadership entry a clickable profile, add a matching
 // "profileSlug" field to that person's entry in the firms array
@@ -413,11 +413,11 @@ const firmStages = {
 'cre-venture-capital': ['Seed', 'Series A'], // explicit: "seed to Series A"
 'stv': ['Series A', 'Series B', 'Growth'], // explicit: "Series A through growth stages"
 
-// Inferred from described public holdings, not a direct stage quote in source — flagging separately per your honesty standard:
+// Inferred from described public holdings, not a direct stage quote in source - flagging separately per your honesty standard:
 };
 
 // ============================================================
-// INVESTMENT PERFORMANCE LOOKUP — powers the dashboard on each
+// INVESTMENT PERFORMANCE LOOKUP - powers the dashboard on each
 // firm's detail page. Every number here is a real, sourced figure
 // gathered during that firm's research (see its thesis/timeline
 // for the same facts in prose). Deliberately NOT populated for

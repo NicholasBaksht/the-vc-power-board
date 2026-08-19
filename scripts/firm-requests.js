@@ -49,14 +49,14 @@ function frSubmit(payload) {
   const client = frClient();
   if (!client) {
     return Promise.resolve({ ok: false,
-      message: 'Requests are unavailable right now — the connection to our database did not load. Please try again later.' });
+      message: 'Requests are unavailable right now - the connection to our database did not load. Please try again later.' });
   }
   const name = String(payload.firmName || '').trim();
   if (name.length < 2) {
     return Promise.resolve({ ok: false, message: 'Please enter the firm’s name.' });
   }
   if (frThrottled()) {
-    return Promise.resolve({ ok: false, message: 'Thanks — that just went through. Give it a moment before sending another.' });
+    return Promise.resolve({ ok: false, message: 'Thanks - that just went through. Give it a moment before sending another.' });
   }
 
   const row = {
@@ -122,7 +122,7 @@ function frFormHtml(opts) {
       </div>
 
       <p class="fr-note">Submissions are treated as research leads. Every listing on this site is
-      compiled from independently verified public sources — a request is never published as-is, and
+      compiled from independently verified public sources - a request is never published as-is, and
       a firm can never edit its own entry.</p>
     </form>`;
 }
@@ -146,7 +146,7 @@ function frWire(root) {
       if (hit && !form.dataset.dupeAcknowledged) {
         form.dataset.dupeAcknowledged = '1';
         status.innerHTML = 'We already track <a href="#' + hit.firm.slug + '">' + hit.firm.name +
-          '</a> — matched on ' + hit.on + '. If that is your firm, open it and use ' +
+          '</a> - matched on ' + hit.on + '. If that is your firm, open it and use ' +
           '<strong>Claim this listing</strong> instead. Press submit again if it is a different firm.';
         return;
       }
@@ -164,7 +164,7 @@ function frWire(root) {
     }).then(function (res) {
       btn.disabled = false;
       if (!res.ok) { status.textContent = res.message; return; }
-      form.innerHTML = '<div class="fr-thanks"><strong>Thank you — that is logged.</strong>' +
+      form.innerHTML = '<div class="fr-thanks"><strong>Thank you - that is logged.</strong>' +
         ' We review requests in batches and add firms once we can verify them from public sources.' +
         ' We cannot promise a timeline, and a request is not a commitment to list.</div>';
     });

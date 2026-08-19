@@ -1,5 +1,5 @@
 /* ============================================================
-   DATA-FUNDS.JS  —  structured fund history
+   DATA-FUNDS.JS  -  structured fund history
 
    Promoted from the free-text fund events in data-firms.js
    timeline[] plus a sourced research pass, so the alerts engine

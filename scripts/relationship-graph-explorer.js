@@ -74,7 +74,7 @@ function renderRelationshipGraph(entityType, entityId) {
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">Relationship Graph</div>
     <div class="reports-intro">
-      <p>Search for a firm, partner, or company to see how it really connects to everything else tracked on this page. Every line is a real, explained relationship — click any node to expand it, and click any connection to see exactly what backs it.</p>
+      <p>Search for a firm, partner, or company to see how it really connects to everything else tracked on this page. Every line is a real, explained relationship - click any node to expand it, and click any connection to see exactly what backs it.</p>
     </div>
 
     <div class="ft-controls">
@@ -129,7 +129,7 @@ function rgWireSearch() {
     results.innerHTML = matches.length
       ? matches.map(m => `
           <div class="ft-search-result" data-type="${m.type}" data-id="${m.id}">
-            ${m.label} <span style="color:var(--ink-dim); font-size:11.5px;">— ${RG_NODE_LABELS[m.type]}${m.meta ? ' · ' + m.meta : ''}</span>
+            ${m.label} <span style="color:var(--ink-dim); font-size:11.5px;">- ${RG_NODE_LABELS[m.type]}${m.meta ? ' · ' + m.meta : ''}</span>
           </div>
         `).join('')
       : `<div class="ft-search-empty">No matches.</div>`;
@@ -242,7 +242,7 @@ function rgRenderFilterOptions() {
     <div class="rg-filter-group">
       <div class="rg-filter-note">No relationships in this view carry a known start year to filter by yet.</div>
     </div>`}
-    <div class="rg-filter-note">Investment-stage filtering isn't wired in here yet — it depends on the stage classification already used on the homepage's stage cards, which this file doesn't have access to.</div>
+    <div class="rg-filter-note">Investment-stage filtering isn't wired in here yet - it depends on the stage classification already used on the homepage's stage cards, which this file doesn't have access to.</div>
   `;
 
   document.querySelectorAll('.rg-rel-filter, .rg-entity-filter').forEach(el => el.addEventListener('change', rgApplyFilters));
@@ -425,7 +425,7 @@ function rgRenderSidePanel(nodeDatum) {
       ${profileLink}
     </div>
     <div class="ft-panel-connections-label">${connections.length} Real Connection${connections.length === 1 ? '' : 's'} In This View</div>
-    ${rowsHTML || '<div class="ft-panel-empty-small">No connections in the current view — try Expand to pull in more.</div>'}
+    ${rowsHTML || '<div class="ft-panel-empty-small">No connections in the current view - try Expand to pull in more.</div>'}
     <div class="ft-panel-note">Double-click a node (or select it and hit Expand) to reveal its own real connections.</div>
   `;
 
@@ -452,7 +452,7 @@ function rgConnectionDetailHTML(e) {
     `;
   }
   if (e.people) {
-    const items = e.people.map(p => `<span class="rg-detail-link">${p.name}${p.role ? ' — ' + p.role : ''}</span>`).join('');
+    const items = e.people.map(p => `<span class="rg-detail-link">${p.name}${p.role ? ' - ' + p.role : ''}</span>`).join('');
     return `
       <button class="rg-detail-toggle" data-show-label="Show ${e.people.length} people" data-hide-label="Hide people">Show ${e.people.length} people</button>
       <div class="rg-detail-list" style="display:none;">${items}</div>

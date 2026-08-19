@@ -23,7 +23,7 @@ function renderFeaturedFirm() {
 
   document.getElementById('featuredFirmContainer').innerHTML = `
     <div class="featured-firm">
-      <div class="featured-firm-label">⭐ Featured Firm</div>
+      <div class="featured-firm-label"> Featured Firm</div>
       <div class="featured-firm-head">
         <div class="featured-firm-name"><a href="#${firm.slug}">${firm.name}</a></div>
         <div class="featured-firm-meta">${firm.aum} AUM · Founded ${firm.founded} · ${firm.hq}</div>
@@ -54,14 +54,14 @@ function renderScaleBar() {
     sectorCounts[s] = (sectorCounts[s] || 0) + 1;
   }));
   const topSectorEntry = Object.entries(sectorCounts).sort((a, b) => b[1] - a[1])[0];
-  const topSector = topSectorEntry ? topSectorEntry[0] : '—';
+  const topSector = topSectorEntry ? topSectorEntry[0] : '-';
 
   document.getElementById('scaleBar').innerHTML = `
     <div class="stat-card"><span class="stat-card-num">${totalFirms}</span><span class="stat-card-label">Total Firms</span></div>
     <div class="stat-card"><span class="stat-card-num">${totalPartners}</span><span class="stat-card-label">Partners</span></div>
     <div class="stat-card"><span class="stat-card-num">${countryCount}</span><span class="stat-card-label">Countries</span></div>
     <div class="stat-card"><span class="stat-card-num">${avgFoundedYear}</span><span class="stat-card-label">Avg. Founded Year</span></div>
-    <div class="stat-card"><span class="stat-card-num">${largestAumFirm.aum}</span><span class="stat-card-label">Largest AUM — ${largestAumFirm.short}</span></div>
+    <div class="stat-card"><span class="stat-card-num">${largestAumFirm.aum}</span><span class="stat-card-label">Largest AUM - ${largestAumFirm.short}</span></div>
     <div class="stat-card"><span class="stat-card-num">${topSector}</span><span class="stat-card-label">Most Active Sector</span></div>
   `;
 
@@ -70,7 +70,7 @@ function renderScaleBar() {
 }
 /* Hero badge counts, computed from the dataset rather than typed
    in. A hardcoded count goes stale the moment a firm is added or
-   removed — this one already had, reading 308/313 against a
+   removed - this one already had, reading 308/313 against a
    dataset of 293/293. */
 function renderHeroBadge() {
   const firmEl = document.getElementById('heroFirmCount');
@@ -119,7 +119,7 @@ function renderNews() {
   let html = `
     <div class="news-widget-label">Latest Update</div>
     <div class="highlight">
-      <div class="tag">${latest.tag} — ${latest.date}</div>
+      <div class="tag">${latest.tag} - ${latest.date}</div>
       <p>${latest.text}</p>
     </div>`;
 
@@ -157,7 +157,7 @@ function renderNewsPage() {
     const [latest, ...older] = newsItems;
     let html = `
       <div class="highlight">
-        <div class="tag">${latest.tag} — ${latest.date}</div>
+        <div class="tag">${latest.tag} - ${latest.date}</div>
         <p>${latest.text}</p>
       </div>`;
     if (older.length > 0) {
@@ -236,7 +236,7 @@ document.getElementById('powerSignalsView').style.display = 'none';
   // Null-guarded on purpose. These two views were added after the
   // original router was written; an unguarded getElementById on a
   // div that isn't in index.html yet returns null, throws on
-  // .style, and takes the whole router — and so the whole site —
+  // .style, and takes the whole router - and so the whole site -
   // down with it.
   /* Conflict Check. The container is created by ensureConflictCheckView()
      below rather than living in index.html, so this must stay null-guarded
@@ -421,7 +421,7 @@ document.querySelectorAll('.nav-dropdown-item').forEach(item => {
     document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
   });
 });
-// Ticker tape at top — pulls every unique ticker + whatever price is set
+// Ticker tape at top - pulls every unique ticker + whatever price is set
 function buildTicker() {
   // The ticker tape was removed from the homepage. firm-cards.js
   // still calls this on render and on every price edit, so it

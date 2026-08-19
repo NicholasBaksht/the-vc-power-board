@@ -49,7 +49,7 @@ function renderPeople() {
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">People</div>
     <div class="people-intro">
-      <p>Every partner profiled on this page, in one searchable place. Search by name, firm, or title — no need to click into a firm card first.</p>
+      <p>Every partner profiled on this page, in one searchable place. Search by name, firm, or title - no need to click into a firm card first.</p>
     </div>
     <div class="people-search-wrap">
       <input type="text" id="peopleSearchInput" class="search-input" placeholder="Search by name, firm, or title...">
@@ -104,7 +104,7 @@ function renderPortfolioExplorer() {
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">Portfolio Explorer</div>
     <div class="portfolio-intro">
-      <p>Click any company to see every firm tracked on this page that invested in it, plus real public stock performance since Jan 2, 2025. This reflects only what's already sourced elsewhere on the site — no invented valuations or investment stages.</p>
+      <p>Click any company to see every firm tracked on this page that invested in it, plus real public stock performance since Jan 2, 2025. This reflects only what's already sourced elsewhere on the site - no invented valuations or investment stages.</p>
     </div>
     <div class="portfolio-search-wrap">
       <input type="text" id="portfolioSearchInput" class="search-input" placeholder="Search by company or ticker...">
@@ -133,14 +133,14 @@ function renderPortfolioResults() {
 
   document.getElementById('portfolioGrid').innerHTML = filtered.length > 0
     ? filtered.map(c => {
-        let returnCls = 'return-unknown', returnText = '—';
+        let returnCls = 'return-unknown', returnText = '-';
         if (c.holding.historicalPrice !== null && c.holding.price !== null) {
           const pct = ((c.holding.price - c.holding.historicalPrice) / c.holding.historicalPrice) * 100;
           const r1 = Number(pct.toFixed(1));
           returnCls = r1 > 0 ? 'return-positive' : r1 < 0 ? 'return-negative' : 'return-flat';
           returnText = `${typeof directionLabel === 'function' ? directionLabel(r1) : ''}${r1 > 0 ? '+' : ''}${r1.toFixed(1)}%`;
         }
-      const priceText = c.holding.price !== null ? `$${c.holding.price.toFixed(2)}` : '—';
+      const priceText = c.holding.price !== null ? `$${c.holding.price.toFixed(2)}` : '-';
         return `
           <a href="#company/${slugifyCompany(c.name)}" class="company-card">
             <div class="company-card-name">${c.name}</div>
@@ -193,7 +193,7 @@ function renderCompanyProfile(companySlug) {
     <div class="company-story">
       <div class="company-story-label">Notable Story</div>
       <div>${s.text}.</div>
-      <div class="company-story-firm">— as told on ${s.firm.name}'s page</div>
+      <div class="company-story-firm">- as told on ${s.firm.name}'s page</div>
     </div>
   `).join('');
 
@@ -217,7 +217,7 @@ function renderCompanyProfile(companySlug) {
         ${returnHTML}
       </div>
     </div>
-<div class="company-caveat">Price and return are the same figures already shown on each investing firm's page — editable, and sourced from the firm's actual holdings data. No investment stage or valuation is shown here, since that data isn't tracked on this site.</div>
+<div class="company-caveat">Price and return are the same figures already shown on each investing firm's page - editable, and sourced from the firm's actual holdings data. No investment stage or valuation is shown here, since that data isn't tracked on this site.</div>
     ${storiesHTML}
     <div class="company-holders-label">Tracked Firms That Invested (${holders.length})</div>
     <div class="company-holders-grid">${holdersHTML}</div>
@@ -280,10 +280,10 @@ function renderPartnerComparison() {
   const rows = [
     { label: 'Title', render: p => p.title },
     { label: 'Firm', render: p => p.firm },
-    { label: 'Joined', render: p => p.joinedYear || '—' },
-    { label: 'Education', render: p => (p.education || []).join(', ') || '—' },
+    { label: 'Joined', render: p => p.joinedYear || '-' },
+    { label: 'Education', render: p => (p.education || []).join(', ') || '-' },
     { label: 'Investment Focus', render: p => (p.investmentFocus || []).map(s => `<span class="compare-sector-tag">${s}</span>`).join('') },
-    { label: 'Notable Investments', render: p => (p.notableInvestments || []).map(i => i.name).join(', ') || '—' },
+    { label: 'Notable Investments', render: p => (p.notableInvestments || []).map(i => i.name).join(', ') || '-' },
     { label: 'IPOs / Major Exits', render: p => `${p.ipoCount || 0} IPOs · ${p.majorExits || 0} exits` },
     { label: 'Biography', render: p => p.biography }
   ];

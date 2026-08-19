@@ -1,5 +1,5 @@
 /* ============================================================
-   DATA-DEALS.JS  —  dated, sourced investment records
+   DATA-DEALS.JS  -  dated, sourced investment records
 
    Deal-level data for the Power Alerts engine. Every row is one
    firm's participation in one financing, carrying the date, the

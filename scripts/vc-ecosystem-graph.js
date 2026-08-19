@@ -116,7 +116,7 @@ function renderEcosystemGraph() {
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">VC Ecosystem Graph</div>
     <div class="reports-intro">
-      <p>An interactive map of how firms on this page actually connect — click any firm to see its real relationships. Only three verified connection types are shown: firms that spun out of one another, firms that hold the same public company in their portfolio, and firms whose partners sit on the same real board together.</p>
+      <p>An interactive map of how firms on this page actually connect - click any firm to see its real relationships. Only three verified connection types are shown: firms that spun out of one another, firms that hold the same public company in their portfolio, and firms whose partners sit on the same real board together.</p>
     </div>
 
     <div class="graph-legend">
@@ -252,7 +252,7 @@ function renderGraphSelection(selectedId, edges) {
   }).join('');
 
   panel.innerHTML = `
-    <div class="graph-selection-label">${firm.name} — ${relevant.length} real connection${relevant.length === 1 ? '' : 's'}</div>
+    <div class="graph-selection-label">${firm.name} - ${relevant.length} real connection${relevant.length === 1 ? '' : 's'}</div>
     ${rowsHTML}
   `;
 }

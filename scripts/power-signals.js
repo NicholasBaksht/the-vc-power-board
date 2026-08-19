@@ -1,5 +1,5 @@
 /**
- * POWER-SIGNALS.JS (Part 1 of 2 — signal engine)
+ * POWER-SIGNALS.JS (Part 1 of 2 - signal engine)
  * Only three of the eight signal categories originally proposed
  * are honestly computable from real data, and even those are
  * reframed from how they were first described - see the
@@ -29,10 +29,10 @@ const SIGNAL_TYPE_LABELS = {
   portfolio_momentum: 'Portfolio Momentum'
 };
 const SIGNAL_TYPE_ICONS = {
-  momentum: '📈',
-  partner_momentum: '👥',
-  network_expansion: '🔗',
-  portfolio_momentum: '🚀'
+  momentum: '',
+  partner_momentum: '',
+  network_expansion: '',
+  portfolio_momentum: ''
 };
 // Minimum real event counts required before a signal is shown at
 // each strength tier. Below the "emerging" floor, nothing is shown
@@ -248,7 +248,7 @@ function renderPowerSignalsSection(firm) {
   return `
     <div class="power-signals-panel">
       <div class="detail-subhead">Power Signals</div>
-      <div class="power-signals-sub">Automatically computed from real, dated events on file for ${firm.short} — not a summary, a calculation. Click any signal for the full breakdown.</div>
+      <div class="power-signals-sub">Automatically computed from real, dated events on file for ${firm.short} - not a summary, a calculation. Click any signal for the full breakdown.</div>
       <div class="ps-mini-grid">${cardsHTML}</div>
     </div>
   `;
@@ -309,7 +309,7 @@ function renderSignalDrilldown(signal, firm) {
   }
 
   if (signal.type === 'portfolio_momentum') {
-    const rows = signal.datedHoldings.map(h => `<div class="ps-detail-person">• ${h.name} — ${h.year}</div>`).join('');
+    const rows = signal.datedHoldings.map(h => `<div class="ps-detail-person">• ${h.name} - ${h.year}</div>`).join('');
     return `
       <div class="ps-detail-row"><strong>Dated holdings on file:</strong></div>
       ${rows}
@@ -333,12 +333,12 @@ document.getElementById('powerSignalsView').innerHTML = `
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">VC Market Signals</div>
     <div class="reports-intro">
-      <p>Signals calculated from real, dated data already tracked on this page — not written, not summarized by AI. A signal only appears once there's enough real underlying data to support it; thin or ambiguous trends are left out rather than shown as fact. Only 3 signal types are currently supported (Momentum, Partner Momentum, Network Expansion) — 5 others (Emerging Sector, Geographic Expansion, Capital Deployment, Portfolio Momentum, Strategic Shift) require data this app doesn't have yet, so they're withheld rather than faked.</p>
+      <p>Signals calculated from real, dated data already tracked on this page - not written, not summarized by AI. A signal only appears once there's enough real underlying data to support it; thin or ambiguous trends are left out rather than shown as fact. Only 3 signal types are currently supported (Momentum, Partner Momentum, Network Expansion) - 5 others (Emerging Sector, Geographic Expansion, Capital Deployment, Portfolio Momentum, Strategic Shift) require data this app doesn't have yet, so they're withheld rather than faked.</p>
     </div>
 
     <div id="marketSignalTop"></div>
     <div id="marketSignalSections"></div>
-    <div class="detail-subhead">Firm Signals — Browse All</div>
+    <div class="detail-subhead">Firm Signals - Browse All</div>
     <div id="marketSignalFilterBar"></div>
     <div id="marketSignalResults"></div>
   `;
@@ -346,7 +346,7 @@ document.getElementById('powerSignalsView').innerHTML = `
   document.getElementById('marketSignalTop').innerHTML = marketSignal ? `
     <div class="ps-market-card">
       <div class="ps-market-head">
-        <span class="ps-mini-icon">🌐</span>
+        <span class="ps-mini-icon"></span>
         <span class="ps-mini-label">Market-Wide Signal</span>
         ${renderSignalStrengthBadge(marketSignal.strength)}
       </div>
@@ -430,7 +430,7 @@ function renderMarketSignalFilterBar() {
         </select>
       </div>
     </div>
-    <div class="tl-disabled-filters-note">Every signal here is computed over a fixed trailing 2-year window — the underlying data only has year-level precision, so finer time-period controls (30/90 days) aren't offered since they'd be misleading.</div>
+    <div class="tl-disabled-filters-note">Every signal here is computed over a fixed trailing 2-year window - the underlying data only has year-level precision, so finer time-period controls (30/90 days) aren't offered since they'd be misleading.</div>
   `;
 
   document.querySelectorAll('.ps-type-chip').forEach(chip => {
@@ -597,7 +597,7 @@ function computePortfolioMomentumSignal(firmSlug) {
 
   const strength = yearsSince <= 1 ? 'Strong' : (yearsSince <= 2 ? 'Moderate' : 'Emerging');
   const coverageNote = dated.length < firm.holdings.length
-    ? ` Only ${dated.length} of this firm's ${firm.holdings.length} tracked holdings have a confirmed investment date on file — this reflects known data, not the firm's full portfolio.`
+    ? ` Only ${dated.length} of this firm's ${firm.holdings.length} tracked holdings have a confirmed investment date on file - this reflects known data, not the firm's full portfolio.`
     : '';
 
   return {
@@ -605,7 +605,7 @@ function computePortfolioMomentumSignal(firmSlug) {
     strength,
     headline: `Most recent tracked investment: ${mostRecent.name} (${mostRecent.investedYear})`,
     explanation: `${mostRecent.name} is the most recently dated investment on file for ${firm.short}, ${yearsSince === 0 ? 'this year' : yearsSince + ' year' + (yearsSince === 1 ? '' : 's') + ' ago'}.`,
-    caveat: `Based on ${dated.length} sourced investment date${dated.length === 1 ? '' : 's'} out of this firm's tracked holdings — not a full transaction history.${coverageNote}`,
+    caveat: `Based on ${dated.length} sourced investment date${dated.length === 1 ? '' : 's'} out of this firm's tracked holdings - not a full transaction history.${coverageNote}`,
     datedHoldings: sorted.map(h => ({ name: h.name, year: h.investedYear })),
     firmSlug
   };

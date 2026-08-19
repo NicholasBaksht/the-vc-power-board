@@ -16,7 +16,7 @@ const REPORT_CONFIGS = {
     title: 'State of AI Venture Capital',
     type: 'sector',
     sector: 'AI',
-    intro: 'A real, computed snapshot of every firm on this page with AI listed as a sector focus — how many, how much combined capital they manage, and which are the largest by AUM. Not a forecast or an editorial take, just what the tracked data actually shows right now.'
+    intro: 'A real, computed snapshot of every firm on this page with AI listed as a sector focus - how many, how much combined capital they manage, and which are the largest by AUM. Not a forecast or an editorial take, just what the tracked data actually shows right now.'
   },
   'healthcare-investors': {
     title: 'Top Healthcare Investors',
@@ -28,7 +28,7 @@ const REPORT_CONFIGS = {
     title: 'State of Climate Investing',
     type: 'sector',
     sector: 'Climate',
-    intro: 'Every firm on this page with a climate or clean-energy investment focus, ranked by real assets under management — from dedicated climate funds to generalist firms with a climate practice.'
+    intro: 'Every firm on this page with a climate or clean-energy investment focus, ranked by real assets under management - from dedicated climate funds to generalist firms with a climate practice.'
   },
   'global-vc-landscape': {
     title: 'Global VC Landscape',
@@ -38,7 +38,7 @@ const REPORT_CONFIGS = {
   'annual-report': {
     title: 'Annual VC Power Board Report',
     type: 'annual',
-    intro: 'The full picture: every firm, every sector, every region tracked on this page, combined into one comprehensive snapshot — the same real, computed numbers used everywhere else on the site, brought together in a single report.'
+    intro: 'The full picture: every firm, every sector, every region tracked on this page, combined into one comprehensive snapshot - the same real, computed numbers used everywhere else on the site, brought together in a single report.'
   }
 };
 
@@ -58,7 +58,7 @@ function renderReportsHub() {
     <a href="#" class="detail-back">← Back to all firms</a>
     <div class="dashboard-title">VC Industry Reports</div>
     <div class="reports-intro">
-      <p>Real, computed breakdowns of the firms tracked on this page, grouped by sector. Every number below is derived live from the same data used everywhere else on the site — nothing here is estimated or invented.</p>
+      <p>Real, computed breakdowns of the firms tracked on this page, grouped by sector. Every number below is derived live from the same data used everywhere else on the site - nothing here is estimated or invented.</p>
     </div>
     <div class="report-card-grid">${cards}</div>
   `;
@@ -88,7 +88,7 @@ function renderSectorReport(reportSlug) {
   const combinedAUM = Math.round(sectorFirms.reduce((sum, f) => sum + parseAumNumber(f.aum), 0));
   const avgFoundedYear = totalFirms > 0
     ? Math.round(sectorFirms.reduce((sum, f) => sum + f.founded, 0) / totalFirms)
-    : '—';
+    : '-';
   const countryCount = new Set(sectorFirms.map(f => getCountryFromHQ(f.hq)).filter(Boolean)).size;
 
   const topFirmsHTML = sectorFirms.slice(0, 10).map((f, i) => `
