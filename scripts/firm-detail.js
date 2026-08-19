@@ -90,7 +90,6 @@ const holdingsHTML = firm.holdings.map(h => {
       ${renderOrgBadge(firm)}
       ${typeof renderFirmPersonalityCard === 'function' ? renderFirmPersonalityCard(firm) : ''}
       ${typeof renderFirmCapabilities === 'function' ? renderFirmCapabilities(firm) : ''}
-      <div class="detail-personality">${computeInvestmentPersonality(firm).sentence}</div>
           <div class="detail-meta">
         ${[
           firm.website ? `<a href="${firm.website}" target="_blank" rel="noopener noreferrer" class="firm-link">${firm.website.replace('https://', '')} ↗</a>` : '',
