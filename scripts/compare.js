@@ -112,11 +112,29 @@ function renderComparison() {
 // ============================================================
 const DNA_FIRM_COLORS = ['#2F6FED', '#7dd3fc', '#4ade80'];
 
+/* Power Personality replaces the sentence this card used to show. That
+   sentence was assembled from adjectives - "Aggressive multi-stage
+   developer tools investor with a diversified portfolio and global
+   reach" - which reads like filler and says the same thing about most
+   firms. The archetype is derived from the firm's own sector tags and
+   reported assets, and 32 of 401 firms do not clear its evidence floor.
+   Those get told so, rather than given a sentence that sounds confident
+   because it was assembled from words that always fit. */
+function dnaPersonalityText(firm) {
+  if (typeof firmPersonality !== 'function') return '';
+  const p = firmPersonality(firm);
+  if (!p || p.unclassified) return 'Not enough mapped sectors to classify.';
+  const secondary = (p.secondaries || []).slice(0, 2).map(function (s) { return s.label; });
+  return secondary.length
+    ? p.primaryLabel + ' &middot; ' + secondary.join(', ')
+    : p.primaryLabel;
+}
+
 function computeDnaComparisonData(selected) {
   return selected.map((f, i) => ({
     firm: f,
     color: DNA_FIRM_COLORS[i % DNA_FIRM_COLORS.length],
-    personality: computeInvestmentPersonality(f),
+    personality: dnaPersonalityText(f),
     genome: computeGenomeScores(f),
     geography: computeGeography(f),
     topFocus: computePhilosophyScores(f).filter(p => p.score === 5)
@@ -133,7 +151,7 @@ function renderDnaComparison(selected) {
   const personalityHTML = data.map(d => `
     <div class="dna-personality-card" style="border-color:${d.color}">
       <div class="dna-personality-firm" style="color:${d.color}">${d.firm.short}</div>
-      <div class="dna-personality-sentence">${d.personality.sentence}</div>
+      <div class="dna-personality-sentence">${d.personality}</div>
     </div>
   `).join('');
 
