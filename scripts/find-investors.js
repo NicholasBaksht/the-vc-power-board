@@ -260,6 +260,7 @@ function renderFinderResults() {
         </div>
         <div class="finder-result-name"><a href="#${firm.slug}">${firm.name}</a></div>
       </div>
+      ${typeof renderOutcomeControl === 'function' ? renderOutcomeControl(firm.slug, 'power_match') : ''}
       ${passedReasons.length > 0 ? `
         <div class="finder-reasons">
           <div class="finder-reasons-label">Reason:</div>
