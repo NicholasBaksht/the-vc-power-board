@@ -123,6 +123,8 @@ const holdingsHTML = firm.holdings.map(h => {
       </div>
       <p class="detail-about">${firm.thesis}</p>
       ${renderOrgLineage(firm)}
+      ${typeof renderClaimLink === 'function' ? renderClaimLink(firm) : ''}
+      <div id="fcHost"></div>
       <div class="founder-callout">
         <div class="founder-callout-label">For Founders</div>
     <div class="founder-callout-row">
