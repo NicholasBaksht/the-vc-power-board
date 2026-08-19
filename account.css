@@ -1,0 +1,272 @@
+/* ============================================================
+   ACCOUNT - #signin and #account views
+   ------------------------------------------------------------
+   Consumes design tokens from main.css only. No hardcoded
+   colors, no gradients, no glow shadows, no hover lifts.
+   ============================================================ */
+
+.acct-card {
+    max-width: 640px;
+    margin: 48px auto 96px;
+    padding: 0 24px;
+}
+
+.acct-kicker {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin-bottom: 12px;
+}
+
+.acct-title {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: clamp(26px, 3.6vw, 36px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 16px;
+    word-break: break-word;
+}
+
+.acct-h2 {
+    font-family: var(--sans);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 40px 0 12px;
+    padding-top: 24px;
+    border-top: 1px solid var(--hairline);
+}
+
+.acct-lead {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--ink-dim);
+    margin: 0 0 20px;
+}
+
+.acct-email {
+    font-family: var(--mono);
+    color: var(--ink);
+}
+
+/* ---------- META STRIP ---------- */
+.acct-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 40px;
+    padding: 16px 0;
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 8px;
+}
+.acct-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px 0;
+}
+.acct-meta-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+}
+.acct-meta-value {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--ink);
+}
+
+/* ---------- FORM ---------- */
+.acct-form {
+    margin: 0 0 16px;
+}
+.acct-form-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+.acct-label {
+    display: block;
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin-bottom: 8px;
+}
+.acct-input {
+    width: 100%;
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 4px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+.acct-form-inline .acct-input {
+    width: auto;
+    flex: 1 1 240px;
+    margin-bottom: 0;
+}
+.acct-input::placeholder { color: var(--ink-dim); opacity: 0.7; }
+.acct-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: var(--surface-raised);
+}
+
+/* ---------- BUTTONS ---------- */
+.acct-btn {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    border-radius: 4px;
+    padding: 12px 22px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+.acct-btn + .acct-btn { margin-left: 10px; }
+
+.acct-btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #FFFFFF;
+}
+.acct-btn-primary:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
+
+.acct-btn-ghost {
+    background: var(--surface);
+    border-color: var(--hairline);
+    color: var(--ink);
+}
+.acct-btn-ghost:hover { border-color: var(--accent); background: var(--surface-raised); }
+
+.acct-btn-danger {
+    background: transparent;
+    border-color: var(--red);
+    color: var(--red);
+}
+.acct-btn-danger:hover { background: var(--red); color: var(--bg); }
+
+.acct-btn:disabled { opacity: 0.55; cursor: default; }
+
+/* ---------- STATUS MESSAGES ---------- */
+.acct-status {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-dim);
+    margin: 12px 0 0;
+    min-height: 1px;
+}
+.acct-status-ok  { color: var(--green); }
+.acct-status-err { color: var(--red); }
+
+/* ---------- NOTE PANEL ---------- */
+.acct-note {
+    border: 1px solid var(--hairline);
+    border-radius: 4px;
+    background: var(--surface);
+    padding: 18px 20px;
+    margin-top: 32px;
+}
+.acct-note p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: var(--ink-dim);
+    margin: 0 0 10px;
+}
+.acct-note p:last-child { margin-bottom: 0; }
+.acct-note strong { color: var(--ink); font-weight: 600; }
+.acct-note a { color: var(--accent); text-decoration: none; }
+.acct-note a:hover { color: var(--accent-bright); text-decoration: underline; }
+
+/* ---------- SHORTLIST ---------- */
+.acct-shortlist {
+    font-size: 14px;
+    color: var(--ink-dim);
+    margin-bottom: 24px;
+}
+.acct-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--hairline);
+}
+.acct-row-name {
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    flex: 1 1 auto;
+}
+.acct-row-name:hover { color: var(--accent-bright); }
+.acct-row-date {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-dim);
+}
+.acct-row-note {
+    flex: 1 0 100%;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--ink-dim);
+}
+.acct-empty { font-size: 14px; color: var(--ink-dim); }
+.acct-empty a { color: var(--accent); text-decoration: none; }
+.acct-empty a:hover { color: var(--accent-bright); }
+
+.acct-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+.acct-actions .acct-btn + .acct-btn { margin-left: 0; }
+
+/* ---------- DANGER ZONE ---------- */
+.acct-danger {
+    margin-top: 40px;
+    border: 1px solid var(--hairline);
+    border-left: 2px solid var(--red);
+    border-radius: 0 4px 4px 0;
+    background: var(--surface);
+    padding: 4px 22px 22px;
+}
+.acct-danger .acct-h2 {
+    border-top: none;
+    padding-top: 18px;
+    margin-top: 0;
+}
+.acct-danger p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: var(--ink-dim);
+    margin: 0 0 16px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 700px) {
+    .acct-card { margin-top: 32px; }
+    .acct-btn { display: block; width: 100%; text-align: center; }
+    .acct-btn + .acct-btn { margin-left: 0; margin-top: 10px; }
+    .acct-actions { flex-direction: column; }
+    .acct-form-inline { flex-direction: column; align-items: stretch; }
+    .acct-form-inline .acct-input { flex: 1 1 auto; }
+}
