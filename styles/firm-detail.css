@@ -35,13 +35,8 @@
     font-size: 40px;
     margin: 8px 0 4px;
   }
-  .detail-personality {
-    font-size: 17px;
-    font-style: italic;
-    color: var(--gold-bright);
-    margin: 0 0 14px;
-    max-width: 640px;
-  }
+  /* .detail-personality removed: the generated one-line summary it
+       styled is gone, replaced by the Power Personality card above it. */
   .detail-meta {
     font-family: var(--mono);
     font-size: 13px;
