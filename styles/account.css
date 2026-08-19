@@ -270,3 +270,278 @@
     .acct-form-inline { flex-direction: column; align-items: stretch; }
     .acct-form-inline .acct-input { flex: 1 1 auto; }
 }
+
+/* ============================================================
+   ACTIVITY HUB
+   The account page answers "what have I actually done here".
+   Follows, pipeline outcomes and submissions each live in their
+   own feature and their own table, so this is the only view that
+   puts them side by side. Same tokens as everything above: no
+   hardcoded colors, no gradients, no glow, no hover lifts.
+   ============================================================ */
+
+/* The hub carries five sections of tabular data. The 640px column
+   that suits a sign-in form is too tight for it, so the account
+   card widens - and only the account card, which is why this is a
+   modifier rather than a change to .acct-card itself. */
+.acct-card.is-hub { max-width: 860px; }
+
+/* ---------- STAT STRIP ---------- */
+.acct-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--hairline);
+    border: 1px solid var(--hairline);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.acct-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 18px;
+    background: var(--surface);
+}
+.acct-stat-num {
+    font-family: var(--mono);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.1;
+}
+.acct-stat-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+}
+
+/* ---------- SECTIONS ---------- */
+.acct-hub { margin-top: 8px; }
+
+.acct-sec {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--hairline);
+}
+.acct-sec:last-child { border-bottom: none; }
+
+.acct-sec-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+.acct-sec-title {
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin: 0;
+}
+.acct-sec-link {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    text-decoration: none;
+    white-space: nowrap;
+}
+.acct-sec-link:hover { color: var(--accent-bright); }
+
+.acct-mini {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-dim);
+}
+
+/* ---------- PIPELINE LADDER ---------- */
+.acct-stages {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.acct-stage { display: flex; flex-direction: column; gap: 7px; }
+
+/* An empty stage still renders, because "nothing at this step" is
+   a real answer about a pipeline. It just recedes. */
+.acct-stage.is-zero { opacity: 0.55; }
+
+.acct-stage-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+}
+.acct-stage-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+}
+.acct-stage-count {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-dim);
+}
+.acct-stage-track {
+    height: 3px;
+    background: var(--hairline);
+    border-radius: 2px;
+    overflow: hidden;
+}
+.acct-stage-bar {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+    min-width: 0;
+}
+
+/* ---------- CHIPS ---------- */
+.acct-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    /* min-width:0 on the flex parent, because a long firm name in a
+       grid or flex child otherwise refuses to shrink below its
+       content width and pushes the card sideways on a phone. */
+    min-width: 0;
+}
+.acct-chips-block { gap: 8px; }
+
+.acct-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    color: var(--ink);
+    text-decoration: none;
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    padding: 4px 9px;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+a.acct-chip:hover { border-color: var(--accent); color: var(--accent-bright); }
+
+/* A firm that has left the board keeps its row but loses its link. */
+.acct-chip.is-gone, .acct-row-name.is-gone, .acct-chip-name.is-gone {
+    color: var(--ink-dim);
+    cursor: default;
+    font-style: italic;
+}
+.acct-chip.is-muted { opacity: 0.6; }
+
+.acct-chip-follow { padding-right: 4px; }
+.acct-chip-name { color: inherit; text-decoration: none; }
+a.acct-chip-name:hover { color: var(--accent-bright); }
+
+.acct-chip-x {
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1;
+    color: var(--ink-dim);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px 5px;
+    border-radius: 2px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+.acct-chip-x:hover { color: var(--red); background: var(--surface-raised); }
+.acct-chip-x:disabled { opacity: 0.4; cursor: default; }
+
+.acct-passed {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid var(--hairline);
+}
+
+/* ---------- PILLS (alert settings) ---------- */
+.acct-pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.acct-pill {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 8px;
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    padding: 7px 11px;
+}
+.acct-pill-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+}
+.acct-pill-value {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--ink);
+}
+
+/* ---------- SUBMISSIONS ---------- */
+.acct-sub-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--hairline);
+}
+.acct-sub-kind {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    flex: 0 0 auto;
+}
+.acct-sub-field {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-dim);
+}
+.acct-sub-status {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    border: 1px solid var(--hairline);
+    border-radius: 2px;
+    padding: 2px 7px;
+}
+/* Status comes from the database, so style by value and let anything
+   unrecognised fall through to the neutral default above. */
+.acct-sub-status[data-status="approved"],
+.acct-sub-status[data-status="verified"] { color: var(--green); border-color: var(--green); }
+.acct-sub-status[data-status="rejected"] { color: var(--red); border-color: var(--red); }
+
+.acct-sub-note { display: block; margin-top: 14px; line-height: 1.6; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 700px) {
+    .acct-stats { grid-template-columns: repeat(2, 1fr); }
+    .acct-sec-head { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .acct-sub-row { gap: 8px; }
+    /* The date is the least useful column on a phone and it is the
+       one that forces a third line, so it goes rather than wraps. */
+    .acct-sub-row .acct-row-date { flex: 1 0 100%; }
+}
