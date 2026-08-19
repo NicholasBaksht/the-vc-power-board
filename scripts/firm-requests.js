@@ -137,6 +137,21 @@ function frWire(root) {
 
   btn.addEventListener('click', function () {
     const g = (id) => { const e = document.getElementById(id + '-' + kind); return e ? e.value : ''; };
+
+    /* Before accepting a request for a firm we may already track, check.
+       Someone typing "Sequoia" should be sent to the existing profile to
+       claim it, not invited to create a duplicate record. */
+    if (typeof findLikelyExistingFirm === 'function') {
+      const hit = findLikelyExistingFirm(g('frName'), g('frSite'));
+      if (hit && !form.dataset.dupeAcknowledged) {
+        form.dataset.dupeAcknowledged = '1';
+        status.innerHTML = 'We already track <a href="#' + hit.firm.slug + '">' + hit.firm.name +
+          '</a> — matched on ' + hit.on + '. If that is your firm, open it and use ' +
+          '<strong>Claim this listing</strong> instead. Press submit again if it is a different firm.';
+        return;
+      }
+    }
+
     btn.disabled = true;
     status.textContent = 'Sending…';
     frSubmit({
