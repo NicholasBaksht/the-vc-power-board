@@ -71,6 +71,14 @@ const POWER_ALERT_CONFIG = {
                                // quietly reports every firm as dormant. Withholding
                                // is the only safe failure mode.
 
+  // --- sector exposure, per firm, inside a researched deal window ---
+  minDealsPerExposurePeriod: 10, // deals needed in EACH half before a share is
+                                 // worth computing. At 10, one deal moves the
+                                 // number 10 points, which is why the shift
+                                 // threshold below sits well above that.
+  minExposureShiftPoints: 15,    // percentage-point move to report
+  minExposureConfidence: 0.9,    // two-proportion confidence floor
+
   // --- effect-size thresholds ---
   minPointChange: 3,           // percentage-point move to be worth an alert
   partnerHireWindowFrom: 2015, // hires counted from this year
@@ -93,17 +101,21 @@ const UNSUPPORTED_ALERTS = {
      a harder one: the median firm has 6 recorded deals, so splitting into
      two periods compares about 3 against 3, and one deal landing either
      side of the cut moves the figure by 33 points. */
-  sector_exposure_change: 'FIRM_DEALS gives dated sectors, but the median firm has 6 deals - a two-period split compares ~3 against ~3, where one deal moves the number 33 points.',
+  /* sector_exposure_change is IMPLEMENTED as of the windowed deal sweep
+     in data-deals.js (rule 11). It required two things the old dataset
+     could not give: a dated sector on every row, and a declared window
+     whose collection effort is even across both halves. It fires only
+     for firms clearing 10 deals in each half, which today is a
+     handful of them, and stays silent for the rest rather than
+     computing a share from three deals.
 
-  /* Obsolete as originally written too: dated deals exist, and
-     new_investments already reports them on a 90-day window. What is not
-     supportable is the period-over-period RATE this type implies.
-     FIRM_DEALS is a research sample with recency-biased collection - 1
-     deal recorded in 2025-02 rising monotonically to 40 in 2026-07 - so
-     "activity up X%" would measure when the research ran, not when the
-     firms invested. A raw count inside one window is honest; a comparison
-     between windows is not. */
-  investment_activity_30d: 'covered as a raw count by new_investments (90-day window). The 30-day rate comparison is withheld: FIRM_DEALS collection is recency-biased (1 deal in 2025-02 rising to 40 in 2026-07), so period-over-period change would measure research timing, not investment activity.',
+     investment_activity_30d stays unsupported, but for a new reason.
+     The recency bias is fixed INSIDE the researched window; the window
+     simply ends before today. A trailing-30-day claim needs coverage
+     running to the present, and DEAL_COVERAGE currently stops at
+     2026-06-30. Extend the sweep to the current month and this becomes
+     computable. Until then new_investments reports the raw count. */
+  investment_activity_30d: 'a trailing-30-day rate needs deal coverage running to the present; DEAL_COVERAGE ends 2026-06-30, so the last 30 days are outside every researched window. new_investments reports the raw count as a floor.',
   // partner_departures is IMPLEMENTED as of the team-snapshot crawler
   // (see snapshot_partner_departure below). It stays listed here until a
   // second capture exists, because one snapshot cannot be diffed.
@@ -1094,6 +1106,142 @@ function computePowerAlerts(options) {
     }
   }
 
+  /* --- SECTOR EXPOSURE CHANGE (per firm) ---
+     How a firm's sector mix moved between the first and second half
+     of a window that was actually swept for it.
+
+     Three things had to be true before this could exist, and all
+     three are properties of DEAL_COVERAGE rather than of row count:
+
+       1. Every deal carries a dated sector.
+       2. The window was researched with ONE method throughout, so a
+          difference between halves is not a difference in effort.
+          This is why the gate is the declared window and not
+          complete:true, which no venture firm's public record can
+          support - see the header of data-deals.js.
+       3. Enough deals in BOTH halves. A share computed from three
+          deals moves 33 points when one lands either side of the
+          cut, which is why minDealsPerExposurePeriod exists.
+
+     The denominator is DEALS, not sector mentions. One deal tagged
+     "AI Drug Discovery" touches both ai and healthcare; counting
+     mentions would let a single deal move two buckets and inflate
+     every share. Each bucket is scored as "share of this firm's
+     deals that touched it", which is a proper proportion even
+     though the buckets do not sum to 100. */
+  const COVERAGE = typeof DEAL_COVERAGE !== 'undefined' && DEAL_COVERAGE ? DEAL_COVERAGE : null;
+  if (!DEALS) {
+    skip('sector_exposure_change', 'FIRM_DEALS not loaded');
+  } else if (!COVERAGE) {
+    skip('sector_exposure_change', 'DEAL_COVERAGE not loaded - a window cannot be established');
+  } else if (!DMAP || !Object.keys(DMAP).length) {
+    skip('sector_exposure_change', 'DEAL_SECTOR_MAP not loaded');
+  } else {
+    Object.keys(COVERAGE).forEach(function (slug) {
+      const rec = COVERAGE[slug];
+      const firm = firmBySlug[slug];
+      if (!firm || !rec || !rec.completeFrom || !rec.completeTo) return;
+
+      const fromMs = Date.parse(rec.completeFrom + 'T00:00:00Z');
+      const toMs = Date.parse(rec.completeTo + 'T00:00:00Z');
+      if (isNaN(fromMs) || isNaN(toMs) || toMs <= fromMs) return;
+      const midMs = fromMs + Math.floor((toMs - fromMs) / 2);
+
+      const mine = DEALS.filter(function (d) {
+        if (d.firmSlug !== slug || !d.announcedDate) return false;
+        const t = Date.parse(d.announcedDate + 'T00:00:00Z');
+        return !isNaN(t) && t >= fromMs && t <= toMs;
+      });
+
+      const early = mine.filter(function (d) { return Date.parse(d.announcedDate + 'T00:00:00Z') < midMs; });
+      const late = mine.filter(function (d) { return Date.parse(d.announcedDate + 'T00:00:00Z') >= midMs; });
+      if (early.length < cfg.minDealsPerExposurePeriod) return;
+      if (late.length < cfg.minDealsPerExposurePeriod) return;
+
+      /* A deal counts once per bucket it touches, never twice for the
+         same bucket even when two of its labels map there. */
+      function buckets(list) {
+        const counts = {};
+        list.forEach(function (d) {
+          const mapped = d.sector ? (DMAP[d.sector] || []) : [];
+          const seen = {};
+          mapped.forEach(function (b) {
+            if (seen[b]) return;
+            seen[b] = 1;
+            counts[b] = (counts[b] || 0) + 1;
+          });
+        });
+        return counts;
+      }
+      const eC = buckets(early), lC = buckets(late);
+      const allBuckets = {};
+      Object.keys(eC).forEach(function (b) { allBuckets[b] = 1; });
+      Object.keys(lC).forEach(function (b) { allBuckets[b] = 1; });
+
+      Object.keys(allBuckets).forEach(function (b) {
+        const x1 = eC[b] || 0, n1 = early.length;
+        const x2 = lC[b] || 0, n2 = late.length;
+        const p1 = (x1 / n1) * 100, p2 = (x2 / n2) * 100;
+        const delta = p2 - p1;
+        if (Math.abs(delta) < cfg.minExposureShiftPoints) return;
+        /* pa_proportionConfidence is a normal approximation, valid only
+           when the expected counts are big enough. At 3-of-17 against
+           0-of-19 the pooled expectation is about 1.5 per half, and the
+           test cheerfully returns 0.94 for what is a three-deal move.
+           The textbook floor is an expected count of 5 on BOTH sides of
+           BOTH halves. Without it this rule reports noise with a
+           confident number bolted to it, which is worse than silence. */
+        const pooled = (x1 + x2) / (n1 + n2);
+        if (n1 * pooled < 5 || n2 * pooled < 5) return;
+        if (n1 * (1 - pooled) < 5 || n2 * (1 - pooled) < 5) return;
+
+        const conf = pa_proportionConfidence(x1, n1, x2, n2);
+        if (conf < cfg.minExposureConfidence) return;
+
+        const label = (TAX && TAX[b] && TAX[b].label) ? SECTORS[b].label : b;
+        const halfOne = rec.completeFrom + ' to ' + new Date(midMs - 86400000).toISOString().slice(0, 10);
+        const halfTwo = new Date(midMs).toISOString().slice(0, 10) + ' to ' + rec.completeTo;
+
+        alerts.push({
+          id: pa_fingerprint(['sector_exposure_change', slug, b, pa_round(p1, 1), pa_round(p2, 1)]),
+          type: 'sector_exposure_change',
+          firmId: slug,
+          sector: label,
+          subject: firm.name,
+          metric: 'share of this firm\'s disclosed deals that touched ' + label,
+          previousValue: pa_round(p1, 1),
+          currentValue: pa_round(p2, 1),
+          absoluteChange: pa_round(delta, 1),
+          percentChange: p1 > 0 ? pa_round((delta / p1) * 100, 1) : null,
+          unit: 'percentage points',
+          period: halfOne + ' vs ' + halfTwo,
+          direction: delta > 0 ? 'up' : 'down',
+          generatedAt: generatedAt,
+          confidence: pa_round(conf, 3),
+          score: pa_score({
+            magnitude: Math.abs(delta), magnitudeCeiling: 40,
+            sample: Math.min(n1, n2), sampleCeiling: 25,
+            confidence: conf,
+            recency: 1
+          }),
+          evidence: {
+            firm: firm.name,
+            bucket: b,
+            firstHalf: { window: halfOne, deals: n1, touching: x1, share: pa_round(p1, 1) },
+            secondHalf: { window: halfTwo, deals: n2, touching: x2, share: pa_round(p2, 1) },
+            coverageMethod: rec.method || null,
+            coverageComplete: rec.complete === true,
+            note: 'Both halves sit inside one researched window swept with a single method, which is what makes them comparable. ' +
+                  'Counts are floors: no venture firm publishes an enumerable log of every round it joins, so ' +
+                  (rec.complete === true ? '' : 'this coverage is explicitly not exhaustive, and ') +
+                  'undisclosed rounds are absent from both halves alike.'
+          }
+        });
+      });
+    });
+  }
+
+
   /* --- 12. CO-INVESTOR NETWORK REACH ---
      "Firm X has co-invested with N of the other M firms that have
      deal coverage."
@@ -1210,7 +1358,20 @@ function computePowerAlerts(options) {
      asserts a cause, an intention or a trend beyond the number. */
   alerts.forEach(function (a) {
     const dir = a.direction === 'up' ? 'rose' : 'fell';
-    if (a.type === 'cohort_sector_shift' || a.type === 'cohort_geography_shift' || a.type === 'cohort_stage_shift') {
+    if (a.type === 'sector_exposure_change') {
+      const dir = a.absoluteChange > 0 ? 'rose' : 'fell';
+      const e = a.evidence;
+      a.headline = a.subject + "'s " + a.sector + ' exposure ' + dir + ' ' +
+        Math.abs(a.absoluteChange) + ' points';
+      /* State both denominators. "24% to 48%" invites the reader to
+         assume a large book; "5 of 21 deals, then 10 of 21" shows what
+         the number actually rests on. */
+      a.description = e.firstHalf.touching + ' of ' + e.firstHalf.deals + ' disclosed deals touched ' +
+        a.sector + ' in ' + e.firstHalf.window + ' (' + a.previousValue + '%), against ' +
+        e.secondHalf.touching + ' of ' + e.secondHalf.deals + ' in ' + e.secondHalf.window +
+        ' (' + a.currentValue + '%). Both halves come from one researched window, so this is a ' +
+        'change in the firm, not a change in how hard anyone looked. Counts are floors.';
+    } else if (a.type === 'cohort_sector_shift' || a.type === 'cohort_geography_shift' || a.type === 'cohort_stage_shift') {
       const what = a.type === 'cohort_sector_shift' ? a.subject
         : a.type === 'cohort_geography_shift' ? a.subject + ' headquarters'
           : a.subject + ' investing';
