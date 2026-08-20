@@ -193,6 +193,8 @@ function paEvidenceHtml(a) {
    than the same alert about a firm you do not. That is the entire
    premise of Power Alerts 2.0. */
 const PA2_TYPE_WEIGHT = {
+  sector_exposure_change: 0.85, // where a firm is actually moving its
+                                // money, measured inside one swept window
   fund_announcements: 0.95,  // fresh capital, deployable now - the most
                              // actionable single fact about a firm
   fund_step: 0.9,            // a new fund changes what a firm can do for you
