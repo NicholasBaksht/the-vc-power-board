@@ -422,8 +422,10 @@
     margin: 32px 0;
     padding: 28px 26px;
     background: var(--surface);
-    border: 1px solid var(--hairline);
-    border-left: 3px solid var(--gold);
+    /* The accent runs the whole way round rather than down one edge.
+     var(--accent) is what the theme switcher repaints, so this
+     follows gold or blue without a second rule. */
+    border: 1px solid var(--accent);
     border-radius: 4px;
   }
   .why-this-vc-title {
