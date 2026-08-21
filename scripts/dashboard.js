@@ -304,35 +304,13 @@ function renderPerformanceDashboard(firm) {
 // sectors and investment stages - nothing here is hand-picked per
 // firm. Adding a category later means adding one entry to
 // philosophyCategories above; this function needs no changes.
-function renderPhilosophyScorecard(firm) {
-  const scores = computePhilosophyScores(firm);
+/* renderPhilosophyScorecard() lived here. The scorecard showed the same
+   sector and stage tags the profile already lists, redrawn as five-step
+   bars, so it restated what was directly above it without adding a fact.
 
-  const rowsHTML = scores.map((c, i) => {
-    const starGlyphs = ''.repeat(c.score) + ''.repeat(5 - c.score);
-    const fillPct = c.score * 20;
-    return `
-      <div class="phil-row">
-        <div class="phil-row-header">
-          <span class="phil-icon">${c.icon}</span>
-          <span class="phil-label">${c.label}</span>
-          <span class="phil-stars">${starGlyphs}</span>
-        </div>
-        <div class="phil-bar-track">
-          <div class="phil-bar-fill" style="width: ${fillPct}%; animation-delay: ${i * 0.04}s;"></div>
-        </div>
-      </div>
-    `;
-  }).join('');
-
-  return `
-    <div class="philosophy-scorecard">
-      <div class="philosophy-scorecard-label">Investment Philosophy Scorecard</div>
-      <div class="philosophy-scorecard-sub">Derived directly from this firm's researched sector and stage focus - 5 stars means it's one of their stated areas, 1 star means it isn't.</div>
-      <div class="philosophy-grid">${rowsHTML}</div>
-    </div>
-  `;
-}
-
+   computePhilosophyScores() below it stays: the Genome's Focus Intensity
+   axis and the Compare view's top-focus list both read it. Deleting the
+   panel is a display change, not a data one. */
 // Simple flag lookup for the regions currently in use. Falls back
 // to a globe icon for any future region without a specific flag,
 // so adding new regions never requires touching this function.
