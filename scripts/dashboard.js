@@ -525,7 +525,14 @@ function renderAnalytics() {
   const oldestFirm = firms.reduce((a, b) => (a.founded < b.founded ? a : b));
   const newestFirm = firms.reduce((a, b) => (a.founded > b.founded ? a : b));
 
-  document.getElementById('statRow').innerHTML = `
+  /* The By the Numbers markup was removed from index.html, so these two
+     targets no longer exist. They were written to unguarded, which threw
+     and stopped the function before it reached the Power Personality
+     distribution at the end - the block simply vanished from the
+     homepage with no error visible on the page. Guarded, the function
+     now skips what is gone and still runs what is not. */
+  const statRowEl = document.getElementById('statRow');
+  if (statRowEl) statRowEl.innerHTML = `
     <div class="stat-box">
       <div class="num">${totalFirms}</div>
       <div class="lbl">Firms Tracked</div>
@@ -577,7 +584,8 @@ function renderAnalytics() {
   }
   const maxCount = sortedSectors.length ? sortedSectors[0][1] : 1;
 
-  document.getElementById('sectorChart').innerHTML = sortedSectors.map(([sector, count]) => `
+  const sectorChartEl = document.getElementById('sectorChart');
+  if (sectorChartEl) sectorChartEl.innerHTML = sortedSectors.map(([sector, count]) => `
     <div class="sector-row">
       <div class="sector-name">${sector}</div>
       <div class="sector-bar-track">
