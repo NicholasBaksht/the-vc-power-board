@@ -139,7 +139,6 @@ ${renderWhyThisVC(firm)}
       ${renderGenome(firm)}
       ${renderPerformanceDashboard(firm)}
       ${renderGeographicHeatmap(firm)}
-      ${renderPhilosophyScorecard(firm)}
       ${leadershipHTML}
       ${timelineHTML}
    <div class="holdings">
