@@ -164,3 +164,36 @@
     color: var(--gold);
     margin-top: 8px;
   }
+
+/* ============================================================
+   FIRM PROFILE CARD BORDERS
+   ------------------------------------------------------------
+   Every content card on a firm profile carries the accent all the
+   way round, rather than a hairline with the accent on one edge.
+
+   Done as one scoped override of border-color rather than by
+   editing each card's own rule, for three reasons: the rules live
+   across four stylesheets, only the colour changes so widths and
+   radii stay owned by the original rule, and reverting is one
+   deletion. var(--accent) is what the theme switcher repaints, so
+   gold and blue both follow with no second rule.
+
+   Scoped to #detailView on purpose. Several of these classes are
+   also used outside firm profiles, and this was asked for on the
+   profiles specifically.
+
+   NOT included, deliberately: .price-input is a text field,
+   .pf-follow is a button, and .pp-conf-val is an inline chip.
+   A gold box around a form control reads as an error state.
+   ============================================================ */
+#detailView .detail-card,
+#detailView .founder-callout,
+#detailView .genome-panel,
+#detailView .performance-dashboard,
+#detailView .geo-heatmap,
+#detailView .fi-list,
+#detailView .similar-firm-card,
+#detailView .leader-card,
+#detailView .perf-stat-card {
+    border-color: var(--accent);
+}
