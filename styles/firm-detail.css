@@ -241,12 +241,31 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(150px, 1fr));
   gap: 22px;
-  padding: 18px 20px;
+  padding: 26px 20px 18px;
   background: var(--surface-raised, var(--surface));
   border: 1px solid var(--accent);
   border-radius: 4px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
+/* Sits in the panel's own corner. The panel is a grid of three
+   columns, so the button is taken out of flow rather than becoming
+   a fourth grid item. */
+.fx-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: var(--ink-dim);
+  font-size: 19px;
+  line-height: 1;
+  padding: 3px 7px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.fx-close:hover { color: var(--ink); background: var(--surface); }
+
 .fx-h {
   font-family: var(--mono);
   font-size: 10px;
