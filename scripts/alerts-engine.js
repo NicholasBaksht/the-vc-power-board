@@ -1383,7 +1383,7 @@ function computePowerAlerts(options) {
     if (a.type === 'sector_exposure_change') {
       const dir = a.absoluteChange > 0 ? 'rose' : 'fell';
       const e = a.evidence;
-      a.headline = a.subject + "'s " + a.sector + ' exposure ' + dir + ' ' +
+      a.title = a.subject + "'s " + a.sector + ' exposure ' + dir + ' ' +
         Math.abs(a.absoluteChange) + ' points';
       /* State both denominators. "24% to 48%" invites the reader to
          assume a large book; "5 of 21 deals, then 10 of 21" shows what
@@ -1462,7 +1462,7 @@ function computePowerAlerts(options) {
       const firmWord = a.subject.split(/[\s,.]+/)[0].toLowerCase();
       const carriesFirm = !!named && firmWord.length >= 3 &&
                           named.toLowerCase().indexOf(firmWord) === 0;
-      a.headline = (named
+      a.title = (named
         ? (carriesFirm ? named + ' closed' : a.subject + ' closed ' + named)
         : a.subject + ' closed a new fund') + ' at ' + usd;
       a.description = a.subject + ' announced ' + (named || 'a new fund') + ' at ' + usd +
