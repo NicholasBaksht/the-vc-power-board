@@ -297,19 +297,12 @@
   <div id="accountView" style="display: none;"></div>
   <div class="compare-bar" id="compareBar" style="display: none;"></div>
 
-  <section class="analytics" id="byTheNumbersSection">
-    <h2>By the Numbers</h2>
-    <p class="sub">Real statistics computed from every firm and portfolio company tracked on this page - not estimates, not vibes, just counting what's actually here.</p>
-    <div class="stat-row" id="statRow"></div>
-
-    <div class="analytics-subhead">Sector Coverage Across Tracked Firms</div>
-    <div id="sectorChart"></div>
-
-    <div class="exits-list">
-      <div class="analytics-subhead">Signature Exits</div>
-      <div id="exitsList"></div>
-    </div>
-  </section>
+  <!-- By the Numbers and Signature Exits were removed. This container
+       stays because app.js appends the board-wide Power Personality
+       distribution into it; renaming the id keeps that from reading as
+       leftover analytics markup. renderAnalytics() still runs and simply
+       finds none of its own targets, which its lookups now allow. -->
+  <section class="analytics" id="personalityDistSection"></section>
 
  <section class="methodology" id="methodologyAnchor">
     <h2>Methodology &amp; Sources</h2>
