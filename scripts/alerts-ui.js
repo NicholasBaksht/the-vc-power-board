@@ -301,6 +301,233 @@ function paCardHtml(a) {
   '</article>';
 }
 
+/* ============================================================
+   POWER ALERTS REPORT
+   ------------------------------------------------------------
+   The same computed signals, written as a report rather than
+   listed as data. The cards state a number and leave the reader
+   to work out what it means; a report says what happened, to
+   whom, and against what baseline, in the order that matters.
+
+   Every sentence is built from the alert's own structured
+   fields. Nothing is characterised beyond what the engine
+   measured: no "surged", no "signals a shift", no adjective the
+   data does not support. Where a count is a floor, the sentence
+   says at least.
+
+   House style, applied deliberately:
+     - the subject leads the sentence, never the number
+     - figures carry their comparison inline
+     - no em dashes; commas, semicolons and full stops instead
+     - no exclamation, no emoji, no second person
+   ============================================================ */
+
+const PA_REPORT_SECTIONS = [
+  { key: 'fundraising', title: 'Fundraising',
+    types: ['fund_announcements', 'fund_step', 'fund_year_activity'] },
+  { key: 'people', title: 'People',
+    types: ['snapshot_partner_arrival', 'snapshot_partner_departure',
+            'partner_momentum', 'partner_sector_focus'] },
+  { key: 'positioning', title: 'Sector and stage positioning',
+    types: ['cohort_sector_shift', 'cohort_geography_shift', 'cohort_stage_shift',
+            'sector_exposure_change', 'sector_breadth'] },
+  { key: 'activity', title: 'Deal activity and networks',
+    types: ['new_investments', 'coinvestor_network', 'portfolio_overlap',
+            'firm_milestone_activity'] }
+];
+
+function paRepUsd(n) {
+  if (n == null) return null;
+  const v = Math.abs(n);
+  if (v >= 1e9) return '$' + (Math.round(v / 1e8) / 10) + ' billion';
+  if (v >= 1e6) return '$' + Math.round(v / 1e6) + ' million';
+  return '$' + v.toLocaleString();
+}
+
+/* "August 14" reads; "2026-08-14" is a database field on a page that
+   is trying to be prose. The year is dropped when it is the current
+   one, the way a dateline works. */
+function paRepDay(iso) {
+  if (!iso) return null;
+  const p = String(iso).split('-');
+  if (p.length < 3) return paRepMonth(iso);
+  const names = ['January','February','March','April','May','June',
+                 'July','August','September','October','November','December'];
+  const m = names[parseInt(p[1], 10) - 1];
+  if (!m) return iso;
+  const y = parseInt(p[0], 10);
+  return m + ' ' + parseInt(p[2], 10) + (y === new Date().getFullYear() ? '' : ', ' + y);
+}
+
+function paRepMonth(iso) {
+  if (!iso) return null;
+  const parts = String(iso).split('-');
+  const names = ['January', 'February', 'March', 'April', 'May', 'June',
+                 'July', 'August', 'September', 'October', 'November', 'December'];
+  const m = names[parseInt(parts[1], 10) - 1];
+  return m ? (m + ' ' + parts[0]) : parts[0];
+}
+
+/* One alert, one sentence. Returns null when a type has no report
+   voice yet, so an unknown type is silently omitted from the prose
+   rather than rendered as a stub. */
+function paReportSentence(a) {
+  const e = a.evidence || {};
+  const n = Math.abs(a.absoluteChange == null ? a.currentValue : a.absoluteChange);
+
+  switch (a.type) {
+    case 'fund_announcements': {
+      const size = paRepUsd(a.currentValue);
+      const when = paRepMonth(a.period);
+      const named = e.fundName && e.fundName !== a.subject;
+      return { text: a.subject + ' closed ' + (named ? e.fundName : 'a new fund') +
+        ' at ' + size + ' in ' + when + '.',
+        caveat: e.listComplete ? null : 'Recorded fund histories are incomplete for some firms, so a more recent close may not be captured.' };
+    }
+    case 'fund_step': {
+      const mult = a.previousValue ? a.currentValue / a.previousValue : null;
+      const dir = a.currentValue > a.previousValue ? 'larger than' : 'smaller than';
+      const pct = Math.abs(Math.round((mult - 1) * 100));
+      return a.subject + ' raised ' + paRepUsd(a.currentValue) + ' for its most recent fund, ' +
+        pct + ' per cent ' + dir + ' the one before it, across vintages ' + a.period + '.';
+    }
+    case 'fund_year_activity':
+      return a.currentValue + ' tracked firms recorded a fund close in ' + a.subject + '.';
+
+    case 'snapshot_partner_arrival':
+      return a.subject + ' added ' + n + ' ' + (n === 1 ? 'name' : 'names') +
+        ' to its team page between ' + (e.capturedOn ? e.capturedOn.map(paRepDay).join(' and ') : a.period) + '.';
+    case 'snapshot_partner_departure':
+      return a.subject + ' removed ' + n + ' ' + (n === 1 ? 'name' : 'names') +
+        ' from its team page between ' + (e.capturedOn ? e.capturedOn.map(paRepDay).join(' and ') : a.period) +
+        ', taking the published roster from ' + a.previousValue + ' to ' + a.currentValue + '.';
+    case 'partner_momentum':
+      return a.currentValue + ' of the partners listed at ' + a.subject +
+        ' record a joining year of 2015 or later.';
+    case 'partner_sector_focus':
+      return a.currentValue + ' partners at ' + a.subject +
+        ' publish an investment focus that includes ' + a.sector + '.';
+
+    case 'cohort_sector_shift':
+      return a.subject + ' accounts for ' + a.currentValue + ' per cent of sector tags among firms founded 2015 or later, against ' +
+        a.previousValue + ' per cent among those founded 2005 to 2014, a gap of ' +
+        Math.abs(a.absoluteChange) + ' points.';
+    case 'cohort_geography_shift':
+    case 'cohort_stage_shift':
+      return a.subject + ' moved from ' + a.previousValue + ' per cent to ' + a.currentValue +
+        ' per cent between the two founding cohorts.';
+    case 'sector_exposure_change':
+      return a.subject + ' put ' + e.secondHalf.touching + ' of ' + e.secondHalf.deals +
+        ' disclosed deals into ' + a.sector + ' in the second half of the researched window, against ' +
+        e.firstHalf.touching + ' of ' + e.firstHalf.deals + ' in the first.';
+    case 'sector_breadth':
+      return a.currentValue + ' of the firms with deal coverage have at least one disclosed ' +
+        a.subject + ' investment.';
+
+    case 'new_investments':
+      return { text: a.subject + ' disclosed at least ' + a.currentValue +
+        ' investments in the past ' + (a.period || '90 days').replace('last ', '') + '.',
+        caveat: e.mixedEffort ? 'Part of that window was researched more intensively than the rest, so these counts are floors and are not comparable with earlier periods.' : null };
+    case 'coinvestor_network':
+      return a.subject + ' has appeared alongside ' + a.currentValue +
+        ' other tracked firms in disclosed rounds.';
+    case 'portfolio_overlap':
+      return a.currentValue + ' tracked firms hold ' + a.subject + '.';
+    case 'firm_milestone_activity':
+      return a.subject + ' recorded ' + a.currentValue + ' dated milestones since ' +
+        String(a.period || '2024').slice(0, 4) + '.';
+    default:
+      return null;
+  }
+}
+
+/* Joins sentences into a paragraph.
+
+   Two things this must not do. It must not lowercase the first word
+   to fit a connective: firm names lead most of these sentences, and
+   "andreessen Horowitz" or "bDC Capital" is worse than no connective
+   at all. Connectives therefore end in a comma and the sentence
+   keeps its own capitalisation, which is correct English anyway.
+
+   And it must not repeat a caveat. Two firms can share the same
+   coverage warning; stating it twice in one paragraph reads as a
+   stutter, so caveats are collected and appended once. */
+function paReportParagraph(list) {
+  const connect = ['', 'Separately, ', 'Elsewhere, ', 'In the same period, ', 'Also, '];
+  const caveats = [];
+  const out = [];
+  list.forEach(function (a, i) {
+    const r = paReportSentence(a);
+    if (!r) return;
+    const text = (typeof r === 'string') ? r : r.text;
+    const caveat = (typeof r === 'string') ? null : r.caveat;
+    if (caveat && caveats.indexOf(caveat) === -1) caveats.push(caveat);
+    /* Past the connective list, sentences simply follow one another.
+       A fifth "Also," is worse than a full stop. */
+    out.push((i < connect.length ? connect[i] : '') + text);
+  });
+  if (!out.length) return null;
+  /* Caveats come back separately rather than tacked onto the last
+     sentence. Appended inline they attach themselves to whichever
+     fact happens to be last, which put a deal-coverage warning
+     immediately after a milestone count that it had nothing to do
+     with. A footnote under the paragraph belongs to the paragraph. */
+  return { body: out.join(' '), notes: caveats };
+}
+
+function paReportDate() {
+  const d = new Date();
+  const names = ['January', 'February', 'March', 'April', 'May', 'June',
+                 'July', 'August', 'September', 'October', 'November', 'December'];
+  return names[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+}
+
+/* The lede takes the highest-scoring signal. If the reader follows
+   firms and one of those is in the report, it leads instead: the
+   most important thing on the page is the thing about them. */
+function paReportLede(list) {
+  const followed = (typeof getFollowedFirms === 'function') ? getFollowedFirms() : new Set();
+  const mine = list.filter(function (a) { return a.firmId && followed.has(a.firmId); });
+  const pick = (mine.length ? mine : list).slice().sort(function (x, y) { return y.score - x.score; })[0];
+  if (!pick) return null;
+  return { alert: pick, personal: mine.length > 0 };
+}
+
+function renderAlertsReport(live) {
+  if (!live.length) return '';
+  const lede = paReportLede(live);
+  const ledeRaw = lede ? paReportSentence(lede.alert) : null;
+  const ledeSentence = ledeRaw ? ((typeof ledeRaw === 'string') ? ledeRaw : ledeRaw.text) : null;
+
+  const sections = PA_REPORT_SECTIONS.map(function (sec) {
+    const items = live
+      .filter(function (a) { return sec.types.indexOf(a.type) !== -1; })
+      /* The lede already said this one. A short report that opens and
+         then repeats itself two paragraphs later reads as a bug. */
+      .filter(function (a) { return !lede || a.id !== lede.alert.id; })
+      .sort(function (x, y) { return y.score - x.score; });
+    if (!items.length) return '';
+    const para = paReportParagraph(items);
+    if (!para) return '';
+    return '<section class="par-section">' +
+      '<h3 class="par-h">' + sec.title + '</h3>' +
+      '<p class="par-p">' + para.body + '</p>' +
+      (para.notes.length ? '<p class="par-note">' + para.notes.join(' ') + '</p>' : '') +
+      '</section>';
+  }).join('');
+
+  return '<article class="par">' +
+    '<header class="par-head">' +
+      '<div class="par-kicker">Power Board Intelligence Report</div>' +
+      '<div class="par-date">' + paReportDate() + '</div>' +
+    '</header>' +
+    (ledeSentence
+      ? '<p class="par-lede">' + (lede.personal ? 'Among the firms you follow: ' + ledeSentence : ledeSentence) + '</p>'
+      : '') +
+    sections +
+    '</article>';
+}
+
 function renderPowerAlerts() {
   const el = document.getElementById('powerAlerts');
   if (!el) return; // section not on this view - do nothing, never throw
@@ -356,14 +583,23 @@ function renderPowerAlerts() {
         'Open any firm profile and use Follow - alerts about those firms will surface here first.' +
       '</div>';
 
+  /* The report leads. The cards still exist because they carry the
+     evidence panel and the per-alert sources, which a paragraph
+     cannot, but they sit behind a toggle: a reader who wants the
+     working can open it, and one who wants the story does not have
+     to read a grid of numbers to get it. */
   el.innerHTML = header +
+    renderAlertsReport(live) +
     '<div class="pa2-bar">' +
       '<span class="pa2-unread-count">' + unread + ' unread</span>' +
       '<button class="pa2-mark-all" type="button"' + (unread ? '' : ' disabled') + '>Mark all read</button>' +
+      '<button class="pa2-toggle-data" type="button" aria-expanded="false">Show the underlying signals</button>' +
     '</div>' +
+    '<div class="pa2-data" hidden>' +
     pa2FilterBar(live) +
     forYouBlock +
     section('All signals', null, part.rest) +
+    '</div>' +
     '<footer class="pa-meta">' +
       '<span>' + part.visible.length + ' of ' + result.computed + ' computed signals shown</span>' +
       '<span class="pa-meta-sep">&middot;</span>' +
@@ -372,12 +608,22 @@ function renderPowerAlerts() {
       '<span class="pa-meta-sep">&middot;</span>' +
       '<button class="pa-reset" type="button">Restore dismissed</button>' +
     '</footer>' +
-    '<p class="pa2-roadmap">In-app alerts are live. Email and push digests are not yet delivered - ' +
+    '<p class="pa2-roadmap">In-app alerts and follow notifications are live. Email and push digests are not yet delivered; ' +
     'the preference is stored but nothing is sent. Match and conflict alerts need saved fundraising ' +
     'criteria, which Power Board does not store per user yet.</p>';
 
   // Delegated handlers - one listener for the whole section.
   el.onclick = function (ev) {
+    const toggle = ev.target.closest('.pa2-toggle-data');
+    if (toggle) {
+      const box = el.querySelector('.pa2-data');
+      const open = !box.hidden;
+      box.hidden = open;
+      toggle.setAttribute('aria-expanded', String(!open));
+      toggle.textContent = open ? 'Show the underlying signals' : 'Hide the underlying signals';
+      return;
+    }
+
     const view = ev.target.closest('.pa-view');
     if (view) {
       const card = view.closest('.pa-card');
@@ -444,3 +690,135 @@ document.addEventListener('pb:follows-changed', function () {
 document.addEventListener('pb:alerts-changed', function () {
   if (document.getElementById('powerAlerts')) renderPowerAlerts();
 });
+
+/* ============================================================
+   FOLLOWED-FIRM NOTIFICATION
+   ------------------------------------------------------------
+   Following a firm is a request to be told when something
+   happens to it. Before this, the feed only reordered itself
+   and the reader had to visit the page to find that out.
+
+   Two surfaces, both quiet:
+     - a count on the Power Alerts nav link, always visible
+     - a dismissible bar naming the firms, once per session
+
+   computePowerAlerts() walks 401 firms and 914 partner records,
+   so it is computed once per page load and cached here. The
+   badge waits for an idle moment rather than blocking paint,
+   because nothing about it is urgent.
+   ============================================================ */
+
+let paAlertCache = null;
+function paComputeOnce() {
+  if (paAlertCache) return paAlertCache;
+  if (typeof computePowerAlerts !== 'function') return null;
+  try { paAlertCache = computePowerAlerts(); } catch (e) { paAlertCache = null; }
+  return paAlertCache;
+}
+
+/* Unread, undismissed alerts about firms this reader follows.
+   An alert with no firmId is board-wide and belongs to nobody, so
+   it never counts towards a personal notification. */
+function paFollowedUnread() {
+  const res = paComputeOnce();
+  const empty = { count: 0, firms: [], list: [] };
+  if (!res) return empty;
+  const followed = (typeof getFollowedFirms === 'function') ? getFollowedFirms() : null;
+  if (!followed || !followed.size) return empty;
+  const dismissed = paLoadDismissed();
+  const list = res.alerts.filter(function (a) {
+    return a.firmId && followed.has(a.firmId) &&
+           dismissed.indexOf(a.id) === -1 &&
+           !pa2IsRead(a.id);
+  });
+  const firms = [];
+  list.forEach(function (a) { if (firms.indexOf(a.subject) === -1) firms.push(a.subject); });
+  return { count: list.length, firms: firms, list: list };
+}
+
+const PA_BANNER_KEY = 'pb_alert_banner_seen';
+
+/* Keyed on the alert ids themselves, not a boolean. Dismissing the
+   bar hides THESE alerts; a genuinely new one brings it back. */
+function paBannerSignature(list) {
+  return list.map(function (a) { return a.id; }).sort().join(',');
+}
+
+function paBannerDismissed(sig) {
+  try { return localStorage.getItem(PA_BANNER_KEY) === sig; } catch (e) { return false; }
+}
+
+function paDismissBanner(sig) {
+  try { localStorage.setItem(PA_BANNER_KEY, sig); } catch (e) { /* private mode */ }
+}
+
+function renderAlertNotification() {
+  const info = paFollowedUnread();
+
+  // ---- badge on the nav link ----
+  const link = document.querySelector('.pb-nav a[href="#powerAlerts"]');
+  if (link) {
+    const existing = link.querySelector('.pa-navbadge');
+    if (existing) existing.remove();
+    if (info.count) {
+      const b = document.createElement('span');
+      b.className = 'pa-navbadge';
+      b.textContent = info.count > 99 ? '99+' : String(info.count);
+      b.setAttribute('aria-label', info.count + ' unread alerts on firms you follow');
+      link.appendChild(b);
+    }
+  }
+
+  // ---- the bar ----
+  const old = document.getElementById('paNotifyBar');
+  if (old) old.remove();
+  if (!info.count) return;
+
+  const sig = paBannerSignature(info.list);
+  if (paBannerDismissed(sig)) return;
+  if (location.hash === '#powerAlerts') return;   // already looking at them
+
+  const names = info.firms.slice(0, 3).join(', ');
+  const more = info.firms.length > 3 ? ' and ' + (info.firms.length - 3) + ' more' : '';
+  const bar = document.createElement('div');
+  bar.id = 'paNotifyBar';
+  bar.className = 'pa-notify';
+  bar.innerHTML =
+    '<span class="pa-notify-dot" aria-hidden="true"></span>' +
+    '<span class="pa-notify-text">' +
+      '<strong>' + info.count + ' new ' + (info.count === 1 ? 'signal' : 'signals') + '</strong> on ' +
+      paEsc(names) + paEsc(more) + '.' +
+    '</span>' +
+    '<a class="pa-notify-go" href="#powerAlerts">Read the report</a>' +
+    '<button class="pa-notify-x" type="button" aria-label="Dismiss">&times;</button>';
+
+  const header = document.querySelector('header.pb-header');
+  if (header && header.parentNode) header.parentNode.insertBefore(bar, header.nextSibling);
+  else document.body.insertBefore(bar, document.body.firstChild);
+
+  bar.querySelector('.pa-notify-x').addEventListener('click', function () {
+    paDismissBanner(sig);
+    bar.remove();
+  });
+}
+
+/* Recompute when the reader follows or unfollows something, and
+   when a session starts, since follows sync from Supabase then. */
+function paNotifyInit() {
+  const run = function () { try { renderAlertNotification(); } catch (e) { /* never block the page */ } };
+  if (typeof requestIdleCallback === 'function') requestIdleCallback(run, { timeout: 2500 });
+  else setTimeout(run, 900);
+  document.addEventListener('pb:follows-changed', run);
+  document.addEventListener('pb:alerts-changed', run);
+  if (typeof onAuthChange === 'function') onAuthChange(run);
+  window.addEventListener('hashchange', function () {
+    const b = document.getElementById('paNotifyBar');
+    if (b && location.hash === '#powerAlerts') b.remove();
+  });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', paNotifyInit);
+} else {
+  paNotifyInit();
+}
