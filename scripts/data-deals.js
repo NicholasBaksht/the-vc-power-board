@@ -1,75 +1,79 @@
 /* ============================================================
    DATA-DEALS.JS  -  dated, sourced investment records
 
-   Deal-level data for the Power Alerts engine. Every row is one
-   firm's participation in one financing, carrying the date, the
-   source URL, and a verbatim quote naming the firm and the
-   portfolio company.
+   Every row is one firm's participation in one financing, with the
+   date, the source URL, and a verbatim quote naming both the firm
+   and the portfolio company.
 
-   459 rows across 24 firms, from two passes that sampled in
-   DIFFERENT ways. The difference is the most important thing in
-   this file, because it decides which metrics are legitimate.
+   573 rows across 24 firms, from THREE passes that sampled
+   differently. Which comparisons are legitimate depends entirely on
+   which pass a row came from, so that is what this header is for.
 
-   PASS 1 (2026-08-14) - QUOTA SAMPLE, 140 rows
+   PASS 1 (2026-08-14) - QUOTA SAMPLE
      Each firm contributed its most recent sourceable deals, capped
-     at 6. Filling a quota means taking whatever is easiest to find,
-     and that is always the most recent: 1 deal recorded in 2025-02
-     rising to 40 in 2026-07. Row counts from this pass measure the
-     cap and the recency of press coverage, not investing.
+     at 6. Row counts measure the cap and the recency of press
+     coverage. No trends, no cross-firm volume.
 
-   PASS 2 (2026-08-20) - WINDOWED SWEEP, 350 rows
-     Every firm searched exhaustively across 2026-01-01 to 2026-06-30
-     using one method per firm, recorded in DEAL_COVERAGE below.
-     No quota. The month distribution came out flat rather than
-     ramping toward the collection date, which is the property that
-     makes comparison inside this window meaningful:
+   PASS 2 (2026-08-20) - WINDOWED SWEEP, 2026-01-01 to 2026-06-30
+     Every firm swept exhaustively with one method each, recorded in
+     DEAL_COVERAGE. The month distribution came out flat rather than
+     ramping, which is what makes the two halves of this window
+     comparable. THIS IS THE ONLY COMPARABLE WINDOW.
 
-       01 58  02 53  03 66  04 56  05 47  06 98
+   PASS 3 (2026-08-20) - EXTENSION, 2026-07-01 to 2026-08-20
+     Same firms, same recorded sources, 51 more days. The rows are
+     good and are merged here. The window is NOT comparable with
+     pass 2, and the reason is measured rather than suspected.
 
-     Q1 177, Q2 201. Compare with pass 1's 1/4/4/6/12/47/66 by quarter.
+   WHY THE EXTENSION IS NOT COMPARABLE
+     Per-firm weekly rate in the extension against the same firm's
+     rate in Jan-Jun: median x1.77, range x0.00 to x7.10. A whole-market
+     77% jump in seven weeks is not plausible, and the spread rules
+     out correcting it with any single factor - four firms returned
+     nothing at all while others tripled.
+
+     The cause is attention per firm-day, not sources. Pass 2 gave
+     each researcher 181 days of a firm to cover; pass 3 gave 51 days
+     of the same firm from the same surfaces. Same places, looked at
+     harder. The research declared this rather than leaving it in the
+     data to be discovered as a fake trend.
+
+     Three firms also declared a changed method outright: ribbit-capital, sequoia, y-combinator.
+
+   MONTHLY COUNTS, 2026 (pass 2 then pass 3):
+     01 58  02 53  03 66  04 56  05 47  06 98  07 109  08 71
+
+   HOW DEAL_COVERAGE ENCODES THIS
+     completeFrom / completeTo   the COMPARABLE window. Anything that
+                                 compares two periods must read only
+                                 these, and must not reach past them.
+     extendedTo                  how far the DATA runs. Rows exist to
+                                 here; they are usable for counts and
+                                 for the co-investment graph, never
+                                 for a period comparison.
+     extensionRateRatio          the measured ratio above, per firm.
+     extensionComparable         false, everywhere, deliberately.
 
    WHAT IS PERMITTED
-     A period-over-period comparison BETWEEN QUARTERS INSIDE the
-     researched window, read as a floor. Gate it on DEAL_COVERAGE:
-     both periods must fall inside a firm's declared window.
+     Comparing the two halves of the pass-2 window. Counting deals in
+     a single period as a FLOOR. Co-investment edges, which do not
+     depend on completeness.
 
-   WHAT IS STILL FORBIDDEN
-     1. Any comparison that CROSSES the window boundary. Rows dated
-        before 2026-01-01 or after 2026-06-30 come from the quota
-        pass, so a Q4-2025 against Q1-2026 comparison measures the
-        change in method.
-     2. Cross-firm volume comparison outside the window, for the
-        same reason as before: firms were capped at the same number.
-     3. Treating any count as a total. See below.
+   WHAT IS FORBIDDEN
+     Any comparison spanning 2026-06-30. Cross-firm volume ranking on
+     rows dated after it, since the effort ratio varies from x0.00 to
+     x7.10 between firms. Treating any count as a total.
 
-   WHY EVERY FIRM IS complete:false
-     Not an unfinished job - a finding. Almost no venture firm
-     publishes a dated, enumerable log of every round it joins.
-     Firms post about deals they led and deals they are proud of;
-     participation in someone else's syndicate usually leaves no
-     trace on the firm's own site. This was proved, not assumed:
+   WHY EVERY FIRM IS STILL complete:false
+     Almost no venture firm publishes a dated, enumerable log of
+     every round it joins. Proven, not assumed: Bessemer's own dated
+     news feed missed four of its own in-window rounds; 8VC's fully
+     enumerable archive omits a round 8VC led; Radical's archive
+     lists all 273 posts it has published and never mentions Waabi,
+     where it is a named investor. Every count here is a floor.
 
-       - Bessemer's /news page is a genuinely good dated feed, yet
-         press search found four in-window BVP rounds absent from it.
-       - 8VC's dated archive is fully enumerable yet omits the Latus
-         Bio extension that 8VC led.
-       - Radical's /archive lists all 273 posts it has ever
-         published and never mentions Waabi, where Radical is named
-         as an investor by another source.
-
-     A firm whose own archive is complete and still misses its own
-     deals cannot be marked complete from that archive. So every
-     count here is a FLOOR: at least this many, never exactly.
-
-   The two passes also cross-check each other. Pass 2 missed 28
-   in-window rows that pass 1 already held, at a rate that rises
-   from 2% in January to about 10% in Q2 - further evidence that
-   neither pass is exhaustive and that the merge beats either alone.
-
-   Where both passes held the same deal, the later pass wins.
-
-   Em dashes in quoted evidence were converted to hyphens for
-   consistency with the rest of the site.
+   Where passes held the same deal, the later pass wins. Em dashes in
+   quoted evidence were converted to hyphens for site consistency.
    ============================================================ */
 
 const FIRM_DEALS = [
@@ -349,24 +353,137 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "8vc",
+    "company": "Senra Systems",
+    "announcedDate": "2026-07-15",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Advanced Manufacturing",
+    "sectorEvidence": "a Cypress, CA-based software-driven manufacturing company optimizing wire harness production",
+    "role": null,
+    "coInvestors": [
+      "Andreessen Horowitz",
+      "Lowercarbon Capital",
+      "Interlagos",
+      "General Catalyst",
+      "Sequoia Capital",
+      "Founders Fund",
+      "Dylan Field",
+      "CIV",
+      "The Friedkin Group",
+      "Jaws Estates Capital",
+      "Sozo Ventures",
+      "Alumni Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/senra-systems-raises-65m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Senra Systems, a Cypress, CA-based software-driven manufacturing company optimizing wire harness production, raised $65M in Series B funding.\n\nThe round was led by Lowercarbon Capital and Interlagos, with participation from General Catalyst, Sequoia Capital, Andreessen Horowitz, Founders Fund, Dylan Field, CIV, 8VC, The Friedkin Group, Jaws Estates Capital, Sozo Ventures and Alumni Ventures."
+  },
+  {
+    "firmSlug": "8vc",
     "company": "Sable",
     "announcedDate": "2026-07-16",
     "datePrecision": "day",
     "round": null,
-    "sector": "Enterprise AI Agents",
-    "sectorEvidence": "Sable, the first AI employee built to lead customer interactions end-to-end",
+    "sector": "AI Sales Enablement",
+    "sectorEvidence": "building the first AI employee that can see, click, and explain a product in real time. A prospect or customer clicks a link, joins a live call, and Aidan – Sable's AI employee – is already waiting for them, ready to walk them through the product, answer their questions, maneuver in a shared browser, and drive the experience while customers watch and take over whenever they want.",
     "role": "lead",
     "coInvestors": [
-      "Sequoia Capital",
-      "BoxGroup",
-      "SV Angel",
-      "Valor Atreides AI Fund",
-      "Sabrina Hahn",
-      "Evan Hahn"
+      "Sequoia"
     ],
-    "sourceUrl": "https://www.newswire.com/news/sable-raises-45m-to-build-the-first-ai-employee-that-can-click-see-and-explain",
-    "sourceType": "press-release",
-    "evidence": "Sable, the first AI employee built to lead customer interactions end-to-end, today announced a $45 million financing round led by Sequoia Capital and 8VC, with participation from BoxGroup, SV Angel, Valor Atreides AI Fund, Sabrina and Evan Hahn."
+    "sourceUrl": "https://8vc.com/resources/announcing-our-investment-in-sable",
+    "sourceType": "firm-site",
+    "evidence": "Today, Sable announced a $45M fundraise led by 8VC and Sequoia, and that Joe Lonsdale is joining its board."
+  },
+  {
+    "firmSlug": "8vc",
+    "company": "Sila",
+    "announcedDate": "2026-07-21",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "Battery Technology",
+    "sectorEvidence": "Sila, an Alameda, CA-based battery technology company",
+    "role": null,
+    "coInvestors": [
+      "Bessemer Venture Partners",
+      "Atreides Management",
+      "Sutter Hill Ventures",
+      "Matrix Partners",
+      "T. Rowe Price Associates, Inc"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/sila-raises-300m-in-private-equity-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Sila, an Alameda, CA-based battery technology company, raised $300M in a private equity funding. The round was led by Atreides Management, and Sutter Hill Ventures with participation 8VC, Bessemer Venture Partners, Matrix Partners, T. Rowe Price Associates, Inc, and other existing and new investors."
+  },
+  {
+    "firmSlug": "8vc",
+    "company": "Vals",
+    "announcedDate": "2026-08-13",
+    "datePrecision": "day",
+    "round": "seed",
+    "sector": "AI Evaluation",
+    "sectorEvidence": "Vals builds benchmarks the way the work is actually done. Its evaluations are authored alongside practitioners (lawyers, accountants, finance professionals) on real professional tasks: legal research through a consortium of major law firms, expert-written finance agent workflows, tax, healthcare, and coding.",
+    "role": "lead",
+    "coInvestors": [],
+    "sourceUrl": "https://8vc.com/resources/announcing-our-investment-in-vals",
+    "sourceType": "firm-site",
+    "evidence": "Vals x 8VC\n\nWe led Vals' seed round. Today, Vals announced a Series A led by our friends at a16z."
+  },
+  {
+    "firmSlug": "8vc",
+    "company": "Vals AI",
+    "announcedDate": "2026-08-13",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "AI Evaluation",
+    "sectorEvidence": "The company focuses on providing independent benchmarks for artificial intelligence models, helping enterprises, labs, and governments measure model performance and ROI across various professional domains.",
+    "role": null,
+    "coInvestors": [
+      "a16z",
+      "BloombergBeta",
+      "HRT Ventures",
+      "Next Ladder Ventures"
+    ],
+    "sourceUrl": "https://www.thesaasnews.com/news/vals-ai-raises-40m-series-a/",
+    "sourceType": "reputable-press",
+    "evidence": "Vals AI, an artificial intelligence evaluation startup, has announced a $40 million Series A funding round at a $400 million valuation. The company focuses on providing independent benchmarks for artificial intelligence models, helping enterprises, labs, and governments measure model performance and ROI across various professional domains.\n\nThe round was led by a16z, with participation from existing investors 8VC and BloombergBeta, as well as new investors HRT Ventures and Next Ladder Ventures."
+  },
+  {
+    "firmSlug": "8vc",
+    "company": "Wispr",
+    "announcedDate": "2026-08-17",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Voice AI",
+    "sectorEvidence": "Wispr, a San Francisco, CA-based provider of an AI voice dictation and human-AI interaction platform",
+    "role": null,
+    "coInvestors": [
+      "NEA",
+      "Menlo Ventures",
+      "Notable Capital",
+      "Neo Ventures",
+      "MVP Ventures",
+      "Acrew",
+      "Forerunner",
+      "Goodwater",
+      "Peak XV",
+      "Together Fund",
+      "PLUS Capital",
+      "Livvy Dunne",
+      "Shaun White",
+      "Dak Prescott",
+      "DK Metcalf",
+      "Joe Burrow",
+      "Kyle Hamilton",
+      "Aaron Gordon",
+      "Alex Caruso",
+      "Domantas Sabonis",
+      "Klay Thompson",
+      "Paul George",
+      "Trae Young"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/wispr-raises-280m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Wispr, a San Francisco, CA-based provider of an AI voice dictation and human-AI interaction platform, raised $280M in Series B financing at a $2B valuation. The round was led by Menlo Ventures with participation from Notable Capital, NEA, Neo Ventures, 8VC, MVP Ventures, Acrew, Forerunner, Goodwater, Peak XV, Together Fund, PLUS Capital, Livvy Dunne, Shaun White, Dak Prescott, DK Metcalf, Joe Burrow, Kyle Hamilton, Aaron Gordon, Alex Caruso, Domantas Sabonis, Klay Thompson, Paul George, and Trae Young."
   },
   {
     "firmSlug": "a16z",
@@ -1112,20 +1229,80 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "a16z",
+    "company": "Pearl Health",
+    "announcedDate": "2026-07-08",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "Healthcare Technology",
+    "sectorEvidence": "a healthcare technology company helping manage risk and deliver better care to Medicare patients",
+    "role": "lead",
+    "coInvestors": [
+      "Viking Global Investors",
+      "AlleyCorp",
+      "Ulysses Capital",
+      "Trinity Capital"
+    ],
+    "sourceUrl": "https://www.prnewswire.com/news-releases/pearl-health-raises-110-million-to-expand-its-ai-platform-helping-providers-deliver-better-outcomes-at-lower-cost-for-medicare-patients-302820795.html",
+    "sourceType": "press-release",
+    "evidence": "Pearl Health, a healthcare technology company helping manage risk and deliver better care to Medicare patients, today announced a $110 million capital raise, comprised of equity investment led by Andreessen Horowitz with participation from Viking Global Investors, AlleyCorp, Ulysses Capital, and a debt facility led by Trinity Capital."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Senra Systems",
+    "announcedDate": "2026-07-15",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Advanced Manufacturing",
+    "sectorEvidence": "a Cypress, CA-based software-driven manufacturing company optimizing wire harness production",
+    "role": "participant",
+    "coInvestors": [
+      "Lowercarbon Capital",
+      "Interlagos",
+      "General Catalyst",
+      "Sequoia Capital",
+      "Founders Fund",
+      "Dylan Field",
+      "CIV",
+      "8VC",
+      "The Friedkin Group",
+      "Jaws Estates Capital",
+      "Sozo Ventures",
+      "Alumni Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/senra-systems-raises-65m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Senra Systems, a Cypress, CA-based software-driven manufacturing company optimizing wire harness production, raised $65M in Series B funding.\n\nThe round was led by Lowercarbon Capital and Interlagos, with participation from General Catalyst, Sequoia Capital, Andreessen Horowitz, Founders Fund, Dylan Field, CIV, 8VC, The Friedkin Group, Jaws Estates Capital, Sozo Ventures and Alumni Ventures."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Runta",
+    "announcedDate": "2026-07-16",
+    "datePrecision": "day",
+    "round": "seed",
+    "sector": "AI Agent Infrastructure",
+    "sectorEvidence": "Runta rebuilds the execution layer for AI agents, providing a complete operating system environment that can run locally or in the cloud, with security and policy interfaces for enterprise deployment.",
+    "role": "lead",
+    "coInvestors": [],
+    "sourceUrl": "https://thenextweb.com/news/runta-a16z-seed-ai-agent-infrastructure",
+    "sourceType": "reputable-press",
+    "evidence": "Andreessen Horowitz (a16z) led the round, which values Runta at more than $100 million."
+  },
+  {
+    "firmSlug": "a16z",
     "company": "Neo",
     "announcedDate": "2026-07-20",
     "datePrecision": "day",
     "round": "Seed",
-    "sector": "Cybersecurity",
-    "sectorEvidence": "Neo gives SecOps teams the inventory, posture intelligence, attribution, and policy control to manage enterprise-wide agentic transformation and secure AI agents, AI-enabled applications, browsers, identities, and traditional software with newly introduced agentic capabilities.",
+    "sector": "Enterprise Security",
+    "sectorEvidence": "Neo, the Agentic Software Control company",
     "role": "lead",
     "coInvestors": [
       "Bessemer Venture Partners",
       "Craft Ventures",
       "Merlin Ventures"
     ],
-    "sourceUrl": "https://www.neo.ai/news/neo-launches-100m",
-    "sourceType": "company-announcement",
+    "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/20/3329638/0/en/Neo-Launches-with-100M-to-Secure-AI-Software-Across-the-Enterprise.html",
+    "sourceType": "press-release",
     "evidence": "Neo, the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Merlin Ventures."
   },
   {
@@ -1145,6 +1322,107 @@ const FIRM_DEALS = [
     "sourceUrl": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
     "sourceType": "reputable-press",
     "evidence": "Travis Kalanick's robotics company, Atoms, has raised $1.7 billion in a funding round led by Andreessen Horowitz."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Neon Commerce",
+    "announcedDate": "2026-07-22",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Gaming Commerce",
+    "sectorEvidence": "a San Francisco, CA-based fintech startup specializing in direct-to-consumer (DTC) commerce for games",
+    "role": null,
+    "coInvestors": [
+      "KRAFTON, Inc.",
+      "Renegade Partners"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/neon-commerce-raises-13m-in-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Neon Commerce, Inc., a San Francisco, CA–based fintech startup specializing in direct-to-consumer (DTC) commerce for games, closed a $13m Series A funding round.\n\nSouth Korean publisher KRAFTON, Inc. participated in the round as a strategic investor, alongside a16z and Renegade Partners."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Cathedral",
+    "announcedDate": "2026-07-23",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "Defense Cybersecurity",
+    "sectorEvidence": "a New York City-based developer of AI-driven cyber warfare platforms and defensive national security systems",
+    "role": "lead",
+    "coInvestors": [
+      "Sequoia Capital"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/cathedral-raises-160m-in-funding-at-a-1-4-billion-post-money-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Cathedral, a New York City-based developer of AI-driven cyber warfare platforms and defensive national security systems, reportedly raised $160m in funding round at a $1.4 billion post-money valuation.\n\nThe round was co-led by Andreessen Horowitz (a16z) and Sequoia Capital."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Etched",
+    "announcedDate": "2026-07-23",
+    "datePrecision": "day",
+    "round": "Series C",
+    "sector": "AI Inference Hardware",
+    "sectorEvidence": "Etched, the company building frontier inference clusters",
+    "role": null,
+    "coInvestors": [
+      "Sequoia",
+      "Jane Street",
+      "Diffusion",
+      "SK Hynix"
+    ],
+    "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/23/3332366/0/en/etched-raises-300m-at-a-10-3b-valuation-to-scale-production-of-frontier-scale-inference-hardware.html",
+    "sourceType": "press-release",
+    "evidence": "SAN JOSE, Calif., July 23, 2026 (GLOBE NEWSWIRE) -- Etched, the company building frontier inference clusters, today announced $300M in new financing at a $10.3B valuation less than one month after emerging from stealth. The latest round was led by Sequoia, with participation from a16z, Jane Street, Diffusion, and SK Hynix and represents the highest valuation ever for a Sequoia-led Series C."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Fly.io",
+    "announcedDate": "2026-08-03",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "Cloud Infrastructure",
+    "sectorEvidence": "a San Francisco, CA-based provider of a connected cloud infrastructure platform designed for AI agents and applications",
+    "role": "participant",
+    "coInvestors": [
+      "Dell Technologies Capital",
+      "Intel Capital",
+      "EQT",
+      "Geodesic",
+      "YC"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/fly-io-raises-25m-in-series-d-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Fly.io, a San Francisco, CA-based provider of a connected cloud infrastructure platform designed for AI agents and applications, raised $25M in Series D financing.\n\nThe round was co-led by Dell Technologies Capital and Intel Capital, with participation from Andreessen Horowitz, EQT, Geodesic, and YC."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Base Power",
+    "announcedDate": "2026-08-04",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "Distributed Energy",
+    "sectorEvidence": "an Austin, Texas-based provider of distributed energy solutions and home battery systems",
+    "role": "participant",
+    "coInvestors": [
+      "Ribbit",
+      "Addition",
+      "Valor Equity Partners",
+      "JPMorganChase's Strategic Investment Group",
+      "Altimeter",
+      "D1 Capital Partners",
+      "Sands Capital",
+      "Coatue",
+      "Layer Global",
+      "Energy Impact Partners",
+      "Thrive Capital",
+      "Lightspeed",
+      "Trust Ventures",
+      "CapitalG"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/base-power-raises-1-billion-in-series-d-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Base Power, an Austin, Texas-based provider of distributed energy solutions and home battery systems, raised $1 Billion in Series D financing, at $13 Billion valuation.\n\nThe round was led by Ribbit, Addition, Valor Equity Partners, and JPMorganChase's Strategic Investment Group, with participation from Altimeter, D1 Capital Partners, Sands Capital, Coatue, Layer Global, Energy Impact Partners, Thrive Capital, a16z, Lightspeed, Trust Ventures, CapitalG, and others."
   },
   {
     "firmSlug": "a16z",
@@ -1172,38 +1450,159 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Series C",
     "sector": "Enterprise AI Agents",
-    "sectorEvidence": "HappyRobot, the company putting AI agents to work across complex enterprise operations",
+    "sectorEvidence": "a San Francisco, CA-based provider of an AI agent platform for enterprise operations",
     "role": "participant",
     "coInvestors": [
       "Prysm Capital",
       "Eurazeo",
       "Base10",
       "Y Combinator",
-      "Koch Disruptive Technologies",
+      "Koch Disruptive Technologies (KDT)",
       "Orange",
-      "T.Capital (Deutsche Telekom)",
+      "T.Capital",
       "Bankinter",
       "Endeavor Catalyst",
       "Kfund",
       "Wave-X"
     ],
-    "sourceUrl": "https://www.businesswire.com/news/home/20260804192350/en/HappyRobot-Raises-$150-Million-Series-C-to-Build-Enterprise-Superintelligence",
-    "sourceType": "press-release",
-    "evidence": "HappyRobot, the company putting AI agents to work across complex enterprise operations, today announced it has raised $150 million in Series C funding led by Prysm Capital and co-led by Eurazeo. ... Existing investors a16z, Base10, Y Combinator are doubling down with participation from strategics like Koch Disruptive Technologies (KDT), Orange, and T.Capital (Deutsche Telekom), Bankinter, Endeavor Catalyst, Kfund and Wave-X."
+    "sourceUrl": "https://www.finsmes.com/2026/08/happyrobot-raises-150m-in-series-c-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "HappyRobot, a San Francisco, CA-based provider of an AI agent platform for enterprise operations, raised $150M in Series C funding.\n\nThe round was led by Prysm Capital and Eurazeo with participation from a16z, Base10, Y Combinator, Koch Disruptive Technologies (KDT), Orange, T.Capital, Bankinter, Endeavor Catalyst, Kfund, and Wave-X."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Mariana Minerals",
+    "announcedDate": "2026-08-04",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Critical Minerals",
+    "sectorEvidence": "a San Francisco, CA-based provider of a software-first, vertically integrated critical minerals platform",
+    "role": "participant",
+    "coInvestors": [
+      "Khosla Ventures",
+      "Breakthrough Energy Ventures",
+      "Greenoaks",
+      "Halo Fund",
+      "Pax Ventures",
+      "StepStone Group",
+      "BHP Ventures",
+      "Washington Harbour Partners",
+      "Greycroft",
+      "General Innovation Capital Partners",
+      "Mitsubishi Corporation",
+      "In-Q-Tel (IQT)",
+      "Earthshot Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/mariana-minerals-raises-310m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Mariana Minerals, a San Francisco, CA-based provider of a software-first, vertically integrated critical minerals platform, raised $310M in Series B financing.\n\nThe round was led by Khosla Ventures with participation from Andreessen Horowitz (a16z), Breakthrough Energy Ventures, Greenoaks, Halo Fund, Pax Ventures, StepStone Group, BHP Ventures, Washington Harbour Partners, Greycroft, General Innovation Capital Partners, Mitsubishi Corporation, In-Q-Tel (IQT), Earthshot Ventures, and additional strategic capital partners."
   },
   {
     "firmSlug": "a16z",
     "company": "Volta",
     "announcedDate": "2026-08-04",
     "datePrecision": "day",
-    "round": "Series A",
+    "round": "Seed Round and Series A",
     "sector": "AI Infrastructure",
-    "sectorEvidence": "Volta is building a new and different kind of AI infrastructure company, combining cloud operations with project finance to unlock new sources of compute.",
+    "sectorEvidence": "Volta is a fully vertically integrated AI infrastructure platform that develops, finances, builds, and operates AI factories, integrating institutional capital, powered land, data centers, compute, software and operations.",
     "role": "lead",
-    "coInvestors": [],
-    "sourceUrl": "https://a16z.com/announcement/investing-in-volta/",
-    "sourceType": "firm-announcement",
-    "evidence": "We believe that Volta is building a new and different kind of AI infrastructure company, combining cloud operations with project finance to unlock new sources of compute. ... That's why a16z is excited to co-lead its Series A."
+    "coInvestors": [
+      "Azora",
+      "Altimeter",
+      "NVIDIA",
+      "the family office of Michael Dell",
+      "Matter Venture Partners"
+    ],
+    "sourceUrl": "https://www.businesswire.com/news/home/20260804493428/en/Volta-Emerges-From-Stealth-With-$10-Billion-AI-Lab-Partnership-and-$5-Billion-AI-Infrastructure-Program",
+    "sourceType": "press-release",
+    "evidence": "The company has also completed a Seed Round and a Series A valuing Volta at $2.4 billion, led by Azora, Andreessen Horowitz, Altimeter and NVIDIA, with participation from strategic investors including the family office of Michael Dell, and Matter Venture Partners."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Convex",
+    "announcedDate": "2026-08-05",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Developer Infrastructure",
+    "sectorEvidence": "a San Francisco, CA-based reactive backend platform",
+    "role": "participant",
+    "coInvestors": [
+      "Insight Partners",
+      "Etna Labs",
+      "Spark Capital"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/convex-raises-57m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Convex, a San Francisco, CA-based reactive backend platform, raised $57M in Series B financing.\n\nThe round was led by Insight Partners with participation from Etna Labs, a16z, and Spark Capital."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Hadrian",
+    "announcedDate": "2026-08-06",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "Advanced Manufacturing",
+    "sectorEvidence": "Hadrian, a Los Angeles, California-based developer of automated factories for aerospace and defense",
+    "role": null,
+    "coInvestors": [
+      "Lux Capital",
+      "WCM Investment Management",
+      "Washington Harbour Partners",
+      "Valor Equity Partners",
+      "137 Ventures",
+      "Baillie Gifford",
+      "1789 Capital",
+      "Morgan Stanley Wealth Management",
+      "Apollo",
+      "T. Rowe Price Associates, Inc.",
+      "CapitalG",
+      "Founders Fund",
+      "Altimeter",
+      "Construct Capital"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/hadrian-raises-1-37-billion-in-series-d-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Hadrian, a Los Angeles, California-based developer of automated factories for aerospace and defense, raised $1.37 Billion in Series D funding, at $7.87 Billion valuation. The round was co-led by WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures, and Baillie Gifford, with participation from 1789 Capital, Morgan Stanley Wealth Management, funds managed by Apollo, accounts advised by T. Rowe Price Associates, Inc., CapitalG, Andreessen Horowitz, Founders Fund, Lux Capital, Altimeter, Construct Capital, and existing investors."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Databricks",
+    "announcedDate": "2026-08-13",
+    "datePrecision": "day",
+    "round": "strategic funding round",
+    "sector": "Data and AI",
+    "sectorEvidence": "a San Francisco, CA-based Data and AI company",
+    "role": "participant",
+    "coInvestors": [
+      "Coatue",
+      "Blackstone",
+      "MGX",
+      "T. Rowe Price Associates, Inc.",
+      "T. Rowe Price Investment Management, Inc.",
+      "Sixth Street Growth",
+      "BOND",
+      "Clearlake Capital",
+      "Point72",
+      "Premji Invest",
+      "TPG",
+      "Dragoneer",
+      "Fidelity Management & Research Company",
+      "Franklin Templeton",
+      "GIC",
+      "Growth Equity at Goldman Sachs Alternatives",
+      "Insight Partners",
+      "J.P. Morgan Private Capital",
+      "Kinetic",
+      "Morgan Stanley Investment Management",
+      "NEA",
+      "Ontario Teachers' Pension Plan",
+      "Temasek",
+      "Thrive Capital",
+      "WCM Investment Management"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/databricks-closes-5-billion-strategic-funding-at-190-billion-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Databricks, a San Francisco, CA-based Data and AI company, closed a $5 billion strategic funding round at a $190 billion valuation.\n\nThe round was led by Coatue, along with Blackstone, MGX, accounts advised by T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., and new investor Sixth Street Growth. Other new investors included BOND, Clearlake Capital, Point72, Premji Invest, and TPG alongside existing investors Andreessen Horowitz, Dragoneer, Fidelity Management & Research Company, Franklin Templeton, GIC, Growth Equity at Goldman Sachs Alternatives, Insight Partners, J.P. Morgan Private Capital, Kinetic, Morgan Stanley Investment Management, NEA, Ontario Teachers' Pension Plan, Temasek, Thrive Capital, and WCM Investment Management."
   },
   {
     "firmSlug": "a16z",
@@ -1212,18 +1611,65 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Series A",
     "sector": "AI Evaluation",
-    "sectorEvidence": "AI evaluation startup Vals AI has secured $40 million in a Series A round valuing the company at $400 million, led by Andreessen Horowitz.",
+    "sectorEvidence": "The company focuses on providing independent benchmarks for artificial intelligence models, helping enterprises, labs, and governments measure model performance and ROI across various professional domains.",
     "role": "lead",
     "coInvestors": [
       "8VC",
-      "Pear VC",
-      "Bloomberg Beta",
+      "BloombergBeta",
       "HRT Ventures",
-      "Next Ladder"
+      "Next Ladder Ventures"
     ],
-    "sourceUrl": "https://cryptobriefing.com/vals-ai-40m-series-a-a16z/",
+    "sourceUrl": "https://www.thesaasnews.com/news/vals-ai-raises-40m-series-a/",
     "sourceType": "reputable-press",
-    "evidence": "AI evaluation startup Vals AI has secured $40 million in a Series A round valuing the company at $400 million, led by Andreessen Horowitz."
+    "evidence": "Vals AI, an artificial intelligence evaluation startup, has announced a $40 million Series A funding round at a $400 million valuation. The company focuses on providing independent benchmarks for artificial intelligence models, helping enterprises, labs, and governments measure model performance and ROI across various professional domains.\n\nThe round was led by a16z, with participation from existing investors 8VC and BloombergBeta, as well as new investors HRT Ventures and Next Ladder Ventures."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Yuno",
+    "announcedDate": "2026-08-13",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Payments",
+    "sectorEvidence": "a Bogotá, Colombia-based global payment orchestration platform provider",
+    "role": "participant",
+    "coInvestors": [
+      "Global PayTech Ventures",
+      "Tiger Global Management",
+      "QuantumLight Capital",
+      "Monashees",
+      "Kaszek",
+      "Endeavor Catalyst",
+      "Rasmal Ventures",
+      "GrowthX Capital",
+      "Further Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/yuno-raises-45m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Yuno, a Bogotá, Colombia-based global payment orchestration platform provider, raised $45m in Series B funding.\n\nThe round was led by Global PayTech Ventures, with participation from Andreessen Horowitz (a16z), Tiger Global Management, QuantumLight Capital, Monashees, Kaszek, and Endeavor Catalyst, and Rasmal Ventures, GrowthX Capital, and Further Ventures."
+  },
+  {
+    "firmSlug": "a16z",
+    "company": "Rillet",
+    "announcedDate": "2026-08-19",
+    "datePrecision": "day",
+    "round": "Series C",
+    "sector": "Financial Software",
+    "sectorEvidence": "a San Francisco, CA-based provider of an AI-native ERP platform for finance teams",
+    "role": "participant",
+    "coInvestors": [
+      "ICONIQ",
+      "Sequoia",
+      "Sequoia Global Equities",
+      "Bain Capital Ventures",
+      "Oak HC/FT",
+      "Battery Ventures",
+      "FirstMark",
+      "Scale Venture Partners",
+      "Creandum"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/rillet-raises-100m-in-series-c-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Rillet, a San Francisco, CA-based provider of an AI-native ERP platform for finance teams, raised $100M in Series C funding, at $1 Billion valuation.\n\nThe round was led by ICONIQ with participation from Sequoia, Andreessen Horowitz, Sequoia Global Equities, Bain Capital Ventures, Oak HC/FT, Battery Ventures, FirstMark, Scale Venture Partners, and Creandum."
   },
   {
     "firmSlug": "bessemer",
@@ -1761,44 +2207,77 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "bessemer",
+    "company": "QIZ Security",
+    "announcedDate": "2026-07-09",
+    "datePrecision": "day",
+    "round": "seed round",
+    "sector": "Cybersecurity",
+    "sectorEvidence": "QIZ is building the cryptographic posture management platform for the post-quantum era. The platform continuously discovers cryptographic assets across the full enterprise stack: cloud and on-premises, data in motion and at rest, applications, code, and networks.",
+    "role": "lead",
+    "coInvestors": [],
+    "sourceUrl": "https://www.bvp.com/news/backing-qiz-security-cryptographic-posture-management-for-the-post-quantum-era",
+    "sourceType": "firm-site",
+    "evidence": "Bessemer Venture Partners leads QIZ Security's $17 million seed round to help enterprises address and govern their cryptography ahead of “Q-Day.”"
+  },
+  {
+    "firmSlug": "bessemer",
     "company": "Fireworks",
     "announcedDate": "2026-07-16",
     "datePrecision": "day",
     "round": "Series D",
     "sector": "AI Infrastructure",
-    "sectorEvidence": "Fireworks is a platform that helps companies own the intelligence powering their products and operations.",
+    "sectorEvidence": "Fireworks is the frontier training and inference platform for open models.",
     "role": "participant",
-    "coInvestors": [
-      "Atreides Management",
-      "Index Ventures",
-      "TCV",
-      "Evantic Capital",
-      "Lightspeed Venture Partners",
-      "Nvidia",
-      "20VC",
-      "Menlo Ventures"
-    ],
-    "sourceUrl": "https://fireworks.ai/blog/series-d-announcement",
-    "sourceType": "company-announcement",
-    "evidence": "Today, Fireworks announced a $1.505 billion Series D at a $17.5 billion valuation, led by Atreides Management, Index Ventures, and TCV, with participation from Evantic Capital, Lightspeed Venture Partners, Nvidia, 20VC, Bessemer Venture Partners, Menlo Ventures, and others."
+    "coInvestors": [],
+    "sourceUrl": "https://www.bvp.com/news/fireworks-the-inference-layer-for-the-open-model-era",
+    "sourceType": "firm-site",
+    "evidence": "Bessemer Venture Partners joins Fireworks' $1.5B Series D, backing the leading training and inference platform for open models as the company crosses $1B in ARR."
+  },
+  {
+    "firmSlug": "bessemer",
+    "company": "30 Sundays",
+    "announcedDate": "2026-07-20",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Travel",
+    "sectorEvidence": "Instead of a static search bar, travelers get an AI travel expert with a human in the loop - one that designs a personalized itinerary and stays on call from the visa application to the flight home.",
+    "role": "lead",
+    "coInvestors": [],
+    "sourceUrl": "https://www.bvp.com/news/30-sundays-ai-powered-custom-travel-for-indian-couples",
+    "sourceType": "firm-site",
+    "evidence": "Bessemer Venture Partners leads 30 Sundays' $6.7M Series A to transform international travel with an AI travel agent"
   },
   {
     "firmSlug": "bessemer",
     "company": "Neo",
     "announcedDate": "2026-07-20",
     "datePrecision": "day",
-    "round": "Series A",
-    "sector": "Cybersecurity",
+    "round": "Seed",
+    "sector": "Enterprise Security",
     "sectorEvidence": "Neo, the Agentic Software Control company",
-    "role": "lead",
+    "role": null,
     "coInvestors": [
       "Andreessen Horowitz",
       "Craft Ventures",
       "Merlin Ventures"
     ],
-    "sourceUrl": "https://www.neo.ai/news/neo-launches-100m",
-    "sourceType": "company-announcement",
-    "evidence": "Neo, the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners"
+    "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/20/3329638/0/en/Neo-Launches-with-100M-to-Secure-AI-Software-Across-the-Enterprise.html",
+    "sourceType": "press-release",
+    "evidence": "Neo, the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Merlin Ventures."
+  },
+  {
+    "firmSlug": "bessemer",
+    "company": "Neo Security",
+    "announcedDate": "2026-07-20",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Cybersecurity",
+    "sectorEvidence": "Neo was built to address this challenge, and the Neo platform answers a CISO's three main questions: 1. What agentic software are employees using, and should it be allowed? 2. What is the security posture of the software discovered, and is it configured correctly? 3. How can I enforce guardrails and implement effective controls?",
+    "role": "lead",
+    "coInvestors": [],
+    "sourceUrl": "https://www.bvp.com/news/neo-security-securing-ai-agents-at-the-endpoint",
+    "sourceType": "firm-site",
+    "evidence": "Bessemer Venture Partners leads Neo Security's $100M Series A to build AI security for the endpoint, giving enterprises real visibility and control over their agents."
   },
   {
     "firmSlug": "bessemer",
@@ -1819,24 +2298,77 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "bessemer",
+    "company": "Sila",
+    "announcedDate": "2026-07-21",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "Battery Technology",
+    "sectorEvidence": "Sila, an Alameda, CA-based battery technology company",
+    "role": "participant",
+    "coInvestors": [
+      "Atreides Management",
+      "Sutter Hill Ventures",
+      "8VC",
+      "Matrix Partners",
+      "T. Rowe Price Associates, Inc"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/sila-raises-300m-in-private-equity-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Sila, an Alameda, CA-based battery technology company, raised $300M in a private equity funding. The round was led by Atreides Management, and Sutter Hill Ventures with participation 8VC, Bessemer Venture Partners, Matrix Partners, T. Rowe Price Associates, Inc, and other existing and new investors."
+  },
+  {
+    "firmSlug": "bessemer",
+    "company": "Genius AI",
+    "announcedDate": "2026-07-22",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "SMB Software",
+    "sectorEvidence": "Genius AI, a NYC-based provider of a technology platform for in-person service businesses",
+    "role": "participant",
+    "coInvestors": [
+      "Lux Capital",
+      "Imaginary Ventures",
+      "L Catterton Growth",
+      "2048 Ventures",
+      "StepStone Private Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/genius-ai-raises-44m-in-series-d-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Genius AI, a NYC-based provider of a technology platform for in-person service businesses, raised $44M in Series D financing, at $1.15 Billion valuation. The round was led by Lux Capital, with participation from Bessemer Venture Partners, Imaginary Ventures, L Catterton Growth, 2048 Ventures, StepStone Private Ventures, and other existing investors."
+  },
+  {
+    "firmSlug": "bessemer",
     "company": "Act Security",
     "announcedDate": "2026-07-28",
     "datePrecision": "day",
-    "round": "seed round",
+    "round": null,
     "sector": "Cybersecurity",
-    "sectorEvidence": "Act Security, an action-centric cloud security company, today emerged from stealth with $60 million in total funding and the launch of its cloud security platform.",
-    "role": "lead",
+    "sectorEvidence": "Act's platform is proactive: instead of surfacing more lists of findings, it eliminates the conditions that make those findings exploitable in the first place.",
+    "role": null,
+    "coInvestors": [],
+    "sourceUrl": "https://www.bvp.com/news/act-proactive-cloud-security",
+    "sourceType": "firm-site",
+    "evidence": "Bessemer Venture Partners backs Act Security from seed to Series A-company emerges from stealth with $60M to eliminate the access paths behind security breaches in the AI era."
+  },
+  {
+    "firmSlug": "bessemer",
+    "company": "ChipAgents",
+    "announcedDate": "2026-07-29",
+    "datePrecision": "day",
+    "round": "Series A2",
+    "sector": "Semiconductor Design AI",
+    "sectorEvidence": "ChipAgents, a San Jose, CA-based provider of an agentic AI platform for semiconductor design",
+    "role": null,
     "coInvestors": [
-      "Team8",
-      "Hetz Ventures",
-      "Claltech",
-      "Notable Capital",
-      "Startpoint Capital",
-      "SVCI"
+      "B Capital",
+      "Micron",
+      "MediaTek",
+      "Ericsson",
+      "ScOp"
     ],
-    "sourceUrl": "https://www.prnewswire.com/news-releases/act-security-launches-action-centric-cloud-security-platform-with-60-million-in-funding-302836148.html",
-    "sourceType": "press-release",
-    "evidence": "Act Security, an action-centric cloud security company, today emerged from stealth with $60 million in total funding and the launch of its cloud security platform. ... Since its founding in 2025, Act has raised a $20 million seed round led by Team8 and Bessemer Venture Partners with participation from Hetz Ventures and Claltech, and a $40 million Series A led by Notable Capital with participation from Startpoint Capital and SVCI."
+    "sourceUrl": "https://www.finsmes.com/2026/07/chipagents-raises-60m-in-series-a2-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "ChipAgents, a San Jose, CA-based provider of an agentic AI platform for semiconductor design, raised $60M in Series A2 funding.\n\nBackers included B Capital, Bessemer Venture Partners, Micron, MediaTek, Ericsson, and ScOp."
   },
   {
     "firmSlug": "bessemer",
@@ -1845,20 +2377,63 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Series B",
     "sector": "Cybersecurity",
-    "sectorEvidence": "Onyx Security, the AI control company",
+    "sectorEvidence": "Onyx builds a secure control plane that helps organizations discover, govern, and secure AI agents operating across SaaS, cloud, endpoints, and internal infrastructure.",
+    "role": "lead",
+    "coInvestors": [],
+    "sourceUrl": "https://www.bvp.com/news/onyx-security-defining-cybersecurity-in-the-agentic-era",
+    "sourceType": "firm-site",
+    "evidence": "Bessemer Venture Partners leads Onyx's $113M Series B to build the secure control plane for enterprise AI agents-a category poised to produce the largest cybersecurity company yet."
+  },
+  {
+    "firmSlug": "bessemer",
+    "company": "Sent",
+    "announcedDate": "2026-07-30",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Messaging Infrastructure",
+    "sectorEvidence": "Sent, a NYC-based provider of a unified messaging API platform",
+    "role": "participant",
+    "coInvestors": [
+      "Companyon Ventures",
+      "UIF",
+      "CP Overture"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/sent-raises-12m-in-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Sent, a NYC-based provider of a unified messaging API platform, raised $12M in Series A funding. The round was led by Companyon Ventures with participation from Bessemer Venture Partners, UIF, CP Overture, and others."
+  },
+  {
+    "firmSlug": "bessemer",
+    "company": "InRisk Labs",
+    "announcedDate": "2026-08-05",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Insurtech",
+    "sectorEvidence": "Technology-led risk and reinsurance platform InRisk Labs",
     "role": "lead",
     "coInvestors": [
-      "Cyberstarts",
-      "TCV",
-      "Conviction",
-      "FirstMark",
-      "Vintage",
-      "QuantumLight",
-      "G Squared"
+      "Northpoint Capital"
     ],
-    "sourceUrl": "https://www.businesswire.com/news/home/20260729713522/en/Onyx-Security-Raises-$113M-Series-B-to-Control-Advanced-AI-Quadrupling-Revenue-since-Stealth-Launch-Four-Months-Ago",
-    "sourceType": "press-release",
-    "evidence": "Onyx Security, the AI control company, announced a $113 million Series B funding round led by Bessemer Venture Partners, with participation from Cyberstarts, TCV, Conviction, FirstMark, Vintage, QuantumLight and G Squared."
+    "sourceUrl": "https://entrackr.com/news/inrisk-labs-raises-27-mn-in-series-a-round-led-by-bessemer-northpoint-capital-12230166",
+    "sourceType": "reputable-press",
+    "evidence": "Technology-led risk and reinsurance platform InRisk Labs has raised $27 million in a Series A funding round co-led by Bessemer Venture Partners and Northpoint Capital."
+  },
+  {
+    "firmSlug": "bessemer",
+    "company": "Malachyte",
+    "announcedDate": "2026-08-06",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "E-commerce Personalization",
+    "sectorEvidence": "Malachyte, a NYC-based provider of an intelligence platform developing real time individualization solutions",
+    "role": "lead",
+    "coInvestors": [
+      "Gradient Ventures",
+      "Harpoon Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/malachyte-raises-10m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Malachyte, a NYC-based provider of an intelligence platform developing real time individualization solutions, raised $10M in Seed funding. The round was co-led by Bessemer Venture Partners and Gradient Ventures with participation from Harpoon Ventures."
   },
   {
     "firmSlug": "bessemer",
@@ -1866,21 +2441,30 @@ const FIRM_DEALS = [
     "announcedDate": "2026-08-11",
     "datePrecision": "day",
     "round": "Series B",
-    "sector": "Healthcare",
-    "sectorEvidence": "Flagler Health, an AI-native platform for musculoskeletal (MSK) healthcare",
+    "sector": "Healthcare AI",
+    "sectorEvidence": "It orchestrates the full patient lifecycle across four synergistic product lines, starting with a triage product that matches each patient to the ideal provider and routes them to the right ancillary services, specialists, or procedures.",
     "role": "lead",
+    "coInvestors": [],
+    "sourceUrl": "https://www.bvp.com/news/flagler-health-the-ai-native-solution-for-musculoskeletal-care",
+    "sourceType": "firm-site",
+    "evidence": "Bessemer Venture Partners leads Flagler Health's $50M Series B to build the AI-powered operating system for the $400B MSK market."
+  },
+  {
+    "firmSlug": "bessemer",
+    "company": "Trajectory",
+    "announcedDate": "2026-08-17",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "AI Infrastructure",
+    "sectorEvidence": "Trajectory, a San Francisco, CA-based provider of an AI infrastructure and agent optimization platform",
+    "role": "participant",
     "coInvestors": [
-      "SignalFire",
-      "Alumni Ventures",
-      "Streamlined",
-      "186 Ventures",
-      "Proof VC",
-      "Tribeca Venture Partners",
-      "Offscript"
+      "Sequoia Capital",
+      "NVIDIA"
     ],
-    "sourceUrl": "https://www.timesargus.com/news/business/flagler-health-raises-50-million-series-b-to-build-the-ai-operating-system-for-musculoskeletal/article_969053ea-b6e3-5da9-8e3f-e93c090c70e8.html",
-    "sourceType": "press-release",
-    "evidence": "Flagler Health, an AI-native platform for musculoskeletal (MSK) healthcare, today announced it raised a $50 million Series B, bringing total funding raised to $63 million. ... The financing was led by Bessemer Venture Partners, with participation from SignalFire, Alumni Ventures, Streamlined, 186 Ventures, Proof VC, Tribeca Venture Partners, and Offscript."
+    "sourceUrl": "https://www.finsmes.com/2026/08/trajectory-raises-40m-in-series-a-funding-at-300m-post-money-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Trajectory, a San Francisco, CA-based provider of an AI infrastructure and agent optimization platform, raised $40m in Series A funding at a $300m post-money valuation. The round was led by Sequoia Capital, with participation from NVIDIA and Bessemer Venture Partners."
   },
   {
     "firmSlug": "bloomberg-beta",
@@ -2104,9 +2688,9 @@ const FIRM_DEALS = [
     "announcedDate": "2026-07-28",
     "datePrecision": "day",
     "round": "Seed",
-    "sector": "Real Estate Technology",
-    "sectorEvidence": "Antares Labs, a San Francisco, CA-based provider of an AI platform for real estate operations, raised $7.25M in Seed funding.",
-    "role": "participant",
+    "sector": "Real Estate Tech",
+    "sectorEvidence": "Antares Labs, a San Francisco, CA-based provider of an AI platform for real estate operations",
+    "role": null,
     "coInvestors": [
       "Fifth Wall",
       "Base10 Partners",
@@ -2114,7 +2698,71 @@ const FIRM_DEALS = [
     ],
     "sourceUrl": "https://www.finsmes.com/2026/07/antares-labs-raises-7-25m-in-seed-funding.html",
     "sourceType": "reputable-press",
-    "evidence": "Antares Labs, a San Francisco, CA-based provider of an AI platform for real estate operations, raised $7.25M in Seed funding. ... Backers included Fifth Wall, Base10 Partners, Bloomberg Beta, and Sandwith Ventures."
+    "evidence": "Antares Labs, a San Francisco, CA-based provider of an AI platform for real estate operations, raised $7.25M in Seed funding.\n\nBackers included Fifth Wall, Base10 Partners, Bloomberg Beta, and Sandwith Ventures."
+  },
+  {
+    "firmSlug": "bloomberg-beta",
+    "company": "Skan AI",
+    "announcedDate": "2026-08-12",
+    "datePrecision": "day",
+    "round": "Series C",
+    "sector": "Process Intelligence",
+    "sectorEvidence": "Skan AI, a San Jose, CA-based provider of an enterprise AI context graph platform",
+    "role": "participant",
+    "coInvestors": [
+      "Cathay Innovation",
+      "Dell Technologies Capital",
+      "Citi Ventures",
+      "State Farm Ventures",
+      "Wipro Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/skan-ai-raises-63m-in-series-c-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Skan AI, a San Jose, CA-based provider of an enterprise AI context graph platform, raised $63M in Series C funding.\n\nThe round was co-led by Cathay Innovation and Dell Technologies Capital with participation from Citi Ventures, Bloomberg Beta, State Farm Ventures, and Wipro Ventures."
+  },
+  {
+    "firmSlug": "bloomberg-beta",
+    "company": "Smack Technologies",
+    "announcedDate": "2026-08-18",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Defense Tech",
+    "sectorEvidence": "Smack Technologies, an Austin, TX-based provider of an AI platform for national security",
+    "role": "participant",
+    "coInvestors": [
+      "Costanoa Ventures",
+      "First In",
+      "Point72 Ventures",
+      "Geodesic Capital",
+      "Nomi Capital",
+      "Felicis",
+      "Sapphire Ventures",
+      "Scribble Ventures",
+      "Fortitude Ventures",
+      "Palumni VC"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/smack-technologies-raises-61m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Smack Technologies, an Austin, TX-based provider of an AI platform for national security, raised $61M in Series B financing.\n\nThe round was led by Costanoa Ventures and First In with participation from Point72 Ventures, Geodesic Capital, Nomi Capital, Felicis, Sapphire Ventures, Scribble Ventures, Fortitude Ventures, Bloomberg Beta, and Palumni VC."
+  },
+  {
+    "firmSlug": "bloomberg-beta",
+    "company": "Vals AI",
+    "announcedDate": "2026-08-18",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "AI Evaluation",
+    "sectorEvidence": "Vals AI, a San Francisco, CA-based provider of an artificial intelligence evaluation and model auditing platform",
+    "role": "participant",
+    "coInvestors": [
+      "a16z (Andreessen Horowitz)",
+      "8VC",
+      "HRT Ventures",
+      "Next Ladder Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/vals-ai-raises-40m-in-series-a-funding-at-400m-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Vals AI, a San Francisco, CA-based provider of an artificial intelligence evaluation and model auditing platform, raised $40m in Series A funding at a $400m valuation.\n\nThe round was led by a16z (Andreessen Horowitz), with participation from existing backers 8VC and Bloomberg Beta, alongside new institutional investors HRT Ventures and Next Ladder Ventures."
   },
   {
     "firmSlug": "dcvc",
@@ -2509,18 +3157,17 @@ const FIRM_DEALS = [
     "announcedDate": "2026-07-08",
     "datePrecision": "day",
     "round": "Series A",
-    "sector": "AI Training Infrastructure",
-    "sectorEvidence": "Prime Intellect, a San Francisco, California-based developer of an open-source decentralized AI training and reinforcement learning infrastructure platform",
-    "role": "participant",
+    "sector": "AI Infrastructure",
+    "sectorEvidence": "It spans the full stack of training, deploying and continuously improving models - compute, large-scale RL, environments, sandboxes, evals, and deployment.",
+    "role": null,
     "coInvestors": [
-      "Radical Ventures",
-      "NVIDIA Ventures",
       "Intel Capital",
-      "Iconiq"
+      "Radical Ventures",
+      "NVIDIA Ventures"
     ],
-    "sourceUrl": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
-    "sourceType": "reputable-press",
-    "evidence": "The massive round was led by Radical Ventures, with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq, and a long list of angel investors who are founders of notable companies, including Aravind Srinivas (Perplexity), Aaron Levie (Box), Winston Weinberg (Harvey), Jeff Wang (Cognition), and Brendan Foody (Mercor)."
+    "sourceUrl": "https://www.intelcapital.com/prime-intellect-the-full-stack-for-training-and-deploying-self-improving-agents/",
+    "sourceType": "firm-site",
+    "evidence": "Today, we’re proud to announce our investment in Prime Intellect’s $130M Series A led by Radical Ventures, with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors."
   },
   {
     "firmSlug": "dell-technologies-capital",
@@ -2544,23 +3191,43 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "dell-technologies-capital",
+    "company": "Fly.io",
+    "announcedDate": "2026-08-03",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "Cloud Infrastructure",
+    "sectorEvidence": "a San Francisco, CA-based provider of a connected cloud infrastructure platform designed for AI agents and applications",
+    "role": null,
+    "coInvestors": [
+      "Andreessen Horowitz",
+      "Intel Capital",
+      "EQT",
+      "Geodesic",
+      "YC"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/fly-io-raises-25m-in-series-d-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Fly.io, a San Francisco, CA-based provider of a connected cloud infrastructure platform designed for AI agents and applications, raised $25M in Series D financing.\n\nThe round was co-led by Dell Technologies Capital and Intel Capital, with participation from Andreessen Horowitz, EQT, Geodesic, and YC."
+  },
+  {
+    "firmSlug": "dell-technologies-capital",
     "company": "Skan AI",
     "announcedDate": "2026-08-12",
     "datePrecision": "day",
     "round": "Series C",
-    "sector": "Enterprise AI",
-    "sectorEvidence": "Process intelligence company Skan AI said today it raised $63 million in a Series C round to help further develop a platform that records how enterprise work actually gets done and feeds that record to artificial intelligence agents.",
+    "sector": "Process Intelligence",
+    "sectorEvidence": "Skan AI, the context graph of work for enterprise AI",
     "role": "lead",
     "coInvestors": [
       "Cathay Innovation",
       "Citi Ventures",
       "Bloomberg Beta",
-      "State Farm Ventures",
+      "State Farm Ventures®",
       "Wipro Ventures"
     ],
-    "sourceUrl": "https://www.prnewswire.com/news-releases/skan-ai-raises-63-million-to-give-enterprise-ai-the-context-its-missing-how-work-actually-gets-done-302849114.html",
-    "sourceType": "press-release",
-    "evidence": "Skan AI, the context graph of work for enterprise AI, today announced $63 million in funding co-led by Cathay Innovation and Dell Technologies Capital, with participation from Citi Ventures, Bloomberg Beta, State Farm Ventures®, and Wipro Ventures."
+    "sourceUrl": "https://www.skan.ai/in-the-news/skan-ai-raises-series-c-announcement",
+    "sourceType": "company-site",
+    "evidence": "Menlo Park, CALIF. - August 12, 2026 - Skan AI, the context graph of work for enterprise AI, today announced $63 million in funding co-led by Cathay Innovation and Dell Technologies Capital, with participation from Citi Ventures, Bloomberg Beta, State Farm Ventures®, and Wipro Ventures."
   },
   {
     "firmSlug": "elad-gil",
@@ -2922,6 +3589,27 @@ const FIRM_DEALS = [
     "evidence": "Cognition, a San Francisco, CA-based developer of autonomous AI software engineering agents, raised over $1 billion in a funding round at a $26 billion post-money valuation.\n\nThe round was co-led by Lux Capital and General Catalyst, with participation from 8VC, Ribbit Capital, Atreides, Layer Global, and returning backers including Founders Fund, Elad Gil, and Bain Capital Ventures."
   },
   {
+    "firmSlug": "elad-gil",
+    "company": "Cambridge Aerospace",
+    "announcedDate": "2026-08-10",
+    "datePrecision": "day",
+    "round": "Series C",
+    "sector": "Defense Tech",
+    "sectorEvidence": "Cambridge Aerospace, a Cambridge, UK-based provider of an air defence platform and low-cost interceptor systems for Allied forces",
+    "role": "participant",
+    "coInvestors": [
+      "DFJ Growth",
+      "Lux",
+      "Accel",
+      "Lakestar",
+      "Never Lift",
+      "Ora Global"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/cambridge-aerospace-raises-300m-in-series-c-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Cambridge Aerospace, a Cambridge, UK-based provider of an air defence platform and low-cost interceptor systems for Allied forces, raised $300M in Series C funding at $3.4 Billion valuation.\n\nThe round was led by DFJ Growth, with participation from Lux, Accel, Lakestar, Never Lift, Ora Global, and Elad Gil & Co."
+  },
+  {
     "firmSlug": "index-ventures",
     "company": "ClickHouse",
     "announcedDate": "2026-01-16",
@@ -3230,12 +3918,78 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "index-ventures",
+    "company": "TwelveLabs",
+    "announcedDate": "2026-07-01",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Video AI",
+    "sectorEvidence": "a San Francisco, CA-based video intelligence company",
+    "role": "participant",
+    "coInvestors": [
+      "NEA",
+      "NAVER Ventures",
+      "Amazon",
+      "Radical Ventures",
+      "Korea Investment Partners",
+      "Quadrille Capital",
+      "Red Bull Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/twelvelabs-raises-100m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "TwelveLabs, a San Francisco, CA-based video intelligence company, raised $100m in Series B funding.\n\nThe round was co-led by NEA and NAVER Ventures with participation from Amazon, Radical Ventures, Korea Investment Partners, Index Ventures, Quadrille Capital, and Red Bull Ventures."
+  },
+  {
+    "firmSlug": "index-ventures",
+    "company": "Oratomic",
+    "announcedDate": "2026-07-07",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Quantum Computing",
+    "sectorEvidence": "a Pasadena, CA-based developer of fault-tolerant quantum computing architectures and quantum-error correction systems",
+    "role": "participant",
+    "coInvestors": [
+      "ARCH Venture Partners",
+      "Spark Capital",
+      "Khosla Ventures",
+      "Bezos Expeditions",
+      "General Catalyst",
+      "Lowercarbon Capital",
+      "Bain Capital Ventures",
+      "Formation 8",
+      "Nebular",
+      "David and Scott Aaronson"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/oratomic-raises-300m-in-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Oratomic, a Pasadena, CA-based developer of fault-tolerant quantum computing architectures and quantum-error correction systems, raised $300m in Series A funding.\n\nThe round was co-led by ARCH Venture Partners, Spark Capital, and Khosla Ventures, with participation from Bezos Expeditions, Index Ventures, General Catalyst, Lowercarbon Capital, Bain Capital Ventures, Formation 8, Nebular, and prominent quantum computing researchers David and Scott Aaronson."
+  },
+  {
+    "firmSlug": "index-ventures",
+    "company": "Marker",
+    "announcedDate": "2026-07-09",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "Productivity Software",
+    "sectorEvidence": "a London, UK-based developer of an AI-native word processor and collaborative authoring platform",
+    "role": "lead",
+    "coInvestors": [
+      "LocalGlobe",
+      "Steve Newman",
+      "Cal Henderson",
+      "Thomas Wolf"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/marker-raises-13m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Marker, a London, UK-based developer of an AI-native word processor and collaborative authoring platform, emerged from stealth mode after securing $13m in seed funding.\n\nThe round was led by Index Ventures, with participation from LocalGlobe and a syndicate of strategic software angels-including Steve Newman, Cal Henderson, and Thomas Wolf."
+  },
+  {
+    "firmSlug": "index-ventures",
     "company": "Chai Discovery",
     "announcedDate": "2026-07-14",
     "datePrecision": "day",
     "round": "Series C",
-    "sector": "Biotech",
-    "sectorEvidence": "Chai's models are designed to reason about biological structure and function, generate new molecular designs from scratch, and help pharma teams pursue targets that traditional discovery methods have struggled to reach.",
+    "sector": "AI Drug Discovery",
+    "sectorEvidence": "a San Francisco, CA-based company engineering AI models to discover new molecules",
     "role": "lead",
     "coInvestors": [
       "Kleiner Perkins",
@@ -3244,7 +3998,7 @@ const FIRM_DEALS = [
       "Bain Capital Ventures",
       "Battery Ventures",
       "Baillie Gifford",
-      "BDT & MSD",
+      "BDT and MSD",
       "Sapphire Ventures",
       "Avra Capital",
       "Thrive Capital",
@@ -3257,26 +4011,69 @@ const FIRM_DEALS = [
       "Lachy Groom",
       "Yosemite"
     ],
-    "sourceUrl": "https://www.biospace.com/press-releases/chai-discovery-announces-400m-series-c-to-advance-ai-driven-molecular-design",
+    "sourceUrl": "https://www.finsmes.com/2026/07/chai-discovery-raises-400m-in-series-c-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Chai Discovery, a San Francisco, CA-based company engineering AI models to discover new molecules, raised $400M in Series C funding.\n\nThe round, which valued the company at $3.8B, was led by Index Ventures alongside Kleiner Perkins, Sequoia Capital and Dimension with participation form Bain Capital Ventures, Battery Ventures, Baillie Gifford, BDT and MSD, Sapphire Ventures, Avra Capital, Thrive Capital, OpenAI, Oak HC/FT, Menlo Ventures, General Catalyst, Glade Brook, Avenir, Lachy Groom, and Yosemite."
+  },
+  {
+    "firmSlug": "index-ventures",
+    "company": "Fireworks",
+    "announcedDate": "2026-07-16",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "AI Inference Platform",
+    "sectorEvidence": "Fireworks, the platform for specialized intelligence, enabling companies like Uber and Shopify to train and serve custom models",
+    "role": "lead",
+    "coInvestors": [
+      "Atreides Management",
+      "TCV",
+      "Evantic",
+      "Lightspeed Venture Partners",
+      "NVIDIA"
+    ],
+    "sourceUrl": "https://www.businesswire.com/news/home/20260716264405/en/Fireworks-Raises-a-$1.5-Billion-Series-D-to-Lead-the-Specialized-Intelligence-Revolution",
     "sourceType": "press-release",
-    "evidence": "Chai Discovery Announces $400M Series C to Advance AI-Driven Molecular Design ... The round, which values the company at $3.8B, was led by Index Ventures alongside Kleiner Perkins, Sequoia Capital and Dimension."
+    "evidence": "Fireworks, the platform for specialized intelligence, enabling companies like Uber and Shopify to train and serve custom models, today announced a $1.505 billion Series D round at a $17.5 billion valuation. The round was led by Atreides Management, Index Ventures, and TCV, with participation from existing investors Evantic, Lightspeed Venture Partners, and NVIDIA."
+  },
+  {
+    "firmSlug": "index-ventures",
+    "company": "Glow",
+    "announcedDate": "2026-07-22",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "Cybersecurity",
+    "sectorEvidence": "Glow gives security teams control over everything that runs on the endpoint. Specialized AI agents continuously map the environment, analyze risk in real time, and enforce policies automatically.",
+    "role": null,
+    "coInvestors": [
+      "Sequoia",
+      "Cyberstarts",
+      "Greenoaks",
+      "Redpoint Ventures",
+      "Swish Ventures",
+      "Lux Capital",
+      "Operator Collective",
+      "Holly Ventures"
+    ],
+    "sourceUrl": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+    "sourceType": "company-site",
+    "evidence": "TEL AVIV, Israel and PALO ALTO, Calif., July 22, 2026 - Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach. The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures."
   },
   {
     "firmSlug": "index-ventures",
     "company": "Enigma",
     "announcedDate": "2026-07-27",
     "datePrecision": "day",
-    "round": "seed",
+    "round": "Seed",
     "sector": "Robotics",
-    "sectorEvidence": "Enigma is launching a large-scale experiment that allows anyone in the world to interact online with more than 100 of its proprietary AI robots.",
+    "sectorEvidence": "the less-than-one-year-old startup wants to study how humans engage with robots in hopes that these interactions will lead to intuitive interfaces and possibly a different kind of robotic brain",
     "role": "lead",
     "coInvestors": [
       "Ribbit Capital",
-      "Sarah Guo of Conviction Partners"
+      "Conviction Partners"
     ],
     "sourceUrl": "https://techcrunch.com/2026/07/27/enigma-raises-70m-to-make-controlling-a-robot-as-easy-as-adjusting-the-volume/",
     "sourceType": "reputable-press",
-    "evidence": "Enigma raised a $71 million seed round led by Index Ventures and Ribbit Capital, with participation from Sarah Guo of Conviction Partners."
+    "evidence": "To finance its mission, Enigma raised a $71 million seed round led by Index Ventures and Ribbit Capital, with participation from Sarah Guo of Conviction Partners."
   },
   {
     "firmSlug": "index-ventures",
@@ -3284,8 +4081,8 @@ const FIRM_DEALS = [
     "announcedDate": "2026-07-30",
     "datePrecision": "day",
     "round": "Series B",
-    "sector": "Enterprise AI",
-    "sectorEvidence": "turning generative agents into a way for the world's biggest enterprises to test decisions before making them",
+    "sector": "AI Simulation",
+    "sectorEvidence": "a San Francisco, California-based developer of AI-powered human behavior foundation models and predictive simulation software",
     "role": "participant",
     "coInvestors": [
       "Greenoaks",
@@ -3296,18 +4093,18 @@ const FIRM_DEALS = [
       "CVS Health Ventures",
       "Definition"
     ],
-    "sourceUrl": "https://www.indexventures.com/perspectives/simulating-society-at-scale-our-investment-in-similes-200m-series-b/",
-    "sourceType": "firm-announcement",
-    "evidence": "Today we're thrilled to double down on our investment in Simile as they announce their $200 million Series B."
+    "sourceUrl": "https://www.finsmes.com/2026/07/simile-raises-200m-in-series-b-funding-at-2-billion-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Simile, a San Francisco, California-based developer of AI-powered human behavior foundation models and predictive simulation software, raised $200m in Series B funding at a $2 billion valuation.\n\nThe round was led by Greenoaks, with participation from returning investor Index Ventures, alongside follow-on backing from Hanabi, Bain Capital Ventures, A*, Factory, and CVS Health Ventures, and new participation from Definition."
   },
   {
     "firmSlug": "index-ventures",
     "company": "Intelligence",
     "announcedDate": "2026-08-03",
     "datePrecision": "day",
-    "round": "seed",
+    "round": "Seed",
     "sector": "AI Benchmarking",
-    "sectorEvidence": "Intelligence, a San Francisco, California-based developer of a crowdsourced benchmarking platform for AI-generated visual design operating as Design Arena, raised $7.9m in seed funding.",
+    "sectorEvidence": "a San Francisco, California-based developer of a crowdsourced benchmarking platform for AI-generated visual design operating as Design Arena",
     "role": "lead",
     "coInvestors": [
       "Conviction",
@@ -3316,7 +4113,25 @@ const FIRM_DEALS = [
     ],
     "sourceUrl": "https://www.finsmes.com/2026/08/intelligence-raises-7-9m-in-seed-funding.html",
     "sourceType": "reputable-press",
-    "evidence": "Intelligence, a San Francisco, California-based developer of a crowdsourced benchmarking platform for AI-generated visual design operating as Design Arena, raised $7.9m in seed funding. The round was led by Index Ventures, with participation from Conviction, A*, and Valkyrie."
+    "evidence": "Intelligence, a San Francisco, California-based developer of a crowdsourced benchmarking platform for AI-generated visual design operating as Design Arena, raised $7.9m in seed funding.\n\nThe round was led by Index Ventures, with participation from Conviction, A*, and Valkyrie."
+  },
+  {
+    "firmSlug": "index-ventures",
+    "company": "Wordsmith",
+    "announcedDate": "2026-08-05",
+    "datePrecision": "day",
+    "round": "Series B extension",
+    "sector": "Legal Tech",
+    "sectorEvidence": "an Edinburgh, Scotland, UK-based provider of an AI platform built exclusively for in-house legal teams",
+    "role": "participant",
+    "coInvestors": [
+      "Intact Private Capital",
+      "FT Ventures",
+      "Highland Europe"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/wordsmith-raises-14m-in-series-b-extension-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Wordsmith, an Edinburgh, Scotland, UK-based provider of an AI platform built exclusively for in-house legal teams, raised $14M in Series B extension funding.\n\nThe round was led by Intact Private Capital with participation from FT Ventures, Highland Europe, and Index Ventures."
   },
   {
     "firmSlug": "initialized-capital",
@@ -3747,22 +4562,44 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "intel-capital",
+    "company": "OXMIQ Labs",
+    "announcedDate": "2026-07-01",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Semiconductors",
+    "sectorEvidence": "OXMIQ Labs Inc., a unified GPU and AI architecture company founded by Raja Koduri",
+    "role": "participant",
+    "coInvestors": [
+      "Fundomo",
+      "Samsung Catalyst Fund",
+      "MediaTek",
+      "AM Intelligence Labs",
+      "Pegatron Venture Capital",
+      "CDIB-TEN",
+      "Darwin Ventures",
+      "Morgan Creek Digital"
+    ],
+    "sourceUrl": "https://www.intelcapital.com/oxmiq-raises-35-million-to-scale-oxcoretm-architecture/",
+    "sourceType": "firm-site",
+    "evidence": "Intel Capital rounds out the group as a “strategic IP partner, adding to OXMIQ’s design and engineering depth.”"
+  },
+  {
+    "firmSlug": "intel-capital",
     "company": "Prime Intellect",
     "announcedDate": "2026-07-08",
     "datePrecision": "day",
     "round": "Series A",
     "sector": "AI Infrastructure",
-    "sectorEvidence": "Prime Intellect, a startup that provides computing power and specialized software tools that help companies build AI agents",
+    "sectorEvidence": "It spans the full stack of training, deploying and continuously improving models - compute, large-scale RL, environments, sandboxes, evals, and deployment.",
     "role": "participant",
     "coInvestors": [
       "Radical Ventures",
-      "Nvidia Ventures",
-      "Dell Technologies Capital",
-      "Iconiq"
+      "NVIDIA Ventures",
+      "Dell Technologies Capital"
     ],
-    "sourceUrl": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
-    "sourceType": "reputable-press",
-    "evidence": "Prime Intellect, a startup that provides computing power and specialized software tools that help companies build AI agents, has raised a $130 million Series A ... led by Radical Ventures, with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq, and a long list of angel investors"
+    "sourceUrl": "https://www.intelcapital.com/prime-intellect-the-full-stack-for-training-and-deploying-self-improving-agents/",
+    "sourceType": "firm-site",
+    "evidence": "Today, we’re proud to announce our investment in Prime Intellect’s $130M Series A led by Radical Ventures, with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors."
   },
   {
     "firmSlug": "intel-capital",
@@ -3770,7 +4607,7 @@ const FIRM_DEALS = [
     "announcedDate": "2026-07-24",
     "datePrecision": "day",
     "round": "Series D",
-    "sector": "AI Infrastructure",
+    "sector": "Cloud Infrastructure",
     "sectorEvidence": "Fly.io builds computers for agents - connected infrastructure designed for AI agents and the applications they build.",
     "role": "lead",
     "coInvestors": [
@@ -3781,7 +4618,7 @@ const FIRM_DEALS = [
       "YC"
     ],
     "sourceUrl": "https://www.intelcapital.com/fly-io-doubles-down-on-computers-for-agents-with-25m-to-deliver-the-next-generation-of-ai-infrastructure/",
-    "sourceType": "press-release",
+    "sourceType": "firm-site",
     "evidence": "To accelerate this opportunity, Fly.io also announced $25 million in Series D funding co-led by Dell Technologies Capital and Intel Capital, with participation from Andreessen Horowitz, EQT, Geodesic, and YC."
   },
   {
@@ -3817,7 +4654,7 @@ const FIRM_DEALS = [
     "announcedDate": "2026-08-03",
     "datePrecision": "day",
     "round": "Series C",
-    "sector": "Cybersecurity",
+    "sector": "AI Security",
     "sectorEvidence": "Zenity, the AI security and governance platform purpose-built for AI agents",
     "role": "participant",
     "coInvestors": [
@@ -3831,8 +4668,39 @@ const FIRM_DEALS = [
       "DTCP"
     ],
     "sourceUrl": "https://www.intelcapital.com/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agent/",
-    "sourceType": "press-release",
-    "evidence": "NEW YORK, Aug, 3, 2026 - Zenity, the AI security and governance platform purpose-built for AI agents, today announced a $125 million Series C led by Norwest. ... New investors Qumra Capital, SoftBank Vision Fund 2, Hitachi Ventures and LG Technology Ventures joined the round, alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital."
+    "sourceType": "firm-site",
+    "evidence": "NEW YORK, Aug, 3, 2026 – Zenity, the AI security and governance platform purpose-built for AI agents, today announced a $125 million Series C led by Norwest. The investment will accelerate Zenity’s global expansion, platform innovation and ability to meet rapidly growing enterprise demand for AI agent security. Trusted by some of the world’s largest enterprises, Zenity has spent years helping organizations securely adopt AI while the rest of the industry was still focused primarily on protecting models and individual prompts. New investors Qumra Capital, SoftBank Vision Fund 2, Hitachi Ventures and LG Technology Ventures joined the round, alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital."
+  },
+  {
+    "firmSlug": "intel-capital",
+    "company": "Higgsfield",
+    "announcedDate": "2026-08-19",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Generative Media",
+    "sectorEvidence": "Higgsfield is an AI-native multimedia content creation platform for creators, marketers, brands, agencies, and studios.",
+    "role": "participant",
+    "coInvestors": [
+      "DST Global",
+      "Tribe Capital",
+      "Growth Equity at Goldman Sachs Alternatives",
+      "Smash Capital",
+      "Fifth Wall",
+      "Valor Capital",
+      "Liberty Global Tech Ventures",
+      "Mirae Asset Capital",
+      "NTT DOCOMO Ventures",
+      "Accel",
+      "Menlo Ventures",
+      "AI Capital Partners (Alpha Intelligence Capital’s US-based fund)",
+      "GFT Ventures",
+      "Capra Ventures",
+      "BAM Corner Point",
+      "BroadLight Capital"
+    ],
+    "sourceUrl": "https://www.intelcapital.com/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million/",
+    "sourceType": "firm-site",
+    "evidence": "Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, and NTT DOCOMO Ventures. Existing investors also participated in the Series B, including Accel, Menlo Ventures, AI Capital Partners (Alpha Intelligence Capital’s US-based fund), GFT Ventures, Capra Ventures, BAM Corner Point and BroadLight Capital. Strategic investments were also made by industry leaders spanning compute, connectivity, distribution, media and advertising reflecting a shared conviction that Higgsfield’s platform will reshape and power the next generation of visual media."
   },
   {
     "firmSlug": "khosla-ventures",
@@ -4565,12 +5433,149 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "khosla-ventures",
+    "company": "Norm Ai",
+    "announcedDate": "2026-07-07",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "Legal AI",
+    "sectorEvidence": "Norm Ai, a NYC-based company that builds agentic law for high-stakes work by bringing AI engineers and attorneys together to embed law into AI agents",
+    "role": "lead",
+    "coInvestors": [
+      "Blackstone",
+      "Bain Capital Ventures",
+      "Craft Ventures",
+      "Coatue",
+      "Vanguard",
+      "New York Life",
+      "TIAA",
+      "Tony James",
+      "Jeff Hammes",
+      "Fenwick LLP"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/norm-ai-raises-120m-at-1-2-billion-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Norm Ai, a NYC-based company that builds agentic law for high-stakes work by bringing AI engineers and attorneys together to embed law into AI agents, raised $120M, at $1.2 Billion valuation. The round was led by Khosla Ventures, with participation from Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, Tony James, Jeff Hammes, and Fenwick LLP."
+  },
+  {
+    "firmSlug": "khosla-ventures",
+    "company": "Oratomic",
+    "announcedDate": "2026-07-07",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Quantum Computing",
+    "sectorEvidence": "Oratomic, a Pasadena, CA-based developer of fault-tolerant quantum computing architectures and quantum-error correction systems",
+    "role": "lead",
+    "coInvestors": [
+      "ARCH Venture Partners",
+      "Spark Capital",
+      "Bezos Expeditions",
+      "Index Ventures",
+      "General Catalyst",
+      "Lowercarbon Capital",
+      "Bain Capital Ventures",
+      "Formation 8",
+      "Nebular",
+      "David and Scott Aaronson"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/oratomic-raises-300m-in-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Oratomic, a Pasadena, CA-based developer of fault-tolerant quantum computing architectures and quantum-error correction systems, raised $300m in Series A funding. The round was co-led by ARCH Venture Partners, Spark Capital, and Khosla Ventures, with participation from Bezos Expeditions, Index Ventures, General Catalyst, Lowercarbon Capital, Bain Capital Ventures, Formation 8, Nebular, and prominent quantum computing researchers David and Scott Aaronson."
+  },
+  {
+    "firmSlug": "khosla-ventures",
+    "company": "Skapion",
+    "announcedDate": "2026-07-13",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "Counter-Drone Defense",
+    "sectorEvidence": "Skapion, a Washington, D.C.-based developer of autonomous counter-drone swarm defense architectures",
+    "role": "lead",
+    "coInvestors": [
+      "UP.Partners",
+      "Fusion VC",
+      "Stratos Ventures",
+      "TBD VC",
+      "q Fund"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/skapion-raises-36m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Skapion, a Washington, D.C.-based developer of autonomous counter-drone swarm defense architectures, raised $36m in seed funding. The round was co-led by UP.Partners and Khosla Ventures, with participation from early-stage backers Fusion VC, Stratos Ventures, TBD VC, and q Fund."
+  },
+  {
+    "firmSlug": "khosla-ventures",
+    "company": "Singularity",
+    "announcedDate": "2026-07-14",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Defense Tech",
+    "sectorEvidence": "Singularity, a Los Angeles, CA-based defense tech company",
+    "role": "lead",
+    "coInvestors": [
+      "Felicis",
+      "AE Ventures",
+      "NEA",
+      "Long Journey",
+      "Harpoon",
+      "Menlo Ventures",
+      "Y Combinator",
+      "Decisive Point",
+      "New Vista",
+      "Sunflower",
+      "Soma",
+      "General (Ret.) James McConville",
+      "General Jim Dickinson",
+      "Major General (Ret.) Volodymyr Havrylov"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/singularity-raises-80m-in-series-a-at-400m-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Singularity, a Los Angeles, CA-based defense tech company, launched with $80m Series A funding at a $400m valuation. The round was led by Khosla Ventures and Felicis, with participation from seed investors AE Ventures and NEA, as well as Long Journey, Harpoon, Menlo Ventures, Y Combinator, Decisive Point, New Vista, Sunflower, and Soma, as well as dozens of recognized leaders from industry, the military, and Congress, including former U.S. Army Chief of Staff General (Ret.) James McConville, former Commander of United States Space Command General Jim Dickinson, and former Deputy Minister of Defense of Ukraine Major General (Ret.) Volodymyr Havrylov."
+  },
+  {
+    "firmSlug": "khosla-ventures",
+    "company": "State Affairs",
+    "announcedDate": "2026-07-14",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "News Media",
+    "sectorEvidence": "State Affairs, a Washington, DC-based technology company combining daily exclusive reporting, original data gathering and AI",
+    "role": null,
+    "coInvestors": [
+      "Founders Fund",
+      "Tru Arrow Partners",
+      "Alumni Ventures",
+      "Marcus Brauchli",
+      "Alex Mather and Adam Hansmann",
+      "Richard Sarnoff"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/state-affairs-raises-70m-in-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "State Affairs, a Washington, DC-based technology company combining daily exclusive reporting, original data gathering and AI, raised $70M in total funding. Investors included Founders Fund, Khosla Ventures, Tru Arrow Partners, Alumni Ventures, Marcus Brauchli, Alex Mather and Adam Hansmann, and Richard Sarnoff."
+  },
+  {
+    "firmSlug": "khosla-ventures",
+    "company": "Monumental",
+    "announcedDate": "2026-07-15",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Construction Robotics",
+    "sectorEvidence": "Monumental, an Amsterdam, The Netherlands-based tech company automating construction with robotics and software",
+    "role": "lead",
+    "coInvestors": [
+      "Hummingbird",
+      "Plural"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/monumental-raises-32m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Monumental, an Amsterdam, The Netherlands-based tech company automating construction with robotics and software, raised $32m in Series B funding. The round was led by Khosla Ventures, with participation from existing investors Hummingbird, Plural, and others."
+  },
+  {
+    "firmSlug": "khosla-ventures",
     "company": "Bunkerhill Health",
     "announcedDate": "2026-07-16",
     "datePrecision": "day",
     "round": "Series B",
     "sector": "Healthcare AI",
-    "sectorEvidence": "Bunkerhill's platform, Carebricks, lets hospitals and health systems turn their own ideas into AI agents that work across clinical, operational, and administrative domains, from reviewing cardiology imaging for early signs of heart disease and identifying patients who need follow-up care to navigating prior authorizations and automating registry management.",
+    "sectorEvidence": "Bunkerhill Health, a San Francisco, CA-based provider of AI-powered agent healthcare systems",
     "role": "lead",
     "coInvestors": [
       "Sequoia Capital",
@@ -4578,9 +5583,9 @@ const FIRM_DEALS = [
       "Optum Ventures",
       "Y Combinator"
     ],
-    "sourceUrl": "https://www.bunkerhillhealth.com/resources/series-b-announcement",
-    "sourceType": "company-announcement",
-    "evidence": "SAN FRANCISCO - July 16, 2026 - Bunkerhill Health, the agentic AI platform health systems use to turn their best ideas into reality, today announced the close of its Series B funding round, led by Khosla Ventures, with continued participation from Sequoia Capital, Felicis, Optum Ventures, and Y Combinator."
+    "sourceUrl": "https://www.finsmes.com/2026/07/bunkerhill-health-raises-55m-total-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Bunkerhill Health, a San Francisco, CA-based provider of AI-powered agent healthcare systems, raised an undisclosed amount in Series B funding. The round was led by Khosla Ventures, with continued participation from Sequoia Capital, Felicis, Optum Ventures, and Y Combinator."
   },
   {
     "firmSlug": "khosla-ventures",
@@ -4605,6 +5610,28 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "khosla-ventures",
+    "company": "Emergent",
+    "announcedDate": "2026-07-20",
+    "datePrecision": "day",
+    "round": "Series C",
+    "sector": "AI Software Development",
+    "sectorEvidence": "Emergent, a San Francisco, CA-based provider of an AI software creation platform",
+    "role": "participant",
+    "coInvestors": [
+      "Creaegis",
+      "MNI Ventures",
+      "Claypond Capital",
+      "Sentinel Global",
+      "SoftBank Vision Fund 2",
+      "Lightspeed",
+      "Y Combinator"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/emergent-raises-130m-in-series-c-funding-at-1-5-billion-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Emergent, a San Francisco, CA-based provider of an AI software creation platform, raised $130M in Series C funding, at $1.5 Billion valuation. The round was led by Creaegis, MNI Ventures, Claypond Capital and Sentinel Global, and participation from Khosla Ventures, SoftBank Vision Fund 2, Lightspeed, and Y Combinator."
+  },
+  {
+    "firmSlug": "khosla-ventures",
     "company": "Twenty",
     "announcedDate": "2026-07-20",
     "datePrecision": "day",
@@ -4619,22 +5646,62 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "khosla-ventures",
+    "company": "Twenty",
+    "announcedDate": "2026-07-21",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "Cyber Warfare",
+    "sectorEvidence": "Twenty, an Arlington, VA-based cyber warfare startup",
+    "role": null,
+    "coInvestors": [],
+    "sourceUrl": "https://www.finsmes.com/2026/07/twenty-receives-30m-investment-from-khosla-ventures.html",
+    "sourceType": "reputable-press",
+    "evidence": "Twenty, an Arlington, VA-based cyber warfare startup, received a $30M investment from Khosla Ventures, at $1.2 Billion Valuation. The raise followed the recently announced $100M Series B at a $1 Billion valuation led by Accel."
+  },
+  {
+    "firmSlug": "khosla-ventures",
     "company": "Dili",
     "announcedDate": "2026-07-30",
     "datePrecision": "day",
     "round": "Series A",
-    "sector": "Construction Compliance",
-    "sectorEvidence": "The platform automates prevailing wage and apprenticeship monitoring, Davis-Bacon compliance, certified payroll review, and audit-ready reporting, checking 100% of project data in real time.",
+    "sector": "Compliance Software",
+    "sectorEvidence": "Dili, a NYC-based provider of an AI-native compliance platform for the industries powering America's infrastructure buildout",
     "role": "lead",
     "coInvestors": [
-      "Y Combinator's Garry Tan",
+      "Y Combinator",
       "Allianz",
-      "Brick and Mortar Ventures' Darren Bechtel",
+      "Brick and Mortar Ventures",
       "Rebel Fund"
     ],
-    "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/30/3336377/0/en/dili-raises-21-7m-from-khosla-ventures-to-bring-ai-powered-assurance-to-america-s-infrastructure-boom.html",
-    "sourceType": "press-release",
-    "evidence": "Dili announced $21.7 million in total funding, including a $15 million Series A led by Khosla Ventures."
+    "sourceUrl": "https://www.finsmes.com/2026/07/dili-raises-15m-in-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Dili, a NYC-based provider of an AI-native compliance platform for the industries powering America's infrastructure buildout, raised $15m in Series A funding. The round, which brought total funding to date to $21.7m, was led by Khosla Ventures, with participation from Y Combinator, Allianz, Brick and Mortar Ventures, and Rebel Fund."
+  },
+  {
+    "firmSlug": "khosla-ventures",
+    "company": "Ellis",
+    "announcedDate": "2026-07-31",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "Private Credit Software",
+    "sectorEvidence": "Ellis, a NYC-based provider of an AI-native operations platform for private credit",
+    "role": "participant",
+    "coInvestors": [
+      "First Round Capital",
+      "645 Ventures",
+      "Harlem Capital",
+      "Slow Ventures",
+      "Wilshire Lane",
+      "Westbound",
+      "Collide Capital",
+      "Gallery Ventures",
+      "Mellody Hobson",
+      "Josh Kushner",
+      "Immad Akhund"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/ellis-raises-10m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Ellis, a NYC-based provider of an AI-native operations platform for private credit, raised $10M in Seed funding. The round was led by First Round Capital with participation from 645 Ventures, Harlem Capital, Khosla Ventures, Slow Ventures, Wilshire Lane, Westbound, Collide Capital, Gallery Ventures, Mellody Hobson, Josh Kushner, and Immad Akhund."
   },
   {
     "firmSlug": "khosla-ventures",
@@ -4666,20 +5733,100 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "khosla-ventures",
+    "company": "Mariana Minerals",
+    "announcedDate": "2026-08-04",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Critical Minerals",
+    "sectorEvidence": "a San Francisco, CA-based provider of a software-first, vertically integrated critical minerals platform",
+    "role": null,
+    "coInvestors": [
+      "Andreessen Horowitz",
+      "Breakthrough Energy Ventures",
+      "Greenoaks",
+      "Halo Fund",
+      "Pax Ventures",
+      "StepStone Group",
+      "BHP Ventures",
+      "Washington Harbour Partners",
+      "Greycroft",
+      "General Innovation Capital Partners",
+      "Mitsubishi Corporation",
+      "In-Q-Tel (IQT)",
+      "Earthshot Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/mariana-minerals-raises-310m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Mariana Minerals, a San Francisco, CA-based provider of a software-first, vertically integrated critical minerals platform, raised $310M in Series B financing.\n\nThe round was led by Khosla Ventures with participation from Andreessen Horowitz (a16z), Breakthrough Energy Ventures, Greenoaks, Halo Fund, Pax Ventures, StepStone Group, BHP Ventures, Washington Harbour Partners, Greycroft, General Innovation Capital Partners, Mitsubishi Corporation, In-Q-Tel (IQT), Earthshot Ventures, and additional strategic capital partners."
+  },
+  {
+    "firmSlug": "khosla-ventures",
+    "company": "WindBorne Systems",
+    "announcedDate": "2026-08-05",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Weather Intelligence",
+    "sectorEvidence": "WindBorne Systems, a Palo Alto, CA-based provider of a weather intelligence platform",
+    "role": null,
+    "coInvestors": [
+      "Galvanize",
+      "TransLink Capital",
+      "Lux Capital"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/windborne-systems-raises-37m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "WindBorne Systems, a Palo Alto, CA-based provider of a weather intelligence platform, raised $37M in Series B funding. The round was by Khosla Ventures and Galvanize with participation from TransLink Capital, Lux Capital, and existing investors."
+  },
+  {
+    "firmSlug": "khosla-ventures",
     "company": "Corma",
     "announcedDate": "2026-08-10",
     "datePrecision": "day",
-    "round": "seed",
+    "round": "Seed",
     "sector": "Cybersecurity",
-    "sectorEvidence": "Corma trains its AI models to specialize in qualities related to defensive cybersecurity, most of which 'doesn't have anything to do with coding,' instead focusing on 'looking at logs, audits, [and] finding the needle in a haystack.'",
+    "sectorEvidence": "Corma, a Tel Aviv, Israel-based provider of a foundation model platform purpose-built for defensive cybersecurity",
     "role": "participant",
     "coInvestors": [
       "Sequoia Capital",
       "Coatue"
     ],
-    "sourceUrl": "https://fortune.com/2026/08/10/exclusive-corma-raises-60-million-from-sequoia-for-ai-trained-to-defend-against-cyberattacks/",
+    "sourceUrl": "https://www.finsmes.com/2026/08/corma-raises-60m-in-seed-funding.html",
     "sourceType": "reputable-press",
-    "evidence": "That's where Corma comes in, a startup emerging from stealth today with $60 million in seed funding to build AI models for defensive cybersecurity, led by Sequoia Capital, along with Khosla Ventures and Coatue."
+    "evidence": "Corma, a Tel Aviv, Israel-based provider of a foundation model platform purpose-built for defensive cybersecurity, raised $60M in Seed funding. The round was led by Sequoia Capital, with participation from Khosla Ventures and Coatue."
+  },
+  {
+    "firmSlug": "khosla-ventures",
+    "company": "Peripheral",
+    "announcedDate": "2026-08-18",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "Sports Media AI",
+    "sectorEvidence": "Peripheral, a Toronto, Canada-based company developing an AI spatial intelligence platform for live sports media",
+    "role": "participant",
+    "coInvestors": [
+      "Inovia Capital",
+      "Deloitte Ventures",
+      "Entrepreneurs First"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/peripheral-raises-8-7m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Peripheral, a Toronto, Canada-based company developing an AI spatial intelligence platform for live sports media, raised $8.7M in Seed funding. The round was led by Inovia Capital and Deloitte Ventures with participation from Khosla Ventures and Entrepreneurs First."
+  },
+  {
+    "firmSlug": "khosla-ventures",
+    "company": "Sonic Fire Tech",
+    "announcedDate": "2026-08-18",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "Fire Safety Tech",
+    "sectorEvidence": "Sonic Fire Tech, a Columbus, Ohio-based clean technology startup developing acoustic fire suppression systems",
+    "role": "participant",
+    "coInvestors": [
+      "The O.H.I.O. Fund"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/sonic-fire-tech-raises-15m-in-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Sonic Fire Tech, a Columbus, Ohio-based clean technology startup developing acoustic fire suppression systems, raised $15m in funding. The round, which brought the company's total capital raised to $18.5m, was led by The O.H.I.O. Fund, with participation from Khosla Ventures."
   },
   {
     "firmSlug": "kleiner-perkins",
@@ -5422,12 +6569,45 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "kleiner-perkins",
+    "company": "Chai Discovery",
+    "announcedDate": "2026-07-14",
+    "datePrecision": "day",
+    "round": "Series C",
+    "sector": "AI Drug Discovery",
+    "sectorEvidence": "Chai Discovery, a San Francisco, CA-based company engineering AI models to discover new molecules",
+    "role": null,
+    "coInvestors": [
+      "Index Ventures",
+      "Sequoia Capital",
+      "Dimension",
+      "Bain Capital Ventures",
+      "Battery Ventures",
+      "Baillie Gifford",
+      "BDT and MSD",
+      "Sapphire Ventures",
+      "Avra Capital",
+      "Thrive Capital",
+      "OpenAI",
+      "Oak HC/FT",
+      "Menlo Ventures",
+      "General Catalyst",
+      "Glade Brook",
+      "Avenir",
+      "Lachy Groom",
+      "Yosemite"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/chai-discovery-raises-400m-in-series-c-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Chai Discovery, a San Francisco, CA-based company engineering AI models to discover new molecules, raised $400M in Series C funding. The round, which valued the company at $3.8B, was led by Index Ventures alongside Kleiner Perkins, Sequoia Capital and Dimension with participation form Bain Capital Ventures, Battery Ventures, Baillie Gifford, BDT and MSD, Sapphire Ventures, Avra Capital, Thrive Capital, OpenAI, Oak HC/FT, Menlo Ventures, General Catalyst, Glade Brook, Avenir, Lachy Groom, and Yosemite."
+  },
+  {
+    "firmSlug": "kleiner-perkins",
     "company": "TerraFirma",
     "announcedDate": "2026-07-14",
     "datePrecision": "day",
     "round": "Series A",
-    "sector": "Construction Robotics",
-    "sectorEvidence": "TerraFirma is a tech-enabled, vertically integrated construction company initially focused on robotic earthworks and site operations.",
+    "sector": "Construction",
+    "sectorEvidence": "TerraFirma, an Austin, TX-based tech-enabled, vertically integrated construction company",
     "role": "lead",
     "coInvestors": [
       "Bain Capital Ventures",
@@ -5440,9 +6620,9 @@ const FIRM_DEALS = [
       "Magnetar Capital",
       "Ravelin Capital"
     ],
-    "sourceUrl": "https://www.businesswire.com/news/home/20260714397606/en/TerraFirma-Raises-$115M-to-Accelerate-Construction-on-Earth-and-Beyond",
-    "sourceType": "press-release",
-    "evidence": "TerraFirma, a tech-enabled, vertically integrated construction company focused on critical infrastructure, today announced it has raised approximately $115 million, including a $100 million Series A led by Kleiner Perkins, with participation from Bain Capital Ventures, Glade Brook Capital Partners, BANNER VC, Saga Ventures, Trust Ventures, Definition, PEAK6, Magnetar Capital, and Ravelin Capital."
+    "sourceUrl": "https://www.finsmes.com/2026/07/terrafirma-raises-100m-in-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "TerraFirma, an Austin, TX-based tech-enabled, vertically integrated construction company, raised $100M in Series A funding. The round was led by Kleiner Perkins, with participation from Bain Capital Ventures, Glade Brook Capital Partners, BANNER VC, Saga Ventures, Trust Ventures, Definition, PEAK6, Magnetar Capital, and Ravelin Capital."
   },
   {
     "firmSlug": "kleiner-perkins",
@@ -5482,8 +6662,8 @@ const FIRM_DEALS = [
     "announcedDate": "2026-07-30",
     "datePrecision": "day",
     "round": "Series D",
-    "sector": "Space",
-    "sectorEvidence": "K2 Space, the leading manufacturer of big, high-power satellites, announced today a $500 million Series D funding round at a $6.8 billion valuation.",
+    "sector": "Satellites",
+    "sectorEvidence": "K2 Space, a Torrance, CA-based company manufacturing satellites",
     "role": "lead",
     "coInvestors": [
       "ICONIQ",
@@ -5493,11 +6673,36 @@ const FIRM_DEALS = [
       "Spark Capital",
       "Sands Capital",
       "ARK Invest",
-      "T. Rowe Price Associates"
+      "T. Rowe Price Associates, Inc."
     ],
-    "sourceUrl": "https://www.prnewswire.com/news-releases/k2-space-raises-500m-series-d-at-6-8b-valuation-to-scale-large-high-power-satellites-302838793.html",
-    "sourceType": "press-release",
-    "evidence": "K2 Space, the leading manufacturer of big, high-power satellites, announced today a $500 million Series D funding round at a $6.8 billion valuation. Kleiner Perkins and ICONIQ led the round, with participation from CapitalG, Lightspeed, Altimeter, Spark Capital, Sands Capital, ARK Invest, T. Rowe Price Associates, Inc., and other existing investors."
+    "sourceUrl": "https://www.finsmes.com/2026/07/k2-space-raises-500m-in-series-d-funding-at-6-8-billion-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "K2 Space, a Torrance, CA-based company manufacturing satellites, raised $500M in Series D funding, at a $6.8B valuation. The round was led by Kleiner Perkins and ICONIQ with participation from CapitalG, Lightspeed, Altimeter, Spark Capital, Sands Capital, ARK Invest, T. Rowe Price Associates, Inc., and other existing investors."
+  },
+  {
+    "firmSlug": "kleiner-perkins",
+    "company": "Etched",
+    "announcedDate": "2026-08-19",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "AI Inference Hardware",
+    "sectorEvidence": "Etched, a San Jose, CA-based provider of inference clusters solutions",
+    "role": "participant",
+    "coInvestors": [
+      "Jane Street",
+      "Sequoia",
+      "Andreessen Horowitz",
+      "Tiger Global",
+      "Bain Capital Ventures",
+      "Neo",
+      "Primary",
+      "Stripes",
+      "Positive Sum",
+      "Blackstone"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/etched-raises-700m-in-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Etched, a San Jose, CA-based provider of inference clusters solutions, raised $700M in financing, at $21 Billion valuation. The round was led by Jane Street with participation from Kleiner Perkins, Sequoia, Andreessen Horowitz, Tiger Global, Bain Capital Ventures, Neo, Primary, Stripes, Positive Sum, and Blackstone."
   },
   {
     "firmSlug": "lightspeed",
@@ -6035,6 +7240,41 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "lightspeed",
+    "company": "Proxima Fusion",
+    "announcedDate": "2026-07-07",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "Fusion Energy",
+    "sectorEvidence": "a Munich, Germany-based stellarator company developing commercial fusion power plants",
+    "role": "participant",
+    "coInvestors": [
+      "XTX Ventures",
+      "East X Ventures",
+      "RWE",
+      "Google",
+      "KfW Capital",
+      "SPRIND",
+      "Burda Principal Investments",
+      "Plural",
+      "UVC Partners",
+      "Balderton",
+      "Cherry Ventures",
+      "DST Global Partners",
+      "Brevan Howard Macro Venture",
+      "DTCF",
+      "redalpine",
+      "Leitmotif",
+      "Elaia",
+      "CDP Venture Capital",
+      "Bayern Kapital",
+      "the EIC Fund"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/proxima-fusion-raises-e411m-at-e2-4-billion-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Proxima Fusion, a Munich, Germany-based stellarator company developing commercial fusion power plants, raised €411M ($468M) in funding, at €2.4 Billion ($2.7 Billion) valuation.\n\nThe round was led by XTX Ventures and East X Ventures, with RWE and Google as strategic investors. KfW Capital, SPRIND and Burda Principal Investments joined alongside returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund."
+  },
+  {
+    "firmSlug": "lightspeed",
     "company": "Nirva",
     "announcedDate": "2026-07-09",
     "datePrecision": "day",
@@ -6046,6 +7286,256 @@ const FIRM_DEALS = [
     "sourceUrl": "https://lsvp.com/stories/why-we-partnered-with-nirva/",
     "sourceType": "firm-announcement",
     "evidence": "That is why we are thrilled to announce our partnership with Nirva in their 8M Seed round. ... For Lightspeed, Nirva is a declaration that we think the next iconic consumer device worth caring about will look like something you'd actually choose to wear, and it will know you better than any device before it."
+  },
+  {
+    "firmSlug": "lightspeed",
+    "company": "Finto",
+    "announcedDate": "2026-07-13",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "Accounting Automation",
+    "sectorEvidence": "a Munich, Germany-based developer of AI agents for enterprise accounting automation",
+    "role": null,
+    "coInvestors": [
+      "Y Combinator",
+      "Gradient"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/finto-raises-3-4m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Finto, a Munich, Germany-based developer of AI agents for enterprise accounting automation, raised $3.4m in seed funding.\n\nBackers included Y Combinator, Alphabet's Google-focused AI venture fund Gradient, and Lightspeed Venture Partners."
+  },
+  {
+    "firmSlug": "lightspeed",
+    "company": "Neko Health",
+    "announcedDate": "2026-07-15",
+    "datePrecision": "day",
+    "round": "Series C",
+    "sector": "Preventive Health",
+    "sectorEvidence": "a Stockholm, Sweden-based preventive health technology company",
+    "role": "lead",
+    "coInvestors": [
+      "O.G. Venture Partners",
+      "Atomico",
+      "General Catalyst",
+      "Lakestar",
+      "Liberty City Ventures",
+      "Positive Sum",
+      "BDT and MSD",
+      "Ari Emanuel",
+      "Claudia Schiffer",
+      "Sir Matthew Vaughn",
+      "Danny Meyer",
+      "Jimmy Iovine",
+      "Maria Sharapova",
+      "Mark Zuckerberg",
+      "Priscilla Chan",
+      "Thierry Henry",
+      "Tim Ferriss",
+      "will.i.am",
+      "Alexis Ohanian",
+      "Alex Tew",
+      "Michael Acton-Smith",
+      "Gary Vaynerchuk",
+      "Jessie Inchauspé",
+      "Katie Haun",
+      "Raj Shamani",
+      "Steven Bartlett",
+      "Zoë Saldaña",
+      "Marco Perego-Saldaña"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/neko-health-raises-700m-in-series-c-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Neko Health, a Stockholm, Sweden-based preventive health technology company, raised $700M in Series C funding.\n\nThe round was led by Lightspeed Venture Partners and O.G. Venture Partners, with participation from Atomico, General Catalyst Lakestar, Liberty City Ventures, Positive Sum, BDT and MSD, Ari Emanuel, Claudia Schiffer, Sir Matthew Vaughn, Danny Meyer, Jimmy Iovine, Maria Sharapova, Mark Zuckerberg and Priscilla Chan, Thierry Henry, Tim Ferriss will.i.am, Alexis Ohanian, Alex Tew, Michael Acton-Smith, Gary Vaynerchuk, Jessie Inchauspé, Katie Haun, Raj Shamani, Steven Bartlett, Zoë Saldaña and Marco Perego-Saldaña."
+  },
+  {
+    "firmSlug": "lightspeed",
+    "company": "Fireworks",
+    "announcedDate": "2026-07-16",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "AI Inference Platform",
+    "sectorEvidence": "Fireworks, the platform for specialized intelligence, enabling companies like Uber and Shopify to train and serve custom models",
+    "role": "participant",
+    "coInvestors": [
+      "Atreides Management",
+      "Index Ventures",
+      "TCV",
+      "Evantic",
+      "NVIDIA"
+    ],
+    "sourceUrl": "https://www.businesswire.com/news/home/20260716264405/en/Fireworks-Raises-a-$1.5-Billion-Series-D-to-Lead-the-Specialized-Intelligence-Revolution",
+    "sourceType": "press-release",
+    "evidence": "Fireworks, the platform for specialized intelligence, enabling companies like Uber and Shopify to train and serve custom models, today announced a $1.505 billion Series D round at a $17.5 billion valuation. The round was led by Atreides Management, Index Ventures, and TCV, with participation from existing investors Evantic, Lightspeed Venture Partners, and NVIDIA."
+  },
+  {
+    "firmSlug": "lightspeed",
+    "company": "Emergent",
+    "announcedDate": "2026-07-20",
+    "datePrecision": "day",
+    "round": "Series C",
+    "sector": "AI Software Development",
+    "sectorEvidence": "Emergent, a San Francisco, CA-based provider of an AI software creation platform",
+    "role": null,
+    "coInvestors": [
+      "Khosla Ventures",
+      "Creaegis",
+      "MNI Ventures",
+      "Claypond Capital",
+      "Sentinel Global",
+      "SoftBank Vision Fund 2",
+      "Y Combinator"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/emergent-raises-130m-in-series-c-funding-at-1-5-billion-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Emergent, a San Francisco, CA-based provider of an AI software creation platform, raised $130M in Series C funding, at $1.5 Billion valuation. The round was led by Creaegis, MNI Ventures, Claypond Capital and Sentinel Global, and participation from Khosla Ventures, SoftBank Vision Fund 2, Lightspeed, and Y Combinator."
+  },
+  {
+    "firmSlug": "lightspeed",
+    "company": "K2 Space",
+    "announcedDate": "2026-07-30",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "Satellite Manufacturing",
+    "sectorEvidence": "a Torrance, CA-based company manufacturing satellites",
+    "role": "participant",
+    "coInvestors": [
+      "Kleiner Perkins",
+      "ICONIQ",
+      "CapitalG",
+      "Altimeter",
+      "Spark Capital",
+      "Sands Capital",
+      "ARK Invest",
+      "T. Rowe Price Associates, Inc."
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/k2-space-raises-500m-in-series-d-funding-at-6-8-billion-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "K2 Space, a Torrance, CA-based company manufacturing satellites, raised $500M in Series D funding, at a $6.8B valuation.\n\nThe round was led by Kleiner Perkins and ICONIQ with participation from CapitalG, Lightspeed, Altimeter, Spark Capital, Sands Capital, ARK Invest, T. Rowe Price Associates, Inc., and other existing investors."
+  },
+  {
+    "firmSlug": "lightspeed",
+    "company": "Fixxly",
+    "announcedDate": "2026-08-03",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "Construction Materials Commerce",
+    "sectorEvidence": "a Bengaluru, India-based developer of an AI-powered quick commerce platform for building and construction materials",
+    "role": null,
+    "coInvestors": [
+      "Accel",
+      "Fireside Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/fixxly-raises-5-5m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Fixxly, a Bengaluru, India-based developer of an AI-powered quick commerce platform for building and construction materials, raised $5.5m in seed funding.\n\nBackers included Accel, Fireside Ventures, and Lightspeed India Partners."
+  },
+  {
+    "firmSlug": "lightspeed",
+    "company": "Harmony",
+    "announcedDate": "2026-08-03",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "Enterprise Service Management",
+    "sectorEvidence": "a NYC-based provider of an AI-powered enterprise service management platform",
+    "role": "lead",
+    "coInvestors": [
+      "Hitachi Ventures",
+      "Fin Capital",
+      "Mercer Ventures",
+      "Operator Partners",
+      "Assaf Rappaport",
+      "Ofir Ehrlich"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/harmony-raises-34m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Harmony, a NYC-based provider of an AI-powered enterprise service management platform, raised $34M in Seed funding.\n\nThe round was led by Lightspeed Venture Partners with participation from Hitachi Ventures, Fin Capital, Mercer Ventures, Operator Partners, and angel investors including Assaf Rappaport and Ofir Ehrlich."
+  },
+  {
+    "firmSlug": "lightspeed",
+    "company": "Base Power",
+    "announcedDate": "2026-08-04",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "Distributed Energy",
+    "sectorEvidence": "an Austin, Texas-based provider of distributed energy solutions and home battery systems",
+    "role": null,
+    "coInvestors": [
+      "a16z",
+      "Ribbit",
+      "Addition",
+      "Valor Equity Partners",
+      "JPMorganChase's Strategic Investment Group",
+      "Altimeter",
+      "D1 Capital Partners",
+      "Sands Capital",
+      "Coatue",
+      "Layer Global",
+      "Energy Impact Partners",
+      "Thrive Capital",
+      "Trust Ventures",
+      "CapitalG"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/base-power-raises-1-billion-in-series-d-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Base Power, an Austin, Texas-based provider of distributed energy solutions and home battery systems, raised $1 Billion in Series D financing, at $13 Billion valuation.\n\nThe round was led by Ribbit, Addition, Valor Equity Partners, and JPMorganChase's Strategic Investment Group, with participation from Altimeter, D1 Capital Partners, Sands Capital, Coatue, Layer Global, Energy Impact Partners, Thrive Capital, a16z, Lightspeed, Trust Ventures, CapitalG, and others."
+  },
+  {
+    "firmSlug": "lightspeed",
+    "company": "Mitti Labs",
+    "announcedDate": "2026-08-05",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Climate GeoAI",
+    "sectorEvidence": "a NYC- and Bengaluru, India-based deep-tech company and provider of a GeoAI satellite platform",
+    "role": "participant",
+    "coInvestors": [
+      "Aramco Ventures",
+      "Godrej Industries Group",
+      "Cisco Foundation",
+      "Francis Family Fund",
+      "Volta Circle"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/mitti-labs-raises-9-5m-in-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Mitti Labs, a NYC- and Bengaluru, India-based deep-tech company and provider of a GeoAI satellite platform, raised $9.5M in Series A funding.\n\nThe round was led by Aramco Ventures with participation from Lightspeed India, Godrej Industries Group, Cisco Foundation, Francis Family Fund, and Volta Circle."
+  },
+  {
+    "firmSlug": "lightspeed",
+    "company": "Gravity",
+    "announcedDate": "2026-08-12",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Advertising Technology",
+    "sectorEvidence": "a San Francisco, CA-based developer of an automated agent-to-agent advertising platform",
+    "role": "lead",
+    "coInvestors": [
+      "Committed Capital",
+      "Basis Set Ventures",
+      "Caffeinated Capital",
+      "GGF",
+      "Haystack",
+      "the Logos Fund"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/gravity-raises-30-5m-in-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Gravity, a San Francisco, CA-based developer of an automated agent-to-agent advertising platform, raised $30.5m in Series A funding.\n\nThe round was co-led by Lightspeed Venture Partners and Committed Capital, with participation from Basis Set Ventures, Caffeinated Capital, GGF, Haystack, and the Logos Fund."
+  },
+  {
+    "firmSlug": "lightspeed",
+    "company": "Discovered Materials",
+    "announcedDate": "2026-08-19",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "Materials Discovery",
+    "sectorEvidence": "deploy swarms of AI agents to discover new materials capable of building more thermally efficient integrated circuits",
+    "role": "lead",
+    "coInvestors": [
+      "Peak XV Partners",
+      "Paul Graham"
+    ],
+    "sourceUrl": "https://theaiinsider.tech/2026/08/19/discovered-materials-announces-9m-funding-round-to-deploy-ai-agents-in-search-of-cooler-chip-materials/",
+    "sourceType": "reputable-press",
+    "evidence": "Discovered Materials closed a $9 million seed round led by Lightspeed India Partners, with participation from Peak XV Partners and angel investors including Paul Graham"
   },
   {
     "firmSlug": "lux-capital",
@@ -6521,6 +8011,23 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "lux-capital",
+    "company": "Sonata",
+    "announcedDate": "2026-07-20",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "Preventive Healthcare",
+    "sectorEvidence": "Sonata, a New York City-based developer of an AI-driven preventive healthcare membership platform",
+    "role": "lead",
+    "coInvestors": [
+      "BoxGroup",
+      "Sunflower Capital"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/sonata-raises-7m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Sonata, a New York City-based developer of an AI-driven preventive healthcare membership platform, emerged from stealth mode after securing $7m in seed funding. The round was led by Lux Capital, BoxGroup, and Sunflower Capital, with strategic participation from operators and founders at Ramp and Linear."
+  },
+  {
+    "firmSlug": "lux-capital",
     "company": "Genius AI",
     "announcedDate": "2026-07-21",
     "datePrecision": "day",
@@ -6567,12 +8074,32 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "lux-capital",
+    "company": "Genius AI",
+    "announcedDate": "2026-07-22",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "Vertical SaaS",
+    "sectorEvidence": "Genius AI, a NYC-based provider of a technology platform for in-person service businesses",
+    "role": "lead",
+    "coInvestors": [
+      "Bessemer Venture Partners",
+      "Imaginary Ventures",
+      "L Catterton Growth",
+      "2048 Ventures",
+      "StepStone Private Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/genius-ai-raises-44m-in-series-d-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Genius AI, a NYC-based provider of a technology platform for in-person service businesses, raised $44M in Series D financing, at $1.15 Billion valuation. The round was led by Lux Capital, with participation from Bessemer Venture Partners, Imaginary Ventures, L Catterton Growth, 2048 Ventures, StepStone Private Ventures, and other existing investors."
+  },
+  {
+    "firmSlug": "lux-capital",
     "company": "Glow",
     "announcedDate": "2026-07-22",
     "datePrecision": "day",
     "round": null,
     "sector": "Cybersecurity",
-    "sectorEvidence": "Glow gives security teams control over everything that runs on the endpoint. Specialized AI agents continuously map the environment, analyze risk in real time, and enforce policies automatically",
+    "sectorEvidence": "Glow, a Tel Aviv, Israel- and Palo Alto, CA-based company developing AI-powered security solutions for workspace",
     "role": "participant",
     "coInvestors": [
       "Sequoia",
@@ -6584,9 +8111,56 @@ const FIRM_DEALS = [
       "Operator Collective",
       "Holly Ventures"
     ],
-    "sourceUrl": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
-    "sourceType": "company-announcement",
-    "evidence": "Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation ... The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures."
+    "sourceUrl": "https://www.finsmes.com/2026/07/glow-raises-180m-in-funding-at-1-2b-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Glow, a Tel Aviv, Israel- and Palo Alto, CA-based company developing AI-powered security solutions for workspace, raised $180M in funding, at $1.2 Billion valuation. The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures."
+  },
+  {
+    "firmSlug": "lux-capital",
+    "company": "SkyPilot",
+    "announcedDate": "2026-07-22",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "AI Infrastructure",
+    "sectorEvidence": "SkyPilot, a San Francisco, CA-based provide of an AI compute platform that helps AI teams manage their AI compute",
+    "role": "lead",
+    "coInvestors": [
+      "Amplify Partners",
+      "Coatue Management",
+      "Foundation Capital",
+      "Race Capital",
+      "The House Fund",
+      "Ali Ghodsi",
+      "Jeff Dean",
+      "Guillermo Rauch",
+      "Amjad Masad",
+      "Clem Delangue",
+      "Tristan Handy"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/skypilot-raises-20m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "SkyPilot, a San Francisco, CA-based provide of an AI compute platform that helps AI teams manage their AI compute, raised $20M in Seed funding. The round was led by Lux Capital, with participation from Amplify Partners, Coatue Management, Foundation Capital, Race Capital, The House Fund, Ali Ghodsi, Jeff Dean, Guillermo Rauch, Amjad Masad, Clem Delangue, and Tristan Handy."
+  },
+  {
+    "firmSlug": "lux-capital",
+    "company": "Agon",
+    "announcedDate": "2026-07-31",
+    "datePrecision": "day",
+    "round": "Pre-Seed and Seed",
+    "sector": "Defense Tech",
+    "sectorEvidence": "Agon, a London, United Kingdom-based defensetech startup",
+    "role": null,
+    "coInvestors": [
+      "Lakestar",
+      "201 Ventures",
+      "D3",
+      "XYZ Venture Capital",
+      "Northzone",
+      "David Helgason"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/agon-raises-30m-in-pre-seed-and-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Agon, a London, United Kingdom-based defensetech startup, launched after raising $30m in cumulative pre-seed and seed funding. The investment combined an initial $7m pre-seed tranche with a newly finalized $23m expansion round backed by Lakestar, 201 Ventures, D3, XYZ Venture Capital, Lux Capital, Northzone, and individual angel investor David Helgason."
   },
   {
     "firmSlug": "lux-capital",
@@ -6595,17 +8169,16 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Series B",
     "sector": "Weather Intelligence",
-    "sectorEvidence": "WindBorne Systems, the weather intelligence company building the world's largest atmospheric sensing network and the AI models it powers, today announced $37 million in Series B funding",
+    "sectorEvidence": "WindBorne Systems, a Palo Alto, CA-based provider of a weather intelligence platform",
     "role": "participant",
     "coInvestors": [
       "Khosla Ventures",
       "Galvanize",
-      "Translink Capital",
-      "Biprogy"
+      "TransLink Capital"
     ],
-    "sourceUrl": "https://windbornesystems.com/blog/windborne-systems-raises-37-million-to-build-the-worlds-weather-intelligence-infrastructure",
-    "sourceType": "company-announcement",
-    "evidence": "WindBorne Systems, the weather intelligence company building the world's largest atmospheric sensing network and the AI models it powers, today announced $37 million in Series B funding ... The oversubscribed round was co-led by Khosla Ventures and Galvanize, with participation from Translink Capital, Biprogy, Lux Capital, and existing investors."
+    "sourceUrl": "https://www.finsmes.com/2026/08/windborne-systems-raises-37m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "WindBorne Systems, a Palo Alto, CA-based provider of a weather intelligence platform, raised $37M in Series B funding. The round was by Khosla Ventures and Galvanize with participation from TransLink Capital, Lux Capital, and existing investors."
   },
   {
     "firmSlug": "lux-capital",
@@ -6614,7 +8187,7 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Series D",
     "sector": "Advanced Manufacturing",
-    "sectorEvidence": "Hadrian, the advanced manufacturing company building highly automated factories for America, today announced $1.37 billion in new equity financing.",
+    "sectorEvidence": "Hadrian, a Los Angeles, California-based developer of automated factories for aerospace and defense",
     "role": "participant",
     "coInvestors": [
       "WCM Investment Management",
@@ -6622,20 +8195,19 @@ const FIRM_DEALS = [
       "Valor Equity Partners",
       "137 Ventures",
       "Baillie Gifford",
-      "JPMorganChase Strategic Investment Group",
       "1789 Capital",
       "Morgan Stanley Wealth Management",
-      "funds managed by Apollo",
-      "accounts advised by T. Rowe Price Associates, Inc.",
+      "Apollo",
+      "T. Rowe Price Associates, Inc.",
       "CapitalG",
       "Andreessen Horowitz",
       "Founders Fund",
       "Altimeter",
       "Construct Capital"
     ],
-    "sourceUrl": "https://www.prnewswire.com/news-releases/hadrian-raises-1-37b-series-d-to-build-highly-automated-factories-to-accelerate-americas-industrial-renewal-302844408.html",
-    "sourceType": "press-release",
-    "evidence": "Hadrian, the advanced manufacturing company building highly automated factories for America, today announced $1.37 billion in new equity financing. ... The round also included major participation by 1789 Capital, as well as participation from Morgan Stanley Wealth Management, funds managed by Apollo, accounts advised by T. Rowe Price Associates, Inc., CapitalG, Andreessen Horowitz, Founders Fund, Lux Capital, Altimeter, Construct Capital, and existing investors."
+    "sourceUrl": "https://www.finsmes.com/2026/08/hadrian-raises-1-37-billion-in-series-d-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Hadrian, a Los Angeles, California-based developer of automated factories for aerospace and defense, raised $1.37 Billion in Series D funding, at $7.87 Billion valuation. The round was co-led by WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures, and Baillie Gifford, with participation from 1789 Capital, Morgan Stanley Wealth Management, funds managed by Apollo, accounts advised by T. Rowe Price Associates, Inc., CapitalG, Andreessen Horowitz, Founders Fund, Lux Capital, Altimeter, Construct Capital, and existing investors."
   },
   {
     "firmSlug": "lux-capital",
@@ -6644,19 +8216,19 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Series C",
     "sector": "Defense Tech",
-    "sectorEvidence": "Cambridge, which already has several U.K. government contracts, is developing low-cost interceptor systems for both drones and cruise missiles.",
-    "role": "participant",
+    "sectorEvidence": "Cambridge Aerospace, a Cambridge, UK-based provider of an air defence platform and low-cost interceptor systems for Allied forces",
+    "role": null,
     "coInvestors": [
+      "Elad Gil",
       "DFJ Growth",
       "Accel",
       "Lakestar",
       "Never Lift",
-      "Ora Global",
-      "Elad Gil"
+      "Ora Global"
     ],
-    "sourceUrl": "https://www.axios.com/2026/08/10/anti-drone-defense-cambridge-aerospace",
+    "sourceUrl": "https://www.finsmes.com/2026/08/cambridge-aerospace-raises-300m-in-series-c-funding.html",
     "sourceType": "reputable-press",
-    "evidence": "Cambridge Aerospace, a British air defense tech startup, raised $300 million in Series C funding at a $3.4 billion post-money valuation led by DFJ Growth. ... Other investors in the round included Lux Capital, Accel, Lakestar, Never Lift, Ora Global, and Elad Gil."
+    "evidence": "Cambridge Aerospace, a Cambridge, UK-based provider of an air defence platform and low-cost interceptor systems for Allied forces, raised $300M in Series C funding at $3.4 Billion valuation.\n\nThe round was led by DFJ Growth, with participation from Lux, Accel, Lakestar, Never Lift, Ora Global, and Elad Gil & Co."
   },
   {
     "firmSlug": "nea",
@@ -6893,20 +8465,20 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Series B",
     "sector": "Video AI",
-    "sectorEvidence": "TwelveLabs is the world's most powerful video intelligence platform, that enables machines to perceive, understand, and reason about video the way humans do.",
-    "role": "lead",
+    "sectorEvidence": "a San Francisco, CA-based video intelligence company",
+    "role": null,
     "coInvestors": [
+      "Index Ventures",
       "NAVER Ventures",
       "Amazon",
       "Radical Ventures",
       "Korea Investment Partners",
-      "Index Ventures",
       "Quadrille Capital",
       "Red Bull Ventures"
     ],
-    "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/01/3320545/0/en/twelvelabs-raises-100-million-in-series-b-funding-to-build-video-superintelligence.html",
-    "sourceType": "press-release",
-    "evidence": "TwelveLabs Raises $100 Million in Series B Funding to Build Video Superintelligence ... The round was co-led by NEA and NAVER Ventures with participation from Amazon, Radical Ventures, Korea Investment Partners, Index Ventures, Quadrille Capital, and Red Bull Ventures."
+    "sourceUrl": "https://www.finsmes.com/2026/07/twelvelabs-raises-100m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "TwelveLabs, a San Francisco, CA-based video intelligence company, raised $100m in Series B funding.\n\nThe round was co-led by NEA and NAVER Ventures with participation from Amazon, Radical Ventures, Korea Investment Partners, Index Ventures, Quadrille Capital, and Red Bull Ventures."
   },
   {
     "firmSlug": "nea",
@@ -6915,16 +8487,16 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Series B",
     "sector": "Market Data",
-    "sectorEvidence": "Databento is the market data platform for modern finance.",
+    "sectorEvidence": "Databento, a Salt Lake City, OH-based provider of a market data platform for modern finance",
     "role": "lead",
     "coInvestors": [
       "DRW Venture Capital",
       "Redpoint Ventures",
       "Tribe Capital"
     ],
-    "sourceUrl": "https://www.prnewswire.com/news-releases/databento-raises-97-million-series-b-led-by-nea-302821464.html",
-    "sourceType": "press-release",
-    "evidence": "Databento, the market data platform for modern finance, today announced a $97 million Series B financing led by New Enterprise Associates (NEA)."
+    "sourceUrl": "https://www.finsmes.com/2026/07/databento-raises-97m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Databento, a Salt Lake City, OH-based provider of a market data platform for modern finance, raised $97M in Series B funding. The round was led by New Enterprise Associates (NEA), with participation from strategic and existing investors, including DRW Venture Capital, Redpoint Ventures, and Tribe Capital, among others."
   },
   {
     "firmSlug": "nea",
@@ -6946,6 +8518,76 @@ const FIRM_DEALS = [
     "sourceUrl": "https://www.businesswire.com/news/home/20260713784977/en/Valarian-Raises-$50-Million-Series-a-Led-by-NEA-to-Deliver-the-Sovereign-Infrastructure-Layer-for-High-Consequence-Operations-and-AI-Driven-Systems",
     "sourceType": "press-release",
     "evidence": "Valarian, the company building the sovereign infrastructure layer for high-consequence operations and AI-driven systems, today announced $50 million in series A funding led by New Enterprise Associates (NEA)."
+  },
+  {
+    "firmSlug": "nea",
+    "company": "Singularity",
+    "announcedDate": "2026-07-14",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Defense Tech",
+    "sectorEvidence": "Singularity, a Los Angeles, CA-based defense tech company",
+    "role": null,
+    "coInvestors": [
+      "Khosla Ventures",
+      "Felicis",
+      "AE Ventures",
+      "Long Journey",
+      "Harpoon",
+      "Menlo Ventures",
+      "Y Combinator",
+      "Decisive Point",
+      "New Vista",
+      "Sunflower",
+      "Soma",
+      "General (Ret.) James McConville",
+      "General Jim Dickinson",
+      "Major General (Ret.) Volodymyr Havrylov"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/singularity-raises-80m-in-series-a-at-400m-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Singularity, a Los Angeles, CA-based defense tech company, launched with $80m Series A funding at a $400m valuation. The round was led by Khosla Ventures and Felicis, with participation from seed investors AE Ventures and NEA, as well as Long Journey, Harpoon, Menlo Ventures, Y Combinator, Decisive Point, New Vista, Sunflower, and Soma, as well as dozens of recognized leaders from industry, the military, and Congress, including former U.S. Army Chief of Staff General (Ret.) James McConville, former Commander of United States Space Command General Jim Dickinson, and former Deputy Minister of Defense of Ukraine Major General (Ret.) Volodymyr Havrylov."
+  },
+  {
+    "firmSlug": "nea",
+    "company": "Valarian",
+    "announcedDate": "2026-07-14",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Sovereign Infrastructure",
+    "sectorEvidence": "Valarian, a London, UK-based company building the sovereign infrastructure layer for high-consequence operations and AI-driven systems",
+    "role": "lead",
+    "coInvestors": [
+      "Lightbank",
+      "XTX Markets",
+      "Sequel",
+      "LitVC",
+      "Gokul Rajaram",
+      "Nikesh Arora"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/valarian-raises-50m-in-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Valarian, a London, UK-based company building the sovereign infrastructure layer for high-consequence operations and AI-driven systems, raised $50M in Series A funding. The round was led by New Enterprise Associates (NEA), with participation from Lightbank, XTX Markets, Sequel, LitVC, as well as angel investors Gokul Rajaram and Nikesh Arora."
+  },
+  {
+    "firmSlug": "nea",
+    "company": "Wonder",
+    "announcedDate": "2026-07-16",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "Food Tech",
+    "sectorEvidence": "Wonder, a leading food technology platform",
+    "role": "participant",
+    "coInvestors": [
+      "Accel",
+      "GV (Google Ventures)",
+      "AllianceBernstein",
+      "ARK Invest",
+      "Kayne Anderson Rudnick Investment Management"
+    ],
+    "sourceUrl": "https://www.prnewswire.com/news-releases/wonder-announces-650-million-series-d-round-at-a-9-billion-pre-money-valuation-302827208.html",
+    "sourceType": "press-release",
+    "evidence": "NEW YORK, July 16, 2026 /PRNewswire/ -- Wonder, a leading food technology platform, today announced its $650 million Series D round at a pre-money valuation of $9 billion.\n\nThe round has strong participation from existing investors, including Accel, GV (Google Ventures) and New Enterprise Associates (NEA)."
   },
   {
     "firmSlug": "nea",
@@ -6981,6 +8623,28 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "nea",
+    "company": "Centralize",
+    "announcedDate": "2026-07-29",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "Sales Intelligence",
+    "sectorEvidence": "Centralize, a San Francisco, CA-based provider of a relationship intelligence platform for enterprise revenue teams",
+    "role": "lead",
+    "coInvestors": [
+      "Salesforce Ventures",
+      "Y Combinator",
+      "20SALES",
+      "Ritual Capital",
+      "Adverb Ventures",
+      "Stewart Butterfield",
+      "Scott Woody"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/centralize-raises-19m-in-total-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Centralize, a San Francisco, CA-based provider of a relationship intelligence platform for enterprise revenue teams, raised $19M in total funding. The round was led by NEA (New Enterprise Associates) with participation from Salesforce Ventures, Y Combinator, 20SALES, Ritual Capital, Adverb Ventures, Stewart Butterfield, and Scott Woody."
+  },
+  {
+    "firmSlug": "nea",
     "company": "P-1 AI",
     "announcedDate": "2026-07-29",
     "datePrecision": "day",
@@ -6999,19 +8663,33 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "nea",
+    "company": "P-1 AI",
+    "announcedDate": "2026-07-30",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Industrial AI",
+    "sectorEvidence": "P-1 AI, Inc., a San Mateo, CA-based provider of an AI mechanical and electrical engineer solutions for industrial teams",
+    "role": "lead",
+    "coInvestors": [],
+    "sourceUrl": "https://www.finsmes.com/2026/07/p-1-ai-closes-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "P-1 AI, Inc., a San Mateo, CA-based provider of an AI mechanical and electrical engineer solutions for industrial teams, raised an undisclosed amount in Series A financing. The round was led by New Enterprise Associates (NEA)."
+  },
+  {
+    "firmSlug": "nea",
     "company": "Horizon3",
     "announcedDate": "2026-08-03",
     "datePrecision": "day",
     "round": "Series E",
     "sector": "Cybersecurity",
-    "sectorEvidence": "Horizon3, the AI-Native Proactive Security Company behind NodeZero®, shifts the advantage from attackers to defenders by giving organizations the power to fight AI with AI.",
+    "sectorEvidence": "Horizon3, a San Francisco, CA-based provider of an AI-native proactive security platform",
     "role": "lead",
     "coInvestors": [
       "NightDragon",
       "Acrew Capital",
       "Blue Cloud Ventures",
       "Demeter Group",
-      "EDBI (Singapore)",
+      "EDBI",
       "PSG",
       "SAIC",
       "Sapphire Ventures",
@@ -7021,9 +8699,118 @@ const FIRM_DEALS = [
       "Ridge Ventures",
       "SignalFire"
     ],
-    "sourceUrl": "https://www.businesswire.com/news/home/20260803793896/en/Horizon3-Raises-$250M-Series-E-at-$2B-Valuation-to-Lead-the-AI-vs.-AI-Cybersecurity-Era",
-    "sourceType": "press-release",
-    "evidence": "Horizon3 Raises $250M Series E at $2B+ Valuation to Lead the \"AI vs. AI\" Cybersecurity Era ... The oversubscribed round was co-led by existing investors NightDragon and NEA, with participation from seven new investors and five returning backers."
+    "sourceUrl": "https://www.finsmes.com/2026/08/horizon3-raises-250m-in-series-e-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Horizon3, a San Francisco, CA-based provider of an AI-native proactive security platform, raised $250M in Series E funding, at over $2 Billion valuation. The round was co-led by NightDragon and NEA with participation from Acrew Capital, Blue Cloud Ventures, Demeter Group, EDBI, PSG, SAIC, Sapphire Ventures, Craft Ventures, Prosperity7 Ventures, Qualcomm Ventures, Ridge Ventures, and SignalFire."
+  },
+  {
+    "firmSlug": "nea",
+    "company": "Databricks",
+    "announcedDate": "2026-08-13",
+    "datePrecision": "day",
+    "round": "strategic funding round",
+    "sector": "Data and AI",
+    "sectorEvidence": "a San Francisco, CA-based Data and AI company",
+    "role": null,
+    "coInvestors": [
+      "Andreessen Horowitz",
+      "Coatue",
+      "Blackstone",
+      "MGX",
+      "T. Rowe Price Associates, Inc.",
+      "T. Rowe Price Investment Management, Inc.",
+      "Sixth Street Growth",
+      "BOND",
+      "Clearlake Capital",
+      "Point72",
+      "Premji Invest",
+      "TPG",
+      "Dragoneer",
+      "Fidelity Management & Research Company",
+      "Franklin Templeton",
+      "GIC",
+      "Growth Equity at Goldman Sachs Alternatives",
+      "Insight Partners",
+      "J.P. Morgan Private Capital",
+      "Kinetic",
+      "Morgan Stanley Investment Management",
+      "Ontario Teachers' Pension Plan",
+      "Temasek",
+      "Thrive Capital",
+      "WCM Investment Management"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/databricks-closes-5-billion-strategic-funding-at-190-billion-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Databricks, a San Francisco, CA-based Data and AI company, closed a $5 billion strategic funding round at a $190 billion valuation.\n\nThe round was led by Coatue, along with Blackstone, MGX, accounts advised by T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., and new investor Sixth Street Growth. Other new investors included BOND, Clearlake Capital, Point72, Premji Invest, and TPG alongside existing investors Andreessen Horowitz, Dragoneer, Fidelity Management & Research Company, Franklin Templeton, GIC, Growth Equity at Goldman Sachs Alternatives, Insight Partners, J.P. Morgan Private Capital, Kinetic, Morgan Stanley Investment Management, NEA, Ontario Teachers' Pension Plan, Temasek, Thrive Capital, and WCM Investment Management."
+  },
+  {
+    "firmSlug": "nea",
+    "company": "Wispr",
+    "announcedDate": "2026-08-17",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Voice AI",
+    "sectorEvidence": "Wispr, a San Francisco, CA-based provider of an AI voice dictation and human-AI interaction platform",
+    "role": "participant",
+    "coInvestors": [
+      "Menlo Ventures",
+      "Notable Capital",
+      "Neo Ventures",
+      "8VC",
+      "MVP Ventures",
+      "Acrew",
+      "Forerunner",
+      "Goodwater",
+      "Peak XV",
+      "Together Fund",
+      "PLUS Capital",
+      "Livvy Dunne",
+      "Shaun White",
+      "Dak Prescott",
+      "DK Metcalf",
+      "Joe Burrow",
+      "Kyle Hamilton",
+      "Aaron Gordon",
+      "Alex Caruso",
+      "Domantas Sabonis",
+      "Klay Thompson",
+      "Paul George",
+      "Trae Young"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/wispr-raises-280m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Wispr, a San Francisco, CA-based provider of an AI voice dictation and human-AI interaction platform, raised $280M in Series B financing at a $2B valuation. The round was led by Menlo Ventures with participation from Notable Capital, NEA, Neo Ventures, 8VC, MVP Ventures, Acrew, Forerunner, Goodwater, Peak XV, Together Fund, PLUS Capital, Livvy Dunne, Shaun White, Dak Prescott, DK Metcalf, Joe Burrow, Kyle Hamilton, Aaron Gordon, Alex Caruso, Domantas Sabonis, Klay Thompson, Paul George, and Trae Young."
+  },
+  {
+    "firmSlug": "nea",
+    "company": "Abcuro",
+    "announcedDate": "2026-08-18",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "Biotech",
+    "sectorEvidence": "Abcuro, a Newton, MA-based clinical-stage biotechnology company developing therapies for the treatment of autoimmune diseases through precise modulation of cytotoxic T cells",
+    "role": "participant",
+    "coInvestors": [
+      "New Leaf Venture Partners",
+      "abrdn Inc.",
+      "Bain Capital Life Sciences",
+      "Samsara BioCapital",
+      "Redmile Group",
+      "Mass General Brigham Ventures",
+      "RA Capital Management",
+      "Pontifax",
+      "Sanofi Ventures",
+      "Foresite Capital",
+      "Eurofarma Ventures",
+      "Kaitai Capital",
+      "Soleus Capital",
+      "Nancy Chang",
+      "Shang Bay",
+      "Rock Springs Capital"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/abcuro-raises-66m-in-series-d-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Abcuro, a Newton, MA-based clinical-stage biotechnology company developing therapies for the treatment of autoimmune diseases through precise modulation of cytotoxic T cells, raised $66M in Series D funding. The round was led by New Leaf Venture Partners, with participation from abrdn Inc., Bain Capital Life Sciences, Samsara BioCapital, Redmile Group, Mass General Brigham Ventures, RA Capital Management, Pontifax, Sanofi Ventures, Foresite Capital, NEA, Eurofarma Ventures, Kaitai Capital, Soleus Capital, Nancy Chang, Shang Bay, and Rock Springs Capital."
   },
   {
     "firmSlug": "neo",
@@ -7148,6 +8935,31 @@ const FIRM_DEALS = [
     "evidence": "SAN FRANCISCO, June 23, 2026 /PRNewswire/ -- Today, Engram, the company building the learned memory layer for AI, emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab."
   },
   {
+    "firmSlug": "neo",
+    "company": "Etched",
+    "announcedDate": "2026-08-19",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "AI Inference Hardware",
+    "sectorEvidence": "Etched, a San Jose, CA-based provider of inference clusters solutions",
+    "role": "participant",
+    "coInvestors": [
+      "Jane Street",
+      "Kleiner Perkins",
+      "Sequoia",
+      "Andreessen Horowitz",
+      "Tiger Global",
+      "Bain Capital Ventures",
+      "Primary",
+      "Stripes",
+      "Positive Sum",
+      "Blackstone"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/etched-raises-700m-in-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Etched, a San Jose, CA-based provider of inference clusters solutions, raised $700M in financing, at $21 Billion valuation. The round was led by Jane Street with participation from Kleiner Perkins, Sequoia, Andreessen Horowitz, Tiger Global, Bain Capital Ventures, Neo, Primary, Stripes, Positive Sum, and Blackstone."
+  },
+  {
     "firmSlug": "radical-ventures",
     "company": "Intrepid Labs",
     "announcedDate": "2025-05-12",
@@ -7243,46 +9055,58 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "radical-ventures",
+    "company": "TwelveLabs",
+    "announcedDate": "2026-07-01",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Video AI",
+    "sectorEvidence": "a San Francisco, CA-based video intelligence company",
+    "role": null,
+    "coInvestors": [
+      "Index Ventures",
+      "NEA",
+      "NAVER Ventures",
+      "Amazon",
+      "Korea Investment Partners",
+      "Quadrille Capital",
+      "Red Bull Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/twelvelabs-raises-100m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "TwelveLabs, a San Francisco, CA-based video intelligence company, raised $100m in Series B funding.\n\nThe round was co-led by NEA and NAVER Ventures with participation from Amazon, Radical Ventures, Korea Investment Partners, Index Ventures, Quadrille Capital, and Red Bull Ventures."
+  },
+  {
+    "firmSlug": "radical-ventures",
     "company": "Prime Intellect",
     "announcedDate": "2026-07-08",
     "datePrecision": "day",
     "round": "Series A",
     "sector": "AI Infrastructure",
-    "sectorEvidence": "The startup has developed what it calls a 'full stack' for AI agent development, which includes compute access, a reinforcement learning framework, and evaluation tools.",
+    "sectorEvidence": "Prime Intellect is building a full stack for agent development, spanning compute access, environments, sandboxes, evaluations, deployment and large-scale reinforcement learning.",
     "role": "lead",
     "coInvestors": [
-      "Nvidia Ventures",
+      "NVIDIA Ventures",
       "Intel Capital",
       "Dell Technologies Capital",
-      "Iconiq",
-      "Aravind Srinivas",
-      "Aaron Levie",
-      "Winston Weinberg",
-      "Jeff Wang",
-      "Brendan Foody"
+      "ICONIQ"
     ],
-    "sourceUrl": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
-    "sourceType": "reputable-press",
-    "evidence": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents ... The massive round was led by Radical Ventures, with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq, and a long list of angel investors who are founders of notable companies, including Aravind Srinivas (Perplexity), Aaron Levie (Box), Winston Weinberg (Harvey), Jeff Wang (Cognition), and Brendan Foody (Mercor)."
+    "sourceUrl": "https://radical.vc/articles/prime-intellect-owning-the-learning-loop/",
+    "sourceType": "firm-site",
+    "evidence": "This week, Radical Ventures announced our lead investment in Prime Intellect’s $130M Series A, joined by NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and ICONIQ, along with a group of operators building at the frontier."
   },
   {
     "firmSlug": "radical-ventures",
     "company": "Discovery Loop",
     "announcedDate": "2026-08-05",
     "datePrecision": "day",
-    "round": "seed round",
-    "sector": "AI Research Automation",
-    "sectorEvidence": "Discovery Loop is focused on automating this process. Instead of humans running experiments in series, the Discovery Loop team is building AI systems that run thousands of experiments in parallel.",
+    "round": null,
+    "sector": "AI for Science",
+    "sectorEvidence": "run thousands of experiments in parallel - proposing hypotheses, executing tests, analyzing results, and iterating, all without human intervention",
     "role": "lead",
-    "coInvestors": [
-      "Khosla Ventures",
-      "Kleiner Perkins",
-      "Lightspeed",
-      "Doerr Capital"
-    ],
-    "sourceUrl": "https://radical.vc/our-investment-in-discovery-loop/",
-    "sourceType": "firm-announcement",
-    "evidence": "Radical Ventures is very proud to co-lead the seed round of Discovery Loop founded by Jeff Dean, Sanjay Ghemawat, Oriol Vinyals and Quoc Le."
+    "coInvestors": [],
+    "sourceUrl": "https://radical.vc/articles/our-investment-in-discovery-loop/",
+    "sourceType": "firm-site",
+    "evidence": "Radical Ventures is co-leading an investment in Discovery Loop, a public benefit company founded by AI research pioneers Jeff Dean, Sanjay Ghemawat, Quoc Le, and Oriol Vinyals."
   },
   {
     "firmSlug": "ribbit-capital",
@@ -7538,7 +9362,7 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "seed round",
     "sector": "Robotics",
-    "sectorEvidence": "Enigma is launching a large-scale experiment that allows anyone in the world to interact online with more than 100 of its proprietary AI robots.",
+    "sectorEvidence": "To test how humans want to communicate with machines, Enigma is launching a large-scale experiment that allows anyone in the world to interact online with more than 100 of its proprietary AI robots.",
     "role": "lead",
     "coInvestors": [
       "Index Ventures",
@@ -7546,7 +9370,36 @@ const FIRM_DEALS = [
     ],
     "sourceUrl": "https://techcrunch.com/2026/07/27/enigma-raises-70m-to-make-controlling-a-robot-as-easy-as-adjusting-the-volume/",
     "sourceType": "reputable-press",
-    "evidence": "Enigma raised a $71 million seed round led by Index Ventures and Ribbit Capital, with participation from Sarah Guo of Conviction Partners."
+    "evidence": "To finance its mission, Enigma raised a $71 million seed round led by Index Ventures and Ribbit Capital, with participation from Sarah Guo of Conviction Partners."
+  },
+  {
+    "firmSlug": "ribbit-capital",
+    "company": "Base Power",
+    "announcedDate": "2026-08-04",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "Distributed Energy",
+    "sectorEvidence": "an Austin, Texas-based provider of distributed energy solutions and home battery systems",
+    "role": null,
+    "coInvestors": [
+      "a16z",
+      "Addition",
+      "Valor Equity Partners",
+      "JPMorganChase's Strategic Investment Group",
+      "Altimeter",
+      "D1 Capital Partners",
+      "Sands Capital",
+      "Coatue",
+      "Layer Global",
+      "Energy Impact Partners",
+      "Thrive Capital",
+      "Lightspeed",
+      "Trust Ventures",
+      "CapitalG"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/base-power-raises-1-billion-in-series-d-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Base Power, an Austin, Texas-based provider of distributed energy solutions and home battery systems, raised $1 Billion in Series D financing, at $13 Billion valuation.\n\nThe round was led by Ribbit, Addition, Valor Equity Partners, and JPMorganChase's Strategic Investment Group, with participation from Altimeter, D1 Capital Partners, Sands Capital, Coatue, Layer Global, Energy Impact Partners, Thrive Capital, a16z, Lightspeed, Trust Ventures, CapitalG, and others."
   },
   {
     "firmSlug": "sequoia",
@@ -8225,12 +10078,92 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "sequoia",
+    "company": "Chai Discovery",
+    "announcedDate": "2026-07-14",
+    "datePrecision": "day",
+    "round": "Series C",
+    "sector": "AI Drug Discovery",
+    "sectorEvidence": "the company engineering AI models to discover new molecules",
+    "role": "participant",
+    "coInvestors": [
+      "Index Ventures",
+      "Kleiner Perkins",
+      "Dimension"
+    ],
+    "sourceUrl": "https://www.businesswire.com/news/home/20260713849009/en/Chai-Discovery-Announces-$400M-Series-C-to-Advance-AI-Driven-Molecular-Design",
+    "sourceType": "press-release",
+    "evidence": "Chai Discovery, the company engineering AI models to discover new molecules, today announced a $400M Series C fundraise to further accelerate progress. The round, which values the company at $3.8B, was led by Index Ventures alongside Kleiner Perkins, Sequoia Capital and Dimension."
+  },
+  {
+    "firmSlug": "sequoia",
+    "company": "Senra Systems",
+    "announcedDate": "2026-07-15",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Advanced Manufacturing",
+    "sectorEvidence": "a Cypress, CA-based software-driven manufacturing company optimizing wire harness production",
+    "role": null,
+    "coInvestors": [
+      "Andreessen Horowitz",
+      "Lowercarbon Capital",
+      "Interlagos",
+      "General Catalyst",
+      "Founders Fund",
+      "Dylan Field",
+      "CIV",
+      "8VC",
+      "The Friedkin Group",
+      "Jaws Estates Capital",
+      "Sozo Ventures",
+      "Alumni Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/senra-systems-raises-65m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Senra Systems, a Cypress, CA-based software-driven manufacturing company optimizing wire harness production, raised $65M in Series B funding.\n\nThe round was led by Lowercarbon Capital and Interlagos, with participation from General Catalyst, Sequoia Capital, Andreessen Horowitz, Founders Fund, Dylan Field, CIV, 8VC, The Friedkin Group, Jaws Estates Capital, Sozo Ventures and Alumni Ventures."
+  },
+  {
+    "firmSlug": "sequoia",
+    "company": "Bunkerhill Health",
+    "announcedDate": "2026-07-16",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Healthcare AI",
+    "sectorEvidence": "the agentic AI platform health systems use to turn their best ideas into reality",
+    "role": "participant",
+    "coInvestors": [
+      "Khosla Ventures",
+      "Felicis",
+      "Optum Ventures",
+      "Y Combinator"
+    ],
+    "sourceUrl": "https://www.businesswire.com/news/home/20260716806874/en/Bunkerhill-Health-Raises-$55-Million-to-Help-Health-Systems-Turn-Their-Best-Ideas-into-Reality",
+    "sourceType": "press-release",
+    "evidence": "Bunkerhill Health, the agentic AI platform health systems use to turn their best ideas into reality, today announced the close of its Series B funding round, led by Khosla Ventures, with continued participation from Sequoia Capital, Felicis, Optum Ventures, and Y Combinator."
+  },
+  {
+    "firmSlug": "sequoia",
+    "company": "Sable",
+    "announcedDate": "2026-07-16",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "AI Sales Automation",
+    "sectorEvidence": "Sable created 'Aidan,' the first AI employee, who leads its own customer calls with vision, voice, video and real-time browser interaction.",
+    "role": "lead",
+    "coInvestors": [
+      "8VC"
+    ],
+    "sourceUrl": "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million",
+    "sourceType": "reputable-press",
+    "evidence": "Sable has raised $45 million from Sequoia Capital and 8VC to build an AI system called Aidan"
+  },
+  {
+    "firmSlug": "sequoia",
     "company": "Glow",
     "announcedDate": "2026-07-22",
     "datePrecision": "day",
-    "round": "Series A",
+    "round": null,
     "sector": "Cybersecurity",
-    "sectorEvidence": "endpoint security platform that helps enterprises monitor and control the software, AI agents, and developer tools running on employee devices",
+    "sectorEvidence": "Glow gives security teams control over everything that runs on the endpoint. Specialized AI agents continuously map the environment, analyze risk in real time, and enforce policies automatically.",
     "role": "lead",
     "coInvestors": [
       "Cyberstarts",
@@ -8242,9 +10175,44 @@ const FIRM_DEALS = [
       "Operator Collective",
       "Holly Ventures"
     ],
-    "sourceUrl": "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/",
+    "sourceUrl": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+    "sourceType": "company-site",
+    "evidence": "TEL AVIV, Israel and PALO ALTO, Calif., July 22, 2026 - Glow, the AI-powered endpoint security company, today emerged from stealth with $180 million in funding at a $1.2 billion valuation to redefine how enterprises secure the modern endpoint with a prevention-first approach. The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures."
+  },
+  {
+    "firmSlug": "sequoia",
+    "company": "Cathedral",
+    "announcedDate": "2026-07-23",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "Defense Tech",
+    "sectorEvidence": "a New York City-based developer of AI-driven cyber warfare platforms and defensive national security systems",
+    "role": "lead",
+    "coInvestors": [
+      "Andreessen Horowitz (a16z)"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/cathedral-raises-160m-in-funding-at-a-1-4-billion-post-money-valuation.html",
     "sourceType": "reputable-press",
-    "evidence": "Sequoia Capital, Cyberstarts, Greenoaks, and Redpoint Ventures, alongside participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures. ... The investment made Glow one of the latest cybersecurity startups to achieve unicorn status"
+    "evidence": "Cathedral, a New York City-based developer of AI-driven cyber warfare platforms and defensive national security systems, reportedly raised $160m in funding round at a $1.4 billion post-money valuation. The round was co-led by Andreessen Horowitz (a16z) and Sequoia Capital."
+  },
+  {
+    "firmSlug": "sequoia",
+    "company": "Etched",
+    "announcedDate": "2026-07-23",
+    "datePrecision": "day",
+    "round": "Series C",
+    "sector": "AI Inference Hardware",
+    "sectorEvidence": "Etched, the company building frontier inference clusters",
+    "role": "lead",
+    "coInvestors": [
+      "a16z",
+      "Jane Street",
+      "Diffusion",
+      "SK Hynix"
+    ],
+    "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/23/3332366/0/en/etched-raises-300m-at-a-10-3b-valuation-to-scale-production-of-frontier-scale-inference-hardware.html",
+    "sourceType": "press-release",
+    "evidence": "SAN JOSE, Calif., July 23, 2026 (GLOBE NEWSWIRE) -- Etched, the company building frontier inference clusters, today announced $300M in new financing at a $10.3B valuation less than one month after emerging from stealth. The latest round was led by Sequoia, with participation from a16z, Jane Street, Diffusion, and SK Hynix and represents the highest valuation ever for a Sequoia-led Series C."
   },
   {
     "firmSlug": "sequoia",
@@ -8253,7 +10221,7 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Series B",
     "sector": "Nuclear Energy",
-    "sectorEvidence": "Valar was founded with the following ethos: to bring manufacturing economics to nuclear through a vertically integrated business model and unwavering prioritization of hardware.",
+    "sectorEvidence": "to bring manufacturing economics to nuclear through a vertically integrated business model and unwavering prioritization of hardware",
     "role": "lead",
     "coInvestors": [
       "Apandion",
@@ -8267,7 +10235,7 @@ const FIRM_DEALS = [
       "Valor Equity Partners"
     ],
     "sourceUrl": "https://www.valaratomics.com/docs/Announcing-our-1B-Series-B-Led-By-Sequoia",
-    "sourceType": "company-announcement",
+    "sourceType": "company-site",
     "evidence": "Valar Atomics is excited to announce the closing of a $1 billion Series B financing led by Sequoia Capital."
   },
   {
@@ -8277,15 +10245,15 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Seed",
     "sector": "Cybersecurity",
-    "sectorEvidence": "a startup emerging from stealth today with $60 million in seed funding to build AI models for defensive cybersecurity",
+    "sectorEvidence": "a Tel Aviv, Israel-based provider of a foundation model platform purpose-built for defensive cybersecurity",
     "role": "lead",
     "coInvestors": [
       "Khosla Ventures",
       "Coatue"
     ],
-    "sourceUrl": "https://fortune.com/2026/08/10/exclusive-corma-raises-60-million-from-sequoia-for-ai-trained-to-defend-against-cyberattacks/",
+    "sourceUrl": "https://www.finsmes.com/2026/08/corma-raises-60m-in-seed-funding.html",
     "sourceType": "reputable-press",
-    "evidence": "That's where Corma comes in, a startup emerging from stealth today with $60 million in seed funding to build AI models for defensive cybersecurity, led by Sequoia Capital, along with Khosla Ventures and Coatue."
+    "evidence": "Corma, a Tel Aviv, Israel-based provider of a foundation model platform purpose-built for defensive cybersecurity, raised $60M in Seed funding. The round was led by Sequoia Capital, with participation from Khosla Ventures and Coatue."
   },
   {
     "firmSlug": "sequoia",
@@ -8294,7 +10262,7 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Series C",
     "sector": "Defense Tech",
-    "sectorEvidence": "Neros is building a new era of credible deterrence for America and its allies by establishing a domestic drone industrial base in the United States.",
+    "sectorEvidence": "building a new era of credible deterrence for America and its allies by establishing a domestic drone industrial base in the United States",
     "role": "lead",
     "coInvestors": [
       "American Strategic Technology Fund (ASTF)",
@@ -8307,7 +10275,39 @@ const FIRM_DEALS = [
     ],
     "sourceUrl": "https://www.prnewswire.com/news-releases/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs-302848736.html",
     "sourceType": "press-release",
-    "evidence": "Sequoia Capital and American Strategic Technology Fund (ASTF) co-led the $250M Series C for Neros Technologies, which will accelerate production of autonomous drone systems including the Archer AI platform and Bandit interceptor."
+    "evidence": "TORRANCE, Calif., Aug. 11, 2026 /PRNewswire/ -- Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field."
+  },
+  {
+    "firmSlug": "sequoia",
+    "company": "Form Energy",
+    "announcedDate": "2026-08-12",
+    "datePrecision": "day",
+    "round": "Series G",
+    "sector": "Energy Storage",
+    "sectorEvidence": "a Weirton, WV-based provider of multi-day energy storage systems",
+    "role": "participant",
+    "coInvestors": [
+      "T. Rowe Price",
+      "Janus Henderson",
+      "Franklin Templeton",
+      "PEAK6 Investments",
+      "Prelude Ventures",
+      "Engine Ventures",
+      "TPG Rise Climate",
+      "Capricorn's Technology Impact Funds",
+      "Breakthrough Energy Ventures",
+      "Dustin Moskovitz and Cari Tuna",
+      "Gigascale Capital",
+      "Coatue",
+      "Energy Impact Partners",
+      "NGP",
+      "GE Vernova",
+      "Blindspot Ventures",
+      "M&G Catalyst Fund"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/form-energy-raises-750m-in-series-g-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Form Energy, Inc., a Weirton, WV-based provider of multi-day energy storage systems, raised $750M in Series G financing. The round was led by T. Rowe Price with participation from Sequoia Capital, Janus Henderson, Franklin Templeton, PEAK6 Investments, Prelude Ventures, Engine Ventures, TPG Rise Climate, Capricorn's Technology Impact Funds, Breakthrough Energy Ventures, Dustin Moskovitz and Cari Tuna, Gigascale Capital, Coatue, Energy Impact Partners, NGP, GE Vernova, Blindspot Ventures, and M&G Catalyst Fund."
   },
   {
     "firmSlug": "sequoia",
@@ -8322,6 +10322,47 @@ const FIRM_DEALS = [
     "sourceUrl": "https://sequoiacap.com/article/partnering-with-preview-lights-inference-action/",
     "sourceType": "firm-announcement",
     "evidence": "Partnering with Preview: Lights, Inference, Action | Sequoia Capital ... We are thrilled to partner with Stefan and Veljko and to lead their seed round."
+  },
+  {
+    "firmSlug": "sequoia",
+    "company": "Trajectory",
+    "announcedDate": "2026-08-17",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "AI Infrastructure",
+    "sectorEvidence": "a San Francisco, CA-based provider of an AI infrastructure and agent optimization platform",
+    "role": "lead",
+    "coInvestors": [
+      "NVIDIA",
+      "Bessemer Venture Partners"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/trajectory-raises-40m-in-series-a-funding-at-300m-post-money-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Trajectory, a San Francisco, CA-based provider of an AI infrastructure and agent optimization platform, raised $40m in Series A funding at a $300m post-money valuation. The round was led by Sequoia Capital, with participation from NVIDIA and Bessemer Venture Partners."
+  },
+  {
+    "firmSlug": "sequoia",
+    "company": "Rillet",
+    "announcedDate": "2026-08-19",
+    "datePrecision": "day",
+    "round": "Series C",
+    "sector": "Fintech",
+    "sectorEvidence": "a San Francisco, CA-based provider of an AI-native ERP platform for finance teams",
+    "role": "participant",
+    "coInvestors": [
+      "ICONIQ",
+      "Andreessen Horowitz",
+      "Sequoia Global Equities",
+      "Bain Capital Ventures",
+      "Oak HC/FT",
+      "Battery Ventures",
+      "FirstMark",
+      "Scale Venture Partners",
+      "Creandum"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/rillet-raises-100m-in-series-c-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Rillet, a San Francisco, CA-based provider of an AI-native ERP platform for finance teams, raised $100M in Series C funding, at $1 Billion valuation. The round was led by ICONIQ with participation from Sequoia, Andreessen Horowitz, Sequoia Global Equities, Bain Capital Ventures, Oak HC/FT, Battery Ventures, FirstMark, Scale Venture Partners, and Creandum."
   },
   {
     "firmSlug": "softbank-vision-fund",
@@ -8736,6 +10777,71 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "spark-capital",
+    "company": "Oratomic",
+    "announcedDate": "2026-07-07",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Quantum Computing",
+    "sectorEvidence": "Oratomic develops the hardware and software layers engineered to build a commercially scalable, fault-tolerant quantum computer, bypassing noisy intermediate-scale quantum (NISQ) bottlenecks through active topological error correction arrays.",
+    "role": "lead",
+    "coInvestors": [
+      "ARCH Venture Partners",
+      "Khosla Ventures",
+      "Bezos Expeditions",
+      "Index Ventures",
+      "General Catalyst",
+      "Lowercarbon Capital",
+      "Bain Capital Ventures",
+      "Formation 8",
+      "Nebular"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/oratomic-raises-300m-in-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Oratomic, a Pasadena, CA-based developer of fault-tolerant quantum computing architectures and quantum-error correction systems, raised $300m in Series A funding. The round was co-led by ARCH Venture Partners, Spark Capital, and Khosla Ventures, with participation from Bezos Expeditions, Index Ventures, General Catalyst, Lowercarbon Capital, Bain Capital Ventures, Formation 8, Nebular, and prominent quantum computing researchers David and Scott Aaronson."
+  },
+  {
+    "firmSlug": "spark-capital",
+    "company": "K2 Space",
+    "announcedDate": "2026-07-30",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "Space",
+    "sectorEvidence": "K2 Space is a manufacturer of satellites for commercial, scientific, and defense missions.",
+    "role": "participant",
+    "coInvestors": [
+      "Kleiner Perkins",
+      "ICONIQ",
+      "CapitalG",
+      "Lightspeed",
+      "Altimeter",
+      "Sands Capital",
+      "ARK Invest",
+      "T. Rowe Price Associates, Inc."
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/k2-space-raises-500m-in-series-d-funding-at-6-8-billion-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "K2 Space, a Torrance, CA-based company manufacturing satellites, raised $500M in Series D funding, at a $6.8B valuation. The round was led by Kleiner Perkins and ICONIQ with participation from CapitalG, Lightspeed, Altimeter, Spark Capital, Sands Capital, ARK Invest, T. Rowe Price Associates, Inc., and other existing investors."
+  },
+  {
+    "firmSlug": "spark-capital",
+    "company": "Convex",
+    "announcedDate": "2026-08-05",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Developer Infrastructure",
+    "sectorEvidence": "a San Francisco, CA-based reactive backend platform",
+    "role": null,
+    "coInvestors": [
+      "a16z",
+      "Insight Partners",
+      "Etna Labs"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/convex-raises-57m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Convex, a San Francisco, CA-based reactive backend platform, raised $57M in Series B financing.\n\nThe round was led by Insight Partners with participation from Etna Labs, a16z, and Spark Capital."
+  },
+  {
+    "firmSlug": "spark-capital",
     "company": "Lumilens",
     "announcedDate": "2026-08-06",
     "datePrecision": "day",
@@ -8774,8 +10880,8 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Series C",
     "sector": "Defense Tech",
-    "sectorEvidence": "Neros is building a new era of credible deterrence for America and its allies by establishing a domestic drone industrial base in the United States.",
-    "role": "participant",
+    "sectorEvidence": "building a new era of credible deterrence for America and its allies by establishing a domestic drone industrial base in the United States",
+    "role": null,
     "coInvestors": [
       "Sequoia Capital",
       "American Strategic Technology Fund (ASTF)",
@@ -8787,7 +10893,7 @@ const FIRM_DEALS = [
     ],
     "sourceUrl": "https://www.prnewswire.com/news-releases/neros-raises-250m-series-c-at-2-5b-valuation-to-scale-autonomous-and-interceptor-drone-programs-302848736.html",
     "sourceType": "press-release",
-    "evidence": "NEROS RAISES $250M SERIES C AT $2.5B VALUATION TO SCALE AUTONOMOUS AND INTERCEPTOR DRONE PROGRAMS ... The round was co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field."
+    "evidence": "TORRANCE, Calif., Aug. 11, 2026 /PRNewswire/ -- Neros Technologies has announced a $250M Series C at a post money valuation of $2.5B co-led by Sequoia Capital and American Strategic Technology Fund (ASTF) with participation by Interlagos, Valor Equity Partners, Allen & Company, Thiel Capital, Spark Capital, and Dylan Field."
   },
   {
     "firmSlug": "tcv",
@@ -8964,6 +11070,29 @@ const FIRM_DEALS = [
   {
     "firmSlug": "tcv",
     "company": "Fireworks",
+    "announcedDate": "2026-07-15",
+    "datePrecision": "day",
+    "round": "Series D",
+    "sector": "AI Infrastructure",
+    "sectorEvidence": "Fireworks helps companies transform general-purpose models into specialized intelligence trained on their own data and deliver it at scale on the top-performing inference stack.",
+    "role": "lead",
+    "coInvestors": [
+      "Atreides Management",
+      "Index Ventures",
+      "Evantic Capital",
+      "Lightspeed Venture Partners",
+      "Nvidia",
+      "20VC",
+      "Bessemer Venture Partners",
+      "Menlo Ventures"
+    ],
+    "sourceUrl": "https://fireworks.ai/blog/series-d-announcement",
+    "sourceType": "company-site",
+    "evidence": "Today, Fireworks announced a $1.505 billion Series D at a $17.5 billion valuation, led by Atreides Management, Index Ventures, and TCV, with participation from Evantic Capital, Lightspeed Venture Partners, Nvidia, 20VC, Bessemer Venture Partners, Menlo Ventures, and others."
+  },
+  {
+    "firmSlug": "tcv",
+    "company": "Fireworks",
     "announcedDate": "2026-07-16",
     "datePrecision": "day",
     "round": "Series D",
@@ -9013,6 +11142,28 @@ const FIRM_DEALS = [
     "sourceUrl": "https://www.businesswire.com/news/home/20260729713522/en/",
     "sourceType": "press-release",
     "evidence": "Onyx Security, the AI control company, announced a $113 million Series B funding round led by Bessemer Venture Partners, with participation from Cyberstarts, TCV, Conviction, FirstMark, Vintage, QuantumLight and G Squared."
+  },
+  {
+    "firmSlug": "tcv",
+    "company": "Onyx Security",
+    "announcedDate": "2026-07-30",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "AI Security",
+    "sectorEvidence": "a secure AI control plane platform for enterprises",
+    "role": "participant",
+    "coInvestors": [
+      "Bessemer Venture Partners",
+      "Cyberstarts",
+      "Conviction",
+      "FirstMark",
+      "Vintage",
+      "QuantumLight",
+      "G Squared"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/onyx-security-raises-113m-in-series-b-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Onyx Security, a NYC-based provider of a secure AI control plane platform for enterprises, raised $113M in Series B funding. The round was led by Bessemer Venture Partners with participation from Cyberstarts, TCV, Conviction, FirstMark, Vintage, QuantumLight, and G Squared."
   },
   {
     "firmSlug": "threshold-ventures",
@@ -9445,6 +11596,169 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "y-combinator",
+    "company": "Proception.AI",
+    "announcedDate": "2026-07-01",
+    "datePrecision": "day",
+    "round": "seed",
+    "sector": "Robotics",
+    "sectorEvidence": "a Mountain View, California-based developer of dexterous robotic hands and tactile data pipelines for humanoid robots",
+    "role": "participant",
+    "coInvestors": [
+      "First Round Capital",
+      "BoxGroup"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/proception-ai-raises-11m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Proception.AI, a Mountain View, California-based developer of dexterous robotic hands and tactile data pipelines for humanoid robots, raised $11m in seed funding. The round was led by First Round Capital, with participation from Y Combinator and BoxGroup."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Finto",
+    "announcedDate": "2026-07-13",
+    "datePrecision": "day",
+    "round": "seed",
+    "sector": "Accounting Automation",
+    "sectorEvidence": "a Munich, Germany-based developer of AI agents for enterprise accounting automation",
+    "role": null,
+    "coInvestors": [
+      "Gradient",
+      "Lightspeed Venture Partners"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/finto-raises-3-4m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Finto, a Munich, Germany-based developer of AI agents for enterprise accounting automation, raised $3.4m in seed funding. Backers included Y Combinator, Alphabet's Google-focused AI venture fund Gradient, and Lightspeed Venture Partners."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Hadrius",
+    "announcedDate": "2026-07-14",
+    "datePrecision": "day",
+    "round": "Seed and Series A",
+    "sector": "RegTech",
+    "sectorEvidence": "a NYC-based provider of an agentic compliance infrastructure platform for financial services firms",
+    "role": "participant",
+    "coInvestors": [
+      "CRV",
+      "Pathlight Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/hadrius-raises-27m-in-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Hadrius, a NYC-based provider of an agentic compliance infrastructure platform for financial services firms, raised $27M in funding. The round, which consisted of a combination of a Seed and Series A, was led by CRV, with participation from Y Combinator, Pathlight Ventures, and the founders of Altruist, Jump AI, and FINNY."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Singularity",
+    "announcedDate": "2026-07-14",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Defense Tech",
+    "sectorEvidence": "Singularity, a Los Angeles, CA-based defense tech company",
+    "role": null,
+    "coInvestors": [
+      "Khosla Ventures",
+      "Felicis",
+      "AE Ventures",
+      "NEA",
+      "Long Journey",
+      "Harpoon",
+      "Menlo Ventures",
+      "Decisive Point",
+      "New Vista",
+      "Sunflower",
+      "Soma",
+      "General (Ret.) James McConville",
+      "General Jim Dickinson",
+      "Major General (Ret.) Volodymyr Havrylov"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/singularity-raises-80m-in-series-a-at-400m-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Singularity, a Los Angeles, CA-based defense tech company, launched with $80m Series A funding at a $400m valuation. The round was led by Khosla Ventures and Felicis, with participation from seed investors AE Ventures and NEA, as well as Long Journey, Harpoon, Menlo Ventures, Y Combinator, Decisive Point, New Vista, Sunflower, and Soma, as well as dozens of recognized leaders from industry, the military, and Congress, including former U.S. Army Chief of Staff General (Ret.) James McConville, former Commander of United States Space Command General Jim Dickinson, and former Deputy Minister of Defense of Ukraine Major General (Ret.) Volodymyr Havrylov."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Bunkerhill Health",
+    "announcedDate": "2026-07-16",
+    "datePrecision": "day",
+    "round": "Series B",
+    "sector": "Healthcare AI",
+    "sectorEvidence": "the agentic AI platform health systems use to turn their best ideas into reality",
+    "role": "participant",
+    "coInvestors": [
+      "Khosla Ventures",
+      "Sequoia Capital",
+      "Felicis",
+      "Optum Ventures"
+    ],
+    "sourceUrl": "https://www.businesswire.com/news/home/20260716806874/en/Bunkerhill-Health-Raises-$55-Million-to-Help-Health-Systems-Turn-Their-Best-Ideas-into-Reality",
+    "sourceType": "press-release",
+    "evidence": "Bunkerhill Health, the agentic AI platform health systems use to turn their best ideas into reality, today announced the close of its Series B funding round, led by Khosla Ventures, with continued participation from Sequoia Capital, Felicis, Optum Ventures, and Y Combinator."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Emergent",
+    "announcedDate": "2026-07-20",
+    "datePrecision": "day",
+    "round": "Series C",
+    "sector": "AI Software Development",
+    "sectorEvidence": "Emergent, a San Francisco, CA-based provider of an AI software creation platform",
+    "role": null,
+    "coInvestors": [
+      "Khosla Ventures",
+      "Creaegis",
+      "MNI Ventures",
+      "Claypond Capital",
+      "Sentinel Global",
+      "SoftBank Vision Fund 2",
+      "Lightspeed"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/emergent-raises-130m-in-series-c-funding-at-1-5-billion-valuation.html",
+    "sourceType": "reputable-press",
+    "evidence": "Emergent, a San Francisco, CA-based provider of an AI software creation platform, raised $130M in Series C funding, at $1.5 Billion valuation. The round was led by Creaegis, MNI Ventures, Claypond Capital and Sentinel Global, and participation from Khosla Ventures, SoftBank Vision Fund 2, Lightspeed, and Y Combinator."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Vorflux",
+    "announcedDate": "2026-07-20",
+    "datePrecision": "day",
+    "round": "seed",
+    "sector": "Developer Tools",
+    "sectorEvidence": "a Bengaluru, India-based developer of an AI-native autonomous software engineering platform",
+    "role": "lead",
+    "coInvestors": [
+      "Peak XV Partners",
+      "Powerset",
+      "Alliance",
+      "Parker Conrad",
+      "Immad Akhund",
+      "Balaji Srinivasan"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/vorflux-raises-15m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Vorflux, a Bengaluru, India-based developer of an AI-native autonomous software engineering platform, raised $15m in seed funding. The round was led by Y Combinator, Peak XV Partners, Powerset, and Alliance, with participation from Rippling CEO Parker Conrad, Mercury CEO Immad Akhund, and former Coinbase CTO Balaji Srinivasan."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Scape",
+    "announcedDate": "2026-07-27",
+    "datePrecision": "day",
+    "round": "seed",
+    "sector": "Productivity Software",
+    "sectorEvidence": "a Stockholm, Sweden-based developer of an AI-native intelligent email platform",
+    "role": null,
+    "coInvestors": [
+      "General Catalyst",
+      "FundersClub",
+      "Max Junestrand",
+      "Sebastian Knutsson",
+      "Sophia Bendz",
+      "Jacob Wallenberg Jr."
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/scape-raises-3-2m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Scape, a Stockholm, Sweden-based developer of an AI-native intelligent email platform, emerged from stealth mode after raising $3.2m in seed funding. Backers included Y Combinator, General Catalyst, and FundersClub, angels Max Junestrand, Sebastian Knutsson, Sophia Bendz, Jacob Wallenberg Jr., and executives from OpenAI, Google, Meta, and Ramp."
+  },
+  {
+    "firmSlug": "y-combinator",
     "company": "Weave",
     "announcedDate": "2026-07-28",
     "datePrecision": "day",
@@ -9465,22 +11779,104 @@ const FIRM_DEALS = [
   },
   {
     "firmSlug": "y-combinator",
+    "company": "telli",
+    "announcedDate": "2026-07-28",
+    "datePrecision": "day",
+    "round": "seed",
+    "sector": "Customer Communications",
+    "sectorEvidence": "a Berlin, Germany-based developer of an AI-native consumer communication and customer operations platform",
+    "role": "participant",
+    "coInvestors": [
+      "redalpine",
+      "Mutschler",
+      "Marc Bitzer",
+      "Alexa von Bismarck",
+      "Martin Koehler",
+      "Cherry Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/telli-raises-15m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "telli, a Berlin, Germany-based developer of an AI-native consumer communication and customer operations platform, raised $15m in seed funding. The round was led by redalpine, with participation from Mutschler and a syndicate of strategic angel backers including Whirlpool CEO Marc Bitzer, Adyen executive Alexa von Bismarck, and former Lufthansa director Martin Koehler, alongside existing investors Cherry Ventures and Y Combinator."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Centralize",
+    "announcedDate": "2026-07-29",
+    "datePrecision": "day",
+    "round": null,
+    "sector": "Sales Software",
+    "sectorEvidence": "a San Francisco, CA-based provider of a relationship intelligence platform for enterprise revenue teams",
+    "role": "participant",
+    "coInvestors": [
+      "NEA (New Enterprise Associates)",
+      "Salesforce Ventures",
+      "20SALES",
+      "Ritual Capital",
+      "Adverb Ventures",
+      "Stewart Butterfield",
+      "Scott Woody"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/centralize-raises-19m-in-total-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Centralize, a San Francisco, CA-based provider of a relationship intelligence platform for enterprise revenue teams, raised $19M in total funding. The round was led by NEA (New Enterprise Associates) with participation from Salesforce Ventures, Y Combinator, 20SALES, Ritual Capital, Adverb Ventures, Stewart Butterfield, and Scott Woody."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Healia",
+    "announcedDate": "2026-07-29",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Health Benefits",
+    "sectorEvidence": "a Columbus, OH-based provider of a healthcare benefits platform for dual-income families and employers",
+    "role": "participant",
+    "coInvestors": [
+      "111° West Capital",
+      "First Round Capital",
+      "Pioneer Fund",
+      "GoAhead Ventures",
+      "North Coast Ventures"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/healia-raises-14m-in-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Healia, a Columbus, OH-based provider of a healthcare benefits platform for dual-income families and employers, raised $14M in Series A funding. The round was led by 111° West Capital with participation from Y Combinator, First Round Capital, Pioneer Fund, GoAhead Ventures, and North Coast Ventures."
+  },
+  {
+    "firmSlug": "y-combinator",
     "company": "Terminal",
     "announcedDate": "2026-07-29",
     "datePrecision": "day",
     "round": "Series A",
-    "sector": "Insurtech",
-    "sectorEvidence": "Terminal offers a universal application programming interface (API) to connect insurance products and fleet software with telematics data.",
+    "sector": "Telematics Data Infrastructure",
+    "sectorEvidence": "a provider of unified telematics integration technology transforming operations across insurance, fleet management and logistics companies",
     "role": "participant",
     "coInvestors": [
       "Battery Ventures",
-      "Wayfinder Ventures",
-      "Penske Transportation Solutions",
-      "Intact Private Capital"
+      "Intact Private Capital",
+      "Penske",
+      "Wayfinder Ventures"
     ],
-    "sourceUrl": "https://betakit.com/y-combinator-grad-terminal-raises-20-million-usd-series-a-round/",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/terminal-raises-20-million-to-scale-market-leading-telematics-integration-technology-for-fortune-500-companies-across-insurance-fleet-management-and-logistics-302837250.html",
+    "sourceType": "press-release",
+    "evidence": "Terminal, a provider of unified telematics integration technology transforming operations across insurance, fleet management and logistics companies, today announced it closed $20 million in Series A financing led by Battery Ventures, with participation from new strategic investors Intact Private Capital and Penske, and return investors Y Combinator and Wayfinder Ventures."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Dili",
+    "announcedDate": "2026-07-30",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "RegTech",
+    "sectorEvidence": "a NYC-based provider of an AI-native compliance platform for the industries powering America's infrastructure buildout",
+    "role": "participant",
+    "coInvestors": [
+      "Khosla Ventures",
+      "Allianz",
+      "Brick and Mortar Ventures",
+      "Rebel Fund"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/07/dili-raises-15m-in-series-a-funding.html",
     "sourceType": "reputable-press",
-    "evidence": "Y Combinator and Wayfinder Ventures also returned to invest in the round, while Battery Ventures general partner Marcus Ryu will join Terminal's board."
+    "evidence": "Dili, a NYC-based provider of an AI-native compliance platform for the industries powering America's infrastructure buildout, raised $15m in Series A funding. The round, which brought total funding to date to $21.7m, was led by Khosla Ventures, with participation from Y Combinator, Allianz, Brick and Mortar Ventures, and Rebel Fund."
   },
   {
     "firmSlug": "y-combinator",
@@ -9489,24 +11885,24 @@ const FIRM_DEALS = [
     "datePrecision": "day",
     "round": "Series C",
     "sector": "Enterprise AI Agents",
-    "sectorEvidence": "Its platform enables organizations to build, deploy, and manage AI agents that automate complex operational workflows across voice, email, documents, and the web.",
+    "sectorEvidence": "a San Francisco, CA-based provider of an AI agent platform for enterprise operations",
     "role": "participant",
     "coInvestors": [
       "Prysm Capital",
       "Eurazeo",
       "a16z",
       "Base10",
-      "Koch Disruptive Technologies",
+      "Koch Disruptive Technologies (KDT)",
       "Orange",
-      "T.Capital (Deutsche Telekom)",
+      "T.Capital",
       "Bankinter",
       "Endeavor Catalyst",
       "Kfund",
       "Wave-X"
     ],
-    "sourceUrl": "https://www.businesswire.com/news/home/20260804192350/en/HappyRobot-Raises-$150-Million-Series-C-to-Build-Enterprise-Superintelligence",
-    "sourceType": "company-announcement",
-    "evidence": "HappyRobot, the company putting AI agents to work across complex enterprise operations, today announced it has raised $150 million in Series C funding led by Prysm Capital and co-led by Eurazeo. ... Existing investors a16z, Base10, Y Combinator are doubling down with participation from strategics like Koch Disruptive Technologies (KDT), Orange, and T.Capital (Deutsche Telekom), Bankinter, Endeavor Catalyst, Kfund and Wave-X."
+    "sourceUrl": "https://www.finsmes.com/2026/08/happyrobot-raises-150m-in-series-c-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "HappyRobot, a San Francisco, CA-based provider of an AI agent platform for enterprise operations, raised $150M in Series C funding. The round was led by Prysm Capital and Eurazeo with participation from a16z, Base10, Y Combinator, Koch Disruptive Technologies (KDT), Orange, T.Capital, Bankinter, Endeavor Catalyst, Kfund, and Wave-X."
   },
   {
     "firmSlug": "y-combinator",
@@ -9514,8 +11910,8 @@ const FIRM_DEALS = [
     "announcedDate": "2026-08-06",
     "datePrecision": "day",
     "round": "Series A",
-    "sector": "Business Infrastructure",
-    "sectorEvidence": "Naïve supplies a prompt that developers can provide to tools like Cursor, Claude Code, or Codex, which can connect to the company's API to provision the infrastructure to set up a business.",
+    "sector": "AI Agent Infrastructure",
+    "sectorEvidence": "a Palo Alto, CA-based provider of an infrastructure platform for AI agents",
     "role": "participant",
     "coInvestors": [
       "Nexus Venture Partners",
@@ -9523,11 +11919,52 @@ const FIRM_DEALS = [
       "Liquid 2",
       "Gokul Rajaram",
       "Tim Zheng",
-      "JD Sherman"
+      "JD Sherman",
+      "Gert Lanckriet",
+      "Robert Chatwani",
+      "Zachary Sim"
     ],
-    "sourceUrl": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company/",
+    "sourceUrl": "https://www.finsmes.com/2026/08/naive-raises-28-5m-in-series-a-funding.html",
     "sourceType": "reputable-press",
-    "evidence": "Naïve has now raised $28.5 million in a Series A funding round led by Nexus Venture Partners. ... Y Combinator, Zetta, Liquid 2 and angel investors including Gokul Rajaram, Apollo.io co-founder Tim Zheng, and former HubSpot COO JD Sherman also participated in the Series A."
+    "evidence": "Naïve, a Palo Alto, CA-based provider of an infrastructure platform for AI agents, raised $28.5M in Series A funding. The round was led by Nexus Venture Partners with participation from Y Combinator, Zetta, Liquid 2, Gokul Rajaram, Tim Zheng, JD Sherman, Gert Lanckriet, Robert Chatwani, and Zachary Sim."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Discovered Materials",
+    "announcedDate": "2026-08-10",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "Materials Science AI",
+    "sectorEvidence": "a San Francisco, CA-based provider of an AI agent platform that discovers and accelerates the adoption of new materials for semiconductor chips",
+    "role": "participant",
+    "coInvestors": [
+      "Lightspeed India Partners",
+      "Peak XV Partners",
+      "Paul Graham",
+      "Gokul Rajaram",
+      "Thariq Shihipar"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Discovered Materials, a San Francisco, CA-based provider of an AI agent platform that discovers and accelerates the adoption of new materials for semiconductor chips, raised $9M in Seed funding. The round was led by Lightspeed India Partners with participation from Y Combinator and Peak XV Partners, alongside angel investors including Paul Graham, Gokul Rajaram, and Thariq Shihipar."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Axle",
+    "announcedDate": "2026-08-11",
+    "datePrecision": "day",
+    "round": "Series A",
+    "sector": "Insurtech",
+    "sectorEvidence": "a NYC-based provider of an AI-native clearinghouse platform for insurance",
+    "role": "participant",
+    "coInvestors": [
+      "Base10 Partners",
+      "Gradient",
+      "Stage 2 Capital"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/axle-raises-17-5m-in-series-a-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Axle, a NYC-based provider of an AI-native clearinghouse platform for insurance, raised $17.5M in Series A funding. The round was led by Base10 Partners with participation from Y Combinator, Gradient, Stage 2 Capital, and industry angels."
   },
   {
     "firmSlug": "y-combinator",
@@ -9535,16 +11972,16 @@ const FIRM_DEALS = [
     "announcedDate": "2026-08-12",
     "datePrecision": "day",
     "round": "Series B",
-    "sector": "Developer Tools",
-    "sectorEvidence": "Blacksmith helps companies build, test, and verify software before it reaches production.",
+    "sector": "Developer Infrastructure",
+    "sectorEvidence": "a San Francisco, CA-based provider of a cloud platform for validating code",
     "role": "participant",
     "coInvestors": [
       "Peak XV Partners",
       "GV"
     ],
-    "sourceUrl": "https://techcrunch.com/2026/08/12/blacksmiths-valuation-jumps-10x-to-550m-as-ai-coding-fuels-software-validation/",
+    "sourceUrl": "https://www.finsmes.com/2026/08/blacksmith-raises-45m-in-series-b-funding.html",
     "sourceType": "reputable-press",
-    "evidence": "The Series B, led by Peak XV Partners, values Blacksmith at $550 million, up from the $60 million valuation it was assigned when it raised a $10 million Series A less than a year ago. Existing investors GV and Y Combinator also participated, bringing the startup's total funding to $58.5 million."
+    "evidence": "Blacksmith, a San Francisco, CA-based provider of a cloud platform for validating code, raised $45M in Series B funding, at $550M valuation. The round was led by Peak XV Partners with participation from existing investors Y Combinator and GV."
   },
   {
     "firmSlug": "y-combinator",
@@ -9568,23 +12005,77 @@ const FIRM_DEALS = [
     "sourceUrl": "https://www.globenewswire.com/news-release/2026/08/13/3344773/0/en/2-3m-pre-seed-for-lemma-backed-by-matrix-yc-openai-xai-operators-to-fix-silent-ai-agent-failures.html",
     "sourceType": "company-announcement",
     "evidence": "Lemma, a monitoring tool that helps engineering teams catch silent AI agent failures in production, today announced a $2.3 million pre-seed round. ... The round includes participation from Matrix, Y Combinator, Liquid 2 Ventures, Vermilion Cliffs Ventures, Irregular Expressions, Cervin Ventures, Comma Capital, Position Ventures, and Eight Capital, plus angels and operators from OpenAI, xAI, Meta, and DoorDash."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "River Markets",
+    "announcedDate": "2026-08-13",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "Fintech",
+    "sectorEvidence": "a New York City-based financial infrastructure provider for prediction markets",
+    "role": "participant",
+    "coInvestors": [
+      "Haun Ventures",
+      "Coinbase Ventures",
+      "UFO Holdings",
+      "Qube Research & Technologies (QRT)",
+      "TENET",
+      "Humbition",
+      "Kima Ventures",
+      "Cherry Ventures",
+      "Stack Asset Management",
+      "Perpetual Strategies"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/river-markets-raises-8-5m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "River Markets, a New York City-based financial infrastructure provider for prediction markets, raised $8.5m in Seed funding. The round was led by Haun Ventures, with participation from Y Combinator, Coinbase Ventures, UFO Holdings, Qube Research & Technologies (QRT), TENET, Humbition, Kima Ventures, Cherry Ventures, Stack Asset Management, and Perpetual Strategies."
+  },
+  {
+    "firmSlug": "y-combinator",
+    "company": "Hypercubic",
+    "announcedDate": "2026-08-19",
+    "datePrecision": "day",
+    "round": "Seed",
+    "sector": "Enterprise Software",
+    "sectorEvidence": "a San Francisco, CA-based AI infrastructure startup developing a software-driven mainframe modernization platform",
+    "role": "participant",
+    "coInvestors": [
+      "CIV",
+      "Afore Capital",
+      "Multimodal Ventures",
+      "Pioneer Fund",
+      "Epsilon Ventures",
+      "Unpopular Ventures",
+      "Kaz Nejatian",
+      "Venky Harinarayan",
+      "Gokul Rajaram"
+    ],
+    "sourceUrl": "https://www.finsmes.com/2026/08/hypercubic-raises-5-3m-in-seed-funding.html",
+    "sourceType": "reputable-press",
+    "evidence": "Hypercubic, a San Francisco, CA-based AI infrastructure startup developing a software-driven mainframe modernization platform, raised $5.3m in Seed funding. The investment round was led by CIV, with participation from Y Combinator, Afore Capital, Multimodal Ventures, Pioneer Fund, Epsilon Ventures, and Unpopular Ventures, as well as angel investors including Kaz Nejatian (CEO of Opendoor), Venky Harinarayan (co-founder of Walmart Labs), and Gokul Rajaram (Board Member at Coinbase & Pinterest)."
   }
 ];
 
 /* Per-firm research coverage. This is what lets the engine tell
    "this firm announced nothing" apart from "nobody looked", which
-   are identical in a bare row list and must never be conflated.
+   are identical in a bare row list.
 
-   complete:false everywhere - see the header for why that is a
-   property of the domain rather than of this pass. What the record
-   does establish is the WINDOW that was swept and the METHOD used,
-   which is what makes two periods inside it comparable. */
+   Read completeFrom/completeTo for anything comparative. extendedTo
+   is the data horizon and is deliberately NOT the same field, so a
+   future change cannot widen a comparison window by accident. */
 const DEAL_COVERAGE = {
   "8vc": {
     "checkedOn": "2026-08-20",
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "same as the January-June pass: worked 8vc.com first. 8vc.com/resources and its full archive at 8vc.com/resource-category/posts publish one dated, reverse-chronological list of every 8VC post, so the 2026-07-01 to 2026-08-20 slice was walked item by item exactly as the earlier months were: only two posts fall in it, Jul 16 'Announcing Our Investment in Sable' and Aug 13 'Announcing Our Investment in Vals' (the next post below them is Jun 4 'Announcing our Investment in Generalist', already held from the first pass). Each was opened individually and read in full for date, round, amount, co-investors and lead/participate language. 8vc.com/sitemap.xml was pulled and diffed against the feed as before; it added nothing in-window - it still carries the undated 'Worktrace: Introducing the New AI Adoption Layer for Enterprise' post (excluded again, as in H1, because no date anywhere on the site places it in or out of the window) and it does NOT yet contain the Vals post at all, so this pass the sitemap lags the feed rather than extending it. 8vc.com/companies was pulled again and is unchanged in kind: stage labels only, no dates or rounds, so it cannot enumerate participations (Sable now has a portfolio card; Vals appears only via the 'Latest updates' link to the Aug 13 post). Company-side announcements were opened where the 8VC post did not carry the investor list, as in H1: vals.ai/blog returns 404, so no company-side Series A announcement was reachable. TREATMENT OF THE VALS ROW - this follows the H1 Edra precedent exactly: the Aug 13 post announces a Vals Series A led by a16z in which 8VC is NOT named as an investor, and discloses in the same passage that 8VC led Vals' earlier seed. As with Edra (Mar 18), the row is recorded as 8VC's seed, dated to the post that discloses it, with the Series A lead a16z NOT listed as a co-investor because a16z invested in the Series A and not the seed. If the merge treats Edra differently, treat Vals the same way. No independent press sweep was run and no search engine was used, matching H1, where the web-search budget was exhausted before this firm was reached. ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 4 of this firm's July-August rows arrived this way: Senra Systems (2026-07-15); Sila (2026-07-21); Vals AI (2026-08-13); Wispr (2026-08-17). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Not complete, for the same two reasons as H1 and one new one. (1) 8VC's dated post archive is enumerable but demonstrably not exhaustive - H1 proved this with Latus Bio (8VC led a $43M Series A extension announced 2026-05-04 that is not mentioned anywhere on 8vc.com), so an unknown number of unposted July/August participations may exist. Nothing about what 8VC publishes has changed, so complete stays false. (2) No independent press sweep was run, matching H1; coverage outside 8vc.com rests only on company sites reachable from links already in hand. (3) NEW THIS PASS: 8vc.com/sitemap.xml, which H1 used as a cross-check to catch posts missing from the feed, does not list the Aug 13 Vals post - the sitemap now lags the feed, so it can no longer be relied on to surface an omitted August post. MONTH-BY-MONTH SURFACE STATE: JULY 2026 - 8vc.com/resources carries exactly one investment post (Sable, Jul 16); the surface exists and is populated but thin. AUGUST 2026 - thin and, at the tail, effectively unpopulated: the feed's most recent item of any kind is Aug 13 (Vals), so the last seven days of the window (Aug 14-20) have no 8VC posts at all, which is the expected publication lag rather than evidence of inactivity. NO ROWS WERE DROPPED ON THE EVIDENCE RULE FOR THIS FIRM IN THIS WINDOW - both in-window posts carry a contiguous passage naming both 8VC and the company, so the four H1 drops (PointOne 2026-03-24 https://8vc.com/resources/fixing-the-missing-layer-in-legal-ai-introducing-pointone ; Kos.ai 2026-04-20 https://8vc.com/resources/introducing-kos-ai-the-worlds-first-ai-accountant ; Latus Bio 2026-05-04 https://www.businesswire.com/news/home/20260504989731/en/Latus-Bio-Announces-%2497-Million-Series-A-Financing-to-Expand-the-Reach-of-Gene-Therapy-to-Larger-Populations ; Generalist AI 2026-06-04 https://generalistai.com/blog) remain the only 8VC evidence-rule casualties in the merged window and are restated here so they stay recoverable. Also still excluded and still recoverable: the undated Worktrace post (8VC co-led a $9M seed per that post; no date on the site, so it can be placed in neither half of the year).",
+    "extensionRateRatio": 1.77,
     "method": "Worked 8VC's own site first. 8vc.com/resources and its full archive at 8vc.com/resource-category/posts publish a single dated, reverse-chronological list of every 8VC post back to 2009, so the firm's own announcements inside the window could be walked month by month: Jan 26 (essay), Mar 10 (essay), Mar 11 Quince, Mar 18 Edra, Mar 24 PointOne, Apr 20 Kos.ai, May 28 Saris AI, Jun 4 Generalist. 8vc.com/sitemap.xml was pulled and diffed against that list to catch posts missing from the feed; the only extra investment post found was 'Worktrace: Introducing the New AI Adoption Layer for Enterprise', which carries no date anywhere on the site and so could not be placed in or out of the window (8VC co-led a $9M seed in Worktrace AI per that post) - it is NOT included. 8vc.com/companies lists portfolio companies with a stage label but no dates or rounds, so it cannot be used to enumerate participations. Each in-window post was opened individually to read the date, round, amount, co-investors and lead/participate language, and company-side announcements (generalistai.com, businesswire) were opened where the 8VC post did not carry the investor list. Excluded on the merits: Quince (8VC's Mar 11 post celebrates Quince's Series E at a $10B valuation but does not name 8VC as an investor in that round - it says only 'We are proud to have been one of the first investors in Quince'); 'Announcing Our Investment in Branch' (a 2015 Formation 8 post, not 8VC); Sable (Jul 16, 2026) and Vals (Aug 13, 2026), both after the window. Edra is recorded as 8VC's $6 million seed, which 8VC first disclosed publicly in the Mar 18 post announcing Edra's Sequoia-led Series A; 8VC is not named as an investor in the Series A itself. Latus Bio was found only through the press release (8VC led the $43M extension of Latus' $97M Series A) and does NOT appear anywhere on 8vc.com - direct proof that the firm's own feed is not a complete record of its participations. NOTE ON EVIDENCE: the brief requires a verbatim quote naming both firm and company. For the Edra, PointOne, Kos.ai and Generalist rows no single passage in any source found names both parties; the quotes used name one party explicitly and the other is the entity publishing the cited page (8vc.com for Edra/PointOne/Kos.ai, generalistai.com for Generalist). These four rows are flagged here rather than silently dropped. ASSEMBLY-STAGE CROSS-FILL: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and firm B had no row for that company and date, a row was created for firm B FROM THE SAME SOURCE - same URL, same date, same verbatim evidence quote, which was re-checked to name firm B and the company. 8 of this firm's rows arrived this way: Armadin (2026-03-10); Cognition (2026-05-28); Erebor Bank (2026-01-05); Glimpse (2026-03-25); Mendra (2026-01-23); Ramp (2026-06-04); Saronic (2026-03-31); WithCoverage (2026-01-13). Their `role` is null by design: the source often does state who led, but deriving it programmatically would be inference, so it was not attempted. Re-source those rows if role matters.",
     "note": "Not complete. Two independent reasons. (1) 8VC's dated post archive is enumerable but demonstrably not exhaustive: 8VC led the $43M Series A extension in Latus Bio (announced 2026-05-04) and that investment is not mentioned anywhere on 8vc.com, so an unknown number of other unposted participations may exist in the window. (2) The independent press sweep required by the brief could not be run - this session's web-search budget was exhausted before any search for this firm could be issued, and every general search engine reachable by direct fetch (Google, Bing, DuckDuckGo, Mojeek, TechCrunch site search) is blocked by robots.txt, so coverage outside 8vc.com rests only on company sites reached from links already in hand. Additionally, 8VC's undated 'Worktrace' post describes a $9M seed 8VC co-led whose announcement date could not be established, so it is neither included nor ruled out. FOUR VERIFIED 8VC ROUNDS WERE DROPPED for failing the evidence rule, not for being wrong. In each case the deal is real and the source is solid, but no single contiguous passage names both 8VC and the company: PointOne Series A (2026-03-24, 8vc.com post says \"We're proud to lead PointOne's Series A\" - \"we\" is 8VC only because the page is 8VC's); Kos.ai (2026-04-20, same pattern); Latus Bio $43M Series A extension (2026-05-04, the Business Wire body says \"a $43 million extension led by 8VC\" but that sentence does not repeat the company name); Generalist AI (2026-06-04, generalistai.com lists 8VC among new major investors but the sentence does not name the company). I re-fetched all four during assembly to look for a compliant quote and none exists on those pages. They are recoverable with a second source.",
     "sources": [
@@ -9601,6 +12092,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass, on the same surfaces and in the same order. (1) a16z.com/news-content/ - the firm's combined news/articles/podcast feed - was fetched and every item on it enumerated; (2) a16z.com/portfolio/ was re-checked; (3) the /announcement/investing-in-<slug>/ post series was walked by repeated site-scoped search-engine queries and each candidate slug was opened one by one to read its publication date, round, amount, co-investors and lead/participant language; (4) a16zcrypto.com/posts/ (plus its announcements focus-area view) was fetched for the crypto arm's own posts. As in the first pass, those four surfaces were supplemented by per-month press searches over the outlets the first pass used - TechCrunch (including techcrunch.com/tag/a16z/), Fortune, Axios, Bloomberg, The Block, BusinessWire, PR Newswire, GlobeNewswire, FinSMEs and company announcement pages - and every row was verified against an opened page carrying a contiguous verbatim quote naming both a16z and the company. All a16z sub-funds file under firmSlug 'a16z' and the sub-fund's own wording is kept inside the evidence quote where the source used it. Excluded per the brief: a16z's own fund closes, acquisitions, and the Stripe/OpenRouter acquisition report; also excluded were announcements dated outside the window that surfaced during the walk (Mirendil 2026-06-24, Probook 2026-06-23, Endra 2026-06-01, Lassie 2026-06-03, Town 2026-06-03, Ulysses 2026-04-16, GitButler 2026-04-08, Phylo 2026-02-03, QuiverAI 2026-02-25, Pryzm 2025-12-09, Fortuna Health 2025-07-21, Poseidon 2025-07-22). ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 2 of this firm's July-August rows arrived this way: Etched (2026-07-23); Hadrian (2026-08-06). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": false,
+    "extensionNote": "17 rows for 2026-07-01 to 2026-08-20 (July 7, August 10). Every count is a floor; a16z still publishes no dated, enumerable log of every round it joins. Surface-by-surface for this window: (a) a16z.com/news-content/ carried exactly FOUR 'Investing in X' announcements in the window - Runta (2026-07-16), Neo (2026-07-20), Volta (2026-08-04) and Vals (2026-08-13). The feed is still undated on the listing page and still paginates through a JavaScript 'load more' control with no crawlable page/2, feed or API URL, so it cannot be walked backwards; page one was enumerated in full (48 items) and contained no other announcement post. (b) a16z.com/portfolio/ is unchanged and unusable for this purpose - company names and exit status only, no dates and no rounds; it now links to a16z.com/investment-list/, which was opened and is likewise an undated alphabetical directory. (c) The /announcement/investing-in-<slug>/ pattern was walked by search; every additional slug it returned (Mirendil, Probook, Endra, Lassie, Town, Ulysses, GitButler, Phylo, QuiverAI, Tessera Labs, Protege AI, Titan, Fly.io, Fortuna Health, Inferact, Chariot Defense) resolved to a date outside 2026-07-01..2026-08-20. (d) EXPLICIT GAP: a16zcrypto.com/posts/ yielded NOTHING for either July or August 2026. Its post feed shows only articles and research for the period, its /posts/focus-areas/announcements view returns 'No posts found' to a non-JavaScript fetch, and searches for 'Investing in' posts on that host returned only pre-window items (Catena Part II 2026-05-20, Digital Asset, Ornn, Kairos, Arc, Poseidon 2025, Universal 2025, PROOF 2022). So a16z crypto's own surface is empty for BOTH months of this slice; that is a real hole, not a zero. (e) EXPLICIT GAP: the first seven days of July (2026-07-01 to 2026-07-07) produced no a16z round on any surface, and a16z published no announcement post between Netris on 2026-06-25 and Runta on 2026-07-16 - a three-week silence on the firm's own feed. (f) TAIL: the last week of the window (2026-08-14 to 2026-08-20) produced a single row (Rillet, 2026-08-19). Press coverage and FinSMEs write-ups for rounds announced in that week are still landing, so this end of the window is under-captured in the way the brief predicts; no extra source was reached for to compensate. Two further disclosures. (1) DROPPED ON THE EVIDENCE RULE: Prolo (2026-07-14, GBP 4.2M seed, Triple Point Ventures leading) names the 'a16z Scout Fund' as a participant. The Scout Fund is not one of the four sub-funds in the agreed rollup (crypto, speedrun, Bio + Health, American Dynamism) and the January-June pass returned no Scout Fund row, so it was left out for consistency rather than added as a new class of participation - source https://www.finsmes.com/2026/07/prolo-raises-4-2m-in-seed-funding.html if it should be counted. Also noted and not used: FinSMEs maintains dated tag archives (/tag/andreessen-horowitz, /tag/a16z-scout-fund, /tag/andreessen-horowitz-a16z-bio-health) that would function as an enumerable month-by-month feed. Walking them would have searched July and August harder than January was searched, so they were deliberately not used. (2) ROLE SHAPE: the January-June rows left role null on the nine deals that arrived by assembly-stage cross-fill, and nearly every self-researched row there was 'lead'. In this slice the participant rounds were found directly by per-month press search rather than by cross-fill, so their role is set from what the source actually says ('participant') instead of null. Same sources, same evidence standard, but the null-role artefact of the first half does not repeat here - treat a July/August 'participant' and a January-June null as the same thing. Also flagged: Cathedral (2026-07-23) is carried by FinSMEs as 'reportedly raised', but a16z is named outright as co-lead in that same passage and in the Reuters exclusive it follows, so it was included rather than dropped as a rumour.",
+    "extensionRateRatio": 1.82,
     "method": "Worked a16z's own surfaces first: a16z.com/news-content/ (the firm's combined news/articles/podcast feed, which carries an 'Investment News' content-type filter), the /announcement/investing-in-<company>/ post series which is a16z's standard announcement format, a16z.com/portfolio, and a16zcrypto.com/posts. Individual announcement posts were fetched one by one to read the publication date, round, amount, co-investors and lead/participant language. Because the news feed is undated, JS-paginated ('load more') and mixes announcements with articles and podcasts, it could not be walked month by month; announcement URLs were instead discovered via repeated site-scoped search-engine queries plus per-month and per-quarter press searches (TechCrunch, Fortune, Axios, Bloomberg, The Block, BusinessWire, PR Newswire, GlobeNewswire and company/law-firm announcement pages). Every row was verified against an opened announcement carrying a verbatim quote naming both a16z and the company. All a16z sub-funds were treated as a16z and filed under firmSlug 'a16z': rounds from a16z crypto (Kairos, The Better Money Company, Catena Labs, Morpho, Digital Asset, Ornn), a16z speedrun (Smart Bricks), a16z Bio + Health (Telepatia, Prosper AI) and American Dynamism (Chariot Defense, Westmag) are all included. Excluded per the brief: a16z crypto's standalone token purchases that the source does not present as a company financing round (its 2026-01-07 $15M purchase of $BABY tokens and its 2026-05-11 $75M purchase of the ARC token), a16z's own fund closes (the $2.2B crypto Fund V announced 2026-05-05), and announcements dated outside the window (e.g. Unconventional AI 2025-12-08, Gamma 2025-11-10, Reducto 2025-10, FurtherAI 2025-10-07, Supersonik 2025-09-03, Vals 2026-08-13). ASSEMBLY-STAGE CROSS-FILL: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and firm B had no row for that company and date, a row was created for firm B FROM THE SAME SOURCE - same URL, same date, same verbatim evidence quote, which was re-checked to name firm B and the company. 9 of this firm's rows arrived this way: Braintrust (2026-02-18); Decagon (2026-01-29); Hadrian (2026-01-12); Harvey (2026-03-25); LMArena (2026-01-07); Mercury (2026-05-20); Petual (2026-04-23); Saronic (2026-03-31); XDOF (2026-06-19). Their `role` is null by design: the source often does state who led, but deriving it programmatically would be inference, so it was not attempted. Re-source those rows if role matters.",
     "note": "Volume too high to establish completeness, and a16z publishes no dated, enumerable investment log. The portfolio page lists company names and exit status only - no dates, no rounds - so participation in the window cannot be enumerated from it. The news-content feed does carry every 'Investing in X' announcement, but it is undated on the listing page and paginates through a JavaScript 'load more' control with no crawlable page/2, feed or API URL, so it cannot be walked backwards through the six months. Coverage therefore rests on search-engine discovery of a16z.com/announcement/ and a16zcrypto.com/posts/ URLs plus per-month press searches, neither of which can be shown to be exhaustive. 30 announcements in the window were verified and returned; a16z's actual H1 2026 count is certainly higher - probably by a wide margin. Two specific known biases: (1) every row returned has role 'lead', because a16z and its portfolio companies issue announcements overwhelmingly when a16z leads, so rounds where a16z merely participated are systematically under-represented here; (2) April 2026 yielded only two verified rounds versus eleven in June, which is far more likely a search-visibility artefact than a real drop in activity. Also unresolved: whether a16z crypto's token investments (Babylon, Circle's Arc) should count as financings - they were excluded, and if they belong in scope the count rises.",
     "sources": [
@@ -9618,6 +12115,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "same as the January-June pass: enumerated bvp.com/news, the single-page reverse-chronological archive of BVP's own dated investment posts, walking it month by month for July and August 2026; all 7 in-window items (7.9, 7.16, 7.20 x2, 7.28, 7.29, 8.11) are investment write-ups, none were personnel posts, and each was opened to pull the verbatim dek line, round, role and any named co-investors. Then ran the same per-month press searches the H1 pass ran (FinSMEs, PR Newswire, BusinessWire, TechCrunch tag page, fintech.global/tag/bessemer-venture-partners, citybiz, thesaasnews, plus the AlleyWatch monthly largest-round tables continued forward to the July 2026 global and US editions) to catch rounds BVP did not post about, and opened each candidate to verify a contiguous quote naming both firm and company. bvp.com/companies was checked and remains an undated name-and-logo grid. No cross-fill was performed in this slice: the H1 assembly-stage cross-fill happens after all firms are researched, so any July/August rounds where Bessemer is named only inside another firm's source will be added at merge, not here. ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 1 of this firm's July-August rows arrived this way: Neo (2026-07-20). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": false,
+    "extensionNote": "bvp.com/news behaved exactly as it did in H1: dated and enumerable but not exhaustive. It carried 7 of the 14 in-window rows; press search surfaced seven further Bessemer participations with no corresponding BVP post at all (Sila 2026-07-21, Genius AI 2026-07-22, ChipAgents 2026-07-29, Sent 2026-07-30, InRisk Labs 2026-08-05, Malachyte 2026-08-06, Trajectory 2026-08-17). MISSING/PARTIAL SURFACES: the AlleyWatch monthly tables for AUGUST 2026 DO NOT YET EXIST - https://alleywatch.com/2026/09/global-startup-funding-top-largest-august-2026-vc/ returns 404 because that edition is published in early September - so the 2026-08-01 to 2026-08-20 stretch rests on bvp.com/news plus press search only, with no monthly aggregator cross-check. The last ~2 weeks (roughly 2026-08-06 onward) are additionally under-captured because press coverage and BVP's own posting both lag. Act Security (2026-07-28) is recorded with round null: BVP's own post announces a simultaneous seed and Series A totalling $60M and names no single round, and role is null because the BVP dek says only 'backs' (press reporting says Bessemer co-led the seed, but the firm's own site is authoritative and does not say so). Bessemer Venture Partners was distinguished from Bessemer Trust throughout; no Bessemer Trust item entered the set. No in-window round was dropped for lack of usable evidence on the Bessemer side.",
+    "extensionRateRatio": 1.96,
     "method": "Enumerated bvp.com/news, which is a single-page reverse-chronological archive of BVP's own dated investment posts running back to 2018; listed all 25 in-window items, discarded the six that are partner promotions/venture-advisor hires and one founder profile (Vega Health, 6.3.26, which contains no financing statement), and opened each remaining post to pull the verbatim announcement line, round, amount, role and named co-investors. Then ran per-month and per-quarter press searches (PR Newswire, BusinessWire, TechCrunch, fintech.global, AlleyWatch monthly largest-round lists for Feb/Mar/Apr/June 2026) to catch rounds BVP did not post about, and opened each candidate to verify the quote. ASSEMBLY-STAGE CROSS-FILL: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and firm B had no row for that company and date, a row was created for firm B FROM THE SAME SOURCE - same URL, same date, same verbatim evidence quote, which was re-checked to name firm B and the company. 7 of this firm's rows arrived this way: Anthropic (2026-02-12); ClickHouse (2026-01-19); Picogrid (2026-06-01); Saronic (2026-03-31); Sarvam (2026-06-16); Uptool (2026-02-09); Vapi (2026-05-12). Their `role` is null by design: the source often does state who led, but deriving it programmatically would be inference, so it was not attempted. Re-source those rows if role matters.",
     "note": "bvp.com/news is dated and enumerable but is demonstrably NOT exhaustive: press search surfaced four in-window BVP rounds with no corresponding post on it (Converge Bio 2026-01-13, Breaker 2026-02-17, Legora 2026-03-10, Halter 2026-03-24). BVP appears to post only about investments it chooses to write up, and is frequently named merely as a participant in large syndicated rounds it never announces, so additional in-window participations are likely and cannot be ruled out from any surface available. One further in-window round was identified but dropped for lack of usable evidence: Anthropic's $30B Series G (2026-02-12) lists Bessemer Venture Partners among investors, but no single sentence in the source names both the firm and the company. Kandou AI's $225M Series A (2026-03-29) was investigated and dropped because the primary source does not name Bessemer at all.",
     "sources": [
@@ -9635,6 +12138,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass, re-run over 2026-07-01 to 2026-08-20 with no added surfaces. Entity confirmed as Bloomberg Beta, Bloomberg L.P.'s early-stage venture arm; Bloomberg L.P. corporate activity, Bloomberg Media deals and the terminal business remained out of scope and none were recorded. Firm site re-checked and unchanged: bloombergbeta.com is still a one-screen landing page whose only substantive link is the open-sourced Operating Manual on GitHub, with no /news, no /blog and no dated announcements; the GitHub Manual repo carries an undated 'In our portfolio' list and no financing dates, so neither firm surface can place anything in the window. Enumeration therefore ran entirely on press, as before: FinSMEs full-text search for the quoted string \"Bloomberg Beta\" (page 1 walked in full; below its two title-match results it is reverse-chronological and its newest item is 2026-08-18, so page 1 still exhausts the window), TechCrunch's bloomberg-beta tag page walked in full, a Bing News RSS query on \"Bloomberg Beta\", and a cross-check of the sibling July-August files already in this dataset (117 rows across six files) for 'Bloomberg Beta' in another firm's coInvestors list, which independently corroborated Skan AI. Every row carries a contiguous verbatim passage naming both Bloomberg Beta and the company; where FinSMEs splits the company description and the investor list across two adjacent paragraphs, both were taken together as one contiguous passage, which is the same construction used for this firm's H1 rows.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Not complete, though this is the best-populated of the four in this slice: four rows, one in July (Antares Labs, 2026-07-28) and three in August (Skan AI 2026-08-12, Vals AI 2026-08-18, Smack Technologies 2026-08-18). Thin-surface warnings, by month and by surface: JULY 2026 rests on a single surface - FinSMEs has exactly one July item for this firm and nothing else in July, and techcrunch.com/tag/bloomberg-beta/ contains ZERO 2026 articles of any kind, July and August included, so the TechCrunch tag contributed nothing to either month. AUGUST 2026 likewise rests on FinSMEs alone plus one cross-reference corroboration; and although FinSMEs' newest item for the firm is 2026-08-18, that is two days before the collection date, so 2026-08-19 and 2026-08-20 are effectively unobserved and any round announced in that gap is missing by construction rather than by absence. Both firm surfaces are structurally incapable of covering either month: bloombergbeta.com publishes no news or portfolio-updates page and /portfolio 404s, and the GitHub Operating Manual's portfolio file is undated. The dependence on one outlet is the same gap H1 documented and it has not improved - every row in this slice traces to FinSMEs. Bloomberg Beta writes small early-stage cheques and is routinely listed mid-sentence in participant lists, exactly the position that goes unindexed, so this count is a floor. Three of the four rows here (Antares Labs, Skan AI, Smack Technologies, plus Vals AI) were named as out-of-window exclusions in the H1 note and are now correctly in window; no double-count risk exists because H1 excluded them. Antares Labs carries role: null because the source says only 'Backers included' and names no lead - not inferred from ordering. Nothing was dropped for failing the both-parties-verbatim rule in this slice. Surface-health note for a future re-run: the Bing News RSS endpoint returned a bare Bing HTML shell instead of a feed for this firm's query on this run, so that leg of the H1 method produced nothing and should not be assumed live.",
+    "extensionRateRatio": 1.77,
     "method": "Confirmed the entity as Bloomberg Beta, Bloomberg L.P.'s early-stage venture arm; Bloomberg L.P. corporate activity, Bloomberg Media deals and the terminal business were out of scope and none were recorded. Checked the firm site first and the finding is stark: bloombergbeta.com is a one-screen landing page whose only substantive link is to the firm's open-sourced Operating Manual on GitHub. There is no /news, no /blog, and /portfolio returns 404 - the firm publishes no dated investment announcements and no machine-readable portfolio list. Enumeration therefore ran entirely on press: FinSMEs full-text search for the quoted string \"Bloomberg Beta\" (page 1 walked and filtered to 2026; page 2 confirmed to start April 2025, so page 1 exhausts the window there), TechCrunch's bloomberg-beta tag page walked in full (no 2026 items at all), Bing News RSS, and a cross-check against the 140 existing rows for 'Bloomberg Beta' in other firms' coInvestors lists (this independently corroborated Protege and NODA AI). Every row carries a contiguous verbatim passage naming both Bloomberg Beta and the company.",
     "note": "Not complete. The firm does not publish a news or portfolio-updates page - bloombergbeta.com is a single landing page pointing at a GitHub operating manual, and /portfolio 404s - so coverage relies on press search, which cannot be shown to be exhaustive. The gap is visible in the evidence: TechCrunch's own bloomberg-beta tag page contains zero 2026 articles, yet FinSMEs alone yields seven in-window rounds, which shows how much depends on which single outlet happens to index the firm. Bloomberg Beta writes small early-stage cheques and is routinely listed mid-sentence in participant lists, exactly the position that goes unindexed. Excluded on purpose: Antares Labs (2026-07-28), Skan AI (2026-08-12), Vals AI (2026-08-18) and Smack Technologies' $61M Series B (2026-08-18) are all after the window; Poly (2025-11-20) is before it.",
     "sources": [
@@ -9649,6 +12158,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "same as the January-June pass: worked dcvc.com first. The dated, reverse-chronological archive at dcvc.com/news-insights/archive was pulled and walked from the top; its most recent item is 30 Jul 2026 and the in-window items are, in full: 30 Jul 'Relation defines the TechBio sector with AI models transforming drug discovery', 22 Jul 'Welcoming Chief Legal Officer and General Counsel Luis Bacalao to DCVC', 16 Jul 'When the incumbent joins the insurgent: Former Cummins CEO takes the helm at Mainspring', 15 Jul 'Winning the quantum race: America's blueprint for dominating the next tech revolution', 08 Jul 'Is the nuclear renaissance actually happening?', 01 Jul 'DCVC publishes the 2026 Deep Tech Opportunities report', 01 Jul 'DCVC 2026 Q2 update'. dcvc.com/news-insights (the front feed) was pulled separately and shows the same set. archive/p2 was not needed for this slice, since every in-window item sits at the top of page 1. Each in-window item that could plausibly contain a financing was opened and read: Relation (a GSK strategic research collaboration worth up to $110 million in upfront and milestone payments - a partnership, not an equity financing, excluded), Mainspring (CEO appointment, no round), nuclear-renaissance (sector commentary, no round), Bacalao (a DCVC hire), Deep Tech Opportunities report (a publication). THE DECISIVE SURFACE, as in H1: the quarterly update. dcvc.com/news-insights/dcvc-2026-q2-update was re-opened and confirmed published 01 Jul 2026; its FUNDING HIGHLIGHTS section was re-read in full and EVERY financing in it was announced in Q2 or earlier (Atom Computing, Impulse Space, Kanvas Biosciences, Quantum Motion, Recursive Superintelligence, Latus Bio, Sidewinder Therapeutics, Syntax Bio - all already held from the first pass, none announced on or after 2026-07-01), plus the two non-financing items H1 already excluded on the merits (Agility Robotics' SPAC merger, Fervo's Nasdaq IPO) and Rigetti's CHIPS Act award. Per the instruction to follow the same URL pattern forward, https://www.dcvc.com/news-insights/dcvc-2026-q3-update was requested and returns HTTP 404 - it does not exist yet. DCVC Bio continues to roll up to firmSlug 'dcvc' with the 'DCVC Bio' wording kept verbatim inside the evidence quote, exactly as in H1; no DCVC Bio financing falls in this window. Result: ZERO rows. That is a real zero on these surfaces, not a search failure. No independent press sweep was run and no search engine was used, matching H1.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Not complete, and the July-August slice is structurally blind in a way the January-June slice was not. READ THIS BEFORE COMPARING HALVES. Nearly every DCVC row in H1 came from a quarterly 'FUNDING HIGHLIGHTS' section: the Q1 update (01 Apr 2026) covered Jan-Mar and the Q2 update (01 Jul 2026) covered Apr-Jun. The equivalent document for this window is the Q3 update, which by DCVC's own cadence will not publish until roughly 01 Oct 2026; https://www.dcvc.com/news-insights/dcvc-2026-q3-update returns 404 today. So the single surface that carried the firm's H1 count DOES NOT COVER 2026-07-01 to 2026-08-20 AT ALL. A zero here means 'the ledger for this period has not been published yet', not 'DCVC stopped investing'. MONTH-BY-MONTH SURFACE STATE: JULY 2026 - dcvc.com/news-insights and its archive are populated (six items, listed in method) but not one is a financing announcement; every July post is commentary, a hire, a report launch, a portfolio CEO appointment, or the Q2 update looking backwards. AUGUST 2026 - COMPLETELY UNPOPULATED: neither dcvc.com/news-insights nor dcvc.com/news-insights/archive contains a single item dated in August 2026; the most recent item on either surface is 30 Jul 2026, so the final three weeks of the window have no DCVC surface whatsoever. Both facts are the publication lag the brief warns about and neither was compensated for by reaching to other sources. Two further limits carried over from H1: the quarterly updates are 'highlights' and therefore a selection rather than a full ledger, so quiet participations may never appear even once the Q3 update lands; and dcvc.com/companies is alphabetical with no dates or rounds, so it cannot cross-check. One known DCVC participation remains undated and therefore unrecorded in either half: Recursive Superintelligence's $650M stealth emergence, which the Q2 update says DCVC joined but for which no announcement date is establishable from any reachable source. NO ROWS WERE DROPPED ON THE EVIDENCE RULE for this firm in this window - there were no candidate financings to drop.",
+    "extensionRateRatio": 0.0,
     "method": "Worked dcvc.com first. The full archive at dcvc.com/news-insights/archive is dated, reverse-chronological and paginated (260 items, 40 per page); page 1 runs from 30 Jul 2026 back to 17 Nov 2025 and page 2 was also pulled to confirm nothing dated inside the window sits below it, so the window is fully covered by the firm's own feed. The decisive surface, however, is DCVC's quarterly updates - dcvc.com/news-insights/dcvc-2026-q1-update (01 Apr 2026) and dcvc.com/news-insights/dcvc-2026-q2-update (01 Jul 2026) - each of which carries a 'FUNDING HIGHLIGHTS' section that names the portfolio company, the round, the amount and DCVC's role, split into 'DCVC Flagship / DCVC Energy + Climate' and 'DCVC Bio' sub-sections. Every financing in those two sections was taken as a candidate; the linked underlying announcement (PR Newswire, GlobeNewswire, Business Wire, or the company's own newsroom) was then opened to fix the announcement DATE, the round name, the full co-investor list and the lead/participate language. TREATMENT OF DCVC BIO: rounds announced by or attributed to DCVC Bio (AgZen, Latus Bio, Sidewinder Therapeutics, Syntax Bio) are recorded under firmSlug 'dcvc' exactly as instructed, with the DCVC Bio wording preserved verbatim in the evidence quote; DCVC's own quarterly update files them as a sub-section of the same firm update, which supports treating them as DCVC participation. Where the underlying press release does not name DCVC and the company in one passage, the DCVC quarterly update is cited as sourceUrl because that is the document in which DCVC's participation is actually stated; the announcedDate in those rows comes from the underlying company or wire announcement that the update links to (Chariot Defense PR Newswire 2026-02-25; Humans& Reuters slug 2026-01-20; Iceberg Quantum GlobeNewswire dateline 2026-02-12 22:07 ET; Lunar Energy company post 2026-02-04; AgZen GlobeNewswire 2026-03-13; Quantum Motion company post 2026-05-07; Sidewinder company post 2026-04-08; Impulse Space company post 2026-06-03; Atom Computing company release 2026-06-16; Latus Bio Business Wire 2026-05-04; Syntax Bio Business Wire 2026-06-21). EXCLUDED on the merits: Fervo's $421M non-recourse project financing for Cape Station (project debt, DCVC not named as an investor in it); Fervo's Nasdaq IPO (13 May 2026); Agility Robotics' announced SPAC merger with Churchill Capital Corp XI; Rigetti Computing's up-to-$100M CHIPS Act award from the Department of Commerce (a government award, not a financing DCVC joined); Radiant's expansion of its latest financing to over $350M, where DCVC is described only as part of 'previous funding that included DCVC' and is not named as an investor in the expansion; and Recursive Superintelligence's $650M stealth emergence, which DCVC says it joined but for which no announcement date could be established from any reachable source (its own site carries no funding post), so no row could be dated. Not confused with any other 'DCVC Ventures' or with Data Collective's older branding - all rows trace to dcvc.com.",
     "note": "Not complete. DCVC's quarterly updates are the strongest enumeration surface of the three firms in this batch, but they are published under the heading 'FUNDING HIGHLIGHTS', and a highlights list is by construction a selection rather than a full ledger - smaller or quieter participations may simply not be highlighted. dcvc.com/companies lists portfolio companies alphabetically with no dates or rounds, so it cannot be used to cross-check. The independent press sweep the brief asks for could not be run: this session's web-search budget was exhausted before any search for this firm could be issued, and every general search engine reachable by direct fetch is blocked by robots.txt, so nothing outside DCVC's own feed and the announcements it links to could be swept. One known in-window DCVC participation (Recursive Superintelligence, $650M) is missing from the rows purely because no announcement date could be verified.",
     "sources": [
@@ -9666,6 +12181,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "same as the January-June pass: worked delltechnologiescapital.com first. delltechnologiescapital.com/resources is a dated, reverse-chronological 'News & Resources' feed and the whole window again sits at the top of page 1, which was walked item by item: 14 Aug 'Q&A with Skan AI's Avinash Misra and Manish Garg' (a companion interview to the funding post, not a separate financing), 13 Aug 'Context is Key: Skan.ai Delivers AI to Enterprise Customers', 10 Aug 'Winning Your First Enterprise Deal' (GTM essay), 6 Aug 'Meet DTC's Head of Portfolio Development, Chris Falloon' (team post), 24 Jul 'Fly.io: Building Computers for Agents', 8 Jul 'Prime Intellect: Building the Open Super Intelligence Stack'; the next item below is 16 Jun, already held from the first pass. Each of the three items tagged 'Funding' was opened and read in full. As the second surface, delltechnologiescapital.com/companies was pulled in full across all four pages exactly as in H1 and every entry labelled 2026 was checked against the blog: Bland.ai 'Series C 2026', Limitless Labs 'Seed in 2026', Prime Intellect 'Series A in 2026', Sycamore 'Seed in 2026' - the same four as H1, with NO new 2026 entries added for this window, which is itself informative: Fly.io still reads 'Seed in 2020' and Skan AI still reads 'Series B in 2022', confirming the portfolio page records only the round at which DTC first invested and therefore leaves no trace of a follow-on. Where the DTC post did not carry a compliant investor sentence, the other party's own announcement for the same round was opened, exactly as H1 did with bland.ai/blog/series-c: skan.ai (homepage banner -> /skan-ai-raises-series-c -> the full release at /in-the-news/skan-ai-raises-series-c-announcement), primeintellect.ai/blog/series-a, and fly.io plus fly.io/blog. No search engine was used and no new enumeration surface was added; every URL was reached from a link already in hand. ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 2 of this firm's July-August rows arrived this way: Fly.io (2026-08-03); Prime Intellect (2026-07-08). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Not complete, and the single recorded row again understates the firm badly. DTC announced THREE financings in this window and only one of them survives the evidence rule. TWO VERIFIED DELL TECHNOLOGIES CAPITAL ROUNDS WERE DROPPED, both real, both sourced, neither wrong - naming them so they are recoverable: (1) PRIME INTELLECT, $130 million Series A, announced 2026-07-08, DTC post https://www.delltechnologiescapital.com/resources/prime-intellect-building-the-open-super-intelligence-stack - a first-person post where DTC is the publisher, so the investment sentence reads 'Here's why we invested alongside friends at Radical Ventures, NVIDIA Ventures, Intel Capital, and Iconiq' and never names the firm; the company's own announcement https://www.primeintellect.ai/blog/series-a was opened for the same round and fails the mirror-image way, naming the firm but not itself: 'Today, we're announcing that we've raised $130M, led by Radical Ventures, with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and our existing investors.' No contiguous passage on either page contains both 'Prime Intellect' and 'Dell Technologies Capital'. This is the identical failure mode that cost Bland.ai its row in H1. (2) FLY.IO, $25 million Series D co-led with Intel Capital, announced 2026-07-24, DTC post https://www.delltechnologiescapital.com/resources/doubling-down-on-fly-io - again first person: 'Today, we're excited to deepen that partnership by co-leading Fly.io's $25 million Series D alongside Intel Capital.' The only body-text passage naming the firm at all uses the abbreviated form ('At Dell Tech Capital, we look for companies that anticipate where computing is headed rather than reacting to where it has been. Fly.io did that with distributed application infrastructure'), which does not state the participation; the exact string 'Dell Technologies Capital' appears on that page ONLY in the HTML meta/OG/Twitter description ('Dell Technologies Capital co-leads Fly.io's $25M Series D as the company expands from developer infrastructure to computers for AI agents'), which is not visible body text and was not treated as evidence in H1, so it was not treated as evidence here. fly.io and fly.io/blog carry no announcement of the round, so no other-party source exists; an Intel Capital release may well carry a compliant sentence but Intel Capital is not one of this firm's recorded surfaces and no search was run to find one. Both rows are recoverable from a second source. These two join the three H1 drops (Sycamore 2026-03-30 https://www.delltechnologiescapital.com/resources - first-person post; OpenObserve Series A 2026-04-29 - same pattern; Bland.ai Series C 2026-06-16 https://www.bland.ai/blog/series-c - investor list without the company name in the same sentence), making FIVE dropped Dell rows across the merged window against three recorded. Read the Dell count as a floor and nothing more. MONTH-BY-MONTH SURFACE STATE: JULY 2026 - the resources feed is populated with two funding posts (Prime Intellect 8 Jul, Fly.io 24 Jul), so the surface is healthy but BOTH July rows died on the evidence rule and July therefore records zero; that is an evidence artefact, not a quiet month. AUGUST 2026 - populated through 14 Aug (four posts, one of them the Skan AI funding post) but nothing after 14 Aug, so the last six days of the window (Aug 15-20) have no DTC surface, the ordinary publication lag. Structural limits unchanged from H1: the blog is not a financing ledger and DTC does not post every cheque, and the portfolio page carries only first-investment round and year, so any follow-on into an existing portfolio company announced in this window leaves no trace on either surface - demonstrated here by Fly.io and Skan AI, both of which took a round in-window while their portfolio labels still read 2020 and 2022.",
+    "extensionRateRatio": 7.1,
     "method": "Worked delltechnologiescapital.com first. delltechnologiescapital.com/resources is a dated, reverse-chronological 'News & Resources' feed (6 pages); page 1 alone runs from 14 Aug 2026 back to 20 Dec 2025, so the entire window sits on a single page and was walked item by item. Every in-window item was opened: 8 Jan (AI infra essay), 5 Feb Halcyon+Dell, 9 Feb Manifest essay, 30 Mar Sycamore, 6 Apr GTM essay, 27 Apr Akka, 28 Apr GTM essay, 29 Apr OpenObserve, 14 May LayerX, 19 May cybersecurity essay, 15 Jun Entro Security, 16 Jun Limitless Labs, 16 Jun Bland.ai. As a second surface, delltechnologiescapital.com/companies (4 pages) was pulled in full; it labels each portfolio company with the round and YEAR at which DTC invested, so entries reading 2026 were used as a cross-check on the blog: Bland.ai 'Series C 2026', Limitless Labs 'Seed in 2026', Prime Intellect 'Series A in 2026', Sycamore 'Seed in 2026'. All four are accounted for - Prime Intellect's $130M Series A is announced in DTC's own 8 Jul 2026 post with the wording 'Today ... the company announced a $130 million Series A', which places the announcement AFTER the window, so it is excluded. APPLYING THE M&A / PARTNERSHIP RULE: 'Vision to Value: Halcyon + Dell Ransomware Resilience' (5 Feb 2026) is a commercial go-to-market partnership between Dell and Halcyon with no investment announced, and is excluded; 'LayerX joins Akamai' (14 May) and 'Category Creation: Reflecting on Entro Security' (15 Jun) are portfolio-company acquisitions and are excluded; 'AI Powering AKKA's Breakout Moment' (27 Apr) is a portfolio update that refers back to a $25M round DTC led years earlier, not a financing announced in the window, and is excluded. No announcement in the window named 'Dell Technologies' (the parent) rather than 'Dell Technologies Capital' as an investor; the Bland.ai row's evidence quote comes from the company's own post and names 'Dell Technologies Capital' exactly. NOTE ON ROLE: DTC's own post says of Bland.ai's $50M Series C 'which we were proud to lead', while the company's post lists DTC among several investors without designating a lead; per the brief the firm's own site is authoritative, so role is 'lead'. NOTE ON EVIDENCE: for the Sycamore and OpenObserve rows no single passage in any reachable source names both 'Dell Technologies Capital' and the company; the quotes used name the company and the cited page is DTC's own site. Sycamore's round is taken as 'seed' from DTC's portfolio page ('Seed in 2026') since the post itself states no round or amount.",
     "note": "Not complete. DTC's blog is dated and fully walkable for the window, and the portfolio page gives a year-level cross-check, but neither is a financing ledger: the portfolio page records only the round at which DTC first invested (year granularity, no dates), so follow-on participations in existing portfolio companies announced in H1 2026 would leave no trace on either surface, and DTC plainly does not blog every cheque. The independent press sweep the brief asks for could not be run - this session's web-search budget was exhausted before any search for this firm could be issued, and every general search engine reachable by direct fetch is blocked by robots.txt - so no announcement outside delltechnologiescapital.com could be swept for. THREE VERIFIED DELL TECHNOLOGIES CAPITAL ROUNDS WERE DROPPED for the same evidence-rule reason, all real: Sycamore (2026-03-30) and OpenObserve Series A (2026-04-29), both first-person posts on delltechnologiescapital.com where the firm is the publisher rather than a named party; and Bland.ai Series C (2026-06-16), where bland.ai's own post names Dell Technologies Capital in the investor list but not in the same sentence as the company. All three were re-fetched during assembly and no compliant quote exists on those pages. This is why Dell shows only 1 row - the number understates the firm badly and should not be read as inactivity.",
     "sources": [
@@ -9682,6 +12203,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass, re-run over 2026-07-01 to 2026-08-20 with no added surfaces. Treated the firm as Elad Gil investing personally and through his own vehicles (Gil&Co / 'Elad Gil & Co'), which is how announcements name him. Re-checked eladgil.com: still a single static undated bio/portfolio page with no /news, /portfolio or /announcements sub-page and no dated investment list; its only outbound content link remains the Substack. Walked blog.eladgil.com/archive in full: the two 2026 posts are 'Unicorn Market Cap 2026' (Apr 16) and 'Random thoughts while gazing at the misty AI Frontier' (Apr 20), both market commentary, nothing in July or August and no financing announcements at all. Enumeration therefore ran on press exactly as before: FinSMEs full-text search for the quoted string \"Elad Gil\" (page 1 walked in full; it is reverse-chronological below the title matches and its newest item is 2026-08-10, so page 1 still exhausts the window), TechCrunch's elad-gil tag page walked in full (newest item is the Apr 19 opinion piece; no July or August items), a Bing News RSS query on \"Elad Gil\", and a cross-check of the sibling July-August files already in this dataset (117 rows across six files) for 'Elad Gil' or 'Gil&Co' in another firm's coInvestors list, which returned nothing. The one surviving candidate was opened and kept only because the page yields a contiguous verbatim passage naming both Elad Gil and the company.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Not complete, and this slice is thin. JULY 2026 IS EMPTY ON EVERY SURFACE: FinSMEs' \"Elad Gil\" search has no July item at all (it jumps from 2026-05-28 straight to 2026-08-10), the TechCrunch elad-gil tag has nothing after 2026-04-19, blog.eladgil.com has no post after 2026-04-20, and eladgil.com carries no dates. That is a genuine absence on these surfaces, not a filtered-out result. August yielded exactly one row, Cambridge Aerospace (2026-08-10, named as 'Elad Gil & Co'), and the last ten days of August are almost certainly under-captured: FinSMEs shows nothing indexed for him after 2026-08-10, which is the normal press lag near a collection date rather than evidence he stopped investing. The H1 single-source risk is unchanged and is now acute, because with the blog and the TechCrunch tag both silent across July-August, 100% of this slice rests on one outlet's search index. He is a prolific angel usually named in the tail of an investor list, so the true July-August count is very likely higher than one. Nothing was dropped for failing the both-parties-verbatim rule in this slice. Note on surface health: the Bing News RSS query still returned items but none newer than 2026-04-22, and the same RSS endpoint returned a bare Bing HTML shell rather than a feed for two of the four firms this run, so it should be treated as an unreliable surface going forward.",
+    "extensionRateRatio": 0.27,
     "method": "Treated the firm as Elad Gil investing personally and through his own vehicles (Gil&Co), which is how announcements name him ('led by Elad Gil', 'existing investors including ... Elad Gil'). Started at eladgil.com: it is a single static bio page listing a ~25-company portfolio (Airbnb, Anthropic, Brex, Figma, OpenAI, Stripe, SpaceX and others) with NO dates, NO round information, and NO /news, /portfolio or /announcements sub-pages; the only outbound content link is his Substack at blog.eladgil.com, whose archive is market commentary (AI market structure, unicorn market caps, layoffs) and carries no investment announcements at all. There is therefore no firm-published enumerable list. Enumeration fell back to press: FinSMEs full-text search for the quoted string \"Elad Gil\" (page 1 walked in full and filtered to 2026; page 2 confirmed to start in Feb 2025, so page 1 exhausts the window on that source), TechCrunch's elad-gil tag page walked in full (its only 2026 item is an Apr 19 opinion piece, not a financing), Bing News RSS queries, and a cross-check against the 140 rows already in this dataset for rounds where Elad Gil appears in another firm's coInvestors list (this recovered Harvey, Saronic, RunSybil, Applied Compute and Cognition). Every candidate was opened and kept only if the article yielded a contiguous verbatim passage naming both Elad Gil and the company.",
     "note": "Not complete. Elad Gil publishes no dated, enumerable record of his investments anywhere: eladgil.com is an undated portfolio blurb and his Substack carries commentary only, so coverage rests entirely on press search, which cannot be shown to be exhaustive. The single-source risk is demonstrable - FinSMEs surfaced Moab, Petual, BuildForever, Frame Security and NavigateAI that no other surface showed, while the sibling-dataset cross-check independently surfaced Applied Compute (a company-site announcement FinSMEs never covered). Because he is a prolific angel who is frequently named only in the tail of an investor list, and many announcements name him without any outlet indexing him, the true H1 2026 count is very likely higher than the 12 rows returned. Excluded on purpose: Cambridge Aerospace Series C (FinSMEs 2026-08-10, out of window). One row (Applied Compute) uses an elision-marked quote joining the announcement headline and the financing sentence from the same company-site page, because that page's financing sentence is written in the first person and does not repeat the company name.",
     "sources": [
@@ -9696,6 +12223,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass. Entity confirmed as Index Ventures the venture firm (indexventures.com, London/San Francisco); every 'Index' mention was checked in context before use, so index funds/providers and similarly named products are out of scope. Walked page 1 of /perspectives/news/ - still the only retrievable page, still 13 items, still reaching back to 2026-05-31 (Inherent) - and opened every post to read its explicit 'Published' date, which is how the in-window set (Marker 07-09, Chai Discovery 07-14, Enigma 07-27, Simile 07-30, Intelligence 08-03) was fixed and how out-of-window neighbours (Arca 06-25, Conduct 06-17) were excluded. /perspectives itself and sitemap-perspectives.xml were re-checked and are unchanged as surfaces: the listing carries no dates and the sitemap's lastmod values remain bulk site-migration timestamps, so it still cannot be date-filtered. Press was then worked on the same surfaces as H1: TechCrunch's index-ventures tag page (walked in full), the AlleyWatch monthly largest-round table for July 2026, Crunchbase News monthly investor-activity pieces, and July/August keyword searches which surface FinSMEs items. Every candidate was opened and kept only if a single contiguous verbatim passage (adjacent paragraphs of one announcement counted, as in H1) named BOTH Index Ventures and the company. NOT DONE, and different from H1 in one respect outside this slice: the assembly-stage cross-fill of other firms' coInvestors lists cannot be run here, since only two firms were researched in this slice; 7 of this firm's 15 H1 rows arrived that way. ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 1 of this firm's July-August rows arrived this way: Glow (2026-07-22). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Not complete; every count is a floor. (1) The firm's news index remains the best surface either firm offers but only its first page is retrievable, so it enumerates roughly the trailing three months and nothing older; for this slice that happens to cover the whole window, which is why July is comparatively well covered here. It only lists rounds Index chooses to post about: the five posts it yielded are a subset of Index's July activity. Crunchbase News (2026-08-07) reports Index Ventures among the most active investors of July 2026 with nine rounds led or co-led, against five in-window July rows recovered here, so the July figure is a floor by at least that margin. (2) AUGUST SURFACE GAP: AlleyWatch has published no monthly largest-rounds table for August 2026 (only daily and weekly reports, which the H1 method did not use and which were not substituted), and the firm posted only one investment item in August (Intelligence, 08-03) plus a non-deal anniversary post. August therefore rests on the firm's news page, the TechCrunch tag page and keyword search alone, and the final two weeks before 2026-08-20 are further under-captured by normal press lag. (3) DROPPED ON THE EVIDENCE RULE: none in this window. Two posts would have been dropped on it - Enigma (the Index post is written in the first person, 'we're excited to lead their $71 million seed round') and Simile (same, 'we're thrilled to double down on our investment in Simile') - but both were recovered from press that names both parties in one passage (TechCrunch 2026-07-27; FinSMEs 2026-07-30), so no in-window Index row is being withheld. For the record, the H1 losses that remain unrecovered and should be re-sourced are Flapping Airplanes (2026-01-28), Alan (2026-03-11), Scope (2026-05-19), Inherent (2026-05-31), fomo (2026-06-22) and Build (2026-06-29). (4) Excluded on purpose: Index's own fund close (raised $2B/$3.5B across three funds, TechCrunch 2026-07-31) is a fund raise, not a financing the firm participated in; '30 Years In. Perfecting Our Craft.' is a firm anniversary post, not a deal. (5) Declined on purpose, to keep effort identical to H1: FinSMEs maintains a /tag/index-ventures/ archive (57 pages) that would enumerate press coverage of this firm far more completely than H1's keyword searches did. It was not used, for the same reason as with Lightspeed - it would inflate July-August relative to January-June through effort alone.",
+    "extensionRateRatio": 2.22,
     "method": "Confirmed entity as Index Ventures (indexventures.com, London/San Francisco); every 'Index' mention was checked against context and against the firm's own post before use, so Index Capital / index-fund advisers are not in scope. indexventures.com has no /news path (404); its enumeration surface is /perspectives, filtered to /perspectives/news/, plus /companies (an undated portfolio index). Index DOES post a dated item for most of its own new investments ('Our Investment in X'), and each article page carries an explicit 'Published - <date>' line, which is the best surface either firm offers. Two limits on it: the listing page shows no dates, and its pagination (advertised as 125 news pages) is client-side, so pages 2+ could not be retrieved - repeated attempts at /perspectives/news/2/, /perspectives/news/page/2/ and ?page=2 all returned page 1 or 404. sitemap-perspectives.xml exists but its lastmod values are bulk site-migration timestamps from Jul-Aug 2026, not publication dates, so it cannot be date-filtered. I therefore walked page 1 of /perspectives/news/ (which reaches back to 2026-05-31) and opened all 13 posts to read their published dates, then used site-scoped and general press search to recover earlier 2026 posts (Flapping Airplanes, Alan, Parallel, Scope, Wonderful) plus press-only rounds, and cross-checked against TechCrunch's index-ventures tag page and AlleyWatch monthly tables. Every candidate was opened and only kept if it yielded a single contiguous verbatim passage naming BOTH Index Ventures and the company. ASSEMBLY-STAGE CROSS-FILL: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and firm B had no row for that company and date, a row was created for firm B FROM THE SAME SOURCE - same URL, same date, same verbatim evidence quote, which was re-checked to name firm B and the company. 7 of this firm's rows arrived this way: Decagon (2026-01-29); Evervault (2026-03-05); Frame Security (2026-05-11); Garner Health (2026-05-28); Ineffable Intelligence (2026-04-27); Parallel Web Systems (2026-04-29); Taktile (2026-06-22). Their `role` is null by design: the source often does state who led, but deriving it programmatically would be inference, so it was not attempted. Re-source those rows if role matters.",
     "note": "Not complete. The firm's news index is the right surface but only its first page is retrievable - that page reaches back to 2026-05-31, meaning five of the six months in the window (January to late May) could not be enumerated from the firm site at all and rest on press search, which cannot be shown to be exhaustive. Evidence that rounds are being missed: my June-only firm-site coverage yields seven Index posts in a single month, while Jan-May yields only four, which is a retrieval artefact rather than a real activity pattern; and AlleyWatch's February and June tables independently name Index in rounds (Temporal Technologies Series D, Alan Series G) that the accessible surfaces had not surfaced. Additionally, several in-window Index posts were positively dated but are NOT returned because the post is written in the first person ('we', 'our') and contains no contiguous verbatim passage naming both Index Ventures and the company, and search quota was exhausted before a press substitute could be found: Flapping Airplanes co-led round (2026-01-28), Alan follow-on at ~$6B valuation (2026-03-11), Scope $20M round (2026-05-19), Inherent $50m seed (2026-05-31), fomo $75M Series B (2026-06-22), Build seed round (2026-06-29). These are genuine in-window participations and should be re-sourced. Excluded on purpose: Aetherflux (TechCrunch 2026-03-27 reported it only as 'reportedly raising'), and Index's own $2B/$3.5B fund close (a fund raise, announced 2026-07-31, outside the window). Posts checked and confirmed OUT of window: Wonderful (2025-11-11), Marker (2026-07-09), Chai Discovery (2026-07-14), Enigma (2026-07-27), Simile (2026-07-30), The Intelligence Company (2026-08-03).",
     "sources": [
@@ -9715,6 +12248,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass, re-run over 2026-07-01 to 2026-08-20 with no added surfaces. Entity confirmed as Initialized Capital (initialized.com). Walked the firm's enumeration surface first: initialized.com/ideas and its mirror blog.initialized.com/2026/ were both read in full. Both stop at 'The AI World Requires New Materials' (2026-06-30, the Arcturus post); there is no July or August 2026 post of any kind, investment announcement or otherwise. Re-checked initialized.com/companies: still an undated portfolio index of ~200 names with no round or date information, so it cannot place anything in the window. Then ran the same press layer: FinSMEs full-text search on \"Initialized\" (page 1 walked in full; below its three title-match results it is reverse-chronological and its newest 2026 item is Arcturus on 2026-06-30, so page 1 covers the window) and TechCrunch's initialized-capital tag page walked in full (newest item is the Arcturus piece, 2026-06-30). No candidate financing announced between 2026-07-01 and 2026-08-20 surfaced on any of the four surfaces, so this slice returns zero rows.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Not complete, and this slice is EMPTY: zero rows for 2026-07-01 to 2026-08-20. BOTH JULY AND AUGUST 2026 ARE UNPOPULATED ON EVERY SURFACE. Named explicitly: (1) blog.initialized.com/2026/ and initialized.com/ideas - no July post, no August post; the 2026 archive ends at 2026-06-30. (2) FinSMEs \"Initialized\" search - no July item, no August item; its newest 2026 result is 2026-06-30. (3) techcrunch.com/tag/initialized-capital/ - no July item, no August item; newest is 2026-06-30. (4) initialized.com/companies - undated, so structurally incapable of covering any month. A zero here should be read as 'no in-window Initialized participation was indexed by these four surfaces', NOT as 'Initialized made no investments'. The H1 finding still holds and bears directly on this: neither the blog nor the press subsumes the other (Seamflow, Crewline AI and Picogrid had press but no blog post; Enhanced Radar had a blog post but no press), so a July or August seed cheque with neither a blog post nor a FinSMEs writeup is invisible to this method by construction. The firm's blog is editorial and posts roughly monthly at best, so a two-month gap in it is within its normal cadence and is not evidence of inactivity. Also note the July-August tail effect: this firm writes small seed and pre-seed cheques, exactly the size that is slowest to be indexed, so any August activity would be the least likely of all four firms to have appeared by 2026-08-20. Nothing was dropped for failing the both-parties-verbatim rule, because no candidate reached that test. For a future whole-window re-run, initialized.com/companies could be diffed against a prior snapshot to detect silent portfolio additions; that was not done here because it is not part of the recorded method.",
+    "extensionRateRatio": 0.0,
     "method": "Confirmed the entity as Initialized Capital (initialized.com), still trading under that name after its 2024 leadership change and partner restructuring. The site's enumeration surface is /ideas, which mirrors blog.initialized.com, a dated WordPress blog with month archives; I walked blog.initialized.com/2026/ and the /ideas index and opened all five 2026 posts, all of which turned out to be investment announcements (The Bland Company 2026-02-12, Alien 2026-04-01, 10x Science 2026-04-22, Enhanced Radar 2026-05-13, Arcturus 2026-06-30). /companies is an undated portfolio index and carries no round or date information. Because the blog is editorial rather than a complete deal log, I then ran FinSMEs full-text search on \"Initialized\" (page 1 filtered to 2026; page 2 confirmed to start June 2025) and walked TechCrunch's initialized-capital tag page in full. Where the firm's own post was first-person ('we led their round') and gave no contiguous passage naming both parties, I re-sourced the row from press (FinSMEs or TechCrunch) rather than dropping it. Every row carries a contiguous verbatim passage naming both Initialized and the company.",
     "note": "Not complete. The firm does publish a dated blog, but that blog is demonstrably not a complete record of its investments: Seamflow (2026-02-11), Crewline AI (2026-04-22) and Picogrid (2026-06-01) are in-window Initialized participations that appear in press but have no blog post, while Enhanced Radar (2026-05-13) has a blog post and no press coverage I could find. Neither surface subsumes the other, so neither can establish completeness, and a seed-stage firm's smaller cheques frequently go unindexed entirely. Excluded on purpose: Sygaldry Technologies' $105M Series A (FinSMEs 2026-04-14) - the article names Initialized Capital only as lead of the company's EARLIER $34M seed round, and Initialized is not named in the Series A investor list, so participation in the announced financing is not established. Also excluded: Feanix (2025-12-18) and PermitFlow (2025-12-02/03), both announced before the window.",
     "sources": [
@@ -9730,6 +12269,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass: the intelcapital.com month archives are the enumeration surface (the /news/ listing is a JavaScript 'Load More' that stops at ~12 items, there is no sitemap and the WordPress REST API is locked), so /2026/07/ and /2026/08/ were walked in full and every post in them was opened individually. Kept only where the post body yielded a contiguous verbatim passage naming BOTH Intel Capital and the company. /news/ was also re-fetched as a check on the two month archives and listed exactly the same July and August items. Spin-out status re-checked and unchanged: nothing on the July or August surface describes Intel Capital as independent, spun out or renamed, so all rows stay under firmSlug intel-capital, consistent with the H1 pass (Intel announced the spin-out 2025-01-14 and reversed it 2025-04-24). No Intel Corporation product, foundry or M&A items were recorded. Two real, in-window rounds were DROPPED on the evidence rule: Eliyan's $145M Series C (posted 2026-07-29) - the string 'Intel Capital' does not appear anywhere in the release body, which credits Seligman Ventures as lead with Cisco Investments, Lumentum and unnamed 'existing investors'; and Xsight Labs' $300M+ round (posted 2026-07-30) - 'Intel Capital' appears only inside the investor list sentence ('The round was led by Fidelity Management & Research Company with participation from ... Intel Capital ...') and the string 'Xsight' does not occur in that paragraph, so no contiguous passage names both parties. Two July posts were opened and correctly yielded no row: 'The AI Sky Above the Clouds' (2026-07-15), a thematic Neocloud essay announcing no financing, and the second Prime Intellect post, which duplicates the 2026-07-08 round already recorded.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Coverage still rests almost entirely on the firm's own curated newsroom month archives, which demonstrably carry portfolio news the firm was not part of (Oxide, H1) and may equally omit participations that generated no company press push. SURFACE STATE BY MONTH: /2026/07/ was fully populated (7 posts, 2026-07-01 to 2026-07-30) and is the healthiest month archive of the year; /2026/08/ exists and is populated but is THIN and, being the current month, is partial by construction - it carries only 3 posts (2026-08-03 Zenity, and two 2026-08-19 Higgsfield posts) with nothing at all between 2026-08-04 and 2026-08-18 and nothing after 2026-08-19, so August rounds Intel Capital joined in the last fortnight before the 2026-08-20 cut are expected to be under-captured. The independent cross-check remains unavailable in the same way as in H1: TechCrunch's intel-capital tag page carries no 2026 items, and the portfolio page has no dates or round data. Two in-window July rounds Intel Capital really did join (Eliyan 2026-07-29, Xsight Labs 2026-07-30) are named in `method` as evidence-rule drops and are recoverable from those URLs if the rule is relaxed.",
+    "extensionRateRatio": 2.37,
     "method": "Established spin-out status first: Intel announced in January 2025 that it would spin Intel Capital out into a standalone fund (TechCrunch, 2025-01-14), but Intel REVERSED that decision on 2025-04-24 - CEO Lip-Bu Tan on the Q1 earnings call: \"We have made the decision not to spin off Intel Capital, but to work with the team to monetize our existing portfolio, while being more selective on new investments.\" The spin-out therefore never completed, there was no rename, and throughout 2026-H1 Intel Capital operated as Intel Corporation's corporate venture arm under the intelcapital.com brand; its own site still describes it as \"the first corporate venture capital firm\" with no mention of independence. All rows are recorded under firmSlug intel-capital. No Intel Corporation product, foundry or M&A announcements were recorded. Enumeration: intelcapital.com/news/ is a dated newsroom but its listing is a JavaScript 'Load More' that stops at ~12 items, and the site has no sitemap and a locked WordPress REST API; the month archives DO work, so /2026/01/ through /2026/06/ were each walked in full (June 2026 returns 404 = no posts that month, confirmed against a working /2026/07/ archive). Every 2026-H1 post was opened individually and kept only where the body yielded a contiguous verbatim passage naming BOTH Intel Capital and the company. Oxide Computer Company's $200M Series C (posted 2026-02-10) was DROPPED: the phrase 'Intel Capital' does not appear anywhere in the release body, which credits USIT, Eclipse, Riot Ventures, Jane Street 'and other existing investors' - showing the newsroom also carries portfolio news the firm did not participate in.",
     "note": "Coverage rests almost entirely on the firm's own newsroom month archives, which is a genuine dated enumerable surface but is a curated PR surface: it demonstrably carries portfolio news the firm was not part of (Oxide) and therefore may equally omit participations that generated no company press push. The session's web-search budget was exhausted before this firm was worked and every general search engine (DuckDuckGo, Bing, Mojeek, Brave, Ecosia, Yahoo, Startpage, Google News RSS) is blocked by robots.txt for the fetch tool, so the brief's step-3 press cross-check could not be run at all; the only independent surface reachable was TechCrunch's intel-capital tag page, which carries no 2026 items. The portfolio page carries no dates or round data. Rounds Intel Capital joined in H1 2026 without a newsroom post cannot be ruled out, so completeness cannot be claimed.",
     "sources": [
@@ -9750,6 +12295,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass. khoslaventures.com was re-checked on the same two surfaces and behaved identically: /portfolio is still an undated, category-grouped list of company names with no dates and no round information, and /posts/rss.xml still carries only podcasts, op-eds and founder-advice items - it contained exactly one item in the July-August window (JAMA op-ed, 2026-08-17) and zero financing announcements, so no firm-post-triggered cross-check to a primary press release was available in this window (in H1 that cross-check fired only for Rogo). Because the firm again publishes no enumerable investment list, coverage was rebuilt from press exactly as in H1: the FinSMEs Khosla Ventures tag archive was walked forward from the top, pages 1-2, which reach back to 2026-06-25 and therefore fully cover 2026-07-01 onward; every item dated in the window was opened and the article's own opening company-description sentence and investor sentence were copied verbatim. No new enumeration surface was added. The assembly-stage cross-fill from other firms' rows that produced 2 of this firm's H1 rows is not repeated here - that step belongs to merge, not to this slice. ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 1 of this firm's July-August rows arrived this way: Mariana Minerals (2026-08-04). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Khosla Ventures still publishes no dated list of its investments, so completeness cannot be established from the firm's own site and every count is a floor. The single enumeration surface (FinSMEs' investor tag) remains demonstrably lossy - the H1 finding stands, since Uptool (2026-02-09) names Kleiner Perkins in its body yet is absent from the Kleiner Perkins tag and Stord (2026-05-26) names Lux yet is absent from the Lux tag - so the same under-tagging must be assumed for Khosla in July and August. AUGUST TAIL: the FinSMEs Khosla tag is thin and almost certainly incomplete for August 2026 - it holds 4 in-window August items against 11 for July, its most recent entry is 2026-08-18, and the last two days of the window (2026-08-19 and 2026-08-20) are unpopulated on that surface. khoslaventures.com contributed nothing in either month: no financing post in July 2026 and none in August 2026 on the RSS feed, which is the firm's only dated surface. Khosla is a high-volume seed investor and many seed cheques are never announced, so the true July-August count is very likely higher than the 15 rows returned. Judgement carried forward on entity boundaries: no row here rests on 'Vinod Khosla' personally - announcements naming only the individual and not the firm were not counted, and none were found in this window that would have qualified. One row is weaker than it looks: WindBorne Systems (2026-08-05) reads 'The round was by Khosla Ventures and Galvanize with participation from...' - the word 'led' is absent from the sentence as published (verified twice against the page), so role was left null rather than inferred, even though the sentence structure puts Khosla in the lead slot. No in-window item was dropped for failing the verbatim both-parties evidence rule.",
+    "extensionRateRatio": 1.98,
     "method": "Walked khoslaventures.com in full: there is no /news or /announcements section, the /portfolio page lists companies by category with no dates or round information, and the site's only dated feed (/posts/rss.xml, 100 items) carries podcasts, op-eds and founder-advice posts - it contains zero financing announcements, and only five items at all in the window. Because the firm publishes no enumerable investment list, coverage was rebuilt from press: FinSMEs' Khosla Ventures tag archive was paginated back from August 2026 through December 2025 (pages 1-4), every H1-2026 item was opened, and each row's investor sentence was copied verbatim. Cross-checks against primary press releases were done where the firm's own posts or a company release existed (e.g. Rogo). ASSEMBLY-STAGE CROSS-FILL: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and firm B had no row for that company and date, a row was created for firm B FROM THE SAME SOURCE - same URL, same date, same verbatim evidence quote, which was re-checked to name firm B and the company. 2 of this firm's rows arrived this way: Mach Industries (2026-06-01); NavigateAI (2026-05-27). Their `role` is null by design: the source often does state who led, but deriving it programmatically would be inference, so it was not attempted. Re-source those rows if role matters.",
     "note": "Khosla Ventures publishes no dated list of its investments, so completeness cannot be established from the firm's own site. The enumeration surface used (FinSMEs' investor tag) is demonstrably incomplete: Uptool (2026-02-09) names Kleiner Perkins in its body but is absent from the Kleiner Perkins tag, and Stord (2026-05-26) names Lux but is absent from the Lux tag, so the same under-tagging must be assumed here. Khosla is a high-volume seed investor and many seed cheques are never announced at all, so the true H1-2026 count is very likely higher than the 32 rows returned. Separately, no row here rests on 'Vinod Khosla' personally; announcements naming only the individual were not counted, and none were found in the window that would have qualified.",
     "sources": [
@@ -9764,6 +12315,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass, with the recorded WordPress REST API query re-run on the new bounds: kleinerperkins.com/wp-json/wp/v2/posts?after=2026-07-01T00:00:00&before=2026-08-21T00:00:00&per_page=100, which returned all 5 posts published in the window with exact publication dates (Etched 2026-08-18; K2 Space 2026-07-30 and a 2026-07-27 duplicate; CuspAI 2026-07-20 and a second 2026-07-20 duplicate). Each was opened and classified as financing / not-financing. post-sitemap.xml was re-checked and is stale - its most recent lastmod is 2026-03-20, so it carries nothing for July or August and was not relied on, exactly as in H1. That set was then unioned with the FinSMEs Kleiner Perkins tag archive, walked forward from the top; page 1 reaches back to 2026-06-26 and therefore fully covers 2026-07-01 onward. As in H1, KP's own posts say 'we' rather than 'Kleiner Perkins' (K2: 'We're proud to lead K2's Series D'), so no evidence quote was taken from them; every quote comes from the round's own reputable-press coverage. No new enumeration surface was added.",
+    "extensionMethodChanged": false,
+    "extensionNote": "KP's Perspectives feed remains dated and fully enumerable via the WP REST API and remains a poor record of participation: of the 5 posts in the window, only K2 Space is an investment announcement (CuspAI's post is a July write-up of a round announced 2026-06-22 and already held in the H1 slice; the Etched post is a progress/perspectives piece that announces no financing at all, even though KP is named in Etched's 2026-08-19 $700M round), while Chai Discovery and TerraFirma were never posted there. Completeness therefore still depends on press enumeration, which cannot be shown exhaustive - FinSMEs' own tagging is provably lossy (Uptool names Kleiner Perkins in its text yet is missing from the Kleiner Perkins tag). AUGUST TAIL: the KP FinSMEs tag has exactly ONE in-window August 2026 item (Etched, 2026-08-19) against three for July, and KP's own Perspectives feed has one August post (2026-08-18) which is not a financing - August is the thin month on both surfaces. post-sitemap.xml was flatly unpopulated for both July and August 2026 (nothing after 2026-03-20) and contributed nothing. Excluded as out of window: CuspAI, whose Series B KP co-led but which was announced 2026-06-22 and belongs to the H1 slice - the KP post about it is dated 2026-07-20 but the announcement date is what governs. One judgement call: Chai Discovery (2026-07-14) reads 'was led by Index Ventures alongside Kleiner Perkins, Sequoia Capital and Dimension' - 'alongside' is neither an explicit 'co-led by' nor a 'participation from', so role was left null rather than inferred either way. No in-window item was dropped for failing the verbatim both-parties evidence rule.",
+    "extensionRateRatio": 0.49,
     "method": "Enumerated kleinerperkins.com/perspectives exhaustively via its WordPress REST API (wp-json/wp/v2/posts, paged, filtered after=2026-01-01 & before=2026-07-01) which returned all 31 posts published in the window with exact publication dates; the public /perspectives index shows no dates and the post-sitemap lastmod values are bulk site-migration timestamps, so neither is usable. Each post was opened and classified as financing / not-financing (Q, Waymo, Alkira, Stord, Motive, Profound-June, KP22 fund close were checked individually). KP posts say 'we' rather than 'Kleiner Perkins', so for every deal the verbatim quote was taken from the round's own press release or reputable press. That set was then unioned with FinSMEs' Kleiner Perkins tag archive (pages 1-4, paginated back past 2025-12-31), which surfaced 20+ further rounds KP never posted about.",
     "note": "Kleiner Perkins' own Perspectives feed is dated and fully enumerable, but it is NOT a complete record of participation: Waymo, Profound, Phia, LMArena, Synthesia, Harvey, Vapi, Uptool and roughly fifteen other H1-2026 rounds KP is named in were never posted there. Completeness therefore depends on press enumeration, which cannot be shown to be exhaustive - FinSMEs' own tagging is provably lossy (Uptool names Kleiner Perkins in its text yet is missing from the Kleiner Perkins tag). OpenEvidence's 2026-01-21 Series D was found and deliberately excluded: it lists Kleiner Perkins only among 'previous investors ... many of which also followed on in this round', which does not name KP as a participant in this financing. Excluded as out of scope: the KP22/KP Select IV fund close (2026-03-24), the Alkira/Lumen acquisition (2026-05-05) and the Amazon/Fauna Robotics acquisition (2026-03-24). Motive's $150M KP-led round was re-posted by KP on 2026-04-07 but was announced 2025-07-30, and Q's KP-led Series A dates to 2023 - both out of window.",
     "sources": [
@@ -9778,6 +12335,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass. Entity confirmed as Lightspeed Venture Partners (lsvp.com); Lightspeed Commerce (TSX/NYSE: LSPD), Lightspeed Systems and Lightspeed Financial excluded throughout, and Lightspeed India Partners / Lightspeed Israel rounds treated as `lightspeed` participation with the sub-fund's own wording kept in the evidence quote. Worked lsvp.com first: sitemap.xml still resolves to nine child sitemaps, and the two that matter still do not reach the window (post-sitemap.xml: 640 URLs, newest lastmod 2023-06-12; feeds-sitemap.xml: 376 URLs, newest lastmod 2025-08-19), exactly as in H1, so the firm's machine-readable surface again enumerated nothing in July-August 2026. /stories was walked in full; its 'recent stories' list does carry day-level dates and showed exactly two in-window items (Nirva, July 09; a healthcare commentary piece, August 12). Enumeration therefore fell back to press on the same surfaces as H1: TechCrunch's lightspeed-venture-partners tag page (walked in full), Crunchbase News monthly investor-activity pieces, the AlleyWatch monthly largest-round tables, and month-by-month keyword searches ('led by Lightspeed', 'participation from', 'seed round', 'Series A/B') for July and August 2026, which surface FinSMEs, BusinessWire and PRNewswire items. Every candidate was opened and kept only if the announcement yielded a single contiguous verbatim passage (adjacent paragraphs of one announcement counted, as in H1) naming BOTH Lightspeed and the company. NOT DONE, and different from H1 in one respect that is outside this slice: the assembly-stage cross-fill (scanning every other firm's coInvestors lists for this firm) cannot be run here because only two firms were researched in this slice; 13 of this firm's 20 H1 rows arrived that way, so the July-August count is depressed relative to H1 by the absence of that step until the merge re-runs it. ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 2 of this firm's July-August rows arrived this way: Base Power (2026-08-04); Emergent (2026-07-20). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Not complete; every count is a floor. (1) No exhaustive enumeration surface exists. lsvp.com still publishes no dated post per investment and its sitemaps stop in 2023 (posts) and 2025 (feeds), so July-August rests entirely on press search, which cannot be shown to be exhaustive. The single AlleyWatch global table for July 2026 alone named Lightspeed in four rounds (K2 Space, Proxima Fusion, Fireworks, Neko Health) that keyword search had not surfaced, and that table only covers the very largest deals. (2) AUGUST SURFACE GAP: AlleyWatch has published no monthly largest-rounds table for August 2026 - only daily and weekly reports, which the H1 method did not use and which were deliberately not substituted here. So the August rows come only from lsvp.com/stories, the TechCrunch tag page and keyword search, and August is materially thinner than July for that reason; the last two weeks before 2026-08-20 are additionally under-captured because press coverage lags. (3) DROPPED ON THE EVIDENCE RULE (real, verified in-window participations that no source states in one contiguous passage naming both parties): Nirva $8M seed (2026-07-09) - lsvp.com's own post says 'we are thrilled to announce our partnership with Nirva' and the only occurrences of the literal word 'Lightspeed' on that page are site chrome and the legal footer, and the Fitt Insider write-up of 2026-07-14 does not name Lightspeed at all. That is the only row lost this way in this window; H1 lost nine (Emversity, Emergent, Resolve AI, Gushwork, Science Corp., Granola, Snabbit, Helion, Sandstone). (4) Excluded on purpose: 'When AI Stops Taking Notes and Starts Seeing Patients' (lsvp.com, 2026-08-12) is portfolio commentary naming Abridge, Doctronic and Neko, not a financing announcement; Glacis Labs' $6.8M seed of 2026-07-16 was led by Lightspeed Faction, a separate crypto-focused manager, and was excluded on the entity boundary rather than kept as `lightspeed`; Judgment Labs' $32M led by Lightspeed is dated 2026-05-12, before the window. (5) Declined on purpose, to keep effort identical to H1: FinSMEs maintains a /tag/lightspeed-venture-partners/ archive (55 pages) that would enumerate this firm's press coverage far more completely than H1's keyword-search approach did. It was NOT used, because using it only for July-August would make the second half of the year look busier purely through better searching. It is the obvious surface for a future pass that re-runs the whole window.",
+    "extensionRateRatio": 1.92,
     "method": "Confirmed entity as Lightspeed Venture Partners (lsvp.com); excluded Lightspeed Commerce (TSX/NYSE: LSPD), Lightspeed Systems and Lightspeed Financial throughout. Worked lsvp.com first: the site publishes /stories (editorial posts, market maps, newsletters, founder profiles) plus /companies (an undated portfolio index) - it does NOT post a dated item per investment, and only a small number of selected rounds (e.g. Anthropic) get their own post. lsvp.com/sitemap.xml resolves to nine child sitemaps; post-sitemap.xml carries 598 URLs with a newest lastmod of 2023-06-12 and feeds-sitemap.xml a newest lastmod of 2025-08-19, so the site's own machine-readable surface does not even reach the window. Enumeration therefore fell back to press: TechCrunch's lightspeed-venture-partners tag page (walked in full), Crunchbase News, AlleyWatch monthly largest-round tables for Feb/Apr/Jun 2026, and month-by-month keyword searches ('led by Lightspeed', 'participation from', 'seed round', 'Series A/B') across Jan-Jun 2026. Rounds announced by Lightspeed India and Lightspeed Israel were treated as `lightspeed` participation (that is how the firm brands them and how press names them); none of the India-sourced candidates survived the evidence test, so no such row appears here. Every candidate was opened and only kept if the announcement yielded a single contiguous verbatim passage naming BOTH Lightspeed and the company. ASSEMBLY-STAGE CROSS-FILL: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and firm B had no row for that company and date, a row was created for firm B FROM THE SAME SOURCE - same URL, same date, same verbatim evidence quote, which was re-checked to name firm B and the company. 13 of this firm's rows arrived this way: Anthropic (2026-02-12); Emergent (2026-01-20); Fiddler AI (2026-01-27); Granola (2026-03-25); Helion (2026-06-04); Ineffable Intelligence (2026-04-27); Inferact (2026-01-22); LMArena (2026-01-07); Nominal (2026-03-06); Profound (2026-02-24); Ramp (2026-06-04); Science (2026-03-06); Temporal (2026-02-17). Their `role` is null by design: the source often does state who led, but deriving it programmatically would be inference, so it was not attempted. Re-source those rows if role matters.",
     "note": "Not complete, for two independent reasons. (1) No exhaustive enumeration surface exists: lsvp.com does not publish a dated post per investment and its sitemaps stop in 2023/2025, so coverage rests entirely on press search, which cannot be shown to be exhaustive. Volume is far too high for press search to close the gap - a single AlleyWatch 'largest rounds' table for June 2026 alone names Lightspeed in six rounds (Suno, CuspAI, Helion Energy, Ramp, Supabase, Cyera) that keyword search had not surfaced, and that table only covers the very largest deals, so the true H1 2026 count is certainly many times the seven rows returned. (2) Additional rounds were positively verified as in-window but are NOT returned because no single contiguous verbatim passage in the source names both Lightspeed and the company (the reports say 'the startup'): Emversity Series A (2026-01-14/15), Emergent Series B (2026-01-20), Resolve AI Series A (2026-02-04), Gushwork seed (2026-02-25), Science Corp. Series C (2026-03-05), Granola Series C (2026-03-25), Snabbit Series D (2026-04-27), Helion Energy Series G (2026-06-04), Sandstone Series A (2026-06-09). These are real participations and should be re-sourced in a later pass. Also excluded on purpose: SolarSquare (TechCrunch 2026-05-23 reported it only as 'in talks to raise', not an announced round) and Lightspeed's own >$9B fund close (a fund raise, and announced 2025-12-15, outside the window). Session web-search quota was exhausted before Q2 press sweeps could be finished, which further limits Apr-Jun coverage.",
     "sources": [
@@ -9797,6 +12360,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass. luxcapital.com/news was re-read from the top: it is still dated and enumerable and still a curated blog, and it has published NOTHING at all since 2026-05-21 - there are zero posts dated July 2026 or August 2026, and therefore zero investment announcements from the firm's own site in this window (H1 found exactly one in six months). The recorded quarterly-report URL pattern was continued rather than replaced: luxcapital.com/news/lux-q2-2026-report was requested directly and returns 404 - Lux has not published a Q2 2026 report, so that surface is the same one as H1's, simply not extended by the firm. luxcapital.com/companies still gives only a year-granularity 'Lux investment: YYYY' milestone per company, which cannot resolve a seven-week window and was again used only for entity confirmation, not enumeration. Coverage was therefore rebuilt from the FinSMEs Lux Capital tag archive exactly as in H1, walked forward from the top; page 1 reaches back to 2026-06-19 and therefore fully covers 2026-07-01 onward, and every in-window item was opened and its company-description and investor sentences copied verbatim. No new enumeration surface was added. ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 1 of this firm's July-August rows arrived this way: Cambridge Aerospace (2026-08-10). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Lux Capital's own site announced nothing in this window - luxcapital.com/news has no post of any kind dated July 2026 or August 2026, its most recent entry being the Q1 2026 report of 2026-05-21, and the expected next instalment at luxcapital.com/news/lux-q2-2026-report does not exist (404). Completeness therefore rests entirely on press enumeration that cannot be shown exhaustive, and FinSMEs' Lux tag is provably lossy - the H1 proof still stands, since Stord's 2026-05-26 Series F names 'Lux' in its investor list yet does not appear under that tag. AUGUST TAIL: August 2026 is the thin month on every Lux surface. The FinSMEs Lux tag holds only 2 in-window August items (2026-08-05 and 2026-08-06) against 5 for July, and nothing at all between 2026-08-07 and 2026-08-20 - a two-week unpopulated stretch immediately before the collection date; the firm's own news page is empty for July AND August; and there is no Q2 2026 report to backfill either month. Entity confirmation: every row returned here quotes the source naming 'Lux Capital' in full, so unlike H1 no row in this slice rests on a bare 'Lux' mention and none required checking against luxcapital.com/companies to rule out Lux Research or Lux Industries. WindBorne Systems (2026-08-05) is shared with Khosla Ventures and is taken from the same article and the same verbatim sentence for both firms; Lux is named there in the explicit 'with participation from' clause, so its role is participant. No in-window item was dropped for failing the verbatim both-parties evidence rule.",
+    "extensionRateRatio": 1.54,
     "method": "Read luxcapital.com/news in full across its four pages: it is dated and enumerable but is a curated blog (LP letters, hires, fellowship, fund announcements) and contains exactly ONE investment announcement in the window (Crosby, 2026-03-31). The Lux Q1 2026 LP letter was read and names no new Q1 commitments. luxcapital.com/companies gives only a year-granularity 'Lux investment: YYYY' milestone per company, which cannot resolve a six-month window. Coverage was therefore rebuilt from FinSMEs' Lux Capital tag archive (pages 1-4, paginated back past 2025-12-31); every H1-2026 item was opened and its investor sentence copied verbatim.",
     "note": "Lux Capital's own site announces only a small hand-picked subset of its investments (one in six months), so completeness rests on press enumeration that cannot be shown exhaustive - and FinSMEs' Lux tag is provably lossy, since Stord's 2026-05-26 Series F names 'Lux' in its investor list yet does not appear under that tag. Entity confirmation: all rows except two quote the source naming 'Lux Capital' in full. The two that name only 'Lux' - Applied Compute (2026-04-08) and Stord (2026-05-26) - were confirmed to be Lux Capital against the firm's own company pages (luxcapital.com/companies/applied-compute, 'Lux Investment: 2025'; luxcapital.com/companies/stord, 'Lux investment: 2021'); neither is Lux Research or Lux Industries. Erebor Bank's 2026-03-24 Fundrise Innovation Fund investment was found and excluded: Lux Capital is named there only as an existing backer of the company, not as a participant in that financing.",
     "sources": [
@@ -9811,6 +12380,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "same as the January-June pass: re-checked all four nea.com surfaces - /news/press-releases (still client-side rendered behind a 'Show More' control, so the listing itself is unreadable), /insights, /portfolio, and a full enumeration of nea.com/sitemap.xml to recover every press-release URL the site publishes. Then ran the same per-month press searches the H1 pass ran (FinSMEs, PR Newswire, BusinessWire, GlobeNewswire, TechCrunch tag page, citybiz, distillintelligence.com/news/new-enterprise-associates, MedCity News, plus the AlleyWatch monthly largest-round tables continued forward to the July 2026 global and US editions) and opened each candidate to verify a contiguous quote naming both firm and company. No cross-fill was performed in this slice: the H1 assembly-stage cross-fill happens after all firms are researched, so any July/August rounds where NEA is named only inside another firm's source will be added at merge, not here. ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 3 of this firm's July-August rows arrived this way: Databricks (2026-08-13); Singularity (2026-07-14); TwelveLabs (2026-07-01). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": false,
+    "extensionNote": "NEA's own site still publishes nothing per-investment. nea.com/sitemap.xml is unchanged from H1 - every press-release URL on it is a personnel appointment/promotion or a fund close, not one is a portfolio financing; /insights carries no dated investment announcements in the window; /portfolio still carries the disclaimer 'Portfolio companies displayed are for illustrative purposes only and provide an example of certain investments made by NEA as of September 2023', so participation cannot be enumerated from it. All 8 rows therefore come from press search, which cannot be shown to be exhaustive for a firm of NEA's deal volume, and NEA is very often named only as one participant deep inside another investor's release. MISSING/PARTIAL SURFACES: the AlleyWatch monthly tables for AUGUST 2026 DO NOT YET EXIST - https://alleywatch.com/2026/09/global-startup-funding-top-largest-august-2026-vc/ returns 404 because that edition is published in early September - so 2026-08-01 to 2026-08-20 has no monthly aggregator cross-check at all and rests on press search alone; distillintelligence.com/news/new-enterprise-associates also shows nothing after 2026-07-29. DROPPED FOR LACK OF USABLE EVIDENCE: Databricks' $5B strategic round at a $190B valuation (announced 2026-08-13) names NEA in its existing-investor list, but no contiguous passage in either the Databricks newsroom release or FinSMEs' write-up names both NEA and Databricks, so the row is not usable. NOT COUNTED AS NEW: CuspAI's Series B, which H1 flagged as '2026-07 outside the window' - the H1 set already carries an NEA/CuspAI Series B row dated 2026-06-22 from the same financing, and the July items (Distill, 2026-07-22) are re-reports of that same round, not a separately announced extension. Inkitt's Ironblood launch (2026-07-16), which NEA promoted, is a product launch and not a financing.",
+    "extensionRateRatio": 4.52,
     "method": "Checked all four candidate enumeration surfaces on nea.com: /news and /news/press-releases (client-side rendered behind a 'Show More' control, so the listing itself could not be read), /insights, and /portfolio. Enumerated nea.com/sitemap.xml in full to recover every press-release URL the site publishes, bypassing the JS listing. Then ran per-month and per-quarter press searches (PR Newswire, BusinessWire, GlobeNewswire, TechCrunch tag page, MedCity News, citybiz, Distill, AlleyWatch monthly largest-round lists for Feb/Mar/Apr/June 2026) across the window and opened each candidate to verify a quote naming both firm and company. ASSEMBLY-STAGE CROSS-FILL: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and firm B had no row for that company and date, a row was created for firm B FROM THE SAME SOURCE - same URL, same date, same verbatim evidence quote, which was re-checked to name firm B and the company. 6 of this firm's rows arrived this way: Bluefish (2026-04-14); Corca Research (2026-06-10); CuspAI (2026-06-22); Factory (2026-04-16); Slash (2026-04-15); Synthesia (2026-01-27). Their `role` is null by design: the source often does state who led, but deriving it programmatically would be inference, so it was not attempted. Re-source those rows if role matters.",
     "note": "NEA's own site publishes no per-investment announcements at all. Every press-release URL in nea.com/sitemap.xml is a personnel appointment/promotion or a fund close - not one is a portfolio financing. /insights is undated commentary with no investment announcements in the window, and /portfolio is a name-and-logo list carrying the disclaimer that it is 'for illustrative purposes only ... as of September 2023', with no rounds, dates or announcement links, so participation in the window cannot be enumerated from it. Coverage therefore rests entirely on press search, which cannot be shown to be exhaustive for a firm of NEA's deal volume, and NEA is very often named only as one participant deep inside another investor's release. Two in-window candidates were dropped for lack of usable evidence: Nitra's 2026-03-10 $187M financing (NEA is named in the equity investor list but no single sentence names both NEA and Nitra) and Chapter's April 2026 Series E (NEA not named in the primary investor list). Databento (2026-07-09) and CuspAI (2026-07) were checked and are outside the window.",
     "sources": [
@@ -9831,6 +12406,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass, re-run over 2026-07-01 to 2026-08-20 with no added surfaces. Disambiguation was again the whole job: the target is Neo (neo.com), Ali Partovi's San Francisco venture firm and community. Explicitly excluded, as in H1, the NEO cryptocurrency token, Neo Financial (Canadian fintech), the Peak XV-backed Indian wealth-management startup Neo, and 1X's NEO humanoid robot. Firm site re-checked and unchanged: neo.com is a client-rendered app with /companies and /vc but no /news, no /blog and no dated posts, and neo.com/sitemap.xml still resolves to the homepage rather than an XML sitemap. There is still no firm-published dated list of any kind. Enumeration therefore came, exactly as in H1, from press used only as a lead generator plus a cross-reference of the rows already in this dataset. TechCrunch's neo tag page was walked in full and treated as leads only, never as evidence, because it mixes all the homonyms; its single in-window item (2026-07-01, 'Indian tech tycoon bets $30M of his own money to build AI alternative to Microsoft Office') was opened and rejected - it is Bhavin Turakhia's separate company called Neo, self-funded with no external investor list and no announced financing. TechCrunch's ali-partovi tag was walked in full (nothing after 2026-02-19) and FinSMEs full-text search on \"Ali Partovi\" was run (nothing in 2026 at all). The cross-reference against the sibling July-August files in this dataset (117 rows across six files) was scanned for 'Neo' standing alone in another firm's coInvestors list, which produced the one surviving candidate. That candidate was then confirmed by the H1 test and by nothing weaker: the announcement names 'Neo' inside an investor list alongside other venture firms (Kleiner Perkins, Sequoia, Andreessen Horowitz, Tiger Global, Bain Capital Ventures, Primary, Stripes, Positive Sum, Blackstone).",
+    "extensionMethodChanged": false,
+    "extensionNote": "Not complete, and still the least complete of the four. JULY 2026 IS EMPTY: no July row survived on any surface. Named explicitly - techcrunch.com/tag/neo/ has exactly one July item and it is a different Neo (Turakhia's bootstrapped office-suite company, rejected above); techcrunch.com/tag/ali-partovi/ has no item after 2026-02-19; the FinSMEs \"Ali Partovi\" search has no 2026 item at all; and neo.com publishes nothing dated, so it cannot populate July or August either. August yielded the single row here, Etched (2026-08-19), and it came from the dataset cross-reference rather than from any Neo-specific surface - the same structural bias flagged in H1, where all three H1 rows arrived the same way. That bias means this slice is skewed toward rounds large enough that a big co-investor also announced them; Neo's typical early-stage cheque goes into rounds too small to be picked up this way, so the real July-August count is near-certainly higher than one. Two surfaces degraded this run and should be recorded: neo.com/companies returned only page metadata rather than the rendered company list (H1 read it through a text-extraction proxy; no such extraction was available here), so it could not be used even as a weak confirmation this time, and neo.com/sitemap.xml still does not serve a sitemap. The name remains unusable as a search key - full-text search for 'Neo' returns overwhelming homonym noise - so the ordinary press sweep that works for Elad Gil and Bloomberg Beta still cannot be run for this firm at all. Excluded on purpose and worth naming so it is not re-found later: the 2026-07-20 'Neo Launches with $100M to Secure AI Software Across the Enterprise' release is a COMPANY named Neo raising a round (backed by a16z, Bessemer Venture Partners, Craft Ventures and Merlin Ventures), not this firm investing, and is the same different-Neo item H1 flagged. Nothing was dropped for failing the both-parties-verbatim rule.",
+    "extensionRateRatio": 0.59,
     "method": "Disambiguation was the main task. The target is Neo (neo.com), the San Francisco venture firm and community founded by Ali Partovi. I explicitly excluded Neo the blockchain/NEO token, Neo Financial, the Indian wealth-management startup Neo that Peak XV funded, and 1X's humanoid robot which is also called NEO (TechCrunch's 'neo' tag mixes all of these together, so that tag was used only as a lead generator, never as evidence). Each surviving candidate was confirmed by the brief's stated test - the announcement names 'Neo' inside an investor list alongside other venture firms - and Applied Compute is additionally confirmed on neo.com's own /companies page as a company founded by a Neo Scholar. On the firm site: neo.com is a client-rendered app, so I read it through a text-extraction proxy; it has /companies, /vc (a jobs board) and marketing pages, but NO /news, NO /blog, NO dated posts, and neo.com/sitemap.xml resolves to the homepage only. There is no firm-published dated list of any kind. Enumeration therefore came from press and from cross-referencing the 140 rows already in this dataset for 'Neo' in other firms' coInvestors lists, plus TechCrunch's neo and ali-partovi tag pages and Bing News RSS.",
     "note": "Not complete, and the least complete of the four. Neo publishes no news page, no blog and no dated portfolio, so there is no firm surface to enumerate from at all; its /companies page names only five scholar-founded companies followed by 'and more'. Worse, the name is unusable as a search key: full-text search for 'Neo' returns overwhelming noise (Neon Commerce, Neothera, NeoCognition, NEOintralogistics, the NEO token, Neo Financial, 1X's NEO robot), so the normal press sweep that worked for the other three firms could not be run. All three rows returned were found by cross-referencing other firms' investor lists rather than by any Neo-specific surface, which means the sample is biased toward rounds that a large co-investor also announced. Neo is an early-stage/accelerator investor whose typical cheque goes into rounds too small to be indexed this way, so the real H1 2026 count is near-certainly several times three. Excluded on purpose: Neo Residency (TechCrunch 2026-02-19) is a program launch with per-startup terms, not an announced financing in a named company; the July 2026 'Neo Raises $100M' item on FinSMEs is a different Neo and is out of window regardless. No candidate had to be dropped for unresolved ambiguity - every one I kept names Neo alongside other venture firms in an investor list.",
     "sources": [
@@ -9847,6 +12428,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass: entity confirmed as Radical Ventures, the Toronto AI firm at radical.vc (Jordan Jacobs / Fei-Fei Li / Rob Toews); Radical Partners, Mark Cuban's Radical Investments and Radicle excluded. radical.vc has no /news page, so /archive - which lists every post the site has published, newest first, grouped by month - was walked for the July 2026 and August 2026 groups, cross-checked against /perspectives and /post-sitemap.xml, and every post in those two groups was opened. July 2026 group: 'Putting Frontier Drug Design in Every Researcher's Hands' (2026-07-20, a product launch for Latent-Y, no financing and no contiguous passage naming Radical and the company, so no row), 'Prime Intellect: Owning the Learning Loop' (2026-07-13, the firm's post on its lead investment in the $130M Series A announced 2026-07-08), an outbound TechCrunch link to the same Prime Intellect round, and 'The Future of AI Inference' (essay). August 2026 group: 'Our Investment in Discovery Loop' (2026-08-05), 'Radical Reads: Jeff Dean on Launching Discovery Loop' (2026-08-09), 'Applying RSI to the Organization, Not Just the Model', 'A Functional Taxonomy of World Models' and 'Teaching AI to Ask the Right Questions' (2026-08-17) - the last three are essays announcing no financing. /post-sitemap.xml was scanned for 'invest'-type slugs and surfaced no investment post beyond those already walked. Two new financings therefore, matching the H1 finding that this firm announces roughly one every month or two. The Prime Intellect row is dated to the round's announcement date (2026-07-08, the date carried by both the TechCrunch piece Radical itself links and Intel Capital's release), not to Radical's 2026-07-13 post date; its evidence quote is from Radical's own post. ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 1 of this firm's July-August rows arrived this way: TwelveLabs (2026-07-01). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": false,
+    "extensionNote": "radical.vc publishes an 'Investing in X' / 'Our Investment in X' post for only a subset of its deals and the /portfolio pages carry no dates or round information, so the firm's own site cannot enumerate its participation; two rows for July-August is a floor, consistent with the one row H1 produced across six months. SURFACE STATE BY MONTH: /archive was populated for both months (July group 4 items, August group 5 items) and is the surface the counts rest on. /perspectives was PARTIAL - it surfaced only the two most recent August items (2026-08-09 and 2026-08-17) and NO July 2026 items at all, so it would have missed the Prime Intellect post entirely had /archive not been the primary surface. TechCrunch's radical-ventures tag page still carries no 2026 entries, so independent cross-checking was again not possible. The Discovery Loop row is deliberately thin: Radical's own 2026-08-05 announcement states only that it 'is co-leading an investment', with no round name, no amount and no other investor named, so round is null and coInvestors is empty. The follow-up 2026-08-09 'Radical Reads' post reproduces Jeff Dean's own thread, which adds that Radical Ventures and Khosla Ventures were selected to lead, with participation from Lightspeed, Kleiner Perkins, Doerr Capital (John Doerr) and Alphabet (Google), and that the seed round was still to be closed 'over the next few weeks' - that detail is recorded here rather than in the row because it comes from a different URL than the announcement, and it is worth noting that this round may be re-announced, with a size, after the 2026-08-20 cut.",
+    "extensionRateRatio": 3.55,
     "method": "Entity confirmed as Radical Ventures, the Toronto AI-focused firm at radical.vc (Jordan Jacobs / Fei-Fei Li / Rob Toews); Radical Partners, Mark Cuban's Radical Investments and Radicle were excluded. radical.vc has no /news page; its publishing surface is /perspectives (curated, dated) plus /archive, which lists all 273 articles the site has ever published, newest first, grouped by month, and is the site's full enumeration. The archive was walked and cross-checked against /post-sitemap.xml (261 URLs - lastmod dates are all mid-August 2026 migration stamps and are useless for dating). Radical's H1 2026 output was: Jan - 'Beyond Chips' (podcast), 'Investing in Outset', and three undated founder-story reposts; Feb - 'Themes in AI to Watch in 2026'; Mar - 'Building an AI Native Startup' (podcast) and 'Investing in General Magic'; Apr - 'Powering the AI Era' (podcast); May - 'Building AI-Native Advertising' (podcast); Jun - three essays plus an external TechCrunch link. Only ONE new financing was announced by the firm in the window: General Magic. 'Investing in Outset' (published 2026-01-12) was DROPPED because its own first sentence reads 'Last month, Radical Ventures announced our lead investment in Outset's $30M Series B funding round' - i.e. the announcement was December 2025, outside the window. The Etched item Radical links under June 2026 (TechCrunch, 2026-06-30) was opened and does not name Radical Ventures, so no row. ASSEMBLY-STAGE CROSS-FILL: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and firm B had no row for that company and date, a row was created for firm B FROM THE SAME SOURCE - same URL, same date, same verbatim evidence quote, which was re-checked to name firm B and the company. 1 of this firm's rows arrived this way: Waabi (2026-01-29). Their `role` is null by design: the source often does state who led, but deriving it programmatically would be inference, so it was not attempted. Re-source those rows if role matters.",
     "note": "radical.vc publishes an 'Investing in X' / 'Our Investment in X' post for only a small subset of its deals (roughly one every month or two against a firm that deploys far more often), and the /portfolio pages carry no dates or round information, so the firm's own site cannot enumerate its participation. Independent cross-checking was not possible: the session's web-search budget was exhausted and every general search engine is robots-blocked for the fetch tool, leaving only TechCrunch's radical-ventures tag page, which has no H1 2026 entries. One row is therefore a floor, not a complete set.",
     "sources": [
@@ -9863,6 +12450,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass in substance: entity confirmed as Ribbit Capital, the Palo Alto fintech specialist at ribbitcap.com. ribbitcap.com was re-fetched and is unchanged - a single-page brand manifesto ('the future belongs to the rebels') whose only internal links are 'meet the rebels' and 'disclaimers'; there is still NO news page, NO blog, NO dated portfolio index and NO press-release surface, so there is nothing on the firm's own site to enumerate. Ribbit LEAP was again treated as out of scope. Coverage therefore came entirely from press: TechCrunch's ribbit-capital tag page was walked in full. DECLARED METHOD CHANGE: the tag page yielded nothing in the window (see note), so to follow up the one in-window lead the H1 pass had itself already recorded - its exclusion list names 'Enigma's $71M (2026-07-27, outside the window)' - I fetched TechCrunch's date archive https://techcrunch.com/2026/07/27/ to locate that specific article, then opened it. That date archive is a surface the H1 pass did not use; it was used only to resolve an article H1 had already identified, not to enumerate new candidates, and no other date archive was fetched. The Enigma article yields a contiguous passage naming both Ribbit Capital and the company and is recorded as a lead (co-led with Index Ventures). ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 1 of this firm's July-August rows arrived this way: Base Power (2026-08-04). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": true,
+    "extensionNote": "Ribbit has no public announcement surface at all, so completeness cannot be established from the firm and every count is a floor. SURFACE STATE BY MONTH: the whole method for this firm is TechCrunch's ribbit-capital tag page, and on 2026-08-20 that page is UNPOPULATED for the window - its most recent item is dated 2025-03-19 and it lists no 2026 articles whatsoever, meaning it surfaced nothing for July 2026 and nothing for August 2026 (and, on this fetch, does not even contain the Slash 2026-04-16 article the H1 pass took from it). The tag page is demonstrably not a reliable index of Ribbit's activity: H1 already showed the Mach Industries round Ribbit co-led was absent from it. AUGUST IS EMPTY FOR THIS FIRM and that emptiness is a property of the surface, not evidence that Ribbit did nothing: with no firm surface and a tag page that has stopped indexing, there is no August surface for Ribbit at all. The single row is July; it was recovered only because the H1 pass had already named the article, and nothing equivalent exists to recover August from.",
+    "extensionRateRatio": 0.65,
     "method": "Entity confirmed as Ribbit Capital, the Palo Alto fintech specialist at ribbitcap.com. ribbitcap.com was fetched and enumerated: it is a single-page brand statement ('the future belongs to the rebels', 'conviction, capital, and a global network') with exactly one internal link ('Meet the rebels') and a Disclaimers footer - there is NO news page, NO blog, NO dated portfolio index and NO press-release surface of any kind. Ribbit LEAP, its SPAC vehicle, was treated as out of scope and no SPAC activity was recorded. Coverage therefore came entirely from press: TechCrunch's ribbit-capital tag page was walked in full and every 2026 item opened. Kept: Slash's $100M Series C (2026-04-16, Ribbit named as a lead) and Mach Industries' $300M Series C (2026-06-01, Ribbit named as co-lead). Excluded: Capital One's acquisition of Brex (2026-01-22, an acquisition, not a financing); the $35M 5(c) Capital predictions-markets fund (2026-03-23, a fund raise, and the named backer is Micky Malka personally rather than Ribbit Capital); Enigma's $71M (2026-07-27, outside the window). Etched's disclosure of a $500M tranche at a $5B valuation (TechCrunch, 2026-06-30) was DROPPED: the article names Ribbit Capital only in a list of the company's overall investor group ('VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, with Stripes leading the recent round') and does not place Ribbit in the announced round itself. ASSEMBLY-STAGE CROSS-FILL: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and firm B had no row for that company and date, a row was created for firm B FROM THE SAME SOURCE - same URL, same date, same verbatim evidence quote, which was re-checked to name firm B and the company. 6 of this firm's rows arrived this way: Cognition (2026-05-28); Decagon (2026-01-29); Evervault (2026-03-05); Listen Labs (2026-01-14); Morpho (2026-06-09); Stedi (2026-03-30). Their `role` is null by design: the source often does state who led, but deriving it programmatically would be inference, so it was not attempted. Re-source those rows if role matters.",
     "note": "Ribbit has no public announcement surface at all - ribbitcap.com publishes a brand manifesto and nothing else: no news, no blog, no dated portfolio, no press releases - so completeness cannot be established from the firm. Coverage relies wholly on press, which cannot be shown to be exhaustive, and here it is demonstrably not: the Mach Industries round Ribbit co-led is not even on TechCrunch's own ribbit-capital tag page (it surfaced only via a founder profile), which proves the tag page under-reports. The session's web-search budget was exhausted and every general search engine is robots-blocked for the fetch tool, so no systematic month-by-month press sweep was possible. Two rows should be read as a floor for a firm that is certainly more active than that.",
     "sources": [
@@ -9877,6 +12470,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass, on the same surfaces and in the same order. (1) sequoiacap.com home and the news story category (sequoiacap.com/?story_category=news) were fetched and every 'Partnering with ...' article on them opened one by one for its publication date, round language and co-investors; /our-companies and the XML sitemap were re-checked and are still not enumerable (the news index renders only a handful of recent items with no pagination and no dates, /news 404s, and the sitemap carries company, people and tag URLs but no article URLs). (2) Because that surface cannot be walked month by month, the same per-month press and press-release searches were run for July and for August ('led by Sequoia', 'with participation from Sequoia Capital', month names, round labels), together with the same candidate lists the first pass used: AlleyWatch monthly largest-round tables (US and global), Crunchbase News investor-activity pieces, and the revli.com Sequoia portfolio tracker. (3) Every candidate was then opened at its actual announcement - company press release, PR Newswire/Business Wire/GlobeNewswire, Fortune, TechCrunch, TNW, FinSMEs or the company's own newsroom - and kept only where a contiguous verbatim passage names Sequoia as an investor in that specific round. IDENTITY BOUNDARY, unchanged: this record is Sequoia Capital (US/Europe) only. Peak XV Partners and HongShan are separate firms and are never recorded as Sequoia; 'Sequoia Global Equities' (SCGE) is likewise a distinct entity - it is named alongside Sequoia in Rillet's 2026-08-19 Series C and is carried only as a co-investor there, not as a second Sequoia row. Excluded per the brief: Sequoia's own $7B fund, EDX Markets' 2026-07-08 Series C (the revli tracker attributes it to Sequoia as a standing holder but the announcement names SBI Holdings as the investor and does not name Sequoia in the round), and Scanner, whose Sequoia-led Series A was announced 2026-03-12, before this slice. ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 1 of this firm's July-August rows arrived this way: Senra Systems (2026-07-15). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": true,
+    "extensionNote": "METHOD CHANGE, DECLARED: two things were done differently from the recorded January-June surfaces and both added rows. (a) Crunchbase News's weekly 'The Week's 10 Biggest Funding Rounds' articles were used as candidate lists; the first pass recorded only Crunchbase News's monthly most-active-investor pieces. Glow (2026-07-22), Cathedral (2026-07-23) and Neros Technologies (2026-08-11) were first surfaced there. (b) FinSMEs was queried site-scoped ('finsmes.com 2026/07 Sequoia', 'finsmes.com 2026/08 Sequoia') rather than only turning up incidentally in general press search; the first pass used FinSMEs but did not record it as a surface. Corma, Form Energy, Trajectory and Rillet came through that query. Treat July-August Sequoia volume as searched at least as hard as January-June, not less. SURFACE STATE FOR THIS WINDOW: AlleyWatch published both a US and a global table for JULY 2026 and both were used. There is NO AlleyWatch table for AUGUST 2026 - the monthly tables appear in the following month, and alleywatch.com/2026/09/us-startup-funding-top-largest-august-2026-vc/ returns 404 as of 2026-08-20 - so August has no monthly aggregator behind it at all and is under-covered for that reason. Crunchbase News's weekly roundup likewise stops at the week of 2026-08-08 to 2026-08-14, so 2026-08-15 to 2026-08-20 rests on press search alone. The crescendo.ai AI-funding tracker used in the first pass has not been updated past 2026-07-03 and contributed nothing here. DROPPED ON THE EVIDENCE RULE, and recoverable: Preview, a real Sequoia-led seed round posted on Sequoia's own site on 2026-08-12 (sequoiacap.com/article/partnering-with-preview-lights-inference-action) - the post says 'We are thrilled to partner with Stefan and Veljko and to lead their seed round' and never writes the word 'Sequoia' in body prose, and no press announcement of the round could be found, so no contiguous passage names both parties. The same first-person phrasing appears in the Sable, Corma, Etched and Bunkerhill Health posts; those four survived only because press or press-release coverage named Sequoia explicitly. Volume is still too high to establish completeness: Sequoia writes a 'Partnering with ...' post for only a fraction of its deals, there is no dated enumerable archive, and small seed rounds rarely reach the monthly round-ups. Every count is a FLOOR. The 12 rows here are July 6, August 6.",
+    "extensionRateRatio": 1.55,
     "method": "Started on Sequoia's own site: sequoiacap.com home, /our-companies, and the news story category (sequoiacap.com/?story_category=news), plus every 'Partnering with ...' article I could surface, opening each one for its publication date. That surface is not enumerable - the news index renders only the four most recent items with no pagination and no dates, /news 404s, and the XML sitemap contains company, people and tag URLs but no article URLs - so it cannot be walked month by month. I therefore ran press and press-release searches for each month of the window ('led by Sequoia', 'participation from Sequoia', month names, round labels) and used monthly largest-round roundups (AlleyWatch US/global lists for Jan-Jun 2026), Crunchbase News most-active-investor pieces, and a Crunchbase-derived Sequoia portfolio-round tracker purely as candidate lists. Every candidate was then opened at its actual announcement (company press release, PR Newswire/Business Wire, Fortune, TechCrunch, Sifted, TNW, or Sequoia's own post) and kept only where a verbatim sentence names Sequoia as an investor in that specific round. IDENTITY BOUNDARY: this record is Sequoia Capital (US/Europe) only. Peak XV Partners and HongShan are treated as separate firms and their participations were discarded - e.g. Peak XV is named as a participant in Supabase's June 2026 Series F and in Exaforce's May 2026 Series B, and neither is recorded here as a Sequoia deal. 'Sequoia Global Equities' (SCGE), named in Ayar Labs' March 2026 Series E, was likewise excluded as a distinct entity. Also dropped: rounds where Sequoia is named only as a prior/previous investor rather than a participant (Decart's May 2026 $300M round, Corgi's Series B), rounds only reported or rumoured (the January 2026 FT report that Sequoia would join Anthropic - counted only once Anthropic's own February 12 announcement named Sequoia Capital), and rounds announced outside the window (Sable, Bunkerhill Health, Scanner, Corma, Preview, Valar Atomics - all July/August 2026; fal's Series D - December 2025). ASSEMBLY-STAGE CROSS-FILL: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and firm B had no row for that company and date, a row was created for firm B FROM THE SAME SOURCE - same URL, same date, same verbatim evidence quote, which was re-checked to name firm B and the company. 5 of this firm's rows arrived this way: Engram (2026-06-23); Harvey (2026-03-25); Nominal (2026-03-06); Sail Research (2026-06-25); WithCoverage (2026-01-13). Their `role` is null by design: the source often does state who led, but deriving it programmatically would be inference, so it was not attempted. Re-source those rows if role matters.",
     "note": "Volume too high to establish completeness. 29 rows are verified here and more are certainly missing. Sequoia publishes no dated, enumerable list of its investments: there is no paginated news archive, the sitemap carries no article URLs, and it writes a 'Partnering with ...' post for only a fraction of its deals, so the enumeration surface is press search, which cannot be shown to be exhaustive. A Crunchbase-derived tracker lists many further Sequoia-associated H1 2026 rounds that I could not tie to a primary announcement naming Sequoia in that round within this pass - among them Sail Research, Cortea, Sandstone, Dust, Turnkey, XBow, Ethos, Enter, Zum, Kalshi, Applied Compute, Crosby, Edra, Atlys, Traversal, ARQ, RobCo, Mito, Blockit AI, Cimba and WithCoverage - so the true H1 2026 count is materially higher than what is returned. Coverage is thinnest for March 2026 and for small seed rounds, which rarely appear in monthly round-ups.",
     "sources": [
@@ -9899,6 +12498,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass, on the same surfaces, with the same entity boundary. visionfund.com navigation and sitemap.xml were re-walked; group.softbank/en/news and /en/news/press were walked for July and August 2026; TechCrunch tag pages /tag/softbank/, /tag/softbank-vision-fund/ and /tag/vision-fund/ were walked in full; AlleyWatch's monthly largest-global-round table was continued forward to the July 2026 edition (https://www.alleywatch.com/2026/08/global-startup-funding-top-largest-july-2026-vc/) and its full 19-row investor lists were scanned for SoftBank / Vision Fund / SBIA. No candidate naming SoftBank Vision Fund, SoftBank Vision Fund 2, SoftBank Investment Advisers or SoftBank Group as an investor in a portfolio financing surfaced in the 2026-07-01 to 2026-08-20 slice, so no FinSMEs per-company lookups were triggered. Entity boundary applied unchanged: the 2026-07-02 'SB Neo' formation (SoftBank Corp. + SoftBank Group Corp., a corporate/operating vehicle) was excluded; the 2026-07-29 corporate bonds and 2026-07-30 stock-acquisition-rights notices are IR items, not financings by the firm; the 2026-08-17 SB Energy / NVIDIA / OpenAI 'PORTS-Pike Technology Campus' release is an infrastructure project, not a venture round; TechCrunch's 2026-08-17 'Nvidia investing $1.5B in SoftBank data center developer' is SoftBank RECEIVING investment, not making one. Per the H1 treatment, OpenAI is recorded ONCE on its 2026-02-27 announcement, so the 2026-07-01 'Execution of Follow-on Investment (Second Tranche) in OpenAI' release was deliberately NOT made into a separate row. As in H1, no month-by-month keyword press search was run - that was not part of the recorded method and adding it now would have made July/August searched harder than January.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Not complete, and this slice (2026-07-01 to 2026-08-20) returns ZERO rows. That zero is what the recorded surfaces yield; no extra source was reached for to avoid it. (1) The H1 finding about visionfund.com STILL HOLDS, re-verified on 2026-08-20: the site publishes NO dated news, press or investment feed at all. Its navigation is Portfolio / Team / Sozo Insights / Work With Us only; https://visionfund.com/news still returns 404; /presentations is still gated; sitemap.xml still enumerates ~700 URLs that are insights posts, Sozo Pulse survey pages, team profiles and 500+ UNDATED portfolio-company pages, with no /news, /press or /announcements path and no date hierarchy. The portfolio index remains undated and lists no rounds. So the firm's own site again cannot enumerate the window. (2) The H1 finding about group.softbank ALSO STILL HOLDS: its July/August 2026 press feed carries only corporate and IR releases (SB Neo, corporate bonds, stock acquisition rights, Q1 FY2026 earnings, the SB Energy/NVIDIA/OpenAI Ohio campus) plus the OpenAI second-tranche execution - no portfolio rounds. (3) MONTH/SURFACE GAPS: AUGUST 2026 has NO AlleyWatch table - https://www.alleywatch.com/2026/09/global-startup-funding-top-largest-august-2026-vc/ returns 404 because that edition publishes in early September - and group.softbank/en/news/press listed NO August 2026 press releases at all as of 2026-08-20. August is therefore covered only by the two firm sites (both structurally undated) and the TechCrunch tag pages. JULY 2026 is covered by the AlleyWatch global July table, which exists and was fully scanned, but that table lists only the ~19 largest global rounds of the month, so any smaller SVF participation in July is invisible to this method. (4) The three TechCrunch tag pages carry nothing about the fund since 2024. Treat 0 as a floor for this slice, not as evidence that SVF did nothing.",
+    "extensionRateRatio": 0.71,
     "method": "Entity boundary applied as instructed. Rows are kept only where the announcement names SoftBank Vision Fund / SoftBank Vision Fund 2 / SoftBank Investment Advisers, or names 'SoftBank Group' (one such row, Kandou AI, is flagged in its evidence field). Rounds naming SoftBank Corp. (the Japanese telecom), SoftBank Robotics or PayPay were treated as out of scope; none survived to a row. SoftBank's own balance-sheet moves were excluded as M&A / corporate rather than venture financings: the 2026-06-04 acquisition of T&D Financial Life Insurance shares, the 2026-07-02 formation of 'SB Neo', the 2026-02-19 $33B US gas power plant plan and the 2026-05-30 up-to-EUR-75B French data centre plan. The OpenAI commitment is recorded ONCE, on its 2026-02-27 announcement date; the later releases that merely execute it (2026-03-27 bridge facility, 2026-04-01 first tranche, 2026-07-01 second tranche) were deliberately not made into separate rows. Enumeration surfaces actually worked: visionfund.com navigation and sitemap.xml (600+ URLs: /insights thought-leadership posts, /sozo-pulse survey pages, /team profiles and 400+ undated portfolio-company pages - there is no /news path, /news returns 404, and /presentations is password-protected, so the site publishes NO dated list of investments); group.softbank/en/news and /news/press walked for 2026 (these carry corporate and financing releases plus the OpenAI investment, not portfolio rounds); AlleyWatch's monthly largest-global-round tables for February, March, April and June 2026; AlleyWatch's largest-US-round table for May 2026; TechCrunch tag pages /tag/softbank/, /tag/softbank-vision-fund/ and /tag/vision-fund/ (all walked in full; nothing in-window); FinSMEs per-company lookups to obtain the actual announcement and a verbatim investor sentence for each candidate.",
     "note": "Not complete. (1) visionfund.com publishes no dated news, announcement or investment feed at all - its portfolio index is undated and its only dated surfaces are thought-leadership and survey pages - so the firm's own site cannot be used to enumerate the window; group.softbank's press feed carries only corporate/financing releases plus the OpenAI commitment, not portfolio rounds. (2) This session's web-search quota was already exhausted (200/200) before work began, so NO keyword press search ('SoftBank Vision Fund' + 'Series A/B', month by month) was possible; every candidate had to come from a crawlable index page. That is a severe limit for a fund whose participations are announced by portfolio companies. (3) The substitute index, AlleyWatch's monthly largest-round tables, exists for Feb/Mar/Apr (global) and May (US only) and June (global) - there is no January 2026 roundup at all and no global May table, so January is uncovered and May is covered only for US rounds. (4) Those tables only list the very largest rounds of each month, so any smaller SVF participation in the window is invisible to this method. Expect the true H1 2026 count to be materially higher than the four rows returned.",
     "sources": [
@@ -9922,6 +12527,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass, on the same surfaces. Entity re-confirmed as Spark Capital of Boston/San Francisco (sparkcapital.com); Spark Growth, Spark Ventures, SparkLabs, Spark Microsystems, Genspark and Wavemaker/WPP's Spark remain excluded as name collisions. Enumeration ran the same way round as in H1: sparkcapital.com/companies was taken as the candidate list and each name was looked up in FinSMEs for a round announced in the slice, cross-checked against techcrunch.com/tag/spark-capital/ walked in full, and against AlleyWatch's monthly largest-round table continued forward to the July 2026 global edition, whose full investor lists were scanned for 'Spark Capital'. Every kept row required a contiguous verbatim passage naming both Spark Capital and the company. Portfolio names looked up individually for this slice: Kalshi, Ramp, MatX, Lightmatter, Snap, Plaid, Zeromatter Technologies, Mercury, Edison Scientific, Enfabrica, Base Power. As in H1, no month-by-month keyword press search was run. ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 2 of this firm's July-August rows arrived this way: Convex (2026-08-05); Neros Technologies (2026-08-11). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Not complete. 2 rows in this slice, both July; ZERO in August. (1) The H1 finding about sparkcapital.com STILL HOLDS: the site has only About / Team / Companies, the portfolio index is undated and carries no rounds, amounts or dates, and there is still no news, press or announcements page and no working sitemap - so there remains NO enumerable surface on the firm's own site. (2) SURFACE CHANGE WORTH FLAGGING: on 2026-08-20 sparkcapital.com/companies rendered only ELEVEN companies (Kalshi, Inc.; Ramp; MatX; Lightmatter; Snap; Plaid; Zeromatter Technologies, Inc.; Mercury; Edison Scientific; Enfabrica; Base Power) where the H1 pass read 45 off the same URL. Same URL, same fetch method - the page itself returned fewer entries, most likely a client-side rendering or rotation change. The candidate list this pass could work was therefore about a quarter the size of H1's, which mechanically depresses July/August relative to January-June. This is a real, declared asymmetry between the halves and should be treated as such. (3) MONTH/SURFACE GAPS: AUGUST 2026 has NO AlleyWatch table - https://www.alleywatch.com/2026/09/global-startup-funding-top-largest-august-2026-vc/ returns 404, confirmed by fetch on 2026-08-20, because that edition publishes in early September. No substitute aggregator was used in its place. August is therefore covered only by the (shrunken) portfolio candidate list plus techcrunch.com/tag/spark-capital/, which carried no Spark Capital funding story in July or August 2026 (its only in-slice item is the 2026-07-10 Oratomic story). JULY 2026 is covered by the AlleyWatch global July table, which exists and lists 19 rounds; both July rows came from it. (4) DROPPED / CORRECTLY ABSENT: Base Power's Series D ($1B at $13B, announced 2026-08-04, https://www.finsmes.com/2026/08/base-power-raises-1-billion-in-series-d-funding.html) - Base Power is on Spark's own portfolio index, but the announcement names Ribbit, Addition, Valor Equity Partners, JPMorganChase's Strategic Investment Group, Altimeter, D1 Capital Partners, Sands Capital, Coatue, Layer Global, Energy Impact Partners, Thrive Capital, a16z, Lightspeed, Trust Ventures and CapitalG, and NOT Spark Capital, so no row was created. Kalshi, Ramp, MatX, Lightmatter, Snap, Plaid, Mercury, Edison Scientific and Enfabrica had no round announced between 2026-07-01 and 2026-08-20; Zeromatter Technologies returns no FinSMEs results at all. (5) Structurally this method still misses seed and Series A rounds, exactly the stage Spark is most active at, because crawlable largest-round indexes do not carry them. Treat the count as a floor.",
+    "extensionRateRatio": 1.48,
     "method": "Entity confirmed as Spark Capital of Boston/San Francisco (sparkcapital.com, the backer of Twitter, Slack, Discord, Coinbase, Anthropic); Spark Growth, Spark Ventures, SparkLabs, Spark Microsystems and Genspark were checked against context and excluded (a FinSMEs hit for 'Spark' in March 2026 was Spark Microsystems, a different company, and the 'Genspark' hits are a name collision, not Spark Capital). The firm's site has exactly three surfaces - / (About), /team and /companies. /companies is an undated index of 45 portfolio companies showing only name, one-line description, website and (where applicable) exit; it carries no rounds, dates or amounts, and a handful of companies link to old narrative blog posts. sparkcapital.com/sitemap.xml does not resolve. There is no news, press or announcements page. Enumeration therefore ran the other way round: I took the 45-company portfolio index as a candidate list and looked each plausible name up in FinSMEs and TechCrunch tag pages for an H1 2026 round, and separately scanned AlleyWatch's monthly largest-round tables (Feb/Mar/Apr/Jun global, May US) for rows naming Spark Capital. Every kept row required a contiguous verbatim passage naming both Spark Capital and the company. ASSEMBLY-STAGE CROSS-FILL: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and firm B had no row for that company and date, a row was created for firm B FROM THE SAME SOURCE - same URL, same date, same verbatim evidence quote, which was re-checked to name firm B and the company. 5 of this firm's rows arrived this way: Gambit Security (2026-02-25); Granola (2026-03-25); Higharc (2026-06-30); Novellia (2026-06-02); XDOF (2026-06-19). Their `role` is null by design: the source often does state who led, but deriving it programmatically would be inference, so it was not attempted. Re-source those rows if role matters.",
     "note": "Not complete. (1) Spark publishes nothing dated - no news page, no per-investment post, no working sitemap - so the firm's own site cannot enumerate the window; the portfolio index tells you WHO Spark backs but never WHEN or in WHICH round. (2) This session's web-search quota was exhausted (200/200) before work started, so no month-by-month keyword press search was possible; candidates came only from crawlable indexes, which structurally miss seed and Series A rounds - exactly the stage Spark is most active at. (3) A concrete miss is already visible: sparkcapital.com/companies lists 'Generalist', and AlleyWatch's June table credits Spark Capital in Generalist AI's $400M round, but the actual 2026-06-05 announcement (FinSMEs) names only Radical Ventures, 8VC, Union Square Ventures, Hanabi Capital, NVentures and Bezos Expeditions - no source naming both Spark and the company could be found, so the row was dropped rather than guessed. Similarly, AlleyWatch's June prose credits Spark in Suno's Series D while its own table does not; unresolved, no row. (4) Portfolio names checked for in-window rounds and found NOT to name Spark in the announcement (so correctly absent): Kalshi (2026-04-09 Series E top-up, 2026-05-08 Series F, 2026-05-22 Series F extension), Ramp (2026-06-04 Series F), Chainguard, Abridge, Crusoe, Base Power. Many other portfolio names were not reachable at all. Treat four rows as a floor, not a count.",
     "sources": [
@@ -9941,6 +12552,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass, on the same surfaces. tcv.com/news and /news/category/portfolio-news were re-read and tcv.com/sitemap.xml -> sitemap-0.xml was re-walked, using the sitemap's reverse-chronological ORDERING as a candidate generator exactly as in H1; each candidate above the independently-dated onX Maps post was then looked up in FinSMEs, in the company's own announcement, and in techcrunch.com/tag/tcv/ to find the real announcement date and a contiguous verbatim passage naming both TCV and the company. Cross-checked against AlleyWatch's monthly largest-round table continued forward to the July 2026 global edition, and against finsmes.com/?s=TCV. The brief's exclusion of secondary and pre-IPO transactions was applied; both rows here are primary financings. As in H1, no month-by-month keyword press search was run.",
+    "extensionMethodChanged": false,
+    "extensionNote": "Not complete. 2 rows in this slice, both July; ZERO in August. (1) The H1 finding about tcv.com STILL HOLDS, re-verified on 2026-08-20: /news does post one article per new investment ('Our Investment in X'), but the listing shows NO dates anywhere, the article bodies are still client-rendered and unfetchable, and every lastmod in sitemap-0.xml is still the single bulk 2026-08-12T23:43:36 migration timestamp, so the sitemap still cannot be date-filtered. Ordering still only bounds a post's date; it never establishes one. (2) The news list is UNCHANGED at the top since the H1 pass - 'Onyx Security: A Secure Control Plane for the Agentic Era' is still the newest post, with 'Entering the Inference Era: Our Investment in Fireworks' second - i.e. TCV published no new investment post between the two reads, so the firm's own surface generated no new candidates for August at all. Both rows here were dated and evidenced from OUTSIDE tcv.com (the Fireworks company blog and FinSMEs), because TCV's own post carries no date. (3) MONTH/SURFACE GAPS: AUGUST 2026 has NO AlleyWatch table - https://www.alleywatch.com/2026/09/global-startup-funding-top-largest-august-2026-vc/ returns 404, confirmed by fetch on 2026-08-20, because that edition publishes in early September - and tcv.com posted nothing new, and finsmes.com/?s=TCV shows no TCV-named round in July or August 2026 (its most recent TCV item remains onX, 2025-11-03), and techcrunch.com/tag/tcv/ carries no TCV funding story in the slice. Every August surface for TCV is therefore empty or absent. JULY 2026 is covered by the AlleyWatch global July table (exists, 19 rounds, TCV named once, in Fireworks). (4) STILL UNDATEABLE, carried forward from H1 and re-checked: 'Pennylane: Building the Financial Operating System for European SMEs' and 'Neara: Building the AI-Native Digital Twin for Critical Infrastructure'. Both sit inside the Nov-2025-to-Aug-2026 ordering band and are live candidates for this window, but FinSMEs' most recent Pennylane round is still 2024-02-09 (Series C, EUR 40M) and its most recent Neara round is still 2024-10-30 (Series C, US$31M), and TechCrunch still has nothing since 2024. Neither could be dated or evidenced, so neither is returned. If either is in fact in-window, this record is short by a row. (5) Fireworks is dated 2026-07-15 from the company's own announcement (fireworks.ai/blog/series-d-announcement), not the 2026-07-16 FinSMEs write-up, following the H1 precedent of preferring the company's own post where it exists (as was done for Mercury). Treat the count as a floor.",
+    "extensionRateRatio": 2.03,
     "method": "Entity confirmed as TCV / Technology Crossover Ventures (tcv.com), growth stage. tcv.com/news does publish a post per new investment ('Our Investment in X') and splits them into /news/category/portfolio-news, /thought-leadership and /tcv-news, but the listing shows NO dates and the article bodies are client-rendered - every attempt to fetch an individual /news/ article returned only metadata and navigation, never the body or a date line. tcv.com/sitemap.xml resolves to sitemap-0.xml, which does enumerate all 60 /news/ URLs in reverse-chronological order, but every lastmod is the same bulk 2026-08-12T23:43 site-migration timestamp, so it cannot be date-filtered either. I therefore used the sitemap's ordering as a candidate generator: onX Maps is independently dated 2025-11-03, so the 13 posts above it in the list span Nov 2025 to Aug 2026, and each of those candidates (Pennylane, Neara, Cloudsmith, Actively AI, Corgi, Mercury, ICEYE, Fireworks, Onyx Security) was then looked up in FinSMEs and TechCrunch to find the real announcement, its date, and a verbatim passage naming both TCV and the company. That was cross-checked against AlleyWatch's monthly largest-round tables (Feb/Mar/Apr/Jun global, May US). The brief's exclusion of secondary purchases was applied: ICEYE's 2026-02-11 Series E was paired with a EUR 50m secondary placement and in any case does not name TCV; the ICEYE row kept here is the 2026-06-09 round, which its source explicitly calls 'a primary Series F funding'.",
     "note": "Not complete, for three reasons. (1) TCV's news index is the right surface but is unusable as a dated list: no dates on the listing, no retrievable article bodies, and sitemap lastmods that are all a single migration timestamp. Ordering alone bounds a post's date, it does not establish it. (2) Two TCV investment posts sit inside the Nov-2025-to-Aug-2026 band and are therefore live candidates for this window but could NOT be dated or evidenced and are NOT returned: 'Pennylane: Building the Financial Operating System for European SMEs' and 'Neara: Building the AI-Native Digital Twin for Critical Infrastructure'. FinSMEs' most recent Pennylane round is 2024-02-09 and its most recent Neara round is 2024-10-30; TechCrunch has nothing on either since 2024. Both should be re-sourced in a later pass - if either is in-window this record is short by a row. (3) This session's web-search quota was exhausted (200/200) before work began, so no month-by-month keyword press search ('led by TCV', 'participation from TCV') was possible, and TCV does not post about every participation - the ICEYE Series F row here came from press, not from a TCV post. Posts checked and confirmed OUT of window: Fireworks Series D (company blog, 2026-07-15), Onyx Security Series B (2026-07-30; the earlier 2026-03-12 Onyx Security round was led by Conviction and Cyberstarts and does not name TCV), onX Maps (2025-11-03). Also confirmed out: Corgi's 2026-01-09 $108M round, which does not name TCV, and ICEYE's 2026-02-11 Series E, which does not either.",
     "sources": [
@@ -9959,6 +12576,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass: entity confirmed as Threshold Ventures (threshold.vc), the former DFJ venture practice run by Josh Stein and Heidi Roizen; Draper Associates, Draper Fisher Jurvetson, DFJ Growth, Draper Esprit / Molten Ventures and every other Draper-family entity excluded. The same three surfaces were worked in the same order. (1) threshold.vc/portfolio was re-walked for companies tagged 'Year Invested 2026' to regenerate the candidate set: it returns exactly the same six as in H1 - Bluefish, Core Automation, Enclave, Interia, Sequen and Veritus - with no company added for July or August, so no new candidate to chase. (2) threshold.vc/content, the firm's only dated feed, was re-walked in full: it still carries just three 2026 items and its most recent entry is the Bluefish Series B of 2026-04-14, i.e. nothing dated July or August 2026. (3) TechCrunch's threshold-ventures tag page was re-walked in full: its only 2026 item remains the 2026-02-11 Inertia Enterprises piece, nothing in July or August. No in-window candidate was produced by any of the three surfaces, so no rows were opened and no rows are recorded. No additional source was reached for to avoid a zero.",
+    "extensionMethodChanged": false,
+    "extensionNote": "ZERO rows for 2026-07-01 to 2026-08-20, and that is what these surfaces yield rather than a failure to look. SURFACE STATE BY MONTH: threshold.vc/content is UNPOPULATED for both July 2026 and August 2026 - its newest item is 2026-04-14, so the firm's only dated feed has published nothing for over four months and gives no July or August surface at all; TechCrunch's threshold-ventures tag page is likewise UNPOPULATED for July and August 2026 (newest 2026 item 2026-02-11); threshold.vc/portfolio is undated by construction - it carries a 'Year Invested' year but no round, no date and no announcement link, so it cannot place a participation inside a seven-week window, and it added no new 2026-tagged company in July or August. The three companies tagged 'Year Invested 2026' that H1 could not date - Core Automation, Enclave and Veritus - are still undated and unlocated; any of them could have been announced inside this window and the portfolio page would not say. Note again that the company Threshold's portfolio spells 'Interia' is spelled 'Inertia Enterprises' in its funding announcement.",
+    "extensionRateRatio": 0.0,
     "method": "Entity confirmed as Threshold Ventures (threshold.vc), the former DFJ venture practice run by Josh Stein and Heidi Roizen. Draper Associates, Draper Esprit / Molten Ventures, DFJ Growth and every other Draper-family entity were excluded, and each candidate was checked to name 'Threshold Ventures' (or 'Threshold' in Threshold's own post) specifically. Two surfaces were worked. (1) threshold.vc/portfolio lists ~120 companies each tagged with a 'Year Invested'; six carry 2026 - Bluefish, Core Automation, Enclave, Interia, Sequen and Veritus - which gave the candidate set. (2) threshold.vc/content is the firm's only dated feed and carries just three 2026 items: the Bluefish Series B (2026-04-14), the Sequen Series A (2026-03-18) and Josh Stein's InertiaFusion perspective (2026-02-11). TechCrunch's threshold-ventures tag page was walked in full and yielded the Inertia Enterprises $450M Series A (2026-02-11). All three surviving candidates were opened and each yields a contiguous verbatim passage naming both Threshold Ventures and the company.",
     "note": "The portfolio page gives a year of investment but no round, no date and no announcement link, so participation inside a six-month window cannot be enumerated from it. Three of the six companies tagged 'Year Invested 2026' - Core Automation, Enclave and Veritus - have no announcement I could locate or date; they may have been announced inside the window, later in 2026, or not at all, and the portfolio page does not say. Threshold's /content feed is selective (it carried only three 2026 items) and no news/press-release page exists on the site. The session's web-search budget was exhausted and every general search engine is robots-blocked for the fetch tool, so those three companies could not be chased down and no systematic press sweep was possible. Note also that the company Threshold's portfolio spells 'Interia' is spelled 'Inertia Enterprises' in the funding announcement; the row uses the announcement spelling.",
     "sources": [
@@ -9975,6 +12598,12 @@ const DEAL_COVERAGE = {
     "complete": false,
     "completeFrom": "2026-01-01",
     "completeTo": "2026-06-30",
+    "extendedTo": "2026-08-20",
+    "extensionComparable": false,
+    "extensionMethod": "Same as the January-June pass in shape: ycombinator.com/blog was re-checked across July and August 2026 and, as before, it is not an enumeration surface for the included category - its most recent posts are batch/program news and partner appointments (the newest is 'Diana Hu Is YC's Newest Managing Partner', 2026-06-11) and it never announces YC's participation in a portfolio company's priced round. Coverage therefore again rests entirely on press and press-release search: the AlleyWatch monthly largest-round tables continued forward on the same URL pattern, Crunchbase News investor-activity pieces, the crescendo.ai AI-funding deal tracker, TechCrunch/Fortune/BetaKit funding coverage, and PR Newswire / Business Wire / FinSMEs round announcements searched for 'Y Combinator' inside the investor list. Each candidate was opened at its actual announcement and kept only where a contiguous verbatim passage names Y Combinator as an investor in that specific round. ASSEMBLY-STAGE CROSS-FILL, APPLIED EXACTLY AS IN THE JANUARY-JUNE PASS so the two halves are built the same way: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and B had no row for that company and date, a row was created for B from the SAME source - same URL, same date, same verbatim quote, machine-re-checked to name both B and the company. 2 of this firm's July-August rows arrived this way: Emergent (2026-07-20); Singularity (2026-07-14). Their role is null by design, the same treatment H1 used, because deriving lead-vs-participant programmatically is inference.",
+    "extensionMethodChanged": true,
+    "extensionNote": "SPECIAL RULE RESTATED, UNCHANGED, and it defines what 'complete' means here. The standard YC batch investment - the cheque YC writes into every company in every batch, several hundred a year - is EXCLUDED entirely, as are press mentions that merely describe a company as 'YC-backed', a 'Y Combinator grad', 'YC S23' or 'YC W26' without naming YC as an investor in the round being announced. Only follow-on investments and named participation in a company's announced priced or seed round are included. `complete: false` therefore refers to completeness of that included category ONLY; it says nothing about YC's overall investing, which is dominated by the excluded batch cheques. Dropped on that rule in this slice: Vector Legal's 2026-07-30 $5.19M seed (YC named only as the accelerator the company went through, Base10 Partners led) and Corgi (described as 'Y Combinator's latest unicorn' with YC absent from the investor list; its TCV-led round is also May 2026, outside this slice). Orthogonal's $4.3M seed, which does name Y Combinator, was announced 2026-06-25 and falls before this slice. METHOD CHANGE, DECLARED, and it matters for period-over-period comparison: FinSMEs was queried SITE-SCOPED for this window ('finsmes.com 2026/07 Y Combinator', 'finsmes.com 2026/08 Y Combinator') rather than being left to surface incidentally through general press search. FinSMEs supplied 3 of the 14 January-June YC rows but was never recorded as a YC surface, and site-scoping it exposed a dense tail of small YC-participating seed and Series A rounds that the January-June pass would not have reached the same way: 16 of the 18 rows here came from that query (Proception.AI, Finto, Hadrius, Vorflux, Scape, telli, Centralize, Healia, Dili, HappyRobot, Naïve, Discovered Materials, Axle, Blacksmith, River Markets, Hypercubic); only Bunkerhill Health and Terminal came from the Business Wire / PR Newswire searches the first pass recorded. July-August YC volume is consequently NOT comparable like-for-like with January-June: the first half is under-counted relative to this slice, not the other way round. SURFACE STATE FOR THIS WINDOW: the AlleyWatch monthly tables were continued forward as instructed - the JULY 2026 US table (12 rounds) and JULY 2026 global table (19 rounds) both exist and were read, and neither names Y Combinator in any round. There is NO AlleyWatch table for AUGUST 2026: alleywatch.com/2026/09/us-startup-funding-top-largest-august-2026-vc/ returns 404 as of 2026-08-20, because the monthly table is published in the following month. Naming it: the August 2026 AlleyWatch monthly surface does not exist yet. The crescendo.ai AI-funding tracker, a core January-June surface, has not been updated past 2026-07-03 and contributed no rows. Crunchbase News's July investor-activity piece says 'Y Combinator was by far the busiest backer by deal count' but names no portfolio companies, so it works only as a signal that this set is a small fraction of YC's July activity. Within the included category the set still cannot be shown to be exhaustive: YC publishes no list of its follow-on participations, and many round announcements omit the full investor list. Every count is a FLOOR. The 18 rows here are July 11, August 7.",
+    "extensionRateRatio": 5.58,
     "method": "Checked ycombinator.com/blog across the window month by month: its 2026 posts are batch/program news, partner appointments and portfolio IPO congratulations, and it never announces YC's participation in a portfolio company's priced round, so YC's own site is not an enumeration surface for the included category. Coverage therefore rests entirely on press and press-release search: monthly largest-round roundups (AlleyWatch US/global, Jan-Jun 2026), TechCrunch and Fortune funding coverage, an AI-funding deal tracker, and PR Newswire / Business Wire releases, searching for 'Y Combinator' inside the investor list of round announcements. Each candidate was opened at its actual announcement and kept only where a verbatim sentence names Y Combinator as an investor participating in that specific round. ASSEMBLY-STAGE CROSS-FILL: after all firms were researched independently, every row's coInvestors list was scanned for the other 23 firms in this set. Where firm B was named as a co-investor in a round researched for firm A, and firm B had no row for that company and date, a row was created for firm B FROM THE SAME SOURCE - same URL, same date, same verbatim evidence quote, which was re-checked to name firm B and the company. 4 of this firm's rows arrived this way: 10x Science (2026-04-22); Emergent (2026-01-20); Mine (2026-01-26); Science (2026-03-06). Their `role` is null by design: the source often does state who led, but deriving it programmatically would be inference, so it was not attempted. Re-source those rows if role matters.",
     "note": "SPECIAL RULE APPLIED, and it defines what 'complete' means here. The standard YC batch investment - the cheque YC writes into every company in every batch, several hundred a year - is EXCLUDED, as are press mentions that merely describe a company as 'YC-backed', a 'Y Combinator grad' or 'YC W26' without naming YC as an investor in the round being announced (e.g. Corgi's May 2026 Series B, where YC is cited only as a backer of the earlier seed and Series A, and Abacum, where YC is described as an existing investor rather than a participant). Only follow-on / participating investments in announced priced or seed rounds outside the batch deal are included. `complete: false` therefore refers to completeness of that included category ONLY: it says nothing about YC's batch investing. Within that category the set cannot be shown to be exhaustive - YC turns up as a named participant in a long tail of Series A and Series B rounds that never reach the monthly round-ups, YC publishes no list of its follow-on participations, and many announcements omit the full investor list entirely. Terminal's $20M Series A, which names YC, was announced 2026-07-29 and is outside the window.",
     "sources": [
@@ -9991,13 +12620,15 @@ const DEAL_COVERAGE = {
 };
 
 /* Free-text deal sector -> canonical taxonomy.js bucket slugs.
-   Multi-valued on purpose: "Healthcare AI" genuinely is both.
-   Kept separate from taxonomy.js SECTOR_MAP so that adding a
-   deal label can never change which firms appear on an SEO
-   landing page. */
+   Multi-valued on purpose. Kept separate from SECTOR_MAP so adding
+   a deal label can never change which firms appear on an SEO page. */
 const DEAL_SECTOR_MAP = {
   "AI": [
     "ai"
+  ],
+  "AI Agent Infrastructure": [
+    "ai",
+    "developer-tools"
   ],
   "AI Assistants": [
     "ai"
@@ -10032,6 +12663,14 @@ const DEAL_SECTOR_MAP = {
   "AI Evaluation": [
     "ai"
   ],
+  "AI Inference Hardware": [
+    "ai",
+    "hardware"
+  ],
+  "AI Inference Platform": [
+    "ai",
+    "developer-tools"
+  ],
   "AI Infrastructure": [
     "ai"
   ],
@@ -10059,6 +12698,22 @@ const DEAL_SECTOR_MAP = {
   "AI Research Automation": [
     "ai"
   ],
+  "AI Sales Automation": [
+    "ai",
+    "enterprise-software"
+  ],
+  "AI Sales Enablement": [
+    "ai",
+    "enterprise-software"
+  ],
+  "AI Security": [
+    "ai",
+    "cybersecurity"
+  ],
+  "AI Simulation": [
+    "ai",
+    "deep-tech"
+  ],
   "AI Software Development": [
     "ai",
     "developer-tools"
@@ -10084,15 +12739,26 @@ const DEAL_SECTOR_MAP = {
     "ai",
     "deep-tech"
   ],
+  "AI for Science": [
+    "ai",
+    "deep-tech"
+  ],
   "Accounting AI": [
     "ai",
     "fintech"
+  ],
+  "Accounting Automation": [
+    "fintech",
+    "enterprise-software"
   ],
   "Advanced Manufacturing": [
     "industrial-tech"
   ],
   "Advanced Materials": [
     "deep-tech"
+  ],
+  "Advertising Technology": [
+    "enterprise-software"
   ],
   "AgTech": [
     "food-agriculture"
@@ -10139,6 +12805,10 @@ const DEAL_SECTOR_MAP = {
     "climate",
     "hardware"
   ],
+  "Battery Technology": [
+    "climate",
+    "hardware"
+  ],
   "Biopharma": [
     "healthcare"
   ],
@@ -10157,11 +12827,18 @@ const DEAL_SECTOR_MAP = {
   "CPG Software": [
     "enterprise-software"
   ],
+  "Climate GeoAI": [
+    "climate",
+    "ai"
+  ],
   "Cloud Data Infrastructure": [
     "developer-tools"
   ],
   "Cloud Infrastructure": [
     "developer-tools"
+  ],
+  "Compliance Software": [
+    "enterprise-software"
   ],
   "Computational Biology": [
     "healthcare"
@@ -10174,9 +12851,16 @@ const DEAL_SECTOR_MAP = {
     "ai",
     "cybersecurity"
   ],
+  "Construction": [
+    "industrial-tech"
+  ],
   "Construction Compliance": [
     "enterprise-software",
     "industrial-tech"
+  ],
+  "Construction Materials Commerce": [
+    "industrial-tech",
+    "marketplaces"
   ],
   "Construction Robotics": [
     "industrial-tech"
@@ -10201,6 +12885,9 @@ const DEAL_SECTOR_MAP = {
   "Consumer Software": [
     "consumer"
   ],
+  "Counter-Drone Defense": [
+    "defense-tech"
+  ],
   "Critical Minerals": [
     "industrial-tech"
   ],
@@ -10214,9 +12901,16 @@ const DEAL_SECTOR_MAP = {
     "crypto",
     "fintech"
   ],
+  "Customer Communications": [
+    "enterprise-software"
+  ],
   "Customer Service AI": [
     "ai",
     "enterprise-software"
+  ],
+  "Cyber Warfare": [
+    "defense-tech",
+    "cybersecurity"
   ],
   "Cybersecurity": [
     "cybersecurity"
@@ -10231,6 +12925,10 @@ const DEAL_SECTOR_MAP = {
   "Data Security": [
     "cybersecurity"
   ],
+  "Data and AI": [
+    "ai",
+    "developer-tools"
+  ],
   "Database Software": [
     "developer-tools"
   ],
@@ -10243,6 +12941,10 @@ const DEAL_SECTOR_MAP = {
   ],
   "Defense Aviation": [
     "defense-tech"
+  ],
+  "Defense Cybersecurity": [
+    "defense-tech",
+    "cybersecurity"
   ],
   "Defense Tech": [
     "defense-tech"
@@ -10271,6 +12973,13 @@ const DEAL_SECTOR_MAP = {
   "Digital Identity": [
     "cybersecurity"
   ],
+  "Distributed Energy": [
+    "climate"
+  ],
+  "E-commerce Personalization": [
+    "consumer",
+    "enterprise-software"
+  ],
   "Edge Computing": [
     "developer-tools"
   ],
@@ -10279,6 +12988,10 @@ const DEAL_SECTOR_MAP = {
   ],
   "Energy": [
     "climate"
+  ],
+  "Energy Storage": [
+    "climate",
+    "hardware"
   ],
   "Engineering AI": [
     "ai",
@@ -10304,6 +13017,13 @@ const DEAL_SECTOR_MAP = {
   "Enterprise IT": [
     "enterprise-software"
   ],
+  "Enterprise Security": [
+    "cybersecurity",
+    "enterprise-software"
+  ],
+  "Enterprise Service Management": [
+    "enterprise-software"
+  ],
   "Enterprise Software": [
     "enterprise-software"
   ],
@@ -10322,11 +13042,17 @@ const DEAL_SECTOR_MAP = {
     "fintech",
     "enterprise-software"
   ],
+  "Financial Software": [
+    "fintech"
+  ],
   "Fintech": [
     "fintech"
   ],
   "Fintech Infrastructure": [
     "fintech"
+  ],
+  "Fire Safety Tech": [
+    "industrial-tech"
   ],
   "Food Tech": [
     "food-agriculture"
@@ -10340,8 +13066,16 @@ const DEAL_SECTOR_MAP = {
   "Gaming": [
     "consumer"
   ],
+  "Gaming Commerce": [
+    "consumer",
+    "marketplaces"
+  ],
   "Gene Therapy": [
     "healthcare"
+  ],
+  "Generative Media": [
+    "ai",
+    "consumer"
   ],
   "Go-to-Market Software": [
     "enterprise-software"
@@ -10354,6 +13088,10 @@ const DEAL_SECTOR_MAP = {
   ],
   "HR Tech": [
     "enterprise-software"
+  ],
+  "Health Benefits": [
+    "healthcare",
+    "fintech"
   ],
   "Health Tech": [
     "healthcare"
@@ -10381,6 +13119,9 @@ const DEAL_SECTOR_MAP = {
   "Healthcare Software": [
     "healthcare"
   ],
+  "Healthcare Technology": [
+    "healthcare"
+  ],
   "Home Services Software": [
     "enterprise-software"
   ],
@@ -10393,6 +13134,10 @@ const DEAL_SECTOR_MAP = {
   ],
   "Identity Infrastructure": [
     "cybersecurity"
+  ],
+  "Industrial AI": [
+    "ai",
+    "industrial-tech"
   ],
   "Industrial Robotics": [
     "robotics",
@@ -10460,6 +13205,13 @@ const DEAL_SECTOR_MAP = {
   "Materials Discovery": [
     "deep-tech"
   ],
+  "Materials Science AI": [
+    "ai",
+    "deep-tech"
+  ],
+  "Messaging Infrastructure": [
+    "developer-tools"
+  ],
   "Mining & Energy AI": [
     "ai",
     "industrial-tech"
@@ -10475,8 +13227,14 @@ const DEAL_SECTOR_MAP = {
     "healthcare",
     "deep-tech"
   ],
+  "News Media": [
+    "consumer"
+  ],
   "Nuclear Energy": [
     "climate"
+  ],
+  "Payments": [
+    "fintech"
   ],
   "Personal Finance": [
     "fintech"
@@ -10491,6 +13249,18 @@ const DEAL_SECTOR_MAP = {
   "Physical AI Data": [
     "ai",
     "robotics"
+  ],
+  "Preventive Health": [
+    "healthcare"
+  ],
+  "Preventive Healthcare": [
+    "healthcare"
+  ],
+  "Private Credit Software": [
+    "fintech"
+  ],
+  "Process Intelligence": [
+    "enterprise-software"
   ],
   "Procurement Software": [
     "enterprise-software"
@@ -10534,6 +13304,19 @@ const DEAL_SECTOR_MAP = {
   "SMB Software": [
     "enterprise-software"
   ],
+  "Sales Intelligence": [
+    "enterprise-software"
+  ],
+  "Sales Software": [
+    "enterprise-software"
+  ],
+  "Satellite Manufacturing": [
+    "space",
+    "hardware"
+  ],
+  "Satellites": [
+    "space"
+  ],
   "Scientific AI": [
     "ai",
     "deep-tech"
@@ -10542,6 +13325,11 @@ const DEAL_SECTOR_MAP = {
     "enterprise-software"
   ],
   "Semiconductor Design": [
+    "hardware",
+    "deep-tech"
+  ],
+  "Semiconductor Design AI": [
+    "ai",
     "hardware",
     "deep-tech"
   ],
@@ -10572,6 +13360,9 @@ const DEAL_SECTOR_MAP = {
   "Sovereign AI": [
     "ai"
   ],
+  "Sovereign Infrastructure": [
+    "deep-tech"
+  ],
   "Space": [
     "deep-tech"
   ],
@@ -10582,6 +13373,10 @@ const DEAL_SECTOR_MAP = {
     "defense-tech",
     "deep-tech"
   ],
+  "Sports Media AI": [
+    "ai",
+    "consumer"
+  ],
   "Stablecoin Infrastructure": [
     "crypto",
     "fintech"
@@ -10589,6 +13384,10 @@ const DEAL_SECTOR_MAP = {
   "Synthetic Biology": [
     "healthcare",
     "deep-tech"
+  ],
+  "Telematics Data Infrastructure": [
+    "mobility",
+    "developer-tools"
   ],
   "Travel": [
     "mobility"
@@ -10613,24 +13412,26 @@ const DEAL_SECTOR_MAP = {
   ]
 };
 
-/* Verbatim co-investor string (lower-cased) -> firm slug.
-   Only exact matches against a board firm's own name or short
-   name are added automatically; anything requiring judgement is
-   entered by hand, so a near-miss never silently becomes an edge
-   in the co-investment graph. */
+/* Verbatim co-investor string (lower-cased) -> firm slug. Only
+   exact matches against a board firm's own name or short name are
+   added automatically, so a near-miss never silently becomes an
+   edge in the co-investment graph. */
 const COINVESTOR_ALIASES = {
   "500 global": "500-global",
+  "645 ventures": "645-ventures",
   "8vc": "8vc",
   "a16z": "a16z",
   "accel": "accel",
   "acrew capital": "acrew-capital",
   "addition": "addition",
+  "afore capital": "afore-capital",
   "air street capital": "air-street-capital",
   "aix ventures": "aix-ventures",
   "alumni ventures": "alumni-ventures",
   "amplify partners": "amplify-partners",
   "andreessen horowitz": "a16z",
   "andreessen horowitz (a16z)": "a16z",
+  "arch venture partners": "arch-venture-partners",
   "atomico": "atomico",
   "b capital": "b-capital-group",
   "bain capital ventures": "bain-capital-ventures",
@@ -10639,6 +13440,7 @@ const COINVESTOR_ALIASES = {
   "base10 partners": "base10-partners",
   "basis set ventures": "basis-set-ventures",
   "battery ventures": "battery-ventures",
+  "bayern kapital": "bayern-kapital",
   "benchmark": "benchmark",
   "bessemer": "bessemer",
   "bessemer venture partners": "bessemer",
@@ -10649,6 +13451,7 @@ const COINVESTOR_ALIASES = {
   "caffeinated capital": "caffeinated-capital",
   "canaan partners": "canaan-partners",
   "capitalg": "capitalg",
+  "cherry ventures": "cherry-ventures",
   "cisco investments": "cisco-investments",
   "citi ventures": "citi-ventures",
   "collaborative fund": "collaborative-fund",
@@ -10657,6 +13460,7 @@ const COINVESTOR_ALIASES = {
   "costanoa ventures": "costanoa-ventures",
   "cowboy ventures": "cowboy-ventures",
   "craft ventures": "craft-ventures",
+  "creandum": "creandum",
   "crv": "crv",
   "cyberstarts": "cyberstarts",
   "dcm ventures": "dcm-ventures",
@@ -10665,7 +13469,9 @@ const COINVESTOR_ALIASES = {
   "dell technologies capital": "dell-technologies-capital",
   "draper associates": "draper-associates",
   "elad gil": "elad-gil",
+  "elaia": "elaia-partners",
   "emergence capital": "emergence-capital",
+  "energy impact partners": "energy-impact-partners",
   "entrepreneur first": "entrepreneur-first",
   "felicis": "felicis",
   "fifth wall": "fifth-wall",
@@ -10676,16 +13482,20 @@ const COINVESTOR_ALIASES = {
   "fj labs": "fj-labs",
   "footwork": "footwork",
   "forerunner ventures": "forerunner-ventures",
+  "foresite capital": "foresite-capital",
   "foundation capital": "foundation-capital",
   "founders fund": "founders-fund",
   "gaingels": "gaingels",
   "general catalyst": "general-catalyst",
+  "gradient ventures": "gradient-ventures",
   "greenoaks": "greenoaks-capital",
   "greycroft": "greycroft",
   "greylock": "greylock",
   "greylock partners": "greylock",
   "gv": "gv",
+  "harlem capital": "harlem-capital",
   "haun ventures": "haun-ventures",
+  "haystack": "haystack",
   "hof capital": "hof-capital",
   "homebrew": "homebrew",
   "human capital": "human-capital",
@@ -10704,6 +13514,7 @@ const COINVESTOR_ALIASES = {
   "kembara": "kembara",
   "khosla": "khosla-ventures",
   "khosla ventures": "khosla-ventures",
+  "kima ventures": "kima-ventures",
   "kindred ventures": "kindred-ventures",
   "kleiner perkins": "kleiner-perkins",
   "lakestar": "lakestar",
@@ -10712,13 +13523,16 @@ const COINVESTOR_ALIASES = {
   "liquid 2": "liquid2-ventures",
   "liquid 2 ventures": "liquid2-ventures",
   "localglobe": "localglobe",
+  "lowercarbon capital": "lowercarbon-capital",
   "lux": "lux-capital",
   "lux capital": "lux-capital",
   "m13": "m13",
   "madrona": "madrona",
   "makers fund": "makers-fund",
+  "matrix partners": "matrix-partners",
   "mayfield": "mayfield",
   "menlo ventures": "menlo-ventures",
+  "monashees": "monashees",
   "nea": "nea",
   "neo": "neo",
   "new enterprise associates": "nea",
@@ -10735,12 +13549,15 @@ const COINVESTOR_ALIASES = {
   "peak xv": "peak-xv-partners",
   "peak xv partners": "peak-xv-partners",
   "pear vc": "pear-vc",
+  "plural": "plural",
   "point72 ventures": "point72-ventures",
   "polychain": "polychain-capital",
   "qed investors": "qed-investors",
   "qualcomm ventures": "qualcomm-ventures",
   "quiet capital": "quiet-capital",
+  "ra capital management": "ra-capital-management",
   "radical ventures": "radical-ventures",
+  "redalpine": "redalpine",
   "redpoint": "redpoint",
   "redpoint ventures": "redpoint",
   "ribbit": "ribbit-capital",
@@ -10756,6 +13573,7 @@ const COINVESTOR_ALIASES = {
   "serena ventures": "serena-ventures",
   "shield capital": "shield-capital",
   "signalfire": "signalfire",
+  "slow ventures": "slow-ventures",
   "softbank vision fund": "softbank-vision-fund",
   "softbank vision fund 2": "softbank-vision-fund",
   "soma capital": "soma-capital",
@@ -10764,6 +13582,7 @@ const COINVESTOR_ALIASES = {
   "spark capital": "spark-capital",
   "storm ventures": "storm-ventures",
   "susa ventures": "susa-ventures",
+  "sutter hill ventures": "sutter-hill-ventures",
   "sv angel": "sv-angel",
   "tcv": "tcv",
   "techstars": "techstars",
@@ -10772,6 +13591,7 @@ const COINVESTOR_ALIASES = {
   "thrive": "thrive-capital",
   "thrive capital": "thrive-capital",
   "tiger global": "tiger-global",
+  "tiger global management": "tiger-global",
   "toyota ventures": "toyota-ventures",
   "tribe capital": "tribe-capital",
   "true ventures": "true-ventures",
@@ -10779,6 +13599,7 @@ const COINVESTOR_ALIASES = {
   "union square ventures": "union-square-ventures",
   "upfront ventures": "upfront-ventures",
   "usv": "union-square-ventures",
+  "uvc partners": "uvc-partners",
   "valor capital": "valor-capital-group",
   "vertex ventures": "vertex-ventures",
   "vine ventures": "vine-ventures",
