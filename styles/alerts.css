@@ -357,3 +357,164 @@
   .pa2-chip { font-size: 9.5px; }
 }
 @media (prefers-reduced-motion: reduce) { .pf-follow { transition: none; } }
+
+/* ============================================================
+   POWER ALERTS REPORT
+   ------------------------------------------------------------
+   Editorial rather than dashboard: serif body, a measure that
+   stops around 68 characters, and generous leading. The cards
+   below it stay in the product's mono-and-grid language, so the
+   two read as what they are - the story, and the working.
+   ============================================================ */
+.par {
+  margin: 22px 0 28px;
+  padding: 30px 32px 26px;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+}
+.par-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--hairline);
+}
+.par-kicker {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.par-date {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--ink-dim);
+  white-space: nowrap;
+}
+/* The lede is the only element allowed to be larger than the body.
+   Everything after it is the same size, because a report that
+   shouts every paragraph has no lede at all. */
+.par-lede {
+  font-family: var(--serif, Georgia, serif);
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0 0 22px;
+  max-width: 68ch;
+}
+.par-section { margin-bottom: 18px; }
+.par-section:last-child { margin-bottom: 0; }
+.par-h {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin: 0 0 7px;
+}
+/* Footnote to a paragraph, not a sentence in it. Smaller and dimmer
+   so it reads as apparatus rather than as the next fact. */
+.par-note {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--ink-dim);
+  margin: 7px 0 0;
+  padding-left: 11px;
+  border-left: 2px solid var(--hairline);
+  max-width: 68ch;
+}
+.par-p {
+  font-family: var(--serif, Georgia, serif);
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--ink);
+  margin: 0;
+  max-width: 68ch;
+}
+
+/* ---------- the toggle back to the raw signals ---------- */
+.pa2-toggle-data {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--ink-dim);
+  background: none;
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  padding: 5px 11px;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.pa2-toggle-data:hover { color: var(--accent-bright); border-color: var(--accent); }
+
+/* ============================================================
+   FOLLOWED-FIRM NOTIFICATION
+   ============================================================ */
+.pa-navbadge {
+  display: inline-block;
+  margin-left: 6px;
+  min-width: 17px;
+  padding: 1px 5px;
+  font-family: var(--mono);
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  color: var(--bg);
+  background: var(--accent);
+  border-radius: 9px;
+  vertical-align: 1px;
+}
+
+.pa-notify {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 22px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--accent);
+  font-size: 13.5px;
+  color: var(--ink-dim);
+}
+.pa-notify-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+.pa-notify-text { flex: 1 1 auto; min-width: 0; }
+.pa-notify-text strong { color: var(--ink); font-weight: 600; }
+.pa-notify-go {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.pa-notify-go:hover { color: var(--accent-bright); text-decoration: underline; }
+.pa-notify-x {
+  background: none; border: none; cursor: pointer;
+  color: var(--ink-dim); font-size: 17px; line-height: 1;
+  padding: 2px 4px; border-radius: 3px;
+}
+.pa-notify-x:hover { color: var(--ink); }
+
+@media (max-width: 700px) {
+  .par { padding: 22px 18px 20px; }
+  .par-head { flex-direction: column; gap: 4px; }
+  .par-lede { font-size: 17px; }
+  .pa-notify { padding: 9px 14px; gap: 9px; flex-wrap: wrap; }
+  /* The link keeps its own line rather than squeezing the sentence
+     into two words per row. */
+  .pa-notify-go { flex: 1 0 100%; }
+}
