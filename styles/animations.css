@@ -86,7 +86,7 @@
   .ticker-track { animation: none !important; transform: none !important; }
 
   /* Bars sit at their final width instead of growing into it. */
-  .phil-bar-fill, .geo-bar-fill, .genome-bar-fill {
+  .geo-bar-fill, .genome-bar-fill {
     animation: none !important;
     transform: none !important;
   }
