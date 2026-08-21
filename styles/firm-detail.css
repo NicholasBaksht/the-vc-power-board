@@ -234,6 +234,14 @@
 }
 .fx-caret { margin-left: 5px; font-size: 9px; }
 
+/* The hidden attribute hides an element by applying display:none from
+   the browser's default stylesheet, which any author rule beats. The
+   display:grid below therefore cancelled it and the panel rendered
+   permanently, while element.hidden still reported true - which is
+   exactly why this passed every scripted test and failed on screen.
+   The attribute selector outranks the plain class, so no !important. */
+.fx-panel[hidden] { display: none; }
+
 .fx-panel {
   position: absolute;
   top: calc(100% + 7px);
