@@ -33,6 +33,98 @@ function renderOrgLineage(firm) {
          '</div>';
 }
 
+/* ============================================================
+   BOARD MENU
+   ------------------------------------------------------------
+   The Insights, Explore and Data dropdowns used to live in the
+   global header. They now open from the top right of a firm
+   profile instead, grouped under the same three headings.
+
+   Built here rather than in index.html because the profile is
+   rendered by JavaScript, and a static element would sit outside
+   the card it is positioned against.
+   ============================================================ */
+const FX_GROUPS = [
+  { title: 'Insights', items: [
+    ['#analytics', 'Power Score & Analytics'],
+    ['#market-signals', 'Market Signals'],
+    ['#feed', 'Intelligence Feed'],
+    ['#news', 'News & Updates'],
+    ['#reports', 'Reports']
+  ]},
+  { title: 'Explore', items: [
+    ['#discover', 'Discovery Engine'],
+    ['#relationship-graph', 'Relationship Graph'],
+    ['#family-tree', 'Family Tree'],
+    ['#compare', 'VC DNA'],
+    ['#historical-snapshot', 'Timeline'],
+    ['#ecosystem-graph', 'Ecosystem Graph'],
+    ['#world-map', 'World Map']
+  ]},
+  { title: 'Data', items: [
+    ['#analytics', 'Companies'],
+    ['#people', 'People'],
+    ['#portfolio', 'Portfolio'],
+    ['#find-investors', 'Power Match'],
+    ['#shortlist', 'Shortlist'],
+    ['companies/', 'By Category'],
+    ['locations/', 'By Location'],
+    ['stages/', 'By Stage']
+  ]}
+];
+
+function renderBoardMenu() {
+  const groups = FX_GROUPS.map(function (g) {
+    return '<div class="fx-group">' +
+      '<div class="fx-h">' + g.title + '</div>' +
+      g.items.map(function (it) {
+        return '<a class="fx-item" href="' + it[0] + '">' + it[1] + '</a>';
+      }).join('') +
+      '</div>';
+  }).join('');
+
+  return '<div class="fx">' +
+    '<button class="fx-trigger" type="button" aria-expanded="false" aria-haspopup="true">' +
+      'Explore the board <span class="fx-caret" aria-hidden="true">&#9662;</span>' +
+    '</button>' +
+    '<div class="fx-panel" hidden>' + groups + '</div>' +
+    '</div>';
+}
+
+/* One document-level listener, bound once. The profile rewrites its
+   innerHTML for every firm, so a listener attached to the button
+   itself would be discarded on the next navigation. */
+let fxBound = false;
+function bindBoardMenu() {
+  if (fxBound) return;
+  fxBound = true;
+  document.addEventListener('click', function (ev) {
+    const panel = document.querySelector('.fx-panel');
+    if (!panel) return;
+    const trigger = ev.target.closest ? ev.target.closest('.fx-trigger') : null;
+    if (trigger) {
+      const open = !panel.hidden;
+      panel.hidden = open;
+      trigger.setAttribute('aria-expanded', String(!open));
+      return;
+    }
+    if (!panel.hidden) {
+      panel.hidden = true;
+      const t = document.querySelector('.fx-trigger');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    }
+  });
+  document.addEventListener('keydown', function (ev) {
+    if (ev.key !== 'Escape') return;
+    const panel = document.querySelector('.fx-panel');
+    if (panel && !panel.hidden) {
+      panel.hidden = true;
+      const t = document.querySelector('.fx-trigger');
+      if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); }
+    }
+  });
+}
+
 function renderDetail(firm) {
   const totalHoldings = firm.holdings.length;
   const pricedHoldings = firm.holdings.filter(h => h.price !== null).length;
@@ -81,9 +173,11 @@ const holdingsHTML = firm.holdings.map(h => {
     </div>
   ` : '';
 
+  bindBoardMenu();
   document.getElementById('detailView').innerHTML = `
     <a href="#" class="detail-back" id="backToList">← Back to all firms</a>
     <div class="detail-card">
+      ${renderBoardMenu()}
       <div class="detail-rank">NO. ${String(firm.rank).padStart(2, '0')} BY AUM</div>
 <div class="detail-name">${firm.name}</div>
       ${typeof renderFollowButton === 'function' ? renderFollowButton(firm) : ''}
