@@ -1050,6 +1050,18 @@ function computePowerAlerts(options) {
         // Censored: the window swallowed every row this firm has, so the
         // cap - not the firm - decided the number.
         const atCap = rows.length >= (totalBySlug[slug] || 0);
+
+        /* The 90-day window can reach past the end of the uniformly swept
+           window and into the extension, which was searched at a different
+           intensity - measured per firm as extensionRateRatio, median about
+           1.8 and as high as 7. The count stays a true floor either way,
+           but a reader comparing two firms deserves to know when part of
+           one firm's count comes from a period that was worked harder. */
+        const cvg = (typeof DEAL_COVERAGE !== 'undefined' && DEAL_COVERAGE)
+          ? DEAL_COVERAGE[slug] : null;
+        const mixedEffort = !!(cvg && cvg.completeTo &&
+          rows.some(function (d) { return d.announcedDate > cvg.completeTo; }));
+        const effortRatio = cvg ? cvg.extensionRateRatio : null;
         rows.sort(function (a, b) { return a.announcedDate < b.announcedDate ? 1 : -1; });
 
         alerts.push({
@@ -1082,6 +1094,9 @@ function computePowerAlerts(options) {
             dataAsOf: asOf,
             dataAgeDays: ageDays,
             atCap: atCap,
+            mixedEffort: mixedEffort,
+            effortRatio: effortRatio,
+            comparableThrough: cvg ? cvg.completeTo : null,
             deals: rows.map(function (r) {
               return {
                 firm: firm.name,
@@ -1092,7 +1107,14 @@ function computePowerAlerts(options) {
                 source: r.sourceUrl
               };
             }),
-            note: (atCap
+            note: (mixedEffort
+              ? 'MIXED COVERAGE: part of this window falls after ' + cvg.completeTo +
+                ', in a research pass that returned deals at ' +
+                (effortRatio ? 'about ' + effortRatio + 'x' : 'a different') +
+                " this firm's earlier rate. Same sources, more attention per day. " +
+                'The count remains a floor, but do not rank firms on it across that boundary. '
+              : '') +
+              (atCap
               ? 'AT CAP: every deal on file for this firm falls inside the window, so ' +
                 'the true count is higher than shown and cannot be determined from this ' +
                 'dataset. Read it as "at least ' + rows.length + '". '
