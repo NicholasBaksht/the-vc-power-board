@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-crawl-team-snapshot.py  —  Power Alerts, Tier 1
+crawl-team-snapshot.py  -  Power Alerts, Tier 1
 
 Captures a dated roster of every firm's team page and writes it to
 scripts/data-team-snapshots.js. Diffing two snapshots is what produces
@@ -63,7 +63,13 @@ def linearise(html):
     t = re.sub(r'<(br|/p|/div|/li|/h[1-6]|/a|/td|/tr|/span)[^>]*>', '\n', t, flags=re.I)
     t = re.sub(r'<[^>]+>', '\n', t)
     for a, b in (('&amp;', '&'), ('&#039;', "'"), ('&rsquo;', "'"), ('&nbsp;', ' '),
-                 ('&mdash;', '-'), ('&ndash;', '-'), ('&quot;', '"'), ('&#38;', '&')):
+                 ('&mdash;', '-'), ('&ndash;', '-'), ('&quot;', '"'), ('&#38;', '&'),
+                 # The entities above are handled, but a page can serve the
+                 # literal character instead - RRE Ventures titles every
+                 # partner as "\u2014 Partner". The site carries no em dashes
+                 # anywhere, so normalise at capture rather than cleaning the
+                 # generated file afterwards every time.
+                 ('\u2014', '-'), ('\u2013', '-')):
         t = t.replace(a, b)
     return [x.strip() for x in t.split('\n') if x.strip()]
 
@@ -156,7 +162,7 @@ def render_snapshot(date, rows):
 
 
 HEADER = '''/* ============================================================
-   DATA-TEAM-SNAPSHOTS.JS  —  generated, do not hand-edit
+   DATA-TEAM-SNAPSHOTS.JS  -  generated, do not hand-edit
 
    Dated rosters captured from each firm's own team page by
    tools/crawl-team-snapshot.py. Comparing two snapshots is what
@@ -180,6 +186,30 @@ if (typeof module !== 'undefined' && module.exports) {
   module.exports = { TEAM_SNAPSHOTS };
 }
 '''
+
+
+# The diff layer reads only the two most recent snapshots
+# (alerts-engine.js: sorted[len - 2] and sorted[len - 1]). Every older one is
+# roughly 312KB that nothing reads, and a fourth would push the generated file
+# past 1MB - the point where the GitHub Contents API stops returning content
+# and a deploy can no longer be verified from it. Keeping one spare beyond the
+# two in use leaves room to audit a diff without carrying the whole history.
+KEEP_SNAPSHOTS = 3
+
+
+def prune_snapshots(src):
+    """Drop all but the newest KEEP_SNAPSHOTS blocks. Returns (text, dropped)."""
+    starts = [m.start() for m in re.finditer(r'\n  \{\n    date: "', src)]
+    if len(starts) <= KEEP_SNAPSHOTS:
+        return src, []
+    end = src.rindex('];')
+    bounds = starts + [end]
+    blocks = [src[bounds[i]:bounds[i + 1]] for i in range(len(starts))]
+    dates = [re.search(r'date: "(\d{4}-\d{2}-\d{2})"', b).group(1) for b in blocks]
+    order = sorted(range(len(blocks)), key=lambda i: dates[i])
+    drop = set(order[:len(blocks) - KEEP_SNAPSHOTS])
+    kept = ''.join(b for i, b in enumerate(blocks) if i not in drop)
+    return src[:starts[0]] + kept + src[end:], [dates[i] for i in sorted(drop)]
 
 
 def main():
@@ -225,8 +255,12 @@ def main():
             print('\na snapshot for %s already exists - not appending a duplicate' % date)
             return
         i = src.rindex('];')
-        open(OUT_FILE, 'w', encoding='utf-8').write(src[:i] + block + '\n' + src[i:])
+        merged = src[:i] + block + '\n' + src[i:]
+        merged, dropped = prune_snapshots(merged)
+        open(OUT_FILE, 'w', encoding='utf-8').write(merged)
         print('\nappended snapshot %s to %s' % (date, OUT_FILE))
+        for d in dropped:
+            print('  pruned older snapshot %s' % d)
     else:
         open(OUT_FILE, 'w', encoding='utf-8').write(HEADER + block + '\n' + FOOTER)
         print('\nwrote baseline snapshot %s to %s' % (date, OUT_FILE))
