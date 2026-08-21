@@ -87,14 +87,7 @@ function renderBoardMenu() {
     '<button class="fx-trigger" type="button" aria-expanded="false" aria-haspopup="true">' +
       'Explore the board <span class="fx-caret" aria-hidden="true">&#9662;</span>' +
     '</button>' +
-    '<div class="fx-panel" hidden>' +
-      /* Clicking outside and pressing Escape both already closed this,
-         but neither is visible. Without a control on the panel itself
-         it reads as stuck open, so the discoverable way to dismiss it
-         is a button you can see. */
-      '<button class="fx-close" type="button" aria-label="Close menu">&times;</button>' +
-      groups +
-    '</div>' +
+    '<div class="fx-panel" hidden>' + groups + '</div>' +
     '</div>';
 }
 
@@ -108,13 +101,6 @@ function bindBoardMenu() {
   document.addEventListener('click', function (ev) {
     const panel = document.querySelector('.fx-panel');
     if (!panel) return;
-    const closer = ev.target.closest ? ev.target.closest('.fx-close') : null;
-    if (closer) {
-      panel.hidden = true;
-      const t = document.querySelector('.fx-trigger');
-      if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); }
-      return;
-    }
     const trigger = ev.target.closest ? ev.target.closest('.fx-trigger') : null;
     if (trigger) {
       const open = !panel.hidden;
