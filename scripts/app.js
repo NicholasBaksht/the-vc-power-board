@@ -205,7 +205,7 @@ function router() {
   // by router() at all, so it's been rendering underneath every
   // single route (Relationship Graph, Family Tree, etc.) this
   // whole time, same root cause as the original homeIntro bug.
-  const byTheNumbersEl = document.getElementById('byTheNumbersSection');
+  const byTheNumbersEl = document.getElementById('personalityDistSection');
   if (byTheNumbersEl) byTheNumbersEl.style.display = isHomepage ? '' : 'none';
    const powerAlertsEl = document.getElementById('powerAlerts');
   if (powerAlertsEl) powerAlertsEl.style.display = isAlerts ? '' : 'none';
@@ -737,7 +737,7 @@ function pbAnimateCount(el) {
 }
 
 const PB_COUNT_SELECTOR = '.stat-card-num, .stat-box .num, .coverage-pct, .worldmap-stat-num';
-const PB_REVEAL_SELECTOR = '#byTheNumbersSection, .feature-grid-section, .below-hero, .coverage-block, #methodologyAnchor';
+const PB_REVEAL_SELECTOR = '#personalityDistSection, .feature-grid-section, .below-hero, .coverage-block, #methodologyAnchor';
 
 function pbInView(el) {
   const r = el.getBoundingClientRect();
@@ -832,7 +832,8 @@ if (document.readyState === 'loading') {
    ============================================================ */
 function ensurePersonalityHosts() {
   // distribution, at the end of By the Numbers
-  const analytics = document.getElementById('byTheNumbersSection');
+  const analytics = document.getElementById('personalityDistSection') ||
+                    document.getElementById('byTheNumbersSection');
   if (analytics && !document.getElementById('personalityDistribution')) {
     const d = document.createElement('div');
     d.id = 'personalityDistribution';
