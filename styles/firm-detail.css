@@ -197,3 +197,89 @@
 #detailView .perf-stat-card {
     border-color: var(--accent);
 }
+
+/* ============================================================
+   BOARD MENU ON THE FIRM PROFILE
+   ------------------------------------------------------------
+   Insights, Explore and Data moved here from the global header.
+   Positioned absolutely so the existing rank/name/follow stack
+   keeps its layout untouched; .detail-card takes position:
+   relative purely to anchor it.
+   ============================================================ */
+#detailView .detail-card { position: relative; }
+
+.fx {
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  z-index: 20;
+}
+.fx-trigger {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  padding: 7px 13px;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.fx-trigger:hover,
+.fx-trigger[aria-expanded="true"] {
+  color: var(--accent-bright);
+  border-color: var(--accent);
+}
+.fx-caret { margin-left: 5px; font-size: 9px; }
+
+.fx-panel {
+  position: absolute;
+  top: calc(100% + 7px);
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  gap: 22px;
+  padding: 18px 20px;
+  background: var(--surface-raised, var(--surface));
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+.fx-h {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 9px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--hairline);
+}
+.fx-item {
+  display: block;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 4px 0;
+  white-space: nowrap;
+}
+.fx-item:hover { color: var(--accent-bright); }
+
+@media (max-width: 900px) {
+  /* Back into the flow on a narrow screen: an absolutely placed
+     panel three columns wide has nowhere to go beside a firm name
+     that already wraps. */
+  .fx { position: static; margin: 0 0 16px; }
+  .fx-panel {
+    position: static;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 8px;
+  }
+  .fx-item { white-space: normal; }
+}
+@media (max-width: 560px) {
+  .fx-panel { grid-template-columns: 1fr; gap: 14px; }
+}
