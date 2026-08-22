@@ -100,6 +100,15 @@ function updateShortlistEntry(slug, updates) {
 // Adding a new firm past the limit is blocked, and the caller is
 // told via limitReached so it can show an upgrade prompt.
 function toggleShortlist(slug) {
+  /* Measurement only. Fired before the state change so the event
+     reflects the action the founder took, not the resulting state. */
+  if (typeof pbTrack === 'function') {
+    const wasSaved = getShortlist().has(slug);
+    pbTrack(wasSaved ? 'firm_unsaved' : 'firm_saved', {
+      firmSlug: slug, dedupe: String(Date.now())
+    });
+  }
+
   const current = getShortlist();
   if (current.has(slug)) {
     current.delete(slug);
