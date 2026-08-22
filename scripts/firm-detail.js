@@ -174,6 +174,13 @@ const holdingsHTML = firm.holdings.map(h => {
   ` : '';
 
   bindBoardMenu();
+  /* Both cards render unconditionally on a profile, so viewing the
+     profile is viewing them. Fired here rather than from inside each
+     renderer, which is also called from Compare. */
+  if (typeof pbTrack === 'function') {
+    pbTrack('power_personality_viewed', { firmSlug: firm.slug });
+    pbTrack('power_capabilities_viewed', { firmSlug: firm.slug });
+  }
   document.getElementById('detailView').innerHTML = `
     <a href="#" class="detail-back" id="backToList">← Back to all firms</a>
     <div class="detail-card">
@@ -182,6 +189,7 @@ const holdingsHTML = firm.holdings.map(h => {
 <div class="detail-name">${firm.name}</div>
       ${typeof renderFollowButton === 'function' ? renderFollowButton(firm) : ''}
       ${renderOrgBadge(firm)}
+      ${typeof renderOutcomeControl === 'function' ? renderOutcomeControl(firm.slug, 'firm_profile') : ''}
       ${typeof renderFirmPersonalityCard === 'function' ? renderFirmPersonalityCard(firm) : ''}
       ${typeof renderFirmCapabilities === 'function' ? renderFirmCapabilities(firm) : ''}
           <div class="detail-meta">
