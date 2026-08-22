@@ -270,3 +270,64 @@
     font-size: 11.5px;
     color: var(--ink-dim);
   }
+
+/* ============================================================
+   PARTNER PORTRAIT
+   Square, sized to one stat card so the sidebar keeps its rhythm.
+   The monogram and a real photograph occupy identical space, so a
+   profile does not reflow when a licensed image is added later.
+   ============================================================ */
+.pg-portrait {
+  width: 108px;
+  height: 108px;
+  margin: 0 0 14px;
+  border: 1px solid var(--hairline);
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.pg-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.pg-portrait-credit {
+  font-family: var(--mono);
+  font-size: 9px;
+  line-height: 1.35;
+  letter-spacing: .04em;
+  color: var(--ink-dim);
+  padding: 5px 0 0;
+  width: 108px;
+}
+.pg-portrait-credit a { color: var(--ink-dim); text-decoration: none; }
+.pg-portrait-credit a:hover { color: var(--accent-bright); text-decoration: underline; }
+
+/* The monogram varies only in weight, never in hue, so 914 of these
+   read as one site rather than as an identicon chart. Built from the
+   existing surface tokens, so it follows the theme automatically. */
+.pg-portrait-mono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-raised);
+  border-color: var(--hairline);
+}
+.pg-mono-1 { background: var(--surface); }
+.pg-mono-2 { background: var(--surface-raised); }
+.pg-mono-3 { background: color-mix(in srgb, var(--surface-raised) 78%, var(--ink) 6%); }
+.pg-mono-4 { background: color-mix(in srgb, var(--surface) 88%, var(--accent) 7%); }
+.pg-portrait-mono span {
+  font-family: var(--mono);
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  color: var(--ink-dim);
+}
+
+@media (max-width: 900px) {
+  .pg-portrait, .pg-portrait-credit { width: 88px; }
+  .pg-portrait { height: 88px; }
+  .pg-portrait-mono span { font-size: 25px; }
+}
