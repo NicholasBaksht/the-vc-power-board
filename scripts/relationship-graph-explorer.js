@@ -13,7 +13,7 @@
  */
 
 const RG_NODE_COLORS = {
-  firm: '#5B8DEF',
+  firm: '#6389C4',
   partner: '#7dd3fc',
   company: '#4ade80',
   sector: '#a78bfa',
