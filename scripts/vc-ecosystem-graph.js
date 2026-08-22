@@ -176,7 +176,7 @@ function drawGraph(nodes, edges) {
     .attr('class', 'graph-node')
     .attr('r', d => nodeRadius(d))
     .attr('fill', '#070B14')
-    .attr('stroke', '#5B8DEF')
+    .attr('stroke', '#6389C4')
     .attr('stroke-width', 1.5)
     .call(d3.drag()
       .on('start', (event, d) => { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
