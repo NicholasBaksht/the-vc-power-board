@@ -244,15 +244,127 @@ function formatCheckM(m) {
   return '$' + (m % 1 === 0 ? m : m.toFixed(1)) + 'M';
 }
 
+/* ============================================================
+   POWER MATCH MEASUREMENT AND FEEDBACK
+   ------------------------------------------------------------
+   Every chip handler already calls renderFinderResults(), so the
+   whole funnel is instrumented from that one place rather than from
+   five separate listeners that could drift apart.
+
+   WHAT "COMPLETED" MEANS HERE, precisely, because the number is
+   meaningless without the definition: this questionnaire filters
+   live and has no submit button, so completion is defined as having
+   answered all five question groups - sector, stage, raise, region
+   and focus. A founder who answers three and leaves is a started run
+   that did not complete, which is exactly the abandonment the funnel
+   is meant to expose.
+
+   No answer VALUE is ever recorded. Only how many groups carry one.
+   ============================================================ */
+function pmAnsweredGroups() {
+  let n = 0;
+  if (finderSectors && finderSectors.size) n++;
+  if (finderStages && finderStages.size) n++;
+  if (finderRaise && finderRaise !== 'any') n++;
+  if (finderRegion && finderRegion !== 'any') n++;
+  if (finderFocus && finderFocus !== 'any') n++;
+  return n;
+}
+
+function pmTelemetry(matches) {
+  if (typeof pbTrack !== 'function') return;
+  const answered = pmAnsweredGroups();
+  if (!answered) return;   // an untouched form is not a started run
+
+  if (typeof pbaRunId === 'function' && !pbaRunId() && typeof pbaStartRun === 'function') {
+    pbaStartRun();
+    pbTrack('power_match_started');
+  }
+  pbTrack('power_match_step_completed', {
+    dedupe: 'groups' + answered,
+    props: { groups: answered }
+  });
+  pbTrack('power_match_results_viewed', {
+    props: { results: Math.min(999, matches.length) }
+  });
+  if (answered === 5) {
+    pbTrack('power_match_completed', {
+      props: { groups: 5, top: matches.length ? Math.round(matches[0].score) : 0 }
+    });
+  }
+}
+
+/* ---------- recommendation feedback ----------
+   Feedback on the QUALITY OF THE RECOMMENDATION, never a rating of
+   the firm. It is never shown on a firm profile and never aggregated
+   into anything public. Deliberately two buttons and no stars: a
+   five-point scale on a VC would read as a public rating no matter
+   how it was labelled. */
+const PMF_REASONS = [
+  ['wrong_stage',  'Wrong stage'],
+  ['wrong_sector', 'Wrong sector'],
+  ['check_size',   'Check size'],
+  ['geography',    'Geography'],
+  ['conflict',     'Conflict concern'],
+  ['already_knew', 'Already knew them'],
+  ['other',        'Other']
+];
+
+function pmFeedbackHtml(slug) {
+  return '<div class="pmf" data-pmf-slug="' + slug + '">' +
+    '<span class="pmf-q">Useful recommendation?</span>' +
+    '<button type="button" class="pmf-btn" data-pmf="useful">Yes</button>' +
+    '<button type="button" class="pmf-btn" data-pmf="not_useful">No</button>' +
+    '</div>';
+}
+
+function pmReasonsHtml() {
+  return '<div class="pmf-reasons">' +
+    '<span class="pmf-q">What was off?</span>' +
+    PMF_REASONS.map(function (r) {
+      return '<button type="button" class="pmf-reason" data-pmf-reason="' + r[0] + '">' + r[1] + '</button>';
+    }).join('') +
+    '<button type="button" class="pmf-skip" data-pmf-reason="">Skip</button>' +
+    '</div>';
+}
+
+/* Writes the verdict. The row carries the rank and score it was given
+   at, which is what makes "are highly ranked results actually useful"
+   answerable later without re-running the matcher. */
+function pmSaveFeedback(slug, verdict, reason, rank, score) {
+  try {
+    if (typeof pbTrack === 'function') {
+      pbTrack('power_match_feedback_given', {
+        firmSlug: slug, rank: rank, score: score,
+        props: { verdict: verdict, reason: reason || 'none' }
+      });
+    }
+    const client = (typeof supabaseClient !== 'undefined' && supabaseClient) ? supabaseClient : null;
+    const anon = (typeof pbaAnonId === 'function') ? pbaAnonId() : null;
+    const run = (typeof pbaRunId === 'function') ? pbaRunId() : null;
+    if (!client || !anon || !run) return;
+    client.from('power_match_feedback').insert({
+      run_id: run,
+      anon_id: anon,
+      user_id: (typeof currentUser !== 'undefined' && currentUser) ? currentUser.id : null,
+      firm_slug: slug,
+      rank: rank || null,
+      score: (typeof score === 'number') ? score : null,
+      verdict: verdict,
+      reason: reason || null
+    }).then(function () {}, function () {});
+  } catch (e) { /* feedback must never break the results list */ }
+}
+
 function renderFinderResults() {
   const matches = computeFinderMatches();
   const container = document.getElementById('finderResultsList');
   if (!container) return;
 
-  container.innerHTML = matches.map(({ firm, score, reasons }) => {
+  container.innerHTML = matches.map(({ firm, score, reasons }, i) => {
     const passedReasons = reasons.filter(r => r.passed === true);
     return `
-    <div class="finder-result-card">
+    <div class="finder-result-card" data-pm-slug="${firm.slug}" data-pm-rank="${i + 1}" data-pm-score="${score}">
       <div class="finder-result-head">
         <div class="finder-score-block">
           <div class="finder-score-pct">${score}%</div>
@@ -261,6 +373,7 @@ function renderFinderResults() {
         <div class="finder-result-name"><a href="#${firm.slug}">${firm.name}</a></div>
       </div>
       ${typeof renderOutcomeControl === 'function' ? renderOutcomeControl(firm.slug, 'power_match') : ''}
+      ${pmFeedbackHtml(firm.slug)}
       ${passedReasons.length > 0 ? `
         <div class="finder-reasons">
           <div class="finder-reasons-label">Reason:</div>
@@ -282,6 +395,56 @@ function renderFinderResults() {
     </div>
   `;
   }).join('');
+
+  pmTelemetry(matches);
+  pmBindResultHandlers(container);
+}
+
+/* One delegated listener per render. Covers opening a recommendation
+   and the two feedback paths, so no per-card listeners accumulate. */
+let pmBound = null;
+function pmBindResultHandlers(container) {
+  if (pmBound === container) return;
+  pmBound = container;
+
+  container.addEventListener('click', function (ev) {
+    const card = ev.target.closest ? ev.target.closest('.finder-result-card') : null;
+    if (!card) return;
+    const slug = card.dataset.pmSlug;
+    const rank = parseInt(card.dataset.pmRank, 10) || null;
+    const score = parseInt(card.dataset.pmScore, 10);
+
+    // opening the recommendation
+    const link = ev.target.closest('.finder-result-name a');
+    if (link && typeof pbTrack === 'function') {
+      pbTrack('power_match_result_opened', { firmSlug: slug, rank: rank, score: score });
+      return;
+    }
+
+    // verdict
+    const verdictBtn = ev.target.closest('[data-pmf]');
+    if (verdictBtn) {
+      const verdict = verdictBtn.getAttribute('data-pmf');
+      const box = card.querySelector('.pmf');
+      if (verdict === 'useful') {
+        pmSaveFeedback(slug, 'useful', null, rank, score);
+        box.innerHTML = '<span class="pmf-done">Thanks, noted.</span>';
+      } else {
+        /* The reason is optional on purpose. Forcing it would buy a
+           slightly richer row at the cost of the verdict itself. */
+        box.innerHTML = pmReasonsHtml();
+      }
+      return;
+    }
+
+    const reasonBtn = ev.target.closest('[data-pmf-reason]');
+    if (reasonBtn) {
+      const reason = reasonBtn.getAttribute('data-pmf-reason') || null;
+      pmSaveFeedback(slug, 'not_useful', reason, rank, score);
+      const box = card.querySelector('.pmf-reasons');
+      if (box) box.innerHTML = '<span class="pmf-done">Thanks, noted.</span>';
+    }
+  });
 }
 
 function renderFindInvestors() {
