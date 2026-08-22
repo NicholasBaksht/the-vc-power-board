@@ -79,6 +79,27 @@ function pgInitials(name) {
   return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
 }
 
+/* A profile that shows a departed partner as current is a factual error on
+   a site whose whole claim is accuracy. The data has carried departedNote
+   and departedYear for a while, but nothing rendered them, so the page kept
+   presenting people who had left as sitting partners. This is that fix.
+
+   The note states what was checked and when, so a reader can verify it
+   rather than take it on trust, which is the same standard the rest of the
+   profile is held to. */
+function pgDepartedHtml(p) {
+  if (!p) return '';
+  var note = p.departedNote;
+  var year = (p.departedYear == null) ? null : p.departedYear;
+  if (!note && year == null) return '';
+  return '<div class="pg-departed">' +
+    '<span class="pg-departed-label">Not a current listing' +
+      (year == null ? '' : ' &middot; ' + pgAttr(year)) +
+    '</span>' +
+    (note ? '<p class="pg-departed-note">' + pgAttr(note) + '</p>' : '') +
+  '</div>';
+}
+
 function pgPortrait(slug, p) {
   const photos = (typeof PARTNER_PHOTOS !== 'undefined' && PARTNER_PHOTOS) ? PARTNER_PHOTOS : null;
   const rec = photos ? photos[slug] : null;
@@ -128,7 +149,16 @@ function renderPartnerProfile(slug) {
   const sources     = arr(p.sources);
 
   const joined      = num(p.joinedYear);
-  const yearsAtFirm = joined === null ? null : new Date().getFullYear() - joined;
+  const departed    = num(p.departedYear);
+  const hasLeft     = departed !== null || !!p.departedNote;
+  /* Tenure must stop when the person did. Counting to today produced
+     "31 Years at Firm" directly under a banner saying they are no longer
+     at that firm. Where the leaving year is known the tenure is measured
+     to it; where the departure is recorded but undated, the honest output
+     is no number at all rather than one that keeps growing. */
+  const yearsAtFirm = joined === null ? null
+    : (departed !== null ? departed - joined
+    : (hasLeft ? null : new Date().getFullYear() - joined));
 
   const investmentsHTML = investments.map(inv => `
     <div class="pg-investment-row">
@@ -186,13 +216,14 @@ function renderPartnerProfile(slug) {
     <div class="pg-header">
       <div class="partner-title" style="margin: 0;">${p.name}</div>
       <div class="partner-role-line" style="margin-bottom: 0;">${roleLine}</div>
+      ${pgDepartedHtml(p)}
     </div>
 
     <div class="pg-layout">
       <div class="pg-sidebar-left">
         ${pgPortrait(slug, p)}
         <div class="pg-stats-grid">
-          <div class="pg-stat"><span class="pg-stat-num">${show(yearsAtFirm)}</span><span class="pg-stat-label">Years at Firm</span></div>
+          <div class="pg-stat"><span class="pg-stat-num">${show(yearsAtFirm)}</span><span class="pg-stat-label">${hasLeft ? 'Years at Firm (tenure)' : 'Years at Firm'}</span></div>
           <div class="pg-stat"><span class="pg-stat-num">${show(num(p.ipoCount))}</span><span class="pg-stat-label">IPOs</span></div>
           <div class="pg-stat"><span class="pg-stat-num">${show(num(p.majorExits))}</span><span class="pg-stat-label">Major Exits</span></div>
           <div class="pg-stat"><span class="pg-stat-num">${boardSeats.length}</span><span class="pg-stat-label">Board Seats</span></div>
