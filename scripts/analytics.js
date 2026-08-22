@@ -301,3 +301,279 @@ if (document.readyState === 'loading') {
 } else {
   pbaInit();
 }
+
+
+/* ============================================================
+   INTERNAL ANALYTICS  (#internal)
+   ------------------------------------------------------------
+   Reads one RPC, pb_admin_metrics(), which is SECURITY DEFINER and
+   refuses anyone not in the admins table. Nothing here can reach
+   product_events directly, because that table still has no SELECT
+   policy and this code holds only the public anon key.
+
+   THE RULE THIS VIEW EXISTS UNDER: no fabricated numbers. A metric
+   with no data shows a dash and says so. Retention says
+   "Insufficient data" until the history is genuinely long enough,
+   because a 30 day rate from six days of traffic is not a small
+   number, it is a wrong one. Nothing is padded to make the page
+   look busier than the evidence.
+
+   Lives in analytics.js rather than its own file so that adding it
+   needs no change to index.html: the container and stylesheet are
+   created here, and router() leaves an unknown hash blank, which is
+   exactly the space this fills.
+   ============================================================ */
+
+const PBI_STYLE_ID = 'pbi-style';
+
+function pbiStyles() {
+  if (document.getElementById(PBI_STYLE_ID)) return;
+  const css = `
+  /* A full-surface panel rather than a section in the page flow.
+     router() does not know this route, and an unrecognised hash falls
+     through to a branch that re-shows the homepage chrome, which left
+     the dashboard sitting three thousand pixels below the hero. Taking
+     it out of the flow entirely is self-contained and needs no change
+     to app.js or index.html. */
+  #internalView { position: fixed; inset: 0; z-index: 400; overflow-y: auto;
+                  background: var(--bg); padding: 26px 22px 70px; }
+  #internalView .pbi-inner { max-width: 1000px; margin: 0 auto; }
+  .pbi-back { display: inline-block; font-family: var(--mono); font-size: 11px;
+              letter-spacing: .08em; text-transform: uppercase; color: var(--ink-dim);
+              text-decoration: none; margin-bottom: 16px; }
+  .pbi-back:hover { color: var(--accent-bright); }
+  .pbi-head { border-bottom: 1px solid var(--hairline); padding-bottom: 14px; margin-bottom: 22px; }
+  .pbi-kicker { font-family: var(--mono); font-size: 11px; letter-spacing: .16em;
+                text-transform: uppercase; color: var(--accent); margin-bottom: 7px; }
+  .pbi-title { font-size: 24px; font-weight: 600; letter-spacing: -.01em; margin: 0 0 6px; }
+  .pbi-sub { font-size: 13px; color: var(--ink-dim); margin: 0; max-width: 68ch; line-height: 1.6; }
+  .pbi-sec { margin-bottom: 26px; }
+  .pbi-h { font-family: var(--mono); font-size: 10px; letter-spacing: .16em; text-transform: uppercase;
+           color: var(--ink-dim); margin: 0 0 9px; padding-bottom: 6px;
+           border-bottom: 1px solid var(--hairline); }
+  .pbi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+              gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); border-radius: 3px; }
+  .pbi-cell { background: var(--surface); padding: 13px 15px; display: flex; flex-direction: column; gap: 5px; }
+  .pbi-n { font-family: var(--mono); font-size: 21px; font-weight: 500; color: var(--ink);
+           line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .pbi-n.is-empty { color: var(--ink-dim); font-size: 15px; }
+  .pbi-l { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase;
+           color: var(--ink-dim); }
+  .pbi-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .pbi-table th { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase;
+                  color: var(--ink-dim); text-align: left; font-weight: 500;
+                  padding: 6px 10px 6px 0; border-bottom: 1px solid var(--hairline); }
+  .pbi-table td { padding: 7px 10px 7px 0; border-bottom: 1px solid var(--hairline); color: var(--ink); }
+  .pbi-table td.n { font-family: var(--mono); text-align: right; font-variant-numeric: tabular-nums;
+                    color: var(--ink-dim); }
+  .pbi-empty { font-size: 13px; color: var(--ink-dim); padding: 10px 0; }
+  .pbi-foot { margin-top: 26px; padding-top: 12px; border-top: 1px solid var(--hairline);
+              font-family: var(--mono); font-size: 11px; color: var(--ink-dim); }
+  @media (max-width: 640px) { .pbi-grid { grid-template-columns: 1fr 1fr; } }
+  `;
+  const el = document.createElement('style');
+  el.id = PBI_STYLE_ID;
+  el.textContent = css;
+  document.head.appendChild(el);
+}
+
+function pbiHost() {
+  let el = document.getElementById('internalView');
+  if (el) return el;
+  el = document.createElement('section');
+  el.id = 'internalView';
+  el.style.display = 'none';
+  document.body.appendChild(el);
+  return el;
+}
+
+/* A number that does not exist yet renders as a dash with a reason,
+   never as a zero that implies a measured result. */
+function pbiNum(v, suffix, emptyLabel) {
+  if (v === null || v === undefined) {
+    return '<span class="pbi-n is-empty">' + (emptyLabel || 'No data yet') + '</span>';
+  }
+  return '<span class="pbi-n">' + v + (suffix || '') + '</span>';
+}
+
+function pbiCell(value, label, suffix, emptyLabel) {
+  return '<div class="pbi-cell">' + pbiNum(value, suffix, emptyLabel) +
+         '<span class="pbi-l">' + label + '</span></div>';
+}
+
+function pbiRows(list, cols, emptyMsg) {
+  if (!list || !list.length) return '<p class="pbi-empty">' + emptyMsg + '</p>';
+  return '<table class="pbi-table"><thead><tr>' +
+    cols.map(function (c, i) { return '<th' + (i ? ' style="text-align:right"' : '') + '>' + c[0] + '</th>'; }).join('') +
+    '</tr></thead><tbody>' +
+    list.map(function (row) {
+      return '<tr>' + cols.map(function (c, i) {
+        const v = c[1](row);
+        return i ? '<td class="n">' + v + '</td>' : '<td>' + v + '</td>';
+      }).join('') + '</tr>';
+    }).join('') +
+    '</tbody></table>';
+}
+
+const PBI_OUTCOME_LABELS = {
+  not_contacted: 'Not contacted', contacted: 'Contacted', replied: 'Replied',
+  meeting: 'Meeting booked', invested: 'Invested', passed: 'Passed'
+};
+const PBI_REASON_LABELS = {
+  wrong_stage: 'Wrong stage', wrong_sector: 'Wrong sector', check_size: 'Check size',
+  geography: 'Geography', conflict: 'Conflict concern', already_knew: 'Already knew them',
+  other: 'Other', 'no reason given': 'No reason given'
+};
+
+function pbiRender(m) {
+  const host = pbiHost();
+  const outcomes = m.outcomes || {};
+  const q = m.quality || {};
+  const r = m.retention || {};
+  const res = m.research || {};
+  const match = m.match || {};
+
+  const outcomeOrder = ['not_contacted', 'contacted', 'replied', 'meeting', 'invested', 'passed'];
+  const anyOutcome = outcomeOrder.some(function (k) { return outcomes[k]; });
+
+  host.innerHTML = '<div class="pbi-inner">' +
+    '<a class="pbi-back" href="#home">&larr; Back to the board</a>' +
+    '<div class="pbi-head">' +
+      '<div class="pbi-kicker">Internal</div>' +
+      '<h1 class="pbi-title">Founder funnel</h1>' +
+      '<p class="pbi-sub">Every figure is a real count from recorded events. Where a number does not exist yet ' +
+        'it says so rather than showing a zero, and retention stays withheld until the history covers the window.</p>' +
+    '</div>' +
+
+    '<section class="pbi-sec"><h2 class="pbi-h">Power Match</h2><div class="pbi-grid">' +
+      pbiCell(match.started, 'Started') +
+      pbiCell(match.completed, 'Completed') +
+      pbiCell(match.completion_rate, 'Completion rate', '%', 'No runs yet') +
+    '</div>' +
+    '<p class="pbi-sub" style="margin-top:9px">Completed means all five questions answered. ' +
+      'The table below is where runs stopped.</p>' +
+    pbiRows(match.abandoned_at, [
+      ['Questions answered', function (x) { return x.groups + ' of 5'; }],
+      ['Runs', function (x) { return x.runs; }]
+    ], 'No runs recorded yet.') +
+    '</section>' +
+
+    '<section class="pbi-sec"><h2 class="pbi-h">Research</h2><div class="pbi-grid">' +
+      pbiCell(res.recommendations_opened, 'Recommendations opened') +
+      pbiCell(res.opens_per_completed_run, 'Opens per completed run', '', 'No completed runs') +
+      pbiCell(res.firms_saved, 'Firms saved') +
+      pbiCell(res.firms_followed, 'Firms followed') +
+      pbiCell(res.profiles_viewed, 'Profiles viewed') +
+    '</div></section>' +
+
+    '<section class="pbi-sec"><h2 class="pbi-h">Outcomes</h2>' +
+      (anyOutcome
+        ? '<div class="pbi-grid">' + outcomeOrder.map(function (k) {
+            return pbiCell(outcomes[k] || 0, PBI_OUTCOME_LABELS[k]);
+          }).join('') + '</div>' +
+          '<p class="pbi-sub" style="margin-top:9px">Set by ' + (m.outcome_founders || 0) +
+          ' founder' + ((m.outcome_founders === 1) ? '' : 's') + '. Which founder set which status is never returned by this view.</p>'
+        : '<p class="pbi-empty">No founder has recorded an investor outcome yet.</p>') +
+    '</section>' +
+
+    '<section class="pbi-sec"><h2 class="pbi-h">Match quality</h2><div class="pbi-grid">' +
+      pbiCell(q.useful, 'Useful') +
+      pbiCell(q.not_useful, 'Not useful') +
+    '</div>' +
+    pbiRows(q.reasons, [
+      ['Reason given', function (x) { return PBI_REASON_LABELS[x.reason] || x.reason; }],
+      ['Count', function (x) { return x.n; }]
+    ], 'No recommendation has been marked not useful yet.') +
+    (q.by_rank && q.by_rank.length
+      ? '<div style="margin-top:14px">' + pbiRows(q.by_rank, [
+          ['Rank band', function (x) { return x.band; }],
+          ['Useful', function (x) { return x.useful; }],
+          ['Not useful', function (x) { return x.not_useful; }]
+        ], '') + '</div>'
+      : '') +
+    '</section>' +
+
+    '<section class="pbi-sec"><h2 class="pbi-h">Retention</h2><div class="pbi-grid">' +
+      pbiCell(r.people, 'People seen') +
+      pbiCell(r.return_7d, 'Returned within 7 days', '%', 'Insufficient data') +
+      pbiCell(r.return_30d, 'Returned within 30 days', '%', 'Insufficient data') +
+    '</div>' +
+    '<p class="pbi-sub" style="margin-top:9px">' + (m.history_days || 0) +
+      ' days of history recorded. A window is only reported once the history covers it.</p>' +
+    '</section>' +
+
+    '<section class="pbi-sec"><h2 class="pbi-h">What is used</h2>' +
+      pbiRows(m.usage, [
+        ['Event', function (x) { return x.event; }],
+        ['Sessions', function (x) { return x.sessions; }],
+        ['Events', function (x) { return x.events; }]
+      ], 'Nothing recorded yet.') +
+    '</section>' +
+
+    '<p class="pbi-foot">Generated ' + String(m.generated_at || '').slice(0, 19).replace('T', ' ') +
+      ' &middot; visible only to accounts in the admins table</p>' +
+    '</div>';
+}
+
+function pbiMessage(title, body) {
+  const host = pbiHost();
+  host.innerHTML = '<div class="pbi-inner">' +
+    '<a class="pbi-back" href="#home">&larr; Back to the board</a>' +
+    '<div class="pbi-head"><div class="pbi-kicker">Internal</div>' +
+    '<h1 class="pbi-title">' + title + '</h1>' +
+    '<p class="pbi-sub">' + body + '</p></div></div>';
+}
+
+let pbiLoading = false;
+function pbiLoad() {
+  const client = pbaClient();
+  if (!client) { pbiMessage('Unavailable', 'The database client is not loaded on this page.'); return; }
+  if (typeof isSignedIn === 'function' && !isSignedIn()) {
+    pbiMessage('Sign in required', 'This view is limited to accounts listed in the admins table. ' +
+      '<a href="#signin">Sign in</a> and try again.');
+    return;
+  }
+  if (pbiLoading) return;
+  pbiLoading = true;
+  pbiMessage('Loading', 'Reading the funnel.');
+
+  client.rpc('pb_admin_metrics').then(function (res) {
+    pbiLoading = false;
+    if (res.error) {
+      /* 42501 is the function refusing a caller who is not an admin.
+         Said plainly rather than dressed up as a generic failure. */
+      const denied = /not authorised/i.test(res.error.message || '') || res.error.code === '42501';
+      pbiMessage(denied ? 'Not available for this account'
+                        : 'Could not load',
+                 denied ? 'This account is not in the admins table.'
+                        : 'The metrics query failed: ' + paEscLike(res.error.message));
+      return;
+    }
+    pbiRender(res.data || {});
+  }, function () {
+    pbiLoading = false;
+    pbiMessage('Could not load', 'The request did not complete.');
+  });
+}
+
+/* paEsc lives in alerts-ui.js, which may not be loaded on every page,
+   so this view carries its own rather than depending on load order. */
+function paEscLike(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function pbiRoute() {
+  const on = (location.hash || '').split('?')[0] === '#internal';
+  const host = pbiHost();
+  host.style.display = on ? '' : 'none';
+  if (on) { pbiStyles(); pbiLoad(); }
+}
+
+window.addEventListener('hashchange', pbiRoute);
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', pbiRoute);
+} else {
+  pbiRoute();
+}
