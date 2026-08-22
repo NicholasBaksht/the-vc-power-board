@@ -340,3 +340,33 @@
   .pg-portrait { width: 88px; height: 88px; }
   .pg-portrait-mono span { font-size: 25px; }
 }
+
+/* ============================================================
+   NOT A CURRENT LISTING
+   Shown when departedNote or departedYear is set. Deliberately
+   quiet: this is a correction, not a warning, and the person has
+   done nothing wrong by having moved on.
+   ============================================================ */
+.pg-departed {
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  border: 1px solid var(--hairline);
+  border-left: 2px solid var(--accent);
+  border-radius: 4px;
+  background: var(--surface);
+  max-width: 720px;
+}
+.pg-departed-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--accent-bright, var(--gold-bright));
+}
+.pg-departed-note {
+  margin: 5px 0 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-dim);
+}
