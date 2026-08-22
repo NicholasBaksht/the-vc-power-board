@@ -222,7 +222,7 @@ function computeMarketPartnerMovementSignal() {
 }
 // ---------- Rendering ----------
 
-const SIGNAL_STRENGTH_COLORS = { Strong: '#4ade80', Moderate: '#5B8DEF', Emerging: '#8FA5B3' };
+const SIGNAL_STRENGTH_COLORS = { Strong: '#4ade80', Moderate: '#6389C4', Emerging: '#8FA5B3' };
 
 function renderSignalStrengthBadge(strength) {
   return `<span class="ps-strength-badge" style="--sig-color:${SIGNAL_STRENGTH_COLORS[strength]}">${strength}</span>`;
