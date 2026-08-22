@@ -408,7 +408,7 @@ function computePowerAlerts(options) {
     if (p.joinedYear < cfg.partnerHireWindowFrom) return;
     // A partner who has left is not part of the firm's current bench.
     // Counting them would report a hire the firm no longer has.
-    if (p.departedYear != null) return;
+    if (p.departedYear != null || p.departedNote) return;
     (hiresByFirm[p.firmSlug] = hiresByFirm[p.firmSlug] || []).push({ slug: k, name: p.name, title: p.title, joinedYear: p.joinedYear });
   });
   const firmBySlug = {};
@@ -466,7 +466,7 @@ function computePowerAlerts(options) {
     const p = PROFILES[k];
     if (!p || !p.firmSlug || p.joinedYear == null) return;
     if (p.joinedYear < cfg.partnerHireWindowFrom) return;
-    if (p.departedYear != null) return;
+    if (p.departedYear != null || p.departedNote) return;
     if (!Array.isArray(p.sectors) || !p.sectors.length) return;
     (sectorPartnersByFirm[p.firmSlug] = sectorPartnersByFirm[p.firmSlug] || [])
       .push({ slug: k, name: p.name, title: p.title, joinedYear: p.joinedYear, sectors: p.sectors });
