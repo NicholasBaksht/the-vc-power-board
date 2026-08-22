@@ -121,7 +121,7 @@ function computeGenomeScores(firm) {
 
 const dimensions = [
     { key: 'fundSize', label: 'Fund Size', value: fundSizeScore, color: '#2F6FED' },
-    { key: 'portfolio', label: 'Portfolio Breadth', value: Math.round((firm.holdings.length / maxHoldings) * 100), color: '#5B8DEF' },
+    { key: 'portfolio', label: 'Portfolio Breadth', value: Math.round((firm.holdings.length / maxHoldings) * 100), color: '#6389C4' },
     { key: 'stageBreadth', label: 'Stage Breadth', value: Math.round(((firmStages[firm.slug] || []).length / 6) * 100), color: '#7CA8F7' },
     { key: 'sectorBreadth', label: 'Sector Breadth', value: Math.round((firm.sectors.length / maxSectors) * 100), color: '#1E4FBF' },
     { key: 'geoReach', label: 'Geographic Reach', value: Math.round((computeGeography(firm).length / maxRegions) * 100), color: '#4DD2E8' },
