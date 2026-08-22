@@ -27,12 +27,12 @@
        (firm cards, firm detail, compare, dashboard, family tree,
        relationship graph, discovery, intelligence feed, etc.) picks
        up the new identity without being individually touched. */
-       --accent: #4B82EF;
-    --accent-bright: #5B8DEF;
+       --accent: #5479B5;
+    --accent-bright: #6389C4;
     /* The same accent as channels, for the translucent washes. 22 rules
-       across 7 stylesheets used to hard-code rgba(75,130,239,...) and so
+       across 7 stylesheets used to hard-code the accent as a literal rgba() and so
        ignored the theme entirely; they read this instead. */
-    --accent-rgb: 75, 130, 239;
+    --accent-rgb: 84, 121, 181;
     --gold: var(--accent);
     --gold-bright: var(--accent-bright);
 
