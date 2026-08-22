@@ -279,17 +279,26 @@
    ============================================================ */
 /* The figure is the outer wrapper and must NOT clip: the credit lives in
    it, below the square. Only .pg-portrait clips, and only the image. */
-.pg-figure { margin: 0 0 14px; }
+/* No cap at desktop: at 260px the sidebar sets the width and the portrait
+   matches the stats grid exactly. The cap only bites once the layout
+   collapses to one column, where an uncapped square would otherwise grow to
+   the full width of a tablet. Phones sit under it, so they still match. */
+.pg-figure { margin: 0 0 14px; max-width: 380px; }
 .pg-figure .pg-portrait { margin: 0; }
 
 .pg-portrait {
-  width: 108px;
-  height: 108px;
-  margin: 0 0 14px;
+  /* Fills the sidebar, so the portrait is exactly as wide as the stats grid
+     below it. aspect-ratio keeps it square as the width changes rather than
+     pinning a pixel height that would have to be kept in sync by hand. */
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  margin: 0;
   border: 1px solid var(--hairline);
   border-radius: 4px;
   overflow: hidden;
   background: var(--surface);
+  container-type: inline-size;
 }
 .pg-portrait img {
   width: 100%;
@@ -309,7 +318,6 @@
   color: var(--ink-dim);
   padding: 6px 0 0;
   width: 100%;
-  max-width: 240px;
 }
 .pg-portrait-credit a { color: var(--ink-dim); text-decoration: none; }
 .pg-portrait-credit a:hover { color: var(--accent-bright); text-decoration: underline; }
@@ -330,15 +338,16 @@
 .pg-mono-4 { background: color-mix(in srgb, var(--surface) 88%, var(--accent) 7%); }
 .pg-portrait-mono span {
   font-family: var(--mono);
-  font-size: 30px;
+  font-size: 62px;
   font-weight: 500;
   letter-spacing: .04em;
   color: var(--ink-dim);
 }
 
-@media (max-width: 900px) {
-  .pg-portrait { width: 88px; height: 88px; }
-  .pg-portrait-mono span { font-size: 25px; }
+/* The initials scale with the tile rather than sitting at one pixel size,
+   so the monogram looks the same at any width the layout gives it. */
+@supports (font-size: 1cqw) {
+  .pg-portrait-mono span { font-size: 24cqw; }
 }
 
 /* ============================================================
