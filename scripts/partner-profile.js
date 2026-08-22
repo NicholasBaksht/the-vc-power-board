@@ -22,6 +22,87 @@
    value renders an honest em-dash rather than "null" or a
    nonsense figure like "2026 years at firm".
    ============================================================ */
+/* ============================================================
+   PARTNER PORTRAIT
+   ------------------------------------------------------------
+   A photograph of a named person is a copyrighted work owned by
+   whoever took it, and the rest of this dataset is facts, which are
+   not copyrightable. That difference is why every other field here
+   can be published from a public source and a headshot cannot.
+
+   So a photo renders ONLY when an explicit licence is on record for
+   it. PARTNER_PHOTOS is optional and starts empty; add an entry when
+   a firm's press kit grants editorial use, or when a portrait exists
+   under a Creative Commons licence:
+
+     PARTNER_PHOTOS['jane-smith'] = {
+       file:    'assets/partners/jane-smith.jpg',
+       credit:  'Acme Capital',
+       licence: 'Press kit, editorial use',
+       source:  'https://acme.vc/press'
+     };
+
+   Everyone without such an entry gets a monogram. That is not a
+   placeholder for a missing photo, it is the correct rendering for
+   a person whose likeness we have no right to publish, and it keeps
+   all 914 profiles visually consistent rather than leaving 900 holes.
+   ============================================================ */
+
+/* Deterministic, so the same person always gets the same tile and the
+   page does not shimmer between visits.
+
+   An earlier version hashed the name into a free hue. Rendered as a
+   wall it produced olive, brown and purple tiles: an identicon chart,
+   not a product. This site is monochrome plus one accent, so the tile
+   varies only in weight, across four steps of the same neutral. Two
+   partners side by side still look distinct; 914 of them still look
+   like one site, in either theme. */
+function pgMonogramStep(seed) {
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) % 4;
+  return h + 1;
+}
+
+/* Names carry apostrophes (O'Sullivan, d'Halluin) and the photo fields
+   below are typed in by hand, so both go through here before they reach
+   an attribute. */
+function pgAttr(v) {
+  return String(v == null ? '' : v)
+    .replace(/&/g, '&amp;').replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function pgInitials(name) {
+  const parts = String(name || '').trim().split(/\s+/).filter(Boolean);
+  if (!parts.length) return '?';
+  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
+
+function pgPortrait(slug, p) {
+  const photos = (typeof PARTNER_PHOTOS !== 'undefined' && PARTNER_PHOTOS) ? PARTNER_PHOTOS : null;
+  const rec = photos ? photos[slug] : null;
+
+  if (rec && rec.file && rec.licence) {
+    /* The credit line is not decoration. It is the record of why this
+       image may be shown at all, and it sits with the image. */
+    return '<figure class="pg-portrait">' +
+      '<img src="' + pgAttr(rec.file) + '" alt="' + pgAttr(p.name) + '" loading="lazy" decoding="async">' +
+      '<figcaption class="pg-portrait-credit">' +
+        (rec.source
+          ? '<a href="' + pgAttr(rec.source) + '" target="_blank" rel="noopener noreferrer">' + pgAttr(rec.credit) + '</a>'
+          : pgAttr(rec.credit)) +
+        ' &middot; ' + pgAttr(rec.licence) +
+      '</figcaption>' +
+    '</figure>';
+  }
+
+  const step = pgMonogramStep(slug || p.name || '');
+  return '<div class="pg-portrait pg-portrait-mono pg-mono-' + step + '" aria-hidden="true">' +
+         '<span>' + pgAttr(pgInitials(p.name)) + '</span>' +
+         '</div>';
+}
+
 function renderPartnerProfile(slug) {
   const p = partnerProfiles[slug];
   if (!p) return;
@@ -103,6 +184,7 @@ function renderPartnerProfile(slug) {
 
     <div class="pg-layout">
       <div class="pg-sidebar-left">
+        ${pgPortrait(slug, p)}
         <div class="pg-stats-grid">
           <div class="pg-stat"><span class="pg-stat-num">${show(yearsAtFirm)}</span><span class="pg-stat-label">Years at Firm</span></div>
           <div class="pg-stat"><span class="pg-stat-num">${show(num(p.ipoCount))}</span><span class="pg-stat-label">IPOs</span></div>
