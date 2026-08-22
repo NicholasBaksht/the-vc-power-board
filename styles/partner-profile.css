@@ -277,6 +277,11 @@
    The monogram and a real photograph occupy identical space, so a
    profile does not reflow when a licensed image is added later.
    ============================================================ */
+/* The figure is the outer wrapper and must NOT clip: the credit lives in
+   it, below the square. Only .pg-portrait clips, and only the image. */
+.pg-figure { margin: 0 0 14px; }
+.pg-figure .pg-portrait { margin: 0; }
+
 .pg-portrait {
   width: 108px;
   height: 108px;
@@ -292,14 +297,19 @@
   object-fit: cover;
   display: block;
 }
+/* The credit is the attribution these licences require, not a caption,
+   so it has to be readable. Clamping it to the photo's 108px forced
+   every credit onto two or three lines at 9px; it spans the sidebar
+   instead, which fits most of them on one line. */
 .pg-portrait-credit {
   font-family: var(--mono);
-  font-size: 9px;
-  line-height: 1.35;
-  letter-spacing: .04em;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: .03em;
   color: var(--ink-dim);
-  padding: 5px 0 0;
-  width: 108px;
+  padding: 6px 0 0;
+  width: 100%;
+  max-width: 240px;
 }
 .pg-portrait-credit a { color: var(--ink-dim); text-decoration: none; }
 .pg-portrait-credit a:hover { color: var(--accent-bright); text-decoration: underline; }
@@ -327,7 +337,6 @@
 }
 
 @media (max-width: 900px) {
-  .pg-portrait, .pg-portrait-credit { width: 88px; }
-  .pg-portrait { height: 88px; }
+  .pg-portrait { width: 88px; height: 88px; }
   .pg-portrait-mono span { font-size: 25px; }
 }
