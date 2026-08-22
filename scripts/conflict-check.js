@@ -109,6 +109,8 @@ function ccBuildIndex() {
    matches with an explicit tier and a reason built from the terms that
    actually overlapped - never a generated rationale. */
 function ccAnalyze(text, index, opts) {
+  if (typeof pbTrack === 'function') pbTrack('conflict_check_completed');
+
   opts = opts || {};
   const limit = opts.limit || 12;
   const terms = ccTokens(text);
