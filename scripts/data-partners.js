@@ -2861,7 +2861,7 @@ const partnerProfiles = {
     name: "Geoff Yang",
     firm: "Redpoint Ventures",
     firmSlug: "redpoint",
-    title: "Founding Partner & Managing Director",
+    title: "Co-Founder, Partner Emeritus",
     joinedYear: 1999,
     education: ["B.S.E. Operations Research & Financial Engineering, Princeton University (1981)", "M.B.A., Stanford Graduate School of Business (1985)"],
     previousExperience: [
@@ -8431,6 +8431,7 @@ sources: [
   },
   "jacqueline-lesage": {
     name: "Jacqueline LeSage",
+    departedNote: "Not listed on the Munich Re Ventures team page (munichre.com/mrv/en/team.html) as captured 2026-08-22; that page rendered its roster including Oshri Kaplan, Timur Davis and Peter Volz, and shows no Managing General Partner role. Her entry here reflects her time at the firm, not a current role.",
     firm: "Munich Re Ventures",
     firmSlug: "munich-re-ventures",
     title: "Founder & Managing General Partner",
@@ -8760,6 +8761,7 @@ sources: [
   },
   "dixon-doll": {
     name: "Dixon Doll",
+    departedNote: "Not listed on dcm.com/team as captured 2026-08-22; that page rendered a roster of 26 including David Chao and Hurst Lin, and carries no emeritus section. He appears on the firm's site only in its founding history.",
     firm: "DCM Ventures",
     firmSlug: "dcm-ventures",
     title: "Co-Founder & Partner Emeritus",
