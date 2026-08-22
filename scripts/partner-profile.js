@@ -86,8 +86,14 @@ function pgPortrait(slug, p) {
   if (rec && rec.file && rec.licence) {
     /* The credit line is not decoration. It is the record of why this
        image may be shown at all, and it sits with the image. */
-    return '<figure class="pg-portrait">' +
-      '<img src="' + pgAttr(rec.file) + '" alt="' + pgAttr(p.name) + '" loading="lazy" decoding="async">' +
+    /* The square is a separate element from the figure. An earlier version
+       put the caption inside the 108px box, which clips its overflow, so
+       the credit rendered nowhere at all. These licences require
+       attribution, so a clipped credit is not a cosmetic bug. */
+    return '<figure class="pg-figure">' +
+      '<div class="pg-portrait">' +
+        '<img src="' + pgAttr(rec.file) + '" alt="' + pgAttr(p.name) + '" loading="lazy" decoding="async">' +
+      '</div>' +
       '<figcaption class="pg-portrait-credit">' +
         (rec.source
           ? '<a href="' + pgAttr(rec.source) + '" target="_blank" rel="noopener noreferrer">' + pgAttr(rec.credit) + '</a>'
