@@ -445,6 +445,7 @@ const partnerProfiles = {
 },
   "christoph-westphal": {
   name: "Christoph Westphal",
+  departedNote: "Not listed on racap.com/team as captured 2026-08-22; that page rendered a large roster and names Peter Kolchinsky and Rajeev Shah as managing partners. The firm attribution on this entry needs review as well as the role.",
   firm: "RA Capital Management",
   firmSlug: "ra-capital-management",
   title: "Co-Founder & CEO",
@@ -694,6 +695,7 @@ const partnerProfiles = {
   sectors: null,
   sectorsConfidence: null,
   sectorsSource: "https://defy.vc/team/",
+  departedNote: "Not listed on defy.vc/team as captured 2026-08-22; that page rendered a roster including Neil Sequeira, Medha Agarwal and Amy Yin. Her entry here reflects her time at the firm, not a current role.",
   firm: "Defy Partners",
   firmSlug: "defy-partners",
   title: "Co-Founder & Managing Director",
@@ -1712,7 +1714,7 @@ const partnerProfiles = {
     name: "Daniel Petre",
     firm: "AirTree Ventures",
     firmSlug: "airtree-ventures",
-    title: "Co-Founder & Partner",
+    title: "Co-Founder & Partner Emeritus",
     joinedYear: 2014,
     education: [],
     previousExperience: [
@@ -1927,6 +1929,8 @@ const partnerProfiles = {
   },
   "hjalmar-winbladh": {
     name: "Hjalmar Winbladh",
+    departedYear: 2020,
+    departedNote: "Not listed on eqtventures.com as captured 2026-08-22. The recorded title already scopes his tenure to 2016-2020.",
     firm: "EQT Ventures",
     firmSlug: "eqt-ventures",
     title: "Founding Partner (2016-2020)",
@@ -2316,6 +2320,7 @@ const partnerProfiles = {
   },
   "peter-dicks": {
     name: "Peter Dicks",
+    departedNote: "Not listed on abingworth.com/team as captured 2026-08-22; that page rendered a roster including Anna Slezak, Carlos Paya and Dayle Hogg. His entry here reflects his founding role, not a current one.",
     firm: "Abingworth",
     firmSlug: "abingworth",
     title: "Co-Founder & Senior Partner",
@@ -2557,7 +2562,7 @@ const partnerProfiles = {
     name: "Arthur Patterson",
     firm: "Accel",
     firmSlug: "accel",
-    title: "Founding Partner",
+    title: "Founding Partner, Emeritus",
     joinedYear: 1983,
     education: ["A.B., Harvard University", "M.B.A., Harvard Business School"],
     previousExperience: [
@@ -3123,7 +3128,7 @@ sources: [
     name: "Todd Chaffee",
     firm: "IVP",
     firmSlug: "ivp",
-    title: "Managing Director & General Partner",
+    title: "Advisory Partner",
     joinedYear: 2000,
     education: ["B.S. with honors, University of Minnesota Carlson School of Management", "Stanford Graduate School of Business Advanced Management Program", "Harvard Business School Venture Capital Program"],
     previousExperience: [
@@ -4006,6 +4011,7 @@ sources: [
   },
   "eva-ho": {
     name: "Eva Ho",
+    departedNote: "Not listed on fika.vc/team as captured 2026-08-22; that page rendered a roster including Arteen Arabshahi. Her entry here reflects her time at the firm, not a current role.",
     firm: "Fika Ventures",
     firmSlug: "fika-ventures",
     title: "Co-Founder & General Partner",
@@ -7448,6 +7454,7 @@ sources: [
   },
   "kathryn-gould": {
     name: "Kathryn Gould",
+    departedNote: "Not listed on Foundation Capital's investor page (/team-members/team-investors) as captured 2026-08-22; that page rendered a full roster including Joanne Chen, Ashu Garg and Steve Vassallo. Her entry here reflects her founding role, not a current one.",
     firm: "Foundation Capital",
     firmSlug: "foundation-capital",
     title: "Co-Founder",
@@ -8051,6 +8058,7 @@ sources: [
   },
   "bill-bowes": {
     name: "Bill Bowes",
+    departedNote: "Not listed on usvp.com/team as captured 2026-08-22; that page rendered a roster including Casey Tansey, Dafina Toncheva and Dale Holladay. His entry here reflects his founding role, not a current one.",
     firm: "U.S. Venture Partners",
     firmSlug: "us-venture-partners",
     title: "Co-Founder",
@@ -8388,6 +8396,7 @@ sources: [
   },
   "anand-kamannavar": {
     name: "Anand Kamannavar",
+    departedNote: "Not listed on the Applied Ventures team page as captured 2026-08-22; that page rendered a roster in which Faran Nouri holds the Global Head role recorded here. His entry reflects his time at the firm, not a current role.",
     firm: "Applied Ventures",
     firmSlug: "applied-ventures",
     title: "Founder & Global Head",
@@ -8684,7 +8693,7 @@ sources: [
     name: "Scott Maxwell",
     firm: "OpenView Venture Partners",
     firmSlug: "openview-venture-partners",
-    title: "Founder & Managing Partner",
+    title: "Founder & Senior Partner",
     joinedYear: 2006,
     education: ["BS & MA, University of California, Davis"],
     previousExperience: [
@@ -8783,6 +8792,7 @@ sources: [
   },
   "alex-macpherson": {
     name: "Alex Macpherson",
+    departedNote: "Not listed on octopusventures.com/team as captured 2026-08-22; that page rendered a roster of more than forty people. His entry here reflects his time at the firm, not a current role.",
     firm: "Octopus Ventures",
     firmSlug: "octopus-ventures",
     title: "Managing Director",
@@ -9237,7 +9247,7 @@ sources: [
     name: "John Pearce",
     firm: "Underscore VC",
     firmSlug: "underscore-vc",
-    title: "Co-Founder & Partner",
+    title: "Partner Emeritus",
     joinedYear: 2015,
     education: [],
     previousExperience: [
@@ -18316,6 +18326,7 @@ sources: [
   },
   "lucy-chong": {
     name: "Lucy Chong",
+    departedNote: "Not listed on aixventures.com/team as captured 2026-08-22; that page rendered a roster including Anthony Crance and Christopher Manning. Her entry here reflects her time at the firm, not a current role.",
     firm: "AIX Ventures",
     firmSlug: "aix-ventures",
     title: "Principal",
