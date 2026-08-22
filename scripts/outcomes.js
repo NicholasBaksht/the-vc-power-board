@@ -97,6 +97,17 @@ function getOutcome(slug) {
 }
 
 function setOutcome(slug, status, source) {
+  /* The STATUS is recorded, never who set it against which firm in a
+     way anyone else can read: product_events has no select policy,
+     and the founder's own row in investor_outcomes stays private. */
+  if (typeof pbTrack === 'function') {
+    pbTrack('firm_outcome_set', {
+      firmSlug: slug,
+      dedupe: status,
+      props: { status: status, source: source || 'unknown' }
+    });
+  }
+
   if (!IO_STATUSES.some(function (s) { return s.key === status; })) {
     return Promise.resolve({ ok: false, message: 'Unknown status.' });
   }
