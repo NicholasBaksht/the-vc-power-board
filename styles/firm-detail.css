@@ -291,3 +291,107 @@
 @media (max-width: 560px) {
   .fx-panel { grid-template-columns: 1fr; gap: 14px; }
 }
+
+/* ============================================================
+   RESEARCH TRUST - public provenance UI
+   Institutional restraint: hairlines, mono metadata, no glow, no
+   pills. The data is the design; the provenance is a footnote to
+   it, never a competing element.
+   ============================================================ */
+.rt-fact {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: .03em;
+  color: var(--ink-dim);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+.rt-fact a { color: var(--ink-dim); text-decoration: none; border-bottom: 1px dotted var(--hairline); }
+.rt-fact a:hover { color: var(--accent-bright); }
+.rt-fact.rt-verified::before,
+.rt-state.rt-verified::before {
+  content: '';
+  display: inline-block;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-right: 5px;
+  vertical-align: 1px;
+}
+
+.rt-panel {
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  background: var(--surface);
+  padding: 18px 20px;
+  margin-top: 28px;
+}
+.rt-panel-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.rt-panel-intro {
+  font-size: 12.5px;
+  color: var(--ink-dim);
+  line-height: 1.55;
+  max-width: 640px;
+  margin: 0 0 12px;
+}
+.rt-row { border-top: 1px solid var(--hairline); padding: 9px 0; }
+.rt-row-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.rt-row-field {
+  font-size: 13px;
+  color: var(--ink);
+  min-width: 170px;
+}
+.rt-state {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.rt-state.rt-verified { color: var(--accent-bright); }
+.rt-state.rt-reported { color: var(--ink-dim); }
+.rt-state.rt-none { color: #C9A25A; }
+.rt-checked {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-dim);
+}
+.rt-row-srcs {
+  margin-top: 5px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.rt-src {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--gold);
+  text-decoration: none;
+}
+.rt-src:hover { color: var(--gold-bright); }
+.rt-src-type {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink-dim);
+  margin-left: 5px;
+}
+.rt-legend {
+  border-top: 1px solid var(--hairline);
+  margin-top: 4px;
+  padding-top: 10px;
+  font-size: 11px;
+  color: var(--ink-dim);
+  line-height: 1.55;
+  max-width: 700px;
+}
