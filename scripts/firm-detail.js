@@ -202,16 +202,19 @@ const holdingsHTML = firm.holdings.map(h => {
       </div>
       <div class="detail-stats">
         <div class="detail-stat">
-          <div class="num">${firm.aum}</div>
+          <div class="num">${firm.aum || '—'}</div>
           <div class="lbl">Assets Managed</div>
+          ${typeof rtStatMeta === 'function' ? rtStatMeta(firm.slug, 'aum') : ''}
         </div>
         <div class="detail-stat">
-          <div class="num">${firm.founded}</div>
+          <div class="num">${firm.founded || '—'}</div>
           <div class="lbl">Founded</div>
+          ${typeof rtStatMeta === 'function' ? rtStatMeta(firm.slug, 'founded') : ''}
         </div>
         <div class="detail-stat">
-          <div class="num">${firm.hq}</div>
+          <div class="num">${firm.hq || '—'}</div>
           <div class="lbl">Headquarters</div>
+          ${typeof rtStatMeta === 'function' ? rtStatMeta(firm.slug, 'hq') : ''}
         </div>
         <div class="detail-stat">
           <div class="num">${totalHoldings}</div>
@@ -222,7 +225,7 @@ const holdingsHTML = firm.holdings.map(h => {
           <div class="lbl">Power Score™</div>
         </div>
       </div>
-      <p class="detail-about">${firm.thesis}</p>
+      <p class="detail-about">${firm.thesis || ''}</p>
       ${renderOrgLineage(firm)}
       ${typeof renderClaimLink === 'function' ? renderClaimLink(firm) : ''}
       <div id="fcHost"></div>
@@ -247,6 +250,7 @@ ${renderWhyThisVC(firm)}
         <div class="holdings-label">All Notable Public Portfolio Companies</div>
         ${holdingsHTML}
       </div>
+      ${typeof rtResearchPanel === 'function' ? rtResearchPanel(firm) : ''}
  ${renderFirmIntelligence(firm)}
       ${renderSimilarFirms(firm)}
       ${renderPeerFirmLinks(firm)}
