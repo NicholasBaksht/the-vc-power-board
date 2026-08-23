@@ -25217,5 +25217,1671 @@ sources: [
       { label: "ASU+GSV Summit — Claire Zau", url: "https://asugsvsummit.com/leadership/claire-zau" },
       { label: "TechCrunch — Lightspeed hire (Aug 2026)", url: "https://techcrunch.com/2026/08/05/how-lightspeed-found-its-newest-hire-via-instagram-dm/" }
     ]
+  },
+
+  /* ------------------------------------------------------------
+     PARTNERS FOR FIRMS 422-441, added 2026-08-23. 57 people across
+     the second sector-specialist batch (water, quantum, legal tech,
+     maritime, insurance, beauty, semiconductors, biodiversity,
+     circular economy, animal health, robotics, proptech, edtech,
+     frontier tech). firmHistory is wired where the prior firm is
+     verifiably on this site. Sources in the research sources.csv
+     retained off-site.
+     ------------------------------------------------------------ */
+"christine-e-boyle": {
+    name: "Christine E. Boyle, PhD",
+    sectors: ["Water"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.burntislandventures.com/team",
+    firm: "Burnt Island Ventures",
+    firmSlug: "burnt-island-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: ["PhD, University of North Carolina at Chapel Hill"],
+    previousExperience: ["Founder and CEO, Valor Water Analytics (acquired by Xylem, 2018)", "Vice President, Digital Product Development, Xylem (5 years)", "Researcher, UNC Environmental Finance Center"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Valor Water Analytics, the water utility analytics company she founded and led as CEO, was acquired by Xylem, where she became VP of Digital Product Development." },
+      { year: 2025, event: "Named as Partner in Burnt Island Ventures' $50 million Fund II announcement." }
+    ],
+    notableInvestments: [],
+    biography: "Christine Boyle is a Partner at Burnt Island Ventures. She earned a PhD from the University of North Carolina at Chapel Hill, where her research on water resource planning and utility finance at the Environmental Finance Center grew into Valor Water Analytics, the utility analytics company she founded and led as CEO. Valor was acquired by Xylem in 2018, and Boyle then spent five years at Xylem as Vice President of Digital Product Development, scaling the software to utilities worldwide. She has chaired the California Nevada section of the American Water Works Association and now invests in early stage water companies at Burnt Island.",
+    sources: [
+      { label: "Burnt Island Ventures team page", url: "https://www.burntislandventures.com/team" },
+      { label: "UNC Environmental Finance Center Q&A with Christine Boyle", url: "https://efc.web.unc.edu/2018/08/10/apparent-water-loss-optimized-vision-and-entrepreneurship-qa-with-valor-founder-and-ceo-dr-christine-boyle/" },
+      { label: "Business Wire, Fund II close (Oct 2025)", url: "https://www.businesswire.com/news/home/20251022551885/en/Burnt-Island-Ventures-Raises-$50-Million-to-Fund-the-Development-of-Critical-Water-Technologies-and-Infrastructure" }
+    ]
+  },
+  "steve-kloos": {
+    name: "Steve Kloos, PhD",
+    sectors: ["Water"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.burntislandventures.com/team",
+    firm: "Burnt Island Ventures",
+    firmSlug: "burnt-island-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: [],
+    previousExperience: ["Partner, True North Venture Partners", "Membrane Technology Leader, GE Water", "Founding board chair, Current (water innovation organization)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Named as Partner in Burnt Island Ventures' $50 million Fund II announcement, bringing senior leadership experience from GE Water and True North Venture Partners." }
+    ],
+    notableInvestments: [],
+    biography: "Steve Kloos is a Partner at Burnt Island Ventures. A PhD technologist by training, he spent his corporate career in the water industry, including serving as Membrane Technology Leader at GE Water, one of the sector's largest treatment businesses. He moved into venture investing as a Partner at True North Venture Partners, where he backed early stage water and energy technologies, and he served as founding board chair of the water innovation organization Current. At Burnt Island he applies technical and commercial depth to diligence on treatment, filtration, and water infrastructure companies.",
+    sources: [
+      { label: "Burnt Island Ventures team page", url: "https://www.burntislandventures.com/team" },
+      { label: "Business Wire, Fund II close (Oct 2025)", url: "https://www.businesswire.com/news/home/20251022551885/en/Burnt-Island-Ventures-Raises-$50-Million-to-Fund-the-Development-of-Critical-Water-Technologies-and-Infrastructure" }
+    ]
+  },
+  "tom-ferguson": {
+    name: "Tom Ferguson",
+    sectors: ["Water", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.burntislandventures.com/team",
+    firm: "Burnt Island Ventures",
+    firmSlug: "burnt-island-ventures",
+    title: "Founder and Managing Partner",
+    joinedYear: 2020,
+    education: ["MA, University of Edinburgh", "MBA, Harvard Business School"],
+    previousExperience: ["Imagine H2O, water startup accelerator (built its programming; portfolio raised over $600 million)", "Lead author, first CDP Water Disclosure Report (2010)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2010, event: "Served as lead author of the first CDP Water Disclosure Report." },
+      { year: 2020, event: "Founded Burnt Island Ventures after building programming at the water accelerator Imagine H2O." },
+      { year: 2022, event: "Closed Burnt Island Ventures' $30 million debut fund." },
+      { year: 2025, event: "Closed the firm's $50 million second fund, anchored by Xylem." }
+    ],
+    notableInvestments: [],
+    biography: "Tom Ferguson is the founder and Managing Partner of Burnt Island Ventures, a venture firm dedicated to early stage water companies. He holds an MA from the University of Edinburgh and an MBA from Harvard Business School. He served as lead author of the first CDP Water Disclosure Report in 2010, then spent years at the water accelerator Imagine H2O, where he built its programming and supported portfolio companies that went on to raise more than $600 million. He launched Burnt Island Ventures in 2020 and has since closed a $30 million debut fund and a $50 million second fund, both anchored by the water technology company Xylem.",
+    sources: [
+      { label: "Burnt Island Ventures team page", url: "https://www.burntislandventures.com/team" },
+      { label: "Business Wire, Fund II close (Oct 2025)", url: "https://www.businesswire.com/news/home/20251022551885/en/Burnt-Island-Ventures-Raises-$50-Million-to-Fund-the-Development-of-Critical-Water-Technologies-and-Infrastructure" },
+      { label: "Forbes, Fund I close (Feb 2022)", url: "https://www.forbes.com/sites/rebeccaszkutak/2022/02/17/burnt-island-ventures-raises-30-million-for-early-stage-water-startups/" }
+    ]
+  },
+  "christophe-jurczak": {
+    name: "Christophe Jurczak",
+    sectors: ["Quantum", "Deep Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.quantonation.com/team/",
+    firm: "Quantonation",
+    firmSlug: "quantonation",
+    title: "Partner",
+    joinedYear: 2018,
+    education: ["Masters in Engineering and Quantum Physics, École Polytechnique and École Normale Supérieure Paris", "PhD in Quantum Physics (under Prof. Alain Aspect)"],
+    previousExperience: ["Government and executive roles in energy, defense, and quantum computing across Europe and the United States"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Launched Quantonation in Paris, the world's first early stage venture fund dedicated to quantum technologies and deep physics." },
+      { year: 2026, event: "Led the firm through the 220 million euro close of Quantonation II, its oversubscribed second fund." }
+    ],
+    notableInvestments: [],
+    biography: "Christophe Jurczak is a Partner at Quantonation, the Paris based venture firm dedicated to quantum technologies and deep physics that he has led since its launch in 2018. He trained as a physicist, with degrees in engineering and quantum physics from Ecole Polytechnique and Ecole Normale Superieure in Paris and a PhD in quantum physics completed under Alain Aspect, later a Nobel laureate. He previously held government and executive roles in energy and defense in Europe and the United States. Under his leadership Quantonation raised a 91 million euro first fund that backed 27 companies and closed its 220 million euro second fund in 2026. Quantum Zeitgeist has named him among the twenty most influential individuals in quantum technology.",
+    sources: [
+      { label: "Quantonation team page", url: "https://www.quantonation.com/team/" },
+      { label: "Quantonation, Fund II close announcement (Feb 2026)", url: "https://www.quantonation.com/2026/02/18/quantonation-closes-e220-million-second-fund-to-back-the-industrialisation-of-quantum-and-physics-based-technologies/" },
+      { label: "Tech Funding News on Quantonation II", url: "https://techfundingnews.com/quantonation-220m-fund-diversity-pace/" }
+    ]
+  },
+  "olivier-tonneau": {
+    name: "Olivier Tonneau",
+    sectors: ["Quantum", "Deep Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.quantonation.com/team/",
+    firm: "Quantonation",
+    firmSlug: "quantonation",
+    title: "Partner",
+    joinedYear: null,
+    education: ["Graduate, ESSEC Business School"],
+    previousExperience: ["Management consultant, Kearney (10 years)", "CEO, Gravitation (holding company of Charles Beigbeder)"],
+    firmHistory: [],
+    boardSeats: ["Multiverse Computing", "Qnami", "KETS Quantum Security", "EvolutionQ", "QC Design", "Kipu Quantum"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "As Partner, helped close Quantonation II at 220 million euros while serving on the boards of portfolio companies including Multiverse Computing and Kipu Quantum." }
+    ],
+    notableInvestments: [
+      { name: "Multiverse Computing" },
+      { name: "Qnami" },
+      { name: "Kipu Quantum" }
+    ],
+    biography: "Olivier Tonneau is a Partner at Quantonation, where he invests in quantum computing, quantum sensing, and deep physics companies across Europe and North America. A graduate of ESSEC Business School, he spent a decade as a management consultant at Kearney before serving as CEO of Gravitation, the investment holding company of entrepreneur Charles Beigbeder. He serves on the boards of Quantonation portfolio companies including Multiverse Computing, Qnami, KETS Quantum Security, EvolutionQ, QC Design, and Kipu Quantum, and he is a member of Class 28 of the Kauffman Fellows program.",
+    sources: [
+      { label: "Quantonation team page", url: "https://www.quantonation.com/team/" },
+      { label: "Quantonation, Fund II close announcement (Feb 2026)", url: "https://www.quantonation.com/2026/02/18/quantonation-closes-e220-million-second-fund-to-back-the-industrialisation-of-quantum-and-physics-based-technologies/" }
+    ]
+  },
+  "carly-levin": {
+    name: "Carly Levin",
+    sectors: ["Legal Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.legaltech.com/team",
+    firm: "The LegalTech Fund",
+    firmSlug: "the-legaltech-fund",
+    title: "Partner, Strategic Initiatives",
+    joinedYear: null,
+    education: ["Graduate, Stanford University"],
+    previousExperience: ["Chief Strategy Officer, Cover Whale", "Investment banking, J.P. Morgan"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Joined commercial trucking insurtech Cover Whale in a senior management role, going on to serve as Chief Strategy Officer." },
+      { year: 2026, event: "Serves as Partner, Strategic Initiatives at The LegalTech Fund." }
+    ],
+    notableInvestments: [],
+    biography: "Carly Levin is Partner, Strategic Initiatives at The LegalTech Fund, bringing more than fifteen years of experience in deal making, capital markets, and strategic leadership. A Stanford graduate and former varsity lacrosse athlete, she began her career in investment banking at J.P. Morgan. In late 2022 she joined Cover Whale, a commercial trucking insurtech platform, in a senior management role and served as its Chief Strategy Officer. At The LegalTech Fund she leads strategic initiatives across the firm's network of founders, advisors, law firms, and corporate partners.",
+    sources: [
+      { label: "The LegalTech Fund team page", url: "https://www.legaltech.com/team" },
+      { label: "PR Newswire, Cover Whale senior management hires (Dec 2022)", url: "https://www.prnewswire.com/news-releases/cover-whale-hires-carly-levin-and-niv-ben-dor-to-senior-management-team-301700734.html" }
+    ]
+  },
+  "gordon-crenshaw": {
+    name: "Gordon Crenshaw",
+    sectors: ["Legal Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.legaltech.com/team",
+    firm: "The LegalTech Fund",
+    firmSlug: "the-legaltech-fund",
+    title: "Partner",
+    joinedYear: null,
+    education: ["BS in Commerce, University of Virginia", "MBA, The Wharton School (University of Pennsylvania)"],
+    previousExperience: ["Investment banker, Citi", "Venture capital, growth equity, and private equity investing roles"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Serves as Partner at The LegalTech Fund, investing from pre-seed through Series A in companies at the intersection of law and technology." }
+    ],
+    notableInvestments: [],
+    biography: "Gordon Crenshaw is a Partner at The LegalTech Fund, where he invests from pre-seed through Series A in companies at the intersection of law and technology. He earned a BS in Commerce from the University of Virginia and an MBA from the Wharton School, and began his career as an investment banker at Citi before moving through venture capital, growth equity, and private equity investing roles. Known for a hands on style with founders, he works closely with portfolio companies on strategy and fundraising and serves on several startup boards.",
+    sources: [
+      { label: "The LegalTech Fund team page", url: "https://www.legaltech.com/team" },
+      { label: "Legal Innovation Spotlight interview", url: "https://legalinnovationspotlight.com/gordon-crenshaw/" }
+    ]
+  },
+  "sam-elhag": {
+    name: "Sam Elhag",
+    sectors: ["Legal Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.legaltech.com/team",
+    firm: "The LegalTech Fund",
+    firmSlug: "the-legaltech-fund",
+    title: "Managing Partner & Co-Founder",
+    joinedYear: 2021,
+    education: [],
+    previousExperience: ["Chief Product Officer, co-founder, and board roles at early stage technology companies (15+ years)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Co-founded The LegalTech Fund with Zach Posner as the first venture fund solely dedicated to companies transforming the legal industry." },
+      { year: 2025, event: "The firm closed its oversubscribed $110 million second fund, bringing its portfolio to more than 80 companies." }
+    ],
+    notableInvestments: [],
+    biography: "Sam Elhag is Managing Partner and Co-Founder of The LegalTech Fund, which he launched with Zach Posner in 2021 as the first venture fund solely dedicated to backing companies transforming the world of law. He brings more than fifteen years of experience with early stage companies as a chief product officer, startup co-founder, and board director, and the firm highlights his technical product management and operational expertise. At the fund he works closely with founders on product and operations, and he has helped grow the portfolio to more than 80 companies across a $28.5 million first fund and a $110 million second fund.",
+    sources: [
+      { label: "The LegalTech Fund team page", url: "https://www.legaltech.com/team" },
+      { label: "The LegalTech Fund, Fund II close (Nov 2025)", url: "https://www.legaltech.com/post/the-legaltech-fund-closes-110-million-second-fund-to-power-the-next-generation-of-legal-innovation" }
+    ]
+  },
+  "zach-posner": {
+    name: "Zach Posner",
+    sectors: ["Legal Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.legaltech.com/team",
+    firm: "The LegalTech Fund",
+    firmSlug: "the-legaltech-fund",
+    title: "Managing Partner & Co-Founder",
+    joinedYear: 2021,
+    education: ["BS in Accounting & Finance, Indiana University"],
+    previousExperience: ["Founder, edtech company acquired by McGraw Hill", "Insight Partners", "PricewaterhouseCoopers", "Adjunct lecturer, University of Southern California"],
+    firmHistory: [{ firmSlug: "insight-partners", role: null, startYear: null, endYear: null }],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Co-founded The LegalTech Fund with Sam Elhag as the first venture fund solely dedicated to companies transforming the legal industry." },
+      { year: 2022, event: "Closed the firm's $28.5 million first fund." },
+      { year: 2025, event: "Closed the firm's oversubscribed $110 million second fund." }
+    ],
+    notableInvestments: [],
+    biography: "Zach Posner is Managing Partner and Co-Founder of The LegalTech Fund, the first venture fund solely dedicated to companies transforming the legal industry. He holds a BS in accounting and finance from Indiana University and began his career at PricewaterhouseCoopers, later working at Insight Partners. A three time entrepreneur and active angel investor, he founded an education technology company that was acquired by McGraw Hill and taught as an adjunct lecturer in a masters program at the University of Southern California. Since co-founding the fund with Sam Elhag, he has led it through a $28.5 million first fund and an oversubscribed $110 million second fund backing more than 80 companies.",
+    sources: [
+      { label: "The LegalTech Fund team page", url: "https://www.legaltech.com/team" },
+      { label: "JEGI Leonis advisory board bio", url: "https://jl-co.com/advisoryboard/zach-posner/" },
+      { label: "The LegalTech Fund, Fund II close (Nov 2025)", url: "https://www.legaltech.com/post/the-legaltech-fund-closes-110-million-second-fund-to-power-the-next-generation-of-legal-innovation" }
+    ]
+  },
+  "chiew-tung-lim": {
+    name: "Chiew Tung Lim",
+    sectors: [],
+    firm: "Motion Ventures",
+    firmSlug: "motion-ventures",
+    title: "Director of Finance",
+    joinedYear: null,
+    education: ["ACCA, Association of Chartered Certified Accountants"],
+    previousExperience: ["Audit, asset and wealth management sector, PwC", "Audit, asset and wealth management sector, KPMG", "Finance team, Play Ventures"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Serves as Director of Finance at Motion Ventures, managing day to day fund finances and compliance across the firm's funds." }
+    ],
+    notableInvestments: [],
+    biography: "Chiew Tung Lim is Director of Finance at Motion Ventures, the Singapore based maritime and supply chain venture firm, where she manages day to day fund finances and the compliance obligations that come with a multi fund, corporate backed platform. She trained as an auditor in the asset and wealth management practices of PwC and KPMG before moving to the finance team of Play Ventures, a gaming focused venture capital firm, giving her fund accounting experience on both the audit and manager sides. She is an associate of the Association of Chartered Certified Accountants and holds the Financial Modelling and Valuation Analyst certification.",
+    sources: [
+      { label: "Motion Ventures team page", url: "https://www.motion.vc/team/chiew-tung" }
+    ]
+  },
+  "shaun-hon": {
+    name: "Shaun Hon",
+    sectors: ["Maritime", "Logistics", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.motion.vc/team/shaun-hon",
+    firm: "Motion Ventures",
+    firmSlug: "motion-ventures",
+    title: "Founder and General Partner",
+    joinedYear: 2021,
+    education: ["MEng Mechanical Engineering (First Class Honours), Imperial College London"],
+    previousExperience: ["Investment Principal, TRIVE", "Electric vehicle engineering roles on programmes for Amazon, BMW and Ford", "Well flow performance engineer, Royal Dutch Shell"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Founded Motion Ventures under Rainmaking in Singapore, closing a S$30 million first tranche anchored by SEEDS Capital, Wilhelmsen and HHLA." },
+      { year: 2023, event: "Grew the firm's corporate partner consortium to 15 maritime companies including Lloyd's Register and Stolt-Nielsen." },
+      { year: 2025, event: "Launched Motion Ventures Fund II at US$100 million, described as the largest dedicated maritime tech fund raised to date." }
+    ],
+    notableInvestments: [],
+    biography: "Shaun Hon is the Founder and General Partner of Motion Ventures, the Singapore based venture firm investing in digital and energy transitions across global supply chains, with maritime at its core. He launched the fund in 2021 under the venture studio Rainmaking and by 2025 had raised a US$100 million second fund backed by 17 strategic maritime corporations. Before Motion he was an Investment Principal at TRIVE, leading venture investments in B2B technology companies, and earlier worked as an engineer on electric vehicle programmes for Amazon, BMW and Ford and on well flow performance at Royal Dutch Shell. He holds a First Class Honours MEng in Mechanical Engineering from Imperial College London and has been named to Forbes 30 Under 30.",
+    sources: [
+      { label: "Motion Ventures team page", url: "https://www.motion.vc/team/shaun-hon" },
+      { label: "Motion Ventures Fund II announcement (GlobeNewswire, 2025)", url: "https://www.globenewswire.com/news-release/2025/03/18/3044402/0/en/motion-ventures-launches-largest-ever-maritime-tech-fund-at-100m-to-meet-the-industry-s-new-pace-of-adoption.html" },
+      { label: "TechCrunch on Motion Ventures launch (2021)", url: "https://techcrunch.com/2021/02/24/rainmaking-launches-motion-ventures-to-boost-innovation-in-the-maritime-industry" }
+    ]
+  },
+  "alice-zheng": {
+    name: "Alice Zheng, MD",
+    sectors: ["Healthcare", "Digital Health", "Biotech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://foreground.vc/team/",
+    firm: "RH Capital",
+    firmSlug: "rh-capital",
+    title: "Partner",
+    joinedYear: null,
+    education: ["MD, University of Michigan", "MPH, University of Michigan", "MBA, Harvard Business School"],
+    previousExperience: ["Management consultant and women's health practice leader, McKinsey & Company", "Reproductive health roles, EngenderHealth and Marie Stopes International"],
+    firmHistory: [],
+    boardSeats: ["Seven Starling", "Millie"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Served as Principal at RH Capital as the firm closed its oversubscribed $38.5 million Fund II." },
+      { year: 2024, event: "Co-founded Foreground Capital as Partner, continuing to manage and grow RH Capital's women's health portfolio." }
+    ],
+    notableInvestments: [
+      { name: "Seven Starling" },
+      { name: "Millie" }
+    ],
+    biography: "Alice Zheng is a Partner at Foreground Capital and was previously a Principal at RH Capital, the women's health venture fund whose portfolio the Foreground team continues to manage after its 2024 spinout from Rhia Ventures. A physician by training, she led women's health work as a management consultant at McKinsey & Company, advising biopharma, diagnostics, global public health and private equity clients, and earlier held roles with the reproductive health nonprofits EngenderHealth and Marie Stopes International in East Africa and Asia. She serves on the boards of Seven Starling and Millie. She holds an MD and MPH from the University of Michigan and an MBA from Harvard Business School.",
+    sources: [
+      { label: "Foreground Capital team page", url: "https://foreground.vc/team/" },
+      { label: "Wharton FemTech interview with Alice Zheng (2023)", url: "https://medium.com/@whartonfemtech/an-interview-with-alice-zheng-principal-at-rh-capital-d0bd8ca2142c" },
+      { label: "Fierce Healthcare on RH Capital Fund II (2022)", url: "https://www.fiercehealthcare.com/finance/female-led-vc-rh-capital-closes-second-fund-385-million" }
+    ]
+  },
+  "elizabeth-bailey": {
+    name: "Elizabeth Bailey",
+    sectors: ["Healthcare", "Digital Health", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://foreground.vc/team/",
+    firm: "RH Capital",
+    firmSlug: "rh-capital",
+    title: "Managing Partner",
+    joinedYear: 2019,
+    education: ["MPA, Harvard Kennedy School", "BA, Brown University"],
+    previousExperience: ["Partner, Commons Capital"],
+    firmHistory: [],
+    boardSeats: ["Raydiant Oximetry", "Testmate Health"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2019, event: "Co-founded RH Capital under Rhia Ventures and launched its $5 million first fund dedicated to women's health." },
+      { year: 2022, event: "Closed RH Capital's oversubscribed Fund II at $38.5 million as Managing Director." },
+      { year: 2024, event: "Co-founded Foreground Capital, the independent firm that continues to manage RH Capital Funds I and II." }
+    ],
+    notableInvestments: [
+      { name: "Raydiant Oximetry" },
+      { name: "Bloomlife" }
+    ],
+    biography: "Elizabeth Bailey is a Managing Partner of Foreground Capital and a co-founder of RH Capital, the impact first women's health venture fund created under the nonprofit Rhia Ventures in 2019, whose Funds I and II Foreground continues to manage following the team's 2024 spinout. She brings more than 20 years of venture capital and early stage healthcare investing experience, including as a Partner at Commons Capital, a double bottom line fund. At RH Capital she helped raise a $5 million Fund I and an oversubscribed $38.5 million Fund II focused on maternal health, contraception, fertility and other underinvested areas. She serves on the boards of Raydiant Oximetry and Testmate Health and holds an MPA from Harvard Kennedy School and a BA from Brown University.",
+    sources: [
+      { label: "Foreground Capital team page", url: "https://foreground.vc/team/" },
+      { label: "Rhia Ventures on the RH Capital team transition (2024)", url: "https://rhiaventures.org/media/rh-capital-team-transition/" },
+      { label: "Fierce Healthcare on RH Capital Fund II (2022)", url: "https://www.fiercehealthcare.com/finance/female-led-vc-rh-capital-closes-second-fund-385-million" }
+    ]
+  },
+  "stasia-obremskey": {
+    name: "Stasia Obremskey",
+    sectors: ["Healthcare", "Digital Health", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://foreground.vc/team/",
+    firm: "RH Capital",
+    firmSlug: "rh-capital",
+    title: "Managing Partner",
+    joinedYear: 2019,
+    education: ["MBA, Harvard Business School", "BA Business Administration, University of Notre Dame"],
+    previousExperience: ["CFO roles at healthcare organizations", "Management consultant, Bain & Company", "Investment banker, Morgan Stanley"],
+    firmHistory: [],
+    boardSeats: ["Cadence OTC"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Began shaping a women's health investment strategy with philanthropist Dr. Ruth Shaber, the collaboration that led to RH Capital." },
+      { year: 2019, event: "Co-founded RH Capital under Rhia Ventures and helped launch its $5 million Fund I." },
+      { year: 2022, event: "Closed RH Capital's oversubscribed Fund II at $38.5 million as Managing Director and co-founder." },
+      { year: 2024, event: "Co-founded Foreground Capital, which continues to manage RH Capital Funds I and II." }
+    ],
+    notableInvestments: [
+      { name: "Cadence OTC" }
+    ],
+    biography: "Stasia Obremskey is a Managing Partner of Foreground Capital and a co-founder of RH Capital, the women's health venture fund launched under the nonprofit Rhia Ventures in 2019. The collaboration grew out of her work with philanthropist Dr. Ruth Shaber on directing capital toward reproductive and maternal health, and it produced one of the earliest funds dedicated exclusively to women's health, with $43.5 million under management across two funds at the 2022 close of Fund II. Earlier in her career she was a chief financial officer at multiple healthcare organizations, a management consultant at Bain & Company and an investment banker at Morgan Stanley. She serves on the board of Cadence OTC and holds an MBA from Harvard Business School and a BA from the University of Notre Dame.",
+    sources: [
+      { label: "Foreground Capital team page", url: "https://foreground.vc/team/" },
+      { label: "Forbes on RH Capital (2024)", url: "https://www.forbes.com/sites/cherylrobinson/2024/02/16/rh-capital-invests-in-90-women-bipoc-founders-in-womens-health/" },
+      { label: "Fierce Healthcare on RH Capital Fund II (2022)", url: "https://www.fiercehealthcare.com/finance/female-led-vc-rh-capital-closes-second-fund-385-million" }
+    ]
+  },
+  "brian-mcloughlin": {
+    name: "Brian McLoughlin",
+    sectors: ["Insurtech", "Fintech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://mtechcapital.com/team/",
+    firm: "MTech Capital",
+    firmSlug: "mtech-capital",
+    title: "Partner and Co-Founder",
+    joinedYear: 2018,
+    education: ["MBA, Wharton School of Business", "BA, Rutgers College"],
+    previousExperience: ["Partner, Upfront Ventures (14 years)", "CFO, venture-backed fintech company"],
+    firmHistory: [{ firmSlug: "upfront-ventures", role: "Partner", startYear: null, endYear: null }],
+    boardSeats: ["Embroker", "Inshur", "Integriant", "Matic", "OCHO", "Openly", "Polly", "Voxel", "Zuub"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Co-founded MTech Capital with his brother Kevin, holding a $75 million first close backed by CNA Financial and NN Group." },
+      { year: 2022, event: "MTech invested in home insurance company Openly, where he holds a board seat." }
+    ],
+    notableInvestments: [
+      { name: "Openly" },
+      { name: "Matic" },
+      { name: "Embroker" }
+    ],
+    biography: "Brian McLoughlin is Partner and Co-Founder of MTech Capital, the insurtech focused venture firm he started with his brother Kevin, investing from Santa Monica across North America and Europe with backing from some of the world's largest insurers, brokers and asset managers. Before MTech he spent 14 years as a Partner at Los Angeles venture firm Upfront Ventures, where he focused on fintech investing, and earlier served as chief financial officer of a venture backed fintech company. He sits on the boards of MTech portfolio companies including Embroker, Inshur, Matic, Openly and Polly. He holds an MBA from the Wharton School and a BA from Rutgers College.",
+    sources: [
+      { label: "MTech Capital team page", url: "https://mtechcapital.com/team/" },
+      { label: "Intelligent Insurer on MTech's $75m first close (2018)", url: "https://www.intelligentinsurer.com/insurance/cna-nn-group-commit-75m-to-insurtech-venture-fund-mtech-capital-15803" }
+    ]
+  },
+  "kevin-mcloughlin": {
+    name: "Kevin McLoughlin",
+    sectors: ["Insurtech", "Fintech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://mtechcapital.com/team/",
+    firm: "MTech Capital",
+    firmSlug: "mtech-capital",
+    title: "Partner and Co-Founder",
+    joinedYear: 2018,
+    education: ["MBA, Columbia Business School", "BA, Boston College"],
+    previousExperience: ["Global Head of Insurance Investment Banking, Bank of America Merrill Lynch", "Global Head of Insurance banking, Citigroup", "Head of European Insurance, UBS", "Finance and investments, AIG (1988-1995)"],
+    firmHistory: [],
+    boardSeats: ["Akur8", "Cybercube", "Hypatos", "Insurify", "Napo", "Peppy", "Plum Life", "Rest Less", "Thinksurance"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1988, event: "Began his career at AIG, working in finance and investments until 1995." },
+      { year: 2018, event: "Co-founded MTech Capital with his brother Brian, raising a $75 million first close from strategic insurers including CNA Financial and NN Group." },
+      { year: 2024, event: "Portfolio company Corvus Insurance, where he held a board seat, was acquired by Travelers for $435 million." }
+    ],
+    notableInvestments: [
+      { name: "Corvus Insurance" },
+      { name: "Akur8" },
+      { name: "CyberCube" }
+    ],
+    biography: "Kevin McLoughlin is Partner and Co-Founder of MTech Capital, leading the insurtech venture firm's London office and its European investing. His career spans more than three decades in insurance finance, including 22 years in investment banking focused exclusively on the sector, as Global Head of Insurance Investment Banking at Bank of America Merrill Lynch, head of global insurance banking at Citigroup and head of European insurance at UBS, after starting out in finance and investments at AIG from 1988 to 1995. At MTech he has backed companies including Corvus Insurance, acquired by Travelers for $435 million in 2024, Akur8 and CyberCube, and he sits on boards including Akur8, Insurify and Thinksurance. He holds an MBA from Columbia Business School and a BA from Boston College.",
+    sources: [
+      { label: "MTech Capital team page", url: "https://mtechcapital.com/team/" },
+      { label: "Vator interview with Kevin McLoughlin (2022)", url: "https://vator.tv/2022-04-07-meet-kevin-mcloughlin-partner-and-co-founder-mtech-capital/" },
+      { label: "Insurance Journal on Travelers completing the Corvus acquisition (2024)", url: "https://www.insurancejournal.com/news/national/2024/01/03/754159.htm" }
+    ]
+  },
+  "cristina-nunez": {
+    name: "Cristina Nuñez",
+    sectors: ["Beauty", "Consumer"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://truebeautyventures.com/pages/team",
+    firm: "True Beauty Ventures",
+    firmSlug: "true-beauty-ventures",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2020,
+    education: ["BA Public Policy Studies, Duke University"],
+    previousExperience: ["Investment banking, UBS Investment Bank", "Private equity roles, Catterton Partners (now L Catterton) and Tengram Capital Partners", "Executive leadership, Laura Geller Beauty", "General Manager and COO, Clark's Botanicals"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Leaves her role as General Manager and COO of Clark's Botanicals to co-found True Beauty Ventures with Rich Gersten." },
+      { year: 2021, event: "True Beauty Ventures closes its debut fund in excess of $42 million." },
+      { year: 2024, event: "Helps bring the firm's second fund near its $75 million target, with about $70 million committed by June." }
+    ],
+    notableInvestments: [],
+    biography: "Cristina Nuñez is Co-Founder and General Partner of True Beauty Ventures, where she combines an investor's and an operator's view of the beauty industry. She began her career in consumer focused investment banking at UBS before moving into private equity at Catterton Partners (now L Catterton) and Tengram Capital Partners, where she first worked with Rich Gersten. She then moved into operating roles, holding executive leadership positions at Laura Geller Beauty and serving as General Manager and Chief Operating Officer of skincare brand Clark's Botanicals. In 2020 she co-founded True Beauty Ventures, which invests in emerging beauty and wellness brands from Seed to Series B. She earned a BA in Public Policy Studies from Duke University.",
+    sources: [
+      { label: "True Beauty Ventures team page", url: "https://truebeautyventures.com/pages/team" },
+      { label: "WWD: Beauty Investor Rich Gersten Launches Venture Fund (2020)", url: "https://wwd.com/beauty-industry-news/beauty-features/beauty-investor-rich-gersten-launches-venture-fund-1203652380/" },
+      { label: "PR Newswire: True Beauty Ventures debut fund close (2021)", url: "https://www.prnewswire.com/news-releases/true-beauty-ventures-raises-debut-fund-in-excess-of-42-million-backed-by-beauty-founders-and-executives-to-grow-emerging-beauty-and-wellness-brands-301344829.html" }
+    ]
+  },
+  "rich-gersten": {
+    name: "Rich Gersten",
+    sectors: ["Beauty", "Consumer"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://truebeautyventures.com/pages/team",
+    firm: "True Beauty Ventures",
+    firmSlug: "true-beauty-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2020,
+    education: ["BS Economics, Union College", "MBA, The Wharton School, University of Pennsylvania"],
+    previousExperience: ["Managing Director, North Castle Partners (1999-2007)", "Partner, Catterton Partners (now L Catterton)", "Partner, Tengram Capital Partners", "Industry Advisor, North Castle Partners (rejoined 2020)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1999, event: "Joins North Castle Partners, where he serves as Managing Director until 2007." },
+      { year: 2020, event: "Departs Tengram Capital Partners and launches the specialist beauty investment firm that becomes True Beauty Ventures." },
+      { year: 2021, event: "Closes True Beauty Ventures' debut fund in excess of $42 million." },
+      { year: 2023, event: "Portfolio brand K18 is acquired by Unilever, reportedly returning close to 80 percent of Fund I's capital." }
+    ],
+    notableInvestments: [
+      { name: "K18" },
+      { name: "Avalon Organics" },
+      { name: "Alba Botanica" }
+    ],
+    biography: "Rich Gersten is Co-Founder and Managing Partner of True Beauty Ventures, a specialist fund backing emerging beauty and wellness brands from Seed to Series B. He has spent roughly three decades investing in consumer brands at private equity firms including North Castle Partners, Catterton Partners (now L Catterton) and Tengram Capital Partners, with much of the last decade focused on beauty and personal care. His early personal care investments included Avalon Organics and Alba Botanica. In 2020 he left Tengram to launch True Beauty, co-founding the firm with Cristina Nuñez to serve emerging brands underserved by institutional capital, and led its investment in K18, acquired by Unilever. He holds a BS in Economics from Union College and an MBA from Wharton.",
+    sources: [
+      { label: "True Beauty Ventures team page", url: "https://truebeautyventures.com/pages/team" },
+      { label: "Kisaco Research speaker bio", url: "https://www.kisacoresearch.com/content/rich-gersten" },
+      { label: "WWD: Beauty Investor Rich Gersten Launches Venture Fund (2020)", url: "https://wwd.com/beauty-industry-news/beauty-features/beauty-investor-rich-gersten-launches-venture-fund-1203652380/" },
+      { label: "Fashionista founder interview (2025)", url: "https://fashionista.com/2025/07/true-beauty-ventures-about-founder-interview" }
+    ]
+  },
+  "peter-vanbekbergen": {
+    name: "Peter Vanbekbergen",
+    sectors: ["Semiconductors", "Deep Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://imecxpand.com/en/team",
+    firm: "imec.xpand",
+    firmSlug: "imec-xpand",
+    title: "Partner & Co-founder",
+    joinedYear: 2017,
+    education: [],
+    previousExperience: ["Assistant Vice-President, systems division, imec (2003-2007)", "Co-founder and VP Engineering, M4S (imec spin-off acquired by Huawei in 2010)", "Innovation Manager, imec (from 2015)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2010, event: "M4S, the radiofrequency transceiver company he co-founded and served as VP Engineering, is acquired by Huawei." },
+      { year: 2015, event: "Returns to imec as innovation manager, working on structuring business ideas and assembling management teams for spin-offs." },
+      { year: 2017, event: "Co-founds imec.xpand as Partner at the fund's June 2017 launch." },
+      { year: 2024, event: "imec.xpand closes its EUR 300 million second fund." }
+    ],
+    notableInvestments: [],
+    biography: "Peter Vanbekbergen is Partner and Co-founder of imec.xpand, the independent venture fund with privileged access to the imec research ecosystem. A repeat entrepreneur with deep knowledge of imec from the inside, he served as assistant vice-president of imec's systems division from 2003 to 2007 and co-founded the imec spin-off M4S, a radiofrequency transceiver company where he was vice-president of engineering until its acquisition by Huawei in 2010. He returned to imec in 2015 as innovation manager, structuring business ideas and assembling management teams for new ventures, before co-founding imec.xpand at its 2017 launch. At the fund he assesses the uniqueness, technological feasibility and scalability of prospective deeptech investments.",
+    sources: [
+      { label: "imec.xpand team page", url: "https://imecxpand.com/en/team/peter-vanbekbergen" },
+      { label: "GUV Powerlist 2018 profile", url: "https://globalventuring.com/university/guv-powerlist-2018-9-peter-vanbekbergen-tom-vanhoutte-frank-bulens-cyril-vancura/" }
+    ]
+  },
+  "tom-vanhoutte": {
+    name: "Tom Vanhoutte",
+    sectors: ["Semiconductors", "Deep Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://imecxpand.com/en/team",
+    firm: "imec.xpand",
+    firmSlug: "imec-xpand",
+    title: "Partner & Co-founder",
+    joinedYear: 2017,
+    education: [],
+    previousExperience: ["Senior Manager, PricewaterhouseCoopers (12+ years)", "Chief Financial Officer, Capricorn Venture Partners (about 6 years)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2017, event: "Joins the newly launched imec.xpand in March 2017 as Partner and Co-founder after nearly six years as CFO of Capricorn Venture Partners." },
+      { year: 2018, event: "imec.xpand reaches final close of its first fund at EUR 117 million." },
+      { year: 2024, event: "imec.xpand closes its EUR 300 million second fund, with Vanhoutte as one of its public spokespeople." }
+    ],
+    notableInvestments: [],
+    biography: "Tom Vanhoutte is Partner and Co-founder of imec.xpand, the independent venture capital fund launched in 2017 alongside, but managed separately from, the Leuven based nanoelectronics research institute imec. He has spent most of his career on the business side of venture capital, including more than twelve years as a senior manager at PricewaterhouseCoopers and nearly six years as Chief Financial Officer of Capricorn Venture Partners before co-founding imec.xpand in March 2017. At the fund he draws on an extended network of venture investors, corporates and entrepreneurs to help deeptech portfolio companies raise capital and scale globally, and he served as a public voice for the firm's EUR 117 million first fund and EUR 300 million second fund.",
+    sources: [
+      { label: "imec.xpand team page", url: "https://imecxpand.com/en/team/tom-vanhoutte" },
+      { label: "GUV Powerlist 2018 profile", url: "https://globalventuring.com/university/guv-powerlist-2018-9-peter-vanbekbergen-tom-vanhoutte-frank-bulens-cyril-vancura/" },
+      { label: "imec press release: EUR 300M Fund II (2024)", url: "https://www.imec-int.com/en/press/imecxpand-launches-eur-300m-fund-amid-global-race-semiconductor-supremacy" }
+    ]
+  },
+  "cain-mcclary": {
+    name: "Cain McClary",
+    sectors: ["Biotech", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.kdtvc.com/our-team",
+    firm: "KdT Ventures",
+    firmSlug: "kdt-ventures",
+    title: "Managing Partner & Founder",
+    joinedYear: 2017,
+    education: ["ScB Biochemistry, Brown University", "MD, Tulane University School of Medicine"],
+    previousExperience: ["Research fellow, National Institutes of Health", "Anatomic pathology residency, Stanford University", "Pathology lead, Grand Rounds"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2012, event: "Earns his MD from Tulane University after an ScB in Biochemistry from Brown University." },
+      { year: 2017, event: "Founds KdT Ventures to make first institutional investments in frontier science companies." },
+      { year: 2018, event: "Closes KdT's oversubscribed inaugural fund." },
+      { year: 2022, event: "Marks the firm's five year anniversary with the close of an oversubscribed $80 million Fund III." },
+      { year: 2024, event: "Closes KdT's oversubscribed Fund IV at more than $100 million, taking firm assets under management past $250 million." }
+    ],
+    notableInvestments: [],
+    biography: "Cain McClary, MD, is the Founder and Managing Partner of KdT Ventures, an early stage venture firm writing first institutional checks into companies engineering the physical layer of medicine, chemicals and materials. A physician by training, he earned an ScB in Biochemistry from Brown University and an MD from Tulane, completed a research fellowship at the National Institutes of Health studying non-coding RNA in cancer, and trained in anatomic pathology at Stanford, where his research on a genetic mutation in ameloblastoma contributed to clinical trials. He later led pathology work at Grand Rounds before founding KdT in 2017. Under his leadership the firm has raised four funds, backed more than 65 frontier science companies, and grown to over $250 million under management.",
+    sources: [
+      { label: "KdT Ventures team page", url: "https://www.kdtvc.com/our-team" },
+      { label: "KdT Ventures about page bio", url: "https://www.kdtvc.com/about" },
+      { label: "Business Wire: KdT Fund IV announcement (2024)", url: "https://www.businesswire.com/news/home/20241016605884/en/KdT-Ventures-Announces-Oversubscribed-Fund-IV-to-Invest-in-Early-Stage-Frontier-Science-Companies" }
+    ]
+  },
+  "mack-healy": {
+    name: "Mack Healy",
+    sectors: ["Biotech", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.kdtvc.com/our-team",
+    firm: "KdT Ventures",
+    firmSlug: "kdt-ventures",
+    title: "Managing Partner",
+    joinedYear: 2019,
+    education: ["JD, University of Michigan"],
+    previousExperience: ["Technology and life science attorney, Fenwick & West", "Technology and life science attorney, Austin-based law firms"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2019, event: "Joins KdT Ventures in March as the firm's second general partner." },
+      { year: 2024, event: "Serves as Managing Partner as KdT closes its oversubscribed Fund IV at more than $100 million." }
+    ],
+    notableInvestments: [],
+    biography: "Mack Healy, JD, is a Managing Partner at KdT Ventures, which he joined in March 2019 as the firm's second general partner. Before moving to venture capital he practiced technology and life science law at Fenwick & West and later at Austin based firms, advising on hundreds of venture financings representing more than $1 billion in aggregate value and working with companies including Airbnb, Cisco and WhatsApp. He earned his law degree from the University of Michigan, where he received a Dean's Scholarship, has made personal angel investments, and has guest lectured at law schools. At KdT he helps frontier science founders structure companies and financings from the first institutional check onward.",
+    sources: [
+      { label: "KdT Ventures team page", url: "https://www.kdtvc.com/our-team" },
+      { label: "KdT Ventures about page bio", url: "https://www.kdtvc.com/about" }
+    ]
+  },
+  "patrick-malone": {
+    name: "Patrick Malone",
+    sectors: ["Biotech", "Life Sciences", "AI"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://onemind.org/accelerator-advisors/patrick-malone/",
+    firm: "KdT Ventures",
+    firmSlug: "kdt-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: ["BS Neuroscience and Behavioral Biology, Emory University", "MD, Georgetown University", "PhD Computational Neuroscience, Georgetown University"],
+    previousExperience: ["Research Fellow, National Institutes of Health"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2024, event: "Promoted to Partner at KdT Ventures alongside the close of the firm's oversubscribed Fund IV." }
+    ],
+    notableInvestments: [],
+    biography: "Patrick Malone, MD, PhD, is a Partner at KdT Ventures, the early stage firm that writes first institutional checks into frontier science companies. Trained as a physician-scientist, he earned a BS in Neuroscience and Behavioral Biology from Emory University and an MD and a PhD in Computational Neuroscience from Georgetown University, where his doctoral work focused on machine learning applications in neuroimaging. He was a research fellow at the National Institutes of Health working on biomarker development for neurodegenerative disease before moving into venture capital. At KdT he invests at the intersection of computation, biology and chemistry across life sciences and healthcare, and he was promoted to Partner in October 2024. He also advises the One Mind Accelerator.",
+    sources: [
+      { label: "KdT Ventures team page", url: "https://www.kdtvc.com/our-team" },
+      { label: "One Mind advisor bio", url: "https://onemind.org/accelerator-advisors/patrick-malone/" },
+      { label: "Business Wire: KdT Fund IV announcement (2024)", url: "https://www.businesswire.com/news/home/20241016605884/en/KdT-Ventures-Announces-Oversubscribed-Fund-IV-to-Invest-in-Early-Stage-Frontier-Science-Companies" }
+    ]
+  },
+  "phil-grayeski": {
+    name: "Phil Grayeski",
+    sectors: ["Biotech", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.kdtvc.com/our-team",
+    firm: "KdT Ventures",
+    firmSlug: "kdt-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    education: ["BS Chemistry and Genetics, University of Georgia", "MPhil Bioscience Enterprise, University of Cambridge", "PhD, University of North Carolina at Chapel Hill"],
+    previousExperience: ["Co-founder, Stride Bio", "Co-founder, Ribometrix"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Promoted from Principal to Partner as KdT closes its oversubscribed $80 million Fund III." },
+      { year: 2024, event: "Promoted to Managing Partner at the close of KdT's oversubscribed Fund IV of more than $100 million." }
+    ],
+    notableInvestments: [],
+    biography: "Phil Grayeski, PhD, is a Managing Partner at KdT Ventures, the early stage frontier science firm where he rose from Principal to Partner in 2022 and to Managing Partner in 2024. A scientist and repeat biotech founder, he co-founded gene therapy company Stride Bio and RNA targeted drug discovery company Ribometrix, which together raised tens of millions of dollars, before joining KdT. He studied Chemistry and Genetics at the University of Georgia, where he was a Goldwater Scholar, earned an MPhil in Bioscience Enterprise from the University of Cambridge, and completed doctoral research at the University of North Carolina at Chapel Hill focused on mRNA structure and disease. At KdT he backs founders building at the molecular level across therapeutics, tools and materials.",
+    sources: [
+      { label: "KdT Ventures team page", url: "https://www.kdtvc.com/our-team" },
+      { label: "KdT Ventures about page bio", url: "https://www.kdtvc.com/about" },
+      { label: "Newswire: KdT five year anniversary and promotions (2022)", url: "https://www.newswire.com/news/kdt-ventures-celebrates-5-year-anniversary-close-of-oversubscribed-21833458" },
+      { label: "Business Wire: KdT Fund IV announcement (2024)", url: "https://www.businesswire.com/news/home/20241016605884/en/KdT-Ventures-Announces-Oversubscribed-Fund-IV-to-Invest-in-Early-Stage-Frontier-Science-Companies" }
+    ]
+  },
+  "kevin-webb": {
+    name: "Kevin Webb",
+    sectors: ["Biodiversity", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.superorganism.com",
+    firm: "Superorganism",
+    firmSlug: "superorganism",
+    title: "Managing Director",
+    joinedYear: 2023,
+    education: ["Degree in Human Biology, Stanford University", "MS in Sustainability Science, Columbia University"],
+    previousExperience: ["Early-stage investor, Webb Investment Network (until 2018)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Left the Webb Investment Network and began angel investing in biodiversity-related startups to test whether the deal flow could support a dedicated fund." },
+      { year: 2023, event: "Co-founded Superorganism with Tom Quigley as Managing Director." },
+      { year: 2026, event: "Superorganism closed its 25.9 million dollar debut fund in January." }
+    ],
+    notableInvestments: [
+      { name: "Ironclad" },
+      { name: "Turo" },
+      { name: "Verkada" }
+    ],
+    biography: "Kevin Webb is a co-founder and Managing Director of Superorganism, the first venture capital firm dedicated to biodiversity. He brings more than 15 years of venture and angel investing experience and previously helped establish and operate the Webb Investment Network, where he was involved at the early stages with companies that became unicorns, including Ironclad, Turo and Verkada. He studied Human Biology at Stanford University with a focus on humans, environmental change and infectious disease, and holds an MS in Sustainability Science from Columbia University. Before launching Superorganism in 2023 he spent several years angel investing in biodiversity startups to test the thesis, and the firm has pledged 10 percent of its profits to future conservation efforts.",
+    sources: [
+      { label: "Superorganism website", url: "https://www.superorganism.com" },
+      { label: "EarthX speaker bio", url: "https://earthx.org/speaker/kevin-webb/" },
+      { label: "TechCrunch on Superorganism's launch", url: "https://techcrunch.com/2023/09/13/superorganism-wants-to-be-the-conservationist-on-the-cap-table" },
+      { label: "Superorganism debut fund press release (PRNewswire)", url: "https://www.prnewswire.com/news-releases/superorganism-first-venture-capital-firm-dedicated-to-biodiversity-closes-25-9m-debut-fund-302658284.html" }
+    ]
+  },
+  "tom-quigley": {
+    name: "Tom Quigley",
+    sectors: ["Biodiversity", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.superorganism.com",
+    firm: "Superorganism",
+    firmSlug: "superorganism",
+    title: "Managing Director",
+    joinedYear: 2023,
+    education: [],
+    previousExperience: ["Founding team, operations and growth leadership, Real Vision", "Community Manager, Digital Makerspace, Conservation X Labs"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2023, event: "Co-founded Superorganism with Kevin Webb, the first venture capital firm dedicated to biodiversity, as Managing Director." },
+      { year: 2025, event: "Spoke at the IUCN World Conservation Congress on technology in service of conservation." },
+      { year: 2026, event: "Superorganism closed its 25.9 million dollar debut fund in January." }
+    ],
+    notableInvestments: [],
+    biography: "Tom Quigley is a co-founder and Managing Director of Superorganism, the first venture capital firm dedicated to biodiversity. A coral reef conservationist turned startup operator and investor, he has spent roughly a decade working at the intersection of technology and nature, with field experience in Australia, Madagascar and the Cayman Islands, including time as a divemaster on the Great Barrier Reef supporting marine research. He was part of the founding team at Real Vision, a video on demand platform for investors, where he held operations and growth leadership roles, and later worked at Conservation X Labs, a conservation innovation organization, where he ran the Digital Makerspace community and advised nature tech teams. At Superorganism he backs early stage startups whose businesses benefit biodiversity.",
+    sources: [
+      { label: "Superorganism website", url: "https://www.superorganism.com" },
+      { label: "Superorganism debut fund press release (PRNewswire)", url: "https://www.prnewswire.com/news-releases/superorganism-first-venture-capital-firm-dedicated-to-biodiversity-closes-25-9m-debut-fund-302658284.html" },
+      { label: "IUCN World Conservation Congress speaker profile", url: "https://iucncongress2025.org/speakers/tom-quigley" },
+      { label: "Conservation Guide interview", url: "https://www.conservationguide.org/news/under-the-spotlight-tom-quigley" }
+    ]
+  },
+  "danielle-joseph": {
+    name: "Danielle Joseph",
+    sectors: ["Circular Economy", "Climate", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.closedlooppartners.com/team-members/danielle-joseph-2/",
+    firm: "Closed Loop Partners",
+    firmSlug: "closed-loop-partners",
+    title: "Managing Director | Ventures",
+    joinedYear: null,
+    education: ["MBA, Stanford Graduate School of Business", "BA in Philosophy and Politics, Pomona College"],
+    previousExperience: ["Growth equity and project finance, NewWorld Capital Group", "Clean energy investing, Invex Infraestructura", "Energy infrastructure investment analysis, Queensland Investment Corporation"],
+    firmHistory: [],
+    boardSeats: ["SOLARCYCLE", "Capra Biosciences", "HomeBiogas", "Billion Oyster Project"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Served as Director and Investment Officer at Closed Loop Partners, investing in early-stage circular economy companies." },
+      { year: 2022, event: "Closed Loop Ventures portfolio company Atlas Organics, whose investment and exit she led, was acquired by Generate Capital in a majority-stake deal." }
+    ],
+    notableInvestments: [
+      { name: "Atlas Organics" },
+      { name: "SOLARCYCLE" },
+      { name: "Capra Biosciences" },
+      { name: "HomeBiogas" }
+    ],
+    biography: "Danielle Joseph is Managing Director and Head of Closed Loop Ventures at Closed Loop Partners, overseeing the platform's venture capital and growth equity strategies, a portfolio of more than 40 early-stage circular economy companies, and an investment team spanning origination, diligence and portfolio management. She led both the investment in and exit of composter Atlas Organics, and serves on the boards of SOLARCYCLE, Capra Biosciences, HomeBiogas and the nonprofit Billion Oyster Project. She previously worked in growth equity and project finance at NewWorld Capital Group, evaluated clean energy opportunities at Invex Infraestructura in Mexico, and assessed energy infrastructure at Queensland Investment Corporation. She holds an MBA from Stanford Graduate School of Business and a BA from Pomona College.",
+    sources: [
+      { label: "Closed Loop Partners team page", url: "https://www.closedlooppartners.com/team-members/danielle-joseph-2/" },
+      { label: "Closed Loop Ventures page", url: "https://www.closedlooppartners.com/capital-management/venture-capital/ventures/" },
+      { label: "Waste Dive on Generate Capital's Atlas Organics acquisition", url: "https://www.wastedive.com/news/atlas-organics-generate-capital-compost-digestion/617165/" },
+      { label: "Sustainable Career Pathways interview (2020)", url: "https://sustainablecareerpathways.com/2020/01/09/danielle-joseph-director-investment-officer-closed-loop-partners/" }
+    ]
+  },
+  "jessica-long": {
+    name: "Jessica Long",
+    sectors: ["Circular Economy", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.closedlooppartners.com/team-members/jessica-long/",
+    firm: "Closed Loop Partners",
+    firmSlug: "closed-loop-partners",
+    title: "Managing Partner & Chief Strategy Officer | Closed Loop Partners; CEO | Closed Loop Builders",
+    joinedYear: 2021,
+    education: ["BA, Macalester College"],
+    previousExperience: ["Managing Director, Sustainability & Responsible Business (North America lead), Accenture", "Staff member, United States Senate"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Joined Closed Loop Partners as Chief Strategy Officer and Managing Director after leading Accenture's North America Sustainability and Responsible Business practice." }
+    ],
+    notableInvestments: [],
+    biography: "Jessica Long is Managing Partner and Chief Strategy Officer at Closed Loop Partners and Chief Executive Officer of Closed Loop Builders, the platform's operating group. She joined the firm in 2021 from Accenture, where she was a Managing Director leading the North America Sustainability and Responsible Business practice, advising Fortune 500 companies on ESG goals and circular business models and collaborating with the World Economic Forum and the UN Global Compact. Earlier at Accenture she was based in East Africa working at the intersection of business and international development, and she began her career as a staff member in the United States Senate. A World Economic Forum Young Global Leader, she advises The Earthshot Prize, the Global Teacher Prize and Rise, and holds a BA from Macalester College.",
+    sources: [
+      { label: "Closed Loop Partners team page", url: "https://www.closedlooppartners.com/team-members/jessica-long/" },
+      { label: "Closed Loop Partners hiring announcement", url: "https://www.closedlooppartners.com/jessica-long-joins-closed-loop-partners-as-a-managing-director/" }
+    ]
+  },
+  "kate-daly": {
+    name: "Kate Daly",
+    sectors: ["Circular Economy", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.closedlooppartners.com/team-members/kate-daly/",
+    firm: "Closed Loop Partners",
+    firmSlug: "closed-loop-partners",
+    title: "Managing Partner | Closed Loop Partners; CEO | Center for the Circular Economy",
+    joinedYear: null,
+    education: ["MS, University of Pennsylvania", "BA, Cornell University"],
+    previousExperience: ["Senior Vice President, New York City Economic Development Corporation", "Executive Director, New York City Landmarks Preservation Commission"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Closed Loop Partners launched the Center for the Circular Economy, the innovation arm she leads, and initiated the NextGen Consortium." }
+    ],
+    notableInvestments: [],
+    biography: "Kate Daly is Managing Partner at Closed Loop Partners and Chief Executive Officer of the Center for the Circular Economy, the platform's innovation arm, where she oversees research, analysis and collaboration to accelerate the transition to a circular economy, including multi-stakeholder consortia with major consumer brands. Before joining the firm she spent more than a decade in New York City government, serving as Senior Vice President at the New York City Economic Development Corporation, where she directed business development initiatives across sectors including cleantech, fashion and advanced manufacturing, and earlier as Executive Director of the NYC Landmarks Preservation Commission. She holds an MS from the University of Pennsylvania and a BA from Cornell University.",
+    sources: [
+      { label: "Closed Loop Partners team page", url: "https://www.closedlooppartners.com/team-members/kate-daly/" },
+      { label: "Closed Loop Partners 2023 impact report", url: "https://www.closedlooppartners.com/wp-content/uploads/2024/06/Closed-Loop-Partners-Impact-Report-2023-2.pdf" },
+      { label: "Beverage Digest Q&A (2019)", url: "https://www.beverage-digest.com/articles/24-future-smarts-2018-qa-with-closed-loop-executive-director-kate-daly" }
+    ]
+  },
+  "ron-gonen": {
+    name: "Ron Gonen",
+    sectors: ["Circular Economy", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.closedlooppartners.com/team-members/ron-gonen/",
+    firm: "Closed Loop Partners",
+    firmSlug: "closed-loop-partners",
+    title: "Founder & Chief Executive Officer",
+    joinedYear: 2014,
+    education: ["MBA, Columbia Business School"],
+    previousExperience: ["Co-founder and CEO, Recyclebank (2004-2010)", "Deputy Commissioner of Sanitation, Recycling and Sustainability, City of New York (Bloomberg administration)", "Adjunct Professor, Columbia University"],
+    firmHistory: [],
+    boardSeats: ["Board Member, A Good Option"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2004, event: "Earned his MBA from Columbia Business School and co-founded Recyclebank, a recycling rewards company he led as CEO." },
+      { year: 2009, event: "Honored by the United Nations Environment Programme while CEO of Recyclebank." },
+      { year: 2014, event: "Founded Closed Loop Partners in New York with backing from the Walmart Foundation and major corporations." },
+      { year: 2021, event: "Published The Waste-Free World with Penguin Random House." },
+      { year: 2022, event: "Launched Circular Services, Closed Loop Partners' first operating company, which the firm describes as the largest privately held recycling and composting company in the US." }
+    ],
+    notableInvestments: [],
+    biography: "Ron Gonen is the Founder and Chief Executive Officer of Closed Loop Partners, the New York based circular economy platform he started in 2014, spanning venture capital, private equity, catalytic capital and private credit, an innovation center and operating companies including Circular Services. He previously co-founded Recyclebank, a recycling rewards company he led as CEO, and served as Deputy Commissioner of Sanitation, Recycling and Sustainability for New York City during the Bloomberg administration. He holds an MBA from Columbia Business School, where he has taught as an adjunct professor, and is the author of The Waste-Free World. His recognitions include a UN Environment Programme honor and Columbia University's Medal of Excellence.",
+    sources: [
+      { label: "Closed Loop Partners team page", url: "https://www.closedlooppartners.com/team-members/ron-gonen/" },
+      { label: "Columbia Business School alumni profile", url: "https://business.columbia.edu/spring-23-magazine/people/ron-gonen-04" },
+      { label: "Waste360 on UN honor for RecycleBank CEO", url: "https://waste360.com/news/RecycleBank-CEO-United-Nations-20090424" },
+      { label: "Recyclebank CEO succession press release (PRNewswire)", url: "https://www.prnewswire.com/news-releases/jonathan-hsu-joins-recyclebank-as-chief-executive-officer-99446979.html" }
+    ]
+  },
+  "tazia-smith": {
+    name: "Tazia Smith",
+    sectors: ["Circular Economy", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.closedlooppartners.com/team-members/tazia-smith/",
+    firm: "Closed Loop Partners",
+    firmSlug: "closed-loop-partners",
+    title: "Managing Partner | Closed Loop Partners; CEO | Closed Loop Capital Management",
+    joinedYear: null,
+    education: ["BA in Environmental Science & Policy, Duke University"],
+    previousExperience: ["Managing Director, Deutsche Bank", "Institutional cross-asset sales, Goldman Sachs (7 years)", "Co-founder and Strategic Advisor, IMP+ACT Alliance"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2019, event: "Co-founded the IMP+ACT Alliance, a nonprofit impact measurement technology initiative funded by Deutsche Bank that later became part of the Global Impact Investing Network." }
+    ],
+    notableInvestments: [],
+    biography: "Tazia Smith is Managing Partner at Closed Loop Partners and Chief Executive Officer of Closed Loop Capital Management, where she oversees the firm's investment group, stakeholder management, capital formation and investor relations, and sits on the firm's Management Committee. She brings nearly 20 years of investment banking experience with institutional family offices across the capital structure, including as a Managing Director at Deutsche Bank, where she helped establish the Key Client Partners business and worked with the CEO strategy team on sustainable finance, and seven years at Goldman Sachs in institutional cross-asset sales. In 2019 she co-founded the IMP+ACT Alliance, now part of the GIIN. She holds a BA in Environmental Science and Policy from Duke University, magna cum laude, and is a CFA charterholder.",
+    sources: [
+      { label: "Closed Loop Partners team page", url: "https://www.closedlooppartners.com/team-members/tazia-smith/" }
+    ]
+  },
+  "barry-large": {
+    name: "Barry Large",
+    sectors: ["Logistics"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://dynamo.vc/about/barry-large",
+    firm: "Dynamo Ventures",
+    firmSlug: "dynamo-ventures",
+    title: "Co-founder & Partner",
+    joinedYear: 2016,
+    education: [],
+    previousExperience: ["Co-founder and CFO, Access America Transport", "Co-founder, Lamp Post Group"],
+    firmHistory: [],
+    boardSeats: ["Chairman, Chattanooga Whiskey"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Co-founded the Dynamo accelerator and fund in Chattanooga, and was inducted into the University of Tennessee at Chattanooga entrepreneurship Hall of Fame with his Access America co-founders." }
+    ],
+    notableInvestments: [],
+    biography: "Barry Large is a co-founder and Partner at Dynamo Ventures, the Chattanooga based pre-seed and seed supply chain fund. He co-founded Access America Transport, a logistics enterprise that reached roughly 500 million dollars in revenue and merged with UPS subsidiary Coyote Logistics, serving as its CFO. He co-founded Lamp Post Group, the Chattanooga venture incubator that gave rise to Dynamo, and helped establish logistics and insurance businesses including Steam Logistics and Reliance Partners. He chairs craft distiller Chattanooga Whiskey, supports the local entrepreneurial community through Brickyard, and serves on several Chattanooga philanthropic and civic boards. He was inducted into the University of Tennessee at Chattanooga entrepreneurship Hall of Fame in 2016.",
+    sources: [
+      { label: "Dynamo Ventures profile", url: "https://dynamo.vc/about/barry-large" },
+      { label: "Chattanooga Times Free Press on UTC Hall of Fame", url: "https://www.timesfreepress.com/news/2016/apr/07/living-hall-fameted-alling-barry-large-and-al/" }
+    ]
+  },
+  "jon-bradford": {
+    name: "Jon Bradford",
+    sectors: ["Logistics", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://dynamo.vc/about/jon-bradford",
+    firm: "Dynamo Ventures",
+    firmSlug: "dynamo-ventures",
+    title: "Co-founder & Managing Partner",
+    joinedYear: 2016,
+    education: [],
+    previousExperience: ["Partner, Motive Partners", "Managing Director, Techstars London", "Founder, Springboard accelerator", "Co-founder, F6S", "Co-founder, Tech.eu"],
+    firmHistory: [{ firmSlug: "techstars", role: "Managing Director", startYear: null, endYear: null }],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2009, event: "Founded the first startup accelerator bootcamp outside the United States." },
+      { year: 2016, event: "Helped launch Dynamo's debut fund as an advisor, later joining full time as Co-founder & Managing Partner." },
+      { year: 2025, event: "Co-led the close of Dynamo's 54 million dollar Fund III." }
+    ],
+    notableInvestments: [
+      { name: "Chainalysis" },
+      { name: "Tray.io" },
+      { name: "Sendbird" },
+      { name: "Apiary" }
+    ],
+    biography: "Jon Bradford is a co-founder and Managing Partner of Dynamo Ventures, the Chattanooga based pre-seed and seed supply chain fund. One of Europe's most prolific early stage investors, he has made more than 100 investments, including Apiary, Tray.io, Sendbird and Chainalysis. In 2009 he founded the first accelerator bootcamp outside the United States, and his Springboard program merged with Techstars to become its first international accelerator, which he led as Managing Director of Techstars London. He co-founded F6S, Tech.eu, Startup Wise Guys in Estonia and Eleven in Bulgaria, helped establish accelerators from Montreal to Moscow, and was a Partner at fintech investor Motive Partners before going full time at Dynamo, whose debut fund he helped launch as an advisor.",
+    sources: [
+      { label: "Dynamo Ventures profile", url: "https://dynamo.vc/about/jon-bradford" },
+      { label: "Dynamo announcement on Jon Bradford joining", url: "https://dynamo.substack.com/p/meet-jon-bradford-dynamo-ventures" },
+      { label: "Dynamo Fund III announcement", url: "https://dynamo.vc/insights-and-news/dynamo-ventures-closes-54m-fund-iii-unlocks-liquidity-for-early-lps-with-top-decile-returns" }
+    ]
+  },
+  "santosh-sankar": {
+    name: "Santosh Sankar",
+    sectors: ["Logistics", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://dynamo.vc/about/santosh-sankar",
+    firm: "Dynamo Ventures",
+    firmSlug: "dynamo-ventures",
+    title: "Co-founder & Managing Partner",
+    joinedYear: 2016,
+    education: ["BS in Business, Smeal College of Business, Penn State University"],
+    previousExperience: ["Banking and equity research covering insurance and technology, Wall Street (5 years)", "Co-founder, Bullish Bankers", "Founder, Razor Studios"],
+    firmHistory: [],
+    boardSeats: ["Commissioner, Chattanooga Metropolitan Airport Authority"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2010, event: "Graduated from Penn State's Smeal College of Business, where he managed about 1 million dollars in technology investments for the student-run Nittany Lion Fund." },
+      { year: 2016, event: "Co-founded Dynamo in Chattanooga, launching its supply chain accelerator and 18 million dollar Fund I." },
+      { year: 2017, event: "Named to the Forbes 30 Under 30 list for venture capital." },
+      { year: 2021, event: "Selected as a Kauffman Fellow, a two-year executive education program for venture capital leaders." },
+      { year: 2025, event: "Closed Dynamo's 54 million dollar Fund III alongside a secondary sale that returned capital to Fund I investors." }
+    ],
+    notableInvestments: [],
+    biography: "Santosh Sankar is a co-founder and Managing Partner of Dynamo Ventures, the Chattanooga based pre-seed and seed fund for supply chain and the physical economy. Before Dynamo he spent five years on Wall Street in banking and equity research covering the insurance and technology sectors. An entrepreneur from an early age, he founded Razor Studios, an IT support and web development firm, at 13, and co-founded the financial media publication Bullish Bankers while at Penn State, where he earned a BS in Business and managed technology investments for the Nittany Lion Fund. He was named to the Forbes 30 Under 30 for venture capital in 2017, became a Kauffman Fellow in 2021, and serves as a Commissioner of the Chattanooga Metropolitan Airport Authority.",
+    sources: [
+      { label: "Dynamo Ventures profile", url: "https://dynamo.vc/about/santosh-sankar" },
+      { label: "Penn State Alumni Association profile", url: "https://alumni.psu.edu/award-recipients/santosh-sankar-10-bus/" },
+      { label: "Dynamo Fund III press release (PRNewswire)", url: "https://www.prnewswire.com/news-releases/dynamo-ventures-closes-54m-fund-iii-unlocks-liquidity-for-early-lps-with-top-decile-returns-302454936.html" }
+    ]
+  },
+  "ted-alling": {
+    name: "Ted Alling",
+    sectors: ["Logistics"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://dynamo.vc/about/ted-alling",
+    firm: "Dynamo Ventures",
+    firmSlug: "dynamo-ventures",
+    title: "Co-founder & Partner",
+    joinedYear: 2016,
+    education: ["Samford University (degree not publicly specified)"],
+    previousExperience: ["Co-founder and CEO, Access America Transport", "Co-founder, Lamp Post Group", "Co-founder, Chattanooga Preparatory School"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Co-founded the Dynamo accelerator and fund in Chattanooga, and was inducted into the University of Tennessee at Chattanooga entrepreneurship Hall of Fame with his Access America co-founders." },
+      { year: 2017, event: "Founded Chattanooga Preparatory School, an all-boys public charter school, with his wife Kelly." }
+    ],
+    notableInvestments: [],
+    biography: "Ted Alling is a co-founder and Partner at Dynamo Ventures, the Chattanooga based pre-seed and seed supply chain fund. He co-founded Access America Transport, a third party logistics business that grew to roughly 500 million dollars in revenue and eventually merged with UPS subsidiary Coyote Logistics, and served as its CEO. He went on to co-found Lamp Post Group, the Chattanooga venture incubator from which Dynamo emerged. A Samford University alumnus, he was inducted into the University of Tennessee at Chattanooga entrepreneurship Hall of Fame in 2016. In 2017 he founded Chattanooga Preparatory School, an all-boys public charter school, followed by a sister school in Knoxville.",
+    sources: [
+      { label: "Dynamo Ventures profile", url: "https://dynamo.vc/about/ted-alling" },
+      { label: "Samford University alumni news", url: "https://www.samford.edu/education/news/2022/Samford-University-Alumni-Ted-and-Kelly-Alling-Bring-Equal-Opportunity-to-the-Field-of-Education" },
+      { label: "Chattanooga Times Free Press on UTC Hall of Fame", url: "https://www.timesfreepress.com/news/2016/apr/07/living-hall-fameted-alling-barry-large-and-al/" },
+      { label: "FreightWaves interview", url: "https://www.freightwaves.com/news/ted-alling-partner-of-dynamo-ventures-on-chattanoogas-startup-culture" }
+    ]
+  },
+  "geoffrey-w-smith": {
+    name: "Geoffrey W. Smith",
+    sectors: ["Healthcare", "Life Sciences", "Biotech", "Animal Health"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.digitalisventures.com/people/geoffrey-w-smith",
+    firm: "Digitalis Ventures",
+    firmSlug: "digitalis-ventures",
+    title: "Founder / Managing Partner",
+    joinedYear: 2016,
+    education: ["BA, Williams College", "JD, University of Pennsylvania Law School"],
+    previousExperience: ["Founding Director, Mount Sinai Institute of Technology", "Professor, Department of Population Health Science and Policy, Icahn School of Medicine at Mount Sinai"],
+    firmHistory: [],
+    boardSeats: ["Trustee, The Jackson Laboratory", "Director, Partnership Fund for New York City", "Director, Salzburg Global"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Founds Digitalis Ventures in New York." },
+      { year: 2018, event: "Launches Companion Fund I, a 100 million dollar animal health fund raised with Mars." },
+      { year: 2022, event: "Closes Digitalis Ventures' fourth fund at 300 million dollars." },
+      { year: 2023, event: "Launches the 300 million dollar Companion Fund II with Mars." }
+    ],
+    notableInvestments: [
+      { name: "Alcea Therapeutics" },
+      { name: "Galatea Bio" },
+      { name: "GRO Biosciences" },
+      { name: "Terray Therapeutics" }
+    ],
+    biography: "Geoffrey W. Smith is the founder and Managing Partner of Digitalis Ventures and the broader Digitalis Group, which spans the venture funds, the nonprofit Digitalis Commons, and the applied research group Digitalis Labs. He founded the New York firm in 2016 around a thesis of applying an engineering mindset to unmet needs in biomedicine and health, and has led it through a 100 million dollar debut fund, a 300 million dollar fourth fund, and two dedicated Companion Funds for animal health raised with Mars. Before Digitalis he was founding director of the Mount Sinai Institute of Technology and a professor at the Icahn School of Medicine at Mount Sinai. He is a trustee of The Jackson Laboratory. He holds a BA from Williams College and a JD from the University of Pennsylvania Law School.",
+    sources: [
+      { label: "Digitalis Ventures profile", url: "https://www.digitalisventures.com/people/geoffrey-w-smith" },
+      { label: "Digitalis Ventures fourth fund press release", url: "https://www.prnewswire.com/news-releases/digitalis-ventures-closes-300-million-fund-301651290.html" },
+      { label: "Mars Companion Fund II press release", url: "https://www.mars.com/news-and-stories/press-releases-statements/mars-and-digitalis-ventures-launch-300m-dollar-companion-fund-ii" }
+    ]
+  },
+  "misti-ushio": {
+    name: "Misti Ushio",
+    sectors: ["Life Sciences", "Biotech", "Healthcare"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.digitalisventures.com/people/misti-ushio",
+    firm: "Digitalis Ventures",
+    firmSlug: "digitalis-ventures",
+    title: "Managing Partner",
+    joinedYear: 2023,
+    education: ["BS Chemical Engineering, Johns Hopkins University", "MS Chemical Engineering, Lehigh University", "PhD Biochemical Engineering, University College London"],
+    previousExperience: ["Founder and CEO, TARA Biosystems", "Chief Strategy Officer and Managing Director, Harris & Harris Group", "Management positions in vaccine and biologics development, Merck & Company", "Intellectual property manager, Columbia University"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Named to Fast Company's 100 Most Creative People in Business while leading TARA Biosystems." },
+      { year: 2022, event: "TARA Biosystems, the company she founded and led as CEO, is acquired by Valo Health." },
+      { year: 2023, event: "Joins Digitalis Ventures as Managing Partner in January." }
+    ],
+    notableInvestments: [],
+    biography: "Misti Ushio is a Managing Partner at Digitalis Ventures, which she joined in January 2023 with more than 25 years of experience across venture capital, pharmaceuticals, and early stage life science company building. She was previously founder and CEO of TARA Biosystems, a cardiovascular focused biotech company acquired by Valo Health in 2022. Earlier she was Chief Strategy Officer and Managing Director at Harris & Harris Group, held management roles in vaccine and biologics development at Merck, and managed intellectual property portfolios at Columbia University. Fast Company named her one of its 100 Most Creative People in Business in 2018. She holds a BS in chemical engineering from Johns Hopkins University, an MS from Lehigh University, and a PhD in biochemical engineering from University College London.",
+    sources: [
+      { label: "Digitalis Ventures profile", url: "https://www.digitalisventures.com/people/misti-ushio" },
+      { label: "Appointment press release (Business Wire)", url: "https://www.businesswire.com/news/home/20230104005342/en/Digitalis-Ventures-Appoints-Misti-Ushio-as-a-Managing-Partner" }
+    ]
+  },
+  "fady-saad": {
+    name: "Fady Saad",
+    sectors: ["Robotics", "AI", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://cybernetix.vc/",
+    firm: "Cybernetix Ventures",
+    firmSlug: "cybernetix-ventures",
+    title: "General Partner",
+    joinedYear: 2021,
+    education: ["BS Mechanical Engineering, American University in Cairo", "MS Engineering, Systems Design and Management, MIT"],
+    previousExperience: ["Co-founder, MassRobotics", "Regional Manager, Nokia Siemens Networks (North Africa and Europe)", "International business roles, Siemens and Nokia"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Co-founds Cybernetix Ventures in Boston with Mark Martin." },
+      { year: 2022, event: "Launches Cybernetix Fund I, a 50 million dollar fund for early stage robotics, automation, and AI startups." },
+      { year: 2025, event: "Announces Cybernetix is raising a 100 million dollar second fund for robotics and physical AI." }
+    ],
+    notableInvestments: [],
+    biography: "Fady Saad is a General Partner and co-founder of Cybernetix Ventures, a Boston firm investing in early stage robotics, automation, and industrial AI startups across North America and Europe. Before Cybernetix he co-founded MassRobotics, described at the fund's launch as the largest robotics startup accelerator in the United States, where he connected startups with manufacturers, investors, and global partners. Earlier he held international business roles at Siemens and Nokia, including serving as a regional manager for Nokia Siemens Networks across North Africa and Europe. With Mark Martin he launched the 50 million dollar Cybernetix Fund I in 2022, and in 2025 the firm announced a 100 million dollar second fund. He holds a BS in mechanical engineering from the American University in Cairo and an MS in engineering, systems design, and management from MIT, and is a Boston Business Journal 40 Under 40 honoree.",
+    sources: [
+      { label: "Cybernetix Ventures team section", url: "https://cybernetix.vc/" },
+      { label: "Fund I launch press release (Business Wire)", url: "https://www.businesswire.com/news/home/20220503005186/en/Robotics-AI-Industry-Leader-Fady-Saad-and-Automation-Sensor-Industry-Executive-Mark-Martin-Launch-First-of-its-Kind-$50-Million-Fund-For-Early-Stage-Robotics-Automation-and-AI-Companies" },
+      { label: "The Robot Report on Fund II", url: "https://www.therobotreport.com/cybernetix-ventures-raising-100m-fund-robotics-physical-ai/" }
+    ]
+  },
+  "mark-martin": {
+    name: "Mark Martin",
+    sectors: ["Robotics", "Industrial Tech", "AI"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://cybernetix.vc/",
+    firm: "Cybernetix Ventures",
+    firmSlug: "cybernetix-ventures",
+    title: "General Partner",
+    joinedYear: 2021,
+    education: ["BS Electrical Engineering, Cornell University", "MS Engineering Management, Gordon Institute, Tufts University"],
+    previousExperience: ["VP of Industrial Automation, Sensors and IoT, Analog Devices", "Investor and advisor to more than 20 startups"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Co-founds Cybernetix Ventures in Boston with Fady Saad." },
+      { year: 2022, event: "Launches Cybernetix Fund I, a 50 million dollar fund for early stage robotics, automation, and AI startups." }
+    ],
+    notableInvestments: [],
+    biography: "Mark Martin is a General Partner and co-founder of Cybernetix Ventures, a Boston venture firm backing early stage robotics, automation, and industrial AI companies. He spent much of his career at Analog Devices, where as vice president of industrial automation, sensors, and IoT he led an organization of more than 600 people generating about 1 billion dollars in annual revenue, and he oversaw more than 450 million dollars in business sales and over 100 million dollars in acquisitions. He was based in Hong Kong for three years and has invested in or advised more than 20 startups. At Cybernetix he applies that operating and M&A experience to help hardware founders reach commercial deployment. He holds a BS in electrical engineering from Cornell University and an MS in engineering management from the Gordon Institute at Tufts University.",
+    sources: [
+      { label: "Cybernetix Ventures team section", url: "https://cybernetix.vc/" },
+      { label: "Fund I launch press release (Business Wire)", url: "https://www.businesswire.com/news/home/20220503005186/en/Robotics-AI-Industry-Leader-Fady-Saad-and-Automation-Sensor-Industry-Executive-Mark-Martin-Launch-First-of-its-Kind-$50-Million-Fund-For-Early-Stage-Robotics-Automation-and-AI-Companies" }
+    ]
+  },
+  "aaron-block": {
+    name: "Aaron Block",
+    sectors: ["Proptech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.metaprop.com/team/aaron-block",
+    firm: "MetaProp",
+    firmSlug: "metaprop",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2015,
+    education: ["BA, University of Illinois", "MBA, DePaul University"],
+    previousExperience: ["Investor, CEO, and Chairman, BayRu, LLC (2010-2013)", "Commercial real estate executive leading the Chicago region, Cushman & Wakefield"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2010, event: "Joins Chicago based cross border ecommerce company BayRu as investor and CEO, later serving as chairman." },
+      { year: 2015, event: "Co-founds MetaProp with Zach Aarons and launches the MetaProp Accelerator at Columbia University." },
+      { year: 2019, event: "Named Executive of the Year for innovation by Commercial Property Executive." },
+      { year: 2021, event: "MetaProp closes its 100 million dollar third fund." }
+    ],
+    notableInvestments: [],
+    biography: "Aaron Block is Co-Founder and Managing Partner of MetaProp, the New York proptech venture capital firm he launched with Zach Aarons in 2015. He oversees day to day management of the firm and has spearheaded industry firsts including the MetaProp Accelerator at Columbia University, NYC Real Estate Tech Week, MIPIM PropTech NYC, and the Global PropTech Confidence Index. Before MetaProp he was CEO and later chairman of BayRu, a Chicago based ecommerce company that became the eighth largest international online retailer serving Russia, and earlier he led Cushman & Wakefield's Chicago region, overseeing more than 270 professionals. He co-authored the bestselling book PropTech 101 and was named Executive of the Year for innovation by Commercial Property Executive in 2019. He holds a BA from the University of Illinois and an MBA from DePaul University.",
+    sources: [
+      { label: "MetaProp team profile", url: "https://www.metaprop.com/team/aaron-block" },
+      { label: "PropTech 101 author bio", url: "https://www.proptech101.com/aaron-block" },
+      { label: "MetaProp Fund III press release", url: "https://www.metaprop.com/press/venture-capital-firm-metaprop-closes-100m-third-fund-investment-early-stage-proptech" }
+    ]
+  },
+  "zach-aarons": {
+    name: "Zach Aarons",
+    sectors: ["Proptech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.metaprop.com/team/zach-aarons",
+    firm: "MetaProp",
+    firmSlug: "metaprop",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2015,
+    education: ["AB Ancient Studies, Brown University", "MBA, Columbia Business School"],
+    previousExperience: ["Senior Associate, ENIAC Ventures", "Project Manager, Millennium Partners", "Founder, Travelgoat", "Analyst, Solomon Partners (formerly Peter J. Solomon Company)"],
+    firmHistory: [{ firmSlug: "eniac-ventures", role: "Senior Associate", startYear: null, endYear: null }],
+    boardSeats: ["Technology Committee, Real Estate Board of New York", "Investment Committee, Van Wickle Ventures"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Co-founds MetaProp with Aaron Block after backing more than 50 proptech startups as an angel investor." },
+      { year: 2017, event: "Named Investor of the Year at the Global PropTech Awards." },
+      { year: 2021, event: "MetaProp closes its 100 million dollar third fund." }
+    ],
+    notableInvestments: [],
+    biography: "Zach Aarons is Co-Founder and General Partner of MetaProp, the New York proptech venture firm he started with Aaron Block in 2015, and is described as one of the most active early stage proptech investors in the United States. Before MetaProp he funded more than 50 startups in the sector as an individual angel investor, was a senior associate at seed stage fund ENIAC Ventures, and worked as a project manager at real estate developer Millennium Partners. He began his career as an analyst at the investment bank now known as Solomon Partners and founded the walking tour startup Travelgoat. He co-authored the bestseller PropTech 101, teaches at Columbia's Graduate School of Architecture, Planning, and Preservation, and was named Investor of the Year at the 2017 Global PropTech Awards. He holds an AB from Brown University and an MBA from Columbia Business School.",
+    sources: [
+      { label: "MetaProp team profile", url: "https://www.metaprop.com/team/zach-aarons" },
+      { label: "PropTech 101 author bio", url: "https://www.proptech101.com/zach-aarons" },
+      { label: "MetaProp Fund III press release", url: "https://www.metaprop.com/press/venture-capital-firm-metaprop-closes-100m-third-fund-investment-early-stage-proptech" }
+    ]
+  },
+  "zak-schwarzman": {
+    name: "Zak Schwarzman",
+    sectors: ["Proptech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.metaprop.com/team/zak-schwarzman",
+    firm: "MetaProp",
+    firmSlug: "metaprop",
+    title: "General Partner",
+    joinedYear: 2016,
+    education: ["BA Political Economy and Business, Tulane University", "MBA, Columbia Business School"],
+    previousExperience: ["Investor, Gotham Ventures", "Roles at Canaan Partners, AOL Ventures, and Learn Capital"],
+    firmHistory: [{ firmSlug: "canaan-partners", role: null, startYear: null, endYear: null }],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Joins MetaProp in September to lead the firm's venture capital funds." },
+      { year: 2021, event: "MetaProp closes MetaProp Ventures III at 100 million dollars." }
+    ],
+    notableInvestments: [],
+    biography: "Zak Schwarzman is a General Partner at MetaProp, which he joined in September 2016. He leads the firm's venture capital funds, investing in early stage proptech startups transforming how physical space is conceptualized, built, transacted, and managed, and works closely with portfolio companies on growth and business development. Before MetaProp he was an investor at Gotham Ventures, a seed stage firm affiliated with the Draper Venture Network, and earlier held roles at Canaan Partners, AOL Ventures, and Learn Capital. He is a Kauffman Fellow and teaches a graduate venture capital seminar as an adjunct professor at Columbia Business School. He holds a BA in political economy and business from Tulane University and an MBA from Columbia Business School.",
+    sources: [
+      { label: "MetaProp team profile", url: "https://www.metaprop.com/team/zak-schwarzman" },
+      { label: "MetaProp Fund III press release", url: "https://www.metaprop.com/press/venture-capital-firm-metaprop-closes-100m-third-fund-investment-early-stage-proptech" }
+    ]
+  },
+  "amit-a-patel": {
+    name: "Amit A. Patel",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.owlvc.com/team/amitpatel",
+    firm: "Owl Ventures",
+    firmSlug: "owl-ventures",
+    title: "Co-founder and Managing Partner",
+    joinedYear: 2014,
+    education: ["B.A. Mathematical Economic Analysis, Rice University", "M.B.A., Stanford Graduate School of Business", "M.A. Education, Stanford Graduate School of Education"],
+    previousExperience: ["Director of Technology, Success Academy Charter Schools", "Quality assurance and sales training programs, Mathnasium Learning Centers", "Founder, Personal Academic Trainers"],
+    firmHistory: [],
+    boardSeats: ["uAspire (national board)"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Co-founded Owl Ventures to invest exclusively in education technology." },
+      { year: 2019, event: "With his partners closed Owl's $315 million third fund." },
+      { year: 2022, event: "Helped close over $1 billion in new funds for global EdTech investing." }
+    ],
+    notableInvestments: [
+      { name: "Codecademy" },
+      { name: "WhiteHat Jr" },
+      { name: "Apna" },
+      { name: "Panorama Education" },
+      { name: "SplashLearn" }
+    ],
+    biography: "Amit A. Patel is Co-founder and Managing Partner of Owl Ventures. He began his career in education as founder of Personal Academic Trainers, a tutoring company, then helped build quality assurance and sales training programs at Mathnasium Learning Centers and served as Director of Technology at Success Academy Charter Schools in New York City. At Owl his investments include Codecademy, acquired by Skillsoft, WhiteHat Jr, acquired by Byju's, and current portfolio companies such as Apna, Panorama Education, and SplashLearn. He serves on the national board of the college affordability nonprofit uAspire. He holds a B.A. in Mathematical Economic Analysis from Rice University and a joint M.B.A. and M.A. in Education from Stanford's Graduate School of Business and Graduate School of Education.",
+    sources: [
+      { label: "Owl Ventures team bio", url: "https://www.owlvc.com/team/amitpatel" },
+      { label: "Owl Ventures $1B funds press release (2022)", url: "https://www.prnewswire.com/news-releases/owl-ventures-closes-over-1-billion-in-new-funds-for-global-edtech-investments-301459027.html" }
+    ]
+  },
+  "ian-chiu": {
+    name: "Ian Chiu",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.owlvc.com/team/ianchiu",
+    firm: "Owl Ventures",
+    firmSlug: "owl-ventures",
+    title: "Managing Partner",
+    joinedYear: 2018,
+    education: ["B.S. Industrial Engineering, Stanford University", "M.S. Industrial Engineering, Stanford University", "M.B.A., Stanford Graduate School of Business"],
+    previousExperience: ["Education sector lead, Warburg Pincus", "Technology investor, Silver Lake", "Consultant, Bain & Company", "Co-founder and early employee, BigMachines"],
+    firmHistory: [],
+    boardSeats: ["Degreed", "BenchPrep", "LeLe Ketang", "Sanjieke", "Abl"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Joined Owl Ventures as Managing Director after about a decade leading education investing at Warburg Pincus." },
+      { year: 2019, event: "Quoted in the announcement of Owl's $315 million third fund shortly after joining." },
+      { year: 2022, event: "With his partners closed over $1 billion in new funds, taking Owl past $2 billion under management." }
+    ],
+    notableInvestments: [
+      { name: "Degreed" },
+      { name: "BenchPrep" }
+    ],
+    biography: "Ian Chiu is a Managing Partner at Owl Ventures, which he joined in 2018 after roughly a decade at Warburg Pincus, where he led the firm's education sector investing. Earlier he was a technology investor at Silver Lake, a consultant at Bain & Company, and a co-founder and early employee of BigMachines, a SaaS company later acquired by Oracle. At Owl he serves on the boards of Degreed, BenchPrep, LeLe Ketang, Sanjieke, and Abl, and works closely with MasterClass. He holds a B.S. and M.S. in Industrial Engineering from Stanford University and an M.B.A. from Stanford Graduate School of Business, where he was an Arjay Miller Scholar and Arbuckle Leadership Fellow.",
+    sources: [
+      { label: "Owl Ventures team bio", url: "https://www.owlvc.com/team/ianchiu" },
+      { label: "Buyouts: Ian Chiu joins Owl Ventures (2018)", url: "https://www.buyoutsinsider.com/ex-warburg-tech-investor-ian-chiu-joins-owl-ventures/" }
+    ]
+  },
+  "tom-costin": {
+    name: "Tom Costin",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.owlvc.com/team/tomcostin",
+    firm: "Owl Ventures",
+    firmSlug: "owl-ventures",
+    title: "Co-founder and Managing Partner",
+    joinedYear: 2014,
+    education: ["B.A., Bowdoin College", "M.B.A., Stanford Graduate School of Business"],
+    previousExperience: ["Private Investments Specialist, Cambridge Associates", "Associate, FLAG Capital"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Co-founded Owl Ventures and has worked across the firm's business and investment operations since inception." },
+      { year: 2019, event: "Quoted as Managing Director in the announcement of Owl's $315 million third fund." },
+      { year: 2022, event: "With his partners closed over $1 billion in new funds for global EdTech investing." }
+    ],
+    notableInvestments: [],
+    biography: "Tom Costin is Co-founder and Managing Partner of Owl Ventures and has worked across the firm's business and investment operations since its 2014 founding, helping build Owl into what the firm describes as the largest venture capital firm in the world focused on education technology. Before Owl he advised families, nonprofits, endowments, and pension funds on venture capital and private equity allocations as a private investments specialist at Cambridge Associates, and earlier worked as an associate at FLAG Capital. He advises the education deal team of the Stanford GSB Impact Fund. He holds a B.A. from Bowdoin College and an M.B.A. from Stanford Graduate School of Business.",
+    sources: [
+      { label: "Owl Ventures team bio", url: "https://www.owlvc.com/team/tomcostin" },
+      { label: "Owl Ventures Fund III press release (2019)", url: "https://www.prnewswire.com/news-releases/owl-ventures-raises-315m-third-fund-for-global-edtech-investments-300783340.html" }
+    ]
+  },
+  "tory-patterson": {
+    name: "Tory Patterson",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.owlvc.com/team/torypatterson",
+    firm: "Owl Ventures",
+    firmSlug: "owl-ventures",
+    title: "Co-founder and Managing Partner",
+    joinedYear: 2014,
+    education: ["B.A. Economics, Williams College", "M.B.A., Stanford Graduate School of Business"],
+    previousExperience: ["Partner, Catamount Ventures"],
+    firmHistory: [],
+    boardSeats: ["Brisk Teaching", "Hazel Health", "Kiddom", "Newsela", "ParentSquare", "Quizlet", "Subject", "uLesson"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Co-founded Owl Ventures after building one of the venture industry's first education investment practices at Catamount Ventures." },
+      { year: 2017, event: "Helped close Owl's $185 million second fund." },
+      { year: 2022, event: "With his partners closed over $1 billion in new funds, taking Owl past $2 billion under management." },
+      { year: 2023, event: "Saw portfolio company DreamBox Learning acquired by Discovery Education." }
+    ],
+    notableInvestments: [
+      { name: "DreamBox Learning" },
+      { name: "Newsela" },
+      { name: "Quizlet" },
+      { name: "Remind" },
+      { name: "TenMarks" }
+    ],
+    biography: "Tory Patterson is Co-founder and Managing Partner of Owl Ventures, the education technology firm he helped launch in 2014 and build into one of the largest EdTech focused venture investors in the world. Before Owl he was a partner at Catamount Ventures, where he founded and ran one of the venture industry's first dedicated education investment practices. His realized investments include DreamBox Learning, acquired by Discovery Education, Remind, acquired by ParentSquare, TenMarks, acquired by Amazon, and LearnZillion, acquired by Imagine Learning. He currently serves on the boards of companies including Newsela, Quizlet, Hazel Health, and uLesson. He holds a B.A. in Economics from Williams College and an M.B.A. from Stanford Graduate School of Business.",
+    sources: [
+      { label: "Owl Ventures team bio", url: "https://www.owlvc.com/team/torypatterson" },
+      { label: "Owl Ventures $1B funds press release (2022)", url: "https://www.prnewswire.com/news-releases/owl-ventures-closes-over-1-billion-in-new-funds-for-global-edtech-investments-301459027.html" },
+      { label: "TechCrunch on Owl's second fund (2017)", url: "https://techcrunch.com/2017/10/19/owl-ventures-which-funds-edtech-exclusively-just-raised-185-million-for-its-second-fund/" }
+    ]
+  },
+  "maryanna-saenko": {
+    name: "Maryanna Saenko",
+    sectors: ["Deep Tech", "Energy", "Food & Agriculture"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://future.ventures/bio",
+    firm: "Future Ventures",
+    firmSlug: "future-ventures",
+    title: "Co-Founder",
+    joinedYear: 2018,
+    education: ["B.S. Biomedical Engineering, Carnegie Mellon University", "B.S. Materials Science and Engineering, Carnegie Mellon University", "M.S. Materials Science and Engineering, Carnegie Mellon University"],
+    previousExperience: ["Investor, Khosla Ventures", "Investor, DFJ", "Investment Partner, Airbus Ventures", "Consultant, Lux Research", "Research Engineer, Cabot Corporation"],
+    firmHistory: [{ firmSlug: "khosla-ventures", role: "Investor", startYear: null, endYear: null }],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Co-founded Future Ventures with Steve Jurvetson after investing roles at Khosla Ventures, DFJ, and Airbus Ventures." },
+      { year: 2019, event: "Launched Future Ventures publicly with its $200 million first fund." },
+      { year: 2023, event: "Closed the firm's third $200 million fund, bringing assets under management to $925 million including SPVs." }
+    ],
+    notableInvestments: [],
+    biography: "Maryanna Saenko is Co-Founder of Future Ventures, where she invests in frontier technologies including nuclear fusion, sustainable agriculture, women's reproductive longevity, and AI applications in construction and medical therapeutics. Before launching the firm with Steve Jurvetson in 2018 she was an investor at Khosla Ventures and DFJ and an investment partner at Airbus Ventures, and earlier worked as a consultant at Lux Research and a research engineer at Cabot Corporation, with engineering experience spanning lunar rovers, Martian landers, driverless cars, and communication systems. She holds a B.S. in Biomedical Engineering and a B.S. and M.S. in Materials Science and Engineering from Carnegie Mellon University.",
+    sources: [
+      { label: "Future Ventures team bio", url: "https://future.ventures/bio" },
+      { label: "TechCrunch on Future Ventures' third fund (2023)", url: "https://techcrunch.com/2023/04/12/talking-with-future-ventures-about-its-new-fund-ai-hype-and-siri-sucking" }
+    ]
+  },
+  "nico-enriquez": {
+    name: "Nico Enriquez",
+    sectors: ["Energy", "Robotics", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://future.ventures/bio",
+    firm: "Future Ventures",
+    firmSlug: "future-ventures",
+    title: "Principal",
+    joinedYear: 2024,
+    education: ["B.S. Cognitive Neuroscience, Brown University", "M.B.A., Stanford Graduate School of Business"],
+    previousExperience: ["Commercialization Fellow, ARPA-E (U.S. Department of Energy)", "Co-founder, consumer startup (8 years)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2024, event: "Joined Future Ventures after a commercialization fellowship at ARPA-E in the U.S. Department of Energy." },
+      { year: 2025, event: "Profiled as Principal at Future Ventures, discussing the firm's energy, robotics, and climate investing." }
+    ],
+    notableInvestments: [],
+    biography: "Nico Enriquez is a Principal at Future Ventures, where he focuses on energy, robotics, climate, and biotech companies. Before joining the firm he served as a Commercialization Fellow at ARPA-E, the Advanced Research Projects Agency-Energy within the U.S. Department of Energy, working on bringing energy innovations to market. Earlier he co-founded and ran a consumer startup for eight years, reaching distribution in 14 states, and was named to a Forbes 30 Under 30 list. He holds a B.S. in Cognitive Neuroscience with Sigma Xi honors from Brown University, an M.B.A. from Stanford Graduate School of Business, and a professional certification in sustainability finance and analytics from Columbia University.",
+    sources: [
+      { label: "Future Ventures team bio", url: "https://future.ventures/bio" },
+      { label: "BR Venture Fund interview (October 2025)", url: "https://www.brventurefund.com/conversation-with-nico-enriquez-principal-at-future-ventures" }
+    ]
+  },
+  "steve-jurvetson": {
+    name: "Steve Jurvetson",
+    sectors: ["Deep Tech", "Space", "Robotics"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://future.ventures/bio",
+    firm: "Future Ventures",
+    firmSlug: "future-ventures",
+    title: "Co-Founder",
+    joinedYear: 2018,
+    education: ["B.S. Electrical Engineering, Stanford University", "M.S. Electrical Engineering, Stanford University", "M.B.A., Stanford Graduate School of Business"],
+    previousExperience: ["Partner, Draper Fisher Jurvetson (through 2017)", "Consultant, Bain & Company", "Product marketing, Apple and NeXT", "R&D Engineer, Hewlett-Packard"],
+    firmHistory: [],
+    boardSeats: ["SpaceX", "TMC the metals company (Vice Chairman)"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Led DFJ's investment in Tesla and joined its board, serving until December 2020." },
+      { year: 2016, event: "Appointed a Presidential Ambassador for Global Entrepreneurship by President Barack Obama." },
+      { year: 2017, event: "Departed Draper Fisher Jurvetson in November after more than two decades at the firm." },
+      { year: 2018, event: "Co-founded Future Ventures with Maryanna Saenko." },
+      { year: 2019, event: "Launched Future Ventures publicly with its $200 million first fund." },
+      { year: 2024, event: "Joined the board of TMC the metals company as director and Vice Chairman." }
+    ],
+    notableInvestments: [
+      { name: "SpaceX" },
+      { name: "Tesla", ticker: "TSLA" },
+      { name: "Planet Labs", ticker: "PL" },
+      { name: "D-Wave Systems", ticker: "QBTS" },
+      { name: "Hotmail" },
+      { name: "Skype" }
+    ],
+    biography: "Steve Jurvetson is Co-Founder of Future Ventures, the early stage deep technology firm he launched with Maryanna Saenko in 2018. Over a two decade career at Draper Fisher Jurvetson he led founding investments in companies including Hotmail, Skype, Planet Labs, D-Wave, Tesla, and SpaceX, and served on Tesla's board from 2006 to 2020. He remains a director of SpaceX and in 2024 joined the board of TMC the metals company as Vice Chairman. At Future Ventures he backs founder led companies in commercial space, fusion, quantum computing, robotics, and AI. Earlier he was an R&D engineer at Hewlett-Packard and worked in product marketing at Apple and NeXT. He holds a B.S., M.S., and M.B.A. from Stanford University and was appointed a Presidential Ambassador for Global Entrepreneurship in 2016.",
+    sources: [
+      { label: "Future Ventures team bio", url: "https://future.ventures/bio" },
+      { label: "Wikipedia: Steve Jurvetson", url: "https://en.wikipedia.org/wiki/Steve_Jurvetson" },
+      { label: "TechCrunch on SpaceX board composition (June 2026)", url: "https://techcrunch.com/2026/06/17/roelof-botha-joins-spacexs-board-of-directors/" },
+      { label: "TMC investor relations board page", url: "https://investors.metals.co/board-member/steve-jurvetson" }
+    ]
+  },
+  "dan-fishman": {
+    name: "Dan Fishman",
+    sectors: ["Consumer", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://regeneration.vc/team/dan-fishman",
+    firm: "Regeneration.VC",
+    firmSlug: "regeneration-vc",
+    title: "Co-Founder and General Partner",
+    joinedYear: 2020,
+    education: ["Boston University"],
+    previousExperience: ["President and first investor, Coolhaus (2011-2021)", "Founder, L'Agence", "Co-creator, A.L.C.", "Co-launcher, House of Harlow 1960 and Winter Kate", "Co-founder, Bulldog Entertainment Group (2002-2006)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2002, event: "Co-founded Bulldog Entertainment Group, sold to Warner Music Group in 2006." },
+      { year: 2011, event: "Became first investor in and President of ice cream brand Coolhaus, later growing it past 8,000 retail locations." },
+      { year: 2020, event: "Co-founded Regeneration.VC with Michael Smith to invest in consumer climate technology." },
+      { year: 2021, event: "Saw Coolhaus acquired by Perfect Day." },
+      { year: 2022, event: "Launched Regeneration.VC's $45 million inaugural fund." }
+    ],
+    notableInvestments: [
+      { name: "Coolhaus" }
+    ],
+    biography: "Dan Fishman is Co-Founder and General Partner of Regeneration.VC, where he applies two decades of consumer brand experience to early stage climate investing. He co-founded Bulldog Entertainment Group in 2002, selling it to Warner Music Group in 2006, then built fashion brands including House of Harlow 1960 with Nicole Richie, A.L.C. with Andrea Lieberman, and L'Agence. In 2011 he became the first investor in and President of Coolhaus, growing the premium ice cream brand to more than 8,000 retail locations and launching its vegan line nationally at Whole Foods before the company's 2021 acquisition by Perfect Day. At Regeneration.VC he focuses on consumer companies built on circular and regenerative supply chains. He is a graduate of Boston University.",
+    sources: [
+      { label: "Regeneration.VC team bio", url: "https://regeneration.vc/team/dan-fishman" },
+      { label: "Fund launch press release (2022)", url: "https://www.prnewswire.com/news-releases/regenerationvc-launches-a-45m-fund-to-invest-in-circular-and-regenerative-materials-brands-and-reuse-technologies-301510526.html" },
+      { label: "Pulse2 firm profile (2023)", url: "https://pulse2.com/regeneration-vc-michael-smith-profile/" }
+    ]
+  },
+  "michael-smith": {
+    name: "Michael Smith",
+    sectors: ["Consumer", "Climate", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://regeneration.vc/team/michael-smith",
+    firm: "Regeneration.VC",
+    firmSlug: "regeneration-vc",
+    title: "Co-Founder and General Partner",
+    joinedYear: 2020,
+    education: ["Northwestern University"],
+    previousExperience: ["Founder, Ponvalley family office (2015)", "Co-founder, Creative Space (2010)", "Founder, The Playlist Generation (2006)", "Marketing and digital leader, Smith Broadcasting"],
+    firmHistory: [],
+    boardSeats: ["Smarter Sorting", "Greyparrot", "American Renewable Energy Institute", "Sustainable Change Alliance"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Founded background music company The Playlist Generation." },
+      { year: 2010, event: "Co-founded Creative Space, a real estate firm behind roughly 80 adaptive reuse projects in Los Angeles and San Francisco." },
+      { year: 2015, event: "Formed Ponvalley, an environmentally focused family office." },
+      { year: 2020, event: "Co-founded Regeneration.VC with Dan Fishman." },
+      { year: 2022, event: "Launched the firm's $45 million inaugural fund." },
+      { year: 2024, event: "Led the raise of a Fund II targeting 150 million euros, anchored in part by Invest-NL, while heading the firm's European expansion." }
+    ],
+    notableInvestments: [
+      { name: "Smarter Sorting" },
+      { name: "Greyparrot" }
+    ],
+    biography: "Michael Smith is Co-Founder and General Partner of Regeneration.VC. He began in media as a marketing and digital leader at Smith Broadcasting and as a touring DJ, founded background music company The Playlist Generation in 2006, and co-founded Creative Space in 2010, a real estate firm behind roughly 80 adaptive reuse projects in Los Angeles and San Francisco. In 2015 he formed Ponvalley, an environmentally focused family office, before co-founding Regeneration.VC, where he now leads the firm's European expansion. He serves on the boards of portfolio companies Smarter Sorting and Greyparrot and of the American Renewable Energy Institute, and is a founding advisor to the Salk Institute's Harnessing Plants Initiative. He is a graduate of Northwestern University.",
+    sources: [
+      { label: "Regeneration.VC team bio", url: "https://regeneration.vc/team/michael-smith" },
+      { label: "Fund launch press release (2022)", url: "https://www.prnewswire.com/news-releases/regenerationvc-launches-a-45m-fund-to-invest-in-circular-and-regenerative-materials-brands-and-reuse-technologies-301510526.html" },
+      { label: "Silicon Canals on Fund II and Invest-NL (2024)", url: "https://siliconcanals.com/invest-nl-invests-5m-in-regeneration-vc/" }
+    ]
+  },
+  "alexandre-flamant": {
+    name: "Alexandre Flamant",
+    sectors: ["AI", "Deep Tech", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://medium.com/@hc_vc/alex-flamant-joins-hcvc-as-venture-partner-7228656256b4",
+    firm: "HCVC",
+    firmSlug: "hcvc",
+    title: "Partner",
+    joinedYear: 2022,
+    education: [],
+    previousExperience: ["AI roles, IBM Watson (until 2016)", "Investor, Notion Capital (from 2016)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Founded the London.AI meetup, a community for machine learning founders and researchers." },
+      { year: 2016, event: "Left IBM, where he had explored new developments in AI at IBM Watson, to move into venture at Notion Capital." },
+      { year: 2022, event: "Joined HCVC as a Venture Partner based in London; he is now a Partner at the firm." }
+    ],
+    notableInvestments: [
+      { name: "Unbabel" },
+      { name: "Five.AI" },
+      { name: "Scortex" },
+      { name: "Sofia Salud" }
+    ],
+    biography: "Alexandre Flamant is a Partner at HCVC, based in London. He started his career exploring new developments in artificial intelligence at IBM Watson before moving into venture capital in 2016 at Notion Capital, where he backed machine learning companies including Unbabel, Five.AI, Scortex, and Sofia Salud. In 2015 he founded London.AI, a meetup connecting the city's machine learning community, and he leads ZERO, a climate-focused event series bringing together founders, researchers, and policy experts. He joined HCVC as a Venture Partner in December 2022, drawn by the firm's willingness to back daring founders tackling meaningful physical-world problems, and now serves as a Partner.",
+    sources: [
+      { label: "HCVC team page", url: "https://www.hcvc.co/pages/team" },
+      { label: "HCVC announcement on Medium, December 2022", url: "https://medium.com/@hc_vc/alex-flamant-joins-hcvc-as-venture-partner-7228656256b4" }
+    ]
+  },
+  "alexis-houssou": {
+    name: "Alexis Houssou",
+    sectors: ["Deep Tech", "Robotics", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.hcvc.co/pages/team",
+    firm: "HCVC",
+    firmSlug: "hcvc",
+    title: "Founder & Managing Partner",
+    joinedYear: 2015,
+    education: [],
+    previousExperience: ["Founder, UXUP.tv", "Finance roles, approximately five years", "Founder, Elephants&Ventures"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Founded Hardware Club in Paris as a community-first venture firm for hardtech startups." },
+      { year: 2018, event: "Closed the firm's $50 million debut venture fund alongside partners Jerry Yang and Aymerik Renard." },
+      { year: 2023, event: "Closed HCVC Fund II at $75 million, above target, bringing firm assets under management to $130 million." }
+    ],
+    notableInvestments: [
+      { name: "Prynt" },
+      { name: "Reach Robotics" },
+      { name: "Keecker" }
+    ],
+    biography: "Alexis Houssou is the founder and managing partner of HCVC, the Paris and San Francisco hardtech firm he started in 2015 as Hardware Club, a community-first venture firm that grew to more than 600 member startups across roughly 50 countries. An entrepreneur turned investor, he founded contextual video advertising startup UXUP.tv, spent about five years in finance, and ran Elephants&Ventures, a boutique that invested in and advised hardware startups including Lima, ISKN, and Aryballe. At Hardware Club he co-led early investments in companies such as Prynt, Reach Robotics, and Keecker, and he went on to raise HCVC's $50 million debut fund in 2018 and its $75 million second fund in 2023.",
+    sources: [
+      { label: "HCVC team page", url: "https://www.hcvc.co/pages/team" },
+      { label: "French Tech Journal interview, October 2023", url: "https://www.frenchtechjournal.com/spotlight-interview-hcvc-alexis-houssou/" },
+      { label: "daphni chronicles interview (Medium)", url: "https://medium.com/daphni-chronicles/alexis-houssou-about-hardware-and-his-club-d74e1b39fc3a" },
+      { label: "TechCrunch on HCVC Fund II", url: "https://techcrunch.com/2023/10/03/hcvc-is-back-with-a-new-75-million-deep-tech-fund/" }
+    ]
+  },
+  "aymerik-renard": {
+    name: "Aymerik Renard",
+    sectors: ["Deep Tech", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.hcvc.co/pages/team",
+    firm: "HCVC",
+    firmSlug: "hcvc",
+    title: "General Partner",
+    joinedYear: 2017,
+    education: ["Information & Decision Systems, Carnegie Mellon University"],
+    previousExperience: ["Head of North American investments, Orange (12 years)", "Vice President, PCH International (2011 onward); co-founded Highway1 accelerator", "Head of U.S. venture activity, SanDisk (2014-2017)", "Strategic investments, Western Digital Capital"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2011, event: "Joined PCH International as Vice President for startup business development and co-founded the Highway1 hardware accelerator." },
+      { year: 2014, event: "Joined SanDisk to lead its U.S. venture activity, expanding into frontier tech and IoT investments, and continued with Western Digital Capital after SanDisk's acquisition." },
+      { year: 2017, event: "Joined Hardware Club, now HCVC, as a partner based in Silicon Valley." }
+    ],
+    notableInvestments: [],
+    biography: "Aymerik Renard is a General Partner at HCVC, based in Silicon Valley, with over 25 years of experience investing in breakthrough technologies. A Carnegie Mellon graduate in Information and Decision Systems, he spent twelve years at Orange heading North American investments, where portfolio companies were acquired by Microsoft, IBM, Cisco, SAP, and others. He was a Vice President at PCH International, where he co-founded the Highway1 hardware accelerator, then led U.S. venture activity at SanDisk from 2014 and managed strategic investments for Western Digital Capital after SanDisk's acquisition. He joined Hardware Club, now HCVC, in October 2017 and is an active mentor across hardware and robotics accelerator programs.",
+    sources: [
+      { label: "HCVC team page", url: "https://www.hcvc.co/pages/team" },
+      { label: "Silicon Valley Open Doors speaker bio", url: "https://www.svod.org/aymerik-renard/" },
+      { label: "TechCrunch on HCVC Fund II", url: "https://techcrunch.com/2023/10/03/hcvc-is-back-with-a-new-75-million-deep-tech-fund/" }
+    ]
+  },
+  "jerry-yang": {
+    name: "Jerry Yang",
+    sectors: ["Deep Tech", "Semiconductors", "Space"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://informaconnect.com/superreturn-japan/speakers/jerry-yang/",
+    firm: "HCVC",
+    firmSlug: "hcvc",
+    title: "General Partner",
+    joinedYear: null,
+    education: ["BS, National Taiwan University", "MS, National Taiwan University", "MBA, HEC Paris"],
+    previousExperience: ["Engineer and entrepreneur, semiconductor industry across Taiwan, Silicon Valley and France (12 years)", "Co-founder, semiconductor startup in Taiwan"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "General Partner in HCVC's $50 million debut fund alongside Alexis Houssou and Aymerik Renard." },
+      { year: 2023, event: "Continued as General Partner for HCVC's $75 million second deep tech fund." }
+    ],
+    notableInvestments: [
+      { name: "Giraffe360" },
+      { name: "Radian Aerospace" },
+      { name: "Gideon Brothers" },
+      { name: "Valispace" }
+    ],
+    biography: "Jerry Yang is a General Partner at HCVC, the Paris-based hardtech venture firm formerly known as Hardware Club. He spent the first twelve years of his career in the semiconductor industry as both an engineer and an entrepreneur across Taiwan, Silicon Valley, and France, co-founding a semiconductor startup in Taiwan. He holds BS and MS degrees from National Taiwan University, an MBA from HEC Paris, and is a CFA charterholder. Based in Paris and splitting time between Europe and Asia, he was a partner in HCVC's $50 million debut fund and its $75 million second fund, and his investments at the firm include Giraffe360, Radian Aerospace, Gideon Brothers, and Valispace.",
+    sources: [
+      { label: "HCVC team page", url: "https://www.hcvc.co/pages/team" },
+      { label: "SuperReturn Japan speaker bio", url: "https://informaconnect.com/superreturn-japan/speakers/jerry-yang/" },
+      { label: "French Tech Journal interview, October 2023", url: "https://www.frenchtechjournal.com/spotlight-interview-hcvc-alexis-houssou/" }
+    ]
+  },
+  "cameron-davidson": {
+    name: "Cameron Davidson",
+    sectors: [],
+    firm: "The Production Board",
+    firmSlug: "the-production-board",
+    title: "Operating Partner",
+    joinedYear: 2017,
+    education: ["BS Conservation and Resource Studies, University of California, Berkeley", "MS Integrated Water Management, University of Queensland"],
+    previousExperience: ["Manager of the CEO's office, The Climate Corporation", "Director of water management projects across Israel, the West Bank, Jordan, Australia, Indonesia, and China"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2013, event: "Managed the CEO's office at The Climate Corporation, handling executive communications and spearheading integration after Monsanto's 2013 acquisition." },
+      { year: 2017, event: "Joined The Production Board at its founding; as Operating Partner she leads all non-investment activities including internal operations, finance, and investor relations." }
+    ],
+    notableInvestments: [],
+    biography: "Cameron Davidson is Operating Partner at The Production Board, where she leads all non-investment activities including internal operations, finance, and investor relations, and has been with the firm since its founding. She previously managed the CEO's office at The Climate Corporation, handling executive communications and spearheading integration work after Monsanto acquired the company in 2013. Before TPB she directed water management projects across Israel, the West Bank, Jordan, Australia, Indonesia, and China. She holds a bachelor's degree in Conservation and Resource Studies from the University of California, Berkeley, and a master's degree in Integrated Water Management from the University of Queensland in Australia.",
+    sources: [
+      { label: "The Production Board staff page", url: "https://www.tpb.co/staff/cameron-davidson" },
+      { label: "The Production Board team page", url: "https://www.tpb.co/team" }
+    ]
+  },
+  "david-friedberg": {
+    name: "David Friedberg",
+    sectors: ["Food & Agriculture", "Biotech", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.tpb.co/staff/david-friedberg",
+    firm: "The Production Board",
+    firmSlug: "the-production-board",
+    title: "CEO and Partner",
+    joinedYear: 2017,
+    education: ["BA Astrophysics, University of California, Berkeley"],
+    previousExperience: ["Senior roles in Corporate Development and Product, Google", "Founder and CEO, The Climate Corporation (sold to Monsanto, 2013)", "Executive leadership team member, Monsanto", "Founder, Metromile"],
+    firmHistory: [],
+    boardSeats: ["Lavoro", "Pattern Ag"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2004, event: "Joined Google, where he held senior roles in Corporate Development and Product." },
+      { year: 2013, event: "Sold The Climate Corporation, the digital agronomy platform he founded and led, to Monsanto for over $1 billion, then joined Monsanto's executive leadership team." },
+      { year: 2017, event: "Founded The Production Board in San Francisco as a holding company building and investing in businesses that reimagine global systems of production." },
+      { year: 2021, event: "Raised $300 million for The Production Board from investors including Alphabet, BlackRock, and Koch Disruptive Technologies; Metromile, the digital auto insurer he founded, listed on Nasdaq the same year." },
+      { year: 2023, event: "The Production Board's sponsored SPAC completed a $1.2 billion combination taking agricultural inputs company Lavoro public on Nasdaq." }
+    ],
+    notableInvestments: [
+      { name: "Lavoro" },
+      { name: "Soylent" },
+      { name: "Ohalo" },
+      { name: "Pattern Ag" }
+    ],
+    biography: "David Friedberg is CEO and Partner of The Production Board, the San Francisco holding company and venture foundry he founded in 2017 to rebuild the systems of production behind food, agriculture, biomanufacturing, and human health. A UC Berkeley astrophysics graduate, he held senior corporate development and product roles at Google before founding The Climate Corporation, whose digital agronomy platform came to serve over 200 million farm acres worldwide; Monsanto acquired the company for over $1 billion in 2013 and Friedberg joined its executive leadership team. He also founded digital auto insurer Metromile, which listed on Nasdaq in 2021. At TPB he sets strategy, defines investment theses, and manages key investments, sits on the boards of Lavoro and Pattern Ag, and co-hosts the All-In podcast.",
+    sources: [
+      { label: "The Production Board staff page", url: "https://www.tpb.co/staff/david-friedberg" },
+      { label: "CNBC on TPB's $300 million raise, July 2021", url: "https://www.cnbc.com/2021/07/30/david-friedbergs-alphabet-backed-production-board-raised-300-million.html" },
+      { label: "Lavoro and TPB Acquisition Corporation I business combination (Business Wire)", url: "https://www.businesswire.com/news/home/20230228006442/en/Lavoro-and-TPB-Acquisition-Corporation-I-Announce-Completion-of-Business-Combination" }
+    ]
   }
 };
