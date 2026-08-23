@@ -11724,5 +11724,523 @@ holdings: []
     holdings: [
       { name: "Coursera", ticker: "COUR", investedYear: null, historicalPrice: null, price: null }
     ]
+  },
+
+  /* ------------------------------------------------------------
+     FIRMS 422-441, added 2026-08-23. Second sector-specialist batch.
+     rank is null on all 20 by design. Sources for every non-null
+     value are in the research sources.csv retained off-site.
+     ------------------------------------------------------------ */
+{
+    rank: null,
+    name: "Burnt Island Ventures",
+    sectors: ["Water", "Climate", "Sustainability"],
+    signatureExit: "No confirmed public exit yet; the firm's notable positions remain private.",
+    slug: "burnt-island-ventures",
+    website: "https://www.burntislandventures.com",
+    short: "Burnt Island",
+    founded: 2020,
+    hq: "New York, NY",
+    aum: "$50M, 2025 Fund II close ($30M Fund I, 2022)",
+    thesis: "Burnt Island Ventures exists to find, fund, and support the best founders in water. The firm treats the global water sector as a trillion dollar industry hiding in plain sight, a market where aging infrastructure, tightening regulation, workforce turnover, and climate stress are pushing utilities and industrial customers to adopt new technology faster than at any point in decades. Its founding argument is that climate change is water change, so building resilience to floods, droughts, contamination, and scarcity is inseparable from the water business itself. Across two funds, a $30 million debut vehicle and a $50 million second fund, both anchored by the water technology company Xylem, Burnt Island backs early stage companies in advanced treatment and filtration, water data and artificial intelligence, digital productivity tools for utilities and operators, infrastructure resilience, and water reuse. The firm pairs capital with a deep operator network drawn from across the water industry, and it publishes research, a newsletter, and a podcast, The Fundamental Molecule, to widen the sector's talent and capital base. Fund I was deployed across 18 companies, and the firm reports top decile performance for that vintage.",
+    leadership: [
+      { name: "Tom Ferguson", role: "Founder and Managing Partner", profileSlug: "tom-ferguson" },
+      { name: "Christine E. Boyle, PhD", role: "Partner", profileSlug: "christine-e-boyle" },
+      { name: "Steve Kloos, PhD", role: "Partner", profileSlug: "steve-kloos" }
+    ],
+    timeline: [
+      { year: "2020", event: "Tom Ferguson founded Burnt Island Ventures as a venture firm dedicated to early stage water companies." },
+      { year: "2022", event: "Closed its debut fund at $30 million to back early stage water startups." },
+      { year: "2025", event: "Closed Fund II at $50 million with Xylem as anchor investor, after deploying Fund I across 18 companies with two exits reported to date." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Quantonation",
+    sectors: ["Quantum", "Deep Tech"],
+    signatureExit: "No confirmed public exit yet; the firm's notable positions remain private.",
+    slug: "quantonation",
+    website: "https://www.quantonation.com",
+    short: "Quantonation",
+    founded: 2018,
+    hq: "Paris, France",
+    aum: "€220M, 2026 Quantonation II close (€91M Fund I, 2018 vintage)",
+    thesis: "Quantonation calls itself the world's only physics focused venture fund. Based in Paris and investing since 2018, the firm backs startups built on breakthrough advances in physics and computing, with a portfolio spanning quantum computing hardware and software, quantum communications and networks, quantum sensing, and a widening circle of deep physics applications such as advanced materials and photonics. It enters early, from pre seed to Series A with selective follow on into Series B, and works closely with scientific founders to bring technologies out of the lab and into commercial use. Its first fund, a 91 million euro vehicle launched in 2018, backed 27 companies including Pasqal, Quandela, Multiverse Computing, and Nord Quantique, and the firm reports that the vintage performed in the top quartile globally. Its oversubscribed second fund closed at 220 million euros in February 2026, above its 200 million euro target, to back what the firm calls the industrialisation of quantum and physics based technologies across Europe, North America, and Asia Pacific. The close made Quantonation the largest dedicated quantum investment firm globally by assets under management.",
+    leadership: [
+      { name: "Christophe Jurczak", role: "Partner", profileSlug: "christophe-jurczak" },
+      { name: "Olivier Tonneau", role: "Partner", profileSlug: "olivier-tonneau" }
+    ],
+    timeline: [
+      { year: "2018", event: "Quantonation launched in Paris as an early stage fund dedicated to quantum technologies and deep physics, with a first fund that reached 91 million euros and backed 27 companies." },
+      { year: "2023", event: "Quantum computing pioneer Will Zeng, formerly of Rigetti and Goldman Sachs, joined the firm as a partner." },
+      { year: "2025", event: "The European Investment Fund committed 30 million euros to Quantonation II, following an investment by Novo Holdings announced earlier that year." },
+      { year: "2026", event: "Closed the oversubscribed Quantonation II at 220 million euros, exceeding its 200 million euro target and making the firm the largest dedicated quantum investor by assets under management." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "The LegalTech Fund",
+    sectors: ["Legal Tech", "Enterprise Software", "SaaS"],
+    signatureExit: "No confirmed public exit yet; the firm's notable positions remain private.",
+    slug: "the-legaltech-fund",
+    website: "https://www.legaltech.com",
+    short: "LegalTech Fund",
+    founded: 2021,
+    hq: "Fort Lauderdale, FL",
+    aum: "$110M, 2025 Fund II close ($28.5M Fund I, 2022)",
+    thesis: "The LegalTech Fund describes itself as the first venture fund solely dedicated to backing companies transforming the world of law. The firm invests in software and services aimed at a legal industry it sizes at a trillion dollars, spanning tools for law firms, corporate legal departments, compliance and regulatory work, and broader access to legal services. It typically enters at the earliest stages and surrounds its founders with an unusually large network for a fund of its size, including more than 120 fund advisors, general partners with more than 25 years of combined experience, and a stated one thousand plus introductions made each year between founders, customers, capital partners, and acquirers. Beyond investing, the firm convenes the legal innovation ecosystem through its annual TLTF Summit and runs The LegalTech Lab for founders. Across its $28.5 million first fund and its oversubscribed $110 million second fund, closed in November 2025, the firm has backed more than 80 companies, with recent investments including Wexler, Entegrata, Flo Recruit, HelloPrenup, BlackCloak, and SimpleClosure. Its backers include major law firms and strategic investors from the legal and technology industries.",
+    leadership: [
+      { name: "Zach Posner", role: "Managing Partner & Co-Founder", profileSlug: "zach-posner" },
+      { name: "Sam Elhag", role: "Managing Partner & Co-Founder", profileSlug: "sam-elhag" },
+      { name: "Gordon Crenshaw", role: "Partner", profileSlug: "gordon-crenshaw" },
+      { name: "Carly Levin", role: "Partner, Strategic Initiatives", profileSlug: "carly-levin" }
+    ],
+    timeline: [
+      { year: "2021", event: "Zach Posner and Sam Elhag founded The LegalTech Fund in Fort Lauderdale as the first venture fund solely dedicated to companies transforming the legal industry." },
+      { year: "2022", event: "Closed its first fund at $28.5 million with backers including law firms and strategic investors such as DocuSign and Carta." },
+      { year: "2025", event: "Closed its oversubscribed second fund at $110 million in November, having backed more than 80 companies across both funds." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Motion Ventures",
+    sectors: ["Maritime", "Logistics", "Sustainability"],
+    signatureExit: "Portfolio company DeepSea Technologies, an AI vessel efficiency platform in Motion's Fund I portfolio, was acquired by Japan's Nabtesco Group in 2023.",
+    slug: "motion-ventures",
+    website: "https://www.motion.vc",
+    short: "Motion",
+    founded: 2021,
+    hq: "Singapore, Singapore",
+    aum: "US$100M (Fund II, launched March 2025 with more than half raised)",
+    thesis: "Motion Ventures backs early stage companies accelerating digital and energy transitions across global supply chains, with maritime at the core. Launched in Singapore in 2021 by the venture studio Rainmaking, the firm raised a first fund with an initial close of S$30 million anchored by SEEDS Capital, the investment arm of Enterprise Singapore, alongside strategic maritime investors such as Wilhelmsen and the port logistics group HHLA. Its defining asset is a corporate limited partner consortium the firm describes as the largest group of maritime corporates backing any fund, spanning shipowners, ports, classification societies and logistics groups including Lloyd's Register and Stolt-Nielsen. That network gives portfolio companies pilot customers and distribution inside a famously hard to enter industry. Investment themes include decarbonisation, supply chain resilience, safety, and AI and automation applied to shipping operations. In March 2025 Motion launched Fund II at US$100 million, described as the largest dedicated maritime tech fund raised to date, writing cheques of US$250,000 to US$10 million into roughly 25 companies, and extending its scope from software into asset intensive hardware solutions for the industry's energy transition.",
+    leadership: [
+      { name: "Shaun Hon", role: "Founder and General Partner", profileSlug: "shaun-hon" },
+      { name: "Chiew Tung Lim", role: "Director of Finance", profileSlug: "chiew-tung-lim" }
+    ],
+    timeline: [
+      { year: "2021", event: "Rainmaking launched Motion Ventures in Singapore with a S$30 million first close backed by SEEDS Capital, Wilhelmsen and HHLA." },
+      { year: "2023", event: "The firm added ten corporate partners including Lloyd's Register and Stolt-Nielsen, growing its maritime consortium to 15 companies across 12 regions." },
+      { year: "2023", event: "Portfolio company DeepSea Technologies was acquired by the Nabtesco Group, giving the young fund a realised exit." },
+      { year: "2025", event: "Motion launched Fund II at US$100 million, described as the largest dedicated maritime tech fund to date, backed by 17 strategic industry corporations." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "RH Capital",
+    sectors: ["Healthcare", "Digital Health", "Life Sciences", "Biotech"],
+    signatureExit: "Portfolio company Ovia Health, a maternal and family health app maker, was acquired by Labcorp in 2021.",
+    slug: "rh-capital",
+    website: "https://rhcapital.vc",
+    short: "RH Capital",
+    founded: 2019,
+    hq: "San Francisco, CA",
+    aum: "$43.5M (combined AUM across Funds I and II at Fund II close, 2022)",
+    thesis: "RH Capital is an impact first venture fund investing exclusively in women's health at Seed and Series A. It was created in 2019 as the wholly owned investment subsidiary of Rhia Ventures, a nonprofit that uses capital to improve reproductive and maternal health in the United States, and it grew out of an initiative philanthropist Dr. Ruth Shaber began with Rhia in 2017. The fund invests across devices, diagnostics, digital health, health services, therapeutics and consumer health, targeting maternal health, contraception, fertility, menopause, gynecological conditions, pelvic health and women's oncology. Every investment is screened against four impact pillars, transformative innovation, access, affordability and systemic change, with particular attention to historically underserved populations, and more than 90 percent of its portfolio companies have women or BIPOC founders. Fund I raised $5 million in 2019; the oversubscribed Fund II closed at $38.5 million in 2022, bringing combined assets to $43.5 million across more than 20 companies including Ovia Health and Nurx. On October 1, 2024 the investment team spun out of Rhia Ventures to form the independent firm Foreground Capital, which continues to manage RH Capital Funds I and II while raising a larger successor vehicle under the new name.",
+    leadership: [
+      { name: "Elizabeth Bailey", role: "Managing Partner", profileSlug: "elizabeth-bailey" },
+      { name: "Stasia Obremskey", role: "Managing Partner", profileSlug: "stasia-obremskey" },
+      { name: "Alice Zheng, MD", role: "Partner", profileSlug: "alice-zheng" }
+    ],
+    timeline: [
+      { year: "2017", event: "Philanthropist Dr. Ruth Shaber began the women's health investing initiative at nonprofit Rhia Ventures from which RH Capital emerged." },
+      { year: "2019", event: "RH Capital launched and raised a $5 million Fund I, filing its first Form D for RH Capital Fund I, LP in June 2019." },
+      { year: "2021", event: "Portfolio company Ovia Health was acquired by Labcorp, an early realised exit for Fund I." },
+      { year: "2022", event: "The oversubscribed Fund II closed at $38.5 million, bringing combined assets under management to $43.5 million." },
+      { year: "2024", event: "Effective October 1, the investment team spun out of Rhia Ventures as independent firm Foreground Capital, which continues to manage RH Capital Funds I and II." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "MTech Capital",
+    sectors: ["Insurtech", "Fintech", "AI"],
+    signatureExit: "Travelers completed its $435 million acquisition of MTech portfolio company Corvus Insurance, a cyber insurance MGA, in January 2024.",
+    slug: "mtech-capital",
+    website: "https://www.mtechcapital.com",
+    short: "MTech",
+    founded: 2018,
+    hq: "Santa Monica, CA",
+    aum: "Approximately $100M (single fund, per co-founder interview, 2022)",
+    thesis: "MTech Capital is a venture firm built around a single conviction, stated on its site: technology will revolutionize all aspects of the insurance industry, vastly improving the customer experience, automating claims and policy administration, enabling deeper insights from data for underwriting, and providing the foundation for entirely new models of insurance. Founded by brothers Brian and Kevin McLoughlin, who combine long careers in fintech venture capital and insurance investment banking, the firm raised capital in 2018 and 2019 from strategic investors including some of the world's largest insurers, brokers and asset managers, among them CNA Financial and NN Group, with a $75 million first close announced in July 2018. From offices in Santa Monica and London it invests across North America and Europe, typically at Series A with cheques of roughly $3 million to $4 million, in a broad array of areas related to insurance and financial services, including benefits, retirement and asset management infrastructure, with a growing focus on applying AI to transform customer experience and employee productivity. Portfolio companies include Akur8, Bold Penguin, Corvus, CyberCube, Matic, Openly and Unqork, and its MTech Elevate program pairs founders with experienced industry mentors.",
+    leadership: [
+      { name: "Brian McLoughlin", role: "Partner and Co-Founder", profileSlug: "brian-mcloughlin" },
+      { name: "Kevin McLoughlin", role: "Partner and Co-Founder", profileSlug: "kevin-mcloughlin" }
+    ],
+    timeline: [
+      { year: "2018", event: "MTech Capital held a $75 million first close backed by CNA Financial and NN Group, filing its first fund's Form D from Santa Monica and incorporating MTech Capital Management (UK) LLP in London." },
+      { year: "2019", event: "The firm invested in commercial insurance exchange Bold Penguin, an early portfolio cornerstone." },
+      { year: "2021", event: "Portfolio company Bold Penguin was acquired by American Family Insurance." },
+      { year: "2024", event: "Travelers completed its $435 million acquisition of portfolio company Corvus Insurance, and MTech filed a Form D for MTech Capital Fund II LP." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "True Beauty Ventures",
+    sectors: ["Beauty", "Consumer"],
+    signatureExit: "Haircare brand K18, which True Beauty Ventures backed across three rounds, was acquired by Unilever in a deal announced in December 2023 that reportedly returned close to 80 percent of the firm's debut fund.",
+    slug: "true-beauty-ventures",
+    website: "https://truebeautyventures.com",
+    short: "True Beauty",
+    founded: 2020,
+    hq: null,
+    aum: "$42 million+ (Fund I final close, July 2021)",
+    thesis: "True Beauty Ventures is a specialist fund built on the conviction that in beauty, being an insider is a superpower. The firm invests exclusively in emerging beauty and wellness brands from Seed through Series B, writing first checks of roughly 1 to 5 million dollars into companies that already show product excellence, differentiated positioning and strong early performance. Co-founders Rich Gersten and Cristina Nuñez spent their careers investing in and operating consumer and beauty companies at firms including L Catterton, Tengram Capital and North Castle Partners, and they built True Beauty to serve a gap they saw firsthand: exceptional young brands too small for traditional private equity but underserved by generalist venture capital. The firm pairs capital with a hands-on, private equity style partnership model, drawing on a network of retail, supply chain, talent and Amazon platform partners plus limited partners who are themselves beauty founders and executives. Its portfolio spans prestige haircare, skincare, wellness and intimacy brands such as K18, Crown Affair, Maude, Moon Juice and Caliray. The thesis is concentration over volume, with a deliberately small number of brand partners per fund so the team can work closely with each founder through scaling, retail expansion and eventual strategic exit.",
+    leadership: [
+      { name: "Rich Gersten", role: "Co-Founder & Managing Partner", profileSlug: "rich-gersten" },
+      { name: "Cristina Nuñez", role: "Co-Founder & General Partner", profileSlug: "cristina-nunez" }
+    ],
+    timeline: [
+      { year: "2020", event: "Rich Gersten, later joined by Cristina Nuñez, launches the specialist beauty and wellness investment firm that becomes True Beauty Ventures." },
+      { year: "2021", event: "True Beauty Ventures closes its debut fund in excess of $42 million, surpassing its initial $30 million target, backed by beauty founders and executives." },
+      { year: "2023", event: "Unilever announces its agreement to acquire portfolio brand K18, reportedly returning close to 80 percent of Fund I's capital." },
+      { year: "2024", event: "The firm nears the close of its second fund, with about $70 million committed toward a $75 million target as of June 2024." },
+      { year: "2024", event: "True Beauty Ventures is recognized in WWD's Beauty's Most Powerful Financiers list." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "imec.xpand",
+    sectors: ["Semiconductors", "Deep Tech", "AI"],
+    signatureExit: "Optical interconnect portfolio company Celestial AI was acquired by Marvell Technology in a deal announced in December 2025 at $3.3 billion and completed in early 2026.",
+    slug: "imec-xpand",
+    website: "https://imecxpand.com",
+    short: "imec.xpand",
+    founded: 2017,
+    hq: "Leuven, Belgium",
+    aum: "EUR 300 million (Fund II final close, May 2024; Fund I of EUR 117 million closed 2018)",
+    thesis: "imec.xpand is an independent, globally investing venture capital fund with deep-rooted connections to imec, the Leuven based nanoelectronics research institute. The fund is managed independently and is not imec itself, but it was established in collaboration with the institute and imec is among its limited partners, a structure comparable to how Engine Ventures relates to MIT's The Engine. That privileged relationship gives the fund's partners direct access to imec's researchers, intellectual property and cleanroom infrastructure, which they use to assess the technological feasibility and scalability of early stage deeptech companies before investing. The strategy targets transformative semiconductor, nanotechnology and photonics innovations where imec's contribution can have a determining impact on a company's technology development, spanning hardware for artificial intelligence, quantum computing, optical interconnect, imaging and health technology. The team combines seasoned venture investors with former entrepreneurs and imec veterans, and takes a hands-on role in company building from spin-out through global scale-up. Its first fund of 117 million euros closed in 2018 with corporate backers including Samsung, Philips and Applied Materials alongside imec and Flemish institutions, and a 300 million euro second fund closed in May 2024, positioning the firm as one of Europe's largest specialist semiconductor venture investors.",
+    leadership: [
+      { name: "Tom Vanhoutte", role: "Partner & Co-founder", profileSlug: "tom-vanhoutte" },
+      { name: "Peter Vanbekbergen", role: "Partner & Co-founder", profileSlug: "peter-vanbekbergen" }
+    ],
+    timeline: [
+      { year: "2017", event: "imec.xpand launches as an independent venture fund created in collaboration with the imec research institute." },
+      { year: "2018", event: "The firm raises EUR 117 million for its first fund, with backers including imec, Samsung, Philips, Applied Materials and Flemish government entities." },
+      { year: "2024", event: "imec.xpand closes its second fund at EUR 300 million, exceeding its EUR 250 million target, amid the global race for semiconductor supremacy." },
+      { year: "2025", event: "Ciena agrees to acquire portfolio company Nubis Communications for $270 million." },
+      { year: "2026", event: "Marvell Technology completes its acquisition of portfolio company Celestial AI, a deal announced at $3.3 billion." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "KdT Ventures",
+    sectors: ["Biotech", "Life Sciences", "Deep Tech", "Healthcare"],
+    signatureExit: "Skin microbiome company Azitra, a KdT Fund I portfolio company, completed its initial public offering on NYSE American in June 2023 and trades under the ticker AZTR.",
+    slug: "kdt-ventures",
+    website: "https://www.kdtvc.com",
+    short: "KdT Ventures",
+    founded: 2017,
+    hq: "Austin, TX",
+    aum: "More than $250 million (stated at Fund IV close, October 2024)",
+    thesis: "KdT Ventures positions itself as the standard for early stage frontier science investing. The firm's core observation is that while software has transformed the digital world, the physical layer of medicine, chemicals and materials has barely changed, and that advances in computation and biology now put that physical layer in play. KdT writes first institutional checks, typically 500 thousand to 5 million dollars at pre-seed and seed, into founders engineering matter at the level of molecules, atoms and living systems. The portfolio spans therapeutics, diagnostics, synthetic biology, industrial biotechnology, new materials, digital health and scientific tools, with companies such as Terray Therapeutics, Dyno Therapeutics, Solugen, PathAI and Azitra among those backed since the firm's founding by physician Cain McClary in 2017. The investment team is unusually technical, with most members holding advanced scientific, medical or legal degrees, and the firm leans on that depth to underwrite scientific risk at inception and to help founders design companies, recruit teams and structure early partnerships. Now investing from an oversubscribed fourth fund of more than 100 million dollars closed in October 2024, KdT manages over 250 million dollars and has backed more than 65 companies across the physical layer supply chain.",
+    leadership: [
+      { name: "Cain McClary", role: "Managing Partner & Founder", profileSlug: "cain-mcclary" },
+      { name: "Mack Healy", role: "Managing Partner", profileSlug: "mack-healy" },
+      { name: "Phil Grayeski", role: "Managing Partner", profileSlug: "phil-grayeski" },
+      { name: "Patrick Malone", role: "Partner", profileSlug: "patrick-malone" }
+    ],
+    timeline: [
+      { year: "2017", event: "Cain McClary founds KdT Ventures to invest at the intersection of frontier computational science and the life sciences." },
+      { year: "2018", event: "KdT closes its oversubscribed inaugural fund, with early portfolio companies including PathAI, Solugen, Checkerspot and Azitra." },
+      { year: "2022", event: "The firm celebrates its five year anniversary, closes an oversubscribed $80 million Fund III and promotes Phil Grayeski to Partner." },
+      { year: "2023", event: "Portfolio company Azitra completes its initial public offering on NYSE American in June." },
+      { year: "2024", event: "KdT closes its oversubscribed Fund IV at more than $100 million, bringing assets under management above $250 million, and promotes Phil Grayeski to Managing Partner and Patrick Malone to Partner." }
+    ],
+    holdings: [
+      { name: "Azitra", ticker: "AZTR", investedYear: null, historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Superorganism",
+    sectors: ["Biodiversity", "Climate", "Deep Tech"],
+    signatureExit: "No confirmed public exit yet; the firm's notable positions remain private.",
+    slug: "superorganism",
+    website: "https://www.superorganism.com",
+    short: "Superorganism",
+    founded: 2023,
+    hq: "New York, NY",
+    aum: "$25.9M (debut fund, closed January 2026)",
+    thesis: "Superorganism describes itself as the first venture firm dedicated to biodiversity. The firm backs pre-seed and seed startups that can bend the curve on nature loss while building durable businesses, typically investing alongside other funds rather than leading rounds. Its thesis groups opportunities into three categories. The first covers companies transforming the industries that drive extinction, including agriculture, cities, pollution, invasive species and the materials economy. The second targets the intersection of climate and biodiversity, spanning forests, oceans, soil, wildfire, adaptation and the monitoring, reporting and verification of natural systems. The third backs enabling technologies such as artificial intelligence, genomics, biomanufacturing, remote sensing, robotics and fintech with downstream applications for conservation. The founders argue that the old assumption that nature and economic progress must always conflict is outdated, and that startups can reshape industries so that humans and ecosystems benefit together. Co-founder Kevin Webb has described the firm as the closest thing to a conservationist on a cap table. Superorganism closed a debut fund of 25.9 million dollars in January 2026, had backed roughly 20 startups at that point with plans to reach about 35, and has pledged 10 percent of firm profits to future conservation efforts.",
+    leadership: [
+      { name: "Tom Quigley", role: "Managing Director", profileSlug: "tom-quigley" },
+      { name: "Kevin Webb", role: "Managing Director", profileSlug: "kevin-webb" }
+    ],
+    timeline: [
+      { year: "2023", event: "Superorganism launched publicly as the first venture capital firm dedicated to biodiversity, investing at pre-seed and seed alongside other funds." },
+      { year: "2023", event: "Early investments included Inversa, a startup making leather from invasive species, with checks initially ranging from roughly 500,000 to 3 million dollars." },
+      { year: "2026", event: "Closed its 25.9 million dollar debut fund in January with about 20 portfolio companies and limited partners including Builders Vision, the Cisco Foundation and Wedgetail." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Closed Loop Partners",
+    sectors: ["Circular Economy", "Sustainability", "Climate"],
+    signatureExit: "Compost processor Atlas Organics, an early Closed Loop Ventures investment, was acquired by Generate Capital in a January 2022 majority-stake deal reported as a full exit for its early investors.",
+    slug: "closed-loop-partners",
+    website: "https://www.closedlooppartners.com",
+    short: "Closed Loop",
+    founded: 2014,
+    hq: "New York, NY",
+    aum: "$575M+ (firm-stated, as of December 31, 2023)",
+    thesis: "Closed Loop Partners is built around the idea that the circular economy, which designs out waste, keeps products and materials in circulation and regenerates natural systems, is both an environmental necessity and a large investment opportunity. Founded in New York in 2014 by Ron Gonen, the platform combines an investment firm, an innovation center and an operating group. Closed Loop Capital Management houses the investment strategies. The Closed Loop Ventures Group is the early stage vehicle, providing venture capital to companies advancing circular solutions across packaging, food systems, fashion, supply chains and materials science. A buyout private equity strategy, anchored by the Closed Loop Leadership Fund, acquires and scales established circular economy businesses. A catalytic capital and private credit strategy, which grew out of the firm's original recycling infrastructure funds, finances recycling facilities, materials recovery and end market development projects. The Center for the Circular Economy conducts research and runs multi stakeholder collaborations such as the NextGen Consortium with major consumer brands, while Closed Loop Builders operates companies including Circular Services, described by the firm as the largest privately held recycling and composting company in the United States. Across its vehicles the firm reports keeping billions of dollars worth of plastics, packaging, organics, textiles and electronics in circulation.",
+    leadership: [
+      { name: "Ron Gonen", role: "Founder & Chief Executive Officer", profileSlug: "ron-gonen" },
+      { name: "Tazia Smith", role: "Managing Partner | Closed Loop Partners; CEO | Closed Loop Capital Management", profileSlug: "tazia-smith" },
+      { name: "Jessica Long", role: "Managing Partner & Chief Strategy Officer | Closed Loop Partners; CEO | Closed Loop Builders", profileSlug: "jessica-long" },
+      { name: "Kate Daly", role: "Managing Partner | Closed Loop Partners; CEO | Center for the Circular Economy", profileSlug: "kate-daly" },
+      { name: "Danielle Joseph", role: "Managing Director | Ventures", profileSlug: "danielle-joseph" }
+    ],
+    timeline: [
+      { year: "2014", event: "Ron Gonen founded Closed Loop Partners in New York with backing from the Walmart Foundation and a group of major corporations." },
+      { year: "2017", event: "The firm achieved B Corp certification." },
+      { year: "2018", event: "Launched the Center for the Circular Economy and initiated the NextGen Consortium with major consumer brands." },
+      { year: "2021", event: "The Closed Loop Ventures Group raised a Fund II of more than 50 million dollars to back early-stage circular economy companies." },
+      { year: "2022", event: "The Closed Loop Leadership Fund, the firm's buyout private equity fund, held its final close with assets managed in excess of 200 million dollars, and the firm launched Circular Services as its first operating company." },
+      { year: "2023", event: "Circular Services received nearly 1 billion dollars in commitments and the firm's assets under management exceeded 500 million dollars." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Dynamo Ventures",
+    sectors: ["Logistics", "Industrial Tech", "Mobility"],
+    signatureExit: "No confirmed public exit yet; the firm's notable positions remain private.",
+    slug: "dynamo-ventures",
+    website: "https://www.dynamo.vc",
+    short: "Dynamo",
+    founded: 2016,
+    hq: "Chattanooga, TN",
+    aum: "$54M (Fund III close, May 2025)",
+    thesis: "Dynamo Ventures is a pre-seed and seed investor focused on the supply chain and the wider physical economy, operating from Chattanooga, Tennessee, a freight hub its founders helped build into a logistics startup community. The firm positions itself as a first check investor for founders working across manufacturing, logistics, warehousing, freight, trade and last mile delivery. Its current thesis holds that intelligence is moving into critical infrastructure, that technology is colliding with physics, and that manufacturing capacity is being rewired, creating openings for startups that change how goods are made, moved and sold. Dynamo grew out of an accelerator launched in 2016 by the founders of Access America Transport and Lamp Post Group together with Santosh Sankar, and evolved into a fund platform that has raised three vehicles, from an 18 million dollar Fund I in 2016 to a 54 million dollar Fund III closed in 2025. The firm backs founders globally and has invested in companies including Stord in omnichannel fulfillment, Gatik in autonomous middle mile delivery, Sennder in digital freight brokerage, Manna in drone delivery and Raft in AI powered freight forwarding. Its stated purpose is to back the relentless founders shaping the next era of industry.",
+    leadership: [
+      { name: "Santosh Sankar", role: "Co-founder & Managing Partner", profileSlug: "santosh-sankar" },
+      { name: "Jon Bradford", role: "Co-founder & Managing Partner", profileSlug: "jon-bradford" },
+      { name: "Ted Alling", role: "Co-founder & Partner", profileSlug: "ted-alling" },
+      { name: "Barry Large", role: "Co-founder & Partner", profileSlug: "barry-large" }
+    ],
+    timeline: [
+      { year: "2016", event: "The founders of Access America Transport and Lamp Post Group, together with Santosh Sankar, launched the Dynamo accelerator in Chattanooga and raised an 18 million dollar Fund I." },
+      { year: "2020", event: "Dynamo Ventures closed Fund II at about 43 million dollars to make pre-seed and seed supply chain investments in the US and Europe." },
+      { year: "2025", event: "Closed the 54 million dollar Fund III and completed a secondary sale of Fund I positions to Kline Hill Partners, returning capital to early limited partners at a reported return of more than 4x." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Digitalis Ventures",
+    sectors: ["Healthcare", "Life Sciences", "Biotech", "Animal Health"],
+    signatureExit: "No confirmed public exit yet; the firm's notable positions remain private.",
+    slug: "digitalis-ventures",
+    website: "https://www.digitalisventures.com",
+    short: "Digitalis",
+    founded: 2016,
+    hq: "New York, NY",
+    aum: "$300M (Companion Fund II close, 2023)",
+    thesis: "Digitalis Ventures is a New York based venture firm investing in solutions to unmet needs in biomedicine and health. The firm approaches healthcare with what it calls an engineering mindset, backing early stage life sciences and healthcare technology companies whose science can produce transformational impact for patients, and it invests across the United States, the United Kingdom, and Europe. Digitalis runs two complementary strategies. Its human health funds, including a fourth fund closed at 300 million dollars in 2022, target breakthrough science addressing critical unmet medical needs. Its dedicated Companion Funds, raised in partnership with Mars, apply the same discipline to animal health, funding companies that use science, technology, and design to improve the lives of pets, pet owners, and veterinarians across veterinary diagnostics, veterinary medicine, information technologies, and online platforms. Companion Fund I launched in 2018 with 100 million dollars and Companion Fund II followed in 2023 with 300 million dollars. The firm sits within the broader Digitalis Group, which also houses Digitalis Commons, a nonprofit building public goods for health, and Digitalis Labs, an applied research group, giving the investment team a platform for research and company creation alongside its funds. Leadership pairs founder Geoffrey W. Smith with Managing Partner Misti Ushio, drawing on legal, academic, operating, and company building experience across biotechnology and pharmaceuticals.",
+    leadership: [
+      { name: "Geoffrey W. Smith", role: "Founder / Managing Partner", profileSlug: "geoffrey-w-smith" },
+      { name: "Misti Ushio", role: "Managing Partner", profileSlug: "misti-ushio" }
+    ],
+    timeline: [
+      { year: "2016", event: "Geoffrey W. Smith founds Digitalis Ventures in New York to invest in solutions to unmet needs in biomedicine and health." },
+      { year: "2017", event: "The firm's debut 100 million dollar fund focused on health solutions is reported in January." },
+      { year: "2018", event: "Digitalis and Mars launch Companion Fund I, a 100 million dollar fund dedicated to animal health." },
+      { year: "2022", event: "Digitalis Ventures closes its fourth fund at 300 million dollars for early stage life sciences and healthcare technology companies in the US, UK, and Europe." },
+      { year: "2023", event: "Misti Ushio is appointed Managing Partner in January." },
+      { year: "2023", event: "Mars and Digitalis launch the 300 million dollar Companion Fund II to invest in pet health across the United States and Europe." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Cybernetix Ventures",
+    sectors: ["Robotics", "Industrial Tech", "AI", "Logistics", "Construction Tech"],
+    signatureExit: "No confirmed public exit yet; the firm's notable positions remain private.",
+    slug: "cybernetix-ventures",
+    website: "https://cybernetix.vc",
+    short: "Cybernetix",
+    founded: 2021,
+    hq: "Boston, MA",
+    aum: "$50M (Fund I target at 2022 launch, $25M committed)",
+    thesis: "Cybernetix Ventures is a Boston based venture capital firm founded in 2021 to invest exclusively in robotics, automation, and industrial AI. The firm backs pre-seed, seed, and Series A startups across North America and Europe, writing initial checks of roughly 100 thousand to 2 million dollars. Its thesis is that robotics and physical AI are entering an accelerated growth phase as labor shortages, reshoring, and maturing autonomy push intelligent machines into the physical economy. Cybernetix concentrates on verticals where automation solves acute operational problems: advanced manufacturing, logistics and warehousing, architecture, engineering and construction, healthcare and medical devices, agriculture, and climate and sustainability. It also funds the enabling layer beneath these applications, including industrial AI, cloud infrastructure for robotics, cybersecurity for robotics, autonomy software, and sensors and edge computing. The firm was launched by two robotics operators rather than generalist financiers: Fady Saad, co-founder of the MassRobotics startup hub, and Mark Martin, a former Analog Devices vice president who ran a billion dollar industrial automation and sensing business. That operating network, plus an advisory bench drawn from iRobot, Amazon Robotics, and Locus Robotics, is central to its model of helping hardware founders reach commercial deployment. Fund I launched in 2022 targeting 50 million dollars and backed 23 early stage companies, and in 2025 the firm announced it was raising a 100 million dollar second fund.",
+    leadership: [
+      { name: "Fady Saad", role: "General Partner", profileSlug: "fady-saad" },
+      { name: "Mark Martin", role: "General Partner", profileSlug: "mark-martin" }
+    ],
+    timeline: [
+      { year: "2021", event: "Fady Saad and Mark Martin found Cybernetix Ventures in Boston." },
+      { year: "2022", event: "The firm publicly launches Cybernetix Fund I, a 50 million dollar fund for early stage robotics, automation, and AI companies, with 25 million dollars already committed." },
+      { year: "2024", event: "Cybernetix introduces the Robotics Startup Playbook, a guide for robotics founders." },
+      { year: "2025", event: "The firm announces it is raising a 100 million dollar second fund, with Fund I having invested in 23 early stage companies across the US and Europe." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "MetaProp",
+    sectors: ["Proptech", "Construction Tech", "Enterprise Software"],
+    signatureExit: "Fund I portfolio company Avail, MetaProp's first investment, was acquired by Realtor.com operator Move, Inc. in December 2020.",
+    slug: "metaprop",
+    website: "https://www.metaprop.com",
+    short: "MetaProp",
+    founded: 2015,
+    hq: "New York, NY",
+    aum: "$100M (MetaProp Ventures III close, 2021)",
+    thesis: "MetaProp is a New York venture capital firm founded in 2015 that invests at the intersection of real estate and technology. The firm describes itself as the world's most active investment firm focused on the built world, backing innovations that finance, insure, design, manage, measure, and power real estate across asset classes. It has made more than 150 investments in proptech companies since inception, concentrating on early stage rounds through funds such as MetaProp Ventures III, a 100 million dollar vehicle closed in 2021 that the firm called the largest global proptech seed fund of its kind. MetaProp's model ties startups to the industry they serve. Its limited partners include strategic real estate owners and operators representing more than 20 billion square feet of property worldwide, giving portfolio companies pilot sites, distribution, and customer relationships, and its Innovation Services platform makes hundreds of industry introductions for portfolio companies each year. The firm helped build the proptech category itself, launching the MetaProp Accelerator at Columbia University, NYC Real Estate Tech Week, and the Global PropTech Confidence Index, while co-founders Aaron Block and Zach Aarons wrote the category defining book PropTech 101. Early outcomes include Avail, acquired by Realtor.com operator Move in 2020, and a 2016 seed investment in Attentive, which reached a 2.2 billion dollar valuation in 2020.",
+    leadership: [
+      { name: "Aaron Block", role: "Co-Founder & Managing Partner", profileSlug: "aaron-block" },
+      { name: "Zach Aarons", role: "Co-Founder & General Partner", profileSlug: "zach-aarons" },
+      { name: "Zak Schwarzman", role: "General Partner", profileSlug: "zak-schwarzman" }
+    ],
+    timeline: [
+      { year: "2015", event: "Aaron Block and Zach Aarons found MetaProp in New York and run the inaugural MetaProp Accelerator at Columbia University." },
+      { year: "2016", event: "Zak Schwarzman joins as General Partner and the firm makes a seed investment in Attentive." },
+      { year: "2020", event: "Fund I's first investment Avail is acquired by Realtor.com operator Move, Inc. in December, and Attentive reaches a 2.2 billion dollar valuation." },
+      { year: "2021", event: "MetaProp closes MetaProp Ventures III at 100 million dollars, which the firm called the largest global proptech seed fund." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Owl Ventures",
+    sectors: ["Edtech", "AI"],
+    signatureExit: "DreamBox Learning, the K-8 adaptive math platform Owl backed and board-served, was acquired by Clearlake Capital-backed Discovery Education in 2023.",
+    slug: "owl-ventures",
+    website: "https://owlvc.com",
+    short: "Owl Ventures",
+    founded: 2014,
+    hq: "San Francisco, CA",
+    aum: "$2.2B+ committed capital (as stated on firm site, 2026)",
+    thesis: "Owl Ventures invests exclusively in education technology, which the firm treats as one global market running from early childhood and K-12 through higher education and into workforce training and lifelong learning. Founded in 2014, the firm now describes itself as a global leader investing in AI driven learning and as the defining global investor in EdTech, backing companies at every stage. Its own materials cite more than $2.2 billion in committed capital across seven funds, over 100 investments, and portfolio products reaching more than 634 million users around the world. The strategy pairs core venture funds with dedicated opportunity funds that concentrate capital in late stage breakout companies, a structure the firm used in its 2020 and 2022 fund closes. Owl also emphasizes measurable outcomes, publishing impact reporting on access and efficacy alongside financial performance. From offices in San Francisco, Boston, London, and Dubai, the team invests across North America, Europe, Asia, and Africa, arguing that education and workforce development are converging into one of the largest and most durable technology markets in the world.",
+    leadership: [
+      { name: "Tory Patterson", role: "Co-founder and Managing Partner", profileSlug: "tory-patterson" },
+      { name: "Amit A. Patel", role: "Co-founder and Managing Partner", profileSlug: "amit-a-patel" },
+      { name: "Tom Costin", role: "Co-founder and Managing Partner", profileSlug: "tom-costin" },
+      { name: "Ian Chiu", role: "Managing Partner", profileSlug: "ian-chiu" }
+    ],
+    timeline: [
+      { year: "2014", event: "Owl Ventures is founded as a venture capital firm investing exclusively in education technology." },
+      { year: "2017", event: "The firm closes its $185 million second fund with global backers." },
+      { year: "2019", event: "Owl raises a $315 million third fund, bringing assets under management above $600 million." },
+      { year: "2020", event: "The firm closes $585 million across Fund IV and its first Opportunity Fund." },
+      { year: "2022", event: "Owl closes over $1 billion across a $640 million Fund V and a $270 million Opportunity Fund II, taking assets under management past $2 billion." },
+      { year: "2023", event: "Portfolio company DreamBox Learning is acquired by Clearlake Capital-backed Discovery Education." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Future Ventures",
+    sectors: ["Deep Tech", "Space", "Robotics", "Quantum"],
+    signatureExit: "MosaicML, the generative AI platform in Future Ventures' portfolio, was acquired by Databricks in 2023 in a deal valued at $1.3 billion.",
+    slug: "future-ventures",
+    website: "https://future.ventures",
+    short: "Future Ventures",
+    founded: 2018,
+    hq: "Los Altos, CA",
+    aum: "$925M including SPVs (co-founders to TechCrunch, April 2023)",
+    thesis: "Future Ventures backs founder led, mission driven companies at the seed and early stage, hunting for what its co-founders call new industry formation, ideas so unconventional or so long dated that they face little competition from other investors. The firm deliberately keeps its funds small, closing successive vehicles of about $200 million in 2019, 2021, and 2023, and writes first checks of roughly $3 million to $6 million, usually leading the founding round and taking a board seat. Its range spans commercial space, nuclear fusion, quantum computing, robotics, AI, synthetic biology, sustainable agriculture, and clean energy, with portfolio companies including SpaceX, Commonwealth Fusion Systems, Neuralink, xAI, Upside Foods, and MosaicML, which Databricks acquired in 2023. Co-founders Steve Jurvetson and Maryanna Saenko draw on earlier investments such as Tesla, Planet Labs, D-Wave, Hotmail, and Skype, which the firm cites as $1.7 trillion of aggregate value creation, to argue that the biggest venture outcomes come from technologies that create entire sectors rather than compete inside existing ones.",
+    leadership: [
+      { name: "Steve Jurvetson", role: "Co-Founder", profileSlug: "steve-jurvetson" },
+      { name: "Maryanna Saenko", role: "Co-Founder", profileSlug: "maryanna-saenko" },
+      { name: "Nico Enriquez", role: "Principal", profileSlug: "nico-enriquez" }
+    ],
+    timeline: [
+      { year: "2018", event: "Steve Jurvetson and Maryanna Saenko co-found Future Ventures." },
+      { year: "2019", event: "The firm publicly launches with a $200 million first fund focused on bold, mission-driven deep technology." },
+      { year: "2021", event: "Future Ventures closes a second fund of about $200 million." },
+      { year: "2023", event: "The firm closes its third $200 million fund, bringing assets under management to $925 million including special purpose vehicles." },
+      { year: "2023", event: "Portfolio company MosaicML is acquired by Databricks for $1.3 billion." },
+      { year: "2025", event: "The firm files a Form D with the SEC for Future Ventures IV, L.P." }
+    ],
+    holdings: [
+      { name: "ATAI Life Sciences", ticker: "ATAI", investedYear: null, historicalPrice: null, price: null },
+      { name: "Sensei Biotherapeutics", ticker: "SNSE", investedYear: null, historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Regeneration.VC",
+    sectors: ["Climate", "Consumer", "Sustainability", "Circular Economy"],
+    signatureExit: "No confirmed public exit yet; the firm's notable positions remain private.",
+    slug: "regeneration-vc",
+    website: "https://regeneration.vc",
+    short: "Regeneration.VC",
+    founded: 2020,
+    hq: "Los Angeles, CA",
+    aum: "$45M, 2022 first fund close",
+    thesis: "Regeneration.VC invests at the early stage in consumer climate technology, applying circular and regenerative principles to the supply chains behind fashion, food, electronics, and personal care. The firm argues that humanity consumes roughly twice what the planet can regenerate each year, and that consumer industries, which drive a large share of global emissions and waste, have received far less climate capital than energy or mobility. It organizes investments across three strategies: design, covering next generation materials, agtech, and aquaculture; use, covering apparel, lifestyle, and food and beverage; and reuse, covering recommerce and reverse logistics. Founded by consumer operators Dan Fishman and Michael Smith rather than career investors, and advised by Leonardo DiCaprio and circular economy pioneer William McDonough, the firm closed a $45 million first fund in 2022 and has built a portfolio approaching 50 companies, including VitroLabs, Cruz Foam, Greyparrot, and Colorifix. A second fund targeting 150 million euros with anchor support from Invest-NL, plus the assumption of Sky Ocean Ventures' climate portfolio in 2025, anchor a growing European presence alongside the firm's Los Angeles base.",
+    leadership: [
+      { name: "Dan Fishman", role: "Co-Founder and General Partner", profileSlug: "dan-fishman" },
+      { name: "Michael Smith", role: "Co-Founder and General Partner", profileSlug: "michael-smith" }
+    ],
+    timeline: [
+      { year: "2020", event: "Dan Fishman and Michael Smith found Regeneration.VC to invest in consumer-powered climate innovation." },
+      { year: "2022", event: "The firm launches its $45 million inaugural fund with Leonardo DiCaprio as strategic advisor and limited partner." },
+      { year: "2024", event: "Invest-NL commits 5 million euros to Regeneration.VC Fund II, which targets 150 million euros." },
+      { year: "2025", event: "Regeneration.VC assumes management of Sky Ocean Ventures' climate portfolio and adds partners in Europe." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "HCVC",
+    sectors: ["Deep Tech", "Robotics", "Industrial Tech"],
+    signatureExit: "Smart checkout cart maker Caper, an early HCVC investment, was acquired by Instacart for about $350 million in October 2021.",
+    slug: "hcvc",
+    website: "https://www.hcvc.co",
+    short: "HCVC",
+    founded: 2015,
+    hq: "Paris, France",
+    aum: "$130M (2023, after $75M Fund II close)",
+    thesis: "HCVC backs founders on a mission to industrialize scientific and technological progress, investing in early stage companies that automate and digitize the physical world. The firm began life in 2015 as Hardware Club, a community-first venture firm built around a network of hardtech startups that grew to more than 600 member companies across some 50 countries, and now invests under the HCVC name from Paris and San Francisco. It writes checks of $100k to $2.5m from pre-seed through Series A, getting involved as early as company formation, and concentrates on software or hardware products with long-term competitive advantages rooted in technical defensibility. Most investments land in Europe and North America, though the partners meet founders worldwide. The portfolio spans robotics, semiconductors, techbio, fusion energy, space, defense, climate, and AI-enabled engineering, with companies such as Cowboy, Automata, Span, Renaissance Fusion, and Karman+. Its $75 million second fund, closed in 2023 with backing from the European Investment Fund, Isomer Capital, Molten Ventures, and individual investors including Albert Wenger, John Elkann, and Toto Wolff, targets roughly 40 investments at a pace of about ten per year, continuing the firm's bet that the hardest physical-world problems produce the most defensible companies.",
+    leadership: [
+      { name: "Alexis Houssou", role: "Founder & Managing Partner", profileSlug: "alexis-houssou" },
+      { name: "Jerry Yang", role: "General Partner", profileSlug: "jerry-yang" },
+      { name: "Aymerik Renard", role: "General Partner", profileSlug: "aymerik-renard" },
+      { name: "Alexandre Flamant", role: "Partner", profileSlug: "alexandre-flamant" }
+    ],
+    timeline: [
+      { year: "2015", event: "Alexis Houssou founded Hardware Club in Paris as the world's first community of hardtech startups, the firm that later became HCVC." },
+      { year: "2017", event: "The firm announced a first close of $28 million for its debut venture fund, and Aymerik Renard joined the partnership in San Francisco." },
+      { year: "2018", event: "HCVC closed its debut fund at $50 million to invest in pre-seed and seed hardtech companies across Europe and North America." },
+      { year: "2021", event: "Portfolio company Caper was acquired by Instacart for approximately $350 million, the firm's most notable exit." },
+      { year: "2023", event: "Now operating under the HCVC name, the firm closed its second fund at $75 million, above its $60 million target, bringing assets under management to $130 million." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "The Production Board",
+    sectors: ["Food & Agriculture", "Biotech", "Energy", "Climate"],
+    signatureExit: "Portfolio company Soylent, the meal replacement brand where Dave Friedberg served as chairman, was acquired by Starco Brands in 2023.",
+    slug: "the-production-board",
+    website: "https://www.tpb.co",
+    short: "Production Board",
+    founded: 2017,
+    hq: "San Francisco, CA",
+    aum: "$300M raised (2021 holding company financing)",
+    thesis: "The Production Board is a San Francisco holding company founded by Dave Friedberg in 2017 to reimagine the systems of production that underpin the planet, spanning food, agriculture, biomanufacturing, human health, and life sciences. TPB is not a traditional venture fund. Its primary capital deployment mechanism is a foundry program: the firm identifies emerging scientific breakthroughs, then builds new businesses from scratch around them, assembling teams and providing capital, infrastructure, and market insight to exceptional operators. Foundry creations include cloud bioreactor platform Culture Biosciences, farm microbiome analytics company Pattern Ag, precision plant genetics company Ohalo, synthetic biology company Triplebar, and microbiome nutrition brand Supergut. Alongside the foundry, TPB invests from seed to Series A in outside companies working on the same fundamental problems, targeting order of magnitude improvements in cost, energy, time, or carbon footprint. The holding company raised $300 million in 2021 from investors including Alphabet, Baillie Gifford, BlackRock, Koch Disruptive Technologies, Emerson Collective, and Morgan Stanley's Counterpoint Global. Its sponsored SPAC took Brazilian agricultural inputs distributor Lavoro public on Nasdaq in a $1.2 billion combination in 2023, and portfolio exits include Soylent's acquisition by Starco Brands and Wellio's acquisition by Kraft Heinz.",
+    leadership: [
+      { name: "David Friedberg", role: "CEO and Partner", profileSlug: "david-friedberg" },
+      { name: "Cameron Davidson", role: "Operating Partner", profileSlug: "cameron-davidson" }
+    ],
+    timeline: [
+      { year: "2017", event: "Dave Friedberg founded The Production Board in San Francisco as a holding company to build and invest in businesses that reimagine global systems of production." },
+      { year: "2019", event: "The TPB foundry created a cohort of companies from scratch, including precision plant genetics company Ohalo, synthetic biology company Triplebar, and microbiome nutrition brand Supergut." },
+      { year: "2021", event: "TPB raised $300 million from investors including Alphabet, Baillie Gifford, BlackRock, Koch Disruptive Technologies, and Morgan Stanley's Counterpoint Global." },
+      { year: "2023", event: "TPB Acquisition Corporation I, the firm's sponsored SPAC, completed a $1.2 billion business combination that took Brazilian agricultural inputs company Lavoro public on Nasdaq." },
+      { year: "2023", event: "Portfolio company Soylent was acquired by Starco Brands." }
+    ],
+    holdings: []
   }
 ];
