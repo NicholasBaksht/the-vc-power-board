@@ -11167,4 +11167,562 @@ holdings: []
     holdings: [],
     signatureExit: null
   },
+
+  /* ------------------------------------------------------------
+     FIRMS 402-421, added 2026-08-23.
+     Researched batch: sector specialists (food systems, oceans,
+     materials, tough tech, space, defense, mobility, built world,
+     industrial, climate deep tech, health, sports, consumer,
+     education). rank is null on all 20 by design; ranking is
+     assigned separately. Sources for every non-null value are in
+     the research sources.csv retained off-site.
+     ------------------------------------------------------------ */
+{
+    rank: null,
+    name: "S2G Investments",
+    sectors: ["Food & Agriculture", "Energy", "Climate", "Sustainability"],
+    signatureExit: "S2G was an early investor in Beyond Meat, the plant-based meat company that completed a heavily oversubscribed Nasdaq IPO in May 2019.",
+    slug: "s2g-investments",
+    website: "https://www.s2ginvestments.com",
+    short: "S2G",
+    founded: 2014,
+    hq: "Chicago, IL",
+    aum: "$2.8B",
+    thesis: "S2G Investments is a Chicago-based multi-asset investment firm that backs venture and growth-stage companies across food and agriculture, energy, and oceans. The firm was founded in 2014 as S2G Ventures, with OpenTable founder Chuck Templeton and longtime food and agriculture investor Sanjeev Krishnan among its early leaders, and initially concentrated on food before expanding into oceans and energy. It describes itself as invested at the seams of sector transition, backing companies that improve efficiency and resilience in food, energy, and ocean systems. S2G closed its second fund at $180 million in 2017 and was an early investor in Beyond Meat, which went public on Nasdaq in 2019. In January 2025 the firm rebranded from S2G Ventures to S2G Investments to reflect a multi-asset platform spanning venture, growth equity, and structured finance, stating $2.5 billion in committed capital at the time. In May 2026 it closed the $1 billion Solutions Fund I to back growth-stage companies in North America and Europe, addressing what it calls the missing middle between venture capital and infrastructure-scale finance. The firm reports $2.8 billion in assets under management, with offices in Chicago, San Francisco, and Boston.",
+    leadership: [
+      { name: "Sanjeev Krishnan", role: "Managing Partner" },
+      { name: "Chuck Templeton", role: "Managing Partner" },
+      { name: "Aaron Rudberg", role: "Managing Partner" }
+    ],
+    timeline: [
+      { year: "2014", event: "S2G was founded in Chicago as S2G Ventures to invest in food and agriculture." },
+      { year: "2017", event: "S2G Ventures closed its second fund at $180 million to invest across food and agriculture." },
+      { year: "2019", event: "Early portfolio company Beyond Meat completed its oversubscribed IPO on Nasdaq." },
+      { year: "2025", event: "The firm rebranded from S2G Ventures to S2G Investments, citing $2.5 billion in committed capital and more than 100 portfolio companies." },
+      { year: "2026", event: "S2G closed the $1 billion Solutions Fund I to scale growth-stage companies across food and agriculture, energy, and oceans." }
+    ],
+    holdings: [
+      { name: "Beyond Meat", ticker: "BYND", investedYear: null, historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "AgFunder",
+    sectors: ["Food & Agriculture", "Agritech", "Foodtech", "Deep Tech"],
+    signatureExit: "Portfolio company Bear Flag Robotics, an autonomous tractor startup, was acquired by John Deere for $250 million in 2021.",
+    slug: "agfunder",
+    website: "https://agfunder.com",
+    short: "AgFunder",
+    founded: 2013,
+    hq: "San Francisco, CA",
+    aum: "~$300m",
+    thesis: "AgFunder is a venture capital firm founded in 2013 by Rob Leclerc and Michael Dean, investing in early-stage companies that build deep foundational technology for food, agriculture, and planetary health. Its portfolio spans AI, biotech, robotics, manufacturing, climate, and materials, and it operates from offices in Silicon Valley and Singapore. The firm is unusual among venture investors for having built a media company first. Its AgFunderNews service and annual agrifoodtech investment reports made it a reference point for the sector before its funds scaled, and that audience, along with an in-house engineering team, now serves as a global deal-sourcing engine for the venture firm. AgFunder began with small funds raised largely from its own network, closed the oversubscribed $21 million New Carnivore alternative protein fund in August 2021, and by March 2022 had raised $60 million in commitments toward a flagship fund targeting $100 million. The firm states roughly $300 million in assets under management and more than 100 portfolio companies across four continents. Its most notable realized exit is Bear Flag Robotics, an autonomous tractor company acquired by John Deere for $250 million in 2021.",
+    leadership: [
+      { name: "Rob Leclerc", role: "Partner" },
+      { name: "Michael Dean", role: "Partner" },
+      { name: "Manuel Gonzalez", role: "Partner" }
+    ],
+    timeline: [
+      { year: "2013", event: "AgFunder was founded to bring more investment and innovation into the agriculture and food space." },
+      { year: "2021", event: "Portfolio company Bear Flag Robotics was acquired by John Deere for $250 million." },
+      { year: "2021", event: "AgFunder closed its oversubscribed $21 million New Carnivore alternative protein fund." },
+      { year: "2022", event: "AgFunder reached $60 million in capital commitments for a flagship fund targeting $100 million." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Aqua-Spark",
+    sectors: ["Food & Agriculture", "Sustainability", "Climate"],
+    signatureExit: "No confirmed public exit yet; the firm's notable positions remain private.",
+    slug: "aqua-spark",
+    website: "https://aqua-spark.nl",
+    short: "Aqua-Spark",
+    founded: 2013,
+    hq: "Utrecht, Netherlands",
+    aum: "€260m",
+    thesis: "Aqua-Spark is an investment fund based in Utrecht, the Netherlands, dedicated entirely to sustainable aquaculture. It was founded in 2013 by Mike Velings and Amy Novogratz, who launched the fund after concluding that farmed fish would have to supply much of the world's future protein while the industry attracted almost no outside investment. The fund invests across the aquaculture value chain, from fish farms in emerging markets to alternative feed ingredients, animal health, and farm management technology, and aims to hold positions long term while steering portfolio companies toward measurable environmental and social improvement. Its first investments, announced in January 2015, placed $4 million across Calysta, a California developer of microbe-based protein feed, and Chicoa Fish Farm in Mozambique. By 2024 Aqua-Spark reported 28 portfolio companies and assets under management of nearly 500 million euros, and described itself as the largest investment fund dedicated to sustainable aquaculture. The collapse of Indonesian portfolio company eFishery in a fraud case then cut reported assets under management from 500 million euros to 260 million euros during 2025. The firm continues to invest in aquaculture companies worldwide from its Utrecht base.",
+    leadership: [
+      { name: "Mike Velings", role: "Co-founder and CEO" },
+      { name: "Amy Novogratz", role: "Co-founder and Managing Partner" }
+    ],
+    timeline: [
+      { year: "2013", event: "Aqua-Spark was launched in Utrecht by Mike Velings and Amy Novogratz as a fund dedicated to sustainable aquaculture." },
+      { year: "2015", event: "The fund announced its first investments, committing $4 million across feed innovator Calysta and Chicoa Fish Farm in Mozambique." },
+      { year: "2024", event: "Aqua-Spark marked its tenth anniversary with an impact report citing 28 portfolio companies and nearly €500M in assets under management." },
+      { year: "2025", event: "The eFishery fraud case contributed to Aqua-Spark's reported assets under management falling from €500m to €260m." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Material Impact",
+    sectors: ["Deep Tech", "Hard Tech", "Advanced Manufacturing", "Robotics", "Climate"],
+    signatureExit: "Portfolio company Nauticus Robotics went public on Nasdaq in September 2022 through a SPAC merger with CleanTech Acquisition Corp, with Material Impact remaining a major shareholder.",
+    slug: "material-impact",
+    website: "https://www.materialimpact.com",
+    short: "Material Impact",
+    founded: 2016,
+    hq: "Boston, MA",
+    aum: "$700M+",
+    thesis: "Material Impact is a Boston based venture capital firm founded in 2016 by scientist entrepreneurs Carmichael Roberts and Adam Sharkawy, who remain its Co-Founders and Managing Partners. The firm invests at inception in deep tech companies powered by material science innovation, positioning itself as first money in and building companies alongside founders rather than simply financing them. Its focus spans sustainable manufacturing, transportation, data storage, food and water, biomanufacturing, and robotics, with a stated mission of keeping the world healthy, safe, fed, warm, powered, and secured. The firm states over 700 million dollars in assets under management across three funds. Fund II, an oversubscribed 200 million dollar vehicle, was announced in June 2020, and an oversubscribed 352 million dollar Fund III closed in November 2023, at which point the firm counted about 30 portfolio companies. Material Impact is a certified B Corporation, which is unusual among venture firms. Portfolio companies include Nauticus Robotics, which went public on Nasdaq in September 2022 through a SPAC merger and in which the firm has reported a stake of about 25 percent, along with AgZen, Oxipital AI, and Foundation Alloy. Chemist George Whitesides serves as Chief Scientific Advisor.",
+    leadership: [
+      { name: "Carmichael Roberts", role: "Co-Founder & Managing Partner" },
+      { name: "Adam Sharkawy", role: "Co-Founder & Managing Partner" },
+      { name: "Corinna Chen", role: "Partner" },
+      { name: "Christian Theriault", role: "Partner" }
+    ],
+    timeline: [
+      { year: "2016", event: "Material Impact founded in Boston by Carmichael Roberts and Adam Sharkawy to build deep tech companies powered by material science." },
+      { year: "2020", event: "The firm announced its oversubscribed $200 million Fund II in June 2020." },
+      { year: "2022", event: "Portfolio company Nauticus Robotics completed its SPAC merger with CleanTech Acquisition Corp in September 2022 and began trading on Nasdaq as KITT." },
+      { year: "2023", event: "Material Impact closed its oversubscribed $352 million Fund III in November 2023, with assets under management reported at nearly $800 million at the time." }
+    ],
+    holdings: [
+      { name: "Nauticus Robotics", ticker: "KITT", investedYear: null, historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Engine Ventures",
+    sectors: ["Deep Tech", "Hard Tech", "Climate", "Energy", "Healthcare"],
+    signatureExit: "No confirmed public exit yet; the firm's notable positions remain private.",
+    slug: "engine-ventures",
+    website: "https://engineventures.com",
+    short: "Engine Ventures",
+    founded: 2016,
+    hq: "Cambridge, MA",
+    aum: "$1.1 billion",
+    thesis: "Engine Ventures is a Cambridge, Massachusetts venture firm that invests in Tough Tech, breakthrough science and engineering companies addressing climate, human health, and advanced systems. It traces to The Engine, launched by MIT in October 2016 to help startups commercialize foundational technology. Katie Rae became president, CEO, and managing partner in early 2017 and led the first fund, which held a first close of more than 150 million dollars in April 2017 with MIT contributing 25 million dollars and ultimately closed at over 200 million dollars, followed by a 230 million dollar second fund in October 2020. The investment operation later separated from the nonprofit side. The Engine continues as a 501(c)(3) accelerator providing lab space and programs, while the fund manager became the independent firm Engine Ventures in 2023. In June 2024 the firm closed its 398 million dollar Fund III, again anchored by MIT, bringing assets under management above 1 billion dollars. Its website states 1.1 billion dollars under management and 65 portfolio companies. The firm leads early rounds and stays engaged through manufacturing, deployment, and scaling, and runs fellowship and workforce programs. Holdings include Commonwealth Fusion Systems, Form Energy, Boston Metal, and Sublime Systems, all still private.",
+    leadership: [
+      { name: "Katie Rae", role: "CEO & Managing Partner" },
+      { name: "Israel Ruiz", role: "President & General Partner" },
+      { name: "Reed Sturtevant", role: "General Partner" },
+      { name: "Ann DeWitt", role: "General Partner" },
+      { name: "Michael Kearney", role: "General Partner" }
+    ],
+    timeline: [
+      { year: "2016", event: "MIT launched The Engine in October 2016 to support Tough Tech startups commercializing breakthrough science and engineering." },
+      { year: "2017", event: "The Engine's first fund held a first close of more than $150 million in April 2017, with MIT contributing $25 million, and ultimately closed at over $200 million." },
+      { year: "2020", event: "The Engine closed its $230 million Fund II in October 2020, with MIT contributing $35 million." },
+      { year: "2023", event: "The investment operation separated from the nonprofit accelerator, with the fund manager becoming the independent firm Engine Ventures while The Engine continued as a 501(c)(3)." },
+      { year: "2024", event: "Engine Ventures closed its $398 million Fund III in June 2024, bringing assets under management to more than $1 billion." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Prime Movers Lab",
+    sectors: ["Deep Tech", "Energy", "Transportation", "Manufacturing", "Agriculture"],
+    signatureExit: "Portfolio company Energy Vault, whose Series C the firm led as an existing investor, went public on the NYSE in February 2022 via SPAC merger with Novus Capital Corporation II.",
+    slug: "prime-movers-lab",
+    website: "https://www.primemoverslab.com",
+    short: "Prime Movers Lab",
+    founded: 2018,
+    hq: "Jackson, WY",
+    aum: "more than $1.2 billion",
+    thesis: "Prime Movers Lab is a venture firm founded in 2018 by Dakin Sloss and headquartered in Jackson, Wyoming. It invests in breakthrough scientific startups, backing founders it calls Prime Movers who are reinventing energy, transportation, infrastructure, manufacturing, human augmentation, and agriculture. The firm raised a 100 million dollar first fund in 2018, a 245 million dollar Fund II announced in January 2021 with limited partners including Bill Ackman and the University of Wyoming, a 500 million dollar Early Growth Fund announced in September 2022, and a 245 million dollar Fund III in July 2023, at which point it reported more than 1.2 billion dollars in assets under management. Author and coach Tony Robbins serves as Partner and Business Strategist. Unusually for an early stage deep tech firm, several portfolio companies reached public markets through SPAC mergers. The firm led the 25.5 million dollar 2019 Series A of space transportation company Momentus, and led the 2021 Series C of Energy Vault, which listed on the NYSE in February 2022. Heliogen, another portfolio listing, was acquired by Zeo Energy in 2025. Private holdings include Commonwealth Fusion Systems, Axiom Space, Boom, Figure, and Venus Aerospace.",
+    leadership: [
+      { name: "Dakin Sloss", role: "Founder and General Partner" },
+      { name: "Zia Huque", role: "General Partner" },
+      { name: "Tony Robbins", role: "Partner & Business Strategist" },
+      { name: "Andre Jabban", role: "Partner and Head of Capital Formation" }
+    ],
+    timeline: [
+      { year: "2018", event: "Prime Movers Lab founded by Dakin Sloss in Jackson, Wyoming, launching a $100 million first fund." },
+      { year: "2021", event: "The firm announced its $245 million Fund II in January 2021." },
+      { year: "2022", event: "Portfolio company Energy Vault began trading on the NYSE in February 2022 following its SPAC merger with Novus Capital Corporation II." },
+      { year: "2022", event: "The firm raised a $500 million Early Growth Fund, announced in September 2022." },
+      { year: "2023", event: "Prime Movers Lab closed its $245 million Fund III in July 2023, reporting more than $1.2 billion in assets under management." }
+    ],
+    holdings: [
+      { name: "Momentus", ticker: "MNTS", investedYear: 2019, historicalPrice: null, price: null },
+      { name: "Energy Vault", ticker: "NRGV", investedYear: null, historicalPrice: null, price: null },
+      { name: "Archer Aviation", ticker: "ACHR", investedYear: null, historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Space Capital",
+    sectors: ["Space", "Satellites", "Deep Tech"],
+    signatureExit: "Portfolio company Rocket Lab became publicly traded on Nasdaq as RKLB through its merger with Vector Acquisition Corporation in August 2021.",
+    slug: "space-capital",
+    website: "https://www.spacecapital.com",
+    short: "Space Capital",
+    founded: 2012,
+    hq: "New York, NY",
+    aum: "Over $1 billion (across four institutional funds)",
+    thesis: "Space Capital is a New York based seed stage venture firm that invests exclusively in the space economy. Founded in 2012 by Chad Anderson and rebranded from the Space Angels network in 2020, the firm organizes the market into three technology layers, Infrastructure, Distribution, and Applications, and concentrates on three stacks it believes follow the trajectory of GPS: positioning, geospatial intelligence, and satellite communications. Its core argument, the GPS Playbook, holds that a government built space asset becomes a platform for trillions of dollars of commercial value once entrepreneurs build distribution and applications on top of it, and the firm's GPS, GEOINT, and SatCom playbooks are used by financial firms and government agencies. Space Capital states over $1 billion in assets under management across four institutional funds, and launched Space Capital IV in March 2026. The portfolio spans 64 companies including SpaceX, Rocket Lab, Planet, ICEYE, Impulse Space, Varda, and Muon Space. Since 2017 the firm has published Space IQ, a quarterly report on private investment in the space economy cited by Morgan Stanley, Citi, NASA, ESA, and the US Department of Defense, giving it an unusually public research footprint for a fund of its size.",
+    leadership: [
+      { name: "Chad Anderson", role: "Founder & CEO" },
+      { name: "Tom Ingersoll", role: "Partner" },
+      { name: "Justus Kilian", role: "Partner" }
+    ],
+    timeline: [
+      { year: "2007", event: "Space Angels, the angel investment network from which Space Capital grew, was established." },
+      { year: "2012", event: "Space Capital dates its founding in New York to 2012." },
+      { year: "2017", event: "The firm began publishing Space IQ, its quarterly report on private investment in the space economy." },
+      { year: "2020", event: "The firm rebranded from Space Angels to Space Capital." },
+      { year: "2021", event: "Portfolio company Rocket Lab completed its merger with Vector Acquisition Corporation and began trading on Nasdaq as RKLB in August 2021." },
+      { year: "2026", event: "Space Capital launched its fourth institutional fund, Space Capital IV, in March 2026." }
+    ],
+    holdings: [
+      { name: "Rocket Lab", ticker: "RKLB", investedYear: null, historicalPrice: null, price: null },
+      { name: "Planet", ticker: "PL", investedYear: null, historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Riot Ventures",
+    sectors: ["Hard Tech", "Defense Tech", "Robotics", "Space", "Industrial Technology"],
+    signatureExit: "Portfolio company Toast, the restaurant software platform, went public on the NYSE as TOST in September 2021 in a debut that valued the company at about $20 billion.",
+    slug: "riot-ventures",
+    website: "https://www.riot.vc",
+    short: "Riot Ventures",
+    founded: null,
+    hq: "Los Angeles, CA",
+    aum: null,
+    thesis: "Riot Ventures is a hard tech venture firm founded by Stephen Marcus and Will Coffield that invests from Los Angeles and Boston in companies modernizing critical industries. The firm launched its first fund, a $10 million vehicle, in 2017 to test the thesis that automation, artificial intelligence, computer vision, robotics, and new materials would remake industrial sectors, and announced a $75 million second fund in February 2020. Riot invests from seed through growth and describes its team as devoted to a select group of iconic companies with checks of up to $200 million. The current portfolio of more than 30 companies spans defense, space, nuclear energy, robotics, and logistics, including Shield AI in AI pilots for defense aircraft, True Anomaly in orbital space defense, Valar Atomics in mass manufactured nuclear reactors, EnduroSat in satellite manufacturing, plus Oxide Computer, Parallel Systems, Lumafield, and Simbe Robotics. An early position in Toast, which completed a roughly $20 billion NYSE debut in September 2021, gave the small firm a realized public outcome unusual for a fund of its vintage and size. Riot Ventures is unrelated to Riot Games and to Riot Platforms, the bitcoin mining company that trades under the RIOT ticker.",
+    leadership: [
+      { name: "Stephen Marcus", role: "Co-Founder and General Partner" },
+      { name: "Will Coffield", role: "Co-founder and General Partner" }
+    ],
+    timeline: [
+      { year: "2017", event: "Riot Ventures closed its first fund, a $10 million vehicle focused on hard tech and industrial technology." },
+      { year: "2020", event: "The firm announced in February 2020 that it was raising a $75 million second fund." },
+      { year: "2021", event: "Portfolio company Toast went public on the NYSE in September 2021." }
+    ],
+    holdings: [
+      { name: "Toast", ticker: "TOST", investedYear: null, historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Decisive Point",
+    sectors: ["Defense Tech", "National Security", "Energy", "Aerospace"],
+    signatureExit: "Portfolio company Standard Nuclear, the Oak Ridge TRISO nuclear fuel maker, completed its initial public offering on the NYSE as STDN in July 2026.",
+    slug: "decisive-point",
+    website: "https://www.decisivepoint.com",
+    short: "Decisive Point",
+    founded: 2018,
+    hq: "New York, NY",
+    aum: null,
+    thesis: "Decisive Point is a venture capital and advisory firm focused on national security, founded in 2018 by Thomas Hendrix, Eric Horan, and Andrew Price and operating from New York, Washington DC, and Boston. The firm backs seed and Series A dual use startups in defense, energy, and infrastructure, historically writing checks of roughly $500,000 to $1.5 million, and pairs its funds with a government contracting advisory practice that acts as a bolt on government relations team for portfolio companies, handling federal acquisition strategy, non dilutive R&D funding, proposal writing, and congressional engagement. This govcon arm, together with its operation of the National Security Innovation Network's Propel accelerator in partnership with the Department of Defense, distinguishes it from generalist defense investors. Decisive Point announced the initial close of its first fund, Decisive Point Ventures Fund I, in January 2021, a vehicle with $10 million in anticipated commitments. The portfolio includes Firehawk Aerospace, Asylon, HavocAI, EpiSci, Radiant, and Standard Nuclear, which completed an initial public offering on the NYSE in July 2026. In November 2025 Medal of Honor recipient Matthew Williams joined as Partner to lead defense and national security investments. The firm does not publicly state assets under management.",
+    leadership: [
+      { name: "Thomas Hendrix", role: "General Partner" },
+      { name: "Eric Horan", role: "General Partner" },
+      { name: "Andrew Price", role: "General Partner" },
+      { name: "Debi-Michelle O'Connell", role: "Partner" },
+      { name: "Matt Williams", role: "Partner" }
+    ],
+    timeline: [
+      { year: "2018", event: "Decisive Point was founded in New York by Tommy Hendrix, Eric Horan, and Andrew Price to fill a gap in venture capital for defense and government technology." },
+      { year: "2021", event: "The firm announced the initial close of Decisive Point Ventures Fund I, with $10 million in anticipated commitments, in January 2021." },
+      { year: "2025", event: "Medal of Honor recipient Matthew Williams joined as Partner in November 2025 to lead defense and national security investments." },
+      { year: "2026", event: "Portfolio company Standard Nuclear priced its initial public offering and began trading on the NYSE as STDN in July 2026." }
+    ],
+    holdings: [
+      { name: "Standard Nuclear", ticker: "STDN", investedYear: null, historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Fontinalis Partners",
+    sectors: ["Mobility", "Transportation", "Industrial Technology", "Energy"],
+    signatureExit: "Early portfolio company Lyft went public on Nasdaq in its 2019 IPO, one of roughly 20 exits from the firm's mobility portfolio alongside nuTonomy's $450 million sale to Delphi in 2017.",
+    slug: "fontinalis-partners",
+    website: "https://www.fontinalis.com",
+    short: "Fontinalis",
+    founded: 2009,
+    hq: "Detroit, MI",
+    aum: "~$270M (as of 2021)",
+    thesis: "Fontinalis Partners is a Detroit venture capital firm co-founded in 2009 by Bill Ford, executive chairman of Ford Motor Company, and Chris Cheever, alongside Ralph Booth and Mark Schulz. It was one of the first funds organized around next-generation mobility, backing companies in efficient movement years before mobility became a mainstream venture category. Its early portfolio included Lyft, nuTonomy, Postmates and Telogis, and the firm recorded roughly 20 exits in its first decade, including nuTonomy's $450 million sale to Delphi in 2017, Postmates' sale to Uber in 2020 and Lyft's 2019 IPO. Fontinalis raised a $100 million second fund in 2016 and closed Fund III at $104 million in August 2021, bringing assets under management to about $270 million at that time. The firm invests from seed through Series B and has offices in Detroit and Boston. Its strategy has since broadened beyond mobility to what it calls the new frontiers of industry, spanning industrial innovation and energy, with recent investments in semiconductor manufacturing, AI inference, robotics, freight intelligence and fleet electrification. Bill Ford now holds Founder Emeritus status, while Cheever remains Managing Partner leading the investment team.",
+    leadership: [
+      { name: "Chris Cheever", role: "Founder & Managing Partner" },
+      { name: "Laura Petterle", role: "Managing Partner & CFO" },
+      { name: "Chris Stallman", role: "Managing Partner" },
+      { name: "Dan Ratliff", role: "Partner" }
+    ],
+    timeline: [
+      { year: "2009", event: "Fontinalis Partners is founded in Detroit by Bill Ford, Chris Cheever, Ralph Booth and Mark Schulz to invest in next-generation mobility." },
+      { year: "2016", event: "The firm closes a $100 million second fund to invest in next-generation mobility companies." },
+      { year: "2017", event: "Portfolio company nuTonomy is acquired by Delphi Automotive for $450 million." },
+      { year: "2019", event: "Early portfolio company Lyft completes its IPO on Nasdaq." },
+      { year: "2021", event: "Fontinalis closes Fund III at $104 million, bringing firm assets under management to approximately $270 million." }
+    ],
+    holdings: [
+      { name: "Lyft", ticker: "LYFT", investedYear: null, historicalPrice: null, price: null },
+      { name: "Ouster", ticker: "OUST", investedYear: null, historicalPrice: null, price: null },
+      { name: "Life360", ticker: "LIF", investedYear: null, historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Trucks Venture Capital",
+    sectors: ["Transportation", "Mobility", "Autonomy", "Logistics"],
+    signatureExit: "Portfolio company Roadster, a digital car-buying platform, was acquired by CDK Global for $360 million in 2021.",
+    slug: "trucks-venture-capital",
+    website: "https://www.trucks.vc",
+    short: "Trucks VC",
+    founded: 2015,
+    hq: "San Francisco, CA",
+    aum: null,
+    thesis: "Trucks Venture Capital is a San Francisco seed fund founded in 2015 that invests exclusively in transportation, describing itself as funding the entrepreneurs building the future of transportation. Co-founded by Reilly Brennan, a former automotive journalist and Stanford lecturer, who runs the firm with partners Jeffrey Schox, Kathryn Schox and Puneeth Meruva, Trucks writes first checks of $500,000 to $2 million at pre-seed and seed, backing companies that make transportation decarbonized, safer and more accessible. The portfolio spans autonomy, electrification, aviation, trucking and logistics, including Joby Aviation, May Mobility, Nauto, Gatik and Skyryse. Realized exits include nuTonomy, acquired by Delphi, Roadster, sold to CDK Global for $360 million in 2021, Bear Flag Robotics, acquired by John Deere in 2021, DeepScale, acquired by Tesla, and Zendrive, acquired by Intuit. The firm closed its second fund at $52,525,252 in June 2021 alongside an AngelList-based growth vehicle for follow-on investments, and announced a $70 million third fund in January 2025, its largest to date, intended to back roughly 30 seed-stage companies with target ownership near 10 percent. Its limited partners include strategic corporates such as an automotive supplier, a tire manufacturer, an insurer and an airline.",
+    leadership: [
+      { name: "Reilly Brennan", role: "Partner" },
+      { name: "Jeffrey Schox", role: "Partner" },
+      { name: "Kathryn Schox", role: "Partner" },
+      { name: "Puneeth Meruva", role: "Partner" },
+      { name: "Jason Townsend", role: "CFO" }
+    ],
+    timeline: [
+      { year: "2015", event: "Trucks Venture Capital is co-founded in San Francisco by Reilly Brennan to invest in seed-stage transportation startups." },
+      { year: "2021", event: "The firm closes Trucks Venture Fund 2 at $52,525,252 and launches an AngelList-based growth fund for follow-on investments." },
+      { year: "2021", event: "Portfolio company Roadster is acquired by CDK Global for $360 million, and Bear Flag Robotics is acquired by John Deere." },
+      { year: "2025", event: "Trucks announces its third and largest fund at $70 million to back roughly 30 seed-stage transportation companies." }
+    ],
+    holdings: [
+      { name: "Joby Aviation", ticker: "JOBY", investedYear: null, historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Brick & Mortar Ventures",
+    sectors: ["Construction Tech", "Proptech", "B2B Software", "Hardware"],
+    signatureExit: "Seed investment PlanGrid was acquired by Autodesk for $875 million in 2018, with fellow portfolio company BuildingConnected acquired by Autodesk for $275 million weeks later.",
+    slug: "brick-and-mortar-ventures",
+    website: "https://www.brickmortar.vc",
+    short: "Brick & Mortar",
+    founded: 2015,
+    hq: "San Francisco, CA",
+    aum: null,
+    thesis: "Brick & Mortar Ventures is a San Francisco venture firm founded in 2015 by Darren Bechtel, a fifth-generation member of the family behind the Bechtel engineering and construction group. The firm invests in emerging companies developing software and hardware for architecture, engineering, construction and facilities management, a mission it summarizes as helping the world build better. Bechtel seeded several defining construction technology companies, including PlanGrid, acquired by Autodesk for $875 million in November 2018, and BuildingConnected, acquired by Autodesk for $275 million in a deal announced in December 2018. In August 2019 the firm closed a $97.2 million fund, announced as the largest construction-focused built world venture fund raised to that point, with corporate limited partners including Autodesk, CEMEX, Ferguson Ventures, Hilti, Obayashi and United Rentals. It leads seed and Series A rounds, typically investing $1 million to $4 million, across the US, Canada, Europe and Australia. Other exits include Fieldwire, Levelset, Canvas and BuildZoom, and the active portfolio of more than 40 companies spans Curri, ALICE Technologies, Siteline, Rugged Robotics and Wingtra. No successor fund has been publicly announced since the 2019 vehicle, though the portfolio shows continued new investments.",
+    leadership: [
+      { name: "Darren Bechtel", role: "Founder & Managing Director" },
+      { name: "Kaustubh Pandya", role: "General Partner" },
+      { name: "Curtis Rodgers", role: "Partner" },
+      { name: "Austin Yount", role: "Partner" }
+    ],
+    timeline: [
+      { year: "2015", event: "Darren Bechtel founds Brick & Mortar Ventures in San Francisco to invest in construction technology." },
+      { year: "2018", event: "Seed investment PlanGrid is acquired by Autodesk for $875 million." },
+      { year: "2018", event: "Autodesk announces its acquisition of portfolio company BuildingConnected for $275 million." },
+      { year: "2019", event: "The firm closes a $97.2 million fund, announced as the largest construction-focused built world venture fund to date." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Ironspring Ventures",
+    sectors: ["Manufacturing", "Construction Tech", "Logistics", "Industrial Technology", "Clean Energy"],
+    signatureExit: "Document Crunch, an AI contract review and compliance platform for construction backed since the firm's first fund, was acquired by Trimble in 2026.",
+    slug: "ironspring-ventures",
+    website: "https://ironspring.com",
+    short: "Ironspring",
+    founded: 2020,
+    hq: "Austin, TX",
+    aum: null,
+    thesis: "Ironspring Ventures is an Austin, Texas venture firm investing in what it calls digital industrial innovation. It backs early stage founders modernizing the industrial value chain across four sectors: construction, manufacturing, transportation and logistics, and alternative energy. Co-founders Ty Findley and Peter J. Holt lead the firm as general partners, and its network is weighted toward industrial operators, which the firm presents as its edge over generalist funds that only visit these markets occasionally. Ironspring was founded in 2020 and closed a $61 million debut fund in 2021, which it deployed into 16 companies including OneRail, Prokeep, Document Crunch, and Solvento. In June 2024 the firm closed its second fund at $100 million, planning roughly 20 investments at a pace of four to five per year with initial checks of $2 million to $4 million, typically at seed and Series A. The portfolio spans construction software, warehouse robotics, freight and logistics platforms, industrial workforce tools, and distributed energy, with companies such as Base Power, Harbinger, Plus One Robotics, and Cargado. The firm recorded its most visible exit in April 2026, when Trimble announced the acquisition of Document Crunch, an AI powered contract review and compliance platform for the construction industry that Ironspring had backed since its first fund.",
+    leadership: [
+      { name: "Ty Findley", role: "Co-Founder + General Partner" },
+      { name: "Peter J. Holt", role: "Co-Founder + General Partner" },
+      { name: "Natan Reddy", role: "Principal" },
+      { name: "Drew Kriens", role: "Principal" },
+      { name: "Stephanie Volk", role: "Vice President, Platform" }
+    ],
+    timeline: [
+      { year: "2020", event: "Ironspring Ventures is founded in Austin, Texas to invest in digital industrial innovation across construction, manufacturing, transportation and logistics, and alternative energy." },
+      { year: "2021", event: "The firm closes its $61 million debut fund, which it goes on to deploy into 16 industrial technology companies." },
+      { year: "2024", event: "Ironspring closes its second fund at $100 million in June 2024, targeting seed and Series A checks of $2 million to $4 million." },
+      { year: "2026", event: "Trimble announces the acquisition of Ironspring portfolio company Document Crunch in April 2026, the firm's most notable exit." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "At One Ventures",
+    sectors: ["Climate", "Deep Tech", "Climate Technology", "Sustainability"],
+    signatureExit: "No confirmed public exit yet; the firm's notable positions remain private.",
+    slug: "at-one-ventures",
+    website: "https://www.atoneventures.com",
+    short: "At One Ventures",
+    founded: 2019,
+    hq: "San Francisco, CA",
+    aum: "$525M across two funds",
+    thesis: "At One Ventures is a San Francisco climate deep tech firm founded in 2019 by Tom Chi, a founding member of Google X, together with Laurie Menoud, who previously co-led venture capital for BASF in North America, and Helen Lin. The firm invests at seed and Series A in companies whose technology it believes can beat incumbents on unit economics while dramatically reducing planetary footprint, a pairing it calls its Triad: disruptive deep tech, radically better unit economics, and a path toward humanity becoming a net positive to nature. Its scope runs across air, water, soil, and biodiversity, touching energy, materials, agriculture, transportation, and buildings. Fund I closed at $150 million in October 2021, and in October 2023 the firm announced a $375 million Fund II, with the firm stating it manages $525 million across the two funds. By the Fund II announcement it had invested in 35 startups, including battery materials recycler Ascend Elements, de-extinction company Colossal Biosciences, and biodegradable packaging maker Cruz Foam. The team is unusually technical for a venture firm, with partners and operators drawn from the physical sciences, engineering, and manufacturing scale-up, and it supports portfolio companies with in-house help on industrialization, talent, and intellectual property strategy. No portfolio company has yet produced a confirmed realized public exit.",
+    leadership: [
+      { name: "Tom Chi", role: "Managing Partner" },
+      { name: "Laurie Menoud", role: "Founding Partner" },
+      { name: "Helen Lin", role: "Partner" }
+    ],
+    timeline: [
+      { year: "2019", event: "Tom Chi founds At One Ventures in the San Francisco Bay Area with Laurie Menoud and Helen Lin to invest in climate focused deep tech." },
+      { year: "2021", event: "The firm closes its $150 million first fund in October 2021." },
+      { year: "2023", event: "At One Ventures announces its $375 million Fund II in October 2023, bringing stated assets under management to over half a billion dollars across 35 portfolio startups." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Piva Capital",
+    sectors: ["Industrial Technology", "Energy", "Deep Tech", "Climate", "Mobility"],
+    signatureExit: "Metal 3D printing company Velo3D, which Piva backed at its 2020 Series D, went public on the NYSE via SPAC merger in September 2021.",
+    slug: "piva-capital",
+    website: "https://www.piva.vc",
+    short: "Piva Capital",
+    founded: 2019,
+    hq: "San Francisco, CA",
+    aum: null,
+    thesis: "Piva Capital is a San Francisco venture firm founded in 2019 to invest in breakthrough technologies for heavy industry and energy. Founder Ricardo Angel, previously of GE Ventures, launched the firm in December 2019 with a $250 million fund backed by Petroliam Nasional Berhad, the Malaysian national energy company known as PETRONAS, which was the sole limited partner of that first fund while the firm operates and invests independently. Piva describes itself as backed by a global Fortune 500 energy company and organizes its thesis around three themes: the future of industry and work, the future of materials and production, and the future of energy and mobility. It invests from early to growth stage in companies such as Boston Metal, Koloma, VEIR, Pyka, Menlo Micro, and Xage Security. Realized outcomes include metal additive manufacturing company Velo3D, which Piva backed at Series D in 2020 and which listed on the NYSE through a SPAC merger in September 2021, plus acquisitions of Urbint by Itron, agreed in October 2025, and Alloy Enterprises by Johnson Controls, completed in May 2026. The team has evolved since launch: Ricardo Angel and Mark Gudiksen now serve as managing partners alongside co-founding partner Adzmel Adznan, while some early partners are no longer listed. The firm remained active through 2025 and 2026, publishing its 2025 responsible investment report in April 2026.",
+    leadership: [
+      { name: "Ricardo Angel, PhD", role: "CEO & Managing Partner" },
+      { name: "Mark Gudiksen, PhD", role: "Managing Partner" },
+      { name: "Adzmel Adznan", role: "Co-Founding Partner" },
+      { name: "Lisa Read Blanco", role: "Partner & Legal Counsel" },
+      { name: "Maria Buitron", role: "Principal" }
+    ],
+    timeline: [
+      { year: "2019", event: "Piva launches in December 2019 with a $250 million fund backed by PETRONAS as sole limited partner, led by CEO and Managing Partner Ricardo Angel in San Francisco." },
+      { year: "2020", event: "Piva backs metal additive manufacturing company Velo3D in its $28 million Series D round." },
+      { year: "2021", event: "Portfolio company Velo3D completes its merger with JAWS Spitfire Acquisition Corporation in September 2021 and begins trading on the NYSE." },
+      { year: "2025", event: "Itron signs a definitive agreement in October 2025 to acquire Piva portfolio company Urbint, a field safety analytics provider for utilities." },
+      { year: "2026", event: "Johnson Controls completes its acquisition of Piva portfolio company Alloy Enterprises, a data center thermal management company, in May 2026." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Santé Ventures",
+    sectors: ["Biotech", "Medical Devices", "Digital Health", "Healthcare"],
+    signatureExit: "Farapulse, the pulsed field ablation company Santé backed early, was fully acquired by Boston Scientific in 2021 after the strategic exercised its option for $295 million upfront.",
+    slug: "sante-ventures",
+    website: "https://sante.com",
+    short: "Santé",
+    founded: 2006,
+    hq: "Austin, TX",
+    aum: "over $1 billion",
+    thesis: "Santé Ventures is an early-stage healthcare venture firm founded in Austin, Texas in 2006 by Kevin Lalande, Joe Cunningham and Douglas French. The firm invests across three connected domains, biotechnology, medical technology and digitally enabled healthcare, and frequently backs companies at or near formation rather than waiting for later rounds. It is part of Santé, a broader investment organization that also runs Santé Capital, a systematic public-markets strategy, with more than $1 billion in capital under management across the platform. Santé Ventures has launched five venture funds, in 2007, 2011, 2018, 2021 and 2024, and closed its fifth fund at $330 million in February 2026, above its $300 million target, promoting Dennis McWilliams and Omar Khalil to Managing Director at the close. The portfolio deliberately takes device and biology risk that larger generalist funds avoid, and its realized exits are mostly strategic acquisitions. Farapulse went to Boston Scientific in 2021, Laminar to Johnson and Johnson MedTech for $400 million upfront in 2023, and earlier companies including Explorys, Claret Medical, Millipede Medical, TVA Medical and AbVitro were bought by IBM, Boston Scientific, Becton Dickinson and Bristol Myers Squibb respectively. The firm also keeps an office in Boston.",
+    leadership: [
+      { name: "Kevin Lalande", role: "Founding Managing Director & Chief Investment Officer" },
+      { name: "Joe Cunningham, MD", role: "Founding Managing Director" },
+      { name: "Douglas French", role: "Founding Managing Director" },
+      { name: "Dennis McWilliams", role: "Managing Director" },
+      { name: "Omar Khalil", role: "Managing Director" }
+    ],
+    timeline: [
+      { year: "2006", event: "Santé Ventures is founded in Austin, Texas." },
+      { year: "2007", event: "The firm launches its first fund, the start of five funds raised through 2024." },
+      { year: "2021", event: "Boston Scientific exercises its option to acquire portfolio company Farapulse, paying $295 million upfront for the remaining shares." },
+      { year: "2023", event: "Portfolio company Laminar is acquired by Johnson and Johnson MedTech for $400 million upfront plus milestone payments." },
+      { year: "2026", event: "Santé Ventures closes its fifth fund at $330 million, exceeding its $300 million target." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Rock Health Capital",
+    sectors: ["Digital Health", "Healthcare"],
+    signatureExit: "Portfolio company Omada Health completed its IPO on Nasdaq in June 2025, pricing at $19 per share and raising about $150 million.",
+    slug: "rock-health-capital",
+    website: "https://rockhealthcapital.com",
+    short: "Rock Health",
+    founded: 2010,
+    hq: "San Francisco, CA",
+    aum: null,
+    thesis: "Rock Health Capital is the venture fund arm of Rock Health, the San Francisco organization founded in 2010 by Halle Tecco and Nate Gross that describes itself as the first venture fund dedicated to digital health. Rock Health began as a startup accelerator, graduating its inaugural class in June 2011, and later dropped the accelerator model to operate as a conventional early-stage investor. Today the broader Rock Health platform spans three units. Rock Health Capital is the fund, Rock Health Advisory is an enterprise strategy group known for widely cited digital health funding research, and RockHealth.org is a nonprofit focused on health equity. The fund invests exclusively at Pre-Seed, Seed and Series A in companies at the intersection of healthcare and technology, and is led by Bill Evans, who joined Rock Health as managing director in 2016 and is styled Founder and General Partner of Rock Health Capital. The portfolio lists roughly 75 companies including Omada Health, which completed a Nasdaq IPO in June 2025, along with Doctor On Demand, Collective Health, Virta, Benchling, Wellframe and Zus Health. The firm does not publicly state assets under management, and its research arm rather than the fund accounts for most of its public profile.",
+    leadership: [
+      { name: "Bill Evans", role: "Founder and General Partner" },
+      { name: "Sean Day", role: "Principal" }
+    ],
+    timeline: [
+      { year: "2010", event: "Rock Health is founded by Halle Tecco and Nate Gross as the first venture fund dedicated to digital health." },
+      { year: "2011", event: "Rock Health debuts its inaugural accelerator class of health startups in June." },
+      { year: "2016", event: "Bill Evans is appointed managing director of Rock Health in October." },
+      { year: "2025", event: "Portfolio company Omada Health goes public on Nasdaq in June, pricing its IPO at $19 per share." }
+    ],
+    holdings: [
+      { name: "Omada Health", ticker: "OMDA", investedYear: null, historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Courtside Ventures",
+    sectors: ["Consumer", "Media", "Gaming"],
+    signatureExit: "Seed investment The Athletic was acquired by The New York Times for $550 million in 2022.",
+    slug: "courtside-ventures",
+    website: "https://courtsidevc.com",
+    short: "Courtside",
+    founded: 2016,
+    hq: "New York, NY",
+    aum: "$200M+ (site: \"$200M+ AUM Across 3 Funds\")",
+    thesis: "Courtside Ventures is an early-stage venture firm that describes itself as the leading fund focused on sports, lifestyle and gaming, backing founders who serve younger demographics and emerging consumer behavior across fan engagement, collectibles, wellness and interactive entertainment. The firm launched in January 2016 with a $35 million first fund anchored by Cleveland Cavaliers owner Dan Gilbert alongside Bruin Sports Capital and advertising group WPP, and was originally headquartered in Detroit's Madison Building with a New York office; the firm is today headquartered in New York. Partners Vasu Kulkarni, Deepen Parikh and Kai Bond lead investing. In January 2023 Courtside closed its $100 million Fund III with limited partners including team owners Tony Ressler, Dan Gilbert and David Blitzer, athletes Shaquille O'Neal and Larry Fitzgerald, and corporates such as Dick's Sporting Goods and Superbet, bringing committed capital to more than $200 million across three funds. The firm reports more than 80 active investments across 8 countries, with about 20 percent based outside the US, and 9 companies acquired or taken public, including The Athletic, sold to The New York Times in 2022, and Beam, sold to Microsoft. Other notable portfolio companies include StockX, 100 Thieves, WinZO and Veo.",
+    leadership: [
+      { name: "Vasu Kulkarni", role: "Partner" },
+      { name: "Deepen Parikh", role: "Partner" },
+      { name: "Kai Bond", role: "Partner" },
+      { name: "Cort Post", role: "Principal" }
+    ],
+    timeline: [
+      { year: "2016", event: "Launched in January with a $35 million first fund backed by Dan Gilbert, Bruin Sports Capital and WPP, headquartered in Detroit's Madison Building with a New York office to follow." },
+      { year: "2017", event: "Announced its first-year portfolio, including leading the seed round of Y Combinator alum The Athletic." },
+      { year: "2022", event: "Portfolio company The Athletic was acquired by The New York Times for $550 million." },
+      { year: "2023", event: "Closed the $100 million Fund III with participation from Tony Ressler, Dan Gilbert, David Blitzer, Shaquille O'Neal, Larry Fitzgerald, Dick's Sporting Goods and Superbet." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Imaginary Ventures",
+    sectors: ["Consumer", "Ecommerce", "Retail"],
+    signatureExit: "Farfetch, which the firm lists among its exits, went public on the NYSE in 2018 and was later taken over by Coupang.",
+    slug: "imaginary-ventures",
+    website: "https://imaginary.co",
+    short: "Imaginary",
+    founded: 2018,
+    hq: "New York, NY",
+    aum: "$1 Billion in assets under management (firm's April 2022 release)",
+    thesis: "Imaginary Ventures invests in what it calls generationally-defining consumer businesses and select enabling technology companies, spanning direct-to-consumer brands in fashion, beauty, food and wellness plus the commerce infrastructure behind them. The firm was founded in 2018 by Dame Natalie Massenet, who founded luxury etailer Net-a-Porter in 2000 and built it into a billion dollar business, and Nick Brown, previously a partner at 14W Venture Partners where he backed Glossier, Warby Parker and The RealReal. Based in New York, Imaginary launched with a $75 million first fund in 2018, raised a $160 million second fund announced in December 2020, and in April 2022 announced a $500 million Fund III across early and late stage vehicles, taking the firm to $1 billion in assets under management four years after launch. The portfolio includes SKIMS, Glossier, Mejuri, Daily Harvest, Reformation, GlossGenius, ShiftSmart and Stripe, and the firm counts Farfetch, Reformation and NuOrder among its exits. Imaginary differentiates on operator experience in brand building and retail rather than generalist software investing, pairing Massenet's three decades in consumer trends with Brown's early-stage consumer track record, and it invests from seed through growth in both North America and Europe.",
+    leadership: [
+      { name: "Natalie Massenet", role: "Co-Founder and General Partner" },
+      { name: "Nick Brown", role: "Co-Founder and General Partner" },
+      { name: "Kelly Dill", role: "Partner" },
+      { name: "Logan Langberg", role: "Partner" },
+      { name: "Andrew Maxman", role: "Partner" }
+    ],
+    timeline: [
+      { year: "2018", event: "Founded by Natalie Massenet and Nick Brown with a $75 million first fund." },
+      { year: "2018", event: "Portfolio company Farfetch, later listed by the firm among its exits, went public on the NYSE in September at a $6.2 billion valuation." },
+      { year: "2020", event: "Raised a $160 million second fund, more than double the size of the 2018 debut fund." },
+      { year: "2022", event: "Announced the $500 million Fund III across early and late stage vehicles, growing funds under management to $1 billion, and promoted Kelly Dill and Logan Langberg to Partner." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "GSV Ventures",
+    sectors: ["Education", "Edtech", "Workforce Development"],
+    signatureExit: "Portfolio company Coursera completed its initial public offering on the NYSE in March 2021.",
+    slug: "gsv-ventures",
+    website: "https://gsv.ventures",
+    short: "GSV Ventures",
+    founded: 2016,
+    hq: "Chicago, IL",
+    aum: "$811.1M (regulatory assets under management, Form ADV, GSV Ventures Management, LLC)",
+    thesis: "GSV Ventures is a venture fund investing exclusively in the digital learning and workforce skills market, backing entrepreneurs across what it calls the Pre-K to Gray arc of learning, from early childhood and K-12 through higher education and lifelong workforce upskilling. The fund was co-founded by Deborah Quazzo, its Managing Partner, and Michael Moe, founder of GSV, who now sits on the advisory board; Adam Freed serves as a second Managing Partner. GSV Fund I raised $97 million in limited partner commitments in 2016, and Fund II closed in March 2021 at $180 million, at which point the firm reported over $400 million in assets under management across the two funds and special purpose vehicles; the manager's Form ADV reports $811.1 million in regulatory assets under management. The portfolio has included Coursera, which went public on the NYSE in 2021, along with Course Hero, ClassDojo, MasterClass, Degreed, Guild Education, Andela, Photomath and Remind. GSV Ventures is distinct from GSV Capital, the former publicly traded fund that was renamed SuRo Capital, and is closely related to the ASU+GSV Summit, the annual education innovation conference that Quazzo co-founded with Arizona State University, which the firm links from its own site.",
+    leadership: [
+      { name: "Deborah Quazzo", role: "Managing Partner" },
+      { name: "Adam Freed", role: "Managing Partner" },
+      { name: "Michael Cohn", role: "Co-Founder & Partner" },
+      { name: "Luben Pampoulov", role: "Partner" },
+      { name: "Claire Zau", role: "Partner (AI Lead)" }
+    ],
+    timeline: [
+      { year: "2016", event: "GSV Fund I raised $97 million in limited partner commitments to invest in the digital learning market." },
+      { year: "2021", event: "Closed GSV Fund II at $180 million in equity commitments, bringing assets under management to over $400 million across the two funds and special purpose vehicles." },
+      { year: "2021", event: "Portfolio company Coursera completed its initial public offering, with shares beginning trading on the NYSE under the ticker COUR in March." }
+    ],
+    holdings: [
+      { name: "Coursera", ticker: "COUR", investedYear: null, historicalPrice: null, price: null }
+    ]
+  }
 ];
