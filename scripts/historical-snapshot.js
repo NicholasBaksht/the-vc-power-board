@@ -244,7 +244,7 @@ function renderTimeline(firm, container) {
   container.innerHTML = `
     <div class="snapshot-header">
       <a href="#${firm.slug}" class="snapshot-firm-name">${firm.name}</a>
-      <span class="snapshot-firm-meta">${allEvents.length} real dated event${allEvents.length === 1 ? '' : 's'} on file · founded ${firm.founded}</span>
+      <span class="snapshot-firm-meta">${allEvents.length} real dated event${allEvents.length === 1 ? '' : 's'} on file${firm.founded ? ' · founded ' + firm.founded : ''}</span>
     </div>
 
     <div class="tl-filter-bar">
@@ -428,11 +428,11 @@ function renderCompareYears(firm, container) {
     <div class="snapshot-controls">
       <div class="snapshot-control-group">
         <label class="snapshot-label" for="compareFromSelect">From Year</label>
-        <input type="number" id="compareFromSelect" class="snapshot-select" value="${snapshotCompareFrom}" min="${firm.founded}" max="${currentYear}">
+        <input type="number" id="compareFromSelect" class="snapshot-select" value="${snapshotCompareFrom}" min="${firm.founded || ''}" max="${currentYear}">
       </div>
       <div class="snapshot-control-group">
         <label class="snapshot-label" for="compareToSelect">To Year</label>
-        <input type="number" id="compareToSelect" class="snapshot-select" value="${snapshotCompareTo}" min="${firm.founded}" max="${currentYear}">
+        <input type="number" id="compareToSelect" class="snapshot-select" value="${snapshotCompareTo}" min="${firm.founded || ''}" max="${currentYear}">
       </div>
     </div>
 
