@@ -195,7 +195,13 @@ function computeSimilarFirms(firm, count = 3) {
 // ============================================================
 function computeWhyThisVC(firm) {
   const bullets = [];
-  const cleanAum = firm.aum.replace(/\s*\(.*?\)/, '');
+  /* aum and signatureExit are honestly null on firms where no sourced
+     figure exists (never-guess policy). This function assumed strings
+     and produced a crashed page for null aum and a rendered
+     "Signature win: undefined." for null exits. Every bullet now
+     requires its underlying fact to exist - a missing fact means a
+     missing bullet, not a fabricated or broken one. */
+  const cleanAum = firm.aum ? firm.aum.replace(/\s*\(.*?\)/, '') : null;
 
   function listJoin(arr) {
     if (arr.length <= 1) return arr.join('');
@@ -203,17 +209,21 @@ function computeWhyThisVC(firm) {
     return arr.slice(0, -1).join(', ') + ', and ' + arr[arr.length - 1];
   }
 
-  // --- Scale bullet, from real rank + AUM ---
-  if (firm.rank <= 3) {
-    bullets.push(`One of the largest venture capital firms in the world, ranked #${firm.rank} by assets under management (${cleanAum}).`);
-  } else if (firm.rank <= 10) {
-    bullets.push(`A top-10 firm by assets under management, with ${cleanAum} in committed capital.`);
-  } else {
-    bullets.push(`Manages ${cleanAum} in assets, with a real track record across market cycles.`);
+  // --- Scale bullet, from real rank + AUM (only when AUM is on file) ---
+  if (cleanAum) {
+    if (firm.rank != null && firm.rank <= 3) {
+      bullets.push(`One of the largest venture capital firms in the world, ranked #${firm.rank} by assets under management (${cleanAum}).`);
+    } else if (firm.rank != null && firm.rank <= 10) {
+      bullets.push(`A top-10 firm by assets under management, with ${cleanAum} in committed capital.`);
+    } else {
+      bullets.push(`Manages ${cleanAum} in assets, with a real track record across market cycles.`);
+    }
   }
 
-  // --- Signature exit bullet, reusing the firm's already-sourced signatureExit text ---
-  bullets.push(`Signature win: ${firm.signatureExit}.`);
+  // --- Signature exit bullet, only when the firm actually has one on file ---
+  if (firm.signatureExit) {
+    bullets.push(`Signature win: ${firm.signatureExit}.`);
+  }
 
   // --- Sector focus bullet, from the Philosophy Scorecard's real 5-star categories ---
   const philScores = computePhilosophyScores(firm);
@@ -433,7 +443,7 @@ function renderSimilarFirms(firm) {
     return `
       <a href="#${f.slug}" class="similar-firm-card">
         <div class="similar-firm-name">${f.name}</div>
-        <div class="similar-firm-aum">${f.aum}</div>
+        <div class="similar-firm-aum">${f.aum || ''}</div>
         <div class="similar-firm-match">${matchPct}% profile match</div>
       </a>
     `;
@@ -455,7 +465,10 @@ function renderSimilarFirms(firm) {
 function renderDashboard() {
   const maxAUM = Math.max(...firms.map(f => parseAumNumber(f.aum)));
 
-  const aumRows = firms.map(f => {
+  /* A bar chart of AUM cannot honestly include a firm whose AUM is
+     not on file; those firms are omitted rather than shown as "null"
+     with a zero-width bar. */
+  const aumRows = firms.filter(f => f.aum).map(f => {
     const val = parseAumNumber(f.aum);
     return `
       <div class="aum-bar-row">
