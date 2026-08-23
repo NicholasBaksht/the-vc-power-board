@@ -301,6 +301,11 @@ function rtQStyles() {
   #researchView .rtq-close { position: absolute; top: 18px; right: 22px; font-family: var(--mono);
     font-size: 12px; color: var(--ink-dim); text-decoration: none; border: 1px solid var(--hairline);
     padding: 5px 10px; border-radius: 3px; }
+  #researchView .rtq-tabs { display: flex; gap: 8px; margin: 12px 0 2px; }
+  #researchView .rtq-tab { font-family: var(--mono); font-size: 11px; letter-spacing: .06em;
+    text-transform: uppercase; color: var(--ink-dim); text-decoration: none;
+    border: 1px solid var(--hairline); border-radius: 3px; padding: 5px 12px; }
+  #researchView .rtq-tab.active { color: var(--accent-bright); border-color: var(--accent); }
   #researchView .rtq-summary { display: flex; gap: 10px; margin: 18px 0; flex-wrap: wrap; }
   #researchView .rtq-sum { border: 1px solid var(--hairline); border-radius: 4px; padding: 10px 16px;
     background: var(--surface); min-width: 110px; }
@@ -347,6 +352,122 @@ function rtQMessage(title, body) {
     '<div class="rtq-msg"><b>' + title + '</b>' + body + '</div></div>';
 }
 
+/* ============================================================
+   PARTNER RESEARCH HEALTH - same philosophy as firm health:
+   categorical, rule-based, admin-only, measuring only Power
+   Board's research coverage of the person. Never public.
+
+   THE RULES (in order):
+     WEAK          no biography AND no attributable investments
+     NEEDS REVIEW  zero profile sources, OR zero attributable
+                   investments (nothing verifies an investing
+                   record either way)
+     ADEQUATE      1-5 attributable investments with sources
+     STRONG        6+ attributable investments, sources and a
+                   biography on file
+   A departure on record is surfaced as context, not a penalty:
+   a departed partner's research can still be complete. */
+function rtPartnerHealth(slug) {
+  const p = partnerProfiles[slug];
+  const ni = (p.notableInvestments || []).length;
+  const src = (p.sources || []).length;
+  const reasons = [];
+  if (!p.biography) reasons.push('missing biography');
+  if (!(p.sectors || []).length) reasons.push('missing sectors');
+  if (!p.title) reasons.push('missing title');
+  if (!src) reasons.push('no profile sources');
+  if (!ni) reasons.push('no attributable investments');
+  if (!(p.boardSeats || []).length) reasons.push('no board data');
+  if (p.departedNote || p.departedYear != null) reasons.push('departure on record');
+
+  let category;
+  if (!p.biography && ni === 0) category = 'weak';
+  else if (src === 0 || ni === 0) category = 'needs-review';
+  else if (ni >= 6 && p.biography) category = 'strong';
+  else category = 'adequate';
+  return { category: category, ni: ni, src: src,
+           boards: (p.boardSeats || []).length, reasons: reasons };
+}
+
+let rtQMode = 'firms';
+
+function rtQRenderPeople() {
+  const slugs = Object.keys(partnerProfiles);
+  const rows = slugs.map(function (s) {
+    return { slug: s, p: partnerProfiles[s], h: rtPartnerHealth(s) };
+  });
+  const counts = { 'weak': 0, 'needs-review': 0, 'adequate': 0, 'strong': 0 };
+  rows.forEach(function (r) { counts[r.h.category]++; });
+
+  const host = rtQHost();
+  host.innerHTML = '<div class="rtq-inner"><a class="rtq-close" href="#">close</a>' +
+    '<div class="rtq-kicker">Internal · Research Quality</div>' +
+    '<h1>Research Queue</h1>' + rtQTabs('people') +
+    '<p class="rtq-sub">Coverage of Power Board\'s research on every tracked person. ' +
+    '"No attributable investments" means none are sourced yet - never that the person has made none.</p>' +
+    '<div class="rtq-summary">' +
+      ['weak', 'needs-review', 'adequate', 'strong'].map(function (c) {
+        return '<div class="rtq-sum"><div class="n">' + counts[c] + '</div><div class="l">' + RT_CAT_LABEL[c] + '</div></div>';
+      }).join('') +
+      '<div class="rtq-sum"><div class="n">' + rows.length + '</div><div class="l">People</div></div>' +
+    '</div>' +
+    '<div class="rtq-controls">' +
+      '<input type="text" id="rtqSearch" placeholder="filter by name or firm...">' +
+      '<select id="rtqSort">' +
+        '<option value="health">sort: worst health first</option>' +
+        '<option value="ni">sort: most attributions</option>' +
+        '<option value="name">sort: name</option>' +
+      '</select>' +
+      '<label><input type="checkbox" class="rtqF" value="no attributable investments"> no attribution</label>' +
+      '<label><input type="checkbox" class="rtqF" value="no profile sources"> no sources</label>' +
+      '<label><input type="checkbox" class="rtqF" value="missing biography"> no bio</label>' +
+      '<label><input type="checkbox" class="rtqF" value="missing sectors"> no sectors</label>' +
+      '<label><input type="checkbox" class="rtqF" value="departure on record"> departed</label>' +
+    '</div>' +
+    '<table><thead><tr><th>Person</th><th>Firm</th><th>Health</th><th>Attributed</th><th>Boards</th><th>Why</th></tr></thead>' +
+    '<tbody id="rtqBody"></tbody></table></div>';
+
+  function draw() {
+    const term = (document.getElementById('rtqSearch').value || '').toLowerCase();
+    const sort = document.getElementById('rtqSort').value;
+    const filters = Array.prototype.slice.call(document.querySelectorAll('.rtqF:checked')).map(function (c) { return c.value; });
+    let list = rows.filter(function (r) {
+      if (term && (r.p.name + ' ' + (r.p.firm || '')).toLowerCase().indexOf(term) < 0) return false;
+      return filters.every(function (f) { return r.h.reasons.indexOf(f) >= 0; });
+    });
+    list.sort(function (a, b) {
+      if (sort === 'name') return a.p.name.localeCompare(b.p.name);
+      if (sort === 'ni') return b.h.ni - a.h.ni || a.p.name.localeCompare(b.p.name);
+      return RT_CAT_RANK[a.h.category] - RT_CAT_RANK[b.h.category] || a.p.name.localeCompare(b.p.name);
+    });
+    // 1,048 rows would make an unusable page; the queue is for working
+    // the worst first, so it pages in slices under the active sort.
+    const LIMIT = 250;
+    document.getElementById('rtqBody').innerHTML = list.slice(0, LIMIT).map(function (r) {
+      return '<tr><td><a href="#partner/' + rtEsc(r.slug) + '">' + rtEsc(r.p.name) + '</a></td>' +
+        '<td>' + rtEsc(r.p.firm || '—') + '</td>' +
+        '<td><span class="rtq-cat ' + r.h.category + '">' + RT_CAT_LABEL[r.h.category] + '</span></td>' +
+        '<td>' + (r.h.ni || '—') + '</td><td>' + (r.h.boards || '—') + '</td>' +
+        '<td class="rtq-reasons">' + (r.h.reasons.length ? rtEsc(r.h.reasons.join('; ')) : 'complete and supported') + '</td></tr>';
+    }).join('') +
+    (list.length > LIMIT ? '<tr><td colspan="6" class="rtq-reasons">Showing the first ' + LIMIT + ' of ' +
+      list.length + ' under this sort - narrow with filters or search.</td></tr>' : '') ||
+    '<tr><td colspan="6" class="rtq-reasons">No people match the current filters.</td></tr>';
+  }
+  document.getElementById('rtqSearch').addEventListener('input', draw);
+  document.getElementById('rtqSort').addEventListener('change', draw);
+  Array.prototype.forEach.call(document.querySelectorAll('.rtqF'), function (c) { c.addEventListener('change', draw); });
+  draw();
+}
+
+function rtQTabs(active) {
+  return '<div class="rtq-tabs">' +
+    '<a href="#" class="rtq-tab' + (active === 'firms' ? ' active' : '') +
+      '" onclick="rtQMode=\'firms\';rtQRender();return false;">Firms</a>' +
+    '<a href="#" class="rtq-tab' + (active === 'people' ? ' active' : '') +
+      '" onclick="rtQMode=\'people\';rtQRenderPeople();return false;">People</a></div>';
+}
+
 function rtQRender() {
   const rows = firms.map(function (f) {
     const h = rtHealth(f);
@@ -359,7 +480,7 @@ function rtQRender() {
   const host = rtQHost();
   host.innerHTML = '<div class="rtq-inner"><a class="rtq-close" href="#">close</a>' +
     '<div class="rtq-kicker">Internal · Research Quality</div>' +
-    '<h1>Research Queue</h1>' +
+    '<h1>Research Queue</h1>' + rtQTabs('firms') +
     '<p class="rtq-sub">Coverage and support for Power Board\'s research on every firm. This measures the ' +
     'research, never the firm. Rules are deterministic and documented in research-trust.js; there is no score, ' +
     'because arithmetic on booleans would be false precision.</p>' +
