@@ -398,7 +398,7 @@ function renderDiscoveryCard(m, criteria) {
         </div>
         <div class="disc-result-main">
           <div class="disc-result-name"><a href="#${firm.slug}">${firm.name}</a></div>
-          <div class="disc-result-meta">${firm.aum} · ${firm.hq}</div>
+          <div class="disc-result-meta">${[firm.aum, firm.hq].filter(Boolean).join(' · ')}</div>
           <div class="disc-checks">${checksHTML}${missesHTML}</div>
           ${networkHTML}
         </div>
