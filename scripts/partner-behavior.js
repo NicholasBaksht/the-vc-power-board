@@ -152,6 +152,37 @@ function pbehNorm(x) {
   return String(x || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
+/* Candidate lookup keys for one company name. Exact-match only, but a
+   name like "Block (Square)" legitimately carries two exact names, and
+   "SambaNova Systems" differs from "SambaNova" only by a corporate
+   suffix. Substring matching stays forbidden - the audit showed it
+   would pair Zoomcar with Zoom and Ringkas with Ring. */
+function pbehAliasKeys(name) {
+  const keys = [];
+  const push = function (s) {
+    const k = pbehNorm(s);
+    if (k && k.length >= 3 && keys.indexOf(k) < 0) keys.push(k);
+  };
+  const raw = String(name || '');
+  push(raw);
+  const m = raw.match(/^(.*?)\s*\(([^)]+)\)\s*$/);   // "Base (Alias)"
+  if (m) { push(m[1]); push(m[2]); }
+  return keys;
+}
+
+/* Same-org fallback key: corporate suffix stripped. ONLY safe inside a
+   single firm's own deal/holdings records, where two distinct portfolio
+   companies differing only by "Systems"/"Labs" are not realistic. Never
+   used for the global company-sector reference, where "Alloy" (identity
+   fintech) must not inherit from "Alloy Enterprises" (manufacturing). */
+function pbehSuffixKey(name) {
+  const stripped = String(name || '')
+    .replace(/\s*\((?:[^)]+)\)\s*$/, '')
+    .replace(/[,.]?\s+(systems|technologies|technology|labs|inc|corp|corporation|ltd|gmbh|ag|se|group|company|co|holdings)\.?$/i, '');
+  const k = pbehNorm(stripped);
+  return k.length >= 4 ? k : null;
+}
+
 /* Round strings in FIRM_DEALS are recorded verbatim from sources
    ("seed financing", "Series B extension"). Bucketing is display
    normalisation only - the verbatim value stays in the deal row. */
@@ -170,20 +201,68 @@ function pbehRoundBucket(round) {
 let _pbehIdx = null;
 function pbehIndexes() {
   if (_pbehIdx) return _pbehIdx;
-  const deals = {}, holds = {};
+  const deals = {}, holds = {}, holdsByTicker = {}, research = {}, sectors = {};
   if (typeof FIRM_DEALS !== 'undefined') {
     FIRM_DEALS.forEach(function (d) {
-      deals[d.firmSlug + '|' + pbehNorm(d.company)] = d;
+      pbehAliasKeys(d.company).forEach(function (k) {
+        deals[d.firmSlug + '|' + k] = d;
+      });
+      const sk = pbehSuffixKey(d.company);
+      if (sk && !deals[d.firmSlug + '|' + sk]) deals[d.firmSlug + '|' + sk] = d;
     });
   }
   if (typeof firms !== 'undefined') {
     firms.forEach(function (f) {
       (f.holdings || []).forEach(function (h) {
-        holds[f.slug + '|' + pbehNorm(h.name)] = h;
+        pbehAliasKeys(h.name).forEach(function (k) {
+          holds[f.slug + '|' + k] = h;
+        });
+        const sk = pbehSuffixKey(h.name);
+        if (sk && !holds[f.slug + '|' + sk]) holds[f.slug + '|' + sk] = h;
+        if (h.ticker) holdsByTicker[f.slug + '|' + h.ticker] = h;
       });
     });
   }
-  _pbehIdx = { deals: deals, holds: holds };
+  /* PEER-RESEARCH REUSE: a round researched with deal-level evidence for
+     one partner describes the FIRM's entry into that company. A colleague
+     at the same org, attributed to the same company, may reuse the round
+     facts - same logic as the FIRM_DEALS join, sourced from the same URL.
+     Attribution is never reused; only round metadata is. */
+  if (typeof partnerProfiles !== 'undefined') {
+    Object.keys(partnerProfiles).forEach(function (ps) {
+      const pp = partnerProfiles[ps];
+      const org0 = pp.firmSlug;
+      (pp.notableInvestments || []).forEach(function (n) {
+        if (n.stage == null && n.year == null) return;
+        const ev = (n.evidence || []).filter(function (e) {
+          return e.type === 'deal-announcement' || e.type === 'firm-announcement' || e.type === 'regulatory';
+        });
+        if (!ev.length) return;
+        const org = n.orgAtTime || org0;
+        if (!org) return;
+        pbehAliasKeys(n.name).forEach(function (k) {
+          const key = org + '|' + k;
+          if (!research[key]) research[key] = {
+            stage: n.stage || null, year: n.year || null,
+            sector: n.sector || null, subsector: n.subsector || null,
+            url: ev[0].url, from: ps
+          };
+        });
+      });
+    });
+  }
+  /* company-sector reference lookup, expanded by declared aliases */
+  if (typeof COMPANY_SECTORS !== 'undefined') {
+    Object.keys(COMPANY_SECTORS).forEach(function (k) {
+      sectors[k] = COMPANY_SECTORS[k];
+      (COMPANY_SECTORS[k].aliases || []).forEach(function (a) {
+        const ak = pbehNorm(a);
+        if (ak && !sectors[ak]) sectors[ak] = COMPANY_SECTORS[k];
+      });
+    });
+  }
+  _pbehIdx = { deals: deals, holds: holds, holdsByTicker: holdsByTicker,
+               research: research, sectors: sectors };
   return _pbehIdx;
 }
 
@@ -209,19 +288,32 @@ function pbehCompute(slug) {
     })) row.dealSource = row.dealSource || (row.evidence[0] && row.evidence[0].url);
     const orgSlug = n.orgAtTime || p.firmSlug;   // Part 19: history-safe
     if (orgSlug) {
-      const key = orgSlug + '|' + pbehNorm(n.name);
-      const h = idx.holds[key];
+      const keys = pbehAliasKeys(n.name);
+      const skey = pbehSuffixKey(n.name);
+      const lookup = function (map, sameOrgOnly) {
+        for (let i = 0; i < keys.length; i++) {
+          const v = map[orgSlug + '|' + keys[i]];
+          if (v) return v;
+        }
+        // suffix fallback stays inside the org's own records
+        if (sameOrgOnly && skey) return map[orgSlug + '|' + skey] || null;
+        return null;
+      };
+      const h = lookup(idx.holds, true) ||
+                (n.ticker ? idx.holdsByTicker[orgSlug + '|' + n.ticker] : null);
       if (h) {
         if (row.year == null && h.investedYear != null) { row.year = h.investedYear; row.via.push('firm holdings'); }
         if (!row.ticker && h.ticker) row.ticker = h.ticker;
       }
-      const d = idx.deals[key];
+      const d = lookup(idx.deals, true);
       /* company-sector reference: sector is a property of the company,
          not of any one deal, so a verified company entry may fill a
          missing sector on any row naming it. It never supplies stage
-         or year - those belong to a specific investment. */
-      if (row.sector == null && typeof COMPANY_SECTORS !== 'undefined') {
-        const cref = COMPANY_SECTORS[pbehNorm(n.name)];
+         or year - those belong to a specific investment. Exact-name and
+         declared-alias matches only; no suffix fallback here. */
+      if (row.sector == null) {
+        let cref = null;
+        for (let i = 0; i < keys.length && !cref; i++) cref = idx.sectors[keys[i]];
         if (cref) {
           row.sector = cref.sector;
           if (!row.subsector && cref.subsector) row.subsector = cref.subsector;
@@ -239,6 +331,23 @@ function pbehCompute(slug) {
         }
         if (d.sourceUrl) row.dealSource = d.sourceUrl;
         row.via.push('tracked deal');
+      }
+      /* peer-research reuse: a colleague's sourced round for the same
+         company at the same org supplies the round facts this bare row
+         lacks. The row's own attribution evidence is untouched. */
+      if (row.stage == null || row.year == null || row.sector == null) {
+        let rr = null;
+        for (let i = 0; i < keys.length && !rr; i++) rr = idx.research[orgSlug + '|' + keys[i]];
+        if (rr && rr.from !== slug) {
+          const rDeparted = (p.departedYear != null) && rr.year != null && rr.year > p.departedYear;
+          if (!rDeparted) {
+            if (row.stage == null && rr.stage) row.stage = rr.stage;
+            if (row.year == null && rr.year) { row.year = rr.year; row.yearPrecision = row.yearPrecision || 'year'; }
+            if (row.sector == null && rr.sector) { row.sector = rr.sector; if (!row.subsector && rr.subsector) row.subsector = rr.subsector; }
+            if (!row.dealSource) row.dealSource = rr.url;
+            row.via.push('peer research');
+          }
+        }
       }
     }
     return row;
