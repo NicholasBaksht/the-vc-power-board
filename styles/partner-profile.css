@@ -381,15 +381,14 @@
 }
 
 /* ============================================================
-   PARTNER INVESTMENT BEHAVIOR - redesigned as institutional
-   research, not terminal output. Sans-serif carries the content;
-   monospace is demoted to small metadata (years, tickers, source
-   counts). Thin rules divide subsections; there are no nested
-   cards, no glow, no gradients. Bars render only past the
-   sample-size floor enforced in partner-behavior.js.
+   PARTNER INVESTMENT BEHAVIOR - research layout, not a table.
+   Structure: title -> summary strip -> (bars when samples allow)
+   -> two-column research grid (attribution timeline | research
+   context) -> insight when earned -> methodology line. Tickers
+   are muted metadata, never pills. The only full-width rules are
+   the two major structural divisions.
    ============================================================ */
 .pbeh { margin: 4px 0 8px; }
-
 .pbeh-title {
   font-family: var(--sans);
   font-size: 16px;
@@ -397,116 +396,165 @@
   color: var(--ink);
   letter-spacing: 0;
   text-transform: none;
-  margin: 0 0 2px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid var(--hairline);
+  margin: 0 0 10px;
 }
-.pbeh-summary { padding: 8px 0 2px; }
-.pbeh-headline {
+
+/* --- summary strip: one row, thin vertical separators, no cards --- */
+.pbeh-strip {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  align-items: stretch;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  padding: 10px 0;
+  margin-bottom: 14px;
+}
+.pbeh-stat { padding: 0 22px; border-left: 1px solid var(--hairline); }
+.pbeh-stat:first-child { padding-left: 0; border-left: none; }
+@media (max-width: 480px) {
+  .pbeh-stat { padding: 0 12px; }
+}
+.pbeh-stat-v {
   font-family: var(--sans);
-  font-size: 14px;
+  font-size: 19px;
   font-weight: 600;
   color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.15;
 }
-.pbeh-headline-note { font-weight: 400; color: var(--ink-dim); }
-.pbeh-meta-line {
-  font-family: var(--mono);
+.pbeh-stat-l {
+  font-family: var(--sans);
   font-size: 10.5px;
   color: var(--ink-dim);
-  margin-top: 2px;
+  margin-top: 1px;
 }
-.pbeh-meta-line a { color: var(--gold); text-decoration: none; }
-.pbeh-meta-line a:hover { color: var(--gold-bright); }
 
 .pbeh-sub {
   font-family: var(--sans);
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: 0;
-  text-transform: none;
-  margin: 14px 0 4px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid var(--hairline);
-}
-.pbeh-basis {
-  font-family: var(--mono);
-  font-size: 10px;
-  color: var(--ink-dim);
-  margin-top: 3px;
-}
-
-.pbeh-bars { padding: 2px 0; }
-.pbeh-bar-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 2px 0;
-}
-.pbeh-bar-label {
-  font-family: var(--sans);
-  font-size: 12.5px;
-  color: var(--ink);
-  min-width: 96px;
-}
-.pbeh-bar-track {
-  flex: 1;
-  height: 6px;
-  background: var(--surface-raised);
-  border-radius: 2px;
-  overflow: hidden;
-}
-.pbeh-bar-fill { display: block; height: 100%; background: var(--accent); }
-.pbeh-bar-pct {
-  font-family: var(--sans);
   font-size: 12px;
+  font-weight: 600;
   color: var(--ink-dim);
-  min-width: 34px;
-  text-align: right;
-  font-variant-numeric: tabular-nums;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  margin: 16px 0 8px;
 }
 
-.pbeh-list { margin: 0; }
-.pbeh-inv-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 12px;
-  padding: 4px 0;
-  border-bottom: 1px solid var(--hairline);
+/* --- two-column research grid --- */
+.pbeh-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 200px;
+  gap: 30px;
+  align-items: start;
 }
-.pbeh-inv-row:last-child { border-bottom: none; }
-.pbeh-inv-main {
-  font-family: var(--sans);
-  font-size: 13px;
-  color: var(--ink);
-  min-width: 0;
+.pbeh-main .pbeh-sub:first-child, .pbeh-side .pbeh-sub:first-child { margin-top: 0; }
+@media (max-width: 1000px) {
+  .pbeh-grid { grid-template-columns: 1fr; gap: 6px; }
 }
-.pbeh-ticker {
-  font-family: var(--mono);
-  font-size: 9.5px;
-  color: var(--ink-dim);
-  border: 1px solid var(--hairline);
-  border-radius: 3px;
-  padding: 1px 4px;
-  margin-left: 7px;
-  vertical-align: 1px;
+
+/* --- attribution timeline --- */
+.pbeh-tl { position: relative; padding-left: 18px; }
+.pbeh-tl::before {
+  content: '';
+  position: absolute;
+  left: 3px; top: 6px; bottom: 6px;
+  width: 1px;
+  background: var(--hairline);
 }
-.pbeh-inv-meta {
+.pbeh-tl-year {
   font-family: var(--mono);
   font-size: 10.5px;
   color: var(--ink-dim);
-  white-space: nowrap;
-  font-variant-numeric: tabular-nums;
+  margin: 10px 0 3px;
+  position: relative;
 }
-
-.pbeh-note {
+.pbeh-tl-year:first-child { margin-top: 0; }
+.pbeh-tl-undated {
   font-family: var(--sans);
-  font-size: 11.5px;
-  color: var(--ink-dim);
-  line-height: 1.5;
-  margin: 6px 0 2px;
+  font-size: 10px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
 }
+.pbeh-tl-item { position: relative; padding: 3px 0 5px; }
+.pbeh-tl-dot {
+  position: absolute;
+  left: -18px; top: 9px;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.pbeh-tl-undated ~ .pbeh-tl-item .pbeh-tl-dot { background: var(--hairline); }
+.pbeh-tl-name {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--ink);
+  line-height: 1.35;
+}
+.pbeh-tl-meta {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-dim);
+  letter-spacing: .03em;
+  margin-top: 1px;
+}
+.pbeh-tl-evidence {
+  font-family: var(--sans);
+  font-size: 10.5px;
+  color: var(--gold);
+  text-decoration: none;
+}
+.pbeh-tl-evidence:hover { color: var(--gold-bright); }
+
+/* --- research context (right column) --- */
+.pbeh-ctx { margin-bottom: 4px; }
+.pbeh-ctx-row {
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--ink);
+  line-height: 1.5;
+  margin-bottom: 3px;
+}
+.pbeh-quiet { color: var(--ink-dim); }
+.pbeh-ctx-link {
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--gold);
+  text-decoration: none;
+}
+.pbeh-ctx-link:hover { color: var(--gold-bright); }
+.pbeh-board { margin-bottom: 7px; }
+
+/* --- observed distribution bars (Level 2) --- */
+.pbeh-basis {
+  font-family: var(--sans);
+  font-size: 10.5px;
+  color: var(--ink-dim);
+  margin-top: 3px;
+}
+.pbeh-bars { padding: 2px 0; }
+.pbeh-bar-row { display: flex; align-items: center; gap: 10px; padding: 2px 0; }
+.pbeh-bar-label { font-family: var(--sans); font-size: 12.5px; color: var(--ink); min-width: 96px; }
+.pbeh-bar-track { flex: 1; height: 6px; background: var(--surface-raised); border-radius: 2px; overflow: hidden; }
+.pbeh-bar-fill { display: block; height: 100%; background: var(--accent); }
+.pbeh-bar-pct { font-family: var(--sans); font-size: 12px; color: var(--ink-dim); min-width: 34px; text-align: right; font-variant-numeric: tabular-nums; }
+
+/* --- partner vs firm (Level 3) --- */
+.pbeh-cmp-dim { font-family: var(--sans); font-size: 11.5px; font-weight: 600; color: var(--ink-dim); margin: 8px 0 2px; }
+.pbeh-cmp-row { display: flex; align-items: center; gap: 8px; padding: 2px 0; }
+.pbeh-cmp-label { font-family: var(--sans); font-size: 12px; color: var(--ink); min-width: 82px; }
+.pbeh-cmp-bars { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.pbeh-cmp-bar { display: flex; align-items: center; gap: 6px; }
+.pbeh-cmp-fill { display: block; height: 5px; border-radius: 2px; }
+.pbeh-cmp-fill.p { background: var(--accent); }
+.pbeh-cmp-fill.f { background: var(--hairline); }
+.pbeh-cmp-pct { font-family: var(--sans); font-size: 10.5px; color: var(--ink-dim); min-width: 28px; font-variant-numeric: tabular-nums; }
+.pbeh-cmp-key { font-family: var(--sans); font-size: 10px; color: var(--ink-dim); margin-top: 5px; }
+.pbeh-cmp-swatch { display: inline-block; width: 14px; height: 5px; border-radius: 2px; margin-right: 4px; vertical-align: 1px; }
+.pbeh-cmp-swatch.p { background: var(--accent); }
+.pbeh-cmp-swatch.f { background: var(--hairline); }
+
+/* --- insight + notes + legend --- */
+.pbeh-note { font-family: var(--sans); font-size: 11.5px; color: var(--ink-dim); line-height: 1.5; margin: 8px 0 2px; }
 .pbeh-insight {
   font-family: var(--sans);
   font-size: 13px;
@@ -516,17 +564,10 @@
   padding: 5px 12px;
   max-width: 640px;
 }
-.pbeh-empty {
-  font-family: var(--sans);
-  font-size: 12.5px;
-  color: var(--ink-dim);
-  line-height: 1.55;
-  max-width: 600px;
-  margin: 8px 0 0;
-}
+.pbeh-empty { font-family: var(--sans); font-size: 12.5px; color: var(--ink-dim); line-height: 1.55; max-width: 600px; margin: 8px 0 0; }
 .pbeh-legend {
   border-top: 1px solid var(--hairline);
-  margin-top: 12px;
+  margin-top: 16px;
   padding-top: 7px;
   font-family: var(--sans);
   font-size: 10.5px;
@@ -534,41 +575,3 @@
   line-height: 1.5;
   max-width: 640px;
 }
-
-/* Partner vs. firm - same-period, specialization not performance.
-   Partner = accent, Firm = muted slate. Never green/red. */
-.pbeh-cmp-dim {
-  font-family: var(--sans);
-  font-size: 11.5px;
-  font-weight: 600;
-  color: var(--ink-dim);
-  margin: 8px 0 2px;
-}
-.pbeh-cmp-row { display: flex; align-items: center; gap: 10px; padding: 2px 0; }
-.pbeh-cmp-label {
-  font-family: var(--sans);
-  font-size: 12.5px;
-  color: var(--ink);
-  min-width: 110px;
-}
-.pbeh-cmp-bars { flex: 1; display: flex; flex-direction: column; gap: 2px; }
-.pbeh-cmp-bar { display: flex; align-items: center; gap: 8px; }
-.pbeh-cmp-fill { display: block; height: 5px; border-radius: 2px; }
-.pbeh-cmp-fill.p { background: var(--accent); }
-.pbeh-cmp-fill.f { background: var(--hairline); }
-.pbeh-cmp-pct {
-  font-family: var(--sans);
-  font-size: 11px;
-  color: var(--ink-dim);
-  min-width: 30px;
-  font-variant-numeric: tabular-nums;
-}
-.pbeh-cmp-key {
-  font-family: var(--mono);
-  font-size: 9.5px;
-  color: var(--ink-dim);
-  margin-top: 5px;
-}
-.pbeh-cmp-swatch { display: inline-block; width: 14px; height: 5px; border-radius: 2px; margin-right: 4px; vertical-align: 1px; }
-.pbeh-cmp-swatch.p { background: var(--accent); }
-.pbeh-cmp-swatch.f { background: var(--hairline); }
