@@ -68,6 +68,29 @@
    is never used to infer investment authority; only attributed
    rows are.
 
+   INVESTMENT DATE DEFINITION (used by every time window here):
+     - a year joined from firm holdings is the FIRM'S entry year for
+       that company (year precision);
+     - a year joined from FIRM_DEALS is the FINANCING ANNOUNCEMENT
+       year (the row carries day precision; partner data is
+       year-precision, so all windows run at year granularity).
+     The two are both "when the investment became public" years and
+     are safe to window together; neither is ever invented.
+
+   TIME-NORMALIZED PARTNER vs FIRM (mandatory methodology):
+     Comparisons run over the SAME period on both sides - never
+     partner-recent vs firm-all-time. Window hierarchy:
+       1. last 36 months, if both sides clear the sample floors;
+       2. the partner's tenure at the current firm (joinedYear ->
+          present), same period on the firm side;
+       3. otherwise the module is HIDDEN. No fallback to all-time.
+     Floors: PBEH_CMP_MIN_P dated+classified partner rows and
+     PBEH_CMP_MIN_F windowed firm deals per dimension. Partner rows
+     dated before joinedYear, or carrying an orgAtTime that is not
+     the current firm, belong to CAREER view and are excluded from
+     the current-firm comparison - an investment stays with the
+     organization the person was at when it happened.
+
    SECURITY: this file computes and renders; it writes nothing.
    Attribution changes happen only as commits to data files
    through the research workflow. Claim/Request submissions stay
@@ -76,6 +99,9 @@
 
 const PBEH_MIN_DIST = 6;      // rows-with-dimension needed before % bars render
 const PBEH_MIN_INSIGHT = 3;   // attributable rows needed before any insight sentence
+const PBEH_CMP_MIN_P = 5;     // dated+classified partner rows a window needs per dimension
+const PBEH_CMP_MIN_F = 12;    // windowed firm deals a window needs per dimension
+const PBEH_CMP_RECENT_YEARS = 3;  // the "recent" window, at year precision
 
 function pbehNorm(x) {
   return String(x || '').toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -166,7 +192,23 @@ function pbehCompute(slug) {
                     .sort(function (a, b) { return b.year - a.year; });
   const nowYear = new Date().getFullYear();
 
+  /* CURRENT-FIRM view vs CAREER view (two different questions).
+     A row leaves the current-firm view when its org at investment
+     time is known to be another firm, or when it is dated before
+     the recorded join year. Undated rows with no org marker stay:
+     absence of orgAtTime means current firm by schema. */
+  const joined = (typeof p.joinedYear === 'number') ? p.joinedYear : null;
+  const currentFirmRows = rows.filter(function (r) {
+    const org = r.orgAtTime || null;
+    if (org && p.firmSlug && org !== p.firmSlug) return false;
+    if (joined != null && r.year != null && r.year < joined) return false;
+    return true;
+  });
+
   return {
+    joinedYear: joined,
+    careerRows: rows,
+    currentFirmRows: currentFirmRows,
     partner: p,
     rows: rows,
     n: rows.length,
@@ -180,6 +222,83 @@ function pbehCompute(slug) {
     boards: p.boardSeats || [],
     sourcesCount: (p.sources || []).length
   };
+}
+
+/* ---------- time-normalized partner vs firm (mandatory rules) ---------- */
+function pbehFirmWindowRows(firmSlug, startYear) {
+  if (typeof FIRM_DEALS === 'undefined') return [];
+  return FIRM_DEALS.filter(function (d) {
+    if (d.firmSlug !== firmSlug || !d.announcedDate) return false;
+    return +String(d.announcedDate).slice(0, 4) >= startYear;
+  }).map(function (d) {
+    return {
+      stage: pbehRoundBucket(d.round),
+      sector: (typeof DEAL_SECTOR_MAP !== 'undefined' && DEAL_SECTOR_MAP[d.sector])
+              ? DEAL_SECTOR_MAP[d.sector][0] : null
+    };
+  });
+}
+
+function pbehDistOf(list, key, minN) {
+  const known = list.filter(function (r) { return r[key]; });
+  if (known.length < minN) return null;
+  const c = {};
+  known.forEach(function (r) { c[r[key]] = (c[r[key]] || 0) + 1; });
+  return { n: known.length,
+    dist: Object.keys(c).map(function (k) {
+      return { label: k, n: c[k], pct: Math.round(100 * c[k] / known.length) };
+    }).sort(function (a, b) { return b.n - a.n; }) };
+}
+
+/* Returns null unless a like-for-like comparison is responsibly
+   possible - hierarchy and floors per the header. Never falls back
+   to all-time firm history. */
+function pbehComparison(slug) {
+  const c = pbehCompute(slug);
+  if (!c || !c.partner.firmSlug) return null;
+  const nowYear = new Date().getFullYear();
+
+  const windows = [];
+  windows.push({ start: nowYear - PBEH_CMP_RECENT_YEARS + 1,
+                 label: 'Last ' + (PBEH_CMP_RECENT_YEARS * 12) + ' months' });
+  if (c.joinedYear != null && c.joinedYear > nowYear - 25) {
+    windows.push({ start: c.joinedYear, label: 'Partner tenure · ' + c.joinedYear + ' - present' });
+  }
+
+  for (let i = 0; i < windows.length; i++) {
+    const w = windows[i];
+    const pRows = c.currentFirmRows.filter(function (r) { return r.year != null && r.year >= w.start; });
+    const fRows = pbehFirmWindowRows(c.partner.firmSlug, w.start);
+    const dims = [];
+    ['sector', 'stage'].forEach(function (key) {
+      const pd = pbehDistOf(pRows, key, PBEH_CMP_MIN_P);
+      const fd = pbehDistOf(fRows, key, PBEH_CMP_MIN_F);
+      if (pd && fd) dims.push({ key: key, partner: pd, firm: fd });
+    });
+    if (dims.length) {
+      return { window: w, dims: dims,
+               samples: { partnerDated: pRows.length, partnerTotal: c.currentFirmRows.length,
+                          firmTracked: fRows.length } };
+    }
+  }
+  return null;
+}
+
+/* Research-queue flags: WHY a same-period comparison cannot be
+   generated for this person. Consumed by the People tab. */
+function pbehComparisonFlags(slug) {
+  const c = pbehCompute(slug);
+  if (!c) return [];
+  const flags = [];
+  if (c.n === 0) return flags;                       // already flagged as no attribution
+  if (c.joinedYear == null) flags.push('join year missing');
+  if (typeof FIRM_DEALS !== 'undefined' && c.partner.firmSlug) {
+    if (!FIRM_DEALS.some(function (d) { return d.firmSlug === c.partner.firmSlug; }))
+      flags.push('firm deals not tracked');
+  }
+  const dated = c.currentFirmRows.filter(function (r) { return r.year != null; }).length;
+  if (dated < PBEH_CMP_MIN_P) flags.push('insufficient dated attributions for comparison');
+  return flags;
 }
 
 /* ---------- reusable, unweighted signals (Parts 11-13) ----------
@@ -203,16 +322,39 @@ function pbehSignals(slug) {
     observed_stage_dist: c.stageDist,        // null until sample suffices
     observed_sector_dist: c.sectorDist,      // null until sample suffices
     stated_focus: c.partner.sectors || [],   // stated by the firm, distinct from observed
-    stated_focus_confidence: c.partner.sectorsConfidence || null
+    stated_focus_confidence: c.partner.sectorsConfidence || null,
+    career_attributed_count: c.careerRows.length,
+    current_firm_attributed_count: c.currentFirmRows.length,
+    // same-period comparison, null unless responsibly computable;
+    // any future Power Match partner scoring must read THIS, never
+    // a partner-recent vs firm-all-time mix.
+    same_period: (function () {
+      const cmp = pbehComparison(slug);
+      if (!cmp) return null;
+      return { window: cmp.window.label, samples: cmp.samples,
+               dims: cmp.dims.map(function (d) {
+                 return { key: d.key, partner: d.partner.dist, firm: d.firm.dist };
+               }) };
+    })()
   };
 }
 
 /* ---------- deterministic insight (Part 9) ----------
    Template sentences computed only from real counts. No adjectives
    about skill, no speculation, nothing an LLM dreamed up. */
-function pbehInsight(c) {
+function pbehInsight(c, cmp) {
   if (c.n < PBEH_MIN_INSIGHT) return '';
   const bits = [];
+  if (cmp && cmp.dims.length) {
+    const d = cmp.dims[0];
+    const top = d.partner.dist[0];
+    const f = d.firm.dist.filter(function (x) { return x.label === top.label; })[0];
+    if (f && f.pct > 0 && top.pct >= f.pct * 2) {
+      bits.push('during the same period (' + cmp.window.label.toLowerCase() +
+        '), attributable investments were roughly ' + Math.round(top.pct / f.pct) +
+        ' times more concentrated in ' + top.label + ' than the firm overall');
+    }
+  }
   if (c.publicCount >= 2) {
     bits.push(c.publicCount + ' of ' + c.n + ' publicly attributable investments are companies that now trade publicly');
   }
@@ -297,6 +439,13 @@ function pbehHtml(slug) {
       pbehBars(c.stageDist, 'Based on ' +
         c.rows.filter(function (r) { return r.stage; }).length + ' attributable rounds with a known stage');
   }
+  // tenure split, shown only when it actually differs and a join year exists
+  if (c.joinedYear != null && c.careerRows.length !== c.currentFirmRows.length) {
+    h += '<div class="pbeh-meta-line">' + c.currentFirmRows.length + ' at ' +
+      pgAttr(c.partner.firm || 'current firm') + ' since ' + c.joinedYear + ' · ' +
+      c.careerRows.length + ' across tracked career</div>';
+  }
+
   if (c.sectorDist) {
     h += '<h4 class="pbeh-sub">Sector concentration</h4>' +
       pbehBars(c.sectorDist, 'Based on ' +
@@ -323,7 +472,35 @@ function pbehHtml(slug) {
       '<div class="pbeh-note">Board involvement is shown separately from investment attribution.</div>';
   }
 
-  const insight = pbehInsight(c);
+  // Same-period partner vs firm - renders only when pbehComparison
+  // clears its floors; specialization framing, never performance.
+  const cmp = pbehComparison(slug);
+  if (cmp) {
+    const DIMLABEL = { sector: 'Sector', stage: 'Stage' };
+    h += '<h4 class="pbeh-sub">Partner vs. firm <span class="pbeh-basis" title="Partner and firm behavior are compared over the same period where sufficient data is available. This reduces distortion from historical changes in the firm\'s investment strategy.">Same-period comparison · ' +
+      pgAttr(cmp.window.label) + '</span></h4>';
+    cmp.dims.forEach(function (d) {
+      const tops = d.partner.dist.slice(0, 3);
+      h += '<div class="pbeh-cmp-dim">' + pgAttr(DIMLABEL[d.key] || d.key) + '</div>';
+      tops.forEach(function (row) {
+        const f = d.firm.dist.filter(function (x) { return x.label === row.label; })[0];
+        const fpct = f ? f.pct : 0;
+        const max = Math.max(row.pct, fpct, 1);
+        h += '<div class="pbeh-cmp-row"><span class="pbeh-cmp-label">' + pgAttr(row.label) + '</span>' +
+          '<span class="pbeh-cmp-bars">' +
+            '<span class="pbeh-cmp-bar"><span class="pbeh-cmp-fill p" style="width:' + Math.max(3, Math.round(100 * row.pct / max)) + '%"></span><span class="pbeh-cmp-pct">' + row.pct + '%</span></span>' +
+            '<span class="pbeh-cmp-bar"><span class="pbeh-cmp-fill f" style="width:' + Math.max(3, Math.round(100 * fpct / max)) + '%"></span><span class="pbeh-cmp-pct">' + fpct + '%</span></span>' +
+          '</span></div>';
+      });
+    });
+    h += '<div class="pbeh-cmp-key"><span class="pbeh-cmp-swatch p"></span>Partner · <span class="pbeh-cmp-swatch f"></span>Firm</div>' +
+      '<div class="pbeh-basis">Partner: ' + cmp.samples.partnerDated + ' dated attributable investment' +
+      (cmp.samples.partnerDated === 1 ? '' : 's') +
+      (cmp.samples.partnerTotal > cmp.samples.partnerDated ? ' (of ' + cmp.samples.partnerTotal + ' tracked at this firm)' : '') +
+      ' · Firm: ' + cmp.samples.firmTracked + ' tracked investments in the same period</div>';
+  }
+
+  const insight = pbehInsight(c, cmp);
   if (insight) {
     h += '<h4 class="pbeh-sub">Power Board insight</h4>' +
       '<div class="pbeh-insight">' + pgAttr(insight) + '</div>';
