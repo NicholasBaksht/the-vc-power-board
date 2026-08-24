@@ -614,30 +614,27 @@ function pbehHtml(slug) {
            '</div><div class="pbeh-stat-l">' + pgAttr(x.l) + '</div></div>';
   }).join('') + '</div>';
 
-  // ---- LEVEL 2: observed distributions, full width, when samples allow ----
+  // ---- build the pieces, then compose the layout by data level ----
+  let stageHtml = '', sectorHtml = '';
   if (c.stageDist) {
-    h += '<h4 class="pbeh-sub">Observed stage</h4>' +
+    stageHtml = '<h4 class="pbeh-sub">Observed stage</h4>' +
       pbehBars(c.stageDist, 'Based on ' + staged + ' of ' + c.n +
         ' attributable investments with known stage');
   }
   if (c.sectorDist) {
-    h += '<h4 class="pbeh-sub">Sector concentration</h4>' +
+    sectorHtml = '<h4 class="pbeh-sub">Sector concentration</h4>' +
       pbehBars(c.sectorDist, 'Based on ' + sectored + ' of ' + c.n +
         ' attributable investments with known sector');
   }
 
-  // ---- two-column research layout ----
-  h += '<div class="pbeh-grid"><div class="pbeh-main">';
-  h += '<h4 class="pbeh-sub">Attribution history</h4>' + pbehTimeline(c);
+  let historyHtml = '<h4 class="pbeh-sub">Attribution history</h4>' + pbehTimeline(c);
   if (c.joinedYear != null && c.careerRows.length !== c.currentFirmRows.length) {
-    h += '<div class="pbeh-note">' + c.currentFirmRows.length + ' of these are at ' +
+    historyHtml += '<div class="pbeh-note">' + c.currentFirmRows.length + ' of these are at ' +
       pgAttr(c.partner.firm || 'the current firm') + ' since ' + c.joinedYear +
       '; the remainder belong to earlier tracked roles.</div>';
   }
-  h += '</div><aside class="pbeh-side">';
 
-  // source coverage as research context, in natural research language
-  h += '<h4 class="pbeh-sub">Source coverage</h4><div class="pbeh-ctx">' +
+  let coverageHtml = '<h4 class="pbeh-sub">Source coverage</h4><div class="pbeh-ctx">' +
     '<div class="pbeh-ctx-row">' + c.n + ' attributable investment' + (c.n === 1 ? '' : 's') +
       ' supported by ' + (c.sourcesCount || 0) + ' profile source' + (c.sourcesCount === 1 ? '' : 's') + '</div>' +
     (direct ? '<div class="pbeh-ctx-row">' + direct + ' supported by direct deal announcements</div>' +
@@ -645,8 +642,9 @@ function pbehHtml(slug) {
     (c.sourcesCount ? '<a class="pbeh-ctx-link" href="#" onclick="var e=[].slice.call(document.querySelectorAll(\'.pg-side-label\')).filter(function(x){return /Sources/.test(x.textContent);})[0];if(e)e.scrollIntoView({behavior:\'smooth\'});return false;">View sources →</a>' : '') +
     '</div>';
 
+  let boardHtml = '';
   if (c.boards.length) {
-    h += '<h4 class="pbeh-sub" title="Board relationships are tracked separately from investment attribution.">Board involvement</h4>' +
+    boardHtml = '<h4 class="pbeh-sub" title="Board relationships are tracked separately from investment attribution.">Board involvement</h4>' +
       '<div class="pbeh-ctx">' + c.boards.map(function (b) {
         const former = /\s*\((former|past)\)\s*$/i.test(b);
         const nm = b.replace(/\s*\((former|past)\)\s*$/i, '');
@@ -655,32 +653,45 @@ function pbehHtml(slug) {
       }).join('') + '</div>';
   }
 
-  // comparison: full module when defensible, one quiet status line otherwise
+  let cmpHtml = '';
   if (cmp) {
     const DIMLABEL = { sector: 'Sector', stage: 'Stage' };
-    h += '<h4 class="pbeh-sub">Partner vs. firm</h4>' +
+    cmpHtml = '<h4 class="pbeh-sub">Partner vs. firm</h4>' +
       '<div class="pbeh-basis" title="Partner and firm behavior are compared over the same period where sufficient data is available. This reduces distortion from historical changes in the firm\'s investment strategy.">Same-period comparison · ' + pgAttr(cmp.window.label) + '</div>';
     cmp.dims.forEach(function (d) {
       const tops = d.partner.dist.slice(0, 3);
-      h += '<div class="pbeh-cmp-dim">' + pgAttr(DIMLABEL[d.key] || d.key) + '</div>';
+      cmpHtml += '<div class="pbeh-cmp-dim">' + pgAttr(DIMLABEL[d.key] || d.key) + '</div>';
       tops.forEach(function (row) {
         const f = d.firm.dist.filter(function (x) { return x.label === row.label; })[0];
         const fpct = f ? f.pct : 0;
         const max = Math.max(row.pct, fpct, 1);
-        h += '<div class="pbeh-cmp-row"><span class="pbeh-cmp-label">' + pgAttr(row.label) + '</span>' +
+        cmpHtml += '<div class="pbeh-cmp-row"><span class="pbeh-cmp-label">' + pgAttr(row.label) + '</span>' +
           '<span class="pbeh-cmp-bars">' +
             '<span class="pbeh-cmp-bar"><span class="pbeh-cmp-fill p" style="width:' + Math.max(3, Math.round(100 * row.pct / max)) + '%"></span><span class="pbeh-cmp-pct">' + row.pct + '%</span></span>' +
             '<span class="pbeh-cmp-bar"><span class="pbeh-cmp-fill f" style="width:' + Math.max(3, Math.round(100 * fpct / max)) + '%"></span><span class="pbeh-cmp-pct">' + fpct + '%</span></span>' +
           '</span></div>';
       });
     });
-    h += '<div class="pbeh-cmp-key"><span class="pbeh-cmp-swatch p"></span>Partner · <span class="pbeh-cmp-swatch f"></span>Firm</div>' +
+    cmpHtml += '<div class="pbeh-cmp-key"><span class="pbeh-cmp-swatch p"></span>Partner · <span class="pbeh-cmp-swatch f"></span>Firm</div>' +
       '<div class="pbeh-basis">Partner: ' + cmp.samples.partnerDated + ' dated · Firm: ' +
       cmp.samples.firmTracked + ' tracked, same period</div>';
   } else {
-    h += '<div class="pbeh-locked" title="A comparison renders only when partner and firm behavior can be measured over the same period with sufficient dated, classified attributions on both sides. No fallback to all-time firm history is ever used.">Partner vs. firm · not enough comparable data yet</div>';
+    cmpHtml = '<div class="pbeh-locked" title="A comparison renders only when partner and firm behavior can be measured over the same period with sufficient dated, classified attributions on both sides. No fallback to all-time firm history is ever used.">Partner vs. firm · not enough comparable data yet</div>';
   }
-  h += '</aside></div>';
+
+  // ---- composition ----
+  // With analytical bars: analysis sits LEFT, with attribution history
+  // and source coverage beside it. Without bars: history left, research
+  // context in the narrow right rail (the limited-data layout).
+  if (stageHtml || sectorHtml) {
+    h += '<div class="pbeh-grid pbeh-grid-rich">' +
+      '<div class="pbeh-col">' + stageHtml + sectorHtml + cmpHtml + '</div>' +
+      '<div class="pbeh-col">' + historyHtml + coverageHtml + boardHtml + '</div>' +
+      '</div>';
+  } else {
+    h += '<div class="pbeh-grid"><div class="pbeh-main">' + historyHtml + '</div>' +
+      '<aside class="pbeh-side">' + coverageHtml + boardHtml + cmpHtml + '</aside></div>';
+  }
 
   // ---- LEVEL 4: insight only when it passes the founder-decision test ----
   const insight = pbehInsight(c, cmp);
