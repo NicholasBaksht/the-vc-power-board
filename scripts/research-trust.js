@@ -379,6 +379,11 @@ function rtPartnerHealth(slug) {
   if (!ni) reasons.push('no attributable investments');
   if (!(p.boardSeats || []).length) reasons.push('no board data');
   if (p.departedNote || p.departedYear != null) reasons.push('departure on record');
+  /* same-period comparison readiness (partner-behavior.js supplies the
+     diagnosis; guarded because script order does not matter at call time) */
+  if (typeof pbehComparisonFlags === 'function') {
+    pbehComparisonFlags(slug).forEach(function (f) { reasons.push(f); });
+  }
 
   let category;
   if (!p.biography && ni === 0) category = 'weak';
@@ -423,6 +428,8 @@ function rtQRenderPeople() {
       '<label><input type="checkbox" class="rtqF" value="missing biography"> no bio</label>' +
       '<label><input type="checkbox" class="rtqF" value="missing sectors"> no sectors</label>' +
       '<label><input type="checkbox" class="rtqF" value="departure on record"> departed</label>' +
+      '<label><input type="checkbox" class="rtqF" value="join year missing"> no join year</label>' +
+      '<label><input type="checkbox" class="rtqF" value="insufficient dated attributions for comparison"> no comparison</label>' +
     '</div>' +
     '<table><thead><tr><th>Person</th><th>Firm</th><th>Health</th><th>Attributed</th><th>Boards</th><th>Why</th></tr></thead>' +
     '<tbody id="rtqBody"></tbody></table></div>';
