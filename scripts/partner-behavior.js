@@ -430,10 +430,14 @@ function pbehInsight(c, cmp) {
     }
   }
   if (c.stageDist && c.stageDist[0].pct >= 50) {
-    bits.push('most attributed rounds with a known stage were at ' + c.stageDist[0].label);
+    const t = c.stageDist[0];
+    const kn = c.rows.filter(function (r) { return r.stage; }).length;
+    bits.push(t.label + ' accounts for ' + t.n + ' of ' + kn + ' staged attributable investments');
   }
   if (c.sectorDist && c.sectorDist[0].pct >= 40) {
-    bits.push(c.sectorDist[0].label + ' represents the largest share of tracked investments with a known sector');
+    const t2 = c.sectorDist[0];
+    const kn2 = c.rows.filter(function (r) { return r.sector; }).length;
+    bits.push(t2.label + ' represents ' + t2.n + ' of ' + kn2 + ' classified attributable investments');
   }
   if (!bits.length) return '';
   const t = bits.join('; ');
@@ -540,8 +544,22 @@ function pbehTimeline(c) {
     return '<div class="pbeh-tl-item"><span class="pbeh-tl-dot"></span>' +
       '<div class="pbeh-tl-body"><div class="pbeh-tl-name">' + pgAttr(r.name) + '</div>' +
       (meta ? '<div class="pbeh-tl-meta">' + pgAttr(meta) + '</div>' : '') +
-      (r.dealSource ? '<a class="pbeh-tl-evidence" href="' + pgAttr(r.dealSource) +
-        '" target="_blank" rel="noopener noreferrer">Evidence →</a>' : '') +
+      (r.evidence && r.evidence.length
+        ? '<details class="pbeh-ev"><summary>Evidence</summary>' +
+          r.evidence.map(function (e) {
+            let host = ''; try { host = e.url.split('/')[2].replace(/^www\./, ''); } catch (x) {}
+            const TYPE = { 'deal-announcement': 'Deal announcement', 'firm-announcement': 'Firm announcement',
+                           'partner-bio': 'Partner biography', 'portfolio-page': 'Portfolio page',
+                           'regulatory': 'Regulatory filing', 'press': 'Press' };
+            const status = (e.type === 'deal-announcement' || e.type === 'firm-announcement' || e.type === 'regulatory')
+                           ? 'Verified' : 'Reported';
+            return '<div class="pbeh-ev-row"><a href="' + pgAttr(e.url) +
+              '" target="_blank" rel="noopener noreferrer">' + pgAttr(host) + ' ↗</a>' +
+              '<span class="pbeh-ev-meta">' + pgAttr(TYPE[e.type] || e.type) + ' · ' + status +
+              (e.checked ? ' · checked ' + pgAttr(e.checked) : '') + '</span></div>';
+          }).join('') + '</details>'
+        : (r.dealSource ? '<a class="pbeh-tl-evidence" href="' + pgAttr(r.dealSource) +
+           '" target="_blank" rel="noopener noreferrer">Evidence →</a>' : '')) +
       '</div></div>';
   };
   let h = '';
@@ -551,7 +569,7 @@ function pbehTimeline(c) {
     h += entry(r);
   });
   if (undated.length) {
-    h += '<div class="pbeh-tl-year pbeh-tl-undated">Date not currently available</div>';
+    h += '<div class="pbeh-tl-year pbeh-tl-undated">Undated attributable investments</div>';
     undated.forEach(function (r) { h += entry(r); });
   }
   return '<div class="pbeh-tl">' + h + '</div>';
@@ -575,13 +593,20 @@ function pbehHtml(slug) {
     ? Math.min.apply(null, years) + '\u2013' + Math.max.apply(null, years) : null;
   const cmp = pbehComparison(slug);
 
-  // ---- summary strip: the 2-4 most useful real metrics ----
+  // ---- summary strip: research-quality metrics in priority order.
+  //      Board involvement lives in its own section; the strip leads
+  //      with coverage, because coverage is what a founder must know
+  //      to read the percentages correctly. Never padded to four. ----
+  const direct = c.rows.filter(function (r) { return r.dealSource; }).length;
+  const staged = c.rows.filter(function (r) { return r.stage; }).length;
+  const sectored = c.rows.filter(function (r) { return r.sector; }).length;
   const stats = [];
   stats.push({ v: c.n, l: 'Attributable investment' + (c.n === 1 ? '' : 's') });
-  if (c.sourcesCount) stats.push({ v: c.sourcesCount, l: 'Profile source' + (c.sourcesCount === 1 ? '' : 's') });
-  if (span) stats.push({ v: span, l: 'Dated attribution span' });
-  else if (dated.length) stats.push({ v: dated.length, l: 'Dated investment' + (dated.length === 1 ? '' : 's') });
-  if (c.boards.length) stats.push({ v: c.boards.length, l: 'Board relationship' + (c.boards.length === 1 ? '' : 's') });
+  if (direct) stats.push({ v: direct, l: 'Direct deal source' + (direct === 1 ? '' : 's') });
+  if (staged) stats.push({ v: staged + ' / ' + c.n, l: 'Stage coverage' });
+  if (sectored && stats.length < 4) stats.push({ v: sectored + ' / ' + c.n, l: 'Sector coverage' });
+  if (stats.length < 4 && span && dated.length >= 3) stats.push({ v: span, l: 'Known dated span' });
+  if (stats.length < 3 && c.sourcesCount) stats.push({ v: c.sourcesCount, l: 'Profile source' + (c.sourcesCount === 1 ? '' : 's') });
 
   let h = '<div class="pbeh"><h3 class="pbeh-title">Observed Investment Behavior</h3>';
   h += '<div class="pbeh-strip">' + stats.slice(0, 4).map(function (x) {
@@ -592,13 +617,13 @@ function pbehHtml(slug) {
   // ---- LEVEL 2: observed distributions, full width, when samples allow ----
   if (c.stageDist) {
     h += '<h4 class="pbeh-sub">Observed stage</h4>' +
-      pbehBars(c.stageDist, 'Based on ' +
-        c.rows.filter(function (r) { return r.stage; }).length + ' attributable rounds with a known stage');
+      pbehBars(c.stageDist, 'Based on ' + staged + ' of ' + c.n +
+        ' attributable investments with known stage');
   }
   if (c.sectorDist) {
     h += '<h4 class="pbeh-sub">Sector concentration</h4>' +
-      pbehBars(c.sectorDist, 'Based on ' +
-        c.rows.filter(function (r) { return r.sector; }).length + ' attributable investments with a known sector');
+      pbehBars(c.sectorDist, 'Based on ' + sectored + ' of ' + c.n +
+        ' attributable investments with known sector');
   }
 
   // ---- two-column research layout ----
@@ -611,20 +636,22 @@ function pbehHtml(slug) {
   }
   h += '</div><aside class="pbeh-side">';
 
-  // source coverage as research context, not a footnote
-  const direct = c.rows.filter(function (r) { return r.dealSource; }).length;
+  // source coverage as research context, in natural research language
   h += '<h4 class="pbeh-sub">Source coverage</h4><div class="pbeh-ctx">' +
-    '<div class="pbeh-ctx-row">' + c.n + ' attribution' + (c.n === 1 ? '' : 's') +
-      ' carried by ' + (c.sourcesCount || 0) + ' profile-level source' + (c.sourcesCount === 1 ? '' : 's') + '</div>' +
-    (direct ? '<div class="pbeh-ctx-row">' + direct + ' with a direct deal announcement on file</div>' : '') +
+    '<div class="pbeh-ctx-row">' + c.n + ' attributable investment' + (c.n === 1 ? '' : 's') +
+      ' supported by ' + (c.sourcesCount || 0) + ' profile source' + (c.sourcesCount === 1 ? '' : 's') + '</div>' +
+    (direct ? '<div class="pbeh-ctx-row">' + direct + ' supported by direct deal announcements</div>' +
+              '<div class="pbeh-ctx-row">' + (c.n - direct) + ' supported by profile-level attribution</div>' : '') +
     (c.sourcesCount ? '<a class="pbeh-ctx-link" href="#" onclick="var e=[].slice.call(document.querySelectorAll(\'.pg-side-label\')).filter(function(x){return /Sources/.test(x.textContent);})[0];if(e)e.scrollIntoView({behavior:\'smooth\'});return false;">View sources →</a>' : '') +
     '</div>';
 
   if (c.boards.length) {
     h += '<h4 class="pbeh-sub" title="Board relationships are tracked separately from investment attribution.">Board involvement</h4>' +
       '<div class="pbeh-ctx">' + c.boards.map(function (b) {
-        return '<div class="pbeh-board"><div class="pbeh-tl-name">' + pgAttr(b) + '</div>' +
-               '<div class="pbeh-tl-meta">Board involvement</div></div>';
+        const former = /\s*\((former|past)\)\s*$/i.test(b);
+        const nm = b.replace(/\s*\((former|past)\)\s*$/i, '');
+        return '<div class="pbeh-board"><div class="pbeh-tl-name">' + pgAttr(nm) + '</div>' +
+               '<div class="pbeh-tl-meta">' + (former ? 'Former board role' : 'Board role') + '</div></div>';
       }).join('') + '</div>';
   }
 
@@ -651,8 +678,7 @@ function pbehHtml(slug) {
       '<div class="pbeh-basis">Partner: ' + cmp.samples.partnerDated + ' dated · Firm: ' +
       cmp.samples.firmTracked + ' tracked, same period</div>';
   } else {
-    h += '<h4 class="pbeh-sub">Partner vs. firm</h4>' +
-      '<div class="pbeh-ctx"><div class="pbeh-ctx-row pbeh-quiet" title="A comparison renders only when partner and firm behavior can be measured over the same period with sufficient dated, classified attributions on both sides. No fallback to all-time firm history is ever used.">Insufficient comparable attribution data currently</div></div>';
+    h += '<div class="pbeh-locked" title="A comparison renders only when partner and firm behavior can be measured over the same period with sufficient dated, classified attributions on both sides. No fallback to all-time firm history is ever used.">Partner vs. firm · not enough comparable data yet</div>';
   }
   h += '</aside></div>';
 
@@ -663,9 +689,13 @@ function pbehHtml(slug) {
       '<div class="pbeh-insight">' + pgAttr(insight) + '</div>';
   }
 
-  h += '<div class="pbeh-legend">Attribution requires a source naming this person against the company; ' +
-    'employment at the investing firm is never treated as attribution. This reflects what Power Board has ' +
-    'sourced, not the person\'s complete record.</div>';
+  h += '<details class="pbeh-method"><summary>About investment attribution</summary>' +
+    '<p>Power Board only attributes an investment to a person when public evidence connects that person ' +
+    'to the company - a firm\'s own team page, the person\'s official biography, or a financing ' +
+    'announcement naming them. Working at the investing firm alone is never treated as attribution. ' +
+    'Percentages are computed over the investments where the detail is known, with coverage shown, and ' +
+    'partner-versus-firm comparisons are only drawn over the same time period on both sides. Public ' +
+    'records may not represent the person\'s complete investment history.</p></details>';
   h += '</div>';
   return h;
 }
