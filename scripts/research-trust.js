@@ -479,6 +479,24 @@ function rtQRenderPeople() {
       }).join('') +
       '<div class="rtq-sum"><div class="n">' + rows.length + '</div><div class="l">People</div></div>' +
     '</div>' +
+    (function () {
+      /* feature-health monitor: how much of Observed Behavior can
+         actually render across the whole database right now */
+      if (typeof pbehCompute !== 'function') return '';
+      let ni = 0, stage = 0, sector = 0, cmp = 0, direct = 0;
+      Object.keys(partnerProfiles).forEach(function (s2) {
+        const c = pbehCompute(s2);
+        if (!c || !c.n) return;
+        ni++;
+        if (c.stageDist) stage++;
+        if (c.sectorDist) sector++;
+        if (c.rows.some(function (r) { return r.dealSource; })) direct++;
+        if (typeof pbehComparison === 'function' && pbehComparison(s2)) cmp++;
+      });
+      return '<div class="rtq-sub" style="margin:2px 0 10px">Feature health · ' + ni + ' with attributions · ' +
+        stage + ' can show Observed Stage · ' + sector + ' Sector Concentration · ' +
+        cmp + ' Partner vs. Firm · ' + direct + ' with direct deal evidence</div>';
+    })() +
     '<div class="rtq-controls">' +
       '<input type="text" id="rtqSearch" placeholder="filter by name or firm...">' +
       '<select id="rtqSort">' +
