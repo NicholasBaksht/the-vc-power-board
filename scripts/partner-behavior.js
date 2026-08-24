@@ -343,6 +343,12 @@ function pbehSignals(slug) {
    Template sentences computed only from real counts. No adjectives
    about skill, no speculation, nothing an LLM dreamed up. */
 function pbehInsight(c, cmp) {
+  /* INSIGHT QUALITY RULE: a sentence renders only if it could change a
+     founder's decision about researching this investor. Counts of
+     public outcomes or board seats fail that test and were removed.
+     What passes: specialization vs the firm over the same period, and
+     dominant observed stage/sector once samples exist. NO insight is
+     the correct output for most partners today. */
   if (c.n < PBEH_MIN_INSIGHT) return '';
   const bits = [];
   if (cmp && cmp.dims.length) {
@@ -355,31 +361,28 @@ function pbehInsight(c, cmp) {
         ' times more concentrated in ' + top.label + ' than the firm overall');
     }
   }
-  if (c.publicCount >= 2) {
-    bits.push(c.publicCount + ' of ' + c.n + ' publicly attributable investments are companies that now trade publicly');
-  }
   if (c.stageDist && c.stageDist[0].pct >= 50) {
     bits.push('most attributed rounds with a known stage were at ' + c.stageDist[0].label);
   }
   if (c.sectorDist && c.sectorDist[0].pct >= 40) {
     bits.push(c.sectorDist[0].label + ' represents the largest share of tracked investments with a known sector');
   }
-  if (c.boards.length >= 2) {
-    bits.push(c.boards.length + ' current board seats are on file');
-  }
   if (!bits.length) return '';
-  const s = bits.join('; ');
-  return s.charAt(0).toUpperCase() + s.slice(1) + '.';
+  const t = bits.join('; ');
+  return t.charAt(0).toUpperCase() + t.slice(1) + '.';
 }
 
-/* ---------- the partner-profile section (Part 8) ----------
-   DESIGN INTENT: institutional research memo, not terminal output.
-   Sans-serif carries the content (titles, company names, insight);
-   monospace is demoted to small metadata (years, tickers, counts).
-   Sections are separated by thin rules, not stacked cards. Every
-   block renders only when its data exists - the bars in particular
-   are dormant until a partner clears PBEH_MIN_DIST rows with the
-   dimension on file, which today none does. */
+/* ---------- the partner-profile section ----------
+   STRUCTURE (progressive - richer data upgrades it automatically):
+     LEVEL 1  summary strip · attribution timeline · research context
+              (source coverage, board involvement, comparison status)
+     LEVEL 2  + observed stage / sector bars (sample floors)
+     LEVEL 3  + partner-vs-firm same-period module
+     LEVEL 4  + founder-relevant deterministic insight
+   The limited-data state is designed, not apologised for: dated and
+   undated attributions are separated honestly, tickers are muted
+   metadata (never pills), and the only full-width rules are the two
+   major structural divisions. */
 function pbehBars(distList, basisText) {
   const max = distList[0].pct;
   return '<div class="pbeh-bars">' + distList.map(function (d) {
@@ -393,14 +396,31 @@ function pbehBars(distList, basisText) {
   '</div>';
 }
 
-function pbehRowHtml(r) {
-  const meta = [r.stage, r.sector, r.year].filter(function (x) { return x != null; });
-  return '<div class="pbeh-inv-row">' +
-    '<span class="pbeh-inv-main">' + pgAttr(r.name) +
-      (r.ticker ? '<span class="pbeh-ticker">' + pgAttr(r.ticker) + '</span>' : '') +
-    '</span>' +
-    (meta.length ? '<span class="pbeh-inv-meta">' + pgAttr(meta.join(' · ')) + '</span>' : '') +
-    '</div>';
+function pbehTimeline(c) {
+  const dated = c.rows.filter(function (r) { return r.year != null; })
+                      .sort(function (a, b) { return b.year - a.year; });
+  const undated = c.rows.filter(function (r) { return r.year == null; })
+                        .sort(function (a, b) { return a.name.localeCompare(b.name); });
+  const entry = function (r) {
+    const meta = [r.ticker, r.stage, r.sector].filter(Boolean).join(' · ');
+    return '<div class="pbeh-tl-item"><span class="pbeh-tl-dot"></span>' +
+      '<div class="pbeh-tl-body"><div class="pbeh-tl-name">' + pgAttr(r.name) + '</div>' +
+      (meta ? '<div class="pbeh-tl-meta">' + pgAttr(meta) + '</div>' : '') +
+      (r.dealSource ? '<a class="pbeh-tl-evidence" href="' + pgAttr(r.dealSource) +
+        '" target="_blank" rel="noopener noreferrer">Evidence →</a>' : '') +
+      '</div></div>';
+  };
+  let h = '';
+  let lastYear = null;
+  dated.forEach(function (r) {
+    if (r.year !== lastYear) { h += '<div class="pbeh-tl-year">' + r.year + '</div>'; lastYear = r.year; }
+    h += entry(r);
+  });
+  if (undated.length) {
+    h += '<div class="pbeh-tl-year pbeh-tl-undated">Date not currently available</div>';
+    undated.forEach(function (r) { h += entry(r); });
+  }
+  return '<div class="pbeh-tl">' + h + '</div>';
 }
 
 function pbehHtml(slug) {
@@ -415,70 +435,70 @@ function pbehHtml(slug) {
       'which is not the same as the person having made no investments.</p></div>';
   }
 
-  // full list: dated rows first (newest), then undated alphabetically
-  const dated = c.rows.filter(function (r) { return r.year != null; })
-                      .sort(function (a, b) { return b.year - a.year; });
-  const undated = c.rows.filter(function (r) { return r.year == null; })
-                        .sort(function (a, b) { return a.name.localeCompare(b.name); });
+  const dated = c.rows.filter(function (r) { return r.year != null; });
+  const years = dated.map(function (r) { return r.year; });
+  const span = (years.length >= 2)
+    ? Math.min.apply(null, years) + '\u2013' + Math.max.apply(null, years) : null;
+  const cmp = pbehComparison(slug);
 
-  let h = '<div class="pbeh">';
-  h += '<h3 class="pbeh-title">Observed Investment Behavior</h3>';
+  // ---- summary strip: the 2-4 most useful real metrics ----
+  const stats = [];
+  stats.push({ v: c.n, l: 'Attributable investment' + (c.n === 1 ? '' : 's') });
+  if (c.sourcesCount) stats.push({ v: c.sourcesCount, l: 'Profile source' + (c.sourcesCount === 1 ? '' : 's') });
+  if (span) stats.push({ v: span, l: 'Dated attribution span' });
+  else if (dated.length) stats.push({ v: dated.length, l: 'Dated investment' + (dated.length === 1 ? '' : 's') });
+  if (c.boards.length) stats.push({ v: c.boards.length, l: 'Board relationship' + (c.boards.length === 1 ? '' : 's') });
 
-  // summary: the count is the headline, sourcing is quiet metadata
-  h += '<div class="pbeh-summary">' +
-    '<div class="pbeh-headline">' + c.n + ' publicly attributable investment' + (c.n === 1 ? '' : 's') +
-      ' <span class="pbeh-headline-note">tracked by Power Board</span></div>' +
-    (c.sourcesCount
-      ? '<div class="pbeh-meta-line">' + c.sourcesCount + ' profile source' + (c.sourcesCount === 1 ? '' : 's') +
-        ' · <a href="#" class="pbeh-srcjump" onclick="var e=[].slice.call(document.querySelectorAll(\'.pg-side-label\')).filter(function(x){return /Sources/.test(x.textContent);})[0];if(e)e.scrollIntoView({behavior:\'smooth\'});return false;">View sources</a></div>'
-      : '') +
-    '</div>';
+  let h = '<div class="pbeh"><h3 class="pbeh-title">Observed Investment Behavior</h3>';
+  h += '<div class="pbeh-strip">' + stats.slice(0, 4).map(function (x) {
+    return '<div class="pbeh-stat"><div class="pbeh-stat-v">' + pgAttr(x.v) +
+           '</div><div class="pbeh-stat-l">' + pgAttr(x.l) + '</div></div>';
+  }).join('') + '</div>';
 
+  // ---- LEVEL 2: observed distributions, full width, when samples allow ----
   if (c.stageDist) {
     h += '<h4 class="pbeh-sub">Observed stage</h4>' +
       pbehBars(c.stageDist, 'Based on ' +
         c.rows.filter(function (r) { return r.stage; }).length + ' attributable rounds with a known stage');
   }
-  // tenure split, shown only when it actually differs and a join year exists
-  if (c.joinedYear != null && c.careerRows.length !== c.currentFirmRows.length) {
-    h += '<div class="pbeh-meta-line">' + c.currentFirmRows.length + ' at ' +
-      pgAttr(c.partner.firm || 'current firm') + ' since ' + c.joinedYear + ' · ' +
-      c.careerRows.length + ' across tracked career</div>';
-  }
-
   if (c.sectorDist) {
     h += '<h4 class="pbeh-sub">Sector concentration</h4>' +
       pbehBars(c.sectorDist, 'Based on ' +
         c.rows.filter(function (r) { return r.sector; }).length + ' attributable investments with a known sector');
   }
 
-  h += '<h4 class="pbeh-sub">Attributable investments</h4>' +
-    '<div class="pbeh-list">' + dated.map(pbehRowHtml).join('') + undated.map(pbehRowHtml).join('') + '</div>';
-  if (!c.stageDist && !c.sectorDist && c.n < PBEH_MIN_DIST) {
-    h += '<div class="pbeh-note">Limited attributable history - stage and sector patterns appear once ' +
-         PBEH_MIN_DIST + ' or more attributed investments carry that detail.</div>';
+  // ---- two-column research layout ----
+  h += '<div class="pbeh-grid"><div class="pbeh-main">';
+  h += '<h4 class="pbeh-sub">Attribution history</h4>' + pbehTimeline(c);
+  if (c.joinedYear != null && c.careerRows.length !== c.currentFirmRows.length) {
+    h += '<div class="pbeh-note">' + c.currentFirmRows.length + ' of these are at ' +
+      pgAttr(c.partner.firm || 'the current firm') + ' since ' + c.joinedYear +
+      '; the remainder belong to earlier tracked roles.</div>';
   }
-  if (c.last24mo > 0) {
-    h += '<div class="pbeh-note">' + c.last24mo + ' of the ' + c.datedCount +
-      ' dated attributions fall within the last 24 months. Undated attributions are not counted.</div>';
-  }
+  h += '</div><aside class="pbeh-side">';
+
+  // source coverage as research context, not a footnote
+  const direct = c.rows.filter(function (r) { return r.dealSource; }).length;
+  h += '<h4 class="pbeh-sub">Source coverage</h4><div class="pbeh-ctx">' +
+    '<div class="pbeh-ctx-row">' + c.n + ' attribution' + (c.n === 1 ? '' : 's') +
+      ' carried by ' + (c.sourcesCount || 0) + ' profile-level source' + (c.sourcesCount === 1 ? '' : 's') + '</div>' +
+    (direct ? '<div class="pbeh-ctx-row">' + direct + ' with a direct deal announcement on file</div>' : '') +
+    (c.sourcesCount ? '<a class="pbeh-ctx-link" href="#" onclick="var e=[].slice.call(document.querySelectorAll(\'.pg-side-label\')).filter(function(x){return /Sources/.test(x.textContent);})[0];if(e)e.scrollIntoView({behavior:\'smooth\'});return false;">View sources →</a>' : '') +
+    '</div>';
 
   if (c.boards.length) {
-    h += '<h4 class="pbeh-sub">Board &amp; portfolio involvement</h4>' +
-      '<div class="pbeh-list">' + c.boards.map(function (b) {
-        return '<div class="pbeh-inv-row"><span class="pbeh-inv-main">' + pgAttr(b) + '</span>' +
-               '<span class="pbeh-inv-meta">Board involvement</span></div>';
-      }).join('') + '</div>' +
-      '<div class="pbeh-note">Board involvement is shown separately from investment attribution.</div>';
+    h += '<h4 class="pbeh-sub" title="Board relationships are tracked separately from investment attribution.">Board involvement</h4>' +
+      '<div class="pbeh-ctx">' + c.boards.map(function (b) {
+        return '<div class="pbeh-board"><div class="pbeh-tl-name">' + pgAttr(b) + '</div>' +
+               '<div class="pbeh-tl-meta">Board involvement</div></div>';
+      }).join('') + '</div>';
   }
 
-  // Same-period partner vs firm - renders only when pbehComparison
-  // clears its floors; specialization framing, never performance.
-  const cmp = pbehComparison(slug);
+  // comparison: full module when defensible, one quiet status line otherwise
   if (cmp) {
     const DIMLABEL = { sector: 'Sector', stage: 'Stage' };
-    h += '<h4 class="pbeh-sub">Partner vs. firm <span class="pbeh-basis" title="Partner and firm behavior are compared over the same period where sufficient data is available. This reduces distortion from historical changes in the firm\'s investment strategy.">Same-period comparison · ' +
-      pgAttr(cmp.window.label) + '</span></h4>';
+    h += '<h4 class="pbeh-sub">Partner vs. firm</h4>' +
+      '<div class="pbeh-basis" title="Partner and firm behavior are compared over the same period where sufficient data is available. This reduces distortion from historical changes in the firm\'s investment strategy.">Same-period comparison · ' + pgAttr(cmp.window.label) + '</div>';
     cmp.dims.forEach(function (d) {
       const tops = d.partner.dist.slice(0, 3);
       h += '<div class="pbeh-cmp-dim">' + pgAttr(DIMLABEL[d.key] || d.key) + '</div>';
@@ -494,12 +514,15 @@ function pbehHtml(slug) {
       });
     });
     h += '<div class="pbeh-cmp-key"><span class="pbeh-cmp-swatch p"></span>Partner · <span class="pbeh-cmp-swatch f"></span>Firm</div>' +
-      '<div class="pbeh-basis">Partner: ' + cmp.samples.partnerDated + ' dated attributable investment' +
-      (cmp.samples.partnerDated === 1 ? '' : 's') +
-      (cmp.samples.partnerTotal > cmp.samples.partnerDated ? ' (of ' + cmp.samples.partnerTotal + ' tracked at this firm)' : '') +
-      ' · Firm: ' + cmp.samples.firmTracked + ' tracked investments in the same period</div>';
+      '<div class="pbeh-basis">Partner: ' + cmp.samples.partnerDated + ' dated · Firm: ' +
+      cmp.samples.firmTracked + ' tracked, same period</div>';
+  } else {
+    h += '<h4 class="pbeh-sub">Partner vs. firm</h4>' +
+      '<div class="pbeh-ctx"><div class="pbeh-ctx-row pbeh-quiet" title="A comparison renders only when partner and firm behavior can be measured over the same period with sufficient dated, classified attributions on both sides. No fallback to all-time firm history is ever used.">Insufficient comparable attribution data currently</div></div>';
   }
+  h += '</aside></div>';
 
+  // ---- LEVEL 4: insight only when it passes the founder-decision test ----
   const insight = pbehInsight(c, cmp);
   if (insight) {
     h += '<h4 class="pbeh-sub">Power Board insight</h4>' +
