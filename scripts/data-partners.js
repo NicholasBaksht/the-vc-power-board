@@ -13,14 +13,43 @@ const partnerProfiles = {
       "Co-Founder & VP Finance, LinkExchange (1996–1999) - acquired by Microsoft for $265M"
     ],
     investmentFocus: ["Consumer", "Marketplaces", "Enterprise Software"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Airbnb", ticker: "ABNB" },
-      { name: "DoorDash", ticker: "DASH" },
-      { name: "Uber", ticker: "UBER" },
-      { name: "Reddit", ticker: "RDDT" },
-      { name: "Houzz", ticker: null },
-      { name: "OpenAI", ticker: null }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Attribution: his Sequoia
+       profile lists current and enduring portfolio; DoorDash carries the
+       Series A announcement and DoorDash's own IR board page. Uber stays
+       metadata-free: Sequoia was not in Uber's venture rounds and no source
+       ties him to a specific round. */
+    { name: "Airbnb", ticker: "ABNB",
+      evidence: [{ url: "https://www.sequoiacap.com/people/alfred-lin/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "DoorDash", ticker: "DASH", stage: "Series A", yearPrecision: "year",
+      role: "board",
+      evidence: [{ url: "https://techcrunch.com/2014/05/22/doordash-17-3m-sequoia", type: "deal-announcement", checked: "2026-08-23" },
+                  { url: "https://ir.doordash.com/governance/board-of-directors/person-details/default.aspx?ItemId=9a8c41be-8251-4404-b06c-1655d8b89229", type: "regulatory", checked: "2026-08-23" },
+                  { url: "https://www.sequoiacap.com/people/alfred-lin/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Uber", ticker: "UBER",
+      evidence: [{ url: "https://www.sequoiacap.com/people/alfred-lin/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Reddit", ticker: "RDDT",
+      evidence: [{ url: "https://www.sequoiacap.com/people/alfred-lin/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Houzz", ticker: null,
+      evidence: [{ url: "https://www.sequoiacap.com/people/alfred-lin/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "OpenAI", ticker: null,
+      evidence: [{ url: "https://www.sequoiacap.com/people/alfred-lin/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Anthropic", ticker: null,
+      evidence: [{ url: "https://www.sequoiacap.com/people/alfred-lin/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Faire", ticker: null,
+      evidence: [{ url: "https://www.sequoiacap.com/people/alfred-lin/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Whatnot", ticker: null,
+      evidence: [{ url: "https://www.sequoiacap.com/people/alfred-lin/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Zipline", ticker: null,
+      evidence: [{ url: "https://www.sequoiacap.com/people/alfred-lin/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Instacart", ticker: null,
+      evidence: [{ url: "https://www.sequoiacap.com/people/alfred-lin/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Physical Intelligence", ticker: null,
+      evidence: [{ url: "https://www.sequoiacap.com/people/alfred-lin/", type: "partner-bio", checked: "2026-08-23" }] }
+  ],
     boardSeats: ["Airbnb", "DoorDash", "Citadel Securities"],
     ipoCount: 3,
     majorExits: 2,
@@ -376,12 +405,9 @@ const partnerProfiles = {
   ],
   biography: "Elad Gil is one of the most prolific independent investors in technology, backing pre-IPO companies including Airbnb, Stripe, Coinbase, Instacart, Pinterest, and Roblox. He holds a BA from Harvard and a PhD from MIT, joined Google as a product manager in 2004, then co-founded Mixer Labs - acquired by Twitter in 2009 - before serving as a Twitter VP. He later co-founded Color Genomics and authored the High Growth Handbook. He moved to full-time investing around 2012.",
   sources: [],
+  researchState: "exhausted",
+  researchChecked: "2026-08-24",
   notableInvestments: [
-    /*
-       Enriched 2026-08-23, Phase 1 of the database-wide rollout. Every row was
-       mined from tracked deal texts that name him personally as a participant;
-       the URL on each row is the deal source itself. Stage is null where the
-       source does not name a series. */
     { name: "Abridge", ticker: null, stage: "Series D", year: 2025, yearPrecision: "year",
       sector: "Healthcare", subsector: "Healthcare AI",
       evidence: [{ url: "https://fortune.com/2025/02/17/exclusive-abridge-raises-250-million-series-d-led-by-elad-gil-and-ivp/", type: "deal-announcement", checked: "2026-08-23" }] },
@@ -423,7 +449,8 @@ const partnerProfiles = {
       evidence: [{ url: "https://www.finsmes.com/2026/05/frame-security-raises-50m-in-funding.html", type: "deal-announcement", checked: "2026-08-23" }] },
     { name: "NavigateAI", ticker: null, stage: "Seed", year: 2026, yearPrecision: "year",
       sector: "Industrial & Manufacturing Technology", subsector: "Construction Tech",
-      evidence: [{ url: "https://www.globenewswire.com/news-release/2026/05/26/3301425/0/en/navigateai-launches-to-build-the-ai-copilot-for-the-physical-world.html", type: "deal-announcement", checked: "2026-08-23" }] },
+      evidence: [{ url: "https://www.globenewswire.com/news-release/2026/05/26/3301425/0/en/navigateai-launches-to-build-the-ai-copilot-for-the-physical-world.html", type: "deal-announcement", checked: "2026-08-23" },
+                  { url: "https://www.finsmes.com/2026/05/navigateai-raises-25m-in-funding.html", type: "deal-announcement", checked: "2026-08-23" }] },
     { name: "Cognition", ticker: null, year: 2026, yearPrecision: "year",
       sector: "AI", subsector: "AI Software Engineering",
       evidence: [{ url: "https://www.finsmes.com/2026/05/cognition-raises-over-1-billion-in-funding-at-26-billion-post-money-valuation.html", type: "deal-announcement", checked: "2026-08-23" }] },
@@ -1579,14 +1606,25 @@ const partnerProfiles = {
       "Co-Founder, Loudcloud / Opsware (1999) - acquired by Hewlett-Packard for $1.6B in 2007"
     ],
     investmentFocus: ["Software", "Crypto", "Fintech", "Consumer", "AI Infrastructure"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Airbnb", ticker: "ABNB" },
-      { name: "Coinbase", ticker: "COIN" },
-      { name: "GitHub", ticker: null },
-      { name: "Facebook", ticker: "META" },
-      { name: "Pinterest", ticker: "PINS" },
-      { name: "Skype", ticker: null }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Facebook: board seat
+       announced by Facebook itself in June 2008; no venture round is
+       attributed, so the row stays undated. Skype: the 2009 a16z-led
+       consortium purchase, dated but staged null - a buyout is not a venture
+       round. */
+    { name: "Airbnb", ticker: "ABNB" },
+    { name: "Coinbase", ticker: "COIN" },
+    { name: "GitHub", ticker: null },
+    { name: "Facebook", ticker: "META",
+      role: "board",
+      evidence: [{ url: "https://about.fb.com/news/2008/06/marc-andreessen-joins-facebook-board-of-directors/", type: "deal-announcement", checked: "2026-08-23" }] },
+    { name: "Pinterest", ticker: "PINS" },
+    { name: "Skype", ticker: null, year: 2009, yearPrecision: "year",
+      evidence: [{ url: "https://techcrunch.com/2009/08/31/skype-sale-to-investor-group-led-by-andreessen-horowitz-confirmed", type: "deal-announcement", checked: "2026-08-23" }] }
+  ],
     boardSeats: ["Meta Platforms"],
     ipoCount: 3,
     majorExits: 2,
@@ -2515,14 +2553,23 @@ const partnerProfiles = {
       "Co-Founder, Chairman & CEO, Isovia - acquired by JP Mobile"
     ],
     investmentFocus: ["Healthcare", "AI Infrastructure", "Defense", "Fintech"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Snap", ticker: "SNAP" },
-      { name: "Samsara", ticker: "IOT" },
-      { name: "Stripe", ticker: null },
-      { name: "GitLab", ticker: null },
-      { name: "Anduril", ticker: null },
-      { name: "Grammarly", ticker: null }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Stripe: reporting records
+       he led GC's $20M Series B in July 2012. Samsara: GC's own milestone post
+       marks the 2017 founder bet; no series is named by primaries, so stage
+       stays null. */
+    { name: "Snap", ticker: "SNAP" },
+    { name: "Samsara", ticker: "IOT",
+      evidence: [{ url: "https://www.generalcatalyst.com/stories/a-milestone-for-samsara", type: "firm-announcement", checked: "2026-08-23" }] },
+    { name: "Stripe", ticker: null, stage: "Series B", year: 2012, yearPrecision: "year",
+      evidence: [{ url: "https://www.thetwentyminutevc.com/hemant-taneja", type: "press", checked: "2026-08-23" }] },
+    { name: "GitLab", ticker: null },
+    { name: "Anduril", ticker: null },
+    { name: "Grammarly", ticker: null }
+  ],
     boardSeats: ["Khan Academy", "Revolution Healthcare Acquisition"],
     ipoCount: 3,
     majorExits: 2,
@@ -2552,14 +2599,28 @@ const partnerProfiles = {
       "Consultant, Boston Consulting Group"
     ],
     investmentFocus: ["Enterprise Technology", "Cloud Infrastructure", "Fintech"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Salesforce", ticker: null },
-      { name: "Workday", ticker: "WDAY" },
-      { name: "Robinhood", ticker: "HOOD" },
-      { name: "Cloudflare", ticker: null },
-      { name: "Bloom Energy", ticker: null },
-      { name: "Tableau", ticker: null }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. His NEA profile names
+       Bloom Energy, Cloudflare, Robinhood, Salesforce, Tableau and Workday
+       against him. Round-level detail was not established by primary sources
+       this pass, so rows stay undated rather than borrowing years from
+       aggregators. */
+    { name: "Salesforce", ticker: null,
+      evidence: [{ url: "https://www.nea.com/team/scott-sandell", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Workday", ticker: "WDAY",
+      evidence: [{ url: "https://www.nea.com/team/scott-sandell", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Robinhood", ticker: "HOOD",
+      evidence: [{ url: "https://www.nea.com/team/scott-sandell", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Cloudflare", ticker: null,
+      evidence: [{ url: "https://www.nea.com/team/scott-sandell", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Bloom Energy", ticker: null,
+      evidence: [{ url: "https://www.nea.com/team/scott-sandell", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Tableau", ticker: null,
+      evidence: [{ url: "https://www.nea.com/team/scott-sandell", type: "partner-bio", checked: "2026-08-23" }] }
+  ],
     boardSeats: ["Cloudflare (Lead Independent Director)"],
     ipoCount: 5,
     majorExits: 2,
@@ -2661,12 +2722,31 @@ const partnerProfiles = {
       "General Partner, Kleiner Perkins (1986–2004)"
     ],
     investmentFocus: ["Clean Energy", "Artificial Intelligence", "Deep Tech"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Block (Square)", ticker: "XYZ" },
-      { name: "Instacart", ticker: "CART" },
-      { name: "OpenAI", ticker: null },
-      { name: "Impossible Foods", ticker: null }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. OpenAI: his own firm bio
+       states he led KV's $50M investment in January 2019. Impossible Foods:
+       KV's portfolio page anchors the 2011 seed. Juniper, Cerent and
+       Commonwealth Fusion come from the same bio; Juniper and Cerent were
+       Kleiner-era work, recorded with orgAtTime. */
+    { name: "Block (Square)", ticker: "XYZ" },
+    { name: "Instacart", ticker: "CART" },
+    { name: "OpenAI", ticker: null, year: 2019, yearPrecision: "year",
+      evidence: [{ url: "https://www.khoslaventures.com/team/vinod-khosla", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Impossible Foods", ticker: null, stage: "Seed", year: 2011, yearPrecision: "year",
+      evidence: [{ url: "https://www.khoslaventures.com/portfolio/impossible-foods", type: "firm-announcement", checked: "2026-08-23" }] },
+    { name: "Juniper Networks", ticker: "JNPR",
+      orgAtTime: "kleiner-perkins",
+      evidence: [{ url: "https://www.khoslaventures.com/team/vinod-khosla", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Cerent", ticker: null,
+      orgAtTime: "kleiner-perkins",
+      evidence: [{ url: "https://www.khoslaventures.com/team/vinod-khosla", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Commonwealth Fusion Systems", ticker: null,
+      sector: "Climate & Energy", subsector: "Fusion Energy",
+      evidence: [{ url: "https://www.khoslaventures.com/team/vinod-khosla", type: "partner-bio", checked: "2026-08-23" }] }
+  ],
     boardSeats: ["Multiple private portfolio companies across clean energy and AI"],
     ipoCount: 2,
     majorExits: 2,
@@ -2732,14 +2812,25 @@ const partnerProfiles = {
       "Analyst, McKinsey & Company"
     ],
     investmentFocus: ["Cloud Computing", "SaaS", "AI", "Enterprise Software"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Twilio", ticker: "TWLO" },
-      { name: "DocuSign", ticker: "DOCU" },
-      { name: "Box", ticker: null },
-      { name: "HashiCorp", ticker: null },
-      { name: "SendGrid", ticker: null },
-      { name: "Anthropic", ticker: null }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Twilio: Bessemer's seed
+       entry in 2009 with Deeter leading the early financing and joining the
+       board in 2010. SendGrid: Bessemer's own published investment memo
+       records his Series B recommendation and 2012-2019 board term. */
+    { name: "Twilio", ticker: "TWLO", stage: "Seed", year: 2009, yearPrecision: "year",
+      role: "board",
+      evidence: [{ url: "https://www.thetwentyminutevc.com/byron-deeter-twilio", type: "press", checked: "2026-08-23" }] },
+    { name: "DocuSign", ticker: "DOCU" },
+    { name: "Box", ticker: null },
+    { name: "HashiCorp", ticker: null },
+    { name: "SendGrid", ticker: null, stage: "Series B", year: 2011, yearPrecision: "year",
+      role: "board",
+      evidence: [{ url: "https://www.bvp.com/memos/sendgrid", type: "firm-announcement", checked: "2026-08-23" }] },
+    { name: "Anthropic", ticker: null }
+  ],
     boardSeats: ["ServiceTitan", "MaintainX", "Syndio"],
     ipoCount: 13,
     majorExits: 11,
@@ -2771,14 +2862,24 @@ const partnerProfiles = {
       "General Partner, Hummer Winblad Venture Partners"
     ],
     investmentFocus: ["Consumer Internet", "Marketplaces", "Enterprise"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Uber", ticker: "UBER" },
-      { name: "Zillow", ticker: null },
-      { name: "GrubHub", ticker: null },
-      { name: "OpenTable", ticker: null },
-      { name: "Nextdoor", ticker: null },
-      { name: "Stitch Fix", ticker: null }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Uber: the 2011 Series A
+       announcement with his board seat. Zillow: the company's own 2005 Series
+       A release naming him to the board. */
+    { name: "Uber", ticker: "UBER", stage: "Series A", year: 2011, yearPrecision: "year",
+      role: "board",
+      evidence: [{ url: "https://techcrunch.com/2011/02/14/huge-vote-of-confidence-uber-raises-11-million-from-benchmark-capital/", type: "deal-announcement", checked: "2026-08-23" }] },
+    { name: "Zillow", ticker: null, stage: "Series A", year: 2005, yearPrecision: "year",
+      sector: "Real Estate Tech", subsector: "Home Search", role: "board",
+      evidence: [{ url: "https://zillow.mediaroom.com/2005-10-24-Zillow-com-Secures-Series-A-Financing", type: "deal-announcement", checked: "2026-08-23" }] },
+    { name: "GrubHub", ticker: null },
+    { name: "OpenTable", ticker: null },
+    { name: "Nextdoor", ticker: null },
+    { name: "Stitch Fix", ticker: null }
+  ],
     boardSeats: ["Nextdoor", "HackerOne", "Solv"],
     ipoCount: 5,
     majorExits: 2,
@@ -2809,13 +2910,25 @@ const partnerProfiles = {
       "Co-Founder & Executive Chairman, LinkedIn (2003) - IPO 2011, acquired by Microsoft for $26.2B in 2016"
     ],
     investmentFocus: ["Consumer Internet", "Enterprise Software", "AI", "Marketplaces"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Facebook", ticker: "META" },
-      { name: "Airbnb", ticker: "ABNB" },
-      { name: "LinkedIn", ticker: null },
-      { name: "Aurora Innovation", ticker: "AUR" },
-      { name: "Groupon", ticker: "GRPN" }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Airbnb: Greylock's Series
+       A led by him with a board seat, per Greylock's own account. Aurora: the
+       2018 $90M round added him to the board. Facebook: his early angel
+       position is on the record; year stays null pending a primary with the
+       date. */
+    { name: "Facebook", ticker: "META" },
+    { name: "Airbnb", ticker: "ABNB", stage: "Series A", year: 2010, yearPrecision: "year",
+      role: "board",
+      evidence: [{ url: "https://greylock.com/portfolio-news/airbnb-reflections/", type: "firm-announcement", checked: "2026-08-23" }] },
+    { name: "LinkedIn", ticker: null },
+    { name: "Aurora Innovation", ticker: "AUR", year: 2018, yearPrecision: "year",
+      role: "board",
+      evidence: [{ url: "https://www.forbes.com/sites/alanohnsman/2018/02/28/aurora-on-the-rise-robocar-startup-snags-90-million-adds-reid-hoffman-mike-volpi-to-board/", type: "press", checked: "2026-08-23" }] },
+    { name: "Groupon", ticker: "GRPN" }
+  ],
     boardSeats: ["Microsoft", "Aurora Innovation"],
     ipoCount: 2,
     majorExits: 2,
@@ -2888,14 +3001,23 @@ const partnerProfiles = {
       "Co-Founder, Flatiron Partners (1996–2001) - with Jerry Colonna"
     ],
     investmentFocus: ["Consumer Internet", "Marketplaces", "Fintech", "Crypto"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Twitter", ticker: null },
-      { name: "Etsy", ticker: "ETSY" },
-      { name: "Coinbase", ticker: "COIN" },
-      { name: "Tumblr", ticker: null },
-      { name: "MongoDB", ticker: "MDB" },
-      { name: "Zynga", ticker: null }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Twitter: USV's own 2007
+       post announcing the Series A it co-led. Coinbase: the company's own
+       Series A announcement names funding from Fred Wilson at USV. */
+    { name: "Twitter", ticker: null, stage: "Series A", year: 2007, yearPrecision: "year",
+      role: "board",
+      evidence: [{ url: "https://www.usv.com/writing/2007/07/twitter/", type: "firm-announcement", checked: "2026-08-23" }] },
+    { name: "Etsy", ticker: "ETSY" },
+    { name: "Coinbase", ticker: "COIN", stage: "Series A", year: 2013, yearPrecision: "year",
+      evidence: [{ url: "https://www.coinbase.com/blog/coinbase-raises-usd5m-in-series-a-funding", type: "deal-announcement", checked: "2026-08-23" }] },
+    { name: "Tumblr", ticker: null },
+    { name: "MongoDB", ticker: "MDB" },
+    { name: "Zynga", ticker: null }
+  ],
     boardSeats: ["Etsy (former)", "Twitter (former)"],
     ipoCount: 5,
     majorExits: 1,
@@ -3045,14 +3167,34 @@ const partnerProfiles = {
       "Co-Founder, TurnTide (2003) - anti-spam startup acquired by Symantec six months later"
     ],
     investmentFocus: ["Seed-Stage", "Consumer Internet", "Marketplaces", "Fintech"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Uber", ticker: "UBER" },
-      { name: "Square (Block)", ticker: "XYZ" },
-      { name: "Roblox", ticker: "RBLX" },
-      { name: "Warby Parker", ticker: "WRBY" },
-      { name: "Notion", ticker: null },
-      { name: "Blue Apron", ticker: null }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. His First Round profile
+       names Flatiron Health, Notion, Upstart, Clover Health, Pomelo Care,
+       Loyal and Perpay as his investments. Uber, Square, Roblox and Blue Apron
+       stay bare: sources attribute those to the firm or to other partners, not
+       to him. */
+    { name: "Uber", ticker: "UBER" },
+    { name: "Square (Block)", ticker: "XYZ" },
+    { name: "Roblox", ticker: "RBLX" },
+    { name: "Warby Parker", ticker: "WRBY" },
+    { name: "Notion", ticker: null,
+      evidence: [{ url: "https://www.firstround.com/team/investing/josh-kopelman", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Blue Apron", ticker: null },
+    { name: "Flatiron Health", ticker: null,
+      evidence: [{ url: "https://www.firstround.com/team/investing/josh-kopelman", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Upstart", ticker: "UPST",
+      evidence: [{ url: "https://www.firstround.com/team/investing/josh-kopelman", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Clover Health", ticker: "CLOV",
+      evidence: [{ url: "https://www.firstround.com/team/investing/josh-kopelman", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Pomelo Care", ticker: null,
+      evidence: [{ url: "https://www.firstround.com/team/investing/josh-kopelman", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "LinkedIn", ticker: null,
+      orgAtTime: "angel",
+      evidence: [{ url: "https://en.wikipedia.org/wiki/Josh_Kopelman", type: "press", checked: "2026-08-23" }] }
+  ],
     boardSeats: ["The Philadelphia Inquirer (Chair Emeritus, former Chairman 2015–2024)"],
     ipoCount: 3,
     majorExits: 2,
@@ -3123,14 +3265,37 @@ const partnerProfiles = {
       "Operating Executive, SkyTV"
     ],
     investmentFocus: ["SaaS", "B2B Software", "Cloud Infrastructure"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Wayfair", ticker: "W" },
-      { name: "Coupa", ticker: null },
-      { name: "Guidewire", ticker: "GWRE" },
-      { name: "Nutanix", ticker: "NTNX" },
-      { name: "Groupon", ticker: "GRPN" },
-      { name: "Bazaarvoice", ticker: null }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. His Battery profile names
+       his IPO investments - Bazaarvoice, Coupa, Guidewire, Nutanix, Wayfair,
+       plus Amplitude, Braze, Sprinklr and Marketo added here - and his current
+       boards including Braze and Sprinklr. Groupon stays bare: his bio does
+       not name it. */
+    { name: "Wayfair", ticker: "W",
+      evidence: [{ url: "https://www.battery.com/people/neeraj-agrawal/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Coupa", ticker: null,
+      evidence: [{ url: "https://www.battery.com/people/neeraj-agrawal/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Guidewire", ticker: "GWRE",
+      evidence: [{ url: "https://www.battery.com/people/neeraj-agrawal/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Nutanix", ticker: "NTNX",
+      evidence: [{ url: "https://www.battery.com/people/neeraj-agrawal/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Groupon", ticker: "GRPN" },
+    { name: "Bazaarvoice", ticker: null,
+      evidence: [{ url: "https://www.battery.com/people/neeraj-agrawal/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Amplitude", ticker: "AMPL",
+      evidence: [{ url: "https://www.battery.com/people/neeraj-agrawal/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Braze", ticker: "BRZE",
+      role: "board",
+      evidence: [{ url: "https://www.battery.com/people/neeraj-agrawal/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Sprinklr", ticker: "CXM",
+      role: "board",
+      evidence: [{ url: "https://www.battery.com/people/neeraj-agrawal/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Marketo", ticker: null,
+      evidence: [{ url: "https://www.battery.com/people/neeraj-agrawal/", type: "partner-bio", checked: "2026-08-23" }] }
+  ],
     boardSeats: ["Braze", "Pendo.io", "Dataiku", "Workato"],
     ipoCount: 10,
     majorExits: 4,
@@ -3198,14 +3363,22 @@ sources: [
       "SVP Advanced Payment Systems, then EVP, Visa International (1994–2000) - built Visa's venture capital arm, generating $1.2B+ in gains"
     ],
     investmentFocus: ["Media", "Travel", "Technology"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Twitter", ticker: null },
-      { name: "Netflix", ticker: "NFLX" },
-      { name: "Coinbase", ticker: "COIN" },
-      { name: "HomeAway", ticker: null },
-      { name: "Kayak", ticker: null },
-      { name: "Yahoo", ticker: null }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Twitter: his own 2009
+       essay on why he invested, alongside IVP's $35M Series C co-lead. Other
+       rows stay as attributed; round-level detail was not established from
+       primaries this pass. */
+    { name: "Twitter", ticker: null, stage: "Series C", year: 2009, yearPrecision: "year",
+      evidence: [{ url: "https://techcrunch.com/2009/02/13/ivps-chaffee-why-i-invested-in-twitter/", type: "press", checked: "2026-08-23" }] },
+    { name: "Netflix", ticker: "NFLX" },
+    { name: "Coinbase", ticker: "COIN" },
+    { name: "HomeAway", ticker: null },
+    { name: "Kayak", ticker: null },
+    { name: "Yahoo", ticker: null }
+  ],
     boardSeats: ["Domo (former)"],
     ipoCount: 10,
     majorExits: 3,
@@ -3391,6 +3564,8 @@ sources: [
       "Consultant, McKinsey & Company (Los Angeles)"
     ],
     investmentFocus: ["Early-Stage Application Software", "SaaS", "Commerce Enablement", "Product-Led Growth"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
     /* Enriched 2026-08-23 via the Partner Research Enrichment pipeline.
        Every non-null field traces to the evidence on its row; DocuSign
@@ -3608,6 +3783,8 @@ sources: [
       "Partner, SoftTech VC (now Uncork Capital) - focused on mobile infrastructure and marketplaces"
     ],
     investmentFocus: ["Pre-Seed", "Seed", "Generalist Software & Hardware"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
       { name: "The Athletic", ticker: null },
       { name: "Bobbie", ticker: null },
@@ -4625,14 +4802,23 @@ sources: [
     education: ["Cornell University"],
     previousExperience: [],
     investmentFocus: ["AI", "Automation", "Biotech", "Defense", "Energy", "Robotics", "Frontier Science"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Anduril", ticker: null },
-      { name: "Applied Intuition", ticker: null },
-      { name: "Hugging Face", ticker: null },
-      { name: "Runway", ticker: null },
-      { name: "Together", ticker: null },
-      { name: "Kallyope", ticker: null }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Kallyope: launch release
+       documents the Series A and his board seat since 2015. The Lux team page
+       attributes its marquee list to the FIRM, not to him personally, so other
+       rows keep their existing basis without new claims. */
+    { name: "Anduril", ticker: null },
+    { name: "Applied Intuition", ticker: null },
+    { name: "Hugging Face", ticker: null },
+    { name: "Runway", ticker: null },
+    { name: "Together", ticker: null },
+    { name: "Kallyope", ticker: null, stage: "Series A", year: 2015, yearPrecision: "year",
+      sector: "Biotech", subsector: "Gut-Brain Biology", role: "board",
+      evidence: [{ url: "https://www.prnewswire.com/news-releases/kallyope-inc-launches-with-44m-series-a-financing-to-harness-the-potential-of-the-gut-brain-axis-300190953.html", type: "deal-announcement", checked: "2026-08-23" }] }
+  ],
     boardSeats: ["Santa Fe Institute (Trustee)"],
     ipoCount: 0,
     majorExits: 1,
@@ -5751,11 +5937,19 @@ sources: [
       "Co-Founder, Initialized Capital"
     ],
     investmentFocus: ["AI", "Developer Tools", "Consumer", "Founder-Led Company Building"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
-      { name: "Coinbase", ticker: "COIN" },
-      { name: "Instacart", ticker: "CART" },
-      { name: "DoorDash", ticker: "DASH" }
-    ],
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Coinbase: his own
+       Initialized post records the 2012 first seed check he wrote; orgAtTime
+       keeps it at Initialized, not Y Combinator where he now works. */
+    { name: "Coinbase", ticker: "COIN", stage: "Seed", year: 2012, yearPrecision: "year",
+      orgAtTime: "initialized-capital",
+      evidence: [{ url: "https://blog.initialized.com/2021/04/lessons-from-coinbase-my-2-billion-success/", type: "firm-announcement", checked: "2026-08-23" }] },
+    { name: "Instacart", ticker: "CART" },
+    { name: "DoorDash", ticker: "DASH" }
+  ],
     boardSeats: [],
     ipoCount: 3,
     majorExits: 1,
@@ -15009,6 +15203,8 @@ sources: [
     education: ["University of Alaska", "University of Rochester"],
     previousExperience: ["Partner, Atlas Venture", "SoftBank venture practice", "Booz Allen Hamilton", "Nortel"],
     boardSeats: [],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
     { name: "AngelList", ticker: null, year: 2007, yearPrecision: "year",
       role: "board",
@@ -15141,6 +15337,8 @@ sources: [
     education: ["B.S. in Electrical Engineering & Computer Science, UC Berkeley", "M.S. in Computer Science, Stanford University", "Ph.D. in Computer Science, Stanford University"],
     previousExperience: ["General Partner, Khosla Ventures", "Senior Director of Search and Local Business Products, Google", "Senior Director of Partnerships and Platform, YouTube", "First director of the Facebook platform, Facebook"],
     boardSeats: [],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
     /*
        Enriched 2026-08-23, Phase 1 of the database-wide rollout. His own Bling
@@ -15203,7 +15401,34 @@ sources: [
     education: ["B.S., UC Berkeley", "MBA, Harvard Business School"],
     previousExperience: ["Partner, DCM", "Director of Product Management, Salesforce", "Co-founder and CEO, ChoicePass", "Private equity investor, Pantheon", "Private equity investor, Clearwater Capital"],
     boardSeats: ["UCSF Health Hub"],
-    notableInvestments: [{ name: "DocSend", ticker: null }, { name: "TravelBank", ticker: null }, { name: "Wrike", ticker: null }, { name: "Hims & Hers", ticker: "HIMS" }, { name: "Shift", ticker: null }, { name: "Tapingo", ticker: null }, { name: "SoFi", ticker: "SOFI" }, { name: "Matterport", ticker: null }, { name: "BitTorrent", ticker: null }],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
+    notableInvestments: [
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. TechCrunch's coverage of
+       his move states he helped lead DCM's investments in DocSend, TravelBank,
+       Wrike, Hims & Hers and Shift - recorded with orgAtTime. Tapingo, SoFi,
+       Matterport and BitTorrent stay bare: no source names him on those. */
+    { name: "DocSend", ticker: null,
+      orgAtTime: "dcm-ventures",
+      evidence: [{ url: "https://techcrunch.com/2022/03/28/kyle-lui-long-time-dcm-partner-leaves-to-join-bling-capital-as-second-gp", type: "press", checked: "2026-08-23" }] },
+    { name: "TravelBank", ticker: null,
+      orgAtTime: "dcm-ventures",
+      evidence: [{ url: "https://techcrunch.com/2022/03/28/kyle-lui-long-time-dcm-partner-leaves-to-join-bling-capital-as-second-gp", type: "press", checked: "2026-08-23" }] },
+    { name: "Wrike", ticker: null,
+      orgAtTime: "dcm-ventures",
+      evidence: [{ url: "https://techcrunch.com/2022/03/28/kyle-lui-long-time-dcm-partner-leaves-to-join-bling-capital-as-second-gp", type: "press", checked: "2026-08-23" }] },
+    { name: "Hims & Hers", ticker: "HIMS",
+      orgAtTime: "dcm-ventures",
+      evidence: [{ url: "https://techcrunch.com/2022/03/28/kyle-lui-long-time-dcm-partner-leaves-to-join-bling-capital-as-second-gp", type: "press", checked: "2026-08-23" }] },
+    { name: "Shift", ticker: null,
+      orgAtTime: "dcm-ventures",
+      evidence: [{ url: "https://techcrunch.com/2022/03/28/kyle-lui-long-time-dcm-partner-leaves-to-join-bling-capital-as-second-gp", type: "press", checked: "2026-08-23" }] },
+    { name: "Tapingo", ticker: null },
+    { name: "SoFi", ticker: "SOFI" },
+    { name: "Matterport", ticker: null },
+    { name: "BitTorrent", ticker: null }
+  ],
     ipoCount: 4,
     majorExits: 4,
     careerTimeline: [{ year: 2022, event: "Left DCM to join Bling Capital as its second General Partner." }],
@@ -16002,7 +16227,48 @@ sources: [
     education: ["Ph.D., National University of Ireland, Cork", "Business degree in technology management, Smurfit Business School, University College Dublin"],
     previousExperience: ["Elan Corporation - corporate venture", "Partner, Kernel Capital", "University of Galway - established the Technology Transfer Office", "Academic appointments at Trinity College Dublin, Geisinger Clinic and University College Dublin"],
     boardSeats: ["Loci Orthopaedics", "Perfuze", "Ryme Medical", "Quanta Dialysis Technologies"],
-    notableInvestments: [{ name: "Loci Orthopaedics", ticker: null }, { name: "Perfuze", ticker: null }, { name: "Ryme Medical", ticker: null }, { name: "Quanta Dialysis Technologies", ticker: null }, { name: "Apica Cardiovascular", ticker: null }, { name: "Covagen", ticker: null }, { name: "Atlantic Therapeutics", ticker: null }, { name: "Novate Medical", ticker: null }, { name: "PQ Bypass", ticker: null }, { name: "Stokes Bio", ticker: null }, { name: "MedLumics", ticker: null }],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
+    notableInvestments: [
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. His Seroba profile names
+       four current and seven previous board seats, several with acquirers.
+       Round dates for these private medtech financings were not established
+       this pass; rows stay undated rather than guessed. */
+    { name: "Loci Orthopaedics", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://serobavc.com/team/daniel-omahony/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Perfuze", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://serobavc.com/team/daniel-omahony/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Ryme Medical", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://serobavc.com/team/daniel-omahony/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Quanta Dialysis Technologies", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://serobavc.com/team/daniel-omahony/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Apica Cardiovascular", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://serobavc.com/team/daniel-omahony/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Covagen", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://serobavc.com/team/daniel-omahony/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Atlantic Therapeutics", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://serobavc.com/team/daniel-omahony/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Novate Medical", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://serobavc.com/team/daniel-omahony/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "PQ Bypass", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://serobavc.com/team/daniel-omahony/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Stokes Bio", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://serobavc.com/team/daniel-omahony/", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "MedLumics", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://serobavc.com/team/daniel-omahony/", type: "partner-bio", checked: "2026-08-23" }] }
+  ],
     ipoCount: 0,
     majorExits: 6,
     careerTimeline: [{ year: 1996, event: "Joined corporate venture at Elan Corporation." }, { year: 2001, event: "Began advising and consulting to Kernel Capital." }, { year: 2005, event: "Established the Technology Transfer Office at University of Galway." }, { year: 2008, event: "Became Partner at Kernel Capital, focusing on life sciences investments." }, { year: 2009, event: "Joined Seroba as Partner." }],
@@ -16920,6 +17186,8 @@ sources: [
     education: [],
     previousExperience: [],
     boardSeats: [],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
     /*
        Enriched 2026-08-23, Phase 1 of the database-wide rollout. Attribution
@@ -18023,6 +18291,8 @@ sources: [
     education: ["A.B. with Honors in Social Studies, Harvard College", "M.B.A., Harvard Business School"],
     previousExperience: ["Co-founder, Sherpa Capital", "Co-founder, Silicon Foundry", "Co-head of Global Internet Investment Banking, Goldman Sachs", "Early employee, LookSmart", "Financial Analyst, Technology Media and Telecommunications group, Goldman Sachs"],
     boardSeats: [],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
     /*
        Enriched 2026-08-23, Phase 1 of the database-wide rollout. Every
@@ -18099,7 +18369,41 @@ sources: [
     education: [],
     previousExperience: ["Managing Director, Shasta Ventures", "Investor, Insight Partners", "Founding team, Artsy"],
     boardSeats: [],
-    notableInvestments: [{ name: "Athelas", ticker: null }, { name: "Brigit", ticker: null }, { name: "Canva", ticker: null }, { name: "ClassDojo", ticker: null }, { name: "Color Health", ticker: null }, { name: "Frame.io", ticker: null }, { name: "Imperfect Foods", ticker: null }, { name: "Lattice", ticker: null }, { name: "The Farmer's Dog", ticker: null }],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
+    notableInvestments: [
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Press coverage of his
+       track record states he led Canva, ClassDojo, Color, Frame.io, Imperfect
+       Foods, Lattice and The Farmer's Dog at Shasta - recorded with orgAtTime
+       - and led the Athelas seed. Brigit stays bare: no source names him on
+       it. */
+    { name: "Athelas", ticker: null, stage: "Seed",
+      orgAtTime: "shasta-ventures",
+      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
+    { name: "Brigit", ticker: null },
+    { name: "Canva", ticker: null,
+      orgAtTime: "shasta-ventures",
+      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
+    { name: "ClassDojo", ticker: null,
+      orgAtTime: "shasta-ventures",
+      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
+    { name: "Color Health", ticker: null,
+      orgAtTime: "shasta-ventures",
+      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
+    { name: "Frame.io", ticker: null,
+      orgAtTime: "shasta-ventures",
+      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
+    { name: "Imperfect Foods", ticker: null,
+      orgAtTime: "shasta-ventures",
+      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
+    { name: "Lattice", ticker: null,
+      orgAtTime: "shasta-ventures",
+      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
+    { name: "The Farmer's Dog", ticker: null,
+      orgAtTime: "shasta-ventures",
+      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [{ year: 2010, event: "Began career as a venture capitalist" }, { year: 2021, event: "Co-founded Footwork with Mike Smith" }],
@@ -18286,7 +18590,49 @@ sources: [
     education: [],
     previousExperience: ["Investor, In-Q-Tel"],
     boardSeats: ["Institute for Security and Technology", "Camp Belknap"],
-    notableInvestments: [{ name: "Skydio", ticker: null }, { name: "VAST Data", ticker: null }, { name: "Claroty", ticker: null }, { name: "Encord", ticker: null }, { name: "Halcyon", ticker: null }, { name: "Harmonic Security", ticker: null }, { name: "Skylo", ticker: null }, { name: "Sysdig", ticker: null }, { name: "Aeva", ticker: "AEVA" }, { name: "Pure Storage", ticker: "PSTG" }, { name: "Cloudera", ticker: null }, { name: "FireEye", ticker: null }],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
+    notableInvestments: [
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. His N47 profile lists his
+       current portfolio; FireEye, Cloudera and Pure Storage were In-Q-Tel-era
+       work recorded with orgAtTime. Aeva stays bare: the page does not list
+       it. */
+    { name: "Skydio", ticker: null,
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "VAST Data", ticker: null,
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Claroty", ticker: null,
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Encord", ticker: null,
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Halcyon", ticker: null,
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Harmonic Security", ticker: null,
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Skylo", ticker: null,
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Sysdig", ticker: null,
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Aeva", ticker: "AEVA" },
+    { name: "Pure Storage", ticker: "PSTG",
+      orgAtTime: "in-q-tel",
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Cloudera", ticker: null,
+      orgAtTime: "in-q-tel",
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "FireEye", ticker: null,
+      orgAtTime: "in-q-tel",
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Avidbots", ticker: null,
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Vitally", ticker: null,
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Yellowbrick Data", ticker: null,
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Sila", ticker: null,
+      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [{ year: 2006, event: "Joined In-Q-Tel, where he spent about a decade making early-stage investments" }, { year: 2016, event: "Left In-Q-Tel after roughly ten years, having backed FireEye, Cloudera and Pure Storage before their IPOs" }],
@@ -18797,7 +19143,37 @@ sources: [
     education: ["BA in Law and International Relations, Hebrew University of Jerusalem", "MBA, Tel Aviv University"],
     previousExperience: ["Director of Investor Relations, Evergreen Venture Partners", "Associate, Israeli Ministry of Foreign Affairs"],
     boardSeats: [],
-    notableInvestments: [{ name: "Guesty", ticker: null }, { name: "Buildots", ticker: null }, { name: "Bizzabo", ticker: null }, { name: "Trigo", ticker: null }, { name: "Inshur", ticker: null }, { name: "Chargeflow", ticker: null }, { name: "Dynamic Yield", ticker: null }, { name: "Zoomin", ticker: null }, { name: "Pyramid Analytics", ticker: null }, { name: "RapidAPI", ticker: null }],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
+    notableInvestments: [
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Her Viola profile lists
+       six active and four exited portfolio companies against her. Buildots
+       carries the Series C announcement in which she is quoted as the co-lead
+       investor. */
+    { name: "Guesty", ticker: null,
+      evidence: [{ url: "https://www.viola-group.com/team/natalie-refuah", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Buildots", ticker: null, stage: "Series C", year: 2022, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "Construction AI",
+      evidence: [{ url: "https://www.prnewswire.com/il/news-releases/buildots-raises-60-million-expanding-ai-solution-to-provide-real-time-knowledge-across-the-entire-construction-process-301548820.html", type: "deal-announcement", checked: "2026-08-23" },
+                  { url: "https://www.viola-group.com/team/natalie-refuah", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Bizzabo", ticker: null,
+      evidence: [{ url: "https://www.viola-group.com/team/natalie-refuah", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Trigo", ticker: null,
+      evidence: [{ url: "https://www.viola-group.com/team/natalie-refuah", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Inshur", ticker: null,
+      evidence: [{ url: "https://www.viola-group.com/team/natalie-refuah", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Chargeflow", ticker: null,
+      evidence: [{ url: "https://www.viola-group.com/team/natalie-refuah", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Dynamic Yield", ticker: null,
+      evidence: [{ url: "https://www.viola-group.com/team/natalie-refuah", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Zoomin", ticker: null,
+      evidence: [{ url: "https://www.viola-group.com/team/natalie-refuah", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Pyramid Analytics", ticker: null,
+      evidence: [{ url: "https://www.viola-group.com/team/natalie-refuah", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "RapidAPI", ticker: null,
+      evidence: [{ url: "https://www.viola-group.com/team/natalie-refuah", type: "partner-bio", checked: "2026-08-23" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [{ year: 2008, event: "Joined Viola Growth as an Associate" }, { year: 2016, event: "Promoted to Partner at Viola Growth" }],
@@ -18933,7 +19309,38 @@ sources: [
     education: [],
     previousExperience: ["Investor, Insight Venture Partners", "US expansion lead, Dynamic Yield", "Co-founder, Sinai Ventures"],
     boardSeats: ["United Hatzalah"],
-    notableInvestments: [{ name: "Xamarin", ticker: null }, { name: "1stdibs", ticker: "DIBS" }, { name: "Carta", ticker: null }, { name: "Hippo", ticker: null }, { name: "Ro", ticker: null }, { name: "Unqork", ticker: null }, { name: "Front", ticker: null }, { name: "Ramp", ticker: null }, { name: "Dutchie", ticker: null }],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
+    notableInvestments: [
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. His own Vine Ventures
+       launch post states he led early investments in Carta, Hippo, Ro, Unqork,
+       Front (FrontApp), Ramp and Dutchie at Sinai Ventures - recorded with
+       orgAtTime. Xamarin and 1stdibs stay bare: no source names him on those. */
+    { name: "Xamarin", ticker: null },
+    { name: "1stdibs", ticker: "DIBS" },
+    { name: "Carta", ticker: null,
+      orgAtTime: "sinai-ventures",
+      evidence: [{ url: "https://ericreinervine.medium.com/vine-ventures-i-lp-2f52279eca57", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Hippo", ticker: null,
+      orgAtTime: "sinai-ventures",
+      evidence: [{ url: "https://ericreinervine.medium.com/vine-ventures-i-lp-2f52279eca57", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Ro", ticker: null,
+      orgAtTime: "sinai-ventures",
+      evidence: [{ url: "https://ericreinervine.medium.com/vine-ventures-i-lp-2f52279eca57", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Unqork", ticker: null,
+      orgAtTime: "sinai-ventures",
+      evidence: [{ url: "https://ericreinervine.medium.com/vine-ventures-i-lp-2f52279eca57", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Front", ticker: null,
+      orgAtTime: "sinai-ventures",
+      evidence: [{ url: "https://ericreinervine.medium.com/vine-ventures-i-lp-2f52279eca57", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Ramp", ticker: null,
+      orgAtTime: "sinai-ventures",
+      evidence: [{ url: "https://ericreinervine.medium.com/vine-ventures-i-lp-2f52279eca57", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Dutchie", ticker: null,
+      orgAtTime: "sinai-ventures",
+      evidence: [{ url: "https://ericreinervine.medium.com/vine-ventures-i-lp-2f52279eca57", type: "partner-bio", checked: "2026-08-23" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [{ year: 2020, event: "Founded Vine Ventures" }],
@@ -20157,6 +20564,8 @@ sources: [
     education: ["Finance and electrical engineering, Technische Universität München"],
     previousExperience: [],
     boardSeats: [],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
     /*
        Enriched 2026-08-23, Phase 1 of the database-wide rollout. Attribution
@@ -20238,7 +20647,40 @@ sources: [
     education: [],
     previousExperience: [],
     boardSeats: [],
-    notableInvestments: [{ name: "Q.ANT", ticker: null }, { name: "Enginsight", ticker: null }, { name: "Aleph Alpha", ticker: null }, { name: "DeepDrive", ticker: null }, { name: "Vimcar", ticker: null }, { name: "Wire", ticker: null }, { name: "shyftplan", ticker: null }, { name: "Hypatos", ticker: null }, { name: "Blickfeld", ticker: null }, { name: "paretos", ticker: null }, { name: "GNA Biosolutions", ticker: null }, { name: "kausable", ticker: null }],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
+    notableInvestments: [
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. UVC's team page lists all
+       twelve companies against him. Aleph Alpha carries the Series A co-led by
+       UVC; DeepDrive the UVC-led seed. */
+    { name: "Q.ANT", ticker: null,
+      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Enginsight", ticker: null,
+      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Aleph Alpha", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year",
+      evidence: [{ url: "https://www.uvcpartners.com/blog/aleph-alpha-secures-eu23-million-series-a-funding", type: "firm-announcement", checked: "2026-08-23" },
+                  { url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "DeepDrive", ticker: null, stage: "Seed", year: 2022, yearPrecision: "year",
+      evidence: [{ url: "https://www.uvcpartners.com/blog/e-mobility-start-up-deepdrive-raises-over-4-million-euros-and-wins-peter-mertens-as-advisory-board-member", type: "firm-announcement", checked: "2026-08-23" },
+                  { url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Vimcar", ticker: null,
+      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Wire", ticker: null,
+      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "shyftplan", ticker: null,
+      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Hypatos", ticker: null,
+      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Blickfeld", ticker: null,
+      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "paretos", ticker: null,
+      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "GNA Biosolutions", ticker: null,
+      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "kausable", ticker: null,
+      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [],
@@ -21224,6 +21666,8 @@ sources: [
     education: ["Doctorate in Medicine, Ludwig-Maximilians-University Munich", "MSc in Economics, Ludwig-Maximilians-University Munich", "Entrepreneurship training, MIT Entrepreneurship Center, Boston"],
     previousExperience: ["Medical researcher in cardiovascular physiology, Ludwig-Maximilians-University Munich", "Health economics researcher, Ludwig-Maximilians-University Munich"],
     boardSeats: [],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
     notableInvestments: [
     /*
        Enriched 2026-08-23, Phase 1 of the database-wide rollout. His
@@ -21731,7 +22175,39 @@ sources: [
     education: ["B.S. Electrical Engineering, Massachusetts Institute of Technology", "M.S. Electrical Engineering, Massachusetts Institute of Technology", "PhD Electrical Engineering, Massachusetts Institute of Technology"],
     previousExperience: ["CEO, Infocomm Investments", "Consultant, Boston Consulting Group"],
     boardSeats: ["SG Growth Capital", "Great Eastern Holdings", "Singapore Venture & Private Capital Association", "Technology Council, Global Private Capital Association"],
-    notableInvestments: [{ name: "Ninja Van", ticker: null }, { name: "Padlet", ticker: null }, { name: "KKday", ticker: null }, { name: "Delos", ticker: null }, { name: "Rainforest", ticker: null }, { name: "UrbanMetry", ticker: null }, { name: "Hypefast", ticker: null }, { name: "GoGet", ticker: null }, { name: "Cinch", ticker: null }, { name: "Twilio", ticker: "TWLO" }, { name: "Quid", ticker: null }],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
+    notableInvestments: [
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. His Monk's Hill profile
+       states he led Ninja Van, Padlet, KKday, Delos, Rainforest, UrbanMetry,
+       Hypefast, GoGet and Cinch, and led Twilio and Quid during his Infocomm
+       Investments tenure - recorded with orgAtTime. */
+    { name: "Ninja Van", ticker: null,
+      evidence: [{ url: "https://www.monkshill.com/team-members/kuo-yi-lim", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Padlet", ticker: null,
+      evidence: [{ url: "https://www.monkshill.com/team-members/kuo-yi-lim", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "KKday", ticker: null,
+      evidence: [{ url: "https://www.monkshill.com/team-members/kuo-yi-lim", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Delos", ticker: null,
+      evidence: [{ url: "https://www.monkshill.com/team-members/kuo-yi-lim", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Rainforest", ticker: null,
+      evidence: [{ url: "https://www.monkshill.com/team-members/kuo-yi-lim", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "UrbanMetry", ticker: null,
+      evidence: [{ url: "https://www.monkshill.com/team-members/kuo-yi-lim", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Hypefast", ticker: null,
+      evidence: [{ url: "https://www.monkshill.com/team-members/kuo-yi-lim", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "GoGet", ticker: null,
+      evidence: [{ url: "https://www.monkshill.com/team-members/kuo-yi-lim", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Cinch", ticker: null,
+      evidence: [{ url: "https://www.monkshill.com/team-members/kuo-yi-lim", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Twilio", ticker: "TWLO",
+      orgAtTime: "infocomm-investments",
+      evidence: [{ url: "https://www.monkshill.com/team-members/kuo-yi-lim", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Quid", ticker: null,
+      orgAtTime: "infocomm-investments",
+      evidence: [{ url: "https://www.monkshill.com/team-members/kuo-yi-lim", type: "partner-bio", checked: "2026-08-23" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [{ year: 2014, event: "Co-founded Monk's Hill Ventures with Peng T. Ong" }],
@@ -22491,12 +22967,44 @@ sources: [
     firm: "Stellaris Venture Partners",
     firmSlug: "stellaris-venture-partners",
     title: "Partner",
-    joinedYear: null,
+    joinedYear: 2019,
     investmentFocus: ["Consumer", "Ecommerce", "Deep Tech"],
     education: ["IIT Bombay"],
     previousExperience: ["Co-founder, Helico Foodlabs", "Co-founder, Doormint", "Early employee, Toppr (sales, marketing and content)", "Flipkart (joined 2012; role not specified on firm site)"],
     boardSeats: [],
-    notableInvestments: [{ name: "RDash", ticker: null }, { name: "Lumio", ticker: null }, { name: "Dashverse", ticker: null }, { name: "Zouk", ticker: null }, { name: "Nestasia", ticker: null }, { name: "GTM Buddy", ticker: null }, { name: "Boomerang AI", ticker: null }, { name: "Locofast", ticker: null }, { name: "PlatinumRx", ticker: null }, { name: "Dazzl", ticker: null }],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
+    notableInvestments: [
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. His Stellaris profile
+       lists his portfolio; the firm's fund-close post states he joined in 2019
+       and names Dashtoon (Dashverse) and Zouk as his investments. BuyerAssist
+       is added from his own profile page, which calls it a seed investment. */
+    { name: "RDash", ticker: null,
+      evidence: [{ url: "https://www.stellarisvp.com/team/naman-lahoty", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Lumio", ticker: null,
+      evidence: [{ url: "https://www.stellarisvp.com/team/naman-lahoty", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Dashverse", ticker: null,
+      evidence: [{ url: "https://www.stellarisvp.com/blog/stellaris-closes-300m-fund-announces-new-partner", type: "firm-announcement", checked: "2026-08-23" },
+                  { url: "https://www.stellarisvp.com/team/naman-lahoty", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Zouk", ticker: null,
+      evidence: [{ url: "https://www.stellarisvp.com/blog/stellaris-closes-300m-fund-announces-new-partner", type: "firm-announcement", checked: "2026-08-23" },
+                  { url: "https://www.stellarisvp.com/team/naman-lahoty", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Nestasia", ticker: null,
+      evidence: [{ url: "https://www.stellarisvp.com/team/naman-lahoty", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "GTM Buddy", ticker: null,
+      evidence: [{ url: "https://www.stellarisvp.com/team/naman-lahoty", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Boomerang AI", ticker: null,
+      evidence: [{ url: "https://www.stellarisvp.com/team/naman-lahoty", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Locofast", ticker: null,
+      evidence: [{ url: "https://www.stellarisvp.com/team/naman-lahoty", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "PlatinumRx", ticker: null,
+      evidence: [{ url: "https://www.stellarisvp.com/team/naman-lahoty", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Dazzl", ticker: null,
+      evidence: [{ url: "https://www.stellarisvp.com/team/naman-lahoty", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "BuyerAssist", ticker: null, stage: "Seed",
+      evidence: [{ url: "https://www.stellarisvp.com/team/naman-lahoty", type: "partner-bio", checked: "2026-08-23" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [{ year: 2012, event: "Joined Flipkart during its pre-unicorn phase" }, { year: 2024, event: "Elevated to Partner at Stellaris Venture Partners around the close of Fund III" }],
