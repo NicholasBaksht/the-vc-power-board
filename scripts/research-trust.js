@@ -467,6 +467,37 @@ function rtQRenderPeople() {
   const counts = { 'weak': 0, 'needs-review': 0, 'adequate': 0, 'strong': 0 };
   rows.forEach(function (r) { counts[r.h.category]++; });
 
+  /* Rollout levels, one pass for the whole database.
+       L0  no attribution rows at all
+       L1  attributions exist, but no chart can render
+       L2  a stage or sector distribution renders
+       L3  the same-period Partner vs. Firm comparison renders
+       L4  the comparison also yields a printed insight
+     A level is derived, never stored: enriching the data is the only
+     way to move a person up. */
+  const levelOf = {};
+  const lvlCount = [0, 0, 0, 0, 0];
+  let fhNi = 0, fhStage = 0, fhSector = 0, fhCmp = 0, fhDirect = 0;
+  if (typeof pbehCompute === 'function') {
+    slugs.forEach(function (s2) {
+      const c = pbehCompute(s2);
+      let L = 0;
+      if (c && c.n) {
+        fhNi++; L = 1;
+        if (c.stageDist) fhStage++;
+        if (c.sectorDist) fhSector++;
+        if (c.stageDist || c.sectorDist) L = 2;
+        if (c.rows.some(function (r2) { return r2.dealSource; })) fhDirect++;
+        const cmp = (typeof pbehComparison === 'function') ? pbehComparison(s2) : null;
+        if (cmp) {
+          fhCmp++; L = 3;
+          if (typeof pbehInsight === 'function' && pbehInsight(c, cmp)) L = 4;
+        }
+      }
+      levelOf[s2] = L; lvlCount[L]++;
+    });
+  }
+
   const host = rtQHost();
   host.innerHTML = '<div class="rtq-inner"><a class="rtq-close" href="#">close</a>' +
     '<div class="rtq-kicker">Internal · Research Quality</div>' +
@@ -479,33 +510,25 @@ function rtQRenderPeople() {
       }).join('') +
       '<div class="rtq-sum"><div class="n">' + rows.length + '</div><div class="l">People</div></div>' +
     '</div>' +
-    (function () {
-      /* feature-health monitor: how much of Observed Behavior can
-         actually render across the whole database right now */
-      if (typeof pbehCompute !== 'function') return '';
-      let ni = 0, stage = 0, sector = 0, cmp = 0, direct = 0;
-      Object.keys(partnerProfiles).forEach(function (s2) {
-        const c = pbehCompute(s2);
-        if (!c || !c.n) return;
-        ni++;
-        if (c.stageDist) stage++;
-        if (c.sectorDist) sector++;
-        if (c.rows.some(function (r) { return r.dealSource; })) direct++;
-        if (typeof pbehComparison === 'function' && pbehComparison(s2)) cmp++;
-      });
-      return '<div class="rtq-sub" style="margin:2px 0 10px">Feature health · ' + ni + ' with attributions · ' +
-        stage + ' can show Observed Stage · ' + sector + ' Sector Concentration · ' +
-        cmp + ' Partner vs. Firm · ' + direct + ' with direct deal evidence</div>';
-    })() +
+    (typeof pbehCompute !== 'function' ? '' :
+      '<div class="rtq-sub" style="margin:2px 0 4px">Feature health · ' + fhNi + ' with attributions · ' +
+        fhStage + ' can show Observed Stage · ' + fhSector + ' Sector Concentration · ' +
+        fhCmp + ' Partner vs. Firm · ' + fhDirect + ' with direct deal evidence</div>' +
+      '<div class="rtq-sub" style="margin:2px 0 10px">Rollout levels · ' +
+        'L0 nothing yet: ' + lvlCount[0] + ' · L1 attributions: ' + lvlCount[1] +
+        ' · L2 bars render: ' + lvlCount[2] + ' · L3 comparison: ' + lvlCount[3] +
+        ' · L4 insight: ' + lvlCount[4] + '</div>') +
     '<div class="rtq-controls">' +
       '<input type="text" id="rtqSearch" placeholder="filter by name or firm...">' +
       '<select id="rtqSort">' +
         '<option value="priority">sort: research priority</option>' +
         '<option value="health">sort: worst health first</option>' +
         '<option value="ni">sort: most attributions</option>' +
+        '<option value="level">sort: highest level first</option>' +
         '<option value="name">sort: name</option>' +
       '</select>' +
       '<a href="#" id="rtqPacket" class="rtq-tab">Copy research packet (top 25 shown)</a>' +
+      '<a href="#" id="rtqByFirm" class="rtq-tab">By firm</a>' +
       '<label><input type="checkbox" class="rtqF" value="no attributable investments"> no attribution</label>' +
       '<label><input type="checkbox" class="rtqF" value="no profile sources"> no sources</label>' +
       '<label><input type="checkbox" class="rtqF" value="missing biography"> no bio</label>' +
@@ -514,10 +537,44 @@ function rtQRenderPeople() {
       '<label><input type="checkbox" class="rtqF" value="join year missing"> no join year</label>' +
       '<label><input type="checkbox" class="rtqF" value="insufficient dated attributions for comparison"> no comparison</label>' +
     '</div>' +
-    '<table><thead><tr><th>Person</th><th>Firm</th><th>Priority</th><th>Attributed</th><th>Missing</th><th>Unlocks</th></tr></thead>' +
+    '<table><thead id="rtqHead"></thead>' +
     '<tbody id="rtqBody"></tbody></table></div>';
 
+  let byFirm = false;
+
+  function drawByFirm() {
+    /* Per-firm rollout progress: how far Observed Behavior has been
+       taken at each firm, from the same derived numbers as the
+       per-person view - nothing here is stored anywhere. */
+    const firms = {};
+    rows.forEach(function (r) {
+      const key = r.p.firm || '(no firm)';
+      const f = firms[key] || (firms[key] = { firm: key, people: 0, withNi: 0,
+                                              bars: 0, cmp: 0, high: 0 });
+      f.people++;
+      const L = levelOf[r.slug] || 0;
+      if (L >= 1) f.withNi++;
+      if (L >= 2) f.bars++;
+      if (L >= 3) f.cmp++;
+      if (r.e && r.e.priority === 'high') f.high++;
+    });
+    const term = (document.getElementById('rtqSearch').value || '').toLowerCase();
+    const list = Object.keys(firms).map(function (k) { return firms[k]; })
+      .filter(function (f) { return !term || f.firm.toLowerCase().indexOf(term) >= 0; })
+      .sort(function (a, b) { return b.bars - a.bars || b.withNi - a.withNi || b.people - a.people || a.firm.localeCompare(b.firm); });
+    document.getElementById('rtqHead').innerHTML =
+      '<tr><th>Firm</th><th>People</th><th>With attributions</th><th>Bars render (L2+)</th>' +
+      '<th>Comparison-ready (L3+)</th><th>High-priority queue</th></tr>';
+    document.getElementById('rtqBody').innerHTML = list.slice(0, 250).map(function (f) {
+      return '<tr><td>' + rtEsc(f.firm) + '</td><td>' + f.people + '</td><td>' + f.withNi + '</td>' +
+        '<td>' + f.bars + '</td><td>' + f.cmp + '</td><td>' + (f.high || '—') + '</td></tr>';
+    }).join('') || '<tr><td colspan="6" class="rtq-reasons">No firms match.</td></tr>';
+  }
+
   function draw() {
+    if (byFirm) { drawByFirm(); return; }
+    document.getElementById('rtqHead').innerHTML =
+      '<tr><th>Person</th><th>Firm</th><th>Priority</th><th>Level</th><th>Attributed</th><th>Missing</th><th>Unlocks</th></tr>';
     const term = (document.getElementById('rtqSearch').value || '').toLowerCase();
     const sort = document.getElementById('rtqSort').value;
     const filters = Array.prototype.slice.call(document.querySelectorAll('.rtqF:checked')).map(function (c) { return c.value; });
@@ -528,6 +585,8 @@ function rtQRenderPeople() {
     list.sort(function (a, b) {
       if (sort === 'name') return a.p.name.localeCompare(b.p.name);
       if (sort === 'ni') return b.h.ni - a.h.ni || a.p.name.localeCompare(b.p.name);
+      if (sort === 'level') return (levelOf[b.slug] || 0) - (levelOf[a.slug] || 0) ||
+                                   b.h.ni - a.h.ni || a.p.name.localeCompare(b.p.name);
       if (sort === 'priority') {
         const ap = a.e ? RTQ_PRIO_RANK[a.e.priority] : 3;
         const bp = b.e ? RTQ_PRIO_RANK[b.e.priority] : 3;
@@ -555,17 +614,25 @@ function rtQRenderPeople() {
         '<td>' + rtEsc(r.p.firm || '—') + '</td>' +
         '<td>' + (e ? '<span class="rtq-cat ' + PRIO_CLASS[e.priority] + '">' + PRIO_LABEL[e.priority] + '</span>'
                     : '<span class="rtq-cat adequate">—</span>') + '</td>' +
+        '<td>L' + (levelOf[r.slug] || 0) + '</td>' +
         '<td>' + (r.h.ni || '—') + '</td>' +
         '<td class="rtq-reasons">' + (e ? rtEsc(missing || 'complete') : rtEsc(r.h.reasons.join('; ') || '—')) + '</td>' +
         '<td class="rtq-reasons">' + (e && e.unlocks.length ? rtEsc(e.unlocks.join(' · ')) : '—') + '</td></tr>';
     }).join('') +
-    (list.length > LIMIT ? '<tr><td colspan="6" class="rtq-reasons">Showing the first ' + LIMIT + ' of ' +
+    (list.length > LIMIT ? '<tr><td colspan="7" class="rtq-reasons">Showing the first ' + LIMIT + ' of ' +
       list.length + ' under this sort - narrow with filters or search.</td></tr>' : '') ||
-    '<tr><td colspan="6" class="rtq-reasons">No people match the current filters.</td></tr>';
+    '<tr><td colspan="7" class="rtq-reasons">No people match the current filters.</td></tr>';
   }
   document.getElementById('rtqSearch').addEventListener('input', draw);
   document.getElementById('rtqSort').addEventListener('change', draw);
   Array.prototype.forEach.call(document.querySelectorAll('.rtqF'), function (c) { c.addEventListener('change', draw); });
+  const bf = document.getElementById('rtqByFirm');
+  if (bf) bf.onclick = function (ev) {
+    ev.preventDefault();
+    byFirm = !byFirm;
+    bf.textContent = byFirm ? 'By person' : 'By firm';
+    draw();
+  };
   draw();
 }
 
