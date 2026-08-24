@@ -561,6 +561,7 @@ function rtQRenderPeople() {
       '<label><input type="checkbox" class="rtqF" value="departure on record"> departed</label>' +
       '<label><input type="checkbox" class="rtqF" value="join year missing"> no join year</label>' +
       '<label><input type="checkbox" class="rtqF" value="insufficient dated attributions for comparison"> no comparison</label>' +
+      '<label><input type="checkbox" id="rtqExh"> research exhausted</label>' +
     '</div>' +
     '<table><thead id="rtqHead"></thead>' +
     '<tbody id="rtqBody"></tbody></table></div>';
@@ -603,8 +604,10 @@ function rtQRenderPeople() {
     const term = (document.getElementById('rtqSearch').value || '').toLowerCase();
     const sort = document.getElementById('rtqSort').value;
     const filters = Array.prototype.slice.call(document.querySelectorAll('.rtqF:checked')).map(function (c) { return c.value; });
+    const exhOnly = !!(document.getElementById('rtqExh') || {}).checked;
     let list = rows.filter(function (r) {
       if (term && (r.p.name + ' ' + (r.p.firm || '')).toLowerCase().indexOf(term) < 0) return false;
+      if (exhOnly && r.p.researchState !== 'exhausted') return false;
       return filters.every(function (f) { return r.h.reasons.indexOf(f) >= 0; });
     });
     list.sort(function (a, b) {
@@ -641,7 +644,8 @@ function rtQRenderPeople() {
                     : '<span class="rtq-cat adequate">—</span>') + '</td>' +
         '<td>L' + (levelOf[r.slug] || 0) + '</td>' +
         '<td>' + (r.h.ni || '—') + '</td>' +
-        '<td class="rtq-reasons">' + (e ? rtEsc(missing || 'complete') : rtEsc(r.h.reasons.join('; ') || '—')) + '</td>' +
+        '<td class="rtq-reasons">' + (r.p.researchState === 'exhausted' ? 'exhausted · ' : '') +
+          (e ? rtEsc(missing || 'complete') : rtEsc(r.h.reasons.join('; ') || '—')) + '</td>' +
         '<td class="rtq-reasons">' + (e && e.unlocks.length ? rtEsc(e.unlocks.join(' · ')) : '—') + '</td></tr>';
     }).join('') +
     (list.length > LIMIT ? '<tr><td colspan="7" class="rtq-reasons">Showing the first ' + LIMIT + ' of ' +
@@ -651,6 +655,8 @@ function rtQRenderPeople() {
   document.getElementById('rtqSearch').addEventListener('input', draw);
   document.getElementById('rtqSort').addEventListener('change', draw);
   Array.prototype.forEach.call(document.querySelectorAll('.rtqF'), function (c) { c.addEventListener('change', draw); });
+  const ex = document.getElementById('rtqExh');
+  if (ex) ex.addEventListener('change', draw);
   const bf = document.getElementById('rtqByFirm');
   if (bf) bf.onclick = function (ev) {
     ev.preventDefault();
