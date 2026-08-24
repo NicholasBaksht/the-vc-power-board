@@ -135,7 +135,11 @@ function bfpFounderAsk() {
 function bfpEvaluate(firmSlug) {
   if (typeof pbehCompute !== 'function') return null;
   const ask = bfpFounderAsk();
-  if (!ask.sectors.length) return null;      // nothing startup-specific to match on
+  /* sector answers define relevance; with none, stage answers can -
+     "invests at my stage, with evidence" is still startup-specific.
+     With neither, there is nothing to match on and no module shows. */
+  const stageOnly = !ask.sectors.length && ask.stages.size > 0;
+  if (!ask.sectors.length && !stageOnly) return null;
   const nowYear = new Date().getFullYear();
   const slugs = bfpFirmIndex()[firmSlug] || [];
   const cands = [];
@@ -147,9 +151,11 @@ function bfpEvaluate(firmSlug) {
     if (!c || !c.n) return;
 
     const rows = c.careerRows;
-    const relevant = rows.filter(function (r) {
-      return ask.sectors.some(function (fs) { return bfpRowMatchesSector(r, fs); });
-    });
+    const relevant = stageOnly
+      ? rows.filter(function (r) { return bfpStageCovers(ask.stages, r.stage); })
+      : rows.filter(function (r) {
+          return ask.sectors.some(function (fs) { return bfpRowMatchesSector(r, fs); });
+        });
     const evidencedRel = relevant.filter(function (r) { return (r.evidence || []).length || r.dealSource; }).length;
     const evidencedAll = rows.filter(function (r) { return (r.evidence || []).length || r.dealSource; }).length;
     const staged = rows.filter(function (r) { return r.stage; });
@@ -208,16 +214,21 @@ function bfpEvaluate(firmSlug) {
   if (!ranked.length) return null;
   const primary = ranked[0];
   const alternative = (ranked.length > 1 && ranked[1].score >= 0.6 * primary.score) ? ranked[1] : null;
-  return { primary: primary, alternative: alternative, all: cands, ask: ask };
+  return { primary: primary, alternative: alternative, all: cands, ask: ask, stageOnly: stageOnly };
 }
 
 /* WHY THIS PERSON - 2-3 evidence-grounded reasons, never adjectives. */
-function bfpReasons(x, ask, firmName) {
+function bfpReasons(x, ask, firmName, stageOnly) {
   const out = [];
-  const sectorsText = ask.sectors.length === 1 ? ask.sectors[0] : 'sector-relevant';
-  out.push(x.relevant + ' attributable ' + sectorsText + ' investment' + (x.relevant === 1 ? '' : 's') +
-    (x.evidencedRel ? ' (' + x.evidencedRel + ' with cited sources)' : ''));
-  if (x.stageFit) {
+  if (stageOnly) {
+    out.push(x.relevant + ' attributable investment' + (x.relevant === 1 ? '' : 's') + ' at your stage' +
+      (x.evidencedRel ? ' (' + x.evidencedRel + ' with cited sources)' : ''));
+  } else {
+    const sectorsText = ask.sectors.length === 1 ? ask.sectors[0] : 'sector-relevant';
+    out.push(x.relevant + ' attributable ' + sectorsText + ' investment' + (x.relevant === 1 ? '' : 's') +
+      (x.evidencedRel ? ' (' + x.evidencedRel + ' with cited sources)' : ''));
+  }
+  if (!stageOnly && x.stageFit) {
     out.push(x.stageFit + ' of ' + x.stagedTotal + ' known-stage attributable investments at your stage');
   }
   if (x.pvf) {
@@ -247,7 +258,7 @@ function bfpModuleHtml(firmSlug) {
       '<div class="bfp-name"><a class="bfp-view" data-partner="' + esc(x.slug) + '" href="#partner/' + esc(x.slug) + '">' +
         esc(x.name) + '</a> <span class="bfp-title">' + esc(x.title) + '</span></div>' +
       '<ul class="bfp-why">' +
-        bfpReasons(x, res.ask, firmName).map(function (r) { return '<li>' + esc(r) + '</li>'; }).join('') +
+        bfpReasons(x, res.ask, firmName, res.stageOnly).map(function (r) { return '<li>' + esc(r) + '</li>'; }).join('') +
       '</ul>';
     if (res.alternative) {
       const a = res.alternative;
