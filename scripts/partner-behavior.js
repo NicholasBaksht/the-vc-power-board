@@ -216,6 +216,18 @@ function pbehCompute(slug) {
         if (!row.ticker && h.ticker) row.ticker = h.ticker;
       }
       const d = idx.deals[key];
+      /* company-sector reference: sector is a property of the company,
+         not of any one deal, so a verified company entry may fill a
+         missing sector on any row naming it. It never supplies stage
+         or year - those belong to a specific investment. */
+      if (row.sector == null && typeof COMPANY_SECTORS !== 'undefined') {
+        const cref = COMPANY_SECTORS[pbehNorm(n.name)];
+        if (cref) {
+          row.sector = cref.sector;
+          if (!row.subsector && cref.subsector) row.subsector = cref.subsector;
+          row.via.push('company reference');
+        }
+      }
       // a deal announced after the person verifiably left carries no metadata for them
       const dealYear = d && d.announcedDate ? +String(d.announcedDate).slice(0, 4) : null;
       const departed = (p.departedYear != null) && dealYear != null && dealYear > p.departedYear;
@@ -706,8 +718,10 @@ function pbehHtml(slug) {
     'to the company - a firm\'s own team page, the person\'s official biography, or a financing ' +
     'announcement naming them. Working at the investing firm alone is never treated as attribution. ' +
     'Percentages are computed over the investments where the detail is known, with coverage shown, and ' +
-    'partner-versus-firm comparisons are only drawn over the same time period on both sides. Public ' +
-    'records may not represent the person\'s complete investment history.</p></details>';
+    'partner-versus-firm comparisons are only drawn over the same time period on both sides. Sector ' +
+    'labels may come from a verified company reference - what a company does is a fact about the ' +
+    'company, not any one deal - while stage and year always require a source about the specific ' +
+    'investment. Public records may not represent the person\'s complete investment history.</p></details>';
   h += '</div>';
   return h;
 }
