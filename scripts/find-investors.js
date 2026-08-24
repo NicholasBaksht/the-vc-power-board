@@ -360,6 +360,7 @@ function renderFinderResults() {
   const matches = computeFinderMatches();
   const container = document.getElementById('finderResultsList');
   if (!container) return;
+  if (typeof bfpResetShown === 'function') bfpResetShown();
 
   container.innerHTML = matches.map(({ firm, score, reasons }, i) => {
     const passedReasons = reasons.filter(r => r.passed === true);
@@ -380,6 +381,7 @@ function renderFinderResults() {
           ${passedReasons.map(r => `<div class="finder-reason-check"> ${r.label}</div>`).join('')}
         </div>
       ` : `<div class="finder-reasons-empty">Add more preferences above to see specific reasons this firm fits.</div>`}
+      ${typeof bfpModuleHtml === 'function' ? bfpModuleHtml(firm.slug) : ''}
       <div class="finder-breakdown">
         ${reasons.map(b => `
           <div class="finder-breakdown-row">
@@ -397,6 +399,7 @@ function renderFinderResults() {
   }).join('');
 
   pmTelemetry(matches);
+  if (typeof bfpFlushShown === 'function') bfpFlushShown();
   pmBindResultHandlers(container);
 }
 
@@ -413,6 +416,44 @@ function pmBindResultHandlers(container) {
     const slug = card.dataset.pmSlug;
     const rank = parseInt(card.dataset.pmRank, 10) || null;
     const score = parseInt(card.dataset.pmScore, 10);
+
+    /* Best-Fit Partner interactions (module rendered by
+       best-fit-partner.js; analytics reuse the same pbTrack rail) */
+    const bfpLink = ev.target.closest('.bfp-view');
+    if (bfpLink) {
+      if (typeof pbTrack === 'function') {
+        pbTrack(bfpLink.dataset.alt === '1' ? 'alternative_partner_opened' : 'best_fit_partner_opened',
+          { firmSlug: slug, rank: rank, props: { partner: bfpLink.dataset.partner } });
+      }
+      return;   // href navigates to the partner profile
+    }
+    const bfpV = ev.target.closest('[data-bfpf]');
+    if (bfpV) {
+      const box = card.querySelector('.bfp-fb');
+      const partner = box ? box.getAttribute('data-bfp-partner') : null;
+      if (bfpV.getAttribute('data-bfpf') === 'useful') {
+        if (typeof pbTrack === 'function') {
+          pbTrack('best_fit_partner_feedback_given',
+            { firmSlug: slug, props: { partner: partner, verdict: 'useful', reason: 'none' } });
+        }
+        if (box) box.innerHTML = '<span class="pmf-done">Thanks, noted.</span>';
+      } else if (box && typeof bfpReasonsFbHtml === 'function') {
+        box.innerHTML = bfpReasonsFbHtml();
+      }
+      return;
+    }
+    const bfpR = ev.target.closest('[data-bfpf-reason]');
+    if (bfpR) {
+      const box = card.querySelector('.bfp-fb');
+      const partner = box ? box.getAttribute('data-bfp-partner') : null;
+      if (typeof pbTrack === 'function') {
+        pbTrack('best_fit_partner_feedback_given',
+          { firmSlug: slug, props: { partner: partner, verdict: 'not_useful',
+            reason: bfpR.getAttribute('data-bfpf-reason') || 'none' } });
+      }
+      if (box) box.innerHTML = '<span class="pmf-done">Thanks, noted.</span>';
+      return;
+    }
 
     // opening the recommendation
     const link = ev.target.closest('.finder-result-name a');
