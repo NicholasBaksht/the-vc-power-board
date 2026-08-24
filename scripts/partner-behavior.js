@@ -91,6 +91,48 @@
      the current-firm comparison - an investment stays with the
      organization the person was at when it happened.
 
+   ENRICHMENT PIPELINE (how rows get richer - the only sanctioned path):
+     DISCOVER   the admin research queue computes, per partner, which
+                fields are missing and what intelligence completing
+                them unlocks, and emits a RESEARCH PACKET (JSON).
+     STRUCTURE  an external research pass (CoWork) fills the packet
+                from real sources under the never-guess rules. An LLM
+                may extract fields FROM supplied evidence and map
+                stage/sector text onto the existing taxonomies; it may
+                never decide "probably Series A" without a source.
+     SOURCE     every filled field carries its URL and type.
+     VALIDATE   the returned batch is machine-checked here (slugs,
+                taxonomy labels, date sanity, evidence presence)
+                before any merge.
+     APPROVE    the reviewed commit to data-partners.js IS the
+                approval gate: a static site has no runtime write
+                path, so nothing reaches canonical data except
+                through this reviewed step. Trust states derive from
+                evidence type, never from the fact of submission.
+     CANONICAL  the UI graduates automatically: Level 2 bars, Level 3
+                comparison and Level 4 insight all read the same rows
+                and are already gated on sample floors.
+
+   EVIDENCE TYPES on an NI row's evidence[] (depth matters and both
+   levels are preserved - deal-level evidence never deletes the
+   profile-level source that first attributed the company):
+     'deal-announcement'   company financing announcement naming the
+                           person  -> supports verified
+     'firm-announcement'   the investing firm's own announcement
+                           naming the person -> supports verified
+     'partner-bio'         official partner biography listing the
+                           company -> reported (profile-level)
+     'portfolio-page'      firm portfolio page naming the person on
+                           the deal -> reported
+     'regulatory'          SEC or equivalent naming the person
+                           -> verified
+     'press'               reliable reporting naming the person as
+                           investor/lead -> reported
+   Source preference order for research: company financing
+   announcement, investor announcement, partner bio, portfolio page,
+   regulatory, reliable press. Search snippets, generic databases and
+   unsourced model output are never attribution evidence.
+
    SECURITY: this file computes and renders; it writes nothing.
    Attribution changes happen only as commits to data files
    through the research workflow. Claim/Request submissions stay
@@ -370,6 +412,72 @@ function pbehInsight(c, cmp) {
   if (!bits.length) return '';
   const t = bits.join('; ');
   return t.charAt(0).toUpperCase() + t.slice(1) + '.';
+}
+
+/* ============================================================
+   RESEARCH ENRICHMENT (admin-facing; consumed by #research People)
+   Per-partner: what is missing, what completing it unlocks, and a
+   deterministic research priority. Priority rules (documented, no
+   hidden weights):
+     HIGH    5+ attributions and the majority lack dates or stages -
+             one research pass unlocks the most intelligence here
+     MEDIUM  3-4 attributions with gaps, or 5+ nearly complete
+     LOW     1-2 attributions, or already effectively complete
+   ============================================================ */
+function pbehEnrichment(slug) {
+  const c = pbehCompute(slug);
+  if (!c || c.n === 0) return null;
+  const missing = {
+    dates:   c.rows.filter(function (r) { return r.year == null; }).length,
+    stages:  c.rows.filter(function (r) { return !r.stage; }).length,
+    sectors: c.rows.filter(function (r) { return !r.sector; }).length,
+    dealEvidence: c.rows.filter(function (r) { return !r.dealSource; }).length,
+    joinYear: c.joinedYear == null
+  };
+  const staged = c.n - missing.stages, dated = c.n - missing.dates, sectored = c.n - missing.sectors;
+  const unlocks = [];
+  if (staged < PBEH_MIN_DIST && c.n >= PBEH_MIN_DIST)
+    unlocks.push('stage on ' + (PBEH_MIN_DIST - staged) + ' more rows -> Observed Stage');
+  if (sectored < PBEH_MIN_DIST && c.n >= PBEH_MIN_DIST)
+    unlocks.push('sector on ' + (PBEH_MIN_DIST - sectored) + ' more rows -> Observed Sectors');
+  if (!pbehComparison(slug)) {
+    const need = [];
+    if (missing.joinYear) need.push('join year');
+    if (dated < PBEH_CMP_MIN_P) need.push('dates on ' + (PBEH_CMP_MIN_P - dated) + '+ rows');
+    if (typeof FIRM_DEALS !== 'undefined' && c.partner.firmSlug &&
+        !FIRM_DEALS.some(function (d) { return d.firmSlug === c.partner.firmSlug; }))
+      need.push('firm deal coverage');
+    if (need.length) unlocks.push(need.join(' + ') + ' -> Partner vs. Firm');
+  }
+  const gapShare = (missing.dates + missing.stages) / (2 * c.n);
+  let priority;
+  if (c.n >= 5 && gapShare > 0.5) priority = 'high';
+  else if (c.n >= 3 && gapShare > 0.25) priority = 'medium';
+  else if (c.n >= 5) priority = 'medium';
+  else priority = 'low';
+  return { n: c.n, missing: missing, unlocks: unlocks, priority: priority,
+           sources: c.sourcesCount, joinedYear: c.joinedYear };
+}
+
+/* A machine-readable packet for one research pass: everything known,
+   everything missing, nothing invented. The external researcher fills
+   nulls from real sources or leaves them null. */
+function pbehResearchPacket(slugs) {
+  return slugs.map(function (slug) {
+    const p = partnerProfiles[slug];
+    const c = pbehCompute(slug);
+    if (!c || c.n === 0) return null;
+    return {
+      slug: slug, name: p.name, firm: p.firm || null, firmSlug: p.firmSlug || null,
+      title: p.title || null, joinedYear: c.joinedYear,
+      knownSources: (p.sources || []).map(function (x) { return x.url; }),
+      investments: c.rows.map(function (r) {
+        return { company: r.name, ticker: r.ticker,
+                 year: r.year, stage: r.stage, sector: r.sector,
+                 orgAtTime: null, evidence: [] };
+      })
+    };
+  }).filter(Boolean);
 }
 
 /* ---------- the partner-profile section ----------
