@@ -139,7 +139,10 @@
    in the existing untrusted queue until reviewed.
    ============================================================ */
 
-const PBEH_MIN_DIST = 6;      // rows-with-dimension needed before % bars render
+const PBEH_MIN_DIST = 5;      /* rows-with-dimension needed before % bars render.
+   Five is where a dominant pattern stops being coin-flip noise while
+   still being reachable by real research; below five the UI shows
+   "limited sample" and the raw records, never percentages. */
 const PBEH_MIN_INSIGHT = 3;   // attributable rows needed before any insight sentence
 const PBEH_CMP_MIN_P = 5;     // dated+classified partner rows a window needs per dimension
 const PBEH_CMP_MIN_F = 12;    // windowed firm deals a window needs per dimension
@@ -160,6 +163,7 @@ function pbehRoundBucket(round) {
   if (r.indexOf('seed') >= 0) return 'Seed';
   const m = r.match(/series ([a-g])/);
   if (m) return 'Series ' + m[1].toUpperCase();
+  if (r.indexOf('growth') >= 0) return 'Growth';
   return null;
 }
 
@@ -193,8 +197,15 @@ function pbehCompute(slug) {
   const rows = ni.map(function (n) {
     const row = { name: n.name, ticker: n.ticker || null,
                   stage: n.stage || null, year: n.year || null,
-                  sector: n.sector || null, role: n.role || null,
+                  yearPrecision: n.yearPrecision || (n.year != null ? 'year' : null),
+                  sector: n.sector || null, subsector: n.subsector || null,
+                  role: n.role || null,
+                  evidence: n.evidence || [],
                   via: [] };
+    // deal-level evidence recorded by research counts as direct support
+    if (row.evidence.some(function (e) {
+      return e.type === 'deal-announcement' || e.type === 'firm-announcement' || e.type === 'regulatory';
+    })) row.dealSource = row.dealSource || (row.evidence[0] && row.evidence[0].url);
     const orgSlug = n.orgAtTime || p.firmSlug;   // Part 19: history-safe
     if (orgSlug) {
       const key = orgSlug + '|' + pbehNorm(n.name);
@@ -393,14 +404,29 @@ function pbehInsight(c, cmp) {
      the correct output for most partners today. */
   if (c.n < PBEH_MIN_INSIGHT) return '';
   const bits = [];
+  /* MEANINGFUL-DIFFERENCE RULE: a comparison sentence requires the
+     partner's top label to differ from the firm's same-label share by
+     BOTH >= 15 percentage points AND >= 1.75x, with both sample floors
+     already met by pbehComparison. 31% vs 29% must never become an
+     insight. If every dimension's top-label gap is under 8 points, the
+     honest sentence is that behavior is broadly similar. */
   if (cmp && cmp.dims.length) {
-    const d = cmp.dims[0];
-    const top = d.partner.dist[0];
-    const f = d.firm.dist.filter(function (x) { return x.label === top.label; })[0];
-    if (f && f.pct > 0 && top.pct >= f.pct * 2) {
-      bits.push('during the same period (' + cmp.window.label.toLowerCase() +
-        '), attributable investments were roughly ' + Math.round(top.pct / f.pct) +
-        ' times more concentrated in ' + top.label + ' than the firm overall');
+    let anyMeaningful = false, allSmall = true;
+    cmp.dims.forEach(function (d) {
+      const top = d.partner.dist[0];
+      const f = d.firm.dist.filter(function (x) { return x.label === top.label; })[0];
+      const fpct = f ? f.pct : 0;
+      const gap = top.pct - fpct;
+      if (gap >= 8) allSmall = false;
+      if (!anyMeaningful && gap >= 15 && fpct > 0 && top.pct >= fpct * 1.75) {
+        anyMeaningful = true;
+        bits.push('during the same period (' + cmp.window.label.toLowerCase() +
+          '), attributable investments were considerably more concentrated in ' +
+          top.label + ' than the firm\'s tracked investments (' + top.pct + '% vs ' + fpct + '%)');
+      }
+    });
+    if (!anyMeaningful && allSmall) {
+      bits.push('observed behavior during the same period is broadly similar to the firm overall');
     }
   }
   if (c.stageDist && c.stageDist[0].pct >= 50) {
@@ -510,7 +536,7 @@ function pbehTimeline(c) {
   const undated = c.rows.filter(function (r) { return r.year == null; })
                         .sort(function (a, b) { return a.name.localeCompare(b.name); });
   const entry = function (r) {
-    const meta = [r.ticker, r.stage, r.sector].filter(Boolean).join(' · ');
+    const meta = [r.ticker, r.stage, r.subsector || r.sector].filter(Boolean).join(' · ');
     return '<div class="pbeh-tl-item"><span class="pbeh-tl-dot"></span>' +
       '<div class="pbeh-tl-body"><div class="pbeh-tl-name">' + pgAttr(r.name) + '</div>' +
       (meta ? '<div class="pbeh-tl-meta">' + pgAttr(meta) + '</div>' : '') +
