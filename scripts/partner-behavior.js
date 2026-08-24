@@ -200,6 +200,7 @@ function pbehCompute(slug) {
                   yearPrecision: n.yearPrecision || (n.year != null ? 'year' : null),
                   sector: n.sector || null, subsector: n.subsector || null,
                   role: n.role || null,
+                  orgAtTime: n.orgAtTime || null,
                   evidence: n.evidence || [],
                   via: [] };
     // deal-level evidence recorded by research counts as direct support
