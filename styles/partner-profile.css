@@ -412,8 +412,11 @@
 }
 .pbeh-stat { padding: 0 22px; border-left: 1px solid var(--hairline); }
 .pbeh-stat:first-child { padding-left: 0; border-left: none; }
+/* Deliberate mobile layout: a 2x2 research grid, never accidental
+   wrapping deciding the composition. */
 @media (max-width: 480px) {
-  .pbeh-stat { padding: 0 12px; }
+  .pbeh-strip { display: grid; grid-template-columns: 1fr 1fr; row-gap: 12px; }
+  .pbeh-stat { padding: 0 12px 0 0; border-left: none; }
 }
 .pbeh-stat-v {
   font-family: var(--sans);
@@ -574,4 +577,49 @@
   color: var(--ink-dim);
   line-height: 1.5;
   max-width: 640px;
+}
+
+/* evidence disclosure per investment - keyboard accessible by nature */
+.pbeh-ev { margin-top: 2px; }
+.pbeh-ev summary {
+  font-family: var(--sans);
+  font-size: 10.5px;
+  color: var(--gold);
+  cursor: pointer;
+  list-style: none;
+}
+.pbeh-ev summary::after { content: ' →'; }
+.pbeh-ev[open] summary::after { content: ''; }
+.pbeh-ev summary::-webkit-details-marker { display: none; }
+.pbeh-ev-row { padding: 3px 0 3px 10px; border-left: 1px solid var(--hairline); margin: 3px 0; }
+.pbeh-ev-row a { font-family: var(--sans); font-size: 11px; color: var(--gold); text-decoration: none; }
+.pbeh-ev-meta { display: block; font-family: var(--mono); font-size: 9.5px; color: var(--ink-dim); margin-top: 1px; }
+
+/* locked comparison: one quiet line, not a section */
+.pbeh-locked {
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--ink-dim);
+  margin: 14px 0 0;
+}
+
+/* methodology as progressive disclosure */
+.pbeh-method { border-top: 1px solid var(--hairline); margin-top: 16px; padding-top: 8px; }
+.pbeh-method summary {
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--ink-dim);
+  cursor: pointer;
+  list-style: none;
+}
+.pbeh-method summary::after { content: ' →'; }
+.pbeh-method[open] summary::after { content: ''; }
+.pbeh-method summary::-webkit-details-marker { display: none; }
+.pbeh-method p {
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--ink-dim);
+  line-height: 1.55;
+  max-width: 640px;
+  margin: 6px 0 0;
 }
