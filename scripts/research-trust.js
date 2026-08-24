@@ -396,10 +396,73 @@ function rtPartnerHealth(slug) {
 
 let rtQMode = 'firms';
 
+/* The CoWork enrichment prompt shipped with each packet. Encodes the
+   never-guess rules, taxonomies, evidence typing and deliverables so a
+   research pass can run without any other context. */
+const RTQ_ENRICH_PROMPT = [
+'TASK: PARTNER INVESTMENT ENRICHMENT FOR THE VC POWER BOARD',
+'',
+'The attached JSON packet lists partners and their publicly attributable',
+'investments. For every investment, fill the null fields FROM REAL SOURCES',
+'or leave them null. Never estimate, infer, or guess. Unknown stays null.',
+'',
+'FIELDS PER INVESTMENT:',
+'  year      four-digit NUMBER: the financing/investment announcement year',
+'            for the round this person is associated with. Never a company',
+'            founding date, never invented.',
+'  stage     one of: Pre-Seed, Seed, Series A, Series B, Series C,',
+'            Series D, Series E, Series F, Series G. Map source wording',
+'            onto this list; if the source names no round, null.',
+'  sector    reuse the site vocabulary (Fintech, Enterprise Software, AI,',
+'            Healthcare, Consumer, Deep Tech, Cybersecurity, Climate,',
+'            SaaS, Marketplaces, Crypto, Biotech, Robotics, Mobility,',
+'            Defense Tech, Digital Health, Edtech, Logistics, Industrial',
+'            Tech, Energy, Life Sciences, Space, ...). One label.',
+'  orgAtTime the firmSlug the person worked at WHEN this investment was',
+'            made, ONLY if a source establishes it and it differs from',
+'            their current firm. Otherwise null.',
+'  evidence  array of { url, type, checked: "YYYY-MM-DD" } where type is',
+'            one of: deal-announcement, firm-announcement, partner-bio,',
+'            portfolio-page, regulatory, press. Prefer, in order: company',
+'            financing announcement; investor announcement; partner bio;',
+'            portfolio page; regulatory; reliable press. Search snippets,',
+'            aggregator databases and unsourced model output are NOT',
+'            evidence. Every non-null field you fill must be supported by',
+'            at least one evidence entry on that investment.',
+'',
+'ATTRIBUTION RULE: a source must name THIS PERSON against THIS COMPANY.',
+'The firm having invested is not partner attribution. If you cannot tie',
+'the person to the deal, fill nothing and note it in gaps.md.',
+'',
+'Also fill partner-level joinedYear where null, with a source, and note',
+'in gaps.md anyone who appears to have left their firm.',
+'',
+'DELIVERABLES:',
+'  1. enriched.json - the same packet with nulls filled where sourced',
+'  2. sources.csv   - slug, company, field, value, source_url',
+'  3. gaps.md       - every field left null and why, one line each',
+''].join('\n');
+
+function rtQCopyPacket(list) {
+  const slugs = list.slice(0, 25).map(function (r) { return r.slug; });
+  const packet = (typeof pbehResearchPacket === 'function') ? pbehResearchPacket(slugs) : [];
+  const text = RTQ_ENRICH_PROMPT + '\nPACKET (' + packet.length + ' partners):\n\n' +
+               JSON.stringify(packet, null, 1);
+  const ta = document.createElement('textarea');
+  ta.value = text; document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); } catch (e) {}
+  document.body.removeChild(ta);
+  alert('Research packet for ' + packet.length + ' partners copied to the clipboard.\n' +
+        'Paste it into a CoWork research session. Returned batches are validated before any merge.');
+}
+
+const RTQ_PRIO_RANK = { high: 0, medium: 1, low: 2 };
+
 function rtQRenderPeople() {
   const slugs = Object.keys(partnerProfiles);
   const rows = slugs.map(function (s) {
-    return { slug: s, p: partnerProfiles[s], h: rtPartnerHealth(s) };
+    return { slug: s, p: partnerProfiles[s], h: rtPartnerHealth(s),
+             e: (typeof pbehEnrichment === 'function') ? pbehEnrichment(s) : null };
   });
   const counts = { 'weak': 0, 'needs-review': 0, 'adequate': 0, 'strong': 0 };
   rows.forEach(function (r) { counts[r.h.category]++; });
@@ -419,10 +482,12 @@ function rtQRenderPeople() {
     '<div class="rtq-controls">' +
       '<input type="text" id="rtqSearch" placeholder="filter by name or firm...">' +
       '<select id="rtqSort">' +
+        '<option value="priority">sort: research priority</option>' +
         '<option value="health">sort: worst health first</option>' +
         '<option value="ni">sort: most attributions</option>' +
         '<option value="name">sort: name</option>' +
       '</select>' +
+      '<a href="#" id="rtqPacket" class="rtq-tab">Copy research packet (top 25 shown)</a>' +
       '<label><input type="checkbox" class="rtqF" value="no attributable investments"> no attribution</label>' +
       '<label><input type="checkbox" class="rtqF" value="no profile sources"> no sources</label>' +
       '<label><input type="checkbox" class="rtqF" value="missing biography"> no bio</label>' +
@@ -431,7 +496,7 @@ function rtQRenderPeople() {
       '<label><input type="checkbox" class="rtqF" value="join year missing"> no join year</label>' +
       '<label><input type="checkbox" class="rtqF" value="insufficient dated attributions for comparison"> no comparison</label>' +
     '</div>' +
-    '<table><thead><tr><th>Person</th><th>Firm</th><th>Health</th><th>Attributed</th><th>Boards</th><th>Why</th></tr></thead>' +
+    '<table><thead><tr><th>Person</th><th>Firm</th><th>Priority</th><th>Attributed</th><th>Missing</th><th>Unlocks</th></tr></thead>' +
     '<tbody id="rtqBody"></tbody></table></div>';
 
   function draw() {
@@ -445,17 +510,36 @@ function rtQRenderPeople() {
     list.sort(function (a, b) {
       if (sort === 'name') return a.p.name.localeCompare(b.p.name);
       if (sort === 'ni') return b.h.ni - a.h.ni || a.p.name.localeCompare(b.p.name);
+      if (sort === 'priority') {
+        const ap = a.e ? RTQ_PRIO_RANK[a.e.priority] : 3;
+        const bp = b.e ? RTQ_PRIO_RANK[b.e.priority] : 3;
+        return ap - bp || (b.e ? b.e.n : 0) - (a.e ? a.e.n : 0) || a.p.name.localeCompare(b.p.name);
+      }
       return RT_CAT_RANK[a.h.category] - RT_CAT_RANK[b.h.category] || a.p.name.localeCompare(b.p.name);
     });
+    const pk = document.getElementById('rtqPacket');
+    if (pk) pk.onclick = function (ev) { ev.preventDefault(); rtQCopyPacket(list.filter(function (r) { return r.e; })); };
     // 1,048 rows would make an unusable page; the queue is for working
     // the worst first, so it pages in slices under the active sort.
     const LIMIT = 250;
+    const PRIO_LABEL = { high: 'High', medium: 'Medium', low: 'Low' };
+    const PRIO_CLASS = { high: 'weak', medium: 'needs-review', low: 'adequate' };
     document.getElementById('rtqBody').innerHTML = list.slice(0, LIMIT).map(function (r) {
+      const e = r.e;
+      const missing = e ? [
+        e.missing.dates ? e.missing.dates + ' dates' : null,
+        e.missing.stages ? e.missing.stages + ' stages' : null,
+        e.missing.sectors ? e.missing.sectors + ' sectors' : null,
+        e.missing.dealEvidence ? e.missing.dealEvidence + ' deal-level sources' : null,
+        e.missing.joinYear ? 'join year' : null
+      ].filter(Boolean).join(' · ') : '';
       return '<tr><td><a href="#partner/' + rtEsc(r.slug) + '">' + rtEsc(r.p.name) + '</a></td>' +
         '<td>' + rtEsc(r.p.firm || '—') + '</td>' +
-        '<td><span class="rtq-cat ' + r.h.category + '">' + RT_CAT_LABEL[r.h.category] + '</span></td>' +
-        '<td>' + (r.h.ni || '—') + '</td><td>' + (r.h.boards || '—') + '</td>' +
-        '<td class="rtq-reasons">' + (r.h.reasons.length ? rtEsc(r.h.reasons.join('; ')) : 'complete and supported') + '</td></tr>';
+        '<td>' + (e ? '<span class="rtq-cat ' + PRIO_CLASS[e.priority] + '">' + PRIO_LABEL[e.priority] + '</span>'
+                    : '<span class="rtq-cat adequate">—</span>') + '</td>' +
+        '<td>' + (r.h.ni || '—') + '</td>' +
+        '<td class="rtq-reasons">' + (e ? rtEsc(missing || 'complete') : rtEsc(r.h.reasons.join('; ') || '—')) + '</td>' +
+        '<td class="rtq-reasons">' + (e && e.unlocks.length ? rtEsc(e.unlocks.join(' · ')) : '—') + '</td></tr>';
     }).join('') +
     (list.length > LIMIT ? '<tr><td colspan="6" class="rtq-reasons">Showing the first ' + LIMIT + ' of ' +
       list.length + ' under this sort - narrow with filters or search.</td></tr>' : '') ||
