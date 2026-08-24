@@ -399,6 +399,30 @@ let rtQMode = 'firms';
 /* The CoWork enrichment prompt shipped with each packet. Encodes the
    never-guess rules, taxonomies, evidence typing and deliverables so a
    research pass can run without any other context. */
+const RTQ_COMPANY_PROMPT = [
+'TASK: COMPANY SECTOR VERIFICATION FOR THE VC POWER BOARD',
+'',
+'The attached JSON lists company names that appear in partners\' attributed',
+'investments but have no verified sector yet. For each company, find ONE',
+'authoritative URL that states what the company does (its own site, a',
+'financing announcement describing it, or an encyclopedia article), and',
+'return: { "name", "sector", "subsector", "url" }.',
+'',
+'RULES:',
+'- "holders" shows which partner/firm lists the company. Use it to',
+'  DISAMBIGUATE: generic names (Neon, Kin, Unit, Front, Decade...) may',
+'  refer to several real companies. Only answer when the URL clearly',
+'  matches the company those investors actually backed. If you cannot be',
+'  certain which company is meant, SKIP IT - a skipped row is correct,',
+'  a mislabeled row is not.',
+'- sector: a broad label such as Fintech, Consumer, Enterprise Software,',
+'  AI, Cybersecurity, Healthcare, Biotech, EdTech, Climate & Energy,',
+'  Mobility, Space, Deep Tech, Gaming, Hardware, Robotics, Ecommerce.',
+'- subsector: a short specific phrase from the source itself.',
+'- Sector describes the COMPANY. Do not return stages, years, or amounts.',
+'- Return strict JSON: an array of the objects described above.',
+].join('\n');
+
 const RTQ_ENRICH_PROMPT = [
 'TASK: PARTNER INVESTMENT ENRICHMENT FOR THE VC POWER BOARD',
 '',
@@ -528,6 +552,7 @@ function rtQRenderPeople() {
         '<option value="name">sort: name</option>' +
       '</select>' +
       '<a href="#" id="rtqPacket" class="rtq-tab">Copy research packet (top 25 shown)</a>' +
+      '<a href="#" id="rtqCompanyPacket" class="rtq-tab">Copy company-sector packet</a>' +
       '<a href="#" id="rtqByFirm" class="rtq-tab">By firm</a>' +
       '<label><input type="checkbox" class="rtqF" value="no attributable investments"> no attribution</label>' +
       '<label><input type="checkbox" class="rtqF" value="no profile sources"> no sources</label>' +
@@ -632,6 +657,38 @@ function rtQRenderPeople() {
     byFirm = !byFirm;
     bf.textContent = byFirm ? 'By person' : 'By firm';
     draw();
+  };
+  const cp = document.getElementById('rtqCompanyPacket');
+  if (cp) cp.onclick = function (ev) {
+    ev.preventDefault();
+    if (typeof pbehCompute !== 'function') return;
+    /* companies still lacking a verified sector, ranked by how many
+       floor-eligible partners they would help - one verified company
+       fills the sector on every row naming it */
+    const freq = {};
+    Object.keys(partnerProfiles).forEach(function (s2) {
+      const c = pbehCompute(s2);
+      if (!c || c.n < 5) return;
+      c.rows.forEach(function (r) {
+        if (r.sector) return;
+        const k = r.name;
+        const f = freq[k] || (freq[k] = { name: k, rows: 0, holders: [] });
+        f.rows++;
+        if (f.holders.length < 4)
+          f.holders.push(c.partner.name + ' (' + (c.partner.firm || '?') + ')');
+      });
+    });
+    const list = Object.keys(freq).map(function (k) { return freq[k]; })
+      .sort(function (a, b) { return b.rows - a.rows || a.name.localeCompare(b.name); })
+      .slice(0, 150);
+    const text = RTQ_COMPANY_PROMPT + '\n\nCOMPANIES (' + list.length + '):\n\n' +
+                 JSON.stringify(list, null, 1);
+    const ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta);
+    alert('Company-sector packet (' + list.length + ' companies) copied to the clipboard.\n' +
+          'Paste it into a CoWork research session. Returned entries are verified before any merge.');
   };
   draw();
 }
