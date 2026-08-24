@@ -230,16 +230,35 @@ function pbehInsight(c) {
   return s.charAt(0).toUpperCase() + s.slice(1) + '.';
 }
 
-/* ---------- the partner-profile section (Part 8) ---------- */
-function pbehBars(distList) {
+/* ---------- the partner-profile section (Part 8) ----------
+   DESIGN INTENT: institutional research memo, not terminal output.
+   Sans-serif carries the content (titles, company names, insight);
+   monospace is demoted to small metadata (years, tickers, counts).
+   Sections are separated by thin rules, not stacked cards. Every
+   block renders only when its data exists - the bars in particular
+   are dormant until a partner clears PBEH_MIN_DIST rows with the
+   dimension on file, which today none does. */
+function pbehBars(distList, basisText) {
   const max = distList[0].pct;
-  return distList.map(function (d) {
+  return '<div class="pbeh-bars">' + distList.map(function (d) {
     return '<div class="pbeh-bar-row">' +
       '<span class="pbeh-bar-label">' + pgAttr(d.label) + '</span>' +
       '<span class="pbeh-bar-track"><span class="pbeh-bar-fill" style="width:' +
         Math.max(4, Math.round(100 * d.pct / max)) + '%"></span></span>' +
       '<span class="pbeh-bar-pct">' + d.pct + '%</span></div>';
-  }).join('');
+  }).join('') +
+  (basisText ? '<div class="pbeh-basis">' + pgAttr(basisText) + '</div>' : '') +
+  '</div>';
+}
+
+function pbehRowHtml(r) {
+  const meta = [r.stage, r.sector, r.year].filter(function (x) { return x != null; });
+  return '<div class="pbeh-inv-row">' +
+    '<span class="pbeh-inv-main">' + pgAttr(r.name) +
+      (r.ticker ? '<span class="pbeh-ticker">' + pgAttr(r.ticker) + '</span>' : '') +
+    '</span>' +
+    (meta.length ? '<span class="pbeh-inv-meta">' + pgAttr(meta.join(' · ')) + '</span>' : '') +
+    '</div>';
 }
 
 function pbehHtml(slug) {
@@ -247,64 +266,72 @@ function pbehHtml(slug) {
   const c = pbehCompute(slug);
   if (!c) return '';
 
-  // Part 24: honest empty state - and never "only N investments".
   if (c.n === 0) {
-    return '<div class="pg-side-label">Observed Investment Behavior</div>' +
-      '<div class="pbeh-empty">No publicly attributable investment history tracked yet. ' +
-      'This means Power Board has not sourced individual attributions for this person - ' +
-      'not that they have made no investments.</div>';
+    return '<div class="pbeh"><h3 class="pbeh-title">Observed Investment Behavior</h3>' +
+      '<p class="pbeh-empty">Not enough publicly attributable investment history yet. ' +
+      'Power Board has not sourced individual attributions for this person - ' +
+      'which is not the same as the person having made no investments.</p></div>';
   }
 
-  let h = '<div class="pg-side-label">Observed Investment Behavior</div>' +
-    '<div class="pbeh-count">' + c.n + ' publicly attributable investment' + (c.n === 1 ? '' : 's') +
-    ' tracked by Power Board' +
-    (c.sourcesCount ? ' · <a href="#" class="pbeh-srcjump" onclick="var e=[].slice.call(document.querySelectorAll(\'.pg-side-label\')).filter(function(x){return /Sources/.test(x.textContent);})[0];if(e)e.scrollIntoView({behavior:\'smooth\'});return false;">' + c.sourcesCount + ' profile source' + (c.sourcesCount === 1 ? '' : 's') + '</a>' : '') +
+  // full list: dated rows first (newest), then undated alphabetically
+  const dated = c.rows.filter(function (r) { return r.year != null; })
+                      .sort(function (a, b) { return b.year - a.year; });
+  const undated = c.rows.filter(function (r) { return r.year == null; })
+                        .sort(function (a, b) { return a.name.localeCompare(b.name); });
+
+  let h = '<div class="pbeh">';
+  h += '<h3 class="pbeh-title">Observed Investment Behavior</h3>';
+
+  // summary: the count is the headline, sourcing is quiet metadata
+  h += '<div class="pbeh-summary">' +
+    '<div class="pbeh-headline">' + c.n + ' publicly attributable investment' + (c.n === 1 ? '' : 's') +
+      ' <span class="pbeh-headline-note">tracked by Power Board</span></div>' +
+    (c.sourcesCount
+      ? '<div class="pbeh-meta-line">' + c.sourcesCount + ' profile source' + (c.sourcesCount === 1 ? '' : 's') +
+        ' · <a href="#" class="pbeh-srcjump" onclick="var e=[].slice.call(document.querySelectorAll(\'.pg-side-label\')).filter(function(x){return /Sources/.test(x.textContent);})[0];if(e)e.scrollIntoView({behavior:\'smooth\'});return false;">View sources</a></div>'
+      : '') +
     '</div>';
 
   if (c.stageDist) {
-    h += '<div class="pbeh-sub">Observed stage <span class="pbeh-basis">based on ' +
-      c.rows.filter(function (r) { return r.stage; }).length + ' rounds with a known stage</span></div>' +
-      pbehBars(c.stageDist);
+    h += '<h4 class="pbeh-sub">Observed stage</h4>' +
+      pbehBars(c.stageDist, 'Based on ' +
+        c.rows.filter(function (r) { return r.stage; }).length + ' attributable rounds with a known stage');
   }
   if (c.sectorDist) {
-    h += '<div class="pbeh-sub">Observed sectors <span class="pbeh-basis">based on ' +
-      c.rows.filter(function (r) { return r.sector; }).length + ' investments with a known sector</span></div>' +
-      pbehBars(c.sectorDist);
-  }
-  if (!c.stageDist && !c.sectorDist && c.n < PBEH_MIN_DIST) {
-    h += '<div class="pbeh-note">Limited attributable history - stage and sector patterns are not shown ' +
-         'below ' + PBEH_MIN_DIST + ' attributed investments with the relevant detail on file.</div>';
+    h += '<h4 class="pbeh-sub">Sector concentration</h4>' +
+      pbehBars(c.sectorDist, 'Based on ' +
+        c.rows.filter(function (r) { return r.sector; }).length + ' attributable investments with a known sector');
   }
 
-  if (c.recent.length) {
-    h += '<div class="pbeh-sub">Dated attributable investments</div>' +
-      c.recent.map(function (r) {
-        const meta = [r.stage, r.sector, r.year].filter(Boolean).join(' · ');
-        return '<div class="pbeh-inv-row"><span class="pbeh-inv-name">' + pgAttr(r.name) +
-          (r.ticker ? ' <span class="ticker-tag">' + pgAttr(r.ticker) + '</span>' : '') + '</span>' +
-          '<span class="pbeh-inv-meta">' + pgAttr(meta) + '</span></div>';
-      }).join('') +
-      (c.datedCount > c.recent.length
-        ? '<div class="pbeh-note">' + (c.datedCount - c.recent.length) + ' more dated on this profile.</div>' : '');
+  h += '<h4 class="pbeh-sub">Attributable investments</h4>' +
+    '<div class="pbeh-list">' + dated.map(pbehRowHtml).join('') + undated.map(pbehRowHtml).join('') + '</div>';
+  if (!c.stageDist && !c.sectorDist && c.n < PBEH_MIN_DIST) {
+    h += '<div class="pbeh-note">Limited attributable history - stage and sector patterns appear once ' +
+         PBEH_MIN_DIST + ' or more attributed investments carry that detail.</div>';
   }
   if (c.last24mo > 0) {
     h += '<div class="pbeh-note">' + c.last24mo + ' of the ' + c.datedCount +
-      ' dated attributions fall in the last 24 months. Dates exist only where research recorded them; ' +
-      'undated attributions are not counted here.</div>';
+      ' dated attributions fall within the last 24 months. Undated attributions are not counted.</div>';
   }
 
   if (c.boards.length) {
-    h += '<div class="pbeh-sub">Board involvement <span class="pbeh-basis">separate from investment attribution</span></div>' +
-      '<div class="pbeh-note">' + c.boards.map(pgAttr).join(' · ') + '</div>';
+    h += '<h4 class="pbeh-sub">Board &amp; portfolio involvement</h4>' +
+      '<div class="pbeh-list">' + c.boards.map(function (b) {
+        return '<div class="pbeh-inv-row"><span class="pbeh-inv-main">' + pgAttr(b) + '</span>' +
+               '<span class="pbeh-inv-meta">Board involvement</span></div>';
+      }).join('') + '</div>' +
+      '<div class="pbeh-note">Board involvement is shown separately from investment attribution.</div>';
   }
 
   const insight = pbehInsight(c);
   if (insight) {
-    h += '<div class="pbeh-sub">Power Board insight</div><div class="pbeh-insight">' + pgAttr(insight) + '</div>';
+    h += '<h4 class="pbeh-sub">Power Board insight</h4>' +
+      '<div class="pbeh-insight">' + pgAttr(insight) + '</div>';
   }
 
-  h += '<div class="pbeh-legend">Attribution requires a source naming this person against the company - ' +
-    'employment at the investing firm is never treated as attribution. This list reflects what Power Board ' +
-    'has sourced, not the person\'s complete record.</div>';
+  h += '<div class="pbeh-legend">Attribution requires a source naming this person against the company; ' +
+    'employment at the investing firm is never treated as attribution. This reflects what Power Board has ' +
+    'sourced, not the person\'s complete record.</div>';
+  h += '</div>';
   return h;
 }
