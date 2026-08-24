@@ -574,7 +574,7 @@ holdings: []
   thesis: "Electric Capital invests from seed through growth across crypto, blockchain, developer tools, AI, and healthtech, supporting founders it describes as building 'trust-minimized' technology from inception through IPO. Co-founder Avichal Garg previously worked at Facebook and Greylock Partners.",
   leadership: [
     { name: "Avichal Garg", role: "Co-Founder & General Partner", profileSlug: "avichal-garg" },
-    { name: "Curtis Spencer", role: "Co-Founder & General Partner" }
+    { name: "Curtis Spencer", role: "Co-Founder & General Partner", profileSlug: "curtis-spencer" }
   ],
   timeline: [
     { year: "2018", event: "Avichal Garg and Curtis Spencer co-found Electric Capital." }
@@ -2276,7 +2276,7 @@ holdings: []
     thesis: "Primary Venture Partners was founded in 2015 by Brad Svrluga and Ben Sun as a successor to High Peaks Ventures, built around a specific bet that crystallized after the 2008 financial crisis: New York's most talented people were shifting from Wall Street and Madison Avenue into startups, and the city needed a seed fund with genuine scale and hyper-local expertise to back them. The firm has become NYC's largest early-stage firm by operator headcount, with roughly 50 full-time staff and more than 20 dedicated platform operators embedded in portfolio companies on hiring, go-to-market execution, and follow-on fundraising - a deliberately builder-first model rather than a purely capital-first one. That approach produced early bets on Jet.com, acquired by Walmart for roughly $3.3 billion, and Mirror, acquired by Lululemon for $500 million, and Primary now manages approximately $1 billion, closing $425 million across two new funds in early 2024.",
     leadership: [
       { name: "Brad Svrluga", role: "Co-Founder & Managing Partner", profileSlug: "brad-svrluga" },
-      { name: "Ben Sun", role: "Co-Founder & General Partner" }
+      { name: "Ben Sun", role: "Co-Founder & General Partner", profileSlug: "ben-sun" }
     ],
     timeline: [
       { year: "2015", event: "Brad Svrluga and Ben Sun found Primary Venture Partners, succeeding High Peaks Ventures." },
@@ -2621,7 +2621,7 @@ holdings: []
     thesis: "Acrew Capital was co-founded in December 2019 by Theresia Gouw, Lauren Kolodny, Vishal Lugani, Asad Khaliq, and Mark Kraynak, most of whom had worked together previously at Aspect Ventures before that firm split up over differing leadership styles between its two founders. Gouw, a 15-year veteran of Accel Partners and the firm's first female partner, built Acrew deliberately as a 'multigenerational' firm structured to avoid concentrating power and decision-making at the top the way many venture partnerships do, with any two partners able to push a deal through. That structure, paired with a genuine belief that diversity of perspective is a competitive advantage rather than a checkbox, has produced a portfolio of 142-plus companies including 16 unicorns, anchored by a community of more than 600 operators and executives the firm calls its 'Crew of Leaders.' Acrew closed its $250 million debut fund backed by Melinda Gates and has since grown to $1.7 billion in AUM, raising $700 million in a single close in October 2024.",
     leadership: [
       { name: "Theresia Gouw", role: "Co-Founder & Managing Partner", profileSlug: "theresia-gouw" },
-      { name: "Lauren Kolodny", role: "Co-Founder & Managing Partner" },
+      { name: "Lauren Kolodny", role: "Co-Founder & Managing Partner", profileSlug: "lauren-kolodny" },
       { name: "Vishal Lugani", role: "Co-Founder & Partner" }
     ],
     timeline: [
@@ -4807,8 +4807,8 @@ holdings: []
     thesis: "Congruent Ventures was founded in 2017 by Joshua Posamentier and Abe Yokell, two investors with decades of combined climate tech experience dating back to the first cleantech investing cycle, well before the category regained mainstream institutional appetite. The firm organizes its investing around four specific themes - mobility and urbanization, the energy transition, food and agriculture, and sustainable production - and Posamentier's own semiconductor engineering background gives the team unusually strong technical fluency in evaluating complex climate hardware, not just software wrapped around a sustainability narrative. That specialist positioning helped Congruent grow from a $92 million debut fund into more than $1 billion under management across multiple vehicles, backed by CalSTRS, the Grantham Foundation, and other major institutional climate investors, with a portfolio spanning AMP Robotics, Fervo Energy, Span.IO, Meati Foods, and Parallel Systems.",
     leadership: [
       { name: "Joshua Posamentier", role: "Co-Founder & Managing Partner", profileSlug: "joshua-posamentier" },
-      { name: "Abe Yokell", role: "Co-Founder & Managing Partner" },
-      { name: "Tanuj Dutta", role: "General Partner" }
+      { name: "Abe Yokell", role: "Co-Founder & Managing Partner", profileSlug: "abe-yokell" },
+      { name: "Tanuj Dutta", role: "General Partner", profileSlug: "tanuj-dutta" }
     ],
     timeline: [
       { year: "2017", event: "Joshua Posamentier and Abe Yokell found Congruent Ventures." },
@@ -5399,7 +5399,7 @@ holdings: []
     thesis: "Cyberstarts was founded in 2018 by Gili Raanan, a former Sequoia Capital General Partner and two-time security-company founder, built around a distinctive 'Sunrise' methodology: rather than sourcing deals broadly, Cyberstarts partners with founding teams from day one, drawing on a network of enterprise security executives to identify unaddressed pain points before a product even exists. That model produced the single largest venture-backed exit in history - Cyberstarts partnered with Wiz on day one in 2019, and Google completed its $32 billion acquisition of the cloud security company in March 2026. The firm has raised more than $720 million across five funds and made 28 investments with a combined portfolio valuation exceeding $55 billion, representing more than half of the entire private cybersecurity market's value, though its executive-advisor profit-sharing program drew public scrutiny in 2024 over potential conflicts of interest and was subsequently suspended.",
     leadership: [
       { name: "Gili Raanan", role: "Founder", profileSlug: "gili-raanan" },
-      { name: "Lior Simon", role: "General Partner" },
+      { name: "Lior Simon", role: "General Partner", profileSlug: "lior-simon" },
       { name: "Pete Chronis", role: "General Partner" }
     ],
     timeline: [
@@ -6259,7 +6259,7 @@ holdings: []
     thesis: "M12 is Microsoft's venture fund, launched in 2016 as Microsoft Ventures and rebranded to M12 in 2018. Its proposition is explicit about being more than capital: portfolio companies get direct access to Microsoft's distribution, enterprise tooling, and - per the firm's own 'Advantage' materials - dedicated AI compute including supercomputer-scale GPU access for model training. The firm operates as a single evergreen fund capitalized directly off Microsoft's balance sheet, and removed restrictive corporate terms from its term sheets in 2019 specifically to stay founder-aligned rather than strategically entangled. In its first six years, Microsoft said M12 had invested in more than 100 companies, including 15 unicorns and 6 IPOs, focused on AI applications, AI security, AI cloud infrastructure, and deep tech systems.",
     leadership: [
       { name: "Michelle Gonzalez", role: "Corporate Vice President & Global Head", profileSlug: "michelle-gonzalez" },
-      { name: "Todd Graham", role: "Investor" }
+      { name: "Todd Graham", role: "Investor", profileSlug: "todd-graham" }
     ],
     timeline: [
       { year: "2016", event: "Microsoft launches Microsoft Ventures." },
@@ -6865,8 +6865,8 @@ holdings: []
     thesis: "Gradient Ventures was founded in 2017 by Anna Patterson, a search engine founder and former VP of Engineering for Google Search Quality, as Google's dedicated early-stage AI-focused venture fund. Staffed primarily by ex-Google technical leaders rather than traditional finance-background investors, the fund gives portfolio companies genuinely hands-on support on AI model architecture, data pipelines, and access to Google's internal technical resources, backing AI-first startups often before they've reached product-market fit. In October 2025, Gradient reached a pivotal inflection point, spinning out from Google entirely to operate as an independent investment firm - a structural shift reflecting how competitive and fast-moving the AI venture landscape has become. The fund has backed more than 175 companies including unicorns WRITER and Lambda AI, with more than $1 billion in assets under management.",
     leadership: [
       { name: "Anna Patterson", role: "Founder & Managing Partner", profileSlug: "anna-patterson" },
-      { name: "Darian Shirazi", role: "General Partner" },
-      { name: "Zach Bratun-Glennon", role: "General Partner" }
+      { name: "Darian Shirazi", role: "General Partner", profileSlug: "darian-shirazi" },
+      { name: "Zach Bratun-Glennon", role: "General Partner", profileSlug: "zach-bratun-glennon" }
     ],
     timeline: [
       { year: "2017", event: "Anna Patterson founds Gradient Ventures as Google's AI-focused venture fund." },
@@ -7392,10 +7392,7 @@ holdings: []
         role: "Founder",
         profileSlug: "bill-maris"
       },
-      {
-        name: "Andy Harrison",
-        role: "CEO & General Partner"
-      },
+      { name: "Andy Harrison", role: "CEO & General Partner", profileSlug: "andy-harrison" },
       {
         name: "Andy Conrad",
         role: "General Partner"
@@ -9377,14 +9374,8 @@ holdings: []
     thesis: "Operates under a long-term thesis it calls 'March to Abundance' - backing ambitious founders working on fundamental technology and business-model innovations rather than safe ventures built on proven technology. Positions itself as an idea-to-IPO investor, drawing on a network of over 200 families and organizations across dozens of countries to facilitate cross-border deals.",
     signatureExit: null,
     leadership: [
-      {
-        name: "Hisham Elhaddad",
-        role: "Managing Partner"
-      },
-      {
-        name: "Onsi Sawiris",
-        role: "Partner"
-      },
+      { name: "Hisham Elhaddad", role: "Managing Partner", profileSlug: "hisham-elhaddad" },
+      { name: "Onsi Sawiris", role: "Partner", profileSlug: "onsi-sawiris" },
       {
         name: "Fady Yacoub",
         role: "Partner",
@@ -9699,9 +9690,9 @@ holdings: []
     sectors: ["AI", "Developer Tools", "Enterprise Software", "SaaS", "Fintech"],
     thesis: "Flybridge is an early-stage venture firm investing at pre-seed and seed. Its stated focus areas are AI infrastructure and developer platforms, agentic business applications, and native AI for human potential. The firm states check sizes of up to $250K at pre-seed through its Next Wave funds, $1M-$3M at seed, and $10M+ post-Series A, and says it keeps funds around $100M. It operates from Boston and New York.",
     leadership: [
-      { name: "Chip Hazard", role: "Co-founder & General Partner" },
-      { name: "Jeff Bussgang", role: "Co-founder & General Partner" },
-      { name: "Jesse Middleton", role: "General Partner" },
+      { name: "Chip Hazard", role: "Co-founder & General Partner", profileSlug: "chip-hazard" },
+      { name: "Jeff Bussgang", role: "Co-founder & General Partner", profileSlug: "jeff-bussgang" },
+      { name: "Jesse Middleton", role: "General Partner", profileSlug: "jesse-middleton" },
       { name: "Dorothy Chang", role: "Venture Partner" },
       { name: "Anna Palmer", role: "Venture Partner" },
     ],
@@ -9726,9 +9717,9 @@ holdings: []
     sectors: ["Cybersecurity", "Enterprise Software", "Consumer", "Fintech", "Crypto"],
     thesis: "Accomplice is a venture firm that emerged in 2015 when Atlas Venture's technology practice separated from its life sciences team and rebranded. It invests with high conviction in concentrated, patient positions and describes itself as a venture firm and contemporary family office. The firm promotes a federated model in which it acts as an anchor LP in independent funds run by former colleagues, including Archetype, Vinyl, Vibe and Wolfhead. It co-founded the Spearhead operator-angel program with Naval Ravikant.",
     leadership: [
-      { name: "Jeff Fagnan", role: "Founding Partner" },
-      { name: "Ryan Moore", role: "Founding Partner" },
-      { name: "Sarah A. Downey", role: "Operating Partner" },
+      { name: "Jeff Fagnan", role: "Founding Partner", profileSlug: "jeff-fagnan" },
+      { name: "Ryan Moore", role: "Founding Partner", profileSlug: "ryan-moore" },
+      { name: "Sarah A. Downey", role: "Operating Partner", profileSlug: "sarah-downey" },
     ],
     timeline: [
       { year: "2015", event: "Atlas Venture's technology group splits from the life sciences team and rebrands as Accomplice, with the name selected from roughly 20,000 crowdsourced submissions." },
@@ -9768,8 +9759,8 @@ holdings: []
     sectors: ["Consumer", "Enterprise Software", "Mobility"],
     thesis: "Ludlow Ventures is an early-stage venture firm investing at pre-seed and seed. The firm states on its site that it does not chase themes and selects investments primarily on the people behind them. TechCrunch reported in 2024 that Ludlow invests in roughly 25 companies per fund. Portfolio companies include Honey, StockX, Deepgram, Product Hunt, Notarize, Density, Backbone and Boulevard.",
     leadership: [
-      { name: "Jonathon Triest", role: "Partner" },
-      { name: "Brett deMarrais", role: "Partner" },
+      { name: "Jonathon Triest", role: "Partner", profileSlug: "jonathon-triest" },
+      { name: "Brett deMarrais", role: "Partner", profileSlug: "brett-demarrais" },
     ],
     timeline: [
       { year: "2010", event: "Ludlow Ventures established, per the firm's site." },
@@ -9794,10 +9785,10 @@ holdings: []
     sectors: ["Consumer", "Fintech", "SaaS", "AI", "Marketplaces"],
     thesis: "Bling Capital is an early-stage venture fund investing at pre-seed and seed, with check sizes the firm states as $1M to $5M. Its stated focus is helping founders reach product-market fit, supported by a Product Council of more than 100 operators. Ben Ling founded the firm in 2018 after serving as a general partner at Khosla Ventures and holding product and partnership roles at Google, YouTube and Facebook. The firm closed its fourth fund at $270M in 2024, with about half earmarked for follow-on investments.",
     leadership: [
-      { name: "Ben Ling", role: "General Partner" },
-      { name: "Kyle Lui", role: "General Partner" },
-      { name: "Eric Theis", role: "Partner" },
-      { name: "Charlie Pinto", role: "Operating Partner" },
+      { name: "Ben Ling", role: "General Partner", profileSlug: "ben-ling" },
+      { name: "Kyle Lui", role: "General Partner", profileSlug: "kyle-lui" },
+      { name: "Eric Theis", role: "Partner", profileSlug: "eric-theis" },
+      { name: "Charlie Pinto", role: "Operating Partner", profileSlug: "charlie-pinto" },
       { name: "Ash Panchang", role: "Senior Associate" },
     ],
     timeline: [
@@ -9819,12 +9810,12 @@ holdings: []
     sectors: ["Enterprise Software", "SaaS", "Marketplaces"],
     thesis: "Bowery Capital is an early-stage venture firm investing at pre-seed and seed in B2B software and marketplace companies, and states a preference for leading rounds. Michael Brown founded the firm in New York in 2013; its debut fund closed at $33M and its third fund at $70M in 2021. The firm describes its funds as deliberately modest in size and pairs capital with an in-house Acceleration Team covering growth, talent and business development. It remains actively investing, with portfolio exits recorded through 2026.",
     leadership: [
-      { name: "Michael Brown", role: "General Partner and Founder" },
-      { name: "Loren Straub", role: "General Partner" },
-      { name: "Shashank Saxena", role: "Venture Partner" },
-      { name: "Bersabel Tadesse", role: "Venture Partner" },
+      { name: "Michael Brown", role: "General Partner and Founder", profileSlug: "michael-brown" },
+      { name: "Loren Straub", role: "General Partner", profileSlug: "loren-straub" },
+      { name: "Shashank Saxena", role: "Venture Partner", profileSlug: "shashank-saxena" },
+      { name: "Bersabel Tadesse", role: "Venture Partner", profileSlug: "bersabel-tadesse" },
       { name: "Stuart Wall", role: "Venture Partner" },
-      { name: "Patrick McGovern", role: "Principal" },
+      { name: "Patrick McGovern", role: "Principal", profileSlug: "patrick-mcgovern" },
       { name: "Ellen LoBiondo", role: "Director of Growth" },
     ],
     timeline: [
@@ -9848,11 +9839,11 @@ holdings: []
     sectors: ["Enterprise Software", "SaaS", "Developer Tools", "Cybersecurity", "Fintech"],
     thesis: "S28 Capital is a San Francisco venture fund backing early-stage software companies. The team describes itself as operators and entrepreneurs who have hired thousands of employees, raised over $200M in venture capital and created over $2B in enterprise value. Through a program it calls Filament, the firm works with founders from the idea stage onward on recruiting, product-market fit and go-to-market. It launched in 2016 under the name Spectrum 28 with a $170M debut fund.",
     leadership: [
-      { name: "Kent Ho", role: "Founder & General Partner" },
-      { name: "Shvet Jain", role: "General Partner" },
-      { name: "Andrew Miklas", role: "Venture Partner" },
+      { name: "Kent Ho", role: "Founder & General Partner", profileSlug: "kent-ho" },
+      { name: "Shvet Jain", role: "General Partner", profileSlug: "shvet-jain" },
+      { name: "Andrew Miklas", role: "Venture Partner", profileSlug: "andrew-miklas" },
       { name: "Justin Wong", role: "Partner" },
-      { name: "Victor Pang", role: "Partner" },
+      { name: "Victor Pang", role: "Partner", profileSlug: "victor-pang" },
     ],
     timeline: [
       { year: "2016", event: "Launched as Spectrum 28 with a $170M debut venture fund, co-founded by Kent Ho and Lyon Wong." },
@@ -9871,9 +9862,9 @@ holdings: []
     sectors: ["Deep Tech", "Defense Tech", "Climate", "Biotech", "Space"],
     thesis: "Cantos is a pre-seed and seed venture firm investing in companies applying technology to the physical world. The firm organizes its focus around three stated pillars: abundance, resilience of critical infrastructure and ecosystems, and U.S. competitiveness in advanced technologies. Its portfolio spans defense and aerospace, nuclear and other energy, advanced materials and manufacturing, robotics, satellites and biotech. Fund IV writes checks of roughly $1.5M to $4M across about 22 planned investments.",
     leadership: [
-      { name: "Ian Rountree", role: "General Partner" },
-      { name: "Grant Gregory", role: "Partner" },
-      { name: "Amee Kapadia", role: "Principal" },
+      { name: "Ian Rountree", role: "General Partner", profileSlug: "ian-rountree" },
+      { name: "Grant Gregory", role: "Partner", profileSlug: "grant-gregory" },
+      { name: "Amee Kapadia", role: "Principal", profileSlug: "amee-kapadia" },
       { name: "Sofia Garcia", role: "CFO" },
     ],
     timeline: [
@@ -9897,8 +9888,8 @@ holdings: []
     sectors: ["Proptech", "Real Estate", "Climate", "Fintech"],
     thesis: "Fifth Wall invests in technology for the built environment, spanning proptech and climate technology for real estate. Its limited partner base consists largely of real estate owner-operators - approximately 116 strategic LPs across more than 20 countries - who are also potential customers for portfolio companies. The firm has raised separate proptech funds and a dedicated climate fund, and in 2025 was investing through REACT, a vehicle combining proptech and climate opportunities. Its Fund III was structured as a hybrid vehicle covering both early-stage and late-stage investments.",
     leadership: [
-      { name: "Brendan Wallace", role: "Chief Executive Officer & Chief Investment Officer" },
-      { name: "Brad Greiwe", role: "Co-Founder & Chairman" },
+      { name: "Brendan Wallace", role: "Chief Executive Officer & Chief Investment Officer", profileSlug: "brendan-wallace" },
+      { name: "Brad Greiwe", role: "Co-Founder & Chairman", profileSlug: "brad-greiwe" },
       { name: "Luke Harris", role: "General Counsel & Chief Operating Officer" },
       { name: "Eric Lee", role: "Chief Financial Officer" },
       { name: "Adam Lieberman", role: "Chief Technology Officer" },
@@ -9929,11 +9920,11 @@ holdings: []
     sectors: ["SaaS", "Marketplaces", "Enterprise Software", "Consumer Internet"],
     thesis: "Peak invests at pre-seed and seed stage in European SaaS, marketplace and platform companies, writing initial tickets of €250k to €4M and following on through Series B and beyond. It screens deals against a stated four-part framework of Teams, Traction, Thesis and Timing. The firm's funds are backed entirely by entrepreneurs rather than institutional limited partners. Sourcing is concentrated on the Benelux, DACH and Nordic markets from offices in Amsterdam, Berlin, Stockholm and Munich.",
     leadership: [
-      { name: "Stefan Bary", role: "General Partner" },
-      { name: "Marnix Broer", role: "General Partner" },
-      { name: "Tea Elezi", role: "General Partner" },
-      { name: "Thijs Dijkman", role: "General Partner" },
-      { name: "David Zwagemaker", role: "Partner" },
+      { name: "Stefan Bary", role: "General Partner", profileSlug: "stefan-bary" },
+      { name: "Marnix Broer", role: "General Partner", profileSlug: "marnix-broer" },
+      { name: "Tea Elezi", role: "General Partner", profileSlug: "tea-elezi" },
+      { name: "Thijs Dijkman", role: "General Partner", profileSlug: "thijs-dijkman" },
+      { name: "David Zwagemaker", role: "Partner", profileSlug: "david-zwagemaker" },
       { name: "Philippe von Klitzing", role: "Partner" },
     ],
     timeline: [
@@ -9958,11 +9949,11 @@ holdings: []
     sectors: ["Enterprise Software", "SaaS", "AI"],
     thesis: "Newion invests at seed and Series A in European B2B software companies, with tickets of typically €1-10M in rounds up to €20M. Its geographic focus is the Benelux, the Nordics and Germany. The firm looks for an underlying market shift together with founders able to lead the company through it, and pressure-tests the coherence between problem, product and sales model before committing. After investing it stays closely engaged during the first 12 to 18 months.",
     leadership: [
-      { name: "Mathijs R. de Wit", role: "Managing Partner" },
-      { name: "Pieter Welten", role: "Partner" },
-      { name: "Fatin El Azear", role: "CFO/Partner" },
-      { name: "Dorus Olgers", role: "Partner" },
-      { name: "Patrick Polak", role: "Partner Fund I-IV" },
+      { name: "Mathijs R. de Wit", role: "Managing Partner", profileSlug: "mathijs-de-wit" },
+      { name: "Pieter Welten", role: "Partner", profileSlug: "pieter-welten" },
+      { name: "Fatin El Azear", role: "CFO/Partner", profileSlug: "fatin-el-azear" },
+      { name: "Dorus Olgers", role: "Partner", profileSlug: "dorus-olgers" },
+      { name: "Patrick Polak", role: "Partner Fund I-IV", profileSlug: "patrick-polak" },
       { name: "Frank Claassen", role: "Partner Fund I-IV" },
     ],
     timeline: [
@@ -9988,10 +9979,10 @@ holdings: []
     sectors: ["Enterprise Software", "SaaS", "AI", "Fintech", "Crypto"],
     thesis: "Volta Ventures invests at pre-seed and seed stage in B2B software companies. It backs companies originating in Belgium, the Netherlands and Luxembourg. Initial cheques run from €100k to €1M, with capacity for follow-on investment. The firm operates from offices in Ghent, Antwerp and Amsterdam.",
     leadership: [
-      { name: "Frank Maene", role: "Managing Partner" },
-      { name: "Sander Vonk", role: "Managing Partner" },
-      { name: "Koen De Waele", role: "General Partner & CFO" },
-      { name: "Stan Jeanty", role: "Principal" },
+      { name: "Frank Maene", role: "Managing Partner", profileSlug: "frank-maene" },
+      { name: "Sander Vonk", role: "Managing Partner", profileSlug: "sander-vonk" },
+      { name: "Koen De Waele", role: "General Partner & CFO", profileSlug: "koen-de-waele" },
+      { name: "Stan Jeanty", role: "Principal", profileSlug: "stan-jeanty" },
       { name: "Michel Akkermans", role: "Chairman" },
     ],
     timeline: [
@@ -10014,10 +10005,10 @@ holdings: []
     sectors: ["Enterprise Software", "SaaS", "Marketplaces", "Logistics"],
     thesis: "henQ invests in B2B software companies led by European founders, with initial tickets up to €10M. It targets seed and Series A rounds and makes roughly two new investments per year. The firm states a preference for companies in unglamorous markets or with atypical business models, and emphasises low dilution and founder autonomy rather than board control. henQ 5 is expected to back 8-12 companies over a five-year deployment period.",
     leadership: [
-      { name: "Coen van Duiven", role: "Partner" },
-      { name: "Jan Andriessen", role: "Partner" },
-      { name: "Mick Mackaay", role: "Partner" },
-      { name: "Rob Rousseau", role: "Principal" },
+      { name: "Coen van Duiven", role: "Partner", profileSlug: "coen-van-duiven" },
+      { name: "Jan Andriessen", role: "Partner", profileSlug: "jan-andriessen" },
+      { name: "Mick Mackaay", role: "Partner", profileSlug: "mick-mackaay" },
+      { name: "Rob Rousseau", role: "Principal", profileSlug: "rob-rousseau" },
     ],
     timeline: [
       { year: "2018", event: "Portfolio company Mendix acquired by Siemens for over $700M." },
@@ -10038,13 +10029,13 @@ holdings: []
     sectors: ["Deep Tech", "Climate", "AI", "Robotics", "Space"],
     thesis: "360 Capital is an early-stage venture firm that invests from pre-seed to Series B in European companies. Its stated focus areas are deep tech including artificial intelligence, quantum technologies, robotics and space; climate tech covering green energy production, electrification, energy storage, carbon capture and recycling; and B2B and B2C digital solutions. The firm operates from Milan and Paris and reports €700M in assets under management, more than 70 current portfolio companies and over 170 startups backed since inception. It runs a technology transfer programme with Politecnico di Milano through its Poli360 funds.",
     leadership: [
-      { name: "Fausto Boni", role: "Partner" },
-      { name: "François Tison", role: "Partner" },
-      { name: "Cesare Maifredi", role: "Partner" },
-      { name: "Alexandre Mordacq", role: "Partner" },
+      { name: "Fausto Boni", role: "Partner", profileSlug: "fausto-boni" },
+      { name: "François Tison", role: "Partner", profileSlug: "francois-tison" },
+      { name: "Cesare Maifredi", role: "Partner", profileSlug: "cesare-maifredi" },
+      { name: "Alexandre Mordacq", role: "Partner", profileSlug: "alexandre-mordacq" },
       { name: "Lucrezia Lucotti", role: "Partner" },
       { name: "Thomas Nivard", role: "Partner" },
-      { name: "Alessandro Zaccaria", role: "Partner" },
+      { name: "Alessandro Zaccaria", role: "Partner", profileSlug: "alessandro-zaccaria" },
       { name: "Jean-Marie Perrot", role: "CFO & Head of ESG" },
     ],
     timeline: [
@@ -10067,10 +10058,10 @@ holdings: []
     sectors: ["Agtech", "Biotech", "Fintech", "Enterprise Software", "Consumer"],
     thesis: "Anterra Capital invests in technology companies across the food and agriculture value chain, from the farmer through to the consumer. It backs founders applying digital technology and biotechnology, approaches the firm describes as well proven in other sectors but underused in food and agriculture. The firm partners with companies from incubation onward and typically invests at seed or Series A, with initial cheques of $1-10M. It has a global mandate with a primary focus on North America and Europe, and describes itself as the first transatlantic agrifoodtech fund, with offices in Amsterdam and Boston.",
     leadership: [
-      { name: "Adam Anders", role: "Managing Partner & Co-founder" },
-      { name: "Phil Austin", role: "Managing Partner & Co-founder" },
-      { name: "Maarten Goossens", role: "Partner & Co-founder" },
-      { name: "Brett Wong", role: "Partner" },
+      { name: "Adam Anders", role: "Managing Partner & Co-founder", profileSlug: "adam-anders" },
+      { name: "Phil Austin", role: "Managing Partner & Co-founder", profileSlug: "phil-austin" },
+      { name: "Maarten Goossens", role: "Partner & Co-founder", profileSlug: "maarten-goossens" },
+      { name: "Brett Wong", role: "Partner", profileSlug: "brett-wong" },
       { name: "Brett Chevalier", role: "Chief Scientist" },
       { name: "Michael Topalian", role: "Finance Director" },
     ],
@@ -10094,13 +10085,13 @@ holdings: []
     sectors: ["Biotech", "Healthcare", "Medtech"],
     thesis: "Seroba invests in early-stage life sciences companies developing biotech therapeutics and medical devices. The firm describes its focus as value creation through backing innovations in biotech and medtech. It invests predominantly in Western Europe with selective exposure to North America. Fund IV targets up to 12 investments in total.",
     leadership: [
-      { name: "Daniel O'Mahony", role: "Partner" },
-      { name: "Alan O'Connell", role: "Partner" },
-      { name: "Bruno Montanari", role: "Partner" },
-      { name: "Jennifer McMahon", role: "Partner" },
+      { name: "Daniel O'Mahony", role: "Partner", profileSlug: "daniel-omahony" },
+      { name: "Alan O'Connell", role: "Partner", profileSlug: "alan-oconnell" },
+      { name: "Bruno Montanari", role: "Partner", profileSlug: "bruno-montanari" },
+      { name: "Jennifer McMahon", role: "Partner", profileSlug: "jennifer-mcmahon" },
       { name: "Andrew Duignan", role: "CFO & Partner" },
       { name: "Maud Lazare", role: "Investor Relations & Partner" },
-      { name: "Jeanne Bolger", role: "Venture Partner" },
+      { name: "Jeanne Bolger", role: "Venture Partner", profileSlug: "jeanne-bolger" },
     ],
     timeline: [
       { year: "2024", event: "Announced above-target final close of Seroba Fund IV at €123M in February 2024, with LPs including the European Investment Fund, Ireland Strategic Investment Fund, Enterprise Ireland, AIB and CDP Venture Capital." },
@@ -10121,8 +10112,8 @@ holdings: []
     sectors: ["Foodtech", "Climate", "Biotech", "Consumer"],
     thesis: "FoodLabs invests at pre-seed and seed stage in European companies working on food, agriculture, sustainability and health. The firm also runs a venture studio that builds companies alongside its investing activity. Stated focus areas include food supply chains and infrastructure, agriculture and livestock farming, precision health, climate and resilience, and synthetic biology. First cheques are stated at $100k-$2M.",
     leadership: [
-      { name: "Christophe Maire", role: "Founding Partner" },
-      { name: "Patrick Noller", role: "General Partner, Managing Director" },
+      { name: "Christophe Maire", role: "Founding Partner", profileSlug: "christophe-maire" },
+      { name: "Patrick Noller", role: "General Partner, Managing Director", profileSlug: "patrick-noller" },
       { name: "Thilo Winter", role: "Operating Partner" },
       { name: "Florian Breiner", role: "Operating Partner, Growth" },
       { name: "Till Hoelzer", role: "Managing Director Asia" },
@@ -10149,15 +10140,15 @@ holdings: []
     sectors: ["Deep Tech", "AI", "Life Sciences", "Robotics", "Space"],
     thesis: "Ahren invests at the intersection of deep science and deep technology, organising its work around four stated domains: Brain & AI, Genetics & Platform Technologies, Space & Robotics, and Efficient Energy. The firm was founded by Alice Newcombe-Ellis together with a group of Cambridge-affiliated scientists who act as Founding Science Partners and participate in sourcing, technical diligence and portfolio support. Ahren's own materials state that its founding and science partners created technologies collectively valued in excess of $100BN. The firm announced its launch on 3 September 2018 with over $100M at first close.",
     leadership: [
-      { name: "Alice Newcombe-Ellis", role: "Founding & General Partner" },
-      { name: "Professor Andy Parker", role: "Founding Partner" },
-      { name: "Sir Gregory Winter", role: "Founding Partner" },
-      { name: "Professor John Daugman OBE", role: "Founding Partner" },
-      { name: "Lord Martin Rees", role: "Founding Partner" },
-      { name: "Professor Zoubin Ghahramani", role: "Founding Partner" },
-      { name: "Sir Shankar Balasubramanian", role: "Founding Partner" },
-      { name: "Professor Steve Jackson", role: "Founding Partner" },
-      { name: "Sir Venki Ramakrishnan", role: "Founding Partner" },
+      { name: "Alice Newcombe-Ellis", role: "Founding & General Partner", profileSlug: "alice-newcombe-ellis" },
+      { name: "Professor Andy Parker", role: "Founding Partner", profileSlug: "andy-parker-ahren" },
+      { name: "Sir Gregory Winter", role: "Founding Partner", profileSlug: "gregory-winter-ahren" },
+      { name: "Professor John Daugman OBE", role: "Founding Partner", profileSlug: "john-daugman-ahren" },
+      { name: "Lord Martin Rees", role: "Founding Partner", profileSlug: "martin-rees-ahren" },
+      { name: "Professor Zoubin Ghahramani", role: "Founding Partner", profileSlug: "zoubin-ghahramani-ahren" },
+      { name: "Sir Shankar Balasubramanian", role: "Founding Partner", profileSlug: "shankar-balasubramanian-ahren" },
+      { name: "Professor Steve Jackson", role: "Founding Partner", profileSlug: "steve-jackson-ahren" },
+      { name: "Sir Venki Ramakrishnan", role: "Founding Partner", profileSlug: "venki-ramakrishnan-ahren" },
       { name: "Peter Lourensz, FCA", role: "Chief Financial Officer" },
     ],
     timeline: [
@@ -10179,8 +10170,8 @@ holdings: []
     sectors: ["Climate Technology", "Clean Energy", "Energy", "Mobility", "Industrial Technology"],
     thesis: "Contrarian Ventures is a climate tech venture capital firm investing at pre-seed and seed stage across Europe and Israel, with stated ticket sizes of EUR 1-4 million. The firm states it focuses on green energy, transportation, the built environment, industry and carbon markets, and explicitly excludes food and agriculture. Its stated thesis is backing economically superior technologies that outcompete incumbents rather than relying on subsidy or goodwill. Alongside investing it runs platform initiatives including the Energy Tech Summit, Climate 50, The Climate Brick and Growth Meets Capital.",
     leadership: [
-      { name: "Rokas Peciulaitis", role: "Founder & Managing Partner" },
-      { name: "Tomas Kemtys", role: "General Partner" },
+      { name: "Rokas Peciulaitis", role: "Founder & Managing Partner", profileSlug: "rokas-peciulaitis" },
+      { name: "Tomas Kemtys", role: "General Partner", profileSlug: "tomas-kemtys" },
     ],
     timeline: [
       { year: "2017", event: "Firm founded by Rokas Peciulaitis; first fund raised (€12.5M per EIF)." },
@@ -10206,7 +10197,7 @@ holdings: []
     sectors: ["Supply Chain", "Logistics", "Manufacturing", "Robotics", "Industrial Technology"],
     thesis: "Schematic Ventures is an early-stage venture fund whose stated focus is 'technology that makes & moves the world' - supply chain, manufacturing and software infrastructure. It leads pre-seed and seed rounds with a stated average check size of $1M-$2M and invests in US and Canada based teams. Its published portfolio lists more than 30 companies including Flock Freight, Outrider, Platform Science, Plus One Robotics, Harbinger Motors and Altana. The firm also runs the reSupply and reForge event series for supply chain and manufacturing technology in San Francisco.",
     leadership: [
-      { name: "Julian Counihan", role: "General Partner" },
+      { name: "Julian Counihan", role: "General Partner", profileSlug: "julian-counihan" },
     ],
     timeline: [
       { year: "2017", event: "Schematic Ventures founded in San Francisco; earliest portfolio investments listed on its site are Airspace, Flock Freight and Plus One Robotics (all 2017 seed)." },
@@ -10226,10 +10217,10 @@ holdings: []
     sectors: ["Fintech", "Fintech Infrastructure", "AI", "Insurance", "Wealth"],
     thesis: "Mouro Capital invests in fintech and financial-services-adjacent companies from seed through growth stage across Europe, North America and Latin America. The firm leads rounds with initial cheques of up to $15 million and holds reserves for follow-ons. Its stated focus areas include capital markets, wealth management, insurance, real-time payments and programmable money movement, identity and data tooling, and AI-native software. It began in 2014 as Santander InnoVentures and was renamed and spun out as Mouro Capital in September 2020; Banco Santander has remained its sole limited partner.",
     leadership: [
-      { name: "Manuel Silva Martínez", role: "General Partner" },
-      { name: "Chris Gottschalk", role: "General Partner" },
-      { name: "Francesco Pasti", role: "Partner" },
-      { name: "Rafael Esteban Correa", role: "Partner" },
+      { name: "Manuel Silva Martínez", role: "General Partner", profileSlug: "manuel-silva-martinez" },
+      { name: "Chris Gottschalk", role: "General Partner", profileSlug: "chris-gottschalk" },
+      { name: "Francesco Pasti", role: "Partner", profileSlug: "francesco-pasti" },
+      { name: "Rafael Esteban Correa", role: "Partner", profileSlug: "rafael-esteban-correa" },
     ],
     timeline: [
       { year: "2014", event: "Banco Santander launches Santander InnoVentures, a $100M fintech venture fund" },
@@ -10251,10 +10242,10 @@ holdings: []
     sectors: ["Enterprise Software", "Applied AI", "Consumer", "Fintech"],
     thesis: "Headline is a global venture capital firm that backs founders across the US, Europe, Asia and Brazil, investing in software, AI applications, consumer and fintech. It runs dedicated regional early-stage funds alongside a global growth fund that invests $20M or more per company. The firm describes its approach as data-informed conviction combined with hands-on support for international scaling, delivered through nine offices in San Francisco, Berlin, Hamburg, Paris, London, Luxembourg, Sao Paulo, Taipei and Tokyo.",
     leadership: [
-      { name: "Mathias Schilling", role: "Founding Partner" },
-      { name: "Christian Leybold", role: "Founding Partner" },
-      { name: "Thomas Gieselmann", role: "Founding Partner" },
-      { name: "Akio Tanaka", role: "Partner" },
+      { name: "Mathias Schilling", role: "Founding Partner", profileSlug: "mathias-schilling" },
+      { name: "Christian Leybold", role: "Founding Partner", profileSlug: "christian-leybold" },
+      { name: "Thomas Gieselmann", role: "Founding Partner", profileSlug: "thomas-gieselmann" },
+      { name: "Akio Tanaka", role: "Partner", profileSlug: "akio-tanaka" },
       { name: "Rainer Hillebrand", role: "Chairman" },
     ],
     timeline: [
@@ -10278,11 +10269,11 @@ holdings: []
     sectors: ["Fintech", "Cybersecurity", "AI Infrastructure", "Applied AI", "Defense Tech"],
     thesis: "Viola Ventures is the early-stage fund of Israel's Viola Group, investing at pre-seed, seed and Series A and backing companies from the ideation phase. Its own page states $1.5B under management, more than 20 years in Israel's tech scene and over 150 companies backed, including ironSource, Payoneer, Redis, Pagaya, Lightricks and Immunai. Current stated focus areas are fintech, cyber, vertical AI, AI infrastructure, defense technology and quantum. The fund was founded in 2000 as Carmel Ventures and rebranded to Viola Ventures in November 2017 when it raised its fifth fund.",
     leadership: [
-      { name: "Shlomo Dovrat", role: "Co-Founder & Managing Partner" },
-      { name: "Avi Zeevi", role: "Co-founder & General Partner" },
-      { name: "Omry Ben David", role: "Managing Partner" },
-      { name: "Zvika Orron", role: "Managing Partner" },
-      { name: "Alex Shmulovich", role: "Partner" },
+      { name: "Shlomo Dovrat", role: "Co-Founder & Managing Partner", profileSlug: "shlomo-dovrat" },
+      { name: "Avi Zeevi", role: "Co-founder & General Partner", profileSlug: "avi-zeevi" },
+      { name: "Omry Ben David", role: "Managing Partner", profileSlug: "omry-ben-david" },
+      { name: "Zvika Orron", role: "Managing Partner", profileSlug: "zvika-orron" },
+      { name: "Alex Shmulovich", role: "Partner", profileSlug: "alex-shmulovich" },
     ],
     timeline: [
       { year: "2000", event: "Founded as Carmel Ventures, the early-stage arm of the newly formed Viola Group" },
@@ -10304,9 +10295,9 @@ holdings: []
     sectors: ["Fintech", "Fintech Infrastructure", "Lending", "Insurtech"],
     thesis: "Quona Capital is a venture firm investing in fintech for financial inclusion in emerging markets. It backs companies serving underserved consumers and small businesses across Latin America, India and Southeast Asia, and EMEA. The firm states it aims to marry investment performance with social impact. Quona began as Accion's Frontier Investments Group and became an independent venture firm in 2015.",
     leadership: [
-      { name: "Monica Brand Engel", role: "Managing Partner" },
-      { name: "Jonathan Whittle", role: "Managing Partner" },
-      { name: "Ganesh Rengaswamy", role: "Managing Partner" },
+      { name: "Monica Brand Engel", role: "Managing Partner", profileSlug: "monica-brand-engel" },
+      { name: "Jonathan Whittle", role: "Managing Partner", profileSlug: "jonathan-whittle" },
+      { name: "Ganesh Rengaswamy", role: "Managing Partner", profileSlug: "ganesh-rengaswamy" },
     ],
     timeline: [
       { year: "2015", event: "Quona Capital founded by Monica Brand Engel, Jonathan Whittle and Ganesh Rengaswamy, becoming an independent venture firm after starting as Accion's Frontier Investments Group" },
@@ -10328,9 +10319,9 @@ holdings: []
     sectors: ["Fintech", "Fintech Infrastructure", "Insurtech", "Regtech"],
     thesis: "Flourish Ventures is an early-stage global fintech venture firm investing in founders working on financial health and financial systems. It describes its investment themes as digital banking, embedded finance, frontier markets, infrastructure, insurtech and regtech. The firm states it operates an evergreen fund and splits its capital roughly 50/50 between the United States and emerging markets across 100+ companies. It was created in 2019 when Omidyar Network spun out its financial inclusion investment arm, with capital committed by Pierre Omidyar and family through The Omidyar Group.",
     leadership: [
-      { name: "Arjuna Costa", role: "Co-Founder & Managing Partner" },
-      { name: "Emmalyn Shaw", role: "Co-Founder & Managing Partner" },
-      { name: "Tilman Ehrbeck", role: "Co-Founder & Managing Partner" },
+      { name: "Arjuna Costa", role: "Co-Founder & Managing Partner", profileSlug: "arjuna-costa" },
+      { name: "Emmalyn Shaw", role: "Co-Founder & Managing Partner", profileSlug: "emmalyn-shaw" },
+      { name: "Tilman Ehrbeck", role: "Co-Founder & Managing Partner", profileSlug: "tilman-ehrbeck" },
     ],
     timeline: [
       { year: "2019", event: "Omidyar Network spun out its fintech and financial inclusion investment arm as Flourish Ventures, with up to $300 million committed by Pierre Omidyar and family through The Omidyar Group, including an existing $200 million portfolio" },
@@ -10350,9 +10341,9 @@ holdings: []
     sectors: ["Edtech", "Education", "Workforce Development", "Digital Health"],
     thesis: "Reach Capital is an early-stage venture firm investing in technology across learning, health and work. The team spun out of NewSchools Venture Fund, where the founders had run the NewSchools Seed fund and made more than 40 early-stage education technology investments. Reach writes initial checks that its site describes as ranging from about $100K at pre-seed to $12M+ at later stages, and says it has made over 140 investments.",
     leadership: [
-      { name: "Jennifer Carolan", role: "Co-Founder & Partner" },
-      { name: "Wayee Chu", role: "Co-Founder & Partner" },
-      { name: "Esteban Sosnik", role: "Co-Founder & Partner" },
+      { name: "Jennifer Carolan", role: "Co-Founder & Partner", profileSlug: "jennifer-carolan" },
+      { name: "Wayee Chu", role: "Co-Founder & Partner", profileSlug: "wayee-chu" },
+      { name: "Esteban Sosnik", role: "Co-Founder & Partner", profileSlug: "esteban-sosnik" },
     ],
     timeline: [
       { year: "2011", event: "Future Reach founders launch the NewSchools Seed fund and the Zynga co.lab accelerator at NewSchools Venture Fund" },
@@ -10374,9 +10365,9 @@ holdings: []
     sectors: ["Digital Health", "Fintech", "Consumer", "Media"],
     thesis: "Human Ventures is a New York startup studio and early-stage venture firm that co-builds companies from inception and also invests in outside founders. The firm's site organizes its work around health and wellness, future of work and money, experience and connection, and media and attention. It was announced in March 2015 by Joe Marchese and Heather Hartnett, with an investment arm called Human Ventures Capital. Fast Company reported a $50 million debut fund in February 2019.",
     leadership: [
-      { name: "Heather Hartnett", role: "General Partner, CEO" },
-      { name: "Joe Marchese", role: "Executive Chairman" },
-      { name: "Michael Letta", role: "General Partner, COO" },
+      { name: "Heather Hartnett", role: "General Partner, CEO", profileSlug: "heather-hartnett" },
+      { name: "Joe Marchese", role: "Executive Chairman", profileSlug: "joe-marchese" },
+      { name: "Michael Letta", role: "General Partner, COO", profileSlug: "michael-letta" },
     ],
     timeline: [
       { year: "2015", event: "Human Ventures announced by Joe Marchese and Heather Hartnett as a startup studio with an investment arm" },
@@ -10398,8 +10389,8 @@ holdings: []
     sectors: ["Deep Tech", "AI", "Defense Tech", "Healthcare", "Space"],
     thesis: "ACME Capital is an early-stage venture firm that invests in frontier technologies before they become mainstream, backing deep-tech founders across AI and software platforms, defense and autonomous systems, healthcare technology and space. Its stated sweet spot is late seed and Series A, with checks from $500,000 to $15 million and a preference for $5-10 million positions that carry a board seat. The firm was co-founded in 2018 by Scott Stanford and Hany Nada and operates from San Francisco with networks across the US and Europe.",
     leadership: [
-      { name: "Scott Stanford", role: "Co-Founder and Partner" },
-      { name: "Hany Nada", role: "Co-Founder and Partner" },
+      { name: "Scott Stanford", role: "Co-Founder and Partner", profileSlug: "scott-stanford" },
+      { name: "Hany Nada", role: "Co-Founder and Partner", profileSlug: "hany-nada" },
     ],
     timeline: [
       { year: "2013", event: "Sherpa Capital founded in San Francisco in March 2013 by Shervin Pishevar and Scott Stanford." },
@@ -10421,8 +10412,8 @@ holdings: []
     sectors: ["Consumer", "Consumer Internet", "Enterprise Software"],
     thesis: "Footwork leads and co-leads Seed and Series A rounds in companies with early signs of product-market fit. Initial checks range from $1 million to $15 million. The firm focuses on consumer technology and the consumerization of enterprise technology, and describes itself as an equal partnership combining investing and operating experience. It had invested in 25 companies as of Q2 2026 according to its own site.",
     leadership: [
-      { name: "Mike Smith", role: "General Partner" },
-      { name: "Nikhil Basu Trivedi", role: "Co-Founder and General Partner" },
+      { name: "Mike Smith", role: "General Partner", profileSlug: "mike-smith-footwork" },
+      { name: "Nikhil Basu Trivedi", role: "Co-Founder and General Partner", profileSlug: "nikhil-basu-trivedi" },
     ],
     timeline: [
       { year: "2021", event: "Footwork launched in April 2021 with a $175M Fund I" },
@@ -10443,10 +10434,10 @@ holdings: []
     sectors: ["Enterprise Software", "Infrastructure Software", "Cybersecurity", "Robotics", "AI"],
     thesis: "N47 is Siemens' global venture capital unit, founded in 2016 as next47 with €1 billion committed by Siemens for its first five years. It invests in enterprise technology companies across three self-described categories - Systems, Infrastructure and Applications - with teams in Silicon Valley, Europe and Israel. The firm states it invests early, before metrics are established, and also runs a seed fund-of-funds programme investing in early-stage enterprise fund managers. It rebranded from Next47 to N47 in 2025; Siemens' fiscal 2025 annual report still describes N47 as its global venture capital unit.",
     leadership: [
-      { name: "Lak Ananth", role: "Global Managing Partner" },
-      { name: "Matthew Cowan", role: "General Partner" },
-      { name: "T.J. Rylander", role: "General Partner" },
-      { name: "Moshe Zilberstein", role: "General Partner" },
+      { name: "Lak Ananth", role: "Global Managing Partner", profileSlug: "lak-ananth" },
+      { name: "Matthew Cowan", role: "General Partner", profileSlug: "matthew-cowan" },
+      { name: "T.J. Rylander", role: "General Partner", profileSlug: "tj-rylander" },
+      { name: "Moshe Zilberstein", role: "General Partner", profileSlug: "moshe-zilberstein" },
       { name: "Jonathan Barek", role: "Chief Operating Officer" },
     ],
     timeline: [
@@ -10469,8 +10460,8 @@ holdings: []
     sectors: ["B2B Software", "Enterprise Software", "SaaS", "Data & Analytics"],
     thesis: "Illuminate Ventures is an early-stage venture firm focused on B2B and enterprise cloud and mobile computing, including SaaS applications, data-driven products and business platforms. The firm was founded in 2009 by Cindy Padnos and describes itself as based in the San Francisco Bay Area. It backs capital-efficient North American companies and supports them through an advisory council the firm describes as more than 40 entrepreneurs and executives. Illuminate is widely associated with backing diverse founding teams.",
     leadership: [
-      { name: "Cindy Padnos", role: "Founder and Managing Partner" },
-      { name: "Jennifer Savage", role: "Partner" },
+      { name: "Cindy Padnos", role: "Founder and Managing Partner", profileSlug: "cindy-padnos" },
+      { name: "Jennifer Savage", role: "Partner", profileSlug: "jennifer-savage" },
     ],
     timeline: [
       { year: "2009", event: "Cindy Padnos founds Illuminate Ventures after serving as a director at Outlook Ventures" },
@@ -10491,9 +10482,9 @@ holdings: []
     sectors: ["Climate Technology", "Clean Energy", "Energy", "Carbon Removal", "Industrial Technology"],
     thesis: "Clean Energy Ventures is an early-stage climate technology venture firm investing at seed and Series A in companies where, in the firm's words, \"the science is proven, the path to commercialization is clear, and the potential for climate impact is measured in gigatons.\" It focuses on hard technology and advanced materials, thermal solutions, energy storage and distributed generation, carbon capture and recycling, and industrial decarbonization. The firm screens every prospective investment with its own Simple Emissions Reduction Calculator (SERC) methodology and targets mitigating 75 gigatons of emissions by 2050. It takes active board seats and works on IP, commercial strategy and leadership coaching rather than investing passively.",
     leadership: [
-      { name: "Dan Goldman", role: "Co-Founder & Managing Partner" },
-      { name: "David S. Miller, PhD.", role: "Co-Founder & Managing Partner" },
-      { name: "Temple Fennell", role: "Co-Founder & Managing Partner" },
+      { name: "Dan Goldman", role: "Co-Founder & Managing Partner", profileSlug: "dan-goldman" },
+      { name: "David S. Miller, PhD.", role: "Co-Founder & Managing Partner", profileSlug: "david-s-miller" },
+      { name: "Temple Fennell", role: "Co-Founder & Managing Partner", profileSlug: "temple-fennell" },
     ],
     timeline: [
       { year: "2005", event: "David S. Miller becomes Executive Managing Director of Clean Energy Venture Group, the angel investing cohort that preceded the firm (he served through 2017)." },
@@ -10515,9 +10506,9 @@ holdings: []
     sectors: ["AI", "AI Infrastructure", "Applied AI", "Machine Learning", "Developer Tools"],
     thesis: "AIX Ventures is an AI-focused venture fund that invests from pre-seed to Series A in companies where AI is a core component of the main product today, spanning NLP, computer vision and robotics. The firm describes itself as sector-agnostic within AI, calling out Consumer, Developer Tools & Data, Healthcare/Life Sciences, Manufacturing & Warehousing and SaaS, with particular interest in future-of-work applications and infrastructure. Target initial checks are $1M-$5M with reserves for follow-ons. Its investment partners are practicing AI researchers and operators who remain active in the field rather than passive investors.",
     leadership: [
-      { name: "Richard Socher", role: "Investment Partner" },
-      { name: "Anthony Goldbloom", role: "Investment Partner" },
-      { name: "Christopher Manning", role: "Investment Partner" },
+      { name: "Richard Socher", role: "Investment Partner", profileSlug: "richard-socher" },
+      { name: "Anthony Goldbloom", role: "Investment Partner", profileSlug: "anthony-goldbloom" },
+      { name: "Christopher Manning", role: "Investment Partner", profileSlug: "christopher-manning" },
     ],
     timeline: [
       { year: "2021", event: "Fund I closes at $50M, backed by AI practitioners including Richard Socher, Pieter Abbeel, Anthony Goldbloom, Christopher Manning and Shaun Johnson." },
@@ -10540,10 +10531,10 @@ holdings: []
     sectors: ["Enterprise Software", "Fintech", "Insurtech", "Ecommerce", "Proptech"],
     thesis: "Viola Growth is the growth-stage fund of Israel's Viola Group, describing itself as Israel's first and leading technology growth fund. It invests at the early-growth stage in Israeli companies with commercial traction that are positioned to achieve category leadership, and provides operational as well as financial support. Its own page states approximately $1B under management across four funds, with over 36 investments and 12 exits since 2008. Press reporting on its third fund described target companies with at least $10 million in annual revenue and typical checks of $20-40 million.",
     leadership: [
-      { name: "Harel Beit-On", role: "Founder & General Partner" },
-      { name: "Natalie Refuah", role: "General Partner" },
-      { name: "Igal Shany", role: "General Partner" },
-      { name: "Ayal Shiran", role: "General Partner" },
+      { name: "Harel Beit-On", role: "Founder & General Partner", profileSlug: "harel-beit-on" },
+      { name: "Natalie Refuah", role: "General Partner", profileSlug: "natalie-refuah" },
+      { name: "Igal Shany", role: "General Partner", profileSlug: "igal-shany" },
+      { name: "Ayal Shiran", role: "General Partner", profileSlug: "ayal-shiran" },
     ],
     timeline: [
       { year: "2008", event: "Founded; first fund closed at $164 million" },
@@ -10566,8 +10557,8 @@ holdings: []
     sectors: [],
     thesis: "ANIMO Ventures is an early-stage firm that invests $500k to $2.5m from ideation to early traction. Its stated focus is US-based companies raising $500k to $5m across the seed spectrum. The firm describes its approach as People Backing People and Founders Backing Founders and lists more than 50 portfolio companies. It was publicly unveiled in November 2019 with a $60 million debut fund after operating in stealth as Magnetico Ventures.",
     leadership: [
-      { name: "Nico Berardi", role: "General Partner" },
-      { name: "Antonio Osio", role: "General Partner" },
+      { name: "Nico Berardi", role: "General Partner", profileSlug: "nico-berardi" },
+      { name: "Antonio Osio", role: "General Partner", profileSlug: "antonio-osio" },
       { name: "Caro Acevedo", role: "Operations Partner" },
       { name: "Vicky Franco", role: "Operations Director" },
     ],
@@ -10588,11 +10579,11 @@ holdings: []
     sectors: ["AI Infrastructure", "Fintech", "Cybersecurity", "Marketplaces", "Healthcare"],
     thesis: "Vine Ventures partners with founders at the earliest stage, writing first checks of $1-10 million. The firm states it is a long-term investor that backs founders at inception and continues investing until IPO. It operates from New York, Tel Aviv, San Francisco and Chicago, and invests across the US, Israel and Latin America. Fund II closed at $140 million in June 2022, tripling Fund I.",
     leadership: [
-      { name: "Eric Reiner", role: "Founder & Managing Partner" },
-      { name: "Dan Povitsky", role: "Cofounder & Partner" },
-      { name: "Adam Valkin", role: "Partner" },
-      { name: "Demren Sinik", role: "Partner & Head of West Coast" },
-      { name: "Barak Kaufman", role: "Partner & Head of Israel" },
+      { name: "Eric Reiner", role: "Founder & Managing Partner", profileSlug: "eric-reiner" },
+      { name: "Dan Povitsky", role: "Cofounder & Partner", profileSlug: "dan-povitsky" },
+      { name: "Adam Valkin", role: "Partner", profileSlug: "adam-valkin" },
+      { name: "Demren Sinik", role: "Partner & Head of West Coast", profileSlug: "demren-sinik" },
+      { name: "Barak Kaufman", role: "Partner & Head of Israel", profileSlug: "barak-kaufman" },
     ],
     timeline: [
       { year: "2020", event: "Vine founded; first Limited Partner commitments received days before COVID-19 broke out" },
@@ -10614,10 +10605,10 @@ holdings: []
     sectors: ["Deep Tech", "Defense Tech", "Space", "Healthcare", "Industrial Technology"],
     thesis: "Balnord is an early-stage venture capital firm investing in frontier and dual-use technology companies across the Baltic Sea Region (Nordics, Baltics, Poland and Germany). It describes itself as a high-conviction pre-seed and seed investor backing the technological backbone of Europe's re-industrialisation, concentrating on space, healthcare and industrial resilience. Initial tickets run €0.5M-€3M with follow-on capacity up to €12M per company and roughly 60% of the fund reserved for follow-ons. The firm was founded by the team behind Black Pearls VC and is co-financed by the European Union's InvestEU Fund.",
     leadership: [
-      { name: "Marcin P. Kowalik", role: "Managing Partner" },
-      { name: "Aleksander Dobrzyniecki", role: "General Partner" },
-      { name: "Jarek Pilarczyk", role: "Partner" },
-      { name: "Hubert Szczołek", role: "Partner & CFO" },
+      { name: "Marcin P. Kowalik", role: "Managing Partner", profileSlug: "marcin-p-kowalik" },
+      { name: "Aleksander Dobrzyniecki", role: "General Partner", profileSlug: "aleksander-dobrzyniecki" },
+      { name: "Jarek Pilarczyk", role: "Partner", profileSlug: "jarek-pilarczyk" },
+      { name: "Hubert Szczołek", role: "Partner & CFO", profileSlug: "hubert-szczolek" },
     ],
     timeline: [
       { year: "2024", event: "Balnord founded by the team behind Black Pearls VC; registered as Balnord SARL in Luxembourg with offices in Gdansk and Berlin." },
@@ -10638,11 +10629,11 @@ holdings: []
     sectors: ["Frontier Technologies", "Healthcare", "Biotech", "Fintech Infrastructure", "AI"],
     thesis: "Redalpine is a thesis-driven early-stage venture capital investor founded in Switzerland in 2006 that describes itself as working at the intersection of software and science. The firm says roughly half of its team are scientists and half come from operating backgrounds, and it organises its work around six investment verticals: frontier tech, health, digitisation, fintech and fintech infrastructure, biology, and sustainability. It invests from seed onward across Europe, with offices in Zug, Berlin and London and a presence in Silicon Valley. Its most recent disclosed fund, Redalpine Capital VII, closed at $200 million in August 2024.",
     leadership: [
-      { name: "Peter Niederhauser", role: "Founding Partner" },
-      { name: "Sebastian Becker", role: "General Partner" },
-      { name: "Daniel Graf", role: "General Partner" },
-      { name: "Dr. Harald Nieder", role: "General Partner" },
-      { name: "Dr. Oliver Pabst", role: "General Partner" },
+      { name: "Peter Niederhauser", role: "Founding Partner", profileSlug: "peter-niederhauser" },
+      { name: "Sebastian Becker", role: "General Partner", profileSlug: "sebastian-becker" },
+      { name: "Daniel Graf", role: "General Partner", profileSlug: "daniel-graf" },
+      { name: "Dr. Harald Nieder", role: "General Partner", profileSlug: "harald-nieder" },
+      { name: "Dr. Oliver Pabst", role: "General Partner", profileSlug: "oliver-pabst" },
     ],
     timeline: [
       { year: "2006", event: "Redalpine founded in Switzerland; the firm describes its founders as a software entrepreneur and a molecular biologist. Peter Niederhauser and Michael Sidler are named by the firm as founding partners." },
@@ -10663,11 +10654,11 @@ holdings: []
     sectors: ["Deep Tech", "AI", "B2B Software", "Digital Health"],
     thesis: "Elaia is a Paris-based venture capital firm co-founded in 2002 by Philippe Gire and Xavier Lazarus that invests in B2B technology companies from pre-seed and seed through Series B, with offices in Paris, Barcelona and Tel Aviv. Deep tech is run as a dedicated franchise built with academic partners: the firm manages seed vehicles created with Université PSL (Paris Sciences & Lettres), Inria and the Barcelona Supercomputing Center, and closed its third-generation deep tech seed fund, Deep Tech Seed 3, at EUR 134 million in March 2026. Its digital practice covers enterprise software and SaaS, data and AI, fintech and digital health. In April 2024 Lazard took a minority stake in the management company and the two set up Lazard Elaia Capital, a separate Paris growth-equity manager owned 75% by Lazard and 25% by Elaia; Elaia continues to operate and raise funds under its own brand.",
     leadership: [
-      { name: "Xavier Lazarus", role: "Managing Partner and co-founder" },
-      { name: "Pauline Roux", role: "Managing Partner" },
-      { name: "Anne-Sophie Carrese", role: "Managing Partner" },
-      { name: "Philippe Gire", role: "Partner and co-founder" },
-      { name: "Marc Rougier", role: "Partner" },
+      { name: "Xavier Lazarus", role: "Managing Partner and co-founder", profileSlug: "xavier-lazarus" },
+      { name: "Pauline Roux", role: "Managing Partner", profileSlug: "pauline-roux" },
+      { name: "Anne-Sophie Carrese", role: "Managing Partner", profileSlug: "anne-sophie-carrese" },
+      { name: "Philippe Gire", role: "Partner and co-founder", profileSlug: "philippe-gire" },
+      { name: "Marc Rougier", role: "Partner", profileSlug: "marc-rougier" },
     ],
     timeline: [
       { year: "2002", event: "Elaia Partners co-founded in Paris by Philippe Gire and Xavier Lazarus." },
@@ -10693,9 +10684,9 @@ holdings: []
     sectors: ["Fintech", "SaaS", "Climate Technology", "Deep Tech"],
     thesis: "Breega is a founder-led European and African venture capital firm headquartered in Paris that backs companies from pre-seed to Series A and above in digital, climate and deep tech. It runs a multi-geography structure: Paris and a London office opened around 2018, a Barcelona office opened alongside its EUR 250 million fund in 2022, and an Africa practice launched in 2024 with Breega Africa Seed I and offices in Lagos and Cape Town covering Nigeria, Egypt, South Africa, Kenya, Morocco, Senegal, Ivory Coast and Cameroon. The firm says it only hires people who have built or scaled a company, and it staffs an in-house operational team (talent, marketing, finance, legal) that works with portfolio companies. Its limited partners have included Bpifrance, the European Investment Fund, Isomer Capital, banks and insurers, and the African Development Bank in the Africa fund.",
     leadership: [
-      { name: "Ben Marrel", role: "Cofounder & CEO" },
-      { name: "François Paulus", role: "Cofounder & Executive Chairman" },
-      { name: "Maximilien Bacot", role: "Cofounder & COO" },
+      { name: "Ben Marrel", role: "Cofounder & CEO", profileSlug: "ben-marrel" },
+      { name: "François Paulus", role: "Cofounder & Executive Chairman", profileSlug: "francois-paulus" },
+      { name: "Maximilien Bacot", role: "Cofounder & COO", profileSlug: "maximilien-bacot" },
     ],
     timeline: [
       { year: "2015", event: "Breega launches its first fund, a EUR 45 million seed and Series A vehicle backed by around 100 entrepreneurs and Bpifrance. The firm's own site dates its founding to 2015; Maddyness dates the creation of the company to 2013." },
@@ -10718,8 +10709,8 @@ holdings: []
     sectors: ["AI", "Deep Tech", "Climate", "Robotics", "Space"],
     thesis: "Atlantic leads pre-seed rounds across Europe, usually as a company's first institutional investor, and states it has backed over 200 teams as first-round lead. The firm organises its current focus around four themes it names on its approach page: AI & Compute, Energy & Climate, Industrial & Robotics, and Space & Security, and says it also backs ideas that do not fit existing venture categories. Its SFDR disclosure describes Atlantic Labs 4 as targeting AI and data, industrial tech and robotics, climate and energy tech, and space and resilience tech, while the earlier Atlantic Labs 3 also covered digital health, future of work, mobility, fintech and proptech. Both funds explicitly exclude food and food-value-chain business models, which are handled by the separate FoodLabs vehicle.",
     leadership: [
-      { name: "Christophe F. Maire", role: "Founder and Managing Director" },
-      { name: "Marc-Olivier Lücke", role: "Co-Founder and Managing Director" },
+      { name: "Christophe F. Maire", role: "Founder and Managing Director", profileSlug: "christophe-f-maire" },
+      { name: "Marc-Olivier Lücke", role: "Co-Founder and Managing Director", profileSlug: "marc-olivier-lucke" },
     ],
     timeline: [
       { year: "2016", event: "Marc-Olivier Lücke joins Christophe Maire to establish Atlantic as an institutional fund manager; the firm's roots are in Maire's earlier angel investing" },
@@ -10740,9 +10731,9 @@ holdings: []
     sectors: ["Deep Tech", "B2B Software", "Climate Technology", "Mobility", "AI"],
     thesis: "UVC Partners invests in European B2B technology startups from pre-seed through Series A and beyond, writing initial cheques of EUR 0.5m to EUR 10m and up to roughly EUR 30m per company over time. The firm concentrates on deep tech, climate tech, mobility and software/AI, with portfolio companies including Isar Aerospace, Proxima Fusion, KONUX, TWAICE, FINN, Flix and Aleph Alpha. It says it has made more than one hundred B2B investments with more than thirty exits, and works out of Munich (registered seat in Garching) and Berlin. Its funds are supported by the European Investment Fund, and portfolio companies are given access to the UnternehmerTUM network at TU Munich.",
     leadership: [
-      { name: "Prof. Dr. Helmut Schönenberger", role: "Managing Partner" },
-      { name: "Dr. Ingo Potthof", role: "Managing Partner" },
-      { name: "Johannes von Borries", role: "Managing Partner" },
+      { name: "Prof. Dr. Helmut Schönenberger", role: "Managing Partner", profileSlug: "helmut-schoenenberger" },
+      { name: "Dr. Ingo Potthof", role: "Managing Partner", profileSlug: "ingo-potthof" },
+      { name: "Johannes von Borries", role: "Managing Partner", profileSlug: "johannes-von-borries" },
     ],
     timeline: [
       { year: "2011", event: "Founded near Munich; the management company is entered in the commercial register on 22 June 2011 (Amtsgericht München HRB 192643) under the name UnternehmerTUM-Fonds Management GmbH, later renamed Unternehmertum Venture Capital Partners GmbH" },
@@ -10767,10 +10758,10 @@ holdings: []
     sectors: ["Healthcare", "Climate", "Education", "Sustainability", "Digital Health"],
     thesis: "Ananda backs European pre-seed, seed and Series A companies with initial cheques of EUR 0.5m to EUR 3m and up to EUR 8m over a company's life, leading rounds and focusing on the DACH region, the UK, Benelux and the Nordics. Its mandate is impact investing rather than a single sector: its funds are classified SFDR Article 9, and it pioneered with the European Investment Fund an 'Impact Carry' model that scales carried interest from 0 to 20 percent according to how far portfolio companies hit their impact KPIs. In practice it invests in healthcare and digital health, education, climate and decarbonisation, nature and biodiversity, biosecurity, the blue economy and future-of-work businesses, with companies such as Open Bionics, IESO Digital Health, OroraTech, Auticon, Klim and Resourcify. The firm says it has made 48 investments and manages EUR 270m across five funds.",
     leadership: [
-      { name: "Johannes Weber", role: "General Partner and Founder" },
-      { name: "Florian Erber", role: "General Partner and Founder" },
-      { name: "Bernd Klosterkemper", role: "Partner" },
-      { name: "Zoe Peden", role: "Partner" },
+      { name: "Johannes Weber", role: "General Partner and Founder", profileSlug: "johannes-weber" },
+      { name: "Florian Erber", role: "General Partner and Founder", profileSlug: "florian-erber" },
+      { name: "Bernd Klosterkemper", role: "Partner", profileSlug: "bernd-klosterkemper" },
+      { name: "Zoe Peden", role: "Partner", profileSlug: "zoe-peden" },
     ],
     timeline: [
       { year: "2009", event: "Johannes Weber and Florian Erber start the firm, positioned as Germany's first impact investment fund with pan-European reach" },
@@ -10794,10 +10785,10 @@ holdings: []
     sectors: ["Climate", "Sustainability", "Food & Agriculture", "Healthcare", "Workforce Development"],
     thesis: "Rubio is an Amsterdam-based early-stage and growth impact venture fund that backs European founders whose commercial model is inseparable from a measurable social or environmental outcome. It organises its portfolio around two themes it calls Planet Paradise (CO2 reduction, biodiversity, resource circularity, energy and agrifood) and People Power (education, health and wellbeing, income generation and inclusion). Its defining mechanic is the Aligned Impact Model: 100% of carried interest sits behind impact hurdles before financial ones, an arrangement first developed with the European Investment Fund in 2014. It writes tickets of EUR 0.5M to EUR 2.5M at seed and Series A for typically 10-20% ownership, reserving up to EUR 10M of follow-on per company.",
     leadership: [
-      { name: "Willemijn Verloop", role: "Founding Partner" },
-      { name: "Machtelt Groothuis", role: "Founding Partner" },
-      { name: "Helmer Schukken", role: "Managing Partner" },
-      { name: "Tijl Hoefnagels", role: "Partner" },
+      { name: "Willemijn Verloop", role: "Founding Partner", profileSlug: "willemijn-verloop" },
+      { name: "Machtelt Groothuis", role: "Founding Partner", profileSlug: "machtelt-groothuis" },
+      { name: "Helmer Schukken", role: "Managing Partner", profileSlug: "helmer-schukken" },
+      { name: "Tijl Hoefnagels", role: "Partner", profileSlug: "tijl-hoefnagels" },
     ],
     timeline: [
       { year: "2014", event: "Firm founded in Amsterdam as Social Impact Ventures NL by Willemijn Verloop and Machtelt Groothuis; Helmer Schukken and Warner Philips are also named as founders in EIF and Dutch press accounts." },
@@ -10823,11 +10814,11 @@ holdings: []
     sectors: ["Biotech", "Life Sciences", "Therapeutics", "Digital Health"],
     thesis: "Kurma Partners is a French healthcare venture capital firm founded in Paris in July 2009 that turns academic science into biotech and medtech companies, with a second office in Munich. It runs three franchises: Biofund (therapeutics, funds I to IV), Diagnostics (diagnostics and digital health, funds I and II) and Growth Opportunities (later-stage healthcare), alongside the Paris Saclay Seed Fund. The firm says it has financed 72 companies and founded 25 of them since 2009, working with European academic research institutions from company creation through expansion. Kurma is a wholly owned company of the Eurazeo group: Eurazeo bought a 70.6% majority in 2021 and acquired the remaining capital on 30 April 2025, while Kurma keeps its own brand and investment teams.",
     leadership: [
-      { name: "Thierry Laugel", role: "Managing Partner, Biofund (co-founder)" },
-      { name: "Rémi Droller", role: "Managing Partner, Biofund" },
-      { name: "Jean-François Rivassou", role: "Partner, Growth Opportunities" },
-      { name: "Amanda Gett", role: "Partner, Biofund" },
-      { name: "Benjamin Belot", role: "Partner, Diagnostic" },
+      { name: "Thierry Laugel", role: "Managing Partner, Biofund (co-founder)", profileSlug: "thierry-laugel" },
+      { name: "Rémi Droller", role: "Managing Partner, Biofund", profileSlug: "remi-droller" },
+      { name: "Jean-François Rivassou", role: "Partner, Growth Opportunities", profileSlug: "jean-francois-rivassou" },
+      { name: "Amanda Gett", role: "Partner, Biofund", profileSlug: "amanda-gett" },
+      { name: "Benjamin Belot", role: "Partner, Diagnostic", profileSlug: "benjamin-belot" },
     ],
     timeline: [
       { year: "2009", event: "Kurma Partners founded in Paris in July by Thierry Laugel and partners; Kurma Biofund I raised at EUR 51 million." },
@@ -10856,11 +10847,11 @@ holdings: []
     sectors: ["Life Sciences", "Biotech", "Agritech", "Medical Devices", "Deep Tech"],
     thesis: "VIVES Partners manages the VIVES family of early-stage technology funds, which were initiated by UCLouvain in 2004 and originally managed by the university's technology transfer company, Sopartec. It invests in research-based ventures with strong intellectual property, concentrating on life sciences, agricultural technology and hard engineering, and takes tickets from EUR 0.1M to EUR 7M from seed through Series A. Its current vehicle, the VIVES Inter-University Fund, is a cross-border fund built with five partner universities - UCLouvain, KU Leuven, Université de Paris, Wageningen University and the University of Luxembourg - and also backs non-university European start-ups outside Switzerland and the UK. Investment activity was separated from Sopartec at the start of 2024 into the independent management company VIVES Partners SRL in Wavre.",
     leadership: [
-      { name: "Philippe Durieux", role: "Managing Partner" },
-      { name: "André Vandemeulebroecke", role: "Partner" },
-      { name: "Yannick Vancoppenolle", role: "Partner" },
-      { name: "Sandra Schoors", role: "Partner" },
-      { name: "Gilles Dufour", role: "Partner" },
+      { name: "Philippe Durieux", role: "Managing Partner", profileSlug: "philippe-durieux" },
+      { name: "André Vandemeulebroecke", role: "Partner", profileSlug: "andre-vandemeulebroecke" },
+      { name: "Yannick Vancoppenolle", role: "Partner", profileSlug: "yannick-vancoppenolle" },
+      { name: "Sandra Schoors", role: "Partner", profileSlug: "sandra-schoors" },
+      { name: "Gilles Dufour", role: "Partner", profileSlug: "gilles-dufour" },
     ],
     timeline: [
       { year: "2004", event: "VIVES I created at the initiative of UCLouvain, a EUR 15M seed fund for high-tech start-ups, with BNP Paribas Fortis Private Equity Belgium, the EIF and KBC Private Equity among its backers." },
@@ -10884,10 +10875,10 @@ holdings: []
     sectors: ["Life Sciences", "Therapeutics", "Medical Devices", "Digital Health", "Biotech"],
     thesis: "Wellington Partners is a European venture capital firm founded in 1998 that invests in early- and growth-stage life science companies, with offices in Munich and Zurich. It backs therapeutics, medical devices, diagnostics, digital health and industrial biotechnology, writing tickets of roughly EUR 2 million to EUR 20 million from early stage through expansion, plus selected PIPE investments. Its life science funds run from WP I (1998) through WPLS V, which closed at EUR 210 million; the firm reports 58 life science investments and 27 exits, IPOs and trade sales. Wellington Partners historically also ran a technology practice that deployed about EUR 640 million into more than 100 European companies including Spotify, FreeNow and Xing, but it states that it no longer makes new technology investments.",
     leadership: [
-      { name: "Dr. Rainer Strohmenger", role: "Managing Partner" },
-      { name: "Dr. Johannes Fischer", role: "Managing Partner" },
-      { name: "Harald Keller", role: "Managing Partner, CFO" },
-      { name: "Ernst Mannheimer", role: "Managing Partner, Legal Counsel" },
+      { name: "Dr. Rainer Strohmenger", role: "Managing Partner", profileSlug: "rainer-strohmenger" },
+      { name: "Dr. Johannes Fischer", role: "Managing Partner", profileSlug: "johannes-fischer" },
+      { name: "Harald Keller", role: "Managing Partner, CFO", profileSlug: "harald-keller" },
+      { name: "Ernst Mannheimer", role: "Managing Partner, Legal Counsel", profileSlug: "ernst-mannheimer" },
     ],
     timeline: [
       { year: "1998", event: "Wellington Partners founded; first fund WP I closed at EUR 10 million allocated to life science, funding 9 life science investments." },
@@ -10912,11 +10903,11 @@ holdings: []
     sectors: ["Fintech", "SaaS", "Mobility", "Sustainability"],
     thesis: "BEENEXT is an early-stage venture firm founded in Singapore in 2015 by Teruhide Sato, who had previously co-founded and taken public the Tokyo-listed internet group BEENOS. It describes itself as \"a partnership of the founders, by the founders, and for the founders\" and invests primarily in India, Southeast Asia and Japan, with additional activity in the United States. The firm runs several fund families under one manager, BEENEXT Capital Management Pte. Ltd., including the BEENEXT and BEENEXT ASIA funds, the BEE ACCELERATE funds and the Japan-focused ALL STAR SAAS FUND. Its stated portfolio spans more than 180 companies across 17 countries.",
     leadership: [
-      { name: "Teruhide Sato", role: "Founder & CEO" },
-      { name: "Dirk Van Quaquebeke", role: "Managing Partner" },
-      { name: "Hiro Maeda", role: "Managing Partner" },
-      { name: "Hero Choudhary", role: "Managing Partner" },
-      { name: "Nao Ito", role: "Operating Partner" },
+      { name: "Teruhide Sato", role: "Founder & CEO", profileSlug: "teruhide-sato" },
+      { name: "Dirk Van Quaquebeke", role: "Managing Partner", profileSlug: "dirk-van-quaquebeke" },
+      { name: "Hiro Maeda", role: "Managing Partner", profileSlug: "hiro-maeda" },
+      { name: "Hero Choudhary", role: "Managing Partner", profileSlug: "hero-choudhary" },
+      { name: "Nao Ito", role: "Operating Partner", profileSlug: "nao-ito" },
     ],
     timeline: [
       { year: "2015", event: "Teruhide Sato founds BEENEXT in Singapore after resigning as CEO of BEENOS; BEENEXT Capital Management Pte. Ltd. established April 2015 and the first fund reaches a first close of US$60M in July (BRIDGE)." },
@@ -10939,10 +10930,10 @@ holdings: []
     sectors: ["Fintech", "SaaS", "Logistics", "Digital Health", "Edtech"],
     thesis: "Monk's Hill Ventures is a Singapore-headquartered venture firm founded in 2014 by Peng T. Ong and Kuo-Yi Lim that backs Southeast Asian technology founders at pre-Series A and Series A. It runs a deliberately sector-agnostic mandate, and its published portfolio clusters in fintech and lending, B2B SaaS, logistics, health technology and education technology across Singapore, Indonesia, Vietnam, Malaysia, Thailand and the Philippines. The firm says it has invested in more than 50 startups since its first fund and operates from offices in Singapore, Ho Chi Minh City and Jakarta. It has told regional press that it deliberately raises modest fund sizes, and it runs founder-facing programmes it calls SEA Connect and the Angsana Council.",
     leadership: [
-      { name: "Kuo-Yi Lim", role: "Co-Founder and Managing Partner" },
-      { name: "Peng T. Ong", role: "Co-Founder and Managing Partner" },
-      { name: "Justin Nguyen", role: "General Partner" },
-      { name: "Susli Lie", role: "Partner" },
+      { name: "Kuo-Yi Lim", role: "Co-Founder and Managing Partner", profileSlug: "kuo-yi-lim" },
+      { name: "Peng T. Ong", role: "Co-Founder and Managing Partner", profileSlug: "peng-t-ong" },
+      { name: "Justin Nguyen", role: "General Partner", profileSlug: "justin-nguyen" },
+      { name: "Susli Lie", role: "Partner", profileSlug: "susli-lie" },
     ],
     timeline: [
       { year: "2014", event: "Monk's Hill Ventures founded by Peng T. Ong and Kuo-Yi Lim; the firm dates its track record from the raising of its first fund in 2014." },
@@ -10965,9 +10956,9 @@ holdings: []
     sectors: ["Enterprise Software", "Deep Tech", "Sustainability"],
     thesis: "Wavemaker Partners is an early-stage venture firm operating out of Singapore and Los Angeles that invests in Enterprise, Deep Tech and Sustainability companies in Southeast Asia. Its stated approach is contrarian value: it frames opportunity as 'Value minus Perception' and looks for revenue-generating businesses it considers undervalued relative to global comparables, led by founders with a specific industry or technology insight. The firm says it has made over 200 investments since 2012 and that its portfolio has produced exits worth more than US$2B in enterprise value. Wavemaker Partners is the umbrella for several distinct vehicles: the early-stage Wavemaker Ventures funds (the Wavemaker Pacific fund series) which are the core of this record, the growth-stage Wavemaker Growth, the climate-tech venture builder Wavemaker Impact, and the non-profit Wavecrest; Wavemaker 360 Health is a separate healthcare vehicle in the wider Wavemaker family. It is unrelated to Wavemaker Global, the WPP media agency network.",
     leadership: [
-      { name: "Paul Santos", role: "Founding Partner" },
-      { name: "Eric Manlunas", role: "Co-founder and General Partner" },
-      { name: "Andy Hwang", role: "General Partner" },
+      { name: "Paul Santos", role: "Founding Partner", profileSlug: "paul-santos" },
+      { name: "Eric Manlunas", role: "Co-founder and General Partner", profileSlug: "eric-manlunas" },
+      { name: "Andy Hwang", role: "General Partner", profileSlug: "andy-hwang" },
     ],
     timeline: [
       { year: "2003", event: "Eric Manlunas launches Frontera Group in Los Angeles, a US$8.3M angel vehicle anchored by his own capital that becomes the predecessor to Wavemaker Partners (Los Angeles Business Journal)." },
@@ -10993,9 +10984,9 @@ holdings: []
     sectors: ["Consumer", "Fintech", "Healthcare", "SaaS", "Sustainability"],
     thesis: "Openspace was founded in Singapore in 2014 as NSI Ventures, the venture arm of private equity firm Northstar Group, and became independent under the Openspace Ventures name in 2018. It backs tech-native and tech-enabled companies in Southeast Asia, and its published portfolio is grouped into consumer, finance, health, agriculture, SaaS and sustainability. The manager now runs several strategies alongside its Openspace Ventures early-stage funds: Openspace Growth for Series C and D, Ocular for frontier technology and digital assets, Onyx for growth credit and Orbit for listed small and mid caps; it renamed itself Openspace Capital in 2025 to reflect that shift. It states US$800M in committed capital across six funds and operates from Singapore with people in Indonesia, Thailand, the Philippines, Vietnam and Malaysia.",
     leadership: [
-      { name: "Shane Chesson", role: "Founding Partner" },
-      { name: "Hian Goh", role: "Founding Partner" },
-      { name: "Jessica Huang Pouleur", role: "Partner" },
+      { name: "Shane Chesson", role: "Founding Partner", profileSlug: "shane-chesson" },
+      { name: "Hian Goh", role: "Founding Partner", profileSlug: "hian-goh" },
+      { name: "Jessica Huang Pouleur", role: "Partner", profileSlug: "jessica-huang-pouleur" },
     ],
     timeline: [
       { year: "2014", event: "Founded in Singapore as NSI Ventures, the venture capital arm of private equity firm Northstar Group, by Shane Chesson and Hian Goh." },
@@ -11021,10 +11012,10 @@ holdings: []
     sectors: ["AI", "SaaS", "Consumer", "Fintech", "Healthcare"],
     thesis: "Stellaris Venture Partners is an early-stage, technology-focused and sector-agnostic Indian venture firm founded by three former Helion Venture Partners investors – Alok Goyal, Ritesh Banglani and Rahul Chowdhri. It leads seed and Series A rounds, writing seed cheques of roughly $1-3M and Series A cheques of roughly $3-10M, and says about 60% of its investments are made at idea stage. The firm organises its team around sector specialisation across software and AI, consumer tech and brands, fintech, healthcare and sustainability. Fund III, closed in November 2024 at $300M, is being deployed into at least 30 companies with a stated emphasis on consumer, AI and deeptech.",
     leadership: [
-      { name: "Alok Goyal", role: "Co-founder and Partner" },
-      { name: "Ritesh Banglani", role: "Co-founder and Partner" },
-      { name: "Rahul Chowdhri", role: "Co-founder and Partner" },
-      { name: "Naman Lahoty", role: "Partner" },
+      { name: "Alok Goyal", role: "Co-founder and Partner", profileSlug: "alok-goyal" },
+      { name: "Ritesh Banglani", role: "Co-founder and Partner", profileSlug: "ritesh-banglani" },
+      { name: "Rahul Chowdhri", role: "Co-founder and Partner", profileSlug: "rahul-chowdhri" },
+      { name: "Naman Lahoty", role: "Partner", profileSlug: "naman-lahoty" },
     ],
     timeline: [
       { year: "2016", event: "Alok Goyal, Ritesh Banglani and Rahul Chowdhri, all previously partners at Helion Venture Partners, begin raising the firm out of Bengaluru; the firm's own site describes starting \"in a Bengaluru basement\" in 2016." },
@@ -11047,8 +11038,8 @@ holdings: []
     sectors: ["AI", "Fintech", "SaaS", "Deep Tech", "Manufacturing"],
     thesis: "Arkam Ventures is an early-stage Indian venture firm co-founded by Rahul Chandra and Bala Srinivasa that leads or co-leads rounds with cheques of $1M-$5M and says it backs no more than six to eight companies a year. Its original thesis was the \"digitalisation of Middle India\" – companies serving the several hundred million Indians earning roughly Rs 3-20 lakh a year, built on India's public digital infrastructure of Aadhaar, eKYC and UPI. The firm's current site frames the same approach as non-consensus early bets across AI, fintech, SaaS, deeptech, manufacturing and spacetech. Its investment manager is Unitary Investment Management LLP and its two SEBI-registered Category II AIF vehicles are named Unitary Fund and Unitary Fund II.",
     leadership: [
-      { name: "Rahul Chandra", role: "Managing Director and Co-founder" },
-      { name: "Bala Srinivasa", role: "Managing Director" },
+      { name: "Rahul Chandra", role: "Managing Director and Co-founder", profileSlug: "rahul-chandra" },
+      { name: "Bala Srinivasa", role: "Managing Director", profileSlug: "bala-srinivasa" },
     ],
     timeline: [
       { year: "2017", event: "Rahul Chandra, then co-head of Helion Venture Partners, launches a new early-stage fund under the name Unitary Helion targeting $100M (about Rs 650 crore) (Business Standard, May 2017)." },
@@ -11071,12 +11062,12 @@ holdings: []
     sectors: ["Fintech", "Enterprise Software", "AI", "Frontier Technologies", "Proptech"],
     thesis: "Shorooq Partners is an Abu Dhabi-headquartered alternative investment firm founded in 2017 by Mahmoud Adi and Shane Shin, and is regulated by the ADGM Financial Services Regulatory Authority (FSRA registration no. 190004). It runs two distinct businesses: venture equity through its Bedaya funds, which back founders from the idea and pre-seed stage through scale-up, and a private credit practice through its Nahda funds, which the firm describes as the Middle East's first technology-focused credit strategy. The firm leads with fintech, software, frontier technology and platform businesses across MENA and Pakistan, and operates from Abu Dhabi with additional offices reported in Dubai, Riyadh, Egypt and Korea. Fund investors named on its own site include Mubadala, Saudi Venture Capital and Korea Venture Investment Corp, with Korea's IMM Investment Global a partner in its credit funds.",
     leadership: [
-      { name: "Mahmoud Adi", role: "Founding Partner" },
-      { name: "Shane Shin", role: "Founding Partner" },
-      { name: "Dr. Bilal Baloch", role: "Partner" },
-      { name: "Yousef Albabtain", role: "Partner" },
-      { name: "Omer Zabit", role: "Partner" },
-      { name: "Nathan Kwon", role: "Partner" },
+      { name: "Mahmoud Adi", role: "Founding Partner", profileSlug: "mahmoud-adi" },
+      { name: "Shane Shin", role: "Founding Partner", profileSlug: "shane-shin" },
+      { name: "Dr. Bilal Baloch", role: "Partner", profileSlug: "bilal-baloch" },
+      { name: "Yousef Albabtain", role: "Partner", profileSlug: "yousef-albabtain" },
+      { name: "Omer Zabit", role: "Partner", profileSlug: "omer-zabit" },
+      { name: "Nathan Kwon", role: "Partner", profileSlug: "nathan-kwon" },
     ],
     timeline: [
       { year: "2017", event: "Founded in Abu Dhabi by Mahmoud Adi and Shane Shin, starting with roughly US$2 million under management." },
@@ -11098,11 +11089,11 @@ holdings: []
     sectors: ["Fintech", "Digital Health", "Supply Chain", "Agritech", "AI"],
     thesis: "Global Ventures is a Dubai-headquartered venture capital firm founded in 2018 by Noor Sweid, investing in founders across emerging markets in the Middle East, Africa and Pakistan. It invests primarily at Series A with follow-on capacity, and has raised three funds: a US$50 million Fund I closed in early 2020, a Fund II that targeted US$100 million, and a Fund III reported at over US$150 million. Fund I led with fintech and Fund II with health technology; Fund III concentrates on supply chain technology, agritech, enterprise SaaS, artificial intelligence and deep tech. Limited partners have included Saudi Venture Capital, Jordan's Innovative Startups and SMEs Fund, Bupa Arabia, Agility Global's venture arm and Jada, the Saudi PIF-backed fund of funds.",
     leadership: [
-      { name: "Noor Sweid", role: "Founder and Managing Partner" },
-      { name: "Medea Nocentini", role: "Senior Partner" },
-      { name: "Simon Sharp", role: "Senior Partner" },
-      { name: "Diya Kumar", role: "Partner" },
-      { name: "Noor Shawwa", role: "Partner" },
+      { name: "Noor Sweid", role: "Founder and Managing Partner", profileSlug: "noor-sweid" },
+      { name: "Medea Nocentini", role: "Senior Partner", profileSlug: "medea-nocentini" },
+      { name: "Simon Sharp", role: "Senior Partner", profileSlug: "simon-sharp" },
+      { name: "Diya Kumar", role: "Partner", profileSlug: "diya-kumar" },
+      { name: "Noor Shawwa", role: "Partner", profileSlug: "noor-shawwa" },
     ],
     timeline: [
       { year: "2018", event: "Founded in Dubai by Noor Sweid, previously Chief Investment Officer of the Dubai Future Foundation and Managing Partner at Leap Ventures." },
@@ -11125,9 +11116,9 @@ holdings: []
     sectors: ["Fintech", "Ecommerce", "Logistics", "SaaS", "AI"],
     thesis: "Wamda Capital is the Dubai-based venture investment arm of Wamda, the MENA entrepreneurship platform founded by Aramex co-founder Fadi Ghandour; wamda.com describes Wamda Capital as Wamda's 'sector-agnostic investment vehicle'. It launched Wamda Capital Fund I in 2015, a US$70 million fund backed by the IFC, Zain and regional investors, and in 2019 moved to an evergreen structure funded by Fadi Ghandour's personal capital instead of closing the US$100 million Fund II it had announced. The firm is still actively investing at seed and Series A across MENA and Turkey, leading rounds as recently as January 2026, but it no longer raises third-party institutional funds. Its track record spans over 100 companies and includes Careem, Mumzworld, Tabby, Hala and BitOasis.",
     leadership: [
-      { name: "Fadi Ghandour", role: "Executive Chairman and Managing Partner" },
-      { name: "Fares Ghandour", role: "Partner" },
-      { name: "Daniel dos Reis", role: "Investment Director" },
+      { name: "Fadi Ghandour", role: "Executive Chairman and Managing Partner", profileSlug: "fadi-ghandour" },
+      { name: "Fares Ghandour", role: "Partner", profileSlug: "fares-ghandour" },
+      { name: "Daniel dos Reis", role: "Investment Director", profileSlug: "daniel-dos-reis" },
     ],
     timeline: [
       { year: "2010", event: "Wamda established by Fadi Ghandour to accelerate entrepreneurship ecosystems across MENA; MENAbytes reports the Wamda platform was launched by Abraaj Capital, which was later also an LP in Wamda Capital Fund I." },
@@ -11150,11 +11141,11 @@ holdings: []
     sectors: ["Deep Tech", "AI", "Climate Technology", "Robotics", "Space"],
     thesis: "Kembara is a European deep tech growth fund investing at Series B and C, set up to close what its partners describe as Europe's scale-up capital gap rather than its innovation gap. Its own site states it writes initial cheques of €15-40M into roughly 20 companies, with up to €100M deployable per company including follow-ons, across science-focused AI, robotics and automation, clean energy, future of compute (quantum, photonic, neuromorphic), space technology and designed materials. The fund is anchored by a €350M commitment from the European Investment Fund under the European Tech Champions Initiative, alongside CriteriaCaixa and CDTI Innovación via the Innvierte programme. It is Mundi Ventures' fifth fund, run by a dedicated team and registered with Spain's CNMV as Kembara Fund I, FCR.",
     leadership: [
-      { name: "Javier Santiso", role: "Co-founder and Partner" },
-      { name: "Yann de Vries", role: "Co-founder and Partner" },
-      { name: "Pierre Festal", role: "Partner" },
-      { name: "Robert Trezona", role: "Senior Strategic Advisor" },
-      { name: "Siraj Khaliq", role: "Senior Strategic Advisor" },
+      { name: "Javier Santiso", role: "Co-founder and Partner", profileSlug: "javier-santiso" },
+      { name: "Yann de Vries", role: "Co-founder and Partner", profileSlug: "yann-de-vries" },
+      { name: "Pierre Festal", role: "Partner", profileSlug: "pierre-festal" },
+      { name: "Robert Trezona", role: "Senior Strategic Advisor", profileSlug: "robert-trezona" },
+      { name: "Siraj Khaliq", role: "Senior Strategic Advisor", profileSlug: "siraj-khaliq" },
     ],
     timeline: [
       { year: "2023", event: "Kembara founded by Yann de Vries and Javier Santiso as a dedicated European deep tech growth vehicle within Mundi Ventures, per Sifted and Vestbee." },
