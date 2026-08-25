@@ -1113,8 +1113,8 @@ holdings: []
     thesis: "Obvious Ventures was founded in December 2014 by Twitter and Medium co-founder Ev Williams, alongside James Joaquin (former CEO of Xoom and Ofoto) and Vishal Vasishth, built on a genuinely non-obvious premise for the time: that companies solving humanity's biggest problems profitably, not as charity, would become the most valuable businesses of the coming decades. Organizing its investing around three pillars - planetary health, human health, and economic health - Obvious made early bets on Beyond Meat, Planet Labs, and Recursion Pharmaceuticals years before any of them were obvious winners, and has playfully closed its five funds at mathematically meaningful numbers, from $123,456,789 to Euler's number, $271,828,182, to its 2026 fifth fund at $360,360,360. The firm has backed more than 100 companies since founding, reaching $1.6 billion in cumulative AUM.",
     leadership: [
       { name: "Ev Williams", role: "Co-Founder", profileSlug: "ev-williams" },
-      { name: "James Joaquin", role: "Co-Founder & Managing Director" },
-      { name: "Vishal Vasishth", role: "Co-Founder & Managing Director" }
+      { name: "James Joaquin", role: "Co-Founder & Managing Director", profileSlug: "james-joaquin" },
+      { name: "Vishal Vasishth", role: "Co-Founder & Managing Director", profileSlug: "vishal-vasishth" }
     ],
     timeline: [
       { year: "2014", event: "Ev Williams, James Joaquin, and Vishal Vasishth found Obvious Ventures in San Francisco in December." },
@@ -1321,8 +1321,8 @@ holdings: []
     thesis: "Oxford Science Enterprises was founded in 2015 by David Norwood, the founder of IP Group who had already built one major university-spinout investment platform, in partnership with the University of Oxford, giving OSE preferred access to deal flow from one of the world's leading research institutions. Unlike a traditional venture fund with fixed timelines, OSE operates as a genuinely evergreen holding company, taking long-term stakes in deep tech, biotech, and advanced materials spinouts with patience over quick exits - a structural choice that led to real leadership turnover in its early years before stabilizing in September 2023 with the appointment of Ed Bussey as CEO and Jack Edmondson as the newly created CIO. Bussey, a three-time successful founder, now leads OSE's mission to commercialize Oxford's world-leading research, having deployed more than £2 billion in total capital since launch across more than 125 spinout companies with a combined value exceeding £1.1 billion.",
     leadership: [
       { name: "Ed Bussey", role: "Chief Executive Officer", profileSlug: "ed-bussey" },
-      { name: "David Norwood", role: "Co-Founder & Chairman" },
-      { name: "Jack Edmondson", role: "Chief Investment Officer" }
+      { name: "David Norwood", role: "Co-Founder & Chairman", profileSlug: "david-norwood" },
+      { name: "Jack Edmondson", role: "Chief Investment Officer", profileSlug: "jack-edmondson" }
     ],
     timeline: [
       { year: "2015", event: "David Norwood and the University of Oxford found Oxford Sciences Innovation (later renamed Oxford Science Enterprises)." },
@@ -1623,7 +1623,7 @@ holdings: []
     thesis: "Abingworth was founded in 1973 by London stockbrokers Peter Dicks and Hon. Anthony Montagu, initially making broader technology investments - including early stakes in Apple and Silicon Graphics - before Dicks led the firm's pivotal shift to dedicated biotechnology investing with a purpose-built biotech arm established in 1987. That five-decade focus on translating cutting-edge science into medicine, spanning seed through clinical co-development across London, Boston, and the San Francisco Bay Area, produced more than 180 portfolio companies, 73-plus completed IPOs, and 46 acquisitions, including Clovis Oncology and Algeta's sale to Bayer. Carlyle acquired Abingworth in August 2022 to bolster its own healthcare investing franchise, and the firm now operates across the full risk-return spectrum from venture capital to buyouts with more than $2 billion under management.",
     leadership: [
       { name: "Peter Dicks", role: "Co-Founder & Senior Partner", profileSlug: "peter-dicks" },
-      { name: "Tim Haines", role: "Chairman and Managing Partner" }
+      { name: "Tim Haines", role: "Chairman and Managing Partner", profileSlug: "tim-haines" }
     ],
     timeline: [
       { year: "1973", event: "Peter Dicks and Hon. Anthony Montagu found Abingworth in London." },
@@ -1697,7 +1697,7 @@ holdings: []
     leadership: [
       { name: "Josh Stein", role: "Co-Founder & Managing Partner", profileSlug: "josh-stein" },
       { name: "Emily Melton", role: "Co-Founder & Managing Partner", profileSlug: "emily-melton" },
-      { name: "Heidi Roizen", role: "Partner" }
+      { name: "Heidi Roizen", role: "Partner", profileSlug: "heidi-roizen" }
     ],
     timeline: [
       { year: "2004", event: "Josh Stein joins DFJ; Emily Melton joins in 2012 after a stint at Mayfield Fund." },
@@ -3304,8 +3304,8 @@ holdings: []
     thesis: "Breakthrough Energy Ventures was founded by Bill Gates in 2015, backed by a roster of billionaire co-investors including Jeff Bezos, Jack Ma, Richard Branson, and Masayoshi Son, and launched with an explicit rejection of typical venture timelines: the fund operates on a 20-year investment horizon, far longer than the standard 10-year fund life, on the theory that hard climate technology genuinely needs that patience to reach commercial scale. Its investment bar is unusually specific for a venture fund - every company must have credible potential to eliminate at least 1% of global annual greenhouse-gas emissions - and its more than 110 portfolio companies span electricity, transportation, manufacturing, buildings, food, and agriculture. BEV has raised more than $3.5 billion in committed capital across three funds since 2016, positioning it as the largest and most institutionally backed climate-focused venture platform in the world.",
     leadership: [
       { name: "Carmichael Roberts", role: "Investment Committee Co-Lead", profileSlug: "carmichael-roberts" },
-      { name: "Eric Toone", role: "Investment Committee Co-Lead" },
-      { name: "Rodi Guidero", role: "Executive Director" }
+      { name: "Eric Toone", role: "Investment Committee Co-Lead", profileSlug: "eric-toone" },
+      { name: "Rodi Guidero", role: "Executive Director", profileSlug: "rodi-guidero" }
     ],
     timeline: [
       { year: "2015", event: "Bill Gates founds Breakthrough Energy Ventures." },
@@ -3361,7 +3361,7 @@ holdings: []
     thesis: "5Y Capital was founded in 2008 by Richard Liu and Ken Shi, both former Morningside Group investment professionals who spun out their own China-focused technology fund during the global financial crisis, operating under the Morningside name with the blessing of the Chan family, the Hong Kong property dynasty behind Morningside Group. The firm rebranded from Morningside Venture Capital to 5Y Capital in October 2020, taking its new name from Wuyuan Road, the location of its Shanghai headquarters. Its defining outcome came early: 5Y was the first institutional investor in Xiaomi, and by the time the smartphone maker completed its 2018 Hong Kong IPO, that stake had returned a reported 800 times its original investment - one of the largest single venture outcomes in Chinese technology history, alongside a later $30 billion return from Kuaishou's 2021 Nasdaq listing.",
     leadership: [
       { name: "Richard Liu", role: "Founding Partner", profileSlug: "richard-liu-5y" },
-      { name: "Ken Shi", role: "Founding Partner" }
+      { name: "Ken Shi", role: "Founding Partner", profileSlug: "ken-shi" }
     ],
     timeline: [
       { year: "1999", event: "Richard Liu and Ken Shi join the Morningside Group after attending China Europe International Business School together." },
@@ -3389,9 +3389,9 @@ holdings: []
     thesis: "FirstMark Capital was founded in 2008 by Rick Heitzmann and Amish Jani as a spinoff from Pequot Capital Management, built on a conviction that looked genuinely contrarian at the time: that New York, not just Silicon Valley, would become a dominant hub for technology startups. Both founders had operator or growth-investing credibility before founding the firm - Heitzmann built and sold First Advantage, while Jani came from Pequot Ventures - and they've since built one of venture capital's most developed platform and community stacks, including Data Driven NYC, a community with more than 20,000 members, and the widely-cited annual MAD (Machine Learning, AI, and Data) Landscape report, now in its 11th year. That combination of early conviction and founder support produced Pinterest, where Heitzmann wrote the seed check, and Shopify, where Jani personally led the Series A investment through IPO, alongside DraftKings, Airbnb, Riot Games, and StubHub. The firm has raised 10 funds totaling $3.5 billion in committed capital.",
     leadership: [
       { name: "Rick Heitzmann", role: "Co-Founder & Partner", profileSlug: "rick-heitzmann" },
-      { name: "Amish Jani", role: "Co-Founder & Partner" },
-      { name: "Matt Turck", role: "Partner" },
-      { name: "Adam Nelson", role: "Partner" }
+      { name: "Amish Jani", role: "Co-Founder & Partner", profileSlug: "amish-jani" },
+      { name: "Matt Turck", role: "Partner", profileSlug: "matt-turck" },
+      { name: "Adam Nelson", role: "Partner", profileSlug: "adam-nelson" }
     ],
     timeline: [
       { year: "2008", event: "Rick Heitzmann and Amish Jani found FirstMark Capital in New York, spinning out from Pequot Capital Management." },
@@ -3420,8 +3420,8 @@ holdings: []
     thesis: "Flagship Pioneering was founded in 2000 by Noubar Afeyan on a model most venture firms don't attempt: rather than only investing in outside startups, Flagship invents companies from scratch internally, pairing entrepreneurially-minded scientists with a structured 'What if?' process that iterates toward genuinely first-in-category bioplatform companies. That approach has produced more than 100 scientific ventures worth over $100 billion in aggregate value, thousands of patents, and more than 50 drugs in clinical development. Its best-known creation is Moderna, which Afeyan co-founded in 2010 and took public on the Nasdaq in December 2018 - years before its mRNA platform became central to the global COVID-19 vaccine response.",
     leadership: [
       { name: "Noubar Afeyan", role: "Founder & CEO", profileSlug: "noubar-afeyan" },
-      { name: "Ignacio Martinez", role: "General Partner" },
-      { name: "Geoffrey von Maltzahn", role: "General Partner" }
+      { name: "Ignacio Martinez", role: "General Partner", profileSlug: "ignacio-martinez" },
+      { name: "Geoffrey von Maltzahn", role: "General Partner", profileSlug: "geoffrey-von-maltzahn" }
     ],
     timeline: [
       { year: "2000", event: "Noubar Afeyan founds Flagship Pioneering in Cambridge." },
@@ -3448,8 +3448,8 @@ holdings: []
     thesis: "F-Prime Capital is the venture capital arm of Fidelity Investments, operating for more than 50 years with a structural advantage almost no other firm on this page shares: it invests without any pressure from outside fundraising, letting it back entrepreneurs on a genuinely long time horizon. That freedom has produced an unusually hands-on, company-formation-heavy model - F-Prime has co-created more than 30 companies from scratch, including Beam Therapeutics, Denali Therapeutics, and Innovent Biologics, working directly with academic researchers to spin science into standalone businesses rather than only backing existing startups. The firm invests stage-agnostically across healthcare (therapeutics, medtech, health IT) and technology (enterprise software, fintech, frontier tech), and now manages approximately $4.8 billion across a global portfolio of more than 300 companies.",
     leadership: [
       { name: "Stephen Knight", role: "President & Senior Managing Partner", profileSlug: "stephen-knight" },
-      { name: "Carl Byers", role: "Team Member" },
-      { name: "David Jegen", role: "Team Member" }
+      { name: "Carl Byers", role: "Team Member", profileSlug: "carl-byers" },
+      { name: "David Jegen", role: "Team Member", profileSlug: "david-jegen" }
     ],
     timeline: [
       { year: "2003", event: "Stephen Knight joins F-Prime Capital, then known as Fidelity Biosciences." },
@@ -3529,7 +3529,7 @@ holdings: []
     aum: "$1B AI Fund (2024); historically ~$250-300M deployed annually",
     thesis: "Cisco Investments has operated as Cisco's corporate venture arm since 1993, and its own language is direct about what sets it apart: investing is 'part of the company, and it's strategic,' meaning capital comes bundled with access to Cisco's infrastructure, go-to-market channels, and enterprise customer relationships. That strategy sharpened further in June 2024 with the launch of a dedicated $1 billion AI fund focused on secure and trustworthy AI, adding names like Cohere and Scale AI to a portfolio that already spanned networking, observability, and security. The clearest proof of the model's payoff came in Cisco's 2021 year-in-review, which named HashiCorp, Confluent, and GitLab together as portfolio companies that went public that year.",
     leadership: [
-      { name: "Derek Idemoto", role: "Senior Vice President" },
+      { name: "Derek Idemoto", role: "Senior Vice President", profileSlug: "derek-idemoto" },
       { name: "Noah Yago", role: "Vice President", profileSlug: "noah-yago" }
     ],
     timeline: [
@@ -3556,7 +3556,7 @@ holdings: []
     aum: "$4.3B+",
     thesis: "CRV, originally Charles River Ventures, was founded in 1970 in Boston to commercialize research coming out of MIT, with help from Dick Burnes, founder of the semiconductor testing company Teradyne. Over more than five decades, the firm relocated its headquarters to Palo Alto to be closer to Silicon Valley and built a reputation for conviction and speed in early-stage consumer and enterprise deals. That pattern held true in 2013, when partner Saar Gur led CRV's seed investment in DoorDash - a food delivery company just nine weeks old at the time - years before its 2020 IPO valued it at $39 billion.",
     leadership: [
-      { name: "Dick Burnes", role: "Co-Founder (1970)" },
+      { name: "Dick Burnes", role: "Co-Founder (1970)", profileSlug: "dick-burnes" },
       { name: "Saar Gur", role: "General Partner", profileSlug: "saar-gur" }
     ],
     timeline: [
@@ -3586,7 +3586,7 @@ holdings: []
     thesis: "True Ventures was founded in 2005 by Jon Callaghan and Phil Black, both veterans of Summit Partners, built around a deliberate philosophy of maximizing risk at the earliest stages - backing founders before their markets or categories even exist. That approach defined the firm's investment in Fitbit, made when the device looked like little more than a pedometer in a world with no wearables market, and carried through to early bets on Peloton, Ring, and HashiCorp. True has since backed more than 500 companies across seed and Series A stages, with a hands-on approach centered on its annual Founder Camp.",
     leadership: [
       { name: "Jon Callaghan", role: "Co-Founder & Managing Partner", profileSlug: "jon-callaghan" },
-      { name: "Phil Black", role: "Co-Founder" }
+      { name: "Phil Black", role: "Co-Founder", profileSlug: "phil-black" }
     ],
     timeline: [
       { year: "2005", event: "Jon Callaghan and Phil Black found True Ventures in Palo Alto." },
@@ -3614,7 +3614,7 @@ holdings: []
     thesis: "DCVC, originally founded as Data Collective by Zachary Bogue and Matt Ocko, describes itself as the world's largest pure-play deep-tech venture firm, with more than $4 billion under management. Its sector map is unusually crisp for a generalist-sized fund - deep tech, climate, human health, defense and security, space, advanced computing, and industrial transformation - and it backs companies applying computational approaches to industries that are genuinely hard to disrupt. The cleanest signature outcome is Blue River Technology, the agricultural robotics company John Deere acquired for $305 million in 2017; the firm's public bench since has included Planet Labs, Rocket Lab, Recursion, and SentinelOne.",
     leadership: [
       { name: "Zachary Bogue", role: "Co-Founder & Managing Partner", profileSlug: "zachary-bogue" },
-      { name: "Matt Ocko", role: "Co-Founder & Managing Partner" }
+      { name: "Matt Ocko", role: "Co-Founder & Managing Partner", profileSlug: "matt-ocko" }
     ],
     timeline: [
       { year: "2011", event: "Zachary Bogue and Matt Ocko found the firm as Data Collective in Palo Alto." },
@@ -3643,8 +3643,8 @@ holdings: []
     aum: "$3.5B+",
     thesis: "Greylock Partners is one of the oldest venture capital firms in the world, founded in 1965 in Cambridge, Massachusetts by Bill Elfers and Dan Gregory, two investors who had cut their teeth at American Research and Development Corporation - one of the very first venture capital firms ever created. After more than four decades on the East Coast, Greylock relocated its headquarters to Silicon Valley in 2009, the same year it added LinkedIn co-founder Reid Hoffman as a partner. The firm focuses on early-stage consumer internet and enterprise software companies, with a six-decade history spanning from early biotech investments to today's AI-first startups.",
     leadership: [
-      { name: "Bill Elfers", role: "Co-Founder (1965)" },
-      { name: "Dan Gregory", role: "Co-Founder (1965)" },
+      { name: "Bill Elfers", role: "Co-Founder (1965)", profileSlug: "bill-elfers" },
+      { name: "Dan Gregory", role: "Co-Founder (1965)", profileSlug: "dan-gregory" },
       { name: "Reid Hoffman", role: "Partner", profileSlug: "reid-hoffman" }
     ],
     timeline: [
@@ -3674,7 +3674,7 @@ holdings: []
     thesis: "David Sacks was PayPal's first product leader and later its COO, part of the group later nicknamed the 'PayPal Mafia,' before founding Yammer, an enterprise social networking company he built and sold to Microsoft for $1.2 billion. He co-founded Craft Ventures in 2017 with Bill Lee, built around a deliberately operator-led model that pairs capital with hands-on go-to-market and talent support for B2B software founders. The firm has grown to $3.3 billion in total assets under management following its 2023 Craft IV and Growth II funds, and its early conviction in Reddit - invested in 2017, years before its 2024 IPO - has become one of its most visible public outcomes.",
     leadership: [
       { name: "David Sacks", role: "Partner & Co-Founder", profileSlug: "david-sacks" },
-      { name: "Bill Lee", role: "Co-Founder & Venture Partner" }
+      { name: "Bill Lee", role: "Co-Founder & Venture Partner", profileSlug: "bill-lee" }
     ],
     timeline: [
       { year: "2017", event: "David Sacks and Bill Lee found Craft Ventures in San Francisco." },
@@ -3703,11 +3703,11 @@ holdings: []
     aum: "$3.2B",
     thesis: "Initialized Capital was founded in 2011 by Alexis Ohanian, Garry Tan, and Harj Taggar, and has stayed unusually literal about what it does: the firm's own positioning is that it 'sets the standard in seed,' writing first checks across enterprise SaaS, AI, infrastructure, sustainability, hard tech, health, consumer, and crypto. It raised a $125 million seed fund in 2016 and had grown into a roughly $3.2 billion platform by the time Brett Gibson and Jen Wolf took over as managing partners in 2022. Its flagship public winner is Coinbase, alongside Instacart, Opendoor, and Reddit - an unusually high public-exit rate for a firm that deliberately stays seed-first rather than following its winners up the stack.",
     leadership: [
-      { name: "Brett Gibson", role: "Managing Partner" },
-      { name: "Jen Wolf", role: "Managing Partner" },
-      { name: "Garry Tan", role: "Co-Founder" },
-      { name: "Alexis Ohanian", role: "Co-Founder" },
-      { name: "Harj Taggar", role: "Co-Founder" }
+      { name: "Brett Gibson", role: "Managing Partner", profileSlug: "brett-gibson" },
+      { name: "Jen Wolf", role: "Managing Partner", profileSlug: "jen-wolf" },
+      { name: "Garry Tan", role: "Co-Founder", profileSlug: "garry-tan" },
+      { name: "Alexis Ohanian", role: "Co-Founder", profileSlug: "alexis-ohanian" },
+      { name: "Harj Taggar", role: "Co-Founder", profileSlug: "harj-taggar" }
     ],
     timeline: [
       { year: "2011", event: "Alexis Ohanian, Garry Tan, and Harj Taggar found Initialized Capital in San Francisco." },
@@ -3764,8 +3764,8 @@ holdings: []
     thesis: "Pitango Venture Capital was founded in 1993 as Polaris Venture Capital by Rami Kalish, joined three years later by Chemi Peres, and rebranded to its current name in 2001. Now Israel's largest and longest-standing venture capital firm, Pitango operates through three dedicated funds - Pitango First for early-stage bets, Pitango Growth for scaling companies, and Pitango HealthTech for digital health, medical devices, and biotechnology - giving it a genuinely full-lifecycle presence in Israeli tech rare among its peers. The firm has invested in more than 250 companies since founding, with over 85 reaching a public listing or acquisition, and now manages $3 billion across 13 funds.",
     leadership: [
       { name: "Chemi Peres", role: "Co-Founder & Managing General Partner", profileSlug: "chemi-peres" },
-      { name: "Rami Kalish", role: "Co-Founder & Managing Partner" },
-      { name: "Aaron Mankovski", role: "Partner" }
+      { name: "Rami Kalish", role: "Co-Founder & Managing Partner", profileSlug: "rami-kalish" },
+      { name: "Aaron Mankovski", role: "Partner", profileSlug: "aaron-mankovski" }
     ],
     timeline: [
       { year: "1993", event: "Rami Kalish founds Polaris Venture Capital in Israel." },
@@ -3945,9 +3945,9 @@ holdings: []
     thesis: "Northzone has operated since 1996, giving it a rare through-line from the pre-mobile era to today's AI investing cycle while staying relevant across seed, Series A, and growth stages - the firm explicitly markets itself as 'Seed to Growth.' That long-cycle consistency has translated into a multi-office, multi-theme platform: consumer and fintech legacy on one side, newer AI, climate, infrastructure, and health investments on the other. Spotify's 2018 direct listing, which closed its first trading day at a roughly $26.5 billion valuation, remains the firm's signature outcome, and its 2022 €1 billion raise is evidence that LPs view Northzone as far more than a 'Spotify-era' brand.",
     leadership: [
       { name: "Pär-Jörgen Pärson", role: "Partner", profileSlug: "par-jorgen-parson" },
-      { name: "Michiel Kotting", role: "Partner" },
-      { name: "Jessica Schultz", role: "Partner" },
-      { name: "Wendy Xiao", role: "Partner" }
+      { name: "Michiel Kotting", role: "Partner", profileSlug: "michiel-kotting" },
+      { name: "Jessica Schultz", role: "Partner", profileSlug: "jessica-schultz" },
+      { name: "Wendy Xiao", role: "Partner", profileSlug: "wendy-xiao" }
     ],
     timeline: [
       { year: "1996", event: "Northzone is founded." },
@@ -3974,7 +3974,7 @@ holdings: []
     aum: "$2.3B+",
     thesis: "Emergence Capital was founded in 2003 by Jason Green, Brian Jacobs, and Gordon Ritter on a deliberately narrow thesis: enterprise software was moving to the cloud, and a firm built entirely around that shift could out-invest generalist funds in the category. The firm makes just 5 to 7 new investments a year by design, prioritizing deep conviction over broad coverage - a discipline that helped it back Salesforce, Veeva, and Box early. That same conviction led General Partner Santi Subotovsky, who joined in 2010 after moving to the U.S. from Argentina, to lead Emergence's investment in Zoom while it was still a little-known startup, years before the company became a household name.",
     leadership: [
-      { name: "Gordon Ritter", role: "Founder & General Partner" },
+      { name: "Gordon Ritter", role: "Founder & General Partner", profileSlug: "gordon-ritter" },
       { name: "Santi Subotovsky", role: "General Partner", profileSlug: "santi-subotovsky" }
     ],
     timeline: [
@@ -4006,7 +4006,7 @@ holdings: []
     thesis: "Jerusalem Venture Partners was founded in 1993 by Erel Margalit, who had previously directed the Jerusalem Development Authority and brought a distinctly hands-on, ecosystem-building approach to venture capital from day one - JVP initially operated as one of Israel's first government-backed incubators before expanding into a global firm. That combination of capital and operational support, including startup hubs in Jerusalem, Be'er Sheva, and New York, produced one of Israeli tech's most consequential track records: the Series A investment in CyberArk that grew into a roughly 47% ownership stake ahead of its 2014 IPO, and the $4.8 billion sale of Chromatis Networks to Lucent Technologies in 2000, then the largest Israeli tech exit ever recorded. JVP now manages $2.18 billion across 10 funds, having invested in more than 150 companies.",
     leadership: [
       { name: "Erel Margalit", role: "Founder & Executive Chairman", profileSlug: "erel-margalit" },
-      { name: "Yoav Tzruya", role: "General Partner" }
+      { name: "Yoav Tzruya", role: "General Partner", profileSlug: "yoav-tzruya" }
     ],
     timeline: [
       { year: "1993", event: "Erel Margalit founds Jerusalem Venture Partners." },
@@ -4115,9 +4115,9 @@ holdings: []
     thesis: "Molten Ventures is structurally different from a typical venture firm: it's a publicly listed venture platform, originally founded in 2006 as Esprit Capital and later known as Draper Esprit before its 2021 rebrand. That listed structure means gross portfolio value and net assets are more meaningful than a generic 'AUM' figure, and the firm's liquidity model, secondaries capability, and listed-company disclosure cadence make it closer to a hybrid of venture manager and permanent-capital vehicle than a traditional closed-end fund. The current strategy is clearly thematic - enterprise, deep tech, healthtech, and climate-adjacent industrial technologies - backing founders 'from Series A and beyond,' with UiPath's post-IPO run to a $35.8 billion valuation as its highlighted signature outcome.",
     leadership: [
       { name: "Ben Wilkinson", role: "Chief Executive Officer", profileSlug: "ben-wilkinson" },
-      { name: "Nicola McClafferty", role: "Partner" },
-      { name: "Franco Danesi", role: "Senior Partner" },
-      { name: "Inga Deakin", role: "Partner" }
+      { name: "Nicola McClafferty", role: "Partner", profileSlug: "nicola-mcclafferty" },
+      { name: "Franco Danesi", role: "Senior Partner", profileSlug: "franco-danesi" },
+      { name: "Inga Deakin", role: "Partner", profileSlug: "inga-deakin" }
     ],
     timeline: [
       { year: "2006", event: "Founded as Esprit Capital." },
@@ -4144,8 +4144,8 @@ holdings: []
     aum: "$2.6B",
     thesis: "PeakSpan Capital was founded in 2015 to target what it calls the hardest stage of company building - not the earliest inception risk, but scaling a proven B2B software company from roughly $3 million to $50 million in annual recurring revenue. The firm's own materials emphasize operational support, exit preparedness, and domain specialization across twelve defined categories, from human capital management to next-gen security, rather than broad venture branding. Its inaugural $150 million fund closed in January 2016, followed by a $265 million Fund II in December 2018 and an oversubscribed $567 million Fund III in January 2022 - the same year the firm's exit of ecommerce platform Ecwid, acquired by Lightspeed Commerce for $500 million, became one of its signature outcomes.",
     leadership: [
-   { name: "Phil Dur", role: "Co-Founder & Managing Partner" },
-      { name: "Brian Mulvey", role: "Co-Founder & Managing Partner" },
+   { name: "Phil Dur", role: "Co-Founder & Managing Partner", profileSlug: "phil-dur" },
+      { name: "Brian Mulvey", role: "Co-Founder & Managing Partner", profileSlug: "brian-mulvey" },
       { name: "Matt Melymuka", role: "Co-Founder & Managing Partner", profileSlug: "matt-melymuka" }
     ],
     timeline: [
@@ -4172,8 +4172,8 @@ holdings: []
     thesis: "Inovia Capital was founded in Montreal in 2007 and has built itself into a full-stack venture platform spanning pre-seed through pre-IPO - a stage range wider than most firms attempt, backed up by a Continuity Fund specifically built to keep supporting winners all the way to public markets. Its clearest proof point is Lightspeed Commerce: Inovia was the point-of-sale company's first Canadian investor, helped lead a 2017 buyout to keep it Canadian-owned rather than see a foreign firm force a sale, and stayed in through its 2019 dual listing on the NYSE and TSX. The firm has since grown past $2.5 billion under management across offices in Montreal, Toronto, Calgary, San Francisco, London, and Abu Dhabi.",
     leadership: [
  { name: "Chris Arsenault", role: "Partner & Co-Founder", profileSlug: "chris-arsenault" },
-      { name: "Dennis Kavelman", role: "Partner" },
-      { name: "Patrick Pichette", role: "Partner" }
+      { name: "Dennis Kavelman", role: "Partner", profileSlug: "dennis-kavelman" },
+      { name: "Patrick Pichette", role: "Partner", profileSlug: "patrick-pichette" }
     ],
     timeline: [
       { year: "2007", event: "Chris Arsenault co-founds Inovia Capital in Montreal." },
@@ -4257,8 +4257,8 @@ holdings: []
     thesis: "Union Square Ventures was founded in 2003 by Fred Wilson and Brad Burnham in New York City, built on a deliberately small-fund philosophy - Wilson has said the firm would never raise a large fund, preferring to stay nimble with vehicles typically under $300 million. That discipline hasn't limited its impact: USV was an early believer in network-effect businesses, backing Twitter four months after it launched, Etsy when handmade-goods marketplaces seemed like a niche bet, and Coinbase years before crypto exchanges were taken seriously by mainstream investors.",
     leadership: [
       { name: "Fred Wilson", role: "Co-Founder", profileSlug: "fred-wilson" },
-      { name: "Brad Burnham", role: "Co-Founder" },
-      { name: "Albert Wenger", role: "Managing Partner" }
+      { name: "Brad Burnham", role: "Co-Founder", profileSlug: "brad-burnham" },
+      { name: "Albert Wenger", role: "Managing Partner", profileSlug: "albert-wenger" }
     ],
     timeline: [
       { year: "2003", event: "Fred Wilson and Brad Burnham found Union Square Ventures in New York City." },
@@ -4346,8 +4346,8 @@ holdings: []
     thesis: "Maveron was founded in 1998 by Dan Levitan, a former investment banker who took Starbucks public in 1992, and Howard Schultz, the Starbucks CEO he met on that deal. The firm has stayed unusually disciplined about a single idea ever since: investing only in consumer-facing brands and technology, never enterprise or infrastructure. That focus produced one of the largest single outcomes in Seattle venture history - Levitan led Zulily's roughly $5 million Series A in 2009, and Maveron's 22% stake was worth more than $1 billion when the ecommerce company went public on the Nasdaq in 2013 at a $4.6 billion valuation, alongside the same-year IPO of sandwich chain Potbelly.",
     leadership: [
    { name: "Dan Levitan", role: "Co-Founder & General Partner", profileSlug: "dan-levitan" },
-      { name: "Jason Stoffer", role: "General Partner" },
-      { name: "David Wu", role: "General Partner" }
+      { name: "Jason Stoffer", role: "General Partner", profileSlug: "jason-stoffer" },
+      { name: "David Wu", role: "General Partner", profileSlug: "david-wu" }
     ],
     timeline: [
       { year: "1998", event: "Dan Levitan and Howard Schultz found Maveron in Seattle." },
@@ -4943,7 +4943,7 @@ holdings: []
     leadership: [
       { name: "Niklas Zennström", role: "Founder & CEO", profileSlug: "niklas-zennstrom" },
       { name: "Ben Blume", role: "Partner", profileSlug: "ben-blume" },
-      { name: "Laura Connell", role: "Partner" }
+      { name: "Laura Connell", role: "Partner", profileSlug: "laura-connell" }
     ],
     timeline: [
       { year: "2006", event: "Niklas Zennström founds Atomico in London after co-founding Skype." },
@@ -6578,9 +6578,9 @@ holdings: []
     aum: "$1.5B+ (across five funds)",
     thesis: "Innovation Endeavors was co-founded in 2010 by former Google Chairman and CEO Eric Schmidt and Dror Berman, a former NICE Systems R&D team leader with an MBA from Stanford, building a small, deeply technical early-stage fund investing at the intersection of science and company creation. Berman developed the firm's core 'Super Evolution' thesis - that converging advances in data, computing, and engineering are letting startups re-architect deeply physical industries, from agriculture to space to manufacturing, in years rather than decades - and the firm typically invests $1-15 million, taking active operating roles alongside the companies it backs. That philosophy produced early bets on Uber, SoFi, Planet, Zymergen, Freenome, and Blue River Technologies (later acquired by John Deere), and Innovation Endeavors has invested in 115 companies with 34 exits over 14 years, closing its fifth fund at $630 million in 2024.",
     leadership: [
-      { name: "Eric Schmidt", role: "Co-Founder & Non-Managing Member" },
+      { name: "Eric Schmidt", role: "Co-Founder & Non-Managing Member", profileSlug: "eric-schmidt" },
       { name: "Dror Berman", role: "Founding Partner", profileSlug: "dror-berman" },
-      { name: "Scott Brady", role: "Partner" }
+      { name: "Scott Brady", role: "Partner", profileSlug: "scott-brady" }
     ],
     timeline: [
       { year: "2010", event: "Eric Schmidt, Dror Berman, Scott Brady, and Rick Scanlon found Innovation Endeavors in Palo Alto." },
@@ -6605,9 +6605,9 @@ holdings: []
     aum: "€2B+ (~$2.2B)",
     thesis: "Earlybird Venture Capital was founded in Hamburg in 1997 by Christian Nagel, Hendrik Brandis, Roland Manger, and Rolf Mathies, making it one of Europe's oldest continuously operating venture capital firms, having weathered the dot-com crash, the 2008 financial crisis, and multiple subsequent market cycles. The firm now operates a genuinely multi-fund structure - Digital West, Digital East (covering Turkey and Central/Eastern Europe), and a dedicated Health fund - giving it deliberately broad geographic and sector reach across fintech, deep tech, healthcare, and industrial technology from seed through growth stage. That 25-plus-year track record has produced deep ties to the German Mittelstand, real visibility into enterprise software and industrial tech spinouts from the DACH region, and a portfolio spanning N26, UiPath, Delivery Hero, TeamViewer, and Isar Aerospace, with more than €2 billion under management.",
     leadership: [
-      { name: "Christian Nagel", role: "Co-Founder & General Partner" },
+      { name: "Christian Nagel", role: "Co-Founder & General Partner", profileSlug: "christian-nagel" },
       { name: "Hendrik Brandis", role: "Co-Founder & General Partner", profileSlug: "hendrik-brandis" },
-      { name: "Andre Retterath", role: "General Partner" }
+      { name: "Andre Retterath", role: "General Partner", profileSlug: "andre-retterath" }
     ],
     timeline: [
       { year: "1997", event: "Christian Nagel, Hendrik Brandis, Roland Manger, and Rolf Mathies found Earlybird in Hamburg." },
@@ -6656,7 +6656,7 @@ holdings: []
     thesis: "Antler was founded in Singapore in 2017 by Magnus Grimeland and Fridtjof Berge, both alumni of Zalora, the Southeast Asian fashion e-commerce platform that became an unlikely training ground for founders including Gojek's Kevin Aluwi and Nadiem Makarim. Antler's defining innovation is its 'Day Zero' model: rather than investing in existing startups, the firm runs structured residency programs that back exceptional individuals before they even have a co-founder, team, or product, providing up to $400,000 in initial capital alongside a global mentor network. That radically early, high-volume approach - drawing more than 120,000 annual applications for roughly 2,000 residency spots across 27 countries - has made Antler the world's most active early-stage venture firm by deal volume, topping PitchBook's Global League Table with 443 deals in 2024. The firm has backed more than 1,800 startups since inception, including unicorns Airalo and Lovable, and manages approximately $1 billion including its $285 million Antler Elevate growth fund for follow-on rounds.",
     leadership: [
       { name: "Magnus Grimeland", role: "Founder & CEO", profileSlug: "magnus-grimeland" },
-      { name: "Fridtjof Berge", role: "Co-Founder & Chief Business Officer" }
+      { name: "Fridtjof Berge", role: "Co-Founder & Chief Business Officer", profileSlug: "fridtjof-berge" }
     ],
     timeline: [
       { year: "2017", event: "Magnus Grimeland and Fridtjof Berge found Antler in Singapore." },
@@ -6679,9 +6679,9 @@ holdings: []
     aum: "$1.25B (latest funds)",
     thesis: "Trinity Ventures was founded in 1986 by Noel Fenton, who'd already served as CEO of two venture-backed companies (Covalent Systems and Acurex) before turning to investing, building a firm around close, hands-on partnership with entrepreneurs. That founder-first philosophy deepened further in 2006 when Ajay Chopra joined as General Partner - having grown Pinnacle Systems literally from his living room into a multibillion-dollar, Emmy award-winning public company - giving Trinity a genuinely rare combination of operating scar tissue and investing discipline. The firm has deliberately maintained a low capital-to-partner ratio across nearly four decades, backing early-stage innovators in cloud, SaaS, fintech, and consumer internet through public listings including LoopNet, New Relic, and Zulily, and now manages approximately $1.25 billion across its most recent funds.",
     leadership: [
-      { name: "Noel Fenton", role: "Founding Partner" },
+      { name: "Noel Fenton", role: "Founding Partner", profileSlug: "noel-fenton" },
       { name: "Ajay Chopra", role: "General Partner", profileSlug: "ajay-chopra" },
-      { name: "Patricia Nakache", role: "General Partner" }
+      { name: "Patricia Nakache", role: "General Partner", profileSlug: "patricia-nakache" }
     ],
     timeline: [
       { year: "1986", event: "Noel Fenton founds Trinity Ventures in Menlo Park." },
@@ -6706,8 +6706,8 @@ holdings: []
     thesis: "Shasta Ventures was founded in 2004 by Rob Coneybeer, Tod Francis, and Ravi Mohan, joined the following year by Jason Pressman, built around a specific conviction that early-stage ventures benefit from experienced, genuinely hands-on partners rather than passive capital. The firm's early focus on consumer technology (backing Mint.com as what one founding partner called a 'classic Shasta' bet) expanded significantly after Coneybeer's aerospace engineering background led him to declare a major bet on hardware in 2013, arguing that Moore's Law-style improvements were unlocking entirely new categories of physical products. That conviction produced Shasta's defining outcome: Nest Labs, acquired by Google for $3.2 billion in 2014, a roughly 20x return that essentially repaid the firm's entire second fund on its own. Shasta has since built structured founder-support programs like Shasta Elevate and Ignite, backing more than 100 companies across enterprise SaaS, cybersecurity, hardware, and consumer technology, with approximately $1.3 billion under management.",
     leadership: [
       { name: "Rob Coneybeer", role: "Co-Founder & Managing Director", profileSlug: "rob-coneybeer" },
-      { name: "Tod Francis", role: "Co-Founder & Managing Director" },
-      { name: "Jason Pressman", role: "Managing Director" }
+      { name: "Tod Francis", role: "Co-Founder & Managing Director", profileSlug: "tod-francis" },
+      { name: "Jason Pressman", role: "Managing Director", profileSlug: "jason-pressman" }
     ],
     timeline: [
       { year: "2004", event: "Rob Coneybeer, Tod Francis, and Ravi Mohan found Shasta Ventures in Menlo Park." },
