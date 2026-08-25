@@ -6116,5 +6116,603 @@ sources: [
       { label: "ARCH Venture Partners Team", url: "https://www.archventure.com/team/robert-nelsen/" },
       { label: "Forbes Profile", url: "https://www.forbes.com/profile/robert-nelsen/" }
     ]
+  },
+"eduardo-saverin": {
+    name: "Eduardo Saverin",
+    firm: "B Capital Group",
+    firmSlug: "b-capital-group",
+    title: "Co-Founder & Co-CEO",
+    joinedYear: 2015,
+    education: ["Harvard University"],
+    previousExperience: [
+      "Co-Founder, Facebook"
+    ],
+    investmentFocus: ["Southeast Asia & India", "Enterprise Software", "Fintech", "Cross-Border Technology"],
+    notableInvestments: [
+      { name: "Ninja Van", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2004", event: "Co-founds Facebook while a student at Harvard University." },
+      { year: "2012", event: "Meets Raj Ganguly in Singapore through mutual Harvard connections." },
+      { year: "2015", event: "Co-founds B Capital Group with Raj Ganguly and Howard Morgan." },
+      { year: "2016", event: "B Capital raises more than $143.6 million in its first fund, after already backing Ninja Van and Evidation Health." }
+    ],
+    biography: "Eduardo Saverin's public identity is inseparable from Facebook, which he co-founded as a Harvard student in 2004, but his second act at B Capital Group has been built around a distinctly different bet: that the next generation of transformative technology companies would emerge from cross-border, multinational markets rather than Silicon Valley alone. He met co-founder Raj Ganguly in Singapore in 2012 through mutual Harvard acquaintances, and the two built B Capital in 2015 with that international lens baked in from day one - Saverin, based in Singapore, has focused especially on investments across Southeast Asia and India, while Ganguly has overseen more of the firm's day-to-day operations from Los Angeles.",
+    sources: [
+      { label: "B Capital About", url: "https://b.capital/about/" },
+      { label: "Wikipedia - B Capital", url: "https://en.wikipedia.org/wiki/B_Capital" }
+    ]
+  },
+"garry-tan": {
+    name: "Garry Tan",
+    firm: "Y Combinator",
+    firmSlug: "y-combinator",
+    title: "President & CEO",
+    joinedYear: 2011,
+    education: ["BS, Computer Systems Engineering, Stanford University"],
+    previousExperience: [
+      "Early Designer & Engineering Manager, Palantir Technologies",
+      "Co-Founder, Posterous (YC S08, acquired by Twitter)",
+      "Partner, Y Combinator (2011-2015)",
+      "Co-Founder, Initialized Capital"
+    ],
+    investmentFocus: ["AI", "Developer Tools", "Consumer", "Founder-Led Company Building"],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
+    notableInvestments: [
+    /*
+       Enriched 2026-08-24, 25-partner quality gate. Coinbase: his own
+       Initialized post records the 2012 first seed check he wrote; orgAtTime
+       keeps it at Initialized, not Y Combinator where he now works. */
+    { name: "Coinbase", ticker: "COIN", stage: "Seed", year: 2012, yearPrecision: "year",
+      orgAtTime: "initialized-capital",
+      evidence: [{ url: "https://blog.initialized.com/2021/04/lessons-from-coinbase-my-2-billion-success/", type: "firm-announcement", checked: "2026-08-23" }] },
+    { name: "Instacart", ticker: "CART" },
+    { name: "DoorDash", ticker: "DASH" }
+  ],
+    boardSeats: [],
+    ipoCount: 3,
+    majorExits: 1,
+    careerTimeline: [
+      { year: "2005", event: "Founds and later sells Posterous, a blogging platform acquired by Twitter, through YC's Summer 2008 batch." },
+      { year: "2011", event: "Joins Y Combinator as a partner, building key parts of the founder experience including Bookface and the Demo Day website." },
+      { year: "2011", event: "Co-founds Initialized Capital, which he grows into a firm managing more than $3.2 billion in assets." },
+      { year: "2023", event: "Becomes President and CEO of Y Combinator in January, succeeding Geoff Ralston." }
+    ],
+    biography: "Garry Tan brings a genuinely rare builder-to-investor-to-CEO path to Y Combinator's top job. After early engineering and design work at Palantir - where he designed the company's logo - he co-founded Posterous, a blogging platform that sold to Twitter through YC's own Summer 2008 batch, then became a YC partner himself from 2011 to 2015, building foundational pieces of the founder experience like Bookface. In parallel he co-founded Initialized Capital, growing it into a firm managing more than $3.2 billion before returning to YC as President and CEO in January 2023. He remains one of the most publicly visible leaders in venture capital, maintaining a large YouTube following, continuing to write code and build YC's internal tools himself, and pushing the organization hard into AI-first investing during his tenure.",
+    sources: [
+      { label: "Y Combinator People", url: "https://www.ycombinator.com/people" },
+      { label: "TechCrunch", url: "https://techcrunch.com/?p=2383301" }
+    ]
+  },
+"hernan-kazah": {
+    name: "Hernán Kazah",
+    firm: "Kaszek Ventures",
+    firmSlug: "kaszek-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2011,
+    education: [],
+    previousExperience: [
+      "Finance Analyst, United Nations Development Program",
+      "Finance Analyst, Ministry of Economy of Argentina",
+      "Brand Manager, Procter & Gamble",
+      "Co-Founder & COO/CFO, MercadoLibre (12 years)"
+    ],
+    investmentFocus: ["Fintech", "Marketplaces", "Ecommerce", "Latin America"],
+    notableInvestments: [
+      { name: "Nubank", ticker: "NU" },
+      { name: "QuintoAndar", ticker: null },
+      { name: "Kavak", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 1,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "1999", event: "Co-founds MercadoLibre, Latin America's largest ecommerce and fintech company, from scratch." },
+      { year: "2007", event: "Serves as COO as MercadoLibre completes its Nasdaq IPO." },
+      { year: "2011", event: "Leaves MercadoLibre with Nicolás Szekasy to found Kaszek Ventures." },
+      { year: "2021", event: "Nubank, one of Kaszek's earliest fintech bets, goes public on the NYSE." }
+    ],
+    biography: "Hernán Kazah spent 12 years building MercadoLibre from scratch as a co-founder and COO before its 2007 Nasdaq IPO, giving him a genuinely rare credential when he and Nicolás Szekasy founded Kaszek Ventures in 2011: he'd already built the exact kind of category-defining Latin American technology company he was now trying to back in others. That operating experience shaped Kaszek's founder-first approach from day one - offering hands-on strategic guidance and local network access, not just capital, at a time when institutional venture capital had largely written off the region. His early conviction in Nubank, when it was still just founder David Vélez and a slide deck, became one of the clearest validations of that thesis once the Brazilian neobank went public in 2021.",
+    sources: [
+      { label: "AS/COA", url: "https://www.as-coa.org/speakers/hernan-kazah" },
+      { label: "Americas Quarterly", url: "https://www.americasquarterly.org/article/still-betting-big-argentine-venture-capitalists-hernan-kazah-and-nicolas-szekasy/" }
+    ]
+  },
+"maha-ibrahim": {
+    name: "Maha Ibrahim",
+    firm: "Canaan Partners",
+    firmSlug: "canaan-partners",
+    title: "General Partner",
+    joinedYear: 2000,
+    education: ["BA, Economics, Stanford University", "MA, Sociology, Stanford University", "PhD, Economics, MIT"],
+    previousExperience: [
+      "Vice President of Business Development & Internet Operations, Qwest",
+      "Consultant, Boston Consulting Group",
+      "Management Consultant, PricewaterhouseCoopers"
+    ],
+    investmentFocus: ["Ecommerce", "Enterprise & Cloud", "Social Gaming"],
+    notableInvestments: [
+      { name: "The RealReal", ticker: "REAL" }
+    ],
+    boardSeats: ["The RealReal"],
+    ipoCount: 1,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2000", event: "Joins Canaan Partners as General Partner after roles at Qwest, Boston Consulting Group, and PricewaterhouseCoopers." },
+      { year: "2011", event: "Becomes the first investor in The RealReal, sitting on the company's board." },
+      { year: "2018", event: "Co-founds All Raise, the nonprofit focused on diversity in venture capital." },
+      { year: "2019", event: "The RealReal goes public on the Nasdaq." }
+    ],
+    biography: "Maha Ibrahim has spent more than two decades at Canaan Partners, joining as a General Partner in 2000 after a career spanning Qwest, Boston Consulting Group, and PricewaterhouseCoopers, and building a reputation for spotting technology trends early - she was among the first investors to recognize the potential of social gaming. Her clearest and most personal proof point is The RealReal: she was the company's first investor, stayed on its board through years of growth, and remained through its 2019 Nasdaq IPO. She's also a founding member of All Raise, the nonprofit dedicated to increasing the number of women in venture capital and startup leadership, reflecting a career-long focus on funding and elevating female entrepreneurs.",
+    sources: [
+      { label: "Canaan - Maha Ibrahim", url: "https://www.canaan.com/team/maha-ibrahim" }
+    ]
+  },
+"sean-osullivan": {
+    name: "Sean O'Sullivan",
+    firm: "SOSV",
+    firmSlug: "sosv",
+    title: "Founder & Managing General Partner",
+    joinedYear: 1995,
+    education: [],
+    previousExperience: [
+      "Founder, MapInfo (street mapping technology, IPO 1994)",
+      "Founder, Carma Technology"
+    ],
+    investmentFocus: ["Deep Tech", "Hardware", "Biotech", "Climate"],
+    notableInvestments: [
+      { name: "Formlabs", ticker: null },
+      { name: "BitMEX", ticker: null },
+      { name: "Memphis Meats", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 1,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "1985", event: "Founds MapInfo, inventing street mapping technology for personal computers." },
+      { year: "1994", event: "MapInfo goes public." },
+      { year: "1995", event: "Founds SOSV as a personal 'super angel' investment vehicle." },
+      { year: "2009", event: "Launches Chinaccelerator, the first software accelerator in China." },
+      { year: "2012", event: "Co-founds HAX with Cyril Ebersweiler, SOSV's hardware-focused accelerator." },
+      { year: "2020", event: "SOSV ranks as the world's most active seed and early-stage investor in Q2, per Crunchbase data." }
+    ],
+    biography: "Sean O'Sullivan founded MapInfo in 1985, inventing street mapping technology for personal computers and taking the company public in 1994 - the exit that funded his second act as an investor. He founded SOSV in 1995 initially as a personal 'super angel' vehicle, investing his own money into two dozen companies before beginning to institutionalize the firm in 2007. His defining insight was that hardware and biotech founders couldn't be served by the same software-centric accelerator model that worked for internet startups, which led him to co-found HAX in 2012 and launch IndieBio in 2014 - vertical accelerators with genuine lab and fabrication infrastructure built in-house. That model made SOSV, by his own account, the world's most active investor across the US, Asia, and Europe combined in Q2 2020, a distinction few generalist venture firms could match.",
+    sources: [
+      { label: "SOSV - Sean O'Sullivan", url: "https://sosv.com/team/sean-osullivan/" },
+      { label: "Asia Tech Daily", url: "https://asiatechdaily.com/sean-osullivan-founder-and-managing-partner-of-sosv/" }
+    ]
+  },
+"jay-hoag": {
+    name: "Jay Hoag",
+    firm: "TCV",
+    firmSlug: "tcv",
+    title: "Founding General Partner",
+    joinedYear: 1995,
+    education: [],
+    previousExperience: [
+      "Managing Director, Chancellor Capital Management (12+ years)"
+    ],
+    investmentFocus: ["Consumer Internet", "Streaming & Media", "Crossover Investing"],
+    notableInvestments: [
+      { name: "Netflix", ticker: "NFLX" },
+      { name: "Facebook", ticker: "META" },
+      { name: "Zillow", ticker: null }
+    ],
+    boardSeats: ["Netflix (Chairman)", "Zillow"],
+    ipoCount: 6,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "1995", event: "Co-founds Technology Crossover Ventures with Rick Kimball after 12+ years at Chancellor Capital Management." },
+      { year: "1999", event: "Joins Netflix's board of directors." },
+      { year: "2002", event: "Netflix goes public on the Nasdaq, with TCV owning roughly 43% pre-IPO." },
+      { year: "2012", event: "Personally leads TCV's $260 million investment in Facebook ahead of its IPO." },
+      { year: "2026", event: "Continues to serve as Chairman of Netflix's board, more than 25 years after joining." }
+    ],
+    biography: "Jay Hoag has been a technology investor for more than 40 years, spending 12 years as a Managing Director at Chancellor Capital Management before co-founding Technology Crossover Ventures with Rick Kimball in 1995 - inventing the 'crossover' model of investing in both private and public technology companies from a single fund. His defining relationship is with Netflix: he joined the company's board in 1999, back when TCV owned roughly 43% of the pre-IPO company, and has stayed on as Chairman through Netflix's growth into a company worth more than $400 billion. He personally led TCV's $260 million investment in Facebook ahead of its 2012 IPO, doubling the position within months, and continues to chair TCV's Investment Committee more than three decades after founding the firm.",
+    sources: [
+      { label: "TCV - Jay Hoag", url: "https://www.tcv.com/team/jay-hoag" },
+      { label: "Forbes Profile", url: "https://www.forbes.com/profile/jay-hoag/" }
+    ]
+  },
+"nenad-marovac": {
+    name: "Nenad Marovac",
+    firm: "DN Capital",
+    firmSlug: "dn-capital",
+    title: "Founder & Managing Partner",
+    joinedYear: 2000,
+    education: ["BSc, Business Administration (cum laude, Distinction in Finance), San Diego State University", "MBA, Harvard Business School"],
+    previousExperience: [
+      "Financial Analyst, Leveraged Buyout Group, Bankers Trust",
+      "Advisor, Treuhandanstalt (East German privatization)",
+      "Partner, Advent International (London, TMT investments)"
+    ],
+    investmentFocus: ["Digital Marketplaces", "SaaS", "Fintech", "Consumer Internet"],
+    notableInvestments: [
+      { name: "AUTO1 Group", ticker: "AG1.DE" },
+      { name: "Shazam", ticker: null },
+      { name: "GoStudent", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 4,
+    majorExits: 5,
+    careerTimeline: [
+      { year: "1991", event: "Moves to Berlin, advising the Treuhandanstalt on privatizing East German state assets during reunification." },
+      { year: "2000", event: "Co-founds DN Capital with Harvard Business School classmate Steve Schlenker after a partnership at Advent International." },
+      { year: "2014", event: "Shazam, one of his select investments, is sold to Apple." },
+      { year: "2018", event: "Becomes Chairman of Invest Europe (formerly EVCA) for 2018/2019." },
+      { year: "2021", event: "AUTO1 Group goes public on the Frankfurt Stock Exchange at approximately €7.9 billion, Germany's largest tech IPO at the time." }
+    ],
+    biography: "Nenad Marovac's path to founding DN Capital ran through post-reunification Berlin, where he advised the Treuhandanstalt on privatizing East German state assets in the early 1990s - an experience that gave him deep, early relationships across Germany's business community, years before DACH became a fashionable venture destination. After a Harvard MBA and a partnership at Advent International, he co-founded DN Capital in 2000 with his Harvard classmate Steve Schlenker, and that German foothold compounded over two decades into a portfolio anchored by category leaders like AUTO1 Group, HomeToGo, and Mister Spex - all of which went public on the Frankfurt Stock Exchange in 2021. AUTO1's roughly €7.9 billion debut, Germany's largest tech IPO at the time, let DN Capital exit 95% of its stake, and Marovac has twice been named to the Forbes Midas List Europe for that track record.",
+    sources: [
+      { label: "DN Capital - Nenad Marovac", url: "https://www.dncapital.com/nenad" },
+      { label: "The Marque", url: "https://www.themarque.com/profile/nenad-marovac" }
+    ]
+  },
+"roy-bahat": {
+    name: "Roy Bahat",
+    firm: "Bloomberg Beta",
+    firmSlug: "bloomberg-beta",
+    title: "Head & Partner",
+    joinedYear: 2013,
+    education: ["Harvard College (Rhodes Scholar)"],
+    previousExperience: [
+      "President, IGN Entertainment (5 years)",
+      "Chairman, OUYA",
+      "Board Member, Revision3 (through its acquisition by Discovery)",
+      "Board Member, Flixster (through its purchase by Warner Bros.)"
+    ],
+    investmentFocus: ["Machine Intelligence", "Future of Work", "Enterprise Software"],
+    notableInvestments: [
+      { name: "Replit", ticker: null },
+      { name: "Flexport", ticker: null },
+      { name: "MasterClass", ticker: null },
+      { name: "Weights & Biases", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2000s", event: "Leads IGN Entertainment for five years as its president, prior to Bloomberg Beta." },
+      { year: "2012", event: "Becomes chairman of OUYA, the Kickstarter-backed game console startup." },
+      { year: "2013", event: "Launches Bloomberg Beta with an initial $75 million fund from Bloomberg L.P." },
+      { year: "2022", event: "Bloomberg Beta closes its fourth fund and first opportunity fund, both at $75 million." }
+    ],
+    biography: "Roy Bahat came to venture capital from media and gaming operations, not finance - a Harvard-educated Rhodes Scholar who spent five years running IGN Entertainment before chairing OUYA, the crowdfunded game console startup. He launched Bloomberg Beta in 2013 with a distinctly unconventional structure for a corporate-backed fund: full transparency, with the firm's entire operating manual published openly on GitHub, and a flat decision-making model where any of the firm's three partners can independently approve a deal. Bahat has been explicit that he measures success less by raw financial return and more by founder outcomes - he cites 93 founders who've become millionaires from Bloomberg Beta's backing as his proudest metric - and under his leadership the firm has grown from a single $75 million fund to $450 million while staying capitalized entirely by Bloomberg L.P.",
+    sources: [
+      { label: "Bloomberg Beta", url: "https://www.bloombergbeta.com" },
+      { label: "Newcomer", url: "https://www.newcomer.co/p/my-conversation-with-roy-bahat-as" }
+    ]
+  },
+"allison-goldberg": {
+    name: "Allison Goldberg",
+    firm: "Comcast Ventures",
+    firmSlug: "comcast-ventures",
+    title: "Managing Partner",
+    joinedYear: 2021,
+    education: [],
+    previousExperience: [
+      "Group Managing Director & SVP, Time Warner Investments"
+    ],
+    investmentFocus: ["Consumer Internet", "Enterprise Software", "Media & Advertising Technology"],
+    notableInvestments: [],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2021", event: "Joins Comcast Ventures as Managing Partner in November, after running Time Warner Investments, where she oversaw checks of up to $25 million into private companies." }
+    ],
+    biography: "Allison Goldberg took over as Managing Partner of Comcast Ventures in November 2021, arriving from Time Warner Investments, where she ran the group responsible for checks of up to $25 million into private companies for both strategic and financial return. That background in balancing corporate strategic value with genuine financial investing discipline is central to how she now runs Comcast Ventures - a firm whose entire premise depends on generating real returns while giving portfolio companies genuine access to one of the largest media and telecom platforms in the world.",
+    sources: [
+      { label: "Comcast Ventures Team", url: "https://comcastventures.com/team/" },
+      { label: "Wikipedia - Comcast Ventures", url: "https://en.wikipedia.org/wiki/Comcast_Ventures" }
+    ]
+  },
+"saemin-ahn": {
+    name: "Saemin Ahn",
+    firm: "Rakuten Capital",
+    firmSlug: "rakuten-capital",
+    title: "Founding & Managing Partner",
+    joinedYear: 2013,
+    education: [],
+    previousExperience: [],
+    investmentFocus: ["Machine Learning & AI", "New Energy", "Robotics", "Aerospace", "Mobility"],
+    notableInvestments: [
+      { name: "Lyft", ticker: "LYFT" }
+    ],
+    boardSeats: [],
+    ipoCount: 1,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2013", event: "Founds Rakuten Ventures, later Rakuten Capital." },
+      { year: "2015", event: "Leads Rakuten's $300 million investment in Lyft's Series E, part of a $530 million round." },
+      { year: "2019", event: "Lyft goes public on the Nasdaq." }
+    ],
+    biography: "Saemin Ahn founded Rakuten Ventures - now Rakuten Capital - in 2013, and has run its international investment strategy from Singapore ever since, taking positions across machine learning, new energy, robotics, and aerospace on behalf of one of Japan's largest internet conglomerates. His clearest and boldest move came in 2015, when he led Rakuten's $300 million commitment to Lyft's $530 million Series E, buying an 11.9% stake in the ride-sharing company years before it went public. That willingness to write outsized, conviction-driven checks into American consumer technology - unusual for a Japanese ecommerce company at the time - has defined Rakuten Capital's identity as a genuinely global corporate investor rather than a firm limited to backing Rakuten's own strategic interests.",
+    sources: [
+      { label: "Rakuten Capital", url: "https://capital.rakuten.com/" }
+    ]
+  },
+"jim-adler": {
+    name: "Jim Adler",
+    firm: "Toyota Ventures",
+    firmSlug: "toyota-ventures",
+    title: "Founder & General Partner",
+    joinedYear: 2017,
+    education: [],
+    previousExperience: [
+      "VP of Data & Business Development, Toyota Research Institute",
+      "VP of Products & Marketing, Metanautix (acquired by Microsoft)",
+      "VP of Data Systems & Chief Privacy Officer, Intelius (acquired by H.I.G. Capital)",
+      "Founder, VoteHere (cryptographic secure online voting, funded by Cisco and HP)"
+    ],
+    investmentFocus: ["AI", "Robotics", "Autonomous Mobility", "Climate & Frontier Technology"],
+    notableInvestments: [
+      { name: "Nuro", ticker: null },
+      { name: "May Mobility", ticker: null },
+      { name: "Boxbot", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 2,
+    careerTimeline: [
+      { year: "2016", event: "Joins Toyota Research Institute as VP of Data and Business Development, after founding VoteHere and operating roles at Metanautix and Intelius." },
+      { year: "2017", event: "Founds Toyota AI Ventures in July, launching with an initial $100 million fund." },
+      { year: "2021", event: "Leads the firm's rebrand to Toyota Ventures, launching dedicated Frontier and Climate funds." },
+      { year: "2024", event: "Announces two additional $150 million funds, pushing total AUM above $800 million." }
+    ],
+    biography: "Jim Adler brought a genuinely unusual mix of entrepreneurial, privacy, and data engineering experience to Toyota when he joined Toyota Research Institute in 2016, having previously founded VoteHere, a cryptographic online voting startup funded by Cisco and HP, and held VP roles at Metanautix (acquired by Microsoft) and Intelius (acquired by H.I.G. Capital). What began as work training Toyota's AI systems on driving data turned into a pitch for a dedicated venture fund, and in July 2017 he became founding managing director of Toyota AI Ventures. He's structured the firm from day one around founders as the primary customer rather than Toyota itself - an intentional choice, he's said, to keep the firm credible with entrepreneurs rather than behaving like a typical strategic investor. Under his leadership Toyota Ventures rebranded in 2021, expanded into climate and frontier technology, and grew assets under management past $800 million by 2024.",
+    sources: [
+      { label: "Toyota Ventures", url: "https://toyota.ventures/" },
+      { label: "Global Venturing Powerlist 2025", url: "https://globalventuring.com/corporate/awards/powerlist-2025-jim-adler/" }
+    ]
+  },
+"ben-davey": {
+    name: "Ben Davey",
+    firm: "Barclays UK Ventures",
+    firmSlug: "barclays-uk-ventures",
+    title: "CEO",
+    joinedYear: 2019,
+    education: [],
+    previousExperience: [
+      "Group Head of Strategy, Barclays",
+      "Mergers & Acquisitions specialist"
+    ],
+    investmentFocus: ["Fintech", "Internal Venture Building", "Digital Banking Infrastructure"],
+    notableInvestments: [],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2019", event: "Becomes CEO of Barclays UK Ventures, after serving as Barclays' Group Head of Strategy." }
+    ],
+    biography: "Ben Davey moved from mergers and acquisitions into Barclays' internal strategy function before taking the CEO role at Barclays UK Ventures, and his approach reflects that dealmaking background applied to venture building rather than pure corporate investing. He's described the unit's model explicitly as trying to replicate a startup mentality inside a large bank - a multidisciplinary team where developers, data scientists, and M&A professionals work alongside each other, with roughly half the team holding direct investment experience and 15 founders or co-founders on staff. Under his leadership, the unit explores new business models through a mix of organic build-out, commercial partnerships, and venture investments, rather than functioning as a conventional corporate VC writing checks into companies it never actively builds.",
+    sources: [
+      { label: "Barclays - Barclays UK Ventures", url: "https://home.barclays/news/2019/2/barclays-uk-ventures--developing-business-models-for-the-future-/" }
+    ]
+  },
+"sudhir-sethi": {
+    name: "Sudhir Sethi",
+    firm: "Chiratae Ventures",
+    firmSlug: "chiratae-ventures",
+    title: "Founder & Chairman",
+    joinedYear: 2006,
+    education: ["Engineering degree, Electronics & Telecommunications", "MBA, Faculty of Management Studies, University of Delhi"],
+    previousExperience: [
+      "12 years at Wipro before moving into venture capital"
+    ],
+    investmentFocus: ["Consumer Internet", "Deep Tech", "Fintech", "Enterprise Software", "Healthcare"],
+    notableInvestments: [
+      { name: "Flipkart", ticker: null },
+      { name: "Lenskart", ticker: null },
+      { name: "PolicyBazaar", ticker: null },
+      { name: "FirstCry", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 5,
+    majorExits: 18,
+    careerTimeline: [
+      { year: "1994", event: "Leaves Wipro after 12 years to move into venture capital." },
+      { year: "2001", event: "Recognized by Red Herring as one of India's leading venture capitalists." },
+      { year: "2006", event: "Founds IDG Ventures India with TC Meenakshisundaram." },
+      { year: "2007", event: "Backs Flipkart at an early stage." },
+      { year: "2018", event: "Leads the firm's rebrand from IDG Ventures India to Chiratae Ventures after IDG's global dissolution." },
+      { year: "2021", event: "PolicyBazaar goes public, one of five IPOs Chiratae has backed." }
+    ],
+    biography: "Sudhir Sethi spent 12 years at Wipro before venture capital pulled him away from routine corporate life, and he founded what became Chiratae Ventures in 2006 with TC Meenakshisundaram, initially as the Indian arm of IDG Ventures. The defining test of his leadership came when IDG dissolved as a global conglomerate mid-way through the firm's second fundraise - rather than fold, Sethi rebuilt the firm entirely around domestic Indian capital, betting that local investors would back Indian entrepreneurs with more conviction than foreign LPs ever could. That bet built one of India's most consequential venture portfolios: early stakes in Flipkart, Myntra, Lenskart, and PolicyBazaar, five portfolio IPOs, and $1.3 billion under management across seven funds. Sethi sits on Chiratae's Global Advisory Board alongside Ratan Tata and continues to serve on India's National Venture Capital Association executive committee.",
+    sources: [
+      { label: "Chiratae Ventures Team", url: "https://www.chiratae.com/team/" },
+      { label: "Wikipedia - Chiratae Ventures", url: "https://en.wikipedia.org/wiki/Chiratae_Ventures" }
+    ]
+  },
+"richard-liu-5y": {
+    name: "Richard Liu",
+    firm: "5Y Capital",
+    firmSlug: "5y-capital",
+    title: "Founding Partner",
+    joinedYear: 2008,
+    education: ["China Europe International Business School"],
+    previousExperience: [
+      "Investment Professional, Morningside Group"
+    ],
+    investmentFocus: ["Information Technology", "Biotechnology", "Consumer", "Electric Vehicles"],
+    notableInvestments: [
+      { name: "Xiaomi", ticker: "1810.HK" },
+      { name: "XPeng", ticker: "XPEV" },
+      { name: "Kingsoft", ticker: null },
+      { name: "Horizon Robotics", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 4,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "1999", event: "Joins the Morningside Group after attending China Europe International Business School." },
+      { year: "2008", event: "Co-founds Morningside Venture Capital, later 5Y Capital, with Ken Shi." },
+      { year: "2018", event: "Xiaomi, where he was the first institutional investor, goes public in Hong Kong at a roughly 800x return." },
+      { year: "2026", event: "Named to the Forbes Midas List for the eleventh consecutive year, with 5Y Capital managing $6 billion in global capital." }
+    ],
+    biography: "Richard Liu joined the Morningside Group in 1999 after meeting co-founder Ken Shi at business school, and the two spun out their own fund in 2008 under the Morningside name, with the Chan family's blessing and backing as anchor investor. His defining bet came early: Liu was the first institutional investor in Xiaomi, a position that returned a reported 800 times its original investment once the smartphone maker went public in Hong Kong in 2018. He's now spent 11 consecutive years on the Forbes Midas List, with a portfolio spanning information technology, biotechnology, and consumer businesses including Xiaomi, XPeng, Kingsoft, and Horizon Robotics, and 5Y Capital under his leadership now manages $6 billion in global capital.",
+    sources: [
+      { label: "Forbes Profile", url: "https://www.forbes.com/profile/richard-liu/" },
+      { label: "The Wire China", url: "https://www.thewirechina.com/2021/07/18/who-is-5y-capital/" }
+    ]
+  },
+"shinichi-fuki": {
+    name: "Shinichi Fuki",
+    firm: "JAFCO Group",
+    firmSlug: "jafco-group",
+    title: "President & CEO",
+    joinedYear: null,
+    education: [],
+    previousExperience: [],
+    investmentFocus: ["Venture Investment", "Buyout Investment", "AI", "Space Technology"],
+    notableInvestments: [
+      { name: "Mercari", ticker: "4385.T" },
+      { name: "Cybozu", ticker: "4776.T" }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2018", event: "Portfolio company Mercari goes public on the Tokyo Stock Exchange during his tenure leading JAFCO." },
+      { year: "2025", event: "Under his leadership, JAFCO's assets under management reach approximately $6.8 billion, with more than 1,041 cumulative portfolio IPOs." }
+    ],
+    biography: "Shinichi Fuki has led JAFCO Group through more than five decades of the firm's history as President and CEO, overseeing what has become Japan's largest and longest-running independent venture capital institution. Under his leadership, JAFCO has continued to operate its dual venture-and-buyout model, supporting startups from pre-founding stages through IPO while also managing later-stage buyout investments in established small and mid-sized businesses. Fuki has guided the firm through a period of renewed strategic focus on AI, space technology, and nuclear fusion, aligning JAFCO's more recent bets with Japan's broader national technology priorities, while the firm's total capital commitments across domestic and international funds have grown past ¥1 trillion.",
+    sources: [
+      { label: "JAFCO Group", url: "https://www.jafco.co.jp/english/" },
+      { label: "SuperScout", url: "https://superscout.co/investor/jafco-group" }
+    ]
+  },
+"thomas-tsao": {
+    name: "Thomas Tsao",
+    firm: "Gobi Partners",
+    firmSlug: "gobi-partners",
+    title: "Co-Founder & Chairman",
+    joinedYear: 2002,
+    education: ["BA, Economics, Harvard University"],
+    previousExperience: [
+      "Investor, WI Harper",
+      "CEO, DMG (2 years)",
+      "Board Member, Middle East Venture Capital Association"
+    ],
+    investmentFocus: ["Fintech", "Consumer", "Mobility", "TaqwaTech (Muslim Digital Economy)"],
+    notableInvestments: [
+      { name: "Airwallex", ticker: null },
+      { name: "Tuniu", ticker: null },
+      { name: "Carsome", ticker: null },
+      { name: "Prenetics", ticker: "PRE" }
+    ],
+    boardSeats: ["Endeavor Malaysia"],
+    ipoCount: 2,
+    majorExits: 4,
+    careerTimeline: [
+      { year: "2002", event: "Co-founds Gobi Partners with Lawrence Tse and Wai Kit Lau, all previously at WI Harper." },
+      { year: "2006", event: "Founds SEO China, a nonprofit that has since provided more than 200 internships to underserved college students." },
+      { year: "2013", event: "Named to the Forbes List of China's Top VCs, a recognition repeated annually through 2017." },
+      { year: "2015", event: "Relocates to Kuala Lumpur, establishing several funds with Malaysia's MAVCAP." },
+      { year: "2018", event: "Launches Gobi's ASEAN SuperSeed Fund, backing Carsome and Airwallex at early stages." }
+    ],
+    biography: "Thomas Tsao has spent more than 30 years across venture capital, operations, and investment banking, and co-founded Gobi Partners in 2002 with two fellow WI Harper alumni to build one of the earliest genuinely Pan-Asian venture platforms. His early China portfolio includes first-round bets on Airwallex, Teambition (acquired by Alibaba), and Tuniu (Nasdaq IPO), earning him five consecutive years on the Forbes List of China's Top VCs. His 2015 relocation to Kuala Lumpur opened an entirely new chapter for the firm, establishing funds with Malaysia's MAVCAP and expanding Gobi into Southeast Asian companies like Carsome, Funding Societies, and Kumu. He's now building Gobi's TaqwaTech practice, one of the first dedicated venture theses focused on the global Muslim digital economy, and remains active in nonprofit work through SEO China, which he founded in 2006.",
+    sources: [
+      { label: "Gobi Partners Team", url: "https://www.gobi.vc/team/thomas-g-tsao" },
+      { label: "The Org", url: "https://theorg.com/org/gobi-partners/org-chart/thomas-g-tsao" }
+    ]
+  },
+"reshma-sohoni": {
+    name: "Reshma Sohoni",
+    firm: "Seedcamp",
+    firmSlug: "seedcamp",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2007,
+    education: ["BS, Engineering & Business, University of Pennsylvania", "MBA, INSEAD"],
+    previousExperience: [
+      "Vodafone",
+      "Jefferies Broadview"
+    ],
+    investmentFocus: ["Fintech", "SaaS", "AI", "US Expansion for European Founders"],
+    notableInvestments: [
+      { name: "Wise", ticker: "WISE" },
+      { name: "UiPath", ticker: "PATH" },
+      { name: "Revolut", ticker: null },
+      { name: "Synthesia", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 1,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2007", event: "Co-founds Seedcamp with Saul Klein in London, after roles at Vodafone and Jefferies Broadview." },
+      { year: "2019", event: "Leads Seedcamp's first backing of Synthesia in April, years before its $4 billion Series E valuation." },
+      { year: "2021", event: "Awarded an MBE by Queen Elizabeth II for contributions to the British tech ecosystem; UiPath goes public at a $35 billion valuation." },
+      { year: "2025", event: "Returns to the Forbes Midas Seed List for the fourth time." },
+      { year: "2026", event: "Leads Seedcamp's $320 million raise and US expansion in June." }
+    ],
+    biography: "Reshma Sohoni was born in India, raised in the U.S., and studied engineering and business at the University of Pennsylvania before an INSEAD MBA and roles at Vodafone and Jefferies Broadview - a genuinely international path that shaped Seedcamp's identity as a firm built to help European founders think globally from day one. She co-founded the firm with Saul Klein in 2007, and has stayed personally involved with its biggest outcomes ever since: she was Synthesia's first backer in 2019, years before its $4 billion valuation, and Seedcamp's early conviction in Wise, Revolut, and UiPath produced three of Europe's genuine decacorns. She received an MBE from Queen Elizabeth II in 2021 for her contributions to the British tech ecosystem, has advised the U.K. government's Digital Economy Council, and returned to the Forbes Midas Seed List for a fourth time in 2025.",
+    sources: [
+      { label: "Forbes Profile", url: "https://www.forbes.com/profile/reshma-sohoni/" },
+      { label: "Seedcamp Team", url: "https://seedcamp.com/our-team/" }
+    ]
+  },
+"alex-von-frankenberg": {
+    name: "Alex von Frankenberg",
+    firm: "High-Tech Gründerfonds",
+    firmSlug: "high-tech-grunderfonds",
+    title: "Co-Founder & Managing Director",
+    joinedYear: 2005,
+    education: [],
+    previousExperience: [],
+    investmentFocus: ["Deep Tech", "Industrial Tech", "Digital Tech", "Life Sciences"],
+    notableInvestments: [
+      { name: "CureVac", ticker: "CVAC" }
+    ],
+    boardSeats: [],
+    ipoCount: 1,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2005", event: "Co-founds High-Tech Gründerfonds in Bonn, becoming Managing Director." },
+      { year: "2020", event: "Portfolio company CureVac goes public on the Nasdaq during his tenure." },
+      { year: "2026", event: "Continues leading HTGF more than two decades after its founding, with fund volume surpassing €3 billion." }
+    ],
+    biography: "Alex von Frankenberg has led High-Tech Gründerfonds as Managing Director since co-founding it in 2005, running what remains one of the most structurally distinctive venture funds in Europe - a public-private partnership where his investment committee includes not just venture professionals but representatives from the German government, KfW Capital, and corporate limited partners like BASF and Bosch. That hybrid governance model gives HTGF a genuine developmental mandate alongside its commercial one: closing the equity gap for early-stage German technology companies that might otherwise struggle to find seed capital. Under his two-decade leadership, the fund has financed more than 800 startups, achieved nearly 200 exits, and backed CureVac through its 2020 Nasdaq IPO, one of the clearest proof points that patient, mission-driven seed capital can still produce genuinely global outcomes.",
+    sources: [
+      { label: "Altss - HTGF Profile", url: "https://altss.com/profile/high-tech-grunderfonds" },
+      { label: "High-Tech Gründerfonds", url: "https://www.htgf.de" }
+    ]
+  },
+"noubar-afeyan": {
+    name: "Noubar Afeyan",
+    firm: "Flagship Pioneering",
+    firmSlug: "flagship-pioneering",
+    title: "Founder & CEO",
+    joinedYear: 2000,
+    education: ["BS, McGill University", "PhD, Biochemical Engineering, MIT"],
+    previousExperience: [
+      "Founder & CEO, PerSeptive Biosystems (grew to $100M annual revenue, acquired by PerkinElmer/Applera)",
+      "SVP & Chief Business Officer, Applera, overseeing the creation of Celera Genomics",
+      "Founding team member & investor, Chemgenics Pharmaceuticals (acquired by Millennium), Color Kinetics (acquired by Philips), Adnexus Therapeutics (acquired by Bristol-Myers Squibb)"
+    ],
+    investmentFocus: ["Biotechnology", "mRNA Medicine", "Life Sciences", "Company Creation"],
+    notableInvestments: [
+      { name: "Moderna", ticker: "MRNA" },
+      { name: "Rubius Therapeutics", ticker: null }
+    ],
+    boardSeats: ["Moderna (Chairman)"],
+    ipoCount: 1,
+    majorExits: 4,
+    careerTimeline: [
+      { year: "1987", event: "Completes his doctoral work in biochemical engineering at MIT." },
+      { year: "1998", event: "PerSeptive Biosystems, which he founded and grew to $100 million in annual revenue, is acquired by PerkinElmer/Applera." },
+      { year: "2000", event: "Founds Flagship Pioneering in Cambridge." },
+      { year: "2010", event: "Co-founds Moderna within Flagship's internal venture creation process." },
+      { year: "2018", event: "Moderna goes public on the Nasdaq in December." },
+      { year: "2025", event: "Awarded the National Medal of Technology and Innovation." }
+    ],
+    biography: "Noubar Afeyan fled the Lebanese Civil War with his family as a teenager, immigrating first to Canada and then the United States, before completing his PhD in biochemical engineering at MIT in 1987. He founded and built PerSeptive Biosystems to $100 million in annual revenue before its acquisition, then founded Flagship Pioneering in 2000 with an unusual model for venture capital: inventing companies internally rather than only funding outside founders. His best-known creation is Moderna, which he co-founded in 2010 and has chaired ever since - a company whose mRNA platform, developed years before anyone anticipated a pandemic, became central to the world's COVID-19 response. Afeyan has helped launch more than 70 public and private life sciences and technology companies over his career and was awarded the National Medal of Technology and Innovation in 2025.",
+    sources: [
+      { label: "Flagship Pioneering", url: "https://www.flagshippioneering.com/people/noubar-afeyan" },
+      { label: "Wikipedia - Noubar Afeyan", url: "https://en.wikipedia.org/wiki/Noubar_Afeyan" }
+    ]
   }
 });
