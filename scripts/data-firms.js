@@ -1190,8 +1190,8 @@ holdings: []
     thesis: "Gaorong Capital, originally named Banyan Capital, was founded in January 2014 by three former IDG Capital investment professionals - Zhang Zhen, Gao Xiang, and Yue Bin - who left one of China's most established venture firms to build their own platform, part of a broader wave of spinout funds founded by veterans of China's earliest institutional VC generation. That shared IDG pedigree gave the trio genuine credibility and deal-sourcing advantages from day one, and Gaorong has built a strong track record concentrated in Technology, Media, and Telecommunications (TMT), consumer internet, enterprise software, and healthcare, backing companies including Pinduoduo and Kuaishou through to public listings. The firm now manages approximately $4 billion, reflecting the continued strength of China's venture ecosystem despite a more challenging fundraising environment in recent years.",
     leadership: [
       { name: "Zhang Zhen", role: "Co-Founder & Managing Partner", profileSlug: "gaorong-founders" },
-      { name: "Gao Xiang", role: "Co-Founder & Managing Partner" },
-      { name: "Yue Bin", role: "Co-Founder & Managing Partner" }
+      { name: "Gao Xiang", role: "Co-Founder & Managing Partner", profileSlug: "gao-xiang" },
+      { name: "Yue Bin", role: "Co-Founder & Managing Partner", profileSlug: "yue-bin" }
     ],
     timeline: [
       { year: "2014", event: "Zhang Zhen, Gao Xiang, and Yue Bin found Banyan Capital (later Gaorong Capital) in Beijing in January." },
@@ -1216,8 +1216,8 @@ holdings: []
     thesis: "Atlas Venture was founded in 1980 in Amsterdam by Michiel de Haan as a subsidiary of NMB Bank (now ING Group), initially investing across both life sciences and information technology before a pivotal October 2014 decision to become a biotech-only firm, spinning its tech investing team into a new firm called Accomplice. That singular focus has made Atlas one of the most prolific and enduring biotech venture firms in the world, running a genuinely seed-led venture creation model where the firm actively builds companies from the earliest scientific insight rather than simply funding existing teams. Anchored by Partner Bruce Booth, whose LifeSciVC blog has become required reading across the industry, Atlas has invested in more than 150 life sciences startups since 1990 across immuno-oncology, gene and cell therapy, neuroscience, and anti-infectives, producing real outcomes including Akero Therapeutics' $4.7 billion acquisition by Novo Nordisk and Nimbus Therapeutics' $4 billion TYK2 deal with Takeda, with $2.7 billion under management.",
     leadership: [
       { name: "Bruce Booth", role: "Partner", profileSlug: "bruce-booth" },
-      { name: "Jean-Francois Formela", role: "Partner" },
-      { name: "Kevin Bitterman", role: "Partner" }
+      { name: "Jean-Francois Formela", role: "Partner", profileSlug: "jean-francois-formela" },
+      { name: "Kevin Bitterman", role: "Partner", profileSlug: "kevin-bitterman" }
     ],
     timeline: [
       { year: "1980", event: "Michiel de Haan founds Atlas Venture in Amsterdam as a subsidiary of NMB Bank." },
@@ -1417,8 +1417,8 @@ holdings: []
     thesis: "Northern Light Venture Capital was founded on January 1, 2005, by Feng Deng, Yan Ke, and Jeffrey Lee, two of whom had just completed one of the most consequential Chinese-founder exits in Silicon Valley history - NetScreen Technologies, an enterprise security company they co-founded that IPO'd on NASDAQ in 2001 before Juniper Networks acquired it for $4.2 billion in 2004. That operating credibility and cross-Pacific network shaped Northern Light's genuinely dual-market model, dual-headquartered in Menlo Park and Beijing/Shanghai, backing companies that leverage China's industrial and human resources to build lasting global businesses across TMT, clean technology, healthcare, and consumer sectors. The firm's roughly 70% Series A, 20% Series B allocation has produced 13 unicorns, 15 IPOs, and 23 acquisitions across more than 300 portfolio companies, including Meituan's 2018 Hong Kong IPO at a roughly $63 billion valuation, and NLVC now manages more than $4.5 billion.",
     leadership: [
       { name: "Feng Deng", role: "Co-Founder & Managing Partner", profileSlug: "feng-deng" },
-      { name: "Yan Ke", role: "Co-Founder & Managing Partner" },
-      { name: "Jeffrey Lee", role: "Co-Founder & Partner" }
+      { name: "Yan Ke", role: "Co-Founder & Managing Partner", profileSlug: "yan-ke" },
+      { name: "Jeffrey Lee", role: "Co-Founder & Partner", profileSlug: "jeffrey-lee" }
     ],
     timeline: [
       { year: "2005", event: "Feng Deng, Yan Ke, and Jeffrey Lee found Northern Light Venture Capital on January 1." },
@@ -2144,7 +2144,7 @@ holdings: []
     aum: "$3B (across venture and growth funds)",
     thesis: "BDC Capital is the venture and growth-equity arm of the Business Development Bank of Canada, founded in 1953 as Canada's national development bank before building out a dedicated venture capital function. Positioned as Canada's largest and most active early-stage venture capital investor, BDC Capital co-invests alongside angels and private VCs to support homegrown Canadian technology companies across AI, cleantech, and enterprise software, deliberately providing large co-investment checks specifically designed to encourage more private capital into Canadian deals rather than crowding it out. That patient, government-backed capital model has supported Canadian technology companies for three decades, including Lightspeed Commerce, Coveo, and Borrowell, and BDC Capital now deploys approximately $3 billion across its venture and growth equity funds.",
     leadership: [
-      { name: "Michael Denham", role: "CEO, BDC" }
+      { name: "Michael Denham", role: "CEO, BDC", profileSlug: "michael-denham" }
     ],
     timeline: [
       { year: "1953", event: "The Business Development Bank of Canada is founded." },
@@ -2168,8 +2168,8 @@ holdings: []
     thesis: "SignalFire was founded in 2013 by Chris Farmer and Ilya Kirnos, built from the ground up on a genuinely unconventional premise: run a venture firm the way a technology company builds a product, with an in-house engineering and data science team holding equal standing to investing partners rather than working in the background. That philosophy produced Beacon AI, a proprietary machine learning platform tracking more than 650 million people and 80 million organizations that has been refined in-house for more than a decade, giving SignalFire differentiated visibility into talent movement and market trends ahead of consensus. Farmer personally bootstrapped the model in its early days, running corporate advisory projects just to cover AWS bills that exceeded the first fund's management fees, and the firm has since become one of the most prominent applied-AI-focused early-stage investors, closing over $1 billion in new capital in a single April 2025 raise to reach approximately $3 billion in AUM.",
     leadership: [
       { name: "Chris Farmer", role: "Founder & CEO", profileSlug: "chris-farmer" },
-      { name: "Ilya Kirnos", role: "Founding Partner & CTO" },
-      { name: "Wayne Hu", role: "Partner" }
+      { name: "Ilya Kirnos", role: "Founding Partner & CTO", profileSlug: "ilya-kirnos" },
+      { name: "Wayne Hu", role: "Partner", profileSlug: "wayne-hu" }
     ],
     timeline: [
       { year: "2013", event: "Chris Farmer and Ilya Kirnos found SignalFire in San Francisco." },
@@ -2192,7 +2192,7 @@ holdings: []
     thesis: "Sinovation Ventures was founded as Innovation Works in September 2009 by Kai-Fu Lee, days after he resigned as President of Google Greater China, bringing an unmatched technical and cross-cultural pedigree spanning speech recognition research at Apple, founding Microsoft Research China, and leading Google's China operations. That background shaped a deliberately hands-on, incubator-like investment model - Sinovation offers portfolio companies deep support in UI/UX design, product development, recruiting, and government relations, not just capital - concentrated specifically on AI, robotics, and deep tech startups years before those categories became mainstream. The firm was one of the first Chinese venture firms to establish a genuine US presence, and now manages $3 billion in dual-currency funds across more than 400 portfolio companies, with Lee continuing to serve as one of the most recognized public voices in global AI discourse.",
     leadership: [
       { name: "Kai-Fu Lee", role: "Chairman & CEO", profileSlug: "kai-fu-lee" },
-      { name: "Hua Wang", role: "Co-Founder" }
+      { name: "Hua Wang", role: "Co-Founder", profileSlug: "hua-wang" }
     ],
     timeline: [
       { year: "2009", event: "Kai-Fu Lee and Hua Wang found Innovation Works in Beijing, days after Lee's Google resignation, with a $115 million debut fund." },
@@ -2215,9 +2215,9 @@ holdings: []
     aum: "$3B+ (across all funds)",
     thesis: "Greycroft was founded in 2006 by Alan Patricof - a venture capital pioneer who'd founded the predecessor to Apax Partners decades earlier and was an early investor in both Apple and AOL - alongside Dana Settle and Ian Sigalow, after Patricof left Apax specifically to return to smaller, earlier-stage investing. The firm built its identity around three founding principles: venture capital as a relationship-driven repeat business, fund economics deliberately sized to stay aligned with founders rather than maximizing assets under management, and a separate growth fund to support portfolio companies at every later stage. That early conviction produced Venmo, HuffPost, and Goop among its earliest bets, and Greycroft has grown into a genuinely bicoastal-plus platform with offices in New York, Los Angeles, and the San Francisco Bay Area, closing more than $1 billion across new funds in April 2023 alone and surpassing $3 billion in assets under management since inception.",
     leadership: [
-      { name: "Alan Patricof", role: "Co-Founder & Chairman" },
+      { name: "Alan Patricof", role: "Co-Founder & Chairman", profileSlug: "alan-patricof" },
       { name: "Dana Settle", role: "Co-Founder & Managing Partner", profileSlug: "dana-settle" },
-      { name: "Ian Sigalow", role: "Co-Founder & Managing Partner" }
+      { name: "Ian Sigalow", role: "Co-Founder & Managing Partner", profileSlug: "ian-sigalow" }
     ],
     timeline: [
       { year: "2006", event: "Alan Patricof, Dana Settle, and Ian Sigalow found Greycroft, raising a $75 million debut fund." },
@@ -2929,8 +2929,8 @@ holdings: []
     aum: "$10B+",
     thesis: "Bain Capital Ventures was formed in 2001 as the dedicated venture capital arm of Bain Capital, the private investment firm Mitt Romney helped launch in 1984 as a spinoff from the consulting firm Bain & Company. That consulting DNA shaped BCV's approach: partner Ajay Agarwal, who joined in 2003, led the firm's first institutional round in Kiva Systems in 2004 - a warehouse robotics startup founded on the then-contrarian bet that e-commerce fulfillment costs would eventually balloon out of control. Amazon acquired Kiva in 2012, rebranding it Amazon Robotics; its systems now power more than 2,000 fulfillment centers worldwide. BCV has since backed DocuSign, LinkedIn, Twilio, and Redis across enterprise software, fintech, and infrastructure.",
     leadership: [
-      { name: "James Nahirny", role: "Co-Founder" },
-      { name: "Michael Krupka", role: "Co-Founder" },
+      { name: "James Nahirny", role: "Co-Founder", profileSlug: "james-nahirny" },
+      { name: "Michael Krupka", role: "Co-Founder", profileSlug: "michael-krupka" },
       { name: "Ajay Agarwal", role: "Partner", profileSlug: "ajay-agarwal" }
     ],
     timeline: [
@@ -2960,7 +2960,7 @@ holdings: []
     thesis: "Eclipse Ventures was founded in 2015 on the belief that the most consequential companies of the next decade would be built in physical industries - manufacturing, energy, defense, and supply chains - not software alone. The firm describes itself not as a traditional portfolio but as a connected industrial economy: companies it backs share infrastructure, talent networks, and hard-won operational insight with each other, and Eclipse itself co-founds and incubates companies from scratch rather than only writing checks into existing startups. In April 2026 the firm closed its largest fundraise yet, $1.3 billion across a $720 million Fund VI and a $591 million Early Growth Fund III, pushing total assets under management to roughly $10 billion across an 11-year history.",
     leadership: [
      { name: "Lior Susan", role: "Founder & CEO", profileSlug: "lior-susan" },
-      { name: "Greg Reichow", role: "Partner" }
+      { name: "Greg Reichow", role: "Partner", profileSlug: "greg-reichow" }
     ],
     timeline: [
       { year: "2015", event: "Lior Susan founds Eclipse Ventures in Palo Alto." },
@@ -2983,9 +2983,9 @@ holdings: []
     aum: "$10B+ (RIA regulatory AUM)",
     thesis: "Altos Ventures was founded in 1996 by Han Kim, Ho Nam, and Anthony Lee, three Stanford MBA classmates who began managing their first fund the same year through an introduction from a professor. The firm's public materials describe a deliberately contrarian, patient philosophy - favoring durable businesses with strong unit economics over trend-driven sectors, and staying involved with portfolio companies for more than a decade after the first check. That patience produced two of venture capital's largest single-firm outcomes: Altos held roughly 25% of Roblox at its 2021 IPO, a stake reported to be worth more than $8 billion, and was an early backer of Coupang, the South Korean ecommerce company that priced its own 2021 IPO at an implied $62.1 billion valuation.",
     leadership: [
-  { name: "Han Kim", role: "Co-Founder & Managing Director" },
+  { name: "Han Kim", role: "Co-Founder & Managing Director", profileSlug: "han-kim" },
       { name: "Ho Nam", role: "Co-Founder & Managing Director", profileSlug: "ho-nam" },
-      { name: "Anthony Lee", role: "Co-Founder & Managing Director" }
+      { name: "Anthony Lee", role: "Co-Founder & Managing Director", profileSlug: "anthony-lee" }
     ],
     timeline: [
       { year: "1996", event: "Han Kim, Ho Nam, and Anthony Lee found Altos Ventures in Menlo Park." },
@@ -3011,8 +3011,8 @@ holdings: []
  thesis: "Peak XV Partners traces its origins to 2006 as Sequoia Capital India, rebranding to Peak XV in 2023 after Sequoia's India/Southeast Asia business formally separated from the global Sequoia franchise. The firm is best understood as a region-building institution rather than just a fund complex: its current messaging emphasizes 'global maxima,' trying to persuade founders in India and Southeast Asia to benchmark against the world's best companies rather than merely regional peers. That is continuous with the old Sequoia India/SEA ethos, but the 2023 rebrand and current global posture also reflect a deliberate attempt to decouple geography from ambition - reinforced by Freshworks, the firm's clearest signature exit, which Reuters reported was targeting nearly $9.6 billion ahead of its IPO before debuting at a $12.2 billion valuation.",
     leadership: [
       { name: "Rajan Anandan", role: "Managing Director", profileSlug: "rajan-anandan" },
-      { name: "Sakshi Chopra", role: "Managing Director" },
-      { name: "Rohit Agarwal", role: "Managing Director" }
+      { name: "Sakshi Chopra", role: "Managing Director", profileSlug: "sakshi-chopra" },
+      { name: "Rohit Agarwal", role: "Managing Director", profileSlug: "rohit-agarwal" }
     ],
     timeline: [
       { year: "2006", event: "Franchise begins as Sequoia Capital India." },
@@ -3039,10 +3039,10 @@ holdings: []
     aum: "$9B+",
     thesis: "Five young partners - Bob Kagle, Bruce Dunlevie, Andy Rachleff, Kevin Harvey, and Val Vaden - broke off from their established firms in 1995 to found Benchmark on a radical premise for the time: every partner would be paid and treated exactly equally, with no senior hierarchy. Barely two years later, the firm's $6.7 million bet on a tiny auction site called eBay became one of the best-performing venture investments ever made, validating the flat-partnership model Benchmark still runs today.",
     leadership: [
-      { name: "Bob Kagle", role: "Co-Founder" },
-      { name: "Bruce Dunlevie", role: "Co-Founder" },
-      { name: "Andy Rachleff", role: "Co-Founder" },
-      { name: "Kevin Harvey", role: "Co-Founder" },
+      { name: "Bob Kagle", role: "Co-Founder", profileSlug: "bob-kagle" },
+      { name: "Bruce Dunlevie", role: "Co-Founder", profileSlug: "bruce-dunlevie" },
+      { name: "Andy Rachleff", role: "Co-Founder", profileSlug: "andy-rachleff" },
+      { name: "Kevin Harvey", role: "Co-Founder", profileSlug: "kevin-harvey" },
       { name: "Bill Gurley", role: "General Partner", profileSlug: "bill-gurley" }
     ],
     timeline: [
@@ -3070,8 +3070,8 @@ holdings: []
     thesis: "Spark Capital was founded in 2005 by Bijan Sabet, Paul Conway, Santo Politi, and Todd Dagres, built on a deliberately founder-first philosophy that prioritizes people over spreadsheets. The firm's early conviction in consumer internet companies paid off dramatically with Twitter - Sabet led the investment in 2007 when the company had fewer than a dozen employees, years before its 2013 IPO. Spark has since extended that same instinct into enterprise software, fintech, and AI, including an early Series C investment in Anthropic that turned $75 million into an estimated $3 billion.",
     leadership: [
       { name: "Bijan Sabet", role: "Co-Founder & Partner Emeritus", profileSlug: "bijan-sabet" },
-      { name: "Santo Politi", role: "Co-Founder & General Partner" },
-      { name: "Todd Dagres", role: "Co-Founder" }
+      { name: "Santo Politi", role: "Co-Founder & General Partner", profileSlug: "santo-politi" },
+      { name: "Todd Dagres", role: "Co-Founder", profileSlug: "todd-dagres" }
     ],
     timeline: [
       { year: "2005", event: "Bijan Sabet, Paul Conway, Santo Politi, and Todd Dagres found Spark Capital in Boston." },
@@ -3099,7 +3099,7 @@ holdings: []
     aum: "$7B+",
     thesis: "IVP, founded in 1980 by Reid Dennis, is one of the oldest venture capital firms on Sand Hill Road. Dennis had already spent nearly three decades building a network of early angel investors before formally launching IVP, and the firm became one of the first dedicated later-stage growth investors in Silicon Valley. After the dot-com crash, several IVP partners left to help found Redpoint Ventures in 1999 - a firm also tracked on this page. IVP's own defining bet came in 2009, when partner Todd Chaffee led a $44 million investment in Twitter at a $220 million valuation, a stake that grew into a return of nearly $5 billion within a decade.",
     leadership: [
-      { name: "Reid Dennis", role: "Founder (1980)" },
+      { name: "Reid Dennis", role: "Founder (1980)", profileSlug: "reid-dennis" },
       { name: "Todd Chaffee", role: "Managing Director & General Partner", profileSlug: "todd-chaffee" }
     ],
     timeline: [
@@ -3129,8 +3129,8 @@ holdings: []
     thesis: "CapitalG is Alphabet's independent growth fund, founded in 2013 to share Google's own growth expertise - commercial pipeline building, hiring, and go-to-market advisory - with scaling companies, not just write checks. Unlike most corporate venture arms, it publishes classic fund metrics openly: $7 billion in assets under management, typical check sizes of $50 to $200 million, and a track record of 16 IPOs and 11 M&A exits, which puts it closer to a dedicated growth-equity franchise than a scouting arm. Its portfolio includes category-defining names like Stripe, Airbnb, CrowdStrike, and Databricks, with Looker's $2.6 billion acquisition by Google itself standing as its most direct proof of strategic value.",
     leadership: [
       { name: "Laela Sturdy", role: "Managing Partner", profileSlug: "laela-sturdy" },
-      { name: "Gene Frantz", role: "General Partner" },
-      { name: "Alex Nichols", role: "General Partner" }
+      { name: "Gene Frantz", role: "General Partner", profileSlug: "gene-frantz" },
+      { name: "Alex Nichols", role: "General Partner", profileSlug: "alex-nichols" }
     ],
     timeline: [
       { year: "2013", event: "Alphabet founds CapitalG as its independent growth fund." },
@@ -3158,7 +3158,7 @@ holdings: []
     aum: "$5.8B+",
     thesis: "Menlo Ventures was founded in 1976 by H. DuBose Montgomery in Menlo Park, making it one of the oldest continuously active venture capital firms in Silicon Valley. The firm spent much of its history investing primarily in enterprise technology before shifting toward a more even split between consumer and enterprise bets by the 2010s. That range paid off in 2011, when partner Shawn Carolan led Menlo's $32 million Series B investment in Uber - a deal a16z had walked away from - valuing the fledgling ride-hailing startup at just $322 million. The bet became one of the most lucrative in the firm's history when a SoftBank-led investor group purchased roughly half of Menlo's Uber shares in 2018 for $973 million, a 93x return.",
     leadership: [
-      { name: "H. DuBose Montgomery", role: "Founder (1976)" },
+      { name: "H. DuBose Montgomery", role: "Founder (1976)", profileSlug: "h-dubose-montgomery" },
       { name: "Shawn Carolan", role: "Partner", profileSlug: "shawn-carolan" }
     ],
     timeline: [
@@ -3187,9 +3187,9 @@ holdings: []
     aum: "$6B+ deployed capital",
     thesis: "Salesforce Ventures was founded in 2009 as Salesforce's venture platform, and its official framing is explicit about what it sells beyond capital: patient investing paired with privileged access to Salesforce's customers, partners, and product expertise. That platform capability isn't just marketing - the firm says its dedicated platform team has helped hundreds of portfolio companies with community building, brand amplification, and customer introductions. Salesforce Ventures has invested in more than 630 startups and deployed over $6 billion, supporting more than 200 IPOs and acquisitions, with a $1 billion commitment specifically earmarked for AI founders as of its 15-year retrospective.",
     leadership: [
-      { name: "Paul Drews", role: "Managing Partner" },
+      { name: "Paul Drews", role: "Managing Partner", profileSlug: "paul-drews" },
       { name: "John Somorjai", role: "President", profileSlug: "john-somorjai" },
-      { name: "Ken Asada", role: "Partner & Head of Japan" }
+      { name: "Ken Asada", role: "Partner & Head of Japan", profileSlug: "ken-asada" }
     ],
     timeline: [
       { year: "2009", event: "Salesforce founds Salesforce Ventures as its dedicated venture platform." },
@@ -3218,8 +3218,8 @@ holdings: []
     thesis: "Lux Capital was founded in 2000 by Josh Wolfe, Peter Hébert, and Robert Paull, and has spent more than two decades funding science- and engineering-heavy companies long before they look mainstream. What distinguishes the firm is its refusal to separate venture investing from frontier technical ambition: Lux's own materials treat hard science, difficult regulation, and long commercialization arcs as the price of the category rather than reasons to pass. That patience produced Auris Health, the surgical robotics company Johnson & Johnson acquired for up to $6.1 billion in 2019, seven years after Lux first invested, alongside early positions in Anduril, Recursion, and Hugging Face.",
     leadership: [
       { name: "Josh Wolfe", role: "Co-Founder & Managing Partner", profileSlug: "josh-wolfe" },
-      { name: "Peter Hébert", role: "Co-Founder & Managing Partner" },
-      { name: "Robert Paull", role: "Co-Founder" }
+      { name: "Peter Hébert", role: "Co-Founder & Managing Partner", profileSlug: "peter-hebert" },
+      { name: "Robert Paull", role: "Co-Founder", profileSlug: "robert-paull" }
     ],
     timeline: [
       { year: "2000", event: "Josh Wolfe, Peter Hébert, and Robert Paull found Lux Capital." },
@@ -3248,8 +3248,8 @@ holdings: []
     thesis: "Redpoint Ventures was founded in 1999 in Menlo Park by a group of experienced investors including Geoff Yang, Tim Haley, and John Walecka, several of whom had previously worked together at Institutional Venture Partners. The firm built its early reputation on Netflix, backing the company years before streaming existed as a category, and has since extended that pattern of early conviction into cloud infrastructure and SaaS, with investments in Twilio, Snowflake, Stripe, and HashiCorp.",
     leadership: [
       { name: "Geoff Yang", role: "Founding Partner", profileSlug: "geoff-yang" },
-      { name: "Tim Haley", role: "Founding Partner" },
-      { name: "John Walecka", role: "Founding Partner" }
+      { name: "Tim Haley", role: "Founding Partner", profileSlug: "tim-haley" },
+      { name: "John Walecka", role: "Founding Partner", profileSlug: "john-walecka" }
     ],
     timeline: [
       { year: "1999", event: "A group of former IVP investors, including Geoff Yang and Tim Haley, found Redpoint Ventures." },
@@ -3277,10 +3277,10 @@ holdings: []
     aum: "$4.6B+",
     thesis: "Crosslink Capital was founded in 1989 and has spent 35 years investing in early-stage founders from pre-seed and seed through Series A, across enterprise, consumer, and vertical technology. The firm's clearest differentiator is Alpha, an invite-only network of more than 2,000 founders, CEOs, investors, and operators that General Partner Eric Chin co-founded in 2005 - now running more than forty annual events and functioning as a genuine deal-sourcing and founder-support engine rather than a marketing label. Crosslink closed its tenth flagship fund, Crosslink Ventures X, at $350 million in April 2024, the same size as its prior fund from January 2021, and now manages more than $4.6 billion.",
     leadership: [
-   { name: "Michael Stark", role: "Partner & Founder" },
-      { name: "Eric Chin", role: "General Partner & Alpha Founder" },
+   { name: "Michael Stark", role: "Partner & Founder", profileSlug: "michael-stark" },
+      { name: "Eric Chin", role: "General Partner & Alpha Founder", profileSlug: "eric-chin" },
       { name: "Matt Bigge", role: "Partner", profileSlug: "matt-bigge" },
-      { name: "Phil Boyer", role: "Partner" }
+      { name: "Phil Boyer", role: "Partner", profileSlug: "phil-boyer" }
     ],
     timeline: [
       { year: "1989", event: "Michael Stark founds Crosslink Capital in Menlo Park." },
@@ -3330,9 +3330,9 @@ holdings: []
     thesis: "Balderton Capital has stayed tightly focused on European-founded technology companies since 2000, building enough follow-on capacity over 25 years to avoid outsourcing the growth-stage relationship to U.S. crossover funds. The firm explicitly supports founders from Seed to IPO through separate early and growth vehicles, backed by structured platform support across talent, marketing, finance, legal, and ESG. Its 2024 raise of $1.3 billion in new early and growth capital confirmed continued LP appetite for a Europe-only franchise at real scale, more than two decades after MySQL's $1 billion acquisition by Sun Microsystems gave the firm one of European venture's first landmark exits.",
     leadership: [
       { name: "Bernard Liautaud", role: "Managing Partner", profileSlug: "bernard-liautaud" },
-      { name: "Suranga Chandratillake", role: "General Partner" },
-      { name: "Daniel Waterhouse", role: "General Partner" },
-      { name: "Rana Yared", role: "General Partner" }
+      { name: "Suranga Chandratillake", role: "General Partner", profileSlug: "suranga-chandratillake" },
+      { name: "Daniel Waterhouse", role: "General Partner", profileSlug: "daniel-waterhouse" },
+      { name: "Rana Yared", role: "General Partner", profileSlug: "rana-yared" }
     ],
     timeline: [
       { year: "2000", event: "Balderton Capital is founded in London." },
@@ -3855,8 +3855,8 @@ holdings: []
     thesis: "Foundation Capital was founded in October 1995 by Bill Elmore, Kathryn Gould, and Jim Anderson in Palo Alto, built around a distinctive investment philosophy the firm still describes today: seeking out 'zero-billion-dollar markets,' categories that don't yet exist commercially until a visionary founder creates them from nothing. That conviction made Foundation one of Netflix's original investors, and the firm has spent three decades applying the same lens to fintech, enterprise software, and consumer internet, backing LendingClub, Chegg, Sunrun, and Uber among more than 400 total investments. Foundation has been the first institutional investor in more than 70% of its portfolio companies, and the firm's track record now spans 26 IPOs and more than 80 acquisitions.",
     leadership: [
       { name: "Kathryn Gould", role: "Co-Founder", profileSlug: "kathryn-gould" },
-      { name: "Bill Elmore", role: "Co-Founder" },
-      { name: "Ashu Garg", role: "General Partner" }
+      { name: "Bill Elmore", role: "Co-Founder", profileSlug: "bill-elmore" },
+      { name: "Ashu Garg", role: "General Partner", profileSlug: "ashu-garg" }
     ],
     timeline: [
       { year: "1995", event: "Bill Elmore, Kathryn Gould, and Jim Anderson found Foundation Capital in Palo Alto." },
@@ -3883,9 +3883,9 @@ holdings: []
     thesis: "RRE Ventures was founded in 1994 by James D. Robinson IV and Stuart Ellman, at a time New York City was, in Robinson's own words, still 'a small town for venture capital' - deals were scarce enough that the founders regularly had to fly to the West Coast to find them, and RRE kept a San Francisco office through the dot-com era before eventually consolidating fully in New York. That early, patient bet on New York as a genuine technology hub has compounded over three decades: RRE has invested in more than 400 companies and served on nearly 50 boards, building one of the city's oldest and largest venture firms with a portfolio spanning fintech, enterprise software, consumer, AI, media, space, and robotics. The firm's data-driven approach to identifying what it calls 'rare founders' produced early bets on Braintree, BuzzFeed, Bark, and BlackSky, and RRE now manages more than $2.5 billion across 10 funds.",
     leadership: [
       { name: "James D. Robinson IV", role: "Co-Founder & Managing Partner", profileSlug: "james-robinson-iv" },
-      { name: "Stuart Ellman", role: "Co-Founder & Managing Partner" },
-      { name: "Will Porteous", role: "General Partner & COO" },
-      { name: "Raju Rishi", role: "General Partner" }
+      { name: "Stuart Ellman", role: "Co-Founder & Managing Partner", profileSlug: "stuart-ellman" },
+      { name: "Will Porteous", role: "General Partner & COO", profileSlug: "will-porteous" },
+      { name: "Raju Rishi", role: "General Partner", profileSlug: "raju-rishi" }
     ],
     timeline: [
       { year: "1994", event: "James D. Robinson IV and Stuart Ellman found RRE Ventures in New York." },
@@ -6505,7 +6505,7 @@ holdings: []
     thesis: "Munich Re Ventures was founded in 2015 by Jacqueline LeSage, backed initially by HSB Fund I, as the corporate venture arm of global reinsurer Munich Re. The fund built a genuinely distinctive model among corporate VCs: rather than offering portfolio companies capital alone, it integrated deeply with Munich Re's 150-year underwriting expertise and HSB's engineering and inspection force of more than 1,200 professionals, giving startups real access to reinsurance capacity, balance-sheet partnerships, and distribution channels most standalone VCs can't offer. That model produced real venture-scale outcomes - At-Bay, Augury, and Helium Mobile all reached unicorn status, Mnubo was acquired by AspenTech in 2019, and Next Insurance was acquired by Munich Re itself for $2.6 billion in 2025. Despite a decade of strong performance and the parent company posting record profits, Munich Re announced in late 2025 that it would wind down the venture unit by mid-2026 amid a broader leadership transition, shifting remaining portfolio oversight to its asset management arm, MEAG.",
     leadership: [
       { name: "Jacqueline LeSage", role: "Founder & Managing General Partner", profileSlug: "jacqueline-lesage" },
-      { name: "Jennifer Place", role: "Principal" }
+      { name: "Jennifer Place", role: "Principal", profileSlug: "jennifer-place" }
     ],
     timeline: [
       { year: "2015", event: "Jacqueline LeSage founds Munich Re Ventures, backed by HSB Fund I." },
@@ -6528,8 +6528,8 @@ holdings: []
     aum: "$2.0B (total commitments)",
     thesis: "Dawn Capital was founded in 2006/2007 by Norman Fiore and Haakon Overli, joined early by Josh Bell as founding team, building what has become Europe's leading specialist B2B software investor. The firm concentrates deliberately on four themes - the future of work, data and analytics, security and privacy, and fintech - backing category-defining European software companies from Series A through growth rounds to exit, rather than spreading generalist bets across the continent. That focus produced an extraordinary concentration of outcomes: Dawn was the only investor in both iZettle (acquired by PayPal for $2.2 billion) and Tink (acquired by Visa for approximately $2 billion), Europe's second and third largest fintech M&A exits in history, alongside Mimecast's NASDAQ listing (later taken private by Permira in a $5.8 billion deal). Dawn has backed more than 85 software companies across 14 European countries, including eight unicorns, with $2 billion in total commitments across five flagship funds.",
     leadership: [
-      { name: "Norman Fiore", role: "Co-Founder & General Partner" },
-      { name: "Haakon Overli", role: "Co-Founder & General Partner" },
+      { name: "Norman Fiore", role: "Co-Founder & General Partner", profileSlug: "norman-fiore" },
+      { name: "Haakon Overli", role: "Co-Founder & General Partner", profileSlug: "haakon-overli" },
       { name: "Josh Bell", role: "General Partner", profileSlug: "josh-bell" }
     ],
     timeline: [
@@ -6554,8 +6554,8 @@ holdings: []
     thesis: "Notion Capital was founded in October 2008 by brothers Ben and Jos White, alongside fellow MessageLabs executives Stephen Chandler, Chris Tottman, and Ian Milbourn, funded with roughly £20 million of their own capital from MessageLabs' $700 million acquisition by Symantec that same month - a deal closed amid the market chaos following Lehman Brothers' collapse. That direct operating pedigree building and selling one of the world's first SaaS companies shapes Notion's entire identity: a firm explicitly built by operators for operators, leading early-stage rounds in European B2B software and staying engaged through growth to help founders scale from $1 million to $100 million in revenue. The firm has backed more than 150 companies including Currencycloud (acquired by Visa), GoCardless, Tradeshift, and Mews, and now manages more than $1 billion in assets.",
     leadership: [
       { name: "Stephen Chandler", role: "Managing Partner & Co-Founder", profileSlug: "stephen-chandler" },
-      { name: "Jos White", role: "General Partner & Co-Founder" },
-      { name: "Chris Tottman", role: "General Partner" }
+      { name: "Jos White", role: "General Partner & Co-Founder", profileSlug: "jos-white" },
+      { name: "Chris Tottman", role: "General Partner", profileSlug: "chris-tottman" }
     ],
     timeline: [
       { year: "2008", event: "Ben White, Jos White, Stephen Chandler, Chris Tottman, and Ian Milbourn found Notion Capital in London, funded by proceeds from MessageLabs' sale to Symantec." },
@@ -6759,8 +6759,8 @@ holdings: []
     thesis: "Foundry Group was founded in 2006 in Boulder, Colorado, by four friends who'd worked together at Mobius Venture Capital - Brad Feld, Seth Levine, Ryan McIntyre, and Jason Mendelson - sharing frustration with the opacity and founder-unfriendly terms common across traditional venture capital. They built Foundry around a genuinely radical transparency: every partner's email address follows a simple firstname@foundrygroup.com format, and the firm made a deliberate pact to stay small, partner-driven, and obsessed with craft rather than scaling into an institution. That founder-first philosophy, paired with Feld's parallel work building Techstars and popularizing the 'Boulder Thesis' for building startup ecosystems outside Silicon Valley, backed more than 200 companies including Fitbit, Zynga, and Gnip. In January 2024, the firm announced Foundry 2022 would be its final fund, choosing a deliberate, planned conclusion to new investing after nearly two decades and roughly $1.8 billion raised across nine funds.",
     leadership: [
       { name: "Brad Feld", role: "Co-Founder & Managing Director", profileSlug: "brad-feld" },
-      { name: "Seth Levine", role: "Co-Founder & Managing Director" },
-      { name: "Jason Mendelson", role: "Co-Founder & Managing Director" }
+      { name: "Seth Levine", role: "Co-Founder & Managing Director", profileSlug: "seth-levine" },
+      { name: "Jason Mendelson", role: "Co-Founder & Managing Director", profileSlug: "jason-mendelson" }
     ],
     timeline: [
       { year: "2006", event: "Brad Feld, Seth Levine, Ryan McIntyre, and Jason Mendelson found Foundry Group in Boulder." },
@@ -6815,7 +6815,7 @@ holdings: []
     leadership: [
       { name: "Annie Lamont", role: "Co-Founder & Managing Partner", profileSlug: "annie-lamont" },
       { name: "Andrew Adams", role: "Co-Founder & Managing Partner", profileSlug: "andrew-adams" },
-      { name: "Patricia Kemp", role: "Co-Founder & Managing Partner" }
+      { name: "Patricia Kemp", role: "Co-Founder & Managing Partner", profileSlug: "patricia-kemp" }
     ],
     timeline: [
       { year: "2014", event: "Annie Lamont, Andrew Adams, and Patricia Kemp found Oak HC/FT in Greenwich, CT, in June." },
@@ -6841,7 +6841,7 @@ holdings: []
     thesis: "Octopus Ventures formed in August 2007 when Octopus Group, the London holding company founded in 2000 by Simon Rogerson, Chris Hulatt, and Guy Myles, acquired Katalyst, a private investor group run by former City derivatives trader Alex Macpherson. That acquisition gave Octopus a genuine early-stage venture capability layered onto its broader financial services platform, and the firm has since grown into one of Europe's largest and most active VCs, investing from £1 million seed checks through £10 million-plus Series B rounds with the ability to fund companies all the way through IPO. Octopus organizes its investing around five specialist areas - health, fintech, deep tech, consumer, and B2B software - and has backed more than 380 companies since 2008, including Zoopla, SwiftKey, Graze.com, and Depop, which Etsy acquired for $1.6 billion in 2021.",
     leadership: [
       { name: "Alex Macpherson", role: "Managing Director", profileSlug: "alex-macpherson" },
-      { name: "Erin Platts", role: "CEO, Octopus Investments" }
+      { name: "Erin Platts", role: "CEO, Octopus Investments", profileSlug: "erin-platts" }
     ],
     timeline: [
       { year: "2007", event: "Octopus acquires Katalyst in August, forming Octopus Ventures with Alex Macpherson as a founding leader." },
