@@ -13,9 +13,9 @@ const firms = [
     thesis: "SoftBank Vision Fund remains the clearest example of venture capital run at platform scale, having launched Vision Fund 1 at $100 billion in 2017. Its current messaging has become far more coherent than the early 'invest in everything transformed by AI' caricature: the firm is now organized around a full-stack AI ecosystem of hardware, infrastructure, and applications, with CEO Alex Clavel's leadership stressing discipline, monetization, and cash-runway quality across the portfolio. That shift matters because it shows the platform institutionalizing what was previously perceived as founder-led opportunism under Masayoshi Son, while still concentrating unusually large checks into category leaders - DoorDash's $71.2 billion IPO valuation stands as SVF1's best fully-exited outcome, with a $7.3 billion gain.",
     leadership: [
       { name: "Alex Clavel", role: "CEO", profileSlug: "alex-clavel" },
-      { name: "Sumer Juneja", role: "Managing Partner, EMEA/India" },
-      { name: "Vikas J. Parekh", role: "Managing Partner" },
-      { name: "Kentaro Matsui", role: "Managing Partner, Asia" }
+      { name: "Sumer Juneja", role: "Managing Partner, EMEA/India", profileSlug: "sumer-juneja" },
+      { name: "Vikas J. Parekh", role: "Managing Partner", profileSlug: "vikas-j-parekh" },
+      { name: "Kentaro Matsui", role: "Managing Partner, Asia", profileSlug: "kentaro-matsui" }
     ],
     timeline: [
       { year: "2017", event: "SoftBank launches Vision Fund 1 at $100 billion." },
@@ -1038,8 +1038,8 @@ holdings: []
     thesis: "Sofinnova Partners traces its roots to 1972, when Sofinnova S.A. was founded in Paris, later splitting in 1997 into two fully independent firms: the American Sofinnova Investments (now based in Menlo Park) and the Paris-based Sofinnova Partners profiled here. Over more than five decades, Sofinnova has built a genuinely hands-on company-building model across the entire life sciences value chain, from its in-house MD Start medtech accelerator through later-stage growth investing, concentrated specifically on healthcare and sustainability. That patient, science-first approach - led by Chairman Antoine Papiernik, who joined the same year as the 1997 split - has backed more than 500 companies over 50 years, producing 25 IPOs and 30 acquisitions including Shockwave Medical (acquired by Johnson & Johnson), DBV Technologies, and ProQR Therapeutics, with Sofinnova raising €1.2 billion in a single year in 2025 to push total AUM past €4 billion.",
     leadership: [
       { name: "Antoine Papiernik", role: "Chairman & Managing Partner", profileSlug: "antoine-papiernik" },
-      { name: "Graziano Seghezzi", role: "Managing Partner" },
-      { name: "Denis Lucquin", role: "Managing Partner Emeritus" }
+      { name: "Graziano Seghezzi", role: "Managing Partner", profileSlug: "graziano-seghezzi" },
+      { name: "Denis Lucquin", role: "Managing Partner Emeritus", profileSlug: "denis-lucquin" }
     ],
     timeline: [
       { year: "1972", event: "Sofinnova S.A. is founded in Paris." },
@@ -1087,8 +1087,8 @@ holdings: []
     thesis: "Bond Capital was founded in September 2018 when Mary Meeker, the analyst famous for her annual Internet Trends reports, left Kleiner Perkins amid an internal leadership dispute, taking fellow growth-practice partners Mood Rowghani, Noah Knauf, and Juliet de Baubigny with her. The firm applies Meeker's research-driven, data-first investment discipline exclusively to late-stage growth equity, leading large rounds for mature, category-defining technology companies rather than early-stage bets. That approach made Canva Bond's very first investment in May 2019 and remains its signature holding, a $70 million check that helped fuel the design platform's growth to a $42 billion valuation, alongside more recent bets on Applied Intuition, Checkr, and AI voice company ElevenLabs. Bond has raised three funds since founding - $1.25 billion, $2 billion, and $2.5 billion - reaching $5.9 billion in AUM across 176 investments and 51 unicorns.",
     leadership: [
       { name: "Mary Meeker", role: "Founder & General Partner", profileSlug: "mary-meeker" },
-      { name: "Mood Rowghani", role: "General Partner" },
-      { name: "Noah Knauf", role: "General Partner" }
+      { name: "Mood Rowghani", role: "General Partner", profileSlug: "mood-rowghani" },
+      { name: "Noah Knauf", role: "General Partner", profileSlug: "noah-knauf" }
     ],
     timeline: [
       { year: "2018", event: "Mary Meeker leaves Kleiner Perkins in September and founds Bond Capital." },
@@ -1471,7 +1471,7 @@ holdings: []
     thesis: "Paradigm was founded in June 2018 by Matt Huang, a former Sequoia Capital partner, and Fred Ehrsam, co-founder of Coinbase, at the bottom of a brutal crypto bear market when cryptocurrency prices had collapsed and most institutional capital had fled the space. That contrarian timing, backed by an initial $750 million from institutional investors including Harvard, Yale, and Stanford in an open-ended fund with no deadline to return capital, established Paradigm's identity as a genuinely research-driven, engineering-heavy investment firm - the team is, in its own words, 'as likely to ship code as to cut checks.' Under Matt Huang and Managing Partner Alana Palmedo, the firm has expanded well beyond its original crypto mandate into AI and robotics, closing a $1.2 billion Fund III in 2026 to back frontier bets including Zipline and True Anomaly, on top of an earlier $2.5 billion flagship crypto fund (2021, then the largest dedicated crypto fund ever raised) and an $850 million early-stage blockchain fund (2024). Paradigm now manages more than $12.7 billion in assets under management.",
     leadership: [
       { name: "Matt Huang", role: "Co-Founder & Managing Partner", profileSlug: "matt-huang" },
-      { name: "Fred Ehrsam", role: "Co-Founder & General Partner" },
+      { name: "Fred Ehrsam", role: "Co-Founder & General Partner", profileSlug: "fred-ehrsam" },
       { name: "Alana Palmedo", role: "Managing Partner", profileSlug: "alana-palmedo" }
     ],
     timeline: [
@@ -1729,11 +1729,11 @@ holdings: []
     thesis: "Founded in 2009 by Marc Andreessen, the co-creator of the Netscape browser, and Ben Horowitz, a former enterprise software executive, a16z set out to build a different kind of VC firm - one staffed with in-house recruiters, marketers, and engineers to support founders directly, not just write checks. The firm's stage-agnostic, software-eats-the-world thesis has since carried it into crypto, biotech, and AI, backing companies from seed rounds through late-stage growth across every category it touches.",
     leadership: [
       { name: "Marc Andreessen", role: "Co-Founder & General Partner", profileSlug: "marc-andreessen" },
-      { name: "Ben Horowitz", role: "Co-Founder & General Partner" },
-      { name: "Chris Dixon", role: "General Partner, a16z crypto" },
-      { name: "Martin Casado", role: "General Partner, Infrastructure & Enterprise" },
-      { name: "Andrew Chen", role: "General Partner, Consumer & Apps" },
-      { name: "Scott Kupor", role: "Managing Partner" }
+      { name: "Ben Horowitz", role: "Co-Founder & General Partner", profileSlug: "ben-horowitz" },
+      { name: "Chris Dixon", role: "General Partner, a16z crypto", profileSlug: "chris-dixon" },
+      { name: "Martin Casado", role: "General Partner, Infrastructure & Enterprise", profileSlug: "martin-casado" },
+      { name: "Andrew Chen", role: "General Partner, Consumer & Apps", profileSlug: "andrew-chen" },
+      { name: "Scott Kupor", role: "Managing Partner", profileSlug: "scott-kupor" }
     ],
     timeline: [
       { year: "2009", event: "Marc Andreessen and Ben Horowitz launch the firm with a $300 million debut fund." },
@@ -1765,8 +1765,8 @@ holdings: []
     aum: "$56B+",
     thesis: "Founded in 1972 by Don Valentine, a former Fairchild Semiconductor sales executive often called the \"grandfather of Silicon Valley venture capital,\" Sequoia was there for the first wave of the personal computer era, providing early funding to Apple and Atari. Over five decades it has repeated that pattern again and again - Google, PayPal, and Nvidia among them - building a reputation as the industry's steadiest and most consistent winner across multiple technology cycles.",
     leadership: [
-      { name: "Don Valentine", role: "Founder (1972)" },
-      { name: "Roelof Botha", role: "Senior Steward, Global Managing Partner" },
+      { name: "Don Valentine", role: "Founder (1972)", profileSlug: "don-valentine" },
+      { name: "Roelof Botha", role: "Senior Steward, Global Managing Partner", profileSlug: "roelof-botha" },
       { name: "Alfred Lin", role: "Managing Partner", profileSlug: "alfred-lin" }
     ],
     timeline: [
@@ -1793,8 +1793,8 @@ holdings: []
     aum: "$35B+",
     thesis: "David Fialkow and Joel Cutler, childhood friends since the age of five or six, spent years building and selling travel and consumer companies together before co-founding General Catalyst in Cambridge, Massachusetts in 2000. What started as a Boston-area firm with a first fund of $250 million has since expanded into Silicon Valley, Europe, and India, evolving into one of the largest venture firms in the world.",
     leadership: [
-      { name: "Joel Cutler", role: "Co-Founder" },
-      { name: "David Fialkow", role: "Co-Founder & Managing Director" },
+      { name: "Joel Cutler", role: "Co-Founder", profileSlug: "joel-cutler" },
+      { name: "David Fialkow", role: "Co-Founder & Managing Director", profileSlug: "david-fialkow" },
       { name: "Hemant Taneja", role: "CEO & Managing Director", profileSlug: "hemant-taneja" }
     ],
     timeline: [
@@ -1821,9 +1821,9 @@ holdings: []
     aum: "$25B+",
     thesis: "NEA was founded in 1977 by three men who each brought a different piece of the puzzle: Dick Kramlich, who had trained under legendary investor Arthur Rock; Frank Bonsal, an investment banker who had taken startups public; and Chuck Newhall, who had managed investment funds at T. Rowe Price. Deliberately built with offices on both coasts from day one - unusual for the era - NEA's first fund raised just $16 million, a fraction of the more than $25 billion it manages today.",
     leadership: [
-      { name: "Dick Kramlich", role: "Co-Founder" },
-      { name: "Chuck Newhall", role: "Co-Founder" },
-      { name: "Frank Bonsal", role: "Co-Founder" },
+      { name: "Dick Kramlich", role: "Co-Founder", profileSlug: "dick-kramlich" },
+      { name: "Chuck Newhall", role: "Co-Founder", profileSlug: "chuck-newhall" },
+      { name: "Frank Bonsal", role: "Co-Founder", profileSlug: "frank-bonsal" },
       { name: "Scott Sandell", role: "Executive Chairman", profileSlug: "scott-sandell" }
     ],
     timeline: [
@@ -1851,8 +1851,8 @@ holdings: []
     thesis: "TCV was founded in 1995 by Jay Hoag and Rick Kimball as the original crossover investor - the first firm to invest in both public and private technology companies from the same fund, a structure the 'Crossover' in its original name (Technology Crossover Ventures) still reflects. That willingness to follow winners across the private-to-public transition, rather than exiting at IPO, is what produced Jay Hoag's three-decade board seat at Netflix, which he joined in 1999 when TCV owned roughly 43% of the company pre-IPO. The firm has since invested more than $17 billion across 350-plus technology companies worldwide, supporting more than 145 IPOs and strategic acquisitions including Facebook, Airbnb, Spotify, Zillow, and Expedia, and now manages approximately $24 billion.",
     leadership: [
       { name: "Jay Hoag", role: "Founding General Partner", profileSlug: "jay-hoag" },
-      { name: "Richard Kimball", role: "Founding General Partner" },
-      { name: "Neil Tolaney", role: "General Partner" }
+      { name: "Richard Kimball", role: "Founding General Partner", profileSlug: "richard-kimball" },
+      { name: "Neil Tolaney", role: "General Partner", profileSlug: "neil-tolaney" }
     ],
     timeline: [
       { year: "1995", event: "Jay Hoag and Rick Kimball found Technology Crossover Ventures in Menlo Park." },
@@ -1881,8 +1881,8 @@ holdings: []
     aum: "$25B+",
     thesis: "Lightspeed traces its roots to Weiss, Peck & Greer Venture Partners, rebranding under its current name in 2000 as it sharpened its focus on enterprise infrastructure and consumer technology. The firm's willingness to back unproven, young founders paid off dramatically in 2012, when partner Jeremy Liew wrote the first institutional check into a then-tiny disappearing-photo app called Snapchat.",
     leadership: [
-      { name: "Barry Eggers", role: "Co-Founder" },
-      { name: "Ravi Mhatre", role: "Co-Founder" },
+      { name: "Barry Eggers", role: "Co-Founder", profileSlug: "barry-eggers" },
+      { name: "Ravi Mhatre", role: "Co-Founder", profileSlug: "ravi-mhatre" },
       { name: "Jeremy Liew", role: "Partner, wrote Snapchat's first check", profileSlug: "jeremy-liew" }
     ],
     timeline: [
@@ -1909,8 +1909,8 @@ holdings: []
     aum: "$21B+",
     thesis: "Kleiner Perkins was founded in 1972 by Eugene Kleiner, a Fairchild Semiconductor co-founder, and Tom Perkins, a former Hewlett-Packard executive with degrees from MIT and Harvard. Joined shortly after by Frank Caufield and Brook Byers, the firm built its name on backing category-defining technology companies from their earliest days, including Genentech, Sun Microsystems, Netscape, Amazon, and Google. The firm's 1999 investment in Google alongside Sequoia Capital - writing what was then its largest check ever - remains one of the most celebrated bets in venture capital history.",
     leadership: [
-      { name: "Eugene Kleiner", role: "Co-Founder (1972)" },
-      { name: "Tom Perkins", role: "Co-Founder (1972)" },
+      { name: "Eugene Kleiner", role: "Co-Founder (1972)", profileSlug: "eugene-kleiner" },
+      { name: "Tom Perkins", role: "Co-Founder (1972)", profileSlug: "tom-perkins" },
       { name: "John Doerr", role: "Chairman", profileSlug: "john-doerr" }
     ],
     timeline: [
@@ -1972,7 +1972,7 @@ holdings: []
     thesis: "Arthur Patterson and Jim Swartz founded Accel in 1983, betting on a strategy of deep specialization in specific technology categories rather than spreading investments broadly - an approach that was unusual at the time. That focus paid off most famously in 2005, when Accel led Facebook's Series A, a single investment that became one of the highest-multiple returns in venture capital history and cemented the firm's reputation for spotting category-defining companies early.",
     leadership: [
       { name: "Arthur Patterson", role: "Co-Founder", profileSlug: "arthur-patterson" },
-      { name: "Jim Swartz", role: "Co-Founder" }
+      { name: "Jim Swartz", role: "Co-Founder", profileSlug: "jim-swartz" }
     ],
     timeline: [
       { year: "1983", event: "Arthur Patterson and Jim Swartz found the firm on a strategy of deep specialization in specific tech categories." },
@@ -1998,9 +1998,9 @@ holdings: []
     aum: "~$20B",
     thesis: "OrbiMed's roots trace back to 1989, when S.G. Warburg pharmaceutical analysts Viren Mehta and Samuel Isaly founded Mehta & Isaly, a research and money-management firm that made its first venture capital investment in 1993. The firm split in 1998, with Isaly forming OrbiMed Advisors, and it has since grown into one of the world's largest dedicated healthcare investment platforms - a rare structure that spans public equity, private equity/venture, and private credit and royalty financing all within a single healthcare-only specialist group. That breadth lets OrbiMed fund a company from seed through IPO and well beyond using one continuous relationship, and its roughly 150-person investment team, including PhD scientists, MDs, and CFAs, now manages approximately $20 billion across all three strategies.",
     leadership: [
-      { name: "Sven Borho", role: "Founding Managing Partner, Public Equity" },
+      { name: "Sven Borho", role: "Founding Managing Partner, Public Equity", profileSlug: "sven-borho" },
       { name: "Carl Gordon", role: "Managing Partner & Head of Private Equity", profileSlug: "carl-gordon" },
-      { name: "Jonathan Silverstein", role: "Managing Partner" }
+      { name: "Jonathan Silverstein", role: "Managing Partner", profileSlug: "jonathan-silverstein" }
     ],
     timeline: [
       { year: "1989", event: "Viren Mehta and Samuel Isaly found Mehta & Isaly." },
@@ -2080,8 +2080,8 @@ holdings: []
     aum: "$13B+",
     thesis: "Battery Ventures was founded in 1983 by Rick Frisbie, Howard Anderson, and Bob Barrett in Boston, building a research-focused, collaborative approach to backing category-leading technology companies across their entire lifecycle, from seed investments through growth equity and buyouts. That range paid off in 2011, when General Partner Neeraj Agrawal led Battery's investment in Wayfair's first institutional financing round - a bet built partly on a decade-long friendship with co-founder Niraj Shah dating back to their college days at Cornell. Wayfair went public just three years later, in 2014.",
     leadership: [
-      { name: "Rick Frisbie", role: "Co-Founder (1983)" },
-      { name: "Howard Anderson", role: "Co-Founder (1983)" },
+      { name: "Rick Frisbie", role: "Co-Founder (1983)", profileSlug: "rick-frisbie" },
+      { name: "Howard Anderson", role: "Co-Founder (1983)", profileSlug: "howard-anderson" },
       { name: "Neeraj Agrawal", role: "General Partner", profileSlug: "neeraj-agrawal" }
     ],
     timeline: [
@@ -2112,8 +2112,8 @@ holdings: []
     thesis: "8VC was founded in 2015 by Joe Lonsdale, Jake Medwell, Drew Oetting, Alex Kolicich, and Kimmy Scotti, emerging from the breakup of Formation 8, a prior venture firm Lonsdale had co-founded. Lonsdale's own operating history - co-founding Palantir Technologies and Addepar before ever becoming a full-time investor - shapes the firm's entire model: rather than purely writing checks, 8VC actively builds companies from scratch through its dedicated 8VC Build program, leveraging genuine firsthand experience scaling category-defining technology platforms. The firm relocated from San Francisco to Austin in 2020, positioning itself at the center of an entire wave of technology companies making the same move, and focuses on ambitious, long-term opportunities in defense, healthcare, logistics, and enterprise software that most momentum-driven investors overlook. 8VC now manages $6 billion in committed capital, with a portfolio including Palantir, Oscar Health, Wish, Blend, and Joby Aviation.",
     leadership: [
       { name: "Joe Lonsdale", role: "Co-Founder & Managing Partner", profileSlug: "joe-lonsdale" },
-      { name: "Jake Medwell", role: "Co-Founder & Partner" },
-      { name: "Drew Oetting", role: "Co-Founder & Partner" }
+      { name: "Jake Medwell", role: "Co-Founder & Partner", profileSlug: "jake-medwell" },
+      { name: "Drew Oetting", role: "Co-Founder & Partner", profileSlug: "drew-oetting" }
     ],
     timeline: [
       { year: "2015", event: "Joe Lonsdale, Jake Medwell, Drew Oetting, Alex Kolicich, and Kimmy Scotti found 8VC after Formation 8's breakup." },
@@ -2677,8 +2677,8 @@ holdings: []
     thesis: "ARCH Venture Partners was founded in 1986 by Steven Lazarus, Clinton Bybee, Keith Crandell, and Robert Nelsen, originating from a collaboration between the University of Chicago and Argonne National Laboratory built specifically to commercialize academic research. Nearly 40 years later, that model hasn't changed: ARCH still co-founds companies directly alongside scientists and researchers rather than simply writing checks into existing startups, concentrating almost entirely on early-stage life sciences, physical sciences, and increasingly AI-driven biology. That founder-embedded approach has produced more than 50 companies that reached billion-dollar valuations, including Illumina, Beam Therapeutics, and Karuna Therapeutics, and the firm closed its thirteenth flagship fund at more than $3 billion in September 2024, pushing total assets under management to roughly $12 billion.",
     leadership: [
       { name: "Robert Nelsen", role: "Co-Founder & Managing Director", profileSlug: "robert-nelsen" },
-      { name: "Keith Crandell", role: "Co-Founder & Managing Director" },
-      { name: "Kristina Burow", role: "Managing Director" }
+      { name: "Keith Crandell", role: "Co-Founder & Managing Director", profileSlug: "keith-crandell" },
+      { name: "Kristina Burow", role: "Managing Director", profileSlug: "kristina-burow" }
     ],
     timeline: [
       { year: "1986", event: "Steven Lazarus, Clinton Bybee, Keith Crandell, and Robert Nelsen found ARCH Venture Partners in Chicago." },
@@ -2731,7 +2731,7 @@ holdings: []
     aum: "$13B+",
     thesis: "GV, launched as Google Ventures in 2009 by founding CEO Bill Maris, operates as the independent venture capital arm of Alphabet Inc., with Alphabet itself serving as GV's sole limited partner. That structure gives the firm an unusually long time horizon - deals in decades, not funding cycles - while still investing with full independence from Google's core search and advertising business. The firm's $258 million investment in Uber, personally led by current CEO David Krane, became one of its most defining bets, alongside early stakes in Nest Labs, Slack, and Flatiron Health.",
     leadership: [
-      { name: "Bill Maris", role: "Founding CEO (2009)" },
+      { name: "Bill Maris", role: "Founding CEO (2009)", profileSlug: "bill-maris" },
       { name: "David Krane", role: "CEO & Managing Partner", profileSlug: "david-krane" }
     ],
     timeline: [
@@ -2762,8 +2762,8 @@ holdings: []
     thesis: "Sapphire Ventures was founded in 1996 as SAP's corporate venture arm, spun out as an independent firm in 2011 under CEO Nino Marakovic's leadership, and rebranded to its current name in 2014. That corporate origin left a lasting structural advantage: unlike most enterprise-focused funds, Sapphire operates both direct investing and a dedicated fund-of-funds strategy, Sapphire Partners, which backs early-stage venture funds across North America, Europe, and Israel alongside direct co-investments. The firm invests primarily at Series B through pre-IPO, writing checks from $5 million to $100 million to support companies staying private longer as they scale toward IPO-ready revenue, and has grown from $1.4 billion under management at spinout to more than $11 billion today across 226-plus portfolio companies, 30-plus public listings, and 50-plus acquisitions.",
     leadership: [
       { name: "Nino Marakovic", role: "CEO & Partner (Co-Founder)", profileSlug: "nino-marakovic" },
-      { name: "Jai Das", role: "President & Partner (Co-Founder)" },
-      { name: "Cathy Gao", role: "Partner" }
+      { name: "Jai Das", role: "President & Partner (Co-Founder)", profileSlug: "jai-das" },
+      { name: "Cathy Gao", role: "Partner", profileSlug: "cathy-gao" }
     ],
     timeline: [
       { year: "1996", event: "SAP launches its venture capital arm." },
@@ -2791,8 +2791,8 @@ holdings: []
     thesis: "Intel Capital was founded in 1991 as, by its own description, the first corporate venture capital firm, and it has spent more than three decades investing globally around Intel's core compute and connectivity platforms. The firm organizes its current portfolio into four groups - Cloud, Devices, Frontier, and Silicon - reflecting genuinely broad technical reach across AI infrastructure, edge systems, cybersecurity, 5G, and semiconductor tooling, not just software. Since 1991, Intel Capital has invested $12.9 billion across more than 1,582 companies worldwide, with 692 of them reaching a public listing or acquisition, giving it one of the largest cumulative track records of any strategic investor in technology.",
     leadership: [
    { name: "Anthony Lin", role: "Head of Intel Capital & Corporate Vice President", profileSlug: "anthony-lin" },
-      { name: "Mark Rostick", role: "Vice President & Senior Managing Director" },
-      { name: "Srini Ananth", role: "Managing Director" }
+      { name: "Mark Rostick", role: "Vice President & Senior Managing Director", profileSlug: "mark-rostick" },
+      { name: "Srini Ananth", role: "Managing Director", profileSlug: "srini-ananth" }
     ],
     timeline: [
       { year: "1991", event: "Intel founds Intel Capital as one of the first corporate venture capital arms." },
@@ -2817,9 +2817,9 @@ holdings: []
     aum: "$12B+",
     thesis: "Index Ventures traces its roots to Index Securities, a Swiss bond-trading firm founded by Gerald Rimer in 1976. His son Neil Rimer, along with David Rimer and Giuseppe Zocco, formally launched Index Ventures as a technology investment firm in Geneva in 1996. The firm opened its London office in 2002 - its current headquarters - and its San Francisco office in 2012, building a genuinely transatlantic practice that has backed Dropbox, Etsy, Discord, Robinhood, and Figma.",
     leadership: [
-      { name: "Neil Rimer", role: "Co-Founder" },
+      { name: "Neil Rimer", role: "Co-Founder", profileSlug: "neil-rimer" },
       { name: "Danny Rimer", role: "Partner", profileSlug: "danny-rimer" },
-      { name: "Mike Volpi", role: "General Partner" }
+      { name: "Mike Volpi", role: "General Partner", profileSlug: "mike-volpi" }
     ],
     timeline: [
       { year: "1996", event: "Neil Rimer, David Rimer, and Giuseppe Zocco found Index Ventures in Geneva." },
@@ -2848,8 +2848,8 @@ holdings: []
     thesis: "Peter Thiel, Ken Howery, and Luke Nosek - all veterans of PayPal's founding team - launched Founders Fund in 2005 with a deliberately contrarian philosophy: back ambitious, technically difficult companies that other VCs pass on for being too weird or too capital-intensive. That thesis led directly to the firm becoming the first institutional investor in both SpaceX and Palantir, two of the highest-conviction, longest-held bets in the firm's history.",
     leadership: [
       { name: "Peter Thiel", role: "Co-Founder", profileSlug: "peter-thiel" },
-      { name: "Ken Howery", role: "Co-Founder" },
-      { name: "Luke Nosek", role: "Co-Founder" }
+      { name: "Ken Howery", role: "Co-Founder", profileSlug: "ken-howery" },
+      { name: "Luke Nosek", role: "Co-Founder", profileSlug: "luke-nosek" }
     ],
     timeline: [
       { year: "2005", event: "Three PayPal Mafia veterans - Thiel, Howery, and Nosek - found the firm on a contrarian, hard-tech thesis." },
@@ -2901,7 +2901,7 @@ holdings: []
     aum: "$10B+ (recent fund)",
     thesis: "Bessemer's story starts nowhere near a startup: in 1911, steel magnate Henry Phipps Jr. - Andrew Carnegie's business partner and the second-largest shareholder in Carnegie Steel - formed a family office to manage the fortune from Carnegie Steel's sale. That family office didn't formally become a venture capital firm until the 1970s, when it opened a Silicon Valley outpost to chase the emerging tech industry, eventually spinning out as Bessemer Venture Partners in 1986 - making it, by a wide margin, the oldest firm in venture capital.",
     leadership: [
-      { name: "Henry Phipps Jr.", role: "Founder (1911, as Bessemer Trust)" },
+      { name: "Henry Phipps Jr.", role: "Founder (1911, as Bessemer Trust)", profileSlug: "henry-phipps-jr" },
       { name: "Byron Deeter", role: "Partner", profileSlug: "byron-deeter" }
     ],
     timeline: [
@@ -3791,8 +3791,8 @@ holdings: []
     thesis: "Qiming Venture Partners was founded in 2006 by Gary Rieschel, a former SoftBank executive, and Duane Kuang, a former Intel Capital investor, building one of China's most consistently successful venture platforms over two decades. All four of the firm's current managing partners have been with Qiming since its founding, an unusually stable leadership structure for a firm of its scale, and Qiming specializes in early-stage investing, with 70% of its deals coming at Series A, across technology, internet, and healthcare. That focus has produced an extraordinary track record: more than 480 companies backed, over 70 reaching unicorn status, and more than 180 completing IPOs or acquisitions, including Xiaomi, Meituan, Bilibili, ByteDance, and Zhihu. Qiming expanded into an independent US dollar fund in 2017 and now manages $9.5 billion across 18 USD and RMB funds, backed by longtime institutional partners including Princeton, Duke, MIT, and NYU.",
     leadership: [
       { name: "Gary Rieschel", role: "Founding Managing Partner", profileSlug: "gary-rieschel" },
-      { name: "Duane Kuang", role: "Founding Managing Partner" },
-      { name: "Nisa Leung", role: "Managing Partner" }
+      { name: "Duane Kuang", role: "Founding Managing Partner", profileSlug: "duane-kuang" },
+      { name: "Nisa Leung", role: "Managing Partner", profileSlug: "nisa-leung" }
     ],
     timeline: [
       { year: "2006", event: "Gary Rieschel and Duane Kuang found Qiming Venture Partners in Shanghai." },
@@ -3822,10 +3822,10 @@ holdings: []
     thesis: "U.S. Venture Partners was founded in 1981 by Bill Bowes, Stuart Moldaw, and Robert Sackman, making it one of the earliest true institutional venture firms in Silicon Valley, predating most of the industry's now-legendary names. Bowes brought a uniquely deep biotechnology pedigree from his role as a founding shareholder and first Chairman of Amgen, and that scientific and technical rigor has anchored USVP's investing across four decades since, concentrated in cybersecurity, enterprise software, consumer internet, and IT-enabled healthcare. The firm specializes in leading Series A and B rounds with a genuine domain-expert team of former entrepreneurs, CEOs, and technologists, and has invested more than $4.3 billion across more than 500 companies, with 93-plus completed IPOs including Check Point Software, SanDisk, Ross Stores, Box, and Yammer.",
     leadership: [
       { name: "Bill Bowes", role: "Co-Founder", profileSlug: "bill-bowes" },
-      { name: "Stuart Moldaw", role: "Co-Founder" },
-      { name: "Robert Sackman", role: "Co-Founder" },
-      { name: "Jacques Benkoski", role: "General Partner" },
-      { name: "Rick Lewis", role: "General Partner" }
+      { name: "Stuart Moldaw", role: "Co-Founder", profileSlug: "stuart-moldaw" },
+      { name: "Robert Sackman", role: "Co-Founder", profileSlug: "robert-sackman" },
+      { name: "Jacques Benkoski", role: "General Partner", profileSlug: "jacques-benkoski" },
+      { name: "Rick Lewis", role: "General Partner", profileSlug: "rick-lewis" }
     ],
     timeline: [
       { year: "1981", event: "Bill Bowes, Stuart Moldaw, and Robert Sackman found U.S. Venture Partners in Menlo Park." },
@@ -6783,9 +6783,9 @@ holdings: []
     aum: "$4.5B",
     thesis: "DCM Ventures was founded in 1996 as Doll Capital Management by Dixon Doll, a former Accel Partners investor who'd launched the industry's first telecom-focused fund, and David Chao, whose background spanned Apple Computer and McKinsey & Company. The two shared a genuinely early conviction that transformative technology companies wouldn't stay confined to Silicon Valley, making DCM the first American venture firm to invest in early-stage technology companies in China in 1999, followed by expansion into Japan, South Korea, and Southeast Asia - years before cross-border investing became standard practice. That geographic thesis, paired with an evolution from early bets on semiconductors and communications technology toward consumer internet, fintech, and SaaS, produced Musical.ly (later merged into TikTok), Bill.com, SoFi, Kuaishou, and Hims & Hers Health among more than 700 companies backed. DCM now manages $4.5 billion across ten funds, with seven completed IPOs since 2019 alone and 84 total exits across its history.",
     leadership: [
-      { name: "David Chao", role: "Co-Founder & General Partner" },
+      { name: "David Chao", role: "Co-Founder & General Partner", profileSlug: "david-chao" },
       { name: "Dixon Doll", role: "Co-Founder & Partner Emeritus", profileSlug: "dixon-doll" },
-      { name: "Jason Krikorian", role: "General Partner" }
+      { name: "Jason Krikorian", role: "General Partner", profileSlug: "jason-krikorian" }
     ],
     timeline: [
       { year: "1996", event: "Dixon Doll and David Chao found Doll Capital Management (later DCM Ventures) in Menlo Park." },
@@ -6814,7 +6814,7 @@ holdings: []
     thesis: "Oak HC/FT was co-founded in 2014 by Annie Lamont, Andrew Adams, and Patricia Kemp, all veterans with decades of combined healthcare and fintech investing experience, most notably Lamont's 28 years at Oak Investment Partners leading its healthcare and fintech practices. The firm applies that deep sector expertise exclusively to two complex, multi-trillion-dollar markets undergoing structural digital transformation, providing entrepreneurs with strategic counsel, board-level participation, and access to an extensive network of industry leaders alongside capital. That focused approach helped Oak HC/FT get named one of the ten best-performing venture capital firms in the world in 2023, backing companies including Blend, Ocrolus, ClearCo, Rapyd, and Oscar Health, and the firm now manages more than $5 billion after closing an oversubscribed $800 million Fund III just five years after founding.",
     leadership: [
       { name: "Annie Lamont", role: "Co-Founder & Managing Partner", profileSlug: "annie-lamont" },
-      { name: "Andrew Adams", role: "Co-Founder & Managing Partner" },
+      { name: "Andrew Adams", role: "Co-Founder & Managing Partner", profileSlug: "andrew-adams" },
       { name: "Patricia Kemp", role: "Co-Founder & Managing Partner" }
     ],
     timeline: [
@@ -7746,7 +7746,7 @@ holdings: []
     thesis: "Founded in 1995 by Jeff Horing and Jerry Murdock in New York, Insight built its identity on outbound sourcing long before that was common practice - in the firm's earliest years, the two co-founders would comb through trade publications by hand looking for software companies that were hiring, and therefore growing. That research-driven, find-them-before-anyone-else approach scaled into a firm managing tens of billions of dollars, still built around the same instinct to spot momentum early.",
     leadership: [
       { name: "Jeff Horing", role: "Co-Founder & Managing Director", profileSlug: "jeff-horing" },
-      { name: "Jerry Murdock", role: "Co-Founder (Managing Director until 2011)" }
+      { name: "Jerry Murdock", role: "Co-Founder (Managing Director until 2011)", profileSlug: "jerry-murdock" }
     ],
     timeline: [
       { year: "1995", event: "Jeff Horing and Jerry Murdock found the firm in New York, betting early on B2B software." },
@@ -7773,7 +7773,7 @@ holdings: []
     thesis: "Chase Coleman was only 25 when he launched Tiger Global (originally named Tiger Technology) in 2001, seeded with roughly $25 million from his mentor Julian Robertson after Robertson's own famed hedge fund, Tiger Management, wound down. Coleman built Tiger Global as a hybrid the industry hadn't quite seen before - a fund equally comfortable buying public stocks and writing private venture checks, a strategy that let it move unusually fast into deals other VCs took months to close.",
     leadership: [
       { name: "Chase Coleman", role: "Founder", profileSlug: "chase-coleman" },
-      { name: "Scott Shleifer", role: "Partner, led expansion into private equity" }
+      { name: "Scott Shleifer", role: "Partner, led expansion into private equity", profileSlug: "scott-shleifer" }
     ],
     timeline: [
       { year: "2001", event: "Chase Coleman, then 25, launches the firm (originally Tiger Technology) with $25 million seeded by mentor Julian Robertson." },
