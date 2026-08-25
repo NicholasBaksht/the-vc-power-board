@@ -1,603 +1,5 @@
 /* data-partners shard 2 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
-"eduardo-saverin": {
-    name: "Eduardo Saverin",
-    firm: "B Capital Group",
-    firmSlug: "b-capital-group",
-    title: "Co-Founder & Co-CEO",
-    joinedYear: 2015,
-    education: ["Harvard University"],
-    previousExperience: [
-      "Co-Founder, Facebook"
-    ],
-    investmentFocus: ["Southeast Asia & India", "Enterprise Software", "Fintech", "Cross-Border Technology"],
-    notableInvestments: [
-      { name: "Ninja Van", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 0,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2004", event: "Co-founds Facebook while a student at Harvard University." },
-      { year: "2012", event: "Meets Raj Ganguly in Singapore through mutual Harvard connections." },
-      { year: "2015", event: "Co-founds B Capital Group with Raj Ganguly and Howard Morgan." },
-      { year: "2016", event: "B Capital raises more than $143.6 million in its first fund, after already backing Ninja Van and Evidation Health." }
-    ],
-    biography: "Eduardo Saverin's public identity is inseparable from Facebook, which he co-founded as a Harvard student in 2004, but his second act at B Capital Group has been built around a distinctly different bet: that the next generation of transformative technology companies would emerge from cross-border, multinational markets rather than Silicon Valley alone. He met co-founder Raj Ganguly in Singapore in 2012 through mutual Harvard acquaintances, and the two built B Capital in 2015 with that international lens baked in from day one - Saverin, based in Singapore, has focused especially on investments across Southeast Asia and India, while Ganguly has overseen more of the firm's day-to-day operations from Los Angeles.",
-    sources: [
-      { label: "B Capital About", url: "https://b.capital/about/" },
-      { label: "Wikipedia - B Capital", url: "https://en.wikipedia.org/wiki/B_Capital" }
-    ]
-  },
-"garry-tan": {
-    name: "Garry Tan",
-    firm: "Y Combinator",
-    firmSlug: "y-combinator",
-    title: "President & CEO",
-    joinedYear: 2011,
-    education: ["BS, Computer Systems Engineering, Stanford University"],
-    previousExperience: [
-      "Early Designer & Engineering Manager, Palantir Technologies",
-      "Co-Founder, Posterous (YC S08, acquired by Twitter)",
-      "Partner, Y Combinator (2011-2015)",
-      "Co-Founder, Initialized Capital"
-    ],
-    investmentFocus: ["AI", "Developer Tools", "Consumer", "Founder-Led Company Building"],
-    researchState: "exhausted",
-    researchChecked: "2026-08-24",
-    notableInvestments: [
-    /*
-       Enriched 2026-08-24, 25-partner quality gate. Coinbase: his own
-       Initialized post records the 2012 first seed check he wrote; orgAtTime
-       keeps it at Initialized, not Y Combinator where he now works. */
-    { name: "Coinbase", ticker: "COIN", stage: "Seed", year: 2012, yearPrecision: "year",
-      orgAtTime: "initialized-capital",
-      evidence: [{ url: "https://blog.initialized.com/2021/04/lessons-from-coinbase-my-2-billion-success/", type: "firm-announcement", checked: "2026-08-23" }] },
-    { name: "Instacart", ticker: "CART" },
-    { name: "DoorDash", ticker: "DASH" }
-  ],
-    boardSeats: [],
-    ipoCount: 3,
-    majorExits: 1,
-    careerTimeline: [
-      { year: "2005", event: "Founds and later sells Posterous, a blogging platform acquired by Twitter, through YC's Summer 2008 batch." },
-      { year: "2011", event: "Joins Y Combinator as a partner, building key parts of the founder experience including Bookface and the Demo Day website." },
-      { year: "2011", event: "Co-founds Initialized Capital, which he grows into a firm managing more than $3.2 billion in assets." },
-      { year: "2023", event: "Becomes President and CEO of Y Combinator in January, succeeding Geoff Ralston." }
-    ],
-    biography: "Garry Tan brings a genuinely rare builder-to-investor-to-CEO path to Y Combinator's top job. After early engineering and design work at Palantir - where he designed the company's logo - he co-founded Posterous, a blogging platform that sold to Twitter through YC's own Summer 2008 batch, then became a YC partner himself from 2011 to 2015, building foundational pieces of the founder experience like Bookface. In parallel he co-founded Initialized Capital, growing it into a firm managing more than $3.2 billion before returning to YC as President and CEO in January 2023. He remains one of the most publicly visible leaders in venture capital, maintaining a large YouTube following, continuing to write code and build YC's internal tools himself, and pushing the organization hard into AI-first investing during his tenure.",
-    sources: [
-      { label: "Y Combinator People", url: "https://www.ycombinator.com/people" },
-      { label: "TechCrunch", url: "https://techcrunch.com/?p=2383301" }
-    ]
-  },
-"hernan-kazah": {
-    name: "Hernán Kazah",
-    firm: "Kaszek Ventures",
-    firmSlug: "kaszek-ventures",
-    title: "Co-Founder & Managing Partner",
-    joinedYear: 2011,
-    education: [],
-    previousExperience: [
-      "Finance Analyst, United Nations Development Program",
-      "Finance Analyst, Ministry of Economy of Argentina",
-      "Brand Manager, Procter & Gamble",
-      "Co-Founder & COO/CFO, MercadoLibre (12 years)"
-    ],
-    investmentFocus: ["Fintech", "Marketplaces", "Ecommerce", "Latin America"],
-    notableInvestments: [
-      { name: "Nubank", ticker: "NU" },
-      { name: "QuintoAndar", ticker: null },
-      { name: "Kavak", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 1,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "1999", event: "Co-founds MercadoLibre, Latin America's largest ecommerce and fintech company, from scratch." },
-      { year: "2007", event: "Serves as COO as MercadoLibre completes its Nasdaq IPO." },
-      { year: "2011", event: "Leaves MercadoLibre with Nicolás Szekasy to found Kaszek Ventures." },
-      { year: "2021", event: "Nubank, one of Kaszek's earliest fintech bets, goes public on the NYSE." }
-    ],
-    biography: "Hernán Kazah spent 12 years building MercadoLibre from scratch as a co-founder and COO before its 2007 Nasdaq IPO, giving him a genuinely rare credential when he and Nicolás Szekasy founded Kaszek Ventures in 2011: he'd already built the exact kind of category-defining Latin American technology company he was now trying to back in others. That operating experience shaped Kaszek's founder-first approach from day one - offering hands-on strategic guidance and local network access, not just capital, at a time when institutional venture capital had largely written off the region. His early conviction in Nubank, when it was still just founder David Vélez and a slide deck, became one of the clearest validations of that thesis once the Brazilian neobank went public in 2021.",
-    sources: [
-      { label: "AS/COA", url: "https://www.as-coa.org/speakers/hernan-kazah" },
-      { label: "Americas Quarterly", url: "https://www.americasquarterly.org/article/still-betting-big-argentine-venture-capitalists-hernan-kazah-and-nicolas-szekasy/" }
-    ]
-  },
-"maha-ibrahim": {
-    name: "Maha Ibrahim",
-    firm: "Canaan Partners",
-    firmSlug: "canaan-partners",
-    title: "General Partner",
-    joinedYear: 2000,
-    education: ["BA, Economics, Stanford University", "MA, Sociology, Stanford University", "PhD, Economics, MIT"],
-    previousExperience: [
-      "Vice President of Business Development & Internet Operations, Qwest",
-      "Consultant, Boston Consulting Group",
-      "Management Consultant, PricewaterhouseCoopers"
-    ],
-    investmentFocus: ["Ecommerce", "Enterprise & Cloud", "Social Gaming"],
-    notableInvestments: [
-      { name: "The RealReal", ticker: "REAL" }
-    ],
-    boardSeats: ["The RealReal"],
-    ipoCount: 1,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2000", event: "Joins Canaan Partners as General Partner after roles at Qwest, Boston Consulting Group, and PricewaterhouseCoopers." },
-      { year: "2011", event: "Becomes the first investor in The RealReal, sitting on the company's board." },
-      { year: "2018", event: "Co-founds All Raise, the nonprofit focused on diversity in venture capital." },
-      { year: "2019", event: "The RealReal goes public on the Nasdaq." }
-    ],
-    biography: "Maha Ibrahim has spent more than two decades at Canaan Partners, joining as a General Partner in 2000 after a career spanning Qwest, Boston Consulting Group, and PricewaterhouseCoopers, and building a reputation for spotting technology trends early - she was among the first investors to recognize the potential of social gaming. Her clearest and most personal proof point is The RealReal: she was the company's first investor, stayed on its board through years of growth, and remained through its 2019 Nasdaq IPO. She's also a founding member of All Raise, the nonprofit dedicated to increasing the number of women in venture capital and startup leadership, reflecting a career-long focus on funding and elevating female entrepreneurs.",
-    sources: [
-      { label: "Canaan - Maha Ibrahim", url: "https://www.canaan.com/team/maha-ibrahim" }
-    ]
-  },
-"sean-osullivan": {
-    name: "Sean O'Sullivan",
-    firm: "SOSV",
-    firmSlug: "sosv",
-    title: "Founder & Managing General Partner",
-    joinedYear: 1995,
-    education: [],
-    previousExperience: [
-      "Founder, MapInfo (street mapping technology, IPO 1994)",
-      "Founder, Carma Technology"
-    ],
-    investmentFocus: ["Deep Tech", "Hardware", "Biotech", "Climate"],
-    notableInvestments: [
-      { name: "Formlabs", ticker: null },
-      { name: "BitMEX", ticker: null },
-      { name: "Memphis Meats", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 1,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "1985", event: "Founds MapInfo, inventing street mapping technology for personal computers." },
-      { year: "1994", event: "MapInfo goes public." },
-      { year: "1995", event: "Founds SOSV as a personal 'super angel' investment vehicle." },
-      { year: "2009", event: "Launches Chinaccelerator, the first software accelerator in China." },
-      { year: "2012", event: "Co-founds HAX with Cyril Ebersweiler, SOSV's hardware-focused accelerator." },
-      { year: "2020", event: "SOSV ranks as the world's most active seed and early-stage investor in Q2, per Crunchbase data." }
-    ],
-    biography: "Sean O'Sullivan founded MapInfo in 1985, inventing street mapping technology for personal computers and taking the company public in 1994 - the exit that funded his second act as an investor. He founded SOSV in 1995 initially as a personal 'super angel' vehicle, investing his own money into two dozen companies before beginning to institutionalize the firm in 2007. His defining insight was that hardware and biotech founders couldn't be served by the same software-centric accelerator model that worked for internet startups, which led him to co-found HAX in 2012 and launch IndieBio in 2014 - vertical accelerators with genuine lab and fabrication infrastructure built in-house. That model made SOSV, by his own account, the world's most active investor across the US, Asia, and Europe combined in Q2 2020, a distinction few generalist venture firms could match.",
-    sources: [
-      { label: "SOSV - Sean O'Sullivan", url: "https://sosv.com/team/sean-osullivan/" },
-      { label: "Asia Tech Daily", url: "https://asiatechdaily.com/sean-osullivan-founder-and-managing-partner-of-sosv/" }
-    ]
-  },
-"jay-hoag": {
-    name: "Jay Hoag",
-    firm: "TCV",
-    firmSlug: "tcv",
-    title: "Founding General Partner",
-    joinedYear: 1995,
-    education: [],
-    previousExperience: [
-      "Managing Director, Chancellor Capital Management (12+ years)"
-    ],
-    investmentFocus: ["Consumer Internet", "Streaming & Media", "Crossover Investing"],
-    notableInvestments: [
-      { name: "Netflix", ticker: "NFLX" },
-      { name: "Facebook", ticker: "META" },
-      { name: "Zillow", ticker: null }
-    ],
-    boardSeats: ["Netflix (Chairman)", "Zillow"],
-    ipoCount: 6,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "1995", event: "Co-founds Technology Crossover Ventures with Rick Kimball after 12+ years at Chancellor Capital Management." },
-      { year: "1999", event: "Joins Netflix's board of directors." },
-      { year: "2002", event: "Netflix goes public on the Nasdaq, with TCV owning roughly 43% pre-IPO." },
-      { year: "2012", event: "Personally leads TCV's $260 million investment in Facebook ahead of its IPO." },
-      { year: "2026", event: "Continues to serve as Chairman of Netflix's board, more than 25 years after joining." }
-    ],
-    biography: "Jay Hoag has been a technology investor for more than 40 years, spending 12 years as a Managing Director at Chancellor Capital Management before co-founding Technology Crossover Ventures with Rick Kimball in 1995 - inventing the 'crossover' model of investing in both private and public technology companies from a single fund. His defining relationship is with Netflix: he joined the company's board in 1999, back when TCV owned roughly 43% of the pre-IPO company, and has stayed on as Chairman through Netflix's growth into a company worth more than $400 billion. He personally led TCV's $260 million investment in Facebook ahead of its 2012 IPO, doubling the position within months, and continues to chair TCV's Investment Committee more than three decades after founding the firm.",
-    sources: [
-      { label: "TCV - Jay Hoag", url: "https://www.tcv.com/team/jay-hoag" },
-      { label: "Forbes Profile", url: "https://www.forbes.com/profile/jay-hoag/" }
-    ]
-  },
-"nenad-marovac": {
-    name: "Nenad Marovac",
-    firm: "DN Capital",
-    firmSlug: "dn-capital",
-    title: "Founder & Managing Partner",
-    joinedYear: 2000,
-    education: ["BSc, Business Administration (cum laude, Distinction in Finance), San Diego State University", "MBA, Harvard Business School"],
-    previousExperience: [
-      "Financial Analyst, Leveraged Buyout Group, Bankers Trust",
-      "Advisor, Treuhandanstalt (East German privatization)",
-      "Partner, Advent International (London, TMT investments)"
-    ],
-    investmentFocus: ["Digital Marketplaces", "SaaS", "Fintech", "Consumer Internet"],
-    notableInvestments: [
-      { name: "AUTO1 Group", ticker: "AG1.DE" },
-      { name: "Shazam", ticker: null },
-      { name: "GoStudent", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 4,
-    majorExits: 5,
-    careerTimeline: [
-      { year: "1991", event: "Moves to Berlin, advising the Treuhandanstalt on privatizing East German state assets during reunification." },
-      { year: "2000", event: "Co-founds DN Capital with Harvard Business School classmate Steve Schlenker after a partnership at Advent International." },
-      { year: "2014", event: "Shazam, one of his select investments, is sold to Apple." },
-      { year: "2018", event: "Becomes Chairman of Invest Europe (formerly EVCA) for 2018/2019." },
-      { year: "2021", event: "AUTO1 Group goes public on the Frankfurt Stock Exchange at approximately €7.9 billion, Germany's largest tech IPO at the time." }
-    ],
-    biography: "Nenad Marovac's path to founding DN Capital ran through post-reunification Berlin, where he advised the Treuhandanstalt on privatizing East German state assets in the early 1990s - an experience that gave him deep, early relationships across Germany's business community, years before DACH became a fashionable venture destination. After a Harvard MBA and a partnership at Advent International, he co-founded DN Capital in 2000 with his Harvard classmate Steve Schlenker, and that German foothold compounded over two decades into a portfolio anchored by category leaders like AUTO1 Group, HomeToGo, and Mister Spex - all of which went public on the Frankfurt Stock Exchange in 2021. AUTO1's roughly €7.9 billion debut, Germany's largest tech IPO at the time, let DN Capital exit 95% of its stake, and Marovac has twice been named to the Forbes Midas List Europe for that track record.",
-    sources: [
-      { label: "DN Capital - Nenad Marovac", url: "https://www.dncapital.com/nenad" },
-      { label: "The Marque", url: "https://www.themarque.com/profile/nenad-marovac" }
-    ]
-  },
-"roy-bahat": {
-    name: "Roy Bahat",
-    firm: "Bloomberg Beta",
-    firmSlug: "bloomberg-beta",
-    title: "Head & Partner",
-    joinedYear: 2013,
-    education: ["Harvard College (Rhodes Scholar)"],
-    previousExperience: [
-      "President, IGN Entertainment (5 years)",
-      "Chairman, OUYA",
-      "Board Member, Revision3 (through its acquisition by Discovery)",
-      "Board Member, Flixster (through its purchase by Warner Bros.)"
-    ],
-    investmentFocus: ["Machine Intelligence", "Future of Work", "Enterprise Software"],
-    notableInvestments: [
-      { name: "Replit", ticker: null },
-      { name: "Flexport", ticker: null },
-      { name: "MasterClass", ticker: null },
-      { name: "Weights & Biases", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 0,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2000s", event: "Leads IGN Entertainment for five years as its president, prior to Bloomberg Beta." },
-      { year: "2012", event: "Becomes chairman of OUYA, the Kickstarter-backed game console startup." },
-      { year: "2013", event: "Launches Bloomberg Beta with an initial $75 million fund from Bloomberg L.P." },
-      { year: "2022", event: "Bloomberg Beta closes its fourth fund and first opportunity fund, both at $75 million." }
-    ],
-    biography: "Roy Bahat came to venture capital from media and gaming operations, not finance - a Harvard-educated Rhodes Scholar who spent five years running IGN Entertainment before chairing OUYA, the crowdfunded game console startup. He launched Bloomberg Beta in 2013 with a distinctly unconventional structure for a corporate-backed fund: full transparency, with the firm's entire operating manual published openly on GitHub, and a flat decision-making model where any of the firm's three partners can independently approve a deal. Bahat has been explicit that he measures success less by raw financial return and more by founder outcomes - he cites 93 founders who've become millionaires from Bloomberg Beta's backing as his proudest metric - and under his leadership the firm has grown from a single $75 million fund to $450 million while staying capitalized entirely by Bloomberg L.P.",
-    sources: [
-      { label: "Bloomberg Beta", url: "https://www.bloombergbeta.com" },
-      { label: "Newcomer", url: "https://www.newcomer.co/p/my-conversation-with-roy-bahat-as" }
-    ]
-  },
-"allison-goldberg": {
-    name: "Allison Goldberg",
-    firm: "Comcast Ventures",
-    firmSlug: "comcast-ventures",
-    title: "Managing Partner",
-    joinedYear: 2021,
-    education: [],
-    previousExperience: [
-      "Group Managing Director & SVP, Time Warner Investments"
-    ],
-    investmentFocus: ["Consumer Internet", "Enterprise Software", "Media & Advertising Technology"],
-    notableInvestments: [],
-    boardSeats: [],
-    ipoCount: 0,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2021", event: "Joins Comcast Ventures as Managing Partner in November, after running Time Warner Investments, where she oversaw checks of up to $25 million into private companies." }
-    ],
-    biography: "Allison Goldberg took over as Managing Partner of Comcast Ventures in November 2021, arriving from Time Warner Investments, where she ran the group responsible for checks of up to $25 million into private companies for both strategic and financial return. That background in balancing corporate strategic value with genuine financial investing discipline is central to how she now runs Comcast Ventures - a firm whose entire premise depends on generating real returns while giving portfolio companies genuine access to one of the largest media and telecom platforms in the world.",
-    sources: [
-      { label: "Comcast Ventures Team", url: "https://comcastventures.com/team/" },
-      { label: "Wikipedia - Comcast Ventures", url: "https://en.wikipedia.org/wiki/Comcast_Ventures" }
-    ]
-  },
-"saemin-ahn": {
-    name: "Saemin Ahn",
-    firm: "Rakuten Capital",
-    firmSlug: "rakuten-capital",
-    title: "Founding & Managing Partner",
-    joinedYear: 2013,
-    education: [],
-    previousExperience: [],
-    investmentFocus: ["Machine Learning & AI", "New Energy", "Robotics", "Aerospace", "Mobility"],
-    notableInvestments: [
-      { name: "Lyft", ticker: "LYFT" }
-    ],
-    boardSeats: [],
-    ipoCount: 1,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2013", event: "Founds Rakuten Ventures, later Rakuten Capital." },
-      { year: "2015", event: "Leads Rakuten's $300 million investment in Lyft's Series E, part of a $530 million round." },
-      { year: "2019", event: "Lyft goes public on the Nasdaq." }
-    ],
-    biography: "Saemin Ahn founded Rakuten Ventures - now Rakuten Capital - in 2013, and has run its international investment strategy from Singapore ever since, taking positions across machine learning, new energy, robotics, and aerospace on behalf of one of Japan's largest internet conglomerates. His clearest and boldest move came in 2015, when he led Rakuten's $300 million commitment to Lyft's $530 million Series E, buying an 11.9% stake in the ride-sharing company years before it went public. That willingness to write outsized, conviction-driven checks into American consumer technology - unusual for a Japanese ecommerce company at the time - has defined Rakuten Capital's identity as a genuinely global corporate investor rather than a firm limited to backing Rakuten's own strategic interests.",
-    sources: [
-      { label: "Rakuten Capital", url: "https://capital.rakuten.com/" }
-    ]
-  },
-"jim-adler": {
-    name: "Jim Adler",
-    firm: "Toyota Ventures",
-    firmSlug: "toyota-ventures",
-    title: "Founder & General Partner",
-    joinedYear: 2017,
-    education: [],
-    previousExperience: [
-      "VP of Data & Business Development, Toyota Research Institute",
-      "VP of Products & Marketing, Metanautix (acquired by Microsoft)",
-      "VP of Data Systems & Chief Privacy Officer, Intelius (acquired by H.I.G. Capital)",
-      "Founder, VoteHere (cryptographic secure online voting, funded by Cisco and HP)"
-    ],
-    investmentFocus: ["AI", "Robotics", "Autonomous Mobility", "Climate & Frontier Technology"],
-    notableInvestments: [
-      { name: "Nuro", ticker: null },
-      { name: "May Mobility", ticker: null },
-      { name: "Boxbot", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 0,
-    majorExits: 2,
-    careerTimeline: [
-      { year: "2016", event: "Joins Toyota Research Institute as VP of Data and Business Development, after founding VoteHere and operating roles at Metanautix and Intelius." },
-      { year: "2017", event: "Founds Toyota AI Ventures in July, launching with an initial $100 million fund." },
-      { year: "2021", event: "Leads the firm's rebrand to Toyota Ventures, launching dedicated Frontier and Climate funds." },
-      { year: "2024", event: "Announces two additional $150 million funds, pushing total AUM above $800 million." }
-    ],
-    biography: "Jim Adler brought a genuinely unusual mix of entrepreneurial, privacy, and data engineering experience to Toyota when he joined Toyota Research Institute in 2016, having previously founded VoteHere, a cryptographic online voting startup funded by Cisco and HP, and held VP roles at Metanautix (acquired by Microsoft) and Intelius (acquired by H.I.G. Capital). What began as work training Toyota's AI systems on driving data turned into a pitch for a dedicated venture fund, and in July 2017 he became founding managing director of Toyota AI Ventures. He's structured the firm from day one around founders as the primary customer rather than Toyota itself - an intentional choice, he's said, to keep the firm credible with entrepreneurs rather than behaving like a typical strategic investor. Under his leadership Toyota Ventures rebranded in 2021, expanded into climate and frontier technology, and grew assets under management past $800 million by 2024.",
-    sources: [
-      { label: "Toyota Ventures", url: "https://toyota.ventures/" },
-      { label: "Global Venturing Powerlist 2025", url: "https://globalventuring.com/corporate/awards/powerlist-2025-jim-adler/" }
-    ]
-  },
-"ben-davey": {
-    name: "Ben Davey",
-    firm: "Barclays UK Ventures",
-    firmSlug: "barclays-uk-ventures",
-    title: "CEO",
-    joinedYear: 2019,
-    education: [],
-    previousExperience: [
-      "Group Head of Strategy, Barclays",
-      "Mergers & Acquisitions specialist"
-    ],
-    investmentFocus: ["Fintech", "Internal Venture Building", "Digital Banking Infrastructure"],
-    notableInvestments: [],
-    boardSeats: [],
-    ipoCount: 0,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2019", event: "Becomes CEO of Barclays UK Ventures, after serving as Barclays' Group Head of Strategy." }
-    ],
-    biography: "Ben Davey moved from mergers and acquisitions into Barclays' internal strategy function before taking the CEO role at Barclays UK Ventures, and his approach reflects that dealmaking background applied to venture building rather than pure corporate investing. He's described the unit's model explicitly as trying to replicate a startup mentality inside a large bank - a multidisciplinary team where developers, data scientists, and M&A professionals work alongside each other, with roughly half the team holding direct investment experience and 15 founders or co-founders on staff. Under his leadership, the unit explores new business models through a mix of organic build-out, commercial partnerships, and venture investments, rather than functioning as a conventional corporate VC writing checks into companies it never actively builds.",
-    sources: [
-      { label: "Barclays - Barclays UK Ventures", url: "https://home.barclays/news/2019/2/barclays-uk-ventures--developing-business-models-for-the-future-/" }
-    ]
-  },
-"sudhir-sethi": {
-    name: "Sudhir Sethi",
-    firm: "Chiratae Ventures",
-    firmSlug: "chiratae-ventures",
-    title: "Founder & Chairman",
-    joinedYear: 2006,
-    education: ["Engineering degree, Electronics & Telecommunications", "MBA, Faculty of Management Studies, University of Delhi"],
-    previousExperience: [
-      "12 years at Wipro before moving into venture capital"
-    ],
-    investmentFocus: ["Consumer Internet", "Deep Tech", "Fintech", "Enterprise Software", "Healthcare"],
-    notableInvestments: [
-      { name: "Flipkart", ticker: null },
-      { name: "Lenskart", ticker: null },
-      { name: "PolicyBazaar", ticker: null },
-      { name: "FirstCry", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 5,
-    majorExits: 18,
-    careerTimeline: [
-      { year: "1994", event: "Leaves Wipro after 12 years to move into venture capital." },
-      { year: "2001", event: "Recognized by Red Herring as one of India's leading venture capitalists." },
-      { year: "2006", event: "Founds IDG Ventures India with TC Meenakshisundaram." },
-      { year: "2007", event: "Backs Flipkart at an early stage." },
-      { year: "2018", event: "Leads the firm's rebrand from IDG Ventures India to Chiratae Ventures after IDG's global dissolution." },
-      { year: "2021", event: "PolicyBazaar goes public, one of five IPOs Chiratae has backed." }
-    ],
-    biography: "Sudhir Sethi spent 12 years at Wipro before venture capital pulled him away from routine corporate life, and he founded what became Chiratae Ventures in 2006 with TC Meenakshisundaram, initially as the Indian arm of IDG Ventures. The defining test of his leadership came when IDG dissolved as a global conglomerate mid-way through the firm's second fundraise - rather than fold, Sethi rebuilt the firm entirely around domestic Indian capital, betting that local investors would back Indian entrepreneurs with more conviction than foreign LPs ever could. That bet built one of India's most consequential venture portfolios: early stakes in Flipkart, Myntra, Lenskart, and PolicyBazaar, five portfolio IPOs, and $1.3 billion under management across seven funds. Sethi sits on Chiratae's Global Advisory Board alongside Ratan Tata and continues to serve on India's National Venture Capital Association executive committee.",
-    sources: [
-      { label: "Chiratae Ventures Team", url: "https://www.chiratae.com/team/" },
-      { label: "Wikipedia - Chiratae Ventures", url: "https://en.wikipedia.org/wiki/Chiratae_Ventures" }
-    ]
-  },
-"richard-liu-5y": {
-    name: "Richard Liu",
-    firm: "5Y Capital",
-    firmSlug: "5y-capital",
-    title: "Founding Partner",
-    joinedYear: 2008,
-    education: ["China Europe International Business School"],
-    previousExperience: [
-      "Investment Professional, Morningside Group"
-    ],
-    investmentFocus: ["Information Technology", "Biotechnology", "Consumer", "Electric Vehicles"],
-    notableInvestments: [
-      { name: "Xiaomi", ticker: "1810.HK" },
-      { name: "XPeng", ticker: "XPEV" },
-      { name: "Kingsoft", ticker: null },
-      { name: "Horizon Robotics", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 4,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "1999", event: "Joins the Morningside Group after attending China Europe International Business School." },
-      { year: "2008", event: "Co-founds Morningside Venture Capital, later 5Y Capital, with Ken Shi." },
-      { year: "2018", event: "Xiaomi, where he was the first institutional investor, goes public in Hong Kong at a roughly 800x return." },
-      { year: "2026", event: "Named to the Forbes Midas List for the eleventh consecutive year, with 5Y Capital managing $6 billion in global capital." }
-    ],
-    biography: "Richard Liu joined the Morningside Group in 1999 after meeting co-founder Ken Shi at business school, and the two spun out their own fund in 2008 under the Morningside name, with the Chan family's blessing and backing as anchor investor. His defining bet came early: Liu was the first institutional investor in Xiaomi, a position that returned a reported 800 times its original investment once the smartphone maker went public in Hong Kong in 2018. He's now spent 11 consecutive years on the Forbes Midas List, with a portfolio spanning information technology, biotechnology, and consumer businesses including Xiaomi, XPeng, Kingsoft, and Horizon Robotics, and 5Y Capital under his leadership now manages $6 billion in global capital.",
-    sources: [
-      { label: "Forbes Profile", url: "https://www.forbes.com/profile/richard-liu/" },
-      { label: "The Wire China", url: "https://www.thewirechina.com/2021/07/18/who-is-5y-capital/" }
-    ]
-  },
-"shinichi-fuki": {
-    name: "Shinichi Fuki",
-    firm: "JAFCO Group",
-    firmSlug: "jafco-group",
-    title: "President & CEO",
-    joinedYear: null,
-    education: [],
-    previousExperience: [],
-    investmentFocus: ["Venture Investment", "Buyout Investment", "AI", "Space Technology"],
-    notableInvestments: [
-      { name: "Mercari", ticker: "4385.T" },
-      { name: "Cybozu", ticker: "4776.T" }
-    ],
-    boardSeats: [],
-    ipoCount: 0,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2018", event: "Portfolio company Mercari goes public on the Tokyo Stock Exchange during his tenure leading JAFCO." },
-      { year: "2025", event: "Under his leadership, JAFCO's assets under management reach approximately $6.8 billion, with more than 1,041 cumulative portfolio IPOs." }
-    ],
-    biography: "Shinichi Fuki has led JAFCO Group through more than five decades of the firm's history as President and CEO, overseeing what has become Japan's largest and longest-running independent venture capital institution. Under his leadership, JAFCO has continued to operate its dual venture-and-buyout model, supporting startups from pre-founding stages through IPO while also managing later-stage buyout investments in established small and mid-sized businesses. Fuki has guided the firm through a period of renewed strategic focus on AI, space technology, and nuclear fusion, aligning JAFCO's more recent bets with Japan's broader national technology priorities, while the firm's total capital commitments across domestic and international funds have grown past ¥1 trillion.",
-    sources: [
-      { label: "JAFCO Group", url: "https://www.jafco.co.jp/english/" },
-      { label: "SuperScout", url: "https://superscout.co/investor/jafco-group" }
-    ]
-  },
-"thomas-tsao": {
-    name: "Thomas Tsao",
-    firm: "Gobi Partners",
-    firmSlug: "gobi-partners",
-    title: "Co-Founder & Chairman",
-    joinedYear: 2002,
-    education: ["BA, Economics, Harvard University"],
-    previousExperience: [
-      "Investor, WI Harper",
-      "CEO, DMG (2 years)",
-      "Board Member, Middle East Venture Capital Association"
-    ],
-    investmentFocus: ["Fintech", "Consumer", "Mobility", "TaqwaTech (Muslim Digital Economy)"],
-    notableInvestments: [
-      { name: "Airwallex", ticker: null },
-      { name: "Tuniu", ticker: null },
-      { name: "Carsome", ticker: null },
-      { name: "Prenetics", ticker: "PRE" }
-    ],
-    boardSeats: ["Endeavor Malaysia"],
-    ipoCount: 2,
-    majorExits: 4,
-    careerTimeline: [
-      { year: "2002", event: "Co-founds Gobi Partners with Lawrence Tse and Wai Kit Lau, all previously at WI Harper." },
-      { year: "2006", event: "Founds SEO China, a nonprofit that has since provided more than 200 internships to underserved college students." },
-      { year: "2013", event: "Named to the Forbes List of China's Top VCs, a recognition repeated annually through 2017." },
-      { year: "2015", event: "Relocates to Kuala Lumpur, establishing several funds with Malaysia's MAVCAP." },
-      { year: "2018", event: "Launches Gobi's ASEAN SuperSeed Fund, backing Carsome and Airwallex at early stages." }
-    ],
-    biography: "Thomas Tsao has spent more than 30 years across venture capital, operations, and investment banking, and co-founded Gobi Partners in 2002 with two fellow WI Harper alumni to build one of the earliest genuinely Pan-Asian venture platforms. His early China portfolio includes first-round bets on Airwallex, Teambition (acquired by Alibaba), and Tuniu (Nasdaq IPO), earning him five consecutive years on the Forbes List of China's Top VCs. His 2015 relocation to Kuala Lumpur opened an entirely new chapter for the firm, establishing funds with Malaysia's MAVCAP and expanding Gobi into Southeast Asian companies like Carsome, Funding Societies, and Kumu. He's now building Gobi's TaqwaTech practice, one of the first dedicated venture theses focused on the global Muslim digital economy, and remains active in nonprofit work through SEO China, which he founded in 2006.",
-    sources: [
-      { label: "Gobi Partners Team", url: "https://www.gobi.vc/team/thomas-g-tsao" },
-      { label: "The Org", url: "https://theorg.com/org/gobi-partners/org-chart/thomas-g-tsao" }
-    ]
-  },
-"reshma-sohoni": {
-    name: "Reshma Sohoni",
-    firm: "Seedcamp",
-    firmSlug: "seedcamp",
-    title: "Co-Founder & Managing Partner",
-    joinedYear: 2007,
-    education: ["BS, Engineering & Business, University of Pennsylvania", "MBA, INSEAD"],
-    previousExperience: [
-      "Vodafone",
-      "Jefferies Broadview"
-    ],
-    investmentFocus: ["Fintech", "SaaS", "AI", "US Expansion for European Founders"],
-    notableInvestments: [
-      { name: "Wise", ticker: "WISE" },
-      { name: "UiPath", ticker: "PATH" },
-      { name: "Revolut", ticker: null },
-      { name: "Synthesia", ticker: null }
-    ],
-    boardSeats: [],
-    ipoCount: 1,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2007", event: "Co-founds Seedcamp with Saul Klein in London, after roles at Vodafone and Jefferies Broadview." },
-      { year: "2019", event: "Leads Seedcamp's first backing of Synthesia in April, years before its $4 billion Series E valuation." },
-      { year: "2021", event: "Awarded an MBE by Queen Elizabeth II for contributions to the British tech ecosystem; UiPath goes public at a $35 billion valuation." },
-      { year: "2025", event: "Returns to the Forbes Midas Seed List for the fourth time." },
-      { year: "2026", event: "Leads Seedcamp's $320 million raise and US expansion in June." }
-    ],
-    biography: "Reshma Sohoni was born in India, raised in the U.S., and studied engineering and business at the University of Pennsylvania before an INSEAD MBA and roles at Vodafone and Jefferies Broadview - a genuinely international path that shaped Seedcamp's identity as a firm built to help European founders think globally from day one. She co-founded the firm with Saul Klein in 2007, and has stayed personally involved with its biggest outcomes ever since: she was Synthesia's first backer in 2019, years before its $4 billion valuation, and Seedcamp's early conviction in Wise, Revolut, and UiPath produced three of Europe's genuine decacorns. She received an MBE from Queen Elizabeth II in 2021 for her contributions to the British tech ecosystem, has advised the U.K. government's Digital Economy Council, and returned to the Forbes Midas Seed List for a fourth time in 2025.",
-    sources: [
-      { label: "Forbes Profile", url: "https://www.forbes.com/profile/reshma-sohoni/" },
-      { label: "Seedcamp Team", url: "https://seedcamp.com/our-team/" }
-    ]
-  },
-"alex-von-frankenberg": {
-    name: "Alex von Frankenberg",
-    firm: "High-Tech Gründerfonds",
-    firmSlug: "high-tech-grunderfonds",
-    title: "Co-Founder & Managing Director",
-    joinedYear: 2005,
-    education: [],
-    previousExperience: [],
-    investmentFocus: ["Deep Tech", "Industrial Tech", "Digital Tech", "Life Sciences"],
-    notableInvestments: [
-      { name: "CureVac", ticker: "CVAC" }
-    ],
-    boardSeats: [],
-    ipoCount: 1,
-    majorExits: 0,
-    careerTimeline: [
-      { year: "2005", event: "Co-founds High-Tech Gründerfonds in Bonn, becoming Managing Director." },
-      { year: "2020", event: "Portfolio company CureVac goes public on the Nasdaq during his tenure." },
-      { year: "2026", event: "Continues leading HTGF more than two decades after its founding, with fund volume surpassing €3 billion." }
-    ],
-    biography: "Alex von Frankenberg has led High-Tech Gründerfonds as Managing Director since co-founding it in 2005, running what remains one of the most structurally distinctive venture funds in Europe - a public-private partnership where his investment committee includes not just venture professionals but representatives from the German government, KfW Capital, and corporate limited partners like BASF and Bosch. That hybrid governance model gives HTGF a genuine developmental mandate alongside its commercial one: closing the equity gap for early-stage German technology companies that might otherwise struggle to find seed capital. Under his two-decade leadership, the fund has financed more than 800 startups, achieved nearly 200 exits, and backed CureVac through its 2020 Nasdaq IPO, one of the clearest proof points that patient, mission-driven seed capital can still produce genuinely global outcomes.",
-    sources: [
-      { label: "Altss - HTGF Profile", url: "https://altss.com/profile/high-tech-grunderfonds" },
-      { label: "High-Tech Gründerfonds", url: "https://www.htgf.de" }
-    ]
-  },
-"noubar-afeyan": {
-    name: "Noubar Afeyan",
-    firm: "Flagship Pioneering",
-    firmSlug: "flagship-pioneering",
-    title: "Founder & CEO",
-    joinedYear: 2000,
-    education: ["BS, McGill University", "PhD, Biochemical Engineering, MIT"],
-    previousExperience: [
-      "Founder & CEO, PerSeptive Biosystems (grew to $100M annual revenue, acquired by PerkinElmer/Applera)",
-      "SVP & Chief Business Officer, Applera, overseeing the creation of Celera Genomics",
-      "Founding team member & investor, Chemgenics Pharmaceuticals (acquired by Millennium), Color Kinetics (acquired by Philips), Adnexus Therapeutics (acquired by Bristol-Myers Squibb)"
-    ],
-    investmentFocus: ["Biotechnology", "mRNA Medicine", "Life Sciences", "Company Creation"],
-    notableInvestments: [
-      { name: "Moderna", ticker: "MRNA" },
-      { name: "Rubius Therapeutics", ticker: null }
-    ],
-    boardSeats: ["Moderna (Chairman)"],
-    ipoCount: 1,
-    majorExits: 4,
-    careerTimeline: [
-      { year: "1987", event: "Completes his doctoral work in biochemical engineering at MIT." },
-      { year: "1998", event: "PerSeptive Biosystems, which he founded and grew to $100 million in annual revenue, is acquired by PerkinElmer/Applera." },
-      { year: "2000", event: "Founds Flagship Pioneering in Cambridge." },
-      { year: "2010", event: "Co-founds Moderna within Flagship's internal venture creation process." },
-      { year: "2018", event: "Moderna goes public on the Nasdaq in December." },
-      { year: "2025", event: "Awarded the National Medal of Technology and Innovation." }
-    ],
-    biography: "Noubar Afeyan fled the Lebanese Civil War with his family as a teenager, immigrating first to Canada and then the United States, before completing his PhD in biochemical engineering at MIT in 1987. He founded and built PerSeptive Biosystems to $100 million in annual revenue before its acquisition, then founded Flagship Pioneering in 2000 with an unusual model for venture capital: inventing companies internally rather than only funding outside founders. His best-known creation is Moderna, which he co-founded in 2010 and has chaired ever since - a company whose mRNA platform, developed years before anyone anticipated a pandemic, became central to the world's COVID-19 response. Afeyan has helped launch more than 70 public and private life sciences and technology companies over his career and was awarded the National Medal of Technology and Innovation in 2025.",
-    sources: [
-      { label: "Flagship Pioneering", url: "https://www.flagshippioneering.com/people/noubar-afeyan" },
-      { label: "Wikipedia - Noubar Afeyan", url: "https://en.wikipedia.org/wiki/Noubar_Afeyan" }
-    ]
-  },
 "nigel-morris": {
     name: "Nigel Morris",
     firm: "QED Investors",
@@ -7306,5 +6708,2131 @@ Object.assign(partnerProfiles, {
         url: "https://stepignite.com/2020/09/24/life-sciences-partnership-claire-brown/2020/"
       }
     ]
+  },
+"lilly-bussmann": {
+    name: "Lilly Bussmann",
+    firm: "Oxford Science Enterprises",
+    firmSlug: "oxford-science-enterprises",
+    title: "Partner",
+    joinedYear: 2021,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Philosophy/Politics/Economics, University of Oxford"
+    ],
+    previousExperience: [
+      "Partner, RT Ventures",
+      "Investor, Mosaic Ventures",
+      "Analyst, Lansdowne Partners"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2021",
+        event: "Rejoined Oxford Science Enterprises as Partner."
+      }
+    ],
+    biography: "Lilly Bussmann is a Partner at Oxford Science Enterprises who rejoined the firm in 2021. Earlier she was a founding Principal at OSE and later a Partner at RT Ventures. She also worked at Mosaic Ventures and Lansdowne Partners. She holds a BA in PPE from Oxford University.",
+    sources: [
+      {
+        label: "Oxford Science Enterprises - Lilly Bussmann",
+        url: "https://www.oxfordscienceenterprises.com/who/lilly-bussmann"
+      }
+    ]
+  },
+"sanne-de-jongh": {
+    name: "Sanne De Jongh",
+    firm: "Oxford Science Enterprises",
+    firmSlug: "oxford-science-enterprises",
+    title: "Partner, Life Sciences",
+    joinedYear: 2023,
+    sectors: [
+      "Healthcare"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.oxfordscienceenterprises.com/who/sanne-de-jongh",
+    education: [
+      "BSc, Biochemistry, Leiden University",
+      "MSc, Biochemical Engineering, Delft University of Technology"
+    ],
+    previousExperience: [
+      "Investment Manager, Gilde Healthcare",
+      "Associate, Anterra Capital",
+      "Analyst, M Ventures"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2023",
+        event: "Joined Oxford Science Enterprises as Partner, Life Sciences."
+      }
+    ],
+    biography: "Sanne De Jongh is Partner (Life Sciences) at Oxford Science Enterprises, joining in 2023. She previously held investment roles at biotech venture funds Gilde Healthcare, Anterra Capital, and M Ventures. She earned a BSc in Biochemistry from Leiden University and an MSc in Biochemical Engineering from Delft University of Technology.",
+    sources: [
+      {
+        label: "Oxford Science Enterprises - Sanne De Jongh",
+        url: "https://www.oxfordscienceenterprises.com/who/sanne-de-jongh"
+      }
+    ]
+  },
+"nick-dixon-clegg": {
+    name: "Nick Dixon-Clegg",
+    firm: "Oxford Science Enterprises",
+    firmSlug: "oxford-science-enterprises",
+    title: "Partner, Head of Independent Investments",
+    joinedYear: 2020,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "MA (Cantab), Natural Sciences, University of Cambridge"
+    ],
+    previousExperience: [
+      "Investment Principal, Valiance",
+      "Private Equity Investor, Nordic Capital",
+      "Investment Banker, Bank of America Merrill Lynch"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2020",
+        event: "Joined Oxford Science Enterprises as Partner."
+      }
+    ],
+    biography: "Nick Dixon-Clegg is Partner and Head of Independent Investments at Oxford Science Enterprises. He joined OSE in 2020. Previously, he was an Investment Principal at MedTech VC firm Valiance, and earlier worked in private equity at Nordic Capital and in banking at Bank of America Merrill Lynch. He holds a degree in Natural Sciences from Cambridge University.",
+    sources: [
+      {
+        label: "Oxford Science Enterprises - Nick Dixon-Clegg",
+        url: "https://www.oxfordscienceenterprises.com/who/nick-dixon-clegg"
+      }
+    ]
+  },
+"ben-sun": {
+    name: "Ben Sun",
+    firm: "Primary Venture Partners",
+    firmSlug: "primary-venture-partners",
+    title: "Partner, Co-CIO",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Economics, University of Michigan"
+    ],
+    previousExperience: [
+      "Founder, Community Connect (BlackPlanet)",
+      "Founder, LaunchTime"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ben Sun is Cofounder and Co-CIO of Primary Venture Partners. He is a two-time tech founder (notably creating early social networks Community Connect/BlackPlanet and LaunchTime). He has been named to the Forbes Midas List and holds a BA in Economics from the University of Michigan.",
+    sources: [
+      {
+        label: "Primary - Ben Sun",
+        url: "https://www.primary.vc/team/ben-sun"
+      },
+      {
+        label: "Forbes Profile – Ben Sun",
+        url: "https://tollbit.forbes.com/profile/ben-sun/"
+      }
+    ]
+  },
+"brian-schechter": {
+    name: "Brian Schechter",
+    firm: "Primary Venture Partners",
+    firmSlug: "primary-venture-partners",
+    title: "Partner, Infrastructure",
+    joinedYear: 2020,
+    sectors: [
+      "Infrastructure"
+    ],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://www.primary.vc/team/brian-schechter",
+    education: [],
+    previousExperience: [
+      "Founder & CEO, SelfMade",
+      "Co-founder, HowAboutWe"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2020",
+        event: "Joined Primary Venture Partners as Partner, Infrastructure."
+      }
+    ],
+    biography: "Brian Schechter is a Partner (Infrastructure) at Primary Venture Partners. He joined Primary in 2020 after co-founding and serving as CEO of consumer brand startup SelfMade (2015–2020). He is a two-time founder turned investor who has led investments in AI infrastructure companies, including co-leading the Seed round for AI hardware firm Etched.",
+    sources: [
+      {
+        label: "Primary - Brian Schechter",
+        url: "https://www.primary.vc/team/brian-schechter"
+      },
+      {
+        label: "Mesh (LinkedIn scrape) – Brian Schechter",
+        url: "https://me.sh/profile/brian-schechter"
+      }
+    ]
+  },
+"cassie-young": {
+    name: "Cassie Young",
+    firm: "Primary Venture Partners",
+    firmSlug: "primary-venture-partners",
+    title: "Partner, GTM Tech",
+    joinedYear: null,
+    sectors: [
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://www.primary.vc/team/cassie-young",
+    education: [
+      "BS, Duke University",
+      "MBA, Dartmouth College (Tuck)"
+    ],
+    previousExperience: [
+      "Chief Revenue Officer, Sailthru",
+      "Head of M&A, Marigold Ventures"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Cassie Young is a Partner (GTM Tech) at Primary Venture Partners. She has 15 years of go-to-market leadership experience, including serving as Chief Revenue Officer at Sailthru. She also led a major marketing technology roll-up at private equity firm Marigold. She holds degrees from Duke University and Dartmouth College (Tuck).",
+    sources: [
+      {
+        label: "Primary - Cassie Young",
+        url: "https://www.primary.vc/team/cassie-young"
+      }
+    ]
+  },
+"emily-man": {
+    name: "Emily Man",
+    firm: "Primary Venture Partners",
+    firmSlug: "primary-venture-partners",
+    title: "Partner, Fintech & Enterprise AI",
+    joinedYear: null,
+    sectors: [
+      "Fintech",
+      "AI"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.primary.vc/team/emily-man",
+    education: [
+      "BA (summa cum laude), Columbia University"
+    ],
+    previousExperience: [
+      "Investor, Redpoint Ventures",
+      "Investor, Point72 Ventures"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Emily Man is a Partner (Fintech & Enterprise AI) at Primary Venture Partners. She previously invested at Redpoint Ventures and Point72 Ventures across early and later stages before joining Primary. She graduated summa cum laude from Columbia University.",
+    sources: [
+      {
+        label: "Primary - Emily Man",
+        url: "https://www.primary.vc/team/emily-man"
+      }
+    ]
+  },
+"brian-murray": {
+    name: "Brian Murray",
+    firm: "Craft Ventures",
+    firmSlug: "craft-ventures",
+    title: "Partner & COO",
+    joinedYear: 2017,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Leadership roles at Yammer",
+      "Leadership roles at Zenefits"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2017",
+        event: "Joined Craft Ventures as Partner & COO."
+      }
+    ],
+    biography: "Brian Murray is Partner & COO at Craft Ventures. He has been with the firm since its founding in 2017. Before Craft, he held leadership roles at SaaS companies Yammer and Zenefits, and he built much of Craft’s investment infrastructure after joining.",
+    sources: [
+      {
+        label: "Craft Ventures - Brian Murray",
+        url: "https://www.craftventures.com/team/brian-murray"
+      }
+    ]
+  },
+"michael-robinson": {
+    name: "Michael Robinson",
+    firm: "Craft Ventures",
+    firmSlug: "craft-ventures",
+    title: "Partner, Head of Investment Team",
+    joinedYear: 2022,
+    sectors: [
+      "Cybersecurity",
+      "AI"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.craftventures.com/team/michael-robinson",
+    education: [],
+    previousExperience: [
+      "Lead Investor, Georgian Partners",
+      "Associate, Goldman Sachs (TMT Group)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2022",
+        event: "Joined Craft Ventures as Partner, Head of Investment Team."
+      },
+      {
+        year: "2026",
+        event: "Named to Forbes Midas List."
+      }
+    ],
+    biography: "Michael Robinson is Partner and Head of the Investment Team at Craft Ventures. He joined Craft in 2022. Before Craft, he was a Lead Investor at Georgian Partners and worked at Goldman Sachs in technology investment banking. In 2026 he was included on the Forbes Midas List of top venture capitalists.",
+    sources: [
+      {
+        label: "Craft Ventures - Michael Robinson",
+        url: "https://www.craftventures.com/team/michael-robinson"
+      }
+    ]
+  },
+"kevin-gabura": {
+    name: "Kevin Gabura",
+    firm: "Craft Ventures",
+    firmSlug: "craft-ventures",
+    title: "Partner",
+    joinedYear: 2022,
+    sectors: [
+      "Cybersecurity",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.craftventures.com/team/kevin-gabura",
+    education: [
+      "HBA, Ivey Business School (University of Western Ontario)"
+    ],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2022",
+        event: "Joined Craft Ventures as Partner."
+      }
+    ],
+    biography: "Kevin Gabura is a Partner at Craft Ventures. He joined in 2022 and focuses on cybersecurity, infrastructure, and application software investments. He graduated with distinction from Ivey Business School (Western University) with an Honors Business Administration degree.",
+    sources: [
+      {
+        label: "Craft Ventures - Kevin Gabura",
+        url: "https://www.craftventures.com/team/kevin-gabura"
+      }
+    ]
+  },
+"mike-marg": {
+    name: "Mike Marg",
+    firm: "Craft Ventures",
+    firmSlug: "craft-ventures",
+    title: "Partner",
+    joinedYear: 2020,
+    sectors: [
+      "AI",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.craftventures.com/team/mike-marg",
+    education: [
+      "BA, University of Pennsylvania"
+    ],
+    previousExperience: [
+      "Go-to-Market Leader, Dropbox",
+      "Go-to-Market Leader, Slack",
+      "Head of GTM, Clearbit"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2020",
+        event: "Joined Craft Ventures as Partner."
+      }
+    ],
+    biography: "Mike Marg is a Partner at Craft Ventures. He joined Craft in 2020. Prior to Craft, he led go-to-market efforts at Dropbox, Slack, and Clearbit. At Craft, he focuses on generative AI and enterprise AI applications. He graduated from the University of Pennsylvania.",
+    sources: [
+      {
+        label: "Craft Ventures - Mike Marg",
+        url: "https://www.craftventures.com/team/mike-marg"
+      }
+    ]
+  },
+"gustav-von-sydow": {
+    name: "Gustav von Sydow",
+    firm: "EQT Ventures",
+    firmSlug: "eqt-ventures",
+    title: "Partner",
+    joinedYear: 2022,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Co-founder & CEO, Burt Corporation"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2022",
+        event: "Joined EQT Ventures (EIR, later Partner)."
+      }
+    ],
+    biography: "Gustav von Sydow is a Partner at EQT Ventures. He joined EQT in 2022 as an Entrepreneur-in-Residence and now leads US expansion and AI strategy for EQT’s early-stage funds. Previously he co-founded and ran Burt Corporation, a startup studio developing data-driven internet products.",
+    sources: [
+      {
+        label: "EQT Group - Gustav von Sydow",
+        url: "https://eqtgroup.com/about/people/gustav-von-sydow"
+      }
+    ]
+  },
+"kaushik-subramanian": {
+    name: "Kaushik Subramanian",
+    firm: "EQT Ventures",
+    firmSlug: "eqt-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "Fintech",
+      "AI"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://eqtgroup.com/about/people/kaushik-subramanian",
+    education: [
+      "MBA, INSEAD",
+      "BS, Computer Engineering"
+    ],
+    previousExperience: [
+      "Product Leader, Stripe",
+      "Product Roles, Meta",
+      "Consultant, McKinsey"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kaushik Subramanian is a Partner at EQT Ventures based in London. He invests in AI and fintech companies. Prior to EQT, he was a product leader at Stripe (scaling their FX/multicurrency business) and worked at Meta building ad-tech infrastructure. He holds an MBA from INSEAD and a BS in computer engineering.",
+    sources: [
+      {
+        label: "EQT Group - Kaushik Subramanian",
+        url: "https://eqtgroup.com/about/people/kaushik-subramanian"
+      }
+    ]
+  },
+"rania-belkahia": {
+    name: "Rania Belkahia",
+    firm: "EQT Ventures",
+    firmSlug: "eqt-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "MSc, Entrepreneurship, HEC Paris",
+      "BEng, Télécom ParisTech"
+    ],
+    previousExperience: [
+      "Co-founder & CEO, Afrimarkets"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Rania Belkahia is a Partner at EQT Ventures. She is a fintech and e-commerce entrepreneur-turned-investor. She co-founded and led Afrimarkets, a multi-category e-commerce platform in Africa with operations across five countries. She earned an engineering degree from Télécom ParisTech and a Master's in Entrepreneurship from HEC Paris.",
+    sources: [
+      {
+        label: "EQT Group - Rania Belkahia",
+        url: "https://eqtgroup.com/about/people/rania-belkahia"
+      }
+    ]
+  },
+"sandra-malmberg": {
+    name: "Sandra Malmberg",
+    firm: "EQT Ventures",
+    firmSlug: "eqt-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Sandra Malmberg is a Partner at EQT Ventures. She focuses on visionary founders and breakthrough technologies. Her portfolio includes AI-powered learning platform Sana and humanoid robotics company 1X. She has been instrumental in EQT Ventures’ early-stage investments.",
+    sources: [
+      {
+        label: "EQT Group - Sandra Malmberg",
+        url: "https://eqtgroup.com/about/people/sandra-malmberg"
+      }
+    ]
+  },
+"hisham-elhaddad": {
+    name: "Hisham Elhaddad",
+    firm: "HOF Capital",
+    firmSlug: "hof-capital",
+    title: "Managing Partner",
+    joinedYear: 2016,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BSc, Electrical and Electronics Engineering, Boston University"
+    ],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Hisham Elhaddad is Co-Founder and Managing Partner of HOF Capital. He has led the firm’s growth to over $10B in AUM. He focuses on frontier technologies and has led HOF’s investments in companies like SpaceX, xAI, Anthropic, Bugatti Rimac, and Crusoe. He holds a BSc in Electrical and Electronics Engineering from Boston University.",
+    sources: [
+      {
+        label: "HOF Capital - Hisham Elhaddad",
+        url: "https://hofcapital.com/team/hisham-elhaddad/"
+      }
+    ]
+  },
+"onsi-sawiris": {
+    name: "Onsi Sawiris",
+    firm: "HOF Capital",
+    firmSlug: "hof-capital",
+    title: "Partner",
+    joinedYear: 2016,
+    sectors: [
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://hofcapital.com/team/onsi-sawiris/",
+    education: [
+      "BSc, Mechanical Engineering, MIT"
+    ],
+    previousExperience: [
+      "TMT M&A, Arma Partners"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "ItaliaOnline",
+      "Riverbank",
+      "Orascom Financial Holding"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Onsi Sawiris is Co-Founder and Partner at HOF Capital, focusing on cloud-based technologies and enterprise software. He currently sits on the boards of ItaliaOnline, Riverbank, and Orascom Financial Holding. Previously he worked in technology M&A at Arma Partners. He holds a BSc in Mechanical Engineering from MIT.",
+    sources: [
+      {
+        label: "HOF Capital - Onsi Sawiris",
+        url: "https://hofcapital.com/team/onsi-sawiris/"
+      }
+    ]
+  },
+"victor-wang": {
+    name: "Victor Wang",
+    firm: "HOF Capital",
+    firmSlug: "hof-capital",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BS, Molecular & Cell Biology, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "Technology Investment Banker",
+      "Business Unit Leader, Fortune 100 company"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Victor Wang is a Partner at HOF Capital. Prior to HOF, he was a technology investment banker and startup advisor, and led a business unit at a Fortune 100 company. He has a background in science (conducting genomic research at Stanford) and earned a BS in Molecular & Cell Biology from UC Berkeley.",
+    sources: [
+      {
+        label: "HOF Capital - Victor Wang",
+        url: "https://hofcapital.com/team/victor-wang/"
+      }
+    ]
+  },
+"ryan-shmeizer": {
+    name: "Ryan Shmeizer",
+    firm: "HOF Capital",
+    firmSlug: "hof-capital",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "AI",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://hofcapital.com/team/ryan-shmeizer/",
+    education: [
+      "BS, Wharton School of Business, University of Pennsylvania"
+    ],
+    previousExperience: [
+      "Investor, Insight Partners",
+      "Investor, Spark Capital",
+      "Investor, Thrive Capital",
+      "General Partner, GreenPoint Partners"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ryan Shmeizer is a Partner at HOF Capital. He focuses on AI infrastructure, enterprise software, and physical-world tech. He began his venture career at Insight Partners in 2011, and later invested at Spark Capital and Thrive Capital (backing companies like Affirm, Slack). He also served as a GP and Head of Venture Investing at GreenPoint Partners. He graduated magna cum laude from Wharton.",
+    sources: [
+      {
+        label: "HOF Capital - Ryan Shmeizer",
+        url: "https://hofcapital.com/team/ryan-shmeizer/"
+      }
+    ]
+  },
+"annie-shapiro": {
+    name: "Annie Shapiro",
+    firm: "Inspired Capital",
+    firmSlug: "inspired-capital",
+    title: "Partner, Platform",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "AB, Art History and Italian, Princeton University"
+    ],
+    previousExperience: [
+      "Director of Marketing, Namely",
+      "Marketing Lead, LearnVest"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Annie Shapiro is Partner and Head of Platform at Inspired Capital. She has spent 15 years in tech marketing and operations, focusing on founder support and storytelling. She co-produces the firm’s podcast “Inspired with Alexa von Tobel.” Earlier, she was one of the first employees at financial startup LearnVest and later Director of Marketing at HR platform Namely. She earned an AB in Art History from Princeton University.",
+    sources: [
+      {
+        label: "Inspired Capital - Annie Shapiro",
+        url: "https://www.inspiredcapital.com/team"
+      }
+    ]
+  },
+"chris-brown": {
+    name: "Chris Brown",
+    firm: "Inspired Capital",
+    firmSlug: "inspired-capital",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Political Science & Economics, Middlebury College"
+    ],
+    previousExperience: [
+      "Investor, First Round Capital",
+      "Analyst, The Blackstone Group"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Chris Brown is a Partner at Inspired Capital. He is a career venture investor with early-stage and later-stage experience. Previously he invested at First Round Capital and began his career at The Blackstone Group. He focuses on bridging the “zero-to-one” startups with the processes needed to scale, particularly in sectors like fintech, healthcare, and logistics.",
+    sources: [
+      {
+        label: "Inspired Capital - Chris Brown",
+        url: "https://www.inspiredcapital.com/team"
+      }
+    ]
+  },
+"kamran-ali": {
+    name: "Kamran Ali",
+    firm: "Inspired Capital",
+    firmSlug: "inspired-capital",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Economics & Public Policy, Dartmouth College"
+    ],
+    previousExperience: [
+      "Investor, Point72 Ventures",
+      "Investment Banking Analyst, Goldman Sachs"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kamran Ali is a Partner at Inspired Capital. He joined the firm after a stint as a multi-stage investor at Point72 Ventures (working across public, venture, and growth investments). He began in investment banking at Goldman Sachs in the Consumer, Healthcare and Financial sectors. He holds a BA in Economics and Public Policy from Dartmouth College.",
+    sources: [
+      {
+        label: "Inspired Capital - Kamran Ali",
+        url: "https://www.inspiredcapital.com/team"
+      }
+    ]
+  },
+"charlotte-ross": {
+    name: "Charlotte Ross",
+    firm: "Inspired Capital",
+    firmSlug: "inspired-capital",
+    title: "Partner",
+    joinedYear: 2019,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Economics, Yale University"
+    ],
+    previousExperience: [
+      "Investor, New Enterprise Associates (NEA)",
+      "Analyst, Goldman Sachs (TMT group)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2019",
+        event: "Joined Inspired Capital at its founding as Partner."
+      }
+    ],
+    biography: "Charlotte Ross is a Partner at Inspired Capital and has been with the firm since its founding in 2019. Before Inspired, she was an investor at NEA where she led investments in companies like Duolingo, Framebridge, Mejuri, and served on their boards. She started her career at Goldman Sachs (TMT group) and holds a BA in Economics from Yale.",
+    sources: [
+      {
+        label: "Inspired Capital - Charlotte Ross",
+        url: "https://www.inspiredcapital.com/team"
+      }
+    ]
+  },
+"lior-simon": {
+    name: "Lior Simon",
+    firm: "Cyberstarts",
+    firmSlug: "cyberstarts",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Investor, Sequoia Capital (Israel)",
+      "Head of Israel, Arbor Ventures"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Cyera",
+      "Oasis",
+      "Zafran"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Lior Simon is a General Partner at Cyberstarts with over a decade of VC experience. She sits on the boards of cybersecurity startups Cyera, Oasis, and Zafran and works closely with portfolio companies like Wiz, Island, and Fireblocks. She began her VC career at Sequoia Capital in 2012 and later led Arbor Ventures in Israel.",
+    sources: [
+      {
+        label: "Cyberstarts - Lior Simon",
+        url: "https://www.cyberstarts.com/team/lior-simon"
+      }
+    ]
+  },
+"hila-zigman": {
+    name: "Hila Zigman",
+    firm: "Cyberstarts",
+    firmSlug: "cyberstarts",
+    title: "General Partner",
+    joinedYear: 2023,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Founding Chief Product Officer, Noname Security"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2023",
+        event: "Joined Cyberstarts as General Partner."
+      }
+    ],
+    biography: "Hila Zigman is a General Partner at Cyberstarts who joined in 2023. She was the founding Chief Product Officer of API-security company Noname Security, scaling its product organization from day one; Noname grew into a category leader and was acquired by Akamai for $500M. Earlier, she served in an elite Israeli intelligence unit and at a growth-stage cybersecurity startup.",
+    sources: [
+      {
+        label: "Cyberstarts - Hila Zigman",
+        url: "https://www.cyberstarts.com/team/hila-zigman"
+      }
+    ]
+  },
+"adam-aarons": {
+    name: "Adam Aarons",
+    firm: "Cyberstarts",
+    firmSlug: "cyberstarts",
+    title: "Operating Partner",
+    joinedYear: 2024,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [],
+    previousExperience: [
+      "Chief Revenue Officer, Okta",
+      "Sales leadership at Drata, Classy, BMC Software, BladeLogic, OpenPages, Agile Software, PTC"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2024",
+        event: "Joined Cyberstarts as GTM Venture Partner."
+      },
+      {
+        year: "2025",
+        event: "Named Operating Partner at Cyberstarts."
+      }
+    ],
+    biography: "Adam Aarons is Operating Partner at Cyberstarts. He joined the firm in 2024 and became Operating Partner in 2025. He has three decades of GTM experience, most notably as CRO at Okta, where he scaled the business from $1M to over $300M ARR and led Okta through its IPO. He now mentors Cyberstarts’ portfolio on go-to-market strategy.",
+    sources: [
+      {
+        label: "Cyberstarts - Adam Aarons",
+        url: "https://www.cyberstarts.com/team/adam-aarons"
+      }
+    ]
+  },
+"angela-hayward": {
+    name: "Angela Hayward",
+    firm: "Eclipse Ventures",
+    firmSlug: "eclipse-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    education: [
+      "BA, Business Management, Menlo College"
+    ],
+    previousExperience: [
+      "Operating Partner, Formation 8 (venture capital firm)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Angela Hayward is a Partner at Eclipse Ventures, serving as head of investor and portfolio relations. She earned a BA in Business Management from Menlo College. Prior to Eclipse, she worked as an Operating Partner at venture firm Formation 8.",
+    sources: [
+      {
+        label: "Crunchbase – Angela Hayward",
+        url: "https://www.crunchbase.com/person/angela-hayward"
+      }
+    ]
+  },
+"cheryl-cheng": {
+    name: "Cheryl Cheng",
+    firm: "M12",
+    firmSlug: "m12",
+    title: "Managing Partner",
+    joinedYear: 2025,
+    sectors: [
+      "Healthcare",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://m12.vc/team/cheryl-cheng",
+    sectorsEvidence: "Cheryl has spent the last 16 years investing in early to growth stage software companies ranging from healthcare and enterprise applications to developer tools",
+    education: [
+      "B.A., Public Policy, Stanford University",
+      "M.B.A., Kellogg School of Management, Northwestern University"
+    ],
+    previousExperience: [
+      "Founder & CEO, Vive Collective",
+      "General Partner, BlueRun Ventures",
+      "Brand Manager, The Clorox Company",
+      "Brand Manager, The Sharper Image",
+      "Technology M&A, Broadview International"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2025",
+        event: "Joined M12 as Managing Partner."
+      }
+    ],
+    biography: "Cheryl Cheng is Managing Partner at M12. She has spent 16 years investing in early- to growth-stage software companies ranging from healthcare to enterprise applications. Before M12, she founded and led Vive Collective and was a General Partner at BlueRun Ventures. She also worked in brand management at Clorox and Sharper Image and in technology M&A at Broadview International.",
+    sources: [
+      {
+        label: "M12 - Cheryl Cheng",
+        url: "https://m12.vc/team/cheryl-cheng/"
+      },
+      {
+        label: "Global Venturing - Cheryl Cheng Joins M12",
+        url: "https://globalventuring.com/corporate/people/cheng-joins-microsoft-vc-fund-as-managing-partner/"
+      }
+    ]
+  },
+"alan-du": {
+    name: "Alan Du",
+    firm: "M12",
+    firmSlug: "m12",
+    title: "Partner",
+    joinedYear: 2025,
+    sectors: [
+      "AI",
+      "Fintech"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://m12.vc/team/alan-du",
+    sectorsEvidence: "focusing on the intersection of Artificial Intelligence and Fintech",
+    education: [
+      "B.A., University of California, Berkeley",
+      "MBA, Harvard Business School"
+    ],
+    previousExperience: [
+      "Investment Partner, PayPal Ventures",
+      "Head of Operations, Greater China (interim), Docker",
+      "Investment Team, Revolution (Washington DC growth equity firm)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2025",
+        event: "Joined M12 as Partner."
+      }
+    ],
+    biography: "Alan Du is a Partner at M12 focusing on AI and fintech. He joined M12 in 2025. Previously he was an Investment Partner at PayPal Ventures focusing on AI and fintech, and served as interim Head of Operations for Greater China at Docker.",
+    sources: [
+      {
+        label: "M12 - Alan Du",
+        url: "https://m12.vc/team/alan-du/"
+      },
+      {
+        label: "Global Corporate Venturing (LinkedIn) - Alan Du Announcement",
+        url: "https://www.linkedin.com/posts/alan-du_investmentpartner-paypalventures-activity-xxxx"
+      }
+    ]
+  },
+"todd-graham": {
+    name: "Todd Graham",
+    firm: "M12",
+    firmSlug: "m12",
+    title: "Managing Partner",
+    joinedYear: null,
+    sectors: [
+      "Cybersecurity",
+      "Developer Tools",
+      "Infrastructure"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://m12.vc/team/todd-graham",
+    sectorsEvidence: "he leads investments in cybersecurity, developer tools, and cloud infrastructure",
+    education: [],
+    previousExperience: [
+      "Vice President, Venrock",
+      "Head of Corporate Strategy (Security & Collaboration), Cisco",
+      "Product Manager, VMware (IT Business Management)",
+      "Co-founder, Bluenose Analytics",
+      "Founder, Data security startup (acquired by RSA)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Todd Graham is a Managing Partner at M12 leading investments in cybersecurity, developer tools, and cloud infrastructure. Before M12, he was a VP at Venrock focusing on enterprise infrastructure and cybersecurity. He also led corporate strategy at Cisco’s security businesses and co-founded Bluenose Analytics.",
+    sources: [
+      {
+        label: "M12 - Todd Graham",
+        url: "https://m12.vc/team/todd-graham/"
+      }
+    ]
+  },
+"peter-lenke": {
+    name: "Peter Lenke",
+    firm: "M12",
+    firmSlug: "m12",
+    title: "Managing Partner",
+    joinedYear: null,
+    sectors: [
+      "AI",
+      "Developer Tools"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://m12.vc/team/peter-lenke",
+    sectorsEvidence: "leads investments in AI applications, developer tools, and cloud infrastructure",
+    education: [],
+    previousExperience: [
+      "Head of Atlassian Ventures",
+      "Corporate Development, Twitter",
+      "Corporate Development, Criteo",
+      "Investment Team, SVB Capital (now Pinegrove)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Peter Lenke is a Managing Partner at M12 leading investments in AI applications, developer tools, and enterprise software. He previously served as Head of Atlassian Ventures and held corporate development roles at Twitter and Criteo, and worked on the investment team at SVB Capital.",
+    sources: [
+      {
+        label: "M12 - Peter Lenke",
+        url: "https://m12.vc/team/peter-lenke/"
+      }
+    ]
+  },
+"andy-harrison": {
+    name: "Andy Harrison",
+    firm: "S32",
+    firmSlug: "s32",
+    title: "General Partner, CEO",
+    joinedYear: 2021,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.S., Biochemical Engineering, McGill University",
+      "M.S., Biomedical Engineering, Cornell University"
+    ],
+    previousExperience: [
+      "Executive roles, Alphabet X and Verily",
+      "Co-founder, Verily Ventures",
+      "Executive, Verily (Alphabet)",
+      "Doctoral research, UC Berkeley (biomedical engineering)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2021",
+        event: "Joined S32 as General Partner."
+      },
+      {
+        year: "2023",
+        event: "Named CEO of S32."
+      }
+    ],
+    biography: "Andy Harrison is CEO and General Partner of S32 with a background in healthcare and deep tech. He co-founded Verily (Alphabet’s healthcare company) and held executive roles at GoogleX and Verily Ventures. He joined S32 in 2021 and was named CEO in 2023. He holds degrees from McGill University and Cornell University.",
+    sources: [
+      {
+        label: "S32 - Andy Harrison",
+        url: "https://s32.com/team#andy-harrison"
+      },
+      {
+        label: "Wikipedia - S32 (company)",
+        url: "https://en.wikipedia.org/wiki/S32"
+      }
+    ]
+  },
+"alice-cheung": {
+    name: "Alice Cheung",
+    firm: "S32",
+    firmSlug: "s32",
+    title: "Partner, Talent",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.A., Mass Communications & Political Science, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "Recruiter, Google (Alphabet)",
+      "Recruiter, Google X",
+      "Principal Recruiter, Playground Global",
+      "Head of Staffing, Essential"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Alice Cheung is Partner of Talent at S32 focusing on talent strategy for portfolio companies. She spent a decade at Alphabet (Google and X) as a top recruiter building engineering teams for Waymo, Loon, Glass, Wing, and Verily. She later served as Principal Recruiter at Playground Global and Head of Staffing at Essential.",
+    sources: [
+      {
+        label: "S32 - Alice Cheung",
+        url: "https://s32.com/team#alice-cheung"
+      }
+    ]
+  },
+"bayan-alizadeh": {
+    name: "Bayan Alizadeh",
+    firm: "S32",
+    firmSlug: "s32",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "Enterprise Software",
+      "AI",
+      "Deep Tech"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://s32.com/team#bayan-alizadeh",
+    sectorsEvidence: "focuses on enterprise software, AI, and deep tech investment opportunities",
+    education: [
+      "B.S., Business Administration, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "Investor, Norwest Venture Partners",
+      "Investment Banker, Morgan Stanley"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Bayan Alizadeh is a Partner at S32 focusing on enterprise software, AI, and deep tech. Previously, he was an investor at Norwest Venture Partners (working on applied AI and enterprise software) and earlier an investment banker at Morgan Stanley advising fintech and tech companies. He holds a B.S. from UC Berkeley.",
+    sources: [
+      {
+        label: "S32 - Bayan Alizadeh",
+        url: "https://s32.com/team#bayan-alizadeh"
+      }
+    ]
+  },
+"derrick-chow": {
+    name: "Derrick Chow",
+    firm: "S32",
+    firmSlug: "s32",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "Enterprise Software",
+      "AI",
+      "Infrastructure"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://s32.com/team#derrick-chow",
+    sectorsEvidence: "focuses on enterprise software, AI and data infrastructure",
+    education: [
+      "B.S., Business Administration, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "Investment team, CapitalG (Alphabet/Google)",
+      "Analyst, Morgan Stanley"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Derrick Chow is a Partner at S32 focusing on enterprise software, AI, and data infrastructure. He previously worked on the investment team at CapitalG (Alphabet’s growth fund) and began his career as an investment banking analyst at Morgan Stanley. He holds a B.S. from UC Berkeley.",
+    sources: [
+      {
+        label: "S32 - Derrick Chow",
+        url: "https://s32.com/team#derrick-chow"
+      }
+    ]
+  },
+"darian-shirazi": {
+    name: "Darian Shirazi",
+    firm: "Gradient Ventures",
+    firmSlug: "gradient-ventures",
+    title: "General Partner",
+    joinedYear: 2019,
+    sectors: [
+      "AI"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.gradient.com/team/darian-shirazi/",
+    sectorsEvidence: "leading seed investments in category-defining AI companies and working with AI-first founders",
+    education: [
+      "Studied Computer Science & Philosophy, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "Founder & CEO, Radius (acquired by Kabbage)",
+      "Software Engineer, Facebook"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "MainStreet",
+      "Contractbook",
+      "Chili Piper"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Darian Shirazi is a General Partner at Gradient Ventures focused on seed-stage AI companies. He founded Radius, a B2B customer data platform acquired by Kabbage, and was an early software engineer at Facebook. He studied computer science and philosophy at UC Berkeley.",
+    sources: [
+      {
+        label: "Gradient - Darian Shirazi",
+        url: "https://www.gradient.com/team/darian-shirazi/"
+      }
+    ]
+  },
+"zach-bratun-glennon": {
+    name: "Zach Bratun-Glennon",
+    firm: "Gradient Ventures",
+    firmSlug: "gradient-ventures",
+    title: "General Partner",
+    joinedYear: 2017,
+    sectors: [
+      "AI",
+      "Fintech",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.gradient.com/team/zach-bratun-glennon/",
+    sectorsEvidence: "He invests in AI/ML and data science, vertical software, B2B marketplaces, fintech, and more",
+    education: [
+      "B.S., Computer Science & Applied Mathematics, University of Virginia",
+      "J.D., UCLA School of Law",
+      "MBA, UCLA Anderson School of Management"
+    ],
+    previousExperience: [
+      "Led acquisitions and strategic investments, Google Cloud",
+      "Investment Banker (software sector)",
+      "Quantitative Engineer, Hedge Fund"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Zach Bratun-Glennon is a General Partner at Gradient Ventures who invests in AI and fintech companies. Before Gradient, he led acquisitions and strategic investments for Google Cloud. He earned a B.S. in CS and Applied Math from University of Virginia, and a J.D. and MBA from UCLA.",
+    sources: [
+      {
+        label: "Gradient - Zach Bratun-Glennon",
+        url: "https://www.gradient.com/team/zach-bratun-glennon/"
+      }
+    ]
+  },
+"andrew-brackin": {
+    name: "Andrew Brackin",
+    firm: "Gradient Ventures",
+    firmSlug: "gradient-ventures",
+    title: "Partner",
+    joinedYear: 2024,
+    sectors: [
+      "AI",
+      "Healthcare"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.gradient.com/team/andrew-brackin/",
+    sectorsEvidence: "invests across vertical AI, healthcare, and the application layer",
+    education: [],
+    previousExperience: [
+      "Co-founder & CEO, Vial (clinical trial platform)",
+      "Head of Growth, Newfront (acquired by WTW)",
+      "Product Lead, Jobr (acquired by Monster)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Andrew Brackin is a Partner at Gradient Ventures investing in AI and healthcare. He co-founded Vial, a tech-enabled clinical trial platform, and was Head of Growth at Newfront (acquired by WTW in 2025). He was a Thiel Fellow in 2013 and studied entrepreneurship at Stanford.",
+    sources: [
+      {
+        label: "Gradient - Andrew Brackin",
+        url: "https://www.gradient.com/team/andrew-brackin/"
+      }
+    ]
+  },
+"clayton-petty": {
+    name: "Clayton Petty",
+    firm: "Gradient Ventures",
+    firmSlug: "gradient-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: [
+      "Cybersecurity",
+      "Infrastructure",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.gradient.com/team/clayton-petty/",
+    sectorsEvidence: "helped founders and growth investors scale cybersecurity, infrastructure, and vertical software businesses",
+    education: [
+      "B.S., Computer Science, Texas A&M University"
+    ],
+    previousExperience: [
+      "Consultant, McKinsey & Company (Technology & Investing)",
+      "Software Engineer, Microsoft",
+      "Software Engineer, Expedia"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Clayton Petty is a Partner at Gradient Ventures. Prior to Gradient, he was a consultant at McKinsey & Company in their technology and investing practice. Earlier, he worked as a software engineer at Microsoft and Expedia. He holds a B.S. in Computer Science from Texas A&M University.",
+    sources: [
+      {
+        label: "Gradient - Clayton Petty",
+        url: "https://www.gradient.com/team/clayton-petty/"
+      }
+    ]
+  },
+"brian-smith": {
+    name: "Brian Smith",
+    firm: "Multicoin Capital",
+    firmSlug: "multicoin-capital",
+    title: "Partner, CFO and COO",
+    joinedYear: 2017,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [],
+    previousExperience: [
+      "Public Equity Analyst, Tiger Management",
+      "Private Equity Investor, Fox Paine & Co.",
+      "Investment Banker, Greenhill & Co.",
+      "Finance Team, Bazaarvoice (through IPO)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Board of Trustees, Texas State Pension (TSERS)"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Brian Smith is Partner, CFO and COO at Multicoin Capital, leading finance and operations. He has over 22 years of experience in investing and corporate finance, including roles at Tiger Management, Fox Paine, and Greenhill. He also served on the finance team at Bazaarvoice through its IPO. He serves on the board of the Texas State Teachers Retirement System (TSERS).",
+    sources: [
+      {
+        label: "Multicoin - Brian Smith",
+        url: "https://multicoin.capital/about/"
+      }
+    ]
+  },
+"matt-shapiro": {
+    name: "Matt Shapiro",
+    firm: "Multicoin Capital",
+    firmSlug: "multicoin-capital",
+    title: "Partner, Head of Investor Relations",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.A., Finance and International Business, University of Maryland"
+    ],
+    previousExperience: [
+      "Vice President, Investment Banking, Teneo"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Matt Shapiro is a Partner and Head of Investor Relations at Multicoin. Prior to Multicoin, he was a VP in investment banking at Teneo, raising institutional capital across diverse industries. He holds a degree in Finance and International Business from the University of Maryland.",
+    sources: [
+      {
+        label: "Multicoin - Matt Shapiro",
+        url: "https://multicoin.capital/about/"
+      }
+    ]
+  },
+"spencer-applebaum": {
+    name: "Spencer Applebaum",
+    firm: "Multicoin Capital",
+    firmSlug: "multicoin-capital",
+    title: "General Partner, Co-Head of Venture",
+    joinedYear: 2018,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [],
+    previousExperience: [
+      "Intern, Bitspark (blockchain remittance)",
+      "Consultant, Deloitte (audit & tax)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Spencer Applebaum is a General Partner at Multicoin Capital. As one of the firm's first hires, he specializes in decentralized finance (DeFi) and crypto infrastructure. Prior to Multicoin, he interned at Bitspark (a Bitcoin remittance platform) and worked at Deloitte in audit and tax advisory.",
+    sources: [
+      {
+        label: "Multicoin - Spencer Applebaum",
+        url: "https://multicoin.capital/about/"
+      }
+    ]
+  },
+"shayon-sengupta": {
+    name: "Shayon Sengupta",
+    firm: "Multicoin Capital",
+    firmSlug: "multicoin-capital",
+    title: "General Partner, Co-Head of Venture",
+    joinedYear: 2020,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [],
+    previousExperience: [
+      "Operations, Abodewell (IoT real estate startup)",
+      "Strategy & Business Development, SAP"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Shayon Sengupta is a General Partner at Multicoin Capital. Previously, he worked at Abodewell (a quantitative real estate market maker) leading operations and IoT development, and earlier on the strategy team at SAP.",
+    sources: [
+      {
+        label: "Multicoin - Shayon Sengupta",
+        url: "https://multicoin.capital/about/"
+      }
+    ]
+  },
+"lily-lyman": {
+    name: "Lily Lyman",
+    firm: "Underscore VC",
+    firmSlug: "underscore-vc",
+    title: "Partner",
+    joinedYear: 2018,
+    sectors: [
+      "AI",
+      "Healthcare"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://underscore.vc/team/lily-lyman/",
+    sectorsEvidence: "Lily drives our investments in the areas of workflow automation and Vertical AI, including insurance and healthcare",
+    education: [
+      "A.B., Harvard University",
+      "MBA, Stanford Graduate School of Business"
+    ],
+    previousExperience: [
+      "Growth Leader, Facebook",
+      "Co-founder, Agtech startup (Stanford)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "New England Venture Capital Association",
+      "MIT Sandbox Funding Board",
+      "Harvard Allston Fund",
+      "WBUR"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2018",
+        event: "Joined Underscore VC as Partner."
+      }
+    ],
+    biography: "Lily Lyman is a Partner at Underscore VC focusing on vertical AI and workflow automation in industries like insurance and healthcare. She joined Underscore in 2018 after working as a growth leader at Facebook. She earned an A.B. from Harvard and an MBA from Stanford. She serves on the boards of NEVCA, MIT Sandbox Funding, Harvard Allston Fund, and WBUR.",
+    sources: [
+      {
+        label: "Underscore - Lily Lyman",
+        url: "https://underscore.vc/team/lily-lyman/"
+      },
+      {
+        label: "Underscore Blog - Lily Lyman Announcement",
+        url: "https://underscore.vc/blog/announcing-our-newest-partner-lily-lyman/"
+      }
+    ]
+  },
+"chris-gardner": {
+    name: "Chris Gardner",
+    firm: "Underscore VC",
+    firmSlug: "underscore-vc",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.A., Communications, University of Massachusetts Amherst"
+    ],
+    previousExperience: [
+      "Co-founder, Paydiant (acquired by PayPal in 2015)",
+      "Executive, PayPal (P2P and mobile payments)",
+      "CMO, ExtendMedia (acquired by Cisco)",
+      "SVP, m-Qube (acquired by Verisign)",
+      "VP, edocs (acquired by Siebel Systems)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2015",
+        event: "Co-founded Paydiant (later acquired by PayPal)."
+      }
+    ],
+    biography: "Chris Gardner is a Partner at Underscore VC and a fintech entrepreneur. He co-founded Paydiant (acquired by PayPal in 2015) and led PayPal’s payments products. Earlier he was CMO at ExtendMedia (acquired by Cisco) and SVP at m-Qube (acquired by Verisign). He has a B.A. from UMass Amherst.",
+    sources: [
+      {
+        label: "Underscore - Chris Gardner",
+        url: "https://underscore.vc/team/chris-gardner/"
+      }
+    ]
+  },
+"brian-devaney": {
+    name: "Brian Devaney",
+    firm: "Underscore VC",
+    firmSlug: "underscore-vc",
+    title: "Partner",
+    joinedYear: 2020,
+    sectors: [
+      "AI",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://underscore.vc/team/brian-devaney/",
+    sectorsEvidence: "Brian focuses on vertical-specific applications of AI and B2B software",
+    education: [
+      "B.A., Economics & Business Admin & Computer Science, University of Vermont"
+    ],
+    previousExperience: [
+      "Investor, First Round Capital",
+      "Head of Go-to-Market, Strava Metro",
+      "Analyst, Internet Bank (fintech)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      {
+        year: "2020",
+        event: "Joined Underscore VC as Partner."
+      }
+    ],
+    biography: "Brian Devaney is a Partner at Underscore VC focusing on AI and enterprise software for legacy business processes. He joined Underscore in 2020 from First Round Capital. Before that, he led GTM for Strava Metro and started in fintech banking. He earned a B.A. from the University of Vermont.",
+    sources: [
+      {
+        label: "Underscore - Brian Devaney",
+        url: "https://underscore.vc/team/brian-devaney/"
+      },
+      {
+        label: "Underscore Blog - Brian Devaney Announcement",
+        url: "https://underscore.vc/blog/the-next-generation-of-underscore-vc/"
+      }
+    ]
+  },
+"lauren-kolodny": {
+    name: "Lauren Kolodny",
+    firm: "Acrew Capital",
+    firmSlug: "acrew-capital",
+    title: "Founding Partner",
+    joinedYear: 2019,
+    sectors: [
+      "Fintech"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.acrewcapital.com/team#lauren-kolodny",
+    sectorsEvidence: "Lauren leads the fintech thesis area at Acrew",
+    education: [],
+    previousExperience: [
+      "Partner, Aspect Ventures",
+      "Product Marketing (Workspace), Google"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Lauren Kolodny is a Founding Partner at Acrew Capital who leads the firm’s fintech investment area. Previously, she was a partner at Aspect Ventures and earlier worked in product marketing at Google (including launches for Workspace like Google Drive).",
+    sources: [
+      {
+        label: "Acrew - Lauren Kolodny",
+        url: "https://www.acrewcapital.com/team#lauren-kolodny"
+      }
+    ]
+  },
+"asad-khaliq": {
+    name: "Asad Khaliq",
+    firm: "Acrew Capital",
+    firmSlug: "acrew-capital",
+    title: "Founding Partner",
+    joinedYear: 2019,
+    sectors: [
+      "AI",
+      "Cybersecurity"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.acrewcapital.com/team#asad-khaliq",
+    sectorsEvidence: "Asad is excited about applied machine learning and enabling security & privacy",
+    education: [
+      "M.S.E., Management Science & Engineering, Stanford University"
+    ],
+    previousExperience: [
+      "Investor, Aspect Ventures (first fund)",
+      "Co-led investments in Coinbase, Ciphertrace, etc."
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "NextGen Partners"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Asad Khaliq is a Founding Partner at Acrew Capital interested in applied machine learning, security, and privacy. He joined Aspect Ventures in its first fund and co-led investments in companies like Ciphertrace and Coinbase. He is on the board of NextGen Partners and studied Management Science & Engineering at Stanford.",
+    sources: [
+      {
+        label: "Acrew - Asad Khaliq",
+        url: "https://www.acrewcapital.com/team#asad-khaliq"
+      }
+    ]
+  },
+"mark-kraynak": {
+    name: "Mark Kraynak",
+    firm: "Acrew Capital",
+    firmSlug: "acrew-capital",
+    title: "Founding Partner",
+    joinedYear: 2019,
+    sectors: [
+      "Cybersecurity"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.acrewcapital.com/team#mark-kraynak",
+    sectorsEvidence: "Mark has led or co-led investments in cybersecurity companies and was a marketing & strategy lead at Imperva",
+    education: [],
+    previousExperience: [
+      "Entrepreneur in Residence, Aspect Ventures",
+      "Marketing & Strategy roles, Imperva"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Mark Kraynak is a Founding Partner at Acrew Capital. Before Acrew, he was an EIR at Aspect Ventures and spent nearly 13 years at Imperva in marketing, product, and strategy roles. He later led Acrew’s investments in security companies and served as an advisor in cyber startups.",
+    sources: [
+      {
+        label: "Acrew - Mark Kraynak",
+        url: "https://www.acrewcapital.com/team#mark-kraynak"
+      }
+    ]
+  },
+"aliisa-rosenthal": {
+    name: "Aliisa Rosenthal",
+    firm: "Acrew Capital",
+    firmSlug: "acrew-capital",
+    title: "General Partner",
+    joinedYear: 2026,
+    sectors: [
+      "AI",
+      "Enterprise Software"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.acrewcapital.com/team#aliisa-rosenthal",
+    sectorsEvidence: "Aliisa focuses on AI-native companies and platforms reshaping enterprise software",
+    education: [],
+    previousExperience: [
+      "Executive, OpenAI (go-to-market for ChatGPT Enterprise)",
+      "Operations, Mixpanel",
+      "Operations, WalkMe"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Aliisa Rosenthal is a General Partner at Acrew Capital focusing on AI-native enterprise software. Before joining Acrew, she was an executive at OpenAI where she scaled the go-to-market function (helping to launch ChatGPT Enterprise). Earlier she held senior roles at Mixpanel and WalkMe.",
+    sources: [
+      {
+        label: "Acrew - Aliisa Rosenthal",
+        url: "https://www.acrewcapital.com/team#aliisa-rosenthal"
+      }
+    ]
+  },
+"abe-yokell": {
+    name: "Abe Yokell",
+    firm: "Congruent Ventures",
+    firmSlug: "congruent-ventures",
+    title: "Managing Partner and Co-Founder",
+    joinedYear: 2017,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.A., Economics, University of Pennsylvania"
+    ],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Abe Yokell is Co-Founder and Managing Partner of Congruent Ventures with 19 years of investment experience. He emphasizes deep tech and innovative business models in climate tech. He oversees Congruent’s investments in companies like Enphase Energy, Amply Power, and Blueprint Power. He holds a B.A. in Economics from the University of Pennsylvania.",
+    sources: [
+      {
+        label: "Congruent - Abe Yokell",
+        url: "https://www.congruentvc.com/team/abe-yokell"
+      }
+    ]
+  },
+"tanuj-dutta": {
+    name: "Tanuj Dutta",
+    firm: "Congruent Ventures",
+    firmSlug: "congruent-ventures",
+    title: "General Partner",
+    joinedYear: 2022,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.Sc., Chemical Engineering, University of Western Ontario",
+      "HBA, University of Western Ontario"
+    ],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [
+      "AMP Sortation",
+      "FirstElement Exploration",
+      "Halcyon",
+      "Span.IO",
+      "STOR Preservation Systems"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tanuj Dutta is a General Partner at Congruent Ventures focused on supporting portfolio companies at growth inflection points. He brings cross-asset investing experience across venture and finance. He serves on the boards of AMP Sortation, FirstElement Exploration, Halcyon, Span.IO, and STOR Preservation Systems. He earned a B.Sc. in Chemical Engineering and an HBA from Western Ontario.",
+    sources: [
+      {
+        label: "Congruent - Tanuj Dutta",
+        url: "https://www.congruentvc.com/team/tanuj-dutta"
+      }
+    ]
+  },
+"kevin-kopczynski": {
+    name: "Kevin Kopczynski",
+    firm: "Congruent Ventures",
+    firmSlug: "congruent-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "B.S.E., Mechanical Engineering, Princeton University",
+      "M.S., Mechanical Engineering, Stanford University",
+      "MBA, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "VP, M&A & Project Development, Plug Power",
+      "Integration Lead, First Solar (Enki Technology acquisition)",
+      "CEO, Enki Technology (acquired by First Solar)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kevin Kopczynski is a Partner at Congruent Ventures and an energy technology executive with 15+ years of experience. He was VP of M&A at Plug Power and led integration at First Solar. From 2013 to 2016, he was CEO of Enki Technology and led it through acquisition by First Solar. He holds degrees from Princeton, Stanford, and UC Berkeley.",
+    sources: [
+      {
+        label: "Congruent - Kevin Kopczynski",
+        url: "https://www.congruentvc.com/team/kevin-kopczynski"
+      }
+    ]
+  },
+"eliza-cushman": {
+    name: "Eliza Cushman",
+    firm: "Congruent Ventures",
+    firmSlug: "congruent-ventures",
+    title: "Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "MBA, Columbia Business School",
+      "B.S., Finance, Wake Forest University"
+    ],
+    previousExperience: [
+      "Associate, KKR (private credit)",
+      "Analyst, Bank of America (Leveraged Finance)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Ezra Climate"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Eliza Cushman is a Partner at Congruent Ventures managing investments and portfolio support. She was previously an Associate at KKR (origination in private credit) and began her career in leveraged finance at Bank of America. She holds an MBA from Columbia and a B.S. from Wake Forest University. She serves on the board of Ezra Climate.",
+    sources: [
+      {
+        label: "Congruent - Eliza Cushman",
+        url: "https://www.congruentvc.com/team/eliza-cushman"
+      }
+    ]
+  },
+"curtis-spencer": {
+    name: "Curtis Spencer",
+    firm: "Electric Capital",
+    firmSlug: "electric-capital",
+    title: "General Partner, Co-founder",
+    joinedYear: 2018,
+    sectors: [
+      "AI",
+      "Cybersecurity"
+    ],
+    sectorsConfidence: "high",
+    sectorsSource: "https://electriccapital.com/team/curtis-spencer/",
+    sectorsEvidence: "focusing on open source developer ecosystems, DeFi, AI, and cybersecurity",
+    education: [],
+    previousExperience: [
+      "CTO, Cruxlux (acquired by Walmart Labs)",
+      "CTO, Spool (acquired by Facebook)",
+      "Engineering Lead, Facebook (News Feed, Events)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Curtis Spencer is Co-Founder and General Partner at Electric Capital focusing on open-source developer ecosystems, DeFi, AI, and cybersecurity. Before Electric, he was CTO at Cruxlux (acquired by Walmart Labs) and CTO at Spool (acquired by Facebook) and served as an engineering lead at Facebook.",
+    sources: [
+      {
+        label: "Electric Capital - Curtis Spencer",
+        url: "https://electriccapital.com/team/curtis-spencer/"
+      }
+    ]
+  },
+"ken-deeter": {
+    name: "Ken Deeter",
+    firm: "Electric Capital",
+    firmSlug: "electric-capital",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "M.S., Computer Science, University of British Columbia",
+      "B.S.E., Computer Science, Princeton University"
+    ],
+    previousExperience: [
+      "Software Engineer, VMware (systems software)",
+      "Software Engineer, Facebook (News Feed)",
+      "Product Manager, Facebook (Events)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ken Deeter is a General Partner at Electric Capital focusing on decentralized finance and tokenomics. He was previously a software engineer and product manager building systems at VMware and Facebook. He earned an M.S. from UBC and a B.S.E. from Princeton.",
+    sources: [
+      {
+        label: "Electric Capital - Ken Deeter",
+        url: "https://electriccapital.com/team/ken-deeter/"
+      }
+    ]
+  },
+"maria-shen": {
+    name: "Maria Shen",
+    firm: "Electric Capital",
+    firmSlug: "electric-capital",
+    title: "General Partner",
+    joinedYear: null,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [
+      "A.B., Government, Harvard University",
+      "M.Eng., Computer Science, Cornell University"
+    ],
+    previousExperience: [
+      "CTO & Co-founder, Supply-chain startup",
+      "Search Engineer, Microsoft"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Maria Shen is a General Partner at Electric Capital. Prior to Electric, she was CTO and co-founder of a startup for SMB supply chains, and earlier worked on search technology at Microsoft. She holds an A.B. from Harvard and an M.Eng. from Cornell.",
+    sources: [
+      {
+        label: "Electric Capital - Maria Shen",
+        url: "https://electriccapital.com/team/maria-shen/"
+      }
+    ]
+  },
+"ren-cf": {
+    name: "Ren CF",
+    firm: "Electric Capital",
+    firmSlug: "electric-capital",
+    title: "General Partner",
+    joinedYear: 2021,
+    sectors: null,
+    sectorsConfidence: null,
+    sectorsSource: null,
+    sectorsEvidence: null,
+    education: [],
+    previousExperience: [
+      "Quantitative Researcher, Citadel (commodities markets)",
+      "Blockchain Researcher, Electric Capital (smart contract analysis)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ren CF is a General Partner at Electric Capital. He began his career as a quantitative researcher at Citadel building trading infrastructure, and at Electric he co-created Codeslaw (a smart contract search tool) and contributed to Bitcoin consensus analysis.",
+    sources: [
+      {
+        label: "Electric Capital - Ren CF",
+        url: "https://electriccapital.com/team/ren-cf/"
+      }
+    ]
+  },
+"chip-hazard": {
+    name: "Chip Hazard",
+    firm: "Flybridge",
+    firmSlug: "flybridge",
+    title: "Co-founder & General Partner",
+    joinedYear: 2002,
+    investmentFocus: ["AI Infrastructure", "Developer Platforms", "Complex Systems"],
+    education: ["B.A. in Economics and Political Science, Stanford University", "M.B.A., Harvard Business School"],
+    previousExperience: ["General Partner, Greylock Partners", "Company Assistance Limited", "Bain and Company"],
+    boardSeats: ["MongoDB"],
+    notableInvestments: [{ name: "MongoDB", ticker: "MDB" }],
+    ipoCount: 1,
+    majorExits: 0,
+    careerTimeline: [{ year: 1994, event: "Joins Greylock, where he becomes a General Partner." }, { year: 2002, event: "Co-founds Flybridge Capital Partners in Boston in May 2002." }, { year: 2009, event: "Joins the MongoDB board of directors in October 2009." }, { year: 2017, event: "Co-launches XFactor Ventures with Flybridge as an investment partner." }],
+    biography: "Chip Hazard co-founded Flybridge in May 2002 and is a General Partner at the firm. He is the longest-tenured non-founder member of MongoDB's board, which he joined in October 2009, and chairs its Nominating and Corporate Governance Committee. Before Flybridge he was a General Partner at Greylock, which he joined in 1994, and earlier worked at Company Assistance Limited and Bain and Company. He co-founded XFactor Ventures, a Flybridge-backed fund investing in companies with at least one female founder. He holds a B.A. from Stanford and an M.B.A. from Harvard Business School, where he was a Baker and Ford Scholar.",
+    sources: [{ label: "Flybridge - Investment Team", url: "https://www.flybridge.com/team" }, { label: "MongoDB Investor Relations - Chip Hazard board bio", url: "https://investors.mongodb.com/board-member/chip-hazard" }]
+  },
+"jeff-bussgang": {
+    name: "Jeff Bussgang",
+    firm: "Flybridge",
+    firmSlug: "flybridge",
+    title: "Co-founder & General Partner",
+    joinedYear: 2002,
+    investmentFocus: ["Agentic Business Applications", "Vertical SaaS", "Fintech"],
+    education: ["B.A. in Computer Science, Harvard University", "M.B.A., Harvard Business School"],
+    previousExperience: ["Senior Lecturer of Business Administration, Harvard Business School", "Co-founder, President and COO, Upromise", "VP of Worldwide Marketing and Business Development, Open Market", "The Boston Consulting Group"],
+    boardSeats: [],
+    notableInvestments: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [{ year: 1996, event: "Open Market, where he was an executive, goes public." }, { year: 2002, event: "Co-founds Flybridge Capital Partners." }, { year: 2010, event: "Publishes 'Mastering the VC Game'." }, { year: 2017, event: "Publishes 'Entering StartUpLand'." }, { year: 2025, event: "Publishes 'The Experimentation Machine: Finding Product-Market Fit in the Age of AI'." }],
+    biography: "Jeff Bussgang co-founded Flybridge and is a General Partner focused on agentic business applications, vertical SaaS and fintech. He is a Senior Lecturer of Business Administration at Harvard Business School, where he teaches Launching Technology Ventures. Before venture capital he co-founded Upromise, serving as President and COO until its acquisition by Sallie Mae, and was an executive at Open Market, which went public in 1996. He began his career at The Boston Consulting Group. He leads Flybridge's Graduate Syndicate pre-seed fund for Harvard Business School graduates.",
+    sources: [{ label: "Flybridge - Investment Team", url: "https://www.flybridge.com/team" }, { label: "Flybridge - Next Wave", url: "https://www.flybridge.com/next-wave" }, { label: "Harvard Business School faculty - Jeffrey J. Bussgang", url: "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=108987" }]
+  },
+"jesse-middleton": {
+    name: "Jesse Middleton",
+    firm: "Flybridge",
+    firmSlug: "flybridge",
+    title: "General Partner",
+    joinedYear: 2016,
+    investmentFocus: ["Future of Work", "Native AI Applications"],
+    education: [],
+    previousExperience: ["Co-founder, WeWork Labs", "Independent angel investor"],
+    boardSeats: [],
+    notableInvestments: [{ name: "Arcee", ticker: null }, { name: "CarEdge", ticker: null }, { name: "Chief", ticker: null }, { name: "HiFi", ticker: null }, { name: "Imperfect Foods", ticker: null }, { name: "Splice", ticker: null }, { name: "Teal", ticker: null }],
+    ipoCount: 0,
+    majorExits: 2,
+    careerTimeline: [{ year: 2016, event: "Joins Flybridge as its fourth General Partner in June 2016, establishing the firm's New York presence." }],
+    biography: "Jesse Middleton is a General Partner at Flybridge, focused on the future of work, native AI applications and serial entrepreneurs. He joined the firm in June 2016 after co-founding WeWork Labs, where he helped scale WeWork's operations across multiple continents. Before joining Flybridge he spent over a year as an angel investor. At Flybridge he has led investments in Arcee, CarEdge, Chief, HiFi (acquired by Square), Imperfect Foods (acquired by Misfits Market), Splice and Teal.",
+    sources: [{ label: "Flybridge - Investment Team", url: "https://www.flybridge.com/team" }, { label: "TechCrunch - Flybridge adds a General Partner in NYC (2016)", url: "https://techcrunch.com/2016/06/20/flybridge-adds-a-general-partner-in-nyc-wework-labs-cofounder-jesse-middleton/" }]
+  },
+"jeff-fagnan": {
+    name: "Jeff Fagnan",
+    firm: "Accomplice",
+    firmSlug: "accomplice",
+    title: "Founding Partner",
+    joinedYear: 2015,
+    investmentFocus: [],
+    education: ["University of Alaska", "University of Rochester"],
+    previousExperience: ["Partner, Atlas Venture", "SoftBank venture practice", "Booz Allen Hamilton", "Nortel"],
+    boardSeats: [],
+    researchState: "exhausted",
+    researchChecked: "2026-08-24",
+    notableInvestments: [
+    { name: "AngelList", ticker: null, year: 2007, yearPrecision: "year",
+      role: "board",
+      evidence: [{ url: "https://www.forbes.com/profile/jeff-fagnan/", type: "press", checked: "2026-08-23" },
+                  { url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Carbon Black", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://www.forbes.com/profile/jeff-fagnan/", type: "press", checked: "2026-08-23" },
+                  { url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "CoinList", ticker: null,
+      evidence: [{ url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "DataCamp", ticker: null,
+      evidence: [{ url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "FreshBooks", ticker: null,
+      evidence: [{ url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Hopper", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://www.forbes.com/profile/jeff-fagnan/", type: "press", checked: "2026-08-23" },
+                  { url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Integral Ad Science", ticker: "IAS",
+      evidence: [{ url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Patreon", ticker: null,
+      sector: "Consumer", subsector: "Creator Platform",
+      evidence: [{ url: "https://www.forbes.com/profile/jeff-fagnan/", type: "press", checked: "2026-08-23" },
+                  { url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "PillPack", ticker: null,
+      evidence: [{ url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Recorded Future", ticker: null,
+      evidence: [{ url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "SecurityScorecard", ticker: null,
+      evidence: [{ url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Veracode", ticker: null,
+      evidence: [{ url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "WHOOP", ticker: null,
+      sector: "Consumer Health", subsector: "Wearables",
+      evidence: [{ url: "https://www.forbes.com/profile/jeff-fagnan/", type: "press", checked: "2026-08-23" },
+                  { url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Teachable", ticker: null, stage: "Series A", year: 2017, yearPrecision: "year",
+      sector: "EdTech", subsector: "Online Courses",
+      evidence: [{ url: "https://www.edsurge.com/news/2017-01-25-teachable-raises-4-million-to-help-people-and-brands-create-sell-online-courses", type: "deal-announcement", checked: "2026-08-23" },
+                  { url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "Orchard", ticker: null,
+      sector: "Real Estate Tech",
+      evidence: [{ url: "https://www.forbes.com/profile/jeff-fagnan/", type: "press", checked: "2026-08-23" },
+                  { url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] },
+    { name: "ZOE", ticker: null,
+      evidence: [{ url: "https://accomplice.co/fagnan", type: "partner-bio", checked: "2026-08-23" }] }
+  ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [{ year: 1999, event: "Joins SoftBank's venture practice." }, { year: 2015, event: "Co-founds Accomplice as Atlas Venture's technology practice spins out." }],
+    biography: "Jeff Fagnan is a Founding Partner of Accomplice and describes himself as a founding investor who has worked with most of his portfolio since inception. Before Accomplice he was a partner at Atlas Venture, and earlier held roles at SoftBank's venture practice, Booz Allen Hamilton and Nortel. Alongside Accomplice he founded Spearhead, Maiden Lane, BOSS, TUGG, TINT and REV Boston. His portfolio includes AngelList, Carbon Black, CoinList, DataCamp, FreshBooks, Hopper, Integral Ad Science, Patreon, PillPack, Recorded Future, SecurityScorecard, Veracode and WHOOP.",
+    sources: [{ label: "Accomplice - Jeff Fagnan", url: "https://accomplice.co/fagnan" }, { label: "Accomplice - Bios", url: "https://accomplice.co/media" }, { label: "Forbes - Jeff Fagnan's Accomplice (2016)", url: "https://www.forbes.com/sites/brucerogers/2016/03/17/jeff-fagnans-accomplice-works-to-build-boston-area-startup-ecosystem/" }]
+  },
+"ryan-moore": {
+    name: "Ryan Moore",
+    firm: "Accomplice",
+    firmSlug: "accomplice",
+    title: "Founding Partner",
+    joinedYear: 2015,
+    investmentFocus: [],
+    education: [],
+    previousExperience: ["Partner, Atlas Venture", "General Partner, GrandBanks Capital"],
+    boardSeats: ["DraftKings", "Workhuman", "Caribou", "Plastiq", "Omaha National"],
+    notableInvestments: [{ name: "DraftKings", ticker: "DKNG" }, { name: "Skillz", ticker: "SKLZ" }, { name: "Plastiq", ticker: null }, { name: "Unsplash", ticker: null }, { name: "Workhuman", ticker: null }, { name: "Caribou", ticker: null }],
+    ipoCount: 0,
+    majorExits: 2,
+    careerTimeline: [{ year: 2011, event: "Joins Atlas Venture as a partner in September 2011, after 12 years as a general partner at GrandBanks Capital." }, { year: 2015, event: "Co-founds Accomplice as Atlas Venture's technology practice spins out." }, { year: 2020, event: "DraftKings, where he was the first institutional investor, becomes publicly traded." }],
+    biography: "Ryan Moore is a co-founder and Founding Partner of Accomplice and the founding investor in DraftKings, Plastiq and Unsplash. He was DraftKings' only institutional backer until November 2013 and helped arrange the company's 2012 partnership with Major League Baseball before it went public in 2020. He joined Atlas Venture in September 2011 after 12 years as a general partner at GrandBanks Capital. He sits on the boards of DraftKings, Workhuman, Caribou, Plastiq and Omaha National, and previously backed Skillz from its Series B through its 2020 public listing.",
+    sources: [{ label: "Accomplice - Bios", url: "https://accomplice.co/media" }, { label: "Forbes profile - Ryan Moore", url: "https://www.forbes.com/profile/ryan-moore/" }, { label: "Fortune - Ryan Moore joins Atlas Venture (2011)", url: "https://fortune.com/2011/09/13/exclusive-ryan-moore-joins-atlas-venture/" }]
+  },
+"sarah-downey": {
+    name: "Sarah A. Downey",
+    firm: "Accomplice",
+    firmSlug: "accomplice",
+    title: "Operating Partner",
+    joinedYear: null,
+    investmentFocus: ["Frontier Tech"],
+    education: [],
+    previousExperience: ["Director of Marketing, Ovia Health"],
+    boardSeats: [],
+    notableInvestments: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Sarah A. Downey is an Operating Partner at Accomplice, where her stated focus is frontier tech. Before joining the firm she was Director of Marketing at Ovia Health. Accomplice's bios page does not disclose her education, board seats or the year she joined the firm, and no further detail was verified from a primary source.",
+    sources: [{ label: "Accomplice - Bios", url: "https://accomplice.co/media" }]
+  },
+"jonathon-triest": {
+    name: "Jonathon Triest",
+    firm: "Ludlow Ventures",
+    firmSlug: "ludlow-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: ["Pre-seed", "Seed"],
+    education: ["University of Michigan"],
+    previousExperience: ["Strategic marketing consultant, Sony-BMG"],
+    boardSeats: [],
+    notableInvestments: [{ name: "Honey", ticker: null }],
+    ipoCount: 0,
+    majorExits: 1,
+    careerTimeline: [{ year: 2010, event: "Ludlow Ventures established, per the firm's site." }, { year: 2020, event: "Portfolio company Honey acquired by PayPal for $4B." }, { year: 2021, event: "Ludlow closes fourth fund at $65M." }],
+    biography: "Jonathon Triest is the founder of Ludlow Ventures and is listed as Partner on the firm's site. He graduated from the University of Michigan and worked as a strategic marketing consultant for Sony-BMG in Atlanta before returning to Detroit. Before formally establishing the firm he invested in startups on a deal-by-deal basis alongside his father. TechCrunch reported in 2024 that his original investment in Honey returned six times Ludlow's $15M first fund when PayPal acquired the company in 2020.",
+    sources: [{ label: "Ludlow Ventures - Homepage (team section)", url: "https://www.ludlowventures.com/" }, { label: "TechCrunch - Detroit's Ludlow Ventures takes founder-friendly to another level (2024)", url: "https://techcrunch.com/2024/06/28/all-vcs-say-they-are-founder-friendly-detroits-ludlow-ventures-takes-that-to-another-level" }]
+  },
+"brett-demarrais": {
+    name: "Brett deMarrais",
+    firm: "Ludlow Ventures",
+    firmSlug: "ludlow-ventures",
+    title: "Partner",
+    joinedYear: 2012,
+    investmentFocus: ["Pre-seed", "Seed"],
+    education: ["Michigan Venture Fellows Program"],
+    previousExperience: ["Founder, Wedit", "Out of the Blue Entertainment"],
+    boardSeats: [],
+    notableInvestments: [],
+    ipoCount: 0,
+    majorExits: null,
+    careerTimeline: [{ year: 2012, event: "Joined Ludlow Ventures as a partner." }, { year: 2015, event: "Graduated from the Michigan Venture Fellows Program." }],
+    biography: "Brett deMarrais is a Partner at Ludlow Ventures, listed on the firm's current team page. TechCrunch reported that he joined the firm in 2012. Before venture capital he founded Wedit, a crowdsourced wedding video platform, and worked at Out of the Blue Entertainment. He completed the Michigan Venture Capital Association's Michigan Venture Fellows Program in 2015.",
+    sources: [{ label: "Ludlow Ventures - Homepage (team section)", url: "https://www.ludlowventures.com/" }, { label: "Michigan Venture Capital Association - Brett deMarrais", url: "https://michiganvca.org/staff/brett-demarrais/" }]
   }
 });
