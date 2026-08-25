@@ -28015,5 +28015,3426 @@ sources: [
       { label: "CNBC on TPB's $300 million raise, July 2021", url: "https://www.cnbc.com/2021/07/30/david-friedbergs-alphabet-backed-production-board-raised-300-million.html" },
       { label: "Lavoro and TPB Acquisition Corporation I business combination (Business Wire)", url: "https://www.businesswire.com/news/home/20230228006442/en/Lavoro-and-TPB-Acquisition-Corporation-I-Announce-Completion-of-Business-Combination" }
     ]
-  }
+  },
+  "ben-horowitz": {
+    name: "Ben Horowitz",
+    firm: "Andreessen Horowitz",
+    firmSlug: "a16z",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2009,
+    investmentFocus: [
+      "Enterprise Software",
+      "AI",
+      "Consumer"
+    ],
+    education: [
+      "B.A. Computer Science, Columbia University",
+      "M.S. Computer Science, University of California, Los Angeles"
+    ],
+    previousExperience: [
+      "Senior product marketing roles, Lotus Development Corporation",
+      "Vice President, Directory and Security product line, Netscape Communications",
+      "Vice President & General Manager, E-commerce Platform division, America Online",
+      "Co-founder & CEO, Opsware (formerly Loudcloud; acquired by Hewlett-Packard for $1.6 billion in 2007)",
+      "Vice President & General Manager, Business Technology Optimization for Software, Hewlett-Packard"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Anyscale",
+      "Databricks",
+      "Mayvenn",
+      "NationBuilder",
+      "Navan",
+      "UnitedMasters"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2007, event: "Opsware, which he cofounded and led as CEO, was acquired by Hewlett-Packard for $1.6 billion." },
+      { year: 2009, event: "Cofounded the venture capital firm Andreessen Horowitz with Marc Andreessen." },
+      { year: 2012, event: "Led Andreessen Horowitz's $6.25 million Series A in NationBuilder and joined its board of directors." },
+      { year: 2013, event: "Led Andreessen Horowitz's roughly $14 million Series A investment in Databricks." },
+      { year: 2017, event: "Announced Andreessen Horowitz's investment in UnitedMasters and joined the board." },
+      { year: 2018, event: "Announced Andreessen Horowitz's investment in TripActions, now Navan, and joined the board." }
+    ],
+    biography: "Ben Horowitz is cofounder and general partner at Andreessen Horowitz, the venture capital firm he started with Marc Andreessen in 2009. Before that he was cofounder and CEO of Opsware, formerly Loudcloud, which Hewlett-Packard acquired for $1.6 billion in 2007, and he held product and general management roles at HP, America Online, Netscape Communications and Lotus Development Corporation. He sits on the boards of Anyscale, Databricks, Mayvenn, NationBuilder, Navan and UnitedMasters, and wrote the books The Hard Thing About Hard Things and What You Do Is Who You Are. He created the a16z Cultural Leadership Fund to support young African Americans entering the technology industry.",
+    notableInvestments: [
+      { name: "Databricks", ticker: null, stage: "Series A", year: 2013, yearPrecision: "year", sector: "AI", subsector: "data and analytics platform", role: "board", evidence: [
+        { url: "https://fortune.com/2023/03/02/databricks-ben-horowitz-data-cloud-startup/", type: "press", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/ben-horowitz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Anyscale", ticker: null, stage: "Series A", year: 2019, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "distributed computing, creators of the Ray project", role: "board", evidence: [
+        { url: "https://techcrunch.com/2019/12/17/anyscale-ray-project-distributed-computing-a16z/", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/ben-horowitz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "UnitedMasters", ticker: null, stage: null, year: 2017, yearPrecision: "year", sector: "Consumer", subsector: "independent music distribution", role: "board", evidence: [
+        { url: "https://a16z.com/announcement/unitedmasters/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/ben-horowitz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Navan", ticker: null, stage: null, year: 2018, yearPrecision: "year", sector: "Enterprise Software", subsector: "corporate travel and expense management, announced as TripActions", role: "board", evidence: [
+        { url: "https://a16z.com/announcement/tripactions/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/ben-horowitz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "NationBuilder", ticker: null, stage: "Series A", year: 2012, yearPrecision: "year", sector: "Enterprise Software", subsector: "community and political organizing software", role: "board", evidence: [
+        { url: "https://nationbuilder.com/ah_funding", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/ben-horowitz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Mayvenn", ticker: null, stage: "Series A", year: 2015, yearPrecision: "year", sector: "Ecommerce", subsector: "beauty and hair extensions marketplace", role: "board", evidence: [
+        { url: "https://techcrunch.com/2015/06/19/hair-extensions-startup-mayvenn-raises-10-million-series-a-from-a16z/", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/ben-horowitz/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Andreessen Horowitz - Ben Horowitz", url: "https://a16z.com/author/ben-horowitz/" },
+      { label: "Andreessen Horowitz - UnitedMasters announcement", url: "https://a16z.com/announcement/unitedmasters/" },
+      { label: "Andreessen Horowitz - TripActions announcement", url: "https://a16z.com/announcement/tripactions/" },
+      { label: "Fortune - How Databricks became an A.I. sensation", url: "https://fortune.com/2023/03/02/databricks-ben-horowitz-data-cloud-startup/" },
+      { label: "TechCrunch - Anyscale launches with $20.6M led by a16z", url: "https://techcrunch.com/2019/12/17/anyscale-ray-project-distributed-computing-a16z/" },
+      { label: "TechCrunch - Mayvenn raises $10 million Series A from a16z", url: "https://techcrunch.com/2015/06/19/hair-extensions-startup-mayvenn-raises-10-million-series-a-from-a16z/" },
+      { label: "NationBuilder - Series A funding announcement", url: "https://nationbuilder.com/ah_funding" }
+    ]
+  },
+  "chris-dixon": {
+    name: "Chris Dixon",
+    firm: "Andreessen Horowitz",
+    firmSlug: "a16z",
+    title: "General Partner, a16z crypto",
+    joinedYear: 2012,
+    investmentFocus: [
+      "Crypto"
+    ],
+    education: [
+      "B.A. Philosophy, Columbia University",
+      "M.A. Philosophy, Columbia University",
+      "M.B.A., Harvard Business School"
+    ],
+    previousExperience: [
+      "Programmer, Arbitrade (high-speed options trading firm)",
+      "Co-founder & CEO, SiteAdvisor (acquired by McAfee in 2006)",
+      "Co-founder & CEO, Hunch (acquired by eBay in 2011)",
+      "Co-founder, Founder Collective"
+    ],
+    firmHistory: [
+      { firmSlug: "founder-collective", role: "Co-founder", startYear: null, endYear: null }
+    ],
+    boardSeats: [
+      "OpenSea"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "SiteAdvisor, the internet security company he cofounded and led, was acquired by McAfee." },
+      { year: 2011, event: "Hunch, the recommendation technology company he cofounded and led, was acquired by eBay." },
+      { year: 2012, event: "Joined Andreessen Horowitz as a general partner." },
+      { year: 2013, event: "Led Andreessen Horowitz's $25 million Series B in Coinbase and joined its board of directors." },
+      { year: 2022, event: "Joined OpenSea's board of directors, taking over the a16z seat from Katie Haun." },
+      { year: 2024, event: "Published Read Write Own: Building the Next Era of the Internet with Random House." }
+    ],
+    biography: "Chris Dixon is a general partner at Andreessen Horowitz, where he founded and leads a16z crypto, the firm's dedicated web3 investing practice. He joined the firm in 2012 after cofounding and running two startups, SiteAdvisor, acquired by McAfee in 2006, and Hunch, acquired by eBay in 2011, and after cofounding the seed fund Founder Collective. He led the firm's 2013 Series B investment in Coinbase and joined that company's board, and in 2022 took the a16z board seat at OpenSea. He is the author of Read Write Own: Building the Next Era of the Internet, published by Random House in January 2024.",
+    notableInvestments: [
+      { name: "Coinbase", ticker: "COIN", stage: "Series B", year: 2013, yearPrecision: "year", sector: "Crypto", subsector: "bitcoin wallet and merchant services", role: "board", evidence: [
+        { url: "https://techcrunch.com/2013/12/12/coinbase-raises-25m-from-andreessen-horowitz-to-build-its-bitcoin-wallet-and-merchant-services/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "OpenSea", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Crypto", subsector: "NFT marketplace", role: "board", evidence: [
+        { url: "https://opensea.io/blog/articles/welcoming-chris-dixon-to-our-board-of-directors", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Uniswap", ticker: null, stage: "Series A", year: null, yearPrecision: null, sector: "Crypto", subsector: "decentralized exchange", role: null, evidence: [
+        { url: "https://www.forbes.com/sites/alexkonrad/2022/04/12/midas-list-chris-dixon-crypto-capitalist/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Avalanche", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Crypto", subsector: "layer-1 blockchain", role: null, evidence: [
+        { url: "https://www.forbes.com/sites/alexkonrad/2022/04/12/midas-list-chris-dixon-crypto-capitalist/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Dapper Labs", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Crypto", subsector: "digital collectibles, creator of NBA Top Shot and CryptoKitties", role: null, evidence: [
+        { url: "https://www.forbes.com/sites/alexkonrad/2022/04/12/midas-list-chris-dixon-crypto-capitalist/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Andreessen Horowitz - Chris Dixon", url: "https://a16z.com/author/chris-dixon/" },
+      { label: "a16z crypto - Chris Dixon", url: "https://a16zcrypto.com/team/chris-dixon/" },
+      { label: "TechCrunch - Coinbase raises $25M led by Andreessen Horowitz", url: "https://techcrunch.com/2013/12/12/coinbase-raises-25m-from-andreessen-horowitz-to-build-its-bitcoin-wallet-and-merchant-services/" },
+      { label: "OpenSea - Welcoming Chris Dixon to our Board of Directors", url: "https://opensea.io/blog/articles/welcoming-chris-dixon-to-our-board-of-directors" },
+      { label: "Forbes - How Chris Dixon's Dive Down The Crypto Rabbit Hole Made Him The World's Top Venture Capitalist", url: "https://www.forbes.com/sites/alexkonrad/2022/04/12/midas-list-chris-dixon-crypto-capitalist/" }
+    ]
+  },
+  "martin-casado": {
+    name: "Martin Casado",
+    firm: "Andreessen Horowitz",
+    firmSlug: "a16z",
+    title: "General Partner, Infrastructure & Enterprise",
+    joinedYear: 2016,
+    investmentFocus: [
+      "Developer Tools & Infrastructure",
+      "Enterprise Software",
+      "AI"
+    ],
+    education: [
+      "M.S. Computer Science, Stanford University",
+      "Ph.D. Computer Science, Stanford University"
+    ],
+    previousExperience: [
+      "Researcher, Lawrence Livermore National Laboratory",
+      "Co-founder, Illuminics Systems (acquired by Quova in 2006)",
+      "Co-founder & CTO, Nicira (acquired by VMware in 2012)",
+      "Fellow and Senior Vice President, VMware (networking and security)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Ambient.ai",
+      "Astranis",
+      "Braintrust",
+      "Coactive",
+      "Convex",
+      "Cursor",
+      "Distributional",
+      "Fivetran",
+      "Ideogram",
+      "Imply",
+      "Kong",
+      "Material Security",
+      "Netlify",
+      "Pindrop Security",
+      "Preset",
+      "Truffle Security",
+      "World Labs"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Illuminics Systems, the IP analytics company he cofounded, was acquired by Quova." },
+      { year: 2012, event: "Nicira, which he cofounded and served as CTO, was acquired by VMware for $1.26 billion." },
+      { year: 2016, event: "Joined Andreessen Horowitz as a general partner after leaving VMware." },
+      { year: 2019, event: "Joined Fivetran's board of directors when Andreessen Horowitz led its $44 million Series B." },
+      { year: 2022, event: "Led Andreessen Horowitz's Series A in Convex and joined the board." },
+      { year: 2024, event: "Coauthored Andreessen Horowitz's announcements of its investments in Cursor and World Labs." }
+    ],
+    biography: "Martin Casado is a general partner at Andreessen Horowitz, where he leads the firm's infrastructure practice, having joined in 2016. He holds a PhD and a master's degree in computer science from Stanford University, helped pioneer software-defined networking as a Stanford researcher, and previously worked at Lawrence Livermore National Laboratory. He cofounded Illuminics Systems, acquired by Quova in 2006, and Nicira, where he was CTO until VMware acquired it for $1.26 billion in 2012, after which he served as a Fellow and senior vice president at VMware leading networking and security. He has received the ACM Grace Murray Hopper Award and the NEC C&C Award, and sits on boards including Convex, Cursor, Fivetran, Kong, Netlify and World Labs.",
+    notableInvestments: [
+      { name: "Convex", ticker: null, stage: "Series A", year: 2022, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "application backend and reactive database", role: "board", evidence: [
+        { url: "https://a16z.com/announcement/investing-in-convex/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/martin-casado/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Fivetran", ticker: null, stage: "Series B", year: 2019, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "automated data integration", role: "board", evidence: [
+        { url: "https://www.fivetran.com/press/fivetran-raises-44-million-series-b-led-by-andreessen-horowitz-to-automate-data-integration", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/martin-casado/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Cursor", ticker: null, stage: "Series A", year: 2024, yearPrecision: "year", sector: "AI", subsector: "AI coding environment", role: "board", evidence: [
+        { url: "https://a16z.com/announcement/investing-in-cursor/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/martin-casado/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "World Labs", ticker: null, stage: null, year: 2024, yearPrecision: "year", sector: "AI", subsector: "spatial intelligence and world models", role: "board", evidence: [
+        { url: "https://a16z.com/announcement/investing-in-world-labs/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/martin-casado/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Andreessen Horowitz - Martin Casado", url: "https://a16z.com/author/martin-casado/" },
+      { label: "Andreessen Horowitz - Investing in Convex", url: "https://a16z.com/announcement/investing-in-convex/" },
+      { label: "Andreessen Horowitz - Investing in Cursor", url: "https://a16z.com/announcement/investing-in-cursor/" },
+      { label: "Andreessen Horowitz - What's In a World? Investing in World Labs", url: "https://a16z.com/announcement/investing-in-world-labs/" },
+      { label: "Fivetran - Fivetran Raises $44 Million Series B Led by Andreessen Horowitz", url: "https://www.fivetran.com/press/fivetran-raises-44-million-series-b-led-by-andreessen-horowitz-to-automate-data-integration" },
+      { label: "TechCrunch - Andreessen Horowitz Brings Aboard Martin Casado As GP", url: "https://techcrunch.com/2016/02/24/in-advance-of-next-fund-andreessen-horowitz-brings-aboard-a-new-gp-martin-casado" }
+    ]
+  },
+  "andrew-chen": {
+    name: "Andrew Chen",
+    firm: "Andreessen Horowitz",
+    firmSlug: "a16z",
+    title: "General Partner, Consumer & Apps",
+    joinedYear: 2018,
+    investmentFocus: [
+      "Consumer",
+      "Gaming",
+      "AI"
+    ],
+    education: [
+      "B.S. Applied Mathematics, University of Washington"
+    ],
+    previousExperience: [
+      "Analyst, Mohr Davidow Ventures",
+      "Head of Rider Growth, Uber"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Substack",
+      "Clubhouse"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Joined Andreessen Horowitz as a general partner after leading growth at Uber." },
+      { year: 2019, event: "Announced that Andreessen Horowitz was leading Substack's Series A and that he was joining the board." },
+      { year: 2019, event: "Announced Andreessen Horowitz's Series A investment in Sandbox VR." },
+      { year: 2020, event: "Was named as the Andreessen Horowitz partner on Sleeper's $20 million Series B." },
+      { year: 2021, event: "Led Andreessen Horowitz's investment in Clubhouse and joined its board of directors." },
+      { year: 2021, event: "Published The Cold Start Problem, a book on network effects, with Harper Business." }
+    ],
+    biography: "Andrew Chen is a general partner at Andreessen Horowitz, which he joined in 2018, and he focuses on consumer technology, entertainment and AI through the firm's a16z speedrun initiative. He led the Rider Growth teams at Uber before joining the firm and began his career as an analyst at Mohr Davidow Ventures. He holds a B.S. in applied mathematics from the University of Washington and wrote The Cold Start Problem, a book about how startups launch and scale using network effects. He led the firm's investments in Substack and Clubhouse and joined both boards, and announced its investments in Sandbox VR and Sleeper.",
+    notableInvestments: [
+      { name: "Substack", ticker: null, stage: "Series A", year: 2019, yearPrecision: "year", sector: "Consumer", subsector: "subscription newsletter platform for writers", role: "board", evidence: [
+        { url: "https://a16z.com/announcement/substack/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Clubhouse", ticker: null, stage: null, year: 2021, yearPrecision: "year", sector: "Consumer", subsector: "social audio", role: "board", evidence: [
+        { url: "https://andrewchen.com/first-book-2021/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Sandbox VR", ticker: null, stage: "Series A", year: 2019, yearPrecision: "year", sector: "Gaming", subsector: "location-based virtual reality entertainment", role: null, evidence: [
+        { url: "https://a16z.com/announcement/sandbox-vr/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Sleeper", ticker: null, stage: "Series B", year: 2020, yearPrecision: "year", sector: "Gaming", subsector: "fantasy sports and esports app", role: null, evidence: [
+        { url: "https://techcrunch.com/2020/05/12/fantasy-sports-startup-sleeper-closes-series-b-led-by-a16z-as-it-expands-to-esports-amid-pandemic", type: "deal-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Andreessen Horowitz - Andrew Chen", url: "https://a16z.com/author/andrew-chen/" },
+      { label: "Andreessen Horowitz - Investing in Substack", url: "https://a16z.com/announcement/substack/" },
+      { label: "Andreessen Horowitz - Sandbox VR announcement", url: "https://a16z.com/announcement/sandbox-vr/" },
+      { label: "andrewchen.com - About", url: "https://andrewchen.com/about/" },
+      { label: "andrewchen.com - My first book, The Cold Start Problem. Plus Clubhouse, and more.", url: "https://andrewchen.com/first-book-2021/" },
+      { label: "Axios - Uber exec Andrew Chen leaving for Andreessen Horowitz", url: "https://www.axios.com/2018/02/15/uber-exec-andrew-chen-leaving-for-andreessen-horowitr-1518702482" },
+      { label: "TechCrunch - Fantasy sports startup Sleeper closes Series B led by a16z", url: "https://techcrunch.com/2020/05/12/fantasy-sports-startup-sleeper-closes-series-b-led-by-a16z-as-it-expands-to-esports-amid-pandemic" }
+    ]
+  },
+  "scott-kupor": {
+    name: "Scott Kupor",
+    firm: "Andreessen Horowitz",
+    firmSlug: "a16z",
+    title: "Managing Partner",
+    joinedYear: 2009,
+    departedYear: 2025,
+    departedNote: "Kupor has left Andreessen Horowitz. He resigned as managing member from 32 a16z funds and from portfolio boards including Formation Bio, Talkiatry, Pearl Health and Foursquare ahead of his Senate confirmation, and resigned as managing partner on appointment. He was sworn in as Director of the U.S. Office of Personnel Management on July 14, 2025, and a16z.com no longer hosts an author or team bio page for him.",
+    investmentFocus: [
+      "Digital Health",
+      "Biotech"
+    ],
+    education: [
+      "B.A. Public Policy, Stanford University",
+      "J.D., Stanford Law School"
+    ],
+    previousExperience: [
+      "Investment banker representing software companies, Lehman Brothers",
+      "Investment banker representing software companies, Credit Suisse First Boston",
+      "Vice President, Financial Planning and Corporate Development, then Senior Vice President of Global Field Operations, Opsware",
+      "Vice President & General Manager, Software-as-a-Service, Hewlett-Packard",
+      "Chairman of the Board, National Venture Capital Association",
+      "Director, U.S. Office of Personnel Management (from July 2025)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2009, event: "Joined Andreessen Horowitz as its first hire at the firm's founding." },
+      { year: 2023, event: "Joined Pearl Health's board of directors when Andreessen Horowitz led its $75 million Series B." },
+      { year: 2024, event: "Joined Formation Bio's board of directors as part of its $372 million Series D." },
+      { year: 2025, event: "Resigned as managing member from 32 a16z funds and from several portfolio boards ahead of his Senate confirmation hearing." },
+      { year: 2025, event: "Was sworn in as Director of the U.S. Office of Personnel Management on July 14." }
+    ],
+    biography: "Scott Kupor was managing partner at Andreessen Horowitz, which he joined as its first hire at the firm's 2009 founding, and where he focused on growth-stage bio and healthcare companies alongside investor relations and firm operations. He holds a B.A. in public policy and a J.D. from Stanford University, and before Andreessen Horowitz he was an investment banker at Lehman Brothers and Credit Suisse First Boston, then held finance and global field operations roles at Opsware and ran software-as-a-service at Hewlett-Packard. He chaired the board of the National Venture Capital Association, taught entrepreneurship at Stanford Graduate School of Business and wrote Secrets of Sand Hill Road: Venture Capital and How to Get It. In 2025 he resigned from a16z funds and portfolio boards and was sworn in as Director of the U.S. Office of Personnel Management on July 14, 2025.",
+    notableInvestments: [
+      { name: "Formation Bio", ticker: null, stage: "Series D", year: 2024, yearPrecision: "year", sector: "Biotech", subsector: "AI-driven drug development", role: "board", evidence: [
+        { url: "https://www.ddw-online.com/ai-driven-drug-company-secures-372m-series-d-funding-30362-202407/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Pearl Health", ticker: null, stage: "Series B", year: 2023, yearPrecision: "year", sector: "Digital Health", subsector: "value-based primary care enablement", role: "board", evidence: [
+        { url: "https://www.prnewswire.com/news-releases/pearl-health-raises-75m-series-b-led-by-a16z-to-accelerate-growth-and-innovation-in-value-based-care-301730586.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Talkiatry", ticker: null, stage: "Series C", year: 2024, yearPrecision: "year", sector: "Digital Health", subsector: "value-based behavioral health and telepsychiatry", role: null, evidence: [
+        { url: "https://www.prnewswire.com/news-releases/talkiatry-secures-130m-series-c-funding-to-mainstream-value-based-behavioral-health-care-302175461.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Foursquare", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "location technology", role: "board", evidence: [
+        { url: "https://fortune.com/2025/04/03/trump-appointee-scott-kupor-resigns-some-a16z-funds-boards-opm-confirmation/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "U.S. Office of Personnel Management - OPM Director Scott Kupor", url: "https://www.opm.gov/about-us/who-we-are/opm-director-scott-kupor/" },
+      { label: "Fortune - Trump appointee Scott Kupor resigns from some a16z funds, boards ahead of confirmation as head of OPM", url: "https://fortune.com/2025/04/03/trump-appointee-scott-kupor-resigns-some-a16z-funds-boards-opm-confirmation/" },
+      { label: "Stanford Law School - Scott Kupor Receives Senate Confirmation To Head Office of Personnel Management", url: "https://law.stanford.edu/stanford-lawyer/articles/scott-kupor-jd-96-ba-93-receives-senate-confirmation-to-head-office-of-personnel-management/" },
+      { label: "Health Evolution - Scott Kupor speaker bio", url: "https://www.healthevolution.com/bios/speaker/scott-kupor/" },
+      { label: "Congress.gov - PN12-24 Nomination of Scott Kupor for Office of Personnel Management", url: "https://www.congress.gov/nomination/119th-congress/12/24" },
+      { label: "Drug Discovery World - AI-driven drug company secures $372m Series D funding", url: "https://www.ddw-online.com/ai-driven-drug-company-secures-372m-series-d-funding-30362-202407/" },
+      { label: "PR Newswire - Pearl Health Raises $75M Series B Led by a16z", url: "https://www.prnewswire.com/news-releases/pearl-health-raises-75m-series-b-led-by-a16z-to-accelerate-growth-and-innovation-in-value-based-care-301730586.html" },
+      { label: "PR Newswire - Talkiatry Secures $130M Series C Funding", url: "https://www.prnewswire.com/news-releases/talkiatry-secures-130m-series-c-funding-to-mainstream-value-based-behavioral-health-care-302175461.html" }
+    ]
+  },
+  "sumer-juneja": {
+    name: "Sumer Juneja",
+    firm: "SoftBank Vision Fund",
+    firmSlug: "softbank-vision-fund",
+    title: "Managing Partner, EMEA/India",
+    joinedYear: 2018,
+    investmentFocus: [],
+    education: [
+      "B.Sc. Politics and Economics, London School of Economics"
+    ],
+    previousExperience: [
+      "Partner, Norwest Venture Partners",
+      "Founding member, Goldman Sachs Asian Special Situations Group (India)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "OYO (Oravel Stays)"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Joined SoftBank to set up its local investing presence in India." },
+      { year: 2021, event: "Elevated to Managing Partner at SoftBank Investment Advisers." },
+      { year: 2022, event: "Remit expanded to oversee SoftBank's investment activities across EMEA in addition to India." },
+      { year: 2024, event: "Appointed a non-executive director on the board of OYO operator Oravel Stays." },
+      { year: 2025, event: "Stepped down from the boards of Swiggy and Lenskart as both companies moved to more independent board structures." }
+    ],
+    biography: "Sumer Juneja is a Managing Partner at SoftBank Investment Advisers and head of the firm's EMEA and India investing. Per SoftBank's own bio, he joined SoftBank in 2018 to set up its local investing presence in India before expanding his remit to also oversee the firm's investment activities in EMEA, and he was elevated to Managing Partner in 2021. Before SoftBank he was a Partner at Norwest Venture Partners and a founding member of Goldman Sachs' Asian Special Situations Group in India. He holds a degree in politics and economics from the London School of Economics.",
+    notableInvestments: [
+      { name: "Eruditus", ticker: null, stage: "Series E", year: 2021, yearPrecision: "year", sector: "EdTech", subsector: "online executive education", role: null, evidence: [
+        { url: "https://techcrunch.com/2021/08/11/india-eruditus-valued-at-3-2-billion-in-650-million-fundraise/", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.avendus.com/india/transaction/avendus-capital-advises-eruditus-on-its-series-e-fund-raise-of-usd-650-million-led-by-accel-and-softbank-vision-fund-2", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "OYO (Oravel Stays)", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "budget hospitality booking", role: "board", evidence: [
+        { url: "https://entrackr.com/2024/08/softbanks-sumer-juneja-joins-oyo-board-as-non-executive-director/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.business-standard.com/companies/news/softbank-nominee-likely-to-join-oyo-board-as-non-executive-director-124071400304_1.html", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Swiggy", ticker: "SWIGGY", stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "food delivery", role: "board", evidence: [
+        { url: "https://www.swiggy.com/corporate/press-release/swiggy-announces-the-transition-of-its-board-towards-an-independent-structure-following-its-public-listing/", type: "press", checked: "2026-08-25" },
+        { url: "https://finance.yahoo.com/quote/SWIGGY.NS/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Lenskart", ticker: "LENSKART", stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: "eyewear retail", role: "board", evidence: [
+        { url: "https://inc42.com/buzz/softbanks-sumer-juneja-steps-down-from-ipo-bound-lenskart-board/", type: "press", checked: "2026-08-25" },
+        { url: "https://yourstory.com/2025/07/lenskart-appoints-ashish-kashyap-sayali-karanjkar-ipo", type: "press", checked: "2026-08-25" },
+        { url: "https://www.chittorgarh.com/ipo/lenskart-solutions-ipo/2551/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "SoftBank Vision Fund - Sumer Juneja", url: "https://visionfund.com/team/sumer-juneja" },
+      { label: "SoftBank Investment Advisers - Vision Fund Team", url: "https://visionfund.com/team" },
+      { label: "YourStory - SoftBank elevates Sumer Juneja to managing partner", url: "https://yourstory.com/2021/11/softbank-sumer-juneja-managing-partner-swiggy-ola-unacademy" },
+      { label: "YourStory - SoftBank India head Sumer Juneja to oversee EMEA region", url: "https://yourstory.com/2022/08/softbank-india-head-sumer-juneja-oversee-emea-" },
+      { label: "Entrackr - SoftBank's Sumer Juneja joins Oyo board", url: "https://entrackr.com/2024/08/softbanks-sumer-juneja-joins-oyo-board-as-non-executive-director/" },
+      { label: "Swiggy - Board transition press release (July 2025)", url: "https://www.swiggy.com/corporate/press-release/swiggy-announces-the-transition-of-its-board-towards-an-independent-structure-following-its-public-listing/" },
+      { label: "TechCrunch - Eruditus valued at $3.2B in $650M fundraise", url: "https://techcrunch.com/2021/08/11/india-eruditus-valued-at-3-2-billion-in-650-million-fundraise/" }
+    ]
+  },
+  "vikas-j-parekh": {
+    name: "Vikas J. Parekh",
+    firm: "SoftBank Vision Fund",
+    firmSlug: "softbank-vision-fund",
+    title: "Managing Partner",
+    joinedYear: 2016,
+    investmentFocus: [
+      "Enterprise Software",
+      "Robotics"
+    ],
+    education: [
+      "M.B.A. with highest honors, Harvard Business School",
+      "M.S. Electrical & Computer Engineering, Georgia Institute of Technology",
+      "B.S. Electrical Engineering, Georgia Institute of Technology"
+    ],
+    previousExperience: [
+      "Private Equity, KKR",
+      "Consultant, Boston Consulting Group"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Symbotic"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Joined SoftBank after private equity at KKR and consulting at Boston Consulting Group." },
+      { year: 2021, event: "Quoted for SoftBank Vision Fund on Pantheon's $100 million financing." },
+      { year: 2022, event: "Quoted for SoftBank Investment Advisers on MinIO's $103 million Series B." },
+      { year: 2022, event: "Appointed to WeWork's board of directors effective November 30." }
+    ],
+    biography: "Vikas J. Parekh is a Managing Partner at SoftBank Investment Advisers, where his own bio states he focuses on investing in Automation, Enterprise software, and other Emerging Technologies. He joined SoftBank in 2016 after working in private equity at KKR and in consulting at Boston Consulting Group. He serves as a director on public and private company boards, including Symbotic, and was appointed to WeWork's board in November 2022. He holds an M.B.A. with highest honors from Harvard Business School and B.S. and M.S. degrees in electrical and computer engineering from the Georgia Institute of Technology.",
+    notableInvestments: [
+      { name: "Symbotic", ticker: "SYM", stage: null, year: null, yearPrecision: null, sector: "Robotics", subsector: "warehouse automation", role: "board", evidence: [
+        { url: "https://ir.symbotic.com/board-member/vikas-j-parekh", type: "regulatory", checked: "2026-08-25" },
+        { url: "https://www.stocktitan.net/news/WE/we-work-announces-new-soft-bank-appointment-vikas-j-parekh-to-board-i7ktor05pwat.html", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "MinIO", ticker: null, stage: "Series B", year: 2022, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "multi-cloud object storage", role: null, evidence: [
+        { url: "https://www.min.io/press/minio-closes-103-million-series-b-round-at-1-billion-valuation-to-accelerate-multi-cloud-storage", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Pantheon", ticker: null, stage: null, year: 2021, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "WebOps platform", role: null, evidence: [
+        { url: "https://techcrunch.com/2021/07/13/webops-platform-pantheon-raises-100m-from-softbank-vision-fund/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "WeWork", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Real Estate Tech", subsector: "flexible workspace", role: "board", evidence: [
+        { url: "https://www.stocktitan.net/news/WE/we-work-announces-new-soft-bank-appointment-vikas-j-parekh-to-board-i7ktor05pwat.html", type: "firm-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "SoftBank Vision Fund - Vikas J. Parekh", url: "https://visionfund.com/team/vikas-j-parekh" },
+      { label: "Symbotic Investor Relations - Vikas J. Parekh, Board Member", url: "https://ir.symbotic.com/board-member/vikas-j-parekh" },
+      { label: "WeWork announces new SoftBank appointment, Vikas J. Parekh, to board of directors", url: "https://www.stocktitan.net/news/WE/we-work-announces-new-soft-bank-appointment-vikas-j-parekh-to-board-i7ktor05pwat.html" },
+      { label: "MinIO - $103M Series B press release", url: "https://www.min.io/press/minio-closes-103-million-series-b-round-at-1-billion-valuation-to-accelerate-multi-cloud-storage" },
+      { label: "TechCrunch - Pantheon raises $100M from SoftBank Vision Fund", url: "https://techcrunch.com/2021/07/13/webops-platform-pantheon-raises-100m-from-softbank-vision-fund/" }
+    ]
+  },
+  "kentaro-matsui": {
+    name: "Kentaro Matsui",
+    firm: "SoftBank Vision Fund",
+    firmSlug: "softbank-vision-fund",
+    title: "Managing Partner, Asia",
+    joinedYear: null,
+    investmentFocus: [
+      "Fintech",
+      "Digital Health",
+      "Mobility"
+    ],
+    education: [],
+    previousExperience: [
+      "Mizuho Securities, where he advised on SoftBank's investments in Vodafone Japan, Sprint and Arm"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Named to a senior advisory post to enhance the Vision Fund's investment strategy, reported June 9." },
+      { year: 2022, event: "Quoted for SoftBank Vision Fund 2 on AI Medical Service's Series C financing." },
+      { year: 2025, event: "Quoted for SoftBank Investment Advisers on QuEra Computing's $230 million financing." }
+    ],
+    biography: "Kentaro Matsui is a Managing Partner at SoftBank Investment Advisers, based in the firm's Tokyo office, where his bio states he focuses on investment opportunities in Asia. Before his current role he worked at Mizuho Securities, where he advised on SoftBank's investments in Vodafone Japan, Sprint and Arm. Reporting in 2020 described him as concentrating on Asia-based financial, healthcare and logistics technology deals, with Didi Chuxing, Manbang Group and Ping An Healthcare Management among his portfolio. He has since been quoted for the Vision Fund on investments including AI Medical Service and QuEra Computing.",
+    notableInvestments: [
+      { name: "AI Medical Service", ticker: null, stage: "Series C", year: 2022, yearPrecision: "year", sector: "Diagnostics", subsector: "AI-assisted endoscopic image diagnosis", role: null, evidence: [
+        { url: "https://industryeurope.com/sectors/healthcare/softbank-invests-59m-in-ai-cancer-detecting-technolo/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.prnewswire.com/news-releases/ai-medical-service-inc-announces-8-billion-jpy-us70-m-series-c-financing-led-by-softbank-vision-fund-2-svf2-301532652.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "QuEra Computing", ticker: null, stage: null, year: 2025, yearPrecision: "year", sector: "Deep Tech", subsector: "neutral-atom quantum computing", role: null, evidence: [
+        { url: "https://www.quera.com/press-releases/quera-computing-completes-230m-financing-to-accelerate-development-of-large-scale-fault-tolerant-quantum-computers", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Didi Chuxing", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Mobility", subsector: "ride hailing", role: null, evidence: [
+        { url: "https://globalventuring.com/blog/2020/06/09/softbank-names-two-senior-officers/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Manbang Group", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Mobility", subsector: "digital freight matching", role: null, evidence: [
+        { url: "https://globalventuring.com/blog/2020/06/09/softbank-names-two-senior-officers/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Ping An Healthcare Management", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: "healthcare management technology", role: null, evidence: [
+        { url: "https://globalventuring.com/blog/2020/06/09/softbank-names-two-senior-officers/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "SoftBank Vision Fund - Kentaro Matsui", url: "https://visionfund.com/team/kentaro-matsui" },
+      { label: "SoftBank Investment Advisers - Vision Fund Team", url: "https://visionfund.com/team" },
+      { label: "Global Venturing - SoftBank names two senior officers (June 2020)", url: "https://globalventuring.com/blog/2020/06/09/softbank-names-two-senior-officers/" },
+      { label: "Industry Europe - SoftBank invests EUR 59m in AI cancer-detecting technology", url: "https://industryeurope.com/sectors/healthcare/softbank-invests-59m-in-ai-cancer-detecting-technolo/" },
+      { label: "QuEra Computing - $230M financing press release", url: "https://www.quera.com/press-releases/quera-computing-completes-230m-financing-to-accelerate-development-of-large-scale-fault-tolerant-quantum-computers" }
+    ]
+  },
+  "don-valentine": {
+    name: "Don Valentine",
+    firm: "Sequoia Capital",
+    firmSlug: "sequoia",
+    title: "Founder (1972)",
+    joinedYear: 1972,
+    departedYear: 2019,
+    departedNote: "Died October 25, 2019, at age 87 at his home in Woodside, California, as announced by Sequoia Capital. Profile reflects his founding role, not a current one.",
+    investmentFocus: [
+      "Hardware",
+      "Enterprise Software",
+      "Gaming"
+    ],
+    education: [
+      "B.S. Chemistry, Fordham University (1954)"
+    ],
+    previousExperience: [
+      "Sales engineer, Raytheon",
+      "Sales and marketing, Fairchild Semiconductor",
+      "Founding VP of Sales and Marketing, National Semiconductor"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1954, event: "Graduated from Fordham University, where he studied chemistry." },
+      { year: 1972, event: "Founded Sequoia Capital." },
+      { year: 1974, event: "Formed a $3 million venture fund, Sequoia's first." },
+      { year: 1978, event: "Sequoia invested $150,000 in Apple Computer and he joined its board." },
+      { year: 1987, event: "Sequoia made its original investment in Cisco Systems, where he served as chairman." },
+      { year: 2019, event: "Died at age 87 at his home in Woodside, California." }
+    ],
+    biography: "Don Valentine founded Sequoia Capital in 1972, before the terms Silicon Valley and venture capital had been coined. He studied chemistry at Fordham University and worked as a sales engineer at Raytheon, then spent seven years at Fairchild Semiconductor before becoming founding VP of Sales and Marketing at National Semiconductor. At Sequoia he backed Atari and Apple Computer, serving on both boards, and oversaw investments in Oracle, LSI Logic, Microchip Technology, Linear Technology, Network Appliance, Electronic Arts, Sierra Semiconductor and Cisco Systems, where he was chairman from the firm's original 1987 investment. He died in 2019 at age 87.",
+    notableInvestments: [
+      { name: "Apple", ticker: "AAPL", stage: null, year: 1978, yearPrecision: "year", sector: "Hardware", subsector: "personal computers", role: "board", evidence: [
+        { url: "https://sequoiacap.com/article/remembering-don-valentine", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://sequoiacap.com/companies/apple/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://now.fordham.edu/fordham-magazine/tribute-don-valentine-silicon-valley-pioneer/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Atari", ticker: null, stage: null, year: 1975, yearPrecision: "year", sector: "Gaming", subsector: "videogames", role: "board", evidence: [
+        { url: "https://sequoiacap.com/article/remembering-don-valentine", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://sequoiacap.com/companies/atari/", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Cisco Systems", ticker: "CSCO", stage: null, year: 1987, yearPrecision: "year", sector: "Hardware", subsector: "networking equipment", role: "board", evidence: [
+        { url: "https://sequoiacap.com/article/remembering-don-valentine", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://sequoiacap.com/companies/cisco/", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Oracle", ticker: "ORCL", stage: null, year: 1983, yearPrecision: "year", sector: "Enterprise Software", subsector: "database software", role: null, evidence: [
+        { url: "https://sequoiacap.com/article/remembering-don-valentine", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://sequoiacap.com/companies/oracle/", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Electronic Arts", ticker: null, stage: null, year: 1982, yearPrecision: "year", sector: "Gaming", subsector: "videogame publishing", role: null, evidence: [
+        { url: "https://sequoiacap.com/article/remembering-don-valentine", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://sequoiacap.com/companies/electronic-arts/", type: "portfolio-page", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Sequoia Capital - Remembering Don Valentine", url: "https://sequoiacap.com/article/remembering-don-valentine" },
+      { label: "Fordham Magazine - Tribute: Don Valentine, Silicon Valley Pioneer", url: "https://now.fordham.edu/fordham-magazine/tribute-don-valentine-silicon-valley-pioneer/" },
+      { label: "Fortune - Silicon Valley Remembers Sequoia Capital Founder Don Valentine", url: "https://fortune.com/2019/10/25/silicon-valley-remembers-sequoia-capital-founder-don-valentine/" },
+      { label: "TechCrunch - Don Valentine, who founded Sequoia Capital, has died at age 87", url: "https://techcrunch.com/2019/10/25/don-valentine-who-founded-sequoia-capital-has-died-at-age-87/" }
+    ]
+  },
+  "roelof-botha": {
+    name: "Roelof Botha",
+    firm: "Sequoia Capital",
+    firmSlug: "sequoia",
+    title: "Senior Steward, Global Managing Partner",
+    joinedYear: 2003,
+    departedYear: 2025,
+    departedNote: "The supplied title is no longer current. Botha stepped down as Sequoia's senior steward in November 2025, when Alfred Lin and Pat Grady were named co-stewards, and he is not listed on sequoiacap.com's current team page. SpaceX's June 2026 Form 8-K states he 'has been with Sequoia Capital, a venture capital firm, since 2003, and was a managing member of Sequoia Capital Operations, LLC from 2007 to 2025,' and Block's investor-relations page still lists him as 'Partner, Sequoia Capital'; Natera's board page instead describes him as having been 'with Sequoia Capital, a venture capital firm, from 2003 to 2026.' He is alive and remains active on portfolio company boards.",
+    investmentFocus: [
+      "Consumer",
+      "Fintech",
+      "Enterprise Software"
+    ],
+    education: [
+      "B.S. Actuarial Science, Economics and Statistics, University of Cape Town",
+      "M.B.A., Stanford Graduate School of Business"
+    ],
+    previousExperience: [
+      "Chief Financial Officer, PayPal (2000-2003, various positions including CFO)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "SpaceX",
+      "Block",
+      "Ethos",
+      "MongoDB",
+      "Unity",
+      "Natera"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2000, event: "Joined PayPal, where he held various positions including Chief Financial Officer through 2003." },
+      { year: 2003, event: "Joined Sequoia Capital as a partner in January." },
+      { year: 2005, event: "Led Sequoia's investment in YouTube after a former PayPal colleague showed him the site." },
+      { year: 2007, event: "Joined the board of Natera, where he serves as lead independent director." },
+      { year: 2011, event: "Joined the board of Square, now Block, in January." },
+      { year: 2022, event: "Became Sequoia's senior steward in mid-year." },
+      { year: 2025, event: "Stepped down as senior steward in November; Alfred Lin and Pat Grady were named co-stewards." },
+      { year: 2026, event: "Joined the board of SpaceX in June as an independent director and audit committee member." }
+    ],
+    biography: "Roelof Botha joined Sequoia Capital as a partner in January 2003 after holding various positions at PayPal from 2000 to 2003, including Chief Financial Officer. Sequoia's own writing credits him with leading partnerships with Eventbrite, Evernote, Instagram, Square, Tumblr, YouTube and Unity. He holds a B.S. in actuarial science, economics and statistics from the University of Cape Town and an M.B.A. from the Stanford Graduate School of Business. He served as Sequoia's senior steward from mid-2022 until November 2025 and sits on the boards of SpaceX, Block, Ethos, MongoDB, Unity and Natera.",
+    notableInvestments: [
+      { name: "YouTube", ticker: null, stage: null, year: 2005, yearPrecision: "year", sector: "Consumer", subsector: "online video", role: null, evidence: [
+        { url: "https://articles.sequoiacap.com/youtube-story", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://sequoiacap.com/article/seven-questions-with-roelof-botha/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Unity", ticker: "U", stage: "Series A", year: 2009, yearPrecision: "year", sector: "Gaming", subsector: "game development platform", role: "board", evidence: [
+        { url: "https://unity.com/news/sequoia-capital-invests-unity", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://investor.natera.com/governance/board-of-directors/person-details/default.aspx?ItemId=c838f965-7880-46eb-b897-aaf84fbcfb98", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Eventbrite", ticker: "EB", stage: null, year: 2009, yearPrecision: "year", sector: "Consumer", subsector: "event ticketing", role: null, evidence: [
+        { url: "https://sequoiacap.com/companies/eventbrite/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://sequoiacap.com/article/seven-questions-with-roelof-botha/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "MongoDB", ticker: "MDB", stage: null, year: 2010, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "document-oriented database", role: "board", evidence: [
+        { url: "https://sequoiacap.com/companies/mongodb/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://investor.natera.com/governance/board-of-directors/person-details/default.aspx?ItemId=c838f965-7880-46eb-b897-aaf84fbcfb98", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Block", ticker: "XYZ", stage: null, year: 2011, yearPrecision: "year", sector: "Fintech", subsector: "payments", role: "board", evidence: [
+        { url: "https://www.sec.gov/Archives/edgar/data/1512673/000114036120009680/nc10010090x1_def14a.htm", type: "regulatory", checked: "2026-08-25" },
+        { url: "https://sequoiacap.com/article/seven-questions-with-roelof-botha/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Instagram", ticker: null, stage: null, year: 2012, yearPrecision: "year", sector: "Consumer", subsector: "photo sharing", role: null, evidence: [
+        { url: "https://sequoiacap.com/companies/instagram/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://sequoiacap.com/article/seven-questions-with-roelof-botha/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Sequoia Capital - Seven Questions with Roelof Botha", url: "https://sequoiacap.com/article/seven-questions-with-roelof-botha/" },
+      { label: "Sequoia Capital - The YouTube Story", url: "https://articles.sequoiacap.com/youtube-story" },
+      { label: "Natera Investor Relations - Roelof F. Botha, board of directors", url: "https://investor.natera.com/governance/board-of-directors/person-details/default.aspx?ItemId=c838f965-7880-46eb-b897-aaf84fbcfb98" },
+      { label: "Block Investor Relations - Roelof Botha, board of directors", url: "https://investors.block.xyz/governance/board-of-directors/person-details/default.aspx?ItemId=a8dcc128-103c-4e87-a5be-e86af1c23288" },
+      { label: "Square, Inc. DEF 14A proxy statement (SEC)", url: "https://www.sec.gov/Archives/edgar/data/1512673/000114036120009680/nc10010090x1_def14a.htm" },
+      { label: "SpaceX Form 8-K reporting Botha's board appointment", url: "https://www.stocktitan.net/sec-filings/SPCX/8-k-space-exploration-technologies-corp-reports-material-event-5adfe3515674.html" },
+      { label: "Unity - Sequoia Capital Invests in Unity", url: "https://unity.com/news/sequoia-capital-invests-unity" },
+      { label: "TechCrunch - Sequoia names Alfred Lin and Pat Grady as new co-stewards as Roelof Botha steps down", url: "https://techcrunch.com/2025/11/04/sequoia-names-alfred-lin-and-pat-grady-as-new-co-stewards-as-roelof-botha-steps-down/" },
+      { label: "Axios - Sequoia Capital transitions to new leadership", url: "https://www.axios.com/2025/11/04/sequoia-capital-roelof-botha-pat-grady-alfred-lin" },
+      { label: "Fortune - Ex-Sequoia steward Roelof Botha joins SpaceX board", url: "https://fortune.com/2026/06/17/paypal-mafia-member-and-ex-sequoia-steward-roelof-botha-joins-spacex-board-reuniting-with-elon-musk-after-decades/" }
+    ]
+  },
+  "jerry-murdock": {
+    name: "Jerry Murdock",
+    firm: "Insight Partners",
+    firmSlug: "insight-partners",
+    title: "Co-Founder (Managing Director until 2011)",
+    joinedYear: 1995,
+    departedYear: 2011,
+    departedNote: "Insight Partners' own team page for him carries no current-role bio and states only: \"Jerry Murdock is a co-founder of Insight Venture Partners and was a Managing Director of the firm until April 2011.\" He is not presented as an active investing partner.",
+    investmentFocus: [
+      "Consumer",
+      "Enterprise Software"
+    ],
+    education: [
+      "Bachelor's degree, San Diego State University"
+    ],
+    previousExperience: [
+      "Founder and Director, Aspen Technology Group (1988-1995)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1988, event: "Founded Aspen Technology Group and served as a director." },
+      { year: 1995, event: "Co-founded Insight Venture Partners with Jeff Horing." },
+      { year: 2009, event: "Invested in Twitter." },
+      { year: 2011, event: "Ceased to be a Managing Director of Insight in April." },
+      { year: 2014, event: "Ranked number 88 on the Forbes Midas List, largely on his Twitter investment." }
+    ],
+    biography: "Jerry Murdock co-founded Insight Venture Partners with Jeff Horing in 1995 and was a Managing Director of the firm until April 2011, according to Insight Partners' own team page. Before Insight he founded Aspen Technology Group, which he ran from 1988 to 1995. Forbes credits him with investments including Twitter, Nest, Docker, Flipboard, Hortonworks, Truecaller, Klout, Path and AdColony, and ranked him 88th on its 2014 Midas List. He is a trustee of the Santa Fe Institute, the Aspen Center for Environmental Studies and the Aspen Institute.",
+    notableInvestments: [
+      { name: "Twitter", ticker: null, stage: null, year: 2009, yearPrecision: "year", sector: "Consumer", subsector: "social media", role: null, evidence: [
+        { url: "https://www.forbes.com/profile/jerry-murdock/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Nest", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "connected home devices", role: null, evidence: [
+        { url: "https://www.forbes.com/profile/jerry-murdock/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.aspeninstitute.org/people/jerry-murdock/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Docker", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "container platform", role: null, evidence: [
+        { url: "https://www.forbes.com/profile/jerry-murdock/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.aspeninstitute.org/people/jerry-murdock/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Flipboard", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "news and content aggregation", role: null, evidence: [
+        { url: "https://www.forbes.com/profile/jerry-murdock/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.aspeninstitute.org/people/jerry-murdock/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Hortonworks", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "big data platform", role: null, evidence: [
+        { url: "https://www.forbes.com/profile/jerry-murdock/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Insight Partners - Jerry Murdock (team page)", url: "https://www.insightpartners.com/team/jerry-murdock/" },
+      { label: "Forbes - Jerry Murdock profile", url: "https://www.forbes.com/profile/jerry-murdock/" },
+      { label: "Aspen Institute - Jerry Murdock", url: "https://www.aspeninstitute.org/people/jerry-murdock/" }
+    ]
+  },
+  "scott-shleifer": {
+    name: "Scott Shleifer",
+    firm: "Tiger Global Management",
+    firmSlug: "tiger-global",
+    title: "Partner, led expansion into private equity",
+    joinedYear: 2002,
+    departedYear: 2024,
+    departedNote: "Tiger Global announced in November 2023 that Shleifer would step down as head of private investing; effective January 1, 2024 he moved to a full-time senior advisor role, with founder Chase Coleman taking direct control of the private equity business and chairing a new investment committee on which Shleifer sits. Tiger Global's own website publishes no team page or bio for him.",
+    investmentFocus: [
+      "Consumer"
+    ],
+    education: [
+      "Bachelor's degree, The Wharton School, University of Pennsylvania"
+    ],
+    previousExperience: [
+      "Private equity, The Blackstone Group"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2002, event: "Joined Tiger Global after working in private equity at The Blackstone Group." },
+      { year: 2003, event: "Co-founded Tiger Global's private equity investing arm." },
+      { year: 2019, event: "Became global head of private equity and co-portfolio manager of the private equity business alongside Chase Coleman." },
+      { year: 2023, event: "Tiger Global announced on November 21 that he would step down as head of private investing." },
+      { year: 2024, event: "Became a full-time senior advisor to Tiger Global effective January 1." }
+    ],
+    biography: "Scott Shleifer joined Tiger Global in 2002 after working in private equity at The Blackstone Group, and co-founded the firm's private equity investing arm in 2003. Press reporting credits him with directing Tiger Global's venture capital into Chinese technology companies including JD.com, Didi Chuxing and Meituan, and with building the firm's crossover private investing model. He became global head of private equity and co-portfolio manager of the private business alongside Chase Coleman in 2019. Tiger Global announced in November 2023 that he would step down from that role, and he moved to a full-time senior advisor position effective January 1, 2024.",
+    notableInvestments: [
+      { name: "JD.com", ticker: "JD", stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: "Chinese online retail", role: null, evidence: [
+        { url: "https://www.forbes.com/profile/scott-shleifer/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Didi Chuxing", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Mobility", subsector: "ride hailing", role: null, evidence: [
+        { url: "https://www.forbes.com/profile/scott-shleifer/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Meituan", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "Chinese local services and e-commerce", role: null, evidence: [
+        { url: "https://www.forbes.com/profile/scott-shleifer/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Forbes - Scott Shleifer profile", url: "https://www.forbes.com/profile/scott-shleifer/" },
+      { label: "TechCrunch - Tiger Global chieftain Scott Shleifer transitions to advisory role", url: "https://techcrunch.com/2023/11/21/tiger-global-chieftain-scott-shleifer-transitions-to-advisory-role-after-wild-ride/" },
+      { label: "Axios - Scott Shleifer steps down as head of private equity at Tiger Global", url: "https://www.axios.com/2023/11/21/scott-shleifer-tiger-global" },
+      { label: "Institutional Investor - Julian Robertson Jr.'s Best Bet Ever?", url: "https://www.institutionalinvestor.com/article/2bsw6zg2e92m7buie9vy8/corner-office/julian-robertson-jr-s-best-bet-ever" },
+      { label: "Tiger Global Management - firm website", url: "https://www.tigerglobal.com/" }
+    ]
+  },
+  "joel-cutler": {
+    name: "Joel Cutler",
+    firm: "General Catalyst",
+    firmSlug: "general-catalyst",
+    title: "Co-Founder",
+    joinedYear: 2000,
+    investmentFocus: [
+      "Consumer",
+      "Enterprise Software",
+      "Fintech"
+    ],
+    education: [
+      "B.A., Colby College",
+      "J.D., Boston College Law School"
+    ],
+    previousExperience: [
+      "Co-founder, KAYAK (with Paul English and Steve Hafner)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Warby Parker"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2000, event: "Co-founded General Catalyst with David Fialkow and has served as Co-Founder and Managing Director since January 2000." },
+      { year: 2004, event: "General Catalyst backed KAYAK, the travel search company he co-founded with Paul English and Steve Hafner." },
+      { year: 2006, event: "Backed ITA Software for General Catalyst." },
+      { year: 2012, event: "Joined the board of directors of Warby Parker." }
+    ],
+    biography: "Joel Cutler co-founded General Catalyst with David Fialkow and has served as a Co-Founder and Managing Director there since January 2000. His firm bio lists a focus on consumer, enterprise and fintech companies and credits him with backing KAYAK, ITA Software, Airbnb, Lemonade, Oscar Health, Venmo and OLX, alongside current positions including Warby Parker, Multiverse and Blank Street Coffee. He co-founded KAYAK with Paul English and Steve Hafner before it became a General Catalyst portfolio company. He has served on the board of directors of Warby Parker since 2012.",
+    notableInvestments: [
+      { name: "KAYAK", ticker: null, stage: null, year: 2004, yearPrecision: "year", sector: "Consumer", subsector: "travel search", role: null, evidence: [
+        { url: "https://www.generalcatalyst.com/companies/kayak", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.generalcatalyst.com/team/joel-cutler", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "ITA Software", ticker: null, stage: null, year: 2006, yearPrecision: "year", sector: "Enterprise Software", subsector: "airfare search and pricing software", role: null, evidence: [
+        { url: "https://www.generalcatalyst.com/companies/ita-software", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.generalcatalyst.com/team/joel-cutler", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Airbnb", ticker: null, stage: null, year: 2011, yearPrecision: "year", sector: "Consumer", subsector: "travel marketplace", role: null, evidence: [
+        { url: "https://www.generalcatalyst.com/companies/airbnb", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.generalcatalyst.com/team/joel-cutler", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Warby Parker", ticker: "WRBY", stage: null, year: 2012, yearPrecision: "year", sector: "Consumer", subsector: "eyewear", role: "board", evidence: [
+        { url: "https://www.generalcatalyst.com/companies/warby-parker", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.sec.gov/Archives/edgar/data/1504776/000110465925040245/tm252513-1_def14a.htm", type: "regulatory", checked: "2026-08-25" },
+        { url: "https://investors.warbyparker.com/governance/board-of-directors/person-details/default.aspx?ItemId=0880c5a2-50d5-4e4e-ad96-ae5ee23b56f8", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Oscar Health", ticker: null, stage: null, year: 2013, yearPrecision: "year", sector: "Healthcare", subsector: "health insurance", role: null, evidence: [
+        { url: "https://www.generalcatalyst.com/companies/oscar", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.generalcatalyst.com/team/joel-cutler", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Lemonade", ticker: null, stage: null, year: 2016, yearPrecision: "year", sector: "Fintech", subsector: "AI-powered renters and homeowners insurance", role: null, evidence: [
+        { url: "https://www.generalcatalyst.com/companies/lemonade", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.generalcatalyst.com/team/joel-cutler", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "General Catalyst - Joel Cutler", url: "https://www.generalcatalyst.com/team/joel-cutler" },
+      { label: "Warby Parker 2025 DEF 14A proxy statement (SEC)", url: "https://www.sec.gov/Archives/edgar/data/1504776/000110465925040245/tm252513-1_def14a.htm" },
+      { label: "Warby Parker investor relations - board of directors", url: "https://investors.warbyparker.com/governance/board-of-directors/person-details/default.aspx?ItemId=0880c5a2-50d5-4e4e-ad96-ae5ee23b56f8" }
+    ]
+  },
+  "david-fialkow": {
+    name: "David Fialkow",
+    firm: "General Catalyst",
+    firmSlug: "general-catalyst",
+    title: "Co-Founder & Managing Director",
+    joinedYear: 2000,
+    investmentFocus: [
+      "Fintech",
+      "Digital Health",
+      "AI"
+    ],
+    education: [
+      "B.A. Film Studies, Colgate University",
+      "J.D., Boston College Law School"
+    ],
+    previousExperience: [
+      "Built and sold four companies, including National Leisure Group, Alliance Development Group, Retail Growth ATM Systems and Starboard Cruise Services (sold to LVMH)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2000, event: "Co-founded General Catalyst with Joel Cutler in Cambridge, Massachusetts." },
+      { year: 2016, event: "Backed PathAI for General Catalyst." },
+      { year: 2018, event: "Won the Academy Award for Best Documentary Feature as a producer of Icarus." },
+      { year: 2021, event: "General Catalyst co-led Resilience's 80 million dollar Series C, with Fialkow commenting on the investment for the firm." }
+    ],
+    biography: "David Fialkow co-founded General Catalyst with Joel Cutler and serves as a Co-Founder and Managing Director on the firm's investment team. General Catalyst lists his focus as financial services, digital health, AI and data analytics, and names PathAI, Casana, Wonder and Resilience among his investments. Before General Catalyst he built and sold four companies, including National Leisure Group, Alliance Development Group, Retail Growth ATM Systems and Starboard Cruise Services, which was sold to LVMH. He is also a documentary producer and won the 2018 Academy Award for Best Documentary Feature as a producer of Icarus.",
+    notableInvestments: [
+      { name: "PathAI", ticker: null, stage: null, year: 2016, yearPrecision: "year", sector: "Diagnostics", subsector: "AI-powered pathology", role: null, evidence: [
+        { url: "https://www.generalcatalyst.com/companies/path-ai", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.generalcatalyst.com/team/david-fialkow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Wonder", ticker: null, stage: null, year: 2019, yearPrecision: "year", sector: "Foodtech", subsector: null, role: null, evidence: [
+        { url: "https://www.generalcatalyst.com/companies/wonder", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.generalcatalyst.com/team/david-fialkow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Casana", ticker: null, stage: null, year: 2020, yearPrecision: "year", sector: "Digital Health", subsector: null, role: null, evidence: [
+        { url: "https://www.generalcatalyst.com/companies/casana", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.generalcatalyst.com/team/david-fialkow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Resilience", ticker: null, stage: "Series C", year: 2021, yearPrecision: "year", sector: "Cybersecurity", subsector: "cyber risk and response platform for the insurance industry", role: null, evidence: [
+        { url: "https://www.prnewswire.com/news-releases/resilience-closes-80-million-series-c-funding-round-co-led-by-general-catalyst-and-corey-thomas-301429845.html", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.generalcatalyst.com/companies/resilience", type: "portfolio-page", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "General Catalyst - David Fialkow", url: "https://www.generalcatalyst.com/team/david-fialkow" },
+      { label: "PR Newswire - Resilience Closes $80 Million Series C Co-Led by General Catalyst", url: "https://www.prnewswire.com/news-releases/resilience-closes-80-million-series-c-funding-round-co-led-by-general-catalyst-and-corey-thomas-301429845.html" },
+      { label: "Boston College Law School Magazine - Producer David Fialkow '85 Wins Academy Award", url: "https://lawmagazine.bc.edu/2018/04/producer-david-fialkow-85-wins-academy-award/" },
+      { label: "Wikipedia - David Fialkow (co-founding year only)", url: "https://en.wikipedia.org/wiki/David_Fialkow" }
+    ]
+  },
+  "dick-kramlich": {
+    name: "Dick Kramlich",
+    firm: "New Enterprise Associates",
+    firmSlug: "nea",
+    title: "Co-Founder",
+    joinedYear: 1977,
+    departedYear: 2025,
+    departedNote: "Died February 1, 2025 at age 89. He had already retired from NEA in 2012, and NEA's current team page does not list him. This profile reflects his founding role, not a current one.",
+    investmentFocus: [],
+    education: [
+      "B.S. History, Northwestern University",
+      "M.B.A., Harvard University Graduate School of Business"
+    ],
+    previousExperience: [
+      "General management roles, The Kroger Co.",
+      "Executive Vice President, Gardner & Preston Moss",
+      "General Partner, Arthur Rock & Associates",
+      "Co-Founder, Green Bay Ventures",
+      "CEO, Kramlich Investment Group"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1969, event: "Began his venture capital career as a general partner at Arthur Rock & Associates in San Francisco." },
+      { year: 1977, event: "Co-founded New Enterprise Associates with Chuck Newhall and Frank Bonsal." },
+      { year: 2005, event: "Was elected to the board of directors of Silicon Valley Bancshares after two years on its advisory board." },
+      { year: 2012, event: "Retired from NEA, having served as managing partner for the firm's first seven funds and as a general partner through NEA 13." },
+      { year: 2017, event: "Co-founded Green Bay Ventures." },
+      { year: 2025, event: "Died on February 1 at the age of 89." }
+    ],
+    biography: "Dick Kramlich co-founded New Enterprise Associates in 1977 with Chuck Newhall and Frank Bonsal, after beginning his venture career at Arthur Rock & Associates in 1969. NEA states that he served as managing partner for the firm's first seven funds and as a general partner through NEA 13, and that he led investments including Juniper Networks, Macromedia, Ascend Communications, Immunex, Xoom and Financial Engines, alongside early investments in Apple. He retired from NEA in 2012 and afterwards co-founded Green Bay Ventures and served as CEO of Kramlich Investment Group. He died on February 1, 2025 at the age of 89.",
+    notableInvestments: [
+      { name: "Juniper Networks", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "networking equipment", role: "board", evidence: [
+        { url: "https://www.nea.com/blog/remembering-dick-kramlich", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://www.svb.com/news/company-news/silicon-valley-bancshares-elects-richard-kramlich-to-its-board-of-directors/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Macromedia", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "multimedia and web authoring software", role: "board", evidence: [
+        { url: "https://www.nea.com/blog/remembering-dick-kramlich", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://www.svb.com/news/company-news/silicon-valley-bancshares-elects-richard-kramlich-to-its-board-of-directors/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Ascend Communications", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "networking equipment", role: null, evidence: [
+        { url: "https://www.nea.com/blog/remembering-dick-kramlich", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Immunex", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: null, evidence: [
+        { url: "https://www.nea.com/blog/remembering-dick-kramlich", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Financial Engines", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "investment advice and retirement planning", role: "board", evidence: [
+        { url: "https://www.nea.com/blog/remembering-dick-kramlich", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://www.svb.com/news/company-news/silicon-valley-bancshares-elects-richard-kramlich-to-its-board-of-directors/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Apple", ticker: "AAPL", stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "personal computers", role: null, evidence: [
+        { url: "https://www.nea.com/blog/remembering-dick-kramlich", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "3Com", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "Ethernet networking", role: "board", evidence: [
+        { url: "https://www.svb.com/news/company-news/silicon-valley-bancshares-elects-richard-kramlich-to-its-board-of-directors/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Force10 Networks", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "data center networking", role: "board", evidence: [
+        { url: "https://www.svb.com/news/company-news/silicon-valley-bancshares-elects-richard-kramlich-to-its-board-of-directors/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "NEA - Remembering Dick Kramlich", url: "https://www.nea.com/blog/remembering-dick-kramlich" },
+      { label: "Silicon Valley Bancshares Elects Richard Kramlich to its Board of Directors", url: "https://www.svb.com/news/company-news/silicon-valley-bancshares-elects-richard-kramlich-to-its-board-of-directors/" },
+      { label: "NBC New York / CNBC - Silicon Valley venture capital pioneer Dick Kramlich, an early investor in Apple, dies at 89", url: "https://www.nbcnewyork.com/news/business/money-report/silicon-valley-venture-capital-pioneer-dick-kramlich-an-early-investor-in-apple-dies-at-89/6134059/" },
+      { label: "Computer History Museum - Dick Kramlich profile", url: "https://computerhistory.org/profile/dick-kramlich/" },
+      { label: "Venture Capital Journal - NEA mourns loss of VC pioneer Kramlich", url: "https://www.venturecapitaljournal.com/nea-mourns-loss-of-vc-pioneer-kramlich/" },
+      { label: "Wikipedia - C. Richard Kramlich", url: "https://en.wikipedia.org/wiki/C._Richard_Kramlich" }
+    ]
+  },
+  "chuck-newhall": {
+    name: "Chuck Newhall",
+    firm: "New Enterprise Associates",
+    firmSlug: "nea",
+    title: "Co-Founder",
+    joinedYear: 1977,
+    departedYear: 2012,
+    departedNote: "Retired from NEA effective December 31, 2012, and NEA's current team page does not list him. He is living and remains chairman of the board of Supernus Pharmaceuticals; he is not a currently active NEA investor.",
+    investmentFocus: [
+      "Healthcare",
+      "Biotech"
+    ],
+    education: [
+      "B.A. English (honors), University of Pennsylvania",
+      "M.B.A., Harvard Business School"
+    ],
+    previousExperience: [
+      "Officer, United States Army (Vietnam, 1968-1969)",
+      "Vice President, T. Rowe Price Associates (New Horizons Fund)",
+      "Founder and Chairman Emeritus, Mid-Atlantic Venture Capital Association",
+      "Adviser and Industry Advisory Board chair, Greenspring Associates"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Supernus Pharmaceuticals"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1977, event: "Co-founded New Enterprise Associates with Dick Kramlich and Frank Bonsal." },
+      { year: 1986, event: "Founded the Mid-Atlantic Venture Capital Association, of which he is chairman emeritus." },
+      { year: 2005, event: "Joined the board of directors of Supernus Pharmaceuticals." },
+      { year: 2010, event: "Received the National Venture Capital Association's American Spirit Award." },
+      { year: 2012, event: "Retired from NEA effective December 31 and began advising Greenspring Associates." },
+      { year: 2022, event: "Published the memoir Dare Disturb The Universe: A Memoir of Venture Capital." }
+    ],
+    biography: "Chuck Newhall co-founded New Enterprise Associates in 1977 with Dick Kramlich and Frank Bonsal, after serving as a vice president at T. Rowe Price Associates working on its New Horizons Fund and as a US Army officer in Vietnam, where he received the Silver Star, Bronze Star and Purple Heart. At NEA he invested in healthcare services, information services and biopharmaceutical companies, and Supernus Pharmaceuticals states he served as a director of more than 60 venture-backed companies before retiring from the firm at the end of 2012. He founded the Mid-Atlantic Venture Capital Association in 1986 and received the National Venture Capital Association's American Spirit Award in 2010. He is chairman of the board of Supernus Pharmaceuticals and has advised Greenspring Associates since 2012.",
+    notableInvestments: [
+      { name: "Supernus Pharmaceuticals", ticker: "SUPN", stage: null, year: 2005, yearPrecision: "year", sector: "Biotech", subsector: "central nervous system pharmaceuticals", role: "board", evidence: [
+        { url: "https://ir.supernus.com/board-directors/charles-newhall", type: "press", checked: "2026-08-25" },
+        { url: "https://www.sec.gov/Archives/edgar/data/1356576/000104746916012346/a2228311zdef14a.htm", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "BrainCells", ticker: null, stage: "Series B", year: 2008, yearPrecision: "year", sector: "Biotech", subsector: "central nervous system therapeutics", role: "board", evidence: [
+        { url: "https://www.fiercebiotech.com/biotech/revised-braincells-inc-expands-series-b-financing-to-50-million", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Vitae Pharmaceuticals", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
+        { url: "https://prnewswire.com/news-releases/nea-co-founder-and-general-partner-chuck-newhall-honored-by-nvca-with-american-spirit-award-92862794.html", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Bravo Health", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Healthcare", subsector: "Medicare health plans", role: "board", evidence: [
+        { url: "https://prnewswire.com/news-releases/nea-co-founder-and-general-partner-chuck-newhall-honored-by-nvca-with-american-spirit-award-92862794.html", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Sensors for Medicine and Science", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Medical Devices", subsector: null, role: "board", evidence: [
+        { url: "https://prnewswire.com/news-releases/nea-co-founder-and-general-partner-chuck-newhall-honored-by-nvca-with-american-spirit-award-92862794.html", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Genetic Therapy", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "gene therapy", role: "board", evidence: [
+        { url: "https://prnewswire.com/news-releases/nea-co-founder-and-general-partner-chuck-newhall-honored-by-nvca-with-american-spirit-award-92862794.html", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Supernus Pharmaceuticals - Charles Newhall, Board of Directors", url: "https://ir.supernus.com/board-directors/charles-newhall" },
+      { label: "Supernus Pharmaceuticals - Board of Directors", url: "https://ir.supernus.com/corporate-governance/board-of-directors" },
+      { label: "Supernus Pharmaceuticals DEF 14A (SEC)", url: "https://www.sec.gov/Archives/edgar/data/1356576/000104746916012346/a2228311zdef14a.htm" },
+      { label: "PR Newswire - NEA Co-Founder and General Partner Chuck Newhall Honored by NVCA with American Spirit Award", url: "https://prnewswire.com/news-releases/nea-co-founder-and-general-partner-chuck-newhall-honored-by-nvca-with-american-spirit-award-92862794.html" },
+      { label: "FierceBiotech - BrainCells Inc. Expands Series B Financing to $50 Million", url: "https://www.fiercebiotech.com/biotech/revised-braincells-inc-expands-series-b-financing-to-50-million" },
+      { label: "Charles W. Newhall III - personal site, About", url: "https://charleswnewhall.com/about/" },
+      { label: "Computer History Museum - Charles W. Newhall III profile", url: "https://computerhistory.org/profile/charles-w-newhall-iii/" },
+      { label: "NEA - Remembering Dick Kramlich (confirms 1977 founding trio)", url: "https://www.nea.com/blog/remembering-dick-kramlich" }
+    ]
+  },
+  "frank-bonsal": {
+    name: "Frank Bonsal",
+    firm: "New Enterprise Associates",
+    firmSlug: "nea",
+    title: "Co-Founder",
+    joinedYear: 1977,
+    departedYear: 2003,
+    departedNote: "Retired from NEA in 2003 after 25 years at the firm, and NEA's current team page does not list him. No established obituary or firm memorial page could be found, so no death is asserted here; he is in any case not a currently active NEA investor.",
+    investmentFocus: [
+      "Biotech",
+      "Medical Devices"
+    ],
+    education: [
+      "B.A. American Studies and Economics, Princeton University"
+    ],
+    previousExperience: [
+      "Robert Garrett & Sons",
+      "General Partner, Alex. Brown & Sons",
+      "Director, Red Abbey Venture Partners"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1959, event: "Graduated from Princeton University." },
+      { year: 1965, event: "Worked in investment banking at Alex. Brown & Sons, where he focused on initial public offerings for startup companies." },
+      { year: 1977, event: "Co-founded New Enterprise Associates with Dick Kramlich and Chuck Newhall." },
+      { year: 2003, event: "Retired from NEA after 25 years and subsequently became a director of Red Abbey Venture Partners." },
+      { year: 2006, event: "Received Baltimore's Extraordinary Technology Advocate (BETA) award for his impact on the region's technology community." }
+    ],
+    biography: "Frank Bonsal co-founded New Enterprise Associates in 1977 with Dick Kramlich and Chuck Newhall, bringing the East Coast side of the new bicoastal firm. Before NEA he was a general partner at Alex. Brown & Sons in Baltimore, where he worked on initial public offerings for startup companies after an earlier role at Robert Garrett & Sons. At NEA he concentrated on life sciences investments and held board seats at companies including Vertex Pharmaceuticals, Biopure and Aspect Medical Systems. He retired from NEA in 2003 and afterwards served as a director of Red Abbey Venture Partners.",
+    notableInvestments: [
+      { name: "Vertex Pharmaceuticals", ticker: "VRTX", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
+        { url: "https://www.redabbey.com/team_frank.htm", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.citybiz.co/article/639127/interview-with-frank-bonsal-jr-founder-of-new-enterprise-associates-2/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Biopure", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
+        { url: "https://www.redabbey.com/team_frank.htm", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Aspect Medical Systems", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Medical Devices", subsector: null, role: "board", evidence: [
+        { url: "https://www.redabbey.com/team_frank.htm", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Alkermes", ticker: "ALKS", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: null, evidence: [
+        { url: "https://www.redabbey.com/team_frank.htm", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Sepracor", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: null, evidence: [
+        { url: "https://www.redabbey.com/team_frank.htm", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Red Abbey Venture Partners - Frank A. Bonsal, Jr.", url: "https://www.redabbey.com/team_frank.htm" },
+      { label: "Computer History Museum - Bonsal, Frank A., Jr. oral history", url: "https://www.computerhistory.org/collections/catalog/102792198" },
+      { label: "citybiz - Interview with Frank Bonsal, Jr., Founder of New Enterprise Associates", url: "https://www.citybiz.co/article/639127/interview-with-frank-bonsal-jr-founder-of-new-enterprise-associates-2/" },
+      { label: "NEA - Remembering Dick Kramlich (confirms 1977 founding trio)", url: "https://www.nea.com/blog/remembering-dick-kramlich" },
+      { label: "NEA - Team page (does not list the founders)", url: "https://www.nea.com/team" }
+    ]
+  },
+  "barry-eggers": {
+    name: "Barry Eggers",
+    firm: "Lightspeed Venture Partners",
+    firmSlug: "lightspeed",
+    title: "Co-Founder",
+    joinedYear: null,
+    investmentFocus: [
+      "Developer Tools & Infrastructure",
+      "Enterprise Software",
+      "AI"
+    ],
+    education: [
+      "B.A. Economics, University of California, Los Angeles",
+      "MBA, Stanford Graduate School of Business"
+    ],
+    previousExperience: [
+      "Mergers and acquisitions, Cisco Systems",
+      "Partner, Weiss, Peck & Greer"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Co-founded Lightspeed Venture Partners with Ravi Mhatre, Peter Nieh and Chris Schaepe." },
+      { year: 2008, event: "Backed Nimble Storage at its Series B for Lightspeed." },
+      { year: 2012, event: "Learned about Snapchat from his daughter and her friends and brought it to Lightspeed, which made its seed investment ten days after meeting the founders." },
+      { year: 2015, event: "Backed Dremio at its Series A for Lightspeed." }
+    ],
+    biography: "Barry Eggers is a co-founder of Lightspeed Venture Partners, where his firm bio describes a focus on information technology infrastructure including analytic platforms, cloud, networking and AI. Before Lightspeed he worked in mergers and acquisitions at Cisco Systems and was a partner at Weiss, Peck & Greer. Lightspeed's own portfolio pages name him on Snap, Nimble Storage, Dremio and AVI Networks. He has written that he first heard about Snapchat from his daughter and her friends in 2012 and that Lightspeed made its seed investment ten days after meeting the founders.",
+    notableInvestments: [
+      { name: "Snap", ticker: null, stage: "Seed", year: 2012, yearPrecision: "year", sector: "Consumer", subsector: "social media and camera app", role: null, evidence: [
+        { url: "https://lsvp.com/company/snap/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://medium.com/lightspeed-venture-partners/lightspeeds-snap-story-5d3723e97667", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Nimble Storage", ticker: null, stage: "Series B", year: 2008, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://lsvp.com/company/nimble-storage/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://lsvp.com/team-member/barry-eggers/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "AVI Networks", ticker: null, stage: "Series A", year: 2012, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://lsvp.com/company/avi-networks/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://lsvp.com/team-member/barry-eggers/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Dremio", ticker: null, stage: "Series A", year: 2015, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://lsvp.com/company/dremio/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://lsvp.com/team-member/barry-eggers/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Lightspeed Venture Partners - Barry Eggers", url: "https://lsvp.com/team-member/barry-eggers/" },
+      { label: "Lightspeed's Snap Story, by Barry Eggers", url: "https://medium.com/lightspeed-venture-partners/lightspeeds-snap-story-5d3723e97667" },
+      { label: "TechCrunch - Lightspeed's co-founders on their 17-year-long overnight success story", url: "https://techcrunch.com/2017/05/10/lightspeeds-cofounders-on-their-17-year-long-overnight-success-story/" },
+      { label: "Forbes - A Conversation With Lightspeed's Co-Founder Barry Eggers On AI And Market Cycles (Mar 2025)", url: "https://www.forbes.com/sites/taarinikaurdang/2025/03/17/a-chat-with-lightspeeds-co-founder-barry-eggers-on-ai--market-cycles/" }
+    ]
+  },
+  "ravi-mhatre": {
+    name: "Ravi Mhatre",
+    firm: "Lightspeed Venture Partners",
+    firmSlug: "lightspeed",
+    title: "Co-Founder",
+    joinedYear: 1999,
+    investmentFocus: [
+      "Enterprise Software",
+      "Healthcare",
+      "Crypto"
+    ],
+    education: [
+      "B.S. Electrical Engineering, Stanford University",
+      "B.A. Economics, Stanford University",
+      "MBA, Stanford Graduate School of Business"
+    ],
+    previousExperience: [
+      "Software engineer, biotech instrument manufacturer",
+      "Management consultant, Booz Allen",
+      "Silicon Graphics"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Rubrik"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1999, event: "Co-founded Lightspeed Venture Partners and has served as a partner of the firm since August 1999." },
+      { year: 2007, event: "Backed MuleSoft at its Series B for Lightspeed." },
+      { year: 2010, event: "Led Lightspeed's Series A investment in Nutanix and joined the company's board." },
+      { year: 2014, event: "Led Lightspeed's Series A in Rubrik and joined the Rubrik board of directors in January 2014." },
+      { year: 2022, event: "Backed Anduril at its Series E for Lightspeed." }
+    ],
+    biography: "Ravi Mhatre co-founded Lightspeed Venture Partners and has served as a partner of the firm since August 1999. Lightspeed's own portfolio pages name him on Nutanix, Rubrik, AppDynamics, MuleSoft, Zscaler, ThoughtSpot and Anduril. He has served on Rubrik's board of directors since January 2014 and previously served on the public company boards of Nutanix and MuleSoft. He holds bachelor's degrees in electrical engineering and economics from Stanford University and an MBA from Stanford Graduate School of Business.",
+    notableInvestments: [
+      { name: "MuleSoft", ticker: null, stage: "Series B", year: 2007, yearPrecision: "year", sector: "Enterprise Software", subsector: "integration software", role: "board", evidence: [
+        { url: "https://lsvp.com/company/mulesoft/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.sec.gov/Archives/edgar/data/1943896/000194389626000034/rbrk-20260415.htm", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "AppDynamics", ticker: null, stage: "Series A", year: 2008, yearPrecision: "year", sector: "Enterprise Software", subsector: "application performance monitoring", role: null, evidence: [
+        { url: "https://lsvp.com/company/appdynamics/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://lsvp.com/team-member/ravi-mhatre/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Nutanix", ticker: null, stage: "Series A", year: 2010, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "enterprise cloud infrastructure", role: "board", evidence: [
+        { url: "https://lsvp.com/company/nutanix/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.forbes.com/sites/alexkonrad/2016/09/30/lightspeed-turns-10-million-into-1-billion-with-nutanix-ipo/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.sec.gov/Archives/edgar/data/1943896/000194389626000034/rbrk-20260415.htm", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Zscaler", ticker: null, stage: "Series C", year: 2012, yearPrecision: "year", sector: "Cybersecurity", subsector: null, role: null, evidence: [
+        { url: "https://lsvp.com/company/zscaler/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://lsvp.com/team-member/ravi-mhatre/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "ThoughtSpot", ticker: null, stage: "Seed", year: 2012, yearPrecision: "year", sector: "Enterprise Software", subsector: "analytics", role: null, evidence: [
+        { url: "https://lsvp.com/company/thoughtspot/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://lsvp.com/team-member/ravi-mhatre/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Rubrik", ticker: "RBRK", stage: "Series A", year: 2014, yearPrecision: "year", sector: "Cybersecurity", subsector: "data security and backup", role: "board", evidence: [
+        { url: "https://lsvp.com/company/rubrik/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.sec.gov/Archives/edgar/data/1943896/000194389626000034/rbrk-20260415.htm", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Anduril", ticker: null, stage: "Series E", year: 2022, yearPrecision: "year", sector: "Defense Tech", subsector: null, role: null, evidence: [
+        { url: "https://lsvp.com/company/anduril/", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://lsvp.com/team-member/ravi-mhatre/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Lightspeed Venture Partners - Ravi Mhatre", url: "https://lsvp.com/team-member/ravi-mhatre/" },
+      { label: "Rubrik, Inc. 2026 DEF 14A proxy statement (SEC)", url: "https://www.sec.gov/Archives/edgar/data/1943896/000194389626000034/rbrk-20260415.htm" },
+      { label: "Forbes - Nutanix's Largest Investor Lightspeed Turned An Initial $10 Million Check Into $1 Billion At IPO", url: "https://www.forbes.com/sites/alexkonrad/2016/09/30/lightspeed-turns-10-million-into-1-billion-with-nutanix-ipo/" }
+    ]
+  },
+  "eugene-kleiner": {
+    name: "Eugene Kleiner",
+    firm: "Kleiner Perkins",
+    firmSlug: "kleiner-perkins",
+    title: "Co-Founder (1972)",
+    joinedYear: 1972,
+    departedYear: 2003,
+    departedNote: "Died November 20, 2003, at age 80 of heart failure at his home in Los Altos Hills, California. Profile reflects his founding role, not a current one.",
+    investmentFocus: [
+      "Hardware",
+      "Biotech"
+    ],
+    education: [
+      "B.S. Mechanical Engineering, Polytechnic University of New York",
+      "M.S. Industrial Engineering, New York University"
+    ],
+    previousExperience: [
+      "Engineer, Western Electric",
+      "Engineer, Shockley Semiconductor Laboratory",
+      "Co-founder, Fairchild Semiconductor"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1957, event: "Left Shockley Semiconductor Laboratory with the group known as the traitorous eight and co-founded Fairchild Semiconductor." },
+      { year: 1972, event: "Co-founded Kleiner Perkins with Tom Perkins, raising an initial fund of $8 million." },
+      { year: 1976, event: "Joined the board of Genentech alongside Tom Perkins after the firm provided its seed capital." },
+      { year: 2003, event: "Died at age 80 in Los Altos Hills, California." }
+    ],
+    biography: "Eugene Kleiner was born in Vienna in 1923 and fled Europe before World War II, settling in California in the mid-1950s. He was recruited to Shockley Semiconductor Laboratory and in 1957 was one of the traitorous eight who left to co-found Fairchild Semiconductor. In 1972 he joined with Tom Perkins to form Kleiner Perkins, whose first fund was $8 million, and in 1976 he and Perkins joined the board of Genentech after the firm provided its seed capital; he was also an early investor in Intel. He retired from day-to-day responsibilities in the early 1980s and died in 2003 at age 80.",
+    notableInvestments: [
+      { name: "Genentech", ticker: null, stage: null, year: 1976, yearPrecision: "year", sector: "Biotech", subsector: "recombinant DNA therapeutics", role: "board", evidence: [
+        { url: "https://www.kleinerperkins.com/case-study/genentech/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Intel", ticker: "INTC", stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "semiconductors", role: null, evidence: [
+        { url: "https://www.nbcnews.com/id/wbna3606500", type: "press", checked: "2026-08-25" },
+        { url: "https://www.inc.com/articles/2003/12/eugenekleiner.html", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Kleiner Perkins - Genentech case study", url: "https://www.kleinerperkins.com/case-study/genentech/" },
+      { label: "Inc. - Remembering Eugene Kleiner", url: "https://www.inc.com/articles/2003/12/eugenekleiner.html" },
+      { label: "NBC News - Silicon Valley pioneer Kleiner dies", url: "https://www.nbcnews.com/id/wbna3606500" },
+      { label: "Wikipedia - Eugene Kleiner (education and dates only)", url: "https://en.wikipedia.org/wiki/Eugene_Kleiner" }
+    ]
+  },
+  "tom-perkins": {
+    name: "Tom Perkins",
+    firm: "Kleiner Perkins",
+    firmSlug: "kleiner-perkins",
+    title: "Co-Founder (1972)",
+    joinedYear: 1972,
+    departedYear: 2016,
+    departedNote: "Died June 9, 2016, at age 84 of natural causes at his home in Tiburon, California. Profile reflects his founding role, not a current one.",
+    investmentFocus: [
+      "Biotech",
+      "Hardware"
+    ],
+    education: [
+      "B.S. Electrical Engineering and Computer Science, Massachusetts Institute of Technology (1953)",
+      "M.B.A., Harvard Business School"
+    ],
+    previousExperience: [
+      "Manager, computer hardware division, Hewlett-Packard",
+      "General manager, HP 3000 division, Hewlett-Packard"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1953, event: "Earned a B.S. in electrical engineering and computer science from MIT." },
+      { year: 1963, event: "Joined Hewlett-Packard as manager of its computer hardware division, remaining for a decade." },
+      { year: 1972, event: "Co-founded Kleiner Perkins with Eugene Kleiner." },
+      { year: 1976, event: "Joined the board of Genentech alongside Eugene Kleiner after the firm provided its seed capital." },
+      { year: 2006, event: "Resigned from the Hewlett-Packard board over its secret collection of phone records and alerted the SEC and California's attorney general." },
+      { year: 2016, event: "Died at age 84 at his home in Tiburon, California." }
+    ],
+    biography: "Tom Perkins earned a B.S. in electrical engineering and computer science from MIT in 1953 and an M.B.A. from Harvard, then joined Hewlett-Packard in 1963 as manager of its computer hardware division and later ran the HP 3000 division. In 1972 he co-founded Kleiner Perkins with Eugene Kleiner. He provided the initial venture capital for Tandem Computers and served as its longtime board chairman, joined the board of Genentech with Kleiner in 1976, and was a board director at Compaq, where he helped arrange its 1997 purchase of Tandem and its 2002 acquisition by HP. He resigned from the Hewlett-Packard board in 2006 over the company's secret collection of phone records, and died in 2016 at age 84.",
+    notableInvestments: [
+      { name: "Genentech", ticker: null, stage: null, year: 1976, yearPrecision: "year", sector: "Biotech", subsector: "recombinant DNA therapeutics", role: "board", evidence: [
+        { url: "https://www.kleinerperkins.com/case-study/genentech/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Tandem Computers", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "fault-tolerant computers", role: "board", evidence: [
+        { url: "https://en.wikipedia.org/wiki/Tandem_Computers", type: "press", checked: "2026-08-25" },
+        { url: "https://www.theregister.com/2016/06/10/vc_tom_perkins_passes_on/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Compaq", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "portable personal computers", role: "board", evidence: [
+        { url: "https://www.kleinerperkins.com/case-study/compaq/", type: "firm-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Kleiner Perkins - Genentech case study", url: "https://www.kleinerperkins.com/case-study/genentech/" },
+      { label: "Kleiner Perkins - Compaq case study", url: "https://www.kleinerperkins.com/case-study/compaq/" },
+      { label: "Fortune - Tom Perkins death", url: "https://fortune.com/2016/06/09/tom-perkins-death/" },
+      { label: "NPR - Silicon Valley Venture Capital Pioneer Tom Perkins Dead At 84", url: "https://www.npr.org/sections/thetwo-way/2016/06/09/481455989/silicon-valley-venture-capital-pioneer-tom-perkins-dead-at-84" },
+      { label: "The Register - VC Tom Perkins passes on", url: "https://www.theregister.com/2016/06/10/vc_tom_perkins_passes_on/" }
+    ]
+  },
+  "richard-kimball": {
+    name: "Richard Kimball",
+    firm: "TCV",
+    firmSlug: "tcv",
+    title: "Founding General Partner",
+    joinedYear: 1995,
+    departedNote: "Not departed but no longer in an active investing role as presented by the firm: tcv.com lists him as 'Founding General Partner, Senior Advisor', while co-founder Jay Hoag is listed as 'Founding General Partner, Executive Committee'. His TCV bio lists no current portfolio company board seats.",
+    investmentFocus: [],
+    education: [
+      "A.B. History, Dartmouth College",
+      "M.B.A., University of Chicago"
+    ],
+    previousExperience: [
+      "Managing Director, Montgomery Securities"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1995, event: "Co-founded TCV with Jay Hoag." },
+      { year: 2013, event: "Joined the board of Actifio when TCV led its 50 million dollar financing." },
+      { year: 2017, event: "Joined the board of AxiomSL as part of TCV's strategic investment." },
+      { year: 2012, event: "Began service on the Dartmouth College Board of Trustees, which ran through 2020." }
+    ],
+    biography: "Rick Kimball co-founded TCV with Jay Hoag in 1995 and his TCV bio states he has been a venture capitalist and technology investor for 40 years. Before TCV he spent more than a decade at Montgomery Securities, where he was a Managing Director covering telecommunications and data communications as a venture capitalist and senior equity research analyst. TCV's site currently lists him as Founding General Partner, Senior Advisor. He serves on the University of California, San Francisco Board of Trustees and on the board of the Ohana Foundation in Kona, Hawaii, and served on the Dartmouth College Board of Trustees from 2012 to 2020.",
+    notableInvestments: [
+      { name: "Actifio", ticker: null, stage: null, year: 2013, yearPrecision: "year", sector: "Enterprise Software", subsector: "copy data storage", role: "board", evidence: [
+        { url: "https://www.finsmes.com/2013/03/actifio-closes-50m-funding.html", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.tcv.com/team/rick-kimball", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "AxiomSL", ticker: null, stage: null, year: 2017, yearPrecision: "year", sector: "Fintech", subsector: "compliance and risk management solutions", role: "board", evidence: [
+        { url: "https://www.retailbankerinternational.com/news/tcv-makes-strategic-investment-axiomsl/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.tcv.com/team/rick-kimball", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Rent the Runway", ticker: null, stage: "Series D", year: 2014, yearPrecision: "year", sector: "Ecommerce", subsector: null, role: null, evidence: [
+        { url: "https://www.tcv.com/team/rick-kimball", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://fortune.com/2014/12/19/rent-the-runway-raises-60-million", type: "deal-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "TCV - Rick Kimball", url: "https://www.tcv.com/team/rick-kimball" },
+      { label: "TCV - Our Team", url: "https://www.tcv.com/team" },
+      { label: "FinSMEs - Actifio Closes $50M Funding", url: "https://www.finsmes.com/2013/03/actifio-closes-50m-funding.html" },
+      { label: "Retail Banker International - TCV makes strategic investment in AxiomSL", url: "https://www.retailbankerinternational.com/news/tcv-makes-strategic-investment-axiomsl/" },
+      { label: "Fortune - Rent the Runway raises $60 million", url: "https://fortune.com/2014/12/19/rent-the-runway-raises-60-million" }
+    ]
+  },
+  "neil-tolaney": {
+    name: "Neil Tolaney",
+    firm: "TCV",
+    firmSlug: "tcv",
+    title: "General Partner",
+    joinedYear: 2011,
+    investmentFocus: [
+      "Consumer",
+      "Digital Health",
+      "Fintech",
+      "Ecommerce"
+    ],
+    education: [
+      "B.A. Economics and Political Science, Yale University",
+      "M.B.A., Harvard Business School"
+    ],
+    previousExperience: [
+      "Partner, Francisco Partners",
+      "Managing Director, PersonalizationMall.com",
+      "Director of Strategic Development, LegalZoom"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2011, event: "Joined TCV." },
+      { year: 2020, event: "Rejoined TCV as General Partner focused on consumer internet and digital media." },
+      { year: 2020, event: "Named in Strava's 110 million dollar Series F financing led by TCV and Sequoia." },
+      { year: 2021, event: "Named in Hotmart's 130 million dollar Series C round led by TCV." },
+      { year: 2026, event: "Named in Mercury's 200 million dollar Series D led by TCV." }
+    ],
+    biography: "Neil Tolaney is a General Partner at TCV, which he first joined in 2011 and rejoined in 2020. His TCV bio describes investment and operating experience in the consumer internet space, spanning digital entertainment, digital health, online fitness, prosumer empowerment, e-commerce, fintech, edtech and online travel. Before returning to TCV he was a partner at Francisco Partners, a Managing Director at PersonalizationMall.com and Director of Strategic Development at LegalZoom. His TCV bio lists current investments including Adevinta, ByteDance, GoodRx, Grow Therapy, Hotmart, LegalZoom, Mercury, onX, Strava and Zillow.",
+    notableInvestments: [
+      { name: "Strava", ticker: null, stage: "Series F", year: 2020, yearPrecision: "year", sector: "Consumer", subsector: "social platform for athletes", role: null, evidence: [
+        { url: "https://www.prnewswire.com/news-releases/strava-announces-110-million-financing-in-partnership-with-tcv-and-sequoia-301173331.html", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.tcv.com/team/neil-tolaney", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Hotmart", ticker: null, stage: "Series C", year: 2021, yearPrecision: "year", sector: "Consumer", subsector: "creator economy digital enablement platform", role: null, evidence: [
+        { url: "https://www.businesswire.com/news/home/20210401005827/en/Hotmart-Company-Raises-US$130-Million-in-Investment-Round-Led-by-TCV", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.tcv.com/team/neil-tolaney", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Mercury", ticker: null, stage: "Series D", year: 2026, yearPrecision: "year", sector: "Fintech", subsector: "banking for startups and founders", role: null, evidence: [
+        { url: "https://www.businesswire.com/news/home/20260520511817/en/Mercury-Raises-$200-Million-Series-D-at-$5.2B-Valuation", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.tcv.com/team/neil-tolaney", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Grow Therapy", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: "digital mental health platform", role: null, evidence: [
+        { url: "https://www.tcv.com/team/neil-tolaney", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://bhbusiness.com/2026/03/03/with-1b-in-revenue-grow-therapy-lands-150m-series-d/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "TCV - Neil Tolaney", url: "https://www.tcv.com/team/neil-tolaney" },
+      { label: "PR Newswire - Strava Announces $110 Million Financing in Partnership with TCV and Sequoia", url: "https://www.prnewswire.com/news-releases/strava-announces-110-million-financing-in-partnership-with-tcv-and-sequoia-301173331.html" },
+      { label: "Business Wire - Hotmart Company Raises US$130 Million in Investment Round Led by TCV", url: "https://www.businesswire.com/news/home/20210401005827/en/Hotmart-Company-Raises-US$130-Million-in-Investment-Round-Led-by-TCV" },
+      { label: "Business Wire - Mercury Raises $200 Million Series D at $5.2B Valuation", url: "https://www.businesswire.com/news/home/20260520511817/en/Mercury-Raises-$200-Million-Series-D-at-$5.2B-Valuation" },
+      { label: "Venture Capital Journal - Neil Tolaney rejoins late-stage investor TCV", url: "https://www.venturecapitaljournal.com/neil-tolaney-rejoins-late-stage-investor-tcv-to-focus-on-consumer-digital-media/" }
+    ]
+  },
+  "jim-swartz": {
+    name: "Jim Swartz",
+    firm: "Accel",
+    firmSlug: "accel",
+    title: "Co-Founder",
+    joinedYear: 1983,
+    departedNote: "Accel's own team page lists him under the status Emeritus. He co-founded the firm in 1983 and is no longer presented as an active investing partner.",
+    investmentFocus: [],
+    education: [
+      "B.S. Engineering, Harvard University",
+      "M.S. Industrial Administration, Carnegie Mellon University",
+      "Honorary Doctorate, Carnegie Mellon University"
+    ],
+    previousExperience: [
+      "Vice President, Citicorp Venture Capital",
+      "Founding General Partner, Adler & Company"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1978, event: "Became a founding general partner of Adler & Company with Fred Adler." },
+      { year: 1983, event: "Co-founded Accel with Arthur Patterson." },
+      { year: 1988, event: "Accel made its initial investment in PictureTel, with Swartz named as the partner." },
+      { year: 2002, event: "Accel made its Series A investment in Riverbed Technology, with Swartz named as the partner." },
+      { year: 2007, event: "Received the National Venture Capital Association Lifetime Achievement Award, having previously served as its chairman." },
+      { year: 2018, event: "Won the Academy Award for Best Documentary Feature as a producer of Icarus." }
+    ],
+    biography: "Jim Swartz co-founded Accel with Arthur Patterson in 1983, and Accel's team page now lists him as Emeritus. Before Accel he was a vice president at Citicorp Venture Capital and in 1978 became a founding general partner of Adler & Company. Accel's own company pages name him as the partner on PictureTel, Polycom, Remedy Corporation, Quokka Sports and Riverbed Technology, and the firm states he was a lead director of more than 50 companies. He was chairman of the National Venture Capital Association and received its Lifetime Achievement Award in 2007.",
+    notableInvestments: [
+      { name: "PictureTel", ticker: null, stage: null, year: 1988, yearPrecision: "year", sector: "Hardware", subsector: "videoconferencing systems", role: null, evidence: [
+        { url: "https://www.accel.com/companies/picturetel", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.accel.com/team/jim-swartz", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Polycom", ticker: null, stage: "Series A", year: 1991, yearPrecision: "year", sector: "Hardware", subsector: "voice and video conferencing", role: null, evidence: [
+        { url: "https://www.accel.com/companies/polycom", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.accel.com/team/jim-swartz", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Remedy Corporation", ticker: null, stage: "Series A", year: 1991, yearPrecision: "year", sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://www.accel.com/companies/remedy-corporation", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.accel.com/team/jim-swartz", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Quokka Sports", ticker: null, stage: null, year: 1998, yearPrecision: "year", sector: "Consumer", subsector: null, role: null, evidence: [
+        { url: "https://www.accel.com/companies/quokka-sports", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.accel.com/team/jim-swartz", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Riverbed Technology", ticker: null, stage: "Series A", year: 2002, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://www.accel.com/companies/riverbed-technology", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.accel.com/team/jim-swartz", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Accel - Jim Swartz (listed as Emeritus)", url: "https://www.accel.com/team/jim-swartz" },
+      { label: "Carnegie Mellon University - Swartz Center for Entrepreneurship, About Jim Swartz", url: "https://www.cmu.edu/swartz-center-for-entrepreneurship/about/jim-swartz/index.html" },
+      { label: "Computer History Museum - Swartz, James R. oral history", url: "https://www.computerhistory.org/collections/catalog/102781072" }
+    ]
+  },
+  "mood-rowghani": {
+    name: "Mood Rowghani",
+    firm: "Bond Capital",
+    firmSlug: "bond-capital",
+    title: "General Partner",
+    joinedYear: 2019,
+    investmentFocus: [],
+    education: [
+      "B.A., University of Texas",
+      "M.B.A., Stanford University Graduate School of Business"
+    ],
+    previousExperience: [
+      "Vice President, Summit Partners",
+      "Highland Capital Partners",
+      "Yahoo",
+      "Consultant, McKinsey & Company"
+    ],
+    firmHistory: [
+      { firmSlug: "kleiner-perkins", role: "Partner, Digital Growth", startYear: 2011, endYear: 2019 }
+    ],
+    boardSeats: [
+      "Carbon Robotics",
+      "inDrive",
+      "Partiful",
+      "Passes",
+      "Substack"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2011, event: "Joined Kleiner Perkins Caufield & Byers as a partner focused on later-stage technology, coming from Summit Partners." },
+      { year: 2018, event: "Announced as part of the Digital Growth team spinning out of Kleiner Perkins with Mary Meeker, Noah Knauf and Juliet de Baubigny." },
+      { year: 2019, event: "Co-founded Bond, the independent successor to Kleiner Perkins' digital growth practice." },
+      { year: 2024, event: "Joined the board of Carbon Robotics when Bond led its 70 million dollar Series D." },
+      { year: 2024, event: "Joined the board of Passes when Bond led its 40 million dollar Series A." }
+    ],
+    biography: "Mood Rowghani is a general partner at Bond, which he co-founded in 2019 with Mary Meeker, Noah Knauf and Juliet de Baubigny after the group's Digital Growth team spun out of Kleiner Perkins. He joined Kleiner Perkins in 2011 from Summit Partners, where he had been a vice president, and earlier worked at Highland Capital Partners, Yahoo and McKinsey & Company. His Bond bio states that he focuses on emerging technology companies that are driving innovation at global scale, and lists active investments including Atoms, Canva, Cockroach Labs, Ironclad, Kalshi, Revolut, SpaceX and Whatnot. Bond's site lists his current board seats as Carbon Robotics, inDrive, Partiful, Passes and Substack.",
+    notableInvestments: [
+      { name: "Carbon Robotics", ticker: null, stage: "Series D", year: 2024, yearPrecision: "year", sector: "Agtech", subsector: "AI-powered precision farming and laser weeding", role: "board", evidence: [
+        { url: "https://www.businesswire.com/news/home/20241021330997/en/Carbon-Robotics-Raises-$70-Million-Series-D-Investment-Round", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Passes", ticker: null, stage: "Series A", year: 2024, yearPrecision: "year", sector: "Consumer", subsector: "creator subscription and CRM platform", role: "board", evidence: [
+        { url: "https://www.passes.com/blog/posts/passes-announces-40m-series-a", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Substack", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: "board", evidence: [
+        { url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "inDrive", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: "board", evidence: [
+        { url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Partiful", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: "board", evidence: [
+        { url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "BOND - Mood Rowghani", url: "https://www.bondcap.com/partners/mood-rowghani/" },
+      { label: "Fortune - Exclusive: Mood Rowghani joins Kleiner Perkins", url: "https://fortune.com/2011/06/01/exclusive-mood-rowghani-joins-kleiner-perkins" },
+      { label: "Axios - Kleiner Perkins is splitting up", url: "https://www.axios.com/2018/09/14/kleiner-perkins-is-splitting-up-1536933575" },
+      { label: "Business Wire - Carbon Robotics Raises $70 Million Series D Investment Round", url: "https://www.businesswire.com/news/home/20241021330997/en/Carbon-Robotics-Raises-$70-Million-Series-D-Investment-Round" },
+      { label: "Passes - Passes announces $40M Series A", url: "https://www.passes.com/blog/posts/passes-announces-40m-series-a" },
+      { label: "Silicon Valley Open Doors - Mood Rowghani speaker bio", url: "https://www.svod.org/mood-rowghani/" }
+    ]
+  },
+  "noah-knauf": {
+    name: "Noah Knauf",
+    firm: "Bond Capital",
+    firmSlug: "bond-capital",
+    title: "General Partner",
+    joinedYear: 2019,
+    investmentFocus: [
+      "Healthcare",
+      "Fintech",
+      "Gaming",
+      "Deep Tech"
+    ],
+    education: [],
+    previousExperience: [
+      "Warburg Pincus (from 2006, approximately ten years, healthcare and healthcare services investing)"
+    ],
+    firmHistory: [
+      { firmSlug: "kleiner-perkins", role: "General Partner, Digital Growth", startYear: 2016, endYear: 2019 }
+    ],
+    boardSeats: [
+      "AKASA",
+      "Saildrone",
+      "Sidecar Health",
+      "Sunday"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Joined Warburg Pincus, where he invested in healthcare and healthcare services for about a decade." },
+      { year: 2016, event: "Joined Kleiner Perkins as a general partner in its digital growth practice." },
+      { year: 2018, event: "Announced as part of the Digital Growth team spinning out of Kleiner Perkins with Mary Meeker, Mood Rowghani and Juliet de Baubigny." },
+      { year: 2019, event: "Co-founded Bond." },
+      { year: 2021, event: "Joined the boards of AKASA and Saildrone as Bond led financings in each." }
+    ],
+    biography: "Noah Knauf is a general partner at Bond, which he co-founded in 2019 with Mary Meeker, Mood Rowghani and Juliet de Baubigny after the Kleiner Perkins digital growth team spun out as an independent firm. He joined Kleiner Perkins in 2016 as a general partner in its digital growth practice, arriving after about a decade at Warburg Pincus that began in 2006 and focused on healthcare and healthcare services. His Bond bio states that he focuses on investments in high growth technology companies, with a particular focus on healthcare, fintech, gaming and frontier technology, and lists active investments including Eucalyptus, Locus, Maven Clinic, SWORD and Tomorrow Health. Bond's site lists his current board seats as AKASA, Saildrone, Sidecar Health and Sunday.",
+    notableInvestments: [
+      { name: "Saildrone", ticker: null, stage: "Series C", year: 2021, yearPrecision: "year", sector: "Defense Tech", subsector: "ocean data, ocean mapping and maritime intelligence", role: "board", evidence: [
+        { url: "https://www.saildrone.com/media-room/press-releases/saildrone-announces-series-c-funding", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.bondcap.com/partners/noah-knauf/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "AKASA", ticker: null, stage: "Series B", year: 2021, yearPrecision: "year", sector: "Digital Health", subsector: "revenue cycle automation for health systems", role: "board", evidence: [
+        { url: "https://akasa.com/blog/elevating-our-business-our-brand", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.bondcap.com/partners/noah-knauf/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Sidecar Health", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: "board", evidence: [
+        { url: "https://www.bondcap.com/partners/noah-knauf/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Sunday", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: "board", evidence: [
+        { url: "https://www.bondcap.com/partners/noah-knauf/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "BOND - Noah Knauf", url: "https://www.bondcap.com/partners/noah-knauf/" },
+      { label: "Fortune - Kleiner Perkins adds new general partner", url: "https://fortune.com/2016/06/22/kleiner-perkins-adds-new-general-partner" },
+      { label: "Axios - Kleiner Perkins is splitting up", url: "https://www.axios.com/2018/09/14/kleiner-perkins-is-splitting-up-1536933575" },
+      { label: "Saildrone - Saildrone Closes $100 Million Series C Funding Round", url: "https://www.saildrone.com/media-room/press-releases/saildrone-announces-series-c-funding" },
+      { label: "AKASA - Elevating Our Business and Our Brand", url: "https://akasa.com/blog/elevating-our-business-our-brand" }
+    ]
+  },
+  "sven-borho": {
+    name: "Sven Borho",
+    firm: "OrbiMed",
+    firmSlug: "orbimed",
+    title: "Founding Managing Partner, Public Equity",
+    joinedYear: 1991,
+    departedYear: 2026,
+    departedNote: "OrbiMed's own leadership page describes him as 'a founder and Executive Partner of OrbiMed' and states that he headed OrbiMed's public equity business 'until retiring as a Managing Partner in 2026'. In August 2026 he also stepped down, with immediate effect, as lead manager of Worldwide Healthcare Trust and resigned from that trust's board.",
+    investmentFocus: [
+      "Biotech",
+      "Healthcare"
+    ],
+    education: [
+      "Business administration, Bayreuth University (Germany)",
+      "M.Sc. Accounting and Finance, London School of Economics"
+    ],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1991, event: "Joined OrbiMed's predecessor firm as a senior analyst covering European pharmaceutical and global biotechnology companies." },
+      { year: 1993, event: "Became portfolio manager for the firm's first hedge fund." },
+      { year: 2018, event: "Joined the board of Worldwide Healthcare Trust as a non-executive director in June." },
+      { year: 2026, event: "Retired as a Managing Partner of OrbiMed and became an Executive Partner." },
+      { year: 2026, event: "Stepped down as lead fund manager of Worldwide Healthcare Trust and resigned from its board in August." }
+    ],
+    biography: "Sven Borho is a founder of OrbiMed and, per the firm's site, now an Executive Partner. He joined OrbiMed's predecessor firm in 1991 as a senior analyst covering European pharmaceutical and global biotechnology companies and became portfolio manager of the firm's first hedge fund in 1993. Until retiring as a Managing Partner in 2026 he headed OrbiMed's public equity business and served as a portfolio manager for its public equity and hedge fund strategies. He is a CFA charterholder and holds an M.Sc. in Accounting and Finance from the London School of Economics.",
+    notableInvestments: [],
+    sources: [
+      { label: "OrbiMed - Sven H. Borho, CFA", url: "https://www.orbimed.com/leadership/sven-h-borho-cfa-2/" },
+      { label: "QuotedData - Sven Borho steps down from Worldwide Healthcare", url: "https://quoteddata.com/2026/08/sven-borho-steps-down-from-worldwide-health-with-biotech-growths-hsu-becoming-co-manager/" }
+    ]
+  },
+  "jonathan-silverstein": {
+    name: "Jonathan Silverstein",
+    firm: "OrbiMed",
+    firmSlug: "orbimed",
+    title: "Managing Partner",
+    joinedYear: 1999,
+    departedYear: null,
+    departedNote: "OrbiMed's own leadership page states: 'Jonathan is a former Managing Partner and current Executive Partner at OrbiMed.' He is no longer a Managing Partner; Vanqua Bio's board listing also identifies him as 'Executive Partner, OrbiMed'. No source found states the year the change took effect.",
+    investmentFocus: [
+      "Biotech",
+      "Healthcare",
+      "Medical Devices"
+    ],
+    education: [
+      "J.D., University of San Diego",
+      "M.B.A., University of San Diego",
+      "B.A. Economics, Denison University"
+    ],
+    previousExperience: [
+      "Director of Life Sciences, Investment Banking Department, Sumitomo Bank"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Vanqua Bio"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1989, event: "Graduated from Denison University." },
+      { year: 1999, event: "Joined OrbiMed to focus on private equity and structured transactions in small capitalization public biotechnology and medical device companies." },
+      { year: 2012, event: "Joined the board of Intercept Pharmaceuticals alongside its $30 million Series C financing led by OrbiMed." },
+      { year: 2016, event: "Joined the board of Adicet Bio following its $51 million Series A financing." },
+      { year: null, event: "Co-founded The Silverstein Foundation for Parkinson's with GBA and serves as its President." }
+    ],
+    biography: "Jonathan Silverstein joined OrbiMed in 1999 to focus on private equity and structured transactions in small capitalization public biotechnology and medical device companies. OrbiMed's site now describes him as a former Managing Partner and current Executive Partner. He is co-founder and President of The Silverstein Foundation for Parkinson's with GBA, and he currently serves on the board of Vanqua Bio. He holds a J.D. and an M.B.A. from the University of San Diego and a B.A. in Economics from Denison University.",
+    notableInvestments: [
+      { name: "Vanqua Bio", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "neurodegenerative disease", role: "board", evidence: [
+        { url: "https://www.vanquabio.com/about/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Intercept Pharmaceuticals", ticker: null, stage: "Series C", year: 2012, yearPrecision: "year", sector: "Biotech", subsector: "rare liver disease", role: "board", evidence: [
+        { url: "https://www.prnewswire.com/news-releases/intercept-pharmaceuticals-closes-30-million-series-c-financing-165644396.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Adicet Bio", ticker: null, stage: "Series A", year: 2016, yearPrecision: "year", sector: "Biotech", subsector: "gamma delta T cell therapy", role: "board", evidence: [
+        { url: "https://www.prnewswire.com/news-releases/adicet-bio-announces-closing-of-51-million-series-a-financing-and-acquisition-of-applied-immune-technologies-300210255.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Insulet", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Medical Devices", subsector: "disposable insulin pump", role: null, evidence: [
+        { url: "https://denison.edu/news-events/featured/27747", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Given Imaging", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Medical Devices", subsector: "ingestible diagnostic camera", role: null, evidence: [
+        { url: "https://denison.edu/news-events/featured/27747", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Enobia Pharma", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "hypophosphatasia therapy", role: "board", evidence: [
+        { url: "https://denison.edu/news-events/featured/27747", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "OrbiMed - Jonathan T. Silverstein, J.D.", url: "https://www.orbimed.com/leadership/jonathan-t-silverstein-j-d/" },
+      { label: "Vanqua Bio - Jonathan Silverstein, J.D.", url: "https://www.vanquabio.com/team/jonathan-silverstein/" },
+      { label: "Vanqua Bio - Board of Directors", url: "https://www.vanquabio.com/about/" },
+      { label: "Intercept Pharmaceuticals Closes $30 Million Series C Financing", url: "https://www.prnewswire.com/news-releases/intercept-pharmaceuticals-closes-30-million-series-c-financing-165644396.html" },
+      { label: "Adicet Bio Announces Closing of $51 Million Series A Financing", url: "https://www.prnewswire.com/news-releases/adicet-bio-announces-closing-of-51-million-series-a-financing-and-acquisition-of-applied-immune-technologies-300210255.html" },
+      { label: "Denison University - Jonathan Silverstein '89 Awarded Alumni Citation", url: "https://denison.edu/news-events/featured/27747" },
+      { label: "Adicet Bio - Leadership and Board of Directors", url: "https://www.adicetbio.com/about/" }
+    ]
+  },
+  "fred-ehrsam": {
+    name: "Fred Ehrsam",
+    firm: "Paradigm",
+    firmSlug: "paradigm",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2018,
+    departedYear: 2023,
+    departedNote: "Stepped back from day-to-day work at Paradigm. Paradigm's own site no longer lists him with the Investing & Research team; he appears under 'Collaborators' as 'Co-Founder & Senior Advisor', and his Paradigm bio describes him as Co-Founder and Senior Advisor at Paradigm and Co-Founder and CEO of Nudge, a neurotechnology company. He announced in October 2023 that his role was shifting from Managing Partner to General Partner with less focus on day-to-day management of the firm.",
+    investmentFocus: [
+      "Crypto"
+    ],
+    education: [
+      "Bachelor's degree in Computer Science and Economics, Duke University"
+    ],
+    previousExperience: [
+      "Co-founder and President, Coinbase (2012-2017)",
+      "Foreign exchange trader, Goldman Sachs"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Coinbase"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2011, event: "Bought his first Bitcoin while working as a foreign exchange trader at Goldman Sachs." },
+      { year: 2012, event: "Co-founded Coinbase and served as its President until 2017." },
+      { year: 2018, event: "Co-founded Paradigm with Matt Huang." },
+      { year: 2023, event: "Announced his Paradigm role was shifting from Managing Partner to General Partner, with less focus on day-to-day management of the firm." },
+      { year: 2024, event: "Founded Nudge, a neurotechnology company building non-invasive brain-computer interfaces, where he is Co-Founder and CEO." }
+    ],
+    biography: "Fred Ehrsam co-founded Paradigm with Matt Huang in 2018, after co-founding Coinbase in 2012 and serving as its President until 2017. He began his career as a foreign exchange trader at Goldman Sachs in New York and bought his first Bitcoin in 2011, later becoming an angel investor in early cryptocurrency companies. Paradigm's site now lists him as Co-Founder and Senior Advisor rather than on its investing and research team, and his bio there describes him as Co-Founder and CEO of Nudge, a neurotechnology company building non-invasive brain-computer interfaces. He remains a member of the Coinbase board and serves on the President's Council of Advisors on Science and Technology.",
+    notableInvestments: [
+      { name: "OpenAI", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.paradigm.xyz/team/fred-ehrsam", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Anthropic", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.paradigm.xyz/team/fred-ehrsam", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Anduril", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.paradigm.xyz/team/fred-ehrsam", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "SpaceX", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.paradigm.xyz/team/fred-ehrsam", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Paradigm - Fred Ehrsam", url: "https://www.paradigm.xyz/team/fred-ehrsam" },
+      { label: "Paradigm - Team", url: "https://www.paradigm.xyz/team" },
+      { label: "Paradigm - About", url: "https://www.paradigm.xyz/about" },
+      { label: "Fred Ehrsam on X - role shifting from Managing Partner to General Partner", url: "https://x.com/FEhrsam/status/1716849137218732119" },
+      { label: "The Debrief - Coinbase Co-Founder Fred Ehrsam Enters the Neurotech Race with Nudge", url: "https://thedebrief.org/from-blockchain-to-brainwaves-coinbase-co-founder-fred-ehrsam-enters-the-neurotech-race-with-non-invasive-bci-startup-nudge/" }
+    ]
+  },
+  "rick-frisbie": {
+    name: "Rick Frisbie",
+    firm: "Battery Ventures",
+    firmSlug: "battery-ventures",
+    title: "Co-Founder (1983)",
+    joinedYear: 1983,
+    departedYear: null,
+    departedNote: "Battery Ventures' own site describes him as a former General Partner, and Battery's people page no longer lists him. No departure year is stated by the firm.",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1983, event: "Co-founded Battery Ventures on Batterymarch Street in Boston with Bob Barrett and Howard Anderson." },
+      { year: 2007, event: "Led Battery's participation in a $225 million investment in Zayo Group alongside other investors." }
+    ],
+    biography: "Rick Frisbie co-founded Battery Ventures in Boston in 1983 with Bob Barrett and Howard Anderson. Battery's own case study on Zayo Group names him as the general partner who led the firm's 2007 participation in a $225 million financing that funded Zayo's acquisition strategy in the fiber-optic bandwidth market. Battery now refers to him as a former General Partner and does not list him on its people page.",
+    notableInvestments: [
+      { name: "Zayo Group", ticker: null, stage: null, year: 2007, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "fiber-optic bandwidth infrastructure", role: null, evidence: [
+        { url: "https://www.battery.com/blog/zayo-group-case-study/", type: "portfolio-page", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Battery Ventures - Zayo Group case study", url: "https://www.battery.com/blog/zayo-group-case-study/" },
+      { label: "Battery Ventures - This is 40: Battery's Four Decades of High-Tech Partnership, Innovation and Growth", url: "https://www.battery.com/blog/this-is-40-batterys-four-decades-of-high-tech-partnership-innovation-and-growth/" },
+      { label: "Battery Ventures - People", url: "https://www.battery.com/people/" }
+    ]
+  },
+  "howard-anderson": {
+    name: "Howard Anderson",
+    firm: "Battery Ventures",
+    firmSlug: "battery-ventures",
+    title: "Co-Founder (1983)",
+    joinedYear: 1983,
+    departedYear: 1999,
+    departedNote: "A Tecnologico de Monterrey faculty biography states he was co-founder and general partner of Battery Ventures from 1983 to 1999, and Battery's own people page no longer lists him. He is living and working in academia, not as a currently active Battery investor.",
+    investmentFocus: [],
+    education: [
+      "B.A. Economics, University of Pennsylvania",
+      "M.B.A., Harvard Business School"
+    ],
+    previousExperience: [
+      "Founder and President, The Yankee Group (1970-1999)",
+      "Founder, YankeeTek Ventures",
+      "William Porter Distinguished Senior Lecturer, MIT Sloan School of Management",
+      "Senior Lecturer, Brown University School of Engineering"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1970, event: "Founded The Yankee Group, a firm specializing in analysis of the high-technology industry." },
+      { year: 1983, event: "Co-founded Battery Ventures on Batterymarch Street in Boston with Rick Frisbie and Bob Barrett." },
+      { year: 1999, event: "Stepped down as head of the Yankee Group and launched YankeeTek Ventures, an early-stage fund and incubator in Cambridge, Massachusetts." },
+      { year: 2005, event: "Published an essay titled Good-Bye to Venture Capital arguing that the industry had too many firms and too much capital." },
+      { year: 2008, event: "Received MIT Sloan's Excellence in Teaching Award." },
+      { year: 2010, event: "Received MIT Sloan's Entrepreneurship Mentoring Award." }
+    ],
+    biography: "Howard Anderson founded the technology research firm The Yankee Group in 1970 and co-founded Battery Ventures in Boston in 1983 with Rick Frisbie and Bob Barrett. A Tecnologico de Monterrey faculty biography states he was a co-founder and general partner of Battery Ventures from 1983 to 1999, the year he stepped down at the Yankee Group and started YankeeTek Ventures, an early-stage fund and incubator in Cambridge. He went on to teach as the William Porter Distinguished Senior Lecturer at the MIT Sloan School of Management, where he received teaching and mentoring awards in 2008 and 2010. He is living and currently teaches at Brown University's School of Engineering, with further appointments at the Tuck School of Business and Tecnologico de Monterrey.",
+    notableInvestments: [],
+    sources: [
+      { label: "Brown University Nelson Center for Entrepreneurship - Howard Anderson", url: "https://entrepreneurship.brown.edu/overview/people/howard-anderson/" },
+      { label: "Tecnologico de Monterrey - Howard Anderson faculty page", url: "https://tec.mx/en/our-faculty/en/howard-anderson" },
+      { label: "Battery Ventures - This is 40: Battery's Four Decades of High-Tech Partnership, Innovation and Growth", url: "https://www.battery.com/blog/this-is-40-batterys-four-decades-of-high-tech-partnership-innovation-and-growth/" },
+      { label: "Buyouts Insider - Former Yankee Chief Launches Early-Stage Fund (Nov 15, 1999)", url: "https://www.buyoutsinsider.com/former-yankee-chief-launches-early-stage-fund/" },
+      { label: "Feld Thoughts - Howard Anderson's Good-Bye to Venture Capital (May 2005)", url: "https://feld.com/archives/2005/05/howard-andersons-good-bye-to-venture-capital/" }
+    ]
+  },
+  "duane-kuang": {
+    name: "Duane Kuang",
+    firm: "Qiming Venture Partners",
+    firmSlug: "qiming-venture-partners",
+    title: "Founding Managing Partner",
+    joinedYear: null,
+    investmentFocus: [
+      "Enterprise Software",
+      "AI",
+      "Robotics"
+    ],
+    education: [
+      "MBA, University of California, Berkeley",
+      "M.S. Computer Science, Stanford University",
+      "B.S. Computer Science, California State University, San Francisco"
+    ],
+    previousExperience: [
+      "Software engineer, Silicon Valley",
+      "Senior management roles, Cisco Systems China (five years)",
+      "Director, Intel Capital China"
+    ],
+    firmHistory: [
+      { firmSlug: "intel-capital", role: "Director, Intel Capital China", startYear: null, endYear: null }
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1999, event: "Started his venture capital career." },
+      { year: 2017, event: "Qiming Venture Partners began investing in WeRide, participating in its Series Seed, A and B rounds." },
+      { year: 2020, event: "Named to the Forbes Global 100 VC Midas List, a listing he repeated in 2021, 2022 and 2023." },
+      { year: 2024, event: "Spoke for Qiming as WeRide completed its IPO on Nasdaq." }
+    ],
+    biography: "Duane Kuang is a Founding Managing Partner of Qiming Venture Partners, where his stated investment focus is information technology, artificial intelligence and automation. Before entering venture capital in 1999, he began his career as a software engineer in Silicon Valley, spent five years in senior management roles at Cisco Systems in China, and then served as Director of Intel Capital China. Qiming's own profile lists Roborock, WeRide, UBTech, Unisound, Hesai Technology, StepFun, Chaitin and Qiniu Cloud among his portfolio companies. He was named to the Forbes Global 100 VC Midas List in 2020, 2021, 2022 and 2023.",
+    notableInvestments: [
+      { name: "WeRide", ticker: "WRD", stage: "Seed", year: 2017, yearPrecision: "year", sector: "Mobility", subsector: "autonomous driving", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/duane-kuang", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.prnewswire.com/news-releases/qiming-venture-partners-celebrates-werides-ipo-on-nasdaq-302287528.html", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://www.sec.gov/Archives/edgar/data/1867729/000110465926047323/wrd-20251231x20f.htm", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Hesai Technology", ticker: "HSAI", stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "lidar", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/duane-kuang", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://efts.sec.gov/LATEST/search-index?q=%22Hesai%22&forms=20-F&startdt=2026-01-01&enddt=2026-08-25", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Roborock", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Robotics", subsector: "consumer cleaning robots", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/duane-kuang", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "UBTech", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Robotics", subsector: "humanoid robotics", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/duane-kuang", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "StepFun", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: "foundation models", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/duane-kuang", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Unisound", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: "speech and language AI", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/duane-kuang", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Qiniu Cloud", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "cloud storage and data services", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/duane-kuang", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Chaitin", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/duane-kuang", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Qiming Venture Partners - Duane Kuang", url: "https://www.qimingvc.com/en/team/duane-kuang" },
+      { label: "Qiming Venture Partners - Team", url: "https://www.qimingvc.com/en/team" },
+      { label: "Qiming Venture Partners Celebrates WeRide's IPO on Nasdaq (25 Oct 2024)", url: "https://www.prnewswire.com/news-releases/qiming-venture-partners-celebrates-werides-ipo-on-nasdaq-302287528.html" },
+      { label: "WeRide Inc. Form 20-F for FY2025 (SEC, 23 Apr 2026)", url: "https://www.sec.gov/Archives/edgar/data/1867729/000110465926047323/wrd-20251231x20f.htm" },
+      { label: "WeRide Inc. - Board of Directors", url: "https://ir.weride.ai/governance/board-of-directors" }
+    ]
+  },
+  "nisa-leung": {
+    name: "Nisa Leung",
+    firm: "Qiming Venture Partners",
+    firmSlug: "qiming-venture-partners",
+    title: "Managing Partner",
+    joinedYear: 2006,
+    investmentFocus: [
+      "Healthcare",
+      "Biotech",
+      "Medical Devices"
+    ],
+    education: [
+      "MBA, Stanford Graduate School of Business",
+      "B.S., Cornell University"
+    ],
+    previousExperience: [
+      "Co-founder, Biomedic Holdings",
+      "Venture Partner, PacRim Ventures",
+      "Mobius Venture Capital (formerly SOFTBANK Venture Capital)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Zai Lab",
+      "Caidya",
+      "Chain Medical Labs",
+      "Belief BioMed",
+      "Alamar Biosciences",
+      "Horizone",
+      "Vision Pro",
+      "SinoUnited Health"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Founded and began leading Qiming Venture Partners' healthcare practice." },
+      { year: 2014, event: "Joined the board of directors of Zai Lab." },
+      { year: 2019, event: "First named to the Forbes Midas List, an honour she went on to receive for six consecutive years." }
+    ],
+    biography: "Nisa Leung is a Managing Partner of Qiming Venture Partners who founded and has led the firm's healthcare practice since 2006, investing across medical devices, pharmaceuticals and healthcare services. Before Qiming she co-founded Biomedic Holdings and was a Venture Partner at PacRim Ventures, having earlier worked with Mobius Venture Capital. She has served on the board of Zai Lab since 2014 and also sits on the boards of Caidya, Chain Medical Labs, Belief BioMed, Alamar Biosciences, Horizone, Vision Pro and SinoUnited Health. She holds an MBA from Stanford Graduate School of Business and a BS from Cornell University.",
+    notableInvestments: [
+      { name: "Zai Lab", ticker: "ZLAB", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "oncology and autoimmune therapeutics", role: "board", evidence: [
+        { url: "https://www.qimingvc.com/en/team/nisa-leung", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://ir.zailaboratory.com/board-member/nisa-leung/", type: "regulatory", checked: "2026-08-25" },
+        { url: "https://www.zailaboratory.com/boards/board-of-directors/", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Schrodinger", ticker: "SDGR", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "physics-based computational drug discovery", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/nisa-leung", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://efts.sec.gov/LATEST/search-index?q=%22Schrodinger%22&forms=10-Q&startdt=2026-06-01&enddt=2026-08-25", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Structure Therapeutics", ticker: "GPCR", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "GPCR-targeted small molecule therapeutics", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/nisa-leung", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://efts.sec.gov/LATEST/search-index?q=%22Structure+Therapeutics%22&startdt=2026-06-01&enddt=2026-08-25", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Berry Genomics", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Diagnostics", subsector: "genomic testing", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/nisa-leung", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Insilico Medicine", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "AI-driven drug discovery", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/nisa-leung", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Belief BioMed", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "gene therapy", role: "board", evidence: [
+        { url: "https://www.qimingvc.com/en/team/nisa-leung", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Alamar Biosciences", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Diagnostics", subsector: "ultrasensitive proteomics", role: "board", evidence: [
+        { url: "https://www.qimingvc.com/en/team/nisa-leung", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Apollomics", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "oncology therapeutics", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/nisa-leung", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Jacobio", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "oncology therapeutics", role: null, evidence: [
+        { url: "https://www.qimingvc.com/en/team/nisa-leung", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Qiming Venture Partners - Nisa Leung", url: "https://www.qimingvc.com/en/team/nisa-leung" },
+      { label: "Zai Lab Limited - Board Member: Nisa Leung", url: "https://ir.zailaboratory.com/board-member/nisa-leung/" },
+      { label: "Zai Lab Limited - Board of Directors", url: "https://www.zailaboratory.com/boards/board-of-directors/" },
+      { label: "SEC EDGAR full-text search - filings naming Nisa Leung (incl. Zai Lab DEF 14A, 28 Apr 2026)", url: "https://efts.sec.gov/LATEST/search-index?q=%22Nisa+Leung%22&startdt=2024-01-01&enddt=2026-08-25" }
+    ]
+  },
+  "keith-crandell": {
+    name: "Keith Crandell",
+    firm: "ARCH Venture Partners",
+    firmSlug: "arch-venture-partners",
+    title: "Co-Founder & Managing Director",
+    joinedYear: null,
+    investmentFocus: [
+      "Biotech",
+      "Diagnostics",
+      "Medical Devices",
+      "Deep Tech"
+    ],
+    education: [
+      "M.B.A., The University of Chicago",
+      "M.S. Chemistry, University of Texas at Arlington",
+      "B.S. Chemistry and Mathematics, St. Lawrence University"
+    ],
+    previousExperience: [
+      "Hercules, Inc., a specialty chemical and polymer company"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "908 Devices",
+      "Twist Bioscience",
+      "Arbor Biotechnologies",
+      "Cytrellis Biosystems",
+      "Lightcast Discovery",
+      "UltraDx",
+      "Vizgen"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Worked at Hercules, Inc., a specialty chemical and polymer company, before ARCH." },
+      { year: null, event: "Co-founded ARCH Venture Partners and became a Managing Director." },
+      { year: 2005, event: "Joined the Entrepreneurship Advisory Board of the Polsky Center for Entrepreneurship at Chicago Booth." },
+      { year: 2017, event: "Joined the Advisory Council of the University of Chicago Pritzker School of Molecular Engineering." }
+    ],
+    biography: "Keith Crandell is a co-founder and a Managing Director of ARCH Venture Partners, where his bio describes a focus on life science therapeutics, tools, devices and diagnostics along with specialty materials, electronics, instrumentation and photonics businesses. Before ARCH he worked at Hercules, Inc., a specialty chemical and polymer company. He is currently a director of 908 Devices, Twist Bioscience, Arbor Biotechnologies, Cytrellis Biosystems, Lightcast Discovery, UltraDx and Vizgen, and a board observer at AIRNA, Quantum Circuits and Slingshot Biosciences. He holds an M.B.A. from The University of Chicago, an M.S. in Chemistry from the University of Texas at Arlington and a B.S. in Chemistry and Mathematics from St. Lawrence University.",
+    notableInvestments: [
+      { name: "908 Devices", ticker: "MASS", stage: null, year: null, yearPrecision: null, sector: "Diagnostics", subsector: "analytical instrumentation", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/keith-crandell", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Twist Bioscience", ticker: "TWST", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "synthetic DNA", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/keith-crandell", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Arbor Biotechnologies", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "gene editing", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/keith-crandell", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Vizgen", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "spatial genomics", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/keith-crandell", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Cytrellis Biosystems", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Medical Devices", subsector: null, role: "board", evidence: [
+        { url: "https://www.archventure.com/team/keith-crandell", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Lightcast Discovery", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "single-cell analysis", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/keith-crandell", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "UltraDx", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Diagnostics", subsector: null, role: "board", evidence: [
+        { url: "https://www.archventure.com/team/keith-crandell", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Quanterix", ticker: "QTRX", stage: null, year: null, yearPrecision: null, sector: "Diagnostics", subsector: "ultrasensitive protein detection", role: null, evidence: [
+        { url: "https://www.archventure.com/team/keith-crandell", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Adesto Technologies", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "semiconductors", role: null, evidence: [
+        { url: "https://www.archventure.com/team/keith-crandell", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Nanophase Technologies", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Industrial & Manufacturing Technology", subsector: "nanomaterials", role: null, evidence: [
+        { url: "https://www.archventure.com/team/keith-crandell", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "ARCH Venture Partners - Keith Crandell", url: "https://www.archventure.com/team/keith-crandell" }
+    ]
+  },
+  "kristina-burow": {
+    name: "Kristina Burow",
+    firm: "ARCH Venture Partners",
+    firmSlug: "arch-venture-partners",
+    title: "Managing Director",
+    joinedYear: 2002,
+    investmentFocus: [
+      "Biotech",
+      "Healthcare"
+    ],
+    education: [
+      "B.S. Chemistry, University of California, Berkeley",
+      "M.A. Chemistry, Columbia University",
+      "M.B.A., University of Chicago"
+    ],
+    previousExperience: [
+      "Genomics Institute of the Novartis Research Foundation (GNF), early employee; directed Chemistry Operations and worked in Business Development creating company spinouts"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Neumora Therapeutics",
+      "Scholar Rock",
+      "Boundless Bio",
+      "Mirador Therapeutics",
+      "Architect Therapeutics",
+      "Autobahn Therapeutics",
+      "Pretzel Therapeutics",
+      "Tenvie Therapeutics",
+      "Treeline Biosciences",
+      "Magnet Biomedicine"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Was an early employee of the Genomics Institute of the Novartis Research Foundation, directing Chemistry Operations and creating company spinouts." },
+      { year: 2002, event: "Joined ARCH Venture Partners." },
+      { year: null, event: "Co-founded Receptos, which was acquired by Celgene." },
+      { year: null, event: "Co-founded Neumora Therapeutics and serves as a director." },
+      { year: null, event: "Co-founded Metsera, which was acquired by Pfizer." }
+    ],
+    biography: "Kristina Burow is a Managing Director at ARCH Venture Partners, which she joined in 2002 after being an early employee at the Genomics Institute of the Novartis Research Foundation, where she directed Chemistry Operations and worked in business development creating company spinouts. She is a co-founder and director of Neumora Therapeutics and a director of Scholar Rock, Boundless Bio, Mirador Therapeutics, Architect Therapeutics, Autobahn Therapeutics, Pretzel Therapeutics, Tenvie Therapeutics, Treeline Biosciences and Magnet Biomedicine. She previously co-founded and served as a director of Receptos, Orbital Therapeutics, Vividion Therapeutics and Metsera, and was a director of Beam Therapeutics, Gossamer Bio and Vir Biotechnology. She holds a B.S. in Chemistry from the University of California, Berkeley, an M.A. in Chemistry from Columbia University and an M.B.A. from the University of Chicago.",
+    notableInvestments: [
+      { name: "Neumora Therapeutics", ticker: "NMRA", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "neuroscience therapeutics", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Scholar Rock", ticker: "SRRK", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Boundless Bio", ticker: "BOLD", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "extrachromosomal DNA oncology", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Mirador Therapeutics", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "precision immunology", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Treeline Biosciences", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Autobahn Therapeutics", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "CNS therapeutics", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Pretzel Therapeutics", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "mitochondrial medicine", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Magnet Biomedicine", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "molecular glue discovery", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Receptos", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Metsera", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "metabolic disease", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Vividion Therapeutics", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "chemoproteomics", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Vir Biotechnology", ticker: "VIR", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "infectious disease", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Beam Therapeutics", ticker: "BEAM", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "base editing", role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Gossamer Bio", ticker: "GOSS", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
+        { url: "https://www.archventure.com/team/kristina-burow", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "ARCH Venture Partners - Kristina Burow", url: "https://www.archventure.com/team/kristina-burow" }
+    ]
+  },
+  "david-chao": {
+    name: "David Chao",
+    firm: "DCM Ventures",
+    firmSlug: "dcm-ventures",
+    title: "Co-Founder & General Partner",
+    joinedYear: null,
+    investmentFocus: [
+      "Fintech",
+      "Enterprise Software",
+      "Consumer"
+    ],
+    education: [
+      "B.A. Economics and East Asian Studies, Brown University",
+      "M.B.A., Stanford Graduate School of Business"
+    ],
+    previousExperience: [
+      "Account executive, Recruit",
+      "Apple Japan, managing Apple's startup investment portfolio",
+      "Management consultant, McKinsey & Company (San Francisco and Tokyo)",
+      "Co-founder and acting CFO/CTO, Japan Communications Inc. (TSE: 9424)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "SoftBank Group Corp.",
+      "Assured",
+      "Cherry",
+      "DXY",
+      "EvenUp",
+      "Fountain",
+      "Figure Technologies",
+      "Musely"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Co-founded Japan Communications Inc. and served as its acting CFO and CTO." },
+      { year: null, event: "Co-founded DCM and became a General Partner of the firm." },
+      { year: 2026, event: "Listed as an External Board Director and Independent Officer of SoftBank Group Corp. as of the company's June 2026 officer disclosure." }
+    ],
+    biography: "David Chao is a Co-Founder and General Partner of DCM, where his portfolio spans fintech, software, media and mobile technologies. Before DCM he co-founded Japan Communications Inc. and served as its acting CFO and CTO, worked as a management consultant at McKinsey & Company in San Francisco and Tokyo, managed Apple's startup investment portfolio in Japan, and began his career as an account executive at Recruit. DCM's profile names Bill.com, BitTorrent, Careem, DocSend, eDreams, Fortinet, Kabu.com, Musical.ly, SoFi, 51job, SMIC and StarFlyer among his investments. He is an external director of SoftBank Group Corp. and holds a B.A. from Brown University and an M.B.A. from Stanford Graduate School of Business.",
+    notableInvestments: [
+      { name: "SoFi", ticker: "SOFI", stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "consumer lending and digital banking", role: null, evidence: [
+        { url: "https://www.dcm.com/team/david--chao", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://efts.sec.gov/LATEST/search-index?q=%22SoFi+Technologies%22&forms=10-Q&startdt=2026-06-01&enddt=2026-08-25", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Bill.com", ticker: "BILL", stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "SMB accounts payable and receivable automation", role: null, evidence: [
+        { url: "https://www.dcm.com/team/david--chao", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://efts.sec.gov/LATEST/search-index?q=%22BILL+Holdings%22&forms=10-Q&startdt=2026-01-01&enddt=2026-08-25", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Fortinet", ticker: "FTNT", stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: "network security appliances", role: null, evidence: [
+        { url: "https://www.dcm.com/team/david--chao", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://efts.sec.gov/LATEST/search-index?q=%22Fortinet%22&forms=10-Q&startdt=2026-06-01&enddt=2026-08-25", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Musical.ly", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "short-form video, later merged into TikTok", role: null, evidence: [
+        { url: "https://www.dcm.com/team/david--chao", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "51job", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "online recruitment", role: null, evidence: [
+        { url: "https://www.dcm.com/team/david--chao", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Careem", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Mobility", subsector: "ride hailing in the Middle East", role: null, evidence: [
+        { url: "https://www.dcm.com/team/david--chao", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "SMIC", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "semiconductor foundry", role: null, evidence: [
+        { url: "https://www.dcm.com/team/david--chao", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "EvenUp", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Legal Tech", subsector: null, role: "board", evidence: [
+        { url: "https://www.dcm.com/team/david--chao", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Figure Technologies", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: null, role: "board", evidence: [
+        { url: "https://www.dcm.com/team/david--chao", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "DocSend", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "document sharing and analytics", role: null, evidence: [
+        { url: "https://www.dcm.com/team/david--chao", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "DCM - David Chao", url: "https://www.dcm.com/team/david--chao" },
+      { label: "DCM - Team", url: "https://www.dcm.com/team" },
+      { label: "SoftBank Group Corp. - Officers (as of 24 June 2026)", url: "https://group.softbank/en/about/officer" }
+    ]
+  },
+  "jason-krikorian": {
+    name: "Jason Krikorian",
+    firm: "DCM Ventures",
+    firmSlug: "dcm-ventures",
+    title: "General Partner",
+    joinedYear: 2010,
+    departedYear: 2022,
+    departedNote: "No longer at DCM. SEC proxy statements for PLAYSTUDIOS (2026) and Augmedix (2023) state he served as a General Partner of DCM from 2010 to December 2022, and he does not appear anywhere on DCM's current team page at dcm.com/team as checked on 2026-08-25.",
+    investmentFocus: [],
+    education: [
+      "B.A. Psychology, University of California, Berkeley",
+      "M.B.A., University of Virginia",
+      "J.D., University of Virginia"
+    ],
+    previousExperience: [
+      "Consultant, Boston Consulting Group",
+      "Partner, id8 Group",
+      "Co-founder, Sling Media, Inc."
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "PLAYSTUDIOS, Inc."
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2010, event: "Joined DCM as a General Partner after co-founding Sling Media." },
+      { year: 2014, event: "Joined the board of directors of Matterport in June." },
+      { year: 2017, event: "Joined the board of directors of Augmedix in May." },
+      { year: 2018, event: "Joined the board of directors of Shift Technologies in September." },
+      { year: 2021, event: "Joined the board of directors of PLAYSTUDIOS on 21 June." },
+      { year: 2022, event: "Concluded his role as a General Partner of DCM in December." }
+    ],
+    biography: "Jason Krikorian served as a General Partner of DCM from 2010 to December 2022. Before joining the firm he co-founded Sling Media, the creator of the Slingbox, where he led operator partnerships and international expansion, and earlier was a partner at id8 Group and a consultant at Boston Consulting Group. During and after his DCM tenure he sat on the boards of Matterport, Augmedix, Shift Technologies and PLAYSTUDIOS, and he remains a director of PLAYSTUDIOS. He holds a B.A. in Psychology from the University of California, Berkeley and both an M.B.A. and a J.D. from the University of Virginia.",
+    notableInvestments: [
+      { name: "PLAYSTUDIOS", ticker: "MYPS", stage: null, year: null, yearPrecision: null, sector: "Gaming", subsector: "free-to-play mobile games with loyalty rewards", role: "board", evidence: [
+        { url: "https://www.sec.gov/Archives/edgar/data/1823878/000110465926067830/tm264191-3_def14a.htm", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Matterport", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "3D spatial data capture", role: "board", evidence: [
+        { url: "https://www.sec.gov/Archives/edgar/data/1819394/000181939424000019/mttr-20240424.htm", type: "regulatory", checked: "2026-08-25" },
+        { url: "https://www.sec.gov/Archives/edgar/data/1769804/000121390023051693/def14a0623_augmedix.htm", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Augmedix", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: "ambient medical documentation", role: "board", evidence: [
+        { url: "https://www.sec.gov/Archives/edgar/data/1769804/000121390023051693/def14a0623_augmedix.htm", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Shift Technologies", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: "online used-vehicle marketplace", role: "board", evidence: [
+        { url: "https://www.sec.gov/Archives/edgar/data/1769804/000121390023051693/def14a0623_augmedix.htm", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Sling Media", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "DCM-backed digital media company he co-founded before joining the firm", role: null, evidence: [
+        { url: "https://www.sec.gov/Archives/edgar/data/1819394/000181939424000019/mttr-20240424.htm", type: "regulatory", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "PLAYSTUDIOS, Inc. DEF 14A (SEC, 29 May 2026)", url: "https://www.sec.gov/Archives/edgar/data/1823878/000110465926067830/tm264191-3_def14a.htm" },
+      { label: "Augmedix, Inc. DEF 14A (SEC, 26 Jun 2023)", url: "https://www.sec.gov/Archives/edgar/data/1769804/000121390023051693/def14a0623_augmedix.htm" },
+      { label: "Matterport, Inc. DEF 14A (SEC, 24 Apr 2024)", url: "https://www.sec.gov/Archives/edgar/data/1819394/000181939424000019/mttr-20240424.htm" },
+      { label: "Sling Media Co-Founder Jason Krikorian Joins DCM as New General Partner (Business Wire, 21 Jul 2010)", url: "https://www.businesswire.com/news/home/20100721005487/en/Sling-Media-Co-Founder-Jason-Krikorian-Joins-DCM" },
+      { label: "DCM - Team (no listing for Jason Krikorian as of 2026-08-25)", url: "https://www.dcm.com/team" }
+    ]
+  },
+  "neil-rimer": {
+    name: "Neil Rimer",
+    firm: "Index Ventures",
+    firmSlug: "index-ventures",
+    title: "Co-Founder",
+    joinedYear: 1996,
+    departedYear: 2021,
+    departedNote: "Index Ventures' own team page lists his title as 'Retired Partner at Index Ventures'. Its bio states he served as a Partner for over 25 years and stepped down as an active Partner in 2021, continuing to manage his portfolio and support the firm.",
+    investmentFocus: [],
+    education: [
+      "Undergraduate degree, Stanford University",
+      "M.B.A., Harvard Business School"
+    ],
+    previousExperience: [
+      "Montgomery Securities, San Francisco (four years)",
+      "Index Securities, from 1990 (predecessor of Index Ventures)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Human Rights Watch (Co-Chair of the board, nonprofit)"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1990, event: "Joined Index Securities, the predecessor of Index Ventures." },
+      { year: 1996, event: "Co-founded Index Ventures." },
+      { year: 2021, event: "Stepped down as an active Partner of Index Ventures after more than 25 years." }
+    ],
+    biography: "Neil Rimer co-founded Index Ventures in 1996 and served as a Partner there for more than 25 years before stepping down as an active Partner in 2021; the firm's site now lists him as a Retired Partner who continues to manage his portfolio and support the firm. Born in Montreal, he spent four years at Montgomery Securities in San Francisco and joined Index Securities, the predecessor of Index Ventures, in 1990. Index's profile associates him with Betfair, Genmab, Stepstone, Climate Corporation, Supercell, Trello, Typeform, Nexthink, Funding Circle, Stack Overflow, Revolut and Roblox. He is co-chair of the board of Human Rights Watch and holds an undergraduate degree from Stanford University and an MBA from Harvard Business School.",
+    notableInvestments: [
+      { name: "Genmab", ticker: "GMAB", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "antibody therapeutics", role: null, evidence: [
+        { url: "https://www.indexventures.com/team/neil-rimer/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://efts.sec.gov/LATEST/search-index?q=%22Genmab%22&forms=20-F&startdt=2026-01-01&enddt=2026-08-25", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Roblox", ticker: "RBLX", stage: null, year: null, yearPrecision: null, sector: "Gaming", subsector: "user-generated 3D experiences platform", role: null, evidence: [
+        { url: "https://www.indexventures.com/team/neil-rimer/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://efts.sec.gov/LATEST/search-index?q=%22Roblox%22&forms=10-Q&startdt=2026-06-01&enddt=2026-08-25", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Betfair", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "online betting exchange, now part of Flutter Entertainment", role: null, evidence: [
+        { url: "https://www.indexventures.com/team/neil-rimer/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://efts.sec.gov/LATEST/search-index?q=%22Flutter+Entertainment%22&forms=10-Q&startdt=2026-06-01&enddt=2026-08-25", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Supercell", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Gaming", subsector: "mobile games", role: null, evidence: [
+        { url: "https://www.indexventures.com/team/neil-rimer/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Revolut", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "digital banking", role: null, evidence: [
+        { url: "https://www.indexventures.com/team/neil-rimer/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Funding Circle", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "small business lending marketplace", role: null, evidence: [
+        { url: "https://www.indexventures.com/team/neil-rimer/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Climate Corporation", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Agtech", subsector: "agricultural data and weather analytics", role: null, evidence: [
+        { url: "https://www.indexventures.com/team/neil-rimer/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Stack Overflow", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "developer Q&A community", role: null, evidence: [
+        { url: "https://www.indexventures.com/team/neil-rimer/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Nexthink", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "digital employee experience management", role: null, evidence: [
+        { url: "https://www.indexventures.com/team/neil-rimer/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Typeform", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "online forms and surveys", role: null, evidence: [
+        { url: "https://www.indexventures.com/team/neil-rimer/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Index Ventures - Neil Rimer", url: "https://www.indexventures.com/team/neil-rimer/" },
+      { label: "Index Ventures - Team", url: "https://www.indexventures.com/team/" }
+    ]
+  },
+  "mike-volpi": {
+    name: "Mike Volpi",
+    firm: "Index Ventures",
+    firmSlug: "index-ventures",
+    title: "General Partner",
+    joinedYear: 2009,
+    departedYear: 2023,
+    departedNote: "No longer an active partner at Index Ventures. Confluent's 2026 Form 10-K/A states he was a Partner at Index Ventures from July 2009 to June 2023 and has been a Retired Partner of the firm since July 2023, and that he has been a General Partner at Hanabi Capital Management, LLC since December 2024. Hanabi Capital's own site describes him as a retired partner at Index Ventures, and he does not appear on indexventures.com/team as checked on 2026-08-25. Aurora Innovation's and Wealthfront's 2026 proxies describe him as a Partner at Index Ventures since July 2009 without an end date and as General Partner at Hanabi Capital since January 2025.",
+    investmentFocus: [
+      "AI",
+      "Enterprise Software",
+      "Developer Tools & Infrastructure"
+    ],
+    education: [
+      "B.S. Mechanical Engineering, Stanford University",
+      "M.S. Manufacturing Systems Engineering, Stanford University",
+      "M.B.A., Stanford Graduate School of Business"
+    ],
+    previousExperience: [
+      "Senior Vice President and General Manager, routing business, Cisco Systems",
+      "Chief Strategy Officer, Cisco Systems"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Aurora Innovation",
+      "Confluent",
+      "Wealthfront",
+      "Ferrari N.V.",
+      "Scale AI",
+      "ClickHouse"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2009, event: "Became a Partner at Index Ventures in July." },
+      { year: 2013, event: "Joined the board of directors of Wealthfront in October." },
+      { year: 2015, event: "Joined the board of directors of Confluent in April." },
+      { year: 2018, event: "Joined the board of directors of Aurora Innovation in January." },
+      { year: 2023, event: "Became a Retired Partner of Index Ventures in July after fourteen years as a Partner." },
+      { year: 2024, event: "Became a General Partner at Hanabi Capital Management in December." },
+      { year: 2026, event: "Re-elected as a non-executive director of Ferrari N.V. in April." }
+    ],
+    biography: "Mike Volpi joined Index Ventures as a Partner in July 2009 and served in that role until June 2023, after which the firm's filings describe him as a Retired Partner; since December 2024 he has been a General Partner at Hanabi Capital Management. Before venture capital he held senior operating roles at Cisco Systems, including Chief Strategy Officer and Senior Vice President and General Manager of the routing business. He currently serves on the boards of Aurora Innovation, Confluent, Wealthfront and Ferrari N.V., and Hanabi's site also lists Scale AI and ClickHouse. He holds a B.S. in Mechanical Engineering, an M.S. in Manufacturing Systems Engineering and an M.B.A., all from Stanford.",
+    notableInvestments: [
+      { name: "Confluent", ticker: "CFLT", stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "data streaming platform", role: "board", evidence: [
+        { url: "https://www.sec.gov/Archives/edgar/data/1699838/000169983826000008/cflt-20251231.htm", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Aurora Innovation", ticker: "AUR", stage: null, year: null, yearPrecision: null, sector: "Mobility", subsector: "autonomous trucking", role: "board", evidence: [
+        { url: "https://www.sec.gov/Archives/edgar/data/1828108/000182810826000044/aur-20260402.htm", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Wealthfront", ticker: "WLTH", stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "automated investing and cash management", role: "board", evidence: [
+        { url: "https://www.sec.gov/Archives/edgar/data/1524566/000162828026033531/wlth-20260511.htm", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "ClickHouse", ticker: null, stage: "Series C", year: 2025, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "real-time analytical database", role: "board", evidence: [
+        { url: "https://www.indexventures.com/perspectives/real-time-data-for-the-ai-era-clickhouse-enters-its-next-chapter-with-350m-series-c/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://www.hanabi.com/team/mike-volpi", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Scale AI", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: "data labeling and AI infrastructure", role: "board", evidence: [
+        { url: "https://www.hanabi.com/team/mike-volpi", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Confluent, Inc. Form 10-K/A Part III (SEC, 26 Feb 2026)", url: "https://www.sec.gov/Archives/edgar/data/1699838/000169983826000008/cflt-20251231.htm" },
+      { label: "Aurora Innovation, Inc. DEF 14A (SEC, 2 Apr 2026)", url: "https://www.sec.gov/Archives/edgar/data/1828108/000182810826000044/aur-20260402.htm" },
+      { label: "Wealthfront Corp DEF 14A (SEC, 11 May 2026)", url: "https://www.sec.gov/Archives/edgar/data/1524566/000162828026033531/wlth-20260511.htm" },
+      { label: "Ferrari N.V. Form 6-K on 2026 AGM resolutions (SEC, 15 Apr 2026)", url: "https://www.sec.gov/Archives/edgar/data/1648416/000164841626000050/0001648416-26-000050.txt" },
+      { label: "Hanabi Capital - Mike Volpi", url: "https://www.hanabi.com/team/mike-volpi" },
+      { label: "Index Ventures - ClickHouse $350M Series C, authored by Mike Volpi (2 Jun 2025)", url: "https://www.indexventures.com/perspectives/real-time-data-for-the-ai-era-clickhouse-enters-its-next-chapter-with-350m-series-c/" },
+      { label: "Index Ventures - Team (no listing for Mike Volpi as of 2026-08-25)", url: "https://www.indexventures.com/team/" }
+    ]
+  },
+  "mark-rostick": {
+    name: "Mark Rostick",
+    firm: "Intel Capital",
+    firmSlug: "intel-capital",
+    title: "Vice President & Senior Managing Director",
+    joinedYear: 1999,
+    investmentFocus: [
+      "Enterprise Software",
+      "AI",
+      "Developer Tools & Infrastructure"
+    ],
+    education: [],
+    previousExperience: [
+      "Practicing attorney",
+      "Banking"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Beep",
+      "Hypersonix",
+      "Immuta",
+      "Lilt",
+      "MinIO",
+      "Opaque Systems",
+      "Tetrate"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1999, event: "Joined Intel Capital." },
+      { year: null, event: "Became a voting member of Intel Capital's investment committee and co-manager of its Cloud domain investment activities." },
+      { year: 2020, event: "Represented Intel Capital on Immuta's $40 million Series C round, which Intel Capital led." }
+    ],
+    biography: "Mark Rostick joined Intel Capital in 1999 and is Vice President and Senior Managing Director, based in Raleigh, North Carolina, and a voting member of the firm's investment committee. He co-manages Intel Capital's Cloud domain investment activities and his bio cites investment experience in cloud applications, infrastructure hardware and software, and AI and machine learning. Intel Capital lists him as a director or observer on the boards of Beep, Cherre, Hypersonix, Immuta, Lilt, MinIO, Opaque Systems, Tetrate and Verta, and names Amplidata, Cherre, Enpirion, Kazan Networks, Nyansa, Velostrata, Verta and Virtustream among his exits. Before Intel Capital he worked as a practicing attorney and in banking.",
+    notableInvestments: [
+      { name: "Immuta", ticker: null, stage: "Series C", year: 2020, yearPrecision: "year", sector: "Enterprise Software", subsector: null, role: "board", evidence: [
+        { url: "https://www.immuta.com/news/immuta-secures-40m-in-funding-led-by-intel-capital/", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.intelcapital.com/team/mark-rostick", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "MinIO", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: null, role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/mark-rostick", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Tetrate", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: null, role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/mark-rostick", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Lilt", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/mark-rostick", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Opaque Systems", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/mark-rostick", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Hypersonix", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/mark-rostick", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Beep", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Mobility", subsector: null, role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/mark-rostick", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Intel Capital - Mark Rostick", url: "https://www.intelcapital.com/team/mark-rostick" },
+      { label: "Intel Capital - Team", url: "https://www.intelcapital.com/team/" },
+      { label: "Immuta - Immuta Secures $40M in Funding Led by Intel Capital", url: "https://www.immuta.com/news/immuta-secures-40m-in-funding-led-by-intel-capital/" }
+    ]
+  },
+  "srini-ananth": {
+    name: "Srini Ananth",
+    firm: "Intel Capital",
+    firmSlug: "intel-capital",
+    title: "Managing Director",
+    joinedYear: 2015,
+    investmentFocus: [
+      "Deep Tech",
+      "AI",
+      "Developer Tools & Infrastructure"
+    ],
+    education: [
+      "M.B.A., University of California, Los Angeles",
+      "M.S. Electrical Engineering, Arizona State University"
+    ],
+    previousExperience: [
+      "Over a decade of operating experience in engineering, business development and product management roles in IoT, mobile and semiconductors"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Astera Labs",
+      "Ayar Labs",
+      "Common Sense Machines",
+      "Eliyan",
+      "Inworld AI",
+      "SiPhox",
+      "VeriSIM Life"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Joined Intel Capital." },
+      { year: null, event: "Became a Managing Director based in the Bay Area focused on deep tech, cloud infrastructure and AI application companies." }
+    ],
+    biography: "Srini Ananth joined Intel Capital in 2015 and is a Managing Director based in the Bay Area. His Intel Capital bio states that he focuses on deep tech, cloud infrastructure and AI application companies, and that he serves as director or observer on the boards of Astera Labs, Ayar Labs, Common Sense Machines, Eliyan, Inworld AI, SiPhox and VeriSIM Life. The same bio names Astera Labs, Ayar Labs, BabbleLabs, Common Sense Machines, Eliyan, Inworld AI, Iris.TV, Joby Aviation and OnScale among his investments. He brings more than a decade of operating experience across engineering, business development and product management in IoT, mobile and semiconductors, and holds an MBA from UCLA and an MSEE from Arizona State University.",
+    notableInvestments: [
+      { name: "Astera Labs", ticker: "ALAB", stage: null, year: null, yearPrecision: null, sector: "Deep Tech", subsector: "silicon connectivity", role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/srinivas-ananth", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://investors.asteralabs.com/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Ayar Labs", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Deep Tech", subsector: "silicon photonics", role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/srinivas-ananth", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Eliyan", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Deep Tech", subsector: "semiconductors", role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/srinivas-ananth", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Inworld AI", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/srinivas-ananth", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Common Sense Machines", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/srinivas-ananth", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "SiPhox", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Deep Tech", subsector: "silicon photonics", role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/srinivas-ananth", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "VeriSIM Life", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: "board", evidence: [
+        { url: "https://www.intelcapital.com/team/srinivas-ananth", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Joby Aviation", ticker: "JOBY", stage: null, year: null, yearPrecision: null, sector: "Mobility", subsector: null, role: null, evidence: [
+        { url: "https://www.intelcapital.com/team/srinivas-ananth", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Intel Capital - Srini Ananth", url: "https://www.intelcapital.com/team/srinivas-ananth" },
+      { label: "Intel Capital - Team", url: "https://www.intelcapital.com/team/" }
+    ]
+  },
+  "graziano-seghezzi": {
+    name: "Graziano Seghezzi",
+    firm: "Sofinnova Partners",
+    firmSlug: "sofinnova-partners",
+    title: "Managing Partner",
+    joinedYear: 2006,
+    investmentFocus: [
+      "Biotech",
+      "Healthcare"
+    ],
+    education: [
+      "Degree in Genetics and Microbiology, University of Pavia (Italy)",
+      "MBA, RSM-Erasmus University (Netherlands)"
+    ],
+    previousExperience: [
+      "Index Ventures, Geneva (2003-2006)",
+      "Academic researcher in oncology and cardiovascular disease, New York University School of Medicine"
+    ],
+    firmHistory: [
+      { firmSlug: "index-ventures", role: "Investment professional, Geneva office", startYear: 2003, endYear: 2006 }
+    ],
+    boardSeats: [
+      "GlycoEra",
+      "T-Therapeutics",
+      "Enthera",
+      "HotSpot Therapeutics",
+      "Mission Therapeutics"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2001, event: "Started his venture capital career at Sofinnova Partners." },
+      { year: 2003, event: "Moved to Index Ventures in Geneva, where he worked until 2006." },
+      { year: 2006, event: "Rejoined Sofinnova Partners as a member of the Sofinnova Capital Strategy investment team." },
+      { year: 2015, event: "Established BiovelocITA, Italy's first biotech accelerator." },
+      { year: 2017, event: "Was appointed Managing Partner of Sofinnova Partners." },
+      { year: 2018, event: "Established the Sofinnova Telethon Fund." }
+    ],
+    biography: "Graziano Seghezzi is a Managing Partner of Sofinnova Partners, which he joined in 2006 and where he is an active member of the Sofinnova Capital Strategy investment team. He began his venture capital career at Sofinnova in 2001 and worked at Index Ventures in Geneva from 2003 to 2006, after five years of academic research in oncology and cardiovascular disease at New York University's School of Medicine. He was appointed Managing Partner in 2017 and established BiovelocITA, Italy's first biotech accelerator, in 2015 and the Sofinnova Telethon Fund in 2018. He serves on the boards of GlycoEra, T-Therapeutics, Enthera, HotSpot Therapeutics and Mission Therapeutics.",
+    notableInvestments: [
+      { name: "GlycoEra", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "targeted protein degradation", role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/team/graziano-seghezzi", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "T-Therapeutics", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "T cell receptor therapeutics", role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/team/graziano-seghezzi", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Enthera", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/team/graziano-seghezzi", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "HotSpot Therapeutics", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "allosteric drug discovery", role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/team/graziano-seghezzi", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Mission Therapeutics", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "deubiquitinating enzyme inhibitors", role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/team/graziano-seghezzi", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Mablink", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "antibody-drug conjugates", role: null, evidence: [
+        { url: "https://sofinnovapartners.com/team/graziano-seghezzi", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Corvidia Therapeutics", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "cardio-renal disease", role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/news/graziano-seghezzi-appointed-managing-partner-of-sofinnova-partners", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "GlycoVaxyn", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "bioconjugate vaccines", role: null, evidence: [
+        { url: "https://sofinnovapartners.com/team/graziano-seghezzi", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Omthera Pharmaceuticals", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/news/graziano-seghezzi-appointed-managing-partner-of-sofinnova-partners", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "HOOKIPA Pharma", ticker: null, stage: null, year: 2019, yearPrecision: "year", sector: "Biotech", subsector: "arenavirus immunotherapeutics", role: "board", evidence: [
+        { url: "https://efts.sec.gov/LATEST/search-index?q=%22Graziano+Seghezzi%22", type: "regulatory", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Sofinnova Partners - Graziano Seghezzi", url: "https://sofinnovapartners.com/team/graziano-seghezzi" },
+      { label: "Sofinnova Partners - Graziano Seghezzi appointed Managing Partner", url: "https://sofinnovapartners.com/news/graziano-seghezzi-appointed-managing-partner-of-sofinnova-partners" }
+    ]
+  },
+  "denis-lucquin": {
+    name: "Denis Lucquin",
+    firm: "Sofinnova Partners",
+    firmSlug: "sofinnova-partners",
+    title: "Managing Partner Emeritus",
+    joinedYear: 1991,
+    departedYear: 2026,
+    departedNote: "Died 3 April 2026 at age 69. Sofinnova Partners' own team page lists him as Managing Partner Emeritus and states he was Chairman until 2017 and Managing Partner until 2021; the firm published a memorial notice for him. Profile reflects his past roles, not a current one.",
+    investmentFocus: [
+      "Biotech",
+      "Healthcare"
+    ],
+    education: [
+      "Engineering degree, Ecole Polytechnique",
+      "Ecole du Genie Rural des Eaux et Forets",
+      "Innovation Management, Universite de Paris-Dauphine"
+    ],
+    previousExperience: [
+      "Director of investments, Innolion (Credit Lyonnais)",
+      "Head of the technology transfer department, Institut National de la Recherche Agronomique (INRA)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1989, event: "Became director of investments at Innolion, the venture arm of Credit Lyonnais." },
+      { year: 1991, event: "Joined Sofinnova Partners." },
+      { year: 1997, event: "Co-founded France Biotech to support France's emerging biotech sector." },
+      { year: 2017, event: "Stepped down as Chairman of Sofinnova Partners." },
+      { year: 2021, event: "Stepped down as Managing Partner of Sofinnova Partners, becoming Managing Partner Emeritus." },
+      { year: 2026, event: "Died on 3 April at age 69." }
+    ],
+    biography: "Denis Lucquin joined Sofinnova Partners in 1991 and spent more than three decades at the firm, serving as its Chairman until 2017 and as a Managing Partner until 2021, after which the firm's site listed him as Managing Partner Emeritus. Before Sofinnova he headed the technology transfer department at INRA and in 1989 became director of investments at Innolion, the venture arm of Credit Lyonnais. He was the principal architect of Sofinnova's industrial biotechnology strategy and, according to BioCentury, invested in 31 biotech companies including Ablynx, Nicox and Novexel. He co-founded France Biotech in 1997 and died on 3 April 2026 at the age of 69.",
+    notableInvestments: [
+      { name: "BioAmber", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "industrial biotechnology", role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/team/denis-lucquin", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Avantium", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "renewable chemistry", role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/team/denis-lucquin", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Biotalys", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Agtech", subsector: "protein-based crop protection", role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/team/denis-lucquin", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Green Biologics", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "industrial biotechnology", role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/team/denis-lucquin", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Microphyt", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "microalgae-based ingredients", role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/team/denis-lucquin", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Micropep", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Agtech", subsector: "micropeptide crop solutions", role: "board", evidence: [
+        { url: "https://sofinnovapartners.com/team/denis-lucquin", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Ablynx", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "nanobodies", role: null, evidence: [
+        { url: "https://www.biocentury.com/article/659116/remembering-sofinnova-s-denis-lucquin-father-of-french-biotech", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Nicox", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: null, evidence: [
+        { url: "https://www.biocentury.com/article/659116/remembering-sofinnova-s-denis-lucquin-father-of-french-biotech", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Novexel", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "antibiotics", role: null, evidence: [
+        { url: "https://www.biocentury.com/article/659116/remembering-sofinnova-s-denis-lucquin-father-of-french-biotech", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Innate Pharma", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "immuno-oncology", role: null, evidence: [
+        { url: "https://sofinnovapartners.com/team/denis-lucquin", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Sofinnova Partners - Denis Lucquin", url: "https://sofinnovapartners.com/team/denis-lucquin" },
+      { label: "Sofinnova Partners - In memory of Denis Lucquin, Sofinnova chairman", url: "https://sofinnovapartners.com/news/in-memory-of-denis-lucquin" },
+      { label: "BioCentury - Remembering Sofinnova's Denis Lucquin, father of French biotech", url: "https://www.biocentury.com/article/659116/remembering-sofinnova-s-denis-lucquin-father-of-french-biotech" }
+    ]
+  },
+  "stuart-moldaw": {
+    name: "Stuart Moldaw",
+    firm: "U.S. Venture Partners",
+    firmSlug: "us-venture-partners",
+    title: "Co-Founder",
+    joinedYear: 1981,
+    departedYear: 2008,
+    departedNote: "Died May 24, 2008 at age 81; this profile reflects his founding role at U.S. Venture Partners, not a current one.",
+    investmentFocus: [
+      "Consumer"
+    ],
+    education: [
+      "Marketing and economics, Syracuse University"
+    ],
+    previousExperience: [
+      "Le Bon Marche department store, Massachusetts",
+      "District manager, Lerner Shops",
+      "Founder, Country Casuals",
+      "Founder, Pic-A-Dilly",
+      "Founder, Athletic Shoe Factory",
+      "Founder and Chairman of the Board, Ross Stores",
+      "Founding investor and Chairman Emeritus, The Gymboree Corporation",
+      "Chief Executive Officer, The Gymboree Corporation"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1958, event: "Opened Country Casuals in Palo Alto." },
+      { year: 1973, event: "Founded the off-price apparel chain Pic-A-Dilly." },
+      { year: 1981, event: "Co-founded U.S. Venture Partners in Menlo Park." },
+      { year: 1982, event: "Founded Ross Dress for Less and served as Chairman of the Board from August 1982 to March 1993." },
+      { year: 1986, event: "Became a founding investor in The Gymboree Corporation, later serving as its Chairman Emeritus." },
+      { year: 2008, event: "Died on May 24 at age 81." }
+    ],
+    biography: "Stuart Moldaw co-founded U.S. Venture Partners in Menlo Park in 1981 after a retail career that began at a Massachusetts department store and included founding Country Casuals, Pic-A-Dilly and the Athletic Shoe Factory. He founded Ross Dress for Less in 1982 and served as Chairman of its board from August 1982 to March 1993, remaining a director and Chairman Emeritus afterwards. He was also a founding investor in The Gymboree Corporation and served as its Chairman Emeritus and, in 2000, as its chief executive. He died on May 24, 2008 at the age of 81.",
+    notableInvestments: [
+      { name: "Ross Stores", ticker: "ROST", stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "off-price retail", role: "board", evidence: [
+        { url: "https://investors.rossstores.com/news-releases/news-release-details/ross-stores-founder-and-chairman-emeritus-stuart-moldaw-dies-81", type: "press", checked: "2026-08-25" },
+        { url: "https://investors.rossstores.com/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "The Gymboree Corporation", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "children's specialty retail", role: "board", evidence: [
+        { url: "https://investors.rossstores.com/news-releases/news-release-details/ross-stores-founder-and-chairman-emeritus-stuart-moldaw-dies-81", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Ross Stores - Ross Stores Founder and Chairman Emeritus Stuart Moldaw Dies at 81", url: "https://investors.rossstores.com/news-releases/news-release-details/ross-stores-founder-and-chairman-emeritus-stuart-moldaw-dies-81" },
+      { label: "SFGate - Ross Stores founder Stuart Moldaw dies at 81", url: "https://www.sfgate.com/bayarea/article/Ross-Stores-founder-Stuart-Moldaw-dies-at-81-3282781.php" },
+      { label: "WWD - Obituary: Stuart G. Moldaw, Ross Stores Founder", url: "https://wwd.com/fashion-news/fashion-features/obituary-stuart-g-moldaw-ross-stores-founder-1555924/" }
+    ]
+  },
+  "robert-sackman": {
+    name: "Robert Sackman",
+    firm: "U.S. Venture Partners",
+    firmSlug: "us-venture-partners",
+    title: "Co-Founder",
+    joinedYear: 1981,
+    departedYear: null,
+    departedNote: "Named as one of the three founders of U.S. Venture Partners at its 1981 founding, alongside Bill Bowes and Stuart Moldaw. He is not among the six investors listed on USVP's current investment team, and no source located in this research states whether he is retired, living or deceased. No obituary was found and he is not presented here as deceased.",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1981, event: "Co-founded U.S. Venture Partners with Bill Bowes and Stuart Moldaw." }
+    ],
+    biography: "Robert Sackman was one of three founders of U.S. Venture Partners, established in 1981 with Bill Bowes and Stuart Moldaw. He is not listed among the investors on USVP's current investment team, and no primary source located in this research documents his later career or current status.",
+    notableInvestments: [],
+    sources: [
+      { label: "Wikipedia - U.S. Venture Partners", url: "https://en.wikipedia.org/wiki/U.S._Venture_Partners" }
+    ]
+  },
+  "jacques-benkoski": {
+    name: "Jacques Benkoski",
+    firm: "U.S. Venture Partners",
+    firmSlug: "us-venture-partners",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [
+      "Cybersecurity",
+      "Enterprise Software"
+    ],
+    education: [
+      "B.Sc. Computer Engineering, Technion - Israel Institute of Technology",
+      "M.Sc. Computer Engineering, Carnegie Mellon University",
+      "Ph.D. Computer Engineering, Carnegie Mellon University"
+    ],
+    previousExperience: [
+      "IMEC",
+      "IBM",
+      "STMicroelectronics",
+      "Founder of the European subsidiary, Epic Design Technology",
+      "Vice President of European Sales, Synopsys",
+      "Chief Executive Officer, Monterey Design Systems"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Apono",
+      "IONIX"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1999, event: "Became chief executive officer of Monterey Design Systems, a role he held until 2004." },
+      { year: 2013, event: "USVP announced his promotion to Partner." },
+      { year: 2019, event: "Joined Medigate's board after USVP led the company's $15 million Series A." },
+      { year: 2022, event: "Joined IONIX's board after USVP led the company's $27 million Series A." },
+      { year: 2025, event: "Joined Apono's board after USVP led the company's $34 million Series B." }
+    ],
+    biography: "Jacques Benkoski is a General Partner at U.S. Venture Partners, where he leads the firm's Israel practice and invests in cybersecurity and enterprise software. USVP announced his promotion to Partner in 2013, and he was named on the investment teams for USVP XII in 2020 and USVP XIII in 2022. He led USVP's rounds into Medigate in 2019, IONIX in 2022 and Apono in 2025, joining each company's board, and Apono's announcement cites his experience with Trusteer, Medigate and Kenna Security. Before venture capital he worked at IMEC, IBM and STMicroelectronics, founded Epic Design Technology's European subsidiary, ran European sales at Synopsys, and served as chief executive of Monterey Design Systems.",
+    notableInvestments: [
+      { name: "Apono", ticker: null, stage: "Series B", year: 2025, yearPrecision: "year", sector: "Cybersecurity", subsector: "privileged access and identity security", role: "board", evidence: [
+        { url: "https://www.prnewswire.com/il/news-releases/apono-raises-34m-series-b-to-redefine-privileged-access-for-the-agentic-era-302618621.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "IONIX", ticker: null, stage: "Series A", year: 2022, yearPrecision: "year", sector: "Cybersecurity", subsector: "external attack surface management", role: "board", evidence: [
+        { url: "https://www.ionix.io/news-and-events/press-releases/cyberpion-secures-27m-series-a-funding-for-extending-external-attack-surface-management-and-protection/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Medigate", ticker: null, stage: "Series A", year: 2019, yearPrecision: "year", sector: "Cybersecurity", subsector: "medical device cybersecurity", role: "board", evidence: [
+        { url: "https://www.massdevice.com/medical-device-cybersecurity-firm-medigate-raises-15m-in-series-a/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Trusteer", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
+        { url: "https://www.prnewswire.com/il/news-releases/apono-raises-34m-series-b-to-redefine-privileged-access-for-the-agentic-era-302618621.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Kenna Security", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
+        { url: "https://www.prnewswire.com/il/news-releases/apono-raises-34m-series-b-to-redefine-privileged-access-for-the-agentic-era-302618621.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "PR Newswire - Apono Raises $34M Series B (Nov 18, 2025)", url: "https://www.prnewswire.com/il/news-releases/apono-raises-34m-series-b-to-redefine-privileged-access-for-the-agentic-era-302618621.html" },
+      { label: "IONIX - Cyberpion Secures $27M Series A (Mar 30, 2022)", url: "https://www.ionix.io/news-and-events/press-releases/cyberpion-secures-27m-series-a-funding-for-extending-external-attack-surface-management-and-protection/" },
+      { label: "MassDevice - Medigate raises $15m in Series A (Jan 29, 2019)", url: "https://www.massdevice.com/medical-device-cybersecurity-firm-medigate-raises-15m-in-series-a/" },
+      { label: "Business Wire - USVP Promotes Benkoski to Partner (May 30, 2013)", url: "https://www.businesswire.com/news/home/20130530005302/en/2939331/USVP-Promotes-Benkoski-Partner-Bolsters-EIR-Team" },
+      { label: "Business Wire - U.S. Venture Partners Raises $400M Early-Stage Venture Capital Fund (Dec 14, 2022)", url: "https://www.businesswire.com/news/home/20221214005259/en/U.S.-Venture-Partners-Raises-$400M-Early-Stage-Venture-Capital-Fund" },
+      { label: "Silicon Valley Open Doors - Jacques Benkoski speaker bio", url: "https://www.svod.org/jacques-benkoski/" }
+    ]
+  },
+  "rick-lewis": {
+    name: "Rick Lewis",
+    firm: "U.S. Venture Partners",
+    firmSlug: "us-venture-partners",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [
+      "Enterprise Software",
+      "Cybersecurity",
+      "Consumer",
+      "Ecommerce"
+    ],
+    education: [
+      "B.S. Computer Science and Engineering, University of California, Davis",
+      "M.S. Computer Science, University of California, Berkeley",
+      "M.B.A., Harvard Business School"
+    ],
+    previousExperience: [
+      "Software engineering leadership, Autodesk",
+      "Consultant to Disney Imagineering",
+      "Co-founder, Design Variations",
+      "Co-founder, Common Point Technologies",
+      "Sun Microsystems",
+      "Lawrence Livermore National Laboratory",
+      "McKinsey & Company"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Act-On Software",
+      "Darwinium",
+      "Mealogic",
+      "Primary",
+      "Stensul",
+      "Tiny Fish"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2012, event: "USVP announced his promotion to General Partner." },
+      { year: 2020, event: "Named on the investment team for USVP XII, a $340 million early-stage fund." },
+      { year: 2020, event: "Joined Forager's board as USVP led the company's $10 million Series A." },
+      { year: 2022, event: "Named on the investment team for USVP XIII, a $400 million early-stage fund." }
+    ],
+    biography: "Rick Lewis is a General Partner at U.S. Venture Partners, promoted to that role in 2012, and was named on the investment teams for the firm's USVP XII fund in 2020 and USVP XIII fund in 2022. His Kauffman Fellows bio states that he invests in software, covering enterprise SaaS and cybersecurity, and in technology-enabled consumer services across ecommerce and media, and lists current board seats at Act-On Software, Darwinium, Mealogic, Primary, Stensul and Tiny Fish. He led USVP's $10 million Series A into Forager in 2020 and joined that company's board. Before venture capital he held software engineering leadership roles at Autodesk, consulted to Disney Imagineering, co-founded Design Variations and Common Point Technologies, and worked at Sun Microsystems, Lawrence Livermore National Laboratory and McKinsey & Company.",
+    notableInvestments: [
+      { name: "Forager", ticker: null, stage: "Series A", year: 2020, yearPrecision: "year", sector: "Mobility", subsector: "freight and logistics", role: "board", evidence: [
+        { url: "https://talent4boards.com/forager-announces-rick-lewis-to-its-board-along-with-raising-10m-series-a-funding-led-by-usvp/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Act-On Software", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "marketing automation", role: "board", evidence: [
+        { url: "https://www.kauffmanfellows.org/fellows/rick-lewis", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Darwinium", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: "board", evidence: [
+        { url: "https://www.kauffmanfellows.org/fellows/rick-lewis", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Stensul", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: "board", evidence: [
+        { url: "https://www.kauffmanfellows.org/fellows/rick-lewis", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Primary", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: null, role: "board", evidence: [
+        { url: "https://www.kauffmanfellows.org/fellows/rick-lewis", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Tiny Fish", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: "board", evidence: [
+        { url: "https://www.kauffmanfellows.org/fellows/rick-lewis", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Happy Returns", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: null, role: null, evidence: [
+        { url: "https://www.kauffmanfellows.org/fellows/rick-lewis", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "HotelTonight", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
+        { url: "https://www.kauffmanfellows.org/fellows/rick-lewis", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Kauffman Fellows Directory - Rick Lewis", url: "https://www.kauffmanfellows.org/fellows/rick-lewis" },
+      { label: "Business Wire - USVP Promotes Rick Lewis to General Partner (Mar 7, 2012)", url: "https://www.businesswire.com/news/home/20120307006615/en/USVP-Promotes-Rick-Lewis-General-Partner" },
+      { label: "Business Wire - USVP Raises $340M Early-Stage Venture Capital Fund (Feb 3, 2020)", url: "https://www.businesswire.com/news/home/20200203005241/en/USVP-Raises-340M-Early-Stage-Venture-Capital-Fund" },
+      { label: "Business Wire - U.S. Venture Partners Raises $400M Early-Stage Venture Capital Fund (Dec 14, 2022)", url: "https://www.businesswire.com/news/home/20221214005259/en/U.S.-Venture-Partners-Raises-$400M-Early-Stage-Venture-Capital-Fund" },
+      { label: "Talent4Boards - Forager announces Rick Lewis to its Board (2020)", url: "https://talent4boards.com/forager-announces-rick-lewis-to-its-board-along-with-raising-10m-series-a-funding-led-by-usvp/" }
+    ]
+  },
+  "ken-howery": {
+    name: "Ken Howery",
+    firm: "Founders Fund",
+    firmSlug: "founders-fund",
+    title: "Co-Founder",
+    joinedYear: 2005,
+    departedYear: null,
+    departedNote: "Not listed anywhere on the Founders Fund team page (foundersfund.com/our_team) as of August 25, 2026; the page shows Peter Thiel, Napoleon Ta, Trae Stephens, Lauren Gross, Scott Nolan, John Luttig, Matias Van Thienen, Delian Asparouhov, Amin Mirzadegan, Joey Krug, Sean Liu and Ryan Beiermeister as partners. Howery has held United States government posts since 2019: he was sworn in as US Ambassador to Sweden in October 2019 and served until January 2021, was nominated as US Ambassador to the Kingdom of Denmark on December 22, 2024, was confirmed by the Senate in October 2025 and assumed that office on November 5, 2025. He is presented here for his founding role at Founders Fund, not as a currently active investor.",
+    investmentFocus: [],
+    education: [
+      "B.A. Economics, Stanford University (1998)"
+    ],
+    previousExperience: [
+      "Co-founder and first Chief Financial Officer, PayPal (1998-2002)",
+      "Director of Corporate Development, eBay (2002-2003)",
+      "Vice President of Private Equity, Clarium Capital Management",
+      "United States Ambassador to Sweden (2019-2021)",
+      "United States Ambassador to the Kingdom of Denmark (from November 2025)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1998, event: "Co-founded PayPal and served as its first chief financial officer." },
+      { year: 2002, event: "Helped complete PayPal's sale to eBay and moved to eBay as director of corporate development." },
+      { year: 2005, event: "Co-founded Founders Fund with Peter Thiel and Luke Nosek." },
+      { year: 2019, event: "Was sworn in as United States Ambassador to Sweden." },
+      { year: 2021, event: "Concluded his service as United States Ambassador to Sweden." },
+      { year: 2024, event: "Was announced as the nominee for United States Ambassador to the Kingdom of Denmark." },
+      { year: 2025, event: "Assumed office as United States Ambassador to the Kingdom of Denmark on November 5." }
+    ],
+    biography: "Ken Howery co-founded PayPal in 1998 and served as its first chief financial officer until the company's sale to eBay in 2002, after which he spent a year at eBay in corporate development and then joined Peter Thiel's Clarium Capital Management. In 2005 he co-founded Founders Fund with Thiel and Luke Nosek, where published profiles credit him with leading the firm's investments in Facebook, Quantcast, Geni and ZocDoc. He holds an economics degree from Stanford University. He has since served in United States government posts, as Ambassador to Sweden from 2019 to 2021 and as Ambassador to the Kingdom of Denmark from November 2025, and he no longer appears on the Founders Fund team page.",
+    notableInvestments: [
+      { name: "Facebook", ticker: "META", stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
+        { url: "https://www.weforum.org/people/ken-howery/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.forbes.com/profile/ken-howery/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "ZocDoc", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: "doctor-booking service", role: null, evidence: [
+        { url: "https://www.weforum.org/people/ken-howery/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.forbes.com/profile/ken-howery/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Quantcast", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://www.weforum.org/people/ken-howery/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Geni", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
+        { url: "https://www.weforum.org/people/ken-howery/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Zenefits", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "HR software", role: null, evidence: [
+        { url: "https://www.forbes.com/profile/ken-howery/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Founders Fund - Team page (Howery not listed)", url: "https://foundersfund.com/our_team" },
+      { label: "World Economic Forum - Ken Howery", url: "https://www.weforum.org/people/ken-howery/" },
+      { label: "Forbes - Ken Howery profile", url: "https://www.forbes.com/profile/ken-howery/" },
+      { label: "The American Presidency Project - Statement announcing the nomination of Ken Howery as Ambassador to the Kingdom of Denmark (December 22, 2024)", url: "https://www.presidency.ucsb.edu/documents/statement-president-elect-donald-j-trump-announcing-the-nomination-ken-howery-ambassador" },
+      { label: "Reuters via U.S. News - New US ambassador to Denmark assumes duty (November 5, 2025)", url: "https://www.usnews.com/news/world/articles/2025-11-05/new-us-ambassador-to-denmark-assumes-duty-as-trump-eyes-control-of-greenland" },
+      { label: "Wikipedia - Ken Howery (used only for dated basic biographical facts)", url: "https://en.wikipedia.org/wiki/Ken_Howery" }
+    ]
+  },
+  "luke-nosek": {
+    name: "Luke Nosek",
+    firm: "Founders Fund",
+    firmSlug: "founders-fund",
+    title: "Co-Founder",
+    joinedYear: 2005,
+    departedYear: 2017,
+    departedNote: "Left Founders Fund in July 2017 to launch Gigafund, a separate investment firm he co-founded with former Founders Fund venture partner Stephen Oskoui. He is not listed on the Founders Fund team page as of August 25, 2026. He is presented here for his founding role at Founders Fund, not as a currently active partner of that firm.",
+    investmentFocus: [
+      "Space",
+      "Deep Tech"
+    ],
+    education: [
+      "B.S. Computer Engineering, University of Illinois at Urbana-Champaign (1996)"
+    ],
+    previousExperience: [
+      "Co-founder and Vice President of Marketing and Strategy, PayPal (1998-2002)",
+      "Co-Founder and Partner, Gigafund (from 2017)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "SpaceX",
+      "Last Energy",
+      "ResearchGate",
+      "Luminous Computing"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1998, event: "Co-founded PayPal, where he was vice president of marketing and strategy and created the Instant Transfer product." },
+      { year: 2005, event: "Co-founded Founders Fund with Peter Thiel and Ken Howery after PayPal's sale to eBay." },
+      { year: 2008, event: "Led the first venture investment in SpaceX and joined the SpaceX board." },
+      { year: 2017, event: "Left Founders Fund in July and co-founded Gigafund with Stephen Oskoui." }
+    ],
+    biography: "Luke Nosek co-founded PayPal in 1998 and served as vice president of marketing and strategy, where he created the company's Instant Transfer product. After PayPal was sold to eBay he co-founded Founders Fund in 2005 with Peter Thiel and Ken Howery, and in 2008 he led the first venture investment into SpaceX, joining its board and remaining on it since. He left Founders Fund in July 2017 to co-found Gigafund with former Founders Fund venture partner Stephen Oskoui, and he also sits on the boards of Last Energy, ResearchGate and Luminous Computing. He holds a degree in computer engineering from the University of Illinois at Urbana-Champaign.",
+    notableInvestments: [
+      { name: "SpaceX", ticker: null, stage: null, year: 2008, yearPrecision: "year", sector: "Space", subsector: "space launch", role: "board", evidence: [
+        { url: "https://www.gigafund.com/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://milkeninstitute.org/events/global-conference-2019/speakers/luke-nosek", type: "press", checked: "2026-08-25" },
+        { url: "https://www.axios.com/2017/12/15/founders-fund-partner-leaves-to-launch-spacex-focused-fund-1513304489", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "ResearchGate", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: "board", evidence: [
+        { url: "https://www.gigafund.com/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Last Energy", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Climate & Energy", subsector: null, role: "board", evidence: [
+        { url: "https://www.gigafund.com/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Luminous Computing", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Deep Tech", subsector: null, role: "board", evidence: [
+        { url: "https://www.gigafund.com/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Founders Fund - Team page (Nosek not listed)", url: "https://foundersfund.com/our_team" },
+      { label: "Gigafund - Luke Nosek bio", url: "https://www.gigafund.com/" },
+      { label: "Milken Institute - Luke Nosek speaker biography", url: "https://milkeninstitute.org/events/global-conference-2019/speakers/luke-nosek" },
+      { label: "TechCrunch - PayPal co-founder Luke Nosek leaving Founders Fund (July 28, 2017)", url: "https://techcrunch.com/2017/07/28/paypal-co-founder-luke-nosek-leaving-founders-fund-reportedly-for-spacex-focused-fund/" },
+      { label: "Axios - Founders Fund partner leaves to launch SpaceX-focused fund", url: "https://www.axios.com/2017/12/15/founders-fund-partner-leaves-to-launch-spacex-focused-fund-1513304489" },
+      { label: "Wikipedia - Luke Nosek (used only for education and birth-year facts)", url: "https://en.wikipedia.org/wiki/Luke_Nosek" }
+    ]
+  },
+  "jai-das": {
+    name: "Jai Das",
+    firm: "Sapphire Ventures",
+    firmSlug: "sapphire-ventures",
+    title: "President & Partner (Co-Founder)",
+    joinedYear: 2006,
+    investmentFocus: [
+      "AI",
+      "Enterprise Software",
+      "Cybersecurity",
+      "Developer Tools & Infrastructure"
+    ],
+    education: [
+      "B.Sc. Electrical Engineering, Brown University",
+      "MBA, University of Chicago Booth School of Business"
+    ],
+    previousExperience: [
+      "Oracle",
+      "Intel Capital",
+      "Agilent Ventures",
+      "MVC Capital"
+    ],
+    firmHistory: [
+      { firmSlug: "intel-capital", role: null, startYear: null, endYear: null }
+    ],
+    boardSeats: [
+      "Ask Sage",
+      "Rain",
+      "Verbit"
+    ],
+    ipoCount: null,
+    majorExits: 24,
+    careerTimeline: [
+      { year: 2006, event: "Joined Sapphire Ventures as an investor." },
+      { year: 2019, event: "Was promoted from managing director to president of Sapphire Ventures." },
+      { year: 2024, event: "Joined the board of Ask Sage on its $17 million Series A led by Sapphire Ventures." },
+      { year: 2025, event: "Became a board director of Rain on its $58 million Series B led by Sapphire Ventures." }
+    ],
+    biography: "Jai Das is a partner, president and co-founder at Sapphire Ventures, which he joined in 2006 and where he invests in AI and machine learning, data analytics, security, open source, DevOps and crypto companies. His firm bio states that more than fifteen of his investments have gone public and twenty-four have been acquired, naming Netskope, MuleSoft, JFrog, Five9, Nutanix, Alteryx, Square, ExactTarget, Apigee, Box and Sumo Logic among the IPOs. He was promoted to president of the firm in January 2019, having previously been a managing director. He holds an electrical engineering degree from Brown University and an MBA from the University of Chicago Booth School of Business, and worked at Oracle, Intel Capital, Agilent Ventures and MVC Capital before Sapphire.",
+    notableInvestments: [
+      { name: "Ask Sage", ticker: null, stage: "Series A", year: 2024, yearPrecision: "year", sector: "AI", subsector: "generative AI platform for the public sector", role: "board", evidence: [
+        { url: "https://www.asksage.ai/press-release/ask-sage-raises-17-million-series-a-to-expand-generative-ai-platform-for-public-sector/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Rain", ticker: null, stage: "Series B", year: 2025, yearPrecision: "year", sector: "Fintech", subsector: "enterprise stablecoin platform", role: "board", evidence: [
+        { url: "https://fintech.global/2025/08/28/rain-raises-58m-to-scale-enterprise-stablecoin-platform/", type: "press", checked: "2026-08-25" },
+        { url: "https://sapphireventures.com/team/jai-das/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Verbit", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: "board", evidence: [
+        { url: "https://verbit.ai/leadership/jai-das/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Glean", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/team/jai-das/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Cohesity", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/team/jai-das/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Cyera", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/team/jai-das/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Huntress", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/team/jai-das/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Temporal", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/team/jai-das/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "ThoughtSpot", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/team/jai-das/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "DataRobot", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/team/jai-das/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Nutanix", ticker: "NTNX", stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/team/jai-das/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://sapphireventures.com/press/sapphire-ventures-announces-promotion-of-jai-das-to-president/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Box", ticker: "BOX", stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/team/jai-das/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://sapphireventures.com/press/sapphire-ventures-announces-promotion-of-jai-das-to-president/", type: "firm-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Sapphire Ventures - Jai Das", url: "https://sapphireventures.com/team/jai-das/" },
+      { label: "Sapphire Ventures - Announces Promotion of Jai Das to President (January 15, 2019)", url: "https://sapphireventures.com/press/sapphire-ventures-announces-promotion-of-jai-das-to-president/" },
+      { label: "Ask Sage - Raises $17 Million Series A (December 9, 2024)", url: "https://www.asksage.ai/press-release/ask-sage-raises-17-million-series-a-to-expand-generative-ai-platform-for-public-sector/" },
+      { label: "FinTech Global - Rain raises $58m to scale enterprise stablecoin platform (August 28, 2025)", url: "https://fintech.global/2025/08/28/rain-raises-58m-to-scale-enterprise-stablecoin-platform/" },
+      { label: "Verbit - Leadership: Jai Das", url: "https://verbit.ai/leadership/jai-das/" }
+    ]
+  },
+  "cathy-gao": {
+    name: "Cathy Gao",
+    firm: "Sapphire Ventures",
+    firmSlug: "sapphire-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [
+      "AI",
+      "Enterprise Software",
+      "Digital Health"
+    ],
+    education: [
+      "Economics and History, The Wharton School, University of Pennsylvania (summa cum laude)"
+    ],
+    previousExperience: [
+      "TA Associates",
+      "Blackstone",
+      "Gusto (joined at the Series B)",
+      "Investor, AXA Venture Partners"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "EliseAI",
+      "Blue J",
+      "Jeeva AI",
+      "Sword Health",
+      "Medable"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Worked on Sapphire's investments in CircleCI, Gorgias, Medable, Moveworks and UJET." },
+      { year: 2021, event: "Was promoted to partner at Sapphire Ventures, announced in January." }
+    ],
+    biography: "Cathy Gao is a partner at Sapphire Ventures, where her firm bio describes her focus as B2B AI and software, including enterprise AI and health AI. She was promoted to partner in January 2021, after a year in which the firm says she worked on its investments in CircleCI, Gorgias, Medable, Moveworks and UJET. She serves on the boards of EliseAI, Blue J, Jeeva AI, Sword Health and Medable. Before Sapphire she invested at AXA Venture Partners, joined Gusto at its Series B, and began her career at TA Associates and Blackstone after studying economics and history at Wharton.",
+    notableInvestments: [
+      { name: "Medable", ticker: null, stage: null, year: 2020, yearPrecision: "year", sector: "Digital Health", subsector: null, role: "board", evidence: [
+        { url: "https://sapphireventures.com/press/sapphire-ventures-announces-2-new-partners-6-senior-level-promotions-and-3-new-offices/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://sapphireventures.com/team/cathy-gao/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "CircleCI", ticker: null, stage: null, year: 2020, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/press/sapphire-ventures-announces-2-new-partners-6-senior-level-promotions-and-3-new-offices/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Moveworks", ticker: null, stage: null, year: 2020, yearPrecision: "year", sector: "AI", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/press/sapphire-ventures-announces-2-new-partners-6-senior-level-promotions-and-3-new-offices/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://sapphireventures.com/team/cathy-gao/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "UJET", ticker: null, stage: null, year: 2020, yearPrecision: "year", sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/press/sapphire-ventures-announces-2-new-partners-6-senior-level-promotions-and-3-new-offices/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://sapphireventures.com/team/cathy-gao/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Gorgias", ticker: null, stage: null, year: 2020, yearPrecision: "year", sector: "Ecommerce", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/press/sapphire-ventures-announces-2-new-partners-6-senior-level-promotions-and-3-new-offices/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "EliseAI", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: "board", evidence: [
+        { url: "https://sapphireventures.com/team/cathy-gao/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Blue J", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Legal Tech", subsector: null, role: "board", evidence: [
+        { url: "https://sapphireventures.com/team/cathy-gao/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Jeeva AI", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: "board", evidence: [
+        { url: "https://sapphireventures.com/team/cathy-gao/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Sword Health", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: null, role: "board", evidence: [
+        { url: "https://sapphireventures.com/team/cathy-gao/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "CaptivateIQ", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://sapphireventures.com/team/cathy-gao/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Sapphire Ventures - Cathy Gao", url: "https://sapphireventures.com/team/cathy-gao/" },
+      { label: "Sapphire Ventures - Announces 2 New Partners, 6 Senior-Level Promotions and 3 New Offices (January 26, 2021)", url: "https://sapphireventures.com/press/sapphire-ventures-announces-2-new-partners-6-senior-level-promotions-and-3-new-offices/" }
+    ]
+  },
+  "jake-medwell": {
+    name: "Jake Medwell",
+    firm: "8VC",
+    firmSlug: "8vc",
+    title: "Co-Founder & Partner",
+    joinedYear: 2015,
+    investmentFocus: [
+      "Mobility",
+      "Enterprise Software"
+    ],
+    education: [
+      "University of Southern California, graduated 2011"
+    ],
+    previousExperience: [
+      "Co-founder and board member, The Kairos Society",
+      "Founder, Sole Bicycle Co. (acquired)",
+      "Co-founder, Humin (acquired by IAC)",
+      "Co-founder, BATON (acquired by Ryder System in 2022)",
+      "Co-founder, Terminal Industries",
+      "Co-founder, Operation Masks",
+      "Co-founder, Gallatin",
+      "Co-founder, Fabrion",
+      "Lecturer on entrepreneurship and technology, University of Southern California"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "HDVI",
+      "The Kairos Society"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2011, event: "Graduated from the University of Southern California." },
+      { year: 2015, event: "Co-founded 8VC and went on to lead the firm's logistics and transportation practice." },
+      { year: 2022, event: "BATON, the logistics technology company he co-founded, was acquired by Ryder System." },
+      { year: 2023, event: "8VC co-led the $17 million seed round of Terminal Industries, the yard-operations AI company he co-founded." },
+      { year: 2025, event: "Joined the board of directors of HDVI as part of its $40 million financing." }
+    ],
+    biography: "Jake Medwell is a co-founder of 8VC and leads the firm's logistics and transportation practice from Austin, Texas. Before and alongside 8VC he co-founded a series of companies, including Sole Bicycle Co. while in college, the consumer mobile software company Humin, the logistics technology company BATON that Ryder System acquired in 2022, and the supply chain and yard management company Terminal Industries. He also co-founded The Kairos Society, where he sits on the board of directors, and co-founded Operation Masks with his 8VC partner Drew Oetting to supply PPE during the COVID-19 pandemic. He graduated from the University of Southern California in 2011 and has lectured there on entrepreneurship and technology.",
+    notableInvestments: [
+      { name: "HDVI", ticker: null, stage: null, year: 2025, yearPrecision: "year", sector: "Fintech", subsector: "telematics-driven trucking insurance", role: "board", evidence: [
+        { url: "https://www.freightwaves.com/news/hdvi-secures-40m-for-data-driven-trucking-insurance", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://fintech.global/2025/02/13/high-definition-vehicle-insurance-secures-40m-to-expand-telematics-driven-trucking-insurance/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Terminal Industries", ticker: null, stage: "Seed", year: 2023, yearPrecision: "year", sector: "Mobility", subsector: "AI for yard operations", role: null, evidence: [
+        { url: "https://www.businesswire.com/news/home/20230720914506/en/Terminal-Industries-Emerges-from-Stealth-Announces-$17M-Seed-Round-to-Bring-AI-to-Yard-Operations-Globally", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://8vc.com/team/jake-medwell", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "8VC - Jake Medwell", url: "https://8vc.com/team/jake-medwell" },
+      { label: "FreightWaves - HDVI secures $40M for data-driven trucking insurance (February 12, 2025)", url: "https://www.freightwaves.com/news/hdvi-secures-40m-for-data-driven-trucking-insurance" },
+      { label: "FinTech Global - HDVI secures $40m (February 13, 2025)", url: "https://fintech.global/2025/02/13/high-definition-vehicle-insurance-secures-40m-to-expand-telematics-driven-trucking-insurance/" },
+      { label: "Business Wire - Terminal Industries Emerges from Stealth with $17M Seed Round (July 20, 2023)", url: "https://www.businesswire.com/news/home/20230720914506/en/Terminal-Industries-Emerges-from-Stealth-Announces-$17M-Seed-Round-to-Bring-AI-to-Yard-Operations-Globally" },
+      { label: "FreightWaves - 8VC raises $998M with a focus on reshaping logistics (March 5, 2025)", url: "https://www.freightwaves.com/news/8vc-raises-998m-in-new-funding-with-a-focus-on-reshaping-logistics" },
+      { label: "Wikipedia - Jake Medwell (used only for the 8VC founding year)", url: "https://en.wikipedia.org/wiki/Jake_Medwell" }
+    ]
+  },
+  "drew-oetting": {
+    name: "Drew Oetting",
+    firm: "8VC",
+    firmSlug: "8vc",
+    title: "Co-Founder & Partner",
+    joinedYear: 2015,
+    investmentFocus: [
+      "Enterprise Software",
+      "Healthcare",
+      "Biotech"
+    ],
+    education: [
+      "Degrees in Mathematics and Economics, Claremont McKenna College"
+    ],
+    previousExperience: [
+      "Chief of Staff to Joe Lonsdale",
+      "Partner, Formation 8"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Affinity"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Served as Chief of Staff to Joe Lonsdale and then as a partner at Formation 8." },
+      { year: 2015, event: "Co-founded 8VC." },
+      { year: null, event: "Co-founded more than a dozen companies through the 8VC Build program, including Resilience, Saronic, Epirus, Affinity, Opto and Harbor Health." },
+      { year: 2020, event: "Co-founded Operation Masks with 8VC partner Jake Medwell to supply PPE to medical workers during the COVID-19 pandemic." }
+    ],
+    biography: "Drew Oetting is a founding partner of 8VC, where his bio says he invests across stages and sectors including vertical software, health delivery and biomanufacturing. Through the firm's 8VC Build program he has co-founded more than a dozen companies, among them Resilience, Saronic, Epirus, Affinity, Opto and Harbor Health, and he is a founding board director of Affinity. Before 8VC he was a partner at Formation 8 and Chief of Staff to Joe Lonsdale. He holds degrees in mathematics and economics from Claremont McKenna College and is based in Austin, Texas.",
+    notableInvestments: [
+      { name: "Affinity", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "co-founded through the 8VC Build program", role: "board", evidence: [
+        { url: "https://8vc.com/team/drew-oetting", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Resilience", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "co-founded through the 8VC Build program", role: null, evidence: [
+        { url: "https://8vc.com/team/drew-oetting", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Saronic", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Defense Tech", subsector: "co-founded through the 8VC Build program", role: null, evidence: [
+        { url: "https://8vc.com/team/drew-oetting", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Epirus", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Defense Tech", subsector: "co-founded through the 8VC Build program", role: null, evidence: [
+        { url: "https://8vc.com/team/drew-oetting", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Opto", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "co-founded through the 8VC Build program", role: null, evidence: [
+        { url: "https://8vc.com/team/drew-oetting", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Harbor Health", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Healthcare", subsector: "co-founded through the 8VC Build program", role: null, evidence: [
+        { url: "https://8vc.com/team/drew-oetting", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "8VC - Drew Oetting", url: "https://8vc.com/team/drew-oetting" },
+      { label: "8VC - Jake Medwell (names Operation Masks co-founded with Drew Oetting)", url: "https://8vc.com/team/jake-medwell" }
+    ]
+  },
+  "henry-phipps-jr": {
+    name: "Henry Phipps Jr.",
+    firm: "Bessemer Venture Partners",
+    firmSlug: "bessemer",
+    title: "Founder (1911, as Bessemer Trust)",
+    joinedYear: null,
+    departedYear: 1930,
+    departedNote: "Died September 22, 1930. Profile reflects his founding role, not a current one.",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Office boy and bookkeeper, Dillworth & Bidwell",
+      "Partner, Bidwell & Phipps",
+      "Partner, Kloman & Phipps",
+      "Partner and second-largest shareholder, Carnegie Steel Company"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1839, event: "Born on September 27 in Philadelphia." },
+      { year: 1865, event: "Borrowed $800 to invest in Andrew Kloman's railroad equipment business, a partnership that moved into steel mills and drew Andrew Carnegie's attention." },
+      { year: 1892, event: "Became a business partner in the Carnegie Steel Company at its founding." },
+      { year: 1901, event: "Held roughly 11 percent of Carnegie Steel stock at the company's sale, having served as Carnegie's finance man for 36 years." },
+      { year: 1905, event: "Founded Phipps Houses, an affordable housing initiative." },
+      { year: 1907, event: "Established the family office that became Bessemer Trust to manage the proceeds of the Carnegie Steel sale." },
+      { year: 1930, event: "Died on September 22." }
+    ],
+    biography: "Henry Phipps Jr. was born in 1839 and left school at 14, working as a jeweler's apprentice and then as an office boy and bookkeeper before taking night courses in accounting. He became Andrew Carnegie's business partner and the second-largest shareholder in the Carnegie Steel Company, handling corporate finance for 36 years and holding about 11 percent of the stock at the company's 1901 sale. He founded Phipps Houses in 1905 and established the family office that became Bessemer Trust to manage his assets, the institution from which Bessemer Venture Partners descends. He died in 1930.",
+    notableInvestments: [],
+    sources: [
+      { label: "Philanthropy Roundtable - Hall of Fame: Henry Phipps Jr.", url: "https://www.philanthropyroundtable.org/hall-of-fame/henry-phipps-jr/" },
+      { label: "Wikipedia - Henry Phipps Jr. (dates and biographical basics only)", url: "https://en.wikipedia.org/wiki/Henry_Phipps_Jr." },
+      { label: "Wikipedia - Bessemer Trust (founding year only)", url: "https://en.wikipedia.org/wiki/Bessemer_Trust" },
+      { label: "Bessemer Venture Partners - About", url: "https://www.bvp.com/about" }
+    ]
+  },
+  "andrew-adams": {
+    name: "Andrew Adams",
+    firm: "Oak HC/FT",
+    firmSlug: "oak-hc-ft",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2014,
+    investmentFocus: [
+      "Healthcare",
+      "Digital Health"
+    ],
+    education: [
+      "B.A., Princeton University"
+    ],
+    previousExperience: [
+      "Alex. Brown & Sons"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Akido",
+      "Artis BioSolutions",
+      "August Bioservices",
+      "Curana Health",
+      "DispatchHealth",
+      "Galileo",
+      "Infusion for Health",
+      "Marathon Health",
+      "Medical Home Network",
+      "Remodel Health",
+      "Reveleer",
+      "Rialtic",
+      "Thesis Care",
+      "Trovo Health",
+      "Unified Women's Healthcare"
+    ],
+    ipoCount: 6,
+    majorExits: 35,
+    careerTimeline: [
+      { year: null, event: "Began his career at Alex. Brown & Sons." },
+      { year: 2014, event: "Co-founded Oak HC/FT to invest exclusively in healthcare and fintech companies." },
+      { year: 2024, event: "Joined the board of Trovo Health as Oak HC/FT led its $15 million seed round." },
+      { year: 2024, event: "Was named one of GrowthCap's Top 25 Healthcare Investors of 2024." }
+    ],
+    biography: "Andrew Adams is a co-founder and managing partner of Oak HC/FT, which he co-founded in 2014 to invest exclusively in healthcare and fintech entrepreneurs. His firm bio describes more than 25 years spent investing in healthcare companies, with roughly $10 billion in career assets under management, 35 exits and 6 IPOs. He currently sits on the boards of Akido, Artis BioSolutions, August Bioservices, Curana Health, DispatchHealth, Galileo, Infusion for Health, Marathon Health, Medical Home Network, Remodel Health, Reveleer, Rialtic, Thesis Care, Trovo Health and Unified Women's Healthcare, and remains involved with Noom and Precision Medicine Group. He began his career at Alex. Brown & Sons and holds a Bachelor of Arts degree from Princeton University.",
+    notableInvestments: [
+      { name: "Trovo Health", ticker: null, stage: "Seed", year: 2024, yearPrecision: "year", sector: "Digital Health", subsector: null, role: "board", evidence: [
+        { url: "https://www.businesswire.com/news/home/20240430947713/en/Trovo-Health-Announces-$15-Million-Seed-Funding-Round-Led-by-Oak-HCFT", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.reveleer.com/bios/andrew-w-adams", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Reveleer", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: null, role: "board", evidence: [
+        { url: "https://www.oakhcft.com/team-members/andrew-adams", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.reveleer.com/bios/andrew-w-adams", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "DispatchHealth", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Healthcare", subsector: null, role: "board", evidence: [
+        { url: "https://www.oakhcft.com/team-members/andrew-adams", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Curana Health", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Healthcare", subsector: null, role: "board", evidence: [
+        { url: "https://www.oakhcft.com/team-members/andrew-adams", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Marathon Health", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Healthcare", subsector: null, role: "board", evidence: [
+        { url: "https://www.oakhcft.com/team-members/andrew-adams", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Unified Women's Healthcare", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Healthcare", subsector: null, role: "board", evidence: [
+        { url: "https://www.oakhcft.com/team-members/andrew-adams", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Rialtic", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: null, role: "board", evidence: [
+        { url: "https://www.oakhcft.com/team-members/andrew-adams", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Akido", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: null, role: "board", evidence: [
+        { url: "https://www.oakhcft.com/team-members/andrew-adams", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Artis BioSolutions", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
+        { url: "https://www.oakhcft.com/team-members/andrew-adams", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "August Bioservices", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
+        { url: "https://www.oakhcft.com/team-members/andrew-adams", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Oak HC/FT - Andrew Adams", url: "https://www.oakhcft.com/team-members/andrew-adams" },
+      { label: "Oak HC/FT - Team", url: "https://www.oakhcft.com/team" },
+      { label: "Business Wire - Trovo Health Announces $15 Million Seed Funding Round Led by Oak HC/FT (April 30, 2024)", url: "https://www.businesswire.com/news/home/20240430947713/en/Trovo-Health-Announces-$15-Million-Seed-Funding-Round-Led-by-Oak-HCFT" },
+      { label: "Reveleer - Andrew W. Adams board bio", url: "https://www.reveleer.com/bios/andrew-w-adams" }
+    ]
+  },
 };
