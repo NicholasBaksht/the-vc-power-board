@@ -4,7 +4,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/data-meta.js'
-      - 'scripts/data-partners.js'
+      - 'scripts/data-partners*.js'
       - 'scripts/data-firms.js'
       - 'scripts/utilities.js'
       - 'scripts/powerscore.js'
