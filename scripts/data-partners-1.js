@@ -7677,5 +7677,332 @@ sources: [
       { label: "Forbes Middle East", url: "https://www.forbesmiddleeast.com/lists/the-middle-easts-top-venture-capitalists-2024/dany-farha/" },
       { label: "Entrepreneur - The 100", url: "https://www.entrepreneur.com/en-ae/leadership/the-100-dany-farha-co-founder-and-ceo-beco-capital/484841" }
     ]
+  },
+"sonia-weymuller": {
+    name: "Sonia Weymuller",
+    firm: "VentureSouq",
+    firmSlug: "venturesouq",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2013,
+    education: [],
+    previousExperience: [],
+    investmentFocus: ["Fintech", "Climate Tech", "Enterprise Software"],
+    notableInvestments: [
+      { name: "Tabby", ticker: null },
+      { name: "Substack", ticker: null },
+      { name: "Zoomcar", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 1,
+    majorExits: 9,
+    careerTimeline: [
+      { year: "2013", event: "Co-founds VentureSouq alongside Sonia Gokhale, Suneel Gokhale, and Tammer Qaddumi in Dubai." },
+      { year: "2024", event: "VentureSouq portfolio company Minimum is named to Fast Company's Most Innovative Companies list." }
+    ],
+    biography: "Sonia Weymuller co-founded VentureSouq in Dubai in 2013 alongside Sonia Gokhale, Suneel Gokhale, and Tammer Qaddumi, building one of the earliest institutional venture platforms in the GCC at a time when the region's startup ecosystem was still nascent. The firm has since grown into a genuinely global early-stage investor with a distinctly thematic structure, running dedicated funds focused on fintech and climate tech rather than a single generalist vehicle, and has backed more than 300 companies including nine unicorns spanning Substack, Tabby, and Zoomcar. Weymuller has remained a public voice for VentureSouq's climate tech thesis, speaking on panels alongside other regional investors about the opportunity in decarbonization technology across the Gulf.",
+    sources: [
+      { label: "VentureSouq", url: "https://www.venturesouq.com" },
+      { label: "Unicorn Nest", url: "https://unicorn-nest.com/funds/venturesouq/" }
+    ]
+  },
+"rick-heitzmann": {
+    name: "Rick Heitzmann",
+    firm: "FirstMark Capital",
+    firmSlug: "firstmark-capital",
+    title: "Co-Founder & Partner",
+    joinedYear: 2008,
+    education: ["BS, Georgetown University", "MBA, Harvard Business School"],
+    previousExperience: [
+      "Founder, First Advantage (NASDAQ: FADV), sold to First American (NYSE: FAF)"
+    ],
+    investmentFocus: ["Consumer Marketplaces", "Healthcare", "Software", "Gaming"],
+    notableInvestments: [
+      { name: "Pinterest", ticker: "PINS" },
+      { name: "Airbnb", ticker: "ABNB" },
+      { name: "DraftKings", ticker: "DKNG" }
+    ],
+    boardSeats: ["Ro"],
+    ipoCount: 4,
+    majorExits: 2,
+    careerTimeline: [
+      { year: "2000s", event: "Founds First Advantage, growing and selling it to First American." },
+      { year: "2008", event: "Co-founds FirstMark Capital with Amish Jani, spinning out from Pequot Capital Management." },
+      { year: "2010s", event: "Writes Pinterest's seed check and leads early investments in Airbnb, DraftKings, Riot Games, and StubHub." },
+      { year: "2019", event: "Pinterest goes public on the NYSE." },
+      { year: "2020", event: "Airbnb and DraftKings both go public; co-organizes a $360 million SPAC with Amish Jani." }
+    ],
+    biography: "Rick Heitzmann founded First Advantage before selling it to First American, giving him real operating and public-company experience before co-founding FirstMark Capital with Amish Jani in 2008 as a spinoff from Pequot Capital Management. The two built the firm around a specific conviction that New York, not just Silicon Valley, would become a dominant global hub for technology startups - a bet that looked contrarian in 2008 and has since been repeatedly validated. Heitzmann personally wrote Pinterest's seed check years before its 2019 IPO, and led early investments in Airbnb, DraftKings, Riot Games, and StubHub, earning him five consecutive years on the Forbes Midas List. He remains a regular contributor on CNBC discussing tech and IPO markets, and continues to advise founders and executives across FirstMark's portfolio.",
+    sources: [
+      { label: "FirstMark - Rick Heitzmann", url: "https://firstmark.com/team/rick-heitzmann/" },
+      { label: "Wikipedia - FirstMark Capital", url: "https://en.wikipedia.org/wiki/FirstMark_Capital" }
+    ]
+  },
+"chamath-palihapitiya": {
+    name: "Chamath Palihapitiya",
+    firm: "Social Capital",
+    firmSlug: "social-capital",
+    title: "Founder & CEO",
+    joinedYear: 2011,
+    education: ["BASc, Electrical Engineering, University of Waterloo"],
+    previousExperience: [
+      "Youngest Vice President in company history, AOL",
+      "Venture Investor, Mayfield",
+      "VP of User Growth, Platform & Mobile, Facebook (2007-2011, grew platform from 50M to 1B+ users)"
+    ],
+    investmentFocus: ["AI", "Blockchain", "Healthcare", "Space Technology", "Climate"],
+    notableInvestments: [
+      { name: "Slack", ticker: null },
+      { name: "Box", ticker: "BOX" },
+      { name: "Virgin Galactic", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 3,
+    majorExits: 3,
+    careerTimeline: [
+      { year: "2007", event: "Joins Facebook, leading Growth, Platform, and Mobile teams and scaling the platform past one billion users." },
+      { year: "2011", event: "Leaves Facebook to found Social Capital (initially Social+Capital Partnership) with $60 million of his own money." },
+      { year: "2018", event: "Restructures Social Capital into a single-GP family office model, stopping outside capital and becoming the firm's sole investing partner." },
+      { year: "2019", event: "Slack, one of his signature bets, goes public on the NYSE." },
+      { year: "2021", event: "Salesforce acquires Slack for more than $27 billion; co-launches the All-In Podcast." },
+      { year: "2025", event: "Reports Social Capital manages $2.147 billion in his June annual letter." }
+    ],
+    biography: "Chamath Palihapitiya emigrated from Sri Lanka to Canada as a child, growing up in poverty before earning an electrical engineering degree from the University of Waterloo. He became the youngest Vice President in AOL's history, briefly worked as an investor at Mayfield, then joined Facebook in 2007, leading its Growth, Platform, and Mobile teams as the company scaled past a billion users. He left in 2011 to found Social Capital with $60 million of his own capital, backing Slack, Box, Yammer, and Virgin Galactic through its early years as a traditional venture fund. In 2018 he restructured the firm entirely, closing it to outside capital and becoming its sole investing partner - a 'technology Berkshire Hathaway' model funded by his own balance sheet, which he reported at $2.147 billion in his 2025 annual letter. Palihapitiya became one of the most prominent faces of the 2020-2021 SPAC boom, earned the nickname 'SPAC King,' co-hosts the widely-followed All-In Podcast, and was formerly a minority owner of the Golden State Warriors before selling his stake in 2022 for roughly $520 million.",
+    sources: [
+      { label: "Wikipedia - Chamath Palihapitiya", url: "https://en.wikipedia.org/wiki/Chamath_Palihapitiya" },
+      { label: "All-In Podcast", url: "https://allin.com/about/chamath-palihapitiya" }
+    ]
+  },
+"raj-shah": {
+    name: "Raj Shah",
+    firm: "Shield Capital",
+    firmSlug: "shield-capital",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2021,
+    education: [],
+    previousExperience: [
+      "F-16 Fighter Pilot, U.S. Air Force",
+      "Director of Strategy, Palo Alto Networks",
+      "Managing Director, Defense Innovation Unit (DIU), U.S. Department of Defense (under both Obama and Trump administrations)"
+    ],
+    investmentFocus: ["AI", "Autonomy", "Cybersecurity", "Space", "Dual-Use Defense Technology"],
+    notableInvestments: [
+      { name: "HawkEye 360", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2000s", event: "Serves as an F-16 fighter pilot in the U.S. Air Force." },
+      { year: "2010s", event: "Serves as Director of Strategy at Palo Alto Networks, working at the intersection of commercial cybersecurity and government needs." },
+      { year: "2016", event: "Becomes Managing Director of the Defense Innovation Unit, leading the Pentagon's flagship innovation organization across both the Obama and Trump administrations." },
+      { year: "2015", event: "Begins planning Shield Capital with Philip Bilden, initially focused on cybersecurity seed investments." },
+      { year: "2021", event: "Formally launches Shield Capital with Bilden." },
+      { year: "2022", event: "Closes Fund I oversubscribed at $186 million, 55% above target." }
+    ],
+    biography: "Raj Shah's path to venture capital ran directly through the cockpit and the Pentagon - an F-16 fighter pilot who later became Director of Strategy at Palo Alto Networks before being named Managing Director of the Defense Innovation Unit, the Pentagon's flagship technology innovation organization, serving across both the Obama and Trump administrations. That firsthand experience bridging Silicon Valley product cycles and Pentagon procurement bureaucracy became the direct thesis behind Shield Capital, which he began planning with Philip Bilden in 2015 and formally launched in 2021. Shah has argued publicly that startups able to serve both commercial and national-security customers will structurally outperform single-market competitors, and Shield's oversubscribed $186 million debut fund - closed 55% above target with commitments from endowments, pension funds, and insurance companies - reflects growing institutional conviction in that dual-use thesis.",
+    sources: [
+      { label: "Shield Capital Team", url: "https://shieldcap.com/team" },
+      { label: "Axios", url: "https://www.axios.com/2022/03/16/national-security-focused-vc-firm-raises-125-million" }
+    ]
+  },
+"iyinoluwa-aboyeji": {
+    name: "Iyinoluwa Aboyeji",
+    firm: "Future Africa",
+    firmSlug: "future-africa",
+    title: "Founder & General Partner",
+    joinedYear: 2019,
+    education: ["BA, Legal Studies, University of Waterloo"],
+    previousExperience: [
+      "Co-Founder, Andela (billion-dollar African engineering talent network)",
+      "Founding CEO, Flutterwave (2016-2018, processed $2B+ across 50M+ transactions)",
+      "Deputy Director-General, Oby Ezekwesili 2019 Presidential Campaign"
+    ],
+    investmentFocus: ["Fintech", "Healthtech", "Edtech", "Climate", "Logistics"],
+    notableInvestments: [
+      { name: "Eden Life", ticker: null },
+      { name: "EmPawa Africa", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2014", event: "Co-founds Andela, which grows into Africa's largest engineering organization, backed by the Chan Zuckerberg Initiative, Google Ventures, and SoftBank." },
+      { year: "2016", event: "Co-founds Flutterwave, becoming its founding CEO." },
+      { year: "2018", event: "Steps down as Flutterwave CEO in October, after growing it into one of the fastest-growing payments companies of all time." },
+      { year: "2019", event: "Founds Future Africa in March, formalizing investment activity he'd been planning since 2015." },
+      { year: "2021", event: "Flutterwave reaches unicorn status, raising $170 million at a valuation over $1 billion." },
+      { year: "2022", event: "Co-founds Itana (formerly Talent City), a digital free zone project in Lagos." },
+      { year: "2024", event: "Future Africa's portfolio reaches 100 companies with a collective value exceeding $6 billion." }
+    ],
+    biography: "Iyinoluwa Aboyeji co-founded two of Africa's first true unicorns before he ever became an investor - Andela, the continent's largest engineering talent organization, backed by the Chan Zuckerberg Initiative, Google Ventures, and SoftBank, and Flutterwave, the payments company he led as founding CEO through explosive early growth, processing more than $2 billion across 50 million transactions before stepping down in 2018. He founded Future Africa in March 2019, formalizing investment activity he'd been planning since 2015, built specifically to provide capital, coaching, and community to mission-driven African founders rather than capital alone. Describing himself as a faith-driven investor, Aboyeji has grown Future Africa into Africa's largest seed-stage investment platform, with a portfolio of more than 100 companies collectively valued above $6 billion, while continuing to build directly - co-founding Itana, a digital free zone project in Lagos, in 2022.",
+    sources: [
+      { label: "Wikipedia - Iyinoluwa Aboyeji", url: "https://en.wikipedia.org/wiki/Iyinoluwa_Aboyeji" },
+      { label: "Future Africa - About Us", url: "https://www.future.africa/about-us" }
+    ]
+  },
+"andrew-carruthers": {
+    name: "Andrew Carruthers",
+    firm: "Novastar Ventures",
+    firmSlug: "novastar-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2014,
+    education: ["BSc, London School of Economics"],
+    previousExperience: [
+      "Chartered Accountant, KPMG",
+      "Fund Manager, launched first fund on the London Stock Exchange (1999), managing 12 funds across Europe, India & China over 15 years",
+      "Emerging markets investor, South Africa (2009)"
+    ],
+    investmentFocus: ["Mass-Market Consumer", "Climate & Energy", "Agriculture", "Healthcare"],
+    notableInvestments: [
+      { name: "Bridge International Academies", ticker: null },
+      { name: "Sanergy", ticker: null },
+      { name: "mPharma", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "1996", event: "Begins his investment career during the dot-com era." },
+      { year: "1999", event: "Launches his first fund on the London Stock Exchange." },
+      { year: "2009", event: "Begins applying venture capital techniques to emerging markets, starting in South Africa." },
+      { year: "2014", event: "Co-founds Novastar Ventures with Steve Beck, raising the firm's first East Africa Fund." },
+      { year: "2020", event: "Leads the close of Africa Fund II, anchored by the European Investment Bank and British International Investment." },
+      { year: "2026", event: "Closes the Africa People and Planet Fund III at $147 million in early 2026, Novastar's first pan-African vehicle." }
+    ],
+    biography: "Andrew Carruthers built two decades of fund management experience in Europe, India, and China - launching his first fund on the London Stock Exchange in 1999 and managing 12 more over 15 years - before turning his attention to emerging markets in 2009. Born in Lesotho and raised partly in Ethiopia and Kenya, he co-founded Novastar Ventures with Steve Beck in 2014, applying his fund-management discipline to a specific mass-market thesis: that venture capital could profitably serve East and West Africa's largest underserved consumer needs, not just a narrow tech elite. That philosophy backed early bets on Bridge International Academies, Sanergy, mPharma, and SolarNow, and Carruthers has grown Novastar into one of Africa's largest and most established dedicated venture firms, with roughly $260 million under management across three funds, including a new pan-African vehicle that closed at $147 million in early 2026.",
+    sources: [
+      { label: "Novastar Ventures Team", url: "https://www.novastarventures.com/team/" },
+      { label: "The Org - Andrew Carruthers", url: "https://theorg.com/org/novastar-ventures/org-chart/andrew-carruthers" }
+    ]
+  },
+"mike-mompi": {
+    name: "Mike Mompi",
+    firm: "Enza Capital",
+    firmSlug: "enza-capital",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2019,
+    education: ["BA, Economics & Communications, University of California, Davis"],
+    previousExperience: [
+      "Co-Founder, London-based fintech startup",
+      "Built ClearlySo, a UK impact investment bank that raised more than $250 million for socially responsible businesses"
+    ],
+    investmentFocus: ["Fintech", "Logistics", "Healthcare", "Human Capital", "Climate Tech"],
+    notableInvestments: [
+      { name: "Djamo", ticker: null },
+      { name: "Turaco", ticker: null },
+      { name: "SeamlessHR", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2010s", event: "Co-founds a London-based fintech startup, then helps build ClearlySo, a UK impact investment bank that raises more than $250 million." },
+      { year: "2019", event: "Co-founds Enza Capital in Nairobi, launching an early-stage fund focused on pre-seed and seed African tech startups." },
+      { year: "2023", event: "Closes Fund II, bringing total AUM to $58 million across 48 investments in 31 companies; launches the Founder Partner Program, allocating 10% of the firm's ownership to founders." }
+    ],
+    biography: "Mike Mompi was born to a Ghanaian father and Slovak mother and raised in California, earning degrees in Economics and Communications from UC Davis before a career spanning entrepreneurship, public equity investing, and impact finance across four continents. He co-founded a fintech startup in London and helped build ClearlySo, a UK impact investment bank that raised more than $250 million for socially responsible businesses, before co-founding Enza Capital in Nairobi in 2019. Mompi built the firm around a specific thesis - back technology companies that 'organize the offline, digitize key industries, and redefine African life' - and introduced a genuinely distinctive Founder Partner Program in 2023 that allocates 10% of Enza Capital's own ownership to the founders it backs, aiming to align incentives beyond the traditional investor-founder relationship. Under his leadership, Enza has invested in more than 30 companies across eight African markets, spanning fintech, logistics, healthcare, human capital, and climate-smart sectors.",
+    sources: [
+      { label: "TechCrunch", url: "https://techcrunch.com/2023/09/28/african-vc-firm-enza-capital-launches-founder-partner-program-as-it-closes-funds-at-58m" },
+      { label: "Empower Africa", url: "https://empowerafrica.com/fatimatou-ousmanou-samba-is-helping-the-african-diaspora-send-money-home-easily-copy/" }
+    ]
+  },
+"amar-inamdar": {
+    name: "Amar Inamdar",
+    firm: "KawiSafi Ventures",
+    firmSlug: "kawisafi-ventures",
+    title: "Managing Director",
+    joinedYear: 2017,
+    education: [],
+    previousExperience: [
+      "Managed a global investment portfolio, International Finance Corporation (IFC)",
+      "25+ years of private sector experience building markets and businesses in emerging economies"
+    ],
+    investmentFocus: ["Off-Grid Solar", "Climate Tech", "Renewable Energy Access"],
+    notableInvestments: [
+      { name: "BBOXX", ticker: null },
+      { name: "d.light", ticker: null },
+      { name: "Sistema.bio", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "1990s", event: "Begins a 25-plus-year career as an investor, scientist, and entrepreneur across East Africa's emerging markets." },
+      { year: "2010s", event: "Manages a global investment portfolio at the International Finance Corporation before joining KawiSafi." },
+      { year: "2017", event: "Becomes Managing Director of KawiSafi Ventures as the fund launches with initial investors." },
+      { year: "2019", event: "Leads KawiSafi to a nearly $70 million close in April, through Acumen's for-profit subsidiary Acumen Capital Partners." }
+    ],
+    biography: "Amar Inamdar built more than 25 years of private sector experience as an investor, scientist, and entrepreneur across East Africa's emerging markets before managing a global investment portfolio at the International Finance Corporation. He became Managing Director of KawiSafi Ventures as the fund launched in 2017, leading it to a nearly $70 million close in 2019 through Acumen Capital Partners - the for-profit investment subsidiary of Acumen, the internationally recognized impact investing nonprofit that created and developed the fund. Inamdar has been outspoken about the need for greater transparency in Africa's energy sector, arguing that differentiated pools of patient, catalytic capital are essential as off-grid solar companies mature from early-stage grants into commercially scalable businesses, and he sits on the boards of several of KawiSafi's portfolio companies.",
+    sources: [
+      { label: "NextBillion", url: "https://nextbillion.net/africa-energy-sector-kawisafi-ventures/" },
+      { label: "KawiSafi Ventures Fund Team", url: "https://www.kawisafi.com/fund" }
+    ]
+  },
+"zachariah-george": {
+    name: "Zachariah George",
+    firm: "Launch Africa Ventures",
+    firmSlug: "launch-africa-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2020,
+    education: [],
+    previousExperience: [
+      "M&A, Lehman Brothers",
+      "M&A, Barclays (nearly a decade on Wall Street)",
+      "Founder, Tech Lab Africa accelerator (with Barclays, later sold to Techstars)",
+      "Co-Founder & Chief Investment Officer, Startupbootcamp AfriTech",
+      "Angel Investor (50+ African startups, including Flutterwave, KudaBank, Mono, Yoco)"
+    ],
+    investmentFocus: ["Fintech", "Healthtech", "Agritech", "Logistics", "Edtech"],
+    notableInvestments: [
+      { name: "Kuda", ticker: null },
+      { name: "Bitmama", ticker: null },
+      { name: "Mano", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2010", event: "Moves to South Africa during the World Cup after nearly a decade in Wall Street M&A at Lehman Brothers and Barclays, and stays after spotting a gap in the continent's tech ecosystem." },
+      { year: "2010s", event: "Builds the Tech Lab Africa accelerator with Barclays (later sold to Techstars) and co-founds Startupbootcamp AfriTech, becoming an active angel investor in more than 50 African startups." },
+      { year: "2020", event: "Co-founds Launch Africa Ventures with Janade du Plessis, raising an oversubscribed $36 million debut fund from 238 investors across 40 countries." },
+      { year: "2026", event: "Launch Africa completes 15 new investments in the first half of the year, growing its portfolio past 180 startups across 25 countries." }
+    ],
+    biography: "Zachariah George spent nearly a decade in Wall Street M&A at Lehman Brothers and Barclays before a trip to South Africa for the 2010 World Cup turned into a permanent relocation once he recognized how underdeveloped the continent's tech ecosystem was. He built the Tech Lab Africa accelerator with Barclays, later sold to Techstars, and co-founded Startupbootcamp AfriTech, becoming an active angel investor with stakes in more than 50 African startups including Flutterwave, KudaBank, Mono, and Yoco along the way. Recognizing a persistent funding gap for companies emerging from accelerators at the pre-Series A stage, he co-founded Launch Africa Ventures in 2020 with Janade du Plessis, then head of venture capital at Nedbank, raising an oversubscribed $36 million debut fund from 238 retail and institutional investors across 40 countries - notably without a single development finance institution among them. George has since grown Launch Africa into the continent's most active early-stage VC fund, backing more than 180 startups across 25 countries, and has been featured on the covers of Fast Company, Destiny Man, and Forbes.",
+    sources: [
+      { label: "Disrupt Africa", url: "https://disruptafrica.com/2024/11/26/meet-the-investor-zachariah-george-launch-africa-ventures/" },
+      { label: "Launch Africa Ventures", url: "https://www.launchafrica.vc" }
+    ]
+  },
+"kathryn-gould": {
+    name: "Kathryn Gould",
+    departedNote: "Not listed on Foundation Capital's investor page (/team-members/team-investors) as captured 2026-08-22; that page rendered a full roster including Joanne Chen, Ashu Garg and Steve Vassallo. Her entry here reflects her founding role, not a current one.",
+    firm: "Foundation Capital",
+    firmSlug: "foundation-capital",
+    title: "Co-Founder",
+    joinedYear: 1995,
+    education: [],
+    previousExperience: [
+      "General Partner, Merrill Pickard Anderson & Eyre",
+      "One of the first prominent female venture capitalists in Silicon Valley"
+    ],
+    investmentFocus: ["Enterprise Software", "Fintech", "Consumer Internet"],
+    notableInvestments: [
+      { name: "Netflix", ticker: "NFLX" },
+      { name: "LendingClub", ticker: "LC" }
+    ],
+    boardSeats: [],
+    ipoCount: 26,
+    majorExits: 120,
+    careerTimeline: [
+      { year: "1980s", event: "Builds an early venture career at Merrill Pickard Anderson & Eyre, becoming one of the first prominent women in Silicon Valley venture capital." },
+      { year: "1995", event: "Co-founds Foundation Capital with Bill Elmore and Jim Anderson in Palo Alto, in October." },
+      { year: "1990s", event: "Foundation Capital becomes one of Netflix's original investors, years before its public listing." },
+      { year: "2014", event: "LendingClub, another Foundation-backed company, completes its NYSE IPO." }
+    ],
+    biography: "Kathryn Gould built her venture career at Merrill Pickard Anderson & Eyre, becoming one of the first prominent women in Silicon Valley venture capital at a time when the industry was almost entirely male. She co-founded Foundation Capital with Bill Elmore and Jim Anderson in October 1995, built around a distinctive philosophy the firm still describes as seeking out 'zero-billion-dollar markets' - emerging categories that don't yet exist until a visionary founder creates them. That approach made Foundation one of Netflix's original investors years before its public listing, and the firm has gone on to back more than 400 companies including LendingClub, Chegg, Sunrun, and Uber, with 26 IPOs and more than 80 acquisitions across three decades.",
+    sources: [
+      { label: "Wikipedia - Foundation Capital", url: "https://en.wikipedia.org/wiki/Foundation_Capital" },
+      { label: "Foundation Capital", url: "https://foundationcapital.com" }
+    ]
   }
 });
