@@ -1,1244 +1,5 @@
 /* data-partners shard 4 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
-"amanda-stella-birkenholz": {
-    name: "Amanda-Stella Birkenholz",
-    firm: "UVC Partners",
-    firmSlug: "uvc-partners",
-    title: "Principal",
-    joinedYear: null,
-    investmentFocus: ["Deep Tech", "Climate Technology"],
-    education: ["Industrial engineering, RWTH Aachen University"],
-    previousExperience: ["Co-founder, VISN (B2B startup)"],
-    boardSeats: [],
-    notableInvestments: [{ name: "HQS Quantum Simulations", ticker: null }, { name: "STABL Energy", ticker: null }, { name: "DeepDrive", ticker: null }, { name: "planqc", ticker: null }, { name: "Molten Industries", ticker: null }, { name: "Cyclize", ticker: null }, { name: "Radical Dot", ticker: null }, { name: "Certivity", ticker: null }, { name: "Alqem", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Amanda-Stella Birkenholz is a Principal at UVC Partners focused on early-stage deep tech and climate tech. She holds an industrial engineering degree from RWTH Aachen University and co-founded VISN, an award-winning B2B startup, before moving into venture capital. UVC states she serves as a board member or board observer at several portfolio companies, though it does not name them individually; her portfolio attributions are HQS Quantum Simulations, STABL Energy, DeepDrive, planqc, Molten Industries, Cyclize, Radical Dot, Certivity and Alqem. Her professional experience spans Germany, Australia, the UK, Spain and Thailand. She is also the author of 'CHAMP – Jagd auf den Trojaner', a children's book about entrepreneurship and technology. Her joining year is not published, so it is left null.",
-    sources: [{ label: "UVC Partners team page", url: "https://www.uvcpartners.com/our-team" }]
-  },
-"andreas-unseld": {
-    name: "Andreas Unseld",
-    firm: "UVC Partners",
-    firmSlug: "uvc-partners",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["B2B Software", "Deep Tech", "Mobility"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    researchState: "exhausted",
-    researchChecked: "2026-08-24",
-    notableInvestments: [
-    /*
-       Enriched 2026-08-24, 25-partner quality gate. UVC's team page lists all
-       twelve companies against him. Aleph Alpha carries the Series A co-led by
-       UVC; DeepDrive the UVC-led seed. */
-    { name: "Q.ANT", ticker: null,
-      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Enginsight", ticker: null,
-      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Aleph Alpha", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year",
-      evidence: [{ url: "https://www.uvcpartners.com/blog/aleph-alpha-secures-eu23-million-series-a-funding", type: "firm-announcement", checked: "2026-08-23" },
-                  { url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "DeepDrive", ticker: null, stage: "Seed", year: 2022, yearPrecision: "year",
-      evidence: [{ url: "https://www.uvcpartners.com/blog/e-mobility-start-up-deepdrive-raises-over-4-million-euros-and-wins-peter-mertens-as-advisory-board-member", type: "firm-announcement", checked: "2026-08-23" },
-                  { url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Vimcar", ticker: null,
-      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Wire", ticker: null,
-      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "shyftplan", ticker: null,
-      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Hypatos", ticker: null,
-      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Blickfeld", ticker: null,
-      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "paretos", ticker: null,
-      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "GNA Biosolutions", ticker: null,
-      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "kausable", ticker: null,
-      evidence: [{ url: "https://www.uvcpartners.com/our-team", type: "partner-bio", checked: "2026-08-23" }] }
-  ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Andreas Unseld is a Partner at UVC Partners and is described on the firm's team page as a co-founder and General Partner of the firm with over a decade in venture capital. He focuses on B2B software, deep tech and mobility and has guided companies from prototype through to exit. His portfolio attributions include Q.ANT, Enginsight, Aleph Alpha, DeepDrive, Vimcar, Wire, shyftplan, Hypatos, Blickfeld, paretos, GNA Biosolutions and kausable. UVC publishes no education details or joining year for him, so both are left null.",
-    sources: [{ label: "UVC Partners team page", url: "https://www.uvcpartners.com/our-team" }]
-  },
-"benjamin-erhart": {
-    name: "Benjamin Erhart",
-    firm: "UVC Partners",
-    firmSlug: "uvc-partners",
-    title: "Partner",
-    joinedYear: 2017,
-    investmentFocus: ["Deep Tech", "Robotics", "Climate Technology", "Enterprise Software"],
-    education: ["Industrial engineering, Karlsruhe Institute of Technology (KIT)"],
-    previousExperience: ["Investment Director, High-Tech Gründerfonds Management GmbH", "Investment Board member, High-Tech Gründerfonds"],
-    boardSeats: ["Cumulocity GmbH", "Synapticon GmbH", "Compositence GmbH", "Till GmbH", "ZIM Plant Technology GmbH"],
-    notableInvestments: [{ name: "DyeMansion", ticker: null }, { name: "Synera", ticker: null }, { name: "FAZUA", ticker: null }, { name: "HQS Quantum Simulations", ticker: null }, { name: "Tacto", ticker: null }, { name: "TWAICE", ticker: null }, { name: "Fruitcore Robotics", ticker: null }, { name: "planqc", ticker: null }, { name: "Proxima Fusion", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2017, event: "Appointed Partner at UVC Partners, joining from High-Tech Gründerfonds where he led more than 50 venture transactions" }],
-    biography: "Benjamin Erhart joined UVC Partners as Partner in August 2017 from High-Tech Gründerfonds, where he was Investment Director and led more than 50 venture capital transactions and sat on the fund's investment board. He holds an industrial engineering degree from the Karlsruhe Institute of Technology. Before UVC he held board positions at Cumulocity GmbH (acquired by Software AG), Synapticon GmbH, Compositence GmbH (acquired by Quingdao GON Holdings), Till GmbH (acquired by Krones AG) and ZIM Plant Technology GmbH (acquired by Yara ASA). At UVC he leads early-stage investments in deep tech and engineering software with a focus on robotics, quantum technologies and climate tech, and his portfolio attributions include DyeMansion, Synera, FAZUA, HQS Quantum Simulations, Tacto, TWAICE, Fruitcore Robotics, planqc and Proxima Fusion. He also drives the firm's internal tech stack and co-leads its value creation work.",
-    sources: [{ label: "UVC Partners team page", url: "https://www.uvcpartners.com/our-team" }, { label: "UVC Partners announcement of Erhart's appointment", url: "https://www.uvcpartners.com/blog/unternehmertum-venture-capital-partners-appoints-benjamin-erhart-as-partner" }]
-  },
-"ingo-potthof": {
-    name: "Dr. Ingo Potthof",
-    firm: "UVC Partners",
-    firmSlug: "uvc-partners",
-    title: "Managing Partner",
-    joinedYear: 2011,
-    investmentFocus: ["Mobility", "B2B Software", "Deep Tech"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [{ name: "FlixMobility", ticker: null }, { name: "FINN", ticker: null }, { name: "Capmo", ticker: null }, { name: "Orpheus", ticker: null }, { name: "i2x", ticker: null }, { name: "fos4x", ticker: null }, { name: "AMW", ticker: null }, { name: "SorTech", ticker: null }, { name: "Valuedesk", ticker: null }, { name: "BauGPT", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2011, event: "Registered as managing director of the UVC management company at its founding" }, { year: 2024, event: "Announces the EUR 250m close of Fund IV as Managing Partner" }],
-    biography: "Ingo Potthof is a Managing Partner of UVC Partners and one of three registered managing directors of Unternehmertum Venture Capital Partners GmbH; commercial register records show him in that role from the company's 2011 founding. UVC describes him as having more than 25 years in the high-tech industry as a venture capitalist, working with entrepreneurs across Europe, Israel, the US and Asia. His portfolio attributions on the UVC team page include FlixMobility, FINN, Capmo, Orpheus, i2x, fos4x, AMW, SorTech, Valuedesk and BauGPT (formerly Crafthunt). He was the partner quoted on the EUR 250m final close of Fund IV in August 2024 and on its 2026 extension to EUR 400m. No education details are published on the firm site.",
-    sources: [{ label: "UVC Partners team page", url: "https://www.uvcpartners.com/our-team" }, { label: "German Bundestag lobby register entry R004739", url: "https://www.lobbyregister.bundestag.de/suche/R004739" }, { label: "UnternehmerTUM press release on UVC Fund IV", url: "https://www.unternehmertum.de/presse/uvc-partners-sichert-250-millionen-euro-fuer-seinen-fonds-iv" }]
-  },
-"oliver-schoppe": {
-    name: "Dr. Oliver Schoppe",
-    firm: "UVC Partners",
-    firmSlug: "uvc-partners",
-    title: "Partner",
-    joinedYear: 2021,
-    investmentFocus: ["AI", "Enterprise Software", "Digital Health", "Data & Analytics"],
-    education: ["Electrical engineering, neuroscience and computer science/AI at Technische Universität München, Oxford and Harvard/MIT"],
-    previousExperience: ["Leader of an AI research group, Helmholtz Zentrum"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Aleph Alpha", ticker: null }, { name: "Hypatos", ticker: null }, { name: "Patronus", ticker: null }, { name: "reel", ticker: null }, { name: "paretos", ticker: null }, { name: "Rencore", ticker: null }, { name: "Biomatter", ticker: null }, { name: "Sonia", ticker: null }, { name: "Cirql One", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2021, event: "Joins UVC Partners in April, moving from academic AI research into venture capital" }],
-    biography: "Oliver Schoppe is a Partner at UVC Partners, which he joined in April 2021. His academic background spans electrical engineering, neuroscience and computer science/AI at TU Munich, Oxford and Harvard/MIT, and he previously led an AI research group at the Helmholtz Center. At UVC he focuses on artificial intelligence, enterprise SaaS, data-driven business models and digital health, and the firm describes him as a recognised AI expert who is regularly consulted by media and at events. His portfolio attributions include Aleph Alpha, Hypatos, Patronus, reel, paretos, Rencore, Biomatter, Sonia and Cirql One. UVC's team page does not publish board seats for him separately from these portfolio attributions.",
-    sources: [{ label: "UVC Partners team page", url: "https://www.uvcpartners.com/our-team" }]
-  },
-"johannes-von-borries": {
-    name: "Johannes von Borries",
-    firm: "UVC Partners",
-    firmSlug: "uvc-partners",
-    title: "Managing Partner",
-    joinedYear: 2015,
-    investmentFocus: ["Deep Tech", "Climate Technology", "Mobility"],
-    education: ["Industrial engineering, Technische Universität Berlin", "MBA, University of California, Berkeley"],
-    previousExperience: ["Co-founder, Nanda Technologies (semiconductor inspection; exited)"],
-    boardSeats: [],
-    notableInvestments: [{ name: "KONUX", ticker: null }, { name: "Isar Aerospace", ticker: null }, { name: "Lilium", ticker: null }, { name: "Reverion", ticker: null }, { name: "STABL Energy", ticker: null }, { name: "3YOURMIND", ticker: null }, { name: "Molten", ticker: null }, { name: "Metafuels", ticker: null }, { name: "Patronus", ticker: null }, { name: "Innoactive", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2015, event: "Joins UVC Partners, then a four-person team, and is registered as a managing director of the management company" }],
-    biography: "Johannes von Borries is a Managing Partner of UVC Partners and one of three registered managing directors of Unternehmertum Venture Capital Partners GmbH, appearing in the commercial register from 2015. He holds an industrial engineering degree from TU Berlin and an MBA from U.C. Berkeley, and previously co-founded and exited Nanda Technologies, a semiconductor inspection company. UVC credits him with scaling the firm from a four-person team since 2015 and with expertise in scaling hardware-heavy deep tech and climate tech. His portfolio attributions include KONUX, Isar Aerospace, Lilium, Reverion, STABL Energy, 3YOURMIND, Molten, Metafuels, Patronus and Innoactive. He also serves as a Venture Director at UnternehmerTUM Venture Labs.",
-    sources: [{ label: "UVC Partners team page", url: "https://www.uvcpartners.com/our-team" }, { label: "German Bundestag lobby register entry R004739", url: "https://www.lobbyregister.bundestag.de/suche/R004739" }, { label: "UnternehmerTUM press release on UVC Fund IV", url: "https://www.unternehmertum.de/presse/uvc-partners-sichert-250-millionen-euro-fuer-seinen-fonds-iv" }]
-  },
-"helmut-schoenenberger": {
-    name: "Prof. Dr. Helmut Schönenberger",
-    firm: "UVC Partners",
-    firmSlug: "uvc-partners",
-    title: "Managing Partner",
-    joinedYear: null,
-    investmentFocus: ["Deep Tech", "Climate Technology", "Mobility"],
-    education: [],
-    previousExperience: ["Co-founder and CEO, UnternehmerTUM GmbH", "Vice President Entrepreneurship, Technische Universität München", "Professor, TUM School of Management"],
-    boardSeats: [],
-    notableInvestments: [{ name: "KONUX", ticker: null }, { name: "Isar Aerospace", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Helmut Schönenberger is a Managing Partner of UVC Partners and is registered as one of three managing directors of Unternehmertum Venture Capital Partners GmbH. He is simultaneously co-founder and CEO of UnternehmerTUM, the centre for innovation and business creation at the Technical University of Munich, and serves as TUM's Vice President Entrepreneurship and as a professor at the TUM School of Management. UVC describes him as a founder, aerospace engineer and venture capitalist who works with sustainable ventures on strategy, recruiting, business development and financing. He sits on the supervisory board of the Tech for Net Zero Alliance of the German Energy Agency (dena), the activity for which UVC is entered in the German Bundestag lobby register. The firm attributes KONUX and Isar Aerospace to him. No education details are published on the UVC team page.",
-    sources: [{ label: "UVC Partners team page", url: "https://www.uvcpartners.com/our-team" }, { label: "German Bundestag lobby register entry R004739", url: "https://www.lobbyregister.bundestag.de/suche/R004739" }, { label: "UnternehmerTUM press release on UVC Fund III", url: "https://www.unternehmertum.de/en/press/venture-capital-3-0-new-fund-with-sustainable-strategy" }]
-  },
-"alina-bassi": {
-    name: "Alina Bassi",
-    firm: "Ananda Impact Ventures",
-    firmSlug: "ananda-impact-ventures",
-    title: "Principal",
-    joinedYear: null,
-    investmentFocus: ["Climate", "Sustainability", "Industrial Technology"],
-    education: ["Degree in chemical engineering"],
-    previousExperience: ["Co-founder, textile recycling startup in Berlin (company not named on firm site)", "Co-founder, non-profit supporting women of colour entrepreneurs (organisation not named on firm site)", "Corporate engineer on waste-to-energy industrial plants (employer not named on firm site)"],
-    boardSeats: [],
-    notableInvestments: [{ name: "AIRMO", ticker: null }, { name: "Elio", ticker: null }, { name: "Nordic Salt Cycle", ticker: null }, { name: "Quantistry", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Alina Bassi is a Principal at Ananda Impact Ventures with a chemical engineering degree. She began her career as a corporate engineer working on industrial plants converting household waste into energy, then moved into the London startup ecosystem where she worked on turning coffee waste into biofuels. She went on to co-found a textile recycling startup in Berlin that converted textile waste into plastic pellets, and co-founded a non-profit supporting women of colour entrepreneurs; Ananda does not name either company. She credits the Obama Leadership Programme with moving her toward impact investing. At Ananda she supports AIRMO, Elio, Nordic Salt Cycle and Quantistry. Her joining year is not published.",
-    sources: [{ label: "Ananda team profile", url: "https://ananda.vc/team/alina-bassi" }, { label: "Ananda team page", url: "https://ananda.vc/team" }]
-  },
-"bernd-klosterkemper": {
-    name: "Bernd Klosterkemper",
-    firm: "Ananda Impact Ventures",
-    firmSlug: "ananda-impact-ventures",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Healthcare", "Climate", "Sustainability", "Agriculture"],
-    education: [],
-    previousExperience: ["PlanetHome (role not specified on firm site)"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Caspar", ticker: null }, { name: "Differential Bio", ticker: null }, { name: "Klim", ticker: null }, { name: "Mycolever", ticker: null }, { name: "Nordic Salt Cycle", ticker: null }, { name: "Pheiron", ticker: null }, { name: "Resourcify", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Bernd Klosterkemper is a Partner at Ananda Impact Ventures, based in Düsseldorf. His stated focus areas are health, ageing society, climate change and agriculture, alongside AI ethics, data, the future of work and solutions advancing equity. Before venture capital he gained operational experience at PlanetHome, which Ananda credits with teaching him about scaling organisations and high-performing teams; the firm does not specify his role there. He supports seven Ananda portfolio companies: Caspar, Differential Bio, Klim, Mycolever, Nordic Salt Cycle, Pheiron and Resourcify. Ananda publishes no education details or joining year for him, so both are left null.",
-    sources: [{ label: "Ananda team profile", url: "https://ananda.vc/team/bernd-klosterkemper" }, { label: "Ananda team page", url: "https://ananda.vc/team" }]
-  },
-"chloe-lambert": {
-    name: "Chloe Lambert",
-    firm: "Ananda Impact Ventures",
-    firmSlug: "ananda-impact-ventures",
-    title: "Analyst",
-    joinedYear: null,
-    investmentFocus: ["Healthcare", "Biotech", "Deep Tech", "Life Sciences"],
-    education: ["Neuroscience and Mathematics, Columbia University", "Economic Law, Sciences Po", "Advanced Chemical Engineering, Imperial College London"],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Chloe Lambert is an Analyst at Ananda Impact Ventures focused on healthcare innovation, biotechnology and deep tech. She studied Neuroscience and Mathematics at Columbia University, Economic Law at Sciences Po with a specialisation in patent protection in biotechnology, and Advanced Chemical Engineering at Imperial College London. Born in the United States to French-Belgian parents, she grew up internationally. Ananda says she is actively exploring healthcare, TechBio, SynBio and DeepTech. She is included here as an investing professional; the firm publishes no prior employers, board seats or joining year for her. She is the most junior investing role listed on Ananda's main team page.",
-    sources: [{ label: "Ananda team profile", url: "https://ananda.vc/team/chloe-lambert" }, { label: "Ananda team page", url: "https://ananda.vc/team" }]
-  },
-"steffen-zoller": {
-    name: "Dr. Steffen Zoller",
-    firm: "Ananda Impact Ventures",
-    firmSlug: "ananda-impact-ventures",
-    title: "Venture Partner",
-    joinedYear: null,
-    investmentFocus: ["Education", "Digital Health", "Workforce Development"],
-    education: ["Master's degree, HHL Leipzig Graduate School of Management", "PhD, Universität Witten/Herdecke"],
-    previousExperience: ["Founder, Betreut.de (care services marketplace, acquired by Care.com)", "CEO, DCI Digital Career Institute"],
-    boardSeats: ["Media4Care (chairman)"],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Steffen Zoller is a Venture Partner at Ananda Impact Ventures, listed on the firm's advisory board section. He is an entrepreneur and investor who founded several digital ventures, including the care services marketplace Betreut.de, which was acquired by Care.com. He currently serves as CEO of DCI Digital Career Institute and is an investor and advisor to companies including voiio and Media4Care, where he is chairman. He holds a master's degree from HHL Leipzig Graduate School of Management and a PhD from Universität Witten/Herdecke. Ananda publishes no joining year or portfolio attributions for him. His profile page is reachable at ananda.vc/team/dr-steffen-zoller rather than the name-only slug used for other team members.",
-    sources: [{ label: "Ananda team profile", url: "https://ananda.vc/team/dr-steffen-zoller" }, { label: "Ananda team page", url: "https://ananda.vc/team" }]
-  },
-"florian-erber": {
-    name: "Florian Erber",
-    firm: "Ananda Impact Ventures",
-    firmSlug: "ananda-impact-ventures",
-    title: "General Partner & Founder",
-    joinedYear: 2009,
-    investmentFocus: ["Climate", "Education", "Sustainability", "AI"],
-    education: ["Electrical engineering"],
-    previousExperience: ["Venture capitalist, Wellington Partners", "Managing Director EMEA, WhereNet (acquired by Zebra Technologies)", "CFO, Aloqa (acquired by Motorola Mobility)"],
-    boardSeats: [],
-    notableInvestments: [{ name: "AIRMO", ticker: null }, { name: "Decade", ticker: null }, { name: "EcoG", ticker: null }, { name: "IESO Digital Health", ticker: null }, { name: "Jua", ticker: null }, { name: "OroraTech", ticker: null }, { name: "Pulsetrain", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2009, event: "Co-founds Ananda with Johannes Weber" }, { year: 2018, event: "Announces the EUR 50m third fund, describing the firm's focus on health, education, sustainable consumption and ageing population" }],
-    biography: "Florian Erber is General Partner and co-founder of Ananda Impact Ventures and a registered managing director of Ananda Ventures GmbH in Munich. He trained in electrical engineering and has more than 25 years in business, previously working as a venture capitalist at Wellington Partners, as Managing Director EMEA for WhereNet (acquired by Zebra Technologies) and as CFO of the Munich software startup Aloqa (sold to Motorola Mobility). At Ananda he oversees investment strategy, transaction structuring and fund finance. His portfolio attributions include AIRMO, Decade, EcoG, IESO Digital Health, Jua, OroraTech and Pulsetrain, and his stated interests span space tech and planetary intelligence, AI for global challenges, education and environmental solutions. He was the partner quoted on the firm's EUR 50m third fund in October 2018.",
-    sources: [{ label: "Ananda team profile", url: "https://ananda.vc/team/florian-erber" }, { label: "EU-Startups on Ananda's EUR 50m third fund", url: "https://www.eu-startups.com/2018/10/ananda-impact-ventures-closes-new-e50-million-fund-to-invest-in-20-european-impact-startups/" }]
-  },
-"hedda-pahlson-moller": {
-    name: "Hedda Pahlson-Moller",
-    firm: "Ananda Impact Ventures",
-    firmSlug: "ananda-impact-ventures",
-    title: "Venture Partner",
-    joinedYear: null,
-    investmentFocus: ["Sustainability", "Climate"],
-    education: [],
-    previousExperience: ["Founder and CEO, TIIME.org", "Adjunct professor, Sacred Heart University MBA programme, University of Luxembourg and the Luxembourg School of Finance"],
-    boardSeats: ["Advisory board to the Luxembourg government for Sustainable Development (CSDD.lu)"],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Hedda Pahlson-Moller is a Venture Partner at Ananda Impact Ventures, listed on the firm's advisory board section. She is a private investor and independent board director specialising in sustainable development and responsible finance, and is founder and CEO of TIIME.org, an advocacy, advisory and education organisation. She also manages a privately held forestry company in Sweden. She has taught entrepreneurship, social innovation and the impact economy for sixteen years as an adjunct professor at Sacred Heart University's MBA programme, the University of Luxembourg and the School of Finance. She serves on the advisory board to the Luxembourg government for Sustainable Development. Her focus spans social inclusion, gender-lens investing and environmental sustainability. Ananda publishes no education details or joining year for her.",
-    sources: [{ label: "Ananda team profile", url: "https://ananda.vc/team/hedda-pahlson-moller" }, { label: "Ananda team page", url: "https://ananda.vc/team" }]
-  },
-"johannes-weber": {
-    name: "Johannes Weber",
-    firm: "Ananda Impact Ventures",
-    firmSlug: "ananda-impact-ventures",
-    title: "General Partner & Founder",
-    joinedYear: 2009,
-    investmentFocus: ["Healthcare", "Education", "Sustainability", "Climate"],
-    education: [],
-    previousExperience: ["Founder of an unnamed company sold before he turned 26 (employer not named on firm site)", "Co-founder, Real School"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2009, event: "Co-founds the firm with Florian Erber as Germany's first pan-European impact investment fund" }, { year: 2010, event: "Raises the first fund, EUR 7.3m, under the name Social Venture Fund" }, { year: 2014, event: "Closes the EUR 22.3m second fund; the investor is renamed Ananda Social Venture Fund" }],
-    biography: "Johannes Weber is General Partner and co-founder of Ananda Impact Ventures and is registered as a managing director of the management company Ananda Ventures GmbH in Munich. He founded and sold a company before the age of 26 and took part in an IPO, then redirected himself toward impact investing, launching the firm's first fund during the financial crisis. Handelsblatt profiled him in 2017 when the firm managed EUR 30m and had backed Auticon, Kinderzentren Kunterbunt and Mealsaver, and reported that he raised capital from the European Investment Fund, entrepreneurial families and foundations. He is a vocal advocate for founder mental health, noting that founders are twice as likely to suffer mental health problems, and he helped establish Real School, which he describes as his most impactful work. Ananda's own team page publishes no education details for him.",
-    sources: [{ label: "Ananda team profile", url: "https://ananda.vc/team/johannes-weber" }, { label: "EU-Startups interview with Johannes Weber", url: "https://www.eu-startups.com/2023/08/an-interview-with-ananda-impact-ventures-founder-and-managing-director-johannes-weber/" }, { label: "Handelsblatt profile, March 2017", url: "https://www.handelsblatt.com/finanzen/anlagestrategie/fonds-etf/fonds-gruender-johannes-weber-soziale-rendite/19533412.html" }]
-  },
-"martina-samwer": {
-    name: "Martina Samwer",
-    firm: "Ananda Impact Ventures",
-    firmSlug: "ananda-impact-ventures",
-    title: "Venture Partner",
-    joinedYear: null,
-    investmentFocus: ["Healthcare", "Life Sciences"],
-    education: ["PhD in Law & Economics, University of Hamburg and Columbia University"],
-    previousExperience: ["Co-founder, 21Dx GmbH", "Manager, Schön Klinik (ten years)", "Bain & Company (role not specified on firm site)"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Martina Samwer is a Venture Partner at Ananda Impact Ventures, listed on the firm's advisory board section. She co-founded 21Dx GmbH and built it into an established healthcare service provider for government authorities. Before that she spent ten years as a manager at Schön Klinik and began her career at Bain & Company. She holds a PhD in Law & Economics from the University of Hamburg and Columbia University in New York and has a background in economics. She advises health and life sciences startups and emphasises culture and people as drivers of sustained growth. Ananda publishes no board seats, portfolio attributions or joining year for her.",
-    sources: [{ label: "Ananda team profile", url: "https://ananda.vc/team/martina-samwer" }, { label: "Ananda team page", url: "https://ananda.vc/team" }]
-  },
-"mike-kennedy": {
-    name: "Mike Kennedy",
-    firm: "Ananda Impact Ventures",
-    firmSlug: "ananda-impact-ventures",
-    title: "Venture Partner",
-    joinedYear: null,
-    investmentFocus: ["Healthcare", "Sustainability"],
-    education: [],
-    previousExperience: ["Co-founder, Inogesis (technology innovation consultancy)", "Restoration Partners (role not specified on firm site)", "3i plc (role not specified on firm site)", "YFM Group (role not specified on firm site)", "Electra Private Equity plc (role not specified on firm site)", "Acuity Capital (role not specified on firm site)", "Unilever (role not specified on firm site)", "Marks and Spencer (role not specified on firm site)", "Harrods Limited (role not specified on firm site)"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Closed Loop Medicine", ticker: null }, { name: "Open Bionics", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2000, event: "Moves from retail and commerce into venture capital" }],
-    biography: "Mike Kennedy is a Venture Partner at Ananda Impact Ventures. He began his career in retail and commerce at Unilever, Marks and Spencer and Harrods before moving into venture capital in 2000, holding roles at 3i plc, YFM Group, Electra Private Equity plc and Acuity Capital. He co-founded Inogesis, a technology innovation consultancy, and later joined Restoration Partners. At Ananda he supports Closed Loop Medicine and Open Bionics and is exploring investments around grit and resilience. Outside work he runs a suckler beef herd in southwest Ireland using agroecological methods. Ananda's profile names his employers but not his titles at most of them, and publishes no education details or joining year.",
-    sources: [{ label: "Ananda team profile", url: "https://ananda.vc/team/mike-kennedy" }, { label: "Ananda team page", url: "https://ananda.vc/team" }]
-  },
-"sandeep-jain": {
-    name: "Sandeep Jain",
-    firm: "Ananda Impact Ventures",
-    firmSlug: "ananda-impact-ventures",
-    title: "Venture Partner",
-    joinedYear: null,
-    investmentFocus: ["AI", "Enterprise Software", "Cybersecurity"],
-    education: ["BSc Computer Science, Stanford University", "MSc Computer Science and Human-Computer Interaction, Stanford University"],
-    previousExperience: ["Google, eCommerce data science and UX experimentation (role not specified on firm site)", "Co-founder of two self-funded startups (companies not named on firm site)"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Sandeep Jain is a Venture Partner at Ananda Impact Ventures, listed on the firm's advisory board section. He holds a bachelor's and a master's degree in computer science from Stanford University, the latter combined with human-computer interaction. He has more than 25 years of Silicon Valley experience spanning desktop systems, supply chain logistics, social media, enterprise mobility, IoT security and AI, mostly at startups, including two self-funded ventures. Most recently he worked at Google in eCommerce on data science and UX experimentation. He grew up in a family of Indian diplomats and was educated in India before Stanford. Ananda publishes no joining year, board seats or portfolio attributions for him.",
-    sources: [{ label: "Ananda team profile", url: "https://ananda.vc/team/sandeep-jain" }, { label: "Ananda team page", url: "https://ananda.vc/team" }]
-  },
-"victor-szabo": {
-    name: "Victor Szabo",
-    firm: "Ananda Impact Ventures",
-    firmSlug: "ananda-impact-ventures",
-    title: "Principal",
-    joinedYear: null,
-    investmentFocus: ["Climate", "Deep Tech", "AI", "Industrial Technology"],
-    education: ["Mechatronics and precision engineering, studied in Munich and Shanghai", "Multi-master's programme in business and finance across technical universities in Madrid, Milan and Munich"],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [{ name: "Decade", ticker: null }, { name: "Pulsetrain", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Victor Szabo is a Principal at Ananda Impact Ventures. He studied mechatronics and precision engineering in Munich and Shanghai and completed a multi-master's programme in business and finance across technical universities in Madrid, Milan and Munich. He has Turkish, Hungarian and German roots and grew up in Munich and Rome. At Ananda he focuses on climate resilience and decarbonisation, industrial reinvention and deep tech frontiers, and AI for the physical world, and he supports the portfolio companies Decade and Pulsetrain. The firm publishes no prior employers or joining year for him.",
-    sources: [{ label: "Ananda team profile", url: "https://ananda.vc/team/victor-szabo" }, { label: "Ananda team page", url: "https://ananda.vc/team" }]
-  },
-"zoe-peden": {
-    name: "Zoe Peden",
-    firm: "Ananda Impact Ventures",
-    firmSlug: "ananda-impact-ventures",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Healthcare", "Digital Health", "Sustainability", "Climate"],
-    education: ["Undergraduate degree, London School of Economics", "MBA, Henley Business School"],
-    previousExperience: ["Founder and CEO of an impact technology company (company not named on firm site)"],
-    boardSeats: [],
-    notableInvestments: [{ name: "DrDoctor", ticker: null }, { name: "Elio", ticker: null }, { name: "Nature Metrics", ticker: null }, { name: "Ocean Ledger", ticker: null }, { name: "Ovom", ticker: null }, { name: "Quantistry", ticker: null }, { name: "Resistomap", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Zoe Peden is a Partner at Ananda Impact Ventures, working from London. She holds an undergraduate degree from the London School of Economics and an MBA from Henley Business School, and has nearly two decades of experience in social mobility and equality. Before joining Ananda she founded and ran an impact technology company for around a decade; the firm does not name it. Her portfolio attributions are DrDoctor, Elio, Nature Metrics, Ocean Ledger, Ovom, Quantistry and Resistomap, and she is actively exploring biosecurity, nature tech and ocean tech. Ananda does not publish her joining year, so it is left null.",
-    sources: [{ label: "Ananda team profile", url: "https://ananda.vc/team/zoe-peden" }, { label: "Ananda team page", url: "https://ananda.vc/team" }]
-  },
-"ata-senkon": {
-    name: "Ata Senkon",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "Investment Manager",
-    joinedYear: null,
-    investmentFocus: [],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Ata Senkon is an Investment Manager at Rubio Impact Ventures, listed under that title in the firm's own person taxonomy. An earlier version of Rubio's team listing gave his title as Associate. Rubio publishes no biography, education or prior employment for him on its site, and no verifiable non-aggregator source for those details was found, so all of those fields are left empty rather than inferred. His name is recorded exactly as the firm writes it.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }]
-  },
-"charlie-macdonald": {
-    name: "Charlie Macdonald",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "Investment Director",
-    joinedYear: 2023,
-    investmentFocus: ["Climate", "Clean Energy", "Food & Agriculture", "Sustainability"],
-    education: ["MBA (institution not specified in source)", "Arts degree (institution not specified in source)"],
-    previousExperience: ["World Fund (role not specified in source)", "Giant Leap, Australia's first impact venture capital fund (helped launch; role not specified in source)", "Coach, Startmate"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2023, event: "Joined Rubio's climate team as Investment Manager (announced 1 October 2023); listed as Investment Director on the firm's current team page." }],
-    biography: "Charlie Macdonald is Investment Director at Rubio Impact Ventures, working on the firm's climate theme. Australian by background, he helped launch Giant Leap, Australia's first impact venture capital fund, and coached founders at the accelerator Startmate before moving to Europe. He began his European career at World Fund, a German climate technology fund, and joined Rubio in October 2023 as an Investment Manager. Rubio said at the time that he had been involved in more than thirty investments in start-ups delivering environmental and social benefits. His focus areas are climate technology, energy, agrifood and the circular economy. He holds an arts degree and an MBA, though Rubio does not name the institutions.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }, { label: "Rubio news - Introducing our new investment manager: Charlie Macdonald", url: "https://rubio.vc/news/introducing-our-new-investment-manager-charlie-macdonald/" }]
-  },
-"edward-van-der-hout": {
-    name: "Edward van der Hout",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "Investment Manager",
-    joinedYear: null,
-    investmentFocus: ["Sustainability"],
-    education: ["Industrial Ecology / Sustainability (institution not specified in source)"],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Edward van der Hout is an Investment Manager at Rubio Impact Ventures, listed under that title in the firm's own person taxonomy; an earlier version of Rubio's team listing gave his title as Analyst. Rubio's impact report describes his background as being in sustainability and industrial ecology, without naming the university. No prior employers or board seats are published by the firm, so those fields are left empty rather than inferred.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }, { label: "Rubio impact report team page", url: "https://impactreport.rubio.vc/team/" }]
-  },
-"eline-de-haan": {
-    name: "Eline de Haan",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "Investment Manager",
-    joinedYear: null,
-    investmentFocus: [],
-    education: ["MSc Entrepreneurship, Vrije Universiteit Amsterdam and Universiteit van Amsterdam"],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Eline de Haan is an Investment Manager at Rubio Impact Ventures, listed under that title in the firm's own person taxonomy; an earlier version of Rubio's team listing gave her title as Associate. Rubio's impact report states that she holds an MSc in Entrepreneurship from the joint VU Amsterdam and University of Amsterdam programme. The firm publishes no prior employers or board seats for her, so those fields are left empty rather than inferred. Her joining year is not disclosed.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }, { label: "Rubio impact report team page", url: "https://impactreport.rubio.vc/team/" }]
-  },
-"helmer-schukken": {
-    name: "Helmer Schukken",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "Managing Partner",
-    joinedYear: null,
-    investmentFocus: ["Climate", "Sustainability", "Clean Energy"],
-    education: [],
-    previousExperience: ["Co-founder and CEO of two cleantech start-ups (companies not named on the firm's site)"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2020, event: "As Managing Partner, announced the EUR 55M first close and later the EUR 110M final close of Fund II, alongside the rebrand from Social Impact Ventures to Rubio Impact Ventures." }, { year: 2025, event: "Rubio closes Fund III at over EUR 70M." }],
-    biography: "Helmer Schukken is Managing Partner of Rubio Impact Ventures and is named by the European Investment Fund as one of the firm's founders. Rubio's own impact report describes him as an engineer turned consultant turned entrepreneur turned investor, with about a decade of experience as co-founder and CEO of two cleantech start-ups; the firm does not name those companies publicly, so they are recorded here without names. He was the firm's public voice on the 2020 rebrand from Social Impact Ventures to Rubio and on the EUR 110M final close of Fund II. He has stated that impact and financial return can reinforce each other, the principle behind Rubio's impact-linked carried interest. His formal education is not published on the firm's site and is left blank rather than inferred.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }, { label: "EIF - Dutch social impact venture fund Rubio doubles fund size with EU backing", url: "https://www.eif.org/what_we_do/equity/news/2020/dutch-social-impact-venture-fund-rubio-doubles-fund-size-with-eu-backing.htm" }, { label: "Silicon Canals - Rubio closes 2nd fund at EUR 110M", url: "https://siliconcanals.com/rubio-closes-2nd-fund-at-110m/" }]
-  },
-"ilonka-jankovich": {
-    name: "Ilonka Jankovich",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "Venture Partner",
-    joinedYear: 2022,
-    investmentFocus: ["Workforce Development", "Education"],
-    education: [],
-    previousExperience: ["Founder, Randstad Innovation Fund", "Serial entrepreneur who built and exited two companies in the PeopleTech / work space (companies not named in source)"],
-    boardSeats: ["Exact"],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2019, event: "Joined Rubio's Advisory Board." }, { year: 2022, event: "Appointed Venture Partner at Rubio, leading the People Power team." }],
-    biography: "Ilonka Jankovich is a Venture Partner at Rubio Impact Ventures, where she leads the People Power team and focuses on growth-stage work-technology companies. Rubio describes her as a serial entrepreneur who has built and successfully exited two companies in the PeopleTech field; the firm does not name them, so they are not recorded here. She founded the Randstad Innovation Fund, the corporate venture arm of the Dutch staffing group, and has served as a non-executive board member of technology companies including Exact. She sat on Rubio's Advisory Board from 2019 before joining as Venture Partner in January 2022. On appointment she said her contribution would be making investments in the future of work.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }, { label: "Rubio news - Rubio welcomes Ilonka Jankovich as its new venture partner", url: "https://rubio.vc/news/rubio-welcomes-ilonka-jankovich-as-its-new-venture-partner/" }]
-  },
-"jelle-van-der-steeg": {
-    name: "Jelle van der Steeg",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: [],
-    education: [],
-    previousExperience: ["International private equity investor, around 15 years and 30 PE deals (firms not named in source)"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Jelle van der Steeg carries the title Partner in Rubio Impact Ventures' own person taxonomy, and Bloomberg lists him as a Partner of Rubio Fund Management BV, the firm's management entity. Rubio's team page and its impact report both display him within the advisory board section rather than the core investment team, so his day-to-day involvement in investing is ambiguous and is flagged here rather than resolved. The firm describes him as an international, hands-on private equity investor with around fifteen years of experience across some thirty private equity deals. His prior employers, education and board seats are not published by Rubio and are left empty rather than inferred.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }, { label: "Rubio impact report team page", url: "https://impactreport.rubio.vc/team/" }]
-  },
-"machtelt-groothuis": {
-    name: "Machtelt Groothuis",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "Founding Partner",
-    joinedYear: 2014,
-    investmentFocus: ["Climate", "Sustainability", "Healthcare"],
-    education: ["Economics, Rotterdam", "MBA, INSEAD"],
-    previousExperience: ["Consultant, McKinsey & Company (Amsterdam and Beijing)", "Private equity investor, 3i", "Private equity investor, AlpInvest Partners"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Sama", ticker: null }, { name: "Sympower", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2014, event: "Co-founded the firm with Willemijn Verloop, describing it as the first independent impact fund in the Netherlands." }],
-    biography: "Machtelt Groothuis is a Founding Partner of Rubio Impact Ventures and chairs its investment committee. She studied economics in Rotterdam and holds an MBA from INSEAD. She began her career as a consultant at McKinsey & Company in Amsterdam and Beijing, then spent roughly a decade in mid-market buyout private equity at 3i and AlpInvest Partners. In 2014 she co-founded the firm with Willemijn Verloop, positioning it as the first independent impact fund in the Netherlands. She has described Rubio's three-step impact methodology, co-developed with the European Investment Fund, in which carried interest is fully tied to hitting impact targets alongside financial returns.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }, { label: "Silicon Canals - How Rubio Impact Ventures is using the PE model to create impact", url: "https://siliconcanals.com/machtelt-groothuis-rubio-impact-startups-investing/" }, { label: "Rubio impact report team page", url: "https://impactreport.rubio.vc/team/" }]
-  },
-"niels-de-rijk": {
-    name: "Niels de Rijk",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "VC Analyst & AI Engineer",
-    joinedYear: null,
-    investmentFocus: [],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Niels de Rijk is listed by Rubio Impact Ventures as VC Analyst & AI Engineer, a combined investment and technical role. Rubio publishes no biography, education or prior employment for him, and no verifiable non-aggregator source was found, so those fields are left empty rather than inferred. He is included here as an investing professional on the firm's team page rather than as administrative staff.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }]
-  },
-"tamara-obradov": {
-    name: "Tamara Obradov",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "Venture Partner",
-    joinedYear: null,
-    investmentFocus: [],
-    education: ["MBA, Harvard Business School", "MSc Financial Management, Rotterdam School of Management", "CEMS Master's in International Management"],
-    previousExperience: ["Partner, Tablomonto Ventures", "Director of strategic e-commerce, RFS Holland Holding", "Management consultant, Booz & Company", "Procter & Gamble (role not specified in source)", "Reuters (role not specified in source)", "Heineken (role not specified in source)"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Tamara Obradov is a Venture Partner at Rubio Impact Ventures. She is also a partner at Tablomonto Ventures, an Amsterdam technology venture firm. She holds an MBA from Harvard Business School, an MSc in Financial Management from Rotterdam School of Management and a CEMS Master's in International Management. She spent about a decade as a project leader and management consultant with Procter & Gamble, Reuters, Heineken and Booz & Company, then joined RFS Holland Holding where she led strategic e-commerce work and was involved in Apax Partners' acquisition of Wehkamp. Her professional focus is described as e-commerce, digital media and omni-channel marketing. Rubio does not publish a biography or a joining year for her, so those fields are left blank.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }, { label: "Inspiring Fifty Netherlands - Tamara Obradov", url: "https://netherlands.inspiringfifty.org/tamara-obradov" }]
-  },
-"tijl-hoefnagels": {
-    name: "Tijl Hoefnagels",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Food & Agriculture", "Agritech", "Sustainability"],
-    education: [],
-    previousExperience: ["More than ten years investing across the food chain in Europe and South America (employers not named on the firm's site)"],
-    boardSeats: [],
-    notableInvestments: [{ name: "NoPalm Ingredients", ticker: null }, { name: "Novameat", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Tijl Hoefnagels is a Partner at Rubio Impact Ventures, where he leads agrifood and food-system investments. Rubio's own impact report describes him as a creative investment professional who had been investing at several stages of the food chain in Europe and South America for more than ten years before joining; the firm does not name his earlier employers, so they are not recorded here. At Rubio he has been the public face of investments in NoPalm Ingredients and Novameat and of the firm's agrifood partnership work. Rubio's current team page lists him as Partner; an earlier version of the firm's team listing gave him the title Venture Partner. His education is not published by the firm and is left blank rather than inferred.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }, { label: "Rubio impact report team page", url: "https://impactreport.rubio.vc/team/" }, { label: "Rubio news - Novameat and Rubio partnering", url: "https://rubio.vc/news/novameat-and-rubio-partnering-to-revolutionize-the-plant-based-meat-market/" }]
-  },
-"warner-philips": {
-    name: "Warner Philips",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "Venture Partner",
-    joinedYear: 2015,
-    investmentFocus: ["Climate", "Clean Energy", "Workforce Development"],
-    education: [],
-    previousExperience: ["Co-founder, Tendris", "Venture capital investor (from 1996; firm not named in source)", "Angel investor in Nest, Lyft, Change.org and Solar Mosaic"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Sama", ticker: null }, { name: "OLIO", ticker: null }, { name: "SkinVision", ticker: null }, { name: "GoodUp", ticker: null }, { name: "Lingvist", ticker: null }, { name: "SkillLab", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 1996, event: "Began career as a venture capital investor." }, { year: 2002, event: "Co-founded Tendris, which launched a series of cleantech start-ups between 2002 and 2012." }, { year: 2007, event: "Moved to Silicon Valley and invested as an impact angel in companies including Nest, Lyft, Change.org and Solar Mosaic." }, { year: 2015, event: "Returned to Amsterdam to help build the firm." }],
-    biography: "Warner Philips is a Venture Partner at Rubio Impact Ventures and is named by the European Investment Fund as one of the firm's founders. He started in venture capital in 1996 before co-founding Tendris, a venture builder that launched a series of cleantech start-ups between 2002 and 2012. He relocated to Silicon Valley in 2007 and invested as an impact angel in Nest, Lyft, Change.org and Solar Mosaic, returning to Amsterdam in 2015 to help build Rubio. At Rubio he has worked with Sama, OLIO, SkinVision, GoodUp, Lingvist and SkillLab. He has also sat on the venture capital committee of the Netherlands Venture Capital Association and acted as a venture advisor to the Dutch development bank FMO. Rubio's current team page lists him as Venture Partner; older firm material listed him as Managing Partner.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }, { label: "Global Investor Forum - Warner Philips profile", url: "https://www.hyphenprojects.nl/gif/warner-philips" }, { label: "EIF - Dutch social impact venture fund Rubio doubles fund size with EU backing", url: "https://www.eif.org/what_we_do/equity/news/2020/dutch-social-impact-venture-fund-rubio-doubles-fund-size-with-eu-backing.htm" }]
-  },
-"willemijn-verloop": {
-    name: "Willemijn Verloop",
-    firm: "Rubio Impact Ventures",
-    firmSlug: "rubio-impact-ventures",
-    title: "Founding Partner",
-    joinedYear: 2014,
-    investmentFocus: ["Workforce Development", "Education", "Healthcare"],
-    education: ["History and international relations, Leiden University", "University of Amsterdam"],
-    previousExperience: ["Founder, War Child Holland", "Co-founder, Social Enterprise NL", "Programme manager, European Action Council for Peace in the Balkans", "United Nations Department of Political Affairs, Centre Against Apartheid (role not specified in source)", "Council of Europe (role not specified in source)"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 1994, event: "Founded War Child Holland after a visit to Bosnia and Herzegovina; led it for around fifteen years." }, { year: 2012, event: "Co-founded Social Enterprise NL with Mark Hillen." }, { year: 2014, event: "Co-founded the firm, then named Social Impact Ventures NL, with Machtelt Groothuis." }],
-    biography: "Willemijn Verloop is a Founding Partner of Rubio Impact Ventures, the Amsterdam impact fund she co-founded with Machtelt Groothuis under its original name Social Impact Ventures NL. She founded War Child Holland in 1994 and led the organisation for about fifteen years, and in 2012 co-founded the sector body Social Enterprise NL with Mark Hillen. Earlier in her career she worked at the United Nations Department of Political Affairs in New York and at the Council of Europe in Strasbourg, and spent three years as programme manager at the European Action Council for Peace in the Balkans. Rubio's own materials describe her as a serial social entrepreneur and a driving force behind the Dutch social enterprise movement. She was made an Officer of the Order of Orange-Nassau in 2007 and received the Roosevelt Institute's Freedom from Fear award in 2008.",
-    sources: [{ label: "Rubio team page", url: "https://rubio.vc/team/" }, { label: "Rubio person taxonomy (WordPress REST API, roles)", url: "https://rubio.vc/wp-json/wp/v2/partner-type?per_page=100" }, { label: "Wikipedia - Willemijn Verloop", url: "https://en.wikipedia.org/wiki/Willemijn_Verloop" }, { label: "Duurzaamnieuws - Meer geld en nieuwe naam voor Social Impact Ventures", url: "https://www.duurzaamnieuws.nl/meer-geld-en-nieuwe-naam-voor-social-impact-ventures/" }]
-  },
-"alain-horvais": {
-    name: "Alain Horvais",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Partner, Diagnostic",
-    joinedYear: 2015,
-    investmentFocus: ["Life Sciences", "Digital Health", "Medical Devices"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2015, event: "Appointed Partner at Kurma Partners, in charge of managing the Kurma Diagnostics fund" }],
-    biography: "Alain Horvais is a Partner at Kurma Partners on the Diagnostics franchise. He was appointed Partner in June 2015 alongside Philippe Peltier to manage the Kurma Diagnostics fund. Kurma's team page publishes only his name, title and LinkedIn link, and the announcement of his appointment gives no further detail, so his education, previous employers and board seats are not recorded here.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }, { label: "Kurma Partners press release, June 2015", url: "https://www.kurmapartners.com/en/news/kurma-partners-renforce-son-equipe-et-annonce-le-recrutement-dalain-horvais-et-de-philippe-peltier-comme-directeurs-associes-et-lentree-au-directoire-de-vanessa-malier-directeur-associe" }]
-  },
-"amanda-gett": {
-    name: "Amanda Gett",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Partner, Biofund",
-    joinedYear: 2023,
-    investmentFocus: ["Biotech", "Therapeutics", "Life Sciences"],
-    education: ["PhD in immunology", "BMedSci with First Class Honours, University of Sydney", "MBA, IE Business School"],
-    previousExperience: ["Partner, Seventure Partners", "Investment manager, Roche Venture Fund", "Global business development director, Roche", "Strategy director for emerging technologies, Roche", "Academic researcher, ISREC Lausanne", "Academic researcher, IRB Bellinzona"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2023, event: "Joined Kurma Partners as Partner on the Biofund venture team in Paris" }],
-    biography: "Amanda Gett is a Partner at Kurma Partners on the Biofund venture team, which she joined in September 2023 (the firm's press release names her Amanda Gett-Chaperot; the team page writes Amanda Gett). Before Kurma she was a partner at Seventure Partners, investing in and sitting on the boards of biotech companies from sourcing to exit. Earlier she was an investment manager at the Roche Venture Fund and held business roles at Roche as global business development director for external innovation, in-licensing and biotech and academic collaborations, and as strategy director for emerging technologies. She started in academic research at ISREC in Lausanne and IRB in Bellinzona. She holds a PhD in immunology, a BMedSci with first class honours from the University of Sydney and an MBA from IE Business School.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }, { label: "Kurma Partners press release on Amanda Gett-Chaperot", url: "https://www.kurmapartners.com/en/news/kurma-partners-strengthens-team-and-welcomes-amanda-gett-chaperot-as-partner-to-the-biofund-venture-team" }]
-  },
-"anna-tchorzewska": {
-    name: "Anna Tchorzewska",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Associate, Biofund",
-    joinedYear: null,
-    investmentFocus: ["Biotech", "Therapeutics", "Life Sciences"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Anna Tchorzewska is listed by Kurma Partners as Associate, Biofund, working on the firm's Biofund franchise. Kurma's team page publishes only names, titles, fund allocation and LinkedIn links for its investment staff, and no press release or French-language article giving Anna's education, previous employers or joining year was found, so those fields are left empty rather than inferred.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }]
-  },
-"benjamin-belot": {
-    name: "Benjamin Belot",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Partner, Diagnostic",
-    joinedYear: 2020,
-    investmentFocus: ["Life Sciences", "Digital Health", "Medical Devices"],
-    education: ["Master's in chemical engineering, École Nationale Supérieure de Chimie de Paris", "MBA, INSEAD"],
-    previousExperience: ["Investment lead, Zuellig Pharma (Southeast Asia)", "Oncology portfolio management, Janssen (Johnson & Johnson)"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2020, event: "Joined Kurma Partners as Partner on the Kurma Diagnostics 2 fund" }],
-    biography: "Benjamin Belot is a Partner at Kurma Partners on the Diagnostics franchise, which he joined in September 2020 for the Kurma Diagnostics 2 fund. He brings digital health expertise, having previously led investments for Zuellig Pharma in Southeast Asia and worked at Janssen, part of Johnson & Johnson, managing oncology portfolios. He holds a master's degree in chemical engineering from the École Nationale Supérieure de Chimie de Paris and an MBA from INSEAD. Kurma does not publish board seats for him.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }, { label: "Kurma Partners press release on team hires and promotions, September 2020", url: "https://www.kurmapartners.com/en/news/kurma-partners-renforce-ses-equipes" }]
-  },
-"daniel-parera": {
-    name: "Daniel Parera",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Partner Germany, Growth Opportunities",
-    joinedYear: null,
-    investmentFocus: ["Biotech", "Life Sciences"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Daniel Parera is a Partner at Kurma Partners for Germany on the Growth Opportunities franchise and is based in the firm's Munich office. Kurma's team page publishes only his name, title, fund and LinkedIn link, and no Kurma press release describing his background was found, so his education, previous employers, joining year and board seats are left empty rather than inferred.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }]
-  },
-"florence-de-coorebyter": {
-    name: "Florence de Coorebyter",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Associate, Biofund",
-    joinedYear: null,
-    investmentFocus: ["Biotech", "Therapeutics", "Life Sciences"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Florence de Coorebyter is listed by Kurma Partners as Associate, Biofund, working on the firm's Biofund franchise. Kurma's team page publishes only names, titles, fund allocation and LinkedIn links for its investment staff, and no press release or French-language article giving Florence's education, previous employers or joining year was found, so those fields are left empty rather than inferred.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }]
-  },
-"hadrien-bouchez": {
-    name: "Hadrien Bouchez",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Partner, Biofund",
-    joinedYear: 2014,
-    investmentFocus: ["Biotech", "Therapeutics", "Life Sciences"],
-    education: ["PharmD, Faculty of Pharmacy, Lille", "Master in entrepreneurship, ESSEC Business School"],
-    previousExperience: ["Kurma Partners (Analyst 2014, Associate 2017, Principal 2020)"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2014, event: "Joined Kurma Partners as an Analyst" }, { year: 2017, event: "Promoted to Associate" }, { year: 2020, event: "Promoted to Principal on the Biofund franchise" }],
-    biography: "Hadrien Bouchez is a Partner at Kurma Partners on the Biofund franchise. He joined the firm in 2014 as an analyst, became an associate in 2017 and was promoted to principal in September 2020; the current team page lists him as Partner. He holds a PharmD from the Faculty of Pharmacy in Lille and a master in entrepreneurship from ESSEC Business School. Kurma does not publish a detailed biography or board seats for him.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }, { label: "Kurma Partners press release on team promotions, September 2020", url: "https://www.kurmapartners.com/en/news/kurma-partners-renforce-ses-equipes" }]
-  },
-"jean-francois-rivassou": {
-    name: "Jean-François Rivassou",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Partner, Growth Opportunities",
-    joinedYear: 2021,
-    investmentFocus: ["Biotech", "Life Sciences"],
-    education: ["École Nationale Supérieure des Mines de Paris, specialising in biotechnology"],
-    previousExperience: ["Growth and private equity investments, ISAI Gestion", "Head of M&A and Business Development and management committee member, Adenclassifieds (2006-2012)", "Investment manager (biotech and medtech), Banexi Ventures Partners", "Genset (genomics company, Singapore office)"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2006, event: "Became head of M&A and business development at Adenclassifieds, a company listed on Euronext Paris, until 2012" }, { year: 2021, event: "Joined Kurma Partners as Partner to support portfolio companies at later stages of development" }],
-    biography: "Jean-François Rivassou is a Partner at Kurma Partners on the Growth Opportunities franchise, which he joined in April 2021 to strengthen the firm's expertise in later development phases. He began his career at the genomics company Genset, listed on Euronext and Nasdaq, working from its Singapore office, then became an investment manager at Banexi Ventures Partners, backed by BNP Paribas, focusing on biotech and medtech. From 2006 to 2012 he was head of M&A and business development and a management committee member of Adenclassifieds, a digital company listed on Euronext Paris. Most recently before Kurma he managed growth and private equity investments at the Paris technology fund ISAI Gestion. He is a graduate of the École Nationale Supérieure des Mines de Paris, where he specialised in biotechnology.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }, { label: "Kurma Partners press release, April 2021", url: "https://www.life-sciences-europe.com/news/kurma-partners-appoints-jean-life-sciences-group-isai-2001-118246.html" }, { label: "European Biotechnology, new Kurma partner appointed", url: "https://european-biotechnology.com/appointments/new-kurma-partner-appointed/" }]
-  },
-"laura-achach": {
-    name: "Laura Achach",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Associate, Diagnostic",
-    joinedYear: null,
-    investmentFocus: ["Life Sciences", "Digital Health", "Medical Devices"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Laura Achach is listed by Kurma Partners as Associate, Diagnostic, working on the firm's Diagnostics franchise. Kurma's team page publishes only names, titles, fund allocation and LinkedIn links for its investment staff, and no press release or French-language article giving Laura's education, previous employers or joining year was found, so those fields are left empty rather than inferred.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }]
-  },
-"louise-marie-rakotoarison": {
-    name: "Louise-Marie Rakotoarison",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Analyst, Diagnostic",
-    joinedYear: null,
-    investmentFocus: ["Life Sciences", "Digital Health", "Medical Devices"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Louise-Marie Rakotoarison is listed by Kurma Partners as Analyst, Diagnostic, working on the firm's Diagnostics franchise. Kurma's team page publishes only names, titles, fund allocation and LinkedIn links for its investment staff, and no press release or French-language article giving Louise-Marie's education, previous employers or joining year was found, so those fields are left empty rather than inferred.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }]
-  },
-"maylis-deschamps": {
-    name: "Maylis Deschamps",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Associate, Growth Opportunities",
-    joinedYear: null,
-    investmentFocus: ["Biotech", "Life Sciences"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Maylis Deschamps is listed by Kurma Partners as Associate, Growth Opportunities, working on the firm's Growth Opportunities franchise. Kurma's team page publishes only names, titles, fund allocation and LinkedIn links for its investment staff, and no press release or French-language article giving Maylis's education, previous employers or joining year was found, so those fields are left empty rather than inferred.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }]
-  },
-"peter-neubeck": {
-    name: "Peter Neubeck",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Partner Germany, Biofund",
-    joinedYear: 2019,
-    investmentFocus: ["Biotech", "Therapeutics", "Life Sciences"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2019, event: "Appointed Partner and opened Kurma Partners' Munich office in January" }],
-    biography: "Dr Peter Neubeck is a Partner at Kurma Partners for Germany on the Biofund franchise and heads the firm's Munich office, which he opened in January 2019 after the first close of Kurma Biofund III. Kurma's team page lists only his name, title and LinkedIn link, and the Munich launch release does not detail his earlier career, so his education, previous employers and board seats are left empty rather than inferred.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }, { label: "Kurma Partners press release on the Munich launch, January 2019", url: "https://www.kurmapartners.com/en/news/kurma-partners-sees-great-opportunities-for-early-stage-biotech-investments-in-germany-and-launches-operations-in-munich" }]
-  },
-"philippe-peltier": {
-    name: "Philippe Peltier",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Partner, Diagnostic",
-    joinedYear: 2015,
-    investmentFocus: ["Life Sciences", "Digital Health", "Medical Devices"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2015, event: "Appointed Partner at Kurma Partners, in charge of managing the Kurma Diagnostics fund" }],
-    biography: "Philippe Peltier is a Partner at Kurma Partners on the Diagnostics franchise. He was appointed Partner in June 2015 alongside Alain Horvais to manage the Kurma Diagnostics fund. Kurma's team page publishes only his name, title and LinkedIn link, and the appointment announcement gives no further biographical detail, so his education, previous employers and board seats are not recorded here.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }, { label: "Kurma Partners press release, June 2015", url: "https://www.kurmapartners.com/en/news/kurma-partners-renforce-son-equipe-et-annonce-le-recrutement-dalain-horvais-et-de-philippe-peltier-comme-directeurs-associes-et-lentree-au-directoire-de-vanessa-malier-directeur-associe" }]
-  },
-"remi-droller": {
-    name: "Rémi Droller",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Managing Partner, Biofund",
-    joinedYear: 2010,
-    investmentFocus: ["Biotech", "Therapeutics", "Life Sciences"],
-    education: ["Master's in molecular biology, Université Paris VI", "Master's in finance and innovation management (Masternova, AgroParisTech)"],
-    previousExperience: ["Investor, CDC Innovation (venture arm of Caisse des Dépôts et Consignations)", "Head of life sciences investment activity, AGF Private Equity"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2000, event: "Started his investment career at CDC Innovation, the venture capital subsidiary of Caisse des Dépôts et Consignations" }, { year: 2003, event: "Joined AGF Private Equity, where he built the life sciences investment division" }, { year: 2010, event: "Joined Kurma Partners as a partner on the Biofund franchise" }],
-    biography: "Rémi Droller is a Managing Partner of Kurma Partners and co-leads the Biofund franchise. He began investing in 2000 at CDC Innovation, the venture capital subsidiary of Caisse des Dépôts et Consignations, then joined AGF Private Equity in 2003 where he built out the life sciences investment activity, before joining Kurma in 2010. Since then he has been involved in founding around a dozen European biotechnology companies and has served as chairman or director of several of them. He oversees a portfolio of roughly 60 companies across biopharma, diagnostics and digital health with a team of about 25 people in Paris and Munich. He holds a master's degree in molecular biology from Université Paris VI and a master's in finance and innovation management from AgroParisTech.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }, { label: "Step Pharma board profile", url: "https://step-ph.com/portfolio/remi-droller/" }, { label: "PharmaBoardroom interview, July 2025", url: "https://pharmaboardroom.com/interviews/remi-droller-managing-partner-kurma-partners/" }]
-  },
-"samantha-zennou": {
-    name: "Samantha Zennou",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Associate, Diagnostic",
-    joinedYear: null,
-    investmentFocus: ["Life Sciences", "Digital Health", "Medical Devices"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Samantha Zennou is listed by Kurma Partners as Associate, Diagnostic, working on the firm's Diagnostics franchise. Kurma's team page publishes only names, titles, fund allocation and LinkedIn links for its investment staff, and no press release or French-language article giving Samantha's education, previous employers or joining year was found, so those fields are left empty rather than inferred.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }]
-  },
-"thierry-laugel": {
-    name: "Thierry Laugel",
-    firm: "Kurma Partners",
-    firmSlug: "kurma-partners",
-    title: "Managing Partner, Biofund",
-    joinedYear: 2009,
-    investmentFocus: ["Biotech", "Therapeutics", "Life Sciences"],
-    education: ["PharmD and PhD in pharmacy and pharmacology", "MBA, INSEAD"],
-    previousExperience: ["R&D project manager, Laboratoires Fournier (Tokyo)", "Development portfolio manager, Flamel Technologies", "Investor, Caisse des Dépôts", "Head of the healthcare investment team, AGF Private Equity (Allianz Group)"],
-    boardSeats: ["Alize Pharma 3", "Ermium", "Horama", "Minoryx", "Blink Biomedical", "Talix", "Meiogenix", "PathoQuest"],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 1992, event: "Started as R&D project manager at Laboratoires Fournier in Tokyo" }, { year: 1996, event: "Joined Flamel Technologies after its Nasdaq listing to manage the development portfolio" }, { year: 1998, event: "Moved into investment at Caisse des Dépôts" }, { year: 2005, event: "Joined AGF Private Equity (Allianz Group) to head the healthcare investment team" }, { year: 2009, event: "Co-founded Kurma Partners in Paris in July" }],
-    biography: "Thierry Laugel is a co-founder and Managing Partner of Kurma Partners, where he leads the Biofund franchise. He holds a PharmD and a PhD in pharmacy and pharmacology as well as an INSEAD MBA. He started in 1992 as an R&D project manager for Laboratoires Fournier in Tokyo, joined Flamel Technologies in 1996 to manage its development portfolio after the company's Nasdaq listing, then moved to investment at Caisse des Dépôts in 1998 and to AGF Private Equity, part of the Allianz group, in 2005, where he ran the healthcare investment team. He co-founded Kurma in July 2009 and has led investments in around 30 companies over his career, including Actelion, Arpida, Targacept, Adocia and Erytech. He sits on the boards of several Kurma-backed biotechs including Alize Pharma 3, Ermium, Horama, Minoryx, Blink Biomedical, Talix, Meiogenix and PathoQuest.",
-    sources: [{ label: "Kurma Partners team page", url: "https://www.kurmapartners.com/en/team" }, { label: "Interview with Thierry Laugel, co-founder of Kurma Partners (AsiaTechDaily)", url: "https://asiatechdaily.com/thierry-laugel-co-founder-of-kurma-partners/" }, { label: "Kurma Partners, Biofund IV final close", url: "https://www.kurmapartners.com/en/news/kurma-partners-membre-du-groupe-eurazeo-annonce-le-closing-final-de-son-nouveau-fonds-biofund-iv-a-215-millions-deuros" }]
-  },
-"andre-vandemeulebroecke": {
-    name: "André Vandemeulebroecke",
-    firm: "VIVES Partners",
-    firmSlug: "vives-partners",
-    title: "Partner",
-    joinedYear: 2008,
-    investmentFocus: ["Deep Tech", "Semiconductors", "Hardware"],
-    education: ["Electrical Engineer, École Polytechnique de Louvain, UCLouvain (1983)"],
-    previousExperience: ["Worldwide Account Director, Alcatel Microelectronics / STMicroelectronics", "R&D, marketing, sales and business development roles, Alcatel Microelectronics (from 1989)", "Microelectronics researcher in cryptography, UCLouvain"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 1983, event: "Graduated as an electrical engineer from the École Polytechnique de Louvain." }, { year: 1989, event: "Joined Alcatel Microelectronics after a research career at UCLouvain, moving through R&D, marketing, sales and business development." }, { year: 2002, event: "Alcatel Microelectronics acquired by STMicroelectronics; served as Worldwide Account Director." }, { year: 2008, event: "Joined Sopartec and the VIVES funds." }],
-    biography: "André Vandemeulebroecke is a Partner at VIVES Partners and a member of its investment committee, focusing on technology and engineering companies. He graduated as an electrical engineer from the École Polytechnique de Louvain in 1983 and began as a microelectronics researcher at UCLouvain working on cryptography, producing fifteen scientific publications and two patents. He joined Alcatel Microelectronics in 1989 and held R&D, marketing, sales and business development roles; after STMicroelectronics acquired the business in 2002 he was Worldwide Account Director, growing sales from around EUR 100M to EUR 300M over four years and taking part in M&A work. He joined Sopartec and the VIVES funds in 2008 and has since handled due diligence, shareholder agreements, capital rounds and exits, as well as technology commercialisation and spin-off creation. He is a director of the management company VIVES Partners SRL. His name is written with the accented 'e' exactly as the firm writes it.",
-    sources: [{ label: "VIVES team profile - André Vandemeulebroecke", url: "https://www.vivesfund.com/en/equipe/andre-vandemeulebroecke" }, { label: "Pappers Belgium - VIVES PARTNERS SRL (1004.227.835)", url: "https://www.pappers.be/fr/company/vives-partners-1004227835" }]
-  },
-"gilles-dufour": {
-    name: "Gilles Dufour",
-    firm: "VIVES Partners",
-    firmSlug: "vives-partners",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Life Sciences", "Biotech", "Therapeutics"],
-    education: ["PhD in Biomedical Sciences, Université de Liège", "Postdoctoral research, Harvard Medical School"],
-    previousExperience: ["RA Capital Management (biotech investment evaluation; role not specified in source)", "Corporate Development and Clinical Strategy, Synthorx", "Founder and Manager, Accretio Management"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Gilles Dufour is a Partner at VIVES Partners and a member of its investment committee, covering life sciences and biotechnology. He holds a PhD in biomedical sciences from the University of Liège and carried out postdoctoral research at Harvard Medical School. He worked on biotech investment evaluation at RA Capital Management and held corporate development and clinical strategy roles at Synthorx, which Sanofi acquired for USD 2.5 billion. He also founded and ran Accretio Management, a boutique life sciences consulting firm. VIVES describes him as having more than ten years of experience across venture capital, clinical strategy, corporate development, company creation and biotech operations. VIVES does not publish his joining year or board seats, so those are left blank.",
-    sources: [{ label: "VIVES team profile - Gilles Dufour", url: "https://www.vivesfund.com/en/equipe/gilles-dufour-0" }]
-  },
-"philippe-durieux": {
-    name: "Philippe Durieux",
-    firm: "VIVES Partners",
-    firmSlug: "vives-partners",
-    title: "Managing Partner",
-    joinedYear: 2006,
-    investmentFocus: ["Life Sciences", "Deep Tech", "Biotech"],
-    education: ["Master's degree in Economics, UCLouvain", "Post-graduate diploma in Finance, Facultés universitaires Saint-Louis"],
-    previousExperience: ["CEO, Sopartec (UCLouvain technology transfer and investment company), 2006-2024", "Senior Investment Manager, Dexia Ventures", "Credit Analyst, WestLB"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2006, event: "Became CEO of Sopartec, UCLouvain's technology transfer and investment company, and joined the VIVES funds." }, { year: 2011, event: "Helped establish VIVES II, at EUR 43M then the largest European seed fund initiated by a university." }, { year: 2020, event: "Launched the VIVES Inter-University Fund with five partner universities." }, { year: 2024, event: "Stepped down from leading Sopartec and became Managing Partner of the newly incorporated VIVES Partners SRL in Wavre." }],
-    biography: "Philippe Durieux is Managing Partner of VIVES Partners and sits on its investment committee. He holds a master's degree in economics from UCLouvain and a post-graduate diploma in finance from the Saint-Louis faculty in Brussels. Before joining the VIVES platform in 2006 he was a Senior Investment Manager at Dexia Ventures and a credit analyst at WestLB. He led Sopartec, UCLouvain's technology transfer and investment company, from 2006 until early 2024, and in that role helped raise VIVES II in 2011 and the VIVES Inter-University Fund in 2020. When investment activity was separated from Sopartec at the start of 2024 he moved across to run the new management company, VIVES Partners SRL, of which he is a director; Xavier Bastin succeeded him at Sopartec. He serves as a non-executive director on several portfolio boards, chairing some of them and their audit and remuneration committees.",
-    sources: [{ label: "VIVES team profile - Philippe Durieux", url: "https://www.vivesfund.com/en/equipe/philippe-durieux" }, { label: "La Libre - Les spin-off de l'UCLouvain génèrent plus d'un demi-milliard d'euros par an", url: "https://www.lalibre.be/economie/entreprises-startup/2025/05/02/les-spin-off-de-luclouvain-generent-plus-dun-demi-milliard-deuros-par-an-mais-luniversite-vise-bien-plus-YUY6U6Z66VCWJG6KWT2P6EUYTM/" }, { label: "Pappers Belgium - VIVES PARTNERS SRL (1004.227.835)", url: "https://www.pappers.be/fr/company/vives-partners-1004227835" }]
-  },
-"sandra-schoors": {
-    name: "Sandra Schoors",
-    firm: "VIVES Partners",
-    firmSlug: "vives-partners",
-    title: "Partner",
-    joinedYear: 2024,
-    investmentFocus: ["Life Sciences", "Biotech", "Therapeutics"],
-    education: ["PhD, KU Leuven (research on the role of metabolism in angiogenesis)"],
-    previousExperience: ["Partner, Droia Ventures (joined 2017)", "Founder, Droia Labs"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2017, event: "Joined Droia Ventures, later becoming a partner." }, { year: 2024, event: "Joined VIVES." }],
-    biography: "Sandra Schoors is listed as a Partner at VIVES Partners and sits on its investment committee, covering life sciences. She holds a PhD from KU Leuven, where her research on the role of metabolism in angiogenesis was published in Nature and Cell. She joined Droia Ventures in 2017 and became a partner there, focusing on private investments in oncology and genetic disease therapeutics, leading early-stage venture investing and company creation, holding board positions and operational C-level roles in start-ups, and establishing Droia Labs to support new venture development. She joined VIVES in 2024. Her own VIVES profile text describes her as Senior Investment Manager while the team page lists her under Partner, and that inconsistency is recorded rather than resolved.",
-    sources: [{ label: "VIVES team profile - Sandra Schoors", url: "https://www.vivesfund.com/en/equipe/sandra-schoors" }, { label: "VIVES team page", url: "https://www.vivesfund.com/en/equipe" }]
-  },
-"saskia-lesire": {
-    name: "Saskia Lesire",
-    firm: "VIVES Partners",
-    firmSlug: "vives-partners",
-    title: "Associate",
-    joinedYear: 2025,
-    investmentFocus: ["Life Sciences", "Therapeutics", "Medical Devices"],
-    education: ["PhD in Biomedical Sciences, KU Leuven", "Technology and Knowledge Transfer training, Leuven Research & Development", "Guberna Director Effectiveness certification"],
-    previousExperience: ["KU Leuven Centre for Drug Design and Discovery, doctoral research collaboration (role not specified in source)"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2025, event: "Joined VIVES Partners as an Associate." }],
-    biography: "Saskia Lesire is an Associate at VIVES Partners, where she supports sourcing and evaluation of investment opportunities in therapeutics and medtech. She holds a PhD in biomedical sciences from KU Leuven, with doctoral research in molecular medicine, target validation and assay development, carried out in collaboration with KU Leuven's Centre for Drug Design and Discovery. She completed technology and knowledge transfer training through Leuven Research & Development and holds the Guberna Director Effectiveness certification. She joined VIVES in 2025. She is the most junior investing professional listed on the firm's team page and is included here as an investing professional rather than administrative staff.",
-    sources: [{ label: "VIVES team profile - Saskia Lesire", url: "https://www.vivesfund.com/en/equipe/saskia-lesire" }]
-  },
-"yannick-vancoppenolle": {
-    name: "Yannick Vancoppenolle",
-    firm: "VIVES Partners",
-    firmSlug: "vives-partners",
-    title: "Partner",
-    joinedYear: 2017,
-    investmentFocus: ["Biotech", "Agritech", "Food & Agriculture"],
-    education: ["MSc in bio-engineering, UCLouvain", "MBA, Vlerick Business School", "Exchange studies, Universidad Politécnica de Madrid"],
-    previousExperience: ["EcoPhos (feed and fertiliser start-up), ten years in successive key positions supporting growth from 5 to 350 staff", "Business and market development, Air Liquide", "Business and market development, BMS Micro-Nutrients"],
-    boardSeats: ["Botalys", "Virovet", "Aphea.Bio (observer)", "Sunrise", "LMO.space", "Biocsol", "Generare"],
-    notableInvestments: [{ name: "Biocsol", ticker: null }, { name: "Generare", ticker: null }, { name: "Aphea.Bio", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2017, event: "Joined the VIVES funds." }, { year: 2024, event: "Named a director of the newly incorporated management company VIVES Partners SRL." }],
-    biography: "Yannick Vancoppenolle is a Partner at VIVES Partners and a member of its investment committee, covering biotech and the agro and agri industries. He holds an MSc in bio-engineering from UCLouvain and an MBA from Vlerick Business School, and studied at the Universidad Politécnica de Madrid. He spent a decade at the Belgian feed and fertiliser company EcoPhos in a succession of key positions as the business grew from five to 350 people and around EUR 130M of turnover, overseeing international industrial plants and technology licensing and sitting on the boards of EcoPhos joint ventures. Earlier he held business and market development roles at Air Liquide and BMS Micro-Nutrients. He joined VIVES in 2017 and sits on the boards of Botalys, Virovet, Sunrise, LMO.space, Biocsol and Generare, and observes at Aphea.Bio. He is a director of VIVES Partners SRL.",
-    sources: [{ label: "VIVES team profile - Yannick Vancoppenolle", url: "https://www.vivesfund.com/en/equipe/yannick-vancoppenolle" }, { label: "Pappers Belgium - VIVES PARTNERS SRL (1004.227.835)", url: "https://www.pappers.be/fr/company/vives-partners-1004227835" }]
-  },
-"bo-jesper-hansen": {
-    name: "Dr. Bo Jesper Hansen",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Venture Partner",
-    joinedYear: 2015,
-    investmentFocus: ["Therapeutics", "Life Sciences", "Biotech"],
-    education: ["Medical degree, University of Copenhagen", "Specialisation in urology"],
-    previousExperience: ["Co-Founder and Executive Chairman, Swedish Orphan Biovitrum (Sobi)"],
-    boardSeats: ["Karolinska Development (Chairman)", "Laborie", "Newron Pharmaceuticals", "CMC", "GenSpera", "Orphazyme"],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2015, event: "Joined Wellington Partners as Venture Partner" }],
-    biography: "Dr. Bo Jesper Hansen is a Venture Partner at Wellington Partners, an advisory rather than full-time investing role. He is a medical doctor who studied medicine at the University of Copenhagen and specialised in urology. He co-founded Swedish Orphan Biovitrum (Sobi), the publicly listed rare-disease biotech, and served as its executive chairman; the firm cites a market capitalisation of roughly EUR 5 billion. He chairs Karolinska Development and serves on the boards of Laborie, Newron, CMC, GenSpera and Orphazyme, and previously held board and leadership roles at Ablynx (acquired by Sanofi), Gambro (Baxter), Zymenex (Chiesi) and Hyperion (Horizon). He joined Wellington Partners in 2015.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/dr-bo-jesper-hansen/" }]
-  },
-"johannes-fischer": {
-    name: "Dr. Johannes Fischer",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Managing Partner",
-    joinedYear: 2020,
-    investmentFocus: ["Life Sciences", "Medical Devices", "Digital Health", "Biotech"],
-    education: ["PhD in Biotechnology, Technical University Munich", "MSc in Biochemistry, Technical University Munich", "Medical Doctorate (MD), Technical University Munich"],
-    previousExperience: ["Management Consultant, Life Sciences practice, L.E.K. Consulting", "Co-founder and commercial advisor, food delivery service company (Saudi Arabia; company name not specified on firm site)"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Adrenomed", ticker: null }, { name: "Advanced Medical Balloons", ticker: null }, { name: "Aignostics", ticker: null }, { name: "Amboss", ticker: null }, { name: "MMI", ticker: null }, { name: "Nyra Health", ticker: null }, { name: "ONWARD", ticker: null }, { name: "Sidekick", ticker: null }, { name: "SIRS", ticker: null }, { name: "SphingoTec", ticker: null }, { name: "UroMems", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2020, event: "Joined Wellington Partners as Senior Associate" }, { year: 2022, event: "Promoted to Principal" }, { year: 2023, event: "Promoted to Partner" }],
-    biography: "Dr. Johannes Fischer is a Managing Partner at Wellington Partners. He holds a PhD in biotechnology, an MSc in biochemistry and a medical doctorate, all from the Technical University of Munich, and carried out his PhD research on artificial metalloenzymes at King Abdullah University of Science and Technology in Saudi Arabia. Before venture capital he was a management consultant in the life sciences practice at L.E.K. Consulting, running projects for pharma, medical technology and laboratory supplies companies, and he acted as commercial advisor to a German cosmetics startup and as commercial advisor and co-founder of a Saudi food delivery company. He joined Wellington Partners in 2020 as a Senior Associate, was promoted to Principal in 2022 and to Partner in 2023. His cases include Adrenomed, Aignostics, Amboss, MMI, Nyra Health, ONWARD, Sidekick, SphingoTec and UroMems.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/dr-johannes-fischer/" }, { label: "Wellington Partners news page", url: "https://wellington-partners.com/news/" }]
-  },
-"lisa-gartenmann": {
-    name: "Dr. Lisa Gartenmann",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Investment and Corporate Development Manager",
-    joinedYear: 2024,
-    investmentFocus: ["Life Sciences", "Therapeutics"],
-    education: ["D.Phil. in Molecular Cell Biology, Sir William Dunn School of Pathology, University of Oxford"],
-    previousExperience: ["Strategy Consultant, Life Sciences division, L.E.K. Consulting", "Secondment, AstraZeneca (data analytics and US precision medicine functions)"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2024, event: "Began at Wellington Partners on secondment in H2 2024, joining formally in 2025" }],
-    biography: "Dr. Lisa Gartenmann is Investment and Corporate Development Manager at Wellington Partners; the firm's team page lists her simply as Manager. She holds a D.Phil. in molecular cell biology from the Sir William Dunn School of Pathology at the University of Oxford, where she researched centrosome and centriole assembly and published in Cell, Developmental Cell, the Journal of Cell Biology and the Journal of Cell Science, and where she received a Departmental Prize Studentship and a Departmental Post-Doctoral Extension Award. She spent five and a half years as a strategy consultant in L.E.K. Consulting's life science division, leading strategy and transaction projects for pharma, biotech and private equity clients, including a year on secondment at AstraZeneca supporting data analytics and US precision medicine. She began at Wellington on secondment in the second half of 2024 and joined formally in 2025. No board seats or named investments are published.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/dr-lisa-gartenmann/" }]
-  },
-"mel-spigelman": {
-    name: "Dr. Mel Spigelman",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Venture Partner",
-    joinedYear: 2005,
-    investmentFocus: ["Therapeutics", "Life Sciences"],
-    education: ["Doctor of Medicine, Mount Sinai School of Medicine, New York"],
-    previousExperience: ["President and CEO, Global Alliance for TB Drug Development", "Director of R&D, Global Alliance for TB Drug Development", "VP R&D USA and Global Head of Clinical Development, BASF Pharma Knoll AG", "Assistant Professor, Mount Sinai School of Medicine"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2003, event: "Became Director of R&D at the Global Alliance for TB Drug Development" }, { year: 2005, event: "Joined Wellington Partners as Venture Partner" }, { year: 2009, event: "Became President and CEO of the Global Alliance for TB Drug Development" }],
-    biography: "Dr. Mel Spigelman is a Venture Partner at Wellington Partners, an advisory rather than full-time investing role. He holds a doctorate in medicine from the Mount Sinai School of Medicine in New York, with training in internal medicine and oncology, and was an assistant professor there. He spent 13 years at BASF Pharma Knoll AG, including as Global Head of Clinical Development and Head of R&D USA. He joined the Global Alliance for TB Drug Development as Director of R&D in 2003 and has been its President and CEO since 2009, and he co-chairs the Working Group on New Drugs of the WHO Stop TB Partnership and sits on the governing board of GlaxoSmithKline's Tres Cantos Open Lab. He has served on the boards of several biotech companies including The Medicines Company, acquired by Novartis. He joined Wellington Partners in 2005 and advises on clinical development, regulatory affairs and strategic decisions.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/dr-mel-spigelman/" }]
-  },
-"peter-hirth": {
-    name: "Dr. Peter Hirth",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Venture Partner",
-    joinedYear: 2022,
-    investmentFocus: ["Therapeutics", "Biotech", "Life Sciences"],
-    education: ["PhD in Molecular Genetics, Heidelberg University"],
-    previousExperience: ["Co-founder and CEO, Plexxikon", "Co-founder and President, Sugen", "Vice President of Research, Boehringer Mannheim", "Research scientist, Max Planck Institute"],
-    boardSeats: ["IO Biotech (Chairman)", "Iconic Therapeutics", "Escient Pharmaceuticals", "Vaxcyte", "Trex Bio", "Aligos Therapeutics"],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 1991, event: "Co-founded Sugen and served as its President" }, { year: 2001, event: "Co-founded Plexxikon and served as CEO" }, { year: 2011, event: "Plexxikon acquired by Daiichi Sankyo" }, { year: 2022, event: "Joined Wellington Partners as Venture Partner" }],
-    biography: "Dr. Peter Hirth is a Venture Partner at Wellington Partners, an advisory rather than full-time investing role. He holds a PhD in molecular genetics from Heidelberg University, was a post-doctoral researcher at the University of California, San Diego and a research scientist at the Max Planck Institute, and was Vice President of Research at Boehringer Mannheim. He co-founded Sugen in 1991 and was its President until 2000; the company listed on Nasdaq in 1994 and was acquired by Pharmacia and then Pfizer in 1999. He co-founded Plexxikon in 2001 and was its CEO until 2013; it was acquired by Daiichi Sankyo in 2011. Over more than 30 years in biotechnology he helped advance FDA-approved therapeutics including Zelboraf and Sutent. He joined Wellington Partners in 2022 and chairs IO Biotech while serving on the boards of Iconic Therapeutics, Escient Pharmaceuticals, Vaxcyte, Trex Bio and Aligos Therapeutics.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/dr-peter-hirth/" }]
-  },
-"rainer-strohmenger": {
-    name: "Dr. Rainer Strohmenger",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Managing Partner",
-    joinedYear: 1997,
-    investmentFocus: ["Life Sciences", "Therapeutics", "Medical Devices", "Digital Health"],
-    education: ["Doctorate in Medicine, Ludwig-Maximilians-University Munich", "MSc in Economics, Ludwig-Maximilians-University Munich", "Entrepreneurship training, MIT Entrepreneurship Center, Boston"],
-    previousExperience: ["Medical researcher in cardiovascular physiology, Ludwig-Maximilians-University Munich", "Health economics researcher, Ludwig-Maximilians-University Munich"],
-    boardSeats: [],
-    researchState: "exhausted",
-    researchChecked: "2026-08-24",
-    notableInvestments: [
-    /*
-       Enriched 2026-08-23, Phase 1 of the database-wide rollout. His
-       Wellington bio names ten companies against him personally; four more
-       rows carry announcements that name or quote him directly (iOmx names him
-       a Series A investor and Supervisory Board member; Adrenomed, Koa Health
-       and SphingoTec quote him in the round release). Amboss, eGenesis, Neuway
-       and Quanta stay bare: Wellington participation is documented but no
-       source names him on those deals. Actelion stays undated: no source
-       states when the investment was made. */
-    { name: "Actelion", ticker: null,
-      sector: "Biotech", subsector: "Biopharmaceuticals",
-      evidence: [{ url: "https://wellington-partners.com/port/dr-rainer-strohmenger/", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Adrenomed", ticker: null, stage: "Series D", year: 2018, yearPrecision: "year",
-      sector: "Biotech", subsector: "Sepsis Therapeutics",
-      evidence: [{ url: "https://adrenomed.com/adrenomed-closes-e-24-m-financing-led-by-wellington-and-hbm/", type: "deal-announcement", checked: "2026-08-23" }] },
-    { name: "Amboss", ticker: null },
-    { name: "Definiens", ticker: null,
-      evidence: [{ url: "https://wellington-partners.com/port/dr-rainer-strohmenger/", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "eGenesis", ticker: null },
-    { name: "Immatics", ticker: null,
-      evidence: [{ url: "https://wellington-partners.com/port/dr-rainer-strohmenger/", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Invendo medical", ticker: null,
-      evidence: [{ url: "https://wellington-partners.com/port/dr-rainer-strohmenger/", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "iOmx", ticker: null, stage: "Series A", year: 2016, yearPrecision: "year",
-      sector: "Biotech", subsector: "Immuno-Oncology", role: "board",
-      evidence: [{ url: "https://www.prnewswire.com/news-releases/iomx-therapeutics-enhances-supervisory-board-301117637.html", type: "deal-announcement", checked: "2026-08-23" },
-                  { url: "https://sofinnovapartners.com/news/iomx-therapeutics-raises-eur-40-million-in-series-a-round", type: "firm-announcement", checked: "2026-08-23" }] },
-    { name: "Koa Health", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year",
-      sector: "Digital Health", subsector: "Mental Health",
-      evidence: [{ url: "https://koahealth.com/blog-post/koa-health-series-a-press-release/", type: "deal-announcement", checked: "2026-08-23" }] },
-    { name: "MTM Laboratories", ticker: null,
-      evidence: [{ url: "https://wellington-partners.com/port/dr-rainer-strohmenger/", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Neuway", ticker: null },
-    { name: "Oxford Immunotec", ticker: null,
-      evidence: [{ url: "https://wellington-partners.com/port/dr-rainer-strohmenger/", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Quanta", ticker: null },
-    { name: "SphingoTec", ticker: null, stage: "Growth", year: 2018, yearPrecision: "year",
-      sector: "Diagnostics", subsector: "Critical Care Biomarkers", role: "board",
-      evidence: [{ url: "https://www.prnewswire.com/news-releases/sphingotec-raises-20-million-from-hbm-and-wellington-partners-300726666.html", type: "deal-announcement", checked: "2026-08-23" }] },
-    { name: "Grandis", ticker: null,
-      evidence: [{ url: "https://wellington-partners.com/port/dr-rainer-strohmenger/", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Wavelight", ticker: null,
-      evidence: [{ url: "https://wellington-partners.com/port/dr-rainer-strohmenger/", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "NoemaLife", ticker: null,
-      evidence: [{ url: "https://wellington-partners.com/port/dr-rainer-strohmenger/", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Genkyotex", ticker: null,
-      evidence: [{ url: "https://wellington-partners.com/port/dr-rainer-strohmenger/", type: "partner-bio", checked: "2026-08-23" }] }
-  ],
-    ipoCount: 6,
-    majorExits: 8,
-    careerTimeline: [{ year: 1997, event: "Joined Wellington Partners" }, { year: 2000, event: "Became Managing Partner" }],
-    biography: "Dr. Rainer Strohmenger is a Managing Partner of Wellington Partners and leads its life science investing. He holds a doctorate in medicine and an MSc in economics, both from Ludwig-Maximilians-University Munich, where he worked as a medical researcher in cardiovascular physiology and as a health economics researcher, and he trained at the MIT Entrepreneurship Center in Boston. He joined Wellington Partners in 1997 and became Managing Partner in December 2000. The firm credits him with more than 25 investments including Actelion, Immatics, Definiens, eGenesis, Oxford Immunotec, Amboss and iOmx, and with 6 IPOs and 8 trade sales, among them acquisitions by Johnson & Johnson, Novartis, Alcon, Roche, AstraZeneca and Perkin Elmer. He represents the firm on the VC Council of Invest Europe and is a member of the Senate of the German Association of Small and Medium-sized Businesses (BVMW); Wellington does not publish an individual portfolio board seat list for him.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/dr-rainer-strohmenger/" }]
-  },
-"regina-hodits": {
-    name: "Dr. Regina Hodits",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Venture Advisor",
-    joinedYear: 2010,
-    investmentFocus: ["Life Sciences", "Therapeutics", "Digital Health"],
-    education: ["PhD in Biochemistry"],
-    previousExperience: ["Managing Partner, Wellington Partners (until 2025)", "Partner, Atlas Venture", "Investment Manager, Apax Partners", "Consultant, McKinsey & Company"],
-    boardSeats: ["Carisma Therapeutics", "ONWARD Medical", "Sidekick Health", "SNIPR Biome", "STipe Therapeutics"],
-    notableInvestments: [{ name: "Themis Bioscience", ticker: null }, { name: "Rigontec", ticker: null }, { name: "Sapiens", ticker: null }, { name: "ONWARD Medical", ticker: null }, { name: "Carisma Therapeutics", ticker: null }, { name: "SNIPR Biome", ticker: null }],
-    ipoCount: null,
-    majorExits: 5,
-    careerTimeline: [{ year: 2000, event: "Began working in venture capital" }, { year: 2010, event: "Joined Wellington Partners" }, { year: 2025, event: "Moved from Managing Partner to Venture Advisor" }],
-    biography: "Dr. Regina Hodits is a Venture Advisor at Wellington Partners, a role she took up in 2025 after serving as a Managing Partner of the firm. She holds a PhD in biochemistry and has worked in venture capital since 2000, previously as a Partner at Atlas Venture, an Investment Manager at Apax and a consultant at McKinsey & Company. She joined Wellington Partners in 2010 and oversaw more than 25 investments, 13 of them across the WPLS III to WPLS V funds. Her exits include Themis (acquired by MSD in 2020), Rigontec (MSD, 2017), Sapiens (Medtronic, 2014) and ONWARD Medical's Euronext IPO. She represented Wellington funds on the boards of Carisma, ONWARD, Sidekick, SNIPR Biome and STipe, served on the Advisory Council of KfW Capital, and was spokesperson for the board of the German private equity and venture capital association BVK from 2015 to 2020. In her advisor capacity she supports existing portfolio companies.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/dr-regina-hodits/" }]
-  },
-"robert-buschauer": {
-    name: "Dr. Robert Buschauer",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Associate",
-    joinedYear: 2024,
-    investmentFocus: ["Life Sciences", "Biotech"],
-    education: ["PhD in Biochemistry (summa cum laude), Ludwig-Maximilians-University Munich", "Master's degree in Biochemistry, Ludwig-Maximilians-University Munich"],
-    previousExperience: ["Intern, Life Sciences venture capital platform, Gimv"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2024, event: "Joined Wellington Partners" }],
-    biography: "Dr. Robert Buschauer is an Associate on Wellington Partners' life sciences team. He holds a master's degree and a PhD in biochemistry from Ludwig-Maximilians-University Munich, the doctorate awarded summa cum laude, and his doctoral work on the structural biology and regulation of protein biosynthesis produced publications in Science, Nature, Nature Structural & Molecular Biology, Molecular Cell and the EMBO Journal; his master's research at UC San Diego was published in Cell. He held a PhD fellowship from the Boehringer Ingelheim Fonds and received the Römer Prize for outstanding achievements by young scientists. Before Wellington he interned on Gimv's life sciences venture capital platform, working on deal screening, due diligence and portfolio work. He joined Wellington Partners in 2024. No board seats or named investments are published.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/dr-robert-buschauer/" }]
-  },
-"ulrich-granzer": {
-    name: "Dr. Ulrich Granzer",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Venture Partner",
-    joinedYear: 2004,
-    investmentFocus: ["Therapeutics", "Life Sciences"],
-    education: ["PhD in Pharmaceutical Chemistry, University of Tübingen"],
-    previousExperience: ["Founder and CEO, Granzer Regulatory Services", "Global Head of Regulatory Affairs, Bayer AG", "Regulatory Affairs Leader, BASF Pharma / Knoll", "GlaxoWellcome (role not specified on firm site)"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2002, event: "Founded Granzer Regulatory Services" }, { year: 2004, event: "Joined Wellington Partners as Venture Partner" }],
-    biography: "Dr. Ulrich Granzer is a Venture Partner at Wellington Partners, an advisory rather than full-time investing role. He holds a PhD in pharmaceutical chemistry from the University of Tübingen. He began his career at GlaxoWellcome, led regulatory affairs at BASF Pharma Knoll, and was Global Head of Regulatory Affairs at Bayer AG. In 2002 he founded Granzer Regulatory Services, a Munich-based consultancy that he still runs and that the firm says has served more than 500 life science companies. He joined Wellington Partners in 2004 and advises the life science team on drug development and regulatory affairs. Wellington publishes no board seats or named investments for him.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/dr-ulrich-granzer/" }]
-  },
-"varun-gupta": {
-    name: "Dr. Varun Gupta",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Partner",
-    joinedYear: 2018,
-    investmentFocus: ["Life Sciences", "Therapeutics", "Biotech"],
-    education: ["PhD in Neuroscience (summa cum laude), Freie Universität Berlin", "MBA, IESE Business School, Barcelona", "MSc in Medical Biotechnology, Post-Graduate Institute of Medical Education & Research, Chandigarh"],
-    previousExperience: ["Intern, Ysios Capital, Barcelona", "Investment team support, Forbion, Naarden/Amsterdam"],
-    boardSeats: [],
-    notableInvestments: [{ name: "STipe", ticker: null }, { name: "MinervaX", ticker: null }, { name: "Confo Therapeutics", ticker: null }, { name: "ImCheck Therapeutics", ticker: null }, { name: "iOmx", ticker: null }, { name: "Quanta", ticker: null }, { name: "TRiCares", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2018, event: "Joined Wellington Partners" }, { year: 2023, event: "Promoted to Partner" }],
-    biography: "Dr. Varun Gupta is a Partner at Wellington Partners, listed by the firm as Principal and Partner. He holds a PhD in neuroscience awarded summa cum laude from the Freie Universität Berlin, an MBA from IESE Business School in Barcelona and an MSc in medical biotechnology from the Post-Graduate Institute of Medical Education and Research in Chandigarh, India. He published research in Nature Neuroscience, PLOS Biology and Autophagy and held Indian Council for Medical Research and Council of Scientific and Industrial Research fellowships. Before Wellington he interned at Ysios Capital in Barcelona, where he was involved in investment processes including Galecto Biotech, and supported the investment team at Forbion in the Netherlands. He joined Wellington Partners in 2018 and was promoted to Partner in 2023; his investments include STipe, MinervaX, Confo, ImCheck, iOmx, Quanta and TRiCares. He also mentors early scientific projects through SPARK-BIH Berlin and EIT Health Wild Card.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/dr-varun-gupta/" }]
-  },
-"wolfgang-baiker": {
-    name: "Dr. Wolfgang Baiker",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Venture Partner",
-    joinedYear: 2016,
-    investmentFocus: ["Therapeutics", "Life Sciences", "Biotech"],
-    education: ["Doctorate in Medicine, University of Ulm", "MBA, Pace University, New York"],
-    previousExperience: ["President and CEO, Boehringer Ingelheim USA", "Executive Management Board Member, Boehringer Ingelheim", "Global Head of Development, Boehringer Ingelheim", "Global Head of Project Management, Boehringer Ingelheim"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2013, event: "Joined the Executive Management Board of Boehringer Ingelheim" }, { year: 2016, event: "Joined Wellington Partners as Venture Partner" }, { year: 2018, event: "Became President and CEO of Boehringer Ingelheim USA" }],
-    biography: "Dr. Wolfgang Baiker is a Venture Partner at Wellington Partners, an advisory rather than full-time investing role. He holds a doctorate in medicine from the University of Ulm and an MBA from Pace University in New York. He spent more than 30 years at Boehringer Ingelheim, where he was Global Head of Project Management, Global Head of Development, a member of the Board of Managing Directors with global production responsibility, a member of the Executive Management Board from 2013, and President and CEO of Boehringer Ingelheim USA from January 2018. He joined Wellington Partners as a Venture Partner in 2016. Wellington publishes no board seats or named investments for him.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/dr-wolfgang-baiker/" }]
-  },
-"ernst-mannheimer": {
-    name: "Ernst Mannheimer",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Managing Partner, Legal Counsel",
-    joinedYear: 1993,
-    investmentFocus: [],
-    education: ["Comparative Literature, Ludwig-Maximilians-University Munich"],
-    previousExperience: ["Assistant to the CEO, Matuschka Group"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 1993, event: "Joined the Wellington Partners organisation" }],
-    biography: "Ernst Mannheimer is a Managing Partner and Legal Counsel of Wellington Partners. His role is legal, fund structuring and investor relations rather than investing; he is included here because he carries an explicit Managing Partner title. He studied comparative literature at Ludwig-Maximilians-University Munich and was previously assistant to the CEO of the Matuschka Group, an investment banking, venture capital, real estate and M&A organisation. Wellington gives his joining year as 1993, which predates the firm's 1998 founding date and appears to reflect the predecessor organisation. He focuses on fund structuring, the legal aspects of funds, deal structuring and legal and tax matters in investor relations, and the firm credits him with experience across more than 100 transactions and more than 40 exits. He co-heads Wellington Partners Advisory AG with Harald Keller and is listed as a managing director of that entity in the firm's imprint.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/ernst-mannheimer/" }, { label: "Wellington Partners imprint", url: "https://wellington-partners.com/imprint/" }]
-  },
-"harald-keller": {
-    name: "Harald Keller",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Managing Partner, CFO",
-    joinedYear: 1998,
-    investmentFocus: [],
-    education: ["MSc in Computer Science"],
-    previousExperience: ["Finance Manager, Procter & Gamble, Schwalbach", "Director of Finance & Controlling, Benckiser Export GmbH and Lancaster Export GmbH, Wiesbaden", "Interim CFO, Benckiser Hungary", "Director of Finance and Information Technology, Burger King Germany, Munich"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 1990, event: "Finance Manager at Procter & Gamble, Schwalbach" }, { year: 1994, event: "Director of Finance & Controlling at Benckiser Export and Lancaster Export, Wiesbaden" }, { year: 1996, event: "Director of Finance and Information Technology at Burger King Germany" }, { year: 1998, event: "Joined Wellington Partners" }],
-    biography: "Harald Keller is a Managing Partner and CFO of Wellington Partners. His role is finance and operations rather than investing; he is included here because he carries an explicit Managing Partner title. He holds an MSc in computer science and was Finance Manager at Procter & Gamble in Schwalbach from 1990 to 1994, Director of Finance and Controlling at Benckiser Export GmbH and Lancaster Export GmbH in Wiesbaden from 1994 to 1996 with an interim CFO stint at Benckiser Hungary, and Director of Finance and Information Technology at Burger King Germany in Munich from 1996 to 1998. He joined Wellington Partners in 1998 and is responsible for fund management, financial structures, investor relations, reporting and IT systems. He co-heads the Swiss entity Wellington Partners Advisory AG with Ernst Mannheimer and is listed as a managing director of that company in the firm's imprint.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/harald-keller/" }, { label: "Wellington Partners imprint", url: "https://wellington-partners.com/imprint/" }]
-  },
-"erich-schlick": {
-    name: "Prof. Dr. Erich Schlick",
-    firm: "Wellington Partners",
-    firmSlug: "wellington-partners",
-    title: "Venture Partner",
-    joinedYear: 2005,
-    investmentFocus: ["Therapeutics", "Biotech", "Life Sciences"],
-    education: ["Doctorate in Medicine, University of Heidelberg", "Professorship in Immunopharmacology", "Training at the US National Cancer Institute (oncology and immunology)"],
-    previousExperience: ["Global Head of R&D and Executive Board Member, BASF Pharma / Knoll AG", "Director and Head of 3i Healthcare Germany, 3i", "Deputy Sector Head, 3i Healthcare Worldwide, 3i"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Symetis", ticker: null }, { name: "Immatics", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2005, event: "Joined Wellington Partners as Venture Partner" }],
-    biography: "Prof. Dr. Erich Schlick is a Venture Partner at Wellington Partners, an advisory rather than full-time investing role. He holds a doctorate in medicine from the University of Heidelberg and a professorship in immunopharmacology, and trained at the US National Cancer Institute in oncology and immunology. He spent 15 years at BASF Pharma and Knoll AG, where he was Global Head of R&D and an executive board member, and where in the 1990s he initiated the development of Humira, the first fully human monoclonal antibody treatment for rheumatoid arthritis, which reached $20 billion in sales by 2018. He then joined 3i as Director and Head of 3i Healthcare Germany and Deputy Sector Head of 3i Healthcare Worldwide. He joined Wellington Partners in 2005; portfolio successes he is associated with include Symetis, acquired by Boston Scientific, and Immatics, which listed on Nasdaq in 2020 via a SPAC transaction.",
-    sources: [{ label: "Wellington Partners team profile", url: "https://wellington-partners.com/port/prof-dr-erich-schlick/" }]
-  },
 "sabine-kannegiesser": {
     name: "Sabine Kannegiesser",
     firm: "Wellington Partners",
@@ -5381,6 +4142,2116 @@ Object.assign(partnerProfiles, {
       { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
       { label: "ASU+GSV Summit — Deborah Quazzo", url: "https://asugsvsummit.com/leadership/deborah-quazzo" },
       { label: "SALT — Deborah Quazzo speaker bio", url: "https://archive2.salt.org/speakers/deborah-quazzo" }
+    ]
+  },
+"adam-freed": {
+    name: "Adam Freed",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://gsv.ventures/team",
+    firm: "GSV Ventures",
+    firmSlug: "gsv-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    education: ["BA in Linguistics, Harvard University", "Master's degree, Yale Law School"],
+    previousExperience: ["CEO, Teachers Pay Teachers (from 2014)", "Chief Operating Officer, Etsy", "International Product Management and International Sales Operations, Google", "Television reporter and anchor"],
+    firmHistory: [],
+    boardSeats: ["Teachers Pay Teachers (Board Chair)", "Brooklyn Children's Museum"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Named CEO of Teachers Pay Teachers after serving as Chief Operating Officer of Etsy." }
+    ],
+    notableInvestments: [],
+    biography: "Adam Freed is a Managing Partner at GSV Ventures, an education and workforce focused venture firm. He is board chair and former chief executive of Teachers Pay Teachers, which he joined as CEO in 2014 after serving as Chief Operating Officer of Etsy; under his leadership the marketplace reached more than 75 percent of K-12 teachers in the United States, Canada, and Australia. Earlier he led international product management and international sales operations at Google through the company's IPO period, and he began his career as a television reporter and anchor, earning an Emmy award. He holds a BA in Linguistics from Harvard University and a degree from Yale Law School.",
+    sources: [
+      { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
+      { label: "ASU+GSV Summit — Adam Freed", url: "https://asugsvsummit.com/leadership/adam-freed" },
+      { label: "TechCrunch — Teachers Pay Teachers names Freed CEO (Aug 2014)", url: "https://techcrunch.com/2014/08/07/following-its-may-financing-teachers-pay-teachers-names-former-etsy-exec-as-ceo" }
+    ]
+  },
+"michael-cohn": {
+    name: "Michael Cohn",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://gsv.ventures/team",
+    firm: "GSV Ventures",
+    firmSlug: "gsv-ventures",
+    title: "Co-Founder & Partner",
+    joinedYear: 2016,
+    education: ["MBA, Kellogg School of Management, Northwestern University", "BBA, University of Michigan"],
+    previousExperience: ["Director, GSV Advisors (2011-2016)"],
+    firmHistory: [],
+    boardSeats: ["BEGIN", "QuillBot", "Lightneer", "Toucan"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2011, event: "Joined GSV Advisors as a Director, managing an angel portfolio and helping scale the ASU GSV Summit." },
+      { year: 2016, event: "Became a founding member of GSV Ventures (originally GSV AcceleraTE)." }
+    ],
+    notableInvestments: [
+      { name: "BEGIN" },
+      { name: "QuillBot" },
+      { name: "Lightneer" },
+      { name: "Toucan" }
+    ],
+    biography: "Michael Cohn is Co-Founder and Partner at GSV Ventures, the education and workforce technology venture firm launched in 2016, where he works on fund management, investment sourcing, capital raising, and diligence. He has worked with the GSV platform since 2011, serving as a Director at GSV Advisors from 2011 to 2016, where he managed an angel portfolio and helped scale the ASU GSV Summit into an annual event with thousands of attendees. He serves on the boards of portfolio companies including BEGIN, QuillBot, Lightneer, and Toucan, and holds observer roles at several others. He holds an MBA from Northwestern's Kellogg School of Management and a BBA from the University of Michigan.",
+    sources: [
+      { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
+      { label: "ASU+GSV Summit — Michael Cohn", url: "https://asugsvsummit.com/leadership/michael-cohn" }
+    ]
+  },
+"luben-pampoulov": {
+    name: "Luben Pampoulov",
+    sectors: ["Edtech", "Consumer"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.asugsvsummit.com/speakers/luben-pampoulov",
+    firm: "GSV Ventures",
+    firmSlug: "gsv-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: ["BA in Economics and International Studies, UCLA"],
+    previousExperience: ["Co-Founder and Partner, GSV Asset Management", "Analyst, ThinkEquity Partners", "Professional tennis player, ATP Tour"],
+    firmHistory: [],
+    boardSeats: ["Simplilearn", "ATP Tour"],
+    ipoCount: 5,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2005, event: "Captained the UCLA tennis team to the NCAA Championship as its number one player." }
+    ],
+    notableInvestments: [
+      { name: "Coursera", ticker: "COUR" },
+      { name: "Spotify", ticker: "SPOT" },
+      { name: "Lyft", ticker: "LYFT" },
+      { name: "Snap", ticker: "SNAP" },
+      { name: "Dropbox", ticker: "DBX" },
+      { name: "Photomath" }
+    ],
+    biography: "Luben Pampoulov is a Partner at GSV Ventures and a co-founder and Partner of GSV Asset Management, with experience as a growth investor in consumer technology and education technology. At GSV he led early investments in companies including Coursera, Photomath, Spotify, Lyft, Snap, and Dropbox. He serves on the boards of Simplilearn and the ATP Tour, and began his finance career as an analyst at ThinkEquity Partners, a San Francisco investment bank. Before investing he was a professional tennis player on the ATP Tour and captained the UCLA tennis team that won the 2005 NCAA Championship. He holds a BA in Economics and International Studies from UCLA.",
+    sources: [
+      { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
+      { label: "ASU+GSV Summit — Luben Pampoulov speaker bio", url: "https://www.asugsvsummit.com/speakers/luben-pampoulov" },
+      { label: "AI for Good (ITU) — Luben Pampoulov speaker bio", url: "https://aiforgood.itu.int/speaker/luben-pampoulov/" }
+    ]
+  },
+"claire-zau": {
+    name: "Claire Zau",
+    sectors: ["AI", "Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://gsv.ventures/team",
+    firm: "GSV Ventures",
+    firmSlug: "gsv-ventures",
+    title: "Partner (AI Lead)",
+    joinedYear: null,
+    education: ["BA, Stanford University", "Master's degree, Graduate School of Education, University of Pennsylvania"],
+    previousExperience: ["Venture Fellow, Red & Blue Ventures", "Catalyst (education accelerator)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Joined Lightspeed Venture Partners as a Partner, as reported by TechCrunch in August 2026." }
+    ],
+    notableInvestments: [],
+    biography: "Claire Zau is listed by GSV Ventures as a Partner and AI Lead, heading the firm's AI investment coverage and research. She writes a widely followed newsletter on AI and education and has spoken on AI and learning at the World Economic Forum, the ASU+GSV Summit, EdTech Week, and ISTE, and advises Arizona State University's external AI thought leadership group. She previously served as a Venture Fellow at Red & Blue Ventures and worked with the education accelerator Catalyst. She holds a BA from Stanford University and a master's degree from the University of Pennsylvania Graduate School of Education. In August 2026 TechCrunch reported that she had joined Lightspeed Venture Partners as a Partner.",
+    sources: [
+      { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
+      { label: "ASU+GSV Summit — Claire Zau", url: "https://asugsvsummit.com/leadership/claire-zau" },
+      { label: "TechCrunch — Lightspeed hire (Aug 2026)", url: "https://techcrunch.com/2026/08/05/how-lightspeed-found-its-newest-hire-via-instagram-dm/" }
+    ]
+  },
+"christine-e-boyle": {
+    name: "Christine E. Boyle, PhD",
+    sectors: ["Water"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.burntislandventures.com/team",
+    firm: "Burnt Island Ventures",
+    firmSlug: "burnt-island-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: ["PhD, University of North Carolina at Chapel Hill"],
+    previousExperience: ["Founder and CEO, Valor Water Analytics (acquired by Xylem, 2018)", "Vice President, Digital Product Development, Xylem (5 years)", "Researcher, UNC Environmental Finance Center"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Valor Water Analytics, the water utility analytics company she founded and led as CEO, was acquired by Xylem, where she became VP of Digital Product Development." },
+      { year: 2025, event: "Named as Partner in Burnt Island Ventures' $50 million Fund II announcement." }
+    ],
+    notableInvestments: [],
+    biography: "Christine Boyle is a Partner at Burnt Island Ventures. She earned a PhD from the University of North Carolina at Chapel Hill, where her research on water resource planning and utility finance at the Environmental Finance Center grew into Valor Water Analytics, the utility analytics company she founded and led as CEO. Valor was acquired by Xylem in 2018, and Boyle then spent five years at Xylem as Vice President of Digital Product Development, scaling the software to utilities worldwide. She has chaired the California Nevada section of the American Water Works Association and now invests in early stage water companies at Burnt Island.",
+    sources: [
+      { label: "Burnt Island Ventures team page", url: "https://www.burntislandventures.com/team" },
+      { label: "UNC Environmental Finance Center Q&A with Christine Boyle", url: "https://efc.web.unc.edu/2018/08/10/apparent-water-loss-optimized-vision-and-entrepreneurship-qa-with-valor-founder-and-ceo-dr-christine-boyle/" },
+      { label: "Business Wire, Fund II close (Oct 2025)", url: "https://www.businesswire.com/news/home/20251022551885/en/Burnt-Island-Ventures-Raises-$50-Million-to-Fund-the-Development-of-Critical-Water-Technologies-and-Infrastructure" }
+    ]
+  },
+"steve-kloos": {
+    name: "Steve Kloos, PhD",
+    sectors: ["Water"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.burntislandventures.com/team",
+    firm: "Burnt Island Ventures",
+    firmSlug: "burnt-island-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: [],
+    previousExperience: ["Partner, True North Venture Partners", "Membrane Technology Leader, GE Water", "Founding board chair, Current (water innovation organization)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Named as Partner in Burnt Island Ventures' $50 million Fund II announcement, bringing senior leadership experience from GE Water and True North Venture Partners." }
+    ],
+    notableInvestments: [],
+    biography: "Steve Kloos is a Partner at Burnt Island Ventures. A PhD technologist by training, he spent his corporate career in the water industry, including serving as Membrane Technology Leader at GE Water, one of the sector's largest treatment businesses. He moved into venture investing as a Partner at True North Venture Partners, where he backed early stage water and energy technologies, and he served as founding board chair of the water innovation organization Current. At Burnt Island he applies technical and commercial depth to diligence on treatment, filtration, and water infrastructure companies.",
+    sources: [
+      { label: "Burnt Island Ventures team page", url: "https://www.burntislandventures.com/team" },
+      { label: "Business Wire, Fund II close (Oct 2025)", url: "https://www.businesswire.com/news/home/20251022551885/en/Burnt-Island-Ventures-Raises-$50-Million-to-Fund-the-Development-of-Critical-Water-Technologies-and-Infrastructure" }
+    ]
+  },
+"tom-ferguson": {
+    name: "Tom Ferguson",
+    sectors: ["Water", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.burntislandventures.com/team",
+    firm: "Burnt Island Ventures",
+    firmSlug: "burnt-island-ventures",
+    title: "Founder and Managing Partner",
+    joinedYear: 2020,
+    education: ["MA, University of Edinburgh", "MBA, Harvard Business School"],
+    previousExperience: ["Imagine H2O, water startup accelerator (built its programming; portfolio raised over $600 million)", "Lead author, first CDP Water Disclosure Report (2010)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2010, event: "Served as lead author of the first CDP Water Disclosure Report." },
+      { year: 2020, event: "Founded Burnt Island Ventures after building programming at the water accelerator Imagine H2O." },
+      { year: 2022, event: "Closed Burnt Island Ventures' $30 million debut fund." },
+      { year: 2025, event: "Closed the firm's $50 million second fund, anchored by Xylem." }
+    ],
+    notableInvestments: [],
+    biography: "Tom Ferguson is the founder and Managing Partner of Burnt Island Ventures, a venture firm dedicated to early stage water companies. He holds an MA from the University of Edinburgh and an MBA from Harvard Business School. He served as lead author of the first CDP Water Disclosure Report in 2010, then spent years at the water accelerator Imagine H2O, where he built its programming and supported portfolio companies that went on to raise more than $600 million. He launched Burnt Island Ventures in 2020 and has since closed a $30 million debut fund and a $50 million second fund, both anchored by the water technology company Xylem.",
+    sources: [
+      { label: "Burnt Island Ventures team page", url: "https://www.burntislandventures.com/team" },
+      { label: "Business Wire, Fund II close (Oct 2025)", url: "https://www.businesswire.com/news/home/20251022551885/en/Burnt-Island-Ventures-Raises-$50-Million-to-Fund-the-Development-of-Critical-Water-Technologies-and-Infrastructure" },
+      { label: "Forbes, Fund I close (Feb 2022)", url: "https://www.forbes.com/sites/rebeccaszkutak/2022/02/17/burnt-island-ventures-raises-30-million-for-early-stage-water-startups/" }
+    ]
+  },
+"christophe-jurczak": {
+    name: "Christophe Jurczak",
+    sectors: ["Quantum", "Deep Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.quantonation.com/team/",
+    firm: "Quantonation",
+    firmSlug: "quantonation",
+    title: "Partner",
+    joinedYear: 2018,
+    education: ["Masters in Engineering and Quantum Physics, École Polytechnique and École Normale Supérieure Paris", "PhD in Quantum Physics (under Prof. Alain Aspect)"],
+    previousExperience: ["Government and executive roles in energy, defense, and quantum computing across Europe and the United States"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Launched Quantonation in Paris, the world's first early stage venture fund dedicated to quantum technologies and deep physics." },
+      { year: 2026, event: "Led the firm through the 220 million euro close of Quantonation II, its oversubscribed second fund." }
+    ],
+    notableInvestments: [],
+    biography: "Christophe Jurczak is a Partner at Quantonation, the Paris based venture firm dedicated to quantum technologies and deep physics that he has led since its launch in 2018. He trained as a physicist, with degrees in engineering and quantum physics from Ecole Polytechnique and Ecole Normale Superieure in Paris and a PhD in quantum physics completed under Alain Aspect, later a Nobel laureate. He previously held government and executive roles in energy and defense in Europe and the United States. Under his leadership Quantonation raised a 91 million euro first fund that backed 27 companies and closed its 220 million euro second fund in 2026. Quantum Zeitgeist has named him among the twenty most influential individuals in quantum technology.",
+    sources: [
+      { label: "Quantonation team page", url: "https://www.quantonation.com/team/" },
+      { label: "Quantonation, Fund II close announcement (Feb 2026)", url: "https://www.quantonation.com/2026/02/18/quantonation-closes-e220-million-second-fund-to-back-the-industrialisation-of-quantum-and-physics-based-technologies/" },
+      { label: "Tech Funding News on Quantonation II", url: "https://techfundingnews.com/quantonation-220m-fund-diversity-pace/" }
+    ]
+  },
+"olivier-tonneau": {
+    name: "Olivier Tonneau",
+    sectors: ["Quantum", "Deep Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.quantonation.com/team/",
+    firm: "Quantonation",
+    firmSlug: "quantonation",
+    title: "Partner",
+    joinedYear: null,
+    education: ["Graduate, ESSEC Business School"],
+    previousExperience: ["Management consultant, Kearney (10 years)", "CEO, Gravitation (holding company of Charles Beigbeder)"],
+    firmHistory: [],
+    boardSeats: ["Multiverse Computing", "Qnami", "KETS Quantum Security", "EvolutionQ", "QC Design", "Kipu Quantum"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "As Partner, helped close Quantonation II at 220 million euros while serving on the boards of portfolio companies including Multiverse Computing and Kipu Quantum." }
+    ],
+    notableInvestments: [
+      { name: "Multiverse Computing" },
+      { name: "Qnami" },
+      { name: "Kipu Quantum" }
+    ],
+    biography: "Olivier Tonneau is a Partner at Quantonation, where he invests in quantum computing, quantum sensing, and deep physics companies across Europe and North America. A graduate of ESSEC Business School, he spent a decade as a management consultant at Kearney before serving as CEO of Gravitation, the investment holding company of entrepreneur Charles Beigbeder. He serves on the boards of Quantonation portfolio companies including Multiverse Computing, Qnami, KETS Quantum Security, EvolutionQ, QC Design, and Kipu Quantum, and he is a member of Class 28 of the Kauffman Fellows program.",
+    sources: [
+      { label: "Quantonation team page", url: "https://www.quantonation.com/team/" },
+      { label: "Quantonation, Fund II close announcement (Feb 2026)", url: "https://www.quantonation.com/2026/02/18/quantonation-closes-e220-million-second-fund-to-back-the-industrialisation-of-quantum-and-physics-based-technologies/" }
+    ]
+  },
+"carly-levin": {
+    name: "Carly Levin",
+    sectors: ["Legal Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.legaltech.com/team",
+    firm: "The LegalTech Fund",
+    firmSlug: "the-legaltech-fund",
+    title: "Partner, Strategic Initiatives",
+    joinedYear: null,
+    education: ["Graduate, Stanford University"],
+    previousExperience: ["Chief Strategy Officer, Cover Whale", "Investment banking, J.P. Morgan"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Joined commercial trucking insurtech Cover Whale in a senior management role, going on to serve as Chief Strategy Officer." },
+      { year: 2026, event: "Serves as Partner, Strategic Initiatives at The LegalTech Fund." }
+    ],
+    notableInvestments: [],
+    biography: "Carly Levin is Partner, Strategic Initiatives at The LegalTech Fund, bringing more than fifteen years of experience in deal making, capital markets, and strategic leadership. A Stanford graduate and former varsity lacrosse athlete, she began her career in investment banking at J.P. Morgan. In late 2022 she joined Cover Whale, a commercial trucking insurtech platform, in a senior management role and served as its Chief Strategy Officer. At The LegalTech Fund she leads strategic initiatives across the firm's network of founders, advisors, law firms, and corporate partners.",
+    sources: [
+      { label: "The LegalTech Fund team page", url: "https://www.legaltech.com/team" },
+      { label: "PR Newswire, Cover Whale senior management hires (Dec 2022)", url: "https://www.prnewswire.com/news-releases/cover-whale-hires-carly-levin-and-niv-ben-dor-to-senior-management-team-301700734.html" }
+    ]
+  },
+"gordon-crenshaw": {
+    name: "Gordon Crenshaw",
+    sectors: ["Legal Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.legaltech.com/team",
+    firm: "The LegalTech Fund",
+    firmSlug: "the-legaltech-fund",
+    title: "Partner",
+    joinedYear: null,
+    education: ["BS in Commerce, University of Virginia", "MBA, The Wharton School (University of Pennsylvania)"],
+    previousExperience: ["Investment banker, Citi", "Venture capital, growth equity, and private equity investing roles"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Serves as Partner at The LegalTech Fund, investing from pre-seed through Series A in companies at the intersection of law and technology." }
+    ],
+    notableInvestments: [],
+    biography: "Gordon Crenshaw is a Partner at The LegalTech Fund, where he invests from pre-seed through Series A in companies at the intersection of law and technology. He earned a BS in Commerce from the University of Virginia and an MBA from the Wharton School, and began his career as an investment banker at Citi before moving through venture capital, growth equity, and private equity investing roles. Known for a hands on style with founders, he works closely with portfolio companies on strategy and fundraising and serves on several startup boards.",
+    sources: [
+      { label: "The LegalTech Fund team page", url: "https://www.legaltech.com/team" },
+      { label: "Legal Innovation Spotlight interview", url: "https://legalinnovationspotlight.com/gordon-crenshaw/" }
+    ]
+  },
+"sam-elhag": {
+    name: "Sam Elhag",
+    sectors: ["Legal Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.legaltech.com/team",
+    firm: "The LegalTech Fund",
+    firmSlug: "the-legaltech-fund",
+    title: "Managing Partner & Co-Founder",
+    joinedYear: 2021,
+    education: [],
+    previousExperience: ["Chief Product Officer, co-founder, and board roles at early stage technology companies (15+ years)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Co-founded The LegalTech Fund with Zach Posner as the first venture fund solely dedicated to companies transforming the legal industry." },
+      { year: 2025, event: "The firm closed its oversubscribed $110 million second fund, bringing its portfolio to more than 80 companies." }
+    ],
+    notableInvestments: [],
+    biography: "Sam Elhag is Managing Partner and Co-Founder of The LegalTech Fund, which he launched with Zach Posner in 2021 as the first venture fund solely dedicated to backing companies transforming the world of law. He brings more than fifteen years of experience with early stage companies as a chief product officer, startup co-founder, and board director, and the firm highlights his technical product management and operational expertise. At the fund he works closely with founders on product and operations, and he has helped grow the portfolio to more than 80 companies across a $28.5 million first fund and a $110 million second fund.",
+    sources: [
+      { label: "The LegalTech Fund team page", url: "https://www.legaltech.com/team" },
+      { label: "The LegalTech Fund, Fund II close (Nov 2025)", url: "https://www.legaltech.com/post/the-legaltech-fund-closes-110-million-second-fund-to-power-the-next-generation-of-legal-innovation" }
+    ]
+  },
+"zach-posner": {
+    name: "Zach Posner",
+    sectors: ["Legal Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.legaltech.com/team",
+    firm: "The LegalTech Fund",
+    firmSlug: "the-legaltech-fund",
+    title: "Managing Partner & Co-Founder",
+    joinedYear: 2021,
+    education: ["BS in Accounting & Finance, Indiana University"],
+    previousExperience: ["Founder, edtech company acquired by McGraw Hill", "Insight Partners", "PricewaterhouseCoopers", "Adjunct lecturer, University of Southern California"],
+    firmHistory: [{ firmSlug: "insight-partners", role: null, startYear: null, endYear: null }],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Co-founded The LegalTech Fund with Sam Elhag as the first venture fund solely dedicated to companies transforming the legal industry." },
+      { year: 2022, event: "Closed the firm's $28.5 million first fund." },
+      { year: 2025, event: "Closed the firm's oversubscribed $110 million second fund." }
+    ],
+    notableInvestments: [],
+    biography: "Zach Posner is Managing Partner and Co-Founder of The LegalTech Fund, the first venture fund solely dedicated to companies transforming the legal industry. He holds a BS in accounting and finance from Indiana University and began his career at PricewaterhouseCoopers, later working at Insight Partners. A three time entrepreneur and active angel investor, he founded an education technology company that was acquired by McGraw Hill and taught as an adjunct lecturer in a masters program at the University of Southern California. Since co-founding the fund with Sam Elhag, he has led it through a $28.5 million first fund and an oversubscribed $110 million second fund backing more than 80 companies.",
+    sources: [
+      { label: "The LegalTech Fund team page", url: "https://www.legaltech.com/team" },
+      { label: "JEGI Leonis advisory board bio", url: "https://jl-co.com/advisoryboard/zach-posner/" },
+      { label: "The LegalTech Fund, Fund II close (Nov 2025)", url: "https://www.legaltech.com/post/the-legaltech-fund-closes-110-million-second-fund-to-power-the-next-generation-of-legal-innovation" }
+    ]
+  },
+"chiew-tung-lim": {
+    name: "Chiew Tung Lim",
+    sectors: [],
+    firm: "Motion Ventures",
+    firmSlug: "motion-ventures",
+    title: "Director of Finance",
+    joinedYear: null,
+    education: ["ACCA, Association of Chartered Certified Accountants"],
+    previousExperience: ["Audit, asset and wealth management sector, PwC", "Audit, asset and wealth management sector, KPMG", "Finance team, Play Ventures"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Serves as Director of Finance at Motion Ventures, managing day to day fund finances and compliance across the firm's funds." }
+    ],
+    notableInvestments: [],
+    biography: "Chiew Tung Lim is Director of Finance at Motion Ventures, the Singapore based maritime and supply chain venture firm, where she manages day to day fund finances and the compliance obligations that come with a multi fund, corporate backed platform. She trained as an auditor in the asset and wealth management practices of PwC and KPMG before moving to the finance team of Play Ventures, a gaming focused venture capital firm, giving her fund accounting experience on both the audit and manager sides. She is an associate of the Association of Chartered Certified Accountants and holds the Financial Modelling and Valuation Analyst certification.",
+    sources: [
+      { label: "Motion Ventures team page", url: "https://www.motion.vc/team/chiew-tung" }
+    ]
+  },
+"shaun-hon": {
+    name: "Shaun Hon",
+    sectors: ["Maritime", "Logistics", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.motion.vc/team/shaun-hon",
+    firm: "Motion Ventures",
+    firmSlug: "motion-ventures",
+    title: "Founder and General Partner",
+    joinedYear: 2021,
+    education: ["MEng Mechanical Engineering (First Class Honours), Imperial College London"],
+    previousExperience: ["Investment Principal, TRIVE", "Electric vehicle engineering roles on programmes for Amazon, BMW and Ford", "Well flow performance engineer, Royal Dutch Shell"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Founded Motion Ventures under Rainmaking in Singapore, closing a S$30 million first tranche anchored by SEEDS Capital, Wilhelmsen and HHLA." },
+      { year: 2023, event: "Grew the firm's corporate partner consortium to 15 maritime companies including Lloyd's Register and Stolt-Nielsen." },
+      { year: 2025, event: "Launched Motion Ventures Fund II at US$100 million, described as the largest dedicated maritime tech fund raised to date." }
+    ],
+    notableInvestments: [],
+    biography: "Shaun Hon is the Founder and General Partner of Motion Ventures, the Singapore based venture firm investing in digital and energy transitions across global supply chains, with maritime at its core. He launched the fund in 2021 under the venture studio Rainmaking and by 2025 had raised a US$100 million second fund backed by 17 strategic maritime corporations. Before Motion he was an Investment Principal at TRIVE, leading venture investments in B2B technology companies, and earlier worked as an engineer on electric vehicle programmes for Amazon, BMW and Ford and on well flow performance at Royal Dutch Shell. He holds a First Class Honours MEng in Mechanical Engineering from Imperial College London and has been named to Forbes 30 Under 30.",
+    sources: [
+      { label: "Motion Ventures team page", url: "https://www.motion.vc/team/shaun-hon" },
+      { label: "Motion Ventures Fund II announcement (GlobeNewswire, 2025)", url: "https://www.globenewswire.com/news-release/2025/03/18/3044402/0/en/motion-ventures-launches-largest-ever-maritime-tech-fund-at-100m-to-meet-the-industry-s-new-pace-of-adoption.html" },
+      { label: "TechCrunch on Motion Ventures launch (2021)", url: "https://techcrunch.com/2021/02/24/rainmaking-launches-motion-ventures-to-boost-innovation-in-the-maritime-industry" }
+    ]
+  },
+"alice-zheng": {
+    name: "Alice Zheng, MD",
+    sectors: ["Healthcare", "Digital Health", "Biotech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://foreground.vc/team/",
+    firm: "RH Capital",
+    firmSlug: "rh-capital",
+    title: "Partner",
+    joinedYear: null,
+    education: ["MD, University of Michigan", "MPH, University of Michigan", "MBA, Harvard Business School"],
+    previousExperience: ["Management consultant and women's health practice leader, McKinsey & Company", "Reproductive health roles, EngenderHealth and Marie Stopes International"],
+    firmHistory: [],
+    boardSeats: ["Seven Starling", "Millie"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Served as Principal at RH Capital as the firm closed its oversubscribed $38.5 million Fund II." },
+      { year: 2024, event: "Co-founded Foreground Capital as Partner, continuing to manage and grow RH Capital's women's health portfolio." }
+    ],
+    notableInvestments: [
+      { name: "Seven Starling" },
+      { name: "Millie" }
+    ],
+    biography: "Alice Zheng is a Partner at Foreground Capital and was previously a Principal at RH Capital, the women's health venture fund whose portfolio the Foreground team continues to manage after its 2024 spinout from Rhia Ventures. A physician by training, she led women's health work as a management consultant at McKinsey & Company, advising biopharma, diagnostics, global public health and private equity clients, and earlier held roles with the reproductive health nonprofits EngenderHealth and Marie Stopes International in East Africa and Asia. She serves on the boards of Seven Starling and Millie. She holds an MD and MPH from the University of Michigan and an MBA from Harvard Business School.",
+    sources: [
+      { label: "Foreground Capital team page", url: "https://foreground.vc/team/" },
+      { label: "Wharton FemTech interview with Alice Zheng (2023)", url: "https://medium.com/@whartonfemtech/an-interview-with-alice-zheng-principal-at-rh-capital-d0bd8ca2142c" },
+      { label: "Fierce Healthcare on RH Capital Fund II (2022)", url: "https://www.fiercehealthcare.com/finance/female-led-vc-rh-capital-closes-second-fund-385-million" }
+    ]
+  },
+"elizabeth-bailey": {
+    name: "Elizabeth Bailey",
+    sectors: ["Healthcare", "Digital Health", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://foreground.vc/team/",
+    firm: "RH Capital",
+    firmSlug: "rh-capital",
+    title: "Managing Partner",
+    joinedYear: 2019,
+    education: ["MPA, Harvard Kennedy School", "BA, Brown University"],
+    previousExperience: ["Partner, Commons Capital"],
+    firmHistory: [],
+    boardSeats: ["Raydiant Oximetry", "Testmate Health"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2019, event: "Co-founded RH Capital under Rhia Ventures and launched its $5 million first fund dedicated to women's health." },
+      { year: 2022, event: "Closed RH Capital's oversubscribed Fund II at $38.5 million as Managing Director." },
+      { year: 2024, event: "Co-founded Foreground Capital, the independent firm that continues to manage RH Capital Funds I and II." }
+    ],
+    notableInvestments: [
+      { name: "Raydiant Oximetry" },
+      { name: "Bloomlife" }
+    ],
+    biography: "Elizabeth Bailey is a Managing Partner of Foreground Capital and a co-founder of RH Capital, the impact first women's health venture fund created under the nonprofit Rhia Ventures in 2019, whose Funds I and II Foreground continues to manage following the team's 2024 spinout. She brings more than 20 years of venture capital and early stage healthcare investing experience, including as a Partner at Commons Capital, a double bottom line fund. At RH Capital she helped raise a $5 million Fund I and an oversubscribed $38.5 million Fund II focused on maternal health, contraception, fertility and other underinvested areas. She serves on the boards of Raydiant Oximetry and Testmate Health and holds an MPA from Harvard Kennedy School and a BA from Brown University.",
+    sources: [
+      { label: "Foreground Capital team page", url: "https://foreground.vc/team/" },
+      { label: "Rhia Ventures on the RH Capital team transition (2024)", url: "https://rhiaventures.org/media/rh-capital-team-transition/" },
+      { label: "Fierce Healthcare on RH Capital Fund II (2022)", url: "https://www.fiercehealthcare.com/finance/female-led-vc-rh-capital-closes-second-fund-385-million" }
+    ]
+  },
+"stasia-obremskey": {
+    name: "Stasia Obremskey",
+    sectors: ["Healthcare", "Digital Health", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://foreground.vc/team/",
+    firm: "RH Capital",
+    firmSlug: "rh-capital",
+    title: "Managing Partner",
+    joinedYear: 2019,
+    education: ["MBA, Harvard Business School", "BA Business Administration, University of Notre Dame"],
+    previousExperience: ["CFO roles at healthcare organizations", "Management consultant, Bain & Company", "Investment banker, Morgan Stanley"],
+    firmHistory: [],
+    boardSeats: ["Cadence OTC"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Began shaping a women's health investment strategy with philanthropist Dr. Ruth Shaber, the collaboration that led to RH Capital." },
+      { year: 2019, event: "Co-founded RH Capital under Rhia Ventures and helped launch its $5 million Fund I." },
+      { year: 2022, event: "Closed RH Capital's oversubscribed Fund II at $38.5 million as Managing Director and co-founder." },
+      { year: 2024, event: "Co-founded Foreground Capital, which continues to manage RH Capital Funds I and II." }
+    ],
+    notableInvestments: [
+      { name: "Cadence OTC" }
+    ],
+    biography: "Stasia Obremskey is a Managing Partner of Foreground Capital and a co-founder of RH Capital, the women's health venture fund launched under the nonprofit Rhia Ventures in 2019. The collaboration grew out of her work with philanthropist Dr. Ruth Shaber on directing capital toward reproductive and maternal health, and it produced one of the earliest funds dedicated exclusively to women's health, with $43.5 million under management across two funds at the 2022 close of Fund II. Earlier in her career she was a chief financial officer at multiple healthcare organizations, a management consultant at Bain & Company and an investment banker at Morgan Stanley. She serves on the board of Cadence OTC and holds an MBA from Harvard Business School and a BA from the University of Notre Dame.",
+    sources: [
+      { label: "Foreground Capital team page", url: "https://foreground.vc/team/" },
+      { label: "Forbes on RH Capital (2024)", url: "https://www.forbes.com/sites/cherylrobinson/2024/02/16/rh-capital-invests-in-90-women-bipoc-founders-in-womens-health/" },
+      { label: "Fierce Healthcare on RH Capital Fund II (2022)", url: "https://www.fiercehealthcare.com/finance/female-led-vc-rh-capital-closes-second-fund-385-million" }
+    ]
+  },
+"brian-mcloughlin": {
+    name: "Brian McLoughlin",
+    sectors: ["Insurtech", "Fintech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://mtechcapital.com/team/",
+    firm: "MTech Capital",
+    firmSlug: "mtech-capital",
+    title: "Partner and Co-Founder",
+    joinedYear: 2018,
+    education: ["MBA, Wharton School of Business", "BA, Rutgers College"],
+    previousExperience: ["Partner, Upfront Ventures (14 years)", "CFO, venture-backed fintech company"],
+    firmHistory: [{ firmSlug: "upfront-ventures", role: "Partner", startYear: null, endYear: null }],
+    boardSeats: ["Embroker", "Inshur", "Integriant", "Matic", "OCHO", "Openly", "Polly", "Voxel", "Zuub"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Co-founded MTech Capital with his brother Kevin, holding a $75 million first close backed by CNA Financial and NN Group." },
+      { year: 2022, event: "MTech invested in home insurance company Openly, where he holds a board seat." }
+    ],
+    notableInvestments: [
+      { name: "Openly" },
+      { name: "Matic" },
+      { name: "Embroker" }
+    ],
+    biography: "Brian McLoughlin is Partner and Co-Founder of MTech Capital, the insurtech focused venture firm he started with his brother Kevin, investing from Santa Monica across North America and Europe with backing from some of the world's largest insurers, brokers and asset managers. Before MTech he spent 14 years as a Partner at Los Angeles venture firm Upfront Ventures, where he focused on fintech investing, and earlier served as chief financial officer of a venture backed fintech company. He sits on the boards of MTech portfolio companies including Embroker, Inshur, Matic, Openly and Polly. He holds an MBA from the Wharton School and a BA from Rutgers College.",
+    sources: [
+      { label: "MTech Capital team page", url: "https://mtechcapital.com/team/" },
+      { label: "Intelligent Insurer on MTech's $75m first close (2018)", url: "https://www.intelligentinsurer.com/insurance/cna-nn-group-commit-75m-to-insurtech-venture-fund-mtech-capital-15803" }
+    ]
+  },
+"kevin-mcloughlin": {
+    name: "Kevin McLoughlin",
+    sectors: ["Insurtech", "Fintech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://mtechcapital.com/team/",
+    firm: "MTech Capital",
+    firmSlug: "mtech-capital",
+    title: "Partner and Co-Founder",
+    joinedYear: 2018,
+    education: ["MBA, Columbia Business School", "BA, Boston College"],
+    previousExperience: ["Global Head of Insurance Investment Banking, Bank of America Merrill Lynch", "Global Head of Insurance banking, Citigroup", "Head of European Insurance, UBS", "Finance and investments, AIG (1988-1995)"],
+    firmHistory: [],
+    boardSeats: ["Akur8", "Cybercube", "Hypatos", "Insurify", "Napo", "Peppy", "Plum Life", "Rest Less", "Thinksurance"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1988, event: "Began his career at AIG, working in finance and investments until 1995." },
+      { year: 2018, event: "Co-founded MTech Capital with his brother Brian, raising a $75 million first close from strategic insurers including CNA Financial and NN Group." },
+      { year: 2024, event: "Portfolio company Corvus Insurance, where he held a board seat, was acquired by Travelers for $435 million." }
+    ],
+    notableInvestments: [
+      { name: "Corvus Insurance" },
+      { name: "Akur8" },
+      { name: "CyberCube" }
+    ],
+    biography: "Kevin McLoughlin is Partner and Co-Founder of MTech Capital, leading the insurtech venture firm's London office and its European investing. His career spans more than three decades in insurance finance, including 22 years in investment banking focused exclusively on the sector, as Global Head of Insurance Investment Banking at Bank of America Merrill Lynch, head of global insurance banking at Citigroup and head of European insurance at UBS, after starting out in finance and investments at AIG from 1988 to 1995. At MTech he has backed companies including Corvus Insurance, acquired by Travelers for $435 million in 2024, Akur8 and CyberCube, and he sits on boards including Akur8, Insurify and Thinksurance. He holds an MBA from Columbia Business School and a BA from Boston College.",
+    sources: [
+      { label: "MTech Capital team page", url: "https://mtechcapital.com/team/" },
+      { label: "Vator interview with Kevin McLoughlin (2022)", url: "https://vator.tv/2022-04-07-meet-kevin-mcloughlin-partner-and-co-founder-mtech-capital/" },
+      { label: "Insurance Journal on Travelers completing the Corvus acquisition (2024)", url: "https://www.insurancejournal.com/news/national/2024/01/03/754159.htm" }
+    ]
+  },
+"cristina-nunez": {
+    name: "Cristina Nuñez",
+    sectors: ["Beauty", "Consumer"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://truebeautyventures.com/pages/team",
+    firm: "True Beauty Ventures",
+    firmSlug: "true-beauty-ventures",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2020,
+    education: ["BA Public Policy Studies, Duke University"],
+    previousExperience: ["Investment banking, UBS Investment Bank", "Private equity roles, Catterton Partners (now L Catterton) and Tengram Capital Partners", "Executive leadership, Laura Geller Beauty", "General Manager and COO, Clark's Botanicals"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Leaves her role as General Manager and COO of Clark's Botanicals to co-found True Beauty Ventures with Rich Gersten." },
+      { year: 2021, event: "True Beauty Ventures closes its debut fund in excess of $42 million." },
+      { year: 2024, event: "Helps bring the firm's second fund near its $75 million target, with about $70 million committed by June." }
+    ],
+    notableInvestments: [],
+    biography: "Cristina Nuñez is Co-Founder and General Partner of True Beauty Ventures, where she combines an investor's and an operator's view of the beauty industry. She began her career in consumer focused investment banking at UBS before moving into private equity at Catterton Partners (now L Catterton) and Tengram Capital Partners, where she first worked with Rich Gersten. She then moved into operating roles, holding executive leadership positions at Laura Geller Beauty and serving as General Manager and Chief Operating Officer of skincare brand Clark's Botanicals. In 2020 she co-founded True Beauty Ventures, which invests in emerging beauty and wellness brands from Seed to Series B. She earned a BA in Public Policy Studies from Duke University.",
+    sources: [
+      { label: "True Beauty Ventures team page", url: "https://truebeautyventures.com/pages/team" },
+      { label: "WWD: Beauty Investor Rich Gersten Launches Venture Fund (2020)", url: "https://wwd.com/beauty-industry-news/beauty-features/beauty-investor-rich-gersten-launches-venture-fund-1203652380/" },
+      { label: "PR Newswire: True Beauty Ventures debut fund close (2021)", url: "https://www.prnewswire.com/news-releases/true-beauty-ventures-raises-debut-fund-in-excess-of-42-million-backed-by-beauty-founders-and-executives-to-grow-emerging-beauty-and-wellness-brands-301344829.html" }
+    ]
+  },
+"rich-gersten": {
+    name: "Rich Gersten",
+    sectors: ["Beauty", "Consumer"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://truebeautyventures.com/pages/team",
+    firm: "True Beauty Ventures",
+    firmSlug: "true-beauty-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2020,
+    education: ["BS Economics, Union College", "MBA, The Wharton School, University of Pennsylvania"],
+    previousExperience: ["Managing Director, North Castle Partners (1999-2007)", "Partner, Catterton Partners (now L Catterton)", "Partner, Tengram Capital Partners", "Industry Advisor, North Castle Partners (rejoined 2020)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1999, event: "Joins North Castle Partners, where he serves as Managing Director until 2007." },
+      { year: 2020, event: "Departs Tengram Capital Partners and launches the specialist beauty investment firm that becomes True Beauty Ventures." },
+      { year: 2021, event: "Closes True Beauty Ventures' debut fund in excess of $42 million." },
+      { year: 2023, event: "Portfolio brand K18 is acquired by Unilever, reportedly returning close to 80 percent of Fund I's capital." }
+    ],
+    notableInvestments: [
+      { name: "K18" },
+      { name: "Avalon Organics" },
+      { name: "Alba Botanica" }
+    ],
+    biography: "Rich Gersten is Co-Founder and Managing Partner of True Beauty Ventures, a specialist fund backing emerging beauty and wellness brands from Seed to Series B. He has spent roughly three decades investing in consumer brands at private equity firms including North Castle Partners, Catterton Partners (now L Catterton) and Tengram Capital Partners, with much of the last decade focused on beauty and personal care. His early personal care investments included Avalon Organics and Alba Botanica. In 2020 he left Tengram to launch True Beauty, co-founding the firm with Cristina Nuñez to serve emerging brands underserved by institutional capital, and led its investment in K18, acquired by Unilever. He holds a BS in Economics from Union College and an MBA from Wharton.",
+    sources: [
+      { label: "True Beauty Ventures team page", url: "https://truebeautyventures.com/pages/team" },
+      { label: "Kisaco Research speaker bio", url: "https://www.kisacoresearch.com/content/rich-gersten" },
+      { label: "WWD: Beauty Investor Rich Gersten Launches Venture Fund (2020)", url: "https://wwd.com/beauty-industry-news/beauty-features/beauty-investor-rich-gersten-launches-venture-fund-1203652380/" },
+      { label: "Fashionista founder interview (2025)", url: "https://fashionista.com/2025/07/true-beauty-ventures-about-founder-interview" }
+    ]
+  },
+"peter-vanbekbergen": {
+    name: "Peter Vanbekbergen",
+    sectors: ["Semiconductors", "Deep Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://imecxpand.com/en/team",
+    firm: "imec.xpand",
+    firmSlug: "imec-xpand",
+    title: "Partner & Co-founder",
+    joinedYear: 2017,
+    education: [],
+    previousExperience: ["Assistant Vice-President, systems division, imec (2003-2007)", "Co-founder and VP Engineering, M4S (imec spin-off acquired by Huawei in 2010)", "Innovation Manager, imec (from 2015)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2010, event: "M4S, the radiofrequency transceiver company he co-founded and served as VP Engineering, is acquired by Huawei." },
+      { year: 2015, event: "Returns to imec as innovation manager, working on structuring business ideas and assembling management teams for spin-offs." },
+      { year: 2017, event: "Co-founds imec.xpand as Partner at the fund's June 2017 launch." },
+      { year: 2024, event: "imec.xpand closes its EUR 300 million second fund." }
+    ],
+    notableInvestments: [],
+    biography: "Peter Vanbekbergen is Partner and Co-founder of imec.xpand, the independent venture fund with privileged access to the imec research ecosystem. A repeat entrepreneur with deep knowledge of imec from the inside, he served as assistant vice-president of imec's systems division from 2003 to 2007 and co-founded the imec spin-off M4S, a radiofrequency transceiver company where he was vice-president of engineering until its acquisition by Huawei in 2010. He returned to imec in 2015 as innovation manager, structuring business ideas and assembling management teams for new ventures, before co-founding imec.xpand at its 2017 launch. At the fund he assesses the uniqueness, technological feasibility and scalability of prospective deeptech investments.",
+    sources: [
+      { label: "imec.xpand team page", url: "https://imecxpand.com/en/team/peter-vanbekbergen" },
+      { label: "GUV Powerlist 2018 profile", url: "https://globalventuring.com/university/guv-powerlist-2018-9-peter-vanbekbergen-tom-vanhoutte-frank-bulens-cyril-vancura/" }
+    ]
+  },
+"tom-vanhoutte": {
+    name: "Tom Vanhoutte",
+    sectors: ["Semiconductors", "Deep Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://imecxpand.com/en/team",
+    firm: "imec.xpand",
+    firmSlug: "imec-xpand",
+    title: "Partner & Co-founder",
+    joinedYear: 2017,
+    education: [],
+    previousExperience: ["Senior Manager, PricewaterhouseCoopers (12+ years)", "Chief Financial Officer, Capricorn Venture Partners (about 6 years)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2017, event: "Joins the newly launched imec.xpand in March 2017 as Partner and Co-founder after nearly six years as CFO of Capricorn Venture Partners." },
+      { year: 2018, event: "imec.xpand reaches final close of its first fund at EUR 117 million." },
+      { year: 2024, event: "imec.xpand closes its EUR 300 million second fund, with Vanhoutte as one of its public spokespeople." }
+    ],
+    notableInvestments: [],
+    biography: "Tom Vanhoutte is Partner and Co-founder of imec.xpand, the independent venture capital fund launched in 2017 alongside, but managed separately from, the Leuven based nanoelectronics research institute imec. He has spent most of his career on the business side of venture capital, including more than twelve years as a senior manager at PricewaterhouseCoopers and nearly six years as Chief Financial Officer of Capricorn Venture Partners before co-founding imec.xpand in March 2017. At the fund he draws on an extended network of venture investors, corporates and entrepreneurs to help deeptech portfolio companies raise capital and scale globally, and he served as a public voice for the firm's EUR 117 million first fund and EUR 300 million second fund.",
+    sources: [
+      { label: "imec.xpand team page", url: "https://imecxpand.com/en/team/tom-vanhoutte" },
+      { label: "GUV Powerlist 2018 profile", url: "https://globalventuring.com/university/guv-powerlist-2018-9-peter-vanbekbergen-tom-vanhoutte-frank-bulens-cyril-vancura/" },
+      { label: "imec press release: EUR 300M Fund II (2024)", url: "https://www.imec-int.com/en/press/imecxpand-launches-eur-300m-fund-amid-global-race-semiconductor-supremacy" }
+    ]
+  },
+"cain-mcclary": {
+    name: "Cain McClary",
+    sectors: ["Biotech", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.kdtvc.com/our-team",
+    firm: "KdT Ventures",
+    firmSlug: "kdt-ventures",
+    title: "Managing Partner & Founder",
+    joinedYear: 2017,
+    education: ["ScB Biochemistry, Brown University", "MD, Tulane University School of Medicine"],
+    previousExperience: ["Research fellow, National Institutes of Health", "Anatomic pathology residency, Stanford University", "Pathology lead, Grand Rounds"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2012, event: "Earns his MD from Tulane University after an ScB in Biochemistry from Brown University." },
+      { year: 2017, event: "Founds KdT Ventures to make first institutional investments in frontier science companies." },
+      { year: 2018, event: "Closes KdT's oversubscribed inaugural fund." },
+      { year: 2022, event: "Marks the firm's five year anniversary with the close of an oversubscribed $80 million Fund III." },
+      { year: 2024, event: "Closes KdT's oversubscribed Fund IV at more than $100 million, taking firm assets under management past $250 million." }
+    ],
+    notableInvestments: [],
+    biography: "Cain McClary, MD, is the Founder and Managing Partner of KdT Ventures, an early stage venture firm writing first institutional checks into companies engineering the physical layer of medicine, chemicals and materials. A physician by training, he earned an ScB in Biochemistry from Brown University and an MD from Tulane, completed a research fellowship at the National Institutes of Health studying non-coding RNA in cancer, and trained in anatomic pathology at Stanford, where his research on a genetic mutation in ameloblastoma contributed to clinical trials. He later led pathology work at Grand Rounds before founding KdT in 2017. Under his leadership the firm has raised four funds, backed more than 65 frontier science companies, and grown to over $250 million under management.",
+    sources: [
+      { label: "KdT Ventures team page", url: "https://www.kdtvc.com/our-team" },
+      { label: "KdT Ventures about page bio", url: "https://www.kdtvc.com/about" },
+      { label: "Business Wire: KdT Fund IV announcement (2024)", url: "https://www.businesswire.com/news/home/20241016605884/en/KdT-Ventures-Announces-Oversubscribed-Fund-IV-to-Invest-in-Early-Stage-Frontier-Science-Companies" }
+    ]
+  },
+"mack-healy": {
+    name: "Mack Healy",
+    sectors: ["Biotech", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.kdtvc.com/our-team",
+    firm: "KdT Ventures",
+    firmSlug: "kdt-ventures",
+    title: "Managing Partner",
+    joinedYear: 2019,
+    education: ["JD, University of Michigan"],
+    previousExperience: ["Technology and life science attorney, Fenwick & West", "Technology and life science attorney, Austin-based law firms"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2019, event: "Joins KdT Ventures in March as the firm's second general partner." },
+      { year: 2024, event: "Serves as Managing Partner as KdT closes its oversubscribed Fund IV at more than $100 million." }
+    ],
+    notableInvestments: [],
+    biography: "Mack Healy, JD, is a Managing Partner at KdT Ventures, which he joined in March 2019 as the firm's second general partner. Before moving to venture capital he practiced technology and life science law at Fenwick & West and later at Austin based firms, advising on hundreds of venture financings representing more than $1 billion in aggregate value and working with companies including Airbnb, Cisco and WhatsApp. He earned his law degree from the University of Michigan, where he received a Dean's Scholarship, has made personal angel investments, and has guest lectured at law schools. At KdT he helps frontier science founders structure companies and financings from the first institutional check onward.",
+    sources: [
+      { label: "KdT Ventures team page", url: "https://www.kdtvc.com/our-team" },
+      { label: "KdT Ventures about page bio", url: "https://www.kdtvc.com/about" }
+    ]
+  },
+"patrick-malone": {
+    name: "Patrick Malone",
+    sectors: ["Biotech", "Life Sciences", "AI"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://onemind.org/accelerator-advisors/patrick-malone/",
+    firm: "KdT Ventures",
+    firmSlug: "kdt-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: ["BS Neuroscience and Behavioral Biology, Emory University", "MD, Georgetown University", "PhD Computational Neuroscience, Georgetown University"],
+    previousExperience: ["Research Fellow, National Institutes of Health"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2024, event: "Promoted to Partner at KdT Ventures alongside the close of the firm's oversubscribed Fund IV." }
+    ],
+    notableInvestments: [],
+    biography: "Patrick Malone, MD, PhD, is a Partner at KdT Ventures, the early stage firm that writes first institutional checks into frontier science companies. Trained as a physician-scientist, he earned a BS in Neuroscience and Behavioral Biology from Emory University and an MD and a PhD in Computational Neuroscience from Georgetown University, where his doctoral work focused on machine learning applications in neuroimaging. He was a research fellow at the National Institutes of Health working on biomarker development for neurodegenerative disease before moving into venture capital. At KdT he invests at the intersection of computation, biology and chemistry across life sciences and healthcare, and he was promoted to Partner in October 2024. He also advises the One Mind Accelerator.",
+    sources: [
+      { label: "KdT Ventures team page", url: "https://www.kdtvc.com/our-team" },
+      { label: "One Mind advisor bio", url: "https://onemind.org/accelerator-advisors/patrick-malone/" },
+      { label: "Business Wire: KdT Fund IV announcement (2024)", url: "https://www.businesswire.com/news/home/20241016605884/en/KdT-Ventures-Announces-Oversubscribed-Fund-IV-to-Invest-in-Early-Stage-Frontier-Science-Companies" }
+    ]
+  },
+"phil-grayeski": {
+    name: "Phil Grayeski",
+    sectors: ["Biotech", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.kdtvc.com/our-team",
+    firm: "KdT Ventures",
+    firmSlug: "kdt-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    education: ["BS Chemistry and Genetics, University of Georgia", "MPhil Bioscience Enterprise, University of Cambridge", "PhD, University of North Carolina at Chapel Hill"],
+    previousExperience: ["Co-founder, Stride Bio", "Co-founder, Ribometrix"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Promoted from Principal to Partner as KdT closes its oversubscribed $80 million Fund III." },
+      { year: 2024, event: "Promoted to Managing Partner at the close of KdT's oversubscribed Fund IV of more than $100 million." }
+    ],
+    notableInvestments: [],
+    biography: "Phil Grayeski, PhD, is a Managing Partner at KdT Ventures, the early stage frontier science firm where he rose from Principal to Partner in 2022 and to Managing Partner in 2024. A scientist and repeat biotech founder, he co-founded gene therapy company Stride Bio and RNA targeted drug discovery company Ribometrix, which together raised tens of millions of dollars, before joining KdT. He studied Chemistry and Genetics at the University of Georgia, where he was a Goldwater Scholar, earned an MPhil in Bioscience Enterprise from the University of Cambridge, and completed doctoral research at the University of North Carolina at Chapel Hill focused on mRNA structure and disease. At KdT he backs founders building at the molecular level across therapeutics, tools and materials.",
+    sources: [
+      { label: "KdT Ventures team page", url: "https://www.kdtvc.com/our-team" },
+      { label: "KdT Ventures about page bio", url: "https://www.kdtvc.com/about" },
+      { label: "Newswire: KdT five year anniversary and promotions (2022)", url: "https://www.newswire.com/news/kdt-ventures-celebrates-5-year-anniversary-close-of-oversubscribed-21833458" },
+      { label: "Business Wire: KdT Fund IV announcement (2024)", url: "https://www.businesswire.com/news/home/20241016605884/en/KdT-Ventures-Announces-Oversubscribed-Fund-IV-to-Invest-in-Early-Stage-Frontier-Science-Companies" }
+    ]
+  },
+"kevin-webb": {
+    name: "Kevin Webb",
+    sectors: ["Biodiversity", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.superorganism.com",
+    firm: "Superorganism",
+    firmSlug: "superorganism",
+    title: "Managing Director",
+    joinedYear: 2023,
+    education: ["Degree in Human Biology, Stanford University", "MS in Sustainability Science, Columbia University"],
+    previousExperience: ["Early-stage investor, Webb Investment Network (until 2018)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Left the Webb Investment Network and began angel investing in biodiversity-related startups to test whether the deal flow could support a dedicated fund." },
+      { year: 2023, event: "Co-founded Superorganism with Tom Quigley as Managing Director." },
+      { year: 2026, event: "Superorganism closed its 25.9 million dollar debut fund in January." }
+    ],
+    notableInvestments: [
+      { name: "Ironclad" },
+      { name: "Turo" },
+      { name: "Verkada" }
+    ],
+    biography: "Kevin Webb is a co-founder and Managing Director of Superorganism, the first venture capital firm dedicated to biodiversity. He brings more than 15 years of venture and angel investing experience and previously helped establish and operate the Webb Investment Network, where he was involved at the early stages with companies that became unicorns, including Ironclad, Turo and Verkada. He studied Human Biology at Stanford University with a focus on humans, environmental change and infectious disease, and holds an MS in Sustainability Science from Columbia University. Before launching Superorganism in 2023 he spent several years angel investing in biodiversity startups to test the thesis, and the firm has pledged 10 percent of its profits to future conservation efforts.",
+    sources: [
+      { label: "Superorganism website", url: "https://www.superorganism.com" },
+      { label: "EarthX speaker bio", url: "https://earthx.org/speaker/kevin-webb/" },
+      { label: "TechCrunch on Superorganism's launch", url: "https://techcrunch.com/2023/09/13/superorganism-wants-to-be-the-conservationist-on-the-cap-table" },
+      { label: "Superorganism debut fund press release (PRNewswire)", url: "https://www.prnewswire.com/news-releases/superorganism-first-venture-capital-firm-dedicated-to-biodiversity-closes-25-9m-debut-fund-302658284.html" }
+    ]
+  },
+"tom-quigley": {
+    name: "Tom Quigley",
+    sectors: ["Biodiversity", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.superorganism.com",
+    firm: "Superorganism",
+    firmSlug: "superorganism",
+    title: "Managing Director",
+    joinedYear: 2023,
+    education: [],
+    previousExperience: ["Founding team, operations and growth leadership, Real Vision", "Community Manager, Digital Makerspace, Conservation X Labs"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2023, event: "Co-founded Superorganism with Kevin Webb, the first venture capital firm dedicated to biodiversity, as Managing Director." },
+      { year: 2025, event: "Spoke at the IUCN World Conservation Congress on technology in service of conservation." },
+      { year: 2026, event: "Superorganism closed its 25.9 million dollar debut fund in January." }
+    ],
+    notableInvestments: [],
+    biography: "Tom Quigley is a co-founder and Managing Director of Superorganism, the first venture capital firm dedicated to biodiversity. A coral reef conservationist turned startup operator and investor, he has spent roughly a decade working at the intersection of technology and nature, with field experience in Australia, Madagascar and the Cayman Islands, including time as a divemaster on the Great Barrier Reef supporting marine research. He was part of the founding team at Real Vision, a video on demand platform for investors, where he held operations and growth leadership roles, and later worked at Conservation X Labs, a conservation innovation organization, where he ran the Digital Makerspace community and advised nature tech teams. At Superorganism he backs early stage startups whose businesses benefit biodiversity.",
+    sources: [
+      { label: "Superorganism website", url: "https://www.superorganism.com" },
+      { label: "Superorganism debut fund press release (PRNewswire)", url: "https://www.prnewswire.com/news-releases/superorganism-first-venture-capital-firm-dedicated-to-biodiversity-closes-25-9m-debut-fund-302658284.html" },
+      { label: "IUCN World Conservation Congress speaker profile", url: "https://iucncongress2025.org/speakers/tom-quigley" },
+      { label: "Conservation Guide interview", url: "https://www.conservationguide.org/news/under-the-spotlight-tom-quigley" }
+    ]
+  },
+"danielle-joseph": {
+    name: "Danielle Joseph",
+    sectors: ["Circular Economy", "Climate", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.closedlooppartners.com/team-members/danielle-joseph-2/",
+    firm: "Closed Loop Partners",
+    firmSlug: "closed-loop-partners",
+    title: "Managing Director | Ventures",
+    joinedYear: null,
+    education: ["MBA, Stanford Graduate School of Business", "BA in Philosophy and Politics, Pomona College"],
+    previousExperience: ["Growth equity and project finance, NewWorld Capital Group", "Clean energy investing, Invex Infraestructura", "Energy infrastructure investment analysis, Queensland Investment Corporation"],
+    firmHistory: [],
+    boardSeats: ["SOLARCYCLE", "Capra Biosciences", "HomeBiogas", "Billion Oyster Project"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Served as Director and Investment Officer at Closed Loop Partners, investing in early-stage circular economy companies." },
+      { year: 2022, event: "Closed Loop Ventures portfolio company Atlas Organics, whose investment and exit she led, was acquired by Generate Capital in a majority-stake deal." }
+    ],
+    notableInvestments: [
+      { name: "Atlas Organics" },
+      { name: "SOLARCYCLE" },
+      { name: "Capra Biosciences" },
+      { name: "HomeBiogas" }
+    ],
+    biography: "Danielle Joseph is Managing Director and Head of Closed Loop Ventures at Closed Loop Partners, overseeing the platform's venture capital and growth equity strategies, a portfolio of more than 40 early-stage circular economy companies, and an investment team spanning origination, diligence and portfolio management. She led both the investment in and exit of composter Atlas Organics, and serves on the boards of SOLARCYCLE, Capra Biosciences, HomeBiogas and the nonprofit Billion Oyster Project. She previously worked in growth equity and project finance at NewWorld Capital Group, evaluated clean energy opportunities at Invex Infraestructura in Mexico, and assessed energy infrastructure at Queensland Investment Corporation. She holds an MBA from Stanford Graduate School of Business and a BA from Pomona College.",
+    sources: [
+      { label: "Closed Loop Partners team page", url: "https://www.closedlooppartners.com/team-members/danielle-joseph-2/" },
+      { label: "Closed Loop Ventures page", url: "https://www.closedlooppartners.com/capital-management/venture-capital/ventures/" },
+      { label: "Waste Dive on Generate Capital's Atlas Organics acquisition", url: "https://www.wastedive.com/news/atlas-organics-generate-capital-compost-digestion/617165/" },
+      { label: "Sustainable Career Pathways interview (2020)", url: "https://sustainablecareerpathways.com/2020/01/09/danielle-joseph-director-investment-officer-closed-loop-partners/" }
+    ]
+  },
+"jessica-long": {
+    name: "Jessica Long",
+    sectors: ["Circular Economy", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.closedlooppartners.com/team-members/jessica-long/",
+    firm: "Closed Loop Partners",
+    firmSlug: "closed-loop-partners",
+    title: "Managing Partner & Chief Strategy Officer | Closed Loop Partners; CEO | Closed Loop Builders",
+    joinedYear: 2021,
+    education: ["BA, Macalester College"],
+    previousExperience: ["Managing Director, Sustainability & Responsible Business (North America lead), Accenture", "Staff member, United States Senate"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Joined Closed Loop Partners as Chief Strategy Officer and Managing Director after leading Accenture's North America Sustainability and Responsible Business practice." }
+    ],
+    notableInvestments: [],
+    biography: "Jessica Long is Managing Partner and Chief Strategy Officer at Closed Loop Partners and Chief Executive Officer of Closed Loop Builders, the platform's operating group. She joined the firm in 2021 from Accenture, where she was a Managing Director leading the North America Sustainability and Responsible Business practice, advising Fortune 500 companies on ESG goals and circular business models and collaborating with the World Economic Forum and the UN Global Compact. Earlier at Accenture she was based in East Africa working at the intersection of business and international development, and she began her career as a staff member in the United States Senate. A World Economic Forum Young Global Leader, she advises The Earthshot Prize, the Global Teacher Prize and Rise, and holds a BA from Macalester College.",
+    sources: [
+      { label: "Closed Loop Partners team page", url: "https://www.closedlooppartners.com/team-members/jessica-long/" },
+      { label: "Closed Loop Partners hiring announcement", url: "https://www.closedlooppartners.com/jessica-long-joins-closed-loop-partners-as-a-managing-director/" }
+    ]
+  },
+"kate-daly": {
+    name: "Kate Daly",
+    sectors: ["Circular Economy", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.closedlooppartners.com/team-members/kate-daly/",
+    firm: "Closed Loop Partners",
+    firmSlug: "closed-loop-partners",
+    title: "Managing Partner | Closed Loop Partners; CEO | Center for the Circular Economy",
+    joinedYear: null,
+    education: ["MS, University of Pennsylvania", "BA, Cornell University"],
+    previousExperience: ["Senior Vice President, New York City Economic Development Corporation", "Executive Director, New York City Landmarks Preservation Commission"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Closed Loop Partners launched the Center for the Circular Economy, the innovation arm she leads, and initiated the NextGen Consortium." }
+    ],
+    notableInvestments: [],
+    biography: "Kate Daly is Managing Partner at Closed Loop Partners and Chief Executive Officer of the Center for the Circular Economy, the platform's innovation arm, where she oversees research, analysis and collaboration to accelerate the transition to a circular economy, including multi-stakeholder consortia with major consumer brands. Before joining the firm she spent more than a decade in New York City government, serving as Senior Vice President at the New York City Economic Development Corporation, where she directed business development initiatives across sectors including cleantech, fashion and advanced manufacturing, and earlier as Executive Director of the NYC Landmarks Preservation Commission. She holds an MS from the University of Pennsylvania and a BA from Cornell University.",
+    sources: [
+      { label: "Closed Loop Partners team page", url: "https://www.closedlooppartners.com/team-members/kate-daly/" },
+      { label: "Closed Loop Partners 2023 impact report", url: "https://www.closedlooppartners.com/wp-content/uploads/2024/06/Closed-Loop-Partners-Impact-Report-2023-2.pdf" },
+      { label: "Beverage Digest Q&A (2019)", url: "https://www.beverage-digest.com/articles/24-future-smarts-2018-qa-with-closed-loop-executive-director-kate-daly" }
+    ]
+  },
+"ron-gonen": {
+    name: "Ron Gonen",
+    sectors: ["Circular Economy", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.closedlooppartners.com/team-members/ron-gonen/",
+    firm: "Closed Loop Partners",
+    firmSlug: "closed-loop-partners",
+    title: "Founder & Chief Executive Officer",
+    joinedYear: 2014,
+    education: ["MBA, Columbia Business School"],
+    previousExperience: ["Co-founder and CEO, Recyclebank (2004-2010)", "Deputy Commissioner of Sanitation, Recycling and Sustainability, City of New York (Bloomberg administration)", "Adjunct Professor, Columbia University"],
+    firmHistory: [],
+    boardSeats: ["Board Member, A Good Option"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2004, event: "Earned his MBA from Columbia Business School and co-founded Recyclebank, a recycling rewards company he led as CEO." },
+      { year: 2009, event: "Honored by the United Nations Environment Programme while CEO of Recyclebank." },
+      { year: 2014, event: "Founded Closed Loop Partners in New York with backing from the Walmart Foundation and major corporations." },
+      { year: 2021, event: "Published The Waste-Free World with Penguin Random House." },
+      { year: 2022, event: "Launched Circular Services, Closed Loop Partners' first operating company, which the firm describes as the largest privately held recycling and composting company in the US." }
+    ],
+    notableInvestments: [],
+    biography: "Ron Gonen is the Founder and Chief Executive Officer of Closed Loop Partners, the New York based circular economy platform he started in 2014, spanning venture capital, private equity, catalytic capital and private credit, an innovation center and operating companies including Circular Services. He previously co-founded Recyclebank, a recycling rewards company he led as CEO, and served as Deputy Commissioner of Sanitation, Recycling and Sustainability for New York City during the Bloomberg administration. He holds an MBA from Columbia Business School, where he has taught as an adjunct professor, and is the author of The Waste-Free World. His recognitions include a UN Environment Programme honor and Columbia University's Medal of Excellence.",
+    sources: [
+      { label: "Closed Loop Partners team page", url: "https://www.closedlooppartners.com/team-members/ron-gonen/" },
+      { label: "Columbia Business School alumni profile", url: "https://business.columbia.edu/spring-23-magazine/people/ron-gonen-04" },
+      { label: "Waste360 on UN honor for RecycleBank CEO", url: "https://waste360.com/news/RecycleBank-CEO-United-Nations-20090424" },
+      { label: "Recyclebank CEO succession press release (PRNewswire)", url: "https://www.prnewswire.com/news-releases/jonathan-hsu-joins-recyclebank-as-chief-executive-officer-99446979.html" }
+    ]
+  },
+"tazia-smith": {
+    name: "Tazia Smith",
+    sectors: ["Circular Economy", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.closedlooppartners.com/team-members/tazia-smith/",
+    firm: "Closed Loop Partners",
+    firmSlug: "closed-loop-partners",
+    title: "Managing Partner | Closed Loop Partners; CEO | Closed Loop Capital Management",
+    joinedYear: null,
+    education: ["BA in Environmental Science & Policy, Duke University"],
+    previousExperience: ["Managing Director, Deutsche Bank", "Institutional cross-asset sales, Goldman Sachs (7 years)", "Co-founder and Strategic Advisor, IMP+ACT Alliance"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2019, event: "Co-founded the IMP+ACT Alliance, a nonprofit impact measurement technology initiative funded by Deutsche Bank that later became part of the Global Impact Investing Network." }
+    ],
+    notableInvestments: [],
+    biography: "Tazia Smith is Managing Partner at Closed Loop Partners and Chief Executive Officer of Closed Loop Capital Management, where she oversees the firm's investment group, stakeholder management, capital formation and investor relations, and sits on the firm's Management Committee. She brings nearly 20 years of investment banking experience with institutional family offices across the capital structure, including as a Managing Director at Deutsche Bank, where she helped establish the Key Client Partners business and worked with the CEO strategy team on sustainable finance, and seven years at Goldman Sachs in institutional cross-asset sales. In 2019 she co-founded the IMP+ACT Alliance, now part of the GIIN. She holds a BA in Environmental Science and Policy from Duke University, magna cum laude, and is a CFA charterholder.",
+    sources: [
+      { label: "Closed Loop Partners team page", url: "https://www.closedlooppartners.com/team-members/tazia-smith/" }
+    ]
+  },
+"barry-large": {
+    name: "Barry Large",
+    sectors: ["Logistics"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://dynamo.vc/about/barry-large",
+    firm: "Dynamo Ventures",
+    firmSlug: "dynamo-ventures",
+    title: "Co-founder & Partner",
+    joinedYear: 2016,
+    education: [],
+    previousExperience: ["Co-founder and CFO, Access America Transport", "Co-founder, Lamp Post Group"],
+    firmHistory: [],
+    boardSeats: ["Chairman, Chattanooga Whiskey"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Co-founded the Dynamo accelerator and fund in Chattanooga, and was inducted into the University of Tennessee at Chattanooga entrepreneurship Hall of Fame with his Access America co-founders." }
+    ],
+    notableInvestments: [],
+    biography: "Barry Large is a co-founder and Partner at Dynamo Ventures, the Chattanooga based pre-seed and seed supply chain fund. He co-founded Access America Transport, a logistics enterprise that reached roughly 500 million dollars in revenue and merged with UPS subsidiary Coyote Logistics, serving as its CFO. He co-founded Lamp Post Group, the Chattanooga venture incubator that gave rise to Dynamo, and helped establish logistics and insurance businesses including Steam Logistics and Reliance Partners. He chairs craft distiller Chattanooga Whiskey, supports the local entrepreneurial community through Brickyard, and serves on several Chattanooga philanthropic and civic boards. He was inducted into the University of Tennessee at Chattanooga entrepreneurship Hall of Fame in 2016.",
+    sources: [
+      { label: "Dynamo Ventures profile", url: "https://dynamo.vc/about/barry-large" },
+      { label: "Chattanooga Times Free Press on UTC Hall of Fame", url: "https://www.timesfreepress.com/news/2016/apr/07/living-hall-fameted-alling-barry-large-and-al/" }
+    ]
+  },
+"jon-bradford": {
+    name: "Jon Bradford",
+    sectors: ["Logistics", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://dynamo.vc/about/jon-bradford",
+    firm: "Dynamo Ventures",
+    firmSlug: "dynamo-ventures",
+    title: "Co-founder & Managing Partner",
+    joinedYear: 2016,
+    education: [],
+    previousExperience: ["Partner, Motive Partners", "Managing Director, Techstars London", "Founder, Springboard accelerator", "Co-founder, F6S", "Co-founder, Tech.eu"],
+    firmHistory: [{ firmSlug: "techstars", role: "Managing Director", startYear: null, endYear: null }],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2009, event: "Founded the first startup accelerator bootcamp outside the United States." },
+      { year: 2016, event: "Helped launch Dynamo's debut fund as an advisor, later joining full time as Co-founder & Managing Partner." },
+      { year: 2025, event: "Co-led the close of Dynamo's 54 million dollar Fund III." }
+    ],
+    notableInvestments: [
+      { name: "Chainalysis" },
+      { name: "Tray.io" },
+      { name: "Sendbird" },
+      { name: "Apiary" }
+    ],
+    biography: "Jon Bradford is a co-founder and Managing Partner of Dynamo Ventures, the Chattanooga based pre-seed and seed supply chain fund. One of Europe's most prolific early stage investors, he has made more than 100 investments, including Apiary, Tray.io, Sendbird and Chainalysis. In 2009 he founded the first accelerator bootcamp outside the United States, and his Springboard program merged with Techstars to become its first international accelerator, which he led as Managing Director of Techstars London. He co-founded F6S, Tech.eu, Startup Wise Guys in Estonia and Eleven in Bulgaria, helped establish accelerators from Montreal to Moscow, and was a Partner at fintech investor Motive Partners before going full time at Dynamo, whose debut fund he helped launch as an advisor.",
+    sources: [
+      { label: "Dynamo Ventures profile", url: "https://dynamo.vc/about/jon-bradford" },
+      { label: "Dynamo announcement on Jon Bradford joining", url: "https://dynamo.substack.com/p/meet-jon-bradford-dynamo-ventures" },
+      { label: "Dynamo Fund III announcement", url: "https://dynamo.vc/insights-and-news/dynamo-ventures-closes-54m-fund-iii-unlocks-liquidity-for-early-lps-with-top-decile-returns" }
+    ]
+  },
+"santosh-sankar": {
+    name: "Santosh Sankar",
+    sectors: ["Logistics", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://dynamo.vc/about/santosh-sankar",
+    firm: "Dynamo Ventures",
+    firmSlug: "dynamo-ventures",
+    title: "Co-founder & Managing Partner",
+    joinedYear: 2016,
+    education: ["BS in Business, Smeal College of Business, Penn State University"],
+    previousExperience: ["Banking and equity research covering insurance and technology, Wall Street (5 years)", "Co-founder, Bullish Bankers", "Founder, Razor Studios"],
+    firmHistory: [],
+    boardSeats: ["Commissioner, Chattanooga Metropolitan Airport Authority"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2010, event: "Graduated from Penn State's Smeal College of Business, where he managed about 1 million dollars in technology investments for the student-run Nittany Lion Fund." },
+      { year: 2016, event: "Co-founded Dynamo in Chattanooga, launching its supply chain accelerator and 18 million dollar Fund I." },
+      { year: 2017, event: "Named to the Forbes 30 Under 30 list for venture capital." },
+      { year: 2021, event: "Selected as a Kauffman Fellow, a two-year executive education program for venture capital leaders." },
+      { year: 2025, event: "Closed Dynamo's 54 million dollar Fund III alongside a secondary sale that returned capital to Fund I investors." }
+    ],
+    notableInvestments: [],
+    biography: "Santosh Sankar is a co-founder and Managing Partner of Dynamo Ventures, the Chattanooga based pre-seed and seed fund for supply chain and the physical economy. Before Dynamo he spent five years on Wall Street in banking and equity research covering the insurance and technology sectors. An entrepreneur from an early age, he founded Razor Studios, an IT support and web development firm, at 13, and co-founded the financial media publication Bullish Bankers while at Penn State, where he earned a BS in Business and managed technology investments for the Nittany Lion Fund. He was named to the Forbes 30 Under 30 for venture capital in 2017, became a Kauffman Fellow in 2021, and serves as a Commissioner of the Chattanooga Metropolitan Airport Authority.",
+    sources: [
+      { label: "Dynamo Ventures profile", url: "https://dynamo.vc/about/santosh-sankar" },
+      { label: "Penn State Alumni Association profile", url: "https://alumni.psu.edu/award-recipients/santosh-sankar-10-bus/" },
+      { label: "Dynamo Fund III press release (PRNewswire)", url: "https://www.prnewswire.com/news-releases/dynamo-ventures-closes-54m-fund-iii-unlocks-liquidity-for-early-lps-with-top-decile-returns-302454936.html" }
+    ]
+  },
+"ted-alling": {
+    name: "Ted Alling",
+    sectors: ["Logistics"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://dynamo.vc/about/ted-alling",
+    firm: "Dynamo Ventures",
+    firmSlug: "dynamo-ventures",
+    title: "Co-founder & Partner",
+    joinedYear: 2016,
+    education: ["Samford University (degree not publicly specified)"],
+    previousExperience: ["Co-founder and CEO, Access America Transport", "Co-founder, Lamp Post Group", "Co-founder, Chattanooga Preparatory School"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Co-founded the Dynamo accelerator and fund in Chattanooga, and was inducted into the University of Tennessee at Chattanooga entrepreneurship Hall of Fame with his Access America co-founders." },
+      { year: 2017, event: "Founded Chattanooga Preparatory School, an all-boys public charter school, with his wife Kelly." }
+    ],
+    notableInvestments: [],
+    biography: "Ted Alling is a co-founder and Partner at Dynamo Ventures, the Chattanooga based pre-seed and seed supply chain fund. He co-founded Access America Transport, a third party logistics business that grew to roughly 500 million dollars in revenue and eventually merged with UPS subsidiary Coyote Logistics, and served as its CEO. He went on to co-found Lamp Post Group, the Chattanooga venture incubator from which Dynamo emerged. A Samford University alumnus, he was inducted into the University of Tennessee at Chattanooga entrepreneurship Hall of Fame in 2016. In 2017 he founded Chattanooga Preparatory School, an all-boys public charter school, followed by a sister school in Knoxville.",
+    sources: [
+      { label: "Dynamo Ventures profile", url: "https://dynamo.vc/about/ted-alling" },
+      { label: "Samford University alumni news", url: "https://www.samford.edu/education/news/2022/Samford-University-Alumni-Ted-and-Kelly-Alling-Bring-Equal-Opportunity-to-the-Field-of-Education" },
+      { label: "Chattanooga Times Free Press on UTC Hall of Fame", url: "https://www.timesfreepress.com/news/2016/apr/07/living-hall-fameted-alling-barry-large-and-al/" },
+      { label: "FreightWaves interview", url: "https://www.freightwaves.com/news/ted-alling-partner-of-dynamo-ventures-on-chattanoogas-startup-culture" }
+    ]
+  },
+"geoffrey-w-smith": {
+    name: "Geoffrey W. Smith",
+    sectors: ["Healthcare", "Life Sciences", "Biotech", "Animal Health"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.digitalisventures.com/people/geoffrey-w-smith",
+    firm: "Digitalis Ventures",
+    firmSlug: "digitalis-ventures",
+    title: "Founder / Managing Partner",
+    joinedYear: 2016,
+    education: ["BA, Williams College", "JD, University of Pennsylvania Law School"],
+    previousExperience: ["Founding Director, Mount Sinai Institute of Technology", "Professor, Department of Population Health Science and Policy, Icahn School of Medicine at Mount Sinai"],
+    firmHistory: [],
+    boardSeats: ["Trustee, The Jackson Laboratory", "Director, Partnership Fund for New York City", "Director, Salzburg Global"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Founds Digitalis Ventures in New York." },
+      { year: 2018, event: "Launches Companion Fund I, a 100 million dollar animal health fund raised with Mars." },
+      { year: 2022, event: "Closes Digitalis Ventures' fourth fund at 300 million dollars." },
+      { year: 2023, event: "Launches the 300 million dollar Companion Fund II with Mars." }
+    ],
+    notableInvestments: [
+      { name: "Alcea Therapeutics" },
+      { name: "Galatea Bio" },
+      { name: "GRO Biosciences" },
+      { name: "Terray Therapeutics" }
+    ],
+    biography: "Geoffrey W. Smith is the founder and Managing Partner of Digitalis Ventures and the broader Digitalis Group, which spans the venture funds, the nonprofit Digitalis Commons, and the applied research group Digitalis Labs. He founded the New York firm in 2016 around a thesis of applying an engineering mindset to unmet needs in biomedicine and health, and has led it through a 100 million dollar debut fund, a 300 million dollar fourth fund, and two dedicated Companion Funds for animal health raised with Mars. Before Digitalis he was founding director of the Mount Sinai Institute of Technology and a professor at the Icahn School of Medicine at Mount Sinai. He is a trustee of The Jackson Laboratory. He holds a BA from Williams College and a JD from the University of Pennsylvania Law School.",
+    sources: [
+      { label: "Digitalis Ventures profile", url: "https://www.digitalisventures.com/people/geoffrey-w-smith" },
+      { label: "Digitalis Ventures fourth fund press release", url: "https://www.prnewswire.com/news-releases/digitalis-ventures-closes-300-million-fund-301651290.html" },
+      { label: "Mars Companion Fund II press release", url: "https://www.mars.com/news-and-stories/press-releases-statements/mars-and-digitalis-ventures-launch-300m-dollar-companion-fund-ii" }
+    ]
+  },
+"misti-ushio": {
+    name: "Misti Ushio",
+    sectors: ["Life Sciences", "Biotech", "Healthcare"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.digitalisventures.com/people/misti-ushio",
+    firm: "Digitalis Ventures",
+    firmSlug: "digitalis-ventures",
+    title: "Managing Partner",
+    joinedYear: 2023,
+    education: ["BS Chemical Engineering, Johns Hopkins University", "MS Chemical Engineering, Lehigh University", "PhD Biochemical Engineering, University College London"],
+    previousExperience: ["Founder and CEO, TARA Biosystems", "Chief Strategy Officer and Managing Director, Harris & Harris Group", "Management positions in vaccine and biologics development, Merck & Company", "Intellectual property manager, Columbia University"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Named to Fast Company's 100 Most Creative People in Business while leading TARA Biosystems." },
+      { year: 2022, event: "TARA Biosystems, the company she founded and led as CEO, is acquired by Valo Health." },
+      { year: 2023, event: "Joins Digitalis Ventures as Managing Partner in January." }
+    ],
+    notableInvestments: [],
+    biography: "Misti Ushio is a Managing Partner at Digitalis Ventures, which she joined in January 2023 with more than 25 years of experience across venture capital, pharmaceuticals, and early stage life science company building. She was previously founder and CEO of TARA Biosystems, a cardiovascular focused biotech company acquired by Valo Health in 2022. Earlier she was Chief Strategy Officer and Managing Director at Harris & Harris Group, held management roles in vaccine and biologics development at Merck, and managed intellectual property portfolios at Columbia University. Fast Company named her one of its 100 Most Creative People in Business in 2018. She holds a BS in chemical engineering from Johns Hopkins University, an MS from Lehigh University, and a PhD in biochemical engineering from University College London.",
+    sources: [
+      { label: "Digitalis Ventures profile", url: "https://www.digitalisventures.com/people/misti-ushio" },
+      { label: "Appointment press release (Business Wire)", url: "https://www.businesswire.com/news/home/20230104005342/en/Digitalis-Ventures-Appoints-Misti-Ushio-as-a-Managing-Partner" }
+    ]
+  },
+"fady-saad": {
+    name: "Fady Saad",
+    sectors: ["Robotics", "AI", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://cybernetix.vc/",
+    firm: "Cybernetix Ventures",
+    firmSlug: "cybernetix-ventures",
+    title: "General Partner",
+    joinedYear: 2021,
+    education: ["BS Mechanical Engineering, American University in Cairo", "MS Engineering, Systems Design and Management, MIT"],
+    previousExperience: ["Co-founder, MassRobotics", "Regional Manager, Nokia Siemens Networks (North Africa and Europe)", "International business roles, Siemens and Nokia"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Co-founds Cybernetix Ventures in Boston with Mark Martin." },
+      { year: 2022, event: "Launches Cybernetix Fund I, a 50 million dollar fund for early stage robotics, automation, and AI startups." },
+      { year: 2025, event: "Announces Cybernetix is raising a 100 million dollar second fund for robotics and physical AI." }
+    ],
+    notableInvestments: [],
+    biography: "Fady Saad is a General Partner and co-founder of Cybernetix Ventures, a Boston firm investing in early stage robotics, automation, and industrial AI startups across North America and Europe. Before Cybernetix he co-founded MassRobotics, described at the fund's launch as the largest robotics startup accelerator in the United States, where he connected startups with manufacturers, investors, and global partners. Earlier he held international business roles at Siemens and Nokia, including serving as a regional manager for Nokia Siemens Networks across North Africa and Europe. With Mark Martin he launched the 50 million dollar Cybernetix Fund I in 2022, and in 2025 the firm announced a 100 million dollar second fund. He holds a BS in mechanical engineering from the American University in Cairo and an MS in engineering, systems design, and management from MIT, and is a Boston Business Journal 40 Under 40 honoree.",
+    sources: [
+      { label: "Cybernetix Ventures team section", url: "https://cybernetix.vc/" },
+      { label: "Fund I launch press release (Business Wire)", url: "https://www.businesswire.com/news/home/20220503005186/en/Robotics-AI-Industry-Leader-Fady-Saad-and-Automation-Sensor-Industry-Executive-Mark-Martin-Launch-First-of-its-Kind-$50-Million-Fund-For-Early-Stage-Robotics-Automation-and-AI-Companies" },
+      { label: "The Robot Report on Fund II", url: "https://www.therobotreport.com/cybernetix-ventures-raising-100m-fund-robotics-physical-ai/" }
+    ]
+  },
+"mark-martin": {
+    name: "Mark Martin",
+    sectors: ["Robotics", "Industrial Tech", "AI"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://cybernetix.vc/",
+    firm: "Cybernetix Ventures",
+    firmSlug: "cybernetix-ventures",
+    title: "General Partner",
+    joinedYear: 2021,
+    education: ["BS Electrical Engineering, Cornell University", "MS Engineering Management, Gordon Institute, Tufts University"],
+    previousExperience: ["VP of Industrial Automation, Sensors and IoT, Analog Devices", "Investor and advisor to more than 20 startups"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Co-founds Cybernetix Ventures in Boston with Fady Saad." },
+      { year: 2022, event: "Launches Cybernetix Fund I, a 50 million dollar fund for early stage robotics, automation, and AI startups." }
+    ],
+    notableInvestments: [],
+    biography: "Mark Martin is a General Partner and co-founder of Cybernetix Ventures, a Boston venture firm backing early stage robotics, automation, and industrial AI companies. He spent much of his career at Analog Devices, where as vice president of industrial automation, sensors, and IoT he led an organization of more than 600 people generating about 1 billion dollars in annual revenue, and he oversaw more than 450 million dollars in business sales and over 100 million dollars in acquisitions. He was based in Hong Kong for three years and has invested in or advised more than 20 startups. At Cybernetix he applies that operating and M&A experience to help hardware founders reach commercial deployment. He holds a BS in electrical engineering from Cornell University and an MS in engineering management from the Gordon Institute at Tufts University.",
+    sources: [
+      { label: "Cybernetix Ventures team section", url: "https://cybernetix.vc/" },
+      { label: "Fund I launch press release (Business Wire)", url: "https://www.businesswire.com/news/home/20220503005186/en/Robotics-AI-Industry-Leader-Fady-Saad-and-Automation-Sensor-Industry-Executive-Mark-Martin-Launch-First-of-its-Kind-$50-Million-Fund-For-Early-Stage-Robotics-Automation-and-AI-Companies" }
+    ]
+  },
+"aaron-block": {
+    name: "Aaron Block",
+    sectors: ["Proptech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.metaprop.com/team/aaron-block",
+    firm: "MetaProp",
+    firmSlug: "metaprop",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2015,
+    education: ["BA, University of Illinois", "MBA, DePaul University"],
+    previousExperience: ["Investor, CEO, and Chairman, BayRu, LLC (2010-2013)", "Commercial real estate executive leading the Chicago region, Cushman & Wakefield"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2010, event: "Joins Chicago based cross border ecommerce company BayRu as investor and CEO, later serving as chairman." },
+      { year: 2015, event: "Co-founds MetaProp with Zach Aarons and launches the MetaProp Accelerator at Columbia University." },
+      { year: 2019, event: "Named Executive of the Year for innovation by Commercial Property Executive." },
+      { year: 2021, event: "MetaProp closes its 100 million dollar third fund." }
+    ],
+    notableInvestments: [],
+    biography: "Aaron Block is Co-Founder and Managing Partner of MetaProp, the New York proptech venture capital firm he launched with Zach Aarons in 2015. He oversees day to day management of the firm and has spearheaded industry firsts including the MetaProp Accelerator at Columbia University, NYC Real Estate Tech Week, MIPIM PropTech NYC, and the Global PropTech Confidence Index. Before MetaProp he was CEO and later chairman of BayRu, a Chicago based ecommerce company that became the eighth largest international online retailer serving Russia, and earlier he led Cushman & Wakefield's Chicago region, overseeing more than 270 professionals. He co-authored the bestselling book PropTech 101 and was named Executive of the Year for innovation by Commercial Property Executive in 2019. He holds a BA from the University of Illinois and an MBA from DePaul University.",
+    sources: [
+      { label: "MetaProp team profile", url: "https://www.metaprop.com/team/aaron-block" },
+      { label: "PropTech 101 author bio", url: "https://www.proptech101.com/aaron-block" },
+      { label: "MetaProp Fund III press release", url: "https://www.metaprop.com/press/venture-capital-firm-metaprop-closes-100m-third-fund-investment-early-stage-proptech" }
+    ]
+  },
+"zach-aarons": {
+    name: "Zach Aarons",
+    sectors: ["Proptech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.metaprop.com/team/zach-aarons",
+    firm: "MetaProp",
+    firmSlug: "metaprop",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2015,
+    education: ["AB Ancient Studies, Brown University", "MBA, Columbia Business School"],
+    previousExperience: ["Senior Associate, ENIAC Ventures", "Project Manager, Millennium Partners", "Founder, Travelgoat", "Analyst, Solomon Partners (formerly Peter J. Solomon Company)"],
+    firmHistory: [{ firmSlug: "eniac-ventures", role: "Senior Associate", startYear: null, endYear: null }],
+    boardSeats: ["Technology Committee, Real Estate Board of New York", "Investment Committee, Van Wickle Ventures"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Co-founds MetaProp with Aaron Block after backing more than 50 proptech startups as an angel investor." },
+      { year: 2017, event: "Named Investor of the Year at the Global PropTech Awards." },
+      { year: 2021, event: "MetaProp closes its 100 million dollar third fund." }
+    ],
+    notableInvestments: [],
+    biography: "Zach Aarons is Co-Founder and General Partner of MetaProp, the New York proptech venture firm he started with Aaron Block in 2015, and is described as one of the most active early stage proptech investors in the United States. Before MetaProp he funded more than 50 startups in the sector as an individual angel investor, was a senior associate at seed stage fund ENIAC Ventures, and worked as a project manager at real estate developer Millennium Partners. He began his career as an analyst at the investment bank now known as Solomon Partners and founded the walking tour startup Travelgoat. He co-authored the bestseller PropTech 101, teaches at Columbia's Graduate School of Architecture, Planning, and Preservation, and was named Investor of the Year at the 2017 Global PropTech Awards. He holds an AB from Brown University and an MBA from Columbia Business School.",
+    sources: [
+      { label: "MetaProp team profile", url: "https://www.metaprop.com/team/zach-aarons" },
+      { label: "PropTech 101 author bio", url: "https://www.proptech101.com/zach-aarons" },
+      { label: "MetaProp Fund III press release", url: "https://www.metaprop.com/press/venture-capital-firm-metaprop-closes-100m-third-fund-investment-early-stage-proptech" }
+    ]
+  },
+"zak-schwarzman": {
+    name: "Zak Schwarzman",
+    sectors: ["Proptech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.metaprop.com/team/zak-schwarzman",
+    firm: "MetaProp",
+    firmSlug: "metaprop",
+    title: "General Partner",
+    joinedYear: 2016,
+    education: ["BA Political Economy and Business, Tulane University", "MBA, Columbia Business School"],
+    previousExperience: ["Investor, Gotham Ventures", "Roles at Canaan Partners, AOL Ventures, and Learn Capital"],
+    firmHistory: [{ firmSlug: "canaan-partners", role: null, startYear: null, endYear: null }],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Joins MetaProp in September to lead the firm's venture capital funds." },
+      { year: 2021, event: "MetaProp closes MetaProp Ventures III at 100 million dollars." }
+    ],
+    notableInvestments: [],
+    biography: "Zak Schwarzman is a General Partner at MetaProp, which he joined in September 2016. He leads the firm's venture capital funds, investing in early stage proptech startups transforming how physical space is conceptualized, built, transacted, and managed, and works closely with portfolio companies on growth and business development. Before MetaProp he was an investor at Gotham Ventures, a seed stage firm affiliated with the Draper Venture Network, and earlier held roles at Canaan Partners, AOL Ventures, and Learn Capital. He is a Kauffman Fellow and teaches a graduate venture capital seminar as an adjunct professor at Columbia Business School. He holds a BA in political economy and business from Tulane University and an MBA from Columbia Business School.",
+    sources: [
+      { label: "MetaProp team profile", url: "https://www.metaprop.com/team/zak-schwarzman" },
+      { label: "MetaProp Fund III press release", url: "https://www.metaprop.com/press/venture-capital-firm-metaprop-closes-100m-third-fund-investment-early-stage-proptech" }
+    ]
+  },
+"amit-a-patel": {
+    name: "Amit A. Patel",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.owlvc.com/team/amitpatel",
+    firm: "Owl Ventures",
+    firmSlug: "owl-ventures",
+    title: "Co-founder and Managing Partner",
+    joinedYear: 2014,
+    education: ["B.A. Mathematical Economic Analysis, Rice University", "M.B.A., Stanford Graduate School of Business", "M.A. Education, Stanford Graduate School of Education"],
+    previousExperience: ["Director of Technology, Success Academy Charter Schools", "Quality assurance and sales training programs, Mathnasium Learning Centers", "Founder, Personal Academic Trainers"],
+    firmHistory: [],
+    boardSeats: ["uAspire (national board)"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Co-founded Owl Ventures to invest exclusively in education technology." },
+      { year: 2019, event: "With his partners closed Owl's $315 million third fund." },
+      { year: 2022, event: "Helped close over $1 billion in new funds for global EdTech investing." }
+    ],
+    notableInvestments: [
+      { name: "Codecademy" },
+      { name: "WhiteHat Jr" },
+      { name: "Apna" },
+      { name: "Panorama Education" },
+      { name: "SplashLearn" }
+    ],
+    biography: "Amit A. Patel is Co-founder and Managing Partner of Owl Ventures. He began his career in education as founder of Personal Academic Trainers, a tutoring company, then helped build quality assurance and sales training programs at Mathnasium Learning Centers and served as Director of Technology at Success Academy Charter Schools in New York City. At Owl his investments include Codecademy, acquired by Skillsoft, WhiteHat Jr, acquired by Byju's, and current portfolio companies such as Apna, Panorama Education, and SplashLearn. He serves on the national board of the college affordability nonprofit uAspire. He holds a B.A. in Mathematical Economic Analysis from Rice University and a joint M.B.A. and M.A. in Education from Stanford's Graduate School of Business and Graduate School of Education.",
+    sources: [
+      { label: "Owl Ventures team bio", url: "https://www.owlvc.com/team/amitpatel" },
+      { label: "Owl Ventures $1B funds press release (2022)", url: "https://www.prnewswire.com/news-releases/owl-ventures-closes-over-1-billion-in-new-funds-for-global-edtech-investments-301459027.html" }
+    ]
+  },
+"ian-chiu": {
+    name: "Ian Chiu",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.owlvc.com/team/ianchiu",
+    firm: "Owl Ventures",
+    firmSlug: "owl-ventures",
+    title: "Managing Partner",
+    joinedYear: 2018,
+    education: ["B.S. Industrial Engineering, Stanford University", "M.S. Industrial Engineering, Stanford University", "M.B.A., Stanford Graduate School of Business"],
+    previousExperience: ["Education sector lead, Warburg Pincus", "Technology investor, Silver Lake", "Consultant, Bain & Company", "Co-founder and early employee, BigMachines"],
+    firmHistory: [],
+    boardSeats: ["Degreed", "BenchPrep", "LeLe Ketang", "Sanjieke", "Abl"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Joined Owl Ventures as Managing Director after about a decade leading education investing at Warburg Pincus." },
+      { year: 2019, event: "Quoted in the announcement of Owl's $315 million third fund shortly after joining." },
+      { year: 2022, event: "With his partners closed over $1 billion in new funds, taking Owl past $2 billion under management." }
+    ],
+    notableInvestments: [
+      { name: "Degreed" },
+      { name: "BenchPrep" }
+    ],
+    biography: "Ian Chiu is a Managing Partner at Owl Ventures, which he joined in 2018 after roughly a decade at Warburg Pincus, where he led the firm's education sector investing. Earlier he was a technology investor at Silver Lake, a consultant at Bain & Company, and a co-founder and early employee of BigMachines, a SaaS company later acquired by Oracle. At Owl he serves on the boards of Degreed, BenchPrep, LeLe Ketang, Sanjieke, and Abl, and works closely with MasterClass. He holds a B.S. and M.S. in Industrial Engineering from Stanford University and an M.B.A. from Stanford Graduate School of Business, where he was an Arjay Miller Scholar and Arbuckle Leadership Fellow.",
+    sources: [
+      { label: "Owl Ventures team bio", url: "https://www.owlvc.com/team/ianchiu" },
+      { label: "Buyouts: Ian Chiu joins Owl Ventures (2018)", url: "https://www.buyoutsinsider.com/ex-warburg-tech-investor-ian-chiu-joins-owl-ventures/" }
+    ]
+  },
+"tom-costin": {
+    name: "Tom Costin",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.owlvc.com/team/tomcostin",
+    firm: "Owl Ventures",
+    firmSlug: "owl-ventures",
+    title: "Co-founder and Managing Partner",
+    joinedYear: 2014,
+    education: ["B.A., Bowdoin College", "M.B.A., Stanford Graduate School of Business"],
+    previousExperience: ["Private Investments Specialist, Cambridge Associates", "Associate, FLAG Capital"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Co-founded Owl Ventures and has worked across the firm's business and investment operations since inception." },
+      { year: 2019, event: "Quoted as Managing Director in the announcement of Owl's $315 million third fund." },
+      { year: 2022, event: "With his partners closed over $1 billion in new funds for global EdTech investing." }
+    ],
+    notableInvestments: [],
+    biography: "Tom Costin is Co-founder and Managing Partner of Owl Ventures and has worked across the firm's business and investment operations since its 2014 founding, helping build Owl into what the firm describes as the largest venture capital firm in the world focused on education technology. Before Owl he advised families, nonprofits, endowments, and pension funds on venture capital and private equity allocations as a private investments specialist at Cambridge Associates, and earlier worked as an associate at FLAG Capital. He advises the education deal team of the Stanford GSB Impact Fund. He holds a B.A. from Bowdoin College and an M.B.A. from Stanford Graduate School of Business.",
+    sources: [
+      { label: "Owl Ventures team bio", url: "https://www.owlvc.com/team/tomcostin" },
+      { label: "Owl Ventures Fund III press release (2019)", url: "https://www.prnewswire.com/news-releases/owl-ventures-raises-315m-third-fund-for-global-edtech-investments-300783340.html" }
+    ]
+  },
+"tory-patterson": {
+    name: "Tory Patterson",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.owlvc.com/team/torypatterson",
+    firm: "Owl Ventures",
+    firmSlug: "owl-ventures",
+    title: "Co-founder and Managing Partner",
+    joinedYear: 2014,
+    education: ["B.A. Economics, Williams College", "M.B.A., Stanford Graduate School of Business"],
+    previousExperience: ["Partner, Catamount Ventures"],
+    firmHistory: [],
+    boardSeats: ["Brisk Teaching", "Hazel Health", "Kiddom", "Newsela", "ParentSquare", "Quizlet", "Subject", "uLesson"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Co-founded Owl Ventures after building one of the venture industry's first education investment practices at Catamount Ventures." },
+      { year: 2017, event: "Helped close Owl's $185 million second fund." },
+      { year: 2022, event: "With his partners closed over $1 billion in new funds, taking Owl past $2 billion under management." },
+      { year: 2023, event: "Saw portfolio company DreamBox Learning acquired by Discovery Education." }
+    ],
+    notableInvestments: [
+      { name: "DreamBox Learning" },
+      { name: "Newsela" },
+      { name: "Quizlet" },
+      { name: "Remind" },
+      { name: "TenMarks" }
+    ],
+    biography: "Tory Patterson is Co-founder and Managing Partner of Owl Ventures, the education technology firm he helped launch in 2014 and build into one of the largest EdTech focused venture investors in the world. Before Owl he was a partner at Catamount Ventures, where he founded and ran one of the venture industry's first dedicated education investment practices. His realized investments include DreamBox Learning, acquired by Discovery Education, Remind, acquired by ParentSquare, TenMarks, acquired by Amazon, and LearnZillion, acquired by Imagine Learning. He currently serves on the boards of companies including Newsela, Quizlet, Hazel Health, and uLesson. He holds a B.A. in Economics from Williams College and an M.B.A. from Stanford Graduate School of Business.",
+    sources: [
+      { label: "Owl Ventures team bio", url: "https://www.owlvc.com/team/torypatterson" },
+      { label: "Owl Ventures $1B funds press release (2022)", url: "https://www.prnewswire.com/news-releases/owl-ventures-closes-over-1-billion-in-new-funds-for-global-edtech-investments-301459027.html" },
+      { label: "TechCrunch on Owl's second fund (2017)", url: "https://techcrunch.com/2017/10/19/owl-ventures-which-funds-edtech-exclusively-just-raised-185-million-for-its-second-fund/" }
+    ]
+  },
+"maryanna-saenko": {
+    name: "Maryanna Saenko",
+    sectors: ["Deep Tech", "Energy", "Food & Agriculture"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://future.ventures/bio",
+    firm: "Future Ventures",
+    firmSlug: "future-ventures",
+    title: "Co-Founder",
+    joinedYear: 2018,
+    education: ["B.S. Biomedical Engineering, Carnegie Mellon University", "B.S. Materials Science and Engineering, Carnegie Mellon University", "M.S. Materials Science and Engineering, Carnegie Mellon University"],
+    previousExperience: ["Investor, Khosla Ventures", "Investor, DFJ", "Investment Partner, Airbus Ventures", "Consultant, Lux Research", "Research Engineer, Cabot Corporation"],
+    firmHistory: [{ firmSlug: "khosla-ventures", role: "Investor", startYear: null, endYear: null }],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Co-founded Future Ventures with Steve Jurvetson after investing roles at Khosla Ventures, DFJ, and Airbus Ventures." },
+      { year: 2019, event: "Launched Future Ventures publicly with its $200 million first fund." },
+      { year: 2023, event: "Closed the firm's third $200 million fund, bringing assets under management to $925 million including SPVs." }
+    ],
+    notableInvestments: [],
+    biography: "Maryanna Saenko is Co-Founder of Future Ventures, where she invests in frontier technologies including nuclear fusion, sustainable agriculture, women's reproductive longevity, and AI applications in construction and medical therapeutics. Before launching the firm with Steve Jurvetson in 2018 she was an investor at Khosla Ventures and DFJ and an investment partner at Airbus Ventures, and earlier worked as a consultant at Lux Research and a research engineer at Cabot Corporation, with engineering experience spanning lunar rovers, Martian landers, driverless cars, and communication systems. She holds a B.S. in Biomedical Engineering and a B.S. and M.S. in Materials Science and Engineering from Carnegie Mellon University.",
+    sources: [
+      { label: "Future Ventures team bio", url: "https://future.ventures/bio" },
+      { label: "TechCrunch on Future Ventures' third fund (2023)", url: "https://techcrunch.com/2023/04/12/talking-with-future-ventures-about-its-new-fund-ai-hype-and-siri-sucking" }
+    ]
+  },
+"nico-enriquez": {
+    name: "Nico Enriquez",
+    sectors: ["Energy", "Robotics", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://future.ventures/bio",
+    firm: "Future Ventures",
+    firmSlug: "future-ventures",
+    title: "Principal",
+    joinedYear: 2024,
+    education: ["B.S. Cognitive Neuroscience, Brown University", "M.B.A., Stanford Graduate School of Business"],
+    previousExperience: ["Commercialization Fellow, ARPA-E (U.S. Department of Energy)", "Co-founder, consumer startup (8 years)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2024, event: "Joined Future Ventures after a commercialization fellowship at ARPA-E in the U.S. Department of Energy." },
+      { year: 2025, event: "Profiled as Principal at Future Ventures, discussing the firm's energy, robotics, and climate investing." }
+    ],
+    notableInvestments: [],
+    biography: "Nico Enriquez is a Principal at Future Ventures, where he focuses on energy, robotics, climate, and biotech companies. Before joining the firm he served as a Commercialization Fellow at ARPA-E, the Advanced Research Projects Agency-Energy within the U.S. Department of Energy, working on bringing energy innovations to market. Earlier he co-founded and ran a consumer startup for eight years, reaching distribution in 14 states, and was named to a Forbes 30 Under 30 list. He holds a B.S. in Cognitive Neuroscience with Sigma Xi honors from Brown University, an M.B.A. from Stanford Graduate School of Business, and a professional certification in sustainability finance and analytics from Columbia University.",
+    sources: [
+      { label: "Future Ventures team bio", url: "https://future.ventures/bio" },
+      { label: "BR Venture Fund interview (October 2025)", url: "https://www.brventurefund.com/conversation-with-nico-enriquez-principal-at-future-ventures" }
+    ]
+  },
+"steve-jurvetson": {
+    name: "Steve Jurvetson",
+    sectors: ["Deep Tech", "Space", "Robotics"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://future.ventures/bio",
+    firm: "Future Ventures",
+    firmSlug: "future-ventures",
+    title: "Co-Founder",
+    joinedYear: 2018,
+    education: ["B.S. Electrical Engineering, Stanford University", "M.S. Electrical Engineering, Stanford University", "M.B.A., Stanford Graduate School of Business"],
+    previousExperience: ["Partner, Draper Fisher Jurvetson (through 2017)", "Consultant, Bain & Company", "Product marketing, Apple and NeXT", "R&D Engineer, Hewlett-Packard"],
+    firmHistory: [],
+    boardSeats: ["SpaceX", "TMC the metals company (Vice Chairman)"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Led DFJ's investment in Tesla and joined its board, serving until December 2020." },
+      { year: 2016, event: "Appointed a Presidential Ambassador for Global Entrepreneurship by President Barack Obama." },
+      { year: 2017, event: "Departed Draper Fisher Jurvetson in November after more than two decades at the firm." },
+      { year: 2018, event: "Co-founded Future Ventures with Maryanna Saenko." },
+      { year: 2019, event: "Launched Future Ventures publicly with its $200 million first fund." },
+      { year: 2024, event: "Joined the board of TMC the metals company as director and Vice Chairman." }
+    ],
+    notableInvestments: [
+      { name: "SpaceX" },
+      { name: "Tesla", ticker: "TSLA" },
+      { name: "Planet Labs", ticker: "PL" },
+      { name: "D-Wave Systems", ticker: "QBTS" },
+      { name: "Hotmail" },
+      { name: "Skype" }
+    ],
+    biography: "Steve Jurvetson is Co-Founder of Future Ventures, the early stage deep technology firm he launched with Maryanna Saenko in 2018. Over a two decade career at Draper Fisher Jurvetson he led founding investments in companies including Hotmail, Skype, Planet Labs, D-Wave, Tesla, and SpaceX, and served on Tesla's board from 2006 to 2020. He remains a director of SpaceX and in 2024 joined the board of TMC the metals company as Vice Chairman. At Future Ventures he backs founder led companies in commercial space, fusion, quantum computing, robotics, and AI. Earlier he was an R&D engineer at Hewlett-Packard and worked in product marketing at Apple and NeXT. He holds a B.S., M.S., and M.B.A. from Stanford University and was appointed a Presidential Ambassador for Global Entrepreneurship in 2016.",
+    sources: [
+      { label: "Future Ventures team bio", url: "https://future.ventures/bio" },
+      { label: "Wikipedia: Steve Jurvetson", url: "https://en.wikipedia.org/wiki/Steve_Jurvetson" },
+      { label: "TechCrunch on SpaceX board composition (June 2026)", url: "https://techcrunch.com/2026/06/17/roelof-botha-joins-spacexs-board-of-directors/" },
+      { label: "TMC investor relations board page", url: "https://investors.metals.co/board-member/steve-jurvetson" }
+    ]
+  },
+"dan-fishman": {
+    name: "Dan Fishman",
+    sectors: ["Consumer", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://regeneration.vc/team/dan-fishman",
+    firm: "Regeneration.VC",
+    firmSlug: "regeneration-vc",
+    title: "Co-Founder and General Partner",
+    joinedYear: 2020,
+    education: ["Boston University"],
+    previousExperience: ["President and first investor, Coolhaus (2011-2021)", "Founder, L'Agence", "Co-creator, A.L.C.", "Co-launcher, House of Harlow 1960 and Winter Kate", "Co-founder, Bulldog Entertainment Group (2002-2006)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2002, event: "Co-founded Bulldog Entertainment Group, sold to Warner Music Group in 2006." },
+      { year: 2011, event: "Became first investor in and President of ice cream brand Coolhaus, later growing it past 8,000 retail locations." },
+      { year: 2020, event: "Co-founded Regeneration.VC with Michael Smith to invest in consumer climate technology." },
+      { year: 2021, event: "Saw Coolhaus acquired by Perfect Day." },
+      { year: 2022, event: "Launched Regeneration.VC's $45 million inaugural fund." }
+    ],
+    notableInvestments: [
+      { name: "Coolhaus" }
+    ],
+    biography: "Dan Fishman is Co-Founder and General Partner of Regeneration.VC, where he applies two decades of consumer brand experience to early stage climate investing. He co-founded Bulldog Entertainment Group in 2002, selling it to Warner Music Group in 2006, then built fashion brands including House of Harlow 1960 with Nicole Richie, A.L.C. with Andrea Lieberman, and L'Agence. In 2011 he became the first investor in and President of Coolhaus, growing the premium ice cream brand to more than 8,000 retail locations and launching its vegan line nationally at Whole Foods before the company's 2021 acquisition by Perfect Day. At Regeneration.VC he focuses on consumer companies built on circular and regenerative supply chains. He is a graduate of Boston University.",
+    sources: [
+      { label: "Regeneration.VC team bio", url: "https://regeneration.vc/team/dan-fishman" },
+      { label: "Fund launch press release (2022)", url: "https://www.prnewswire.com/news-releases/regenerationvc-launches-a-45m-fund-to-invest-in-circular-and-regenerative-materials-brands-and-reuse-technologies-301510526.html" },
+      { label: "Pulse2 firm profile (2023)", url: "https://pulse2.com/regeneration-vc-michael-smith-profile/" }
+    ]
+  },
+"michael-smith": {
+    name: "Michael Smith",
+    sectors: ["Consumer", "Climate", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://regeneration.vc/team/michael-smith",
+    firm: "Regeneration.VC",
+    firmSlug: "regeneration-vc",
+    title: "Co-Founder and General Partner",
+    joinedYear: 2020,
+    education: ["Northwestern University"],
+    previousExperience: ["Founder, Ponvalley family office (2015)", "Co-founder, Creative Space (2010)", "Founder, The Playlist Generation (2006)", "Marketing and digital leader, Smith Broadcasting"],
+    firmHistory: [],
+    boardSeats: ["Smarter Sorting", "Greyparrot", "American Renewable Energy Institute", "Sustainable Change Alliance"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Founded background music company The Playlist Generation." },
+      { year: 2010, event: "Co-founded Creative Space, a real estate firm behind roughly 80 adaptive reuse projects in Los Angeles and San Francisco." },
+      { year: 2015, event: "Formed Ponvalley, an environmentally focused family office." },
+      { year: 2020, event: "Co-founded Regeneration.VC with Dan Fishman." },
+      { year: 2022, event: "Launched the firm's $45 million inaugural fund." },
+      { year: 2024, event: "Led the raise of a Fund II targeting 150 million euros, anchored in part by Invest-NL, while heading the firm's European expansion." }
+    ],
+    notableInvestments: [
+      { name: "Smarter Sorting" },
+      { name: "Greyparrot" }
+    ],
+    biography: "Michael Smith is Co-Founder and General Partner of Regeneration.VC. He began in media as a marketing and digital leader at Smith Broadcasting and as a touring DJ, founded background music company The Playlist Generation in 2006, and co-founded Creative Space in 2010, a real estate firm behind roughly 80 adaptive reuse projects in Los Angeles and San Francisco. In 2015 he formed Ponvalley, an environmentally focused family office, before co-founding Regeneration.VC, where he now leads the firm's European expansion. He serves on the boards of portfolio companies Smarter Sorting and Greyparrot and of the American Renewable Energy Institute, and is a founding advisor to the Salk Institute's Harnessing Plants Initiative. He is a graduate of Northwestern University.",
+    sources: [
+      { label: "Regeneration.VC team bio", url: "https://regeneration.vc/team/michael-smith" },
+      { label: "Fund launch press release (2022)", url: "https://www.prnewswire.com/news-releases/regenerationvc-launches-a-45m-fund-to-invest-in-circular-and-regenerative-materials-brands-and-reuse-technologies-301510526.html" },
+      { label: "Silicon Canals on Fund II and Invest-NL (2024)", url: "https://siliconcanals.com/invest-nl-invests-5m-in-regeneration-vc/" }
+    ]
+  },
+"alexandre-flamant": {
+    name: "Alexandre Flamant",
+    sectors: ["AI", "Deep Tech", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://medium.com/@hc_vc/alex-flamant-joins-hcvc-as-venture-partner-7228656256b4",
+    firm: "HCVC",
+    firmSlug: "hcvc",
+    title: "Partner",
+    joinedYear: 2022,
+    education: [],
+    previousExperience: ["AI roles, IBM Watson (until 2016)", "Investor, Notion Capital (from 2016)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Founded the London.AI meetup, a community for machine learning founders and researchers." },
+      { year: 2016, event: "Left IBM, where he had explored new developments in AI at IBM Watson, to move into venture at Notion Capital." },
+      { year: 2022, event: "Joined HCVC as a Venture Partner based in London; he is now a Partner at the firm." }
+    ],
+    notableInvestments: [
+      { name: "Unbabel" },
+      { name: "Five.AI" },
+      { name: "Scortex" },
+      { name: "Sofia Salud" }
+    ],
+    biography: "Alexandre Flamant is a Partner at HCVC, based in London. He started his career exploring new developments in artificial intelligence at IBM Watson before moving into venture capital in 2016 at Notion Capital, where he backed machine learning companies including Unbabel, Five.AI, Scortex, and Sofia Salud. In 2015 he founded London.AI, a meetup connecting the city's machine learning community, and he leads ZERO, a climate-focused event series bringing together founders, researchers, and policy experts. He joined HCVC as a Venture Partner in December 2022, drawn by the firm's willingness to back daring founders tackling meaningful physical-world problems, and now serves as a Partner.",
+    sources: [
+      { label: "HCVC team page", url: "https://www.hcvc.co/pages/team" },
+      { label: "HCVC announcement on Medium, December 2022", url: "https://medium.com/@hc_vc/alex-flamant-joins-hcvc-as-venture-partner-7228656256b4" }
+    ]
+  },
+"alexis-houssou": {
+    name: "Alexis Houssou",
+    sectors: ["Deep Tech", "Robotics", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.hcvc.co/pages/team",
+    firm: "HCVC",
+    firmSlug: "hcvc",
+    title: "Founder & Managing Partner",
+    joinedYear: 2015,
+    education: [],
+    previousExperience: ["Founder, UXUP.tv", "Finance roles, approximately five years", "Founder, Elephants&Ventures"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Founded Hardware Club in Paris as a community-first venture firm for hardtech startups." },
+      { year: 2018, event: "Closed the firm's $50 million debut venture fund alongside partners Jerry Yang and Aymerik Renard." },
+      { year: 2023, event: "Closed HCVC Fund II at $75 million, above target, bringing firm assets under management to $130 million." }
+    ],
+    notableInvestments: [
+      { name: "Prynt" },
+      { name: "Reach Robotics" },
+      { name: "Keecker" }
+    ],
+    biography: "Alexis Houssou is the founder and managing partner of HCVC, the Paris and San Francisco hardtech firm he started in 2015 as Hardware Club, a community-first venture firm that grew to more than 600 member startups across roughly 50 countries. An entrepreneur turned investor, he founded contextual video advertising startup UXUP.tv, spent about five years in finance, and ran Elephants&Ventures, a boutique that invested in and advised hardware startups including Lima, ISKN, and Aryballe. At Hardware Club he co-led early investments in companies such as Prynt, Reach Robotics, and Keecker, and he went on to raise HCVC's $50 million debut fund in 2018 and its $75 million second fund in 2023.",
+    sources: [
+      { label: "HCVC team page", url: "https://www.hcvc.co/pages/team" },
+      { label: "French Tech Journal interview, October 2023", url: "https://www.frenchtechjournal.com/spotlight-interview-hcvc-alexis-houssou/" },
+      { label: "daphni chronicles interview (Medium)", url: "https://medium.com/daphni-chronicles/alexis-houssou-about-hardware-and-his-club-d74e1b39fc3a" },
+      { label: "TechCrunch on HCVC Fund II", url: "https://techcrunch.com/2023/10/03/hcvc-is-back-with-a-new-75-million-deep-tech-fund/" }
+    ]
+  },
+"aymerik-renard": {
+    name: "Aymerik Renard",
+    sectors: ["Deep Tech", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.hcvc.co/pages/team",
+    firm: "HCVC",
+    firmSlug: "hcvc",
+    title: "General Partner",
+    joinedYear: 2017,
+    education: ["Information & Decision Systems, Carnegie Mellon University"],
+    previousExperience: ["Head of North American investments, Orange (12 years)", "Vice President, PCH International (2011 onward); co-founded Highway1 accelerator", "Head of U.S. venture activity, SanDisk (2014-2017)", "Strategic investments, Western Digital Capital"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2011, event: "Joined PCH International as Vice President for startup business development and co-founded the Highway1 hardware accelerator." },
+      { year: 2014, event: "Joined SanDisk to lead its U.S. venture activity, expanding into frontier tech and IoT investments, and continued with Western Digital Capital after SanDisk's acquisition." },
+      { year: 2017, event: "Joined Hardware Club, now HCVC, as a partner based in Silicon Valley." }
+    ],
+    notableInvestments: [],
+    biography: "Aymerik Renard is a General Partner at HCVC, based in Silicon Valley, with over 25 years of experience investing in breakthrough technologies. A Carnegie Mellon graduate in Information and Decision Systems, he spent twelve years at Orange heading North American investments, where portfolio companies were acquired by Microsoft, IBM, Cisco, SAP, and others. He was a Vice President at PCH International, where he co-founded the Highway1 hardware accelerator, then led U.S. venture activity at SanDisk from 2014 and managed strategic investments for Western Digital Capital after SanDisk's acquisition. He joined Hardware Club, now HCVC, in October 2017 and is an active mentor across hardware and robotics accelerator programs.",
+    sources: [
+      { label: "HCVC team page", url: "https://www.hcvc.co/pages/team" },
+      { label: "Silicon Valley Open Doors speaker bio", url: "https://www.svod.org/aymerik-renard/" },
+      { label: "TechCrunch on HCVC Fund II", url: "https://techcrunch.com/2023/10/03/hcvc-is-back-with-a-new-75-million-deep-tech-fund/" }
+    ]
+  },
+"jerry-yang": {
+    name: "Jerry Yang",
+    sectors: ["Deep Tech", "Semiconductors", "Space"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://informaconnect.com/superreturn-japan/speakers/jerry-yang/",
+    firm: "HCVC",
+    firmSlug: "hcvc",
+    title: "General Partner",
+    joinedYear: null,
+    education: ["BS, National Taiwan University", "MS, National Taiwan University", "MBA, HEC Paris"],
+    previousExperience: ["Engineer and entrepreneur, semiconductor industry across Taiwan, Silicon Valley and France (12 years)", "Co-founder, semiconductor startup in Taiwan"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "General Partner in HCVC's $50 million debut fund alongside Alexis Houssou and Aymerik Renard." },
+      { year: 2023, event: "Continued as General Partner for HCVC's $75 million second deep tech fund." }
+    ],
+    notableInvestments: [
+      { name: "Giraffe360" },
+      { name: "Radian Aerospace" },
+      { name: "Gideon Brothers" },
+      { name: "Valispace" }
+    ],
+    biography: "Jerry Yang is a General Partner at HCVC, the Paris-based hardtech venture firm formerly known as Hardware Club. He spent the first twelve years of his career in the semiconductor industry as both an engineer and an entrepreneur across Taiwan, Silicon Valley, and France, co-founding a semiconductor startup in Taiwan. He holds BS and MS degrees from National Taiwan University, an MBA from HEC Paris, and is a CFA charterholder. Based in Paris and splitting time between Europe and Asia, he was a partner in HCVC's $50 million debut fund and its $75 million second fund, and his investments at the firm include Giraffe360, Radian Aerospace, Gideon Brothers, and Valispace.",
+    sources: [
+      { label: "HCVC team page", url: "https://www.hcvc.co/pages/team" },
+      { label: "SuperReturn Japan speaker bio", url: "https://informaconnect.com/superreturn-japan/speakers/jerry-yang/" },
+      { label: "French Tech Journal interview, October 2023", url: "https://www.frenchtechjournal.com/spotlight-interview-hcvc-alexis-houssou/" }
+    ]
+  },
+"cameron-davidson": {
+    name: "Cameron Davidson",
+    sectors: [],
+    firm: "The Production Board",
+    firmSlug: "the-production-board",
+    title: "Operating Partner",
+    joinedYear: 2017,
+    education: ["BS Conservation and Resource Studies, University of California, Berkeley", "MS Integrated Water Management, University of Queensland"],
+    previousExperience: ["Manager of the CEO's office, The Climate Corporation", "Director of water management projects across Israel, the West Bank, Jordan, Australia, Indonesia, and China"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2013, event: "Managed the CEO's office at The Climate Corporation, handling executive communications and spearheading integration after Monsanto's 2013 acquisition." },
+      { year: 2017, event: "Joined The Production Board at its founding; as Operating Partner she leads all non-investment activities including internal operations, finance, and investor relations." }
+    ],
+    notableInvestments: [],
+    biography: "Cameron Davidson is Operating Partner at The Production Board, where she leads all non-investment activities including internal operations, finance, and investor relations, and has been with the firm since its founding. She previously managed the CEO's office at The Climate Corporation, handling executive communications and spearheading integration work after Monsanto acquired the company in 2013. Before TPB she directed water management projects across Israel, the West Bank, Jordan, Australia, Indonesia, and China. She holds a bachelor's degree in Conservation and Resource Studies from the University of California, Berkeley, and a master's degree in Integrated Water Management from the University of Queensland in Australia.",
+    sources: [
+      { label: "The Production Board staff page", url: "https://www.tpb.co/staff/cameron-davidson" },
+      { label: "The Production Board team page", url: "https://www.tpb.co/team" }
+    ]
+  },
+"david-friedberg": {
+    name: "David Friedberg",
+    sectors: ["Food & Agriculture", "Biotech", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.tpb.co/staff/david-friedberg",
+    firm: "The Production Board",
+    firmSlug: "the-production-board",
+    title: "CEO and Partner",
+    joinedYear: 2017,
+    education: ["BA Astrophysics, University of California, Berkeley"],
+    previousExperience: ["Senior roles in Corporate Development and Product, Google", "Founder and CEO, The Climate Corporation (sold to Monsanto, 2013)", "Executive leadership team member, Monsanto", "Founder, Metromile"],
+    firmHistory: [],
+    boardSeats: ["Lavoro", "Pattern Ag"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2004, event: "Joined Google, where he held senior roles in Corporate Development and Product." },
+      { year: 2013, event: "Sold The Climate Corporation, the digital agronomy platform he founded and led, to Monsanto for over $1 billion, then joined Monsanto's executive leadership team." },
+      { year: 2017, event: "Founded The Production Board in San Francisco as a holding company building and investing in businesses that reimagine global systems of production." },
+      { year: 2021, event: "Raised $300 million for The Production Board from investors including Alphabet, BlackRock, and Koch Disruptive Technologies; Metromile, the digital auto insurer he founded, listed on Nasdaq the same year." },
+      { year: 2023, event: "The Production Board's sponsored SPAC completed a $1.2 billion combination taking agricultural inputs company Lavoro public on Nasdaq." }
+    ],
+    notableInvestments: [
+      { name: "Lavoro" },
+      { name: "Soylent" },
+      { name: "Ohalo" },
+      { name: "Pattern Ag" }
+    ],
+    biography: "David Friedberg is CEO and Partner of The Production Board, the San Francisco holding company and venture foundry he founded in 2017 to rebuild the systems of production behind food, agriculture, biomanufacturing, and human health. A UC Berkeley astrophysics graduate, he held senior corporate development and product roles at Google before founding The Climate Corporation, whose digital agronomy platform came to serve over 200 million farm acres worldwide; Monsanto acquired the company for over $1 billion in 2013 and Friedberg joined its executive leadership team. He also founded digital auto insurer Metromile, which listed on Nasdaq in 2021. At TPB he sets strategy, defines investment theses, and manages key investments, sits on the boards of Lavoro and Pattern Ag, and co-hosts the All-In podcast.",
+    sources: [
+      { label: "The Production Board staff page", url: "https://www.tpb.co/staff/david-friedberg" },
+      { label: "CNBC on TPB's $300 million raise, July 2021", url: "https://www.cnbc.com/2021/07/30/david-friedbergs-alphabet-backed-production-board-raised-300-million.html" },
+      { label: "Lavoro and TPB Acquisition Corporation I business combination (Business Wire)", url: "https://www.businesswire.com/news/home/20230228006442/en/Lavoro-and-TPB-Acquisition-Corporation-I-Announce-Completion-of-Business-Combination" }
+    ]
+  },
+"ben-horowitz": {
+    name: "Ben Horowitz",
+    firm: "Andreessen Horowitz",
+    firmSlug: "a16z",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2009,
+    investmentFocus: [
+      "Enterprise Software",
+      "AI",
+      "Consumer"
+    ],
+    education: [
+      "B.A. Computer Science, Columbia University",
+      "M.S. Computer Science, University of California, Los Angeles"
+    ],
+    previousExperience: [
+      "Senior product marketing roles, Lotus Development Corporation",
+      "Vice President, Directory and Security product line, Netscape Communications",
+      "Vice President & General Manager, E-commerce Platform division, America Online",
+      "Co-founder & CEO, Opsware (formerly Loudcloud; acquired by Hewlett-Packard for $1.6 billion in 2007)",
+      "Vice President & General Manager, Business Technology Optimization for Software, Hewlett-Packard"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Anyscale",
+      "Databricks",
+      "Mayvenn",
+      "NationBuilder",
+      "Navan",
+      "UnitedMasters"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2007, event: "Opsware, which he cofounded and led as CEO, was acquired by Hewlett-Packard for $1.6 billion." },
+      { year: 2009, event: "Cofounded the venture capital firm Andreessen Horowitz with Marc Andreessen." },
+      { year: 2012, event: "Led Andreessen Horowitz's $6.25 million Series A in NationBuilder and joined its board of directors." },
+      { year: 2013, event: "Led Andreessen Horowitz's roughly $14 million Series A investment in Databricks." },
+      { year: 2017, event: "Announced Andreessen Horowitz's investment in UnitedMasters and joined the board." },
+      { year: 2018, event: "Announced Andreessen Horowitz's investment in TripActions, now Navan, and joined the board." }
+    ],
+    biography: "Ben Horowitz is cofounder and general partner at Andreessen Horowitz, the venture capital firm he started with Marc Andreessen in 2009. Before that he was cofounder and CEO of Opsware, formerly Loudcloud, which Hewlett-Packard acquired for $1.6 billion in 2007, and he held product and general management roles at HP, America Online, Netscape Communications and Lotus Development Corporation. He sits on the boards of Anyscale, Databricks, Mayvenn, NationBuilder, Navan and UnitedMasters, and wrote the books The Hard Thing About Hard Things and What You Do Is Who You Are. He created the a16z Cultural Leadership Fund to support young African Americans entering the technology industry.",
+    notableInvestments: [
+      { name: "Databricks", ticker: null, stage: "Series A", year: 2013, yearPrecision: "year", sector: "AI", subsector: "data and analytics platform", role: "board", evidence: [
+        { url: "https://fortune.com/2023/03/02/databricks-ben-horowitz-data-cloud-startup/", type: "press", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/ben-horowitz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Anyscale", ticker: null, stage: "Series A", year: 2019, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "distributed computing, creators of the Ray project", role: "board", evidence: [
+        { url: "https://techcrunch.com/2019/12/17/anyscale-ray-project-distributed-computing-a16z/", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/ben-horowitz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "UnitedMasters", ticker: null, stage: null, year: 2017, yearPrecision: "year", sector: "Consumer", subsector: "independent music distribution", role: "board", evidence: [
+        { url: "https://a16z.com/announcement/unitedmasters/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/ben-horowitz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Navan", ticker: null, stage: null, year: 2018, yearPrecision: "year", sector: "Enterprise Software", subsector: "corporate travel and expense management, announced as TripActions", role: "board", evidence: [
+        { url: "https://a16z.com/announcement/tripactions/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/ben-horowitz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "NationBuilder", ticker: null, stage: "Series A", year: 2012, yearPrecision: "year", sector: "Enterprise Software", subsector: "community and political organizing software", role: "board", evidence: [
+        { url: "https://nationbuilder.com/ah_funding", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/ben-horowitz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Mayvenn", ticker: null, stage: "Series A", year: 2015, yearPrecision: "year", sector: "Ecommerce", subsector: "beauty and hair extensions marketplace", role: "board", evidence: [
+        { url: "https://techcrunch.com/2015/06/19/hair-extensions-startup-mayvenn-raises-10-million-series-a-from-a16z/", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/ben-horowitz/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Andreessen Horowitz - Ben Horowitz", url: "https://a16z.com/author/ben-horowitz/" },
+      { label: "Andreessen Horowitz - UnitedMasters announcement", url: "https://a16z.com/announcement/unitedmasters/" },
+      { label: "Andreessen Horowitz - TripActions announcement", url: "https://a16z.com/announcement/tripactions/" },
+      { label: "Fortune - How Databricks became an A.I. sensation", url: "https://fortune.com/2023/03/02/databricks-ben-horowitz-data-cloud-startup/" },
+      { label: "TechCrunch - Anyscale launches with $20.6M led by a16z", url: "https://techcrunch.com/2019/12/17/anyscale-ray-project-distributed-computing-a16z/" },
+      { label: "TechCrunch - Mayvenn raises $10 million Series A from a16z", url: "https://techcrunch.com/2015/06/19/hair-extensions-startup-mayvenn-raises-10-million-series-a-from-a16z/" },
+      { label: "NationBuilder - Series A funding announcement", url: "https://nationbuilder.com/ah_funding" }
+    ]
+  },
+"chris-dixon": {
+    name: "Chris Dixon",
+    firm: "Andreessen Horowitz",
+    firmSlug: "a16z",
+    title: "General Partner, a16z crypto",
+    joinedYear: 2012,
+    investmentFocus: [
+      "Crypto"
+    ],
+    education: [
+      "B.A. Philosophy, Columbia University",
+      "M.A. Philosophy, Columbia University",
+      "M.B.A., Harvard Business School"
+    ],
+    previousExperience: [
+      "Programmer, Arbitrade (high-speed options trading firm)",
+      "Co-founder & CEO, SiteAdvisor (acquired by McAfee in 2006)",
+      "Co-founder & CEO, Hunch (acquired by eBay in 2011)",
+      "Co-founder, Founder Collective"
+    ],
+    firmHistory: [
+      { firmSlug: "founder-collective", role: "Co-founder", startYear: null, endYear: null }
+    ],
+    boardSeats: [
+      "OpenSea"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "SiteAdvisor, the internet security company he cofounded and led, was acquired by McAfee." },
+      { year: 2011, event: "Hunch, the recommendation technology company he cofounded and led, was acquired by eBay." },
+      { year: 2012, event: "Joined Andreessen Horowitz as a general partner." },
+      { year: 2013, event: "Led Andreessen Horowitz's $25 million Series B in Coinbase and joined its board of directors." },
+      { year: 2022, event: "Joined OpenSea's board of directors, taking over the a16z seat from Katie Haun." },
+      { year: 2024, event: "Published Read Write Own: Building the Next Era of the Internet with Random House." }
+    ],
+    biography: "Chris Dixon is a general partner at Andreessen Horowitz, where he founded and leads a16z crypto, the firm's dedicated web3 investing practice. He joined the firm in 2012 after cofounding and running two startups, SiteAdvisor, acquired by McAfee in 2006, and Hunch, acquired by eBay in 2011, and after cofounding the seed fund Founder Collective. He led the firm's 2013 Series B investment in Coinbase and joined that company's board, and in 2022 took the a16z board seat at OpenSea. He is the author of Read Write Own: Building the Next Era of the Internet, published by Random House in January 2024.",
+    notableInvestments: [
+      { name: "Coinbase", ticker: "COIN", stage: "Series B", year: 2013, yearPrecision: "year", sector: "Crypto", subsector: "bitcoin wallet and merchant services", role: "board", evidence: [
+        { url: "https://techcrunch.com/2013/12/12/coinbase-raises-25m-from-andreessen-horowitz-to-build-its-bitcoin-wallet-and-merchant-services/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "OpenSea", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Crypto", subsector: "NFT marketplace", role: "board", evidence: [
+        { url: "https://opensea.io/blog/articles/welcoming-chris-dixon-to-our-board-of-directors", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Uniswap", ticker: null, stage: "Series A", year: null, yearPrecision: null, sector: "Crypto", subsector: "decentralized exchange", role: null, evidence: [
+        { url: "https://www.forbes.com/sites/alexkonrad/2022/04/12/midas-list-chris-dixon-crypto-capitalist/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Avalanche", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Crypto", subsector: "layer-1 blockchain", role: null, evidence: [
+        { url: "https://www.forbes.com/sites/alexkonrad/2022/04/12/midas-list-chris-dixon-crypto-capitalist/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Dapper Labs", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Crypto", subsector: "digital collectibles, creator of NBA Top Shot and CryptoKitties", role: null, evidence: [
+        { url: "https://www.forbes.com/sites/alexkonrad/2022/04/12/midas-list-chris-dixon-crypto-capitalist/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Andreessen Horowitz - Chris Dixon", url: "https://a16z.com/author/chris-dixon/" },
+      { label: "a16z crypto - Chris Dixon", url: "https://a16zcrypto.com/team/chris-dixon/" },
+      { label: "TechCrunch - Coinbase raises $25M led by Andreessen Horowitz", url: "https://techcrunch.com/2013/12/12/coinbase-raises-25m-from-andreessen-horowitz-to-build-its-bitcoin-wallet-and-merchant-services/" },
+      { label: "OpenSea - Welcoming Chris Dixon to our Board of Directors", url: "https://opensea.io/blog/articles/welcoming-chris-dixon-to-our-board-of-directors" },
+      { label: "Forbes - How Chris Dixon's Dive Down The Crypto Rabbit Hole Made Him The World's Top Venture Capitalist", url: "https://www.forbes.com/sites/alexkonrad/2022/04/12/midas-list-chris-dixon-crypto-capitalist/" }
+    ]
+  },
+"martin-casado": {
+    name: "Martin Casado",
+    firm: "Andreessen Horowitz",
+    firmSlug: "a16z",
+    title: "General Partner, Infrastructure & Enterprise",
+    joinedYear: 2016,
+    investmentFocus: [
+      "Developer Tools & Infrastructure",
+      "Enterprise Software",
+      "AI"
+    ],
+    education: [
+      "M.S. Computer Science, Stanford University",
+      "Ph.D. Computer Science, Stanford University"
+    ],
+    previousExperience: [
+      "Researcher, Lawrence Livermore National Laboratory",
+      "Co-founder, Illuminics Systems (acquired by Quova in 2006)",
+      "Co-founder & CTO, Nicira (acquired by VMware in 2012)",
+      "Fellow and Senior Vice President, VMware (networking and security)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Ambient.ai",
+      "Astranis",
+      "Braintrust",
+      "Coactive",
+      "Convex",
+      "Cursor",
+      "Distributional",
+      "Fivetran",
+      "Ideogram",
+      "Imply",
+      "Kong",
+      "Material Security",
+      "Netlify",
+      "Pindrop Security",
+      "Preset",
+      "Truffle Security",
+      "World Labs"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Illuminics Systems, the IP analytics company he cofounded, was acquired by Quova." },
+      { year: 2012, event: "Nicira, which he cofounded and served as CTO, was acquired by VMware for $1.26 billion." },
+      { year: 2016, event: "Joined Andreessen Horowitz as a general partner after leaving VMware." },
+      { year: 2019, event: "Joined Fivetran's board of directors when Andreessen Horowitz led its $44 million Series B." },
+      { year: 2022, event: "Led Andreessen Horowitz's Series A in Convex and joined the board." },
+      { year: 2024, event: "Coauthored Andreessen Horowitz's announcements of its investments in Cursor and World Labs." }
+    ],
+    biography: "Martin Casado is a general partner at Andreessen Horowitz, where he leads the firm's infrastructure practice, having joined in 2016. He holds a PhD and a master's degree in computer science from Stanford University, helped pioneer software-defined networking as a Stanford researcher, and previously worked at Lawrence Livermore National Laboratory. He cofounded Illuminics Systems, acquired by Quova in 2006, and Nicira, where he was CTO until VMware acquired it for $1.26 billion in 2012, after which he served as a Fellow and senior vice president at VMware leading networking and security. He has received the ACM Grace Murray Hopper Award and the NEC C&C Award, and sits on boards including Convex, Cursor, Fivetran, Kong, Netlify and World Labs.",
+    notableInvestments: [
+      { name: "Convex", ticker: null, stage: "Series A", year: 2022, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "application backend and reactive database", role: "board", evidence: [
+        { url: "https://a16z.com/announcement/investing-in-convex/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/martin-casado/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Fivetran", ticker: null, stage: "Series B", year: 2019, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "automated data integration", role: "board", evidence: [
+        { url: "https://www.fivetran.com/press/fivetran-raises-44-million-series-b-led-by-andreessen-horowitz-to-automate-data-integration", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/martin-casado/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Cursor", ticker: null, stage: "Series A", year: 2024, yearPrecision: "year", sector: "AI", subsector: "AI coding environment", role: "board", evidence: [
+        { url: "https://a16z.com/announcement/investing-in-cursor/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/martin-casado/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "World Labs", ticker: null, stage: null, year: 2024, yearPrecision: "year", sector: "AI", subsector: "spatial intelligence and world models", role: "board", evidence: [
+        { url: "https://a16z.com/announcement/investing-in-world-labs/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://a16z.com/author/martin-casado/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Andreessen Horowitz - Martin Casado", url: "https://a16z.com/author/martin-casado/" },
+      { label: "Andreessen Horowitz - Investing in Convex", url: "https://a16z.com/announcement/investing-in-convex/" },
+      { label: "Andreessen Horowitz - Investing in Cursor", url: "https://a16z.com/announcement/investing-in-cursor/" },
+      { label: "Andreessen Horowitz - What's In a World? Investing in World Labs", url: "https://a16z.com/announcement/investing-in-world-labs/" },
+      { label: "Fivetran - Fivetran Raises $44 Million Series B Led by Andreessen Horowitz", url: "https://www.fivetran.com/press/fivetran-raises-44-million-series-b-led-by-andreessen-horowitz-to-automate-data-integration" },
+      { label: "TechCrunch - Andreessen Horowitz Brings Aboard Martin Casado As GP", url: "https://techcrunch.com/2016/02/24/in-advance-of-next-fund-andreessen-horowitz-brings-aboard-a-new-gp-martin-casado" }
+    ]
+  },
+"andrew-chen": {
+    name: "Andrew Chen",
+    firm: "Andreessen Horowitz",
+    firmSlug: "a16z",
+    title: "General Partner, Consumer & Apps",
+    joinedYear: 2018,
+    investmentFocus: [
+      "Consumer",
+      "Gaming",
+      "AI"
+    ],
+    education: [
+      "B.S. Applied Mathematics, University of Washington"
+    ],
+    previousExperience: [
+      "Analyst, Mohr Davidow Ventures",
+      "Head of Rider Growth, Uber"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Substack",
+      "Clubhouse"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Joined Andreessen Horowitz as a general partner after leading growth at Uber." },
+      { year: 2019, event: "Announced that Andreessen Horowitz was leading Substack's Series A and that he was joining the board." },
+      { year: 2019, event: "Announced Andreessen Horowitz's Series A investment in Sandbox VR." },
+      { year: 2020, event: "Was named as the Andreessen Horowitz partner on Sleeper's $20 million Series B." },
+      { year: 2021, event: "Led Andreessen Horowitz's investment in Clubhouse and joined its board of directors." },
+      { year: 2021, event: "Published The Cold Start Problem, a book on network effects, with Harper Business." }
+    ],
+    biography: "Andrew Chen is a general partner at Andreessen Horowitz, which he joined in 2018, and he focuses on consumer technology, entertainment and AI through the firm's a16z speedrun initiative. He led the Rider Growth teams at Uber before joining the firm and began his career as an analyst at Mohr Davidow Ventures. He holds a B.S. in applied mathematics from the University of Washington and wrote The Cold Start Problem, a book about how startups launch and scale using network effects. He led the firm's investments in Substack and Clubhouse and joined both boards, and announced its investments in Sandbox VR and Sleeper.",
+    notableInvestments: [
+      { name: "Substack", ticker: null, stage: "Series A", year: 2019, yearPrecision: "year", sector: "Consumer", subsector: "subscription newsletter platform for writers", role: "board", evidence: [
+        { url: "https://a16z.com/announcement/substack/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Clubhouse", ticker: null, stage: null, year: 2021, yearPrecision: "year", sector: "Consumer", subsector: "social audio", role: "board", evidence: [
+        { url: "https://andrewchen.com/first-book-2021/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Sandbox VR", ticker: null, stage: "Series A", year: 2019, yearPrecision: "year", sector: "Gaming", subsector: "location-based virtual reality entertainment", role: null, evidence: [
+        { url: "https://a16z.com/announcement/sandbox-vr/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Sleeper", ticker: null, stage: "Series B", year: 2020, yearPrecision: "year", sector: "Gaming", subsector: "fantasy sports and esports app", role: null, evidence: [
+        { url: "https://techcrunch.com/2020/05/12/fantasy-sports-startup-sleeper-closes-series-b-led-by-a16z-as-it-expands-to-esports-amid-pandemic", type: "deal-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Andreessen Horowitz - Andrew Chen", url: "https://a16z.com/author/andrew-chen/" },
+      { label: "Andreessen Horowitz - Investing in Substack", url: "https://a16z.com/announcement/substack/" },
+      { label: "Andreessen Horowitz - Sandbox VR announcement", url: "https://a16z.com/announcement/sandbox-vr/" },
+      { label: "andrewchen.com - About", url: "https://andrewchen.com/about/" },
+      { label: "andrewchen.com - My first book, The Cold Start Problem. Plus Clubhouse, and more.", url: "https://andrewchen.com/first-book-2021/" },
+      { label: "Axios - Uber exec Andrew Chen leaving for Andreessen Horowitz", url: "https://www.axios.com/2018/02/15/uber-exec-andrew-chen-leaving-for-andreessen-horowitr-1518702482" },
+      { label: "TechCrunch - Fantasy sports startup Sleeper closes Series B led by a16z", url: "https://techcrunch.com/2020/05/12/fantasy-sports-startup-sleeper-closes-series-b-led-by-a16z-as-it-expands-to-esports-amid-pandemic" }
+    ]
+  },
+"scott-kupor": {
+    name: "Scott Kupor",
+    firm: "Andreessen Horowitz",
+    firmSlug: "a16z",
+    title: "Managing Partner",
+    joinedYear: 2009,
+    departedYear: 2025,
+    departedNote: "Kupor has left Andreessen Horowitz. He resigned as managing member from 32 a16z funds and from portfolio boards including Formation Bio, Talkiatry, Pearl Health and Foursquare ahead of his Senate confirmation, and resigned as managing partner on appointment. He was sworn in as Director of the U.S. Office of Personnel Management on July 14, 2025, and a16z.com no longer hosts an author or team bio page for him.",
+    investmentFocus: [
+      "Digital Health",
+      "Biotech"
+    ],
+    education: [
+      "B.A. Public Policy, Stanford University",
+      "J.D., Stanford Law School"
+    ],
+    previousExperience: [
+      "Investment banker representing software companies, Lehman Brothers",
+      "Investment banker representing software companies, Credit Suisse First Boston",
+      "Vice President, Financial Planning and Corporate Development, then Senior Vice President of Global Field Operations, Opsware",
+      "Vice President & General Manager, Software-as-a-Service, Hewlett-Packard",
+      "Chairman of the Board, National Venture Capital Association",
+      "Director, U.S. Office of Personnel Management (from July 2025)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2009, event: "Joined Andreessen Horowitz as its first hire at the firm's founding." },
+      { year: 2023, event: "Joined Pearl Health's board of directors when Andreessen Horowitz led its $75 million Series B." },
+      { year: 2024, event: "Joined Formation Bio's board of directors as part of its $372 million Series D." },
+      { year: 2025, event: "Resigned as managing member from 32 a16z funds and from several portfolio boards ahead of his Senate confirmation hearing." },
+      { year: 2025, event: "Was sworn in as Director of the U.S. Office of Personnel Management on July 14." }
+    ],
+    biography: "Scott Kupor was managing partner at Andreessen Horowitz, which he joined as its first hire at the firm's 2009 founding, and where he focused on growth-stage bio and healthcare companies alongside investor relations and firm operations. He holds a B.A. in public policy and a J.D. from Stanford University, and before Andreessen Horowitz he was an investment banker at Lehman Brothers and Credit Suisse First Boston, then held finance and global field operations roles at Opsware and ran software-as-a-service at Hewlett-Packard. He chaired the board of the National Venture Capital Association, taught entrepreneurship at Stanford Graduate School of Business and wrote Secrets of Sand Hill Road: Venture Capital and How to Get It. In 2025 he resigned from a16z funds and portfolio boards and was sworn in as Director of the U.S. Office of Personnel Management on July 14, 2025.",
+    notableInvestments: [
+      { name: "Formation Bio", ticker: null, stage: "Series D", year: 2024, yearPrecision: "year", sector: "Biotech", subsector: "AI-driven drug development", role: "board", evidence: [
+        { url: "https://www.ddw-online.com/ai-driven-drug-company-secures-372m-series-d-funding-30362-202407/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Pearl Health", ticker: null, stage: "Series B", year: 2023, yearPrecision: "year", sector: "Digital Health", subsector: "value-based primary care enablement", role: "board", evidence: [
+        { url: "https://www.prnewswire.com/news-releases/pearl-health-raises-75m-series-b-led-by-a16z-to-accelerate-growth-and-innovation-in-value-based-care-301730586.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Talkiatry", ticker: null, stage: "Series C", year: 2024, yearPrecision: "year", sector: "Digital Health", subsector: "value-based behavioral health and telepsychiatry", role: null, evidence: [
+        { url: "https://www.prnewswire.com/news-releases/talkiatry-secures-130m-series-c-funding-to-mainstream-value-based-behavioral-health-care-302175461.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Foursquare", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "location technology", role: "board", evidence: [
+        { url: "https://fortune.com/2025/04/03/trump-appointee-scott-kupor-resigns-some-a16z-funds-boards-opm-confirmation/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "U.S. Office of Personnel Management - OPM Director Scott Kupor", url: "https://www.opm.gov/about-us/who-we-are/opm-director-scott-kupor/" },
+      { label: "Fortune - Trump appointee Scott Kupor resigns from some a16z funds, boards ahead of confirmation as head of OPM", url: "https://fortune.com/2025/04/03/trump-appointee-scott-kupor-resigns-some-a16z-funds-boards-opm-confirmation/" },
+      { label: "Stanford Law School - Scott Kupor Receives Senate Confirmation To Head Office of Personnel Management", url: "https://law.stanford.edu/stanford-lawyer/articles/scott-kupor-jd-96-ba-93-receives-senate-confirmation-to-head-office-of-personnel-management/" },
+      { label: "Health Evolution - Scott Kupor speaker bio", url: "https://www.healthevolution.com/bios/speaker/scott-kupor/" },
+      { label: "Congress.gov - PN12-24 Nomination of Scott Kupor for Office of Personnel Management", url: "https://www.congress.gov/nomination/119th-congress/12/24" },
+      { label: "Drug Discovery World - AI-driven drug company secures $372m Series D funding", url: "https://www.ddw-online.com/ai-driven-drug-company-secures-372m-series-d-funding-30362-202407/" },
+      { label: "PR Newswire - Pearl Health Raises $75M Series B Led by a16z", url: "https://www.prnewswire.com/news-releases/pearl-health-raises-75m-series-b-led-by-a16z-to-accelerate-growth-and-innovation-in-value-based-care-301730586.html" },
+      { label: "PR Newswire - Talkiatry Secures $130M Series C Funding", url: "https://www.prnewswire.com/news-releases/talkiatry-secures-130m-series-c-funding-to-mainstream-value-based-behavioral-health-care-302175461.html" }
     ]
   }
 });
