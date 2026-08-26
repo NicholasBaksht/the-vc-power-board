@@ -913,7 +913,7 @@ holdings: []
     thesis: "Base10 Partners was founded in 2017 by Adeyemi 'Ade' Ajao, a multi-country serial founder with African, European, and Latin roots raised in Spain and Nigeria, and TJ Nahigian, built around backing automation technology for the 'Real Economy' - traditional sectors like retail, logistics, healthcare, and construction that most consumer-tech-obsessed investors overlooked. The firm originally called its thesis 'Applied AI for the Real Economy,' a term LPs dismissed as too niche in its early years, until AI became the dominant investing category and validated the original bet. Base10 is recognized as the world's largest Black-led venture capital firm, and commits up to 50% of its carried interest to fund scholarships for students at Historically Black Colleges and Universities through its Advancement Initiative. The firm has made more than 110 investments including Notion, Figma, and Nubank, closing $850 million in 2026 to push total AUM to $2.6 billion.",
     leadership: [
       { name: "Adeyemi 'Ade' Ajao", role: "Co-Founder & Managing Partner", profileSlug: "adeyemi-ajao" },
-      { name: "TJ Nahigian", role: "Co-Founder & Managing Partner" }
+      { name: "TJ Nahigian", role: "Co-Founder & Managing Partner", profileSlug: "tj-nahigian" }
     ],
     timeline: [
       { year: "2017", event: "Adeyemi Ajao and TJ Nahigian found Base10 Partners in San Francisco." },
@@ -1013,8 +1013,8 @@ holdings: []
     thesis: "Project A Ventures was founded in 2012 by six former Rocket Internet colleagues - including Uwe Horstmann and Florian Heinemann - who wanted to build a genuinely different support model than the pure incubation approach they'd seen at Rocket Internet. Their 'operational VC' model pairs early-stage capital with a team of more than 140 in-house functional experts across software engineering, business intelligence, marketing, and recruiting, exclusively available to portfolio companies rather than offered as generic advisory calls. That model has backed more than 130 startups including Trade Republic (now managing €100 billion in customer assets), WorldRemit, sennder, and Catawiki, and Project A pivoted early into defense and dual-use technology starting in 2022 - becoming an early investor in Stark, a defense drone maker where co-founder Horstmann later became CEO. The firm closed its fifth and largest fund at €325 million in 2025, pushing total AUM to €1.2 billion.",
     leadership: [
       { name: "Uwe Horstmann", role: "Co-Founder & General Partner", profileSlug: "uwe-horstmann" },
-      { name: "Florian Heinemann", role: "Co-Founder & General Partner" },
-      { name: "Malin Posern", role: "General Partner" }
+      { name: "Florian Heinemann", role: "Co-Founder & General Partner", profileSlug: "florian-heinemann" },
+      { name: "Malin Posern", role: "General Partner", profileSlug: "malin-posern" }
     ],
     timeline: [
       { year: "2012", event: "Six former Rocket Internet colleagues found Project A Ventures in Berlin." },
@@ -1242,8 +1242,8 @@ holdings: []
     aum: "$2B",
     thesis: "August Capital was founded in 1995 by David Marquardt and John Johnston, both spinning out of Technology Venture Investors, the firm Marquardt had co-founded in 1980 that became the sole institutional investor in Microsoft - a bet that put Marquardt on Microsoft's board for 33 consecutive years. That extraordinary pattern-recognition carried directly into August Capital's focus on enterprise IT infrastructure, data center technology, systems management, security, storage, and cloud computing, closing a $100 million debut fund and backing companies through every phase of the entrepreneurial process from seed investments to public offerings. The firm's portfolio has included Splunk, Compaq, Adaptec, Zulily, and Grand Junction Networks (acquired by Cisco), and August Capital now manages approximately $2 billion.",
     leadership: [
-      { name: "David Marquardt", role: "Co-Founder & General Partner" },
-      { name: "David Hornik", role: "General Partner" }
+      { name: "David Marquardt", role: "Co-Founder & General Partner", profileSlug: "david-marquardt" },
+      { name: "David Hornik", role: "General Partner", profileSlug: "david-hornik" }
     ],
     timeline: [
       { year: "1980", event: "David Marquardt co-founds Technology Venture Investors, becoming Microsoft's sole institutional investor." },
@@ -2245,8 +2245,8 @@ holdings: []
     thesis: "Slow Ventures began in 2009 when Kevin Colleran and Dave Morin, both early Facebook employees, started informally pooling personal angel investments alongside other Facebook alumni, before formalizing the effort into an institutional venture firm by 2011. That origin shaped a genuinely distinctive limited-partner structure that persists today: more than 100 technology founders, CEOs, and executives, not just endowments and foundations, who actively help source deals and support portfolio companies rather than passively writing checks. The firm's deliberately patient, founder-first philosophy - reflected in its name - has produced early conviction bets across consumer, fintech, crypto, and healthcare, including Coinbase, Robinhood, PillPack, Airtable, and Solana, with more than $800 million deployed since inception across pre-seed through Series A.",
     leadership: [
       { name: "Kevin Colleran", role: "Co-Founder & Managing Director", profileSlug: "kevin-colleran" },
-      { name: "Sam Lessin", role: "General Partner" },
-      { name: "Will Quist", role: "Partner" }
+      { name: "Sam Lessin", role: "General Partner", profileSlug: "sam-lessin" },
+      { name: "Will Quist", role: "Partner", profileSlug: "will-quist" }
     ],
     timeline: [
       { year: "2009", event: "Kevin Colleran and Dave Morin found Slow Ventures, initially pooling personal angel investments." },
@@ -2301,8 +2301,8 @@ holdings: []
     thesis: "Lerer Hippeau was founded in 2010 by Ben Lerer, who spent more than a decade simultaneously running Thrillist and later Group Nine Media while building the fund, and Eric Hippeau, former CEO of HuffPost. That combination of active media operating experience and deep New York networks shaped a deliberately 'activist' seed investing philosophy: rather than writing passive checks, Lerer Hippeau takes meaningful stakes and works hands-on with founders on branding and go-to-market strategy, having built its early reputation on consumer breakouts like Warby Parker, Casper, Glossier, and Allbirds before any of them were obvious winners. New York's largest seed fund by reputation and track record, Lerer Hippeau has since expanded well beyond consumer into fintech and enterprise software, backing more than 450 companies across nine funds with 12 unicorns, 10 IPOs, and 166 acquisitions, and now manages roughly $1.5 billion.",
     leadership: [
       { name: "Ben Lerer", role: "Co-Founder & Managing Partner", profileSlug: "ben-lerer" },
-      { name: "Eric Hippeau", role: "Co-Founder & Managing Partner" },
-      { name: "Joe Medved", role: "Partner & COO" }
+      { name: "Eric Hippeau", role: "Co-Founder & Managing Partner", profileSlug: "eric-hippeau" },
+      { name: "Joe Medved", role: "Partner & COO", profileSlug: "joe-medved" }
     ],
     timeline: [
       { year: "2010", event: "Ben Lerer and Eric Hippeau found Lerer Hippeau in New York." },
@@ -2563,7 +2563,7 @@ holdings: []
     thesis: "Pear VC was founded in August 2013 as Pejman Mar Ventures by Pejman Nozad, an Iranian immigrant and former rug salesman turned angel investor, and Mar Hershenson, a Stanford-trained three-time founder, rebranding to Pear VC in 2016. Nozad's unconventional background shaped a genuinely distinctive sourcing edge from day one - the firm's defining early bet came when Nozad convinced a skeptical Hershenson to back a small food-delivery startup called DoorDash, turning roughly $1.9 million into more than $440 million at the company's 2020 IPO. That instinct for backing founders before consensus forms has defined Pear ever since: the firm invests from formation, sometimes co-founding companies from day zero, and has seeded more than 375 startups including Gusto, Guardant Health, Dropbox, Vanta, and Branch, with $800 million under management across four funds.",
     leadership: [
       { name: "Pejman Nozad", role: "Co-Founder & Founding Managing Partner", profileSlug: "pejman-nozad" },
-      { name: "Mar Hershenson", role: "Co-Founder & Founding Managing Partner" }
+      { name: "Mar Hershenson", role: "Co-Founder & Founding Managing Partner", profileSlug: "mar-hershenson" }
     ],
     timeline: [
       { year: "2013", event: "Pejman Nozad and Mar Hershenson found Pejman Mar Ventures in August, backing DoorDash as one of their first five deals." },
@@ -2592,9 +2592,9 @@ holdings: []
     aum: "$1.9B",
     thesis: "Upfront Ventures was founded in 1996 as GRP Partners in Century City, Los Angeles, by Yves Sisteron, Steven Dietz, and Steve Lebow, initially raising a $200 million fund focused on traditional retail investments including Costco, Starbucks, and Office Depot before pivoting toward technology. Mark Suster, who'd already founded and sold two enterprise software companies (including Koral, acquired by Salesforce), joined in 2007 to build a dedicated internet investment arm, becoming Managing Partner in 2011 and helping lead the firm's 2013 rebrand to Upfront Ventures - a name chosen to reflect transparency with founders and a nod to the entertainment industry's 'upfronts.' That retail-to-tech pivot, combined with genuine roots in Los Angeles rather than a Silicon Valley satellite office, made Upfront the largest and most established venture capital firm in LA, deliberately deploying 40-45% of its capital in Southern California and building the Upfront Summit into the region's flagship tech conference. The firm now manages $1.9 billion and has backed more than 200 companies including TrueCar, Ring, Maker Studios, and Overture.",
     leadership: [
-      { name: "Yves Sisteron", role: "Founding Partner & Managing Partner", profileSlug: null },
+      { name: "Yves Sisteron", role: "Founding Partner & Managing Partner", profileSlug: "yves-sisteron" },
       { name: "Mark Suster", role: "Managing Partner", profileSlug: "mark-suster" },
-      { name: "Kara Nortman", role: "Managing Partner" }
+      { name: "Kara Nortman", role: "Managing Partner", profileSlug: "kara-nortman" }
     ],
     timeline: [
       { year: "1996", event: "Yves Sisteron, Steven Dietz, and Steve Lebow found GRP Partners in Los Angeles, initially backing retail companies." },
@@ -2622,7 +2622,7 @@ holdings: []
     leadership: [
       { name: "Theresia Gouw", role: "Co-Founder & Managing Partner", profileSlug: "theresia-gouw" },
       { name: "Lauren Kolodny", role: "Co-Founder & Managing Partner", profileSlug: "lauren-kolodny" },
-      { name: "Vishal Lugani", role: "Co-Founder & Partner" }
+      { name: "Vishal Lugani", role: "Co-Founder & Partner", profileSlug: "vishal-lugani" }
     ],
     timeline: [
       { year: "2019", event: "Theresia Gouw, Lauren Kolodny, Vishal Lugani, Asad Khaliq, and Mark Kraynak found Acrew Capital in December, closing a $250 million debut fund." },
@@ -4061,7 +4061,7 @@ holdings: []
     thesis: "Nexus Venture Partners was founded in 2006 by Suvir Sujan, Naren Gupta, and Sandeep Singhal, building one of the first true India-US cross-border venture capital platforms at a time when the two ecosystems were rarely connected by a single institutional investor. The firm runs what it calls a 'one fund, one team' model, with genuinely integrated operating and investing experience across Menlo Park, Mumbai, and Bengaluru, rather than treating India as a satellite market for a US-based fund. That structure has let Nexus back enterprise software and AI companies targeting US markets alongside consumer internet and fintech companies built specifically for India, resulting in a portfolio spanning Postman, Delhivery, Druva, and Unacademy. The firm closed its largest-ever fund at $700 million in 2023 and has grown to approximately $2.6 billion in total assets under management.",
     leadership: [
       { name: "Sandeep Singhal", role: "Co-Founder", profileSlug: "sandeep-singhal" },
-      { name: "Suvir Sujan", role: "Co-Founder & Managing Director" }
+      { name: "Suvir Sujan", role: "Co-Founder & Managing Director", profileSlug: "suvir-sujan" }
     ],
     timeline: [
       { year: "2006", event: "Suvir Sujan, Naren Gupta, and Sandeep Singhal found Nexus Venture Partners." },
@@ -4088,7 +4088,7 @@ holdings: []
     thesis: "500 Global was founded in 2010 as 500 Startups by Dave McClure and Christine Tsai in Mountain View, building an early-stage venture fund and seed accelerator around a genuinely global thesis when most Silicon Valley firms invested almost exclusively in US-based founders. That international focus, combined with a structured accelerator curriculum and a first cohort of just 12 startups in 2011, grew the firm into one of the most geographically diversified venture platforms in the world. Christine Tsai became CEO in 2017 after McClure resigned following multiple allegations of inappropriate conduct toward female entrepreneurs, and she rebranded the firm to 500 Global in 2021 to reflect its expanded international footprint. The firm has since backed more than 2,600 companies across 80-plus countries, producing 35-plus unicorns including Canva, Credit Karma, Grab, and Twilio, with $2.7 billion currently under management.",
     leadership: [
       { name: "Christine Tsai", role: "Co-Founder & CEO", profileSlug: "christine-tsai" },
-      { name: "Courtney Powell", role: "COO & Managing Partner" }
+      { name: "Courtney Powell", role: "COO & Managing Partner", profileSlug: "courtney-powell" }
     ],
     timeline: [
       { year: "2010", event: "Dave McClure and Christine Tsai found 500 Startups in Mountain View." },
@@ -4227,7 +4227,7 @@ holdings: []
     thesis: "Dell Technologies Capital, or DTC, has operated as Dell's venture team since 2012, when Scott Darling founded the practice inside EMC before Dell's acquisition folded it into Dell Technologies. DTC's model is explicitly hands-on: alongside capital, portfolio companies get pricing analysis, go-to-market support, customer introductions, and direct access to Dell's family of businesses - Dell, Dell EMC, VMware, Pivotal, and SecureWorks. That approach has produced an unusually deep IPO track record for a corporate venture arm: DTC was the first institutional investor in Zscaler, and its 143 investments since 2012 have produced 65 M&A exits and 9 IPOs, including Arista, DocuSign, JFrog, MongoDB, Nutanix, SumoLogic, and Zscaler, together worth more than $160 billion in combined market value.",
     leadership: [
       { name: "Scott Darling", role: "Founding Partner & President", profileSlug: "scott-darling" },
-      { name: "Yair Snir", role: "Managing Director" }
+      { name: "Yair Snir", role: "Managing Director", profileSlug: "yair-snir" }
     ],
     timeline: [
       { year: "2012", event: "Scott Darling founds DTC's venture practice inside EMC, expanding to Boston and then Israel within its first two years." },
@@ -4373,8 +4373,8 @@ holdings: []
     thesis: "RTP Global was founded in 2000 by Leonid Boguslavsky, who sold his prior technology company and put the proceeds - along with most of his personal wealth - into starting the firm, then kept reinvesting gains into each subsequent fund rather than relying heavily on outside limited partners. That owner-operator structure shows up in how RTP invests: the firm emphasizes fast decisions, early conviction at seed and Series A, and unusually long holding periods, backing founders across five hubs in New York, London, Bangalore, Paris, and Dubai. RTP has backed more than 100 founders since 2000, with Datadog among its best-known outcomes, and closed its latest flagship fund at $1 billion in 2023.",
     leadership: [
     { name: "Leonid Boguslavsky", role: "Partner & Founder", profileSlug: "leonid-boguslavsky" },
-      { name: "Galina Chifina", role: "CEO & Partner" },
-      { name: "Thomas Cuvelier", role: "Partner, US & Europe" }
+      { name: "Galina Chifina", role: "CEO & Partner", profileSlug: "galina-chifina" },
+      { name: "Thomas Cuvelier", role: "Partner, US & Europe", profileSlug: "thomas-cuvelier" }
     ],
     timeline: [
       { year: "2000", event: "Leonid Boguslavsky founds RTP Global, seeding it with proceeds from his prior company sale." },
@@ -4970,8 +4970,8 @@ holdings: []
     aum: "$1.1B+ (Fund III closed at $300M, April 2026)",
     thesis: "BMW i Ventures has operated as an investing platform since 2011, moving to an independent fund structure in 2016, and it functions closer to a high-performing independent fund than a typical corporate VC while still leveraging BMW as a strategic partner. The firm repeatedly stresses financial discipline and Silicon Valley speed, backing more than 90 companies across mobility, supply chain, sustainability, manufacturing, and increasingly AI. Its clearest recent proof point is Xometry, the on-demand manufacturing marketplace it backed at Series B in 2017 and which went public on the Nasdaq in June 2021 - one of several public outcomes alongside ChargePoint, which reached a $2.4 billion valuation at its own 2020 public debut. BMW announced a new $300 million Fund III in April 2026, pushing total capital under management above $1.1 billion.",
     leadership: [
-      { name: "Marcus Behrendt", role: "Managing Partner" },
-      { name: "Kasper Sage", role: "Managing Partner" },
+      { name: "Marcus Behrendt", role: "Managing Partner", profileSlug: "marcus-behrendt" },
+      { name: "Kasper Sage", role: "Managing Partner", profileSlug: "kasper-sage" },
       { name: "Baris Guzel", role: "Partner", profileSlug: "baris-guzel" }
     ],
     timeline: [
@@ -5030,10 +5030,10 @@ holdings: []
     aum: "$900M (Fund 6, Fund 6 Select & Amplify Bio, June 2025)",
     thesis: "Amplify Partners was founded in 2012 with an unusually specific identity: it calls itself the first investor built for technical founders, not software founders broadly. The firm made its name as one of the earliest institutional backers of Datadog and Fastly more than a decade ago, when technical founders running B2B infrastructure companies were still considered unconventional bets, and it has kept that thesis through waves of developer tools, data infrastructure, and AI/ML platform investing. In June 2025 Amplify closed $900 million across three vehicles - a $400 million core Fund 6, a $300 million Fund 6 Select for follow-on support, and a new $200 million Amplify Bio fund marking its first dedicated push into digital biology.",
     leadership: [
-      { name: "Mike Dauber", role: "General Partner" },
+      { name: "Mike Dauber", role: "General Partner", profileSlug: "mike-dauber" },
       { name: "Sunil Dhaliwal", role: "Founder & General Partner", profileSlug: "sunil-dhaliwal" },
-      { name: "Sarah Catanzaro", role: "General Partner" },
-      { name: "Lenny Pruss", role: "General Partner" }
+      { name: "Sarah Catanzaro", role: "General Partner", profileSlug: "sarah-catanzaro" },
+      { name: "Lenny Pruss", role: "General Partner", profileSlug: "lenny-pruss" }
     ],
     timeline: [
       { year: "2012", event: "Amplify Partners is founded, built specifically around backing technical founders." },
@@ -5059,7 +5059,7 @@ holdings: []
     thesis: "Toyota Ventures was founded in July 2017 as Toyota AI Ventures, a subsidiary of Toyota Research Institute, before rebranding to its current name in 2021 alongside the launch of dedicated Frontier and Climate funds. Founder Jim Adler describes the firm's structure as deliberately founder-first, built around three stakeholders - startups, Toyota's corporate partner, and the Toyota Ventures team itself - with founders treated as the primary customer rather than Toyota. That philosophy has held through market cycles: in 2024, while some investors were scaling back, Toyota Ventures raised two additional $150 million funds (Frontier Fund II and Climate Fund II), pushing total assets under management above $800 million and reinforcing bets across generative AI, robotics, e-fuels, and synthetic biology.",
     leadership: [
       { name: "Jim Adler", role: "Founder & General Partner", profileSlug: "jim-adler" },
-      { name: "David Sokolic", role: "Partner, Frontier Fund" }
+      { name: "David Sokolic", role: "Partner, Frontier Fund", profileSlug: "david-sokolic" }
     ],
     timeline: [
       { year: "2017", event: "Jim Adler founds Toyota AI Ventures in July as a subsidiary of Toyota Research Institute, with an initial $100 million fund." },
@@ -5083,8 +5083,8 @@ holdings: []
     thesis: "BECO Capital was founded in 2012 by Dany Farha, Abdulaziz Shikh Al Sagha, and Yousef Hammad, building what became the longest-serving Dubai-based venture capital firm investing in the MENA digital sector at a time when institutional venture capital in the Gulf barely existed. The firm's name references Booster Engine Cut Off - the rocket-launch moment a vessel achieves enough altitude to exit the atmosphere - reflecting its self-described role helping founders escape early-stage gravity. That early conviction produced Careem, which Uber acquired for $3.1 billion in 2019, and BECO has since built a genuinely full-stack platform spanning Pre-Seed through pre-IPO, closing $370 million across two new funds in September 2025 to push total assets under management above $820 million - making it the largest non-government early-stage venture firm in the Gulf.",
     leadership: [
       { name: "Dany Farha", role: "Co-Founder & Managing Partner", profileSlug: "dany-farha" },
-      { name: "Abdulaziz Shikh Al Sagha", role: "Co-Founder & Managing Partner" },
-      { name: "Yousef Hammad", role: "Co-Founder & Managing Partner" }
+      { name: "Abdulaziz Shikh Al Sagha", role: "Co-Founder & Managing Partner", profileSlug: "abdulaziz-shikh-al-sagha" },
+      { name: "Yousef Hammad", role: "Co-Founder & Managing Partner", profileSlug: "yousef-hammad" }
     ],
     timeline: [
       { year: "2012", event: "Dany Farha, Abdulaziz Shikh Al Sagha, and Yousef Hammad found BECO Capital in Dubai." },
@@ -5108,8 +5108,8 @@ holdings: []
     thesis: "Wing Venture Capital was founded in 2013 and has sharpened over time from a classic enterprise-investing heritage into what it now calls an AI-first technology stack firm. The firm's team bios read unusually specifically for a generalist-sized fund - AI infrastructure, AI applications, security, bio times data, and autonomous software - and its public materials frame the mission around AI, data, autonomous applications, and product-led growth rather than enterprise software broadly. Wing was a first-check investor in Snowflake years before its 2020 IPO, and closed Wing Four, a $600 million early-stage fund, in July 2023.",
     leadership: [
     { name: "Gaurav Garg", role: "Founding Partner", profileSlug: "gaurav-garg" },
-      { name: "Peter Wagner", role: "Founding Partner" },
-      { name: "Sara Choi", role: "Partner" }
+      { name: "Peter Wagner", role: "Founding Partner", profileSlug: "peter-wagner" },
+      { name: "Sara Choi", role: "Partner", profileSlug: "sara-choi" }
     ],
     timeline: [
       { year: "2013", event: "Gaurav Garg and Peter Wagner found Wing Venture Capital in Palo Alto." },
@@ -5134,9 +5134,9 @@ holdings: []
     thesis: "Cherry Ventures was founded in 2012 by Filip Dames and Christian Meermann, both out of Zalando, and turned 'operator DNA' from a slogan into an organizational design principle. Its later partner bench added Spotify and Atomico experience, and the firm now openly argues that Europe's next trillion-dollar company could emerge from a wider set of domains than classic SaaS alone, including AI infrastructure, energy, and deep tech. The firm's 2025 fundraise - $500 million across its flagship early-stage fund and a new opportunity fund - was strategically designed to preserve Cherry's seed identity while adding enough later-stage capital to avoid losing influence once its companies scale, following AUTO1 Group's roughly €10.6 billion Frankfurt debut in 2021.",
     leadership: [
       { name: "Filip Dames", role: "Founding Partner", profileSlug: "filip-dames" },
-      { name: "Christian Meermann", role: "Founding Partner" },
-      { name: "Sophia Bendz", role: "Partner" },
-      { name: "Dinika Mahtani", role: "Partner" }
+      { name: "Christian Meermann", role: "Founding Partner", profileSlug: "christian-meermann" },
+      { name: "Sophia Bendz", role: "Partner", profileSlug: "sophia-bendz" },
+      { name: "Dinika Mahtani", role: "Partner", profileSlug: "dinika-mahtani" }
     ],
     timeline: [
       { year: "2012", event: "Filip Dames and Christian Meermann co-found Cherry Ventures in Berlin, both coming out of Zalando." },
@@ -5162,8 +5162,8 @@ holdings: []
     thesis: "Madrona Venture Group was founded in Seattle in 1995 by Tom Alberg, Paul Goodrich, Gerald Grinstein, and William Ruckelshaus, and built its identity around day-one partnerships it then holds for decades. The firm's own materials lean on Smartsheet, Redfin, Impinj, and Apptio as case studies in patient company formation rather than quick flips - a framing that fits a firm where more than 90% of investments were once concentrated in the Pacific Northwest. Madrona said it managed nearly $1.6 billion when Fund VII closed in 2018, and closed its largest fundraise yet - $770 million across Fund X and Acceleration Fund IV - in January 2025 to mark the firm's 30th year, now focused on applied AI, developer tools, cloud infrastructure, and AI-enabled biology.",
     leadership: [
       { name: "Matt McIlwain", role: "Managing Director", profileSlug: "matt-mcilwain" },
-      { name: "Tom Alberg", role: "Co-Founder (1995)" },
-      { name: "Paul Goodrich", role: "Co-Founder (1995)" }
+      { name: "Tom Alberg", role: "Co-Founder (1995)", profileSlug: "tom-alberg" },
+      { name: "Paul Goodrich", role: "Co-Founder (1995)", profileSlug: "paul-goodrich" }
     ],
     timeline: [
       { year: "1995", event: "Tom Alberg, Paul Goodrich, Gerald Grinstein, and William Ruckelshaus found Madrona in Seattle." },
@@ -5218,7 +5218,7 @@ holdings: []
     aum: "$450M+",
     thesis: "Matrix Partners traces its roots to the 1977 breakup of Hellman Ferri Investment Associates, when co-founder Paul Ferri chose to focus exclusively on very early-stage technology investing while his former partner built a separate later-stage firm - giving Matrix unusually deep roots in the formative era of American venture capital. The firm has deliberately kept its U.S. fund sizes modest, capped around $450 million, even as many peers raised multi-billion-dollar vehicles, preferring to stay a close-knit team of former founders investing from idea through Series A. That contrarian discipline backed Oculus VR at an early stage, a bet that returned dramatically when Facebook acquired the company for approximately $2.3 billion in 2014, and the firm's partner David Skok has become widely known for SaaS metrics essays that remain standard reading for founders industry-wide.",
     leadership: [
-      { name: "Paul Ferri", role: "Founder (1977)" },
+      { name: "Paul Ferri", role: "Founder (1977)", profileSlug: "paul-ferri" },
       { name: "Ilya Sukhar", role: "General Partner", profileSlug: "ilya-sukhar" }
     ],
     timeline: [
@@ -5245,10 +5245,10 @@ holdings: []
     aum: "~$500M (across its main fund and dedicated vehicles, per third-party reporting)",
     thesis: "BOLD Capital Partners was founded in 2015 by Peter Diamandis, the space and longevity entrepreneur behind XPRIZE and Singularity University, alongside Teymour Boutros-Ghali, Neal Bhadkamkar, and Emilio Diez Barroso. The firm is best understood as a convergence investor rather than a category-siloed one: its own language centers on technologies at the intersection of the physical, digital, virtual, and biological worlds, with especially heavy emphasis on longevity, synthetic biology, AI, and robotics. That framing shows up directly in its portfolio, which includes two companies that went public via Hong Kong exchange listings - Insilico Medicine and Deep Longevity - alongside continued early-stage bets in advanced robotics and construction technology.",
     leadership: [
-  { name: "Peter Diamandis", role: "Co-Founder & Partner" },
+  { name: "Peter Diamandis", role: "Co-Founder & Partner", profileSlug: "peter-diamandis" },
       { name: "Teymour Boutros-Ghali", role: "Co-Founder & Managing Partner", profileSlug: "teymour-boutros-ghali" },
-      { name: "Neal Bhadkamkar", role: "General Partner" },
-      { name: "Emilio Diez Barroso", role: "General Partner" }
+      { name: "Neal Bhadkamkar", role: "General Partner", profileSlug: "neal-bhadkamkar" },
+      { name: "Emilio Diez Barroso", role: "General Partner", profileSlug: "emilio-diez-barroso" }
     ],
     timeline: [
       { year: "2015", event: "Peter Diamandis and Teymour Boutros-Ghali co-found BOLD Capital Partners in Santa Monica." },
@@ -5271,8 +5271,8 @@ holdings: []
     thesis: "Bloomberg Beta launched in June 2013 with $75 million from Bloomberg L.P. as its sole limited partner, and has raised four more $75 million funds since, plus a matching $75 million opportunity fund, for $450 million total - all still capitalized entirely by Bloomberg. The firm runs an unusually transparent, unconventional model for a corporate-backed fund: any of its three equal partners can independently say yes to a deal, and its full operating manual has been public on GitHub since inception. Focused on machine intelligence and the future of work, the firm has made roughly 367 investments in companies including Replit, Flexport, LaunchDarkly, MasterClass, Netlify, and Weights & Biases, and was once ranked the #2 AI investor globally by CB Insights.",
     leadership: [
       { name: "Roy Bahat", role: "Head & Partner", profileSlug: "roy-bahat" },
-      { name: "Karin Klein", role: "Partner" },
-      { name: "James Cham", role: "Partner" }
+      { name: "Karin Klein", role: "Partner", profileSlug: "karin-klein" },
+      { name: "James Cham", role: "Partner", profileSlug: "james-cham" }
     ],
     timeline: [
       { year: "2013", event: "Roy Bahat launches Bloomberg Beta in June with an initial $75 million fund from Bloomberg L.P." },
@@ -5297,7 +5297,7 @@ holdings: []
     thesis: "Ventures Platform was founded by Kola Aina in Abuja in June 2016, after he'd already been actively angel investing across Nigeria's tech scene. The firm's geographic starting point is deliberate: building from Abuja rather than the more saturated Lagos venture ecosystem gave it earlier access to founders in northern Nigeria and, more recently, Francophone West Africa, markets most Anglophone-focused firms overlook entirely. That first-mover instinct produced Paystack, one of the firm's earliest bets and still the most consequential Nigerian startup acquisition on record when Stripe bought it for roughly $200 million in 2020. Ventures Platform has since backed more than 90 startups across fintech, healthtech, agritech, and AI, closing $64 million toward a $75 million target for Fund II in November 2025 with backing from the IFC, British International Investment, and Nigeria's government-backed iDICE program - the first time the Nigerian government has invested directly in a venture fund.",
     leadership: [
       { name: "Kola Aina", role: "Founding Partner", profileSlug: "kola-aina" },
-      { name: "Dotun Olowoporoku", role: "Managing Partner" }
+      { name: "Dotun Olowoporoku", role: "Managing Partner", profileSlug: "dotun-olowoporoku" }
     ],
     timeline: [
       { year: "2016", event: "Kola Aina founds Ventures Platform in Abuja." },
@@ -5320,8 +5320,8 @@ holdings: []
     thesis: "Comcast Ventures traces back to 1999 as Comcast Interactive Capital, later merging with NBCUniversal's Peacock Fund in 2011 to form its current structure as Comcast's corporate venture affiliate. The firm's real differentiator is access: portfolio companies get direct exposure to Comcast's scale across media, advertising, and telecom, and the firm has built a genuinely diverse 130-plus-company portfolio spanning consumer, enterprise, and frontier technology. Its Catalyst Fund, launched in 2012 with $20 million dedicated to underrepresented entrepreneurs, later grew into a $200 million fund supporting racial equity, reflecting an unusually long-running institutional commitment to that focus area alongside its core investing activity.",
     leadership: [
       { name: "Allison Goldberg", role: "Managing Partner", profileSlug: "allison-goldberg" },
-      { name: "Marc Silberman", role: "Partner" },
-      { name: "Michelle Chang", role: "Partner" }
+      { name: "Marc Silberman", role: "Partner", profileSlug: "marc-silberman" },
+      { name: "Michelle Chang", role: "Partner", profileSlug: "michelle-chang" }
     ],
     timeline: [
       { year: "1999", event: "Comcast launches Comcast Interactive Capital, its first venture investing arm." },
@@ -5348,8 +5348,8 @@ holdings: []
     thesis: "TLcom Capital was founded in 1999 by Maurizio Caio, a former Bain & Company and McKinsey consultant who spent 15 years advising telecom and technology executives before deciding entrepreneurs building African technology companies deserved the same caliber of strategic support. That conviction became concrete with the 2017 launch of the TIDE Africa Fund, and TLcom has since become one of the longest-running and most active Africa-focused technology investors, providing $500,000 to $15 million checks across fintech, agritech, edtech, mobility, and healthcare. The firm counts Andela, Twiga Foods, Pula, uLesson, and Kobo360 among its portfolio, backed by institutional investors including the European Investment Bank and IFC, and expanded its geographic mandate into North Africa in 2022.",
     leadership: [
       { name: "Maurizio Caio", role: "Founder & Managing Partner", profileSlug: "maurizio-caio" },
-      { name: "Omobola Johnson", role: "Senior Partner" },
-      { name: "Andreata Muforo", role: "Partner" }
+      { name: "Omobola Johnson", role: "Senior Partner", profileSlug: "omobola-johnson" },
+      { name: "Andreata Muforo", role: "Partner", profileSlug: "andreata-muforo" }
     ],
     timeline: [
       { year: "1999", event: "Maurizio Caio founds TLcom Capital." },
@@ -5374,7 +5374,7 @@ holdings: []
     thesis: "YL Ventures was founded in 2007 by Yoav Leitersdorf and has narrowed over time into one of the most specialized seed-stage funds in venture capital: cybersecurity exclusively, sourced almost entirely from Israeli founding teams. The firm's real differentiator is its value-add network - more than 120 chief information security officers advise on deal vetting and market validation in exchange for a share of carried interest, giving YL Ventures what Leitersdorf calls first access to nearly every serious cybersecurity deal coming out of Israel. That model has produced a strong track record of exits including Twistlock, acquired by Palo Alto Networks for $410 million, and continued backing of category leaders like Orca Security and Cybereason, with Fund V closing at $400 million in 2022 - the largest seed fund ever raised specifically for cybersecurity - and total funds managed reaching $800 million.",
     leadership: [
       { name: "Yoav Leitersdorf", role: "Founder & Managing Partner", profileSlug: "yoav-leitersdorf" },
-      { name: "Ofer Schreiber", role: "Senior Partner & Head of Israel Office" },
+      { name: "Ofer Schreiber", role: "Senior Partner & Head of Israel Office", profileSlug: "ofer-schreiber" },
       { name: "John Brennan", role: "Senior Partner" }
     ],
     timeline: [
@@ -5425,8 +5425,8 @@ holdings: []
     thesis: "Novastar Ventures was founded in 2014 by Andrew Carruthers and Steve Beck, applying two decades of traditional fund-management discipline to a deliberately mass-market thesis: that venture capital could profitably serve East and West Africa's largest underserved consumer needs - affordable housing, education, sanitation, healthcare, and energy - rather than chasing a narrow tech elite. That philosophy shaped early bets on Bridge International Academies, Sanergy, mPharma, and SolarNow, growing Novastar into one of Africa's largest and most established dedicated venture capital firms. The firm operates from London, Nairobi, and Lagos, and closed its newest vehicle, the Africa People and Planet Fund III, at $147 million in early 2026 - its first fund to deploy on a genuinely pan-African basis rather than a single regional focus.",
     leadership: [
       { name: "Andrew Carruthers", role: "Co-Founder & Managing Partner", profileSlug: "andrew-carruthers" },
-      { name: "Steve Beck", role: "Co-Founder & Managing Partner" },
-      { name: "Niraj Varia", role: "Partner" }
+      { name: "Steve Beck", role: "Co-Founder & Managing Partner", profileSlug: "steve-beck" },
+      { name: "Niraj Varia", role: "Partner", profileSlug: "niraj-varia" }
     ],
     timeline: [
       { year: "2014", event: "Andrew Carruthers and Steve Beck found Novastar Ventures, raising the East Africa Fund (Fund I)." },
@@ -5594,7 +5594,7 @@ holdings: []
     thesis: "Porsche Ventures has operated since 2016 as one of the clearest examples of strategic industrial value-add among corporate venture arms, built around commercialization help, supply-chain access, and the broader Porsche/VW ecosystem rather than capital alone. Under Managing Director Ulrich Thiem, who took over in 2019 after joining Porsche's legal department in 2011, the firm runs two tailored investment portfolios - one close to Porsche's core auto-tech business investing mainly at Series B, the other spanning intelligent enterprise and sustainability more broadly. In April 2023 Porsche earmarked up to €250 million for new and existing venture investments, operating from a distributed team across Stuttgart, Berlin, Palo Alto, Los Angeles, and Tel Aviv.",
     leadership: [
       { name: "Ulrich Thiem", role: "Managing Director", profileSlug: "ulrich-thiem" },
-      { name: "Patrick Huke", role: "Head of Porsche Ventures Europe" }
+      { name: "Patrick Huke", role: "Head of Porsche Ventures Europe", profileSlug: "patrick-huke" }
     ],
     timeline: [
       { year: "2011", event: "Ulrich Thiem joins Porsche, initially in its legal department." },
@@ -5620,9 +5620,9 @@ holdings: []
     thesis: "LocalGlobe was co-founded by Robin and Saul Klein and has evolved into something closer to an urban operating system for London and European early-stage company formation than a standalone seed fund. As the pre-seed and seed vehicle inside the broader Phoenix Court family - alongside sister vehicles Latitude, Solar, and Basecamp - it benefits from unusually strong recycling of operator knowledge, angel networks, and neighborhood density rather than simply advertising founder support as a slogan. That ecosystem-design approach produced Wise, whose 2021 direct listing on the London Stock Exchange valued the fintech company at about $11 billion, one of the clearest proof points of London's fintech maturity.",
     leadership: [
       { name: "Saul Klein", role: "Co-Founder & Managing Partner", profileSlug: "saul-klein" },
-      { name: "Robin Klein", role: "Co-Founder" },
-      { name: "Remus Brett", role: "General Partner" },
-      { name: "Paul Bishop", role: "General Partner" }
+      { name: "Robin Klein", role: "Co-Founder", profileSlug: "robin-klein" },
+      { name: "Remus Brett", role: "General Partner", profileSlug: "remus-brett" },
+      { name: "Paul Bishop", role: "General Partner", profileSlug: "paul-bishop" }
     ],
     timeline: [
       { year: "2003", event: "Robin and Saul Klein co-found LocalGlobe in London." },
@@ -5649,7 +5649,7 @@ holdings: []
     thesis: "Uncork Capital, originally founded as SoftTech VC in 2004 by Jeff Clavier, was one of the first dedicated seed-stage venture firms in Silicon Valley, and its 2007 fund is often cited as one of the first to be labeled a 'micro-VC.' Clavier, who immigrated to the U.S. in 2000 after serving as CTO of a French fintech startup acquired by Reuters, built the firm around being the first substantial check and the longest relationship a founding team has. That approach backed SendGrid as a seed investor years before its 2017 IPO and 2019 acquisition by Twilio, along with Fitbit, Eventbrite, Postmates, and Poshmark. The firm is now led by Managing Partner Andy McLoughlin, with Clavier continuing as Founding Partner.",
     leadership: [
       { name: "Jeff Clavier", role: "Founding Partner", profileSlug: "jeff-clavier" },
-      { name: "Andy McLoughlin", role: "Managing Partner" }
+      { name: "Andy McLoughlin", role: "Managing Partner", profileSlug: "andy-mcloughlin" }
     ],
     timeline: [
       { year: "2004", event: "Jeff Clavier founds SoftTech VC (later renamed Uncork Capital) in Palo Alto." },
@@ -5674,8 +5674,8 @@ holdings: []
     thesis: "Rob Go, David Beisel, and Lee Hower founded NextView Ventures in 2010 on a contrarian thesis for the time: that a dedicated seed-stage specialist firm belonged outside the Bay Area, built around what the firm calls the 'Everyday Economy' - startups that redesign the habitual moments of daily life for large populations, from commerce to health to money. That focus led NextView to an early stake in Attentive, which grew into a roughly $10 billion company, and to backing ThredUp ahead of its 2021 Nasdaq IPO. The firm has stayed a lean, partnership-based team where every partner can lead investments, deliberately avoiding the largest, most competitive Silicon Valley deals in favor of conviction-driven bets closer to home.",
     leadership: [
       { name: "Rob Go", role: "Co-Founder & Partner", profileSlug: "rob-go" },
-      { name: "David Beisel", role: "Co-Founder & Partner" },
-      { name: "Lee Hower", role: "Co-Founder & Partner" }
+      { name: "David Beisel", role: "Co-Founder & Partner", profileSlug: "david-beisel" },
+      { name: "Lee Hower", role: "Co-Founder & Partner", profileSlug: "lee-hower" }
     ],
     timeline: [
       { year: "2010", event: "Rob Go, David Beisel, and Lee Hower found NextView Ventures in Boston." },
@@ -5701,7 +5701,7 @@ holdings: []
     thesis: "Ron Conway had already taken Altos Computer Systems public in 1982 and founded one of the first institutional angel funds, Angel Investors LP, in 1998, before launching SV Angel in 2005. Known as the 'Godfather of Silicon Valley,' Conway built a reputation for being one of the very first checks into companies that became generational technology giants - Google, Facebook, Twitter, PayPal, and Airbnb among them. Conway retired from active day-to-day investing in 2018, and in 2025 the firm - now run alongside his sons Ronny and Topher - announced it would stop raising traditional funds in favor of smaller, more personal checks.",
     leadership: [
       { name: "Ron Conway", role: "Founder & Managing Partner", profileSlug: "ron-conway" },
-      { name: "Topher Conway", role: "Managing Partner" }
+      { name: "Topher Conway", role: "Managing Partner", profileSlug: "topher-conway" }
     ],
     timeline: [
       { year: "1998", event: "Ron Conway founds Angel Investors LP, an early institutional angel fund." },
