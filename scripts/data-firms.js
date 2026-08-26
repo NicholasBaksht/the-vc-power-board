@@ -107,7 +107,7 @@ const firms = [
   aum: "Not publicly disclosed",
   thesis: "ALLVP backs high-impact innovators improving access to services through technology across Mexico and Latin America, investing in fintech, marketplaces, and healthtech. Co-founders Federico Antoni and Fernando Lelo de Larrea built the firm into one of Mexico's most active early-stage investors.",
   leadership: [
-    { name: "Federico Antoni", role: "Co-Founder" },
+    { name: "Federico Antoni", role: "Co-Founder", profileSlug: "federico-antoni" },
     { name: "Fernando Lelo de Larrea", role: "Co-Founder" }
   ],
   timeline: [
@@ -509,8 +509,8 @@ holdings: []
   aum: "$1.05B+ (across funds)",
   thesis: "BITKRAFT invests at all stages, from early seed through growth, across games, esports, immersive media, and Web3-for-entertainment. Founder Jens Hilgers previously founded ESL Gaming, one of the largest esports organizations in the world.",
   leadership: [
-    { name: "Jens Hilgers", role: "Co-Founder & General Partner" },
-    { name: "Scott Rupp", role: "Co-Founder & General Partner" }
+    { name: "Jens Hilgers", role: "Co-Founder & General Partner", profileSlug: "jens-hilgers" },
+    { name: "Scott Rupp", role: "Co-Founder & General Partner", profileSlug: "scott-rupp" }
   ],
   timeline: [
     { year: "2018", event: "Jens Hilgers and Scott Rupp found BITKRAFT Ventures." }
@@ -637,7 +637,7 @@ holdings: []
   aum: "$2B+ (across multiple funds)",
   thesis: "Founded by brothers Bart and Brad Stephens, Blockchain Capital was one of the first venture funds dedicated entirely to blockchain ventures, aiming to build the infrastructure of the crypto economy from seed through growth stage.",
   leadership: [
-    { name: "Bart Stephens", role: "Co-Founder & General Partner" },
+    { name: "Bart Stephens", role: "Co-Founder & General Partner", profileSlug: "bart-stephens" },
     { name: "Brad Stephens", role: "Co-Founder & General Partner", profileSlug: "brad-stephens" }
   ],
   timeline: [
@@ -939,8 +939,8 @@ holdings: []
     thesis: "Village Global was founded in September 2017 by Ben Casnocha, Erik Torenberg, Anne Dwane, and Ross Fubini, chaired by Reid Hoffman, built around a genuinely different structural bet: that a venture firm could distribute deal sourcing and evaluation across a network of successful operators rather than relying solely on a small internal partner team. That network-first model attracted an unusually prominent group of limited partners - Bill Gates, Jeff Bezos, Mark Zuckerberg, Eric Schmidt, and Anne Wojcicki among them - who provide both capital and mentorship access to portfolio founders through more than 400 'Network Leaders.' The firm invests $500,000 to $3 million in pre-seed and seed-stage companies across fintech, consumer, AI, and healthcare, and has backed 233 companies over its history, producing 9 unicorns and 22 acquisitions with more than $500 million in AUM.",
     leadership: [
       { name: "Ben Casnocha", role: "Co-Founder & General Partner", profileSlug: "ben-casnocha" },
-      { name: "Erik Torenberg", role: "Co-Founder" },
-      { name: "Anne Dwane", role: "Co-Founder & General Partner" }
+      { name: "Erik Torenberg", role: "Co-Founder", profileSlug: "erik-torenberg" },
+      { name: "Anne Dwane", role: "Co-Founder & General Partner", profileSlug: "anne-dwane" }
     ],
     timeline: [
       { year: "2017", event: "Ben Casnocha, Erik Torenberg, Anne Dwane, and Ross Fubini found Village Global in September, chaired by Reid Hoffman." },
@@ -1269,8 +1269,8 @@ holdings: []
     thesis: "Seraphim Space was founded in 2016 by Mark Boggett, James Bruegger, and Rob Desborough, launching the world's first venture capital fund dedicated exclusively to the commercial space technology sector at a moment satellite technology remained a niche, capital-intensive category most generalist VCs avoided. That singular focus produced a genuinely full-stack platform spanning early-stage venture funds, the Seraphim Space Accelerator (the largest VC-led program in the sector, helping alumni raise more than $830 million), and Seraphim Space Investment Trust, a London Stock Exchange-listed growth-stage vehicle that itself completed an IPO in 2021 - an unusually direct public-market validation for a venture platform. Seraphim has backed more than 145 SpaceTech startups across 33 countries including Spire Global, Arqit, and LeoLabs, with AUM exceeding $630 million and portfolio companies collectively raising more than $12 billion.",
     leadership: [
       { name: "Mark Boggett", role: "Co-Founder & CEO", profileSlug: "mark-boggett" },
-      { name: "James Bruegger", role: "Co-Founder & Chief Investment Officer" },
-      { name: "Rob Desborough", role: "Co-Founder & Partner" }
+      { name: "James Bruegger", role: "Co-Founder & Chief Investment Officer", profileSlug: "james-bruegger" },
+      { name: "Rob Desborough", role: "Co-Founder & Partner", profileSlug: "rob-desborough" }
     ],
     timeline: [
       { year: "2016", event: "Mark Boggett, James Bruegger, and Rob Desborough found Seraphim in London, launching the world's first SpaceTech VC fund." },
@@ -1346,7 +1346,7 @@ holdings: []
     thesis: "Impact X Capital was founded in London in 2018 by Eric D. Collins and Paula Groves, alongside a founding group of Black European and US entrepreneurs, institutional investors, and public figures including Ursula Burns and Lenny Henry, built around a specific market inefficiency: less than 1% of venture funding reaches Black entrepreneurs, and less than 4% reaches women-led teams. Rather than treating that gap as a purely social problem, Impact X frames it as a genuine investment opportunity - a double-bottom-line fund pursuing both financial returns and structural change, backing underrepresented founders across fintech, consumer, and healthtech in the UK, Europe, and the US. The firm has made 47 investments with 8 exits to date, launched an Impact X-Venture Studio with Microsoft to accelerate underrepresented-led startups, and closed a £100 million debut fund with plans for a second vehicle backed by Bank of America and the Visa Foundation.",
     leadership: [
       { name: "Eric D. Collins", role: "Co-Founder & CEO", profileSlug: "eric-collins" },
-      { name: "Paula Groves", role: "Co-Founder" }
+      { name: "Paula Groves", role: "Co-Founder", profileSlug: "paula-groves" }
     ],
     timeline: [
       { year: "2018", event: "Eric D. Collins and Paula Groves found Impact X Capital in London." },
@@ -1501,7 +1501,7 @@ holdings: []
     leadership: [
       { name: "Elizabeth Yin", role: "Co-Founder & General Partner", profileSlug: "elizabeth-yin" },
       { name: "Eric Bahn", role: "Co-Founder & General Partner", profileSlug: "eric-bahn" },
-      { name: "Shiyan Koh", role: "Co-Founder & General Partner" }
+      { name: "Shiyan Koh", role: "Co-Founder & General Partner", profileSlug: "shiyan-koh" }
     ],
     timeline: [
       { year: "2017", event: "Elizabeth Yin, Eric Bahn, and Shiyan Koh found Hustle Fund in San Francisco." },
@@ -2332,8 +2332,8 @@ holdings: []
     thesis: "BoxGroup was founded in 2007 by David Tisch, grandson of Loews Corporation co-founder Laurence Tisch, and Adam Rothenberg, both of whom also built Techstars NYC into a cornerstone of the New York startup scene before leaving to focus on BoxGroup full-time in 2012. The firm's small early offices near Union Square became an informal co-working hub for its own portfolio companies, and that proximity produced its most famous bet: Zach Perret turned down a job offer at BoxGroup to found Plaid instead, and BoxGroup became the fintech company's first institutional investor. Comfortable investing on 'more vision than traction,' as Tisch describes it, BoxGroup has made more than 600 investments across fintech, enterprise software, consumer, and deep tech, with major exits including Flatiron Health (acquired by Roche for $1.9 billion), PillPack, Matterport, and Trello, and now manages $550 million across two new funds as of a 2025 raise marking the firm's 16th year.",
     leadership: [
       { name: "David Tisch", role: "Co-Founder & Managing Partner", profileSlug: "david-tisch" },
-      { name: "Adam Rothenberg", role: "Co-Founder & General Partner" },
-      { name: "Nimi Katragadda", role: "Partner" }
+      { name: "Adam Rothenberg", role: "Co-Founder & General Partner", profileSlug: "adam-rothenberg" },
+      { name: "Nimi Katragadda", role: "Partner", profileSlug: "nimi-katragadda" }
     ],
     timeline: [
       { year: "2007", event: "David Tisch and Adam Rothenberg found BoxGroup in New York." },
@@ -4778,8 +4778,8 @@ holdings: []
     leadership: [
       { name: "James Currier", role: "Co-Founder & General Partner", profileSlug: "james-currier" },
       { name: "Gigi Levy-Weiss", role: "Co-Founder & General Partner", profileSlug: "gigi-levy-weiss" },
-      { name: "Pete Flint", role: "Co-Founder & General Partner" },
-      { name: "Morgan Beller", role: "General Partner" }
+      { name: "Pete Flint", role: "Co-Founder & General Partner", profileSlug: "pete-flint" },
+      { name: "Morgan Beller", role: "General Partner", profileSlug: "morgan-beller" }
     ],
     timeline: [
       { year: "2015", event: "James Currier, Pete Flint, and Gigi Levy-Weiss found NFX in San Francisco." },
@@ -4831,7 +4831,7 @@ holdings: []
     aum: "$186M (Fund I, closed 2022)",
     thesis: "Shield Capital was founded by Philip Bilden and Raj Shah, who began planning the firm together in 2015 around cybersecurity seed investments before formally launching it in 2021. Bilden brings more than two decades as a Managing Director at HarbourVest Partners, a private equity firm managing over $100 billion, plus deep U.S. Navy family ties spanning four generations; Shah is a former F-16 fighter pilot who led the Defense Innovation Unit, the Pentagon's flagship technology innovation organization, across both the Obama and Trump administrations. That combination of institutional investing credibility and direct national-security operating experience shapes Shield's specific thesis: back dual-use companies serving both commercial and defense customers in AI, autonomy, cybersecurity, and space, operating in strategic partnership with L3Harris Technologies. The firm's advisory board includes former Defense Secretary Ash Carter and former National Security Advisor H.R. McMaster, and its debut fund closed oversubscribed at $186 million, 55% above target.",
     leadership: [
-      { name: "Philip Bilden", role: "Co-Founder & Managing Partner" },
+      { name: "Philip Bilden", role: "Co-Founder & Managing Partner", profileSlug: "philip-bilden" },
       { name: "Raj Shah", role: "Co-Founder & Managing Partner", profileSlug: "raj-shah" },
       { name: "Michael Brown", role: "Partner" }
     ],
@@ -4858,8 +4858,8 @@ holdings: []
     thesis: "Point Nine grew out of Team Europe Ventures, a SaaS-focused effort Christoph Janz and Pawel Chudzinski began around 2008, before officially rebranding and formalizing as Point Nine Capital in 2011 with co-founder Kolja Hebenstreit. The firm has stayed deliberately narrow and disciplined for more than a decade, making just 10-12 investments per year almost entirely at the seed stage, concentrated in B2B SaaS, marketplaces, and - more recently - AI. That focus produced an unusually high hit rate: more than 65% of Point Nine's seed investments progress to a Series A, and more than ten portfolio companies have reached $100 million or more in annual recurring revenue, including Zendesk, Delivery Hero, Algolia, Contentful, Clio, and Loom, all backed at their earliest stages.",
     leadership: [
       { name: "Christoph Janz", role: "Co-Founder & Managing Partner", profileSlug: "christoph-janz" },
-      { name: "Pawel Chudzinski", role: "Co-Founder & Managing Partner" },
-      { name: "Louis Coppey", role: "Partner" }
+      { name: "Pawel Chudzinski", role: "Co-Founder & Managing Partner", profileSlug: "pawel-chudzinski" },
+      { name: "Louis Coppey", role: "Partner", profileSlug: "louis-coppey" }
     ],
     timeline: [
       { year: "2008", event: "Christoph Janz and Pawel Chudzinski begin investing together through Team Europe Ventures." },
@@ -4913,8 +4913,8 @@ holdings: []
     thesis: "East Ventures was founded in 2009 by Willson Cuaca, Batara Eto, and Taiga Matsuyama, making it one of the first venture capital firms operating in Indonesia at a time when, in the founders' own words, essentially no one believed in the country's consumer internet potential. That early, uncontested conviction let the firm become the seed investor behind several of Southeast Asia's largest tech companies, most famously Tokopedia, which later merged with Gojek to form GoTo and completed one of Indonesia's largest-ever public listings in 2022. East Ventures has since transformed into a multi-asset platform spanning seed through growth stage across Indonesia, Japan, Singapore, Thailand, Malaysia, Vietnam, and the US, investing in more than 300 companies and repeatedly ranked the most active investor in Southeast Asia by CB Insights, Preqin, and Crunchbase.",
     leadership: [
       { name: "Willson Cuaca", role: "Co-Founder & Managing Partner", profileSlug: "willson-cuaca" },
-      { name: "Batara Eto", role: "Co-Founder & Managing Partner" },
-      { name: "Taiga Matsuyama", role: "Co-Founder & Managing Partner" }
+      { name: "Batara Eto", role: "Co-Founder & Managing Partner", profileSlug: "batara-eto" },
+      { name: "Taiga Matsuyama", role: "Co-Founder & Managing Partner", profileSlug: "taiga-matsuyama" }
     ],
     timeline: [
       { year: "2009", event: "Willson Cuaca, Batara Eto, and Taiga Matsuyama found East Ventures, one of the first VC firms in Indonesia." },
@@ -5449,7 +5449,7 @@ holdings: []
     thesis: "Enza Capital was co-founded by Mike Mompi in Nairobi in 2019, built around a specific thesis: back technology companies that 'organize the offline, digitize key industries, and redefine African life.' The firm operates as a genuinely multi-stage investor, partnering with founders from pre-seed through Series B on a single first check rather than requiring separate relationships at each stage, with typical checks between $250,000 and $5 million. Enza introduced a distinctive Founder Partner Program in 2023 that allocates 10% of the firm's own ownership to the founders in its portfolio, an unusual structural bet on aligning incentives beyond the standard investor-founder relationship. The firm has invested in more than 30 companies across eight African markets, spanning fintech, logistics, healthcare, human capital, and climate-smart sectors, with $78 million under management across two funds.",
     leadership: [
       { name: "Mike Mompi", role: "Co-Founder & Managing Partner", profileSlug: "mike-mompi" },
-      { name: "John Lazar", role: "General Partner" }
+      { name: "John Lazar", role: "General Partner", profileSlug: "john-lazar" }
     ],
     timeline: [
       { year: "2019", event: "Mike Mompi co-founds Enza Capital in Nairobi." },
@@ -5472,7 +5472,7 @@ holdings: []
     thesis: "KawiSafi Ventures was created and developed by Acumen, the internationally recognized impact investing pioneer, after Acumen spent a decade deploying more than $20 million of patient philanthropic capital across East Africa's off-grid energy ecosystem and recognized the potential to scale that impact through a genuinely commercial, for-profit vehicle. Launched in 2017 and closed at nearly $70 million in 2019 through Acumen's subsidiary Acumen Capital Partners, the fund was backed by an unusually prominent group of anchor investors - the Green Climate Fund, venture capitalist Steve Jurvetson, TED curator Chris Anderson, and the Skoll Foundation. KawiSafi invests growth capital in high-growth, revenue-generating clean energy companies scaling decentralized, off-grid solar solutions across Kenya and Rwanda, aiming to deliver clean energy access to more than 10 million people while displacing over a million tons of carbon dioxide.",
     leadership: [
       { name: "Amar Inamdar", role: "Managing Director", profileSlug: "amar-inamdar" },
-      { name: "Michelle Haigh Osorio", role: "Investment Director" }
+      { name: "Michelle Haigh Osorio", role: "Investment Director", profileSlug: "michelle-haigh-osorio" }
     ],
     timeline: [
       { year: "2017", event: "KawiSafi Ventures launches with initial investors." },
@@ -5495,7 +5495,7 @@ holdings: []
     thesis: "Launch Africa Ventures was co-founded in 2020 by Zachariah George, a former Wall Street M&A banker turned prolific African angel investor, and Janade du Plessis, then head of venture capital at Nedbank, after both recognized a persistent funding gap facing startups graduating from accelerators at the pre-seed and pre-Series A stage. The firm's debut fund closed oversubscribed at $36 million within 18 months, drawing from 238 retail and institutional investors across 40 countries - notably without a single development finance institution among them, an unusual capital structure for African venture funds. That high-touch, high-scale approach has made Launch Africa the continent's most active early-stage VC fund, backing more than 180 startups across 25 countries including Kuda, Bitmama, and Mano, supported by a network of more than 400 limited partners.",
     leadership: [
       { name: "Zachariah George", role: "Co-Founder & Managing Partner", profileSlug: "zachariah-george" },
-      { name: "Janade du Plessis", role: "Co-Founder & Managing Partner" }
+      { name: "Janade du Plessis", role: "Co-Founder & Managing Partner", profileSlug: "janade-du-plessis" }
     ],
     timeline: [
       { year: "2020", event: "Zachariah George and Janade du Plessis found Launch Africa Ventures, headquartered in Mauritius." },
@@ -6362,7 +6362,7 @@ holdings: []
     thesis: "EchoVC Partners was founded in 2011 by Eghosa Omoigui, who spent nearly a decade at Intel Capital sourcing early bets on companies including AdMob, Facebook, LinkedIn, and Pandora before turning that same platform-agnostic, geographically expansive instinct toward underrepresented founders in underserved markets. Built explicitly around backing diverse founding teams and bold business models across fintech, health services, commerce, energy, and sustainable mobility, the firm has grown from its original African focus into Southeast Asia and Latin America, leading nearly all of its deals and building a dedicated growth-stage vehicle, EchoVC+, in partnership with TPG Growth and the TPG Rise Fund.",
     leadership: [
       { name: "Eghosa Omoigui", role: "Founder & Managing General Partner", profileSlug: "eghosa-omoigui" },
-      { name: "Tsendai", role: "Partner" }
+      { name: "Tsendai", role: "Partner", profileSlug: "tsendai" }
     ],
     timeline: [
       { year: "2011", event: "Eghosa Omoigui founds EchoVC Partners in Lagos." },
@@ -6385,7 +6385,7 @@ holdings: []
     thesis: "Voltron Capital was co-founded in July 2021 by Olumide Soyombo, one of Africa's most prolific angel investors, and Abe Choi, a US-based entrepreneur and investor. Soyombo had already built a personal portfolio of more than 30 African startups - including Paystack, PiggyVest, and Mono - through angel checks since 2014, and Voltron was built specifically to formalize that track record into institutional capital addressing what the founders called a severe lack of access to early-stage funding across the continent. The firm writes $20,000 to $100,000 pre-seed and seed checks focused on Nigeria, Kenya, South Africa, and North Africa, launched its first fund in 2022, and had backed 53 startups through that vehicle alone.",
     leadership: [
       { name: "Olumide Soyombo", role: "Co-Founder", profileSlug: "olumide-soyombo" },
-      { name: "Abe Choi", role: "Co-Founder" }
+      { name: "Abe Choi", role: "Co-Founder", profileSlug: "abe-choi" }
     ],
     timeline: [
       { year: "2021", event: "Olumide Soyombo and Abe Choi co-found Voltron Capital in July." },
@@ -6632,7 +6632,7 @@ holdings: []
     thesis: "Prosus Ventures, formerly Naspers Ventures, is the early-stage investing arm of Prosus, one of the world's largest technology investors with roots tracing back to South African media company Naspers. Founded in 2015, the fund focuses deliberately on high-growth emerging markets - Latin America, India, and Southeast Asia - investing in fintech, logistics, edtech, foodtech, and AI services that complement Prosus's broader portfolio of controlled businesses like iFood and PayU. That structural advantage, leveraging Prosus's global operating network and subsidiary integrations rather than capital alone, has helped Prosus Ventures make more than 230 investments to date, deploying over $400 million in FY25 across more than 40 new deals, under the strategic direction of Prosus CEO Fabricio Bloisi, himself the founder who built iFood into Latin America's dominant food delivery platform before Prosus acquired it outright in 2022.",
     leadership: [
       { name: "Fabricio Bloisi", role: "CEO, Prosus (parent company)", profileSlug: "fabricio-bloisi" },
-      { name: "Ashutosh Sharma", role: "Head of Investments, India" }
+      { name: "Ashutosh Sharma", role: "Head of Investments, India", profileSlug: "ashutosh-sharma" }
     ],
     timeline: [
       { year: "2015", event: "Prosus Ventures (then Naspers Ventures) is founded in Amsterdam." },
@@ -6938,7 +6938,7 @@ holdings: []
     thesis: "In-Q-Tel was chartered by the CIA in February 1999 under Director George Tenet, founded by former Lockheed Martin CEO Norm Augustine and video-game-industry veteran Gilman Louie as founding CEO, built to close a widening gap between Silicon Valley's pace of innovation and the U.S. intelligence community's traditionally slow procurement processes. Structured as a nonprofit rather than a traditional fund, In-Q-Tel invests government and philanthropic-style capital directly into startups building frontier technology - AI, cybersecurity, biotech, and space - with the explicit goal of getting those capabilities into the hands of the CIA and allied intelligence and defense agencies faster than conventional contracting ever could. Over 26 years, the fund has helped launch more than 800 companies, is an investor in 32 of this year's NatSec 100 fastest-growing defense startups (more than any other fund), and produced early, formative bets on Palantir, Keyhole (which became Google Earth), and Ginkgo Bioworks.",
     leadership: [
       { name: "Gilman Louie", role: "Founding CEO", profileSlug: "gilman-louie" },
-      { name: "Norm Augustine", role: "Founding Chairman" }
+      { name: "Norm Augustine", role: "Founding Chairman", profileSlug: "norm-augustine" }
     ],
     timeline: [
       { year: "1999", event: "The CIA charters In-Q-Tel in February, under Director George Tenet." },
@@ -6966,9 +6966,9 @@ holdings: []
     aum: "$900M+",
     thesis: "Gaingels was founded in 2014 by David Beatty and Paul Grossinger as a small angel group of LGBTQIA+ investors backing LGBTQIA+ founders, at a time there was nowhere else for the community to invest together in its own entrepreneurs. After investing roughly $4 million between 2015 and 2017, the two transformed Gaingels into a formal venture syndicate in 2018, broadening its mandate beyond LGBTQIA+ founders to diverse and underrepresented leadership across the entire venture chain - founders, executives, board members, and check-writers - while co-investing alongside established VCs in oversubscribed rounds rather than leading deals independently. That model has scaled dramatically: more than 4,000 members and $1 billion-plus deployed into 2,500-plus companies including 75-plus unicorns, supported by initiatives like the Diversity Term Sheet Rider and one of venture's largest diversity-aligned jobs boards.",
     leadership: [
-      { name: "David Beatty", role: "Co-Founder & Managing Partner" },
+      { name: "David Beatty", role: "Co-Founder & Managing Partner", profileSlug: "david-beatty" },
       { name: "Paul Grossinger", role: "Co-Founder", profileSlug: "paul-grossinger" },
-      { name: "Jennifer Jeronimo", role: "CEO & General Partner" }
+      { name: "Jennifer Jeronimo", role: "CEO & General Partner", profileSlug: "jennifer-jeronimo" }
     ],
     timeline: [
       { year: "2014", event: "David Beatty and Paul Grossinger found Gaingels as an LGBTQIA+ angel group." },
@@ -6992,8 +6992,8 @@ holdings: []
     thesis: "VentureSouq was founded in Dubai in 2013 by Sonia Gokhale, Sonia Weymuller, Suneel Gokhale, and Tammer Qaddumi, building one of the earliest institutional venture platforms in the GCC region. Rather than running a single generalist fund, the firm operates thematically, managing dedicated vehicles focused on fintech and climate tech, and investing globally rather than staying confined to the Gulf despite its regional roots. That structure has produced a genuinely broad portfolio spanning more than 300 companies, including nine unicorns and outcomes like Substack, Tabby, and Zoomcar, with 71 total exits recorded across its history.",
     leadership: [
       { name: "Sonia Weymuller", role: "Co-Founder & General Partner", profileSlug: "sonia-weymuller" },
-      { name: "Sonia Gokhale", role: "Co-Founder" },
-      { name: "Suneel Gokhale", role: "Co-Founder" }
+      { name: "Sonia Gokhale", role: "Co-Founder", profileSlug: "sonia-gokhale" },
+      { name: "Suneel Gokhale", role: "Co-Founder", profileSlug: "suneel-gokhale" }
     ],
     timeline: [
       { year: "2013", event: "Sonia Gokhale, Sonia Weymuller, Suneel Gokhale, and Tammer Qaddumi found VentureSouq in Dubai." },
@@ -7016,9 +7016,9 @@ holdings: []
     thesis: "Y Combinator was founded in March 2005 in Cambridge, Massachusetts by Paul Graham, Jessica Livingston, Robert Tappan Morris, and Trevor Blackwell, and pioneered the batch-based accelerator model that essentially every startup accelerator since has copied: fixed cohorts, a standardized check, weekly dinners with successful founders, and a demo day culminating each three-month program. The firm has funded more than 5,690 companies since inception, with more than 400 reaching unicorn status and a combined alumni portfolio valuation exceeding $600 billion - including Airbnb, Stripe, Coinbase, DoorDash, Dropbox, Instacart, and Reddit. Under President and CEO Garry Tan, who took over in January 2023, YC has leaned hard into AI, with more than half of each recent batch building AI-first products.",
     leadership: [
       { name: "Garry Tan", role: "President & CEO", profileSlug: "garry-tan" },
-      { name: "Jared Friedman", role: "Managing Partner" },
+      { name: "Jared Friedman", role: "Managing Partner", profileSlug: "jared-friedman" },
       { name: "Harj Taggar", role: "Managing Partner" },
-      { name: "Jessica Livingston", role: "Co-Founder" }
+      { name: "Jessica Livingston", role: "Co-Founder", profileSlug: "jessica-livingston" }
     ],
     timeline: [
       { year: "2005", event: "Paul Graham and Jessica Livingston launch Y Combinator in Cambridge, funding its first batch including Reddit." },
@@ -7210,14 +7210,8 @@ holdings: []
     aum: "Not publicly disclosed",
     thesis: "Invests exclusively at pre-seed, before there is a company or a business - only a product-oriented founder. Writes $1–2M+ into a founder's first institutional round, sometimes leading alongside operator angels.",
     leadership: [
-      {
-        name: "Gaurav Jain",
-        role: "Co-Founder & Managing Partner"
-      },
-      {
-        name: "Anamitra Banerji",
-        role: "Co-Founder"
-      }
+      { name: "Gaurav Jain", role: "Co-Founder & Managing Partner", profileSlug: "gaurav-jain" },
+      { name: "Anamitra Banerji", role: "Co-Founder", profileSlug: "anamitra-banerji" }
     ],
     timeline: [
       {
@@ -7966,10 +7960,7 @@ holdings: []
         role: "Managing Director",
         profileSlug: "monika-steger"
       },
-      {
-        name: "Markus Mrachacz",
-        role: "Managing Director"
-      }
+      { name: "Markus Mrachacz", role: "Managing Director", profileSlug: "markus-mrachacz" }
     ],
     timeline: [
       {
@@ -8054,10 +8045,7 @@ holdings: []
         role: "Investment Committee",
         profileSlug: "andreas-riegler"
       },
-      {
-        name: "Wolfgang Neubert",
-        role: "Investment Committee"
-      }
+      { name: "Wolfgang Neubert", role: "Investment Committee", profileSlug: "wolfgang-neubert" }
     ],
     timeline: [
       {
@@ -8300,10 +8288,7 @@ holdings: []
         role: "Co-Founder",
         profileSlug: "andre-de-haes"
       },
-      {
-        name: "Alex Brunicki",
-        role: "Co-Founder"
-      },
+      { name: "Alex Brunicki", role: "Co-Founder", profileSlug: "alex-brunicki" },
       {
         name: "Matt Fitzpatrick",
         role: "Chief Executive Officer"
@@ -8508,14 +8493,8 @@ holdings: []
         name: "Karthik Reddy",
         role: "Co-Founder", profileSlug: "karthik-reddy"
       },
-      {
-        name: "Sanjay Nath",
-        role: "Co-Founder"
-      },
-      {
-        name: "Ashish Fafadia",
-        role: "Partner"
-      }
+      { name: "Sanjay Nath", role: "Co-Founder", profileSlug: "sanjay-nath" },
+      { name: "Ashish Fafadia", role: "Partner", profileSlug: "ashish-fafadia" }
     ],
     timeline: [
       {
@@ -8711,10 +8690,7 @@ holdings: []
         name: "Pranav Pai",
         role: "Co-Founder & Managing Partner", profileSlug: "pranav-pai"
       },
-      {
-        name: "Siddarth Pai",
-        role: "Co-Founder & Partner"
-      }
+      { name: "Siddarth Pai", role: "Co-Founder & Partner", profileSlug: "siddarth-pai" }
     ],
     timeline: [
       {
@@ -8898,14 +8874,8 @@ holdings: []
         name: "Walter Baddoo",
         role: "Co-Founder & Managing Partner", profileSlug: "walter-baddoo"
       },
-      {
-        name: "Peter Orth",
-        role: "Co-Founder & Managing Partner"
-      },
-      {
-        name: "Daniel Marlo",
-        role: "Managing Partner"
-      }
+      { name: "Peter Orth", role: "Co-Founder & Managing Partner", profileSlug: "peter-orth" },
+      { name: "Daniel Marlo", role: "Managing Partner", profileSlug: "daniel-marlo" }
     ],
     timeline: [
       {
@@ -9789,7 +9759,7 @@ holdings: []
       { name: "Kyle Lui", role: "General Partner", profileSlug: "kyle-lui" },
       { name: "Eric Theis", role: "Partner", profileSlug: "eric-theis" },
       { name: "Charlie Pinto", role: "Operating Partner", profileSlug: "charlie-pinto" },
-      { name: "Ash Panchang", role: "Senior Associate" },
+      { name: "Ash Panchang", role: "Senior Associate", profileSlug: "ash-panchang" },
     ],
     timeline: [
       { year: "2018", event: "Ben Ling founds Bling Capital." },
@@ -10033,10 +10003,10 @@ holdings: []
       { name: "François Tison", role: "Partner", profileSlug: "francois-tison" },
       { name: "Cesare Maifredi", role: "Partner", profileSlug: "cesare-maifredi" },
       { name: "Alexandre Mordacq", role: "Partner", profileSlug: "alexandre-mordacq" },
-      { name: "Lucrezia Lucotti", role: "Partner" },
-      { name: "Thomas Nivard", role: "Partner" },
+      { name: "Lucrezia Lucotti", role: "Partner", profileSlug: "lucrezia-lucotti" },
+      { name: "Thomas Nivard", role: "Partner", profileSlug: "thomas-nivard" },
       { name: "Alessandro Zaccaria", role: "Partner", profileSlug: "alessandro-zaccaria" },
-      { name: "Jean-Marie Perrot", role: "CFO & Head of ESG" },
+      { name: "Jean-Marie Perrot", role: "CFO & Head of ESG", profileSlug: "jean-marie-perrot" },
     ],
     timeline: [
       { year: "1997", event: "360 Capital dates the start of its investing activity to this year." },
@@ -10062,8 +10032,8 @@ holdings: []
       { name: "Phil Austin", role: "Managing Partner & Co-founder", profileSlug: "phil-austin" },
       { name: "Maarten Goossens", role: "Partner & Co-founder", profileSlug: "maarten-goossens" },
       { name: "Brett Wong", role: "Partner", profileSlug: "brett-wong" },
-      { name: "Brett Chevalier", role: "Chief Scientist" },
-      { name: "Michael Topalian", role: "Finance Director" },
+      { name: "Brett Chevalier", role: "Chief Scientist", profileSlug: "brett-chevalier" },
+      { name: "Michael Topalian", role: "Finance Director", profileSlug: "michael-topalian" },
     ],
     timeline: [
       { year: "2013", event: "Anterra Capital founded, described on its website as the first transatlantic agrifoodtech fund." },
@@ -10149,7 +10119,7 @@ holdings: []
       { name: "Sir Shankar Balasubramanian", role: "Founding Partner", profileSlug: "shankar-balasubramanian-ahren" },
       { name: "Professor Steve Jackson", role: "Founding Partner", profileSlug: "steve-jackson-ahren" },
       { name: "Sir Venki Ramakrishnan", role: "Founding Partner", profileSlug: "venki-ramakrishnan-ahren" },
-      { name: "Peter Lourensz, FCA", role: "Chief Financial Officer" },
+      { name: "Peter Lourensz, FCA", role: "Chief Financial Officer", profileSlug: "peter-lourensz" },
     ],
     timeline: [
       { year: "2018", event: "Ahren announces its launch on 3 September with over $100M at first close, founded by Alice Newcombe-Ellis with nine Founding Science Partners; LPs named include Aviva Ventures and Wittington Investments." },
@@ -10559,8 +10529,8 @@ holdings: []
     leadership: [
       { name: "Nico Berardi", role: "General Partner", profileSlug: "nico-berardi" },
       { name: "Antonio Osio", role: "General Partner", profileSlug: "antonio-osio" },
-      { name: "Caro Acevedo", role: "Operations Partner" },
-      { name: "Vicky Franco", role: "Operations Director" },
+      { name: "Caro Acevedo", role: "Operations Partner", profileSlug: "caro-acevedo" },
+      { name: "Vicky Franco", role: "Operations Director", profileSlug: "vicky-franco" },
     ],
     timeline: [
       { year: "2019", event: "Publicly unveiled as ANIMO Ventures with a $60 million seed fund, after operating in stealth as Magnetico Ventures" },
