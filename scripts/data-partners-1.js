@@ -6714,5 +6714,533 @@ sources: [
       { label: "Flagship Pioneering", url: "https://www.flagshippioneering.com/people/noubar-afeyan" },
       { label: "Wikipedia - Noubar Afeyan", url: "https://en.wikipedia.org/wiki/Noubar_Afeyan" }
     ]
+  },
+"nigel-morris": {
+    name: "Nigel Morris",
+    firm: "QED Investors",
+    firmSlug: "qed-investors",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2007,
+    education: [],
+    previousExperience: [
+      "Co-Founder & President, Capital One (led the company's IPO in the 1990s)"
+    ],
+    investmentFocus: ["Fintech", "Neobanking", "Consumer Credit", "Global Financial Services"],
+    notableInvestments: [
+      { name: "Nubank", ticker: "NU" },
+      { name: "SoFi", ticker: "SOFI" },
+      { name: "Klarna", ticker: null },
+      { name: "AvidXchange", ticker: null }
+    ],
+    boardSeats: ["ClearScore (Chairman)", "Mission Lane (Chairman)", "Remitly", "Bitso", "Current"],
+    ipoCount: 2,
+    majorExits: 1,
+    careerTimeline: [
+      { year: "1990s", event: "Co-founds Capital One and leads the company through its IPO." },
+      { year: "2007", event: "Co-founds QED Investors with Frank Rotman." },
+      { year: "2021", event: "Leads QED's early investment into Nubank, sitting on its advisory board through its December NYSE IPO at a $41 billion market cap." },
+      { year: "2024", event: "Named to the Forbes Midas List for the fourth consecutive year, rising 48 spots." }
+    ],
+    biography: "Nigel Morris co-founded Capital One and helped lead the company through its 1990s IPO before deciding fintech founders needed investors who'd actually run a financial services company, not just funded one. He co-founded QED Investors in 2007 with fellow Capital One alum Frank Rotman, and his clearest proof point since has been Nubank: he led QED's early investment in the Brazilian neobank and sat on its advisory board through its December 2021 NYSE IPO at a $41 billion market cap, since grown to $57 billion. He chairs ClearScore and Mission Lane, sits on the boards of Remitly, Bitso, and Current, and has appeared on the Forbes Midas List for four consecutive years, climbing 48 spots in 2024 alone - the second-largest jump of any investor that year.",
+    sources: [
+      { label: "QED Investors - Nigel Morris", url: "https://www.qedinvestors.com/team/nigel-morris" },
+      { label: "BusinessWire", url: "https://www.businesswire.com/news/home/20240606701949/en/" }
+    ]
+  },
+"carmichael-roberts": {
+    name: "Carmichael Roberts",
+    firm: "Breakthrough Energy Ventures",
+    firmSlug: "breakthrough-energy-ventures",
+    title: "Investment Committee Co-Lead",
+    joinedYear: 2016,
+    education: ["BS, Organic Chemistry, Duke University", "PhD, Organic Chemistry, Duke University"],
+    previousExperience: [
+      "Business Development, GelTex Pharmaceuticals (acquired by Genzyme for $1.3B)",
+      "New Product & Business Development, Dow Chemical (formerly Union Carbide)",
+      "President/CEO or Chairman, multiple materials-innovation ventures",
+      "Co-Founder & Managing Partner, Material Impact"
+    ],
+    investmentFocus: ["Materials Innovation", "Climate Technology", "Industrial & Commercial Applications"],
+    notableInvestments: [],
+    boardSeats: ["Consumer Technology Association", "WGBH", "Massachusetts General Hospital Physicians Organization"],
+    ipoCount: 0,
+    majorExits: 1,
+    careerTimeline: [
+      { year: "1998", event: "Works in business development at GelTex Pharmaceuticals, later acquired by Genzyme for $1.3 billion." },
+      { year: "2010s", event: "Co-founds Material Impact, a fund building technology companies around materials innovation." },
+      { year: "2013", event: "Elected to Duke University's Board of Trustees, later serving as Vice Chairman." },
+      { year: "2016", event: "Joins Breakthrough Energy Ventures as Investment Committee Co-Lead." }
+    ],
+    biography: "Carmichael Roberts brings a materials-science and commercialization background to Breakthrough Energy Ventures that's genuinely distinctive among climate investors. After a Duke PhD in organic chemistry and roles at GelTex Pharmaceuticals - acquired by Genzyme for $1.3 billion - and Dow Chemical, he built a career licensing university technology and commercializing it through targeted Fortune 500 partnerships, an approach he later formalized by co-founding Material Impact. That same licensing-and-commercialization playbook now shapes how he co-leads BEV's investment committee, evaluating climate technologies against the fund's unusually strict bar: real, credible potential to eliminate at least 1% of global emissions. He serves as Vice Chairman of Duke's Board of Trustees and on the boards of the Consumer Technology Association and Massachusetts General Hospital's Physicians Organization.",
+    sources: [
+      { label: "TechCrunch - Carmichael Roberts", url: "https://techcrunch.com/author/carmichael-roberts" },
+      { label: "Breakthrough Energy", url: "https://breakthroughenergy.org" }
+    ]
+  },
+"carl-gordon": {
+    name: "Carl Gordon",
+    firm: "OrbiMed",
+    firmSlug: "orbimed",
+    title: "Managing Partner & Head of Private Equity",
+    joinedYear: 1995,
+    education: ["AB, Chemistry & Physics, Harvard University", "PhD, Biology, MIT", "Postdoctoral Fellow, Rockefeller University"],
+    previousExperience: [
+      "Research role, ImClone Systems (1987-1988)"
+    ],
+    investmentFocus: ["Biotechnology", "Pharmaceuticals", "Medical Devices", "Company Formation"],
+    notableInvestments: [],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "1987", event: "Graduates Harvard with an AB in Chemistry & Physics, then joins ImClone Systems." },
+      { year: "1993", event: "Completes his PhD in Biology at MIT, followed by a postdoctoral fellowship at Rockefeller University." },
+      { year: "1995", event: "Joins OrbiMed's predecessor firm." },
+      { year: "1998", event: "Becomes a founding General Partner of OrbiMed Advisors following its split from Mehta & Isaly." },
+      { year: "2026", event: "Leads OrbiMed's private equity team as the platform manages approximately $20 billion across public equity, private equity, and credit strategies." }
+    ],
+    biography: "Carl Gordon brings a genuinely rare combination of deep scientific training and two decades of venture leadership to OrbiMed. After a Harvard degree in Chemistry & Physics, a research stint at ImClone Systems, and a PhD in Biology from MIT followed by a Rockefeller University postdoc, he joined OrbiMed's predecessor firm in 1995 and became a founding General Partner when OrbiMed Advisors formally split off in 1998. He now leads OrbiMed's private equity team, one of three arms (alongside public equity and private credit) that let the firm fund healthcare companies from seed through IPO and beyond within a single specialist platform - a structure widely viewed in biotech as a genuine stamp of validation, with many companies specifically seeking OrbiMed's backing to help secure Nasdaq or HKEX listings. Gordon has appeared on the Forbes Midas List multiple times, founded and invested in numerous biotechnology companies, and served on both public and private company boards throughout his career.",
+    sources: [
+      { label: "OrbiMed - Carl Gordon", url: "https://www.orbimed.com/leadership/carl-l-gordon-ph-d-cfa/" },
+      { label: "Wikipedia - OrbiMed", url: "https://en.wikipedia.org/wiki/OrbiMed" }
+    ]
+  },
+"nino-marakovic": {
+    name: "Nino Marakovic",
+    firm: "Sapphire Ventures",
+    firmSlug: "sapphire-ventures",
+    title: "CEO & Partner (Co-Founder)",
+    joinedYear: 2006,
+    education: ["BA, Economics & Psychology, Williams College", "MBA, Stanford Graduate School of Business"],
+    previousExperience: [
+      "Investment Banker, Morgan Stanley, Goldman Sachs & Robertson Stephens",
+      "Partner, Draper Fisher Jurvetson",
+      "Partner, IVF Ventures"
+    ],
+    investmentFocus: ["Enterprise Software", "AI", "SaaS", "Growth-Stage Investing"],
+    notableInvestments: [
+      { name: "MuleSoft", ticker: null },
+      { name: "Braze", ticker: "BRZE" }
+    ],
+    boardSeats: ["ActivTrak", "Adverity"],
+    ipoCount: 5,
+    majorExits: 40,
+    careerTimeline: [
+      { year: "2006", event: "Joins SAP Ventures, later leading the team, after roles at Morgan Stanley, Goldman Sachs, and Draper Fisher Jurvetson." },
+      { year: "2011", event: "Leads SAP Ventures' spinout into an independent VC firm." },
+      { year: "2014", event: "The firm rebrands to Sapphire Ventures." },
+      { year: "2018", event: "MuleSoft, one of the firm's portfolio companies, is acquired by Salesforce for $6.5 billion." },
+      { year: "2021", event: "Relocates with his family to establish Sapphire's Austin office." }
+    ],
+    biography: "Nino Marakovic was born in Croatia and built his early career in investment banking at Morgan Stanley, Goldman Sachs, and Robertson Stephens before moving into venture capital at Draper Fisher Jurvetson. He joined SAP Ventures in 2006, eventually leading the team through its 2011 spinout into an independent venture firm - a deal he personally engineered - and the firm rebranded to Sapphire Ventures in 2014. Over 25 years of investing and operating, Marakovic has backed more than 100 private companies and venture funds and been affiliated with nearly 40 exits between IPOs and M&A, including LinkedIn, Monday.com, Integral Ad Science, OpsRamp, and Braze. Colleagues describe him as an unusually calm, no-nonsense investor who avoids getting caught up in ideology, and he now sits on the boards of ActivTrak and Adverity.",
+    sources: [
+      { label: "Sapphire Ventures - Nino Marakovic", url: "https://sapphireventures.com/team-member/nino-marakovic/" },
+      { label: "Grokipedia - Sapphire Ventures", url: "https://grokipedia.com/page/Sapphire_Ventures" }
+    ]
+  },
+"kirsten-green": {
+    name: "Kirsten Green",
+    firm: "Forerunner Ventures",
+    firmSlug: "forerunner-ventures",
+    title: "Founder & Managing Partner",
+    joinedYear: 2012,
+    education: [],
+    previousExperience: [
+      "Equity Research Analyst, Banc of America Securities (retail sector)"
+    ],
+    investmentFocus: ["Consumer", "Commerce", "Digital Health", "Fintech"],
+    notableInvestments: [
+      { name: "Warby Parker", ticker: "WRBY" },
+      { name: "Chime", ticker: null },
+      { name: "Glossier", ticker: null },
+      { name: "Faire", ticker: null }
+    ],
+    boardSeats: ["Nordstrom", "Glossier", "Ritual", "Faire", "Hims & Hers"],
+    ipoCount: 3,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2010", event: "Leads Forerunner's early seed check into Warby Parker, before the firm's formal 2012 founding." },
+      { year: "2012", event: "Founds Forerunner Ventures in San Francisco at age 40, after a career as a retail equity research analyst." },
+      { year: "2013", event: "Makes an early investment in Glossier, a year ahead of its official 2014 launch." },
+      { year: "2018", event: "Recognized on Time's 100 Most Influential People list." },
+      { year: "2021", event: "Warby Parker goes public via NYSE direct listing." },
+      { year: "2022", event: "Closes Fund VI at $1 billion." }
+    ],
+    biography: "Kirsten Green spent her early career as a retail equity research analyst at Banc of America Securities, deeply analyzing cohort behavior and unit economics for public retail companies - a rigor she carried directly into venture capital when she founded Forerunner in 2012, entering VC for the first time at age 40. That background gave her an unusually early read on direct-to-consumer commerce, and Forerunner became one of Silicon Valley's most concentrated consumer-focused funds as a result, leading early checks into Warby Parker, Chime, Glossier, Dollar Shave Club, and Faire. She's raised nearly $3 billion in assets under management since founding the firm, been named to Time's 100 Most Influential People and The New York Times' Top 20 Venture Capitalists, and now serves on the boards of Nordstrom, Glossier, Ritual, Faire, and Hims & Hers - a rare bridge between legacy retail and next-generation consumer companies.",
+    sources: [
+      { label: "Forerunner Ventures - Kirsten Green", url: "https://www.forerunnerventures.com/team/kirsten-green" },
+      { label: "Wikipedia - Forerunner Ventures", url: "https://en.wikipedia.org/wiki/Forerunner_Ventures" }
+    ]
+  },
+"stephen-knight": {
+    name: "Stephen Knight",
+    firm: "F-Prime Capital",
+    firmSlug: "f-prime-capital",
+    title: "President & Senior Managing Partner",
+    joinedYear: 2003,
+    education: ["MD, Yale University School of Medicine", "MBA"],
+    previousExperience: [
+      "Researcher, AT&T Bell Laboratories",
+      "Researcher, National Institutes of Health",
+      "Senior management roles, private & public biotechnology and consulting companies"
+    ],
+    investmentFocus: ["Biotechnology", "Rare Disease", "Gene Therapy", "Company Formation"],
+    notableInvestments: [
+      { name: "Beam Therapeutics", ticker: "BEAM" },
+      { name: "Denali Therapeutics", ticker: "DNLI" },
+      { name: "Blueprint Medicines", ticker: "BPMC" }
+    ],
+    boardSeats: ["Beam Therapeutics", "Iora Health", "Pulmocide"],
+    ipoCount: 4,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2003", event: "Joins F-Prime Capital, then known as Fidelity Biosciences." },
+      { year: "2017", event: "Co-founds Denali Therapeutics; portfolio company Denali completes its IPO in December." },
+      { year: "2017", event: "Joins Beam Therapeutics' board of directors in June." },
+      { year: "2020", event: "Beam Therapeutics, which he co-founded, completes its Nasdaq IPO." }
+    ],
+    biography: "Stephen Knight brings an unusually technical foundation to biotech investing: an MD from Yale, an MBA, and early research experience at AT&T Bell Laboratories and the NIH, followed by more than 25 years operating inside pharmaceutical and biotechnology companies before joining F-Prime Capital (then Fidelity Biosciences) in 2003. Rather than simply writing checks, he's personally co-founded more than 30 platform biotech companies alongside academic researchers, including Beam Therapeutics and Denali Therapeutics - both of which he helped build from the earliest scientific idea through their respective Nasdaq IPOs. That hands-on, company-creation approach, drawing on Fidelity's resources and a distinctive 'technical-risk-yes, regulatory-risk-no' investment filter, has made him one of the most active builder-investors in healthcare venture capital, with SEC filings across multiple portfolio companies confirming his direct board involvement at each stage.",
+    sources: [
+      { label: "NVCA Member Spotlight", url: "https://nvca.org/member-spotlight-f-prime-capital/" },
+      { label: "Beam Therapeutics SEC Filing", url: "https://www.sec.gov/Archives/edgar/data/1745999/000156459020014308/beam-10k_20191231.htm" }
+    ]
+  },
+"kevin-starr": {
+    name: "Kevin Starr",
+    firm: "Third Rock Ventures",
+    firmSlug: "third-rock-ventures",
+    title: "Co-Founding Partner",
+    joinedYear: 2007,
+    education: [],
+    previousExperience: [
+      "COO & CFO, Millennium Pharmaceuticals"
+    ],
+    investmentFocus: ["Rare & Orphan Diseases", "Gene Therapy", "Precision Oncology", "Company Creation"],
+    notableInvestments: [
+      { name: "Bluebird Bio", ticker: "BLUE" },
+      { name: "Agios Pharmaceuticals", ticker: "AGIO" },
+      { name: "Foundation Medicine", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 3,
+    majorExits: 1,
+    careerTimeline: [
+      { year: "2006", event: "Meets future co-founders Mark Levin and Robert Tepper at a conference, lamenting the lack of funding for disruptive biotech ideas while all three still work at Millennium Pharmaceuticals." },
+      { year: "2007", event: "Co-founds Third Rock Ventures in Boston, raising a $378 million debut fund within ten weeks." },
+      { year: "2010s", event: "Helps build Bluebird Bio, Agios, and Foundation Medicine from early scientific concepts into category-defining public companies." },
+      { year: "2016", event: "Steps back from active fund leadership to become an advisor for Fund IV, citing a deliberate pause on starting new companies." }
+    ],
+    biography: "Kevin Starr co-founded Third Rock Ventures in 2007 alongside two other former Millennium Pharmaceuticals executives, after the trio grew frustrated watching big pharma and traditional VCs abandon early-stage drug discovery. Rather than simply fund existing startups, they built a genuinely different model: touring academic research facilities, workshopping breakthrough science with scientists for one to three years, then constructing companies from scratch around it - a 'Discover-Launch-Build-Transform' approach that helped create Bluebird Bio, Agios Pharmaceuticals, and Foundation Medicine. Starr focused heavily on ultra-rare and orphan diseases throughout his active years at the firm, and in 2016 he stepped back to an advisory role for Third Rock's fourth fund, a deliberate pause he attributed to the firm's team-oriented, long-term operating model no longer requiring his direct day-to-day involvement in starting new companies.",
+    sources: [
+      { label: "The Org - Kevin Starr", url: "https://theorg.com/org/third-rock-ventures/org-chart/kevin-starr" },
+      { label: "Fortune", url: "https://fortune.com/2015/02/19/third-rock-ventures-giving-birth-to-a-new-generation-of-biotechs/" }
+    ]
+  },
+"chris-sacca": {
+    name: "Chris Sacca",
+    firm: "Lowercarbon Capital",
+    firmSlug: "lowercarbon-capital",
+    title: "Co-Founder",
+    joinedYear: 2018,
+    education: [],
+    previousExperience: [
+      "Co-Founder, Lowercase Capital (early investor in Uber, Twitter, Instagram, Twilio, Docker, Stripe)"
+    ],
+    investmentFocus: ["Climate", "Carbon Removal", "Energy", "Advanced Manufacturing"],
+    notableInvestments: [
+      { name: "Commonwealth Fusion Systems", ticker: null },
+      { name: "Charm Industrial", ticker: null },
+      { name: "Solugen", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2010", event: "Co-founds Lowercase Capital with Crystal Sacca, making early bets on Uber, Twitter, Instagram, Twilio, Docker, and Stripe." },
+      { year: "2017", event: "Steps back from broad-based venture capital, shifting focus toward climate innovation." },
+      { year: "2018", event: "Co-founds Lowercarbon Capital with Crystal Sacca and Clay Dumas." },
+      { year: "2021", event: "Raises $800 million, the firm's first outside capital, in a matter of days." },
+      { year: "2022", event: "Raises a dedicated $350 million fund specifically for carbon removal startups." }
+    ],
+    biography: "Chris Sacca built one of the most successful venture funds in history through Lowercase Capital, the fund he co-founded with his wife Crystal that made early bets on Uber, Twitter, Instagram, Twilio, Docker, and Stripe and vaulted him to the number-two spot on the Forbes Midas List. He stepped back from broad-based tech investing in 2017, and in 2018 the couple co-founded Lowercarbon Capital, applying the same return expectations and pattern-recognition instincts to companies that profitably reduce or remove carbon rather than chasing the next consumer app. Known for blunt, unfiltered messaging about the urgency of the climate crisis, Sacca raised Lowercarbon's first $800 million in outside capital within days in 2021, turning away what he called 'flattering offers' to keep the fund intentionally small, and has since backed more than 100 companies spanning fusion energy, carbon removal, and industrial decarbonization.",
+    sources: [
+      { label: "Lowercarbon Capital - Chris Sacca", url: "https://lowercarbon.com/team/chris-sacca/" },
+      { label: "ImpactAlpha", url: "https://impactalpha.com/chris-saccas-lowercarbon-capital-raises-800-million-for-climate-tech/" }
+    ]
+  },
+"hans-kobler": {
+    name: "Hans Kobler",
+    firm: "Energy Impact Partners",
+    firmSlug: "energy-impact-partners",
+    title: "Founder & Managing Partner",
+    joinedYear: 2015,
+    education: ["Masters, Aerospace Engineering, Technical University of Munich (with distinction)", "MBA, University of Texas at Austin", "MBA program, INSEAD"],
+    previousExperience: [
+      "Consultant, Bain & Company (Boston, Sydney & Munich offices)",
+      "Led Power technology investment effort, General Electric",
+      "Founder & CEO, Digital Power Capital",
+      "Co-Founder, Chairman & CEO, ICx Technologies (led through Nasdaq IPO and strategic sale)"
+    ],
+    investmentFocus: ["Energy Transition", "Grid Technology", "Industrial Cybersecurity", "Smart Infrastructure"],
+    notableInvestments: [
+      { name: "Dragos", ticker: null }
+    ],
+    boardSeats: ["Enchanted Rock"],
+    ipoCount: 1,
+    majorExits: 1,
+    careerTimeline: [
+      { year: "1993", event: "Attends INSEAD's MBA program." },
+      { year: "2000s", event: "Pioneers General Electric's strategic investment model, later leading GE's Power technology investment effort." },
+      { year: "2010s", event: "Founds Digital Power Capital, then co-founds ICx Technologies, leading it as CEO and Chairman through a Nasdaq IPO and later strategic sale." },
+      { year: "2015", event: "Founds Energy Impact Partners in New York." },
+      { year: "2017", event: "EIP partners with industrial cybersecurity company Dragos." },
+      { year: "2025", event: "Accenture acquires a majority stake in Dragos at a $3.2 billion valuation." }
+    ],
+    biography: "Hans Kobler built his career at the intersection of energy, industrial technology, and finance before founding Energy Impact Partners in 2015. After consulting at Bain & Company, he pioneered General Electric's strategic investment model and led its Power technology investment effort, then founded Digital Power Capital and co-founded ICx Technologies, a sensor technology company he led as CEO and Chairman through a successful Nasdaq IPO and eventual strategic sale. That operator-investor combination shaped EIP's distinctive model: a coalition of more than 30 global energy companies invests alongside the fund, giving portfolio companies direct commercial access to utilities and industrial players that might otherwise take years to reach. EIP's 2017 partnership with industrial cybersecurity company Dragos became one of Kobler's clearest recent proof points, once Accenture acquired a majority stake in the company at a $3.2 billion valuation.",
+    sources: [
+      { label: "Energy Impact Partners Team", url: "https://www.energyimpactpartners.com/team/" },
+      { label: "The Org - Hans Kobler", url: "https://theorg.com/org/energy-impact-partners/org-chart/hans-kobler" }
+    ]
+  },
+"alberto-yepez": {
+    name: "Alberto Yépez",
+    firm: "Forgepoint Capital",
+    firmSlug: "forgepoint-capital",
+    title: "Co-Founder & Managing Director",
+    joinedYear: 2015,
+    education: [],
+    previousExperience: [
+      "Founder, Chairman & CEO, enCommerce (acquired by Entrust)",
+      "Co-CEO & President, Entrust (acquired by Thoma Bravo)",
+      "Chairman & CEO, Thor Technologies (acquired by Oracle, 2005)",
+      "Entrepreneur in Residence, Warburg Pincus",
+      "Venture Consultant, Bain Capital",
+      "Managing Director, Trident Capital (led cybersecurity investments including AlienVault, Solera Networks, BlueCat Networks, Neohapsis)"
+    ],
+    investmentFocus: ["Cybersecurity", "AI Security", "Infrastructure Software"],
+    notableInvestments: [
+      { name: "Attivo Networks", ticker: null },
+      { name: "Area 1 Security", ticker: null },
+      { name: "BehavioSec", ticker: null }
+    ],
+    boardSeats: ["Constella Intelligence", "CyberCube", "Huntress", "NowSecure", "ReversingLabs", "Uptycs"],
+    ipoCount: 0,
+    majorExits: 9,
+    careerTimeline: [
+      { year: "2005", event: "Thor Technologies, which he led as Chairman and CEO, is acquired by Oracle." },
+      { year: "2008", event: "Joins Trident Capital as a venture partner and Entrepreneur-in-Residence, later becoming Managing Director leading its cybersecurity investments." },
+      { year: "2015", event: "Co-founds Forgepoint Capital with Don Dixon, one of the first venture funds exclusively dedicated to cybersecurity." },
+      { year: "2021", event: "Leads Attivo Networks' investment; the company is later acquired by SentinelOne." },
+      { year: "2022", event: "Area 1, a Forgepoint portfolio company, is acquired by Cloudflare." }
+    ],
+    biography: "Alberto Yépez is widely regarded as one of the pioneers of the cybersecurity industry, having founded and sold enCommerce to Entrust, served as Entrust's Co-CEO and President through its own sale to Thoma Bravo, and led Thor Technologies to an acquisition by Oracle in 2005 - three exits before he ever became a full-time investor. He led cybersecurity investments as Managing Director at Trident Capital, backing companies later acquired by AT&T, Symantec, Madison Dearborn, and Cisco, before co-founding Forgepoint Capital with his Trident colleague Don Dixon in 2015 to build one of the first venture funds exclusively dedicated to cybersecurity. His investments at Forgepoint include Attivo Networks (acquired by SentinelOne), Area 1 (acquired by Cloudflare), and BehavioSec (acquired by LexisNexis Risk Solutions), and he currently sits on the boards of Constella Intelligence, CyberCube, Huntress, NowSecure, ReversingLabs, and Uptycs - recognized by Fortune as one of the top VCs dominating cybersecurity investing.",
+    sources: [
+      { label: "Forgepoint Capital - Alberto Yépez", url: "https://forgepointcap.com/team/alberto-yepez/" },
+      { label: "Aspen Digital", url: "https://www.aspendigital.org/person/alberto-yepez/" }
+    ]
+  },
+"james-currier": {
+    name: "James Currier",
+    firm: "NFX",
+    firmSlug: "nfx",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2015,
+    education: [],
+    previousExperience: [
+      "Founder & CEO, Tickle (acquired by Monster)",
+      "Founder & CEO, WonderHill (acquired by Kabam)",
+      "Founder & CEO, Iron Pearl (acquired by PayPal)",
+      "Founder & CEO, Jiff (acquired by Castlight)"
+    ],
+    investmentFocus: ["Network Effects", "Marketplaces", "AI", "Consumer", "SaaS"],
+    notableInvestments: [
+      { name: "Lyft", ticker: "LYFT" },
+      { name: "DoorDash", ticker: "DASH" },
+      { name: "Patreon", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 2,
+    majorExits: 4,
+    careerTimeline: [
+      { year: "1990s-2000s", event: "Founds and exits four companies - Tickle, WonderHill, Iron Pearl, and Jiff - pioneering user-generated content, viral marketing, and A/B testing techniques later adopted industry-wide." },
+      { year: "2015", event: "Co-founds NFX with Pete Flint and Gigi Levy-Weiss." },
+      { year: "2019", event: "Lyft, an early NFX portfolio bet, goes public on the Nasdaq." },
+      { year: "2020", event: "DoorDash, another early NFX bet, goes public." }
+    ],
+    biography: "James Currier is a four-time founder - Tickle, WonderHill, Iron Pearl, and Jiff, all successfully acquired - turned one of Silicon Valley's most cited experts on network effects, having systematically categorized dozens of network-effect types that founders can now deliberately design for rather than stumble into. He co-founded NFX in 2015 with fellow serial entrepreneurs Pete Flint and Gigi Levy-Weiss, the three of whom collectively built ten companies with a combined $10 billion in exits before ever writing an outside investor check together. That operating pedigree shaped NFX's structure: a 45-plus-person platform team, proprietary tools like the Signal fundraising network, and an invite-only 'Guild' community where hundreds of portfolio CEOs share real KPIs and insights. Early NFX bets into Lyft and DoorDash, both public since 2019 and 2020 respectively, remain among the firm's clearest proof points.",
+    sources: [
+      { label: "NFX - James Currier", url: "https://www.nfx.com/team/james-currier" },
+      { label: "KoreaTechDesk", url: "https://koreatechdesk.com/james-currier-nfx-the-investor-you-can-rely-on-for-grand-business-success" }
+    ]
+  },
+"christoph-janz": {
+    name: "Christoph Janz",
+    firm: "Point Nine",
+    firmSlug: "point-nine",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2011,
+    education: [],
+    previousExperience: [
+      "Founder, DealPilot (early ecommerce price comparison)",
+      "Founder, PageFlakes"
+    ],
+    investmentFocus: ["B2B SaaS", "Marketplaces", "AI"],
+    notableInvestments: [
+      { name: "Zendesk", ticker: null },
+      { name: "Loom", ticker: null },
+      { name: "Clio", ticker: null },
+      { name: "Delivery Hero", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 1,
+    majorExits: 2,
+    careerTimeline: [
+      { year: "1990s", event: "Starts trading second-hand computers at age 12, never attending university." },
+      { year: "2000s", event: "Founds and exits DealPilot and PageFlakes before moving into angel investing." },
+      { year: "2009", event: "Makes an early angel investment in Zendesk, his first deal, and also invests in legal software company Clio." },
+      { year: "2011", event: "Co-founds Point Nine Capital with Pawel Chudzinski and Kolja Hebenstreit in Berlin." },
+      { year: "2014", event: "Zendesk goes public, closing its first trading day up 49% from its $9 IPO price." },
+      { year: "2017", event: "Invests roughly $1 million in video tool Loom." },
+      { year: "2022", event: "Zendesk is taken private by Hellman & Friedman and Permira for $10.2 billion." },
+      { year: "2023", event: "Loom is acquired by Atlassian for $975 million." }
+    ],
+    biography: "Christoph Janz never attended university, starting out trading second-hand computers at age 12 before founding and exiting several companies including DealPilot and PageFlakes. He made his first-ever angel check into Zendesk, a bet that would eventually see the company go public in 2014 and later get taken private in a $10.2 billion deal led by Hellman & Friedman and Permira in 2022. He co-founded Point Nine Capital with Pawel Chudzinski in 2011, building one of Europe's most focused B2B SaaS specialist funds, and his instinct for early conviction repeated itself in 2017 when he put roughly $1 million into video recording tool Loom - a bet Atlassian validated by acquiring the company for $975 million in 2023. Janz remains one of Point Nine's most publicly visible voices, writing extensively about SaaS fundamentals on the firm's own essays platform.",
+    sources: [
+      { label: "Forbes Profile", url: "https://www.forbes.com/profile/christoph-janz/" },
+      { label: "Sifted", url: "https://sifted.eu/articles/brunch-with-point-nine-janz" }
+    ]
+  },
+"klaus-hommels": {
+    name: "Klaus Hommels",
+    firm: "Lakestar",
+    firmSlug: "lakestar",
+    title: "Founder & Chairman",
+    joinedYear: 2012,
+    education: ["PhD, Finance, University of Fribourg", "MBA, University of Fribourg"],
+    previousExperience: [
+      "Board Member, AOL Germany",
+      "Venture Partner, Benchmark Capital Europe",
+      "Founder, Hommels Holding"
+    ],
+    investmentFocus: ["Fintech", "Deep Tech", "Defense & Dual-Use", "Consumer Internet"],
+    notableInvestments: [
+      { name: "Spotify", ticker: "SPOT" },
+      { name: "Revolut", ticker: null },
+      { name: "Klarna", ticker: null },
+      { name: "Skype", ticker: null }
+    ],
+    boardSeats: ["Spotify"],
+    ipoCount: 1,
+    majorExits: 1,
+    careerTimeline: [
+      { year: "1995", event: "Becomes a board member of AOL Germany after starting his career at Bertelsmann." },
+      { year: "2011", event: "Skype, an early personal investment, is acquired by Microsoft for $8.5 billion." },
+      { year: "2012", event: "Founds Lakestar in Zurich, following a period running his own fund, Hommels Holding." },
+      { year: "2018", event: "Spotify, an early Lakestar-era bet, completes its direct listing." },
+      { year: "2023", event: "Named founding Chairman of the NATO Innovation Fund's Board of Directors." },
+      { year: "2025", event: "Announces Lakestar will stop raising new generalist venture funds, shifting to invest primarily from personal capital." }
+    ],
+    biography: "Klaus Hommels built his reputation on a remarkable run of early bets - Skype, Xing, King, Facebook, Spotify, and Airbnb among them - well before founding Lakestar in Zurich in 2012 following stints at AOL Germany and as a venture partner at Benchmark Capital Europe. He grew Lakestar into one of Europe's largest venture funds, raising more than €2 billion across early-stage and growth vehicles and continuing his pattern of early conviction with Revolut, Klarna, and defense-tech unicorn Helsing. In October 2025, Hommels announced a significant strategic pivot: Lakestar will no longer raise new generalist funds from outside LPs, with his future bets - including a growing focus on European defense and dual-use technology - funded primarily from his own personal capital instead. He currently chairs the NATO Innovation Fund's Geopolitical and Strategic Advisory Council and remains one of the most vocal advocates for European technological sovereignty.",
+    sources: [
+      { label: "Forbes Profile", url: "https://www.forbes.com/profile/klaus-hommels/" },
+      { label: "Forbes - Lakestar Pivot", url: "https://www.forbes.com/sites/iainmartin/2025/10/23/europe-venture-fund-lakestar-calls-halt-on-new-startup-bets/" }
+    ]
+  },
+"eric-acher": {
+    name: "Eric Acher",
+    firm: "monashees",
+    firmSlug: "monashees",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2005,
+    education: ["BA, Communications, ESPM", "Diploma, Business Administration, Fundação Getulio Vargas", "MBA, Kellogg School of Management, Northwestern University"],
+    previousExperience: [
+      "Strategy Consultant, McKinsey & Company",
+      "VC & PE Investor, General Atlantic (US & Latin America)"
+    ],
+    investmentFocus: ["Fintech", "Marketplaces", "Logistics", "Edtech", "Latin America"],
+    notableInvestments: [
+      { name: "99", ticker: null },
+      { name: "Rappi", ticker: null },
+      { name: "Elo7", ticker: null },
+      { name: "Loft", ticker: null }
+    ],
+    boardSeats: ["Fazenda Futuro", "Nomad", "Jusbrasil", "Conta Azul", "MindLab"],
+    ipoCount: 0,
+    majorExits: 1,
+    careerTimeline: [
+      { year: "1999", event: "Joins General Atlantic, doing VC and PE investing across the US and Latin America - his self-described 'investment school.'" },
+      { year: "2005", event: "Co-founds monashees with Fabio Igel in São Paulo, starting with a $12 million fund at a time when almost no early-stage VC industry existed in Brazil." },
+      { year: "2018", event: "99, a portfolio company, is acquired by Didi Chuxing for roughly $1 billion." },
+      { year: "2021", event: "Reports monashees has raised 10 funds totaling $1.5 billion, backing 125 companies including 9 unicorns." }
+    ],
+    biography: "Eric Acher co-founded monashees in 2005 during what he calls Brazil's 'tech winter' - a period when essentially no local early-stage venture capital industry existed - after cutting his teeth in strategy consulting at McKinsey and growth investing at General Atlantic across the US and Latin America. He started with just a $12 million fund and no real playbook to follow, building both monashees and much of the broader Latin American VC ecosystem from scratch alongside a handful of other early players. Two decades later, the firm has raised 10 funds totaling $1.5 billion, backed 125 companies including nine unicorns - Rappi, 99, Loggi, MadeiraMadeira, and Loft among them - and Acher has become one of the most recognized voices in Latin American venture capital, frequently drawing comparisons between the region's tech ecosystem and Southeast Asia's.",
+    sources: [
+      { label: "LAVCA - Eric Acher", url: "https://www.lavca.org/team-member/eric-acher/" },
+      { label: "Insignia Business Review", url: "https://review.insignia.vc/2021/07/13/parallels-and-synergies-between-latin-america-and-southeast-asia-from-eric-acher-founding-managing-partner-of-monashees-brazils-first-venture-capital-firm/" }
+    ]
+  },
+"willson-cuaca": {
+    name: "Willson Cuaca",
+    firm: "East Ventures",
+    firmSlug: "east-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2009,
+    education: ["Universitas Bina Nusantara (Binus)"],
+    previousExperience: [
+      "First Cisco Certified Instructor in Indonesia",
+      "Sales & Support, Singapore security firm",
+      "Founder, mobile startup (iPhone & Blackberry apps, 2008)",
+      "Founder, SCOOP (Indonesia's largest digital newsstand)"
+    ],
+    investmentFocus: ["Consumer Internet", "Fintech", "Marketplaces", "Southeast Asia & Indonesia"],
+    notableInvestments: [
+      { name: "Tokopedia", ticker: "GOTO.JK" },
+      { name: "Fore Coffee", ticker: "FORE.JK" },
+      { name: "Traveloka", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 2,
+    majorExits: 3,
+    careerTimeline: [
+      { year: "1997", event: "Begins teaching computer and networking courses during his first year of university." },
+      { year: "1999", event: "Becomes the first Cisco Certified Instructor in Indonesia." },
+      { year: "2008", event: "Founds a mobile startup building iPhone and Blackberry apps, after founding and selling SCOOP, Indonesia's largest digital newsstand." },
+      { year: "2009", event: "Co-founds East Ventures with Batara Eto and Taiga Matsuyama, one of the first venture capital firms in Indonesia." },
+      { year: "2022", event: "Tokopedia, East Ventures' most famous early bet, merges with Gojek and goes public as GoTo on the Indonesia Stock Exchange." }
+    ],
+    biography: "Willson Cuaca's path into venture capital ran through hands-on technology work, not finance - a computer science background that made him Indonesia's first Cisco Certified Instructor before he founded and sold SCOOP, the country's largest digital newsstand, and built an early iPhone and Blackberry app startup. He co-founded East Ventures in 2009 with Batara Eto and Taiga Matsuyama, at a time when, in his own words, 'no one believed in Indonesia's consumer internet potential.' That early conviction produced the region's clearest proof point: East Ventures was the seed investor in Tokopedia, which later merged with Gojek to form GoTo and complete one of Indonesia's largest-ever IPOs in 2022. Cuaca has since built East Ventures into a multi-asset platform spanning seed through growth across more than 300 portfolio companies, and has been named the Most Active Investor in Southeast Asia and Indonesia multiple times by CB Insights and Crunchbase.",
+    sources: [
+      { label: "East Ventures - Willson Cuaca", url: "https://east.vc/team/willson-cuaca" },
+      { label: "Asia Tech Daily", url: "https://asiatechdaily.com/willson-cuaca-east-ventures/" }
+    ]
+  },
+"philippe-collombel": {
+    name: "Philippe Collombel",
+    firm: "Partech",
+    firmSlug: "partech",
+    title: "Founding & General Partner",
+    joinedYear: 2008,
+    education: ["Master in Science, CentraleSupélec", "MBA, HEC Paris"],
+    previousExperience: [
+      "Electrical Engineer, Cegelec (Nuclear Energy division)",
+      "Investor, Finovelec (led two IPOs: WonderWare and Lannet)",
+      "Founder, Genèse Investissement (France's first seed fund)"
+    ],
+    investmentFocus: ["Fintech", "Deep Tech", "Enterprise Software", "Africa & Europe Scaling"],
+    notableInvestments: [],
+    boardSeats: [],
+    ipoCount: 2,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "1996", event: "Jean-Marc Patouillaud establishes Partech's European office in Paris." },
+      { year: "2000s", event: "Starts Genèse Investissement, France's first seed fund, after leading two IPOs at Finovelec." },
+      { year: "2008", event: "Joins Jean-Marc Patouillaud to complete a management buyout of Partech, making the firm independent." },
+      { year: "2026", event: "Continues to drive investment strategy as Partech manages approximately €2.5 billion across 220-plus companies in 40 countries." }
+    ],
+    biography: "Philippe Collombel began his career as an electrical engineer in the nuclear energy division of Cegelec before moving into venture capital at Finovelec, where he led two landmark IPOs - WonderWare and Lannet. He then started Genèse Investissement, France's first dedicated seed fund, before joining Jean-Marc Patouillaud at Partech to lead a 2008 management buyout that took the firm independent from its original bank ownership. Since then, Collombel has helped transform Partech from a single-region European operation into a genuinely global platform spanning San Francisco, Paris, Berlin, Dakar, Dubai, and Nairobi, and continues to drive the firm's investment strategy as Founding and General Partner, with a particular focus on scaling promising companies across Europe and Africa.",
+    sources: [
+      { label: "Equilar ExecAtlas", url: "https://people.equilar.com/bio/org/partech-partners/4209443" },
+      { label: "EU Tech Future", url: "https://eutechfuture.com/venture-capital/partech-partners-a-deep-dive-into-the-global-tech-investment-powerhouse/" }
+    ]
   }
 });
