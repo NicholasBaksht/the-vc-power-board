@@ -7242,5 +7242,440 @@ sources: [
       { label: "Equilar ExecAtlas", url: "https://people.equilar.com/bio/org/partech-partners/4209443" },
       { label: "EU Tech Future", url: "https://eutechfuture.com/venture-capital/partech-partners-a-deep-dive-into-the-global-tech-investment-powerhouse/" }
     ]
+  },
+"maurizio-caio": {
+    name: "Maurizio Caio",
+    firm: "TLcom Capital",
+    firmSlug: "tlcom-capital",
+    title: "Founder & Managing Partner",
+    joinedYear: 1999,
+    education: ["Laurea (summa cum laude), Business Administration, Bocconi University & New York University", "MBA, Stanford Graduate School of Business"],
+    previousExperience: [
+      "Director, Bain & Company (led EMEA Telecom & Technology practice)",
+      "McKinsey & Company (technology & growth strategy, Europe)"
+    ],
+    investmentFocus: ["Fintech", "Agritech", "Edtech", "Sub-Saharan Africa"],
+    notableInvestments: [
+      { name: "Andela", ticker: null },
+      { name: "Twiga Foods", ticker: null },
+      { name: "Pula", ticker: null }
+    ],
+    boardSeats: ["Twiga Foods", "Pula", "Shara", "Ajua", "Littlefish"],
+    ipoCount: 0,
+    majorExits: 2,
+    careerTimeline: [
+      { year: "1999", event: "Founds TLcom Capital after 15 years advising telecom and technology CEOs at Bain & Company and McKinsey." },
+      { year: "2017", event: "Launches the TIDE Africa Fund with $71 million, backing Andela, Twiga Foods, and Kobo360." },
+      { year: "2021", event: "Andela, one of TLcom's earliest African bets, reaches a $1.5 billion valuation, becoming the continent's only non-fintech unicorn at the time." },
+      { year: "2023", event: "Nears the final close of a second fund targeting $150 million." }
+    ],
+    biography: "Maurizio Caio spent 15 years advising CEOs of European and Silicon Valley telecommunications companies at Bain & Company and McKinsey before founding TLcom Capital in 1999, betting early that technology entrepreneurs would prove critical to transforming both established and emerging industries. That conviction eventually crystallized into one of the longest-running Africa-focused technology venture platforms, anchored by the 2017 launch of the TIDE Africa Fund. Caio was an early backer of Andela three years before it became one of Africa's few non-fintech unicorns, and he now represents TLcom on the boards of Twiga Foods, Pula, Shara, Ajua, and Littlefish. He co-chairs the venture capital committee at the Africa Venture Capital Association, teaches business strategy at universities across the continent, and remains one of the most publicly outspoken voices arguing that African tech needs to shift its focus from headline valuations toward real, realized returns.",
+    sources: [
+      { label: "TLcom Capital - Maurizio Caio", url: "https://tlcomcapital.com/maurizio-caio" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2021/11/10/tlcom-capital-managing-partner-maurizio-caio-on-african-unicorns-valuations-and-exits" }
+    ]
+  },
+"yoav-leitersdorf": {
+    name: "Yoav Leitersdorf",
+    firm: "YL Ventures",
+    firmSlug: "yl-ventures",
+    title: "Founder & Managing Partner",
+    joinedYear: 2007,
+    education: [],
+    previousExperience: [
+      "Founder, Managing Director & CEO, Movoto"
+    ],
+    investmentFocus: ["Cybersecurity", "AI Security"],
+    notableInvestments: [
+      { name: "Twistlock", ticker: null },
+      { name: "Orca Security", ticker: null },
+      { name: "Cybereason", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 5,
+    careerTimeline: [
+      { year: "2007", event: "Founds YL Ventures to help seed-stage Israeli entrepreneurs build global companies." },
+      { year: "2019", event: "Twistlock, a portfolio company, is acquired by Palo Alto Networks for $410 million." },
+      { year: "2022", event: "Closes Fund V at $400 million, the largest seed fund ever raised for cybersecurity." },
+      { year: "2025", event: "Reports total funds under management reaching $800 million." }
+    ],
+    biography: "Yoav Leitersdorf founded YL Ventures in 2007 with a singular, narrow mission: help brilliant seed-stage Israeli entrepreneurs transform their ideas into global companies, before eventually focusing the firm exclusively on cybersecurity. That specialization, paired with a dual Tel Aviv-and-US presence and a network of more than 100 CISOs who advise on deals in exchange for carried interest, has given YL what Leitersdorf calls 'first dibs at every seed deal coming out of Israel.' The firm's track record includes Twistlock, acquired by Palo Alto Networks for $410 million, and Orca Security, one of the category's fastest-growing unicorns, and Leitersdorf closed Fund V at $400 million in 2022 - the largest seed fund ever raised specifically for cybersecurity - pushing the firm's total funds under management to $800 million.",
+    sources: [
+      { label: "YL Ventures - Yoav Leitersdorf", url: "https://www.ylventures.com/people/yoav-andrew-leitersdorf/" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2022/05/11/investors-reward-yl-ventures-for-selling-certain-stakes-when-the-market-was-still-bubbly/" }
+    ]
+  },
+"joshua-posamentier": {
+    name: "Joshua Posamentier",
+    firm: "Congruent Ventures",
+    firmSlug: "congruent-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2017,
+    education: ["BA, Physics, UC Berkeley", "MBA, Columbia Business School", "MBA, UC Berkeley Haas School of Business"],
+    previousExperience: [
+      "Semiconductor & Wireless Chip Engineer, Intel",
+      "Semiconductor Engineer, National Semiconductor",
+      "Semiconductor Engineer, Texas Instruments",
+      "Partner, Prelude Ventures"
+    ],
+    investmentFocus: ["Climate Hardware", "Energy Transition", "Deep Tech"],
+    notableInvestments: [
+      { name: "AMP Robotics", ticker: null },
+      { name: "Fervo Energy", ticker: null },
+      { name: "Parallel Systems", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2000s", event: "Builds semiconductors and wireless chips as an engineer at Intel, National Semiconductor, and Texas Instruments, earning more than 50 patents." },
+      { year: "2010s", event: "Moves into climate-focused venture investing as a Partner at Prelude Ventures." },
+      { year: "2017", event: "Co-founds Congruent Ventures with Abe Yokell." },
+      { year: "2021", event: "Closes a $175 million second fund, after originally targeting $125 million." },
+      { year: "2023", event: "Closes a Continuity Fund exceeding $300 million, pushing total AUM past $700 million." }
+    ],
+    biography: "Joshua Posamentier brings a genuinely rare engineering depth to climate investing: a physics degree from UC Berkeley, dual MBAs from Columbia and Berkeley Haas, and years spent building semiconductors and wireless chips at Intel, National Semiconductor, and Texas Instruments, earning more than 50 patents along the way. That hardware background, honed further at climate-focused Prelude Ventures, shapes his specific investing lens at Congruent Ventures, which he co-founded with Abe Yokell in 2017: he focuses on real engineering risk in climate hardware rather than subsidy-dependent business models, evaluating complex physical systems most software-only investors can't meaningfully assess. Congruent has since grown into one of the largest early-stage climate portfolios in venture capital, with more than $1 billion raised across multiple funds and backing from CalSTRS, the Grantham Foundation, and other major institutional climate investors.",
+    sources: [
+      { label: "VC Sheet", url: "https://www.vcsheet.com/who/joshua-posamentier" },
+      { label: "Congruent Ventures Team", url: "https://www.congruentvc.com/team" }
+    ]
+  },
+"marcos-toledo": {
+    name: "Marcos Toledo",
+    firm: "Canary",
+    firmSlug: "canary",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2016,
+    education: [],
+    previousExperience: [],
+    investmentFocus: ["Fintech", "Enterprise Software", "Consumer", "Latin America"],
+    notableInvestments: [
+      { name: "Méliuz", ticker: "CASH3.SA" },
+      { name: "99", ticker: null },
+      { name: "Clara", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 1,
+    majorExits: 11,
+    careerTimeline: [
+      { year: "2016", event: "Co-founds Canary in São Paulo, backing early-stage Brazilian founders." },
+      { year: "2021", event: "Announces a new $100 million Fund III for Latin American startups." },
+      { year: "2024", event: "Reports a founder Net Promoter Score of 94 across the firm's portfolio." }
+    ],
+    biography: "Marcos Toledo co-founded Canary in São Paulo in 2016, building it into one of the most active early-stage investors in Latin America - the firm says it sees more than 90% of venture opportunities across the region and has analyzed more than 6,000 companies to date, investing in over 30% of those that later raised a Series A in Brazil. Under his leadership, Canary has backed 135-plus companies including three unicorns, one IPO, and 11 acquisitions, with Méliuz's public listing and continued involvement in 99 and Clara among its clearest proof points. Toledo has consistently framed Canary's role as more than capital - the firm positions itself as a genuine 'co-founder' to its portfolio companies, providing hands-on support across hiring, technology, business development, and fundraising.",
+    sources: [
+      { label: "LatamList", url: "https://latamlist.com/canary-vc-announces-new-100m-venture-fund/" },
+      { label: "Canary", url: "https://www.canary.com.br" }
+    ]
+  },
+"amit-anand": {
+    name: "Amit Anand",
+    firm: "Jungle Ventures",
+    firmSlug: "jungle-ventures",
+    title: "Founding Partner & Managing Director",
+    joinedYear: 2012,
+    education: [],
+    previousExperience: [
+      "Sales & Business Development, Progress Software (NASDAQ-listed)",
+      "Executive roles, Elipva (STT Communications-backed, acquired by Hong Kong-listed company)",
+      "Tata Infotech (acquired by TCS for approximately $259 million)",
+      "Founder, Ettamina Studios (Singapore-India animation studio)"
+    ],
+    investmentFocus: ["SaaS", "B2B", "Consumer Tech", "Fintech", "India & Southeast Asia"],
+    notableInvestments: [
+      { name: "Livspace", ticker: null },
+      { name: "Kredivo", ticker: null },
+      { name: "Moglix", ticker: null },
+      { name: "Builder.ai", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 3,
+    careerTimeline: [
+      { year: "2006", event: "Founds Ettamina Studios, a Singapore-India animation studio, after earlier executive roles at Progress Software, Elipva, and Tata Infotech." },
+      { year: "2012", event: "Co-founds Jungle Ventures with Anurag Srivastava, launching with a $10 million debut fund." },
+      { year: "2015", event: "Leads the exit of portfolio company Zipdial to Twitter." },
+      { year: "2020", event: "Leads the exit of portfolio company TradeGecko to Intuit." },
+      { year: "2022", event: "Jungle Ventures crosses $1 billion in assets under management, the first independent Singapore-headquartered firm investing across Southeast Asia and India to do so." }
+    ],
+    biography: "Amit Anand has spent 25 years as a pioneer of South and Southeast Asia's venture capital industry, starting in sales and business development at Progress Software before founding Ettamina Studios, a Singapore-India animation studio, in 2006. He co-founded Jungle Ventures in 2012 with a modest $10 million debut fund, growing the firm's assets under management 100-fold over the following decade into the first independent Singapore-headquartered venture firm investing across Southeast Asia and India to cross $1 billion. Anand has personally sourced and mentored the firm's first four unicorns - Moglix, Kredivo, Livspace, and Builder.ai - and led earlier exits including Zipdial's sale to Twitter and TradeGecko's acquisition by Intuit. A Kauffman Fellow and former Vice Chairman of the Business Angels Network of Southeast Asia, he now sits on Singapore's Government Advisory Council on the Ethical Use of Artificial Intelligence and Data.",
+    sources: [
+      { label: "Jungle Ventures - Amit Anand", url: "https://www.jungle.vc/team/amit-anand" },
+      { label: "Forbes Asia", url: "https://www.forbes.com/sites/ardianwibisono/2024/12/04/singapore-based-vc-firm-jungle-ventures-is-on-the-prowl-to-tap-new-frontiers/" }
+    ]
+  },
+"gili-raanan": {
+    name: "Gili Raanan",
+    firm: "Cyberstarts",
+    firmSlug: "cyberstarts",
+    title: "Founder",
+    joinedYear: 2018,
+    education: [],
+    previousExperience: [
+      "10 years, Israeli Defense Forces Unit 8200 (Presidential Medal & Innovation Award)",
+      "Founder, Sanctum (creator of the first web application firewall, AppShield)",
+      "Founder, nLayers (acquired by EMC)",
+      "VP of Strategy, EMC",
+      "General Partner, Sequoia Capital (nearly 9 years, led Israel investing)"
+    ],
+    investmentFocus: ["Cybersecurity", "Cloud Security", "AI Security"],
+    notableInvestments: [
+      { name: "Wiz", ticker: null },
+      { name: "Armis", ticker: null },
+      { name: "Fireblocks", ticker: null },
+      { name: "Cyera", ticker: null }
+    ],
+    boardSeats: ["Wiz", "Adallom", "Armis"],
+    ipoCount: 0,
+    majorExits: 6,
+    careerTimeline: [
+      { year: "1997", event: "Founds Sanctum, creator of the first web application firewall, AppShield." },
+      { year: "2009", event: "Joins Sequoia Capital as a General Partner, leading its cybersecurity, internet, and mobile investing in Israel." },
+      { year: "2018", event: "Leaves Sequoia after nearly nine years to found Cyberstarts." },
+      { year: "2020", event: "Leads a $6 million seed round in Wiz, partnering with the company on day one." },
+      { year: "2026", event: "Google completes its $32 billion acquisition of Wiz in March, the largest-ever buyout of a venture-backed startup." }
+    ],
+    biography: "Gili Raanan's cybersecurity career began inside Israel's elite Unit 8200 intelligence corps, where he served for a decade and won both the IDF Innovation Award and the Israel Defense Presidential Prize. He founded two security companies - Sanctum, creator of the first web application firewall, and nLayers, later acquired by EMC - before spending nearly nine years as a General Partner at Sequoia Capital leading its Israeli cybersecurity investing, including the earliest bet on Adallom, the company Wiz's founders had built before Wiz itself. He left Sequoia in 2018 to found Cyberstarts, and led Wiz's $6 million seed round in 2020, partnering with the company from day one. That bet became the largest venture-backed exit in history when Google completed its $32 billion acquisition of Wiz in March 2026. Raanan is also widely credited as the inventor of CAPTCHA and holds more than 10 U.S. patents in cybersecurity and application management.",
+    sources: [
+      { label: "Cyberstarts - Gili Raanan", url: "https://www.cyberstarts.com/team/gili-raanan" },
+      { label: "Wikipedia - Gili Raanan", url: "https://en.wikipedia.org/wiki/Gili_Raanan" },
+      { label: "Forbes Profile", url: "https://www.forbes.com/profile/gili-raanan/" }
+    ]
+  },
+"chemi-peres": {
+    name: "Chemi Peres",
+    firm: "Pitango Venture Capital",
+    firmSlug: "pitango-venture-capital",
+    title: "Co-Founder & Managing General Partner",
+    joinedYear: 1996,
+    education: ["BSc, Tel Aviv University"],
+    previousExperience: [
+      "Israeli Air Force Pilot",
+      "Advisor, Israel Aerospace Industries (IAI Lavi project)",
+      "Business Development, Decision Systems Israel (DSIT)",
+      "Co-Founder, MOFET Israel Technology Fund (1992)"
+    ],
+    investmentFocus: ["Digital Health", "Deep Tech", "Fintech", "Mobility"],
+    notableInvestments: [
+      { name: "Via Transportation", ticker: null },
+      { name: "Taboola", ticker: "TBLA" },
+      { name: "CyberMDX", ticker: null }
+    ],
+    boardSeats: ["Via Transportation", "Taboola", "Radwin", "Venn.city", "Duda"],
+    ipoCount: 1,
+    majorExits: 1,
+    careerTimeline: [
+      { year: "1992", event: "Co-founds the MOFET Israel Technology Fund, one of the first venture funds listed on the Tel Aviv Stock Exchange." },
+      { year: "1996", event: "Joins Rami Kalish at Polaris Venture Capital, forming Polaris Fund II at more than $100 million." },
+      { year: "2001", event: "Polaris rebrands as Pitango Venture Capital." },
+      { year: "2022", event: "Portfolio company CyberMDX is acquired by ForeScout Technologies in February." }
+    ],
+    biography: "Chemi Peres, son of former Israeli President Shimon Peres, built his path to venture capital through the Israeli Air Force and Israel Aerospace Industries before co-founding the MOFET Israel Technology Fund in 1992 - one of the first venture funds listed on the Tel Aviv Stock Exchange. He joined Rami Kalish's Polaris Venture Capital in 1996, and the firm rebranded as Pitango in 2001, growing under his leadership as Managing General Partner into Israel's largest and longest-standing venture capital firm, with more than $3 billion under management across 13 funds and over 250 companies backed. Peres has been especially active in Pitango's health-tech practice and serves on the boards of Via Transportation, Taboola, Radwin, and several other portfolio companies, while also chairing the Peres Center for Peace and Innovation.",
+    sources: [
+      { label: "Wikipedia - Chemi Peres", url: "https://en.wikipedia.org/wiki/Chemi_Peres" },
+      { label: "Pitango Venture Capital", url: "https://www.pitango.com" }
+    ]
+  },
+"erel-margalit": {
+    name: "Erel Margalit",
+    firm: "Jerusalem Venture Partners",
+    firmSlug: "jerusalem-venture-partners",
+    title: "Founder & Executive Chairman",
+    joinedYear: 1993,
+    education: ["PhD"],
+    previousExperience: [
+      "Director, Jerusalem Development Authority",
+      "Member of Knesset, Israeli Parliament (2013-2018, Finance & Science and Technology Committees)"
+    ],
+    investmentFocus: ["Cybersecurity", "Vertical AI", "Enterprise Software", "Fintech", "Insurtech"],
+    notableInvestments: [
+      { name: "CyberArk", ticker: "CYBR" },
+      { name: "QlikTech", ticker: "QLIK" },
+      { name: "Cogent Communications", ticker: "CCOI" }
+    ],
+    boardSeats: ["Earnix (Chairman)", "ControlUp (Chairman)", "ThetaRay (Chairman)"],
+    ipoCount: 3,
+    majorExits: 4,
+    careerTimeline: [
+      { year: "1993", event: "Founds Jerusalem Venture Partners, initially operating one of Israel's first government-backed incubators." },
+      { year: "1994", event: "Leads JVP's Series A investment in CyberArk." },
+      { year: "2000", event: "Orchestrates Chromatis Networks' $4.8 billion sale to Lucent Technologies, then the largest sale of an Israeli company." },
+      { year: "2013", event: "Elected to the Knesset, taking a five-year break from active VC leadership." },
+      { year: "2014", event: "CyberArk goes public on the Nasdaq, with JVP holding roughly 47% ownership after a Goldman Sachs-backed secondary transaction." },
+      { year: "2025", event: "CyberArk agrees to a $25 billion acquisition by Palo Alto Networks, announced in July." }
+    ],
+    biography: "Erel Margalit is widely credited as one of the architects of Israel's 'Startup Nation,' founding Jerusalem Venture Partners in 1993 after directing the Jerusalem Development Authority. He led JVP's Series A investment in CyberArk and later increased the firm's stake to roughly 47% through a secondary transaction with Goldman Sachs, positioning the identity security company for its 2014 Nasdaq IPO and, three decades later, a $25 billion acquisition by Palo Alto Networks. Margalit also orchestrated the $4.8 billion sale of Chromatis Networks to Lucent Technologies in 2000, then the largest Israeli tech exit on record, alongside public listings for QlikTech and Cogent Communications. He served in Israel's Knesset from 2013 to 2018 before returning to lead JVP full-time, and was recognized on the Forbes Midas List as, in the words of an Israeli business paper, 'the first venture capitalist with the golden touch.'",
+    sources: [
+      { label: "Wikipedia - Erel Margalit", url: "https://en.wikipedia.org/wiki/Erel_Margalit" },
+      { label: "JVP - Erel Margalit", url: "https://jvpvc.com/jvp_team/erel-n-margalit-4/" }
+    ]
+  },
+"kola-aina": {
+    name: "Kola Aina",
+    firm: "Ventures Platform",
+    firmSlug: "ventures-platform",
+    title: "Founding Partner",
+    joinedYear: 2016,
+    education: ["BSc, Electronics Engineering Technology, Savannah State University", "MBA, Bowling Green State University"],
+    previousExperience: [
+      "Founder, Emerging Platforms (edtech, enterprise & security products)",
+      "Angel Investor, early backer of Moniepoint"
+    ],
+    investmentFocus: ["Fintech", "Healthtech", "Agritech", "Edtech", "AI"],
+    notableInvestments: [
+      { name: "Paystack", ticker: null },
+      { name: "PiggyVest", ticker: null },
+      { name: "Moniepoint", ticker: null },
+      { name: "Tizeti", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 1,
+    careerTimeline: [
+      { year: "2016", event: "Founds Ventures Platform in Abuja in June, after early angel investing in Nigeria's tech ecosystem." },
+      { year: "2020", event: "Paystack, one of Ventures Platform's earliest bets, is acquired by Stripe for approximately $200 million." },
+      { year: "2025", event: "Closes $64 million for Fund II in November, with participation from the IFC, British International Investment, and Nigeria's government-backed iDICE program." }
+    ],
+    biography: "Kola Aina was already an active angel investor in Nigeria's tech ecosystem, backing companies like Moniepoint early, before formalizing his investment activity by founding Ventures Platform in Abuja in 2016. His firm became one of Africa's most active early-stage funds by taking a deliberately contrarian geographic approach - building from Abuja rather than the more crowded Lagos VC scene, and extending into Francophone West African markets that most Anglophone-focused firms overlook. Ventures Platform's clearest proof point came early: it backed Paystack before Stripe acquired the Nigerian payments company for approximately $200 million in 2020, and the firm has since backed more than 90 startups including PiggyVest, Moniepoint, Tizeti, and Thrive Agric. Aina serves on Nigeria's Presidential Committee for Job Creation and Youth Employment and chairs the board of Ventures Park, an innovation campus in Abuja.",
+    sources: [
+      { label: "TechCabal - Kola Aina", url: "https://techcabal.com/2025/09/01/kola-aina/" },
+      { label: "Ventures Platform", url: "https://www.venturesplatform.com" }
+    ]
+  },
+"eghosa-omoigui": {
+    name: "Eghosa Omoigui",
+    firm: "EchoVC Partners",
+    firmSlug: "echovc-partners",
+    title: "Founder & Managing General Partner",
+    joinedYear: 2011,
+    education: ["JD, University of Nigeria & University of Pennsylvania Law School", "MBA, Olin Graduate School of Business, Babson College"],
+    previousExperience: [
+      "Chief of Staff, Intel Treasury (helped oversee an $18B cash platform)",
+      "Chief of Staff to the President, Intel Capital",
+      "Director, Strategic Investments, Consumer Internet & Semantic Technologies, Intel Capital (~10 years total at Intel)"
+    ],
+    investmentFocus: ["Fintech", "Health Services", "Commerce", "Energy", "Sustainable Mobility"],
+    notableInvestments: [
+      { name: "Lori Systems", ticker: null },
+      { name: "Hotels.ng", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2000s", event: "Spends nearly a decade at Intel, rising to Director of Strategic Investments at Intel Capital, sourcing early bets on AdMob, Facebook, LinkedIn, and Pandora." },
+      { year: "2011", event: "Founds EchoVC Partners in Lagos." },
+      { year: "2019", event: "Participates in Lori Systems' $30 million Series A alongside Timon Capital and other investors." },
+      { year: "2020s", event: "Launches EchoVC+, an early-growth-stage vehicle built in partnership with TPG Growth and the TPG Rise Fund." }
+    ],
+    biography: "Eghosa Omoigui spent nearly a decade at Intel, rising to Director of Strategic Investments at Intel Capital, where he sourced and developed the investment thesis behind early bets on AdMob, Facebook, LinkedIn, Pandora, and several other companies that became category leaders. He founded EchoVC Partners in Lagos in 2011, built explicitly around backing underrepresented founders and underserved markets - an intentional continuation of the platform-agnostic, geographically expansive sourcing instinct he'd developed inside Intel Capital. That approach has taken EchoVC's investing well beyond Africa into Southeast Asia and Latin America, and the firm has since built a dedicated growth-stage vehicle, EchoVC+, in partnership with TPG Growth and the TPG Rise Fund. Omoigui holds law degrees from the University of Nigeria and the University of Pennsylvania alongside an MBA from Babson College's Olin Graduate School of Business.",
+    sources: [
+      { label: "EchoVC Partners Team", url: "https://www.echovc.com/team" },
+      { label: "Wharton FinTech", url: "https://medium.com/wharton-fintech/spotlight-on-the-african-fintech-ecosystem-podcast-with-eghosa-omoigui-founder-and-managing-23d05f1d425c" }
+    ]
+  },
+"olumide-soyombo": {
+    name: "Olumide Soyombo",
+    firm: "Voltron Capital",
+    firmSlug: "voltron-capital",
+    title: "Co-Founder",
+    joinedYear: 2021,
+    education: [],
+    previousExperience: [
+      "Co-Founder, LeadPath Nigeria (2014)",
+      "Co-Founder, Bluechip Technologies",
+      "Angel Investor (30+ African startups since 2014, including Paystack, PiggyVest, TeamApt/Moniepoint)"
+    ],
+    investmentFocus: ["Fintech", "Commerce", "Pre-Seed & Seed", "Pan-African"],
+    notableInvestments: [
+      { name: "Mono", ticker: null },
+      { name: "PiggyVest", ticker: null },
+      { name: "TeamApt (Moniepoint)", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 1,
+    careerTimeline: [
+      { year: "2014", event: "Co-founds LeadPath Nigeria with Kazeem Tewogbade, a Y Combinator-style accelerator, and begins angel investing." },
+      { year: "2020", event: "Paystack, one of his personal angel investments, is acquired by Stripe." },
+      { year: "2021", event: "Co-founds Voltron Capital with Abe Choi in July." },
+      { year: "2022", event: "Voltron Capital launches its first fund, ultimately investing in 53 startups." }
+    ],
+    biography: "Olumide Soyombo began angel investing in 2014 after co-founding LeadPath Nigeria, a Y Combinator-style accelerator, when he discovered there were no real investors to pitch the startups he was mentoring to. Over the following years he built one of the most recognized personal angel portfolios in African tech, backing more than 30 startups including Mono, PiggyVest, TeamApt (now Moniepoint), and Paystack before Stripe acquired it. He co-founded Voltron Capital with U.S.-based investor Abe Choi in 2021, built specifically to formalize that individual track record into an institutional fund addressing what he's called a severe lack of access to early-stage capital for African founders. Voltron's $20,000-to-$100,000 check sizes target pre-seed and seed startups across Nigeria, Kenya, South Africa, and North Africa, and the firm invested in 53 companies through its first fund alone.",
+    sources: [
+      { label: "Wikipedia - Olumide Soyombo", url: "https://en.wikipedia.org/wiki/Olumide_Soyombo" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2021/07/26/one-of-nigerias-high-profile-angel-investors-is-launching-a-fund-for-african-startups/" }
+    ]
+  },
+"niklas-adalberth": {
+    name: "Niklas Adalberth",
+    firm: "Norrsken22",
+    firmSlug: "norrsken22",
+    title: "Co-Founder",
+    joinedYear: 2022,
+    education: [],
+    previousExperience: [
+      "Co-Founder, Klarna (2005)",
+      "Founder, Norrsken Foundation"
+    ],
+    investmentFocus: ["Fintech", "Edtech", "Healthtech", "Market-Enabling Solutions"],
+    notableInvestments: [
+      { name: "TymeBank", ticker: null },
+      { name: "Autochek", ticker: null },
+      { name: "Smile Identity", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2005", event: "Co-founds Klarna, which grows into one of Europe's largest online payment companies." },
+      { year: "2016", event: "Founds the Norrsken Foundation, building Norrsken House co-working hubs for impact entrepreneurs." },
+      { year: "2022", event: "Co-founds Norrsken22 with Hans Otterling in January, based in Kigali, Rwanda." },
+      { year: "2023", event: "Closes Norrsken22's debut African Tech Growth Fund at $205 million in November, above its $200 million target." }
+    ],
+    biography: "Niklas Adalberth co-founded Klarna in 2005 and helped build it into one of Europe's largest online payment companies before turning to impact-focused venture building through the Norrsken Foundation, which he founded in 2016 and which now runs Norrsken House co-working hubs in Stockholm and Kigali for impact entrepreneurs. He co-founded Norrsken22 in January 2022 with Hans Otterling, a partner at Northzone, to address a specific gap he'd identified in African venture capital: an abundance of pre-seed and seed capital but a real shortage of growth-stage funding for companies ready to scale. The fund's $205 million debut close in November 2023 was backed by more than 30 unicorn founders, including Flutterwave's Olugbenga Agboola and Skype's Niklas Zennström, and Norrsken22 has since backed TymeBank, Sabi, Smile Identity, Autochek, and Shara - all still-private growth-stage African companies.",
+    sources: [
+      { label: "TechCrunch", url: "https://techcrunch.com/2023/11/02/norrsken22s-debut-fund-closes-at-205m-to-back-growth-stage-startups-in-africa/" },
+      { label: "Norrsken22", url: "https://www.norrsken22.com" }
+    ]
+  },
+"dany-farha": {
+    name: "Dany Farha",
+    firm: "BECO Capital",
+    firmSlug: "beco-capital",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2012,
+    education: ["BA, Management Sciences & Finance, University College London"],
+    previousExperience: [
+      "Investment Banker, Lehman Brothers, London",
+      "Founder, business support services company (UAE, 2000-2010)",
+      "Co-Founder, Bayt.com (Arab world's largest job site)",
+      "Co-Founder, Butlers (UAE's largest commercial laundry company)",
+      "Co-Founder, Interact (catering company)",
+      "Seed Investor, GoNabit (acquired by LivingSocial, 2011)"
+    ],
+    investmentFocus: ["Fintech", "Proptech", "Consumer/Retail Tech", "AI/Software"],
+    notableInvestments: [
+      { name: "Careem", ticker: null },
+      { name: "Property Finder", ticker: null },
+      { name: "Kitopi", ticker: null }
+    ],
+    boardSeats: ["Property Finder"],
+    ipoCount: 1,
+    majorExits: 2,
+    careerTimeline: [
+      { year: "1995", event: "Returns to Dubai after working at Lehman Brothers in London, beginning a career as a serial entrepreneur." },
+      { year: "2000", event: "Builds a business support services company over the following decade, alongside co-founding Bayt.com, Butlers, and Interact." },
+      { year: "2011", event: "GoNabit, an early seed investment, is acquired by LivingSocial." },
+      { year: "2012", event: "Co-founds BECO Capital with Abdulaziz Shikh Al Sagha and Yousef Hammad in Dubai." },
+      { year: "2019", event: "Careem, one of BECO's earliest bets, is acquired by Uber for $3.1 billion." },
+      { year: "2025", event: "Closes $370 million across two new funds in September, pushing total AUM beyond $820 million." }
+    ],
+    biography: "Dany Farha built a career as a serial entrepreneur in Dubai for nearly two decades before co-founding BECO Capital - starting at Lehman Brothers in London, then returning to the UAE in 1995 to build and exit a string of companies including Bayt.com, the Arab world's largest job site, Butlers, and Interact. That founder-first background shaped BECO's identity when he co-founded it in 2012 with Abdulaziz Shikh Al Sagha and Yousef Hammad, building what became the longest-serving Dubai-based VC firm investing in the MENA digital sector. Farha personally led BECO's early backing of Careem, the ride-hailing company Uber acquired for $3.1 billion in 2019 - one of two billion-dollar-plus exits in the firm's track record, alongside Property Finder. Under his leadership BECO has grown into the largest non-government early-stage venture firm in the Gulf, managing more than $820 million across five funds spanning Pre-Seed through pre-IPO.",
+    sources: [
+      { label: "Forbes Middle East", url: "https://www.forbesmiddleeast.com/lists/the-middle-easts-top-venture-capitalists-2024/dany-farha/" },
+      { label: "Entrepreneur - The 100", url: "https://www.entrepreneur.com/en-ae/leadership/the-100-dany-farha-co-founder-and-ceo-beco-capital/484841" }
+    ]
   }
 });
