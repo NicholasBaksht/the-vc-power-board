@@ -147,7 +147,7 @@ const firms = [
   aum: "€500M+ across funds (approximate)",
   thesis: "Creandum, one of Europe's oldest technology VCs, invests early in ambitious founders building category-defining software and consumer companies across Europe and the US, with a portfolio that includes Spotify and Klarna.",
   leadership: [
-    { name: "Staffan Helgesson", role: "General Partner" }
+    { name: "Staffan Helgesson", role: "General Partner", profileSlug: "staffan-helgesson" }
   ],
   timeline: [
     { year: "2003", event: "Creandum founded in Stockholm." },
@@ -233,8 +233,8 @@ const firms = [
   aum: "$250M (2025)",
   thesis: "Golden Gate Ventures backs early-stage founders across Southeast Asia, India, and the Middle East in fintech, marketplaces, SaaS, and consumer tech, blending Silicon Valley experience with local market expertise. Founders include Vinnie Lauria and Justin Hall.",
   leadership: [
-    { name: "Vinnie Lauria", role: "Co-Founder" },
-    { name: "Justin Hall", role: "Co-Founder" }
+    { name: "Vinnie Lauria", role: "Co-Founder", profileSlug: "vinnie-lauria" },
+    { name: "Justin Hall", role: "Co-Founder", profileSlug: "justin-hall" }
   ],
   timeline: [
     { year: "2011", event: "Golden Gate Ventures founded in Singapore." }
@@ -662,8 +662,8 @@ holdings: []
   thesis: "Greenoaks makes concentrated, large initial bets in a small number of 'generation-defining' technology companies, then maintains those positions through multiple private rounds and into the public markets rather than exiting early. Founder Neil Mehta, previously at Kayne Anderson and D.E. Shaw, has built the firm around long-duration conviction rather than portfolio breadth.",
   leadership: [
     { name: "Neil Mehta", role: "Founder & Managing Partner", profileSlug: "neil-mehta" },
-    { name: "Neil Shah", role: "Partner" },
-    { name: "Patrick Backhouse", role: "Partner" },
+    { name: "Neil Shah", role: "Partner", profileSlug: "neil-shah" },
+    { name: "Patrick Backhouse", role: "Partner", profileSlug: "patrick-backhouse" },
     { name: "Ben Solarz", role: "Partner" }
   ],
   timeline: [
@@ -7179,14 +7179,8 @@ holdings: []
     aum: "Not publicly disclosed",
     thesis: "A high-frequency angel model: two to three investments a week, worldwide, on standardised one-off tickets of roughly €150,000, sector- and geography-agnostic, backing founders judged on ambition and rate of learning rather than category.",
     leadership: [
-      {
-        name: "Xavier Niel",
-        role: "Co-Founder"
-      },
-      {
-        name: "Jeremie Berrebi",
-        role: "Co-Founder"
-      }
+      { name: "Xavier Niel", role: "Co-Founder", profileSlug: "xavier-niel" },
+      { name: "Jeremie Berrebi", role: "Co-Founder", profileSlug: "jeremie-berrebi" }
     ],
     timeline: [
       {
@@ -7279,10 +7273,7 @@ holdings: []
         role: "Founder & Managing Partner",
         profileSlug: "sarah-guo"
       },
-      {
-        name: "Mike Vernal",
-        role: "General Partner"
-      }
+      { name: "Mike Vernal", role: "General Partner", profileSlug: "mike-vernal" }
     ],
     timeline: [
       {
@@ -7344,10 +7335,7 @@ holdings: []
         role: "Founder & Managing Partner",
         profileSlug: "steve-jang"
       },
-      {
-        name: "Kanyi Maqubela",
-        role: "Managing Partner"
-      }
+      { name: "Kanyi Maqubela", role: "Managing Partner", profileSlug: "kanyi-maqubela" }
     ],
     timeline: [
       {
@@ -7517,10 +7505,7 @@ holdings: []
         role: "Founder & General Partner",
         profileSlug: "barend-van-den-brande"
       },
-      {
-        name: "Firat Ileri",
-        role: "Managing Partner"
-      }
+      { name: "Firat Ileri", role: "Managing Partner", profileSlug: "firat-ileri" }
     ],
     timeline: [
       {
@@ -7640,14 +7625,8 @@ holdings: []
     aum: "Not publicly disclosed",
     thesis: "States that ambitious builders turn great ideas into great companies, and invests in founders, teams and startups that share that mindset.",
     leadership: [
-      {
-        name: "Armaan Ali",
-        role: "Co-Founder & CEO"
-      },
-      {
-        name: "Baris Akis",
-        role: "Co-Founder & President"
-      }
+      { name: "Armaan Ali", role: "Co-Founder & CEO", profileSlug: "armaan-ali" },
+      { name: "Baris Akis", role: "Co-Founder & President", profileSlug: "baris-akis" }
     ],
     timeline: [
       {
@@ -7671,14 +7650,8 @@ holdings: []
     aum: "$200M (capital raise reported 2026)",
     thesis: "Pioneered talent investing: the discovery and cultivation of exceptional people with founder potential before they have a co-founder, or even an idea. Invests in individuals first, then helps them find co-founders, form a company and raise a first round.",
     leadership: [
-      {
-        name: "Alice Bentinck",
-        role: "Co-Founder"
-      },
-      {
-        name: "Matt Clifford",
-        role: "Co-Founder"
-      }
+      { name: "Alice Bentinck", role: "Co-Founder", profileSlug: "alice-bentinck" },
+      { name: "Matt Clifford", role: "Co-Founder", profileSlug: "matt-clifford" }
     ],
     timeline: [
       {
@@ -7712,10 +7685,7 @@ holdings: []
         role: "Co-Founder",
         profileSlug: "adam-draper"
       },
-      {
-        name: "Brayton Williams",
-        role: "Co-Founder"
-      }
+      { name: "Brayton Williams", role: "Co-Founder", profileSlug: "brayton-williams" }
     ],
     timeline: [
       {
@@ -8234,18 +8204,9 @@ holdings: []
         role: "Co-Founder & General Partner",
         profileSlug: "gabriel-matuschka"
       },
-      {
-        name: "Fredrik Bergenlid",
-        role: "Co-Founder & General Partner"
-      },
-      {
-        name: "Matt Wichrowski",
-        role: "General Partner"
-      },
-      {
-        name: "Marie Brayer",
-        role: "General Partner"
-      }
+      { name: "Fredrik Bergenlid", role: "Co-Founder & General Partner", profileSlug: "fredrik-bergenlid" },
+      { name: "Matt Wichrowski", role: "General Partner", profileSlug: "matt-wichrowski" },
+      { name: "Marie Brayer", role: "General Partner", profileSlug: "marie-brayer" }
     ],
     timeline: [
       {
@@ -8331,10 +8292,7 @@ holdings: []
         role: "Co-Founder & Managing Partner",
         profileSlug: "brent-hoberman"
       },
-      {
-        name: "Spencer Crawley",
-        role: "Co-Founder & General Partner"
-      }
+      { name: "Spencer Crawley", role: "Co-Founder & General Partner", profileSlug: "spencer-crawley" }
     ],
     timeline: [
       {
@@ -8446,14 +8404,8 @@ holdings: []
         name: "Tom Drummond",
         role: "Co-Founder & Managing Director", profileSlug: "tom-drummond"
       },
-      {
-        name: "James Lindenbaum",
-        role: "Co-Founder"
-      },
-      {
-        name: "Jesse Robbins",
-        role: "General Partner"
-      }
+      { name: "James Lindenbaum", role: "Co-Founder", profileSlug: "james-lindenbaum" },
+      { name: "Jesse Robbins", role: "General Partner", profileSlug: "jesse-robbins" }
     ],
     timeline: [
       {
@@ -8729,18 +8681,9 @@ holdings: []
         name: "Anand Lunia",
         role: "Co-Founder", profileSlug: "anand-lunia"
       },
-      {
-        name: "Madhukar Sinha",
-        role: "Co-Founder"
-      },
-      {
-        name: "Gagan Goyal",
-        role: "Partner"
-      },
-      {
-        name: "Kanika Agarrwal",
-        role: "Partner"
-      }
+      { name: "Madhukar Sinha", role: "Co-Founder", profileSlug: "madhukar-sinha" },
+      { name: "Gagan Goyal", role: "Partner", profileSlug: "gagan-goyal" },
+      { name: "Kanika Agarrwal", role: "Partner", profileSlug: "kanika-agarrwal" }
     ],
     timeline: [
       {
@@ -8906,22 +8849,10 @@ holdings: []
         role: "Partner",
         profileSlug: "oliver-samwer"
       },
-      {
-        name: "Fabricio Pettena",
-        role: "Partner"
-      },
-      {
-        name: "Don Stalter",
-        role: "Partner"
-      },
-      {
-        name: "Cedric Asselman",
-        role: "Partner"
-      },
-      {
-        name: "David Sainteff",
-        role: "Partner"
-      }
+      { name: "Fabricio Pettena", role: "Partner", profileSlug: "fabricio-pettena" },
+      { name: "Don Stalter", role: "Partner", profileSlug: "don-stalter" },
+      { name: "Cedric Asselman", role: "Partner", profileSlug: "cedric-asselman" },
+      { name: "David Sainteff", role: "Partner", profileSlug: "david-sainteff" }
     ],
     timeline: [
       {
@@ -9020,10 +8951,7 @@ holdings: []
         role: "Co-Founder & Managing Partner",
         profileSlug: "dayna-grayson"
       },
-      {
-        name: "Rachel Holt",
-        role: "Co-Founder & Managing Partner"
-      }
+      { name: "Rachel Holt", role: "Co-Founder & Managing Partner", profileSlug: "rachel-holt" }
     ],
     timeline: [
       {
@@ -9054,10 +8982,7 @@ holdings: []
         role: "Co-Founder",
         profileSlug: "fabrice-grinda"
       },
-      {
-        name: "Jose Marin",
-        role: "Co-Founder"
-      }
+      { name: "Jose Marin", role: "Co-Founder", profileSlug: "jose-marin" }
     ],
     timeline: [
       {
@@ -9092,10 +9017,7 @@ holdings: []
         role: "Founder & Managing Partner",
         profileSlug: "alexa-von-tobel"
       },
-      {
-        name: "Penny Pritzker",
-        role: "Co-Founder"
-      }
+      { name: "Penny Pritzker", role: "Co-Founder", profileSlug: "penny-pritzker" }
     ],
     timeline: [
       {
@@ -9212,10 +9134,7 @@ holdings: []
         role: "Managing Director & Co-Founder",
         profileSlug: "david-coats"
       },
-      {
-        name: "Trevor Kienzle",
-        role: "Managing Director & Co-Founder"
-      }
+      { name: "Trevor Kienzle", role: "Managing Director & Co-Founder", profileSlug: "trevor-kienzle" }
     ],
     timeline: [
       {
@@ -9262,10 +9181,7 @@ holdings: []
         name: "Varun Gupta",
         role: "Partner"
       },
-      {
-        name: "Matthew Volosin",
-        role: "Partner"
-      }
+      { name: "Matthew Volosin", role: "Partner", profileSlug: "matthew-volosin" }
     ],
     timeline: [
       {
@@ -9307,10 +9223,7 @@ holdings: []
         role: "Managing Partner & CEO",
         profileSlug: "michael-cardamone"
       },
-      {
-        name: "Jonah Midanik",
-        role: "General Partner"
-      }
+      { name: "Jonah Midanik", role: "General Partner", profileSlug: "jonah-midanik" }
     ],
     timeline: [
       {
@@ -9385,10 +9298,7 @@ holdings: []
     thesis: "Backs mission-driven, often scientist- and PhD-founders using deep technology to tackle civilization-scale problems - climate change, disease, malnutrition and global connectivity - while explicitly aiming for large financial returns. Named for Winston Churchill's 1931 essay 'Fifty Years Hence', and runs a company-builder programme helping scientists and engineers become founders.",
     signatureExit: null,
     leadership: [
-      {
-        name: "Ela Madej",
-        role: "Founding Partner"
-      },
+      { name: "Ela Madej", role: "Founding Partner", profileSlug: "ela-madej" },
       {
         name: "Seth Bannon",
         role: "Founding Partner",
@@ -9426,14 +9336,8 @@ holdings: []
     thesis: "A 'gap-closing' investment thesis: backing founders explicitly building companies that close gaps of access and opportunity for low-income communities and communities of colour, on the belief that this can be pursued as core business strategy rather than philanthropy and can deliver strong financial returns without a concessionary trade-off.",
     signatureExit: null,
     leadership: [
-      {
-        name: "Brian Dixon",
-        role: "Managing Partner"
-      },
-      {
-        name: "Batul Joffrey",
-        role: "Partner"
-      },
+      { name: "Brian Dixon", role: "Managing Partner", profileSlug: "brian-dixon" },
+      { name: "Batul Joffrey", role: "Partner", profileSlug: "batul-joffrey" },
       {
         name: "Mitch Kapor",
         role: "Co-Founder",
@@ -9485,14 +9389,8 @@ holdings: []
         role: "Managing Partner",
         profileSlug: "michael-dempsey"
       },
-      {
-        name: "David Hirsch",
-        role: "General Partner"
-      },
-      {
-        name: "Tara Eckert",
-        role: "CFO"
-      }
+      { name: "David Hirsch", role: "General Partner", profileSlug: "david-hirsch" },
+      { name: "Tara Eckert", role: "CFO", profileSlug: "tara-eckert" }
     ],
     timeline: [
       {
@@ -9663,8 +9561,8 @@ holdings: []
       { name: "Chip Hazard", role: "Co-founder & General Partner", profileSlug: "chip-hazard" },
       { name: "Jeff Bussgang", role: "Co-founder & General Partner", profileSlug: "jeff-bussgang" },
       { name: "Jesse Middleton", role: "General Partner", profileSlug: "jesse-middleton" },
-      { name: "Dorothy Chang", role: "Venture Partner" },
-      { name: "Anna Palmer", role: "Venture Partner" },
+      { name: "Dorothy Chang", role: "Venture Partner", profileSlug: "dorothy-chang" },
+      { name: "Anna Palmer", role: "Venture Partner", profileSlug: "anna-palmer" },
     ],
     timeline: [
       { year: "2002", event: "Chip Hazard and Jeff Bussgang co-found Flybridge Capital Partners in Boston in May 2002." },
@@ -9784,9 +9682,9 @@ holdings: []
       { name: "Loren Straub", role: "General Partner", profileSlug: "loren-straub" },
       { name: "Shashank Saxena", role: "Venture Partner", profileSlug: "shashank-saxena" },
       { name: "Bersabel Tadesse", role: "Venture Partner", profileSlug: "bersabel-tadesse" },
-      { name: "Stuart Wall", role: "Venture Partner" },
+      { name: "Stuart Wall", role: "Venture Partner", profileSlug: "stuart-wall" },
       { name: "Patrick McGovern", role: "Principal", profileSlug: "patrick-mcgovern" },
-      { name: "Ellen LoBiondo", role: "Director of Growth" },
+      { name: "Ellen LoBiondo", role: "Director of Growth", profileSlug: "ellen-lobiondo" },
     ],
     timeline: [
       { year: "2013", event: "Michael Brown founds Bowery Capital in New York; debut fund closes with $33M in commitments." },
@@ -9835,7 +9733,7 @@ holdings: []
       { name: "Ian Rountree", role: "General Partner", profileSlug: "ian-rountree" },
       { name: "Grant Gregory", role: "Partner", profileSlug: "grant-gregory" },
       { name: "Amee Kapadia", role: "Principal", profileSlug: "amee-kapadia" },
-      { name: "Sofia Garcia", role: "CFO" },
+      { name: "Sofia Garcia", role: "CFO", profileSlug: "sofia-garcia" },
     ],
     timeline: [
       { year: "2016", event: "Ian Rountree founds Cantos." },
@@ -9860,10 +9758,10 @@ holdings: []
     leadership: [
       { name: "Brendan Wallace", role: "Chief Executive Officer & Chief Investment Officer", profileSlug: "brendan-wallace" },
       { name: "Brad Greiwe", role: "Co-Founder & Chairman", profileSlug: "brad-greiwe" },
-      { name: "Luke Harris", role: "General Counsel & Chief Operating Officer" },
-      { name: "Eric Lee", role: "Chief Financial Officer" },
-      { name: "Adam Lieberman", role: "Chief Technology Officer" },
-      { name: "Elise Szwajkowski", role: "Chief Marketing Officer" },
+      { name: "Luke Harris", role: "General Counsel & Chief Operating Officer", profileSlug: "luke-harris" },
+      { name: "Eric Lee", role: "Chief Financial Officer", profileSlug: "eric-lee" },
+      { name: "Adam Lieberman", role: "Chief Technology Officer", profileSlug: "adam-lieberman" },
+      { name: "Elise Szwajkowski", role: "Chief Marketing Officer", profileSlug: "elise-szwajkowski" },
     ],
     timeline: [
       { year: "2016", event: "Fifth Wall founded by Brendan Wallace and Brad Greiwe." },
@@ -10084,11 +9982,11 @@ holdings: []
     leadership: [
       { name: "Christophe Maire", role: "Founding Partner", profileSlug: "christophe-maire" },
       { name: "Patrick Noller", role: "General Partner, Managing Director", profileSlug: "patrick-noller" },
-      { name: "Thilo Winter", role: "Operating Partner" },
-      { name: "Florian Breiner", role: "Operating Partner, Growth" },
-      { name: "Till Hoelzer", role: "Managing Director Asia" },
-      { name: "Valentin Bula", role: "Head of Studio" },
-      { name: "Franz Crux", role: "Chief of Staff" },
+      { name: "Thilo Winter", role: "Operating Partner", profileSlug: "thilo-winter" },
+      { name: "Florian Breiner", role: "Operating Partner, Growth", profileSlug: "florian-breiner" },
+      { name: "Till Hoelzer", role: "Managing Director Asia", profileSlug: "till-hoelzer" },
+      { name: "Valentin Bula", role: "Head of Studio", profileSlug: "valentin-bula" },
+      { name: "Franz Crux", role: "Chief of Staff", profileSlug: "franz-crux" },
     ],
     timeline: [
       { year: "2016", event: "Founded as Atlantic Food Labs, the food-focused arm of Christophe Maire's Atlantic Labs in Berlin." },
@@ -10216,7 +10114,7 @@ holdings: []
       { name: "Christian Leybold", role: "Founding Partner", profileSlug: "christian-leybold" },
       { name: "Thomas Gieselmann", role: "Founding Partner", profileSlug: "thomas-gieselmann" },
       { name: "Akio Tanaka", role: "Partner", profileSlug: "akio-tanaka" },
-      { name: "Rainer Hillebrand", role: "Chairman" },
+      { name: "Rainer Hillebrand", role: "Chairman", profileSlug: "rainer-hillebrand" },
     ],
     timeline: [
       { year: "1997", event: "Firm founded; Thomas Gieselmann's Headline bio states he co-founded the firm in 1997, and Wikipedia dates the predecessor Bertelsmann Ventures to the same year." },
