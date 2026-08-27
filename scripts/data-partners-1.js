@@ -8004,5 +8004,246 @@ sources: [
       { label: "Wikipedia - Foundation Capital", url: "https://en.wikipedia.org/wiki/Foundation_Capital" },
       { label: "Foundation Capital", url: "https://foundationcapital.com" }
     ]
+  },
+"sandeep-singhal": {
+    name: "Sandeep Singhal",
+    firm: "Nexus Venture Partners",
+    firmSlug: "nexus-venture-partners",
+    title: "Co-Founder",
+    joinedYear: 2006,
+    education: ["BS, Electrical Engineering, Stanford University (Phi Beta Kappa, Tau Beta Pi)", "MBA, The Wharton School (with Distinction, dual major in Finance & Marketing)"],
+    previousExperience: [
+      "McKinsey & Company",
+      "Digital Equipment Corporation",
+      "EDA Systems",
+      "Co-Founder & CEO, Medusind Solutions (healthcare outsourcing)",
+      "Co-Founder & Managing Director, eVentures India (1999, one of India's earliest VC firms)"
+    ],
+    investmentFocus: ["Enterprise Software", "Consumer Internet", "Fintech"],
+    notableInvestments: [
+      { name: "Delhivery", ticker: "DELHIVERY.NS" },
+      { name: "MakeMyTrip", ticker: "MMYT" },
+      { name: "Postman", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 2,
+    majorExits: 4,
+    careerTimeline: [
+      { year: "1987", event: "Graduates from Stanford and joins a VC-backed Bay Area startup, beginning his technology career." },
+      { year: "1999", event: "Co-founds eVentures India, one of the earliest Indian venture capital firms, backing MakeMyTrip among others." },
+      { year: "2006", event: "Co-founds Nexus Venture Partners with Suvir Sujan and Naren Gupta." },
+      { year: "2021", event: "Steps down as General Partner after growing the firm to $1.5 billion in AUM, transitioning to Senior Advisor." },
+      { year: "2022", event: "Delhivery, a Nexus portfolio company, completes its IPO on Indian stock exchanges." }
+    ],
+    biography: "Sandeep Singhal graduated from Stanford in 1987 and joined a venture-backed Bay Area startup before moving through McKinsey, Digital Equipment, and EDA Systems, then co-founding Medusind Solutions, a healthcare outsourcing company. In 1999, alongside his operating career, he co-founded eVentures India, one of the country's earliest venture capital firms, backing MakeMyTrip years before its own public listing. He co-founded Nexus Venture Partners in 2006 with Suvir Sujan and the late Naren Gupta, building what became one of the first true India-US cross-border venture funds, investing in enterprise technology and digital consumer businesses on both sides of the Pacific from offices in Menlo Park, Bengaluru, and Mumbai. Singhal led the firm as General Partner until 2021, growing it to $1.5 billion under management before transitioning to Senior Advisor, and holds an MBA with Distinction from Wharton alongside a Stanford electrical engineering degree.",
+    sources: [
+      { label: "Stanford Seed - Grit & Growth", url: "https://www.gsb.stanford.edu/insights/masterclass-indias-venture-capital-ecosystem" },
+      { label: "Strategic Investment Fund", url: "https://sif.gatesfoundation.org/our-team/sandeep-singhal/" }
+    ]
+  },
+"christine-tsai": {
+    name: "Christine Tsai",
+    firm: "500 Global",
+    firmSlug: "500-global",
+    title: "Co-Founder & CEO",
+    joinedYear: 2010,
+    education: [],
+    previousExperience: [
+      "Product Marketing Manager, Google (2003-2010) - AdSense, Analytics, YouTube APIs, Developer Platform Tools"
+    ],
+    investmentFocus: ["Fintech", "Enterprise Software", "Consumer Internet", "Global Emerging Markets"],
+    notableInvestments: [
+      { name: "Twilio", ticker: "TWLO" },
+      { name: "Credit Karma", ticker: null },
+      { name: "Canva", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 4,
+    majorExits: 6,
+    careerTimeline: [
+      { year: "2003", event: "Joins Google, spending seven years in product marketing across AdSense, Analytics, and YouTube's developer platform." },
+      { year: "2010", event: "Co-founds 500 Startups with Dave McClure in Mountain View, launching a seed accelerator model distinct from Silicon Valley's US-only focus." },
+      { year: "2017", event: "Becomes CEO in July, after Dave McClure resigns following multiple allegations of inappropriate conduct toward female entrepreneurs." },
+      { year: "2021", event: "Rebrands the firm to 500 Global, reflecting its expanded international investment strategy across more than 80 countries." },
+      { year: "2025", event: "Reports the firm has grown to $2.7 billion in AUM and more than 2,600 portfolio companies." }
+    ],
+    biography: "Christine Tsai spent seven years at Google in product marketing roles spanning AdSense, Analytics, and YouTube's developer platform before co-founding 500 Startups with Dave McClure in 2010, built around a deliberately global thesis at a time most Silicon Valley firms invested almost exclusively in US-based founders. She became CEO in July 2017 after McClure resigned following multiple allegations of inappropriate conduct toward female entrepreneurs, steering the firm through that period and rebranding it to 500 Global in 2021 to reflect its genuinely international footprint. Under her leadership, the firm has backed founders across more than 80 countries, grown to $2.7 billion in assets under management and more than 2,600 portfolio companies, and produced 35-plus unicorns including Canva, Credit Karma, Grab, and Twilio.",
+    sources: [
+      { label: "Wikipedia - 500 Global", url: "https://en.wikipedia.org/wiki/500_Global" },
+      { label: "Global Private Capital Association", url: "https://www.globalprivatecapital.org/team_member/christine-tsai/" }
+    ]
+  },
+"gilman-louie": {
+    name: "Gilman Louie",
+    firm: "In-Q-Tel",
+    firmSlug: "in-q-tel",
+    title: "Founding CEO",
+    joinedYear: 1999,
+    education: [],
+    previousExperience: [
+      "Video game designer and developer (co-created Falcon flight simulator)",
+      "CEO, Spectrum Holobyte / MicroProse (video game publisher)"
+    ],
+    investmentFocus: ["AI", "Cybersecurity", "Biotech", "Space Technology", "Frontier Tech"],
+    notableInvestments: [
+      { name: "Palantir", ticker: "PLTR" },
+      { name: "Keyhole (Google Earth)", ticker: null },
+      { name: "Ginkgo Bioworks", ticker: "DNA" }
+    ],
+    boardSeats: [],
+    ipoCount: 2,
+    majorExits: 3,
+    careerTimeline: [
+      { year: "1990s", event: "Builds a career as a video game designer and executive, co-creating the Falcon flight simulator and leading Spectrum Holobyte/MicroProse." },
+      { year: "1999", event: "Named founding CEO of In-Q-Tel, chartered by CIA Director George Tenet to close the technology gap between Silicon Valley and the intelligence community." },
+      { year: "2003", event: "Leads In-Q-Tel's roughly $2 million investment in Palantir, one of the company's only institutional backers in its earliest years." },
+      { year: "2004", event: "In-Q-Tel-backed Keyhole is acquired by Google, later becoming Google Earth." },
+      { year: "2020", event: "Palantir completes its direct listing on the NYSE under ticker PLTR." }
+    ],
+    biography: "Gilman Louie came to venture capital from an unlikely background - a video game industry executive who co-created the Falcon flight simulator and ran Spectrum Holobyte and MicroProse - before being named founding CEO of In-Q-Tel in 1999. Chartered by CIA Director George Tenet after the agency recognized it was falling behind Silicon Valley's pace of innovation, In-Q-Tel represented something unprecedented: a nonprofit venture fund built specifically to connect classified government needs with private-sector technology, rather than building everything in-house through traditional slow-moving procurement. Louie's most consequential bet came in 2003, when In-Q-Tel invested roughly $2 million in a then-unproven data analytics startup called Palantir - for years, In-Q-Tel and the CIA were essentially Palantir's only backers and only customers, providing critical early validation years before its 2020 direct listing at a valuation that eventually surpassed traditional defense contracting giants like Lockheed Martin and Northrop Grumman.",
+    sources: [
+      { label: "Fortune", url: "https://finance.yahoo.com/news/meet-cia-backed-venture-fund-100000286.html" },
+      { label: "Boss Hunting", url: "https://www.bosshunting.com.au/hustle/in-q-tel-cia-venture-capital-firm" }
+    ]
+  },
+"james-robinson-iv": {
+    name: "James D. Robinson IV",
+    firm: "RRE Ventures",
+    firmSlug: "rre-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 1994,
+    education: ["BA, Computer Science & Business Administration, Antioch College", "MBA, Harvard Business School (1992)"],
+    previousExperience: [
+      "JP Morgan & Co. (global risk-management systems, then investment banking)",
+      "H&Q Venture Capital, San Francisco (software & communications)",
+      "Co-Founder, InterVideo Response (in-stadium touchscreen ordering, with Stuart Ellman)",
+      "Founder, IV Systems (Unix-based applications, founded during college)"
+    ],
+    investmentFocus: ["Enterprise Software", "Fintech", "AI"],
+    notableInvestments: [
+      { name: "BuzzFeed", ticker: "BZFD" },
+      { name: "Bark", ticker: "BARK" },
+      { name: "BlackSky", ticker: "BKSY" }
+    ],
+    boardSeats: ["Bark (NYSE: BARK)", "Empire State Realty Trust", "Partnership Fund for New York City"],
+    ipoCount: 3,
+    majorExits: 4,
+    careerTimeline: [
+      { year: "1982", event: "Spends six months driving a NYC taxi overnight shift while at Antioch College." },
+      { year: "1992", event: "Earns an MBA from Harvard Business School." },
+      { year: "1994", event: "Co-founds RRE Ventures with Stuart Ellman, after first co-founding an in-stadium touchscreen ordering startup together that proved about a decade too early." },
+      { year: "2013", event: "Braintree, an early RRE investment, is acquired by PayPal for $800 million." },
+      { year: "2021", event: "BuzzFeed, a longtime RRE portfolio company, goes public via SPAC merger." }
+    ],
+    biography: "James D. Robinson IV built an unusually varied path into venture capital - a JP Morgan risk-management analyst and investment banker, then a software and communications investor at H&Q Venture Capital in San Francisco, having already founded a Unix applications company during college and spent a summer driving a New York City taxi overnight shift. In 1994, he co-founded RRE Ventures with Stuart Ellman, after the two had first tried building an in-stadium touchscreen ordering startup together that proved roughly a decade ahead of its time. Over more than three decades since, Robinson has invested in more than 60 companies and served on nearly 50 boards, building RRE into one of New York's oldest and largest venture capital firms with a portfolio spanning fintech, enterprise software, media, space, and robotics. He remains a senior advisor to the Chamber of Digital Commerce and sits on the boards of Empire State Realty Trust and the Partnership Fund for New York City.",
+    sources: [
+      { label: "RRE Ventures - Jim Robinson", url: "https://rre.com/team/jim-robinson" },
+      { label: "Institutional Investor", url: "https://www.institutionalinvestor.com/article/2bsxtrq555krtftscxn9c/corner-office/the-fintech-finance-40-james-d-robinson-iii-and-james-d-robinson-iv" }
+    ]
+  },
+"joe-lonsdale": {
+    name: "Joe Lonsdale",
+    firm: "8VC",
+    firmSlug: "8vc",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2015,
+    education: ["BS, Stanford University"],
+    previousExperience: [
+      "Intern, PayPal",
+      "Early Executive, Clarium Capital (Peter Thiel's hedge fund)",
+      "Co-Founder, Palantir Technologies (2004-2009)",
+      "Co-Founder, Addepar (2009, wealth management platform now overseeing trillions in assets)",
+      "Co-Founder, OpenGov (cloud software for local governments)",
+      "Co-Founder, Formation 8 (2011, VC firm and predecessor to 8VC)"
+    ],
+    investmentFocus: ["AI", "Defense Tech", "Fintech", "Healthcare", "Enterprise Software"],
+    notableInvestments: [
+    { name: "Palantir", ticker: "PLTR" },
+    { name: "Oscar Health", ticker: "OSCR" },
+    { name: "Wish", ticker: "WISH" },
+    { name: "Joby Aviation", ticker: "JOBY" },
+    { name: "Sable", ticker: null, year: 2026, yearPrecision: "year",
+      sector: "AI", subsector: "AI Sales Enablement",
+      evidence: [{ url: "https://8vc.com/resources/announcing-our-investment-in-sable", type: "firm-announcement", checked: "2026-08-23" }] }
+  ],
+    boardSeats: [],
+    ipoCount: 5,
+    majorExits: 6,
+    careerTimeline: [
+      { year: "2004", event: "Co-founds Palantir Technologies alongside Peter Thiel, leaving the company in 2009." },
+      { year: "2009", event: "Co-founds Addepar, a wealth management technology platform." },
+      { year: "2011", event: "Co-founds Formation 8, a venture capital firm." },
+      { year: "2015", event: "Founds 8VC after Formation 8's breakup, with Jake Medwell, Drew Oetting, Alex Kolicich, and Kimmy Scotti." },
+      { year: "2020", event: "Wish, an early 8VC investment, completes its NASDAQ IPO in December at a $14.1 billion valuation; relocates 8VC from San Francisco to Austin." }
+    ],
+    biography: "Joe Lonsdale's path into venture capital ran directly through company-building - a PayPal internship and an early role at Peter Thiel's hedge fund Clarium Capital led him to co-found Palantir Technologies alongside Thiel in 2004, then Addepar in 2009, a wealth management platform that now oversees trillions of dollars in assets. That operating pattern, founding more than a dozen prominent companies before ever becoming a full-time investor, shapes 8VC's entire model: the firm doesn't just write checks, it actively builds companies from scratch through its 8VC Build program, leveraging Lonsdale's direct experience scaling Palantir and Addepar into category leaders. He founded 8VC in 2015 following the breakup of Formation 8, moved the firm from San Francisco to Austin in 2020, and has since become an outspoken advocate for American manufacturing and defense technology, founding the Cicero Institute think tank and co-founding the University of Austin alongside his venture work.",
+    sources: [
+      { label: "8VC - Joe Lonsdale", url: "https://8vc.com/team/joe-lonsdale" },
+      { label: "Wikipedia - Joe Lonsdale", url: "https://en.wikipedia.org/wiki/Joe_Lonsdale" }
+    ]
+  },
+"kevin-colleran": {
+    name: "Kevin Colleran",
+    firm: "Slow Ventures",
+    firmSlug: "slow-ventures",
+    title: "Co-Founder & Managing Director",
+    joinedYear: 2009,
+    education: [],
+    previousExperience: [
+      "One of Facebook's first 10 employees, built its global sales strategy (2005-2011)"
+    ],
+    investmentFocus: ["Consumer", "Crypto", "Social Media", "Fintech"],
+    notableInvestments: [
+      { name: "Coinbase", ticker: "COIN" },
+      { name: "PagerDuty", ticker: "PD" },
+      { name: "BuzzFeed", ticker: "BZFD" }
+    ],
+    boardSeats: [],
+    ipoCount: 3,
+    majorExits: 4,
+    careerTimeline: [
+      { year: "2005", event: "Joins Facebook as one of its first 10 employees, helping build the company's global sales strategy." },
+      { year: "2009", event: "Co-founds Slow Ventures with Dave Morin, initially pooling personal angel investments alongside other early Facebook executives." },
+      { year: "2011", event: "Leaves Facebook and formalizes Slow Ventures into an institutional venture firm, later joined by Sam Lessin as partner." },
+      { year: "2014", event: "Leads an early investment in Coinbase." },
+      { year: "2018", event: "PillPack, a Slow Ventures investment, is acquired by Amazon for $753 million." }
+    ],
+    biography: "Kevin Colleran was one of Facebook's first 10 employees, helping build the company's global sales strategy in its earliest years before leaving in 2011. He co-founded Slow Ventures with fellow early Facebook executive Dave Morin in 2009, initially as an informal way to pool personal angel investments alongside other Facebook alumni, before formalizing it into an institutional venture firm. That founding network of tech operators shaped Slow's distinctive limited-partner base - more than 100 technology founders, CEOs, and executives who commit to actively helping portfolio companies, not just university endowments and foundations. Colleran led Slow's early conviction bet on Coinbase years before its public listing, and the firm's patient, founder-first philosophy produced PillPack, which Amazon acquired for $753 million in 2018, alongside investments in Pinterest, Slack, and Postmates.",
+    sources: [
+      { label: "TechCrunch", url: "https://techcrunch.com/2015/11/02/slow-ventures-get-a-new-partner/" },
+      { label: "Slow Ventures - About", url: "https://slow.co/about/" }
+    ]
+  },
+"brad-svrluga": {
+    name: "Brad Svrluga",
+    firm: "Primary Venture Partners",
+    firmSlug: "primary-venture-partners",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2015,
+    education: ["BA, Economics, Williams College"],
+    previousExperience: [
+      "Strategy Consulting",
+      "Co-Founder, High Peaks Venture Partners (2003, predecessor to Primary)"
+    ],
+    investmentFocus: ["Enterprise Software", "Fintech", "Supply Chain", "Industrial Technology"],
+    notableInvestments: [
+      { name: "Jet.com", ticker: null },
+      { name: "Mirror", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 2,
+    careerTimeline: [
+      { year: "2003", event: "Co-founds High Peaks Venture Partners, beginning nearly two decades of NYC-focused early-stage investing." },
+      { year: "2015", event: "Co-founds Primary Venture Partners with Ben Sun, as a successor to High Peaks Ventures." },
+      { year: "2016", event: "Jet.com, an early investment via the predecessor fund, is acquired by Walmart for approximately $3.3 billion." },
+      { year: "2020", event: "Mirror is acquired by Lululemon for $500 million." },
+      { year: "2024", event: "Closes $425 million across two new funds in February, a $275M seed fund and $150M continuation vehicle." }
+    ],
+    biography: "Brad Svrluga began his career in strategy consulting before co-founding High Peaks Venture Partners in 2003, spending more than a decade investing in and around New York's technology ecosystem. He co-founded Primary Venture Partners with Ben Sun in 2015 as High Peaks' successor, built around a specific conviction that took shape after the 2008 financial crisis: a wave of the city's most talented people were shifting from Wall Street and Madison Avenue into startups, and New York needed a seed fund with the scale and NYC-specific expertise to back them properly. That thesis produced early bets on Jet.com, acquired by Walmart for roughly $3.3 billion, and Mirror, acquired by Lululemon for $500 million, and Svrluga has grown Primary into New York's largest early-stage firm by operator headcount, with roughly 50 full-time staff and more than 20 dedicated platform operators supporting portfolio companies on hiring and go-to-market execution.",
+    sources: [
+      { label: "Primary VC Team", url: "https://www.primary.vc/brad-svrluga" },
+      { label: "AlleyWatch", url: "https://www.alleywatch.com/2018/06/inside-the-mind-of-a-nyc-vc-brad-svrluga-of-primary-venture-partners/" }
+    ]
   }
 });
