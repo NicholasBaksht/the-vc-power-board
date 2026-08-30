@@ -8245,5 +8245,444 @@ sources: [
       { label: "Primary VC Team", url: "https://www.primary.vc/brad-svrluga" },
       { label: "AlleyWatch", url: "https://www.alleywatch.com/2018/06/inside-the-mind-of-a-nyc-vc-brad-svrluga-of-primary-venture-partners/" }
     ]
+  },
+"ben-lerer": {
+    name: "Ben Lerer",
+    firm: "Lerer Hippeau",
+    firmSlug: "lerer-hippeau",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2010,
+    education: ["BA, Princeton University"],
+    previousExperience: [
+      "Founder, Thrillist (later merged into Group Nine Media)",
+      "CEO, Group Nine Media (parent of NowThis, The Dodo, Thrillist, Seeker, PopSugar)",
+      "Chairman & CEO, Group9 Acquisition Corp. (NASDAQ: GNAC, a SPAC)"
+    ],
+    investmentFocus: ["Consumer", "Fintech", "Enterprise Software"],
+    notableInvestments: [
+      { name: "Warby Parker", ticker: "WRBY" },
+      { name: "Casper", ticker: "CSPR" },
+      { name: "Olo", ticker: "OLO" }
+    ],
+    boardSeats: ["Casper (NYSE: CSPR)"],
+    ipoCount: 6,
+    majorExits: 8,
+    careerTimeline: [
+      { year: "2010", event: "Founds Thrillist, a media company that later merges into Group Nine Media." },
+      { year: "2010", event: "Co-founds Lerer Hippeau with Eric Hippeau, the same year." },
+      { year: "2019", event: "Serves as CEO of Group Nine Media while continuing to lead Lerer Hippeau." },
+      { year: "2020", event: "Casper completes its IPO; sits on its board." },
+      { year: "2021", event: "BuzzFeed goes public via SPAC merger at a $1.5 billion valuation." }
+    ],
+    biography: "Ben Lerer spent more than a decade simultaneously running a high-growth media company - first Thrillist, which he founded, then Group Nine Media after Thrillist's merger - while co-founding and building Lerer Hippeau alongside Eric Hippeau in 2010. That dual operator-investor experience shaped a distinctly hands-on, 'activist' seed investing philosophy: Lerer Hippeau takes meaningful stakes and works directly on branding and strategy with portfolio companies, rather than writing passive checks. Lerer has described his own investment philosophy as deliberately contrarian - he wants Lerer Hippeau's portfolio to include companies whose best-case outcome is a genuine power-law winner, not just a safe, sensible business - and that approach produced early bets on Warby Parker, Casper, Glossier, and Allbirds before any of them were obvious winners. He has grown the firm across nine funds and nearly $1.5 billion in AUM, making it one of New York's most influential early-stage venture firms.",
+    sources: [
+      { label: "GTMnow Podcast", url: "https://gtmnow.com/early-stage-vc-founder-selection-ben-lerer-lerer-hippeau/" },
+      { label: "SEC S-1 Filing", url: "https://www.sec.gov/Archives/edgar/data/1841948/000119312521041594/d87587ds1.htm" }
+    ]
+  },
+"david-tisch": {
+    name: "David Tisch",
+    firm: "BoxGroup",
+    firmSlug: "boxgroup",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2007,
+    education: [],
+    previousExperience: [
+      "Co-Founder & CEO, Spring (acquired by ShopRunner, 2016)",
+      "Managing Director, Techstars NYC",
+      "Adjunct Professor, NYU Stern School of Business"
+    ],
+    investmentFocus: ["Consumer Internet", "Marketplaces", "Fintech"],
+    notableInvestments: [
+      { name: "Warby Parker", ticker: "WRBY" },
+      { name: "Plaid", ticker: null },
+      { name: "Ramp", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 8,
+    careerTimeline: [
+      { year: "2007", event: "Co-founds BoxGroup with Adam Rothenberg." },
+      { year: "2009", event: "Becomes the first Managing Director of Techstars NYC, helping build it into a cornerstone of the New York tech scene." },
+      { year: "2012", event: "Leaves Techstars to focus on BoxGroup full-time, alongside Adam Rothenberg." },
+      { year: "2013", event: "BoxGroup becomes one of the first investors in Plaid, then a small fintech startup founded by a former Techstars intern." },
+      { year: "2018", event: "Flatiron Health, an early BoxGroup investment, is acquired by Roche for $1.9 billion." }
+    ],
+    biography: "David Tisch, grandson of Loews Corporation co-founder Laurence Tisch, co-founded BoxGroup in 2007 with Adam Rothenberg, running it initially alongside his role as the first Managing Director of Techstars NYC before leaving in 2012 to focus on BoxGroup full-time. The firm built its reputation on catching companies before anyone else believed in them - most famously becoming the first investor in Plaid after its founder turned down a job offer at BoxGroup to start the company instead, and backing Flatiron Health years before Roche acquired it for $1.9 billion in 2018. Tisch has described BoxGroup's core philosophy as being comfortable with genuine early-stage uncertainty - vision and raw product over traction - and has helped grow the firm into one of New York's most prolific seed investors, with more than 600 investments including Warby Parker, Ramp, Airtable, Glossier, and ClassPass.",
+    sources: [
+      { label: "TechCrunch", url: "https://techcrunch.com/2021/08/02/boxgroup-closes-on-255m-across-two-funds/" },
+      { label: "Fortune", url: "https://fortune.com/2025/10/21/david-tisch-boxgroup-venture-capital-tech-nyc-ramp-cursor-early-stage/" }
+    ]
+  },
+"pejman-nozad": {
+    name: "Pejman Nozad",
+    firm: "Pear VC",
+    firmSlug: "pear-vc",
+    title: "Co-Founder & Founding Managing Partner",
+    joinedYear: 2013,
+    education: [],
+    previousExperience: [
+      "Sports Journalist & Radio Host",
+      "Professional Soccer Player",
+      "Rug Salesman, Palo Alto",
+      "Angel Investor (17+ years, early bets on Dropbox, DoorDash, Lending Club, Addepar)"
+    ],
+    investmentFocus: ["Fintech", "AI", "Consumer", "Healthcare"],
+    notableInvestments: [
+      { name: "DoorDash", ticker: "DASH" },
+      { name: "Dropbox", ticker: "DBX" },
+      { name: "Guardant Health", ticker: "GH" },
+      { name: "AppLovin", ticker: "APP" }
+    ],
+    boardSeats: [],
+    ipoCount: 4,
+    majorExits: 5,
+    careerTimeline: [
+      { year: "2000s", event: "Immigrates from Iran and works as a rug salesman in downtown Palo Alto, building relationships with the tech entrepreneurs and investors who frequented the store." },
+      { year: "2010s", event: "Spends 17-plus years as an angel investor, becoming an early backer of Dropbox, Lending Club, and Addepar." },
+      { year: "2013", event: "Co-founds Pejman Mar Ventures with Mar Hershenson in August; convinces her to back DoorDash as one of the firm's first five deals." },
+      { year: "2016", event: "Rebrands the firm to Pear VC." },
+      { year: "2020", event: "DoorDash goes public on the NYSE; Pear's roughly $1.9 million investment is worth more than $440 million." }
+    ],
+    biography: "Pejman Nozad may be tech's most unlikely venture capitalist - an Iranian immigrant who worked as a sports journalist, radio host, and professional soccer player before landing at a rug store in downtown Palo Alto, where he immersed himself in the local tech scene and slowly built a reputation for spotting promising founders. After 17 years as an angel investor backing Dropbox, Lending Club, and Addepar, he convinced Stanford lecturer and three-time founder Mar Hershenson to co-found Pejman Mar Ventures with him in 2013, rebranded as Pear VC in 2016. His conviction produced the firm's defining moment that same founding year: he burst into the office insisting they back a food delivery startup called DoorDash, despite Hershenson's initial skepticism, turning a roughly $1.9 million investment into more than $440 million at the company's 2020 IPO - a nearly 233-times return on Pear's entire first fund from a single bet. Nozad has ranked on the Forbes Midas List every year since 2021, taking the #1 spot on the Midas Seed List in 2024.",
+    sources: [
+      { label: "Forbes", url: "https://www.forbes.com/sites/alexkonrad/2020/12/11/their-venture-fund-was-a-sign-of-a-bubble-then-they-turned-19-million-in-doordash-into-440-million/" },
+      { label: "Pear VC - Pejman Nozad", url: "https://pear.vc/team/pejman-nozad/" }
+    ]
+  },
+"mark-suster": {
+    name: "Mark Suster",
+    firm: "Upfront Ventures",
+    firmSlug: "upfront-ventures",
+    title: "Managing Partner",
+    joinedYear: 2007,
+    education: ["BA, University of California, San Diego", "MBA, University of Chicago"],
+    previousExperience: [
+      "Founder & CEO, BuildOnline (construction collaboration technology, 1999; merged with Citadon in 2006)",
+      "Founder, Koral (content collaboration software, acquired by Salesforce.com, April 2007)",
+      "VP of Product Management, Salesforce.com"
+    ],
+    investmentFocus: ["Enterprise SaaS", "Consumer Internet", "Fintech"],
+    notableInvestments: [
+      { name: "TrueCar", ticker: "TRUE" },
+      { name: "Ring", ticker: null },
+      { name: "Maker Studios", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 1,
+    majorExits: 3,
+    careerTimeline: [
+      { year: "1999", event: "Founds BuildOnline, a construction collaboration technology company, later merging with Citadon in 2006." },
+      { year: "2006", event: "Founds Koral, a content collaboration software business." },
+      { year: "2007", event: "Koral is acquired by Salesforce.com in April; Suster briefly serves as VP of Product Management before joining GRP Partners (now Upfront Ventures) later that year." },
+      { year: "2009", event: "Starts the Launchpad LA accelerator while continuing at Upfront." },
+      { year: "2011", event: "Becomes Managing Partner." }
+    ],
+    biography: "Mark Suster built two enterprise software companies before becoming an investor - BuildOnline, a construction collaboration platform he founded in 1999, and Koral, a content collaboration business that Salesforce.com acquired in 2007, after which he briefly worked inside Salesforce as VP of Product Management. That real operating scar tissue shaped his approach when he joined GRP Partners (later renamed Upfront Ventures) later in 2007, becoming Managing Partner in 2011 and helping transform a firm that began by backing traditional retail chains like Costco and Starbucks into the largest and most established venture capital firm in Los Angeles. Suster also founded the Launchpad LA accelerator in 2009 and became one of the most widely-read voices in venture capital through his Both Sides of the Table blog, known for detailed, practitioner-level writing on term sheets, board dynamics, and fundraising that draws directly on his own founder experience.",
+    sources: [
+      { label: "Wikipedia - Mark Suster", url: "https://en.wikipedia.org/wiki/Mark_Suster" },
+      { label: "Venture Unlocked", url: "https://ventureunlocked.substack.com/p/marksuster" }
+    ]
+  },
+"theresia-gouw": {
+    name: "Theresia Gouw",
+    firm: "Acrew Capital",
+    firmSlug: "acrew-capital",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2019,
+    education: ["BS, Engineering, Brown University", "MBA, Stanford Graduate School of Business"],
+    previousExperience: [
+      "Management Consultant, Bain & Company",
+      "Founding VP of Business Development & Sales, Release Software",
+      "Managing General Partner, Accel Partners (15 years, first female partner and managing partner)",
+      "Co-Founder, Aspect Ventures (2014)"
+    ],
+    investmentFocus: ["Fintech", "Cybersecurity", "Data & AI", "Healthcare"],
+    notableInvestments: [
+      { name: "Forescout", ticker: "FSCT" },
+      { name: "Imperva", ticker: "IMPV" },
+      { name: "Trulia", ticker: "TRLA" }
+    ],
+    boardSeats: [],
+    ipoCount: 4,
+    majorExits: 8,
+    careerTimeline: [
+      { year: "2000s", event: "Spends 15 years at Accel Partners, becoming the firm's first female partner and managing partner." },
+      { year: "2014", event: "Co-founds Aspect Ventures with Jennifer Fonstad, a rare woman-led venture capital fund in Silicon Valley." },
+      { year: "2019", event: "Aspect Ventures splits; Gouw co-founds Acrew Capital with Lauren Kolodny, Vishal Lugani, Asad Khaliq, and Mark Kraynak in December, closing a $250 million debut fund backed by Melinda Gates." },
+      { year: "2024", event: "Raises $700 million in October, pushing total AUM to $1.7 billion." }
+    ],
+    biography: "Theresia Gouw emigrated from Indonesia as a child, studied engineering at Brown, and earned an MBA from Stanford before spending 15 years at Accel Partners, where she became the firm's first female partner and managing partner during a career that touched real, dollar-verified exits including Forescout, Imperva, Trulia, and HotelTonight's acquisition by Airbnb. She co-founded Aspect Ventures in 2014 with Jennifer Fonstad, and when the two split in 2019 over differing leadership styles, Gouw launched Acrew Capital with four Aspect colleagues, deliberately building it as a 'multigenerational' firm designed to avoid concentrating power at the top the way many venture partnerships do. She has been named to the Forbes Midas List eight times, co-founded All Raise, a nonprofit expanding women's representation in venture capital, and has made diversity of perspective a structural pillar of Acrew's investing thesis rather than a stated goal without teeth.",
+    sources: [
+      { label: "Wikipedia - Theresia Gouw", url: "https://en.wikipedia.org/wiki/Theresia_Gouw" },
+      { label: "Forbes", url: "https://www.forbes.com/sites/alexkonrad/2019/12/18/theresia-gouw-acrew-capital-raises-250-million-debut-fund/" }
+    ]
+  },
+"chris-farmer": {
+    name: "Chris Farmer",
+    firm: "SignalFire",
+    firmSlug: "signalfire",
+    title: "Founder & CEO",
+    joinedYear: 2013,
+    education: [],
+    previousExperience: [
+      "Consultant, Bain & Company (technology buyouts)",
+      "VP, Bessemer Venture Partners (2005-2009, digital media & mobile)",
+      "Venture Partner, General Catalyst (2010-2013, led seed program: Coinbase, Discord, Stripe, Venmo, Zapier)",
+      "Led turnaround of Skybitz (wireless SaaS, acquired by Telular Corporation)"
+    ],
+    investmentFocus: ["Applied AI", "Enterprise Software", "Healthcare", "Cybersecurity"],
+    notableInvestments: [
+      { name: "Grammarly", ticker: null },
+      { name: "Grow Therapy", ticker: null },
+      { name: "Stampli", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2009", event: "Leaves Bessemer Venture Partners after four years leading digital media and mobile investments." },
+      { year: "2010", event: "Joins General Catalyst as a Venture Partner, leading its seed investment program and helping establish its California office." },
+      { year: "2013", event: "Founds SignalFire with Ilya Kirnos, built from the ground up as a data-driven, technology-native venture firm." },
+      { year: "2025", event: "Closes over $1 billion in new capital in April, pushing total AUM to approximately $3 billion." }
+    ],
+    biography: "Chris Farmer built his path to venture capital through Bain & Company technology consulting, a stint turning around wireless SaaS company Skybitz, and investing roles at Bessemer Venture Partners and General Catalyst, where he led a seed program that backed Coinbase, Discord, Stripe, Venmo, and Zapier before any of them were obvious winners. He founded SignalFire in 2013 with Ilya Kirnos on a genuinely different premise: build a venture firm the way a technology company builds a product, with an in-house engineering and data science team holding equal standing to investing partners, all sharing carry rather than crediting individual deal partners. That platform, called Beacon AI, tracks more than 650 million people and 80 million organizations to identify talent and market trends years ahead of consensus, and Farmer has personally bootstrapped the model from the start - running corporate advisory projects in SignalFire's early days just to cover AWS bills that exceeded the first fund's management fees. SignalFire has grown into a $3 billion applied-AI-focused firm, closing over $1 billion in new capital in a single raise in April 2025.",
+    sources: [
+      { label: "SignalFire - Chris Farmer", url: "https://www.signalfire.com/team/chris-farmer" },
+      { label: "BusinessWire", url: "https://www.businesswire.com/news/home/20250407594969/en/AI-Native-VC-SignalFire-Raises-Over-$1B-to-Fuel-the-Next-Wave-of-Applied-AI-Startups-Pushing-AUM-to-$3B" }
+    ]
+  },
+"paul-bernard": {
+    name: "Paul Bernard",
+    firm: "Amazon Alexa Fund",
+    firmSlug: "amazon-alexa-fund",
+    title: "Director, Alexa Fund",
+    joinedYear: 2015,
+    education: ["BA, Vanderbilt University"],
+    previousExperience: [
+      "Senior positions, Intel",
+      "Amazon Alexa devices team"
+    ],
+    investmentFocus: ["Voice Technology", "AI", "Connected Home", "Ambient Computing"],
+    notableInvestments: [
+      { name: "Ring", ticker: null },
+      { name: "ecobee", ticker: null },
+      { name: "TrackR", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 1,
+    careerTimeline: [
+      { year: "2015", event: "Launches and begins leading the Alexa Fund at its founding, with an initial $100 million commitment." },
+      { year: "2017", event: "Amazon commits an additional $100 million to the fund, bringing total capital to $200 million." },
+      { year: "2018", event: "Ring, an early Alexa Fund portfolio company, is acquired directly by Amazon." },
+      { year: "2023", event: "Named to Global Venturing's Powerlist as one of the world's leading corporate venturing professionals." },
+      { year: "2025", event: "Announces the fund's expansion into AI-enabled hardware and smart agents, broadening beyond its original voice-technology focus." }
+    ],
+    biography: "Paul Bernard came to the Alexa Fund from senior roles at Intel and Amazon's own Alexa devices team, and has led the fund since its 2015 launch - making him one of the longest-tenured leaders in corporate venture capital. Operating the fund 'off the balance sheet' with no fixed size constraint, Bernard has grown its footprint from an initial $100 million commitment to roughly $200 million, backing more than 140 companies including ecobee, TrackR, and Ring, the smart doorbell company Amazon itself later acquired directly in 2018. Rather than chasing pure financial exits, Bernard has described the fund's real goal as identifying startups building genuinely new experiences with Alexa or advancing voice technology broadly, and in 2025 he announced the fund's expansion into AI-enabled hardware and smart agents as large language models reshaped what's possible with ambient computing. He has been recognized on Global Venturing's Powerlist of top corporate venturing professionals in both 2023 and 2025.",
+    sources: [
+      { label: "TechCrunch", url: "https://techcrunch.com/2023/01/24/alexa-funds-paul-bernard-talks-openai-whats-catching-his-eye-and-remaining-relevant-as-amazon-restructures" },
+      { label: "Global Venturing Powerlist", url: "https://globalventuring.com/corporate/corporate-venturer/powerlist-2023-paul-bernard/" }
+    ]
+  },
+"anna-patterson": {
+    name: "Anna Patterson",
+    firm: "Gradient Ventures",
+    firmSlug: "gradient-ventures",
+    title: "Founder & Managing Partner",
+    joinedYear: 2017,
+    education: [],
+    previousExperience: [
+      "Founder, Recall (search engine, acquired by Google)",
+      "Founder, Cuil (search engine)",
+      "VP of Engineering, Google Search Quality"
+    ],
+    investmentFocus: ["AI", "Machine Learning", "Developer Tools", "Enterprise Software"],
+    notableInvestments: [
+      { name: "WRITER", ticker: null },
+      { name: "Lambda AI", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 0,
+    majorExits: 0,
+    careerTimeline: [
+      { year: "2000s", event: "Founds Recall, a search engine later acquired by Google, then founds Cuil, an ambitious rival search engine." },
+      { year: "2010s", event: "Serves as VP of Engineering for Google Search Quality, working directly on the core algorithms behind Google's search product." },
+      { year: "2017", event: "Founds Gradient Ventures as Google's early-stage AI-focused venture fund." },
+      { year: "2025", event: "Gradient Ventures spins out from Google as an independent investment entity in October, no longer operating as a corporate venture arm." }
+    ],
+    biography: "Anna Patterson built a rare technical pedigree in search and AI before turning to venture capital - founding Recall, a search engine acquired by Google, then the ambitious rival search engine Cuil, before returning to Google as VP of Engineering for Search Quality, working directly on the algorithms underlying its core product. She founded Gradient Ventures in 2017 to give Google's AI-focused seed investing a genuinely technical edge, staffing the fund primarily with ex-Google engineers who provide hands-on support on model architecture and data pipelines rather than purely financial guidance. That approach helped Gradient build a portfolio of more than 175 companies including unicorns WRITER and Lambda AI, and in October 2025 the fund reached a new inflection point, spinning out from Google entirely to operate as an independent investment firm better positioned to compete in the rapidly evolving AI venture landscape.",
+    sources: [
+      { label: "Gradient Ventures Team", url: "https://www.gradient.com/team/" },
+      { label: "f4.fund", url: "https://f4.fund/firms/gradient-ventures" }
+    ]
+  },
+"dana-settle": {
+    name: "Dana Settle",
+    firm: "Greycroft",
+    firmSlug: "greycroft",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2006,
+    education: ["BA, University of Michigan", "MBA, Harvard Business School"],
+    previousExperience: [
+      "M&A, Goldman Sachs",
+      "Operations, Reuters"
+    ],
+    investmentFocus: ["Consumer Internet", "Fintech", "Enterprise Software"],
+    notableInvestments: [
+      { name: "Venmo", ticker: null },
+      { name: "The RealReal", ticker: "REAL" },
+      { name: "Bird Global", ticker: null }
+    ],
+    boardSeats: [],
+    ipoCount: 1,
+    majorExits: 2,
+    careerTimeline: [
+      { year: "2000s", event: "Works in M&A at Goldman Sachs and operations at Reuters before moving into venture capital." },
+      { year: "2006", event: "Co-founds Greycroft with Alan Patricof and Ian Sigalow." },
+      { year: "2012", event: "Leads Greycroft's early seed investment in Venmo." },
+      { year: "2013", event: "Braintree, which had acquired Venmo, is sold to PayPal for $800 million." },
+      { year: "2019", event: "The RealReal, an early Greycroft investment Settle led, completes its IPO." }
+    ],
+    biography: "Dana Settle moved into venture capital after a career spanning M&A at Goldman Sachs and operations at Reuters, co-founding Greycroft in 2006 alongside veteran VC Alan Patricof and Ian Sigalow. She has been one of the firm's most consistently active investors in consumer payments and marketplaces, personally leading Greycroft's early seed bet on Venmo years before Braintree, which had acquired the payments app, sold to PayPal for $800 million in 2013. Settle also led Greycroft's early investment in The RealReal, the consignment marketplace that completed its own IPO in 2019, and has continued to anchor the firm's growth-stage fintech and marketplace investing as it has grown to more than $3 billion in assets under management.",
+    sources: [
+      { label: "Greycroft - Dana Settle", url: "https://www.greycroft.com/team/dana-settle/" },
+      { label: "Wikipedia - Greycroft", url: "https://en.wikipedia.org/wiki/Greycroft" }
+    ]
+  },
+"kate-mitchell": {
+    name: "Kate Mitchell",
+    firm: "Scale Venture Partners",
+    firmSlug: "scale-venture-partners",
+    title: "Co-Founder & Partner Emeritus",
+    joinedYear: 2000,
+    education: [],
+    previousExperience: [],
+    investmentFocus: ["Enterprise Software", "SaaS", "AI"],
+    notableInvestments: [
+      { name: "HubSpot", ticker: "HUBS" },
+      { name: "DocuSign", ticker: "DOCU" },
+      { name: "Bill.com", ticker: "BILL" }
+    ],
+    boardSeats: ["SVB Financial Group", "Fortive Corporation"],
+    ipoCount: 3,
+    majorExits: 5,
+    careerTimeline: [
+      { year: "2000", event: "Co-founds BA Venture Partners with Rory O'Driscoll, Bank of America's internal venture arm." },
+      { year: "2007", event: "Leads the spinout into an independent firm, renamed Scale Venture Partners." },
+      { year: "2012", event: "Co-authors the IPO section of the JOBS Act, expanding public-market access for emerging growth companies." },
+      { year: "2014", event: "Co-founds VentureForward, an NVCA initiative advancing opportunities for women and underrepresented minorities in venture capital." },
+      { year: "2019", event: "Bill.com, a Scale portfolio company, completes its IPO." }
+    ],
+    biography: "Kate Mitchell co-founded what became Scale Venture Partners in 2000 as BA Venture Partners, Bank of America's internal venture arm, alongside Rory O'Driscoll, before leading its 2007 spinout into an independent firm. Beyond investing, Mitchell has been one of venture capital's most consequential policy voices - she co-authored the IPO section of the 2012 JOBS Act, expanding public-market access for emerging growth companies, and served as chairman of the National Venture Capital Association. Her investment track record includes HubSpot, DocuSign, and Bill.com, all of which went on to complete public listings, and she co-founded VentureForward in 2014, an NVCA initiative focused on advancing women and underrepresented minorities across the venture ecosystem, earning her the NVCA's American Spirit Award in 2021.",
+    sources: [
+      { label: "Scale Venture Partners - Kate Mitchell", url: "https://www.scalevp.com/team/kate-mitchell" },
+      { label: "iHeart Podcast", url: "https://www.iheart.com/podcast/356-array-podcast-28107740/episode/rory-odriscoll-founder-of-scale-venture-49892844/" }
+    ]
+  },
+"bill-bowes": {
+    name: "Bill Bowes",
+    departedNote: "Not listed on usvp.com/team as captured 2026-08-22; that page rendered a roster including Casey Tansey, Dafina Toncheva and Dale Holladay. His entry here reflects his founding role, not a current one.",
+    firm: "U.S. Venture Partners",
+    firmSlug: "us-venture-partners",
+    title: "Co-Founder",
+    joinedYear: 1981,
+    education: ["BA, Economics, Stanford University", "MBA, Harvard University"],
+    previousExperience: [
+      "Investment Banker, Blyth & Co.",
+      "Board Member, Cetus Corporation (1972-1978)",
+      "Board Member, Raychem (1961-late 1970s)",
+      "Founding Shareholder, First Treasurer & Chairman, Amgen"
+    ],
+    investmentFocus: ["Enterprise Software", "Healthcare", "Biotechnology"],
+    notableInvestments: [
+      { name: "Check Point Software", ticker: "CHKP" },
+      { name: "SanDisk", ticker: null },
+      { name: "Ross Stores", ticker: "ROST" }
+    ],
+    boardSeats: [],
+    ipoCount: 5,
+    majorExits: 10,
+    careerTimeline: [
+      { year: "1961", event: "Joins the board of Raychem, serving until the late 1970s." },
+      { year: "1972", event: "Joins the board of Cetus Corporation, a pioneering biotechnology company." },
+      { year: "1980", event: "Becomes founding shareholder, first Treasurer, and Chairman of Amgen." },
+      { year: "1981", event: "Co-founds U.S. Venture Partners with Stuart Moldaw and Robert Sackman." },
+      { year: "2016", event: "Passes away on December 28, leaving behind a legacy as one of Silicon Valley's foundational biotech and venture figures." }
+    ],
+    biography: "Bill Bowes built a career at the very origins of both Silicon Valley venture capital and the modern biotechnology industry, joining the boards of Raychem and Cetus Corporation years before co-founding U.S. Venture Partners in 1981 with Stuart Moldaw and Robert Sackman. His most historically significant contribution came outside USVP entirely: Bowes was a founding shareholder and served as Amgen's first Treasurer and Chairman, helping build what became one of the world's largest biotechnology companies from its earliest days. At USVP, that same conviction in scientific and technical founders helped establish the firm as one of the longest-running and most successful early-stage investors in Silicon Valley history, backing more than 500 companies across four decades with 93-plus completed IPOs, spanning Check Point Software, SanDisk, Ross Stores, and Yammer. Bowes passed away in December 2016, leaving a legacy as one of the foundational figures connecting Silicon Valley's venture capital and biotechnology industries.",
+    sources: [
+      { label: "Wikipedia - Bill Bowes", url: "https://en.wikipedia.org/wiki/Bill_Bowes_(venture_capitalist)" },
+      { label: "Wikipedia - U.S. Venture Partners", url: "https://en.wikipedia.org/wiki/U.S._Venture_Partners" }
+    ]
+  },
+"rebecca-lynn": {
+    name: "Rebecca Lynn",
+    firm: "Canvas Prime",
+    firmSlug: "canvas-prime",
+    title: "Co-Founder & Managing Director",
+    joinedYear: 2013,
+    education: ["BS, Chemical Engineering, University of Missouri", "JD/MBA, UC Berkeley"],
+    previousExperience: [
+      "New Product Development, Procter & Gamble",
+      "Early Employee & VP Marketing, NextCard (scaled from 30 to 1,300 employees through IPO)",
+      "General Partner, Morgenthaler Ventures (2007-2013)"
+    ],
+    investmentFocus: ["Fintech", "Healthtech", "AI"],
+    notableInvestments: [
+      { name: "LendingClub", ticker: "LC" },
+      { name: "Doximity", ticker: "DOCS" },
+      { name: "Luminar Technologies", ticker: "LAZR" }
+    ],
+    boardSeats: [],
+    ipoCount: 3,
+    majorExits: 9,
+    careerTimeline: [
+      { year: "1998", event: "Moves to Silicon Valley as an early employee of NextCard, the first online credit card company, helping scale it from 30 to 1,300 employees through IPO." },
+      { year: "2007", event: "Begins her venture career at Morgenthaler Ventures, becoming a partner in 2012." },
+      { year: "2013", event: "Co-founds Canvas Ventures, a spinout from Morgenthaler; leads the firm's early-stage investment in LendingClub." },
+      { year: "2014", event: "LendingClub completes its IPO in December, the largest U.S. tech IPO of the year." },
+      { year: "2023", event: "Casetext, an early Canvas investment, is acquired by Thomson Reuters for $650 million in an all-cash deal." }
+    ],
+    biography: "Rebecca Lynn began her career as a chemical engineer, including work in a nuclear research reactor, before moving into product development at Procter & Gamble and then joining NextCard, the first online credit card company, as an early employee, helping scale it from 30 to 1,300 employees through its IPO. She began her venture career at Morgenthaler Ventures in 2007, becoming partner in 2012, before co-founding Canvas Ventures (now Canvas Prime) as a spinout in 2013 - closing her first fund the week Lehman Brothers collapsed. Her early-stage investment in LendingClub became the largest U.S. tech IPO of 2014, and her broader track record includes Doximity, Luminar Technologies, and Casetext, the AI-powered legal research platform Thomson Reuters acquired for $650 million in cash in 2023 after the company gained early access to GPT-4. A five-time Forbes Midas List honoree, Lynn has been recognized as a Senior Deal Maker by the Wall Street Journal and a Top Woman VC by the New York Times.",
+    sources: [
+      { label: "Canvas Prime - Rebecca Lynn", url: "https://www.canvas.vc/team-member/rebecca-lynn" },
+      { label: "Wikipedia - Rebecca Lynn", url: "https://en.wikipedia.org/wiki/Rebecca_Lynn_(venture_capitalist)" }
+    ]
+  },
+"tige-savage": {
+    name: "Tige Savage",
+    firm: "Revolution Ventures",
+    firmSlug: "revolution-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2005,
+    education: ["BA, University of Michigan"],
+    previousExperience: [
+      "Executive, Riggs National Corporation",
+      "Board Member, Allbritton Communications Company",
+      "EVP, Riggs Capital Partners (1998-2000, technology & media investments)",
+      "VP, Time Warner Ventures (2001-2003, technology & media investments)"
+    ],
+    investmentFocus: ["Consumer Technology", "Enterprise", "Marketplaces"],
+    notableInvestments: [
+      { name: "Booker", ticker: null },
+      { name: "LivingSocial", ticker: null },
+      { name: "Framebridge", ticker: null }
+    ],
+    boardSeats: ["Aiwyn", "ProRata.ai"],
+    ipoCount: 0,
+    majorExits: 10,
+    careerTimeline: [
+      { year: "1998", event: "Manages technology and media sector investments as EVP of Riggs Capital Partners." },
+      { year: "2001", event: "Manages technology and media investments as VP of Time Warner Ventures." },
+      { year: "2005", event: "Co-founds Revolution with Steve Case and Donn Davis in Washington, D.C." },
+      { year: "2013", event: "Leads the close of Revolution Ventures' first institutional fund at $200 million, exceeding its $150 million target." },
+      { year: "2018", event: "Booker, a Revolution Ventures portfolio company, is acquired by Mindbody for $150 million in March." }
+    ],
+    biography: "Tige Savage built nearly three decades of technology and media investing experience across Riggs Capital Partners and Time Warner Ventures before co-founding Revolution with Steve Case and Donn Davis in 2005. He now leads Revolution Ventures, the firm's institutionally-backed early-stage fund, built on the specific conviction that great companies are being systematically overlooked by investors concentrated in Silicon Valley, New York, and Boston. That geographic thesis produced real returns: Savage led or served on the board of numerous exited Revolution companies, including Booker (acquired by Mindbody), Framebridge (acquired by Graham Holdings), and Flexcar (acquired by Avis, the Zipcar predecessor deal), and Revolution Ventures has maintained top-quartile fund performance since inception by deliberately avoiding a strategy dependent on rare outlier bets. Savage has been named one of Washington, D.C.'s '100 Top Tech Titans' by Washingtonian Magazine five times, most recently in 2024.",
+    sources: [
+      { label: "Revolution - Tige Savage", url: "https://www.revolution.com/team-member/tige-savage" },
+      { label: "Wikipedia - Tige Savage", url: "https://en.wikipedia.org/wiki/Tige_Savage" }
+    ]
   }
 });
