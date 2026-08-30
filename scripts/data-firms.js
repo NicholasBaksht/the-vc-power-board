@@ -66,7 +66,7 @@ const firms = [
   thesis: "Speedinvest invests from pre-seed through growth across fintech, deep tech, AI, climate, and marketplaces through six specialized sector teams, describing its approach as 'seed at scale' with conviction-led capital and offices across Europe.",
   leadership: [
     { name: "Christian Miele", role: "Founder & CEO" },
-    { name: "Stefan Klestil", role: "Managing Partner" }
+    { name: "Stefan Klestil", role: "Managing Partner", profileSlug: "stefan-klestil" }
   ],
   timeline: [
     { year: "2011", event: "Speedinvest founded in Vienna." }
@@ -108,7 +108,7 @@ const firms = [
   thesis: "ALLVP backs high-impact innovators improving access to services through technology across Mexico and Latin America, investing in fintech, marketplaces, and healthtech. Co-founders Federico Antoni and Fernando Lelo de Larrea built the firm into one of Mexico's most active early-stage investors.",
   leadership: [
     { name: "Federico Antoni", role: "Co-Founder", profileSlug: "federico-antoni" },
-    { name: "Fernando Lelo de Larrea", role: "Co-Founder" }
+    { name: "Fernando Lelo de Larrea", role: "Co-Founder", profileSlug: "fernando-lelo-de-larrea" }
   ],
   timeline: [
     { year: "2012", event: "Federico Antoni and Fernando Lelo de Larrea found ALLVP in Mexico City." }
@@ -211,9 +211,9 @@ const firms = [
   aum: "Not publicly disclosed",
   thesis: "ZhenFund is one of China's most active early-stage investors, backing entrepreneurial founders at seed and Series A across technology, consumer, and education, leveraging co-founders Bob Xu and Victor Wang's serial-entrepreneur network from New Oriental.",
   leadership: [
-    { name: "Bob Xiaoping Xu", role: "Co-Founder" },
-    { name: "Victor Wang", role: "Co-Founder" },
-    { name: "Anna Fang", role: "Partner & Co-CEO" }
+    { name: "Bob Xiaoping Xu", role: "Co-Founder", profileSlug: "bob-xiaoping-xu" },
+    { name: "Victor Wang", role: "Co-Founder", profileSlug: "victor-wang-zhenfund" },
+    { name: "Anna Fang", role: "Partner & Co-CEO", profileSlug: "anna-fang" }
   ],
   timeline: [
     { year: "2011", event: "Bob Xu and Victor Wang found ZhenFund in partnership with Sequoia China." }
@@ -325,8 +325,8 @@ holdings: []
   aum: "$19B invested cumulatively across funds (not a current single fund figure)",
   thesis: "Polaris invests across healthtech, life sciences, and B2B software, with a long history of backing biotech companies through to IPO - including Alnylam Pharmaceuticals, which went public in 2004. The firm supports entrepreneurs from seed through growth stage.",
   leadership: [
-    { name: "Amy Schulman", role: "General Partner" },
-    { name: "Brian Chee", role: "General Partner" }
+    { name: "Amy Schulman", role: "General Partner", profileSlug: "amy-schulman" },
+    { name: "Brian Chee", role: "General Partner", profileSlug: "brian-chee" }
   ],
   timeline: [
     { year: "1996", event: "Polaris Partners founded." },
@@ -385,8 +385,8 @@ holdings: []
   aum: "$500M fund",
   thesis: "Workday Ventures backs emerging enterprise software companies across AI, data, and infrastructure that Workday sees as shaping the future of work, leveraging Workday's own AI platform and customer ecosystem.",
   leadership: [
-    { name: "Michael Magaro", role: "SVP, Workday" },
-    { name: "Barbry McGann", role: "SVP, Workday" }
+    { name: "Michael Magaro", role: "SVP, Workday", profileSlug: "michael-magaro" },
+    { name: "Barbry McGann", role: "SVP, Workday", profileSlug: "barbry-mcgann" }
   ],
   timeline: [
     { year: "2018", event: "Workday Ventures launches with a $500 million fund." }
@@ -467,8 +467,8 @@ holdings: []
   aum: "$270M (Fund I)",
   thesis: "Konvoy invests at the intersection of gaming, culture, and technology, betting on the future of interactive entertainment through fintech-for-games tools, live-ops infrastructure, and new platforms. Founders Jackson Vaughan and Josh Chapman are both former gaming industry executives.",
   leadership: [
-    { name: "Jackson Vaughan", role: "Co-Founder & General Partner" },
-    { name: "Josh Chapman", role: "Co-Founder & Managing Partner" }
+    { name: "Jackson Vaughan", role: "Co-Founder & General Partner", profileSlug: "jackson-vaughan" },
+    { name: "Josh Chapman", role: "Co-Founder & Managing Partner", profileSlug: "josh-chapman" }
   ],
   timeline: [
     { year: "2018", event: "Konvoy Ventures founded by Jackson Vaughan and Josh Chapman." }
@@ -488,8 +488,8 @@ holdings: []
   aum: "$200M (Fund I)",
   thesis: "Makers Fund is a global early-stage fund backing video game studios and consumer entertainment platforms across the value chain of gaming and XR, with an international presence spanning San Francisco, Seoul, and Beijing.",
   leadership: [
-    { name: "Jay Chi", role: "CEO & Co-Founder" },
-    { name: "Michael Cheung", role: "Co-Founder" }
+    { name: "Jay Chi", role: "CEO & Co-Founder", profileSlug: "jay-chi" },
+    { name: "Michael Cheung", role: "Co-Founder", profileSlug: "michael-cheung" }
   ],
   timeline: [
     { year: "2018", event: "Jay Chi and Michael Cheung found Makers Fund and raise its $200M debut fund." }
@@ -595,7 +595,7 @@ holdings: []
   thesis: "Pantera invests in digital currencies and blockchain-enabled companies across all stages, and is one of the oldest funds in the crypto space. Founder Dan Morehead previously ran macro trading at Tiger Management before launching Pantera in 2003 and later pivoting it fully to digital assets.",
   leadership: [
     { name: "Dan Morehead", role: "Founder & CEO", profileSlug: "dan-morehead" },
-    { name: "Paul Veradittakit", role: "Managing Partner" }
+    { name: "Paul Veradittakit", role: "Managing Partner", profileSlug: "paul-veradittakit" }
   ],
   timeline: [
     { year: "2003", event: "Dan Morehead founds Pantera Capital." },
@@ -617,7 +617,7 @@ holdings: []
   thesis: "Variant invests in foundational blockchain protocols and crypto-native networks, backing projects like Uniswap, Phantom, Mirror, and Flashbots. Founder Jesse Walden previously led crypto investments at a16z before launching Variant in 2020.",
   leadership: [
     { name: "Jesse Walden", role: "Founder & Managing Partner", profileSlug: "jesse-walden" },
-    { name: "Alana Levin", role: "Partner" }
+    { name: "Alana Levin", role: "Partner", profileSlug: "alana-levin" }
   ],
   timeline: [
     { year: "2020", event: "Jesse Walden founds Variant Fund after leading crypto investments at a16z." }
@@ -4584,7 +4584,7 @@ holdings: []
     thesis: "Gobi Partners was founded in 2002 by Thomas Tsao, Lawrence Tse, and Wai Kit Lau, three former employees of WI Harper, a San Francisco venture firm, who set out to build a genuinely Pan-Asian investment platform rather than a single-country fund. The firm has survived two regional shocks since founding - the SARS outbreak and the Global Financial Crisis - which Gobi credits for a resilience-first investment philosophy that still shapes its approach today. That philosophy has scaled into one of the most interconnected venture platforms in Asia: 16 offices spanning Greater China, Southeast Asia, Pakistan, and MENA, more than 400 startups backed across 20-plus funds, and four portfolio companies that have reached unicorn status - Carsome, Animoca Brands, Amber Group, and Prenetics - with roughly $2 billion currently under management.",
     leadership: [
       { name: "Thomas Tsao", role: "Co-Founder & Chairman", profileSlug: "thomas-tsao" },
-      { name: "Lawrence Tse", role: "Co-Founder" },
+      { name: "Lawrence Tse", role: "Co-Founder", profileSlug: "lawrence-tse" },
       { name: "Wai Kit Lau", role: "Advisor", profileSlug: "wai-kit-lau" }
     ],
     timeline: [
@@ -4833,7 +4833,7 @@ holdings: []
     leadership: [
       { name: "Philip Bilden", role: "Co-Founder & Managing Partner", profileSlug: "philip-bilden" },
       { name: "Raj Shah", role: "Co-Founder & Managing Partner", profileSlug: "raj-shah" },
-      { name: "Michael Brown", role: "Partner" }
+      { name: "Michael Brown", role: "Partner", profileSlug: "michael-brown-shield" }
     ],
     timeline: [
       { year: "2015", event: "Philip Bilden and Raj Shah begin planning Shield Capital, initially focused on cybersecurity seed investments." },
@@ -5375,7 +5375,7 @@ holdings: []
     leadership: [
       { name: "Yoav Leitersdorf", role: "Founder & Managing Partner", profileSlug: "yoav-leitersdorf" },
       { name: "Ofer Schreiber", role: "Senior Partner & Head of Israel Office", profileSlug: "ofer-schreiber" },
-      { name: "John Brennan", role: "Senior Partner" }
+      { name: "John Brennan", role: "Senior Partner", profileSlug: "john-brennan" }
     ],
     timeline: [
       { year: "2007", event: "Yoav Leitersdorf founds YL Ventures." },
@@ -5750,7 +5750,7 @@ holdings: []
     thesis: "First Round Capital was founded in 2004 by Josh Kopelman, a serial entrepreneur who had already taken one company public and sold another to eBay, together with Howard Morgan, a co-founder of Idealab and founding president of Renaissance Technologies. The firm set out specifically to reinvent seed-stage investing, deliberately writing small initial checks - often just $500,000 to $1.5 million - to companies with little more than a founding team and an idea. That approach paid off spectacularly in 2010, when First Round led Uber's first-ever institutional funding round, a bet that grew into one of the highest-multiple returns in venture capital history.",
     leadership: [
       { name: "Josh Kopelman", role: "Founder & Managing Director", profileSlug: "josh-kopelman" },
-      { name: "Howard Morgan", role: "Co-Founder" }
+      { name: "Howard Morgan", role: "Co-Founder", profileSlug: "howard-morgan" }
     ],
     timeline: [
       { year: "2004", event: "Josh Kopelman and Howard Morgan found First Round Capital to specialize in seed-stage investing." },
@@ -6235,7 +6235,7 @@ holdings: []
     thesis: "Samsung NEXT is Samsung's startup investing and ecosystem-building arm, founded in 2012 with a mission unusually broad for a corporate investor: it invests, acquires, and partners with companies to unlock value across Samsung's entire ecosystem, not just a single product line. That breadth shows up directly in its portfolio architecture, spanning AI, fintech, healthtech, infrastructure, media tech, and blockchain, backed by a team of 38 people - 20 investors, 12 in operational roles, and a six-person platform team dedicated to helping portfolio companies connect with Samsung's global network of engineers and designers. Rather than one marquee outcome, the firm's real track record is cumulative: more than 230 investments and 330-plus companies backed since inception.",
     leadership: [
       { name: "David Lee", role: "Head of Samsung NEXT", profileSlug: "david-lee-samsung-next" },
-      { name: "Brendon Kim", role: "Head of Investments" }
+      { name: "Brendon Kim", role: "Head of Investments", profileSlug: "brendon-kim" }
     ],
     timeline: [
       { year: "2012", event: "Samsung founds Samsung NEXT (originally Samsung Global Innovation Center)." },
@@ -6313,8 +6313,8 @@ holdings: []
     thesis: "Citi Ventures has operated since 2010 as an investing and commercialization catalyst for Citi's own businesses and clients, a mandate that matters more inside a regulated global bank than at most corporate VCs - finding technology that can genuinely move Citi's own business, not just generate financial returns. Under Arvind Purushotham, who joined as Managing Director in January 2011 to help build the strategic venture investing program, the firm spans Seed through Series F and beyond across fintech, payments, enterprise software, cloud infrastructure, and cybersecurity. In 2020 the group launched the Citi Impact Fund, a dedicated vehicle backing women and minority entrepreneurs across sustainability, workforce development, and financial inclusion, and by its 15th year the firm had invested in and partnered with more than 200 startups.",
     leadership: [
       { name: "Arvind Purushotham", role: "Global Head of Citi Ventures", profileSlug: "arvind-purushotham" },
-      { name: "Andrew Murray", role: "Investing Leader" },
-      { name: "Jeff Flynn", role: "Investing Leader" }
+      { name: "Andrew Murray", role: "Investing Leader", profileSlug: "andrew-murray" },
+      { name: "Jeff Flynn", role: "Investing Leader", profileSlug: "jeff-flynn" }
     ],
     timeline: [
       { year: "2010", event: "Citi launches Citi Ventures." },
@@ -6453,7 +6453,7 @@ holdings: []
     thesis: "Airbus Ventures launched in 2015 as a hybrid venture fund backed by Airbus, led by Managing Partner Thomas d'Halluin, who brought two decades of Airbus manufacturing, supply chain, and finance experience to the role after serving as Chief of Staff to the company's CFO. Deliberately structured to maintain independence from Airbus's corporate decision-making while raising outside capital, the fund targets startups transforming 'the way we fly, move, and live' - autonomous vehicles, satellite technology, additive manufacturing, and urban air mobility, backed by genuine aerospace domain expertise most generalist deep tech investors lack. That positioning made Airbus Ventures a key early investor in IonQ, which became the world's first publicly traded pure-play quantum computing company via SPAC merger in 2021, and the firm's 62-company portfolio has since produced 4 IPOs and 7 acquisitions, with $465 million raised across three funds.",
     leadership: [
       { name: "Thomas d'Halluin", role: "Managing Partner", profileSlug: "thomas-dhalluin" },
-      { name: "Claas Kohl", role: "Partner" }
+      { name: "Claas Kohl", role: "Partner", profileSlug: "claas-kohl" }
     ],
     timeline: [
       { year: "2015", event: "Airbus Ventures launches in Menlo Park." },
@@ -7017,7 +7017,7 @@ holdings: []
     leadership: [
       { name: "Garry Tan", role: "President & CEO", profileSlug: "garry-tan" },
       { name: "Jared Friedman", role: "Managing Partner", profileSlug: "jared-friedman" },
-      { name: "Harj Taggar", role: "Managing Partner" },
+      { name: "Harj Taggar", role: "Managing Partner", profileSlug: "harj-taggar" },
       { name: "Jessica Livingston", role: "Co-Founder", profileSlug: "jessica-livingston" }
     ],
     timeline: [
@@ -7229,13 +7229,11 @@ holdings: []
     aum: "Not publicly disclosed",
     thesis: "A pre-seed and early-stage venture firm built around accelerator programs: Accelerator Funds invest on standardised terms in companies inside Techstars programs, and Venture Funds take follow-on positions in graduates. Operates on a stated 'Give First' philosophy.",
     leadership: [
-      {
-        name: "David Cohen",
-        role: "Co-Founder, Chairman & CEO"
-      },
+      { name: "David Cohen", role: "Co-Founder, Chairman & CEO", profileSlug: "david-cohen" },
       {
         name: "Brad Feld",
-        role: "Co-Founder"
+        role: "Co-Founder",
+        profileSlug: "brad-feld"
       }
     ],
     timeline: [
@@ -7375,18 +7373,9 @@ holdings: []
         profileSlug: "bill-maris"
       },
       { name: "Andy Harrison", role: "CEO & General Partner", profileSlug: "andy-harrison" },
-      {
-        name: "Andy Conrad",
-        role: "General Partner"
-      },
-      {
-        name: "Michael Pellini",
-        role: "General Partner"
-      },
-      {
-        name: "Steve Kafka",
-        role: "General Partner"
-      }
+      { name: "Andy Conrad", role: "General Partner", profileSlug: "andy-conrad" },
+      { name: "Michael Pellini", role: "General Partner", profileSlug: "michael-pellini" },
+      { name: "Steve Kafka", role: "General Partner", profileSlug: "steve-kafka" }
     ],
     timeline: [
       {
@@ -7419,19 +7408,13 @@ holdings: []
     aum: "Not publicly disclosed",
     thesis: "Backs B2B software founders at pre-seed and seed, dedicated since its second fund to earliest-stage SaaS application and infrastructure companies in or moving to Boston. Runs an open-source investing model that profit-shares with the expert community supporting its startups.",
     leadership: [
-      {
-        name: "Michael Skok",
-        role: "Co-Founder & Partner"
-      },
+      { name: "Michael Skok", role: "Co-Founder & Partner", profileSlug: "michael-skok" },
       {
         name: "John Pearce",
         role: "Co-Founder & Partner",
         profileSlug: "john-pearce"
       },
-      {
-        name: "Richard Dulude",
-        role: "Co-Founder & Partner"
-      }
+      { name: "Richard Dulude", role: "Co-Founder & Partner", profileSlug: "richard-dulude" }
     ],
     timeline: [
       {
@@ -7769,22 +7752,10 @@ holdings: []
         name: "Robert Dighero",
         role: "Founding Partner", profileSlug: "robert-dighero"
       },
-      {
-        name: "Sarah Stafford",
-        role: "Partner, General Counsel"
-      },
-      {
-        name: "Andrew Jenkins",
-        role: "Partner"
-      },
-      {
-        name: "Will Orde",
-        role: "Partner"
-      },
-      {
-        name: "Greg Bennett",
-        role: "Partner"
-      }
+      { name: "Sarah Stafford", role: "Partner, General Counsel", profileSlug: "sarah-stafford" },
+      { name: "Andrew Jenkins", role: "Partner", profileSlug: "andrew-jenkins" },
+      { name: "Will Orde", role: "Partner", profileSlug: "will-orde" },
+      { name: "Greg Bennett", role: "Partner", profileSlug: "greg-bennett" }
     ],
     timeline: [
       {
@@ -7876,14 +7847,8 @@ holdings: []
         role: "Chairman & Managing Partner",
         profileSlug: "jean-bourcereau"
       },
-      {
-        name: "Stephan Wirries",
-        role: "General Partner"
-      },
-      {
-        name: "Audrey Soussan",
-        role: "General Partner"
-      }
+      { name: "Stephan Wirries", role: "General Partner", profileSlug: "stephan-wirries" },
+      { name: "Audrey Soussan", role: "General Partner", profileSlug: "audrey-soussan" }
     ],
     timeline: [
       {
@@ -8118,27 +8083,15 @@ holdings: []
     aum: "€400M (second fund, 2024)",
     thesis: "An investment platform run exclusively by former founders and operators rather than career investors, created because only around 8% of European investors have operator backgrounds against more than half in the US. Leads seed through Series A rounds.",
     leadership: [
-      {
-        name: "Taavet Hinrikus",
-        role: "Co-Founder"
-      },
+      { name: "Taavet Hinrikus", role: "Co-Founder", profileSlug: "taavet-hinrikus" },
       {
         name: "Sten Tamkivi",
         role: "Co-Founder & Partner",
         profileSlug: "sten-tamkivi"
       },
-      {
-        name: "Ian Hogarth",
-        role: "Co-Founder"
-      },
-      {
-        name: "Khaled Helioui",
-        role: "Co-Founder"
-      },
-      {
-        name: "Carina Namih",
-        role: "Partner"
-      }
+      { name: "Ian Hogarth", role: "Co-Founder", profileSlug: "ian-hogarth" },
+      { name: "Khaled Helioui", role: "Co-Founder", profileSlug: "khaled-helioui" },
+      { name: "Carina Namih", role: "Partner", profileSlug: "carina-namih" }
     ],
     timeline: [
       {
@@ -8359,18 +8312,12 @@ holdings: []
     aum: "$265M (Fund XIII, 2023)",
     thesis: "Backs first-principles founders building the future of enterprise technology, on the view that generative AI is creating the next wave of transformational enterprise software the way cloud computing did before it. Invests from inception through Series A.",
     leadership: [
-      {
-        name: "Mark Fernandes",
-        role: "Managing Director"
-      },
+      { name: "Mark Fernandes", role: "Managing Director", profileSlug: "mark-fernandes" },
       {
         name: "Tim Guleri",
         role: "Managing Director", profileSlug: "tim-guleri"
       },
-      {
-        name: "Ben Yu",
-        role: "Managing Director"
-      }
+      { name: "Ben Yu", role: "Managing Director", profileSlug: "ben-yu" }
     ],
     timeline: [
       {
@@ -8534,10 +8481,7 @@ holdings: []
         name: "Lei Jun",
         role: "Founding Partner & Chairman", profileSlug: "lei-jun"
       },
-      {
-        name: "Tuck Lye Koh",
-        role: "Co-Founder"
-      }
+      { name: "Tuck Lye Koh", role: "Co-Founder", profileSlug: "tuck-lye-koh" }
     ],
     timeline: [
       {
@@ -8572,10 +8516,7 @@ holdings: []
         name: "Lara Lemann",
         role: "Co-Founder & Managing Partner", profileSlug: "lara-lemann"
       },
-      {
-        name: "Monica Saggioro",
-        role: "Co-Founder & Managing Partner"
-      }
+      { name: "Monica Saggioro", role: "Co-Founder & Managing Partner", profileSlug: "monica-saggioro" }
     ],
     timeline: [
       {
@@ -8719,17 +8660,12 @@ holdings: []
         name: "Manish Kheterpal",
         role: "Co-Founder & Managing Partner", profileSlug: "manish-kheterpal"
       },
-      {
-        name: "Ashish Jain",
-        role: "Co-Founder & Partner"
-      },
-      {
-        name: "Anjali Sosale",
-        role: "Partner"
-      },
+      { name: "Ashish Jain", role: "Co-Founder & Partner", profileSlug: "ashish-jain" },
+      { name: "Anjali Sosale", role: "Partner", profileSlug: "anjali-sosale" },
       {
         name: "Ravi Kaushik",
-        role: "Partner"
+        role: "Partner",
+        profileSlug: "ravi-kaushik"
       }
     ],
     timeline: [
@@ -8770,14 +8706,8 @@ holdings: []
         name: "Sanjay Swamy",
         role: "Managing Partner", profileSlug: "sanjay-swamy"
       },
-      {
-        name: "Shripati Acharya",
-        role: "Managing Partner"
-      },
-      {
-        name: "Amit Somani",
-        role: "Managing Partner"
-      }
+      { name: "Shripati Acharya", role: "Managing Partner", profileSlug: "shripati-acharya" },
+      { name: "Amit Somani", role: "Managing Partner", profileSlug: "amit-somani" }
     ],
     timeline: [
       {
@@ -9426,14 +9356,8 @@ holdings: []
         role: "Cofounder & Managing Director",
         profileSlug: "miriam-rivera"
       },
-      {
-        name: "Clint Korver",
-        role: "Cofounder & Managing Director"
-      },
-      {
-        name: "Steve Reale",
-        role: "General Partner & CFO"
-      }
+      { name: "Clint Korver", role: "Cofounder & Managing Director", profileSlug: "clint-korver" },
+      { name: "Steve Reale", role: "General Partner & CFO", profileSlug: "steve-reale" }
     ],
     timeline: [
       {
@@ -9475,14 +9399,8 @@ holdings: []
         role: "Co-Founder & Managing Partner",
         profileSlug: "chris-hemmeter"
       },
-      {
-        name: "Mark Farrell",
-        role: "Co-Founder"
-      },
-      {
-        name: "Tyler Carrico",
-        role: "Managing Partner"
-      }
+      { name: "Mark Farrell", role: "Co-Founder", profileSlug: "mark-farrell" },
+      { name: "Tyler Carrico", role: "Managing Partner", profileSlug: "tyler-carrico" }
     ],
     timeline: [
       {
@@ -9526,14 +9444,8 @@ holdings: []
         role: "Managing Partner",
         profileSlug: "serena-williams"
       },
-      {
-        name: "Beth Ferreira",
-        role: "General Partner"
-      },
-      {
-        name: "Sharla Grass",
-        role: "Partner"
-      }
+      { name: "Beth Ferreira", role: "General Partner", profileSlug: "beth-ferreira" },
+      { name: "Sharla Grass", role: "Partner", profileSlug: "sharla-grass" }
     ],
     timeline: [
       {
@@ -9710,7 +9622,7 @@ holdings: []
       { name: "Kent Ho", role: "Founder & General Partner", profileSlug: "kent-ho" },
       { name: "Shvet Jain", role: "General Partner", profileSlug: "shvet-jain" },
       { name: "Andrew Miklas", role: "Venture Partner", profileSlug: "andrew-miklas" },
-      { name: "Justin Wong", role: "Partner" },
+      { name: "Justin Wong", role: "Partner", profileSlug: "justin-wong" },
       { name: "Victor Pang", role: "Partner", profileSlug: "victor-pang" },
     ],
     timeline: [
@@ -9793,7 +9705,7 @@ holdings: []
       { name: "Tea Elezi", role: "General Partner", profileSlug: "tea-elezi" },
       { name: "Thijs Dijkman", role: "General Partner", profileSlug: "thijs-dijkman" },
       { name: "David Zwagemaker", role: "Partner", profileSlug: "david-zwagemaker" },
-      { name: "Philippe von Klitzing", role: "Partner" },
+      { name: "Philippe von Klitzing", role: "Partner", profileSlug: "philippe-von-klitzing" },
     ],
     timeline: [
       { year: "2008", event: "Peak started when a group of five entrepreneurs came together to collectively invest in founders." },
@@ -9822,7 +9734,7 @@ holdings: []
       { name: "Fatin El Azear", role: "CFO/Partner", profileSlug: "fatin-el-azear" },
       { name: "Dorus Olgers", role: "Partner", profileSlug: "dorus-olgers" },
       { name: "Patrick Polak", role: "Partner Fund I-IV", profileSlug: "patrick-polak" },
-      { name: "Frank Claassen", role: "Partner Fund I-IV" },
+      { name: "Frank Claassen", role: "Partner Fund I-IV", profileSlug: "frank-claassen" },
     ],
     timeline: [
       { year: "2000", event: "Newion founded; Patrick Polak co-founds the firm." },
@@ -9851,7 +9763,7 @@ holdings: []
       { name: "Sander Vonk", role: "Managing Partner", profileSlug: "sander-vonk" },
       { name: "Koen De Waele", role: "General Partner & CFO", profileSlug: "koen-de-waele" },
       { name: "Stan Jeanty", role: "Principal", profileSlug: "stan-jeanty" },
-      { name: "Michel Akkermans", role: "Chairman" },
+      { name: "Michel Akkermans", role: "Chairman", profileSlug: "michel-akkermans" },
     ],
     timeline: [
       { year: "2019", event: "Announced a second fund with a €35M initial closing to invest in Benelux startups." },
@@ -9957,8 +9869,8 @@ holdings: []
       { name: "Alan O'Connell", role: "Partner", profileSlug: "alan-oconnell" },
       { name: "Bruno Montanari", role: "Partner", profileSlug: "bruno-montanari" },
       { name: "Jennifer McMahon", role: "Partner", profileSlug: "jennifer-mcmahon" },
-      { name: "Andrew Duignan", role: "CFO & Partner" },
-      { name: "Maud Lazare", role: "Investor Relations & Partner" },
+      { name: "Andrew Duignan", role: "CFO & Partner", profileSlug: "andrew-duignan" },
+      { name: "Maud Lazare", role: "Investor Relations & Partner", profileSlug: "maud-lazare" },
       { name: "Jeanne Bolger", role: "Venture Partner", profileSlug: "jeanne-bolger" },
     ],
     timeline: [
@@ -10306,7 +10218,7 @@ holdings: []
       { name: "Matthew Cowan", role: "General Partner", profileSlug: "matthew-cowan" },
       { name: "T.J. Rylander", role: "General Partner", profileSlug: "tj-rylander" },
       { name: "Moshe Zilberstein", role: "General Partner", profileSlug: "moshe-zilberstein" },
-      { name: "Jonathan Barek", role: "Chief Operating Officer" },
+      { name: "Jonathan Barek", role: "Chief Operating Officer", profileSlug: "jonathan-barek" },
     ],
     timeline: [
       { year: "2016", event: "Siemens announces next47 as a separate unit for startups with €1 billion committed over five years; operations begin 1 October 2016" },
