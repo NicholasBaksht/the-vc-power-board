@@ -74,7 +74,15 @@ const BFP_EQUIV = {
   'Industrial Technology': ['Industrial & Manufacturing Technology'],
   'Manufacturing': ['Industrial & Manufacturing Technology'],
   'Proptech': ['Real Estate Tech'],
-  'Media': ['Consumer']
+  'Media': ['Consumer'],
+  'Crypto': ['Crypto'],
+  'DeFi': ['Crypto'],
+  'Legal Tech': ['Legal Tech'],
+  'Foodtech': ['Foodtech', 'Agtech'],
+  'Agtech': ['Agtech', 'Foodtech'],
+  'Diagnostics': ['Diagnostics', 'Healthcare'],
+  'Medical Devices': ['Medical Devices', 'Healthcare'],
+  'Real Estate Tech': ['Real Estate Tech']
 };
 const BFP_KEYWORDS = {
   'Crypto': /crypto|blockchain|web3|nft/i,
@@ -87,10 +95,36 @@ const BFP_KEYWORDS = {
   'Space': /space|satellite|orbital|launch/i
 };
 
+/* Row labels arrive from several pipelines (hand research, deal
+   taxonomy, company reference), so a few spellings of the same sector
+   coexist: "ai", "defense-tech", "Developer Tools". Canonicalise before
+   comparing - this is display normalisation, never a widening of what
+   counts as a match. */
+const BFP_LABEL_CANON = {
+  'ai': 'AI',
+  'defense-tech': 'Defense Tech',
+  'developer tools': 'Developer Tools & Infrastructure',
+  'developer tools & infrastructure': 'Developer Tools & Infrastructure',
+  'enterprise software': 'Enterprise Software',
+  'climate': 'Climate & Energy',
+  'climate & energy': 'Climate & Energy',
+  'digital health': 'Digital Health',
+  'consumer health': 'Consumer Health',
+  'real estate tech': 'Real Estate Tech',
+  'legal tech': 'Legal Tech',
+  'crypto': 'Crypto'
+};
+function bfpCanonSector(label) {
+  if (!label) return null;
+  const k = String(label).trim().toLowerCase();
+  return BFP_LABEL_CANON[k] || String(label).trim();
+}
+
 function bfpRowMatchesSector(row, founderLabel) {
   if (!row.sector && !row.subsector) return false;
   const eq = BFP_EQUIV[founderLabel];
-  if (eq && row.sector && eq.indexOf(row.sector) >= 0) return true;
+  const canon = bfpCanonSector(row.sector);
+  if (eq && canon && eq.indexOf(canon) >= 0) return true;
   const kw = BFP_KEYWORDS[founderLabel];
   if (kw && kw.test((row.sector || '') + ' ' + (row.subsector || ''))) return true;
   return false;
@@ -242,12 +276,56 @@ function bfpReasons(x, ask, firmName, stageOnly) {
   return out.slice(0, 3);
 }
 
-/* Compact module inside a Power Match firm card. Empty string when
-   there is no responsible recommendation to make. */
+/* COVERAGE LINE - what to say when no recommendation is warranted.
+
+   B5 says never force a named recommendation, and that stands: this
+   never names anyone. But silence is also information the founder
+   cannot act on, so the card states plainly what Power Board knows
+   about people at this firm and why it is not naming one. Three
+   honest states, in order of how much is known. */
+function bfpCoverageHtml(firmSlug) {
+  if (typeof pbehCompute !== 'function') return '';
+  const ask = bfpFounderAsk();
+  const slugs = bfpFirmIndex()[firmSlug] || [];
+  if (!slugs.length) return '';                 // nothing tracked: say nothing
+
+  let current = 0, withRows = 0, sectorRelevant = 0;
+  slugs.forEach(function (sl) {
+    const p = partnerProfiles[sl];
+    if (p.departedYear != null || p.departedNote) return;
+    current++;
+    const c = pbehCompute(sl);
+    if (!c || !c.n) return;
+    withRows++;
+    const rel = c.careerRows.filter(function (r) {
+      return ask.sectors.some(function (fs) { return bfpRowMatchesSector(r, fs); });
+    }).length;
+    if (rel) sectorRelevant++;
+  });
+  if (!current) return '';
+
+  const people = current + (current === 1 ? ' partner' : ' partners') + ' tracked';
+  const sectorText = ask.sectors.length === 1 ? ask.sectors[0] : 'your sectors';
+  let why;
+  if (!withRows) {
+    why = 'no attributable investments researched yet';
+  } else if (!sectorRelevant) {
+    why = 'none with attributable ' + sectorText + ' investments yet';
+  } else {
+    why = 'not enough sourced ' + sectorText + ' investments to name one yet';
+  }
+  return '<div class="bfp bfp-thin">' +
+    '<div class="bfp-label">Partners</div>' +
+    '<div class="bfp-cov">' + people + ' &middot; ' + why + '</div>' +
+    '</div>';
+}
+
+/* Compact module inside a Power Match firm card. Falls back to the
+   coverage line when there is no responsible recommendation to make. */
 function bfpModuleHtml(firmSlug) {
   try {
     const res = bfpEvaluate(firmSlug);
-    if (!res) return '';
+    if (!res) return bfpCoverageHtml(firmSlug);
     const firm = (typeof firms !== 'undefined') ? firms.find(function (f) { return f.slug === firmSlug; }) : null;
     const firmName = firm ? firm.name : firmSlug;
     const x = res.primary;
