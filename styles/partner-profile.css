@@ -644,3 +644,7 @@
 .bfp-fb-q { font-size: 0.72rem; color: #8fa0bf; }
 .bfp-fb-btn { font-size: 0.72rem; color: #b8c2d6; background: none; border: 1px solid rgba(140,160,200,0.25); border-radius: 4px; padding: 2px 8px; cursor: pointer; }
 .bfp-fb-btn:hover { border-color: #5479B5; color: #e8ecf4; }
+
+/* Best-Fit Partner: honest coverage line when no recommendation is warranted */
+.bfp-thin { padding-top: 8px; }
+.bfp-cov { font-size: 0.78rem; color: #8fa0bf; line-height: 1.45; }
