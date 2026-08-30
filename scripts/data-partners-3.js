@@ -1,706 +1,5 @@
 /* data-partners shard 3 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
-"joe-marchese": {
-    name: "Joe Marchese",
-    firm: "Human Ventures",
-    firmSlug: "human-ventures",
-    title: "Executive Chairman",
-    joinedYear: 2015,
-    investmentFocus: ["Media", "Consumer"],
-    education: [],
-    previousExperience: ["Founder and CEO, true[X]", "President of Advertising Revenue, Fox Networks Group"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2014, event: "Sold true[X] to Fox, reported at $200 million" }, { year: 2015, event: "Co-founded Human Ventures with Heather Hartnett" }, { year: 2019, event: "Returned to Human Ventures full time as entrepreneur-in-residence after leaving Fox" }],
-    biography: "Joe Marchese is Executive Chairman of Human Ventures, which he co-founded with Heather Hartnett and announced in March 2015. He founded the advertising technology company true[X], which MediaPost reported was sold to Fox for $200 million in 2014. He then served as president of advertising revenue for Fox Networks Group before returning to entrepreneurship. MediaPost reported in May 2019 that he had rejoined Human Ventures as entrepreneur-in-residence. His education and individual investment attributions are not published on Human Ventures' own site.",
-    sources: [{ label: "Human Ventures - Our Team", url: "https://human.vc/our-team/" }, { label: "MediaPost - Former Fox Ad Chief Marchese Returns To Entrepreneurism", url: "https://www.mediapost.com/publications/article/336424/former-fox-ad-chief-marchese-returns-to-entreprene.html" }]
-  },
-"michael-letta": {
-    name: "Michael Letta",
-    firm: "Human Ventures",
-    firmSlug: "human-ventures",
-    title: "General Partner, COO",
-    joinedYear: null,
-    investmentFocus: [],
-    education: ["BS/BA, The Ohio State University"],
-    previousExperience: ["Chief Financial Officer, charity: water"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Michael Letta is General Partner and Chief Operating Officer of Human Ventures, where he oversees the firm's financial and operational functions. He holds a BS/BA from The Ohio State University and is a Certified Public Accountant. He was previously chief financial officer at charity: water, where his Forbes Business Council profile says he helped scale the organization from an NYC startup to a global operation. Earlier in his career he held roles at Thomson Media and Deloitte. In 2020 he co-launched Human Ventures' Humans in the Wild entrepreneur-in-residence program. His joining year and personal investment list are not published on Human Ventures' own site.",
-    sources: [{ label: "Human Ventures - Our Team", url: "https://human.vc/our-team/" }, { label: "Forbes Business Council - Michael Letta", url: "https://councils.forbes.com/profile/Michael-Letta-General-Partner-COO-Human-Ventures-Co/d5f3949b-5d04-43c7-8fee-9e389102795b" }]
-  },
-"aike-ho": {
-    name: "Aike Ho",
-    firm: "ACME Capital",
-    firmSlug: "acme-capital",
-    title: "Partner",
-    joinedYear: 2017,
-    investmentFocus: ["Healthcare", "Biotech", "Robotics", "Consumer"],
-    education: ["Yale University"],
-    previousExperience: [],
-    boardSeats: ["Conceivable Life Sciences", "Arya Health", "Camber", "Brightside"],
-    notableInvestments: [{ name: "Arya Health", ticker: null }, { name: "Brightside", ticker: null }, { name: "Camber", ticker: null }, { name: "Canopy", ticker: null }, { name: "Conceivable Life Sciences", ticker: null }, { name: "Partiful", ticker: null }, { name: "Tia", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2017, event: "Joined ACME Capital" }, { year: 2022, event: "Promoted to Partner at ACME Capital" }],
-    biography: "Aike Ho is a Partner at ACME Capital, where she focuses on frontier health investments. She invests in the physical layer of biology, where robotics, synthetic biology and engineering intersect. Her career in healthcare was motivated by personal experience after she battled cancer in her mid-20s and set out to change the healthcare ecosystem. She also studies consumer behaviour and occasionally backs consumer companies such as Partiful. She joined ACME in 2017, was promoted to Partner in 2022, graduated from Yale University, and sits on the boards of Conceivable Life Sciences, Arya Health, Camber and Brightside. She lives in New York, and her daughter was the first American baby born using Conceivable's robotic IVF technology.",
-    sources: [{ label: "ACME Capital team profile", url: "https://www.acme.vc/team/aike-ho" }, { label: "ACME Capital Closes Over $300 Million (Business Wire, 4 Feb 2022)", url: "https://www.businesswire.com/news/home/20220204005038/en/ACME-Capital-Closes-Over-%24300-Million-for-its-Latest-Venture-Funds-and-Expands-Partnership" }]
-  },
-"alex-fayette": {
-    name: "Alex Fayette",
-    firm: "ACME Capital",
-    firmSlug: "acme-capital",
-    title: "Partner",
-    joinedYear: 2016,
-    investmentFocus: ["Aerospace", "Defense", "Semiconductors", "Energy", "Deep Tech"],
-    education: ["B.A. Economics, Yale University"],
-    previousExperience: ["Investment banking group, J.P. Morgan"],
-    boardSeats: ["Akash", "AviaGames", "Laurel", "Replika", "Sphere Semi", "True Anomaly", "Muon Space"],
-    notableInvestments: [{ name: "IonQ", ticker: "IONQ" }, { name: "Blumind", ticker: null }, { name: "True Anomaly", ticker: null }, { name: "Muon Space", ticker: null }, { name: "Akash", ticker: null }, { name: "Replika", ticker: null }, { name: "Laurel", ticker: null }, { name: "Sphere Semi", ticker: null }, { name: "AviaGames", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2016, event: "Joined ACME Capital" }, { year: 2022, event: "Promoted to Partner at ACME Capital" }],
-    biography: "Alex Fayette is a Partner at ACME Capital, based in San Francisco. He joined the firm in 2016 and was promoted to Partner in 2022, and has spent over a decade at ACME working with founders on technically demanding ventures. His expertise spans aerospace and defense, next-generation computing, tech bio, physical AI, energy and raw materials. He is recognised for communicating advanced technology to commercial audiences and for identifying risks and opportunities across emerging technology domains. He holds a B.A. in Economics from Yale University, where he was a Whiffenpoof, and previously worked in the investment banking group at J.P. Morgan. He sits on the boards of Akash, AviaGames, Laurel, Replika, Sphere Semi, True Anomaly and Muon Space.",
-    sources: [{ label: "ACME Capital team profile", url: "https://www.acme.vc/team/alex-fayette" }, { label: "ACME Capital Closes Over $300 Million (Business Wire, 4 Feb 2022)", url: "https://www.businesswire.com/news/home/20220204005038/en/ACME-Capital-Closes-Over-%24300-Million-for-its-Latest-Venture-Funds-and-Expands-Partnership" }]
-  },
-"christian-tang-jespersen": {
-    name: "Christian Tang-Jespersen",
-    firm: "ACME Capital",
-    firmSlug: "acme-capital",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: [],
-    education: [],
-    previousExperience: ["CEO, Heptagon", "Board member, SolidEnergy Systems", "Technology Advisory Council member, Magna", "Strategic advisor, Temasek"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Again Again", ticker: null }, { name: "Harmattan AI", ticker: null }, { name: "Invert", ticker: null }, { name: "NIL Technology", ticker: null }, { name: "Reshape Bio", ticker: null }, { name: "Stendr", ticker: null }, { name: "Treon", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Christian Tang-Jespersen is a Partner at ACME Capital, serving as board member and strategic advisor to growth-stage technology companies. He has led and scaled organisations from 50 to 5,000 employees, managed P&L from $25M to $750M, and driven both turnarounds and growth. As CEO of Heptagon he scaled the company rapidly, culminating in a $2.7B acquisition. He brings over twenty years of global operating experience as a CEO across the US, China, Singapore, Switzerland and Denmark, and has served on the Technology Advisory Council at Magna, as a strategic advisor to Temasek, and as a board member at SolidEnergy Systems through its multi-billion-dollar NYSE IPO. Across his career he has advised on more than $10B in transactions including major M&A, IPOs and private placements.",
-    sources: [{ label: "ACME Capital team profile", url: "https://www.acme.vc/team/christian-tang-jespersen" }]
-  },
-"hany-nada": {
-    name: "Hany Nada",
-    firm: "ACME Capital",
-    firmSlug: "acme-capital",
-    title: "Co-Founder and Partner",
-    joinedYear: 2018,
-    investmentFocus: [],
-    education: ["B.S. Economics, University of Minnesota", "B.A. Political Science, University of Minnesota"],
-    previousExperience: ["Co-Founder and Managing Partner, GGV Capital", "Managing Director and Senior Research Analyst, Piper Jaffray & Co."],
-    boardSeats: ["AviaGames", "Canopy", "Forma.ai", "Regology"],
-    notableInvestments: [{ name: "DraftKings", ticker: "DKNG" }, { name: "IonQ", ticker: "IONQ" }, { name: "Athenahealth", ticker: null }, { name: "Endeca", ticker: null }, { name: "Heptagon", ticker: null }, { name: "Kintana", ticker: null }, { name: "Xfire", ticker: null }, { name: "Tudou", ticker: null }, { name: "Vocera Communications", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2000, event: "Co-founded GGV Capital and served as Managing Partner" }, { year: 2016, event: "Stepped down as Managing Partner of GGV Capital, becoming a Venture Partner" }, { year: 2018, event: "Left GGV Capital and co-founded ACME Capital" }],
-    biography: "Hany Nada is Co-Founder and Partner of ACME Capital, which he co-founded in 2018. He co-founded GGV Capital in 2000 and was its Managing Partner until October 2016, remaining a Venture Partner until 2018. Before venture capital he spent ten years at Piper Jaffray & Co. as a Managing Director and Senior Research Analyst specialising in internet software and infrastructure. He has served as a long-term partner to more than 150 companies over two decades, advising CEOs and management teams on global markets, business development, strategy and M&A and IPO guidance. He currently sits on the boards of AviaGames, Canopy, Forma.ai and Regology, and his investments include DraftKings, IonQ, Athenahealth, Endeca, Heptagon, Kintana, Tudou and Vocera Communications.",
-    sources: [{ label: "ACME Capital team profile", url: "https://www.acme.vc/team/hany-nada" }, { label: "ACME Capital Closes Over $300 Million (Business Wire, 4 Feb 2022)", url: "https://www.businesswire.com/news/home/20220204005038/en/ACME-Capital-Closes-Over-%24300-Million-for-its-Latest-Venture-Funds-and-Expands-Partnership" }]
-  },
-"katera-mujadidi": {
-    name: "Katera Mujadidi",
-    firm: "ACME Capital",
-    firmSlug: "acme-capital",
-    title: "Partner, Head of Investor Relations and Fundraising",
-    joinedYear: null,
-    investmentFocus: [],
-    education: ["B.A., University of California, Berkeley", "M.B.A. (in progress), The Wharton School, University of Pennsylvania"],
-    previousExperience: ["Senior investor relations role, Vivo Capital", "Senior investor relations role, Northgate Capital", "Senior investor relations role, Pantera Capital"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Katera Mujadidi is a Partner at ACME Capital, where she leads investor relations and fundraising. She brings more than a decade of experience in venture capital, having held senior roles at Bay Area firms including Vivo Capital, Northgate Capital and Pantera Capital. Over her career she has built and scaled global investor relations departments, led high-performing teams and cultivated lasting partnerships with investors worldwide. Her expertise spans fundraising, strategy and investor relations across the venture capital ecosystem. She holds a B.A. from the University of California, Berkeley and is pursuing an M.B.A. at the Wharton School. She is based in Miami and travels frequently to San Francisco.",
-    sources: [{ label: "ACME Capital team profile", url: "https://www.acme.vc/team/katera-mujadidi" }]
-  },
-"scott-stanford": {
-    name: "Scott Stanford",
-    firm: "ACME Capital",
-    firmSlug: "acme-capital",
-    title: "Co-Founder and Partner",
-    // 2013, not 2018: Cue Health's 10-K/A records him as "co-founder of
-    // ACME, LLC and its affiliates ... since February 2013" and defines
-    // Sherpa Ventures Fund LP as ACME I - the 2018 event was a rename.
-    joinedYear: 2013,
-    investmentFocus: [],
-    education: ["A.B. with Honors in Social Studies, Harvard College", "M.B.A., Harvard Business School"],
-    previousExperience: ["Co-founder, Sherpa Capital", "Co-founder, Silicon Foundry", "Co-head of Global Internet Investment Banking, Goldman Sachs", "Early employee, LookSmart", "Financial Analyst, Technology Media and Telecommunications group, Goldman Sachs"],
-    boardSeats: [],
-    researchState: "exhausted",
-    researchChecked: "2026-08-24",
-    notableInvestments: [
-    /*
-       Enriched 2026-08-23, Phase 1 of the database-wide rollout. Every
-       enriched row traces to one regulatory source: Cue Health's 10-K/A (filed
-       2022), whose director bio names his board seats with dates and describes
-       each company. The same filing states that Sherpa Ventures Fund LP IS
-       ACME I, so Sherpa-era deals are the same organization, not a prior firm.
-       ipsy additionally carries round metadata from 2015 press coverage of the
-       TPG/Sherpa co-led Series B. Rows like Airbnb, Uber and Slack stay bare:
-       no source in hand names him against those deals. */
-    { name: "Airbnb", ticker: "ABNB" },
-    { name: "Uber", ticker: "UBER" },
-    { name: "Rent the Runway", ticker: "RENT" },
-    { name: "Slack", ticker: null },
-    { name: "Astra", ticker: null,
-      sector: "Space", subsector: "Orbital Launch", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" }] },
-    { name: "Braintrust", ticker: null },
-    { name: "Curology", ticker: null,
-      sector: "Consumer Health", subsector: "Prescription Skincare", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" }] },
-    { name: "IPSY", ticker: null, stage: "Series B", year: 2015, yearPrecision: "year",
-      sector: "Consumer", subsector: "Beauty Commerce", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" },
-                  { url: "https://variety.com/2015/digital/news/michelle-phan-ipsy-100-million-funding-1201592821", type: "press", checked: "2026-08-23" }] },
-    { name: "Savage X Fenty", ticker: null },
-    { name: "Plot", ticker: null },
-    { name: "BoomPop", ticker: null },
-    { name: "Curio", ticker: null },
-    { name: "Laurel", ticker: null },
-    { name: "Cue Health", ticker: null,
-      sector: "Digital Health", subsector: "Diagnostics", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" }] },
-    { name: "Luka", ticker: null,
-      sector: "AI", subsector: "Conversational AI", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" }] },
-    { name: "Tinycare", ticker: null,
-      sector: "Consumer", subsector: "Childcare", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" }] },
-    { name: "Time by Ping", ticker: null,
-      sector: "AI", subsector: "Time Automation", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" }] }
-  ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2011, event: "Co-founded Goldman Sachs' Internet Fund" }, { year: 2013, event: "Co-founded Sherpa Capital" }, { year: 2018, event: "Co-founded ACME Capital" }],
-    biography: "Scott Stanford is Co-Founder and Partner of ACME Capital, which he founded in 2018. He has focused on the technology sector for over 25 years as an advisor, operator and investor. He spent twelve years at Goldman Sachs, where he was co-head of Global Internet Investment Banking and advised on more than $80 billion in equity and debt financings and strategic transactions for companies including Facebook, Google, Airbnb, Zillow, Palantir, Square and LinkedIn. He previously co-founded Sherpa Capital and the corporate innovation advisory firm Silicon Foundry, and was an early employee at LookSmart. He grew up in Indianapolis and taught himself to program at thirteen; his investments include Airbnb, Uber, Slack, Astra, Braintrust, Curology, IPSY and Rent the Runway.",
-    sources: [{ label: "ACME Capital team profile", url: "https://www.acme.vc/team/scott-stanford" }, { label: "ACME Capital Closes Over $300 Million (Business Wire, 4 Feb 2022)", url: "https://www.businesswire.com/news/home/20220204005038/en/ACME-Capital-Closes-Over-%24300-Million-for-its-Latest-Venture-Funds-and-Expands-Partnership" }]
-  },
-"mike-smith-footwork": {
-    name: "Mike Smith",
-    firm: "Footwork",
-    firmSlug: "footwork",
-    title: "General Partner",
-    joinedYear: 2021,
-    investmentFocus: [],
-    education: [],
-    previousExperience: ["President and COO, Stitch Fix", "COO, Walmart.com"],
-    boardSeats: ["MillerKnoll", "Ulta Beauty"],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2021, event: "Co-founded Footwork with Nikhil Basu Trivedi" }],
-    biography: "Mike Smith co-founded Footwork with Nikhil Basu Trivedi in April 2021 and is a general partner of the firm. He was previously President and COO at Stitch Fix, which Footwork's site describes as taking the company from idea to IPO and beyond. Earlier in his career he was COO of Walmart.com. He serves on the public company boards of MillerKnoll and Ulta Beauty. Footwork's site does not publish a formal title label next to his name; the firm's own Year 1 letter describes both founders as general partners.",
-    sources: [{ label: "Footwork website", url: "https://www.footwork.vc/" }, { label: "Footwork at Year 1", url: "https://nbt.substack.com/p/footwork-at-year-1" }]
-  },
-"nikhil-basu-trivedi": {
-    name: "Nikhil Basu Trivedi",
-    firm: "Footwork",
-    firmSlug: "footwork",
-    title: "Co-Founder and General Partner",
-    joinedYear: 2021,
-    investmentFocus: ["Consumer", "Enterprise Software"],
-    education: [],
-    previousExperience: ["Managing Director, Shasta Ventures", "Investor, Insight Partners", "Founding team, Artsy"],
-    boardSeats: [],
-    researchState: "exhausted",
-    researchChecked: "2026-08-24",
-    notableInvestments: [
-    /*
-       Enriched 2026-08-24, 25-partner quality gate. Press coverage of his
-       track record states he led Canva, ClassDojo, Color, Frame.io, Imperfect
-       Foods, Lattice and The Farmer's Dog at Shasta - recorded with orgAtTime
-       - and led the Athelas seed. Brigit stays bare: no source names him on
-       it. */
-    { name: "Athelas", ticker: null, stage: "Seed",
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "Brigit", ticker: null },
-    { name: "Canva", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "ClassDojo", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "Color Health", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "Frame.io", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "Imperfect Foods", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "Lattice", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "The Farmer's Dog", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] }
-  ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2010, event: "Began career as a venture capitalist" }, { year: 2021, event: "Co-founded Footwork with Mike Smith" }],
-    biography: "Nikhil Basu Trivedi is co-founder and a general partner of Footwork, the early-stage venture firm he started with Mike Smith in April 2021. He was previously a Managing Director at Shasta Ventures, where he invested in Athelas, Brigit, Canva, ClassDojo, Color Health, Frame.io, Imperfect Foods, Lattice and The Farmer's Dog. Before Shasta he worked at Insight Partners and was on the founding team of Artsy. He describes himself as having been a venture capitalist since 2010, focused on consumer technology and enterprise companies building consumer-like products. He writes the Next Big Thing newsletter on Substack.",
-    sources: [{ label: "Footwork website", url: "https://www.footwork.vc/" }, { label: "Nikhil Basu Trivedi Substack about page", url: "https://nbt.substack.com/about" }]
-  },
-"assaf-jacobi": {
-    name: "Assaf Jacobi",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Venture Partner",
-    joinedYear: 2019,
-    investmentFocus: ["Enterprise Software", "Infrastructure Software"],
-    education: [],
-    previousExperience: ["Investor, TPG Israel", "Co-founder, Jibe Ventures"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Avanan", ticker: null }, { name: "Guardicore", ticker: null }, { name: "BigPanda", ticker: null }, { name: "VAST Data", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2019, event: "Joined the firm (then Next47), based in Israel" }],
-    biography: "Assaf Jacobi is a Venture Partner at N47 based in Israel, covering the firm's Applications and Infrastructure categories. His N47 profile says he joined in 2019, having previously invested in mature companies at TPG Israel, and that he co-founded Jibe Ventures, a seed-stage fund based in Israel. His listed past investments include Avanan, which was acquired by Check Point, and Guardicore, which was acquired by Akamai, as well as BigPanda and VAST Data. He describes a Product First approach and measures an investment by how much genuine resonance a product sparks with users.",
-    sources: [{ label: "N47 - Assaf Jacobi", url: "https://www.n47.com/team/assaf-jacobi" }]
-  },
-"colton-dempsey": {
-    name: "Colton Dempsey",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Infrastructure Software", "Developer Tools", "Cybersecurity", "Robotics"],
-    education: ["Symbolic Systems, Stanford University"],
-    previousExperience: ["Technology M&A, Morgan Stanley"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Harmonic Security", ticker: null }, { name: "Halcyon", ticker: null }, { name: "Skylo", ticker: null }, { name: "Claroty", ticker: null }, { name: "DataGrail", ticker: null }, { name: "Bizzabo", ticker: null }, { name: "Armorblox", ticker: null }, { name: "Noname Security", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Colton Dempsey is a Partner at N47 in Silicon Valley, focused on infrastructure software, developer tools, cybersecurity and robotics. Before joining he worked on technology M&A at Morgan Stanley, and he studied symbolic systems at Stanford University. His N47 profile lists current investments in Harmonic Security, Halcyon, Skylo, Claroty, DataGrail, Freehand, Bizzabo, Aurasell and Antenna, with Armorblox and Noname Security among his past investments. He describes looking for founders who turn complexity into clarity. N47 does not publish his board seats or the year he joined.",
-    sources: [{ label: "N47 - Colton Dempsey", url: "https://www.n47.com/team/colton-dempsey" }]
-  },
-"fred-ellis": {
-    name: "Fred Ellis",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Enterprise Software"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [{ name: "Aforza", ticker: null }, { name: "Encord", ticker: null }, { name: "Sona", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Fred Ellis is a Partner at N47 covering Europe, focused on the firm's Applications category and on founders with an obsessive focus on product. His N47 profile describes him as an operator and investor who previously helped build private deal distribution and execution infrastructure for large financial enterprises at a startup, but it does not name the company or his title. His listed portfolio includes Aforza, Encord and Sona. He has published N47 pieces on operational foundations for the frontline economy and on European AI startups. N47 does not publish his education, board seats or the year he joined.",
-    sources: [{ label: "N47 - Fred Ellis", url: "https://www.n47.com/team/fred-ellis" }]
-  },
-"gadi-fisher": {
-    name: "Gadi Fisher",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Senior Associate",
-    joinedYear: null,
-    investmentFocus: ["Enterprise Software", "Infrastructure Software"],
-    education: [],
-    previousExperience: ["Technology strategy consultant, Deloitte"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Gadi Fisher is a Senior Associate at N47 based in Israel, covering the firm's Applications and Infrastructure categories. Before joining he spent five years at Deloitte in London, advising enterprise clients on technology strategy and innovation. After nearly two decades abroad he returned to Israel to focus on venture investing in the local ecosystem. He says the most powerful products are built by people who learned something essential somewhere else and brought it somewhere it had never been applied. N47 lists no portfolio companies, board seats, education or joining year for him.",
-    sources: [{ label: "N47 - Gadi Fisher", url: "https://www.n47.com/team/gadi-fisher" }]
-  },
-"gautham-pasupathy": {
-    name: "Gautham Pasupathy",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Senior Associate",
-    joinedYear: null,
-    investmentFocus: ["Enterprise Software"],
-    education: [],
-    previousExperience: ["Technology M&A, Qatalyst Partners"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Gautham Pasupathy is a Senior Associate at N47 in Silicon Valley, focused on enterprise software across the firm's Applications and Infrastructure categories. Before joining he worked at Qatalyst Partners, where his N47 profile says he supported founders and executives on approximately $13 billion of technology M&A. He says he looks for builders who are obsessed with the product they are creating and sweat every detail, and that he is exploring how emerging technologies reinvent existing enterprise software categories. N47 lists no portfolio companies, board seats, education or joining year for him.",
-    sources: [{ label: "N47 - Gautham Pasupathy", url: "https://www.n47.com/team/gautham-pasupathy" }]
-  },
-"henry-tantum": {
-    name: "Henry Tantum",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Associate",
-    joinedYear: null,
-    investmentFocus: ["Cybersecurity", "Data Infrastructure"],
-    education: ["BA Economics, Middlebury College"],
-    previousExperience: ["Strategy consultant, Accenture"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Henry Tantum is an Associate at N47 in Silicon Valley, focused on cybersecurity and data infrastructure within the firm's Infrastructure and Systems categories. Before joining he was a strategy consultant at Accenture in Washington, D.C., where he advised Department of Defense officials on combat readiness. He holds a BA in Economics from Middlebury College and describes earlier work as a data analyst on market trends. A Bay Area native, he says he has always gravitated toward creatively solving problems using data analysis. N47 lists no portfolio companies, board seats or joining year for him.",
-    sources: [{ label: "N47 - Henry Tantum", url: "https://www.n47.com/team/henry-tantum" }]
-  },
-"jenny-graetzel": {
-    name: "Jenny Graetzel",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Partner, Seed Funds",
-    joinedYear: null,
-    investmentFocus: ["Enterprise Software"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Jenny Graetzel is Partner, Seed Funds at N47, based in Silicon Valley, where she leads the firm's seed fund strategy and acts as an adviser to early-stage fund managers investing in enterprise technology. Her N47 profile says she invested in venture and growth funds for 17 years across the US and Europe before joining, but does not name the firms she worked at. She describes her role as building trusted partnerships with early-stage fund managers who are on the ground floor with the next generation of enterprise founders. She authored the N47 perspective The case for seed funds. N47 does not publish her education, board seats or the year she joined.",
-    sources: [{ label: "N47 - Jenny Graetzel", url: "https://www.n47.com/team/jenny-graetzel" }]
-  },
-"lak-ananth": {
-    name: "Lak Ananth",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Global Managing Partner",
-    joinedYear: 2016,
-    investmentFocus: ["Enterprise Software", "Infrastructure Software"],
-    education: ["MBA, INSEAD", "MS Electrical Engineering, Kansas State University"],
-    previousExperience: ["Head of HPE Pathfinder, Hewlett Packard Enterprise", "Corporate development, Cisco"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Verkada", ticker: null }, { name: "VAST Data", ticker: null }, { name: "Tractian", ticker: null }, { name: "Cohesity", ticker: null }, { name: "Observe.AI", ticker: null }, { name: "Sennder", ticker: null }, { name: "Markforged", ticker: null }, { name: "Meraki", ticker: null }, { name: "ThoughtSpot", ticker: null }, { name: "Hortonworks", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2014, event: "Built and led HPE Pathfinder, Hewlett Packard Enterprise's venture capital program" }, { year: 2016, event: "Named to lead Siemens' new next47 startup unit, effective 15 November 2016" }, { year: 2025, event: "Announced the firm's rebrand from Next47 to N47" }],
-    biography: "Lak Ananth is Global Managing Partner of N47, Siemens' global venture capital unit, and has led the firm since Siemens created it as next47 in 2016. Siemens announced his appointment in November 2016; he joined from Hewlett Packard Enterprise, where he had spent two years building HPE Pathfinder, the company's venture capital program. Earlier he worked in venture capital and corporate development at Cisco on business strategy and early-stage technology acquisitions, and began his career as an engineer in Silicon Valley. His current investments include Verkada, Tractian, VAST Data, Cohesity, Observe.AI and Sennder, with past investments including Meraki, ThoughtSpot, Hortonworks and Markforged. He holds an MBA from INSEAD and a master's in electrical engineering from Kansas State University.",
-    sources: [{ label: "N47 - Lak Ananth", url: "https://www.n47.com/team/lak-ananth" }, { label: "Siemens press release - Lak Ananth to head new next47 startup unit", url: "https://press.siemens.com/global/en/pressrelease/lak-ananth-head-new-next47-startup-unit" }]
-  },
-"matthew-cowan": {
-    name: "Matthew Cowan",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "General Partner",
-    joinedYear: 2017,
-    investmentFocus: ["Applied AI", "Vertical SaaS", "Enterprise Software"],
-    education: [],
-    previousExperience: ["Co-founder, Breezeworks", "Intel"],
-    boardSeats: [],
-    notableInvestments: [{ name: "BuildOps", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2017, event: "Joined the firm (then Next47) as an investor" }],
-    biography: "Matthew Cowan is a General Partner at N47, working across the firm's Applications and Infrastructure categories from Silicon Valley and Israel. His N47 profile says he joined in 2017 and focuses on AI applied at the application layer to bring automation and efficiency to underserved industries, citing BuildOps as the clearest expression of that thesis. He co-founded Breezeworks, a technology automation company for service professionals, and earlier worked at Intel. He describes having watched three major product cycles over three decades. N47 does not publish his education or board seats.",
-    sources: [{ label: "N47 - Matthew Cowan", url: "https://www.n47.com/team/matthew-cowan" }]
-  },
-"moshe-zilberstein": {
-    name: "Moshe Zilberstein",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "General Partner",
-    joinedYear: null,
-    investmentFocus: ["Enterprise Software", "Infrastructure Software"],
-    education: ["BSc Computer Engineering, Technion"],
-    previousExperience: ["Co-founder, Odigo", "Investor, Norwest Venture Partners", "Intel", "Microsoft"],
-    boardSeats: [],
-    notableInvestments: [{ name: "VAST Data", ticker: null }, { name: "Logz.io", ticker: null }, { name: "Radiant Security", ticker: null }, { name: "Zesty", ticker: null }, { name: "Gong", ticker: null }, { name: "Noname Security", ticker: null }, { name: "Cynet", ticker: null }, { name: "CyberX", ticker: null }, { name: "Fireglass", ticker: null }, { name: "Velostrata", ticker: null }, { name: "Wiliot", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Moshe Zilberstein is a General Partner at N47 based in Israel, covering the firm's Applications and Infrastructure categories. He co-founded Odigo, an early social network, and later held technology and product roles at Intel, Microsoft and ExtraHop. Before joining the firm he was a venture investor at Norwest Venture Partners, where he backed the founders of companies including Gong.io and VAST Data. His N47 profile lists current investments in Echo, Logz.io, Radiant Security, VAST Data and Zesty, and past investments in CyberX, Cynet, Fireglass, Gong, Noname Security, Velostrata and Wiliot. He holds a computer engineering degree from the Technion.",
-    sources: [{ label: "N47 - Moshe Zilberstein", url: "https://www.n47.com/team/moshe-zilberstein" }]
-  },
-"tj-rylander": {
-    name: "T.J. Rylander",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "General Partner",
-    joinedYear: null,
-    investmentFocus: ["Infrastructure Software", "Developer Tools", "Cybersecurity", "Robotics"],
-    education: [],
-    previousExperience: ["Investor, In-Q-Tel"],
-    boardSeats: ["Institute for Security and Technology", "Camp Belknap"],
-    researchState: "exhausted",
-    researchChecked: "2026-08-24",
-    notableInvestments: [
-    /*
-       Enriched 2026-08-24, 25-partner quality gate. His N47 profile lists his
-       current portfolio; FireEye, Cloudera and Pure Storage were In-Q-Tel-era
-       work recorded with orgAtTime. Aeva stays bare: the page does not list
-       it. */
-    { name: "Skydio", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "VAST Data", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Claroty", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Encord", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Halcyon", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Harmonic Security", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Skylo", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Sysdig", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Aeva", ticker: "AEVA" },
-    { name: "Pure Storage", ticker: "PSTG",
-      orgAtTime: "in-q-tel",
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Cloudera", ticker: null,
-      orgAtTime: "in-q-tel",
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "FireEye", ticker: null,
-      orgAtTime: "in-q-tel",
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Avidbots", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Vitally", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Yellowbrick Data", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Sila", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] }
-  ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2006, event: "Joined In-Q-Tel, where he spent about a decade making early-stage investments" }, { year: 2016, event: "Left In-Q-Tel after roughly ten years, having backed FireEye, Cloudera and Pure Storage before their IPOs" }],
-    biography: "T.J. Rylander is a General Partner at N47 covering Silicon Valley and Europe, focused on infrastructure and systems including developer tools, cybersecurity and robotics. His N47 profile says he spent roughly a decade at In-Q-Tel from 2006 to 2016, where his early-stage investments included FireEye, Cloudera and Pure Storage, all of which reached IPO. His current portfolio includes Skydio, Claroty, Encord, Halcyon, Harmonic Security, Sysdig, Skylo and VAST Data, with past investments including Armorblox and Aeva. He serves on the boards of the Institute for Security and Technology and Camp Belknap. N47 does not publish his education or the year he joined.",
-    sources: [{ label: "N47 - T.J. Rylander", url: "https://www.n47.com/team/t-j-rylander" }]
-  },
-"vivian-cheng": {
-    name: "Vivian Cheng",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Partner",
-    joinedYear: 2024,
-    investmentFocus: ["Applied AI", "Enterprise Software"],
-    education: [],
-    previousExperience: ["Principal, CRV", "Investor, Javelin Venture Partners"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Nominal", ticker: null }, { name: "Patlytics", ticker: null }, { name: "Two Dots", ticker: null }, { name: "Enzo Health", ticker: null }, { name: "XBuild", ticker: null }, { name: "TigerEye", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2021, event: "Joined CRV, becoming a Principal" }, { year: 2024, event: "Joined Next47 (now N47) as Partner, based in San Francisco" }],
-    biography: "Vivian Cheng is a Partner at N47 in Silicon Valley, working across the firm's Applications and Systems categories with a focus on product-driven companies, AI workflows and IP/patent technology. Global Corporate Venturing reported her hire as a Partner at Next47 in April 2024, noting she joined from CRV, where she had been a Principal since late 2021, and had previously spent over two years at Javelin Venture Partners. Her listed investments include Nominal, Patlytics, Two Dots, Enzo Health and XBuild, with TigerEye as a past investment. N47 does not publish her education or board seats.",
-    sources: [{ label: "N47 - Vivian Cheng", url: "https://www.n47.com/team/vivian-cheng" }, { label: "Global Corporate Venturing - Next47 hires Cheng for partner role", url: "https://globalventuring.com/corporate/people/next47-hires-cheng-for-partner-role/" }]
-  },
-"will-smith-n47": {
-    name: "Will Smith",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Venture Partner",
-    joinedYear: null,
-    investmentFocus: ["AI", "Data Infrastructure", "Infrastructure Software"],
-    education: ["Stanford University"],
-    previousExperience: ["Founder, Euclid"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Notion", ticker: null }, { name: "Weights & Biases", ticker: null }, { name: "Haus Analytics", ticker: null }, { name: "Datavant", ticker: null }, { name: "Metronome", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Will Smith is a Venture Partner at N47 in Silicon Valley, focused on infrastructure, AI and data companies as well as the firm's Applications category. After Stanford he founded Euclid, a machine learning and data infrastructure company that processed billions of location events a day. His N47 profile lists investments in Notion, Weights & Biases, Haus Analytics, Datavant and Metronome. He says he believes a great company can be spotted first in its founders and then in its product, well before it shows up in a spreadsheet. N47 does not publish his board seats or the year he joined.",
-    sources: [{ label: "N47 - Will Smith", url: "https://www.n47.com/team/will-smith" }]
-  },
-"cindy-padnos": {
-    name: "Cindy Padnos",
-    firm: "Illuminate Ventures",
-    firmSlug: "illuminate-ventures",
-    title: "Founder and Managing Partner",
-    joinedYear: 2009,
-    investmentFocus: ["Enterprise Software", "B2B Software", "SaaS"],
-    education: ["MSIA/MBA, Tepper School of Business, Carnegie Mellon University", "AB, University of Michigan"],
-    previousExperience: ["Founder and CEO, Vivant! Corporation", "Director, Outlook Ventures", "VP Marketing, Scopus Technology"],
-    boardSeats: ["Bid Ops", "BrightEdge", "CafeX", "nFlux", "Pex"],
-    notableInvestments: [{ name: "Xactly", ticker: null }, { name: "BrightEdge", ticker: null }, { name: "Coupang", ticker: "CPNG" }, { name: "Allocadia", ticker: null }, { name: "Opsmatic", ticker: null }, { name: "Pex", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2009, event: "Founded Illuminate Ventures" }, { year: 2017, event: "Portfolio company Xactly acquired by Vista Equity Partners" }],
-    biography: "Cindy Padnos is the founder and Managing Partner of Illuminate Ventures, which she started in 2009 after serving as a director at Outlook Ventures. She brings about 25 years of high-tech industry experience, including founding and running the SaaS company Vivant!, which was acquired by Oracle, and serving as VP of marketing at Scopus Technology. She holds an MSIA/MBA with honors from Carnegie Mellon's Tepper School of Business and an AB magna cum laude from the University of Michigan. She invests in enterprise and B2B cloud and mobile computing, with board seats at Bid Ops, BrightEdge, CafeX, nFlux and Pex. Illuminate lists her exits as including Xactly, Coupang, Sense Platform, Opsmatic and Allocadia.",
-    sources: [{ label: "Illuminate Ventures - Team", url: "https://illuminate.com/team-2/" }, { label: "Stanford GSB - Illuminate Ventures: Raising a Venture Fund", url: "https://www.gsb.stanford.edu/faculty-research/case-studies/illuminate-ventures-raising-venture-fund" }]
-  },
-"jennifer-savage": {
-    name: "Jennifer Savage",
-    firm: "Illuminate Ventures",
-    firmSlug: "illuminate-ventures",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Enterprise Software", "B2B Software", "SaaS"],
-    education: ["MBA, Anderson Graduate School of Management, UCLA", "BS Computer Science, University of Oregon"],
-    previousExperience: ["Executive, PlaceWare", "Executive, DocuSign", "Executive, Smartsheet", "Executive, Flowroute"],
-    boardSeats: ["Hoopla Software", "Pyze"],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Jennifer Savage is a Partner at Illuminate Ventures, where she identifies and leads new investments with a particular emphasis on Pacific Northwest companies. She supports due diligence and provides strategic and operational guidance to portfolio companies, and she manages relationships with Illuminate's B2B enterprise network and Advisory Council. Her bio cites more than 25 years of B2B software experience building new categories, with prior executive roles at PlaceWare, which was acquired by Microsoft, as well as DocuSign, Smartsheet and Flowroute. She holds an MBA from UCLA's Anderson School and a bachelor's degree in computer science from the University of Oregon. She sits on the boards of Hoopla Software and Pyze.",
-    sources: [{ label: "Illuminate Ventures - Team", url: "https://illuminate.com/team-2/" }]
-  },
-"amy-zhao": {
-    name: "Amy Zhao",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Principal",
-    joinedYear: null,
-    investmentFocus: ["Climate Technology", "Industrial Technology", "Climate", "Clean Energy", "Industrial decarbonization", "Green hydrogen"],
-    education: ["MBA, Stanford Graduate School of Business", "B.A., Economics, Harvard University (Cum Laude)"],
-    previousExperience: ["Management Consultant, Strategy& (PwC)", "Corporate Strategy and Venture Capital intern, Edison International"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2026, event: "Promoted to Principal at Clean Energy Ventures (announced April 28, 2026)" }],
-    biography: "Amy Zhao is a Principal at Clean Energy Ventures, promoted to that title in April 2026. Her work focuses on commercializing early-stage industrial decarbonization technologies, with particular experience in green hydrogen applications. Before joining the firm she was a management consultant at Strategy& (PwC), specializing in power and utilities strategy, operational efficiency and regulatory analysis, and interned on Edison International's corporate strategy and venture capital team before business school. At Stanford she was co-president of the Graduate School of Business Energy Club and an investor with the Stanford Impact Fund. She holds an MBA from Stanford Graduate School of Business and a B.A. in Economics, cum laude, from Harvard University.",
-    sources: [{ label: "Clean Energy Ventures - Amy Zhao bio", url: "https://cleanenergyventures.com/team-members/amy-zhao" }, { label: "Clean Energy Ventures news", url: "https://cleanenergyventures.com/news" }]
-  },
-"cooper-bates": {
-    name: "Cooper Bates",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Analyst",
-    joinedYear: 2026,
-    investmentFocus: ["Climate Technology", "Energy", "Energy storage", "Grid"],
-    education: ["B.S., Operations Research, Columbia University"],
-    previousExperience: ["Management Consultant, Oliver Wyman", "Business-side roles, Tesla"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2026, event: "Joins Clean Energy Ventures as an Analyst (announced January 26, 2026)" }],
-    biography: "Cooper Bates is an Analyst at Clean Energy Ventures, which he joined in January 2026. He supports investment sourcing, due diligence and market research across the climate tech landscape, helping the firm evaluate emerging technologies and strengthen its deal pipeline. He was previously a management consultant at Oliver Wyman specializing in transportation and operations. Before consulting he held multiple business-side positions at Tesla focused on scaling grid-scale battery deployment and corporate decarbonization initiatives. He holds a B.S. in Operations Research from Columbia University with supplemental coursework in Computer Science and Economics.",
-    sources: [{ label: "Clean Energy Ventures - Cooper Bates bio", url: "https://cleanenergyventures.com/team-members/cooper-bates" }, { label: "Clean Energy Ventures news", url: "https://cleanenergyventures.com/news" }]
-  },
-"dan-goldman": {
-    name: "Dan Goldman",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Co-Founder & Managing Partner",
-    joinedYear: 2017,
-    investmentFocus: ["Climate Technology", "Clean Energy", "Energy", "Grid and energy storage"],
-    education: ["B.S., Cornell University", "M.Sc., London School of Economics"],
-    previousExperience: ["Senior energy consultant and leader of the Asia Pacific Energy Consulting Practice, Arthur D. Little", "Senior development and finance roles, InterGen", "Co-founder & CFO, New Energy Capital", "President & CFO, GreatPoint Energy", "Co-founder and director, Environmental Entrepreneurs (E2)"],
-    boardSeats: ["LineVision", "SparkMeter", "ConnectDER", "ClearTrace", "ndustrial", "ClearFlame Engines (board observer)", "Advanced Ionics (board observer)", "Nth Cycle (board observer)", "Quidnet Energy (board observer)", "Northeast Clean Energy Council (Board Chair)"],
-    notableInvestments: [{ name: "LineVision", ticker: null }, { name: "SparkMeter", ticker: null }, { name: "ConnectDER", ticker: null }, { name: "ClearTrace", ticker: null }, { name: "ndustrial", ticker: null }, { name: "Nth Cycle", ticker: null }, { name: "Quidnet Energy", ticker: null }, { name: "ClearFlame Engines", ticker: null }, { name: "Advanced Ionics", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 1989, event: "Joins Arthur D. Little as a senior energy consultant in Cambridge and Singapore" }, { year: 1992, event: "Leads Arthur D. Little's Asia Pacific Energy Consulting Practice (through 1996)" }, { year: 1996, event: "Joins InterGen in senior development and finance roles in Hong Kong and Boston" }, { year: 2002, event: "Co-founds New Energy Capital and serves as CFO" }, { year: 2006, event: "Joins GreatPoint Energy, holding executive roles including President and CFO through 2016" }, { year: 2017, event: "Co-founds Clean Energy Ventures as Managing Partner" }],
-    biography: "Dan Goldman is a co-founder and Managing Partner of Clean Energy Ventures, the Boston-based early-stage climate technology firm he helped formalize in 2017. He has more than 25 years of energy industry experience in strategy, corporate and project finance, and project development, beginning at Arthur D. Little where he led the Asia Pacific Energy Consulting Practice from 1992 to 1996. He subsequently held senior development and finance roles at InterGen, co-founded New Energy Capital as its CFO, and served as President and CFO of GreatPoint Energy. He sits on the boards of LineVision, SparkMeter, ConnectDER, ClearTrace and ndustrial, and is a board observer at ClearFlame Engines, Advanced Ionics, Nth Cycle and Quidnet Energy. He co-founded the nonprofit Environmental Entrepreneurs (E2) and chairs the Northeast Clean Energy Council board.",
-    sources: [{ label: "Clean Energy Ventures - Dan Goldman bio", url: "https://cleanenergyventures.com/team-members/dan-goldman" }, { label: "Clean Energy Ventures closes $305M Fund II", url: "https://cleanenergyventures.com/clean-energy-venture-capital/clean-energy-ventures-closes-305m-fund-ii/" }]
-  },
-"david-s-miller": {
-    name: "David S. Miller, PhD.",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Co-Founder & Managing Partner",
-    joinedYear: 2017,
-    investmentFocus: ["Climate Technology", "Clean Energy", "Deep Tech", "Construction Tech", "Advanced materials", "Building technologies"],
-    education: ["S.B., Computer Science and Engineering, Massachusetts Institute of Technology", "S.M., Computer Science and Engineering, Massachusetts Institute of Technology", "Ph.D., MIT Laboratory for Energy and the Environment"],
-    previousExperience: ["Founder, Quantum Telecom Solutions (sold to Excel Switching Corp.)", "Director, New Ventures Group, Lucent Technologies", "Executive Managing Director, Clean Energy Venture Group", "Research Affiliate, MIT Sloan School of Management", "Lecturer, Electrical Engineering Department, Rutgers University"],
-    boardSeats: ["Boston Materials", "Pearl Certification", "Volexion", "Noon Energy", "DEPLOY/US (Board Director)"],
-    notableInvestments: [{ name: "Boston Materials", ticker: null }, { name: "Pearl Certification", ticker: null }, { name: "Volexion", ticker: null }, { name: "Noon Energy", ticker: null }, { name: "Pika Energy", ticker: null }, { name: "MyEnergy", ticker: null }, { name: "Azima DLI", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2005, event: "Becomes Executive Managing Director of Clean Energy Venture Group, serving through 2017" }, { year: 2013, event: "Portfolio company MyEnergy acquired (May 2013)" }, { year: 2017, event: "Co-founds Clean Energy Ventures as Managing Partner" }, { year: 2019, event: "Portfolio company Pika Energy acquired (April 2019)" }],
-    biography: "David S. Miller is a co-founder and Managing Partner of Clean Energy Ventures. He holds S.B. and S.M. degrees in Computer Science and Engineering from MIT and a Ph.D. from MIT's Laboratory for Energy and the Environment, and remains a Research Affiliate at MIT's Sloan School of Management. Earlier in his career he founded Quantum Telecom Solutions, which built programmable switching software and was sold to Excel Switching Corp. (later acquired by Lucent), after which he directed Lucent Technologies' New Ventures Group. From 2005 to 2017 he was Executive Managing Director of Clean Energy Venture Group, the angel cohort that preceded the institutional firm. He currently serves on the boards of Boston Materials, Pearl Certification, Volexion and Noon Energy, and his prior investments include Pika Energy, MyEnergy and Azima DLI.",
-    sources: [{ label: "Clean Energy Ventures - David S. Miller, Managing Partner", url: "https://cleanenergyventures.com/about/david-s-miller-managing-partner/" }, { label: "Clean Energy Ventures team page", url: "https://www.cleanenergyventures.com/team" }]
-  },
-"louis-schick": {
-    name: "Louis (Lou) Schick",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Director of Investments",
-    joinedYear: null,
-    investmentFocus: ["Climate Technology", "Hard Tech", "Energy", "Advanced Manufacturing", "Hard tech", "Advanced manufacturing"],
-    education: ["Physics PhD program (not completed), Cornell University"],
-    previousExperience: ["Solid oxide fuel cell program manager, GE", "Product line management, MTI Micro", "High school physics teacher"],
-    boardSeats: ["Advisory board, National Academies", "Advisory board, Venture for Climate Tech", "Advisory board, Trellis"],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Louis (Lou) Schick is Director of Investments at Clean Energy Ventures, where he identifies adoptable climate innovations, runs technical diligence and coaches portfolio founders. He trained as a physicist and left a PhD program at Cornell University, and taught high school physics for five years before moving into industry. At GE he held multiple roles including managing a solid oxide fuel cell program overseeing more than 100 staff across several countries, and he later worked in product line management at MTI Micro, including military procurement. He has more than 20 years of experience as an early-stage and growth equity investor. He serves on advisory boards for the National Academies, Venture for Climate Tech and Trellis, and mentors through Greentown Labs and Village Capital. He is based in upstate New York.",
-    sources: [{ label: "Clean Energy Ventures - Louis (Lou) Schick bio", url: "https://cleanenergyventures.com/team-members/louis-lou-schick" }]
-  },
-"matt-cohen-cev": {
-    name: "Matt Cohen",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Principal",
-    joinedYear: 2023,
-    investmentFocus: ["Climate Technology", "Deep Tech", "Hard Tech", "Industrial Technology", "Climate", "Advanced materials", "Hard tech", "Industrial decarbonization"],
-    education: ["MPhil, Micro- and Nanotechnology Enterprise, University of Cambridge", "BSE, Materials Science & Engineering, University of Pennsylvania (Summa Cum Laude)"],
-    previousExperience: ["Director of Technology, Pangaea Ventures", "Early employee, PChem Associates"],
-    boardSeats: ["Exterra Technologies", "Queens Carbon", "Transaera", "Investor Advisory Board, National Laboratory of the Rockies"],
-    notableInvestments: [{ name: "Exterra Technologies", ticker: null }, { name: "Queens Carbon", ticker: null }, { name: "Transaera", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2023, event: "Joins Clean Energy Ventures as Principal (May 2023)" }],
-    biography: "Matt Cohen is a Principal at Clean Energy Ventures, which he joined in May 2023, and has more than a decade of climate tech investing experience. He was previously Director of Technology at impact-focused venture firm Pangaea Ventures, where he directed technology scouting and evaluation, and before that was an early employee at nanotechnology startup PChem Associates, supporting fundraising and building quality assurance processes. His work centres on technology evaluation, impact assessment methodology and early-stage hardtech ventures. He holds an MPhil in Micro- and Nanotechnology Enterprise from the University of Cambridge and a BSE in Materials Science & Engineering from the University of Pennsylvania, awarded summa cum laude. He serves on the boards of CEV portfolio companies Exterra Technologies, Queens Carbon and Transaera.",
-    sources: [{ label: "Clean Energy Ventures - Matt Cohen bio", url: "https://cleanenergyventures.com/team-members/matt-cohen" }]
-  },
-"max-werny": {
-    name: "Max Werny",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Investor",
-    joinedYear: 2026,
-    investmentFocus: ["Climate Technology", "Deep Tech", "Clean Energy", "Carbon Removal", "Catalysis and advanced materials", "Sustainable aviation fuel"],
-    education: ["PhD, Catalysis & Spectroscopy, Institute for Sustainable & Circular Chemistry, Utrecht University", "M.Sc., Chemistry, Technical University of Munich", "B.Sc., Chemistry, Technical University of Munich"],
-    previousExperience: ["Associate, Zero Carbon Capital", "Investment role, Extantia Capital", "Commercial and technical roles, Heraeus Precious Metals", "Roles at BASF", "Roles at Alantum"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2024, event: "Receives the 2024 Golden Thesis Award for his PhD at Utrecht University" }, { year: 2026, event: "Joins Clean Energy Ventures as an Investor (announced June 23, 2026)" }],
-    biography: "Max Werny is an Investor at Clean Energy Ventures, based in Europe, who joined the firm in June 2026. He was previously an Associate at Zero Carbon Capital, where he led the fund's expansion across the DACH region and invested in sustainable aviation fuel, and before that held an investment role at Extantia Capital sourcing and diligencing seed-stage deals in metal recovery, biomining and direct air capture. Earlier in his career he held commercial and technical positions at Heraeus Precious Metals, BASF and Alantum, working on industrial catalyst development, techno-economic modelling, CO2 valorization and precious metal recycling. He holds a PhD in Catalysis and Spectroscopy from Utrecht University's Institute for Sustainable & Circular Chemistry, where he won the 2024 Golden Thesis Award, and B.Sc. and M.Sc. degrees in Chemistry from the Technical University of Munich. He was also a visiting researcher at the Fritz-Haber-Institute of the Max Planck Society and a visiting scholar at the National University of Singapore.",
-    sources: [{ label: "Clean Energy Ventures - Max Werny bio", url: "https://cleanenergyventures.com/team-members/max-werny" }, { label: "Clean Energy Ventures news", url: "https://cleanenergyventures.com/news" }]
-  },
-"maya-bhat": {
-    name: "Maya Bhat, PhD",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Investor",
-    joinedYear: 2026,
-    investmentFocus: ["Climate Technology", "Clean Energy", "Energy", "Hard Tech", "Hydrogen", "Energy storage", "Hard tech"],
-    education: ["Dual bachelor's degrees, Claremont McKenna College and Columbia University", "PhD, Chemical Engineering, Carnegie Mellon University"],
-    previousExperience: ["Commercial team, Electric Hydrogen", "Founder, energy storage startup"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2026, event: "Joins Clean Energy Ventures as an Investor (announced March 18, 2026)" }],
-    biography: "Maya Bhat is an Investor at Clean Energy Ventures, which she joined in March 2026. She works on scaling businesses that address global energy needs, applying technical expertise to de-risk hardware development for climate solutions. She was previously on the commercial team at Electric Hydrogen, where she worked on technoeconomic modelling, durability analysis and financing product design, and she has also founded an energy storage startup and held earlier venture capital roles. Her doctoral research at Carnegie Mellon used machine learning and high-throughput experimentation to accelerate the discovery of hydrogen catalysts. She holds dual bachelor's degrees from Claremont McKenna College and Columbia University and a PhD in Chemical Engineering from Carnegie Mellon University, and is originally from Singapore.",
-    sources: [{ label: "Clean Energy Ventures - Maya Bhat bio", url: "https://cleanenergyventures.com/team-members/maya-bhat-phd" }, { label: "Clean Energy Ventures news", url: "https://cleanenergyventures.com/news" }]
-  },
-"shanbor-gupta": {
-    name: "Shanbor Gupta",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Principal",
-    joinedYear: null,
-    investmentFocus: ["Climate Technology", "Sustainability", "Clean Energy", "Greenhouse gas impact assessment"],
-    education: ["MBA, Babson College (Magna Cum Laude, 2020)", "Bachelor's, International Studies & Economics, University of Birmingham"],
-    previousExperience: ["Co-founder, SES Environmental", "Co-founder, Webcel Solutions", "Corporate Finance (M&A), KPMG India"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2010, event: "Co-founds Webcel Solutions, an e-commerce and inventory management startup for Indian SMEs" }, { year: 2012, event: "Co-founds SES Environmental, scaling it from five people to 100+ employees across India" }, { year: 2020, event: "Completes MBA at Babson College, magna cum laude" }],
-    biography: "Shanbor Gupta is a Principal at Clean Energy Ventures, based in Europe, where he leads greenhouse gas impact assessment work and helped develop the firm's Simple Emissions Reduction Calculator (SERC) tool. He joined the firm as an Investment Manager before being promoted to Principal, and works on deal sourcing and portfolio company support alongside emissions quantification. Before venture capital he was a serial founder: he co-founded Webcel Solutions in 2010, an e-commerce and inventory management startup serving Indian SMEs, and co-founded SES Environmental in 2012, growing it from a five-person team to more than 100 employees across India providing asset management and lifecycle assessment services. He also worked in KPMG India's corporate finance (M&A) team. He holds an MBA from Babson College and a bachelor's degree in International Studies and Economics from the University of Birmingham.",
-    sources: [{ label: "Clean Energy Ventures - Shanbor Gupta bio", url: "https://cleanenergyventures.com/team-members/shanbor-gupta" }]
-  },
 "temple-fennell": {
     name: "Temple Fennell",
     firm: "Clean Energy Ventures",
@@ -6581,6 +5880,1324 @@ Object.assign(partnerProfiles, {
     sources: [
       { label: "Decisive Point — Debi-Michelle O'Connell profile", url: "https://www.decisivepoint.com/team/debi-oconnell" },
       { label: "Decisive Point — Team", url: "https://www.decisivepoint.com/team" }
+    ]
+  },
+"matt-williams": {
+    name: "Matt Williams",
+    sectors: ["Defense Tech", "Space", "Energy", "AI"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.businesswire.com/news/home/20251110822346/en/Medal-of-Honor-Recipient-Matthew-Williams-Joins-Decisive-Point-as-Partner-Will-Lead-Defense-Tech-Investments",
+    firm: "Decisive Point",
+    firmSlug: "decisive-point",
+    title: "Partner",
+    joinedYear: 2025,
+    education: ["BS, Angelo State University", "MBA, Texas A&M University"],
+    previousExperience: ["Command Sergeant Major, U.S. Army Special Forces (retired after more than two decades of service)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2008, event: "Served in the Afghanistan mission in Nuristan Province during which he led the evacuation of wounded soldiers under fire." },
+      { year: 2019, event: "Received the Medal of Honor for his actions during the 2008 mission in Nuristan Province, Afghanistan." },
+      { year: 2025, event: "Joined Decisive Point as Partner in November to lead the firm's defense and national security investment strategy." }
+    ],
+    notableInvestments: [],
+    biography: "Matt Williams is a Partner at Decisive Point, where he leads the firm's defense and national security investment strategy. He joined the firm in November 2025 after more than two decades in the U.S. Army Special Forces, retiring as a Command Sergeant Major. In 2019 he received the Medal of Honor for his actions during a 2008 mission in Nuristan Province, Afghanistan, where he led the evacuation of wounded soldiers under fire during one of the most intense firefights of the war. At Decisive Point he focuses on early and growth stage companies developing autonomy, kinetic systems, intelligence, surveillance, and reconnaissance, space, energy systems, and AI enabled command and control, and serves as a liaison between portfolio companies, government stakeholders, and limited partners. He holds a BS from Angelo State University and an MBA from Texas A&M University.",
+    sources: [
+      { label: "Decisive Point — Matt Williams profile", url: "https://www.decisivepoint.com/team/matt-williams" },
+      { label: "Business Wire — Medal of Honor Recipient Matthew Williams Joins Decisive Point as Partner (Nov 10, 2025)", url: "https://www.businesswire.com/news/home/20251110822346/en/Medal-of-Honor-Recipient-Matthew-Williams-Joins-Decisive-Point-as-Partner-Will-Lead-Defense-Tech-Investments" }
+    ]
+  },
+"chris-cheever": {
+    name: "Chris Cheever",
+    sectors: ["Mobility", "Deep Tech", "Industrial Tech", "Energy"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://fontinalis.com/story/",
+    firm: "Fontinalis Partners",
+    firmSlug: "fontinalis-partners",
+    title: "Founder & Managing Partner",
+    joinedYear: 2009,
+    education: ["MBA, Yale University", "BA, Harvard University"],
+    previousExperience: ["LaunchCapital (early-stage venture capital)", "HPS Investment Partners (private credit)", "UBS", "Alger (growth equity)"],
+    firmHistory: [],
+    boardSeats: ["Carputty", "Eva", "SmartKargo", "Vecna", "Verity", "zeroRISC"],
+    ipoCount: 2,
+    majorExits: 4,
+    careerTimeline: [
+      { year: 2009, event: "Co-founded Fontinalis Partners as a Founding Principal alongside Bill Ford, Ralph Booth, and Mark Schulz, with offices in Detroit and Boston." },
+      { year: 2019, event: "Lyft, an investment he led for Fontinalis, completed its initial public offering." }
+    ],
+    notableInvestments: [
+      { name: "Lyft", ticker: "LYFT" },
+      { name: "Life360", ticker: "LIF" },
+      { name: "Turo" },
+      { name: "Postmates" }
+    ],
+    biography: "Chris Cheever is Founder and Managing Partner of Fontinalis Partners, the mobility and industrial technology venture firm he co-founded in late 2009 with Bill Ford, Ralph Booth, and Mark Schulz. Based in Boston, he helped craft the firm's thesis around mobility, industrial innovation, and energy, and continues to guide its strategy with a focus on frontier technology. He led Fontinalis investments in Lyft, Turo, Postmates, and Veho, and previously served on the boards of Life360, Synovia, and Tomorrow.io. He currently holds director roles at Carputty, Eva, SmartKargo, Vecna, Verity, and zeroRISC. Earlier in his career he worked at LaunchCapital, HPS Investment Partners, UBS, and Alger. He holds an MBA from Yale and a BA from Harvard.",
+    sources: [
+      { label: "Fontinalis — Team", url: "https://fontinalis.com/team/" },
+      { label: "Fontinalis — Story", url: "https://fontinalis.com/story/" },
+      { label: "PR Newswire — Fontinalis launch (2009)", url: "https://www.prnewswire.com/news-releases/bill-ford-ralph-booth-and-mark-schulz-announce-the-official-launch-of-fontinalis-partners-83037982.html" }
+    ]
+  },
+"laura-petterle": {
+    name: "Laura Petterle",
+    sectors: [],
+    firm: "Fontinalis Partners",
+    firmSlug: "fontinalis-partners",
+    title: "Managing Partner & CFO",
+    joinedYear: null,
+    education: ["Bachelor's degree, University of Michigan"],
+    previousExperience: ["Executive Vice President & CFO, Booth American Company (since 1994)", "Finance positions, Maclean Hunter (12 years)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1994, event: "Became Executive Vice President and CFO of Booth American Company, overseeing finances for its media and telecommunications holdings." },
+      { year: 1999, event: "Managed the process that yielded the 853 million dollar sale of Booth American Company's U.S. broadband assets." }
+    ],
+    notableInvestments: [],
+    biography: "Laura Petterle is Managing Partner and CFO of Fontinalis Partners, based in Detroit. As CFO she manages the professionals responsible for the firm's financial reporting, governance, compliance, transaction and legal due diligence, and shareholder relations, and she advises portfolio companies on operating matters, complex transactions, and governance. Since 1994 she has served as Executive Vice President and CFO of Booth American Company, where she oversaw the finances of its media and telecommunications holdings, managed its U.S. Cable Television Division, and led the process resulting in the 853 million dollar sale of its U.S. broadband assets in 1999. Before Booth American she spent 12 years in finance roles at Maclean Hunter, a Canadian cable television and telecommunications company. She holds a bachelor's degree from the University of Michigan.",
+    sources: [
+      { label: "Fontinalis — Team", url: "https://fontinalis.com/team/" }
+    ]
+  },
+"chris-stallman": {
+    name: "Chris Stallman",
+    sectors: ["Logistics", "Industrial Tech", "AI", "Enterprise Software"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://fontinalis.com/team/",
+    firm: "Fontinalis Partners",
+    firmSlug: "fontinalis-partners",
+    title: "Managing Partner",
+    joinedYear: null,
+    education: ["BBA, University of Michigan Ross School of Business"],
+    previousExperience: ["Transaction and financial advisory for industrial and automotive clients, Stout (five years)", "Private markets team, University of Michigan Investment Office"],
+    firmHistory: [],
+    boardSeats: ["Chain.io", "SONAR"],
+    ipoCount: null,
+    majorExits: 4,
+    careerTimeline: [
+      { year: 2018, event: "TransLoc, where he held a board role for Fontinalis, was acquired by Ford Smart Mobility." },
+      { year: 2018, event: "Joined the oversight committee for the University of Michigan MTRAC Innovation Hub, a role running through 2026." }
+    ],
+    notableInvestments: [
+      { name: "Turo" },
+      { name: "Postmates" },
+      { name: "Telogis" }
+    ],
+    biography: "Chris Stallman is a Managing Partner at Fontinalis Partners in Detroit, where he invests at the intersection of emerging companies and large physical industries, with particular interest in supply chain transformation, enterprise efficiency, data and analytics, and AI and automation. He serves on the boards of Chain.io and SONAR, formerly FreightWaves, and is a board observer at Highland Electric Fleets and Condoit. His prior board experience includes TransLoc, acquired by Ford Smart Mobility, and Synovia Solutions, acquired by CalAmp, and his notable portfolio work includes Telogis, Postmates, and Turo. Before Fontinalis he spent five years at the advisory firm Stout serving industrial and automotive clients and worked on the private markets team at the University of Michigan Investment Office. A CFA charterholder, he holds a BBA with distinction from Michigan's Ross School of Business.",
+    sources: [
+      { label: "Fontinalis — Team", url: "https://fontinalis.com/team/" },
+      { label: "Ford Media — TransLoc acquisition (2018)", url: "https://media.ford.com/content/fordmedia/feu/en/news/2018/01/26/ford-realigns-mobility-group--acquiring-autonomic--transloc-to-a.html" }
+    ]
+  },
+"dan-ratliff": {
+    name: "Dan Ratliff",
+    sectors: ["Deep Tech", "Robotics", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://fontinalis.com/team/",
+    firm: "Fontinalis Partners",
+    firmSlug: "fontinalis-partners",
+    title: "Partner",
+    joinedYear: 2014,
+    education: ["BA, Michigan State University (Eli Broad College of Business, Honors College)", "Master of Finance, Vanderbilt University (Owen Graduate School of Management)"],
+    previousExperience: ["Investment banking"],
+    firmHistory: [],
+    boardSeats: ["ChipFlow"],
+    ipoCount: 1,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Joined Fontinalis Partners as an Associate after a career in investment banking." },
+      { year: 2021, event: "Served as board observer for Ouster ahead of its public listing on the NYSE." },
+      { year: 2023, event: "Promoted to Partner at Fontinalis Partners." }
+    ],
+    notableInvestments: [
+      { name: "Etched" },
+      { name: "Drivly" },
+      { name: "CelLink" },
+      { name: "Sibros" },
+      { name: "Ouster", ticker: "OUST" }
+    ],
+    biography: "Dan Ratliff is a Partner at Fontinalis Partners in Detroit. He joined the firm as an Associate in 2014 after an investment banking career and was promoted to Partner in 2023. He focuses on frontier technologies and how advances in compute, robotics, manufacturing processes, and software infrastructure impact global industries. He led or co-led Fontinalis investments in CelLink, Sibros, Carputty, and ChipFlow, led investments in Etched and Drivly, and served as board observer for Ouster before its 2021 public listing. He currently sits on the board of ChipFlow and is a board observer at CelLink, Sibros, Carputty, Halo Industries, and Swift Solar. He holds a BA from Michigan State University's Eli Broad College of Business and a Master of Finance from Vanderbilt University's Owen Graduate School of Management.",
+    sources: [
+      { label: "Fontinalis — Team", url: "https://fontinalis.com/team/" },
+      { label: "PRWeb — Fontinalis partner promotions (2023)", url: "https://www.prweb.com/releases/Fontinalis_Partners_Elevates_Two_Principals_to_Partner_Roles_and_Welcomes_New_Operations_Team_Member/prweb19412546.htm" }
+    ]
+  },
+"reilly-brennan": {
+    name: "Reilly Brennan",
+    sectors: ["Mobility", "Logistics"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.trucks.vc/about",
+    firm: "Trucks Venture Capital",
+    firmSlug: "trucks-venture-capital",
+    title: "Partner",
+    joinedYear: 2015,
+    education: [],
+    previousExperience: ["Executive Director, Revs Program, Stanford University", "Lecturer, Stanford University School of Engineering and d.school", "Automotive journalism, car magazine"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2015, event: "Co-founded Trucks Venture Capital, a San Francisco seed fund for transportation startups." },
+      { year: 2021, event: "Trucks closed Trucks Venture Fund 2 at 52,525,252 dollars alongside a new growth fund." },
+      { year: 2025, event: "Trucks announced its 70 million dollar third fund to back next-generation transportation startups." }
+    ],
+    notableInvestments: [
+      { name: "May Mobility" },
+      { name: "Roadster" },
+      { name: "Edge Case Research" },
+      { name: "Gatik" }
+    ],
+    biography: "Reilly Brennan is a co-founder and partner of Trucks Venture Capital, a San Francisco seed fund backing entrepreneurs building transportation that is decarbonized, safer, and more accessible. At Trucks he championed investments including May Mobility, Roadster, and Edge Case Research. He writes FoT, a widely read weekly newsletter on the future of transportation, and co-founded MobilityJobs.com. Before Trucks he served as Executive Director of the Revs Program, Stanford University's automotive research program, and taught at Stanford's School of Engineering and d.school. A Michigan native, he began his career in the auto industry at a car magazine during his undergraduate years and has spent more than two decades in transportation.",
+    sources: [
+      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
+      { label: "Reilly Brennan — About", url: "https://reillybrennan.com/about" },
+      { label: "TechCrunch — Trucks Fund 2 (2021)", url: "https://techcrunch.com/2021/06/08/trucks-vc-launches-two-new-funds-for-early-and-late-stage-transportation-startups" },
+      { label: "TechCrunch — Trucks Fund 3 (2025)", url: "https://techcrunch.com/?p=2940113" }
+    ]
+  },
+"jeffrey-schox": {
+    name: "Jeffrey Schox",
+    sectors: ["Mobility"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.trucks.vc/about",
+    firm: "Trucks Venture Capital",
+    firmSlug: "trucks-venture-capital",
+    title: "Partner",
+    joinedYear: 2015,
+    education: ["BS Mechanical Engineering, University of Michigan", "MS Electrical Engineering, University of Michigan", "JD, George Mason University"],
+    previousExperience: ["Founder and patent attorney, Schox Patent Group", "Engineer, original electric vehicle program, General Motors", "Lecturer, Stanford University (Patent Law and Strategy for Innovators and Entrepreneurs)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: 1,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2015, event: "Co-founded Trucks Venture Capital, where he leads investments in transportation startups." },
+      { year: 2025, event: "Trucks announced its 70 million dollar third fund to back next-generation transportation startups." }
+    ],
+    notableInvestments: [
+      { name: "Joby Aviation", ticker: "JOBY" },
+      { name: "Cruise" },
+      { name: "Universal Hydrogen" },
+      { name: "Skyryse" }
+    ],
+    biography: "Jeffrey Schox is a founder and partner of Trucks Venture Capital, the San Francisco seed fund for transportation startups, where his investments include Universal Hydrogen, Skyryse, Joby Aviation, and Refraction. He grew up outside Detroit, studied mechanical and electrical engineering, and worked as an engineer on the original electric vehicle at General Motors. He is also the founder of Schox Patent Group, a boutique patent firm that has developed patent strategy for Coinbase, Cruise, Duo, Joby, Twilio, and hundreds of other startups, and he was an angel investor in Cruise, later acquired by General Motors. He teaches patent law and strategy as a lecturer at Stanford University. He holds engineering degrees from the University of Michigan and a JD from George Mason University.",
+    sources: [
+      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
+      { label: "Schox Patent Group", url: "https://www.schox.com/" },
+      { label: "Schox Philanthropy — Team", url: "https://www.schox.org/our-team" },
+      { label: "TechCrunch — Trucks Fund 3 (2025)", url: "https://techcrunch.com/?p=2940113" }
+    ]
+  },
+"kathryn-schox": {
+    name: "Kathryn Schox",
+    sectors: ["Mobility", "Logistics"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.trucks.vc/about",
+    firm: "Trucks Venture Capital",
+    firmSlug: "trucks-venture-capital",
+    title: "Partner",
+    joinedYear: 2015,
+    education: ["BA Cultural Anthropology, University of Maryland", "MA Cultural Anthropology, University of Maryland"],
+    previousExperience: ["Chief Operating Officer, Schox Patent Group"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2015, event: "Co-founded Trucks Venture Capital, where she developed the firm's mission of decarbonized, safer, and more accessible transportation." },
+      { year: 2021, event: "Bear Flag Robotics, an investment she led for Trucks, was acquired by John Deere." }
+    ],
+    notableInvestments: [
+      { name: "ChargerHelp" },
+      { name: "Gatik" },
+      { name: "Bear Flag Robotics" },
+      { name: "Wise Systems" }
+    ],
+    biography: "Kathryn Schox is a founder and partner of Trucks Venture Capital, the San Francisco seed fund for transportation startups. She developed the Trucks mission of backing transportation that is decarbonized, safer, and more accessible, and led the firm's investments in ChargerHelp, Gatik, Bear Flag Robotics, and Wise Systems, with Bear Flag Robotics acquired by John Deere in 2021. Before Trucks she was Chief Operating Officer of Schox Patent Group, a firm recognized on the Inc. 5000 list of fastest growing companies for five consecutive years. She also leads Schox Philanthropy, which invites startup founders to pledge equity to fund charitable giving. She studied cultural anthropology at the University of Maryland, earning bachelor's and master's degrees.",
+    sources: [
+      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
+      { label: "Schox Philanthropy — Team", url: "https://www.schox.org/our-team" },
+      { label: "U-M Center for Entrepreneurship — Kate Schox profile", url: "https://cfe.umich.edu/transportation-philanthropy-and-innovation-the-work-of-kate-schox/" },
+      { label: "TechCrunch — Trucks Fund 3 (2025)", url: "https://techcrunch.com/?p=2940113" }
+    ]
+  },
+"puneeth-meruva": {
+    name: "Puneeth Meruva",
+    sectors: ["Mobility"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.trucks.vc/about",
+    firm: "Trucks Venture Capital",
+    firmSlug: "trucks-venture-capital",
+    title: "Partner",
+    joinedYear: 2019,
+    education: ["BS Electrical Engineering and Computer Science, Massachusetts Institute of Technology"],
+    previousExperience: ["Safety software internships, Uber, BMW, and Microsoft", "Perception researcher, MIT Distributed Robotics Group and CMU Biorobotics Lab"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2019, event: "Joined Trucks Venture Capital full time as an analyst after graduating from MIT and interning with the firm." },
+      { year: 2023, event: "Named Partner at Trucks Venture Capital, concurrent with the launch of Trucks Venture Fund 3." }
+    ],
+    notableInvestments: [],
+    biography: "Puneeth Meruva is a Partner at Trucks Venture Capital, the San Francisco seed fund for transportation startups. He interned with Trucks during his final term at MIT, joined full time as an analyst in 2019 after graduating with a BS in electrical engineering and computer science, and was promoted through associate and senior associate roles before being named Partner in May 2023, concurrent with the launch of Trucks Venture Fund 3. Earlier he held safety software internships at Uber, BMW, and Microsoft and conducted perception research in MIT's Distributed Robotics Group and CMU's Biorobotics Lab. He authors the firm's FoT research briefs on transportation topics and writes the Flywheel newsletter on micromobility.",
+    sources: [
+      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
+      { label: "Trucks VC — Puneeth Meruva Named Partner", url: "https://www.trucks.vc/blog/puneeth-meruva-named-trucks-partner" },
+      { label: "EVCA — Meet Puneeth Meruva", url: "https://evca.org/content/meet-puneeth-meruva" }
+    ]
+  },
+"jason-townsend": {
+    name: "Jason Townsend",
+    sectors: [],
+    firm: "Trucks Venture Capital",
+    firmSlug: "trucks-venture-capital",
+    title: "CFO",
+    joinedYear: null,
+    education: ["Bachelor's degree, Computer Engineering, University of Michigan", "MBA, University of Michigan Ross School of Business"],
+    previousExperience: ["Co-founder, Resonant Venture Partners", "Founder and Managing Director, Townsend Mertz", "Business development manager, Intel"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2018, event: "Co-founded Townsend Mertz, a real estate investment firm." },
+      { year: 2018, event: "Duo Security, a first-round investment of his fund Resonant Venture Partners, was acquired by Cisco." }
+    ],
+    notableInvestments: [
+      { name: "Duo Security" }
+    ],
+    biography: "Jason Townsend is CFO of Trucks Venture Capital, the San Francisco seed fund for transportation startups. A Michigan native, he studied computer engineering at the University of Michigan and began his career at Intel, where he became a young business development manager, before returning to Michigan to earn an MBA at the Ross School of Business. He co-founded Resonant Venture Partners, an Ann Arbor venture fund that invested in the first round of Duo Security, which Cisco acquired in 2018. He is also the founder and managing director of Townsend Mertz, a real estate investment firm established in 2018, and founder of Townsend Financial, which provides back office management.",
+    sources: [
+      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
+      { label: "Townsend Mertz — Leadership", url: "https://townsendmertz.com/leadership/" },
+      { label: "Concentrate — Q&A with Michael Godwin and Jason Townsend", url: "https://concentratemedia.com/qna-godwin-townsend0138/" },
+      { label: "Cisco — Duo Security acquisition completed (2018)", url: "https://investor.cisco.com/news/news-details/2018/Cisco-Completes-Acquisition-of-Duo-Security/default.aspx" }
+    ]
+  },
+"darren-bechtel": {
+    name: "Darren Bechtel",
+    sectors: ["Construction Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://brickmortar.vc/team",
+    firm: "Brick & Mortar Ventures",
+    firmSlug: "brick-and-mortar-ventures",
+    title: "Founder & Managing Director",
+    joinedYear: 2015,
+    education: ["B.S. Mechanical Engineering/Product Design, Stanford University", "MBA, Stanford Graduate School of Business"],
+    previousExperience: ["Angel investor, construction technology startups (roughly 40 investments)"],
+    firmHistory: [],
+    boardSeats: ["The Innovative Infrastructure Initiative (I3)", "Cornell Brooks Center for Infrastructure", "CRETech", "Future Place", "Golden Gate National Parks Conservancy", "The Exploratorium"],
+    ipoCount: null,
+    majorExits: 4,
+    careerTimeline: [
+      { year: 2015, event: "Founded Brick & Mortar Ventures in San Francisco to invest in early stage construction technology." },
+      { year: 2018, event: "Autodesk agreed to acquire portfolio companies PlanGrid and BuildingConnected." },
+      { year: 2019, event: "Closed the firm's $97.2 million fund backed by industry investors including Autodesk, CEMEX, and Ferguson Ventures." }
+    ],
+    notableInvestments: [
+      { name: "PlanGrid" },
+      { name: "BuildingConnected" },
+      { name: "Fieldwire" },
+      { name: "Levelset" },
+      { name: "EverCharge" }
+    ],
+    biography: "Darren Bechtel is the Founder and Managing Director of Brick & Mortar Ventures, a San Francisco venture capital firm founded in 2015 that invests exclusively in early stage technology for the architecture, engineering, and construction industry. A fifth generation member of the family behind Bechtel Group, he built the firm after making roughly 40 angel investments in construction technology startups, including early checks into PlanGrid and BuildingConnected, both later acquired by Autodesk. In 2019 the firm closed a $97.2 million fund backed by industry investors such as Autodesk, CEMEX, and Ferguson Ventures. He holds a B.S. in Mechanical Engineering/Product Design and an MBA from Stanford, and serves on several industry advisory and leadership boards.",
+    sources: [
+      { label: "Brick & Mortar Ventures — Team", url: "https://brickmortar.vc/team" },
+      { label: "TechCrunch — Brick & Mortar closes $97.5M fund (2019)", url: "https://techcrunch.com/2019/08/13/darren-bechtel-yes-of-those-bechtels-just-closed-on-97-5-million-for-his-firm-brick-mortar-ventures/" },
+      { label: "Construction Dive — Bechtel scion raises nearly $100M (2019)", url: "https://www.constructiondive.com/news/bechtel-scion-raises-nearly-100m-for-contech-startups/560905/" },
+      { label: "Autodesk — Completes PlanGrid acquisition", url: "https://adsknews.autodesk.com/en/pressrelease/autodesk-completes-plangrid-acquisition/" }
+    ]
+  },
+"kaustubh-pandya": {
+    name: "Kaustubh Pandya",
+    sectors: ["Construction Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://brickmortar.vc/team",
+    firm: "Brick & Mortar Ventures",
+    firmSlug: "brick-and-mortar-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    education: ["B.S. Civil Engineering, U.C. Berkeley", "M.S. Design Construction Integration, Stanford University", "MBA, MIT Sloan School of Management"],
+    previousExperience: ["Consultant, McKinsey & Company", "Forensic structural engineer"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    notableInvestments: [],
+    biography: "Kaustubh Pandya is a General Partner at Brick & Mortar Ventures, where he invests in early stage startups serving the architecture, engineering, and construction industry. Before joining the firm he spent more than four years at McKinsey & Company, where he co-authored construction technology research, and earlier worked as a forensic structural engineer, giving him more than eight years of strategy and industry experience in the AEC sector. He is a licensed Professional Engineer. He holds a B.S. in Civil Engineering from U.C. Berkeley, an M.S. in Design Construction Integration from Stanford, and an MBA from the MIT Sloan School of Management.",
+    sources: [
+      { label: "Brick & Mortar Ventures — Team", url: "https://brickmortar.vc/team" }
+    ]
+  },
+"curtis-rodgers": {
+    name: "Curtis Rodgers",
+    sectors: ["Construction Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://brickmortar.vc/team",
+    firm: "Brick & Mortar Ventures",
+    firmSlug: "brick-and-mortar-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: ["B.B.A. Management, Texas State University-San Marcos", "M.S. Technology, Texas State University-San Marcos"],
+    previousExperience: ["Construction process improvement roles, Kiewit and McCarthy Construction", "Founder, The Society for Construction Solutions"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Founded The Society for Construction Solutions." }
+    ],
+    notableInvestments: [],
+    biography: "Curtis Rodgers is a Partner at Brick & Mortar Ventures, where he invests in early stage construction technology companies. He describes himself as an industrial technologist and investor, and spent six years in construction process improvement roles at Kiewit and McCarthy Construction before moving into venture capital. In 2014 he founded The Society for Construction Solutions. He has participated in NASA's Centennial 3D Printed Habitat Challenge and has lectured for the U.S. Department of Energy's Project Leadership Institute. He holds a B.B.A. in Management and an M.S. in Technology from Texas State University-San Marcos.",
+    sources: [
+      { label: "Brick & Mortar Ventures — Team", url: "https://brickmortar.vc/team" }
+    ]
+  },
+"austin-yount": {
+    name: "Austin Yount",
+    sectors: ["Construction Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://brickmortar.vc/team",
+    firm: "Brick & Mortar Ventures",
+    firmSlug: "brick-and-mortar-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: ["BA Economics, Stanford University"],
+    previousExperience: ["Senior Associate, Brick & Mortar Ventures", "Business Development, Enjoy Technology", "Investment banking analyst", "Professional baseball player, Los Angeles Dodgers and Chicago White Sox organizations"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    notableInvestments: [],
+    biography: "Austin Yount is a Partner at Brick & Mortar Ventures, where he helps the team evaluate, invest in, and grow early stage companies serving the architecture, engineering, and construction industry. He joined the firm as a Senior Associate before becoming Partner. Earlier in his career he was among the first ten employees at Enjoy Technology, working in business development, and before that worked as an investment banking analyst. Prior to his business career he spent three and a half years as a professional baseball player in the Los Angeles Dodgers and Chicago White Sox organizations. He holds a BA in Economics from Stanford University.",
+    sources: [
+      { label: "Brick & Mortar Ventures — Team", url: "https://brickmortar.vc/team" }
+    ]
+  },
+"ty-findley": {
+    name: "Ty Findley",
+    sectors: ["Industrial Tech", "Construction Tech", "Logistics", "Energy"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://ironspring.com/fund-ii/",
+    firm: "Ironspring Ventures",
+    firmSlug: "ironspring-ventures",
+    title: "Co-Founder + General Partner",
+    joinedYear: 2020,
+    education: ["MBA, Kellogg Graduate School of Management", "B.S. Mechanical Engineering, Baylor University"],
+    previousExperience: ["Investor, Pritzker Group Venture Capital", "Investor, GE Ventures", "Investor, G51 Capital", "Design Engineer, Boeing"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2020, event: "Co-founded Ironspring Ventures in Austin to invest in early stage digital industrial companies." },
+      { year: 2021, event: "Ironspring announced its $61 million debut fund." },
+      { year: 2024, event: "Ironspring closed its $100 million Fund II." },
+      { year: 2026, event: "Trimble announced an agreement to acquire Ironspring Fund I portfolio company Document Crunch." }
+    ],
+    notableInvestments: [],
+    biography: "Ty Findley is Co-Founder and General Partner of Ironspring Ventures, an Austin based venture capital firm founded in 2020 that backs early stage companies digitizing industrial sectors including construction, manufacturing, transport and logistics, and alternative energy. He previously held investment roles at Pritzker Group Venture Capital, GE Ventures, and G51 Capital, and began his career as a design engineer at Boeing. He is a Kauffman Fellow. Under his leadership Ironspring announced a $61 million debut fund in 2021 and closed a $100 million Fund II in June 2024, and its seed investment Document Crunch was the subject of an announced acquisition by Trimble in 2026. He holds a B.S. in Mechanical Engineering from Baylor University and an MBA from the Kellogg Graduate School of Management.",
+    sources: [
+      { label: "Ironspring Ventures — Ty Findley bio", url: "https://ironspring.com/team_ty_findley/" },
+      { label: "TechCrunch — Ironspring's $61M fund (2021)", url: "https://techcrunch.com/2021/02/15/with-ironspring-ventures-texas-gets-a-61-million-new-fund-focused-on-industrial-technologies/" },
+      { label: "Ironspring — $100M Fund II announcement (2024)", url: "https://ironspring.com/fund-ii/" },
+      { label: "Ironspring — Document Crunch acquired by Trimble", url: "https://ironspring.com/document-crunch-to-be-acquired-by-trimble/" }
+    ]
+  },
+"peter-j-holt": {
+    name: "Peter J. Holt",
+    sectors: ["Industrial Tech", "Construction Tech", "Logistics", "Energy"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://ironspring.com/fund-ii/",
+    firm: "Ironspring Ventures",
+    firmSlug: "ironspring-ventures",
+    title: "Co-Founder + General Partner",
+    joinedYear: 2020,
+    education: [],
+    previousExperience: ["Co-Founder, Holt Ventures"],
+    firmHistory: [],
+    boardSeats: ["San Antonio Spurs & Entertainment"],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2020, event: "Co-founded Ironspring Ventures in Austin to invest in early stage digital industrial companies." },
+      { year: 2021, event: "Ironspring announced its $61 million debut fund." },
+      { year: 2024, event: "Ironspring closed its $100 million Fund II." }
+    ],
+    notableInvestments: [],
+    biography: "Peter J. Holt is Co-Founder and General Partner of Ironspring Ventures, an Austin based venture capital firm founded in 2020 to invest in early stage companies modernizing construction, manufacturing, transport and logistics, and alternative energy. He is also CEO and General Manager of HOLT Group, parent company of HOLT CAT, the largest Caterpillar dealership in the United States, where the firm describes him as the fifth generation of the Holt family business, and he serves as Chairman and Managing Partner of the NBA's San Antonio Spurs & Entertainment. Before Ironspring he co-founded Holt Ventures, an earlier venture investing effort. Ironspring's seed investment Document Crunch was the subject of an announced acquisition by Trimble in 2026.",
+    sources: [
+      { label: "Ironspring Ventures — Peter J. Holt bio", url: "https://ironspring.com/team_peter_j_holt/" },
+      { label: "TechCrunch — Ironspring's $61M fund (2021)", url: "https://techcrunch.com/2021/02/15/with-ironspring-ventures-texas-gets-a-61-million-new-fund-focused-on-industrial-technologies/" },
+      { label: "Ironspring — $100M Fund II announcement (2024)", url: "https://ironspring.com/fund-ii/" },
+      { label: "Ironspring — Document Crunch acquired by Trimble", url: "https://ironspring.com/document-crunch-to-be-acquired-by-trimble/" }
+    ]
+  },
+"natan-reddy": {
+    name: "Natan Reddy",
+    sectors: ["Industrial Tech", "Logistics", "Construction Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://ironspring.com/team_natan-reddy/",
+    firm: "Ironspring Ventures",
+    firmSlug: "ironspring-ventures",
+    title: "Principal",
+    joinedYear: 2025,
+    education: ["BA Economics, University of California, Berkeley"],
+    previousExperience: ["Principal, 25madison", "Senior Associate, Ironspring Ventures", "Senior Intelligence Analyst, CB Insights"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Rejoined Ironspring Ventures as Principal after serving as Principal at 25madison." },
+      { year: 2026, event: "Trimble announced an agreement to acquire Document Crunch, an Ironspring investment he supported." }
+    ],
+    notableInvestments: [
+      { name: "Document Crunch" },
+      { name: "OneRail" },
+      { name: "Prokeep" },
+      { name: "Solvento" },
+      { name: "GoodShip" }
+    ],
+    biography: "Natan Reddy is a Principal at Ironspring Ventures, based in New York City, focused on early stage digital industrial and supply chain companies. He first joined Ironspring as a Senior Associate, supporting more than 15 early stage investments including Document Crunch, OneRail, Prokeep, Solvento, and GoodShip. He then served as a Principal at 25madison, a New York early stage venture firm, leading investing across supply chain and industrials, before returning to Ironspring as Principal in 2025. Earlier he was a Senior Intelligence Analyst at CB Insights, where he initiated the firm's research coverage of supply chain and logistics innovation and advised large global companies on supply chain trends. He holds a BA in Economics from the University of California, Berkeley.",
+    sources: [
+      { label: "Ironspring Ventures — Natan Reddy bio", url: "https://ironspring.com/team_natan-reddy/" },
+      { label: "VCWire — Ironspring adds two principals (2025)", url: "https://vcwire.tech/2025/03/14/ironspring-ventures-adds-two-principals/" },
+      { label: "Ironspring — Document Crunch acquired by Trimble", url: "https://ironspring.com/document-crunch-to-be-acquired-by-trimble/" }
+    ]
+  },
+"drew-kriens": {
+    name: "Drew Kriens",
+    sectors: ["Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://ironspring.com/team_drew-kriens/",
+    firm: "Ironspring Ventures",
+    firmSlug: "ironspring-ventures",
+    title: "Principal",
+    joinedYear: 2026,
+    education: ["B.S. Business, University of Oregon"],
+    previousExperience: ["Senior Associate, Standard Investments", "Analyst, Juniper Networks"],
+    firmHistory: [],
+    boardSeats: ["1440 Multiversity"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Joined Ironspring Ventures as Principal." }
+    ],
+    notableInvestments: [],
+    biography: "Drew Kriens is a Principal at Ironspring Ventures, which he joined in February 2026. He spent more than six years at Standard Investments as a Senior Associate investing in early to growth stage industrial technology startups, contributing to more than 15 investments across a $500 million portfolio and leading sourcing, diligence, market research, and thesis development for core industrial tech industries. Earlier he was an analyst at Juniper Networks supporting the data science team's marketing efforts. He is an active angel investor in the Bay Area entrepreneurial ecosystem and serves on the board of 1440 Multiversity. He holds a B.S. in Business from the University of Oregon.",
+    sources: [
+      { label: "Ironspring Ventures — Drew Kriens bio", url: "https://ironspring.com/team_drew-kriens/" },
+      { label: "Ironspring — Welcomes Principal Drew Kriens (2026)", url: "https://ironspring.com/ironspring-ventures-welcomes-principal-drew-kriens/" }
+    ]
+  },
+"stephanie-volk": {
+    name: "Stephanie Volk",
+    sectors: [],
+    firm: "Ironspring Ventures",
+    firmSlug: "ironspring-ventures",
+    title: "Vice President, Platform",
+    joinedYear: 2023,
+    education: ["MBA, University of Michigan Ross School of Business", "BA, Columbia University"],
+    previousExperience: ["Vice President of Industry Engagement, National Venture Capital Association", "Platform & Commercial Development, GE Ventures (2015-2017)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Joined GE Ventures, working in platform and commercial development supporting more than 100 portfolio companies." },
+      { year: 2023, event: "Joined Ironspring Ventures as its first Head of Platform." }
+    ],
+    notableInvestments: [],
+    biography: "Stephanie Volk is Vice President, Platform at Ironspring Ventures, where she leads platform work spanning program design, network development, brand strategy, and content. She joined the firm in January 2023 as its first Head of Platform and represents Ironspring on the West Coast from San Francisco. Previously she spent five years at the National Venture Capital Association as Vice President of Industry Engagement, designing programs for venture firm engagement across the industry. Earlier she worked in platform and commercial development at GE Ventures from 2015 to 2017, supporting a portfolio of more than 100 companies. She holds an MBA from the University of Michigan Ross School of Business and a BA from Columbia University.",
+    sources: [
+      { label: "Ironspring Ventures — Stephanie Volk bio", url: "https://ironspring.com/team_stephanie_volk/" },
+      { label: "Ironspring — Introducing Stephanie Volk (2023)", url: "https://ironspring.com/introducing-stephanie-volk/" }
+    ]
+  },
+"tom-chi": {
+    name: "Tom Chi",
+    sectors: ["Climate", "Deep Tech", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html",
+    firm: "At One Ventures",
+    firmSlug: "at-one-ventures",
+    title: "Managing Partner",
+    joinedYear: 2020,
+    education: ["Electrical Engineering, Cornell University"],
+    previousExperience: ["Founding member and Head of Experience, Google X", "Product and user experience leadership, Yahoo (Yahoo Search, Yahoo Answers)", "Product roles, Microsoft (Outlook)", "Astrophysical researcher, Harvard-Smithsonian Lab for Astrophysics"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Founded At One Ventures in San Francisco with Laurie Menoud and Helen Lin." },
+      { year: 2021, event: "At One Ventures announced the close of its 150 million dollar first fund." },
+      { year: 2023, event: "At One Ventures launched its 375 million dollar second fund, bringing assets under management above 500 million dollars." }
+    ],
+    notableInvestments: [],
+    biography: "Tom Chi is Managing Partner of At One Ventures, the San Francisco climate deep tech firm he founded in 2020 with Laurie Menoud and Helen Lin. He was earlier a founding member and Head of Experience at Google X, where he led the product experience team and contributed to projects including Google Glass, the self-driving car effort, and Project Loon. Before that he held product and user experience leadership roles at Yahoo, where he led Yahoo Search work across 44 countries and scaled Yahoo Answers to 90 million users, and at Microsoft, where he worked on Outlook. He began his career in astrophysical research. Under his leadership At One closed a 150 million dollar first fund in 2021 and launched a 375 million dollar second fund in 2023.",
+    sources: [
+      { label: "At One Ventures — Team", url: "https://www.atoneventures.com/team" },
+      { label: "At One Ventures Fund II press release (Oct 2023)", url: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html" },
+      { label: "At One Ventures Fund I press release (Oct 2021)", url: "https://www.webwire.com/ViewPressRel.asp?aId=280347" },
+      { label: "Singularity — Tom Chi speaker bio", url: "https://www.su.org/experts/tom-chi" }
+    ]
+  },
+"laurie-menoud": {
+    name: "Laurie Menoud",
+    sectors: ["Climate", "Deep Tech", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html",
+    firm: "At One Ventures",
+    firmSlug: "at-one-ventures",
+    title: "Founding Partner",
+    joinedYear: 2020,
+    education: [],
+    previousExperience: ["Co-led venture capital investing in North America, BASF", "Launched deep tech ventures from research, SRI International", "Chemical industry roles, Solvay"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Co-founded At One Ventures in San Francisco with Tom Chi and Helen Lin." },
+      { year: 2021, event: "Named as Partner in At One Ventures' announcement of its 150 million dollar first fund." },
+      { year: 2023, event: "Quoted as Founding Partner in At One Ventures' launch of its 375 million dollar second fund." }
+    ],
+    notableInvestments: [],
+    biography: "Laurie Menoud is a Founding Partner of At One Ventures, the San Francisco climate deep tech firm she co-founded in 2020 with Tom Chi and Helen Lin. Trained as a biotechnologist, she has more than a decade of experience in deep tech commercialization, company building, and venture capital. She previously co-led venture capital investing for BASF in North America, worked in the chemical industry at Solvay, and launched deep tech companies built on research at SRI International. At At One Ventures she brings expertise in materials, biology, and chemicals. The firm closed a 150 million dollar first fund in 2021 and announced a 375 million dollar second fund in 2023.",
+    sources: [
+      { label: "At One Ventures — Team", url: "https://www.atoneventures.com/team" },
+      { label: "At One Ventures Fund II press release (Oct 2023)", url: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html" },
+      { label: "At One Ventures Fund I press release (Oct 2021)", url: "https://www.webwire.com/ViewPressRel.asp?aId=280347" }
+    ]
+  },
+"helen-lin": {
+    name: "Helen Lin",
+    sectors: ["Climate", "Deep Tech", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html",
+    firm: "At One Ventures",
+    firmSlug: "at-one-ventures",
+    title: "Partner",
+    joinedYear: 2020,
+    education: [],
+    previousExperience: ["Mergers and acquisitions, Baird", "Mergers and investments, Houlihan Lokey", "Product design for base of the pyramid customers, FINCA Impact Finance", "Digital transformation leadership, multinational banking operations"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Joined At One Ventures at its founding; the firm's site says Tom Chi founded it with her and Laurie Menoud." },
+      { year: 2021, event: "Listed as Principal in At One Ventures' announcement of its 150 million dollar first fund." },
+      { year: 2023, event: "Quoted as Partner in At One Ventures' launch of its 375 million dollar second fund." }
+    ],
+    notableInvestments: [],
+    biography: "Helen Lin is a Partner at At One Ventures, the San Francisco climate deep tech firm founded in 2020, which the firm says Tom Chi founded together with her and Laurie Menoud. She has more than two decades of corporate finance experience across Asia, Africa, Europe, and North America, including mergers and acquisitions work at Baird and Houlihan Lokey, leadership of digital transformation for multinational banking operations, and design of financial products serving base of the pyramid customers at FINCA Impact Finance. She was listed as Principal in the firm's 2021 announcement of its 150 million dollar first fund and as Partner in its 2023 announcement of a 375 million dollar second fund.",
+    sources: [
+      { label: "At One Ventures — Team", url: "https://www.atoneventures.com/team" },
+      { label: "At One Ventures Fund II press release (Oct 2023)", url: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html" },
+      { label: "At One Ventures Fund I press release (Oct 2021)", url: "https://www.webwire.com/ViewPressRel.asp?aId=280347" },
+      { label: "Conversations in Cleantech (Oct 2025) — title corroboration", url: "https://conversationsincleantech.podbean.com/e/laurie-menoud-founding-partner-helen-lin-partner-at-one-ventures-scaling-science-grounding-impact-rewiring-climate-tech-investing/" }
+    ]
+  },
+"ricardo-angel": {
+    name: "Ricardo Angel, PhD",
+    sectors: ["Industrial Tech", "Energy", "Deep Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.piva.vc/",
+    firm: "Piva Capital",
+    firmSlug: "piva-capital",
+    title: "CEO & Managing Partner",
+    joinedYear: 2019,
+    education: ["PhD in Engineering, University of Illinois at Urbana-Champaign", "MS in Engineering, University of Illinois at Urbana-Champaign", "BS in Engineering, University of Illinois at Urbana-Champaign", "MBA, Kellogg School of Management"],
+    previousExperience: ["Founding Managing Director, GE Ventures", "Led Energy Technology Ventures, a 300 million dollar joint venture of GE, NRG Energy, and ConocoPhillips", "Venture capital investment professional, Chevron", "Investment banking analyst, Goldman Sachs", "Management consultant, CNA Corporation"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2019, event: "Founded Piva Capital in San Francisco as CEO and Managing Partner, closing a 250 million dollar inaugural fund backed solely by PETRONAS." },
+      { year: 2021, event: "Expanded the firm, announcing Mark Gudiksen as Piva's second Managing Partner." }
+    ],
+    notableInvestments: [
+      { name: "Worlds.io" },
+      { name: "VELO3D" },
+      { name: "Malta Inc." },
+      { name: "VEIR" }
+    ],
+    biography: "Ricardo Angel is CEO and Managing Partner of Piva Capital, the San Francisco venture firm he founded in 2019 with a 250 million dollar inaugural fund backed solely by PETRONAS. He has more than 25 years of experience investing in the industrial and energy sectors. He was previously the founding Managing Director of GE Ventures and led Energy Technology Ventures, a 300 million dollar joint venture among GE, NRG Energy, and ConocoPhillips. Earlier he was a venture capital investment professional at Chevron, an investment banking analyst at Goldman Sachs, and a management consultant at CNA Corporation. His portfolio work at Piva includes Worlds.io, VELO3D, Malta, and VEIR. He holds a PhD in engineering from the University of Illinois and an MBA from Kellogg.",
+    sources: [
+      { label: "Piva Capital — Ricardo Angel bio", url: "https://piva.vc/team-member/ricardo-angel-phd/" },
+      { label: "Piva Capital — People", url: "https://piva.vc/people/" },
+      { label: "Piva $250M fund launch press release (Dec 2019)", url: "https://www.prnewswire.com/news-releases/piva-launches-250-million-fund-to-invest-in-a-new-era-of-industry-and-energy-300972779.html" },
+      { label: "Piva team expansion press release (Sep 2021)", url: "https://www.prnewswire.com/news-releases/piva-capital-expands-team-to-back-visionary-entrepreneurs-and-transformative-industrial-companies-redefining-trillion-dollar-markets-301375890.html" }
+    ]
+  },
+"mark-gudiksen": {
+    name: "Mark Gudiksen, PhD",
+    sectors: ["Climate", "Industrial Tech", "Energy"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.prnewswire.com/news-releases/piva-capital-expands-team-to-back-visionary-entrepreneurs-and-transformative-industrial-companies-redefining-trillion-dollar-markets-301375890.html",
+    firm: "Piva Capital",
+    firmSlug: "piva-capital",
+    title: "Managing Partner",
+    joinedYear: 2021,
+    education: ["PhD in Chemical Physics, Harvard University", "BS in Chemistry, Stanford University"],
+    previousExperience: ["Co-founder, Circularis Partners", "Managing Director, TPG Alternative and Renewable Technologies fund", "McKinsey & Company"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Joined Piva Capital as the firm's second Managing Partner." }
+    ],
+    notableInvestments: [
+      { name: "Xage Security" },
+      { name: "Pyka" },
+      { name: "Alloy Enterprises" },
+      { name: "Koloma" },
+      { name: "Lunar Energy" },
+      { name: "Planted Solar" }
+    ],
+    biography: "Mark Gudiksen is a Managing Partner at Piva Capital, which he joined in 2021 as the firm's second Managing Partner. He has more than 20 years of experience across technology, company building, and investing, with a longstanding focus on climate related technologies. He previously co-founded Circularis Partners, served as a Managing Director in TPG's Alternative and Renewable Technologies fund, and worked at McKinsey and Company. He holds a PhD in Chemical Physics from Harvard University, where his nanotechnology research produced highly cited publications in journals including Science and Nature, and a BS in Chemistry from Stanford University. His Piva portfolio includes Xage Security, Pyka, Alloy Enterprises, Koloma, Lunar Energy, and Planted Solar.",
+    sources: [
+      { label: "Piva Capital — Mark Gudiksen bio", url: "https://piva.vc/team-member/mark-gudiksen/" },
+      { label: "Piva Capital — People", url: "https://piva.vc/people/" },
+      { label: "Piva team expansion press release (Sep 2021)", url: "https://www.prnewswire.com/news-releases/piva-capital-expands-team-to-back-visionary-entrepreneurs-and-transformative-industrial-companies-redefining-trillion-dollar-markets-301375890.html" }
+    ]
+  },
+"adzmel-adznan": {
+    name: "Adzmel Adznan",
+    sectors: ["Energy", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://piva.vc/team-member/adzmel-adznan/",
+    firm: "Piva Capital",
+    firmSlug: "piva-capital",
+    title: "Co-Founding Partner",
+    joinedYear: 2019,
+    education: ["Master of Engineering in Mechanical Engineering, University of Strathclyde", "MBA, Harvard Business School"],
+    previousExperience: ["Founding member, PETRONAS corporate venture capital (PETRONAS Ventures)", "Engineering, project development, and strategy roles, PETRONAS upstream petroleum business"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2019, event: "Co-founded Piva Capital, named Partner and Operating Manager at the firm's San Francisco launch." },
+      { year: 2019, event: "Piva closed its 250 million dollar inaugural fund with PETRONAS as sole limited partner, a partnership he originated." }
+    ],
+    notableInvestments: [
+      { name: "VELO3D" },
+      { name: "Oobli" },
+      { name: "Novastus" },
+      { name: "Xage Security" },
+      { name: "OneRail" },
+      { name: "Ineratec" }
+    ],
+    biography: "Adzmel Adznan is a Co-Founding Partner of Piva Capital, named Partner and Operating Manager when the firm launched in San Francisco in 2019 with a 250 million dollar fund backed solely by PETRONAS, a partnership he originated. He spent more than a decade at PETRONAS in engineering, project development, and strategy roles tied to Malaysia's upstream petroleum sector and was a founding member of the company's corporate venture effort focused on new energy, advanced materials, and industrial automation. At Piva he manages limited partner relationships and fundraising strategy and has sourced and supported investments including Oobli, OneRail, and Ineratec. He is a Kauffman Fellow and holds a Master of Engineering from the University of Strathclyde and an MBA from Harvard Business School.",
+    sources: [
+      { label: "Piva Capital — Adzmel Adznan bio", url: "https://piva.vc/team-member/adzmel-adznan/" },
+      { label: "Piva Capital — People", url: "https://piva.vc/people/" },
+      { label: "Piva $250M fund launch press release (Dec 2019)", url: "https://www.prnewswire.com/news-releases/piva-launches-250-million-fund-to-invest-in-a-new-era-of-industry-and-energy-300972779.html" }
+    ]
+  },
+"lisa-read-blanco": {
+    name: "Lisa Read Blanco",
+    sectors: ["Energy"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://piva.vc/team-member/lisa-read-blanco/",
+    firm: "Piva Capital",
+    firmSlug: "piva-capital",
+    title: "Partner & Legal Counsel",
+    joinedYear: null,
+    education: ["JD, University of Georgia School of Law", "BBA in International Business, University of Georgia"],
+    previousExperience: ["General Counsel and Chief Compliance Officer, Energy Technology Ventures (joint venture of GE, NRG Energy, and ConocoPhillips)", "Corporate partner, King & Spalding", "General Counsel, Gray Ghost Ventures"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    notableInvestments: [],
+    biography: "Lisa Read Blanco is Partner and Legal Counsel at Piva Capital in San Francisco. She has more than 20 years of experience executing venture capital transactions, with a focus on energy technology and impact investing. She was previously General Counsel and Chief Compliance Officer of Energy Technology Ventures, a joint venture of General Electric, NRG Energy, and ConocoPhillips, a corporate partner at the international law firm King & Spalding, and General Counsel of the impact investment firm Gray Ghost Ventures. She holds a Juris Doctor from the University of Georgia School of Law and a BBA in International Business from the University of Georgia, where she served nine years on the Terry College of Business board, including as chair.",
+    sources: [
+      { label: "Piva Capital — Lisa Read Blanco bio", url: "https://piva.vc/team-member/lisa-read-blanco/" },
+      { label: "Piva Capital — People", url: "https://piva.vc/people/" }
+    ]
+  },
+"maria-buitron": {
+    name: "Maria Buitron",
+    sectors: ["Energy", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://piva.vc/team-member/maria-buitron/",
+    firm: "Piva Capital",
+    firmSlug: "piva-capital",
+    title: "Principal",
+    joinedYear: 2019,
+    education: ["MBA, UC Berkeley Haas School of Business", "BS in Chemical Engineering, Tecnologico de Monterrey"],
+    previousExperience: ["Business development, Stem Inc.", "Consultant, Schlumberger Business Consulting"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2019, event: "Joined Piva Capital as an Associate at the firm's San Francisco launch." },
+      { year: 2020, event: "Named to the Forbes 30 Under 30 list in Energy." }
+    ],
+    notableInvestments: [
+      { name: "Worlds.io" },
+      { name: "VELO3D" },
+      { name: "Menlo Micro" },
+      { name: "Urbint" },
+      { name: "Boston Metal" },
+      { name: "Sense Photonics" },
+      { name: "Oobli" },
+      { name: "Alloy Enterprises" },
+      { name: "Koloma" }
+    ],
+    biography: "Maria Buitron is a Principal at Piva Capital, which she joined as an Associate when the firm launched in 2019. She previously worked on the business development team at Stem, focusing on international market expansion and new product offerings, and consulted for energy clients across upstream, midstream, and downstream sectors at Schlumberger Business Consulting. She was named to the 2020 Forbes 30 Under 30 list in Energy. Her portfolio involvement at Piva includes Worlds.io, VELO3D, Menlo Micro, Urbint, Boston Metal, Sense Photonics, Oobli, Alloy Enterprises, and Koloma. She holds an MBA from the UC Berkeley Haas School of Business and a BS in Chemical Engineering with top honors from Tecnologico de Monterrey.",
+    sources: [
+      { label: "Piva Capital — Maria Buitron bio", url: "https://piva.vc/team-member/maria-buitron/" },
+      { label: "Piva Capital — People", url: "https://piva.vc/people/" },
+      { label: "Piva $250M fund launch press release (Dec 2019)", url: "https://www.prnewswire.com/news-releases/piva-launches-250-million-fund-to-invest-in-a-new-era-of-industry-and-energy-300972779.html" }
+    ]
+  },
+"kevin-lalande": {
+    name: "Kevin Lalande",
+    sectors: ["Healthcare", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://sante.com/team/kevin-lalande",
+    firm: "Santé Ventures",
+    firmSlug: "sante-ventures",
+    title: "Founding Managing Director & Chief Investment Officer",
+    joinedYear: 2006,
+    education: ["MBA, Harvard Business School", "BS (honors), Electrical & Computer Engineering", "Graduate Certificate in Artificial Intelligence, Stanford University"],
+    previousExperience: ["Investment Professional, Austin Ventures", "Management Consultant, McKinsey & Company", "Founder of three internet companies (1990s)"],
+    firmHistory: [],
+    boardSeats: ["Clairity"],
+    ipoCount: null,
+    majorExits: 4,
+    careerTimeline: [
+      { year: 2006, event: "Co-founded Santé Ventures in Austin to create and finance early-stage healthcare companies." },
+      { year: 2021, event: "Led Santé Ventures through the close of its $260 million fourth fund." },
+      { year: 2026, event: "Announced the close of Santé Ventures' $330 million fifth fund as Founding Managing Director and Chief Investment Officer." }
+    ],
+    notableInvestments: [
+      { name: "LDR Medical" },
+      { name: "Explorys" },
+      { name: "AbVitro" },
+      { name: "Millipede Medical" }
+    ],
+    biography: "Kevin Lalande is a Founding Managing Director and Chief Investment Officer of Santé Ventures, the Austin based healthcare and life science investment firm he co-founded in 2006. He oversees investment strategies managing more than one billion dollars across five venture funds. Before Santé, he spent seven years as an investment professional at Austin Ventures, worked as a management consultant at McKinsey and Company, and founded three internet companies in the 1990s. His venture investments include LDR Medical, Explorys, AbVitro, and Millipede Medical. He holds an MBA with highest distinction from Harvard Business School, a bachelor's degree with honors in electrical and computer engineering, and a graduate certificate in artificial intelligence from Stanford University.",
+    sources: [
+      { label: "Santé — Team, Kevin Lalande", url: "https://sante.com/team/kevin-lalande" },
+      { label: "Clairity — Team, Kevin Lalande", url: "https://clairity.com/team/kevin-lalande/" },
+      { label: "PR Newswire — Santé Fund IV (2021)", url: "https://www.prnewswire.com/news-releases/sante-ventures-raises-260-million-in-fourth-fund-301378469.html" },
+      { label: "Santé — Fund V announcement (2026)", url: "https://sante.com/sante-ventures-raises-330-million-for-fifth-fund-to-advance-breakthrough-healthcare-innovation" }
+    ]
+  },
+"joe-cunningham": {
+    name: "Joe Cunningham, MD",
+    sectors: ["Healthcare"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://sante.com/team/joe-cunningham-md",
+    firm: "Santé Ventures",
+    firmSlug: "sante-ventures",
+    title: "Founding Managing Director",
+    joinedYear: 2006,
+    education: ["BS, Texas A&M University", "MD, Texas A&M University", "MBA, Baylor University"],
+    previousExperience: ["Chief Medical Officer, Providence Health System (Ascension)", "Executive Director, Providence Health Alliance (Ascension)", "Healthcare Venture Partner, Austin Ventures", "Vice Chair of Investment Committee, Ascension Health Ventures"],
+    firmHistory: [],
+    boardSeats: ["Cleveland Clinic Innovations", "Mass General Brigham Innovation Growth Board"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Co-founded Santé Ventures as a Founding Managing Director." }
+    ],
+    notableInvestments: [],
+    biography: "Joe Cunningham, MD is a Founding Managing Director of Santé Ventures, which he co-founded in 2006. A board certified internal medicine physician and Fellow of the American College of Physicians, he previously served as Chief Medical Officer of Providence Health System and Executive Director of Providence Health Alliance, both part of Ascension. He was also a healthcare venture partner with Austin Ventures and vice chair of the investment committee of Ascension Health Ventures. He serves on boards at Cleveland Clinic Innovations and the Innovation Growth Board of Mass General Brigham, and chairs innovation efforts for the Texas A&M System. He earned a BS and an MD from Texas A&M University and an MBA from Baylor University.",
+    sources: [
+      { label: "Santé — Team, Joe Cunningham, MD", url: "https://sante.com/team/joe-cunningham-md" }
+    ]
+  },
+"douglas-french": {
+    name: "Douglas French",
+    sectors: ["Healthcare"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://sante.com/team/doug-french",
+    firm: "Santé Ventures",
+    firmSlug: "sante-ventures",
+    title: "Founding Managing Director",
+    joinedYear: 2006,
+    education: ["Graduate degree, Xavier University", "Undergraduate degree in pre-medical biology, Trevecca University"],
+    previousExperience: ["President and CEO, Ascension Health", "Founder, Ascension Ventures", "CEO, St. Vincent Health System (Indianapolis)"],
+    firmHistory: [],
+    boardSeats: ["MillerKnoll, Inc."],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Co-founded Santé Ventures as a Founding Managing Director." }
+    ],
+    notableInvestments: [],
+    biography: "Douglas French is a Founding Managing Director of Santé Ventures, which he co-founded in 2006 after more than thirty years as a healthcare executive. He previously served as President and CEO of Ascension Health, the largest nonprofit health system in the United States, where he also founded Ascension Ventures, its strategic venture arm. Earlier he was CEO of St. Vincent Health System in Indianapolis. He is a Fellow of the American College of Healthcare Executives and serves on the board of directors of MillerKnoll, Inc. He holds an undergraduate degree in pre-medical biology from Trevecca University and a graduate degree from Xavier University.",
+    sources: [
+      { label: "Santé — Team, Douglas French", url: "https://sante.com/team/doug-french" }
+    ]
+  },
+"dennis-mcwilliams": {
+    name: "Dennis McWilliams",
+    sectors: ["Healthcare", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://sante.com/team/dennis-mcwilliams",
+    firm: "Santé Ventures",
+    firmSlug: "sante-ventures",
+    title: "Managing Director",
+    joinedYear: 2019,
+    education: ["MS in Engineering Management, Stanford University", "BS in Aerospace Engineering (honors), University of Texas"],
+    previousExperience: ["Founder and CEO, later President and Chief Commercial Officer, Apollo Endosurgery", "Founder, SparkMed Advisors", "Co-founder, Chrysalis BioTechnology", "Analyst, IC2 Institute"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "After nine years as founding CEO of Apollo Endosurgery, became the company's President and Chief Commercial Officer." },
+      { year: 2019, event: "Joined Santé Ventures as a Venture Partner based in Austin." },
+      { year: 2026, event: "Promoted to Managing Director, announced with the close of Santé Ventures' $330 million Fund V." }
+    ],
+    notableInvestments: [],
+    biography: "Dennis McWilliams is a Managing Director at Santé Ventures. He joined the firm in 2019 as a Venture Partner and was promoted to Managing Director, announced with the close of the firm's fifth fund in 2026. He founded Apollo Endosurgery, a minimally invasive surgical device company, serving as CEO for nine years before becoming President and Chief Commercial Officer in 2014 as the company grew into a public company with a presence in more than sixty countries. He also founded SparkMed Advisors, a medical device advisory firm, and co-founded Chrysalis BioTechnology, a biopharmaceutical company focused on tissue regeneration. He holds an MS in engineering management from Stanford University and a BS in aerospace engineering with honors from the University of Texas.",
+    sources: [
+      { label: "Santé — Team, Dennis McWilliams", url: "https://sante.com/team/dennis-mcwilliams" },
+      { label: "Santé — Dennis McWilliams Joins Santé Ventures (2019)", url: "https://sante.com/dennis-mcwilliams-joins-sante-ventures" },
+      { label: "Santé — Fund V announcement (2026)", url: "https://sante.com/sante-ventures-raises-330-million-for-fifth-fund-to-advance-breakthrough-healthcare-innovation" }
+    ]
+  },
+"omar-khalil": {
+    name: "Omar Khalil",
+    sectors: ["Biotech", "Life Sciences"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://sante.com/team/omar-khalil",
+    firm: "Santé Ventures",
+    firmSlug: "sante-ventures",
+    title: "Managing Director",
+    joinedYear: 2020,
+    education: ["MSE in Biomedical Engineering, University of Michigan", "BSE in Biomedical Engineering, University of Michigan"],
+    previousExperience: ["Senior leadership roles, Baxter International and Baxalta (now Takeda)", "Senior leadership, Kaléo", "Consultant, healthcare practice, McKinsey & Company"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2007, event: "First joined Santé Ventures before leaving for operating roles in the biopharmaceutical industry." },
+      { year: 2020, event: "Rejoined Santé Ventures, focusing on biotechnology investments and overseeing the firm's Boston office." },
+      { year: 2026, event: "Promoted to Managing Director, announced with the close of Santé Ventures' $330 million Fund V." }
+    ],
+    notableInvestments: [],
+    biography: "Omar Khalil is a Managing Director at Santé Ventures, where he focuses on biotechnology investments across multiple therapeutic areas and oversees the firm's Boston office. He first joined Santé in 2007, left for operating roles in industry, and rejoined the firm in 2020. His promotion to Managing Director was announced with the close of Fund V in 2026. His industry experience includes senior leadership roles at Baxter International and Baxalta, now part of Takeda, and at the commercial stage company Kaléo. He began his career in the healthcare practice of McKinsey and Company. He earned a BSE and an MSE in biomedical engineering summa cum laude from the University of Michigan, where he serves on the College of Engineering Leadership Advisory Board.",
+    sources: [
+      { label: "Santé — Team, Omar Khalil", url: "https://sante.com/team/omar-khalil" },
+      { label: "Santé — Fund V announcement (2026)", url: "https://sante.com/sante-ventures-raises-330-million-for-fifth-fund-to-advance-breakthrough-healthcare-innovation" }
+    ]
+  },
+"bill-evans": {
+    name: "Bill Evans",
+    sectors: ["Digital Health", "Healthcare"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://rockhealth.com/team/bill-evans/",
+    firm: "Rock Health Capital",
+    firmSlug: "rock-health-capital",
+    title: "Founder and General Partner",
+    joinedYear: 2016,
+    education: ["BA in Economics, Harvard University"],
+    previousExperience: ["Senior Director, Roche Diagnostics (oncology decision support unit Navify)", "Head of Health Technology Labs and other leadership roles, Genentech", "Programmer Analyst, Goldman Sachs", "Software Engineer, Silicon Valley startups"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Joined Rock Health as CEO and Managing Director after two years at Roche Diagnostics." },
+      { year: 2022, event: "Transitioned to focus full time on Rock Health Capital as General Partner while remaining Chairman of Rock Health Advisory's board." }
+    ],
+    notableInvestments: [],
+    biography: "Bill Evans is Founder and General Partner of Rock Health Capital, a seed and early stage venture fund investing in entrepreneurs working at the intersection of healthcare and technology. He joined Rock Health in 2016 as CEO and Managing Director, and in 2022 transitioned to lead Rock Health Capital full time while remaining Chairman of the board of Rock Health Advisory, which he founded. Before Rock Health, he was Senior Director at Roche Diagnostics, where he launched the Navify oncology decision support unit, and spent more than a decade at Genentech, most recently as head of Health Technology Labs. He began his career as a programmer analyst at Goldman Sachs before working as a software engineer in Silicon Valley. He holds a BA in economics from Harvard University.",
+    sources: [
+      { label: "Rock Health — Team, Bill Evans", url: "https://rockhealth.com/team/bill-evans/" },
+      { label: "Rock Health Capital — About Us", url: "https://rockhealthcapital.com/about-us/" },
+      { label: "Aspen Ideas — Bill Evans speaker bio", url: "https://www.aspenideas.org/speakers/bill-evans" },
+      { label: "Rock Health — A new chapter begins at Rock Health (2022)", url: "https://rockhealth.com/insights/a-new-chapter-begins-at-rock-health/" }
+    ]
+  },
+"sean-day": {
+    name: "Sean Day",
+    sectors: ["Digital Health"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://rockhealth.com/team/sean-day/",
+    firm: "Rock Health Capital",
+    firmSlug: "rock-health-capital",
+    title: "Principal",
+    joinedYear: null,
+    education: ["BS in Bioengineering, Union College", "Master's in Technology Policy, University of Cambridge"],
+    previousExperience: ["Consulting and Research teams, Rock Health", "Operations Analyst, Epic"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    notableInvestments: [],
+    biography: "Sean Day is a Principal at Rock Health Capital, the seed and early stage venture fund investing at the intersection of healthcare and technology. He moved to the investment team after working on Rock Health's consulting and research teams, where he advised enterprise healthcare companies on their digital strategies and wrote extensively on digital health funding and market trends. His career began at Epic, where he worked with R&D leaders to help scale the population health division. After college he held a Watson Fellowship. He earned a BS in bioengineering summa cum laude from Union College and a master's degree in technology policy from the University of Cambridge.",
+    sources: [
+      { label: "Rock Health — Team, Sean Day", url: "https://rockhealth.com/team/sean-day/" },
+      { label: "Rock Health Capital — About Us", url: "https://rockhealthcapital.com/about-us/" }
+    ]
+  },
+"vasu-kulkarni": {
+    name: "Vasu Kulkarni",
+    sectors: ["Sports", "Gaming", "Media"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.courtsidevc.com/team-members/vasu-kulkarni",
+    firm: "Courtside Ventures",
+    firmSlug: "courtside-ventures",
+    title: "Partner",
+    joinedYear: 2016,
+    education: ["BS in Engineering, University of Pennsylvania"],
+    previousExperience: ["Founder, Krossover (sold to Stack Sports in 2017)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2016, event: "Co-founded Courtside Ventures, which launched with a $35 million debut fund for sports and media technology." },
+      { year: 2017, event: "Sold Krossover, the sports analytics company he founded, to Stack Sports." },
+      { year: 2023, event: "Named a top sports investor by Business Insider." }
+    ],
+    notableInvestments: [],
+    biography: "Vasu Kulkarni is a Partner and co-founder of Courtside Ventures, an early stage venture firm launched in January 2016 with a $35 million debut fund to invest in technology and media companies at the intersection of sports and gaming. Before Courtside he founded Krossover, a sports analytics company that provided video and data tools to teams around the world and helped establish the sports analytics industry; Krossover was sold to Stack Sports in 2017. Kulkarni holds a BS in Engineering from the University of Pennsylvania and played junior varsity basketball there. Business Insider named him a top sports investor in 2023.",
+    sources: [
+      { label: "Courtside Ventures — Vasu Kulkarni bio", url: "https://www.courtsidevc.com/team-members/vasu-kulkarni" },
+      { label: "Courtside Ventures — Team", url: "https://courtsidevc.com/team" },
+      { label: "Forbes — Courtside $35M fund launch (Jan 2016)", url: "https://www.forbes.com/sites/darrenheitner/2016/01/11/a-35-million-fund-for-sports-tech-and-media-disruptors/" }
+    ]
+  },
+"deepen-parikh": {
+    name: "Deepen Parikh",
+    sectors: ["Sports", "Media", "Consumer"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.courtsidevc.com/team-members/deepen-parikh",
+    firm: "Courtside Ventures",
+    firmSlug: "courtside-ventures",
+    title: "Partner",
+    joinedYear: 2016,
+    education: ["BA, University of Maryland, College Park"],
+    previousExperience: ["Partner, Interplay Ventures", "Founder, CRM solutions company serving professional and college sports teams", "UBS (three years)"],
+    firmHistory: [],
+    boardSeats: ["24 Hour Fitness"],
+    ipoCount: null,
+    majorExits: 2,
+    careerTimeline: [
+      { year: 2016, event: "Co-founded Courtside Ventures, which launched with a $35 million debut fund." },
+      { year: 2017, event: "Courtside announced it led the seed round in The Athletic, where he took a board seat." },
+      { year: 2022, event: "The Athletic was acquired by The New York Times for $550 million." }
+    ],
+    notableInvestments: [
+      { name: "The Athletic" },
+      { name: "Beam" }
+    ],
+    biography: "Deepen Parikh is a Partner and co-founder of Courtside Ventures, which he helped launch in 2016 to back early stage companies across sports, media, betting, and wellness. He led the firm's investments in Beam, acquired by Microsoft, and in The Athletic, where he served on the board from the initial seed investment through the company's $550 million acquisition by The New York Times in 2022. Earlier he was a partner at Interplay Ventures, spent three years at UBS, and founded a CRM company serving professional and college sports teams. He serves as an independent director of 24 Hour Fitness and holds a BA from the University of Maryland, College Park.",
+    sources: [
+      { label: "Courtside Ventures — Deepen Parikh bio", url: "https://www.courtsidevc.com/team-members/deepen-parikh" },
+      { label: "PR Newswire — Courtside leads The Athletic seed (2017)", url: "https://www.prnewswire.com/news-releases/courtside-ventures-announces-first-year-investment-portfolio-leads-seed-round-in-y-combinator-alum-the-athletic-300387918.html" },
+      { label: "CNBC — NYT to buy The Athletic for $550M (Jan 2022)", url: "https://www.cnbc.com/2022/01/06/new-york-times-announces-plans-to-buy-the-athletic-for-550-million.html" }
+    ]
+  },
+"kai-bond": {
+    name: "Kai Bond",
+    sectors: ["Gaming", "Sports", "Media"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://medium.com/@courtsidevc/adding-another-courtside-seat-c89c9ec50a17",
+    firm: "Courtside Ventures",
+    firmSlug: "courtside-ventures",
+    title: "Partner",
+    joinedYear: 2020,
+    education: ["BA, Wesleyan University"],
+    previousExperience: ["Partner leading the Catalyst Fund, Comcast Ventures", "Head of global accelerator, Samsung NEXT", "Founder, Pixie (acquired by Samsung)", "Business development and M&A, IAC", "Product development, Microsoft"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2020, event: "Joined Courtside Ventures as a Partner leading the firm's gaming investments." }
+    ],
+    notableInvestments: [],
+    biography: "Kai Bond is a Partner at Courtside Ventures, which he joined in March 2020 to lead the firm's gaming investments. A three time founder, he built a gaming marketplace, a mobile gaming studio, and Pixie, an interactive television application acquired by Samsung. After the acquisition he ran a global accelerator at Samsung NEXT, investing in more than a dozen companies, and later led the investment team of Comcast Ventures' $20 million Catalyst Fund focused on underrepresented founders, along with game investments for the Comcast Ventures flagship fund. Earlier roles included product development at Microsoft and business development and M&A at IAC. He holds a BA from Wesleyan University.",
+    sources: [
+      { label: "Courtside Ventures — Kai Bond bio", url: "https://www.courtsidevc.com/team-members/kai-bond" },
+      { label: "Courtside Ventures (Medium) — Adding Another Courtside Seat (Mar 2020)", url: "https://medium.com/@courtsidevc/adding-another-courtside-seat-c89c9ec50a17" }
+    ]
+  },
+"cort-post": {
+    name: "Cort Post",
+    sectors: ["Sports", "Gaming", "Consumer"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.courtsidevc.com/team-members/cort-post",
+    firm: "Courtside Ventures",
+    firmSlug: "courtside-ventures",
+    title: "Principal",
+    joinedYear: null,
+    education: ["MBA in Finance & Entrepreneurship, Kellogg School of Management, Northwestern University", "BS in Finance, Kelley School of Business, Indiana University"],
+    previousExperience: ["Finance & Operations lead, High Alpha", "Entertainment Finance Group (Film & Television), Wells Fargo"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    notableInvestments: [],
+    biography: "Cort Post is a Principal at Courtside Ventures, where he works across the firm's investment verticals with particular emphasis on the wellness category. He came to Courtside with a background in finance and early stage startups. He previously led Finance and Operations at High Alpha, a B2B SaaS venture studio, where he worked with dozens of early stage companies from inception through Series A, and before that worked in the Entertainment Finance Group at Wells Fargo covering the film and television sectors. He holds an MBA in Finance and Entrepreneurship from Northwestern's Kellogg School of Management and a BS in Finance from Indiana University's Kelley School of Business.",
+    sources: [
+      { label: "Courtside Ventures — Cort Post bio", url: "https://www.courtsidevc.com/team-members/cort-post" },
+      { label: "Courtside Ventures — Team", url: "https://courtsidevc.com/team" }
+    ]
+  },
+"natalie-massenet": {
+    name: "Natalie Massenet",
+    sectors: ["Consumer"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.imaginary.co/about",
+    firm: "Imaginary Ventures",
+    firmSlug: "imaginary-ventures",
+    title: "Co-Founder and General Partner",
+    joinedYear: 2018,
+    education: [],
+    previousExperience: ["Founder, Net-a-Porter (founded 2000)", "Non-Executive Co-Chairman, Farfetch (appointed 2017)", "Chairman, British Fashion Council", "Fashion journalist"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2000, event: "Founded Net-a-Porter, creating a template for luxury digital commerce and growing it into a $1 billion business." },
+      { year: 2016, event: "Appointed Dame Commander of the Order of the British Empire." },
+      { year: 2017, event: "Joined Farfetch as Non-Executive Co-Chairman." },
+      { year: 2018, event: "Co-founded Imaginary Ventures with Nick Brown." },
+      { year: 2022, event: "Imaginary Ventures announced a $500 million Fund III, bringing assets under management to $1 billion." }
+    ],
+    notableInvestments: [],
+    biography: "Dame Natalie Massenet is Co-Founder and General Partner of Imaginary Ventures, the consumer focused venture firm she launched with Nick Brown in 2018; the firm closed a $500 million third fund in 2022, bringing assets under management to $1 billion. A former fashion journalist, she founded Net-a-Porter in 2000 and built it into a pioneering luxury e-commerce business valued at over $1 billion. She served as Chairman of the British Fashion Council and later as Non-Executive Co-Chairman of Farfetch, which she joined in 2017. She was appointed Dame Commander of the Order of the British Empire in 2016.",
+    sources: [
+      { label: "Imaginary Ventures — About/Team", url: "https://www.imaginary.co/about" },
+      { label: "PR Newswire — Dame Natalie Massenet joins Farfetch (2017)", url: "https://www.prnewswire.com/news-releases/dame-natalie-massenet-joins-farfetch-300414790.html" },
+      { label: "Business Wire — Imaginary $500M Fund III (Apr 2022)", url: "https://www.businesswire.com/news/home/20220406006018/en/Imaginary-Ventures-Grows-Funds-Under-Management-to-1-Billion-Announces-500-Million-Fund-III-and-Significant-Team-Growth" },
+      { label: "FashionUnited — Massenet to exit BFC role (Dec 2017)", url: "https://fashionunited.uk/news/people/natalie-massenet-set-to-exit-role-at-bfc-after-five-years/2017120127072" }
+    ]
+  },
+"nick-brown": {
+    name: "Nick Brown",
+    sectors: ["Consumer"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.imaginary.co/about",
+    firm: "Imaginary Ventures",
+    firmSlug: "imaginary-ventures",
+    title: "Co-Founder and General Partner",
+    joinedYear: 2018,
+    education: ["Harvard University"],
+    previousExperience: ["Partner, 14W Venture Partners (2011-2017)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2011, event: "Became a Partner at 14W Venture Partners, where he was an early investor in Glossier, Warby Parker, and The RealReal." },
+      { year: 2018, event: "Co-founded Imaginary Ventures with Natalie Massenet." },
+      { year: 2022, event: "Imaginary Ventures announced a $500 million Fund III, bringing assets under management to $1 billion." }
+    ],
+    notableInvestments: [
+      { name: "Glossier" },
+      { name: "Warby Parker", ticker: "WRBY" },
+      { name: "The RealReal", ticker: "REAL" },
+      { name: "Goop" }
+    ],
+    biography: "Nick Brown is Co-Founder and General Partner of Imaginary Ventures, which he launched with Natalie Massenet in 2018 to back early stage consumer businesses at the intersection of technology and retail; the firm announced a $500 million third fund in 2022. From 2011 to 2017 he was a Partner at 14W Venture Partners, where he was an early investor in direct to consumer brands including Glossier, Warby Parker, and The RealReal, and led early stage investments in Goop, Outdoor Voices, and Moda Operandi. A Harvard graduate, he began his career in finance before moving to consumer investing and is a member of the Business of Fashion 500.",
+    sources: [
+      { label: "Imaginary Ventures — About/Team", url: "https://www.imaginary.co/about" },
+      { label: "Entrepreneur — How Success Happened for Nick Brown", url: "https://www.entrepreneur.com/leadership/how-success-happened-for-nick-brown-co-founder-of/411728" },
+      { label: "Business Wire — Imaginary $500M Fund III (Apr 2022)", url: "https://www.businesswire.com/news/home/20220406006018/en/Imaginary-Ventures-Grows-Funds-Under-Management-to-1-Billion-Announces-500-Million-Fund-III-and-Significant-Team-Growth" }
+    ]
+  },
+"kelly-dill": {
+    name: "Kelly Dill",
+    sectors: ["Consumer"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.events.wwd.com/catalysts/speaker/1979806/kelly-dill",
+    firm: "Imaginary Ventures",
+    firmSlug: "imaginary-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: ["BS in Commerce, McIntire School of Commerce, University of Virginia"],
+    previousExperience: ["Strategic finance, Glossier", "Strategic finance, Uber", "M&A, Credit Suisse"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Promoted to Partner at Imaginary Ventures alongside the announcement of the firm's $500 million Fund III." }
+    ],
+    notableInvestments: [],
+    biography: "Kelly Dill is a Partner at Imaginary Ventures, where she manages the pipeline and diligence process for new investments and supports portfolio companies after investment. She was promoted to Partner in April 2022, when the firm announced its $500 million third fund and growth of assets under management to $1 billion. Before joining Imaginary she worked in strategic finance at Glossier in New York and at Uber in San Francisco, and earlier in mergers and acquisitions at Credit Suisse. She holds a Bachelor of Science in Commerce from the University of Virginia's McIntire School of Commerce.",
+    sources: [
+      { label: "Imaginary Ventures — About/Team", url: "https://www.imaginary.co/about" },
+      { label: "WWD Catalysts — Kelly Dill speaker bio", url: "https://www.events.wwd.com/catalysts/speaker/1979806/kelly-dill" },
+      { label: "Business Wire — Fund III and partner promotions (Apr 2022)", url: "https://www.businesswire.com/news/home/20220406006018/en/Imaginary-Ventures-Grows-Funds-Under-Management-to-1-Billion-Announces-500-Million-Fund-III-and-Significant-Team-Growth" }
+    ]
+  },
+"logan-langberg": {
+    name: "Logan Langberg",
+    sectors: ["Consumer"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.imaginary.co/about",
+    firm: "Imaginary Ventures",
+    firmSlug: "imaginary-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: [],
+    previousExperience: ["Investor, Alliance Consumer Growth", "Consumer and retail investment banking (early career)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Promoted to Partner at Imaginary Ventures alongside the announcement of the firm's $500 million Fund III." }
+    ],
+    notableInvestments: [],
+    biography: "Logan Langberg is a Partner at Imaginary Ventures, the consumer focused venture firm founded by Natalie Massenet and Nick Brown, where he invests in early stage consumer companies from seed through Series B. He was promoted to Partner in April 2022 alongside the announcement of the firm's $500 million third fund. He began his career in consumer and retail investment banking and then joined Alliance Consumer Growth, where he worked on investments in restaurant and digitally native consumer brands such as Shake Shack, Blaze Pizza, OUAI Haircare, and Harry's, before joining Imaginary to help build the firm with its founders.",
+    sources: [
+      { label: "Imaginary Ventures — About/Team", url: "https://www.imaginary.co/about" },
+      { label: "Compounding Thoughts — Q&A with Logan Langberg", url: "https://compoundingthoughts.com/interview/qa-with-imaginary-ventures-logan-langberg/" },
+      { label: "Business Wire — Fund III and partner promotions (Apr 2022)", url: "https://www.businesswire.com/news/home/20220406006018/en/Imaginary-Ventures-Grows-Funds-Under-Management-to-1-Billion-Announces-500-Million-Fund-III-and-Significant-Team-Growth" }
+    ]
+  },
+"andrew-maxman": {
+    name: "Andrew Maxman",
+    sectors: ["Consumer"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://business.columbia.edu/20th-rlg-conference/panel-retail-investing",
+    firm: "Imaginary Ventures",
+    firmSlug: "imaginary-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: ["MBA, Columbia Business School", "BA, University of Pennsylvania"],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    notableInvestments: [],
+    biography: "Andrew Maxman is a Partner at Imaginary Ventures, the consumer focused venture capital firm founded by Natalie Massenet and Nick Brown that backs consumer businesses from pre-seed through growth stages and reports roughly $2 billion in assets under management. He partners with brands across categories and stages; the firm's portfolio includes SKIMS, Glossier, Mejuri, Westman Atelier, and other consumer brands. He holds an MBA from Columbia Business School and a BA from the University of Pennsylvania. Details of his career before Imaginary are not publicly documented by the firm or in the conference bios reviewed for this profile.",
+    sources: [
+      { label: "Imaginary Ventures — About/Team", url: "https://www.imaginary.co/about" },
+      { label: "Columbia Business School — RLG conference speaker bio", url: "https://business.columbia.edu/20th-rlg-conference/panel-retail-investing" }
+    ]
+  },
+"deborah-quazzo": {
+    name: "Deborah Quazzo",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://gsv.ventures/team",
+    firm: "GSV Ventures",
+    firmSlug: "gsv-ventures",
+    title: "Managing Partner",
+    joinedYear: 2016,
+    education: ["BA in History, Princeton University", "MBA, Harvard University"],
+    previousExperience: ["Co-Founder, ThinkEquity Partners (acquired 2007)", "Investment banking, Merrill Lynch"],
+    firmHistory: [],
+    boardSeats: ["Ascend Learning", "Degreed", "Uplimit", "Toddle", "Ellucian", "Turnitin"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2007, event: "ThinkEquity Partners, the technology investment bank she co-founded, was acquired." },
+      { year: 2010, event: "Co-founded the ASU+GSV Summit, which now draws more than 15,000 attendees annually." },
+      { year: 2016, event: "Co-founded GSV Ventures (originally GSV AcceleraTE), an education and workforce technology fund." }
+    ],
+    notableInvestments: [
+      { name: "Coursera", ticker: "COUR" },
+      { name: "Nearpod" },
+      { name: "Handshake" },
+      { name: "QuillBot" },
+      { name: "PhysicsWallah" },
+      { name: "ClassDojo" },
+      { name: "Quizizz" },
+      { name: "MasterClass" }
+    ],
+    biography: "Deborah Quazzo is Managing Partner of GSV Ventures, an education and workforce technology venture fund she co-founded in 2016 that manages more than $500 million across three funds. She co-founded the ASU+GSV Summit, an annual education innovation gathering that has grown to more than 15,000 attendees. Her investments include Coursera, Nearpod, Handshake, QuillBot, PhysicsWallah, ClassDojo, Quizizz, and MasterClass, and she serves on the boards of Ascend Learning, Degreed, Uplimit, Toddle, Ellucian, and Turnitin. Earlier she co-founded ThinkEquity Partners, a technology investment bank acquired in 2007, and worked in investment banking at Merrill Lynch. She holds a BA in History from Princeton University and an MBA from Harvard University.",
+    sources: [
+      { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
+      { label: "ASU+GSV Summit — Deborah Quazzo", url: "https://asugsvsummit.com/leadership/deborah-quazzo" },
+      { label: "SALT — Deborah Quazzo speaker bio", url: "https://archive2.salt.org/speakers/deborah-quazzo" }
+    ]
+  },
+"adam-freed": {
+    name: "Adam Freed",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://gsv.ventures/team",
+    firm: "GSV Ventures",
+    firmSlug: "gsv-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    education: ["BA in Linguistics, Harvard University", "Master's degree, Yale Law School"],
+    previousExperience: ["CEO, Teachers Pay Teachers (from 2014)", "Chief Operating Officer, Etsy", "International Product Management and International Sales Operations, Google", "Television reporter and anchor"],
+    firmHistory: [],
+    boardSeats: ["Teachers Pay Teachers (Board Chair)", "Brooklyn Children's Museum"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Named CEO of Teachers Pay Teachers after serving as Chief Operating Officer of Etsy." }
+    ],
+    notableInvestments: [],
+    biography: "Adam Freed is a Managing Partner at GSV Ventures, an education and workforce focused venture firm. He is board chair and former chief executive of Teachers Pay Teachers, which he joined as CEO in 2014 after serving as Chief Operating Officer of Etsy; under his leadership the marketplace reached more than 75 percent of K-12 teachers in the United States, Canada, and Australia. Earlier he led international product management and international sales operations at Google through the company's IPO period, and he began his career as a television reporter and anchor, earning an Emmy award. He holds a BA in Linguistics from Harvard University and a degree from Yale Law School.",
+    sources: [
+      { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
+      { label: "ASU+GSV Summit — Adam Freed", url: "https://asugsvsummit.com/leadership/adam-freed" },
+      { label: "TechCrunch — Teachers Pay Teachers names Freed CEO (Aug 2014)", url: "https://techcrunch.com/2014/08/07/following-its-may-financing-teachers-pay-teachers-names-former-etsy-exec-as-ceo" }
+    ]
+  },
+"michael-cohn": {
+    name: "Michael Cohn",
+    sectors: ["Edtech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://gsv.ventures/team",
+    firm: "GSV Ventures",
+    firmSlug: "gsv-ventures",
+    title: "Co-Founder & Partner",
+    joinedYear: 2016,
+    education: ["MBA, Kellogg School of Management, Northwestern University", "BBA, University of Michigan"],
+    previousExperience: ["Director, GSV Advisors (2011-2016)"],
+    firmHistory: [],
+    boardSeats: ["BEGIN", "QuillBot", "Lightneer", "Toucan"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2011, event: "Joined GSV Advisors as a Director, managing an angel portfolio and helping scale the ASU GSV Summit." },
+      { year: 2016, event: "Became a founding member of GSV Ventures (originally GSV AcceleraTE)." }
+    ],
+    notableInvestments: [
+      { name: "BEGIN" },
+      { name: "QuillBot" },
+      { name: "Lightneer" },
+      { name: "Toucan" }
+    ],
+    biography: "Michael Cohn is Co-Founder and Partner at GSV Ventures, the education and workforce technology venture firm launched in 2016, where he works on fund management, investment sourcing, capital raising, and diligence. He has worked with the GSV platform since 2011, serving as a Director at GSV Advisors from 2011 to 2016, where he managed an angel portfolio and helped scale the ASU GSV Summit into an annual event with thousands of attendees. He serves on the boards of portfolio companies including BEGIN, QuillBot, Lightneer, and Toucan, and holds observer roles at several others. He holds an MBA from Northwestern's Kellogg School of Management and a BBA from the University of Michigan.",
+    sources: [
+      { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
+      { label: "ASU+GSV Summit — Michael Cohn", url: "https://asugsvsummit.com/leadership/michael-cohn" }
     ]
   }
 });
