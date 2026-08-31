@@ -1,5 +1,656 @@
 /* data-partners shard 4 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
+"tony-robbins": {
+    name: "Tony Robbins",
+    sectors: ["Deep Tech"],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://www.primemoverslab.com/team",
+    firm: "Prime Movers Lab",
+    firmSlug: "prime-movers-lab",
+    title: "Partner & Business Strategist",
+    joinedYear: null,
+    education: [],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Published Money Master the Game, the first book in his financial freedom trilogy." },
+      { year: 2017, event: "Published Unshakeable, his second book on finance and investing." },
+      { year: 2021, event: "Named among Prime Movers Lab's partners in the firm's announcement of its 245 million dollar second fund." },
+      { year: 2024, event: "Published The Holy Grail of Investing, the final book in his financial freedom trilogy." }
+    ],
+    notableInvestments: [],
+    biography: "Tony Robbins is a Partner and Business Strategist at Prime Movers Lab, a venture capital firm that invests in breakthrough scientific startups. He was named among the firm's partners in its January 2021 announcement of a 245 million dollar second fund. Robbins is an entrepreneur and author who serves as chairman of a holding company comprising dozens of privately held businesses. His published work on finance and investing includes Money Master the Game in 2014, Unshakeable in 2017, and The Holy Grail of Investing in 2024, the final book in his financial freedom trilogy. At Prime Movers Lab he contributes business strategy experience drawn from four decades of work with companies and their leaders.",
+    sources: [
+      { label: "Prime Movers Lab — Team", url: "https://www.primemoverslab.com/team" },
+      { label: "PR Newswire — Second fund launch naming Robbins as partner (Jan 2021)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-launches-second-scientific-startup-fund-301216006.html" },
+      { label: "PR Newswire — The Holy Grail of Investing (Feb 2024)", url: "https://www.prnewswire.com/news-releases/the-holy-grail-of-investing-the-final-book-in-tony-robbins-financial-freedom-trilogy-debuts-at-1-on-amazons-bestseller-list-302063572.html" }
+    ]
+  },
+"andre-jabban": {
+    name: "Andre Jabban",
+    sectors: [],
+    firm: "Prime Movers Lab",
+    firmSlug: "prime-movers-lab",
+    title: "Partner and Head of Capital Formation",
+    joinedYear: null,
+    education: ["BBA in International Business and Marketing, Loyola University Maryland"],
+    previousExperience: ["Partner and Head of Fund Investor Relations, Flagship Pioneering", "Head of Alternative Investments, Polk Wealth Management Group at Morgan Stanley", "Earlier roles, Merrill Lynch, York Capital Management, and P. Schoenfeld Asset Management"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Earned the Chartered Alternative Investment Analyst designation." },
+      { year: 2024, event: "Served as Head of Fund Investor Relations at Flagship Pioneering when the firm raised its 3.6 billion dollar Fund VIII." }
+    ],
+    notableInvestments: [],
+    biography: "Andre Jabban is a Partner and Head of Capital Formation at Prime Movers Lab, where he leads fundraising across the firm's funds, special purpose vehicles, and portfolio companies. He was previously Partner and Head of Fund Investor Relations at Flagship Pioneering, where he managed capital formation efforts including the firm's 3.6 billion dollar Fund VIII. Before Flagship he spent a decade as Head of Alternative Investments for the Polk Wealth Management Group at Morgan Stanley, sourcing and managing alternative investments and co-investments, and earlier held roles at Merrill Lynch, York Capital Management, and P. Schoenfeld Asset Management. He holds a BBA in international business and marketing from Loyola University Maryland and earned the CAIA designation in 2016.",
+    sources: [
+      { label: "Prime Movers Lab — Team", url: "https://www.primemoverslab.com/team" },
+      { label: "PR Newswire — Flagship Pioneering Fund VIII (Jul 2024)", url: "https://www.prnewswire.com/news-releases/flagship-pioneering-raises-3-6-billion-to-fuel-breakthrough-innovations-that-transform-human-health-and-sustainability-302192743.html" }
+    ]
+  },
+"chad-anderson": {
+    name: "Chad Anderson",
+    sectors: ["Space", "Satellites"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.spacecapital.com/about",
+    firm: "Space Capital",
+    firmSlug: "space-capital",
+    title: "Founder & CEO",
+    joinedYear: 2012,
+    education: ["MBA, University of Oxford"],
+    previousExperience: ["Real estate portfolio manager, JPMorgan Chase", "Founder and Finance Director, Aeris Direct", "Business adviser, Astrobotic Technology (2013-2014)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2012, event: "Became managing director of Space Angels Network, the angel investing platform that became Space Capital." },
+      { year: 2017, event: "Launched the firm's first institutional venture fund." },
+      { year: 2020, event: "Rebranded the business as Space Capital, with Space Angels and Space Talent as sub-brands." },
+      { year: 2023, event: "Published The Space Economy with Wiley." }
+    ],
+    notableInvestments: [],
+    biography: "Chad Anderson is the Founder and CEO of Space Capital, a New York based venture capital firm investing at the intersection of space technology and global markets. He became managing director of Space Angels Network in 2012, built it into an institutional investment platform, and rebranded the business as Space Capital in 2020. The firm reports more than 1 billion dollars in assets under management across four institutional funds, with portfolio companies including SpaceX, Planet, and Rocket Lab. Earlier in his career he managed a 50 billion dollar real estate portfolio at JPMorgan Chase. He holds an MBA from the University of Oxford and is the author of The Space Economy, published by Wiley in 2023.",
+    sources: [
+      { label: "Space Capital — Team", url: "https://www.spacecapital.com/team" },
+      { label: "Space Capital — About", url: "https://www.spacecapital.com/about" },
+      { label: "SpaceNews — Profile of Chad Anderson (2015)", url: "https://spacenews.com/42591profile-chad-anderson-managing-director-space-angels-network/" },
+      { label: "Business Wire — The Space Economy book announcement (Apr 2023)", url: "https://www.businesswire.com/news/home/20230412005103/en/The-Space-Economy-Offers-an-Essential-Guide-for-Investors-and-Entrepreneurs-to-the-Final-Business-Frontier" }
+    ]
+  },
+"tom-ingersoll": {
+    name: "Tom Ingersoll",
+    sectors: ["Space", "Satellites"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.spacecapital.com/team",
+    firm: "Space Capital",
+    firmSlug: "space-capital",
+    title: "Partner",
+    joinedYear: 2017,
+    education: [],
+    previousExperience: ["Chief Executive Officer, Skybox Imaging (2011 until its 2014 sale to Google)", "Co-founder, Universal Space Network (acquired by Swedish Space Corporation in 2009)", "Senior manager, McDonnell Douglas Phantom Works"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: 2,
+    careerTimeline: [
+      { year: 2009, event: "Universal Space Network, the spacecraft tracking company he co-founded, was acquired by Swedish Space Corporation." },
+      { year: 2011, event: "Became Chief Executive Officer of Skybox Imaging in July." },
+      { year: 2014, event: "Led Skybox Imaging through its 500 million dollar acquisition by Google." },
+      { year: 2017, event: "Joined the Space Capital platform, then operating as Space Angels, as a partner." }
+    ],
+    notableInvestments: [],
+    biography: "Tom Ingersoll is a Partner at Space Capital, a venture capital firm focused on the space economy. A two time space entrepreneur, he co-founded Universal Space Network, a spacecraft tracking and communications company acquired by Swedish Space Corporation in 2009. In July 2011 he became Chief Executive Officer of Skybox Imaging, which he led to a 500 million dollar acquisition by Google in 2014. Earlier he was a senior manager at McDonnell Douglas Phantom Works. He joined the Space Capital platform in 2017, when it operated as Space Angels, and applies operating experience in satellites and launch vehicles to the firm's portfolio companies.",
+    sources: [
+      { label: "Space Capital — Team", url: "https://www.spacecapital.com/team" },
+      { label: "Space Capital — About", url: "https://www.spacecapital.com/about" },
+      { label: "SpaceNews — Profile of Tom Ingersoll, Skybox Imaging (2014)", url: "https://spacenews.com/40703profile-tom-ingersoll-chief-executive-skybox-imaging/" },
+      { label: "Wikipedia — Space Capital", url: "https://en.wikipedia.org/wiki/Space_Capital" }
+    ]
+  },
+"justus-kilian": {
+    name: "Justus Kilian",
+    sectors: ["Space"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.spacecapital.com/about",
+    firm: "Space Capital",
+    firmSlug: "space-capital",
+    title: "Partner",
+    joinedYear: null,
+    education: ["MBA, University of Chicago Booth School of Business"],
+    previousExperience: ["Investor, Acumen", "Private market investments, Merrill Lynch"],
+    firmHistory: [],
+    boardSeats: ["ClearRoad", "Lunar Outpost"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Served as a Principal at Space Capital, speaking at an MIT Sloan investing session in October." },
+      { year: 2022, event: "Was a Partner at Space Capital serving on the boards of ClearRoad and Lunar Outpost." }
+    ],
+    notableInvestments: [
+      { name: "ClearRoad" },
+      { name: "Lunar Outpost" }
+    ],
+    biography: "Justus Kilian is a Partner at Space Capital, a venture capital firm investing in the space economy. He was a Principal at the firm as of 2020 and held the Partner title by late 2022. He serves on the boards of portfolio companies ClearRoad and Lunar Outpost and leads Space Talent, a career platform at the intersection of space and technology. He previously worked at Acumen, an early stage venture firm investing in emerging markets, and before that at Merrill Lynch, where he specialized in private market investments. He holds an MBA from the University of Chicago Booth School of Business and is a CFA charterholder.",
+    sources: [
+      { label: "Space Capital — Team", url: "https://www.spacecapital.com/team" },
+      { label: "Celestial Citizen — Interview with Justus Kilian (Dec 2022)", url: "https://celestialcitizen.substack.com/p/the-state-of-space-a-market-update" },
+      { label: "MIT Sloan Astropreneurship Club — Career session (Oct 2020)", url: "https://sloangroups.mit.edu/astropreneurshipandspaceindustry/rsvp_boot?id=822370" }
+    ]
+  },
+"stephen-marcus": {
+    name: "Stephen Marcus",
+    sectors: ["Deep Tech", "Defense Tech", "Space", "Energy"],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://www.riot.vc/partners/stephen-marcus",
+    firm: "Riot Ventures",
+    firmSlug: "riot-ventures",
+    title: "Co-Founder and General Partner",
+    joinedYear: 2017,
+    education: ["BS, Worcester Polytechnic Institute", "MBA, MIT Sloan School of Management"],
+    previousExperience: ["Founder and CEO, six wireless network and datacenter companies (sold to buyers including American Tower, Sprint, and National Grid)"],
+    firmHistory: [],
+    boardSeats: ["Shield AI", "EnduroSat", "Blue Water Autonomy", "Kindo", "Mango", "Valar Atomics"],
+    ipoCount: 3,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2017, event: "Co-founded Riot Ventures with Will Coffield, launching the firm with a 10 million dollar first fund." },
+      { year: 2020, event: "Riot Ventures announced it was raising a 75 million dollar second fund focused on deep technology." }
+    ],
+    notableInvestments: [
+      { name: "Okta", ticker: "OKTA" },
+      { name: "Toast", ticker: "TOST" },
+      { name: "Desktop Metal" },
+      { name: "Shield AI" },
+      { name: "EnduroSat" },
+      { name: "Valar Atomics" }
+    ],
+    biography: "Stephen Marcus is Co-Founder and General Partner of Riot Ventures, a venture firm focused on modernizing critical industries. Before Riot he was a six-time founder and chief executive with more than 20 years of experience building large-scale wireless networks and datacenters, selling telecom companies to buyers including American Tower, Sprint, and National Grid. He co-founded Riot Ventures in 2017 with Will Coffield, starting with a 10 million dollar first fund, and the firm announced a 75 million dollar second fund in 2020. At Riot he invests across seed and growth stages and holds board seats at Shield AI, EnduroSat, Blue Water Autonomy, Kindo, Mango, and Valar Atomics. His investments include the public companies Okta, Toast, and Desktop Metal. He holds a BS from Worcester Polytechnic Institute and an MBA from MIT Sloan School of Management.",
+    sources: [
+      { label: "Riot Ventures — Stephen Marcus partner page", url: "https://www.riot.vc/partners/stephen-marcus" },
+      { label: "TechCrunch — Riot Ventures raising a $75M fund (Feb 2020)", url: "https://techcrunch.com/2020/02/13/los-angeles-based-deep-tech-investment-firm-riot-ventures-is-raising-a-75m-fund" }
+    ]
+  },
+"will-coffield": {
+    name: "Will Coffield",
+    sectors: ["Defense Tech", "Logistics", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.riot.vc/partners/will-coffield",
+    firm: "Riot Ventures",
+    firmSlug: "riot-ventures",
+    title: "Co-founder and General Partner",
+    joinedYear: 2017,
+    education: ["Economics, James Madison University"],
+    previousExperience: ["Venture investor, Saturn Partners (built seed investing program and opened West Coast office)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2017, event: "Co-founded Riot Ventures with Stephen Marcus, launching with a 10 million dollar fund focused on pre-seed and seed deep technology investments." },
+      { year: 2020, event: "Riot Ventures announced it was raising a 75 million dollar second fund." }
+    ],
+    notableInvestments: [
+      { name: "True Anomaly" },
+      { name: "Parallel Systems" },
+      { name: "Oxide Computer Company" },
+      { name: "Alloy Enterprises" },
+      { name: "Rugged Robotics" },
+      { name: "Route" }
+    ],
+    biography: "Will Coffield is Co-founder and General Partner of Riot Ventures. He began his venture career at Saturn Partners after studying economics at James Madison University, helping build that firm's seed investing program and opening its West Coast office. In 2017 he co-founded Riot Ventures with Stephen Marcus, launching with a 10 million dollar fund focused on pre-seed and seed investments in deep technology; the firm announced a 75 million dollar second fund in 2020 and has since grown to more than 1 billion dollars in assets under management. At Riot he focuses on defense and aerospace, logistics, and advanced manufacturing, and has led investments in companies including True Anomaly, Parallel Systems, Oxide Computer Company, Alloy Enterprises, Elementary ML, Rugged Robotics, OpenEnvoy, Azimuth, and Route.",
+    sources: [
+      { label: "Riot Ventures — Will Coffield partner page", url: "https://www.riot.vc/partners/will-coffield" },
+      { label: "Stifel Bank — Conversation with Will Coffield", url: "https://bankwithstifel.com/insights/how-riot-ventures-scaled-to-1b-in-deep-tech-vc/" },
+      { label: "TechCrunch — Riot Ventures raising a $75M fund (Feb 2020)", url: "https://techcrunch.com/2020/02/13/los-angeles-based-deep-tech-investment-firm-riot-ventures-is-raising-a-75m-fund" }
+    ]
+  },
+"thomas-hendrix": {
+    name: "Thomas Hendrix",
+    sectors: ["Defense Tech", "Energy", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.decisivepoint.com",
+    firm: "Decisive Point",
+    firmSlug: "decisive-point",
+    title: "General Partner",
+    joinedYear: 2018,
+    education: ["BS in American Legal Systems, United States Military Academy at West Point", "MBA, Columbia Business School", "MSL in Government Procurement Law, George Washington University Law School"],
+    previousExperience: ["Infantry and Special Forces Officer, U.S. Army (nearly 10 years)", "Private sector role, Blackstone"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Founded Decisive Point, a venture capital and strategic advisory firm focused on emerging technology for government and defense." },
+      { year: 2021, event: "Decisive Point launched Ventures Fund I, an early-stage fund targeting dual-use technology companies." },
+      { year: 2021, event: "Completed an MSL in Government Procurement Law at George Washington University Law School." }
+    ],
+    notableInvestments: [],
+    biography: "Thomas Hendrix is a co-founder and Managing Partner of Decisive Point, a New York based venture capital and strategic advisory firm focused on defense, energy, and infrastructure technologies. A graduate of the United States Military Academy at West Point, he served nearly ten years in the U.S. Army as an Infantry and Special Forces officer, with multiple combat deployments as a Green Beret. After leaving the Army he worked at Blackstone in New York before founding Decisive Point in 2018. The firm launched its first venture fund in 2021 and was an early investor in Standard Nuclear, which listed on the NYSE in 2026. He holds an MBA from Columbia Business School and an MSL in Government Procurement Law from George Washington University Law School.",
+    sources: [
+      { label: "Decisive Point — Thomas Hendrix profile", url: "https://www.decisivepoint.com/team/thomas-hendrix" },
+      { label: "GW Law — Thomas Hendrix, Government Procurement MSL '21", url: "https://blogs.gwu.edu/law-govpro/thomas-hendrix-government-procurement-msl-21/" },
+      { label: "NSIN — Investor Spotlight: Decisive Point", url: "https://nsin.mil/news/2023-06-15-decisive-point/" },
+      { label: "SEC Form 3 coverage — Decisive Point stake in Standard Nuclear (STDN)", url: "https://www.stocktitan.net/sec-filings/STDN/form-3-standard-nuclear-inc-initial-statement-of-beneficial-ownership-6ab1356f0611.html" }
+    ]
+  },
+"eric-horan": {
+    name: "Eric Horan",
+    sectors: ["Defense Tech", "Energy", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.decisivepoint.com",
+    firm: "Decisive Point",
+    firmSlug: "decisive-point",
+    title: "General Partner",
+    joinedYear: 2018,
+    education: ["BBA, Emory University", "MBA, University of Maryland"],
+    previousExperience: ["Contracting Officer for major weapons systems, U.S. Navy (10 years)", "Acquisition policy support, Office of the Secretary of Defense"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Co-founded Decisive Point with Thomas Hendrix and Andrew Price." },
+      { year: 2021, event: "Decisive Point launched Ventures Fund I, an early-stage fund targeting dual-use technology companies." }
+    ],
+    notableInvestments: [],
+    biography: "Eric Horan is a co-founder and General Partner of Decisive Point, a New York based venture capital and strategic advisory firm focused on defense, energy, and infrastructure technologies. Before co-founding the firm in 2018, he spent ten years as a government contracting officer for the U.S. Navy working on major weapons systems programs, and supported the Office of the Secretary of Defense on policy creation and streamlined acquisition authorities. At Decisive Point he leads the advisory practice, delivering services to startups, government customers, and investors on federal acquisition strategy and government contracting. The firm launched its first venture fund, Decisive Point Ventures Fund I, in 2021. He holds a BBA from Emory University and an MBA from the University of Maryland.",
+    sources: [
+      { label: "Decisive Point — Eric Horan profile", url: "https://www.decisivepoint.com/team/eric-horan" },
+      { label: "NSIN — Investor Spotlight: Decisive Point", url: "https://nsin.mil/news/2023-06-15-decisive-point/" },
+      { label: "DVIDS — The Contracting Experience podcast, Eric Horan, Decisive Point Co-founder", url: "https://www.dvidshub.net/audio/59499/contracting-experience-episode-17-startup-innovation-fellowship-with-eric-horan-decisive-point-co-founder" },
+      { label: "Global Venturing — Decisive Point adds investments to advisory work", url: "https://globalventuring.com/corporate/decisive-point-adds-venture-to-advisory-work" }
+    ]
+  },
+"andrew-price": {
+    name: "Andrew Price",
+    sectors: ["Defense Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.decisivepoint.com/team/andrew-price",
+    firm: "Decisive Point",
+    firmSlug: "decisive-point",
+    title: "General Partner",
+    joinedYear: 2018,
+    education: ["BA in Criminal Justice and Counterterrorism, University of Oklahoma"],
+    previousExperience: ["Co-Founder, UniteUs", "Investor and advisor, early-stage dual-use technology companies"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Co-founded Decisive Point with Thomas Hendrix and Eric Horan." },
+      { year: 2021, event: "Decisive Point launched Ventures Fund I, an early-stage fund targeting dual-use technology companies." }
+    ],
+    notableInvestments: [],
+    biography: "Andrew Price is a co-founder and General Partner of Decisive Point, a New York based venture capital and strategic advisory firm focused on defense, energy, and infrastructure technologies. He co-founded the firm in 2018 and directs its business development and investor relations efforts. Before Decisive Point he co-founded UniteUs, a technology platform addressing social determinants of health, and has been an investor and advisor to multiple early-stage dual-use companies providing technology solutions to both commercial and government customers. He holds a BA in Criminal Justice and Counterterrorism from the University of Oklahoma.",
+    sources: [
+      { label: "Decisive Point — Andrew Price profile", url: "https://www.decisivepoint.com/team/andrew-price" },
+      { label: "NSIN — Investor Spotlight: Decisive Point", url: "https://nsin.mil/news/2023-06-15-decisive-point/" }
+    ]
+  },
+"debi-michelle-oconnell": {
+    name: "Debi-Michelle O'Connell",
+    sectors: [],
+    firm: "Decisive Point",
+    firmSlug: "decisive-point",
+    title: "Partner",
+    joinedYear: null,
+    education: ["Political Science, Princeton University (2016)"],
+    previousExperience: ["Consultant on corporate social responsibility and impact campaigns, NationSwell"],
+    firmHistory: [],
+    boardSeats: ["Women in Funds (founding junior advisory board member)"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Graduated from Princeton University with a degree in political science." }
+    ],
+    notableInvestments: [],
+    biography: "Debi-Michelle O'Connell is a Partner at Decisive Point, a New York based venture capital and strategic advisory firm focused on defense, energy, and infrastructure technologies, where she leads investor relations and venture fund administration. Before joining Decisive Point she worked at NationSwell, a social impact media company, where she consulted with corporations, foundations, and nonprofits on corporate social responsibility and impact campaigns. She is a founding junior advisory board member of Women in Funds. She graduated from Princeton University in 2016 with a degree in political science.",
+    sources: [
+      { label: "Decisive Point — Debi-Michelle O'Connell profile", url: "https://www.decisivepoint.com/team/debi-oconnell" },
+      { label: "Decisive Point — Team", url: "https://www.decisivepoint.com/team" }
+    ]
+  },
+"matt-williams": {
+    name: "Matt Williams",
+    sectors: ["Defense Tech", "Space", "Energy", "AI"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.businesswire.com/news/home/20251110822346/en/Medal-of-Honor-Recipient-Matthew-Williams-Joins-Decisive-Point-as-Partner-Will-Lead-Defense-Tech-Investments",
+    firm: "Decisive Point",
+    firmSlug: "decisive-point",
+    title: "Partner",
+    joinedYear: 2025,
+    education: ["BS, Angelo State University", "MBA, Texas A&M University"],
+    previousExperience: ["Command Sergeant Major, U.S. Army Special Forces (retired after more than two decades of service)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2008, event: "Served in the Afghanistan mission in Nuristan Province during which he led the evacuation of wounded soldiers under fire." },
+      { year: 2019, event: "Received the Medal of Honor for his actions during the 2008 mission in Nuristan Province, Afghanistan." },
+      { year: 2025, event: "Joined Decisive Point as Partner in November to lead the firm's defense and national security investment strategy." }
+    ],
+    notableInvestments: [],
+    biography: "Matt Williams is a Partner at Decisive Point, where he leads the firm's defense and national security investment strategy. He joined the firm in November 2025 after more than two decades in the U.S. Army Special Forces, retiring as a Command Sergeant Major. In 2019 he received the Medal of Honor for his actions during a 2008 mission in Nuristan Province, Afghanistan, where he led the evacuation of wounded soldiers under fire during one of the most intense firefights of the war. At Decisive Point he focuses on early and growth stage companies developing autonomy, kinetic systems, intelligence, surveillance, and reconnaissance, space, energy systems, and AI enabled command and control, and serves as a liaison between portfolio companies, government stakeholders, and limited partners. He holds a BS from Angelo State University and an MBA from Texas A&M University.",
+    sources: [
+      { label: "Decisive Point — Matt Williams profile", url: "https://www.decisivepoint.com/team/matt-williams" },
+      { label: "Business Wire — Medal of Honor Recipient Matthew Williams Joins Decisive Point as Partner (Nov 10, 2025)", url: "https://www.businesswire.com/news/home/20251110822346/en/Medal-of-Honor-Recipient-Matthew-Williams-Joins-Decisive-Point-as-Partner-Will-Lead-Defense-Tech-Investments" }
+    ]
+  },
+"chris-cheever": {
+    name: "Chris Cheever",
+    sectors: ["Mobility", "Deep Tech", "Industrial Tech", "Energy"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://fontinalis.com/story/",
+    firm: "Fontinalis Partners",
+    firmSlug: "fontinalis-partners",
+    title: "Founder & Managing Partner",
+    joinedYear: 2009,
+    education: ["MBA, Yale University", "BA, Harvard University"],
+    previousExperience: ["LaunchCapital (early-stage venture capital)", "HPS Investment Partners (private credit)", "UBS", "Alger (growth equity)"],
+    firmHistory: [],
+    boardSeats: ["Carputty", "Eva", "SmartKargo", "Vecna", "Verity", "zeroRISC"],
+    ipoCount: 2,
+    majorExits: 4,
+    careerTimeline: [
+      { year: 2009, event: "Co-founded Fontinalis Partners as a Founding Principal alongside Bill Ford, Ralph Booth, and Mark Schulz, with offices in Detroit and Boston." },
+      { year: 2019, event: "Lyft, an investment he led for Fontinalis, completed its initial public offering." }
+    ],
+    notableInvestments: [
+      { name: "Lyft", ticker: "LYFT" },
+      { name: "Life360", ticker: "LIF" },
+      { name: "Turo" },
+      { name: "Postmates" }
+    ],
+    biography: "Chris Cheever is Founder and Managing Partner of Fontinalis Partners, the mobility and industrial technology venture firm he co-founded in late 2009 with Bill Ford, Ralph Booth, and Mark Schulz. Based in Boston, he helped craft the firm's thesis around mobility, industrial innovation, and energy, and continues to guide its strategy with a focus on frontier technology. He led Fontinalis investments in Lyft, Turo, Postmates, and Veho, and previously served on the boards of Life360, Synovia, and Tomorrow.io. He currently holds director roles at Carputty, Eva, SmartKargo, Vecna, Verity, and zeroRISC. Earlier in his career he worked at LaunchCapital, HPS Investment Partners, UBS, and Alger. He holds an MBA from Yale and a BA from Harvard.",
+    sources: [
+      { label: "Fontinalis — Team", url: "https://fontinalis.com/team/" },
+      { label: "Fontinalis — Story", url: "https://fontinalis.com/story/" },
+      { label: "PR Newswire — Fontinalis launch (2009)", url: "https://www.prnewswire.com/news-releases/bill-ford-ralph-booth-and-mark-schulz-announce-the-official-launch-of-fontinalis-partners-83037982.html" }
+    ]
+  },
+"laura-petterle": {
+    name: "Laura Petterle",
+    sectors: [],
+    firm: "Fontinalis Partners",
+    firmSlug: "fontinalis-partners",
+    title: "Managing Partner & CFO",
+    joinedYear: null,
+    education: ["Bachelor's degree, University of Michigan"],
+    previousExperience: ["Executive Vice President & CFO, Booth American Company (since 1994)", "Finance positions, Maclean Hunter (12 years)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1994, event: "Became Executive Vice President and CFO of Booth American Company, overseeing finances for its media and telecommunications holdings." },
+      { year: 1999, event: "Managed the process that yielded the 853 million dollar sale of Booth American Company's U.S. broadband assets." }
+    ],
+    notableInvestments: [],
+    biography: "Laura Petterle is Managing Partner and CFO of Fontinalis Partners, based in Detroit. As CFO she manages the professionals responsible for the firm's financial reporting, governance, compliance, transaction and legal due diligence, and shareholder relations, and she advises portfolio companies on operating matters, complex transactions, and governance. Since 1994 she has served as Executive Vice President and CFO of Booth American Company, where she oversaw the finances of its media and telecommunications holdings, managed its U.S. Cable Television Division, and led the process resulting in the 853 million dollar sale of its U.S. broadband assets in 1999. Before Booth American she spent 12 years in finance roles at Maclean Hunter, a Canadian cable television and telecommunications company. She holds a bachelor's degree from the University of Michigan.",
+    sources: [
+      { label: "Fontinalis — Team", url: "https://fontinalis.com/team/" }
+    ]
+  },
+"chris-stallman": {
+    name: "Chris Stallman",
+    sectors: ["Logistics", "Industrial Tech", "AI", "Enterprise Software"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://fontinalis.com/team/",
+    firm: "Fontinalis Partners",
+    firmSlug: "fontinalis-partners",
+    title: "Managing Partner",
+    joinedYear: null,
+    education: ["BBA, University of Michigan Ross School of Business"],
+    previousExperience: ["Transaction and financial advisory for industrial and automotive clients, Stout (five years)", "Private markets team, University of Michigan Investment Office"],
+    firmHistory: [],
+    boardSeats: ["Chain.io", "SONAR"],
+    ipoCount: null,
+    majorExits: 4,
+    careerTimeline: [
+      { year: 2018, event: "TransLoc, where he held a board role for Fontinalis, was acquired by Ford Smart Mobility." },
+      { year: 2018, event: "Joined the oversight committee for the University of Michigan MTRAC Innovation Hub, a role running through 2026." }
+    ],
+    notableInvestments: [
+      { name: "Turo" },
+      { name: "Postmates" },
+      { name: "Telogis" }
+    ],
+    biography: "Chris Stallman is a Managing Partner at Fontinalis Partners in Detroit, where he invests at the intersection of emerging companies and large physical industries, with particular interest in supply chain transformation, enterprise efficiency, data and analytics, and AI and automation. He serves on the boards of Chain.io and SONAR, formerly FreightWaves, and is a board observer at Highland Electric Fleets and Condoit. His prior board experience includes TransLoc, acquired by Ford Smart Mobility, and Synovia Solutions, acquired by CalAmp, and his notable portfolio work includes Telogis, Postmates, and Turo. Before Fontinalis he spent five years at the advisory firm Stout serving industrial and automotive clients and worked on the private markets team at the University of Michigan Investment Office. A CFA charterholder, he holds a BBA with distinction from Michigan's Ross School of Business.",
+    sources: [
+      { label: "Fontinalis — Team", url: "https://fontinalis.com/team/" },
+      { label: "Ford Media — TransLoc acquisition (2018)", url: "https://media.ford.com/content/fordmedia/feu/en/news/2018/01/26/ford-realigns-mobility-group--acquiring-autonomic--transloc-to-a.html" }
+    ]
+  },
+"dan-ratliff": {
+    name: "Dan Ratliff",
+    sectors: ["Deep Tech", "Robotics", "Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://fontinalis.com/team/",
+    firm: "Fontinalis Partners",
+    firmSlug: "fontinalis-partners",
+    title: "Partner",
+    joinedYear: 2014,
+    education: ["BA, Michigan State University (Eli Broad College of Business, Honors College)", "Master of Finance, Vanderbilt University (Owen Graduate School of Management)"],
+    previousExperience: ["Investment banking"],
+    firmHistory: [],
+    boardSeats: ["ChipFlow"],
+    ipoCount: 1,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Joined Fontinalis Partners as an Associate after a career in investment banking." },
+      { year: 2021, event: "Served as board observer for Ouster ahead of its public listing on the NYSE." },
+      { year: 2023, event: "Promoted to Partner at Fontinalis Partners." }
+    ],
+    notableInvestments: [
+      { name: "Etched" },
+      { name: "Drivly" },
+      { name: "CelLink" },
+      { name: "Sibros" },
+      { name: "Ouster", ticker: "OUST" }
+    ],
+    biography: "Dan Ratliff is a Partner at Fontinalis Partners in Detroit. He joined the firm as an Associate in 2014 after an investment banking career and was promoted to Partner in 2023. He focuses on frontier technologies and how advances in compute, robotics, manufacturing processes, and software infrastructure impact global industries. He led or co-led Fontinalis investments in CelLink, Sibros, Carputty, and ChipFlow, led investments in Etched and Drivly, and served as board observer for Ouster before its 2021 public listing. He currently sits on the board of ChipFlow and is a board observer at CelLink, Sibros, Carputty, Halo Industries, and Swift Solar. He holds a BA from Michigan State University's Eli Broad College of Business and a Master of Finance from Vanderbilt University's Owen Graduate School of Management.",
+    sources: [
+      { label: "Fontinalis — Team", url: "https://fontinalis.com/team/" },
+      { label: "PRWeb — Fontinalis partner promotions (2023)", url: "https://www.prweb.com/releases/Fontinalis_Partners_Elevates_Two_Principals_to_Partner_Roles_and_Welcomes_New_Operations_Team_Member/prweb19412546.htm" }
+    ]
+  },
+"reilly-brennan": {
+    name: "Reilly Brennan",
+    sectors: ["Mobility", "Logistics"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.trucks.vc/about",
+    firm: "Trucks Venture Capital",
+    firmSlug: "trucks-venture-capital",
+    title: "Partner",
+    joinedYear: 2015,
+    education: [],
+    previousExperience: ["Executive Director, Revs Program, Stanford University", "Lecturer, Stanford University School of Engineering and d.school", "Automotive journalism, car magazine"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2015, event: "Co-founded Trucks Venture Capital, a San Francisco seed fund for transportation startups." },
+      { year: 2021, event: "Trucks closed Trucks Venture Fund 2 at 52,525,252 dollars alongside a new growth fund." },
+      { year: 2025, event: "Trucks announced its 70 million dollar third fund to back next-generation transportation startups." }
+    ],
+    notableInvestments: [
+      { name: "May Mobility" },
+      { name: "Roadster" },
+      { name: "Edge Case Research" },
+      { name: "Gatik" }
+    ],
+    biography: "Reilly Brennan is a co-founder and partner of Trucks Venture Capital, a San Francisco seed fund backing entrepreneurs building transportation that is decarbonized, safer, and more accessible. At Trucks he championed investments including May Mobility, Roadster, and Edge Case Research. He writes FoT, a widely read weekly newsletter on the future of transportation, and co-founded MobilityJobs.com. Before Trucks he served as Executive Director of the Revs Program, Stanford University's automotive research program, and taught at Stanford's School of Engineering and d.school. A Michigan native, he began his career in the auto industry at a car magazine during his undergraduate years and has spent more than two decades in transportation.",
+    sources: [
+      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
+      { label: "Reilly Brennan — About", url: "https://reillybrennan.com/about" },
+      { label: "TechCrunch — Trucks Fund 2 (2021)", url: "https://techcrunch.com/2021/06/08/trucks-vc-launches-two-new-funds-for-early-and-late-stage-transportation-startups" },
+      { label: "TechCrunch — Trucks Fund 3 (2025)", url: "https://techcrunch.com/?p=2940113" }
+    ]
+  },
+"jeffrey-schox": {
+    name: "Jeffrey Schox",
+    sectors: ["Mobility"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.trucks.vc/about",
+    firm: "Trucks Venture Capital",
+    firmSlug: "trucks-venture-capital",
+    title: "Partner",
+    joinedYear: 2015,
+    education: ["BS Mechanical Engineering, University of Michigan", "MS Electrical Engineering, University of Michigan", "JD, George Mason University"],
+    previousExperience: ["Founder and patent attorney, Schox Patent Group", "Engineer, original electric vehicle program, General Motors", "Lecturer, Stanford University (Patent Law and Strategy for Innovators and Entrepreneurs)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: 1,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2015, event: "Co-founded Trucks Venture Capital, where he leads investments in transportation startups." },
+      { year: 2025, event: "Trucks announced its 70 million dollar third fund to back next-generation transportation startups." }
+    ],
+    notableInvestments: [
+      { name: "Joby Aviation", ticker: "JOBY" },
+      { name: "Cruise" },
+      { name: "Universal Hydrogen" },
+      { name: "Skyryse" }
+    ],
+    biography: "Jeffrey Schox is a founder and partner of Trucks Venture Capital, the San Francisco seed fund for transportation startups, where his investments include Universal Hydrogen, Skyryse, Joby Aviation, and Refraction. He grew up outside Detroit, studied mechanical and electrical engineering, and worked as an engineer on the original electric vehicle at General Motors. He is also the founder of Schox Patent Group, a boutique patent firm that has developed patent strategy for Coinbase, Cruise, Duo, Joby, Twilio, and hundreds of other startups, and he was an angel investor in Cruise, later acquired by General Motors. He teaches patent law and strategy as a lecturer at Stanford University. He holds engineering degrees from the University of Michigan and a JD from George Mason University.",
+    sources: [
+      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
+      { label: "Schox Patent Group", url: "https://www.schox.com/" },
+      { label: "Schox Philanthropy — Team", url: "https://www.schox.org/our-team" },
+      { label: "TechCrunch — Trucks Fund 3 (2025)", url: "https://techcrunch.com/?p=2940113" }
+    ]
+  },
+"kathryn-schox": {
+    name: "Kathryn Schox",
+    sectors: ["Mobility", "Logistics"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.trucks.vc/about",
+    firm: "Trucks Venture Capital",
+    firmSlug: "trucks-venture-capital",
+    title: "Partner",
+    joinedYear: 2015,
+    education: ["BA Cultural Anthropology, University of Maryland", "MA Cultural Anthropology, University of Maryland"],
+    previousExperience: ["Chief Operating Officer, Schox Patent Group"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2015, event: "Co-founded Trucks Venture Capital, where she developed the firm's mission of decarbonized, safer, and more accessible transportation." },
+      { year: 2021, event: "Bear Flag Robotics, an investment she led for Trucks, was acquired by John Deere." }
+    ],
+    notableInvestments: [
+      { name: "ChargerHelp" },
+      { name: "Gatik" },
+      { name: "Bear Flag Robotics" },
+      { name: "Wise Systems" }
+    ],
+    biography: "Kathryn Schox is a founder and partner of Trucks Venture Capital, the San Francisco seed fund for transportation startups. She developed the Trucks mission of backing transportation that is decarbonized, safer, and more accessible, and led the firm's investments in ChargerHelp, Gatik, Bear Flag Robotics, and Wise Systems, with Bear Flag Robotics acquired by John Deere in 2021. Before Trucks she was Chief Operating Officer of Schox Patent Group, a firm recognized on the Inc. 5000 list of fastest growing companies for five consecutive years. She also leads Schox Philanthropy, which invites startup founders to pledge equity to fund charitable giving. She studied cultural anthropology at the University of Maryland, earning bachelor's and master's degrees.",
+    sources: [
+      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
+      { label: "Schox Philanthropy — Team", url: "https://www.schox.org/our-team" },
+      { label: "U-M Center for Entrepreneurship — Kate Schox profile", url: "https://cfe.umich.edu/transportation-philanthropy-and-innovation-the-work-of-kate-schox/" },
+      { label: "TechCrunch — Trucks Fund 3 (2025)", url: "https://techcrunch.com/?p=2940113" }
+    ]
+  },
+"puneeth-meruva": {
+    name: "Puneeth Meruva",
+    sectors: ["Mobility"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.trucks.vc/about",
+    firm: "Trucks Venture Capital",
+    firmSlug: "trucks-venture-capital",
+    title: "Partner",
+    joinedYear: 2019,
+    education: ["BS Electrical Engineering and Computer Science, Massachusetts Institute of Technology"],
+    previousExperience: ["Safety software internships, Uber, BMW, and Microsoft", "Perception researcher, MIT Distributed Robotics Group and CMU Biorobotics Lab"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2019, event: "Joined Trucks Venture Capital full time as an analyst after graduating from MIT and interning with the firm." },
+      { year: 2023, event: "Named Partner at Trucks Venture Capital, concurrent with the launch of Trucks Venture Fund 3." }
+    ],
+    notableInvestments: [],
+    biography: "Puneeth Meruva is a Partner at Trucks Venture Capital, the San Francisco seed fund for transportation startups. He interned with Trucks during his final term at MIT, joined full time as an analyst in 2019 after graduating with a BS in electrical engineering and computer science, and was promoted through associate and senior associate roles before being named Partner in May 2023, concurrent with the launch of Trucks Venture Fund 3. Earlier he held safety software internships at Uber, BMW, and Microsoft and conducted perception research in MIT's Distributed Robotics Group and CMU's Biorobotics Lab. He authors the firm's FoT research briefs on transportation topics and writes the Flywheel newsletter on micromobility.",
+    sources: [
+      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
+      { label: "Trucks VC — Puneeth Meruva Named Partner", url: "https://www.trucks.vc/blog/puneeth-meruva-named-trucks-partner" },
+      { label: "EVCA — Meet Puneeth Meruva", url: "https://evca.org/content/meet-puneeth-meruva" }
+    ]
+  },
+"jason-townsend": {
+    name: "Jason Townsend",
+    sectors: [],
+    firm: "Trucks Venture Capital",
+    firmSlug: "trucks-venture-capital",
+    title: "CFO",
+    joinedYear: null,
+    education: ["Bachelor's degree, Computer Engineering, University of Michigan", "MBA, University of Michigan Ross School of Business"],
+    previousExperience: ["Co-founder, Resonant Venture Partners", "Founder and Managing Director, Townsend Mertz", "Business development manager, Intel"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2018, event: "Co-founded Townsend Mertz, a real estate investment firm." },
+      { year: 2018, event: "Duo Security, a first-round investment of his fund Resonant Venture Partners, was acquired by Cisco." }
+    ],
+    notableInvestments: [
+      { name: "Duo Security" }
+    ],
+    biography: "Jason Townsend is CFO of Trucks Venture Capital, the San Francisco seed fund for transportation startups. A Michigan native, he studied computer engineering at the University of Michigan and began his career at Intel, where he became a young business development manager, before returning to Michigan to earn an MBA at the Ross School of Business. He co-founded Resonant Venture Partners, an Ann Arbor venture fund that invested in the first round of Duo Security, which Cisco acquired in 2018. He is also the founder and managing director of Townsend Mertz, a real estate investment firm established in 2018, and founder of Townsend Financial, which provides back office management.",
+    sources: [
+      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
+      { label: "Townsend Mertz — Leadership", url: "https://townsendmertz.com/leadership/" },
+      { label: "Concentrate — Q&A with Michael Godwin and Jason Townsend", url: "https://concentratemedia.com/qna-godwin-townsend0138/" },
+      { label: "Cisco — Duo Security acquisition completed (2018)", url: "https://investor.cisco.com/news/news-details/2018/Cisco-Completes-Acquisition-of-Duo-Security/default.aspx" }
+    ]
+  },
+"darren-bechtel": {
+    name: "Darren Bechtel",
+    sectors: ["Construction Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://brickmortar.vc/team",
+    firm: "Brick & Mortar Ventures",
+    firmSlug: "brick-and-mortar-ventures",
+    title: "Founder & Managing Director",
+    joinedYear: 2015,
+    education: ["B.S. Mechanical Engineering/Product Design, Stanford University", "MBA, Stanford Graduate School of Business"],
+    previousExperience: ["Angel investor, construction technology startups (roughly 40 investments)"],
+    firmHistory: [],
+    boardSeats: ["The Innovative Infrastructure Initiative (I3)", "Cornell Brooks Center for Infrastructure", "CRETech", "Future Place", "Golden Gate National Parks Conservancy", "The Exploratorium"],
+    ipoCount: null,
+    majorExits: 4,
+    careerTimeline: [
+      { year: 2015, event: "Founded Brick & Mortar Ventures in San Francisco to invest in early stage construction technology." },
+      { year: 2018, event: "Autodesk agreed to acquire portfolio companies PlanGrid and BuildingConnected." },
+      { year: 2019, event: "Closed the firm's $97.2 million fund backed by industry investors including Autodesk, CEMEX, and Ferguson Ventures." }
+    ],
+    notableInvestments: [
+      { name: "PlanGrid" },
+      { name: "BuildingConnected" },
+      { name: "Fieldwire" },
+      { name: "Levelset" },
+      { name: "EverCharge" }
+    ],
+    biography: "Darren Bechtel is the Founder and Managing Director of Brick & Mortar Ventures, a San Francisco venture capital firm founded in 2015 that invests exclusively in early stage technology for the architecture, engineering, and construction industry. A fifth generation member of the family behind Bechtel Group, he built the firm after making roughly 40 angel investments in construction technology startups, including early checks into PlanGrid and BuildingConnected, both later acquired by Autodesk. In 2019 the firm closed a $97.2 million fund backed by industry investors such as Autodesk, CEMEX, and Ferguson Ventures. He holds a B.S. in Mechanical Engineering/Product Design and an MBA from Stanford, and serves on several industry advisory and leadership boards.",
+    sources: [
+      { label: "Brick & Mortar Ventures — Team", url: "https://brickmortar.vc/team" },
+      { label: "TechCrunch — Brick & Mortar closes $97.5M fund (2019)", url: "https://techcrunch.com/2019/08/13/darren-bechtel-yes-of-those-bechtels-just-closed-on-97-5-million-for-his-firm-brick-mortar-ventures/" },
+      { label: "Construction Dive — Bechtel scion raises nearly $100M (2019)", url: "https://www.constructiondive.com/news/bechtel-scion-raises-nearly-100m-for-contech-startups/560905/" },
+      { label: "Autodesk — Completes PlanGrid acquisition", url: "https://adsknews.autodesk.com/en/pressrelease/autodesk-completes-plangrid-acquisition/" }
+    ]
+  },
 "kaustubh-pandya": {
     name: "Kaustubh Pandya",
     sectors: ["Construction Tech"],
@@ -380,13 +1031,25 @@ Object.assign(partnerProfiles, {
       { year: 2021, event: "Joined Piva Capital as the firm's second Managing Partner." }
     ],
     notableInvestments: [
-      { name: "Xage Security" },
-      { name: "Pyka" },
-      { name: "Alloy Enterprises" },
-      { name: "Koloma" },
-      { name: "Lunar Energy" },
-      { name: "Planted Solar" }
-    ],
+    { name: "Xage Security",
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.piva.vc/team-member/mark-gudiksen/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Pyka",
+      sector: "Mobility",
+      evidence: [{ url: "https://www.piva.vc/team-member/mark-gudiksen/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Alloy Enterprises",
+      sector: "Industrial & Manufacturing Technology",
+      evidence: [{ url: "https://www.piva.vc/team-member/mark-gudiksen/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Koloma",
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.piva.vc/team-member/mark-gudiksen/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Lunar Energy",
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.piva.vc/team-member/mark-gudiksen/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Planted Solar",
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.piva.vc/team-member/mark-gudiksen/", type: "partner-bio", checked: "2026-09-01" }] }
+  ],
     biography: "Mark Gudiksen is a Managing Partner at Piva Capital, which he joined in 2021 as the firm's second Managing Partner. He has more than 20 years of experience across technology, company building, and investing, with a longstanding focus on climate related technologies. He previously co-founded Circularis Partners, served as a Managing Director in TPG's Alternative and Renewable Technologies fund, and worked at McKinsey and Company. He holds a PhD in Chemical Physics from Harvard University, where his nanotechnology research produced highly cited publications in journals including Science and Nature, and a BS in Chemistry from Stanford University. His Piva portfolio includes Xage Security, Pyka, Alloy Enterprises, Koloma, Lunar Energy, and Planted Solar.",
     sources: [
       { label: "Piva Capital — Mark Gudiksen bio", url: "https://piva.vc/team-member/mark-gudiksen/" },
@@ -471,16 +1134,34 @@ Object.assign(partnerProfiles, {
       { year: 2020, event: "Named to the Forbes 30 Under 30 list in Energy." }
     ],
     notableInvestments: [
-      { name: "Worlds.io" },
-      { name: "VELO3D" },
-      { name: "Menlo Micro" },
-      { name: "Urbint" },
-      { name: "Boston Metal" },
-      { name: "Sense Photonics" },
-      { name: "Oobli" },
-      { name: "Alloy Enterprises" },
-      { name: "Koloma" }
-    ],
+    { name: "Worlds.io",
+      sector: "AI",
+      evidence: [{ url: "https://www.piva.vc/team-member/maria-buitron/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "VELO3D",
+      sector: "Industrial & Manufacturing Technology",
+      evidence: [{ url: "https://www.piva.vc/team-member/maria-buitron/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Menlo Micro",
+      sector: "Hardware",
+      evidence: [{ url: "https://www.piva.vc/team-member/maria-buitron/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Urbint",
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://www.piva.vc/team-member/maria-buitron/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Boston Metal",
+      sector: "Industrial & Manufacturing Technology",
+      evidence: [{ url: "https://www.piva.vc/team-member/maria-buitron/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Sense Photonics",
+      sector: "Hardware",
+      evidence: [{ url: "https://www.piva.vc/team-member/maria-buitron/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Oobli",
+      sector: "Foodtech",
+      evidence: [{ url: "https://www.piva.vc/team-member/maria-buitron/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Alloy Enterprises",
+      sector: "Industrial & Manufacturing Technology",
+      evidence: [{ url: "https://www.piva.vc/team-member/maria-buitron/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Koloma",
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.piva.vc/team-member/maria-buitron/", type: "partner-bio", checked: "2026-09-01" }] }
+  ],
     biography: "Maria Buitron is a Principal at Piva Capital, which she joined as an Associate when the firm launched in 2019. She previously worked on the business development team at Stem, focusing on international market expansion and new product offerings, and consulted for energy clients across upstream, midstream, and downstream sectors at Schlumberger Business Consulting. She was named to the 2020 Forbes 30 Under 30 list in Energy. Her portfolio involvement at Piva includes Worlds.io, VELO3D, Menlo Micro, Urbint, Boston Metal, Sense Photonics, Oobli, Alloy Enterprises, and Koloma. She holds an MBA from the UC Berkeley Haas School of Business and a BS in Chemical Engineering with top honors from Tecnologico de Monterrey.",
     sources: [
       { label: "Piva Capital — Maria Buitron bio", url: "https://piva.vc/team-member/maria-buitron/" },
@@ -2409,7 +3090,26 @@ Object.assign(partnerProfiles, {
       { year: 2019, event: "Launched Future Ventures publicly with its $200 million first fund." },
       { year: 2023, event: "Closed the firm's third $200 million fund, bringing assets under management to $925 million including SPVs." }
     ],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Realta Fusion", ticker: null, year: 2025, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "nuclear fusion", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1978452/000197845225000002/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Earthshot Labs", ticker: null, year: 2021, yearPrecision: "year",
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1890987/000189098722000003/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Commonwealth Fusion Systems", ticker: null, year: 2021, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "nuclear fusion",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1891954/000189195422000001/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Gameto", ticker: null, year: 2021, yearPrecision: "year",
+      sector: "Biotech", subsector: "women's reproductive longevity", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1901628/000190162822000002/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Cambrian BioPharma", ticker: null, year: 2020, yearPrecision: "year",
+      sector: "Biotech", subsector: "pharmaceuticals", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1797409/000089706921000216/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Ockam", ticker: null, year: 2019, yearPrecision: "year",
+      sector: "Developer Tools & Infrastructure", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1733197/000173319719000005/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] }
+  ],
     biography: "Maryanna Saenko is Co-Founder of Future Ventures, where she invests in frontier technologies including nuclear fusion, sustainable agriculture, women's reproductive longevity, and AI applications in construction and medical therapeutics. Before launching the firm with Steve Jurvetson in 2018 she was an investor at Khosla Ventures and DFJ and an investment partner at Airbus Ventures, and earlier worked as a consultant at Lux Research and a research engineer at Cabot Corporation, with engineering experience spanning lunar rovers, Martian landers, driverless cars, and communication systems. She holds a B.S. in Biomedical Engineering and a B.S. and M.S. in Materials Science and Engineering from Carnegie Mellon University.",
     sources: [
       { label: "Future Ventures team bio", url: "https://future.ventures/bio" },
@@ -2466,13 +3166,41 @@ Object.assign(partnerProfiles, {
       { year: 2024, event: "Joined the board of TMC the metals company as director and Vice Chairman." }
     ],
     notableInvestments: [
-      { name: "SpaceX" },
-      { name: "Tesla", ticker: "TSLA" },
-      { name: "Planet Labs", ticker: "PL" },
-      { name: "D-Wave Systems", ticker: "QBTS" },
-      { name: "Hotmail" },
-      { name: "Skype" }
-    ],
+    { name: "SpaceX", year: 2009, yearPrecision: "year",
+      sector: "Space", subsector: "launch vehicles", role: "board", orgAtTime: "dfj",
+      evidence: [{ url: "https://www.future.ventures/team", type: "partner-bio", checked: "2026-09-01" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1181412/000118141209000003/primary_doc.xml", type: "regulatory", checked: "2026-09-01" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1318605/000156459020027321/tsla-def14a_20200707.htm", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Tesla", ticker: "TSLA", year: 2009, yearPrecision: "year",
+      sector: "Mobility", subsector: "electric vehicles", role: "board", orgAtTime: "dfj",
+      evidence: [{ url: "https://www.future.ventures/team", type: "partner-bio", checked: "2026-09-01" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1318605/000131860509000006/primary_doc.xml", type: "regulatory", checked: "2026-09-01" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1318605/000156459020027321/tsla-def14a_20200707.htm", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Planet Labs", ticker: "PL", year: 2012, yearPrecision: "year",
+      sector: "Space", subsector: "earth observation satellites", role: "board", orgAtTime: "dfj",
+      evidence: [{ url: "https://www.future.ventures/team", type: "partner-bio", checked: "2026-09-01" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1543165/000154316513000003/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "D-Wave Systems", ticker: "QBTS", year: 2013, yearPrecision: "year",
+      sector: "Deep Tech", subsector: "quantum computing", role: "board", orgAtTime: "dfj",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1547061/000154706113000001/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Hotmail" },
+    { name: "Skype" },
+    { name: "Synthetic Genomics", ticker: null, year: 2010, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "synthetic biology for fuels", role: "board", orgAtTime: "dfj",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1341812/000134181210000003/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Glycos Biotechnologies", ticker: null, year: 2009, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "industrial biotechnology / renewable chemicals", role: "board", orgAtTime: "dfj",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1427515/000120919109020679/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Commonwealth Fusion Systems", ticker: null, year: 2021, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "nuclear fusion",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1891954/000189195422000001/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "NeoPhotonics", ticker: null, year: 2009, yearPrecision: "year",
+      sector: "Hardware", subsector: "photonic integrated circuits", role: "board", orgAtTime: "dfj",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1227025/000122702510000002/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Isocline Engineering", ticker: null, year: 2016, yearPrecision: "year",
+      role: "board", orgAtTime: "dfj",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1691217/000169121716000001/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] }
+  ],
     biography: "Steve Jurvetson is Co-Founder of Future Ventures, the early stage deep technology firm he launched with Maryanna Saenko in 2018. Over a two decade career at Draper Fisher Jurvetson he led founding investments in companies including Hotmail, Skype, Planet Labs, D-Wave, Tesla, and SpaceX, and served on Tesla's board from 2006 to 2020. He remains a director of SpaceX and in 2024 joined the board of TMC the metals company as Vice Chairman. At Future Ventures he backs founder led companies in commercial space, fusion, quantum computing, robotics, and AI. Earlier he was an R&D engineer at Hewlett-Packard and worked in product marketing at Apple and NeXT. He holds a B.S., M.S., and M.B.A. from Stanford University and was appointed a Presidential Ambassador for Global Entrepreneurship in 2016.",
     sources: [
       { label: "Future Ventures team bio", url: "https://future.ventures/bio" },
@@ -4107,23 +4835,68 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Neil Tolaney is a General Partner at TCV, which he first joined in 2011 and rejoined in 2020. His TCV bio describes investment and operating experience in the consumer internet space, spanning digital entertainment, digital health, online fitness, prosumer empowerment, e-commerce, fintech, edtech and online travel. Before returning to TCV he was a partner at Francisco Partners, a Managing Director at PersonalizationMall.com and Director of Strategic Development at LegalZoom. His TCV bio lists current investments including Adevinta, ByteDance, GoodRx, Grow Therapy, Hotmart, LegalZoom, Mercury, onX, Strava and Zillow.",
     notableInvestments: [
-      { name: "Strava", ticker: null, stage: "Series F", year: 2020, yearPrecision: "year", sector: "Consumer", subsector: "social platform for athletes", role: null, evidence: [
-        { url: "https://www.prnewswire.com/news-releases/strava-announces-110-million-financing-in-partnership-with-tcv-and-sequoia-301173331.html", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://www.tcv.com/team/neil-tolaney", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Hotmart", ticker: null, stage: "Series C", year: 2021, yearPrecision: "year", sector: "Consumer", subsector: "creator economy digital enablement platform", role: null, evidence: [
-        { url: "https://www.businesswire.com/news/home/20210401005827/en/Hotmart-Company-Raises-US$130-Million-in-Investment-Round-Led-by-TCV", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://www.tcv.com/team/neil-tolaney", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Mercury", ticker: null, stage: "Series D", year: 2026, yearPrecision: "year", sector: "Fintech", subsector: "banking for startups and founders", role: null, evidence: [
-        { url: "https://www.businesswire.com/news/home/20260520511817/en/Mercury-Raises-$200-Million-Series-D-at-$5.2B-Valuation", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://www.tcv.com/team/neil-tolaney", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Grow Therapy", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: "digital mental health platform", role: null, evidence: [
-        { url: "https://www.tcv.com/team/neil-tolaney", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://bhbusiness.com/2026/03/03/with-1b-in-revenue-grow-therapy-lands-150m-series-d/", type: "press", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Strava", ticker: null, stage: "Series F", year: 2020, yearPrecision: "year",
+      sector: "Consumer", subsector: "social platform for athletes", role: "board",
+      evidence: [{ url: "https://www.prnewswire.com/news-releases/strava-announces-110-million-financing-in-partnership-with-tcv-and-sequoia-301173331.html", type: "deal-announcement", checked: "2026-08-25" },
+                  { url: "https://www.tcv.com/team/neil-tolaney", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1286139/000119312525089176/d888458ddef14a.htm", type: "regulatory", checked: "2026-09-01" },
+                  { url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Hotmart", ticker: null, stage: "Series C", year: 2021, yearPrecision: "year",
+      sector: "Consumer", subsector: "creator economy digital enablement platform", role: null,
+      evidence: [{ url: "https://www.businesswire.com/news/home/20210401005827/en/Hotmart-Company-Raises-US$130-Million-in-Investment-Round-Led-by-TCV", type: "deal-announcement", checked: "2026-08-25" },
+                  { url: "https://www.tcv.com/team/neil-tolaney", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Mercury", ticker: null, stage: "Series D", year: 2026, yearPrecision: "year",
+      sector: "Fintech", subsector: "banking for startups and founders", role: null,
+      evidence: [{ url: "https://www.businesswire.com/news/home/20260520511817/en/Mercury-Raises-$200-Million-Series-D-at-$5.2B-Valuation", type: "deal-announcement", checked: "2026-08-25" },
+                  { url: "https://www.tcv.com/team/neil-tolaney", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Grow Therapy", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Digital Health", subsector: "digital mental health platform", role: null,
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://bhbusiness.com/2026/03/03/with-1b-in-revenue-grow-therapy-lands-150m-series-d/", type: "press", checked: "2026-08-25" },
+                  { url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "LegalZoom", ticker: null,
+      sector: "Legal Tech", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1286139/000119312525089176/d888458ddef14a.htm", type: "regulatory", checked: "2026-09-01" },
+                  { url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "ByteDance", ticker: null,
+      sector: "Consumer", subsector: "digital entertainment",
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "onX", ticker: null,
+      sector: "Consumer",
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Minted", ticker: null,
+      sector: "Ecommerce",
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Attentive", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Adevinta", ticker: null,
+      sector: "Ecommerce", subsector: "online marketplaces",
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "GoodRx", ticker: null,
+      sector: "Digital Health",
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Zillow", ticker: null,
+      sector: "Real Estate Tech",
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Brex", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "AppNexus", ticker: null,
+      sector: "Enterprise Software", subsector: "adtech",
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Facebook", ticker: null,
+      sector: "Consumer",
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Hinge Health", ticker: null,
+      sector: "Digital Health",
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Instacart", ticker: null,
+      sector: "Ecommerce",
+      evidence: [{ url: "https://www.tcv.com/team/neil-tolaney/", type: "partner-bio", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "TCV - Neil Tolaney", url: "https://www.tcv.com/team/neil-tolaney" },
       { label: "PR Newswire - Strava Announces $110 Million Financing in Partnership with TCV and Sequoia", url: "https://www.prnewswire.com/news-releases/strava-announces-110-million-financing-in-partnership-with-tcv-and-sequoia-301173331.html" },
@@ -4228,24 +5001,31 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Mood Rowghani is a general partner at Bond, which he co-founded in 2019 with Mary Meeker, Noah Knauf and Juliet de Baubigny after the group's Digital Growth team spun out of Kleiner Perkins. He joined Kleiner Perkins in 2011 from Summit Partners, where he had been a vice president, and earlier worked at Highland Capital Partners, Yahoo and McKinsey & Company. His Bond bio states that he focuses on emerging technology companies that are driving innovation at global scale, and lists active investments including Atoms, Canva, Cockroach Labs, Ironclad, Kalshi, Revolut, SpaceX and Whatnot. Bond's site lists his current board seats as Carbon Robotics, inDrive, Partiful, Passes and Substack.",
     notableInvestments: [
-      { name: "Carbon Robotics", ticker: null, stage: "Series D", year: 2024, yearPrecision: "year", sector: "Agtech", subsector: "AI-powered precision farming and laser weeding", role: "board", evidence: [
-        { url: "https://www.businesswire.com/news/home/20241021330997/en/Carbon-Robotics-Raises-$70-Million-Series-D-Investment-Round", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Passes", ticker: null, stage: "Series A", year: 2024, yearPrecision: "year", sector: "Consumer", subsector: "creator subscription and CRM platform", role: "board", evidence: [
-        { url: "https://www.passes.com/blog/posts/passes-announces-40m-series-a", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Substack", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: "board", evidence: [
-        { url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "inDrive", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: "board", evidence: [
-        { url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Partiful", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: "board", evidence: [
-        { url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Carbon Robotics", ticker: null, stage: "Series D", year: 2024, yearPrecision: "year",
+      sector: "Agtech", subsector: "AI-powered precision farming and laser weeding", role: "board",
+      evidence: [{ url: "https://www.businesswire.com/news/home/20241021330997/en/Carbon-Robotics-Raises-$70-Million-Series-D-Investment-Round", type: "deal-announcement", checked: "2026-08-25" },
+                  { url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1763479/000176347924000004/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Passes", ticker: null, stage: "Series A", year: 2024, yearPrecision: "year",
+      sector: "Consumer", subsector: "creator subscription and CRM platform", role: "board",
+      evidence: [{ url: "https://www.passes.com/blog/posts/passes-announces-40m-series-a", type: "deal-announcement", checked: "2026-08-25" },
+                  { url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Substack", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: null, subsector: null, role: "board",
+      evidence: [{ url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "inDrive", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: null, subsector: null, role: "board",
+      evidence: [{ url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Partiful", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: null, subsector: null, role: "board",
+      evidence: [{ url: "https://www.bondcap.com/partners/mood-rowghani/", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "UNTUCKit", ticker: null, year: 2017, yearPrecision: "year",
+      sector: "Consumer", subsector: "apparel", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1709040/000170904017000001/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "FabFitFun", ticker: null, year: 2019, yearPrecision: "year",
+      sector: "Consumer", subsector: "subscription commerce", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1643768/000164376819000002/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "BOND - Mood Rowghani", url: "https://www.bondcap.com/partners/mood-rowghani/" },
       { label: "Fortune - Exclusive: Mood Rowghani joins Kleiner Perkins", url: "https://fortune.com/2011/06/01/exclusive-mood-rowghani-joins-kleiner-perkins" },
@@ -7816,382 +8596,6 @@ Object.assign(partnerProfiles, {
       { label: "Pie Insurance - Board of Directors", url: "https://www.pieinsurance.com/about/board-of-directors" },
       { label: "PR Newswire - Skimlinks Raises Growth Financing Round Led by Greycroft Partners (2013)", url: "https://www.prnewswire.com/news-releases/skimlinks-raises-growth-financing-round-led-by-greycroft-partners-204101651.html" },
       { label: "Ad Tech Daily - LongTail Video Secures $5 Million Series B Led by Greycroft (2012)", url: "https://adtechdaily.com/2012/11/12/longtail-video-secures-5-million-in-series-b-funding-led-by-greycroft/" }
-    ]
-  },
-"reid-dennis": {
-    name: "Reid Dennis",
-    firm: "IVP",
-    firmSlug: "ivp",
-    title: "Founder (1980)",
-    joinedYear: 1980,
-    departedYear: 2024,
-    departedNote: "Died March 14, 2024, at age 97; profile reflects his founding role at IVP, not a current one.",
-    investmentFocus: [],
-    education: [
-      "B.S. Electrical Engineering, Stanford University",
-      "M.B.A., Stanford University"
-    ],
-    previousExperience: [
-      "Venture capital roles at Fireman's Fund Insurance Company and American Express Company for 21 years",
-      "Founder, Institutional Venture Associates"
-    ],
-    firmHistory: [],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 1952, event: "Began investing in early stage companies as an individual." },
-      { year: 1974, event: "Founded Institutional Venture Associates, backed by American Express, the Ford Foundation and others." },
-      { year: 1980, event: "Founded Institutional Venture Partners." },
-      { year: 2000, event: "Received the National Venture Capital Association Lifetime Achievement Award in April." },
-      { year: 2024, event: "Died on March 14 at the age of 97." }
-    ],
-    biography: "Reid Dennis founded Institutional Venture Partners in 1980, six years after starting Institutional Venture Associates with backing from American Express, the Ford Foundation and others. He had invested in early stage companies as an individual since 1952, and spent 21 years in venture capital roles at Fireman's Fund Insurance Company and American Express Company. He served as past Chairman and President of the National Venture Capital Association and past President of the Western Association of Venture Capitalists, and received the NVCA Lifetime Achievement Award in April 2000. Born May 16, 1926, he died on March 14, 2024, at the age of 97.",
-    notableInvestments: [
-      { name: "Ampex", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "magnetic recording", role: null, evidence: [
-        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" },
-        { url: "https://www.legacy.com/us/obituaries/sfgate/name/reid-dennis-obituary?id=54696176", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "American Microsystems", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "semiconductors", role: null, evidence: [
-        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Measurex", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Industrial & Manufacturing Technology", subsector: "process control systems", role: null, evidence: [
-        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Coherent Radiation", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "lasers", role: null, evidence: [
-        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "California Microwave", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "microwave communications equipment", role: null, evidence: [
-        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Seagate Technology", ticker: "STX", stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "disk drives", role: null, evidence: [
-        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Sequent Computer Systems", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "multiprocessor computers", role: null, evidence: [
-        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Stratus Computer", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "fault tolerant computers", role: null, evidence: [
-        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Exabyte Corporation", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "tape storage", role: null, evidence: [
-        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Storage Technology Corporation", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "data storage systems", role: "board", evidence: [
-        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Dust Networks", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "wireless sensor networks", role: "board", evidence: [
-        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Computer History Museum - Reid Dennis", url: "https://computerhistory.org/profile/reid-dennis/" },
-      { label: "San Francisco Chronicle / SFGate - Reid Dennis Obituary (1926-2024)", url: "https://www.legacy.com/us/obituaries/sfgate/name/reid-dennis-obituary?id=54696176" },
-      { label: "Fortune - How IVP built a VC firm to last (2024)", url: "https://fortune.com/2024/03/19/how-ivp-reid-dennis-built-a-vc-firm-to-last/" },
-      { label: "IVP - firm site", url: "https://www.ivp.com/" }
-    ]
-  },
-"sakshi-chopra": {
-    name: "Sakshi Chopra",
-    firm: "Peak XV Partners",
-    firmSlug: "peak-xv-partners",
-    title: "Managing Director",
-    joinedYear: 2010,
-    investmentFocus: [
-      "Consumer",
-      "Fintech"
-    ],
-    education: [],
-    previousExperience: [
-      "Banking, Deutsche Bank (Germany)"
-    ],
-    firmHistory: [],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 2010, event: "Joined Sequoia India, now Peak XV Partners, through its analyst programme after several years in banking in Germany and India." },
-      { year: 2014, event: "Worked on the firm's investment in Indigo Paints, and later took a board seat at the company." },
-      { year: 2021, event: "Appointed a managing director in the firm's growth investing team." },
-      { year: 2023, event: "Sequoia India and Southeast Asia separated from Sequoia Capital and rebranded as Peak XV Partners on June 6, spanning her tenure at the firm." },
-      { year: 2024, event: "Resigned as a non-executive nominee director of Indigo Paints." }
-    ],
-    biography: "Sakshi Chopra joined Sequoia India in 2010 through its analyst programme after working in banking in Germany and India, including at Deutsche Bank. She was appointed a managing director in the firm's growth investing team in 2021, and the firm's own announcement credits her with advising on investments in Indigo Paints, Wakefit, Purplle and Five Star Finance. Her stated focus is consumer brands and fintech. The firm separated from Sequoia Capital and rebranded as Peak XV Partners in June 2023, and she remains listed as a managing director on its team page.",
-    notableInvestments: [
-      { name: "Indigo Paints", ticker: "INDIGOPNTS", stage: null, year: 2014, yearPrecision: "year", sector: "Consumer", subsector: "decorative paints", role: "board", evidence: [
-        { url: "https://www.peakxv.com/article/new-additions-sequoia-indias-leadership-team/", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://www.peakxv.com/article/unlocking-growth-with-incentives-and-equity-the-indigo-paints_story/", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://indigopaints.com/wp-content/uploads/2024/12/Change-in-Management_Resignation-of-Director_Sakshi-Chopra-1.pdf", type: "regulatory", checked: "2026-08-25" }
-      ] },
-      { name: "Wakefit", ticker: "WAKEFIT", stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "sleep and home solutions", role: null, evidence: [
-        { url: "https://www.peakxv.com/article/new-additions-sequoia-indias-leadership-team/", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Purplle", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: "beauty e-commerce", role: null, evidence: [
-        { url: "https://www.peakxv.com/article/new-additions-sequoia-indias-leadership-team/", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Five Star Business Finance", ticker: "FIVESTAR", stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "small business lending", role: null, evidence: [
-        { url: "https://www.peakxv.com/article/new-additions-sequoia-indias-leadership-team/", type: "firm-announcement", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Peak XV Partners - Sakshi Chopra", url: "https://www.peakxv.com/team/sakshi-chopra" },
-      { label: "Peak XV Partners - New Additions to Sequoia India's Leadership Team", url: "https://www.peakxv.com/article/new-additions-sequoia-indias-leadership-team/" },
-      { label: "Forbes India - Sakshi Chopra of Sequoia India shares mantra for young women entrepreneurs", url: "https://www.forbesindia.com/article/leadership/stay-humble-stay-resilient-never-give-up-sakshi-chopra-of-sequoia-india-shares-mantra-for-young-women-entrepreneurs/81965/1" },
-      { label: "Business Wire - Sequoia India & Southeast Asia Is Now Peak XV Partners", url: "https://www.businesswire.com/news/home/20230606005677/en/Sequoia-India-Southeast-Asia-Is-Now-Peak-XV-Partners" },
-      { label: "Indigo Paints - Resignation of Director, Ms. Sakshi Chopra", url: "https://indigopaints.com/wp-content/uploads/2024/12/Change-in-Management_Resignation-of-Director_Sakshi-Chopra-1.pdf" }
-    ]
-  },
-"rohit-agarwal": {
-    name: "Rohit Agarwal",
-    firm: "Peak XV Partners",
-    firmSlug: "peak-xv-partners",
-    title: "Managing Director",
-    joinedYear: 2015,
-    investmentFocus: [
-      "Fintech",
-      "Enterprise Software",
-      "Ecommerce",
-      "Consumer"
-    ],
-    education: [
-      "Bachelor's degree in engineering, Indian Institute of Technology Bombay"
-    ],
-    previousExperience: [
-      "Founding team member leading product, operations and customer success, Housing.com"
-    ],
-    firmHistory: [],
-    boardSeats: [
-      "Insider",
-      "Bibit",
-      "Tonik",
-      "Kopi Kenangan",
-      "Shift",
-      "Lemonilo"
-    ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 2015, event: "Joined Sequoia India, now Peak XV Partners, after being part of the founding team at Housing.com." },
-      { year: 2016, event: "Moved to the firm's Singapore office to cover Southeast Asia." },
-      { year: 2023, event: "Promoted from principal to managing director in July, weeks after Sequoia India and Southeast Asia rebranded as Peak XV Partners, spanning his tenure at the firm." },
-      { year: 2026, event: "Named on Peak XV's $11 million Series A investment in Singapore rewards platform HeyMax." }
-    ],
-    biography: "Rohit Agarwal joined Sequoia India in 2015 and moved to the firm's Singapore office in 2016, after being part of the founding team at Housing.com where he led product, operations and customer success. He was promoted from principal to managing director in July 2023, shortly after the firm separated from Sequoia Capital and rebranded as Peak XV Partners. He works with early-stage and growth founders in fintech, SaaS, direct-to-consumer and e-commerce across Southeast Asia, and sits on the boards of Insider, Bibit, Tonik, Kopi Kenangan, Shift and Lemonilo. He holds a bachelor's degree in engineering from the Indian Institute of Technology Bombay.",
-    notableInvestments: [
-      { name: "HeyMax", ticker: null, stage: "Series A", year: 2026, yearPrecision: "year", sector: "Fintech", subsector: "travel and loyalty rewards", role: null, evidence: [
-        { url: "https://apac.entrepreneur.com/news-and-trends/heymax-raises-us11m-series-a-led-by-peak-xv-partners-to/502235", type: "deal-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Tonik", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "digital bank", role: "board", evidence: [
-        { url: "https://svca.glueup.com/event/the-evolving-exchange-landscape-158967/speakers.html", type: "press", checked: "2026-08-25" },
-        { url: "https://fintechnews.sg/76877/fintech/peak-xv-partners-promotes-rohit-agarwal-as-new-managing-director/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Bibit", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: null, role: "board", evidence: [
-        { url: "https://svca.glueup.com/event/the-evolving-exchange-landscape-158967/speakers.html", type: "press", checked: "2026-08-25" },
-        { url: "https://fintechnews.sg/76877/fintech/peak-xv-partners-promotes-rohit-agarwal-as-new-managing-director/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Kopi Kenangan", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: "board", evidence: [
-        { url: "https://svca.glueup.com/event/the-evolving-exchange-landscape-158967/speakers.html", type: "press", checked: "2026-08-25" },
-        { url: "https://inc42.com/buzz/peak-xv-partners-promotes-rohit-agarwal-as-md/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Insider", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: "board", evidence: [
-        { url: "https://svca.glueup.com/event/the-evolving-exchange-landscape-158967/speakers.html", type: "press", checked: "2026-08-25" },
-        { url: "https://inc42.com/buzz/peak-xv-partners-promotes-rohit-agarwal-as-md/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Lemonilo", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: "board", evidence: [
-        { url: "https://svca.glueup.com/event/the-evolving-exchange-landscape-158967/speakers.html", type: "press", checked: "2026-08-25" },
-        { url: "https://inc42.com/buzz/peak-xv-partners-promotes-rohit-agarwal-as-md/", type: "press", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Peak XV Partners - Rohit Agarwal", url: "https://www.peakxv.com/team/rohit-agarwal" },
-      { label: "Peak XV Partners - Our Team", url: "https://www.peakxv.com/our-team" },
-      { label: "Fintech News Singapore - Peak XV Partners Promotes Rohit Agarwal as New Managing Director", url: "https://fintechnews.sg/76877/fintech/peak-xv-partners-promotes-rohit-agarwal-as-new-managing-director/" },
-      { label: "SVCA - The Evolving Exchange Landscape, speaker bio (November 2025)", url: "https://svca.glueup.com/event/the-evolving-exchange-landscape-158967/speakers.html" },
-      { label: "Entrepreneur APAC - HeyMax Raises US$11M Series A Led by Peak XV Partners", url: "https://apac.entrepreneur.com/news-and-trends/heymax-raises-us11m-series-a-led-by-peak-xv-partners-to/502235" }
-    ]
-  },
-"hua-wang": {
-    name: "Hua Wang",
-    firm: "Sinovation Ventures",
-    firmSlug: "sinovation-ventures",
-    title: "Co-Founder",
-    joinedYear: null,
-    investmentFocus: [],
-    education: [
-      "MBA, Stanford University"
-    ],
-    previousExperience: [
-      "Head of Business Development, Google China",
-      "Co-founder, Shanghai Yinda Technology"
-    ],
-    firmHistory: [],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 2009, event: "Sinovation Ventures was founded by a team led by Dr. Kai-Fu Lee." },
-      { year: null, event: "Co-founded Shanghai Yinda Technology, an engineering consulting firm providing mobile telecom network planning and optimization services." },
-      { year: null, event: "Served as Head of Business Development at Google China, where the premium ad network was built into an annual USD 80 million business." }
-    ],
-    biography: "Hua Wang is listed on Sinovation Ventures' own website as Co-CEO and Managing Partner, directing the firm's investment strategy and execution across all verticals. Before Sinovation, Wang was Head of Business Development at Google China, building its premium ad network into an annual USD 80 million business and managing Google China's investment portfolio, which included stakes in Dianping, Ganji, Tianya, Xunlei and Maxthon. Earlier, Wang co-founded Shanghai Yinda Technology, an engineering consulting firm focused on mobile telecom network planning and optimization. Wang holds an MBA from Stanford University.",
-    notableInvestments: [
-      { name: "Dianping", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
-        { url: "https://www.sinovationventures.com/portfolio/items/huawang", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Xunlei", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
-        { url: "https://www.sinovationventures.com/portfolio/items/huawang", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Ganji", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
-        { url: "https://www.sinovationventures.com/portfolio/items/huawang", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Tianya", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
-        { url: "https://www.sinovationventures.com/portfolio/items/huawang", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Maxthon", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
-        { url: "https://www.sinovationventures.com/portfolio/items/huawang", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Sinovation Ventures - Hua Wang partner page", url: "https://www.sinovationventures.com/portfolio/items/huawang" },
-      { label: "Sinovation Ventures - Team", url: "https://www.sinovationventures.com/team" },
-      { label: "Sinovation Ventures - Home (firm founding statement)", url: "https://www.sinovationventures.com/" },
-      { label: "Sinovation Ventures Chinese site - Team", url: "https://www.chuangxin.com/team" }
-    ]
-  },
-"gene-frantz": {
-    name: "Gene Frantz",
-    firm: "CapitalG",
-    firmSlug: "capitalg",
-    title: "General Partner",
-    joinedYear: 2013,
-    investmentFocus: [
-      "Cybersecurity",
-      "Enterprise Software"
-    ],
-    education: [
-      "B.S., UC Berkeley",
-      "MBA, Stanford University"
-    ],
-    previousExperience: [
-      "Vice President, Morgan Stanley",
-      "Technology and telecommunications investments, Oracle Corporation's venture capital group",
-      "Technology and telecommunications investments, TPG Capital"
-    ],
-    firmHistory: [],
-    boardSeats: [
-      "Expel"
-    ],
-    ipoCount: 4,
-    majorExits: 9,
-    careerTimeline: [
-      { year: 2013, event: "Joined CapitalG at the firm's inception." },
-      { year: 2018, event: "Listed in Radiate Holdings' Form D as a director of the issuer's general partner on behalf of CapitalG." },
-      { year: 2021, event: "Co-authored CapitalG's announcement that it led Orca Security's Series C." },
-      { year: 2021, event: "Co-authored CapitalG's announcement of its Series E investment in Expel." },
-      { year: 2024, event: "Co-authored CapitalG's announcement of its investment in Monzo's Series I." }
-    ],
-    biography: "Gene Frantz is a general partner at CapitalG who joined the firm at its inception in 2013 and invests in cybersecurity and enterprise technology. CapitalG states that his investments at the firm have achieved nine major exits, including four IPOs, and are worth more than $125B, and names CrowdStrike, Zscaler, Freshworks and Looker among them. Before CapitalG he led technology and telecommunications investments for the private equity firm TPG Capital and for Oracle Corporation's venture capital group, and prior to Oracle he served as a vice president at Morgan Stanley. He holds a B.S. from UC Berkeley and an MBA from Stanford University.",
-    notableInvestments: [
-      { name: "CrowdStrike", ticker: "CRWD", stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
-        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Zscaler", ticker: "ZS", stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
-        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Freshworks", ticker: "FRSH", stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
-        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://capitalg.com/insights/freshworks", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Looker", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
-        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Orca Security", ticker: null, stage: "Series C", year: 2021, yearPrecision: "year", sector: "Cybersecurity", subsector: "agentless cloud security", role: null, evidence: [
-        { url: "https://capitalg.com/insights/ushering-in-the-future-of-cloud-security-our-investment-in-orca-security", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Expel", ticker: null, stage: "Series E", year: 2021, yearPrecision: "year", sector: "Cybersecurity", subsector: null, role: "board", evidence: [
-        { url: "https://capitalg.com/insights/doubling-down-on-expel-still-defending-customers-from-cyber-criminals", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://www.sec.gov/Archives/edgar/data/1684049/000168404922000002/primary_doc.xml", type: "regulatory", checked: "2026-08-25" }
-      ] },
-      { name: "Monzo", ticker: null, stage: null, year: 2024, yearPrecision: "year", sector: "Fintech", subsector: "UK digital bank", role: null, evidence: [
-        { url: "https://capitalg.com/insights/monzo-making-money-work-for-everyone", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Astound (Radiate Holdings)", ticker: null, stage: null, year: 2018, yearPrecision: "year", sector: null, subsector: null, role: "board", evidence: [
-        { url: "https://www.sec.gov/Archives/edgar/data/1698114/000169811418000001/primary_doc.xml", type: "regulatory", checked: "2026-08-25" },
-        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "CapitalG - Gene Frantz", url: "https://capitalg.com/team/gene-frantz/" },
-      { label: "CapitalG - Team", url: "https://capitalg.com/team/" },
-      { label: "CapitalG - Ushering in the future of cloud security: our investment in Orca Security", url: "https://capitalg.com/insights/ushering-in-the-future-of-cloud-security-our-investment-in-orca-security" },
-      { label: "CapitalG - Doubling down on Expel", url: "https://capitalg.com/insights/doubling-down-on-expel-still-defending-customers-from-cyber-criminals" },
-      { label: "CapitalG - Monzo: making money work for everyone", url: "https://capitalg.com/insights/monzo-making-money-work-for-everyone" },
-      { label: "SEC Form D - Expel, Inc. (filed 2022-11-07)", url: "https://www.sec.gov/Archives/edgar/data/1684049/000168404922000002/primary_doc.xml" },
-      { label: "SEC Form D - Radiate Holdings, L.P. (filed 2018-02-07)", url: "https://www.sec.gov/Archives/edgar/data/1698114/000169811418000001/primary_doc.xml" }
-    ]
-  },
-"alex-nichols": {
-    name: "Alex Nichols",
-    firm: "CapitalG",
-    firmSlug: "capitalg",
-    title: "General Partner",
-    joinedYear: 2018,
-    investmentFocus: [],
-    education: [
-      "Economics, The University of Chicago"
-    ],
-    previousExperience: [
-      "Technology investment banker, Goldman Sachs"
-    ],
-    firmHistory: [],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 2018, event: "Joined CapitalG." },
-      { year: 2021, event: "Co-authored CapitalG's announcement of its investment in Whatnot's Series C." },
-      { year: 2024, event: "Co-authored CapitalG's announcement of its investment in Odoo." },
-      { year: 2025, event: "Co-authored CapitalG's announcement of its investment in Base Power." },
-      { year: 2026, event: "Promoted to General Partner at CapitalG alongside Jill Chase." }
-    ],
-    biography: "Alex Nichols is a general partner at CapitalG who joined the firm in 2018 and was named a general partner in January 2026 alongside Jill Chase. CapitalG says he leads investments across sectors with a focus on companies reinventing large markets through novel economic or distribution models paired with compounding scale advantages, and lists Whatnot, Stripe, Rippling, Waymo, Duolingo and UiPath among the companies he has partnered with. Before CapitalG he was a technology investment banker at Goldman Sachs, and he studied economics at The University of Chicago.",
-    notableInvestments: [
-      { name: "Whatnot", ticker: null, stage: "Series C", year: 2021, yearPrecision: "year", sector: "Ecommerce", subsector: "livestream shopping marketplace", role: null, evidence: [
-        { url: "https://capitalg.com/insights/our-investment-in-whatnot-fusing-ecommerce-with-entertainment-and-social", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Odoo", ticker: null, stage: null, year: 2024, yearPrecision: "year", sector: "Enterprise Software", subsector: "ERP", role: null, evidence: [
-        { url: "https://capitalg.com/insights/odoo-rebundling-application-software", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Base Power", ticker: null, stage: null, year: 2025, yearPrecision: "year", sector: "Climate & Energy", subsector: "grid scaling", role: null, evidence: [
-        { url: "https://capitalg.com/insights/base-power-scaling-the-grid", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Stripe", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: null, role: null, evidence: [
-        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Rippling", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
-        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Duolingo", ticker: "DUOL", stage: null, year: null, yearPrecision: null, sector: "EdTech", subsector: null, role: null, evidence: [
-        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "UiPath", ticker: "PATH", stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
-        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Waymo", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Mobility", subsector: null, role: null, evidence: [
-        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "CapitalG - Alex Nichols", url: "https://capitalg.com/team/alex-nichols/" },
-      { label: "CapitalG - Team", url: "https://capitalg.com/team/" },
-      { label: "CapitalG - Celebrating CapitalG's newest general partners: Jill Chase and Alex Nichols", url: "https://capitalg.com/insights/celebrating-capitalgs-newest-general-partners-jill-chase-and-alex-nichols" },
-      { label: "CapitalG - Our investment in Whatnot", url: "https://capitalg.com/insights/our-investment-in-whatnot-fusing-ecommerce-with-entertainment-and-social" },
-      { label: "CapitalG - Odoo: rebundling application software", url: "https://capitalg.com/insights/odoo-rebundling-application-software" },
-      { label: "CapitalG - Base Power: scaling the grid", url: "https://capitalg.com/insights/base-power-scaling-the-grid" }
     ]
   }
 });
