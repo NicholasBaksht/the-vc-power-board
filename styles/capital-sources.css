@@ -1,0 +1,62 @@
+/* ============================================================
+   CAPITAL-SOURCES.CSS
+   Broader Capital Sources. Reuses the Power Board palette and the
+   restraint of the partner pages - thin rules, muted labels, no
+   decorative scoring devices. The data is the design.
+   ============================================================ */
+.cs-wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 64px; }
+.cs-back { display: inline-block; font-size: 0.8rem; color: #8fa0bf; text-decoration: none; margin-bottom: 18px; }
+.cs-back:hover { color: #5479B5; }
+.cs-kicker { font-size: 0.68rem; letter-spacing: 0.11em; text-transform: uppercase; color: #5479B5; margin-bottom: 6px; }
+.cs-h1 { font-size: 1.9rem; color: #e8ecf4; margin: 0 0 10px; line-height: 1.2; text-wrap: balance; }
+.cs-sub { font-size: 0.9rem; color: #8fa0bf; line-height: 1.6; max-width: 68ch; margin: 0 0 26px; }
+.cs-role { font-size: 0.95rem; color: #b8c2d6; margin-bottom: 2px; }
+.cs-based { font-size: 0.8rem; color: #8fa0bf; margin-bottom: 14px; }
+.cs-bio { font-size: 0.9rem; color: #b8c2d6; line-height: 1.65; max-width: 70ch; margin: 0 0 22px; }
+
+.cs-stats, .cs-strip { display: flex; flex-wrap: wrap; gap: 26px; padding: 14px 0; border-top: 1px solid rgba(140,160,200,0.14); border-bottom: 1px solid rgba(140,160,200,0.14); margin-bottom: 26px; }
+.cs-stat .n { font-size: 1.25rem; color: #e8ecf4; font-variant-numeric: tabular-nums; }
+.cs-stat .l { font-size: 0.7rem; letter-spacing: 0.05em; text-transform: uppercase; color: #8fa0bf; margin-top: 2px; }
+
+.cs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.cs-card { display: block; padding: 14px 16px; border: 1px solid rgba(140,160,200,0.2); border-radius: 6px; text-decoration: none; background: rgba(140,160,200,0.03); }
+.cs-card:hover { border-color: #5479B5; }
+.cs-card-type { font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; color: #5479B5; margin-bottom: 6px; }
+.cs-card-name { font-size: 1rem; color: #e8ecf4; margin-bottom: 3px; }
+.cs-card-role { font-size: 0.78rem; color: #b8c2d6; margin-bottom: 6px; }
+.cs-card-meta { font-size: 0.75rem; color: #8fa0bf; }
+
+.cs-block { margin: 26px 0; }
+.cs-block-h { font-size: 0.68rem; letter-spacing: 0.09em; text-transform: uppercase; color: #8fa0bf; margin-bottom: 10px; }
+.cs-note { font-size: 0.82rem; color: #8fa0bf; line-height: 1.55; padding: 12px 0; border-top: 1px solid rgba(140,160,200,0.14); }
+.cs-empty { font-size: 0.85rem; color: #8fa0bf; padding: 20px 0; }
+
+.cs-bars { display: flex; flex-direction: column; gap: 6px; }
+.cs-bar-row { display: grid; grid-template-columns: minmax(0,180px) 1fr 48px; align-items: center; gap: 10px; }
+.cs-bar-label { font-size: 0.82rem; color: #b8c2d6; }
+.cs-bar-track { height: 6px; background: rgba(140,160,200,0.14); border-radius: 3px; overflow: hidden; }
+.cs-bar-fill { display: block; height: 100%; background: #5479B5; }
+.cs-bar-pct { font-size: 0.78rem; color: #8fa0bf; text-align: right; font-variant-numeric: tabular-nums; }
+.cs-basis { font-size: 0.72rem; color: #8fa0bf; margin-top: 8px; }
+
+.cs-list { list-style: none; margin: 0; padding: 0; }
+.cs-item { padding: 9px 0; border-bottom: 1px solid rgba(140,160,200,0.1); }
+.cs-item-name { font-size: 0.9rem; color: #e8ecf4; }
+.cs-item-meta { font-size: 0.78rem; color: #8fa0bf; margin-left: 8px; }
+.cs-item-board { font-size: 0.62rem; letter-spacing: 0.06em; text-transform: uppercase; color: #5479B5; border: 1px solid rgba(84,121,181,0.45); border-radius: 3px; padding: 1px 5px; margin-left: 8px; }
+.cs-ev { margin-top: 5px; }
+.cs-ev summary { font-size: 0.72rem; color: #8fa0bf; cursor: pointer; }
+.cs-ev-row { font-size: 0.72rem; color: #8fa0bf; padding: 3px 0 0 12px; }
+.cs-ev-row a { color: #b8c2d6; }
+.cs-ev-type, .cs-ev-date { color: #8fa0bf; }
+.cs-src { list-style: none; margin: 0; padding: 0; }
+.cs-src li { padding: 3px 0; font-size: 0.82rem; }
+.cs-src a { color: #b8c2d6; }
+.cs-method { margin-top: 30px; padding-top: 14px; border-top: 1px solid rgba(140,160,200,0.14); }
+.cs-method summary { font-size: 0.78rem; color: #8fa0bf; cursor: pointer; }
+.cs-method p { font-size: 0.82rem; color: #8fa0bf; line-height: 1.6; max-width: 70ch; margin: 8px 0 0; }
+
+@media (max-width: 560px) {
+  .cs-bar-row { grid-template-columns: minmax(0,120px) 1fr 40px; }
+  .cs-stats, .cs-strip { gap: 18px; }
+}
