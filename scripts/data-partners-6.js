@@ -1,5 +1,206 @@
 /* data-partners shard 6 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
+"kane-hsieh": {
+    name: "Kane Hsieh",
+    firm: "Root Ventures",
+    firmSlug: "root-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Computer Science, Harvard University"
+    ],
+    previousExperience: [
+      "Senior Associate, RRE Ventures"
+    ],
+    firmHistory: [
+      { firmSlug: "rre-ventures", role: "Senior Associate", startYear: null, endYear: null }
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Spent two years as a senior associate at RRE Ventures in New York." },
+      { year: 2018, event: "Named as part of the Root Ventures investing team when the firm closed its 76.7 million dollar second fund." },
+      { year: 2025, event: "Quoted in Newcomer's report on Root Ventures raising a 190 million dollar fourth fund." }
+    ],
+    biography: "Kane Hsieh is a Partner at Root Ventures, the San Francisco seed-stage deep tech firm founded by Avidan Ross. TechCrunch reported in 2018 that he studied computer science at Harvard and spent a couple of years as a senior associate at RRE Ventures in New York before joining Root. He was named among Root's investing team when the firm closed its 76.7 million dollar second fund in 2018, and he was quoted in Newcomer's November 2025 report on Root's 190 million dollar fourth fund.",
+    notableInvestments: [],
+    sources: [
+      { label: "Root Ventures - Team", url: "https://root.vc/" },
+      { label: "TechCrunch - Root Ventures closed a much bigger second fund with $76.7 million", url: "https://techcrunch.com/2018/07/26/root-ventures-a-young-sf-firm-focused-on-hard-tech-just-closed-a-much-bigger-second-fund-with-76-7-million/" },
+      { label: "Newcomer - Root Ventures Raises $190 Million Fourth Fund", url: "https://www.newcomer.co/p/exclusive-root-ventures-raises-190" }
+    ]
+  },
+"chrissy-meyer": {
+    name: "Chrissy Meyer",
+    firm: "Root Ventures",
+    firmSlug: "root-ventures",
+    title: "Partner",
+    joinedYear: 2017,
+    investmentFocus: [],
+    education: [
+      "BS Electrical Engineering, Rose-Hulman Institute of Technology",
+      "MS Electrical Engineering, Stanford University"
+    ],
+    previousExperience: [
+      "Engineering Program Manager, Apple",
+      "Engineering Program Manager, Square",
+      "Director of Hardware, Pearl Automation"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Began her career as an Engineering Program Manager at Apple, where she was the third member of the Watch team." },
+      { year: 2013, event: "Left Apple and spent a year as an engineering program manager at Square." },
+      { year: null, event: "Served as Director of Hardware at Pearl Automation." },
+      { year: 2017, event: "Joined Root Ventures as a Venture Partner, announced on October 20." },
+      { year: 2023, event: "Spoke at a TechCrunch Live event as an investor in Oma Fertility." }
+    ],
+    biography: "Chrissy Meyer is a Partner at Root Ventures, the San Francisco seed-stage deep tech firm, which announced her arrival as a Venture Partner in October 2017. Before investing she spent nearly six years at Apple as an Engineering Program Manager, where she shipped iPods and Apple Watches and was the third member of the Watch team, then worked as an Engineering Program Manager at Square and as Director of Hardware at Pearl Automation. TechCrunch reported in 2023 that she writes one to three million dollar checks in seed and pre-seed rounds at Root. She holds a BS in Electrical Engineering from Rose-Hulman and an MS in Electrical Engineering from Stanford.",
+    notableInvestments: [
+      { name: "Oma Fertility", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Healthcare", subsector: "In-vitro fertilization", role: null, evidence: [
+        { url: "https://techcrunch.com/2023/03/26/oma-fertility-to-speak-on-building-a-better-ivf-experience-on-techcrunch-live/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Root Ventures - Team", url: "https://root.vc/" },
+      { label: "Root Ventures - Welcoming Chrissy Meyer to Root Ventures", url: "https://medium.com/root-ventures/welcoming-chrissy-meyer-to-root-ventures-56acf86383eb" },
+      { label: "TechCrunch - Oma Fertility to speak on building a better IVF experience on TechCrunch Live", url: "https://techcrunch.com/2023/03/26/oma-fertility-to-speak-on-building-a-better-ivf-experience-on-techcrunch-live/" },
+      { label: "TechCrunch - Root Ventures closed a much bigger second fund with $76.7 million", url: "https://techcrunch.com/2018/07/26/root-ventures-a-young-sf-firm-focused-on-hard-tech-just-closed-a-much-bigger-second-fund-with-76-7-million/" }
+    ]
+  },
+"wende-hutton": {
+    name: "Wende Hutton",
+    firm: "Canaan Partners",
+    firmSlug: "canaan-partners",
+    title: "General Partner",
+    joinedYear: 2004,
+    investmentFocus: [
+      "Biotech",
+      "Medical Devices",
+      "Digital Health"
+    ],
+    education: [
+      "A.B. Human Biology, Stanford University",
+      "M.B.A., Harvard Business School"
+    ],
+    previousExperience: [
+      "Senior marketing roles, GenPharm and Nellcor",
+      "General Partner, Mayfield"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Antiva Biosciences"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2004, event: "Joined Canaan as a General Partner on the West Coast." },
+      { year: 2011, event: "Named as a Canaan Partners participant in Dermira's $42 million Series A financing." },
+      { year: 2015, event: "Joined the Glooko board of directors as part of the company's $16.5 million Series B." },
+      { year: 2017, event: "Joined the Hyalex Orthopaedics board of directors alongside its $16 million Series A." },
+      { year: 2024, event: "Spoke for Canaan as General Partner on Qlaris Bio's $24 million Series B financing." }
+    ],
+    biography: "Wende Hutton is a General Partner at Canaan, where her bio states she identifies, builds and invests in companies bringing novel drugs, technologies and devices to market. She joined Canaan in 2004 after starting her venture career as a General Partner at Mayfield and holding senior marketing roles at GenPharm and Nellcor. Canaan lists Antiva Biosciences, Glooko, Hyalex Orthopaedics and Qlaris Bio among her current investments, and Chimerix, Dermira, Labrys Biologics and Transcend Medical among her previous ones. She holds an A.B. in human biology from Stanford University and an M.B.A. from Harvard Business School.",
+    notableInvestments: [
+      { name: "Glooko", ticker: null, stage: "Series B", year: 2015, yearPrecision: "year", sector: "Digital Health", subsector: "remote patient monitoring platform for diabetes", role: "board", evidence: [
+        { url: "https://glooko.com/news_reg/glooko-the-leading-remote-patient-monitoring-platform-for-diabetes-raises-16-5-million-in-series-b-funding-from-canaan-partners-medtronic-social-capital-and-samsung-glooko/", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.canaan.com/team/wende-hutton", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Hyalex Orthopaedics", ticker: null, stage: "Series A", year: 2017, yearPrecision: "year", sector: "Medical Devices", subsector: null, role: "board", evidence: [
+        { url: "https://www.prnewswire.com/news-releases/hyalex-orthopaedics-raises-16-million-series-a-financing-and-appoints-chief-executive-officer-300465930.html", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.finsmes.com/2017/05/hyalex-orthopaedics-raises-16m-in-series-a-financing.html", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Qlaris Bio", ticker: null, stage: "Series B", year: 2024, yearPrecision: "year", sector: "Biotech", subsector: "IOP-lowering drug candidate for glaucoma", role: null, evidence: [
+        { url: "https://qlaris.bio/qlaris-bio-completes-24-million-series-b-financing-round-to-advance-qls%E2%80%91111-a-first-in-class-iop-lowering-drug-candidate-for-glaucoma/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Antiva Biosciences", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
+        { url: "https://antivabio.com/about-board.php", type: "portfolio-page", checked: "2026-08-25" },
+        { url: "https://www.canaan.com/team/wende-hutton", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Dermira", ticker: null, stage: "Series A", year: 2011, yearPrecision: "year", sector: "Biotech", subsector: "dermatology therapeutics", role: null, evidence: [
+        { url: "https://www.biospace.com/dermira-scores-42-million-series-a-financing-to-fund-therapeutic-advances-in-dermatology", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.canaan.com/team/wende-hutton", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Canaan - Wende Hutton", url: "https://www.canaan.com/team/wende-hutton" },
+      { label: "Antiva Biosciences - Board of Directors", url: "https://antivabio.com/about-board.php" },
+      { label: "Glooko - $16.5M Series B press release", url: "https://glooko.com/news_reg/glooko-the-leading-remote-patient-monitoring-platform-for-diabetes-raises-16-5-million-in-series-b-funding-from-canaan-partners-medtronic-social-capital-and-samsung-glooko/" },
+      { label: "PR Newswire - Hyalex Orthopaedics $16M Series A", url: "https://www.prnewswire.com/news-releases/hyalex-orthopaedics-raises-16-million-series-a-financing-and-appoints-chief-executive-officer-300465930.html" },
+      { label: "Qlaris Bio - $24M Series B", url: "https://qlaris.bio/qlaris-bio-completes-24-million-series-b-financing-round-to-advance-qls%E2%80%91111-a-first-in-class-iop-lowering-drug-candidate-for-glaucoma/" },
+      { label: "BioSpace - Dermira $42M Series A", url: "https://www.biospace.com/dermira-scores-42-million-series-a-financing-to-fund-therapeutic-advances-in-dermatology" },
+      { label: "Aspen Ideas - Wende Hutton speaker bio", url: "https://www.aspenideas.org/speakers/wende-hutton" }
+    ]
+  },
+"eric-young": {
+    name: "Eric Young",
+    firm: "Canaan Partners",
+    firmSlug: "canaan-partners",
+    title: "Partner & Co-Founder",
+    joinedYear: 1987,
+    departedYear: 2021,
+    departedNote: "Died October 23, 2021. Canaan's own page presents him as 'In Memory / Partner and Co-Founder / West Coast, 1987 - 2021'; this profile reflects his founding role, not a current one.",
+    investmentFocus: [],
+    education: [
+      "B.S. Mechanical Engineering, Cornell University",
+      "M.B.A., Northwestern University"
+    ],
+    previousExperience: [
+      "Sales, marketing, operations and General Manager roles, General Electric",
+      "General Electric venture capital group (GEVENCO), opened its West Coast office"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1987, event: "Co-founded Canaan as a spin-out of GE Venture Capital." },
+      { year: 2021, event: "Died on October 23 after 32 years as a General Partner at Canaan." }
+    ],
+    biography: "Eric Young co-founded Canaan in 1987 as a spin-out of GE Venture Capital, and Canaan's page states that over 32 years he led multiple generations of Canaan investors and shaped the firm's culture. Before Canaan he worked at General Electric in sales, marketing, operations and as a General Manager, and opened the West Coast office for GE's venture capital group. Alongside advising Canaan's investment team he served on advisory boards focused on venture and entrepreneurial skill development in university ecosystems. He held a B.S. in mechanical engineering from Cornell University and an M.B.A. from Northwestern University, and died on October 23, 2021.",
+    notableInvestments: [
+      { name: "Kalpana", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Capstone Turbine Corporation", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Ebates", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "SandForce", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Lancope", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Xirrus", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Argon Networks", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Frame Technology", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "International Network Services", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Visigenic Software", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
+        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Canaan - Eric Young (In Memory)", url: "https://www.canaan.com/team/eric-young" },
+      { label: "Canaan - Team page memorial", url: "https://www.canaan.com/team" },
+      { label: "Spangler Mortuaries - Eric Anderson Young obituary", url: "https://www.spanglermortuary.com/obituaries/eric-young" },
+      { label: "Tribute Archive - Eric Anderson Young obituary", url: "https://www.tributearchive.com/obituaries/23164173/eric-anderson-young/" }
+    ]
+  },
 "tomi-poutanen": {
     name: "Tomi Poutanen",
     firm: "Radical Ventures",
@@ -1107,7 +1308,11 @@ Object.assign(partnerProfiles, {
       { year: null, event: "Began leading Seedcamp's podcast, This Much I Know." }
     ],
     biography: "Carlos Eduardo Espinal is Managing Partner at Seedcamp, where his own bio says he has spent over 15 years co-leading the firm alongside Reshma Sohoni. He began his career at cybersecurity firm GTE Cybertrust, which was acquired by Baltimore Technologies, then worked in the R&D department of the NYSE's SIAC group before moving into early-stage investing in 2007. He is the author of The Fundraising Fieldguide and leads Seedcamp's podcast, This Much I Know.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "PAIR", ticker: null, stage: "Seed", year: 2026, yearPrecision: "year",
+      sector: "AI", subsector: "enterprise AI adoption",
+      evidence: [{ url: "https://seedcamp.com/views/pair-raises-seed-round-to-drive-enterprise-ai-adoption/", type: "firm-announcement", checked: "2026-08-30" }] }
+  ],
     sources: [
       { label: "Seedcamp - Carlos Eduardo Espinal", url: "https://seedcamp.com/people/carlos-eduardo-espinal/" },
       { label: "Seedcamp - Our Team", url: "https://seedcamp.com/our-team/" },
@@ -2628,7 +2833,31 @@ Object.assign(partnerProfiles, {
       { year: 2021, event: "Described as a partner of BoxGroup when the firm closed USD 255 million across two funds." }
     ],
     biography: "Adam Rothenberg co-founded BoxGroup, a New York seed firm that invests from pre-seed through Series A with checks of up to USD 1 million, and is listed among its investors on the firm's team page. He was an analyst at the hedge fund Zimmer Lucas Partners for about three years before joining Techstars NY, where he served as director and worked with David Tisch mentoring founders. Press coverage of BoxGroup's 2019 and 2021 fund closes describes him as one of the firm's partners. BoxGroup's own site names its investors without giving them titles and does not attribute portfolio companies to individuals.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "David Energy", ticker: null, stage: "Pre-Seed", year: 2020, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "software-driven electricity provider",
+      evidence: [{ url: "https://www.businesswire.com/news/home/20200304005141/en/David-Energy-A-New-Kind-of-Energy-Company-Announces-$1.5-Million-in-New-Funding", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Coast", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "Fintech", subsector: "financial tools for fleet operating industries",
+      evidence: [{ url: "https://coastpay.com/blog/coast-announces-new-funding/", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "SmartThings", ticker: null,
+      sector: "Hardware",
+      evidence: [{ url: "https://www.alleywatch.com/2014/02/a-new-york-vc-spotlight-adam-rothenberg/", type: "press", checked: "2026-08-30" }] },
+    { name: "Behance", ticker: null,
+      sector: "Consumer",
+      evidence: [{ url: "https://www.alleywatch.com/2014/02/a-new-york-vc-spotlight-adam-rothenberg/", type: "press", checked: "2026-08-30" }] },
+    { name: "9GAG", ticker: null,
+      sector: "Consumer",
+      evidence: [{ url: "https://www.alleywatch.com/2014/02/a-new-york-vc-spotlight-adam-rothenberg/", type: "press", checked: "2026-08-30" }] },
+    { name: "Fab.com", ticker: null,
+      sector: "Ecommerce",
+      evidence: [{ url: "https://www.alleywatch.com/2014/02/a-new-york-vc-spotlight-adam-rothenberg/", type: "press", checked: "2026-08-30" }] },
+    { name: "42Floors", ticker: null,
+      sector: "Real Estate Tech",
+      evidence: [{ url: "https://www.alleywatch.com/2014/02/a-new-york-vc-spotlight-adam-rothenberg/", type: "press", checked: "2026-08-30" }] },
+    { name: "Nomi", ticker: null,
+      evidence: [{ url: "https://www.alleywatch.com/2014/02/a-new-york-vc-spotlight-adam-rothenberg/", type: "press", checked: "2026-08-30" }] }
+  ],
     sources: [
       { label: "BoxGroup - Team", url: "https://www.boxgroup.com/team" },
       { label: "BoxGroup - About", url: "https://www.boxgroup.com/about" },
@@ -2763,7 +2992,11 @@ Object.assign(partnerProfiles, {
       { year: 2012, event: "East Ventures set up a dedicated fund for the Japan market." }
     ],
     biography: "Taiga Matsuyama is a Founding Partner of East Ventures, based in Japan. He worked for Members and helped launch Yahoo Japan while studying at Waseda University, then joined Accenture as a consultant before co-founding eGroups in Japan and serving as a board member of NetAge, one of the first Japanese internet incubators. He founded Kronos Fund and then co-founded East Ventures in 2009 with Willson Cuaca and Batara Eto.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Mercari", ticker: null,
+      sector: "Ecommerce", subsector: "consumer marketplace",
+      evidence: [{ url: "https://forbesjapan.com/articles/detail/22241", type: "press", checked: "2026-08-30" }] }
+  ],
     sources: [
       { label: "East Ventures - Taiga Matsuyama", url: "https://east.vc/team/taiga-matsuyama" },
       { label: "East Ventures - Our Team", url: "https://east.vc/about-us/our-team" },
@@ -3121,7 +3354,17 @@ Object.assign(partnerProfiles, {
       { year: 2026, event: "Spoke as managing partner on Launch Africa Ventures returning $2.5 million to investors as Seed Fund I reached a DPI milestone." }
     ],
     biography: "Janade du Plessis co-founded Launch Africa Ventures with Zachariah George in 2020, and press coverage identifies him as managing partner of the firm. Launch Africa describes itself as a pan-African VC fund addressing the funding gap at seed and pre-Series A, and its own site states that it has raised over US$36 million and invested US$31 million into 133 startups across 22 countries. Before founding Launch Africa he spent 18 years in corporate roles including stints at the African Development Bank, where he was a Chief Investment Officer, at Rand Merchant Bank and at Nedbank. He holds a Master's degree in Finance, Economics and Business Administration, is a PhD candidate in Business Science, and was a Harvard South Africa Fellowship Program Fellow in 2020 to 2021. He also co-founded Five35 Ventures, a pan-African female-focused VC fund.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Aerobotics", ticker: null, stage: "Pre-Seed",
+      sector: "Agtech", subsector: "agriculture technology",
+      evidence: [{ url: "https://www.forbesafrica.com/contrarian/2023/08/27/venture-forward/", type: "press", checked: "2026-08-30" }] },
+    { name: "Gozem", ticker: null,
+      sector: "Mobility", subsector: "ride-hailing in Togo and Benin",
+      evidence: [{ url: "https://www.forbesafrica.com/contrarian/2023/08/27/venture-forward/", type: "press", checked: "2026-08-30" }] },
+    { name: "Insights by Experts", ticker: null, year: 2022, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "on-demand expertise platform",
+      evidence: [{ url: "https://cioafrica.co/launch-africa-ventures-invests-in-africas-first-on-demand-expertise-platform/", type: "deal-announcement", checked: "2026-08-30" }] }
+  ],
     sources: [
       { label: "Launch Africa Ventures - homepage", url: "https://www.launchafrica.vc/" },
       { label: "Launch Africa - LAV Fund 1 Invests in 133 Startups across 22 African Countries", url: "https://www.launchafrica.vc/news/lav-fund-1-invests-in-133-startups-across-22-african-countries" },
@@ -3359,7 +3602,35 @@ Object.assign(partnerProfiles, {
     majorExits: null,
     careerTimeline: [],
     biography: "Ashutosh Sharma is Head of India Investments at Prosus Ventures, the venture investment arm of Prosus. He appears in the Meet the team section of the Prosus Ventures page on the firm's own website, which gives his role but no biography. Prosus Ventures invests across India, Europe, South East Asia, ANZ and the Middle East.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Rapido", ticker: null, year: 2026, yearPrecision: "year",
+      sector: "Mobility", subsector: "affordable mobility platform",
+      evidence: [{ url: "https://www.prosus.com/news-insights/2026/prosus-leads-us-dollars-240m-primary-funding-in-rapido-demonstrating-conviction-in-indias-digital-economy", type: "firm-announcement", checked: "2026-08-30" }] },
+    { name: "Navi", ticker: null, year: 2026, yearPrecision: "year",
+      sector: "Fintech", subsector: "digital-first financial services",
+      evidence: [{ url: "https://www.prosus.com/news-insights/2026/prosus-proposes-investment-of-usd-100-million-in-navi", type: "firm-announcement", checked: "2026-08-30" }] },
+    { name: "Captain Fresh", ticker: null, stage: "Series C", year: 2022, yearPrecision: "year",
+      sector: "Foodtech", subsector: "seafood marketplace",
+      evidence: [{ url: "https://techcrunch.com/2022/03/06/captain-fresh-fish-seafood/", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Flipkart", ticker: null, stage: "Series E", year: 2017, yearPrecision: "year",
+      sector: "Ecommerce",
+      evidence: [{ url: "https://globalventuring.com/corporate/gcv-rising-stars-awards-2020-1-ashutosh-sharma/", type: "press", checked: "2026-08-30" }] },
+    { name: "Swiggy", ticker: null,
+      sector: "Foodtech", subsector: "food delivery",
+      evidence: [{ url: "https://globalventuring.com/corporate/gcv-rising-stars-awards-2020-1-ashutosh-sharma/", type: "press", checked: "2026-08-30" }] },
+    { name: "Byju's", ticker: null,
+      sector: "EdTech", subsector: "education technology",
+      evidence: [{ url: "https://globalventuring.com/corporate/gcv-rising-stars-awards-2020-1-ashutosh-sharma/", type: "press", checked: "2026-08-30" }] },
+    { name: "Meesho", ticker: null,
+      sector: "Ecommerce", subsector: "social commerce",
+      evidence: [{ url: "https://globalventuring.com/corporate/gcv-rising-stars-awards-2020-1-ashutosh-sharma/", type: "press", checked: "2026-08-30" }] },
+    { name: "ElasticRun", ticker: null,
+      sector: "Logistics", subsector: "last-mile delivery",
+      evidence: [{ url: "https://globalventuring.com/corporate/gcv-rising-stars-awards-2020-1-ashutosh-sharma/", type: "press", checked: "2026-08-30" }] },
+    { name: "QuickRide", ticker: null,
+      sector: "Mobility", subsector: "carpooling",
+      evidence: [{ url: "https://globalventuring.com/corporate/gcv-rising-stars-awards-2020-1-ashutosh-sharma/", type: "press", checked: "2026-08-30" }] }
+  ],
     sources: [
       { label: "Prosus - Prosus Ventures (Meet the team)", url: "https://www.prosus.com/prosus-ventures" }
     ]
