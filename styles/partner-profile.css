@@ -628,23 +628,23 @@
 }
 
 /* ---------- Best-Fit Partner module inside Power Match cards ---------- */
-.bfp { margin: 10px 0 2px; padding-top: 10px; border-top: 1px solid rgba(140,160,200,0.14); }
-.bfp-label { font-size: 0.68rem; letter-spacing: 0.09em; text-transform: uppercase; color: #8fa0bf; margin-bottom: 4px; }
-.bfp-conf { font-size: 0.62rem; letter-spacing: 0.06em; color: #5479B5; border: 1px solid rgba(84,121,181,0.45); border-radius: 3px; padding: 1px 5px; margin-left: 6px; text-transform: none; }
+.bfp { margin: 10px 0 2px; padding-top: 10px; border-top: 1px solid var(--hairline); }
+.bfp-label { font-size: 0.68rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-dim); margin-bottom: 4px; }
+.bfp-conf { font-size: 0.62rem; letter-spacing: 0.06em; color: var(--accent); border: 1px solid rgba(var(--accent-rgb),0.45); border-radius: 3px; padding: 1px 5px; margin-left: 6px; text-transform: none; }
 .bfp-name { font-size: 0.95rem; margin-bottom: 4px; }
-.bfp-name a { color: #e8ecf4; text-decoration: none; }
-.bfp-name a:hover { color: #5479B5; }
-.bfp-title { font-size: 0.75rem; color: #8fa0bf; margin-left: 6px; }
+.bfp-name a { color: var(--ink); text-decoration: none; }
+.bfp-name a:hover { color: var(--accent); }
+.bfp-title { font-size: 0.75rem; color: var(--ink-dim); margin-left: 6px; }
 .bfp-why { margin: 2px 0 6px; padding-left: 16px; }
-.bfp-why li { font-size: 0.78rem; color: #b8c2d6; line-height: 1.45; }
-.bfp-alt { font-size: 0.78rem; color: #8fa0bf; margin: 4px 0 2px; }
-.bfp-alt a { color: #b8c2d6; text-decoration: none; }
-.bfp-alt a:hover { color: #5479B5; }
+.bfp-why li { font-size: 0.78rem; color: var(--ink); line-height: 1.45; }
+.bfp-alt { font-size: 0.78rem; color: var(--ink-dim); margin: 4px 0 2px; }
+.bfp-alt a { color: var(--ink); text-decoration: none; }
+.bfp-alt a:hover { color: var(--accent); }
 .bfp-fb { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin-top: 6px; }
-.bfp-fb-q { font-size: 0.72rem; color: #8fa0bf; }
-.bfp-fb-btn { font-size: 0.72rem; color: #b8c2d6; background: none; border: 1px solid rgba(140,160,200,0.25); border-radius: 4px; padding: 2px 8px; cursor: pointer; }
-.bfp-fb-btn:hover { border-color: #5479B5; color: #e8ecf4; }
+.bfp-fb-q { font-size: 0.72rem; color: var(--ink-dim); }
+.bfp-fb-btn { font-size: 0.72rem; color: var(--ink); background: none; border: 1px solid rgba(140,160,200,0.25); border-radius: 4px; padding: 2px 8px; cursor: pointer; }
+.bfp-fb-btn:hover { border-color: var(--accent); color: var(--ink); }
 
 /* Best-Fit Partner: honest coverage line when no recommendation is warranted */
 .bfp-thin { padding-top: 8px; }
-.bfp-cov { font-size: 0.78rem; color: #8fa0bf; line-height: 1.45; }
+.bfp-cov { font-size: 0.78rem; color: var(--ink-dim); line-height: 1.45; }
