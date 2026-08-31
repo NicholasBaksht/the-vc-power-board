@@ -1,5 +1,381 @@
 /* data-partners shard 5 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
+"reid-dennis": {
+    name: "Reid Dennis",
+    firm: "IVP",
+    firmSlug: "ivp",
+    title: "Founder (1980)",
+    joinedYear: 1980,
+    departedYear: 2024,
+    departedNote: "Died March 14, 2024, at age 97; profile reflects his founding role at IVP, not a current one.",
+    investmentFocus: [],
+    education: [
+      "B.S. Electrical Engineering, Stanford University",
+      "M.B.A., Stanford University"
+    ],
+    previousExperience: [
+      "Venture capital roles at Fireman's Fund Insurance Company and American Express Company for 21 years",
+      "Founder, Institutional Venture Associates"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1952, event: "Began investing in early stage companies as an individual." },
+      { year: 1974, event: "Founded Institutional Venture Associates, backed by American Express, the Ford Foundation and others." },
+      { year: 1980, event: "Founded Institutional Venture Partners." },
+      { year: 2000, event: "Received the National Venture Capital Association Lifetime Achievement Award in April." },
+      { year: 2024, event: "Died on March 14 at the age of 97." }
+    ],
+    biography: "Reid Dennis founded Institutional Venture Partners in 1980, six years after starting Institutional Venture Associates with backing from American Express, the Ford Foundation and others. He had invested in early stage companies as an individual since 1952, and spent 21 years in venture capital roles at Fireman's Fund Insurance Company and American Express Company. He served as past Chairman and President of the National Venture Capital Association and past President of the Western Association of Venture Capitalists, and received the NVCA Lifetime Achievement Award in April 2000. Born May 16, 1926, he died on March 14, 2024, at the age of 97.",
+    notableInvestments: [
+      { name: "Ampex", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "magnetic recording", role: null, evidence: [
+        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.legacy.com/us/obituaries/sfgate/name/reid-dennis-obituary?id=54696176", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "American Microsystems", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "semiconductors", role: null, evidence: [
+        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Measurex", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Industrial & Manufacturing Technology", subsector: "process control systems", role: null, evidence: [
+        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Coherent Radiation", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "lasers", role: null, evidence: [
+        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "California Microwave", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "microwave communications equipment", role: null, evidence: [
+        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Seagate Technology", ticker: "STX", stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "disk drives", role: null, evidence: [
+        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Sequent Computer Systems", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "multiprocessor computers", role: null, evidence: [
+        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Stratus Computer", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "fault tolerant computers", role: null, evidence: [
+        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Exabyte Corporation", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "tape storage", role: null, evidence: [
+        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Storage Technology Corporation", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "data storage systems", role: "board", evidence: [
+        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Dust Networks", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "wireless sensor networks", role: "board", evidence: [
+        { url: "https://computerhistory.org/profile/reid-dennis/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Computer History Museum - Reid Dennis", url: "https://computerhistory.org/profile/reid-dennis/" },
+      { label: "San Francisco Chronicle / SFGate - Reid Dennis Obituary (1926-2024)", url: "https://www.legacy.com/us/obituaries/sfgate/name/reid-dennis-obituary?id=54696176" },
+      { label: "Fortune - How IVP built a VC firm to last (2024)", url: "https://fortune.com/2024/03/19/how-ivp-reid-dennis-built-a-vc-firm-to-last/" },
+      { label: "IVP - firm site", url: "https://www.ivp.com/" }
+    ]
+  },
+"sakshi-chopra": {
+    name: "Sakshi Chopra",
+    firm: "Peak XV Partners",
+    firmSlug: "peak-xv-partners",
+    title: "Managing Director",
+    joinedYear: 2010,
+    investmentFocus: [
+      "Consumer",
+      "Fintech"
+    ],
+    education: [],
+    previousExperience: [
+      "Banking, Deutsche Bank (Germany)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2010, event: "Joined Sequoia India, now Peak XV Partners, through its analyst programme after several years in banking in Germany and India." },
+      { year: 2014, event: "Worked on the firm's investment in Indigo Paints, and later took a board seat at the company." },
+      { year: 2021, event: "Appointed a managing director in the firm's growth investing team." },
+      { year: 2023, event: "Sequoia India and Southeast Asia separated from Sequoia Capital and rebranded as Peak XV Partners on June 6, spanning her tenure at the firm." },
+      { year: 2024, event: "Resigned as a non-executive nominee director of Indigo Paints." }
+    ],
+    biography: "Sakshi Chopra joined Sequoia India in 2010 through its analyst programme after working in banking in Germany and India, including at Deutsche Bank. She was appointed a managing director in the firm's growth investing team in 2021, and the firm's own announcement credits her with advising on investments in Indigo Paints, Wakefit, Purplle and Five Star Finance. Her stated focus is consumer brands and fintech. The firm separated from Sequoia Capital and rebranded as Peak XV Partners in June 2023, and she remains listed as a managing director on its team page.",
+    notableInvestments: [
+      { name: "Indigo Paints", ticker: "INDIGOPNTS", stage: null, year: 2014, yearPrecision: "year", sector: "Consumer", subsector: "decorative paints", role: "board", evidence: [
+        { url: "https://www.peakxv.com/article/new-additions-sequoia-indias-leadership-team/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://www.peakxv.com/article/unlocking-growth-with-incentives-and-equity-the-indigo-paints_story/", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://indigopaints.com/wp-content/uploads/2024/12/Change-in-Management_Resignation-of-Director_Sakshi-Chopra-1.pdf", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Wakefit", ticker: "WAKEFIT", stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "sleep and home solutions", role: null, evidence: [
+        { url: "https://www.peakxv.com/article/new-additions-sequoia-indias-leadership-team/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Purplle", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: "beauty e-commerce", role: null, evidence: [
+        { url: "https://www.peakxv.com/article/new-additions-sequoia-indias-leadership-team/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Five Star Business Finance", ticker: "FIVESTAR", stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "small business lending", role: null, evidence: [
+        { url: "https://www.peakxv.com/article/new-additions-sequoia-indias-leadership-team/", type: "firm-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Peak XV Partners - Sakshi Chopra", url: "https://www.peakxv.com/team/sakshi-chopra" },
+      { label: "Peak XV Partners - New Additions to Sequoia India's Leadership Team", url: "https://www.peakxv.com/article/new-additions-sequoia-indias-leadership-team/" },
+      { label: "Forbes India - Sakshi Chopra of Sequoia India shares mantra for young women entrepreneurs", url: "https://www.forbesindia.com/article/leadership/stay-humble-stay-resilient-never-give-up-sakshi-chopra-of-sequoia-india-shares-mantra-for-young-women-entrepreneurs/81965/1" },
+      { label: "Business Wire - Sequoia India & Southeast Asia Is Now Peak XV Partners", url: "https://www.businesswire.com/news/home/20230606005677/en/Sequoia-India-Southeast-Asia-Is-Now-Peak-XV-Partners" },
+      { label: "Indigo Paints - Resignation of Director, Ms. Sakshi Chopra", url: "https://indigopaints.com/wp-content/uploads/2024/12/Change-in-Management_Resignation-of-Director_Sakshi-Chopra-1.pdf" }
+    ]
+  },
+"rohit-agarwal": {
+    name: "Rohit Agarwal",
+    firm: "Peak XV Partners",
+    firmSlug: "peak-xv-partners",
+    title: "Managing Director",
+    joinedYear: 2015,
+    investmentFocus: [
+      "Fintech",
+      "Enterprise Software",
+      "Ecommerce",
+      "Consumer"
+    ],
+    education: [
+      "Bachelor's degree in engineering, Indian Institute of Technology Bombay"
+    ],
+    previousExperience: [
+      "Founding team member leading product, operations and customer success, Housing.com"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Insider",
+      "Bibit",
+      "Tonik",
+      "Kopi Kenangan",
+      "Shift",
+      "Lemonilo"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Joined Sequoia India, now Peak XV Partners, after being part of the founding team at Housing.com." },
+      { year: 2016, event: "Moved to the firm's Singapore office to cover Southeast Asia." },
+      { year: 2023, event: "Promoted from principal to managing director in July, weeks after Sequoia India and Southeast Asia rebranded as Peak XV Partners, spanning his tenure at the firm." },
+      { year: 2026, event: "Named on Peak XV's $11 million Series A investment in Singapore rewards platform HeyMax." }
+    ],
+    biography: "Rohit Agarwal joined Sequoia India in 2015 and moved to the firm's Singapore office in 2016, after being part of the founding team at Housing.com where he led product, operations and customer success. He was promoted from principal to managing director in July 2023, shortly after the firm separated from Sequoia Capital and rebranded as Peak XV Partners. He works with early-stage and growth founders in fintech, SaaS, direct-to-consumer and e-commerce across Southeast Asia, and sits on the boards of Insider, Bibit, Tonik, Kopi Kenangan, Shift and Lemonilo. He holds a bachelor's degree in engineering from the Indian Institute of Technology Bombay.",
+    notableInvestments: [
+      { name: "HeyMax", ticker: null, stage: "Series A", year: 2026, yearPrecision: "year", sector: "Fintech", subsector: "travel and loyalty rewards", role: null, evidence: [
+        { url: "https://apac.entrepreneur.com/news-and-trends/heymax-raises-us11m-series-a-led-by-peak-xv-partners-to/502235", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Tonik", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "digital bank", role: "board", evidence: [
+        { url: "https://svca.glueup.com/event/the-evolving-exchange-landscape-158967/speakers.html", type: "press", checked: "2026-08-25" },
+        { url: "https://fintechnews.sg/76877/fintech/peak-xv-partners-promotes-rohit-agarwal-as-new-managing-director/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Bibit", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: null, role: "board", evidence: [
+        { url: "https://svca.glueup.com/event/the-evolving-exchange-landscape-158967/speakers.html", type: "press", checked: "2026-08-25" },
+        { url: "https://fintechnews.sg/76877/fintech/peak-xv-partners-promotes-rohit-agarwal-as-new-managing-director/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Kopi Kenangan", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: "board", evidence: [
+        { url: "https://svca.glueup.com/event/the-evolving-exchange-landscape-158967/speakers.html", type: "press", checked: "2026-08-25" },
+        { url: "https://inc42.com/buzz/peak-xv-partners-promotes-rohit-agarwal-as-md/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Insider", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: "board", evidence: [
+        { url: "https://svca.glueup.com/event/the-evolving-exchange-landscape-158967/speakers.html", type: "press", checked: "2026-08-25" },
+        { url: "https://inc42.com/buzz/peak-xv-partners-promotes-rohit-agarwal-as-md/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Lemonilo", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: "board", evidence: [
+        { url: "https://svca.glueup.com/event/the-evolving-exchange-landscape-158967/speakers.html", type: "press", checked: "2026-08-25" },
+        { url: "https://inc42.com/buzz/peak-xv-partners-promotes-rohit-agarwal-as-md/", type: "press", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Peak XV Partners - Rohit Agarwal", url: "https://www.peakxv.com/team/rohit-agarwal" },
+      { label: "Peak XV Partners - Our Team", url: "https://www.peakxv.com/our-team" },
+      { label: "Fintech News Singapore - Peak XV Partners Promotes Rohit Agarwal as New Managing Director", url: "https://fintechnews.sg/76877/fintech/peak-xv-partners-promotes-rohit-agarwal-as-new-managing-director/" },
+      { label: "SVCA - The Evolving Exchange Landscape, speaker bio (November 2025)", url: "https://svca.glueup.com/event/the-evolving-exchange-landscape-158967/speakers.html" },
+      { label: "Entrepreneur APAC - HeyMax Raises US$11M Series A Led by Peak XV Partners", url: "https://apac.entrepreneur.com/news-and-trends/heymax-raises-us11m-series-a-led-by-peak-xv-partners-to/502235" }
+    ]
+  },
+"hua-wang": {
+    name: "Hua Wang",
+    firm: "Sinovation Ventures",
+    firmSlug: "sinovation-ventures",
+    title: "Co-Founder",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "MBA, Stanford University"
+    ],
+    previousExperience: [
+      "Head of Business Development, Google China",
+      "Co-founder, Shanghai Yinda Technology"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2009, event: "Sinovation Ventures was founded by a team led by Dr. Kai-Fu Lee." },
+      { year: null, event: "Co-founded Shanghai Yinda Technology, an engineering consulting firm providing mobile telecom network planning and optimization services." },
+      { year: null, event: "Served as Head of Business Development at Google China, where the premium ad network was built into an annual USD 80 million business." }
+    ],
+    biography: "Hua Wang is listed on Sinovation Ventures' own website as Co-CEO and Managing Partner, directing the firm's investment strategy and execution across all verticals. Before Sinovation, Wang was Head of Business Development at Google China, building its premium ad network into an annual USD 80 million business and managing Google China's investment portfolio, which included stakes in Dianping, Ganji, Tianya, Xunlei and Maxthon. Earlier, Wang co-founded Shanghai Yinda Technology, an engineering consulting firm focused on mobile telecom network planning and optimization. Wang holds an MBA from Stanford University.",
+    notableInvestments: [
+      { name: "Dianping", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
+        { url: "https://www.sinovationventures.com/portfolio/items/huawang", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Xunlei", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
+        { url: "https://www.sinovationventures.com/portfolio/items/huawang", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Ganji", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
+        { url: "https://www.sinovationventures.com/portfolio/items/huawang", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Tianya", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
+        { url: "https://www.sinovationventures.com/portfolio/items/huawang", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Maxthon", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: null, role: null, evidence: [
+        { url: "https://www.sinovationventures.com/portfolio/items/huawang", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Sinovation Ventures - Hua Wang partner page", url: "https://www.sinovationventures.com/portfolio/items/huawang" },
+      { label: "Sinovation Ventures - Team", url: "https://www.sinovationventures.com/team" },
+      { label: "Sinovation Ventures - Home (firm founding statement)", url: "https://www.sinovationventures.com/" },
+      { label: "Sinovation Ventures Chinese site - Team", url: "https://www.chuangxin.com/team" }
+    ]
+  },
+"gene-frantz": {
+    name: "Gene Frantz",
+    firm: "CapitalG",
+    firmSlug: "capitalg",
+    title: "General Partner",
+    joinedYear: 2013,
+    investmentFocus: [
+      "Cybersecurity",
+      "Enterprise Software"
+    ],
+    education: [
+      "B.S., UC Berkeley",
+      "MBA, Stanford University"
+    ],
+    previousExperience: [
+      "Vice President, Morgan Stanley",
+      "Technology and telecommunications investments, Oracle Corporation's venture capital group",
+      "Technology and telecommunications investments, TPG Capital"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Expel"
+    ],
+    ipoCount: 4,
+    majorExits: 9,
+    careerTimeline: [
+      { year: 2013, event: "Joined CapitalG at the firm's inception." },
+      { year: 2018, event: "Listed in Radiate Holdings' Form D as a director of the issuer's general partner on behalf of CapitalG." },
+      { year: 2021, event: "Co-authored CapitalG's announcement that it led Orca Security's Series C." },
+      { year: 2021, event: "Co-authored CapitalG's announcement of its Series E investment in Expel." },
+      { year: 2024, event: "Co-authored CapitalG's announcement of its investment in Monzo's Series I." }
+    ],
+    biography: "Gene Frantz is a general partner at CapitalG who joined the firm at its inception in 2013 and invests in cybersecurity and enterprise technology. CapitalG states that his investments at the firm have achieved nine major exits, including four IPOs, and are worth more than $125B, and names CrowdStrike, Zscaler, Freshworks and Looker among them. Before CapitalG he led technology and telecommunications investments for the private equity firm TPG Capital and for Oracle Corporation's venture capital group, and prior to Oracle he served as a vice president at Morgan Stanley. He holds a B.S. from UC Berkeley and an MBA from Stanford University.",
+    notableInvestments: [
+      { name: "CrowdStrike", ticker: "CRWD", stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
+        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Zscaler", ticker: "ZS", stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
+        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Freshworks", ticker: "FRSH", stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://capitalg.com/insights/freshworks", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Looker", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Orca Security", ticker: null, stage: "Series C", year: 2021, yearPrecision: "year", sector: "Cybersecurity", subsector: "agentless cloud security", role: null, evidence: [
+        { url: "https://capitalg.com/insights/ushering-in-the-future-of-cloud-security-our-investment-in-orca-security", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Expel", ticker: null, stage: "Series E", year: 2021, yearPrecision: "year", sector: "Cybersecurity", subsector: null, role: "board", evidence: [
+        { url: "https://capitalg.com/insights/doubling-down-on-expel-still-defending-customers-from-cyber-criminals", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://www.sec.gov/Archives/edgar/data/1684049/000168404922000002/primary_doc.xml", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "Monzo", ticker: null, stage: null, year: 2024, yearPrecision: "year", sector: "Fintech", subsector: "UK digital bank", role: null, evidence: [
+        { url: "https://capitalg.com/insights/monzo-making-money-work-for-everyone", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Astound (Radiate Holdings)", ticker: null, stage: null, year: 2018, yearPrecision: "year", sector: null, subsector: null, role: "board", evidence: [
+        { url: "https://www.sec.gov/Archives/edgar/data/1698114/000169811418000001/primary_doc.xml", type: "regulatory", checked: "2026-08-25" },
+        { url: "https://capitalg.com/team/gene-frantz/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "CapitalG - Gene Frantz", url: "https://capitalg.com/team/gene-frantz/" },
+      { label: "CapitalG - Team", url: "https://capitalg.com/team/" },
+      { label: "CapitalG - Ushering in the future of cloud security: our investment in Orca Security", url: "https://capitalg.com/insights/ushering-in-the-future-of-cloud-security-our-investment-in-orca-security" },
+      { label: "CapitalG - Doubling down on Expel", url: "https://capitalg.com/insights/doubling-down-on-expel-still-defending-customers-from-cyber-criminals" },
+      { label: "CapitalG - Monzo: making money work for everyone", url: "https://capitalg.com/insights/monzo-making-money-work-for-everyone" },
+      { label: "SEC Form D - Expel, Inc. (filed 2022-11-07)", url: "https://www.sec.gov/Archives/edgar/data/1684049/000168404922000002/primary_doc.xml" },
+      { label: "SEC Form D - Radiate Holdings, L.P. (filed 2018-02-07)", url: "https://www.sec.gov/Archives/edgar/data/1698114/000169811418000001/primary_doc.xml" }
+    ]
+  },
+"alex-nichols": {
+    name: "Alex Nichols",
+    firm: "CapitalG",
+    firmSlug: "capitalg",
+    title: "General Partner",
+    joinedYear: 2018,
+    investmentFocus: [],
+    education: [
+      "Economics, The University of Chicago"
+    ],
+    previousExperience: [
+      "Technology investment banker, Goldman Sachs"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Joined CapitalG." },
+      { year: 2021, event: "Co-authored CapitalG's announcement of its investment in Whatnot's Series C." },
+      { year: 2024, event: "Co-authored CapitalG's announcement of its investment in Odoo." },
+      { year: 2025, event: "Co-authored CapitalG's announcement of its investment in Base Power." },
+      { year: 2026, event: "Promoted to General Partner at CapitalG alongside Jill Chase." }
+    ],
+    biography: "Alex Nichols is a general partner at CapitalG who joined the firm in 2018 and was named a general partner in January 2026 alongside Jill Chase. CapitalG says he leads investments across sectors with a focus on companies reinventing large markets through novel economic or distribution models paired with compounding scale advantages, and lists Whatnot, Stripe, Rippling, Waymo, Duolingo and UiPath among the companies he has partnered with. Before CapitalG he was a technology investment banker at Goldman Sachs, and he studied economics at The University of Chicago.",
+    notableInvestments: [
+      { name: "Whatnot", ticker: null, stage: "Series C", year: 2021, yearPrecision: "year", sector: "Ecommerce", subsector: "livestream shopping marketplace", role: null, evidence: [
+        { url: "https://capitalg.com/insights/our-investment-in-whatnot-fusing-ecommerce-with-entertainment-and-social", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Odoo", ticker: null, stage: null, year: 2024, yearPrecision: "year", sector: "Enterprise Software", subsector: "ERP", role: null, evidence: [
+        { url: "https://capitalg.com/insights/odoo-rebundling-application-software", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Base Power", ticker: null, stage: null, year: 2025, yearPrecision: "year", sector: "Climate & Energy", subsector: "grid scaling", role: null, evidence: [
+        { url: "https://capitalg.com/insights/base-power-scaling-the-grid", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Stripe", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: null, role: null, evidence: [
+        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Rippling", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Duolingo", ticker: "DUOL", stage: null, year: null, yearPrecision: null, sector: "EdTech", subsector: null, role: null, evidence: [
+        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "UiPath", ticker: "PATH", stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Waymo", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Mobility", subsector: null, role: null, evidence: [
+        { url: "https://capitalg.com/team/alex-nichols/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "CapitalG - Alex Nichols", url: "https://capitalg.com/team/alex-nichols/" },
+      { label: "CapitalG - Team", url: "https://capitalg.com/team/" },
+      { label: "CapitalG - Celebrating CapitalG's newest general partners: Jill Chase and Alex Nichols", url: "https://capitalg.com/insights/celebrating-capitalgs-newest-general-partners-jill-chase-and-alex-nichols" },
+      { label: "CapitalG - Our investment in Whatnot", url: "https://capitalg.com/insights/our-investment-in-whatnot-fusing-ecommerce-with-entertainment-and-social" },
+      { label: "CapitalG - Odoo: rebundling application software", url: "https://capitalg.com/insights/odoo-rebundling-application-software" },
+      { label: "CapitalG - Base Power: scaling the grid", url: "https://capitalg.com/insights/base-power-scaling-the-grid" }
+    ]
+  },
 "h-dubose-montgomery": {
     name: "H. DuBose Montgomery",
     firm: "Menlo Ventures",
@@ -3491,15 +3867,25 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Gordon Ritter is Founder and General Partner at Emergence Capital, which Emergence's own site says was founded in 2003 by Jason Green, Brian Jacobs and Gordon Ritter. He led Emergence's first major investment in Salesforce and backed Veeva Systems in 2008, when the company had just 25 employees and less than 1 million dollars in revenue; he remains Veeva's chairman. Before Emergence he built companies for over 15 years, including Software As Service, co-founded with Salesforce CEO Marc Benioff, and Whistle Communications, which was acquired by IBM, where he went on to lead the 3 billion dollar Global Small Business division. A Princeton alumnus, he recently joined the university's Board of Trustees and has been a four-time member of the Forbes Midas List.",
     notableInvestments: [
-      { name: "Veeva Systems", ticker: "VEEV", stage: null, year: 2008, yearPrecision: "year", sector: "Enterprise Software", subsector: "Life sciences cloud software", role: "board", evidence: [
-        { url: "https://www.emcap.com/people/gordon-ritter", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://www.veeva.com/about/board-of-directors/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Salesforce", ticker: "CRM", stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "Cloud computing", role: null, evidence: [
-        { url: "https://www.emcap.com/people/gordon-ritter", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://investor.salesforce.com/", type: "press", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Veeva Systems", ticker: "VEEV", stage: null, year: 2008, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "Life sciences cloud software", role: "board",
+      evidence: [{ url: "https://www.emcap.com/people/gordon-ritter", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://www.veeva.com/about/board-of-directors/", type: "press", checked: "2026-08-25" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1393052/000114036124021323/ny20019009x3_def14a.htm", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Salesforce", ticker: "CRM", stage: null, year: null, yearPrecision: null,
+      sector: "Enterprise Software", subsector: "Cloud computing", role: null,
+      evidence: [{ url: "https://www.emcap.com/people/gordon-ritter", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://investor.salesforce.com/", type: "press", checked: "2026-08-25" }] },
+    { name: "Textio", ticker: null, year: 2015, yearPrecision: "year",
+      sector: "Enterprise Software", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1627902/000162790215000002/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Lithium Technologies", ticker: null, year: 2012, yearPrecision: "year",
+      sector: "Enterprise Software", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1386466/000118143112055274/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Doximity", ticker: null, year: 2011, yearPrecision: "year",
+      sector: "Digital Health", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1516513/000151651311000001/primary_doc.xml", type: "regulatory", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "Emergence Capital - Gordon Ritter", url: "https://www.emcap.com/people/gordon-ritter" },
       { label: "Emergence Capital - Team", url: "https://www.emcap.com/team" },
@@ -4327,17 +4713,17 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Laura Connell is a Partner at Atomico, based in London, where her bio states she leads on new investment opportunities at the growth stage across enterprise, consumer and fintech. Atomico's team page lists her within its Growth team and describes her as working with founders from pre-seed through public markets across Europe, the US, Southeast Asia and Latin America. Before Atomico she was at Balderton Capital, at Marcho in global public technology investing, and an investor at Goldman. Her bio describes her moving from an economics degree at Oxford to neuroscience research at Imperial.",
     notableInvestments: [
-      { name: "DeepL", ticker: null, stage: null, year: 2023, yearPrecision: "year", sector: "AI", subsector: "Neural machine translation", role: null, evidence: [
-        { url: "https://atomico.com/team/laura-connell", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://atomico.com/insights/our-investment-in-deepl", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "PhysicsX", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://atomico.com/team/laura-connell", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Corti", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://atomico.com/team/laura-connell", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "DeepL", ticker: null, stage: null, year: 2023, yearPrecision: "year",
+      sector: "AI", subsector: "Neural machine translation", role: null,
+      evidence: [{ url: "https://atomico.com/team/laura-connell", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://atomico.com/insights/our-investment-in-deepl", type: "firm-announcement", checked: "2026-08-25" }] },
+    { name: "PhysicsX", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "AI", subsector: null, role: null,
+      evidence: [{ url: "https://atomico.com/team/laura-connell", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Corti", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "AI", subsector: null, role: null,
+      evidence: [{ url: "https://atomico.com/team/laura-connell", type: "partner-bio", checked: "2026-08-25" }] }
+  ],
     sources: [
       { label: "Atomico - Laura Connell", url: "https://atomico.com/team/laura-connell" },
       { label: "Atomico - Team", url: "https://atomico.com/team" },
@@ -4375,23 +4761,32 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Dennis Kavelman is a Partner at Inovia Capital in Toronto. According to his firm bio he joined Inovia in 2018 to launch Growth Fund I with Chris Arsenault and Patrick Pichette and leads the firm's value creation strategy. Before Inovia he worked at KPMG and at Research In Motion, where he was CFO and COO and helped the company grow to over 14,000 employees before departing in 2010, overseeing financing including an IPO and over 1.8 billion dollars in equity raises, and he later became an angel investor and joined D2L as COO. His firm bio states that he currently sits on the boards of AlayaCare, Symend, WorkJam, Vidyard and BenchSci.",
     notableInvestments: [
-      { name: "AlayaCare", ticker: null, stage: "Series B", year: 2018, yearPrecision: "year", sector: "Digital Health", subsector: "home care software", role: "board", evidence: [
-        { url: "https://www.inovia.vc/active-companies/alayacare/", type: "portfolio-page", checked: "2026-08-25" },
-        { url: "https://www.inovia.vc/team/dennis-kavelman", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "BenchSci", ticker: null, stage: "Series A", year: 2018, yearPrecision: "year", sector: "AI", subsector: "AI for biomedical research", role: "board", evidence: [
-        { url: "https://www.inovia.vc/active-companies/benchsci/", type: "portfolio-page", checked: "2026-08-25" },
-        { url: "https://www.inovia.vc/team/dennis-kavelman", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Symend", ticker: null, stage: "Series B", year: 2021, yearPrecision: "year", sector: "Enterprise Software", subsector: null, role: "board", evidence: [
-        { url: "https://www.inovia.vc/active-companies/symend/", type: "portfolio-page", checked: "2026-08-25" },
-        { url: "https://www.inovia.vc/team/dennis-kavelman", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "WorkJam", ticker: null, stage: "Series C", year: 2020, yearPrecision: "year", sector: "Enterprise Software", subsector: "frontline workforce platform", role: "board", evidence: [
-        { url: "https://www.inovia.vc/active-companies/workjam/", type: "portfolio-page", checked: "2026-08-25" },
-        { url: "https://www.inovia.vc/team/dennis-kavelman", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "AlayaCare", ticker: null, stage: "Series B", year: 2018, yearPrecision: "year",
+      sector: "Digital Health", subsector: "home care software", role: "board",
+      evidence: [{ url: "https://www.inovia.vc/active-companies/alayacare/", type: "portfolio-page", checked: "2026-08-25" },
+                  { url: "https://www.inovia.vc/team/dennis-kavelman", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "BenchSci", ticker: null, stage: "Series A", year: 2018, yearPrecision: "year",
+      sector: "AI", subsector: "AI for biomedical research", role: "board",
+      evidence: [{ url: "https://www.inovia.vc/active-companies/benchsci/", type: "portfolio-page", checked: "2026-08-25" },
+                  { url: "https://www.inovia.vc/team/dennis-kavelman", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Symend", ticker: null, stage: "Series B", year: 2021, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: null, role: "board",
+      evidence: [{ url: "https://www.inovia.vc/active-companies/symend/", type: "portfolio-page", checked: "2026-08-25" },
+                  { url: "https://www.inovia.vc/team/dennis-kavelman", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "WorkJam", ticker: null, stage: "Series C", year: 2020, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "frontline workforce platform", role: "board",
+      evidence: [{ url: "https://www.inovia.vc/active-companies/workjam/", type: "portfolio-page", checked: "2026-08-25" },
+                  { url: "https://www.inovia.vc/team/dennis-kavelman", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Vidyard", ticker: null,
+      sector: "Enterprise Software", role: "board",
+      evidence: [{ url: "https://www.inovia.vc/team/dennis-kavelman", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Guesty", ticker: null,
+      sector: "Real Estate Tech", subsector: "property management",
+      evidence: [{ url: "https://www.inovia.vc/team/dennis-kavelman", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Float", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://www.inovia.vc/team/dennis-kavelman", type: "partner-bio", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "Inovia - Dennis Kavelman", url: "https://www.inovia.vc/team/dennis-kavelman" },
       { label: "Inovia - Team", url: "https://www.inovia.vc/team" },
@@ -4435,19 +4830,57 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Patrick Pichette is a Partner at Inovia Capital, based in London. His firm bio describes him as a financial and operational expert with over 35 years of experience across Google, Twitter, McKinsey, Sprint Canada and Bell Canada, and states that he was Google's CFO from 2008 to 2015, where he oversaw nearly 150 acquisitions including Nest and Motorola and supported the creation of the Alphabet structure. He served on Twitter's board from 2017 to 2022, chaired it in 2020 and 2021, and co-led the sale of the company to Elon Musk in October 2022, so that seat has ended. He joined Inovia in 2018 to launch Growth Fund I and lead the firm's European expansion through its London office, and he holds an M.A. in Philosophy, Politics and Economics from Oxford as a Rhodes Scholar and a B.B.A. from UQAM.",
     notableInvestments: [
-      { name: "Hopper", ticker: null, stage: "Series E", year: 2020, yearPrecision: "year", sector: "Consumer", subsector: "travel booking", role: "board", evidence: [
-        { url: "https://www.inovia.vc/active-companies/hopper/", type: "portfolio-page", checked: "2026-08-25" },
-        { url: "https://www.inovia.vc/team/patrick-pichette", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Wealthsimple", ticker: null, stage: "Series D", year: 2021, yearPrecision: "year", sector: "Fintech", subsector: "mobile-first financial management", role: "board", evidence: [
-        { url: "https://www.inovia.vc/active-companies/wealthsimple/", type: "portfolio-page", checked: "2026-08-25" },
-        { url: "https://betakit.com/wealthsimple-adds-inovia-partner-former-google-exec-patrick-pichette-to-board-of-directors/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Neo4j", ticker: null, stage: "Series F", year: 2021, yearPrecision: "year", sector: "Developer Tools & Infrastructure", subsector: "graph database", role: "board", evidence: [
-        { url: "https://www.inovia.vc/active-companies/neo4j/", type: "portfolio-page", checked: "2026-08-25" },
-        { url: "https://neo4j.com/press-releases/patrick-pichette-joins-neo4j-board-of-directors/", type: "press", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Hopper", ticker: null, stage: "Series E", year: 2020, yearPrecision: "year",
+      sector: "Consumer", subsector: "travel booking", role: "board",
+      evidence: [{ url: "https://www.inovia.vc/active-companies/hopper/", type: "portfolio-page", checked: "2026-08-25" },
+                  { url: "https://www.inovia.vc/team/patrick-pichette", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Wealthsimple", ticker: null, stage: "Series D", year: 2021, yearPrecision: "year",
+      sector: "Fintech", subsector: "mobile-first financial management", role: "board",
+      evidence: [{ url: "https://www.inovia.vc/active-companies/wealthsimple/", type: "portfolio-page", checked: "2026-08-25" },
+                  { url: "https://betakit.com/wealthsimple-adds-inovia-partner-former-google-exec-patrick-pichette-to-board-of-directors/", type: "press", checked: "2026-08-25" },
+                  { url: "https://www.inovia.vc/team/patrick-pichette", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Neo4j", ticker: null, stage: "Series F", year: 2021, yearPrecision: "year",
+      sector: "Developer Tools & Infrastructure", subsector: "graph database", role: "board",
+      evidence: [{ url: "https://www.inovia.vc/active-companies/neo4j/", type: "portfolio-page", checked: "2026-08-25" },
+                  { url: "https://neo4j.com/press-releases/patrick-pichette-joins-neo4j-board-of-directors/", type: "press", checked: "2026-08-25" },
+                  { url: "https://www.inovia.vc/team/patrick-pichette", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Cohere", ticker: null,
+      sector: "AI", role: "board",
+      evidence: [{ url: "https://www.inovia.vc/team/patrick-pichette", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Lightspeed", ticker: null,
+      sector: "Ecommerce", subsector: "commerce platform", role: "board",
+      evidence: [{ url: "https://www.inovia.vc/team/patrick-pichette", type: "partner-bio", checked: "2026-09-01" },
+                  { url: "https://en.wikipedia.org/wiki/Patrick_Pichette", type: "press", checked: "2026-09-01" }] },
+    { name: "Aikido", ticker: null,
+      sector: "Cybersecurity", subsector: "security platform for developers",
+      evidence: [{ url: "https://www.inovia.vc/team/patrick-pichette", type: "partner-bio", checked: "2026-09-01" },
+                  { url: "https://www.inovia.vc/active-companies/aikido/", type: "portfolio-page", checked: "2026-09-01" }] },
+    { name: "Clove", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://www.inovia.vc/team/patrick-pichette", type: "partner-bio", checked: "2026-09-01" },
+                  { url: "https://www.clove.com/", type: "press", checked: "2026-09-01" }] },
+    { name: "Talentir", ticker: null,
+      sector: "Fintech", subsector: "global payouts",
+      evidence: [{ url: "https://www.inovia.vc/team/patrick-pichette", type: "partner-bio", checked: "2026-09-01" },
+                  { url: "https://www.talentir.com/home", type: "press", checked: "2026-09-01" }] },
+    { name: "Zellify", ticker: null,
+      sector: "Enterprise Software", subsector: "web onboarding funnels for mobile apps",
+      evidence: [{ url: "https://www.inovia.vc/team/patrick-pichette", type: "partner-bio", checked: "2026-09-01" },
+                  { url: "https://zellify.app/", type: "press", checked: "2026-09-01" }] },
+    { name: "Twitter", ticker: null,
+      sector: "Consumer", subsector: "social media", role: "board",
+      evidence: [{ url: "https://www.prnewswire.com/news-releases/twitter-appoints-patrick-pichette-to-board-of-directors-300522401.html", type: "deal-announcement", checked: "2026-09-01" },
+                  { url: "https://en.wikipedia.org/wiki/Patrick_Pichette", type: "press", checked: "2026-09-01" }] },
+    { name: "Zwift", ticker: null,
+      sector: "Consumer", subsector: "indoor cycling app", role: "board",
+      evidence: [{ url: "https://en.wikipedia.org/wiki/Patrick_Pichette", type: "press", checked: "2026-09-01" }] },
+    { name: "Bombardier", ticker: null,
+      sector: "Industrial & Manufacturing Technology", role: "board",
+      evidence: [{ url: "https://en.wikipedia.org/wiki/Patrick_Pichette", type: "press", checked: "2026-09-01" }] },
+    { name: "Arctoris", ticker: null,
+      sector: "Biotech", subsector: "drug discovery",
+      evidence: [{ url: "https://en.wikipedia.org/wiki/Patrick_Pichette", type: "press", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "Inovia - Patrick Pichette", url: "https://www.inovia.vc/team/patrick-pichette" },
       { label: "Inovia - Team", url: "https://www.inovia.vc/team" },
@@ -4859,19 +5292,24 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Marcus Behrendt is a Managing Partner at BMW i Ventures, the venture capital fund of the BMW Group, based in Mountain View and Munich. He studied management and engineering at the Technical University of Berlin and spent his early career in car development, working on driver assistance systems such as adaptive cruise control and steer-by-wire before moving from BMW corporate to BMW i Ventures in 2018. His stated focus covers automotive technologies including autonomous driving, control systems, powertrain, electrification and batteries, as well as ASIC development, additive manufacturing, logistics and robotics. He was quoted as Managing Partner in the April 2026 launch of the firm's 300 million dollar Fund III.",
     notableInvestments: [
-      { name: "Recogni", ticker: null, stage: null, year: 2019, yearPrecision: "year", sector: "AI", subsector: "vision-oriented artificial intelligence platform for autonomous vehicles", role: null, evidence: [
-        { url: "https://www.press.bmwgroup.com/usa/article/detail/T0299462EN_US/bmw-i-ventures-announces-investment-in-recogni?language=en_US", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Alitheon", ticker: null, stage: null, year: 2020, yearPrecision: "year", sector: "Deep Tech", subsector: "optical AI software for authenticating and tracing physical items (FeaturePrint)", role: null, evidence: [
-        { url: "https://www.press.bmwgroup.com/usa/article/detail/T0304543EN_US/bmw-i-ventures-announces-investment-in-alitheon?language=en_US", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "DeepDrive", ticker: null, stage: "Series A", year: 2023, yearPrecision: "year", sector: "Mobility", subsector: "radial flux dual-rotor electric motor architecture", role: null, evidence: [
-        { url: "https://www.press.bmwgroup.com/usa/article/detail/T0411518EN_US?language=en_US", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Ascon Systems", ticker: null, stage: null, year: 2023, yearPrecision: "year", sector: "Industrial & Manufacturing Technology", subsector: "digital twins and low-code software for shopfloor management", role: null, evidence: [
-        { url: "https://www.press.bmwgroup.com/usa/article/detail/T0438340EN_US/bmw-i-ventures-announces-investment-in-german-software-company-ascon-systems?language=en_US", type: "firm-announcement", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Recogni", ticker: null, stage: null, year: 2019, yearPrecision: "year",
+      sector: "AI", subsector: "vision-oriented artificial intelligence platform for autonomous vehicles", role: null,
+      evidence: [{ url: "https://www.press.bmwgroup.com/usa/article/detail/T0299462EN_US/bmw-i-ventures-announces-investment-in-recogni?language=en_US", type: "firm-announcement", checked: "2026-08-25" }] },
+    { name: "Alitheon", ticker: null, stage: "Series A", year: 2020, yearPrecision: "year",
+      sector: "Deep Tech", subsector: "optical AI software for authenticating and tracing physical items (FeaturePrint)", role: null,
+      evidence: [{ url: "https://www.press.bmwgroup.com/usa/article/detail/T0304543EN_US/bmw-i-ventures-announces-investment-in-alitheon?language=en_US", type: "firm-announcement", checked: "2026-08-25" },
+                  { url: "https://www.press.bmwgroup.com/deutschland/article/detail/T0403869DE/schluss-mit-produktfaelschungen:-bmw-i-ventures-fuehrt-10-millionen-us-dollar-investment-in-optische-ki-technologie-von-alitheon-an?language=de", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "DeepDrive", ticker: null, stage: "Series A", year: 2023, yearPrecision: "year",
+      sector: "Mobility", subsector: "radial flux dual-rotor electric motor architecture", role: null,
+      evidence: [{ url: "https://www.press.bmwgroup.com/usa/article/detail/T0411518EN_US?language=en_US", type: "firm-announcement", checked: "2026-08-25" },
+                  { url: "https://www.press.bmwgroup.com/usa/article/detail/T0411518EN_US/bmw-i-ventures-co-leads-investment-in-new-electric-motor-technology:-deepdrive?language=en_US", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "Ascon Systems", ticker: null, stage: null, year: 2023, yearPrecision: "year",
+      sector: "Industrial & Manufacturing Technology", subsector: "digital twins and low-code software for shopfloor management", role: null,
+      evidence: [{ url: "https://www.press.bmwgroup.com/usa/article/detail/T0438340EN_US/bmw-i-ventures-announces-investment-in-german-software-company-ascon-systems?language=en_US", type: "firm-announcement", checked: "2026-08-25" }] },
+    { name: "Rapid Liquid Print", ticker: null, stage: "Seed", year: 2021, yearPrecision: "year",
+      sector: "Industrial & Manufacturing Technology", subsector: "3D printing of elastomeric structures",
+      evidence: [{ url: "https://www.press.bmwgroup.com/usa/article/detail/T0362398EN_US/bmw-i-ventures-leads-the-seed-financing-round-of-3d-printing-company-rapid-liquid-print?language=en_US", type: "deal-announcement", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "BMW i Ventures - Team", url: "https://www.bmwiventures.com/team" },
       { label: "BMW i Ventures - Spotlight: featured team member Marcus Behrendt", url: "https://www.bmwiventures.com/news/spotlight-marcus-behrendt" },
@@ -4912,20 +5350,29 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Kasper Sage is a Managing Partner at BMW i Ventures, the venture capital fund of the BMW Group. According to the firm's own profile of him, his career combined the German startup scene with management consulting in Silicon Valley and business development and partnership roles at Deutsche Telekom before he moved into corporate venture capital. He states that his investment focus covers automotive, manufacturing, supply chain and sustainability, with particular interest in autonomous driving, robotics, supply chain and big data. He was named on BMW i Ventures deals including Kodiak Robotics, actnano, Cyclic Materials and Formant, and was quoted as Managing Partner in the April 2026 launch of the firm's Fund III.",
     notableInvestments: [
-      { name: "Kodiak Robotics", ticker: "KDK", stage: null, year: 2021, yearPrecision: "year", sector: "Mobility", subsector: "self-driving long-haul trucking technology", role: null, evidence: [
-        { url: "https://www.press.bmwgroup.com/usa/article/detail/T0336376EN_US/bmw-i-ventures-announces-an-investment-in-kodiak-robotics?language=en_US", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://www.globenewswire.com/news-release/2025/09/24/3155836/0/en/Kodiak-Completes-Business-Combination-with-Ares-Acquisition-Corporation-II-to-Accelerate-Journey-as-a-Leading-AI-Powered-Autonomous-Vehicle-Technology-Company.html", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "actnano", ticker: null, stage: "Series B", year: 2021, yearPrecision: "year", sector: "Hardware", subsector: "nanocoatings protecting electronics in automotive and consumer devices", role: null, evidence: [
-        { url: "https://www.press.bmwgroup.com/usa/article/detail/T0362043EN_US/bmw-i-ventures-leads-series-b-financing-round-of-nanocoating-technology-company-actnano?language=en_US", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Cyclic Materials", ticker: null, stage: "Series A", year: 2023, yearPrecision: "year", sector: "Climate & Energy", subsector: "recycling of rare earth elements for a circular supply chain", role: null, evidence: [
-        { url: "https://www.press.bmwgroup.com/usa/article/detail/T0414218EN_US/bmw-i-ventures-co-leads-investment-in-circular-supply-chain-company-cyclic-materials?language=en_US", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Formant", ticker: null, stage: null, year: 2023, yearPrecision: "year", sector: "Robotics", subsector: "robotics data and operations platform", role: null, evidence: [
-        { url: "https://www.press.bmwgroup.com/usa/article/detail/T0437645EN_US/bmw-i-ventures-leads-investment-in-robotics-data-and-operations-platform-formant?language=en_US", type: "firm-announcement", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Kodiak Robotics", ticker: "KDK", stage: null, year: 2021, yearPrecision: "year",
+      sector: "Mobility", subsector: "self-driving long-haul trucking technology", role: null,
+      evidence: [{ url: "https://www.press.bmwgroup.com/usa/article/detail/T0336376EN_US/bmw-i-ventures-announces-an-investment-in-kodiak-robotics?language=en_US", type: "firm-announcement", checked: "2026-08-25" },
+                  { url: "https://www.globenewswire.com/news-release/2025/09/24/3155836/0/en/Kodiak-Completes-Business-Combination-with-Ares-Acquisition-Corporation-II-to-Accelerate-Journey-as-a-Leading-AI-Powered-Autonomous-Vehicle-Technology-Company.html", type: "press", checked: "2026-08-25" }] },
+    { name: "actnano", ticker: null, stage: "Series B", year: 2021, yearPrecision: "year",
+      sector: "Hardware", subsector: "nanocoatings protecting electronics in automotive and consumer devices", role: null,
+      evidence: [{ url: "https://www.press.bmwgroup.com/usa/article/detail/T0362043EN_US/bmw-i-ventures-leads-series-b-financing-round-of-nanocoating-technology-company-actnano?language=en_US", type: "firm-announcement", checked: "2026-08-25" }] },
+    { name: "Cyclic Materials", ticker: null, stage: "Series A", year: 2023, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "recycling of rare earth elements for a circular supply chain", role: null,
+      evidence: [{ url: "https://www.press.bmwgroup.com/usa/article/detail/T0414218EN_US/bmw-i-ventures-co-leads-investment-in-circular-supply-chain-company-cyclic-materials?language=en_US", type: "firm-announcement", checked: "2026-08-25" }] },
+    { name: "Formant", ticker: null, stage: null, year: 2023, yearPrecision: "year",
+      sector: "Robotics", subsector: "robotics data and operations platform", role: null,
+      evidence: [{ url: "https://www.press.bmwgroup.com/usa/article/detail/T0437645EN_US/bmw-i-ventures-leads-investment-in-robotics-data-and-operations-platform-formant?language=en_US", type: "firm-announcement", checked: "2026-08-25" }] },
+    { name: "Skylo Technologies", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "Mobility", subsector: "direct-to-device satellite connectivity for the automotive industry",
+      evidence: [{ url: "https://www.press.bmwgroup.com/usa/article/detail/T0439731EN_US/bmw-i-ventures-invests-in-skylo-technologies?language=en_US", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "Verusen", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year",
+      sector: "Industrial & Manufacturing Technology", subsector: "inventory optimization software for connected supply chains",
+      evidence: [{ url: "https://www.press.bmwgroup.com/usa/article/detail/T0325154EN_US/bmw-i-ventures-invests-in-inventory-optimization-software-company-verusen-to-fuel-intelligent-connected-supply-chains?language=en_US", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "VIA Science", ticker: null, stage: "Series B", year: 2025, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "data protection for enterprise security",
+      evidence: [{ url: "https://www.press.bmwgroup.com/usa/article/detail/T0449030EN_US/bmw-i-ventures-invests-in-via-science-to-bring-next-generation-data-protection-to-enterprise-security?language=en_US", type: "deal-announcement", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "BMW i Ventures - Team", url: "https://www.bmwiventures.com/team" },
       { label: "BMW i Ventures - Spotlight: featured team member Kasper Sage", url: "https://www.bmwiventures.com/news/spotlight-kasper-sage" },
@@ -5786,14 +6233,14 @@ Object.assign(partnerProfiles, {
     ],
     biography: "TJ Nahigian is a co-founder and Managing Partner of Base10 Partners, the San Francisco venture firm he started with Adeyemi Ajao and whose $137 million debut fund closed in 2018. Before Base10 he spent seven years investing at Summit Partners, Accel and Coatue Management, and in 2014 co-founded Jobr, a mobile job platform acquired by Monster, where he became VP of product and head of mobile. Base10 invests in companies automating sectors of what it calls the Real Economy.",
     notableInvestments: [
-      { name: "Chili Piper", ticker: null, stage: "Series A", year: 2020, yearPrecision: "year", sector: "Enterprise Software", subsector: null, role: "board", evidence: [
-        { url: "https://talent4boards.com/chili-piper-announces-tj-nahigian-to-its-board-along-with-raising-18m-series-a-funding-led-by-base10-partners/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Okendo", ticker: null, stage: "Series A", year: 2022, yearPrecision: "year", sector: "Ecommerce", subsector: "customer marketing for Shopify merchants", role: null, evidence: [
-        { url: "https://www.prweb.com/releases/okendo-raises-26m-series-a-investment-led-by-base10-partners-882520544.html", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://okendo.io/resources/blog/okendo-raises-26m-series-a-investment-led-by-base10-partners/", type: "deal-announcement", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Chili Piper", ticker: null, stage: "Series A", year: 2020, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "sales scheduling automation", role: "board",
+      evidence: [{ url: "https://talent4boards.com/chili-piper-announces-tj-nahigian-to-its-board-along-with-raising-18m-series-a-funding-led-by-base10-partners/", type: "press", checked: "2026-08-25" }] },
+    { name: "Okendo", ticker: null, stage: "Series A", year: 2022, yearPrecision: "year",
+      sector: "Ecommerce", subsector: "customer marketing for Shopify merchants", role: null,
+      evidence: [{ url: "https://www.prweb.com/releases/okendo-raises-26m-series-a-investment-led-by-base10-partners-882520544.html", type: "deal-announcement", checked: "2026-08-25" },
+                  { url: "https://okendo.io/resources/blog/okendo-raises-26m-series-a-investment-led-by-base10-partners/", type: "deal-announcement", checked: "2026-08-25" }] }
+  ],
     sources: [
       { label: "Base10 Partners - Team (archive.base10.vc)", url: "https://archive.base10.vc/team/" },
       { label: "Base10 Partners - TJ Nahigian", url: "https://base10.vc/team/tj-nahigian/" },
@@ -6436,16 +6883,27 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Patrick Huke leads Porsche Ventures in Europe, the venture arm of Porsche AG that has been active since 2016 and invests in industrial technology, energy transition and mobility from offices in Berlin, Palo Alto, Frankfurt and Los Angeles. Porsche Ventures does not publish an individual biography for him, so the record of his work comes from financing announcements that name him. He was quoted in Porsche's own newsroom on the firm's 2021 shareholding in 1KOMMA5 Grad, in the 2021 announcement of the &Charge Seed+ round, and in the 2024 Series A of graphene chip company Black Semiconductor, which Porsche Ventures co-led with Project A.",
     notableInvestments: [
-      { name: "1KOMMA5°", ticker: null, stage: null, year: 2021, yearPrecision: "year", sector: "Climate & Energy", subsector: "sustainable generation and storage of energy for carbon-neutral homes", role: null, evidence: [
-        { url: "https://newsroom.porsche.com/en/2021/company/porsche-ventures-investment-energy-start-up-1komma5degree-26652.html", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "&Charge", ticker: null, stage: null, year: 2021, yearPrecision: "year", sector: "Mobility", subsector: "loyalty and engagement platform for EV charging", role: null, evidence: [
-        { url: "https://paaomasijoittajat.fi/en/ajankohtaista/news/14277/e-mobility-startup-charge-secures-investment-from-helen-ventures-and-porsche-ventures-to-accelerate-european-expansion/", type: "deal-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Black Semiconductor", ticker: null, stage: "Series A", year: 2024, yearPrecision: "year", sector: "Deep Tech", subsector: "graphene-based photonics integrated into conventional chips", role: null, evidence: [
-        { url: "https://techcrunch.com/2024/06/12/germanys-black-semiconductor-raises-273m-for-graphene-based-chip-tech/", type: "press", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "1KOMMA5°", ticker: null, stage: null, year: 2021, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "sustainable generation and storage of energy for carbon-neutral homes", role: null,
+      evidence: [{ url: "https://newsroom.porsche.com/en/2021/company/porsche-ventures-investment-energy-start-up-1komma5degree-26652.html", type: "firm-announcement", checked: "2026-08-25" },
+                  { url: "https://newsroom.porsche.com/en_US/2021/company/porsche-ventures-investment-energy-start-up-1komma5degree-26711.html", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "&Charge", ticker: null, stage: "Seed", year: 2021, yearPrecision: "year",
+      sector: "Mobility", subsector: "loyalty and engagement platform for EV charging", role: null,
+      evidence: [{ url: "https://paaomasijoittajat.fi/en/ajankohtaista/news/14277/e-mobility-startup-charge-secures-investment-from-helen-ventures-and-porsche-ventures-to-accelerate-european-expansion/", type: "deal-announcement", checked: "2026-08-25" }] },
+    { name: "Black Semiconductor", ticker: null, stage: "Series A", year: 2024, yearPrecision: "year",
+      sector: "Deep Tech", subsector: "graphene-based photonics integrated into conventional chips", role: null,
+      evidence: [{ url: "https://techcrunch.com/2024/06/12/germanys-black-semiconductor-raises-273m-for-graphene-based-chip-tech/", type: "press", checked: "2026-08-25" },
+                  { url: "https://blacksemi.com/2024/10/18/we-secured-eur-254-4-million-in-funding/", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "Workerbase", ticker: null, stage: "Series A", year: 2022, yearPrecision: "year",
+      sector: "Industrial & Manufacturing Technology", subsector: "manufacturing software digitizing manual production processes",
+      evidence: [{ url: "https://workerbase.com/blog/press-release-workerbase-closes-10-mio-series-a-growth-round/", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "Sharpist", ticker: null, stage: "Series A", year: 2022, yearPrecision: "year",
+      sector: "EdTech", subsector: "digital coaching for employees",
+      evidence: [{ url: "https://www.sharpist.com/press/sharpist-raises-23-million-series-a-funding-round", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "Laka", ticker: null, stage: "Series A", year: 2025, yearPrecision: "year",
+      sector: "Fintech", subsector: "digital insurance for cycling and sustainable mobility",
+      evidence: [{ url: "https://cyclingindustry.news/laka-receives-investment-funding-from-porsche-ventures/", type: "deal-announcement", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "Porsche Ventures - official site", url: "https://porsche.ventures/" },
       { label: "Porsche Newsroom - Porsche gets on board with energy start-up 1KOMMA5 Grad", url: "https://newsroom.porsche.com/en/2021/company/porsche-ventures-investment-energy-start-up-1komma5degree-26652.html" },
@@ -7067,13 +7525,19 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Dotun Olowoporoku is Managing Partner at Ventures Platform, the pan-African venture capital firm, which he joined as a Venture Partner in May 2022. Before Ventures Platform he was a Principal at Novastar Ventures and Chief Commercial Officer at TeamApt, now Moniepoint, where he served as a board observer from 2021 to 2022, and he was an investor and board observer at Turaco from 2020 to 2021. He holds a PhD in environmental management from the University of the West of England and has consulted for institutions including The World Bank Group as a mentor on XL Africa. He is the executive producer and host of the Building the Future podcast on African entrepreneurship and investment.",
     notableInvestments: [
-      { name: "Moniepoint", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "financial technology for SMEs and consumers", role: null, evidence: [
-        { url: "https://venturesplatform.com/team", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Turaco", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://venturesplatform.com/team", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Moniepoint", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Fintech", subsector: "financial technology for SMEs and consumers", role: "board",
+      evidence: [{ url: "https://venturesplatform.com/team", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Turaco", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Fintech", subsector: "insurance", role: "board",
+      evidence: [{ url: "https://venturesplatform.com/team", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Credable", ticker: null, year: 2023, yearPrecision: "year",
+      sector: "Fintech", subsector: "digital banking infrastructure",
+      evidence: [{ url: "https://techcrunch.com/2023/03/20/credable-a-digital-banking-infra-startup-that-wants-to-build-unit-for-emerging-markets-gets-funding/", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "Termii", ticker: null,
+      sector: "Enterprise Software", subsector: "A2P messaging",
+      evidence: [{ url: "https://blog.termii.com/termii-raises-3.65m-funding-to-fuel-customer-engagement-innovation-in-africa", type: "deal-announcement", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "Ventures Platform - Our Team (Dotun Olowoporoku)", url: "https://venturesplatform.com/team" },
       { label: "BusinessDay - Ventures Platform appoints Dotun Olowoporoku as partner", url: "https://businessday.ng/news/article/ventures-platform-appoints-dotun-olowoporoku-as-partner-to-boost-investor-relations-others/" },
@@ -7109,19 +7573,20 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Steve Beck is a co-founder and Managing Partner of Novastar Ventures, which invests in African entrepreneurs from hubs in Nairobi, London and Lagos. He began investing in African start-ups in 2009 through a private investor circle he founded for seed-stage investments in East Africa; those investments, among them NewGlobe and Sanergy, formed the proof-of-concept portfolio for Novastar's first fund in 2014. Before venture capital he spent 18 years in consulting, leading the European, African and Asian businesses of two global consulting firms, and in 2002 helped set up and lead Geneva Global, a philanthropic investment bank. He graduated from Stanford University and earned a Ph.D. from the London School of Economics.",
     notableInvestments: [
-      { name: "Sistema.bio", ticker: null, stage: null, year: 2024, yearPrecision: "year", sector: "Climate & Energy", subsector: "biogas systems turning farm waste into renewable energy and fertiliser", role: null, evidence: [
-        { url: "https://sistema.bio/blog/novastar-ventures-backs-sistemabio-africa/", type: "deal-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Komaza", ticker: null, stage: "Series B", year: 2020, yearPrecision: "year", sector: "Agtech", subsector: "tech-enabled sustainable forestry", role: null, evidence: [
-        { url: "https://www.africaglobalfunds.com/news/private-equity/deals/novastar-ventures-and-lps-lead-28m-series-b-for-kenyan-sustainable-forestry-company-komaza/", type: "deal-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "NewGlobe", ticker: null, stage: "Seed", year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://www.africatechsummit.com/speakers/steve-beck/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Sanergy", ticker: null, stage: "Seed", year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://www.africatechsummit.com/speakers/steve-beck/", type: "press", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Sistema.bio", ticker: null, stage: null, year: 2024, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "biogas systems turning farm waste into renewable energy and fertiliser", role: null,
+      evidence: [{ url: "https://sistema.bio/blog/novastar-ventures-backs-sistemabio-africa/", type: "deal-announcement", checked: "2026-08-25" }] },
+    { name: "Komaza", ticker: null, stage: "Series B", year: 2020, yearPrecision: "year",
+      sector: "Agtech", subsector: "tech-enabled sustainable forestry", role: null,
+      evidence: [{ url: "https://www.africaglobalfunds.com/news/private-equity/deals/novastar-ventures-and-lps-lead-28m-series-b-for-kenyan-sustainable-forestry-company-komaza/", type: "deal-announcement", checked: "2026-08-25" },
+                  { url: "https://www.businesswire.com/news/home/20200714005398/en/Komaza-Raises-28M-Series-B-to-Capture-Africa%E2%80%99s-30B-Wood-Deficit-While-Restoring-Degraded-Lands", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "NewGlobe", ticker: null, stage: "Seed", year: null, yearPrecision: null,
+      sector: "EdTech", subsector: null, role: null,
+      evidence: [{ url: "https://www.africatechsummit.com/speakers/steve-beck/", type: "press", checked: "2026-08-25" }] },
+    { name: "Sanergy", ticker: null, stage: "Seed", year: null, yearPrecision: null,
+      sector: "Climate & Energy", subsector: null, role: null,
+      evidence: [{ url: "https://www.africatechsummit.com/speakers/steve-beck/", type: "press", checked: "2026-08-25" }] }
+  ],
     sources: [
       { label: "Africa Tech Summit - Steve Beck (speaker biography)", url: "https://www.africatechsummit.com/speakers/steve-beck/" },
       { label: "Praxis - Steve Beck, Novastar Ventures", url: "https://www.praxis.co/people/steve-beck" },
@@ -7209,24 +7674,30 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Mar Hershenson is Co-Founder and Founding Managing Partner of Pear VC, which she formed with Pejman Nozad as Pejman Mar Ventures in August 2013 and which was renamed Pear VC in 2016. Her firm bio lists her focus as AI, B2B and Consumer, and notes she holds 14 patents and more than 13 years of founder experience across three startups in mobile and ecommerce, enterprise software and semiconductors, including Barcelona Design, Sabio Labs and Revel Touch, and that she was VP Product at Magma Design Automation. She holds a PhD in Electrical Engineering from Stanford University and teaches Lean Launchpad there. Forbes reported that she and Nozad invested $250,000 into DoorDash's seed round in 2013 and continued to back the company through its Series A and B.",
     notableInvestments: [
-      { name: "DoorDash", ticker: "DASH", stage: "Seed", year: 2013, yearPrecision: "year", sector: "Consumer", subsector: "on-demand local delivery", role: null, evidence: [
-        { url: "https://pear.vc/team/mar-hershenson/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://www.forbes.com/sites/alexkonrad/2020/12/11/their-venture-fund-was-a-sign-of-a-bubble-then-they-turned-19-million-in-doordash-into-440-million/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Vanta", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
-        { url: "https://pear.vc/team/mar-hershenson/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Gusto", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
-        { url: "https://pear.vc/team/mar-hershenson/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Aurora Solar", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Climate & Energy", subsector: null, role: null, evidence: [
-        { url: "https://pear.vc/team/mar-hershenson/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://pear.vc/our-story/", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Nobell Foods", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Foodtech", subsector: null, role: null, evidence: [
-        { url: "https://pear.vc/team/mar-hershenson/", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "DoorDash", ticker: "DASH", stage: "Seed", year: 2013, yearPrecision: "year",
+      sector: "Consumer", subsector: "on-demand local delivery", role: null,
+      evidence: [{ url: "https://pear.vc/team/mar-hershenson/", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://www.forbes.com/sites/alexkonrad/2020/12/11/their-venture-fund-was-a-sign-of-a-bubble-then-they-turned-19-million-in-doordash-into-440-million/", type: "press", checked: "2026-08-25" }] },
+    { name: "Vanta", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Cybersecurity", subsector: null, role: null,
+      evidence: [{ url: "https://pear.vc/team/mar-hershenson/", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Gusto", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Enterprise Software", subsector: null, role: null,
+      evidence: [{ url: "https://pear.vc/team/mar-hershenson/", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Aurora Solar", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Climate & Energy", subsector: null, role: null,
+      evidence: [{ url: "https://pear.vc/team/mar-hershenson/", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://pear.vc/our-story/", type: "firm-announcement", checked: "2026-08-25" }] },
+    { name: "Nobell Foods", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Foodtech", subsector: null, role: null,
+      evidence: [{ url: "https://pear.vc/team/mar-hershenson/", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Branch", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://pear.vc/team/mar-hershenson/", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Kale Card", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://pear.vc/team/mar-hershenson/", type: "partner-bio", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "Pear VC - Mar Hershenson", url: "https://pear.vc/team/mar-hershenson/" },
       { label: "Pear VC - Our Story", url: "https://pear.vc/our-story/" },
@@ -7269,17 +7740,23 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Florian Heinemann co-founded the Berlin-based venture fund Project A in 2012 and is listed by Forbes as a Founding Partner of the firm. He previously co-founded the online bookstore JustBooks, which Amazon later acquired, and joined Rocket Internet in 2007 as a Managing Director, where he helped build the fashion outlet Zalando and Global Fashion Group. Forbes states he is best known for his investments in the German stock broker Trade Republic, the drone maker Quantum Systems and the remittance platform Zepz, and that he sits on the boards of German companies including Koerber, Fiege and Holtzbrinck. He was appointed to the supervisory board of the listed travel company HomeToGo at its May 2025 annual general meeting, where he was described as Founding and General Partner of Project A Ventures.",
     notableInvestments: [
-      { name: "Trade Republic", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "stock broker", role: "board", evidence: [
-        { url: "https://www.forbes.com/profile/florian-heinemann/", type: "press", checked: "2026-08-25" },
-        { url: "https://sifted.eu/articles/people-with-power-trade-republic", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Quantum Systems", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Defense Tech", subsector: "drone maker", role: null, evidence: [
-        { url: "https://www.forbes.com/profile/florian-heinemann/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Zepz", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "remittance platform", role: null, evidence: [
-        { url: "https://www.forbes.com/profile/florian-heinemann/", type: "press", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Trade Republic", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Fintech", subsector: "stock broker", role: "board",
+      evidence: [{ url: "https://www.forbes.com/profile/florian-heinemann/", type: "press", checked: "2026-08-25" },
+                  { url: "https://sifted.eu/articles/people-with-power-trade-republic", type: "press", checked: "2026-08-25" }] },
+    { name: "Quantum Systems", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Defense Tech", subsector: "drone maker", role: null,
+      evidence: [{ url: "https://www.forbes.com/profile/florian-heinemann/", type: "press", checked: "2026-08-25" }] },
+    { name: "Zepz", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Fintech", subsector: "remittance platform", role: null,
+      evidence: [{ url: "https://www.forbes.com/profile/florian-heinemann/", type: "press", checked: "2026-08-25" }] },
+    { name: "Mindfuel", ticker: null, stage: "Seed", year: 2024, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "data product management", role: "board",
+      evidence: [{ url: "https://www.eu-startups.com/2024/03/munich-based-mindfuel-closes-e3-75-million-to-measure-and-monetize-the-success-of-data-investments-across-europe/", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "yoummday", ticker: null, year: 2022, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "work@home operating system",
+      evidence: [{ url: "https://www.ypog.law/en/press/ypog-advises-project-a-ventures-on-its-investment-in-yoummday", type: "deal-announcement", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "Forbes - Florian Heinemann profile (Midas List Europe 2025)", url: "https://www.forbes.com/profile/florian-heinemann/" },
       { label: "Sifted - The people with power at Trade Republic", url: "https://sifted.eu/articles/people-with-power-trade-republic" },
@@ -7382,21 +7859,37 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Omobola Johnson is Senior Partner at TLcom Capital, which she joined in 2015, where she leads fundraising, deal flow and HR and supports overall fund management. She served as Nigeria's first Minister of Communication Technology from 2011 to 2015, launching the National Broadband Plan and supporting the country's startup ecosystem through early government venture capital participation and incubator networks. Before public office she spent more than 25 years in management consulting at Arthur Andersen and Accenture, was admitted to the Accenture partnership in 2000 and served five years as Country Managing Director of Accenture Nigeria. She holds a Doctor of Business Administration from Cranfield, a master's in digital electronics from King's College London and a bachelor's in electrical and electronic engineering from the University of Manchester, and she co-founded WIMBIZ.",
     notableInvestments: [
-      { name: "Pula", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year", sector: "Fintech", subsector: "digital and agricultural insurance", role: "board", evidence: [
-        { url: "https://digestafrica.com/press-release-pula-6mn-series-a-tlcom", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://www.africaprivateequitynews.com/p/tlcom-capital-leads-6m-fundraise-for-agri-insurance-platform", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://techcrunch.com/2021/01/25/kenyan-insurtech-startup-pula-raises-6m-series-a-led-by-tlcom-capital/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "FairMoney", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: "board", evidence: [
-        { url: "https://www.tlcomcapital.com/team/omobola-johnson/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Educatly", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: "board", evidence: [
-        { url: "https://www.tlcomcapital.com/team/omobola-johnson/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Flextock", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: "board", evidence: [
-        { url: "https://www.tlcomcapital.com/team/omobola-johnson/", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Pula", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year",
+      sector: "Fintech", subsector: "digital and agricultural insurance", role: "board",
+      evidence: [{ url: "https://digestafrica.com/press-release-pula-6mn-series-a-tlcom", type: "deal-announcement", checked: "2026-08-25" },
+                  { url: "https://www.africaprivateequitynews.com/p/tlcom-capital-leads-6m-fundraise-for-agri-insurance-platform", type: "deal-announcement", checked: "2026-08-25" },
+                  { url: "https://techcrunch.com/2021/01/25/kenyan-insurtech-startup-pula-raises-6m-series-a-led-by-tlcom-capital/", type: "press", checked: "2026-08-25" },
+                  { url: "https://www.tlcomcapital.com/team/omobola-johnson", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "FairMoney", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Fintech", subsector: "digital consumer banking", role: "board",
+      evidence: [{ url: "https://www.tlcomcapital.com/team/omobola-johnson/", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://www.tlcomcapital.com/team/omobola-johnson", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Educatly", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "EdTech", subsector: null, role: "board",
+      evidence: [{ url: "https://www.tlcomcapital.com/team/omobola-johnson/", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://www.tlcomcapital.com/team/omobola-johnson", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Flextock", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Logistics", subsector: "e-commerce fulfilment in the MENA region", role: "board",
+      evidence: [{ url: "https://www.tlcomcapital.com/team/omobola-johnson/", type: "partner-bio", checked: "2026-08-25" },
+                  { url: "https://www.tlcomcapital.com/team/omobola-johnson", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "Custodian Investments", ticker: null,
+      sector: "Fintech", subsector: "insurance", role: "board",
+      evidence: [{ url: "https://www.tlcomcapital.com/team/omobola-johnson", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "littlefish", ticker: null, stage: "Series A",
+      sector: "Fintech", subsector: "merchant operating system for banks",
+      evidence: [{ url: "https://www.tlcomcapital.com/perspectives/why-we-invested-how-littlefish-is-empowering-banks-and-transforming-merchant-services-in-africa", type: "firm-announcement", checked: "2026-09-01" }] },
+    { name: "Cassava Technologies", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://www.tlcomcapital.com/team/omobola-johnson", type: "partner-bio", checked: "2026-09-01" }] },
+    { name: "MTN Nigeria", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://www.tlcomcapital.com/team/omobola-johnson", type: "partner-bio", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "TLcom Capital - Omobola Johnson, Senior Partner", url: "https://www.tlcomcapital.com/team/omobola-johnson/" },
       { label: "MTN Nigeria - Board of Directors, Omobola Johnson", url: "https://www.mtn.ng/boardofdirectors/omobola-johnson/" },
@@ -7483,19 +7976,31 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Yves Sisteron is a Founding Partner and Managing Partner of Upfront Ventures, the Los Angeles firm that operated as GRP Partners until it rebranded in 2013. Ulta's 2011 proxy statement described him as a Managing Partner and Co-Founder of GRP Partners since 2000, noting that he had previously been a managing director at Donaldson Lufkin & Jenrette where he oversaw Global Retail Partners, which he co-founded in 1996, and that from 1989 to 1996 he managed U.S. investments for Fourcar B.V., a Carrefour division. He served on Ulta's board from 1993 until 2011 and on Envestnet's board until May 2016, and the same proxy listed him as a director of HealthDataInsights, Kyriba, Qualys and Actimagine. A May 2026 SEC Form D names him as a managing member of the general partner of Commodity Capital Fund II, LP.",
     notableInvestments: [
-      { name: "Ulta Beauty", ticker: "ULTA", stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "beauty retailer", role: "board", evidence: [
-        { url: "https://www.sec.gov/Archives/edgar/data/1403568/000095012311042670/c64286def14a.htm", type: "regulatory", checked: "2026-08-25" }
-      ] },
-      { name: "Envestnet", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "wealth management technology", role: "board", evidence: [
-        { url: "https://www.sec.gov/Archives/edgar/data/1337619/000155837017003170/def14a.htm", type: "regulatory", checked: "2026-08-25" }
-      ] },
-      { name: "Qualys", ticker: "QLYS", stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: "board", evidence: [
-        { url: "https://www.sec.gov/Archives/edgar/data/1403568/000095012311042670/c64286def14a.htm", type: "regulatory", checked: "2026-08-25" }
-      ] },
-      { name: "Kyriba", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "treasury management software", role: "board", evidence: [
-        { url: "https://www.sec.gov/Archives/edgar/data/1403568/000095012311042670/c64286def14a.htm", type: "regulatory", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Ulta Beauty", ticker: "ULTA", stage: null, year: null, yearPrecision: null,
+      sector: "Consumer", subsector: "beauty retailer", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1403568/000095012311042670/c64286def14a.htm", type: "regulatory", checked: "2026-08-25" }] },
+    { name: "Envestnet", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Fintech", subsector: "wealth management technology", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1337619/000155837017003170/def14a.htm", type: "regulatory", checked: "2026-08-25" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1337619/000104746914003718/a2219455zdef14a.htm", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Qualys", ticker: "QLYS", stage: null, year: null, yearPrecision: null,
+      sector: "Cybersecurity", subsector: null, role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1403568/000095012311042670/c64286def14a.htm", type: "regulatory", checked: "2026-08-25" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1403568/000095012310046076/c57300def14a.htm", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Kyriba", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Fintech", subsector: "treasury management software", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1403568/000095012311042670/c64286def14a.htm", type: "regulatory", checked: "2026-08-25" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1403568/000095012310046076/c57300def14a.htm", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Ulta", ticker: null,
+      sector: "Consumer", subsector: "beauty retail", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1403568/000095012310046076/c57300def14a.htm", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "HealthDataInsights", ticker: null,
+      sector: "Healthcare", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1403568/000095012310046076/c57300def14a.htm", type: "regulatory", checked: "2026-09-01" }] },
+    { name: "Actimagine", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1403568/000095012310046076/c57300def14a.htm", type: "regulatory", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "SEC - Ulta Salon, Cosmetics & Fragrance DEF 14A (2011)", url: "https://www.sec.gov/Archives/edgar/data/1403568/000095012311042670/c64286def14a.htm" },
       { label: "SEC - Envestnet, Inc. DEF 14A (2017)", url: "https://www.sec.gov/Archives/edgar/data/1337619/000155837017003170/def14a.htm" },
@@ -7665,13 +8170,20 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Ofer Schreiber is a Senior Partner at YL Ventures and heads the firm's Israel office, where he leads investment processes, portfolio management and value-add initiatives for Israeli cybersecurity startups. YL Ventures states he has more than 15 years in venture capital and deep ties to Israel's cybersecurity ecosystem. Before venture capital he worked at IVC Research Center and served in Unit 8200, Israel's military intelligence unit. He holds a bachelor of law degree from Tel Aviv University.",
     notableInvestments: [
-      { name: "Hunters", ticker: null, stage: "Seed", year: 2019, yearPrecision: "year", sector: "Cybersecurity", subsector: "autonomous threat hunting", role: null, evidence: [
-        { url: "https://www.hunters.security/en/blog/hunters-ai-raises-5-4m-seed-round-to-take-cybersecurity-teams-from-hunt-and-hope-to-threat-hunting-that-works", type: "deal-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Satori", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year", sector: "Cybersecurity", subsector: "DataSecOps and data access controls", role: null, evidence: [
-        { url: "https://satoricyber.com/press-releases/satori-secures-20m-in-series-a-to-accelerate-adoption-of-cloud-data-platforms-with-datasecops/", type: "deal-announcement", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Hunters", ticker: null, stage: "Seed", year: 2019, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "autonomous threat hunting", role: null,
+      evidence: [{ url: "https://www.hunters.security/en/blog/hunters-ai-raises-5-4m-seed-round-to-take-cybersecurity-teams-from-hunt-and-hope-to-threat-hunting-that-works", type: "deal-announcement", checked: "2026-08-25" },
+                  { url: "https://venturebeat.com/ai/hunters-advances-adoption-of-its-xdr-security-platform-with-30m", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "Satori", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "DataSecOps and data access controls", role: null,
+      evidence: [{ url: "https://satoricyber.com/press-releases/satori-secures-20m-in-series-a-to-accelerate-adoption-of-cloud-data-platforms-with-datasecops/", type: "deal-announcement", checked: "2026-08-25" }] },
+    { name: "Enso Security", ticker: null, stage: "Seed", year: 2020, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "application security posture management",
+      evidence: [{ url: "https://techcrunch.com/2020/10/28/enso-security-raises-6m-for-its-application-security-management-platform/", type: "deal-announcement", checked: "2026-09-01" }] },
+    { name: "Grip Security", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "SaaS security / CASB replacement",
+      evidence: [{ url: "https://www.intelcapital.com/grip-security-raises-25m-in-9-months-to-displace-legacy-casb-solutions/", type: "deal-announcement", checked: "2026-09-01" }] }
+  ],
     sources: [
       { label: "YL Ventures - Ofer Schreiber", url: "https://www.ylventures.com/people/ofer-schreiber/" },
       { label: "YL Ventures - Team", url: "https://www.ylventures.com/team/" },
@@ -8087,190 +8599,22 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Anurag Srivastava is a Founding Partner of Jungle Ventures, the Singapore based venture firm whose team page lists him alongside Amit Anand as one of its Founding Partners. Before venture capital he founded Sconce Solutions, built the workplace design group Space Matrix and founded the animation studio One Animation. His firm bio names Eloqua, Encentuate, HolidayIQ and Myntra among his investments and records that he served on Accel Partners' investment committee in India. He is also a co-founder of billionBricks, a non-profit innovation studio.",
     notableInvestments: [
-      { name: "Eloqua", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
-        { url: "https://www.jungle.vc/team/anurag-srivastava", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Encentuate", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
-        { url: "https://www.jungle.vc/team/anurag-srivastava", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "HolidayIQ", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "travel", role: null, evidence: [
-        { url: "https://www.jungle.vc/team/anurag-srivastava", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Myntra", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: null, role: null, evidence: [
-        { url: "https://www.jungle.vc/team/anurag-srivastava", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Eloqua", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Enterprise Software", subsector: "marketing automation", role: null,
+      evidence: [{ url: "https://www.jungle.vc/team/anurag-srivastava", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Encentuate", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Cybersecurity", subsector: "identity and access management", role: null,
+      evidence: [{ url: "https://www.jungle.vc/team/anurag-srivastava", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "HolidayIQ", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Consumer", subsector: "travel", role: null,
+      evidence: [{ url: "https://www.jungle.vc/team/anurag-srivastava", type: "partner-bio", checked: "2026-08-25" }] },
+    { name: "Myntra", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Ecommerce", subsector: "online fashion", role: null, orgAtTime: "accel",
+      evidence: [{ url: "https://www.jungle.vc/team/anurag-srivastava", type: "partner-bio", checked: "2026-08-25" }] }
+  ],
     sources: [
       { label: "Jungle Ventures - Team", url: "https://www.jungle.vc/team" },
       { label: "Jungle Ventures - Anurag Srivastava", url: "https://www.jungle.vc/team/anurag-srivastava" }
-    ]
-  },
-"steve-case": {
-    name: "Steve Case",
-    firm: "Revolution Ventures",
-    firmSlug: "revolution-ventures",
-    title: "Chairman & Co-Founder",
-    joinedYear: 2005,
-    investmentFocus: [],
-    education: [
-      "B.A. Political Science, Williams College (1981)"
-    ],
-    previousExperience: [
-      "Co-founder and CEO, America Online (AOL), from 1985",
-      "Chairman, AOL Time Warner, until 2003"
-    ],
-    firmHistory: [],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 1985, event: "Co-founded America Online (AOL)." },
-      { year: 2000, event: "Orchestrated the merger of AOL and Time Warner, after which he stepped down as CEO." },
-      { year: 2003, event: "Resigned as chairman of AOL Time Warner as the company reverted to the name Time Warner." },
-      { year: 2005, event: "Founded Revolution, a Washington D.C. based investment firm." },
-      { year: 2014, event: "Launched Rise of the Rest, Revolution's initiative for startup ecosystems outside established tech hubs." },
-      { year: 2020, event: "Became chair of the Smithsonian Institution's Board of Regents, effective January 28." }
-    ],
-    biography: "Steve Case co-founded America Online in 1985 and led it as CEO until the 2000 merger with Time Warner, after which he stepped down as CEO and served as chairman of AOL Time Warner until 2003. In 2005 he founded Revolution, a Washington D.C. based investment firm that operates Revolution Growth, Revolution Ventures and the Rise of the Rest Seed Fund alongside its Revolution Places real estate and hospitality arm. Revolution states it has invested in more than 200 companies across over 100 U.S. cities, and Case's congressional witness bio describes Revolution Growth investments including Sweetgreen, Tempus, Cava, DraftKings and Clear. He was appointed to the Smithsonian Institution's Board of Regents in 2011 and elected its chair effective January 2020, and he established the Case Foundation in 1997.",
-    notableInvestments: [
-      { name: "Sweetgreen", ticker: "SG", stage: null, year: 2013, yearPrecision: "year", sector: "Consumer", subsector: "farm-to-table restaurant concept", role: "board", evidence: [
-        { url: "https://www.revolution.com/press-release/sweetgreen-secures-significant-new-funding-from-revolution-growth-steve-case-to-join-board", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://techcrunch.com/2013/12/03/salad-days/", type: "press", checked: "2026-08-25" },
-        { url: "https://www.stocktitan.net/sec-filings/SG/def-14a-sweetgreen-inc-definitive-proxy-statement-a88efdfa7e61.html", type: "regulatory", checked: "2026-08-25" }
-      ] },
-      { name: "BigCommerce", ticker: "CMRC", stage: null, year: 2013, yearPrecision: "year", sector: "Ecommerce", subsector: "e-commerce software for online retailers and merchants", role: "board", evidence: [
-        { url: "https://techcrunch.com/2013/07/25/bigcommerce-raises-40m-from-steve-cases-revolution-growth-to-help-smbs-manage-e-commerce", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://stockanalysis.com/stocks/bigc/", type: "press", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Revolution - Steve Case", url: "https://www.revolution.com/team-member/steve-case" },
-      { label: "Revolution - About", url: "https://www.revolution.com/about" },
-      { label: "U.S. House Financial Services Committee - Witness bio, Steve Case (March 25, 2025)", url: "https://docs.house.gov/meetings/BA/BA00/20250325/118039/HHRG-119-BA00-Bio-CaseS-20250325.pdf" },
-      { label: "Smithsonian Institution - Steve Case Elected Chair of Smithsonian Board of Regents", url: "https://si.edu/newsdesk/releases/steve-case-elected-chair-smithsonian-board-regents" },
-      { label: "Britannica Money - Steve Case", url: "https://www.britannica.com/money/Steve-Case" },
-      { label: "Revolution press release - sweetgreen Secures Significant New Funding from Revolution Growth, Steve Case to Join Board", url: "https://www.revolution.com/press-release/sweetgreen-secures-significant-new-funding-from-revolution-growth-steve-case-to-join-board" },
-      { label: "TechCrunch - Bigcommerce Raises $40M From Steve Case's Revolution Growth", url: "https://techcrunch.com/2013/07/25/bigcommerce-raises-40m-from-steve-cases-revolution-growth-to-help-smbs-manage-e-commerce" }
-    ]
-  },
-"clara-sieg": {
-    name: "Clara Sieg",
-    firm: "Revolution Ventures",
-    firmSlug: "revolution-ventures",
-    title: "Operating Partner",
-    joinedYear: null,
-    investmentFocus: [],
-    education: [
-      "B.A. Economics with a minor in German, Stanford University"
-    ],
-    previousExperience: [
-      "Analyst, Financial Sponsors & Leveraged Finance group, UBS Investment Bank",
-      "Alternative investment fund opportunities and secondaries, Probitas Partners"
-    ],
-    firmHistory: [],
-    boardSeats: [
-      "Castle",
-      "GoodBuy Gear",
-      "Oula",
-      "Wagmo"
-    ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: null, event: "Joined Revolution as a founding member of the team and helped open Revolution's San Francisco office." },
-      { year: 2021, event: "Led Revolution Ventures' $12.5 million Series A in pet health company Wagmo and joined its board." },
-      { year: 2023, event: "Revolution Ventures co-led GoodBuy Gear's $14 million Series B, which she commented on as a Partner at the firm." },
-      { year: 2024, event: "Revolution Ventures co-led the $28 million Series B for maternity care clinic Oula." }
-    ],
-    biography: "Clara Sieg is a partner at Revolution Ventures, the venture-stage fund within Revolution, the Washington D.C. based investment firm founded by Steve Case. Her firm bio currently describes her as an Operating Partner focused on supporting existing portfolio companies, and notes she was previously an investing partner and founding member of the team who helped open Revolution's San Francisco office and lead fundraising for the first institutional funds of both Revolution Growth and Revolution Ventures. She serves on the boards of Castle, GoodBuy Gear, Oula and Wagmo, and previously worked with Blend Labs, Policygenius and SRS Acquiom. Before Revolution she managed alternative investment fund opportunities at Probitas Partners and began her career at UBS Investment Bank in the Financial Sponsors and Leveraged Finance group.",
-    notableInvestments: [
-      { name: "Wagmo", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year", sector: "Fintech", subsector: "pet insurance and wellness plans", role: "board", evidence: [
-        { url: "https://revolution.com/press-release/as-pet-care-surges-wagmo-raises-12-5m-in-series-a-led-by-revolution-ventures/", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://www.revolution.com/team-member/clara-sieg", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "GoodBuy Gear", ticker: null, stage: "Series B", year: 2023, yearPrecision: "year", sector: "Ecommerce", subsector: "resale marketplace for baby and kids' gear", role: "board", evidence: [
-        { url: "https://www.globenewswire.com/news-release/2023/06/20/2691420/0/en/GoodBuy-Gear-Secures-14-Million-in-Funding-to-Scale-the-Leading-Resale-Marketplace-for-Families.html", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://www.revolution.com/team-member/clara-sieg", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Oula", ticker: null, stage: "Series B", year: 2024, yearPrecision: "year", sector: "Digital Health", subsector: "maternity care clinic combining midwifery and obstetrics", role: "board", evidence: [
-        { url: "https://www.revolution.com/press-release/oula-the-modern-maternity-care-clinic-combining-midwifery-and-obstetrics-raises-28m-in-series-b-funding-to-expand-nationally-and-offer-new-services", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://www.revolution.com/team-member/clara-sieg", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Castle", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: "board", evidence: [
-        { url: "https://www.revolution.com/team-member/clara-sieg", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Blend Labs", ticker: "BLND", stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: null, role: null, evidence: [
-        { url: "https://www.revolution.com/team-member/clara-sieg", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://www.investing.com/equities/blend-labs", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Policygenius", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "insurance marketplace, acquired by Zinnia", role: null, evidence: [
-        { url: "https://www.revolution.com/team-member/clara-sieg", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "SRS Acquiom", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "acquired by Lovell Minnick Partners", role: null, evidence: [
-        { url: "https://www.revolution.com/team-member/clara-sieg", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Revolution - Clara Sieg", url: "https://www.revolution.com/team-member/clara-sieg" },
-      { label: "Revolution press release - As Pet Care Surges, Wagmo Raises $12.5M in Series A Led by Revolution Ventures", url: "https://revolution.com/press-release/as-pet-care-surges-wagmo-raises-12-5m-in-series-a-led-by-revolution-ventures/" },
-      { label: "GlobeNewswire - GoodBuy Gear Secures $14 Million in Funding", url: "https://www.globenewswire.com/news-release/2023/06/20/2691420/0/en/GoodBuy-Gear-Secures-14-Million-in-Funding-to-Scale-the-Leading-Resale-Marketplace-for-Families.html" },
-      { label: "Revolution press release - Oula Raises $28M in Series B Funding", url: "https://www.revolution.com/press-release/oula-the-modern-maternity-care-clinic-combining-midwifery-and-obstetrics-raises-28m-in-series-b-funding-to-expand-nationally-and-offer-new-services" },
-      { label: "TechCrunch - With its third fund, Revolution Ventures stays true to its mission", url: "https://techcrunch.com/2019/09/18/with-its-third-fund-revolution-ventures-stays-true-to-its-mission/" },
-      { label: "Revolution - About", url: "https://www.revolution.com/about" }
-    ]
-  },
-"satya-patel": {
-    name: "Satya Patel",
-    firm: "Homebrew",
-    firmSlug: "homebrew",
-    title: "Co-Founder & Partner",
-    joinedYear: 2013,
-    investmentFocus: [],
-    education: [
-      "B.S. Finance, The University of Pennsylvania",
-      "B.S. Psychology, The University of Pennsylvania"
-    ],
-    previousExperience: [
-      "Strategy consultant",
-      "Venture capital, GeoCapital Partners, from 1997",
-      "DoubleClick",
-      "AdSense product management and partnerships, Google, from 2003",
-      "Partner, Battery Ventures, co-led the seed and early stage investing practices",
-      "VP Product, Twitter, 2011 to 2012"
-    ],
-    firmHistory: [
-      { firmSlug: "battery-ventures", role: "Partner", startYear: null, endYear: 2011 }
-    ],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 1997, event: "Began his venture career at GeoCapital Partners in New York City." },
-      { year: 2003, event: "Joined Google, working on the AdSense team." },
-      { year: 2011, event: "Joined Twitter as VP Product after a four-year stint as an investor at Battery Ventures." },
-      { year: 2013, event: "Co-founded the seed stage firm Homebrew with Hunter Walk." },
-      { year: 2022, event: "Homebrew announced Homebrew IV(ever), an evergreen vehicle composed for now of only the partners' own capital instead of another traditional venture fund." }
-    ],
-    biography: "Satya Patel co-founded the seed stage firm Homebrew with Hunter Walk in 2013. Since 2022 Homebrew has operated as Homebrew IV(ever), which the firm describes as an evergreen investment vehicle composed, for now, of only the partners' own capital rather than a traditional limited partner fund, and its site states that about 90 percent of its activity is pre-seed and seed checks of $100k to $500k. Before Homebrew he was VP Product at Twitter, a Partner at Battery Ventures where he co-led the seed and early stage investing practices, and a product manager on Google's AdSense team from 2003, having begun his venture career at GeoCapital Partners in 1997. Forbes reported that he invested $1 million in Chime while it was still fledgling and that he scouted Gusto early, and he also co-founded Screendoor, a fund that backs first-time venture managers.",
-    notableInvestments: [
-      { name: "Chime", ticker: "CHYM", stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "digital bank", role: null, evidence: [
-        { url: "https://www.forbes.com.au/news/innovation/how-this-investor-spots-billion-dollar-winners-in-boring-industries/", type: "press", checked: "2026-08-25" },
-        { url: "https://stockanalysis.com/stocks/chym/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Gusto", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "payroll", role: null, evidence: [
-        { url: "https://www.forbes.com.au/news/innovation/how-this-investor-spots-billion-dollar-winners-in-boring-industries/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Shield AI", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Defense Tech", subsector: "drone maker", role: null, evidence: [
-        { url: "https://www.forbes.com.au/news/innovation/how-this-investor-spots-billion-dollar-winners-in-boring-industries/", type: "press", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Homebrew - Team", url: "https://homebrew.co/team" },
-      { label: "Homebrew - Home", url: "https://homebrew.co/" },
-      { label: "Homebrew blog - Homebrew Forever: Same Mission, Our Capital", url: "https://homebrew.co/blog/2022/02/28/homebrew-forever-same-mission-our-capital" },
-      { label: "Forbes Australia - How this investor spots billion-dollar winners in boring industries", url: "https://www.forbes.com.au/news/innovation/how-this-investor-spots-billion-dollar-winners-in-boring-industries/" },
-      { label: "TechCrunch - Twitter Product VP Satya Patel Steps Down", url: "https://techcrunch.com/2012/06/06/twitter-product-vp-satya-patel-steps-down-as-its-product-and-ad-business-both-grow/" },
-      { label: "Forbes - Satya Patel profile", url: "https://www.forbes.com/profile/satya-patel/" }
     ]
   }
 });
