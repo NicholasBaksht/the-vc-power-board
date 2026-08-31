@@ -1,5 +1,183 @@
 /* data-partners shard 5 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
+"h-dubose-montgomery": {
+    name: "H. DuBose Montgomery",
+    firm: "Menlo Ventures",
+    firmSlug: "menlo-ventures",
+    title: "Founder (1976)",
+    joinedYear: 1976,
+    departedYear: null,
+    departedNote: "Menlo Ventures lists him under Advisors and Partners Emeriti as Founder & Partner Emeritus, not among the firm's current investors.",
+    investmentFocus: [
+      "Healthcare",
+      "Medical Devices",
+      "Enterprise Software"
+    ],
+    education: [
+      "B.S. Electrical Engineering, Massachusetts Institute of Technology",
+      "M.S. Electrical Engineering, Massachusetts Institute of Technology",
+      "B.S. Management Science, Massachusetts Institute of Technology",
+      "M.B.A. with distinction, Harvard University Graduate School of Business Administration"
+    ],
+    previousExperience: [
+      "Researcher, Bell Laboratories, Murray Hill, New Jersey"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Conducted research at Bell Laboratories in Murray Hill, New Jersey." },
+      { year: 1976, event: "Founded Menlo Ventures at age 27." },
+      { year: null, event: "Served as a Trustee of the MIT Corporation and on MIT visiting committees for Electrical Engineering and Computer Science and for Sponsored Research." },
+      { year: null, event: "Listed by Menlo Ventures as Founder & Partner Emeritus among the firm's advisors and partners emeriti." }
+    ],
+    biography: "H. DuBose Montgomery founded Menlo Ventures in 1976 at age 27 and, by the firm's account, led investments in medical and information technology companies over roughly four decades there. Menlo credits him with investments including Asthmatx, EndoVascular Technologies, Entone, Frame Technology Corporation, Freightquote, Gilead Sciences, Infoseek, LSI Logic, Valid Logic Systems and VNUS Medical Technologies, and says he helped found four startups from their initial idea concepts. Before Menlo he did research at Bell Laboratories in Murray Hill, New Jersey, and he holds two issued patents and has been published in IEEE Proceedings. He earned three degrees from MIT and an M.B.A. with distinction from Harvard Business School, and Menlo Ventures now lists him as Founder & Partner Emeritus.",
+    notableInvestments: [
+      { name: "Asthmatx", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Medical Devices", subsector: "bronchial thermoplasty", role: null, evidence: [
+        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://menlovc.com/perspective/silicon-minds-dubose-montgomery/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "EndoVascular Technologies", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Medical Devices", subsector: "endovascular grafts", role: null, evidence: [
+        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://menlovc.com/perspective/silicon-minds-dubose-montgomery/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Entone", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "IP video devices", role: null, evidence: [
+        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://menlovc.com/perspective/silicon-minds-dubose-montgomery/", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Frame Technology Corporation", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "document publishing software", role: null, evidence: [
+        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Freightquote", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Mobility", subsector: "freight logistics marketplace", role: null, evidence: [
+        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Gilead Sciences", ticker: "GILD", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: null, evidence: [
+        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Infoseek", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "internet search", role: null, evidence: [
+        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "LSI Logic", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "semiconductors", role: null, evidence: [
+        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Valid Logic Systems", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "electronic design automation", role: null, evidence: [
+        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "VNUS Medical Technologies", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Medical Devices", subsector: "venous reflux disease treatment", role: null, evidence: [
+        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Menlo Ventures - H. DuBose Montgomery", url: "https://menlovc.com/team/h-dubose-montgomery/" },
+      { label: "Menlo Ventures - Silicon Minds: DuBose Montgomery", url: "https://menlovc.com/perspective/silicon-minds-dubose-montgomery/" },
+      { label: "Menlo Ventures - Team", url: "https://menlovc.com/team/" }
+    ]
+  },
+"jennifer-place": {
+    name: "Jennifer Place",
+    firm: "Munich Re Ventures",
+    firmSlug: "munich-re-ventures",
+    title: "Principal",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "Munich Re Ventures' own team page (munichre.com/mrv/en/team.html) did not list Jennifer Place when checked on 2026-08-25; the page shows only Oshri Kaplan, Sidra Ahmed Lefort, Timur Davis, Ben Bergsma, Marc Buechel, Alex Kamenetskiy, Peter Volz and Mike Feeley. The last primary-source confirmation of her as Principal is Munich Re Ventures' 21 May 2025 announcement of its $125 million HSB fund. Munich Re said in late 2025 that it would wind the venture unit down by mid-2026, with a smaller team overseen by MEAG remaining in San Francisco.",
+    investmentFocus: [
+      "Real Estate Tech"
+    ],
+    education: [],
+    previousExperience: [],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Named in Munich Re Ventures' HSB Fund II announcement as the Principal who would oversee the HSB Funds and lead Built World sector investments." },
+      { year: 2025, event: "Co-authored Munich Re Ventures' post on its participation in Runwise's Series B." }
+    ],
+    biography: "Jennifer Place was identified as a Principal at Munich Re Ventures in the firm's 21 May 2025 announcement of a new $125 million fund from HSB, which stated that she would oversee the HSB Funds and lead investments for the Built World sector. In June 2025 she co-authored Munich Re Ventures' post announcing the firm's participation in Runwise's Series B round for its smart operating system for buildings. Munich Re Ventures' team page did not list her when checked in August 2026, and Munich Re had said in late 2025 that it would wind the venture unit down by mid-2026.",
+    notableInvestments: [
+      { name: "Runwise", ticker: null, stage: "Series B", year: 2025, yearPrecision: "year", sector: "Real Estate Tech", subsector: "smart operating system for buildings", role: null, evidence: [
+        { url: "https://medium.com/@MunichReVentures/where-old-infrastructure-meets-new-intelligence-runwises-no-brainer-building-solution-803ae58ca25f", type: "firm-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Munich Re Ventures - Celebrates Ten Year Anniversary with New $125 Million Fund from HSB (PR Newswire)", url: "https://www.prnewswire.com/news-releases/munich-re-ventures-celebrates-ten-year-anniversary-with-new-125-million-fund-from-hsb-302461095.html" },
+      { label: "Munich Re Ventures - Team", url: "https://www.munichre.com/mrv/en/team.html" },
+      { label: "Munich Re Ventures - Where Old Infrastructure Meets New Intelligence: Runwise's 'No Brainer' Building Solution", url: "https://medium.com/@MunichReVentures/where-old-infrastructure-meets-new-intelligence-runwises-no-brainer-building-solution-803ae58ca25f" },
+      { label: "Global Venturing - Munich Re winds down $1.2bn VC arm after decade of investing", url: "https://globalventuring.com/corporate/services/munich-re-winds-down-1-2bn-vc-arm-after-decade-of-investing/" }
+    ]
+  },
+"norman-fiore": {
+    name: "Norman Fiore",
+    firm: "Dawn Capital",
+    firmSlug: "dawn-capital",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2006,
+    investmentFocus: [
+      "Enterprise Software",
+      "Cybersecurity",
+      "AI"
+    ],
+    education: [
+      "BSc Engineering, Stanford University",
+      "BA Quantitative Economics, Stanford University",
+      "MBA with distinction, INSEAD"
+    ],
+    previousExperience: [
+      "Began his career at Bain & Company",
+      "General Partner, Reuters' $450m corporate venture fund (which he later acquired via a management buyout)"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "Balance in Business"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Began his career at Bain & Company." },
+      { year: null, event: "Was a General Partner at Reuters' $450m corporate venture fund, which he later acquired through a management buyout." },
+      { year: 2006, event: "Co-founded Dawn Capital, which the firm's own site dates to 2006." }
+    ],
+    biography: "Norman Fiore is a co-founder and General Partner at Dawn Capital, the London B2B software investor, where his own bio says he invests across automation, data, security and vertical software. Dawn's site states he has led early investments in Mimecast, Gelato, Collibra, Quantexa, Qogita and Blackwall. Before Dawn he was a General Partner at Reuters' $450m corporate venture fund, which he later acquired via a management buyout, and he began his career at Bain & Company. He holds a BSc in Engineering and a BA in Quantitative Economics from Stanford and an MBA with distinction from INSEAD, and serves as a Director at Balance in Business.",
+    notableInvestments: [
+      { name: "Mimecast", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: "Email security", role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Collibra", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "The data intelligence platform", role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Quantexa", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "The decision intelligence leader", role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Gelato", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: "The global on-demand print platform", role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Qogita", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: "The global wholesale B2B platform", role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Blackwall", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: "Web security & traffic filtering for hosting providers", role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Showpad", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Garrison", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Dawn Capital - Norman Fiore", url: "https://www.dawncapital.com/team/norman-fiore" },
+      { label: "Dawn Capital - Team", url: "https://www.dawncapital.com/team/" },
+      { label: "Dawn Capital - Companies", url: "https://www.dawncapital.com/companies" },
+      { label: "Dawn Capital - Josh Bell (states Dawn was founded in 2006)", url: "https://www.dawncapital.com/team/josh-bell" }
+    ]
+  },
 "haakon-overli": {
     name: "Haakon Overli",
     firm: "Dawn Capital",
@@ -1644,7 +1822,11 @@ Object.assign(partnerProfiles, {
       { year: 2026, event: "Listed as a manager of Breakthrough Energy Ventures Management GP, LLC in the Form D for Breakthrough Energy Ventures Special Situations I, L.P., filed 11 August 2026." }
     ],
     biography: "Eric Toone is an investment leader at Breakthrough Energy Ventures, the climate technology investment arm founded within Bill Gates' Breakthrough Energy. A September 2025 announcement of the oneworld BEV Fund for Sustainable Aviation Fuel described him as chief technology officer at Breakthrough Energy and managing partner at Breakthrough Energy Ventures. SEC Form D filings name him as an executive officer of BEV Follow-On Fund I, LLC in 2024 and as a manager of Breakthrough Energy Ventures Management GP, LLC in an August 2026 filing for Breakthrough Energy Ventures Special Situations I, L.P.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Valanbio Therapeutics", ticker: null, year: 2018, yearPrecision: "year",
+      sector: "Biotech", subsector: "Pharmaceuticals", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1771623/000177162319000001/primary_doc.xml", type: "regulatory", checked: "2026-08-31" }] }
+  ],
     sources: [
       { label: "PR Newswire - oneworld alliance, airlines and Breakthrough Energy Ventures launch investment fund to advance and commercialize Sustainable Aviation Fuel technologies (17 Sep 2025)", url: "https://www.prnewswire.com/news-releases/oneworld-alliance-airlines-and-breakthrough-energy-ventures-launch-investment-fund-to-advance-and-commercialize-sustainable-aviation-fuel-technologies-302558552.html" },
       { label: "SEC Form D - Breakthrough Energy Ventures Special Situations I, L.P. (filed 11 Aug 2026)", url: "https://www.sec.gov/Archives/edgar/data/2104768/000210476826000002/primary_doc.xml" },
@@ -5558,7 +5740,14 @@ Object.assign(partnerProfiles, {
       { year: 2026, event: "Listed on the Toyota Ventures site as Partner, Frontier Fund and scheduled to present a talk titled Investing in the Physical AI Frontier at RoboBusiness in Santa Clara in October." }
     ],
     biography: "David Sokolic is a partner at Toyota Ventures responsible for leading investments for the firm's Frontier Fund, which backs early-stage companies in AI, robotics, next-generation computing, aerospace, mobility, materials and energy. Before joining Toyota Ventures he was an investment partner at OurCrowd, where he led investments in mobility, robotics, digital health, cybersecurity and software applying artificial intelligence and machine learning, and earlier served as vice president on the investment team at Battery Ventures. His operating career includes chief executive officer of CyKick Labs, vice president of marketing and business development at Peerapp, product roles at Microsoft, and leadership positions at RADVISION, Gizmoz and VocalTec Communications. He holds a bachelor's of science degree in economics with honors from the Wharton School at the University of Pennsylvania.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Neuromorphic Labs", ticker: null, stage: "Seed", year: 2026, yearPrecision: "year",
+      sector: "AI", subsector: "foundational trust layer for production AI",
+      evidence: [{ url: "https://medium.com/@Toyota_Ventures/securing-the-intelligence-stack-our-investment-in-neuromorphic-labs-81ac6a13af0f", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Walden Robotics", ticker: null, year: 2026, yearPrecision: "year",
+      sector: "Robotics", subsector: "general-purpose physical intelligence",
+      evidence: [{ url: "https://medium.com/@Toyota_Ventures/accelerating-factory-automation-through-physical-intelligence-our-investment-in-walden-robotics-799f3420bc54", type: "firm-announcement", checked: "2026-08-31" }] }
+  ],
     sources: [
       { label: "Toyota Ventures - team and firm site", url: "https://toyota.ventures/" },
       { label: "Toyota Ventures - News & Events", url: "https://toyota.ventures/news.html" },
@@ -5656,7 +5845,20 @@ Object.assign(partnerProfiles, {
       { year: 2015, event: "Co-founded BOLD Capital Partners, which filed with the SEC to raise a $200 million venture fund." }
     ],
     biography: "Peter Diamandis is a partner at BOLD Capital Partners, the venture firm he co-founded in 2015 to invest in exponential technologies and longevity companies. Before and alongside BOLD he founded the XPRIZE Foundation, where he is Executive Chairman, and was the Executive Founder of Singularity University, which he started with Ray Kurzweil in 2008. He is also a co-founder and Vice-Chairman of Celularity and Vaxxinity and co-founder and Chairman of Fountain Life, and by XPRIZE's own account has started over 25 companies across health-tech, space, venture capital and education. He holds degrees in molecular genetics and aerospace engineering from MIT and an M.D. from Harvard Medical School.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Vaxxinity", ticker: null,
+      sector: "Biotech", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1851657/000156276222000201/vaxxdef14a4292022.htm", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "Celularity", ticker: null,
+      sector: "Biotech", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1752828/000119312522167393/d338327ddef14a.htm", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "MYOS Corp", ticker: null,
+      sector: "Healthcare", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1402479/000121390014007726/def14a1114_myoscorp.htm", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "3D Systems Corporation", ticker: null,
+      sector: "Hardware", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/910638/000119312515115046/d850176ddef14a.htm", type: "regulatory", checked: "2026-08-31" }] }
+  ],
     sources: [
       { label: "BOLD Capital Partners - Peter Diamandis", url: "https://boldcapitalpartners.com/team/peter-diamandis/" },
       { label: "BOLD Capital Partners - Team", url: "https://boldcapitalpartners.com/team/" },
@@ -5751,7 +5953,18 @@ Object.assign(partnerProfiles, {
       { year: 2015, event: "Named among the partners of BOLD Capital Partners when the fund was first reported, as founder and co-chairman of NALA Investments." }
     ],
     biography: "Emilio Diez Barroso is a General Partner at BOLD Capital Partners, which describes him as an investor, entrepreneur and philanthropist committed to alleviating suffering in the world. He chairs NALA Investments, a private family office managing diverse global assets, and was previously managing director at Corporacion Triangulo in Mexico City. The firm states he sits on multiple for-profit and nonprofit boards, including UCLA's School of Theater, Film and Television and UC San Diego Health. His stated interests are wellness, finance, mental health, psychology and education.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Welcome Tech", ticker: null, year: 2019, yearPrecision: "year",
+      sector: "Consumer", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1451466/000145146621000004/primary_doc.xml", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1451466/000145146612000002/primary_doc.xml", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "MoviePass", ticker: null, year: 2017, yearPrecision: "year",
+      sector: "Consumer", orgAtTime: "angel",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1040792/000143774917014787/ex10-1.htm", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "Momentus", ticker: null,
+      sector: "Space", orgAtTime: "angel",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1781162/000121390021064339/ea152055-424b3_momentusinc.htm", type: "regulatory", checked: "2026-08-31" }] }
+  ],
     sources: [
       { label: "BOLD Capital Partners - Emilio Diez Barroso", url: "https://boldcapitalpartners.com/team/emilio-diez-barroso/" },
       { label: "BOLD Capital Partners - Team", url: "https://boldcapitalpartners.com/team/" },
@@ -8058,157 +8271,6 @@ Object.assign(partnerProfiles, {
       { label: "Forbes Australia - How this investor spots billion-dollar winners in boring industries", url: "https://www.forbes.com.au/news/innovation/how-this-investor-spots-billion-dollar-winners-in-boring-industries/" },
       { label: "TechCrunch - Twitter Product VP Satya Patel Steps Down", url: "https://techcrunch.com/2012/06/06/twitter-product-vp-satya-patel-steps-down-as-its-product-and-ad-business-both-grow/" },
       { label: "Forbes - Satya Patel profile", url: "https://www.forbes.com/profile/satya-patel/" }
-    ]
-  },
-"caroline-duffy": {
-    name: "Caroline Duffy",
-    firm: "Cowboy Ventures",
-    firmSlug: "cowboy-ventures",
-    title: "Partner",
-    joinedYear: 2025,
-    investmentFocus: [
-      "Enterprise Software",
-      "AI"
-    ],
-    education: [
-      "MBA, Stanford Graduate School of Business",
-      "B.A., Dartmouth College"
-    ],
-    previousExperience: [
-      "AI researcher, Harvard",
-      "Management consultant",
-      "Building and investing in AI companies with Andrew Ng (AI Fund)",
-      "Investor, Construct Capital"
-    ],
-    firmHistory: [
-      { firmSlug: "construct-capital", role: "Investor", startYear: null, endYear: 2025 }
-    ],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 2025, event: "Joined Cowboy Ventures as a Partner on the investment team, based in the San Francisco Bay Area." },
-      { year: 2026, event: "Published the Cowboy Ventures piece AI and the Labor Shortage Economy in April." }
-    ],
-    biography: "Caroline Duffy is a Partner at Cowboy Ventures, the early stage firm founded by Aileen Lee, and joined its investment team in January 2025 based in the San Francisco Bay Area. Her firm bio states she focuses on B2B software and AI, with a particular interest in teams modernizing overlooked, unglamorous industries burdened by outdated tech stacks. Before Cowboy she was at Construct Capital, where she led investments in supply chain and logistics, manufacturing and critical infrastructure, and prior to that she was building and investing in AI companies with Andrew Ng. She holds an MBA from Stanford and a BA from Dartmouth, and started her career as an AI researcher at Harvard before working as a management consultant.",
-    notableInvestments: [],
-    sources: [
-      { label: "Cowboy Ventures - Caroline Duffy", url: "https://www.cowboy.vc/team/caroline-duffy" },
-      { label: "Cowboy Ventures - Welcoming Caroline Duffy to Team Cowboy!", url: "https://www.cowboy.vc/news/welcoming-caroline-duffy-to-team-cowboy" },
-      { label: "Cowboy Ventures - Latest from us (news index)", url: "https://www.cowboy.vc/news" },
-      { label: "FreightWaves Events - Caroline Duffy speaker bio", url: "https://live.freightwaves.com/event-speakers/caroline-duffy" }
-    ]
-  },
-"jocelyn-goldfein": {
-    name: "Jocelyn Goldfein",
-    firm: "Zetta Venture Partners",
-    firmSlug: "zetta-venture-partners",
-    title: "Managing Director",
-    joinedYear: 2016,
-    investmentFocus: [
-      "AI",
-      "Enterprise Software",
-      "Developer Tools & Infrastructure"
-    ],
-    education: [
-      "BS Computer Science, Stanford University"
-    ],
-    previousExperience: [
-      "Engineering leader, Trilogy",
-      "Engineering leader, VMware",
-      "Director of Engineering, Facebook",
-      "Co-founder, MessageOne",
-      "Co-founder, Datify"
-    ],
-    firmHistory: [],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 2016, event: "Joined Zetta Venture Partners, according to her firm bio." },
-      { year: 2018, event: "Quoted on Zetta's lead of Promethium's 2.5 million dollar seed round." },
-      { year: 2019, event: "Joined Aptology's board of directors when Zetta led its 8.4 million dollar Series A." },
-      { year: 2021, event: "Wrote Zetta's post announcing Aptology's platform launch." }
-    ],
-    biography: "Jocelyn Goldfein is a Managing Director at Zetta Venture Partners, which she joined in 2016 according to her firm bio. She backs founders using machine learning and AI in cloud infrastructure, DevOps, supply chain and HR tech, as well as founders building ML platforms and data infrastructure. Before investing she was an engineering leader at Facebook, VMware and Trilogy, and she co-founded MessageOne and Datify. She received her BS in Computer Science from Stanford University, where she lectures on Leadership in High Tech, and has served as Vice Chair of the Board of Harvey Mudd College.",
-    notableInvestments: [
-      { name: "Aptology", ticker: null, stage: "Series A", year: 2019, yearPrecision: "year", sector: "Enterprise Software", subsector: "Sales fit-to-role solution", role: "board", evidence: [
-        { url: "https://www.finsmes.com/2019/04/aptology-raises-8-4m-in-series-a-funding.html", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://medium.com/@Zetta/aptology-the-science-of-fit-5239e263bbb4", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Telmai", ticker: null, stage: "Seed", year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "No-code real-time data quality analysis and monitoring platform", role: null, evidence: [
-        { url: "https://www.telm.ai/tblog/telmai-announces-2-8-million-seed-from-406-partners-zetta-venture-partners-y-combinator-others/", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://www.zettavp.com/companies", type: "portfolio-page", checked: "2026-08-25" }
-      ] },
-      { name: "Promethium", ticker: null, stage: "Seed", year: 2018, yearPrecision: "year", sector: "Enterprise Software", subsector: "Self-service data governance and business intelligence analytics", role: null, evidence: [
-        { url: "https://www.storagenewsletter.com/2018/10/30/2-5-million-in-seed-capital-for-promethium/", type: "deal-announcement", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Zetta Venture Partners - Jocelyn Goldfein", url: "https://www.zettavp.com/team/jocelyn-goldfein" },
-      { label: "Zetta Venture Partners - Team", url: "https://www.zettavp.com/team" },
-      { label: "Zetta Venture Partners - Companies", url: "https://www.zettavp.com/companies" },
-      { label: "Zetta Venture Partners - Aptology: The Science of Fit", url: "https://medium.com/@Zetta/aptology-the-science-of-fit-5239e263bbb4" },
-      { label: "FinSMEs - Aptology Raises $8.4M in Series A Funding", url: "https://www.finsmes.com/2019/04/aptology-raises-8-4m-in-series-a-funding.html" },
-      { label: "Telmai - Telmai announces $2.8 Million seed", url: "https://www.telm.ai/tblog/telmai-announces-2-8-million-seed-from-406-partners-zetta-venture-partners-y-combinator-others/" },
-      { label: "StorageNewsletter - $2.5 Million in Seed Capital for Promethium", url: "https://www.storagenewsletter.com/2018/10/30/2-5-million-in-seed-capital-for-promethium/" },
-      { label: "PRNewswire - Zetta Venture Partners Names Apoorva Pandhi Managing Director", url: "https://www.prnewswire.com/news-releases/zetta-venture-partners-names-apoorva-pandhi-managing-director-301681436.html" },
-      { label: "Fortune - Zetta Venture Partners hires Jocelyn Goldfein", url: "https://fortune.com/2017/01/10/zetta-venture-partners-hires-jocelyn-goldfein/" }
-    ]
-  },
-"apoorva-pandhi": {
-    name: "Apoorva Pandhi",
-    firm: "Zetta Venture Partners",
-    firmSlug: "zetta-venture-partners",
-    title: "Managing Director",
-    joinedYear: 2022,
-    investmentFocus: [
-      "AI",
-      "Developer Tools & Infrastructure",
-      "Enterprise Software"
-    ],
-    education: [
-      "Engineering degree, IIT Delhi",
-      "MBA, The Wharton School, University of Pennsylvania"
-    ],
-    previousExperience: [
-      "Investor, Lightspeed Venture Partners",
-      "Co-founder, Funnl Labs",
-      "Vice President of Enterprise Sales, Quid",
-      "Partner, Foundation Capital",
-      "Co-founder, GTMfordev"
-    ],
-    firmHistory: [
-      { firmSlug: "lightspeed", role: "Investor", startYear: null, endYear: null },
-      { firmSlug: "foundation-capital", role: "Partner", startYear: null, endYear: null }
-    ],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: null, event: "Began his investing career at Lightspeed Venture Partners focused on enterprise and consumer investments." },
-      { year: null, event: "Co-founded Funnl Labs, a machine learning communication platform." },
-      { year: null, event: "Served as Partner at Foundation Capital investing in early ML, data and developer companies." },
-      { year: 2022, event: "Joined Zetta Venture Partners as Managing Director on November 17." }
-    ],
-    biography: "Apoorva Pandhi is a Managing Director at Zetta Venture Partners, which announced his appointment in November 2022. He works with technical and product-centric founders on problems in AI and machine learning, data infrastructure and cloud-native infrastructure at the zero-to-one stage. Before Zetta he was a Partner at Foundation Capital, where Zetta's announcement credits him with seed investments including Outerbounds, MotherDuck and Tabular, and earlier he began his investing career at Lightspeed Venture Partners, was Vice President of Enterprise Sales at Quid and co-founded Funnl Labs. He earned an engineering degree from IIT Delhi and an MBA from the Wharton School at the University of Pennsylvania.",
-    notableInvestments: [
-      { name: "MotherDuck", ticker: null, stage: "Seed", year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "OSS DuckDB", role: null, evidence: [
-        { url: "https://www.prnewswire.com/news-releases/zetta-venture-partners-names-apoorva-pandhi-managing-director-301681436.html", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://www.zettavp.com/companies", type: "portfolio-page", checked: "2026-08-25" }
-      ] },
-      { name: "Outerbounds", ticker: null, stage: "Seed", year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "OSS Metaflow", role: null, evidence: [
-        { url: "https://www.prnewswire.com/news-releases/zetta-venture-partners-names-apoorva-pandhi-managing-director-301681436.html", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Tabular", ticker: null, stage: "Seed", year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "OSS Iceberg", role: null, evidence: [
-        { url: "https://www.prnewswire.com/news-releases/zetta-venture-partners-names-apoorva-pandhi-managing-director-301681436.html", type: "firm-announcement", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Zetta Venture Partners - Apoorva Pandhi", url: "https://www.zettavp.com/team/apoorva-pandhi" },
-      { label: "Zetta Venture Partners - Team", url: "https://www.zettavp.com/team" },
-      { label: "Zetta Venture Partners - Companies", url: "https://www.zettavp.com/companies" },
-      { label: "PRNewswire - Zetta Venture Partners Names Apoorva Pandhi Managing Director", url: "https://www.prnewswire.com/news-releases/zetta-venture-partners-names-apoorva-pandhi-managing-director-301681436.html" }
     ]
   }
 });
