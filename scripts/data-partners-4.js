@@ -1,5 +1,291 @@
 /* data-partners shard 4 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
+"kaustubh-pandya": {
+    name: "Kaustubh Pandya",
+    sectors: ["Construction Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://brickmortar.vc/team",
+    firm: "Brick & Mortar Ventures",
+    firmSlug: "brick-and-mortar-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    education: ["B.S. Civil Engineering, U.C. Berkeley", "M.S. Design Construction Integration, Stanford University", "MBA, MIT Sloan School of Management"],
+    previousExperience: ["Consultant, McKinsey & Company", "Forensic structural engineer"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    notableInvestments: [],
+    biography: "Kaustubh Pandya is a General Partner at Brick & Mortar Ventures, where he invests in early stage startups serving the architecture, engineering, and construction industry. Before joining the firm he spent more than four years at McKinsey & Company, where he co-authored construction technology research, and earlier worked as a forensic structural engineer, giving him more than eight years of strategy and industry experience in the AEC sector. He is a licensed Professional Engineer. He holds a B.S. in Civil Engineering from U.C. Berkeley, an M.S. in Design Construction Integration from Stanford, and an MBA from the MIT Sloan School of Management.",
+    sources: [
+      { label: "Brick & Mortar Ventures — Team", url: "https://brickmortar.vc/team" }
+    ]
+  },
+"curtis-rodgers": {
+    name: "Curtis Rodgers",
+    sectors: ["Construction Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://brickmortar.vc/team",
+    firm: "Brick & Mortar Ventures",
+    firmSlug: "brick-and-mortar-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: ["B.B.A. Management, Texas State University-San Marcos", "M.S. Technology, Texas State University-San Marcos"],
+    previousExperience: ["Construction process improvement roles, Kiewit and McCarthy Construction", "Founder, The Society for Construction Solutions"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Founded The Society for Construction Solutions." }
+    ],
+    notableInvestments: [],
+    biography: "Curtis Rodgers is a Partner at Brick & Mortar Ventures, where he invests in early stage construction technology companies. He describes himself as an industrial technologist and investor, and spent six years in construction process improvement roles at Kiewit and McCarthy Construction before moving into venture capital. In 2014 he founded The Society for Construction Solutions. He has participated in NASA's Centennial 3D Printed Habitat Challenge and has lectured for the U.S. Department of Energy's Project Leadership Institute. He holds a B.B.A. in Management and an M.S. in Technology from Texas State University-San Marcos.",
+    sources: [
+      { label: "Brick & Mortar Ventures — Team", url: "https://brickmortar.vc/team" }
+    ]
+  },
+"austin-yount": {
+    name: "Austin Yount",
+    sectors: ["Construction Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://brickmortar.vc/team",
+    firm: "Brick & Mortar Ventures",
+    firmSlug: "brick-and-mortar-ventures",
+    title: "Partner",
+    joinedYear: null,
+    education: ["BA Economics, Stanford University"],
+    previousExperience: ["Senior Associate, Brick & Mortar Ventures", "Business Development, Enjoy Technology", "Investment banking analyst", "Professional baseball player, Los Angeles Dodgers and Chicago White Sox organizations"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    notableInvestments: [],
+    biography: "Austin Yount is a Partner at Brick & Mortar Ventures, where he helps the team evaluate, invest in, and grow early stage companies serving the architecture, engineering, and construction industry. He joined the firm as a Senior Associate before becoming Partner. Earlier in his career he was among the first ten employees at Enjoy Technology, working in business development, and before that worked as an investment banking analyst. Prior to his business career he spent three and a half years as a professional baseball player in the Los Angeles Dodgers and Chicago White Sox organizations. He holds a BA in Economics from Stanford University.",
+    sources: [
+      { label: "Brick & Mortar Ventures — Team", url: "https://brickmortar.vc/team" }
+    ]
+  },
+"ty-findley": {
+    name: "Ty Findley",
+    sectors: ["Industrial Tech", "Construction Tech", "Logistics", "Energy"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://ironspring.com/fund-ii/",
+    firm: "Ironspring Ventures",
+    firmSlug: "ironspring-ventures",
+    title: "Co-Founder + General Partner",
+    joinedYear: 2020,
+    education: ["MBA, Kellogg Graduate School of Management", "B.S. Mechanical Engineering, Baylor University"],
+    previousExperience: ["Investor, Pritzker Group Venture Capital", "Investor, GE Ventures", "Investor, G51 Capital", "Design Engineer, Boeing"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2020, event: "Co-founded Ironspring Ventures in Austin to invest in early stage digital industrial companies." },
+      { year: 2021, event: "Ironspring announced its $61 million debut fund." },
+      { year: 2024, event: "Ironspring closed its $100 million Fund II." },
+      { year: 2026, event: "Trimble announced an agreement to acquire Ironspring Fund I portfolio company Document Crunch." }
+    ],
+    notableInvestments: [],
+    biography: "Ty Findley is Co-Founder and General Partner of Ironspring Ventures, an Austin based venture capital firm founded in 2020 that backs early stage companies digitizing industrial sectors including construction, manufacturing, transport and logistics, and alternative energy. He previously held investment roles at Pritzker Group Venture Capital, GE Ventures, and G51 Capital, and began his career as a design engineer at Boeing. He is a Kauffman Fellow. Under his leadership Ironspring announced a $61 million debut fund in 2021 and closed a $100 million Fund II in June 2024, and its seed investment Document Crunch was the subject of an announced acquisition by Trimble in 2026. He holds a B.S. in Mechanical Engineering from Baylor University and an MBA from the Kellogg Graduate School of Management.",
+    sources: [
+      { label: "Ironspring Ventures — Ty Findley bio", url: "https://ironspring.com/team_ty_findley/" },
+      { label: "TechCrunch — Ironspring's $61M fund (2021)", url: "https://techcrunch.com/2021/02/15/with-ironspring-ventures-texas-gets-a-61-million-new-fund-focused-on-industrial-technologies/" },
+      { label: "Ironspring — $100M Fund II announcement (2024)", url: "https://ironspring.com/fund-ii/" },
+      { label: "Ironspring — Document Crunch acquired by Trimble", url: "https://ironspring.com/document-crunch-to-be-acquired-by-trimble/" }
+    ]
+  },
+"peter-j-holt": {
+    name: "Peter J. Holt",
+    sectors: ["Industrial Tech", "Construction Tech", "Logistics", "Energy"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://ironspring.com/fund-ii/",
+    firm: "Ironspring Ventures",
+    firmSlug: "ironspring-ventures",
+    title: "Co-Founder + General Partner",
+    joinedYear: 2020,
+    education: [],
+    previousExperience: ["Co-Founder, Holt Ventures"],
+    firmHistory: [],
+    boardSeats: ["San Antonio Spurs & Entertainment"],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2020, event: "Co-founded Ironspring Ventures in Austin to invest in early stage digital industrial companies." },
+      { year: 2021, event: "Ironspring announced its $61 million debut fund." },
+      { year: 2024, event: "Ironspring closed its $100 million Fund II." }
+    ],
+    notableInvestments: [],
+    biography: "Peter J. Holt is Co-Founder and General Partner of Ironspring Ventures, an Austin based venture capital firm founded in 2020 to invest in early stage companies modernizing construction, manufacturing, transport and logistics, and alternative energy. He is also CEO and General Manager of HOLT Group, parent company of HOLT CAT, the largest Caterpillar dealership in the United States, where the firm describes him as the fifth generation of the Holt family business, and he serves as Chairman and Managing Partner of the NBA's San Antonio Spurs & Entertainment. Before Ironspring he co-founded Holt Ventures, an earlier venture investing effort. Ironspring's seed investment Document Crunch was the subject of an announced acquisition by Trimble in 2026.",
+    sources: [
+      { label: "Ironspring Ventures — Peter J. Holt bio", url: "https://ironspring.com/team_peter_j_holt/" },
+      { label: "TechCrunch — Ironspring's $61M fund (2021)", url: "https://techcrunch.com/2021/02/15/with-ironspring-ventures-texas-gets-a-61-million-new-fund-focused-on-industrial-technologies/" },
+      { label: "Ironspring — $100M Fund II announcement (2024)", url: "https://ironspring.com/fund-ii/" },
+      { label: "Ironspring — Document Crunch acquired by Trimble", url: "https://ironspring.com/document-crunch-to-be-acquired-by-trimble/" }
+    ]
+  },
+"natan-reddy": {
+    name: "Natan Reddy",
+    sectors: ["Industrial Tech", "Logistics", "Construction Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://ironspring.com/team_natan-reddy/",
+    firm: "Ironspring Ventures",
+    firmSlug: "ironspring-ventures",
+    title: "Principal",
+    joinedYear: 2025,
+    education: ["BA Economics, University of California, Berkeley"],
+    previousExperience: ["Principal, 25madison", "Senior Associate, Ironspring Ventures", "Senior Intelligence Analyst, CB Insights"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Rejoined Ironspring Ventures as Principal after serving as Principal at 25madison." },
+      { year: 2026, event: "Trimble announced an agreement to acquire Document Crunch, an Ironspring investment he supported." }
+    ],
+    notableInvestments: [
+      { name: "Document Crunch" },
+      { name: "OneRail" },
+      { name: "Prokeep" },
+      { name: "Solvento" },
+      { name: "GoodShip" }
+    ],
+    biography: "Natan Reddy is a Principal at Ironspring Ventures, based in New York City, focused on early stage digital industrial and supply chain companies. He first joined Ironspring as a Senior Associate, supporting more than 15 early stage investments including Document Crunch, OneRail, Prokeep, Solvento, and GoodShip. He then served as a Principal at 25madison, a New York early stage venture firm, leading investing across supply chain and industrials, before returning to Ironspring as Principal in 2025. Earlier he was a Senior Intelligence Analyst at CB Insights, where he initiated the firm's research coverage of supply chain and logistics innovation and advised large global companies on supply chain trends. He holds a BA in Economics from the University of California, Berkeley.",
+    sources: [
+      { label: "Ironspring Ventures — Natan Reddy bio", url: "https://ironspring.com/team_natan-reddy/" },
+      { label: "VCWire — Ironspring adds two principals (2025)", url: "https://vcwire.tech/2025/03/14/ironspring-ventures-adds-two-principals/" },
+      { label: "Ironspring — Document Crunch acquired by Trimble", url: "https://ironspring.com/document-crunch-to-be-acquired-by-trimble/" }
+    ]
+  },
+"drew-kriens": {
+    name: "Drew Kriens",
+    sectors: ["Industrial Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://ironspring.com/team_drew-kriens/",
+    firm: "Ironspring Ventures",
+    firmSlug: "ironspring-ventures",
+    title: "Principal",
+    joinedYear: 2026,
+    education: ["B.S. Business, University of Oregon"],
+    previousExperience: ["Senior Associate, Standard Investments", "Analyst, Juniper Networks"],
+    firmHistory: [],
+    boardSeats: ["1440 Multiversity"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Joined Ironspring Ventures as Principal." }
+    ],
+    notableInvestments: [],
+    biography: "Drew Kriens is a Principal at Ironspring Ventures, which he joined in February 2026. He spent more than six years at Standard Investments as a Senior Associate investing in early to growth stage industrial technology startups, contributing to more than 15 investments across a $500 million portfolio and leading sourcing, diligence, market research, and thesis development for core industrial tech industries. Earlier he was an analyst at Juniper Networks supporting the data science team's marketing efforts. He is an active angel investor in the Bay Area entrepreneurial ecosystem and serves on the board of 1440 Multiversity. He holds a B.S. in Business from the University of Oregon.",
+    sources: [
+      { label: "Ironspring Ventures — Drew Kriens bio", url: "https://ironspring.com/team_drew-kriens/" },
+      { label: "Ironspring — Welcomes Principal Drew Kriens (2026)", url: "https://ironspring.com/ironspring-ventures-welcomes-principal-drew-kriens/" }
+    ]
+  },
+"stephanie-volk": {
+    name: "Stephanie Volk",
+    sectors: [],
+    firm: "Ironspring Ventures",
+    firmSlug: "ironspring-ventures",
+    title: "Vice President, Platform",
+    joinedYear: 2023,
+    education: ["MBA, University of Michigan Ross School of Business", "BA, Columbia University"],
+    previousExperience: ["Vice President of Industry Engagement, National Venture Capital Association", "Platform & Commercial Development, GE Ventures (2015-2017)"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Joined GE Ventures, working in platform and commercial development supporting more than 100 portfolio companies." },
+      { year: 2023, event: "Joined Ironspring Ventures as its first Head of Platform." }
+    ],
+    notableInvestments: [],
+    biography: "Stephanie Volk is Vice President, Platform at Ironspring Ventures, where she leads platform work spanning program design, network development, brand strategy, and content. She joined the firm in January 2023 as its first Head of Platform and represents Ironspring on the West Coast from San Francisco. Previously she spent five years at the National Venture Capital Association as Vice President of Industry Engagement, designing programs for venture firm engagement across the industry. Earlier she worked in platform and commercial development at GE Ventures from 2015 to 2017, supporting a portfolio of more than 100 companies. She holds an MBA from the University of Michigan Ross School of Business and a BA from Columbia University.",
+    sources: [
+      { label: "Ironspring Ventures — Stephanie Volk bio", url: "https://ironspring.com/team_stephanie_volk/" },
+      { label: "Ironspring — Introducing Stephanie Volk (2023)", url: "https://ironspring.com/introducing-stephanie-volk/" }
+    ]
+  },
+"tom-chi": {
+    name: "Tom Chi",
+    sectors: ["Climate", "Deep Tech", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html",
+    firm: "At One Ventures",
+    firmSlug: "at-one-ventures",
+    title: "Managing Partner",
+    joinedYear: 2020,
+    education: ["Electrical Engineering, Cornell University"],
+    previousExperience: ["Founding member and Head of Experience, Google X", "Product and user experience leadership, Yahoo (Yahoo Search, Yahoo Answers)", "Product roles, Microsoft (Outlook)", "Astrophysical researcher, Harvard-Smithsonian Lab for Astrophysics"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Founded At One Ventures in San Francisco with Laurie Menoud and Helen Lin." },
+      { year: 2021, event: "At One Ventures announced the close of its 150 million dollar first fund." },
+      { year: 2023, event: "At One Ventures launched its 375 million dollar second fund, bringing assets under management above 500 million dollars." }
+    ],
+    notableInvestments: [
+    { name: "MOXY", ticker: null,
+      sector: "Deep Tech", subsector: "sustainable building materials", role: "board",
+      evidence: [{ url: "https://www.atoneventures.com/insights/welcome-our-latest-investment-moxy", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Ambient Photonics", ticker: null,
+      sector: "Deep Tech", subsector: "dye-sensitized solar cells",
+      evidence: [{ url: "https://www.atoneventures.com/insights/welcome-our-latest-investment-ambient-photonics", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Near Space Labs", ticker: null, stage: "Series B",
+      sector: "Deep Tech", subsector: "stratospheric imaging robotics",
+      evidence: [{ url: "https://www.atoneventures.com/insights/welcome-our-latest-investment-near-space-labs", type: "firm-announcement", checked: "2026-08-31" }] }
+  ],
+    biography: "Tom Chi is Managing Partner of At One Ventures, the San Francisco climate deep tech firm he founded in 2020 with Laurie Menoud and Helen Lin. He was earlier a founding member and Head of Experience at Google X, where he led the product experience team and contributed to projects including Google Glass, the self-driving car effort, and Project Loon. Before that he held product and user experience leadership roles at Yahoo, where he led Yahoo Search work across 44 countries and scaled Yahoo Answers to 90 million users, and at Microsoft, where he worked on Outlook. He began his career in astrophysical research. Under his leadership At One closed a 150 million dollar first fund in 2021 and launched a 375 million dollar second fund in 2023.",
+    sources: [
+      { label: "At One Ventures — Team", url: "https://www.atoneventures.com/team" },
+      { label: "At One Ventures Fund II press release (Oct 2023)", url: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html" },
+      { label: "At One Ventures Fund I press release (Oct 2021)", url: "https://www.webwire.com/ViewPressRel.asp?aId=280347" },
+      { label: "Singularity — Tom Chi speaker bio", url: "https://www.su.org/experts/tom-chi" }
+    ]
+  },
+"laurie-menoud": {
+    name: "Laurie Menoud",
+    sectors: ["Climate", "Deep Tech", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html",
+    firm: "At One Ventures",
+    firmSlug: "at-one-ventures",
+    title: "Founding Partner",
+    joinedYear: 2020,
+    education: [],
+    previousExperience: ["Co-led venture capital investing in North America, BASF", "Launched deep tech ventures from research, SRI International", "Chemical industry roles, Solvay"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Co-founded At One Ventures in San Francisco with Tom Chi and Helen Lin." },
+      { year: 2021, event: "Named as Partner in At One Ventures' announcement of its 150 million dollar first fund." },
+      { year: 2023, event: "Quoted as Founding Partner in At One Ventures' launch of its 375 million dollar second fund." }
+    ],
+    notableInvestments: [
+    { name: "Stellaria", ticker: null,
+      sector: "Deep Tech", subsector: "small modular nuclear reactors",
+      evidence: [{ url: "https://www.atoneventures.com/insights/welcome-our-latest-investment-stellaria", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Adden Energy", ticker: null, stage: "Series A",
+      sector: "Deep Tech", subsector: "lithium-metal solid-state batteries", role: "board",
+      evidence: [{ url: "https://www.atoneventures.com/insights/welcome-our-latest-investment-adden-energy", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Addis Energy", ticker: null,
+      sector: "Deep Tech", subsector: "subsurface ammonia production",
+      evidence: [{ url: "https://www.atoneventures.com/insights/welcome-our-latest-investment-addis-energy", type: "firm-announcement", checked: "2026-08-31" }] }
+  ],
+    biography: "Laurie Menoud is a Founding Partner of At One Ventures, the San Francisco climate deep tech firm she co-founded in 2020 with Tom Chi and Helen Lin. Trained as a biotechnologist, she has more than a decade of experience in deep tech commercialization, company building, and venture capital. She previously co-led venture capital investing for BASF in North America, worked in the chemical industry at Solvay, and launched deep tech companies built on research at SRI International. At At One Ventures she brings expertise in materials, biology, and chemicals. The firm closed a 150 million dollar first fund in 2021 and announced a 375 million dollar second fund in 2023.",
+    sources: [
+      { label: "At One Ventures — Team", url: "https://www.atoneventures.com/team" },
+      { label: "At One Ventures Fund II press release (Oct 2023)", url: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html" },
+      { label: "At One Ventures Fund I press release (Oct 2021)", url: "https://www.webwire.com/ViewPressRel.asp?aId=280347" }
+    ]
+  },
 "helen-lin": {
     name: "Helen Lin",
     sectors: ["Climate", "Deep Tech", "Sustainability"],
@@ -20,7 +306,20 @@ Object.assign(partnerProfiles, {
       { year: 2021, event: "Listed as Principal in At One Ventures' announcement of its 150 million dollar first fund." },
       { year: 2023, event: "Quoted as Partner in At One Ventures' launch of its 375 million dollar second fund." }
     ],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "ChemFinity", ticker: null, stage: "Seed",
+      sector: "Deep Tech", subsector: "metal recovery from waste streams",
+      evidence: [{ url: "https://www.atoneventures.com/insights/welcome-our-latest-investment-chemfinity", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Ravel", ticker: null,
+      sector: "Deep Tech", subsector: "textile-to-textile recycling",
+      evidence: [{ url: "https://www.atoneventures.com/insights/welcome-our-latest-investment-ravel", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Prefer", ticker: null,
+      sector: "Deep Tech", subsector: "fermentation-based coffee alternatives", role: "board",
+      evidence: [{ url: "https://www.atoneventures.com/insights/welcome-our-latest-investment-prefer", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Factor2 Energy", ticker: null,
+      sector: "Deep Tech", subsector: "supercritical CO2 geothermal",
+      evidence: [{ url: "https://www.atoneventures.com/insights/welcome-our-latest-investment-factor2-energy", type: "firm-announcement", checked: "2026-08-31" }] }
+  ],
     biography: "Helen Lin is a Partner at At One Ventures, the San Francisco climate deep tech firm founded in 2020, which the firm says Tom Chi founded together with her and Laurie Menoud. She has more than two decades of corporate finance experience across Asia, Africa, Europe, and North America, including mergers and acquisitions work at Baird and Houlihan Lokey, leadership of digital transformation for multinational banking operations, and design of financial products serving base of the pyramid customers at FINCA Impact Finance. She was listed as Principal in the firm's 2021 announcement of its 150 million dollar first fund and as Partner in its 2023 announcement of a 375 million dollar second fund.",
     sources: [
       { label: "At One Ventures — Team", url: "https://www.atoneventures.com/team" },
@@ -7893,184 +8192,6 @@ Object.assign(partnerProfiles, {
       { label: "CapitalG - Our investment in Whatnot", url: "https://capitalg.com/insights/our-investment-in-whatnot-fusing-ecommerce-with-entertainment-and-social" },
       { label: "CapitalG - Odoo: rebundling application software", url: "https://capitalg.com/insights/odoo-rebundling-application-software" },
       { label: "CapitalG - Base Power: scaling the grid", url: "https://capitalg.com/insights/base-power-scaling-the-grid" }
-    ]
-  },
-"h-dubose-montgomery": {
-    name: "H. DuBose Montgomery",
-    firm: "Menlo Ventures",
-    firmSlug: "menlo-ventures",
-    title: "Founder (1976)",
-    joinedYear: 1976,
-    departedYear: null,
-    departedNote: "Menlo Ventures lists him under Advisors and Partners Emeriti as Founder & Partner Emeritus, not among the firm's current investors.",
-    investmentFocus: [
-      "Healthcare",
-      "Medical Devices",
-      "Enterprise Software"
-    ],
-    education: [
-      "B.S. Electrical Engineering, Massachusetts Institute of Technology",
-      "M.S. Electrical Engineering, Massachusetts Institute of Technology",
-      "B.S. Management Science, Massachusetts Institute of Technology",
-      "M.B.A. with distinction, Harvard University Graduate School of Business Administration"
-    ],
-    previousExperience: [
-      "Researcher, Bell Laboratories, Murray Hill, New Jersey"
-    ],
-    firmHistory: [],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: null, event: "Conducted research at Bell Laboratories in Murray Hill, New Jersey." },
-      { year: 1976, event: "Founded Menlo Ventures at age 27." },
-      { year: null, event: "Served as a Trustee of the MIT Corporation and on MIT visiting committees for Electrical Engineering and Computer Science and for Sponsored Research." },
-      { year: null, event: "Listed by Menlo Ventures as Founder & Partner Emeritus among the firm's advisors and partners emeriti." }
-    ],
-    biography: "H. DuBose Montgomery founded Menlo Ventures in 1976 at age 27 and, by the firm's account, led investments in medical and information technology companies over roughly four decades there. Menlo credits him with investments including Asthmatx, EndoVascular Technologies, Entone, Frame Technology Corporation, Freightquote, Gilead Sciences, Infoseek, LSI Logic, Valid Logic Systems and VNUS Medical Technologies, and says he helped found four startups from their initial idea concepts. Before Menlo he did research at Bell Laboratories in Murray Hill, New Jersey, and he holds two issued patents and has been published in IEEE Proceedings. He earned three degrees from MIT and an M.B.A. with distinction from Harvard Business School, and Menlo Ventures now lists him as Founder & Partner Emeritus.",
-    notableInvestments: [
-      { name: "Asthmatx", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Medical Devices", subsector: "bronchial thermoplasty", role: null, evidence: [
-        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://menlovc.com/perspective/silicon-minds-dubose-montgomery/", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "EndoVascular Technologies", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Medical Devices", subsector: "endovascular grafts", role: null, evidence: [
-        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://menlovc.com/perspective/silicon-minds-dubose-montgomery/", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Entone", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "IP video devices", role: null, evidence: [
-        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://menlovc.com/perspective/silicon-minds-dubose-montgomery/", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Frame Technology Corporation", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "document publishing software", role: null, evidence: [
-        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Freightquote", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Mobility", subsector: "freight logistics marketplace", role: null, evidence: [
-        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Gilead Sciences", ticker: "GILD", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: null, evidence: [
-        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Infoseek", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "internet search", role: null, evidence: [
-        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "LSI Logic", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "semiconductors", role: null, evidence: [
-        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Valid Logic Systems", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "electronic design automation", role: null, evidence: [
-        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "VNUS Medical Technologies", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Medical Devices", subsector: "venous reflux disease treatment", role: null, evidence: [
-        { url: "https://menlovc.com/team/h-dubose-montgomery/", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Menlo Ventures - H. DuBose Montgomery", url: "https://menlovc.com/team/h-dubose-montgomery/" },
-      { label: "Menlo Ventures - Silicon Minds: DuBose Montgomery", url: "https://menlovc.com/perspective/silicon-minds-dubose-montgomery/" },
-      { label: "Menlo Ventures - Team", url: "https://menlovc.com/team/" }
-    ]
-  },
-"jennifer-place": {
-    name: "Jennifer Place",
-    firm: "Munich Re Ventures",
-    firmSlug: "munich-re-ventures",
-    title: "Principal",
-    joinedYear: null,
-    departedYear: null,
-    departedNote: "Munich Re Ventures' own team page (munichre.com/mrv/en/team.html) did not list Jennifer Place when checked on 2026-08-25; the page shows only Oshri Kaplan, Sidra Ahmed Lefort, Timur Davis, Ben Bergsma, Marc Buechel, Alex Kamenetskiy, Peter Volz and Mike Feeley. The last primary-source confirmation of her as Principal is Munich Re Ventures' 21 May 2025 announcement of its $125 million HSB fund. Munich Re said in late 2025 that it would wind the venture unit down by mid-2026, with a smaller team overseen by MEAG remaining in San Francisco.",
-    investmentFocus: [
-      "Real Estate Tech"
-    ],
-    education: [],
-    previousExperience: [],
-    firmHistory: [],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 2025, event: "Named in Munich Re Ventures' HSB Fund II announcement as the Principal who would oversee the HSB Funds and lead Built World sector investments." },
-      { year: 2025, event: "Co-authored Munich Re Ventures' post on its participation in Runwise's Series B." }
-    ],
-    biography: "Jennifer Place was identified as a Principal at Munich Re Ventures in the firm's 21 May 2025 announcement of a new $125 million fund from HSB, which stated that she would oversee the HSB Funds and lead investments for the Built World sector. In June 2025 she co-authored Munich Re Ventures' post announcing the firm's participation in Runwise's Series B round for its smart operating system for buildings. Munich Re Ventures' team page did not list her when checked in August 2026, and Munich Re had said in late 2025 that it would wind the venture unit down by mid-2026.",
-    notableInvestments: [
-      { name: "Runwise", ticker: null, stage: "Series B", year: 2025, yearPrecision: "year", sector: "Real Estate Tech", subsector: "smart operating system for buildings", role: null, evidence: [
-        { url: "https://medium.com/@MunichReVentures/where-old-infrastructure-meets-new-intelligence-runwises-no-brainer-building-solution-803ae58ca25f", type: "firm-announcement", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Munich Re Ventures - Celebrates Ten Year Anniversary with New $125 Million Fund from HSB (PR Newswire)", url: "https://www.prnewswire.com/news-releases/munich-re-ventures-celebrates-ten-year-anniversary-with-new-125-million-fund-from-hsb-302461095.html" },
-      { label: "Munich Re Ventures - Team", url: "https://www.munichre.com/mrv/en/team.html" },
-      { label: "Munich Re Ventures - Where Old Infrastructure Meets New Intelligence: Runwise's 'No Brainer' Building Solution", url: "https://medium.com/@MunichReVentures/where-old-infrastructure-meets-new-intelligence-runwises-no-brainer-building-solution-803ae58ca25f" },
-      { label: "Global Venturing - Munich Re winds down $1.2bn VC arm after decade of investing", url: "https://globalventuring.com/corporate/services/munich-re-winds-down-1-2bn-vc-arm-after-decade-of-investing/" }
-    ]
-  },
-"norman-fiore": {
-    name: "Norman Fiore",
-    firm: "Dawn Capital",
-    firmSlug: "dawn-capital",
-    title: "Co-Founder & General Partner",
-    joinedYear: 2006,
-    investmentFocus: [
-      "Enterprise Software",
-      "Cybersecurity",
-      "AI"
-    ],
-    education: [
-      "BSc Engineering, Stanford University",
-      "BA Quantitative Economics, Stanford University",
-      "MBA with distinction, INSEAD"
-    ],
-    previousExperience: [
-      "Began his career at Bain & Company",
-      "General Partner, Reuters' $450m corporate venture fund (which he later acquired via a management buyout)"
-    ],
-    firmHistory: [],
-    boardSeats: [
-      "Balance in Business"
-    ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: null, event: "Began his career at Bain & Company." },
-      { year: null, event: "Was a General Partner at Reuters' $450m corporate venture fund, which he later acquired through a management buyout." },
-      { year: 2006, event: "Co-founded Dawn Capital, which the firm's own site dates to 2006." }
-    ],
-    biography: "Norman Fiore is a co-founder and General Partner at Dawn Capital, the London B2B software investor, where his own bio says he invests across automation, data, security and vertical software. Dawn's site states he has led early investments in Mimecast, Gelato, Collibra, Quantexa, Qogita and Blackwall. Before Dawn he was a General Partner at Reuters' $450m corporate venture fund, which he later acquired via a management buyout, and he began his career at Bain & Company. He holds a BSc in Engineering and a BA in Quantitative Economics from Stanford and an MBA with distinction from INSEAD, and serves as a Director at Balance in Business.",
-    notableInvestments: [
-      { name: "Mimecast", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: "Email security", role: null, evidence: [
-        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Collibra", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "The data intelligence platform", role: null, evidence: [
-        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
-      ] },
-      { name: "Quantexa", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "The decision intelligence leader", role: null, evidence: [
-        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
-      ] },
-      { name: "Gelato", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: "The global on-demand print platform", role: null, evidence: [
-        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
-      ] },
-      { name: "Qogita", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: "The global wholesale B2B platform", role: null, evidence: [
-        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
-      ] },
-      { name: "Blackwall", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: "Web security & traffic filtering for hosting providers", role: null, evidence: [
-        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
-      ] },
-      { name: "Showpad", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
-        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Garrison", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: null, role: null, evidence: [
-        { url: "https://www.dawncapital.com/team/norman-fiore", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Dawn Capital - Norman Fiore", url: "https://www.dawncapital.com/team/norman-fiore" },
-      { label: "Dawn Capital - Team", url: "https://www.dawncapital.com/team/" },
-      { label: "Dawn Capital - Companies", url: "https://www.dawncapital.com/companies" },
-      { label: "Dawn Capital - Josh Bell (states Dawn was founded in 2006)", url: "https://www.dawncapital.com/team/josh-bell" }
     ]
   }
 });
