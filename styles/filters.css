@@ -59,7 +59,7 @@
   .stage-discovery-hint {
     text-transform: none;
     letter-spacing: normal;
-    color: var(--hairline);
+    color: var(--ink-dim);
   }
   .stage-card-grid {
     display: grid;
@@ -134,7 +134,7 @@
   .filter-hint {
     text-transform: none;
     letter-spacing: normal;
-    color: var(--hairline);
+    color: var(--ink-dim);
   }
   .filter-chips {
     display: flex;
