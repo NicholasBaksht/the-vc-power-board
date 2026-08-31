@@ -1,5 +1,351 @@
 /* data-partners shard 5 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
+"wayne-hu": {
+    name: "Wayne Hu",
+    firm: "SignalFire",
+    firmSlug: "signalfire",
+    title: "Partner",
+    joinedYear: 2015,
+    investmentFocus: [
+      "Enterprise Software",
+      "Consumer"
+    ],
+    education: [
+      "MBA, Harvard Business School",
+      "B.A. Mathematical Economics, Princeton University"
+    ],
+    previousExperience: [
+      "Turnaround initiatives, Chicago public school system, followed by early-stage ed tech advisory work",
+      "Consultant, McKinsey & Company (one of five consultants selected for a Global Institute Fellowship at the McKinsey Global Institute)",
+      "Global Strategy Lead, YouTube ads monetization, Google"
+    ],
+    firmHistory: [
+      { firmSlug: "kleiner-perkins", role: "Investment team (while earning his MBA at Harvard Business School), focused on transportation, robotics and marketplaces", startYear: null, endYear: null }
+    ],
+    boardSeats: [
+      "Grow Therapy",
+      "Justpoint",
+      "Farsight AI",
+      "Patlytics"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Joined SignalFire to help form the firm's initial investment team." },
+      { year: 2021, event: "Joined Grow Therapy's board of directors as SignalFire backed the company's $15M Series A." },
+      { year: 2023, event: "Authored SignalFire's post on EvenUp's $50.5M Series B." },
+      { year: 2024, event: "Authored SignalFire's announcement of Grow Therapy's $88M Series C." },
+      { year: 2025, event: "Named a director of Justpoint in its Form D filing after SignalFire led the company's $45M Series A." },
+      { year: 2026, event: "Co-authored SignalFire's announcement of Solace's $130M Series C." }
+    ],
+    biography: "Wayne Hu joined SignalFire in 2015 to help form the firm's initial investment team and is a partner covering seed through Series A and B, with a stated sector focus on vertical SaaS and consumer. He was previously one of five consultants at McKinsey & Company selected for a Global Institute Fellowship, and served as global strategy lead for YouTube ads monetization at Google. He received an MBA from Harvard Business School while working on the investment team at Kleiner Perkins Caufield & Byers, and holds a B.A. in mathematical economics from Princeton University. SEC Form D filings name him as a director of Grow Care (Grow Therapy), Justpoint, Farsight AI and Patlytics.",
+    notableInvestments: [
+      { name: "Grow Therapy", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year", sector: "Digital Health", subsector: "mental health provider practices and insurance coverage", role: "board", evidence: [
+        { url: "https://techcrunch.com/2021/09/23/grow-therapy-plants-15m-into-helping-therapists-start-their-own-practices/", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.sec.gov/Archives/edgar/data/1887838/000188783824000003/primary_doc.xml", type: "regulatory", checked: "2026-08-25" },
+        { url: "https://www.signalfire.com/blog/grow-therapy-revamp-mental-health", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Justpoint", ticker: null, stage: "Series A", year: 2025, yearPrecision: "year", sector: "Legal Tech", subsector: "AI for toxic exposure claims", role: "board", evidence: [
+        { url: "https://www.signalfire.com/blog/justpoint-investor", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://www.sec.gov/Archives/edgar/data/1910058/000191005825000001/primary_doc.xml", type: "regulatory", checked: "2026-08-25" }
+      ] },
+      { name: "EvenUp", ticker: null, stage: "Series B", year: 2023, yearPrecision: "year", sector: "Legal Tech", subsector: "AI for personal injury claims", role: null, evidence: [
+        { url: "https://www.signalfire.com/blog/evenup-ai-investor", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Mandolin", ticker: null, stage: "Series A", year: 2025, yearPrecision: "year", sector: "Digital Health", subsector: "AI agent platform for specialty drug access", role: null, evidence: [
+        { url: "https://www.signalfire.com/blog/mandolin-investor", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Solace", ticker: null, stage: "Series C", year: 2026, yearPrecision: "year", sector: "Digital Health", subsector: "healthcare advocacy", role: null, evidence: [
+        { url: "https://www.signalfire.com/blog/solace-investor", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Freshpaint", ticker: null, stage: "Series B", year: 2024, yearPrecision: "year", sector: "Digital Health", subsector: "HIPAA-compliant healthcare marketing", role: null, evidence: [
+        { url: "https://www.signalfire.com/team/wayne-hu", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.signalfire.com/blog/freshpaint-investor", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Farsight AI", ticker: null, stage: null, year: 2026, yearPrecision: "year", sector: null, subsector: null, role: "board", evidence: [
+        { url: "https://www.sec.gov/Archives/edgar/data/1982344/000198234426000001/primary_doc.xml", type: "regulatory", checked: "2026-08-25" },
+        { url: "https://www.signalfire.com/portfolio", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Patlytics", ticker: null, stage: null, year: 2026, yearPrecision: "year", sector: null, subsector: null, role: "board", evidence: [
+        { url: "https://www.sec.gov/Archives/edgar/data/2051258/000205125826000001/primary_doc.xml", type: "regulatory", checked: "2026-08-25" },
+        { url: "https://www.signalfire.com/portfolio", type: "portfolio-page", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "SignalFire - Wayne Hu", url: "https://www.signalfire.com/team/wayne-hu" },
+      { label: "SignalFire - Team", url: "https://www.signalfire.com/team" },
+      { label: "SignalFire - Portfolio", url: "https://www.signalfire.com/portfolio" },
+      { label: "TechCrunch - Grow Therapy plants $15M into helping therapists start their own practices", url: "https://techcrunch.com/2021/09/23/grow-therapy-plants-15m-into-helping-therapists-start-their-own-practices/" },
+      { label: "SEC Form D - Grow Care, Inc. (filed 2024-04-19)", url: "https://www.sec.gov/Archives/edgar/data/1887838/000188783824000003/primary_doc.xml" },
+      { label: "SEC Form D - Justpoint Inc. (filed 2025-02-12)", url: "https://www.sec.gov/Archives/edgar/data/1910058/000191005825000001/primary_doc.xml" },
+      { label: "SEC Form D - Farsight AI, Inc. (filed 2026-07-16)", url: "https://www.sec.gov/Archives/edgar/data/1982344/000198234426000001/primary_doc.xml" },
+      { label: "SEC Form D - Patlytics, Inc. (filed 2026-04-30)", url: "https://www.sec.gov/Archives/edgar/data/2051258/000205125826000001/primary_doc.xml" }
+    ]
+  },
+"santo-politi": {
+    name: "Santo Politi",
+    firm: "Spark Capital",
+    firmSlug: "spark-capital",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2005,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Engineer, Panasonic Broadcast and Television division",
+      "Bankers Trust, helping launch the bank's first early stage venture arm",
+      "President, Blockbuster",
+      "General Partner, Charles River Ventures"
+    ],
+    firmHistory: [
+      { firmSlug: "crv", role: "General Partner", startYear: null, endYear: null }
+    ],
+    boardSeats: [
+      "eToro Group Ltd."
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2005, event: "Co-founded Spark Capital with Todd Dagres and Bijan Sabet." },
+      { year: 2012, event: "Was quoted for Spark Capital on eToro's $15 million funding round, which Spark led." },
+      { year: 2013, event: "Joined the board of Oculus VR when Spark co-led its $16 million Series A." },
+      { year: 2015, event: "Joined the board of Cybereason when Spark led its $25 million Series B." },
+      { year: 2026, event: "Was identified as a Class II director of the public company eToro Group Ltd. in its shareholder meeting filing." }
+    ],
+    biography: "Santo Politi is a co-founder of Spark Capital and a General Partner on its Early team, which the firm's site lists as 'Co-founder & General Partner, Early.' He grew up in Turkey, came to the United States on a scholarship to study electrical engineering, and spent a decade as an engineer in Panasonic's Broadcast and Television division before joining Bankers Trust to help launch the bank's first early stage venture arm, serving as President of Blockbuster and then becoming a general partner at Charles River Ventures. He co-founded Spark in 2005 with Todd Dagres and Bijan Sabet. He led Spark's investments in Oculus VR, Cybereason and eToro, and is a Class II director of eToro Group Ltd.",
+    notableInvestments: [
+      { name: "Oculus VR", ticker: null, stage: "Series A", year: 2013, yearPrecision: "year", sector: "Hardware", subsector: "virtual reality headsets", role: "board", evidence: [
+        { url: "https://techcrunch.com/2013/06/17/oculus-vr-raises-16m-to-build-their-crazy-virtual-reality-gaming-goggles/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Cybereason", ticker: null, stage: "Series B", year: 2015, yearPrecision: "year", sector: "Cybersecurity", subsector: "endpoint detection and response", role: "board", evidence: [
+        { url: "https://www.cybereason.com/press/cybereason-closes-25-million-series-b-funding-enters-lockheed-martin-partnership", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "eToro", ticker: "ETOR", stage: null, year: 2012, yearPrecision: "year", sector: "Fintech", subsector: "social trading and investing platform", role: "board", evidence: [
+        { url: "https://www.prnewswire.com/news-releases/etoro-completes-funding-round-of-15-million-led-by-spark-capital-142421535.html", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://investors.etoro.com/static-files/14b26641-8376-48fe-8d67-f9aaf75f515d", type: "regulatory", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Spark Capital - Santo Politi", url: "https://www.sparkcapital.com/team-members/santo-politi" },
+      { label: "Spark Capital - Team", url: "https://www.sparkcapital.com/team" },
+      { label: "SEC Form 6-K - eToro Group Ltd. shareholder meeting filing (Class II directors)", url: "https://investors.etoro.com/static-files/14b26641-8376-48fe-8d67-f9aaf75f515d" },
+      { label: "TechCrunch - Oculus VR Raises $16M", url: "https://techcrunch.com/2013/06/17/oculus-vr-raises-16m-to-build-their-crazy-virtual-reality-gaming-goggles/" },
+      { label: "Cybereason Closes $25 Million Series B Funding", url: "https://www.cybereason.com/press/cybereason-closes-25-million-series-b-funding-enters-lockheed-martin-partnership" },
+      { label: "eToro Completes Funding Round of $15 Million Led by Spark Capital", url: "https://www.prnewswire.com/news-releases/etoro-completes-funding-round-of-15-million-led-by-spark-capital-142421535.html" },
+      { label: "PreVeil - Santo Politi", url: "https://www.preveil.com/team/santo-politi/" }
+    ]
+  },
+"todd-dagres": {
+    name: "Todd Dagres",
+    firm: "Spark Capital",
+    firmSlug: "spark-capital",
+    title: "Co-Founder",
+    joinedYear: 2005,
+    departedYear: null,
+    departedNote: "Spark Capital's own bio page titles him 'Co-founder & Partner Emeritus,' and the firm's team page lists him under Operations rather than its Early or Growth investing teams. He is no longer listed as a director in 1stdibs.com, Inc.'s 2025 proxy statement.",
+    investmentFocus: [],
+    education: [
+      "B.S. Psychology, Trinity College",
+      "M.B.A., Boston University"
+    ],
+    previousExperience: [
+      "Senior technology analyst, Yankee Group",
+      "Senior technology analyst, Smith Barney",
+      "Senior technology analyst, Montgomery Securities",
+      "General Partner, Battery Ventures"
+    ],
+    firmHistory: [
+      { firmSlug: "battery-ventures", role: "General Partner", startYear: null, endYear: null }
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2005, event: "Co-founded Spark Capital with Santo Politi and Bijan Sabet." },
+      { year: 2012, event: "Led Spark Capital's investment in 1stdibs' $42 million Series B and joined its board of directors." },
+      { year: 2017, event: "Led Spark Capital's $8.5 million Series B in SiFive and joined its board of directors." },
+      { year: null, event: "Served as a general partner at Battery Ventures, leading its investments in Akamai Technologies, Arbor Networks, Broadbus, Redstone, River Delta Networks, Qtera and XCOM." }
+    ],
+    biography: "Todd Dagres co-founded Spark Capital in 2005 and is described on the firm's site as its co-founder and partner emeritus. At Spark he led investments in 1stdibs, Freight Farms, Jana, Kateeva, SiFive and Signpost, and earlier in Covestor and Verivue. Before Spark he was a general partner at Battery Ventures, where he led investments including Akamai Technologies, Arbor Networks, Qtera and XCOM, and earlier he was a senior technology analyst at Montgomery Securities, Smith Barney and the Yankee Group. He is co-founder and chairman of the venture philanthropy organization Power Launch, has taught as an adjunct professor at the MIT Sloan School of Business, and holds a B.S. in psychology from Trinity College and an M.B.A. from Boston University.",
+    notableInvestments: [
+      { name: "1stdibs", ticker: "DIBS", stage: "Series B", year: 2012, yearPrecision: "year", sector: "Ecommerce", subsector: "online luxury and vintage marketplace", role: "board", evidence: [
+        { url: "https://www.prnewswire.com/news-releases/growth-in-online-luxury-marketplace-attracts-investment-from-index-ventures-spark-capital-and-benchmark-181846841.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "SiFive", ticker: null, stage: "Series B", year: 2017, yearPrecision: "year", sector: "Hardware", subsector: "RISC-V based semiconductors", role: "board", evidence: [
+        { url: "https://www.sifive.com/press/sifive-secures-8-5-million-series-b-funding-to-advance-risc-v-based-semiconductors", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Freight Farms", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Agtech", subsector: "container farming systems", role: null, evidence: [
+        { url: "https://www.sparkcapital.com/team-members/todd-dagres", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Kateeva", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Industrial & Manufacturing Technology", subsector: "inkjet deposition equipment for OLED displays", role: null, evidence: [
+        { url: "https://www.sparkcapital.com/team-members/todd-dagres", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Akamai Technologies", ticker: "AKAM", stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "content delivery and internet infrastructure", role: null, evidence: [
+        { url: "https://www.sparkcapital.com/team-members/todd-dagres", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Spark Capital - Todd Dagres", url: "https://www.sparkcapital.com/team-members/todd-dagres" },
+      { label: "Spark Capital - Team", url: "https://www.sparkcapital.com/team" },
+      { label: "1stdibs $42M Series B announcement (Index Ventures, Spark Capital, Benchmark)", url: "https://www.prnewswire.com/news-releases/growth-in-online-luxury-marketplace-attracts-investment-from-index-ventures-spark-capital-and-benchmark-181846841.html" },
+      { label: "SiFive Secures $8.5 Million Series B Funding", url: "https://www.sifive.com/press/sifive-secures-8-5-million-series-b-funding-to-advance-risc-v-based-semiconductors" },
+      { label: "SEC DEF 14A - 1stdibs.com, Inc. 2025 proxy statement", url: "https://www.sec.gov/Archives/edgar/data/1600641/000160064125000046/def14aproxystatement2025an.htm" }
+    ]
+  },
+"alan-patricof": {
+    name: "Alan Patricof",
+    firm: "Greycroft",
+    firmSlug: "greycroft",
+    title: "Co-Founder & Chairman",
+    joinedYear: 2006,
+    departedYear: null,
+    departedNote: "Greycroft's own site lists him as Co-Founder & Chairman Emeritus on his bio page, and he does not appear on the firm's current team roster of investors. An April 2026 press release likewise describes him as Chairman Emeritus of Greycroft while serving as Chairperson and co-founder of Primetime Partners, the fund for older adults he co-founded in 2020.",
+    investmentFocus: [],
+    education: [
+      "B.S. Finance, Ohio State University",
+      "M.B.A., Columbia University Graduate School of Business"
+    ],
+    previousExperience: [
+      "Founder & Chairman of the Board, New York magazine",
+      "Founder, Patricof & Co. Ventures Inc. (predecessor to Apax Partners)",
+      "Founder, Apax Partners",
+      "Co-Founder & Chairperson, Primetime Partners"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1979, event: "Invested in Apple as a second round investor." },
+      { year: 1985, event: "Backed Quantum Computer Services, which later became America Online." },
+      { year: 2004, event: "Stepped back from the daily administration and operational aspects of Apax Partners." },
+      { year: 2006, event: "Co-founded Greycroft." },
+      { year: 2020, event: "Co-founded Primetime Partners with Abby Miller Levy to invest in products and services for adults over 60." },
+      { year: 2026, event: "Joined the board of directors of CaringKind." }
+    ],
+    biography: "Alan Patricof co-founded Greycroft in 2006, after creating Patricof & Co. Ventures, the predecessor to Apax Partners, and stepping back from the daily administration and operational aspects of Apax in 2004. Greycroft's site states his investments have included America Online, Office Depot, Cadence Systems, Apple Computer, Audible, Axios and Wondery. He also founded and chaired the board of New York magazine, which subsequently acquired the Village Voice and New West. In 2020 he co-founded Primetime Partners with Abby Miller Levy, and Greycroft now lists him as Co-Founder and Chairman Emeritus.",
+    notableInvestments: [
+      { name: "Apple", ticker: "AAPL", stage: null, year: 1979, yearPrecision: "year", sector: "Hardware", subsector: "personal computers", role: null, evidence: [
+        { url: "https://fortune.com/2017/12/11/alan-patricof-greycroft-apple-aol/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "America Online (Quantum Computer Services)", ticker: null, stage: null, year: 1985, yearPrecision: "year", sector: "Consumer", subsector: "online services", role: null, evidence: [
+        { url: "https://fortune.com/2017/12/11/alan-patricof-greycroft-apple-aol/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Office Depot", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "office products retail", role: null, evidence: [
+        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://business.columbia.edu/columbia-business-school-board/people/alan-j-patricof-57", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Audible", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "spoken word audio", role: null, evidence: [
+        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://business.columbia.edu/columbia-business-school-board/people/alan-j-patricof-57", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Cadence Systems", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "electronic design automation", role: null, evidence: [
+        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Axios", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "digital media", role: null, evidence: [
+        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Wondery", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "podcast network", role: null, evidence: [
+        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Greycroft - Alan Patricof", url: "https://www.greycroft.com/team/alan-patricof/" },
+      { label: "Greycroft - Team", url: "https://www.greycroft.com/team" },
+      { label: "Columbia Business School - Alan J. Patricof '57", url: "https://business.columbia.edu/columbia-business-school-board/people/alan-j-patricof-57" },
+      { label: "Fortune - Alan Patricof, Greycroft, Apple, AOL (2017)", url: "https://fortune.com/2017/12/11/alan-patricof-greycroft-apple-aol/" },
+      { label: "BusinessWire - Alan Patricof and Abby Miller Levy Launch Primetime Partners (2020)", url: "https://www.businesswire.com/news/home/20200729005715/en/Venture-Capital-Pioneer-Alan-Patricof-and-Wellness-Executive-Abby-Miller-Levy-Launch-Primetime-Partners" },
+      { label: "PR Newswire - Alan J. Patricof Joins CaringKind's Board of Directors (2026)", url: "https://www.prnewswire.com/news-releases/alan-j-patricof-venture-capital-pioneer-and-champion-of-aging-and-longevity-joins-caringkinds-board-of-directors-302751996.html" }
+    ]
+  },
+"ian-sigalow": {
+    name: "Ian Sigalow",
+    firm: "Greycroft",
+    firmSlug: "greycroft",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2006,
+    investmentFocus: [
+      "AI",
+      "Fintech",
+      "Consumer"
+    ],
+    education: [
+      "B.S., Massachusetts Institute of Technology",
+      "M.B.A., Columbia Business School"
+    ],
+    previousExperience: [
+      "Founder, StrongData (payment encryption startup)",
+      "Venture capital investor, Boston Millennia Partners"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "HealthVerity",
+      "Pie Insurance"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Founded StrongData, a payment encryption startup addressing card not present fraud." },
+      { year: 2006, event: "Co-founded Greycroft." },
+      { year: 2012, event: "Represented Greycroft on the 5 million dollar Series B round it led in LongTail Video." },
+      { year: 2013, event: "Joined the Skimlinks board as an observer after Greycroft led the company's growth financing round." }
+    ],
+    biography: "Ian Sigalow co-founded Greycroft in 2006 and serves as Managing Partner in the firm's New York office, where his bio says he helps guide the firm's operations, investment strategy and long term vision. Greycroft states he invests in high growth companies in the digital economy with a recent emphasis on artificial intelligence, and that he has led investments in Venmo, Braintree, Shipt, Buddy Media, Plated, Bright Health Group, WorkFusion and Extreme Reach. Before Greycroft he founded StrongData, a payment encryption startup addressing card not present fraud, and began his venture capital career at Boston Millennia Partners. He holds a B.S. from MIT and an M.B.A. from Columbia Business School, and currently sits on the boards of HealthVerity and Pie Insurance.",
+    notableInvestments: [
+      { name: "Venmo", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "peer to peer payments", role: null, evidence: [
+        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://healthverity.com/about-us/board/ian-sigalow/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Braintree", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "payments infrastructure", role: null, evidence: [
+        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://healthverity.com/about-us/board/ian-sigalow/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Shipt", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: "same day grocery delivery", role: null, evidence: [
+        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://healthverity.com/about-us/board/ian-sigalow/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Buddy Media", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "social media marketing", role: null, evidence: [
+        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://healthverity.com/about-us/board/ian-sigalow/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Plated", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Foodtech", subsector: "meal kits", role: null, evidence: [
+        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://healthverity.com/about-us/board/ian-sigalow/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Bright Health Group", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: null, role: null, evidence: [
+        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "WorkFusion", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "intelligent automation", role: null, evidence: [
+        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Extreme Reach", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "advertising technology", role: null, evidence: [
+        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "LongTail Video", ticker: null, stage: "Series B", year: 2012, yearPrecision: "year", sector: "Enterprise Software", subsector: "online video platform", role: null, evidence: [
+        { url: "https://adtechdaily.com/2012/11/12/longtail-video-secures-5-million-in-series-b-funding-led-by-greycroft/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Skimlinks", ticker: null, stage: "Growth", year: 2013, yearPrecision: "year", sector: "Ecommerce", subsector: "content monetization", role: null, evidence: [
+        { url: "https://www.prnewswire.com/news-releases/skimlinks-raises-growth-financing-round-led-by-greycroft-partners-204101651.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "HealthVerity", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: "healthcare data", role: "board", evidence: [
+        { url: "https://healthverity.com/about-us/board/ian-sigalow/", type: "press", checked: "2026-08-25" },
+        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Pie Insurance", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "small business insurance", role: "board", evidence: [
+        { url: "https://www.pieinsurance.com/about/board-of-directors", type: "press", checked: "2026-08-25" },
+        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Greycroft - Ian Sigalow", url: "https://www.greycroft.com/team/ian-sigalow/" },
+      { label: "Greycroft - Team", url: "https://www.greycroft.com/team" },
+      { label: "HealthVerity - Board - Ian Sigalow", url: "https://healthverity.com/about-us/board/ian-sigalow/" },
+      { label: "Pie Insurance - Board of Directors", url: "https://www.pieinsurance.com/about/board-of-directors" },
+      { label: "PR Newswire - Skimlinks Raises Growth Financing Round Led by Greycroft Partners (2013)", url: "https://www.prnewswire.com/news-releases/skimlinks-raises-growth-financing-round-led-by-greycroft-partners-204101651.html" },
+      { label: "Ad Tech Daily - LongTail Video Secures $5 Million Series B Led by Greycroft (2012)", url: "https://adtechdaily.com/2012/11/12/longtail-video-secures-5-million-in-series-b-funding-led-by-greycroft/" }
+    ]
+  },
 "reid-dennis": {
     name: "Reid Dennis",
     firm: "IVP",
@@ -6902,7 +7248,11 @@ Object.assign(partnerProfiles, {
       evidence: [{ url: "https://www.sharpist.com/press/sharpist-raises-23-million-series-a-funding-round", type: "deal-announcement", checked: "2026-09-01" }] },
     { name: "Laka", ticker: null, stage: "Series A", year: 2025, yearPrecision: "year",
       sector: "Fintech", subsector: "digital insurance for cycling and sustainable mobility",
-      evidence: [{ url: "https://cyclingindustry.news/laka-receives-investment-funding-from-porsche-ventures/", type: "deal-announcement", checked: "2026-09-01" }] }
+      evidence: [{ url: "https://cyclingindustry.news/laka-receives-investment-funding-from-porsche-ventures/", type: "deal-announcement", checked: "2026-09-01" },
+                  { url: "https://www.uktech.news/fintech/porsche-laka-20220624", type: "press", checked: "2026-09-02" }] },
+    { name: "cylib", ticker: null, stage: "Series A", year: 2024, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "battery recycling",
+      evidence: [{ url: "https://www.pv-magazine.de/unternehmensmeldungen/cylib-sichert-sich-55-millionen-euro-series-a-finanzierung-um-next-gen-batterierecycling-technologie-industriell-zu-skalieren/", type: "deal-announcement", checked: "2026-09-02" }] }
   ],
     sources: [
       { label: "Porsche Ventures - official site", url: "https://porsche.ventures/" },
@@ -7575,7 +7925,9 @@ Object.assign(partnerProfiles, {
     notableInvestments: [
     { name: "Sistema.bio", ticker: null, stage: null, year: 2024, yearPrecision: "year",
       sector: "Climate & Energy", subsector: "biogas systems turning farm waste into renewable energy and fertiliser", role: null,
-      evidence: [{ url: "https://sistema.bio/blog/novastar-ventures-backs-sistemabio-africa/", type: "deal-announcement", checked: "2026-08-25" }] },
+      evidence: [{ url: "https://sistema.bio/blog/novastar-ventures-backs-sistemabio-africa/", type: "deal-announcement", checked: "2026-08-25" },
+                  { url: "https://nextbillion.net/news/press-release-novastar-ventures-backs-the-growth-of-sistema-bio-in-africa/", type: "deal-announcement", checked: "2026-09-02" },
+                  { url: "https://www.africaprivateequitynews.com/p/novastar-ventures-announces-first", type: "press", checked: "2026-09-02" }] },
     { name: "Komaza", ticker: null, stage: "Series B", year: 2020, yearPrecision: "year",
       sector: "Agtech", subsector: "tech-enabled sustainable forestry", role: null,
       evidence: [{ url: "https://www.africaglobalfunds.com/news/private-equity/deals/novastar-ventures-and-lps-lead-28m-series-b-for-kenyan-sustainable-forestry-company-komaza/", type: "deal-announcement", checked: "2026-08-25" },
@@ -7585,7 +7937,11 @@ Object.assign(partnerProfiles, {
       evidence: [{ url: "https://www.africatechsummit.com/speakers/steve-beck/", type: "press", checked: "2026-08-25" }] },
     { name: "Sanergy", ticker: null, stage: "Seed", year: null, yearPrecision: null,
       sector: "Climate & Energy", subsector: null, role: null,
-      evidence: [{ url: "https://www.africatechsummit.com/speakers/steve-beck/", type: "press", checked: "2026-08-25" }] }
+      evidence: [{ url: "https://www.africatechsummit.com/speakers/steve-beck/", type: "press", checked: "2026-08-25" }] },
+    { name: "Elephant Healthcare", ticker: null,
+      sector: "Digital Health", role: "board",
+      evidence: [{ url: "https://find-and-update.company-information.service.gov.uk/officers/VEOqbkrHrZxbJ_IJ92rufOussbw/appointments", type: "regulatory", checked: "2026-09-02" },
+                  { url: "https://www.novastarventures.com/portfolio/", type: "portfolio-page", checked: "2026-09-02" }] }
   ],
     sources: [
       { label: "Africa Tech Summit - Steve Beck (speaker biography)", url: "https://www.africatechsummit.com/speakers/steve-beck/" },
