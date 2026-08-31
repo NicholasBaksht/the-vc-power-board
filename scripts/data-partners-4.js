@@ -1,5 +1,599 @@
 /* data-partners shard 4 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
+"aaron-rudberg": {
+    name: "Aaron Rudberg",
+    sectors: ["Food & Agriculture", "Energy", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.s2ginvestments.com/team/aaron-rudberg",
+    firm: "S2G Investments",
+    firmSlug: "s2g-investments",
+    title: "Managing Partner",
+    joinedYear: 2017,
+    education: ["BA, University of Illinois at Urbana-Champaign", "MBA, Kellogg School of Management, Northwestern University"],
+    previousExperience: ["Partner and Managing Director, Baird Capital", "Investment roles, Muller & Monroe Asset Management"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2017, event: "Joined S2G Ventures as Chief Operating Officer after nearly a decade as a partner at Baird Capital." },
+      { year: 2024, event: "Named among the longtime managing partners leading S2G as it launched as a registered investment adviser and standalone business." }
+    ],
+    notableInvestments: [],
+    biography: "Aaron Rudberg is Managing Partner and co-leader of S2G Investments, focused on the firm's day to day operations, portfolio management, and culture. He joined S2G in 2017 as Chief Operating Officer after roughly ten years at Baird Capital, where as Partner and Managing Director he oversaw strategy, investor relations, marketing, and business development for a multi-billion dollar private equity and venture capital operation. Earlier he worked at Muller & Monroe Asset Management, investing in emerging managers. When S2G launched as a registered investment adviser and standalone business in 2024, he was named among the managing partners leading the firm. He holds a BA from the University of Illinois at Urbana-Champaign and an MBA from the Kellogg School of Management at Northwestern University.",
+    sources: [
+      { label: "S2G Investments — Team: Aaron Rudberg", url: "https://www.s2ginvestments.com/team/aaron-rudberg" },
+      { label: "AgFunderNews — S2G new hires including Rudberg as COO (Nov 2017)", url: "https://agfundernews.com/s2g-ventures-wants-professionalize-agrifood-tech-investing-180m-fund-new-hires" },
+      { label: "S2G — RIA and standalone business announcement (May 2024)", url: "https://www.s2ginvestments.com/news/s2g-and-builders-vision-announce-s2gs-launch-as-a-registered-investment-adviser-and-standalone-business" }
+    ]
+  },
+"rob-leclerc": {
+    name: "Rob Leclerc",
+    sectors: ["Food & Agriculture"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://agfunder.com/about-us/",
+    firm: "AgFunder",
+    firmSlug: "agfunder",
+    title: "Partner",
+    joinedYear: 2013,
+    education: ["PhD in Computational Biology, Yale University"],
+    previousExperience: ["Prior role, SeedRock Agriculture", "Scientist and engineer roles across research and industry"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2013, event: "Co-founded AgFunder and served as CEO, launching it as an online agriculture investment platform." },
+      { year: 2021, event: "As founding partner, welcomed Manuel Gonzalez to AgFunder's partnership alongside co-founder Michael Dean." }
+    ],
+    notableInvestments: [
+    { name: "Atomo", ticker: null, stage: "Seed", year: 2020, yearPrecision: "year",
+      sector: "Foodtech", subsector: "molecular coffee",
+      evidence: [{ url: "https://agfundernews.com/why-we-invested-in-atomo", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "SIMULATE", ticker: null,
+      sector: "Foodtech", subsector: "alternative protein",
+      evidence: [{ url: "https://agfundernews.com/why-we-invested-in-simulate", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Justo", ticker: null, stage: "Seed", year: 2020, yearPrecision: "year",
+      sector: "Foodtech", subsector: "online grocery",
+      evidence: [{ url: "https://agfundernews.com/why-we-invested-in-mexican-egrocer-justo", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Kula Bio", ticker: null, stage: "Seed", year: 2021, yearPrecision: "year",
+      sector: "Agtech", subsector: "biofertilizer",
+      evidence: [{ url: "https://agfundernews.com/why-agfunder-invested-in-kula-bio", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Verdant Robotics", ticker: null, stage: "Seed",
+      sector: "Agtech", subsector: "agricultural robotics",
+      evidence: [{ url: "https://agfundernews.com/why-agfunder-invested-in-verdant-robotics", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "MycoWorks", ticker: null, stage: "Series A", year: 2020, yearPrecision: "year",
+      sector: "Industrial & Manufacturing Technology", subsector: "mycelium-based materials",
+      evidence: [{ url: "https://agfundernews.com/why-we-invested-in-mycoworks", type: "firm-announcement", checked: "2026-08-31" }] }
+  ],
+    biography: "Rob Leclerc is a Partner and co-founder of AgFunder, the agrifood technology venture capital firm. He co-founded the company in 2013 and served as its CEO, initially launching AgFunder as an online platform connecting agriculture companies with investors before it developed into a venture capital investor in foodtech and agtech. He brings more than 15 years of qualitative and quantitative experience as a scientist and engineer, with academic training spanning philosophy, computer science with a focus on artificial intelligence and virtual robotics, and computational biology, including a PhD from Yale University. Before AgFunder he worked at SeedRock Agriculture, the agriculture venture co-founded by his AgFunder co-founder Michael Dean.",
+    sources: [
+      { label: "AgFunder — About Us / Team", url: "https://agfunder.com/about-us/team/rob-leclerc/" },
+      { label: "Modern Farmer — Introducing AgFunder (Jul 2013)", url: "https://modernfarmer.com/2013/07/agfunder-rob-leclerc/" },
+      { label: "Business Wire — AgFunder adds Manuel Gonzalez as Partner (Feb 2021)", url: "https://www.businesswire.com/news/home/20210202005935/en/AgFunder-Adds-Renowned-Food-and-Ag-Banker-and-Innovation-Head-Manuel-Gonzalez-as-Partner" }
+    ]
+  },
+"michael-dean": {
+    name: "Michael Dean",
+    sectors: ["Food & Agriculture"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://agfunder.com/about-us/",
+    firm: "AgFunder",
+    firmSlug: "agfunder",
+    title: "Partner",
+    joinedYear: 2013,
+    education: ["LLB, University of Sydney", "LLM in International Environmental Law, University of Sydney"],
+    previousExperience: ["Co-founder and CEO, SeedRock Agriculture"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2013, event: "Co-founded AgFunder and served as its chairman at launch." },
+      { year: 2021, event: "As founding partner, welcomed Manuel Gonzalez to AgFunder's partnership alongside co-founder Rob Leclerc." }
+    ],
+    notableInvestments: [
+    { name: "DeHaat", ticker: null, stage: "Seed", year: 2019, yearPrecision: "year",
+      sector: "Agtech", subsector: "smallholder farmer platform",
+      evidence: [{ url: "https://agfundernews.com/dehaat-raises-4m-seed-round-from-omnivore-agfunder-to-bring-indian-farmers-out-of-poverty", type: "deal-announcement", checked: "2026-08-31" },
+                  { url: "https://globalventuring.com/blog/2020/04/07/dehaat-declares-12m-series-a/", type: "press", checked: "2026-08-31" }] },
+    { name: "Trace Genomics", ticker: null, stage: "Series A", year: 2018, yearPrecision: "year",
+      sector: "Agtech", subsector: "soil microbiome testing",
+      evidence: [{ url: "https://agfundernews.com/agfunder-invests-in-trace-genomics-13m-series-a-for-first-scalable-soil-microbiome-test", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Azaneo", ticker: null, stage: "Pre-Seed", year: 2023, yearPrecision: "year",
+      sector: "Agtech", subsector: "herbicide-free electric weeding",
+      evidence: [{ url: "https://agfundernews.com/why-agfunder-invested-in-azaneos-low-power-electric-weeding-tech", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Singrow", ticker: null,
+      sector: "Agtech", subsector: "controlled environment agriculture",
+      evidence: [{ url: "https://agfundernews.com/why-agfunder-invested-in-singrow", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Chinova Bioworks", ticker: null, stage: "Seed", year: 2018, yearPrecision: "year",
+      sector: "Foodtech", subsector: "natural food preservative",
+      evidence: [{ url: "https://agfundernews.com/agfunder-invests-food-tech-startup-chinova-bioworks-dsm-rhapsody", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Phylagen", ticker: null, stage: "Series A", year: 2019, yearPrecision: "year",
+      sector: "Foodtech", subsector: "product traceability and provenance",
+      evidence: [{ url: "https://agfundernews.com/thiels-breakout-ventures-invests-in-phylagen-14m-series-a-with-cultivian-agfunder-for-microbe-based-traceability", type: "deal-announcement", checked: "2026-08-31" }] }
+  ],
+    biography: "Michael Dean is a Partner and co-founder of AgFunder, the agrifood technology venture capital firm, which he helped establish in 2013 and where he served as chairman at launch. He brings more than 25 years of experience across food and agriculture, venture capital, environmental sustainability, carbon markets, social impact, and law. Before AgFunder he was co-founder and CEO of SeedRock Agriculture, the agriculture venture where his AgFunder co-founder Rob Leclerc also worked. He holds an LLB and an LLM in International Environmental Law from the University of Sydney.",
+    sources: [
+      { label: "AgFunder — About Us / Team: Michael Dean", url: "https://agfunder.com/about-us/team/michael-dean/" },
+      { label: "Modern Farmer — Introducing AgFunder (Jul 2013)", url: "https://modernfarmer.com/2013/07/agfunder-rob-leclerc/" },
+      { label: "Business Wire — AgFunder adds Manuel Gonzalez as Partner (Feb 2021)", url: "https://www.businesswire.com/news/home/20210202005935/en/AgFunder-Adds-Renowned-Food-and-Ag-Banker-and-Innovation-Head-Manuel-Gonzalez-as-Partner" }
+    ]
+  },
+"manuel-gonzalez": {
+    name: "Manuel Gonzalez",
+    sectors: ["Food & Agriculture"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://agfunder.com/about-us/",
+    firm: "AgFunder",
+    firmSlug: "agfunder",
+    title: "Partner",
+    joinedYear: 2021,
+    education: ["MBA, Georgetown University"],
+    previousExperience: ["Global Head of Food & Ag Startup Innovation, Rabobank", "Managing Director and General Manager, Rabobank West Coast (US)", "General Manager, Rabobank Mexico", "Founder, Gonzalez Guzman Alimentos"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Launched Rabobank's FoodBytes! startup platform, which held its inaugural showcase that year." },
+      { year: 2021, event: "Joined AgFunder as Partner after serving as Rabobank's Global Head of Food & Ag Startup Innovation." }
+    ],
+    notableInvestments: [
+    { name: "URB-E", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year",
+      sector: "Logistics", subsector: "on-demand delivery containers",
+      evidence: [{ url: "https://agfundernews.com/urb-e-why-we-invested-in", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Bite Ninja", ticker: null, stage: "Seed", year: 2021, yearPrecision: "year",
+      sector: "Foodtech", subsector: "remote restaurant staffing",
+      evidence: [{ url: "https://agfundernews.com/bite-ninja-why-agfunder-invested", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Atinary Technologies", ticker: null, stage: "Seed", year: 2023, yearPrecision: "year",
+      sector: "AI", subsector: "self-driving labs for chemistry R&D",
+      evidence: [{ url: "https://agfundernews.com/why-we-invested-in-atinary-a-glimpse-into-the-future-of-chemistry-rd", type: "firm-announcement", checked: "2026-08-31" }] }
+  ],
+    biography: "Manuel Gonzalez is a Partner at AgFunder, the agrifood technology venture capital firm, which he joined in 2021. He spent much of his career at Rabobank, most recently as Global Head of Food & Ag Startup Innovation, where he launched the bank's startup innovation platforms FoodBytes! and TERRA. FoodBytes! held its inaugural startup showcase in 2015. His earlier Rabobank roles included Managing Director and General Manager of Rabobank West Coast in the United States and General Manager of Rabobank Mexico. Before banking, he founded and led Gonzalez Guzman Alimentos, a yogurt and sour cream company based in Guadalajara, Mexico. He holds an MBA from Georgetown University.",
+    sources: [
+      { label: "AgFunder — About Us / Team: Manuel Gonzalez", url: "https://agfunder.com/about-us/team/manuel-gonzalez/" },
+      { label: "Business Wire — AgFunder adds Manuel Gonzalez as Partner (Feb 2021)", url: "https://www.businesswire.com/news/home/20210202005935/en/AgFunder-Adds-Renowned-Food-and-Ag-Banker-and-Innovation-Head-Manuel-Gonzalez-as-Partner" },
+      { label: "FoodNavigator-USA — inaugural FoodBytes! showcase (Dec 2015)", url: "https://www.foodnavigator-usa.com/Article/2015/12/09/Rabobank-connects-winners-of-its-inaugural-FoodBytes!-with-investors" }
+    ]
+  },
+"mike-velings": {
+    name: "Mike Velings",
+    sectors: ["Food & Agriculture", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://aqua-spark.nl/team/mike-velings/",
+    firm: "Aqua-Spark",
+    firmSlug: "aqua-spark",
+    title: "Co-founder and CEO",
+    joinedYear: 2013,
+    education: [],
+    previousExperience: ["Co-founder, Connexie"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2013, event: "Co-founded Aqua-Spark, the first investment fund dedicated to sustainable aquaculture." },
+      { year: 2015, event: "Aqua-Spark made its first investments." },
+      { year: 2016, event: "His TED talk The case for fish farming was published by TED." }
+    ],
+    notableInvestments: [
+    { name: "BioFishency", ticker: null,
+      sector: "Agtech",
+      evidence: [{ url: "https://aqua-spark.nl/news/fish-site-funding-windfalls-fledgling-live-feed-replacement-water-treatment-firms/", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Molofeed", ticker: null,
+      sector: "Agtech",
+      evidence: [{ url: "https://aqua-spark.nl/news/fish-site-funding-windfalls-fledgling-live-feed-replacement-water-treatment-firms/", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Calysta", ticker: null,
+      sector: "Agtech",
+      evidence: [{ url: "https://aqua-spark.nl/news/aqua-spark-investments-aim-stop-plunder-sea-life/", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Chicoa Fish Farm", ticker: null,
+      sector: "Agtech",
+      evidence: [{ url: "https://aqua-spark.nl/news/aqua-spark-investments-aim-stop-plunder-sea-life/", type: "deal-announcement", checked: "2026-08-31" }] }
+  ],
+    biography: "Mike Velings is the co-founder and CEO of Aqua-Spark, an investment fund based in the Netherlands that was the first fund dedicated to sustainable aquaculture. He co-founded the firm in 2013 with Amy Novogratz, and it made its first investments in 2015; by its tenth anniversary the fund reported close to 500 million euros in assets under management across a portfolio of 28 companies. A lifelong entrepreneur, he earlier co-founded Connexie, which helped build a professional employment industry in the Netherlands, and he serves on Conservation International's Leadership Council. His 2016 TED talk, The case for fish farming, made the argument for aquaculture as a means of feeding a growing population responsibly.",
+    sources: [
+      { label: "Aqua-Spark — Team: Mike Velings", url: "https://aqua-spark.nl/team/mike-velings/" },
+      { label: "The Fish Site — Aqua-Spark 10th anniversary (Apr 2024)", url: "https://thefishsite.com/articles/aqua-spark-marks-10th-anniversary-with-new-impact-report" },
+      { label: "TED — Mike Velings speaker page", url: "https://www.ted.com/speakers/mike_velings" }
+    ]
+  },
+"amy-novogratz": {
+    name: "Amy Novogratz",
+    sectors: ["Food & Agriculture", "Sustainability"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://aqua-spark.nl/team/amy-novogratz/",
+    firm: "Aqua-Spark",
+    firmSlug: "aqua-spark",
+    title: "Co-founder and Managing Partner",
+    joinedYear: 2013,
+    education: [],
+    previousExperience: ["Director, TED Prize"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2009, event: "As director of the TED Prize, worked with oceanographer Sylvia Earle on her TED Prize wish, which became the Mission Blue ocean initiative." },
+      { year: 2013, event: "Co-founded Aqua-Spark, the first investment fund dedicated to sustainable aquaculture." },
+      { year: 2015, event: "Aqua-Spark made its first investments." }
+    ],
+    notableInvestments: [
+    { name: "eFishery", ticker: null,
+      sector: "Agtech", role: "board",
+      evidence: [{ url: "https://aqua-spark.nl/team/amy-novogratz/", type: "partner-bio", checked: "2026-08-31" },
+                  { url: "https://aqua-spark.nl/?post_type=team&feed=rss2&s=Novogratz", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "XpertSea", ticker: null,
+      sector: "Agtech", role: "board",
+      evidence: [{ url: "https://aqua-spark.nl/team/amy-novogratz/", type: "partner-bio", checked: "2026-08-31" },
+                  { url: "https://aqua-spark.nl/?post_type=team&feed=rss2&s=Novogratz", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "HofsethBiocare", ticker: null,
+      sector: "Agtech", role: "board",
+      evidence: [{ url: "https://aqua-spark.nl/team/amy-novogratz/", type: "partner-bio", checked: "2026-08-31" },
+                  { url: "https://aqua-spark.nl/?post_type=team&feed=rss2&s=Novogratz", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "BioFishency", ticker: null,
+      sector: "Agtech",
+      evidence: [{ url: "https://aqua-spark.nl/news/fish-site-funding-windfalls-fledgling-live-feed-replacement-water-treatment-firms/", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Molofeed", ticker: null,
+      sector: "Agtech",
+      evidence: [{ url: "https://aqua-spark.nl/news/fish-site-funding-windfalls-fledgling-live-feed-replacement-water-treatment-firms/", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Calysta", ticker: null,
+      sector: "Agtech",
+      evidence: [{ url: "https://aqua-spark.nl/news/aqua-spark-investments-aim-stop-plunder-sea-life/", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Chicoa Fish Farm", ticker: null,
+      sector: "Agtech",
+      evidence: [{ url: "https://aqua-spark.nl/news/aqua-spark-investments-aim-stop-plunder-sea-life/", type: "deal-announcement", checked: "2026-08-31" }] }
+  ],
+    biography: "Amy Novogratz is co-founder and Managing Partner of Aqua-Spark, an investment fund based in the Netherlands that was the first fund dedicated to sustainable aquaculture. Before launching the fund in 2013, she was director of the TED Prize, where she led more than twenty global collaborations across healthcare, education, science, technology, conservation, art, and activism, including Jamie Oliver's Food Revolution and Sylvia Earle's Mission Blue ocean initiative. Her work with Earle on ocean conservation shaped her conviction that transforming aquaculture could reduce pressure on the ocean, leading her to co-found Aqua-Spark with Mike Velings. The fund made its first investments in 2015 and by its tenth anniversary reported close to 500 million euros in assets under management across 28 portfolio companies.",
+    sources: [
+      { label: "Aqua-Spark — Team: Amy Novogratz", url: "https://aqua-spark.nl/team/amy-novogratz/" },
+      { label: "WeAreAquaculture — TalentView: Amy Novogratz", url: "https://weareaquaculture.com/talentview/36537" },
+      { label: "TED Blog — TED Prize wish and sea change", url: "https://blog.ted.com/how-a-ted-prize-wish-helped-one-woman-create-a-sea-change/" },
+      { label: "The Fish Site — Aqua-Spark 10th anniversary (Apr 2024)", url: "https://thefishsite.com/articles/aqua-spark-marks-10th-anniversary-with-new-impact-report" }
+    ]
+  },
+"adam-sharkawy": {
+    name: "Adam Sharkawy",
+    sectors: ["Deep Tech", "Industrial Tech", "Healthcare"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.prnewswire.com/news-releases/material-impact-announces-352m-fund-iii-to-invest-in-companies-powered-by-material-science-innovation-301988392.html",
+    firm: "Material Impact",
+    firmSlug: "material-impact",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2016,
+    education: ["PhD Biomedical Engineering, Duke University", "MS Mechanical Engineering, Texas A&M University", "BS Mechanical Engineering, American University in Cairo"],
+    previousExperience: ["Senior Vice President, Surgery and Perioperative Care Global Business Unit, The Medicines Company", "Executive leadership team, Emerging Markets division, Smith & Nephew", "Vice President of Research and Advanced Development and New Ventures, Abbott Vascular", "Co-founder, Ventrica (acquired by Medtronic)", "Technology development roles, Heartport and Advanced Cardiovascular Systems"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Co-led integration of Guidant Vascular Interventions with Abbott following the 28 billion dollar acquisition." },
+      { year: 2016, event: "Co-founded Material Impact with Carmichael Roberts as Managing Partner." },
+      { year: 2023, event: "Material Impact closed its oversubscribed 352 million dollar Fund III." }
+    ],
+    notableInvestments: [
+      { name: "Fusion Coolant Systems" }
+    ],
+    biography: "Adam Sharkawy is Co-Founder and Managing Partner of Material Impact, a venture capital firm established in 2016 that builds and invests in companies powered by material science innovation. He previously served as Senior Vice President at The Medicines Company, leading its Surgery and Perioperative Care global business unit, held an executive leadership role in Smith & Nephew's emerging markets division, and was Vice President of Research and Advanced Development and New Ventures at Abbott Vascular, where he helped launch the Xience drug eluting stent and co-led the Guidant integration. Earlier he co-founded the medical device company Ventrica, which was acquired by Medtronic. He holds a PhD in biomedical engineering from Duke University and mechanical engineering degrees from the American University in Cairo and Texas A&M University.",
+    sources: [
+      { label: "Material Impact — Team", url: "https://www.materialimpact.com/team/" },
+      { label: "Material Impact — Adam Sharkawy bio", url: "https://www.materialimpact.com/the-team/adam-sharkawy-phd/" },
+      { label: "Material Impact Fund III press release (Nov 2023)", url: "https://www.prnewswire.com/news-releases/material-impact-announces-352m-fund-iii-to-invest-in-companies-powered-by-material-science-innovation-301988392.html" }
+    ]
+  },
+"corinna-chen": {
+    name: "Corinna Chen",
+    sectors: ["Biotech", "Deep Tech", "Climate"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.materialimpact.com/the-team/corinna-chen/",
+    firm: "Material Impact",
+    firmSlug: "material-impact",
+    title: "Partner",
+    joinedYear: null,
+    education: ["MBA, Duke University", "BS Electrical Engineering, Boston University"],
+    previousExperience: ["Vice President of Corporate Development and Finance, Medeor Therapeutics", "Vice President level role, Surgery and Perioperative Care, The Medicines Company", "Business development and engineering, Incline Therapeutics", "Product development, AcelRx Pharmaceuticals", "Spacecraft instrumentation engineering for NASA's THEMIS mission, Space Sciences Laboratory, UC Berkeley"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2023, event: "Served as a Partner at Material Impact when the firm closed its oversubscribed 352 million dollar Fund III." },
+      { year: 2026, event: "Spoke at CES 2026 as a Partner at Material Impact." }
+    ],
+    notableInvestments: [],
+    biography: "Corinna Chen is a Partner at Material Impact, where she focuses on synthetic biology, bio based materials, advanced electronic materials, next generation computing, and climate technology. She began her career designing spacecraft instrumentation at UC Berkeley's Space Sciences Laboratory for NASA's THEMIS mission. She later worked in business development and engineering at Incline Therapeutics, helping commercialize the IONSYS transdermal device and leading integration after the company's 390 million dollar acquisition by The Medicines Company, where she went on to hold a vice president level role in the Surgery and Perioperative Care business unit. She was also Vice President of Corporate Development and Finance at Medeor Therapeutics. She holds nine patents and has transaction experience exceeding 1.25 billion dollars across eight products. She earned a BS in electrical engineering from Boston University and an MBA from Duke University.",
+    sources: [
+      { label: "Material Impact — Team", url: "https://www.materialimpact.com/team/" },
+      { label: "Material Impact — Corinna Chen bio", url: "https://www.materialimpact.com/the-team/corinna-chen/" },
+      { label: "CES 2026 speaker page", url: "https://www.ces.tech/speakers/corinna-chen/" }
+    ]
+  },
+"christian-theriault": {
+    name: "Christian Theriault",
+    sectors: ["Deep Tech", "Robotics", "Healthcare"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://www.materialimpact.com/the-team/christian-theriault/",
+    firm: "Material Impact",
+    firmSlug: "material-impact",
+    title: "Partner",
+    joinedYear: 2020,
+    education: ["MSE Material Science, Mechanical Engineering, and Process Management, Princeton University", "AB Molecular Biology and Bioengineering, Princeton University"],
+    previousExperience: ["Co-founder, TAG Optics (acquired by Mitutoyo Corporation)", "Co-founder, medical device startups spun out of graduate research", "Product development, dermatology and neuropharmacology biotechnology startup"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Joined Material Impact as a Partner." },
+      { year: 2023, event: "Material Impact closed its oversubscribed 352 million dollar Fund III with Theriault serving as a Partner." }
+    ],
+    notableInvestments: [],
+    biography: "Christian Theriault is a Partner at Material Impact, which he joined in 2020, and works across deep tech industries including robotics, machine vision, and medical devices. A serial entrepreneur, he co-founded TAG Optics, developer of the world's fastest focusing lens used in laser material processing, metrology, and biomedical applications, which was acquired by Mitutoyo Corporation. He also co-founded medical device startups spun out of his graduate research and helped bring products to market at a biotechnology startup developing new chemical entities in dermatology and neuropharmacology. He serves as an Entrepreneur in Residence for the NSF I-Corps Northeast Regional Hub at Princeton University and has spent nearly a decade mentoring high tech startups. He holds an AB in molecular biology and bioengineering and an MSE from Princeton University.",
+    sources: [
+      { label: "Material Impact — Team", url: "https://www.materialimpact.com/team/" },
+      { label: "Material Impact — Christian Theriault bio", url: "https://www.materialimpact.com/the-team/christian-theriault/" }
+    ]
+  },
+"katie-rae": {
+    name: "Katie Rae",
+    sectors: ["Deep Tech", "Climate", "Energy"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://engineventures.com/people/katie-rae",
+    firm: "Engine Ventures",
+    firmSlug: "engine-ventures",
+    title: "CEO & Managing Partner",
+    joinedYear: 2017,
+    education: ["MBA, Yale University", "BA Biology, Oberlin College"],
+    previousExperience: ["CEO and Managing Partner, The Engine (2017-2023)", "Managing Director, Techstars Boston", "Co-founder and Managing Director, Project 11 Ventures", "Leadership roles, Microsoft, AltaVista, and RagingBull"],
+    firmHistory: [],
+    boardSeats: ["Boston Metal", "Commonwealth Fusion Systems", "Form Energy", "Teradar"],
+    ipoCount: null,
+    majorExits: 1,
+    careerTimeline: [
+      { year: 2017, event: "Named president and CEO of The Engine, the tough tech venture fund launched from MIT." },
+      { year: 2018, event: "Portfolio company PillPack was acquired by Amazon for 1 billion dollars." },
+      { year: 2023, event: "Became CEO and Managing Partner of Engine Ventures when The Engine's venture arm became independent." },
+      { year: 2024, event: "Engine Ventures closed its 398 million dollar Fund III." }
+    ],
+    notableInvestments: [
+      { name: "Commonwealth Fusion Systems" },
+      { name: "Form Energy" },
+      { name: "Boston Metal" },
+      { name: "PillPack" },
+      { name: "Flywire", ticker: "FLYW" }
+    ],
+    biography: "Katie Rae is CEO and Managing Partner of Engine Ventures, the tough tech venture firm that became independent from MIT's The Engine in 2023. She led The Engine as CEO and Managing Partner from its 2017 launch, building the organization from the ground up, and under her leadership the firm closed its 398 million dollar third fund in 2024. She was previously Managing Director of Techstars Boston and co-founded Project 11 Ventures, and earlier held leadership roles at Microsoft, AltaVista, and RagingBull. Her investments have included PillPack, acquired by Amazon for 1 billion dollars in 2018, as well as Flywire and GrabCAD. She serves on the boards of Boston Metal, Commonwealth Fusion Systems, Form Energy, and Teradar, and co-founded the Equity Summit. She holds an MBA from Yale and a BA in biology from Oberlin College.",
+    sources: [
+      { label: "Engine Ventures — Team", url: "https://engineventures.com/about/team" },
+      { label: "Engine Ventures — Katie Rae bio", url: "https://engineventures.com/people/katie-rae" },
+      { label: "MIT News — The Engine closes first fund (Apr 2017)", url: "https://news.mit.edu/2017/the-engine-closes-first-fund-150-million-0406" },
+      { label: "Engine Ventures Fund III press release (Jun 2024)", url: "https://www.businesswire.com/news/home/20240618546662/en/Translating-Breakthroughs-from-Lab-to-Market-The-Engine-Ventures-Scales-its-Pioneering-Tough-Tech-Investment-Model" }
+    ]
+  },
+"israel-ruiz": {
+    name: "Israel Ruiz",
+    sectors: ["Deep Tech", "Climate", "Healthcare"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://engineventures.com/people/israel-ruiz",
+    firm: "Engine Ventures",
+    firmSlug: "engine-ventures",
+    title: "President & General Partner",
+    joinedYear: 2023,
+    education: ["Master's degree, MIT Sloan School of Management", "Engineering degree, Polytechnic University of Catalonia"],
+    previousExperience: ["Executive Vice President and Treasurer, MIT (2011-2020)", "Vice President for Finance, MIT (2007-2011)", "Engineering and management roles, Hewlett-Packard and Nissan"],
+    firmHistory: [],
+    boardSeats: ["Superlight"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2011, event: "Appointed Executive Vice President and Treasurer of MIT after serving as Vice President for Finance since 2007." },
+      { year: 2016, event: "Led the launch of The Engine from MIT and chaired its board of directors." },
+      { year: 2020, event: "Stepped down as MIT Executive Vice President and Treasurer following his December 2019 announcement." },
+      { year: 2023, event: "Became President and General Partner of Engine Ventures." }
+    ],
+    notableInvestments: [
+      { name: "Superlight" }
+    ],
+    biography: "Israel Ruiz is President and General Partner of Engine Ventures, a role he assumed in 2023. He has been involved with the firm since its founding, leading its launch from MIT in 2016 while serving as MIT's Executive Vice President and Treasurer, a post he held from 2011 to 2020 after becoming Vice President for Finance in 2007. At MIT he was also a trustee and a member of the executive and endowment committees, and he chaired The Engine's board of directors. He focuses on deal structuring and works with founders and boards of scaling companies in foundational industries, climate, human health, and advanced systems. He has served on the boards of Moderna, Fortive, Aura Biosciences, and FM Global, and currently sits on the board of portfolio company Superlight. He holds a master's degree from MIT Sloan and an engineering degree from the Polytechnic University of Catalonia.",
+    sources: [
+      { label: "Engine Ventures — Team", url: "https://engineventures.com/about/team" },
+      { label: "Engine Ventures — Israel Ruiz bio", url: "https://engineventures.com/people/israel-ruiz" },
+      { label: "MIT News — Israel Ruiz to step down (Dec 2019)", url: "https://news.mit.edu/2019/israel-ruiz-to-step-down-1219" }
+    ]
+  },
+"reed-sturtevant": {
+    name: "Reed Sturtevant",
+    sectors: ["Deep Tech", "Robotics"],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://engineventures.com/people/reed-sturtevant",
+    firm: "Engine Ventures",
+    firmSlug: "engine-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    education: [],
+    previousExperience: ["Founder and Managing Director, Project 11 Ventures", "Managing Director, Techstars Boston", "Vice President of Technology, Idealab Boston", "Head, Microsoft Startup Labs, Cambridge", "Founder, Freelance Graphics (acquired by Lotus Development Corp.)"],
+    firmHistory: [],
+    boardSeats: ["HyperLight", "2Pi", "Amide", "Ayo Semiconductor", "DBOS", "Oso Semiconductor", "Trener Robotics", "The Routing Company"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2017, event: "Served as a general partner at The Engine during its first year of investing." },
+      { year: 2025, event: "Board member of portfolio company Oso Semiconductor, which announced a 5.2 million dollar seed round in February." }
+    ],
+    notableInvestments: [],
+    biography: "Reed Sturtevant is a General Partner at Engine Ventures, with more than 40 years of experience across venture capital and the software industry in company formation, technology strategy, and software development. He was a general partner at The Engine, the tough tech fund launched from MIT, during its first year of investing in 2017. He previously founded and was Managing Director of Project 11 Ventures, served as Managing Director of Techstars Boston, was Vice President of Technology at Idealab Boston, and ran Microsoft Startup Labs in Cambridge. Earlier he founded Freelance Graphics, which was acquired by Lotus Development Corp. A graduate of MIT, he lectures in MIT entrepreneurship programs. He holds board seats at HyperLight, 2Pi, Amide, Ayo Semiconductor, DBOS, Oso Semiconductor, Trener Robotics, and The Routing Company.",
+    sources: [
+      { label: "Engine Ventures — Team", url: "https://engineventures.com/about/team" },
+      { label: "Engine Ventures — Reed Sturtevant bio", url: "https://engineventures.com/people/reed-sturtevant" },
+      { label: "MIT News — Taking The Engine for a test drive (Aug 2017)", url: "https://news.mit.edu/2017/taking-the-engine-for-a-test-drive-0818" }
+    ]
+  },
+"ann-dewitt": {
+    name: "Ann DeWitt",
+    sectors: ["Life Sciences", "Biotech", "Deep Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://engineventures.com/people/ann-dewitt",
+    firm: "Engine Ventures",
+    firmSlug: "engine-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    education: ["PhD Chemical Engineering, MIT", "MBA, Harvard Business School"],
+    previousExperience: ["Senior roles in business development and strategic venture investment, Sanofi", "Team member, Flagship Pioneering", "R&D, 3M"],
+    firmHistory: [],
+    boardSeats: ["Cellino", "Droplet Biosciences", "Matrisome Bio", "Source Bio", "Predicta Biosciences", "Bexorg", "Terrestrial Bio"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Named to Business Insider's Seed 100 list of top early stage investors." },
+      { year: 2026, event: "Named to Business Insider's Seed 40 list of the best women early stage investors." }
+    ],
+    notableInvestments: [],
+    biography: "Ann DeWitt is a General Partner at Engine Ventures, where she focuses on life sciences and tough tech investments addressing climate change and human health. She began her career in R&D at 3M, working across materials, biology, and engineering, later held senior roles in business development and strategic venture investment at Sanofi, and was part of the team at Flagship Pioneering. She serves on the boards of portfolio companies Cellino, Droplet Biosciences, Matrisome Bio, Source Bio, Predicta Biosciences, Bexorg, and Terrestrial Bio. She is a member of the Life Science Council at Springboard Enterprises, an advisor to Harvard's Blavatnik Fellowship, and a member of Prime Coalition's investment advisory committee. Business Insider named her to its Seed 100 list in 2025 and Seed 40 list in 2026. She holds a PhD in chemical engineering from MIT and an MBA from Harvard Business School.",
+    sources: [
+      { label: "Engine Ventures — Team", url: "https://engineventures.com/about/team" },
+      { label: "Engine Ventures — Ann DeWitt bio", url: "https://engineventures.com/people/ann-dewitt" }
+    ]
+  },
+"michael-kearney": {
+    name: "Michael Kearney",
+    sectors: ["Climate", "Energy", "Deep Tech"],
+    sectorsConfidence: "high",
+    sectorsSource: "https://engineventures.com/people/michael-kearney",
+    firm: "Engine Ventures",
+    firmSlug: "engine-ventures",
+    title: "General Partner",
+    joinedYear: 2018,
+    education: ["PhD, MIT", "MS Technology and Policy, MIT", "BA, Williams College"],
+    previousExperience: ["Executive Director, MIT Roosevelt Project", "Business development lead and first employee, Ambri"],
+    firmHistory: [],
+    boardSeats: ["Addis Energy", "AtmosZero", "Blue Energy", "DG Matrix", "Genomines", "Mantel", "Osmoses", "Pascal", "Sora Fuel", "VEIR"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Joined The Engine as a Partner." },
+      { year: 2023, event: "Promoted to General Partner at Engine Ventures." },
+      { year: 2025, event: "Published From Constraint to Abundance, an innovation agenda for the energy transition." }
+    ],
+    notableInvestments: [],
+    biography: "Michael Kearney is a General Partner at Engine Ventures, focused on climate change and the deployment of breakthrough technologies. He joined The Engine in 2018 as a Partner and was promoted to General Partner in 2023. He was the first employee at Ambri, a grid scale energy storage startup, where he led market and business development, and later served as Executive Director of the MIT Roosevelt Project, studying energy transition pathways toward a clean energy economy. He has published research on energy economics and innovation policy in peer reviewed journals and co-founded Blueprint, by The Engine, a program for early stage tough tech founders. He serves on the boards of Addis Energy, AtmosZero, Blue Energy, DG Matrix, Genomines, Mantel, Osmoses, Pascal, Sora Fuel, and VEIR. He holds a BA from Williams College and an MS and PhD from MIT.",
+    sources: [
+      { label: "Engine Ventures — Team", url: "https://engineventures.com/about/team" },
+      { label: "Engine Ventures — Michael Kearney bio", url: "https://engineventures.com/people/michael-kearney" },
+      { label: "Engine Ventures press release — Kearney promoted to GP (Nov 2023)", url: "https://www.businesswire.com/news/home/20231115457926/en/Michael-Kearney-Promoted-to-General-Partner-at-Engine-Ventures" }
+    ]
+  },
+"dakin-sloss": {
+    name: "Dakin Sloss",
+    sectors: ["Deep Tech", "Space", "Energy", "Biotech"],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://www.primemoverslab.com/team",
+    firm: "Prime Movers Lab",
+    firmSlug: "prime-movers-lab",
+    title: "Founder and General Partner",
+    joinedYear: 2018,
+    education: ["Mathematics, Physics, and Philosophy, Stanford University"],
+    previousExperience: ["Founding CEO, Tachyus", "Founding CEO, OpenGov", "Founder, California Common Sense"],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Named to the Forbes 30 Under 30 list as an energy entrepreneur." },
+      { year: 2018, event: "Founded Prime Movers Lab in Jackson, Wyoming and launched its first fund of 100 million dollars." },
+      { year: 2021, event: "Announced Prime Movers Lab's 245 million dollar second early-stage fund." },
+      { year: 2022, event: "Raised a 500 million dollar early growth fund for Prime Movers Lab." },
+      { year: 2023, event: "Raised a 245 million dollar early-stage fund, the firm's third early-stage vehicle." }
+    ],
+    notableInvestments: [
+    { name: "E-Space",
+      sector: "Space",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Tarana" },
+    { name: "Boom Supersonic",
+      sector: "Deep Tech",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Focused Energy",
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Paradromics",
+      sector: "Medical Devices",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Quantum Space",
+      sector: "Space",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Tarana Wireless", ticker: null, year: 2022, yearPrecision: "year",
+      sector: "Deep Tech", role: "board",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" },
+                  { url: "https://medium.com/prime-movers-lab/why-we-invested-in-tarana-wireless-again-2362efb26ea4", type: "firm-announcement", checked: "2026-09-02" }] },
+    { name: "Halo Industries", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "Deep Tech", role: "board",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/2022295/000202229524000001/primary_doc.xml", type: "regulatory", checked: "2026-09-02" }] },
+    { name: "Gilgamesh Pharmaceuticals", ticker: null,
+      sector: "Biotech",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" }] }
+  ],
+    biography: "Dakin Sloss is the Founder and General Partner of Prime Movers Lab, a venture capital firm based in Jackson, Wyoming that invests in breakthrough scientific startups. He founded the firm in 2018 with a 100 million dollar first fund and has since raised additional vehicles, including a 245 million dollar second fund announced in 2021, a 500 million dollar early growth fund in 2022, and a 245 million dollar early-stage fund in 2023. He leads investments in companies including E-Space, Tarana, Boom Supersonic, Focused Energy, Paradromics, and Quantum Space. Before Prime Movers Lab he was founding CEO of Tachyus and of OpenGov and founded the nonprofit California Common Sense. He studied mathematics, physics, and philosophy at Stanford University.",
+    sources: [
+      { label: "Prime Movers Lab — Team", url: "https://www.primemoverslab.com/team" },
+      { label: "PR Newswire — Second fund launch (Jan 2021)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-launches-second-scientific-startup-fund-301216006.html" },
+      { label: "PR Newswire — 500M early growth fund (Sep 2022)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-raises-500-million-early-growth-fund-301623845.html" },
+      { label: "PR Newswire — 245M early-stage fund (2023)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-raises-245-million-early-stage-fund-to-advance-breakthrough-science-startups-301886276.html" }
+    ]
+  },
+"zia-huque": {
+    name: "Zia Huque",
+    sectors: ["Deep Tech", "Climate", "Space"],
+    sectorsConfidence: "medium",
+    sectorsSource: "https://www.primemoverslab.com/team",
+    firm: "Prime Movers Lab",
+    firmSlug: "prime-movers-lab",
+    title: "General Partner",
+    joinedYear: 2021,
+    education: ["BA in Economics and Political Science, Williams College"],
+    previousExperience: ["President and Chief Executive Officer, Deutsche Bank Securities Inc (2018-2019)", "Head of Equities and Fixed Income and Currencies for the Americas, Deutsche Bank (2016-2018)", "Global Co-Chief Operating Officer of Corporate Banking and Securities, Deutsche Bank (2012-2016)"],
+    firmHistory: [],
+    boardSeats: ["Tarana Wireless", "Lyten", "E-Space", "CarbonCapture", "Paradromics"],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2012, event: "Became Global Co-Chief Operating Officer of Corporate Banking and Securities at Deutsche Bank." },
+      { year: 2016, event: "Named Head of Equities and Fixed Income and Currencies for the Americas at Deutsche Bank." },
+      { year: 2018, event: "Became President and Chief Executive Officer of Deutsche Bank Securities Inc." },
+      { year: 2019, event: "Departed Deutsche Bank after a 30 year Wall Street career." },
+      { year: 2021, event: "Joined Prime Movers Lab as a General Partner focused on growth-stage investing." }
+    ],
+    notableInvestments: [
+    { name: "Tarana Wireless",
+      sector: "Deep Tech", role: "board",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Lyten",
+      sector: "Deep Tech", role: "board",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "E-Space",
+      sector: "Space", role: "board",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "CarbonCapture",
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Paradromics", year: 2023, yearPrecision: "year",
+      sector: "Medical Devices", role: "board",
+      evidence: [{ url: "https://www.primemoverslab.com/team/", type: "partner-bio", checked: "2026-09-02" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1668302/000193459823000003/primary_doc.xml", type: "regulatory", checked: "2026-09-02" }] },
+    { name: "Halo Industries", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "Deep Tech", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/2022295/000202229524000001/primary_doc.xml", type: "regulatory", checked: "2026-09-02" }] },
+    { name: "Gilgamesh Pharma", ticker: null, year: 2026, yearPrecision: "year",
+      sector: "Biotech", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/2107396/000210739626000004/primary_doc.xml", type: "regulatory", checked: "2026-09-02" }] }
+  ],
+    biography: "Zia Huque is a General Partner at Prime Movers Lab, where he focuses on growth-stage investing. He joined the firm in 2021 after a 30 year Wall Street career spanning credit, rates, equities, and derivatives. At Deutsche Bank he served as Global Co-Chief Operating Officer of Corporate Banking and Securities from 2012 to 2016, as Head of Equities and Fixed Income and Currencies for the Americas from 2016 to 2018, and as President and Chief Executive Officer of Deutsche Bank Securities Inc from 2018 until his departure in 2019. He serves on the boards of Tarana Wireless, Lyten, E-Space, CarbonCapture, and Paradromics. He holds a BA in economics and political science from Williams College.",
+    sources: [
+      { label: "Prime Movers Lab — Team", url: "https://www.primemoverslab.com/team" },
+      { label: "PR Newswire — Prime Movers Lab adds investment veterans (Mar 2021)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-adds-two-investment-veterans-to-help-fuel-scientific-based-company-growth-301243199.html" }
+    ]
+  },
 "tony-robbins": {
     name: "Tony Robbins",
     sectors: ["Deep Tech"],
@@ -163,13 +757,37 @@ Object.assign(partnerProfiles, {
       { year: 2020, event: "Riot Ventures announced it was raising a 75 million dollar second fund focused on deep technology." }
     ],
     notableInvestments: [
-      { name: "Okta", ticker: "OKTA" },
-      { name: "Toast", ticker: "TOST" },
-      { name: "Desktop Metal" },
-      { name: "Shield AI" },
-      { name: "EnduroSat" },
-      { name: "Valar Atomics" }
-    ],
+    { name: "Okta", ticker: "OKTA",
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.riot.vc/partners/stephen-marcus", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Toast", ticker: "TOST",
+      sector: "Fintech",
+      evidence: [{ url: "https://www.riot.vc/partners/stephen-marcus", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Desktop Metal" },
+    { name: "Shield AI", year: 2026, yearPrecision: "year",
+      sector: "Defense Tech", subsector: "aircraft and AI pilots", role: "board",
+      evidence: [{ url: "https://www.riot.vc/partners/stephen-marcus", type: "partner-bio", checked: "2026-09-02" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/1675769/000167576926000001/primary_doc.xml", type: "regulatory", checked: "2026-09-02" }] },
+    { name: "EnduroSat",
+      sector: "Space", subsector: "satellite constellations", role: "board",
+      evidence: [{ url: "https://www.riot.vc/partners/stephen-marcus", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Valar Atomics",
+      sector: "Climate & Energy", subsector: "mass manufactured nuclear reactors", role: "board",
+      evidence: [{ url: "https://www.riot.vc/partners/stephen-marcus", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Blue Water Autonomy", ticker: null,
+      sector: "Defense Tech", subsector: "autonomous surface ships", role: "board",
+      evidence: [{ url: "https://www.riot.vc/partners/stephen-marcus", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Kindo", ticker: null,
+      sector: "Cybersecurity", subsector: "AI Cybersecurity", role: "board",
+      evidence: [{ url: "https://www.riot.vc/partners/stephen-marcus", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Mango", ticker: null,
+      sector: "Industrial & Manufacturing Technology", subsector: "microbial quality control", role: "board",
+      evidence: [{ url: "https://www.riot.vc/partners/stephen-marcus", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Nodal Networks", ticker: null, year: 2026, yearPrecision: "year",
+      sector: "Logistics", subsector: "AI for Ports & Terminal Operations", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/2147477/000214747726000001/primary_doc.xml", type: "regulatory", checked: "2026-09-02" },
+                  { url: "https://www.riot.vc/", type: "portfolio-page", checked: "2026-09-02" }] }
+  ],
     biography: "Stephen Marcus is Co-Founder and General Partner of Riot Ventures, a venture firm focused on modernizing critical industries. Before Riot he was a six-time founder and chief executive with more than 20 years of experience building large-scale wireless networks and datacenters, selling telecom companies to buyers including American Tower, Sprint, and National Grid. He co-founded Riot Ventures in 2017 with Will Coffield, starting with a 10 million dollar first fund, and the firm announced a 75 million dollar second fund in 2020. At Riot he invests across seed and growth stages and holds board seats at Shield AI, EnduroSat, Blue Water Autonomy, Kindo, Mango, and Valar Atomics. His investments include the public companies Okta, Toast, and Desktop Metal. He holds a BS from Worcester Polytechnic Institute and an MBA from MIT Sloan School of Management.",
     sources: [
       { label: "Riot Ventures — Stephen Marcus partner page", url: "https://www.riot.vc/partners/stephen-marcus" },
@@ -196,13 +814,34 @@ Object.assign(partnerProfiles, {
       { year: 2020, event: "Riot Ventures announced it was raising a 75 million dollar second fund." }
     ],
     notableInvestments: [
-      { name: "True Anomaly" },
-      { name: "Parallel Systems" },
-      { name: "Oxide Computer Company" },
-      { name: "Alloy Enterprises" },
-      { name: "Rugged Robotics" },
-      { name: "Route" }
-    ],
+    { name: "True Anomaly",
+      sector: "Defense Tech", subsector: "orbital defense prime",
+      evidence: [{ url: "https://www.riot.vc/partners/will-coffield", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Parallel Systems",
+      sector: "Logistics", subsector: "autonomy for rail freight",
+      evidence: [{ url: "https://www.riot.vc/partners/will-coffield", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Oxide Computer Company",
+      sector: "Hardware", subsector: "hyperscale datacenter infrastructure",
+      evidence: [{ url: "https://www.riot.vc/partners/will-coffield", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Alloy Enterprises",
+      sector: "Industrial & Manufacturing Technology", subsector: "Carnegie Steel 2.0",
+      evidence: [{ url: "https://www.riot.vc/partners/will-coffield", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Rugged Robotics",
+      sector: "Robotics", subsector: "construction robots",
+      evidence: [{ url: "https://www.riot.vc/partners/will-coffield", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Route",
+      sector: "Logistics", subsector: "ecommerce logistics and insurance",
+      evidence: [{ url: "https://www.riot.vc/partners/will-coffield", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "OpenEnvoy", ticker: null,
+      sector: "Logistics", subsector: "freight AP automation",
+      evidence: [{ url: "https://www.riot.vc/partners/will-coffield", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Elementary ML", ticker: null,
+      sector: "Robotics", subsector: "artificially intelligent QA/QC for manufacturing",
+      evidence: [{ url: "https://www.riot.vc/partners/will-coffield", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Azimuth", ticker: null,
+      sector: "Developer Tools & Infrastructure", subsector: "telemetry data infrastructure",
+      evidence: [{ url: "https://www.riot.vc/partners/will-coffield", type: "partner-bio", checked: "2026-09-02" }] }
+  ],
     biography: "Will Coffield is Co-founder and General Partner of Riot Ventures. He began his venture career at Saturn Partners after studying economics at James Madison University, helping build that firm's seed investing program and opening its West Coast office. In 2017 he co-founded Riot Ventures with Stephen Marcus, launching with a 10 million dollar fund focused on pre-seed and seed investments in deep technology; the firm announced a 75 million dollar second fund in 2020 and has since grown to more than 1 billion dollars in assets under management. At Riot he focuses on defense and aerospace, logistics, and advanced manufacturing, and has led investments in companies including True Anomaly, Parallel Systems, Oxide Computer Company, Alloy Enterprises, Elementary ML, Rugged Robotics, OpenEnvoy, Azimuth, and Route.",
     sources: [
       { label: "Riot Ventures — Will Coffield partner page", url: "https://www.riot.vc/partners/will-coffield" },
@@ -482,11 +1121,20 @@ Object.assign(partnerProfiles, {
       { year: 2025, event: "Trucks announced its 70 million dollar third fund to back next-generation transportation startups." }
     ],
     notableInvestments: [
-      { name: "May Mobility" },
-      { name: "Roadster" },
-      { name: "Edge Case Research" },
-      { name: "Gatik" }
-    ],
+    { name: "May Mobility",
+      sector: "Mobility",
+      evidence: [{ url: "https://www.trucks.vc/about", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Roadster",
+      sector: "Mobility",
+      evidence: [{ url: "https://www.trucks.vc/about", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Edge Case Research",
+      sector: "Mobility",
+      evidence: [{ url: "https://www.trucks.vc/about", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Gatik" },
+    { name: "SEEVA Technologies", ticker: null, year: 2018, yearPrecision: "year",
+      sector: "Mobility", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1713784/000171378418000004/primary_doc.xml", type: "regulatory", checked: "2026-09-02" }] }
+  ],
     biography: "Reilly Brennan is a co-founder and partner of Trucks Venture Capital, a San Francisco seed fund backing entrepreneurs building transportation that is decarbonized, safer, and more accessible. At Trucks he championed investments including May Mobility, Roadster, and Edge Case Research. He writes FoT, a widely read weekly newsletter on the future of transportation, and co-founded MobilityJobs.com. Before Trucks he served as Executive Director of the Revs Program, Stanford University's automotive research program, and taught at Stanford's School of Engineering and d.school. A Michigan native, he began his career in the auto industry at a car magazine during his undergraduate years and has spent more than two decades in transportation.",
     sources: [
       { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
@@ -515,11 +1163,25 @@ Object.assign(partnerProfiles, {
       { year: 2025, event: "Trucks announced its 70 million dollar third fund to back next-generation transportation startups." }
     ],
     notableInvestments: [
-      { name: "Joby Aviation", ticker: "JOBY" },
-      { name: "Cruise" },
-      { name: "Universal Hydrogen" },
-      { name: "Skyryse" }
-    ],
+    { name: "Joby Aviation", ticker: "JOBY",
+      sector: "Mobility",
+      evidence: [{ url: "https://www.trucks.vc/about", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Cruise",
+      sector: "Mobility", orgAtTime: "angel",
+      evidence: [{ url: "https://www.trucks.vc/about", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Universal Hydrogen",
+      sector: "Mobility",
+      evidence: [{ url: "https://www.trucks.vc/about", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Skyryse",
+      sector: "Mobility",
+      evidence: [{ url: "https://www.trucks.vc/about", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "Refraction AI", ticker: null,
+      sector: "Mobility",
+      evidence: [{ url: "https://www.trucks.vc/about", type: "partner-bio", checked: "2026-09-02" }] },
+    { name: "JetZero", ticker: null, year: 2023, yearPrecision: "year",
+      sector: "Mobility", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1952923/000195292323000001/primary_doc.xml", type: "regulatory", checked: "2026-09-02" }] }
+  ],
     biography: "Jeffrey Schox is a founder and partner of Trucks Venture Capital, the San Francisco seed fund for transportation startups, where his investments include Universal Hydrogen, Skyryse, Joby Aviation, and Refraction. He grew up outside Detroit, studied mechanical and electrical engineering, and worked as an engineer on the original electric vehicle at General Motors. He is also the founder of Schox Patent Group, a boutique patent firm that has developed patent strategy for Coinbase, Cruise, Duo, Joby, Twilio, and hundreds of other startups, and he was an angel investor in Cruise, later acquired by General Motors. He teaches patent law and strategy as a lecturer at Stanford University. He holds engineering degrees from the University of Michigan and a JD from George Mason University.",
     sources: [
       { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
@@ -8062,13 +8724,25 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Han Kim is a Managing Director and co-founder of Altos Ventures, which he started in 1996 with Stanford Graduate School of Business classmate Ho Nam. He is a graduate of the United States Military Academy at West Point, served as a captain in the U.S. Army Corps of Engineers, and holds an MBA from the Stanford Graduate School of Business. Altos Ventures invests on behalf of institutional investors with charitable, educational or non-profit missions, and Kim has described the firm's work backing Korean companies including Coupang, Woowa Brothers and Viva Republica in interviews with The Korea Herald and Coral Capital. In 2021 he was named in SEC filings as part of the Altos group reporting more than ten percent beneficial ownership of Roblox Corporation.",
     notableInvestments: [
-      { name: "Viva Republica (Toss)", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "money transfer app", role: null, evidence: [
-        { url: "https://www.cnbc.com/2019/09/26/why-investor-altos-ventures-backed-toss-failed-entrepreneur-founder.html", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Roblox Corporation", ticker: "RBLX", stage: null, year: null, yearPrecision: null, sector: "Gaming", subsector: null, role: null, evidence: [
-        { url: "https://www.sec.gov/Archives/edgar/data/1836652/000120919121017975/doc4.xml", type: "regulatory", checked: "2026-08-25" }
-      ] }
-    ],
+    { name: "Viva Republica (Toss)", ticker: null, stage: null, year: null, yearPrecision: null,
+      sector: "Fintech", subsector: "money transfer app", role: null,
+      evidence: [{ url: "https://www.cnbc.com/2019/09/26/why-investor-altos-ventures-backed-toss-failed-entrepreneur-founder.html", type: "press", checked: "2026-08-25" }] },
+    { name: "Roblox Corporation", ticker: "RBLX", stage: null, year: null, yearPrecision: null,
+      sector: "Gaming", subsector: null, role: null,
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1836652/000120919121017975/doc4.xml", type: "regulatory", checked: "2026-08-25" }] },
+    { name: "Provade", ticker: null, year: 2009, yearPrecision: "year",
+      sector: "Enterprise Software", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1348025/000134802509000003/primary_doc.xml", type: "regulatory", checked: "2026-09-02" }] },
+    { name: "CalmSea", ticker: null, year: 2010, yearPrecision: "year",
+      sector: "Enterprise Software", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1504745/000150474510000001/primary_doc.xml", type: "regulatory", checked: "2026-09-02" }] },
+    { name: "SeeControl", ticker: null, year: 2012, yearPrecision: "year",
+      sector: "Enterprise Software", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1560825/000156082512000002/primary_doc.xml", type: "regulatory", checked: "2026-09-02" }] },
+    { name: "TVU Networks", ticker: null, year: 2013, yearPrecision: "year",
+      sector: "Hardware", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1383445/000138344513000002/primary_doc.xml", type: "regulatory", checked: "2026-09-02" }] }
+  ],
     sources: [
       { label: "Stanford Graduate School of Business - Han J. Kim, MBA '94", url: "https://www.gsb.stanford.edu/alumni/news/catalyst/han-j-kim-mba-94" },
       { label: "CNBC - Why investor Altos Ventures backed Toss' failed entrepreneur founder", url: "https://www.cnbc.com/2019/09/26/why-investor-altos-ventures-backed-toss-failed-entrepreneur-founder.html" },
@@ -8250,352 +8924,6 @@ Object.assign(partnerProfiles, {
       { label: "SignalFire - We've raised another $1 billion to back the next generation of applied AI startups", url: "https://www.signalfire.com/blog/signalfire-raises-one-billion-in-new-capital" },
       { label: "SEC Form D - Horizon 3 AI, Inc. (filed 2025-05-22)", url: "https://www.sec.gov/Archives/edgar/data/1801975/000180197525000001/primary_doc.xml" },
       { label: "SEC Form D - SimpleDataLabs Inc (filed 2024-10-10)", url: "https://www.sec.gov/Archives/edgar/data/1995808/000173907424000008/primary_doc.xml" }
-    ]
-  },
-"wayne-hu": {
-    name: "Wayne Hu",
-    firm: "SignalFire",
-    firmSlug: "signalfire",
-    title: "Partner",
-    joinedYear: 2015,
-    investmentFocus: [
-      "Enterprise Software",
-      "Consumer"
-    ],
-    education: [
-      "MBA, Harvard Business School",
-      "B.A. Mathematical Economics, Princeton University"
-    ],
-    previousExperience: [
-      "Turnaround initiatives, Chicago public school system, followed by early-stage ed tech advisory work",
-      "Consultant, McKinsey & Company (one of five consultants selected for a Global Institute Fellowship at the McKinsey Global Institute)",
-      "Global Strategy Lead, YouTube ads monetization, Google"
-    ],
-    firmHistory: [
-      { firmSlug: "kleiner-perkins", role: "Investment team (while earning his MBA at Harvard Business School), focused on transportation, robotics and marketplaces", startYear: null, endYear: null }
-    ],
-    boardSeats: [
-      "Grow Therapy",
-      "Justpoint",
-      "Farsight AI",
-      "Patlytics"
-    ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 2015, event: "Joined SignalFire to help form the firm's initial investment team." },
-      { year: 2021, event: "Joined Grow Therapy's board of directors as SignalFire backed the company's $15M Series A." },
-      { year: 2023, event: "Authored SignalFire's post on EvenUp's $50.5M Series B." },
-      { year: 2024, event: "Authored SignalFire's announcement of Grow Therapy's $88M Series C." },
-      { year: 2025, event: "Named a director of Justpoint in its Form D filing after SignalFire led the company's $45M Series A." },
-      { year: 2026, event: "Co-authored SignalFire's announcement of Solace's $130M Series C." }
-    ],
-    biography: "Wayne Hu joined SignalFire in 2015 to help form the firm's initial investment team and is a partner covering seed through Series A and B, with a stated sector focus on vertical SaaS and consumer. He was previously one of five consultants at McKinsey & Company selected for a Global Institute Fellowship, and served as global strategy lead for YouTube ads monetization at Google. He received an MBA from Harvard Business School while working on the investment team at Kleiner Perkins Caufield & Byers, and holds a B.A. in mathematical economics from Princeton University. SEC Form D filings name him as a director of Grow Care (Grow Therapy), Justpoint, Farsight AI and Patlytics.",
-    notableInvestments: [
-      { name: "Grow Therapy", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year", sector: "Digital Health", subsector: "mental health provider practices and insurance coverage", role: "board", evidence: [
-        { url: "https://techcrunch.com/2021/09/23/grow-therapy-plants-15m-into-helping-therapists-start-their-own-practices/", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://www.sec.gov/Archives/edgar/data/1887838/000188783824000003/primary_doc.xml", type: "regulatory", checked: "2026-08-25" },
-        { url: "https://www.signalfire.com/blog/grow-therapy-revamp-mental-health", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Justpoint", ticker: null, stage: "Series A", year: 2025, yearPrecision: "year", sector: "Legal Tech", subsector: "AI for toxic exposure claims", role: "board", evidence: [
-        { url: "https://www.signalfire.com/blog/justpoint-investor", type: "firm-announcement", checked: "2026-08-25" },
-        { url: "https://www.sec.gov/Archives/edgar/data/1910058/000191005825000001/primary_doc.xml", type: "regulatory", checked: "2026-08-25" }
-      ] },
-      { name: "EvenUp", ticker: null, stage: "Series B", year: 2023, yearPrecision: "year", sector: "Legal Tech", subsector: "AI for personal injury claims", role: null, evidence: [
-        { url: "https://www.signalfire.com/blog/evenup-ai-investor", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Mandolin", ticker: null, stage: "Series A", year: 2025, yearPrecision: "year", sector: "Digital Health", subsector: "AI agent platform for specialty drug access", role: null, evidence: [
-        { url: "https://www.signalfire.com/blog/mandolin-investor", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Solace", ticker: null, stage: "Series C", year: 2026, yearPrecision: "year", sector: "Digital Health", subsector: "healthcare advocacy", role: null, evidence: [
-        { url: "https://www.signalfire.com/blog/solace-investor", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Freshpaint", ticker: null, stage: "Series B", year: 2024, yearPrecision: "year", sector: "Digital Health", subsector: "HIPAA-compliant healthcare marketing", role: null, evidence: [
-        { url: "https://www.signalfire.com/team/wayne-hu", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://www.signalfire.com/blog/freshpaint-investor", type: "firm-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Farsight AI", ticker: null, stage: null, year: 2026, yearPrecision: "year", sector: null, subsector: null, role: "board", evidence: [
-        { url: "https://www.sec.gov/Archives/edgar/data/1982344/000198234426000001/primary_doc.xml", type: "regulatory", checked: "2026-08-25" },
-        { url: "https://www.signalfire.com/portfolio", type: "portfolio-page", checked: "2026-08-25" }
-      ] },
-      { name: "Patlytics", ticker: null, stage: null, year: 2026, yearPrecision: "year", sector: null, subsector: null, role: "board", evidence: [
-        { url: "https://www.sec.gov/Archives/edgar/data/2051258/000205125826000001/primary_doc.xml", type: "regulatory", checked: "2026-08-25" },
-        { url: "https://www.signalfire.com/portfolio", type: "portfolio-page", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "SignalFire - Wayne Hu", url: "https://www.signalfire.com/team/wayne-hu" },
-      { label: "SignalFire - Team", url: "https://www.signalfire.com/team" },
-      { label: "SignalFire - Portfolio", url: "https://www.signalfire.com/portfolio" },
-      { label: "TechCrunch - Grow Therapy plants $15M into helping therapists start their own practices", url: "https://techcrunch.com/2021/09/23/grow-therapy-plants-15m-into-helping-therapists-start-their-own-practices/" },
-      { label: "SEC Form D - Grow Care, Inc. (filed 2024-04-19)", url: "https://www.sec.gov/Archives/edgar/data/1887838/000188783824000003/primary_doc.xml" },
-      { label: "SEC Form D - Justpoint Inc. (filed 2025-02-12)", url: "https://www.sec.gov/Archives/edgar/data/1910058/000191005825000001/primary_doc.xml" },
-      { label: "SEC Form D - Farsight AI, Inc. (filed 2026-07-16)", url: "https://www.sec.gov/Archives/edgar/data/1982344/000198234426000001/primary_doc.xml" },
-      { label: "SEC Form D - Patlytics, Inc. (filed 2026-04-30)", url: "https://www.sec.gov/Archives/edgar/data/2051258/000205125826000001/primary_doc.xml" }
-    ]
-  },
-"santo-politi": {
-    name: "Santo Politi",
-    firm: "Spark Capital",
-    firmSlug: "spark-capital",
-    title: "Co-Founder & General Partner",
-    joinedYear: 2005,
-    investmentFocus: [],
-    education: [],
-    previousExperience: [
-      "Engineer, Panasonic Broadcast and Television division",
-      "Bankers Trust, helping launch the bank's first early stage venture arm",
-      "President, Blockbuster",
-      "General Partner, Charles River Ventures"
-    ],
-    firmHistory: [
-      { firmSlug: "crv", role: "General Partner", startYear: null, endYear: null }
-    ],
-    boardSeats: [
-      "eToro Group Ltd."
-    ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 2005, event: "Co-founded Spark Capital with Todd Dagres and Bijan Sabet." },
-      { year: 2012, event: "Was quoted for Spark Capital on eToro's $15 million funding round, which Spark led." },
-      { year: 2013, event: "Joined the board of Oculus VR when Spark co-led its $16 million Series A." },
-      { year: 2015, event: "Joined the board of Cybereason when Spark led its $25 million Series B." },
-      { year: 2026, event: "Was identified as a Class II director of the public company eToro Group Ltd. in its shareholder meeting filing." }
-    ],
-    biography: "Santo Politi is a co-founder of Spark Capital and a General Partner on its Early team, which the firm's site lists as 'Co-founder & General Partner, Early.' He grew up in Turkey, came to the United States on a scholarship to study electrical engineering, and spent a decade as an engineer in Panasonic's Broadcast and Television division before joining Bankers Trust to help launch the bank's first early stage venture arm, serving as President of Blockbuster and then becoming a general partner at Charles River Ventures. He co-founded Spark in 2005 with Todd Dagres and Bijan Sabet. He led Spark's investments in Oculus VR, Cybereason and eToro, and is a Class II director of eToro Group Ltd.",
-    notableInvestments: [
-      { name: "Oculus VR", ticker: null, stage: "Series A", year: 2013, yearPrecision: "year", sector: "Hardware", subsector: "virtual reality headsets", role: "board", evidence: [
-        { url: "https://techcrunch.com/2013/06/17/oculus-vr-raises-16m-to-build-their-crazy-virtual-reality-gaming-goggles/", type: "deal-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Cybereason", ticker: null, stage: "Series B", year: 2015, yearPrecision: "year", sector: "Cybersecurity", subsector: "endpoint detection and response", role: "board", evidence: [
-        { url: "https://www.cybereason.com/press/cybereason-closes-25-million-series-b-funding-enters-lockheed-martin-partnership", type: "deal-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "eToro", ticker: "ETOR", stage: null, year: 2012, yearPrecision: "year", sector: "Fintech", subsector: "social trading and investing platform", role: "board", evidence: [
-        { url: "https://www.prnewswire.com/news-releases/etoro-completes-funding-round-of-15-million-led-by-spark-capital-142421535.html", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://investors.etoro.com/static-files/14b26641-8376-48fe-8d67-f9aaf75f515d", type: "regulatory", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Spark Capital - Santo Politi", url: "https://www.sparkcapital.com/team-members/santo-politi" },
-      { label: "Spark Capital - Team", url: "https://www.sparkcapital.com/team" },
-      { label: "SEC Form 6-K - eToro Group Ltd. shareholder meeting filing (Class II directors)", url: "https://investors.etoro.com/static-files/14b26641-8376-48fe-8d67-f9aaf75f515d" },
-      { label: "TechCrunch - Oculus VR Raises $16M", url: "https://techcrunch.com/2013/06/17/oculus-vr-raises-16m-to-build-their-crazy-virtual-reality-gaming-goggles/" },
-      { label: "Cybereason Closes $25 Million Series B Funding", url: "https://www.cybereason.com/press/cybereason-closes-25-million-series-b-funding-enters-lockheed-martin-partnership" },
-      { label: "eToro Completes Funding Round of $15 Million Led by Spark Capital", url: "https://www.prnewswire.com/news-releases/etoro-completes-funding-round-of-15-million-led-by-spark-capital-142421535.html" },
-      { label: "PreVeil - Santo Politi", url: "https://www.preveil.com/team/santo-politi/" }
-    ]
-  },
-"todd-dagres": {
-    name: "Todd Dagres",
-    firm: "Spark Capital",
-    firmSlug: "spark-capital",
-    title: "Co-Founder",
-    joinedYear: 2005,
-    departedYear: null,
-    departedNote: "Spark Capital's own bio page titles him 'Co-founder & Partner Emeritus,' and the firm's team page lists him under Operations rather than its Early or Growth investing teams. He is no longer listed as a director in 1stdibs.com, Inc.'s 2025 proxy statement.",
-    investmentFocus: [],
-    education: [
-      "B.S. Psychology, Trinity College",
-      "M.B.A., Boston University"
-    ],
-    previousExperience: [
-      "Senior technology analyst, Yankee Group",
-      "Senior technology analyst, Smith Barney",
-      "Senior technology analyst, Montgomery Securities",
-      "General Partner, Battery Ventures"
-    ],
-    firmHistory: [
-      { firmSlug: "battery-ventures", role: "General Partner", startYear: null, endYear: null }
-    ],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 2005, event: "Co-founded Spark Capital with Santo Politi and Bijan Sabet." },
-      { year: 2012, event: "Led Spark Capital's investment in 1stdibs' $42 million Series B and joined its board of directors." },
-      { year: 2017, event: "Led Spark Capital's $8.5 million Series B in SiFive and joined its board of directors." },
-      { year: null, event: "Served as a general partner at Battery Ventures, leading its investments in Akamai Technologies, Arbor Networks, Broadbus, Redstone, River Delta Networks, Qtera and XCOM." }
-    ],
-    biography: "Todd Dagres co-founded Spark Capital in 2005 and is described on the firm's site as its co-founder and partner emeritus. At Spark he led investments in 1stdibs, Freight Farms, Jana, Kateeva, SiFive and Signpost, and earlier in Covestor and Verivue. Before Spark he was a general partner at Battery Ventures, where he led investments including Akamai Technologies, Arbor Networks, Qtera and XCOM, and earlier he was a senior technology analyst at Montgomery Securities, Smith Barney and the Yankee Group. He is co-founder and chairman of the venture philanthropy organization Power Launch, has taught as an adjunct professor at the MIT Sloan School of Business, and holds a B.S. in psychology from Trinity College and an M.B.A. from Boston University.",
-    notableInvestments: [
-      { name: "1stdibs", ticker: "DIBS", stage: "Series B", year: 2012, yearPrecision: "year", sector: "Ecommerce", subsector: "online luxury and vintage marketplace", role: "board", evidence: [
-        { url: "https://www.prnewswire.com/news-releases/growth-in-online-luxury-marketplace-attracts-investment-from-index-ventures-spark-capital-and-benchmark-181846841.html", type: "deal-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "SiFive", ticker: null, stage: "Series B", year: 2017, yearPrecision: "year", sector: "Hardware", subsector: "RISC-V based semiconductors", role: "board", evidence: [
-        { url: "https://www.sifive.com/press/sifive-secures-8-5-million-series-b-funding-to-advance-risc-v-based-semiconductors", type: "deal-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Freight Farms", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Agtech", subsector: "container farming systems", role: null, evidence: [
-        { url: "https://www.sparkcapital.com/team-members/todd-dagres", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Kateeva", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Industrial & Manufacturing Technology", subsector: "inkjet deposition equipment for OLED displays", role: null, evidence: [
-        { url: "https://www.sparkcapital.com/team-members/todd-dagres", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Akamai Technologies", ticker: "AKAM", stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "content delivery and internet infrastructure", role: null, evidence: [
-        { url: "https://www.sparkcapital.com/team-members/todd-dagres", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Spark Capital - Todd Dagres", url: "https://www.sparkcapital.com/team-members/todd-dagres" },
-      { label: "Spark Capital - Team", url: "https://www.sparkcapital.com/team" },
-      { label: "1stdibs $42M Series B announcement (Index Ventures, Spark Capital, Benchmark)", url: "https://www.prnewswire.com/news-releases/growth-in-online-luxury-marketplace-attracts-investment-from-index-ventures-spark-capital-and-benchmark-181846841.html" },
-      { label: "SiFive Secures $8.5 Million Series B Funding", url: "https://www.sifive.com/press/sifive-secures-8-5-million-series-b-funding-to-advance-risc-v-based-semiconductors" },
-      { label: "SEC DEF 14A - 1stdibs.com, Inc. 2025 proxy statement", url: "https://www.sec.gov/Archives/edgar/data/1600641/000160064125000046/def14aproxystatement2025an.htm" }
-    ]
-  },
-"alan-patricof": {
-    name: "Alan Patricof",
-    firm: "Greycroft",
-    firmSlug: "greycroft",
-    title: "Co-Founder & Chairman",
-    joinedYear: 2006,
-    departedYear: null,
-    departedNote: "Greycroft's own site lists him as Co-Founder & Chairman Emeritus on his bio page, and he does not appear on the firm's current team roster of investors. An April 2026 press release likewise describes him as Chairman Emeritus of Greycroft while serving as Chairperson and co-founder of Primetime Partners, the fund for older adults he co-founded in 2020.",
-    investmentFocus: [],
-    education: [
-      "B.S. Finance, Ohio State University",
-      "M.B.A., Columbia University Graduate School of Business"
-    ],
-    previousExperience: [
-      "Founder & Chairman of the Board, New York magazine",
-      "Founder, Patricof & Co. Ventures Inc. (predecessor to Apax Partners)",
-      "Founder, Apax Partners",
-      "Co-Founder & Chairperson, Primetime Partners"
-    ],
-    firmHistory: [],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 1979, event: "Invested in Apple as a second round investor." },
-      { year: 1985, event: "Backed Quantum Computer Services, which later became America Online." },
-      { year: 2004, event: "Stepped back from the daily administration and operational aspects of Apax Partners." },
-      { year: 2006, event: "Co-founded Greycroft." },
-      { year: 2020, event: "Co-founded Primetime Partners with Abby Miller Levy to invest in products and services for adults over 60." },
-      { year: 2026, event: "Joined the board of directors of CaringKind." }
-    ],
-    biography: "Alan Patricof co-founded Greycroft in 2006, after creating Patricof & Co. Ventures, the predecessor to Apax Partners, and stepping back from the daily administration and operational aspects of Apax in 2004. Greycroft's site states his investments have included America Online, Office Depot, Cadence Systems, Apple Computer, Audible, Axios and Wondery. He also founded and chaired the board of New York magazine, which subsequently acquired the Village Voice and New West. In 2020 he co-founded Primetime Partners with Abby Miller Levy, and Greycroft now lists him as Co-Founder and Chairman Emeritus.",
-    notableInvestments: [
-      { name: "Apple", ticker: "AAPL", stage: null, year: 1979, yearPrecision: "year", sector: "Hardware", subsector: "personal computers", role: null, evidence: [
-        { url: "https://fortune.com/2017/12/11/alan-patricof-greycroft-apple-aol/", type: "press", checked: "2026-08-25" },
-        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "America Online (Quantum Computer Services)", ticker: null, stage: null, year: 1985, yearPrecision: "year", sector: "Consumer", subsector: "online services", role: null, evidence: [
-        { url: "https://fortune.com/2017/12/11/alan-patricof-greycroft-apple-aol/", type: "press", checked: "2026-08-25" },
-        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Office Depot", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "office products retail", role: null, evidence: [
-        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://business.columbia.edu/columbia-business-school-board/people/alan-j-patricof-57", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Audible", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "spoken word audio", role: null, evidence: [
-        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://business.columbia.edu/columbia-business-school-board/people/alan-j-patricof-57", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Cadence Systems", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "electronic design automation", role: null, evidence: [
-        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Axios", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "digital media", role: null, evidence: [
-        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Wondery", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "podcast network", role: null, evidence: [
-        { url: "https://www.greycroft.com/team/alan-patricof/", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Greycroft - Alan Patricof", url: "https://www.greycroft.com/team/alan-patricof/" },
-      { label: "Greycroft - Team", url: "https://www.greycroft.com/team" },
-      { label: "Columbia Business School - Alan J. Patricof '57", url: "https://business.columbia.edu/columbia-business-school-board/people/alan-j-patricof-57" },
-      { label: "Fortune - Alan Patricof, Greycroft, Apple, AOL (2017)", url: "https://fortune.com/2017/12/11/alan-patricof-greycroft-apple-aol/" },
-      { label: "BusinessWire - Alan Patricof and Abby Miller Levy Launch Primetime Partners (2020)", url: "https://www.businesswire.com/news/home/20200729005715/en/Venture-Capital-Pioneer-Alan-Patricof-and-Wellness-Executive-Abby-Miller-Levy-Launch-Primetime-Partners" },
-      { label: "PR Newswire - Alan J. Patricof Joins CaringKind's Board of Directors (2026)", url: "https://www.prnewswire.com/news-releases/alan-j-patricof-venture-capital-pioneer-and-champion-of-aging-and-longevity-joins-caringkinds-board-of-directors-302751996.html" }
-    ]
-  },
-"ian-sigalow": {
-    name: "Ian Sigalow",
-    firm: "Greycroft",
-    firmSlug: "greycroft",
-    title: "Co-Founder & Managing Partner",
-    joinedYear: 2006,
-    investmentFocus: [
-      "AI",
-      "Fintech",
-      "Consumer"
-    ],
-    education: [
-      "B.S., Massachusetts Institute of Technology",
-      "M.B.A., Columbia Business School"
-    ],
-    previousExperience: [
-      "Founder, StrongData (payment encryption startup)",
-      "Venture capital investor, Boston Millennia Partners"
-    ],
-    firmHistory: [],
-    boardSeats: [
-      "HealthVerity",
-      "Pie Insurance"
-    ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: null, event: "Founded StrongData, a payment encryption startup addressing card not present fraud." },
-      { year: 2006, event: "Co-founded Greycroft." },
-      { year: 2012, event: "Represented Greycroft on the 5 million dollar Series B round it led in LongTail Video." },
-      { year: 2013, event: "Joined the Skimlinks board as an observer after Greycroft led the company's growth financing round." }
-    ],
-    biography: "Ian Sigalow co-founded Greycroft in 2006 and serves as Managing Partner in the firm's New York office, where his bio says he helps guide the firm's operations, investment strategy and long term vision. Greycroft states he invests in high growth companies in the digital economy with a recent emphasis on artificial intelligence, and that he has led investments in Venmo, Braintree, Shipt, Buddy Media, Plated, Bright Health Group, WorkFusion and Extreme Reach. Before Greycroft he founded StrongData, a payment encryption startup addressing card not present fraud, and began his venture capital career at Boston Millennia Partners. He holds a B.S. from MIT and an M.B.A. from Columbia Business School, and currently sits on the boards of HealthVerity and Pie Insurance.",
-    notableInvestments: [
-      { name: "Venmo", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "peer to peer payments", role: null, evidence: [
-        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://healthverity.com/about-us/board/ian-sigalow/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Braintree", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "payments infrastructure", role: null, evidence: [
-        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://healthverity.com/about-us/board/ian-sigalow/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Shipt", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Ecommerce", subsector: "same day grocery delivery", role: null, evidence: [
-        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://healthverity.com/about-us/board/ian-sigalow/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Buddy Media", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "social media marketing", role: null, evidence: [
-        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://healthverity.com/about-us/board/ian-sigalow/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Plated", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Foodtech", subsector: "meal kits", role: null, evidence: [
-        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" },
-        { url: "https://healthverity.com/about-us/board/ian-sigalow/", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Bright Health Group", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: null, role: null, evidence: [
-        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "WorkFusion", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "intelligent automation", role: null, evidence: [
-        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Extreme Reach", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "advertising technology", role: null, evidence: [
-        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "LongTail Video", ticker: null, stage: "Series B", year: 2012, yearPrecision: "year", sector: "Enterprise Software", subsector: "online video platform", role: null, evidence: [
-        { url: "https://adtechdaily.com/2012/11/12/longtail-video-secures-5-million-in-series-b-funding-led-by-greycroft/", type: "deal-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Skimlinks", ticker: null, stage: "Growth", year: 2013, yearPrecision: "year", sector: "Ecommerce", subsector: "content monetization", role: null, evidence: [
-        { url: "https://www.prnewswire.com/news-releases/skimlinks-raises-growth-financing-round-led-by-greycroft-partners-204101651.html", type: "deal-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "HealthVerity", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: "healthcare data", role: "board", evidence: [
-        { url: "https://healthverity.com/about-us/board/ian-sigalow/", type: "press", checked: "2026-08-25" },
-        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Pie Insurance", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "small business insurance", role: "board", evidence: [
-        { url: "https://www.pieinsurance.com/about/board-of-directors", type: "press", checked: "2026-08-25" },
-        { url: "https://www.greycroft.com/team/ian-sigalow/", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Greycroft - Ian Sigalow", url: "https://www.greycroft.com/team/ian-sigalow/" },
-      { label: "Greycroft - Team", url: "https://www.greycroft.com/team" },
-      { label: "HealthVerity - Board - Ian Sigalow", url: "https://healthverity.com/about-us/board/ian-sigalow/" },
-      { label: "Pie Insurance - Board of Directors", url: "https://www.pieinsurance.com/about/board-of-directors" },
-      { label: "PR Newswire - Skimlinks Raises Growth Financing Round Led by Greycroft Partners (2013)", url: "https://www.prnewswire.com/news-releases/skimlinks-raises-growth-financing-round-led-by-greycroft-partners-204101651.html" },
-      { label: "Ad Tech Daily - LongTail Video Secures $5 Million Series B Led by Greycroft (2012)", url: "https://adtechdaily.com/2012/11/12/longtail-video-secures-5-million-in-series-b-funding-led-by-greycroft/" }
     ]
   }
 });
