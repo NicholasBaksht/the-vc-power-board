@@ -1,105 +1,5 @@
 /* data-partners shard 2 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
-"kate-mitchell": {
-    name: "Kate Mitchell",
-    firm: "Scale Venture Partners",
-    firmSlug: "scale-venture-partners",
-    title: "Co-Founder & Partner Emeritus",
-    joinedYear: 2000,
-    education: [],
-    previousExperience: [],
-    investmentFocus: ["Enterprise Software", "SaaS", "AI"],
-    notableInvestments: [
-      { name: "HubSpot", ticker: "HUBS" },
-      { name: "DocuSign", ticker: "DOCU" },
-      { name: "Bill.com", ticker: "BILL" }
-    ],
-    boardSeats: ["SVB Financial Group", "Fortive Corporation"],
-    ipoCount: 3,
-    majorExits: 5,
-    careerTimeline: [
-      { year: "2000", event: "Co-founds BA Venture Partners with Rory O'Driscoll, Bank of America's internal venture arm." },
-      { year: "2007", event: "Leads the spinout into an independent firm, renamed Scale Venture Partners." },
-      { year: "2012", event: "Co-authors the IPO section of the JOBS Act, expanding public-market access for emerging growth companies." },
-      { year: "2014", event: "Co-founds VentureForward, an NVCA initiative advancing opportunities for women and underrepresented minorities in venture capital." },
-      { year: "2019", event: "Bill.com, a Scale portfolio company, completes its IPO." }
-    ],
-    biography: "Kate Mitchell co-founded what became Scale Venture Partners in 2000 as BA Venture Partners, Bank of America's internal venture arm, alongside Rory O'Driscoll, before leading its 2007 spinout into an independent firm. Beyond investing, Mitchell has been one of venture capital's most consequential policy voices - she co-authored the IPO section of the 2012 JOBS Act, expanding public-market access for emerging growth companies, and served as chairman of the National Venture Capital Association. Her investment track record includes HubSpot, DocuSign, and Bill.com, all of which went on to complete public listings, and she co-founded VentureForward in 2014, an NVCA initiative focused on advancing women and underrepresented minorities across the venture ecosystem, earning her the NVCA's American Spirit Award in 2021.",
-    sources: [
-      { label: "Scale Venture Partners - Kate Mitchell", url: "https://www.scalevp.com/team/kate-mitchell" },
-      { label: "iHeart Podcast", url: "https://www.iheart.com/podcast/356-array-podcast-28107740/episode/rory-odriscoll-founder-of-scale-venture-49892844/" }
-    ]
-  },
-"bill-bowes": {
-    name: "Bill Bowes",
-    departedNote: "Not listed on usvp.com/team as captured 2026-08-22; that page rendered a roster including Casey Tansey, Dafina Toncheva and Dale Holladay. His entry here reflects his founding role, not a current one.",
-    firm: "U.S. Venture Partners",
-    firmSlug: "us-venture-partners",
-    title: "Co-Founder",
-    joinedYear: 1981,
-    education: ["BA, Economics, Stanford University", "MBA, Harvard University"],
-    previousExperience: [
-      "Investment Banker, Blyth & Co.",
-      "Board Member, Cetus Corporation (1972-1978)",
-      "Board Member, Raychem (1961-late 1970s)",
-      "Founding Shareholder, First Treasurer & Chairman, Amgen"
-    ],
-    investmentFocus: ["Enterprise Software", "Healthcare", "Biotechnology"],
-    notableInvestments: [
-      { name: "Check Point Software", ticker: "CHKP" },
-      { name: "SanDisk", ticker: null },
-      { name: "Ross Stores", ticker: "ROST" }
-    ],
-    boardSeats: [],
-    ipoCount: 5,
-    majorExits: 10,
-    careerTimeline: [
-      { year: "1961", event: "Joins the board of Raychem, serving until the late 1970s." },
-      { year: "1972", event: "Joins the board of Cetus Corporation, a pioneering biotechnology company." },
-      { year: "1980", event: "Becomes founding shareholder, first Treasurer, and Chairman of Amgen." },
-      { year: "1981", event: "Co-founds U.S. Venture Partners with Stuart Moldaw and Robert Sackman." },
-      { year: "2016", event: "Passes away on December 28, leaving behind a legacy as one of Silicon Valley's foundational biotech and venture figures." }
-    ],
-    biography: "Bill Bowes built a career at the very origins of both Silicon Valley venture capital and the modern biotechnology industry, joining the boards of Raychem and Cetus Corporation years before co-founding U.S. Venture Partners in 1981 with Stuart Moldaw and Robert Sackman. His most historically significant contribution came outside USVP entirely: Bowes was a founding shareholder and served as Amgen's first Treasurer and Chairman, helping build what became one of the world's largest biotechnology companies from its earliest days. At USVP, that same conviction in scientific and technical founders helped establish the firm as one of the longest-running and most successful early-stage investors in Silicon Valley history, backing more than 500 companies across four decades with 93-plus completed IPOs, spanning Check Point Software, SanDisk, Ross Stores, and Yammer. Bowes passed away in December 2016, leaving a legacy as one of the foundational figures connecting Silicon Valley's venture capital and biotechnology industries.",
-    sources: [
-      { label: "Wikipedia - Bill Bowes", url: "https://en.wikipedia.org/wiki/Bill_Bowes_(venture_capitalist)" },
-      { label: "Wikipedia - U.S. Venture Partners", url: "https://en.wikipedia.org/wiki/U.S._Venture_Partners" }
-    ]
-  },
-"rebecca-lynn": {
-    name: "Rebecca Lynn",
-    firm: "Canvas Prime",
-    firmSlug: "canvas-prime",
-    title: "Co-Founder & Managing Director",
-    joinedYear: 2013,
-    education: ["BS, Chemical Engineering, University of Missouri", "JD/MBA, UC Berkeley"],
-    previousExperience: [
-      "New Product Development, Procter & Gamble",
-      "Early Employee & VP Marketing, NextCard (scaled from 30 to 1,300 employees through IPO)",
-      "General Partner, Morgenthaler Ventures (2007-2013)"
-    ],
-    investmentFocus: ["Fintech", "Healthtech", "AI"],
-    notableInvestments: [
-      { name: "LendingClub", ticker: "LC" },
-      { name: "Doximity", ticker: "DOCS" },
-      { name: "Luminar Technologies", ticker: "LAZR" }
-    ],
-    boardSeats: [],
-    ipoCount: 3,
-    majorExits: 9,
-    careerTimeline: [
-      { year: "1998", event: "Moves to Silicon Valley as an early employee of NextCard, the first online credit card company, helping scale it from 30 to 1,300 employees through IPO." },
-      { year: "2007", event: "Begins her venture career at Morgenthaler Ventures, becoming a partner in 2012." },
-      { year: "2013", event: "Co-founds Canvas Ventures, a spinout from Morgenthaler; leads the firm's early-stage investment in LendingClub." },
-      { year: "2014", event: "LendingClub completes its IPO in December, the largest U.S. tech IPO of the year." },
-      { year: "2023", event: "Casetext, an early Canvas investment, is acquired by Thomson Reuters for $650 million in an all-cash deal." }
-    ],
-    biography: "Rebecca Lynn began her career as a chemical engineer, including work in a nuclear research reactor, before moving into product development at Procter & Gamble and then joining NextCard, the first online credit card company, as an early employee, helping scale it from 30 to 1,300 employees through its IPO. She began her venture career at Morgenthaler Ventures in 2007, becoming partner in 2012, before co-founding Canvas Ventures (now Canvas Prime) as a spinout in 2013 - closing her first fund the week Lehman Brothers collapsed. Her early-stage investment in LendingClub became the largest U.S. tech IPO of 2014, and her broader track record includes Doximity, Luminar Technologies, and Casetext, the AI-powered legal research platform Thomson Reuters acquired for $650 million in cash in 2023 after the company gained early access to GPT-4. A five-time Forbes Midas List honoree, Lynn has been recognized as a Senior Deal Maker by the Wall Street Journal and a Top Woman VC by the New York Times.",
-    sources: [
-      { label: "Canvas Prime - Rebecca Lynn", url: "https://www.canvas.vc/team-member/rebecca-lynn" },
-      { label: "Wikipedia - Rebecca Lynn", url: "https://en.wikipedia.org/wiki/Rebecca_Lynn_(venture_capitalist)" }
-    ]
-  },
 "tige-savage": {
     name: "Tige Savage",
     firm: "Revolution Ventures",
@@ -1280,7 +1180,30 @@ Object.assign(partnerProfiles, {
         label: "Wikipedia - Lan Xuezhao",
         url: "https://en.wikipedia.org/wiki/Lan_Xuezhao"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Scale AI", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.basisset.com/team-members/dr-lan-xuezhao", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "CuspAI", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.basisset.com/team-members/dr-lan-xuezhao", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Path Robotics", ticker: null,
+      sector: "Robotics",
+      evidence: [{ url: "https://www.basisset.com/team-members/dr-lan-xuezhao", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Workstream", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://www.basisset.com/team-members/dr-lan-xuezhao", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Drata", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.basisset.com/team-members/dr-lan-xuezhao", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Quince", ticker: null,
+      sector: "Ecommerce",
+      evidence: [{ url: "https://www.basisset.com/team-members/dr-lan-xuezhao", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Ergeon", ticker: null,
+      sector: "Consumer",
+      evidence: [{ url: "https://www.basisset.com/team-members/dr-lan-xuezhao", type: "partner-bio", checked: "2026-08-31" }] }
+  ]
   },
 "barend-van-den-brande": {
     name: "Barend Van den Brande",
@@ -1560,7 +1483,25 @@ Object.assign(partnerProfiles, {
         label: "Nathan Benaich - personal site",
         url: "https://www.nathanbenaich.com/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Mapillary", ticker: null, stage: "Seed",
+      sector: "AI", subsector: "street level imagery platform", orgAtTime: "playfair-capital",
+      evidence: [{ url: "https://www.cnbc.com/2020/11/03/twitter-supercell-googles-ai-boss-back-nathan-benaichs-air-street.html", type: "press", checked: "2026-08-31" },
+                  { url: "https://medium.com/point-nine-news/welcome-nathan-edea21281546", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Ravelin", ticker: null,
+      sector: "Fintech", subsector: "fraud prevention", orgAtTime: "playfair-capital",
+      evidence: [{ url: "https://medium.com/point-nine-news/welcome-nathan-edea21281546", type: "firm-announcement", checked: "2026-08-31" },
+                  { url: "https://www.airstreet.com/portfolio", type: "portfolio-page", checked: "2026-08-31" }] },
+    { name: "Numerai", ticker: null,
+      sector: "Fintech", subsector: "quant hedge fund", orgAtTime: "playfair-capital",
+      evidence: [{ url: "https://medium.com/point-nine-news/welcome-nathan-edea21281546", type: "firm-announcement", checked: "2026-08-31" },
+                  { url: "https://www.airstreet.com/portfolio", type: "portfolio-page", checked: "2026-08-31" }] },
+    { name: "Thought Machine", ticker: null,
+      sector: "Fintech", subsector: "core banking", orgAtTime: "playfair-capital",
+      evidence: [{ url: "https://medium.com/point-nine-news/welcome-nathan-edea21281546", type: "firm-announcement", checked: "2026-08-31" },
+                  { url: "https://www.airstreet.com/portfolio", type: "portfolio-page", checked: "2026-08-31" }] }
+  ]
   },
 "gabriel-matuschka": {
     name: "Gabriel Matuschka",
@@ -1868,7 +1809,20 @@ Object.assign(partnerProfiles, {
         label: "Wikipedia - Anne Glover",
         url: "https://en.wikipedia.org/wiki/Anne_Glover_(businesswoman)"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Openbravo", ticker: null,
+      sector: "Enterprise Software", subsector: "cloud-based retail software for unified commerce",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/anne-glover/", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "ContactEngine", ticker: null,
+      sector: "AI", subsector: "Conversational AI for customer engagement",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/anne-glover/", type: "partner-bio", checked: "2026-08-31" },
+                  { url: "https://www.amadeuscapital.com/portfolio/contactengine/", type: "portfolio-page", checked: "2026-08-31" }] },
+    { name: "Optos", ticker: null,
+      sector: "Medical Devices", subsector: "Optomap retinal imaging",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/anne-glover/", type: "partner-bio", checked: "2026-08-31" },
+                  { url: "https://www.amadeuscapital.com/portfolio/optos/", type: "portfolio-page", checked: "2026-08-31" }] }
+  ]
   },
 "hermann-hauser": {
     name: "Hermann Hauser",
@@ -1923,7 +1877,42 @@ Object.assign(partnerProfiles, {
         label: "Wikipedia - Hermann Hauser",
         url: "https://en.wikipedia.org/wiki/Hermann_Hauser"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "CSR plc", ticker: null,
+      sector: "Hardware", subsector: "semiconductors",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/hermann-hauser/", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Icera", ticker: null,
+      sector: "Hardware", subsector: "semiconductors",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/hermann-hauser/", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "XMOS", ticker: null,
+      sector: "Hardware", subsector: "semiconductors", role: "board",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/hermann-hauser/", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Tobii", ticker: null,
+      sector: "Hardware",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/hermann-hauser/", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Solexa", ticker: null,
+      sector: "Biotech", role: "board",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/hermann-hauser/", type: "partner-bio", checked: "2026-08-31" },
+                  { url: "https://www.sec.gov/Archives/edgar/data/913275/000089161806000369/f22901dedef14a.htm", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "Secondmind", ticker: null,
+      sector: "AI", subsector: "machine learning for automotive engineering",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/hermann-hauser/", type: "partner-bio", checked: "2026-08-31" },
+                  { url: "https://www.amadeuscapital.com/portfolio/secondmind/", type: "portfolio-page", checked: "2026-08-31" }] },
+    { name: "VocalIQ", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/hermann-hauser/", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Entropic Research Laboratory", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/hermann-hauser/", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "FiveAI", ticker: null,
+      sector: "Mobility",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/hermann-hauser/", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Photonic", ticker: null,
+      sector: "Deep Tech", subsector: "fault-tolerant quantum computing, silicon spin-photon architecture",
+      evidence: [{ url: "https://www.amadeuscapital.com/team/hermann-hauser/", type: "partner-bio", checked: "2026-08-31" },
+                  { url: "https://www.amadeuscapital.com/portfolio/photonic/", type: "portfolio-page", checked: "2026-08-31" }] }
+  ]
   },
 "andreas-riegler": {
     name: "Andreas Riegler",
@@ -1962,7 +1951,19 @@ Object.assign(partnerProfiles, {
         label: "Silicon Republic - Amadeus APEX Technology Fund",
         url: "https://www.siliconrepublic.com/start-ups/amadeus-apex-technology-fund-deep-tech-startups-europe"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "contextflow", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year",
+      sector: "AI", subsector: "radiology AI", role: "board",
+      evidence: [{ url: "https://contextflow.com/2021/09/07/contextflow-secures-seriesa-investment/", type: "deal-announcement", checked: "2026-08-31" },
+                  { url: "https://www.healthwildcatters.com/andreas-riegler", type: "press", checked: "2026-08-31" }] },
+    { name: "Spleenlab", ticker: null, year: 2020, yearPrecision: "year",
+      sector: "AI", subsector: "AI software for autonomous systems",
+      evidence: [{ url: "https://www.bm-t.de/en/2020-en/thueringen-ai-software-specialist-spleenlab-successfully-closes-first-financing-round/", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "kiutra", ticker: null, stage: "Seed", year: 2019, yearPrecision: "year",
+      sector: "Deep Tech", subsector: "magnetic refrigeration for quantum technologies",
+      evidence: [{ url: "https://www.htgf.de/en/cool-start-to-the-age-of-quantum-technologies-deep-tech-startup-kiutra-completes-seed-investment-round/", type: "deal-announcement", checked: "2026-08-31" }] }
+  ]
   },
 "hussein-kanji": {
     name: "Hussein Kanji",
@@ -2154,7 +2155,12 @@ Object.assign(partnerProfiles, {
         label: "VC Sheet - Andre de Haes",
         url: "https://www.vcsheet.com/who/andre-de-haes"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Travizory", ticker: null,
+      sector: "Enterprise Software", subsector: "border security", role: "board",
+      evidence: [{ url: "https://www.backed.vc/insights/travizory-redefining-border-security-worldwide", type: "firm-announcement", checked: "2026-08-31" }] }
+  ]
   },
 "robert-dighero": {
     name: "Robert Dighero",
@@ -2611,7 +2617,36 @@ Object.assign(partnerProfiles, {
         label: "Crunchbase - Pranav Pai",
         url: "https://www.crunchbase.com/person/pranav-pai"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Pocket Aces", ticker: null, stage: "Series B", year: 2019, yearPrecision: "year",
+      sector: "Consumer", subsector: "digital entertainment / mobile video content",
+      evidence: [{ url: "https://yourstory.com/2019/07/startup-funding-digital-entertainment-pocket-aces-sequoia-india-3one4-capital", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Darwinbox", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://gesmumbai.com/175/mr.-pranav-pai", type: "press", checked: "2026-08-31" }] },
+    { name: "BetterPlace", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://gesmumbai.com/175/mr.-pranav-pai", type: "press", checked: "2026-08-31" }] },
+    { name: "Tracxn", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://gesmumbai.com/175/mr.-pranav-pai", type: "press", checked: "2026-08-31" }] },
+    { name: "Jupiter", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://gesmumbai.com/175/mr.-pranav-pai", type: "press", checked: "2026-08-31" }] },
+    { name: "Open", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://gesmumbai.com/175/mr.-pranav-pai", type: "press", checked: "2026-08-31" }] },
+    { name: "Licious", ticker: null,
+      sector: "Foodtech",
+      evidence: [{ url: "https://gesmumbai.com/175/mr.-pranav-pai", type: "press", checked: "2026-08-31" }] },
+    { name: "Loco", ticker: null,
+      sector: "Gaming",
+      evidence: [{ url: "https://gesmumbai.com/175/mr.-pranav-pai", type: "press", checked: "2026-08-31" }] },
+    { name: "Dozee", ticker: null,
+      sector: "Digital Health",
+      evidence: [{ url: "https://gesmumbai.com/175/mr.-pranav-pai", type: "press", checked: "2026-08-31" }] }
+  ]
   },
 "anand-lunia": {
     name: "Anand Lunia",
@@ -2805,7 +2840,19 @@ Object.assign(partnerProfiles, {
         label: "4DX Ventures - Walter Baddoo",
         url: "https://www.4dxventures.com/team/walter-baddoo"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Tizeti", ticker: null, stage: "Series A", year: 2018, yearPrecision: "year",
+      sector: "Consumer", subsector: "solar-powered wireless internet service provider", role: "board",
+      evidence: [{ url: "https://ventureburn.com/2018/09/tizeti-series-a-4dx-ventures/", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Autochek", ticker: null, stage: "Seed", year: 2021, yearPrecision: "year",
+      sector: "Mobility", subsector: "end-to-end car ownership and auto financing platform",
+      evidence: [{ url: "https://techcrunch.com/2021/10/26/tlcom-and-4dx-drive-13-1m-seed-round-to-scale-autocheks-platform-across-africa/", type: "deal-announcement", checked: "2026-08-31" },
+                  { url: "https://disruptafrica.com/2021/10/26/nigerias-autochek-raises-13-1m-seed-funding-round-for-west-africa-expansion/", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Paps", ticker: null, year: 2022, yearPrecision: "year",
+      sector: "Logistics", subsector: "tech-enabled logistics and last-mile delivery",
+      evidence: [{ url: "https://www.techwithafrica.com/paps-raises-4-5m-pre-series-a-round-led-by-4dx-ventures-and-orange/", type: "deal-announcement", checked: "2026-08-31" }] }
+  ]
   },
 "oliver-samwer": {
     name: "Oliver Samwer",
@@ -4339,7 +4386,28 @@ Object.assign(partnerProfiles, {
         label: "Energy Impact Partners - Team",
         url: "https://www.energyimpactpartners.com/team"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Sense Labs", ticker: null, year: 2016, yearPrecision: "year",
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1629273/000114036116078461/primary_doc.xml", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "CIMCON Lighting", ticker: null, year: 2017, yearPrecision: "year",
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1644496/000164449617000001/primary_doc.xml", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "Measurabl", ticker: null, year: 2021, yearPrecision: "year",
+      sector: "Real Estate Tech", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1618397/000161839721000001/primary_doc.xml", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "GridX", ticker: null, year: 2022, yearPrecision: "year",
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1574348/000157434822000001/primary_doc.xml", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "Stone Mountain Technologies", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1952917/000195291724000004/primary_doc.xml", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "ERock", ticker: null, year: 2026, yearPrecision: "year",
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/2110029/000119312526264625/ownership.xml", type: "regulatory", checked: "2026-08-31" }] }
+  ]
   },
 "sameer-reddy": {
     name: "Sameer Reddy",
@@ -5107,7 +5175,12 @@ Object.assign(partnerProfiles, {
         label: "Tribe Capital - Team",
         url: "https://tribecap.co/team"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Teampay", ticker: null, stage: "Series A", year: 2019, yearPrecision: "year",
+      sector: "Fintech", subsector: "distributed spend management",
+      evidence: [{ url: "https://pulse2.com/teampay-12-million-in-funding/", type: "press", checked: "2026-08-31" }] }
+  ]
   },
 "ted-maidenberg": {
     name: "Ted Maidenberg",
@@ -6057,7 +6130,13 @@ Object.assign(partnerProfiles, {
         label: "EQT Group - Gustav von Sydow",
         url: "https://eqtgroup.com/about/people/gustav-von-sydow"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Strawberry", ticker: null, year: 2025, yearPrecision: "year",
+      sector: "AI", subsector: "self-driving / agentic AI-powered browser",
+      evidence: [{ url: "https://siliconcanals.com/strawberry-raises-e5-1m/", type: "press", checked: "2026-08-31" },
+                  { url: "https://startupsmagazine.co.uk/article-strawberry-raises-6m-and-launches-agentic-ai-powered-browser", type: "press", checked: "2026-08-31" }] }
+  ]
   },
 "kaushik-subramanian": {
     name: "Kaushik Subramanian",
@@ -6514,7 +6593,16 @@ Object.assign(partnerProfiles, {
         label: "Cyberstarts - Hila Zigman",
         url: "https://www.cyberstarts.com/team/hila-zigman"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Onyx Security", ticker: null, stage: "Series A", year: 2026, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "security and control platform for AI agents in enterprises",
+      evidence: [{ url: "https://www.calcalistech.com/ctechnews/article/hjmra11x911g", type: "press", checked: "2026-08-31" },
+                  { url: "https://www.calcalistech.com/ctechnews/article/b1fsjydszg", type: "press", checked: "2026-08-31" }] },
+    { name: "A Security", ticker: null, stage: "Series A", year: 2026, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "hunting attack paths before AI-enabled hackers exploit them",
+      evidence: [{ url: "https://www.calcalistech.com/ctechnews/article/sj3rrxnbzx", type: "press", checked: "2026-08-31" }] }
+  ]
   },
 "adam-aarons": {
     name: "Adam Aarons",
@@ -6647,7 +6735,36 @@ Object.assign(partnerProfiles, {
         label: "Global Venturing - Cheryl Cheng Joins M12",
         url: "https://globalventuring.com/corporate/people/cheng-joins-microsoft-vc-fund-as-managing-partner/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Hello Heart", ticker: null,
+      sector: "Digital Health", subsector: "at-home heart health management", orgAtTime: "bluerun-ventures",
+      evidence: [{ url: "https://dbds.stanford.edu/genai-vc-panel-bios/", type: "press", checked: "2026-08-31" }] },
+    { name: "gennev", ticker: null,
+      sector: "Digital Health", subsector: "tele-health services for gynecology, primary care, and lifestyle behaviors", orgAtTime: "bluerun-ventures",
+      evidence: [{ url: "https://dbds.stanford.edu/genai-vc-panel-bios/", type: "press", checked: "2026-08-31" }] },
+    { name: "Blue Fever", ticker: null,
+      sector: "Digital Health", subsector: "an online space for Gen Z to increase belonging and resilience", orgAtTime: "bluerun-ventures",
+      evidence: [{ url: "https://dbds.stanford.edu/genai-vc-panel-bios/", type: "press", checked: "2026-08-31" }] },
+    { name: "Kiddo", ticker: null,
+      sector: "Digital Health", subsector: "pediatric remote patient monitoring", role: "board", orgAtTime: "vive-collective",
+      evidence: [{ url: "https://dbds.stanford.edu/genai-vc-panel-bios/", type: "press", checked: "2026-08-31" }] },
+    { name: "Samacare", ticker: null,
+      sector: "Digital Health", subsector: "prior authorization platform for specialty medications", role: "board", orgAtTime: "vive-collective",
+      evidence: [{ url: "https://dbds.stanford.edu/genai-vc-panel-bios/", type: "press", checked: "2026-08-31" }] },
+    { name: "Human API", ticker: null,
+      sector: "Digital Health", orgAtTime: "bluerun-ventures",
+      evidence: [{ url: "https://dbds.stanford.edu/genai-vc-panel-bios/", type: "press", checked: "2026-08-31" }] },
+    { name: "Waze", ticker: null,
+      sector: "Mobility", orgAtTime: "bluerun-ventures",
+      evidence: [{ url: "https://dbds.stanford.edu/genai-vc-panel-bios/", type: "press", checked: "2026-08-31" }] },
+    { name: "Chomp", ticker: null,
+      sector: "Consumer", orgAtTime: "bluerun-ventures",
+      evidence: [{ url: "https://dbds.stanford.edu/genai-vc-panel-bios/", type: "press", checked: "2026-08-31" }] },
+    { name: "Kabbage", ticker: null,
+      sector: "Fintech", orgAtTime: "bluerun-ventures",
+      evidence: [{ url: "https://dbds.stanford.edu/genai-vc-panel-bios/", type: "press", checked: "2026-08-31" }] }
+  ]
   },
 "alan-du": {
     name: "Alan Du",
@@ -6764,7 +6881,24 @@ Object.assign(partnerProfiles, {
         label: "M12 - Todd Graham",
         url: "https://m12.vc/team/todd-graham/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "HiddenLayer", ticker: null, stage: "Series A", year: 2023, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "security for AI and ML models",
+      evidence: [{ url: "https://www.hiddenlayer.com/news/hiddenlayer-raises-50m-in-series-a-funding-to-safeguard-ai", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Sola Security", ticker: null, stage: "Series A", year: 2025, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "AI in cybersecurity",
+      evidence: [{ url: "https://www.intelligentciso.com/2025/09/04/sola-security-raises-us35-million-a-round-to-pioneer-ai-in-cybersecurity/", type: "press", checked: "2026-08-31" }] },
+    { name: "Bolster", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "phishing detection",
+      evidence: [{ url: "https://techcrunch.com/2024/05/22/bolster-creator-of-the-checkphish-phishing-tracker-raises-14m-led-by-microsofts-m12/", type: "press", checked: "2026-08-31" }] },
+    { name: "Reach Security", ticker: null, year: 2025, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "exposure management",
+      evidence: [{ url: "https://www.reach.security/news/reach-security-announces-10-million-strategic-investment-from-m12", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Solve Intelligence", ticker: null, stage: "Series A", year: 2025, yearPrecision: "year",
+      sector: "Legal Tech", subsector: "patent drafting for patent attorneys and IP professionals",
+      evidence: [{ url: "https://m12.vc/news/why-we-invested-in-solve-intelligence/", type: "firm-announcement", checked: "2026-08-31" }] }
+  ]
   },
 "peter-lenke": {
     name: "Peter Lenke",
@@ -7687,7 +7821,16 @@ Object.assign(partnerProfiles, {
         label: "Acrew - Aliisa Rosenthal",
         url: "https://www.acrewcapital.com/team#aliisa-rosenthal"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Core Automation", ticker: null, year: 2026, yearPrecision: "year",
+      sector: "AI", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/2148145/000214814526000001/primary_doc.xml", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "Wispr", ticker: null, stage: "Series B", year: 2026, yearPrecision: "year",
+      sector: "AI", subsector: "voice dictation interface",
+      evidence: [{ url: "https://perspectives.acrewcapital.com/p/why-we-backed-wispr-the-interface", type: "firm-announcement", checked: "2026-08-31" },
+                  { url: "https://www.acrewcapital.com/team-members/aliisa-rosenthal", type: "partner-bio", checked: "2026-08-31" }] }
+  ]
   },
 "abe-yokell": {
     name: "Abe Yokell",
@@ -8208,7 +8351,23 @@ Object.assign(partnerProfiles, {
     education: [],
     previousExperience: ["Director of Marketing, Ovia Health"],
     boardSeats: [],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Ezra", ticker: null,
+      sector: "Digital Health",
+      evidence: [{ url: "https://sarahadowney.medium.com/im-an-accomplice-for-life-but-part-time-as-of-january-a0248aff027c", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "ZOE", ticker: null,
+      sector: "Digital Health",
+      evidence: [{ url: "https://sarahadowney.medium.com/im-an-accomplice-for-life-but-part-time-as-of-january-a0248aff027c", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Freebird", ticker: null,
+      sector: "Consumer",
+      evidence: [{ url: "https://sarahadowney.medium.com/im-an-accomplice-for-life-but-part-time-as-of-january-a0248aff027c", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Digits", ticker: null,
+      sector: "Fintech", orgAtTime: "angel",
+      evidence: [{ url: "https://sarahadowney.medium.com/im-an-accomplice-for-life-but-part-time-as-of-january-a0248aff027c", type: "partner-bio", checked: "2026-08-31" }] },
+    { name: "Hedera Hashgraph", ticker: null,
+      sector: "Crypto", orgAtTime: "angel",
+      evidence: [{ url: "https://sarahadowney.medium.com/im-an-accomplice-for-life-but-part-time-as-of-january-a0248aff027c", type: "partner-bio", checked: "2026-08-31" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [],
@@ -8996,7 +9155,35 @@ Object.assign(partnerProfiles, {
     education: [],
     previousExperience: [],
     boardSeats: [],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "MutuiOnline", ticker: null,
+      sector: "Fintech", role: "board",
+      evidence: [{ url: "https://2015.startupitaliaopensummit.eu/en/speaker/fausto-boni/", type: "press", checked: "2026-08-31" }] },
+    { name: "Yoox", ticker: null,
+      sector: "Ecommerce", role: "board",
+      evidence: [{ url: "https://2015.startupitaliaopensummit.eu/en/speaker/fausto-boni/", type: "press", checked: "2026-08-31" }] },
+    { name: "QXL", ticker: null,
+      sector: "Ecommerce", role: "board",
+      evidence: [{ url: "https://2015.startupitaliaopensummit.eu/en/speaker/fausto-boni/", type: "press", checked: "2026-08-31" }] },
+    { name: "Selftrade", ticker: null,
+      sector: "Fintech", role: "board",
+      evidence: [{ url: "https://2015.startupitaliaopensummit.eu/en/speaker/fausto-boni/", type: "press", checked: "2026-08-31" }] },
+    { name: "Erenis", ticker: null,
+      sector: "Consumer", role: "board",
+      evidence: [{ url: "https://2015.startupitaliaopensummit.eu/en/speaker/fausto-boni/", type: "press", checked: "2026-08-31" }] },
+    { name: "Smartjog", ticker: null,
+      sector: "Enterprise Software", role: "board",
+      evidence: [{ url: "https://2015.startupitaliaopensummit.eu/en/speaker/fausto-boni/", type: "press", checked: "2026-08-31" }] },
+    { name: "Euroffice", ticker: null,
+      sector: "Ecommerce", role: "board",
+      evidence: [{ url: "https://2015.startupitaliaopensummit.eu/en/speaker/fausto-boni/", type: "press", checked: "2026-08-31" }] },
+    { name: "BeMyEye", ticker: null,
+      sector: "Enterprise Software", role: "board",
+      evidence: [{ url: "https://2015.startupitaliaopensummit.eu/en/speaker/fausto-boni/", type: "press", checked: "2026-08-31" }] },
+    { name: "Windeln", ticker: null,
+      sector: "Ecommerce", role: "board",
+      evidence: [{ url: "https://2015.startupitaliaopensummit.eu/en/speaker/fausto-boni/", type: "press", checked: "2026-08-31" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [],
@@ -9013,7 +9200,12 @@ Object.assign(partnerProfiles, {
     education: [],
     previousExperience: [],
     boardSeats: [],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Aerleum", ticker: null, stage: "Seed", year: 2024, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "CO2 capture and conversion",
+      evidence: [{ url: "https://siliconcanals.com/climate-tech-startup-aerleum-secures-e5-4m/", type: "deal-announcement", checked: "2026-08-31" },
+                  { url: "https://www.eu-startups.com/2024/10/strasbourg-based-aerleum-raises-e5-5-million-to-revolutionize-co%E2%82%82-capture-and-conversion-technology/", type: "deal-announcement", checked: "2026-08-31" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [],
@@ -9030,7 +9222,16 @@ Object.assign(partnerProfiles, {
     education: [],
     previousExperience: [],
     boardSeats: [],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "DoveConviene", ticker: null, stage: "Series B", year: 2014, yearPrecision: "year",
+      sector: "Ecommerce", subsector: "drive-to-store digital retail flyers (now ShopFully)", role: "board",
+      evidence: [{ url: "https://www.mark-up.it/doveconviene-iniezione-di-capitali-per-accelerare-linternazionalizzazione/", type: "deal-announcement", checked: "2026-08-31" },
+                  { url: "https://youmark.it/doveconviene-chiude-un-b-round-di-investimento-da-52-milioni-di-euro-con-i-venture-capital-360-capital-partners-e-merifin-capital-la-societa-accelera-linternazionalizzazione-e-lancia-un-pia/", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Kampaay", ticker: null, stage: "Series A", year: 2023, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "digitalisation of corporate events",
+      evidence: [{ url: "https://forbes.it/2023/05/18/kampaay-raccoglie-73-milioni-di-euro-per-digitalizzare-gli-eventi-aziendali-in-tutta-europa", type: "deal-announcement", checked: "2026-08-31" },
+                  { url: "https://www.startupbusiness.it/round-serie-a-da-73-milioni-di-euro-per-kampaay/32527/", type: "deal-announcement", checked: "2026-08-31" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [],
@@ -9047,7 +9248,21 @@ Object.assign(partnerProfiles, {
     education: [],
     previousExperience: [],
     boardSeats: [],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Wakeo", ticker: null, stage: "Series A", year: 2021, yearPrecision: "year",
+      sector: "Logistics", subsector: "international logistics visibility",
+      evidence: [{ url: "https://www.startupreporter.eu/french-startup-wakeo/", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Preligens", ticker: null, stage: "Series A", year: 2020, yearPrecision: "year",
+      sector: "Defense Tech", subsector: "AI for defence (formerly Earthcube)",
+      evidence: [{ url: "https://presse.bpifrance.fr/earthcube-leve-20-millions-deuros-en-serie-a-pour-consolider-son-leadership-europeen-en-tant-que-start-up-de-la-def-tech-et-change-de-nom-pour-devenir-preligens/?lang=fra", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Beem", ticker: null, stage: "Series A", year: 2023, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "residential solar energy kits",
+      evidence: [{ url: "https://www.cathaycapital.com/beem-raises-20me-to-accelerate-the-energy-transition-in-european-homes/", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Aerleum", ticker: null, stage: "Seed", year: 2024, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "CO2 capture and conversion",
+      evidence: [{ url: "https://siliconcanals.com/climate-tech-startup-aerleum-secures-e5-4m/", type: "deal-announcement", checked: "2026-08-31" },
+                  { url: "https://www.eu-startups.com/2024/10/strasbourg-based-aerleum-raises-e5-5-million-to-revolutionize-co%E2%82%82-capture-and-conversion-technology/", type: "deal-announcement", checked: "2026-08-31" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [],
@@ -9064,7 +9279,11 @@ Object.assign(partnerProfiles, {
     education: [],
     previousExperience: [],
     boardSeats: [],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Adaptronics", ticker: null, stage: "Series A", year: 2025, yearPrecision: "year",
+      sector: "Robotics", subsector: "adaptive robotic grippers",
+      evidence: [{ url: "https://www.eu-startups.com/2025/11/adaptive-grippers-allowing-robots-to-grasp-any-object-drives-e3-15-million-investment-in-italys-adaptronics/", type: "deal-announcement", checked: "2026-08-31" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [{ year: 2026, event: "Quoted as Partner at 360 Capital in the firm's announcement of the €85M close of the Poli360 2 deeptech technology transfer fund." }],
@@ -9081,7 +9300,18 @@ Object.assign(partnerProfiles, {
     education: ["MBA, Cambridge University", "Bachelor of Laws, University of Adelaide", "Bachelor of Commerce, University of Adelaide"],
     previousExperience: ["Bain & Co", "Rabobank Ventures", "Co-founder of a fintech startup"],
     boardSeats: [],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Ashish Life Sciences", ticker: null, stage: "Series A", year: 2019, yearPrecision: "year",
+      sector: "Agtech", subsector: "veterinary pharmaceuticals / animal health",
+      evidence: [{ url: "https://agfundernews.com/indian-animal-health-startup-ashish-life-sciences-raises-6m-fidelitys-eight-roads", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Enko Chem", ticker: null, stage: "Series B", year: 2020, yearPrecision: "year",
+      sector: "Agtech", subsector: "crop protection / small-molecule discovery",
+      evidence: [{ url: "https://agfundernews.com/breaking-gates-foundation-leads-crop-protection-startup-enkos-45-million-series-b-round", type: "deal-announcement", checked: "2026-08-31" }] },
+    { name: "Smartwyre", ticker: null, year: 2021, yearPrecision: "year",
+      sector: "Agtech", subsector: "software for agriculture retail, manufacturers, and distributors", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1776163/000123191922000012/primary_doc.xml", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://anterracapital.com/project/smartwyre/", type: "portfolio-page", checked: "2026-08-31" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [{ year: 2021, event: "Quoted as Managing Partner in Anterra's announcement of the $175M initial closing of Anterra F&A Ventures II." }, { year: 2022, event: "Quoted as Managing Partner in coverage of Anterra's $260M Fund II final close." }],
@@ -9115,7 +9345,11 @@ Object.assign(partnerProfiles, {
     education: ["MSc in Business Administration and Finance, Vrije Universiteit Amsterdam", "LSE Summer School programme in Entrepreneurship"],
     previousExperience: ["Rabobank - M&A department", "Rabobank - corporate banking department", "Rabobank - private equity department"],
     boardSeats: [],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Dalma", ticker: null, stage: "Series B", year: 2025, yearPrecision: "year",
+      sector: "Fintech", subsector: "pet insurance",
+      evidence: [{ url: "https://www.eu-startups.com/2025/03/in-just-two-clicks-dalma-raises-e20-million-to-expand-its-pet-insurance-offering/", type: "deal-announcement", checked: "2026-08-31" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [],
@@ -9132,7 +9366,12 @@ Object.assign(partnerProfiles, {
     education: ["MBA, University of St. Thomas", "BS in Chemical Engineering and Biotechnology, Tufts University"],
     previousExperience: ["Senior leadership role at a digital agriculture company", "Equity research analyst covering agriculture and agricultural biotechnology", "Project and process engineer in the biofuel industry"],
     boardSeats: [],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "BiomEdit", ticker: null, stage: "Series B", year: 2025, yearPrecision: "year",
+      sector: "Biotech", subsector: "designer probiotics for animal health", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/2069482/000206948225000001/primary_doc.xml", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://agfundernews.com/biomedit-raises-18-4m-series-b-to-expand-designer-probiotics-platform", type: "deal-announcement", checked: "2026-08-31" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [],
@@ -9377,7 +9616,30 @@ Object.assign(partnerProfiles, {
     education: ["PhD in fetal immunology focusing on childhood leukaemia", "University of Oxford"],
     previousExperience: ["Boston Consulting Group (role not specified on firm site)"],
     boardSeats: [],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Mogrify", ticker: null,
+      sector: "Biotech", subsector: "Research and experimental development on biotechnology", role: "board",
+      evidence: [{ url: "https://find-and-update.company-information.service.gov.uk/officers/PPJ8UcHoyqnLtOaFjWHoDLmEJvg/appointments", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://find-and-update.company-information.service.gov.uk/company/10002103/officers", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://find-and-update.company-information.service.gov.uk/company/10002103", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "Adrestia Therapeutics", ticker: null,
+      sector: "Biotech", subsector: "Research and experimental development on biotechnology", role: "board",
+      evidence: [{ url: "https://find-and-update.company-information.service.gov.uk/officers/PPJ8UcHoyqnLtOaFjWHoDLmEJvg/appointments", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://find-and-update.company-information.service.gov.uk/company/10934416", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "Klura", ticker: null,
+      sector: "Biotech", subsector: "Research and experimental development on biotechnology", role: "board",
+      evidence: [{ url: "https://find-and-update.company-information.service.gov.uk/officers/PPJ8UcHoyqnLtOaFjWHoDLmEJvg/appointments", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://find-and-update.company-information.service.gov.uk/company/12670368", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "Zya Enzymes", ticker: null,
+      sector: "Biotech", subsector: "Research and experimental development on biotechnology", role: "board",
+      evidence: [{ url: "https://find-and-update.company-information.service.gov.uk/officers/PPJ8UcHoyqnLtOaFjWHoDLmEJvg/appointments", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://find-and-update.company-information.service.gov.uk/company/11416767", type: "regulatory", checked: "2026-08-31" }] },
+    { name: "Outsee", ticker: null,
+      sector: "Biotech", subsector: "Research and experimental development on biotechnology", role: "board",
+      evidence: [{ url: "https://find-and-update.company-information.service.gov.uk/officers/PPJ8UcHoyqnLtOaFjWHoDLmEJvg/appointments", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://find-and-update.company-information.service.gov.uk/company/14388773/officers", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://find-and-update.company-information.service.gov.uk/company/14388773", type: "regulatory", checked: "2026-08-31" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [],
@@ -9411,7 +9673,13 @@ Object.assign(partnerProfiles, {
     education: ["First-Class degree in Biochemistry, University of Exeter"],
     previousExperience: [],
     boardSeats: [],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Bitfount", ticker: null,
+      sector: "Enterprise Software", subsector: "Business and domestic software development", role: "board",
+      evidence: [{ url: "https://find-and-update.company-information.service.gov.uk/officers/8zNx_7rGwHzdPzSE65ztn5_ObMc/appointments", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://find-and-update.company-information.service.gov.uk/company/12390975/officers", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://find-and-update.company-information.service.gov.uk/company/12390975", type: "regulatory", checked: "2026-08-31" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [],
@@ -9530,7 +9798,11 @@ Object.assign(partnerProfiles, {
     education: [],
     previousExperience: [],
     boardSeats: [],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Bicycle Therapeutics plc", ticker: null,
+      sector: "Biotech", role: "board",
+      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1761612/000155837025005258/bcyc-20250617xdef14a.htm", type: "regulatory", checked: "2026-08-31" }] }
+  ],
     ipoCount: null,
     majorExits: null,
     careerTimeline: [{ year: 2018, event: "Named a Founding Science Partner in Ahren's launch announcement" }, { year: 2018, event: "Awarded the Nobel Prize in Chemistry" }],
@@ -10825,141 +11097,5 @@ Object.assign(partnerProfiles, {
     careerTimeline: [],
     biography: "Ravi Kaushik is Executive Director and Head of Asia Investments at Flourish Ventures, leading the firm's fintech investments and managing its portfolio across India and Southeast Asia. Flourish says he brings 15 years of investing experience across private equity and venture capital plus operating experience scaling technology companies. He was previously CFO of Agro.Club, a global B2B grain marketplace, where he led fundraising and oversaw operations across five geographies. Before that he was a founding member and General Partner at WaterBridge Ventures, leading early-stage investments in fintech, B2B ecommerce, edtech and other sectors. Flourish lists his current investments as Jurisphere, Ringkas, SalarySe and Vidyut Tech. He holds a Bachelor of Science in Engineering from VTU and an MBA from the Thunderbird School of Global Management at Arizona State University.",
     sources: [{ label: "Flourish Ventures - Ravi Kaushik", url: "https://flourishventures.com/profile/ravi-kaushik/" }]
-  },
-"sarah-morgenstern": {
-    name: "Sarah Morgenstern",
-    firm: "Flourish Ventures",
-    firmSlug: "flourish-ventures",
-    title: "Investment Partner",
-    joinedYear: null,
-    investmentFocus: ["Fintech", "US financial health", "Economic opportunity for American households"],
-    education: ["MBA in Finance, The Wharton School, University of Pennsylvania", "MA in International Economics, Johns Hopkins University School of Advanced International Studies", "BA in History, Yale University"],
-    previousExperience: ["Principal for investments, Omidyar Network", "Manager, McKinsey & Company", "Consultant, APCO Worldwide"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Propel", ticker: null }, { name: "Kin", ticker: null }, { name: "Clerkie", ticker: null }, { name: "Skipify", ticker: null }, { name: "Reserv", ticker: null }, { name: "Unit", ticker: null }, { name: "Summer", ticker: null }, { name: "Bluprynt", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Sarah Morgenstern is an Investment Partner on Flourish Ventures' US investment team, sourcing, executing and managing investments aimed at improving financial health and economic opportunity for American households. She was previously Principal for investments at Omidyar Network and before that a Manager at McKinsey & Company working in strategy and corporate finance. She also worked as a consultant at APCO Worldwide in Beijing on investment and regulatory affairs and was a Princeton in Asia Fellow at Dalian University of Technology. She is a Kauffman Fellow (Class 25) and was named a 40 Under 40 Rising Star by VC Journal. Flourish lists her current investments including Bluprynt, Clerkie, Financial Health Network, Kin, Propel, Reserv, Skipify, SPRY Therapeutics, Summer, Treehouse, Tunic Pay, Unit and Vellum, with exits including EarnUp, Jetty, MANTL, SeedFi and United Income. She holds an MBA from Wharton, an MA from Johns Hopkins SAIS and a BA in History from Yale.",
-    sources: [{ label: "Flourish Ventures - Sarah Morgenstern", url: "https://flourishventures.com/profile/sarah-morgenstern/" }]
-  },
-"tilman-ehrbeck": {
-    name: "Tilman Ehrbeck",
-    firm: "Flourish Ventures",
-    firmSlug: "flourish-ventures",
-    title: "Co-Founder & Managing Partner",
-    joinedYear: 2019,
-    investmentFocus: ["Fintech", "Global fintech", "Financial inclusion", "India and Southeast Asia"],
-    education: ["PhD in Economics, European University Institute"],
-    previousExperience: ["Partner, Omidyar Network", "CEO, Consultative Group to Assist the Poor (CGAP)", "Partner, McKinsey & Company", "Staff member, International Monetary Fund"],
-    boardSeats: [],
-    notableInvestments: [{ name: "M2P Fintech", ticker: null }, { name: "Indifi", ticker: null }, { name: "Kaleidofin", ticker: null }, { name: "Scripbox", ticker: null }, { name: "Qoala", ticker: null }, { name: "ApnaKlub", ticker: null }, { name: "Aquaconnect", ticker: null }, { name: "GramCover", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2019, event: "Co-founded Flourish Ventures as Managing Partner when Omidyar Network spun out its fintech investment arm" }],
-    biography: "Tilman Ehrbeck is a Co-Founder and Managing Partner of Flourish Ventures and sits on the firm's fiduciary board alongside two Managing Directors of The Omidyar Group. Before Flourish he was a Partner at Omidyar Network, where he built the global financial inclusion team, and before that he spent five years as CEO of the Consultative Group to Assist the Poor. He was previously a Partner at McKinsey & Company for more than a decade across North America and India, where he helped build the firm's global financial services and healthcare practices, and earlier he worked as a journalist in Germany and as a staff member at the IMF in Washington, DC. He chairs the Advisory Council to the UN Special Advocate for Inclusive Finance. Flourish lists his current investments including ApnaKlub, Aquaconnect, Brick, Financial Health Network, FinRegLab, GramCover, Indifi, Kaleidofin, M2P Fintech, Qoala, Scripbox and SILQ, with exits including Grab Financial Group and United Income. He holds a PhD in Economics from the European University Institute.",
-    sources: [{ label: "Flourish Ventures - Tilman Ehrbeck", url: "https://flourishventures.com/profile/tilman-ehrbeck/" }, { label: "Flourish Ventures - About Us (fiduciary board composition)", url: "https://flourishventures.com/about-us/" }]
-  },
-"caoimhe-macrunnels": {
-    name: "Caoimhe MacRunnels",
-    firm: "Reach Capital",
-    firmSlug: "reach-capital",
-    title: "Principal",
-    joinedYear: null,
-    investmentFocus: ["Digital Health"],
-    education: ["Applied and Computational Mathematics and Statistics, University of Notre Dame"],
-    previousExperience: ["Investment Banking, Bank of America", "Growth investor, Adams Street Partners"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Clair Health", ticker: null }, { name: "FoodHealth Company", ticker: null }, { name: "Goodbill", ticker: null }, { name: "Marit", ticker: null }, { name: "Mecha Health", ticker: null }, { name: "Sketchy", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Caoimhe MacRunnels is a Principal at Reach Capital focused on healthcare companies working on better outcomes, greater access and smarter systems. She studied Applied and Computational Mathematics and Statistics at the University of Notre Dame. Before venture capital she worked in investment banking at Bank of America and as a growth investor at Adams Street Partners. Her portfolio includes Clair Health, FoodHealth Company, Goodbill, Marit, Mecha Health, Sketchy and Straia. Reach Capital does not publish a joining year or board seats for her.",
-    sources: [{ label: "Reach Capital - Caoimhe MacRunnels", url: "https://www.reachcapital.com/team/caoimhe-macrunnels/" }]
-  },
-"esteban-sosnik": {
-    name: "Esteban Sosnik",
-    firm: "Reach Capital",
-    firmSlug: "reach-capital",
-    title: "Co-Founder & Partner",
-    joinedYear: 2015,
-    investmentFocus: ["Edtech", "Workforce Development", "AI"],
-    education: ["Foreign Affairs and Economics, University of Virginia"],
-    previousExperience: ["Co-founder and CEO, Wanako Games", "Co-founder and CEO, Atakama Labs", "VP, DeNA", "Executive Director, co.lab"],
-    boardSeats: ["Joan Ganz Cooney Center"],
-    notableInvestments: [{ name: "Aprende Institute", ticker: null }, { name: "CoderHouse", ticker: null }, { name: "Take2 AI", ticker: null }, { name: "Ello", ticker: null }, { name: "Springboard", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2015, event: "Co-founded Reach Capital" }, { year: 2018, event: "Joined the National Advisory Board of the Joan Ganz Cooney Center" }],
-    biography: "Esteban Sosnik is a co-founder and Partner at Reach Capital. Born in Buenos Aires, he moved to the United States at 18 and worked on Wall Street and in private equity before managing a pre-seed fund for Latin American startups. He spent about 12 years as a gaming entrepreneur, co-founding and leading Wanako Games and Atakama Labs, the latter acquired by Japan's DeNA, and later served as a VP at DeNA and executive director of the co.lab learning-games accelerator. He joined Reach Capital at its 2015 founding and invests across learning and work, including Aprende Institute, CoderHouse, Take2 AI, Ello and Springboard.",
-    sources: [{ label: "Reach Capital - Esteban Sosnik", url: "https://www.reachcapital.com/team/esteban-sosnik/" }, { label: "Joan Ganz Cooney Center - Esteban Sosnik", url: "https://joanganzcooneycenter.org/people/esteban-sosnik/" }]
-  },
-"harry-luo": {
-    name: "Harry Luo",
-    firm: "Reach Capital",
-    firmSlug: "reach-capital",
-    title: "Senior Associate",
-    joinedYear: null,
-    investmentFocus: ["AI", "Workforce Development"],
-    education: [],
-    previousExperience: ["AI Software Engineer, Google", "Product Manager, Google"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Harry Luo is a Senior Associate at Reach Capital. He spent more than six years at Google as an AI software engineer and product manager, building AI features for Search and Android used by billions of people. He focuses on how AI reshapes work, combining systems engineering experience with user-centered design. He moved from building AI products into venture capital to fund and coach founders working on new operating models. He is originally from Kansas City. Reach Capital does not publish his education, board seats or individual investments.",
-    sources: [{ label: "Reach Capital - Harry Luo", url: "https://www.reachcapital.com/team/harry-luo/" }]
-  },
-"james-kim-reach": {
-    name: "James Kim",
-    firm: "Reach Capital",
-    firmSlug: "reach-capital",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Edtech", "Digital Health", "Workforce Development"],
-    education: ["B.S. in Astrophysics, Yale University", "MBA, Stanford University", "MA in Education, Stanford University"],
-    previousExperience: ["High school math teacher, Teach For America", "Admissions officer, Yale University", "Product manager, Yale University"],
-    boardSeats: ["San Francisco Education Fund"],
-    notableInvestments: [{ name: "Brilliant", ticker: null }, { name: "GPTZero", ticker: null }, { name: "Preply", ticker: null }, { name: "Coral Care", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "James Kim is a Partner at Reach Capital. He studied astrophysics at Yale University and later earned graduate degrees in business and education at Stanford University. Before venture capital he taught high school math with Teach For America, led a college access non-profit, worked as a Yale admissions officer and built Yale's virtual bridge program for incoming freshmen as a product manager. At Reach he partners with founders across the firm's learning, health and work areas, including Brilliant, GPTZero, Preply and Coral Care. He serves on the board of directors of the San Francisco Education Fund.",
-    sources: [{ label: "Reach Capital - James Kim", url: "https://www.reachcapital.com/team/james-kim/" }]
-  },
-"jennifer-carolan": {
-    name: "Jennifer Carolan",
-    firm: "Reach Capital",
-    firmSlug: "reach-capital",
-    title: "Co-Founder & Partner",
-    joinedYear: 2015,
-    investmentFocus: ["Edtech", "Digital Health", "Workforce Development"],
-    education: ["MA in Education, Stanford University"],
-    previousExperience: ["History teacher, U.S. public schools", "Investor, NewSchools Venture Fund"],
-    boardSeats: [],
-    notableInvestments: [{ name: "ClassDojo", ticker: null }, { name: "Desmos", ticker: null }, { name: "Newsela", ticker: null }, { name: "Outschool", ticker: null }, { name: "Seesaw", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2011, event: "Helped launch the NewSchools Seed fund at NewSchools Venture Fund" }, { year: 2015, event: "Co-founded Reach Capital" }],
-    biography: "Jennifer Carolan is a co-founder and Partner at Reach Capital. She grew up in Chicago and its suburbs and taught history in traditional public schools for seven years before earning an MA in Education from Stanford University. She then spent close to a decade in venture capital, including work at NewSchools Venture Fund, before co-founding Reach Capital in 2015. Her portfolio leans toward learning companies including ClassDojo, Desmos, Newsela, Outschool and Seesaw, and she invests across Reach's three focus areas of learning, health and work. She also teaches Lean Launchpad at Stanford.",
-    sources: [{ label: "Reach Capital - Jennifer Carolan", url: "https://www.reachcapital.com/team/jennifer-carolan/" }]
-  },
-"jim-lobdell": {
-    name: "Jim Lobdell",
-    firm: "Reach Capital",
-    firmSlug: "reach-capital",
-    title: "Venture Partner",
-    joinedYear: null,
-    investmentFocus: ["Edtech"],
-    education: ["Stanford University"],
-    previousExperience: ["Co-founder, Teachers' Curriculum Institute", "Public high school teacher"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Desmos", ticker: null }, { name: "Curipod", ticker: null }, { name: "TeachFX", ticker: null }, { name: "BookNook", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Jim Lobdell is a Venture Partner at Reach Capital. He graduated from Stanford University, where he twice played on NCAA championship water polo teams, and began his career as a public high school teacher. He co-founded Teachers' Curriculum Institute, which he ran for 16 years and which created the History Alive! curriculum, and later founded two more education startups. At Reach he concentrates on learning, with a portfolio of roughly 14 companies spanning edtech, teacher professional development and student wellbeing, including Desmos, Curipod, TeachFX and BookNook.",
-    sources: [{ label: "Reach Capital - Jim Lobdell", url: "https://www.reachcapital.com/team/jim-lobdell/" }]
   }
 });
