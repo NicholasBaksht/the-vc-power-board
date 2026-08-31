@@ -1,41 +1,3 @@
-/* ============================================================
-   APP.JS
-   Site bootstrap and routing: homepage renderers that run on
-   first load (featured firm, scale bar, hero top 5, news), the
-   ticker tape builder, the prices.json fetch that kicks off the
-   initial render pass, and the router() that decides which page
-   to show based on the URL hash (plus its hashchange listener).
-   Load this LAST - it's what starts everything else running.
-   ============================================================ */
-// Renders the "Live Top 5" widget in the hero - the same real
-// firms array used everywhere else on the site, just showing the
-// top 5 by AUM (firms are already ordered by rank, so this is
-// simply the first 5 entries).
-// Renders the credibility stat strip below the hero - every number
-// computed live from the real firms data, never hardcoded, so it
-// can never drift out of sync with what the site actually tracks.
-// Renders the Featured Firm spotlight - looks up the real firm data
-// by slug from the featuredFirm object above, so Peter only ever
-// has to edit one slug and one sentence, never firm data itself.
-function renderFeaturedFirm() {
-  const firm = firms.find(f => f.slug === featuredFirm.slug);
-  if (!firm) return; // bad slug typo - fail quietly rather than crash the page
-
-  const featuredEl = document.getElementById('featuredFirmContainer');
-  if (!featuredEl) return; // homepage no longer carries this block
-  featuredEl.innerHTML = `
-    <div class="featured-firm">
-      <div class="featured-firm-label"> Featured Firm</div>
-      <div class="featured-firm-head">
-        <div class="featured-firm-name"><a href="#${firm.slug}">${firm.name}</a></div>
-        <div class="featured-firm-meta">${firm.aum} AUM · Founded ${firm.founded} · ${firm.hq}</div>
-      </div>
-      <p class="featured-firm-reason">${featuredFirm.reason}</p>
-      <a href="#${firm.slug}" class="featured-firm-link">View Full Firm Profile →</a>
-    </div>
-  `;
-}
-
 function renderScaleBar() {
   const totalFirms = firms.length;
   const totalPartners = Object.keys(partnerProfiles).length;
@@ -512,7 +474,6 @@ fetch('prices.json')
       renderHeroBadge();
     renderHeroTop5();
     renderScaleBar();
-    renderFeaturedFirm();
     renderSectorFilterChips();
     renderAnalytics();
     renderPowerAlerts();
