@@ -4434,7 +4434,22 @@ sources: [
       "Creator, Black Women in VC list"
     ],
     investmentFocus: ["Health", "Wealth", "Climate Resilience"],
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Guava", ticker: null, stage: "Seed", year: 2022, yearPrecision: "year",
+      sector: "Fintech", subsector: "digital bank designed for and by Black small business owners", orgAtTime: "precursor-ventures",
+      evidence: [{ url: "https://www.prnewswire.com/news-releases/guava-announces-funding-round-of-2-4-million-301592914.html", type: "deal-announcement", checked: "2026-08-31" },
+                  { url: "https://www.businesswire.com/news/home/20250410306376/en/Symphonic-Capital-Launches-%2413.5-Million-Debut-Fund-to-Advance-Health-and-Wealth-Equity", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Mira", ticker: null,
+      sector: "Digital Health", subsector: "helping folks who do not have health insurance access health care benefits", orgAtTime: "precursor-ventures",
+      evidence: [{ url: "https://www.businesswire.com/news/home/20250410306376/en/Symphonic-Capital-Launches-%2413.5-Million-Debut-Fund-to-Advance-Health-and-Wealth-Equity", type: "firm-announcement", checked: "2026-08-31" },
+                  { url: "https://www.tenoneten.com/podcast/sydney-thomas-symphonic-capital", type: "press", checked: "2026-08-31" }] },
+    { name: "Teal Health", ticker: null,
+      sector: "Digital Health", orgAtTime: "precursor-ventures",
+      evidence: [{ url: "https://www.businesswire.com/news/home/20250410306376/en/Symphonic-Capital-Launches-%2413.5-Million-Debut-Fund-to-Advance-Health-and-Wealth-Equity", type: "firm-announcement", checked: "2026-08-31" }] },
+    { name: "Carta Health", ticker: null,
+      sector: "Digital Health", subsector: "remote rehab services for people suffering from cardiac disease",
+      evidence: [{ url: "https://www.tenoneten.com/podcast/sydney-thomas-symphonic-capital", type: "press", checked: "2026-08-31" }] }
+  ],
     boardSeats: [],
     ipoCount: 0,
     majorExits: 0,
@@ -8975,6 +8990,106 @@ sources: [
     sources: [
       { label: "Greycroft - Dana Settle", url: "https://www.greycroft.com/team/dana-settle/" },
       { label: "Wikipedia - Greycroft", url: "https://en.wikipedia.org/wiki/Greycroft" }
+    ]
+  },
+"kate-mitchell": {
+    name: "Kate Mitchell",
+    firm: "Scale Venture Partners",
+    firmSlug: "scale-venture-partners",
+    title: "Co-Founder & Partner Emeritus",
+    joinedYear: 2000,
+    education: [],
+    previousExperience: [],
+    investmentFocus: ["Enterprise Software", "SaaS", "AI"],
+    notableInvestments: [
+      { name: "HubSpot", ticker: "HUBS" },
+      { name: "DocuSign", ticker: "DOCU" },
+      { name: "Bill.com", ticker: "BILL" }
+    ],
+    boardSeats: ["SVB Financial Group", "Fortive Corporation"],
+    ipoCount: 3,
+    majorExits: 5,
+    careerTimeline: [
+      { year: "2000", event: "Co-founds BA Venture Partners with Rory O'Driscoll, Bank of America's internal venture arm." },
+      { year: "2007", event: "Leads the spinout into an independent firm, renamed Scale Venture Partners." },
+      { year: "2012", event: "Co-authors the IPO section of the JOBS Act, expanding public-market access for emerging growth companies." },
+      { year: "2014", event: "Co-founds VentureForward, an NVCA initiative advancing opportunities for women and underrepresented minorities in venture capital." },
+      { year: "2019", event: "Bill.com, a Scale portfolio company, completes its IPO." }
+    ],
+    biography: "Kate Mitchell co-founded what became Scale Venture Partners in 2000 as BA Venture Partners, Bank of America's internal venture arm, alongside Rory O'Driscoll, before leading its 2007 spinout into an independent firm. Beyond investing, Mitchell has been one of venture capital's most consequential policy voices - she co-authored the IPO section of the 2012 JOBS Act, expanding public-market access for emerging growth companies, and served as chairman of the National Venture Capital Association. Her investment track record includes HubSpot, DocuSign, and Bill.com, all of which went on to complete public listings, and she co-founded VentureForward in 2014, an NVCA initiative focused on advancing women and underrepresented minorities across the venture ecosystem, earning her the NVCA's American Spirit Award in 2021.",
+    sources: [
+      { label: "Scale Venture Partners - Kate Mitchell", url: "https://www.scalevp.com/team/kate-mitchell" },
+      { label: "iHeart Podcast", url: "https://www.iheart.com/podcast/356-array-podcast-28107740/episode/rory-odriscoll-founder-of-scale-venture-49892844/" }
+    ]
+  },
+"bill-bowes": {
+    name: "Bill Bowes",
+    departedNote: "Not listed on usvp.com/team as captured 2026-08-22; that page rendered a roster including Casey Tansey, Dafina Toncheva and Dale Holladay. His entry here reflects his founding role, not a current one.",
+    firm: "U.S. Venture Partners",
+    firmSlug: "us-venture-partners",
+    title: "Co-Founder",
+    joinedYear: 1981,
+    education: ["BA, Economics, Stanford University", "MBA, Harvard University"],
+    previousExperience: [
+      "Investment Banker, Blyth & Co.",
+      "Board Member, Cetus Corporation (1972-1978)",
+      "Board Member, Raychem (1961-late 1970s)",
+      "Founding Shareholder, First Treasurer & Chairman, Amgen"
+    ],
+    investmentFocus: ["Enterprise Software", "Healthcare", "Biotechnology"],
+    notableInvestments: [
+      { name: "Check Point Software", ticker: "CHKP" },
+      { name: "SanDisk", ticker: null },
+      { name: "Ross Stores", ticker: "ROST" }
+    ],
+    boardSeats: [],
+    ipoCount: 5,
+    majorExits: 10,
+    careerTimeline: [
+      { year: "1961", event: "Joins the board of Raychem, serving until the late 1970s." },
+      { year: "1972", event: "Joins the board of Cetus Corporation, a pioneering biotechnology company." },
+      { year: "1980", event: "Becomes founding shareholder, first Treasurer, and Chairman of Amgen." },
+      { year: "1981", event: "Co-founds U.S. Venture Partners with Stuart Moldaw and Robert Sackman." },
+      { year: "2016", event: "Passes away on December 28, leaving behind a legacy as one of Silicon Valley's foundational biotech and venture figures." }
+    ],
+    biography: "Bill Bowes built a career at the very origins of both Silicon Valley venture capital and the modern biotechnology industry, joining the boards of Raychem and Cetus Corporation years before co-founding U.S. Venture Partners in 1981 with Stuart Moldaw and Robert Sackman. His most historically significant contribution came outside USVP entirely: Bowes was a founding shareholder and served as Amgen's first Treasurer and Chairman, helping build what became one of the world's largest biotechnology companies from its earliest days. At USVP, that same conviction in scientific and technical founders helped establish the firm as one of the longest-running and most successful early-stage investors in Silicon Valley history, backing more than 500 companies across four decades with 93-plus completed IPOs, spanning Check Point Software, SanDisk, Ross Stores, and Yammer. Bowes passed away in December 2016, leaving a legacy as one of the foundational figures connecting Silicon Valley's venture capital and biotechnology industries.",
+    sources: [
+      { label: "Wikipedia - Bill Bowes", url: "https://en.wikipedia.org/wiki/Bill_Bowes_(venture_capitalist)" },
+      { label: "Wikipedia - U.S. Venture Partners", url: "https://en.wikipedia.org/wiki/U.S._Venture_Partners" }
+    ]
+  },
+"rebecca-lynn": {
+    name: "Rebecca Lynn",
+    firm: "Canvas Prime",
+    firmSlug: "canvas-prime",
+    title: "Co-Founder & Managing Director",
+    joinedYear: 2013,
+    education: ["BS, Chemical Engineering, University of Missouri", "JD/MBA, UC Berkeley"],
+    previousExperience: [
+      "New Product Development, Procter & Gamble",
+      "Early Employee & VP Marketing, NextCard (scaled from 30 to 1,300 employees through IPO)",
+      "General Partner, Morgenthaler Ventures (2007-2013)"
+    ],
+    investmentFocus: ["Fintech", "Healthtech", "AI"],
+    notableInvestments: [
+      { name: "LendingClub", ticker: "LC" },
+      { name: "Doximity", ticker: "DOCS" },
+      { name: "Luminar Technologies", ticker: "LAZR" }
+    ],
+    boardSeats: [],
+    ipoCount: 3,
+    majorExits: 9,
+    careerTimeline: [
+      { year: "1998", event: "Moves to Silicon Valley as an early employee of NextCard, the first online credit card company, helping scale it from 30 to 1,300 employees through IPO." },
+      { year: "2007", event: "Begins her venture career at Morgenthaler Ventures, becoming a partner in 2012." },
+      { year: "2013", event: "Co-founds Canvas Ventures, a spinout from Morgenthaler; leads the firm's early-stage investment in LendingClub." },
+      { year: "2014", event: "LendingClub completes its IPO in December, the largest U.S. tech IPO of the year." },
+      { year: "2023", event: "Casetext, an early Canvas investment, is acquired by Thomson Reuters for $650 million in an all-cash deal." }
+    ],
+    biography: "Rebecca Lynn began her career as a chemical engineer, including work in a nuclear research reactor, before moving into product development at Procter & Gamble and then joining NextCard, the first online credit card company, as an early employee, helping scale it from 30 to 1,300 employees through its IPO. She began her venture career at Morgenthaler Ventures in 2007, becoming partner in 2012, before co-founding Canvas Ventures (now Canvas Prime) as a spinout in 2013 - closing her first fund the week Lehman Brothers collapsed. Her early-stage investment in LendingClub became the largest U.S. tech IPO of 2014, and her broader track record includes Doximity, Luminar Technologies, and Casetext, the AI-powered legal research platform Thomson Reuters acquired for $650 million in cash in 2023 after the company gained early access to GPT-4. A five-time Forbes Midas List honoree, Lynn has been recognized as a Senior Deal Maker by the Wall Street Journal and a Top Woman VC by the New York Times.",
+    sources: [
+      { label: "Canvas Prime - Rebecca Lynn", url: "https://www.canvas.vc/team-member/rebecca-lynn" },
+      { label: "Wikipedia - Rebecca Lynn", url: "https://en.wikipedia.org/wiki/Rebecca_Lynn_(venture_capitalist)" }
     ]
   }
 });
