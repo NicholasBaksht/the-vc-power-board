@@ -244,12 +244,33 @@ document.getElementById('powerSignalsView').style.display = 'none';
   const conflictViewEl = document.getElementById('conflictCheckView');
   if (conflictViewEl) conflictViewEl.style.display = 'none';
 
+  /* Broader Capital Sources. Added after the original router, so
+     null-guarded for the same reason as the views above. */
+  const csListEl = document.getElementById('capitalSourcesView');
+  if (csListEl) csListEl.style.display = 'none';
+  const csDetailEl = document.getElementById('capitalSourceDetailView');
+  if (csDetailEl) csDetailEl.style.display = 'none';
+
   const signinViewEl = document.getElementById('signinView');
   if (signinViewEl) signinViewEl.style.display = 'none';
   const accountViewEl = document.getElementById('accountView');
   if (accountViewEl) accountViewEl.style.display = 'none';
 
- if (slug === 'conflict-check') {
+ if (slug === 'capital-sources') {
+    if (csListEl) {
+      csListEl.style.display = 'block';
+      if (typeof renderCapitalSources === 'function') renderCapitalSources();
+    }
+    window.scrollTo(0, 0);
+  } else if (slug.startsWith('capital-source/')) {
+    if (csDetailEl) {
+      csDetailEl.style.display = 'block';
+      if (typeof renderCapitalSource === 'function') {
+        renderCapitalSource(decodeURIComponent(slug.slice('capital-source/'.length)));
+      }
+    }
+    window.scrollTo(0, 0);
+  } else if (slug === 'conflict-check') {
     const el = ensureConflictCheckView();
     if (el) {
       el.style.display = 'block';
