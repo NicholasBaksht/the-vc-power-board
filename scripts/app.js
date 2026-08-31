@@ -21,7 +21,9 @@ function renderFeaturedFirm() {
   const firm = firms.find(f => f.slug === featuredFirm.slug);
   if (!firm) return; // bad slug typo - fail quietly rather than crash the page
 
-  document.getElementById('featuredFirmContainer').innerHTML = `
+  const featuredEl = document.getElementById('featuredFirmContainer');
+  if (!featuredEl) return; // homepage no longer carries this block
+  featuredEl.innerHTML = `
     <div class="featured-firm">
       <div class="featured-firm-label"> Featured Firm</div>
       <div class="featured-firm-head">
@@ -56,7 +58,9 @@ function renderScaleBar() {
   const topSectorEntry = Object.entries(sectorCounts).sort((a, b) => b[1] - a[1])[0];
   const topSector = topSectorEntry ? topSectorEntry[0] : '-';
 
-  document.getElementById('scaleBar').innerHTML = `
+  const scaleEl = document.getElementById('scaleBar');
+  if (!scaleEl) return; // stats now live in the homepage strip
+  scaleEl.innerHTML = `
     <div class="stat-card"><span class="stat-card-num">${totalFirms}</span><span class="stat-card-label">Total Firms</span></div>
     <div class="stat-card"><span class="stat-card-num">${totalPartners}</span><span class="stat-card-label">Partners</span></div>
     <div class="stat-card"><span class="stat-card-num">${countryCount}</span><span class="stat-card-label">Countries</span></div>
@@ -200,13 +204,21 @@ function router() {
   const isHomepage = isHome;
   const homeIntroEl = document.getElementById('homeIntro');
   if (homeIntroEl) homeIntroEl.style.display = isHomepage ? '' : 'none';
+  /* Scopes the white/green palette to the homepage. Every other route
+     keeps the dark product theme, which 31 stylesheets depend on. */
+  document.body.classList.toggle('is-home', !!isHomepage);
+  if (isHomepage && typeof renderHomepage === 'function') renderHomepage();
   // "By the Numbers" is homepage-flavored summary content, same
   // category as the hero/feature-grid above - it was never gated
   // by router() at all, so it's been rendering underneath every
   // single route (Relationship Graph, Family Tree, etc.) this
   // whole time, same root cause as the original homeIntro bug.
+  /* "By the Numbers" was the old homepage's stats block. The rebuilt
+     homepage carries its own statistics strip, so leaving this one in
+     place would show two different stat sections on the same page. It
+     is hidden on every route, not just the non-home ones. */
   const byTheNumbersEl = document.getElementById('personalityDistSection');
-  if (byTheNumbersEl) byTheNumbersEl.style.display = isHomepage ? '' : 'none';
+  if (byTheNumbersEl) byTheNumbersEl.style.display = 'none';
    const powerAlertsEl = document.getElementById('powerAlerts');
   if (powerAlertsEl) powerAlertsEl.style.display = isAlerts ? '' : 'none';
   document.getElementById('listView').style.display = 'none';
@@ -393,6 +405,8 @@ document.getElementById('powerSignalsView').style.display = 'none';
     // Unknown slug falls back to Home rather than a bare firm list.
     if (homeIntroEl) homeIntroEl.style.display = '';
     if (byTheNumbersEl) byTheNumbersEl.style.display = '';
+    document.body.classList.add('is-home');
+    if (typeof renderHomepage === 'function') renderHomepage();
     window.scrollTo(0, 0);
   }
  renderCompareBar();
