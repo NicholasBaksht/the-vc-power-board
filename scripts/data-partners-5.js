@@ -1,5 +1,474 @@
 /* data-partners shard 5 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
+"haakon-overli": {
+    name: "Haakon Overli",
+    firm: "Dawn Capital",
+    firmSlug: "dawn-capital",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2006,
+    investmentFocus: [
+      "Enterprise Software"
+    ],
+    education: [
+      "Mathematics, University of Oslo",
+      "BA (Hons) Economics, Durham University"
+    ],
+    previousExperience: [
+      "Founder and UK CEO, Self Trade (online stockbroker; floated in 2000 and sold to HypoVereinsbank for €911m)"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2000, event: "Self Trade, the online stockbroker he founded and ran as UK CEO, floated and was then sold to HypoVereinsbank for €911m." },
+      { year: 2006, event: "Co-founded Dawn Capital, which the firm's own site dates to 2006." }
+    ],
+    biography: "Haakon Overli is a co-founder of Dawn Capital, where the firm's site says he works across the entire portfolio, contributing to direction and positioning and overseeing growth stage investing. Before Dawn he founded Self Trade, an online stockbroker he ran as UK CEO, which floated in 2000 and was sold to HypoVereinsbank for €911m. His Dawn page lists Minute Media, Mimecast, Doubleword, Conversocial, Crate.io, LeadDesk and Neo4j among his companies. He holds a Mathematics degree from the University of Oslo and a BA (Hons) in Economics from Durham University.",
+    notableInvestments: [
+      { name: "Mimecast", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Cybersecurity", subsector: "Email security", role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/haakon-overli", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Neo4j", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/haakon-overli", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Crate.io", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/haakon-overli", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "LeadDesk", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/haakon-overli", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Doubleword", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: "The platform for self-hosted AI inference", role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/haakon-overli", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Minute Media", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "Digital sports media", role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/haakon-overli", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.dawncapital.com/companies", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Conversocial", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://www.dawncapital.com/team/haakon-overli", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Dawn Capital - Haakon Overli", url: "https://www.dawncapital.com/team/haakon-overli" },
+      { label: "Dawn Capital - Team", url: "https://www.dawncapital.com/team/" },
+      { label: "Dawn Capital - Companies", url: "https://www.dawncapital.com/companies" },
+      { label: "Dawn Capital - Josh Bell (states Dawn was founded in 2006)", url: "https://www.dawncapital.com/team/josh-bell" }
+    ]
+  },
+"seth-levine": {
+    name: "Seth Levine",
+    firm: "Foundry Group",
+    firmSlug: "foundry-group",
+    title: "Co-Founder & Managing Director",
+    joinedYear: 2006,
+    departedYear: null,
+    departedNote: "Still at the firm, but the role differs from the batch title: Foundry's own team page lists him as General Partner. Firm-level context: in January 2024 Foundry said its 2022 fund would be its last and that it will not raise another fund, deploying remaining capital and then supporting the existing portfolio as the funds run off.",
+    investmentFocus: [],
+    education: [
+      "Economics and Psychology, Macalester College (summa cum laude)"
+    ],
+    previousExperience: [
+      "Telecommunications investment banking, Morgan Stanley",
+      "Corporate finance officer, FirstWorld Communications",
+      "Venture capital investor, Mobius Venture Capital"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2000, event: "Led FirstWorld Communications' initial public offering and concurrent equity investments totalling more than $260 million." },
+      { year: 2006, event: "Co-founded Foundry Group in Boulder, Colorado, after starting his venture capital career at Mobius Venture Capital." },
+      { year: 2021, event: "Co-authored The New Builders: Face to Face with the True Future of Business with Elizabeth MacBride." },
+      { year: 2024, event: "Wrote in January that Foundry's 2022 fund would be the firm's last and that it would not raise another fund." }
+    ],
+    biography: "Seth Levine co-founded the Boulder, Colorado venture firm Foundry Group in 2006 after beginning his venture capital career at Mobius Venture Capital. Before venture capital he worked in Morgan Stanley's telecommunications investment banking group and was a corporate finance officer at FirstWorld Communications, where he led the company's 2000 IPO and concurrent equity raises of more than $260 million. He co-founded Pledge 1%, is a trustee of Macalester College, and co-authored The New Builders with Elizabeth MacBride. In January 2024 he wrote that Foundry's 2022 fund would be the firm's last and that Foundry would not raise another fund.",
+    notableInvestments: [
+      { name: "VigLink", ticker: null, stage: "Series C", year: 2014, yearPrecision: "year", sector: "Enterprise Software", subsector: "content-driven commerce", role: "board", evidence: [
+        { url: "https://talent4boards.com/viglink-announces-seth-levine-board-acquires-linksmart-additional-2m-series-c-funding/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Sovrn", ticker: null, stage: null, year: 2015, yearPrecision: "year", sector: "Enterprise Software", subsector: "ad tech", role: "board", evidence: [
+        { url: "https://www.sovrn.com/blog/sovrn-holdings-closes-18-million-funding-round/", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.sovrn.com/blog/rally-ceo-tim-miller-joins-sovrn-board/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Looklist", ticker: null, stage: "Seed", year: 2015, yearPrecision: "year", sector: "Consumer", subsector: "fashion discovery", role: null, evidence: [
+        { url: "https://www.prnewswire.com/news-releases/looklist-secures-seed-funding-from-foundry-group-300097359.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Foundry - Team", url: "https://foundry.vc/team/" },
+      { label: "Foundry Group - Seth Levine bio", url: "https://www.foundrygroup.com/team/seth-levine/" },
+      { label: "Seth Levine - About (sethlevine.com)", url: "https://www.sethlevine.com/about" },
+      { label: "VC Adventure - Endings and Beginnings (Jan 2024)", url: "https://sethlevine.com/archives/2024/01/endings-and-beginnings.html" },
+      { label: "TechCrunch - Foundry Group is shutting down and won't raise another fund", url: "https://techcrunch.com/2024/02/13/foundry-group-is-shutting-down-and-wont-raise-another-fund/" }
+    ]
+  },
+"jason-mendelson": {
+    name: "Jason Mendelson",
+    firm: "Foundry Group",
+    firmSlug: "foundry-group",
+    title: "Co-Founder & Managing Director",
+    joinedYear: 2006,
+    departedYear: 2020,
+    departedNote: "Retired from Foundry Group in 2020 and is described by Silicon Flatirons as founding partner emeritus; he does not appear on Foundry's current team page, which lists Seth Levine, Jaclyn Hester, Chris Moody, Ryan McIntyre and Brad Feld. Firm-level context: Foundry said in January 2024 that its 2022 fund would be its last and that it will not raise another fund, winding down as its existing funds run off.",
+    investmentFocus: [],
+    education: [
+      "B.A. Economics (with distinction), University of Michigan",
+      "J.D. (cum laude), University of Michigan"
+    ],
+    previousExperience: [
+      "Consultant and software engineer, Accenture",
+      "Corporate and securities attorney, Cooley LLP",
+      "Managing Director and General Counsel, Mobius Venture Capital",
+      "Co-founder, SRS Acquiom"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Co-founded Foundry Group after serving as managing director and general counsel at Mobius Venture Capital." },
+      { year: 2009, event: "Joined the board of the National Venture Capital Association, serving until 2013." },
+      { year: null, event: "Co-authored Venture Deals: Be Smarter Than Your Lawyer and Your Venture Capitalist with Brad Feld." },
+      { year: 2020, event: "Retired from Foundry Group and shifted his focus to music." }
+    ],
+    biography: "Jason Mendelson co-founded Foundry Group in 2006 after working as a consultant and software engineer at Accenture, practising corporate and securities law at Cooley LLP, and serving as managing director and general counsel at Mobius Venture Capital. He co-founded SRS Acquiom, co-chaired the National Venture Capital Association's general counsel group and sat on the NVCA board from 2009 to 2013, and helped draft the standardised venture financing documents the industry adopted. He co-authored Venture Deals: Be Smarter Than Your Lawyer and Your Venture Capitalist with Brad Feld and has taught as an adjunct professor at the University of Colorado. He retired from Foundry Group in 2020 and is listed as founding partner emeritus.",
+    notableInvestments: [
+      { name: "Cloudability", ticker: null, stage: "Series A", year: 2012, yearPrecision: "year", sector: "Enterprise Software", subsector: "cloud spend management", role: "board", evidence: [
+        { url: "https://www.geekwire.com/2012/cloudability-raises-87m-identify-spikes-cloud-computing-spending/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "TeamSnap", ticker: null, stage: "Series B", year: 2014, yearPrecision: "year", sector: "Consumer", subsector: "sports team management", role: "board", evidence: [
+        { url: "https://www.finsmes.com/2014/02/teamsnap-raises-7-5m-in-series-b-funding.html", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://talent4boards.com/teamsnap/", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Borrowed & Blue", ticker: null, stage: null, year: 2016, yearPrecision: "year", sector: "Consumer", subsector: "wedding-vendor marketplace", role: "board", evidence: [
+        { url: "https://bizwest.com/2016/11/02/foundry-group-leads-7m-funding-round-borrowed-blue/", type: "deal-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Spare5", ticker: null, stage: "Seed", year: 2014, yearPrecision: "year", sector: "AI", subsector: "on-demand human insights", role: null, evidence: [
+        { url: "https://www.prnewswire.com/news-releases/on-demand-insights-platform-spare5-secures-325-million-from-nea-foundry-group-and-madrona-venture-group-300005890.html", type: "deal-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Silicon Flatirons - Jason Mendelson", url: "https://siliconflatirons.org/people/jason-mendelson/" },
+      { label: "Foundry - Team", url: "https://foundry.vc/team/" },
+      { label: "TechRockies - Foundry Group's Mendelson Hangs Up Hat, Switches To Music", url: "https://www.techrockies.com/foundry-group-s-mendelson-hangs-up-hat-switches-to-music/s-0079601.html" },
+      { label: "TechCrunch - Foundry Group is shutting down and won't raise another fund", url: "https://techcrunch.com/2024/02/13/foundry-group-is-shutting-down-and-wont-raise-another-fund/" }
+    ]
+  },
+"peter-hebert": {
+    name: "Peter Hébert",
+    firm: "Lux Capital",
+    firmSlug: "lux-capital",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2000,
+    investmentFocus: [
+      "Deep Tech",
+      "AI",
+      "Healthcare"
+    ],
+    education: [
+      "Syracuse University, S.I. Newhouse School of Public Communications (cum laude, Chancellor's Scholar)"
+    ],
+    previousExperience: [
+      "Equity Research, Lehman Brothers",
+      "Founding CEO, Lux Research"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2000, event: "Co-founded Lux Capital with Josh Wolfe and Robert Paull." },
+      { year: 2003, event: "Led the spin-off of Lux Research and served as its founding CEO." },
+      { year: 2012, event: "Lux co-led the Series A financing of Auris Health, the largest capital allocation in the firm's portfolio at the time." },
+      { year: 2013, event: "Led Lux Capital's seed investment in Matterport and served on its board." }
+    ],
+    biography: "Peter Hébert co-founded Lux Capital in 2000 with Josh Wolfe and Robert Paull, after beginning his career in Lehman Brothers' equity research group. In 2003 he led the spin-off of Lux Research and served as its founding CEO. Lux's own site describes his approach as backing scientifically and technologically ambitious ventures, and lists investments including Anduril, Applied Intuition, Auris Health, Chronosphere, Hugging Face, Impulse Space, Saildrone, Everspin Technologies, Luxtera and Matterport. He is a graduate of Syracuse University's Newhouse School and serves on the boards of the Boys and Girls Club of the Peninsula, the Newhouse School and the Palo Alto Museum.",
+    notableInvestments: [
+      { name: "Matterport", ticker: null, stage: "Seed", year: 2013, yearPrecision: "year", sector: "Real Estate Tech", subsector: "spatial data capture", role: "board", evidence: [
+        { url: "https://x.com/peterjhebert/status/1782426393415918060", type: "press", checked: "2026-08-25" },
+        { url: "https://www.luxcapital.com/people/peter-hebert", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Auris Health", ticker: null, stage: "Series A", year: 2012, yearPrecision: "year", sector: "Medical Devices", subsector: "robotic endoluminal surgery", role: null, evidence: [
+        { url: "https://medium.com/lux-capital/auris-health-seeing-the-future-and-making-it-b1f74d73b15e", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://www.luxcapital.com/people/peter-hebert", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Anduril", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Defense Tech", subsector: null, role: null, evidence: [
+        { url: "https://www.luxcapital.com/people/peter-hebert", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Everspin Technologies", ticker: "MRAM", stage: null, year: null, yearPrecision: null, sector: "Hardware", subsector: "magnetoresistive memory", role: null, evidence: [
+        { url: "https://www.luxcapital.com/people/peter-hebert", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Saildrone", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Deep Tech", subsector: "uncrewed surface vehicles", role: null, evidence: [
+        { url: "https://www.luxcapital.com/people/peter-hebert", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Lux Capital - Peter Hébert", url: "https://www.luxcapital.com/people/peter-hebert" },
+      { label: "Lux Capital - Team", url: "https://www.luxcapital.com/team" },
+      { label: "Lux Capital - Auris Health: Seeing the Future and Making It (by Peter Hébert)", url: "https://medium.com/lux-capital/auris-health-seeing-the-future-and-making-it-b1f74d73b15e" },
+      { label: "Wikipedia - Lux Capital (founding year and founders)", url: "https://en.wikipedia.org/wiki/Lux_Capital" }
+    ]
+  },
+"robert-paull": {
+    name: "Robert Paull",
+    firm: "Lux Capital",
+    firmSlug: "lux-capital",
+    title: "Co-Founder",
+    joinedYear: 2000,
+    departedYear: null,
+    departedNote: "Not an active investing partner at Lux Capital. Lux's own site lists him under Advisors as 'Co-Founder and Venture Partner', not on the firm's core investing team roster; KALA BIO's board bio states he has been a venture partner at Lux Capital since 2014, having stepped back from the full-time role he held as a founder. No source states the year he stepped back, so departedYear is null.",
+    investmentFocus: [
+      "Healthcare",
+      "Biotech"
+    ],
+    education: [
+      "B.S. Architecture, University of Virginia"
+    ],
+    previousExperience: [
+      "Co-Founder, Lux Research",
+      "Founding CEO, Genocea Biosciences",
+      "Founding CEO, President and Treasurer, Kala Pharmaceuticals",
+      "CEO, Mahana Therapeutics"
+    ],
+    firmHistory: [],
+    boardSeats: [
+      "KALA BIO"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2000, event: "Co-founded Lux Capital with Peter Hébert and Josh Wolfe." },
+      { year: 2006, event: "Became founding CEO of Harvard Medical School spinout Genocea Biosciences, serving until 2009." },
+      { year: 2009, event: "Founded Johns Hopkins spinout Kala Pharmaceuticals, served as its founding CEO, president and treasurer until 2012, and joined its board in July 2009." },
+      { year: 2014, event: "Became a venture partner at Lux Capital, focusing on healthcare." },
+      { year: 2018, event: "Became CEO of Mahana Therapeutics, serving until 2020." }
+    ],
+    biography: "Robert Paull co-founded Lux Capital in 2000 with Peter Hébert and Josh Wolfe and also co-founded Lux Research. He was the founding CEO of Harvard Medical School spinout Genocea Biosciences and the founding CEO, president and treasurer of Johns Hopkins spinout Kala Pharmaceuticals, and later served as CEO of Mahana Therapeutics from 2018 to 2020. Lux Capital's site lists him under its advisors as Co-Founder and Venture Partner focused on healthcare, managing the firm's investments in Cala Health, Kala Pharmaceuticals, Kyruus and Visterra. He has served on the board of directors of KALA BIO since July 2009 and has advised the Bill and Melinda Gates Foundation.",
+    notableInvestments: [
+      { name: "Kala Pharmaceuticals", ticker: "KALA", stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "ophthalmology", role: "board", evidence: [
+        { url: "https://www.luxcapital.com/advisors/robert-paull", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://investors.kalarx.com/board-member/robert-paull", type: "press", checked: "2026-08-25" }
+      ] },
+      { name: "Cala Health", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Medical Devices", subsector: "neuroperipherals", role: null, evidence: [
+        { url: "https://www.luxcapital.com/advisors/robert-paull", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Kyruus", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: "healthcare IT", role: null, evidence: [
+        { url: "https://www.luxcapital.com/advisors/robert-paull", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Visterra", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: "infectious diseases", role: null, evidence: [
+        { url: "https://www.luxcapital.com/advisors/robert-paull", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Lux Capital - Robert Paull (Advisors)", url: "https://www.luxcapital.com/advisors/robert-paull" },
+      { label: "KALA BIO - Board member: Robert Paull", url: "https://investors.kalarx.com/board-member/robert-paull" },
+      { label: "Wikipedia - Lux Capital (founding year and founders)", url: "https://en.wikipedia.org/wiki/Lux_Capital" }
+    ]
+  },
+"paul-drews": {
+    name: "Paul Drews",
+    firm: "Salesforce Ventures",
+    firmSlug: "salesforce-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [
+      "Enterprise Software",
+      "Developer Tools & Infrastructure"
+    ],
+    education: [
+      "MBA, The Wharton School of the University of Pennsylvania",
+      "BS Economics, Duke University"
+    ],
+    previousExperience: [
+      "Vice President, Battery Ventures (actively involved with Collibra, JFrog, Opsgenie and StreamSets)",
+      "Partner, Tenaya Capital (led investments in Concord and StreamSets, which was acquired by Software AG)"
+    ],
+    firmHistory: [
+      { firmSlug: "battery-ventures", role: "Vice President", startYear: null, endYear: null }
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Was a vice president at Battery Ventures, actively involved with Collibra, JFrog, Opsgenie and StreamSets." },
+      { year: null, event: "Was a partner at Tenaya Capital, where he led investments in Concord and StreamSets." },
+      { year: null, event: "Became Managing Partner at Salesforce Ventures, focused on application and infrastructure software across all stages." }
+    ],
+    biography: "Paul Drews is Managing Partner at Salesforce Ventures, where his firm bio says he focuses on application and infrastructure software investments across all stages. The same bio states he is currently a board observer or actively involved with investments in Airbyte, Anthropic, Astronomer, Databricks, Lyra, Runway, Starburst, Vercel, Vivun and VNDLY, which was acquired by Workday. Before Salesforce Ventures he was a partner at Tenaya Capital, where he led investments in Concord and StreamSets, and earlier a vice president at Battery Ventures. He holds an MBA from The Wharton School of the University of Pennsylvania and a BS in economics from Duke University, and is based in San Francisco.",
+    notableInvestments: [
+      { name: "Anthropic", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/paul-drews/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Databricks", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/paul-drews/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Vercel", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/paul-drews/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Airbyte", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/paul-drews/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Astronomer", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/paul-drews/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Starburst", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/paul-drews/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Runway", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/paul-drews/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Vivun", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/paul-drews/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Lyra", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Digital Health", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/paul-drews/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "VNDLY", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/paul-drews/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Salesforce Ventures - Paul Drews", url: "https://salesforceventures.com/people/paul-drews/" },
+      { label: "Salesforce Ventures - Team", url: "https://salesforceventures.com/people/" }
+    ]
+  },
+"ken-asada": {
+    name: "Ken Asada",
+    firm: "Salesforce Ventures",
+    firmSlug: "salesforce-ventures",
+    title: "Partner & Head of Japan",
+    joinedYear: null,
+    investmentFocus: [
+      "AI",
+      "Enterprise Software",
+      "Cybersecurity"
+    ],
+    education: [
+      "MBA (finance concentration), London Business School",
+      "Bachelor of Economics, Keio University"
+    ],
+    previousExperience: [
+      "Systems Engineer and Strategy Consultant, IBM Japan",
+      "Investment Director, Intel Capital",
+      "Managing Director, NTT DoCoMo Ventures"
+    ],
+    firmHistory: [
+      { firmSlug: "intel-capital", role: "Investment Director", startYear: null, endYear: null }
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Worked as a Systems Engineer and Strategy Consultant at IBM Japan." },
+      { year: null, event: "Was Investment Director at Intel Capital." },
+      { year: null, event: "Was Managing Director of NTT DoCoMo Ventures." },
+      { year: null, event: "Became a Partner and Head of Japan at Salesforce Ventures, based in the Tokyo office." }
+    ],
+    biography: "Ken Asada is a Partner and Head of Japan at Salesforce Ventures, based in the firm's Tokyo office, where his bio says he focuses on investments in Japan and Korea. The firm states he has been in venture capital for more than a decade and has backed startups in AI, communication technology, crowdsourcing, enterprise software and security. Before Salesforce Ventures he was Managing Director of NTT DoCoMo Ventures and Investment Director at Intel Capital, and earlier a systems engineer and strategy consultant at IBM Japan. He holds an MBA with a finance concentration from London Business School and a Bachelor of Economics from Keio University.",
+    notableInvestments: [
+      { name: "Sakana AI", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/ken-asada/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Kotoba Technologies", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/ken-asada/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "MarqVision", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/ken-asada/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "oVice", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/ken-asada/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Moneytree", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/ken-asada/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Megazone Cloud", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/ken-asada/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Hubble", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/ken-asada/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Knowledge Work", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/ken-asada/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "DIGGLE", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/ken-asada/", type: "partner-bio", checked: "2026-08-25" }
+      ] },
+      { name: "Autoro", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://salesforceventures.com/people/ken-asada/", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Salesforce Ventures - Ken Asada", url: "https://salesforceventures.com/people/ken-asada/" },
+      { label: "Salesforce Ventures - Team", url: "https://salesforceventures.com/people/" }
+    ]
+  },
+"jos-white": {
+    name: "Jos White",
+    firm: "Notion Capital",
+    firmSlug: "notion-capital",
+    title: "General Partner & Co-Founder",
+    joinedYear: null,
+    investmentFocus: [
+      "Enterprise Software"
+    ],
+    education: [],
+    previousExperience: [
+      "Co-founder, Star (one of the UK's first ISPs), 1995",
+      "Co-founder, MessageLabs (2000), built to $150m ARR and acquired by Symantec in 2008 for $700m"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1995, event: "Co-founded Star, one of the UK's first internet service providers, with his brother Ben." },
+      { year: 2000, event: "Co-founded MessageLabs, one of the world's first software as a service companies." },
+      { year: 2008, event: "MessageLabs, built to $150m ARR, was acquired by Symantec for $700m." }
+    ],
+    biography: "Jos White is a General Partner and co-founder at Notion Capital, the European enterprise tech investor. Before Notion he co-founded three businesses with his brother Ben, including Star in 1995, one of the UK's first ISPs, and MessageLabs in 2000, which his bio describes as one of the world's first SaaS companies and which was built to $150m ARR before Symantec acquired it in 2008 for $700m. His Notion page lists Bryter, Cogna, Dixa, Element, Ferovinum, Figment, Flip, Isembard, LegalFly, Mews and TestGorilla as current companies, and Currencycloud, Glofox, M3ter, Shutl, Topia and Trustev among his exits.",
+    notableInvestments: [
+      { name: "Mews", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://www.notioncapital.com/team/jos-white", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.notioncapital.com/portfolio", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Currencycloud", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: null, role: null, evidence: [
+        { url: "https://www.notioncapital.com/team/jos-white", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.notioncapital.com/portfolio", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Dixa", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://www.notioncapital.com/team/jos-white", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.notioncapital.com/portfolio", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Bryter", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://www.notioncapital.com/team/jos-white", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.notioncapital.com/portfolio", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "LegalFly", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Legal Tech", subsector: null, role: null, evidence: [
+        { url: "https://www.notioncapital.com/team/jos-white", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.notioncapital.com/portfolio", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Figment", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Crypto", subsector: null, role: null, evidence: [
+        { url: "https://www.notioncapital.com/team/jos-white", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.notioncapital.com/portfolio", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "TestGorilla", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://www.notioncapital.com/team/jos-white", type: "partner-bio", checked: "2026-08-25" },
+        { url: "https://www.notioncapital.com/portfolio", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "M3ter", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: null, role: null, evidence: [
+        { url: "https://www.notioncapital.com/team/jos-white", type: "partner-bio", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Notion Capital - Jos White", url: "https://www.notioncapital.com/team/jos-white" },
+      { label: "Notion Capital - Team", url: "https://www.notioncapital.com/team" },
+      { label: "Notion Capital - Portfolio", url: "https://www.notioncapital.com/portfolio" }
+    ]
+  },
 "chris-tottman": {
     name: "Chris Tottman",
     firm: "Notion Capital",
@@ -1609,7 +2078,26 @@ Object.assign(partnerProfiles, {
       { year: null, event: "Has spearheaded more than 30 deals totaling over 15 billion dollars at Cisco, including the acquisitions of Sourcefire, OpenDNS and Leaba Semiconductor." }
     ],
     biography: "Derek Idemoto is Senior Vice President of Cisco Investments, listed on the Cisco Investments team page, and Cisco's own author bio describes his role as SVP of Corporate Development and Cisco Investments, responsible for optimizing external innovation through acquisitions and investments. Since joining Cisco in 2007 he has spearheaded more than 30 deals totaling over 15 billion dollars, including the acquisitions of Sourcefire, OpenDNS and Leaba Semiconductor, and he facilitated the 2.3 billion dollar acquisition of Duo. Before Cisco he was Managing Director of Venture Investment at ITOCHU Technology, the corporate venture arm of ITOCHU Corporation, and Vice President of Corporate Development at Overture Services ahead of its acquisition by Yahoo!. He earned an MBA from the Anderson School at UCLA, where he was a venture fellow, and a bachelor's degree in finance and marketing from U.C. Berkeley.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Splunk", ticker: null,
+      sector: "Cybersecurity", subsector: "cybersecurity and observability",
+      evidence: [{ url: "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/derek-idemoto.html", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Duo Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/derek-idemoto.html", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Sourcefire", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/derek-idemoto.html", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "OpenDNS", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/derek-idemoto.html", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Acacia Communications", ticker: null,
+      sector: "Hardware",
+      evidence: [{ url: "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/derek-idemoto.html", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Leaba Semiconductor", ticker: null,
+      sector: "Hardware",
+      evidence: [{ url: "https://newsroom.cisco.com/c/r/newsroom/en/us/executives/derek-idemoto.html", type: "partner-bio", checked: "2026-08-30" }] }
+  ],
     sources: [
       { label: "Cisco Investments - Team", url: "https://www.ciscoinvestments.com/team" },
       { label: "Cisco Investments - Home", url: "https://www.ciscoinvestments.com/" },
@@ -6058,7 +6546,14 @@ Object.assign(partnerProfiles, {
       { year: 2021, event: "Served as chief operating officer of Lerer Hippeau Acquisition Corp." }
     ],
     biography: "Joe Medved has been with Lerer Hippeau since 2015, according to the firm's team page, which currently lists his title as Chief Strategy Officer. A 2021 SEC prospectus for Lerer Hippeau Acquisition Corp. describes him as a Partner at Lerer Hippeau who leads the firm's secondary portfolio management practice, including the SB Capital and BN Capital funds for which Lerer Hippeau serves as replacement general partner, and names him the SPAC's chief operating officer. That filing states he has spent over 20 years investing in and advising technology-enabled businesses, having co-led early stage investing at SoftBank Capital, invested at Constellation Ventures, and worked as an investment banker in JPMorgan's Tech, Media & Telecom group.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "YourMechanic", ticker: null, stage: "Series B", year: 2016, yearPrecision: "year",
+      sector: "Mobility", subsector: "on-demand car repair and maintenance services", role: "board",
+      evidence: [{ url: "https://www.prnewswire.com/news-releases/yourmechanic-announces-24-million-in-funding-to-accelerate-expansion-of-ondemand-car-repair-and-maintenance-services-300227893.html", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Yieldify", ticker: null, year: 2017, yearPrecision: "year",
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://www.prnewswire.com/news-releases/yieldify-raises-6-million-in-new-funding-round-621140453.html", type: "deal-announcement", checked: "2026-08-30" }] }
+  ],
     sources: [
       { label: "Lerer Hippeau - Team", url: "https://www.lererhippeau.com/team" },
       { label: "SEC - Lerer Hippeau Acquisition Corp. 424B4 prospectus (Management)", url: "https://www.sec.gov/Archives/edgar/data/1841948/000119312521071611/d87587d424b4.htm" }
@@ -7210,7 +7705,20 @@ Object.assign(partnerProfiles, {
       { year: null, event: "Joined Canary as a partner after the firm's formation in 2017." }
     ],
     biography: "Izabel Gallera is a Partner at Canary, a venture capital firm born in Brazil that invests in early-stage Latin American startups. LAVCA's profile of her states that she has led dozens of investments in the region and that, prior to investing, she operated in startups and enterprises across Brazil and North America. TechCrunch reported that Canary, formed in 2017 by Marcos Toledo with Florian Hagenbuch, Mate Pencz, Patrick de Picciotto and Julio Vasconcellos, then brought her in as partner. She previously worked at Endeavor, where she met the Canary partners.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Arvo", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "Digital Health", subsector: "healthcare payment integrity",
+      evidence: [{ url: "https://www.revistacobertura.com.br/noticias/saude-e-odonto-noticias/arvo-capta-r-25-milhoes-para-expandir-tecnologias-que-eliminam-pagamentos-indevidos-no-setor-de-saude/", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Revena", ticker: null, stage: "Seed", year: 2026, yearPrecision: "year",
+      sector: "Digital Health", subsector: "hospital revenue cycle automation",
+      evidence: [{ url: "https://startupi.com.br/revena-capta-r-40-milhoes/", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Liti Saude", ticker: null, stage: "Seed", year: 2022, yearPrecision: "year",
+      sector: "Digital Health", subsector: "metabolic health and weight loss",
+      evidence: [{ url: "https://startupi.com.br/liti-saude-recebe-aporte/", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Sooper", ticker: null,
+      sector: "Ecommerce", subsector: "construction materials marketplace",
+      evidence: [{ url: "https://www.papoimobiliario.com/marketplace-de-materiais-de-construcao-recebe-aporte-de-r-32-milhoes/", type: "deal-announcement", checked: "2026-08-30" }] }
+  ],
     sources: [
       { label: "LAVCA - Izabel Gallera", url: "https://www.lavca.org/people/izabel-gallera/" },
       { label: "TechCrunch - Brazil's Canary sings with closing of biggest fund with $100M in commitments", url: "https://techcrunch.com/2021/11/10/brazils-canary-sings-with-closing-of-biggest-fund-with-100m-in-commitments/" },
@@ -7701,207 +8209,6 @@ Object.assign(partnerProfiles, {
       { label: "Zetta Venture Partners - Team", url: "https://www.zettavp.com/team" },
       { label: "Zetta Venture Partners - Companies", url: "https://www.zettavp.com/companies" },
       { label: "PRNewswire - Zetta Venture Partners Names Apoorva Pandhi Managing Director", url: "https://www.prnewswire.com/news-releases/zetta-venture-partners-names-apoorva-pandhi-managing-director-301681436.html" }
-    ]
-  },
-"kane-hsieh": {
-    name: "Kane Hsieh",
-    firm: "Root Ventures",
-    firmSlug: "root-ventures",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: [],
-    education: [
-      "Computer Science, Harvard University"
-    ],
-    previousExperience: [
-      "Senior Associate, RRE Ventures"
-    ],
-    firmHistory: [
-      { firmSlug: "rre-ventures", role: "Senior Associate", startYear: null, endYear: null }
-    ],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: null, event: "Spent two years as a senior associate at RRE Ventures in New York." },
-      { year: 2018, event: "Named as part of the Root Ventures investing team when the firm closed its 76.7 million dollar second fund." },
-      { year: 2025, event: "Quoted in Newcomer's report on Root Ventures raising a 190 million dollar fourth fund." }
-    ],
-    biography: "Kane Hsieh is a Partner at Root Ventures, the San Francisco seed-stage deep tech firm founded by Avidan Ross. TechCrunch reported in 2018 that he studied computer science at Harvard and spent a couple of years as a senior associate at RRE Ventures in New York before joining Root. He was named among Root's investing team when the firm closed its 76.7 million dollar second fund in 2018, and he was quoted in Newcomer's November 2025 report on Root's 190 million dollar fourth fund.",
-    notableInvestments: [],
-    sources: [
-      { label: "Root Ventures - Team", url: "https://root.vc/" },
-      { label: "TechCrunch - Root Ventures closed a much bigger second fund with $76.7 million", url: "https://techcrunch.com/2018/07/26/root-ventures-a-young-sf-firm-focused-on-hard-tech-just-closed-a-much-bigger-second-fund-with-76-7-million/" },
-      { label: "Newcomer - Root Ventures Raises $190 Million Fourth Fund", url: "https://www.newcomer.co/p/exclusive-root-ventures-raises-190" }
-    ]
-  },
-"chrissy-meyer": {
-    name: "Chrissy Meyer",
-    firm: "Root Ventures",
-    firmSlug: "root-ventures",
-    title: "Partner",
-    joinedYear: 2017,
-    investmentFocus: [],
-    education: [
-      "BS Electrical Engineering, Rose-Hulman Institute of Technology",
-      "MS Electrical Engineering, Stanford University"
-    ],
-    previousExperience: [
-      "Engineering Program Manager, Apple",
-      "Engineering Program Manager, Square",
-      "Director of Hardware, Pearl Automation"
-    ],
-    firmHistory: [],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: null, event: "Began her career as an Engineering Program Manager at Apple, where she was the third member of the Watch team." },
-      { year: 2013, event: "Left Apple and spent a year as an engineering program manager at Square." },
-      { year: null, event: "Served as Director of Hardware at Pearl Automation." },
-      { year: 2017, event: "Joined Root Ventures as a Venture Partner, announced on October 20." },
-      { year: 2023, event: "Spoke at a TechCrunch Live event as an investor in Oma Fertility." }
-    ],
-    biography: "Chrissy Meyer is a Partner at Root Ventures, the San Francisco seed-stage deep tech firm, which announced her arrival as a Venture Partner in October 2017. Before investing she spent nearly six years at Apple as an Engineering Program Manager, where she shipped iPods and Apple Watches and was the third member of the Watch team, then worked as an Engineering Program Manager at Square and as Director of Hardware at Pearl Automation. TechCrunch reported in 2023 that she writes one to three million dollar checks in seed and pre-seed rounds at Root. She holds a BS in Electrical Engineering from Rose-Hulman and an MS in Electrical Engineering from Stanford.",
-    notableInvestments: [
-      { name: "Oma Fertility", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Healthcare", subsector: "In-vitro fertilization", role: null, evidence: [
-        { url: "https://techcrunch.com/2023/03/26/oma-fertility-to-speak-on-building-a-better-ivf-experience-on-techcrunch-live/", type: "press", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Root Ventures - Team", url: "https://root.vc/" },
-      { label: "Root Ventures - Welcoming Chrissy Meyer to Root Ventures", url: "https://medium.com/root-ventures/welcoming-chrissy-meyer-to-root-ventures-56acf86383eb" },
-      { label: "TechCrunch - Oma Fertility to speak on building a better IVF experience on TechCrunch Live", url: "https://techcrunch.com/2023/03/26/oma-fertility-to-speak-on-building-a-better-ivf-experience-on-techcrunch-live/" },
-      { label: "TechCrunch - Root Ventures closed a much bigger second fund with $76.7 million", url: "https://techcrunch.com/2018/07/26/root-ventures-a-young-sf-firm-focused-on-hard-tech-just-closed-a-much-bigger-second-fund-with-76-7-million/" }
-    ]
-  },
-"wende-hutton": {
-    name: "Wende Hutton",
-    firm: "Canaan Partners",
-    firmSlug: "canaan-partners",
-    title: "General Partner",
-    joinedYear: 2004,
-    investmentFocus: [
-      "Biotech",
-      "Medical Devices",
-      "Digital Health"
-    ],
-    education: [
-      "A.B. Human Biology, Stanford University",
-      "M.B.A., Harvard Business School"
-    ],
-    previousExperience: [
-      "Senior marketing roles, GenPharm and Nellcor",
-      "General Partner, Mayfield"
-    ],
-    firmHistory: [],
-    boardSeats: [
-      "Antiva Biosciences"
-    ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 2004, event: "Joined Canaan as a General Partner on the West Coast." },
-      { year: 2011, event: "Named as a Canaan Partners participant in Dermira's $42 million Series A financing." },
-      { year: 2015, event: "Joined the Glooko board of directors as part of the company's $16.5 million Series B." },
-      { year: 2017, event: "Joined the Hyalex Orthopaedics board of directors alongside its $16 million Series A." },
-      { year: 2024, event: "Spoke for Canaan as General Partner on Qlaris Bio's $24 million Series B financing." }
-    ],
-    biography: "Wende Hutton is a General Partner at Canaan, where her bio states she identifies, builds and invests in companies bringing novel drugs, technologies and devices to market. She joined Canaan in 2004 after starting her venture career as a General Partner at Mayfield and holding senior marketing roles at GenPharm and Nellcor. Canaan lists Antiva Biosciences, Glooko, Hyalex Orthopaedics and Qlaris Bio among her current investments, and Chimerix, Dermira, Labrys Biologics and Transcend Medical among her previous ones. She holds an A.B. in human biology from Stanford University and an M.B.A. from Harvard Business School.",
-    notableInvestments: [
-      { name: "Glooko", ticker: null, stage: "Series B", year: 2015, yearPrecision: "year", sector: "Digital Health", subsector: "remote patient monitoring platform for diabetes", role: "board", evidence: [
-        { url: "https://glooko.com/news_reg/glooko-the-leading-remote-patient-monitoring-platform-for-diabetes-raises-16-5-million-in-series-b-funding-from-canaan-partners-medtronic-social-capital-and-samsung-glooko/", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://www.canaan.com/team/wende-hutton", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Hyalex Orthopaedics", ticker: null, stage: "Series A", year: 2017, yearPrecision: "year", sector: "Medical Devices", subsector: null, role: "board", evidence: [
-        { url: "https://www.prnewswire.com/news-releases/hyalex-orthopaedics-raises-16-million-series-a-financing-and-appoints-chief-executive-officer-300465930.html", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://www.finsmes.com/2017/05/hyalex-orthopaedics-raises-16m-in-series-a-financing.html", type: "press", checked: "2026-08-25" }
-      ] },
-      { name: "Qlaris Bio", ticker: null, stage: "Series B", year: 2024, yearPrecision: "year", sector: "Biotech", subsector: "IOP-lowering drug candidate for glaucoma", role: null, evidence: [
-        { url: "https://qlaris.bio/qlaris-bio-completes-24-million-series-b-financing-round-to-advance-qls%E2%80%91111-a-first-in-class-iop-lowering-drug-candidate-for-glaucoma/", type: "deal-announcement", checked: "2026-08-25" }
-      ] },
-      { name: "Antiva Biosciences", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Biotech", subsector: null, role: "board", evidence: [
-        { url: "https://antivabio.com/about-board.php", type: "portfolio-page", checked: "2026-08-25" },
-        { url: "https://www.canaan.com/team/wende-hutton", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Dermira", ticker: null, stage: "Series A", year: 2011, yearPrecision: "year", sector: "Biotech", subsector: "dermatology therapeutics", role: null, evidence: [
-        { url: "https://www.biospace.com/dermira-scores-42-million-series-a-financing-to-fund-therapeutic-advances-in-dermatology", type: "deal-announcement", checked: "2026-08-25" },
-        { url: "https://www.canaan.com/team/wende-hutton", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Canaan - Wende Hutton", url: "https://www.canaan.com/team/wende-hutton" },
-      { label: "Antiva Biosciences - Board of Directors", url: "https://antivabio.com/about-board.php" },
-      { label: "Glooko - $16.5M Series B press release", url: "https://glooko.com/news_reg/glooko-the-leading-remote-patient-monitoring-platform-for-diabetes-raises-16-5-million-in-series-b-funding-from-canaan-partners-medtronic-social-capital-and-samsung-glooko/" },
-      { label: "PR Newswire - Hyalex Orthopaedics $16M Series A", url: "https://www.prnewswire.com/news-releases/hyalex-orthopaedics-raises-16-million-series-a-financing-and-appoints-chief-executive-officer-300465930.html" },
-      { label: "Qlaris Bio - $24M Series B", url: "https://qlaris.bio/qlaris-bio-completes-24-million-series-b-financing-round-to-advance-qls%E2%80%91111-a-first-in-class-iop-lowering-drug-candidate-for-glaucoma/" },
-      { label: "BioSpace - Dermira $42M Series A", url: "https://www.biospace.com/dermira-scores-42-million-series-a-financing-to-fund-therapeutic-advances-in-dermatology" },
-      { label: "Aspen Ideas - Wende Hutton speaker bio", url: "https://www.aspenideas.org/speakers/wende-hutton" }
-    ]
-  },
-"eric-young": {
-    name: "Eric Young",
-    firm: "Canaan Partners",
-    firmSlug: "canaan-partners",
-    title: "Partner & Co-Founder",
-    joinedYear: 1987,
-    departedYear: 2021,
-    departedNote: "Died October 23, 2021. Canaan's own page presents him as 'In Memory / Partner and Co-Founder / West Coast, 1987 - 2021'; this profile reflects his founding role, not a current one.",
-    investmentFocus: [],
-    education: [
-      "B.S. Mechanical Engineering, Cornell University",
-      "M.B.A., Northwestern University"
-    ],
-    previousExperience: [
-      "Sales, marketing, operations and General Manager roles, General Electric",
-      "General Electric venture capital group (GEVENCO), opened its West Coast office"
-    ],
-    firmHistory: [],
-    boardSeats: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [
-      { year: 1987, event: "Co-founded Canaan as a spin-out of GE Venture Capital." },
-      { year: 2021, event: "Died on October 23 after 32 years as a General Partner at Canaan." }
-    ],
-    biography: "Eric Young co-founded Canaan in 1987 as a spin-out of GE Venture Capital, and Canaan's page states that over 32 years he led multiple generations of Canaan investors and shaped the firm's culture. Before Canaan he worked at General Electric in sales, marketing, operations and as a General Manager, and opened the West Coast office for GE's venture capital group. Alongside advising Canaan's investment team he served on advisory boards focused on venture and entrepreneurial skill development in university ecosystems. He held a B.S. in mechanical engineering from Cornell University and an M.B.A. from Northwestern University, and died on October 23, 2021.",
-    notableInvestments: [
-      { name: "Kalpana", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Capstone Turbine Corporation", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Ebates", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "SandForce", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Lancope", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Xirrus", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Argon Networks", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Frame Technology", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "International Network Services", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
-      ] },
-      { name: "Visigenic Software", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [
-        { url: "https://www.canaan.com/team/eric-young", type: "partner-bio", checked: "2026-08-25" }
-      ] }
-    ],
-    sources: [
-      { label: "Canaan - Eric Young (In Memory)", url: "https://www.canaan.com/team/eric-young" },
-      { label: "Canaan - Team page memorial", url: "https://www.canaan.com/team" },
-      { label: "Spangler Mortuaries - Eric Anderson Young obituary", url: "https://www.spanglermortuary.com/obituaries/eric-young" },
-      { label: "Tribute Archive - Eric Anderson Young obituary", url: "https://www.tributearchive.com/obituaries/23164173/eric-anderson-young/" }
     ]
   }
 });
