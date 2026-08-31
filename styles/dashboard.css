@@ -166,7 +166,7 @@
 .performance-dashboard-note {
     font-family: var(--mono);
     font-size: 11px;
-    color: var(--hairline);
+    color: var(--ink-dim);
     margin-top: 18px;
   }
 
@@ -222,7 +222,7 @@
   .geo-row.secondary .geo-tier-label { color: var(--ink-dim); }
   .geo-bar-track {
     height: 8px;
-    background: rgba(255,255,255,0.07);
+    background: rgba(0,0,0,0.07);
     border-radius: 4px;
     overflow: hidden;
   }
@@ -242,7 +242,7 @@
   .geo-heatmap-note {
     font-family: var(--mono);
     font-size: 11px;
-    color: var(--hairline);
+    color: var(--ink-dim);
     margin-top: 18px;
   }
 
@@ -301,7 +301,7 @@
     height: 100%;
     display: flex;
     align-items: flex-end;
-    background: rgba(255,255,255,0.04);
+    background: rgba(0,0,0,0.05);
     border-radius: 4px;
     overflow: hidden;
   }
