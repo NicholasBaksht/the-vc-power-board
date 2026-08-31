@@ -176,6 +176,7 @@ function pbhHero() {
         '<a href="#find-investors" class="pbh-btn pbh-btn-p" data-pbh-cta="power-match">Find My Investors</a>' +
         '<a href="#people" class="pbh-btn pbh-btn-s" data-pbh-cta="partner-intel">Explore Partner Intelligence</a>' +
       '</div>' +
+      pbhStatsLine() +
     '</div>';
 
   h += '<div class="pbh-hero-r">';
@@ -245,9 +246,9 @@ function pbhBehavior() {
 
   let h = '<section class="pbh-sec pbh-beh">' +
     '<div class="pbh-sec-h">' +
-      '<h2 class="pbh-h2">Observed investment behavior</h2>' +
+      '<h2 class="pbh-h2">Stated focus is not observed behavior.</h2>' +
       '<p class="pbh-sec-p">What a firm says it invests in and what its partners have actually ' +
-      'been sourced doing are different claims. Power Board keeps them apart.</p>' +
+      'been sourced doing are different claims, so Power Board never merges them.</p>' +
     '</div>' +
     '<div class="pbh-beh-grid">';
 
@@ -281,14 +282,18 @@ function pbhBehavior() {
   return h;
 }
 
-function pbhStatsStrip() {
+/* The statistics used to be their own full-width band. They are one
+   line of context, not a section, so they now sit under the hero CTAs
+   where they qualify the claim above them instead of interrupting the
+   page with a fourth horizontal rule. */
+function pbhStatsLine() {
   const s = pbhStats();
   if (!s || !s.length) return '';
-  return '<section class="pbh-strip">' + s.map(function (x) {
-    return '<div class="pbh-strip-i"><span class="pbh-strip-n">' +
+  return '<div class="pbh-stats">' + s.map(function (x) {
+    return '<span class="pbh-stat"><strong>' +
       String(x.n).replace(/\B(?=(\d{3})+(?!\d))/g, ',') +
-      '</span><span class="pbh-strip-l">' + x.l + '</span></div>';
-  }).join('') + '</section>';
+      '</strong> ' + x.l.toLowerCase() + '</span>';
+  }).join('') + '</div>';
 }
 
 function pbhHow() {
@@ -320,7 +325,6 @@ function pbhFinalCta() {
     '<p class="pbh-sec-p">Start your search and connect with the right investors inside the right firms.</p>' +
     '<div class="pbh-ctas">' +
       '<a href="#find-investors" class="pbh-btn pbh-btn-p" data-pbh-cta="power-match-final">Find My Investors</a>' +
-      '<a href="#people" class="pbh-btn pbh-btn-s" data-pbh-cta="partner-intel-final">Explore Partner Intelligence &rarr;</a>' +
     '</div></section>';
 }
 
@@ -333,7 +337,6 @@ function renderHomepage() {
     '<div class="pbh">' +
       pbhHero() +
       pbhBehavior() +
-      pbhStatsStrip() +
       pbhHow() +
       pbhFinalCta() +
     '</div>';
