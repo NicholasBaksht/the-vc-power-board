@@ -1,5 +1,140 @@
 /* data-partners shard 2 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
+"kate-mitchell": {
+    name: "Kate Mitchell",
+    firm: "Scale Venture Partners",
+    firmSlug: "scale-venture-partners",
+    title: "Co-Founder & Partner Emeritus",
+    joinedYear: 2000,
+    education: [],
+    previousExperience: [],
+    investmentFocus: ["Enterprise Software", "SaaS", "AI"],
+    notableInvestments: [
+      { name: "HubSpot", ticker: "HUBS" },
+      { name: "DocuSign", ticker: "DOCU" },
+      { name: "Bill.com", ticker: "BILL" }
+    ],
+    boardSeats: ["SVB Financial Group", "Fortive Corporation"],
+    ipoCount: 3,
+    majorExits: 5,
+    careerTimeline: [
+      { year: "2000", event: "Co-founds BA Venture Partners with Rory O'Driscoll, Bank of America's internal venture arm." },
+      { year: "2007", event: "Leads the spinout into an independent firm, renamed Scale Venture Partners." },
+      { year: "2012", event: "Co-authors the IPO section of the JOBS Act, expanding public-market access for emerging growth companies." },
+      { year: "2014", event: "Co-founds VentureForward, an NVCA initiative advancing opportunities for women and underrepresented minorities in venture capital." },
+      { year: "2019", event: "Bill.com, a Scale portfolio company, completes its IPO." }
+    ],
+    biography: "Kate Mitchell co-founded what became Scale Venture Partners in 2000 as BA Venture Partners, Bank of America's internal venture arm, alongside Rory O'Driscoll, before leading its 2007 spinout into an independent firm. Beyond investing, Mitchell has been one of venture capital's most consequential policy voices - she co-authored the IPO section of the 2012 JOBS Act, expanding public-market access for emerging growth companies, and served as chairman of the National Venture Capital Association. Her investment track record includes HubSpot, DocuSign, and Bill.com, all of which went on to complete public listings, and she co-founded VentureForward in 2014, an NVCA initiative focused on advancing women and underrepresented minorities across the venture ecosystem, earning her the NVCA's American Spirit Award in 2021.",
+    sources: [
+      { label: "Scale Venture Partners - Kate Mitchell", url: "https://www.scalevp.com/team/kate-mitchell" },
+      { label: "iHeart Podcast", url: "https://www.iheart.com/podcast/356-array-podcast-28107740/episode/rory-odriscoll-founder-of-scale-venture-49892844/" }
+    ]
+  },
+"bill-bowes": {
+    name: "Bill Bowes",
+    departedNote: "Not listed on usvp.com/team as captured 2026-08-22; that page rendered a roster including Casey Tansey, Dafina Toncheva and Dale Holladay. His entry here reflects his founding role, not a current one.",
+    firm: "U.S. Venture Partners",
+    firmSlug: "us-venture-partners",
+    title: "Co-Founder",
+    joinedYear: 1981,
+    education: ["BA, Economics, Stanford University", "MBA, Harvard University"],
+    previousExperience: [
+      "Investment Banker, Blyth & Co.",
+      "Board Member, Cetus Corporation (1972-1978)",
+      "Board Member, Raychem (1961-late 1970s)",
+      "Founding Shareholder, First Treasurer & Chairman, Amgen"
+    ],
+    investmentFocus: ["Enterprise Software", "Healthcare", "Biotechnology"],
+    notableInvestments: [
+      { name: "Check Point Software", ticker: "CHKP" },
+      { name: "SanDisk", ticker: null },
+      { name: "Ross Stores", ticker: "ROST" }
+    ],
+    boardSeats: [],
+    ipoCount: 5,
+    majorExits: 10,
+    careerTimeline: [
+      { year: "1961", event: "Joins the board of Raychem, serving until the late 1970s." },
+      { year: "1972", event: "Joins the board of Cetus Corporation, a pioneering biotechnology company." },
+      { year: "1980", event: "Becomes founding shareholder, first Treasurer, and Chairman of Amgen." },
+      { year: "1981", event: "Co-founds U.S. Venture Partners with Stuart Moldaw and Robert Sackman." },
+      { year: "2016", event: "Passes away on December 28, leaving behind a legacy as one of Silicon Valley's foundational biotech and venture figures." }
+    ],
+    biography: "Bill Bowes built a career at the very origins of both Silicon Valley venture capital and the modern biotechnology industry, joining the boards of Raychem and Cetus Corporation years before co-founding U.S. Venture Partners in 1981 with Stuart Moldaw and Robert Sackman. His most historically significant contribution came outside USVP entirely: Bowes was a founding shareholder and served as Amgen's first Treasurer and Chairman, helping build what became one of the world's largest biotechnology companies from its earliest days. At USVP, that same conviction in scientific and technical founders helped establish the firm as one of the longest-running and most successful early-stage investors in Silicon Valley history, backing more than 500 companies across four decades with 93-plus completed IPOs, spanning Check Point Software, SanDisk, Ross Stores, and Yammer. Bowes passed away in December 2016, leaving a legacy as one of the foundational figures connecting Silicon Valley's venture capital and biotechnology industries.",
+    sources: [
+      { label: "Wikipedia - Bill Bowes", url: "https://en.wikipedia.org/wiki/Bill_Bowes_(venture_capitalist)" },
+      { label: "Wikipedia - U.S. Venture Partners", url: "https://en.wikipedia.org/wiki/U.S._Venture_Partners" }
+    ]
+  },
+"rebecca-lynn": {
+    name: "Rebecca Lynn",
+    firm: "Canvas Prime",
+    firmSlug: "canvas-prime",
+    title: "Co-Founder & Managing Director",
+    joinedYear: 2013,
+    education: ["BS, Chemical Engineering, University of Missouri", "JD/MBA, UC Berkeley"],
+    previousExperience: [
+      "New Product Development, Procter & Gamble",
+      "Early Employee & VP Marketing, NextCard (scaled from 30 to 1,300 employees through IPO)",
+      "General Partner, Morgenthaler Ventures (2007-2013)"
+    ],
+    investmentFocus: ["Fintech", "Healthtech", "AI"],
+    notableInvestments: [
+      { name: "LendingClub", ticker: "LC" },
+      { name: "Doximity", ticker: "DOCS" },
+      { name: "Luminar Technologies", ticker: "LAZR" }
+    ],
+    boardSeats: [],
+    ipoCount: 3,
+    majorExits: 9,
+    careerTimeline: [
+      { year: "1998", event: "Moves to Silicon Valley as an early employee of NextCard, the first online credit card company, helping scale it from 30 to 1,300 employees through IPO." },
+      { year: "2007", event: "Begins her venture career at Morgenthaler Ventures, becoming a partner in 2012." },
+      { year: "2013", event: "Co-founds Canvas Ventures, a spinout from Morgenthaler; leads the firm's early-stage investment in LendingClub." },
+      { year: "2014", event: "LendingClub completes its IPO in December, the largest U.S. tech IPO of the year." },
+      { year: "2023", event: "Casetext, an early Canvas investment, is acquired by Thomson Reuters for $650 million in an all-cash deal." }
+    ],
+    biography: "Rebecca Lynn began her career as a chemical engineer, including work in a nuclear research reactor, before moving into product development at Procter & Gamble and then joining NextCard, the first online credit card company, as an early employee, helping scale it from 30 to 1,300 employees through its IPO. She began her venture career at Morgenthaler Ventures in 2007, becoming partner in 2012, before co-founding Canvas Ventures (now Canvas Prime) as a spinout in 2013 - closing her first fund the week Lehman Brothers collapsed. Her early-stage investment in LendingClub became the largest U.S. tech IPO of 2014, and her broader track record includes Doximity, Luminar Technologies, and Casetext, the AI-powered legal research platform Thomson Reuters acquired for $650 million in cash in 2023 after the company gained early access to GPT-4. A five-time Forbes Midas List honoree, Lynn has been recognized as a Senior Deal Maker by the Wall Street Journal and a Top Woman VC by the New York Times.",
+    sources: [
+      { label: "Canvas Prime - Rebecca Lynn", url: "https://www.canvas.vc/team-member/rebecca-lynn" },
+      { label: "Wikipedia - Rebecca Lynn", url: "https://en.wikipedia.org/wiki/Rebecca_Lynn_(venture_capitalist)" }
+    ]
+  },
+"tige-savage": {
+    name: "Tige Savage",
+    firm: "Revolution Ventures",
+    firmSlug: "revolution-ventures",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2005,
+    education: ["BA, University of Michigan"],
+    previousExperience: [
+      "Executive, Riggs National Corporation",
+      "Board Member, Allbritton Communications Company",
+      "EVP, Riggs Capital Partners (1998-2000, technology & media investments)",
+      "VP, Time Warner Ventures (2001-2003, technology & media investments)"
+    ],
+    investmentFocus: ["Consumer Technology", "Enterprise", "Marketplaces"],
+    notableInvestments: [
+      { name: "Booker", ticker: null },
+      { name: "LivingSocial", ticker: null },
+      { name: "Framebridge", ticker: null }
+    ],
+    boardSeats: ["Aiwyn", "ProRata.ai"],
+    ipoCount: 0,
+    majorExits: 10,
+    careerTimeline: [
+      { year: "1998", event: "Manages technology and media sector investments as EVP of Riggs Capital Partners." },
+      { year: "2001", event: "Manages technology and media investments as VP of Time Warner Ventures." },
+      { year: "2005", event: "Co-founds Revolution with Steve Case and Donn Davis in Washington, D.C." },
+      { year: "2013", event: "Leads the close of Revolution Ventures' first institutional fund at $200 million, exceeding its $150 million target." },
+      { year: "2018", event: "Booker, a Revolution Ventures portfolio company, is acquired by Mindbody for $150 million in March." }
+    ],
+    biography: "Tige Savage built nearly three decades of technology and media investing experience across Riggs Capital Partners and Time Warner Ventures before co-founding Revolution with Steve Case and Donn Davis in 2005. He now leads Revolution Ventures, the firm's institutionally-backed early-stage fund, built on the specific conviction that great companies are being systematically overlooked by investors concentrated in Silicon Valley, New York, and Boston. That geographic thesis produced real returns: Savage led or served on the board of numerous exited Revolution companies, including Booker (acquired by Mindbody), Framebridge (acquired by Graham Holdings), and Flexcar (acquired by Avis, the Zipcar predecessor deal), and Revolution Ventures has maintained top-quartile fund performance since inception by deliberately avoiding a strategy dependent on rare outlier bets. Savage has been named one of Washington, D.C.'s '100 Top Tech Titans' by Washingtonian Magazine five times, most recently in 2024.",
+    sources: [
+      { label: "Revolution - Tige Savage", url: "https://www.revolution.com/team-member/tige-savage" },
+      { label: "Wikipedia - Tige Savage", url: "https://en.wikipedia.org/wiki/Tige_Savage" }
+    ]
+  },
 "hunter-walk": {
     name: "Hunter Walk",
     firm: "Homebrew",
@@ -3527,7 +3662,27 @@ Object.assign(partnerProfiles, {
         label: "SoftBank Vision Fund - Angela Du",
         url: "https://visionfund.com/team/angela-du"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Agility Robotics", ticker: null,
+      sector: "Robotics",
+      evidence: [{ url: "https://visionfund.com/team/angela-du", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "AlphaSense", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://visionfund.com/team/angela-du", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Andela", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://visionfund.com/team/angela-du", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Aurora", ticker: null,
+      sector: "Mobility",
+      evidence: [{ url: "https://visionfund.com/team/angela-du", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Berkshire Grey", ticker: null,
+      sector: "Robotics",
+      evidence: [{ url: "https://visionfund.com/team/angela-du", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "ByteDance", ticker: null,
+      sector: "Consumer",
+      evidence: [{ url: "https://visionfund.com/team/angela-du", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "brett-rochkind": {
     name: "Brett Rochkind",
@@ -3566,7 +3721,60 @@ Object.assign(partnerProfiles, {
         label: "SoftBank Vision Fund - Brett Rochkind",
         url: "https://visionfund.com/team/brett-rochkind"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "AlphaSense", ticker: null,
+      sector: "Enterprise Software", subsector: "Enterprise | Americas",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Cargomatic", ticker: null,
+      sector: "Logistics", subsector: "Logistics | Americas",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Cato Networks", ticker: null,
+      sector: "Enterprise Software", subsector: "Enterprise | EMEA",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Classiq", ticker: null,
+      sector: "Deep Tech", subsector: "Frontier Tech | EMEA",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Databricks", ticker: null,
+      sector: "Enterprise Software", subsector: "Enterprise | Americas",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Fetch", ticker: null,
+      sector: "Consumer", subsector: "Consumer | Americas",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Remote", ticker: null,
+      sector: "Enterprise Software", subsector: "My first investment at SoftBank",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Alibaba Group", ticker: null,
+      sector: "Ecommerce", orgAtTime: "general-atlantic",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Airbnb", ticker: null,
+      sector: "Consumer", orgAtTime: "general-atlantic",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Altair Engineering", ticker: null,
+      sector: "Enterprise Software", orgAtTime: "general-atlantic",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "AppDynamics", ticker: null,
+      sector: "Enterprise Software", orgAtTime: "general-atlantic",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Box", ticker: null,
+      sector: "Enterprise Software", orgAtTime: "general-atlantic",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "IHS Markit", ticker: null,
+      sector: "Enterprise Software", orgAtTime: "general-atlantic",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Meituan", ticker: null,
+      sector: "Consumer", orgAtTime: "general-atlantic",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "MercadoLibre", ticker: null,
+      sector: "Ecommerce", orgAtTime: "general-atlantic",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Nubank", ticker: null,
+      sector: "Fintech", orgAtTime: "general-atlantic",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Uber", ticker: null,
+      sector: "Mobility", orgAtTime: "general-atlantic",
+      evidence: [{ url: "https://visionfund.com/team/brett-rochkind", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "cecilia-chen": {
     name: "Cecilia Chen",
@@ -3597,7 +3805,27 @@ Object.assign(partnerProfiles, {
         label: "SoftBank Vision Fund - Cecilia Chen",
         url: "https://visionfund.com/team/cecilia-chen"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "DayOne", ticker: null,
+      sector: "Deep Tech", subsector: "Frontier Tech | Asia",
+      evidence: [{ url: "https://visionfund.com/team/cecilia-chen", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Dingdong Maicai", ticker: null,
+      sector: "Consumer", subsector: "Consumer | Asia",
+      evidence: [{ url: "https://visionfund.com/team/cecilia-chen", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Guazi", ticker: null,
+      sector: "Consumer", subsector: "Consumer | Asia",
+      evidence: [{ url: "https://visionfund.com/team/cecilia-chen", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "JAKA", ticker: null,
+      sector: "Robotics", subsector: "Frontier Tech | Asia",
+      evidence: [{ url: "https://visionfund.com/team/cecilia-chen", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Keep", ticker: null,
+      sector: "Consumer", subsector: "Consumer | Asia",
+      evidence: [{ url: "https://visionfund.com/team/cecilia-chen", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "OpusClip", ticker: null,
+      sector: "Consumer", subsector: "Consumer | Americas",
+      evidence: [{ url: "https://visionfund.com/team/cecilia-chen", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "damien-henault": {
     name: "Damien Henault",
@@ -3633,7 +3861,57 @@ Object.assign(partnerProfiles, {
         label: "Forgepoint Capital - Damien Henault",
         url: "https://forgepointcap.com/team/damien-henault/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Adaptive6", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Capsule Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Maisa", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Multiverse Computing", ticker: null,
+      sector: "Deep Tech",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Qevlar AI", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Tadaweb", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "BlueVoyant", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Currencycloud", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "CybelAngel", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Dedrone", ticker: null,
+      sector: "Defense Tech",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "EfficientIP", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Onfido", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Panaseer", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "SenseOn", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Systancia", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Tessian", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/damien-henault/", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "don-dixon": {
     name: "Don Dixon",
@@ -3667,7 +3945,36 @@ Object.assign(partnerProfiles, {
         label: "Forgepoint Capital - Don Dixon",
         url: "https://forgepointcap.com/team/don-dixon/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Anitian", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/don-dixon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Bishop Fox", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/don-dixon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Converge", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/don-dixon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "CyberCube", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/don-dixon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "LoginRadius", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/don-dixon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "SPHERE", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/don-dixon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "SolCyber", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/don-dixon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Surefire Cyber", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/don-dixon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Verituity", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://forgepointcap.com/team/don-dixon/", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "ernie-bio": {
     name: "Ernie Bio",
@@ -3706,7 +4013,42 @@ Object.assign(partnerProfiles, {
         label: "Forgepoint Capital - Ernie Bio",
         url: "https://forgepointcap.com/team/ernie-bio/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "1Kosmos", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://forgepointcap.com/team/ernie-bio/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Arkenstone Defense", ticker: null,
+      sector: "Defense Tech",
+      evidence: [{ url: "https://forgepointcap.com/team/ernie-bio/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Bishop Fox", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://forgepointcap.com/team/ernie-bio/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "DataBahn.ai", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://forgepointcap.com/team/ernie-bio/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Huntress", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://forgepointcap.com/team/ernie-bio/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Luciq", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/ernie-bio/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "NowSecure", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://forgepointcap.com/team/ernie-bio/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "RAD Security", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://forgepointcap.com/team/ernie-bio/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "RapidFort", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/ernie-bio/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Strata", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/ernie-bio/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Synadia", ticker: null,
+      sector: "Developer Tools & Infrastructure", role: "board",
+      evidence: [{ url: "https://forgepointcap.com/team/ernie-bio/", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "leo-casusol": {
     name: "Leo Casusol",
@@ -3743,7 +4085,42 @@ Object.assign(partnerProfiles, {
         label: "Forgepoint Capital - Leo Casusol",
         url: "https://forgepointcap.com/team/leo-casusol/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Cinchy", ticker: null,
+      sector: "Enterprise Software", role: "board",
+      evidence: [{ url: "https://forgepointcap.com/team/leo-casusol/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Lumu", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/leo-casusol/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Lynx", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/leo-casusol/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Nudge Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/leo-casusol/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "RAD Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/leo-casusol/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Rafay", ticker: null,
+      sector: "Developer Tools & Infrastructure", role: "board",
+      evidence: [{ url: "https://forgepointcap.com/team/leo-casusol/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Secure Code Warrior", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/leo-casusol/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "SolCyber", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://forgepointcap.com/team/leo-casusol/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Symmetry Systems", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/leo-casusol/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Uptycs", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/leo-casusol/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Noname Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://forgepointcap.com/team/leo-casusol/", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "howard-morgan": {
     name: "Howard Morgan",
@@ -3778,7 +4155,25 @@ Object.assign(partnerProfiles, {
         label: "B Capital - Howard Morgan",
         url: "https://b.capital/team/howard-morgan/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Apptronik", ticker: null, stage: "Series A", year: 2025, yearPrecision: "year",
+      sector: "Robotics", subsector: "AI-powered humanoid robots", role: "board",
+      evidence: [{ url: "https://www.globenewswire.com/news-release/2025/02/13/3025687/0/en/Apptronik-Raises-350-Million-to-Scale-Production-of-AI-Powered-Humanoid-Robots-and-Meet-Significant-Customer-Demand.html", type: "deal-announcement", checked: "2026-08-30" },
+                  { url: "https://en.wikipedia.org/wiki/Howard_L._Morgan", type: "press", checked: "2026-08-30" }] },
+    { name: "Franklin Electronic Publishers", ticker: null,
+      sector: "Hardware", role: "board",
+      evidence: [{ url: "https://b.capital/team/howard-morgan/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://en.wikipedia.org/wiki/Howard_L._Morgan", type: "press", checked: "2026-08-30" }] },
+    { name: "Internet Brands", ticker: null,
+      sector: "Consumer", role: "board",
+      evidence: [{ url: "https://b.capital/team/howard-morgan/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://en.wikipedia.org/wiki/Howard_L._Morgan", type: "press", checked: "2026-08-30" }] },
+    { name: "Idealab", ticker: null,
+      role: "board",
+      evidence: [{ url: "https://b.capital/team/howard-morgan/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://en.wikipedia.org/wiki/Howard_L._Morgan", type: "press", checked: "2026-08-30" }] }
+  ]
   },
 "raj-ganguly": {
     name: "Raj Ganguly",
@@ -3810,7 +4205,15 @@ Object.assign(partnerProfiles, {
         label: "B Capital - Raj Ganguly",
         url: "https://b.capital/team/raj-ganguly/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Icertis", ticker: null,
+      sector: "Enterprise Software", role: "board",
+      evidence: [{ url: "https://www.icertis.com/company/leadership/board/raj-ganguly/", type: "press", checked: "2026-08-30" }] },
+    { name: "Atomwise", ticker: null, stage: "Series B", year: 2020, yearPrecision: "year",
+      sector: "Biotech", subsector: "computational drug discovery platform",
+      evidence: [{ url: "https://www.mobihealthnews.com/news/drug-discovery-company-atomwise-lands-123m-series-b-funding", type: "deal-announcement", checked: "2026-08-30" }] }
+  ]
   },
 "adam-seabrook": {
     name: "Adam Seabrook",
@@ -3849,7 +4252,27 @@ Object.assign(partnerProfiles, {
         label: "B Capital - Adam Seabrook",
         url: "https://b.capital/team/adam-seabrook/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Positive Development", ticker: null,
+      sector: "Digital Health", role: "board",
+      evidence: [{ url: "https://b.capital/team/adam-seabrook/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Synapticure", ticker: null,
+      sector: "Digital Health", role: "board",
+      evidence: [{ url: "https://b.capital/team/adam-seabrook/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Atomwise", ticker: null,
+      sector: "Healthcare", role: "board",
+      evidence: [{ url: "https://b.capital/team/adam-seabrook/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Evidation", ticker: null,
+      sector: "Digital Health", role: "board",
+      evidence: [{ url: "https://b.capital/team/adam-seabrook/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Sift Healthcare", ticker: null,
+      sector: "Digital Health", role: "board",
+      evidence: [{ url: "https://b.capital/team/adam-seabrook/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "PicnicHealth", ticker: null,
+      sector: "Digital Health", role: "board",
+      evidence: [{ url: "https://b.capital/team/adam-seabrook/", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "andrew-jackson": {
     name: "Andrew Jackson",
@@ -3950,7 +4373,37 @@ Object.assign(partnerProfiles, {
         label: "Energy Impact Partners - Team",
         url: "https://www.energyimpactpartners.com/team"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Arcadia", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "ThinkLabs", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Infravision", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Urbint", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Opus One", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Quilt", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Dragos", ticker: null,
+      sector: "Cybersecurity", subsector: "industrial cybersecurity", role: "board",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://www.dragos.com/leadership/sameer-reddy", type: "press", checked: "2026-08-30" }] },
+    { name: "Attivo Networks", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://www.dragos.com/leadership/sameer-reddy", type: "press", checked: "2026-08-30" }] },
+    { name: "ERock", ticker: null,
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "joshua-feldman": {
     name: "Joshua Feldman",
@@ -4026,7 +4479,29 @@ Object.assign(partnerProfiles, {
         label: "Energy Impact Partners - Team",
         url: "https://www.energyimpactpartners.com/team"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "IND Technology", ticker: null, year: 2025, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "early fault detection",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://ind-technology.com/news/angeleno-group-and-energy-impact-partners-announce-aud50m-commitment-to-ind-technology-the-leading-global-provider-of-early-fault-detection-efd-systems-to-prevent-grid-failures-a/", type: "deal-announcement", checked: "2026-08-30" },
+                  { url: "https://www.axios.com/2025/12/15/ind-technology-ai-grid-energy", type: "press", checked: "2026-08-30" }] },
+    { name: "VIE Technologies", ticker: null, stage: "Series A", year: 2025, yearPrecision: "year",
+      sector: "Climate & Energy", subsector: "critical infrastructure reliability",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://www.einnews.com/pr_news/790664537/vie-technologies-secures-15-million-series-a-led-by-energy-impact-partners", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Ion Solar", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "HopSkipDrive", ticker: null, stage: "Series C", year: 2021, yearPrecision: "year",
+      sector: "Mobility", subsector: "student transportation", role: "board",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://dot.la/hopskipdrive-raises-25million-bus-shortage-2654623521.html", type: "press", checked: "2026-08-30" }] },
+    { name: "Viriciti", ticker: null,
+      sector: "Mobility", subsector: "transportation electrification",
+      evidence: [{ url: "https://www.energyimpactpartners.com/team/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://www.ctvc.co/spotlight-cassie-bowe-energy-impact-partners/", type: "press", checked: "2026-08-30" }] }
+  ]
   },
 "dominic-barton": {
     name: "Dominic Barton",
@@ -4110,7 +4585,37 @@ Object.assign(partnerProfiles, {
         label: "Radical Ventures - Sanjana Basu",
         url: "https://radical.vc/team/sanjana-basu/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "PocketHealth", ticker: null,
+      sector: "Digital Health", subsector: "patient medical imaging records",
+      evidence: [{ url: "https://radical.vc/team/sanjana-basu/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Signal 1", ticker: null,
+      sector: "Digital Health", subsector: "AI for hospitals",
+      evidence: [{ url: "https://radical.vc/team/sanjana-basu/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Ubenwa", ticker: null,
+      sector: "Digital Health", subsector: "AI analysis of infant cry sounds",
+      evidence: [{ url: "https://radical.vc/team/sanjana-basu/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Lisa Health", ticker: null,
+      sector: "Digital Health", subsector: "menopause and healthy aging; exited",
+      evidence: [{ url: "https://radical.vc/team/sanjana-basu/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Synex", ticker: null,
+      sector: "Digital Health",
+      evidence: [{ url: "https://radical.vc/team/sanjana-basu/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Nabla Bio", ticker: null,
+      sector: "Biotech", subsector: "AI protein design",
+      evidence: [{ url: "https://radical.vc/team/sanjana-basu/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Attuned Intelligence", ticker: null,
+      sector: "AI", subsector: "voice AI",
+      evidence: [{ url: "https://radical.vc/team/sanjana-basu/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Ribbon AI", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://radical.vc/team/sanjana-basu/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Orbital Materials", ticker: null,
+      sector: "Deep Tech", subsector: "AI for materials discovery",
+      evidence: [{ url: "https://radical.vc/team/sanjana-basu/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://radical.vc/portfolio/", type: "portfolio-page", checked: "2026-08-30" }] }
+  ]
   },
 "blair-bernholtz": {
     name: "Blair Bernholtz",
@@ -4208,7 +4713,18 @@ Object.assign(partnerProfiles, {
         label: "Norrsken22 - Team",
         url: "https://www.norrsken22.com/team"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Workpay", ticker: null, stage: "Series A", year: 2024, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "HR and payroll platform",
+      evidence: [{ url: "https://financialit.net/news/fundraising-news/workpay-raises-5m-series-investment-expand-hr-and-payroll-platform-across", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Compuscan", ticker: null,
+      sector: "Fintech", subsector: "independent credit bureau", orgAtTime: "actis",
+      evidence: [{ url: "https://vcwire.tech/2024/03/11/norrsken22-interview-with-general-partner-ngetha-waithaka/", type: "press", checked: "2026-08-30" }] },
+    { name: "Fawry", ticker: null,
+      sector: "Fintech", subsector: "bill payments", orgAtTime: "actis",
+      evidence: [{ url: "https://vcwire.tech/2024/03/11/norrsken22-interview-with-general-partner-ngetha-waithaka/", type: "press", checked: "2026-08-30" }] }
+  ]
   },
 "hans-otterling": {
     name: "Hans Otterling",
@@ -4240,7 +4756,18 @@ Object.assign(partnerProfiles, {
         label: "Norrsken22 - Team",
         url: "https://www.norrsken22.com/team"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Anoto", ticker: null,
+      sector: "Hardware", role: "board", orgAtTime: "northzone",
+      evidence: [{ url: "https://www.globenewswire.com/news-release/2010/11/26/191617/0/en/Hans-Otterling-leaves-the-Anoto-Board-of-Directors.html", type: "press", checked: "2026-08-30" }] },
+    { name: "Spotify", ticker: null,
+      sector: "Consumer", orgAtTime: "northzone",
+      evidence: [{ url: "https://www.dailydispatch.co.za/news/2025-07-04-watch-innovate-africa-amid-global-gloom-a-swedish-vc-sees-bright-skies-over-africa/", type: "press", checked: "2026-08-30" }] },
+    { name: "Klarna", ticker: null,
+      sector: "Fintech", orgAtTime: "northzone",
+      evidence: [{ url: "https://www.dailydispatch.co.za/news/2025-07-04-watch-innovate-africa-amid-global-gloom-a-swedish-vc-sees-bright-skies-over-africa/", type: "press", checked: "2026-08-30" }] }
+  ]
   },
 "natalie-kolbe": {
     name: "Natalie Kolbe",
@@ -4269,7 +4796,26 @@ Object.assign(partnerProfiles, {
         label: "Norrsken22 - Team",
         url: "https://www.norrsken22.com/team"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "TymeBank", ticker: null, year: 2023, yearPrecision: "year",
+      sector: "Fintech", subsector: "digital challenger bank",
+      evidence: [{ url: "https://techcrunch.com/2023/05/23/south-african-challenger-bank-tymebank-raises-77-8m-from-norrsken22-and-blue-earth-capital/", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Paycorp", ticker: null, year: 2013, yearPrecision: "year",
+      sector: "Fintech", subsector: "payments and ATM infrastructure", orgAtTime: "actis",
+      evidence: [{ url: "https://www.act.is/media-centre/press-releases/actis-buys-leading-african-payments-business-for-95m", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Sigma Pensions", ticker: null, year: 2015, yearPrecision: "year",
+      sector: "Fintech", subsector: "pension fund administration", orgAtTime: "actis",
+      evidence: [{ url: "https://www.act.is/media-centre/press-releases/actis-invests-in-nigeria-s-sigma-pensions/", type: "deal-announcement", checked: "2026-08-30" },
+                  { url: "https://www.investafrica.com/personel/natalie-kolbe", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Coricraft Group", ticker: null, year: 2015, yearPrecision: "year",
+      sector: "Consumer", subsector: "home furnishings retailer", orgAtTime: "actis",
+      evidence: [{ url: "https://www.financialnigeria.com/actis-acquires-stake-in-sa-home-furnishing-retailer-sustainable-photovideo-details-112.html", type: "deal-announcement", checked: "2026-08-30" },
+                  { url: "https://www.investafrica.com/personel/natalie-kolbe", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Tracker", ticker: null,
+      sector: "Mobility", orgAtTime: "actis",
+      evidence: [{ url: "https://www.investafrica.com/personel/natalie-kolbe", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "lexi-novitske": {
     name: "Lexi Novitske",
@@ -4316,7 +4862,24 @@ Object.assign(partnerProfiles, {
         label: "Norrsken22 - Team",
         url: "https://www.norrsken22.com/team"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Smile Identity", ticker: null, stage: "Series B", year: 2023, yearPrecision: "year",
+      sector: "Fintech", subsector: "identity verification and KYC", role: "board",
+      evidence: [{ url: "https://www.prnewswire.com/news-releases/leading-african-identity-verification-platform-smile-identity-raises-20-million-in-series-b-funding-for-pan-african-expansion-301746266.html", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Lua", ticker: null, stage: "Seed", year: 2026, yearPrecision: "year",
+      sector: "AI", subsector: "AI agent management platform",
+      evidence: [{ url: "https://thecondia.com/lua-seed-funding-norrsken22-ai-agents/", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Flutterwave", ticker: null,
+      sector: "Fintech", orgAtTime: "acuity-venture-partners",
+      evidence: [{ url: "https://techcabal.com/2022/02/02/backing-africas-next-unicorns/", type: "press", checked: "2026-08-30" }] },
+    { name: "Mono", ticker: null,
+      sector: "Fintech", orgAtTime: "acuity-venture-partners",
+      evidence: [{ url: "https://techcabal.com/2022/02/02/backing-africas-next-unicorns/", type: "press", checked: "2026-08-30" }] },
+    { name: "mPharma", ticker: null,
+      sector: "Digital Health", orgAtTime: "acuity-venture-partners",
+      evidence: [{ url: "https://techcabal.com/2022/02/02/backing-africas-next-unicorns/", type: "press", checked: "2026-08-30" }] }
+  ]
   },
 "carter-reum": {
     name: "Carter Reum",
@@ -4497,7 +5060,24 @@ Object.assign(partnerProfiles, {
         label: "Tribe Capital - Team",
         url: "https://tribecap.co/team"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Polygon", ticker: null,
+      sector: "Crypto",
+      evidence: [{ url: "https://tribecap.co/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Avalanche", ticker: null,
+      sector: "Crypto",
+      evidence: [{ url: "https://tribecap.co/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Kraken", ticker: null,
+      sector: "Crypto",
+      evidence: [{ url: "https://tribecap.co/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Robinhood", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://tribecap.co/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Klarna", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://tribecap.co/team/", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "jonathan-hsu": {
     name: "Jonathan Hsu",
@@ -4557,7 +5137,18 @@ Object.assign(partnerProfiles, {
         label: "Tribe Capital - Team",
         url: "https://tribecap.co/team"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Slack", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://tribecap.co/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Trunk Club", ticker: null,
+      sector: "Ecommerce",
+      evidence: [{ url: "https://tribecap.co/team/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Saildrone", ticker: null,
+      sector: "Deep Tech",
+      evidence: [{ url: "https://tribecap.co/team/", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "ali-nahm": {
     name: "Ali Nahm",
@@ -4624,7 +5215,15 @@ Object.assign(partnerProfiles, {
         label: "Eclipse Ventures (Press Release)",
         url: "https://eclipse.capital/blog/welcome-aidan-madigan-curtis-and-jay-knafel"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Verkada", ticker: null, stage: "Series E", year: 2025, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "cloud-managed security systems",
+      evidence: [{ url: "https://www.verkada.com/blog/verkada-raises-200m-in-funding/", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Liberate", ticker: null, stage: "Seed", year: 2023, yearPrecision: "year",
+      sector: "Fintech", subsector: "P&C insurance claims and underwriting automation",
+      evidence: [{ url: "https://www.liberate.ai/news/liberate-innovations-inc-closes-7-million-in-funding", type: "deal-announcement", checked: "2026-08-30" }] }
+  ]
   },
 "charly-mwangi": {
     name: "Charly Mwangi",
@@ -4662,7 +5261,18 @@ Object.assign(partnerProfiles, {
         label: "Manufacturing Happy Hour Podcast",
         url: "https://manufacturinghappyhour.com/262-reimagining-manufacturing-how-a-return-to-first-principles-is-reshaping-factories-hard-tech-and-venture-capital-with-eclipse-ventures-charly-mwangi/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Vinci", ticker: null, stage: "Seed", year: 2025, yearPrecision: "year",
+      sector: "Deep Tech", subsector: "semiconductor design and simulation",
+      evidence: [{ url: "https://venturebeat.com/business/vinci-emerges-from-stealth-to-transform-semiconductor-design-and-simulation", type: "press", checked: "2026-08-30" }] },
+    { name: "Reframe Systems", ticker: null, stage: "Series A", year: 2025, yearPrecision: "year",
+      sector: "Robotics", subsector: "automated construction microfactories",
+      evidence: [{ url: "https://www.businesswire.com/news/home/20250826906847/en/Ex-Amazon-Robotics-Leaders-at-Reframe-Systems-Raise-$20M-to-Scale-Microfactories-to-Tackle-Americas-Housing-Crisis", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Genesis AI", ticker: null,
+      sector: "Robotics", subsector: "universal foundational model for robotics",
+      evidence: [{ url: "https://alven.co/genesis-ai-announces-105m-funding-to-develop-a-universal-foundational-model-for-robotics-and-a-horizontal-platform-for-robotics-focused-ai/", type: "firm-announcement", checked: "2026-08-30" }] }
+  ]
   },
 "allyson-johnson": {
     name: "Allyson Johnson",
@@ -4737,7 +5347,12 @@ Object.assign(partnerProfiles, {
         label: "StEP Ignite Fireside Chat",
         url: "https://stepignite.com/2020/09/24/life-sciences-partnership-claire-brown/2020/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Scripta Therapeutics", ticker: null, stage: "Seed", year: 2025, yearPrecision: "year",
+      sector: "Biotech", subsector: "neurodegenerative research", role: "board",
+      evidence: [{ url: "https://www.drugtargetreview.com/news/190682/scripta-therapeutics-raises-12m-to-advance-neurodegenerative-research/", type: "deal-announcement", checked: "2026-08-30" }] }
+  ]
   },
 "lilly-bussmann": {
     name: "Lilly Bussmann",
@@ -4772,7 +5387,15 @@ Object.assign(partnerProfiles, {
         label: "Oxford Science Enterprises - Lilly Bussmann",
         url: "https://www.oxfordscienceenterprises.com/who/lilly-bussmann"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Oxford Nanopore", ticker: null,
+      sector: "Biotech", orgAtTime: "rt-ventures",
+      evidence: [{ url: "https://www.oxfordscienceenterprises.com/who/lilly-bussman", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "E-Therapeutics", ticker: null,
+      sector: "Biotech", orgAtTime: "rt-ventures",
+      evidence: [{ url: "https://www.oxfordscienceenterprises.com/who/lilly-bussman", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "sanne-de-jongh": {
     name: "Sanne De Jongh",
@@ -4810,7 +5433,36 @@ Object.assign(partnerProfiles, {
         label: "Oxford Science Enterprises - Sanne De Jongh",
         url: "https://www.oxfordscienceenterprises.com/who/sanne-de-jongh"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Sitryx", ticker: null,
+      sector: "Biotech", role: "board",
+      evidence: [{ url: "https://www.sitryx.com/about/sanne-de-jongh", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Orfonyx Bio", ticker: null,
+      sector: "Biotech", role: "board",
+      evidence: [{ url: "https://www.sitryx.com/about/sanne-de-jongh", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Match Bio", ticker: null,
+      sector: "Biotech", role: "board",
+      evidence: [{ url: "https://www.sitryx.com/about/sanne-de-jongh", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Tagworks Pharmaceuticals", ticker: null,
+      sector: "Biotech", subsector: "European biotech", orgAtTime: "gilde-healthcare",
+      evidence: [{ url: "https://www.sitryx.com/about/sanne-de-jongh", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "ADCendo", ticker: null,
+      sector: "Biotech", subsector: "European biotech", orgAtTime: "gilde-healthcare",
+      evidence: [{ url: "https://www.sitryx.com/about/sanne-de-jongh", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Draupnir Bio", ticker: null,
+      sector: "Biotech", subsector: "European biotech", orgAtTime: "gilde-healthcare",
+      evidence: [{ url: "https://www.sitryx.com/about/sanne-de-jongh", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Calypso Biotech", ticker: null,
+      sector: "Biotech", subsector: "European biotech", orgAtTime: "gilde-healthcare",
+      evidence: [{ url: "https://www.sitryx.com/about/sanne-de-jongh", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Caribou Biosciences", ticker: null,
+      sector: "Biotech", orgAtTime: "anterra-capital",
+      evidence: [{ url: "https://www.sitryx.com/about/sanne-de-jongh", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Enko Chem", ticker: null,
+      sector: "Agtech", subsector: "Food and Ag Tech", orgAtTime: "anterra-capital",
+      evidence: [{ url: "https://www.sitryx.com/about/sanne-de-jongh", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "nick-dixon-clegg": {
     name: "Nick Dixon-Clegg",
@@ -4845,7 +5497,15 @@ Object.assign(partnerProfiles, {
         label: "Oxford Science Enterprises - Nick Dixon-Clegg",
         url: "https://www.oxfordscienceenterprises.com/who/nick-dixon-clegg"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "BibliU", ticker: null, stage: "Series B", year: 2022, yearPrecision: "year",
+      sector: "EdTech", subsector: "learning enablement platform",
+      evidence: [{ url: "https://www.globenewswire.com/news-release/2022/06/09/2459508/0/en/EdTech-Leader-BibliU-Raises-15M-in-Series-B-Funding.html", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Proxisense", ticker: null, year: 2023, yearPrecision: "year",
+      sector: "Deep Tech", subsector: "sensor technology",
+      evidence: [{ url: "https://proxisense.com/589-2/", type: "deal-announcement", checked: "2026-08-30" }] }
+  ]
   },
 "ben-sun": {
     name: "Ben Sun",
@@ -4878,7 +5538,36 @@ Object.assign(partnerProfiles, {
         label: "Forbes Profile – Ben Sun",
         url: "https://tollbit.forbes.com/profile/ben-sun/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Altis", ticker: null, year: 2025, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "the venture intelligence company",
+      evidence: [{ url: "https://www.primary.vc/team/ben-sun", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Chief", ticker: null, year: 2017, yearPrecision: "year",
+      sector: "Consumer", subsector: "private network for women leaders",
+      evidence: [{ url: "https://www.primary.vc/team/ben-sun", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Coupang", ticker: null, year: 2015, yearPrecision: "year",
+      sector: "Ecommerce", subsector: "South Korean ecommerce platform",
+      evidence: [{ url: "https://www.primary.vc/team/ben-sun", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Dandy", ticker: null, year: 2019, yearPrecision: "year",
+      sector: "Healthcare", subsector: "vertically integrated operating system for dentists",
+      evidence: [{ url: "https://www.primary.vc/team/ben-sun", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Firstleaf", ticker: null, year: 2015, yearPrecision: "year",
+      sector: "Consumer", subsector: "direct-to-consumer wine",
+      evidence: [{ url: "https://www.primary.vc/team/ben-sun", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Mirror", ticker: null, year: 2016, yearPrecision: "year",
+      sector: "Consumer", subsector: "the nearly invisible home gym",
+      evidence: [{ url: "https://www.primary.vc/team/ben-sun", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Ollie", ticker: null, year: 2015, yearPrecision: "year",
+      sector: "Consumer", subsector: "human grade fresh pet food brand",
+      evidence: [{ url: "https://www.primary.vc/team/ben-sun", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Slice", ticker: null, year: 2015, yearPrecision: "year",
+      sector: "Foodtech", subsector: "technology platform for the independent pizzeria market",
+      evidence: [{ url: "https://www.primary.vc/team/ben-sun", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Small Door", ticker: null, year: 2018, yearPrecision: "year",
+      sector: "Consumer", subsector: "modernizing medical care for pets",
+      evidence: [{ url: "https://www.primary.vc/team/ben-sun", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "brian-schechter": {
     name: "Brian Schechter",
@@ -4916,7 +5605,45 @@ Object.assign(partnerProfiles, {
         label: "Mesh (LinkedIn scrape) – Brian Schechter",
         url: "https://me.sh/profile/brian-schechter"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Ark", ticker: null, year: 2021, yearPrecision: "year",
+      sector: "Biotech", subsector: "predictive simulation software for bioprocessing in pharma",
+      evidence: [{ url: "https://www.primary.vc/team/brian-schechter", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Atero", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "AI", subsector: "maximizing GPU performance for AI workloads",
+      evidence: [{ url: "https://www.primary.vc/team/brian-schechter", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Cake AI", ticker: null, year: 2021, yearPrecision: "year",
+      sector: "AI", subsector: "the fastest path to production AI",
+      evidence: [{ url: "https://www.primary.vc/team/brian-schechter", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Etched", ticker: null, year: 2023, yearPrecision: "year",
+      sector: "AI", subsector: "a compute stack powering the fastest inference in the world",
+      evidence: [{ url: "https://www.primary.vc/team/brian-schechter", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Haiqu", ticker: null, year: 2025, yearPrecision: "year",
+      sector: "Deep Tech", subsector: "hardware-agnostic software to run commercially viable quantum applications",
+      evidence: [{ url: "https://www.primary.vc/team/brian-schechter", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "HumanX", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "AI", subsector: "AI conference for business leaders",
+      evidence: [{ url: "https://www.primary.vc/team/brian-schechter", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Jed Security", ticker: null, year: 2022, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "next generation attack surface management",
+      evidence: [{ url: "https://www.primary.vc/team/brian-schechter", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Plural", ticker: null, year: 2020, yearPrecision: "year",
+      sector: "Developer Tools & Infrastructure", subsector: "control plane for platform teams managing Kubernetes at scale",
+      evidence: [{ url: "https://www.primary.vc/team/brian-schechter", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Spark AI", ticker: null, year: 2021, yearPrecision: "year",
+      sector: "Robotics", subsector: "edge case resolution for robotics in the real world",
+      evidence: [{ url: "https://www.primary.vc/team/brian-schechter", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Tabs", ticker: null, year: 2023, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "the AI-native revenue platform for modern finance",
+      evidence: [{ url: "https://www.primary.vc/team/brian-schechter", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Teleskope", ticker: null, year: 2023, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "automated data protection, at scale",
+      evidence: [{ url: "https://www.primary.vc/team/brian-schechter", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "The Biological Computing Company", ticker: null, year: 2025, yearPrecision: "year",
+      sector: "Deep Tech", subsector: "biological, neuron-powered compute for optimizing AI models",
+      evidence: [{ url: "https://www.primary.vc/team/brian-schechter", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "cassie-young": {
     name: "Cassie Young",
@@ -4948,7 +5675,39 @@ Object.assign(partnerProfiles, {
         label: "Primary - Cassie Young",
         url: "https://www.primary.vc/team/cassie-young"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "1mind", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "scaling revenue teams with emotionally intelligent AI Superhumans",
+      evidence: [{ url: "https://www.primary.vc/team/cassie-young", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Alium", ticker: null, year: 2020, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "unfiltered buyer intelligence for tech decision-makers",
+      evidence: [{ url: "https://www.primary.vc/team/cassie-young", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Black Crow AI", ticker: null, year: 2021, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "predictive machine learning to maximize customer lifetime value",
+      evidence: [{ url: "https://www.primary.vc/team/cassie-young", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Bravely", ticker: null, year: 2017, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "scaling professional coaching for everyone in the workforce",
+      evidence: [{ url: "https://www.primary.vc/team/cassie-young", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Lantern", ticker: null, year: 2022, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "AI-driven revenue intelligence to increase net dollar retention",
+      evidence: [{ url: "https://www.primary.vc/team/cassie-young", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Lyric", ticker: null, year: 2023, yearPrecision: "year",
+      sector: "Logistics", subsector: "AI-first supply chain intelligence through composable modeling",
+      evidence: [{ url: "https://www.primary.vc/team/cassie-young", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Operator", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "intelligence platform helping sales teams break through the Great Ignore",
+      evidence: [{ url: "https://www.primary.vc/team/cassie-young", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Relay", ticker: null, year: 2022, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "a founder-friendly way for SaaS entrepreneurs to pass the baton",
+      evidence: [{ url: "https://www.primary.vc/team/cassie-young", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Wunderkind", ticker: null, year: 2015, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "one-to-one performance marketing at scale",
+      evidence: [{ url: "https://www.primary.vc/team/cassie-young", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Zenlytic", ticker: null, year: 2020, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "the AI Data Analyst for people who don't speak SQL",
+      evidence: [{ url: "https://www.primary.vc/team/cassie-young", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "emily-man": {
     name: "Emily Man",
@@ -4980,7 +5739,33 @@ Object.assign(partnerProfiles, {
         label: "Primary - Emily Man",
         url: "https://www.primary.vc/team/emily-man"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Alloy", ticker: null, year: 2015, yearPrecision: "year",
+      sector: "Fintech", subsector: "fairer finance, a million identity decisions at a time",
+      evidence: [{ url: "https://www.primary.vc/team/emily-man", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Altis", ticker: null, year: 2025, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "the venture intelligence company",
+      evidence: [{ url: "https://www.primary.vc/team/emily-man", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Casap", ticker: null, year: 2022, yearPrecision: "year",
+      sector: "Fintech", subsector: "an agentic platform for disputes, fraud, and payment operations",
+      evidence: [{ url: "https://www.primary.vc/team/emily-man", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Caspian", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "Enterprise Software", subsector: "AI-powered trade compliance and duty recovery",
+      evidence: [{ url: "https://www.primary.vc/team/emily-man", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Circuit & Chisel", ticker: null, year: 2025, yearPrecision: "year",
+      sector: "Fintech", subsector: "building the incentives layer for the agentic economy",
+      evidence: [{ url: "https://www.primary.vc/team/emily-man", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Fuse", ticker: null, year: 2021, yearPrecision: "year",
+      sector: "Fintech", subsector: "the loan origination system built for integration and customization",
+      evidence: [{ url: "https://www.primary.vc/team/emily-man", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Maybern", ticker: null, year: 2024, yearPrecision: "year",
+      sector: "Fintech", subsector: "the operating system for modern fund finance",
+      evidence: [{ url: "https://www.primary.vc/team/emily-man", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Vestwell", ticker: null, year: 2016, yearPrecision: "year",
+      sector: "Fintech", subsector: "revolutionizing modern-day workplace savings and investing programs",
+      evidence: [{ url: "https://www.primary.vc/team/emily-man", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "brian-murray": {
     name: "Brian Murray",
@@ -5012,7 +5797,25 @@ Object.assign(partnerProfiles, {
         label: "Craft Ventures - Brian Murray",
         url: "https://www.craftventures.com/team/brian-murray"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Pearl", ticker: null,
+      evidence: [{ url: "https://www.craftventures.com/team/brian-murray", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Allen Control Systems", ticker: null,
+      sector: "Defense Tech",
+      evidence: [{ url: "https://www.craftventures.com/team/brian-murray", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "BitGo", ticker: null,
+      sector: "Crypto",
+      evidence: [{ url: "https://www.craftventures.com/team/brian-murray", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Lightning Labs", ticker: null,
+      sector: "Crypto",
+      evidence: [{ url: "https://www.craftventures.com/team/brian-murray", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Quo", ticker: null,
+      evidence: [{ url: "https://www.craftventures.com/team/brian-murray", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Sourcegraph", ticker: null,
+      sector: "Developer Tools & Infrastructure",
+      evidence: [{ url: "https://www.craftventures.com/team/brian-murray", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "michael-robinson": {
     name: "Michael Robinson",
@@ -5051,7 +5854,57 @@ Object.assign(partnerProfiles, {
         label: "Craft Ventures - Michael Robinson",
         url: "https://www.craftventures.com/team/michael-robinson"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Anduril", ticker: null,
+      sector: "Defense Tech",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "ElevenLabs", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "ClickUp", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Horizon3.ai", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Neuralink", ticker: null,
+      sector: "Medical Devices",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Norm Ai", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Oasis Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "OpenEvidence", ticker: null,
+      sector: "Digital Health",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Onehouse", ticker: null,
+      sector: "Developer Tools & Infrastructure",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Replit", ticker: null,
+      sector: "Developer Tools & Infrastructure",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Saronic", ticker: null,
+      sector: "Defense Tech",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "SpaceX", ticker: null,
+      sector: "Space",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Supabase", ticker: null,
+      sector: "Developer Tools & Infrastructure",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Upwind", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "WorkOS", ticker: null,
+      sector: "Developer Tools & Infrastructure",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "NEO", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.craftventures.com/team/michael-robinson", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "kevin-gabura": {
     name: "Kevin Gabura",
@@ -5085,7 +5938,37 @@ Object.assign(partnerProfiles, {
         label: "Craft Ventures - Kevin Gabura",
         url: "https://www.craftventures.com/team/kevin-gabura"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Upwind Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.craftventures.com/team/kevin-gabura", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Horizon3.ai", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.craftventures.com/team/kevin-gabura", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Replit", ticker: null,
+      sector: "Developer Tools & Infrastructure",
+      evidence: [{ url: "https://www.craftventures.com/team/kevin-gabura", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Glean", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.craftventures.com/team/kevin-gabura", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Peregrine", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://www.craftventures.com/team/kevin-gabura", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Daylight Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.craftventures.com/team/kevin-gabura", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Oasis Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.craftventures.com/team/kevin-gabura", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Ent", ticker: null,
+      evidence: [{ url: "https://www.craftventures.com/team/kevin-gabura", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Jetstream", ticker: null,
+      evidence: [{ url: "https://www.craftventures.com/team/kevin-gabura", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "NEO", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.craftventures.com/team/kevin-gabura", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "mike-marg": {
     name: "Mike Marg",
@@ -5123,7 +6006,27 @@ Object.assign(partnerProfiles, {
         label: "Craft Ventures - Mike Marg",
         url: "https://www.craftventures.com/team/mike-marg"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "ElevenLabs", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.craftventures.com/team/mike-marg", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Glean", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.craftventures.com/team/mike-marg", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "CrewAI", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.craftventures.com/team/mike-marg", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Replit", ticker: null,
+      sector: "Developer Tools & Infrastructure",
+      evidence: [{ url: "https://www.craftventures.com/team/mike-marg", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "SentiLink", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://www.craftventures.com/team/mike-marg", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Fingerprint", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.craftventures.com/team/mike-marg", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "gustav-von-sydow": {
     name: "Gustav von Sydow",
@@ -5188,7 +6091,19 @@ Object.assign(partnerProfiles, {
         label: "EQT Group - Kaushik Subramanian",
         url: "https://eqtgroup.com/about/people/kaushik-subramanian"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Stacks.ai", ticker: null, stage: "Seed", year: 2025, yearPrecision: "year",
+      sector: "Fintech", subsector: "AI for the financial close",
+      evidence: [{ url: "https://eqtgroup.com/about/people/kaushik-subramanian", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://fintech.global/2025/02/19/fintech-firm-stacks-lands-10m-to-transform-financial-close-with-ai/", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Payrails", ticker: null,
+      sector: "Fintech", subsector: "payments infrastructure",
+      evidence: [{ url: "https://eqtgroup.com/about/people/kaushik-subramanian", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Paid.ai", ticker: null,
+      sector: "Fintech", subsector: "monetization and billing for AI agents",
+      evidence: [{ url: "https://eqtgroup.com/about/people/kaushik-subramanian", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "rania-belkahia": {
     name: "Rania Belkahia",
@@ -5217,7 +6132,15 @@ Object.assign(partnerProfiles, {
         label: "EQT Group - Rania Belkahia",
         url: "https://eqtgroup.com/about/people/rania-belkahia"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Luko", ticker: null, stage: "Series B", year: 2020, yearPrecision: "year",
+      sector: "Fintech", subsector: "home insurance",
+      evidence: [{ url: "https://medium.com/eqtventures/on-eqt-ventures-investment-in-luko-building-the-european-home-insurance-leader-d6ac6ca580e8", type: "firm-announcement", checked: "2026-08-30" }] },
+    { name: "Packmatic", ticker: null, stage: "Series A", year: 2024, yearPrecision: "year",
+      sector: "Logistics", subsector: "B2B digital packaging marketplace",
+      evidence: [{ url: "https://www.eu-startups.com/2024/01/berlin-based-packmatic-lands-e15-million-to-scale-its-b2b-digital-packaging-platform-across-europe/", type: "deal-announcement", checked: "2026-08-30" }] }
+  ]
   },
 "sandra-malmberg": {
     name: "Sandra Malmberg",
@@ -5241,7 +6164,31 @@ Object.assign(partnerProfiles, {
         label: "EQT Group - Sandra Malmberg",
         url: "https://eqtgroup.com/about/people/sandra-malmberg"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Sana", ticker: null,
+      sector: "EdTech", subsector: "AI for learning and upskilling",
+      evidence: [{ url: "https://eqtventures.com/team/sandra-malmberg", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://eqtgroup.com/about/people/sandra-malmberg", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Nothing", ticker: null,
+      sector: "Hardware", subsector: "consumer technology bridging technology and people",
+      evidence: [{ url: "https://eqtventures.com/team/sandra-malmberg", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "evroc", ticker: null,
+      sector: "Developer Tools & Infrastructure", subsector: "European cloud infrastructure",
+      evidence: [{ url: "https://eqtventures.com/team/sandra-malmberg", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Hume", ticker: null,
+      sector: "AI", subsector: "making AI more human",
+      evidence: [{ url: "https://eqtventures.com/team/sandra-malmberg", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Generative Engineering", ticker: null,
+      sector: "Industrial & Manufacturing Technology", subsector: "AI enabled industrial design",
+      evidence: [{ url: "https://eqtventures.com/team/sandra-malmberg", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "1x", ticker: null,
+      sector: "Robotics", subsector: "humanoid robots for the home",
+      evidence: [{ url: "https://eqtgroup.com/about/people/sandra-malmberg", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Vsim", ticker: null,
+      sector: "Deep Tech", subsector: "physics simulation platform",
+      evidence: [{ url: "https://eqtgroup.com/about/people/sandra-malmberg", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "hisham-elhaddad": {
     name: "Hisham Elhaddad",
@@ -5516,7 +6463,27 @@ Object.assign(partnerProfiles, {
         label: "Cyberstarts - Lior Simon",
         url: "https://www.cyberstarts.com/team/lior-simon"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Cyera", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://www.cyberstarts.com/team/lior-simon", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Oasis", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://www.cyberstarts.com/team/lior-simon", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Zafran", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://www.cyberstarts.com/team/lior-simon", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Wiz", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.cyberstarts.com/team/lior-simon", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Island", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.cyberstarts.com/team/lior-simon", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Fireblocks", ticker: null,
+      sector: "Crypto",
+      evidence: [{ url: "https://www.cyberstarts.com/team/lior-simon", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "hila-zigman": {
     name: "Hila Zigman",
@@ -5583,7 +6550,30 @@ Object.assign(partnerProfiles, {
         label: "Cyberstarts - Adam Aarons",
         url: "https://www.cyberstarts.com/team/adam-aarons"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "BigPanda", ticker: null,
+      sector: "Enterprise Software", orgAtTime: "angel",
+      evidence: [{ url: "https://www.cyberstarts.com/team/adam-aarons", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Veza", ticker: null,
+      sector: "Cybersecurity", orgAtTime: "angel",
+      evidence: [{ url: "https://www.cyberstarts.com/team/adam-aarons", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Clari", ticker: null,
+      sector: "Enterprise Software", orgAtTime: "angel",
+      evidence: [{ url: "https://www.cyberstarts.com/team/adam-aarons", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "GoFundMe", ticker: null,
+      sector: "Consumer", orgAtTime: "angel",
+      evidence: [{ url: "https://www.cyberstarts.com/team/adam-aarons", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "AttackIQ", ticker: null,
+      sector: "Cybersecurity", orgAtTime: "angel",
+      evidence: [{ url: "https://www.cyberstarts.com/team/adam-aarons", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "CloudZero", ticker: null,
+      sector: "Enterprise Software", orgAtTime: "angel",
+      evidence: [{ url: "https://www.cyberstarts.com/team/adam-aarons", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Linx Security", ticker: null,
+      sector: "Cybersecurity", orgAtTime: "angel",
+      evidence: [{ url: "https://www.cyberstarts.com/team/adam-aarons", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "angela-hayward": {
     name: "Angela Hayward",
@@ -5701,7 +6691,45 @@ Object.assign(partnerProfiles, {
         label: "Global Corporate Venturing (LinkedIn) - Alan Du Announcement",
         url: "https://www.linkedin.com/posts/alan-du_investmentpartner-paypalventures-activity-xxxx"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Cart.com", ticker: null,
+      sector: "Ecommerce",
+      evidence: [{ url: "https://m12.vc/team/alan-du/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Deep Instinct", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://m12.vc/team/alan-du/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Kite AI", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://m12.vc/team/alan-du/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Magic", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://m12.vc/team/alan-du/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "MineOS", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://m12.vc/team/alan-du/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Prime Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://m12.vc/team/alan-du/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Rasa", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://m12.vc/team/alan-du/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "SafeBreach", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://m12.vc/team/alan-du/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Seal Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://m12.vc/team/alan-du/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Skipify", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://m12.vc/team/alan-du/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Thoropass", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://m12.vc/team/alan-du/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "TrueML", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://m12.vc/team/alan-du/", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "todd-graham": {
     name: "Todd Graham",
@@ -5951,7 +6979,48 @@ Object.assign(partnerProfiles, {
         label: "Gradient - Darian Shirazi",
         url: "https://www.gradient.com/team/darian-shirazi/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Writer", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Krea", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Range", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Oura", ticker: null,
+      sector: "Digital Health", subsector: "wearables",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Gigs", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Mastra", ticker: null,
+      sector: "AI", subsector: "agent framework",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Linkup", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Infisical", ticker: null,
+      sector: "Developer Tools & Infrastructure", subsector: "secrets management",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Legora", ticker: null,
+      sector: "Legal Tech", orgAtTime: "angel",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Udemy", ticker: null,
+      sector: "EdTech", orgAtTime: "angel",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Palantir", ticker: null,
+      sector: "Enterprise Software", orgAtTime: "angel",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Casetext", ticker: null,
+      sector: "Legal Tech", orgAtTime: "angel",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "OpenGov", ticker: null,
+      sector: "Enterprise Software", orgAtTime: "angel",
+      evidence: [{ url: "https://www.gradient.com/team/darian-shirazi/", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "zach-bratun-glennon": {
     name: "Zach Bratun-Glennon",
@@ -5988,7 +7057,42 @@ Object.assign(partnerProfiles, {
         label: "Gradient - Zach Bratun-Glennon",
         url: "https://www.gradient.com/team/zach-bratun-glennon/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Lambda", ticker: null,
+      sector: "AI", subsector: "GPU cloud",
+      evidence: [{ url: "https://www.gradient.com/team/zach-bratun-glennon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Openly", ticker: null,
+      sector: "Fintech", subsector: "insurance",
+      evidence: [{ url: "https://www.gradient.com/team/zach-bratun-glennon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "CentML", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.gradient.com/team/zach-bratun-glennon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Rad AI", ticker: null,
+      sector: "AI", subsector: "radiology",
+      evidence: [{ url: "https://www.gradient.com/team/zach-bratun-glennon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Clarify", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.gradient.com/team/zach-bratun-glennon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Stack AI", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.gradient.com/team/zach-bratun-glennon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Toku", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://www.gradient.com/team/zach-bratun-glennon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Nango", ticker: null,
+      sector: "Developer Tools & Infrastructure", subsector: "API integrations",
+      evidence: [{ url: "https://www.gradient.com/team/zach-bratun-glennon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Syrup", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.gradient.com/team/zach-bratun-glennon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Spade", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://www.gradient.com/team/zach-bratun-glennon/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Credible Data", ticker: null,
+      sector: "AI", subsector: "data science",
+      evidence: [{ url: "https://www.gradient.com/team/zach-bratun-glennon/", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "andrew-brackin": {
     name: "Andrew Brackin",
@@ -6020,7 +7124,21 @@ Object.assign(partnerProfiles, {
         label: "Gradient - Andrew Brackin",
         url: "https://www.gradient.com/team/andrew-brackin/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Enzo Health", ticker: null,
+      sector: "AI", subsector: "the system of action for home health",
+      evidence: [{ url: "https://www.gradient.com/team/andrew-brackin/", type: "firm-announcement", checked: "2026-08-30" }] },
+    { name: "Vera Health", ticker: null,
+      sector: "AI", subsector: "the clinical intelligence layer for medicine",
+      evidence: [{ url: "https://www.gradient.com/team/andrew-brackin/", type: "firm-announcement", checked: "2026-08-30" }] },
+    { name: "Paladin", ticker: null,
+      sector: "AI", subsector: "AI for emergency response",
+      evidence: [{ url: "https://www.gradient.com/team/andrew-brackin/", type: "firm-announcement", checked: "2026-08-30" }] },
+    { name: "Forge", ticker: null,
+      sector: "AI", subsector: "AI-powered procurement for hardware companies",
+      evidence: [{ url: "https://www.gradient.com/team/andrew-brackin/", type: "firm-announcement", checked: "2026-08-30" }] }
+  ]
   },
 "clayton-petty": {
     name: "Clayton Petty",
@@ -6055,7 +7173,21 @@ Object.assign(partnerProfiles, {
         label: "Gradient - Clayton Petty",
         url: "https://www.gradient.com/team/clayton-petty/"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "BackOps", ticker: null,
+      sector: "AI", subsector: "the intelligence layer warehouse operators deserve",
+      evidence: [{ url: "https://www.gradient.com/team/clayton-petty/", type: "firm-announcement", checked: "2026-08-30" }] },
+    { name: "Quantro", ticker: null,
+      sector: "AI", subsector: "AI-native cyber defense",
+      evidence: [{ url: "https://www.gradient.com/team/clayton-petty/", type: "firm-announcement", checked: "2026-08-30" }] },
+    { name: "Stack AI", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.gradient.com/team/clayton-petty/", type: "firm-announcement", checked: "2026-08-30" }] },
+    { name: "Infisical", ticker: null,
+      sector: "Developer Tools & Infrastructure",
+      evidence: [{ url: "https://www.gradient.com/team/clayton-petty/", type: "firm-announcement", checked: "2026-08-30" }] }
+  ]
   },
 "brian-smith": {
     name: "Brian Smith",
@@ -6331,7 +7463,48 @@ Object.assign(partnerProfiles, {
         label: "Acrew - Lauren Kolodny",
         url: "https://www.acrewcapital.com/team#lauren-kolodny"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Chime", ticker: null,
+      sector: "Fintech", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://aspectventures.com/profiles/lauren-kolodny/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://www.acrewcapital.com/team-members/lauren-kolodny", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Gusto", ticker: null,
+      sector: "Fintech", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://aspectventures.com/profiles/lauren-kolodny/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://www.acrewcapital.com/team-members/lauren-kolodny", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Pie", ticker: null,
+      sector: "Fintech", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://aspectventures.com/profiles/lauren-kolodny/", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://www.acrewcapital.com/team-members/lauren-kolodny", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Clara", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/lauren-kolodny", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Divvy", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/lauren-kolodny", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Klar", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/lauren-kolodny", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Papaya", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/lauren-kolodny", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Plaid", ticker: null,
+      sector: "Fintech",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/lauren-kolodny", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Future Family", ticker: null,
+      sector: "Fintech", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://aspectventures.com/profiles/lauren-kolodny/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "EvidentID", ticker: null,
+      sector: "Cybersecurity", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://aspectventures.com/profiles/lauren-kolodny/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Tara.ai", ticker: null,
+      sector: "Enterprise Software", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://aspectventures.com/profiles/lauren-kolodny/", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "TalkIQ", ticker: null,
+      sector: "AI", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://aspectventures.com/profiles/lauren-kolodny/", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "asad-khaliq": {
     name: "Asad Khaliq",
@@ -6366,7 +7539,52 @@ Object.assign(partnerProfiles, {
         label: "Acrew - Asad Khaliq",
         url: "https://www.acrewcapital.com/team#asad-khaliq"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "System", ticker: null,
+      sector: "Enterprise Software",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Edge Impulse", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Vanta", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Aira", ticker: null,
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Bazaar", ticker: null,
+      sector: "Ecommerce",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Grain", ticker: null,
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Arthur AI", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Observable", ticker: null,
+      sector: "Developer Tools & Infrastructure",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Ketch", ticker: null,
+      sector: "Cybersecurity", subsector: "security & privacy",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "CipherTrace", ticker: null,
+      sector: "Crypto", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Coinbase", ticker: null,
+      sector: "Crypto", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "SKALE", ticker: null,
+      sector: "Crypto", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Silverfort", ticker: null,
+      sector: "Cybersecurity", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Gusto", ticker: null,
+      sector: "Fintech", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Writer", ticker: null,
+      sector: "AI", orgAtTime: "aspect-ventures",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/asad-khaliq", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "mark-kraynak": {
     name: "Mark Kraynak",
@@ -6396,7 +7614,48 @@ Object.assign(partnerProfiles, {
         label: "Acrew - Mark Kraynak",
         url: "https://www.acrewcapital.com/team#mark-kraynak"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Aembit", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "At-Bay", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Casa", ticker: null,
+      sector: "Crypto",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Moderne", ticker: null,
+      sector: "Developer Tools & Infrastructure",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Nextdata", ticker: null,
+      sector: "Developer Tools & Infrastructure",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Nokod Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Protect AI", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Radiant Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Silverfort", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Aqua Security", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Cato Networks", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Exabeam", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Vanta", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://www.acrewcapital.com/team-members/mark-kraynak", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "aliisa-rosenthal": {
     name: "Aliisa Rosenthal",
@@ -6455,7 +7714,65 @@ Object.assign(partnerProfiles, {
         label: "Congruent - Abe Yokell",
         url: "https://www.congruentvc.com/team/abe-yokell"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "AMP Sortation", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Camus Energy", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Demex", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Dispatch Goods", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Enerflo", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Evergrow", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Hippo Harvest", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Lightship", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Omnidian", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Optimoroute", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Pano.AI", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Raptor Maps", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Span.IO", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Synop", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Vector", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Enphase Energy", ticker: null,
+      sector: "Climate & Energy", subsector: "solar", orgAtTime: "rockport-capital",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" },
+                  { url: "https://www.pehub.com/rockport-capital-promotes-three/", type: "press", checked: "2026-08-30" },
+                  { url: "https://investor.enphase.com/static-files/461f4c14-0f5f-44a2-889a-e389605ddc96", type: "deal-announcement", checked: "2026-08-30" }] },
+    { name: "Amply Power", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Blueprint Power", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/abe-yokell", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "tanuj-dutta": {
     name: "Tanuj Dutta",
@@ -6489,7 +7806,45 @@ Object.assign(partnerProfiles, {
         label: "Congruent - Tanuj Dutta",
         url: "https://www.congruentvc.com/team/tanuj-dutta"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "AMP Sortation", ticker: null,
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.congruentvc.com/team/tanuj-dutta", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Firstelement Exploration", ticker: null,
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.congruentvc.com/team/tanuj-dutta", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Halcyon", ticker: null,
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.congruentvc.com/team/tanuj-dutta", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Span.IO", ticker: null,
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.congruentvc.com/team/tanuj-dutta", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "STOR Preservation Systems", ticker: null,
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.congruentvc.com/team/tanuj-dutta", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Fervo Energy", ticker: null,
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.congruentvc.com/team/tanuj-dutta", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Enerflo", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/tanuj-dutta", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Hippo Harvest", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/tanuj-dutta", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Muon Space", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/tanuj-dutta", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Omnidian", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/tanuj-dutta", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Parallel Systems", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/tanuj-dutta", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Pano.AI", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/tanuj-dutta", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "kevin-kopczynski": {
     name: "Kevin Kopczynski",
@@ -6522,7 +7877,16 @@ Object.assign(partnerProfiles, {
         label: "Congruent - Kevin Kopczynski",
         url: "https://www.congruentvc.com/team/kevin-kopczynski"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Ascension Industries", ticker: null,
+      sector: "Industrial & Manufacturing Technology", subsector: "manufacturer for the industrial and energy markets", role: "board", orgAtTime: "rockport-capital",
+      evidence: [{ url: "https://engineering.princeton.edu/?p=2926", type: "press", checked: "2026-08-30" }] },
+    { name: "Enki Technologies", ticker: null,
+      sector: "Climate & Energy", subsector: "glass coating for solar modules", role: "board", orgAtTime: "rockport-capital",
+      evidence: [{ url: "https://engineering.princeton.edu/?p=2926", type: "press", checked: "2026-08-30" },
+                  { url: "https://www.congruentvc.com/team/kevin-kopczynski", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "eliza-cushman": {
     name: "Eliza Cushman",
@@ -6555,7 +7919,27 @@ Object.assign(partnerProfiles, {
         label: "Congruent - Eliza Cushman",
         url: "https://www.congruentvc.com/team/eliza-cushman"
       }
-    ]
+    ],
+    notableInvestments: [
+    { name: "Ezra Climate", ticker: null,
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.congruentvc.com/team/eliza-cushman", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "AMP Sortation", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/eliza-cushman", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Dispatch Goods", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/eliza-cushman", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "First Street", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/eliza-cushman", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Muon Space", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/eliza-cushman", type: "partner-bio", checked: "2026-08-30" }] },
+    { name: "Parallel Systems", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.congruentvc.com/team/eliza-cushman", type: "partner-bio", checked: "2026-08-30" }] }
+  ]
   },
 "curtis-spencer": {
     name: "Curtis Spencer",
@@ -9577,825 +10961,5 @@ Object.assign(partnerProfiles, {
     careerTimeline: [],
     biography: "Jim Lobdell is a Venture Partner at Reach Capital. He graduated from Stanford University, where he twice played on NCAA championship water polo teams, and began his career as a public high school teacher. He co-founded Teachers' Curriculum Institute, which he ran for 16 years and which created the History Alive! curriculum, and later founded two more education startups. At Reach he concentrates on learning, with a portfolio of roughly 14 companies spanning edtech, teacher professional development and student wellbeing, including Desmos, Curipod, TeachFX and BookNook.",
     sources: [{ label: "Reach Capital - Jim Lobdell", url: "https://www.reachcapital.com/team/jim-lobdell/" }]
-  },
-"jomayra-herrera": {
-    name: "Jomayra Herrera",
-    firm: "Reach Capital",
-    firmSlug: "reach-capital",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Digital Health", "Workforce Development"],
-    education: ["B.A. in Political Science, Stanford University", "M.A. in Education, Stanford University"],
-    previousExperience: ["Investor, Cowboy Ventures", "Investor, Emerson Collective", "Product, BloomBoard"],
-    boardSeats: ["SomosVC"],
-    notableInvestments: [{ name: "Stepful", ticker: null }, { name: "WorkWhile", ticker: null }, { name: "Guild", ticker: null }, { name: "Handshake", ticker: null }, { name: "Contra", ticker: null }, { name: "Cartwheel", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Jomayra Herrera is a Partner at Reach Capital, where she focuses on healthcare and the future of work. She holds a B.A. in Political Science and an M.A. in Education, both from Stanford University. Her operating experience came at the edtech company BloomBoard, where she worked across marketing, customer success and product, and she invested at Emerson Collective and Cowboy Ventures before Reach. Her investments include Stepful, WorkWhile, Guild, Handshake and Contra, with a current portfolio spanning health and work companies. She serves on the board of SomosVC, which builds pathways for Latino and Latina investors in venture capital.",
-    sources: [{ label: "Reach Capital - Jomayra Herrera", url: "https://www.reachcapital.com/team/jomayra-herrera/" }]
-  },
-"shauntel-garvey": {
-    name: "Shauntel Garvey",
-    firm: "Reach Capital",
-    firmSlug: "reach-capital",
-    title: "Co-Founder Emeritus",
-    joinedYear: 2015,
-    investmentFocus: ["Edtech", "Digital Health"],
-    education: ["Chemical Engineering, MIT", "MBA, Stanford University", "MA in Education, Stanford University"],
-    previousExperience: ["Investor, NewSchools Venture Fund"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2015, event: "Co-founded Reach Capital" }],
-    biography: "Shauntel Garvey is listed on Reach Capital's team page as Co-Founder Emeritus. She studied chemical engineering at MIT and holds an MBA and an MA in Education from Stanford University. She worked with the other Reach founders at NewSchools Venture Fund before the group spun out to found Reach Capital in 2015. During her tenure she led investments in founders building tools that help people learn, grow and lead healthy lives. Reach Capital does not publish an individual investment list, board seats or a departure date for her.",
-    sources: [{ label: "Reach Capital - Shauntel Garvey", url: "https://www.reachcapital.com/team/shauntel-garvey/" }]
-  },
-"steve-kupfer": {
-    name: "Steve Kupfer",
-    firm: "Reach Capital",
-    firmSlug: "reach-capital",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Edtech", "Digital Health"],
-    education: [],
-    previousExperience: ["Operating Partner, The Vistria Group"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Presence", ticker: null }, { name: "Ellevation", ticker: null }, { name: "Paper", ticker: null }, { name: "Goalbook", ticker: null }, { name: "MagicSchool", ticker: null }, { name: "InquirED", ticker: null }, { name: "Marker Learning", ticker: null }, { name: "Swing Education", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Steve Kupfer is a Partner at Reach Capital working across education, health and policy. Early in his career he led software implementations in urban school districts, including the first digital special education platform in post-Katrina New Orleans, and he spent several years recruiting and training school superintendents. He made early investments in Presence, Ellevation, Paper and Goalbook. Before Reach he was an operating partner on the Knowledge and Learning team at The Vistria Group. His Reach portfolio includes InquirED, MagicSchool, Marker Learning, Cartwheel and Swing Education. Reach Capital does not publish his degrees or board seats.",
-    sources: [{ label: "Reach Capital - Steve Kupfer", url: "https://www.reachcapital.com/team/steve-kupfer/" }]
-  },
-"wayee-chu": {
-    name: "Wayee Chu",
-    firm: "Reach Capital",
-    firmSlug: "reach-capital",
-    title: "Co-Founder & Partner",
-    joinedYear: 2015,
-    investmentFocus: ["Edtech", "Workforce Development"],
-    education: [],
-    previousExperience: ["Investor, NewSchools Venture Fund"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Handshake", ticker: null }, { name: "Replit", ticker: null }, { name: "Gradescope", ticker: null }, { name: "Swing Education", ticker: null }, { name: "Campus", ticker: null }, { name: "Kaymbu", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2005, event: "Joined NewSchools Venture Fund in California" }, { year: 2015, event: "Co-founded Reach Capital" }],
-    biography: "Wayee Chu is a co-founder and Partner at Reach Capital. She was born in Queens, New York and raised in Connecticut by Chinese immigrant parents, an upbringing her bio ties to her commitment to closing the achievement gap in education. In 2005 she joined NewSchools Venture Fund in California, where she worked alongside Jennifer Carolan, Shauntel Garvey and Esteban Sosnik before the group co-founded Reach Capital in 2015. Her investments include Handshake, Replit, Swing Education, Campus and Kaymbu, and she was an investor in Gradescope, which exited to Turnitin. Reach Capital does not publish her education history or board seats.",
-    sources: [{ label: "Reach Capital - Wayee Chu", url: "https://www.reachcapital.com/team/wayee-chu/" }]
-  },
-"evan-cohen-human-ventures": {
-    name: "Evan Cohen",
-    firm: "Human Ventures",
-    firmSlug: "human-ventures",
-    title: "Operating Partner",
-    joinedYear: 2020,
-    investmentFocus: [],
-    education: [],
-    previousExperience: ["Director of East Coast Operations, Lyft", "Chief Operating Officer, Foursquare", "General Manager, Foursquare", "Vice President, Bebo"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2010, event: "Joined Foursquare as General Manager" }, { year: 2015, event: "Joined Lyft as director of East Coast operations" }, { year: 2020, event: "Joined Human Ventures as Venture Partner and launched the Humans in the Wild program" }],
-    biography: "Evan Cohen is listed as an Operating Partner at Human Ventures. Human Ventures announced his arrival in January 2020 as a Venture Partner, citing more than 20 years working with technology and media companies on business and product strategy, team building, operations and fundraising. TechCrunch reported that he joined Foursquare as general manager in January 2010 after serving as a vice president at Bebo, later becoming Foursquare's chief operating officer, and that he joined Lyft in December 2015 as director of East Coast operations. At Human Ventures he launched the Humans in the Wild program for experienced entrepreneurs. His education and individual investments are not published by the firm.",
-    sources: [{ label: "Human Ventures - Our Team", url: "https://human.vc/our-team/" }, { label: "TechCrunch - Former Foursquare COO Evan Cohen joins Lyft", url: "https://techcrunch.com/2015/12/16/former-foursquare-coo-evan-cohen-checks-into-lyft-as-new-director-of-east-coast-operations/" }]
-  },
-"heather-hartnett": {
-    name: "Heather Hartnett",
-    firm: "Human Ventures",
-    firmSlug: "human-ventures",
-    title: "General Partner, CEO",
-    joinedYear: 2015,
-    investmentFocus: ["Digital Health", "Consumer", "AI"],
-    education: ["BA in Economics and Business Management, Maharishi University of Management"],
-    previousExperience: [],
-    boardSeats: ["David Lynch Foundation"],
-    notableInvestments: [{ name: "Reserve", ticker: null }, { name: "Current", ticker: null }, { name: "theSkimm", ticker: null }, { name: "Tiny Organics", ticker: null }, { name: "The Muse", ticker: null }, { name: "Girlboss", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2015, event: "Co-founded Human Ventures and became CEO" }, { year: 2019, event: "Human Ventures closed a $50 million debut fund" }],
-    biography: "Heather Hartnett is General Partner and CEO of Human Ventures, the New York startup studio and early-stage venture firm she co-founded with Joe Marchese in 2015. She holds a BA in Economics and Business Management from Maharishi University of Management and a certificate in fundraising and development from New York University. Fast Company reported in February 2019 that the firm closed a $50 million debut fund under her leadership. Her investments and portfolio associations include Reserve, Current, theSkimm, Tiny Organics, The Muse and Girlboss. She is a Kauffman Fellow and a founding board member of the David Lynch Foundation.",
-    sources: [{ label: "Human Ventures - Our Team", url: "https://human.vc/our-team/" }, { label: "Fast Company - Human Ventures $50M debut fund", url: "https://www.fastcompany.com/90311721/exclusive-human-ventures-elevates-its-woman-led-startup-studio-with-a-50-million-debut-fund" }]
-  },
-"jesse-morris-human-ventures": {
-    name: "Jesse Morris",
-    firm: "Human Ventures",
-    firmSlug: "human-ventures",
-    title: "General Partner",
-    joinedYear: 2019,
-    investmentFocus: ["Healthcare", "Consumer"],
-    education: [],
-    previousExperience: ["Founder, Very"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Spora Health", ticker: null }, { name: "Kingdom Supercultures", ticker: null }, { name: "Upstream", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2012, event: "Founded Very, which helped non-technical founders launch software businesses" }, { year: 2019, event: "Joined Human Ventures" }],
-    biography: "Jesse Morris is listed as a General Partner on Human Ventures' team page. He founded Very in 2012, a company that helped non-technical founders launch software businesses, and held an operating role there until 2018 before moving into investing. He joined Human Ventures in 2019. His investments include Spora Health, Kingdom Supercultures and Upstream, and he looks for founders with technical depth or another deeply differentiated skill. He is also an autism advocate who works with families and founders in that space. Human Ventures does not publish his education.",
-    sources: [{ label: "Human Ventures - Our Team", url: "https://human.vc/our-team/" }, { label: "NYC Founder Guide - Jesse Morris", url: "https://www.nycfounderguide.com/profile/jesse-morris" }]
-  },
-"joe-marchese": {
-    name: "Joe Marchese",
-    firm: "Human Ventures",
-    firmSlug: "human-ventures",
-    title: "Executive Chairman",
-    joinedYear: 2015,
-    investmentFocus: ["Media", "Consumer"],
-    education: [],
-    previousExperience: ["Founder and CEO, true[X]", "President of Advertising Revenue, Fox Networks Group"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2014, event: "Sold true[X] to Fox, reported at $200 million" }, { year: 2015, event: "Co-founded Human Ventures with Heather Hartnett" }, { year: 2019, event: "Returned to Human Ventures full time as entrepreneur-in-residence after leaving Fox" }],
-    biography: "Joe Marchese is Executive Chairman of Human Ventures, which he co-founded with Heather Hartnett and announced in March 2015. He founded the advertising technology company true[X], which MediaPost reported was sold to Fox for $200 million in 2014. He then served as president of advertising revenue for Fox Networks Group before returning to entrepreneurship. MediaPost reported in May 2019 that he had rejoined Human Ventures as entrepreneur-in-residence. His education and individual investment attributions are not published on Human Ventures' own site.",
-    sources: [{ label: "Human Ventures - Our Team", url: "https://human.vc/our-team/" }, { label: "MediaPost - Former Fox Ad Chief Marchese Returns To Entrepreneurism", url: "https://www.mediapost.com/publications/article/336424/former-fox-ad-chief-marchese-returns-to-entreprene.html" }]
-  },
-"michael-letta": {
-    name: "Michael Letta",
-    firm: "Human Ventures",
-    firmSlug: "human-ventures",
-    title: "General Partner, COO",
-    joinedYear: null,
-    investmentFocus: [],
-    education: ["BS/BA, The Ohio State University"],
-    previousExperience: ["Chief Financial Officer, charity: water"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Michael Letta is General Partner and Chief Operating Officer of Human Ventures, where he oversees the firm's financial and operational functions. He holds a BS/BA from The Ohio State University and is a Certified Public Accountant. He was previously chief financial officer at charity: water, where his Forbes Business Council profile says he helped scale the organization from an NYC startup to a global operation. Earlier in his career he held roles at Thomson Media and Deloitte. In 2020 he co-launched Human Ventures' Humans in the Wild entrepreneur-in-residence program. His joining year and personal investment list are not published on Human Ventures' own site.",
-    sources: [{ label: "Human Ventures - Our Team", url: "https://human.vc/our-team/" }, { label: "Forbes Business Council - Michael Letta", url: "https://councils.forbes.com/profile/Michael-Letta-General-Partner-COO-Human-Ventures-Co/d5f3949b-5d04-43c7-8fee-9e389102795b" }]
-  },
-"aike-ho": {
-    name: "Aike Ho",
-    firm: "ACME Capital",
-    firmSlug: "acme-capital",
-    title: "Partner",
-    joinedYear: 2017,
-    investmentFocus: ["Healthcare", "Biotech", "Robotics", "Consumer"],
-    education: ["Yale University"],
-    previousExperience: [],
-    boardSeats: ["Conceivable Life Sciences", "Arya Health", "Camber", "Brightside"],
-    notableInvestments: [{ name: "Arya Health", ticker: null }, { name: "Brightside", ticker: null }, { name: "Camber", ticker: null }, { name: "Canopy", ticker: null }, { name: "Conceivable Life Sciences", ticker: null }, { name: "Partiful", ticker: null }, { name: "Tia", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2017, event: "Joined ACME Capital" }, { year: 2022, event: "Promoted to Partner at ACME Capital" }],
-    biography: "Aike Ho is a Partner at ACME Capital, where she focuses on frontier health investments. She invests in the physical layer of biology, where robotics, synthetic biology and engineering intersect. Her career in healthcare was motivated by personal experience after she battled cancer in her mid-20s and set out to change the healthcare ecosystem. She also studies consumer behaviour and occasionally backs consumer companies such as Partiful. She joined ACME in 2017, was promoted to Partner in 2022, graduated from Yale University, and sits on the boards of Conceivable Life Sciences, Arya Health, Camber and Brightside. She lives in New York, and her daughter was the first American baby born using Conceivable's robotic IVF technology.",
-    sources: [{ label: "ACME Capital team profile", url: "https://www.acme.vc/team/aike-ho" }, { label: "ACME Capital Closes Over $300 Million (Business Wire, 4 Feb 2022)", url: "https://www.businesswire.com/news/home/20220204005038/en/ACME-Capital-Closes-Over-%24300-Million-for-its-Latest-Venture-Funds-and-Expands-Partnership" }]
-  },
-"alex-fayette": {
-    name: "Alex Fayette",
-    firm: "ACME Capital",
-    firmSlug: "acme-capital",
-    title: "Partner",
-    joinedYear: 2016,
-    investmentFocus: ["Aerospace", "Defense", "Semiconductors", "Energy", "Deep Tech"],
-    education: ["B.A. Economics, Yale University"],
-    previousExperience: ["Investment banking group, J.P. Morgan"],
-    boardSeats: ["Akash", "AviaGames", "Laurel", "Replika", "Sphere Semi", "True Anomaly", "Muon Space"],
-    notableInvestments: [{ name: "IonQ", ticker: "IONQ" }, { name: "Blumind", ticker: null }, { name: "True Anomaly", ticker: null }, { name: "Muon Space", ticker: null }, { name: "Akash", ticker: null }, { name: "Replika", ticker: null }, { name: "Laurel", ticker: null }, { name: "Sphere Semi", ticker: null }, { name: "AviaGames", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2016, event: "Joined ACME Capital" }, { year: 2022, event: "Promoted to Partner at ACME Capital" }],
-    biography: "Alex Fayette is a Partner at ACME Capital, based in San Francisco. He joined the firm in 2016 and was promoted to Partner in 2022, and has spent over a decade at ACME working with founders on technically demanding ventures. His expertise spans aerospace and defense, next-generation computing, tech bio, physical AI, energy and raw materials. He is recognised for communicating advanced technology to commercial audiences and for identifying risks and opportunities across emerging technology domains. He holds a B.A. in Economics from Yale University, where he was a Whiffenpoof, and previously worked in the investment banking group at J.P. Morgan. He sits on the boards of Akash, AviaGames, Laurel, Replika, Sphere Semi, True Anomaly and Muon Space.",
-    sources: [{ label: "ACME Capital team profile", url: "https://www.acme.vc/team/alex-fayette" }, { label: "ACME Capital Closes Over $300 Million (Business Wire, 4 Feb 2022)", url: "https://www.businesswire.com/news/home/20220204005038/en/ACME-Capital-Closes-Over-%24300-Million-for-its-Latest-Venture-Funds-and-Expands-Partnership" }]
-  },
-"christian-tang-jespersen": {
-    name: "Christian Tang-Jespersen",
-    firm: "ACME Capital",
-    firmSlug: "acme-capital",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: [],
-    education: [],
-    previousExperience: ["CEO, Heptagon", "Board member, SolidEnergy Systems", "Technology Advisory Council member, Magna", "Strategic advisor, Temasek"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Again Again", ticker: null }, { name: "Harmattan AI", ticker: null }, { name: "Invert", ticker: null }, { name: "NIL Technology", ticker: null }, { name: "Reshape Bio", ticker: null }, { name: "Stendr", ticker: null }, { name: "Treon", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Christian Tang-Jespersen is a Partner at ACME Capital, serving as board member and strategic advisor to growth-stage technology companies. He has led and scaled organisations from 50 to 5,000 employees, managed P&L from $25M to $750M, and driven both turnarounds and growth. As CEO of Heptagon he scaled the company rapidly, culminating in a $2.7B acquisition. He brings over twenty years of global operating experience as a CEO across the US, China, Singapore, Switzerland and Denmark, and has served on the Technology Advisory Council at Magna, as a strategic advisor to Temasek, and as a board member at SolidEnergy Systems through its multi-billion-dollar NYSE IPO. Across his career he has advised on more than $10B in transactions including major M&A, IPOs and private placements.",
-    sources: [{ label: "ACME Capital team profile", url: "https://www.acme.vc/team/christian-tang-jespersen" }]
-  },
-"hany-nada": {
-    name: "Hany Nada",
-    firm: "ACME Capital",
-    firmSlug: "acme-capital",
-    title: "Co-Founder and Partner",
-    joinedYear: 2018,
-    investmentFocus: [],
-    education: ["B.S. Economics, University of Minnesota", "B.A. Political Science, University of Minnesota"],
-    previousExperience: ["Co-Founder and Managing Partner, GGV Capital", "Managing Director and Senior Research Analyst, Piper Jaffray & Co."],
-    boardSeats: ["AviaGames", "Canopy", "Forma.ai", "Regology"],
-    notableInvestments: [{ name: "DraftKings", ticker: "DKNG" }, { name: "IonQ", ticker: "IONQ" }, { name: "Athenahealth", ticker: null }, { name: "Endeca", ticker: null }, { name: "Heptagon", ticker: null }, { name: "Kintana", ticker: null }, { name: "Xfire", ticker: null }, { name: "Tudou", ticker: null }, { name: "Vocera Communications", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2000, event: "Co-founded GGV Capital and served as Managing Partner" }, { year: 2016, event: "Stepped down as Managing Partner of GGV Capital, becoming a Venture Partner" }, { year: 2018, event: "Left GGV Capital and co-founded ACME Capital" }],
-    biography: "Hany Nada is Co-Founder and Partner of ACME Capital, which he co-founded in 2018. He co-founded GGV Capital in 2000 and was its Managing Partner until October 2016, remaining a Venture Partner until 2018. Before venture capital he spent ten years at Piper Jaffray & Co. as a Managing Director and Senior Research Analyst specialising in internet software and infrastructure. He has served as a long-term partner to more than 150 companies over two decades, advising CEOs and management teams on global markets, business development, strategy and M&A and IPO guidance. He currently sits on the boards of AviaGames, Canopy, Forma.ai and Regology, and his investments include DraftKings, IonQ, Athenahealth, Endeca, Heptagon, Kintana, Tudou and Vocera Communications.",
-    sources: [{ label: "ACME Capital team profile", url: "https://www.acme.vc/team/hany-nada" }, { label: "ACME Capital Closes Over $300 Million (Business Wire, 4 Feb 2022)", url: "https://www.businesswire.com/news/home/20220204005038/en/ACME-Capital-Closes-Over-%24300-Million-for-its-Latest-Venture-Funds-and-Expands-Partnership" }]
-  },
-"katera-mujadidi": {
-    name: "Katera Mujadidi",
-    firm: "ACME Capital",
-    firmSlug: "acme-capital",
-    title: "Partner, Head of Investor Relations and Fundraising",
-    joinedYear: null,
-    investmentFocus: [],
-    education: ["B.A., University of California, Berkeley", "M.B.A. (in progress), The Wharton School, University of Pennsylvania"],
-    previousExperience: ["Senior investor relations role, Vivo Capital", "Senior investor relations role, Northgate Capital", "Senior investor relations role, Pantera Capital"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Katera Mujadidi is a Partner at ACME Capital, where she leads investor relations and fundraising. She brings more than a decade of experience in venture capital, having held senior roles at Bay Area firms including Vivo Capital, Northgate Capital and Pantera Capital. Over her career she has built and scaled global investor relations departments, led high-performing teams and cultivated lasting partnerships with investors worldwide. Her expertise spans fundraising, strategy and investor relations across the venture capital ecosystem. She holds a B.A. from the University of California, Berkeley and is pursuing an M.B.A. at the Wharton School. She is based in Miami and travels frequently to San Francisco.",
-    sources: [{ label: "ACME Capital team profile", url: "https://www.acme.vc/team/katera-mujadidi" }]
-  },
-"scott-stanford": {
-    name: "Scott Stanford",
-    firm: "ACME Capital",
-    firmSlug: "acme-capital",
-    title: "Co-Founder and Partner",
-    // 2013, not 2018: Cue Health's 10-K/A records him as "co-founder of
-    // ACME, LLC and its affiliates ... since February 2013" and defines
-    // Sherpa Ventures Fund LP as ACME I - the 2018 event was a rename.
-    joinedYear: 2013,
-    investmentFocus: [],
-    education: ["A.B. with Honors in Social Studies, Harvard College", "M.B.A., Harvard Business School"],
-    previousExperience: ["Co-founder, Sherpa Capital", "Co-founder, Silicon Foundry", "Co-head of Global Internet Investment Banking, Goldman Sachs", "Early employee, LookSmart", "Financial Analyst, Technology Media and Telecommunications group, Goldman Sachs"],
-    boardSeats: [],
-    researchState: "exhausted",
-    researchChecked: "2026-08-24",
-    notableInvestments: [
-    /*
-       Enriched 2026-08-23, Phase 1 of the database-wide rollout. Every
-       enriched row traces to one regulatory source: Cue Health's 10-K/A (filed
-       2022), whose director bio names his board seats with dates and describes
-       each company. The same filing states that Sherpa Ventures Fund LP IS
-       ACME I, so Sherpa-era deals are the same organization, not a prior firm.
-       ipsy additionally carries round metadata from 2015 press coverage of the
-       TPG/Sherpa co-led Series B. Rows like Airbnb, Uber and Slack stay bare:
-       no source in hand names him against those deals. */
-    { name: "Airbnb", ticker: "ABNB" },
-    { name: "Uber", ticker: "UBER" },
-    { name: "Rent the Runway", ticker: "RENT" },
-    { name: "Slack", ticker: null },
-    { name: "Astra", ticker: null,
-      sector: "Space", subsector: "Orbital Launch", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" }] },
-    { name: "Braintrust", ticker: null },
-    { name: "Curology", ticker: null,
-      sector: "Consumer Health", subsector: "Prescription Skincare", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" }] },
-    { name: "IPSY", ticker: null, stage: "Series B", year: 2015, yearPrecision: "year",
-      sector: "Consumer", subsector: "Beauty Commerce", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" },
-                  { url: "https://variety.com/2015/digital/news/michelle-phan-ipsy-100-million-funding-1201592821", type: "press", checked: "2026-08-23" }] },
-    { name: "Savage X Fenty", ticker: null },
-    { name: "Plot", ticker: null },
-    { name: "BoomPop", ticker: null },
-    { name: "Curio", ticker: null },
-    { name: "Laurel", ticker: null },
-    { name: "Cue Health", ticker: null,
-      sector: "Digital Health", subsector: "Diagnostics", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" }] },
-    { name: "Luka", ticker: null,
-      sector: "AI", subsector: "Conversational AI", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" }] },
-    { name: "Tinycare", ticker: null,
-      sector: "Consumer", subsector: "Childcare", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" }] },
-    { name: "Time by Ping", ticker: null,
-      sector: "AI", subsector: "Time Automation", role: "board",
-      evidence: [{ url: "https://www.sec.gov/Archives/edgar/data/1628945/000162894522000045/a2021123110-ka.htm", type: "regulatory", checked: "2026-08-23" }] }
-  ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2011, event: "Co-founded Goldman Sachs' Internet Fund" }, { year: 2013, event: "Co-founded Sherpa Capital" }, { year: 2018, event: "Co-founded ACME Capital" }],
-    biography: "Scott Stanford is Co-Founder and Partner of ACME Capital, which he founded in 2018. He has focused on the technology sector for over 25 years as an advisor, operator and investor. He spent twelve years at Goldman Sachs, where he was co-head of Global Internet Investment Banking and advised on more than $80 billion in equity and debt financings and strategic transactions for companies including Facebook, Google, Airbnb, Zillow, Palantir, Square and LinkedIn. He previously co-founded Sherpa Capital and the corporate innovation advisory firm Silicon Foundry, and was an early employee at LookSmart. He grew up in Indianapolis and taught himself to program at thirteen; his investments include Airbnb, Uber, Slack, Astra, Braintrust, Curology, IPSY and Rent the Runway.",
-    sources: [{ label: "ACME Capital team profile", url: "https://www.acme.vc/team/scott-stanford" }, { label: "ACME Capital Closes Over $300 Million (Business Wire, 4 Feb 2022)", url: "https://www.businesswire.com/news/home/20220204005038/en/ACME-Capital-Closes-Over-%24300-Million-for-its-Latest-Venture-Funds-and-Expands-Partnership" }]
-  },
-"mike-smith-footwork": {
-    name: "Mike Smith",
-    firm: "Footwork",
-    firmSlug: "footwork",
-    title: "General Partner",
-    joinedYear: 2021,
-    investmentFocus: [],
-    education: [],
-    previousExperience: ["President and COO, Stitch Fix", "COO, Walmart.com"],
-    boardSeats: ["MillerKnoll", "Ulta Beauty"],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2021, event: "Co-founded Footwork with Nikhil Basu Trivedi" }],
-    biography: "Mike Smith co-founded Footwork with Nikhil Basu Trivedi in April 2021 and is a general partner of the firm. He was previously President and COO at Stitch Fix, which Footwork's site describes as taking the company from idea to IPO and beyond. Earlier in his career he was COO of Walmart.com. He serves on the public company boards of MillerKnoll and Ulta Beauty. Footwork's site does not publish a formal title label next to his name; the firm's own Year 1 letter describes both founders as general partners.",
-    sources: [{ label: "Footwork website", url: "https://www.footwork.vc/" }, { label: "Footwork at Year 1", url: "https://nbt.substack.com/p/footwork-at-year-1" }]
-  },
-"nikhil-basu-trivedi": {
-    name: "Nikhil Basu Trivedi",
-    firm: "Footwork",
-    firmSlug: "footwork",
-    title: "Co-Founder and General Partner",
-    joinedYear: 2021,
-    investmentFocus: ["Consumer", "Enterprise Software"],
-    education: [],
-    previousExperience: ["Managing Director, Shasta Ventures", "Investor, Insight Partners", "Founding team, Artsy"],
-    boardSeats: [],
-    researchState: "exhausted",
-    researchChecked: "2026-08-24",
-    notableInvestments: [
-    /*
-       Enriched 2026-08-24, 25-partner quality gate. Press coverage of his
-       track record states he led Canva, ClassDojo, Color, Frame.io, Imperfect
-       Foods, Lattice and The Farmer's Dog at Shasta - recorded with orgAtTime
-       - and led the Athelas seed. Brigit stays bare: no source names him on
-       it. */
-    { name: "Athelas", ticker: null, stage: "Seed",
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "Brigit", ticker: null },
-    { name: "Canva", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "ClassDojo", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "Color Health", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "Frame.io", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "Imperfect Foods", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "Lattice", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] },
-    { name: "The Farmer's Dog", ticker: null,
-      orgAtTime: "shasta-ventures",
-      evidence: [{ url: "https://www.forbes.com/profile/nikhil-basu-trivedi/", type: "press", checked: "2026-08-23" }] }
-  ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2010, event: "Began career as a venture capitalist" }, { year: 2021, event: "Co-founded Footwork with Mike Smith" }],
-    biography: "Nikhil Basu Trivedi is co-founder and a general partner of Footwork, the early-stage venture firm he started with Mike Smith in April 2021. He was previously a Managing Director at Shasta Ventures, where he invested in Athelas, Brigit, Canva, ClassDojo, Color Health, Frame.io, Imperfect Foods, Lattice and The Farmer's Dog. Before Shasta he worked at Insight Partners and was on the founding team of Artsy. He describes himself as having been a venture capitalist since 2010, focused on consumer technology and enterprise companies building consumer-like products. He writes the Next Big Thing newsletter on Substack.",
-    sources: [{ label: "Footwork website", url: "https://www.footwork.vc/" }, { label: "Nikhil Basu Trivedi Substack about page", url: "https://nbt.substack.com/about" }]
-  },
-"assaf-jacobi": {
-    name: "Assaf Jacobi",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Venture Partner",
-    joinedYear: 2019,
-    investmentFocus: ["Enterprise Software", "Infrastructure Software"],
-    education: [],
-    previousExperience: ["Investor, TPG Israel", "Co-founder, Jibe Ventures"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Avanan", ticker: null }, { name: "Guardicore", ticker: null }, { name: "BigPanda", ticker: null }, { name: "VAST Data", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2019, event: "Joined the firm (then Next47), based in Israel" }],
-    biography: "Assaf Jacobi is a Venture Partner at N47 based in Israel, covering the firm's Applications and Infrastructure categories. His N47 profile says he joined in 2019, having previously invested in mature companies at TPG Israel, and that he co-founded Jibe Ventures, a seed-stage fund based in Israel. His listed past investments include Avanan, which was acquired by Check Point, and Guardicore, which was acquired by Akamai, as well as BigPanda and VAST Data. He describes a Product First approach and measures an investment by how much genuine resonance a product sparks with users.",
-    sources: [{ label: "N47 - Assaf Jacobi", url: "https://www.n47.com/team/assaf-jacobi" }]
-  },
-"colton-dempsey": {
-    name: "Colton Dempsey",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Infrastructure Software", "Developer Tools", "Cybersecurity", "Robotics"],
-    education: ["Symbolic Systems, Stanford University"],
-    previousExperience: ["Technology M&A, Morgan Stanley"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Harmonic Security", ticker: null }, { name: "Halcyon", ticker: null }, { name: "Skylo", ticker: null }, { name: "Claroty", ticker: null }, { name: "DataGrail", ticker: null }, { name: "Bizzabo", ticker: null }, { name: "Armorblox", ticker: null }, { name: "Noname Security", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Colton Dempsey is a Partner at N47 in Silicon Valley, focused on infrastructure software, developer tools, cybersecurity and robotics. Before joining he worked on technology M&A at Morgan Stanley, and he studied symbolic systems at Stanford University. His N47 profile lists current investments in Harmonic Security, Halcyon, Skylo, Claroty, DataGrail, Freehand, Bizzabo, Aurasell and Antenna, with Armorblox and Noname Security among his past investments. He describes looking for founders who turn complexity into clarity. N47 does not publish his board seats or the year he joined.",
-    sources: [{ label: "N47 - Colton Dempsey", url: "https://www.n47.com/team/colton-dempsey" }]
-  },
-"fred-ellis": {
-    name: "Fred Ellis",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Enterprise Software"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [{ name: "Aforza", ticker: null }, { name: "Encord", ticker: null }, { name: "Sona", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Fred Ellis is a Partner at N47 covering Europe, focused on the firm's Applications category and on founders with an obsessive focus on product. His N47 profile describes him as an operator and investor who previously helped build private deal distribution and execution infrastructure for large financial enterprises at a startup, but it does not name the company or his title. His listed portfolio includes Aforza, Encord and Sona. He has published N47 pieces on operational foundations for the frontline economy and on European AI startups. N47 does not publish his education, board seats or the year he joined.",
-    sources: [{ label: "N47 - Fred Ellis", url: "https://www.n47.com/team/fred-ellis" }]
-  },
-"gadi-fisher": {
-    name: "Gadi Fisher",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Senior Associate",
-    joinedYear: null,
-    investmentFocus: ["Enterprise Software", "Infrastructure Software"],
-    education: [],
-    previousExperience: ["Technology strategy consultant, Deloitte"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Gadi Fisher is a Senior Associate at N47 based in Israel, covering the firm's Applications and Infrastructure categories. Before joining he spent five years at Deloitte in London, advising enterprise clients on technology strategy and innovation. After nearly two decades abroad he returned to Israel to focus on venture investing in the local ecosystem. He says the most powerful products are built by people who learned something essential somewhere else and brought it somewhere it had never been applied. N47 lists no portfolio companies, board seats, education or joining year for him.",
-    sources: [{ label: "N47 - Gadi Fisher", url: "https://www.n47.com/team/gadi-fisher" }]
-  },
-"gautham-pasupathy": {
-    name: "Gautham Pasupathy",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Senior Associate",
-    joinedYear: null,
-    investmentFocus: ["Enterprise Software"],
-    education: [],
-    previousExperience: ["Technology M&A, Qatalyst Partners"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Gautham Pasupathy is a Senior Associate at N47 in Silicon Valley, focused on enterprise software across the firm's Applications and Infrastructure categories. Before joining he worked at Qatalyst Partners, where his N47 profile says he supported founders and executives on approximately $13 billion of technology M&A. He says he looks for builders who are obsessed with the product they are creating and sweat every detail, and that he is exploring how emerging technologies reinvent existing enterprise software categories. N47 lists no portfolio companies, board seats, education or joining year for him.",
-    sources: [{ label: "N47 - Gautham Pasupathy", url: "https://www.n47.com/team/gautham-pasupathy" }]
-  },
-"henry-tantum": {
-    name: "Henry Tantum",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Associate",
-    joinedYear: null,
-    investmentFocus: ["Cybersecurity", "Data Infrastructure"],
-    education: ["BA Economics, Middlebury College"],
-    previousExperience: ["Strategy consultant, Accenture"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Henry Tantum is an Associate at N47 in Silicon Valley, focused on cybersecurity and data infrastructure within the firm's Infrastructure and Systems categories. Before joining he was a strategy consultant at Accenture in Washington, D.C., where he advised Department of Defense officials on combat readiness. He holds a BA in Economics from Middlebury College and describes earlier work as a data analyst on market trends. A Bay Area native, he says he has always gravitated toward creatively solving problems using data analysis. N47 lists no portfolio companies, board seats or joining year for him.",
-    sources: [{ label: "N47 - Henry Tantum", url: "https://www.n47.com/team/henry-tantum" }]
-  },
-"jenny-graetzel": {
-    name: "Jenny Graetzel",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Partner, Seed Funds",
-    joinedYear: null,
-    investmentFocus: ["Enterprise Software"],
-    education: [],
-    previousExperience: [],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Jenny Graetzel is Partner, Seed Funds at N47, based in Silicon Valley, where she leads the firm's seed fund strategy and acts as an adviser to early-stage fund managers investing in enterprise technology. Her N47 profile says she invested in venture and growth funds for 17 years across the US and Europe before joining, but does not name the firms she worked at. She describes her role as building trusted partnerships with early-stage fund managers who are on the ground floor with the next generation of enterprise founders. She authored the N47 perspective The case for seed funds. N47 does not publish her education, board seats or the year she joined.",
-    sources: [{ label: "N47 - Jenny Graetzel", url: "https://www.n47.com/team/jenny-graetzel" }]
-  },
-"lak-ananth": {
-    name: "Lak Ananth",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Global Managing Partner",
-    joinedYear: 2016,
-    investmentFocus: ["Enterprise Software", "Infrastructure Software"],
-    education: ["MBA, INSEAD", "MS Electrical Engineering, Kansas State University"],
-    previousExperience: ["Head of HPE Pathfinder, Hewlett Packard Enterprise", "Corporate development, Cisco"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Verkada", ticker: null }, { name: "VAST Data", ticker: null }, { name: "Tractian", ticker: null }, { name: "Cohesity", ticker: null }, { name: "Observe.AI", ticker: null }, { name: "Sennder", ticker: null }, { name: "Markforged", ticker: null }, { name: "Meraki", ticker: null }, { name: "ThoughtSpot", ticker: null }, { name: "Hortonworks", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2014, event: "Built and led HPE Pathfinder, Hewlett Packard Enterprise's venture capital program" }, { year: 2016, event: "Named to lead Siemens' new next47 startup unit, effective 15 November 2016" }, { year: 2025, event: "Announced the firm's rebrand from Next47 to N47" }],
-    biography: "Lak Ananth is Global Managing Partner of N47, Siemens' global venture capital unit, and has led the firm since Siemens created it as next47 in 2016. Siemens announced his appointment in November 2016; he joined from Hewlett Packard Enterprise, where he had spent two years building HPE Pathfinder, the company's venture capital program. Earlier he worked in venture capital and corporate development at Cisco on business strategy and early-stage technology acquisitions, and began his career as an engineer in Silicon Valley. His current investments include Verkada, Tractian, VAST Data, Cohesity, Observe.AI and Sennder, with past investments including Meraki, ThoughtSpot, Hortonworks and Markforged. He holds an MBA from INSEAD and a master's in electrical engineering from Kansas State University.",
-    sources: [{ label: "N47 - Lak Ananth", url: "https://www.n47.com/team/lak-ananth" }, { label: "Siemens press release - Lak Ananth to head new next47 startup unit", url: "https://press.siemens.com/global/en/pressrelease/lak-ananth-head-new-next47-startup-unit" }]
-  },
-"matthew-cowan": {
-    name: "Matthew Cowan",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "General Partner",
-    joinedYear: 2017,
-    investmentFocus: ["Applied AI", "Vertical SaaS", "Enterprise Software"],
-    education: [],
-    previousExperience: ["Co-founder, Breezeworks", "Intel"],
-    boardSeats: [],
-    notableInvestments: [{ name: "BuildOps", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2017, event: "Joined the firm (then Next47) as an investor" }],
-    biography: "Matthew Cowan is a General Partner at N47, working across the firm's Applications and Infrastructure categories from Silicon Valley and Israel. His N47 profile says he joined in 2017 and focuses on AI applied at the application layer to bring automation and efficiency to underserved industries, citing BuildOps as the clearest expression of that thesis. He co-founded Breezeworks, a technology automation company for service professionals, and earlier worked at Intel. He describes having watched three major product cycles over three decades. N47 does not publish his education or board seats.",
-    sources: [{ label: "N47 - Matthew Cowan", url: "https://www.n47.com/team/matthew-cowan" }]
-  },
-"moshe-zilberstein": {
-    name: "Moshe Zilberstein",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "General Partner",
-    joinedYear: null,
-    investmentFocus: ["Enterprise Software", "Infrastructure Software"],
-    education: ["BSc Computer Engineering, Technion"],
-    previousExperience: ["Co-founder, Odigo", "Investor, Norwest Venture Partners", "Intel", "Microsoft"],
-    boardSeats: [],
-    notableInvestments: [{ name: "VAST Data", ticker: null }, { name: "Logz.io", ticker: null }, { name: "Radiant Security", ticker: null }, { name: "Zesty", ticker: null }, { name: "Gong", ticker: null }, { name: "Noname Security", ticker: null }, { name: "Cynet", ticker: null }, { name: "CyberX", ticker: null }, { name: "Fireglass", ticker: null }, { name: "Velostrata", ticker: null }, { name: "Wiliot", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Moshe Zilberstein is a General Partner at N47 based in Israel, covering the firm's Applications and Infrastructure categories. He co-founded Odigo, an early social network, and later held technology and product roles at Intel, Microsoft and ExtraHop. Before joining the firm he was a venture investor at Norwest Venture Partners, where he backed the founders of companies including Gong.io and VAST Data. His N47 profile lists current investments in Echo, Logz.io, Radiant Security, VAST Data and Zesty, and past investments in CyberX, Cynet, Fireglass, Gong, Noname Security, Velostrata and Wiliot. He holds a computer engineering degree from the Technion.",
-    sources: [{ label: "N47 - Moshe Zilberstein", url: "https://www.n47.com/team/moshe-zilberstein" }]
-  },
-"tj-rylander": {
-    name: "T.J. Rylander",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "General Partner",
-    joinedYear: null,
-    investmentFocus: ["Infrastructure Software", "Developer Tools", "Cybersecurity", "Robotics"],
-    education: [],
-    previousExperience: ["Investor, In-Q-Tel"],
-    boardSeats: ["Institute for Security and Technology", "Camp Belknap"],
-    researchState: "exhausted",
-    researchChecked: "2026-08-24",
-    notableInvestments: [
-    /*
-       Enriched 2026-08-24, 25-partner quality gate. His N47 profile lists his
-       current portfolio; FireEye, Cloudera and Pure Storage were In-Q-Tel-era
-       work recorded with orgAtTime. Aeva stays bare: the page does not list
-       it. */
-    { name: "Skydio", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "VAST Data", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Claroty", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Encord", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Halcyon", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Harmonic Security", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Skylo", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Sysdig", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Aeva", ticker: "AEVA" },
-    { name: "Pure Storage", ticker: "PSTG",
-      orgAtTime: "in-q-tel",
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Cloudera", ticker: null,
-      orgAtTime: "in-q-tel",
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "FireEye", ticker: null,
-      orgAtTime: "in-q-tel",
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Avidbots", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Vitally", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Yellowbrick Data", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] },
-    { name: "Sila", ticker: null,
-      evidence: [{ url: "https://www.n47.com/team/t-j-rylander", type: "partner-bio", checked: "2026-08-23" }] }
-  ],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2006, event: "Joined In-Q-Tel, where he spent about a decade making early-stage investments" }, { year: 2016, event: "Left In-Q-Tel after roughly ten years, having backed FireEye, Cloudera and Pure Storage before their IPOs" }],
-    biography: "T.J. Rylander is a General Partner at N47 covering Silicon Valley and Europe, focused on infrastructure and systems including developer tools, cybersecurity and robotics. His N47 profile says he spent roughly a decade at In-Q-Tel from 2006 to 2016, where his early-stage investments included FireEye, Cloudera and Pure Storage, all of which reached IPO. His current portfolio includes Skydio, Claroty, Encord, Halcyon, Harmonic Security, Sysdig, Skylo and VAST Data, with past investments including Armorblox and Aeva. He serves on the boards of the Institute for Security and Technology and Camp Belknap. N47 does not publish his education or the year he joined.",
-    sources: [{ label: "N47 - T.J. Rylander", url: "https://www.n47.com/team/t-j-rylander" }]
-  },
-"vivian-cheng": {
-    name: "Vivian Cheng",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Partner",
-    joinedYear: 2024,
-    investmentFocus: ["Applied AI", "Enterprise Software"],
-    education: [],
-    previousExperience: ["Principal, CRV", "Investor, Javelin Venture Partners"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Nominal", ticker: null }, { name: "Patlytics", ticker: null }, { name: "Two Dots", ticker: null }, { name: "Enzo Health", ticker: null }, { name: "XBuild", ticker: null }, { name: "TigerEye", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2021, event: "Joined CRV, becoming a Principal" }, { year: 2024, event: "Joined Next47 (now N47) as Partner, based in San Francisco" }],
-    biography: "Vivian Cheng is a Partner at N47 in Silicon Valley, working across the firm's Applications and Systems categories with a focus on product-driven companies, AI workflows and IP/patent technology. Global Corporate Venturing reported her hire as a Partner at Next47 in April 2024, noting she joined from CRV, where she had been a Principal since late 2021, and had previously spent over two years at Javelin Venture Partners. Her listed investments include Nominal, Patlytics, Two Dots, Enzo Health and XBuild, with TigerEye as a past investment. N47 does not publish her education or board seats.",
-    sources: [{ label: "N47 - Vivian Cheng", url: "https://www.n47.com/team/vivian-cheng" }, { label: "Global Corporate Venturing - Next47 hires Cheng for partner role", url: "https://globalventuring.com/corporate/people/next47-hires-cheng-for-partner-role/" }]
-  },
-"will-smith-n47": {
-    name: "Will Smith",
-    firm: "N47",
-    firmSlug: "next47",
-    title: "Venture Partner",
-    joinedYear: null,
-    investmentFocus: ["AI", "Data Infrastructure", "Infrastructure Software"],
-    education: ["Stanford University"],
-    previousExperience: ["Founder, Euclid"],
-    boardSeats: [],
-    notableInvestments: [{ name: "Notion", ticker: null }, { name: "Weights & Biases", ticker: null }, { name: "Haus Analytics", ticker: null }, { name: "Datavant", ticker: null }, { name: "Metronome", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Will Smith is a Venture Partner at N47 in Silicon Valley, focused on infrastructure, AI and data companies as well as the firm's Applications category. After Stanford he founded Euclid, a machine learning and data infrastructure company that processed billions of location events a day. His N47 profile lists investments in Notion, Weights & Biases, Haus Analytics, Datavant and Metronome. He says he believes a great company can be spotted first in its founders and then in its product, well before it shows up in a spreadsheet. N47 does not publish his board seats or the year he joined.",
-    sources: [{ label: "N47 - Will Smith", url: "https://www.n47.com/team/will-smith" }]
-  },
-"cindy-padnos": {
-    name: "Cindy Padnos",
-    firm: "Illuminate Ventures",
-    firmSlug: "illuminate-ventures",
-    title: "Founder and Managing Partner",
-    joinedYear: 2009,
-    investmentFocus: ["Enterprise Software", "B2B Software", "SaaS"],
-    education: ["MSIA/MBA, Tepper School of Business, Carnegie Mellon University", "AB, University of Michigan"],
-    previousExperience: ["Founder and CEO, Vivant! Corporation", "Director, Outlook Ventures", "VP Marketing, Scopus Technology"],
-    boardSeats: ["Bid Ops", "BrightEdge", "CafeX", "nFlux", "Pex"],
-    notableInvestments: [{ name: "Xactly", ticker: null }, { name: "BrightEdge", ticker: null }, { name: "Coupang", ticker: "CPNG" }, { name: "Allocadia", ticker: null }, { name: "Opsmatic", ticker: null }, { name: "Pex", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2009, event: "Founded Illuminate Ventures" }, { year: 2017, event: "Portfolio company Xactly acquired by Vista Equity Partners" }],
-    biography: "Cindy Padnos is the founder and Managing Partner of Illuminate Ventures, which she started in 2009 after serving as a director at Outlook Ventures. She brings about 25 years of high-tech industry experience, including founding and running the SaaS company Vivant!, which was acquired by Oracle, and serving as VP of marketing at Scopus Technology. She holds an MSIA/MBA with honors from Carnegie Mellon's Tepper School of Business and an AB magna cum laude from the University of Michigan. She invests in enterprise and B2B cloud and mobile computing, with board seats at Bid Ops, BrightEdge, CafeX, nFlux and Pex. Illuminate lists her exits as including Xactly, Coupang, Sense Platform, Opsmatic and Allocadia.",
-    sources: [{ label: "Illuminate Ventures - Team", url: "https://illuminate.com/team-2/" }, { label: "Stanford GSB - Illuminate Ventures: Raising a Venture Fund", url: "https://www.gsb.stanford.edu/faculty-research/case-studies/illuminate-ventures-raising-venture-fund" }]
-  },
-"jennifer-savage": {
-    name: "Jennifer Savage",
-    firm: "Illuminate Ventures",
-    firmSlug: "illuminate-ventures",
-    title: "Partner",
-    joinedYear: null,
-    investmentFocus: ["Enterprise Software", "B2B Software", "SaaS"],
-    education: ["MBA, Anderson Graduate School of Management, UCLA", "BS Computer Science, University of Oregon"],
-    previousExperience: ["Executive, PlaceWare", "Executive, DocuSign", "Executive, Smartsheet", "Executive, Flowroute"],
-    boardSeats: ["Hoopla Software", "Pyze"],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Jennifer Savage is a Partner at Illuminate Ventures, where she identifies and leads new investments with a particular emphasis on Pacific Northwest companies. She supports due diligence and provides strategic and operational guidance to portfolio companies, and she manages relationships with Illuminate's B2B enterprise network and Advisory Council. Her bio cites more than 25 years of B2B software experience building new categories, with prior executive roles at PlaceWare, which was acquired by Microsoft, as well as DocuSign, Smartsheet and Flowroute. She holds an MBA from UCLA's Anderson School and a bachelor's degree in computer science from the University of Oregon. She sits on the boards of Hoopla Software and Pyze.",
-    sources: [{ label: "Illuminate Ventures - Team", url: "https://illuminate.com/team-2/" }]
-  },
-"amy-zhao": {
-    name: "Amy Zhao",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Principal",
-    joinedYear: null,
-    investmentFocus: ["Climate Technology", "Industrial Technology", "Climate", "Clean Energy", "Industrial decarbonization", "Green hydrogen"],
-    education: ["MBA, Stanford Graduate School of Business", "B.A., Economics, Harvard University (Cum Laude)"],
-    previousExperience: ["Management Consultant, Strategy& (PwC)", "Corporate Strategy and Venture Capital intern, Edison International"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2026, event: "Promoted to Principal at Clean Energy Ventures (announced April 28, 2026)" }],
-    biography: "Amy Zhao is a Principal at Clean Energy Ventures, promoted to that title in April 2026. Her work focuses on commercializing early-stage industrial decarbonization technologies, with particular experience in green hydrogen applications. Before joining the firm she was a management consultant at Strategy& (PwC), specializing in power and utilities strategy, operational efficiency and regulatory analysis, and interned on Edison International's corporate strategy and venture capital team before business school. At Stanford she was co-president of the Graduate School of Business Energy Club and an investor with the Stanford Impact Fund. She holds an MBA from Stanford Graduate School of Business and a B.A. in Economics, cum laude, from Harvard University.",
-    sources: [{ label: "Clean Energy Ventures - Amy Zhao bio", url: "https://cleanenergyventures.com/team-members/amy-zhao" }, { label: "Clean Energy Ventures news", url: "https://cleanenergyventures.com/news" }]
-  },
-"cooper-bates": {
-    name: "Cooper Bates",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Analyst",
-    joinedYear: 2026,
-    investmentFocus: ["Climate Technology", "Energy", "Energy storage", "Grid"],
-    education: ["B.S., Operations Research, Columbia University"],
-    previousExperience: ["Management Consultant, Oliver Wyman", "Business-side roles, Tesla"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2026, event: "Joins Clean Energy Ventures as an Analyst (announced January 26, 2026)" }],
-    biography: "Cooper Bates is an Analyst at Clean Energy Ventures, which he joined in January 2026. He supports investment sourcing, due diligence and market research across the climate tech landscape, helping the firm evaluate emerging technologies and strengthen its deal pipeline. He was previously a management consultant at Oliver Wyman specializing in transportation and operations. Before consulting he held multiple business-side positions at Tesla focused on scaling grid-scale battery deployment and corporate decarbonization initiatives. He holds a B.S. in Operations Research from Columbia University with supplemental coursework in Computer Science and Economics.",
-    sources: [{ label: "Clean Energy Ventures - Cooper Bates bio", url: "https://cleanenergyventures.com/team-members/cooper-bates" }, { label: "Clean Energy Ventures news", url: "https://cleanenergyventures.com/news" }]
-  },
-"dan-goldman": {
-    name: "Dan Goldman",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Co-Founder & Managing Partner",
-    joinedYear: 2017,
-    investmentFocus: ["Climate Technology", "Clean Energy", "Energy", "Grid and energy storage"],
-    education: ["B.S., Cornell University", "M.Sc., London School of Economics"],
-    previousExperience: ["Senior energy consultant and leader of the Asia Pacific Energy Consulting Practice, Arthur D. Little", "Senior development and finance roles, InterGen", "Co-founder & CFO, New Energy Capital", "President & CFO, GreatPoint Energy", "Co-founder and director, Environmental Entrepreneurs (E2)"],
-    boardSeats: ["LineVision", "SparkMeter", "ConnectDER", "ClearTrace", "ndustrial", "ClearFlame Engines (board observer)", "Advanced Ionics (board observer)", "Nth Cycle (board observer)", "Quidnet Energy (board observer)", "Northeast Clean Energy Council (Board Chair)"],
-    notableInvestments: [{ name: "LineVision", ticker: null }, { name: "SparkMeter", ticker: null }, { name: "ConnectDER", ticker: null }, { name: "ClearTrace", ticker: null }, { name: "ndustrial", ticker: null }, { name: "Nth Cycle", ticker: null }, { name: "Quidnet Energy", ticker: null }, { name: "ClearFlame Engines", ticker: null }, { name: "Advanced Ionics", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 1989, event: "Joins Arthur D. Little as a senior energy consultant in Cambridge and Singapore" }, { year: 1992, event: "Leads Arthur D. Little's Asia Pacific Energy Consulting Practice (through 1996)" }, { year: 1996, event: "Joins InterGen in senior development and finance roles in Hong Kong and Boston" }, { year: 2002, event: "Co-founds New Energy Capital and serves as CFO" }, { year: 2006, event: "Joins GreatPoint Energy, holding executive roles including President and CFO through 2016" }, { year: 2017, event: "Co-founds Clean Energy Ventures as Managing Partner" }],
-    biography: "Dan Goldman is a co-founder and Managing Partner of Clean Energy Ventures, the Boston-based early-stage climate technology firm he helped formalize in 2017. He has more than 25 years of energy industry experience in strategy, corporate and project finance, and project development, beginning at Arthur D. Little where he led the Asia Pacific Energy Consulting Practice from 1992 to 1996. He subsequently held senior development and finance roles at InterGen, co-founded New Energy Capital as its CFO, and served as President and CFO of GreatPoint Energy. He sits on the boards of LineVision, SparkMeter, ConnectDER, ClearTrace and ndustrial, and is a board observer at ClearFlame Engines, Advanced Ionics, Nth Cycle and Quidnet Energy. He co-founded the nonprofit Environmental Entrepreneurs (E2) and chairs the Northeast Clean Energy Council board.",
-    sources: [{ label: "Clean Energy Ventures - Dan Goldman bio", url: "https://cleanenergyventures.com/team-members/dan-goldman" }, { label: "Clean Energy Ventures closes $305M Fund II", url: "https://cleanenergyventures.com/clean-energy-venture-capital/clean-energy-ventures-closes-305m-fund-ii/" }]
-  },
-"david-s-miller": {
-    name: "David S. Miller, PhD.",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Co-Founder & Managing Partner",
-    joinedYear: 2017,
-    investmentFocus: ["Climate Technology", "Clean Energy", "Deep Tech", "Construction Tech", "Advanced materials", "Building technologies"],
-    education: ["S.B., Computer Science and Engineering, Massachusetts Institute of Technology", "S.M., Computer Science and Engineering, Massachusetts Institute of Technology", "Ph.D., MIT Laboratory for Energy and the Environment"],
-    previousExperience: ["Founder, Quantum Telecom Solutions (sold to Excel Switching Corp.)", "Director, New Ventures Group, Lucent Technologies", "Executive Managing Director, Clean Energy Venture Group", "Research Affiliate, MIT Sloan School of Management", "Lecturer, Electrical Engineering Department, Rutgers University"],
-    boardSeats: ["Boston Materials", "Pearl Certification", "Volexion", "Noon Energy", "DEPLOY/US (Board Director)"],
-    notableInvestments: [{ name: "Boston Materials", ticker: null }, { name: "Pearl Certification", ticker: null }, { name: "Volexion", ticker: null }, { name: "Noon Energy", ticker: null }, { name: "Pika Energy", ticker: null }, { name: "MyEnergy", ticker: null }, { name: "Azima DLI", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2005, event: "Becomes Executive Managing Director of Clean Energy Venture Group, serving through 2017" }, { year: 2013, event: "Portfolio company MyEnergy acquired (May 2013)" }, { year: 2017, event: "Co-founds Clean Energy Ventures as Managing Partner" }, { year: 2019, event: "Portfolio company Pika Energy acquired (April 2019)" }],
-    biography: "David S. Miller is a co-founder and Managing Partner of Clean Energy Ventures. He holds S.B. and S.M. degrees in Computer Science and Engineering from MIT and a Ph.D. from MIT's Laboratory for Energy and the Environment, and remains a Research Affiliate at MIT's Sloan School of Management. Earlier in his career he founded Quantum Telecom Solutions, which built programmable switching software and was sold to Excel Switching Corp. (later acquired by Lucent), after which he directed Lucent Technologies' New Ventures Group. From 2005 to 2017 he was Executive Managing Director of Clean Energy Venture Group, the angel cohort that preceded the institutional firm. He currently serves on the boards of Boston Materials, Pearl Certification, Volexion and Noon Energy, and his prior investments include Pika Energy, MyEnergy and Azima DLI.",
-    sources: [{ label: "Clean Energy Ventures - David S. Miller, Managing Partner", url: "https://cleanenergyventures.com/about/david-s-miller-managing-partner/" }, { label: "Clean Energy Ventures team page", url: "https://www.cleanenergyventures.com/team" }]
-  },
-"louis-schick": {
-    name: "Louis (Lou) Schick",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Director of Investments",
-    joinedYear: null,
-    investmentFocus: ["Climate Technology", "Hard Tech", "Energy", "Advanced Manufacturing", "Hard tech", "Advanced manufacturing"],
-    education: ["Physics PhD program (not completed), Cornell University"],
-    previousExperience: ["Solid oxide fuel cell program manager, GE", "Product line management, MTI Micro", "High school physics teacher"],
-    boardSeats: ["Advisory board, National Academies", "Advisory board, Venture for Climate Tech", "Advisory board, Trellis"],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [],
-    biography: "Louis (Lou) Schick is Director of Investments at Clean Energy Ventures, where he identifies adoptable climate innovations, runs technical diligence and coaches portfolio founders. He trained as a physicist and left a PhD program at Cornell University, and taught high school physics for five years before moving into industry. At GE he held multiple roles including managing a solid oxide fuel cell program overseeing more than 100 staff across several countries, and he later worked in product line management at MTI Micro, including military procurement. He has more than 20 years of experience as an early-stage and growth equity investor. He serves on advisory boards for the National Academies, Venture for Climate Tech and Trellis, and mentors through Greentown Labs and Village Capital. He is based in upstate New York.",
-    sources: [{ label: "Clean Energy Ventures - Louis (Lou) Schick bio", url: "https://cleanenergyventures.com/team-members/louis-lou-schick" }]
-  },
-"matt-cohen-cev": {
-    name: "Matt Cohen",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Principal",
-    joinedYear: 2023,
-    investmentFocus: ["Climate Technology", "Deep Tech", "Hard Tech", "Industrial Technology", "Climate", "Advanced materials", "Hard tech", "Industrial decarbonization"],
-    education: ["MPhil, Micro- and Nanotechnology Enterprise, University of Cambridge", "BSE, Materials Science & Engineering, University of Pennsylvania (Summa Cum Laude)"],
-    previousExperience: ["Director of Technology, Pangaea Ventures", "Early employee, PChem Associates"],
-    boardSeats: ["Exterra Technologies", "Queens Carbon", "Transaera", "Investor Advisory Board, National Laboratory of the Rockies"],
-    notableInvestments: [{ name: "Exterra Technologies", ticker: null }, { name: "Queens Carbon", ticker: null }, { name: "Transaera", ticker: null }],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2023, event: "Joins Clean Energy Ventures as Principal (May 2023)" }],
-    biography: "Matt Cohen is a Principal at Clean Energy Ventures, which he joined in May 2023, and has more than a decade of climate tech investing experience. He was previously Director of Technology at impact-focused venture firm Pangaea Ventures, where he directed technology scouting and evaluation, and before that was an early employee at nanotechnology startup PChem Associates, supporting fundraising and building quality assurance processes. His work centres on technology evaluation, impact assessment methodology and early-stage hardtech ventures. He holds an MPhil in Micro- and Nanotechnology Enterprise from the University of Cambridge and a BSE in Materials Science & Engineering from the University of Pennsylvania, awarded summa cum laude. He serves on the boards of CEV portfolio companies Exterra Technologies, Queens Carbon and Transaera.",
-    sources: [{ label: "Clean Energy Ventures - Matt Cohen bio", url: "https://cleanenergyventures.com/team-members/matt-cohen" }]
-  },
-"max-werny": {
-    name: "Max Werny",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Investor",
-    joinedYear: 2026,
-    investmentFocus: ["Climate Technology", "Deep Tech", "Clean Energy", "Carbon Removal", "Catalysis and advanced materials", "Sustainable aviation fuel"],
-    education: ["PhD, Catalysis & Spectroscopy, Institute for Sustainable & Circular Chemistry, Utrecht University", "M.Sc., Chemistry, Technical University of Munich", "B.Sc., Chemistry, Technical University of Munich"],
-    previousExperience: ["Associate, Zero Carbon Capital", "Investment role, Extantia Capital", "Commercial and technical roles, Heraeus Precious Metals", "Roles at BASF", "Roles at Alantum"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2024, event: "Receives the 2024 Golden Thesis Award for his PhD at Utrecht University" }, { year: 2026, event: "Joins Clean Energy Ventures as an Investor (announced June 23, 2026)" }],
-    biography: "Max Werny is an Investor at Clean Energy Ventures, based in Europe, who joined the firm in June 2026. He was previously an Associate at Zero Carbon Capital, where he led the fund's expansion across the DACH region and invested in sustainable aviation fuel, and before that held an investment role at Extantia Capital sourcing and diligencing seed-stage deals in metal recovery, biomining and direct air capture. Earlier in his career he held commercial and technical positions at Heraeus Precious Metals, BASF and Alantum, working on industrial catalyst development, techno-economic modelling, CO2 valorization and precious metal recycling. He holds a PhD in Catalysis and Spectroscopy from Utrecht University's Institute for Sustainable & Circular Chemistry, where he won the 2024 Golden Thesis Award, and B.Sc. and M.Sc. degrees in Chemistry from the Technical University of Munich. He was also a visiting researcher at the Fritz-Haber-Institute of the Max Planck Society and a visiting scholar at the National University of Singapore.",
-    sources: [{ label: "Clean Energy Ventures - Max Werny bio", url: "https://cleanenergyventures.com/team-members/max-werny" }, { label: "Clean Energy Ventures news", url: "https://cleanenergyventures.com/news" }]
-  },
-"maya-bhat": {
-    name: "Maya Bhat, PhD",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Investor",
-    joinedYear: 2026,
-    investmentFocus: ["Climate Technology", "Clean Energy", "Energy", "Hard Tech", "Hydrogen", "Energy storage", "Hard tech"],
-    education: ["Dual bachelor's degrees, Claremont McKenna College and Columbia University", "PhD, Chemical Engineering, Carnegie Mellon University"],
-    previousExperience: ["Commercial team, Electric Hydrogen", "Founder, energy storage startup"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2026, event: "Joins Clean Energy Ventures as an Investor (announced March 18, 2026)" }],
-    biography: "Maya Bhat is an Investor at Clean Energy Ventures, which she joined in March 2026. She works on scaling businesses that address global energy needs, applying technical expertise to de-risk hardware development for climate solutions. She was previously on the commercial team at Electric Hydrogen, where she worked on technoeconomic modelling, durability analysis and financing product design, and she has also founded an energy storage startup and held earlier venture capital roles. Her doctoral research at Carnegie Mellon used machine learning and high-throughput experimentation to accelerate the discovery of hydrogen catalysts. She holds dual bachelor's degrees from Claremont McKenna College and Columbia University and a PhD in Chemical Engineering from Carnegie Mellon University, and is originally from Singapore.",
-    sources: [{ label: "Clean Energy Ventures - Maya Bhat bio", url: "https://cleanenergyventures.com/team-members/maya-bhat-phd" }, { label: "Clean Energy Ventures news", url: "https://cleanenergyventures.com/news" }]
-  },
-"shanbor-gupta": {
-    name: "Shanbor Gupta",
-    firm: "Clean Energy Ventures",
-    firmSlug: "clean-energy-ventures",
-    title: "Principal",
-    joinedYear: null,
-    investmentFocus: ["Climate Technology", "Sustainability", "Clean Energy", "Greenhouse gas impact assessment"],
-    education: ["MBA, Babson College (Magna Cum Laude, 2020)", "Bachelor's, International Studies & Economics, University of Birmingham"],
-    previousExperience: ["Co-founder, SES Environmental", "Co-founder, Webcel Solutions", "Corporate Finance (M&A), KPMG India"],
-    boardSeats: [],
-    notableInvestments: [],
-    ipoCount: null,
-    majorExits: null,
-    careerTimeline: [{ year: 2010, event: "Co-founds Webcel Solutions, an e-commerce and inventory management startup for Indian SMEs" }, { year: 2012, event: "Co-founds SES Environmental, scaling it from five people to 100+ employees across India" }, { year: 2020, event: "Completes MBA at Babson College, magna cum laude" }],
-    biography: "Shanbor Gupta is a Principal at Clean Energy Ventures, based in Europe, where he leads greenhouse gas impact assessment work and helped develop the firm's Simple Emissions Reduction Calculator (SERC) tool. He joined the firm as an Investment Manager before being promoted to Principal, and works on deal sourcing and portfolio company support alongside emissions quantification. Before venture capital he was a serial founder: he co-founded Webcel Solutions in 2010, an e-commerce and inventory management startup serving Indian SMEs, and co-founded SES Environmental in 2012, growing it from a five-person team to more than 100 employees across India providing asset management and lifecycle assessment services. He also worked in KPMG India's corporate finance (M&A) team. He holds an MBA from Babson College and a bachelor's degree in International Studies and Economics from the University of Birmingham.",
-    sources: [{ label: "Clean Energy Ventures - Shanbor Gupta bio", url: "https://cleanenergyventures.com/team-members/shanbor-gupta" }]
   }
 });
