@@ -63,7 +63,7 @@
   padding: 2px 4px;
 }
 .intel-unfollow-btn:hover {
-  color: #f472b6;
+  color: #BE185D;
 }
 .intel-follow-empty {
   font-size: 12.5px;
@@ -83,7 +83,7 @@
   padding: 24px;
   background: var(--surface);
   border: 1px solid var(--hairline);
-  border-left: 3px solid #f472b6;
+  border-left: 3px solid #BE185D;
   border-radius: 5px;
 }
 .intel-error-title {
