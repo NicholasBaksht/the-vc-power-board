@@ -1,5 +1,156 @@
 /* data-partners shard 6 of 6 - generated, do not hand-edit */
 Object.assign(partnerProfiles, {
+"caroline-duffy": {
+    name: "Caroline Duffy",
+    firm: "Cowboy Ventures",
+    firmSlug: "cowboy-ventures",
+    title: "Partner",
+    joinedYear: 2025,
+    investmentFocus: [
+      "Enterprise Software",
+      "AI"
+    ],
+    education: [
+      "MBA, Stanford Graduate School of Business",
+      "B.A., Dartmouth College"
+    ],
+    previousExperience: [
+      "AI researcher, Harvard",
+      "Management consultant",
+      "Building and investing in AI companies with Andrew Ng (AI Fund)",
+      "Investor, Construct Capital"
+    ],
+    firmHistory: [
+      { firmSlug: "construct-capital", role: "Investor", startYear: null, endYear: 2025 }
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Joined Cowboy Ventures as a Partner on the investment team, based in the San Francisco Bay Area." },
+      { year: 2026, event: "Published the Cowboy Ventures piece AI and the Labor Shortage Economy in April." }
+    ],
+    biography: "Caroline Duffy is a Partner at Cowboy Ventures, the early stage firm founded by Aileen Lee, and joined its investment team in January 2025 based in the San Francisco Bay Area. Her firm bio states she focuses on B2B software and AI, with a particular interest in teams modernizing overlooked, unglamorous industries burdened by outdated tech stacks. Before Cowboy she was at Construct Capital, where she led investments in supply chain and logistics, manufacturing and critical infrastructure, and prior to that she was building and investing in AI companies with Andrew Ng. She holds an MBA from Stanford and a BA from Dartmouth, and started her career as an AI researcher at Harvard before working as a management consultant.",
+    notableInvestments: [],
+    sources: [
+      { label: "Cowboy Ventures - Caroline Duffy", url: "https://www.cowboy.vc/team/caroline-duffy" },
+      { label: "Cowboy Ventures - Welcoming Caroline Duffy to Team Cowboy!", url: "https://www.cowboy.vc/news/welcoming-caroline-duffy-to-team-cowboy" },
+      { label: "Cowboy Ventures - Latest from us (news index)", url: "https://www.cowboy.vc/news" },
+      { label: "FreightWaves Events - Caroline Duffy speaker bio", url: "https://live.freightwaves.com/event-speakers/caroline-duffy" }
+    ]
+  },
+"jocelyn-goldfein": {
+    name: "Jocelyn Goldfein",
+    firm: "Zetta Venture Partners",
+    firmSlug: "zetta-venture-partners",
+    title: "Managing Director",
+    joinedYear: 2016,
+    investmentFocus: [
+      "AI",
+      "Enterprise Software",
+      "Developer Tools & Infrastructure"
+    ],
+    education: [
+      "BS Computer Science, Stanford University"
+    ],
+    previousExperience: [
+      "Engineering leader, Trilogy",
+      "Engineering leader, VMware",
+      "Director of Engineering, Facebook",
+      "Co-founder, MessageOne",
+      "Co-founder, Datify"
+    ],
+    firmHistory: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Joined Zetta Venture Partners, according to her firm bio." },
+      { year: 2018, event: "Quoted on Zetta's lead of Promethium's 2.5 million dollar seed round." },
+      { year: 2019, event: "Joined Aptology's board of directors when Zetta led its 8.4 million dollar Series A." },
+      { year: 2021, event: "Wrote Zetta's post announcing Aptology's platform launch." }
+    ],
+    biography: "Jocelyn Goldfein is a Managing Director at Zetta Venture Partners, which she joined in 2016 according to her firm bio. She backs founders using machine learning and AI in cloud infrastructure, DevOps, supply chain and HR tech, as well as founders building ML platforms and data infrastructure. Before investing she was an engineering leader at Facebook, VMware and Trilogy, and she co-founded MessageOne and Datify. She received her BS in Computer Science from Stanford University, where she lectures on Leadership in High Tech, and has served as Vice Chair of the Board of Harvey Mudd College.",
+    notableInvestments: [
+      { name: "Aptology", ticker: null, stage: "Series A", year: 2019, yearPrecision: "year", sector: "Enterprise Software", subsector: "Sales fit-to-role solution", role: "board", evidence: [
+        { url: "https://www.finsmes.com/2019/04/aptology-raises-8-4m-in-series-a-funding.html", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://medium.com/@Zetta/aptology-the-science-of-fit-5239e263bbb4", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Telmai", ticker: null, stage: "Seed", year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "No-code real-time data quality analysis and monitoring platform", role: null, evidence: [
+        { url: "https://www.telm.ai/tblog/telmai-announces-2-8-million-seed-from-406-partners-zetta-venture-partners-y-combinator-others/", type: "deal-announcement", checked: "2026-08-25" },
+        { url: "https://www.zettavp.com/companies", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Promethium", ticker: null, stage: "Seed", year: 2018, yearPrecision: "year", sector: "Enterprise Software", subsector: "Self-service data governance and business intelligence analytics", role: null, evidence: [
+        { url: "https://www.storagenewsletter.com/2018/10/30/2-5-million-in-seed-capital-for-promethium/", type: "deal-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Zetta Venture Partners - Jocelyn Goldfein", url: "https://www.zettavp.com/team/jocelyn-goldfein" },
+      { label: "Zetta Venture Partners - Team", url: "https://www.zettavp.com/team" },
+      { label: "Zetta Venture Partners - Companies", url: "https://www.zettavp.com/companies" },
+      { label: "Zetta Venture Partners - Aptology: The Science of Fit", url: "https://medium.com/@Zetta/aptology-the-science-of-fit-5239e263bbb4" },
+      { label: "FinSMEs - Aptology Raises $8.4M in Series A Funding", url: "https://www.finsmes.com/2019/04/aptology-raises-8-4m-in-series-a-funding.html" },
+      { label: "Telmai - Telmai announces $2.8 Million seed", url: "https://www.telm.ai/tblog/telmai-announces-2-8-million-seed-from-406-partners-zetta-venture-partners-y-combinator-others/" },
+      { label: "StorageNewsletter - $2.5 Million in Seed Capital for Promethium", url: "https://www.storagenewsletter.com/2018/10/30/2-5-million-in-seed-capital-for-promethium/" },
+      { label: "PRNewswire - Zetta Venture Partners Names Apoorva Pandhi Managing Director", url: "https://www.prnewswire.com/news-releases/zetta-venture-partners-names-apoorva-pandhi-managing-director-301681436.html" },
+      { label: "Fortune - Zetta Venture Partners hires Jocelyn Goldfein", url: "https://fortune.com/2017/01/10/zetta-venture-partners-hires-jocelyn-goldfein/" }
+    ]
+  },
+"apoorva-pandhi": {
+    name: "Apoorva Pandhi",
+    firm: "Zetta Venture Partners",
+    firmSlug: "zetta-venture-partners",
+    title: "Managing Director",
+    joinedYear: 2022,
+    investmentFocus: [
+      "AI",
+      "Developer Tools & Infrastructure",
+      "Enterprise Software"
+    ],
+    education: [
+      "Engineering degree, IIT Delhi",
+      "MBA, The Wharton School, University of Pennsylvania"
+    ],
+    previousExperience: [
+      "Investor, Lightspeed Venture Partners",
+      "Co-founder, Funnl Labs",
+      "Vice President of Enterprise Sales, Quid",
+      "Partner, Foundation Capital",
+      "Co-founder, GTMfordev"
+    ],
+    firmHistory: [
+      { firmSlug: "lightspeed", role: "Investor", startYear: null, endYear: null },
+      { firmSlug: "foundation-capital", role: "Partner", startYear: null, endYear: null }
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: null, event: "Began his investing career at Lightspeed Venture Partners focused on enterprise and consumer investments." },
+      { year: null, event: "Co-founded Funnl Labs, a machine learning communication platform." },
+      { year: null, event: "Served as Partner at Foundation Capital investing in early ML, data and developer companies." },
+      { year: 2022, event: "Joined Zetta Venture Partners as Managing Director on November 17." }
+    ],
+    biography: "Apoorva Pandhi is a Managing Director at Zetta Venture Partners, which announced his appointment in November 2022. He works with technical and product-centric founders on problems in AI and machine learning, data infrastructure and cloud-native infrastructure at the zero-to-one stage. Before Zetta he was a Partner at Foundation Capital, where Zetta's announcement credits him with seed investments including Outerbounds, MotherDuck and Tabular, and earlier he began his investing career at Lightspeed Venture Partners, was Vice President of Enterprise Sales at Quid and co-founded Funnl Labs. He earned an engineering degree from IIT Delhi and an MBA from the Wharton School at the University of Pennsylvania.",
+    notableInvestments: [
+      { name: "MotherDuck", ticker: null, stage: "Seed", year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "OSS DuckDB", role: null, evidence: [
+        { url: "https://www.prnewswire.com/news-releases/zetta-venture-partners-names-apoorva-pandhi-managing-director-301681436.html", type: "firm-announcement", checked: "2026-08-25" },
+        { url: "https://www.zettavp.com/companies", type: "portfolio-page", checked: "2026-08-25" }
+      ] },
+      { name: "Outerbounds", ticker: null, stage: "Seed", year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "OSS Metaflow", role: null, evidence: [
+        { url: "https://www.prnewswire.com/news-releases/zetta-venture-partners-names-apoorva-pandhi-managing-director-301681436.html", type: "firm-announcement", checked: "2026-08-25" }
+      ] },
+      { name: "Tabular", ticker: null, stage: "Seed", year: null, yearPrecision: null, sector: "Developer Tools & Infrastructure", subsector: "OSS Iceberg", role: null, evidence: [
+        { url: "https://www.prnewswire.com/news-releases/zetta-venture-partners-names-apoorva-pandhi-managing-director-301681436.html", type: "firm-announcement", checked: "2026-08-25" }
+      ] }
+    ],
+    sources: [
+      { label: "Zetta Venture Partners - Apoorva Pandhi", url: "https://www.zettavp.com/team/apoorva-pandhi" },
+      { label: "Zetta Venture Partners - Team", url: "https://www.zettavp.com/team" },
+      { label: "Zetta Venture Partners - Companies", url: "https://www.zettavp.com/companies" },
+      { label: "PRNewswire - Zetta Venture Partners Names Apoorva Pandhi Managing Director", url: "https://www.prnewswire.com/news-releases/zetta-venture-partners-names-apoorva-pandhi-managing-director-301681436.html" }
+    ]
+  },
 "kane-hsieh": {
     name: "Kane Hsieh",
     firm: "Root Ventures",
@@ -1578,7 +1729,14 @@ Object.assign(partnerProfiles, {
       { year: null, event: "Joined the board of BLCK VC and became a Kauffman Fellow, Class 24." }
     ],
     biography: "Mike Asem is listed by M25 as Founding Partner of the Chicago-based early-stage venture firm, whose site states he has managed over 100 investments in early-stage companies. Before M25 he founded The Anvil, a co-working space and startup incubator at Purdue University, where he helped launch Purdue's first Y Combinator-accepted startup. He serves on the board of BLCK VC and is a Kauffman Fellow, Class 24. M25's founder and Managing Partner Victor Gutwein wrote in the firm's May 2025 decade retrospective that his partner Mike left a stable job to start the firm alongside him.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "ScriptDrop", ticker: null,
+      sector: "Digital Health",
+      evidence: [{ url: "https://www.kauffmanfellows.org/fellows/mike-asem", type: "press", checked: "2026-08-31" }] },
+    { name: "SteadyMD", ticker: null,
+      sector: "Digital Health", subsector: "virtual healthcare",
+      evidence: [{ url: "https://startlandnews.com/2025/03/m25-guy-friedman/", type: "press", checked: "2026-08-31" }] }
+  ],
     sources: [
       { label: "M25 - Mike Asem", url: "https://www.m25vc.com/team/mike-asem" },
       { label: "M25 - Team", url: "https://m25vc.com/team/" },
@@ -2236,7 +2394,13 @@ Object.assign(partnerProfiles, {
       { year: 2022, event: "Signed Ahren II LP's Form D as authorized signatory on May 11, 2022." }
     ],
     biography: "Peter Lourensz works at Ahren Innovation Capital, the Cambridge based investment firm whose funds are managed by Ahren Innovation Capital LLP. A Form D filed with the SEC for Ahren II LP names James Peter Lourensz as a director of the fund's general partner, Ahren Innovation Capital Guernsey (GP) II Limited, and he signed that filing as authorized signatory in May 2022. The same filing reports first sales for Ahren II LP of 30 million dollars in 2022 and names Alice Newcombe-Ellis as managing partner of Ahren Innovation Capital LLP.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Outsee", ticker: null,
+      sector: "Biotech", subsector: "Research and experimental development on biotechnology", role: "board",
+      evidence: [{ url: "https://find-and-update.company-information.service.gov.uk/officers/x_o5mpthFWT8qrLkrasn4q-QfHQ/appointments", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://find-and-update.company-information.service.gov.uk/company/14388773/officers", type: "regulatory", checked: "2026-08-31" },
+                  { url: "https://find-and-update.company-information.service.gov.uk/company/14388773", type: "regulatory", checked: "2026-08-31" }] }
+  ],
     sources: [
       { label: "SEC Form D - Ahren II LP (filed 2022-05-11)", url: "https://www.sec.gov/Archives/edgar/data/1921626/000131586322000364/primary_doc.xml" },
       { label: "Companies House - Ahren Innovation Capital LLP (OC419193)", url: "https://find-and-update.company-information.service.gov.uk/company/OC419193" }
@@ -3319,7 +3483,16 @@ Object.assign(partnerProfiles, {
       { year: null, event: "Became Investment Director at KawiSafi, driving investments in off-grid renewable energy and related technologies in East Africa." }
     ],
     biography: "Michelle Haigh Osorio is listed by KawiSafi as Investment Director, where she drives investments in off-grid renewable energy and related technologies in East Africa. KawiSafi is an impact fund launched by Acumen that invests growth capital in companies providing clean, affordable and efficient energy to East Africa's low-income populations. She has worked in emerging markets private equity since 2007, including renewable power project investments in Latin America at Conduit Capital Partners and the Carlyle Group, and earlier roles in Public Sector and Infrastructure Banking at Goldman Sachs and at SJF Ventures. She holds an MBA from the Wharton School of the University of Pennsylvania and a BS in Economics from the University of Pittsburgh.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "OPES Solutions", ticker: null,
+      sector: "Climate & Energy", role: "board",
+      evidence: [{ url: "https://www.afsic.net/business-leader/michelle-haigh-osorio-2022-speaker/", type: "press", checked: "2026-08-31" },
+                  { url: "https://www.afsic.net/speaker/michelle-osorio-2023-speaker/", type: "press", checked: "2026-08-31" }] },
+    { name: "SHYFT Power Solutions", ticker: null,
+      sector: "Climate & Energy",
+      evidence: [{ url: "https://www.afsic.net/business-leader/michelle-haigh-osorio-2022-speaker/", type: "press", checked: "2026-08-31" },
+                  { url: "https://www.afsic.net/speaker/michelle-osorio-2023-speaker/", type: "press", checked: "2026-08-31" }] }
+  ],
     sources: [
       { label: "KawiSafi Ventures - Michelle Haigh Osorio", url: "https://kawisafi.com/team/michelle-haigh-osorio.html" },
       { label: "KawiSafi Ventures - Team", url: "https://kawisafi.com/team" },
@@ -8716,7 +8889,35 @@ Object.assign(partnerProfiles, {
       { year: 2023, event: "Shield Capital announced his admission as Partner of the firm on 1 May 2023." }
     ],
     biography: "Michael Brown is a Partner at Shield Capital, where his stated expertise is executive leadership and defense acquisition. Before joining the firm he served as Director of the Defense Innovation Unit and as a White House Presidential Innovation Fellow, and earlier held the CEO role at Symantec and the Chairman and CEO role at Quantum Corp, as well as the Chairman role at EqualLogic. Shield Capital states that he joined in October 2022 as a Venture Partner and was admitted as Partner in May 2023. His firm bio lists affiliations with the Hoover Institution at Stanford University, the Center for a New American Security and the National Security Innovation Base.",
-    notableInvestments: [],
+    notableInvestments: [
+    { name: "Strider Technologies", ticker: null, year: 2022, yearPrecision: "year",
+      sector: "Cybersecurity", subsector: "Strategic Intelligence", role: "board",
+      evidence: [{ url: "https://www.striderintel.com/newsroom/michael-brown-joins-strider-technologies-board-of-directors/", type: "firm-announcement", checked: "2026-08-31" },
+                  { url: "https://www.cnas.org/people/michael-brown", type: "press", checked: "2026-08-31" },
+                  { url: "https://cset.georgetown.edu/staff/mike-brown/", type: "press", checked: "2026-08-31" }] },
+    { name: "Asimily", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://www.cnas.org/people/michael-brown", type: "press", checked: "2026-08-31" },
+                  { url: "https://cset.georgetown.edu/staff/mike-brown/", type: "press", checked: "2026-08-31" }] },
+    { name: "Anetac", ticker: null,
+      sector: "Cybersecurity", role: "board",
+      evidence: [{ url: "https://cset.georgetown.edu/staff/mike-brown/", type: "press", checked: "2026-08-31" }] },
+    { name: "Xeol", ticker: null,
+      sector: "Cybersecurity",
+      evidence: [{ url: "https://informaconnect.com/superventure/speakers/michael-brown/", type: "press", checked: "2026-08-31" }] },
+    { name: "Nexla", ticker: null,
+      sector: "Developer Tools & Infrastructure", role: "board",
+      evidence: [{ url: "https://www.cnas.org/people/michael-brown", type: "press", checked: "2026-08-31" },
+                  { url: "https://cset.georgetown.edu/staff/mike-brown/", type: "press", checked: "2026-08-31" },
+                  { url: "https://informaconnect.com/superventure/speakers/michael-brown/", type: "press", checked: "2026-08-31" }] },
+    { name: "Code Metal", ticker: null,
+      sector: "Developer Tools & Infrastructure", role: "board",
+      evidence: [{ url: "https://www.cnas.org/people/michael-brown", type: "press", checked: "2026-08-31" },
+                  { url: "https://cset.georgetown.edu/staff/mike-brown/", type: "press", checked: "2026-08-31" }] },
+    { name: "Unstructured", ticker: null,
+      sector: "AI",
+      evidence: [{ url: "https://informaconnect.com/superventure/speakers/michael-brown/", type: "press", checked: "2026-08-31" }] }
+  ],
     sources: [
       { label: "Shield Capital - Michael Brown", url: "https://shieldcap.com/team/michael-brown" },
       { label: "Shield Capital Announces Michael Brown as Partner (1 May 2023)", url: "https://shieldcap.com/newsroom/shield-capital-announces-michael-brown-as-partner" }
