@@ -60,3 +60,40 @@
   .cs-bar-row { grid-template-columns: minmax(0,120px) 1fr 40px; }
   .cs-stats, .cs-strip { gap: 18px; }
 }
+
+/* --- richer profile fields (angel batch 1) ------------------- */
+.cs-facts { font-size: 0.8rem; color: #5479B5; margin-bottom: 14px; }
+.cs-vnote { font-size: 0.78rem; color: #8fa0bf; line-height: 1.6; max-width: 70ch;
+  border-left: 2px solid rgba(140,160,200,0.24); padding: 2px 0 2px 12px; margin: 0 0 22px; }
+.cs-sub-h { font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase;
+  color: #8fa0bf; margin: 14px 0 7px; }
+.cs-block > .cs-sub-h:first-of-type { margin-top: 0; }
+
+.cs-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 4px; }
+.cs-chip { font-size: 0.76rem; color: #b8c2d6; border: 1px solid rgba(140,160,200,0.26);
+  border-radius: 3px; padding: 3px 9px; }
+.cs-chip-stage { color: #8fa0bf; border-style: dashed; }
+
+.cs-caps { list-style: none; margin: 0; padding: 0; }
+.cs-cap { padding: 9px 0; border-bottom: 1px solid rgba(140,160,200,0.1); }
+.cs-cap-name { display: inline-block; font-size: 0.76rem; letter-spacing: 0.04em;
+  text-transform: uppercase; color: #5479B5; min-width: 160px; vertical-align: top; }
+.cs-cap-ev { font-size: 0.84rem; color: #b8c2d6; line-height: 1.55; }
+.cs-cap-src { font-size: 0.72rem; color: #8fa0bf; white-space: nowrap; }
+
+.cs-item-link { color: #b8c2d6; text-decoration: none; }
+.cs-item-link:hover { color: #5479B5; }
+
+.cs-time { list-style: none; margin: 0; padding: 0; }
+.cs-time-row { display: grid; grid-template-columns: 56px 1fr; gap: 12px;
+  padding: 7px 0; border-bottom: 1px solid rgba(140,160,200,0.1); }
+.cs-time-y { font-size: 0.8rem; color: #5479B5; font-variant-numeric: tabular-nums; }
+.cs-time-e { font-size: 0.85rem; color: #b8c2d6; line-height: 1.5; }
+
+.cs-plain { list-style: none; margin: 0 0 4px; padding: 0; }
+.cs-plain li { font-size: 0.85rem; color: #b8c2d6; line-height: 1.55; padding: 3px 0; }
+
+@media (max-width: 640px) {
+  .cs-cap-name { display: block; min-width: 0; margin-bottom: 3px; }
+  .cs-time-row { grid-template-columns: 44px 1fr; gap: 8px; }
+}
