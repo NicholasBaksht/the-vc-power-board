@@ -8,38 +8,52 @@
    defined here.
    ============================================================ */
 :root {
-    /* Deep navy surfaces - same structure as before (bg darkest,
-       surface-raised lightest), shifted from near-black to a real
-       navy so the "premium financial institution" base color reads
-       as blue rather than charcoal. */
-    --bg: #070B14;
-    --surface: #0E1524;
-    --surface-raised: #141C30;
-    --hairline: #263048;
+    /* WHITE GROUND, BLACK TEXT.
+       Power Board used to be a dark navy product. The palette below is
+       the single place that changed - every one of the 30+ stylesheets
+       reads these tokens, so flipping them here repaints the whole
+       site rather than each file being edited on its own.
 
-    --ink: #EDF1F8;
-    --ink-dim: #8994AC;
+       The structure is borrowed from 10x.app: a pure white ground with
+       text and dividers expressed as black at decreasing opacity. That
+       is what keeps a light UI from turning muddy - a grey hairline
+       fights whatever sits behind it, while black at 9% simply reads
+       as the same divider everywhere. */
+    --bg: #FFFFFF;
+    --surface: #FAFAFA;
+    --surface-raised: #F4F5F4;
+    --hairline: rgba(0, 0, 0, 0.09);
 
-    /* The real brand tokens going forward - a strong royal/electric
-       blue for primary actions and active states, and a brighter
-       highlight blue for hover/emphasis. --gold and --gold-bright
-       are kept as aliases pointing at these so every existing file
-       (firm cards, firm detail, compare, dashboard, family tree,
-       relationship graph, discovery, intelligence feed, etc.) picks
-       up the new identity without being individually touched. */
-       --accent: #5479B5;
-    --accent-bright: #6389C4;
-    /* The same accent as channels, for the translucent washes. 22 rules
-       across 7 stylesheets used to hard-code the accent as a literal rgba() and so
-       ignored the theme entirely; they read this instead. */
-    --accent-rgb: 84, 121, 181;
+    /* Near-black rather than #000 - pure black on pure white vibrates
+       at small sizes. Secondary text is an alpha so it stays correct
+       on both the white ground and the two grey surfaces. */
+    --ink: #111315;
+    --ink-dim: rgba(0, 0, 0, 0.55);
+    /* Decorative only - separators and dots. Several files used
+       --hairline as a text colour to get "very faint" on the dark
+       theme; on white that renders at 1.2:1, i.e. invisible. Those
+       rules now point here, and anything that was actually prose
+       points at --ink-dim, which clears 4.5:1. */
+    --ink-faint: rgba(0, 0, 0, 0.32);
+
+    /* Brand accent, unchanged in role: one green for actions, active
+       states and data fills. --gold/--gold-bright remain aliases so
+       every file that still names them picks this up untouched. */
+    --accent: #08752C;
+    /* On the dark theme "bright" meant lighter. On white, emphasis
+       has to go the other way: #0A8F36 as text scored 4.03:1 and
+       failed AA, so the hover/emphasis variant is now DARKER than
+       the base rather than lighter. */
+    --accent-bright: #05561F;
+    --accent-rgb: 8, 117, 44;
     --gold: var(--accent);
     --gold-bright: var(--accent-bright);
 
-    /* Financial up/down convention - left as-is deliberately, not
-       part of the brand accent system. */
-    --green: #4ADE80;
-    --red: #F87171;
+    /* Financial up/down. Both were tuned for a dark ground and were
+       far too pale on white - #4ADE80 on #FFF fails contrast outright.
+       Darkened to the same weight as the body text. */
+    --green: #15803D;
+    --red: #C81E1E;
 
     --serif: 'Inter', sans-serif;
     --sans: 'Inter', sans-serif;
@@ -82,7 +96,7 @@
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--ink);
   }
 
   /* ---------- SITE NAV ---------- */
@@ -295,7 +309,7 @@
   footer .sig {
     font-family: var(--mono);
     font-size: 11px;
-    color: var(--hairline);
+    color: var(--ink-dim);
     margin-top: 24px;
   }
   .footer-legal {
@@ -342,7 +356,7 @@
   white-space: nowrap;
 }
 .org-badge-label { color: var(--accent); text-transform: uppercase; font-weight: 600; }
-.org-badge-sep { color: var(--hairline); }
+.org-badge-sep { color: var(--ink-faint); }
 .org-badge-parent { color: var(--ink); letter-spacing: .02em; }
 
 /* Government and affiliate are deliberately quieter than corporate -
@@ -825,7 +839,7 @@
 }
 .pp-traits { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 11px; }
 .pp-trait { font-size: 12.5px; color: var(--accent); }
-.pp-dot { color: var(--hairline); font-size: 12px; }
+.pp-dot { color: var(--ink-faint); font-size: 12px; }
 
 .pp-conf { display: inline-flex; align-items: baseline; gap: 7px; margin-bottom: 10px; }
 .pp-conf-key {
