@@ -1,59 +1,48 @@
 /* ============================================================
    HOMEPAGE.CSS
-   The white/green homepage. Everything here is scoped.
+   White ground, black text, green accent.
 
-   WHY NOTHING IN THIS FILE TOUCHES :root
-   The rest of Power Board is a dark navy product - 31 stylesheets
-   read --bg, --surface and --ink, and every firm page, partner
-   profile, graph and report inherits them. Repainting those tokens
-   white to get a white homepage would repaint the entire site as a
-   side effect. So the homepage carries its own local palette under
-   .pbh, and the header is lightened only while body.is-home is set.
-   Navigating away restores the product's own theme with no reset
-   rules and no specificity war.
+   THIS FILE NO LONGER DEFINES A PALETTE.
+   It used to carry its own local colours because the rest of the
+   site was dark navy and the homepage was the only light page.
+   The site tokens in main.css are now white/black themselves, so
+   the homepage reads --bg, --ink, --ink-dim, --hairline and
+   --accent like every other stylesheet. Nothing here overrides a
+   colour the rest of the product does not already use, which is
+   why the header needs no homepage-only treatment anymore.
 
-   The palette is flat by instruction: no gradient, no glow, no
-   blur, no translucency. Green is an accent on white, used for one
-   action, one number and one bar fill - not a surface color.
+   STRUCTURE OVER CHROME.
+   Following 10x.app: a white ground, text and dividers as black at
+   decreasing opacity, and almost no boxes. Sections are separated
+   by space and one hairline rule, not by bordered cards. Only the
+   product preview keeps a border, because it is a screenshot of a
+   real interface and needs an edge to read as one.
    ============================================================ */
 
 .pbh {
-  --g:      #08752C;   /* primary green - actions, bars, accents */
-  --g-dk:   #075522;   /* hover / pressed */
-  --g-sf:   #F3F8F4;   /* light green surface, used sparingly */
-  --ink:    #101418;
-  --ink-2:  #626A66;
-  --line:   #E2E7E3;
-  --paper:  #FFFFFF;
-  --paper-2:#FAFBFA;
-
-  background: var(--paper);
+  background: var(--bg);
   color: var(--ink);
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* The homepage owns the page background while it is the route. */
-body.is-home { background: var(--paper, #FFFFFF); }
-body.is-home .wrap { background: #FFFFFF; max-width: none; padding: 0; }
+body.is-home { background: var(--bg); }
+body.is-home .wrap { background: var(--bg); max-width: none; padding: 0; }
 body.is-home #methodologyAnchor {
-  max-width: 1300px; margin: 0 auto; padding-left: 28px; padding-right: 28px;
+  max-width: 1340px; margin: 0 auto; padding-left: 28px; padding-right: 28px;
 }
 
-/* --- header, lightened only on the homepage ------------------ */
+/* --- header ---------------------------------------------------
+   The shared header gives .pb-nav order:3, which floats it past the
+   sign-in cluster. Restate the intended reading order and line the
+   bar up with the hero beneath it. Colour is inherited now. */
 body.is-home .pb-header {
-  background: #FFFFFF;
-  border-bottom: 1px solid #E2E7E3;
+  max-width: 1340px;
   min-height: 66px;
   flex-wrap: nowrap;
   gap: 0 20px;
   padding: 0 24px;
 }
-/* The shared header gives .pb-nav order:3, which floats it past the
-   sign-in cluster. The homepage restates the intended reading order -
-   brand, navigation, then the account actions on the right - and
-   widens the bar to line up with the hero below it. */
-body.is-home .pb-header { max-width: 1340px; }
 body.is-home .pb-brand { order: 1; }
 body.is-home .pb-nav {
   order: 2;
@@ -64,73 +53,51 @@ body.is-home .pb-nav {
   min-width: 0;
   flex-wrap: nowrap;
 }
-body.is-home .pb-header-actions { order: 3; }
+body.is-home .pb-header-actions { order: 3; flex: 0 0 auto; gap: 10px; }
 body.is-home .pb-nav .nav-link {
-  padding: 7px 10px;
-  font-size: 0.83rem;
-  white-space: nowrap;
-  border-radius: 5px;
+  padding: 7px 10px; font-size: 0.83rem; white-space: nowrap; border-radius: 5px;
 }
-body.is-home .pb-header-actions { flex: 0 0 auto; gap: 10px; }
 body.is-home .pb-cta { padding: 8px 15px; font-size: 0.85rem; white-space: nowrap; }
 body.is-home .pb-signin { font-size: 0.85rem; white-space: nowrap; }
-body.is-home .pb-wordmark { color: #101418; }
-body.is-home .pb-nav .nav-link { color: #626A66; background: transparent; }
-body.is-home .pb-nav .nav-link:hover { color: #101418; background: #F3F8F4; }
-body.is-home .pb-nav .nav-link.active { color: #08752C; background: #F3F8F4; }
-body.is-home .pb-signin { color: #626A66; }
-body.is-home .pb-signin:hover { color: #101418; }
-body.is-home .pb-cta {
-  background: #08752C;
-  border: 1px solid #08752C;
-  color: #FFFFFF;
-  border-radius: 6px;
-}
-body.is-home .pb-cta:hover { background: #075522; border-color: #075522; }
-body.is-home .pb-nav-sep { background: #E2E7E3; }
 
-/* --- shared type --------------------------------------------- */
+/* --- type ------------------------------------------------------ */
 .pbh-h1 {
-  font-size: clamp(2.05rem, 3.3vw, 2.9rem); /* 33 -> 49px, sized so each
-                                                sentence holds one line */
+  font-size: clamp(2.05rem, 3.3vw, 2.9rem);
   line-height: 1.08;
-  letter-spacing: -0.022em;
+  letter-spacing: -0.024em;
   font-weight: 600;
   color: var(--ink);
   margin: 0 0 18px;
 }
 .pbh-h2 {
-  font-size: clamp(1.35rem, 2.1vw, 1.75rem);
-  line-height: 1.2;
-  letter-spacing: -0.015em;
+  font-size: clamp(1.3rem, 2vw, 1.65rem);
+  line-height: 1.22;
+  letter-spacing: -0.018em;
   font-weight: 600;
   color: var(--ink);
   margin: 0 0 8px;
 }
 .pbh-sub {
-  font-size: 1.02rem;
-  line-height: 1.6;
-  color: var(--ink-2);
-  margin: 0 0 26px;
-  max-width: 48ch;
+  font-size: 1.02rem; line-height: 1.6; color: var(--ink-dim);
+  margin: 0 0 26px; max-width: 48ch;
 }
-.pbh-sec-p { font-size: 0.94rem; line-height: 1.6; color: var(--ink-2); margin: 0; max-width: 62ch; }
+.pbh-sec-p {
+  font-size: 0.94rem; line-height: 1.6; color: var(--ink-dim);
+  margin: 0; max-width: 62ch;
+}
 
+/* Quiet by design: a label, not a badge. */
 .pbh-eyebrow {
-  display: inline-block;
+  display: block;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.68rem;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--g-dk);
-  background: var(--g-sf);
-  border: 1px solid #DCE9E0;
-  border-radius: 4px;
-  padding: 5px 10px;
-  margin-bottom: 20px;
+  color: var(--ink-dim);
+  margin-bottom: 18px;
 }
 
-/* --- buttons -------------------------------------------------- */
+/* --- buttons --------------------------------------------------- */
 .pbh-ctas { display: flex; flex-wrap: wrap; gap: 10px; }
 .pbh-btn {
   display: inline-flex; align-items: center; justify-content: center;
@@ -141,12 +108,12 @@ body.is-home .pb-nav-sep { background: #E2E7E3; }
   border: 1px solid transparent;
   transition: background .15s ease, border-color .15s ease, color .15s ease;
 }
-.pbh-btn-p { background: var(--g); border-color: var(--g); color: #FFFFFF; }
-.pbh-btn-p:hover { background: var(--g-dk); border-color: var(--g-dk); }
-.pbh-btn-s { background: #FFFFFF; border-color: var(--line); color: var(--ink); }
-.pbh-btn-s:hover { border-color: var(--g); color: var(--g-dk); }
+.pbh-btn-p { background: var(--accent); border-color: var(--accent); color: #FFFFFF; }
+.pbh-btn-p:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
+.pbh-btn-s { background: var(--bg); border-color: var(--hairline); color: var(--ink); }
+.pbh-btn-s:hover { border-color: var(--accent); color: var(--accent); }
 
-/* --- hero ----------------------------------------------------- */
+/* --- hero ------------------------------------------------------ */
 .pbh-hero {
   display: grid;
   grid-template-columns: 44fr 56fr;
@@ -154,31 +121,44 @@ body.is-home .pb-nav-sep { background: #E2E7E3; }
   align-items: center;
   max-width: 1340px;
   margin: 0 auto;
-  padding: 68px 28px 60px;
+  padding: 76px 28px 68px;
 }
-.pbh-hero-l { min-width: 0; }
-.pbh-hero-r { min-width: 0; }
+.pbh-hero-l, .pbh-hero-r { min-width: 0; }
 
-/* --- product preview ------------------------------------------ */
+/* The database counts, as a sentence rather than a band of cards. */
+.pbh-stats {
+  display: flex; flex-wrap: wrap; gap: 6px 20px;
+  margin-top: 30px; padding-top: 20px;
+  border-top: 1px solid var(--hairline);
+  font-size: 0.83rem; color: var(--ink-dim);
+}
+.pbh-stat strong {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600; color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- product preview -------------------------------------------
+   The one element that keeps a border: it stands for a real screen. */
 .pbh-panel {
-  border: 1px solid var(--line);
+  border: 1px solid var(--hairline);
   border-radius: 8px;
-  background: #FFFFFF;
+  background: var(--bg);
   overflow: hidden;
 }
 .pbh-panel-bar {
   display: flex; align-items: baseline; justify-content: space-between;
   flex-wrap: wrap; gap: 6px;
   padding: 11px 16px;
-  background: var(--paper-2);
-  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+  border-bottom: 1px solid var(--hairline);
 }
 .pbh-panel-t {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.68rem; letter-spacing: 0.09em; text-transform: uppercase;
   color: var(--ink);
 }
-.pbh-panel-q { font-size: 0.72rem; color: var(--ink-2); }
+.pbh-panel-q { font-size: 0.72rem; color: var(--ink-dim); }
 
 .pbh-firm { padding: 18px 16px 16px; }
 .pbh-firm-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
@@ -186,151 +166,134 @@ body.is-home .pb-nav-sep { background: #E2E7E3; }
   font-size: 1.12rem; font-weight: 600; color: var(--ink);
   text-decoration: none; line-height: 1.25;
 }
-.pbh-firm-n:hover { color: var(--g-dk); }
-.pbh-firm-q { font-size: 0.78rem; color: var(--g-dk); margin-top: 3px; }
+.pbh-firm-n:hover { color: var(--accent); }
+.pbh-firm-q { font-size: 0.78rem; color: var(--accent); margin-top: 3px; }
 
 .pbh-score { text-align: right; flex-shrink: 0; }
 .pbh-score-n {
   display: block;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1.85rem; font-weight: 600; line-height: 1;
-  color: var(--g); font-variant-numeric: tabular-nums;
+  color: var(--accent); font-variant-numeric: tabular-nums;
 }
 .pbh-score-l {
   display: block; font-size: 0.66rem; letter-spacing: 0.06em;
-  text-transform: uppercase; color: var(--ink-2); margin-top: 4px;
+  text-transform: uppercase; color: var(--ink-dim); margin-top: 4px;
 }
 
 .pbh-kv {
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 12px 18px; margin: 18px 0 0; padding: 15px 0 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--hairline);
 }
 .pbh-kv dt {
   font-size: 0.68rem; letter-spacing: 0.05em; text-transform: uppercase;
-  color: var(--ink-2); margin-bottom: 3px;
+  color: var(--ink-dim); margin-bottom: 3px;
 }
 .pbh-kv dd { margin: 0; font-size: 0.88rem; color: var(--ink); }
 
-.pbh-partner { padding: 16px; border-top: 1px solid var(--line); background: var(--g-sf); }
+.pbh-partner { padding: 16px; border-top: 1px solid var(--hairline); background: var(--surface); }
 .pbh-partner-h {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.66rem; letter-spacing: 0.09em; text-transform: uppercase;
-  color: var(--g-dk); margin-bottom: 9px;
+  color: var(--accent); margin-bottom: 9px;
 }
 .pbh-partner-top { display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap; }
 .pbh-partner-n { font-size: 1rem; font-weight: 600; color: var(--ink); text-decoration: none; }
-.pbh-partner-n:hover { color: var(--g-dk); }
-.pbh-partner-r { font-size: 0.8rem; color: var(--ink-2); }
+.pbh-partner-n:hover { color: var(--accent); }
+.pbh-partner-r { font-size: 0.8rem; color: var(--ink-dim); }
 .pbh-partner-facts {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 12px; margin: 13px 0 12px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 13px 0 12px;
 }
 .pbh-partner-facts span {
   display: block; font-size: 0.66rem; letter-spacing: 0.05em;
-  text-transform: uppercase; color: var(--ink-2); margin-bottom: 3px;
+  text-transform: uppercase; color: var(--ink-dim); margin-bottom: 3px;
 }
 .pbh-partner-facts strong { font-size: 0.85rem; font-weight: 500; color: var(--ink); }
-.pbh-partner-link {
-  font-size: 0.82rem; color: var(--g-dk); text-decoration: none; font-weight: 500;
-}
+.pbh-partner-link { font-size: 0.82rem; color: var(--accent); text-decoration: none; font-weight: 500; }
 .pbh-partner-link:hover { text-decoration: underline; }
 
-/* --- generic section ------------------------------------------ */
-.pbh-sec { max-width: 1300px; margin: 0 auto; padding: 56px 28px; border-top: 1px solid var(--line); }
-.pbh-sec-h { margin-bottom: 28px; }
+/* --- sections --------------------------------------------------- */
+.pbh-sec {
+  max-width: 1340px; margin: 0 auto;
+  padding: 60px 28px;
+  border-top: 1px solid var(--hairline);
+}
+.pbh-sec-h { margin-bottom: 30px; }
 
-/* --- observed behavior ---------------------------------------- */
-.pbh-beh-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.pbh-col { border: 1px solid var(--line); border-radius: 8px; padding: 20px; background: #FFFFFF; }
+/* --- stated vs observed ----------------------------------------
+   Two columns of content, no card around either. The divider does
+   the work the borders used to. */
+.pbh-beh-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+}
+.pbh-col { min-width: 0; }
+.pbh-col + .pbh-col { padding-left: 48px; border-left: 1px solid var(--hairline); }
 .pbh-col-h {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.68rem; letter-spacing: 0.09em; text-transform: uppercase;
   color: var(--ink); margin-bottom: 4px;
 }
-.pbh-col-s { font-size: 0.8rem; color: var(--ink-2); margin-bottom: 16px; }
+.pbh-col-s { font-size: 0.8rem; color: var(--ink-dim); margin-bottom: 18px; }
 
 .pbh-stated { list-style: none; margin: 0; padding: 0; }
-.pbh-stated li {
-  font-size: 0.9rem; color: var(--ink);
-  padding: 8px 0; border-bottom: 1px solid var(--line);
-}
-.pbh-stated li:last-child { border-bottom: 0; }
-.pbh-note { font-size: 0.75rem; color: var(--ink-2); margin-top: 14px; line-height: 1.5; }
+.pbh-stated li { font-size: 0.92rem; color: var(--ink); padding: 7px 0; }
+.pbh-note { font-size: 0.75rem; color: var(--ink-dim); margin-top: 14px; line-height: 1.5; }
 
-.pbh-bar-set + .pbh-bar-set { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
+.pbh-bar-set + .pbh-bar-set { margin-top: 22px; }
 .pbh-bar {
-  display: grid; grid-template-columns: minmax(0, 128px) 1fr 40px;
-  align-items: center; gap: 10px; padding: 5px 0;
+  display: grid; grid-template-columns: minmax(0, 132px) 1fr 40px;
+  align-items: center; gap: 12px; padding: 5px 0;
 }
 .pbh-bar-l { font-size: 0.84rem; color: var(--ink); }
-.pbh-bar-t { height: 6px; background: #EDF1EE; border-radius: 3px; overflow: hidden; }
-.pbh-bar-f { display: block; height: 100%; background: var(--g); }
+.pbh-bar-t { height: 6px; background: rgba(0, 0, 0, 0.07); border-radius: 3px; overflow: hidden; }
+.pbh-bar-f { display: block; height: 100%; background: var(--accent); }
 .pbh-bar-p {
-  font-size: 0.78rem; color: var(--ink-2); text-align: right;
+  font-size: 0.78rem; color: var(--ink-dim); text-align: right;
   font-variant-numeric: tabular-nums;
 }
-.pbh-basis { font-size: 0.72rem; color: var(--ink-2); margin-top: 10px; line-height: 1.5; }
+.pbh-basis { font-size: 0.72rem; color: var(--ink-dim); margin-top: 10px; line-height: 1.5; }
 
-/* --- stats strip ---------------------------------------------- */
-.pbh-strip {
-  display: flex; flex-wrap: wrap; gap: 44px;
-  max-width: 1300px; margin: 0 auto; padding: 26px 28px;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-.pbh-strip-n {
-  display: block;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 1.5rem; font-weight: 600; color: var(--ink);
-  font-variant-numeric: tabular-nums; line-height: 1;
-}
-.pbh-strip-l {
-  display: block; font-size: 0.7rem; letter-spacing: 0.05em;
-  text-transform: uppercase; color: var(--ink-2); margin-top: 6px;
-}
-
-/* --- how it works --------------------------------------------- */
-.pbh-how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+/* --- how it works ----------------------------------------------
+   Four steps, no cards. The rule above each one groups it without
+   drawing a box around it. */
+.pbh-how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
 .pbh-step {
-  border: 1px solid var(--line); border-radius: 8px;
-  padding: 18px 16px 20px; text-decoration: none; background: #FFFFFF;
+  display: block; text-decoration: none;
+  padding-top: 16px; border-top: 2px solid var(--ink);
   transition: border-color .15s ease;
 }
-.pbh-step:hover { border-color: var(--g); }
-.pbh-step-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
-.pbh-ico { width: 21px; height: 21px; fill: none; stroke: var(--g); stroke-width: 1.5; stroke-linecap: round; }
+.pbh-step:hover { border-top-color: var(--accent); }
+.pbh-step:hover .pbh-step-t { color: var(--accent); }
+.pbh-step-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.pbh-ico { width: 20px; height: 20px; fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round; }
 .pbh-step-n {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.7rem; color: var(--ink-2); font-variant-numeric: tabular-nums;
+  font-size: 0.7rem; color: var(--ink-dim); font-variant-numeric: tabular-nums;
 }
-.pbh-step-t { font-size: 0.95rem; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
-.pbh-step-d { font-size: 0.83rem; line-height: 1.55; color: var(--ink-2); margin: 0; }
+.pbh-step-t {
+  font-size: 0.95rem; font-weight: 600; color: var(--ink); margin-bottom: 6px;
+  transition: color .15s ease;
+}
+.pbh-step-d { font-size: 0.83rem; line-height: 1.55; color: var(--ink-dim); margin: 0; }
 
-/* --- final cta ------------------------------------------------- */
+/* --- final cta --------------------------------------------------- */
 .pbh-final {
-  max-width: 1300px; margin: 0 auto; padding: 56px 28px 72px;
-  border-top: 1px solid var(--line);
+  max-width: 1340px; margin: 0 auto;
+  padding: 60px 28px 80px;
+  border-top: 1px solid var(--hairline);
 }
 .pbh-final .pbh-sec-p { margin-bottom: 22px; }
 
-/* --- responsive ------------------------------------------------ */
-/* Below this width the seven labels cannot share a row with the brand
-   and the account actions without clipping "Methodology" into "Sign in".
-   The nav drops to its own full-width row and scrolls sideways there,
-   which is a deliberate two-row bar rather than a wrapped one. */
+/* --- responsive --------------------------------------------------- */
 @media (max-width: 1180px) {
   body.is-home .pb-header { flex-wrap: wrap; padding: 10px 20px; }
   body.is-home .pb-brand { order: 1; }
   body.is-home .pb-header-actions { order: 2; margin-left: auto; }
   body.is-home .pb-nav {
-    order: 3;
-    flex: 1 0 100%;
-    margin: 9px 0 2px;
-    justify-content: flex-start;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    order: 3; flex: 1 0 100%; margin: 9px 0 2px;
+    justify-content: flex-start; overflow-x: auto;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
   }
   body.is-home .pb-nav::-webkit-scrollbar { display: none; }
   body.is-home .pb-nav .nav-link { padding: 7px 9px; }
@@ -338,29 +301,25 @@ body.is-home .pb-nav-sep { background: #E2E7E3; }
 @media (max-width: 1024px) {
   .pbh-hero { grid-template-columns: 1fr; gap: 40px; padding: 52px 24px 48px; }
   .pbh-sub { max-width: none; }
-  .pbh-how-grid { grid-template-columns: repeat(2, 1fr); }
+  .pbh-how-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
 }
 @media (max-width: 768px) {
-  .pbh-beh-grid { grid-template-columns: 1fr; }
-  .pbh-strip { gap: 28px; }
-  .pbh-sec, .pbh-final { padding-left: 20px; padding-right: 20px; }
-  .pbh-hero { padding-left: 20px; padding-right: 20px; }
+  .pbh-beh-grid { grid-template-columns: 1fr; gap: 32px; }
+  .pbh-col + .pbh-col { padding-left: 0; border-left: 0; padding-top: 32px; border-top: 1px solid var(--hairline); }
+  .pbh-sec, .pbh-final, .pbh-hero { padding-left: 20px; padding-right: 20px; }
 }
 @media (max-width: 560px) {
-  /* Micro-labels sit at 10.6px on desktop, which is fine beside their
-     values but too small once the layout goes single-column. */
-  .pbh-score-l, .pbh-partner-h, .pbh-partner-facts span, .pbh-kv dt { font-size: 0.72rem; }
-  .pbh-how-grid { grid-template-columns: 1fr; }
+  .pbh-how-grid { grid-template-columns: 1fr; gap: 26px; }
   .pbh-kv { grid-template-columns: 1fr; gap: 10px; }
   .pbh-partner-facts { grid-template-columns: 1fr; gap: 10px; }
   .pbh-ctas { flex-direction: column; align-items: stretch; }
   .pbh-btn { width: 100%; }
   .pbh-firm-top { flex-direction: column; }
   .pbh-score { text-align: left; }
-  .pbh-bar { grid-template-columns: minmax(0, 96px) 1fr 36px; }
-  .pbh-strip { gap: 20px 32px; }
+  .pbh-bar { grid-template-columns: minmax(0, 100px) 1fr 36px; }
+  .pbh-score-l, .pbh-partner-h, .pbh-partner-facts span, .pbh-kv dt { font-size: 0.72rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .pbh-btn, .pbh-step { transition: none; }
+  .pbh-btn, .pbh-step, .pbh-step-t { transition: none; }
 }
