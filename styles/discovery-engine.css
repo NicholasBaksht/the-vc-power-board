@@ -189,16 +189,16 @@
   padding: 4px 10px;
 }
 .disc-check-sector, .disc-check-stage, .disc-check-location, .disc-check-fund, .disc-check-focus, .disc-check-company {
-  border-color: #4ade80;
-  color: #4ade80;
+  border-color: var(--green);
+  color: var(--green);
 }
 .disc-check-network {
-  border-color: #7dd3fc;
-  color: #7dd3fc;
+  border-color: #0369A1;
+  color: #0369A1;
 }
 .disc-check-miss {
-  border-color: #f472b6;
-  color: #f472b6;
+  border-color: #BE185D;
+  color: #BE185D;
 }
 .disc-network-detail {
   font-size: 12px;
