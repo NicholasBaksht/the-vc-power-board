@@ -32,7 +32,7 @@
     text-decoration: underline;
 }
 .legal-breadcrumb .crumb-sep {
-    color: var(--hairline);
+    color: var(--ink-dim);
     margin: 0 6px;
 }
 
@@ -224,7 +224,7 @@
     margin-bottom: 8px;
 }
 .legal-list li::marker {
-    color: var(--hairline);
+    color: var(--ink-dim);
 }
 
 /* ---------- CONSPICUOUS BLOCKS ----------
