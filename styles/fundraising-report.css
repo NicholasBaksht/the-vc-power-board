@@ -145,7 +145,7 @@
     border-radius: 10px;
     margin-top: 4px;
   }
-  .fr-tier-start-here { background: rgba(74,222,128,0.15); color: #4ade80; }
+  .fr-tier-start-here { background: rgba(21,128,61,0.12); color: var(--green); }
   .fr-tier-stretch-targets { background: rgba(var(--accent-rgb),0.15); color: var(--gold-bright); }
   .fr-tier-reach-later { background: rgba(148,163,184,0.15); color: var(--ink-dim); }
   .fr-card-score { text-align: right; flex-shrink: 0; }
@@ -238,8 +238,8 @@
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-  .fr-col-positive { color: #4ade80; }
-  .fr-col-concern { color: #fbbf24; }
+  .fr-col-positive { color: var(--green); }
+  .fr-col-concern { color: #B45309; }
   .fr-fit-item {
     font-size: 13px;
     line-height: 1.55;
@@ -344,7 +344,7 @@
     font-size: 17px;
     margin-bottom: 8px;
   }
-  .fr-tier-title.fr-tier-start-here { color: #4ade80; }
+  .fr-tier-title.fr-tier-start-here { color: var(--green); }
   .fr-tier-title.fr-tier-stretch-targets { color: var(--gold-bright); }
   .fr-tier-title.fr-tier-reach-later { color: var(--ink-dim); }
   .fr-tier-desc {
