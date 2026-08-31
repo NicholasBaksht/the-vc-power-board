@@ -361,7 +361,7 @@
 }
 .rt-state.rt-verified { color: var(--accent-bright); }
 .rt-state.rt-reported { color: var(--ink-dim); }
-.rt-state.rt-none { color: #C9A25A; }
+.rt-state.rt-none { color: #8A6D2F; }
 .rt-checked {
   font-family: var(--mono);
   font-size: 10.5px;
