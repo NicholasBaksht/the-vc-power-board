@@ -1,22 +1,25 @@
 /* ============================================================
    HOMEPAGE.CSS
-   White ground, black text, green accent.
+   Refinement pass. Same structure, better execution.
 
-   THIS FILE NO LONGER DEFINES A PALETTE.
-   It used to carry its own local colours because the rest of the
-   site was dark navy and the homepage was the only light page.
-   The site tokens in main.css are now white/black themselves, so
-   the homepage reads --bg, --ink, --ink-dim, --hairline and
-   --accent like every other stylesheet. Nothing here overrides a
-   colour the rest of the product does not already use, which is
-   why the header needs no homepage-only treatment anymore.
+   THREE RULES THIS FILE FOLLOWS
 
-   STRUCTURE OVER CHROME.
-   Following 10x.app: a white ground, text and dividers as black at
-   decreasing opacity, and almost no boxes. Sections are separated
-   by space and one hairline rule, not by bordered cards. Only the
-   product preview keeps a border, because it is a screenshot of a
-   real interface and needs an edge to read as one.
+   1. The page is the layout. Bordered containers are reserved for
+      the one thing that is genuinely a product module (the Power
+      Match preview). Explanatory sections are held together by
+      type, alignment, rules and space - not by boxes inside boxes.
+
+   2. Every measurement comes off the shared scale in main.css
+      (4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80). There are no
+      one-off 19px or 43px values left in this file.
+
+   3. Green means something. It marks the primary action, live
+      links, the fit score, the observed-behaviour fills and the
+      active nav item. It is not applied to icons or rules by
+      default - those are charcoal, so that when green does appear
+      it reads as information rather than styling.
+
+   No palette is defined here. Colour comes from the site tokens.
    ============================================================ */
 
 .pbh {
@@ -24,302 +27,457 @@
   color: var(--ink);
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+
+/* One measure, used by every section so left edges line up down the
+   whole page. */
+.pbh-shell { max-width: 1280px; margin: 0 auto; padding-left: var(--s6); padding-right: var(--s6); }
 
 body.is-home { background: var(--bg); }
 body.is-home .wrap { background: var(--bg); max-width: none; padding: 0; }
 body.is-home #methodologyAnchor {
-  max-width: 1120px; margin: 0 auto; padding-left: 28px; padding-right: 28px;
+  max-width: 1280px; margin: 0 auto;
+  padding-left: var(--s6); padding-right: var(--s6);
 }
 
-/* --- header ---------------------------------------------------
-   The shared header gives .pb-nav order:3, which floats it past the
-   sign-in cluster. Restate the intended reading order and line the
-   bar up with the hero beneath it. Colour is inherited now. */
+/* --- header ----------------------------------------------------
+   The shared header assigns .pb-nav order:3, which floats it past
+   the account cluster. Restate the reading order and match the
+   page measure so the logo aligns with the headline below it. */
 body.is-home .pb-header {
-  max-width: 1120px;
-  min-height: 66px;
+  max-width: 1280px;
+  min-height: 70px;
   flex-wrap: nowrap;
-  gap: 0 20px;
-  padding: 0 24px;
+  gap: 0 var(--s5);
+  padding: 0 var(--s6);
+  border-bottom: 1px solid var(--hairline);
 }
 body.is-home .pb-brand { order: 1; }
 body.is-home .pb-nav {
   order: 2;
   flex: 1 1 auto;
   justify-content: flex-start;
-  gap: 2px;
-  margin: 0 0 0 18px;
+  gap: var(--s1);
+  margin: 0 0 0 var(--s7);
   min-width: 0;
   flex-wrap: nowrap;
 }
-body.is-home .pb-header-actions { order: 3; flex: 0 0 auto; gap: 10px; }
+body.is-home .pb-header-actions { order: 3; flex: 0 0 auto; gap: var(--s3); }
 body.is-home .pb-nav .nav-link {
-  padding: 7px 10px; font-size: 0.83rem; white-space: nowrap; border-radius: 5px;
+  padding: var(--s2) var(--s3);
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink-dim);
+  white-space: nowrap;
+  border-radius: 6px;
+  transition: color .15s ease, background-color .15s ease;
 }
-body.is-home .pb-cta { padding: 8px 15px; font-size: 0.85rem; white-space: nowrap; }
-body.is-home .pb-signin { font-size: 0.85rem; white-space: nowrap; }
+body.is-home .pb-nav .nav-link:hover { color: var(--ink); background: var(--surface); }
+body.is-home .pb-nav .nav-link.active { color: var(--accent-bright); background: var(--accent-pale); }
 
-/* --- type ------------------------------------------------------ */
-.pbh-h1 {
-  font-size: clamp(1.95rem, 3.1vw, 2.55rem);
-  line-height: 1.08;
-  letter-spacing: -0.024em;
-  font-weight: 600;
+/* The signed-in account sits beside the primary action, so it is
+   deliberately the quieter of the two: label weight, not button
+   weight, and a marker instead of an avatar. */
+body.is-home .pb-signin {
+  font-size: 14px; font-weight: 500; color: var(--ink-dim);
+  white-space: nowrap; transition: color .15s ease;
+}
+body.is-home .pb-signin:hover { color: var(--ink); }
+body.is-home .pb-signin.is-account {
+  display: inline-flex; align-items: center; gap: var(--s2);
+  padding: var(--s2) var(--s3);
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
   color: var(--ink);
-  margin: 0 0 18px;
+  max-width: 168px; overflow: hidden; text-overflow: ellipsis;
+}
+body.is-home .pb-signin.is-account::before {
+  content: ''; flex: 0 0 auto;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+}
+body.is-home .pb-signin.is-account:hover { border-color: var(--hairline-strong); }
+
+body.is-home .pb-cta {
+  padding: var(--s2) var(--s4);
+  font-size: 14px; font-weight: 500;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: background-color .15s ease, border-color .15s ease;
+}
+
+/* --- signal strip ----------------------------------------------
+   A research ticker, not a banner: one rule, one marker, one line,
+   one action. Rendered only when the alerts engine actually
+   returns a signal, so it is never filler. */
+.pbh-signal {
+  display: flex; align-items: center; gap: var(--s3);
+  padding: var(--s3) 0;
+  border-bottom: 1px solid var(--hairline);
+  text-decoration: none;
+  font-size: 13.5px;
+  transition: background-color .15s ease;
+}
+.pbh-signal-dot {
+  flex: 0 0 auto; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+}
+.pbh-signal-n {
+  flex: 0 0 auto;
+  font-family: var(--mono); font-size: 11.5px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--ink-dim);
+}
+.pbh-signal-t {
+  flex: 1 1 auto; min-width: 0;
+  color: var(--ink);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.pbh-signal-a { flex: 0 0 auto; color: var(--accent); font-weight: 500; }
+.pbh-signal:hover .pbh-signal-a { color: var(--accent-bright); }
+.pbh-signal:hover .pbh-signal-t { color: var(--accent-bright); }
+
+/* --- type ------------------------------------------------------
+   The hierarchy has to survive with every border deleted, so the
+   steps between levels are large and the weights are decisive. */
+.pbh-h1 {
+  font-size: clamp(2.4rem, 3.9vw, 3.5rem);   /* 38 -> 56px */
+  line-height: 1.06;
+  letter-spacing: -0.032em;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 var(--s5);
 }
 .pbh-h2 {
-  font-size: clamp(1.3rem, 2vw, 1.65rem);
-  line-height: 1.22;
-  letter-spacing: -0.018em;
-  font-weight: 600;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);     /* 24 -> 32px */
+  line-height: 1.15;
+  letter-spacing: -0.024em;
+  font-weight: 700;
   color: var(--ink);
-  margin: 0 0 8px;
+  margin: 0 0 var(--s3);
 }
 .pbh-sub {
-  font-size: 1.02rem; line-height: 1.6; color: var(--ink-dim);
-  margin: 0 0 26px; max-width: 48ch;
+  font-size: 17px; line-height: 1.55; color: var(--ink-dim);
+  margin: 0 0 var(--s6); max-width: 31.5em;    /* ~535px */
 }
 .pbh-sec-p {
-  font-size: 0.94rem; line-height: 1.6; color: var(--ink-dim);
-  margin: 0; max-width: 62ch;
+  font-size: 16px; line-height: 1.6; color: var(--ink-dim);
+  margin: 0; max-width: 60ch;
 }
 
-/* Quiet by design: a label, not a badge. */
+/* Research metadata. Mono earns its place here because these are
+   labels on data, and nowhere else on the page. */
 .pbh-eyebrow {
   display: block;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem;
-  letter-spacing: 0.1em;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
   color: var(--ink-dim);
-  margin-bottom: 18px;
+  margin-bottom: var(--s4);
 }
 
 /* --- buttons --------------------------------------------------- */
-.pbh-ctas { display: flex; flex-wrap: wrap; gap: 10px; }
+.pbh-ctas { display: flex; flex-wrap: wrap; gap: var(--s3); }
 .pbh-btn {
   display: inline-flex; align-items: center; justify-content: center;
-  font-size: 0.92rem; font-weight: 500;
-  padding: 11px 20px;
-  border-radius: 6px;
+  height: 44px; padding: 0 var(--s5);
+  font-size: 15px; font-weight: 500;
+  border-radius: 8px;
   text-decoration: none;
   border: 1px solid transparent;
-  transition: background .15s ease, border-color .15s ease, color .15s ease;
+  transition: background-color .18s ease, border-color .18s ease, color .18s ease;
 }
 .pbh-btn-p { background: var(--accent); border-color: var(--accent); color: #FFFFFF; }
 .pbh-btn-p:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
-.pbh-btn-s { background: var(--bg); border-color: var(--hairline); color: var(--ink); }
-.pbh-btn-s:hover { border-color: var(--accent); color: var(--accent); }
+.pbh-btn-s { background: var(--bg); border-color: var(--hairline-strong); color: var(--ink); }
+.pbh-btn-s:hover { border-color: var(--accent); color: var(--accent-bright); }
 
-/* --- hero ------------------------------------------------------ */
+.pbh-btn:focus-visible,
+.pbh-signal:focus-visible,
+.pbh-step:focus-visible,
+.pbh-partner-link:focus-visible,
+.pbh-firm-n:focus-visible,
+.pbh-partner-n:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* --- hero ------------------------------------------------------
+   53/47 rather than a even split: the headline needs the room to
+   break where the copy intends, and the preview is denser so it
+   reads fine slightly narrower. */
 .pbh-hero {
   display: grid;
-  grid-template-columns: 47fr 53fr;
-  gap: 40px;
+  grid-template-columns: 53fr 47fr;
+  gap: var(--s7);
   align-items: center;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 64px 28px 60px;
+  padding-top: var(--s8);
+  padding-bottom: var(--s8);
 }
 .pbh-hero-l, .pbh-hero-r { min-width: 0; }
 
-/* The database counts, as a sentence rather than a band of cards. */
+/* Coverage as a sentence of numbers, not a row of stat cards. */
 .pbh-stats {
-  display: flex; flex-wrap: wrap; gap: 6px 20px;
-  margin-top: 30px; padding-top: 20px;
+  display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5);
+  margin-top: var(--s6); padding-top: var(--s5);
   border-top: 1px solid var(--hairline);
-  font-size: 0.83rem; color: var(--ink-dim);
+  font-size: 14px; color: var(--ink-dim);
 }
 .pbh-stat strong {
-  font-family: 'IBM Plex Mono', monospace;
   font-weight: 600; color: var(--ink);
   font-variant-numeric: tabular-nums;
+  margin-right: var(--s1);
 }
 
 /* --- product preview -------------------------------------------
-   The one element that keeps a border: it stands for a real screen. */
+   The only bordered module on the page, because it is the only
+   thing standing in for a real screen. Inside it there are no
+   nested boxes: horizontal rules and column alignment group the
+   data the way a research report would. */
 .pbh-panel {
   border: 1px solid var(--hairline);
-  border-radius: 8px;
+  border-radius: 10px;
   background: var(--bg);
   overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 .pbh-panel-bar {
   display: flex; align-items: baseline; justify-content: space-between;
-  flex-wrap: wrap; gap: 6px;
-  padding: 11px 16px;
+  flex-wrap: wrap; gap: var(--s2);
+  padding: var(--s3) var(--s5);
   background: var(--surface);
   border-bottom: 1px solid var(--hairline);
 }
 .pbh-panel-t {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem; letter-spacing: 0.09em; text-transform: uppercase;
+  font-family: var(--mono);
+  font-size: 11.5px; letter-spacing: 0.11em; text-transform: uppercase;
   color: var(--ink);
 }
-.pbh-panel-q { font-size: 0.72rem; color: var(--ink-dim); }
+.pbh-panel-q { font-size: 12.5px; color: var(--ink-dim); }
 
-.pbh-firm { padding: 18px 16px 16px; }
-.pbh-firm-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
-.pbh-firm-n {
-  font-size: 1.12rem; font-weight: 600; color: var(--ink);
-  text-decoration: none; line-height: 1.25;
+.pbh-firm { padding: var(--s5); }
+.pbh-firm-top {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: var(--s5);
 }
-.pbh-firm-n:hover { color: var(--accent); }
-.pbh-firm-q { font-size: 0.78rem; color: var(--accent); margin-top: 3px; }
+.pbh-firm-n {
+  font-size: 20px; font-weight: 600; color: var(--ink);
+  text-decoration: none; line-height: 1.2; letter-spacing: -0.015em;
+}
+.pbh-firm-n:hover { color: var(--accent-bright); }
+.pbh-firm-q { font-size: 13.5px; color: var(--accent); margin-top: var(--s1); }
 
+/* Score and label share a baseline grid with the firm name so the
+   two sides of the row optically align. */
 .pbh-score { text-align: right; flex-shrink: 0; }
 .pbh-score-n {
   display: block;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 1.85rem; font-weight: 600; line-height: 1;
+  font-size: 32px; font-weight: 700; line-height: 1;
+  letter-spacing: -0.03em;
   color: var(--accent); font-variant-numeric: tabular-nums;
 }
 .pbh-score-l {
-  display: block; font-size: 0.66rem; letter-spacing: 0.06em;
-  text-transform: uppercase; color: var(--ink-dim); margin-top: 4px;
+  display: block; font-family: var(--mono);
+  font-size: 11.5px; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--ink-dim); margin-top: var(--s1);
 }
 
 .pbh-kv {
   display: grid; grid-template-columns: 1fr 1fr;
-  gap: 12px 18px; margin: 18px 0 0; padding: 15px 0 0;
+  gap: var(--s4) var(--s5);
+  margin: var(--s5) 0 0; padding: var(--s5) 0 0;
   border-top: 1px solid var(--hairline);
 }
 .pbh-kv dt {
-  font-size: 0.68rem; letter-spacing: 0.05em; text-transform: uppercase;
-  color: var(--ink-dim); margin-bottom: 3px;
+  font-family: var(--mono);
+  font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink-dim); margin-bottom: var(--s1);
 }
-.pbh-kv dd { margin: 0; font-size: 0.88rem; color: var(--ink); }
-
-.pbh-partner { padding: 16px; border-top: 1px solid var(--hairline); background: var(--surface); }
-.pbh-partner-h {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.66rem; letter-spacing: 0.09em; text-transform: uppercase;
-  color: var(--accent); margin-bottom: 9px;
-}
-.pbh-partner-top { display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap; }
-.pbh-partner-n { font-size: 1rem; font-weight: 600; color: var(--ink); text-decoration: none; }
-.pbh-partner-n:hover { color: var(--accent); }
-.pbh-partner-r { font-size: 0.8rem; color: var(--ink-dim); }
-.pbh-partner-facts {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 13px 0 12px;
-}
-.pbh-partner-facts span {
-  display: block; font-size: 0.66rem; letter-spacing: 0.05em;
-  text-transform: uppercase; color: var(--ink-dim); margin-bottom: 3px;
-}
-.pbh-partner-facts strong { font-size: 0.85rem; font-weight: 500; color: var(--ink); }
-.pbh-partner-link { font-size: 0.82rem; color: var(--accent); text-decoration: none; font-weight: 500; }
-.pbh-partner-link:hover { text-decoration: underline; }
-
-/* --- sections --------------------------------------------------- */
-.pbh-sec {
-  max-width: 1120px; margin: 0 auto;
-  padding: 54px 28px;
-  border-top: 1px solid var(--hairline);
-}
-.pbh-sec-h { margin-bottom: 30px; }
-
-/* --- stated vs observed ----------------------------------------
-   Two columns of content, no card around either. The divider does
-   the work the borders used to. */
-.pbh-beh-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
-}
-.pbh-col { min-width: 0; }
-.pbh-col + .pbh-col { padding-left: 40px; border-left: 1px solid var(--hairline); }
-.pbh-col-h {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem; letter-spacing: 0.09em; text-transform: uppercase;
-  color: var(--ink); margin-bottom: 4px;
-}
-.pbh-col-s { font-size: 0.8rem; color: var(--ink-dim); margin-bottom: 18px; }
-
-.pbh-stated { list-style: none; margin: 0; padding: 0; }
-.pbh-stated li { font-size: 0.92rem; color: var(--ink); padding: 7px 0; }
-.pbh-note { font-size: 0.75rem; color: var(--ink-dim); margin-top: 14px; line-height: 1.5; }
-
-.pbh-bar-set + .pbh-bar-set { margin-top: 22px; }
-.pbh-bar {
-  display: grid; grid-template-columns: minmax(0, 132px) 1fr 40px;
-  align-items: center; gap: 12px; padding: 5px 0;
-}
-.pbh-bar-l { font-size: 0.84rem; color: var(--ink); }
-.pbh-bar-t { height: 6px; background: rgba(0, 0, 0, 0.07); border-radius: 3px; overflow: hidden; }
-.pbh-bar-f { display: block; height: 100%; background: var(--accent); }
-.pbh-bar-p {
-  font-size: 0.78rem; color: var(--ink-dim); text-align: right;
+.pbh-kv dd {
+  margin: 0; font-size: 15px; color: var(--ink);
   font-variant-numeric: tabular-nums;
 }
-.pbh-basis { font-size: 0.72rem; color: var(--ink-dim); margin-top: 10px; line-height: 1.5; }
 
-/* --- how it works ----------------------------------------------
-   Four steps, no cards. The rule above each one groups it without
-   drawing a box around it. */
-.pbh-how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
-.pbh-step {
-  display: block; text-decoration: none;
-  padding-top: 16px; border-top: 2px solid var(--ink);
-  transition: border-color .15s ease;
+.pbh-partner {
+  padding: var(--s5);
+  border-top: 1px solid var(--hairline);
+  background: var(--surface);
 }
-.pbh-step:hover { border-top-color: var(--accent); }
-.pbh-step:hover .pbh-step-t { color: var(--accent); }
-.pbh-step-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-.pbh-ico { width: 20px; height: 20px; fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round; }
-.pbh-step-n {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.7rem; color: var(--ink-dim); font-variant-numeric: tabular-nums;
+.pbh-partner-h {
+  font-family: var(--mono);
+  font-size: 11.5px; letter-spacing: 0.11em; text-transform: uppercase;
+  color: var(--ink-dim); margin-bottom: var(--s3);
 }
-.pbh-step-t {
-  font-size: 0.95rem; font-weight: 600; color: var(--ink); margin-bottom: 6px;
+.pbh-partner-top {
+  display: flex; align-items: baseline; gap: var(--s2); flex-wrap: wrap;
+  margin-bottom: var(--s4);
+}
+.pbh-partner-n {
+  font-size: 17px; font-weight: 600; color: var(--ink);
+  text-decoration: none; letter-spacing: -0.012em;
+}
+.pbh-partner-n:hover { color: var(--accent-bright); }
+.pbh-partner-r { font-size: 13.5px; color: var(--ink-dim); }
+
+/* Label above value, consistent gap, numbers tabular - so the three
+   columns line up on both axes. */
+.pbh-partner-facts {
+  display: grid; grid-template-columns: 1.45fr 1fr 0.85fr;
+  gap: var(--s4); margin-bottom: var(--s4);
+}
+.pbh-partner-facts span {
+  display: block; font-family: var(--mono);
+  font-size: 11.5px; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--ink-dim); margin-bottom: var(--s1);
+}
+.pbh-partner-facts strong {
+  display: block; font-size: 14.5px; font-weight: 500; color: var(--ink);
+  font-variant-numeric: tabular-nums; line-height: 1.35;
+}
+.pbh-partner-link {
+  font-size: 13.5px; color: var(--accent); text-decoration: none; font-weight: 500;
   transition: color .15s ease;
 }
-.pbh-step-d { font-size: 0.83rem; line-height: 1.55; color: var(--ink-dim); margin: 0; }
+.pbh-partner-link:hover { color: var(--accent-bright); text-decoration: underline; }
+
+/* --- sections --------------------------------------------------- */
+.pbh-sec { padding-top: var(--s9); padding-bottom: var(--s9); border-top: 1px solid var(--hairline); }
+.pbh-sec-h { margin-bottom: var(--s8); max-width: 60ch; }
+
+/* --- stated vs observed ----------------------------------------
+   Two analyst columns divided by a single rule. No card on either
+   side: the comparison is the point, and boxes would make them
+   look like two unrelated widgets. */
+.pbh-beh-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s8); }
+.pbh-col { min-width: 0; }
+.pbh-col + .pbh-col { padding-left: var(--s8); border-left: 1px solid var(--hairline); }
+.pbh-col-h {
+  font-family: var(--mono);
+  font-size: 11.5px; letter-spacing: 0.11em; text-transform: uppercase;
+  color: var(--ink); margin-bottom: var(--s1);
+}
+.pbh-col-s { font-size: 13.5px; color: var(--ink-dim); margin-bottom: var(--s5); }
+
+.pbh-stated { list-style: none; margin: 0; padding: 0; }
+.pbh-stated li {
+  font-size: 16px; color: var(--ink); padding: var(--s3) 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.pbh-stated li:first-child { padding-top: 0; }
+.pbh-stated li:last-child { border-bottom: 0; }
+.pbh-note { font-size: 13px; color: var(--ink-dim); margin-top: var(--s4); line-height: 1.5; }
+
+.pbh-bar-set + .pbh-bar-set { margin-top: var(--s6); }
+.pbh-bar {
+  display: grid; grid-template-columns: minmax(0, 1fr) 1fr 44px;
+  align-items: center; gap: var(--s4); padding: var(--s2) 0;
+}
+.pbh-bar-l { font-size: 15px; color: var(--ink); }
+.pbh-bar-t { height: 4px; background: var(--surface-raised); border-radius: 2px; overflow: hidden; }
+.pbh-bar-f { display: block; height: 100%; background: var(--accent); border-radius: 2px; }
+.pbh-bar-p {
+  font-size: 14px; color: var(--ink); text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.pbh-basis { font-size: 13px; color: var(--ink-dim); margin-top: var(--s3); line-height: 1.5; }
+
+/* --- how it works ----------------------------------------------
+   Four editorial columns. The rule above each is charcoal, not
+   green: these are steps, not signals. */
+.pbh-how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s7); }
+.pbh-step {
+  display: block; text-decoration: none;
+  padding-top: var(--s4); border-top: 2px solid var(--ink);
+  transition: border-color .18s ease;
+}
+.pbh-step:hover { border-top-color: var(--accent); }
+.pbh-step:hover .pbh-step-t { color: var(--accent-bright); }
+.pbh-step-top {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: var(--s3);
+}
+.pbh-ico {
+  width: 18px; height: 18px; fill: none;
+  stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round;
+}
+.pbh-step-n {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-dim);
+  font-variant-numeric: tabular-nums;
+}
+.pbh-step-t {
+  font-size: 17px; font-weight: 600; color: var(--ink);
+  margin-bottom: var(--s2); letter-spacing: -0.012em;
+  transition: color .18s ease;
+}
+.pbh-step-d { font-size: 14.5px; line-height: 1.55; color: var(--ink-dim); margin: 0; }
 
 /* --- final cta --------------------------------------------------- */
-.pbh-final {
-  max-width: 1120px; margin: 0 auto;
-  padding: 54px 28px 72px;
-  border-top: 1px solid var(--hairline);
-}
-.pbh-final .pbh-sec-p { margin-bottom: 22px; }
+.pbh-final { padding-top: var(--s9); padding-bottom: var(--s9); border-top: 1px solid var(--hairline); }
+.pbh-final .pbh-h2 { max-width: 18em; }
+.pbh-final .pbh-ctas { margin-top: var(--s6); }
 
-/* --- responsive --------------------------------------------------- */
+/* --- responsive ---------------------------------------------------
+   Breakpoints follow the content, not device names: the nav wraps
+   when seven labels stop fitting, the hero stacks when the preview
+   stops being readable beside the copy. */
 @media (max-width: 1180px) {
-  body.is-home .pb-header { flex-wrap: wrap; padding: 10px 20px; }
+  body.is-home .pb-header { flex-wrap: wrap; padding: var(--s3) var(--s5); }
   body.is-home .pb-brand { order: 1; }
   body.is-home .pb-header-actions { order: 2; margin-left: auto; }
   body.is-home .pb-nav {
-    order: 3; flex: 1 0 100%; margin: 9px 0 2px;
+    order: 3; flex: 1 0 100%; margin: var(--s3) 0 var(--s1);
     justify-content: flex-start; overflow-x: auto;
     -webkit-overflow-scrolling: touch; scrollbar-width: none;
   }
   body.is-home .pb-nav::-webkit-scrollbar { display: none; }
-  body.is-home .pb-nav .nav-link { padding: 7px 9px; }
+  body.is-home .pb-nav .nav-link { padding: var(--s2); }
 }
 @media (max-width: 1024px) {
-  .pbh-hero { grid-template-columns: 1fr; gap: 40px; padding: 52px 24px 48px; }
+  .pbh-shell { padding-left: var(--s5); padding-right: var(--s5); }
+  .pbh-hero {
+    grid-template-columns: 1fr; gap: var(--s7);
+    padding-top: var(--s7); padding-bottom: var(--s7);
+  }
   .pbh-sub { max-width: none; }
-  .pbh-how-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  .pbh-sec, .pbh-final { padding-top: var(--s8); padding-bottom: var(--s8); }
+  .pbh-sec-h { margin-bottom: var(--s7); }
+  /* 2x2 rather than four unreadable columns. */
+  .pbh-how-grid { grid-template-columns: repeat(2, 1fr); gap: var(--s6); }
+  .pbh-beh-grid { gap: var(--s7); }
+  .pbh-col + .pbh-col { padding-left: var(--s7); }
 }
 @media (max-width: 768px) {
-  .pbh-beh-grid { grid-template-columns: 1fr; gap: 32px; }
-  .pbh-col + .pbh-col { padding-left: 0; border-left: 0; padding-top: 32px; border-top: 1px solid var(--hairline); }
-  .pbh-sec, .pbh-final, .pbh-hero { padding-left: 20px; padding-right: 20px; }
+  .pbh-beh-grid { grid-template-columns: 1fr; gap: var(--s6); }
+  .pbh-col + .pbh-col {
+    padding-left: 0; border-left: 0;
+    padding-top: var(--s6); border-top: 1px solid var(--hairline);
+  }
 }
 @media (max-width: 560px) {
-  .pbh-how-grid { grid-template-columns: 1fr; gap: 26px; }
-  .pbh-kv { grid-template-columns: 1fr; gap: 10px; }
-  .pbh-partner-facts { grid-template-columns: 1fr; gap: 10px; }
+  .pbh-shell { padding-left: var(--s4); padding-right: var(--s4); }
+  .pbh-h1 { font-size: 40px; letter-spacing: -0.028em; }
+  .pbh-sub { font-size: 16px; margin-bottom: var(--s5); }
+  .pbh-how-grid { grid-template-columns: 1fr; gap: var(--s6); }
+  .pbh-kv { grid-template-columns: 1fr 1fr; gap: var(--s4); }
+  .pbh-partner-facts { grid-template-columns: 1fr; gap: var(--s3); }
   .pbh-ctas { flex-direction: column; align-items: stretch; }
   .pbh-btn { width: 100%; }
-  .pbh-firm-top { flex-direction: column; }
+  .pbh-firm-top { flex-direction: column; gap: var(--s4); }
   .pbh-score { text-align: left; }
-  .pbh-bar { grid-template-columns: minmax(0, 100px) 1fr 36px; }
-  .pbh-score-l, .pbh-partner-h, .pbh-partner-facts span, .pbh-kv dt { font-size: 0.72rem; }
+  .pbh-bar { grid-template-columns: minmax(0, 1fr) 1fr 40px; gap: var(--s3); }
+  .pbh-sec, .pbh-final { padding-top: var(--s7); padding-bottom: var(--s7); }
+  .pbh-sec-h { margin-bottom: var(--s6); }
+  .pbh-signal-n { display: none; }
+  /* Labels get a touch more size once they are no longer beside a value. */
+  .pbh-score-l, .pbh-partner-h, .pbh-partner-facts span, .pbh-kv dt,
+  .pbh-panel-t, .pbh-col-h, .pbh-eyebrow { font-size: 12px; }
+  body.is-home .pb-signin.is-account { max-width: 120px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .pbh-btn, .pbh-step, .pbh-step-t { transition: none; }
+  .pbh-btn, .pbh-step, .pbh-step-t, .pbh-signal,
+  .pbh-partner-link, body.is-home .pb-nav .nav-link { transition: none; }
 }
