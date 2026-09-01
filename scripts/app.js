@@ -1310,6 +1310,26 @@ function pbhCleanFooter() {
 /* Power Network needs a view container. index.html is not hand-edited
    in this project, so it is created next to the other view divs on
    first load rather than added to the markup. */
+/* network.js carries Power Network. index.html is not hand-edited in
+   this project, so the script is attached here on first load. */
+function pbhEnsureNetworkScript() {
+  if (document.getElementById('pbnJs')) return;
+  const t = document.createElement('script');
+  t.id = 'pbnJs'; t.src = 'scripts/network.js';
+  /* The script loads asynchronously, so a direct hit on #network runs
+     the router before these functions exist. Re-dispatch the current
+     route once the file is in. */
+  t.onload = function () {
+    const slug = (window.location.hash || '').replace('#', '');
+    if (slug === 'network' && typeof renderPeopleDiscovery === 'function') {
+      renderPeopleDiscovery();
+    } else if (slug.indexOf('network/') === 0 && typeof renderNetworkProfile === 'function') {
+      renderNetworkProfile(decodeURIComponent(slug.slice('network/'.length)));
+    }
+  };
+  document.head.appendChild(t);
+}
+
 function pbhEnsureNetworkHost() {
   if (document.getElementById('networkView')) return;
   const anchor = document.getElementById('capitalSourcesView');
@@ -1326,6 +1346,7 @@ function pbhRemoveLegacyBlocks() {
 }
 
 function pbhCleanChrome() {
+  pbhEnsureNetworkScript();
   pbhEnsureNetworkHost();
   pbhRemoveLegacyBlocks();
   pbhBuildFooter();
