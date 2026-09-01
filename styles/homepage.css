@@ -458,18 +458,28 @@ body .pb-cta {
    where it genuinely does not - with headroom, because a signed-in
    account chip widens the right-hand cluster. Labels are never
    shrunk to buy space. */
-@media (max-width: 1400px) {
-  body .pb-header { flex-wrap: wrap; padding: var(--s3) var(--s5); }
-  body .pb-brand { order: 1; }
-  body .pb-header-actions { order: 2; margin-left: auto; }
-  body .pb-nav {
-    order: 3; flex: 1 0 100%; margin: var(--s3) 0 var(--s1);
-    justify-content: flex-start; overflow-x: auto;
-    -webkit-overflow-scrolling: touch; scrollbar-width: none;
-  }
-  body .pb-nav::-webkit-scrollbar { display: none; }
-  body .pb-nav .nav-link { padding: var(--s2); }
+/* Applied by measurement, not by viewport width. pbhFitNav() in
+   app.js compares the real widths of the brand, the nav and the
+   account cluster and sets .is-nav-stacked when they do not fit.
+   A media query cannot do this: the right-hand side changes width
+   with the length of the signed-in username, which is exactly how
+   the nav came to sit on top of "Methodology". */
+body.is-nav-stacked .pb-header { flex-wrap: wrap; padding: var(--s3) var(--s5); }
+body.is-nav-stacked .pb-brand { order: 1; }
+body.is-nav-stacked .pb-header-actions { order: 2; margin-left: auto; }
+body.is-nav-stacked .pb-nav {
+  order: 3; flex: 1 0 100%; margin: var(--s3) 0 var(--s1);
+  justify-content: flex-start; overflow-x: auto;
+  -webkit-overflow-scrolling: touch; scrollbar-width: none;
 }
+body.is-nav-stacked .pb-nav::-webkit-scrollbar { display: none; }
+body.is-nav-stacked .pb-nav .nav-link { padding: var(--s2); }
+
+/* Even before the measurement runs, the nav shrinks rather than
+   overrunning its neighbours, and the account chip cannot grow
+   without limit on a long name. */
+body .pb-nav { min-width: 0; }
+body .pb-signin.is-account { max-width: 150px; }
 @media (max-width: 1024px) {
   .pbh-shell { padding-left: var(--s5); padding-right: var(--s5); }
   .pbh-hero {
