@@ -390,3 +390,111 @@ async function pbmDecorateAccount() {
   link.classList.toggle('has-unread', n > 0);
   link.setAttribute('title', n > 0 ? n + ' unread' : 'Your account');
 }
+
+/* ---------- notifications inbox ----------
+   Written by database triggers on real events, never by the client:
+   the insert policy on network_notifications is `with check (false)`,
+   so a browser cannot manufacture one. Read policy is owner-only, so
+   this list is private by construction rather than by filtering. */
+
+const PBM_NOTIF_TEXT = {
+  follower:        'started following you',
+  message_request: 'sent you a message request',
+  message:         'sent you a message',
+  post:            'posted an update'
+};
+
+async function renderNetworkNotifications() {
+  pbnEnsureCss();
+  const host = document.getElementById('networkView');
+  if (!host) return;
+  await pbnLoadMe();
+  const c = pbmC(), me = pbmMe();
+
+  if (!me) {
+    try { sessionStorage.setItem('pbnAfterAuth', '#network/notifications'); } catch (e) {}
+    host.innerHTML = '<div class="pbn"><div class="pbn-shell">' +
+      '<a class="pbn-back" href="#network">&larr; Network</a>' +
+      '<div class="pbn-gate"><h1 class="pbn-h1">Sign in to see your notifications.</h1>' +
+      '<div class="pbn-actions"><a class="pbn-btn pbn-btn-p" href="#signin">Sign in</a></div>' +
+      '</div></div></div>';
+    return;
+  }
+  if (typeof pbTrack === 'function') pbTrack('network_notifications_viewed');
+
+  host.innerHTML = '<div class="pbn"><div class="pbn-shell">' +
+    '<a class="pbn-back" href="#network">&larr; Network</a>' +
+    '<div class="pbm-notif-head">' +
+      '<h1 class="pbn-h1">Notifications</h1>' +
+      '<button type="button" class="pbn-btn pbn-btn-s pbm-small" id="pbmMarkAll">Mark all read</button>' +
+    '</div>' +
+    '<div class="pbm-tabs">' +
+      '<a class="pbm-tab" href="#network/messages">Inbox</a>' +
+      '<a class="pbm-tab" href="#network/requests">Requests</a>' +
+      '<a class="pbm-tab is-on" href="#network/notifications">Notifications</a>' +
+    '</div>' +
+    '<div id="pbmNotifList" class="pbm-list"><div class="pbn-empty">Loading...</div></div>' +
+    '</div></div>';
+
+  const box = document.getElementById('pbmNotifList');
+  let rows = [], actors = {};
+  try {
+    const { data, error } = await c.from('network_notifications')
+      .select('id, kind, actor_id, ref_id, read_at, created_at')
+      .order('created_at', { ascending: false }).limit(60);
+    if (error) throw error;
+    rows = data || [];
+    const ids = [...new Set(rows.map(function (r) { return r.actor_id; }).filter(Boolean))];
+    if (ids.length) {
+      const { data: profs } = await c.from('profiles')
+        .select('id, username, full_name, photo_url, current_title, current_company').in('id', ids);
+      (profs || []).forEach(function (p) { actors[p.id] = p; });
+    }
+  } catch (e) {
+    box.innerHTML = '<div class="pbn-empty">Could not load notifications.</div>';
+    return;
+  }
+
+  if (!rows.length) {
+    box.innerHTML = '<div class="pbn-empty">Nothing yet. Follows, message requests and ' +
+      'messages will appear here.</div>';
+    return;
+  }
+
+  box.innerHTML = rows.map(function (n) {
+    const a = actors[n.actor_id] || {};
+    const who = a.full_name || a.username || 'Someone';
+    /* A notification about a message links to that conversation; one
+       about a person links to the person. */
+    const href = (n.kind === 'message' || n.kind === 'message_request')
+      ? (n.ref_id ? '#network/messages/' + pbmEsc(n.ref_id) : '#network/messages')
+      : (a.username ? '#network/' + pbmEsc(a.username) : '#network');
+    return '<a class="pbm-row pbm-notif' + (n.read_at ? '' : ' is-unread') + '" href="' + href + '">' +
+      pbnPhoto(a) +
+      '<span class="pbm-row-main">' +
+        '<span class="pbm-row-top">' +
+          '<span class="pbm-row-name">' + pbmEsc(who) + '</span>' +
+          '<span class="pbm-row-when">' + pbmEsc(pbmWhen(n.created_at)) + '</span>' +
+        '</span>' +
+        '<span class="pbm-row-last">' + pbmEsc(PBM_NOTIF_TEXT[n.kind] || n.kind) + '</span>' +
+      '</span>' +
+      (n.read_at ? '' : '<span class="pbm-dot" aria-label="Unread"></span>') +
+      '</a>';
+  }).join('');
+
+  /* Marking read happens on view, one round trip, and only for rows
+     this user owns - the policy would refuse anything else. */
+  const unread = rows.filter(function (n) { return !n.read_at; }).map(function (n) { return n.id; });
+  const markAll = async function () {
+    if (!unread.length) return;
+    try {
+      await c.from('network_notifications')
+        .update({ read_at: new Date().toISOString() }).in('id', unread);
+      box.querySelectorAll('.is-unread').forEach(function (el) { el.classList.remove('is-unread'); });
+      box.querySelectorAll('.pbm-dot').forEach(function (el) { el.remove(); });
+      if (typeof pbmDecorateAccount === 'function') pbmDecorateAccount();
+    } catch (e) {}
+  };
+  const btn = document.getElementById('pbmMarkAll');
+  if (btn) btn.addEventListener('click', markAll);
+}
