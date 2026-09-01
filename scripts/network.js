@@ -702,12 +702,42 @@ async function pbnSaveGroup() {
   msg.textContent = 'Saving...';
   msg.classList.remove('is-error', 'is-ok');
   try {
-    const { data, error } = await c.from('profiles')
-      .upsert(patch, { onConflict: 'id' }).select().single();
-    if (error) throw error;
+    /* UPDATE first, INSERT only if there is no row.
+
+       upsert cannot be used here. PostgREST turns it into
+       INSERT ... ON CONFLICT (id) DO UPDATE, and Postgres validates
+       NOT NULL on the proposed insert tuple BEFORE it detects the
+       conflict and switches to the update branch. profiles.username
+       is NOT NULL with no default, so every group that does not
+       carry a username - Current role, Goals, Expertise, About,
+       Links, Visibility - failed with a not-null violation on a row
+       that already existed and was never going to be inserted. */
+    const { data: updated, error: updErr } = await c.from('profiles')
+      .update(patch).eq('id', me).select().maybeSingle();
+    if (updErr) throw updErr;
+
+    if (!updated) {
+      /* No row yet. This is the only path that may insert, so it is
+         the only path that has to supply a username. */
+      if (!patch.username) {
+        const seed = (patch.full_name || '').trim() ||
+                     ((typeof getUserEmail === 'function' && getUserEmail()) || '').split('@')[0] ||
+                     'member';
+        let derived = seed
+          .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+          .replace(/[^A-Za-z0-9._ -]+/g, '')
+          .replace(/\s+/g, ' ')
+          .trim().replace(/^[._-]+|[._-]+$/g, '')
+          .slice(0, 40);
+        if (derived.length < 3) derived = 'member-' + Math.random().toString(36).slice(2, 8);
+        patch.username = derived;
+      }
+      const { error: insErr } = await c.from('profiles').insert(patch);
+      if (insErr) throw insErr;
+    }
 
     /* Read the row back rather than trusting the write. A policy that
-       permits the update but filters the row on read would otherwise
+       permits the write but filters the row on read would otherwise
        look like a successful save that quietly does nothing. */
     const { data: check, error: readErr } = await c.from('profiles')
       .select('*').eq('id', me).maybeSingle();
