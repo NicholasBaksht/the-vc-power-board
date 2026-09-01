@@ -96,14 +96,26 @@ async function pbmOpenOrStart(targetId, targetPolicy) {
   if (!state) { alert('This person is not accepting messages.'); return; }
 
   try {
-    const { data: conv, error: e1 } = await c.from('network_conversations')
-      .insert({ created_by: me, state: state }).select('id').single();
+    /* The id is generated here rather than read back from the insert.
+       A RETURNING clause is still subject to the SELECT policy, and
+       for the instant between creating a conversation and adding its
+       participants the creator does not yet satisfy is_participant().
+       Choosing the id up front removes the dependency entirely. */
+    const convId = (window.crypto && crypto.randomUUID)
+      ? crypto.randomUUID()
+      : 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (ch) {
+          const r = Math.random() * 16 | 0;
+          return (ch === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+        });
+
+    const { error: e1 } = await c.from('network_conversations')
+      .insert({ id: convId, created_by: me, state: state });
     if (e1) throw e1;
     const { error: e2 } = await c.from('network_participants')
-      .insert([{ conversation_id: conv.id, user_id: me },
-               { conversation_id: conv.id, user_id: targetId }]);
+      .insert([{ conversation_id: convId, user_id: me },
+               { conversation_id: convId, user_id: targetId }]);
     if (e2) throw e2;
-    location.hash = '#network/messages/' + conv.id;
+    location.hash = '#network/messages/' + convId;
   } catch (err) {
     /* The daily conversation cap and the block policy both surface
        here. The database's wording is more useful than ours. */
