@@ -295,7 +295,7 @@ async function renderNetworkProfile(handle) {
 
   if (!p) {
     host.innerHTML = '<div class="pbn"><div class="pbn-shell">' +
-      '<a class="pbn-back" href="#network">&larr; People</a>' +
+      '<a class="pbn-back" href="#network">&larr; Power Network</a>' +
       '<div class="pbn-empty">No published profile for that name.</div></div></div>';
     return;
   }
@@ -324,7 +324,7 @@ async function renderNetworkProfile(handle) {
 
   host.innerHTML =
     '<div class="pbn"><div class="pbn-shell">' +
-      '<a class="pbn-back" href="#network">&larr; People</a>' +
+      '<a class="pbn-back" href="#network">&larr; Power Network</a>' +
 
       '<header class="pbn-id">' +
         pbnPhoto(p, 'lg') +
@@ -424,7 +424,7 @@ async function renderNetworkProfileEdit() {
   if (!pbnUid()) {
     try { sessionStorage.setItem('pbnAfterAuth', '#network/edit'); } catch (e) {}
     host.innerHTML = '<div class="pbn"><div class="pbn-shell">' +
-      '<a class="pbn-back" href="#network">&larr; People</a>' +
+      '<a class="pbn-back" href="#network">&larr; Power Network</a>' +
       '<div class="pbn-gate"><h1 class="pbn-h1">Create an account to build your profile.</h1>' +
       '<p class="pbn-lede">Your profile is what lets the right people find you. ' +
       'It takes a few minutes and you choose what is visible.</p>' +
@@ -513,7 +513,7 @@ async function renderNetworkProfileEdit() {
 
   host.innerHTML =
     '<div class="pbn"><div class="pbn-shell pbn-edit">' +
-      '<a class="pbn-back" href="#network">&larr; People</a>' +
+      '<a class="pbn-back" href="#network">&larr; Power Network</a>' +
       '<h1 class="pbn-h1">Your profile</h1>' +
       '<p class="pbn-lede">' +
         (p.is_published
