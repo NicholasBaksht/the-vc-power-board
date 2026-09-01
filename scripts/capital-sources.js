@@ -215,7 +215,7 @@ function renderCapitalSource(slug) {
      computed behaviour below it. */
   const sSec = csList(e.statedSectorFocus), sStg = csList(e.statedStageFocus);
   if (sSec.length || sStg.length) {
-    h += '<div class="cs-block"><div class="cs-block-h">Stated focus &mdash; what they say they invest in</div>' +
+    h += '<div class="cs-block"><div class="cs-block-h">Stated focus - what they say they invest in</div>' +
       (sSec.length ? csChips(sSec) : '') +
       (sStg.length ? csChips(sStg, 'cs-chip-stage') : '') +
       '<div class="cs-basis">Self-described, taken from their own site or an interview. ' +
@@ -226,7 +226,7 @@ function renderCapitalSource(slug) {
   const dSec = csDist(inv, 'sector');
   const dStg = csDist(inv, 'stage');
   if (dSec || dStg) {
-    h += '<div class="cs-block"><div class="cs-block-h">Observed behaviour &mdash; what the sourced record shows</div>';
+    h += '<div class="cs-block"><div class="cs-block-h">Observed behaviour - what the sourced record shows</div>';
     if (dSec) h += '<div class="cs-sub-h">Sector</div>' + csBars(dSec, inv.length, 'sector');
     if (dStg) h += '<div class="cs-sub-h">Stage</div>' + csBars(dStg, inv.length, 'stage');
     if (!dStg && inv.length) {
