@@ -848,6 +848,48 @@ function pbhInstallNav() {
     cta.textContent = signedIn ? 'My shortlist' : 'Get Started';
   }
   if (typeof syncActiveNav === 'function') syncActiveNav();
+  pbhFitNav();
+}
+
+/* Decides whether the nav fits beside the brand and the account
+   cluster by MEASURING it, rather than guessing a viewport width.
+
+   A breakpoint cannot know how wide the right-hand side is: signed
+   out it is "Sign in" plus a button, signed in it is a username chip
+   plus "My shortlist", and a long name pushes that out far enough to
+   overlap the last nav item. Comparing real widths handles every
+   name length, zoom level and future nav item without another guess. */
+function pbhFitNav() {
+  const header = document.querySelector('.pb-header');
+  const brand  = document.querySelector('.pb-brand');
+  const nav    = document.querySelector('.pb-nav');
+  const acts   = document.querySelector('.pb-header-actions');
+  if (!header || !brand || !nav || !acts) return;
+
+  /* Measure the nav's natural width with wrapping off, which is what
+     scrollWidth reports once it is not already stacked. */
+  const stacked = document.body.classList.contains('is-nav-stacked');
+  document.body.classList.remove('is-nav-stacked');
+
+  const cs = getComputedStyle(header);
+  const inner = header.clientWidth -
+                parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  const needed = brand.offsetWidth + nav.scrollWidth + acts.offsetWidth + 72; // gaps
+  const fits = needed <= inner;
+
+  document.body.classList.toggle('is-nav-stacked', !fits);
+  if (!fits !== stacked) { /* state changed; nothing else to do */ }
+}
+
+let pbhFitTimer = null;
+window.addEventListener('resize', function () {
+  clearTimeout(pbhFitTimer);
+  pbhFitTimer = setTimeout(pbhFitNav, 120);
+});
+/* The account cluster changes width when the session resolves, so
+   re-measure once auth settles rather than only on first paint. */
+if (typeof onAuthChange === 'function') {
+  onAuthChange(function () { setTimeout(pbhFitNav, 60); });
 }
 
 if (document.readyState === 'loading') {
