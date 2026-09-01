@@ -379,3 +379,95 @@
   .pbr-actions { flex-direction: row; }
   .pbr-btn { flex: 1 1 auto; }
 }
+
+/* --- messaging ---------------------------------------------------
+   Deliberately not a chat app: no avatars per bubble, no typing
+   indicators, no reactions. It reads as correspondence, which is
+   what professional outreach actually is. */
+.pbm-tabs { display: flex; gap: var(--s1); border-bottom: 1px solid var(--hairline); margin-bottom: var(--s6); }
+.pbm-tab {
+  font-size: 14px; color: var(--ink-dim); text-decoration: none;
+  padding: var(--s3); border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+.pbm-tab:hover { color: var(--ink); }
+.pbm-tab.is-on { color: var(--ink); border-bottom-color: var(--accent); font-weight: 500; }
+
+.pbm-list { display: block; }
+.pbm-row {
+  display: grid; grid-template-columns: 44px 1fr auto; gap: var(--s4);
+  align-items: center; padding: var(--s4) 0;
+  border-bottom: 1px solid var(--hairline); text-decoration: none;
+}
+.pbm-row:hover { background: var(--surface); }
+.pbm-row-main { min-width: 0; }
+.pbm-row-top { display: flex; justify-content: space-between; gap: var(--s3); align-items: baseline; }
+.pbm-row-name { font-size: 15px; font-weight: 600; color: var(--ink); }
+.pbm-row-when { font-size: 12.5px; color: var(--ink-dim); white-space: nowrap; }
+.pbm-row-last {
+  display: block; font-size: 14px; color: var(--ink-dim); margin-top: var(--s1);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.pbm-row.is-unread .pbm-row-name,
+.pbm-row.is-unread .pbm-row-last { color: var(--ink); font-weight: 500; }
+.pbm-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+
+.pbm-head {
+  display: grid; grid-template-columns: 44px 1fr auto; gap: var(--s4);
+  align-items: center; padding-bottom: var(--s5);
+  border-bottom: 1px solid var(--hairline); margin-bottom: var(--s5);
+}
+.pbm-head-name { font-size: 16px; font-weight: 600; color: var(--ink); text-decoration: none; }
+.pbm-head-name:hover { color: var(--accent-bright); }
+.pbm-head-role { font-size: 13.5px; color: var(--ink-dim); margin-top: 2px; }
+.pbm-head-actions { display: flex; gap: var(--s2); }
+.pbm-small { height: 32px; font-size: 13px; padding: 0 var(--s3); }
+
+.pbm-request {
+  border: 1px solid var(--hairline-strong); border-radius: 8px;
+  padding: var(--s5); margin-bottom: var(--s5); background: var(--surface);
+}
+.pbm-request-t { font-size: 14px; color: var(--ink); margin: 0 0 var(--s4); line-height: 1.5; }
+.pbm-request-a { display: flex; gap: var(--s2); }
+
+.pbm-msgs { display: flex; flex-direction: column; gap: var(--s4); margin-bottom: var(--s6); }
+.pbm-msg { max-width: 74%; }
+.pbm-msg.is-me { align-self: flex-end; text-align: right; }
+.pbm-bubble {
+  display: inline-block; text-align: left;
+  font-size: 15px; line-height: 1.55; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 10px; padding: var(--s3) var(--s4);
+  overflow-wrap: anywhere;
+}
+.pbm-msg.is-me .pbm-bubble { background: var(--accent-pale); border-color: #CFE3D6; }
+.pbm-time { font-size: 11.5px; color: var(--ink-dim); margin-top: var(--s1); }
+
+.pbm-compose { border-top: 1px solid var(--hairline); padding-top: var(--s5); }
+.pbm-compose textarea {
+  width: 100%; font-family: inherit; font-size: 15px; line-height: 1.55;
+  color: var(--ink); background: var(--bg);
+  border: 1px solid var(--hairline-strong); border-radius: 8px;
+  padding: var(--s3); resize: vertical;
+}
+.pbm-compose textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+.pbm-compose-row {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--s4); margin-top: var(--s3);
+}
+.pbm-hint { font-size: 13px; color: var(--ink-dim); }
+.pbm-locked {
+  font-size: 14px; color: var(--ink-dim); border-top: 1px solid var(--hairline);
+  padding-top: var(--s5);
+}
+
+/* Unread marker on the account control: the existing green dot turns
+   solid rather than adding a red social badge. */
+body .pb-signin.is-account.has-unread::before { box-shadow: 0 0 0 3px var(--accent-pale); }
+
+@media (max-width: 640px) {
+  .pbm-msg { max-width: 88%; }
+  .pbm-head { grid-template-columns: 40px 1fr; }
+  .pbm-head-actions { grid-column: 1 / -1; }
+  .pbm-compose-row { flex-direction: column; align-items: stretch; gap: var(--s3); }
+  .pbm-compose-row .pbn-btn { width: 100%; }
+}
