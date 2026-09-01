@@ -2330,7 +2330,7 @@ const CAPITAL_SOURCES = {
         url: "https://hansmann.fo/"
       },
       {
-        label: "brutkasten — lifetime achievement award, Sept 2023",
+        label: "brutkasten - lifetime achievement award, Sept 2023",
         url: "https://brutkasten.com/artikel/hansi-hansmann-goat"
       },
       {
@@ -2338,11 +2338,11 @@ const CAPITAL_SOURCES = {
         url: "https://brutkasten.com/artikel/hansmann-moechte-irgendwann-beginnen-persoenlich-weniger-involviert-zu-sein"
       },
       {
-        label: "brutkasten — WeR seed round, June 2025",
+        label: "brutkasten - WeR seed round, June 2025",
         url: "https://brutkasten.com/artikel/wer-millioneninvestment"
       },
       {
-        label: "brutkasten — One100 investment, May 2026",
+        label: "brutkasten - One100 investment, May 2026",
         url: "https://brutkasten.com/artikel/one100-hansmann-investiert-sechsstellig-in-healthtech-startup-der-hokify-gruender"
       }
     ]
@@ -3114,7 +3114,7 @@ const CAPITAL_SOURCES = {
     exitCountBasis: null,
     publicHoldings: [],
     strategicValue: "A 25+ year commercial real estate finance and banking career in which she financed more than $10 billion gives her direct experience of underwriting, financial modelling and lender diligence. Through The Masthead Strategy she works with founders specifically on fundraising strategy, and she holds current board seats at Outcast Brands, Fierce Foundry and the Enthuse Foundation. Her publicly listed portfolio is concentrated in consumer packaged goods and early-stage technology companies led by underrepresented founders.",
-    biography: "Katie Dunn is a US angel investor, startup advisor and board director. She spent 25+ years in commercial real estate finance at banks and financial institutions, financing more than $10 billion, before moving to funding and supporting founders full-time. She publishes an open portfolio on her own site of over 30 angel investments, stating that she invests primarily in underrepresented founders — LGBTQIA+, BIPOC and women — in technology and consumer packaged goods based in the US. She is the founder of The Masthead Strategy, which provides fundraising strategy coaching and guides to founders, and serves on the boards of Outcast Brands, Fierce Foundry and the Enthuse Foundation. She was interviewed as an active angel investor in December 2025.",
+    biography: "Katie Dunn is a US angel investor, startup advisor and board director. She spent 25+ years in commercial real estate finance at banks and financial institutions, financing more than $10 billion, before moving to funding and supporting founders full-time. She publishes an open portfolio on her own site of over 30 angel investments, stating that she invests primarily in underrepresented founders - LGBTQIA+, BIPOC and women - in technology and consumer packaged goods based in the US. She is the founder of The Masthead Strategy, which provides fundraising strategy coaching and guides to founders, and serves on the boards of Outcast Brands, Fierce Foundry and the Enthuse Foundation. She was interviewed as an active angel investor in December 2025.",
     lastChecked: "2026-09-02",
     investments: [
       {
@@ -3560,7 +3560,7 @@ const CAPITAL_SOURCES = {
         url: "https://www.themastheadstrategy.com/"
       },
       {
-        label: "The North — advisor bio",
+        label: "The North - advisor bio",
         url: "https://findyournorth.co/advisors/katie-dunn"
       },
       {
@@ -4046,7 +4046,7 @@ const CAPITAL_SOURCES = {
       "MBA, San Diego/Kennesaw State University, United States"
     ],
     previousExperience: [
-      "President, South & Southeast Asia, CDC Software — 16-year tenure, rose from Systems Engineer to President, company grew from $50M to $400M",
+      "President, South & Southeast Asia, CDC Software - 16-year tenure, rose from Systems Engineer to President, company grew from $50M to $400M",
       "President, Atlanta and San Diego Chapters, Association for India's Development (AID)"
     ],
     operatingBackground: [
@@ -5660,7 +5660,7 @@ const CAPITAL_SOURCES = {
     exitCount: null,
     exitCountBasis: null,
     publicHoldings: [],
-    strategicValue: "She has built a portfolio of more than 140 companies since 2007 with an explicit focus on female founders, so she has repeat pattern experience across a large number of early-stage consumer and media businesses. Her own operating background is in retail and consumer businesses — four years at Macy's, founding member of Frame Home, and founder of the GOTHAM cannabis retail concept — which maps onto the consumer, food and retail companies she has backed. She co-founded the Women Entrepreneurs Festival and co-chaired Path Forward, giving her a founder network built specifically around women-led companies.",
+    strategicValue: "She has built a portfolio of more than 140 companies since 2007 with an explicit focus on female founders, so she has repeat pattern experience across a large number of early-stage consumer and media businesses. Her own operating background is in retail and consumer businesses - four years at Macy's, founding member of Frame Home, and founder of the GOTHAM cannabis retail concept - which maps onto the consumer, food and retail companies she has backed. She co-founded the Women Entrepreneurs Festival and co-chaired Path Forward, giving her a founder network built specifically around women-led companies.",
     biography: "Joanne Wilson is a New York angel investor and writer who has published the Gotham Gal blog for many years and describes herself on her own site as an entrepreneur, early-stage angel investor and philanthropist. She began investing in 2007, her first investment being Curbed, and her site states she has built a portfolio of over 140 companies with a focus on female entrepreneurs, naming Food52, Eater and Parachute Home among them. She invests through Gotham Gal Ventures, which Wikipedia describes as a vehicle she co-manages with her husband Fred Wilson, cofounder of Union Square Ventures. Her earlier career ran from a retail apparel role at Macy's to sales at Silicon Alley Reporter, and she chaired the education non-profit MOUSE and Hot Bread Kitchen's board from 2010 to 2015. Alongside investing she chairs The Public Housing Community Fund, sits on the board of Friends of the High Line, is a founding member of the residential developer Frame Home, and founded GOTHAM, a New York cannabis concept store.",
     lastChecked: "2026-09-02",
     investments: [
@@ -5859,7 +5859,7 @@ const CAPITAL_SOURCES = {
     ],
     sources: [
       {
-        label: "Personal site — about page",
+        label: "Personal site - about page",
         url: "https://gothamgal.com/about-gothamgal/"
       },
       {
@@ -5867,11 +5867,11 @@ const CAPITAL_SOURCES = {
         url: "https://gothamgal.com/"
       },
       {
-        label: "Wikipedia — Joanne Wilson",
+        label: "Wikipedia - Joanne Wilson",
         url: "https://en.wikipedia.org/wiki/Joanne_Wilson"
       },
       {
-        label: "dot.LA — LA Venture interview",
+        label: "dot.LA - LA Venture interview",
         url: "https://dot.la/joanne-wilson-gotham-gal-ventures-2656904435.html"
       }
     ]
@@ -7079,7 +7079,7 @@ const CAPITAL_SOURCES = {
     basedIn: "Hoboken, New Jersey, United States",
     education: [],
     previousExperience: [
-      "Epic (medical software company) — joined directly out of college; job title not stated in any source located"
+      "Epic (medical software company) - joined directly out of college; job title not stated in any source located"
     ],
     operatingBackground: [],
     statedSectorFocus: [
@@ -7116,7 +7116,7 @@ const CAPITAL_SOURCES = {
     exitCount: null,
     exitCountBasis: null,
     publicHoldings: [],
-    strategicValue: "Santora invests his own capital full-time at pre-seed and seed in B2B SaaS and subscription software, writing stated cheques of $10k-$45k, which makes him a fit for founders assembling an early angel round rather than a lead. He states that his value-add comes from his network — fundraising introductions, finding employees, and connecting founders with advisers. He began his career at the medical software company Epic directly out of college.",
+    strategicValue: "Santora invests his own capital full-time at pre-seed and seed in B2B SaaS and subscription software, writing stated cheques of $10k-$45k, which makes him a fit for founders assembling an early angel round rather than a lead. He states that his value-add comes from his network - fundraising introductions, finding employees, and connecting founders with advisers. He began his career at the medical software company Epic directly out of college.",
     biography: "Francis Santora is a US angel investor based in Hoboken, New Jersey, who describes himself as a \"NYC area angel\" and a \"solo angel\". He began his career at Epic, a medical software company, straight out of college, and started angel investing around 2021 after reading Jason Calacanis's book \"Angel\". In a June 2024 interview he stated \"I do it full-time now just with my own capital\", and his investor profile lists a $10k-$45k cheque size and 41 investments to date. He states he invests in SaaS, productivity, subscription and collaboration software in the US and comparable markets including the UK, Canada, Ireland, Australia, New Zealand and Japan. Named investments include Edge, whose seed round he joined in mid-2021, and the London fintech Caribou (formerly Rebank).",
     lastChecked: "2026-09-02",
     investments: [
@@ -7163,7 +7163,7 @@ const CAPITAL_SOURCES = {
         url: "https://www.openvc.app/fund/Francis%20Santora"
       },
       {
-        label: "The Accelerator with Michael Conniff — podcast episode",
+        label: "The Accelerator with Michael Conniff - podcast episode",
         url: "https://michaelconniff.com/francis-santora-is-an-angel-investor-and-a-blogger/"
       }
     ]
