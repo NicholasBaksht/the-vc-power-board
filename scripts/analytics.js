@@ -53,7 +53,27 @@ const PBA_EVENTS = [
   'conflict_check_completed',
   'power_alert_opened',
   'signup_started',
-  'signup_completed'
+  'signup_completed',
+  /* Power Network. This array is the client half of the allowlist;
+     the other half is the CHECK constraint on product_events, and
+     both must list a name for it to be recorded. No message body,
+     search text or profile field is ever sent as a property. */
+  'people_page_viewed',
+  'people_search_started',
+  'people_search_completed',
+  'people_result_opened',
+  'people_profile_viewed',
+  'person_followed',
+  'person_unfollowed',
+  'message_clicked',
+  'message_request_sent',
+  'message_request_accepted',
+  'message_sent',
+  'network_post_created',
+  'linkedin_post_added',
+  'following_feed_viewed',
+  'profile_edit_started',
+  'profile_updated'
 ];
 
 /* ---------- opt out ---------- */
