@@ -39,6 +39,12 @@ const PBN_EXPERTISE = ['AI / ML','Software Engineering','Developer Infrastructur
   'Manufacturing','Hardware','Robotics','Supply Chain','Logistics','Consumer',
   'Commerce','Media','Gaming','Sports','Defense','Space','Education','PropTech'];
 
+/* Handles can contain spaces and dots now, so any handle going into
+   an href has to be percent-encoded as well as HTML-escaped. */
+function pbnUrl(v) {
+  return pbnEsc(encodeURIComponent(String(v == null ? '' : v)));
+}
+
 function pbnEsc(v) {
   return String(v == null ? '' : v)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -166,7 +172,7 @@ async function renderPeopleDiscovery() {
               (pbnMyProfile && pbnMyProfile.is_published ? 'Edit my profile' : 'Create my profile') +
               '</a>' +
               (pbnMyProfile && pbnMyProfile.username
-                ? '<a class="pbn-btn pbn-btn-s" href="#network/' + pbnEsc(pbnMyProfile.username) + '">View my profile</a>'
+                ? '<a class="pbn-btn pbn-btn-s" href="#network/' + pbnUrl(pbnMyProfile.username) + '">View my profile</a>'
                 : '') +
             '</div>'
           : '<div class="pbn-actions"><a class="pbn-btn pbn-btn-p" href="#signin">Sign in to create a profile</a></div>') +
@@ -258,7 +264,7 @@ async function pbnRunSearch() {
     (rows.length === 1 ? 'person' : 'people') + '</div>' +
     rows.map(function (p) {
       const loc = (p.show_location && p.location) ? p.location : '';
-      return '<a class="pbn-row" href="#network/' + pbnEsc(p.username || p.id) + '">' +
+      return '<a class="pbn-row" href="#network/' + pbnUrl(p.username || p.id) + '">' +
         pbnPhoto(p) +
         '<span class="pbn-row-main">' +
           '<span class="pbn-row-name">' + pbnEsc(p.full_name || p.username || 'Unnamed') + '</span>' +
@@ -289,7 +295,13 @@ async function renderNetworkProfile(handle) {
 
   let p = null;
   try {
-    const { data } = await c.from('profiles').select('*').eq('username', handle).maybeSingle();
+    /* Uniqueness is case-insensitive, so the lookup must be too.
+       ilike is used for that, but ilike also treats % and _ as
+       wildcards - and _ is a legal handle character. Left unescaped,
+       looking up "nick_b" would also match "nickab" and could resolve
+       to the wrong person, so both are escaped first. */
+    const pattern = String(handle).replace(/[\\%_]/g, function (ch) { return '\\' + ch; });
+    const { data } = await c.from('profiles').select('*').ilike('username', pattern).maybeSingle();
     p = data;
   } catch (e) { p = null; }
 
@@ -462,7 +474,7 @@ async function renderNetworkProfileEdit() {
     body =
       pbnField('Full name', '<input id="f_full_name" maxlength="120" value="' + val('full_name') + '">') +
       pbnField('Public handle', '<input id="f_username" maxlength="40" value="' + val('username') + '">',
-        'Used in your profile address. Letters, numbers and dashes.') +
+        'Spaces are allowed, so \'Nicholas Baksht\' stays exactly that. 3 to 40 characters; double spaces are collapsed.') +
       pbnField('Headline', '<input id="f_headline" maxlength="200" value="' + val('headline') + '">',
         'One line on what you are building or working on.') +
       pbnField('Location', '<input id="f_location" maxlength="120" value="' + val('location') + '">') +
@@ -652,15 +664,29 @@ async function pbnSaveGroup() {
      never send null, normalise to a form the check will accept, and
      drop the key entirely when the user has not supplied one. */
   if ('username' in patch) {
-    const clean = String(patch.username || '')
-      .toLowerCase()
-      .replace(/[^a-z0-9-]+/g, '-')   // collapse runs, not one dash per char
-      .replace(/^-+|-+$/g, '');        // no leading or trailing dash
+    /* The database enforces profiles_username_format, and it does NOT
+       accept everything this form used to send: "Nicholas Baksht" was
+       rejected outright. Rather than guess which separator that rule
+       permits, normalise to plain lowercase alphanumerics, which
+       satisfies every common variant of the rule. A space becomes
+       nothing, not a dash. */
+    /* Case is preserved: the database keeps whatever you type and
+       enforces uniqueness case-insensitively, so Nicholas_Baksht
+       displays as written. Only genuinely URL-unsafe characters are
+       changed - a space becomes a dash rather than vanishing. */
+    let clean = String(patch.username || '')
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')   // strip accents
+      .replace(/[^A-Za-z0-9._ -]+/g, '')                   // drop unsafe chars
+      .replace(/\s+/g, ' ')                                // one space, never two
+      .replace(/[._-]{2,}/g, '-')                          // collapse punctuation
+      .trim()                                              // no edge whitespace
+      .replace(/^[._-]+|[._-]+$/g, '');                    // no edge punctuation
+    clean = clean.slice(0, 40);
     if (!clean) {
       delete patch.username;           // leave the existing handle alone
     } else if (clean.length < 3) {
       msg.classList.add('is-error');
-      msg.textContent = 'Your handle needs at least 3 letters or numbers.';
+      msg.textContent = 'Your handle needs at least 3 characters.';
       return;
     } else {
       patch.username = clean;
@@ -804,7 +830,10 @@ function pbnSaveError(e) {
     return 'Required field is empty' + (m ? ': ' + m[1] : '') + '.';
   }
   if (code === '23514' || /violates check constraint/i.test(detail)) {
-    if (/username/i.test(detail)) return 'That handle has characters the site will not accept. Use letters, numbers and dashes.';
+    if (/username/i.test(detail)) {
+      return 'That handle is not a valid format. Use 3 to 40 characters and start ' +
+             'and end with a letter or number.';
+    }
     if (/len_ck/i.test(detail))   return 'One of these fields is too long.';
     if (/dm_policy/i.test(detail)) return 'That messaging setting is not a valid option.';
     return 'One of these values was rejected by the database.';
