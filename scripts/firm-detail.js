@@ -202,17 +202,17 @@ const holdingsHTML = firm.holdings.map(h => {
       </div>
       <div class="detail-stats">
         <div class="detail-stat">
-          <div class="num">${firm.aum || '—'}</div>
+          <div class="num">${firm.aum || ' - '}</div>
           <div class="lbl">Assets Managed</div>
           ${typeof rtStatMeta === 'function' ? rtStatMeta(firm.slug, 'aum') : ''}
         </div>
         <div class="detail-stat">
-          <div class="num">${firm.founded || '—'}</div>
+          <div class="num">${firm.founded || ' - '}</div>
           <div class="lbl">Founded</div>
           ${typeof rtStatMeta === 'function' ? rtStatMeta(firm.slug, 'founded') : ''}
         </div>
         <div class="detail-stat">
-          <div class="num">${firm.hq || '—'}</div>
+          <div class="num">${firm.hq || ' - '}</div>
           <div class="lbl">Headquarters</div>
           ${typeof rtStatMeta === 'function' ? rtStatMeta(firm.slug, 'hq') : ''}
         </div>
