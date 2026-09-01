@@ -22,9 +22,9 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Aaron Rudberg is Managing Partner and co-leader of S2G Investments, focused on the firm's day to day operations, portfolio management, and culture. He joined S2G in 2017 as Chief Operating Officer after roughly ten years at Baird Capital, where as Partner and Managing Director he oversaw strategy, investor relations, marketing, and business development for a multi-billion dollar private equity and venture capital operation. Earlier he worked at Muller & Monroe Asset Management, investing in emerging managers. When S2G launched as a registered investment adviser and standalone business in 2024, he was named among the managing partners leading the firm. He holds a BA from the University of Illinois at Urbana-Champaign and an MBA from the Kellogg School of Management at Northwestern University.",
     sources: [
-      { label: "S2G Investments — Team: Aaron Rudberg", url: "https://www.s2ginvestments.com/team/aaron-rudberg" },
-      { label: "AgFunderNews — S2G new hires including Rudberg as COO (Nov 2017)", url: "https://agfundernews.com/s2g-ventures-wants-professionalize-agrifood-tech-investing-180m-fund-new-hires" },
-      { label: "S2G — RIA and standalone business announcement (May 2024)", url: "https://www.s2ginvestments.com/news/s2g-and-builders-vision-announce-s2gs-launch-as-a-registered-investment-adviser-and-standalone-business" }
+      { label: "S2G Investments - Team: Aaron Rudberg", url: "https://www.s2ginvestments.com/team/aaron-rudberg" },
+      { label: "AgFunderNews - S2G new hires including Rudberg as COO (Nov 2017)", url: "https://agfundernews.com/s2g-ventures-wants-professionalize-agrifood-tech-investing-180m-fund-new-hires" },
+      { label: "S2G - RIA and standalone business announcement (May 2024)", url: "https://www.s2ginvestments.com/news/s2g-and-builders-vision-announce-s2gs-launch-as-a-registered-investment-adviser-and-standalone-business" }
     ]
   },
 "rob-leclerc": {
@@ -68,9 +68,9 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Rob Leclerc is a Partner and co-founder of AgFunder, the agrifood technology venture capital firm. He co-founded the company in 2013 and served as its CEO, initially launching AgFunder as an online platform connecting agriculture companies with investors before it developed into a venture capital investor in foodtech and agtech. He brings more than 15 years of qualitative and quantitative experience as a scientist and engineer, with academic training spanning philosophy, computer science with a focus on artificial intelligence and virtual robotics, and computational biology, including a PhD from Yale University. Before AgFunder he worked at SeedRock Agriculture, the agriculture venture co-founded by his AgFunder co-founder Michael Dean.",
     sources: [
-      { label: "AgFunder — About Us / Team", url: "https://agfunder.com/about-us/team/rob-leclerc/" },
-      { label: "Modern Farmer — Introducing AgFunder (Jul 2013)", url: "https://modernfarmer.com/2013/07/agfunder-rob-leclerc/" },
-      { label: "Business Wire — AgFunder adds Manuel Gonzalez as Partner (Feb 2021)", url: "https://www.businesswire.com/news/home/20210202005935/en/AgFunder-Adds-Renowned-Food-and-Ag-Banker-and-Innovation-Head-Manuel-Gonzalez-as-Partner" }
+      { label: "AgFunder - About Us / Team", url: "https://agfunder.com/about-us/team/rob-leclerc/" },
+      { label: "Modern Farmer - Introducing AgFunder (Jul 2013)", url: "https://modernfarmer.com/2013/07/agfunder-rob-leclerc/" },
+      { label: "Business Wire - AgFunder adds Manuel Gonzalez as Partner (Feb 2021)", url: "https://www.businesswire.com/news/home/20210202005935/en/AgFunder-Adds-Renowned-Food-and-Ag-Banker-and-Innovation-Head-Manuel-Gonzalez-as-Partner" }
     ]
   },
 "michael-dean": {
@@ -115,9 +115,9 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Michael Dean is a Partner and co-founder of AgFunder, the agrifood technology venture capital firm, which he helped establish in 2013 and where he served as chairman at launch. He brings more than 25 years of experience across food and agriculture, venture capital, environmental sustainability, carbon markets, social impact, and law. Before AgFunder he was co-founder and CEO of SeedRock Agriculture, the agriculture venture where his AgFunder co-founder Rob Leclerc also worked. He holds an LLB and an LLM in International Environmental Law from the University of Sydney.",
     sources: [
-      { label: "AgFunder — About Us / Team: Michael Dean", url: "https://agfunder.com/about-us/team/michael-dean/" },
-      { label: "Modern Farmer — Introducing AgFunder (Jul 2013)", url: "https://modernfarmer.com/2013/07/agfunder-rob-leclerc/" },
-      { label: "Business Wire — AgFunder adds Manuel Gonzalez as Partner (Feb 2021)", url: "https://www.businesswire.com/news/home/20210202005935/en/AgFunder-Adds-Renowned-Food-and-Ag-Banker-and-Innovation-Head-Manuel-Gonzalez-as-Partner" }
+      { label: "AgFunder - About Us / Team: Michael Dean", url: "https://agfunder.com/about-us/team/michael-dean/" },
+      { label: "Modern Farmer - Introducing AgFunder (Jul 2013)", url: "https://modernfarmer.com/2013/07/agfunder-rob-leclerc/" },
+      { label: "Business Wire - AgFunder adds Manuel Gonzalez as Partner (Feb 2021)", url: "https://www.businesswire.com/news/home/20210202005935/en/AgFunder-Adds-Renowned-Food-and-Ag-Banker-and-Innovation-Head-Manuel-Gonzalez-as-Partner" }
     ]
   },
 "manuel-gonzalez": {
@@ -152,9 +152,9 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Manuel Gonzalez is a Partner at AgFunder, the agrifood technology venture capital firm, which he joined in 2021. He spent much of his career at Rabobank, most recently as Global Head of Food & Ag Startup Innovation, where he launched the bank's startup innovation platforms FoodBytes! and TERRA. FoodBytes! held its inaugural startup showcase in 2015. His earlier Rabobank roles included Managing Director and General Manager of Rabobank West Coast in the United States and General Manager of Rabobank Mexico. Before banking, he founded and led Gonzalez Guzman Alimentos, a yogurt and sour cream company based in Guadalajara, Mexico. He holds an MBA from Georgetown University.",
     sources: [
-      { label: "AgFunder — About Us / Team: Manuel Gonzalez", url: "https://agfunder.com/about-us/team/manuel-gonzalez/" },
-      { label: "Business Wire — AgFunder adds Manuel Gonzalez as Partner (Feb 2021)", url: "https://www.businesswire.com/news/home/20210202005935/en/AgFunder-Adds-Renowned-Food-and-Ag-Banker-and-Innovation-Head-Manuel-Gonzalez-as-Partner" },
-      { label: "FoodNavigator-USA — inaugural FoodBytes! showcase (Dec 2015)", url: "https://www.foodnavigator-usa.com/Article/2015/12/09/Rabobank-connects-winners-of-its-inaugural-FoodBytes!-with-investors" }
+      { label: "AgFunder - About Us / Team: Manuel Gonzalez", url: "https://agfunder.com/about-us/team/manuel-gonzalez/" },
+      { label: "Business Wire - AgFunder adds Manuel Gonzalez as Partner (Feb 2021)", url: "https://www.businesswire.com/news/home/20210202005935/en/AgFunder-Adds-Renowned-Food-and-Ag-Banker-and-Innovation-Head-Manuel-Gonzalez-as-Partner" },
+      { label: "FoodNavigator-USA - inaugural FoodBytes! showcase (Dec 2015)", url: "https://www.foodnavigator-usa.com/Article/2015/12/09/Rabobank-connects-winners-of-its-inaugural-FoodBytes!-with-investors" }
     ]
   },
 "mike-velings": {
@@ -193,9 +193,9 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Mike Velings is the co-founder and CEO of Aqua-Spark, an investment fund based in the Netherlands that was the first fund dedicated to sustainable aquaculture. He co-founded the firm in 2013 with Amy Novogratz, and it made its first investments in 2015; by its tenth anniversary the fund reported close to 500 million euros in assets under management across a portfolio of 28 companies. A lifelong entrepreneur, he earlier co-founded Connexie, which helped build a professional employment industry in the Netherlands, and he serves on Conservation International's Leadership Council. His 2016 TED talk, The case for fish farming, made the argument for aquaculture as a means of feeding a growing population responsibly.",
     sources: [
-      { label: "Aqua-Spark — Team: Mike Velings", url: "https://aqua-spark.nl/team/mike-velings/" },
-      { label: "The Fish Site — Aqua-Spark 10th anniversary (Apr 2024)", url: "https://thefishsite.com/articles/aqua-spark-marks-10th-anniversary-with-new-impact-report" },
-      { label: "TED — Mike Velings speaker page", url: "https://www.ted.com/speakers/mike_velings" }
+      { label: "Aqua-Spark - Team: Mike Velings", url: "https://aqua-spark.nl/team/mike-velings/" },
+      { label: "The Fish Site - Aqua-Spark 10th anniversary (Apr 2024)", url: "https://thefishsite.com/articles/aqua-spark-marks-10th-anniversary-with-new-impact-report" },
+      { label: "TED - Mike Velings speaker page", url: "https://www.ted.com/speakers/mike_velings" }
     ]
   },
 "amy-novogratz": {
@@ -246,10 +246,10 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Amy Novogratz is co-founder and Managing Partner of Aqua-Spark, an investment fund based in the Netherlands that was the first fund dedicated to sustainable aquaculture. Before launching the fund in 2013, she was director of the TED Prize, where she led more than twenty global collaborations across healthcare, education, science, technology, conservation, art, and activism, including Jamie Oliver's Food Revolution and Sylvia Earle's Mission Blue ocean initiative. Her work with Earle on ocean conservation shaped her conviction that transforming aquaculture could reduce pressure on the ocean, leading her to co-found Aqua-Spark with Mike Velings. The fund made its first investments in 2015 and by its tenth anniversary reported close to 500 million euros in assets under management across 28 portfolio companies.",
     sources: [
-      { label: "Aqua-Spark — Team: Amy Novogratz", url: "https://aqua-spark.nl/team/amy-novogratz/" },
-      { label: "WeAreAquaculture — TalentView: Amy Novogratz", url: "https://weareaquaculture.com/talentview/36537" },
-      { label: "TED Blog — TED Prize wish and sea change", url: "https://blog.ted.com/how-a-ted-prize-wish-helped-one-woman-create-a-sea-change/" },
-      { label: "The Fish Site — Aqua-Spark 10th anniversary (Apr 2024)", url: "https://thefishsite.com/articles/aqua-spark-marks-10th-anniversary-with-new-impact-report" }
+      { label: "Aqua-Spark - Team: Amy Novogratz", url: "https://aqua-spark.nl/team/amy-novogratz/" },
+      { label: "WeAreAquaculture - TalentView: Amy Novogratz", url: "https://weareaquaculture.com/talentview/36537" },
+      { label: "TED Blog - TED Prize wish and sea change", url: "https://blog.ted.com/how-a-ted-prize-wish-helped-one-woman-create-a-sea-change/" },
+      { label: "The Fish Site - Aqua-Spark 10th anniversary (Apr 2024)", url: "https://thefishsite.com/articles/aqua-spark-marks-10th-anniversary-with-new-impact-report" }
     ]
   },
 "adam-sharkawy": {
@@ -277,8 +277,8 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Adam Sharkawy is Co-Founder and Managing Partner of Material Impact, a venture capital firm established in 2016 that builds and invests in companies powered by material science innovation. He previously served as Senior Vice President at The Medicines Company, leading its Surgery and Perioperative Care global business unit, held an executive leadership role in Smith & Nephew's emerging markets division, and was Vice President of Research and Advanced Development and New Ventures at Abbott Vascular, where he helped launch the Xience drug eluting stent and co-led the Guidant integration. Earlier he co-founded the medical device company Ventrica, which was acquired by Medtronic. He holds a PhD in biomedical engineering from Duke University and mechanical engineering degrees from the American University in Cairo and Texas A&M University.",
     sources: [
-      { label: "Material Impact — Team", url: "https://www.materialimpact.com/team/" },
-      { label: "Material Impact — Adam Sharkawy bio", url: "https://www.materialimpact.com/the-team/adam-sharkawy-phd/" },
+      { label: "Material Impact - Team", url: "https://www.materialimpact.com/team/" },
+      { label: "Material Impact - Adam Sharkawy bio", url: "https://www.materialimpact.com/the-team/adam-sharkawy-phd/" },
       { label: "Material Impact Fund III press release (Nov 2023)", url: "https://www.prnewswire.com/news-releases/material-impact-announces-352m-fund-iii-to-invest-in-companies-powered-by-material-science-innovation-301988392.html" }
     ]
   },
@@ -304,8 +304,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Corinna Chen is a Partner at Material Impact, where she focuses on synthetic biology, bio based materials, advanced electronic materials, next generation computing, and climate technology. She began her career designing spacecraft instrumentation at UC Berkeley's Space Sciences Laboratory for NASA's THEMIS mission. She later worked in business development and engineering at Incline Therapeutics, helping commercialize the IONSYS transdermal device and leading integration after the company's 390 million dollar acquisition by The Medicines Company, where she went on to hold a vice president level role in the Surgery and Perioperative Care business unit. She was also Vice President of Corporate Development and Finance at Medeor Therapeutics. She holds nine patents and has transaction experience exceeding 1.25 billion dollars across eight products. She earned a BS in electrical engineering from Boston University and an MBA from Duke University.",
     sources: [
-      { label: "Material Impact — Team", url: "https://www.materialimpact.com/team/" },
-      { label: "Material Impact — Corinna Chen bio", url: "https://www.materialimpact.com/the-team/corinna-chen/" },
+      { label: "Material Impact - Team", url: "https://www.materialimpact.com/team/" },
+      { label: "Material Impact - Corinna Chen bio", url: "https://www.materialimpact.com/the-team/corinna-chen/" },
       { label: "CES 2026 speaker page", url: "https://www.ces.tech/speakers/corinna-chen/" }
     ]
   },
@@ -331,8 +331,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Christian Theriault is a Partner at Material Impact, which he joined in 2020, and works across deep tech industries including robotics, machine vision, and medical devices. A serial entrepreneur, he co-founded TAG Optics, developer of the world's fastest focusing lens used in laser material processing, metrology, and biomedical applications, which was acquired by Mitutoyo Corporation. He also co-founded medical device startups spun out of his graduate research and helped bring products to market at a biotechnology startup developing new chemical entities in dermatology and neuropharmacology. He serves as an Entrepreneur in Residence for the NSF I-Corps Northeast Regional Hub at Princeton University and has spent nearly a decade mentoring high tech startups. He holds an AB in molecular biology and bioengineering and an MSE from Princeton University.",
     sources: [
-      { label: "Material Impact — Team", url: "https://www.materialimpact.com/team/" },
-      { label: "Material Impact — Christian Theriault bio", url: "https://www.materialimpact.com/the-team/christian-theriault/" }
+      { label: "Material Impact - Team", url: "https://www.materialimpact.com/team/" },
+      { label: "Material Impact - Christian Theriault bio", url: "https://www.materialimpact.com/the-team/christian-theriault/" }
     ]
   },
 "katie-rae": {
@@ -365,9 +365,9 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Katie Rae is CEO and Managing Partner of Engine Ventures, the tough tech venture firm that became independent from MIT's The Engine in 2023. She led The Engine as CEO and Managing Partner from its 2017 launch, building the organization from the ground up, and under her leadership the firm closed its 398 million dollar third fund in 2024. She was previously Managing Director of Techstars Boston and co-founded Project 11 Ventures, and earlier held leadership roles at Microsoft, AltaVista, and RagingBull. Her investments have included PillPack, acquired by Amazon for 1 billion dollars in 2018, as well as Flywire and GrabCAD. She serves on the boards of Boston Metal, Commonwealth Fusion Systems, Form Energy, and Teradar, and co-founded the Equity Summit. She holds an MBA from Yale and a BA in biology from Oberlin College.",
     sources: [
-      { label: "Engine Ventures — Team", url: "https://engineventures.com/about/team" },
-      { label: "Engine Ventures — Katie Rae bio", url: "https://engineventures.com/people/katie-rae" },
-      { label: "MIT News — The Engine closes first fund (Apr 2017)", url: "https://news.mit.edu/2017/the-engine-closes-first-fund-150-million-0406" },
+      { label: "Engine Ventures - Team", url: "https://engineventures.com/about/team" },
+      { label: "Engine Ventures - Katie Rae bio", url: "https://engineventures.com/people/katie-rae" },
+      { label: "MIT News - The Engine closes first fund (Apr 2017)", url: "https://news.mit.edu/2017/the-engine-closes-first-fund-150-million-0406" },
       { label: "Engine Ventures Fund III press release (Jun 2024)", url: "https://www.businesswire.com/news/home/20240618546662/en/Translating-Breakthroughs-from-Lab-to-Market-The-Engine-Ventures-Scales-its-Pioneering-Tough-Tech-Investment-Model" }
     ]
   },
@@ -397,9 +397,9 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Israel Ruiz is President and General Partner of Engine Ventures, a role he assumed in 2023. He has been involved with the firm since its founding, leading its launch from MIT in 2016 while serving as MIT's Executive Vice President and Treasurer, a post he held from 2011 to 2020 after becoming Vice President for Finance in 2007. At MIT he was also a trustee and a member of the executive and endowment committees, and he chaired The Engine's board of directors. He focuses on deal structuring and works with founders and boards of scaling companies in foundational industries, climate, human health, and advanced systems. He has served on the boards of Moderna, Fortive, Aura Biosciences, and FM Global, and currently sits on the board of portfolio company Superlight. He holds a master's degree from MIT Sloan and an engineering degree from the Polytechnic University of Catalonia.",
     sources: [
-      { label: "Engine Ventures — Team", url: "https://engineventures.com/about/team" },
-      { label: "Engine Ventures — Israel Ruiz bio", url: "https://engineventures.com/people/israel-ruiz" },
-      { label: "MIT News — Israel Ruiz to step down (Dec 2019)", url: "https://news.mit.edu/2019/israel-ruiz-to-step-down-1219" }
+      { label: "Engine Ventures - Team", url: "https://engineventures.com/about/team" },
+      { label: "Engine Ventures - Israel Ruiz bio", url: "https://engineventures.com/people/israel-ruiz" },
+      { label: "MIT News - Israel Ruiz to step down (Dec 2019)", url: "https://news.mit.edu/2019/israel-ruiz-to-step-down-1219" }
     ]
   },
 "reed-sturtevant": {
@@ -424,9 +424,9 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Reed Sturtevant is a General Partner at Engine Ventures, with more than 40 years of experience across venture capital and the software industry in company formation, technology strategy, and software development. He was a general partner at The Engine, the tough tech fund launched from MIT, during its first year of investing in 2017. He previously founded and was Managing Director of Project 11 Ventures, served as Managing Director of Techstars Boston, was Vice President of Technology at Idealab Boston, and ran Microsoft Startup Labs in Cambridge. Earlier he founded Freelance Graphics, which was acquired by Lotus Development Corp. A graduate of MIT, he lectures in MIT entrepreneurship programs. He holds board seats at HyperLight, 2Pi, Amide, Ayo Semiconductor, DBOS, Oso Semiconductor, Trener Robotics, and The Routing Company.",
     sources: [
-      { label: "Engine Ventures — Team", url: "https://engineventures.com/about/team" },
-      { label: "Engine Ventures — Reed Sturtevant bio", url: "https://engineventures.com/people/reed-sturtevant" },
-      { label: "MIT News — Taking The Engine for a test drive (Aug 2017)", url: "https://news.mit.edu/2017/taking-the-engine-for-a-test-drive-0818" }
+      { label: "Engine Ventures - Team", url: "https://engineventures.com/about/team" },
+      { label: "Engine Ventures - Reed Sturtevant bio", url: "https://engineventures.com/people/reed-sturtevant" },
+      { label: "MIT News - Taking The Engine for a test drive (Aug 2017)", url: "https://news.mit.edu/2017/taking-the-engine-for-a-test-drive-0818" }
     ]
   },
 "ann-dewitt": {
@@ -451,8 +451,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Ann DeWitt is a General Partner at Engine Ventures, where she focuses on life sciences and tough tech investments addressing climate change and human health. She began her career in R&D at 3M, working across materials, biology, and engineering, later held senior roles in business development and strategic venture investment at Sanofi, and was part of the team at Flagship Pioneering. She serves on the boards of portfolio companies Cellino, Droplet Biosciences, Matrisome Bio, Source Bio, Predicta Biosciences, Bexorg, and Terrestrial Bio. She is a member of the Life Science Council at Springboard Enterprises, an advisor to Harvard's Blavatnik Fellowship, and a member of Prime Coalition's investment advisory committee. Business Insider named her to its Seed 100 list in 2025 and Seed 40 list in 2026. She holds a PhD in chemical engineering from MIT and an MBA from Harvard Business School.",
     sources: [
-      { label: "Engine Ventures — Team", url: "https://engineventures.com/about/team" },
-      { label: "Engine Ventures — Ann DeWitt bio", url: "https://engineventures.com/people/ann-dewitt" }
+      { label: "Engine Ventures - Team", url: "https://engineventures.com/about/team" },
+      { label: "Engine Ventures - Ann DeWitt bio", url: "https://engineventures.com/people/ann-dewitt" }
     ]
   },
 "michael-kearney": {
@@ -478,9 +478,9 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Michael Kearney is a General Partner at Engine Ventures, focused on climate change and the deployment of breakthrough technologies. He joined The Engine in 2018 as a Partner and was promoted to General Partner in 2023. He was the first employee at Ambri, a grid scale energy storage startup, where he led market and business development, and later served as Executive Director of the MIT Roosevelt Project, studying energy transition pathways toward a clean energy economy. He has published research on energy economics and innovation policy in peer reviewed journals and co-founded Blueprint, by The Engine, a program for early stage tough tech founders. He serves on the boards of Addis Energy, AtmosZero, Blue Energy, DG Matrix, Genomines, Mantel, Osmoses, Pascal, Sora Fuel, and VEIR. He holds a BA from Williams College and an MS and PhD from MIT.",
     sources: [
-      { label: "Engine Ventures — Team", url: "https://engineventures.com/about/team" },
-      { label: "Engine Ventures — Michael Kearney bio", url: "https://engineventures.com/people/michael-kearney" },
-      { label: "Engine Ventures press release — Kearney promoted to GP (Nov 2023)", url: "https://www.businesswire.com/news/home/20231115457926/en/Michael-Kearney-Promoted-to-General-Partner-at-Engine-Ventures" }
+      { label: "Engine Ventures - Team", url: "https://engineventures.com/about/team" },
+      { label: "Engine Ventures - Michael Kearney bio", url: "https://engineventures.com/people/michael-kearney" },
+      { label: "Engine Ventures press release - Kearney promoted to GP (Nov 2023)", url: "https://www.businesswire.com/news/home/20231115457926/en/Michael-Kearney-Promoted-to-General-Partner-at-Engine-Ventures" }
     ]
   },
 "dakin-sloss": {
@@ -536,10 +536,10 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Dakin Sloss is the Founder and General Partner of Prime Movers Lab, a venture capital firm based in Jackson, Wyoming that invests in breakthrough scientific startups. He founded the firm in 2018 with a 100 million dollar first fund and has since raised additional vehicles, including a 245 million dollar second fund announced in 2021, a 500 million dollar early growth fund in 2022, and a 245 million dollar early-stage fund in 2023. He leads investments in companies including E-Space, Tarana, Boom Supersonic, Focused Energy, Paradromics, and Quantum Space. Before Prime Movers Lab he was founding CEO of Tachyus and of OpenGov and founded the nonprofit California Common Sense. He studied mathematics, physics, and philosophy at Stanford University.",
     sources: [
-      { label: "Prime Movers Lab — Team", url: "https://www.primemoverslab.com/team" },
-      { label: "PR Newswire — Second fund launch (Jan 2021)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-launches-second-scientific-startup-fund-301216006.html" },
-      { label: "PR Newswire — 500M early growth fund (Sep 2022)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-raises-500-million-early-growth-fund-301623845.html" },
-      { label: "PR Newswire — 245M early-stage fund (2023)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-raises-245-million-early-stage-fund-to-advance-breakthrough-science-startups-301886276.html" }
+      { label: "Prime Movers Lab - Team", url: "https://www.primemoverslab.com/team" },
+      { label: "PR Newswire - Second fund launch (Jan 2021)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-launches-second-scientific-startup-fund-301216006.html" },
+      { label: "PR Newswire - 500M early growth fund (Sep 2022)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-raises-500-million-early-growth-fund-301623845.html" },
+      { label: "PR Newswire - 245M early-stage fund (2023)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-raises-245-million-early-stage-fund-to-advance-breakthrough-science-startups-301886276.html" }
     ]
   },
 "zia-huque": {
@@ -590,8 +590,8 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Zia Huque is a General Partner at Prime Movers Lab, where he focuses on growth-stage investing. He joined the firm in 2021 after a 30 year Wall Street career spanning credit, rates, equities, and derivatives. At Deutsche Bank he served as Global Co-Chief Operating Officer of Corporate Banking and Securities from 2012 to 2016, as Head of Equities and Fixed Income and Currencies for the Americas from 2016 to 2018, and as President and Chief Executive Officer of Deutsche Bank Securities Inc from 2018 until his departure in 2019. He serves on the boards of Tarana Wireless, Lyten, E-Space, CarbonCapture, and Paradromics. He holds a BA in economics and political science from Williams College.",
     sources: [
-      { label: "Prime Movers Lab — Team", url: "https://www.primemoverslab.com/team" },
-      { label: "PR Newswire — Prime Movers Lab adds investment veterans (Mar 2021)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-adds-two-investment-veterans-to-help-fuel-scientific-based-company-growth-301243199.html" }
+      { label: "Prime Movers Lab - Team", url: "https://www.primemoverslab.com/team" },
+      { label: "PR Newswire - Prime Movers Lab adds investment veterans (Mar 2021)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-adds-two-investment-veterans-to-help-fuel-scientific-based-company-growth-301243199.html" }
     ]
   },
 "tony-robbins": {
@@ -618,9 +618,9 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Tony Robbins is a Partner and Business Strategist at Prime Movers Lab, a venture capital firm that invests in breakthrough scientific startups. He was named among the firm's partners in its January 2021 announcement of a 245 million dollar second fund. Robbins is an entrepreneur and author who serves as chairman of a holding company comprising dozens of privately held businesses. His published work on finance and investing includes Money Master the Game in 2014, Unshakeable in 2017, and The Holy Grail of Investing in 2024, the final book in his financial freedom trilogy. At Prime Movers Lab he contributes business strategy experience drawn from four decades of work with companies and their leaders.",
     sources: [
-      { label: "Prime Movers Lab — Team", url: "https://www.primemoverslab.com/team" },
-      { label: "PR Newswire — Second fund launch naming Robbins as partner (Jan 2021)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-launches-second-scientific-startup-fund-301216006.html" },
-      { label: "PR Newswire — The Holy Grail of Investing (Feb 2024)", url: "https://www.prnewswire.com/news-releases/the-holy-grail-of-investing-the-final-book-in-tony-robbins-financial-freedom-trilogy-debuts-at-1-on-amazons-bestseller-list-302063572.html" }
+      { label: "Prime Movers Lab - Team", url: "https://www.primemoverslab.com/team" },
+      { label: "PR Newswire - Second fund launch naming Robbins as partner (Jan 2021)", url: "https://www.prnewswire.com/news-releases/prime-movers-lab-launches-second-scientific-startup-fund-301216006.html" },
+      { label: "PR Newswire - The Holy Grail of Investing (Feb 2024)", url: "https://www.prnewswire.com/news-releases/the-holy-grail-of-investing-the-final-book-in-tony-robbins-financial-freedom-trilogy-debuts-at-1-on-amazons-bestseller-list-302063572.html" }
     ]
   },
 "andre-jabban": {
@@ -643,8 +643,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Andre Jabban is a Partner and Head of Capital Formation at Prime Movers Lab, where he leads fundraising across the firm's funds, special purpose vehicles, and portfolio companies. He was previously Partner and Head of Fund Investor Relations at Flagship Pioneering, where he managed capital formation efforts including the firm's 3.6 billion dollar Fund VIII. Before Flagship he spent a decade as Head of Alternative Investments for the Polk Wealth Management Group at Morgan Stanley, sourcing and managing alternative investments and co-investments, and earlier held roles at Merrill Lynch, York Capital Management, and P. Schoenfeld Asset Management. He holds a BBA in international business and marketing from Loyola University Maryland and earned the CAIA designation in 2016.",
     sources: [
-      { label: "Prime Movers Lab — Team", url: "https://www.primemoverslab.com/team" },
-      { label: "PR Newswire — Flagship Pioneering Fund VIII (Jul 2024)", url: "https://www.prnewswire.com/news-releases/flagship-pioneering-raises-3-6-billion-to-fuel-breakthrough-innovations-that-transform-human-health-and-sustainability-302192743.html" }
+      { label: "Prime Movers Lab - Team", url: "https://www.primemoverslab.com/team" },
+      { label: "PR Newswire - Flagship Pioneering Fund VIII (Jul 2024)", url: "https://www.prnewswire.com/news-releases/flagship-pioneering-raises-3-6-billion-to-fuel-breakthrough-innovations-that-transform-human-health-and-sustainability-302192743.html" }
     ]
   },
 "chad-anderson": {
@@ -671,10 +671,10 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Chad Anderson is the Founder and CEO of Space Capital, a New York based venture capital firm investing at the intersection of space technology and global markets. He became managing director of Space Angels Network in 2012, built it into an institutional investment platform, and rebranded the business as Space Capital in 2020. The firm reports more than 1 billion dollars in assets under management across four institutional funds, with portfolio companies including SpaceX, Planet, and Rocket Lab. Earlier in his career he managed a 50 billion dollar real estate portfolio at JPMorgan Chase. He holds an MBA from the University of Oxford and is the author of The Space Economy, published by Wiley in 2023.",
     sources: [
-      { label: "Space Capital — Team", url: "https://www.spacecapital.com/team" },
-      { label: "Space Capital — About", url: "https://www.spacecapital.com/about" },
-      { label: "SpaceNews — Profile of Chad Anderson (2015)", url: "https://spacenews.com/42591profile-chad-anderson-managing-director-space-angels-network/" },
-      { label: "Business Wire — The Space Economy book announcement (Apr 2023)", url: "https://www.businesswire.com/news/home/20230412005103/en/The-Space-Economy-Offers-an-Essential-Guide-for-Investors-and-Entrepreneurs-to-the-Final-Business-Frontier" }
+      { label: "Space Capital - Team", url: "https://www.spacecapital.com/team" },
+      { label: "Space Capital - About", url: "https://www.spacecapital.com/about" },
+      { label: "SpaceNews - Profile of Chad Anderson (2015)", url: "https://spacenews.com/42591profile-chad-anderson-managing-director-space-angels-network/" },
+      { label: "Business Wire - The Space Economy book announcement (Apr 2023)", url: "https://www.businesswire.com/news/home/20230412005103/en/The-Space-Economy-Offers-an-Essential-Guide-for-Investors-and-Entrepreneurs-to-the-Final-Business-Frontier" }
     ]
   },
 "tom-ingersoll": {
@@ -701,10 +701,10 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Tom Ingersoll is a Partner at Space Capital, a venture capital firm focused on the space economy. A two time space entrepreneur, he co-founded Universal Space Network, a spacecraft tracking and communications company acquired by Swedish Space Corporation in 2009. In July 2011 he became Chief Executive Officer of Skybox Imaging, which he led to a 500 million dollar acquisition by Google in 2014. Earlier he was a senior manager at McDonnell Douglas Phantom Works. He joined the Space Capital platform in 2017, when it operated as Space Angels, and applies operating experience in satellites and launch vehicles to the firm's portfolio companies.",
     sources: [
-      { label: "Space Capital — Team", url: "https://www.spacecapital.com/team" },
-      { label: "Space Capital — About", url: "https://www.spacecapital.com/about" },
-      { label: "SpaceNews — Profile of Tom Ingersoll, Skybox Imaging (2014)", url: "https://spacenews.com/40703profile-tom-ingersoll-chief-executive-skybox-imaging/" },
-      { label: "Wikipedia — Space Capital", url: "https://en.wikipedia.org/wiki/Space_Capital" }
+      { label: "Space Capital - Team", url: "https://www.spacecapital.com/team" },
+      { label: "Space Capital - About", url: "https://www.spacecapital.com/about" },
+      { label: "SpaceNews - Profile of Tom Ingersoll, Skybox Imaging (2014)", url: "https://spacenews.com/40703profile-tom-ingersoll-chief-executive-skybox-imaging/" },
+      { label: "Wikipedia - Space Capital", url: "https://en.wikipedia.org/wiki/Space_Capital" }
     ]
   },
 "justus-kilian": {
@@ -732,9 +732,9 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Justus Kilian is a Partner at Space Capital, a venture capital firm investing in the space economy. He was a Principal at the firm as of 2020 and held the Partner title by late 2022. He serves on the boards of portfolio companies ClearRoad and Lunar Outpost and leads Space Talent, a career platform at the intersection of space and technology. He previously worked at Acumen, an early stage venture firm investing in emerging markets, and before that at Merrill Lynch, where he specialized in private market investments. He holds an MBA from the University of Chicago Booth School of Business and is a CFA charterholder.",
     sources: [
-      { label: "Space Capital — Team", url: "https://www.spacecapital.com/team" },
-      { label: "Celestial Citizen — Interview with Justus Kilian (Dec 2022)", url: "https://celestialcitizen.substack.com/p/the-state-of-space-a-market-update" },
-      { label: "MIT Sloan Astropreneurship Club — Career session (Oct 2020)", url: "https://sloangroups.mit.edu/astropreneurshipandspaceindustry/rsvp_boot?id=822370" }
+      { label: "Space Capital - Team", url: "https://www.spacecapital.com/team" },
+      { label: "Celestial Citizen - Interview with Justus Kilian (Dec 2022)", url: "https://celestialcitizen.substack.com/p/the-state-of-space-a-market-update" },
+      { label: "MIT Sloan Astropreneurship Club - Career session (Oct 2020)", url: "https://sloangroups.mit.edu/astropreneurshipandspaceindustry/rsvp_boot?id=822370" }
     ]
   },
 "stephen-marcus": {
@@ -790,8 +790,8 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Stephen Marcus is Co-Founder and General Partner of Riot Ventures, a venture firm focused on modernizing critical industries. Before Riot he was a six-time founder and chief executive with more than 20 years of experience building large-scale wireless networks and datacenters, selling telecom companies to buyers including American Tower, Sprint, and National Grid. He co-founded Riot Ventures in 2017 with Will Coffield, starting with a 10 million dollar first fund, and the firm announced a 75 million dollar second fund in 2020. At Riot he invests across seed and growth stages and holds board seats at Shield AI, EnduroSat, Blue Water Autonomy, Kindo, Mango, and Valar Atomics. His investments include the public companies Okta, Toast, and Desktop Metal. He holds a BS from Worcester Polytechnic Institute and an MBA from MIT Sloan School of Management.",
     sources: [
-      { label: "Riot Ventures — Stephen Marcus partner page", url: "https://www.riot.vc/partners/stephen-marcus" },
-      { label: "TechCrunch — Riot Ventures raising a $75M fund (Feb 2020)", url: "https://techcrunch.com/2020/02/13/los-angeles-based-deep-tech-investment-firm-riot-ventures-is-raising-a-75m-fund" }
+      { label: "Riot Ventures - Stephen Marcus partner page", url: "https://www.riot.vc/partners/stephen-marcus" },
+      { label: "TechCrunch - Riot Ventures raising a $75M fund (Feb 2020)", url: "https://techcrunch.com/2020/02/13/los-angeles-based-deep-tech-investment-firm-riot-ventures-is-raising-a-75m-fund" }
     ]
   },
 "will-coffield": {
@@ -844,9 +844,9 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Will Coffield is Co-founder and General Partner of Riot Ventures. He began his venture career at Saturn Partners after studying economics at James Madison University, helping build that firm's seed investing program and opening its West Coast office. In 2017 he co-founded Riot Ventures with Stephen Marcus, launching with a 10 million dollar fund focused on pre-seed and seed investments in deep technology; the firm announced a 75 million dollar second fund in 2020 and has since grown to more than 1 billion dollars in assets under management. At Riot he focuses on defense and aerospace, logistics, and advanced manufacturing, and has led investments in companies including True Anomaly, Parallel Systems, Oxide Computer Company, Alloy Enterprises, Elementary ML, Rugged Robotics, OpenEnvoy, Azimuth, and Route.",
     sources: [
-      { label: "Riot Ventures — Will Coffield partner page", url: "https://www.riot.vc/partners/will-coffield" },
-      { label: "Stifel Bank — Conversation with Will Coffield", url: "https://bankwithstifel.com/insights/how-riot-ventures-scaled-to-1b-in-deep-tech-vc/" },
-      { label: "TechCrunch — Riot Ventures raising a $75M fund (Feb 2020)", url: "https://techcrunch.com/2020/02/13/los-angeles-based-deep-tech-investment-firm-riot-ventures-is-raising-a-75m-fund" }
+      { label: "Riot Ventures - Will Coffield partner page", url: "https://www.riot.vc/partners/will-coffield" },
+      { label: "Stifel Bank - Conversation with Will Coffield", url: "https://bankwithstifel.com/insights/how-riot-ventures-scaled-to-1b-in-deep-tech-vc/" },
+      { label: "TechCrunch - Riot Ventures raising a $75M fund (Feb 2020)", url: "https://techcrunch.com/2020/02/13/los-angeles-based-deep-tech-investment-firm-riot-ventures-is-raising-a-75m-fund" }
     ]
   },
 "thomas-hendrix": {
@@ -872,10 +872,10 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Thomas Hendrix is a co-founder and Managing Partner of Decisive Point, a New York based venture capital and strategic advisory firm focused on defense, energy, and infrastructure technologies. A graduate of the United States Military Academy at West Point, he served nearly ten years in the U.S. Army as an Infantry and Special Forces officer, with multiple combat deployments as a Green Beret. After leaving the Army he worked at Blackstone in New York before founding Decisive Point in 2018. The firm launched its first venture fund in 2021 and was an early investor in Standard Nuclear, which listed on the NYSE in 2026. He holds an MBA from Columbia Business School and an MSL in Government Procurement Law from George Washington University Law School.",
     sources: [
-      { label: "Decisive Point — Thomas Hendrix profile", url: "https://www.decisivepoint.com/team/thomas-hendrix" },
-      { label: "GW Law — Thomas Hendrix, Government Procurement MSL '21", url: "https://blogs.gwu.edu/law-govpro/thomas-hendrix-government-procurement-msl-21/" },
-      { label: "NSIN — Investor Spotlight: Decisive Point", url: "https://nsin.mil/news/2023-06-15-decisive-point/" },
-      { label: "SEC Form 3 coverage — Decisive Point stake in Standard Nuclear (STDN)", url: "https://www.stocktitan.net/sec-filings/STDN/form-3-standard-nuclear-inc-initial-statement-of-beneficial-ownership-6ab1356f0611.html" }
+      { label: "Decisive Point - Thomas Hendrix profile", url: "https://www.decisivepoint.com/team/thomas-hendrix" },
+      { label: "GW Law - Thomas Hendrix, Government Procurement MSL '21", url: "https://blogs.gwu.edu/law-govpro/thomas-hendrix-government-procurement-msl-21/" },
+      { label: "NSIN - Investor Spotlight: Decisive Point", url: "https://nsin.mil/news/2023-06-15-decisive-point/" },
+      { label: "SEC Form 3 coverage - Decisive Point stake in Standard Nuclear (STDN)", url: "https://www.stocktitan.net/sec-filings/STDN/form-3-standard-nuclear-inc-initial-statement-of-beneficial-ownership-6ab1356f0611.html" }
     ]
   },
 "eric-horan": {
@@ -900,10 +900,10 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Eric Horan is a co-founder and General Partner of Decisive Point, a New York based venture capital and strategic advisory firm focused on defense, energy, and infrastructure technologies. Before co-founding the firm in 2018, he spent ten years as a government contracting officer for the U.S. Navy working on major weapons systems programs, and supported the Office of the Secretary of Defense on policy creation and streamlined acquisition authorities. At Decisive Point he leads the advisory practice, delivering services to startups, government customers, and investors on federal acquisition strategy and government contracting. The firm launched its first venture fund, Decisive Point Ventures Fund I, in 2021. He holds a BBA from Emory University and an MBA from the University of Maryland.",
     sources: [
-      { label: "Decisive Point — Eric Horan profile", url: "https://www.decisivepoint.com/team/eric-horan" },
-      { label: "NSIN — Investor Spotlight: Decisive Point", url: "https://nsin.mil/news/2023-06-15-decisive-point/" },
-      { label: "DVIDS — The Contracting Experience podcast, Eric Horan, Decisive Point Co-founder", url: "https://www.dvidshub.net/audio/59499/contracting-experience-episode-17-startup-innovation-fellowship-with-eric-horan-decisive-point-co-founder" },
-      { label: "Global Venturing — Decisive Point adds investments to advisory work", url: "https://globalventuring.com/corporate/decisive-point-adds-venture-to-advisory-work" }
+      { label: "Decisive Point - Eric Horan profile", url: "https://www.decisivepoint.com/team/eric-horan" },
+      { label: "NSIN - Investor Spotlight: Decisive Point", url: "https://nsin.mil/news/2023-06-15-decisive-point/" },
+      { label: "DVIDS - The Contracting Experience podcast, Eric Horan, Decisive Point Co-founder", url: "https://www.dvidshub.net/audio/59499/contracting-experience-episode-17-startup-innovation-fellowship-with-eric-horan-decisive-point-co-founder" },
+      { label: "Global Venturing - Decisive Point adds investments to advisory work", url: "https://globalventuring.com/corporate/decisive-point-adds-venture-to-advisory-work" }
     ]
   },
 "andrew-price": {
@@ -928,8 +928,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Andrew Price is a co-founder and General Partner of Decisive Point, a New York based venture capital and strategic advisory firm focused on defense, energy, and infrastructure technologies. He co-founded the firm in 2018 and directs its business development and investor relations efforts. Before Decisive Point he co-founded UniteUs, a technology platform addressing social determinants of health, and has been an investor and advisor to multiple early-stage dual-use companies providing technology solutions to both commercial and government customers. He holds a BA in Criminal Justice and Counterterrorism from the University of Oklahoma.",
     sources: [
-      { label: "Decisive Point — Andrew Price profile", url: "https://www.decisivepoint.com/team/andrew-price" },
-      { label: "NSIN — Investor Spotlight: Decisive Point", url: "https://nsin.mil/news/2023-06-15-decisive-point/" }
+      { label: "Decisive Point - Andrew Price profile", url: "https://www.decisivepoint.com/team/andrew-price" },
+      { label: "NSIN - Investor Spotlight: Decisive Point", url: "https://nsin.mil/news/2023-06-15-decisive-point/" }
     ]
   },
 "debi-michelle-oconnell": {
@@ -951,8 +951,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Debi-Michelle O'Connell is a Partner at Decisive Point, a New York based venture capital and strategic advisory firm focused on defense, energy, and infrastructure technologies, where she leads investor relations and venture fund administration. Before joining Decisive Point she worked at NationSwell, a social impact media company, where she consulted with corporations, foundations, and nonprofits on corporate social responsibility and impact campaigns. She is a founding junior advisory board member of Women in Funds. She graduated from Princeton University in 2016 with a degree in political science.",
     sources: [
-      { label: "Decisive Point — Debi-Michelle O'Connell profile", url: "https://www.decisivepoint.com/team/debi-oconnell" },
-      { label: "Decisive Point — Team", url: "https://www.decisivepoint.com/team" }
+      { label: "Decisive Point - Debi-Michelle O'Connell profile", url: "https://www.decisivepoint.com/team/debi-oconnell" },
+      { label: "Decisive Point - Team", url: "https://www.decisivepoint.com/team" }
     ]
   },
 "matt-williams": {
@@ -978,8 +978,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Matt Williams is a Partner at Decisive Point, where he leads the firm's defense and national security investment strategy. He joined the firm in November 2025 after more than two decades in the U.S. Army Special Forces, retiring as a Command Sergeant Major. In 2019 he received the Medal of Honor for his actions during a 2008 mission in Nuristan Province, Afghanistan, where he led the evacuation of wounded soldiers under fire during one of the most intense firefights of the war. At Decisive Point he focuses on early and growth stage companies developing autonomy, kinetic systems, intelligence, surveillance, and reconnaissance, space, energy systems, and AI enabled command and control, and serves as a liaison between portfolio companies, government stakeholders, and limited partners. He holds a BS from Angelo State University and an MBA from Texas A&M University.",
     sources: [
-      { label: "Decisive Point — Matt Williams profile", url: "https://www.decisivepoint.com/team/matt-williams" },
-      { label: "Business Wire — Medal of Honor Recipient Matthew Williams Joins Decisive Point as Partner (Nov 10, 2025)", url: "https://www.businesswire.com/news/home/20251110822346/en/Medal-of-Honor-Recipient-Matthew-Williams-Joins-Decisive-Point-as-Partner-Will-Lead-Defense-Tech-Investments" }
+      { label: "Decisive Point - Matt Williams profile", url: "https://www.decisivepoint.com/team/matt-williams" },
+      { label: "Business Wire - Medal of Honor Recipient Matthew Williams Joins Decisive Point as Partner (Nov 10, 2025)", url: "https://www.businesswire.com/news/home/20251110822346/en/Medal-of-Honor-Recipient-Matthew-Williams-Joins-Decisive-Point-as-Partner-Will-Lead-Defense-Tech-Investments" }
     ]
   },
 "chris-cheever": {
@@ -1009,9 +1009,9 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Chris Cheever is Founder and Managing Partner of Fontinalis Partners, the mobility and industrial technology venture firm he co-founded in late 2009 with Bill Ford, Ralph Booth, and Mark Schulz. Based in Boston, he helped craft the firm's thesis around mobility, industrial innovation, and energy, and continues to guide its strategy with a focus on frontier technology. He led Fontinalis investments in Lyft, Turo, Postmates, and Veho, and previously served on the boards of Life360, Synovia, and Tomorrow.io. He currently holds director roles at Carputty, Eva, SmartKargo, Vecna, Verity, and zeroRISC. Earlier in his career he worked at LaunchCapital, HPS Investment Partners, UBS, and Alger. He holds an MBA from Yale and a BA from Harvard.",
     sources: [
-      { label: "Fontinalis — Team", url: "https://fontinalis.com/team/" },
-      { label: "Fontinalis — Story", url: "https://fontinalis.com/story/" },
-      { label: "PR Newswire — Fontinalis launch (2009)", url: "https://www.prnewswire.com/news-releases/bill-ford-ralph-booth-and-mark-schulz-announce-the-official-launch-of-fontinalis-partners-83037982.html" }
+      { label: "Fontinalis - Team", url: "https://fontinalis.com/team/" },
+      { label: "Fontinalis - Story", url: "https://fontinalis.com/story/" },
+      { label: "PR Newswire - Fontinalis launch (2009)", url: "https://www.prnewswire.com/news-releases/bill-ford-ralph-booth-and-mark-schulz-announce-the-official-launch-of-fontinalis-partners-83037982.html" }
     ]
   },
 "laura-petterle": {
@@ -1034,7 +1034,7 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Laura Petterle is Managing Partner and CFO of Fontinalis Partners, based in Detroit. As CFO she manages the professionals responsible for the firm's financial reporting, governance, compliance, transaction and legal due diligence, and shareholder relations, and she advises portfolio companies on operating matters, complex transactions, and governance. Since 1994 she has served as Executive Vice President and CFO of Booth American Company, where she oversaw the finances of its media and telecommunications holdings, managed its U.S. Cable Television Division, and led the process resulting in the 853 million dollar sale of its U.S. broadband assets in 1999. Before Booth American she spent 12 years in finance roles at Maclean Hunter, a Canadian cable television and telecommunications company. She holds a bachelor's degree from the University of Michigan.",
     sources: [
-      { label: "Fontinalis — Team", url: "https://fontinalis.com/team/" }
+      { label: "Fontinalis - Team", url: "https://fontinalis.com/team/" }
     ]
   },
 "chris-stallman": {
@@ -1063,8 +1063,8 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Chris Stallman is a Managing Partner at Fontinalis Partners in Detroit, where he invests at the intersection of emerging companies and large physical industries, with particular interest in supply chain transformation, enterprise efficiency, data and analytics, and AI and automation. He serves on the boards of Chain.io and SONAR, formerly FreightWaves, and is a board observer at Highland Electric Fleets and Condoit. His prior board experience includes TransLoc, acquired by Ford Smart Mobility, and Synovia Solutions, acquired by CalAmp, and his notable portfolio work includes Telogis, Postmates, and Turo. Before Fontinalis he spent five years at the advisory firm Stout serving industrial and automotive clients and worked on the private markets team at the University of Michigan Investment Office. A CFA charterholder, he holds a BBA with distinction from Michigan's Ross School of Business.",
     sources: [
-      { label: "Fontinalis — Team", url: "https://fontinalis.com/team/" },
-      { label: "Ford Media — TransLoc acquisition (2018)", url: "https://media.ford.com/content/fordmedia/feu/en/news/2018/01/26/ford-realigns-mobility-group--acquiring-autonomic--transloc-to-a.html" }
+      { label: "Fontinalis - Team", url: "https://fontinalis.com/team/" },
+      { label: "Ford Media - TransLoc acquisition (2018)", url: "https://media.ford.com/content/fordmedia/feu/en/news/2018/01/26/ford-realigns-mobility-group--acquiring-autonomic--transloc-to-a.html" }
     ]
   },
 "dan-ratliff": {
@@ -1096,8 +1096,8 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Dan Ratliff is a Partner at Fontinalis Partners in Detroit. He joined the firm as an Associate in 2014 after an investment banking career and was promoted to Partner in 2023. He focuses on frontier technologies and how advances in compute, robotics, manufacturing processes, and software infrastructure impact global industries. He led or co-led Fontinalis investments in CelLink, Sibros, Carputty, and ChipFlow, led investments in Etched and Drivly, and served as board observer for Ouster before its 2021 public listing. He currently sits on the board of ChipFlow and is a board observer at CelLink, Sibros, Carputty, Halo Industries, and Swift Solar. He holds a BA from Michigan State University's Eli Broad College of Business and a Master of Finance from Vanderbilt University's Owen Graduate School of Management.",
     sources: [
-      { label: "Fontinalis — Team", url: "https://fontinalis.com/team/" },
-      { label: "PRWeb — Fontinalis partner promotions (2023)", url: "https://www.prweb.com/releases/Fontinalis_Partners_Elevates_Two_Principals_to_Partner_Roles_and_Welcomes_New_Operations_Team_Member/prweb19412546.htm" }
+      { label: "Fontinalis - Team", url: "https://fontinalis.com/team/" },
+      { label: "PRWeb - Fontinalis partner promotions (2023)", url: "https://www.prweb.com/releases/Fontinalis_Partners_Elevates_Two_Principals_to_Partner_Roles_and_Welcomes_New_Operations_Team_Member/prweb19412546.htm" }
     ]
   },
 "reilly-brennan": {
@@ -1137,10 +1137,10 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Reilly Brennan is a co-founder and partner of Trucks Venture Capital, a San Francisco seed fund backing entrepreneurs building transportation that is decarbonized, safer, and more accessible. At Trucks he championed investments including May Mobility, Roadster, and Edge Case Research. He writes FoT, a widely read weekly newsletter on the future of transportation, and co-founded MobilityJobs.com. Before Trucks he served as Executive Director of the Revs Program, Stanford University's automotive research program, and taught at Stanford's School of Engineering and d.school. A Michigan native, he began his career in the auto industry at a car magazine during his undergraduate years and has spent more than two decades in transportation.",
     sources: [
-      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
-      { label: "Reilly Brennan — About", url: "https://reillybrennan.com/about" },
-      { label: "TechCrunch — Trucks Fund 2 (2021)", url: "https://techcrunch.com/2021/06/08/trucks-vc-launches-two-new-funds-for-early-and-late-stage-transportation-startups" },
-      { label: "TechCrunch — Trucks Fund 3 (2025)", url: "https://techcrunch.com/?p=2940113" }
+      { label: "Trucks VC - About", url: "https://www.trucks.vc/about" },
+      { label: "Reilly Brennan - About", url: "https://reillybrennan.com/about" },
+      { label: "TechCrunch - Trucks Fund 2 (2021)", url: "https://techcrunch.com/2021/06/08/trucks-vc-launches-two-new-funds-for-early-and-late-stage-transportation-startups" },
+      { label: "TechCrunch - Trucks Fund 3 (2025)", url: "https://techcrunch.com/?p=2940113" }
     ]
   },
 "jeffrey-schox": {
@@ -1184,10 +1184,10 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Jeffrey Schox is a founder and partner of Trucks Venture Capital, the San Francisco seed fund for transportation startups, where his investments include Universal Hydrogen, Skyryse, Joby Aviation, and Refraction. He grew up outside Detroit, studied mechanical and electrical engineering, and worked as an engineer on the original electric vehicle at General Motors. He is also the founder of Schox Patent Group, a boutique patent firm that has developed patent strategy for Coinbase, Cruise, Duo, Joby, Twilio, and hundreds of other startups, and he was an angel investor in Cruise, later acquired by General Motors. He teaches patent law and strategy as a lecturer at Stanford University. He holds engineering degrees from the University of Michigan and a JD from George Mason University.",
     sources: [
-      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
+      { label: "Trucks VC - About", url: "https://www.trucks.vc/about" },
       { label: "Schox Patent Group", url: "https://www.schox.com/" },
-      { label: "Schox Philanthropy — Team", url: "https://www.schox.org/our-team" },
-      { label: "TechCrunch — Trucks Fund 3 (2025)", url: "https://techcrunch.com/?p=2940113" }
+      { label: "Schox Philanthropy - Team", url: "https://www.schox.org/our-team" },
+      { label: "TechCrunch - Trucks Fund 3 (2025)", url: "https://techcrunch.com/?p=2940113" }
     ]
   },
 "kathryn-schox": {
@@ -1217,10 +1217,10 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Kathryn Schox is a founder and partner of Trucks Venture Capital, the San Francisco seed fund for transportation startups. She developed the Trucks mission of backing transportation that is decarbonized, safer, and more accessible, and led the firm's investments in ChargerHelp, Gatik, Bear Flag Robotics, and Wise Systems, with Bear Flag Robotics acquired by John Deere in 2021. Before Trucks she was Chief Operating Officer of Schox Patent Group, a firm recognized on the Inc. 5000 list of fastest growing companies for five consecutive years. She also leads Schox Philanthropy, which invites startup founders to pledge equity to fund charitable giving. She studied cultural anthropology at the University of Maryland, earning bachelor's and master's degrees.",
     sources: [
-      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
-      { label: "Schox Philanthropy — Team", url: "https://www.schox.org/our-team" },
-      { label: "U-M Center for Entrepreneurship — Kate Schox profile", url: "https://cfe.umich.edu/transportation-philanthropy-and-innovation-the-work-of-kate-schox/" },
-      { label: "TechCrunch — Trucks Fund 3 (2025)", url: "https://techcrunch.com/?p=2940113" }
+      { label: "Trucks VC - About", url: "https://www.trucks.vc/about" },
+      { label: "Schox Philanthropy - Team", url: "https://www.schox.org/our-team" },
+      { label: "U-M Center for Entrepreneurship - Kate Schox profile", url: "https://cfe.umich.edu/transportation-philanthropy-and-innovation-the-work-of-kate-schox/" },
+      { label: "TechCrunch - Trucks Fund 3 (2025)", url: "https://techcrunch.com/?p=2940113" }
     ]
   },
 "puneeth-meruva": {
@@ -1245,9 +1245,9 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Puneeth Meruva is a Partner at Trucks Venture Capital, the San Francisco seed fund for transportation startups. He interned with Trucks during his final term at MIT, joined full time as an analyst in 2019 after graduating with a BS in electrical engineering and computer science, and was promoted through associate and senior associate roles before being named Partner in May 2023, concurrent with the launch of Trucks Venture Fund 3. Earlier he held safety software internships at Uber, BMW, and Microsoft and conducted perception research in MIT's Distributed Robotics Group and CMU's Biorobotics Lab. He authors the firm's FoT research briefs on transportation topics and writes the Flywheel newsletter on micromobility.",
     sources: [
-      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
-      { label: "Trucks VC — Puneeth Meruva Named Partner", url: "https://www.trucks.vc/blog/puneeth-meruva-named-trucks-partner" },
-      { label: "EVCA — Meet Puneeth Meruva", url: "https://evca.org/content/meet-puneeth-meruva" }
+      { label: "Trucks VC - About", url: "https://www.trucks.vc/about" },
+      { label: "Trucks VC - Puneeth Meruva Named Partner", url: "https://www.trucks.vc/blog/puneeth-meruva-named-trucks-partner" },
+      { label: "EVCA - Meet Puneeth Meruva", url: "https://evca.org/content/meet-puneeth-meruva" }
     ]
   },
 "jason-townsend": {
@@ -1272,10 +1272,10 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Jason Townsend is CFO of Trucks Venture Capital, the San Francisco seed fund for transportation startups. A Michigan native, he studied computer engineering at the University of Michigan and began his career at Intel, where he became a young business development manager, before returning to Michigan to earn an MBA at the Ross School of Business. He co-founded Resonant Venture Partners, an Ann Arbor venture fund that invested in the first round of Duo Security, which Cisco acquired in 2018. He is also the founder and managing director of Townsend Mertz, a real estate investment firm established in 2018, and founder of Townsend Financial, which provides back office management.",
     sources: [
-      { label: "Trucks VC — About", url: "https://www.trucks.vc/about" },
-      { label: "Townsend Mertz — Leadership", url: "https://townsendmertz.com/leadership/" },
-      { label: "Concentrate — Q&A with Michael Godwin and Jason Townsend", url: "https://concentratemedia.com/qna-godwin-townsend0138/" },
-      { label: "Cisco — Duo Security acquisition completed (2018)", url: "https://investor.cisco.com/news/news-details/2018/Cisco-Completes-Acquisition-of-Duo-Security/default.aspx" }
+      { label: "Trucks VC - About", url: "https://www.trucks.vc/about" },
+      { label: "Townsend Mertz - Leadership", url: "https://townsendmertz.com/leadership/" },
+      { label: "Concentrate - Q&A with Michael Godwin and Jason Townsend", url: "https://concentratemedia.com/qna-godwin-townsend0138/" },
+      { label: "Cisco - Duo Security acquisition completed (2018)", url: "https://investor.cisco.com/news/news-details/2018/Cisco-Completes-Acquisition-of-Duo-Security/default.aspx" }
     ]
   },
 "darren-bechtel": {
@@ -1307,10 +1307,10 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Darren Bechtel is the Founder and Managing Director of Brick & Mortar Ventures, a San Francisco venture capital firm founded in 2015 that invests exclusively in early stage technology for the architecture, engineering, and construction industry. A fifth generation member of the family behind Bechtel Group, he built the firm after making roughly 40 angel investments in construction technology startups, including early checks into PlanGrid and BuildingConnected, both later acquired by Autodesk. In 2019 the firm closed a $97.2 million fund backed by industry investors such as Autodesk, CEMEX, and Ferguson Ventures. He holds a B.S. in Mechanical Engineering/Product Design and an MBA from Stanford, and serves on several industry advisory and leadership boards.",
     sources: [
-      { label: "Brick & Mortar Ventures — Team", url: "https://brickmortar.vc/team" },
-      { label: "TechCrunch — Brick & Mortar closes $97.5M fund (2019)", url: "https://techcrunch.com/2019/08/13/darren-bechtel-yes-of-those-bechtels-just-closed-on-97-5-million-for-his-firm-brick-mortar-ventures/" },
-      { label: "Construction Dive — Bechtel scion raises nearly $100M (2019)", url: "https://www.constructiondive.com/news/bechtel-scion-raises-nearly-100m-for-contech-startups/560905/" },
-      { label: "Autodesk — Completes PlanGrid acquisition", url: "https://adsknews.autodesk.com/en/pressrelease/autodesk-completes-plangrid-acquisition/" }
+      { label: "Brick & Mortar Ventures - Team", url: "https://brickmortar.vc/team" },
+      { label: "TechCrunch - Brick & Mortar closes $97.5M fund (2019)", url: "https://techcrunch.com/2019/08/13/darren-bechtel-yes-of-those-bechtels-just-closed-on-97-5-million-for-his-firm-brick-mortar-ventures/" },
+      { label: "Construction Dive - Bechtel scion raises nearly $100M (2019)", url: "https://www.constructiondive.com/news/bechtel-scion-raises-nearly-100m-for-contech-startups/560905/" },
+      { label: "Autodesk - Completes PlanGrid acquisition", url: "https://adsknews.autodesk.com/en/pressrelease/autodesk-completes-plangrid-acquisition/" }
     ]
   },
 "kaustubh-pandya": {
@@ -1332,7 +1332,7 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Kaustubh Pandya is a General Partner at Brick & Mortar Ventures, where he invests in early stage startups serving the architecture, engineering, and construction industry. Before joining the firm he spent more than four years at McKinsey & Company, where he co-authored construction technology research, and earlier worked as a forensic structural engineer, giving him more than eight years of strategy and industry experience in the AEC sector. He is a licensed Professional Engineer. He holds a B.S. in Civil Engineering from U.C. Berkeley, an M.S. in Design Construction Integration from Stanford, and an MBA from the MIT Sloan School of Management.",
     sources: [
-      { label: "Brick & Mortar Ventures — Team", url: "https://brickmortar.vc/team" }
+      { label: "Brick & Mortar Ventures - Team", url: "https://brickmortar.vc/team" }
     ]
   },
 "curtis-rodgers": {
@@ -1356,7 +1356,7 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Curtis Rodgers is a Partner at Brick & Mortar Ventures, where he invests in early stage construction technology companies. He describes himself as an industrial technologist and investor, and spent six years in construction process improvement roles at Kiewit and McCarthy Construction before moving into venture capital. In 2014 he founded The Society for Construction Solutions. He has participated in NASA's Centennial 3D Printed Habitat Challenge and has lectured for the U.S. Department of Energy's Project Leadership Institute. He holds a B.B.A. in Management and an M.S. in Technology from Texas State University-San Marcos.",
     sources: [
-      { label: "Brick & Mortar Ventures — Team", url: "https://brickmortar.vc/team" }
+      { label: "Brick & Mortar Ventures - Team", url: "https://brickmortar.vc/team" }
     ]
   },
 "austin-yount": {
@@ -1378,7 +1378,7 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Austin Yount is a Partner at Brick & Mortar Ventures, where he helps the team evaluate, invest in, and grow early stage companies serving the architecture, engineering, and construction industry. He joined the firm as a Senior Associate before becoming Partner. Earlier in his career he was among the first ten employees at Enjoy Technology, working in business development, and before that worked as an investment banking analyst. Prior to his business career he spent three and a half years as a professional baseball player in the Los Angeles Dodgers and Chicago White Sox organizations. He holds a BA in Economics from Stanford University.",
     sources: [
-      { label: "Brick & Mortar Ventures — Team", url: "https://brickmortar.vc/team" }
+      { label: "Brick & Mortar Ventures - Team", url: "https://brickmortar.vc/team" }
     ]
   },
 "ty-findley": {
@@ -1405,10 +1405,10 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Ty Findley is Co-Founder and General Partner of Ironspring Ventures, an Austin based venture capital firm founded in 2020 that backs early stage companies digitizing industrial sectors including construction, manufacturing, transport and logistics, and alternative energy. He previously held investment roles at Pritzker Group Venture Capital, GE Ventures, and G51 Capital, and began his career as a design engineer at Boeing. He is a Kauffman Fellow. Under his leadership Ironspring announced a $61 million debut fund in 2021 and closed a $100 million Fund II in June 2024, and its seed investment Document Crunch was the subject of an announced acquisition by Trimble in 2026. He holds a B.S. in Mechanical Engineering from Baylor University and an MBA from the Kellogg Graduate School of Management.",
     sources: [
-      { label: "Ironspring Ventures — Ty Findley bio", url: "https://ironspring.com/team_ty_findley/" },
-      { label: "TechCrunch — Ironspring's $61M fund (2021)", url: "https://techcrunch.com/2021/02/15/with-ironspring-ventures-texas-gets-a-61-million-new-fund-focused-on-industrial-technologies/" },
-      { label: "Ironspring — $100M Fund II announcement (2024)", url: "https://ironspring.com/fund-ii/" },
-      { label: "Ironspring — Document Crunch acquired by Trimble", url: "https://ironspring.com/document-crunch-to-be-acquired-by-trimble/" }
+      { label: "Ironspring Ventures - Ty Findley bio", url: "https://ironspring.com/team_ty_findley/" },
+      { label: "TechCrunch - Ironspring's $61M fund (2021)", url: "https://techcrunch.com/2021/02/15/with-ironspring-ventures-texas-gets-a-61-million-new-fund-focused-on-industrial-technologies/" },
+      { label: "Ironspring - $100M Fund II announcement (2024)", url: "https://ironspring.com/fund-ii/" },
+      { label: "Ironspring - Document Crunch acquired by Trimble", url: "https://ironspring.com/document-crunch-to-be-acquired-by-trimble/" }
     ]
   },
 "peter-j-holt": {
@@ -1434,10 +1434,10 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Peter J. Holt is Co-Founder and General Partner of Ironspring Ventures, an Austin based venture capital firm founded in 2020 to invest in early stage companies modernizing construction, manufacturing, transport and logistics, and alternative energy. He is also CEO and General Manager of HOLT Group, parent company of HOLT CAT, the largest Caterpillar dealership in the United States, where the firm describes him as the fifth generation of the Holt family business, and he serves as Chairman and Managing Partner of the NBA's San Antonio Spurs & Entertainment. Before Ironspring he co-founded Holt Ventures, an earlier venture investing effort. Ironspring's seed investment Document Crunch was the subject of an announced acquisition by Trimble in 2026.",
     sources: [
-      { label: "Ironspring Ventures — Peter J. Holt bio", url: "https://ironspring.com/team_peter_j_holt/" },
-      { label: "TechCrunch — Ironspring's $61M fund (2021)", url: "https://techcrunch.com/2021/02/15/with-ironspring-ventures-texas-gets-a-61-million-new-fund-focused-on-industrial-technologies/" },
-      { label: "Ironspring — $100M Fund II announcement (2024)", url: "https://ironspring.com/fund-ii/" },
-      { label: "Ironspring — Document Crunch acquired by Trimble", url: "https://ironspring.com/document-crunch-to-be-acquired-by-trimble/" }
+      { label: "Ironspring Ventures - Peter J. Holt bio", url: "https://ironspring.com/team_peter_j_holt/" },
+      { label: "TechCrunch - Ironspring's $61M fund (2021)", url: "https://techcrunch.com/2021/02/15/with-ironspring-ventures-texas-gets-a-61-million-new-fund-focused-on-industrial-technologies/" },
+      { label: "Ironspring - $100M Fund II announcement (2024)", url: "https://ironspring.com/fund-ii/" },
+      { label: "Ironspring - Document Crunch acquired by Trimble", url: "https://ironspring.com/document-crunch-to-be-acquired-by-trimble/" }
     ]
   },
 "natan-reddy": {
@@ -1468,9 +1468,9 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Natan Reddy is a Principal at Ironspring Ventures, based in New York City, focused on early stage digital industrial and supply chain companies. He first joined Ironspring as a Senior Associate, supporting more than 15 early stage investments including Document Crunch, OneRail, Prokeep, Solvento, and GoodShip. He then served as a Principal at 25madison, a New York early stage venture firm, leading investing across supply chain and industrials, before returning to Ironspring as Principal in 2025. Earlier he was a Senior Intelligence Analyst at CB Insights, where he initiated the firm's research coverage of supply chain and logistics innovation and advised large global companies on supply chain trends. He holds a BA in Economics from the University of California, Berkeley.",
     sources: [
-      { label: "Ironspring Ventures — Natan Reddy bio", url: "https://ironspring.com/team_natan-reddy/" },
-      { label: "VCWire — Ironspring adds two principals (2025)", url: "https://vcwire.tech/2025/03/14/ironspring-ventures-adds-two-principals/" },
-      { label: "Ironspring — Document Crunch acquired by Trimble", url: "https://ironspring.com/document-crunch-to-be-acquired-by-trimble/" }
+      { label: "Ironspring Ventures - Natan Reddy bio", url: "https://ironspring.com/team_natan-reddy/" },
+      { label: "VCWire - Ironspring adds two principals (2025)", url: "https://vcwire.tech/2025/03/14/ironspring-ventures-adds-two-principals/" },
+      { label: "Ironspring - Document Crunch acquired by Trimble", url: "https://ironspring.com/document-crunch-to-be-acquired-by-trimble/" }
     ]
   },
 "drew-kriens": {
@@ -1494,8 +1494,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Drew Kriens is a Principal at Ironspring Ventures, which he joined in February 2026. He spent more than six years at Standard Investments as a Senior Associate investing in early to growth stage industrial technology startups, contributing to more than 15 investments across a $500 million portfolio and leading sourcing, diligence, market research, and thesis development for core industrial tech industries. Earlier he was an analyst at Juniper Networks supporting the data science team's marketing efforts. He is an active angel investor in the Bay Area entrepreneurial ecosystem and serves on the board of 1440 Multiversity. He holds a B.S. in Business from the University of Oregon.",
     sources: [
-      { label: "Ironspring Ventures — Drew Kriens bio", url: "https://ironspring.com/team_drew-kriens/" },
-      { label: "Ironspring — Welcomes Principal Drew Kriens (2026)", url: "https://ironspring.com/ironspring-ventures-welcomes-principal-drew-kriens/" }
+      { label: "Ironspring Ventures - Drew Kriens bio", url: "https://ironspring.com/team_drew-kriens/" },
+      { label: "Ironspring - Welcomes Principal Drew Kriens (2026)", url: "https://ironspring.com/ironspring-ventures-welcomes-principal-drew-kriens/" }
     ]
   },
 "stephanie-volk": {
@@ -1518,8 +1518,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Stephanie Volk is Vice President, Platform at Ironspring Ventures, where she leads platform work spanning program design, network development, brand strategy, and content. She joined the firm in January 2023 as its first Head of Platform and represents Ironspring on the West Coast from San Francisco. Previously she spent five years at the National Venture Capital Association as Vice President of Industry Engagement, designing programs for venture firm engagement across the industry. Earlier she worked in platform and commercial development at GE Ventures from 2015 to 2017, supporting a portfolio of more than 100 companies. She holds an MBA from the University of Michigan Ross School of Business and a BA from Columbia University.",
     sources: [
-      { label: "Ironspring Ventures — Stephanie Volk bio", url: "https://ironspring.com/team_stephanie_volk/" },
-      { label: "Ironspring — Introducing Stephanie Volk (2023)", url: "https://ironspring.com/introducing-stephanie-volk/" }
+      { label: "Ironspring Ventures - Stephanie Volk bio", url: "https://ironspring.com/team_stephanie_volk/" },
+      { label: "Ironspring - Introducing Stephanie Volk (2023)", url: "https://ironspring.com/introducing-stephanie-volk/" }
     ]
   },
 "tom-chi": {
@@ -1555,10 +1555,10 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Tom Chi is Managing Partner of At One Ventures, the San Francisco climate deep tech firm he founded in 2020 with Laurie Menoud and Helen Lin. He was earlier a founding member and Head of Experience at Google X, where he led the product experience team and contributed to projects including Google Glass, the self-driving car effort, and Project Loon. Before that he held product and user experience leadership roles at Yahoo, where he led Yahoo Search work across 44 countries and scaled Yahoo Answers to 90 million users, and at Microsoft, where he worked on Outlook. He began his career in astrophysical research. Under his leadership At One closed a 150 million dollar first fund in 2021 and launched a 375 million dollar second fund in 2023.",
     sources: [
-      { label: "At One Ventures — Team", url: "https://www.atoneventures.com/team" },
+      { label: "At One Ventures - Team", url: "https://www.atoneventures.com/team" },
       { label: "At One Ventures Fund II press release (Oct 2023)", url: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html" },
       { label: "At One Ventures Fund I press release (Oct 2021)", url: "https://www.webwire.com/ViewPressRel.asp?aId=280347" },
-      { label: "Singularity — Tom Chi speaker bio", url: "https://www.su.org/experts/tom-chi" }
+      { label: "Singularity - Tom Chi speaker bio", url: "https://www.su.org/experts/tom-chi" }
     ]
   },
 "laurie-menoud": {
@@ -1594,7 +1594,7 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Laurie Menoud is a Founding Partner of At One Ventures, the San Francisco climate deep tech firm she co-founded in 2020 with Tom Chi and Helen Lin. Trained as a biotechnologist, she has more than a decade of experience in deep tech commercialization, company building, and venture capital. She previously co-led venture capital investing for BASF in North America, worked in the chemical industry at Solvay, and launched deep tech companies built on research at SRI International. At At One Ventures she brings expertise in materials, biology, and chemicals. The firm closed a 150 million dollar first fund in 2021 and announced a 375 million dollar second fund in 2023.",
     sources: [
-      { label: "At One Ventures — Team", url: "https://www.atoneventures.com/team" },
+      { label: "At One Ventures - Team", url: "https://www.atoneventures.com/team" },
       { label: "At One Ventures Fund II press release (Oct 2023)", url: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html" },
       { label: "At One Ventures Fund I press release (Oct 2021)", url: "https://www.webwire.com/ViewPressRel.asp?aId=280347" }
     ]
@@ -1635,10 +1635,10 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Helen Lin is a Partner at At One Ventures, the San Francisco climate deep tech firm founded in 2020, which the firm says Tom Chi founded together with her and Laurie Menoud. She has more than two decades of corporate finance experience across Asia, Africa, Europe, and North America, including mergers and acquisitions work at Baird and Houlihan Lokey, leadership of digital transformation for multinational banking operations, and design of financial products serving base of the pyramid customers at FINCA Impact Finance. She was listed as Principal in the firm's 2021 announcement of its 150 million dollar first fund and as Partner in its 2023 announcement of a 375 million dollar second fund.",
     sources: [
-      { label: "At One Ventures — Team", url: "https://www.atoneventures.com/team" },
+      { label: "At One Ventures - Team", url: "https://www.atoneventures.com/team" },
       { label: "At One Ventures Fund II press release (Oct 2023)", url: "https://www.prnewswire.com/news-releases/at-one-ventures-launches-375-million-climate-tech-fund-301946431.html" },
       { label: "At One Ventures Fund I press release (Oct 2021)", url: "https://www.webwire.com/ViewPressRel.asp?aId=280347" },
-      { label: "Conversations in Cleantech (Oct 2025) — title corroboration", url: "https://conversationsincleantech.podbean.com/e/laurie-menoud-founding-partner-helen-lin-partner-at-one-ventures-scaling-science-grounding-impact-rewiring-climate-tech-investing/" }
+      { label: "Conversations in Cleantech (Oct 2025) - title corroboration", url: "https://conversationsincleantech.podbean.com/e/laurie-menoud-founding-partner-helen-lin-partner-at-one-ventures-scaling-science-grounding-impact-rewiring-climate-tech-investing/" }
     ]
   },
 "ricardo-angel": {
@@ -1668,8 +1668,8 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Ricardo Angel is CEO and Managing Partner of Piva Capital, the San Francisco venture firm he founded in 2019 with a 250 million dollar inaugural fund backed solely by PETRONAS. He has more than 25 years of experience investing in the industrial and energy sectors. He was previously the founding Managing Director of GE Ventures and led Energy Technology Ventures, a 300 million dollar joint venture among GE, NRG Energy, and ConocoPhillips. Earlier he was a venture capital investment professional at Chevron, an investment banking analyst at Goldman Sachs, and a management consultant at CNA Corporation. His portfolio work at Piva includes Worlds.io, VELO3D, Malta, and VEIR. He holds a PhD in engineering from the University of Illinois and an MBA from Kellogg.",
     sources: [
-      { label: "Piva Capital — Ricardo Angel bio", url: "https://piva.vc/team-member/ricardo-angel-phd/" },
-      { label: "Piva Capital — People", url: "https://piva.vc/people/" },
+      { label: "Piva Capital - Ricardo Angel bio", url: "https://piva.vc/team-member/ricardo-angel-phd/" },
+      { label: "Piva Capital - People", url: "https://piva.vc/people/" },
       { label: "Piva $250M fund launch press release (Dec 2019)", url: "https://www.prnewswire.com/news-releases/piva-launches-250-million-fund-to-invest-in-a-new-era-of-industry-and-energy-300972779.html" },
       { label: "Piva team expansion press release (Sep 2021)", url: "https://www.prnewswire.com/news-releases/piva-capital-expands-team-to-back-visionary-entrepreneurs-and-transformative-industrial-companies-redefining-trillion-dollar-markets-301375890.html" }
     ]
@@ -1714,8 +1714,8 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Mark Gudiksen is a Managing Partner at Piva Capital, which he joined in 2021 as the firm's second Managing Partner. He has more than 20 years of experience across technology, company building, and investing, with a longstanding focus on climate related technologies. He previously co-founded Circularis Partners, served as a Managing Director in TPG's Alternative and Renewable Technologies fund, and worked at McKinsey and Company. He holds a PhD in Chemical Physics from Harvard University, where his nanotechnology research produced highly cited publications in journals including Science and Nature, and a BS in Chemistry from Stanford University. His Piva portfolio includes Xage Security, Pyka, Alloy Enterprises, Koloma, Lunar Energy, and Planted Solar.",
     sources: [
-      { label: "Piva Capital — Mark Gudiksen bio", url: "https://piva.vc/team-member/mark-gudiksen/" },
-      { label: "Piva Capital — People", url: "https://piva.vc/people/" },
+      { label: "Piva Capital - Mark Gudiksen bio", url: "https://piva.vc/team-member/mark-gudiksen/" },
+      { label: "Piva Capital - People", url: "https://piva.vc/people/" },
       { label: "Piva team expansion press release (Sep 2021)", url: "https://www.prnewswire.com/news-releases/piva-capital-expands-team-to-back-visionary-entrepreneurs-and-transformative-industrial-companies-redefining-trillion-dollar-markets-301375890.html" }
     ]
   },
@@ -1748,8 +1748,8 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Adzmel Adznan is a Co-Founding Partner of Piva Capital, named Partner and Operating Manager when the firm launched in San Francisco in 2019 with a 250 million dollar fund backed solely by PETRONAS, a partnership he originated. He spent more than a decade at PETRONAS in engineering, project development, and strategy roles tied to Malaysia's upstream petroleum sector and was a founding member of the company's corporate venture effort focused on new energy, advanced materials, and industrial automation. At Piva he manages limited partner relationships and fundraising strategy and has sourced and supported investments including Oobli, OneRail, and Ineratec. He is a Kauffman Fellow and holds a Master of Engineering from the University of Strathclyde and an MBA from Harvard Business School.",
     sources: [
-      { label: "Piva Capital — Adzmel Adznan bio", url: "https://piva.vc/team-member/adzmel-adznan/" },
-      { label: "Piva Capital — People", url: "https://piva.vc/people/" },
+      { label: "Piva Capital - Adzmel Adznan bio", url: "https://piva.vc/team-member/adzmel-adznan/" },
+      { label: "Piva Capital - People", url: "https://piva.vc/people/" },
       { label: "Piva $250M fund launch press release (Dec 2019)", url: "https://www.prnewswire.com/news-releases/piva-launches-250-million-fund-to-invest-in-a-new-era-of-industry-and-energy-300972779.html" }
     ]
   },
@@ -1772,8 +1772,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Lisa Read Blanco is Partner and Legal Counsel at Piva Capital in San Francisco. She has more than 20 years of experience executing venture capital transactions, with a focus on energy technology and impact investing. She was previously General Counsel and Chief Compliance Officer of Energy Technology Ventures, a joint venture of General Electric, NRG Energy, and ConocoPhillips, a corporate partner at the international law firm King & Spalding, and General Counsel of the impact investment firm Gray Ghost Ventures. She holds a Juris Doctor from the University of Georgia School of Law and a BBA in International Business from the University of Georgia, where she served nine years on the Terry College of Business board, including as chair.",
     sources: [
-      { label: "Piva Capital — Lisa Read Blanco bio", url: "https://piva.vc/team-member/lisa-read-blanco/" },
-      { label: "Piva Capital — People", url: "https://piva.vc/people/" }
+      { label: "Piva Capital - Lisa Read Blanco bio", url: "https://piva.vc/team-member/lisa-read-blanco/" },
+      { label: "Piva Capital - People", url: "https://piva.vc/people/" }
     ]
   },
 "maria-buitron": {
@@ -1826,8 +1826,8 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Maria Buitron is a Principal at Piva Capital, which she joined as an Associate when the firm launched in 2019. She previously worked on the business development team at Stem, focusing on international market expansion and new product offerings, and consulted for energy clients across upstream, midstream, and downstream sectors at Schlumberger Business Consulting. She was named to the 2020 Forbes 30 Under 30 list in Energy. Her portfolio involvement at Piva includes Worlds.io, VELO3D, Menlo Micro, Urbint, Boston Metal, Sense Photonics, Oobli, Alloy Enterprises, and Koloma. She holds an MBA from the UC Berkeley Haas School of Business and a BS in Chemical Engineering with top honors from Tecnologico de Monterrey.",
     sources: [
-      { label: "Piva Capital — Maria Buitron bio", url: "https://piva.vc/team-member/maria-buitron/" },
-      { label: "Piva Capital — People", url: "https://piva.vc/people/" },
+      { label: "Piva Capital - Maria Buitron bio", url: "https://piva.vc/team-member/maria-buitron/" },
+      { label: "Piva Capital - People", url: "https://piva.vc/people/" },
       { label: "Piva $250M fund launch press release (Dec 2019)", url: "https://www.prnewswire.com/news-releases/piva-launches-250-million-fund-to-invest-in-a-new-era-of-industry-and-energy-300972779.html" }
     ]
   },
@@ -1859,10 +1859,10 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Kevin Lalande is a Founding Managing Director and Chief Investment Officer of Santé Ventures, the Austin based healthcare and life science investment firm he co-founded in 2006. He oversees investment strategies managing more than one billion dollars across five venture funds. Before Santé, he spent seven years as an investment professional at Austin Ventures, worked as a management consultant at McKinsey and Company, and founded three internet companies in the 1990s. His venture investments include LDR Medical, Explorys, AbVitro, and Millipede Medical. He holds an MBA with highest distinction from Harvard Business School, a bachelor's degree with honors in electrical and computer engineering, and a graduate certificate in artificial intelligence from Stanford University.",
     sources: [
-      { label: "Santé — Team, Kevin Lalande", url: "https://sante.com/team/kevin-lalande" },
-      { label: "Clairity — Team, Kevin Lalande", url: "https://clairity.com/team/kevin-lalande/" },
-      { label: "PR Newswire — Santé Fund IV (2021)", url: "https://www.prnewswire.com/news-releases/sante-ventures-raises-260-million-in-fourth-fund-301378469.html" },
-      { label: "Santé — Fund V announcement (2026)", url: "https://sante.com/sante-ventures-raises-330-million-for-fifth-fund-to-advance-breakthrough-healthcare-innovation" }
+      { label: "Santé - Team, Kevin Lalande", url: "https://sante.com/team/kevin-lalande" },
+      { label: "Clairity - Team, Kevin Lalande", url: "https://clairity.com/team/kevin-lalande/" },
+      { label: "PR Newswire - Santé Fund IV (2021)", url: "https://www.prnewswire.com/news-releases/sante-ventures-raises-260-million-in-fourth-fund-301378469.html" },
+      { label: "Santé - Fund V announcement (2026)", url: "https://sante.com/sante-ventures-raises-330-million-for-fifth-fund-to-advance-breakthrough-healthcare-innovation" }
     ]
   },
 "joe-cunningham": {
@@ -1886,7 +1886,7 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Joe Cunningham, MD is a Founding Managing Director of Santé Ventures, which he co-founded in 2006. A board certified internal medicine physician and Fellow of the American College of Physicians, he previously served as Chief Medical Officer of Providence Health System and Executive Director of Providence Health Alliance, both part of Ascension. He was also a healthcare venture partner with Austin Ventures and vice chair of the investment committee of Ascension Health Ventures. He serves on boards at Cleveland Clinic Innovations and the Innovation Growth Board of Mass General Brigham, and chairs innovation efforts for the Texas A&M System. He earned a BS and an MD from Texas A&M University and an MBA from Baylor University.",
     sources: [
-      { label: "Santé — Team, Joe Cunningham, MD", url: "https://sante.com/team/joe-cunningham-md" }
+      { label: "Santé - Team, Joe Cunningham, MD", url: "https://sante.com/team/joe-cunningham-md" }
     ]
   },
 "douglas-french": {
@@ -1910,7 +1910,7 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Douglas French is a Founding Managing Director of Santé Ventures, which he co-founded in 2006 after more than thirty years as a healthcare executive. He previously served as President and CEO of Ascension Health, the largest nonprofit health system in the United States, where he also founded Ascension Ventures, its strategic venture arm. Earlier he was CEO of St. Vincent Health System in Indianapolis. He is a Fellow of the American College of Healthcare Executives and serves on the board of directors of MillerKnoll, Inc. He holds an undergraduate degree in pre-medical biology from Trevecca University and a graduate degree from Xavier University.",
     sources: [
-      { label: "Santé — Team, Douglas French", url: "https://sante.com/team/doug-french" }
+      { label: "Santé - Team, Douglas French", url: "https://sante.com/team/doug-french" }
     ]
   },
 "dennis-mcwilliams": {
@@ -1936,9 +1936,9 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Dennis McWilliams is a Managing Director at Santé Ventures. He joined the firm in 2019 as a Venture Partner and was promoted to Managing Director, announced with the close of the firm's fifth fund in 2026. He founded Apollo Endosurgery, a minimally invasive surgical device company, serving as CEO for nine years before becoming President and Chief Commercial Officer in 2014 as the company grew into a public company with a presence in more than sixty countries. He also founded SparkMed Advisors, a medical device advisory firm, and co-founded Chrysalis BioTechnology, a biopharmaceutical company focused on tissue regeneration. He holds an MS in engineering management from Stanford University and a BS in aerospace engineering with honors from the University of Texas.",
     sources: [
-      { label: "Santé — Team, Dennis McWilliams", url: "https://sante.com/team/dennis-mcwilliams" },
-      { label: "Santé — Dennis McWilliams Joins Santé Ventures (2019)", url: "https://sante.com/dennis-mcwilliams-joins-sante-ventures" },
-      { label: "Santé — Fund V announcement (2026)", url: "https://sante.com/sante-ventures-raises-330-million-for-fifth-fund-to-advance-breakthrough-healthcare-innovation" }
+      { label: "Santé - Team, Dennis McWilliams", url: "https://sante.com/team/dennis-mcwilliams" },
+      { label: "Santé - Dennis McWilliams Joins Santé Ventures (2019)", url: "https://sante.com/dennis-mcwilliams-joins-sante-ventures" },
+      { label: "Santé - Fund V announcement (2026)", url: "https://sante.com/sante-ventures-raises-330-million-for-fifth-fund-to-advance-breakthrough-healthcare-innovation" }
     ]
   },
 "omar-khalil": {
@@ -1964,8 +1964,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Omar Khalil is a Managing Director at Santé Ventures, where he focuses on biotechnology investments across multiple therapeutic areas and oversees the firm's Boston office. He first joined Santé in 2007, left for operating roles in industry, and rejoined the firm in 2020. His promotion to Managing Director was announced with the close of Fund V in 2026. His industry experience includes senior leadership roles at Baxter International and Baxalta, now part of Takeda, and at the commercial stage company Kaléo. He began his career in the healthcare practice of McKinsey and Company. He earned a BSE and an MSE in biomedical engineering summa cum laude from the University of Michigan, where he serves on the College of Engineering Leadership Advisory Board.",
     sources: [
-      { label: "Santé — Team, Omar Khalil", url: "https://sante.com/team/omar-khalil" },
-      { label: "Santé — Fund V announcement (2026)", url: "https://sante.com/sante-ventures-raises-330-million-for-fifth-fund-to-advance-breakthrough-healthcare-innovation" }
+      { label: "Santé - Team, Omar Khalil", url: "https://sante.com/team/omar-khalil" },
+      { label: "Santé - Fund V announcement (2026)", url: "https://sante.com/sante-ventures-raises-330-million-for-fifth-fund-to-advance-breakthrough-healthcare-innovation" }
     ]
   },
 "bill-evans": {
@@ -1990,10 +1990,10 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Bill Evans is Founder and General Partner of Rock Health Capital, a seed and early stage venture fund investing in entrepreneurs working at the intersection of healthcare and technology. He joined Rock Health in 2016 as CEO and Managing Director, and in 2022 transitioned to lead Rock Health Capital full time while remaining Chairman of the board of Rock Health Advisory, which he founded. Before Rock Health, he was Senior Director at Roche Diagnostics, where he launched the Navify oncology decision support unit, and spent more than a decade at Genentech, most recently as head of Health Technology Labs. He began his career as a programmer analyst at Goldman Sachs before working as a software engineer in Silicon Valley. He holds a BA in economics from Harvard University.",
     sources: [
-      { label: "Rock Health — Team, Bill Evans", url: "https://rockhealth.com/team/bill-evans/" },
-      { label: "Rock Health Capital — About Us", url: "https://rockhealthcapital.com/about-us/" },
-      { label: "Aspen Ideas — Bill Evans speaker bio", url: "https://www.aspenideas.org/speakers/bill-evans" },
-      { label: "Rock Health — A new chapter begins at Rock Health (2022)", url: "https://rockhealth.com/insights/a-new-chapter-begins-at-rock-health/" }
+      { label: "Rock Health - Team, Bill Evans", url: "https://rockhealth.com/team/bill-evans/" },
+      { label: "Rock Health Capital - About Us", url: "https://rockhealthcapital.com/about-us/" },
+      { label: "Aspen Ideas - Bill Evans speaker bio", url: "https://www.aspenideas.org/speakers/bill-evans" },
+      { label: "Rock Health - A new chapter begins at Rock Health (2022)", url: "https://rockhealth.com/insights/a-new-chapter-begins-at-rock-health/" }
     ]
   },
 "sean-day": {
@@ -2015,8 +2015,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Sean Day is a Principal at Rock Health Capital, the seed and early stage venture fund investing at the intersection of healthcare and technology. He moved to the investment team after working on Rock Health's consulting and research teams, where he advised enterprise healthcare companies on their digital strategies and wrote extensively on digital health funding and market trends. His career began at Epic, where he worked with R&D leaders to help scale the population health division. After college he held a Watson Fellowship. He earned a BS in bioengineering summa cum laude from Union College and a master's degree in technology policy from the University of Cambridge.",
     sources: [
-      { label: "Rock Health — Team, Sean Day", url: "https://rockhealth.com/team/sean-day/" },
-      { label: "Rock Health Capital — About Us", url: "https://rockhealthcapital.com/about-us/" }
+      { label: "Rock Health - Team, Sean Day", url: "https://rockhealth.com/team/sean-day/" },
+      { label: "Rock Health Capital - About Us", url: "https://rockhealthcapital.com/about-us/" }
     ]
   },
 "vasu-kulkarni": {
@@ -2042,9 +2042,9 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Vasu Kulkarni is a Partner and co-founder of Courtside Ventures, an early stage venture firm launched in January 2016 with a $35 million debut fund to invest in technology and media companies at the intersection of sports and gaming. Before Courtside he founded Krossover, a sports analytics company that provided video and data tools to teams around the world and helped establish the sports analytics industry; Krossover was sold to Stack Sports in 2017. Kulkarni holds a BS in Engineering from the University of Pennsylvania and played junior varsity basketball there. Business Insider named him a top sports investor in 2023.",
     sources: [
-      { label: "Courtside Ventures — Vasu Kulkarni bio", url: "https://www.courtsidevc.com/team-members/vasu-kulkarni" },
-      { label: "Courtside Ventures — Team", url: "https://courtsidevc.com/team" },
-      { label: "Forbes — Courtside $35M fund launch (Jan 2016)", url: "https://www.forbes.com/sites/darrenheitner/2016/01/11/a-35-million-fund-for-sports-tech-and-media-disruptors/" }
+      { label: "Courtside Ventures - Vasu Kulkarni bio", url: "https://www.courtsidevc.com/team-members/vasu-kulkarni" },
+      { label: "Courtside Ventures - Team", url: "https://courtsidevc.com/team" },
+      { label: "Forbes - Courtside $35M fund launch (Jan 2016)", url: "https://www.forbes.com/sites/darrenheitner/2016/01/11/a-35-million-fund-for-sports-tech-and-media-disruptors/" }
     ]
   },
 "deepen-parikh": {
@@ -2073,9 +2073,9 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Deepen Parikh is a Partner and co-founder of Courtside Ventures, which he helped launch in 2016 to back early stage companies across sports, media, betting, and wellness. He led the firm's investments in Beam, acquired by Microsoft, and in The Athletic, where he served on the board from the initial seed investment through the company's $550 million acquisition by The New York Times in 2022. Earlier he was a partner at Interplay Ventures, spent three years at UBS, and founded a CRM company serving professional and college sports teams. He serves as an independent director of 24 Hour Fitness and holds a BA from the University of Maryland, College Park.",
     sources: [
-      { label: "Courtside Ventures — Deepen Parikh bio", url: "https://www.courtsidevc.com/team-members/deepen-parikh" },
-      { label: "PR Newswire — Courtside leads The Athletic seed (2017)", url: "https://www.prnewswire.com/news-releases/courtside-ventures-announces-first-year-investment-portfolio-leads-seed-round-in-y-combinator-alum-the-athletic-300387918.html" },
-      { label: "CNBC — NYT to buy The Athletic for $550M (Jan 2022)", url: "https://www.cnbc.com/2022/01/06/new-york-times-announces-plans-to-buy-the-athletic-for-550-million.html" }
+      { label: "Courtside Ventures - Deepen Parikh bio", url: "https://www.courtsidevc.com/team-members/deepen-parikh" },
+      { label: "PR Newswire - Courtside leads The Athletic seed (2017)", url: "https://www.prnewswire.com/news-releases/courtside-ventures-announces-first-year-investment-portfolio-leads-seed-round-in-y-combinator-alum-the-athletic-300387918.html" },
+      { label: "CNBC - NYT to buy The Athletic for $550M (Jan 2022)", url: "https://www.cnbc.com/2022/01/06/new-york-times-announces-plans-to-buy-the-athletic-for-550-million.html" }
     ]
   },
 "kai-bond": {
@@ -2099,8 +2099,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Kai Bond is a Partner at Courtside Ventures, which he joined in March 2020 to lead the firm's gaming investments. A three time founder, he built a gaming marketplace, a mobile gaming studio, and Pixie, an interactive television application acquired by Samsung. After the acquisition he ran a global accelerator at Samsung NEXT, investing in more than a dozen companies, and later led the investment team of Comcast Ventures' $20 million Catalyst Fund focused on underrepresented founders, along with game investments for the Comcast Ventures flagship fund. Earlier roles included product development at Microsoft and business development and M&A at IAC. He holds a BA from Wesleyan University.",
     sources: [
-      { label: "Courtside Ventures — Kai Bond bio", url: "https://www.courtsidevc.com/team-members/kai-bond" },
-      { label: "Courtside Ventures (Medium) — Adding Another Courtside Seat (Mar 2020)", url: "https://medium.com/@courtsidevc/adding-another-courtside-seat-c89c9ec50a17" }
+      { label: "Courtside Ventures - Kai Bond bio", url: "https://www.courtsidevc.com/team-members/kai-bond" },
+      { label: "Courtside Ventures (Medium) - Adding Another Courtside Seat (Mar 2020)", url: "https://medium.com/@courtsidevc/adding-another-courtside-seat-c89c9ec50a17" }
     ]
   },
 "cort-post": {
@@ -2122,8 +2122,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Cort Post is a Principal at Courtside Ventures, where he works across the firm's investment verticals with particular emphasis on the wellness category. He came to Courtside with a background in finance and early stage startups. He previously led Finance and Operations at High Alpha, a B2B SaaS venture studio, where he worked with dozens of early stage companies from inception through Series A, and before that worked in the Entertainment Finance Group at Wells Fargo covering the film and television sectors. He holds an MBA in Finance and Entrepreneurship from Northwestern's Kellogg School of Management and a BS in Finance from Indiana University's Kelley School of Business.",
     sources: [
-      { label: "Courtside Ventures — Cort Post bio", url: "https://www.courtsidevc.com/team-members/cort-post" },
-      { label: "Courtside Ventures — Team", url: "https://courtsidevc.com/team" }
+      { label: "Courtside Ventures - Cort Post bio", url: "https://www.courtsidevc.com/team-members/cort-post" },
+      { label: "Courtside Ventures - Team", url: "https://courtsidevc.com/team" }
     ]
   },
 "natalie-massenet": {
@@ -2151,10 +2151,10 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Dame Natalie Massenet is Co-Founder and General Partner of Imaginary Ventures, the consumer focused venture firm she launched with Nick Brown in 2018; the firm closed a $500 million third fund in 2022, bringing assets under management to $1 billion. A former fashion journalist, she founded Net-a-Porter in 2000 and built it into a pioneering luxury e-commerce business valued at over $1 billion. She served as Chairman of the British Fashion Council and later as Non-Executive Co-Chairman of Farfetch, which she joined in 2017. She was appointed Dame Commander of the Order of the British Empire in 2016.",
     sources: [
-      { label: "Imaginary Ventures — About/Team", url: "https://www.imaginary.co/about" },
-      { label: "PR Newswire — Dame Natalie Massenet joins Farfetch (2017)", url: "https://www.prnewswire.com/news-releases/dame-natalie-massenet-joins-farfetch-300414790.html" },
-      { label: "Business Wire — Imaginary $500M Fund III (Apr 2022)", url: "https://www.businesswire.com/news/home/20220406006018/en/Imaginary-Ventures-Grows-Funds-Under-Management-to-1-Billion-Announces-500-Million-Fund-III-and-Significant-Team-Growth" },
-      { label: "FashionUnited — Massenet to exit BFC role (Dec 2017)", url: "https://fashionunited.uk/news/people/natalie-massenet-set-to-exit-role-at-bfc-after-five-years/2017120127072" }
+      { label: "Imaginary Ventures - About/Team", url: "https://www.imaginary.co/about" },
+      { label: "PR Newswire - Dame Natalie Massenet joins Farfetch (2017)", url: "https://www.prnewswire.com/news-releases/dame-natalie-massenet-joins-farfetch-300414790.html" },
+      { label: "Business Wire - Imaginary $500M Fund III (Apr 2022)", url: "https://www.businesswire.com/news/home/20220406006018/en/Imaginary-Ventures-Grows-Funds-Under-Management-to-1-Billion-Announces-500-Million-Fund-III-and-Significant-Team-Growth" },
+      { label: "FashionUnited - Massenet to exit BFC role (Dec 2017)", url: "https://fashionunited.uk/news/people/natalie-massenet-set-to-exit-role-at-bfc-after-five-years/2017120127072" }
     ]
   },
 "nick-brown": {
@@ -2185,9 +2185,9 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Nick Brown is Co-Founder and General Partner of Imaginary Ventures, which he launched with Natalie Massenet in 2018 to back early stage consumer businesses at the intersection of technology and retail; the firm announced a $500 million third fund in 2022. From 2011 to 2017 he was a Partner at 14W Venture Partners, where he was an early investor in direct to consumer brands including Glossier, Warby Parker, and The RealReal, and led early stage investments in Goop, Outdoor Voices, and Moda Operandi. A Harvard graduate, he began his career in finance before moving to consumer investing and is a member of the Business of Fashion 500.",
     sources: [
-      { label: "Imaginary Ventures — About/Team", url: "https://www.imaginary.co/about" },
-      { label: "Entrepreneur — How Success Happened for Nick Brown", url: "https://www.entrepreneur.com/leadership/how-success-happened-for-nick-brown-co-founder-of/411728" },
-      { label: "Business Wire — Imaginary $500M Fund III (Apr 2022)", url: "https://www.businesswire.com/news/home/20220406006018/en/Imaginary-Ventures-Grows-Funds-Under-Management-to-1-Billion-Announces-500-Million-Fund-III-and-Significant-Team-Growth" }
+      { label: "Imaginary Ventures - About/Team", url: "https://www.imaginary.co/about" },
+      { label: "Entrepreneur - How Success Happened for Nick Brown", url: "https://www.entrepreneur.com/leadership/how-success-happened-for-nick-brown-co-founder-of/411728" },
+      { label: "Business Wire - Imaginary $500M Fund III (Apr 2022)", url: "https://www.businesswire.com/news/home/20220406006018/en/Imaginary-Ventures-Grows-Funds-Under-Management-to-1-Billion-Announces-500-Million-Fund-III-and-Significant-Team-Growth" }
     ]
   },
 "kelly-dill": {
@@ -2211,9 +2211,9 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Kelly Dill is a Partner at Imaginary Ventures, where she manages the pipeline and diligence process for new investments and supports portfolio companies after investment. She was promoted to Partner in April 2022, when the firm announced its $500 million third fund and growth of assets under management to $1 billion. Before joining Imaginary she worked in strategic finance at Glossier in New York and at Uber in San Francisco, and earlier in mergers and acquisitions at Credit Suisse. She holds a Bachelor of Science in Commerce from the University of Virginia's McIntire School of Commerce.",
     sources: [
-      { label: "Imaginary Ventures — About/Team", url: "https://www.imaginary.co/about" },
-      { label: "WWD Catalysts — Kelly Dill speaker bio", url: "https://www.events.wwd.com/catalysts/speaker/1979806/kelly-dill" },
-      { label: "Business Wire — Fund III and partner promotions (Apr 2022)", url: "https://www.businesswire.com/news/home/20220406006018/en/Imaginary-Ventures-Grows-Funds-Under-Management-to-1-Billion-Announces-500-Million-Fund-III-and-Significant-Team-Growth" }
+      { label: "Imaginary Ventures - About/Team", url: "https://www.imaginary.co/about" },
+      { label: "WWD Catalysts - Kelly Dill speaker bio", url: "https://www.events.wwd.com/catalysts/speaker/1979806/kelly-dill" },
+      { label: "Business Wire - Fund III and partner promotions (Apr 2022)", url: "https://www.businesswire.com/news/home/20220406006018/en/Imaginary-Ventures-Grows-Funds-Under-Management-to-1-Billion-Announces-500-Million-Fund-III-and-Significant-Team-Growth" }
     ]
   },
 "logan-langberg": {
@@ -2237,9 +2237,9 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Logan Langberg is a Partner at Imaginary Ventures, the consumer focused venture firm founded by Natalie Massenet and Nick Brown, where he invests in early stage consumer companies from seed through Series B. He was promoted to Partner in April 2022 alongside the announcement of the firm's $500 million third fund. He began his career in consumer and retail investment banking and then joined Alliance Consumer Growth, where he worked on investments in restaurant and digitally native consumer brands such as Shake Shack, Blaze Pizza, OUAI Haircare, and Harry's, before joining Imaginary to help build the firm with its founders.",
     sources: [
-      { label: "Imaginary Ventures — About/Team", url: "https://www.imaginary.co/about" },
-      { label: "Compounding Thoughts — Q&A with Logan Langberg", url: "https://compoundingthoughts.com/interview/qa-with-imaginary-ventures-logan-langberg/" },
-      { label: "Business Wire — Fund III and partner promotions (Apr 2022)", url: "https://www.businesswire.com/news/home/20220406006018/en/Imaginary-Ventures-Grows-Funds-Under-Management-to-1-Billion-Announces-500-Million-Fund-III-and-Significant-Team-Growth" }
+      { label: "Imaginary Ventures - About/Team", url: "https://www.imaginary.co/about" },
+      { label: "Compounding Thoughts - Q&A with Logan Langberg", url: "https://compoundingthoughts.com/interview/qa-with-imaginary-ventures-logan-langberg/" },
+      { label: "Business Wire - Fund III and partner promotions (Apr 2022)", url: "https://www.businesswire.com/news/home/20220406006018/en/Imaginary-Ventures-Grows-Funds-Under-Management-to-1-Billion-Announces-500-Million-Fund-III-and-Significant-Team-Growth" }
     ]
   },
 "andrew-maxman": {
@@ -2261,8 +2261,8 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Andrew Maxman is a Partner at Imaginary Ventures, the consumer focused venture capital firm founded by Natalie Massenet and Nick Brown that backs consumer businesses from pre-seed through growth stages and reports roughly $2 billion in assets under management. He partners with brands across categories and stages; the firm's portfolio includes SKIMS, Glossier, Mejuri, Westman Atelier, and other consumer brands. He holds an MBA from Columbia Business School and a BA from the University of Pennsylvania. Details of his career before Imaginary are not publicly documented by the firm or in the conference bios reviewed for this profile.",
     sources: [
-      { label: "Imaginary Ventures — About/Team", url: "https://www.imaginary.co/about" },
-      { label: "Columbia Business School — RLG conference speaker bio", url: "https://business.columbia.edu/20th-rlg-conference/panel-retail-investing" }
+      { label: "Imaginary Ventures - About/Team", url: "https://www.imaginary.co/about" },
+      { label: "Columbia Business School - RLG conference speaker bio", url: "https://business.columbia.edu/20th-rlg-conference/panel-retail-investing" }
     ]
   },
 "deborah-quazzo": {
@@ -2297,9 +2297,9 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Deborah Quazzo is Managing Partner of GSV Ventures, an education and workforce technology venture fund she co-founded in 2016 that manages more than $500 million across three funds. She co-founded the ASU+GSV Summit, an annual education innovation gathering that has grown to more than 15,000 attendees. Her investments include Coursera, Nearpod, Handshake, QuillBot, PhysicsWallah, ClassDojo, Quizizz, and MasterClass, and she serves on the boards of Ascend Learning, Degreed, Uplimit, Toddle, Ellucian, and Turnitin. Earlier she co-founded ThinkEquity Partners, a technology investment bank acquired in 2007, and worked in investment banking at Merrill Lynch. She holds a BA in History from Princeton University and an MBA from Harvard University.",
     sources: [
-      { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
-      { label: "ASU+GSV Summit — Deborah Quazzo", url: "https://asugsvsummit.com/leadership/deborah-quazzo" },
-      { label: "SALT — Deborah Quazzo speaker bio", url: "https://archive2.salt.org/speakers/deborah-quazzo" }
+      { label: "GSV Ventures - Team", url: "https://gsv.ventures/team" },
+      { label: "ASU+GSV Summit - Deborah Quazzo", url: "https://asugsvsummit.com/leadership/deborah-quazzo" },
+      { label: "SALT - Deborah Quazzo speaker bio", url: "https://archive2.salt.org/speakers/deborah-quazzo" }
     ]
   },
 "adam-freed": {
@@ -2323,9 +2323,9 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Adam Freed is a Managing Partner at GSV Ventures, an education and workforce focused venture firm. He is board chair and former chief executive of Teachers Pay Teachers, which he joined as CEO in 2014 after serving as Chief Operating Officer of Etsy; under his leadership the marketplace reached more than 75 percent of K-12 teachers in the United States, Canada, and Australia. Earlier he led international product management and international sales operations at Google through the company's IPO period, and he began his career as a television reporter and anchor, earning an Emmy award. He holds a BA in Linguistics from Harvard University and a degree from Yale Law School.",
     sources: [
-      { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
-      { label: "ASU+GSV Summit — Adam Freed", url: "https://asugsvsummit.com/leadership/adam-freed" },
-      { label: "TechCrunch — Teachers Pay Teachers names Freed CEO (Aug 2014)", url: "https://techcrunch.com/2014/08/07/following-its-may-financing-teachers-pay-teachers-names-former-etsy-exec-as-ceo" }
+      { label: "GSV Ventures - Team", url: "https://gsv.ventures/team" },
+      { label: "ASU+GSV Summit - Adam Freed", url: "https://asugsvsummit.com/leadership/adam-freed" },
+      { label: "TechCrunch - Teachers Pay Teachers names Freed CEO (Aug 2014)", url: "https://techcrunch.com/2014/08/07/following-its-may-financing-teachers-pay-teachers-names-former-etsy-exec-as-ceo" }
     ]
   },
 "michael-cohn": {
@@ -2355,8 +2355,8 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Michael Cohn is Co-Founder and Partner at GSV Ventures, the education and workforce technology venture firm launched in 2016, where he works on fund management, investment sourcing, capital raising, and diligence. He has worked with the GSV platform since 2011, serving as a Director at GSV Advisors from 2011 to 2016, where he managed an angel portfolio and helped scale the ASU GSV Summit into an annual event with thousands of attendees. He serves on the boards of portfolio companies including BEGIN, QuillBot, Lightneer, and Toucan, and holds observer roles at several others. He holds an MBA from Northwestern's Kellogg School of Management and a BBA from the University of Michigan.",
     sources: [
-      { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
-      { label: "ASU+GSV Summit — Michael Cohn", url: "https://asugsvsummit.com/leadership/michael-cohn" }
+      { label: "GSV Ventures - Team", url: "https://gsv.ventures/team" },
+      { label: "ASU+GSV Summit - Michael Cohn", url: "https://asugsvsummit.com/leadership/michael-cohn" }
     ]
   },
 "luben-pampoulov": {
@@ -2387,9 +2387,9 @@ Object.assign(partnerProfiles, {
     ],
     biography: "Luben Pampoulov is a Partner at GSV Ventures and a co-founder and Partner of GSV Asset Management, with experience as a growth investor in consumer technology and education technology. At GSV he led early investments in companies including Coursera, Photomath, Spotify, Lyft, Snap, and Dropbox. He serves on the boards of Simplilearn and the ATP Tour, and began his finance career as an analyst at ThinkEquity Partners, a San Francisco investment bank. Before investing he was a professional tennis player on the ATP Tour and captained the UCLA tennis team that won the 2005 NCAA Championship. He holds a BA in Economics and International Studies from UCLA.",
     sources: [
-      { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
-      { label: "ASU+GSV Summit — Luben Pampoulov speaker bio", url: "https://www.asugsvsummit.com/speakers/luben-pampoulov" },
-      { label: "AI for Good (ITU) — Luben Pampoulov speaker bio", url: "https://aiforgood.itu.int/speaker/luben-pampoulov/" }
+      { label: "GSV Ventures - Team", url: "https://gsv.ventures/team" },
+      { label: "ASU+GSV Summit - Luben Pampoulov speaker bio", url: "https://www.asugsvsummit.com/speakers/luben-pampoulov" },
+      { label: "AI for Good (ITU) - Luben Pampoulov speaker bio", url: "https://aiforgood.itu.int/speaker/luben-pampoulov/" }
     ]
   },
 "claire-zau": {
@@ -2413,9 +2413,9 @@ Object.assign(partnerProfiles, {
     notableInvestments: [],
     biography: "Claire Zau is listed by GSV Ventures as a Partner and AI Lead, heading the firm's AI investment coverage and research. She writes a widely followed newsletter on AI and education and has spoken on AI and learning at the World Economic Forum, the ASU+GSV Summit, EdTech Week, and ISTE, and advises Arizona State University's external AI thought leadership group. She previously served as a Venture Fellow at Red & Blue Ventures and worked with the education accelerator Catalyst. She holds a BA from Stanford University and a master's degree from the University of Pennsylvania Graduate School of Education. In August 2026 TechCrunch reported that she had joined Lightspeed Venture Partners as a Partner.",
     sources: [
-      { label: "GSV Ventures — Team", url: "https://gsv.ventures/team" },
-      { label: "ASU+GSV Summit — Claire Zau", url: "https://asugsvsummit.com/leadership/claire-zau" },
-      { label: "TechCrunch — Lightspeed hire (Aug 2026)", url: "https://techcrunch.com/2026/08/05/how-lightspeed-found-its-newest-hire-via-instagram-dm/" }
+      { label: "GSV Ventures - Team", url: "https://gsv.ventures/team" },
+      { label: "ASU+GSV Summit - Claire Zau", url: "https://asugsvsummit.com/leadership/claire-zau" },
+      { label: "TechCrunch - Lightspeed hire (Aug 2026)", url: "https://techcrunch.com/2026/08/05/how-lightspeed-found-its-newest-hire-via-instagram-dm/" }
     ]
   },
 "christine-e-boyle": {
