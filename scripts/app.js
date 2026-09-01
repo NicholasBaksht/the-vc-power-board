@@ -814,11 +814,15 @@ function pbhInstallNav() {
   /* The primary action becomes Get Started. accounts.js owns the
      sign-in link's text and swaps it for the account name once signed
      in, so that one is left exactly as it is. */
+  /* "Get Started" is the wrong ask once someone has an account. The
+     destination is the saved-firms view, which is the authenticated
+     surface that already exists and already persists to Supabase - no
+     new behaviour is invented here. */
   const cta = document.querySelector('.pb-cta');
-  if (cta && !cta.dataset.pbhInstalled) {
-    cta.setAttribute('href', '#signin');
-    cta.textContent = 'Get Started';
-    cta.dataset.pbhInstalled = '1';
+  if (cta) {
+    const signedIn = typeof isSignedIn === 'function' && isSignedIn();
+    cta.setAttribute('href', signedIn ? '#shortlist' : '#signin');
+    cta.textContent = signedIn ? 'My shortlist' : 'Get Started';
   }
   if (typeof syncActiveNav === 'function') syncActiveNav();
 }
@@ -852,7 +856,7 @@ function pbhStats() {
   const out = [{ n: firms.length, l: 'Firms tracked' }];
 
   if (typeof partnerProfiles !== 'undefined') {
-    out.push({ n: Object.keys(partnerProfiles).length, l: 'Partners profiled' });
+    out.push({ n: Object.keys(partnerProfiles).length, l: 'Partners' });
   }
   if (typeof getCountryFromHQ === 'function') {
     const c = new Set(firms.map(function (f) { return getCountryFromHQ(f.hq); }).filter(Boolean));
@@ -861,8 +865,13 @@ function pbhStats() {
   /* Angels are only counted once the section actually holds any, so
      the strip never carries a zero to look symmetrical. */
   if (typeof CAPITAL_SOURCES !== 'undefined') {
-    const n = Object.keys(CAPITAL_SOURCES).length;
-    if (n > 0) out.push({ n: n, l: 'Angels &amp; capital sources' });
+    const all = Object.values(CAPITAL_SOURCES);
+    const n = all.length;
+    /* Label by what the records actually are. If the mix ever stops
+       being purely angels, fall back to the section's own name rather
+       than claiming a category the data does not support. */
+    const allAngels = n > 0 && all.every(function (e) { return e.type === 'angel'; });
+    if (n > 0) out.push({ n: n, l: allAngels ? 'Angels' : 'Capital sources' });
   }
   return out;
 }
@@ -962,13 +971,45 @@ function pbhIcon(k) {
     PBH_ICONS[k] + '</svg>';
 }
 
+
+/* The signal strip. Rendered ONLY when computePowerAlerts() actually
+   surfaces something, so the bar is never decoration waiting for
+   content - on a quiet day the page simply starts at the hero.
+   The alert engine already applies its own confidence and support
+   thresholds; nothing is re-scored or re-worded here. */
+function pbhSignalStrip() {
+  if (typeof computePowerAlerts !== 'function') return '';
+  let res = null;
+  try { res = computePowerAlerts(); } catch (err) { return ''; }
+  const alerts = (res && res.alerts) || [];
+  if (!alerts.length) return '';
+  const top = alerts[0];
+  if (!top || !top.title) return '';
+  const n = res.surfaced || alerts.length;
+  /* Dismissal is remembered per signal, not per session: a new top
+     alert brings the bar back, the same one stays gone. */
+  let seen = null;
+  try { seen = window.sessionStorage.getItem('pbhSignalDismissed'); } catch (err) {}
+  if (seen && seen === top.id) return '';
+
+  return '<div class="pbh-signal-row" data-signal-id="' + pbhEsc(top.id) + '">' +
+    '<a class="pbh-signal" href="#powerAlerts">' +
+      '<span class="pbh-signal-dot" aria-hidden="true"></span>' +
+      '<span class="pbh-signal-n">' + n + ' signal' + (n === 1 ? '' : 's') + '</span>' +
+      '<span class="pbh-signal-t">' + pbhEsc(top.title) + '</span>' +
+      '<span class="pbh-signal-a">Read report &rarr;</span>' +
+    '</a>' +
+    '<button type="button" class="pbh-signal-x" aria-label="Dismiss this signal">&times;</button>' +
+    '</div>';
+}
+
 /* ---------- sections ---------- */
 
 function pbhHero() {
   const m = pbhMatchExample();
   const p = pbhPartnerExample();
 
-  let h = '<section class="pbh-hero">' +
+  let h = '<section class="pbh-hero pbh-shell">' +
     '<div class="pbh-hero-l">' +
       '<div class="pbh-eyebrow">Data-backed &middot; Source-verified &middot; Founder-focused</div>' +
       '<h1 class="pbh-h1">Find the right VC firm.<br>Find the right partner.</h1>' +
@@ -1006,7 +1047,7 @@ function pbhHero() {
           ((m.firm.sectors || []).length
             ? '<div><dt>Top sector</dt><dd>' + pbhEsc(m.firm.sectors[0]) + '</dd></div>' : '') +
           (m.firm.founded ? '<div><dt>Founded</dt><dd>' + pbhEsc(m.firm.founded) + '</dd></div>' : '') +
-          (m.firm.aum ? '<div><dt>Assets</dt><dd>' + pbhEsc(m.firm.aum) + '</dd></div>' : '') +
+          (m.firm.aum ? '<div><dt>AUM</dt><dd>' + pbhEsc(m.firm.aum) + '</dd></div>' : '') +
         '</dl>' +
       '</div>';
 
@@ -1046,7 +1087,7 @@ function pbhBehavior() {
     ? firms.filter(function (f) { return f.slug === PBH_EXAMPLE.firmSlug; })[0] : null;
   const stated = firm && (firm.sectors || []).length ? firm.sectors : null;
 
-  let h = '<section class="pbh-sec pbh-beh">' +
+  let h = '<section class="pbh-sec pbh-beh pbh-shell">' +
     '<div class="pbh-sec-h">' +
       '<h2 class="pbh-h2">Stated focus is not observed behavior.</h2>' +
       '<p class="pbh-sec-p">What a firm says it invests in and what its partners have actually ' +
@@ -1078,7 +1119,7 @@ function pbhBehavior() {
     h += '<div class="pbh-bar-set">' +
       p.stage.slice(0, 3).map(function (d) { return pbhBar(d.label, d.pct, d.n); }).join('') +
       '<div class="pbh-basis">Based on ' + p.stageN + ' of ' + p.total +
-      ' attributable investments with a known round</div></div>';
+      ' attributable investments with a known stage</div></div>';
   }
   h += '</div></div></section>';
   return h;
@@ -1109,7 +1150,7 @@ function pbhHow() {
     ['shield', 'Avoid mistakes',
      'Conflict Check surfaces relevant portfolio and relationship risks.', '#conflict-check']
   ];
-  return '<section class="pbh-sec pbh-how">' +
+  return '<section class="pbh-sec pbh-how pbh-shell">' +
     '<div class="pbh-sec-h"><h2 class="pbh-h2">How Power Board works</h2></div>' +
     '<div class="pbh-how-grid">' + steps.map(function (s, i) {
       return '<a class="pbh-step" href="' + s[3] + '">' +
@@ -1122,8 +1163,8 @@ function pbhHow() {
 }
 
 function pbhFinalCta() {
-  return '<section class="pbh-final">' +
-    '<h2 class="pbh-h2">Ready to find your best-fit investors?</h2>' +
+  return '<section class="pbh-final pbh-shell">' +
+    '<h2 class="pbh-h2">Find the investors actually worth your time.</h2>' +
     '<p class="pbh-sec-p">Start your search and connect with the right investors inside the right firms.</p>' +
     '<div class="pbh-ctas">' +
       '<a href="#find-investors" class="pbh-btn pbh-btn-p" data-pbh-cta="power-match-final">Find My Investors</a>' +
@@ -1135,8 +1176,10 @@ function pbhFinalCta() {
 function renderHomepage() {
   const host = document.getElementById('homeIntro');
   if (!host) return;
+  const strip = pbhSignalStrip();
   host.innerHTML =
     '<div class="pbh">' +
+      (strip ? '<div class="pbh-shell">' + strip + '</div>' : '') +
       pbhHero() +
       pbhBehavior() +
       pbhHow() +
@@ -1165,6 +1208,67 @@ function renderHomepage() {
    Power Board publishes a dated privacy policy that the analytics code
    is written to keep true, so removing the site-wide link to it would
    be a compliance regression, not a tidy-up. */
+
+/* Rebuilds the footer as a real index of the product. Every href below
+   is a route that already resolves - Terms and Privacy are the two
+   legal pages that genuinely exist and their links are carried over
+   rather than reinvented. Account row follows the session. */
+function pbhBuildFooter() {
+  const foot = document.getElementById('siteFooter');
+  if (!foot) return;
+  const signedIn = typeof isSignedIn === 'function' && isSignedIn();
+  const col = function (title, links) {
+    return '<div><div class="pbh-foot-h">' + title + '</div><ul>' +
+      links.map(function (l) {
+        return '<li><a href="' + l[0] + '">' + l[1] + '</a></li>';
+      }).join('') + '</ul></div>';
+  };
+  foot.className = 'pbh-foot';
+  foot.innerHTML =
+    '<div class="pbh-shell">' +
+      '<div class="pbh-foot-in">' +
+        '<div>' +
+          '<div class="pbh-foot-brand">Power Board</div>' +
+          '<p class="pbh-foot-note">Firm and partner research for founders raising ' +
+          'venture capital. Every claim on the board is traced to a public source.</p>' +
+        '</div>' +
+        col('Product', [
+          ['#firms', 'Firms'],
+          ['#people', 'Partner Intelligence'],
+          ['#capital-sources', 'Angels'],
+          ['#find-investors', 'Power Match'],
+          ['#conflict-check', 'Conflict Check']
+        ]) +
+        col('Research', [
+          ['#methodologyAnchor', 'Methodology'],
+          ['#pricing', 'Pricing']
+        ]) +
+        col('Account', signedIn
+          ? [['#account', 'Your account'], ['#shortlist', 'Saved firms']]
+          : [['#signin', 'Sign in'], ['#signin', 'Create account']]) +
+      '</div>' +
+      '<div class="pbh-foot-base">' +
+        '<span>&copy; ' + new Date().getFullYear() + ' The VC Power Board</span>' +
+        '<span class="pbh-foot-legal">' +
+          '<a href="terms/">Terms of Service</a>' +
+          '<a href="privacy/">Privacy Policy</a>' +
+        '</span>' +
+      '</div>' +
+    '</div>';
+}
+
+/* Dismissing a signal removes the row and remembers which one, so it
+   does not reappear on the next route change within the session. */
+document.addEventListener('click', function (e) {
+  const btn = e.target.closest && e.target.closest('.pbh-signal-x');
+  if (!btn) return;
+  e.preventDefault();
+  const row = btn.closest('.pbh-signal-row');
+  if (!row) return;
+  try { window.sessionStorage.setItem('pbhSignalDismissed', row.dataset.signalId || '1'); } catch (err) {}
+  row.remove();
+});
+
 function pbhCleanFooter() {
   const foot = document.getElementById('siteFooter');
   if (!foot || foot.dataset.pbhCleaned) return;
@@ -1191,8 +1295,8 @@ function pbhRemoveLegacyBlocks() {
 }
 
 function pbhCleanChrome() {
-  pbhCleanFooter();
   pbhRemoveLegacyBlocks();
+  pbhBuildFooter();
 }
 
 if (document.readyState === 'loading') {
