@@ -1,7 +1,7 @@
 /* ============================================================
-   NETWORK.JS - POWER NETWORK (Phase 1 + Follow)
+   NETWORK.JS - NETWORK (Phase 1 + Follow)
 
-   Nav label "People", route #network. The route is not #people
+   Nav label "Network", route #network. The route is not #people
    because that already resolves to Partner Intelligence.
 
    WHAT THIS FILE WILL NOT DO
@@ -155,7 +155,7 @@ async function renderPeopleDiscovery() {
   host.innerHTML =
     '<div class="pbn"><div class="pbn-shell">' +
       '<div class="pbn-head">' +
-        '<div class="pbn-kicker">Power Network</div>' +
+        '<div class="pbn-kicker">Network</div>' +
         '<h1 class="pbn-h1">Find people worth knowing.</h1>' +
         '<p class="pbn-lede">Founders, operators, engineers and investors building in the ' +
         'startup ecosystem. Profiles are written by the people themselves, and say what ' +
@@ -215,7 +215,7 @@ async function pbnRunSearch() {
   const box = document.getElementById('pbnResults');
   const c = pbnClient();
   if (!box) return;
-  if (!c) { box.innerHTML = '<div class="pbn-empty">Power Network needs a signed-in session to load.</div>'; return; }
+  if (!c) { box.innerHTML = '<div class="pbn-empty">Network needs a signed-in session to load.</div>'; return; }
   if (typeof pbTrack === 'function') pbTrack('people_search_started');
 
   let q = c.from('profiles')
@@ -248,7 +248,7 @@ async function pbnRunSearch() {
     box.innerHTML = '<div class="pbn-empty">' +
       (pbnQuery || pbnFilterRole || pbnFilterUses || pbnFilterExp
         ? 'No published profiles match that search yet.'
-        : 'No published profiles yet. Power Network is new, and profiles appear here ' +
+        : 'No published profiles yet. Network is new, and profiles appear here ' +
           'once people publish them.') +
       '</div>';
     return;
@@ -295,7 +295,7 @@ async function renderNetworkProfile(handle) {
 
   if (!p) {
     host.innerHTML = '<div class="pbn"><div class="pbn-shell">' +
-      '<a class="pbn-back" href="#network">&larr; Power Network</a>' +
+      '<a class="pbn-back" href="#network">&larr; Network</a>' +
       '<div class="pbn-empty">No published profile for that name.</div></div></div>';
     return;
   }
@@ -324,7 +324,7 @@ async function renderNetworkProfile(handle) {
 
   host.innerHTML =
     '<div class="pbn"><div class="pbn-shell">' +
-      '<a class="pbn-back" href="#network">&larr; Power Network</a>' +
+      '<a class="pbn-back" href="#network">&larr; Network</a>' +
 
       '<header class="pbn-id">' +
         pbnPhoto(p, 'lg') +
@@ -424,7 +424,7 @@ async function renderNetworkProfileEdit() {
   if (!pbnUid()) {
     try { sessionStorage.setItem('pbnAfterAuth', '#network/edit'); } catch (e) {}
     host.innerHTML = '<div class="pbn"><div class="pbn-shell">' +
-      '<a class="pbn-back" href="#network">&larr; Power Network</a>' +
+      '<a class="pbn-back" href="#network">&larr; Network</a>' +
       '<div class="pbn-gate"><h1 class="pbn-h1">Create an account to build your profile.</h1>' +
       '<p class="pbn-lede">Your profile is what lets the right people find you. ' +
       'It takes a few minutes and you choose what is visible.</p>' +
@@ -513,7 +513,7 @@ async function renderNetworkProfileEdit() {
 
   host.innerHTML =
     '<div class="pbn"><div class="pbn-shell pbn-edit">' +
-      '<a class="pbn-back" href="#network">&larr; Power Network</a>' +
+      '<a class="pbn-back" href="#network">&larr; Network</a>' +
       '<h1 class="pbn-h1">Your profile</h1>' +
       '<p class="pbn-lede">' +
         (p.is_published
@@ -687,7 +687,7 @@ async function pbnMaybePromptProfile() {
   wrap.innerHTML =
     '<div class="pbn-prompt-in">' +
       '<div class="pbn-prompt-body">' +
-        '<div class="pbn-kicker">Power Network</div>' +
+        '<div class="pbn-kicker">Network</div>' +
         '<h2 class="pbn-prompt-h" id="pbnPromptTitle">Set up your profile</h2>' +
         '<p class="pbn-prompt-p">Say what you are working on, what you can help with and ' +
         'what you are looking for, so the right people can find you. ' +
