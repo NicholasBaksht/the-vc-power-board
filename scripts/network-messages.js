@@ -132,7 +132,7 @@ async function renderNetworkInbox(filter) {
   const mode = filter === 'requests' ? 'requests' : 'inbox';
   host.innerHTML = '<div class="pbn"><div class="pbn-shell">' +
     '<a class="pbn-back" href="#network">&larr; Network</a>' +
-    '<h1 class="pbn-h1">Messages</h1>' +
+    '<h1 class="pbn-h1">Message</h1>' +
     '<div class="pbm-tabs">' +
       '<a class="pbm-tab' + (mode === 'inbox' ? ' is-on' : '') + '" href="#network/messages">Inbox</a>' +
       '<a class="pbm-tab' + (mode === 'requests' ? ' is-on' : '') + '" href="#network/requests">Requests</a>' +
@@ -248,7 +248,7 @@ async function renderNetworkConversation(convId) {
     /* A non-participant gets zero rows from the policy, so this is
        also what an attempt to open someone else's thread looks like. */
     host.innerHTML = '<div class="pbn"><div class="pbn-shell">' +
-      '<a class="pbn-back" href="#network/messages">&larr; Messages</a>' +
+      '<a class="pbn-back" href="#network/messages">&larr; Message</a>' +
       '<div class="pbn-empty">That conversation is not available.</div></div></div>';
     return;
   }
@@ -258,7 +258,7 @@ async function renderNetworkConversation(convId) {
   const canSend = conv.state === 'accepted' || (conv.state === 'pending' && conv.created_by === me && !msgs.length);
 
   host.innerHTML = '<div class="pbn"><div class="pbn-shell pbm-thread">' +
-    '<a class="pbn-back" href="#network/messages">&larr; Messages</a>' +
+    '<a class="pbn-back" href="#network/messages">&larr; Message</a>' +
     '<header class="pbm-head">' +
       pbnPhoto(other || {}) +
       '<div class="pbm-head-main">' +
