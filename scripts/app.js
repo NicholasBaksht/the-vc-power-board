@@ -1311,6 +1311,11 @@ function pbhCleanFooter() {
 /* network.js carries the Network section. index.html is not hand-edited in
    this project, so the script is attached here on first load. */
 function pbhEnsureNetworkScript() {
+  if (!document.getElementById('pbrJs')) {
+    const r = document.createElement('script');
+    r.id = 'pbrJs'; r.src = 'scripts/network-relevance.js';
+    document.head.appendChild(r);
+  }
   if (document.getElementById('pbnJs')) return;
   const t = document.createElement('script');
   t.id = 'pbnJs'; t.src = 'scripts/network.js';
