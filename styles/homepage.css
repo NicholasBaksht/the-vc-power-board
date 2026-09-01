@@ -32,13 +32,13 @@
 
 /* One measure, used by every section so left edges line up down the
    whole page. */
-.pbh-shell { max-width: 1280px; margin: 0 auto; padding-left: var(--s6); padding-right: var(--s6); }
+.pbh-shell { max-width: 1360px; margin: 0 auto; padding-left: var(--s7); padding-right: var(--s7); }
 
 body.is-home { background: var(--bg); }
 body.is-home .wrap { background: var(--bg); max-width: none; padding: 0; }
 body.is-home #methodologyAnchor {
-  max-width: 1280px; margin: 0 auto;
-  padding-left: var(--s6); padding-right: var(--s6);
+  max-width: 1360px; margin: 0 auto;
+  padding-left: var(--s7); padding-right: var(--s7);
 }
 
 /* --- header ----------------------------------------------------
@@ -46,11 +46,11 @@ body.is-home #methodologyAnchor {
    the account cluster. Restate the reading order and match the
    page measure so the logo aligns with the headline below it. */
 body.is-home .pb-header {
-  max-width: 1280px;
+  max-width: 1360px;
   min-height: 70px;
   flex-wrap: nowrap;
   gap: 0 var(--s5);
-  padding: 0 var(--s6);
+  padding: 0 var(--s7);
   border-bottom: 1px solid var(--hairline);
 }
 body.is-home .pb-brand { order: 1; }
@@ -59,7 +59,7 @@ body.is-home .pb-nav {
   flex: 1 1 auto;
   justify-content: flex-start;
   gap: var(--s1);
-  margin: 0 0 0 var(--s7);
+  margin: 0 0 0 var(--s8);
   min-width: 0;
   flex-wrap: nowrap;
 }
@@ -111,14 +111,30 @@ body.is-home .pb-cta {
    A research ticker, not a banner: one rule, one marker, one line,
    one action. Rendered only when the alerts engine actually
    returns a signal, so it is never filler. */
+.pbh-signal-row {
+  display: flex; align-items: center; gap: var(--s3);
+  min-height: 44px;
+  border-bottom: 1px solid var(--hairline);
+}
 .pbh-signal {
   display: flex; align-items: center; gap: var(--s3);
-  padding: var(--s3) 0;
-  border-bottom: 1px solid var(--hairline);
+  flex: 1 1 auto; min-width: 0;
   text-decoration: none;
   font-size: 13.5px;
-  transition: background-color .15s ease;
 }
+/* Dismiss is a real control but not a competing one: it reads as a
+   rule-weight glyph until hovered. */
+.pbh-signal-x {
+  flex: 0 0 auto;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 24px; height: 24px; padding: 0;
+  border: 0; background: none; cursor: pointer;
+  color: var(--ink-dim); font-size: 15px; line-height: 1;
+  border-radius: 4px;
+  transition: color .15s ease, background-color .15s ease;
+}
+.pbh-signal-x:hover { color: var(--ink); background: var(--surface); }
+.pbh-signal-x:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .pbh-signal-dot {
   flex: 0 0 auto; width: 6px; height: 6px; border-radius: 50%;
   background: var(--accent);
@@ -142,7 +158,7 @@ body.is-home .pb-cta {
    The hierarchy has to survive with every border deleted, so the
    steps between levels are large and the weights are decisive. */
 .pbh-h1 {
-  font-size: clamp(2.4rem, 3.9vw, 3.5rem);   /* 38 -> 56px */
+  font-size: clamp(2.4rem, 3.5vw, 3.125rem);  /* 38 -> 50px */
   line-height: 1.06;
   letter-spacing: -0.032em;
   font-weight: 700;
@@ -172,17 +188,17 @@ body.is-home .pb-cta {
   display: block;
   font-family: var(--mono);
   font-size: 11.5px;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-dim);
-  margin-bottom: var(--s4);
+  margin-bottom: var(--s5);
 }
 
 /* --- buttons --------------------------------------------------- */
 .pbh-ctas { display: flex; flex-wrap: wrap; gap: var(--s3); }
 .pbh-btn {
   display: inline-flex; align-items: center; justify-content: center;
-  height: 44px; padding: 0 var(--s5);
+  height: 48px; padding: 0 var(--s5);
   font-size: 15px; font-weight: 500;
   border-radius: 8px;
   text-decoration: none;
@@ -196,6 +212,7 @@ body.is-home .pb-cta {
 
 .pbh-btn:focus-visible,
 .pbh-signal:focus-visible,
+.pbh-foot a:focus-visible,
 .pbh-step:focus-visible,
 .pbh-partner-link:focus-visible,
 .pbh-firm-n:focus-visible,
@@ -211,18 +228,18 @@ body.is-home .pb-cta {
    reads fine slightly narrower. */
 .pbh-hero {
   display: grid;
-  grid-template-columns: 53fr 47fr;
-  gap: var(--s7);
+  grid-template-columns: 48fr 52fr;
+  gap: var(--s8);
   align-items: center;
-  padding-top: var(--s8);
-  padding-bottom: var(--s8);
+  padding-top: var(--s9);
+  padding-bottom: var(--s9);
 }
 .pbh-hero-l, .pbh-hero-r { min-width: 0; }
 
 /* Coverage as a sentence of numbers, not a row of stat cards. */
 .pbh-stats {
   display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5);
-  margin-top: var(--s6); padding-top: var(--s5);
+  margin-top: var(--s7); padding-top: var(--s5);
   border-top: 1px solid var(--hairline);
   font-size: 14px; color: var(--ink-dim);
 }
@@ -253,10 +270,10 @@ body.is-home .pb-cta {
 }
 .pbh-panel-t {
   font-family: var(--mono);
-  font-size: 11.5px; letter-spacing: 0.11em; text-transform: uppercase;
+  font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--ink);
 }
-.pbh-panel-q { font-size: 12.5px; color: var(--ink-dim); }
+.pbh-panel-q { font-size: 12px; font-weight: 400; color: var(--ink-dim); }
 
 .pbh-firm { padding: var(--s5); }
 .pbh-firm-top {
@@ -281,7 +298,7 @@ body.is-home .pb-cta {
 }
 .pbh-score-l {
   display: block; font-family: var(--mono);
-  font-size: 11.5px; letter-spacing: 0.09em;
+  font-size: 11.5px; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--ink-dim); margin-top: var(--s1);
 }
 
@@ -308,7 +325,7 @@ body.is-home .pb-cta {
 }
 .pbh-partner-h {
   font-family: var(--mono);
-  font-size: 11.5px; letter-spacing: 0.11em; text-transform: uppercase;
+  font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--ink-dim); margin-bottom: var(--s3);
 }
 .pbh-partner-top {
@@ -316,11 +333,11 @@ body.is-home .pb-cta {
   margin-bottom: var(--s4);
 }
 .pbh-partner-n {
-  font-size: 17px; font-weight: 600; color: var(--ink);
+  font-size: 19px; font-weight: 600; color: var(--ink);
   text-decoration: none; letter-spacing: -0.012em;
 }
 .pbh-partner-n:hover { color: var(--accent-bright); }
-.pbh-partner-r { font-size: 13.5px; color: var(--ink-dim); }
+.pbh-partner-r { font-size: 14px; color: var(--ink-dim); }
 
 /* Label above value, consistent gap, numbers tabular - so the three
    columns line up on both axes. */
@@ -330,8 +347,12 @@ body.is-home .pb-cta {
 }
 .pbh-partner-facts span {
   display: block; font-family: var(--mono);
-  font-size: 11.5px; letter-spacing: 0.09em;
+  font-size: 11.5px; line-height: 1.25; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--ink-dim); margin-bottom: var(--s1);
+  /* "Attributed investments" needs two lines where its siblings need
+     one. Reserving both keeps all three values on a single baseline
+     instead of leaving the count hanging below the others. */
+  min-height: 2.5em;
 }
 .pbh-partner-facts strong {
   display: block; font-size: 14.5px; font-weight: 500; color: var(--ink);
@@ -344,19 +365,19 @@ body.is-home .pb-cta {
 .pbh-partner-link:hover { color: var(--accent-bright); text-decoration: underline; }
 
 /* --- sections --------------------------------------------------- */
-.pbh-sec { padding-top: var(--s9); padding-bottom: var(--s9); border-top: 1px solid var(--hairline); }
-.pbh-sec-h { margin-bottom: var(--s8); max-width: 60ch; }
+.pbh-sec { padding-top: var(--s10); padding-bottom: var(--s10); border-top: 1px solid var(--hairline); }
+.pbh-sec-h { margin-bottom: var(--s9); max-width: 60ch; }
 
 /* --- stated vs observed ----------------------------------------
    Two analyst columns divided by a single rule. No card on either
    side: the comparison is the point, and boxes would make them
    look like two unrelated widgets. */
-.pbh-beh-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s8); }
+.pbh-beh-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s9); }
 .pbh-col { min-width: 0; }
-.pbh-col + .pbh-col { padding-left: var(--s8); border-left: 1px solid var(--hairline); }
+.pbh-col + .pbh-col { padding-left: var(--s9); border-left: 1px solid var(--hairline); }
 .pbh-col-h {
   font-family: var(--mono);
-  font-size: 11.5px; letter-spacing: 0.11em; text-transform: uppercase;
+  font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--ink); margin-bottom: var(--s1);
 }
 .pbh-col-s { font-size: 13.5px; color: var(--ink-dim); margin-bottom: var(--s5); }
@@ -387,10 +408,10 @@ body.is-home .pb-cta {
 /* --- how it works ----------------------------------------------
    Four editorial columns. The rule above each is charcoal, not
    green: these are steps, not signals. */
-.pbh-how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s7); }
+.pbh-how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s8); }
 .pbh-step {
   display: block; text-decoration: none;
-  padding-top: var(--s4); border-top: 2px solid var(--ink);
+  padding-top: var(--s4); border-top: 1.5px solid var(--ink);
   transition: border-color .18s ease;
 }
 .pbh-step:hover { border-top-color: var(--accent); }
@@ -415,7 +436,7 @@ body.is-home .pb-cta {
 .pbh-step-d { font-size: 14.5px; line-height: 1.55; color: var(--ink-dim); margin: 0; }
 
 /* --- final cta --------------------------------------------------- */
-.pbh-final { padding-top: var(--s9); padding-bottom: var(--s9); border-top: 1px solid var(--hairline); }
+.pbh-final { padding-top: var(--s10); padding-bottom: var(--s10); border-top: 1px solid var(--hairline); }
 .pbh-final .pbh-h2 { max-width: 18em; }
 .pbh-final .pbh-ctas { margin-top: var(--s6); }
 
@@ -438,16 +459,16 @@ body.is-home .pb-cta {
 @media (max-width: 1024px) {
   .pbh-shell { padding-left: var(--s5); padding-right: var(--s5); }
   .pbh-hero {
-    grid-template-columns: 1fr; gap: var(--s7);
-    padding-top: var(--s7); padding-bottom: var(--s7);
+    grid-template-columns: 1fr; gap: var(--s8);
+    padding-top: var(--s8); padding-bottom: var(--s8);
   }
   .pbh-sub { max-width: none; }
-  .pbh-sec, .pbh-final { padding-top: var(--s8); padding-bottom: var(--s8); }
-  .pbh-sec-h { margin-bottom: var(--s7); }
+  .pbh-sec, .pbh-final { padding-top: var(--s9); padding-bottom: var(--s9); }
+  .pbh-sec-h { margin-bottom: var(--s8); }
   /* 2x2 rather than four unreadable columns. */
   .pbh-how-grid { grid-template-columns: repeat(2, 1fr); gap: var(--s6); }
-  .pbh-beh-grid { gap: var(--s7); }
-  .pbh-col + .pbh-col { padding-left: var(--s7); }
+  .pbh-beh-grid { gap: var(--s8); }
+  .pbh-col + .pbh-col { padding-left: var(--s8); }
 }
 @media (max-width: 768px) {
   .pbh-beh-grid { grid-template-columns: 1fr; gap: var(--s6); }
@@ -458,17 +479,23 @@ body.is-home .pb-cta {
 }
 @media (max-width: 560px) {
   .pbh-shell { padding-left: var(--s4); padding-right: var(--s4); }
-  .pbh-h1 { font-size: 40px; letter-spacing: -0.028em; }
+  /* At this measure each sentence has to wrap. Balancing makes it
+     break as "Find the right / VC firm." rather than orphaning the
+     word "firm." onto a line by itself. */
+  .pbh-h1 { font-size: 40px; letter-spacing: -0.028em; text-wrap: balance; }
   .pbh-sub { font-size: 16px; margin-bottom: var(--s5); }
   .pbh-how-grid { grid-template-columns: 1fr; gap: var(--s6); }
   .pbh-kv { grid-template-columns: 1fr 1fr; gap: var(--s4); }
   .pbh-partner-facts { grid-template-columns: 1fr; gap: var(--s3); }
+  /* Stacked, each label sits directly above its own value, so the
+     reserved second line is no longer doing anything. */
+  .pbh-partner-facts span { min-height: 0; }
   .pbh-ctas { flex-direction: column; align-items: stretch; }
   .pbh-btn { width: 100%; }
   .pbh-firm-top { flex-direction: column; gap: var(--s4); }
   .pbh-score { text-align: left; }
   .pbh-bar { grid-template-columns: minmax(0, 1fr) 1fr 40px; gap: var(--s3); }
-  .pbh-sec, .pbh-final { padding-top: var(--s7); padding-bottom: var(--s7); }
+  .pbh-sec, .pbh-final { padding-top: var(--s8); padding-bottom: var(--s8); }
   .pbh-sec-h { margin-bottom: var(--s6); }
   .pbh-signal-n { display: none; }
   /* Labels get a touch more size once they are no longer beside a value. */
@@ -480,4 +507,45 @@ body.is-home .pb-cta {
 @media (prefers-reduced-motion: reduce) {
   .pbh-btn, .pbh-step, .pbh-step-t, .pbh-signal,
   .pbh-partner-link, body.is-home .pb-nav .nav-link { transition: none; }
+}
+
+
+/* --- footer -------------------------------------------------------
+   Columns of real destinations only. Every link below resolves to a
+   route that already exists; nothing here advertises a page that has
+   still to be built. */
+.pbh-foot { border-top: 1px solid var(--hairline); background: var(--surface); }
+.pbh-foot-in {
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--s9);
+  padding-top: var(--s9); padding-bottom: var(--s8);
+}
+.pbh-foot-brand { font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: var(--s3); }
+.pbh-foot-note { font-size: 13px; line-height: 1.55; color: var(--ink-dim); max-width: 30ch; }
+.pbh-foot-h {
+  font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--ink-dim); margin-bottom: var(--s3);
+}
+.pbh-foot ul { list-style: none; margin: 0; padding: 0; }
+.pbh-foot li { margin-bottom: var(--s2); }
+.pbh-foot a {
+  font-size: 14px; color: var(--ink-dim); text-decoration: none;
+  transition: color .15s ease;
+}
+.pbh-foot a:hover { color: var(--accent-bright); }
+.pbh-foot-base {
+  display: flex; flex-wrap: wrap; gap: var(--s3) var(--s5);
+  align-items: center; justify-content: space-between;
+  padding-top: var(--s5); padding-bottom: var(--s5);
+  border-top: 1px solid var(--hairline);
+  font-size: 13px; color: var(--ink-dim);
+}
+.pbh-foot-legal { display: flex; gap: var(--s5); }
+
+@media (max-width: 1024px) {
+  .pbh-foot-in { grid-template-columns: 1fr 1fr; gap: var(--s8); }
+}
+@media (max-width: 560px) {
+  .pbh-foot-in { grid-template-columns: 1fr; gap: var(--s6); padding-top: var(--s8); }
+  .pbh-foot-base { flex-direction: column; align-items: flex-start; }
 }
