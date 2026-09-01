@@ -648,18 +648,45 @@ async function pbnSaveGroup() {
   }
   if (patch.username) patch.username = patch.username.toLowerCase().replace(/[^a-z0-9-]/g, '-');
 
-  msg.textContent = 'Saving…';
+  msg.textContent = 'Saving...';
+  msg.classList.remove('is-error', 'is-ok');
   try {
-    const { error } = await c.from('profiles').upsert(patch, { onConflict: 'id' });
+    const { data, error } = await c.from('profiles')
+      .upsert(patch, { onConflict: 'id' }).select().single();
     if (error) throw error;
+
+    /* Read the row back rather than trusting the write. A policy that
+       permits the update but filters the row on read would otherwise
+       look like a successful save that quietly does nothing. */
+    const { data: check, error: readErr } = await c.from('profiles')
+      .select('*').eq('id', me).maybeSingle();
+    if (readErr) throw readErr;
+    if (!check) throw new Error('Saved, but the row cannot be read back. Check the SELECT policy on profiles.');
+
+    const keys = Object.keys(patch).filter(function (k) { return k !== 'id' && k !== 'updated_at'; });
+    const mismatched = keys.filter(function (k) {
+      const a = patch[k], b = check[k];
+      if (Array.isArray(a)) return JSON.stringify(a) !== JSON.stringify(b || []);
+      if (a && typeof a === 'object') return JSON.stringify(a) !== JSON.stringify(b || {});
+      return (a == null ? null : a) !== (b == null ? null : b);
+    });
+    if (mismatched.length) {
+      throw new Error('These fields did not persist: ' + mismatched.join(', ') +
+        '. The write was accepted but the values came back different.');
+    }
+
     if (typeof pbTrack === 'function') pbTrack('profile_updated');
-    await pbnLoadMe();
+    pbnMyProfile = check;
+    msg.classList.add('is-ok');
     msg.textContent = 'Saved.';
-    setTimeout(function () { msg.textContent = ''; }, 2500);
+    setTimeout(function () { msg.textContent = ''; msg.classList.remove('is-ok'); }, 3000);
   } catch (e) {
-    /* Surface the database's own words: a length or enum constraint
-       rejecting a value is information, not a generic failure. */
+    /* The database's own wording is more useful than ours: a check
+       constraint, a NOT NULL column or a policy each say what they
+       are. Also logged so the console has the full object. */
+    msg.classList.add('is-error');
     msg.textContent = (e && e.message) ? e.message : 'Could not save.';
+    if (window.console) console.error('[Power Network] profile save failed:', e, 'payload:', patch);
   }
 }
 
