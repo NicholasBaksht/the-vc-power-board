@@ -747,8 +747,14 @@ async function pbnSaveGroup() {
     const keys = Object.keys(patch).filter(function (k) { return k !== 'id' && k !== 'updated_at'; });
     const mismatched = keys.filter(function (k) {
       const a = patch[k], b = check[k];
+      /* Arrays are text[] in Postgres and keep their order, so a
+         positional compare is correct for them. */
       if (Array.isArray(a)) return JSON.stringify(a) !== JSON.stringify(b || []);
-      if (a && typeof a === 'object') return JSON.stringify(a) !== JSON.stringify(b || {});
+      /* Objects are jsonb, which does NOT preserve key order - it
+         stores keys sorted internally. Comparing raw JSON.stringify
+         therefore reported a false mismatch on links every time two
+         or more were set. Compare canonically instead. */
+      if (a && typeof a === 'object') return pbnCanonical(a) !== pbnCanonical(b || {});
       return (a == null ? null : a) !== (b == null ? null : b);
     });
     if (mismatched.length) {
@@ -872,4 +878,16 @@ function pbnSaveError(e) {
     return 'You are not permitted to edit this profile. Try signing in again.';
   }
   return (e && e.message) ? e.message : 'Could not save.';
+}
+
+
+/* Order-insensitive JSON for comparing a jsonb column with what we
+   sent. Postgres returns object keys in its own order, so the only
+   fair comparison sorts both sides first. */
+function pbnCanonical(v) {
+  if (v === null || typeof v !== 'object') return JSON.stringify(v == null ? null : v);
+  if (Array.isArray(v)) return '[' + v.map(pbnCanonical).join(',') + ']';
+  return '{' + Object.keys(v).sort().map(function (k) {
+    return JSON.stringify(k) + ':' + pbnCanonical(v[k]);
+  }).join(',') + '}';
 }
