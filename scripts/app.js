@@ -1172,8 +1172,34 @@ function pbhCleanFooter() {
   foot.dataset.pbhCleaned = '1';
 }
 
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', pbhCleanFooter);
-} else {
-  pbhCleanFooter();
+/* Removes the Power Personalities distribution block outright.
+
+   It was previously only hidden, from inside router(). That is a
+   weaker guarantee than it looks: the hide depends on router()
+   reaching that line on every path, and ensurePersonalityHosts()
+   still appends a live host into the section afterwards. Deleting
+   the node ends the question - renderPersonalityDistribution()
+   already returns early when its host is missing, so nothing
+   downstream needs a matching change.
+
+   The personality DATA is untouched. It still drives the Power
+   Personality filter chips on Firms and the personality card on each
+   firm's own profile; only the aggregate chart is gone. */
+function pbhRemoveLegacyBlocks() {
+  const dist = document.getElementById('personalityDistSection');
+  if (dist) dist.remove();
 }
+
+function pbhCleanChrome() {
+  pbhCleanFooter();
+  pbhRemoveLegacyBlocks();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', pbhCleanChrome);
+} else {
+  pbhCleanChrome();
+}
+/* Re-run per route: both blocks live outside the view containers, so
+   a later render could otherwise reintroduce them. */
+window.addEventListener('hashchange', pbhCleanChrome);
