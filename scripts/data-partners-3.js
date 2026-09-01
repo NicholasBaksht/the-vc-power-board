@@ -7822,9 +7822,9 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Sanjeev Krishnan is Managing Partner and co-leader of S2G Investments, where he develops investment strategy and oversees investments and portfolio management. He was a founding member and Chief Investment Officer of S2G Ventures at its establishment in 2014, and under his leadership the firm expanded into systems investing strategies across energy, food and agriculture, and oceans. He has spent more than 20 years investing at the intersection of innovation and multi-asset strategies, with earlier roles at CLSA Capital Partners, the Global Environment Fund, the International Finance Corporation of the World Bank Group, and JPMorgan. In 2023 he testified before the US Senate Committee on Agriculture. He holds a BA from the London School of Economics.",
     sources: [
-      { label: "S2G Investments — Team: Sanjeev Krishnan", url: "https://www.s2ginvestments.com/team/sanjeev-krishnan" },
-      { label: "US Senate Agriculture Committee — Krishnan testimony (Nov 2023)", url: "https://www.agriculture.senate.gov/download/testimony_krishnan_11142023pdf" },
-      { label: "S2G — RIA and standalone business announcement (May 2024)", url: "https://www.s2ginvestments.com/news/s2g-and-builders-vision-announce-s2gs-launch-as-a-registered-investment-adviser-and-standalone-business" }
+      { label: "S2G Investments - Team: Sanjeev Krishnan", url: "https://www.s2ginvestments.com/team/sanjeev-krishnan" },
+      { label: "US Senate Agriculture Committee - Krishnan testimony (Nov 2023)", url: "https://www.agriculture.senate.gov/download/testimony_krishnan_11142023pdf" },
+      { label: "S2G - RIA and standalone business announcement (May 2024)", url: "https://www.s2ginvestments.com/news/s2g-and-builders-vision-announce-s2gs-launch-as-a-registered-investment-adviser-and-standalone-business" }
     ]
   },
 "chuck-templeton": {
@@ -7890,10 +7890,10 @@ Object.assign(partnerProfiles, {
   ],
     biography: "Chuck Templeton is Managing Partner and co-leader of S2G Investments, focused on value creation and helping portfolio companies scale. He founded OpenTable in 1998 and led it as CEO; the company went public on NASDAQ in 2009. He was founding Chairman of Grubhub, which went public in 2014, and was a lead investor and operating Chairman at Braintree Payment Systems, the parent of Venmo. From 2012 to 2014 he was Managing Director of Impact Engine, where he still serves on fund boards. He co-founded S2G in 2014. He began his career in the US Army and holds a degree in Environmental Economics from California Polytechnic State University and an MBA from the Kellogg School of Management.",
     sources: [
-      { label: "S2G Investments — Team: Chuck Templeton", url: "https://www.s2ginvestments.com/team/chuck-templeton" },
-      { label: "Impact Engine — Chuck Templeton", url: "https://www.theimpactengine.com/chuck-templeton" },
-      { label: "Wikipedia — Chuck Templeton (S2G co-founding, OpenTable, Grubhub dates)", url: "https://en.wikipedia.org/wiki/Chuck_Templeton" },
-      { label: "S2G — RIA and standalone business announcement (May 2024)", url: "https://www.s2ginvestments.com/news/s2g-and-builders-vision-announce-s2gs-launch-as-a-registered-investment-adviser-and-standalone-business" }
+      { label: "S2G Investments - Team: Chuck Templeton", url: "https://www.s2ginvestments.com/team/chuck-templeton" },
+      { label: "Impact Engine - Chuck Templeton", url: "https://www.theimpactengine.com/chuck-templeton" },
+      { label: "Wikipedia - Chuck Templeton (S2G co-founding, OpenTable, Grubhub dates)", url: "https://en.wikipedia.org/wiki/Chuck_Templeton" },
+      { label: "S2G - RIA and standalone business announcement (May 2024)", url: "https://www.s2ginvestments.com/news/s2g-and-builders-vision-announce-s2gs-launch-as-a-registered-investment-adviser-and-standalone-business" }
     ]
   }
 });
