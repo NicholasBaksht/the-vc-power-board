@@ -1076,10 +1076,10 @@ function pbhHero() {
 
   let h = '<section class="pbh-hero pbh-shell">' +
     '<div class="pbh-hero-l">' +
-      '<div class="pbh-eyebrow">Data-backed &middot; Source-verified &middot; Founder-focused</div>' +
+      '<div class="pbh-eyebrow">Investor intelligence &middot; Partner research &middot; Startup network</div>' +
       '<h1 class="pbh-h1">Find the right VC firm.<br>Find the right partner.<br>Build the right network.</h1>' +
-      '<p class="pbh-sub">Power Board analyzes firms and individual investors using observed ' +
-      'investment behavior, stage, sector, capabilities, and conflicts - so you can raise smarter.</p>' +
+      '<p class="pbh-sub">Find firms, partners, and people worth knowing - backed by ' +
+      'source-verified research, observed investment behavior, and startup-specific context.</p>' +
       '<div class="pbh-ctas">' +
         '<a href="#find-investors" class="pbh-btn pbh-btn-p" data-pbh-cta="power-match">Find My Investors</a>' +
         '<a href="#people" class="pbh-btn pbh-btn-s" data-pbh-cta="partner-intel">Explore Partner Intelligence</a>' +
@@ -1211,9 +1211,9 @@ function pbhHow() {
     ['person', 'Find the person',
      'Best-Fit Partner identifies the individuals inside those firms most relevant to your company.', '#people'],
     ['bars', 'Understand why',
-     'Observed Investment Behavior and source-backed research explain the match.', '#methodologyAnchor'],
-    ['shield', 'Avoid mistakes',
-     'Conflict Check surfaces relevant portfolio and relationship risks.', '#conflict-check']
+     'Observed behavior, sources and Conflict Check explain the match and the risk.', '#conflict-check'],
+    ['person', 'Build the relationship',
+     'Network lets you discover, follow, shortlist and message the people behind the round.', '#network']
   ];
   return '<section class="pbh-sec pbh-how pbh-shell">' +
     '<div class="pbh-sec-h"><h2 class="pbh-h2">How Power Board works</h2></div>' +
@@ -1227,12 +1227,26 @@ function pbhHow() {
     }).join('') + '</div></section>';
 }
 
+/* Part 14. A statement of method, not a trust badge: it names the
+   three rules the product is actually built on, each of which is
+   visible elsewhere on this page. */
+function pbhStandard() {
+  return '<section class="pbh-sec pbh-shell pbh-std">' +
+    '<h2 class="pbh-h2">Research should show its work.</h2>' +
+    '<p class="pbh-sec-p">Power Board separates stated claims from observed behavior, ' +
+    'discloses sample sizes, and leaves unsupported fields blank rather than guessing.</p>' +
+    '<a class="pbh-std-link" href="#methodologyAnchor">Read methodology &rarr;</a>' +
+    '</section>';
+}
+
 function pbhFinalCta() {
   return '<section class="pbh-final pbh-shell">' +
-    '<h2 class="pbh-h2">Find the investors actually worth your time.</h2>' +
-    '<p class="pbh-sec-p">Start your search and connect with the right investors inside the right firms.</p>' +
+    '<h2 class="pbh-h2">Start with your company.</h2>' +
+    '<p class="pbh-sec-p">Use Power Match to identify the firms, partners and people ' +
+    'relevant to what you are building.</p>' +
     '<div class="pbh-ctas">' +
       '<a href="#find-investors" class="pbh-btn pbh-btn-p" data-pbh-cta="power-match-final">Find My Investors</a>' +
+      '<a href="#network" class="pbh-textlink" data-pbh-cta="network-final">Explore Network &rarr;</a>' +
     '</div></section>';
 }
 
@@ -1248,6 +1262,7 @@ function renderHomepage() {
       pbhHero() +
       pbhBehavior() +
       pbhHow() +
+      pbhStandard() +
       pbhFinalCta() +
     '</div>';
 
