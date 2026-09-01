@@ -141,13 +141,16 @@ body.is-home .pb-cta {
 }
 .pbh-signal-n {
   flex: 0 0 auto;
-  font-family: var(--mono); font-size: 11.5px;
-  letter-spacing: 0.06em; text-transform: uppercase;
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.04em; text-transform: uppercase;
+  /* Kept at --ink-dim rather than going lighter: a paler grey would
+     drop this under 4.5:1. The hierarchy comes from the content
+     beside it gaining weight instead. */
   color: var(--ink-dim);
 }
 .pbh-signal-t {
   flex: 1 1 auto; min-width: 0;
-  color: var(--ink);
+  color: var(--ink); font-weight: 500;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .pbh-signal-a { flex: 0 0 auto; color: var(--accent); font-weight: 500; }
@@ -158,7 +161,9 @@ body.is-home .pb-cta {
    The hierarchy has to survive with every border deleted, so the
    steps between levels are large and the weights are decisive. */
 .pbh-h1 {
-  font-size: clamp(2.4rem, 3.5vw, 3.125rem);  /* 38 -> 50px */
+  font-size: clamp(2.4rem, 3.3vw, 2.85rem);   /* 38 -> 45.6px, sized so
+                                                each sentence holds one
+                                                line in a 44% column */
   line-height: 1.06;
   letter-spacing: -0.032em;
   font-weight: 700;
@@ -228,10 +233,14 @@ body.is-home .pb-cta {
    reads fine slightly narrower. */
 .pbh-hero {
   display: grid;
-  grid-template-columns: 48fr 52fr;
+  grid-template-columns: 44fr 56fr;
   gap: var(--s8);
-  align-items: center;
-  padding-top: var(--s9);
+  /* Centring made the shorter left column float: it pushed the eyebrow
+     36px below the top of the Power Match panel and inflated the gap
+     under the signal bar to 100px. Starting both columns on the same
+     line fixes the offset and the gap together. */
+  align-items: start;
+  padding-top: var(--s8);
   padding-bottom: var(--s9);
 }
 .pbh-hero-l, .pbh-hero-r { min-width: 0; }
@@ -342,7 +351,7 @@ body.is-home .pb-cta {
 /* Label above value, consistent gap, numbers tabular - so the three
    columns line up on both axes. */
 .pbh-partner-facts {
-  display: grid; grid-template-columns: 1.45fr 1fr 0.85fr;
+  display: grid; grid-template-columns: 40fr 32fr 28fr;
   gap: var(--s4); margin-bottom: var(--s4);
 }
 .pbh-partner-facts span {
@@ -497,10 +506,27 @@ body.is-home .pb-cta {
   .pbh-bar { grid-template-columns: minmax(0, 1fr) 1fr 40px; gap: var(--s3); }
   .pbh-sec, .pbh-final { padding-top: var(--s8); padding-bottom: var(--s8); }
   .pbh-sec-h { margin-bottom: var(--s6); }
+  /* One cramped row truncated the signal itself. Stacked: marker and
+     text share the first line, the action sits under them, and the
+     dismiss control is taken out of flow so it cannot claim a row. */
+  .pbh-signal-row {
+    position: relative; flex-wrap: wrap; min-height: 0;
+    padding: var(--s3) var(--s6) var(--s3) 0;
+  }
+  /* align-items:center from the base rule centred the 6px marker
+     against a two-line text block, dropping it 12px low. Start-align
+     it and nudge to the optical centre of the FIRST line. */
+  .pbh-signal { flex: 1 1 100%; flex-wrap: wrap; gap: var(--s2); align-items: flex-start; }
   .pbh-signal-n { display: none; }
+  .pbh-signal-dot { margin-top: 5px; }        /* optical: first text line */
+  .pbh-signal-t { flex: 1 1 0; min-width: 0; white-space: normal; overflow: visible; }
+  .pbh-signal-a { flex: 1 1 100%; }
+  .pbh-signal-x { position: absolute; top: var(--s2); right: 0; }
+  /* Full-width uppercase mono broke "FOUNDER-FOCUSED" across lines. */
+  .pbh-eyebrow { font-size: 10.5px; letter-spacing: 0.05em; }
   /* Labels get a touch more size once they are no longer beside a value. */
   .pbh-score-l, .pbh-partner-h, .pbh-partner-facts span, .pbh-kv dt,
-  .pbh-panel-t, .pbh-col-h, .pbh-eyebrow { font-size: 12px; }
+  .pbh-panel-t, .pbh-col-h { font-size: 12px; }
   body.is-home .pb-signin.is-account { max-width: 120px; }
 }
 
