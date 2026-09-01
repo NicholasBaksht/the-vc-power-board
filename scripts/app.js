@@ -973,7 +973,7 @@ function pbhHero() {
       '<div class="pbh-eyebrow">Data-backed &middot; Source-verified &middot; Founder-focused</div>' +
       '<h1 class="pbh-h1">Find the right VC firm.<br>Find the right partner.</h1>' +
       '<p class="pbh-sub">Power Board analyzes firms and individual investors using observed ' +
-      'investment behavior, stage, sector, capabilities, and conflicts&mdash;so you can raise smarter.</p>' +
+      'investment behavior, stage, sector, capabilities, and conflicts - so you can raise smarter.</p>' +
       '<div class="pbh-ctas">' +
         '<a href="#find-investors" class="pbh-btn pbh-btn-p" data-pbh-cta="power-match">Find My Investors</a>' +
         '<a href="#people" class="pbh-btn pbh-btn-s" data-pbh-cta="partner-intel">Explore Partner Intelligence</a>' +
@@ -1153,4 +1153,27 @@ function renderHomepage() {
       });
     });
   }
+}
+
+
+/* Strips two leftovers from the footer that index.html still carries:
+   the "How to use this" operating note and the "Built by a future VC"
+   signature line. Done here rather than in the markup so no hand edit
+   of index.html is required.
+
+   The Terms of Service and Privacy Policy links are deliberately kept.
+   Power Board publishes a dated privacy policy that the analytics code
+   is written to keep true, so removing the site-wide link to it would
+   be a compliance regression, not a tidy-up. */
+function pbhCleanFooter() {
+  const foot = document.getElementById('siteFooter');
+  if (!foot || foot.dataset.pbhCleaned) return;
+  foot.querySelectorAll('p, .sig').forEach(function (el) { el.remove(); });
+  foot.dataset.pbhCleaned = '1';
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', pbhCleanFooter);
+} else {
+  pbhCleanFooter();
 }
