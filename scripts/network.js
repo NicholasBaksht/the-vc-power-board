@@ -646,7 +646,32 @@ async function pbnSaveGroup() {
     linkInputs.forEach(function (el) { if (el.value.trim()) links[el.id.slice(4)] = el.value.trim(); });
     patch.links = links;
   }
-  if (patch.username) patch.username = patch.username.toLowerCase().replace(/[^a-z0-9-]/g, '-');
+  /* username is NOT NULL, UNIQUE and carries a format check. Sending
+     null for it rejects the entire write, which is what made saving
+     Basics fail while every other group saved fine. Three rules now:
+     never send null, normalise to a form the check will accept, and
+     drop the key entirely when the user has not supplied one. */
+  if ('username' in patch) {
+    const clean = String(patch.username || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9-]+/g, '-')   // collapse runs, not one dash per char
+      .replace(/^-+|-+$/g, '');        // no leading or trailing dash
+    if (!clean) {
+      delete patch.username;           // leave the existing handle alone
+    } else if (clean.length < 3) {
+      msg.classList.add('is-error');
+      msg.textContent = 'Your handle needs at least 3 letters or numbers.';
+      return;
+    } else {
+      patch.username = clean;
+    }
+  }
+
+  /* Never send an explicit null for a column the database requires.
+     A group that does not contain a field should leave it untouched
+     rather than clearing it. */
+  const NEVER_NULL = ['username'];
+  NEVER_NULL.forEach(function (k) { if (patch[k] === null) delete patch[k]; });
 
   msg.textContent = 'Saving...';
   msg.classList.remove('is-error', 'is-ok');
@@ -685,7 +710,7 @@ async function pbnSaveGroup() {
        constraint, a NOT NULL column or a policy each say what they
        are. Also logged so the console has the full object. */
     msg.classList.add('is-error');
-    msg.textContent = (e && e.message) ? e.message : 'Could not save.';
+    msg.textContent = pbnSaveError(e);
     if (window.console) console.error('[Power Network] profile save failed:', e, 'payload:', patch);
   }
 }
@@ -763,4 +788,29 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', function () { setTimeout(pbnMaybePromptProfile, 900); });
 } else {
   setTimeout(pbnMaybePromptProfile, 900);
+}
+
+
+/* Postgres tells you exactly what went wrong; the raw text just does
+   not read like something a person should act on. */
+function pbnSaveError(e) {
+  const code = e && e.code;
+  const detail = (e && (e.message || '')) + ' ' + (e && (e.details || ''));
+  if (code === '23505' || /duplicate key/i.test(detail)) {
+    return 'That handle is already taken. Try another.';
+  }
+  if (code === '23502' || /null value in column/i.test(detail)) {
+    const m = detail.match(/column "([^"]+)"/);
+    return 'Required field is empty' + (m ? ': ' + m[1] : '') + '.';
+  }
+  if (code === '23514' || /violates check constraint/i.test(detail)) {
+    if (/username/i.test(detail)) return 'That handle has characters the site will not accept. Use letters, numbers and dashes.';
+    if (/len_ck/i.test(detail))   return 'One of these fields is too long.';
+    if (/dm_policy/i.test(detail)) return 'That messaging setting is not a valid option.';
+    return 'One of these values was rejected by the database.';
+  }
+  if (code === '42501' || /row-level security/i.test(detail)) {
+    return 'You are not permitted to edit this profile. Try signing in again.';
+  }
+  return (e && e.message) ? e.message : 'Could not save.';
 }
