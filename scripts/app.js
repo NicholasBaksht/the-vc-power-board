@@ -811,7 +811,7 @@ const PBH_NAV = [
   ['#capital-sources', 'Angels'],
   /* The route stays #network: #people already resolves to Partner
      Intelligence, and re-pointing it would break every existing link. */
-  ['#network', 'Power Network'],
+  ['#network', 'Network'],
   ['#find-investors', 'Power Match'],
   ['#conflict-check', 'Conflict Check'],
   ['#pricing', 'Pricing'],
@@ -1251,7 +1251,7 @@ function pbhBuildFooter() {
           ['#firms', 'Firms'],
           ['#people', 'Partner Intelligence'],
           ['#capital-sources', 'Angels'],
-          ['#network', 'Power Network'],
+          ['#network', 'Network'],
           ['#find-investors', 'Power Match'],
           ['#conflict-check', 'Conflict Check']
         ]) +
@@ -1305,10 +1305,10 @@ function pbhCleanFooter() {
    The personality DATA is untouched. It still drives the Power
    Personality filter chips on Firms and the personality card on each
    firm's own profile; only the aggregate chart is gone. */
-/* Power Network needs a view container. index.html is not hand-edited
+/* Network needs a view container. index.html is not hand-edited
    in this project, so it is created next to the other view divs on
    first load rather than added to the markup. */
-/* network.js carries Power Network. index.html is not hand-edited in
+/* network.js carries the Network section. index.html is not hand-edited in
    this project, so the script is attached here on first load. */
 function pbhEnsureNetworkScript() {
   if (document.getElementById('pbnJs')) return;
