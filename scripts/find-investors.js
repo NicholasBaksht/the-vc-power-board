@@ -360,6 +360,11 @@ function renderFinderResults() {
   const matches = computeFinderMatches();
   const container = document.getElementById('finderResultsList');
   if (!container) return;
+  /* People worth knowing renders under the firms. It is async and
+     self-hiding: if nothing clears the relevance floor it writes
+     nothing at all, so a thin Network never leaves an empty heading
+     on the results page. */
+  if (typeof pbrRenderPeopleSection === 'function') pbrRenderPeopleSection();
   if (typeof bfpResetShown === 'function') bfpResetShown();
 
   container.innerHTML = matches.map(({ firm, score, reasons }, i) => {
@@ -566,6 +571,7 @@ function renderFindInvestors() {
    <div class="finder-results">
       <div class="finder-results-label">Your Power Matches</div>
       <div id="finderResultsList"></div>
+      <div id="pbrPeopleSection"></div>
     </div>
 
     <div class="fr-cta-block">
