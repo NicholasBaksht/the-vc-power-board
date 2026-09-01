@@ -593,7 +593,7 @@ function rtQRenderPeople() {
       '<th>Comparison-ready (L3+)</th><th>High-priority queue</th></tr>';
     document.getElementById('rtqBody').innerHTML = list.slice(0, 250).map(function (f) {
       return '<tr><td>' + rtEsc(f.firm) + '</td><td>' + f.people + '</td><td>' + f.withNi + '</td>' +
-        '<td>' + f.bars + '</td><td>' + f.cmp + '</td><td>' + (f.high || '—') + '</td></tr>';
+        '<td>' + f.bars + '</td><td>' + f.cmp + '</td><td>' + (f.high || ' - ') + '</td></tr>';
     }).join('') || '<tr><td colspan="6" class="rtq-reasons">No firms match.</td></tr>';
   }
 
@@ -639,14 +639,14 @@ function rtQRenderPeople() {
         e.missing.joinYear ? 'join year' : null
       ].filter(Boolean).join(' · ') : '';
       return '<tr><td><a href="#partner/' + rtEsc(r.slug) + '">' + rtEsc(r.p.name) + '</a></td>' +
-        '<td>' + rtEsc(r.p.firm || '—') + '</td>' +
+        '<td>' + rtEsc(r.p.firm || ' - ') + '</td>' +
         '<td>' + (e ? '<span class="rtq-cat ' + PRIO_CLASS[e.priority] + '">' + PRIO_LABEL[e.priority] + '</span>'
-                    : '<span class="rtq-cat adequate">—</span>') + '</td>' +
+                    : '<span class="rtq-cat adequate"> - </span>') + '</td>' +
         '<td>L' + (levelOf[r.slug] || 0) + '</td>' +
-        '<td>' + (r.h.ni || '—') + '</td>' +
+        '<td>' + (r.h.ni || ' - ') + '</td>' +
         '<td class="rtq-reasons">' + (r.p.researchState === 'exhausted' ? 'exhausted · ' : '') +
-          (e ? rtEsc(missing || 'complete') : rtEsc(r.h.reasons.join('; ') || '—')) + '</td>' +
-        '<td class="rtq-reasons">' + (e && e.unlocks.length ? rtEsc(e.unlocks.join(' · ')) : '—') + '</td></tr>';
+          (e ? rtEsc(missing || 'complete') : rtEsc(r.h.reasons.join('; ') || ' - ')) + '</td>' +
+        '<td class="rtq-reasons">' + (e && e.unlocks.length ? rtEsc(e.unlocks.join(' · ')) : ' - ') + '</td></tr>';
     }).join('') +
     (list.length > LIMIT ? '<tr><td colspan="7" class="rtq-reasons">Showing the first ' + LIMIT + ' of ' +
       list.length + ' under this sort - narrow with filters or search.</td></tr>' : '') ||
@@ -765,12 +765,12 @@ function rtQRender() {
     });
     document.getElementById('rtqBody').innerHTML = list.map(function (r) {
       const c = r.h.crawl;
-      const crawlTxt = !c ? '—'
+      const crawlTxt = !c ? ' - '
         : c.lastOk ? rtEsc(c.lastOk.date) + ' (' + r.h.crawlAgeDays + 'd)'
         : 'failed ' + rtEsc(c.lastTry.date);
       return '<tr><td><a href="#' + rtEsc(r.firm.slug) + '">' + rtEsc(r.firm.name) + '</a></td>' +
         '<td><span class="rtq-cat ' + r.h.category + '">' + RT_CAT_LABEL[r.h.category] + '</span></td>' +
-        '<td>' + (r.h.evidenceFields ? r.h.evidenceFields + ' fields' : '—') + '</td>' +
+        '<td>' + (r.h.evidenceFields ? r.h.evidenceFields + ' fields' : ' - ') + '</td>' +
         '<td>' + crawlTxt + '</td>' +
         '<td class="rtq-reasons">' + (r.h.reasons.length ? rtEsc(r.h.reasons.join('; ')) : 'complete and supported') + '</td></tr>';
     }).join('') || '<tr><td colspan="5" class="rtq-reasons">No firms match the current filters.</td></tr>';
