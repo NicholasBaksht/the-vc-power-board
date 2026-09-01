@@ -259,10 +259,17 @@ function saveUsername(name) {
   }
 
   const clean = (name || '').trim();
-  if (!/^[A-Za-z0-9_]{3,20}$/.test(clean)) {
+  /* Kept in step with the profiles_username_format constraint. The
+     database is the authority; this check exists so the person gets
+     told before a round trip, not so the rule lives in two places
+     with two different answers. */
+  if (!/^[A-Za-z0-9][A-Za-z0-9._ -]{1,38}[A-Za-z0-9]$/.test(clean) ||
+      /  /.test(clean) || /[._-]{2,}/.test(clean)) {
     return Promise.resolve({
       ok: false,
-      error: 'Usernames are 3-20 characters: letters, numbers and underscores only.'
+      error: 'Usernames are 3-40 characters and may contain spaces, dots, dashes ' +
+             'and underscores. They must start and end with a letter or number, ' +
+             'and cannot contain two spaces in a row.'
     });
   }
 
