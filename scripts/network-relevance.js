@@ -185,6 +185,12 @@ async function pbrRelevantPeople() {
     .slice(0, PBR_MAX_PEOPLE);
 }
 
+/* Handles may contain spaces and dots, so anything placed in an
+   href is percent-encoded as well as HTML-escaped. */
+function pbrUrl(v) {
+  return pbrEsc(encodeURIComponent(String(v == null ? '' : v)));
+}
+
 function pbrEsc(v) {
   return String(v == null ? '' : v)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -217,7 +223,7 @@ async function pbrRenderPeopleSection() {
         const role = [p.current_title, p.current_company].filter(Boolean).join(' · ');
         return '<div class="pbr-row">' +
           '<div class="pbr-main">' +
-            '<a class="pbr-name" href="#network/' + pbrEsc(p.username || p.id) + '" ' +
+            '<a class="pbr-name" href="#network/' + pbrUrl(p.username || p.id) + '" ' +
               'data-pbr-open="' + pbrEsc(p.username || p.id) + '">' +
               pbrEsc(p.full_name || p.username) + '</a>' +
             (role ? '<div class="pbr-role">' + pbrEsc(role) + '</div>' : '') +
@@ -227,7 +233,7 @@ async function pbrRenderPeopleSection() {
             }).join('') + '</ul>' +
           '</div>' +
           '<div class="pbr-actions">' +
-            '<a class="pbr-btn" href="#network/' + pbrEsc(p.username || p.id) + '">View profile</a>' +
+            '<a class="pbr-btn" href="#network/' + pbrUrl(p.username || p.id) + '">View profile</a>' +
             '<button type="button" class="pbr-btn pbr-save" data-pbr-save="' + pbrEsc(p.id) + '">Save</button>' +
           '</div>' +
         '</div>';
