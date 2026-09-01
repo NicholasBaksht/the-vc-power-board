@@ -809,12 +809,9 @@ const PBH_NAV = [
   ['#firms', 'Firms'],
   ['#people', 'Partner Intelligence'],
   ['#capital-sources', 'Angels'],
-  /* Power Network. The label is "People"; the route is #network
-     because #people already resolves to Partner Intelligence and
-     re-pointing it would break every existing link. This matches the
-     precedent already in this list, where "Angels" resolves to
-     #capital-sources. */
-  ['#network', 'People'],
+  /* The route stays #network: #people already resolves to Partner
+     Intelligence, and re-pointing it would break every existing link. */
+  ['#network', 'Power Network'],
   ['#find-investors', 'Power Match'],
   ['#conflict-check', 'Conflict Check'],
   ['#pricing', 'Pricing'],
@@ -1254,6 +1251,7 @@ function pbhBuildFooter() {
           ['#firms', 'Firms'],
           ['#people', 'Partner Intelligence'],
           ['#capital-sources', 'Angels'],
+          ['#network', 'Power Network'],
           ['#find-investors', 'Power Match'],
           ['#conflict-check', 'Conflict Check']
         ]) +
