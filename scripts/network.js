@@ -453,8 +453,19 @@ async function renderNetworkProfileEdit() {
       pbnField('Headline', '<input id="f_headline" maxlength="200" value="' + val('headline') + '">',
         'One line on what you are building or working on.') +
       pbnField('Location', '<input id="f_location" maxlength="120" value="' + val('location') + '">') +
-      pbnField('Photo URL', '<input id="f_photo_url" value="' + val('photo_url') + '">',
-        'Paste an image link. Direct upload arrives with the storage step.');
+      pbnField('Photo',
+        '<span class="pbn-photo-edit">' +
+          '<span id="pbnPhotoPrev">' + pbnPhoto(p, 'lg') + '</span>' +
+          '<span class="pbn-photo-ctl">' +
+            '<input type="file" id="pbnPhotoFile" accept="image/*" class="pbn-file">' +
+            '<label for="pbnPhotoFile" class="pbn-btn pbn-btn-s">Choose or take a photo</label>' +
+            (p.photo_url ? '<button type="button" id="pbnPhotoClear" class="pbn-btn pbn-btn-s">Remove</button>' : '') +
+            '<span id="pbnPhotoMsg" class="pbn-f-h" role="status" aria-live="polite"></span>' +
+          '</span>' +
+          '<input type="hidden" id="f_photo_url" value="' + val('photo_url') + '">' +
+        '</span>',
+        'On a phone this offers the camera as well as your library. ' +
+        'JPG, PNG or WebP up to 5MB.');
   } else if (pbnEditGroup === 'Current role') {
     body =
       pbnField('Company', '<input id="f_current_company" maxlength="120" value="' + val('current_company') + '">') +
@@ -524,6 +535,53 @@ async function renderNetworkProfileEdit() {
   document.getElementById('pbnForm').addEventListener('submit', function (e) {
     e.preventDefault(); pbnSaveGroup();
   });
+  pbnWirePhoto();
+}
+
+/* Uploads straight to the avatars bucket. The storage policy only
+   accepts a write inside a folder named after the user's own uid, so
+   the path is built from the session rather than from anything the
+   form supplies. */
+function pbnWirePhoto() {
+  const file = document.getElementById('pbnPhotoFile');
+  if (!file) return;
+  const msg  = document.getElementById('pbnPhotoMsg');
+  const prev = document.getElementById('pbnPhotoPrev');
+  const hid  = document.getElementById('f_photo_url');
+  const clear = document.getElementById('pbnPhotoClear');
+
+  if (clear) clear.addEventListener('click', function () {
+    hid.value = ''; prev.innerHTML = pbnPhoto({ full_name: pbnMyProfile && pbnMyProfile.full_name }, 'lg');
+    msg.textContent = 'Removed. Save basics to confirm.';
+  });
+
+  file.addEventListener('change', async function () {
+    const f = file.files && file.files[0];
+    if (!f) return;
+    if (!/^image\/(jpeg|png|webp|heic|heif)$/i.test(f.type)) {
+      msg.textContent = 'That file is not a JPG, PNG or WebP image.'; return;
+    }
+    if (f.size > 5 * 1024 * 1024) {
+      msg.textContent = 'That image is larger than 5MB.'; return;
+    }
+    const c = pbnClient(), me = pbnUid();
+    if (!c || !me) { location.hash = '#signin'; return; }
+
+    msg.textContent = 'Uploading...';
+    try {
+      const ext = (f.name.split('.').pop() || 'jpg').toLowerCase().replace(/[^a-z0-9]/g, '');
+      const path = me + '/' + Date.now() + '.' + ext;
+      const { error: upErr } = await c.storage.from('avatars')
+        .upload(path, f, { cacheControl: '3600', upsert: true, contentType: f.type });
+      if (upErr) throw upErr;
+      const { data: pub } = c.storage.from('avatars').getPublicUrl(path);
+      hid.value = pub.publicUrl;
+      prev.innerHTML = '<img class="pbn-photo pbn-photo-lg" src="' + pbnEsc(pub.publicUrl) + '" alt="">';
+      msg.textContent = 'Uploaded. Save basics to keep it.';
+    } catch (e) {
+      msg.textContent = (e && e.message) ? e.message : 'Upload failed.';
+    }
+  });
 }
 
 function pbnField(label, control, hint) {
@@ -590,4 +648,79 @@ async function pbnSaveGroup() {
        rejecting a value is information, not a generic failure. */
     msg.textContent = (e && e.message) ? e.message : 'Could not save.';
   }
+}
+
+/* ---------- post sign-in prompt ----------
+   When someone signs in without a profile, offer to build one. It is
+   an offer, not a wall: it is dismissible, it remembers the dismissal,
+   and it never blocks the page underneath. It also stays out of the
+   way during the sign-in flow itself and on the profile editor. */
+
+function pbnProfileIsEmpty(p) {
+  if (!p) return true;
+  return !p.full_name && !p.headline && !p.current_company;
+}
+
+function pbnDismissed() {
+  try { return localStorage.getItem('pbnProfilePromptDismissed') === '1'; }
+  catch (e) { return false; }
+}
+
+async function pbnMaybePromptProfile() {
+  if (document.getElementById('pbnPrompt') || pbnDismissed()) return;
+  const hash = (location.hash || '').replace('#', '');
+  if (hash === 'signin' || hash.indexOf('network/edit') === 0) return;
+  if (typeof isSignedIn !== 'function' || !isSignedIn()) return;
+
+  await pbnLoadMe();
+  if (!pbnUid()) return;
+  /* Someone who already has a profile does not need to be asked. */
+  if (!pbnProfileIsEmpty(pbnMyProfile)) return;
+
+  pbnEnsureCss();
+  const wrap = document.createElement('div');
+  wrap.id = 'pbnPrompt';
+  wrap.className = 'pbn-prompt';
+  wrap.setAttribute('role', 'dialog');
+  wrap.setAttribute('aria-modal', 'false');
+  wrap.setAttribute('aria-labelledby', 'pbnPromptTitle');
+  wrap.innerHTML =
+    '<div class="pbn-prompt-in">' +
+      '<div class="pbn-prompt-body">' +
+        '<div class="pbn-kicker">Power Network</div>' +
+        '<h2 class="pbn-prompt-h" id="pbnPromptTitle">Set up your profile</h2>' +
+        '<p class="pbn-prompt-p">Say what you are working on, what you can help with and ' +
+        'what you are looking for, so the right people can find you. ' +
+        'It stays private until you publish it.</p>' +
+        '<div class="pbn-prompt-actions">' +
+          '<a class="pbn-btn pbn-btn-p" href="#network/edit" id="pbnPromptGo">Set up profile</a>' +
+          '<button type="button" class="pbn-btn pbn-btn-s" id="pbnPromptLater">Not now</button>' +
+        '</div>' +
+      '</div>' +
+      '<button type="button" class="pbn-prompt-x" id="pbnPromptX" aria-label="Dismiss">&times;</button>' +
+    '</div>';
+  document.body.appendChild(wrap);
+
+  const close = function (remember) {
+    if (remember) { try { localStorage.setItem('pbnProfilePromptDismissed', '1'); } catch (e) {} }
+    wrap.remove();
+  };
+  document.getElementById('pbnPromptLater').addEventListener('click', function () { close(true); });
+  document.getElementById('pbnPromptX').addEventListener('click', function () { close(true); });
+  document.getElementById('pbnPromptGo').addEventListener('click', function () { close(false); });
+  wrap.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(true); });
+  const go = document.getElementById('pbnPromptGo');
+  if (go) go.focus();
+}
+
+/* Fires on sign-in, and once on load for a session that already
+   exists. onAuthChange is the app's own listener, so no second auth
+   system is introduced here. */
+if (typeof onAuthChange === 'function') {
+  onAuthChange(function () { setTimeout(pbnMaybePromptProfile, 400); });
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', function () { setTimeout(pbnMaybePromptProfile, 900); });
+} else {
+  setTimeout(pbnMaybePromptProfile, 900);
 }
