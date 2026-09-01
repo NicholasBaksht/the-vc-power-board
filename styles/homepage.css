@@ -45,7 +45,7 @@ body.is-home #methodologyAnchor {
    The shared header assigns .pb-nav order:3, which floats it past
    the account cluster. Restate the reading order and match the
    page measure so the logo aligns with the headline below it. */
-body.is-home .pb-header {
+body .pb-header {
   max-width: 1360px;
   min-height: 70px;
   flex-wrap: nowrap;
@@ -53,8 +53,8 @@ body.is-home .pb-header {
   padding: 0 var(--s7);
   border-bottom: 1px solid var(--hairline);
 }
-body.is-home .pb-brand { order: 1; }
-body.is-home .pb-nav {
+body .pb-brand { order: 1; }
+body .pb-nav {
   order: 2;
   flex: 1 1 auto;
   justify-content: flex-start;
@@ -63,8 +63,8 @@ body.is-home .pb-nav {
   min-width: 0;
   flex-wrap: nowrap;
 }
-body.is-home .pb-header-actions { order: 3; flex: 0 0 auto; gap: var(--s3); }
-body.is-home .pb-nav .nav-link {
+body .pb-header-actions { order: 3; flex: 0 0 auto; gap: var(--s3); }
+body .pb-nav .nav-link {
   padding: var(--s2) var(--s3);
   font-size: 14.5px;
   font-weight: 500;
@@ -73,18 +73,18 @@ body.is-home .pb-nav .nav-link {
   border-radius: 6px;
   transition: color .15s ease, background-color .15s ease;
 }
-body.is-home .pb-nav .nav-link:hover { color: var(--ink); background: var(--surface); }
-body.is-home .pb-nav .nav-link.active { color: var(--accent-bright); background: var(--accent-pale); }
+body .pb-nav .nav-link:hover { color: var(--ink); background: var(--surface); }
+body .pb-nav .nav-link.active { color: var(--accent-bright); background: var(--accent-pale); }
 
 /* The signed-in account sits beside the primary action, so it is
    deliberately the quieter of the two: label weight, not button
    weight, and a marker instead of an avatar. */
-body.is-home .pb-signin {
+body .pb-signin {
   font-size: 14px; font-weight: 500; color: var(--ink-dim);
   white-space: nowrap; transition: color .15s ease;
 }
-body.is-home .pb-signin:hover { color: var(--ink); }
-body.is-home .pb-signin.is-account {
+body .pb-signin:hover { color: var(--ink); }
+body .pb-signin.is-account {
   display: inline-flex; align-items: center; gap: var(--s2);
   padding: var(--s2) var(--s3);
   border: 1px solid var(--hairline);
@@ -92,14 +92,14 @@ body.is-home .pb-signin.is-account {
   color: var(--ink);
   max-width: 168px; overflow: hidden; text-overflow: ellipsis;
 }
-body.is-home .pb-signin.is-account::before {
+body .pb-signin.is-account::before {
   content: ''; flex: 0 0 auto;
   width: 6px; height: 6px; border-radius: 50%;
   background: var(--accent);
 }
-body.is-home .pb-signin.is-account:hover { border-color: var(--hairline-strong); }
+body .pb-signin.is-account:hover { border-color: var(--hairline-strong); }
 
-body.is-home .pb-cta {
+body .pb-cta {
   padding: var(--s2) var(--s4);
   font-size: 14px; font-weight: 500;
   border-radius: 6px;
@@ -457,17 +457,17 @@ body.is-home .pb-cta {
    cluster until about 1340px. Rather than shrinking the labels, the
    nav drops to its own full-width row below that - a deliberate two
    row bar, not a squeezed one. */
-@media (max-width: 1340px) {
-  body.is-home .pb-header { flex-wrap: wrap; padding: var(--s3) var(--s5); }
-  body.is-home .pb-brand { order: 1; }
-  body.is-home .pb-header-actions { order: 2; margin-left: auto; }
-  body.is-home .pb-nav {
+@media (max-width: 1580px) {
+  body .pb-header { flex-wrap: wrap; padding: var(--s3) var(--s5); }
+  body .pb-brand { order: 1; }
+  body .pb-header-actions { order: 2; margin-left: auto; }
+  body .pb-nav {
     order: 3; flex: 1 0 100%; margin: var(--s3) 0 var(--s1);
     justify-content: flex-start; overflow-x: auto;
     -webkit-overflow-scrolling: touch; scrollbar-width: none;
   }
-  body.is-home .pb-nav::-webkit-scrollbar { display: none; }
-  body.is-home .pb-nav .nav-link { padding: var(--s2); }
+  body .pb-nav::-webkit-scrollbar { display: none; }
+  body .pb-nav .nav-link { padding: var(--s2); }
 }
 @media (max-width: 1024px) {
   .pbh-shell { padding-left: var(--s5); padding-right: var(--s5); }
@@ -531,12 +531,12 @@ body.is-home .pb-cta {
   /* Labels get a touch more size once they are no longer beside a value. */
   .pbh-score-l, .pbh-partner-h, .pbh-partner-facts span, .pbh-kv dt,
   .pbh-panel-t, .pbh-col-h { font-size: 12px; }
-  body.is-home .pb-signin.is-account { max-width: 120px; }
+  body .pb-signin.is-account { max-width: 120px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .pbh-btn, .pbh-step, .pbh-step-t, .pbh-signal,
-  .pbh-partner-link, body.is-home .pb-nav .nav-link { transition: none; }
+  .pbh-partner-link, body .pb-nav .nav-link { transition: none; }
 }
 
 
