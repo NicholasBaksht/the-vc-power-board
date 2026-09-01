@@ -162,7 +162,7 @@ function renderPartnerProfile(slug) {
 
   const investmentsHTML = investments.map(inv => `
     <div class="pg-investment-row">
-      <span>${inv && inv.name ? inv.name : '&mdash;'}</span>
+      <span>${inv && inv.name ? inv.name : ' - '}</span>
       ${inv && inv.ticker ? `<span class="ticker-tag">${inv.ticker}</span>` : ''}
     </div>
   `).join('');
@@ -180,7 +180,7 @@ function renderPartnerProfile(slug) {
   // word "null" next to it.
   const timelineHTML = timeline.map(t => `
     <div class="timeline-item">
-      <div class="timeline-year">${t && t.year != null ? t.year : '&mdash;'}</div>
+      <div class="timeline-year">${t && t.year != null ? t.year : ' - '}</div>
       <div class="timeline-event">${t && t.event ? t.event : ''}</div>
     </div>
   `).join('');
