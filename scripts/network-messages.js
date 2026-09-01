@@ -22,6 +22,12 @@
    If this file were deleted, none of those protections would change.
    ============================================================ */
 
+/* Handles may contain spaces and dots, so anything placed in an
+   href is percent-encoded as well as HTML-escaped. */
+function pbmUrl(v) {
+  return pbmEsc(encodeURIComponent(String(v == null ? '' : v)));
+}
+
 function pbmEsc(v) {
   return String(v == null ? '' : v)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -256,7 +262,7 @@ async function renderNetworkConversation(convId) {
     '<header class="pbm-head">' +
       pbnPhoto(other || {}) +
       '<div class="pbm-head-main">' +
-        '<a class="pbm-head-name" href="#network/' + pbmEsc((other && other.username) || '') + '">' +
+        '<a class="pbm-head-name" href="#network/' + pbmUrl((other && other.username) || '') + '">' +
           pbmEsc((other && (other.full_name || other.username)) || 'Unknown') + '</a>' +
         ((other && (other.current_title || other.current_company))
           ? '<div class="pbm-head-role">' +
@@ -468,7 +474,7 @@ async function renderNetworkNotifications() {
        about a person links to the person. */
     const href = (n.kind === 'message' || n.kind === 'message_request')
       ? (n.ref_id ? '#network/messages/' + pbmEsc(n.ref_id) : '#network/messages')
-      : (a.username ? '#network/' + pbmEsc(a.username) : '#network');
+      : (a.username ? '#network/' + pbmUrl(a.username) : '#network');
     return '<a class="pbm-row pbm-notif' + (n.read_at ? '' : ' is-unread') + '" href="' + href + '">' +
       pbnPhoto(a) +
       '<span class="pbm-row-main">' +
