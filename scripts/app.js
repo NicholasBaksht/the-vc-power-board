@@ -191,6 +191,8 @@ function router() {
   document.getElementById('findInvestorsView').style.display = 'none';
   document.getElementById('pricingView').style.display = 'none';
   document.getElementById('peopleView').style.display = 'none';
+  const netView = document.getElementById('networkView');
+  if (netView) netView.style.display = 'none';
 document.getElementById('portfolioView').style.display = 'none';
   document.getElementById('companyView').style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
@@ -230,7 +232,17 @@ document.getElementById('powerSignalsView').style.display = 'none';
   const accountViewEl = document.getElementById('accountView');
   if (accountViewEl) accountViewEl.style.display = 'none';
 
- if (slug === 'capital-sources') {
+ if (slug === 'network' || slug.startsWith('network/')) {
+    const nv = document.getElementById('networkView');
+    if (nv) {
+      nv.style.display = 'block';
+      if (slug === 'network') {
+        if (typeof renderPeopleDiscovery === 'function') renderPeopleDiscovery();
+      } else if (typeof renderNetworkProfile === 'function') {
+        renderNetworkProfile(decodeURIComponent(slug.slice('network/'.length)));
+      }
+    }
+  } else if (slug === 'capital-sources') {
     if (csListEl) {
       csListEl.style.display = 'block';
       if (typeof renderCapitalSources === 'function') renderCapitalSources();
@@ -797,6 +809,12 @@ const PBH_NAV = [
   ['#firms', 'Firms'],
   ['#people', 'Partner Intelligence'],
   ['#capital-sources', 'Angels'],
+  /* Power Network. The label is "People"; the route is #network
+     because #people already resolves to Partner Intelligence and
+     re-pointing it would break every existing link. This matches the
+     precedent already in this list, where "Angels" resolves to
+     #capital-sources. */
+  ['#network', 'People'],
   ['#find-investors', 'Power Match'],
   ['#conflict-check', 'Conflict Check'],
   ['#pricing', 'Pricing'],
@@ -1289,12 +1307,26 @@ function pbhCleanFooter() {
    The personality DATA is untouched. It still drives the Power
    Personality filter chips on Firms and the personality card on each
    firm's own profile; only the aggregate chart is gone. */
+/* Power Network needs a view container. index.html is not hand-edited
+   in this project, so it is created next to the other view divs on
+   first load rather than added to the markup. */
+function pbhEnsureNetworkHost() {
+  if (document.getElementById('networkView')) return;
+  const anchor = document.getElementById('capitalSourcesView');
+  if (!anchor || !anchor.parentNode) return;
+  const d = document.createElement('div');
+  d.id = 'networkView';
+  d.style.display = 'none';
+  anchor.parentNode.insertBefore(d, anchor);
+}
+
 function pbhRemoveLegacyBlocks() {
   const dist = document.getElementById('personalityDistSection');
   if (dist) dist.remove();
 }
 
 function pbhCleanChrome() {
+  pbhEnsureNetworkHost();
   pbhRemoveLegacyBlocks();
   pbhBuildFooter();
 }
