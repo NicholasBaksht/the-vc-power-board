@@ -453,11 +453,12 @@ body .pb-cta {
    Breakpoints follow the content, not device names: the nav wraps
    when seven labels stop fitting, the hero stacks when the preview
    stops being readable beside the copy. */
-/* Eight nav items no longer fit beside the brand and the account
-   cluster until about 1340px. Rather than shrinking the labels, the
-   nav drops to its own full-width row below that - a deliberate two
-   row bar, not a squeezed one. */
-@media (max-width: 1580px) {
+/* The eight labels need 818px beside a 146px brand. That fits on one
+   row on a normal desktop, so the two row bar is reserved for widths
+   where it genuinely does not - with headroom, because a signed-in
+   account chip widens the right-hand cluster. Labels are never
+   shrunk to buy space. */
+@media (max-width: 1400px) {
   body .pb-header { flex-wrap: wrap; padding: var(--s3) var(--s5); }
   body .pb-brand { order: 1; }
   body .pb-header-actions { order: 2; margin-left: auto; }
