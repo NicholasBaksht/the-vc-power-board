@@ -242,6 +242,7 @@ document.getElementById('powerSignalsView').style.display = 'none';
         const sub = decodeURIComponent(slug.slice('network/'.length));
         if (sub === 'messages' && typeof renderNetworkInbox === 'function') renderNetworkInbox('inbox');
         else if (sub === 'requests' && typeof renderNetworkInbox === 'function') renderNetworkInbox('requests');
+        else if (sub === 'notifications' && typeof renderNetworkNotifications === 'function') renderNetworkNotifications();
         else if (sub.indexOf('messages/') === 0 && typeof renderNetworkConversation === 'function') {
           renderNetworkConversation(sub.slice('messages/'.length));
         } else if (typeof renderNetworkProfile === 'function') {
@@ -1330,6 +1331,7 @@ function pbhDispatchNetwork() {
   const sub = decodeURIComponent(slug.slice('network/'.length));
   if (sub === 'messages') { if (typeof renderNetworkInbox === 'function') renderNetworkInbox('inbox'); }
   else if (sub === 'requests') { if (typeof renderNetworkInbox === 'function') renderNetworkInbox('requests'); }
+  else if (sub === 'notifications') { if (typeof renderNetworkNotifications === 'function') renderNetworkNotifications(); }
   else if (sub.indexOf('messages/') === 0) {
     if (typeof renderNetworkConversation === 'function') renderNetworkConversation(sub.slice('messages/'.length));
   } else if (typeof renderNetworkProfile === 'function') {
