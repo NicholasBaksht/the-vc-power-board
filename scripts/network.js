@@ -339,9 +339,17 @@ async function renderNetworkProfile(handle) {
         '</div>' +
         '<div class="pbn-id-actions">' +
           (isMe
-            ? '<a class="pbn-btn pbn-btn-s" href="#network/edit">Edit profile</a>'
+            ? '<a class="pbn-btn pbn-btn-s" href="#network/edit">Edit profile</a>' +
+              '<a class="pbn-btn pbn-btn-s" href="#network/messages">Messages</a>'
             : '<button type="button" class="pbn-btn pbn-btn-p" id="pbnFollowBtn" ' +
-              'data-target="' + pbnEsc(p.id) + '" data-following="0">Follow</button>') +
+              'data-target="' + pbnEsc(p.id) + '" data-following="0">Follow</button>' +
+              /* Hidden when they have chosen to receive nothing. The
+                 database refuses the write regardless; this just does
+                 not offer an action that cannot succeed. */
+              ((p.dm_policy && p.dm_policy !== 'nobody')
+                ? '<button type="button" class="pbn-btn pbn-btn-s" id="pbnMsgBtn" ' +
+                  'data-target="' + pbnEsc(p.id) + '" data-policy="' + pbnEsc(p.dm_policy) + '">Message</button>'
+                : '')) +
         '</div>' +
       '</header>' +
 
@@ -382,6 +390,11 @@ async function renderNetworkProfile(handle) {
       '<p class="pbn-note">This profile is written by the person themselves. It is not ' +
       'Power Board research, and nothing on it is source-verified by us.</p>' +
     '</div></div>';
+
+  const mb = document.getElementById('pbnMsgBtn');
+  if (mb) mb.addEventListener('click', function () {
+    if (typeof pbmOpenOrStart === 'function') pbmOpenOrStart(mb.dataset.target, mb.dataset.policy);
+  });
 
   const fb = document.getElementById('pbnFollowBtn');
   if (fb && me) {
