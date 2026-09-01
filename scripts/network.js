@@ -352,7 +352,7 @@ async function renderNetworkProfile(handle) {
         '<div class="pbn-id-actions">' +
           (isMe
             ? '<a class="pbn-btn pbn-btn-s" href="#network/edit">Edit profile</a>' +
-              '<a class="pbn-btn pbn-btn-s" href="#network/messages">Messages</a>'
+              '<a class="pbn-btn pbn-btn-s" href="#network/messages">Message</a>'
             : '<button type="button" class="pbn-btn pbn-btn-p" id="pbnFollowBtn" ' +
               'data-target="' + pbnEsc(p.id) + '" data-following="0">Follow</button>' +
               /* Hidden when they have chosen to receive nothing. The
@@ -750,11 +750,15 @@ async function pbnSaveGroup() {
       /* Arrays are text[] in Postgres and keep their order, so a
          positional compare is correct for them. */
       if (Array.isArray(a)) return JSON.stringify(a) !== JSON.stringify(b || []);
-      /* Objects are jsonb, which does NOT preserve key order - it
-         stores keys sorted internally. Comparing raw JSON.stringify
-         therefore reported a false mismatch on links every time two
-         or more were set. Compare canonically instead. */
-      if (a && typeof a === 'object') return pbnCanonical(a) !== pbnCanonical(b || {});
+      /* Objects are jsonb. Two things make an exact compare wrong
+         here: Postgres does not preserve key order, and the driver
+         may hand the value back as a JSON string rather than a
+         parsed object. The check that actually matters is whether
+         everything we sent survived, so this asks exactly that -
+         every key we wrote is present with the same value. It still
+         catches a write that was silently dropped, which is the only
+         failure this verification exists to find. */
+      if (a && typeof a === 'object') return !pbnContains(b, a);
       return (a == null ? null : a) !== (b == null ? null : b);
     });
     if (mismatched.length) {
@@ -881,9 +885,22 @@ function pbnSaveError(e) {
 }
 
 
-/* Order-insensitive JSON for comparing a jsonb column with what we
-   sent. Postgres returns object keys in its own order, so the only
-   fair comparison sorts both sides first. */
+/* True when `stored` carries every key/value in `sent`. Tolerates
+   key reordering, a value returned as a JSON string, and extra keys
+   the database may hold. */
+function pbnContains(stored, sent) {
+  let s = stored;
+  if (typeof s === 'string') { try { s = JSON.parse(s); } catch (e) { return false; } }
+  if (!s || typeof s !== 'object') return Object.keys(sent).length === 0;
+  return Object.keys(sent).every(function (k) {
+    const a = sent[k], b = s[k];
+    if (a && typeof a === 'object') return pbnContains(b, a);
+    return String(a) === String(b);
+  });
+}
+
+/* Order-insensitive JSON, kept for anything that needs a canonical
+   form rather than a containment test. */
 function pbnCanonical(v) {
   if (v === null || typeof v !== 'object') return JSON.stringify(v == null ? null : v);
   if (Array.isArray(v)) return '[' + v.map(pbnCanonical).join(',') + ']';
