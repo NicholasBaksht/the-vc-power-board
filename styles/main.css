@@ -40,7 +40,8 @@
     /* One spacing scale. Anything not on it is a mistake to be fixed,
        not a value to be preserved. */
     --s1: 4px;   --s2: 8px;   --s3: 12px;  --s4: 16px;
-    --s5: 24px;  --s6: 32px;  --s7: 48px;  --s8: 64px;  --s9: 80px;
+    --s5: 24px;  --s6: 32px;  --s7: 40px;  --s8: 48px;
+    --s9: 64px;  --s10: 80px;
 
     --serif: 'Inter', sans-serif;
     --sans: 'Inter', sans-serif;
