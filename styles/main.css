@@ -9,51 +9,38 @@
    ============================================================ */
 :root {
     /* WHITE GROUND, BLACK TEXT.
-       Power Board used to be a dark navy product. The palette below is
-       the single place that changed - every one of the 30+ stylesheets
-       reads these tokens, so flipping them here repaints the whole
-       site rather than each file being edited on its own.
+       This block is the whole theme. Every one of the 30+ stylesheets
+       reads these tokens, so the palette changes here and nowhere else.
 
-       The structure is borrowed from 10x.app: a pure white ground with
-       text and dividers expressed as black at decreasing opacity. That
-       is what keeps a light UI from turning muddy - a grey hairline
-       fights whatever sits behind it, while black at 9% simply reads
-       as the same divider everywhere. */
+       Neutrals carry a faint green cast rather than being pure grey,
+       so they sit under the green accent instead of fighting it. */
     --bg: #FFFFFF;
-    --surface: #FAFAFA;
-    --surface-raised: #F4F5F4;
-    --hairline: rgba(0, 0, 0, 0.09);
+    --surface: #FAFBFA;
+    --surface-raised: #F4F6F4;
+    --hairline: #E3E7E4;
+    --hairline-strong: #D5DAD6;
 
-    /* Near-black rather than #000 - pure black on pure white vibrates
-       at small sizes. Secondary text is an alpha so it stays correct
-       on both the white ground and the two grey surfaces. */
-    --ink: #111315;
-    --ink-dim: rgba(0, 0, 0, 0.55);
-    /* Decorative only - separators and dots. Several files used
-       --hairline as a text colour to get "very faint" on the dark
-       theme; on white that renders at 1.2:1, i.e. invisible. Those
-       rules now point here, and anything that was actually prose
-       points at --ink-dim, which clears 4.5:1. */
-    --ink-faint: rgba(0, 0, 0, 0.32);
+    --ink: #121614;
+    --ink-dim: #6A706C;
+    /* Muted clears AA against white only at large sizes - keep it for
+       decoration and separators, never for prose. */
+    --ink-muted: #8A908C;
 
-    /* Brand accent, unchanged in role: one green for actions, active
-       states and data fills. --gold/--gold-bright remain aliases so
-       every file that still names them picks this up untouched. */
     --accent: #08752C;
-    /* On the dark theme "bright" meant lighter. On white, emphasis
-       has to go the other way: #0A8F36 as text scored 4.03:1 and
-       failed AA, so the hover/emphasis variant is now DARKER than
-       the base rather than lighter. */
-    --accent-bright: #05561F;
+    --accent-bright: #075522;   /* light theme: emphasis goes darker */
+    --accent-pale: #F2F7F3;
     --accent-rgb: 8, 117, 44;
     --gold: var(--accent);
     --gold-bright: var(--accent-bright);
 
-    /* Financial up/down. Both were tuned for a dark ground and were
-       far too pale on white - #4ADE80 on #FFF fails contrast outright.
-       Darkened to the same weight as the body text. */
+    /* Financial up/down, darkened for a white ground. */
     --green: #15803D;
     --red: #C81E1E;
+
+    /* One spacing scale. Anything not on it is a mistake to be fixed,
+       not a value to be preserved. */
+    --s1: 4px;   --s2: 8px;   --s3: 12px;  --s4: 16px;
+    --s5: 24px;  --s6: 32px;  --s7: 48px;  --s8: 64px;  --s9: 80px;
 
     --serif: 'Inter', sans-serif;
     --sans: 'Inter', sans-serif;
@@ -356,7 +343,7 @@
   white-space: nowrap;
 }
 .org-badge-label { color: var(--accent); text-transform: uppercase; font-weight: 600; }
-.org-badge-sep { color: var(--ink-faint); }
+.org-badge-sep { color: var(--ink-muted); }
 .org-badge-parent { color: var(--ink); letter-spacing: .02em; }
 
 /* Government and affiliate are deliberately quieter than corporate -
@@ -839,7 +826,7 @@
 }
 .pp-traits { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 11px; }
 .pp-trait { font-size: 12.5px; color: var(--accent); }
-.pp-dot { color: var(--ink-faint); font-size: 12px; }
+.pp-dot { color: var(--ink-muted); font-size: 12px; }
 
 .pp-conf { display: inline-flex; align-items: baseline; gap: 7px; margin-bottom: 10px; }
 .pp-conf-key {
