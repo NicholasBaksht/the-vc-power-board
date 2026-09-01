@@ -238,8 +238,15 @@ document.getElementById('powerSignalsView').style.display = 'none';
       nv.style.display = 'block';
       if (slug === 'network') {
         if (typeof renderPeopleDiscovery === 'function') renderPeopleDiscovery();
-      } else if (typeof renderNetworkProfile === 'function') {
-        renderNetworkProfile(decodeURIComponent(slug.slice('network/'.length)));
+      } else {
+        const sub = decodeURIComponent(slug.slice('network/'.length));
+        if (sub === 'messages' && typeof renderNetworkInbox === 'function') renderNetworkInbox('inbox');
+        else if (sub === 'requests' && typeof renderNetworkInbox === 'function') renderNetworkInbox('requests');
+        else if (sub.indexOf('messages/') === 0 && typeof renderNetworkConversation === 'function') {
+          renderNetworkConversation(sub.slice('messages/'.length));
+        } else if (typeof renderNetworkProfile === 'function') {
+          renderNetworkProfile(sub);
+        }
       }
     }
   } else if (slug === 'capital-sources') {
@@ -1310,7 +1317,33 @@ function pbhCleanFooter() {
    first load rather than added to the markup. */
 /* network.js carries the Network section. index.html is not hand-edited in
    this project, so the script is attached here on first load. */
+/* Network is split across three async files. Each calls this when it
+   lands, so a direct hit on a Network URL resolves whichever module
+   finishes last instead of depending on load order. */
+function pbhDispatchNetwork() {
+  const slug = (window.location.hash || '').replace('#', '');
+  if (slug === 'network') {
+    if (typeof renderPeopleDiscovery === 'function') renderPeopleDiscovery();
+    return;
+  }
+  if (slug.indexOf('network/') !== 0) return;
+  const sub = decodeURIComponent(slug.slice('network/'.length));
+  if (sub === 'messages') { if (typeof renderNetworkInbox === 'function') renderNetworkInbox('inbox'); }
+  else if (sub === 'requests') { if (typeof renderNetworkInbox === 'function') renderNetworkInbox('requests'); }
+  else if (sub.indexOf('messages/') === 0) {
+    if (typeof renderNetworkConversation === 'function') renderNetworkConversation(sub.slice('messages/'.length));
+  } else if (typeof renderNetworkProfile === 'function') {
+    renderNetworkProfile(sub);
+  }
+}
+
 function pbhEnsureNetworkScript() {
+  if (!document.getElementById('pbmJs')) {
+    const m = document.createElement('script');
+    m.id = 'pbmJs'; m.src = 'scripts/network-messages.js';
+    m.onload = pbhDispatchNetwork;
+    document.head.appendChild(m);
+  }
   if (!document.getElementById('pbrJs')) {
     const r = document.createElement('script');
     r.id = 'pbrJs'; r.src = 'scripts/network-relevance.js';
@@ -1322,14 +1355,7 @@ function pbhEnsureNetworkScript() {
   /* The script loads asynchronously, so a direct hit on #network runs
      the router before these functions exist. Re-dispatch the current
      route once the file is in. */
-  t.onload = function () {
-    const slug = (window.location.hash || '').replace('#', '');
-    if (slug === 'network' && typeof renderPeopleDiscovery === 'function') {
-      renderPeopleDiscovery();
-    } else if (slug.indexOf('network/') === 0 && typeof renderNetworkProfile === 'function') {
-      renderNetworkProfile(decodeURIComponent(slug.slice('network/'.length)));
-    }
-  };
+  t.onload = pbhDispatchNetwork;
   document.head.appendChild(t);
 }
 
