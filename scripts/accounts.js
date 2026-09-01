@@ -586,7 +586,7 @@ function renderAccount() {
   el.innerHTML = `
     <div class="acct-card is-hub">
       <div class="acct-kicker">Your account</div>
-      <h1 class="acct-title">${uname ? '@' + acctEsc(uname) : acctEsc(getUserEmail())}</h1>
+      <h1 class="acct-title">${uname ? acctEsc(uname) : acctEsc(getUserEmail())}</h1>
 
       <div class="acct-stats">
         <div class="acct-stat"><span class="acct-stat-num" id="acctCount">-</span><span class="acct-stat-label">Saved firms</span></div>
@@ -876,7 +876,7 @@ function renderHeaderAccount() {
                ((typeof getUserEmail === 'function' && getUserEmail() || '').split('@')[0]) ||
                'Account';
 
-  link.textContent = '@' + name;
+  link.textContent = name;
   link.setAttribute('href', '#account');
   link.setAttribute('title', 'Your account');
   link.classList.add('is-account');
