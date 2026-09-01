@@ -1027,7 +1027,7 @@ function pbhHero() {
   let h = '<section class="pbh-hero pbh-shell">' +
     '<div class="pbh-hero-l">' +
       '<div class="pbh-eyebrow">Data-backed &middot; Source-verified &middot; Founder-focused</div>' +
-      '<h1 class="pbh-h1">Find the right VC firm.<br>Find the right partner.</h1>' +
+      '<h1 class="pbh-h1">Find the right VC firm.<br>Find the right partner.<br>Build the right network.</h1>' +
       '<p class="pbh-sub">Power Board analyzes firms and individual investors using observed ' +
       'investment behavior, stage, sector, capabilities, and conflicts - so you can raise smarter.</p>' +
       '<div class="pbh-ctas">' +
