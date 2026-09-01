@@ -51,7 +51,6 @@ body .pb-header {
   flex-wrap: nowrap;
   gap: 0 var(--s5);
   padding: 0 var(--s7);
-  border-bottom: 1px solid var(--hairline);
 }
 body .pb-brand { order: 1; }
 body .pb-nav {
@@ -114,7 +113,6 @@ body .pb-cta {
 .pbh-signal-row {
   display: flex; align-items: center; gap: var(--s3);
   min-height: 44px;
-  border-bottom: 1px solid var(--hairline);
 }
 .pbh-signal {
   display: flex; align-items: center; gap: var(--s3);
@@ -249,7 +247,6 @@ body .pb-cta {
 .pbh-stats {
   display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5);
   margin-top: var(--s7); padding-top: var(--s5);
-  border-top: 1px solid var(--hairline);
   font-size: 14px; color: var(--ink-dim);
 }
 .pbh-stat strong {
@@ -275,7 +272,6 @@ body .pb-cta {
   flex-wrap: wrap; gap: var(--s2);
   padding: var(--s3) var(--s5);
   background: var(--surface);
-  border-bottom: 1px solid var(--hairline);
 }
 .pbh-panel-t {
   font-family: var(--mono);
@@ -315,7 +311,6 @@ body .pb-cta {
   display: grid; grid-template-columns: 1fr 1fr;
   gap: var(--s4) var(--s5);
   margin: var(--s5) 0 0; padding: var(--s5) 0 0;
-  border-top: 1px solid var(--hairline);
 }
 .pbh-kv dt {
   font-family: var(--mono);
@@ -329,7 +324,6 @@ body .pb-cta {
 
 .pbh-partner {
   padding: var(--s5);
-  border-top: 1px solid var(--hairline);
   background: var(--surface);
 }
 .pbh-partner-h {
@@ -374,7 +368,9 @@ body .pb-cta {
 .pbh-partner-link:hover { color: var(--accent-bright); text-decoration: underline; }
 
 /* --- sections --------------------------------------------------- */
-.pbh-sec { padding-top: var(--s10); padding-bottom: var(--s10); border-top: 1px solid var(--hairline); }
+/* No divider rules: sections are separated by space alone, so the
+   gap does the work the hairline used to. */
+.pbh-sec { padding-top: 88px; padding-bottom: 88px; }
 .pbh-sec-h { margin-bottom: var(--s9); max-width: 60ch; }
 
 /* --- stated vs observed ----------------------------------------
@@ -383,7 +379,7 @@ body .pb-cta {
    look like two unrelated widgets. */
 .pbh-beh-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s9); }
 .pbh-col { min-width: 0; }
-.pbh-col + .pbh-col { padding-left: var(--s9); border-left: 1px solid var(--hairline); }
+.pbh-col + .pbh-col { padding-left: var(--s9); }
 .pbh-col-h {
   font-family: var(--mono);
   font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase;
@@ -394,10 +390,9 @@ body .pb-cta {
 .pbh-stated { list-style: none; margin: 0; padding: 0; }
 .pbh-stated li {
   font-size: 16px; color: var(--ink); padding: var(--s3) 0;
-  border-bottom: 1px solid var(--hairline);
 }
 .pbh-stated li:first-child { padding-top: 0; }
-.pbh-stated li:last-child { border-bottom: 0; }
+
 .pbh-note { font-size: 13px; color: var(--ink-dim); margin-top: var(--s4); line-height: 1.5; }
 
 .pbh-bar-set + .pbh-bar-set { margin-top: var(--s6); }
@@ -420,10 +415,10 @@ body .pb-cta {
 .pbh-how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s8); }
 .pbh-step {
   display: block; text-decoration: none;
-  padding-top: var(--s4); border-top: 1.5px solid var(--ink);
+  padding-top: 0;
   transition: border-color .18s ease;
 }
-.pbh-step:hover { border-top-color: var(--accent); }
+
 .pbh-step:hover .pbh-step-t { color: var(--accent-bright); }
 .pbh-step-top {
   display: flex; align-items: center; justify-content: space-between;
@@ -445,7 +440,7 @@ body .pb-cta {
 .pbh-step-d { font-size: 14.5px; line-height: 1.55; color: var(--ink-dim); margin: 0; }
 
 /* --- final cta --------------------------------------------------- */
-.pbh-final { padding-top: var(--s10); padding-bottom: var(--s10); border-top: 1px solid var(--hairline); }
+.pbh-final { padding-top: 88px; padding-bottom: var(--s10); }
 .pbh-final .pbh-h2 { max-width: 18em; }
 .pbh-final .pbh-ctas { margin-top: var(--s6); }
 
@@ -555,7 +550,7 @@ body .pb-signin.is-account { max-width: 150px; }
    Columns of real destinations only. Every link below resolves to a
    route that already exists; nothing here advertises a page that has
    still to be built. */
-.pbh-foot { border-top: 1px solid var(--hairline); background: var(--surface); }
+.pbh-foot { background: var(--surface); }
 .pbh-foot-in {
   display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: var(--s9);
@@ -578,7 +573,6 @@ body .pb-signin.is-account { max-width: 150px; }
   display: flex; flex-wrap: wrap; gap: var(--s3) var(--s5);
   align-items: center; justify-content: space-between;
   padding-top: var(--s5); padding-bottom: var(--s5);
-  border-top: 1px solid var(--hairline);
   font-size: 13px; color: var(--ink-dim);
 }
 .pbh-foot-legal { display: flex; gap: var(--s5); }
@@ -605,3 +599,23 @@ body .pb-signin.is-account { max-width: 150px; }
 }
 .pbh-textlink:hover { color: var(--accent-bright); text-decoration: underline; }
 .pbh-textlink:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* --- no rules anywhere -------------------------------------------
+   hero.css sets a border on .pb-header and the footer carries its
+   own, so removing the declarations here was not enough: those
+   sheets still painted a line. These override them outright.
+   Sections are separated by space alone now. */
+body .pb-header { border-bottom: 0; }
+body .pbh-foot,
+body #siteFooter { border-top: 0; }
+body .pbh-foot-base { border-top: 0; }
+body .pbh-sec,
+body .pbh-final,
+body .pbh-signal-row,
+body .pbh-stats,
+body .pbh-step,
+body .pbh-col + .pbh-col,
+body .pbh-stated li,
+body .pbh-kv,
+body .pbh-partner,
+body .pbh-panel-bar { border-top: 0; border-bottom: 0; border-left: 0; }
