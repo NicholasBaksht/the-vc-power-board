@@ -237,7 +237,10 @@ document.getElementById('powerSignalsView').style.display = 'none';
     if (nv) {
       nv.style.display = 'block';
       if (slug === 'network') {
-        if (typeof renderPeopleDiscovery === 'function') renderPeopleDiscovery();
+        /* Falls back to the original discovery page if network-home.js
+           has not landed yet, so the route is never dead. */
+        if (typeof renderNetworkHome === 'function') renderNetworkHome();
+        else if (typeof renderPeopleDiscovery === 'function') renderPeopleDiscovery();
       } else {
         const sub = decodeURIComponent(slug.slice('network/'.length));
         if (sub === 'messages' && typeof renderNetworkInbox === 'function') renderNetworkInbox('inbox');
@@ -1381,7 +1384,8 @@ function pbhCleanFooter() {
 function pbhDispatchNetwork() {
   const slug = (window.location.hash || '').replace('#', '');
   if (slug === 'network') {
-    if (typeof renderPeopleDiscovery === 'function') renderPeopleDiscovery();
+    if (typeof renderNetworkHome === 'function') renderNetworkHome();
+    else if (typeof renderPeopleDiscovery === 'function') renderPeopleDiscovery();
     return;
   }
   if (slug.indexOf('network/') !== 0) return;
@@ -1407,6 +1411,17 @@ function pbhEnsureNetworkScript() {
     const r = document.createElement('script');
     r.id = 'pbrJs'; r.src = 'scripts/network-relevance.js';
     document.head.appendChild(r);
+  }
+  /* The Network homepage. Separate from network.js so the discovery
+     page can grow without that file becoming unreadable, and injected
+     here for the same reason the others are: index.html is not hand
+     edited. It re-dispatches on load because a direct hit on #network
+     runs the router before this file exists. */
+  if (!document.getElementById('pbhomeJs')) {
+    const h = document.createElement('script');
+    h.id = 'pbhomeJs'; h.src = 'scripts/network-home.js';
+    h.onload = pbhDispatchNetwork;
+    document.head.appendChild(h);
   }
   if (document.getElementById('pbnJs')) return;
   const t = document.createElement('script');
