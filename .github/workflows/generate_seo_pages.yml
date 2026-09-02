@@ -7,6 +7,9 @@ on:
       - 'scripts/data-partners*.js'
       - 'scripts/data-firms.js'
       - 'scripts/data-capital-sources.js'
+      - 'scripts/data-company-sectors.js'
+      - 'scripts/data-company-aliases.js'
+      - 'scripts/company-registry.js'
       - 'scripts/utilities.js'
       - 'scripts/powerscore.js'
       - 'scripts/taxonomy.js'
@@ -38,7 +41,7 @@ jobs:
           # product pages, leaving sitemap.xml advertising 36 URLs that 404.
           git add companies/ locations/ stages/ firms/ people/ compare/ \
                   capital-sources/ power-match/ conflict-check/ network/ \
-                  methodology/ pricing/ \
+                  methodology/ pricing/ company/ \
                   sitemap.xml robots.txt
           git diff --staged --quiet || git commit -m "Auto-regenerate SEO pages [skip ci]"
           git push
