@@ -27,7 +27,7 @@ function loadCombinedScripts(filenames) {
     .join('\n');
   const wrapped = `
     ${combinedCode}
-    return { firms, partnerProfiles, firmStages, firmPerformance, firmGeography, newsItems, featuredFirm, computePowerScore, parseAumNumber, slugifyCompany, getScaleLabel, CAPITAL_SOURCES: (typeof CAPITAL_SOURCES !== 'undefined' ? CAPITAL_SOURCES : {}) };
+    return { firms, partnerProfiles, firmStages, firmPerformance, firmGeography, newsItems, featuredFirm, computePowerScore, parseAumNumber, slugifyCompany, getScaleLabel, CAPITAL_SOURCES: (typeof CAPITAL_SOURCES !== 'undefined' ? CAPITAL_SOURCES : {}), COMPANY_SECTORS: (typeof COMPANY_SECTORS !== 'undefined' ? COMPANY_SECTORS : {}), cmpBuildBackIndex: (typeof cmpBuildBackIndex === 'function' ? cmpBuildBackIndex : null), cmpEvidenceCount: (typeof cmpEvidenceCount === 'function' ? cmpEvidenceCount : null), cmpSlug: (typeof cmpSlug === 'function' ? cmpSlug : null) };
   `;
   const fn = new Function(wrapped);
   return fn();
@@ -233,6 +233,138 @@ function renderAngelPage(slug, a) {
       description: desc,
       jobTitle: a.role || undefined,
     },
+  });
+}
+
+/* ---------- Company pages ----------
+   Route is /company/<slug>/. The existing /companies/<sector>/ pages
+   are a DIFFERENT namespace and are not touched, redirected or reused.
+
+   INDEXABILITY GATE. A page is generated and indexed only where the
+   company is evidenced in two or more datasets. Measured on the
+   current data that is 269 companies out of 5,067 mentions: 79% of
+   company strings appear exactly once anywhere and would produce a
+   page asserting nothing. Those are not generated at all, which is
+   stricter than noindex and avoids thousands of thin pages.
+
+   The page never claims completeness. It says TRACKED funding history
+   because that is what the data is: what research has sourced, not
+   what the company raised. */
+function cmpStatusOf(c, holdingsHaveTicker) {
+  /* Public is the only status the data can actually establish: a firm
+     holding carries a ticker. Everything else is genuinely unknown and
+     is reported as unknown rather than guessed. */
+  return holdingsHaveTicker ? 'Public' : 'Unknown';
+}
+
+function renderCompanyPage(c, slug, ctx) {
+  const pageUrl = `${SITE_URL}/company/${slug}/`;
+  const ref = ctx.COMPANY_SECTORS[c.id] || null;
+  const ticker = (c.holdings.find(h => h.holding && h.holding.ticker) || {}).holding;
+  const status = cmpStatusOf(c, !!ticker);
+
+  const facts = [];
+  if (ref && ref.sector) facts.push(['Sector', ref.sector]);
+  if (ref && ref.subsector) facts.push(['Subsector', ref.subsector]);
+  facts.push(['Status', status + (ticker && ticker.ticker ? ' (' + ticker.ticker + ')' : '')]);
+  if (ref && ref.checked) facts.push(['Reference checked', ref.checked]);
+
+  const overview = `<div class="firms">` + facts.map(f =>
+    `<div class="firm"><div class="firm-meta">${escapeHtml(f[0])}</div>`
+    + `<div class="firm-name">${escapeHtml(String(f[1]))}</div></div>`).join('') + `</div>`;
+
+  /* Tracked funding history, newest first. A deal with no amount simply
+     omits it rather than printing a dash. */
+  let funding = '';
+  if (c.deals.length) {
+    const sorted = c.deals.slice().sort((a, b) =>
+      String(b.announcedDate || '').localeCompare(String(a.announcedDate || '')));
+    funding = `<h2 class="seo-h2">Tracked funding history</h2>`
+      + `<p class="seo-intro">${c.deals.length} tracked round${c.deals.length === 1 ? '' : 's'}. `
+      + `This is what Power Board has sourced, not a complete funding record.</p>`
+      + `<div class="firms">` + sorted.map(d => {
+          const bits = [d.round, d.announcedDate, d.sector].filter(Boolean).join(' - ');
+          const co = (d.coInvestors || []).slice(0, 6).join(', ');
+          return `<div class="firm"><div class="firm-name">${escapeHtml(d.round || 'Round')}</div>`
+            + (bits ? `<div class="firm-meta">${escapeHtml(bits)}</div>` : '')
+            + (co ? `<div class="firm-meta">Named alongside: ${escapeHtml(co)}</div>` : '')
+            + (d.sourceUrl ? `<div class="firm-meta"><a class="firm-link" href="${escapeHtml(d.sourceUrl)}" rel="noopener nofollow" target="_blank">Source</a></div>` : '')
+            + `</div>`;
+        }).join('') + `</div>`;
+  }
+
+  /* Firms are listed only where a deal row or a holding puts them
+     against this company. A partner attribution alone never implies
+     the firm participated. */
+  let investors = '';
+  if (c.firms.length) {
+    investors = `<h2 class="seo-h2">Participating firms</h2>`
+      + `<p class="seo-intro">${c.firms.length} firm${c.firms.length === 1 ? '' : 's'} recorded against this company `
+      + `through a tracked deal or a disclosed holding.</p>`
+      + `<div class="firms">` + c.firms.map(fs => {
+          const f = ctx.firmsBySlug[fs];
+          return `<div class="firm"><div class="firm-name">`
+            + `<a href="../../firms/${escapeHtml(fs)}/" class="firm-link">${escapeHtml(f ? f.name : fs)}</a>`
+            + `</div>${f && f.hq ? `<div class="firm-meta">${escapeHtml(f.hq)}</div>` : ''}</div>`;
+        }).join('') + `</div>`;
+  }
+
+  let people = '';
+  if (c.partners.length || c.angels.length) {
+    people = `<h2 class="seo-h2">Attributed people</h2>`
+      + `<p class="seo-intro">A person appears here only where a public source names them against this company. `
+      + `Working at an investing firm is never treated as attribution.</p>`;
+    if (c.partners.length) {
+      people += `<h3 class="seo-h3">Partners</h3><div class="firms">` + c.partners.map(p =>
+        `<div class="firm"><div class="firm-name"><a href="../../people/${escapeHtml(p.slug)}/" class="firm-link">${escapeHtml(p.name)}</a></div>`
+        + (p.firm ? `<div class="firm-meta">${escapeHtml(p.firm)}</div>` : '')
+        + ((p.row && (p.row.stage || p.row.year)) ? `<div class="firm-meta">${escapeHtml([p.row.stage, p.row.year].filter(Boolean).join(' - '))}</div>` : '')
+        + `</div>`).join('') + `</div>`;
+    }
+    if (c.angels.length) {
+      people += `<h3 class="seo-h3">Angels</h3><div class="firms">` + c.angels.map(a =>
+        `<div class="firm"><div class="firm-name"><a href="../../capital-sources/${escapeHtml(a.slug)}/" class="firm-link">${escapeHtml(a.name)}</a></div>`
+        + ((a.row && (a.row.stage || a.row.year)) ? `<div class="firm-meta">${escapeHtml([a.row.stage, a.row.year].filter(Boolean).join(' - '))}</div>` : '')
+        + `</div>`).join('') + `</div>`;
+    }
+  }
+
+  /* Sources, de-duplicated by URL across deals and the sector reference. */
+  const srcMap = {};
+  c.deals.forEach(d => { if (d.sourceUrl) srcMap[d.sourceUrl] = d.round ? d.round + ' announcement' : 'Deal announcement'; });
+  if (ref && ref.url) srcMap[ref.url] = 'Company sector reference';
+  const srcKeys = Object.keys(srcMap);
+  const sources = srcKeys.length
+    ? `<h2 class="seo-h2">Sources</h2><div class="firms">` + srcKeys.map(u =>
+        `<div class="firm"><div class="firm-name"><a class="firm-link" href="${escapeHtml(u)}" rel="noopener nofollow" target="_blank">${escapeHtml(srcMap[u])}</a></div></div>`).join('') + `</div>`
+    : '';
+
+  const counts = [
+    c.deals.length ? `${c.deals.length} tracked funding round${c.deals.length === 1 ? '' : 's'}` : null,
+    c.firms.length ? `${c.firms.length} participating firm${c.firms.length === 1 ? '' : 's'}` : null,
+    (c.partners.length + c.angels.length) ? `${c.partners.length + c.angels.length} person-level attribution${(c.partners.length + c.angels.length) === 1 ? '' : 's'}` : null,
+  ].filter(Boolean).join(' - ');
+
+  const desc = `${c.name}: ${counts}. Sourced venture funding and investor research from The VC Power Board.`;
+
+  const bodyHtml = `<h1 class="seo-h1">${escapeHtml(c.name)}</h1>`
+    + (counts ? `<p class="seo-intro">${escapeHtml(counts)}.</p>` : '')
+    + overview + funding + investors + people + sources;
+
+  return renderPage({
+    depth: 2,
+    title: `${c.name} - Funding, Investors and Partner Intelligence | The VC Power Board`,
+    description: desc.slice(0, 300),
+    canonicalPath: `/company/${slug}/`,
+    ogType: 'website',
+    breadcrumbs: [
+      { label: 'Home', href: '../../index.html', absoluteUrl: `${SITE_URL}/` },
+      { label: 'Companies', href: '../index.html', absoluteUrl: `${SITE_URL}/company/` },
+      { label: c.name, href: '', absoluteUrl: pageUrl },
+    ],
+    h1: c.name,
+    bodyHtml,
+    jsonLd: { '@context': 'https://schema.org', '@type': 'Organization', name: c.name, url: pageUrl },
   });
 }
 
@@ -704,8 +836,8 @@ function renderComparePage(firmA, firmB, sectorSlug, computePowerScore) {
 }
 
 function main() {
-const data = loadCombinedScripts(['data-meta.js', 'data-capital-sources.js', 'data-partners.js', 'data-partners-1.js', 'data-partners-2.js', 'data-partners-3.js', 'data-partners-4.js', 'data-partners-5.js', 'data-partners-6.js', 'data-firms.js', 'utilities.js', 'powerscore.js']);
-  const { firms, partnerProfiles, CAPITAL_SOURCES } = data;
+const data = loadCombinedScripts(['data-meta.js', 'data-capital-sources.js', 'data-company-sectors.js', 'data-company-aliases.js', 'company-registry.js', 'data-deals.js', 'data-partners.js', 'data-partners-1.js', 'data-partners-2.js', 'data-partners-3.js', 'data-partners-4.js', 'data-partners-5.js', 'data-partners-6.js', 'data-firms.js', 'utilities.js', 'powerscore.js']);
+  const { firms, partnerProfiles, CAPITAL_SOURCES, COMPANY_SECTORS, cmpBuildBackIndex, cmpEvidenceCount, cmpSlug } = data;
   const firmsBySlug = {};
   firms.forEach(f => { firmsBySlug[f.slug] = f; });
 
@@ -917,6 +1049,68 @@ const data = loadCombinedScripts(['data-meta.js', 'data-capital-sources.js', 'da
       }));
       allGeneratedUrls.push({ url: `${SITE_URL}/${pp.slug}/`, priority: '0.7' });
     });
+  }
+
+  /* ---------- Company pages (/company/<slug>/) ----------
+     Separate namespace from /companies/<sector>/, which is untouched.
+     Gate: evidence in 2+ datasets. Slug collisions are resolved
+     deterministically by canonical id suffix rather than by silently
+     overwriting one company with another. */
+  if (typeof cmpBuildBackIndex === 'function') {
+    const backIdx = cmpBuildBackIndex();
+    const ctx = { COMPANY_SECTORS: COMPANY_SECTORS || {}, firmsBySlug: firmsBySlug };
+
+    const eligible = Object.keys(backIdx)
+      .filter(k => k.indexOf('review:') !== 0)          // held for review: never a page
+      .map(k => backIdx[k])
+      .filter(c => cmpEvidenceCount(c) >= 2)
+      .sort((a, b) => a.name.localeCompare(b.name));
+
+    const usedSlugs = {};
+    const published = [];
+    eligible.forEach(c => {
+      let slug = cmpSlug(c.name);
+      if (!slug) return;
+      if (usedSlugs[slug]) {
+        /* Deterministic and stable: the canonical id disambiguates, and
+           the same input always produces the same slug. Nothing is
+           overwritten. */
+        slug = slug + '-' + c.id.slice(0, 8);
+        if (usedSlugs[slug]) return;
+      }
+      usedSlugs[slug] = c.id;
+      writeFile(`company/${slug}/index.html`, renderCompanyPage(c, slug, ctx));
+      allGeneratedUrls.push({ url: `${SITE_URL}/company/${slug}/`, priority: '0.5' });
+      published.push({ slug, c });
+    });
+
+    if (published.length) {
+      const rows = published.map(({ slug, c }) => {
+        const bits = [
+          c.deals.length ? `${c.deals.length} round${c.deals.length === 1 ? '' : 's'}` : null,
+          c.firms.length ? `${c.firms.length} firm${c.firms.length === 1 ? '' : 's'}` : null,
+          (c.partners.length + c.angels.length) ? `${c.partners.length + c.angels.length} attributed` : null,
+        ].filter(Boolean).join(' - ');
+        return `<div class="firm"><div class="firm-name"><a href="${slug}/" class="firm-link">${escapeHtml(c.name)}</a></div>`
+             + `<div class="firm-meta">${escapeHtml(bits)}</div></div>`;
+      }).join('');
+      writeFile('company/index.html', renderPage({
+        depth: 1,
+        title: 'Companies | The VC Power Board',
+        description: `${published.length} companies with tracked funding, participating firms, or person-level investor attribution.`,
+        canonicalPath: '/company/', ogType: 'website',
+        breadcrumbs: [{ label: 'Home', href: '../index.html', absoluteUrl: `${SITE_URL}/` },
+                      { label: 'Companies', href: '', absoluteUrl: `${SITE_URL}/company/` }],
+        h1: 'Companies',
+        bodyHtml: `<h1 class="seo-h1">Companies</h1><p class="seo-intro">`
+          + `${published.length} companies evidenced in more than one Power Board dataset. `
+          + `A company appears here only where research connects it to a tracked deal, a disclosed holding, `
+          + `or a named individual investor.</p><div class="firms">${rows}</div>`,
+        jsonLd: null,
+      }));
+      allGeneratedUrls.push({ url: `${SITE_URL}/company/`, priority: '0.8' });
+    }
+    console.log(`  company pages: ${published.length} published of ${Object.keys(backIdx).length} company references`);
   }
 
   const sitemapUrls = [{ url: `${SITE_URL}/`, priority: '1.0' }, ...allGeneratedUrls];
