@@ -27,7 +27,7 @@ function loadCombinedScripts(filenames) {
     .join('\n');
   const wrapped = `
     ${combinedCode}
-    return { firms, partnerProfiles, firmStages, firmPerformance, firmGeography, newsItems, featuredFirm, computePowerScore, parseAumNumber, slugifyCompany, getScaleLabel };
+    return { firms, partnerProfiles, firmStages, firmPerformance, firmGeography, newsItems, featuredFirm, computePowerScore, parseAumNumber, slugifyCompany, getScaleLabel, CAPITAL_SOURCES: (typeof CAPITAL_SOURCES !== 'undefined' ? CAPITAL_SOURCES : {}) };
   `;
   const fn = new Function(wrapped);
   return fn();
@@ -148,6 +148,93 @@ function escapeHtml(str) {
 }
 function appHashLink(slug) { return `${SITE_URL}/#${slug}`; }
 function appPartnerHashLink(slug) { return `${SITE_URL}/#partner/${slug}`; }
+
+/* ---------- Strategic Angel pages ----------
+   Angels are sourced research, the same class of content as partner
+   profiles, so they get real static pages. Network member profiles do
+   NOT: those are user-written, and indexing them is a legal question
+   the Operator has deliberately deferred rather than a generator one.
+
+   Every claim rendered here already exists in data-capital-sources.js
+   with a source URL behind it. Nothing is computed, inferred, or
+   softened for SEO: an angel with two investments gets a short page,
+   because that is what the research supports. */
+function renderAngelPage(slug, a) {
+  const pageUrl = `${SITE_URL}/capital-sources/${slug}/`;
+  const inv = Array.isArray(a.investments) ? a.investments : [];
+  const caps = Array.isArray(a.capabilities) ? a.capabilities : [];
+  const srcs = Array.isArray(a.sources) ? a.sources : [];
+  const roleLine = [a.role, a.vehicle].filter(Boolean).join(' - ');
+
+  const sectored = inv.filter(i => i.sector);
+  const sectorCounts = {};
+  sectored.forEach(i => { sectorCounts[i.sector] = (sectorCounts[i.sector] || 0) + 1; });
+  const topSectors = Object.keys(sectorCounts).sort((x, y) => sectorCounts[y] - sectorCounts[x]).slice(0, 3);
+
+  const desc = `${a.name}${roleLine ? ', ' + roleLine : ''}. `
+    + (inv.length
+        ? `${inv.length} publicly attributable investment${inv.length === 1 ? '' : 's'} tracked`
+          + (topSectors.length ? `, concentrated in ${topSectors.slice(0, 2).join(' and ')}` : '') + '.'
+        : 'Sourced profile with no individually attributable investments recorded.');
+
+  const sections = [];
+  if (a.biography) sections.push(`<h2 class="seo-h2">Background</h2><p class="seo-intro">${escapeHtml(a.biography)}</p>`);
+
+  if (caps.length) {
+    sections.push(`<h2 class="seo-h2">Strategic capabilities</h2><div class="firms">`
+      + caps.map(c => `<div class="firm"><div class="firm-name">${escapeHtml(c.capability)}</div>`
+          + (c.evidence ? `<div class="firm-meta">${escapeHtml(c.evidence)}</div>` : '')
+          + `</div>`).join('') + `</div>`);
+  }
+
+  if (inv.length) {
+    sections.push(`<h2 class="seo-h2">Attributable investments</h2>`
+      + `<p class="seo-intro">${sectored.length} of ${inv.length} carry a researched sector. `
+      + `An investment appears here only where a public source names ${escapeHtml(a.name)} against that company.</p>`
+      + `<div class="firms">` + inv.map(i => {
+          const meta = [i.stage, i.year, i.sector].filter(Boolean).join(' - ');
+          return `<div class="firm"><div class="firm-name">${escapeHtml(i.name)}</div>`
+            + (meta ? `<div class="firm-meta">${escapeHtml(meta)}</div>` : '') + `</div>`;
+        }).join('') + `</div>`);
+  } else {
+    sections.push(`<h2 class="seo-h2">Attributable investments</h2>`
+      + `<p class="seo-intro">No individual company has been attributed to ${escapeHtml(a.name)} by a public source `
+      + `Power Board accepts. That is a statement about the research, not about their activity.</p>`);
+  }
+
+  if (srcs.length) {
+    sections.push(`<h2 class="seo-h2">Sources</h2><div class="firms">`
+      + srcs.map(x => `<div class="firm"><div class="firm-name">`
+          + `<a class="firm-link" href="${escapeHtml(x.url)}" rel="noopener nofollow" target="_blank">${escapeHtml(x.label || x.url)}</a>`
+          + `</div></div>`).join('') + `</div>`);
+  }
+
+  const bodyHtml = `<h1 class="seo-h1">${escapeHtml(a.name)}</h1>`
+    + (roleLine ? `<p class="seo-intro">${escapeHtml(roleLine)}</p>` : '')
+    + `<p class="seo-intro"><a href="../../index.html#capital-sources/${encodeURIComponent(slug)}">Open in Angel Intelligence</a></p>`
+    + sections.join('');
+
+  return renderPage({
+    depth: 2,
+    title: `${a.name}${roleLine ? ' - ' + roleLine : ''} | The VC Power Board`,
+    description: desc,
+    canonicalPath: `/capital-sources/${slug}/`,
+    ogType: 'profile',
+    breadcrumbs: [
+      { label: 'Home', href: '../../index.html', absoluteUrl: `${SITE_URL}/` },
+      { label: 'Angels', href: '../index.html', absoluteUrl: `${SITE_URL}/capital-sources/` },
+      { label: a.name, href: '', absoluteUrl: pageUrl },
+    ],
+    h1: a.name,
+    bodyHtml,
+    jsonLd: {
+      '@context': 'https://schema.org', '@type': 'Person',
+      name: a.name, url: pageUrl,
+      description: desc,
+      jobTitle: a.role || undefined,
+    },
+  });
+}
 
 function renderPage({ depth, title, description, canonicalPath, ogType, breadcrumbs, h1, bodyHtml, jsonLd, extraJsonLd }) {
   const assetPrefix = '../'.repeat(depth);
@@ -617,8 +704,8 @@ function renderComparePage(firmA, firmB, sectorSlug, computePowerScore) {
 }
 
 function main() {
-const data = loadCombinedScripts(['data-meta.js', 'data-partners.js', 'data-partners-1.js', 'data-partners-2.js', 'data-partners-3.js', 'data-partners-4.js', 'data-partners-5.js', 'data-partners-6.js', 'data-firms.js', 'utilities.js', 'powerscore.js']);
-  const { firms, partnerProfiles } = data;
+const data = loadCombinedScripts(['data-meta.js', 'data-capital-sources.js', 'data-partners.js', 'data-partners-1.js', 'data-partners-2.js', 'data-partners-3.js', 'data-partners-4.js', 'data-partners-5.js', 'data-partners-6.js', 'data-firms.js', 'utilities.js', 'powerscore.js']);
+  const { firms, partnerProfiles, CAPITAL_SOURCES } = data;
   const firmsBySlug = {};
   firms.forEach(f => { firmsBySlug[f.slug] = f; });
 
@@ -755,8 +842,85 @@ const data = loadCombinedScripts(['data-meta.js', 'data-partners.js', 'data-part
     allGeneratedUrls.push({ url: `${SITE_URL}/people/`, priority: '0.8' });
   }
 
+  /* lastmod is the run date. Every page in this sitemap is regenerated
+     from the data files on each run, so the build date is the honest
+     answer to "when did this page last change" - there is no per-page
+     revision history to draw a truer date from. Without it, a crawler
+     facing 2000+ URLs has no signal about what to revisit. */
+  const RUN_DATE = new Date().toISOString().slice(0, 10);
+  /* ---------- Strategic Angels ---------- */
+  {
+    const angels = Object.entries(CAPITAL_SOURCES || {})
+      .filter(([, a]) => a && a.name)
+      .sort((x, y) => x[1].name.localeCompare(y[1].name));
+
+    angels.forEach(([slug, a]) => {
+      writeFile(`capital-sources/${slug}/index.html`, renderAngelPage(slug, a));
+      allGeneratedUrls.push({ url: `${SITE_URL}/capital-sources/${slug}/`, priority: '0.6' });
+    });
+
+    if (angels.length) {
+      const rows = angels.map(([slug, a]) => {
+        const n = (a.investments || []).length;
+        const meta = [a.role, n ? `${n} attributable investment${n === 1 ? '' : 's'}` : 'no attributable investments recorded']
+          .filter(Boolean).join(' - ');
+        return `<div class="firm"><div class="firm-name"><a href="${slug}/" class="firm-link">${escapeHtml(a.name)}</a></div>`
+             + `<div class="firm-meta">${escapeHtml(meta)}</div></div>`;
+      }).join('');
+      const bodyHtml = `<h1 class="seo-h1">Strategic Angels</h1>`
+        + `<p class="seo-intro">Independent angel investors researched to the same standard as the firm and partner data: `
+        + `an investment is recorded only where a public source names that person against that company. `
+        + `${angels.length} profiles.</p><div class="firms">${rows}</div>`;
+      writeFile('capital-sources/index.html', renderPage({
+        depth: 1,
+        title: 'Strategic Angels | The VC Power Board',
+        description: `${angels.length} researched angel investor profiles, with attributable investments and sourced strategic capabilities.`,
+        canonicalPath: '/capital-sources/', ogType: 'website',
+        breadcrumbs: [{ label: 'Home', href: '../index.html', absoluteUrl: `${SITE_URL}/` },
+                      { label: 'Angels', href: '', absoluteUrl: `${SITE_URL}/capital-sources/` }],
+        h1: 'Strategic Angels', bodyHtml, jsonLd: null,
+      }));
+      allGeneratedUrls.push({ url: `${SITE_URL}/capital-sources/`, priority: '0.8' });
+    }
+  }
+
+  /* ---------- product landing pages ----------
+     The app lives behind hash routes, which search engines do not index
+     as separate URLs. Each of these is a real crawlable page that
+     describes the tool and links into it. Network member profiles are
+     deliberately absent: see the note on renderAngelPage. */
+  {
+    const PRODUCT_PAGES = [
+      { slug: 'power-match', hash: 'find-investors', title: 'Power Match',
+        blurb: 'Answer a short set of questions about your company and see which venture firms actually invest at your stage and in your sector, which partner inside each firm is the closest fit, and which strategic angels are relevant. Every recommendation states the sourced counts it rests on rather than a score.' },
+      { slug: 'conflict-check', hash: 'conflict-check', title: 'Conflict Check',
+        blurb: 'Check whether a firm has already backed a competitor before you take a meeting. Built on the same sourced portfolio data as the rest of the board, and it tells you what it does not know.' },
+      { slug: 'network', hash: 'network', title: 'Power Network',
+        blurb: 'Find founders, operators, investors and advisors by what they can help with and what they are looking for, rather than by job title. Profiles are written by the people themselves and are marked as unverified throughout.' },
+      { slug: 'methodology', hash: 'methodologyAnchor', title: 'Methodology',
+        blurb: 'How the data is compiled, what the scores mean, where the coverage is thin, and the rule that governs all of it: where a value cannot be sourced it is left empty rather than estimated.' },
+      { slug: 'pricing', hash: 'pricing', title: 'Pricing',
+        blurb: 'The VC Power Board is free to use. Every firm, partner, angel, ranking and score is public and requires no account.' },
+    ];
+    PRODUCT_PAGES.forEach(pp => {
+      const bodyHtml = `<h1 class="seo-h1">${escapeHtml(pp.title)}</h1>`
+        + `<p class="seo-intro">${escapeHtml(pp.blurb)}</p>`
+        + `<p class="seo-intro"><a href="../index.html#${pp.hash}">Open ${escapeHtml(pp.title)}</a></p>`;
+      writeFile(`${pp.slug}/index.html`, renderPage({
+        depth: 1,
+        title: `${pp.title} | The VC Power Board`,
+        description: pp.blurb.slice(0, 300),
+        canonicalPath: `/${pp.slug}/`, ogType: 'website',
+        breadcrumbs: [{ label: 'Home', href: '../index.html', absoluteUrl: `${SITE_URL}/` },
+                      { label: pp.title, href: '', absoluteUrl: `${SITE_URL}/${pp.slug}/` }],
+        h1: pp.title, bodyHtml, jsonLd: null,
+      }));
+      allGeneratedUrls.push({ url: `${SITE_URL}/${pp.slug}/`, priority: '0.7' });
+    });
+  }
+
   const sitemapUrls = [{ url: `${SITE_URL}/`, priority: '1.0' }, ...allGeneratedUrls];
-  writeFile('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls.map(u => `  <url>\n    <loc>${u.url}</loc>\n    <priority>${u.priority}</priority>\n  </url>`).join('\n')}\n</urlset>`);
+  writeFile('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls.map(u => `  <url>\n    <loc>${u.url}</loc>\n    <lastmod>${RUN_DATE}</lastmod>\n    <priority>${u.priority}</priority>\n  </url>`).join('\n')}\n</urlset>`);
   writeFile('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
   /* After everything is written, so writtenPaths is complete. The
