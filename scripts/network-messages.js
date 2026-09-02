@@ -123,6 +123,22 @@ async function pbmOpenOrStart(targetId, targetPolicy) {
   }
 }
 
+/* The Supabase client returns { data, error } and does NOT throw, so a
+   read that destructures only `data` turns every policy failure into
+   data:null. The inbox then rendered "No conversations yet", which is
+   the same screen as a genuinely empty inbox - a delivered message and
+   a blocked read were indistinguishable, which is how a real message
+   was reported missing. Unwrapping here pushes the failure into the
+   caller's catch, where it can say what actually broke. */
+function pbmUnwrap(res, what) {
+  if (res && res.error) {
+    const e = res.error;
+    throw new Error((e.code ? e.code + ' ' : '') +
+                    (e.message || 'query failed') + ' [' + what + ']');
+  }
+  return res ? res.data : null;
+}
+
 /* ---------- inbox ---------- */
 
 /* Writes the counts into the tab labels after the data lands. The tabs
@@ -170,24 +186,24 @@ async function renderNetworkInbox(filter) {
   const box = document.getElementById('pbmList');
   let rows = [];
   try {
-    const { data: parts } = await c.from('network_participants')
-      .select('conversation_id, last_read_at, archived').eq('user_id', me);
+    const parts = pbmUnwrap(await c.from('network_participants')
+      .select('conversation_id, last_read_at, archived').eq('user_id', me), 'participants');
     if (!parts || !parts.length) { rows = []; }
     else {
       const ids = parts.filter(function (p) { return !p.archived; })
                        .map(function (p) { return p.conversation_id; });
       if (ids.length) {
-        const { data: convs } = await c.from('network_conversations')
-          .select('id, state, created_by, created_at').in('id', ids);
-        const { data: msgs } = await c.from('network_messages')
+        const convs = pbmUnwrap(await c.from('network_conversations')
+          .select('id, state, created_by, created_at').in('id', ids), 'conversations');
+        const msgs = pbmUnwrap(await c.from('network_messages')
           .select('conversation_id, sender_id, body, created_at')
-          .in('conversation_id', ids).order('created_at', { ascending: false });
-        const { data: others } = await c.from('network_participants')
-          .select('conversation_id, user_id').in('conversation_id', ids).neq('user_id', me);
+          .in('conversation_id', ids).order('created_at', { ascending: false }), 'messages');
+        const others = pbmUnwrap(await c.from('network_participants')
+          .select('conversation_id, user_id').in('conversation_id', ids).neq('user_id', me), 'counterparties');
         const otherIds = [...new Set((others || []).map(function (o) { return o.user_id; }))];
-        const { data: profs } = otherIds.length
-          ? await c.from('profiles').select('id, username, full_name, photo_url, current_title, current_company').in('id', otherIds)
-          : { data: [] };
+        const profs = otherIds.length
+          ? pbmUnwrap(await c.from('profiles').select('id, username, full_name, photo_url, current_title, current_company').in('id', otherIds), 'profiles')
+          : [];
         const pmap = {}; (profs || []).forEach(function (p) { pmap[p.id] = p; });
         const omap = {}; (others || []).forEach(function (o) { omap[o.conversation_id] = o.user_id; });
         const lastMap = {};
@@ -222,7 +238,12 @@ async function renderNetworkInbox(filter) {
       }
     }
   } catch (e) {
-    box.innerHTML = '<div class="pbn-empty">Could not load messages.</div>'; return;
+    /* Name the failure. "Could not load messages" sent us looking at
+       the wrong layer for a whole debugging round; the Postgres code
+       is the thing that identifies the cause. */
+    box.innerHTML = '<div class="pbn-empty">Could not load messages.<br>' +
+      '<span class="pbm-hint">' + pbmEsc(e.message || String(e)) + '</span></div>';
+    return;
   }
 
   if (!rows.length) {
@@ -268,9 +289,12 @@ async function renderNetworkConversation(convId) {
 
   let conv = null, other = null, msgs = [];
   try {
-    const { data: cv } = await c.from('network_conversations')
-      .select('id, state, created_by').eq('id', convId).maybeSingle();
+    const cv = pbmUnwrap(await c.from('network_conversations')
+      .select('id, state, created_by').eq('id', convId).maybeSingle(), 'conversation');
     conv = cv;
+    /* A genuine non-participant also lands here with zero rows, which
+       is correct and is handled below. This only separates that case
+       from a policy that failed outright. */
     if (!conv) throw new Error('not found');
     const { data: op } = await c.from('network_participants')
       .select('user_id').eq('conversation_id', convId).neq('user_id', me).maybeSingle();
@@ -280,16 +304,21 @@ async function renderNetworkConversation(convId) {
         .eq('id', op.user_id).maybeSingle();
       other = pr;
     }
-    const { data: ms } = await c.from('network_messages')
+    const ms = pbmUnwrap(await c.from('network_messages')
       .select('id, sender_id, body, created_at').eq('conversation_id', convId)
-      .order('created_at', { ascending: true });
+      .order('created_at', { ascending: true }), 'thread');
     msgs = ms || [];
   } catch (e) {
     /* A non-participant gets zero rows from the policy, so this is
-       also what an attempt to open someone else's thread looks like. */
+       also what an attempt to open someone else's thread looks like.
+       A policy that ERRORS is a different thing entirely and now says
+       so, rather than hiding behind the same sentence. */
+    const why = (e && e.message && e.message !== 'not found') ? e.message : '';
     host.innerHTML = '<div class="pbn"><div class="pbn-shell">' +
       '<a class="pbn-back" href="#network/messages">&larr; Message</a>' +
-      '<div class="pbn-empty">That conversation is not available.</div></div></div>';
+      '<div class="pbn-empty">That conversation is not available.' +
+      (why ? '<br><span class="pbm-hint">' + pbmEsc(why) + '</span>' : '') +
+      '</div></div></div>';
     return;
   }
 
