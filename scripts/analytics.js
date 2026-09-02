@@ -33,6 +33,21 @@ const PBA_SESSION_MS  = 30 * 60 * 1000;   // 30 minutes idle ends a session
    fails silently in the console during development rather than
    generating a round trip that is always rejected. */
 const PBA_EVENTS = [
+  /* Strategic Angels in Power Match. The Postgres CHECK constraint
+     on product_events must list these too - the array and the
+     constraint are two gates and a name absent from either is
+     silently dropped. */
+  'strategic_angel_results_viewed',
+  'strategic_angel_recommended',
+  'strategic_angel_opened',
+  'strategic_angel_saved',
+  'strategic_angel_follow_clicked',
+  'strategic_angel_message_clicked',
+  'strategic_angel_message_sent',
+  'strategic_angel_conflict_viewed',
+  'strategic_angel_explanation_viewed',
+  'strategic_angel_no_match',
+  'founder_need_selected',
   'homepage_view',
   'power_match_cta_clicked',
   'power_match_started',
