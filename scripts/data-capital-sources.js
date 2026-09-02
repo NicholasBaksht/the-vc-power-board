@@ -31,7 +31,7 @@
    CURRENTLY an active independent investor AND does it as a major
    or full-time activity. Someone who now runs a fund belongs in
    partner data instead; someone who has stopped belongs nowhere.
-   This gate is why the section is small: of 50 researched
+   This gate is why the section is small. Batch 1: of 50 researched
    candidates, 27 were rejected and documented - eight because they
    now run funds, five for having no usable public record, four
    because the name could not be resolved to one person, three for
@@ -43,6 +43,14 @@
    statedStageFocus record only what a person says they invest in.
    What they have actually done is computed from the investment rows
    and always shown with its sample size. The two are never merged.
+
+   BATCH 2 (2026-09-02): 20 candidates screened, 7 accepted, 13
+   rejected - seven who run funds, three with no attributable
+   personal investment, one active only historically, one advisor
+   with no investments, and one occasional founder-angel. Two
+   accepted records carry no investment rows: the person qualifies
+   on sourced current activity but no source names an individual
+   company, which is recorded rather than filled.
 
    RESEARCHED, NOT COMPLETE. Public records are not a full account of
    anyone's investing. An investor with three rows here may have made
@@ -3057,7 +3065,7 @@ const CAPITAL_SOURCES = {
     basedIn: null,
     education: [],
     previousExperience: [
-      "Commercial real estate finance, banks and financial institutions (25+ year career; financed more than $10 billion)"
+      "Commercial real estate finance, banks and financial institutions (25+ year career; financed more than \$10 billion)"
     ],
     operatingBackground: [
       "banker"
@@ -3072,7 +3080,7 @@ const CAPITAL_SOURCES = {
     capabilities: [
       {
         capability: "Finance",
-        evidence: "25+ year commercial real estate finance and banking career, during which she financed more than $10 billion in commercial real estate.",
+        evidence: "25+ year commercial real estate finance and banking career, during which she financed more than \$10 billion in commercial real estate.",
         url: "https://www.katiedunn.com/"
       },
       {
@@ -3113,8 +3121,8 @@ const CAPITAL_SOURCES = {
     exitCount: null,
     exitCountBasis: null,
     publicHoldings: [],
-    strategicValue: "A 25+ year commercial real estate finance and banking career in which she financed more than $10 billion gives her direct experience of underwriting, financial modelling and lender diligence. Through The Masthead Strategy she works with founders specifically on fundraising strategy, and she holds current board seats at Outcast Brands, Fierce Foundry and the Enthuse Foundation. Her publicly listed portfolio is concentrated in consumer packaged goods and early-stage technology companies led by underrepresented founders.",
-    biography: "Katie Dunn is a US angel investor, startup advisor and board director. She spent 25+ years in commercial real estate finance at banks and financial institutions, financing more than $10 billion, before moving to funding and supporting founders full-time. She publishes an open portfolio on her own site of over 30 angel investments, stating that she invests primarily in underrepresented founders - LGBTQIA+, BIPOC and women - in technology and consumer packaged goods based in the US. She is the founder of The Masthead Strategy, which provides fundraising strategy coaching and guides to founders, and serves on the boards of Outcast Brands, Fierce Foundry and the Enthuse Foundation. She was interviewed as an active angel investor in December 2025.",
+    strategicValue: "A 25+ year commercial real estate finance and banking career in which she financed more than \$10 billion gives her direct experience of underwriting, financial modelling and lender diligence. Through The Masthead Strategy she works with founders specifically on fundraising strategy, and she holds current board seats at Outcast Brands, Fierce Foundry and the Enthuse Foundation. Her publicly listed portfolio is concentrated in consumer packaged goods and early-stage technology companies led by underrepresented founders.",
+    biography: "Katie Dunn is a US angel investor, startup advisor and board director. She spent 25+ years in commercial real estate finance at banks and financial institutions, financing more than \$10 billion, before moving to funding and supporting founders full-time. She publishes an open portfolio on her own site of over 30 angel investments, stating that she invests primarily in underrepresented founders - LGBTQIA+, BIPOC and women - in technology and consumer packaged goods based in the US. She is the founder of The Masthead Strategy, which provides fundraising strategy coaching and guides to founders, and serves on the boards of Outcast Brands, Fierce Foundry and the Enthuse Foundation. She was interviewed as an active angel investor in December 2025.",
     lastChecked: "2026-09-02",
     investments: [
       {
@@ -3598,7 +3606,7 @@ const CAPITAL_SOURCES = {
       },
       {
         capability: "Fundraising",
-        evidence: "Co-runs a vehicle that states it has invested over $50M into 120+ startups and helps founders 'raise your next round from the best investors'; closed a $24 million fund in 2021.",
+        evidence: "Co-runs a vehicle that states it has invested over \$50M into 120+ startups and helps founders 'raise your next round from the best investors'; closed a \$24 million fund in 2021.",
         url: "https://www.toddandrahulcapital.com/"
       }
     ],
@@ -3609,14 +3617,14 @@ const CAPITAL_SOURCES = {
     careerMilestones: [
       {
         year: 2021,
-        event: "Todd and Rahul's Angel Fund closes a new $24 million fund."
+        event: "Todd and Rahul's Angel Fund closes a new \$24 million fund."
       }
     ],
     exitCount: null,
     exitCountBasis: null,
     publicHoldings: [],
-    strategicValue: "Goldberg founded Eventjoy and sold it to Ticketmaster, so he has taken a company through an acquisition. His vehicle states it has invested over $50M into more than 120 startups at $300k-$500k a cheque and describes its work as helping founders find product/market fit, accelerate go-to-market, and raise the next round, which points to early-stage product and fundraising support. He has raised outside capital for the vehicle, closing a $24 million fund in 2021.",
-    biography: "Todd Goldberg founded Eventjoy, an event ticketing startup acquired by Ticketmaster. He co-founded and co-runs Todd & Rahul Capital, an angel investing vehicle, with Rahul Vohra, founder of Superhuman and Rapportive; both are Y Combinator alumni. The vehicle states it has invested over $50 million into more than 120 startups, writes $300k-$500k cheques, and is backed by more than 150 founders, operators and investors. It closed a $24 million fund in 2021, planning to put roughly three-quarters into early-stage deals and reserve a quarter for later-stage opportunities. Goldberg has said of the approach, 'You never want to be a passive check.'",
+    strategicValue: "Goldberg founded Eventjoy and sold it to Ticketmaster, so he has taken a company through an acquisition. His vehicle states it has invested over \$50M into more than 120 startups at \$300k-\$500k a cheque and describes its work as helping founders find product/market fit, accelerate go-to-market, and raise the next round, which points to early-stage product and fundraising support. He has raised outside capital for the vehicle, closing a \$24 million fund in 2021.",
+    biography: "Todd Goldberg founded Eventjoy, an event ticketing startup acquired by Ticketmaster. He co-founded and co-runs Todd & Rahul Capital, an angel investing vehicle, with Rahul Vohra, founder of Superhuman and Rapportive; both are Y Combinator alumni. The vehicle states it has invested over \$50 million into more than 120 startups, writes \$300k-\$500k cheques, and is backed by more than 150 founders, operators and investors. It closed a \$24 million fund in 2021, planning to put roughly three-quarters into early-stage deals and reserve a quarter for later-stage opportunities. Goldberg has said of the approach, 'You never want to be a passive check.'",
     lastChecked: "2026-09-02",
     investments: [
       {
@@ -4046,7 +4054,7 @@ const CAPITAL_SOURCES = {
       "MBA, San Diego/Kennesaw State University, United States"
     ],
     previousExperience: [
-      "President, South & Southeast Asia, CDC Software - 16-year tenure, rose from Systems Engineer to President, company grew from $50M to $400M",
+      "President, South & Southeast Asia, CDC Software - 16-year tenure, rose from Systems Engineer to President, company grew from \$50M to \$400M",
       "President, Atlanta and San Diego Chapters, Association for India's Development (AID)"
     ],
     operatingBackground: [
@@ -4060,7 +4068,7 @@ const CAPITAL_SOURCES = {
     capabilities: [
       {
         capability: "Enterprise GTM",
-        evidence: "President of CDC Software for South & Southeast Asia, running sales and the India Engineering Centre of Excellence while the company grew from $50M to $400M.",
+        evidence: "President of CDC Software for South & Southeast Asia, running sales and the India Engineering Centre of Excellence while the company grew from \$50M to \$400M.",
         url: "https://www.indianangelnetwork.com/individual-members/nagaraja_parkasam_nwq/"
       },
       {
@@ -4194,7 +4202,7 @@ const CAPITAL_SOURCES = {
     exitCount: 8,
     exitCountBasis: "stated by source",
     publicHoldings: [],
-    strategicValue: "Sixteen years at CDC Software, ending as President for South & Southeast Asia with responsibility for sales and the India engineering centre during growth from $50M to $400M, gives him enterprise go-to-market and engineering-organisation experience. He has led 15-16 of his own deals and served on twelve startup boards, so he can work with founders as an operating board member rather than a passive cheque. Through the Nativelead Foundation he has built an angel network of 242 investors across non-metro Tamil Nadu, which is directly relevant to founders raising outside India's metro hubs.",
+    strategicValue: "Sixteen years at CDC Software, ending as President for South & Southeast Asia with responsibility for sales and the India engineering centre during growth from \$50M to \$400M, gives him enterprise go-to-market and engineering-organisation experience. He has led 15-16 of his own deals and served on twelve startup boards, so he can work with founders as an operating board member rather than a passive cheque. Through the Nativelead Foundation he has built an angel network of 242 investors across non-metro Tamil Nadu, which is directly relevant to founders raising outside India's metro hubs.",
     biography: "Nagaraja “Naga” Prakasam is a Bengaluru-based angel investor who spent 16 years at CDC Software, rising from Systems Engineer to President for South & Southeast Asia. His Indian Angel Network profile describes him as a full-time lead angel investor who has led 15 deals, invested in 23 startups and served on 12 boards; his own site puts the figures at 33 startups across 65-plus rounds with 16 deals led. He co-founded IAN Impact within the Indian Angel Network and is Founder Chairman of the Nativelead Foundation, which has grown to 242 angels across non-metro Tamil Nadu. He is also a Partner and Advisor at Acumen, a New York-based non-profit impact venture fund, and served as an independent director at its portfolio company Guardian. He holds a B.E. from Thiagarajar College of Engineering and an MBA from San Diego/Kennesaw State University, and was still running startup pitch sessions as a visiting angel investor in July 2025.",
     lastChecked: "2026-09-02",
     investments: [
@@ -6330,7 +6338,7 @@ const CAPITAL_SOURCES = {
     exitCount: 1,
     exitCountBasis: "observed from attributable investments",
     publicHoldings: [],
-    strategicValue: "Phey Teck Moh ran large Asian technology and telecommunications businesses before investing, as CEO of Pacific Internet and as President of Motorola Solutions Asia, so he can help founders with scaling operations and with telecommunications and IT go-to-market in Asia. As a partner and co-founder of AngelCentral, a Singapore angel club that has trained more than 1,000 angel investors and whose members have invested over S$40 million into startups, he is a route into the Singapore angel community. He describes starting as an investor after giving founders pro bono mentorship, and one of his portfolio companies, Rainmaker Labs, was acquired by KPMG.",
+    strategicValue: "Phey Teck Moh ran large Asian technology and telecommunications businesses before investing, as CEO of Pacific Internet and as President of Motorola Solutions Asia, so he can help founders with scaling operations and with telecommunications and IT go-to-market in Asia. As a partner and co-founder of AngelCentral, a Singapore angel club that has trained more than 1,000 angel investors and whose members have invested over S\$40 million into startups, he is a route into the Singapore angel community. He describes starting as an investor after giving founders pro bono mentorship, and one of his portfolio companies, Rainmaker Labs, was acquired by KPMG.",
     biography: "Phey Teck Moh is a Singapore-based angel investor and a partner and co-founder of AngelCentral, an angel club incorporated in February 2018. Before investing he was CEO of Pacific Internet and corporate vice president of Motorola Asia Pacific, retiring as President of Motorola Solutions Asia in May 2013. He is chairman of Xpanasia Pte Ltd, described as an investment and advisory company specialising in telecommunications and information technology companies. In an AngelCentral interview he describes becoming an angel after providing pro bono mentorship to founders, and names Metro Residences, Homage, SensorFlow, Souschef and Ohanae among portfolio companies still operating, and Rainmaker Labs as a company taken over by KPMG. He says he also invests in VC funds.",
     lastChecked: "2026-09-02",
     investments: [
@@ -7116,8 +7124,8 @@ const CAPITAL_SOURCES = {
     exitCount: null,
     exitCountBasis: null,
     publicHoldings: [],
-    strategicValue: "Santora invests his own capital full-time at pre-seed and seed in B2B SaaS and subscription software, writing stated cheques of $10k-$45k, which makes him a fit for founders assembling an early angel round rather than a lead. He states that his value-add comes from his network - fundraising introductions, finding employees, and connecting founders with advisers. He began his career at the medical software company Epic directly out of college.",
-    biography: "Francis Santora is a US angel investor based in Hoboken, New Jersey, who describes himself as a \"NYC area angel\" and a \"solo angel\". He began his career at Epic, a medical software company, straight out of college, and started angel investing around 2021 after reading Jason Calacanis's book \"Angel\". In a June 2024 interview he stated \"I do it full-time now just with my own capital\", and his investor profile lists a $10k-$45k cheque size and 41 investments to date. He states he invests in SaaS, productivity, subscription and collaboration software in the US and comparable markets including the UK, Canada, Ireland, Australia, New Zealand and Japan. Named investments include Edge, whose seed round he joined in mid-2021, and the London fintech Caribou (formerly Rebank).",
+    strategicValue: "Santora invests his own capital full-time at pre-seed and seed in B2B SaaS and subscription software, writing stated cheques of \$10k-\$45k, which makes him a fit for founders assembling an early angel round rather than a lead. He states that his value-add comes from his network - fundraising introductions, finding employees, and connecting founders with advisers. He began his career at the medical software company Epic directly out of college.",
+    biography: "Francis Santora is a US angel investor based in Hoboken, New Jersey, who describes himself as a \"NYC area angel\" and a \"solo angel\". He began his career at Epic, a medical software company, straight out of college, and started angel investing around 2021 after reading Jason Calacanis's book \"Angel\". In a June 2024 interview he stated \"I do it full-time now just with my own capital\", and his investor profile lists a \$10k-\$45k cheque size and 41 investments to date. He states he invests in SaaS, productivity, subscription and collaboration software in the US and comparable markets including the UK, Canada, Ireland, Australia, New Zealand and Japan. Named investments include Edge, whose seed round he joined in mid-2021, and the London fintech Caribou (formerly Rebank).",
     lastChecked: "2026-09-02",
     investments: [
       {
@@ -7155,7 +7163,7 @@ const CAPITAL_SOURCES = {
     ],
     sources: [
       {
-        label: "OpenVC interview, \"Two of my angel investments hit $10M ARR\", 4 June 2024",
+        label: "OpenVC interview, \"Two of my angel investments hit \$10M ARR\", 4 June 2024",
         url: "https://www.openvc.app/blog/francis-santora"
       },
       {
@@ -7401,7 +7409,7 @@ const CAPITAL_SOURCES = {
     exitCountBasis: null,
     publicHoldings: [],
     strategicValue: "He co-founded and ran JobsCentral Group as CEO for eleven years to an acquisition by CareerBuilder, so he can speak to building and selling a Singapore recruitment platform. AngelCentral's own site describes him as an experienced angel investor who has put over USD 5m into 40 startups and 8 VC funds with Huang Shao-Ning, and says he serves on multiple startup boards. His Singapore public-sector roles - the IPOS board, the Institute of Technical Education board, the Pro-Enterprise Panel and the Committee on the Future Economy - give him direct exposure to Singapore government policy on startups and skills.",
-    biography: "Lim Der Shing co-founded JobsCentral Group in 2000 and led it as CEO until it was acquired by US career platform CareerBuilder in 2011. He then established AngelCentral, an angel investment network serving investors across Singapore and Southeast Asia, where he is a co-founder and partner. AngelCentral's site states he 'is an experienced Angel Investor and has invested (with Shao Ning) over USD$5m into 40 startups and 8 VC funds', and in a podcast interview he described 'Almost 50 companies. Almost 10 million of our own money into different startups and VC funds.' Singapore's Ministry of Law announced his appointment to the Board of the Intellectual Property Office of Singapore effective 1 April 2022, and noted his roles on the Institute of Technical Education Board, the Pro-Enterprise Panel and as Chairman of the SkillsFuture Advice Functional Committee. Named financings connect him individually to Homage and Motorist.sg.",
+    biography: "Lim Der Shing co-founded JobsCentral Group in 2000 and led it as CEO until it was acquired by US career platform CareerBuilder in 2011. He then established AngelCentral, an angel investment network serving investors across Singapore and Southeast Asia, where he is a co-founder and partner. AngelCentral's site states he 'is an experienced Angel Investor and has invested (with Shao Ning) over USD\$5m into 40 startups and 8 VC funds', and in a podcast interview he described 'Almost 50 companies. Almost 10 million of our own money into different startups and VC funds.' Singapore's Ministry of Law announced his appointment to the Board of the Intellectual Property Office of Singapore effective 1 April 2022, and noted his roles on the Institute of Technical Education Board, the Pro-Enterprise Panel and as Chairman of the SkillsFuture Advice Functional Committee. Named financings connect him individually to Homage and Motorist.sg.",
     lastChecked: "2026-09-02",
     investments: [
       {
@@ -7777,6 +7785,1233 @@ const CAPITAL_SOURCES = {
       {
         label: "Boston College Law School Magazine class note",
         url: "https://lawmagazine.bc.edu/class_note/christopher-mirabile/"
+      }
+    ]
+  },
+
+  "anthony-harris": {
+    name: "Anthony Harris",
+    type: "angel",
+    investingStatus: "active",
+    investingMode: "personal capital",
+    vehicle: null,
+    vehicleNote: "Harris sits on the board of Cambridge Angels as its treasurer and is a registered director of both Cambridge Angels Ltd and Cambridge Angels Group Ltd at Companies House. His personal angel investing is established separately from that organisational role: University of Cambridge and Clare Hall pages state in their own words that he has personally invested in around fifty companies. No named personal investment vehicle could be found, and no individual company could be attributed to him by name, so this record carries no investment rows.",
+    role: "Business angel and treasurer of Cambridge Angels; Bye-Fellow and Director of Studies in Computer Science, Emmanuel College, University of Cambridge",
+    basedIn: "Cambridge, United Kingdom",
+    education: [
+      "PhD, University of Cambridge (Sidney Sussex College)",
+      "English, University of Oxford"
+    ],
+    previousExperience: [
+      "Co-founder and technical director, Software 2000 / Software Imaging (director of record until December 2007, exited via management buy-out)"
+    ],
+    operatingBackground: [
+      "founder",
+      "engineer",
+      "academic"
+    ],
+    statedSectorFocus: [],
+    statedStageFocus: [],
+    checkSize: null,
+    leadBehavior: "Unknown",
+    capabilities: [
+      {
+        capability: "Technical",
+        evidence: "Before returning to academia, he spent many years in the technology industry, where he co-founded a multi-million dollar software company specialising in high-performance imaging and printer technologies.",
+        url: "https://www.emma.cam.ac.uk/people/dr-anthony-harris"
+      },
+      {
+        capability: "Finance",
+        evidence: "He is an active angel investor and a member of Cambridge Angels, where he serves on the board as Treasurer.",
+        url: "https://www.emma.cam.ac.uk/people/dr-anthony-harris"
+      },
+      {
+        capability: "Fundraising",
+        evidence: "For the past twenty years, he has been an active angel investor and VC co-investor. He is on the board of Cambridge Angels and has invested in over 50 companies in both the Oxford and Cambridge ecosystems.",
+        url: "https://www.clarehall.cam.ac.uk/news/dr-anthony-harris-keynotes-on-entrepreneurship-in-the-ox-cam-corridor-at-the-british-consul-generals-residence-in-boston/"
+      }
+    ],
+    boardSeats: [
+      {
+        company: "FLIT (Cambridge) Limited",
+        status: "current",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/ycJ8JsNC9sGa42OLuFPhQ1nPR08/appointments"
+      },
+      {
+        company: "Cambridge Angels Ltd",
+        status: "current",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/ycJ8JsNC9sGa42OLuFPhQ1nPR08/appointments"
+      },
+      {
+        company: "Cambridge Angels Group Ltd",
+        status: "current",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/ycJ8JsNC9sGa42OLuFPhQ1nPR08/appointments"
+      },
+      {
+        company: "Immaterial Ltd",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/ycJ8JsNC9sGa42OLuFPhQ1nPR08/appointments"
+      },
+      {
+        company: "Growth Nation Limited",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/ycJ8JsNC9sGa42OLuFPhQ1nPR08/appointments"
+      }
+    ],
+    advisoryRoles: [],
+    syndicateMemberships: [
+      {
+        name: "Cambridge Angels",
+        url: "https://www.cambridgeangels.com/angels"
+      }
+    ],
+    geographicPatterns: [
+      "Cambridge, United Kingdom",
+      "Oxford, United Kingdom"
+    ],
+    careerMilestones: [
+      {
+        year: 2007,
+        event: "Exits the software business he co-founded via a management buy-out and returns to higher education."
+      },
+      {
+        year: 2018,
+        event: "Appointed a director of FLIT (Cambridge) Limited."
+      },
+      {
+        year: 2021,
+        event: "Appointed a director of Cambridge Angels Group Ltd and Cambridge Angels Ltd."
+      }
+    ],
+    exitCount: null,
+    exitCountBasis: null,
+    publicHoldings: [],
+    strategicValue: "Harris co-founded and ran a software company specialising in high-performance imaging and printer technologies before exiting it via a management buy-out, so he can speak to product and technical questions in software businesses from an operator's seat. As treasurer of Cambridge Angels and honorary treasurer of Regent's Park College, Oxford, his sourced responsibilities are financial and governance ones, and he sits on start-up boards in that capacity. Cambridge sources place his investing activity specifically in the Oxford and Cambridge ecosystems, where he also mentors founders through Cambridge Judge Business School's Accelerate programme.",
+    biography: "Anthony Harris is a business angel based in Cambridge, United Kingdom, and an academic at the University of Cambridge, where he is a visiting academic in the Department of Computer Science and Technology and Bye-Fellow and Director of Studies in Computer Science at Emmanuel College. Before returning to higher education in 2007 he co-founded a software company specialising in high-performance imaging and printer technologies, which he left following a management buy-out; Companies House records his directorships of Software 2000 Limited and Software Imaging Limited ending in December 2007. University of Cambridge and Clare Hall pages describe him as an active business angel who has invested in around fifty companies across the Oxford and Cambridge ecosystems and identify him as a member of Cambridge Angels, where he serves on the board as treasurer. Companies House confirms he is a current director of Cambridge Angels Ltd, Cambridge Angels Group Ltd and FLIT (Cambridge) Limited, and was formerly a director of Immaterial Ltd and Growth Nation Limited. No public source seen names an individual company he has personally invested in, so no investment rows are recorded here.",
+    lastChecked: "2026-09-02",
+    investments: [],
+    sources: [
+      {
+        label: "University of Cambridge, Department of Computer Science and Technology profile",
+        url: "https://www.cst.cam.ac.uk/people/awh28"
+      },
+      {
+        label: "Emmanuel College, University of Cambridge profile",
+        url: "https://www.emma.cam.ac.uk/people/dr-anthony-harris"
+      },
+      {
+        label: "Clare Hall, University of Cambridge directory profile",
+        url: "https://www.clarehall.cam.ac.uk/directory/harris-a/"
+      },
+      {
+        label: "Clare Hall news item, 9 May 2025",
+        url: "https://www.clarehall.cam.ac.uk/news/dr-anthony-harris-keynotes-on-entrepreneurship-in-the-ox-cam-corridor-at-the-british-consul-generals-residence-in-boston/"
+      },
+      {
+        label: "Cambridge Angels members and board page",
+        url: "https://www.cambridgeangels.com/angels"
+      },
+      {
+        label: "Companies House, personal appointments of Anthony William Harris",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/ycJ8JsNC9sGa42OLuFPhQ1nPR08/appointments"
+      }
+    ]
+  },
+  "simon-thorpe": {
+    name: "Simon Thorpe",
+    type: "angel",
+    investingStatus: "active",
+    investingMode: "personal capital",
+    vehicle: null,
+    vehicleNote: "The investment rows represent Thorpe's own personal angel investment. He was a director of Cambridge Angels Group Ltd from 19 March 2019 to 30 September 2023 and chaired Cambridge Angels during that period, but no row here represents Cambridge Angels group money. He is also a designated member of Delta2020 LLP, described by Inngot as an investment, consulting and mentoring company he established; no source states that his angel investments are made through that LLP, so it is not recorded as a vehicle.",
+    role: "Angel investor",
+    basedIn: "Cambridge, United Kingdom",
+    education: [],
+    previousExperience: [
+      "Equity research, sales and capital markets across a 25 year City career, working with major institutional investors and corporates",
+      "KPMG",
+      "UBS, equity research"
+    ],
+    operatingBackground: [
+      "banker",
+      "accountant"
+    ],
+    statedSectorFocus: [
+      "technology and technology enabled healthcare"
+    ],
+    statedStageFocus: [],
+    checkSize: null,
+    leadBehavior: "Unknown",
+    capabilities: [
+      {
+        capability: "Finance",
+        evidence: "Simon Thorpe is a qualified Chartered Accountant with a 25 year city career in and 15 years of Angel Investing experience. He has worked in equity research, sales and capital markets with major institutional investors and corporates across all sectors.",
+        url: "https://delta2020.com/the-team/simon-thorpe"
+      },
+      {
+        capability: "Industry Network",
+        evidence: "He is a member of Cambridge Angels, Manchester Angels and Angel Academe (a predominately female network).",
+        url: "https://delta2020.com/the-team/simon-thorpe"
+      }
+    ],
+    boardSeats: [
+      {
+        company: "UBIO Limited",
+        status: "current",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/8VSmwv1yF4l_Ue46sWwhAQU_D9E/appointments"
+      },
+      {
+        company: "University of Manchester Innovation Factory Limited",
+        status: "current",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/8VSmwv1yF4l_Ue46sWwhAQU_D9E/appointments"
+      },
+      {
+        company: "Albion Technology & General VCT plc",
+        status: "current",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/8VSmwv1yF4l_Ue46sWwhAQU_D9E/appointments"
+      },
+      {
+        company: "Rockspring Nominees Limited",
+        status: "current",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/8VSmwv1yF4l_Ue46sWwhAQU_D9E/appointments"
+      },
+      {
+        company: "Inngot Limited",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/8VSmwv1yF4l_Ue46sWwhAQU_D9E/appointments"
+      },
+      {
+        company: "Cambridge Angels Group Ltd",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/8VSmwv1yF4l_Ue46sWwhAQU_D9E/appointments"
+      },
+      {
+        company: "Eagle Genomics Limited",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/8VSmwv1yF4l_Ue46sWwhAQU_D9E/appointments"
+      },
+      {
+        company: "Augmentra Limited",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/8VSmwv1yF4l_Ue46sWwhAQU_D9E/appointments"
+      },
+      {
+        company: "ExactTrak Limited",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/8VSmwv1yF4l_Ue46sWwhAQU_D9E/appointments"
+      },
+      {
+        company: "Transversal Corporation Limited",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/8VSmwv1yF4l_Ue46sWwhAQU_D9E/appointments"
+      }
+    ],
+    advisoryRoles: [],
+    syndicateMemberships: [
+      {
+        name: "Cambridge Angels",
+        url: "https://www.cambridgeangels.com/angels"
+      },
+      {
+        name: "Manchester Angels",
+        url: "https://delta2020.com/the-team/simon-thorpe"
+      },
+      {
+        name: "Angel Academe",
+        url: "https://delta2020.com/the-team/simon-thorpe"
+      }
+    ],
+    geographicPatterns: [
+      "United Kingdom"
+    ],
+    careerMilestones: [
+      {
+        year: 2009,
+        event: "Appointed a designated member of Delta2020 LLP, the Cambridge registered investment, consulting and mentoring vehicle he established."
+      },
+      {
+        year: 2017,
+        event: "Voted UKBAA Angel Investor of the Year 2016/2017."
+      },
+      {
+        year: 2019,
+        event: "Appointed a director of Cambridge Angels Group Ltd."
+      },
+      {
+        year: 2020,
+        event: "Takes up the role of Chair of Cambridge Angels."
+      },
+      {
+        year: 2023,
+        event: "Steps down as a director of Cambridge Angels Group Ltd, remaining an individual member of the group."
+      }
+    ],
+    exitCount: null,
+    exitCountBasis: null,
+    publicHoldings: [],
+    strategicValue: "Thorpe is a qualified Chartered Accountant whose 25 year City career covered equity research, sales and capital markets with institutional investors and corporates, which bears on company finance and on preparing a business for investors. He states a focus on technology and technology enabled healthcare companies in the UK and reports a portfolio in the tens of companies, so he has repeated early-stage financing experience to draw on. His membership of Cambridge Angels, Manchester Angels and Angel Academe gives founders access to three separate UK angel networks.",
+    biography: "Simon Thorpe is a UK angel investor based in Cambridge and a qualified Chartered Accountant who spent a 25 year career in the City working in equity research, sales and capital markets. In October 2009 he was appointed a designated member of Delta2020 LLP, registered at the Bradfield Centre on Cambridge Science Park, which Inngot describes as an investment, consulting and mentoring company he established. He was voted UKBAA's Angel Investor of the Year 2016/2017 and is a Fellow of Entrepreneurship at Cambridge Judge Business School. He was a director of Cambridge Angels Group Ltd from March 2019 to September 2023 and took up the chair of Cambridge Angels in 2020; he remains an individual member of the group, and is also a member of Manchester Angels and Angel Academe. His own company page describes him as an active angel investor in UK companies focused on technology and technology enabled healthcare.",
+    lastChecked: "2026-09-02",
+    investments: [
+      {
+        name: "Inngot",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: "Fintech",
+        subsector: "online tools for businesses and entrepreneurs to identify, value and raise finance against the value of IP",
+        role: null,
+        evidence: [
+          {
+            url: "https://www.inngot.com/news-views/meet-the-inngot-team-simon-thorpe.html",
+            type: "portfolio-page",
+            checked: "2026-09-02"
+          }
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Delta2020 team page",
+        url: "https://delta2020.com/the-team/simon-thorpe"
+      },
+      {
+        label: "Inngot, Meet the Inngot Team: Simon Thorpe",
+        url: "https://www.inngot.com/news-views/meet-the-inngot-team-simon-thorpe.html"
+      },
+      {
+        label: "UKBAA awards judge biography",
+        url: "https://ukbaa.org.uk/awards/judges/simon-thorpe/"
+      },
+      {
+        label: "UKBAA news, Simon Thorpe on his new role as Chair of Cambridge Angels",
+        url: "https://www.ukbaa.org.uk/news/simon-thorpe-talks-about-his-new-role-as-chair-of-cambridge-angels-and-emphasises-the-uk-growth-opportunities-in-digital-manufacturing/"
+      },
+      {
+        label: "Cambridge Angels member listing",
+        url: "https://www.cambridgeangels.com/angels"
+      },
+      {
+        label: "UK Companies House, officer appointments for Simon Charles Thorpe",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/8VSmwv1yF4l_Ue46sWwhAQU_D9E/appointments"
+      },
+      {
+        label: "UK Companies House, DELTA2020 LLP officers",
+        url: "https://find-and-update.company-information.service.gov.uk/company/OC349471/officers"
+      }
+    ]
+  },
+  "nancy-hayes": {
+    name: "Nancy Hayes",
+    type: "angel",
+    investingStatus: "active",
+    investingMode: "personal capital",
+    vehicle: null,
+    vehicleNote: "Hayes served as Managing Director of the Golden Seeds Silicon Valley chapter, an organisational role at an angel group. Sources describing her portfolio of more than 30 women-led companies present it as her own angel portfolio rather than money she manages for others. No investment rows are recorded because no individual company could be attributed to her by a source.",
+    role: "Angel investor, and management consultant and executive coach through NKH Group",
+    basedIn: "San Francisco, California, United States",
+    education: [
+      "MBA, University of Chicago"
+    ],
+    previousExperience: [
+      "Senior executive, IBM Corporation (20 years)",
+      "CEO, STARBRIGHT Foundation",
+      "CEO and President, WISE Senior Services",
+      "Dean, College of Business, San Francisco State University (6 years)",
+      "CFO and Vice President of Administration, San Francisco State University",
+      "Co-founder, MoolaHoop (2013)",
+      "Managing Director, Golden Seeds Silicon Valley chapter"
+    ],
+    operatingBackground: [
+      "corporate executive",
+      "nonprofit chief executive",
+      "academic administrator",
+      "founder"
+    ],
+    statedSectorFocus: [],
+    statedStageFocus: [],
+    checkSize: null,
+    leadBehavior: "Unknown",
+    capabilities: [
+      {
+        capability: "Operations",
+        evidence: "My strengths include general management, vision, leadership, and execution, with a proven talent for change management and building strong teams.",
+        url: "http://nkhgroup.com/"
+      },
+      {
+        capability: "Fundraising",
+        evidence: "I welcome hearing from small business owners and high growth entrepreneurs, especially women, seeking advice on strategy and funding.",
+        url: "http://nkhgroup.com/"
+      },
+      {
+        capability: "Industry Network",
+        evidence: "Importantly, also try to help the entrepreneurs I advise with referrals to other angel investors and angel groups, as well as other funding sources such as loans and crowdfunding and to resources such as incubators and accelerators.",
+        url: "http://nkhgroup.com/"
+      }
+    ],
+    boardSeats: [],
+    advisoryRoles: [],
+    syndicateMemberships: [
+      {
+        name: "Golden Seeds",
+        url: "http://nkhgroup.com/"
+      },
+      {
+        name: "Rising Tide",
+        url: "http://nkhgroup.com/"
+      }
+    ],
+    geographicPatterns: [],
+    careerMilestones: [
+      {
+        year: 2013,
+        event: "Co-founds MoolaHoop, a rewards-based crowdfunding platform for women-owned small businesses."
+      },
+      {
+        year: 2014,
+        event: "Becomes an active angel investor."
+      },
+      {
+        year: 2015,
+        event: "Becomes an active member of Golden Seeds, an early stage angel investment group focused on women-led companies."
+      }
+    ],
+    exitCount: null,
+    exitCountBasis: null,
+    publicHoldings: [],
+    strategicValue: "Hayes spent 20 years as a senior executive at IBM, ran two nonprofits as chief executive, and served as dean of the College of Business and then CFO and Vice President of Administration at San Francisco State University, so her sourced strengths sit in general management, change management and team building. She co-founded the crowdfunding platform MoolaHoop in 2013, which gives her direct experience of raising money for early stage, women-owned businesses. Her own site states that she advises entrepreneurs on strategy and funding and refers them on to other angel investors, angel groups, loans, crowdfunding, incubators and accelerators.",
+    biography: "Nancy Hayes is an angel investor and management consultant based in San Francisco. She left IBM after 20 years as a senior executive, then served as CEO of the STARBRIGHT Foundation and as CEO and President of WISE Senior Services, before spending six years as dean of the College of Business at San Francisco State University and then as its CFO and Vice President of Administration. In 2013 she co-founded MoolaHoop, a rewards-based crowdfunding platform for women-owned small businesses, and she has been an active angel investor since 2014; a 2022 How Women Lead podcast profile described her as holding a portfolio of more than 30 women-led companies. She has been an active member of the angel group Golden Seeds since 2015 and later served as Managing Director of its Silicon Valley chapter, and she is also a member of the Rising Tide angel investor programme. She was listed as a judge for San Francisco State University's Innovation Pitch Competition held in April 2026, where she is described as having been an active angel investor since 2014.",
+    lastChecked: "2026-09-02",
+    investments: [],
+    sources: [
+      {
+        label: "Personal site, NKH Group",
+        url: "http://nkhgroup.com/"
+      },
+      {
+        label: "How Women Lead, episode profile (19 October 2022)",
+        url: "https://www.howwomenlead.com/post/skills-needed-for-both-founders-and-investors-with-nancy-hayes"
+      },
+      {
+        label: "San Francisco State University College of Business, 2026 Innovation Pitch Competition judge biography",
+        url: "https://cob.sfsu.edu/initiatives-centers/2026-innovation-pitch-competition-online-event"
+      },
+      {
+        label: "Silicon Valley Open Doors speaker biography",
+        url: "https://www.svod.org/nancy-hayes-2/"
+      },
+      {
+        label: "Founders Network, presenting to VCs and angel investors",
+        url: "https://foundersnetwork.com/presenting-to-vcs-and-angel-investors-with-nancy-hayes/"
+      }
+    ]
+  },
+  "pam-garside": {
+    name: "Pam Garside",
+    type: "angel",
+    investingStatus: "active",
+    investingMode: "personal capital",
+    vehicle: null,
+    vehicleNote: "Pam Garside sits on the board of Cambridge Angels and previously chaired the group. The investment rows below are only deals she describes in the first person as her own, in answer to a question about deals she has invested in. They are not Cambridge Angels group deals and no group portfolio has been attributed to her.",
+    role: "Angel investor in early-stage health tech companies",
+    basedIn: null,
+    education: [
+      "Zoology degree, Durham University",
+      "Master's in Hospital and Health Care Administration, University of Minnesota"
+    ],
+    previousExperience: [
+      "NHS graduate management training",
+      "Founder, Newhealth, a management consultancy focused on organisational strategy and development in health care"
+    ],
+    operatingBackground: [
+      "academic",
+      "management consultant"
+    ],
+    statedSectorFocus: [
+      "early-stage health tech"
+    ],
+    statedStageFocus: [],
+    checkSize: null,
+    leadBehavior: "Unknown",
+    capabilities: [
+      {
+        capability: "Industry Network",
+        evidence: "Pam advises a number of life science companies, health technology accelerators and start-ups in the UK and Europe.",
+        url: "https://ukbaa.org.uk/our-programmes/women-backing-women/pam-garside-2/"
+      }
+    ],
+    boardSeats: [
+      {
+        company: "Crown Place Venture Capital Trust",
+        status: "current",
+        url: "https://ukbaa.org.uk/our-programmes/women-backing-women/pam-garside-2/"
+      }
+    ],
+    advisoryRoles: [],
+    syndicateMemberships: [
+      {
+        name: "Cambridge Angels",
+        url: "https://www.cambridgeangels.com/angels"
+      }
+    ],
+    geographicPatterns: [
+      "United Kingdom"
+    ],
+    careerMilestones: [
+      {
+        year: 2016,
+        event: "Joins Cambridge Angels, recruited by the then chair Simon Thorpe."
+      }
+    ],
+    exitCount: null,
+    exitCountBasis: null,
+    publicHoldings: [],
+    strategicValue: "Garside has spent her career in health care systems and digital health in the UK and internationally, and advises life science companies, health technology accelerators and start-ups in the UK and Europe. She founded and co-chairs The Cambridge Health Network, a membership group of senior players in the UK health sector, which gives her direct reach into UK health buyers and executives. She has said she treats a team's deep understanding of the complexities of the NHS procurement process as a green flag, which is the kind of market judgement she brings to health tech founders.",
+    biography: "Pam Garside is an angel investor in early-stage health tech companies and a Fellow of the Judge Business School at the University of Cambridge. She read Zoology at Durham, completed NHS graduate management training and took a Master's in Hospital and Health Care Administration at the University of Minnesota before a career in health care systems and digital health in the UK and internationally. She is the founder and co-chair of The Cambridge Health Network, a member of the Investment Committee of Cambridge Enterprise, and a board member of Crown Place Venture Capital Trust. She was recruited to Cambridge Angels in 2016 by the then chair Simon Thorpe, later became the group's first female chair, and now sits on its board. Her first investment came when an Australian company gave her equity in lieu of fees, and she has since backed UK health tech and AI companies including Accurx and Kalium Health.",
+    lastChecked: "2026-09-02",
+    investments: [
+      {
+        name: "Accurx",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: "Digital Health",
+        subsector: null,
+        role: null,
+        evidence: [
+          {
+            url: "https://www.syndicateroom.com/articles/pam-garsides-guide-to-spotting-winning-health-tech-founders",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "Chiron Medical",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: "Diagnostics",
+        subsector: "AI technology for mammograms",
+        role: null,
+        evidence: [
+          {
+            url: "https://www.syndicateroom.com/articles/pam-garsides-guide-to-spotting-winning-health-tech-founders",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "Unlikely AI",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: "AI",
+        subsector: "a very credible alternative to current LLMs",
+        role: null,
+        evidence: [
+          {
+            url: "https://www.cambridgeangels.com/angel-interviewss/2023/9/25/5-questions-an-interview-with-the-current-chair-of-cambridge-angels-pam-garside-n7tp2",
+            type: "partner-bio",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "Kalium Health",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: "Diagnostics",
+        subsector: null,
+        role: null,
+        evidence: [
+          {
+            url: "https://www.cambridgeangels.com/angel-interviewss/2023/9/25/5-questions-an-interview-with-the-current-chair-of-cambridge-angels-pam-garside-n7tp2",
+            type: "partner-bio",
+            checked: "2026-09-02"
+          }
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "UK Business Angels Association, Women Backing Women profile",
+        url: "https://ukbaa.org.uk/our-programmes/women-backing-women/pam-garside-2/"
+      },
+      {
+        label: "Cambridge Health Network team page",
+        url: "https://cambridgehealthnetwork.com/about-us/our-team/"
+      },
+      {
+        label: "DigitalHealth.London profile",
+        url: "https://digitalhealth.london/profile/pam-garside"
+      },
+      {
+        label: "Cambridge Angels interview with Pam Garside",
+        url: "https://www.cambridgeangels.com/angel-interviewss/2023/9/25/5-questions-an-interview-with-the-current-chair-of-cambridge-angels-pam-garside-n7tp2"
+      },
+      {
+        label: "SyndicateRoom interview, An angel's prescription",
+        url: "https://www.syndicateroom.com/articles/pam-garsides-guide-to-spotting-winning-health-tech-founders"
+      },
+      {
+        label: "Cambridge Angels member directory",
+        url: "https://www.cambridgeangels.com/angels"
+      }
+    ]
+  },
+  "robert-sansom": {
+    name: "Robert Sansom",
+    type: "angel",
+    investingStatus: "active",
+    investingMode: "personal capital",
+    vehicle: null,
+    vehicleNote: "Sansom founded Cambridge Angels and has chaired it. The single investment row below comes from financing announcements that name him individually as leading the round, separately from the group. No Cambridge Angels group portfolio has been attributed to him.",
+    role: "Angel investor and mentor to technology startup businesses",
+    basedIn: "Cambridge, United Kingdom",
+    education: [
+      "PhD, Carnegie Mellon University"
+    ],
+    previousExperience: [
+      "Co-founder and Chief Technical Officer, FORE Systems (NASDAQ listing 1994, sold to Marconi plc in 1999)"
+    ],
+    operatingBackground: [
+      "founder",
+      "engineer"
+    ],
+    statedSectorFocus: [],
+    statedStageFocus: [],
+    checkSize: null,
+    leadBehavior: "Lead",
+    capabilities: [
+      {
+        capability: "Technical",
+        evidence: "Prior to becoming an angel investor, he co-founded FORE Systems, a leader in high-speed data communications, where he was Chief Technical Officer.",
+        url: "https://enterprisehub.raeng.org.uk/mentors/dr-robert-sansom-freng"
+      },
+      {
+        capability: "Industry Network",
+        evidence: "He is the founder of the Cambridge Angels, a group of expert technology and biotechnology entrepreneurs who invest in and mentor technology startups across the UK.",
+        url: "https://enterprisehub.raeng.org.uk/mentors/dr-robert-sansom-freng"
+      }
+    ],
+    boardSeats: [
+      {
+        company: "Myrtle Software Limited",
+        status: "current",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/d9-iEVt3GMe8vP1X0k7leCl5Y_c/appointments"
+      },
+      {
+        company: "Featurespace Limited",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/d9-iEVt3GMe8vP1X0k7leCl5Y_c/appointments"
+      },
+      {
+        company: "IQGeo Group Limited",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/d9-iEVt3GMe8vP1X0k7leCl5Y_c/appointments"
+      },
+      {
+        company: "Arachnys Information Services Limited",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/d9-iEVt3GMe8vP1X0k7leCl5Y_c/appointments"
+      },
+      {
+        company: "CRFS Limited",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/d9-iEVt3GMe8vP1X0k7leCl5Y_c/appointments"
+      },
+      {
+        company: "Focal Point Positioning Ltd.",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/d9-iEVt3GMe8vP1X0k7leCl5Y_c/appointments"
+      },
+      {
+        company: "Cambridge Communication Systems Limited",
+        status: "former",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/d9-iEVt3GMe8vP1X0k7leCl5Y_c/appointments"
+      }
+    ],
+    advisoryRoles: [
+      {
+        company: "Royal Academy of Engineering Enterprise Hub",
+        status: "current",
+        url: "https://enterprisehub.raeng.org.uk/mentors/dr-robert-sansom-freng"
+      }
+    ],
+    syndicateMemberships: [
+      {
+        name: "Cambridge Angels",
+        url: "https://www.cambridgeangels.com/angels"
+      }
+    ],
+    geographicPatterns: [
+      "United Kingdom",
+      "United States"
+    ],
+    careerMilestones: [
+      {
+        year: 1994,
+        event: "FORE Systems, which he co-founded, goes public on NASDAQ."
+      },
+      {
+        year: 1999,
+        event: "FORE Systems is sold to Marconi plc."
+      },
+      {
+        year: 2010,
+        event: "Elected a Fellow of the Royal Academy of Engineering."
+      },
+      {
+        year: 2012,
+        event: "Leads the investment in Cambridge Communication Systems and becomes its chairman."
+      }
+    ],
+    exitCount: null,
+    exitCountBasis: null,
+    publicHoldings: [],
+    strategicValue: "Sansom co-founded FORE Systems and was its Chief Technical Officer through a 1994 NASDAQ listing and a 1999 sale to Marconi plc, so he has taken a deep technology company from research to public markets and to exit. He describes his own contribution as considerable experience taking knowledge-based technology business from initial idea through to becoming successful businesses. He founded Cambridge Angels and has served on the boards of Cambridge technology companies including Featurespace, IQGeo, CRFS, Arachnys and Myrtle Software, which gives founders access to an established Cambridge technology network.",
+    biography: "Dr Robert Sansom is an angel investor and mentor to technology-based startup businesses in the UK and US, and the founder of Cambridge Angels. Before angel investing he co-founded FORE Systems, a high-speed data communications company, where he was Chief Technical Officer; FORE went public on NASDAQ in 1994 and was sold to Marconi plc in 1999. He was elected a Fellow of the Royal Academy of Engineering in 2010 and is a Bye-Fellow of Emmanuel College, Cambridge. UK Companies House records him as a director of Cambridge technology companies including Featurespace, IQGeo Group, CRFS, Arachnys Information Services, Focal Point Positioning and Cambridge Communication Systems, with Myrtle Software Limited his current active startup directorship. In January 2012 he led the round that funded Cambridge Communication Systems and became its chairman.",
+    lastChecked: "2026-09-02",
+    investments: [
+      {
+        name: "Cambridge Communication Systems",
+        stage: null,
+        year: 2012,
+        yearPrecision: "year",
+        sector: "Hardware",
+        subsector: "small-cell microwave backhaul system",
+        role: "Led the round and became Chairman of CCS",
+        evidence: [
+          {
+            url: "https://www.cambridgenetwork.co.uk/news/ccs-secures-ps13-million-investment-seed-round",
+            type: "deal-announcement",
+            checked: "2026-09-02"
+          },
+          {
+            url: "https://sciencebusiness.net/news/75608/Imperial-Innovations-invests-%C2%A3250K-in-Cambridge-mobile-infrastructure-company",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Royal Academy of Engineering Enterprise Hub mentor profile",
+        url: "https://enterprisehub.raeng.org.uk/mentors/dr-robert-sansom-freng"
+      },
+      {
+        label: "Emmanuel College, Cambridge, Fellows page",
+        url: "https://www.emma.cam.ac.uk/about/contact/fellows/?id=238"
+      },
+      {
+        label: "UK Companies House officer appointments, Robert Daniell Sansom",
+        url: "https://find-and-update.company-information.service.gov.uk/officers/d9-iEVt3GMe8vP1X0k7leCl5Y_c/appointments"
+      },
+      {
+        label: "Cambridge Network, CCS seed round announcement",
+        url: "https://www.cambridgenetwork.co.uk/news/ccs-secures-ps13-million-investment-seed-round"
+      },
+      {
+        label: "Science Business, Imperial Innovations invests in CCS (19 Jan 2012)",
+        url: "https://sciencebusiness.net/news/75608/Imperial-Innovations-invests-%C2%A3250K-in-Cambridge-mobile-infrastructure-company"
+      },
+      {
+        label: "Cambridge Angels member directory",
+        url: "https://www.cambridgeangels.com/angels"
+      },
+      {
+        label: "Cambridge Angels news item on myrtle.ai",
+        url: "https://www.cambridgeangels.com/news/04/killer-50/ones-watch/myrtleai-p897e"
+      }
+    ]
+  },
+  "ryo-ishizuka": {
+    name: "Ryo Ishizuka",
+    type: "angel",
+    investingStatus: "active",
+    investingMode: "personal capital",
+    vehicle: null,
+    vehicleNote: null,
+    role: "Angel investor",
+    basedIn: "Seattle, Washington, United States",
+    education: [
+      "Political Economy, Johns Hopkins University"
+    ],
+    previousExperience: [
+      "Co-founder and chief architect, RockYou (founded 2006, Silicon Valley); COO, RockYou Asia",
+      "Co-founder, Mercari (2013)",
+      "CEO, Mercari USA (2014-2019)"
+    ],
+    operatingBackground: [
+      "founder",
+      "engineer"
+    ],
+    statedSectorFocus: [],
+    statedStageFocus: [],
+    checkSize: null,
+    leadBehavior: "Lead",
+    capabilities: [
+      {
+        capability: "Operations",
+        evidence: "2013年に日本でメルカリを創業、翌年にMercari USAを立ち上げてCEOに就任。2019年退社までメルカリの日米立ち上げ・成長に貢献する。",
+        url: "https://prtimes.jp/main/html/rd/p/000000044.000042665.html"
+      }
+    ],
+    boardSeats: [],
+    advisoryRoles: [
+      {
+        company: "FiNANCiE",
+        status: null,
+        url: "https://prtimes.jp/main/html/rd/p/000000044.000042665.html"
+      }
+    ],
+    syndicateMemberships: [],
+    geographicPatterns: [
+      "Japan",
+      "United States"
+    ],
+    careerMilestones: [
+      {
+        year: 2006,
+        event: "Co-founds the social game developer RockYou in Silicon Valley."
+      },
+      {
+        year: 2013,
+        event: "Co-founds Mercari in Japan."
+      },
+      {
+        year: 2014,
+        event: "Launches Mercari USA and becomes its CEO."
+      },
+      {
+        year: 2019,
+        event: "Leaves Mercari and begins working as an angel investor."
+      }
+    ],
+    exitCount: null,
+    exitCountBasis: null,
+    publicHoldings: [],
+    strategicValue: "Ishizuka launched Mercari USA and ran it as CEO from 2014, giving him direct operating experience of taking a Japanese consumer marketplace into the United States. He has said he wants to back companies that are already expanding into the United States or seriously intend to, and that he mentors startups through accelerators from his base in Seattle. In the Teatis seed round he is recorded as having led the investment alongside an institutional fund and another angel.",
+    biography: "Ryo Ishizuka moved to Boston at the age of 14 and graduated from Johns Hopkins University with a major in political economy. In 2006 he co-founded the social game developer RockYou in Silicon Valley, where he served as chief architect and as COO of RockYou Asia. He co-founded Mercari in Japan in 2013, launched Mercari USA the following year and became its CEO, contributing to the company's launch and growth in both Japan and the United States until he left in early 2019. Since leaving Mercari he has worked as an angel investor, and company announcements describe him as active in Seattle as an individual investor, startup mentor and NPO representative. In a 2025 interview page he is introduced as a former Mercari co-founder and angel investor, and says he invests in and advises startups from Seattle and mentors at accelerators.",
+    lastChecked: "2026-09-02",
+    investments: [
+      {
+        name: "FiNANCiE",
+        stage: null,
+        year: 2020,
+        yearPrecision: "year",
+        sector: "Crypto",
+        subsector: "token issuance and fan community service",
+        role: null,
+        evidence: [
+          {
+            url: "https://ascii.jp/elem/000/004/011/4011471/",
+            type: "deal-announcement",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "Teatis",
+        stage: "Seed",
+        year: 2021,
+        yearPrecision: "year",
+        sector: "Consumer Health",
+        subsector: "sugar-blocking teas and superfood powders for diabetic-friendly diets",
+        role: null,
+        evidence: [
+          {
+            url: "https://www.worldteanews.com/products-equipment/teatis-accrues-more-1-million-seed-funding",
+            type: "deal-announcement",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "NutmegLabs",
+        stage: null,
+        year: 2023,
+        yearPrecision: "year",
+        sector: "Enterprise Software",
+        subsector: "tourism DX platform digitising reservations, payments and on-site operations",
+        role: null,
+        evidence: [
+          {
+            url: "https://prtimes.jp/main/html/rd/p/000000006.000109188.html",
+            type: "deal-announcement",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "Sagri",
+        stage: "Series A",
+        year: 2024,
+        yearPrecision: "year",
+        sector: "Agtech",
+        subsector: "satellite data and AI analysis of farmland cultivation, soil and water management",
+        role: null,
+        evidence: [
+          {
+            url: "https://sagri.tokyo/2024/08/08/seriesa/",
+            type: "deal-announcement",
+            checked: "2026-09-02"
+          },
+          {
+            url: "https://prtimes.jp/main/html/rd/p/000000149.000040885.html",
+            type: "deal-announcement",
+            checked: "2026-09-02"
+          }
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "Interview, junglecity.com",
+        url: "https://www.junglecity.com/people/hottalk/ryo-ishizuka/"
+      },
+      {
+        label: "XTech Ventures interview page",
+        url: "https://www.xtech-ventures.co.jp/info/375"
+      },
+      {
+        label: "FiNANCiE advisor appointment release, carrying his profile block",
+        url: "https://prtimes.jp/main/html/rd/p/000000044.000042665.html"
+      },
+      {
+        label: "ASCII report on the FiNANCiE round",
+        url: "https://ascii.jp/elem/000/004/011/4011471/"
+      },
+      {
+        label: "World Tea News on the Teatis seed round",
+        url: "https://www.worldteanews.com/products-equipment/teatis-accrues-more-1-million-seed-funding"
+      },
+      {
+        label: "NutmegLabs investment release",
+        url: "https://prtimes.jp/main/html/rd/p/000000006.000109188.html"
+      },
+      {
+        label: "Sagri Series A release on the company's own site",
+        url: "https://sagri.tokyo/2024/08/08/seriesa/"
+      },
+      {
+        label: "Sagri Series A release on PR Times",
+        url: "https://prtimes.jp/main/html/rd/p/000000149.000040885.html"
+      }
+    ]
+  },
+  "barbara-clarke": {
+    name: "Barbara Clarke",
+    type: "angel",
+    investingStatus: "active",
+    investingMode: "personal capital",
+    vehicle: null,
+    vehicleNote: "The investment rows below are cheques Barbara Clarke wrote from her own money. The Boston Globe reports that she has put several million dollars of her own capital into about 60 companies since 2013, and the ChIPs and xCITE bios describe a personal portfolio. She separately chairs The Impact Seat Foundation, a Boston nonprofit that runs its own impact-investing portfolio, and sits on the investment committees of several Portfolia venture funds where she has led or co-led deals (RenovoRX, Tenacity, Poshly) using fund capital rather than her own. Foundation and Portfolia fund deals are deliberately excluded from the rows.",
+    role: "Angel investor; Founder and Board Chair, The Impact Seat Foundation; Founding Principal, The Impact Seat LLC",
+    basedIn: "Boston, Massachusetts, United States",
+    education: [
+      "B.A. Quantitative Economics, Tufts University",
+      "M.A. International Economics and Finance, Brandeis University (Lemberg International Business School)"
+    ],
+    previousExperience: [
+      "Management consultant, KPMG and PricewaterhouseCoopers",
+      "CFO, Cradles to Crayons",
+      "President, Tufts University Alumni Association",
+      "National Director, National Alliance for Grieving Children"
+    ],
+    operatingBackground: [
+      "economist",
+      "management consultant",
+      "nonprofit executive"
+    ],
+    statedSectorFocus: [],
+    statedStageFocus: [],
+    checkSize: "USD 5,000-10,000 (her first three investments, 2013; no current typical size is stated by any source)",
+    leadBehavior: "Lead",
+    capabilities: [
+      {
+        capability: "Industry Network",
+        evidence: "Also, don't overthink how I can help or underestimate the reach of my network.",
+        url: "https://medium.com/@SheStarts/meet-the-investors-who-invest-in-women-barbara-clarke-7740ec81ce34"
+      },
+      {
+        capability: "Finance",
+        evidence: "Barbara Clarke is an economist and investor focused on early stage, high growth companies.",
+        url: "https://xcite.business.uconn.edu/person/barbara-clarke/"
+      }
+    ],
+    boardSeats: [
+      {
+        company: "Portfolia Inc.",
+        status: "current",
+        url: "https://xcite.business.uconn.edu/person/barbara-clarke/"
+      },
+      {
+        company: "Founders First Capital Partners",
+        status: "current",
+        url: "https://xcite.business.uconn.edu/person/barbara-clarke/"
+      }
+    ],
+    advisoryRoles: [
+      {
+        company: "CareAcademy",
+        status: "current",
+        url: "https://medium.com/@SheStarts/meet-the-investors-who-invest-in-women-barbara-clarke-7740ec81ce34"
+      }
+    ],
+    syndicateMemberships: [
+      {
+        name: "Astia Angels",
+        url: "https://xcite.business.uconn.edu/person/barbara-clarke/"
+      },
+      {
+        name: "Pipeline Angels",
+        url: "https://xcite.business.uconn.edu/person/barbara-clarke/"
+      }
+    ],
+    geographicPatterns: [
+      "United States",
+      "Europe"
+    ],
+    careerMilestones: [
+      {
+        year: 2013,
+        event: "Writes her first startup cheques after a career in management consulting."
+      },
+      {
+        year: 2015,
+        event: "Co-founds The Impact Seat with Teresa Nelson."
+      },
+      {
+        year: 2021,
+        event: "The Impact Seat Foundation launches."
+      }
+    ],
+    exitCount: null,
+    exitCountBasis: null,
+    publicHoldings: [],
+    strategicValue: "Clarke is an economist who spent more than a decade in management consulting at KPMG and PricewaterhouseCoopers valuing intellectual property, and she has been writing early-stage cheques continuously since 2013. She sits on the boards of Portfolia Inc. and Founders First Capital Partners and on the investment committees of several Portfolia funds, so she can speak to how institutional early-stage capital is assembled as well as to angel rounds. Her network across Astia Angels, Pipeline Angels and Portfolia is something she offers explicitly to founders.",
+    biography: "Barbara Clarke is a Boston-based angel investor who began investing in 2013 after a career in management consulting at KPMG and PricewaterhouseCoopers, where she worked on intellectual property valuations. The Boston Globe reported in 2022 that she had put several million dollars into about 60 companies plus 15 funds that invest in women entrepreneurs, and her first three cheques ranged from 5,000 to 10,000 US dollars. She is a founding member of Astia Angels and a Pipeline Angels alumna, and she leads and co-leads deals for Portfolia's Rising Tide, Enterprise and FirstStep funds. In 2015 she co-founded The Impact Seat with Teresa Nelson, a consulting and research firm, and she is Founder and Board Chair of The Impact Seat Foundation, a Boston nonprofit combining impact investing, grantmaking and advocacy. She holds a B.A. in quantitative economics from Tufts University and an M.A. in international economics and finance from Brandeis University.",
+    lastChecked: "2026-09-02",
+    investments: [
+      {
+        name: "AbbeyPost",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: null,
+        subsector: null,
+        role: null,
+        evidence: [
+          {
+            url: "https://switchthefuture.com/2014/10/08/angel-investor-looks-like-barbara-clarke/",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "Cissé Trading Co.",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: null,
+        subsector: null,
+        role: null,
+        evidence: [
+          {
+            url: "https://switchthefuture.com/2014/10/08/angel-investor-looks-like-barbara-clarke/",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "CueThink",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: null,
+        subsector: null,
+        role: null,
+        evidence: [
+          {
+            url: "https://switchthefuture.com/2014/10/08/angel-investor-looks-like-barbara-clarke/",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "Goaloop",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: null,
+        subsector: null,
+        role: null,
+        evidence: [
+          {
+            url: "https://switchthefuture.com/2014/10/08/angel-investor-looks-like-barbara-clarke/",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "LaneHoney",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: null,
+        subsector: null,
+        role: null,
+        evidence: [
+          {
+            url: "https://switchthefuture.com/2014/10/08/angel-investor-looks-like-barbara-clarke/",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "Poshly",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: null,
+        subsector: null,
+        role: null,
+        evidence: [
+          {
+            url: "https://switchthefuture.com/2014/10/08/angel-investor-looks-like-barbara-clarke/",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "Traklight",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: null,
+        subsector: null,
+        role: null,
+        evidence: [
+          {
+            url: "https://switchthefuture.com/2014/10/08/angel-investor-looks-like-barbara-clarke/",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "CareAcademy",
+        stage: null,
+        year: 2013,
+        yearPrecision: "year",
+        sector: "EdTech",
+        subsector: "on-line platform for training caregivers",
+        role: "First investor",
+        evidence: [
+          {
+            url: "https://medium.com/@SheStarts/meet-the-investors-who-invest-in-women-barbara-clarke-7740ec81ce34",
+            type: "press",
+            checked: "2026-09-02"
+          },
+          {
+            url: "https://switchthefuture.com/2014/10/08/angel-investor-looks-like-barbara-clarke/",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "Founders First Capital Partners",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: "Fintech",
+        subsector: "financial services company that's focused on investing in underrepresented founders",
+        role: null,
+        evidence: [
+          {
+            url: "https://investorconnect.org/wp-content/uploads/2021/11/Transcript-Barbara-Clarke-of-The-Impact-Seat.pdf",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      },
+      {
+        name: "Full Harvest",
+        stage: null,
+        year: null,
+        yearPrecision: null,
+        sector: "Foodtech",
+        subsector: "a marketplace that connects farmers, organic farmers and food manufacturers",
+        role: null,
+        evidence: [
+          {
+            url: "https://investorconnect.org/wp-content/uploads/2021/11/Transcript-Barbara-Clarke-of-The-Impact-Seat.pdf",
+            type: "press",
+            checked: "2026-09-02"
+          }
+        ]
+      }
+    ],
+    sources: [
+      {
+        label: "The Impact Seat Foundation - About",
+        url: "https://www.impactseat.org/about"
+      },
+      {
+        label: "The Impact Seat - About",
+        url: "https://www.impactseat.com/about"
+      },
+      {
+        label: "Boston Globe Magazine, 'Write the damn check', 28 October 2022",
+        url: "https://www.bostonglobe.com/2022/10/28/magazine/tale-two-angel-investors/"
+      },
+      {
+        label: "Portfolia partner page",
+        url: "https://www.portfolia.co/partner/barbara-clarke"
+      },
+      {
+        label: "xCITE, University of Connecticut - Women in Entrepreneurship Network profile",
+        url: "https://xcite.business.uconn.edu/person/barbara-clarke/"
+      },
+      {
+        label: "Investor Connect podcast transcript (2021)",
+        url: "https://investorconnect.org/wp-content/uploads/2021/11/Transcript-Barbara-Clarke-of-The-Impact-Seat.pdf"
+      },
+      {
+        label: "SWITCH, 'This is What an Angel Investor Looks Like', 8 October 2014",
+        url: "https://switchthefuture.com/2014/10/08/angel-investor-looks-like-barbara-clarke/"
+      },
+      {
+        label: "SheStarts interview, 'Meet the Investors Who Invest in Women'",
+        url: "https://medium.com/@SheStarts/meet-the-investors-who-invest-in-women-barbara-clarke-7740ec81ce34"
+      },
+      {
+        label: "Massachusetts Conference for Women speaker page (2019)",
+        url: "https://www.maconferenceforwomen.org/speakers/barbara-clarke/"
+      },
+      {
+        label: "ChIPs Global Summit 2018 speaker page",
+        url: "https://chipsnetwork.swoogo.com/2018-global-summit/speaker/36306/barbara-clarke"
+      },
+      {
+        label: "Northern New England Women's Investor Network event page (2022)",
+        url: "https://nnewin.org/event/vt-win-herstory-barbara-clarke-founder-and-board-chair-the-impact-seat-foundation/"
+      },
+      {
+        label: "Innovation Women featured profile",
+        url: "https://innovationwomen.com/featured-profile-barbara-clarke/"
       }
     ]
   }
