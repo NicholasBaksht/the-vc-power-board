@@ -90,6 +90,14 @@
      the current firm, belong to CAREER view and are excluded from
      the current-firm comparison - an investment stays with the
      organization the person was at when it happened.
+     SHARED VOCABULARY (same rule, applied to labels rather than time):
+     the two sides record sectors differently - researched display
+     strings on the partner side, taxonomy bucket slugs on the firm
+     side - so both are projected through pbehSectorLabel() before any
+     comparison. Comparing the raw values matched nothing and rendered
+     the firm at 0% on every sector row. A sector the taxonomy cannot
+     express is dropped from the comparison rather than scored against
+     a firm zero; it keeps its researched label in the detail view.
 
    ENRICHMENT PIPELINE (how rows get richer - the only sanctioned path):
      DISCOVER   the admin research queue computes, per partner, which
@@ -196,6 +204,71 @@ function pbehRoundBucket(round) {
   if (m) return 'Series ' + m[1].toUpperCase();
   if (r.indexOf('growth') >= 0) return 'Growth';
   return null;
+}
+
+/* ---------- sector vocabulary: the two sides speak different dialects ----------
+   The partner side records sectors as researched display strings
+   ("Enterprise Software", "Biotech"). The firm side derives them from
+   DEAL_SECTOR_MAP, which emits taxonomy.js BUCKET SLUGS
+   ("enterprise-software", "healthcare"). Those two vocabularies have
+   ZERO strings in common, so the old comparison matched a partner label
+   against a firm slug, found nothing, and printed 0% for the firm on
+   every sector row. Stage was never affected: both sides already run
+   through pbehRoundBucket.
+
+   SECTOR_MAP in taxonomy.js is the one place that already knows how raw
+   sector strings roll up, so it is the resolver rather than a second
+   mapping table invented here. Lookup order is most-specific first:
+     1. the value IS a bucket slug        'hardware'  -> hardware
+     2. the value IS a bucket label       'Consumer'  -> consumer
+     3. the value is a declared rawTag    'Biotech'   -> healthcare
+   Slug identity is checked before rawTag membership on purpose: several
+   tags sit in two buckets by design ('Hardware' is both industrial-tech
+   and hardware), and without rule 1 the firm's own 'hardware' slug would
+   resolve to industrial-tech and still fail to join. Where a tag is
+   genuinely ambiguous and rule 1 does not apply, declaration order wins
+   - the same first-wins convention DEAL_SECTOR_MAP[x][0] already uses.
+
+   Nothing is invented: a string the taxonomy does not know stays
+   unresolved and is handled by the caller, never guessed into a bucket. */
+let _pbehSecIdx = null;
+function pbehSectorIndex() {
+  if (_pbehSecIdx) return _pbehSecIdx;
+  const bySlug = {}, byLabel = {}, byTag = {};
+  if (typeof SECTOR_MAP !== 'undefined') {
+    Object.keys(SECTOR_MAP).forEach(function (s) {
+      const b = SECTOR_MAP[s];
+      if (!b) return;
+      bySlug[pbehNorm(b.slug)] = b;
+      if (!byLabel[pbehNorm(b.label)]) byLabel[pbehNorm(b.label)] = b;
+      (b.rawTags || []).forEach(function (t) {
+        const k = pbehNorm(t);
+        if (k && !byTag[k]) byTag[k] = b;      // first bucket declared wins
+      });
+    });
+  }
+  _pbehSecIdx = { bySlug: bySlug, byLabel: byLabel, byTag: byTag };
+  return _pbehSecIdx;
+}
+
+/* Canonical bucket label, or null when the taxonomy has no bucket for
+   this string. Used for the partner-vs-firm join, where an unmappable
+   sector is not comparable and must drop out rather than be matched
+   against a firm 0%. */
+function pbehSectorLabel(v) {
+  const k = pbehNorm(v);
+  if (!k) return null;
+  const i = pbehSectorIndex();
+  const b = i.bySlug[k] || i.byLabel[k] || i.byTag[k];
+  return b ? b.label : null;
+}
+
+/* Display form for a value that may have arrived as a slug. Falls back
+   to the original string, so researched labels the taxonomy does not
+   cover ("Legal Tech") keep their granularity in the detail view. */
+function pbehSectorDisplay(v) {
+  if (v == null || v === '') return null;
+  return pbehSectorLabel(v) || String(v);
 }
 
 let _pbehIdx = null;
@@ -326,8 +399,13 @@ function pbehCompute(slug) {
       if (d && !departed) {
         if (row.stage == null) row.stage = pbehRoundBucket(d.round);
         if (row.year == null && dealYear) row.year = dealYear;
+        /* DEAL_SECTOR_MAP yields a bucket SLUG. Store the display label,
+           otherwise this row renders a bar literally labelled
+           "developer-tools" and counts separately from the researched
+           rows that call the same sector "Developer Tools &
+           Infrastructure". */
         if (row.sector == null && typeof DEAL_SECTOR_MAP !== 'undefined' && DEAL_SECTOR_MAP[d.sector]) {
-          row.sector = DEAL_SECTOR_MAP[d.sector][0] || null;
+          row.sector = pbehSectorDisplay(DEAL_SECTOR_MAP[d.sector][0]) || null;
         }
         if (d.sourceUrl) row.dealSource = d.sourceUrl;
         row.via.push('tracked deal');
@@ -408,8 +486,12 @@ function pbehFirmWindowRows(firmSlug, startYear) {
   }).map(function (d) {
     return {
       stage: pbehRoundBucket(d.round),
+      /* Canonical label, not the raw slug: the partner side of the
+         comparison is projected through the same pbehSectorLabel(), so
+         the two vocabularies agree by construction rather than by
+         coincidence. */
       sector: (typeof DEAL_SECTOR_MAP !== 'undefined' && DEAL_SECTOR_MAP[d.sector])
-              ? DEAL_SECTOR_MAP[d.sector][0] : null
+              ? pbehSectorLabel(DEAL_SECTOR_MAP[d.sector][0]) : null
     };
   });
 }
@@ -442,7 +524,18 @@ function pbehComparison(slug) {
 
   for (let i = 0; i < windows.length; i++) {
     const w = windows[i];
-    const pRows = c.currentFirmRows.filter(function (r) { return r.year != null && r.year >= w.start; });
+    /* Project the partner rows into the SHARED vocabulary before
+       comparing. Stage already matches on both sides; sector goes
+       through the taxonomy resolver. A sector the taxonomy cannot
+       express becomes null and drops out of the sector distribution
+       entirely - the firm side has no bucket capable of holding it, so
+       reporting the firm at 0% against it would assert an absence that
+       was never measured. Such rows keep their researched label in the
+       detail view above; only this like-for-like block excludes them. */
+    const pRowsRaw = c.currentFirmRows.filter(function (r) { return r.year != null && r.year >= w.start; });
+    const pRows = pRowsRaw.map(function (r) {
+      return { stage: r.stage, sector: pbehSectorLabel(r.sector) };
+    });
     const fRows = pbehFirmWindowRows(c.partner.firmSlug, w.start);
     const dims = [];
     ['sector', 'stage'].forEach(function (key) {
@@ -452,7 +545,7 @@ function pbehComparison(slug) {
     });
     if (dims.length) {
       return { window: w, dims: dims,
-               samples: { partnerDated: pRows.length, partnerTotal: c.currentFirmRows.length,
+               samples: { partnerDated: pRowsRaw.length, partnerTotal: c.currentFirmRows.length,
                           firmTracked: fRows.length } };
     }
   }
