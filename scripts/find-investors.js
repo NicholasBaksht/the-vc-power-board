@@ -365,6 +365,17 @@ function renderFinderResults() {
      nothing at all, so a thin Network never leaves an empty heading
      on the results page. */
   if (typeof pbrRenderPeopleSection === 'function') pbrRenderPeopleSection();
+  /* Strategic Angels. Renders after the firms for the same reason
+     People worth knowing does, and is likewise self-hiding. The needs
+     question is painted once and persists in sessionStorage. */
+  if (typeof bfaEnsureCss === 'function') bfaEnsureCss();
+  const needsMount = document.getElementById('bfaNeedsMount');
+  if (needsMount && typeof bfaNeedsHtml === 'function' && !needsMount.dataset.painted) {
+    needsMount.innerHTML = bfaNeedsHtml();
+    needsMount.dataset.painted = '1';
+    if (typeof bfaWireNeeds === 'function') bfaWireNeeds(needsMount);
+  }
+  if (typeof bfaRenderSection === 'function') bfaRenderSection();
   if (typeof bfpResetShown === 'function') bfpResetShown();
 
   container.innerHTML = matches.map(({ firm, score, reasons }, i) => {
@@ -571,6 +582,12 @@ function renderFindInvestors() {
    <div class="finder-results">
       <div class="finder-results-label">Your Power Matches</div>
       <div id="finderResultsList"></div>
+      <!-- Strategic Angels sit between the firms and the Network
+           recommendations: same funnel, narrowing from institution to
+           individual. Both sections self-hide when nothing clears
+           their floor, so neither leaves an empty heading. -->
+      <div id="bfaNeedsMount"></div>
+      <div id="bfaSection"></div>
       <div id="pbrPeopleSection"></div>
     </div>
 
