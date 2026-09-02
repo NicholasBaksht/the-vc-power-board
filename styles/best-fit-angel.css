@@ -1,0 +1,118 @@
+/* ============================================================
+   BEST-FIT-ANGEL.CSS - Strategic Angels inside Power Match
+
+   Same system as the rest of Power Board. No palette is defined here.
+
+   DELIBERATELY ABSENT: match gauges, dials, rings, gradients, glow,
+   coloured angel cards, large avatars, status dots. A rank is a
+   number in the margin, not a badge, because the ranking is ordinal
+   and a badge would imply a measured score.
+   ============================================================ */
+
+.bfa { padding-top: var(--s7); border-top: 1px solid var(--hairline); margin-top: var(--s7); }
+.bfa-head { margin-bottom: var(--s5); }
+.bfa-h3 {
+  font-size: 18px; font-weight: 600; letter-spacing: -0.012em;
+  color: var(--ink); margin: 0;
+}
+.bfa-sub {
+  font-size: 14px; line-height: 1.55; color: var(--ink-dim);
+  margin: var(--s2) 0 0; max-width: 64ch;
+}
+
+.bfa-label {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--ink-dim); margin-bottom: var(--s2);
+}
+
+/* --- result row -------------------------------------------------
+   Rank sits in its own narrow column so every name starts on the same
+   line. Tabular figures keep 1 and 10 the same width. */
+.bfa-list { display: block; }
+.bfa-row {
+  display: grid; grid-template-columns: 28px minmax(0, 1fr);
+  gap: var(--s4);
+  padding: var(--s5) 0; border-top: 1px solid var(--hairline);
+}
+.bfa-row:first-child { border-top: 0; padding-top: 0; }
+.bfa-rank {
+  font-family: var(--mono); font-size: 13px; color: var(--ink-dim);
+  font-variant-numeric: tabular-nums; padding-top: 2px;
+}
+.bfa-body { min-width: 0; }
+
+.bfa-id { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s1) var(--s3); }
+.bfa-name {
+  font-size: 16px; font-weight: 600; color: var(--ink);
+  text-decoration: none; letter-spacing: -0.01em;
+}
+.bfa-name:hover { color: var(--accent-bright); }
+.bfa-role { font-size: 14px; color: var(--ink-dim); }
+
+/* The reasons are the product. They get the one accent on the row. */
+.bfa-why { margin-top: var(--s3); padding-left: var(--s4); border-left: 2px solid var(--accent); }
+.bfa-why-list { list-style: none; margin: 0; padding: 0; }
+.bfa-why-list li {
+  font-size: 14px; line-height: 1.5; color: var(--ink); padding: 1px 0;
+}
+/* Stated focus is self-described, so it reads quieter than the
+   observed claims above it. The distinction is visual as well as
+   verbal because collapsing the two is the specific failure to
+   avoid. */
+.bfa-why-list li.bfa-r-stated_focus_alignment,
+.bfa-why-list li.bfa-r-high_research_confidence { color: var(--ink-dim); }
+
+/* Coverage is on the row, never only in a tooltip. */
+.bfa-cov {
+  font-size: 13px; line-height: 1.5; color: var(--ink-dim); margin-top: var(--s3);
+}
+
+.bfa-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2); margin-top: var(--s4); }
+.bfa-act {
+  font: inherit; font-size: 13.5px; font-weight: 500;
+  color: var(--ink); background: var(--bg);
+  border: 1px solid var(--hairline-strong); border-radius: 6px;
+  padding: var(--s2) var(--s3); cursor: pointer; text-decoration: none;
+  transition: border-color .15s ease, color .15s ease;
+}
+.bfa-act:hover { border-color: var(--accent); color: var(--accent-bright); }
+.bfa-act[disabled] { color: var(--ink-dim); border-color: var(--hairline); cursor: default; }
+.bfa-act-p { color: var(--accent); }
+.bfa-act:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.bfa-link { font-size: 14px; font-weight: 500; color: var(--accent); text-decoration: none; display: inline-block; margin-top: var(--s5); }
+.bfa-link:hover { color: var(--accent-bright); text-decoration: underline; }
+
+/* --- the optional needs question --------------------------------
+   Reads as a quiet control strip, not a form. Selected needs take the
+   accent border rather than a fill, matching the Network chips. */
+.bfa-needs {
+  padding: var(--s5) 0; margin-top: var(--s6);
+  border-top: 1px solid var(--hairline);
+}
+.bfa-needs-sub { font-size: 13px; color: var(--ink-dim); margin: 0 0 var(--s3); }
+.bfa-needs-set { display: flex; flex-wrap: wrap; gap: var(--s2); }
+.bfa-need {
+  font: inherit; font-size: 13.5px; color: var(--ink-dim);
+  background: none; border: 1px solid var(--hairline);
+  border-radius: 6px; padding: var(--s2) var(--s3); cursor: pointer;
+  transition: color .15s ease, border-color .15s ease;
+}
+.bfa-need:hover { color: var(--ink); border-color: var(--hairline-strong); }
+.bfa-need.is-on { color: var(--accent-bright); border-color: var(--accent); }
+.bfa-need:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* --- mobile, tested at 390px ------------------------------------
+   Rank narrows rather than wrapping; reasons stay visible because
+   they are the reason the row exists; nothing overflows. */
+@media (max-width: 560px) {
+  .bfa-row { grid-template-columns: 20px minmax(0, 1fr); gap: var(--s3); }
+  .bfa-why { padding-left: var(--s3); }
+  .bfa-actions { gap: var(--s2); }
+  .bfa-act { padding: var(--s2) var(--s3); }
+  .bfa-needs-set { gap: var(--s1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bfa-act, .bfa-need { transition: none; }
+}
