@@ -1,496 +1,247 @@
 /* ============================================================
-   NETWORK.CSS - POWER NETWORK
+   NETWORK-HOME.CSS - the Power Network homepage
 
-   No palette is defined here. Colour, spacing and type come from
-   the site tokens in main.css, so Network inherits the
-   product's look rather than introducing a second one.
+   Same system as the rest of Power Board: white ground, charcoal
+   type, restrained green, hairline rules, editorial hierarchy, small
+   uppercase mono metadata labels, high density.
 
-   The profile deliberately does NOT look like LinkedIn: no cover
-   banner, no oversized round portrait, no connection counts, no
-   endorsement grids, and no card wrapped around each section.
-   Sections are separated by a rule and a heading, the same way the
-   research pages are.
+   No palette is defined here. Colour comes from the site tokens.
+
+   DELIBERATELY ABSENT, because the brief rules them out and because
+   they are also the house style already: gradients, glow, blur,
+   glassmorphism, oversized rounded cards, floating avatars, bento
+   grids, reaction animation.
+
+   A person is a ROW, not a card. The only bordered container on the
+   page is the person row's top rule, which is a separator rather than
+   a box. Density comes from alignment and space, not from chrome.
    ============================================================ */
 
-.pbn {
-  background: var(--bg);
-  color: var(--ink);
-  font-family: 'Inter', system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-.pbn-shell { max-width: 1080px; margin: 0 auto; padding: var(--s8) var(--s7) var(--s10); }
+.pbnh { background: var(--bg); color: var(--ink); }
 
-.pbn-back {
-  display: inline-block; font-size: 13.5px; color: var(--ink-dim);
-  text-decoration: none; margin-bottom: var(--s6);
-}
-.pbn-back:hover { color: var(--accent-bright); }
-
-.pbn-kicker {
+/* --- header ---------------------------------------------------
+   Product-first, not a marketing hero: the eyebrow and headline sit
+   directly above the instrument that does the work. */
+.pbnh-head { padding-top: var(--s8); padding-bottom: var(--s5); }
+.pbnh-eyebrow {
   font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--ink-dim); margin-bottom: var(--s3);
 }
-.pbn-h1 {
-  font-size: clamp(1.9rem, 3vw, 2.4rem); line-height: 1.1;
-  letter-spacing: -0.028em; font-weight: 700; margin: 0 0 var(--s4);
+.pbnh-h1 {
+  font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+  line-height: 1.1; letter-spacing: -0.028em; font-weight: 700;
+  color: var(--ink); margin: 0 0 var(--s3);
 }
-.pbn-lede {
-  font-size: 16px; line-height: 1.6; color: var(--ink-dim);
-  margin: 0 0 var(--s6); max-width: 62ch;
-}
-.pbn-head { margin-bottom: var(--s8); }
-.pbn-actions { display: flex; flex-wrap: wrap; gap: var(--s3); }
-
-.pbn-btn {
-  display: inline-flex; align-items: center; justify-content: center;
-  height: 42px; padding: 0 var(--s5);
-  font-size: 14.5px; font-weight: 500; border-radius: 8px;
-  text-decoration: none; border: 1px solid transparent; cursor: pointer;
-  transition: background-color .18s ease, border-color .18s ease, color .18s ease;
-}
-.pbn-btn-p { background: var(--accent); border-color: var(--accent); color: #FFFFFF; }
-.pbn-btn-p:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
-.pbn-btn-s { background: var(--bg); border-color: var(--hairline-strong); color: var(--ink); }
-.pbn-btn-s:hover { border-color: var(--accent); color: var(--accent-bright); }
-.pbn-btn:disabled { opacity: .55; cursor: default; }
-.pbn-btn:focus-visible, .pbn-row:focus-visible, .pbn-step:focus-visible,
-.pbn-check:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
-
-/* --- discovery controls --------------------------------------- */
-.pbn-controls { margin-bottom: var(--s6); }
-.pbn-search {
-  width: 100%; height: 46px; padding: 0 var(--s4);
-  font-size: 15px; font-family: inherit; color: var(--ink);
-  background: var(--bg); border: 1px solid var(--hairline-strong);
-  border-radius: 8px;
-}
-.pbn-search:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-.pbn-filters { display: flex; flex-wrap: wrap; gap: var(--s4); margin-top: var(--s4); }
-.pbn-sel { display: flex; flex-direction: column; gap: var(--s1); font-size: 12px; }
-.pbn-sel span {
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em;
-  text-transform: uppercase; color: var(--ink-dim);
-}
-.pbn-sel select {
-  height: 36px; min-width: 170px; padding: 0 var(--s2);
-  font-size: 14px; font-family: inherit; color: var(--ink);
-  background: var(--bg); border: 1px solid var(--hairline); border-radius: 6px;
-}
-
-/* --- results: rows, not cards --------------------------------- */
-.pbn-count {
-  font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.08em;
-  text-transform: uppercase; color: var(--ink-dim);
-  padding-bottom: var(--s3); border-bottom: 1px solid var(--hairline);
-}
-.pbn-row {
-  display: grid; grid-template-columns: 44px 1fr auto;
-  gap: var(--s4); align-items: start;
-  padding: var(--s5) 0; border-bottom: 1px solid var(--hairline);
-  text-decoration: none; transition: background-color .15s ease;
-}
-.pbn-row:hover { background: var(--surface); }
-.pbn-row-main { display: flex; flex-direction: column; gap: var(--s1); min-width: 0; }
-.pbn-row-name { font-size: 16px; font-weight: 600; color: var(--ink); }
-.pbn-row-role { font-size: 14px; color: var(--ink); }
-.pbn-row-head { font-size: 14px; color: var(--ink-dim); line-height: 1.5; }
-.pbn-row-meta { font-size: 13px; color: var(--ink-dim); }
-.pbn-row-uses { font-size: 13px; color: var(--ink-dim); margin-top: var(--s1); }
-.pbn-row-uses em {
-  font-style: normal; font-family: var(--mono); font-size: 10.5px;
-  letter-spacing: 0.08em; text-transform: uppercase; margin-right: var(--s2);
-}
-.pbn-row-loc { font-size: 13px; color: var(--ink-dim); white-space: nowrap; }
-
-.pbn-empty {
-  font-size: 15px; color: var(--ink-dim); line-height: 1.6;
-  padding: var(--s8) 0; max-width: 60ch;
-}
-
-/* --- portrait: restrained, square-ish, never a hero banner ----- */
-.pbn-photo {
-  width: 44px; height: 44px; border-radius: 6px; object-fit: cover;
-  background: var(--surface-raised); display: inline-flex;
-  align-items: center; justify-content: center;
-  font-size: 14px; font-weight: 600; color: var(--ink-dim);
-}
-.pbn-photo-lg { width: 84px; height: 84px; border-radius: 8px; font-size: 24px; }
-
-/* --- profile identity block ----------------------------------- */
-.pbn-id {
-  display: grid; grid-template-columns: auto 1fr auto;
-  gap: var(--s5); align-items: start;
-  padding-bottom: var(--s7); border-bottom: 1px solid var(--hairline);
-}
-.pbn-id-main { min-width: 0; }
-.pbn-name {
-  font-size: clamp(1.6rem, 2.6vw, 2rem); font-weight: 700;
-  letter-spacing: -0.026em; line-height: 1.1; margin: 0 0 var(--s2);
-}
-.pbn-role { font-size: 16px; color: var(--ink); margin-bottom: var(--s3); }
-.pbn-headline {
+.pbnh-lede {
   font-size: 16px; line-height: 1.55; color: var(--ink-dim);
-  margin: 0 0 var(--s4); max-width: 60ch;
-}
-.pbn-meta {
-  display: flex; flex-wrap: wrap; gap: var(--s4);
-  font-size: 13.5px; color: var(--ink-dim);
-}
-.pbn-link { color: var(--accent); text-decoration: none; }
-.pbn-link:hover { color: var(--accent-bright); text-decoration: underline; }
-.pbn-id-actions { display: flex; gap: var(--s3); }
-
-/* --- profile sections: rule + heading, no card ----------------- */
-.pbn-sec { padding: var(--s7) 0; border-bottom: 1px solid var(--hairline); }
-.pbn-sec-h {
-  font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.1em;
-  text-transform: uppercase; color: var(--ink-dim);
-  font-weight: 500; margin: 0 0 var(--s4);
-}
-.pbn-two { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s8); }
-
-.pbn-tags { display: flex; flex-wrap: wrap; gap: var(--s2); }
-.pbn-tag {
-  font-size: 14px; color: var(--ink);
-  border: 1px solid var(--hairline); border-radius: 6px;
-  padding: var(--s1) var(--s3);
-}
-/* The one place a tag carries emphasis: why they are here at all. */
-.pbn-tag-strong {
-  color: var(--accent-bright); border-color: #CFE3D6; background: var(--accent-pale);
+  margin: 0; max-width: 58ch;
 }
 
-.pbn-list { list-style: none; margin: 0; padding: 0; }
-.pbn-list li {
-  font-size: 15px; color: var(--ink); line-height: 1.5;
-  padding: var(--s2) 0; border-bottom: 1px solid var(--hairline);
+/* --- search --------------------------------------------------- */
+.pbnh-searchbar { margin-top: var(--s6); }
+.pbnh-search {
+  width: 100%; box-sizing: border-box;
+  height: 48px; padding: 0 var(--s4);
+  font-size: 15px; font-family: inherit; color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--hairline-strong); border-radius: 8px;
+  transition: border-color .15s ease;
 }
-.pbn-list li:last-child { border-bottom: 0; }
-.pbn-none { font-size: 14px; color: var(--ink-dim); margin: 0; }
-.pbn-about {
-  font-size: 16px; line-height: 1.65; color: var(--ink);
-  margin: 0 0 var(--s3); max-width: 68ch;
-}
+.pbnh-search::placeholder { color: var(--ink-dim); }
+.pbnh-search:focus { outline: none; border-color: var(--accent); }
 
-.pbn-hist { list-style: none; margin: 0; padding: 0; }
-.pbn-hist li {
-  display: grid; grid-template-columns: 1fr auto; gap: var(--s2) var(--s4);
-  padding: var(--s4) 0; border-bottom: 1px solid var(--hairline);
+/* --- quick filters --------------------------------------------
+   Text controls with a hairline, not giant pills. The active one
+   takes the accent border rather than a filled background, so a
+   selected filter reads as marked rather than as a button. */
+.pbnh-quick {
+  display: flex; flex-wrap: wrap; gap: var(--s2);
+  margin-top: var(--s4); padding-bottom: var(--s6);
+  border-bottom: 1px solid var(--hairline);
 }
-.pbn-hist li:last-child { border-bottom: 0; }
-.pbn-hist-t { font-size: 15.5px; font-weight: 600; color: var(--ink); }
-.pbn-hist-c { font-size: 14.5px; color: var(--ink); grid-column: 1; }
-.pbn-hist-y {
-  font-size: 13px; color: var(--ink-dim); grid-column: 2; grid-row: 1;
-  font-variant-numeric: tabular-nums; white-space: nowrap;
-}
-.pbn-hist-d {
-  grid-column: 1 / -1; font-size: 14px; line-height: 1.55;
-  color: var(--ink-dim); margin: var(--s1) 0 0; max-width: 68ch;
-}
-
-/* Says plainly whose claim this is. */
-.pbn-note {
-  font-size: 13px; color: var(--ink-dim); line-height: 1.55;
-  margin-top: var(--s7); max-width: 62ch;
-}
-
-/* --- edit ------------------------------------------------------ */
-.pbn-steps {
-  display: flex; flex-wrap: wrap; gap: var(--s1);
-  border-bottom: 1px solid var(--hairline); margin-bottom: var(--s7);
-}
-.pbn-step {
-  border: 0; background: none; cursor: pointer;
-  font-family: inherit; font-size: 14px; color: var(--ink-dim);
-  padding: var(--s3) var(--s3);
-  border-bottom: 2px solid transparent; margin-bottom: -1px;
+.pbnh-chip {
+  font: inherit; font-size: 13.5px; color: var(--ink-dim);
+  background: none; border: 1px solid var(--hairline);
+  border-radius: 6px; padding: var(--s2) var(--s3);
+  cursor: pointer; white-space: nowrap;
   transition: color .15s ease, border-color .15s ease;
 }
-.pbn-step:hover { color: var(--ink); }
-.pbn-step.is-on { color: var(--ink); border-bottom-color: var(--accent); font-weight: 500; }
+.pbnh-chip:hover { color: var(--ink); border-color: var(--hairline-strong); }
+.pbnh-chip.is-on { color: var(--accent-bright); border-color: var(--accent); }
+.pbnh-chip-clear { border-style: dashed; }
+.pbnh-chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-.pbn-form { max-width: 640px; }
-.pbn-f { display: block; margin-bottom: var(--s6); }
-.pbn-f-l {
-  display: block; font-size: 14px; font-weight: 500;
-  color: var(--ink); margin-bottom: var(--s2);
+/* --- sections -------------------------------------------------- */
+.pbnh-sec { padding-top: var(--s7); padding-bottom: var(--s7); border-bottom: 1px solid var(--hairline); }
+.pbnh-sec:last-child { border-bottom: 0; }
+.pbnh-sec-head { margin-bottom: var(--s5); }
+.pbnh-h2 {
+  font-size: 20px; font-weight: 600; letter-spacing: -0.015em;
+  color: var(--ink); margin: 0;
 }
-.pbn-f-h {
-  display: block; font-size: 13px; color: var(--ink-dim);
-  line-height: 1.5; margin-top: var(--s2);
+.pbnh-sec-sub {
+  font-size: 14px; line-height: 1.5; color: var(--ink-dim);
+  margin: var(--s2) 0 0; max-width: 62ch;
 }
-.pbn-f input[type="text"], .pbn-f input:not([type]), .pbn-f input[type="number"],
-.pbn-f input[type="search"], .pbn-f textarea, .pbn-f select {
-  width: 100%; font-family: inherit; font-size: 15px; color: var(--ink);
-  background: var(--bg); border: 1px solid var(--hairline-strong);
-  border-radius: 8px; padding: var(--s3);
+.pbnh-more { margin-top: var(--s5); }
+.pbnh-link {
+  font: inherit; font-size: 14px; font-weight: 500;
+  color: var(--accent); background: none; border: 0; padding: 0;
+  text-decoration: none; cursor: pointer;
 }
-.pbn-f input, .pbn-f select { height: 42px; }
-.pbn-f textarea { resize: vertical; line-height: 1.55; }
-.pbn-f input:focus, .pbn-f textarea:focus, .pbn-f select:focus {
-  outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent);
+.pbnh-link:hover { color: var(--accent-bright); text-decoration: underline; }
+.pbnh-loading, .pbnh-empty {
+  font-size: 14px; line-height: 1.55; color: var(--ink-dim); padding: var(--s5) 0;
 }
-.pbn-f-toggle {
-  display: grid; grid-template-columns: auto 1fr; gap: var(--s2) var(--s3);
-  align-items: center;
-}
-.pbn-f-toggle input { width: 18px; height: 18px; }
-.pbn-f-toggle .pbn-f-l { margin: 0; }
-.pbn-f-toggle .pbn-f-h { grid-column: 2; margin-top: 0; }
+.pbnh-hint { font-size: 13px; color: var(--ink-dim); }
 
-.pbn-checks { display: flex; flex-wrap: wrap; gap: var(--s2); }
-.pbn-check {
-  display: inline-flex; align-items: center; gap: var(--s2);
-  font-size: 13.5px; color: var(--ink);
-  border: 1px solid var(--hairline); border-radius: 6px;
-  padding: var(--s2) var(--s3); cursor: pointer;
-  transition: border-color .15s ease, background-color .15s ease;
+/* --- the person row -------------------------------------------
+   Photo column is fixed so every name in the list starts on the same
+   vertical line; the body is a single column of stacked blocks. */
+.pbnh-people { display: block; }
+.pbnh-person {
+  display: grid; grid-template-columns: 48px minmax(0, 1fr);
+  gap: var(--s4);
+  padding: var(--s5) 0;
+  border-top: 1px solid var(--hairline);
 }
-.pbn-check input { width: 14px; height: 14px; margin: 0; }
-.pbn-check.is-on { border-color: var(--accent); background: var(--accent-pale); }
-.pbn-lines { width: 100%; }
+.pbnh-person:first-child { border-top: 0; padding-top: 0; }
+.pbnh-person-photo { display: block; text-decoration: none; }
+.pbnh-person-body { min-width: 0; }
 
-.pbn-save-row { display: flex; align-items: center; gap: var(--s4); margin-top: var(--s7); }
-.pbn-save-msg { font-size: 13.5px; color: var(--ink-dim); }
-.pbn-gate { padding: var(--s8) 0; }
-
-/* --- responsive ------------------------------------------------ */
-@media (max-width: 900px) {
-  .pbn-two { grid-template-columns: 1fr; gap: var(--s6); }
-  .pbn-id { grid-template-columns: auto 1fr; }
-  .pbn-id-actions { grid-column: 1 / -1; }
+.pbnh-person-id {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s1) var(--s3);
 }
-@media (max-width: 640px) {
-  .pbn-shell { padding: var(--s6) var(--s4) var(--s9); }
-  .pbn-row { grid-template-columns: 40px 1fr; }
-  .pbn-row-loc { grid-column: 2; }
-  .pbn-hist li { grid-template-columns: 1fr; }
-  .pbn-hist-y { grid-column: 1; grid-row: auto; }
-  .pbn-filters { flex-direction: column; gap: var(--s3); }
-  .pbn-sel select { width: 100%; }
-  .pbn-actions .pbn-btn, .pbn-id-actions .pbn-btn { flex: 1 1 auto; }
-  .pbn-photo-lg { width: 64px; height: 64px; font-size: 20px; }
+.pbnh-person-name {
+  font-size: 16px; font-weight: 600; color: var(--ink);
+  text-decoration: none; letter-spacing: -0.01em;
 }
-@media (prefers-reduced-motion: reduce) {
-  .pbn-btn, .pbn-row, .pbn-step, .pbn-check { transition: none; }
+.pbnh-person-name:hover { color: var(--accent-bright); }
+.pbnh-person-role, .pbnh-person-loc { font-size: 14px; color: var(--ink-dim); }
+.pbnh-person-loc::before { content: '·'; margin-right: var(--s3); }
+.pbnh-person-exp {
+  font-size: 13.5px; color: var(--ink-dim); margin-top: var(--s1);
 }
 
-/* --- photo control --------------------------------------------- */
-.pbn-photo-edit { display: flex; align-items: flex-start; gap: var(--s5); }
-.pbn-photo-ctl { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s3); }
-/* The input itself is hidden; its label is the control, so the
-   button matches every other button on the page. */
-.pbn-file {
-  position: absolute; width: 1px; height: 1px;
-  padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0;
-}
-.pbn-file:focus-visible + label { outline: 2px solid var(--accent); outline-offset: 2px; }
-.pbn-photo-ctl .pbn-f-h { flex: 1 1 100%; margin-top: 0; }
-
-/* --- sign-in prompt ---------------------------------------------
-   A corner panel rather than a full-screen modal: it is an offer, so
-   it must not block what the person came to do. */
-.pbn-prompt {
-  position: fixed; right: var(--s5); bottom: var(--s5); z-index: 60;
-  max-width: 380px;
-}
-.pbn-prompt-in {
-  position: relative;
-  background: var(--bg);
-  border: 1px solid var(--hairline-strong);
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-  padding: var(--s5);
-}
-.pbn-prompt-h {
-  font-size: 18px; font-weight: 600; letter-spacing: -0.016em;
-  margin: 0 0 var(--s2); color: var(--ink);
-}
-.pbn-prompt-p {
-  font-size: 14px; line-height: 1.55; color: var(--ink-dim);
-  margin: 0 0 var(--s5);
-}
-.pbn-prompt-actions { display: flex; flex-wrap: wrap; gap: var(--s2); }
-.pbn-prompt-actions .pbn-btn { height: 38px; font-size: 14px; padding: 0 var(--s4); }
-.pbn-prompt-x {
-  position: absolute; top: var(--s3); right: var(--s3);
-  width: 24px; height: 24px; padding: 0;
-  border: 0; background: none; cursor: pointer;
-  color: var(--ink-dim); font-size: 15px; line-height: 1; border-radius: 4px;
-}
-.pbn-prompt-x:hover { color: var(--ink); background: var(--surface); }
-.pbn-prompt-x:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-
-@media (max-width: 640px) {
-  .pbn-prompt { right: var(--s4); left: var(--s4); bottom: var(--s4); max-width: none; }
-  .pbn-photo-edit { flex-direction: column; gap: var(--s4); }
+/* Small uppercase mono metadata label. This is the Power Network
+   vocabulary and is identical wherever it appears. */
+.pbnh-label {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--ink-dim); margin-bottom: var(--s1);
 }
 
-/* --- people worth knowing (inside Power Match) ------------------
-   Its own section under the firm results so firms, partners and
-   people stay distinct categories. Rows, not cards: this sits below
-   an already dense results page and must not compete with it. */
-.pbr-sec { margin-top: var(--s9); padding-top: var(--s7); border-top: 1px solid var(--hairline); }
-.pbr-head { margin-bottom: var(--s6); }
-.pbr-h2 {
-  font-size: 22px; font-weight: 700; letter-spacing: -0.02em;
-  color: var(--ink); margin: 0 0 var(--s2);
+/* WHY is the signature element, so it gets the one piece of colour on
+   the row: a green rule on the leading edge. Nothing else is tinted. */
+.pbnh-why {
+  margin-top: var(--s4);
+  padding-left: var(--s4);
+  border-left: 2px solid var(--accent);
 }
-.pbr-p { font-size: 14.5px; line-height: 1.6; color: var(--ink-dim); margin: 0; max-width: 62ch; }
-.pbr-row {
-  display: grid; grid-template-columns: 1fr auto; gap: var(--s5);
-  padding: var(--s5) 0; border-bottom: 1px solid var(--hairline);
-  align-items: start;
+.pbnh-why-list { list-style: none; margin: 0; padding: 0; }
+.pbnh-why-list li {
+  font-size: 14px; line-height: 1.5; color: var(--ink);
+  padding: 1px 0;
 }
-.pbr-main { min-width: 0; }
-.pbr-name { font-size: 16px; font-weight: 600; color: var(--ink); text-decoration: none; }
-.pbr-name:hover { color: var(--accent-bright); }
-.pbr-role { font-size: 14px; color: var(--ink-dim); margin-top: var(--s1); }
-.pbr-why {
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em;
-  text-transform: uppercase; color: var(--ink-dim); margin-top: var(--s4);
+
+.pbnh-states {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--s3) var(--s6);
+  margin-top: var(--s4);
 }
-.pbr-reasons { list-style: none; margin: var(--s2) 0 0; padding: 0; }
-.pbr-reasons li {
-  font-size: 14px; color: var(--ink); line-height: 1.5; padding: var(--s1) 0 var(--s1) var(--s4);
-  position: relative;
+.pbnh-state { min-width: 0; }
+.pbnh-state-v { font-size: 14px; line-height: 1.45; color: var(--ink); }
+
+.pbnh-person-actions {
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2);
+  margin-top: var(--s4);
 }
-.pbr-reasons li::before {
-  content: ''; position: absolute; left: 0; top: 11px;
-  width: 4px; height: 4px; border-radius: 50%; background: var(--accent);
-}
-.pbr-actions { display: flex; flex-direction: column; gap: var(--s2); }
-.pbr-btn {
-  display: inline-flex; align-items: center; justify-content: center;
-  height: 34px; padding: 0 var(--s4); white-space: nowrap;
-  font-size: 13.5px; font-weight: 500; font-family: inherit;
+.pbnh-act {
+  font: inherit; font-size: 13.5px; font-weight: 500;
   color: var(--ink); background: var(--bg);
   border: 1px solid var(--hairline-strong); border-radius: 6px;
-  text-decoration: none; cursor: pointer;
+  padding: var(--s2) var(--s3); cursor: pointer; text-decoration: none;
   transition: border-color .15s ease, color .15s ease;
 }
-.pbr-btn:hover { border-color: var(--accent); color: var(--accent-bright); }
-.pbr-btn:disabled { opacity: .55; cursor: default; }
-.pbr-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pbnh-act:hover { border-color: var(--accent); color: var(--accent-bright); }
+.pbnh-act-p { border-color: var(--hairline-strong); color: var(--accent); }
+.pbnh-act:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-@media (max-width: 640px) {
-  .pbr-row { grid-template-columns: 1fr; gap: var(--s4); }
-  .pbr-actions { flex-direction: row; }
-  .pbr-btn { flex: 1 1 auto; }
+/* --- need-first discovery -------------------------------------
+   A grid of plain text controls. These are the product's primary
+   instrument, so they are wider and quieter than the quick chips
+   rather than louder. */
+.pbnh-needs {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--s2);
 }
+.pbnh-need {
+  font: inherit; font-size: 14px; text-align: left; color: var(--ink);
+  background: none; border: 1px solid var(--hairline);
+  border-radius: 6px; padding: var(--s3) var(--s4); cursor: pointer;
+  transition: border-color .15s ease, color .15s ease;
+}
+.pbnh-need:hover { border-color: var(--accent); color: var(--accent-bright); }
+.pbnh-need:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-/* --- messaging ---------------------------------------------------
-   Deliberately not a chat app: no avatars per bubble, no typing
-   indicators, no reactions. It reads as correspondence, which is
-   what professional outreach actually is. */
-.pbm-tabs { display: flex; gap: var(--s1); border-bottom: 1px solid var(--hairline); margin-bottom: var(--s6); }
-.pbm-tab {
-  font-size: 14px; color: var(--ink-dim); text-decoration: none;
-  padding: var(--s3); border-bottom: 2px solid transparent; margin-bottom: -1px;
+/* --- from your network ----------------------------------------- */
+.pbnh-activity { display: block; }
+.pbnh-act-row {
+  padding: var(--s4) 0; border-top: 1px solid var(--hairline);
 }
-.pbm-tab:hover { color: var(--ink); }
-.pbm-tab.is-on { color: var(--ink); border-bottom-color: var(--accent); font-weight: 500; }
+.pbnh-act-row:first-child { border-top: 0; padding-top: 0; }
+.pbnh-act-id { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s1) var(--s3); }
+.pbnh-act-id a { font-size: 15px; font-weight: 600; color: var(--ink); text-decoration: none; }
+.pbnh-act-id a:hover { color: var(--accent-bright); }
+.pbnh-act-id span { font-size: 13.5px; color: var(--ink-dim); }
+.pbnh-act-line { font-size: 14px; line-height: 1.5; color: var(--ink); margin-top: var(--s1); }
+.pbnh-act-link { font-size: 13.5px; color: var(--accent); text-decoration: none; display: inline-block; margin-top: var(--s2); }
+.pbnh-act-link:hover { color: var(--accent-bright); text-decoration: underline; }
 
-.pbm-list { display: block; }
-.pbm-row {
-  display: grid; grid-template-columns: 44px 1fr auto; gap: var(--s4);
-  align-items: center; padding: var(--s4) 0;
-  border-bottom: 1px solid var(--hairline); text-decoration: none;
-}
-.pbm-row:hover { background: var(--surface); }
-.pbm-row-main { min-width: 0; }
-.pbm-row-top { display: flex; justify-content: space-between; gap: var(--s3); align-items: baseline; }
-.pbm-row-name { font-size: 15px; font-weight: 600; color: var(--ink); }
-.pbm-row-when { font-size: 12.5px; color: var(--ink-dim); white-space: nowrap; }
-.pbm-row-last {
-  display: block; font-size: 14px; color: var(--ink-dim); margin-top: var(--s1);
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-}
-.pbm-row.is-unread .pbm-row-name,
-.pbm-row.is-unread .pbm-row-last { color: var(--ink); font-weight: 500; }
-.pbm-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+/* --- utilities and completion ---------------------------------- */
+.pbnh-util { list-style: none; margin: 0; padding: 0; }
+.pbnh-util li { padding: var(--s3) 0; border-top: 1px solid var(--hairline); }
+.pbnh-util li:first-child { border-top: 0; padding-top: 0; }
+.pbnh-util a { font-size: 14.5px; color: var(--ink); text-decoration: none; }
+.pbnh-util a:hover { color: var(--accent-bright); }
 
-.pbm-head {
-  display: grid; grid-template-columns: 44px 1fr auto; gap: var(--s4);
-  align-items: center; padding-bottom: var(--s5);
-  border-bottom: 1px solid var(--hairline); margin-bottom: var(--s5);
+.pbnh-missing { list-style: none; margin: 0; padding: 0; }
+.pbnh-missing li {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s1) var(--s4);
+  padding: var(--s3) 0; border-top: 1px solid var(--hairline);
 }
-.pbm-head-name { font-size: 16px; font-weight: 600; color: var(--ink); text-decoration: none; }
-.pbm-head-name:hover { color: var(--accent-bright); }
-.pbm-head-role { font-size: 13.5px; color: var(--ink-dim); margin-top: 2px; }
-.pbm-head-actions { display: flex; gap: var(--s2); }
-.pbm-small { height: 32px; font-size: 13px; padding: 0 var(--s3); }
+.pbnh-missing li:first-child { border-top: 0; padding-top: 0; }
+.pbnh-missing-t { font-size: 14.5px; color: var(--ink); font-weight: 500; }
+.pbnh-missing-d { font-size: 13.5px; color: var(--ink-dim); }
 
-.pbm-request {
-  border: 1px solid var(--hairline-strong); border-radius: 8px;
-  padding: var(--s5); margin-bottom: var(--s5); background: var(--surface);
+.pbnh-cta {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s3);
+  padding: var(--s6) 0; border-top: 1px solid var(--hairline);
 }
-.pbm-request-t { font-size: 14px; color: var(--ink); margin: 0 0 var(--s4); line-height: 1.5; }
-.pbm-request-a { display: flex; gap: var(--s2); }
+.pbnh-cta-note { font-size: 13.5px; color: var(--ink-dim); }
 
-.pbm-msgs { display: flex; flex-direction: column; gap: var(--s4); margin-bottom: var(--s6); }
-.pbm-msg { max-width: 74%; }
-.pbm-msg.is-me { align-self: flex-end; text-align: right; }
-.pbm-bubble {
-  display: inline-block; text-align: left;
-  font-size: 15px; line-height: 1.55; color: var(--ink);
-  background: var(--surface); border: 1px solid var(--hairline);
-  border-radius: 10px; padding: var(--s3) var(--s4);
-  overflow-wrap: anywhere;
+/* --- responsive ------------------------------------------------
+   Tested at 390px. The photo column narrows rather than wrapping, so
+   the name still starts on a consistent line; the two stated columns
+   stack; nothing overflows horizontally; type does not shrink below
+   the body size used elsewhere on the site. */
+@media (max-width: 700px) {
+  .pbnh-states { grid-template-columns: 1fr; gap: var(--s3); }
 }
-.pbm-msg.is-me .pbm-bubble { background: var(--accent-pale); border-color: #CFE3D6; }
-.pbm-time { font-size: 11.5px; color: var(--ink-dim); margin-top: var(--s1); }
-
-.pbm-compose { border-top: 1px solid var(--hairline); padding-top: var(--s5); }
-.pbm-compose textarea {
-  width: 100%; font-family: inherit; font-size: 15px; line-height: 1.55;
-  color: var(--ink); background: var(--bg);
-  border: 1px solid var(--hairline-strong); border-radius: 8px;
-  padding: var(--s3); resize: vertical;
-}
-.pbm-compose textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
-.pbm-compose-row {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: var(--s4); margin-top: var(--s3);
-}
-.pbm-hint { font-size: 13px; color: var(--ink-dim); }
-.pbm-locked {
-  font-size: 14px; color: var(--ink-dim); border-top: 1px solid var(--hairline);
-  padding-top: var(--s5);
+@media (max-width: 560px) {
+  .pbnh-head { padding-top: var(--s6); }
+  .pbnh-person { grid-template-columns: 40px minmax(0, 1fr); gap: var(--s3); }
+  .pbnh-needs { grid-template-columns: 1fr; }
+  /* The filter row scrolls rather than stacking into four ragged
+     lines. The scrollbar is hidden because the row is short enough to
+     read as swipeable. */
+  .pbnh-quick {
+    flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .pbnh-quick::-webkit-scrollbar { display: none; }
+  .pbnh-person-actions { gap: var(--s2); }
+  .pbnh-act { padding: var(--s2) var(--s3); }
 }
 
-/* Unread marker on the account control. The previous rule ringed the
-   dot in --accent-pale (#F2F7F3), which is white on a white header, so
-   read and unread were indistinguishable and an arriving message had no
-   visible signal anywhere in the UI. A gap in the page colour followed
-   by a solid accent ring reads at a glance and is still not a red
-   social badge. */
-body .pb-signin.is-account.has-unread::before {
-  box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent);
+@media (prefers-reduced-motion: reduce) {
+  .pbnh-chip, .pbnh-need, .pbnh-act, .pbnh-search { transition: none; }
 }
-
-/* A tab carrying a count is no longer resting state, so it takes the
-   foreground ink even when it is not the open tab. Without this, an
-   unopened request tab is the same grey as an empty one. */
-.pbm-tab.has-count { color: var(--ink); font-weight: 500; }
-
-@media (max-width: 640px) {
-  .pbm-msg { max-width: 88%; }
-  .pbm-head { grid-template-columns: 40px 1fr; }
-  .pbm-head-actions { grid-column: 1 / -1; }
-  .pbm-compose-row { flex-direction: column; align-items: stretch; gap: var(--s3); }
-  .pbm-compose-row .pbn-btn { width: 100%; }
-}
-
-/* --- save feedback and notifications ---------------------------- */
-.pbn-save-msg.is-error {
-  color: var(--red); font-weight: 500; max-width: 46ch; line-height: 1.45;
-}
-.pbn-save-msg.is-ok { color: var(--accent-bright); font-weight: 500; }
-.pbm-notif-head {
-  display: flex; align-items: baseline; justify-content: space-between;
-  gap: var(--s4); flex-wrap: wrap;
-}
-.pbm-notif .pbm-row-last { color: var(--ink-dim); }
-.pbm-notif.is-unread .pbm-row-last { color: var(--ink); }
