@@ -1400,6 +1400,18 @@ function pbhDispatchNetwork() {
   }
 }
 
+/* Strategic Angels extend Power Match. Injected here rather than
+   added to index.html, following the same rule the Network modules
+   follow: index.html is not hand edited. It is loaded eagerly because
+   Power Match may render before any Network route is visited. */
+function pbhEnsureAngelScript() {
+  if (document.getElementById('bfaJs')) return;
+  const a = document.createElement('script');
+  a.id = 'bfaJs'; a.src = 'scripts/best-fit-angel.js';
+  document.head.appendChild(a);
+}
+try { pbhEnsureAngelScript(); } catch (e) {}
+
 function pbhEnsureNetworkScript() {
   if (!document.getElementById('pbmJs')) {
     const m = document.createElement('script');
