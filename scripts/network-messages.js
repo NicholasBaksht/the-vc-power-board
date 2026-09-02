@@ -125,6 +125,21 @@ async function pbmOpenOrStart(targetId, targetPolicy) {
 
 /* ---------- inbox ---------- */
 
+/* Writes the counts into the tab labels after the data lands. The tabs
+   are painted before the query returns, so this updates them in place
+   rather than delaying the whole view on a count. A zero count renders
+   nothing: "Requests" is the resting state, not "Requests (0)". */
+function pbmPaintTabCounts(requests, unread) {
+  const set = function (href, label, n) {
+    const el = document.querySelector('.pbm-tab[href="' + href + '"]');
+    if (!el) return;
+    el.textContent = n > 0 ? label + ' (' + n + ')' : label;
+    el.classList.toggle('has-count', n > 0);
+  };
+  set('#network/messages', 'Inbox', unread);
+  set('#network/requests', 'Requests', requests);
+}
+
 async function renderNetworkInbox(filter) {
   pbnEnsureCss();
   const host = document.getElementById('networkView');
@@ -179,13 +194,26 @@ async function renderNetworkInbox(filter) {
         (msgs || []).forEach(function (m) { if (!lastMap[m.conversation_id]) lastMap[m.conversation_id] = m; });
         const readMap = {}; parts.forEach(function (p) { readMap[p.conversation_id] = p.last_read_at; });
 
-        rows = (convs || []).map(function (cv) {
+        const all = (convs || []).map(function (cv) {
           const last = lastMap[cv.id];
           const lastRead = readMap[cv.id];
           return { conv: cv, other: pmap[omap[cv.id]] || null, last: last,
                    unread: !!(last && last.sender_id !== me && (!lastRead || new Date(last.created_at) > new Date(lastRead))),
                    incomingRequest: cv.state === 'pending' && cv.created_by !== me };
-        }).filter(function (r) {
+        });
+
+        /* A first message from someone who is not already connected
+           arrives as a request, so it is filtered OUT of the inbox by
+           design. Without a count on the other tab that is
+           indistinguishable from the message never arriving, which is
+           exactly how it was read in testing. Count both sides here,
+           before the mode filter throws the other half away. */
+        pbmPaintTabCounts(
+          all.filter(function (r) { return r.incomingRequest; }).length,
+          all.filter(function (r) { return !r.incomingRequest && r.unread; }).length
+        );
+
+        rows = all.filter(function (r) {
           return mode === 'requests' ? r.incomingRequest : !r.incomingRequest;
         }).sort(function (a, b) {
           return new Date((b.last && b.last.created_at) || b.conv.created_at) -
