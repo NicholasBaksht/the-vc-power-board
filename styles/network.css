@@ -460,9 +460,20 @@
   padding-top: var(--s5);
 }
 
-/* Unread marker on the account control: the existing green dot turns
-   solid rather than adding a red social badge. */
-body .pb-signin.is-account.has-unread::before { box-shadow: 0 0 0 3px var(--accent-pale); }
+/* Unread marker on the account control. The previous rule ringed the
+   dot in --accent-pale (#F2F7F3), which is white on a white header, so
+   read and unread were indistinguishable and an arriving message had no
+   visible signal anywhere in the UI. A gap in the page colour followed
+   by a solid accent ring reads at a glance and is still not a red
+   social badge. */
+body .pb-signin.is-account.has-unread::before {
+  box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent);
+}
+
+/* A tab carrying a count is no longer resting state, so it takes the
+   foreground ink even when it is not the open tab. Without this, an
+   unopened request tab is the same grey as an empty one. */
+.pbm-tab.has-count { color: var(--ink); font-weight: 500; }
 
 @media (max-width: 640px) {
   .pbm-msg { max-width: 88%; }
