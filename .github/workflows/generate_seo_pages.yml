@@ -6,6 +6,7 @@ on:
       - 'scripts/data-meta.js'
       - 'scripts/data-partners*.js'
       - 'scripts/data-firms.js'
+      - 'scripts/data-capital-sources.js'
       - 'scripts/utilities.js'
       - 'scripts/powerscore.js'
       - 'scripts/taxonomy.js'
@@ -30,6 +31,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add companies/ locations/ stages/ firms/ people/ compare/ sitemap.xml robots.txt
+          # Every directory the generator writes must be listed here. It is
+          # an allowlist, not a wildcard, so a new page family is generated
+          # in CI and then silently discarded when the runner is destroyed -
+          # which is exactly what happened to capital-sources/ and the
+          # product pages, leaving sitemap.xml advertising 36 URLs that 404.
+          git add companies/ locations/ stages/ firms/ people/ compare/ \
+                  capital-sources/ power-match/ conflict-check/ network/ \
+                  methodology/ pricing/ \
+                  sitemap.xml robots.txt
           git diff --staged --quiet || git commit -m "Auto-regenerate SEO pages [skip ci]"
           git push
