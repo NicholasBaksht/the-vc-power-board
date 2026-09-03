@@ -1,6 +1,6 @@
 /* ============================================================
    DATA-COMPANIES.JS
-   Canonical Company entities. Batches 1 and 2: 120 companies.
+   Canonical Company entities. Batches 1-3: 180 companies.
 
    THE ID IS DURABLE, THE NAME IS NOT. companyId never changes once
    assigned, because every other dataset joins on it. The display name
@@ -11,8 +11,9 @@
    partner and firm reference pointing at it.
 
    Every non-null field carries its own source row naming the field it
-   supports. Nulls are deliberate: an unsourced founding year is null,
-   never a plausible guess.
+   supports. 2318 source rows across 180 records, none unsourced.
+   Nulls are deliberate: an unsourced founding year is null, never a
+   plausible guess.
    ============================================================ */
 
 const COMPANIES = {
@@ -12174,6 +12175,5433 @@ const COMPANIES = {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "affirm": {
+    "companyId": "affirm",
+    "name": "Affirm",
+    "legalName": "Affirm Holdings, Inc.",
+    "website": "https://www.affirm.com",
+    "description": "Consumer payment network offering pay-over-time financing at checkout, the Affirm Card and a savings account, connecting consumers, merchants and funding partners.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "consumer pay-over-time payment network",
+    "tickers": [
+      "NASDAQ:AFRM"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Affirm Holdings, Inc. - Form 10-K for fiscal year ended June 30, 2026, cover page",
+        "url": "https://investors.affirm.com/static-files/1cba8462-bfcd-40e9-9b7a-7674cb7162b8",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions data for CIK 0001820953 (Affirm Holdings, Inc.)",
+        "url": "https://data.sec.gov/submissions/CIK0001820953.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Affirm - Official Site",
+        "url": "https://www.affirm.com",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Affirm Holdings, Inc. - Form 10-K, Item 1 Business",
+        "url": "https://investors.affirm.com/static-files/1cba8462-bfcd-40e9-9b7a-7674cb7162b8",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Affirm Holdings, Inc. - Form 10-K cover page, principal executive offices: 221 Main Street, Floor 6, San Francisco, California 94105",
+        "url": "https://investors.affirm.com/static-files/1cba8462-bfcd-40e9-9b7a-7674cb7162b8",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Affirm Holdings, Inc. - Form 10-K cover page, principal executive offices: 221 Main Street, Floor 6, San Francisco, California 94105",
+        "url": "https://investors.affirm.com/static-files/1cba8462-bfcd-40e9-9b7a-7674cb7162b8",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Affirm Holdings, Inc. - Form 10-K, Item 1 Business: \"Affirm was founded in 2012 with a mission to deliver honest financial products that improve lives.\"",
+        "url": "https://investors.affirm.com/static-files/1cba8462-bfcd-40e9-9b7a-7674cb7162b8",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Affirm Holdings, Inc. - Form 10-K cover page, securities registered under Section 12(b) on The Nasdaq Global Select Market",
+        "url": "https://investors.affirm.com/static-files/1cba8462-bfcd-40e9-9b7a-7674cb7162b8",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions data for CIK 0001820953 listing exchange Nasdaq and ticker AFRM",
+        "url": "https://data.sec.gov/submissions/CIK0001820953.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Affirm Holdings, Inc. - Form 10-K cover page: Class A common stock, trading symbol AFRM, The Nasdaq Global Select Market",
+        "url": "https://investors.affirm.com/static-files/1cba8462-bfcd-40e9-9b7a-7674cb7162b8",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions data for CIK 0001820953 listing exchange Nasdaq and ticker AFRM",
+        "url": "https://data.sec.gov/submissions/CIK0001820953.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Affirm Holdings, Inc. - Form 10-K, Item 1 Business",
+        "url": "https://investors.affirm.com/static-files/1cba8462-bfcd-40e9-9b7a-7674cb7162b8",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Affirm Holdings, Inc. - Form 10-K, Item 1 Business",
+        "url": "https://investors.affirm.com/static-files/1cba8462-bfcd-40e9-9b7a-7674cb7162b8",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "toast": {
+    "companyId": "toast",
+    "name": "Toast",
+    "legalName": "Toast, Inc.",
+    "website": "https://pos.toasttab.com",
+    "description": "Cloud-based restaurant point of sale and management platform combining hardware, software and integrated payment processing for restaurant and retail businesses.",
+    "hqCity": "Boston",
+    "hqCountry": "United States",
+    "foundedYear": 2011,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "restaurant point of sale and business management platform",
+    "tickers": [
+      "NYSE:TOST"
+    ],
+    "formerNames": [
+      "Opti Systems, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Toast, Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650164/000165016426000164/tost-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions data for CIK 0001650164 (Toast, Inc.)",
+        "url": "https://data.sec.gov/submissions/CIK0001650164.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Toast - Official Site, About page",
+        "url": "https://pos.toasttab.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Toast - Official Site, About page",
+        "url": "https://pos.toasttab.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Toast, Inc. - Form 10-Q cover page, principal executive offices: 333 Summer Street, Boston, Massachusetts 02210",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650164/000165016426000164/tost-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Toast, Inc. - Form 10-Q cover page, principal executive offices: 333 Summer Street, Boston, Massachusetts 02210",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650164/000165016426000164/tost-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Toast, Inc. - Form S-1 (2021), founders' letter: \"Back in 2011, we hoped to take our passion for small business and build a technology platform...\"",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650164/000119312521258447/d166297ds1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Toast, Inc. - Form 424B4 prospectus (2021), Corporate Information: \"We were incorporated under the laws of Delaware in December 2011 under the name Opti Systems, Inc.\"",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650164/000119312521279379/d166297d424b4.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Toast, Inc. - Form 10-Q cover page, securities registered under Section 12(b) on the New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650164/000165016426000164/tost-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions data for CIK 0001650164 listing exchange NYSE and ticker TOST",
+        "url": "https://data.sec.gov/submissions/CIK0001650164.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Toast, Inc. - Form 10-Q cover page: Class A common stock, trading symbol TOST, New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650164/000165016426000164/tost-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions data for CIK 0001650164 listing exchange NYSE and ticker TOST",
+        "url": "https://data.sec.gov/submissions/CIK0001650164.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Toast, Inc. - Form S-1 (2021), Corporate Information: \"We were incorporated under the laws of Delaware in December 2011 under the name Opti Systems, Inc. We changed our name to Toast, Inc. in May 2012.\"",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650164/000119312521258447/d166297ds1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Toast, Inc. - Form 424B4 prospectus (2021), Corporate Information, same sentence confirmed verbatim on a second pass",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650164/000119312521279379/d166297d424b4.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Toast - Official Site, About page describing the restaurant point of sale and management system, hardware and software products",
+        "url": "https://pos.toasttab.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Toast - Official Site, About page",
+        "url": "https://pos.toasttab.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "marqeta": {
+    "companyId": "marqeta",
+    "name": "Marqeta",
+    "legalName": "Marqeta, Inc.",
+    "website": "https://www.marqeta.com",
+    "description": "Card issuing platform providing card issuing, payment processing and program management for companies embedding card payments into their products.",
+    "hqCity": "Oakland",
+    "hqCountry": "United States",
+    "foundedYear": 2009,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "card issuing and payment processing platform",
+    "tickers": [
+      "NASDAQ:MQ"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Marqeta, Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1522540/000152254026000063/mq-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions data for CIK 0001522540 (Marqeta, Inc.)",
+        "url": "https://data.sec.gov/submissions/CIK0001522540.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Marqeta - Official Site, About Us",
+        "url": "https://www.marqeta.com/company/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Marqeta - Official Site, About Us",
+        "url": "https://www.marqeta.com/company/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Marqeta, Inc. - Form 10-Q cover page, principal executive offices: 180 Grand Avenue, 6th Floor, Oakland, California 94612",
+        "url": "https://www.sec.gov/Archives/edgar/data/1522540/000152254026000063/mq-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Marqeta, Inc. - Form 10-Q cover page, principal executive offices: 180 Grand Avenue, 6th Floor, Oakland, California 94612",
+        "url": "https://www.sec.gov/Archives/edgar/data/1522540/000152254026000063/mq-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Marqeta - Official Site, About Us: \"In 2009, our Founder and Executive Chairman Jason Gardner had a vision to simplify payments.\"",
+        "url": "https://www.marqeta.com/company/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Marqeta, Inc. - Form 10-Q cover page, securities registered under Section 12(b) on Nasdaq",
+        "url": "https://www.sec.gov/Archives/edgar/data/1522540/000152254026000063/mq-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions data for CIK 0001522540 listing exchange Nasdaq and ticker MQ",
+        "url": "https://data.sec.gov/submissions/CIK0001522540.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Marqeta, Inc. - Form 10-Q cover page: Class A common stock, trading symbol MQ, Nasdaq",
+        "url": "https://www.sec.gov/Archives/edgar/data/1522540/000152254026000063/mq-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions data for CIK 0001522540 listing exchange Nasdaq and ticker MQ",
+        "url": "https://data.sec.gov/submissions/CIK0001522540.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Marqeta - Official Site, About Us describing the card issuing platform",
+        "url": "https://www.marqeta.com/company/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Marqeta - Official Site, About Us",
+        "url": "https://www.marqeta.com/company/about-us",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "checkoutcom": {
+    "companyId": "checkoutcom",
+    "name": "Checkout.com",
+    "legalName": "Checkout Ltd",
+    "website": "https://www.checkout.com",
+    "description": "End-to-end payment services provider enabling businesses to accept online payments, disburse funds and manage acquiring, fraud detection and treasury.",
+    "hqCity": "London",
+    "hqCountry": "United Kingdom",
+    "foundedYear": 2012,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "end-to-end payment services provider",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "CHECKOUT LTD, company number 08037323 - Companies House register",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08037323",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Checkout.com - Official Site",
+        "url": "https://www.checkout.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Checkout.com - Official Site, product and platform description",
+        "url": "https://www.checkout.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Checkout.com - Official newsroom release dated 26th September 2025, dateline \"LONDON, UK\"",
+        "url": "https://www.checkout.com/newsroom/checkout-com-accelerates-towards-full-year-profitability-and-announces-employee-share-buy-back-and-a-new-12bn-valuation",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "CHECKOUT LTD - Companies House register, registered office address: Wenlock Works, Shepherdess Walk, London, England, N1 7BQ",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08037323",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "CHECKOUT LTD - Companies House register, registered office address in London, England",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08037323",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Checkout.com - Official newsroom release, dateline \"LONDON, UK\"",
+        "url": "https://www.checkout.com/newsroom/checkout-com-accelerates-towards-full-year-profitability-and-announces-employee-share-buy-back-and-a-new-12bn-valuation",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "CHECKOUT LTD - Companies House register, incorporated on 19 April 2012",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08037323",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "CHECKOUT LTD - Companies House register: company type \"Private limited Company\", status Active",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08037323",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Checkout.com - Official newsroom release announcing an employee share buy back at a new \$12 billion valuation, a private-company liquidity event rather than a public listing",
+        "url": "https://www.checkout.com/newsroom/checkout-com-accelerates-towards-full-year-profitability-and-announces-employee-share-buy-back-and-a-new-12bn-valuation",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "CHECKOUT LTD - Companies House persons with significant control: Mr Guillaume Georges Pousaz holds significant influence or control",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08037323/persons-with-significant-control",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Checkout.com - Official Site describing the company as an end-to-end Payment Services Provider",
+        "url": "https://www.checkout.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Checkout.com - Official Site",
+        "url": "https://www.checkout.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "airwallex": {
+    "companyId": "airwallex",
+    "name": "Airwallex",
+    "legalName": null,
+    "website": "https://www.airwallex.com",
+    "description": "Financial platform providing global business accounts, cross-border payments, payment acceptance, corporate cards, billing and spend management for businesses.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": 2015,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "global business accounts, cross-border payments and spend management",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Airwallex - Official Site, Who We Are",
+        "url": "https://www.airwallex.com/en-us/who-we-are",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Airwallex - Official newsroom release, About Airwallex boilerplate listing payment acceptance, billing, global accounts, corporate cards and spend management",
+        "url": "https://www.airwallex.com/global/newsroom/airwallex-secures-320-million-in-series-h-funding-valuation-hits-11-billion",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Airwallex - Official Site, Who We Are",
+        "url": "https://www.airwallex.com/en-us/who-we-are",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Airwallex - Official Site, Who We Are: \"In 2015, our CEO Jack Zhang and a few fellow entrepreneurs launched a coffee shop in Melbourne.\"",
+        "url": "https://www.airwallex.com/en-us/who-we-are",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Airwallex - Official newsroom release, About Airwallex boilerplate: \"Founded in Melbourne in 2015\"",
+        "url": "https://www.airwallex.com/global/newsroom/airwallex-secures-320-million-in-series-h-funding-valuation-hits-11-billion",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Airwallex - Official newsroom release dated 25 June 2026 announcing a \$320 million Series H private funding round at an \$11 billion valuation, led by Addition",
+        "url": "https://www.airwallex.com/global/newsroom/airwallex-secures-320-million-in-series-h-funding-valuation-hits-11-billion",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Airwallex - Official newsroom release announcing a \$330m Series G private round at an \$8bn valuation",
+        "url": "https://www.airwallex.com/global/newsroom/awx-raises-usd330m-series-g-at-usd8b-valuation-establishes-sf-as-dual-global-hq",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Airwallex - Official newsroom release, About Airwallex boilerplate describing global banking and financial operations products",
+        "url": "https://www.airwallex.com/global/newsroom/airwallex-secures-320-million-in-series-h-funding-valuation-hits-11-billion",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Airwallex - Official newsroom release, About Airwallex boilerplate",
+        "url": "https://www.airwallex.com/global/newsroom/airwallex-secures-320-million-in-series-h-funding-valuation-hits-11-billion",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "circle": {
+    "companyId": "circle",
+    "name": "Circle",
+    "legalName": "Circle Internet Group, Inc.",
+    "website": "https://www.circle.com",
+    "description": "Financial technology company that issues the USDC and EURC stablecoins and operates blockchain-based payment and developer infrastructure, including the Circle Payments Network and the Arc blockchain.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2013,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Crypto",
+    "subsector": "regulated stablecoin issuer and blockchain financial infrastructure",
+    "tickers": [
+      "NYSE:CRCL"
+    ],
+    "formerNames": [
+      "Circle Internet Financial Limited"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Circle Internet Group, Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page: \"CIRCLE INTERNET GROUP, INC.\"",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Circle Internet Group, Inc. - Form 10-K for fiscal year 2025, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000062/crcl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions data for CIK 0001876042 (Circle Internet Group, Inc.)",
+        "url": "https://data.sec.gov/submissions/CIK0001876042.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Circle - Official Site",
+        "url": "https://www.circle.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Circle Internet Group, Inc. - Form 10-K, Item 1 Business describing the full-stack internet financial platform anchored by USDC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000062/crcl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Circle - Official Site listing USDC, EURC, Circle Payments Network and Arc",
+        "url": "https://www.circle.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Circle Internet Group, Inc. - Form 10-Q cover page, principal executive offices: One World Trade Center, New York, NY 10007",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Circle Internet Group, Inc. - Form 10-K cover page, One World Trade Center, New York, NY 10007",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000062/crcl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Circle Internet Group, Inc. - Form 10-Q cover page, principal executive offices in New York, NY",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Circle Internet Group, Inc. - Form 10-K, Item 1 Business: \"We were founded in 2013\"",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000062/crcl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Circle Internet Group, Inc. - Form 10-Q cover page, securities registered under Section 12(b) on the New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions data for CIK 0001876042 listing exchange NYSE and ticker CRCL",
+        "url": "https://data.sec.gov/submissions/CIK0001876042.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Circle Internet Group, Inc. - Form 10-Q cover page: Class A common stock, par value \$0.0001 per share, trading symbol CRCL, New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Circle Internet Group, Inc. - Form 10-K cover page, trading symbol CRCL, New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000062/crcl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Circle Internet Group, Inc. - Form S-1 (April 2025): \"On July 1, 2024, we consummated an Irish High Court-approved scheme of arrangement, pursuant to which issued ordinary shares and preferred shares in the capital of Circle Internet Financial Limited were cancelled and, in connection with such cancellation, Circle Internet Group, Inc., a Delaware corporation, issued an equivalent number of shares...\"",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000119312525070481/d737521ds1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions data for CIK 0001876042, formerNames entry \"Circle Internet Financial Ltd\" (12/13/2023 to 4/12/2024)",
+        "url": "https://data.sec.gov/submissions/CIK0001876042.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Circle Internet Group, Inc. - Form 10-K, Item 1 Business describing USDC stablecoin issuance and onchain infrastructure",
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000062/crcl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Circle - Official Site describing itself as a regulated stablecoin issuer with USDC, EURC, USYC and the Arc blockchain",
+        "url": "https://www.circle.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "chainalysis": {
+    "companyId": "chainalysis",
+    "name": "Chainalysis",
+    "legalName": "Chainalysis Inc.",
+    "website": "https://www.chainalysis.com",
+    "description": "Blockchain data platform providing data, software, services and research on cryptocurrency activity to government agencies, exchanges, financial institutions and cybersecurity companies.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2014,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Crypto",
+    "subsector": "blockchain data and investigations software",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Chainalysis - Privacy Policy (names Chainalysis Inc. and its address)",
+        "url": "https://www.chainalysis.com/privacy-policy/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Chainalysis - Official Company Page",
+        "url": "https://www.chainalysis.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Chainalysis - Official Company Page",
+        "url": "https://www.chainalysis.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Chainalysis - Series F announcement boilerplate",
+        "url": "https://www.chainalysis.com/blog/series-f/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Chainalysis - Privacy Policy (114 5th Avenue, 19th Floor, New York, NY 10011)",
+        "url": "https://www.chainalysis.com/privacy-policy/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Chainalysis - Privacy Policy (New York, NY, United States address)",
+        "url": "https://www.chainalysis.com/privacy-policy/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Chainalysis - Official Company Page (co-founded in 2014)",
+        "url": "https://www.chainalysis.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Chainalysis - Series F private funding announcement",
+        "url": "https://www.chainalysis.com/blog/series-f/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Chainalysis - Official Company Page (blockchain data platform)",
+        "url": "https://www.chainalysis.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Chainalysis - Official Company Page (blockchain data platform)",
+        "url": "https://www.chainalysis.com/company/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "fireblocks": {
+    "companyId": "fireblocks",
+    "name": "Fireblocks",
+    "legalName": "Fireblocks Inc.",
+    "website": "https://www.fireblocks.com",
+    "description": "Enterprise platform providing secure infrastructure for moving, storing and issuing digital assets, used by exchanges, custodians, banks, trading desks and other financial institutions.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Crypto",
+    "subsector": "digital asset custody and transfer infrastructure",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Fireblocks - Privacy Policy (Fireblocks Inc. and its affiliates)",
+        "url": "https://www.fireblocks.com/privacy-policy/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Fireblocks - Official About Page",
+        "url": "https://www.fireblocks.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Fireblocks - Series E announcement, About Fireblocks boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/fireblocks-raises-550-million-in-series-e-funding-to-become-the-highest-valued-digital-asset-infrastructure-provider-301469630.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Fireblocks - BlockFold acquisition announcement, About Fireblocks boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/fireblocks-acquires-tokenization-firm-blockfold-to-serve-industrys-largest-banks--financial-institutions-301942560.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Fireblocks - Series E announcement, company-issued dateline NEW YORK",
+        "url": "https://www.prnewswire.com/news-releases/fireblocks-raises-550-million-in-series-e-funding-to-become-the-highest-valued-digital-asset-infrastructure-provider-301469630.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Fireblocks - BlockFold acquisition announcement, company-issued dateline NEW YORK",
+        "url": "https://www.prnewswire.com/news-releases/fireblocks-acquires-tokenization-firm-blockfold-to-serve-industrys-largest-banks--financial-institutions-301942560.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Fireblocks - Series E announcement, company-issued dateline NEW YORK",
+        "url": "https://www.prnewswire.com/news-releases/fireblocks-raises-550-million-in-series-e-funding-to-become-the-highest-valued-digital-asset-infrastructure-provider-301469630.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Fireblocks - Series E private funding announcement",
+        "url": "https://www.prnewswire.com/news-releases/fireblocks-raises-550-million-in-series-e-funding-to-become-the-highest-valued-digital-asset-infrastructure-provider-301469630.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Fireblocks - Official About Page (digital asset security infrastructure)",
+        "url": "https://www.fireblocks.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Fireblocks - Official About Page (digital asset security infrastructure)",
+        "url": "https://www.fireblocks.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "coalition": {
+    "companyId": "coalition",
+    "name": "Coalition",
+    "legalName": "Coalition, Inc.",
+    "website": "https://www.coalitioninc.com",
+    "description": "Cyber insurance and cybersecurity company that combines insurance coverage with security tools and incident response services for businesses.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "cyber insurance and cyber risk management",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Coalition - Help Center, Physical Address Update for Coalition, Inc. and Coalition Insurance Solutions, Inc.",
+        "url": "https://help.coalitioninc.com/hc/en-us/articles/47793213260059-Physical-Address-Update-Coalition-Inc-Coalition-Insurance-Solutions-Inc",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Coalition - Licenses page (Coalition Insurance Solutions, Inc. described as wholly-owned U.S. subsidiary)",
+        "url": "https://www.coalitioninc.com/licenses",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Coalition - Official About Page",
+        "url": "https://www.coalitioninc.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Coalition - Wirespeed acquisition announcement, About Coalition boilerplate",
+        "url": "https://www.coalitioninc.com/announcements/coalition-announces-acquisition-of-wirespeed",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Coalition - Why we founded Coalition (first-party founder post)",
+        "url": "https://www.coalitioninc.com/blog/why-we-founded-coalition",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Coalition - Help Center address update (1 Embarcadero Center, Suite 1200, San Francisco, CA 94111, effective March 2026)",
+        "url": "https://help.coalitioninc.com/hc/en-us/articles/47793213260059-Physical-Address-Update-Coalition-Inc-Coalition-Insurance-Solutions-Inc",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Coalition - Series E announcement (headquartered in San Francisco)",
+        "url": "https://www.coalitioninc.com/announcements/Coalition-Closes-205-Million-Series-E-Valuing-the-Cyber-Insurance-Provider-At-More-Than-3-5-Billion",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Coalition - Help Center address update (San Francisco, CA, United States)",
+        "url": "https://help.coalitioninc.com/hc/en-us/articles/47793213260059-Physical-Address-Update-Coalition-Inc-Coalition-Insurance-Solutions-Inc",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Coalition - Series E announcement (founded in 2017 by Joshua Motta and John Hering)",
+        "url": "https://www.coalitioninc.com/announcements/Coalition-Closes-205-Million-Series-E-Valuing-the-Cyber-Insurance-Provider-At-More-Than-3-5-Billion",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Coalition - Why we founded Coalition (first-party founder post, 2017)",
+        "url": "https://www.coalitioninc.com/blog/why-we-founded-coalition",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Coalition - Series E private funding announcement",
+        "url": "https://www.coalitioninc.com/announcements/Coalition-Closes-205-Million-Series-E-Valuing-the-Cyber-Insurance-Provider-At-More-Than-3-5-Billion",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Coalition - Wirespeed acquisition announcement, November 2025, company operating independently",
+        "url": "https://www.coalitioninc.com/announcements/coalition-announces-acquisition-of-wirespeed",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Coalition - Licenses page listing Coalition Insurance Company and Coalition Insurance Solutions, Inc. producer licences",
+        "url": "https://www.coalitioninc.com/licenses",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Coalition - Wirespeed acquisition announcement, About Coalition boilerplate",
+        "url": "https://www.coalitioninc.com/announcements/coalition-announces-acquisition-of-wirespeed",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "opensea": {
+    "companyId": "opensea",
+    "name": "OpenSea",
+    "legalName": "Ozone Networks, Inc.",
+    "website": "https://opensea.io",
+    "description": "Operator of a non-custodial marketplace for non-fungible tokens and other digital assets, supporting trading across multiple blockchains.",
+    "hqCity": "Miami",
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Crypto",
+    "subsector": "NFT and digital asset marketplace",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "OpenSea - Terms of Service (OpenSea is owned and operated by Ozone Networks, Inc., doing business as OpenSea)",
+        "url": "https://opensea.io/tos",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "OpenSea - Learn: Who is OpenSea (Ozone Networks, Inc copyright)",
+        "url": "https://opensea.io/learn/nft/who-is-opensea",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "OpenSea - Official Site Terms of Service",
+        "url": "https://opensea.io/tos",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "OpenSea - Learn: Who is OpenSea (first non-custodial marketplace for digital assets, multi-chain)",
+        "url": "https://opensea.io/learn/nft/who-is-opensea",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "OpenSea - Learn: Who is OpenSea (OpenSea is headquartered in Miami, Florida)",
+        "url": "https://opensea.io/learn/nft/who-is-opensea",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "OpenSea - Terms of Service (66 W Flagler St, Suite 929, Miami, FL 33130, USA)",
+        "url": "https://opensea.io/tos",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "OpenSea - Learn: Who is OpenSea (Miami, Florida, United States)",
+        "url": "https://opensea.io/learn/nft/who-is-opensea",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "OpenSea - Learn: Who is OpenSea (founded in 2017 by Devin Finzer and Alex Atallah)",
+        "url": "https://opensea.io/learn/nft/who-is-opensea",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "CoinDesk - NFT Marketplace OpenSea Valued at \$13.3B in \$300M private funding round",
+        "url": "https://www.coindesk.com/business/2022/01/05/nft-marketplace-opensea-valued-at-133b-in-300m-funding-round-report",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "CoinDesk - OpenSea Confirms Q1 Launch for SEA Token (2025 coverage of the company as a privately held business launching a token, not an equity offering)",
+        "url": "https://www.coindesk.com/business/2025/10/18/opensea-confirms-q1-launch-for-sea-token-with-half-of-supply-allocated-to-community",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "OpenSea - Learn: Who is OpenSea (marketplace for NFTs and digital assets)",
+        "url": "https://opensea.io/learn/nft/who-is-opensea",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "OpenSea - Learn: Who is OpenSea (non-custodial marketplace for digital assets)",
+        "url": "https://opensea.io/learn/nft/who-is-opensea",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "wiz": {
+    "companyId": "wiz",
+    "name": "Wiz",
+    "legalName": "Wiz, Inc.",
+    "website": "https://www.wiz.io",
+    "description": "Cloud and AI security platform that connects code, cloud and runtime into a single shared context so organisations can find and remove risk in their cloud environments. Operates as part of Google Cloud.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2020,
+    "status": "acquired",
+    "statusDetail": "Acquired by Google in 2026",
+    "sector": "Cybersecurity",
+    "subsector": "cloud and AI security platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Google Cloud - Cloud Acquisitions Privacy Notice (Affiliated Google Acquisition: Wiz, Inc.; effective March 11, 2026)",
+        "url": "https://cloud.google.com/terms/cloud-acquisitions-privacy-notice",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Wiz - Official Site",
+        "url": "https://www.wiz.io",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Google Cloud Press Corner - Google Completes Acquisition of Wiz",
+        "url": "https://www.googlecloudpresscorner.com/2026-03-11-Google-Completes-Acquisition-of-Wiz",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Google - Google completes acquisition of Wiz (blog.google)",
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/wiz-acquisition/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Google Cloud Press Corner - Google Completes Acquisition of Wiz (Wiz headquartered in New York)",
+        "url": "https://www.googlecloudpresscorner.com/2026-03-11-Google-Completes-Acquisition-of-Wiz",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Alphabet Investor Relations - Google Completes Acquisition of Wiz (headquartered in New York)",
+        "url": "https://abc.xyz/investor/news/news-details/2026/Google-Completes-Acquisition-of-Wiz-2026-ta7OaU2uA0/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Alphabet Investor Relations - Google Completes Acquisition of Wiz (New York, United States)",
+        "url": "https://abc.xyz/investor/news/news-details/2026/Google-Completes-Acquisition-of-Wiz-2026-ta7OaU2uA0/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "TechCrunch - Wiz raises \$1B at a \$12B valuation (founded four years before May 2024 by Rappaport, Ami Luttwak, Yinon Costica and Roy Reznik)",
+        "url": "https://techcrunch.com/2024/05/07/wiz-raises-1b-at-a-12b-valuation-to-expand-its-cloud-security-platform-through-acquisitions",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Alphabet Investor Relations - Google Completes Acquisition of Wiz, March 11, 2026",
+        "url": "https://abc.xyz/investor/news/news-details/2026/Google-Completes-Acquisition-of-Wiz-2026-ta7OaU2uA0/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Google - we announced we've closed the acquisition of Wiz (blog.google, March 11, 2026)",
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/wiz-acquisition/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Google Cloud Press Corner - Google Completes Acquisition of Wiz, March 11, 2026",
+        "url": "https://www.googlecloudpresscorner.com/2026-03-11-Google-Completes-Acquisition-of-Wiz",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Alphabet Investor Relations - Google Completes Acquisition of Wiz, completion dated March 11, 2026",
+        "url": "https://abc.xyz/investor/news/news-details/2026/Google-Completes-Acquisition-of-Wiz-2026-ta7OaU2uA0/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Google Cloud Press Corner - Wiz described as a cloud and AI security platform",
+        "url": "https://www.googlecloudpresscorner.com/2026-03-11-Google-Completes-Acquisition-of-Wiz",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Google - Wiz acquisition post describing the security platform across code, cloud and runtime",
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/wiz-acquisition/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "vanta": {
+    "companyId": "vanta",
+    "name": "Vanta",
+    "legalName": "Vanta Inc.",
+    "website": "https://www.vanta.com",
+    "description": "Trust management platform that automates security compliance and evidence collection for standards including SOC 2, ISO 27001, HIPAA, PCI and GDPR.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2018,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "security compliance automation and trust management",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Vanta - Privacy Policy (Vanta Inc., 655 Montgomery Street, San Francisco, CA 94111)",
+        "url": "https://www.vanta.com/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Vanta - Official About Page",
+        "url": "https://www.vanta.com/company/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Vanta - Official About Page (compliance with SOC 2, ISO 27001, HIPAA, PCI and GDPR)",
+        "url": "https://www.vanta.com/company/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Vanta - Official About Page (headquarters San Francisco, USA)",
+        "url": "https://www.vanta.com/company/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Vanta - Privacy Policy (655 Montgomery Street, San Francisco, CA 94111)",
+        "url": "https://www.vanta.com/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Vanta - Official About Page (San Francisco, USA)",
+        "url": "https://www.vanta.com/company/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Vanta - Official About Page (founded 2018)",
+        "url": "https://www.vanta.com/company/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Vanta - Announcing Vanta's \$150 million Series D, July 23, 2025 (private round)",
+        "url": "https://www.vanta.com/resources/vanta-announces-series-d",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Business Wire - Vanta Raises \$150M Series D, July 23, 2025 (company-issued)",
+        "url": "https://www.businesswire.com/news/home/20250723901336/en/Vanta-Raises-\$150M-Series-D-to-Power-the-Future-of-AI-Driven-Trust",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Vanta - Official About Page (security compliance and trust platform)",
+        "url": "https://www.vanta.com/company/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Vanta - Official About Page (Agentic Trust Platform, compliance automation)",
+        "url": "https://www.vanta.com/company/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "snyk": {
+    "companyId": "snyk",
+    "name": "Snyk",
+    "legalName": "Snyk Limited",
+    "website": "https://snyk.io",
+    "description": "Developer security company whose platform finds and fixes vulnerabilities in code, open source dependencies, containers and cloud infrastructure.",
+    "hqCity": "Boston",
+    "hqCountry": "United States",
+    "foundedYear": 2015,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "developer security and application security",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Snyk - Terms of Service (contracting entities)",
+        "url": "https://snyk.io/policies/terms-of-service/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Companies House - SNYK LIMITED, company number 09677925",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/09677925",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Snyk - official site footer, Snyk Limited Registered in England and Wales",
+        "url": "https://snyk.io/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Snyk - Official Site",
+        "url": "https://snyk.io/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Snyk - About",
+        "url": "https://snyk.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Snyk - About, 100 Summer St, Floor 7 Boston, MA 02110 USA",
+        "url": "https://snyk.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Snyk - About, 100 Summer St, Floor 7 Boston, MA 02110 USA",
+        "url": "https://snyk.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Snyk - About, Founded in 2015",
+        "url": "https://snyk.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Companies House - SNYK LIMITED incorporated 9 July 2015",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/09677925",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Companies House - SNYK LIMITED status Active, private limited company",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/09677925",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - no Snyk registration statement or listing filing 2024-01-01 to 2026-09-03",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Snyk%22&forms=S-1,424B4,8-A12B&dateRange=custom&startdt=2024-01-01&enddt=2026-09-03",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Snyk - About, security across code, dependencies, containers and cloud infrastructure",
+        "url": "https://snyk.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Snyk - About, developer-first tooling for security",
+        "url": "https://snyk.io/about/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "1password": {
+    "companyId": "1password",
+    "name": "1Password",
+    "legalName": "AgileBits Inc.",
+    "website": "https://1password.com",
+    "description": "Password management and identity security company providing credential, secrets and access management software for individuals, businesses and developers.",
+    "hqCity": "Toronto",
+    "hqCountry": "Canada",
+    "foundedYear": 2005,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "password management and identity security",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "1Password - Terms of Service, operated by AgileBits Inc.",
+        "url": "https://1password.com/legal/terms-of-service",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "1Password - Privacy Policy, AgileBits Inc. doing business as 1Password",
+        "url": "https://1password.com/legal/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "1Password - Official Site",
+        "url": "https://1password.com",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "1Password - About",
+        "url": "https://1password.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "1Password - Privacy Policy, 1Password is a Canadian company headquartered in Toronto, Ontario, Canada",
+        "url": "https://1password.com/legal/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "1Password - Privacy Policy, 1Password is a Canadian company headquartered in Toronto, Ontario, Canada",
+        "url": "https://1password.com/legal/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "1Password - About, When we founded 1Password in 2005",
+        "url": "https://1password.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "1Password - Press, has set the standard for dependable, intuitive cybersecurity since 2005",
+        "url": "https://1password.com/press",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "1Password - Press room, company operating independently with 2026 product announcements and no listing",
+        "url": "https://1password.com/press",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "1Password - About, identity security and trusted access",
+        "url": "https://1password.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "1Password - Terms of Service, password managing, secure document storing, administrative and related systems",
+        "url": "https://1password.com/legal/terms-of-service",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "netskope": {
+    "companyId": "netskope",
+    "name": "Netskope",
+    "legalName": "Netskope, Inc.",
+    "website": "https://www.netskope.com",
+    "description": "Cloud security and networking company providing security service edge and secure access service edge products for access to cloud, SaaS, web and private applications.",
+    "hqCity": "Santa Clara",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "security service edge and secure access service edge",
+    "tickers": [
+      "NASDAQ:NTSK"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Netskope, Inc. Form 10-Q for the period ended 31 July 2026, filed 2 September 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/2063196/000119312526380428/ntsk-20260731.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Nasdaq - Netskope, Inc. Class A Common Stock (NTSK)",
+        "url": "https://www.nasdaq.com/market-activity/stocks/ntsk",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Netskope - Official Site",
+        "url": "https://www.netskope.com",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Netskope - Announces Pricing of Initial Public Offering",
+        "url": "https://www.netskope.com/press-releases/netskope-announces-pricing-of-initial-public-offering",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Netskope - Company page, 2445 Augustine Dr. 3rd floor, Santa Clara, CA 95054",
+        "url": "https://www.netskope.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Netskope - Company page, Santa Clara, CA 95054",
+        "url": "https://www.netskope.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - Netskope, Inc. Form 10-Q, The Company was incorporated in Delaware in October 2012",
+        "url": "https://www.sec.gov/Archives/edgar/data/2063196/000119312526380428/ntsk-20260731.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Netskope Inc (NTSK), CIK 0002063196, Form 10-Q filed 2 September 2026, file number 001-42848",
+        "url": "https://www.sec.gov/Archives/edgar/data/2063196/000119312526380428/ntsk-20260731.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Nasdaq - Netskope, Inc. Class A Common Stock listed under NTSK",
+        "url": "https://www.nasdaq.com/market-activity/stocks/ntsk",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Nasdaq - Netskope, Inc. Class A Common Stock (NTSK)",
+        "url": "https://www.nasdaq.com/market-activity/stocks/ntsk",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Netskope - Announces Pricing of Initial Public Offering, Nasdaq Global Select Market under the symbol NTSK",
+        "url": "https://www.netskope.com/press-releases/netskope-announces-pricing-of-initial-public-offering",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Netskope - Announces Launch of Initial Public Offering, security and networking for the cloud and AI era",
+        "url": "https://www.netskope.com/press-releases/netskope-announces-launch-of-initial-public-offering",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Netskope - Announces Launch of Initial Public Offering, Netskope One platform, Zero Trust Engine and NewEdge network",
+        "url": "https://www.netskope.com/press-releases/netskope-announces-launch-of-initial-public-offering",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "arcticwolf": {
+    "companyId": "arcticwolf",
+    "name": "Arctic Wolf",
+    "legalName": "Arctic Wolf Networks, Inc.",
+    "website": "https://arcticwolf.com",
+    "description": "Security operations company providing a cloud-native security operations platform together with managed detection and response and related services.",
+    "hqCity": "Eden Prairie",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "security operations and managed detection and response",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Arctic Wolf - Terms of Use, Arctic Wolf Networks, Inc. or our affiliates",
+        "url": "https://arcticwolf.com/terms-of-use/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Arctic Wolf - Official Site",
+        "url": "https://arcticwolf.com",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Arctic Wolf - Company page",
+        "url": "https://arcticwolf.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Arctic Wolf - Terms of Use, 8939 Columbine Road, Suite 150, Eden Prairie, MN 55347, USA",
+        "url": "https://arcticwolf.com/terms-of-use/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Arctic Wolf - Terms of Use, Eden Prairie, MN 55347, USA",
+        "url": "https://arcticwolf.com/terms-of-use/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Arctic Wolf - Company page, Since 2012, Arctic Wolf has protected thousands of organizations from cyberthreats",
+        "url": "https://arcticwolf.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - no Arctic Wolf registration statement or listing filing 2024-01-01 to 2026-09-03",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Arctic+Wolf%22&forms=S-1,424B4,8-A12B&dateRange=custom&startdt=2024-01-01&enddt=2026-09-03",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Arctic Wolf - Press releases, company acting as private acquirer of Sevco Security in March 2026 and operating independently",
+        "url": "https://arcticwolf.com/resources/press-releases/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Arctic Wolf - Company page, the security operations leaders",
+        "url": "https://arcticwolf.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Arctic Wolf - Company page, comprehensive suite of security operations solutions",
+        "url": "https://arcticwolf.com/company/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "fivetran": {
+    "companyId": "fivetran",
+    "name": "Fivetran",
+    "legalName": null,
+    "website": "https://www.fivetran.com",
+    "description": "Data movement company whose platform replicates and transforms data from applications, databases and files into cloud data warehouses and data lakes.",
+    "hqCity": "Oakland",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "automated data movement and data pipelines",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Fivetran - Official Site",
+        "url": "https://www.fivetran.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Fivetran - press release, Fivetran and dbt Labs Complete Merger, About Fivetran boilerplate",
+        "url": "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Fivetran - About",
+        "url": "https://www.fivetran.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Fivetran - About, headquarters Oakland, California",
+        "url": "https://www.fivetran.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Fivetran - press release dateline OAKLAND, Calif. June 1, 2026",
+        "url": "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Fivetran - About, headquarters Oakland, California, USA",
+        "url": "https://www.fivetran.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Fivetran - About, founded 2012",
+        "url": "https://www.fivetran.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Fivetran - press release, all-stock merger with dbt Labs completed 1 June 2026, no public listing",
+        "url": "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - no Fivetran registration statement or listing filing 2024-01-01 to 2026-09-03",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Fivetran%22&forms=S-1,424B4,8-A12B&dateRange=custom&startdt=2024-01-01&enddt=2026-09-03",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Fivetran - press release, About Fivetran, moves, manages and transforms data from every system a business runs on",
+        "url": "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Fivetran - press release, Fivetran, the global leader in automated data movement",
+        "url": "https://www.fivetran.com/press/fivetran-and-dbt-labs-unite-to-set-the-standard-for-open-data-infrastructure-2025",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "dbtlabs": {
+    "companyId": "dbtlabs",
+    "name": "dbt Labs",
+    "legalName": "dbt Labs, LLC",
+    "website": "https://www.getdbt.com",
+    "description": "Analytics engineering company behind dbt, a framework and commercial platform used to transform, test and document data in cloud data warehouses.",
+    "hqCity": "Philadelphia",
+    "hqCountry": "United States",
+    "foundedYear": 2016,
+    "status": "acquired",
+    "statusDetail": "Acquired by Fivetran in 2026 through an all-stock merger announced on 13 October 2025 and completed on 1 June 2026.",
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "analytics engineering and data transformation",
+    "tickers": [],
+    "formerNames": [
+      "Fishtown Analytics"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "dbt Labs - Terms of Service preamble, BY EXECUTING AN ORDER FORM WITH DBT LABS, LLC",
+        "url": "https://www.getdbt.com/terms",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "dbt Labs - official site footer, (c) 2026 dbt Labs, LLC. All Rights Reserved.",
+        "url": "https://www.getdbt.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "dbt Labs - Official Site",
+        "url": "https://www.getdbt.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "dbt Labs - About Us",
+        "url": "https://www.getdbt.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "dbt Labs - press release, About dbt Labs boilerplate",
+        "url": "https://www.getdbt.com/blog/dbt-labs-100m-arr-milestone",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "dbt Labs - press release dateline PHILADELPHIA, Feb. 5, 2025",
+        "url": "https://www.getdbt.com/blog/dbt-labs-100m-arr-milestone",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "dbt Labs - About Us, described as a Philadelphia startup",
+        "url": "https://www.getdbt.com/dbt-labs/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "dbt Labs - press release dateline PHILADELPHIA, Feb. 5, 2025",
+        "url": "https://www.getdbt.com/blog/dbt-labs-100m-arr-milestone",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "dbt Labs - press release, Since 2016, dbt Labs has been on a mission",
+        "url": "https://www.getdbt.com/blog/dbt-labs-100m-arr-milestone",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "dbt Labs - Fivetran and dbt Labs Complete Merger, completion announced 1 June 2026",
+        "url": "https://www.getdbt.com/blog/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Fivetran - Fivetran and dbt Labs Complete Merger, completion of its merger with dbt Labs",
+        "url": "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Fivetran - Fivetran and dbt Labs Complete Merger, OAKLAND, Calif. June 1, 2026, all-stock merger originally announced October 13, 2025",
+        "url": "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Fivetran - Fivetran and dbt Labs Unite, definitive agreement signed 13 October 2025",
+        "url": "https://www.fivetran.com/press/fivetran-and-dbt-labs-unite-to-set-the-standard-for-open-data-infrastructure-2025",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "dbt Labs - press release, pioneered the practice of analytics engineering",
+        "url": "https://www.getdbt.com/blog/dbt-labs-100m-arr-milestone",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "dbt Labs - press release, analytics engineering workflow and dbt tooling",
+        "url": "https://www.getdbt.com/blog/dbt-labs-100m-arr-milestone",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "dbt Labs - Fishtown Analytics Rebrands as dbt Labs",
+        "url": "https://www.getdbt.com/blog/fishtown-analytics-rebrands-as-dbt-labs-closes-150m-to-develop-open-source-analytics-engineering-software",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "cockroachlabs": {
+    "companyId": "cockroachlabs",
+    "name": "Cockroach Labs",
+    "legalName": "Cockroach Labs, Inc.",
+    "website": "https://www.cockroachlabs.com",
+    "description": "Software company that develops CockroachDB, a distributed SQL database, and offers it as a self-hosted product and as a managed cloud service.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2015,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "distributed SQL database",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Cockroach Labs - Software-as-a-Service Terms and Conditions",
+        "url": "https://www.cockroachlabs.com/cloud-terms-and-conditions/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Cockroach Labs - About",
+        "url": "https://www.cockroachlabs.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Cockroach Labs - About",
+        "url": "https://www.cockroachlabs.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Cockroach Labs - Series F Funding Press Release",
+        "url": "https://www.cockroachlabs.com/news/press-release-series-f-funding/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Cockroach Labs - Series F Funding Press Release",
+        "url": "https://www.cockroachlabs.com/news/press-release-series-f-funding/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Cockroach Labs - Series F Funding Press Release",
+        "url": "https://www.cockroachlabs.com/news/press-release-series-f-funding/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Cockroach Labs - Software-as-a-Service Terms and Conditions",
+        "url": "https://www.cockroachlabs.com/cloud-terms-and-conditions/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Cockroach Labs - About",
+        "url": "https://www.cockroachlabs.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Cockroach Labs - Series F Funding Press Release",
+        "url": "https://www.cockroachlabs.com/news/press-release-series-f-funding/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Cockroach Labs - About",
+        "url": "https://www.cockroachlabs.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Cockroach Labs - About",
+        "url": "https://www.cockroachlabs.com/about/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "retool": {
+    "companyId": "retool",
+    "name": "Retool",
+    "legalName": "Retool, Inc.",
+    "website": "https://retool.com",
+    "description": "Software platform used by companies to build, deploy and manage internal tools and business applications, with connections to databases, APIs and large language models.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "internal tools development platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Retool - Privacy Policy",
+        "url": "https://docs.retool.com/legal/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Retool - Official Site",
+        "url": "https://retool.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Retool - Official Site",
+        "url": "https://retool.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Retool - Privacy Policy",
+        "url": "https://docs.retool.com/legal/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Retool - Privacy Policy",
+        "url": "https://docs.retool.com/legal/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Retool - Careers",
+        "url": "https://retool.com/careers",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Retool - Careers",
+        "url": "https://retool.com/careers",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - no registration statement for Retool, Inc.",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Retool%2C%20Inc.%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Retool - Official Site",
+        "url": "https://retool.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Retool - Official Site",
+        "url": "https://retool.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "linear": {
+    "companyId": "linear",
+    "name": "Linear",
+    "legalName": "Linear Orbit, Inc.",
+    "website": "https://linear.app",
+    "description": "Software company that builds Linear, a project and issue tracking system used by software product development teams.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": 2019,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "project and issue tracking software for product development teams",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Linear - Terms of Service",
+        "url": "https://linear.app/terms",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Linear - About",
+        "url": "https://linear.app/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Linear - About",
+        "url": "https://linear.app/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Linear - About",
+        "url": "https://linear.app/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Linear - Building our way: Announcing our Series C",
+        "url": "https://linear.app/now/building-our-way",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Linear - About",
+        "url": "https://linear.app/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Linear - About",
+        "url": "https://linear.app/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "webflow": {
+    "companyId": "webflow",
+    "name": "Webflow",
+    "legalName": "Webflow, Inc.",
+    "website": "https://webflow.com",
+    "description": "Visual development platform used to design, build and host websites without writing code.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2013,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "visual website design, build and hosting platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Webflow - Data Processing Addendum",
+        "url": "https://webflow.com/legal/dpa",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Webflow - Official Site",
+        "url": "https://webflow.com",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Webflow - About Webflow boilerplate, company press release",
+        "url": "https://www.prnewswire.com/news-releases/webflow-named-to-2022-forbes-cloud-100-for-third-straight-year-301602803.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Webflow - About Webflow boilerplate, company press release",
+        "url": "https://www.prnewswire.com/news-releases/webflow-named-to-2022-forbes-cloud-100-for-third-straight-year-301602803.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Webflow - About Webflow boilerplate, company press release",
+        "url": "https://www.prnewswire.com/news-releases/webflow-named-to-2022-forbes-cloud-100-for-third-straight-year-301602803.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Webflow - Data Processing Addendum",
+        "url": "https://webflow.com/legal/dpa",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Webflow - About Webflow boilerplate, company press release",
+        "url": "https://www.prnewswire.com/news-releases/webflow-named-to-2022-forbes-cloud-100-for-third-straight-year-301602803.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Webflow - Series C funding announcement",
+        "url": "https://webflow.com/blog/webflow-series-c-funding",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - no registration statement for Webflow, Inc.",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Webflow%2C%20Inc.%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Webflow - About Webflow boilerplate, company press release",
+        "url": "https://www.prnewswire.com/news-releases/webflow-named-to-2022-forbes-cloud-100-for-third-straight-year-301602803.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Webflow - About Webflow boilerplate, company press release",
+        "url": "https://www.prnewswire.com/news-releases/webflow-named-to-2022-forbes-cloud-100-for-third-straight-year-301602803.html",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "miro": {
+    "companyId": "miro",
+    "name": "Miro",
+    "legalName": "RealtimeBoard Inc.",
+    "website": "https://miro.com",
+    "description": "Collaborative visual workspace software providing an online whiteboard and infinite canvas used by teams to run workshops, design products and plan work.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2011,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "collaborative online whiteboard and visual workspace",
+    "tickers": [],
+    "formerNames": [
+      "RealtimeBoard"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Miro - Terms of Service",
+        "url": "https://miro.com/legal/terms-of-service/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Miro - About",
+        "url": "https://miro.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Miro - About",
+        "url": "https://miro.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Miro - Series C funding announcement",
+        "url": "https://miro.com/newsroom/miro-series-c/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Miro - About Miro boilerplate, company press release 2025",
+        "url": "https://www.businesswire.com/news/home/20250507080020/en/Miro-Launches-Solution-Partner-Program-to-Accelerate-Enterprise-Innovation-and-Collaboration",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Miro - About Miro boilerplate, company press release 2025",
+        "url": "https://www.businesswire.com/news/home/20250507080020/en/Miro-Launches-Solution-Partner-Program-to-Accelerate-Enterprise-Innovation-and-Collaboration",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Miro - Terms of Service",
+        "url": "https://miro.com/legal/terms-of-service/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Miro - About Miro boilerplate, company press release 2025",
+        "url": "https://www.businesswire.com/news/home/20250507080020/en/Miro-Launches-Solution-Partner-Program-to-Accelerate-Enterprise-Innovation-and-Collaboration",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Miro - Series C funding announcement",
+        "url": "https://miro.com/newsroom/miro-series-c/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Miro - Series C funding announcement",
+        "url": "https://miro.com/newsroom/miro-series-c/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Miro - About",
+        "url": "https://miro.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Miro - About",
+        "url": "https://miro.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Miro - RealtimeBoard is now Miro",
+        "url": "https://miro.com/blog/features/realtimeboard-is-now-miro/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "grammarly": {
+    "companyId": "grammarly",
+    "name": "Superhuman",
+    "legalName": "Superhuman Platform Inc.",
+    "website": "https://superhuman.com",
+    "description": "AI productivity software company whose products include the Grammarly writing assistant, the Coda workspace, Superhuman Mail and the Superhuman Go assistant.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2009,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "AI writing assistance and productivity suite",
+    "tickers": [],
+    "formerNames": [
+      "Grammarly"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Superhuman - Terms of Service",
+        "url": "https://superhuman.com/terms",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Grammarly - Customer Business Agreement",
+        "url": "https://www.grammarly.com/terms/customer-business-agreement",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Superhuman - Official Site",
+        "url": "https://superhuman.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Grammarly - Announcing company rebrand to Superhuman",
+        "url": "https://www.grammarly.com/blog/company/announcing-company-rebrand-to-superhuman/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Superhuman - Official Site",
+        "url": "https://superhuman.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Grammarly - Announcing company rebrand to Superhuman",
+        "url": "https://www.grammarly.com/blog/company/announcing-company-rebrand-to-superhuman/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Grammarly Announces \$1 Billion Growth Financing With General Catalyst - company press release",
+        "url": "https://www.businesswire.com/news/home/20250529436291/en/Grammarly-Announces-%241-Billion-Growth-Financing-With-General-Catalyst",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Grammarly Announces \$1 Billion Growth Financing With General Catalyst - company press release",
+        "url": "https://www.businesswire.com/news/home/20250529436291/en/Grammarly-Announces-%241-Billion-Growth-Financing-With-General-Catalyst",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Grammarly - About",
+        "url": "https://www.grammarly.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Grammarly Announces \$1 Billion Growth Financing With General Catalyst - company press release",
+        "url": "https://www.businesswire.com/news/home/20250529436291/en/Grammarly-Announces-%241-Billion-Growth-Financing-With-General-Catalyst",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Grammarly - Announcing company rebrand to Superhuman",
+        "url": "https://www.grammarly.com/blog/company/announcing-company-rebrand-to-superhuman/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Grammarly - Announcing company rebrand to Superhuman",
+        "url": "https://www.grammarly.com/blog/company/announcing-company-rebrand-to-superhuman/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Grammarly - Announcing company rebrand to Superhuman",
+        "url": "https://www.grammarly.com/blog/company/announcing-company-rebrand-to-superhuman/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Grammarly - Customer Business Agreement, 'Superhuman Platform Inc., formerly known as Grammarly, Inc.'",
+        "url": "https://www.grammarly.com/terms/customer-business-agreement",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "clickup": {
+    "companyId": "clickup",
+    "name": "ClickUp",
+    "legalName": "Mango Technologies, Inc.",
+    "website": "https://clickup.com",
+    "description": "All-in-one productivity platform for teams, combining project management, document collaboration, spreadsheets, chat and goals in a single tool.",
+    "hqCity": "San Diego",
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "all-in-one work productivity and project management platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "ClickUp - Terms of Service",
+        "url": "https://clickup.com/terms",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "ClickUp - Official Site",
+        "url": "https://clickup.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "ClickUp - About ClickUp boilerplate, Series C announcement",
+        "url": "https://clickup.com/blog/clickup-raises-400m-in-series-c-funding/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "ClickUp Series C announcement - About ClickUp boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/clickup-raises-400m-in-series-c-funding-the-biggest-investment-in-workplace-productivity-history-301409506.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "ClickUp - About page, San Diego HQ",
+        "url": "https://clickup.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "ClickUp - About ClickUp boilerplate, based in San Diego",
+        "url": "https://clickup.com/blog/clickup-raises-400m-in-series-c-funding/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "ClickUp - About page, San Diego HQ, United States",
+        "url": "https://clickup.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "ClickUp - About ClickUp boilerplate, Founded in 2017",
+        "url": "https://clickup.com/blog/clickup-raises-400m-in-series-c-funding/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "ClickUp Series C announcement - Founded in 2017",
+        "url": "https://www.prnewswire.com/news-releases/clickup-raises-400m-in-series-c-funding-the-biggest-investment-in-workplace-productivity-history-301409506.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "ClickUp - Series C private venture round, privately held",
+        "url": "https://clickup.com/blog/clickup-raises-400m-in-series-c-funding/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "ClickUp Series C announcement - private venture financing",
+        "url": "https://www.prnewswire.com/news-releases/clickup-raises-400m-in-series-c-funding-the-biggest-investment-in-workplace-productivity-history-301409506.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "ClickUp - About ClickUp boilerplate, productivity platform",
+        "url": "https://clickup.com/blog/clickup-raises-400m-in-series-c-funding/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "ClickUp - About ClickUp boilerplate, project management and collaboration",
+        "url": "https://clickup.com/blog/clickup-raises-400m-in-series-c-funding/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "servicetitan": {
+    "companyId": "servicetitan",
+    "name": "ServiceTitan",
+    "legalName": "ServiceTitan, Inc.",
+    "website": "https://www.servicetitan.com",
+    "description": "Software platform for residential and commercial trades contractors, covering field service management, construction project tracking and business operations.",
+    "hqCity": "Glendale",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "vertical software for residential and commercial trades contractors",
+    "tickers": [
+      "NASDAQ:TTAN"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "ServiceTitan, Inc. - Form 10-K cover page, FY ended 2026-01-31",
+        "url": "https://www.sec.gov/Archives/edgar/data/1638826/000163882626000028/ttan-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - ServiceTitan, Inc. filing index",
+        "url": "https://www.sec.gov/Archives/edgar/data/1638826/000163882626000028/0001638826-26-000028-index.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "ServiceTitan - Official Site, About",
+        "url": "https://www.servicetitan.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "ServiceTitan, Inc. - Form 10-K Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1638826/000163882626000028/ttan-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "ServiceTitan - Official Site, About",
+        "url": "https://www.servicetitan.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "ServiceTitan, Inc. - Form 10-K cover, principal executive offices Glendale, California",
+        "url": "https://www.sec.gov/Archives/edgar/data/1638826/000163882626000028/ttan-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "ServiceTitan, Inc. - Form 10-K cover, principal executive offices Glendale, California",
+        "url": "https://www.sec.gov/Archives/edgar/data/1638826/000163882626000028/ttan-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "ServiceTitan, Inc. - Form 10-K cover, securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1638826/000163882626000028/ttan-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions - ServiceTitan, Inc. CIK 0001638826",
+        "url": "https://data.sec.gov/submissions/CIK0001638826.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "ServiceTitan, Inc. - Form 10-K cover, Class A Common Stock, TTAN, The Nasdaq Stock Market LLC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1638826/000163882626000028/ttan-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Nasdaq official listing - ServiceTitan, Inc. Class A Common Stock (TTAN)",
+        "url": "https://www.nasdaq.com/market-activity/stocks/ttan",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions - tickers TTAN, exchanges Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001638826.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "ServiceTitan, Inc. - Form 10-K Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1638826/000163882626000028/ttan-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "ServiceTitan, Inc. - Form 10-K Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1638826/000163882626000028/ttan-20260131.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "xai": {
+    "companyId": "xai",
+    "name": "xAI",
+    "legalName": "X.AI Corp.",
+    "website": "https://x.ai",
+    "description": "Artificial intelligence company building frontier AI models and the Grok assistant, including reasoning, real-time voice and generative media systems.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": 2023,
+    "status": "acquired",
+    "statusDetail": "Acquired by Space Exploration Technologies Corp. (SpaceX) in 2026; SpaceX completed its acquisition of parent X.AI Holdings Corp. on 2 February 2026, making it a wholly owned subsidiary",
+    "sector": "AI",
+    "subsector": "frontier AI models and research",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SpaceX Form 10-Q, period 2026-06-30 - X.AI Corp began operations in March 2023",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SpaceX Form S-1 Exhibit 21.1 - list of significant subsidiaries",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/exhibit211-sx1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "xAI - Official Site, About",
+        "url": "https://x.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "xAI - Official Site, About",
+        "url": "https://x.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "xAI - Terms of Service, contracting entity is a Nevada company with registered offices in Austin, Texas, USA",
+        "url": "https://x.ai/legal/terms-of-service",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SpaceX Form 10-Q, period 2026-06-30 - X.AI Corp began operations in March 2023",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SpaceX Form 10-Q, period 2026-06-30 - completed acquisition of X.AI Holdings Corp on 2 February 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "SpaceX Form 10-Q, period 2026-06-30 - xAI Merger Date and wholly owned subsidiary language",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "SpaceX Form S-1 Exhibit 21.1 - X.AI LLC and X Corp. listed as SpaceX significant subsidiaries",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/exhibit211-sx1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "xAI - Official Site, About",
+        "url": "https://x.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "xAI - Official Site, About",
+        "url": "https://x.ai/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "safesuperintelligence": {
+    "companyId": "safesuperintelligence",
+    "name": "Safe Superintelligence",
+    "legalName": "Safe Superintelligence Inc.",
+    "website": "https://ssi.inc",
+    "description": "AI research lab pursuing safe superintelligence as its single goal and only product, developing safety and capabilities together.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "safe superintelligence research",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Safe Superintelligence Inc. - Official Site",
+        "url": "https://ssi.inc/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Safe Superintelligence Inc. - Official Site",
+        "url": "https://ssi.inc/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Safe Superintelligence Inc. - Official Site",
+        "url": "https://ssi.inc/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Safe Superintelligence Inc. - Official Site, we are an American company",
+        "url": "https://ssi.inc/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Safe Superintelligence Inc. - Updates, private funding raised from named venture investors",
+        "url": "https://ssi.inc/updates",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Safe Superintelligence Inc. - Official Site",
+        "url": "https://ssi.inc/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Safe Superintelligence Inc. - Official Site",
+        "url": "https://ssi.inc/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "physicalintelligence": {
+    "companyId": "physicalintelligence",
+    "name": "Physical Intelligence",
+    "legalName": null,
+    "website": "https://www.pi.website",
+    "description": "AI company developing general-purpose learning algorithms and foundation models intended to control any robot to do any task.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "general-purpose robot foundation models",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Physical Intelligence - Official Site",
+        "url": "https://www.pi.website/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Physical Intelligence - Official Site",
+        "url": "https://www.pi.website/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "TechCrunch - Physical Intelligence's headquarters in San Francisco",
+        "url": "https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "TechCrunch - Physical Intelligence's headquarters in San Francisco",
+        "url": "https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "TechCrunch - privately funded, over \$1 billion raised from venture investors at a \$5.6 billion valuation",
+        "url": "https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Physical Intelligence - Official Site",
+        "url": "https://www.pi.website/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Physical Intelligence - Official Site, research blog",
+        "url": "https://www.pi.website/blog",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "thinkingmachineslab": {
+    "companyId": "thinkingmachineslab",
+    "name": "Thinking Machines Lab",
+    "legalName": null,
+    "website": "https://thinkingmachines.ai",
+    "description": "Artificial intelligence research and product company working on multimodal models, human-AI collaboration and customisable frontier AI systems.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "frontier AI research and multimodal models",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Thinking Machines Lab - Official Site",
+        "url": "https://thinkingmachines.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Thinking Machines Lab - Official Site",
+        "url": "https://thinkingmachines.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Thinking Machines Lab - Research blog",
+        "url": "https://thinkingmachines.ai/blog/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "TechCrunch - closed a \$2 billion seed round valuing the startup at \$12 billion",
+        "url": "https://techcrunch.com/2025/07/15/mira-muratis-thinking-machines-lab-is-worth-12b-in-seed-round/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "TechCrunch - Thinking Machines Lab is ex-OpenAI CTO Mira Murati's new startup",
+        "url": "https://techcrunch.com/2025/02/18/thinking-machines-lab-is-ex-openai-cto-mira-muratis-new-startup/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Thinking Machines Lab - Official Site",
+        "url": "https://thinkingmachines.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Thinking Machines Lab - Official Site",
+        "url": "https://thinkingmachines.ai/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "appliedintuition": {
+    "companyId": "appliedintuition",
+    "name": "Applied Intuition",
+    "legalName": "Applied Intuition, Inc.",
+    "website": "https://www.appliedintuition.com",
+    "description": "Vehicle software company providing development and simulation tooling, vehicle operating systems and autonomy stacks for the automotive, trucking, defense, construction, mining and agriculture industries.",
+    "hqCity": "Sunnyvale",
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Mobility",
+    "subsector": "vehicle autonomy software, development tooling and vehicle operating systems",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Applied Intuition - About",
+        "url": "https://www.appliedintuition.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Applied Intuition - Launches Dana press release, About boilerplate",
+        "url": "https://www.appliedintuition.com/press-releases/applied-intuition-launches-dana",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Applied Intuition - Series F press release",
+        "url": "https://www.appliedintuition.com/press-releases/series-f",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Applied Intuition - Launches Dana press release, About boilerplate",
+        "url": "https://www.appliedintuition.com/press-releases/applied-intuition-launches-dana",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Applied Intuition - About",
+        "url": "https://www.appliedintuition.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Applied Intuition - About, Headquartered in Sunnyvale, California",
+        "url": "https://www.appliedintuition.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Applied Intuition - Launches Dana press release, headquartered in Sunnyvale, California",
+        "url": "https://www.appliedintuition.com/press-releases/applied-intuition-launches-dana",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Applied Intuition - About, Headquartered in Sunnyvale, California",
+        "url": "https://www.appliedintuition.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Applied Intuition - Launches Dana press release, Founded in 2017",
+        "url": "https://www.appliedintuition.com/press-releases/applied-intuition-launches-dana",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Applied Intuition - Isuzu press release, Founded in 2017",
+        "url": "https://www.appliedintuition.com/press-releases/applied-intuition-isuzu-autonomous-trucking",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Applied Intuition - Series F private fundraise and tender offer announcement",
+        "url": "https://www.appliedintuition.com/press-releases/series-f",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Applied Intuition - Launches Dana press release, describes tools and infrastructure, operating systems and autonomy for moving machines",
+        "url": "https://www.appliedintuition.com/press-releases/applied-intuition-launches-dana",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Applied Intuition - Launches Dana press release, About boilerplate",
+        "url": "https://www.appliedintuition.com/press-releases/applied-intuition-launches-dana",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "crusoe": {
+    "companyId": "crusoe",
+    "name": "Crusoe",
+    "legalName": "Crusoe Inc.",
+    "website": "https://www.crusoe.ai",
+    "description": "Company that designs, builds and operates AI data centers and provides GPU cloud computing and managed AI inference services, using an energy-first approach to powering compute.",
+    "hqCity": "Denver",
+    "hqCountry": "United States",
+    "foundedYear": 2018,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "AI cloud computing and AI data center infrastructure",
+    "tickers": [],
+    "formerNames": [
+      "Crusoe Energy Holdings Inc."
+    ],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Crusoe - Official Site",
+        "url": "https://www.crusoe.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions, CIK 0001924674, name Crusoe Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001924674.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Crusoe - Official Site footer, 2026 Crusoe, Inc",
+        "url": "https://www.crusoe.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Crusoe - Official Site",
+        "url": "https://www.crusoe.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Crusoe - Newsroom, Denver HQ expansion",
+        "url": "https://www.crusoe.ai/resources/newsroom/crusoe-expands-denver-hq",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR submissions, CIK 0001924674, business address Denver CO",
+        "url": "https://data.sec.gov/submissions/CIK0001924674.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR submissions, CIK 0001924674, business address Denver CO",
+        "url": "https://data.sec.gov/submissions/CIK0001924674.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Crusoe - Newsroom, The company, founded in 2018",
+        "url": "https://www.crusoe.ai/resources/newsroom/crusoe-expands-denver-hq",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions, CIK 0001924674, Form D exempt offerings through 2025-10-23 and no registration statement",
+        "url": "https://data.sec.gov/submissions/CIK0001924674.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Crusoe - Official Site, AI cloud, managed AI services and AI data centers",
+        "url": "https://www.crusoe.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Crusoe - Official Site, Crusoe Cloud and AI data center infrastructure",
+        "url": "https://www.crusoe.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions, CIK 0001924674, formerNames Crusoe Energy Holdings Inc. from 2022-04-22 to 2024-02-08",
+        "url": "https://data.sec.gov/submissions/CIK0001924674.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "abridge": {
+    "companyId": "abridge",
+    "name": "Abridge",
+    "legalName": "Abridge AI, Inc.",
+    "website": "https://www.abridge.com",
+    "description": "Healthcare AI company whose platform converts patient and clinician conversations into structured clinical documentation in real time, with integrations into electronic medical record systems.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": 2018,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "generative AI for clinical documentation",
+    "tickers": [],
+    "formerNames": [
+      "intelligible.ai Inc."
+    ],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Abridge - Official Site",
+        "url": "https://www.abridge.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Abridge - Privacy Policy, Abridge AI, Inc.",
+        "url": "https://www.abridge.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions, CIK 0001737537, name Abridge AI Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001737537.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Abridge - Press release About boilerplate",
+        "url": "https://www.abridge.com/press-release/hopkins-abridge",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Abridge - Official Site",
+        "url": "https://www.abridge.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Abridge - Privacy Policy, US postal address for Abridge AI, Inc.",
+        "url": "https://www.abridge.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR submissions, CIK 0001737537, US business address and Delaware incorporation",
+        "url": "https://data.sec.gov/submissions/CIK0001737537.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Abridge - Press release, Abridge was founded in 2018",
+        "url": "https://www.abridge.com/press-release/hopkins-abridge",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions, CIK 0001737537, Form D exempt offerings through 2025-06-30 and no registration statement",
+        "url": "https://data.sec.gov/submissions/CIK0001737537.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Abridge - Official Site, generative AI for clinical conversations",
+        "url": "https://www.abridge.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Abridge - Press release About boilerplate",
+        "url": "https://www.abridge.com/press-release/hopkins-abridge",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions, CIK 0001737537, formerNames intelligible.ai Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001737537.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "springhealth": {
+    "companyId": "springhealth",
+    "name": "Spring Health",
+    "legalName": "Spring Care, Inc.",
+    "website": "https://www.springhealth.com",
+    "description": "Mental health company providing employers, health plans and partners with a platform for self-guided tools, coaching, therapy, medication management, crisis support and specialty care.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2016,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Digital Health",
+    "subsector": "employer and health plan mental health benefits and care delivery",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Spring Health - Official Site",
+        "url": "https://www.springhealth.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Spring Health - Official Site footer, 2026 Spring Care, Inc.",
+        "url": "https://www.springhealth.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions, CIK 0001716933, name Spring Care, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001716933.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Spring Health - About Us",
+        "url": "https://www.springhealth.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Spring Health - Alma press release About boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/spring-health-joins-forces-with-alma-expanding-access-to-precision-mental-health-care-302673454.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR submissions, CIK 0001716933, business address 60 Madison Avenue, New York, NY",
+        "url": "https://data.sec.gov/submissions/CIK0001716933.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Spring Health - Alma press release, NEW YORK dateline",
+        "url": "https://www.prnewswire.com/news-releases/spring-health-joins-forces-with-alma-expanding-access-to-precision-mental-health-care-302673454.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR submissions, CIK 0001716933, business address New York, NY",
+        "url": "https://data.sec.gov/submissions/CIK0001716933.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Spring Health - About Us, Founded in 2016 as an AI company",
+        "url": "https://www.springhealth.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions, CIK 0001716933, Form D exempt offering filed 2026-05-15 and no registration statement",
+        "url": "https://data.sec.gov/submissions/CIK0001716933.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Spring Health - About Us, mental health support platform",
+        "url": "https://www.springhealth.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Spring Health - Alma press release About boilerplate, trusted by employers, health plans and channel partners",
+        "url": "https://www.prnewswire.com/news-releases/spring-health-joins-forces-with-alma-expanding-access-to-precision-mental-health-care-302673454.html",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "cityblockhealth": {
+    "companyId": "cityblockhealth",
+    "name": "Cityblock Health",
+    "legalName": "Cityblock Health, Inc.",
+    "website": "https://www.cityblock.com",
+    "description": "Value-based healthcare provider delivering clinical, behavioral health and social care to Medicaid and dually eligible members in partnership with Medicaid health plans and health systems.",
+    "hqCity": "Brooklyn",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Healthcare",
+    "subsector": "value-based care provider for Medicaid and dually eligible populations",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Cityblock - About",
+        "url": "https://www.cityblock.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Cityblock - About page, Cityblock Health, Inc.",
+        "url": "https://www.cityblock.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions, CIK 0001726601, name Cityblock Health, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001726601.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Cityblock Health - press release About boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/cityblock-health-welcomes-chief-technology-officer-new-board-members-302658800.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Cityblock - About page footer address, 495 Flatbush Ave, Brooklyn, NY",
+        "url": "https://www.cityblock.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Cityblock Health - press release, BROOKLYN, N.Y. dateline",
+        "url": "https://www.prnewswire.com/news-releases/cityblock-health-welcomes-chief-technology-officer-new-board-members-302658800.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Cityblock - About page footer address, Brooklyn, NY",
+        "url": "https://www.cityblock.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions, CIK 0001726601, Form D exempt offerings only and no registration statement",
+        "url": "https://data.sec.gov/submissions/CIK0001726601.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "CNBC - Cityblock spun out of Sidewalk Labs, establishing a spinout rather than an acquisition",
+        "url": "https://www.cnbc.com/2017/10/02/cityblock-alphabet-spinout-wants-to-redesign-health-care.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Cityblock Health - press release About boilerplate, value-based healthcare provider",
+        "url": "https://www.prnewswire.com/news-releases/cityblock-health-welcomes-chief-technology-officer-new-board-members-302658800.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Cityblock Health - press release About boilerplate, dually eligible and Medicaid populations",
+        "url": "https://www.prnewswire.com/news-releases/cityblock-health-welcomes-chief-technology-officer-new-board-members-302658800.html",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "colorhealth": {
+    "companyId": "colorhealth",
+    "name": "Color Health",
+    "legalName": "Color Health, Inc.",
+    "website": "https://www.color.com",
+    "description": "Health company operating an oncologist-led virtual cancer clinic that provides risk identification, guidelines-based screening, early detection, treatment support and survivorship care for employers, health plans, unions and public sector populations, with clinical care delivered by Color Medical.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Digital Health",
+    "subsector": "virtual cancer care clinic for employers and health plans",
+    "tickers": [],
+    "formerNames": [
+      "Color Genomics, Inc."
+    ],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Color - Official Site",
+        "url": "https://www.color.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Color - Privacy Policy and site footer, Color Health, Inc",
+        "url": "https://www.color.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions, CIK 0001683327, name Color Health, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001683327.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Color - Official Site, virtual cancer clinic",
+        "url": "https://www.color.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Color Health - ASCO Certified press release About boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/color-health-becomes-first-virtual-cancer-clinic-to-earn-asco-certified-status-for-compliance-with-quality-and-safety-standards-302764322.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR submissions, CIK 0001683327, US business address and Delaware incorporation",
+        "url": "https://data.sec.gov/submissions/CIK0001683327.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions, CIK 0001683327, Form D exempt offerings only and no registration statement",
+        "url": "https://data.sec.gov/submissions/CIK0001683327.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Color Health - ASCO Certified press release dated May 2026 evidencing continuing operations",
+        "url": "https://www.prnewswire.com/news-releases/color-health-becomes-first-virtual-cancer-clinic-to-earn-asco-certified-status-for-compliance-with-quality-and-safety-standards-302764322.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Color - Official Site, oncologist-led virtual cancer clinic combining technology and AI with an in-house medical group",
+        "url": "https://www.color.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Color Health - ASCO Certified press release About boilerplate, virtual cancer clinic for employers, health plans, unions and the public sector",
+        "url": "https://www.prnewswire.com/news-releases/color-health-becomes-first-virtual-cancer-clinic-to-earn-asco-certified-status-for-compliance-with-quality-and-safety-standards-302764322.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions, CIK 0001683327, formerNames Color Genomics, Inc. from 2016-08-29 to 2017-11-14",
+        "url": "https://data.sec.gov/submissions/CIK0001683327.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "recursion": {
+    "companyId": "recursion",
+    "name": "Recursion",
+    "legalName": "Recursion Pharmaceuticals, Inc.",
+    "website": "https://www.recursion.com",
+    "description": "Clinical-stage biotechnology company that combines large-scale automated cellular experiments, machine learning and its Recursion Operating System platform to discover and develop drug candidates.",
+    "hqCity": "Salt Lake City",
+    "hqCountry": "United States",
+    "foundedYear": 2013,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Biotech",
+    "subsector": "AI-enabled drug discovery and development",
+    "tickers": [
+      "NASDAQ:RXRX"
+    ],
+    "formerNames": [
+      "Recursion Pharmaceuticals, LLC"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - cover page, exact name of registrant",
+        "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000098/rxrx-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR entity submissions, CIK 0001601830",
+        "url": "https://data.sec.gov/submissions/CIK0001601830.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Recursion - official site",
+        "url": "https://www.recursion.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "SEC Form 10-K for fiscal year 2025, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000039/rxrx-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Recursion - official site homepage",
+        "url": "https://www.recursion.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000098/rxrx-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000098/rxrx-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Recursion - Our Story timeline, 'November 5, 2013 Recursion is founded'",
+        "url": "https://www.recursion.com/our-story",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000098/rxrx-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - Class A Common Stock, trading symbol RXRX, Nasdaq Global Select Market",
+        "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000098/rxrx-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR entity submissions, CIK 0001601830 - tickers RXRX, exchanges Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001601830.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR entity submissions, CIK 0001601830 - formerNames: Recursion Pharmaceuticals, LLC (2014-04-02 to 2015-12-04)",
+        "url": "https://data.sec.gov/submissions/CIK0001601830.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "SEC Form 10-K for fiscal year 2025, Item 1 Business - clinical-stage TechBio company with drug pipeline",
+        "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000039/rxrx-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "SEC Form 10-K for fiscal year 2025, Item 1 Business - Recursion Operating System drug discovery platform",
+        "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000039/rxrx-20251231.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "insitro": {
+    "companyId": "insitro",
+    "name": "insitro",
+    "legalName": "Insitro, Inc.",
+    "website": "https://www.insitro.com",
+    "description": "Drug discovery and development company that generates and integrates large-scale cellular and human genetic data and uses machine learning to build models of causal human biology and advance therapeutics.",
+    "hqCity": "South San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2018,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Biotech",
+    "subsector": "machine learning driven drug discovery",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR entity submissions, CIK 0001812648 - name 'Insitro, Inc.'",
+        "url": "https://data.sec.gov/submissions/CIK0001812648.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "insitro - official site",
+        "url": "https://www.insitro.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "insitro - Purpose page",
+        "url": "https://www.insitro.com/purpose/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "insitro - About page",
+        "url": "https://www.insitro.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "insitro - About page, 279 East Grand Avenue, South San Francisco, California 94080",
+        "url": "https://www.insitro.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR entity submissions, CIK 0001812648 - business address South San Francisco, CA",
+        "url": "https://data.sec.gov/submissions/CIK0001812648.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "insitro - About page, South San Francisco, California",
+        "url": "https://www.insitro.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "insitro - About page, 'Our CEO Daphne Koller founded insitro in 2018'",
+        "url": "https://www.insitro.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR entity submissions, CIK 0001812648 - only Form D exempt-offering filings, no registration statement, no tickers or exchanges of record",
+        "url": "https://data.sec.gov/submissions/CIK0001812648.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search for insitro on Form S-1 - no registration statement filed by the company",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22insitro%22&forms=S-1",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "insitro - Purpose page, therapeutics discovery via machine learning",
+        "url": "https://www.insitro.com/purpose/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "insitro - Purpose page, 'decoding human biology with machine learning, charting a better path to new transformative medicines'",
+        "url": "https://www.insitro.com/purpose/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "guardanthealth": {
+    "companyId": "guardanthealth",
+    "name": "Guardant Health",
+    "legalName": "Guardant Health, Inc.",
+    "website": "https://guardanthealth.com",
+    "description": "Precision oncology company that develops and commercialises blood-based tests used for cancer screening, therapy selection and recurrence monitoring, and operates the clinical laboratories that run them.",
+    "hqCity": "Palo Alto",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Diagnostics",
+    "subsector": "blood-based cancer tests (liquid biopsy)",
+    "tickers": [
+      "NASDAQ:GH"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - cover page, exact name of registrant",
+        "url": "https://www.sec.gov/Archives/edgar/data/1576280/000157628026000037/gh-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR entity submissions, CIK 0001576280",
+        "url": "https://data.sec.gov/submissions/CIK0001576280.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Guardant Health - official site",
+        "url": "https://guardanthealth.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "SEC Form 10-K for fiscal year 2025, Item 1 Business - 'We are a leading precision oncology company'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1576280/000157628026000013/gh-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Guardant Health - Our Story page",
+        "url": "https://guardanthealth.com/about/our-story/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - 3100 Hanover Street, Palo Alto, California 94304",
+        "url": "https://www.sec.gov/Archives/edgar/data/1576280/000157628026000037/gh-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1576280/000157628026000037/gh-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Guardant Health - Our Leaders page, 'Guardant Health, which he co-founded in 2012 with Dr. AmirAli Talasaz'",
+        "url": "https://guardanthealth.com/about/our-leaders/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1576280/000157628026000037/gh-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - Common Stock, trading symbol GH, The Nasdaq Global Select Market",
+        "url": "https://www.sec.gov/Archives/edgar/data/1576280/000157628026000037/gh-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR entity submissions, CIK 0001576280 - tickers GH, exchanges Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001576280.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "SEC EDGAR entity submissions, CIK 0001576280 - SIC Services-Medical Laboratories",
+        "url": "https://data.sec.gov/submissions/CIK0001576280.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Guardant Health - Products, tests for cancer screening and for patients with early and advanced stage cancer",
+        "url": "https://guardanthealth.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "moderna": {
+    "companyId": "moderna",
+    "name": "Moderna",
+    "legalName": "Moderna, Inc.",
+    "website": "https://www.modernatx.com",
+    "description": "Biotechnology company that develops, manufactures and commercialises mRNA vaccines and therapeutics, with a clinical portfolio across several modalities and integrated manufacturing capabilities.",
+    "hqCity": "Cambridge",
+    "hqCountry": "United States",
+    "foundedYear": 2010,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Biotech",
+    "subsector": "mRNA vaccines and therapeutics",
+    "tickers": [
+      "NASDAQ:MRNA"
+    ],
+    "formerNames": [
+      "Moderna Therapeutics, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - cover page, exact name of registrant 'Moderna, Inc.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000150/mrna-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR entity submissions, CIK 0001682852",
+        "url": "https://data.sec.gov/submissions/CIK0001682852.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Moderna - official site",
+        "url": "https://www.modernatx.com",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - 'Since our founding in 2010, we have transformed from a research-stage company advancing programs in the field of mRNA to a commercial enterprise with a diverse clinical portfolio of vaccines and therapeutics across several modalities'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000150/mrna-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - 325 Binney Street, Cambridge, Massachusetts 02142",
+        "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000150/mrna-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000150/mrna-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - 'Since our founding in 2010'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000150/mrna-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000150/mrna-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - Common stock, trading symbol MRNA, The Nasdaq Stock Market LLC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000150/mrna-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR entity submissions, CIK 0001682852 - tickers MRNA, exchanges Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001682852.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR entity submissions, CIK 0001682852 - formerNames: Moderna Therapeutics, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001682852.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC Form D filed 2016-08-24 under the entity name 'Moderna Therapeutics, Inc.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285216000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "SEC EDGAR entity submissions, CIK 0001682852 - SIC Biological Products (No Diagnostic Substances)",
+        "url": "https://data.sec.gov/submissions/CIK0001682852.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - clinical portfolio of mRNA vaccines and therapeutics",
+        "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000150/mrna-20260630.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "formenergy": {
+    "companyId": "formenergy",
+    "name": "Form Energy",
+    "legalName": "Form Energy, Inc.",
+    "website": "https://formenergy.com",
+    "description": "American energy technology and manufacturing company developing and commercialising multi-day energy storage systems. Its first commercial product is an iron-air battery system that can store and discharge energy for up to 100 hours.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Climate & Energy",
+    "subsector": "multi-day iron-air battery energy storage",
+    "tickers": [],
+    "formerNames": [
+      "Baseload Renewables, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR entity submissions, CIK 0001717130 - name 'Form Energy, Inc.'",
+        "url": "https://data.sec.gov/submissions/CIK0001717130.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Form Energy press release, 12 August 2026 - 'Form Energy, Inc., an American technology company developing and commercializing a new class of cost-effective, multi-day energy storage systems'",
+        "url": "https://formenergy.com/form-energy-secures-750m-in-series-g-financing/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Form Energy - official site",
+        "url": "https://formenergy.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Form Energy - About page",
+        "url": "https://formenergy.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Form Energy press release, 24 March 2026 - About Form Energy boilerplate",
+        "url": "https://formenergy.com/form-energy-crusoe-announce-agreement-for-12-gigawatt-hours-of-iron-air-batteries-for-ai-data-centers/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Form Energy - About page, 'Form Energy is an American company' with facilities listed in West Virginia, Massachusetts and California",
+        "url": "https://formenergy.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR entity submissions, CIK 0001717130 - business address of record in Somerville, MA, United States",
+        "url": "https://data.sec.gov/submissions/CIK0001717130.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Form Energy - About page, 'Form Energy was founded by energy storage veterans who came together in 2017'",
+        "url": "https://formenergy.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR entity submissions, CIK 0001717130 - only Form D and Form D/A exempt-offering filings, no registration statement, no tickers or exchanges of record",
+        "url": "https://data.sec.gov/submissions/CIK0001717130.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Form Energy press release, 12 August 2026 - \$750 million Series G private financing round",
+        "url": "https://formenergy.com/form-energy-secures-750m-in-series-g-financing/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR entity submissions, CIK 0001717130 - formerNames: Baseload Renewables, Inc. (recorded 2017-09-19)",
+        "url": "https://data.sec.gov/submissions/CIK0001717130.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Form Energy - About page, multi-day energy storage systems for the electric grid",
+        "url": "https://formenergy.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Form Energy - About page, '100-hour, iron-air battery'",
+        "url": "https://formenergy.com/about/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "fervoenergy": {
+    "companyId": "fervoenergy",
+    "name": "Fervo Energy",
+    "legalName": "Fervo Energy Company",
+    "website": "https://fervoenergy.com",
+    "description": "Energy company that develops next-generation enhanced geothermal projects, applying horizontal drilling, fiber-optic sensing and reservoir engineering to deliver 24/7 carbon-free electricity.",
+    "hqCity": "Houston",
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Climate & Energy",
+    "subsector": "enhanced geothermal power generation",
+    "tickers": [
+      "NASDAQ:FRVO"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - cover page, exact name of registrant 'Fervo Energy Company'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1853868/000162828026056457/frvo-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC Form 424(b)(4) IPO prospectus, May 2026 - 'Fervo Energy Company, the registrant and the issuer of the Class A common stock in this offering, was incorporated as a Delaware corporation on May 26, 2017.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1853868/000162828026034849/fervoenergy-424b4.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Fervo Energy - official site",
+        "url": "https://fervoenergy.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Fervo Energy IPO pricing press release, 12 May 2026 - About Fervo Energy boilerplate",
+        "url": "https://fervoenergy.com/fervo-energy-announces-pricing-of-its-upsized-initial-public-offering/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Fervo Energy - official site homepage",
+        "url": "https://fervoenergy.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC Form 424(b)(4) IPO prospectus, May 2026 - 'Our corporate headquarters are located at 811 Main Street, Suite 1700, Houston, TX 77002.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1853868/000162828026034849/fervoenergy-424b4.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - address of principal executive offices, Houston, TX",
+        "url": "https://www.sec.gov/Archives/edgar/data/1853868/000162828026056457/frvo-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1853868/000162828026056457/frvo-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC Form 424(b)(4) IPO prospectus, May 2026 - incorporated as a Delaware corporation on May 26, 2017",
+        "url": "https://www.sec.gov/Archives/edgar/data/1853868/000162828026034849/fervoenergy-424b4.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1853868/000162828026056457/frvo-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Fervo Energy IPO pricing press release, 12 May 2026 - trading commenced on Nasdaq on 13 May 2026",
+        "url": "https://fervoenergy.com/fervo-energy-announces-pricing-of-its-upsized-initial-public-offering/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC Form 10-Q for the quarter ended June 30, 2026 - Class A Common Stock, trading symbol FRVO, The Nasdaq Stock Market LLC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1853868/000162828026056457/frvo-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR entity submissions, CIK 0001853868 - tickers FRVO, exchanges Nasdaq, Form 8-A12B filed 2026-05-11",
+        "url": "https://data.sec.gov/submissions/CIK0001853868.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "SEC EDGAR entity submissions, CIK 0001853868 - SIC Electric Services",
+        "url": "https://data.sec.gov/submissions/CIK0001853868.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Fervo Energy IPO pricing press release, 12 May 2026 - 'large-scale deployment of enhanced geothermal systems'",
+        "url": "https://fervoenergy.com/fervo-energy-announces-pricing-of-its-upsized-initial-public-offering/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "sila": {
+    "companyId": "sila",
+    "name": "Sila",
+    "legalName": "Sila Nanotechnologies, Inc.",
+    "website": "https://www.silanano.com",
+    "description": "Battery materials company that develops and manufactures silicon-carbon anode materials, marketed as Titan Silicon, for lithium-ion batteries.",
+    "hqCity": "Alameda",
+    "hqCountry": "United States",
+    "foundedYear": 2011,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Climate & Energy",
+    "subsector": "silicon anode battery materials",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Sila - Official Site",
+        "url": "https://www.silanano.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Sila - Official Site footer, copyright 2026 Sila Nanotechnologies Inc.",
+        "url": "https://www.silanano.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR full-text search - registrant Sila Nanotechnologies, Inc. CIK 0001530888",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Sila+Nanotechnologies%22&forms=D&hits=10",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Sila - Official Site, Titan Silicon silicon-carbon anode",
+        "url": "https://www.silanano.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Sila - About Us",
+        "url": "https://www.silanano.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Sila - About Us, incorporated under the name Sila Nanotechnologies in 2011",
+        "url": "https://www.silanano.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Sila - About Us, headquarters Alameda, CA",
+        "url": "https://www.silanano.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR full-text search - business location Alameda, CA",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Sila+Nanotechnologies%22&forms=D&hits=10",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Sila - About Us, headquarters Alameda, CA",
+        "url": "https://www.silanano.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR full-text search - business state CA, state of incorporation DE",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Sila+Nanotechnologies%22&forms=D&hits=10",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - Form D exempt private offering filed 2026-07-31 by Sila Nanotechnologies, Inc.",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Sila+Nanotechnologies%22&forms=D&hits=10",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Sila - Official Site, silicon-carbon anode technology for lithium-ion batteries",
+        "url": "https://www.silanano.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Sila - Official Site, silicon-carbon anode technology for lithium-ion batteries",
+        "url": "https://www.silanano.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "relativityspace": {
+    "companyId": "relativityspace",
+    "name": "Relativity Space",
+    "legalName": null,
+    "website": "https://www.relativityspace.com",
+    "description": "Aerospace company that builds reusable rockets for access to space.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Space",
+    "subsector": "orbital launch vehicles",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Relativity Space - Official Site",
+        "url": "https://www.relativityspace.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Relativity Space - Official Site, builds reusable rockets that make access to space more reliable and routine",
+        "url": "https://www.relativityspace.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Space.com - Former Google chief Eric Schmidt takes the reins at rocket startup Relativity Space, describing a significant financial investment in a privately held startup rather than an acquisition",
+        "url": "https://www.space.com/space-exploration/launches-spacecraft/former-google-chief-eric-schmidt-takes-the-reins-at-rocket-startup-relativity-space",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Relativity Space - Official Site, reusable rockets and access to space",
+        "url": "https://www.relativityspace.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Relativity Space - Official Site, reusable rockets and access to space",
+        "url": "https://www.relativityspace.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "stokespace": {
+    "companyId": "stokespace",
+    "name": "Stoke Space",
+    "legalName": "Stoke Space Technologies, Inc.",
+    "website": "https://www.stokespace.com",
+    "description": "Space company developing Nova, a fully reusable orbital launch vehicle, along with its reusable rocket engines, structures and avionics.",
+    "hqCity": "Kent",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Space",
+    "subsector": "fully reusable orbital launch vehicles",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Stoke Space - Official Site",
+        "url": "https://www.stokespace.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR full-text search - registrant STOKE Space Technologies, Inc.",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Stoke+Space%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Stoke Space - About page, Stoke Space Technologies",
+        "url": "https://www.stokespace.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Stoke Space - Official Site, Nova 100 percent reusable rocket",
+        "url": "https://www.stokespace.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Stoke Space - About page, reusable engines, structures, avionics and upper stage",
+        "url": "https://www.stokespace.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Stoke Space - Official Site, Kent, Washington",
+        "url": "https://www.stokespace.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR full-text search - business location Kent, WA on Form D filed 2026-04-16",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Stoke+Space%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Stoke Space - Official Site, Kent, Washington",
+        "url": "https://www.stokespace.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR full-text search - business state WA, state of incorporation DE",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Stoke+Space%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - Form D exempt private offering filed 2026-04-16 by STOKE Space Technologies, Inc.",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Stoke+Space%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Stoke Space - Official Site, reusable rockets and orbital access",
+        "url": "https://www.stokespace.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Stoke Space - Official Site, Nova 100 percent reusable rocket",
+        "url": "https://www.stokespace.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "shieldai": {
+    "companyId": "shieldai",
+    "name": "Shield AI",
+    "legalName": "Shield AI Inc",
+    "website": "https://shield.ai",
+    "description": "Defense technology company building AI pilot software and autonomous aircraft, including the Hivemind autonomy stack and the V-BAT and X-BAT aircraft.",
+    "hqCity": "San Diego",
+    "hqCountry": "United States",
+    "foundedYear": 2015,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Defense Tech",
+    "subsector": "autonomy software and uncrewed aircraft for defense",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Shield AI - Official Site",
+        "url": "https://shield.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR full-text search - registrant Shield AI Inc, CIK 0001675769",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Shield+AI%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Shield AI - Official Site, defense-tech company building AI pilots and next-generation aircraft, Hivemind, X-BAT, V-BAT",
+        "url": "https://shield.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Shield AI - press release, About Shield AI boilerplate",
+        "url": "https://shield.ai/shield-ai-appoints-gary-steele-as-ceo-ryan-tseng-named-president/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Shield AI - press release boilerplate, Founded in 2015, Shield AI is a venture-backed defense technology company",
+        "url": "https://shield.ai/shield-ai-appoints-gary-steele-as-ceo-ryan-tseng-named-president/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR full-text search - business location San Diego, CA on Shield AI Inc Form D filings including 2026-05-01",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Shield+AI%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Shield AI - press release boilerplate, offices in San Diego, Dallas, Washington D.C. and overseas",
+        "url": "https://shield.ai/shield-ai-appoints-gary-steele-as-ceo-ryan-tseng-named-president/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR full-text search - business state CA, state of incorporation DE",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Shield+AI%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - Form D exempt private offering filed 2026-05-01 by Shield AI Inc",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Shield+AI%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Shield AI - press release boilerplate, venture-backed defense technology company",
+        "url": "https://shield.ai/shield-ai-appoints-gary-steele-as-ceo-ryan-tseng-named-president/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Shield AI - Official Site, defense-tech company building AI pilots and next-generation aircraft",
+        "url": "https://shield.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Shield AI - Official Site, Hivemind AI pilot, V-BAT and X-BAT aircraft",
+        "url": "https://shield.ai/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "hadrian": {
+    "companyId": "hadrian",
+    "name": "Hadrian",
+    "legalName": "Hadrian Automation, Inc.",
+    "website": "https://www.hadrian.co",
+    "description": "Advanced manufacturing company that operates automated factories producing precision components for aerospace and defense, using its Opus factory autonomy software.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Industrial & Manufacturing Technology",
+    "subsector": "automated precision machining factories for aerospace and defense components",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Hadrian - Official Site",
+        "url": "https://www.hadrian.co/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR full-text search - registrant Hadrian Automation, Inc., CIK 0001863211",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Hadrian+Automation%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Hadrian - About page and site footer, Hadrian Automation",
+        "url": "https://www.hadrian.co/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Hadrian - Official Site, Opus full stack AI-powered platform for Factory Autonomy, precision components, Factories-as-a-Service",
+        "url": "https://www.hadrian.co/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Hadrian - About page, precision components and factories",
+        "url": "https://www.hadrian.co/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR full-text search - Hadrian Automation, Inc. business states AZ and CA",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Hadrian+Automation%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Hadrian - About page, factories in Torrance, CA and Mesa, AZ",
+        "url": "https://www.hadrian.co/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - Hadrian Automation, Inc. appears in EDGAR only as a Form D exempt private offering filer",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Hadrian+Automation%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Hadrian - Official Site, factory autonomy and precision components manufacturing",
+        "url": "https://www.hadrian.co/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Hadrian - About page, factories manufacturing precision components",
+        "url": "https://www.hadrian.co/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "vardaspaceindustries": {
+    "companyId": "vardaspaceindustries",
+    "name": "Varda Space Industries",
+    "legalName": null,
+    "website": "https://www.varda.com",
+    "description": "In-space manufacturing company that processes materials in orbit and returns them to Earth using its own reentry capsules, with a focus on pharmaceutical processing.",
+    "hqCity": "El Segundo",
+    "hqCountry": "United States",
+    "foundedYear": 2021,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Space",
+    "subsector": "in-space manufacturing and reentry capsules",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Varda Space Industries - Official Site",
+        "url": "https://www.varda.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Varda Space Industries - Official Site, microgravity-enabled life sciences company that processes materials in orbit and returns them to Earth",
+        "url": "https://www.varda.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Varda Space Industries - Our story page",
+        "url": "https://www.varda.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Varda Space Industries - Official Site, 225 S Aviation Blvd, El Segundo, CA 90245",
+        "url": "https://www.varda.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Varda Space Industries - Our story page, El Segundo, California",
+        "url": "https://www.varda.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Varda Space Industries - Official Site, 225 S Aviation Blvd, El Segundo, CA 90245",
+        "url": "https://www.varda.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Varda Space Industries - Our story page, Varda was founded in January 2021 by Will Bruey and Delian Asparouhov",
+        "url": "https://www.varda.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Varda Space Industries - Our story page, privately backed by investors including Khosla Ventures, Lux Capital and Founders Fund",
+        "url": "https://www.varda.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Varda Space Industries - Official Site, in-orbit processing and reentry capsules",
+        "url": "https://www.varda.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Varda Space Industries - Our story page, in-orbit pharmaceutical processing and reentry capsules",
+        "url": "https://www.varda.com/company",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "axiomspace": {
+    "companyId": "axiomspace",
+    "name": "Axiom Space",
+    "legalName": "Axiom Space, Inc.",
+    "website": "https://www.axiomspace.com",
+    "description": "Commercial human spaceflight company building Axiom Station, a commercial space station intended to succeed the International Space Station, and developing spacesuits, microgravity research and in-space manufacturing services.",
+    "hqCity": "Houston",
+    "hqCountry": "United States",
+    "foundedYear": 2016,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Space",
+    "subsector": "commercial space stations and human spaceflight",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Axiom Space - Privacy Policy (names Axiom Space, Inc. and its Houston address)",
+        "url": "https://www.axiomspace.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Axiom Space - Official Site",
+        "url": "https://www.axiomspace.com",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Axiom Space - About",
+        "url": "https://www.axiomspace.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Axiom Space - Redomiciles to Texas (About Axiom Space boilerplate)",
+        "url": "https://www.axiomspace.com/release/axiom-space-redomiciles-to-texas",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Axiom Space - Privacy Policy (600 Gemini St, Houston, TX 77058)",
+        "url": "https://www.axiomspace.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Axiom Space - Redomiciles to Texas (operational headquarters in Houston)",
+        "url": "https://www.axiomspace.com/release/axiom-space-redomiciles-to-texas",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Axiom Space - Privacy Policy (Houston, TX, United States)",
+        "url": "https://www.axiomspace.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Axiom Space - Redomiciles to Texas (the community it has called home since its founding in 2016)",
+        "url": "https://www.axiomspace.com/release/axiom-space-redomiciles-to-texas",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Axiom Space - About (founded 2016 by Kam Ghaffarian and Michael Suffredini)",
+        "url": "https://www.axiomspace.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Axiom Space - Closed Oversubscribed Financing at \$525M+ (private financing final close, 4 June 2026)",
+        "url": "https://www.axiomspace.com/release/axiom-space-closes-oversubscribed-financing-at-525m",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Axiom Space - Raises \$350M at Series C Close",
+        "url": "https://www.axiomspace.com/release/series-c",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Axiom Space - About",
+        "url": "https://www.axiomspace.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Axiom Space - About",
+        "url": "https://www.axiomspace.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "sierraspace": {
+    "companyId": "sierraspace",
+    "name": "Sierra Space",
+    "legalName": "Sierra Space Corporation",
+    "website": "https://www.sierraspace.com",
+    "description": "Commercial space company that builds the Dream Chaser spaceplane, the Shooting Star cargo module, satellites and satellite subsystems, propulsion and environmental control systems, and the LIFE expandable orbital habitat.",
+    "hqCity": "Louisville",
+    "hqCountry": "United States",
+    "foundedYear": 2021,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Space",
+    "subsector": "spaceplanes, satellites and orbital infrastructure, including national security space systems",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Sierra Space - About Us (Sierra Space Corporation)",
+        "url": "https://www.sierraspace.com/about-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Sierra Space - Official Site",
+        "url": "https://www.sierraspace.com",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Sierra Space - About Us",
+        "url": "https://www.sierraspace.com/about-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Sierra Space - About Sierra Space boilerplate on Business Wire release",
+        "url": "https://www.businesswire.com/news/home/20230626333105/en/Sierra-Space-to-Present-at-Jefferies-Virtual-Space-Summit",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Sierra Space - Contact Us (2000 Taylor Ave, Louisville, CO 80027)",
+        "url": "https://www.sierraspace.com/contact-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Sierra Space - Contact Us",
+        "url": "https://www.sierraspace.com/contact-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Sierra Space - Ozmens' SNC Launches Sierra Space, An Independent Commercial Space Company, 21 April 2021",
+        "url": "https://www.sierraspace.com/press-releases/ozmens-snc-launches-sierra-space-an-independent-commercial-space-company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SNC - Ozmens' SNC Launches Sierra Space",
+        "url": "https://www.sncorp.com/news-archive/ozmens-snc-launches-sierra-space-an-independent-commercial-space-company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "CNBC - Sierra Space raises \$1.4 billion at \$4.5 billion valuation (first outside investment since the subsidiary was set up; company remains privately held)",
+        "url": "https://www.cnbc.com/2021/11/19/sierra-space-raises-1point4-billion-at-4point5-billion-valuation.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Payload - Sierra Space Eyes IPO After Years of Prep (spun out of privately held Sierra Nevada Corp in 2021; still private, IPO not executed)",
+        "url": "https://payloadspace.com/sierra-space-eyes-ipo-after-years-of-prep/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Sierra Space - Official Site",
+        "url": "https://www.sierraspace.com",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Sierra Space - Official Site",
+        "url": "https://www.sierraspace.com",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "slack": {
+    "companyId": "slack",
+    "name": "Slack",
+    "legalName": "Slack Technologies, LLC",
+    "website": "https://slack.com",
+    "description": "Workplace communications software company whose platform organises team conversations into channels and connects them to third-party applications and workflows.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2009,
+    "status": "acquired",
+    "statusDetail": "Acquired by Salesforce in 2021",
+    "sector": "Enterprise Software",
+    "subsector": "workplace messaging and team collaboration platform",
+    "tickers": [],
+    "formerNames": [
+      "Tiny Spec, Inc.",
+      "Tiny Speck, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Salesforce FY2022 Form 10-K Exhibit 21.1 List of Subsidiaries (Slack Technologies, LLC, United States of America)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852422000013/ex211listofsubsidiariesfy22.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Slack - About (footer: 2026 Slack Technologies, LLC, a Salesforce company)",
+        "url": "https://slack.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Slack - Official Site",
+        "url": "https://slack.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Slack - About",
+        "url": "https://slack.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Slack Technologies, Inc. Form S-1, Corporate Information (500 Howard Street, San Francisco, California 94105)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1764925/000162828019004786/slacks-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Slack Technologies, Inc. Form S-1",
+        "url": "https://www.sec.gov/Archives/edgar/data/1764925/000162828019004786/slacks-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Slack Technologies, Inc. Form S-1 (We were incorporated in 2009 as Tiny Spec, Inc., a Delaware corporation)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1764925/000162828019004786/slacks-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Salesforce - Salesforce Completes Acquisition of Slack, 21 July 2021",
+        "url": "https://www.salesforce.com/news/press-releases/2021/07/21/salesforce-slack-deal-close/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Salesforce - Salesforce Completes Acquisition of Slack, 21 July 2021",
+        "url": "https://www.salesforce.com/news/press-releases/2021/07/21/salesforce-slack-deal-close/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Slack - About (Slack was acquired by Salesforce in 2021)",
+        "url": "https://slack.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Slack Technologies, Inc. Form S-1 (Later in 2009, we changed our name to Tiny Speck, Inc. and, in 2014, we changed our name to Slack Technologies, Inc.)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1764925/000162828019004786/slacks-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Slack - About",
+        "url": "https://slack.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Slack - About",
+        "url": "https://slack.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "github": {
+    "companyId": "github",
+    "name": "GitHub",
+    "legalName": "GitHub, Inc.",
+    "website": "https://github.com",
+    "description": "Software development platform providing Git-based code hosting, version control, code review, automation and collaboration tools for developers and organisations.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2008,
+    "status": "acquired",
+    "statusDetail": "Acquired by Microsoft in 2018",
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "code hosting, version control and software development collaboration platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Microsoft FY2019 Form 10-K (On October 25, 2018, we completed our acquisition of GitHub, Inc.)",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459019027952/msft-10k_20190630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "GitHub Terms of Service (GitHub, Inc.)",
+        "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "GitHub - About",
+        "url": "https://github.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "GitHub - About",
+        "url": "https://github.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "GitHub General Privacy Statement (GitHub, Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107)",
+        "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "GitHub General Privacy Statement",
+        "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "The GitHub Blog - A bright future for GitHub, 4 June 2018 (GitHub first launched ten years ago)",
+        "url": "https://github.blog/news-insights/company-news/github-microsoft/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Microsoft FY2019 Form 10-K (completed acquisition on October 25, 2018)",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459019027952/msft-10k_20190630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "The Official Microsoft Blog - Microsoft completes GitHub acquisition",
+        "url": "https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Microsoft FY2019 Form 10-K (On October 25, 2018, we completed our acquisition of GitHub, Inc.)",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459019027952/msft-10k_20190630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "GitHub - About",
+        "url": "https://github.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "GitHub - About",
+        "url": "https://github.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "whatsapp": {
+    "companyId": "whatsapp",
+    "name": "WhatsApp",
+    "legalName": "WhatsApp LLC",
+    "website": "https://www.whatsapp.com",
+    "description": "Mobile messaging service offering end-to-end encrypted text, voice and video communication and media sharing, used by more than 3 billion people in over 180 countries.",
+    "hqCity": "Menlo Park",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "acquired",
+    "statusDetail": "Acquired by Facebook, now Meta Platforms, in 2014",
+    "sector": "Consumer",
+    "subsector": "mobile messaging application",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Meta Platforms, Inc. Form 10-K for 2025, Exhibit 21.1 List of Subsidiaries (WhatsApp LLC, Delaware)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-12312025x10kexhibit211.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "WhatsApp Business Terms of Service (WhatsApp LLC)",
+        "url": "https://www.whatsapp.com/legal/business-terms",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "WhatsApp - About",
+        "url": "https://www.whatsapp.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "WhatsApp - About",
+        "url": "https://www.whatsapp.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "WhatsApp Business Terms of Service (WhatsApp LLC, 1 Meta Way, Menlo Park, CA 94025)",
+        "url": "https://www.whatsapp.com/legal/business-terms",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "WhatsApp Business Terms of Service",
+        "url": "https://www.whatsapp.com/legal/business-terms",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Facebook, Inc. Form 8-K, Item 2.01 (On October 6, 2014, Facebook, Inc. completed its previously announced acquisition of WhatsApp Inc.)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680114000037/fb_8-kxclosingxofxwhatsapp.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Facebook, Inc. Form 8-K, Item 2.01, completion 6 October 2014",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680114000037/fb_8-kxclosingxofxwhatsapp.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Meta - Facebook to Acquire WhatsApp, 19 February 2014 (announcement)",
+        "url": "https://about.fb.com/news/2014/02/facebook-to-acquire-whatsapp/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "WhatsApp - About",
+        "url": "https://www.whatsapp.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "WhatsApp - About",
+        "url": "https://www.whatsapp.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "instagram": {
+    "companyId": "instagram",
+    "name": "Instagram",
+    "legalName": "Instagram, LLC",
+    "website": "https://www.instagram.com",
+    "description": "Mobile application and social platform for creating and sharing photos and videos.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "acquired",
+    "statusDetail": "Acquired by Facebook, now Meta Platforms, in 2012",
+    "sector": "Consumer",
+    "subsector": "photo and video sharing social platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Meta Platforms, Inc. Form 10-K for 2025, Exhibit 21.1 List of Subsidiaries (Instagram, LLC, Delaware)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-12312025x10kexhibit211.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Instagram - About Us",
+        "url": "https://about.instagram.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Instagram - About Us",
+        "url": "https://about.instagram.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Forbes - Facebook Officially Closes Instagram Deal, 6 September 2012",
+        "url": "https://www.forbes.com/sites/tomiogeron/2012/09/06/facebook-officially-closes-instagram-deal/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "TechCrunch - Facebook Closes Instagram Acquisition, 6 September 2012",
+        "url": "https://techcrunch.com/2012/09/06/facebook-closes-instagram-acquisition-instagram-announces-5-billion-photos-shared/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "TechCrunch - Facebook Closes Instagram Acquisition, 6 September 2012 (quotes both companies confirming the deal has closed)",
+        "url": "https://techcrunch.com/2012/09/06/facebook-closes-instagram-acquisition-instagram-announces-5-billion-photos-shared/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Facebook Investor Relations - Facebook to Acquire Instagram, 9 April 2012 (announcement)",
+        "url": "https://s21.q4cdn.com/399680738/files/doc_news/2012/FCBK_News_2012_4_9_Financial_Releases.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "FTC - Facebook, Inc. / Instagram, Inc. closing letter, 22 August 2012 (regulatory clearance ahead of closing)",
+        "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/closing-letters/facebook-inc-instagram-inc",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Instagram - About Us",
+        "url": "https://about.instagram.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Instagram - About Us",
+        "url": "https://about.instagram.com/about-us",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "oculus": {
+    "companyId": "oculus",
+    "name": "Oculus",
+    "legalName": "Oculus VR, Inc.",
+    "website": null,
+    "description": "Virtual reality company that developed the Oculus Rift headset and a consumer virtual reality platform.",
+    "hqCity": "Irvine",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "acquired",
+    "statusDetail": "Acquired by Facebook, Inc. in 2014",
+    "sector": "Hardware",
+    "subsector": "virtual reality headsets",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Facebook - Facebook to Acquire Oculus (official announcement, 25 March 2014)",
+        "url": "https://about.fb.com/news/2014/03/facebook-to-acquire-oculus/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Facebook Inc Form 10-K for FY2014 - SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680115000006/fb-12312014x10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Facebook - Facebook to Acquire Oculus (official announcement)",
+        "url": "https://about.fb.com/news/2014/03/facebook-to-acquire-oculus/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Facebook - Facebook to Acquire Oculus: 'Oculus will maintain its headquarters in Irvine, CA'",
+        "url": "https://about.fb.com/news/2014/03/facebook-to-acquire-oculus/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Facebook - Facebook to Acquire Oculus: 'Oculus will maintain its headquarters in Irvine, CA'",
+        "url": "https://about.fb.com/news/2014/03/facebook-to-acquire-oculus/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Facebook - Facebook to Acquire Oculus: 'Founded in 2012, Oculus VR, Inc.'",
+        "url": "https://about.fb.com/news/2014/03/facebook-to-acquire-oculus/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Facebook Inc Form 10-K FY2014: 'in July 2014 we completed our acquisition of Oculus VR, Inc.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680115000006/fb-12312014x10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Facebook Inc Form 10-K FY2014: 'in July 2014 we completed our acquisition of Oculus VR, Inc.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680115000006/fb-12312014x10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Facebook - Facebook to Acquire Oculus (describes Oculus Rift virtual reality headset)",
+        "url": "https://about.fb.com/news/2014/03/facebook-to-acquire-oculus/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Facebook - Facebook to Acquire Oculus (describes Oculus Rift virtual reality headset)",
+        "url": "https://about.fb.com/news/2014/03/facebook-to-acquire-oculus/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "cruise": {
+    "companyId": "cruise",
+    "name": "Cruise",
+    "legalName": "Cruise LLC",
+    "website": "https://www.getcruise.com",
+    "description": "Autonomous vehicle technology company that developed self-driving systems and operated a driverless ride-hail service until that service was ended.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "acquired",
+    "statusDetail": "Acquired by General Motors in 2016; GM ended funding of Cruise robotaxi development in December 2024 and acquired full ownership in 2025, with Cruise LLC still a GM subsidiary",
+    "sector": "Mobility",
+    "subsector": "autonomous vehicle technology",
+    "tickers": [],
+    "formerNames": [
+      "Cruise Automation, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "General Motors Company Form 10-K FY2025, Exhibit 21 Subsidiaries as of December 31, 2025 - lists 'Cruise LLC', Delaware",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/ex-21x12312025.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Cruise - official site",
+        "url": "https://www.getcruise.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "GM Form 10-Q Q2 2016: 'On May 12, 2016 we acquired all of the outstanding capital stock of Cruise Automation, Inc. (Cruise), an autonomous vehicle technology company'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785816000341/gm2016q2.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Cruise - official site (states Cruise ridehail services are not available at this time)",
+        "url": "https://www.getcruise.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "CBS News San Francisco - 'San Francisco-based start-up Cruise Automation'",
+        "url": "https://www.cbsnews.com/sanfrancisco/news/gm-stop-funding-troubled-cruise-autonomous-vehicles-robotaxis-san-francisco/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "CBS News San Francisco - 'San Francisco-based start-up Cruise Automation'",
+        "url": "https://www.cbsnews.com/sanfrancisco/news/gm-stop-funding-troubled-cruise-autonomous-vehicles-robotaxis-san-francisco/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "GM Form 10-Q Q2 2016 - acquisition of all outstanding capital stock of Cruise Automation, Inc. completed 12 May 2016",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785816000341/gm2016q2.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "GM Form 10-K FY2025, Exhibit 21 - Cruise LLC still listed as a GM subsidiary as of 31 December 2025",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/ex-21x12312025.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "GM Form 10-Q Q2 2016 - completion of the Cruise Automation acquisition on 12 May 2016",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785816000341/gm2016q2.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "GM newsroom, 10 December 2024 - GM will no longer fund Cruise robotaxi development and will combine the majority-owned Cruise LLC and GM technical teams",
+        "url": "https://news.gm.com/newsroom.detail.html/Pages/news/us/en/2024/dec/1210-gm.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "GM newsroom, 4 February 2025 - 'GM acquires full ownership of Cruise'; Cruise now a wholly owned subsidiary of GM",
+        "url": "https://news.gm.com/home.detail.html/Pages/topic/us/en/2025/feb/0204-cruise.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "GM Form 10-Q Q2 2016 - describes Cruise as 'an autonomous vehicle technology company'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785816000341/gm2016q2.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "GM Form 10-Q Q2 2016 - describes Cruise as 'an autonomous vehicle technology company'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785816000341/gm2016q2.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "GM Form 10-Q Q2 2016 names the acquired entity 'Cruise Automation, Inc. (Cruise)'; GM Exhibit 21 FY2025 lists the entity as 'Cruise LLC'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785816000341/gm2016q2.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "nest": {
+    "companyId": "nest",
+    "name": "Nest",
+    "legalName": "Nest Labs, Inc.",
+    "website": null,
+    "description": "Smart-home technology company that developed connected home devices such as thermostats and smoke alarms.",
+    "hqCity": "Palo Alto",
+    "hqCountry": "United States",
+    "foundedYear": 2010,
+    "status": "acquired",
+    "statusDetail": "Acquired by Google Inc. in 2014; Nest was folded into Google's hardware team in 2018",
+    "sector": "Hardware",
+    "subsector": "connected home devices",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Google Inc Form 10-K FY2014, Acquisitions note: 'In February 2014, we completed the acquisition of Nest Labs, Inc. (Nest)'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288776/000128877615000008/R13.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Google Inc Form 10-K FY2014, Acquisitions note: 'a company whose mission is to reinvent devices in the home such as thermostats and smoke alarms'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288776/000128877615000008/R13.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "CBS News San Francisco - 'Nest Labs is based in Palo Alto.'",
+        "url": "https://www.cbsnews.com/sanfrancisco/news/google-to-buy-palo-altos-nest-labs-for-3-2-billion/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "CBS News San Francisco - 'Nest Labs is based in Palo Alto.'",
+        "url": "https://www.cbsnews.com/sanfrancisco/news/google-to-buy-palo-altos-nest-labs-for-3-2-billion/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "CBS News San Francisco - 'It was founded in 2010'",
+        "url": "https://www.cbsnews.com/sanfrancisco/news/google-to-buy-palo-altos-nest-labs-for-3-2-billion/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Google Inc Form 10-K FY2014, Acquisitions note - acquisition of Nest Labs, Inc. completed February 2014",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288776/000128877615000008/R13.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Google Inc Form 10-K FY2014, Acquisitions note - acquisition of Nest Labs, Inc. completed February 2014",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288776/000128877615000008/R13.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Google official blog, 7 February 2018 - 'Nest to join forces with Google's hardware team'",
+        "url": "https://blog.google/company-news/inside-google/company-announcements/nest-join-forces-googles-hardware-team/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Google Inc Form 10-K FY2014 - Nest described as making home devices such as thermostats and smoke alarms",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288776/000128877615000008/R13.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Google Inc Form 10-K FY2014 - Nest described as making home devices such as thermostats and smoke alarms",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288776/000128877615000008/R13.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "twitch": {
+    "companyId": "twitch",
+    "name": "Twitch",
+    "legalName": "Twitch Interactive, Inc.",
+    "website": "https://www.twitch.tv",
+    "description": "Live video streaming platform and community where people broadcast, watch and talk about video games.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "acquired",
+    "statusDetail": "Acquired by Amazon.com, Inc. in 2014",
+    "sector": "Gaming",
+    "subsector": "live video streaming platform for gamers",
+    "tickers": [],
+    "formerNames": [
+      "Justin.tv, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Amazon.com, Inc. Form 8-K filed 25 September 2014: 'Amazon.com, Inc. completed its acquisition of Twitch Interactive, Inc.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872414000046/amzn-2014september22x8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Amazon.com, Inc. Form 10-K FY2025 Exhibit 23.1 - references the 'Twitch Interactive, Inc. Amended and Restated 2007 Stock Plan'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231xex231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Twitch - official site, About page",
+        "url": "https://www.twitch.tv/p/en/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Amazon press release, 25 August 2014: 'Twitch is the leading live video platform and community for gamers'",
+        "url": "https://press.aboutamazon.com/2014/8/amazon-com-to-acquire-twitch",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Twitch - official About page",
+        "url": "https://www.twitch.tv/p/en/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR entity record for the company (CIK 0001558564), business address 23 Geary Street #800, San Francisco, CA 94108, Delaware incorporation",
+        "url": "https://data.sec.gov/submissions/CIK0001558564.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR entity record for the company (CIK 0001558564), business address San Francisco, CA",
+        "url": "https://data.sec.gov/submissions/CIK0001558564.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Amazon.com, Inc. Form 8-K filed 25 September 2014, completion of the Twitch acquisition",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872414000046/amzn-2014september22x8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Amazon.com, Inc. Form 8-K filed 25 September 2014: 'On September 25, 2014, Amazon.com, Inc. completed its acquisition of Twitch Interactive, Inc.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872414000046/amzn-2014september22x8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Amazon press release, 25 August 2014 - Twitch described as the leading live video platform and community for gamers",
+        "url": "https://press.aboutamazon.com/2014/8/amazon-com-to-acquire-twitch",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Amazon press release, 25 August 2014 - Twitch described as the leading live video platform and community for gamers",
+        "url": "https://press.aboutamazon.com/2014/8/amazon-com-to-acquire-twitch",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "GameSpot, 10 February 2014 - 'Twitch Interactive, Inc. is replacing Justin.tv, Inc. as the company's corporate umbrella name'",
+        "url": "https://www.gamespot.com/articles/twitch-interactive-replaces-justin-tv-as-parent-co/1100-6437066/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "The Next Web, 10 February 2014 - Justin.tv, owner of Twitch, changes its name to Twitch Interactive",
+        "url": "https://thenextweb.com/news/justin-tv-owner-video-game-streaming-service-twitch-changes-name-twitch-interactive",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "youtube": {
+    "companyId": "youtube",
+    "name": "YouTube",
+    "legalName": "YouTube, LLC",
+    "website": "https://www.youtube.com",
+    "description": "Online video platform that lets users find, upload, view and share video content.",
+    "hqCity": "San Bruno",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "acquired",
+    "statusDetail": "Acquired by Google Inc. in 2006",
+    "sector": "Consumer",
+    "subsector": "online video sharing platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Network-1 Technologies, Inc. Form 8-K filed 26 April 2024 - names 'Google Inc and YouTube, LLC' as litigation defendants",
+        "url": "https://www.sec.gov/Archives/edgar/data/1065078/000107261324000406/form8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Google Inc Form 8-K filed 17 November 2006 - names the acquired entity 'YouTube, Inc.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506238320/d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "YouTube - official About site",
+        "url": "https://about.youtube/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Google Inc Form 10-K FY2006: 'Google Video and YouTube let users find, upload, view and share video content worldwide.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507044494/d10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Google/YouTube Help - copyright removal designated agent address: 'Copyright Operations, YouTube (Google LLC), 901 Cherry Ave., San Bruno, CA 94066, USA'",
+        "url": "https://support.google.com/youtube/answer/2807622",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Google/YouTube Help - designated agent address, San Bruno, CA 94066, USA",
+        "url": "https://support.google.com/youtube/answer/2807622",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Google Inc Form 8-K, Item 2.01: 'On November 13, 2006, we completed our previously announced acquisition of YouTube, Inc.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506238320/d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Google Inc Form 8-K, Item 2.01: 'On November 13, 2006, we completed our previously announced acquisition of YouTube, Inc.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506238320/d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Google Inc Form 10-K FY2006 - YouTube described as letting users find, upload, view and share video content",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507044494/d10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Google Inc Form 10-K FY2006 - YouTube described as letting users find, upload, view and share video content",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507044494/d10k.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "linkedin": {
+    "companyId": "linkedin",
+    "name": "LinkedIn",
+    "legalName": "LinkedIn Corporation",
+    "website": "https://www.linkedin.com",
+    "description": "Operates an online professional network used by members to connect with contacts and by employers and marketers to reach them.",
+    "hqCity": "Mountain View",
+    "hqCountry": "United States",
+    "foundedYear": 2003,
+    "status": "acquired",
+    "statusDetail": "Acquired by Microsoft Corporation in 2016",
+    "sector": "Consumer",
+    "subsector": "online professional networking platform",
+    "tickers": [],
+    "formerNames": [
+      "LinkedIn, Ltd."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "LinkedIn Corporation Form 10-K FY2015 cover page - SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Microsoft Corporation Form 8-K filed 8 December 2016, Item 2.01 - names LinkedIn Corporation",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516788575/d259484d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "LinkedIn Corporation Form 10-K FY2015 - company website given as www.linkedin.com",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "LinkedIn Corporation Form 10-K FY2015, Item 1 Business: 'We are the world's largest professional network on the Internet'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "LinkedIn Corporation Form 10-K FY2015 cover page - principal executive offices, 2029 Stierlin Court, Mountain View, CA 94043",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "LinkedIn Corporation Form 10-K FY2015 cover page - Mountain View, CA 94043",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "LinkedIn Corporation Form 10-K FY2015: 'We were incorporated in Delaware in March 2003 under the name LinkedIn, Ltd.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Microsoft Corporation Form 8-K filed 8 December 2016, Item 2.01 Completion of Acquisition",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516788575/d259484d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Microsoft Corporation Form 8-K filed 8 December 2016, Item 2.01 - merger completed 8 December 2016, LinkedIn became a wholly owned Microsoft subsidiary",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516788575/d259484d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "LinkedIn Corporation Form 10-K FY2015, Item 1 Business - professional network with over 400 million members",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "LinkedIn Corporation Form 10-K FY2015, Item 1 Business - professional network with over 400 million members",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "LinkedIn Corporation Form 10-K FY2015: 'We were incorporated in Delaware in March 2003 under the name LinkedIn, Ltd. and changed our name to LinkedIn Corporation in January 2005.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
   }
 };
 
