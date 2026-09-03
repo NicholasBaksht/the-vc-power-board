@@ -324,6 +324,28 @@ function pbehIndexes() {
       });
     });
   }
+  /* Canonical Company entities (data-companies.js) feed the same
+     company-sector lookup. They are registered FIRST so that
+     COMPANY_SECTORS, which is the older and narrower reference, does
+     not overwrite a sourced entity classification.
+
+     FILL-ONLY, DELIBERATELY. This map is consulted at the call site
+     only when a row has no sector of its own, so a researched
+     per-investment sector is never overridden. That matters: entity
+     and row sectors disagree on 43 rows today - Coinbase reads Fintech
+     on the investment and Crypto on the entity, Etsy reads Consumer
+     and Ecommerce. Both are defensible, neither is established as more
+     authoritative, and silently preferring one would move observed
+     behaviour percentages with no evidence that the new number is
+     better. Those disagreements are left for research to settle. */
+  if (typeof COMPANIES !== 'undefined' && COMPANIES) {
+    Object.keys(COMPANIES).forEach(function (id) {
+      const c = COMPANIES[id];
+      if (c && c.sector && !sectors[id]) {
+        sectors[id] = { sector: c.sector, subsector: c.subsector || null };
+      }
+    });
+  }
   /* company-sector reference lookup, expanded by declared aliases */
   if (typeof COMPANY_SECTORS !== 'undefined') {
     Object.keys(COMPANY_SECTORS).forEach(function (k) {
