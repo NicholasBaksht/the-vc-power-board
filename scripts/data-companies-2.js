@@ -1,6 +1,1076 @@
 /* data-companies shard 2 of 2 - generated, do not hand-edit.
-   119 records, 1579 source rows. */
+   148 records, 1916 source rows.
+   New records append to the LAST shard until it nears 1MB, then a
+   third shard is created. Same convention as data-partners. */
 Object.assign(COMPANIES, {
+  "alchemy": {
+    "companyId": "alchemy",
+    "name": "Alchemy",
+    "legalName": "Alchemy Insights, Inc.",
+    "website": "https://www.alchemy.com",
+    "description": "Software-as-a-service platform providing blockchain node infrastructure, APIs and developer tools used to build applications that interact with blockchain networks.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Crypto",
+    "subsector": "blockchain developer infrastructure and APIs",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Alchemy Legal Center - Alchemy Insights, Inc., a Delaware corporation",
+        "url": "https://legal.alchemy.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Alchemy - Everyone Onchain Fund Terms and Conditions (ALCHEMY INSIGHTS, INC.)",
+        "url": "https://www.alchemy.com/terms-conditions/everyone-onchain-fund-terms-and-conditions",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Alchemy - Company page",
+        "url": "https://www.alchemy.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Alchemy Legal Center - platform empowering developers to create applications that interact with blockchain networks",
+        "url": "https://legal.alchemy.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Alchemy - Company page",
+        "url": "https://www.alchemy.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Alchemy Legal Center - 548 Market St., PMB 49099, San Francisco, CA 94104",
+        "url": "https://legal.alchemy.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Alchemy - Careers (offices listed as San Francisco / New York and Bucharest)",
+        "url": "https://www.alchemy.com/careers",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Alchemy Legal Center - San Francisco, CA address and Delaware incorporation",
+        "url": "https://legal.alchemy.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Alchemy - Company page (Prior to founding Alchemy in 2017)",
+        "url": "https://www.alchemy.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - no S-1 registration statement for Alchemy Insights",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Alchemy%20Insights%22&forms=S-1",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Alchemy newsroom - no IPO, funding or change of ownership announced; company continues as a privately held acquirer",
+        "url": "https://alchemy.com/news-list",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Alchemy Legal Center - cloud-hosted blockchain infrastructure, developer tools and APIs",
+        "url": "https://legal.alchemy.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Alchemy - Company page (leading infrastructure platform for the onchain economy)",
+        "url": "https://www.alchemy.com/company",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "anchoragedigital": {
+    "companyId": "anchoragedigital",
+    "name": "Anchorage Digital",
+    "legalName": "Anchor Labs, Inc.",
+    "website": "https://www.anchorage.com",
+    "description": "Digital asset platform for institutions. Its subsidiaries provide custody, settlement, staking, governance, trading and lending services, and include Anchorage Digital Bank National Association, a federally chartered national trust bank supervised by the Office of the Comptroller of the Currency.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Crypto",
+    "subsector": "institutional digital asset custody, settlement, staking and prime services",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Anchorage Digital legal page: \"'Anchorage Digital' refers to the services that are offered through the wholly-owned subsidiaries of Anchor Labs, Inc., a Delaware corporation.\"",
+        "url": "https://www.anchorage.com/legal",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Anchorage Digital legal page listing entities and the services each provides",
+        "url": "https://www.anchorage.com/legal",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "OCC News Release 2021-6: conditional approval of the conversion of Anchorage Trust Company to Anchorage Digital Bank, National Association",
+        "url": "https://www.occ.gov/news-issuances/news-releases/2021/nr-occ-2021-6.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Anchorage Digital news release, About Anchorage Digital: \"Founded in 2017 in San Francisco, California, Anchorage Digital has offices in New York, New York; Porto, Portugal; Singapore; and Sioux Falls, South Dakota.\"",
+        "url": "https://www.anchorage.com/insights/anchorage-digital-announces-100-million-strategic-investment-from-tether-first-ever-employee-tender-offer-4-2-billion-valuation",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Anchorage Digital news release, About Anchorage Digital boilerplate listing US offices, plus Anchor Labs, Inc. stated as a Delaware corporation on the legal page",
+        "url": "https://www.anchorage.com/insights/anchorage-digital-announces-100-million-strategic-investment-from-tether-first-ever-employee-tender-offer-4-2-billion-valuation",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Anchorage Digital news release, 5 February 2026: \$100 million strategic equity investment from Tether and first employee tender offer at a \$4.2 billion valuation, a privately negotiated financing and secondary sale",
+        "url": "https://www.anchorage.com/insights/anchorage-digital-announces-100-million-strategic-investment-from-tether-first-ever-employee-tender-offer-4-2-billion-valuation",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Anchorage Digital legal page and About Anchorage Digital boilerplate describing digital asset custody, prime services, tokenization and stablecoins",
+        "url": "https://www.anchorage.com/legal",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Anchorage Digital legal page listing custody, settlement, staking, governance, trading and lending services by entity",
+        "url": "https://www.anchorage.com/legal",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Anchorage Digital official site anchorage.com",
+        "url": "https://www.anchorage.com/legal",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "betterment": {
+    "companyId": "betterment",
+    "name": "Betterment",
+    "legalName": "Betterment Holdings, Inc.",
+    "website": "https://www.betterment.com",
+    "description": "Digital investment advice and wealth platform offering automated and self-directed investing, cash management, a 401(k) offering for employers and a custodial platform for independent registered investment advisers.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2010,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "digital investment advice and wealth management",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "FINRA BrokerCheck report for MTG, LLC dba Betterment Securities: both Betterment entities are wholly owned subsidiaries of BETTERMENT HOLDINGS INC.",
+        "url": "https://files.brokercheck.finra.org/firm/firm_47788.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Betterment - About page footer: (c) Betterment Holdings Inc. All rights reserved.",
+        "url": "https://www.betterment.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Betterment - Official Site, About page",
+        "url": "https://www.betterment.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Betterment - About Betterment boilerplate, 12 August 2026 news release",
+        "url": "https://www.prnewswire.com/news-releases/betterments-2026-retail-investor-survey-reveals-a-new-generation-of-investors-is-blurring-the-lines-between-information-advice-and-entertainment-302848376.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Betterment - About page describing investing, savings, Betterment at Work and Advisor Solutions",
+        "url": "https://www.betterment.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Betterment - About page: Since 2010, Betterment's mission has been making people's lives better.",
+        "url": "https://www.betterment.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Betterment - About page address: 450 West 33rd Street, FL 11, New York, NY 10001",
+        "url": "https://www.betterment.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "FINRA BrokerCheck report for Betterment Securities: main office 450 West 33rd Street, 11th Floor, New York, NY 10001",
+        "url": "https://files.brokercheck.finra.org/firm/firm_47788.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Betterment - About page address in New York, United States",
+        "url": "https://www.betterment.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Betterment - company news release announcing \$160 million of private growth capital",
+        "url": "https://www.prnewswire.com/news-releases/betterment-raises-160-million-in-growth-capital-301387762.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Betterment - 12 August 2026 news release, company operating with no public listing or registered offering",
+        "url": "https://www.prnewswire.com/news-releases/betterments-2026-retail-investor-survey-reveals-a-new-generation-of-investors-is-blurring-the-lines-between-information-advice-and-entertainment-302848376.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Betterment - About page: advisory services provided by Betterment LLC, an SEC registered investment adviser",
+        "url": "https://www.betterment.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Betterment - About Betterment boilerplate: technology driven solutions for investing, saving and retirement",
+        "url": "https://www.prnewswire.com/news-releases/betterments-2026-retail-investor-survey-reveals-a-new-generation-of-investors-is-blurring-the-lines-between-information-advice-and-entertainment-302848376.html",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "characterai": {
+    "companyId": "characterai",
+    "name": "Character.AI",
+    "legalName": "Character Technologies, Inc.",
+    "website": "https://character.ai",
+    "description": "Consumer platform for creating and chatting with user-made AI characters, built on large language models developed by the company.",
+    "hqCity": "Menlo Park",
+    "hqCountry": "United States",
+    "foundedYear": 2021,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "conversational AI characters and large language models",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Character.AI - About page: Character Technologies Inc. dba Character.ai, 700 El Camino Real, Suite 120, Menlo Park CA 94025, registered in Delaware",
+        "url": "https://character.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Character.AI - Careers page footer: (c) Copyright 2026 Character Technologies, Inc.",
+        "url": "https://character.ai/careers",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Commonwealth of Kentucky, Franklin Circuit Court complaint filed by the Kentucky Attorney General: Defendant Character Technologies is a Delaware corporation with its principal place of business at 700 El Camino Real, Menlo Park, California",
+        "url": "https://www.ag.ky.gov/Press%20Release%20Attachments/CTI%20Complaint%20Motion%20and%20Order%20Filed.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Character.AI - Official Site, About page",
+        "url": "https://character.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Character.AI - About page describing the interactive entertainment product",
+        "url": "https://character.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Character.AI - company blog, Our Next Phase of Growth, describing its own LLM technology",
+        "url": "https://blog.character.ai/our-next-phase-of-growth/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Kentucky Attorney General complaint: Character Technologies was founded in 2021 by former Google engineers Shazeer and De Freitas",
+        "url": "https://www.ag.ky.gov/Press%20Release%20Attachments/CTI%20Complaint%20Motion%20and%20Order%20Filed.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Character.AI - About page: 700 El Camino Real, Suite 120, Menlo Park CA 94025",
+        "url": "https://character.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Kentucky Attorney General complaint: principal place of business at 700 El Camino Real, Menlo Park, California",
+        "url": "https://www.ag.ky.gov/Press%20Release%20Attachments/CTI%20Complaint%20Motion%20and%20Order%20Filed.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Character.AI - About page: Menlo Park, California, USA",
+        "url": "https://character.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Character.AI - company blog, Our Next Phase of Growth: non-exclusive licence of its LLM technology to Google plus increased funding, with the company continuing to operate independently",
+        "url": "https://blog.character.ai/our-next-phase-of-growth/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Character.AI - company blog active as of 3 September 2026, company operating under its own leadership",
+        "url": "https://blog.character.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Character.AI - About page and blog describing its own large language models powering the product",
+        "url": "https://character.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Character.AI - company blog: Character.AI's current LLM technology and AI character product",
+        "url": "https://blog.character.ai/our-next-phase-of-growth/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "circleci": {
+    "companyId": "circleci",
+    "name": "CircleCI",
+    "legalName": "Circle Internet Services, Inc.",
+    "website": "https://circleci.com",
+    "description": "Continuous integration and continuous delivery platform used by software teams to build, test and deploy code.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2011,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "continuous integration and delivery (CI/CD) platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "CircleCI - Terms of Service (legal entity: Circle Internet Services, Inc., dba, CircleCI)",
+        "url": "https://circleci.com/legal/terms-of-service/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "CircleCI - Official Site, About page",
+        "url": "https://circleci.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "CircleCI - About page",
+        "url": "https://circleci.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "CircleCI - About CircleCI boilerplate in company financing announcement",
+        "url": "https://www.businesswire.com/news/home/20210511005782/en/CircleCI-Reaches-%241.7-Billion-Valuation-with-%24100-Million-in-New-Financing",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "CircleCI - About page: Founded in 2011 in San Francisco",
+        "url": "https://circleci.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "CircleCI - company boilerplate: Founded in 2011 and headquartered in downtown San Francisco",
+        "url": "https://www.businesswire.com/news/home/20210511005782/en/CircleCI-Reaches-%241.7-Billion-Valuation-with-%24100-Million-in-New-Financing",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "CircleCI - About page: Founded in 2011 in San Francisco",
+        "url": "https://circleci.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "CircleCI - company boilerplate: headquartered in downtown San Francisco",
+        "url": "https://www.businesswire.com/news/home/20210511005782/en/CircleCI-Reaches-%241.7-Billion-Valuation-with-%24100-Million-in-New-Financing",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "CircleCI - About page: San Francisco, United States",
+        "url": "https://circleci.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "CircleCI - company announcement of \$100M Series F private financing, venture-backed investor list",
+        "url": "https://www.businesswire.com/news/home/20210511005782/en/CircleCI-Reaches-%241.7-Billion-Valuation-with-%24100-Million-in-New-Financing",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Blue Owl Technology Finance Corp. Form 10-Q for the quarter ended 30 June 2026, schedule of investments listing Circle Internet Services, Inc. as a private portfolio company",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777726000028/ortf-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "CircleCI - About page and product description (CI/CD tooling)",
+        "url": "https://circleci.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "CircleCI - company boilerplate: continuous integration and delivery platform",
+        "url": "https://www.businesswire.com/news/home/20210511005782/en/CircleCI-Reaches-%241.7-Billion-Valuation-with-%24100-Million-in-New-Financing",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "cloudbees": {
+    "companyId": "cloudbees",
+    "name": "CloudBees",
+    "legalName": "CloudBees, Inc.",
+    "website": "https://www.cloudbees.com",
+    "description": "Enterprise software delivery and DevSecOps company, known for commercial distributions of Jenkins and for the CloudBees Unify control plane for software delivery.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2010,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "enterprise DevSecOps and software delivery platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "CloudBees - Privacy Policy: CloudBees, Inc.",
+        "url": "https://www.cloudbees.com/legal/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "CloudBees - Official Site, company page",
+        "url": "https://www.cloudbees.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "CloudBees - About CloudBees boilerplate, May 2026 press release",
+        "url": "https://www.cloudbees.com/newsroom/cloudbees-announces-inaugural-agentic-devops-world",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "CloudBees - company page",
+        "url": "https://www.cloudbees.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "CloudBees - press boilerplate: Founded in 2010, CloudBees is backed by ...",
+        "url": "https://www.cloudbees.com/newsroom/cloudbees-announces-inaugural-agentic-devops-world",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "CloudBees - company page: founded 2010",
+        "url": "https://www.cloudbees.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "CloudBees - press release dateline SAN FRANCISCO, Calif., 12 May 2026",
+        "url": "https://www.cloudbees.com/newsroom/cloudbees-announces-inaugural-agentic-devops-world",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "CloudBees - press release dateline SAN FRANCISCO, Calif., 4 February 2025",
+        "url": "https://www.cloudbees.com/newsroom/sacha-labourey-steps-down-cloudbees",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "CloudBees - press release datelines in San Francisco, California, United States",
+        "url": "https://www.cloudbees.com/newsroom/cloudbees-announces-inaugural-agentic-devops-world",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "CloudBees - May 2026 press boilerplate: backed by Goldman Sachs, Morgan Stanley, Bridgepoint Capital, HSBC, Golub Capital, Delta-v Capital, Matrix Partners and Lightspeed Venture Partners",
+        "url": "https://www.cloudbees.com/newsroom/cloudbees-announces-inaugural-agentic-devops-world",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "CloudBees - company page: enterprise software delivery, DevSecOps",
+        "url": "https://www.cloudbees.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "CloudBees - press boilerplate describing unified DevSecOps for enterprise software delivery",
+        "url": "https://www.cloudbees.com/newsroom/cloudbees-announces-inaugural-agentic-devops-world",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "docker": {
+    "companyId": "docker",
+    "name": "Docker",
+    "legalName": "Docker, Inc.",
+    "website": "https://www.docker.com",
+    "description": "Developer platform company that builds container tooling and services, including Docker Desktop and Docker Hub, used to build, share and run containerised applications.",
+    "hqCity": "Palo Alto",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "container development platform and tooling",
+    "tickers": [],
+    "formerNames": [
+      "dotCloud, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Docker Terms of Service - Docker, Inc.",
+        "url": "https://www.docker.com/legal/docker-terms-service/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Docker - Company",
+        "url": "https://www.docker.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Docker - Company",
+        "url": "https://www.docker.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Docker - Press",
+        "url": "https://www.docker.com/press/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Docker Terms of Service - Docker, Inc., 3790 El Camino Real Suite 1052, Palo Alto, CA 94306-3314",
+        "url": "https://www.docker.com/legal/docker-terms-service/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Docker Terms of Service - Docker, Inc., 3790 El Camino Real Suite 1052, Palo Alto, CA 94306-3314, USA",
+        "url": "https://www.docker.com/legal/docker-terms-service/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - Docker, Inc. is not a registrant",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Docker%2C+Inc.%22&forms=S-1,S-1%2FA,424B4,8-A12B,10-K",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Docker - Newsroom",
+        "url": "https://www.docker.com/company/newsroom/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Docker press release - dotCloud, Inc. is now Docker, Inc.",
+        "url": "https://www.docker.com/press-release/dotcloud-inc-now-docker-inc/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Linux.com - As Open Source Docker Grows DotCloud Changes Name, Business Model",
+        "url": "https://www.linux.com/news/open-source-docker-grows-dotcloud-changes-name-business-model/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Docker - Company",
+        "url": "https://www.docker.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Docker - Press",
+        "url": "https://www.docker.com/press/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "grafanalabs": {
+    "companyId": "grafanalabs",
+    "name": "Grafana Labs",
+    "legalName": "Raintank Inc.",
+    "website": "https://grafana.com",
+    "description": "Observability software company that develops open source and cloud-based tools for monitoring infrastructure, applications and systems, including the Grafana visualisation project.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2014,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "open source observability, monitoring and dashboards",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Grafana Labs Privacy Policy - Raintank Inc., dba Grafana Labs",
+        "url": "https://grafana.com/legal/privacy-policy/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Grafana Labs - Official information about Grafana Labs",
+        "url": "https://grafana.com/ai-info/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Grafana Labs - Official information about Grafana Labs",
+        "url": "https://grafana.com/ai-info/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Grafana Labs - Official information about Grafana Labs (Headquarters: New York, New York, USA)",
+        "url": "https://grafana.com/ai-info/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Grafana Labs - Official information about Grafana Labs (Headquarters: New York, New York, USA)",
+        "url": "https://grafana.com/ai-info/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Grafana Labs Privacy Policy - company address 165 Broadway, 23rd Floor, New York, NY 10006",
+        "url": "https://grafana.com/legal/privacy-policy/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Grafana Labs - Official information about Grafana Labs (Founded 2014)",
+        "url": "https://grafana.com/ai-info/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Grafana Labs - Official information about Grafana Labs (Company type: Private)",
+        "url": "https://grafana.com/ai-info/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - no Grafana Labs registration statement",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Grafana+Labs%22&forms=S-1,S-1%2FA,424B4,8-A12B",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Grafana Labs - Official information about Grafana Labs",
+        "url": "https://grafana.com/ai-info/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Grafana Labs - Official information about Grafana Labs",
+        "url": "https://grafana.com/ai-info/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "harness": {
+    "companyId": "harness",
+    "name": "Harness",
+    "legalName": "Harness, Inc.",
+    "website": "https://www.harness.io",
+    "description": "Software delivery platform providing continuous integration and delivery pipelines, testing, security testing, feature management and cloud cost management.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "software delivery and DevOps platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Harness - Website Terms of Use: Harness Inc. and copyright Harness, Inc.",
+        "url": "https://www.harness.io/legal/website-terms-of-use",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Harness - Privacy Statement: Harness Inc., 55 Stockton Street, 8th Floor, San Francisco",
+        "url": "https://www.harness.io/legal/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Harness - Official Site, About Us",
+        "url": "https://www.harness.io/company/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Harness - About Us: platform description",
+        "url": "https://www.harness.io/company/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Harness - About Us: He co-founded Harness in 2017",
+        "url": "https://www.harness.io/company/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Harness - Privacy Statement address, 55 Stockton Street, San Francisco, CA 94108",
+        "url": "https://www.harness.io/legal/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Harness - Website Terms of Use notice address, 55 Stockton St., 8th Floor, San Francisco, CA",
+        "url": "https://www.harness.io/legal/website-terms-of-use",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Harness - Privacy Statement address in San Francisco, California, United States",
+        "url": "https://www.harness.io/legal/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Harness - company blog announcing \$240 million Series E private financing led by Goldman Sachs, December 2025",
+        "url": "https://www.harness.io/blog/240m-financing-to-bring-ai-to-everything-after-code",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Harness - About Us: AI-powered pipelines, testing, security and cost optimization for software delivery",
+        "url": "https://www.harness.io/company/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Harness - About Us: software delivery platform",
+        "url": "https://www.harness.io/company/about-us",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "hippo": {
+    "companyId": "hippo",
+    "name": "Hippo Holdings Inc.",
+    "legalName": "Hippo Holdings Inc.",
+    "website": "https://www.hippo.com",
+    "description": "Insurance group whose subsidiaries underwrite and distribute homeowners and other property and casualty insurance in the United States across personal and commercial lines. Subsidiaries include Hippo Insurance Services, Spinnaker Insurance Company, Spinnaker Specialty Insurance Company and Wingsail Insurance Company.",
+    "hqCity": "San Jose",
+    "hqCountry": "United States",
+    "foundedYear": 2015,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "technology-native insurance group covering personal and commercial property and casualty lines",
+    "tickers": [
+      "NYSE:HIPO"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Hippo Holdings Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1828105/000182810526000043/hippo-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Hippo Holdings Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1828105/000182810526000043/hippo-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Hippo Holdings Inc. - Form 10-Q for the quarter ended June 30, 2026, Securities registered pursuant to Section 12(b) table: Common stock, HIPO, New York Stock Exchange (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1828105/000182810526000043/hippo-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Hippo Holdings Inc. - Form 10-Q for the quarter ended June 30, 2026, address of principal executive offices: One Almaden Blvd., Suite 400, San Jose, California 95113 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1828105/000182810526000043/hippo-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Hippo Holdings Inc. - Form 10-Q for the quarter ended June 30, 2026, address of principal executive offices (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1828105/000182810526000043/hippo-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Hippo Reports Second Quarter 2026 Financial Results - About Hippo boilerplate, company news release",
+        "url": "https://www.prnewswire.com/news-releases/hippo-reports-second-quarter-2026-financial-results-302838160.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Hippo Reports Second Quarter 2026 Financial Results - About Hippo boilerplate, company news release",
+        "url": "https://www.prnewswire.com/news-releases/hippo-reports-second-quarter-2026-financial-results-302838160.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Hippo Reports Second Quarter 2026 Financial Results - About Hippo boilerplate, company news release",
+        "url": "https://www.prnewswire.com/news-releases/hippo-reports-second-quarter-2026-financial-results-302838160.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Hippo press fact sheet on hippo.com, Key Dates: \"April 2015: Hippo founded.\"",
+        "url": "https://www.hippo.com/sites/default/files/content/field_collection/press_kit/field_file/2021-03/Hippo-Factsheet-March2021.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Hippo official site hippo.com, footer copyright \"2026 Hippo Holdings Inc.\"",
+        "url": "https://www.hippo.com",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "launchdarkly": {
+    "companyId": "launchdarkly",
+    "name": "LaunchDarkly",
+    "legalName": "Catamorphic Co.",
+    "website": "https://launchdarkly.com",
+    "description": "Feature management and software delivery platform that lets engineering teams control the release and runtime behaviour of application code and AI agents.",
+    "hqCity": "Oakland",
+    "hqCountry": "United States",
+    "foundedYear": 2014,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "feature management and progressive software delivery",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "LaunchDarkly - Professional Services Terms and Conditions",
+        "url": "https://launchdarkly.com/policies/professional-services-terms/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "LaunchDarkly - Data Processing Addendum",
+        "url": "https://launchdarkly.com/policies/data-processing-addendum/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "LaunchDarkly - About Us",
+        "url": "https://launchdarkly.com/about-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "LaunchDarkly - About Us",
+        "url": "https://launchdarkly.com/about-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "LaunchDarkly - Data Processing Addendum (company address)",
+        "url": "https://launchdarkly.com/policies/data-processing-addendum/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "LaunchDarkly - Data Processing Addendum (company address)",
+        "url": "https://launchdarkly.com/policies/data-processing-addendum/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "LaunchDarkly - About Us",
+        "url": "https://launchdarkly.com/about-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - no registration statement for LaunchDarkly",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22LaunchDarkly%22&forms=S-1,S-1%2FA,424B4,8-A12B",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "LaunchDarkly - About Us",
+        "url": "https://launchdarkly.com/about-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "LaunchDarkly - About Us",
+        "url": "https://launchdarkly.com/about-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "LaunchDarkly - About Us",
+        "url": "https://launchdarkly.com/about-us/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "lemonade": {
+    "companyId": "lemonade",
+    "name": "Lemonade",
+    "legalName": "Lemonade, Inc.",
+    "website": "https://www.lemonade.com",
+    "description": "Insurance company offering renters, homeowners, pet, car and life insurance to consumers in the United States and Europe through a digital, AI-driven platform.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2015,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "digital insurance carrier for renters, pet, car, homeowners and life insurance",
+    "tickers": [
+      "NYSE:LMND"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Lemonade, Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000055/lmnd-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Lemonade, Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000055/lmnd-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Lemonade, Inc. - Form 10-Q for the quarter ended June 30, 2026, Securities registered pursuant to Section 12(b) table (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000055/lmnd-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Lemonade, Inc. - Form 10-Q for the quarter ended June 30, 2026, address of principal executive offices (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000055/lmnd-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Lemonade, Inc. - Form 10-Q for the quarter ended June 30, 2026, address of principal executive offices (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000055/lmnd-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Lemonade, Inc. - Form 10-K for fiscal year 2025, risk factors: \"We have not been profitable since our inception in 2015\" (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000016/lmnd-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Lemonade Inc. - official investor page on lemonade.com",
+        "url": "https://www.lemonade.com/investor",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Lemonade Inc. - official investor page on lemonade.com",
+        "url": "https://www.lemonade.com/investor",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Lemonade Inc. - official investor page on lemonade.com",
+        "url": "https://www.lemonade.com/investor",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Lemonade Inc. - official investor page on lemonade.com",
+        "url": "https://www.lemonade.com/investor",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "lyft": {
     "companyId": "lyft",
     "name": "Lyft",
@@ -108,6 +1178,97 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "mambu": {
+    "companyId": "mambu",
+    "name": "Mambu",
+    "legalName": "Mambu B.V.",
+    "website": "https://mambu.com",
+    "description": "SaaS cloud banking platform providing core banking, lending and payments software to banks, fintechs and other financial institutions.",
+    "hqCity": "Amsterdam",
+    "hqCountry": "Netherlands",
+    "foundedYear": 2010,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "cloud core banking software for financial institutions",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Mambu - Imprint",
+        "url": "https://mambu.com/imprint",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Mambu - Our Offices (Mambu B.V., Piet Heinkade 55, Amsterdam)",
+        "url": "https://mambu.com/en/offices",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Mambu - Imprint",
+        "url": "https://mambu.com/imprint",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Mambu press release - Mambu celebrates 15 years of powering next gen banking",
+        "url": "https://mambu.com/en/insights/press/mambu-celebrates-15-years-of-powering-next-gen-banking",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Mambu press release - headquartered in Amsterdam, Netherlands",
+        "url": "https://mambu.com/en/insights/press/mambu-celebrates-15-years-of-powering-next-gen-banking",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Mambu - Imprint (Piet Heinkade 55, 1019 GM Amsterdam)",
+        "url": "https://mambu.com/imprint",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Mambu press release - headquartered in Amsterdam, Netherlands",
+        "url": "https://mambu.com/en/insights/press/mambu-celebrates-15-years-of-powering-next-gen-banking",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Mambu press release - Founded in 2010 by three university students",
+        "url": "https://mambu.com/en/insights/press/mambu-celebrates-15-years-of-powering-next-gen-banking",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "EQT - Mambu portfolio page (EQT Growth investment 2021, privately held portfolio company)",
+        "url": "https://eqtgroup.com/about/current-portfolio/mambu",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Mambu press release - EQT Growth-led Series E financing round",
+        "url": "https://mambu.com/en/insights/press/mambu-raises-eur235-million-at-eur4-9-billion-valuation-in-eqt-growth-led-series-e",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Mambu press release - SaaS cloud banking platform",
+        "url": "https://mambu.com/en/insights/press/mambu-celebrates-15-years-of-powering-next-gen-banking",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "EQT - Mambu portfolio page (market-leading, modern SaaS banking platform)",
+        "url": "https://eqtgroup.com/about/current-portfolio/mambu",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
   },
   "marqeta": {
     "companyId": "marqeta",
@@ -1561,6 +2722,73 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "moonpay": {
+    "companyId": "moonpay",
+    "name": "MoonPay",
+    "legalName": null,
+    "website": "https://www.moonpay.com",
+    "description": "Digital asset payments company. Its services let consumers buy, sell and swap cryptocurrencies using cards, bank transfers and other payment methods, and provide crypto and stablecoin payments infrastructure to businesses.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": 2019,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Crypto",
+    "subsector": "crypto payments and fiat on-ramp and off-ramp infrastructure",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "MoonPay official site moonpay.com",
+        "url": "https://www.moonpay.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "MoonPay official site: \"The easiest way to buy, sell and use crypto everywhere.\"",
+        "url": "https://www.moonpay.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "MoonPay licences page listing its regulated entities and money services registrations",
+        "url": "https://www.moonpay.com/legal/licenses",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "MoonPay official site and licences page describing crypto purchase, sale and payment services",
+        "url": "https://www.moonpay.com/legal/licenses",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "MoonPay official site and licences page describing crypto purchase, sale and payment services",
+        "url": "https://www.moonpay.com/legal/licenses",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "MoonPay newsroom, founders and origin story, section heading \"Founding (2019)\"",
+        "url": "https://www.moonpay.com/newsroom/moonpay-founders-origin-story",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "UK Companies House: MOONPAY (UK) LIMITED, company number 12055543, incorporated 17 June 2019",
+        "url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=moonpay",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "MoonPay newsroom: \"MoonPay closes historic funding round\", a \$555 million private Series A financing at a \$3.4 billion post-money valuation",
+        "url": "https://www.moonpay.com/newsroom/funding-round",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "mulesoft": {
     "companyId": "mulesoft",
     "name": "MuleSoft",
@@ -1674,6 +2902,93 @@ Object.assign(COMPANIES, {
         "field": "formerNames",
         "label": "SEC EDGAR - MuleSoft, Inc. submissions, former name MULESOURCE INC",
         "url": "https://data.sec.gov/submissions/CIK0001374684.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "n26": {
+    "companyId": "n26",
+    "name": "N26",
+    "legalName": "N26 SE",
+    "website": "https://n26.com",
+    "description": "Digital bank offering mobile current accounts, cards, savings and investment products to retail customers across European markets under a full German banking licence.",
+    "hqCity": "Berlin",
+    "hqCountry": "Germany",
+    "foundedYear": 2013,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "digital bank",
+    "tickers": [],
+    "formerNames": [
+      "Number26"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "N26 - Imprint (Impressum)",
+        "url": "https://n26.com/en-eu/imprint",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "N26 - Imprint (Impressum)",
+        "url": "https://n26.com/en-eu/imprint",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "N26 - Imprint (Impressum)",
+        "url": "https://n26.com/en-eu/imprint",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "N26 - Imprint (Impressum)",
+        "url": "https://n26.com/en-eu/imprint",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "N26 - Valentin Stalf, Co-founder and former CEO",
+        "url": "https://n26.com/en-eu/valentin-stalf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "N26 press release - Valentin Stalf to move to Supervisory Board (About N26 boilerplate)",
+        "url": "https://n26.com/en-eu/press/press-release/n26-founder-valentin-stalf-to-move-to-digital-bank-supervisory-board",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "N26 press release - About N26 boilerplate",
+        "url": "https://n26.com/en-eu/press/press-release/n26-founder-valentin-stalf-to-move-to-digital-bank-supervisory-board",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "N26 press release - founders continue to hold almost 20% of the shares; close to US\$1.8bn raised from investors",
+        "url": "https://n26.com/en-eu/press/press-release/n26-founder-valentin-stalf-to-move-to-digital-bank-supervisory-board",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "N26 press release - About N26 boilerplate",
+        "url": "https://n26.com/en-eu/press/press-release/n26-founder-valentin-stalf-to-move-to-digital-bank-supervisory-board",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "N26 press release - About N26 boilerplate",
+        "url": "https://n26.com/en-eu/press/press-release/n26-founder-valentin-stalf-to-move-to-digital-bank-supervisory-board",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "N26 blog - From Number26 to N26!",
+        "url": "https://n26.com/en-at/blog/number26-to-n26",
         "checked": "2026-09-03"
       }
     ],
@@ -2082,6 +3397,97 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Netskope - Announces Launch of Initial Public Offering, Netskope One platform, Zero Trust Engine and NewEdge network",
         "url": "https://www.netskope.com/press-releases/netskope-announces-launch-of-initial-public-offering",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "newrelic": {
+    "companyId": "newrelic",
+    "name": "New Relic",
+    "legalName": "New Relic, Inc.",
+    "website": "https://newrelic.com",
+    "description": "Observability company whose platform unifies metrics, events, logs and traces from applications and infrastructure, with analysis tooling used by software engineers to monitor and debug systems.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2008,
+    "status": "acquired",
+    "statusDetail": "Taken private in 2023 by Francisco Partners and TPG through Crewline Buyer, Inc. Merger completed November 8, 2023.",
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "application performance monitoring and observability",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "New Relic, Inc. - Form 8-K filed November 8, 2023 (completion of merger, delisting)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1448056/000119312523273042/d469974d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "New Relic, Inc. - Amended and Restated Certificate of Incorporation (Exhibit 3.1 to Form 8-K of August 19, 2021)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1448056/000144805621000060/newr8-k81821xex31.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "New Relic - About",
+        "url": "https://newrelic.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "New Relic - About",
+        "url": "https://newrelic.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "New Relic - Contact Us (office locations)",
+        "url": "https://newrelic.com/about/contact-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "New Relic - Contact Us (office locations)",
+        "url": "https://newrelic.com/about/contact-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "New Relic, Inc. - Amended and Restated Certificate of Incorporation (Exhibit 3.1 to Form 8-K of August 19, 2021)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1448056/000144805621000060/newr8-k81821xex31.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "New Relic, Inc. - Form 8-K filed November 8, 2023 (completion of merger, delisting)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1448056/000119312523273042/d469974d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "New Relic, Inc. - Form 8-K filed November 8, 2023 (completion of merger, delisting)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1448056/000119312523273042/d469974d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "New Relic, Inc. - Exhibit 99.1 to Form 8-K of July 31, 2023 (announcement of agreement to be acquired by Francisco Partners and TPG)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1448056/000119312523198645/d493136dex991.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "New Relic - About",
+        "url": "https://newrelic.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "New Relic - About",
+        "url": "https://newrelic.com/about",
         "checked": "2026-09-03"
       }
     ],
@@ -3307,6 +4713,99 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "pagerduty": {
+    "companyId": "pagerduty",
+    "name": "PagerDuty",
+    "legalName": "PagerDuty, Inc.",
+    "website": "https://www.pagerduty.com",
+    "description": "Digital operations management company whose platform handles on-call scheduling, alerting, automation and incident response for IT operations, DevOps, security and support teams.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2009,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "incident response and digital operations management",
+    "tickers": [
+      "NYSE:PD"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "PagerDuty, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1568100/000156810026000012/pd-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "PagerDuty - Company page",
+        "url": "https://www.pagerduty.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "PagerDuty - Company page",
+        "url": "https://www.pagerduty.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "PagerDuty Newsroom - press release with About PagerDuty boilerplate",
+        "url": "https://www.pagerduty.com/newsroom/pagerduty-aiops-harnesses-the-power-of-ai-built-in-automation-and-the-companys-foundational-data-model-to-transform-modern-operations-for-the-enterprise/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "PagerDuty, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1568100/000156810026000012/pd-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "PagerDuty, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1568100/000156810026000012/pd-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "PagerDuty Blog - A Decade of Duty: A Brief Look at PagerDuty's History",
+        "url": "https://www.pagerduty.com/blog/company/decade-of-duty/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "PagerDuty, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1568100/000156810026000012/pd-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "PagerDuty, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1568100/000156810026000012/pd-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "PagerDuty Newsroom - press release with About PagerDuty boilerplate",
+        "url": "https://www.pagerduty.com/newsroom/pagerduty-aiops-harnesses-the-power-of-ai-built-in-automation-and-the-companys-foundational-data-model-to-transform-modern-operations-for-the-enterprise/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "PagerDuty - Company page",
+        "url": "https://www.pagerduty.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "PagerDuty - Company page",
+        "url": "https://www.pagerduty.com/company/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "palantir": {
     "companyId": "palantir",
     "name": "Palantir",
@@ -4371,6 +5870,105 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "qonto": {
+    "companyId": "qonto",
+    "name": "Qonto",
+    "legalName": "Qonto SA",
+    "website": "https://qonto.com",
+    "description": "Business banking and financial management platform for small and medium businesses and freelancers in Europe, offering business accounts, payment cards, invoicing and expense management as a licensed payment institution.",
+    "hqCity": "Paris",
+    "hqCountry": "France",
+    "foundedYear": 2016,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "business banking and financial management for SMEs and freelancers",
+    "tickers": [],
+    "formerNames": [
+      "Olinda SAS"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Qonto blog - Olinda SAS change de nom pour devenir Qonto SA",
+        "url": "https://qonto.com/fr/blog/tendances/nouveautes/olinda",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Annuaire des Entreprises (French government company register API) - SIREN 819489626, denomination QONTO",
+        "url": "https://recherche-entreprises.api.gouv.fr/search?q=819489626",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Qonto - About",
+        "url": "https://qonto.com/en/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Qonto - About",
+        "url": "https://qonto.com/en/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Qonto - About (6 Impasse Bonne Nouvelle, 75010 Paris)",
+        "url": "https://qonto.com/en/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Annuaire des Entreprises - registered office 18 rue de Navarin, 75009 Paris",
+        "url": "https://recherche-entreprises.api.gouv.fr/search?q=819489626",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Annuaire des Entreprises - SIREN 819489626 registered in France",
+        "url": "https://recherche-entreprises.api.gouv.fr/search?q=819489626",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Annuaire des Entreprises - date_creation 2016-04-04",
+        "url": "https://recherche-entreprises.api.gouv.fr/search?q=819489626",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Qonto blog - Fondee en 2016 par Alexandre Prot et Steve Anavi",
+        "url": "https://qonto.com/fr/blog/tendances/nouveautes/olinda",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Qonto newsroom - privately funded, 622 million euros raised, no listing or ownership change reported",
+        "url": "https://qonto.com/en/press",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Qonto - About",
+        "url": "https://qonto.com/en/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Qonto - About",
+        "url": "https://qonto.com/en/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Qonto blog - Olinda SAS est devenue Qonto SA le 29 janvier 2026",
+        "url": "https://qonto.com/fr/blog/tendances/nouveautes/olinda",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "quantumscape": {
     "companyId": "quantumscape",
     "name": "QuantumScape",
@@ -5086,6 +6684,73 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Relativity Space - Official Site, reusable rockets and access to space",
         "url": "https://www.relativityspace.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "remote": {
+    "companyId": "remote",
+    "name": "Remote",
+    "legalName": "Remote Technology, Inc.",
+    "website": "https://remote.com",
+    "description": "Global employment platform providing payroll, tax, benefits, HR and compliance services that let companies hire and employ workers in other countries.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": 2019,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "global employment, payroll and HR compliance platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Remote - Privacy Policy (Remote Technology, Inc. is the holding company for the Remote corporate group)",
+        "url": "https://remote.com/policy/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Remote - About",
+        "url": "https://remote.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Remote - About",
+        "url": "https://remote.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Remote press release - Remote Secures \$35 Million in Series A Funding (About Remote boilerplate: Founded in 2019 by Job van der Voort and Marcelo Lebre)",
+        "url": "https://www.businesswire.com/news/home/20201110005579/en/Remote-Secures-%2435-Million-in-Series-A-Funding-to-Transform-Global-Talent-Market",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - no S-1 registration statement for Remote Technology, Inc.",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Remote+Technology%2C+Inc.%22&forms=S-1",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Remote newsroom - company continues to make acquisitions as a privately held company, no listing or change of control reported",
+        "url": "https://remote.com/news",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Remote - About",
+        "url": "https://remote.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Remote - About",
+        "url": "https://remote.com/about",
         "checked": "2026-09-03"
       }
     ],
@@ -6016,6 +7681,101 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Rondo Energy - official press release, electric thermal energy storage for industry",
         "url": "https://www.rondo.com/news-press/rondo-powers-up-worlds-largest-industrial-heat-battery",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "rootinsurance": {
+    "companyId": "rootinsurance",
+    "name": "Root, Inc.",
+    "legalName": "Root, Inc.",
+    "website": "https://www.joinroot.com",
+    "description": "Insurance holding company and parent of Root Insurance Company. Its subsidiaries offer auto and renters insurance in the United States, sold primarily direct to consumers through a mobile app and through partnerships.",
+    "hqCity": "Columbus",
+    "hqCountry": "United States",
+    "foundedYear": 2015,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "personal auto and renters insurance sold direct to consumer using mobile app driving data",
+    "tickers": [
+      "NASDAQ:ROOT"
+    ],
+    "formerNames": [
+      "Root Stockholdings, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Root, Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1788882/000178888226000061/root-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Root, Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1788882/000178888226000061/root-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Root, Inc. - Form 10-Q for the quarter ended June 30, 2026, Securities registered pursuant to Section 12(b) table: Class A common stock, ROOT, The Nasdaq Stock Market LLC (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1788882/000178888226000061/root-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Root, Inc. - Form 10-Q for the quarter ended June 30, 2026, address of principal executive offices (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1788882/000178888226000061/root-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Root, Inc. - Form 10-Q for the quarter ended June 30, 2026, address of principal executive offices (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1788882/000178888226000061/root-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Root, Inc. - Form 10-Q for the quarter ended June 30, 2026, Nature of Business note: \"We offer auto and renters insurance products underwritten by Root Insurance Company\" (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1788882/000178888226000061/root-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Root, Inc. - Form 10-Q for the quarter ended June 30, 2026, Nature of Business note (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1788882/000178888226000061/root-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Root, Inc. - Form 10-Q for the quarter ended June 30, 2026, Nature of Business note (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1788882/000178888226000061/root-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Root, Inc. investor relations news release, About Root, Inc.: \"Founded in 2015 and based in Columbus, Ohio, Root, Inc. (NASDAQ: ROOT) is the parent company of Root Insurance Company\"",
+        "url": "https://ir.joinroot.com/news-releases/news-release-details/root-announces-successful-refinancing-term-loan-facility",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Root, Inc. investor relations news release, About Root, Inc. boilerplate",
+        "url": "https://ir.joinroot.com/news-releases/news-release-details/root-announces-successful-refinancing-term-loan-facility",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions record for CIK 0001788882, formerNames: Root Stockholdings, Inc. (2019-09-20 to 2020-09-17)",
+        "url": "https://data.sec.gov/submissions/CIK0001788882.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Root Insurance official consumer site, joinroot.com",
+        "url": "https://www.joinroot.com",
         "checked": "2026-09-03"
       }
     ],
@@ -7041,6 +8801,91 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "sentry": {
+    "companyId": "sentry",
+    "name": "Sentry",
+    "legalName": "Functional Software, Inc.",
+    "website": "https://sentry.io",
+    "description": "Application monitoring company providing error tracking, performance monitoring and code-level observability for software developers.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "error tracking and application performance monitoring",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Sentry Terms of Service - Functional Software, Inc. d/b/a Sentry",
+        "url": "https://sentry.io/terms/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Sentry - About (trademark statement naming Functional Software, Inc.)",
+        "url": "https://sentry.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Sentry - About",
+        "url": "https://sentry.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Sentry - About",
+        "url": "https://sentry.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Sentry press release - San Francisco dateline",
+        "url": "https://sentry.io/about/press-releases/sentry-raises-90-million-in-series-e-funding-to-expand-and-drive-adoption-of-developer-first-application-monitoring/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Sentry press release - San Francisco dateline",
+        "url": "https://sentry.io/about/press-releases/sentry-raises-90-million-in-series-e-funding-to-expand-and-drive-adoption-of-developer-first-application-monitoring/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Sentry Blog - Sentry's Open Source Values (company founded 2012 by David Cramer with Chris Jennings)",
+        "url": "https://blog.sentry.io/sentrys-open-source-values/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - Functional Software, Inc. is not a registrant",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Functional+Software%2C+Inc.%22&forms=S-1,S-1%2FA,424B4,8-A12B,10-K",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Sentry - About",
+        "url": "https://sentry.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Sentry - About",
+        "url": "https://sentry.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Sentry - About",
+        "url": "https://sentry.io/about/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
   },
   "servicetitan": {
     "companyId": "servicetitan",
@@ -8248,6 +10093,73 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "sourcegraph": {
+    "companyId": "sourcegraph",
+    "name": "Sourcegraph",
+    "legalName": "Sourcegraph, Inc.",
+    "website": "https://sourcegraph.com",
+    "description": "Code intelligence company whose platform lets developers and AI agents search, understand and automate changes across large codebases.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "code search and code intelligence platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Sourcegraph Terms of Service - Sourcegraph, Inc.",
+        "url": "https://sourcegraph.com/terms/cloud",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Sourcegraph - Official Site",
+        "url": "https://sourcegraph.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Sourcegraph - Official Site",
+        "url": "https://sourcegraph.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Sourcegraph - About",
+        "url": "https://sourcegraph.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - Sourcegraph is not a registrant",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Sourcegraph%22&forms=S-1",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Sourcegraph Blog - Why Sourcegraph and Amp are becoming independent companies",
+        "url": "https://sourcegraph.com/blog/why-sourcegraph-and-amp-are-becoming-independent-companies",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Sourcegraph - Official Site",
+        "url": "https://sourcegraph.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Sourcegraph - Official Site",
+        "url": "https://sourcegraph.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "spacex": {
     "companyId": "spacex",
     "name": "SpaceX",
@@ -8358,6 +10270,97 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "splunk": {
+    "companyId": "splunk",
+    "name": "Splunk",
+    "legalName": "Splunk LLC",
+    "website": "https://www.splunk.com",
+    "description": "Enterprise data platform company whose software is used to search, monitor and analyze machine-generated data, with product lines covering security analytics and observability.",
+    "hqCity": "San Jose",
+    "hqCountry": "United States",
+    "foundedYear": 2003,
+    "status": "acquired",
+    "statusDetail": "Acquired by Cisco Systems, Inc. Merger completed March 18, 2024. Operates as a Cisco subsidiary.",
+    "sector": "Enterprise Software",
+    "subsector": "enterprise data platform for security and observability analytics",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Cisco Systems, Inc. - Exhibit 21.1 Subsidiaries of the Registrant, Form 10-K filed September 2, 2026 (lists Splunk LLC, Delaware)",
+        "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/exh211subsidiariesofthereg.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Splunk - About Splunk",
+        "url": "https://www.splunk.com/en_us/about-splunk.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Splunk - About Splunk",
+        "url": "https://www.splunk.com/en_us/about-splunk.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Splunk - Contact Us (headquarters address)",
+        "url": "https://www.splunk.com/en_us/about-splunk/contact-us.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Splunk - Contact Us (headquarters address)",
+        "url": "https://www.splunk.com/en_us/about-splunk/contact-us.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Splunk - About Splunk",
+        "url": "https://www.splunk.com/en_us/about-splunk.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Splunk Inc. - Form 8-K filed March 18, 2024 (completion of merger with Cisco, Nasdaq delisting of SPLK)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1353283/000110465924035289/tm248979d1_8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Splunk Inc. - Post-Effective Amendment (POS AM) filed March 18, 2024 describing the Cisco merger",
+        "url": "https://www.sec.gov/Archives/edgar/data/1353283/000110465924035563/tm249083d1_posam.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Splunk Inc. - Form 8-K filed March 18, 2024 (completion of merger with Cisco, Nasdaq delisting of SPLK)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1353283/000110465924035289/tm248979d1_8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Splunk Inc. - Post-Effective Amendment (POS AM) filed March 18, 2024 describing the Cisco merger",
+        "url": "https://www.sec.gov/Archives/edgar/data/1353283/000110465924035563/tm249083d1_posam.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Splunk - About Splunk",
+        "url": "https://www.splunk.com/en_us/about-splunk.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Splunk - About Splunk",
+        "url": "https://www.splunk.com/en_us/about-splunk.html",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
   },
   "spotify": {
     "companyId": "spotify",
@@ -8550,6 +10553,100 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Spring Health - Alma press release About boilerplate, trusted by employers, health plans and channel partners",
         "url": "https://www.prnewswire.com/news-releases/spring-health-joins-forces-with-alma-expanding-access-to-precision-mental-health-care-302673454.html",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "starlingbank": {
+    "companyId": "starlingbank",
+    "name": "Starling Bank",
+    "legalName": "Starling Bank Limited",
+    "website": "https://www.starlingbank.com",
+    "description": "UK licensed digital bank providing personal, joint and business current accounts, payments and lending through mobile and online apps.",
+    "hqCity": "London",
+    "hqCountry": "United Kingdom",
+    "foundedYear": 2014,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "digital bank",
+    "tickers": [],
+    "formerNames": [
+      "Possible FS Limited",
+      "Starling FS Limited"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Companies House - STARLING BANK LIMITED, company number 09092149",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/09092149",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Starling Bank - Company Fact Sheet",
+        "url": "https://www.starlingbank.com/media/company-fact-sheet/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Starling Bank - About",
+        "url": "https://www.starlingbank.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Starling Bank - About",
+        "url": "https://www.starlingbank.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Companies House - STARLING BANK LIMITED registered office",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/09092149",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Starling Bank - Company Fact Sheet (head office address)",
+        "url": "https://www.starlingbank.com/media/company-fact-sheet/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Companies House - STARLING BANK LIMITED registered office",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/09092149",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Companies House - incorporation date 18 June 2014",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/09092149",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Starling Bank - About (100% independent, owned by founder, employees, an employee benefits trust and named private investors)",
+        "url": "https://www.starlingbank.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Starling Bank - About",
+        "url": "https://www.starlingbank.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Companies House - SIC 64191 Banks",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/09092149",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Companies House - previous company names for 09092149",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/09092149",
         "checked": "2026-09-03"
       }
     ],
@@ -8814,6 +10911,97 @@ Object.assign(COMPANIES, {
         "field": "status",
         "label": "Substack Inc. - EDGAR company submissions record: filings limited to Form D and Regulation Crowdfunding Forms C and C-U, no registration statement, no ticker and no exchange",
         "url": "https://data.sec.gov/submissions/CIK0001783191.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "sumologic": {
+    "companyId": "sumologic",
+    "name": "Sumo Logic",
+    "legalName": "Sumo Logic, Inc.",
+    "website": "https://www.sumologic.com",
+    "description": "Cloud-native machine data analytics company providing log management, cloud monitoring and security analytics used to operate and secure modern applications and cloud infrastructure.",
+    "hqCity": "Redwood City",
+    "hqCountry": "United States",
+    "foundedYear": 2010,
+    "status": "acquired",
+    "statusDetail": "Taken private in 2023 by funds advised by Francisco Partners through Serrano Parent, LLC. Merger completed May 12, 2023.",
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "cloud-native log analytics for security and cloud operations",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Sumo Logic, Inc. - Form 8-K filed May 15, 2023 (completion of merger, Nasdaq delisting)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1643269/000114036123024758/brhc20052953_8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Sumo Logic, Inc. - Form 15-12G filed May 22, 2023 (deregistration, one holder of record)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1643269/000114036123026009/brhc20053198_1512g.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Sumo Logic - Who we are and what we do",
+        "url": "https://www.sumologic.com/company/about-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Sumo Logic - Who we are and what we do",
+        "url": "https://www.sumologic.com/company/about-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Sumo Logic - Contact us (headquarters address)",
+        "url": "https://www.sumologic.com/contact",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Sumo Logic - Contact us (headquarters address)",
+        "url": "https://www.sumologic.com/contact",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Sumo Logic, Inc. - Restated Certificate of Incorporation (Exhibit 3.1 to Form S-1, August 24, 2020)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1643269/000119312520227201/d821436dex31.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Sumo Logic, Inc. - Form 8-K filed May 15, 2023 (completion of merger, Nasdaq delisting)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1643269/000114036123024758/brhc20052953_8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Sumo Logic, Inc. - Form 15-12G filed May 22, 2023 (deregistration, one holder of record)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1643269/000114036123026009/brhc20053198_1512g.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Sumo Logic, Inc. - Form 8-K filed May 15, 2023 (completion of merger, Nasdaq delisting)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1643269/000114036123024758/brhc20052953_8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Sumo Logic - Who we are and what we do",
+        "url": "https://www.sumologic.com/company/about-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Sumo Logic - Who we are and what we do",
+        "url": "https://www.sumologic.com/company/about-us/",
         "checked": "2026-09-03"
       }
     ],
@@ -9119,6 +11307,91 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Taskrabbit Press Release, 13 February 2025 - About Taskrabbit boilerplate",
         "url": "https://www.taskrabbit.com/press/release/taskrabbit-scales-partnership-with-ikea-across-north-america-and-europe",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "temporaltechnologies": {
+    "companyId": "temporaltechnologies",
+    "name": "Temporal Technologies",
+    "legalName": "Temporal Technologies Inc.",
+    "website": "https://temporal.io",
+    "description": "Company behind the open source Temporal durable execution platform and the Temporal Cloud managed service, used to run workflows that survive system failures.",
+    "hqCity": "Seattle",
+    "hqCountry": "United States",
+    "foundedYear": 2019,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "durable execution and workflow orchestration platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Temporal Terms of Service - TEMPORAL TECHNOLOGIES INC.",
+        "url": "https://temporal.io/terms-of-service",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Temporal - About",
+        "url": "https://temporal.io/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Temporal news release - About Temporal boilerplate",
+        "url": "https://temporal.io/news/temporal-technologies-secures-valuation-to-fuel-durable-execution",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Temporal - About",
+        "url": "https://temporal.io/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Temporal news release - Seattle dateline",
+        "url": "https://temporal.io/news/temporal-technologies-secures-valuation-to-fuel-durable-execution",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Temporal news release - Seattle dateline",
+        "url": "https://temporal.io/news/temporal-technologies-secures-valuation-to-fuel-durable-execution",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Temporal news release - Founded in 2019",
+        "url": "https://temporal.io/news/temporal-technologies-secures-valuation-to-fuel-durable-execution",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - Temporal Technologies is not a registrant, appearing only as a portfolio holding in fund filings",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Temporal+Technologies%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Temporal news release - private venture funding round",
+        "url": "https://temporal.io/news/temporal-technologies-secures-valuation-to-fuel-durable-execution",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Temporal - About",
+        "url": "https://temporal.io/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Temporal news release - About Temporal boilerplate",
+        "url": "https://temporal.io/news/temporal-technologies-secures-valuation-to-fuel-durable-execution",
         "checked": "2026-09-03"
       }
     ],
@@ -10806,6 +13079,132 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "wealthfront": {
+    "companyId": "wealthfront",
+    "name": "Wealthfront",
+    "legalName": "Wealthfront Corporation",
+    "website": "https://www.wealthfront.com",
+    "description": "Automated investing and cash management platform offering diversified investment portfolios, high yield cash accounts, borrowing and financial planning to individual clients.",
+    "hqCity": "Palo Alto",
+    "hqCountry": "United States",
+    "foundedYear": 2008,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "automated investing and digital wealth management",
+    "tickers": [
+      "NASDAQ:WLTH"
+    ],
+    "formerNames": [
+      "kaChing",
+      "Wealthfront Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Wealthfront Corporation - Form 10-K for fiscal year ended 31 January 2026, cover page registrant name",
+        "url": "https://www.sec.gov/Archives/edgar/data/1524566/000162828026027232/wlth-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Wealthfront - IPO pricing news release naming Wealthfront Corporation",
+        "url": "https://ir.wealthfront.com/news-releases/news-release-details/wealthfront-announces-pricing-initial-public-offering",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Wealthfront - Official Site",
+        "url": "https://www.wealthfront.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Wealthfront - IPO pricing news release, About Wealthfront",
+        "url": "https://ir.wealthfront.com/news-releases/news-release-details/wealthfront-announces-pricing-initial-public-offering",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Wealthfront Corporation - Form 10-K, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1524566/000162828026027232/wlth-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Wealthfront Corporation - Form 10-K: Founded in 2008 and headquartered in Palo Alto, California",
+        "url": "https://www.sec.gov/Archives/edgar/data/1524566/000162828026027232/wlth-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Wealthfront Corporation - Form 10-K cover page: 261 Hamilton Avenue, Palo Alto, California 94301",
+        "url": "https://www.sec.gov/Archives/edgar/data/1524566/000162828026027232/wlth-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR submissions data for CIK 0001524566: business address Palo Alto, CA",
+        "url": "https://data.sec.gov/submissions/CIK0001524566.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Wealthfront Corporation - Form 10-K cover page: Palo Alto, California, United States",
+        "url": "https://www.sec.gov/Archives/edgar/data/1524566/000162828026027232/wlth-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Wealthfront Corporation - Form 10-K for fiscal year ended 31 January 2026, filed 24 April 2026 as a post-IPO reporting company",
+        "url": "https://www.sec.gov/Archives/edgar/data/1524566/000162828026027232/wlth-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Wealthfront - IPO pricing news release, offering priced 11 December 2025 with trading expected to begin 12 December 2025",
+        "url": "https://ir.wealthfront.com/news-releases/news-release-details/wealthfront-announces-pricing-initial-public-offering",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Wealthfront Corporation - Form 10-K cover page: common stock, trading symbol WLTH, The Nasdaq Stock Market LLC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1524566/000162828026027232/wlth-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions data for CIK 0001524566: tickers WLTH, exchanges Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001524566.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "TechCrunch, 19 October 2010: the company is renaming itself Wealthfront (previously kaChing)",
+        "url": "https://techcrunch.com/2010/10/19/kaching-gets-100m-under-management-and-gets-all-wall-street-with-a-new-name",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions data for CIK 0001524566: formerNames entry WEALTHFRONT INC, 2011-06-30 to 2018-08-10",
+        "url": "https://data.sec.gov/submissions/CIK0001524566.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Wealthfront - IPO pricing news release describing an automated, software driven financial platform",
+        "url": "https://ir.wealthfront.com/news-releases/news-release-details/wealthfront-announces-pricing-initial-public-offering",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Wealthfront Corporation - Form 10-K, Item 1 Business: automated investment service",
+        "url": "https://www.sec.gov/Archives/edgar/data/1524566/000162828026027232/wlth-20260131.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "webflow": {
     "companyId": "webflow",
     "name": "Webflow",
@@ -11314,6 +13713,119 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "workday": {
+    "companyId": "workday",
+    "name": "Workday",
+    "legalName": "Workday, Inc.",
+    "website": "https://www.workday.com",
+    "description": "Enterprise cloud software company providing human capital management, financial management and planning applications on a single platform for HR and finance.",
+    "hqCity": "Pleasanton",
+    "hqCountry": "United States",
+    "foundedYear": 2005,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "cloud human capital management and financial management applications",
+    "tickers": [
+      "NASDAQ:WDAY"
+    ],
+    "formerNames": [
+      "North Tahoe Power Tools, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Workday, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000014/wday-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Workday - Our Story",
+        "url": "https://www.workday.com/en-us/company/about-workday/our-story.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Workday Newsroom - Workday Announces CEO Transition, February 9, 2026",
+        "url": "https://newsroom.workday.com/2026-02-09-Workday-Announces-CEO-Transition-as-Co-Founder-Aneel-Bhusri-Returns-to-Lead-the-Companys-Next-Chapter",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Workday - Our Story",
+        "url": "https://www.workday.com/en-us/company/about-workday/our-story.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Workday, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000014/wday-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Workday Newsroom - Workday Announces CEO Transition, February 9, 2026",
+        "url": "https://newsroom.workday.com/2026-02-09-Workday-Announces-CEO-Transition-as-Co-Founder-Aneel-Bhusri-Returns-to-Lead-the-Companys-Next-Chapter",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Workday, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000014/wday-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Workday - Our Story",
+        "url": "https://www.workday.com/en-us/company/about-workday/our-story.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Workday, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000014/wday-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Workday, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000014/wday-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Workday Newsroom - Workday Announces CEO Transition, February 9, 2026",
+        "url": "https://newsroom.workday.com/2026-02-09-Workday-Announces-CEO-Transition-as-Co-Founder-Aneel-Bhusri-Returns-to-Lead-the-Companys-Next-Chapter",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Workday Newsroom - Workday Announces CEO Transition, February 9, 2026",
+        "url": "https://newsroom.workday.com/2026-02-09-Workday-Announces-CEO-Transition-as-Co-Founder-Aneel-Bhusri-Returns-to-Lead-the-Companys-Next-Chapter",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Workday Newsroom - Workday Announces CEO Transition, February 9, 2026",
+        "url": "https://newsroom.workday.com/2026-02-09-Workday-Announces-CEO-Transition-as-Co-Founder-Aneel-Bhusri-Returns-to-Lead-the-Companys-Next-Chapter",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Workday, Inc. - Form D/A filed 2012-03-15 (issuer previous name)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781112000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - Workday, Inc. entity submissions (former names record)",
+        "url": "https://data.sec.gov/submissions/CIK0001327811.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "writer": {
     "companyId": "writer",
     "name": "Writer",
@@ -11671,6 +14183,97 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Google Inc Form 10-K FY2006 - YouTube described as letting users find, upload, view and share video content",
         "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507044494/d10k.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "zendesk": {
+    "companyId": "zendesk",
+    "name": "Zendesk",
+    "legalName": "Zendesk, Inc.",
+    "website": "https://www.zendesk.com",
+    "description": "Customer service software company providing ticketing, messaging, voice, help centre and related customer engagement tools used by businesses to support their customers.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2007,
+    "status": "acquired",
+    "statusDetail": "Taken private in 2022 by an investor group led by Hellman & Friedman LLC and Permira Advisers LLC. Merger completed November 22, 2022.",
+    "sector": "Enterprise Software",
+    "subsector": "customer service and customer engagement software",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Zendesk, Inc. - Form 8-K filed November 22, 2022 (completion of merger)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1463172/000114036122042681/brhc10044488_8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Zendesk, Inc. - Eighth Amended and Restated Certificate of Incorporation (Exhibit 3.1 to 8-K of November 22, 2022)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1463172/000114036122042681/brhc10044488_ex3-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Zendesk - Company page",
+        "url": "https://www.zendesk.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Zendesk - Company page",
+        "url": "https://www.zendesk.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Zendesk Newsroom - press release with About Zendesk boilerplate",
+        "url": "https://www.zendesk.com/newsroom/press-releases/alliants-secures-investment-from-zendesk/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Zendesk - Company page",
+        "url": "https://www.zendesk.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Zendesk - Company page",
+        "url": "https://www.zendesk.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Zendesk Newsroom - press release with About Zendesk boilerplate",
+        "url": "https://www.zendesk.com/newsroom/press-releases/alliants-secures-investment-from-zendesk/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Zendesk, Inc. - Form 8-K filed November 22, 2022 (completion of merger)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1463172/000114036122042681/brhc10044488_8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Zendesk, Inc. - Form 8-K filed November 22, 2022 (completion of merger)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1463172/000114036122042681/brhc10044488_8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Zendesk Newsroom - press release with About Zendesk boilerplate",
+        "url": "https://www.zendesk.com/newsroom/press-releases/alliants-secures-investment-from-zendesk/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Zendesk Newsroom - press release with About Zendesk boilerplate",
+        "url": "https://www.zendesk.com/newsroom/press-releases/alliants-secures-investment-from-zendesk/",
         "checked": "2026-09-03"
       }
     ],
