@@ -1,6 +1,6 @@
 /* ============================================================
    DATA-COMPANIES.JS
-   Canonical Company entities. Batches 1-3: 180 companies.
+   Canonical Company entities. Batches 1-4: 239 companies.
 
    THE ID IS DURABLE, THE NAME IS NOT. companyId never changes once
    assigned, because every other dataset joins on it. The display name
@@ -11,7 +11,7 @@
    partner and firm reference pointing at it.
 
    Every non-null field carries its own source row naming the field it
-   supports. 2318 source rows across 180 records, none unsourced.
+   supports. 3194 source rows across 239 records, none unsourced.
    Nulls are deliberate: an unsourced founding year is null, never a
    plausible guess.
    ============================================================ */
@@ -17598,6 +17598,6468 @@ const COMPANIES = {
         "field": "formerNames",
         "label": "LinkedIn Corporation Form 10-K FY2015: 'We were incorporated in Delaware in March 2003 under the name LinkedIn, Ltd. and changed our name to LinkedIn Corporation in January 2005.'",
         "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "adyen": {
+    "companyId": "adyen",
+    "name": "Adyen",
+    "legalName": "Adyen N.V.",
+    "website": "https://www.adyen.com",
+    "description": "Financial technology platform providing end-to-end payment processing, data services and financial products for businesses through a single global solution.",
+    "hqCity": "Amsterdam",
+    "hqCountry": "Netherlands",
+    "foundedYear": 2006,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "payments platform and payment processing",
+    "tickers": [
+      "AMS:ADYEN"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "De Nederlandsche Bank - public register entry for Adyen N.V.",
+        "url": "https://www.dnb.nl/en/public-register/information-detail/?registerCode=WFTDG&relationNumber=F0001",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Adyen - Adyen publishes 2025 Annual Report",
+        "url": "https://www.adyen.com/press-and-media/adyen-publishes-2025-annual-report",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Adyen - About",
+        "url": "https://www.adyen.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Adyen - About",
+        "url": "https://www.adyen.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Adyen - Adyen publishes 2025 Annual Report",
+        "url": "https://www.adyen.com/press-and-media/adyen-publishes-2025-annual-report",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Adyen - About",
+        "url": "https://www.adyen.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "De Nederlandsche Bank - public register entry for Adyen N.V.",
+        "url": "https://www.dnb.nl/en/public-register/information-detail/?registerCode=WFTDG&relationNumber=F0001",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Adyen - About",
+        "url": "https://www.adyen.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "De Nederlandsche Bank - public register entry for Adyen N.V.",
+        "url": "https://www.dnb.nl/en/public-register/information-detail/?registerCode=WFTDG&relationNumber=F0001",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Adyen - About",
+        "url": "https://www.adyen.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Adyen - Adyen publishes 2025 Annual Report",
+        "url": "https://www.adyen.com/press-and-media/adyen-publishes-2025-annual-report",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Euronext - ADYEN listing, ISIN NL0012969182, Euronext Amsterdam",
+        "url": "https://live.euronext.com/en/product/equities/NL0012969182-XAMS",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Adyen - Adyen publishes 2025 Annual Report",
+        "url": "https://www.adyen.com/press-and-media/adyen-publishes-2025-annual-report",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Euronext - ADYEN listing, ISIN NL0012969182, Euronext Amsterdam",
+        "url": "https://live.euronext.com/en/product/equities/NL0012969182-XAMS",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Adyen - About",
+        "url": "https://www.adyen.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Adyen - About",
+        "url": "https://www.adyen.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "braintree": {
+    "companyId": "braintree",
+    "name": "Braintree",
+    "legalName": "Braintree, Inc.",
+    "website": null,
+    "description": "Payments platform providing online and mobile payment processing for merchants and application developers, supporting merchants in more than 40 countries and payments in more than 130 currencies.",
+    "hqCity": "Chicago",
+    "hqCountry": "United States",
+    "foundedYear": 2007,
+    "status": "acquired",
+    "statusDetail": "Acquired by eBay Inc. in 2013",
+    "sector": "Fintech",
+    "subsector": "online and mobile payment processing",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "eBay Inc. Form 10-K for 2013, Exhibit 21.01 List of Subsidiaries",
+        "url": "https://www.sec.gov/Archives/edgar/data/1065088/000106508814000010/ebay123113_10-kex2101.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "eBay Inc. - eBay Inc. to Acquire Global Payments Innovator Braintree",
+        "url": "https://investors.ebayinc.com/investor-news/press-release-details/2013/EBay-Inc-to-Acquire-Global-Payments-Innovator-Braintree/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Forbes - eBay Buys Chicago-Based Braintree For \$800 Million",
+        "url": "https://www.forbes.com/sites/amitchowdhry/2013/09/26/ebay-buys-chicago-based-braintree-for-800-million/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Forbes - eBay Buys Chicago-Based Braintree For \$800 Million",
+        "url": "https://www.forbes.com/sites/amitchowdhry/2013/09/26/ebay-buys-chicago-based-braintree-for-800-million/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Forbes - eBay Buys Chicago-Based Braintree For \$800 Million",
+        "url": "https://www.forbes.com/sites/amitchowdhry/2013/09/26/ebay-buys-chicago-based-braintree-for-800-million/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "eBay Inc. - eBay Inc. Completes Acquisition of Global Payments Innovator Braintree",
+        "url": "https://investors.ebayinc.com/investor-news/press-release-details/2013/EBay-Inc-Completes-Acquisition-of-Global-Payments-Innovator-Braintree/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "eBay Inc. - eBay Inc. Completes Acquisition of Global Payments Innovator Braintree",
+        "url": "https://investors.ebayinc.com/investor-news/press-release-details/2013/EBay-Inc-Completes-Acquisition-of-Global-Payments-Innovator-Braintree/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "eBay Inc. - eBay Inc. to Acquire Global Payments Innovator Braintree",
+        "url": "https://investors.ebayinc.com/investor-news/press-release-details/2013/EBay-Inc-to-Acquire-Global-Payments-Innovator-Braintree/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "eBay Inc. - eBay Inc. to Acquire Global Payments Innovator Braintree",
+        "url": "https://investors.ebayinc.com/investor-news/press-release-details/2013/EBay-Inc-to-Acquire-Global-Payments-Innovator-Braintree/default.aspx",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "venmo": {
+    "companyId": "venmo",
+    "name": "Venmo",
+    "legalName": "Venmo Inc.",
+    "website": "https://venmo.com",
+    "description": "Mobile application for peer-to-peer payments between individuals, including bill splitting, expense tracking and a social feed of payment activity.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": 2009,
+    "status": "acquired",
+    "statusDetail": "Acquired by Braintree in 2012",
+    "sector": "Fintech",
+    "subsector": "peer-to-peer mobile payments",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "eBay Inc. Form 10-K for 2013, Exhibit 21.01 List of Subsidiaries",
+        "url": "https://www.sec.gov/Archives/edgar/data/1065088/000106508814000010/ebay123113_10-kex2101.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Venmo - About Us",
+        "url": "https://venmo.com/about/us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Venmo - Product",
+        "url": "https://venmo.com/about/product/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Venmo - About Us",
+        "url": "https://venmo.com/about/us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Venmo - About Us",
+        "url": "https://venmo.com/about/us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "PayPal Newsroom - Venmo Joins Braintree",
+        "url": "https://newsroom.paypal-corp.com/Venmo-Joins-Braintree",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "PayPal Newsroom - Venmo Joins Braintree",
+        "url": "https://newsroom.paypal-corp.com/Venmo-Joins-Braintree",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Venmo - Product",
+        "url": "https://venmo.com/about/product/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Venmo - Product",
+        "url": "https://venmo.com/about/product/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "mercurypaymentsystems": {
+    "companyId": "mercurypaymentsystems",
+    "name": "Mercury Payment Systems",
+    "legalName": "Mercury Payment Systems, LLC",
+    "website": null,
+    "description": "Payment technology and processing company whose payment services were embedded into point-of-sale software applications and brought to market through dealer and developer partners serving small and medium-sized businesses.",
+    "hqCity": "Durango",
+    "hqCountry": "United States",
+    "foundedYear": 2001,
+    "status": "acquired",
+    "statusDetail": "Acquired by Vantiv, Inc. in 2014",
+    "sector": "Fintech",
+    "subsector": "integrated point-of-sale payment processing",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Vantiv - Vantiv Completes Acquisition of Mercury Payment Systems",
+        "url": "https://finance.yahoo.com/news/vantiv-completes-acquisition-mercury-payment-135005645.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Mercury Payment Systems Form S-1 registration statement (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1593875/000119312514121634/d637391ds1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Vantiv - Vantiv Completes Acquisition of Mercury Payment Systems",
+        "url": "https://finance.yahoo.com/news/vantiv-completes-acquisition-mercury-payment-135005645.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Mercury Payment Systems Form S-1 registration statement (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1593875/000119312514121634/d637391ds1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Vantiv - Vantiv Completes Acquisition of Mercury Payment Systems",
+        "url": "https://finance.yahoo.com/news/vantiv-completes-acquisition-mercury-payment-135005645.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Mercury Payment Systems Form S-1 registration statement (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1593875/000119312514121634/d637391ds1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Mercury Payment Systems Form S-1 registration statement (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1593875/000119312514121634/d637391ds1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "The Durango Herald - Mercury, Vantiv, Worldpay: From Durango to London, what's in a name?",
+        "url": "https://www.durangoherald.com/articles/news/mercury-vantiv-worldpay-from-durango-to-london-whats-in-a-name/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Vantiv - Vantiv Completes Acquisition of Mercury Payment Systems",
+        "url": "https://finance.yahoo.com/news/vantiv-completes-acquisition-mercury-payment-135005645.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Vantiv - Vantiv Completes Acquisition of Mercury Payment Systems",
+        "url": "https://finance.yahoo.com/news/vantiv-completes-acquisition-mercury-payment-135005645.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "The Durango Herald - Mercury, Vantiv, Worldpay: From Durango to London, what's in a name?",
+        "url": "https://www.durangoherald.com/articles/news/mercury-vantiv-worldpay-from-durango-to-london-whats-in-a-name/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Mercury Payment Systems Form S-1 registration statement (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1593875/000119312514121634/d637391ds1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Mercury Payment Systems Form S-1 registration statement (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1593875/000119312514121634/d637391ds1.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "billcom": {
+    "companyId": "billcom",
+    "name": "BILL",
+    "legalName": "BILL Holdings, Inc.",
+    "website": "https://www.bill.com",
+    "description": "Financial operations platform for small and mid-sized businesses and their accountants, covering accounts payable, accounts receivable, spend and expense management, forecasting and procurement.",
+    "hqCity": "San Jose",
+    "hqCountry": "United States",
+    "foundedYear": 2006,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "business payments and financial operations software",
+    "tickers": [
+      "NYSE:BILL"
+    ],
+    "formerNames": [
+      "Bill.com Holdings, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "BILL Holdings, Inc. Form 10-K for fiscal year ended June 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1786352/000162828026058238/bill-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions data for CIK 0001786352",
+        "url": "https://data.sec.gov/submissions/CIK0001786352.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "BILL - About Us",
+        "url": "https://www.bill.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "BILL - Investor Relations overview",
+        "url": "https://investor.bill.com/overview/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "BILL - About Us",
+        "url": "https://www.bill.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "BILL Holdings, Inc. Form 10-K for fiscal year ended June 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1786352/000162828026058238/bill-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "BILL Holdings, Inc. Form 10-K for fiscal year ended June 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1786352/000162828026058238/bill-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "BILL - About Us",
+        "url": "https://www.bill.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "BILL Holdings, Inc. Form 10-K for fiscal year ended June 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1786352/000162828026058238/bill-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions data for CIK 0001786352",
+        "url": "https://data.sec.gov/submissions/CIK0001786352.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "BILL Holdings, Inc. Form 10-K for fiscal year ended June 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1786352/000162828026058238/bill-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions data for CIK 0001786352",
+        "url": "https://data.sec.gov/submissions/CIK0001786352.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Certificate of Amendment to the Restated Certificate of Incorporation of Bill.com Holdings, Inc., Exhibit 3.1 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1786352/000119312523042015/d370160dex31.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions data for CIK 0001786352",
+        "url": "https://data.sec.gov/submissions/CIK0001786352.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "BILL - Investor Relations overview",
+        "url": "https://investor.bill.com/overview/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "BILL - About Us",
+        "url": "https://www.bill.com/about-us",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "navan": {
+    "companyId": "navan",
+    "name": "Navan",
+    "legalName": "Navan, Inc.",
+    "website": "https://navan.com",
+    "description": "Cloud-based travel, payments and expense management platform used by businesses to book and manage corporate travel and to process, reconcile and report on expenses.",
+    "hqCity": "Palo Alto",
+    "hqCountry": "United States",
+    "foundedYear": 2015,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "corporate travel and expense management platform",
+    "tickers": [
+      "NASDAQ:NAVN"
+    ],
+    "formerNames": [
+      "TripActions, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Navan, Inc. Form 10-Q for the quarter ended April 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639723/000162828026042552/navn-20260430.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Navan - About",
+        "url": "https://navan.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Navan, Inc. Form 10-Q for the quarter ended April 30, 2026 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639723/000162828026042552/navn-20260430.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Navan, Inc. Form 10-Q for the quarter ended April 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639723/000162828026042552/navn-20260430.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Navan, Inc. Form 10-Q for the quarter ended April 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639723/000162828026042552/navn-20260430.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Navan, Inc. Form 10-Q for the quarter ended April 30, 2026 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639723/000162828026042552/navn-20260430.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Navan - About",
+        "url": "https://navan.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Navan, Inc. Form 10-Q for the quarter ended April 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639723/000162828026042552/navn-20260430.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions data for CIK 0001639723",
+        "url": "https://data.sec.gov/submissions/CIK0001639723.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Navan, Inc. Form 10-Q for the quarter ended April 30, 2026, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639723/000162828026042552/navn-20260430.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions data for CIK 0001639723",
+        "url": "https://data.sec.gov/submissions/CIK0001639723.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions data for CIK 0001639723 - formerNames TripActions, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001639723.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Navan - About",
+        "url": "https://navan.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Navan, Inc. Form 10-Q for the quarter ended April 30, 2026 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639723/000162828026042552/navn-20260430.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Navan, Inc. Form 10-Q for the quarter ended April 30, 2026 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639723/000162828026042552/navn-20260430.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "melio": {
+    "companyId": "melio",
+    "name": "Melio",
+    "legalName": "Melio Limited",
+    "website": "https://melio.com",
+    "description": "Business-to-business payments platform providing accounts payable, accounts receivable and cash flow management for US small businesses and accounting firms.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2018,
+    "status": "acquired",
+    "statusDetail": "Acquired by Xero Limited in 2025",
+    "sector": "Fintech",
+    "subsector": "B2B bill payments and accounts payable for small businesses",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Melio - About (official site)",
+        "url": "https://melio.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Melio - About (official site)",
+        "url": "https://melio.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Xero Limited ASX market release - Xero to acquire Melio, About Melio boilerplate",
+        "url": "https://announcements.asx.com.au/asxpdf/20250626/pdf/06l3wl464v8p6l.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Xero Limited ASX market release - About Melio: headquartered in New York",
+        "url": "https://announcements.asx.com.au/asxpdf/20250626/pdf/06l3wl464v8p6l.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Xero Limited ASX market release - About Melio: headquartered in New York",
+        "url": "https://announcements.asx.com.au/asxpdf/20250626/pdf/06l3wl464v8p6l.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Xero Limited ASX market release - About Melio: Founded in 2018",
+        "url": "https://announcements.asx.com.au/asxpdf/20250626/pdf/06l3wl464v8p6l.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Xero and Melio joint announcement - About Melio boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/xero-to-acquire-melio-a-leading-us-smb-bill-pay-solution-to-accelerate-global-growth-302490268.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Xero and Melio joint announcement - About Melio boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/xero-to-acquire-melio-a-leading-us-smb-bill-pay-solution-to-accelerate-global-growth-302490268.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Xero and Melio joint announcement - About Melio: Founded in 2018",
+        "url": "https://www.prnewswire.com/news-releases/xero-to-acquire-melio-a-leading-us-smb-bill-pay-solution-to-accelerate-global-growth-302490268.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Xero official media release - Melio, which was acquired by Xero in 2025",
+        "url": "https://www.xero.com/ie/media-releases/xero-accelerates-us-growth-payments-payroll/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Xero official media release - Melio, which was acquired by Xero in 2025",
+        "url": "https://www.xero.com/ie/media-releases/xero-accelerates-us-growth-payments-payroll/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Xero Limited ASX market release - Xero completes acquisition of Melio, 15 October 2025",
+        "url": "https://www.marketindex.com.au/data-api/api/v1/announcements/XASX:XRO:3A678875/pdf/inline/xero-completes-acquisition-of-melio",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Xero Limited ASX market release - Xero completes acquisition of Melio, 15 October 2025",
+        "url": "https://www.marketindex.com.au/data-api/api/v1/announcements/XASX:XRO:3A678875/pdf/inline/xero-completes-acquisition-of-melio",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Xero Limited ASX market release - completed the acquisition of Melio Limited and its associated entities",
+        "url": "https://www.marketindex.com.au/data-api/api/v1/announcements/XASX:XRO:3A678875/pdf/inline/xero-completes-acquisition-of-melio",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Xero Limited ASX announcement text - Melio Limited and its associated entities",
+        "url": "https://www.listcorp.com/asx/xro/xero-limited/news/xero-completes-acquisition-of-melio-3259947.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Xero Limited ASX announcement text - completion 15 October 2025",
+        "url": "https://www.listcorp.com/asx/xro/xero-limited/news/xero-completes-acquisition-of-melio-3259947.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Melio - About (official site), describes bill pay and receivables for US businesses",
+        "url": "https://melio.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Xero Limited ASX market release - accounts payable, receivable and cash flow management for US SMBs",
+        "url": "https://announcements.asx.com.au/asxpdf/20250626/pdf/06l3wl464v8p6l.pdf",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "highnote": {
+    "companyId": "highnote",
+    "name": "Highnote",
+    "legalName": "Highnote Platform, Inc.",
+    "website": "https://highnote.com",
+    "description": "Embedded finance platform for card issuance and program management, letting companies embed virtual and physical card payments, ledger and wallet functionality into their products, with an added US merchant acquiring offering.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2020,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "card issuing and embedded payments infrastructure",
+    "tickers": [],
+    "formerNames": [
+      "Bay1, Inc."
+    ],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Highnote - About (official site)",
+        "url": "https://highnote.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Highnote - About (official site)",
+        "url": "https://highnote.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Highnote - About (official site), Highnote Platform, Inc.",
+        "url": "https://highnote.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Highnote - About (official site), San Francisco, California",
+        "url": "https://highnote.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Highnote - About (official site), San Francisco, California",
+        "url": "https://highnote.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Highnote - About (official site), founded 2020",
+        "url": "https://highnote.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR Form D/A 2026 - entity name Highnote Platform, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1829089/000182908926000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR Form D/A 2026 - 350 Bush Street, San Francisco, CA",
+        "url": "https://www.sec.gov/Archives/edgar/data/1829089/000182908926000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR Form D/A 2026 - San Francisco, CA",
+        "url": "https://www.sec.gov/Archives/edgar/data/1829089/000182908926000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR Form D/A filed 2026 - Regulation D exempt private placement, no registered offering",
+        "url": "https://www.sec.gov/Archives/edgar/data/1829089/000182908926000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR Form D/A filed 2021 - jurisdiction of incorporation Delaware, year of incorporation within last five years, value 2020",
+        "url": "https://www.sec.gov/Archives/edgar/data/1829089/000182908921000004/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR Form D/A 2021 - entity name Highnote Platform, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1829089/000182908921000004/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR company submissions - formerNames Bay1, Inc. 2020-10-20 to 2021-07-14",
+        "url": "https://data.sec.gov/submissions/CIK0001829089.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR company submissions - no tickers, no exchanges, only Form D filings",
+        "url": "https://data.sec.gov/submissions/CIK0001829089.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Highnote Series B announcement - About Highnote boilerplate",
+        "url": "https://www.businesswire.com/news/home/20250121011744/en/Highnote-Secures-\$90-Million-Series-B-Announces-Expansion-into-U.S.-Merchant-Acquiring",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Highnote Series B announcement - headquartered in San Francisco, California",
+        "url": "https://www.businesswire.com/news/home/20250121011744/en/Highnote-Secures-\$90-Million-Series-B-Announces-Expansion-into-U.S.-Merchant-Acquiring",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Highnote Series B announcement - closing of \$90 million private Series B funding",
+        "url": "https://www.businesswire.com/news/home/20250121011744/en/Highnote-Secures-\$90-Million-Series-B-Announces-Expansion-into-U.S.-Merchant-Acquiring",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Highnote - About (official site), embedded payment experiences for businesses",
+        "url": "https://highnote.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Highnote Series B announcement - modern card platform management and card issuance",
+        "url": "https://www.businesswire.com/news/home/20250121011744/en/Highnote-Secures-\$90-Million-Series-B-Announces-Expansion-into-U.S.-Merchant-Acquiring",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "moderntreasury": {
+    "companyId": "moderntreasury",
+    "name": "Modern Treasury",
+    "legalName": "Modern Treasury Corp.",
+    "website": "https://www.moderntreasury.com",
+    "description": "Payment operations software and API that automates the full cycle of money movement, from payment initiation through approvals to reconciliation.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2018,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "payment operations software and money movement APIs",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Modern Treasury - About (official site)",
+        "url": "https://www.moderntreasury.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Modern Treasury - About (official site)",
+        "url": "https://www.moderntreasury.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Modern Treasury - About (official site) footer, Modern Treasury Corp.",
+        "url": "https://www.moderntreasury.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Modern Treasury - About (official site), 595 Market St, San Francisco CA",
+        "url": "https://www.moderntreasury.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Modern Treasury - About (official site), San Francisco CA",
+        "url": "https://www.moderntreasury.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Modern Treasury privacy policy - Modern Treasury Corp.",
+        "url": "https://www.moderntreasury.com/legal/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Modern Treasury privacy policy - San Francisco, CA address",
+        "url": "https://www.moderntreasury.com/legal/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Modern Treasury privacy policy - San Francisco, CA address",
+        "url": "https://www.moderntreasury.com/legal/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Modern Treasury press release - Founded in 2018 by Sam Aarons, Dimitri Dadiomov, and Matt Marcus",
+        "url": "https://www.moderntreasury.com/newsroom/press-releases/modern-treasury-raises-38m-to-enable-faster-more-efficient-b2b-payments",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Modern Treasury press release - About Modern Treasury boilerplate",
+        "url": "https://www.moderntreasury.com/newsroom/press-releases/modern-treasury-raises-38m-to-enable-faster-more-efficient-b2b-payments",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Modern Treasury press release - private venture financing round",
+        "url": "https://www.moderntreasury.com/newsroom/press-releases/modern-treasury-raises-38m-to-enable-faster-more-efficient-b2b-payments",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Modern Treasury Series C announcement - Founded in 2018, San Francisco-based",
+        "url": "https://www.businesswire.com/news/home/20211006005329/en/Modern-Treasury-Raises-%2485-Million-Passes-%242-Billion-Valuation",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Modern Treasury Series C announcement - San Francisco-based",
+        "url": "https://www.businesswire.com/news/home/20211006005329/en/Modern-Treasury-Raises-%2485-Million-Passes-%242-Billion-Valuation",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Modern Treasury Series C announcement - private financing, backed by Altimeter, Benchmark and Y Combinator",
+        "url": "https://www.businesswire.com/news/home/20211006005329/en/Modern-Treasury-Raises-%2485-Million-Passes-%242-Billion-Valuation",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Modern Treasury newsroom - operating independently through 2026, no IPO, merger or shutdown",
+        "url": "https://www.moderntreasury.com/newsroom",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Modern Treasury - About (official site), payment operations software",
+        "url": "https://www.moderntreasury.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Modern Treasury - About (official site), full cycle of money movement via web application or API",
+        "url": "https://www.moderntreasury.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "alloy": {
+    "companyId": "alloy",
+    "name": "Alloy",
+    "legalName": "First Mile Group, Inc.",
+    "website": "https://www.alloy.com",
+    "description": "Identity and fraud prevention platform used by financial institutions and fintechs to manage identity risk across customer onboarding, fraud, credit and compliance decisions.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2015,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "identity and fraud decisioning infrastructure for financial institutions",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Alloy - About (official site)",
+        "url": "https://www.alloy.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Alloy - About (official site), identity and fraud prevention platform for financial institutions and fintechs",
+        "url": "https://www.alloy.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Alloy - About (official site), 88 University Place, 4th Floor, New York, NY",
+        "url": "https://www.alloy.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Alloy - About (official site), New York, NY, USA",
+        "url": "https://www.alloy.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Alloy privacy policy - First Mile Group, Inc. d/b/a Alloy",
+        "url": "https://www.alloy.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Alloy privacy policy - 88 University Place, 4th Floor, New York, NY 10003",
+        "url": "https://www.alloy.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Alloy privacy policy - New York, NY 10003",
+        "url": "https://www.alloy.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Alloy terms of service - First Mile Group, Inc., d/b/a Alloy",
+        "url": "https://www.alloy.com/tos",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Alloy terms of service - 88 University Place, 4th Floor, New York, NY 10003",
+        "url": "https://www.alloy.com/tos",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Alloy press release - About Alloy boilerplate, Founded in 2015",
+        "url": "https://www.alloy.com/about/press/identity-decisioning-platform-alloy-launches-in-the-uk",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Alloy press release - About Alloy boilerplate",
+        "url": "https://www.alloy.com/about/press/identity-decisioning-platform-alloy-launches-in-the-uk",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Alloy press release June 2025 - About Alloy boilerplate, Founded in 2015",
+        "url": "https://www.prnewswire.com/news-releases/fueled-by-rapid-growth-alloy-invests-in-new-executives-products-and-partnerships-302491114.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Alloy press release June 2025 - About Alloy boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/fueled-by-rapid-growth-alloy-invests-in-new-executives-products-and-partnerships-302491114.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Alloy press release June 2025 - privately funded company, venture investors named, no public listing",
+        "url": "https://www.prnewswire.com/news-releases/fueled-by-rapid-growth-alloy-invests-in-new-executives-products-and-partnerships-302491114.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Alloy press room - independent company announcements through September 2026",
+        "url": "https://www.alloy.com/about/press",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Alloy - About (official site), solves the identity risk problem for financial institutions and fintechs",
+        "url": "https://www.alloy.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Alloy press release - fraud, credit and compliance decisions for banks and fintech companies",
+        "url": "https://www.alloy.com/about/press/identity-decisioning-platform-alloy-launches-in-the-uk",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "mondaycom": {
+    "companyId": "mondaycom",
+    "name": "monday.com",
+    "legalName": "monday.com Ltd.",
+    "website": "https://monday.com",
+    "description": "Cloud-based work management platform used by teams to plan, track, automate and orchestrate work across projects and business processes.",
+    "hqCity": "Tel Aviv",
+    "hqCountry": "Israel",
+    "foundedYear": 2012,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "work management and work operating system software",
+    "tickers": [
+      "NASDAQ:MNDY"
+    ],
+    "formerNames": [
+      "dapulse",
+      "dapulse Labs Ltd."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR Form 20-F filed 2026-03-13, cover page registrant monday.com Ltd.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/zk2634436.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR Form 20-F 2026 cover page - principal executive offices 6 Yitzhak Sadeh Street, Tel Aviv",
+        "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/zk2634436.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR Form 20-F 2026 cover page - Israel",
+        "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/zk2634436.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR Form 20-F 2026 cover page - securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/zk2634436.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR Form 20-F 2026 cover page - MNDY on The Nasdaq Stock Market LLC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/zk2634436.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR Form 20-F 2026 - full text contains 2012 under the name dapulse Labs Ltd",
+        "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/zk2634436.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR Form 20-F 2026 - full text contains name dapulse Labs Ltd",
+        "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/zk2634436.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR XBRL cover page report - Entity Registrant Name monday.com Ltd.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR XBRL cover page report - Tel Aviv, IL",
+        "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR XBRL cover page report - Entity Incorporation State Country Code IL",
+        "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR XBRL cover page report - Trading Symbol MNDY, Security Exchange Name NASDAQ",
+        "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR XBRL cover page report - 20-F for period ended 2025-12-31",
+        "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR company submissions - name monday.com Ltd.",
+        "url": "https://data.sec.gov/submissions/CIK0001845338.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR company submissions - tickers MNDY, exchanges Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001845338.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR company submissions - currently listed on Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001845338.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "monday.com - Our Story (official site)",
+        "url": "https://monday.com/p/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "monday.com - Our Story (official site)",
+        "url": "https://monday.com/p/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "monday.com - Our Story (official site), founded 2012",
+        "url": "https://monday.com/p/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "monday.com - Our Story (official site), platform previously called dapulse, renamed 2017",
+        "url": "https://monday.com/p/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "monday.com official page - dapulse is now monday.com",
+        "url": "https://monday.com/aw/hp/dapulse",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "monday.com investor relations - work platform description",
+        "url": "https://ir.monday.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "monday.com - Our Story (official site), work management software",
+        "url": "https://monday.com/p/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "monday.com - Our Story (official site), work operating system for teams",
+        "url": "https://monday.com/p/about/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "hubspot": {
+    "companyId": "hubspot",
+    "name": "HubSpot",
+    "legalName": "HubSpot, Inc.",
+    "website": "https://www.hubspot.com",
+    "description": "Customer platform providing marketing, sales and customer service software, including a customer relationship management product and AI-powered agents.",
+    "hqCity": "Cambridge",
+    "hqCountry": "United States",
+    "foundedYear": 2006,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "customer relationship management, marketing, sales and service software",
+    "tickers": [
+      "NYSE:HUBS"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR XBRL cover page report, Form 10-Q for period ended 2026-06-30 - HubSpot, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312526335232/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR XBRL cover page report - Two Canal Park, Cambridge, MA 02141",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312526335232/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR XBRL cover page report - Cambridge, MA, United States",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312526335232/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR XBRL cover page report - Trading Symbol HUBS, Security Exchange Name NYSE",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312526335232/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR XBRL cover page report - Form 10-Q filed 2026-08-05, common stock registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312526335232/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR Form 10-Q filed 2026-08-05, cover page HubSpot, Inc., Commission File Number 001-36680",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312526335232/hubs-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR Form 10-Q filed 2026-08-05 - current periodic reporting",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312526335232/hubs-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR company submissions - HUBSPOT INC, no former names recorded",
+        "url": "https://data.sec.gov/submissions/CIK0001404655.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR company submissions - tickers HUBS, exchanges NYSE",
+        "url": "https://data.sec.gov/submissions/CIK0001404655.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR company submissions - currently listed on NYSE",
+        "url": "https://data.sec.gov/submissions/CIK0001404655.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR company submissions - business address 2 Canal Park, Cambridge, MA 02141",
+        "url": "https://data.sec.gov/submissions/CIK0001404655.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR company submissions - business address Cambridge, MA",
+        "url": "https://data.sec.gov/submissions/CIK0001404655.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "SEC EDGAR Form 10-K for fiscal 2025, Item 1 Business - agentic customer platform for marketing, sales and customer service teams",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312526046646/hubs-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "HubSpot - Our Story (official site)",
+        "url": "https://www.hubspot.com/our-story",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "HubSpot - Our Story (official site), Founded in Boston in 2006",
+        "url": "https://www.hubspot.com/our-story",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "HubSpot - Our Story (official site)",
+        "url": "https://www.hubspot.com/our-story",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "SEC EDGAR Form 10-K for fiscal 2025, Item 1 Business - software for marketing, sales and customer service teams",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312526046646/hubs-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "SEC EDGAR Form 10-K for fiscal 2025, Item 1 Business - AI-powered agents and engagement hubs, Smart CRM",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312526046646/hubs-20251231.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "atlassian": {
+    "companyId": "atlassian",
+    "name": "Atlassian",
+    "legalName": "Atlassian Corporation",
+    "website": "https://www.atlassian.com",
+    "description": "Team collaboration and software development software sold on a subscription basis, including Jira, Confluence, Jira Service Management, Bitbucket, Trello and Loom.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2002,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "software development planning, tracking and team collaboration tools",
+    "tickers": [
+      "NASDAQ:TEAM"
+    ],
+    "formerNames": [
+      "Atlassian Corporation Plc"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Atlassian Corporation - Form 10-K for fiscal year ended June 30, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000036/team-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions record - Atlassian Corp, CIK 0001650372",
+        "url": "https://data.sec.gov/submissions/CIK0001650372.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Atlassian - Company page (official site)",
+        "url": "https://www.atlassian.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Atlassian Corporation - Form 10-K for fiscal year ended June 30, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000036/team-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Atlassian - Company page (official site)",
+        "url": "https://www.atlassian.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Atlassian Corporation - Form 10-K for fiscal year ended June 30, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000036/team-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Atlassian Corporation - Form 10-K for fiscal year ended June 30, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000036/team-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Atlassian Corporation - Form 10-K for fiscal year ended June 30, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000036/team-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Atlassian Corporation - Form 10-K for fiscal year ended June 30, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000036/team-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions record - Atlassian Corp, CIK 0001650372",
+        "url": "https://data.sec.gov/submissions/CIK0001650372.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Atlassian Corporation - Form 10-K for fiscal year ended June 30, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000036/team-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Atlassian Corporation - Form 10-K for fiscal year ended June 30, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000036/team-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Atlassian Corporation - Form 10-K for fiscal year ended June 30, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000036/team-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions record - Atlassian Corp, CIK 0001650372",
+        "url": "https://data.sec.gov/submissions/CIK0001650372.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions record - Atlassian Corp, CIK 0001650372",
+        "url": "https://data.sec.gov/submissions/CIK0001650372.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Atlassian Corporation - Form 8-K dated October 3, 2022 (completion of U.S. Domestication)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1650372/000165037222000071/team-20221003.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "smartsheet": {
+    "companyId": "smartsheet",
+    "name": "Smartsheet",
+    "legalName": "Smartsheet Inc.",
+    "website": "https://www.smartsheet.com",
+    "description": "Enterprise work management platform used to plan, capture, track, automate and report on work.",
+    "hqCity": "Bellevue",
+    "hqCountry": "United States",
+    "foundedYear": 2005,
+    "status": "acquired",
+    "statusDetail": "Acquired by Blackstone and Vista Equity Partners in 2025",
+    "sector": "Enterprise Software",
+    "subsector": "enterprise work management platform",
+    "tickers": [],
+    "formerNames": [
+      "Navigo Technologies, Inc.",
+      "Smartsheet.com, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions record - Smartsheet Inc, CIK 0001366561 (tickers and exchanges arrays empty)",
+        "url": "https://data.sec.gov/submissions/CIK0001366561.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Smartsheet - Legal documents page (official site)",
+        "url": "https://www.smartsheet.com/legal",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Smartsheet - About page (official site)",
+        "url": "https://www.smartsheet.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Smartsheet - About page (official site)",
+        "url": "https://www.smartsheet.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Smartsheet Inc. - Form 8-K Exhibit 99.1, closing press release, January 22, 2025",
+        "url": "https://www.sec.gov/Archives/edgar/data/1366561/000162828025002101/exhibit991-closing8xk.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Smartsheet - About page (official site)",
+        "url": "https://www.smartsheet.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Smartsheet Inc. - Form 8-K Exhibit 99.1, closing press release, January 22, 2025",
+        "url": "https://www.sec.gov/Archives/edgar/data/1366561/000162828025002101/exhibit991-closing8xk.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Smartsheet - About page (official site)",
+        "url": "https://www.smartsheet.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Smartsheet - About page (official site)",
+        "url": "https://www.smartsheet.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Smartsheet Inc. - Form S-1 filed 2018-03-26, Corporate Information section",
+        "url": "https://www.sec.gov/Archives/edgar/data/1366561/000162828018003554/smartsheets-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Smartsheet Inc. - Form 8-K Exhibit 99.1, closing press release, January 22, 2025",
+        "url": "https://www.sec.gov/Archives/edgar/data/1366561/000162828025002101/exhibit991-closing8xk.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Smartsheet - Blackstone and Vista Equity Partners Complete Acquisition of Smartsheet, January 22, 2025",
+        "url": "https://www.smartsheet.com/content-center/news/blackstone-and-vista-equity-partners-complete-acquisition-smartsheet",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions record - Smartsheet Inc, CIK 0001366561 (tickers and exchanges arrays empty)",
+        "url": "https://data.sec.gov/submissions/CIK0001366561.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Smartsheet Inc. - Form 8-K Exhibit 99.1, closing press release, January 22, 2025",
+        "url": "https://www.sec.gov/Archives/edgar/data/1366561/000162828025002101/exhibit991-closing8xk.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Smartsheet - Blackstone and Vista Equity Partners Complete Acquisition of Smartsheet, January 22, 2025",
+        "url": "https://www.smartsheet.com/content-center/news/blackstone-and-vista-equity-partners-complete-acquisition-smartsheet",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Smartsheet - About page (official site)",
+        "url": "https://www.smartsheet.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Smartsheet Inc. - Form 8-K Exhibit 99.1, closing press release, January 22, 2025",
+        "url": "https://www.sec.gov/Archives/edgar/data/1366561/000162828025002101/exhibit991-closing8xk.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Smartsheet Inc. - Form S-1 filed 2018-03-26, Corporate Information section",
+        "url": "https://www.sec.gov/Archives/edgar/data/1366561/000162828018003554/smartsheets-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions record - Smartsheet Inc, CIK 0001366561 (tickers and exchanges arrays empty)",
+        "url": "https://data.sec.gov/submissions/CIK0001366561.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "freshworks": {
+    "companyId": "freshworks",
+    "name": "Freshworks",
+    "legalName": "Freshworks Inc.",
+    "website": "https://www.freshworks.com",
+    "description": "AI service software used by organisations for customer service and IT service management, including Freshdesk and Freshservice.",
+    "hqCity": "San Mateo",
+    "hqCountry": "United States",
+    "foundedYear": 2010,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "customer service and IT service management software",
+    "tickers": [
+      "NASDAQ:FRSH"
+    ],
+    "formerNames": [
+      "FreshDesk Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Freshworks Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1544522/000154452226000036/frsh-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions record - Freshworks Inc., CIK 0001544522",
+        "url": "https://data.sec.gov/submissions/CIK0001544522.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Freshworks - Company page (official site)",
+        "url": "https://www.freshworks.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Freshworks Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1544522/000154452226000036/frsh-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Freshworks - Company page (official site)",
+        "url": "https://www.freshworks.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Freshworks Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1544522/000154452226000036/frsh-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Freshworks Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1544522/000154452226000036/frsh-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Freshworks Inc. - Form S-1/A filed 2021-09-20, Corporate Information section",
+        "url": "https://www.sec.gov/Archives/edgar/data/1544522/000162828021018866/freshworkss-1a3.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Freshworks Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1544522/000154452226000036/frsh-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions record - Freshworks Inc., CIK 0001544522",
+        "url": "https://data.sec.gov/submissions/CIK0001544522.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Freshworks Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1544522/000154452226000036/frsh-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Freshworks - Company page (official site)",
+        "url": "https://www.freshworks.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Freshworks Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1544522/000154452226000036/frsh-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions record - Freshworks Inc., CIK 0001544522",
+        "url": "https://data.sec.gov/submissions/CIK0001544522.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Freshworks Inc. - Form S-1/A filed 2021-09-20, Corporate Information section",
+        "url": "https://www.sec.gov/Archives/edgar/data/1544522/000162828021018866/freshworkss-1a3.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions record - Freshworks Inc., CIK 0001544522",
+        "url": "https://data.sec.gov/submissions/CIK0001544522.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "intercom": {
+    "companyId": "intercom",
+    "name": "Fin",
+    "legalName": null,
+    "website": "https://fin.ai",
+    "description": "Customer service software company whose products include the Fin AI agent and the Intercom customer service platform.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": 2011,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "AI customer service agents and customer communications software",
+    "tickers": [],
+    "formerNames": [
+      "Intercom"
+    ],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Fin - About page (official site, fin.ai)",
+        "url": "https://fin.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Intercom blog - Today Intercom becomes Fin, published May 12, 2026 (post by CEO Eoghan McCabe)",
+        "url": "https://www.intercom.com/blog/today-intercom-becomes-fin/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Fin - About page (official site, fin.ai)",
+        "url": "https://fin.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Intercom - Homepage (official product site)",
+        "url": "https://www.intercom.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Fin - About page (official site, fin.ai)",
+        "url": "https://fin.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Salesforce - Salesforce Signs Definitive Agreement to Acquire Fin, June 15, 2026 (transaction not yet closed)",
+        "url": "https://www.salesforce.com/news/press-releases/2026/06/15/salesforce-signs-definitive-agreement-to-acquire-fin/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Fin - About page (official site, fin.ai)",
+        "url": "https://fin.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Intercom - Homepage (official product site)",
+        "url": "https://www.intercom.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Fin - About page (official site, fin.ai)",
+        "url": "https://fin.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Intercom blog - Today Intercom becomes Fin, published May 12, 2026 (post by CEO Eoghan McCabe)",
+        "url": "https://www.intercom.com/blog/today-intercom-becomes-fin/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Fin - About page (official site, fin.ai)",
+        "url": "https://fin.ai/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "amplitude": {
+    "companyId": "amplitude",
+    "name": "Amplitude",
+    "legalName": "Amplitude, Inc.",
+    "website": "https://amplitude.com",
+    "description": "Digital analytics platform providing product analytics, web analytics, session replay and experimentation.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "digital and product analytics software",
+    "tickers": [
+      "NASDAQ:AMPL"
+    ],
+    "formerNames": [
+      "Sonalight, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Amplitude, Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Corporate Information)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866692/000119312526057847/ampl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions record - Amplitude, Inc., CIK 0001866692",
+        "url": "https://data.sec.gov/submissions/CIK0001866692.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Amplitude - Homepage and footer (official site)",
+        "url": "https://amplitude.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Amplitude, Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Corporate Information)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866692/000119312526057847/ampl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Amplitude - Homepage and footer (official site)",
+        "url": "https://amplitude.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Amplitude, Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Corporate Information)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866692/000119312526057847/ampl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Amplitude, Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Corporate Information)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866692/000119312526057847/ampl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Amplitude, Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Corporate Information)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866692/000119312526057847/ampl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Amplitude, Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Corporate Information)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866692/000119312526057847/ampl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions record - Amplitude, Inc., CIK 0001866692",
+        "url": "https://data.sec.gov/submissions/CIK0001866692.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Amplitude, Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Corporate Information)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866692/000119312526057847/ampl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Amplitude, Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Corporate Information)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866692/000119312526057847/ampl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Amplitude, Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Corporate Information)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866692/000119312526057847/ampl-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions record - Amplitude, Inc., CIK 0001866692",
+        "url": "https://data.sec.gov/submissions/CIK0001866692.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Amplitude, Inc. - Form 10-K for fiscal year ended December 31, 2025 (cover page and Corporate Information)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866692/000119312526057847/ampl-20251231.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "braze": {
+    "companyId": "braze",
+    "name": "Braze",
+    "legalName": "Braze, Inc.",
+    "website": "https://www.braze.com",
+    "description": "Customer engagement platform used by brands to deliver personalised interactions with their customers across channels.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2011,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "customer engagement and cross-channel marketing platform",
+    "tickers": [
+      "NASDAQ:BRZE"
+    ],
+    "formerNames": [
+      "Appboy, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Braze, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1676238/000167623826000013/brze-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions record - Braze, Inc., CIK 0001676238 (former name Appboy, Inc.)",
+        "url": "https://data.sec.gov/submissions/CIK0001676238.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Braze - Homepage and footer (official site)",
+        "url": "https://www.braze.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Braze, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1676238/000167623826000013/brze-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Braze - Homepage and footer (official site)",
+        "url": "https://www.braze.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Braze, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1676238/000167623826000013/brze-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Braze, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1676238/000167623826000013/brze-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Braze, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1676238/000167623826000013/brze-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Braze, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1676238/000167623826000013/brze-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions record - Braze, Inc., CIK 0001676238 (former name Appboy, Inc.)",
+        "url": "https://data.sec.gov/submissions/CIK0001676238.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Braze, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1676238/000167623826000013/brze-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Braze, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1676238/000167623826000013/brze-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Braze, Inc. - Form 10-K for fiscal year ended January 31, 2026 (cover page and Item 1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1676238/000167623826000013/brze-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions record - Braze, Inc., CIK 0001676238 (former name Appboy, Inc.)",
+        "url": "https://data.sec.gov/submissions/CIK0001676238.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions record - Braze, Inc., CIK 0001676238 (former name Appboy, Inc.)",
+        "url": "https://data.sec.gov/submissions/CIK0001676238.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Form D filed 2017-08-14 under entity name Appboy, Inc., CIK 0001676238",
+        "url": "https://www.sec.gov/Archives/edgar/data/1676238/000090571817000757/primary_doc.xml",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "gong": {
+    "companyId": "gong",
+    "name": "Gong",
+    "legalName": "Gong.io Ltd.",
+    "website": "https://www.gong.io",
+    "description": "Revenue intelligence software that captures and analyses customer interactions such as sales calls, emails and meetings, and delivers insights to sales and go-to-market teams.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2015,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "revenue intelligence platform for sales and go-to-market teams",
+    "tickers": [],
+    "formerNames": [
+      "Gong.io"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Gong - About Gong (official site)",
+        "url": "https://www.gong.io/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Gong - About Gong (official site)",
+        "url": "https://www.gong.io/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Gong - About Gong (official site)",
+        "url": "https://www.gong.io/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Gong - About Gong (official site)",
+        "url": "https://www.gong.io/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Gong - About Gong (official site)",
+        "url": "https://www.gong.io/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Gong - Gong Raises \$200 Million in Series D Funding (official newsroom)",
+        "url": "https://www.gong.io/press/gong-raises-200-million-in-series-d-funding",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Gong - Gong Raises \$200 Million in Series D Funding (official newsroom)",
+        "url": "https://www.gong.io/press/gong-raises-200-million-in-series-d-funding",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Gong - Gong Raises \$200 Million in Series D Funding (official newsroom)",
+        "url": "https://www.gong.io/press/gong-raises-200-million-in-series-d-funding",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Gong - Gong Raises \$200 Million in Series D Funding (official newsroom)",
+        "url": "https://www.gong.io/press/gong-raises-200-million-in-series-d-funding",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Gong - Gong Raises \$200 Million in Series D Funding (official newsroom)",
+        "url": "https://www.gong.io/press/gong-raises-200-million-in-series-d-funding",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Gong - Gong Surpasses 4,000 Customers (official newsroom)",
+        "url": "https://www.gong.io/press/gong-surpasses-4000-customers",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Gong - Gong Surpasses 4,000 Customers (official newsroom)",
+        "url": "https://www.gong.io/press/gong-surpasses-4000-customers",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Gong - Gong Surpasses 4,000 Customers (official newsroom)",
+        "url": "https://www.gong.io/press/gong-surpasses-4000-customers",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Calcalist CTech - Gong hits \$500 million revenue run rate as AI demand accelerates",
+        "url": "https://www.calcalistech.com/ctechnews/article/hj4rgjgkzg",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Gong - Gong.io Raises \$20 Million in Series A1 Funding (official newsroom)",
+        "url": "https://www.gong.io/press/gong-io-raises-20-million-in-series-a1-funding-to-transform-sales-conversations",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "klaviyo": {
+    "companyId": "klaviyo",
+    "name": "Klaviyo",
+    "legalName": "Klaviyo, Inc.",
+    "website": "https://www.klaviyo.com",
+    "description": "Marketing automation and customer relationship management software used by consumer brands to run email, SMS and push messaging, analytics and customer data on one platform.",
+    "hqCity": "Boston",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "marketing automation and B2C customer relationship management software",
+    "tickers": [
+      "NYSE:KVYO"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Klaviyo, Inc. Form 10-K for fiscal year ended December 31, 2025 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1835830/000183583026000007/kvyo-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Klaviyo, Inc. Form 10-K for fiscal year ended December 31, 2025 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1835830/000183583026000007/kvyo-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Klaviyo, Inc. Form 10-K for fiscal year ended December 31, 2025 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1835830/000183583026000007/kvyo-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR - Klaviyo, Inc. Form 10-K for fiscal year ended December 31, 2025 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1835830/000183583026000007/kvyo-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Klaviyo, Inc. Form 10-K for fiscal year ended December 31, 2025 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1835830/000183583026000007/kvyo-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Klaviyo, Inc. Form 8-K dated May 1, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1835830/000183583026000026/kvyo-20260501.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR - Klaviyo, Inc. Form 8-K dated May 1, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1835830/000183583026000026/kvyo-20260501.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Klaviyo, Inc. Form 8-K dated May 1, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1835830/000183583026000026/kvyo-20260501.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Klaviyo, Inc. Form 8-K dated May 1, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1835830/000183583026000026/kvyo-20260501.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Klaviyo, Inc. Form 8-K dated May 1, 2026 (cover page)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1835830/000183583026000026/kvyo-20260501.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Klaviyo, Inc. company submissions record (CIK 0001835830)",
+        "url": "https://data.sec.gov/submissions/CIK0001835830.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR - Klaviyo, Inc. company submissions record (CIK 0001835830)",
+        "url": "https://data.sec.gov/submissions/CIK0001835830.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Klaviyo, Inc. company submissions record (CIK 0001835830)",
+        "url": "https://data.sec.gov/submissions/CIK0001835830.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Klaviyo, Inc. company submissions record (CIK 0001835830)",
+        "url": "https://data.sec.gov/submissions/CIK0001835830.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Klaviyo - About (official site)",
+        "url": "https://www.klaviyo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Klaviyo - About (official site)",
+        "url": "https://www.klaviyo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Klaviyo - About (official site)",
+        "url": "https://www.klaviyo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Klaviyo - About (official site)",
+        "url": "https://www.klaviyo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Klaviyo - About (official site)",
+        "url": "https://www.klaviyo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Klaviyo - About (official site)",
+        "url": "https://www.klaviyo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Klaviyo - About (official site)",
+        "url": "https://www.klaviyo.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "auth0": {
+    "companyId": "auth0",
+    "name": "Auth0",
+    "legalName": "Auth0, Inc.",
+    "website": "https://auth0.com",
+    "description": "Identity platform providing authentication, authorization and secure access for applications, devices and users. Sold primarily to application development teams and now operated as a product unit within Okta.",
+    "hqCity": "Bellevue",
+    "hqCountry": "United States",
+    "foundedYear": 2013,
+    "status": "acquired",
+    "statusDetail": "Acquired by Okta in 2021",
+    "sector": "Cybersecurity",
+    "subsector": "customer identity and access management, authentication and authorization platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Okta, Inc. Form 10-K Exhibit 21.1, Subsidiaries of the Registrant (lists Auth0, Inc., Delaware)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1660134/000166013422000010/okta-1312022_ex211.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Auth0 - Official site",
+        "url": "https://auth0.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Auth0 - Official site",
+        "url": "https://auth0.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Auth0 - Okta Completes Acquisition of Auth0 (Auth0 official blog)",
+        "url": "https://auth0.com/blog/okta-acquisition-announcement/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Auth0 - Okta Completes Acquisition of Auth0 (Auth0 official blog)",
+        "url": "https://auth0.com/blog/okta-acquisition-announcement/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Auth0 - Okta Completes Acquisition of Auth0 (Auth0 official blog)",
+        "url": "https://auth0.com/blog/okta-acquisition-announcement/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Business Wire - Okta Signs Definitive Agreement to Acquire Auth0 (Okta press release)",
+        "url": "https://www.businesswire.com/news/home/20210303005911/en/Okta-Signs-Definitive-Agreement-to-Acquire-Auth0-to-Provide-Customer-Identity-for-the-Internet",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Business Wire - Okta Signs Definitive Agreement to Acquire Auth0 (Okta press release)",
+        "url": "https://www.businesswire.com/news/home/20210303005911/en/Okta-Signs-Definitive-Agreement-to-Acquire-Auth0-to-Provide-Customer-Identity-for-the-Internet",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Business Wire - Okta Signs Definitive Agreement to Acquire Auth0 (Okta press release)",
+        "url": "https://www.businesswire.com/news/home/20210303005911/en/Okta-Signs-Definitive-Agreement-to-Acquire-Auth0-to-Provide-Customer-Identity-for-the-Internet",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Business Wire - Okta Signs Definitive Agreement to Acquire Auth0 (Okta press release)",
+        "url": "https://www.businesswire.com/news/home/20210303005911/en/Okta-Signs-Definitive-Agreement-to-Acquire-Auth0-to-Provide-Customer-Identity-for-the-Internet",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Business Wire - Okta Signs Definitive Agreement to Acquire Auth0 (Okta press release)",
+        "url": "https://www.businesswire.com/news/home/20210303005911/en/Okta-Signs-Definitive-Agreement-to-Acquire-Auth0-to-Provide-Customer-Identity-for-the-Internet",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "GlobeNewswire - Auth0 Names Eugenio Pace as New CEO (Auth0 press release, Bellevue, Wash. dateline and About Auth0 boilerplate)",
+        "url": "https://www.globenewswire.com/en/news-release/2017/12/12/1253390/0/en/Auth0-Names-Eugenio-Pace-as-New-CEO.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "GlobeNewswire - Auth0 Names Eugenio Pace as New CEO (Auth0 press release, Bellevue, Wash. dateline and About Auth0 boilerplate)",
+        "url": "https://www.globenewswire.com/en/news-release/2017/12/12/1253390/0/en/Auth0-Names-Eugenio-Pace-as-New-CEO.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "GlobeNewswire - Auth0 Names Eugenio Pace as New CEO (Auth0 press release, Bellevue, Wash. dateline and About Auth0 boilerplate)",
+        "url": "https://www.globenewswire.com/en/news-release/2017/12/12/1253390/0/en/Auth0-Names-Eugenio-Pace-as-New-CEO.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "GlobeNewswire - Auth0 Names Eugenio Pace as New CEO (Auth0 press release, Bellevue, Wash. dateline and About Auth0 boilerplate)",
+        "url": "https://www.globenewswire.com/en/news-release/2017/12/12/1253390/0/en/Auth0-Names-Eugenio-Pace-as-New-CEO.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "GlobeNewswire - Auth0 Names Eugenio Pace as New CEO (Auth0 press release, Bellevue, Wash. dateline and About Auth0 boilerplate)",
+        "url": "https://www.globenewswire.com/en/news-release/2017/12/12/1253390/0/en/Auth0-Names-Eugenio-Pace-as-New-CEO.html",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "duosecurity": {
+    "companyId": "duosecurity",
+    "name": "Duo Security",
+    "legalName": "Duo Security, Inc.",
+    "website": "https://duo.com",
+    "description": "Cloud-based multi-factor authentication and secure access software that verifies user identity and device health before granting access to applications. Operated as part of Cisco Security.",
+    "hqCity": "Ann Arbor",
+    "hqCountry": "United States",
+    "foundedYear": 2010,
+    "status": "acquired",
+    "statusDetail": "Acquired by Cisco in 2018",
+    "sector": "Cybersecurity",
+    "subsector": "multi-factor authentication and zero trust secure access",
+    "tickers": [],
+    "formerNames": [
+      "Scio Security, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Duo Security, Inc. company submissions record (CIK 0001499830), former name Scio Security, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001499830.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - Duo Security, Inc. company submissions record (CIK 0001499830), former name Scio Security, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001499830.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Duo Security, Inc. company submissions record (CIK 0001499830), former name Scio Security, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001499830.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Duo Security, Inc. company submissions record (CIK 0001499830), former name Scio Security, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001499830.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Duo Security - About Duo (official site)",
+        "url": "https://duo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Duo Security - About Duo (official site)",
+        "url": "https://duo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Duo Security - About Duo (official site)",
+        "url": "https://duo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Duo Security - About Duo (official site)",
+        "url": "https://duo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Duo Security - About Duo (official site)",
+        "url": "https://duo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Duo Security - About Duo (official site)",
+        "url": "https://duo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Duo Security - About Duo (official site)",
+        "url": "https://duo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Duo Security - About Duo (official site)",
+        "url": "https://duo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Duo Security - About Duo (official site)",
+        "url": "https://duo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Cisco Investor Relations - Cisco Completes Acquisition of Duo Security",
+        "url": "https://investor.cisco.com/news/news-details/2018/Cisco-Completes-Acquisition-of-Duo-Security/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Cisco Investor Relations - Cisco Completes Acquisition of Duo Security",
+        "url": "https://investor.cisco.com/news/news-details/2018/Cisco-Completes-Acquisition-of-Duo-Security/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Cisco Newsroom - Cisco Announces Intent to Acquire Duo Security",
+        "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2018/m08/cisco-announces-corporate-news-8_18.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Cisco Newsroom - Cisco Announces Intent to Acquire Duo Security",
+        "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2018/m08/cisco-announces-corporate-news-8_18.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Cisco Newsroom - Cisco Announces Intent to Acquire Duo Security",
+        "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2018/m08/cisco-announces-corporate-news-8_18.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Cisco Newsroom - Cisco Announces Intent to Acquire Duo Security",
+        "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2018/m08/cisco-announces-corporate-news-8_18.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Cisco Newsroom - Cisco Announces Intent to Acquire Duo Security",
+        "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2018/m08/cisco-announces-corporate-news-8_18.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "True Ventures - Congratulating the Duo Security Team (states Duo was called Scio Security)",
+        "url": "https://trueventures.com/blog/duo-security-acquisition",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "segment": {
+    "companyId": "segment",
+    "name": "Segment",
+    "legalName": "Segment.io, Inc.",
+    "website": null,
+    "description": "Customer data platform that collects, unifies and routes first-party customer data from websites, apps and servers into analytics, marketing and data warehouse destinations. Operated as Twilio Segment.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2011,
+    "status": "acquired",
+    "statusDetail": "Acquired by Twilio in 2020",
+    "sector": "Enterprise Software",
+    "subsector": "customer data platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Twilio Inc. Form 10-K Exhibit 21.1, Subsidiaries of the Registrant (lists Segment.io, Inc.)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1447669/000144766922000049/twlo-20211231ex211subidiar.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Twilio Inc. Exhibit 2.1, Agreement and Plan of Reorganization dated October 12, 2020 with Segment.io, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1447669/000119312520287018/d36346dex21.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Twilio Inc. Exhibit 2.1, Agreement and Plan of Reorganization dated October 12, 2020 with Segment.io, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1447669/000119312520287018/d36346dex21.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "SEC EDGAR - Twilio Inc. Exhibit 2.1, Agreement and Plan of Reorganization dated October 12, 2020 with Segment.io, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1447669/000119312520287018/d36346dex21.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Twilio - Twilio Completes Acquisition of Segment, the Market-leading Customer Data Platform (official press release)",
+        "url": "https://www.twilio.com/en-us/press/releases/twilio-completes-acquisition-segment-market-leading-customer-data-platform",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Twilio - Twilio Completes Acquisition of Segment, the Market-leading Customer Data Platform (official press release)",
+        "url": "https://www.twilio.com/en-us/press/releases/twilio-completes-acquisition-segment-market-leading-customer-data-platform",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Twilio - Twilio Completes Acquisition of Segment, the Market-leading Customer Data Platform (official press release)",
+        "url": "https://www.twilio.com/en-us/press/releases/twilio-completes-acquisition-segment-market-leading-customer-data-platform",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Twilio - Twilio Segment product page",
+        "url": "https://www.twilio.com/en-us/segment",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Twilio - Twilio Segment product page",
+        "url": "https://www.twilio.com/en-us/segment",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Twilio - Twilio Segment product page",
+        "url": "https://www.twilio.com/en-us/segment",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "GlobeNewswire - Segment Named to Forbes 100 Best Cloud Companies (Segment press release, San Francisco, CA dateline and About Segment boilerplate)",
+        "url": "https://www.globenewswire.com/news-release/2017/07/17/1300510/0/en/Segment-Named-to-Forbes-100-Best-Cloud-Companies-for-Second-Year-in-a-Row.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "GlobeNewswire - Segment Named to Forbes 100 Best Cloud Companies (Segment press release, San Francisco, CA dateline and About Segment boilerplate)",
+        "url": "https://www.globenewswire.com/news-release/2017/07/17/1300510/0/en/Segment-Named-to-Forbes-100-Best-Cloud-Companies-for-Second-Year-in-a-Row.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "GlobeNewswire - Segment Named to Forbes 100 Best Cloud Companies (Segment press release, San Francisco, CA dateline and About Segment boilerplate)",
+        "url": "https://www.globenewswire.com/news-release/2017/07/17/1300510/0/en/Segment-Named-to-Forbes-100-Best-Cloud-Companies-for-Second-Year-in-a-Row.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "GlobeNewswire - Segment Named to Forbes 100 Best Cloud Companies (Segment press release, San Francisco, CA dateline and About Segment boilerplate)",
+        "url": "https://www.globenewswire.com/news-release/2017/07/17/1300510/0/en/Segment-Named-to-Forbes-100-Best-Cloud-Companies-for-Second-Year-in-a-Row.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "GlobeNewswire - Segment Named to Forbes 100 Best Cloud Companies (Segment press release, San Francisco, CA dateline and About Segment boilerplate)",
+        "url": "https://www.globenewswire.com/news-release/2017/07/17/1300510/0/en/Segment-Named-to-Forbes-100-Best-Cloud-Companies-for-Second-Year-in-a-Row.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Y Combinator - Segment company page (Segment was a Y Combinator company; page states founded 2011, San Francisco)",
+        "url": "https://www.ycombinator.com/companies/segment",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "sendgrid": {
+    "companyId": "sendgrid",
+    "name": "SendGrid",
+    "legalName": "SendGrid, Inc.",
+    "website": null,
+    "description": "Email delivery platform providing a transactional email API, SMTP relay and marketing campaign tools used by developers and businesses to send email at scale. Operated as Twilio SendGrid.",
+    "hqCity": "Denver",
+    "hqCountry": "United States",
+    "foundedYear": 2009,
+    "status": "acquired",
+    "statusDetail": "Acquired by Twilio in 2019",
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "transactional email API and email delivery infrastructure",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - SendGrid, Inc. Form S-1 registration statement (cover page and business overview)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477425/000104746917006437/a2233508zs-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - SendGrid, Inc. Form S-1 registration statement (cover page and business overview)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477425/000104746917006437/a2233508zs-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - SendGrid, Inc. Form S-1 registration statement (cover page and business overview)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477425/000104746917006437/a2233508zs-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - SendGrid, Inc. Form S-1 registration statement (cover page and business overview)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477425/000104746917006437/a2233508zs-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "SEC EDGAR - SendGrid, Inc. Form S-1 registration statement (cover page and business overview)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477425/000104746917006437/a2233508zs-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - SendGrid, Inc. company submissions record (CIK 0001477425)",
+        "url": "https://data.sec.gov/submissions/CIK0001477425.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - SendGrid, Inc. company submissions record (CIK 0001477425)",
+        "url": "https://data.sec.gov/submissions/CIK0001477425.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - SendGrid, Inc. company submissions record (CIK 0001477425)",
+        "url": "https://data.sec.gov/submissions/CIK0001477425.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Twilio Inc. Form 8-K, date of report February 1, 2019, Item 2.01 Completion of Acquisition (merger with SendGrid, Inc. effective February 1, 2019)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1447669/000110465919005275/a19-3826_18k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "SEC EDGAR - Twilio Inc. Form 8-K, date of report February 1, 2019, Item 2.01 Completion of Acquisition (merger with SendGrid, Inc. effective February 1, 2019)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1447669/000110465919005275/a19-3826_18k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Twilio Inc. Form 8-K, date of report February 1, 2019, Item 2.01 Completion of Acquisition (merger with SendGrid, Inc. effective February 1, 2019)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1447669/000110465919005275/a19-3826_18k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Twilio - Twilio Completes Acquisition of SendGrid (official press release, February 1, 2019)",
+        "url": "https://www.twilio.com/en-us/press/releases/twilio-completes-acquisition-sendgrid",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Twilio - Twilio Completes Acquisition of SendGrid (official press release, February 1, 2019)",
+        "url": "https://www.twilio.com/en-us/press/releases/twilio-completes-acquisition-sendgrid",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Twilio - Twilio SendGrid product page",
+        "url": "https://www.twilio.com/en-us/sendgrid",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Twilio - Twilio SendGrid product page",
+        "url": "https://www.twilio.com/en-us/sendgrid",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Twilio - Twilio SendGrid product page",
+        "url": "https://www.twilio.com/en-us/sendgrid",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Twilio - Twilio to Acquire SendGrid, the Leading Email API Platform (official press release, October 15, 2018)",
+        "url": "https://www.twilio.com/en-us/press/releases/twilio-to-acquire-sendgrid-the-leading-email-api-platform",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Twilio - Twilio to Acquire SendGrid, the Leading Email API Platform (official press release, October 15, 2018)",
+        "url": "https://www.twilio.com/en-us/press/releases/twilio-to-acquire-sendgrid-the-leading-email-api-platform",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Twilio - Twilio to Acquire SendGrid, the Leading Email API Platform (official press release, October 15, 2018)",
+        "url": "https://www.twilio.com/en-us/press/releases/twilio-to-acquire-sendgrid-the-leading-email-api-platform",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "mulesoft": {
+    "companyId": "mulesoft",
+    "name": "MuleSoft",
+    "legalName": "MuleSoft, LLC",
+    "website": "https://www.mulesoft.com",
+    "description": "Integration software company whose Anypoint Platform is used to connect enterprise applications, data and devices across cloud and on-premises systems using APIs.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2006,
+    "status": "acquired",
+    "statusDetail": "Acquired by Salesforce in 2018",
+    "sector": "Enterprise Software",
+    "subsector": "API-led integration and connectivity platform",
+    "tickers": [],
+    "formerNames": [
+      "Azechi, Inc.",
+      "MuleSource, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Salesforce, Inc. Form 10-K Exhibit 21.1 - List of Subsidiaries as of January 31, 2025 (lists MuleSoft, LLC)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000006/ex211listofsubsidiariesfy25.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "MuleSoft - Official Site",
+        "url": "https://www.mulesoft.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Salesforce - Salesforce Completes Acquisition of MuleSoft (describes MuleSoft's Anypoint Platform and connecting enterprise apps, data and devices)",
+        "url": "https://www.salesforce.com/news/press-releases/2018/05/02/salesforce-completes-acquisition-of-mulesoft/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "MuleSoft - Official Site",
+        "url": "https://www.mulesoft.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "MuleSoft, Inc. Form S-1/A - principal executive offices, 77 Geary Street, Suite 400, San Francisco, California 94108",
+        "url": "https://www.sec.gov/Archives/edgar/data/1374684/000119312517083411/d287291ds1a.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - MuleSoft, Inc. submissions (business address San Francisco, CA)",
+        "url": "https://data.sec.gov/submissions/CIK0001374684.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "MuleSoft, Inc. Form S-1/A - principal executive offices in San Francisco, California",
+        "url": "https://www.sec.gov/Archives/edgar/data/1374684/000119312517083411/d287291ds1a.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "MuleSoft, Inc. Form S-1/A - 'We were incorporated in the state of Delaware in April 2006 as Azechi, Inc.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1374684/000119312517083411/d287291ds1a.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Salesforce - Salesforce Completes Acquisition of MuleSoft, May 2, 2018",
+        "url": "https://www.salesforce.com/news/press-releases/2018/05/02/salesforce-completes-acquisition-of-mulesoft/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Salesforce Investor Relations - Salesforce Completes Acquisition of MuleSoft",
+        "url": "https://investor.salesforce.com/news/news-details/2018/Salesforce-Completes-Acquisition-of-MuleSoft/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Salesforce - Salesforce Completes Acquisition of MuleSoft, May 2, 2018",
+        "url": "https://www.salesforce.com/news/press-releases/2018/05/02/salesforce-completes-acquisition-of-mulesoft/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "SEC EDGAR - MuleSoft, Inc. submissions (Form 25-NSE and Form 8-K filed May 2, 2018; Form 15-12B filed May 14, 2018)",
+        "url": "https://data.sec.gov/submissions/CIK0001374684.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Salesforce - Salesforce Completes Acquisition of MuleSoft (enterprise application, data and device integration)",
+        "url": "https://www.salesforce.com/news/press-releases/2018/05/02/salesforce-completes-acquisition-of-mulesoft/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "MuleSoft - Official Site",
+        "url": "https://www.mulesoft.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "MuleSoft, Inc. Form S-1/A - incorporated as Azechi, Inc. and renamed MuleSource, Inc. in July 2006",
+        "url": "https://www.sec.gov/Archives/edgar/data/1374684/000119312517083411/d287291ds1a.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - MuleSoft, Inc. submissions, former name MULESOURCE INC",
+        "url": "https://data.sec.gov/submissions/CIK0001374684.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "looker": {
+    "companyId": "looker",
+    "name": "Looker",
+    "legalName": "Looker Data Sciences, Inc.",
+    "website": "https://looker.com",
+    "description": "Business intelligence and data analytics platform used to model, explore and visualise data held in cloud data warehouses.",
+    "hqCity": "Santa Cruz",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "acquired",
+    "statusDetail": "Acquired by Google LLC in 2020 (completion announced 13 February 2020; the UK CMA records Google LLC as having acquired the entire issued share capital on 5 December 2019)",
+    "sector": "Enterprise Software",
+    "subsector": "business intelligence and analytics platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Looker Data Sciences, Inc. submissions (CIK 0001558048)",
+        "url": "https://data.sec.gov/submissions/CIK0001558048.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "UK Competition and Markets Authority - Completed acquisition by Google LLC of Looker Data Sciences, Inc., decision",
+        "url": "https://assets.publishing.service.gov.uk/media/5e6f8119e90e070ac9b21395/Google_Looker_decision-.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Looker - Official Site",
+        "url": "https://looker.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "UK Competition and Markets Authority decision - Looker described as a US-based provider of business intelligence (BI) tools",
+        "url": "https://assets.publishing.service.gov.uk/media/5e6f8119e90e070ac9b21395/Google_Looker_decision-.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Google Cloud - Google completes Looker acquisition",
+        "url": "https://cloud.google.com/blog/topics/inside-google-cloud/google-completes-looker-acquisition",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Looker Data Sciences, Inc. submissions, business address 101 Church Street, 4th Floor, Santa Cruz, CA 95060",
+        "url": "https://data.sec.gov/submissions/CIK0001558048.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Looker Data Sciences, Inc. submissions, business address in Santa Cruz, CA",
+        "url": "https://data.sec.gov/submissions/CIK0001558048.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - Looker Data Sciences, Inc. Form D primary document, Year of Incorporation 2012, Delaware",
+        "url": "https://www.sec.gov/Archives/edgar/data/1558048/000155804812000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Google Cloud - Google completes Looker acquisition, February 13, 2020",
+        "url": "https://cloud.google.com/blog/topics/inside-google-cloud/google-completes-looker-acquisition",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "UK Competition and Markets Authority - Google LLC / Looker Data Sciences, Inc merger inquiry case page",
+        "url": "https://www.gov.uk/cma-cases/google-llc-looker-data-sciences-inc-merger-inquiry",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Google Cloud - Google completes Looker acquisition, February 13, 2020",
+        "url": "https://cloud.google.com/blog/topics/inside-google-cloud/google-completes-looker-acquisition",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "UK Competition and Markets Authority decision - 'On 5 December 2019, Google LLC (Google), a wholly owned subsidiary of Alphabet Inc. (Alphabet), acquired the entire issued share capital of Looker Data Sciences, Inc.'",
+        "url": "https://assets.publishing.service.gov.uk/media/5e6f8119e90e070ac9b21395/Google_Looker_decision-.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "UK Competition and Markets Authority decision - business intelligence (BI) tools",
+        "url": "https://assets.publishing.service.gov.uk/media/5e6f8119e90e070ac9b21395/Google_Looker_decision-.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "UK Competition and Markets Authority decision - business intelligence (BI) tools",
+        "url": "https://assets.publishing.service.gov.uk/media/5e6f8119e90e070ac9b21395/Google_Looker_decision-.pdf",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "appdynamics": {
+    "companyId": "appdynamics",
+    "name": "AppDynamics",
+    "legalName": "AppDynamics, Inc.",
+    "website": null,
+    "description": "Application performance monitoring software used by enterprises to instrument application code and monitor application and business transaction performance.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2008,
+    "status": "acquired",
+    "statusDetail": "Acquired by Cisco in 2017",
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "application performance monitoring and observability",
+    "tickers": [],
+    "formerNames": [
+      "Singularity Technologies, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "AppDynamics, Inc. Form S-1/A - registrant name on the prospectus cover",
+        "url": "https://www.sec.gov/Archives/edgar/data/1435043/000119312517015842/d209425ds1a.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - AppDynamics Inc submissions (CIK 0001435043)",
+        "url": "https://data.sec.gov/submissions/CIK0001435043.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Cisco Investor Relations - Cisco Completes Acquisition of AppDynamics ('a leader in application and business monitoring')",
+        "url": "https://investor.cisco.com/news/news-details/2017/Cisco-Completes-Acquisition-of-AppDynamics/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "AppDynamics, Inc. Form S-1/A",
+        "url": "https://www.sec.gov/Archives/edgar/data/1435043/000119312517015842/d209425ds1a.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "AppDynamics, Inc. Form S-1/A - principal executive offices, 303 Second Street, North Tower, 8th Floor, San Francisco, California 94107",
+        "url": "https://www.sec.gov/Archives/edgar/data/1435043/000119312517015842/d209425ds1a.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - AppDynamics Inc submissions, business address San Francisco, CA 94107",
+        "url": "https://data.sec.gov/submissions/CIK0001435043.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "AppDynamics, Inc. Form S-1/A - principal executive offices in San Francisco, California",
+        "url": "https://www.sec.gov/Archives/edgar/data/1435043/000119312517015842/d209425ds1a.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "AppDynamics, Inc. Form S-1/A - 'We were incorporated in Delaware on April 1, 2008 under the name Singularity Technologies, Inc.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1435043/000119312517015842/d209425ds1a.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Cisco Investor Relations - Cisco Completes Acquisition of AppDynamics, March 22, 2017",
+        "url": "https://investor.cisco.com/news/news-details/2017/Cisco-Completes-Acquisition-of-AppDynamics/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "AppDynamics, Inc. Form RW - registration withdrawal request citing the merger agreement with Cisco Systems, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1435043/000119312517085402/d358593drw.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Cisco Investor Relations - Cisco Completes Acquisition of AppDynamics, March 22, 2017",
+        "url": "https://investor.cisco.com/news/news-details/2017/Cisco-Completes-Acquisition-of-AppDynamics/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "AppDynamics, Inc. Form RW filed March 16, 2017, File No. 333-215347",
+        "url": "https://www.sec.gov/Archives/edgar/data/1435043/000119312517085402/d358593drw.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Cisco Investor Relations - Cisco Completes Acquisition of AppDynamics (application monitoring, watching every line of code)",
+        "url": "https://investor.cisco.com/news/news-details/2017/Cisco-Completes-Acquisition-of-AppDynamics/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Cisco Investor Relations - Cisco Completes Acquisition of AppDynamics",
+        "url": "https://investor.cisco.com/news/news-details/2017/Cisco-Completes-Acquisition-of-AppDynamics/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "AppDynamics, Inc. Form S-1/A - incorporated under the name Singularity Technologies, Inc. and renamed AppDynamics, Inc. on August 17, 2009",
+        "url": "https://www.sec.gov/Archives/edgar/data/1435043/000119312517015842/d209425ds1a.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - AppDynamics Inc submissions, former name SINGULARITY TECHNOLOGIES INC",
+        "url": "https://data.sec.gov/submissions/CIK0001435043.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "heroku": {
+    "companyId": "heroku",
+    "name": "Heroku",
+    "legalName": "Heroku, Inc.",
+    "website": "https://www.heroku.com",
+    "description": "Cloud platform as a service used to build, deploy and run applications without managing the underlying servers.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": 2007,
+    "status": "acquired",
+    "statusDetail": "Acquired by Salesforce in 2011",
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "platform as a service for application deployment and hosting",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Salesforce, Inc. Form 10-K Exhibit 21.1 - List of Subsidiaries as of January 31, 2025 (lists Heroku, Inc., United States of America)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000006/ex211listofsubsidiariesfy25.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Heroku - Official Site",
+        "url": "https://www.heroku.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Heroku - Official Site",
+        "url": "https://www.heroku.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Salesforce.com Completes Acquisition of Heroku, January 3, 2011",
+        "url": "https://www.salesforce.com/news/press-releases/2011/01/03/salesforce-com-completes-acquisition-of-heroku/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Salesforce, Inc. Form 10-K Exhibit 21.1 - Heroku, Inc. listed with jurisdiction United States of America",
+        "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000006/ex211listofsubsidiariesfy25.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Salesforce.com Completes Acquisition of Heroku - Heroku based in San Francisco",
+        "url": "https://www.prnewswire.com/news-releases/salesforcecom-completes-acquisition-of-heroku-112835444.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Heroku - About page, 'Heroku was founded in 2007 by Orion Henry, James Lindenbaum, and Adam Wiggins.'",
+        "url": "https://www.heroku.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Salesforce.com Completes Acquisition of Heroku, January 3, 2011",
+        "url": "https://www.salesforce.com/news/press-releases/2011/01/03/salesforce-com-completes-acquisition-of-heroku/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Heroku - About page, 'The company was acquired by Salesforce in 2011'",
+        "url": "https://www.heroku.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Salesforce.com Completes Acquisition of Heroku, January 3, 2011",
+        "url": "https://www.salesforce.com/news/press-releases/2011/01/03/salesforce-com-completes-acquisition-of-heroku/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Heroku - About page, 'The company was acquired by Salesforce in 2011'",
+        "url": "https://www.heroku.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Heroku - Official Site (fully managed app hosting platform)",
+        "url": "https://www.heroku.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Heroku - Official Site (fully managed app hosting platform)",
+        "url": "https://www.heroku.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "algolia": {
+    "companyId": "algolia",
+    "name": "Algolia",
+    "legalName": "Algolia, Inc.",
+    "website": "https://www.algolia.com",
+    "description": "Hosted search and discovery platform providing search, recommendation and retrieval APIs that developers embed in websites and applications.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "hosted search and discovery API",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Algolia, Inc. Form D primary document, Delaware corporation (CIK 0001642852)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1642852/000164285221000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Algolia - Terms of Service naming Algolia, Inc. and Algolia SAS",
+        "url": "https://www.algolia.com/policies/terms",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Algolia - Official Site, About page",
+        "url": "https://www.algolia.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Algolia - About page",
+        "url": "https://www.algolia.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Algolia - Newsroom, About Algolia boilerplate (developer-friendly and enterprise-grade APIs, hosted platform)",
+        "url": "https://www.algolia.com/about/news/algolia-appoints-jean-louis-baffier-as-chief-revenue-officer-to-support-rapid-corporate-growth-and-momentum",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Algolia, Inc. Form D primary document, 301 Howard Street, Suite 300, San Francisco, CA",
+        "url": "https://www.sec.gov/Archives/edgar/data/1642852/000164285221000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Algolia - Newsroom, 'The team is headquartered in San Francisco with offices in Paris, London, New York and Atlanta.'",
+        "url": "https://www.algolia.com/about/news/algolia-appoints-jean-louis-baffier-as-chief-revenue-officer-to-support-rapid-corporate-growth-and-momentum",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Algolia, Inc. Form D primary document, San Francisco, CA",
+        "url": "https://www.sec.gov/Archives/edgar/data/1642852/000164285221000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Algolia - Newsroom, 'Founded in 2012, Algolia is backed by \$74M in funding'",
+        "url": "https://www.algolia.com/about/news/algolia-appoints-jean-louis-baffier-as-chief-revenue-officer-to-support-rapid-corporate-growth-and-momentum",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Algolia, Inc. Form D private placement filings under Regulation D; no registration statement on EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1642852/000164285221000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Algolia - Newsroom, private venture funding",
+        "url": "https://www.algolia.com/about/news/algolia-appoints-jean-louis-baffier-as-chief-revenue-officer-to-support-rapid-corporate-growth-and-momentum",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Algolia - About page (AI search and retrieval platform, APIs for developers)",
+        "url": "https://www.algolia.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Algolia - About page",
+        "url": "https://www.algolia.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "postman": {
+    "companyId": "postman",
+    "name": "Postman",
+    "legalName": "Postman, Inc.",
+    "website": "https://www.postman.com",
+    "description": "API platform used by developers to design, test, document and collaborate on APIs across the API lifecycle.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "API development and collaboration platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Postman - Legal Terms page, 'Postman, Inc.'",
+        "url": "https://www.postman.com/legal/terms/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Postman - Official Site, About Postman",
+        "url": "https://www.postman.com/company/about-postman/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Postman - About Postman, 'Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration'",
+        "url": "https://www.postman.com/company/about-postman/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Postman - About Postman, headquarters listed as One Market Plaza, 1 Market Street, Steuart Tower, Suite 0800, San Francisco, CA 94105",
+        "url": "https://www.postman.com/company/about-postman/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Postman - About Postman, headquarters in San Francisco, CA",
+        "url": "https://www.postman.com/company/about-postman/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Postman - About Postman, private Series D investment round led by Insight Partners with Coatue, Battery Ventures, BOND, CRV and Nexus Venture Partners",
+        "url": "https://www.postman.com/company/about-postman/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Postman - About Postman (API platform for building and using APIs)",
+        "url": "https://www.postman.com/company/about-postman/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Postman - About Postman",
+        "url": "https://www.postman.com/company/about-postman/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "duolingo": {
+    "companyId": "duolingo",
+    "name": "Duolingo",
+    "legalName": "Duolingo, Inc.",
+    "website": "https://www.duolingo.com",
+    "description": "Technology company that operates a mobile learning platform. Its flagship app is used to learn languages and it also offers courses in other subjects.",
+    "hqCity": "Pittsburgh",
+    "hqCountry": "United States",
+    "foundedYear": 2011,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "EdTech",
+    "subsector": "mobile language learning platform",
+    "tickers": [
+      "NASDAQ:DUOL"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Duolingo, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Duolingo, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Duolingo, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Duolingo, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Duolingo, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Duolingo, Inc. - Form 10-K FY2025, Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Duolingo - Investor Relations home page (official company domain)",
+        "url": "https://investors.duolingo.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Duolingo - Investor Relations home page (official company domain)",
+        "url": "https://investors.duolingo.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Duolingo - Investor Relations home page (official company domain)",
+        "url": "https://investors.duolingo.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Duolingo - Investor Relations home page (official company domain)",
+        "url": "https://investors.duolingo.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Duolingo, Inc. - DEF 14A proxy statement filed 2026, director biographies of Luis von Ahn and Severin Hacker (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026025728/duol-20260417.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "substack": {
+    "companyId": "substack",
+    "name": "Substack",
+    "legalName": "Substack Inc.",
+    "website": "https://substack.com",
+    "description": "Media platform on which writers and other creators publish newsletters and other content and earn from paid subscriptions.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "subscription publishing and newsletter platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Substack Inc. - Form D notice of exempt offering of securities, entityName, jurisdictionOfInc DELAWARE and yearOfInc 2017 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1783191/000178319119000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Substack Inc. - Form D notice of exempt offering of securities, entityName, jurisdictionOfInc DELAWARE and yearOfInc 2017 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1783191/000178319119000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Substack Inc. - Form D notice of exempt offering of securities, entityName, jurisdictionOfInc DELAWARE and yearOfInc 2017 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1783191/000178319119000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Substack - Privacy Policy, naming Substack Inc. and its San Francisco, California address (official site)",
+        "url": "https://substack.com/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Substack - Privacy Policy, naming Substack Inc. and its San Francisco, California address (official site)",
+        "url": "https://substack.com/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Substack - Privacy Policy, naming Substack Inc. and its San Francisco, California address (official site)",
+        "url": "https://substack.com/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Substack - About page (official site)",
+        "url": "https://substack.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Substack - About page (official site)",
+        "url": "https://substack.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Substack - About page (official site)",
+        "url": "https://substack.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Substack - About page (official site)",
+        "url": "https://substack.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Substack Inc. - EDGAR company submissions record: filings limited to Form D and Regulation Crowdfunding Forms C and C-U, no registration statement, no ticker and no exchange",
+        "url": "https://data.sec.gov/submissions/CIK0001783191.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "patreon": {
+    "companyId": "patreon",
+    "name": "Patreon",
+    "legalName": "Patreon, Inc.",
+    "website": "https://www.patreon.com",
+    "description": "Membership platform through which creators offer paid memberships to their audiences and are paid directly by their fans.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2013,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "creator membership and monetisation platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Patreon, Inc. - Form D notice of exempt offering of securities, entityName Patreon, Inc., jurisdictionOfInc DELAWARE (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1860300/000173907423000007/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Patreon, Inc. - Form D notice of exempt offering of securities, entityName Patreon, Inc., jurisdictionOfInc DELAWARE (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1860300/000173907423000007/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Patreon, Inc. - Form D, principal place of business 600 Townsend Street, Suite 500, San Francisco, CA (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1860300/000173907423000007/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Patreon, Inc. - Form D, principal place of business 600 Townsend Street, Suite 500, San Francisco, CA (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1860300/000173907423000007/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Patreon - About page (official site): Founded in May 2013 and based in San Francisco, California",
+        "url": "https://www.patreon.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Patreon - About page (official site): Founded in May 2013 and based in San Francisco, California",
+        "url": "https://www.patreon.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Patreon - About page (official site): Founded in May 2013 and based in San Francisco, California",
+        "url": "https://www.patreon.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Patreon - About page (official site): Founded in May 2013 and based in San Francisco, California",
+        "url": "https://www.patreon.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Patreon - About page (official site): Founded in May 2013 and based in San Francisco, California",
+        "url": "https://www.patreon.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Patreon - About page (official site): Founded in May 2013 and based in San Francisco, California",
+        "url": "https://www.patreon.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Patreon - About page (official site): Founded in May 2013 and based in San Francisco, California",
+        "url": "https://www.patreon.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Patreon, Inc. - EDGAR company submissions record: only Form D filings, no registration statement, no ticker and no exchange",
+        "url": "https://data.sec.gov/submissions/CIK0001860300.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "quora": {
+    "companyId": "quora",
+    "name": "Quora",
+    "legalName": "Quora, Inc.",
+    "website": "https://www.quora.com",
+    "description": "Question-and-answer internet company. It operates a site where people ask questions and write and share answers, and it also operates Poe, a consumer platform for using AI chatbots.",
+    "hqCity": "Mountain View",
+    "hqCountry": "United States",
+    "foundedYear": 2009,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "question-and-answer knowledge sharing site",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "USPTO Trademark Status and Document Retrieval - POE, serial 97719444, current owner Quora, Inc., a DELAWARE CORPORATION, 444 Castro Street, Suite 1210, Mountain View, California",
+        "url": "https://tsdr.uspto.gov/statusview/sn97719444",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "USPTO Trademark Status and Document Retrieval - POE, serial 97719444, current owner Quora, Inc., a DELAWARE CORPORATION, 444 Castro Street, Suite 1210, Mountain View, California",
+        "url": "https://tsdr.uspto.gov/statusview/sn97719444",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "USPTO Trademark Status and Document Retrieval - POE, serial 97719444, current owner Quora, Inc., a DELAWARE CORPORATION, 444 Castro Street, Suite 1210, Mountain View, California",
+        "url": "https://tsdr.uspto.gov/statusview/sn97719444",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Asana, Inc. DEF 14A proxy statement filed 2026 - director biography: Mr. D'Angelo founded Quora Inc., a question-and-answer platform, and since June 2009, has served as its Chief Executive Officer (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477720/000162828026025998/asan-20260420.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Asana, Inc. DEF 14A proxy statement filed 2026 - director biography: Mr. D'Angelo founded Quora Inc., a question-and-answer platform, and since June 2009, has served as its Chief Executive Officer (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477720/000162828026025998/asan-20260420.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Andreessen Horowitz - Investing in Quora and Poe, official investment announcement describing Quora as the creator of Poe",
+        "url": "https://a16z.com/announcement/investing-in-quora-and-poe/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Andreessen Horowitz - Investing in Quora and Poe, official investment announcement describing Quora as the creator of Poe",
+        "url": "https://a16z.com/announcement/investing-in-quora-and-poe/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Quora - official site",
+        "url": "https://www.quora.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Quora - official site",
+        "url": "https://www.quora.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Quora - official site",
+        "url": "https://www.quora.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "nextdoor": {
+    "companyId": "nextdoor",
+    "name": "Nextdoor",
+    "legalName": "Nextdoor Holdings, Inc.",
+    "website": "https://nextdoor.com",
+    "description": "Neighborhood social network. Verified neighbors, businesses, news publishers and public agencies use it for local news, real-time safety alerts, neighbor recommendations, for sale and free listings, and events.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "neighborhood social network",
+    "tickers": [
+      "NYSE:NXDR"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Nextdoor Holdings, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page: Class A common stock, trading symbol NXDR, New York Stock Exchange (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846069/000184606926000023/kind-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Nextdoor Holdings, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page: Class A common stock, trading symbol NXDR, New York Stock Exchange (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846069/000184606926000023/kind-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Nextdoor Holdings, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page: Class A common stock, trading symbol NXDR, New York Stock Exchange (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846069/000184606926000023/kind-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Nextdoor Holdings, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page: Class A common stock, trading symbol NXDR, New York Stock Exchange (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846069/000184606926000023/kind-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Nextdoor Holdings, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page: Class A common stock, trading symbol NXDR, New York Stock Exchange (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846069/000184606926000023/kind-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Nextdoor Holdings, Inc. - Form 10-K FY2025, Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846069/000184606926000023/kind-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Nextdoor Holdings, Inc. - Form 10-K FY2025, Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846069/000184606926000023/kind-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Nextdoor Holdings, Inc. - Form 10-K FY2025, Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846069/000184606926000023/kind-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Nextdoor - Fourth quarter and full year 2025 results press release dated February 18, 2026, About Nextdoor boilerplate: Nextdoor (NYSE: NXDR)",
+        "url": "https://about.nextdoor.com/press-releases/nextdoor-reportsfourth-quarter-and-full-year2025-results",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Nextdoor - Fourth quarter and full year 2025 results press release dated February 18, 2026, About Nextdoor boilerplate: Nextdoor (NYSE: NXDR)",
+        "url": "https://about.nextdoor.com/press-releases/nextdoor-reportsfourth-quarter-and-full-year2025-results",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Nextdoor - Fourth quarter and full year 2025 results press release dated February 18, 2026, About Nextdoor boilerplate: Nextdoor (NYSE: NXDR)",
+        "url": "https://about.nextdoor.com/press-releases/nextdoor-reportsfourth-quarter-and-full-year2025-results",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Nextdoor - Fourth quarter and full year 2025 results press release dated February 18, 2026, About Nextdoor boilerplate: Nextdoor (NYSE: NXDR)",
+        "url": "https://about.nextdoor.com/press-releases/nextdoor-reportsfourth-quarter-and-full-year2025-results",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Nextdoor Holdings, Inc. - Form 8-K exhibit 99.1 announcing the ticker symbol change from KIND to NXDR effective July 21, 2025 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846069/000184606925000087/exhibit991-stocktickerande.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "glossier": {
+    "companyId": "glossier",
+    "name": "Glossier",
+    "legalName": "Glossier, Inc.",
+    "website": "https://www.glossier.com",
+    "description": "Beauty and personal care company that develops and sells its own skincare and makeup products, online and through its own retail stores.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2014,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "beauty and personal care products brand",
+    "tickers": [],
+    "formerNames": [
+      "Into The Gloss, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Glossier, Inc. - Form D notice of exempt offering of securities filed 2019: entityName GLOSSIER, INC., jurisdictionOfInc DELAWARE, principal place of business 233 Spring Street, East 10th Floor, New York, NY (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1587141/000158714119000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Glossier, Inc. - Form D notice of exempt offering of securities filed 2019: entityName GLOSSIER, INC., jurisdictionOfInc DELAWARE, principal place of business 233 Spring Street, East 10th Floor, New York, NY (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1587141/000158714119000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Glossier, Inc. - Form D notice of exempt offering of securities filed 2019: entityName GLOSSIER, INC., jurisdictionOfInc DELAWARE, principal place of business 233 Spring Street, East 10th Floor, New York, NY (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1587141/000158714119000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Glossier, Inc. - Form D notice of exempt offering of securities filed 2019: entityName GLOSSIER, INC., jurisdictionOfInc DELAWARE, principal place of business 233 Spring Street, East 10th Floor, New York, NY (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1587141/000158714119000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR company submissions record for CIK 0001587141: name GLOSSIER, INC. with formerNames entry Into The Gloss, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001587141.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Into The Gloss, Inc. - Form D filed 2013 under the same EDGAR registrant CIK 0001587141 that now files as GLOSSIER, INC. (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1587141/000158714113000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Glossier - About page (official site): Before we launched Glossier in 2014, we started as Into The Gloss",
+        "url": "https://www.glossier.com/pages/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Glossier - About page (official site): Before we launched Glossier in 2014, we started as Into The Gloss",
+        "url": "https://www.glossier.com/pages/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Glossier - About page (official site): Before we launched Glossier in 2014, we started as Into The Gloss",
+        "url": "https://www.glossier.com/pages/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Glossier - About page (official site): Before we launched Glossier in 2014, we started as Into The Gloss",
+        "url": "https://www.glossier.com/pages/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Glossier - About page (official site): Before we launched Glossier in 2014, we started as Into The Gloss",
+        "url": "https://www.glossier.com/pages/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Retail Dive - Glossier lands 80M dollars in funding as it looks toward international expansion, reporting a Series E round in a privately held direct-to-consumer beauty brand selling online and through physical retail",
+        "url": "https://www.retaildive.com/news/glossier-lands-80m-in-funding-as-it-looks-toward-international-expansion/602942",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Retail Dive - Glossier lands 80M dollars in funding as it looks toward international expansion, reporting a Series E round in a privately held direct-to-consumer beauty brand selling online and through physical retail",
+        "url": "https://www.retaildive.com/news/glossier-lands-80m-in-funding-as-it-looks-toward-international-expansion/602942",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Retail Dive - Glossier lands 80M dollars in funding as it looks toward international expansion, reporting a Series E round in a privately held direct-to-consumer beauty brand selling online and through physical retail",
+        "url": "https://www.retaildive.com/news/glossier-lands-80m-in-funding-as-it-looks-toward-international-expansion/602942",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "houzz": {
+    "companyId": "houzz",
+    "name": "Houzz",
+    "legalName": "Houzz Inc.",
+    "website": "https://www.houzz.com",
+    "description": "Online platform for home remodeling and design that connects homeowners with construction and design professionals, and sells Houzz Pro project management and design software to those professionals.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": 2010,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Real Estate Tech",
+    "subsector": "home design and renovation marketplace with project management software for construction and design professionals",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Houzz Terms of Use Agreement - Official Site",
+        "url": "https://www.houzz.com/termsOfUse",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Houzz Terms of Use Agreement - Official Site",
+        "url": "https://www.houzz.com/termsOfUse",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "About Houzz - Official Site",
+        "url": "https://www.houzz.com/aboutUs",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Houzz Press Release, 15 July 2026 - About Houzz boilerplate",
+        "url": "https://www.houzz.com/press/1023/Construction-and-Design-Pros-Remain-Optimistic-About-Q3-as-Economic-Pressures-Persist-Houzz-Survey-Finds",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Houzz Terms of Use Agreement - Houzz Inc. US addresses",
+        "url": "https://www.houzz.com/termsOfUse",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "About Houzz - company timeline, 'OCTOBER 2010 Houzz officially becomes a company'",
+        "url": "https://www.houzz.com/aboutUs",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Houzz Press - company issued press releases through 2026, founders still CEO and Executive Chair",
+        "url": "https://www.houzz.com/press",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full text search - no Houzz registrant and no registration statement",
+        "url": "https://www.sec.gov/edgar/search/#/q=%22Houzz%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "About Houzz - Official Site",
+        "url": "https://www.houzz.com/aboutUs",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Houzz Press Release, 15 July 2026 - About Houzz boilerplate",
+        "url": "https://www.houzz.com/press/1023/Construction-and-Design-Pros-Remain-Optimistic-About-Q3-as-Economic-Pressures-Persist-Houzz-Survey-Finds",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "thumbtack": {
+    "companyId": "thumbtack",
+    "name": "Thumbtack",
+    "legalName": "Thumbtack, Inc.",
+    "website": "https://www.thumbtack.com",
+    "description": "Local services marketplace and mobile app through which homeowners find, compare and hire local service businesses for home repairs, routine maintenance and home improvement projects.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "local services marketplace connecting homeowners with local service professionals",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions, CIK 0001558746 - entityName 'Thumbtack, Inc.'",
+        "url": "https://data.sec.gov/submissions/CIK0001558746.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Thumbtack company press release, 30 April 2026 (Business Wire)",
+        "url": "https://www.businesswire.com/news/home/20260430186888/en/Thumbtack-Introduces-AI-Powered-Experience-to-Reinvent-How-Homeowners-Care-for-Their-Homes",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Thumbtack company press release, 30 April 2026 - About Thumbtack boilerplate",
+        "url": "https://www.businesswire.com/news/home/20260430186888/en/Thumbtack-Introduces-AI-Powered-Experience-to-Reinvent-How-Homeowners-Care-for-Their-Homes",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR submissions, CIK 0001558746 - business address San Francisco, CA",
+        "url": "https://data.sec.gov/submissions/CIK0001558746.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Thumbtack company press release, 30 April 2026 - SAN FRANCISCO dateline",
+        "url": "https://www.businesswire.com/news/home/20260430186888/en/Thumbtack-Introduces-AI-Powered-Experience-to-Reinvent-How-Homeowners-Care-for-Their-Homes",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR submissions, CIK 0001558746 - business address San Francisco, CA",
+        "url": "https://data.sec.gov/submissions/CIK0001558746.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full text search - Thumbtack, Inc. files only Form D exempt offering notices, no registration statement, no exchange listing",
+        "url": "https://www.sec.gov/edgar/search/#/q=%22Thumbtack%22&forms=D",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Thumbtack company press release, 15 June 2021 - private growth round, named venture investors",
+        "url": "https://www.businesswire.com/news/home/20210615005731/en/Thumbtack-Secures-275-Million-Investment-at-3.2-Billion-Valuation",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Thumbtack company press release, 30 April 2026 - company operating",
+        "url": "https://www.businesswire.com/news/home/20260430186888/en/Thumbtack-Introduces-AI-Powered-Experience-to-Reinvent-How-Homeowners-Care-for-Their-Homes",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Thumbtack company press release, 30 April 2026 - About Thumbtack boilerplate",
+        "url": "https://www.businesswire.com/news/home/20260430186888/en/Thumbtack-Introduces-AI-Powered-Experience-to-Reinvent-How-Homeowners-Care-for-Their-Homes",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Thumbtack company press release, 30 April 2026 - About Thumbtack boilerplate",
+        "url": "https://www.businesswire.com/news/home/20260430186888/en/Thumbtack-Introduces-AI-Powered-Experience-to-Reinvent-How-Homeowners-Care-for-Their-Homes",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "taskrabbit": {
+    "companyId": "taskrabbit",
+    "name": "TaskRabbit",
+    "legalName": "TaskRabbit, Inc.",
+    "website": "https://www.taskrabbit.com",
+    "description": "Online and mobile marketplace that connects customers with independent local workers, called Taskers, for everyday jobs such as furniture assembly, mounting, moving help and handyman work.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2008,
+    "status": "acquired",
+    "statusDetail": "Acquired in 2017 by Ingka Group, the IKEA retail group named IKEA Group at the time of the deal and described in the acquirer's own announcement as 'IKEA Group (Ingka Holding B.V. and its controlled entities)'. This is the IKEA retailer and franchisee, not the IKEA brand owner and franchisor Inter IKEA Systems B.V. TaskRabbit continues to operate as a standalone company within Ingka Group.",
+    "sector": "Consumer",
+    "subsector": "on demand local services and household task marketplace",
+    "tickers": [],
+    "formerNames": [
+      "RunMyErrand"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Taskrabbit Global Privacy Policy - Official Support Site",
+        "url": "https://support.taskrabbit.com/hc/en-us/articles/46260411318427-Taskrabbit-Global-Privacy-Policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Taskrabbit Press Release, 13 February 2025 - Official Site",
+        "url": "https://www.taskrabbit.com/press/release/taskrabbit-scales-partnership-with-ikea-across-north-america-and-europe",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Taskrabbit Press Release, 13 February 2025 - About Taskrabbit boilerplate",
+        "url": "https://www.taskrabbit.com/press/release/taskrabbit-scales-partnership-with-ikea-across-north-america-and-europe",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "About Taskrabbit - Official Site",
+        "url": "https://www.taskrabbit.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Taskrabbit Press Release, 13 February 2025 - SAN FRANCISCO dateline",
+        "url": "https://www.taskrabbit.com/press/release/taskrabbit-scales-partnership-with-ikea-across-north-america-and-europe",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Ingka Group Newsroom - Taskrabbit headquartered in San Francisco",
+        "url": "https://www.ingka.com/newsroom/taskrabbit-name-ania-smith-as-new-ceo/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Taskrabbit Press Release, 13 February 2025 - SAN FRANCISCO dateline",
+        "url": "https://www.taskrabbit.com/press/release/taskrabbit-scales-partnership-with-ikea-across-north-america-and-europe",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Taskrabbit 15th Anniversary - Official Blog, 'Taskrabbit's story started in the city of Boston in 2008'",
+        "url": "https://www.taskrabbit.com/blog/taskrabbits-15th-anniversary/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "IKEA Group signs agreement to acquire TaskRabbit - acquirer announcement, 28 September 2017",
+        "url": "https://www.prnewswire.com/news-releases/ikea-group-signs-agreement-to-acquire-taskrabbit-300527686.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Ingka Group - 'During 2017, Ingka Group acquired TaskRabbit'",
+        "url": "https://www.ingka.com/stories/the-win-win-of-taskrabbit/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Taskrabbit Press Release, 13 February 2025 - 'Acquired by the Ingka Group (IKEA) in 2017'",
+        "url": "https://www.taskrabbit.com/press/release/taskrabbit-scales-partnership-with-ikea-across-north-america-and-europe",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "IKEA Group signs agreement to acquire TaskRabbit - acquirer announcement naming 'IKEA Group (Ingka Holding B.V. and its controlled entities)'",
+        "url": "https://www.prnewswire.com/news-releases/ikea-group-signs-agreement-to-acquire-taskrabbit-300527686.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Ingka Group - 'During 2017, Ingka Group acquired TaskRabbit'",
+        "url": "https://www.ingka.com/stories/the-win-win-of-taskrabbit/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Taskrabbit Press Release, 13 February 2025 - acquired by Ingka Group in 2017, operating across eight countries",
+        "url": "https://www.taskrabbit.com/press/release/taskrabbit-scales-partnership-with-ikea-across-north-america-and-europe",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Taskrabbit 15th Anniversary - Official Blog, 'Taskrabbit was initially known as RunMyErrand'",
+        "url": "https://www.taskrabbit.com/blog/taskrabbits-15th-anniversary/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "About Taskrabbit - Official Site",
+        "url": "https://www.taskrabbit.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Taskrabbit Press Release, 13 February 2025 - About Taskrabbit boilerplate",
+        "url": "https://www.taskrabbit.com/press/release/taskrabbit-scales-partnership-with-ikea-across-north-america-and-europe",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "peloton": {
+    "companyId": "peloton",
+    "name": "Peloton",
+    "legalName": "Peloton Interactive, Inc.",
+    "website": "https://www.onepeloton.com",
+    "description": "Connected fitness and wellness company that sells stationary bikes, treadmills, rowers and related equipment and accessories, and sells subscriptions to live and on demand fitness classes delivered through its hardware and apps.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "connected fitness equipment and fitness content subscriptions",
+    "tickers": [
+      "NASDAQ:PTON"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Peloton Interactive, Inc. Form 10-K for fiscal year ended 30 June 2026 - cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000038/pton-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions, CIK 0001639825",
+        "url": "https://data.sec.gov/submissions/CIK0001639825.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Peloton Company page - Official Site",
+        "url": "https://www.onepeloton.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Peloton Interactive, Inc. Form 10-K for fiscal year ended 30 June 2026 - Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000038/pton-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Peloton Company page - Official Site",
+        "url": "https://www.onepeloton.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Peloton Interactive, Inc. Form 10-K FY2026 - principal executive offices, 441 Ninth Avenue, New York",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000038/pton-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Peloton Interactive, Inc. Form 10-K FY2026 - principal executive offices, New York",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000038/pton-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Peloton Interactive, Inc. Form 10-K FY2026 - 'Founded in 2012 and headquartered in New York City'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000038/pton-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Peloton Company page - Official Site",
+        "url": "https://www.onepeloton.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Peloton Interactive, Inc. Form 10-K FY2026 - securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000038/pton-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions, CIK 0001639825 - exchange Nasdaq, ticker PTON",
+        "url": "https://data.sec.gov/submissions/CIK0001639825.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Peloton Interactive, Inc. Form 10-K FY2026 - Class A common stock, trading symbol PTON, The Nasdaq Stock Market LLC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000038/pton-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Peloton Interactive, Inc. Form 8-K filed 6 August 2026 - cover page, PTON on The Nasdaq Stock Market LLC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000032/pton-20260806.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Peloton Interactive, Inc. Form 10-K FY2026 - Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000038/pton-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Peloton Interactive, Inc. Form 10-K FY2026 - Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982526000038/pton-20260630.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "freenome": {
+    "companyId": "freenome",
+    "name": "Freenome",
+    "legalName": "Freenome, Inc.",
+    "website": "https://www.freenome.com",
+    "description": "Biotechnology company developing and commercializing blood based tests for early cancer detection, combining multiomics assays with machine learning. Its SimpleScreen CRC test is for colorectal cancer screening and it operates a CLIA certified clinical laboratory.",
+    "hqCity": "Brisbane",
+    "hqCountry": "United States",
+    "foundedYear": 2014,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Diagnostics",
+    "subsector": "blood based multiomics tests for early cancer detection",
+    "tickers": [
+      "NASDAQ:FRNM"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions, CIK 0002017526 - entityName 'Freenome, Inc.'",
+        "url": "https://data.sec.gov/submissions/CIK0002017526.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Freenome Investor FAQs - Official Investor Relations",
+        "url": "https://investors.freenome.com/shareholder-services/investor-faqs",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Freenome - Official Site",
+        "url": "https://www.freenome.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Our Company - Freenome Official Site",
+        "url": "https://www.freenome.com/our-company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Freenome Debuts as a Publicly Traded Company - company press release, 20 July 2026",
+        "url": "https://investors.freenome.com/news-releases/news-release-details/freenome-debuts-publicly-traded-company-focused-blood-based",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Freenome Investor FAQs - 3300 Marina Boulevard, Brisbane, CA 94005",
+        "url": "https://investors.freenome.com/shareholder-services/investor-faqs",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR submissions, CIK 0002017526 - business address Brisbane, CA",
+        "url": "https://data.sec.gov/submissions/CIK0002017526.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR submissions, CIK 0002017526 - business address Brisbane, CA",
+        "url": "https://data.sec.gov/submissions/CIK0002017526.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Our Company - Freenome Official Site, 'Since 2014, Freenome has had a clear vision'",
+        "url": "https://www.freenome.com/our-company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Freenome Debuts as a Publicly Traded Company - company press release, 20 July 2026",
+        "url": "https://investors.freenome.com/news-releases/news-release-details/freenome-debuts-publicly-traded-company-focused-blood-based",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions, CIK 0002017526 - exchange Nasdaq, ticker FRNM",
+        "url": "https://data.sec.gov/submissions/CIK0002017526.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions, CIK 0002017526 - ticker FRNM, exchange Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0002017526.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Nasdaq listing page for FRNM, Freenome, Inc.",
+        "url": "https://www.nasdaq.com/market-activity/stocks/frnm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Freenome Investor FAQs - Nasdaq, ticker FRNM",
+        "url": "https://investors.freenome.com/shareholder-services/investor-faqs",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Our Company - Freenome Official Site",
+        "url": "https://www.freenome.com/our-company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Our Company - Freenome Official Site",
+        "url": "https://www.freenome.com/our-company/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "flatironhealth": {
+    "companyId": "flatironhealth",
+    "name": "Flatiron Health",
+    "legalName": "Flatiron Health, Inc.",
+    "website": "https://flatiron.com",
+    "description": "Healthcare technology company that provides oncology specific electronic health record software to cancer care providers and curates real world oncology data used in research by life sciences companies and regulators.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "acquired",
+    "statusDetail": "Acquired by Roche in 2018. Roche already held a 12.6 percent minority stake, announced on 15 February 2018 that it would acquire the remaining shares, and completed the acquisition on 6 April 2018. Roche's own announcements name the acquirer only as 'Roche' and do not identify a specific Roche legal entity. Flatiron Health continues to operate as an independent affiliate of the Roche Group.",
+    "sector": "Digital Health",
+    "subsector": "oncology electronic health record software and real world oncology data",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Flatiron Health Website Privacy Notice, effective 5 May 2026 - 'Flatiron Health, Inc.'",
+        "url": "https://flatironhealth.legal/hubfs/legal/5526%20-%20Final%20-%20Website%20Privacy%20Notice.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Flatiron Health - Official Site",
+        "url": "https://flatiron.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "About - Flatiron Health Official Site",
+        "url": "https://flatiron.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Roche to acquire Flatiron Health - Roche media release, 15 February 2018",
+        "url": "https://www.roche.com/media/releases/med-cor-2018-02-15",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Flatiron Health Website Privacy Notice - 233 Spring Street, New York, NY 10013",
+        "url": "https://flatironhealth.legal/hubfs/legal/5526%20-%20Final%20-%20Website%20Privacy%20Notice.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Roche to acquire Flatiron Health - Roche media release, 'headquartered in New York City, US'",
+        "url": "https://www.roche.com/media/releases/med-cor-2018-02-15",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Flatiron Health Website Privacy Notice - 233 Spring Street, New York, NY 10013",
+        "url": "https://flatironhealth.legal/hubfs/legal/5526%20-%20Final%20-%20Website%20Privacy%20Notice.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "About - Flatiron Health Official Site, 'Flatiron Health was founded in 2012'",
+        "url": "https://flatiron.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Roche completes acquisition of Flatiron Health - Roche media release, 6 April 2018",
+        "url": "https://assets.roche.com/f/176343/a09bf4f01b/20180406-mr-flatiron-closure_en.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "About - Flatiron Health Official Site, 'Since becoming an independent affiliate of the Roche Group in 2018'",
+        "url": "https://flatiron.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Roche completes acquisition of Flatiron Health - Roche media release, 6 April 2018",
+        "url": "https://assets.roche.com/f/176343/a09bf4f01b/20180406-mr-flatiron-closure_en.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Roche to acquire Flatiron Health - Roche media release, 15 February 2018, existing 12.6 percent equity position",
+        "url": "https://www.roche.com/media/releases/med-cor-2018-02-15",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "About - Flatiron Health Official Site, independent affiliate of the Roche Group since 2018",
+        "url": "https://flatiron.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "About - Flatiron Health Official Site",
+        "url": "https://flatiron.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Roche to acquire Flatiron Health - Roche media release, 15 February 2018",
+        "url": "https://www.roche.com/media/releases/med-cor-2018-02-15",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "livongo": {
+    "companyId": "livongo",
+    "name": "Livongo",
+    "legalName": "Livongo Health, Inc.",
+    "website": null,
+    "description": "Digital health company providing technology-enabled management of chronic conditions including diabetes and hypertension, combining connected devices, data and coaching.",
+    "hqCity": "Mountain View",
+    "hqCountry": "United States",
+    "foundedYear": 2008,
+    "status": "acquired",
+    "statusDetail": "Acquired by Teladoc Health in 2020",
+    "sector": "Digital Health",
+    "subsector": "chronic condition management",
+    "tickers": [],
+    "formerNames": [
+      "EosHealth, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Livongo Health, Inc. - Form 10-K for fiscal year 2019 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639225/000162828020003960/lvgo-20191231x10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Livongo Health, Inc. - Form 10-K for fiscal year 2019 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639225/000162828020003960/lvgo-20191231x10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Livongo Health, Inc. - Form 10-K for fiscal year 2019 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639225/000162828020003960/lvgo-20191231x10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Livongo Health, Inc. - Form 10-K for fiscal year 2019 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639225/000162828020003960/lvgo-20191231x10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Livongo Health, Inc. - Form 10-K for fiscal year 2019 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639225/000162828020003960/lvgo-20191231x10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Livongo Health, Inc. - Form 10-K for fiscal year 2019 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639225/000162828020003960/lvgo-20191231x10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Livongo Health, Inc. - Form 10-K for fiscal year 2019 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639225/000162828020003960/lvgo-20191231x10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Livongo Health, Inc. - Form 10-K for fiscal year 2019 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639225/000162828020003960/lvgo-20191231x10k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Livongo Health, Inc. - Form 8-K, Item 2.01 Completion of Acquisition, event date October 30, 2020 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639225/000110465920119767/tm2034497-3_8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Livongo Health, Inc. - Form 8-K, Item 2.01 Completion of Acquisition, event date October 30, 2020 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1639225/000110465920119767/tm2034497-3_8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Teladoc Health Completes Merger with Livongo - press release filed as Exhibit 99.1 to Teladoc Form 8-K (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477449/000110465920119769/tm2026658d62_ex99-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Teladoc Health Completes Merger with Livongo - press release filed as Exhibit 99.1 to Teladoc Form 8-K (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477449/000110465920119769/tm2026658d62_ex99-1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR entity submissions - Livongo Health, Inc., CIK 0001639225",
+        "url": "https://data.sec.gov/submissions/CIK0001639225.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR entity submissions - Livongo Health, Inc., CIK 0001639225",
+        "url": "https://data.sec.gov/submissions/CIK0001639225.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR entity submissions - Livongo Health, Inc., CIK 0001639225",
+        "url": "https://data.sec.gov/submissions/CIK0001639225.json",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "onemedical": {
+    "companyId": "onemedical",
+    "name": "One Medical",
+    "legalName": "1Life Healthcare, Inc.",
+    "website": "https://www.onemedical.com",
+    "description": "Membership-based primary care provider combining in-office primary care with digital health services.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2002,
+    "status": "acquired",
+    "statusDetail": "Acquired by Amazon in 2023",
+    "sector": "Healthcare",
+    "subsector": "membership-based primary care",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "1Life Healthcare, Inc. - Form 8-K, Item 2.01 Completion of Acquisition, event date February 22, 2023 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404123/000119312523044883/d468299d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "1Life Healthcare, Inc. - Form 8-K, Item 2.01 Completion of Acquisition, event date February 22, 2023 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404123/000119312523044883/d468299d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "1Life Healthcare, Inc. - Form 8-K, Item 2.01 Completion of Acquisition, event date February 22, 2023 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404123/000119312523044883/d468299d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Amazon - One Medical joins Amazon, February 22, 2023 (official Amazon newsroom)",
+        "url": "https://www.aboutamazon.com/news/company-news/one-medical-joins-amazon-to-make-it-easier-for-people-to-get-and-stay-healthier",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Amazon - One Medical joins Amazon, February 22, 2023 (official Amazon newsroom)",
+        "url": "https://www.aboutamazon.com/news/company-news/one-medical-joins-amazon-to-make-it-easier-for-people-to-get-and-stay-healthier",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "1Life Healthcare, Inc. - Form 10-K for fiscal year 2022 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404123/000140412323000016/onem-20221231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "1Life Healthcare, Inc. - Form 10-K for fiscal year 2022 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404123/000140412323000016/onem-20221231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "1Life Healthcare, Inc. - Form 10-K for fiscal year 2022 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404123/000140412323000016/onem-20221231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "1Life Healthcare, Inc. - Form 10-K for fiscal year 2022 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404123/000140412323000016/onem-20221231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "1Life Healthcare, Inc. - Form 10-K for fiscal year 2022 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404123/000140412323000016/onem-20221231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "1Life Healthcare, Inc. - Form 10-K for fiscal year 2022 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404123/000140412323000016/onem-20221231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "1Life Healthcare, Inc. - Form 10-K for fiscal year 2022 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1404123/000140412323000016/onem-20221231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "One Medical - official site, footer copyright 1Life Healthcare, Inc.",
+        "url": "https://www.onemedical.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "One Medical - official site, footer copyright 1Life Healthcare, Inc.",
+        "url": "https://www.onemedical.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "One Medical - official site, footer copyright 1Life Healthcare, Inc.",
+        "url": "https://www.onemedical.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "grail": {
+    "companyId": "grail",
+    "name": "GRAIL",
+    "legalName": "GRAIL, Inc.",
+    "website": "https://grail.com",
+    "description": "Healthcare company developing blood-based multi-cancer early detection tests, including the Galleri test.",
+    "hqCity": "Menlo Park",
+    "hqCountry": "United States",
+    "foundedYear": 2016,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Diagnostics",
+    "subsector": "multi-cancer early detection blood tests",
+    "tickers": [
+      "NASDAQ:GRAL"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "GRAIL, Inc. - Form 10-K for fiscal year 2025, cover page and Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1699031/000162828026017319/gral-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "GRAIL, Inc. - Form 10-K for fiscal year 2025, cover page and Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1699031/000162828026017319/gral-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "GRAIL, Inc. - Form 10-K for fiscal year 2025, cover page and Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1699031/000162828026017319/gral-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "GRAIL, Inc. - Form 10-K for fiscal year 2025, cover page and Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1699031/000162828026017319/gral-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "GRAIL, Inc. - Form 10-K for fiscal year 2025, cover page and Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1699031/000162828026017319/gral-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "GRAIL, Inc. - Form 10-K for fiscal year 2025, cover page and Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1699031/000162828026017319/gral-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "GRAIL, Inc. - Form 10-K for fiscal year 2025, cover page and Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1699031/000162828026017319/gral-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "GRAIL, Inc. - Form 10-K for fiscal year 2025, cover page and Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1699031/000162828026017319/gral-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "GRAIL, Inc. - Form 10-K for fiscal year 2025, cover page and Item 1 Business (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1699031/000162828026017319/gral-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR entity submissions - GRAIL, Inc., CIK 0001699031, ticker GRAL, exchange Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001699031.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR entity submissions - GRAIL, Inc., CIK 0001699031, ticker GRAL, exchange Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001699031.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR entity submissions - GRAIL, Inc., CIK 0001699031, ticker GRAL, exchange Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001699031.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR entity submissions - GRAIL, Inc., CIK 0001699031, ticker GRAL, exchange Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001699031.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR entity submissions - GRAIL, Inc., CIK 0001699031, ticker GRAL, exchange Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001699031.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "GRAIL - official site",
+        "url": "https://grail.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "GRAIL - official site",
+        "url": "https://grail.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Illumina completes the divestiture of GRAIL, June 24, 2024 (Illumina official press release)",
+        "url": "https://www.prnewswire.com/news-releases/illumina-completes-the-divestiture-of-grail-302180656.html",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "benchling": {
+    "companyId": "benchling",
+    "name": "Benchling",
+    "legalName": "Benchling, Inc.",
+    "website": "https://www.benchling.com",
+    "description": "Cloud-based software platform for life sciences research and development, used for scientific data management, collaboration and analysis.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "life sciences R&D cloud software",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Benchling - official site",
+        "url": "https://www.benchling.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Benchling - official site",
+        "url": "https://www.benchling.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Benchling - official site",
+        "url": "https://www.benchling.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Benchling - official site",
+        "url": "https://www.benchling.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Benchling - official site",
+        "url": "https://www.benchling.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Benchling - official site",
+        "url": "https://www.benchling.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Benchling - official About page",
+        "url": "https://www.benchling.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Benchling - official About page",
+        "url": "https://www.benchling.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Benchling - official About page",
+        "url": "https://www.benchling.com/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Benchling, Inc. - Form D, filed 2016-10-13, states jurisdiction Delaware and year of incorporation 2012 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1687403/000168740316000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Benchling, Inc. - Form D, filed 2016-10-13, states jurisdiction Delaware and year of incorporation 2012 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1687403/000168740316000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Benchling, Inc. - Form D, filed 2016-10-13, states jurisdiction Delaware and year of incorporation 2012 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1687403/000168740316000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR entity submissions - Benchling, Inc., CIK 0001687403, no registration statement and no ticker on file",
+        "url": "https://data.sec.gov/submissions/CIK0001687403.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR entity submissions - Benchling, Inc., CIK 0001687403, no registration statement and no ticker on file",
+        "url": "https://data.sec.gov/submissions/CIK0001687403.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Benchling - Series F private financing announcement (official company newsroom)",
+        "url": "https://www.benchling.com/news/benchling-raises-100m-in-series-f-financing-co-led-by-altimeter-and-franklin-templeton",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "generatebiomedicines": {
+    "companyId": "generatebiomedicines",
+    "name": "Generate:Biomedicines",
+    "legalName": "Generate Biomedicines, Inc.",
+    "website": "https://generatebiomedicines.com",
+    "description": "Clinical-stage generative biology company applying machine learning to design and develop protein therapeutics.",
+    "hqCity": "Somerville",
+    "hqCountry": "United States",
+    "foundedYear": 2018,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Biotech",
+    "subsector": "generative protein therapeutics",
+    "tickers": [
+      "NASDAQ:GENB"
+    ],
+    "formerNames": [
+      "Flagship VL56, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Generate Biomedicines, Inc. - Form S-1 registration statement, Corporate Information (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526037799/ck0002100782-20260204.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Generate Biomedicines, Inc. - Form S-1 registration statement, Corporate Information (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526037799/ck0002100782-20260204.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Generate Biomedicines, Inc. - Form S-1 registration statement, Corporate Information (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526037799/ck0002100782-20260204.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Generate Biomedicines, Inc. - Form S-1 registration statement, Corporate Information (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526037799/ck0002100782-20260204.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Generate Biomedicines, Inc. - Form S-1 registration statement, Corporate Information (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526037799/ck0002100782-20260204.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Generate Biomedicines, Inc. - Form S-1 registration statement, Corporate Information (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526037799/ck0002100782-20260204.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Generate Biomedicines, Inc. - Form 10-Q cover page, trading symbol GENB, Nasdaq (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526336437/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Generate Biomedicines, Inc. - Form 10-Q cover page, trading symbol GENB, Nasdaq (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526336437/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Generate Biomedicines, Inc. - Form 10-Q cover page, trading symbol GENB, Nasdaq (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526336437/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Generate Biomedicines, Inc. - Form 10-Q cover page, trading symbol GENB, Nasdaq (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526336437/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Generate Biomedicines, Inc. - Form 10-Q cover page, trading symbol GENB, Nasdaq (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526336437/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR entity submissions - Generate Biomedicines, Inc., CIK 0002100782, ticker GENB, exchange Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0002100782.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR entity submissions - Generate Biomedicines, Inc., CIK 0002100782, ticker GENB, exchange Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0002100782.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Generate:Biomedicines - official site",
+        "url": "https://generatebiomedicines.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Generate:Biomedicines - official site",
+        "url": "https://generatebiomedicines.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Generate Biomedicines, Inc. - Form 10-Q for quarter ended June 30, 2026, Note 1 Organization and IPO closing (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526336437/ck0002100782-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Generate Biomedicines, Inc. - Form 10-Q for quarter ended June 30, 2026, Note 1 Organization and IPO closing (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526336437/ck0002100782-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Generate Biomedicines, Inc. - Form 10-Q for quarter ended June 30, 2026, Note 1 Organization and IPO closing (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526336437/ck0002100782-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Generate Biomedicines, Inc. - Form 10-Q for quarter ended June 30, 2026, Note 1 Organization and IPO closing (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526336437/ck0002100782-20260630.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "eikontherapeutics": {
+    "companyId": "eikontherapeutics",
+    "name": "Eikon Therapeutics",
+    "legalName": "Eikon Therapeutics, Inc.",
+    "website": "https://www.eikontx.com",
+    "description": "Clinical-stage biopharmaceutical company developing medicines, initially in oncology, using a proprietary single molecule tracking imaging platform for drug discovery.",
+    "hqCity": "Millbrae",
+    "hqCountry": "United States",
+    "foundedYear": 2019,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Biotech",
+    "subsector": "oncology drug discovery and development",
+    "tickers": [
+      "NASDAQ:EIKN"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Eikon Therapeutics, Inc. - Form 10-Q cover page, trading symbol EIKN, Nasdaq (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526349185/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Eikon Therapeutics, Inc. - Form 10-Q cover page, trading symbol EIKN, Nasdaq (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526349185/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Eikon Therapeutics, Inc. - Form 10-Q cover page, trading symbol EIKN, Nasdaq (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526349185/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Eikon Therapeutics, Inc. - Form 10-Q cover page, trading symbol EIKN, Nasdaq (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526349185/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Eikon Therapeutics, Inc. - Form 10-Q cover page, trading symbol EIKN, Nasdaq (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526349185/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR entity submissions - Eikon Therapeutics, Inc., CIK 0001861123, ticker EIKN, exchange Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001861123.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR entity submissions - Eikon Therapeutics, Inc., CIK 0001861123, ticker EIKN, exchange Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001861123.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR entity submissions - Eikon Therapeutics, Inc., CIK 0001861123, ticker EIKN, exchange Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001861123.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Eikon Therapeutics, Inc. - Form 10-Q for quarter ended June 30, 2026, Note 1 Organization, incorporated in Delaware on July 9, 2019, IPO closed February 6, 2026 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526349185/eikn-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Eikon Therapeutics, Inc. - Form 10-Q for quarter ended June 30, 2026, Note 1 Organization, incorporated in Delaware on July 9, 2019, IPO closed February 6, 2026 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526349185/eikn-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Eikon Therapeutics, Inc. - Form 10-Q for quarter ended June 30, 2026, Note 1 Organization, incorporated in Delaware on July 9, 2019, IPO closed February 6, 2026 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526349185/eikn-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Eikon Therapeutics Announces Pricing of Upsized Initial Public Offering, February 4, 2026 (Eikon investor relations)",
+        "url": "https://investors.eikontx.com/news-releases/news-release-details/eikon-therapeutics-announces-pricing-upsized-initial-public",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Eikon Therapeutics Announces Pricing of Upsized Initial Public Offering, February 4, 2026 (Eikon investor relations)",
+        "url": "https://investors.eikontx.com/news-releases/news-release-details/eikon-therapeutics-announces-pricing-upsized-initial-public",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Eikon Therapeutics Announces Pricing of Upsized Initial Public Offering, February 4, 2026 (Eikon investor relations)",
+        "url": "https://investors.eikontx.com/news-releases/news-release-details/eikon-therapeutics-announces-pricing-upsized-initial-public",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Eikon Therapeutics Announces Pricing of Upsized Initial Public Offering, February 4, 2026 (Eikon investor relations)",
+        "url": "https://investors.eikontx.com/news-releases/news-release-details/eikon-therapeutics-announces-pricing-upsized-initial-public",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Eikon Therapeutics Announces Pricing of Upsized Initial Public Offering, February 4, 2026 (Eikon investor relations)",
+        "url": "https://investors.eikontx.com/news-releases/news-release-details/eikon-therapeutics-announces-pricing-upsized-initial-public",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Eikon Therapeutics Announces Pricing of Upsized Initial Public Offering, February 4, 2026 (Eikon investor relations)",
+        "url": "https://investors.eikontx.com/news-releases/news-release-details/eikon-therapeutics-announces-pricing-upsized-initial-public",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Eikon Therapeutics Announces Pricing of Upsized Initial Public Offering, February 4, 2026 (Eikon investor relations)",
+        "url": "https://investors.eikontx.com/news-releases/news-release-details/eikon-therapeutics-announces-pricing-upsized-initial-public",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Eikon Therapeutics - official site",
+        "url": "https://www.eikontx.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Eikon Therapeutics - official About Us page",
+        "url": "https://www.eikontx.com/about-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Eikon Therapeutics - official About Us page",
+        "url": "https://www.eikontx.com/about-us/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Eikon Therapeutics - official About Us page",
+        "url": "https://www.eikontx.com/about-us/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "insilicomedicine": {
+    "companyId": "insilicomedicine",
+    "name": "Insilico Medicine",
+    "legalName": "InSilico Medicine Cayman TopCo",
+    "website": "https://insilico.com/",
+    "description": "Clinical-stage biotechnology company that applies generative artificial intelligence and laboratory automation to drug discovery and development, and licenses its Pharma.AI software platforms.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": 2014,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Biotech",
+    "subsector": "AI-driven drug discovery and development",
+    "tickers": [
+      "HKEX:3696"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "HKEXnews - InSilico Medicine Cayman TopCo, annual results announcement cover",
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0329/2026032900703.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "HKEXnews - InSilico Medicine Cayman TopCo, listing document / prospectus",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1230/sehk25111100352.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Insilico Medicine - official site",
+        "url": "https://insilico.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "HKEXnews - InSilico Medicine Cayman TopCo, annual results announcement, principal activity",
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0329/2026032900703.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Insilico Medicine - official site",
+        "url": "https://insilico.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Insilico Medicine - official newsroom, Hong Kong listing announcement",
+        "url": "https://insilico.com/news/p010170up1-insilico-medicine-lists-on-hong-kong-sto",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Insilico Medicine - official newsroom, Hong Kong listing announcement",
+        "url": "https://insilico.com/news/p010170up1-insilico-medicine-lists-on-hong-kong-sto",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "HKEXnews - InSilico Medicine Cayman TopCo, annual results announcement, stock code 3696",
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0329/2026032900703.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "HKEX - equities quote page for stock code 3696, INSILICO MEDICINE CAYMAN TOPCO",
+        "url": "https://www.hkex.com.hk/Market-Data/Securities-Prices/Equities/Equities-Quote?sym=3696&sc_lang=en",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "HKEXnews - InSilico Medicine Cayman TopCo, annual results announcement, stock code 3696",
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0329/2026032900703.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Insilico Medicine - official newsroom, listed on Main Board under stock code 03696.HK",
+        "url": "https://insilico.com/news/p010170up1-insilico-medicine-lists-on-hong-kong-sto",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "HKEXnews - InSilico Medicine Cayman TopCo, annual results announcement, principal activity",
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0329/2026032900703.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "HKEXnews - InSilico Medicine Cayman TopCo, annual results announcement, principal activity",
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0329/2026032900703.pdf",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "climeworks": {
+    "companyId": "climeworks",
+    "name": "Climeworks",
+    "legalName": "Climeworks AG",
+    "website": "https://climeworks.com/",
+    "description": "Direct air capture company that removes carbon dioxide from ambient air and supplies carbon removal services and portfolios to corporate and institutional buyers.",
+    "hqCity": "Opfikon",
+    "hqCountry": "Switzerland",
+    "foundedYear": 2009,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Climate & Energy",
+    "subsector": "direct air capture and carbon removal",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Climeworks - official contact page, legal entity and commercial register number CHE-115.234.406",
+        "url": "https://climeworks.com/contact",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Climeworks - official website privacy policy, data controller entity",
+        "url": "https://climeworks.com/website-privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Climeworks - official site",
+        "url": "https://climeworks.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Climeworks - official site",
+        "url": "https://climeworks.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Climeworks - official contact page, headquarters address Thurgauerstrasse 132, 8152 Glattpark (Opfikon)",
+        "url": "https://climeworks.com/contact",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Climeworks - official contact page, headquarters address in Switzerland",
+        "url": "https://climeworks.com/contact",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Climeworks - official company journey timeline, 2009 founding entry",
+        "url": "https://climeworks.com/journey",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Climeworks - official press release, USD 162 million private equity funding round from BigPoint Holding, Partners Group and existing investors",
+        "url": "https://climeworks.com/press-release/climeworks-raises-usd-162m-to-scale-up-technology",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Climeworks - official press release, CHF 600 million private equity round",
+        "url": "https://climeworks.com/news/equity-fundraising",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Climeworks - official site, direct air capture and carbon removal business divisions",
+        "url": "https://climeworks.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Climeworks - official site, direct air capture and carbon removal business divisions",
+        "url": "https://climeworks.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "twelve": {
+    "companyId": "twelve",
+    "name": "Twelve",
+    "legalName": "Twelve Benefit Corporation",
+    "website": "https://www.twelve.co/",
+    "description": "Carbon transformation company that uses CO2 electrolysis to convert carbon dioxide, water and electricity into hydrocarbons, including sustainable aviation fuel, naphtha and other chemicals.",
+    "hqCity": "Berkeley",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Climate & Energy",
+    "subsector": "CO2 electrolysis for sustainable aviation fuel and e-chemicals",
+    "tickers": [],
+    "formerNames": [
+      "Opus 12",
+      "Opus 12 Incorporated"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Twelve - official site footer, Twelve Benefit Corporation",
+        "url": "https://www.twelve.co/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "USPTO patent assignment legal events for US11512403B2 / US20190226103A1, change of name to TWELVE BENEFIT CORPORATION",
+        "url": "https://patents.google.com/patent/US20190226103A1/en",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Twelve - official site",
+        "url": "https://www.twelve.co/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Twelve - official site, AirPlant Power-to-X hydrocarbon platform and E-Jet SAF",
+        "url": "https://www.twelve.co/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "United Airlines and Twelve - joint press release, About Twelve boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/air-to-jet-fuel-united-announces-investment-in-power-to-liquid-fuels-company-twelve-302446496.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Twelve - official press release dateline BERKELEY, CA",
+        "url": "https://www.twelve.co/post/twelve-announces-645-million-in-funding-led-by-tpg-to-transform-co2-in-jet-fuel-and-e-chemicals-a-s",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Twelve - official press release dateline BERKELEY, CA",
+        "url": "https://www.twelve.co/post/twelve-announces-645-million-in-funding-led-by-tpg-to-transform-co2-in-jet-fuel-and-e-chemicals-a-s",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Twelve - official press release, USD 645 million private funding round led by TPG",
+        "url": "https://www.twelve.co/post/twelve-announces-645-million-in-funding-led-by-tpg-to-transform-co2-in-jet-fuel-and-e-chemicals-a-s",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR full-text search - no registration statement or reporting registrant for Twelve Benefit Corporation",
+        "url": "https://efts.sec.gov/LATEST/search-index?q=%22Twelve+Benefit+Corporation%22",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Twelve - company account announcement of the rename, Formerly Opus 12",
+        "url": "https://medium.com/@twelve_CO2/the-element-of-change-is-in-the-air-d0248aebbaee",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "USPTO patent assignment legal events, CHANGE OF NAME assignor Opus 12 Incorporated to TWELVE BENEFIT CORPORATION recorded 2022-05-13",
+        "url": "https://patents.google.com/patent/US20190226103A1/en",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Chemical & Engineering News - Opus 12 raises money, changes name to Twelve",
+        "url": "https://cen.acs.org/environment/greenhouse-gases/Opus-12-raises-money-changes/99/i26",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Twelve - official site, Power-to-X hydrocarbon platform turning CO2, water and electricity into fuels and chemicals",
+        "url": "https://www.twelve.co/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Twelve - official site, E-Jet SAF, E-Naphtha and eMade chemicals",
+        "url": "https://www.twelve.co/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "electrichydrogen": {
+    "companyId": "electrichydrogen",
+    "name": "Electric Hydrogen",
+    "legalName": "Electric Hydrogen Co.",
+    "website": "https://eh2.com/",
+    "description": "Manufactures, delivers and commissions high-power PEM electrolyzer plants that convert water and electricity into clean hydrogen for refineries, eFuels, ammonia and other industrial users.",
+    "hqCity": "Devens",
+    "hqCountry": "United States",
+    "foundedYear": 2020,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Climate & Energy",
+    "subsector": "PEM electrolyzer plants for clean hydrogen production",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Electric Hydrogen Co., Form D primary document (CIK 0001997980)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1997980/000199798023000004/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - submissions record for CIK 0001997980, entity name Electric Hydrogen Co.",
+        "url": "https://data.sec.gov/submissions/CIK0001997980.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Electric Hydrogen - official site",
+        "url": "https://eh2.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Electric Hydrogen - official press release, About Electric Hydrogen boilerplate",
+        "url": "https://eh2.com/electric-hydrogen-ambient-fuels-generate-capital/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Electric Hydrogen - official site, HYPRPlant",
+        "url": "https://eh2.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Electric Hydrogen - official press release, headquartered in Devens, Massachusetts",
+        "url": "https://eh2.com/electric-hydrogen-ambient-fuels-generate-capital/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Electric Hydrogen - official press release, headquartered in Devens, Massachusetts",
+        "url": "https://eh2.com/electric-hydrogen-ambient-fuels-generate-capital/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Electric Hydrogen - official press release, the company was founded in 2020",
+        "url": "https://eh2.com/electric-hydrogen-ambient-fuels-generate-capital/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - Electric Hydrogen Co. Form D, year of incorporation 2020, Delaware",
+        "url": "https://www.sec.gov/Archives/edgar/data/1997980/000199798023000004/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - submissions record for CIK 0001997980 shows only Regulation D exempt offerings, no tickers, no exchanges and no registration statement",
+        "url": "https://data.sec.gov/submissions/CIK0001997980.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Electric Hydrogen - official press release describing private financing and corporate development activity",
+        "url": "https://eh2.com/electric-hydrogen-ambient-fuels-generate-capital/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Electric Hydrogen - official site, electrolyzer plants for clean hydrogen",
+        "url": "https://eh2.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Electric Hydrogen - official site, PEM electrolyzer stacks and HYPRPlant",
+        "url": "https://eh2.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "quantumscape": {
+    "companyId": "quantumscape",
+    "name": "QuantumScape",
+    "legalName": "QuantumScape Corporation",
+    "website": "https://www.quantumscape.com/",
+    "description": "Develops solid-state lithium-metal battery technology for electric vehicles, based on a proprietary solid ceramic electrolyte separator.",
+    "hqCity": "San Jose",
+    "hqCountry": "United States",
+    "foundedYear": 2010,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Climate & Energy",
+    "subsector": "solid-state lithium-metal batteries for electric vehicles",
+    "tickers": [
+      "NASDAQ:QS"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - QuantumScape Corporation Form 8-K cover page, 11 February 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1811414/000119312526046623/qs-20260211.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "QuantumScape Investor Relations - Form 10-Q for the quarter ended 31 March 2026, cover page",
+        "url": "https://ir.quantumscape.com/static-files/89ce304e-16c8-4152-8999-2744767ca62a",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "QuantumScape - official site",
+        "url": "https://www.quantumscape.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "QuantumScape - official company page",
+        "url": "https://www.quantumscape.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "QuantumScape - official company page, 1730 Technology Drive, San Jose, CA 95110",
+        "url": "https://www.quantumscape.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - QuantumScape Corporation Form 8-K cover page, principal executive offices San Jose, California",
+        "url": "https://www.sec.gov/Archives/edgar/data/1811414/000119312526046623/qs-20260211.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - QuantumScape Corporation Form 8-K cover page, principal executive offices San Jose, California",
+        "url": "https://www.sec.gov/Archives/edgar/data/1811414/000119312526046623/qs-20260211.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "QuantumScape - official company page, QuantumScape was founded in 2010",
+        "url": "https://www.quantumscape.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "QuantumScape Investor Relations - Form 10-Q for the quarter ended 31 March 2026, securities registered under Section 12(b)",
+        "url": "https://ir.quantumscape.com/static-files/89ce304e-16c8-4152-8999-2744767ca62a",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - submissions record for CIK 0001811414, ticker QS on Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001811414.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "QuantumScape Investor Relations - Form 10-Q cover page, Class A common stock, trading symbol QS, The Nasdaq Stock Market LLC",
+        "url": "https://ir.quantumscape.com/static-files/89ce304e-16c8-4152-8999-2744767ca62a",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR - QuantumScape Corporation Form 8-K cover page, trading symbol QS, The Nasdaq Stock Market LLC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1811414/000119312526046623/qs-20260211.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "QuantumScape Investor Relations - QuantumScape to Transfer Stock Exchange Listing to Nasdaq, 10 December 2025",
+        "url": "https://ir.quantumscape.com/resources/press-releases/news-details/2025/QuantumScape-to-Transfer-Stock-Exchange-Listing-to-Nasdaq/default.aspx",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "QuantumScape - official company page, solid-state batteries for zero-emissions transportation",
+        "url": "https://www.quantumscape.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "QuantumScape - official company page, solid ceramic electrolyte separator and lithium-metal batteries",
+        "url": "https://www.quantumscape.com/company/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "rondoenergy": {
+    "companyId": "rondoenergy",
+    "name": "Rondo Energy",
+    "legalName": "Rondo Energy, Inc.",
+    "website": "https://www.rondo.com/",
+    "description": "Develops and deploys the Rondo Heat Battery, a brick-based thermal energy storage system that converts intermittent wind and solar electricity into continuous industrial heat and power.",
+    "hqCity": "Alameda",
+    "hqCountry": "United States",
+    "foundedYear": 2020,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Climate & Energy",
+    "subsector": "thermal energy storage heat batteries for industrial heat",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Rondo Energy, Inc. Form D primary document (CIK 0001934222)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1934222/000193422222000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Rondo Energy - official site footer, Copyright 2026, Rondo Energy, Inc.",
+        "url": "https://rondo.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Rondo Energy - official site",
+        "url": "https://www.rondo.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Rondo Energy - official site, the Rondo Heat Battery",
+        "url": "https://rondo.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Rondo Energy - official press release, About Rondo Energy",
+        "url": "https://www.rondo.com/news-press/rondo-powers-up-worlds-largest-industrial-heat-battery",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Rondo Energy - official press release dateline ALAMEDA, Calif., 16 October 2025",
+        "url": "https://www.rondo.com/news-press/rondo-powers-up-worlds-largest-industrial-heat-battery",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Rondo Energy - official press release, Rondo Energy is headquartered in California",
+        "url": "https://www.rondo.com/news-press/rondo-powers-up-worlds-largest-industrial-heat-battery",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - Rondo Energy, Inc. Form D, year of incorporation 2020, Delaware",
+        "url": "https://www.sec.gov/Archives/edgar/data/1934222/000193422222000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - submissions record for CIK 0001934222 shows a single Regulation D exempt offering, no tickers, no exchanges and no registration statement",
+        "url": "https://data.sec.gov/submissions/CIK0001934222.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Rondo Energy - official press release describing continued private deployment and scaling, no public listing",
+        "url": "https://www.rondo.com/news-press/rondo-powers-up-worlds-largest-industrial-heat-battery",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Rondo Energy - official site, zero-carbon industrial heat from wind and solar power",
+        "url": "https://rondo.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Rondo Energy - official press release, electric thermal energy storage for industry",
+        "url": "https://www.rondo.com/news-press/rondo-powers-up-worlds-largest-industrial-heat-battery",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "skydio": {
+    "companyId": "skydio",
+    "name": "Skydio",
+    "legalName": "Skydio, Inc.",
+    "website": "https://www.skydio.com",
+    "description": "Designs and manufactures autonomous drones and the onboard flight autonomy software that flies them, sold to enterprise, public safety and defense customers.",
+    "hqCity": "San Mateo",
+    "hqCountry": "United States",
+    "foundedYear": 2014,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Robotics",
+    "subsector": "autonomous drones and onboard flight autonomy software",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Skydio - Company page, footer copyright reads 2026 Skydio, Inc. All rights reserved",
+        "url": "https://www.skydio.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - registrant record for Skydio, Inc., CIK 0001848117, state of incorporation DE",
+        "url": "https://data.sec.gov/submissions/CIK0001848117.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Skydio - Official Site, Company page",
+        "url": "https://www.skydio.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Skydio - Company page, states the mission to make the world more productive, creative and safe with autonomous flight",
+        "url": "https://www.skydio.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Skydio - Series F announcement, 23 April 2026, describes the core business and its public safety and defense customers",
+        "url": "https://www.skydio.com/blog/skydio-series-f",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Skydio - Company page footer address, 3000 Clearview Way, San Mateo, CA 94402",
+        "url": "https://www.skydio.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - business address for Skydio, Inc., 3000 Clearview Way, San Mateo, CA 94402",
+        "url": "https://data.sec.gov/submissions/CIK0001848117.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Skydio - Company page footer address, 3000 Clearview Way, San Mateo, CA 94402",
+        "url": "https://www.skydio.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Skydio - Company page, Skydio was founded in 2014",
+        "url": "https://www.skydio.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Skydio - Series F announcement, 23 April 2026, a 110 million dollar private Series F at a 4.4 billion dollar valuation",
+        "url": "https://www.skydio.com/blog/skydio-series-f",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Skydio, Inc. CIK 0001848117 filing history contains only Form D exempt offering notices, with no registration statement and no periodic reports",
+        "url": "https://data.sec.gov/submissions/CIK0001848117.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Skydio - Company page",
+        "url": "https://www.skydio.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Skydio - Company page",
+        "url": "https://www.skydio.com/company",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "saronic": {
+    "companyId": "saronic",
+    "name": "Saronic",
+    "legalName": "Saronic Technologies, Inc.",
+    "website": "https://www.saronic.com",
+    "description": "Builds autonomous surface vessels and maritime autonomy software for defense customers, and is constructing the Port Alpha shipyard in Brownsville, Texas.",
+    "hqCity": "Austin",
+    "hqCountry": "United States",
+    "foundedYear": 2022,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Defense Tech",
+    "subsector": "autonomous surface vessels for naval and maritime defense",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Form D primary document, entityName Saronic Technologies, Inc., jurisdiction Delaware, CIK 0002033142",
+        "url": "https://www.sec.gov/Archives/edgar/data/2033142/000203314224000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - registrant record for Saronic Technologies, Inc., CIK 0002033142",
+        "url": "https://data.sec.gov/submissions/CIK0002033142.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Saronic - Official Site, footer reads 2026 Saronic Technologies",
+        "url": "https://www.saronic.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Saronic - Official Site, providing the most advanced and capable autonomous vessels in the maritime domain",
+        "url": "https://www.saronic.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Saronic - Newsroom, announcements including Saronic to Build Port Alpha, America's Next Generation Shipyard, in Brownsville, Texas and Saronic Selected for U.S. Navy MUSV Marketplace",
+        "url": "https://www.saronic.com/newsroom",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - business address for Saronic Technologies, Inc., 400 Industrial Blvd., Austin, TX 78745",
+        "url": "https://data.sec.gov/submissions/CIK0002033142.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Saronic Technologies - Series D announcement, 31 March 2026, refers to expanding its Austin headquarters to more than 500,000 sq. ft.",
+        "url": "https://medium.com/saronic-technologies/saronic-closes-1-75b-series-d-at-9-25b-valuation-to-accelerate-a-new-era-of-maritime-autonomy-a801be818746",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - business address for Saronic Technologies, Inc., Austin, TX 78745",
+        "url": "https://data.sec.gov/submissions/CIK0002033142.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - Form D primary document for Saronic Technologies, Inc., yearOfInc value 2022",
+        "url": "https://www.sec.gov/Archives/edgar/data/2033142/000203314224000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Saronic Technologies, Inc. CIK 0002033142 filing history contains only Form D exempt offering notices, with no registration statement and no periodic reports",
+        "url": "https://data.sec.gov/submissions/CIK0002033142.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Saronic Technologies - Series D announcement, 31 March 2026, a 1.75 billion dollar private Series D at a 9.25 billion dollar valuation",
+        "url": "https://medium.com/saronic-technologies/saronic-closes-1-75b-series-d-at-9-25b-valuation-to-accelerate-a-new-era-of-maritime-autonomy-a801be818746",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Saronic - Official Site and Newsroom, autonomous vessels and U.S. Navy MUSV Marketplace selection",
+        "url": "https://www.saronic.com/newsroom",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Saronic - Official Site, autonomous vessels in the maritime domain",
+        "url": "https://www.saronic.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "astranis": {
+    "companyId": "astranis",
+    "name": "Astranis",
+    "legalName": "Astranis Space Technologies Corp.",
+    "website": "https://www.astranis.com",
+    "description": "Builds and operates small geostationary communications satellites, which it calls MicroGEO, and sells dedicated satellite broadband capacity to operators and governments.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2015,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Space",
+    "subsector": "small geostationary (MicroGEO) communications satellites",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - registrant record, entity name Astranis Space Technologies Corp., CIK 0001715660, state of incorporation DE",
+        "url": "https://data.sec.gov/submissions/CIK0001715660.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Form D primary document, entityName Astranis Space Technologies Corp., jurisdiction Delaware",
+        "url": "https://www.sec.gov/Archives/edgar/data/1715660/000171566021000003/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Astranis - Official Site, footer reads Copyright 2026 Astranis",
+        "url": "https://www.astranis.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Astranis - Official Site, small, powerful GEO satellites for high orbits with the latest in digital processing technology",
+        "url": "https://www.astranis.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Astranis - About page, small, radiation-hardened geostationary satellites and the world's first MicroGEO satellite",
+        "url": "https://www.astranis.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Astranis - HQ page, PIER 70, SAN FRANCISCO, CA, Astranis HQ and Manufacturing Facility",
+        "url": "https://www.astranis.com/hq",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Astranis - Company page, Astranis headquarters is located within San Francisco's historic Pier 70",
+        "url": "https://www.astranis.com/old/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Astranis - HQ page, PIER 70, SAN FRANCISCO, CA",
+        "url": "https://www.astranis.com/hq",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Astranis - Company page, Founded in 2015, we're coming up on 10 years of pursuing a grand mission",
+        "url": "https://www.astranis.com/old/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Astranis - Series E announcement, 6 May 2026, 450 million dollars in new capital including a Series E round, over 1.2 billion dollars raised in total",
+        "url": "https://www.astranis.com/blog/series-e-raise-advanced-high-orbit-spacecraft",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Astranis Space Technologies Corp. CIK 0001715660 filing history contains only Form D exempt offering notices, with no registration statement and no periodic reports",
+        "url": "https://data.sec.gov/submissions/CIK0001715660.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Astranis - Official Site, GEO satellites for sovereign connectivity",
+        "url": "https://www.astranis.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Astranis - About page, small, radiation-hardened geostationary satellites and the world's first MicroGEO satellite",
+        "url": "https://www.astranis.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "planetlabs": {
+    "companyId": "planetlabs",
+    "name": "Planet Labs",
+    "legalName": "Planet Labs PBC",
+    "website": "https://www.planet.com",
+    "description": "Operates a constellation of Earth imaging satellites and sells daily satellite imagery, data and analytics to government, agriculture, defense and commercial customers.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2010,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Space",
+    "subsector": "Earth observation satellite constellation and imagery data services",
+    "tickers": [
+      "NYSE:PL"
+    ],
+    "formerNames": [
+      "Cosmogia Inc.",
+      "Planet Labs Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Form 10-K for the fiscal year ended 31 January 2026, cover page registrant name Planet Labs PBC, state of incorporation Delaware",
+        "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526119957/pl-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - filing index for accession 0001193125-26-119957, registrant Planet Labs PBC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526119957/0001193125-26-119957-index.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Planet - Official Site, Company page, footer reads 2026 Planet Labs PBC. All rights reserved",
+        "url": "https://www.planet.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Planet - Company page, mission to image all of Earth's landmass every day and make global change visible, accessible and actionable, with imagery and analytics across agriculture, defense, insurance and environmental monitoring",
+        "url": "https://www.planet.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Form 10-K cover page, address of principal executive offices 645 Harrison Street, Floor 4, San Francisco, California 94107",
+        "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526119957/pl-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Form 10-K cover page, San Francisco, California 94107",
+        "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526119957/pl-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - Form D primary document for Planet Labs Inc., CIK 0001543165, yearOfInc value 2010, previousName Cosmogia Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1543165/000154316513000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Form 10-K for the fiscal year ended 31 January 2026, filed 23 March 2026, Class A common stock registered under Section 12(b) and listed on the New York Stock Exchange, large accelerated filer",
+        "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526119957/pl-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - submissions record for CIK 0001836833 showing tickers PL and exchanges NYSE",
+        "url": "https://data.sec.gov/submissions/CIK0001836833.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Planet - Company page, satellite constellation providing Earth observation data",
+        "url": "https://www.planet.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Planet - Company page, Planet has built and successfully deployed 450 satellites and currently operates 200 plus in orbit collecting imagery daily",
+        "url": "https://www.planet.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR - Form 10-K cover page, Securities registered pursuant to Section 12(b): Class A common stock, par value \$0.0001 per share, Trading Symbol PL, New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526119957/pl-20260131.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR - submissions record for CIK 0001836833, tickers PL, exchanges NYSE",
+        "url": "https://data.sec.gov/submissions/CIK0001836833.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - Form D primary document for CIK 0001543165, entityName Planet Labs Inc. with previousName Cosmogia Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1543165/000154316513000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - Form 10-K for fiscal year ended 31 January 2026, describing the December 2021 business combination with Planet Labs Inc., referred to as Former Planet, after which the registrant changed its name to Planet Labs PBC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526119957/pl-20260131.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "zoox": {
+    "companyId": "zoox",
+    "name": "Zoox",
+    "legalName": "Zoox, Inc.",
+    "website": "https://zoox.com",
+    "description": "Develops a purpose-built autonomous vehicle with no traditional driver controls and operates a robotaxi ride-hailing service in United States cities.",
+    "hqCity": "Foster City",
+    "hqCountry": "United States",
+    "foundedYear": 2014,
+    "status": "acquired",
+    "statusDetail": "Acquired by Amazon in 2020. Agreement announced 26 June 2020 and completion announced 11 August 2020.",
+    "sector": "Mobility",
+    "subsector": "purpose-built autonomous robotaxis and robotaxi ride-hailing",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Zoox - Official Site, footer reads Copyright Zoox, Inc. 2026 All Rights Reserved",
+        "url": "https://zoox.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "NHTSA - Part 573 Safety Recall Report 25E-019, manufacturer name Zoox, Inc.",
+        "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25E019-8103.PDF",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Zoox - Official Site, live and describing a robotaxi designed around you",
+        "url": "https://zoox.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Zoox - Official Site, a purpose-built autonomous vehicle designed for riders, not drivers, and a robotaxi designed around you",
+        "url": "https://zoox.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Zoox - About page, the autonomous vehicle company that's building a better way to ride, listing Las Vegas, San Francisco, Austin, Miami, Atlanta and Los Angeles",
+        "url": "https://zoox.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "NHTSA - Part 573 Safety Recall Report 25E-019, manufacturer Zoox, Inc., address 1149 Chess Dr. Foster City CA 94404",
+        "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25E019-8103.PDF",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "NHTSA - recall acknowledgement letter dated 16 July 2026 addressed to Zoox, Inc., 1149 Chess Drive, Foster City, CA 94404",
+        "url": "https://static.nhtsa.gov/odi/rcl/2026/RCAK-26E044-8851.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "NHTSA - Part 573 Safety Recall Report 25E-019, Foster City CA 94404",
+        "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25E019-8103.PDF",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Goodwin, transaction counsel to Zoox - announcement of 11 August 2020 stating Zoox was established in 2014",
+        "url": "https://www.goodwinlaw.com/en/news-and-events/news/2020/08/08_11-zoox-acquired-by-amazon",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Goodwin, transaction counsel to Zoox - announcement of 11 August 2020 describing the completion of its sale to Amazon",
+        "url": "https://www.goodwinlaw.com/en/news-and-events/news/2020/08/08_11-zoox-acquired-by-amazon",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Amazon - official newsroom post of 26 June 2020, Amazon has signed an agreement to acquire Zoox, completion of this transaction is subject to customary closing conditions",
+        "url": "https://www.aboutamazon.com/news/company-news/were-acquiring-zoox-to-help-bring-their-vision-of-autonomous-ride-hailing-to-reality",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Goodwin, transaction counsel to Zoox - announcement of 11 August 2020 describing the completion of its sale to Amazon, with Zoox continuing as an independent unit",
+        "url": "https://www.goodwinlaw.com/en/news-and-events/news/2020/08/08_11-zoox-acquired-by-amazon",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Amazon - official newsroom post of 26 June 2020 announcing the signed agreement to acquire Zoox",
+        "url": "https://www.aboutamazon.com/news/company-news/were-acquiring-zoox-to-help-bring-their-vision-of-autonomous-ride-hailing-to-reality",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Zoox - Official Site, robotaxi and autonomous vehicle for riders",
+        "url": "https://zoox.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Zoox - About page, the autonomous vehicle company that's building a better way to ride",
+        "url": "https://zoox.com/about",
         "checked": "2026-09-03"
       }
     ],
