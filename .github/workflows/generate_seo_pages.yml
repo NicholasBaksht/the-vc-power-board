@@ -8,6 +8,7 @@ on:
       - 'scripts/data-firms.js'
       - 'scripts/data-capital-sources.js'
       - 'scripts/data-company-sectors.js'
+      - 'scripts/data-companies*.js'
       - 'scripts/data-company-aliases.js'
       - 'scripts/company-registry.js'
       - 'scripts/utilities.js'
