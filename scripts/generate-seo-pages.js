@@ -836,7 +836,7 @@ function renderComparePage(firmA, firmB, sectorSlug, computePowerScore) {
 }
 
 function main() {
-const data = loadCombinedScripts(['data-meta.js', 'data-capital-sources.js', 'data-company-sectors.js', 'data-companies.js', 'data-company-aliases.js', 'company-registry.js', 'data-deals.js', 'data-partners.js', 'data-partners-1.js', 'data-partners-2.js', 'data-partners-3.js', 'data-partners-4.js', 'data-partners-5.js', 'data-partners-6.js', 'data-firms.js', 'utilities.js', 'powerscore.js']);
+const data = loadCombinedScripts(['data-meta.js', 'data-capital-sources.js', 'data-company-sectors.js', 'data-companies.js', 'data-companies-1.js', 'data-companies-2.js', 'data-company-aliases.js', 'company-registry.js', 'data-deals.js', 'data-partners.js', 'data-partners-1.js', 'data-partners-2.js', 'data-partners-3.js', 'data-partners-4.js', 'data-partners-5.js', 'data-partners-6.js', 'data-firms.js', 'utilities.js', 'powerscore.js']);
   const { firms, partnerProfiles, CAPITAL_SOURCES, COMPANY_SECTORS, cmpBuildBackIndex, cmpEvidenceCount, cmpSlug } = data;
   const firmsBySlug = {};
   firms.forEach(f => { firmsBySlug[f.slug] = f; });
