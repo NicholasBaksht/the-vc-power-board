@@ -37,6 +37,15 @@
    ============================================================ */
 
 const COMPANY_ALIASES = [
+  /* Added 2026-09-02 from company batch 1. The datasets record the bare
+     brand "Square"; data-companies.js records the former name as
+     "Square, Inc." Those normalise differently, so this row is what
+     joins them. Recorded explicitly rather than by stripping legal
+     suffixes globally: that heuristic would also merge "Alloy" with
+     "Alloy Enterprises", which partner-behavior.js already warns about,
+     and it would buy exactly one join. */
+  { canonicalCompanyId: "block",              alias: "Square",               normalizedAlias: "square",          aliasType: "FORMER_NAME",     status: "APPROVED",       reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-02",
+    canonicalName: "Block",                 note: "Square, Inc. renamed to Block, Inc. on 2021-12-10. Sourced in data-companies.js under companyId block." },
   { canonicalCompanyId: "17live",          alias: "17LIVE",              normalizedAlias: "17live",          aliasType: "BRAND_NAME",      status: "APPROVED",      reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-02",
     canonicalName: "17Live",                note: "Same company. Firm materials capitalise the brand; the company styles it 17Live." },
   { canonicalCompanyId: "1x",              alias: "1x",                  normalizedAlias: "1x",              aliasType: "TYPO_VARIANT",    status: "APPROVED",      reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-02",
