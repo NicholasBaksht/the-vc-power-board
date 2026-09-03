@@ -62,13 +62,41 @@ function cmpIndex() {
   const held = {};       // normalisedAlias -> row, for reporting
   const canonName = {};  // id -> display name
 
+  /* Canonical Company entities come first: a companyId in data-companies.js
+     is the durable key, and its current name, legal name and former names
+     all resolve to it. This is what makes the alias branch load-bearing
+     rather than decorative - "Square" and "TransferWise" normalise
+     differently from "block" and "wise", so only an alias row can join
+     them. Derived from reviewed research, not inferred at runtime. */
+  if (typeof COMPANIES !== 'undefined' && COMPANIES) {
+    Object.keys(COMPANIES).forEach(function (id) {
+      const c = COMPANIES[id];
+      if (!c) return;
+      canonName[id] = c.name || id;
+      const reg = function (nm) {
+        const k = cmpNorm(nm);
+        if (k && k !== id && !approved[k]) approved[k] = { id: id, name: c.name };
+      };
+      reg(c.name);
+      reg(c.legalName);
+      (c.formerNames || []).forEach(function (f) {
+        reg(typeof f === 'string' ? f : (f && f.name));
+      });
+    });
+  }
+
   const rows = (typeof COMPANY_ALIASES !== 'undefined') ? COMPANY_ALIASES : [];
   rows.forEach(function (r) {
     if (!r || !r.canonicalCompanyId) return;
     const k = r.normalizedAlias || cmpNorm(r.alias);
     if (r.status === 'APPROVED') {
-      canonName[r.canonicalCompanyId] = r.canonicalName || r.canonicalCompanyId;
-      approved[k] = { id: r.canonicalCompanyId, name: r.canonicalName };
+      /* A canonical entity outranks a seed alias row. The seed says
+         lendingclub is called "LendingClub"; the entity says it renamed
+         to "Happen" in June 2026 and is sourced. Entity wins. */
+      const hasEntity = (typeof COMPANIES !== 'undefined' && COMPANIES && COMPANIES[r.canonicalCompanyId]);
+      if (!hasEntity) canonName[r.canonicalCompanyId] = r.canonicalName || r.canonicalCompanyId;
+      approved[k] = { id: r.canonicalCompanyId,
+                      name: hasEntity ? COMPANIES[r.canonicalCompanyId].name : r.canonicalName };
     } else {
       /* A held row must hold BOTH spellings back, not just the alias.
          Registering its canonical id here would let the canonical-match
