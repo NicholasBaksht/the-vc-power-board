@@ -17,6 +17,32 @@
    in the dataset, attached to the firm the dataset attaches it
    to. If no evidence exists, the engine returns nothing and says
    so - it never manufactures a plausible-sounding conflict.
+
+   COMPANY IDENTITY runs through cmpResolve, not through the raw
+   string. Three things change because of that:
+
+     1. One company, written two ways, is one result. Norwest
+        holds both "LendingClub" and "Lending Club"; a founder
+        used to see the same position twice.
+     2. The name shown is the company's current name. 30 records
+        are stored under a name the company no longer uses -
+        Grammarly is Superhuman, Intercom is Fin, LendingClub is
+        Happen - and a founder deciding whether to raise a
+        conflict needs today's name. The stored spelling is shown
+        alongside rather than dropped.
+     3. A name that is two companies is never quietly treated as
+        one. Six strings in this index - Paladin, Casa, Pie,
+        Liquid, Enigma, Ellis - are two unrelated companies each,
+        confirmed and held in data-company-aliases.js. They still
+        surface, because a firm holding SOMETHING by that name is
+        worth knowing, but the card says the name is shared so a
+        founder verifies rather than assumes.
+
+   A name mention counts only when the name is distinctive enough
+   that finding it in prose is unlikely to be chance. Alternate
+   spellings widen that surface, so they clear a higher bar than
+   the stored name: eight characters or a space. "Square" as a
+   former name of Block is deliberately not matched.
    ============================================================ */
 
 const CC_STOPWORDS = new Set(('a about all also an and any are as at be been but by can co com company '
@@ -56,12 +82,86 @@ function ccTokens(text) {
     .filter(t => t.length > 2 && t.length < 30 && !CC_STOPWORDS.has(t) && !/^\d+$/.test(t));
 }
 
+/* Punctuation-insensitive haystack, normalised exactly the way
+   ccTokens normalises, so a name at the end of a sentence still reads
+   as a mention. "competing with Superhuman." used to match nothing:
+   the engine looked for the name with a space on both sides, and the
+   full stop meant there wasn't one. Company names keep their internal
+   dots, because Bill.com and You.com need them; only leading and
+   trailing dots are stripped, per token. */
+function ccHaystack(text) {
+  return ' ' + String(text || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9+#. ]+/g, ' ')
+    .split(/\s+/)
+    .map(t => t.replace(/^[.]+|[.]+$/g, ''))
+    .filter(Boolean)
+    .join(' ') + ' ';
+}
+
+/* A spelling has to survive the same normalisation the haystack does,
+   or it can never match it. "Root, Inc." becomes "root inc". */
+function ccNormName(s) {
+  const v = ccHaystack(s).trim();
+  return v;
+}
+
+/* Every spelling of one record's company that may be matched against a
+   founder's prose. The stored name keeps the engine's original bar;
+   anything the registry adds must clear a higher one, because each
+   extra spelling is extra chance of a coincidental hit. */
+function ccSpellings(raw, res) {
+  const out = {};
+  const addStored = (s) => {
+    const v = ccNormName(s);
+    if (v.length >= 5 && !CC_STOPWORDS.has(v)) out[v] = 1;
+  };
+  const addExtra = (s) => {
+    const v = ccNormName(s);
+    if (!v || CC_STOPWORDS.has(v)) return;
+    if (v.length >= 8 || v.indexOf(' ') !== -1) out[v] = 1;
+  };
+  addStored(raw);
+  if (res && res.resolved) {
+    addExtra(res.name);
+    const c = (typeof COMPANIES !== 'undefined' && COMPANIES && res.id) ? COMPANIES[res.id] : null;
+    if (c) (c.formerNames || []).forEach(f => addExtra(typeof f === 'string' ? f : (f && f.name)));
+  }
+  return Object.keys(out);
+}
+
 /* One record per portfolio company per firm. `described` marks whether
    there is real text to compare against, which decides how strong a
    claim the result is allowed to make. */
 function ccBuildIndex() {
   const recs = [];
-  const push = (r) => { if (r.company && r.firmSlug) recs.push(r); };
+  const push = (r) => {
+    if (!r.company || !r.firmSlug) return;
+    const res = (typeof cmpResolve === 'function') ? cmpResolve(r.company) : null;
+    if (res) {
+      /* A held name gets a key unique to the raw string, so two firms
+         holding two different companies called Enigma never collapse
+         into one row. Same rule cmpBuildBackIndex uses. */
+      /* cmpNorm keeps only ASCII alphanumerics, so a CJK name
+         normalises to the empty string. Falling through to the raw
+         name keeps those records distinct from each other instead of
+         collapsing every one of them onto a single blank key. */
+      r.companyId = (res.via === 'held-for-review')
+        ? 'review:' + cmpNorm(r.company) + ':' + r.company
+        : (res.id || cmpNorm(r.company) || String(r.company).toLowerCase());
+      r.display = res.resolved ? res.name : r.company;
+      r.storedAs = (r.display !== r.company) ? r.company : null;
+      r.ambiguous = (res.via === 'held-for-review');
+      r.spellings = ccSpellings(r.company, res);
+    } else {
+      r.companyId = null;
+      r.display = r.company;
+      r.storedAs = null;
+      r.ambiguous = false;
+      r.spellings = ccSpellings(r.company, null);
+    }
+    recs.push(r);
+  };
 
   if (typeof FIRM_DEALS !== 'undefined' && FIRM_DEALS) {
     Object.keys(FIRM_DEALS).forEach(k => {
@@ -119,15 +219,16 @@ function ccAnalyze(text, index, opts) {
   const termSet = {};
   terms.forEach(t => { termSet[t] = 1; });
   const uniqueTerms = Object.keys(termSet);
-  const lowerText = ' ' + String(text).toLowerCase() + ' ';
+  const lowerText = ccHaystack(text);
 
   const scored = [];
   index.recs.forEach(r => {
-    const nameLower = String(r.company).toLowerCase();
     // Direct name mention: only count names distinctive enough to be
     // meaningful. "Frame" or "Ramp" inside prose is not a mention.
-    const namedDirectly = nameLower.length >= 5 &&
-      lowerText.indexOf(' ' + nameLower + ' ') !== -1;
+    // Every spelling the registry knows is tested, so a founder who
+    // writes "Happen" reaches a record stored as "LendingClub".
+    const spellings = r.spellings || [];
+    const namedDirectly = spellings.some(s => lowerText.indexOf(' ' + s + ' ') !== -1);
 
     let overlap = [];
     let distinctive = [];
@@ -162,7 +263,11 @@ function ccAnalyze(text, index, opts) {
   const seen = {};
   for (let i = 0; i < scored.length && out.length < limit; i++) {
     const s = scored[i];
-    const key = s.rec.firmSlug + '|' + s.rec.company;
+    /* Dedup on identity, not spelling. Without this a firm recorded
+       against both "Planet" and "Planet Labs" produces two cards for
+       one position. */
+    const key = s.rec.firmSlug + '|' +
+                (s.rec.companyId || String(s.rec.company).toLowerCase());
     if (seen[key]) continue;
     seen[key] = 1;
 
@@ -173,7 +278,12 @@ function ccAnalyze(text, index, opts) {
     else continue;
 
     out.push({
-      firmSlug: s.rec.firmSlug, company: s.rec.company, tier,
+      firmSlug: s.rec.firmSlug,
+      company: s.rec.display || s.rec.company,
+      companyId: s.rec.companyId || null,
+      storedAs: s.rec.storedAs || null,
+      ambiguous: !!s.rec.ambiguous,
+      tier,
       source: s.rec.source, sector: s.rec.sector || null,
       round: s.rec.round || null, date: s.rec.date || null,
       ticker: s.rec.ticker || null, via: s.rec.via || null,
@@ -432,15 +542,29 @@ function ccRun(text) {
     const reason = m.described && m.overlap.length
       ? 'Shared language with this company&rsquo;s own description: <em>' + m.overlap.join(', ') + '</em>.'
       : 'You named this company. It is recorded in this firm&rsquo;s portfolio - the comparison is the name itself, not a market judgement.';
+    /* The record may predate a rename. Show the current name and say
+       which name the source used, rather than silently swapping one
+       for the other. */
+    const alsoKnown = m.storedAs
+      ? ' <span class="cc-alias">recorded as ' + m.storedAs + '</span>'
+      : '';
+    /* Six names in this index are two unrelated companies. Say so on
+       the card: the firm holds something by this name, but which one
+       is not established. */
+    const shared = m.ambiguous
+      ? `<div class="cc-shared">More than one company uses this name and this site has not
+         established which one this firm holds. Confirm before treating it as a conflict.</div>`
+      : '';
     return `
       <div class="cc-card cc-${m.tier}">
         <div class="cc-card-top">
           <span class="cc-tier">${m.tier === 'high' ? 'HIGH OVERLAP' : 'MEDIUM OVERLAP'}</span>
           <a class="cc-firm" href="#${m.firmSlug}">${ccFirmName(m.firmSlug)}</a>
         </div>
-        <div class="cc-company">Portfolio company: <strong>${m.company}</strong></div>
+        <div class="cc-company">Portfolio company: <strong>${m.company}</strong>${alsoKnown}</div>
         <div class="cc-meta">${src}</div>
         <div class="cc-reason">${reason}</div>
+        ${shared}
       </div>`;
   };
 
