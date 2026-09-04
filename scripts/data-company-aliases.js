@@ -130,6 +130,52 @@ const COMPANY_ALIASES = [
     canonicalName: "ZOE",                   note: "Nutrition science company, styled in caps. Appears in partner and angel data." },
   { canonicalCompanyId: "zulily",          alias: "zulily",              normalizedAlias: "zulily",          aliasType: "BRAND_NAME",      status: "APPROVED",      reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-02",
     canonicalName: "Zulily",                note: "Online retailer. Case only." },
+
+  /* Added 2026-09-03 from company batch 6. Each of these was checked
+     against a first-party source AND against the Power Board evidence
+     row that produced the variant spelling, because a name matching in
+     the abstract is not the same as the two strings in our data being
+     one company. The ticker carried on the evidence row is what settled
+     three of the five. */
+  { canonicalCompanyId: "temporaltechnologies", alias: "Temporal",       normalizedAlias: "temporal",        aliasType: "COMMON_NAME",     status: "APPROVED",      reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-03",
+    canonicalName: "Temporal Technologies", note: "temporal.io Terms of Service opens 'OFFERED BY TEMPORAL TECHNOLOGIES INC. (\"TEMPORAL\")'. Our rows for the bare name are the 2026-02-17 Series D, described as a durable execution layer, which is the same company." },
+  { canonicalCompanyId: "recursion",       alias: "Recursion Pharmaceuticals", normalizedAlias: "recursionpharmaceuticals", aliasType: "LEGAL_NAME", status: "APPROVED", reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-03",
+    canonicalName: "Recursion",             note: "SEC EDGAR CIK 0001601830 registrant RECURSION PHARMACEUTICALS, INC., ticker RXRX. Every one of our rows for the long form carries ticker RXRX, so both strings are the entity filed under companyId recursion." },
+  { canonicalCompanyId: "planetlabs",      alias: "Planet",              normalizedAlias: "planet",          aliasType: "BRAND_NAME",      status: "APPROVED",      reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-03",
+    canonicalName: "Planet Labs",           note: "planet.com calls the company Planet throughout and its footer reads Planet Labs PBC, matching SEC registrant Planet Labs PBC, NYSE:PL. Both of our rows for the bare name carry ticker PL, one of them sourced to the company's own Series C announcement." },
+  { canonicalCompanyId: "block",           alias: "Square (Block)",      normalizedAlias: "squareblock",     aliasType: "OTHER",           status: "APPROVED",      reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-03",
+    canonicalName: "Block",                 note: "A disambiguator written into the source, not a second company. SEC EDGAR CIK 0001512673 shows registrant Block, Inc. with former name Square, Inc. Our rows for this string carry ticker XYZ, which is Block's own ticker." },
+  { canonicalCompanyId: "block",           alias: "Block (Square)",      normalizedAlias: "blocksquare",     aliasType: "OTHER",           status: "APPROVED",      reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-03",
+    canonicalName: "Block",                 note: "The same disambiguator with the two names reversed. Appears twice in data-partners-1.js and is already listed as a block alias in data-company-sectors.js." },
+
+  /* THREE REJECTIONS FROM BATCH 6, DELIBERATELY NOT ROWS.
+     Researched, settled, and recorded here rather than in the array,
+     because cmpIndex() treats every non-APPROVED status as hold-back:
+     it would push both the alias AND the canonical name into `held`,
+     and a string with no entity yet would then resolve to
+     'held-for-review' instead of the honest 'not in registry'. The
+     finding belongs in version control; feeding it to the resolver
+     would misreport it.
+
+       TwelveLabs is NOT Twelve.
+         TwelveLabs, Inc., twelvelabs.io, San Francisco video AI.
+         Twelve is Twelve Benefit Corporation, twelve.co, Berkeley CO2
+         electrolysis, formerly Opus 12. Different domain, entity,
+         product, founders and city. companyId twelvelabs is already
+         reserved by the "Twelve Labs" row above and still needs an
+         entity record.
+
+       Snapdocs is NOT Snap.
+         Snapdocs, Inc., snapdocs.com, San Francisco mortgage closing
+         software. Snap is Snap Inc., NYSE:SNAP. No corporate
+         relationship. Snapdocs now has its own entity from batch 6.
+
+       Quo is NOT Quora.
+         Nothing shows Quora ever using the name Quo, and our own
+         evidence rules it out: Quo appears in three separate portfolio
+         listings, and Craft Ventures links its entry to quo.com. Quora
+         appears separately under its own name in the same dataset.
+         quo.com still needs an entity record. */
 ];
 
 if (typeof module !== 'undefined' && module.exports) {
