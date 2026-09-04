@@ -84,6 +84,20 @@
        2. the partner's tenure at the current firm (joinedYear ->
           present), same period on the firm side;
        3. otherwise the module is HIDDEN. No fallback to all-time.
+
+     COVERAGE CLIP (the rule that makes the above true rather than
+     merely intended): a window start is a LOWER bound on the firm
+     side, so a tenure window starting in 2009 selected the whole of
+     FIRM_DEALS, which today begins in 2025. Ben Horowitz's profile
+     stated "during the same period (partner tenure, 2009 - present)"
+     while comparing his 2012-2019 rows against a16z deals that are
+     all from 2026, and reported the firm at 2% Consumer - a share
+     measured in a year none of his rows fall in. Every window is now
+     clipped forward to the first year FIRM_DEALS actually covers for
+     that firm, and BOTH sides are re-filtered and re-floored at the
+     clipped start. A partner whose attributed rows all predate the
+     firm's tracked history gets no comparison, which is the honest
+     result; pbehComparisonFlags says so by name.
      Floors: PBEH_CMP_MIN_P dated+classified partner rows and
      PBEH_CMP_MIN_F windowed firm deals per dimension. Partner rows
      dated before joinedYear, or carrying an orgAtTime that is not
@@ -500,6 +514,29 @@ function pbehCompute(slug) {
 }
 
 /* ---------- time-normalized partner vs firm (mandatory rules) ---------- */
+/* The first year FIRM_DEALS actually covers for one firm. This is the
+   floor under every window: pbehFirmWindowRows filters on `>= start`,
+   which is a lower bound, so any window opening before the dataset
+   begins silently selects the firm's entire tracked history and then
+   calls the result same-period. Built once for all firms. */
+let _pbehFirmStart = null;
+function pbehFirmCoverageStart(firmSlug) {
+  if (typeof FIRM_DEALS === 'undefined') return null;
+  if (!_pbehFirmStart) {
+    _pbehFirmStart = {};
+    FIRM_DEALS.forEach(function (d) {
+      if (!d.firmSlug || !d.announcedDate) return;
+      const y = +String(d.announcedDate).slice(0, 4);
+      if (!y) return;
+      if (_pbehFirmStart[d.firmSlug] == null || y < _pbehFirmStart[d.firmSlug]) {
+        _pbehFirmStart[d.firmSlug] = y;
+      }
+    });
+  }
+  const v = _pbehFirmStart[firmSlug];
+  return (v == null) ? null : v;
+}
+
 function pbehFirmWindowRows(firmSlug, startYear) {
   if (typeof FIRM_DEALS === 'undefined') return [];
   return FIRM_DEALS.filter(function (d) {
@@ -544,8 +581,15 @@ function pbehComparison(slug) {
     windows.push({ start: c.joinedYear, label: 'Partner tenure · ' + c.joinedYear + ' - present' });
   }
 
+  /* Clip every window forward to the first year the firm side actually
+     has. Without this the window start is a lower bound on the firm
+     data only, and a tenure window quietly becomes firm-all-time. */
+  const fStart = pbehFirmCoverageStart(c.partner.firmSlug);
+
   for (let i = 0; i < windows.length; i++) {
     const w = windows[i];
+    const start = (fStart != null && fStart > w.start) ? fStart : w.start;
+    const clipped = (start !== w.start);
     /* Project the partner rows into the SHARED vocabulary before
        comparing. Stage already matches on both sides; sector goes
        through the taxonomy resolver. A sector the taxonomy cannot
@@ -554,11 +598,11 @@ function pbehComparison(slug) {
        reporting the firm at 0% against it would assert an absence that
        was never measured. Such rows keep their researched label in the
        detail view above; only this like-for-like block excludes them. */
-    const pRowsRaw = c.currentFirmRows.filter(function (r) { return r.year != null && r.year >= w.start; });
+    const pRowsRaw = c.currentFirmRows.filter(function (r) { return r.year != null && r.year >= start; });
     const pRows = pRowsRaw.map(function (r) {
       return { stage: r.stage, sector: pbehSectorLabel(r.sector) };
     });
-    const fRows = pbehFirmWindowRows(c.partner.firmSlug, w.start);
+    const fRows = pbehFirmWindowRows(c.partner.firmSlug, start);
     const dims = [];
     ['sector', 'stage'].forEach(function (key) {
       const pd = pbehDistOf(pRows, key, PBEH_CMP_MIN_P);
@@ -566,9 +610,20 @@ function pbehComparison(slug) {
       if (pd && fd) dims.push({ key: key, partner: pd, firm: fd });
     });
     if (dims.length) {
-      return { window: w, dims: dims,
+      /* The label has to describe the period actually compared, because
+         pbehInsight drops it straight into "during the same period
+         (...)". A clipped window that kept saying "partner tenure ·
+         2009 - present" would put the false claim in the sentence. */
+      const label = clipped ? (start + ' - present') : w.label;
+      return { window: { start: start, label: label,
+                         requestedStart: w.start, requestedLabel: w.label,
+                         clipped: clipped,
+                         coverageNote: clipped
+                           ? ('Firm deals tracked from ' + start + '.')
+                           : null },
+               dims: dims,
                samples: { partnerDated: pRowsRaw.length, partnerTotal: c.currentFirmRows.length,
-                          firmTracked: fRows.length } };
+                          firmTracked: fRows.length, firmCoverageStart: fStart } };
     }
   }
   return null;
@@ -586,8 +641,20 @@ function pbehComparisonFlags(slug) {
     if (!FIRM_DEALS.some(function (d) { return d.firmSlug === c.partner.firmSlug; }))
       flags.push('firm deals not tracked');
   }
-  const dated = c.currentFirmRows.filter(function (r) { return r.year != null; }).length;
-  if (dated < PBEH_CMP_MIN_P) flags.push('insufficient dated attributions for comparison');
+  const datedRows = c.currentFirmRows.filter(function (r) { return r.year != null; });
+  if (datedRows.length < PBEH_CMP_MIN_P) flags.push('insufficient dated attributions for comparison');
+  /* Says why a person with plenty of dated rows still gets no
+     comparison: their attributions and the firm's tracked deals do not
+     share a single year. Without this the queue reads as "enough data"
+     while the module stays hidden. */
+  if (c.partner.firmSlug && datedRows.length) {
+    const fStart = pbehFirmCoverageStart(c.partner.firmSlug);
+    const latest = Math.max.apply(null, datedRows.map(function (r) { return r.year; }));
+    if (fStart != null && latest < fStart) {
+      flags.push('firm deals tracked only from ' + fStart +
+                 ', after every dated attribution for this person (latest ' + latest + ')');
+    }
+  }
   return flags;
 }
 
@@ -893,8 +960,23 @@ function pbehHtml(slug) {
   let cmpHtml = '';
   if (cmp) {
     const DIMLABEL = { sector: 'Sector', stage: 'Stage' };
+    /* The tooltip carries the full basis, including why a window was
+       shortened; the visible line stays one short phrase. */
+    const cmpTitle = 'Partner and firm behavior are compared over the same period where ' +
+      'sufficient data is available. This reduces distortion from historical changes in the ' +
+      'firm\'s investment strategy.' +
+      (cmp.window.clipped
+        ? ' This window starts at ' + cmp.window.start + ' rather than ' + cmp.window.requestedStart +
+          ' because the firm\'s tracked deals begin there, and a comparison against years the ' +
+          'firm side does not cover would not be a same-period comparison.'
+        : '');
+    /* coverageNote is deliberately NOT printed here: the label already
+       states the clipped period, so the note would repeat the year. It
+       stays on the object for the research queue and any consumer that
+       needs to explain the shortening. */
     cmpHtml = '<h4 class="pbeh-sub">Partner vs. firm</h4>' +
-      '<div class="pbeh-basis" title="Partner and firm behavior are compared over the same period where sufficient data is available. This reduces distortion from historical changes in the firm\'s investment strategy.">Same-period comparison · ' + pgAttr(cmp.window.label) + '</div>';
+      '<div class="pbeh-basis" title="' + pgAttr(cmpTitle) + '">Same-period comparison · ' +
+      pgAttr(cmp.window.label) + '</div>';
     cmp.dims.forEach(function (d) {
       const tops = d.partner.dist.slice(0, 3);
       cmpHtml += '<div class="pbeh-cmp-dim">' + pgAttr(DIMLABEL[d.key] || d.key) + '</div>';
