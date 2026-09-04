@@ -655,6 +655,17 @@
 .cc-meta { font-family: var(--mono); font-size: 10.5px; color: var(--ink-dim); margin-bottom: 6px; }
 .cc-reason { font-size: 12.5px; line-height: 1.55; color: var(--ink-dim); }
 .cc-reason em { color: var(--ink); font-style: normal; }
+/* The name a source used, when the company has since renamed. Mono and
+   dimmed so it reads as provenance rather than as a second company. */
+.cc-alias { font-family: var(--mono); font-size: 10.5px; color: var(--ink-dim); }
+/* Shown when a portfolio name is known to be used by two unrelated
+   companies. Same surface as .cc-none, because it is the same kind of
+   statement: what this tool cannot tell you. */
+.cc-shared {
+  margin-top: 7px; padding: 7px 9px;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 3px; font-size: 12px; line-height: 1.5; color: var(--ink);
+}
 
 .cc-none, .cc-empty {
   padding: 15px; background: var(--surface);
