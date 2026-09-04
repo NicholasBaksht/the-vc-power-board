@@ -1,6 +1,99 @@
 /* data-companies shard 2 of 2 - generated, do not hand-edit.
-   160 records, 2093 source rows. */
+   184 records, 2366 source rows. */
 Object.assign(COMPANIES, {
+  "linkedin": {
+    "companyId": "linkedin",
+    "name": "LinkedIn",
+    "legalName": "LinkedIn Corporation",
+    "website": "https://www.linkedin.com",
+    "description": "Operates an online professional network used by members to connect with contacts and by employers and marketers to reach them.",
+    "hqCity": "Mountain View",
+    "hqCountry": "United States",
+    "foundedYear": 2003,
+    "status": "acquired",
+    "statusDetail": "Acquired by Microsoft Corporation in 2016",
+    "sector": "Consumer",
+    "subsector": "online professional networking platform",
+    "tickers": [],
+    "formerNames": [
+      "LinkedIn, Ltd."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "LinkedIn Corporation Form 10-K FY2015 cover page - SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Microsoft Corporation Form 8-K filed 8 December 2016, Item 2.01 - names LinkedIn Corporation",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516788575/d259484d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "LinkedIn Corporation Form 10-K FY2015 - company website given as www.linkedin.com",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "LinkedIn Corporation Form 10-K FY2015, Item 1 Business: 'We are the world's largest professional network on the Internet'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "LinkedIn Corporation Form 10-K FY2015 cover page - principal executive offices, 2029 Stierlin Court, Mountain View, CA 94043",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "LinkedIn Corporation Form 10-K FY2015 cover page - Mountain View, CA 94043",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "LinkedIn Corporation Form 10-K FY2015: 'We were incorporated in Delaware in March 2003 under the name LinkedIn, Ltd.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Microsoft Corporation Form 8-K filed 8 December 2016, Item 2.01 Completion of Acquisition",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516788575/d259484d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Microsoft Corporation Form 8-K filed 8 December 2016, Item 2.01 - merger completed 8 December 2016, LinkedIn became a wholly owned Microsoft subsidiary",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516788575/d259484d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "LinkedIn Corporation Form 10-K FY2015, Item 1 Business - professional network with over 400 million members",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "LinkedIn Corporation Form 10-K FY2015, Item 1 Business - professional network with over 400 million members",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "LinkedIn Corporation Form 10-K FY2015: 'We were incorporated in Delaware in March 2003 under the name LinkedIn, Ltd. and changed our name to LinkedIn Corporation in January 2005.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "livongo": {
     "companyId": "livongo",
     "name": "Livongo",
@@ -320,6 +413,115 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "lunarenergy": {
+    "companyId": "lunarenergy",
+    "name": "Lunar Energy",
+    "legalName": "Lunar Energy, Inc.",
+    "website": "https://www.lunarenergy.com",
+    "description": "Residential clean energy company that designs home battery storage and solar systems together with software for managing them, including virtual power plant services.",
+    "hqCity": "Mountain View",
+    "hqCountry": "United States",
+    "foundedYear": 2020,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Climate & Energy",
+    "subsector": "residential battery storage, solar and virtual power plant software",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Lunar Energy - Privacy Policy",
+        "url": "https://www.lunarenergy.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Lunar Energy raises $232 million - company press release, 4 February 2026",
+        "url": "https://www.globenewswire.com/news-release/2026/02/04/3232099/0/en/Lunar-Energy-raises-232-million-to-scale-home-battery-deployments-and-AI-powered-VPP-software-to-meet-surging-demand-for-affordable-electricity.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Lunar Energy - Official Site",
+        "url": "https://www.lunarenergy.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Lunar Energy - Official Site",
+        "url": "https://www.lunarenergy.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Lunar Energy raises $232 million - company press release, 4 February 2026",
+        "url": "https://www.globenewswire.com/news-release/2026/02/04/3232099/0/en/Lunar-Energy-raises-232-million-to-scale-home-battery-deployments-and-AI-powered-VPP-software-to-meet-surging-demand-for-affordable-electricity.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Lunar Energy - Careers",
+        "url": "https://www.lunarenergy.com/careers",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Lunar Energy - Privacy Policy",
+        "url": "https://www.lunarenergy.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Lunar Energy Emerges from Stealth to Deliver Home Electrification at Scale - company press release, 24 August 2022",
+        "url": "https://www.lunarenergy.com/blog/news/official-press-release",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Lunar Energy - Privacy Policy",
+        "url": "https://www.lunarenergy.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Lunar Energy - Careers",
+        "url": "https://www.lunarenergy.com/careers",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Lunar Energy - About",
+        "url": "https://www.lunarenergy.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Lunar Energy raises $232 million - company press release, 4 February 2026",
+        "url": "https://www.globenewswire.com/news-release/2026/02/04/3232099/0/en/Lunar-Energy-raises-232-million-to-scale-home-battery-deployments-and-AI-powered-VPP-software-to-meet-surging-demand-for-affordable-electricity.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Lunar Energy raises $232 million - company press release, 4 February 2026",
+        "url": "https://www.globenewswire.com/news-release/2026/02/04/3232099/0/en/Lunar-Energy-raises-232-million-to-scale-home-battery-deployments-and-AI-powered-VPP-software-to-meet-surging-demand-for-affordable-electricity.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Lunar Energy - Official Site",
+        "url": "https://www.lunarenergy.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Lunar Energy - Official Site",
+        "url": "https://www.lunarenergy.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "lyft": {
     "companyId": "lyft",
     "name": "Lyft",
@@ -427,6 +629,117 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "machindustries": {
+    "companyId": "machindustries",
+    "name": "Mach Industries",
+    "legalName": "Mach Industries Inc.",
+    "website": "https://www.machindustries.com",
+    "description": "Defense manufacturing company that develops unmanned aerial systems, guided munitions, high-altitude platforms and energetics, together with the vertically integrated manufacturing infrastructure to produce them at volume.",
+    "hqCity": "Huntington Beach",
+    "hqCountry": "United States",
+    "foundedYear": 2023,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Defense Tech",
+    "subsector": "unmanned aerial systems, munitions and energetics manufacturing",
+    "tickers": [],
+    "formerNames": [
+      "Trident Industries 2022 Inc."
+    ],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Mach Industries - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.machindustries.com/"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC Form D 2025 - entity name Mach Industries Inc.",
+        "checked": "2026-09-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/1995957/000123191925000091/primary_doc.xml"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions - CIK 0001995957 Mach Industries Inc.",
+        "checked": "2026-09-03",
+        "url": "https://data.sec.gov/submissions/CIK0001995957.json"
+      },
+      {
+        "field": "description",
+        "label": "Mach Industries - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.machindustries.com/"
+      },
+      {
+        "field": "description",
+        "label": "Mach Industries press release - About Mach Industries boilerplate",
+        "checked": "2026-09-03",
+        "url": "https://www.prnewswire.com/news-releases/mach-industries-awarded-diu-contract-for-runway-independent-maritime-expeditionary-strike-capability-302801301.html"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC Form D 2025 - principal place of business, Huntington Beach, CA",
+        "checked": "2026-09-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/1995957/000123191925000091/primary_doc.xml"
+      },
+      {
+        "field": "hqCity",
+        "label": "Mach Industries press release - headquartered in Huntington Beach, California",
+        "checked": "2026-09-03",
+        "url": "https://www.prnewswire.com/news-releases/mach-industries-awarded-diu-contract-for-runway-independent-maritime-expeditionary-strike-capability-302801301.html"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC Form D 2025 - principal place of business, Huntington Beach, CA",
+        "checked": "2026-09-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/1995957/000123191925000091/primary_doc.xml"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Mach Industries press release - headquartered in Huntington Beach, California",
+        "checked": "2026-09-03",
+        "url": "https://www.prnewswire.com/news-releases/mach-industries-awarded-diu-contract-for-runway-independent-maritime-expeditionary-strike-capability-302801301.html"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Mach Industries press release - Founded in 2023, About Mach Industries boilerplate",
+        "checked": "2026-09-03",
+        "url": "https://www.prnewswire.com/news-releases/mach-industries-awarded-diu-contract-for-runway-independent-maritime-expeditionary-strike-capability-302801301.html"
+      },
+      {
+        "field": "status",
+        "label": "Mach Industries press release - privately backed by Sequoia Capital and Bedrock Capital",
+        "checked": "2026-09-03",
+        "url": "https://www.prnewswire.com/news-releases/mach-industries-selected-by-army-for-contract-to-develop-strategic-strike-aircraft-302391002.html"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC Form D 2025 - issuer previous name Trident Industries 2022 Inc.",
+        "checked": "2026-09-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/1995957/000123191925000091/primary_doc.xml"
+      },
+      {
+        "field": "sector",
+        "label": "Mach Industries - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.machindustries.com/"
+      },
+      {
+        "field": "sector",
+        "label": "Mach Industries press release - defense manufacturing company",
+        "checked": "2026-09-03",
+        "url": "https://www.prnewswire.com/news-releases/mach-industries-awarded-diu-contract-for-runway-independent-maritime-expeditionary-strike-capability-302801301.html"
+      },
+      {
+        "field": "subsector",
+        "label": "Mach Industries - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.machindustries.com/"
+      }
+    ],
+    "lastChecked": "2026-09-03"
   },
   "mambu": {
     "companyId": "mambu",
@@ -1261,6 +1574,91 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Mercury Payment Systems Form S-1 registration statement (SEC EDGAR)",
         "url": "https://www.sec.gov/Archives/edgar/data/1593875/000119312514121634/d637391ds1.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "mindrobotics": {
+    "companyId": "mindrobotics",
+    "name": "Mind Robotics",
+    "legalName": "Mind Robotics, LLC",
+    "website": "https://mindrobotics.com",
+    "description": "Industrial robotics company building foundation models, purpose-built robots and deployment infrastructure to automate industrial and manufacturing tasks, beginning with automotive manufacturing.",
+    "hqCity": "Palo Alto",
+    "hqCountry": "United States",
+    "foundedYear": 2025,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Robotics",
+    "subsector": "AI-enabled industrial and manufacturing robots",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Mind Robotics - Privacy Policy (Mind Robotics, LLC)",
+        "url": "https://mindrobotics.com/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Mind Robotics - Official site",
+        "url": "https://mindrobotics.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Business Wire - Mind Robotics company-issued release, About Mind Robotics boilerplate",
+        "url": "https://www.businesswire.com/news/home/20260311414783/en/Mind-Robotics-Announces-$500M-Financing-to-Support-Deployment-of-AI-Powered-Robots-at-Industrial-Scale",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Mind Robotics - Official site",
+        "url": "https://mindrobotics.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Business Wire - headquartered in Palo Alto, California",
+        "url": "https://www.businesswire.com/news/home/20260311414783/en/Mind-Robotics-Announces-$500M-Financing-to-Support-Deployment-of-AI-Powered-Robots-at-Industrial-Scale",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Mind Robotics - Official site (Palo Alto, CA)",
+        "url": "https://mindrobotics.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Business Wire - headquartered in Palo Alto, California",
+        "url": "https://www.businesswire.com/news/home/20260311414783/en/Mind-Robotics-Announces-$500M-Financing-to-Support-Deployment-of-AI-Powered-Robots-at-Industrial-Scale",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Business Wire - Founded by RJ Scaringe in 2025",
+        "url": "https://www.businesswire.com/news/home/20260311414783/en/Mind-Robotics-Announces-$500M-Financing-to-Support-Deployment-of-AI-Powered-Robots-at-Industrial-Scale",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Business Wire - private 500M USD financing announcement",
+        "url": "https://www.businesswire.com/news/home/20260311414783/en/Mind-Robotics-Announces-$500M-Financing-to-Support-Deployment-of-AI-Powered-Robots-at-Industrial-Scale",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Business Wire - AI-enabled industrial robotics company",
+        "url": "https://www.businesswire.com/news/home/20260311414783/en/Mind-Robotics-Announces-$500M-Financing-to-Support-Deployment-of-AI-Powered-Robots-at-Industrial-Scale",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Mind Robotics - Official site",
+        "url": "https://mindrobotics.com/",
         "checked": "2026-09-03"
       }
     ],
@@ -2461,6 +2859,190 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "navigateai": {
+    "companyId": "navigateai",
+    "name": "NavigateAI",
+    "legalName": "NavigateAI, Inc.",
+    "website": "https://www.navigate.ai",
+    "description": "AI copilot software for field workers, used by owners, operators, builders and trades teams to coach staff, run real-time quality control, manage projects in the background and supply expert knowledge on site.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2025,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "AI copilot for field, construction and trades workers",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "NavigateAI - Official Site",
+        "url": "https://www.navigate.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "NavigateAI - Official Site footer, copyright 2026 NavigateAI, Inc. All rights reserved",
+        "url": "https://www.navigate.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "NavigateAI - Company page footer, copyright 2026 NavigateAI, Inc.",
+        "url": "https://www.navigate.ai/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "NavigateAI - Official Site product description, AI copilot for every person in the field",
+        "url": "https://www.navigate.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "NavigateAI - Company page, upskills and coaches your team, runs real-time quality control",
+        "url": "https://www.navigate.ai/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "NavigateAI company-issued launch release, About NavigateAI boilerplate: NavigateAI is based in San Francisco",
+        "url": "https://www.globenewswire.com/news-release/2026/05/26/3301425/0/en/navigateai-launches-to-build-the-ai-copilot-for-the-physical-world.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "NavigateAI company-issued launch release, About NavigateAI boilerplate: based in San Francisco",
+        "url": "https://www.globenewswire.com/news-release/2026/05/26/3301425/0/en/navigateai-launches-to-build-the-ai-copilot-for-the-physical-world.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "NavigateAI company-issued launch release, About NavigateAI boilerplate: Founded in 2025",
+        "url": "https://www.globenewswire.com/news-release/2026/05/26/3301425/0/en/navigateai-launches-to-build-the-ai-copilot-for-the-physical-world.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "NavigateAI company-issued launch release describing a 25M USD private seed financing; no registration statement or exchange listing found",
+        "url": "https://www.globenewswire.com/news-release/2026/05/26/3301425/0/en/navigateai-launches-to-build-the-ai-copilot-for-the-physical-world.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "NavigateAI - Company page describing an AI copilot product for field teams",
+        "url": "https://www.navigate.ai/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "NavigateAI - Official Site, AI copilot for every person in the field",
+        "url": "https://www.navigate.ai/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "nekohealth": {
+    "companyId": "nekohealth",
+    "name": "Neko Health",
+    "legalName": "Neko Health AB",
+    "website": "https://www.nekohealth.com",
+    "description": "Preventive health company that designs its own body-scanning devices and operates its own clinics, where a one-hour health scan checks heart, skin, blood and metabolic health and the results are explained by a clinician the same day.",
+    "hqCity": "Stockholm",
+    "hqCountry": "Sweden",
+    "foundedYear": 2018,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Healthcare",
+    "subsector": "preventive health screening clinics with proprietary scanning devices",
+    "tickers": [],
+    "formerNames": [
+      "HJN Sverige AB"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Neko Health - Privacy Notice, Neko Health AB, with registration number 559170-5396",
+        "url": "https://legal.nekohealth.com/documents/privacy-policy/se/2025-10-privacy-policy.en.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Neko Health - site footer (c) 2026 Neko Health AB",
+        "url": "https://www.nekohealth.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Neko Health - Official site",
+        "url": "https://www.nekohealth.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Neko Health - Official site (Neko's health scan checks your heart, skin, blood, and metabolic health in one hour)",
+        "url": "https://www.nekohealth.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Neko Health - About us",
+        "url": "https://www.nekohealth.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Neko Health - About us (Est. 2018, Stockholm, Sweden; devices designed and assembled in our Stockholm facility)",
+        "url": "https://www.nekohealth.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Neko Health - About us (Stockholm, Sweden)",
+        "url": "https://www.nekohealth.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Neko Health - About us (Est. 2018; Since 2018, we've been engineering the solution)",
+        "url": "https://www.nekohealth.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "TechCrunch - Neko raises 260M at a 1.8B valuation in a private round",
+        "url": "https://techcrunch.com/2025/01/22/neko-the-body-scanning-startup-co-founded-by-spotifys-daniel-ek-snaps-up-260m-at-a-1-8b-valuation",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Neko Health - About us (clinical model, locations, more than half of Neko is clinical)",
+        "url": "https://www.nekohealth.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Neko Health - About us (locations, health scan, proprietary devices)",
+        "url": "https://www.nekohealth.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Neko Health - 2023 Swedish privacy notice naming HJN Sverige AB with organisationsnummer 559170-5396, the same organisation number the current privacy notice gives for Neko Health AB",
+        "url": "https://legal.nekohealth.com/pdfs/privacy-policy/2023-02-24-Neko-Health-Privacy-Notice.sv.pdf",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Neko Health - 2025 privacy notice, Neko Health AB, with registration number 559170-5396",
+        "url": "https://legal.nekohealth.com/documents/privacy-policy/se/2025-10-privacy-policy.en.pdf",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "nest": {
     "companyId": "nest",
     "name": "Nest",
@@ -2941,6 +3523,194 @@ Object.assign(COMPANIES, {
         "field": "tickers",
         "label": "Nextdoor Holdings, Inc. - Form 8-K exhibit 99.1 announcing the ticker symbol change from KIND to NXDR effective July 21, 2025 (SEC EDGAR)",
         "url": "https://www.sec.gov/Archives/edgar/data/1846069/000184606925000087/exhibit991-stocktickerande.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "nominal": {
+    "companyId": "nominal",
+    "name": "Nominal",
+    "legalName": "Nominal, Inc.",
+    "website": "https://nominal.io",
+    "description": "Software platform for testing and operating hardware, providing telemetry data infrastructure, hardware-in-the-loop test automation and real-time monitoring for aerospace, defense, robotics, energy and advanced manufacturing teams.",
+    "hqCity": "Austin",
+    "hqCountry": "United States",
+    "foundedYear": 2022,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Industrial & Manufacturing Technology",
+    "subsector": "test, telemetry and validation software for hardware engineering",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Nominal - Official Site",
+        "url": "https://nominal.io/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Nominal - Official Site footer, copyright 2026 Nominal, Inc",
+        "url": "https://nominal.io/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR Form D primary document, entityName Nominal, Inc., filed 2026-03-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/1956231/000195623126000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Nominal - Official Site product description",
+        "url": "https://nominal.io/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Nominal company press release, About Nominal boilerplate",
+        "url": "https://natlawreview.com/press-releases/nominal-valued-1b-founders-fund-leads-80m-acceleration-round",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Nominal company press release 2026-03-05, About Nominal boilerplate: The company is headquartered in Austin",
+        "url": "https://natlawreview.com/press-releases/nominal-valued-1b-founders-fund-leads-80m-acceleration-round",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR Form D 2026-03-06, issuer principal place of business 1018 W 11TH ST., Suite 200, Austin, TX 78703",
+        "url": "https://www.sec.gov/Archives/edgar/data/1956231/000195623126000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR Form D 2026-03-06, issuer address in Austin, TX, United States",
+        "url": "https://www.sec.gov/Archives/edgar/data/1956231/000195623126000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR Form D 2026-03-06, Year of Incorporation 2022",
+        "url": "https://www.sec.gov/Archives/edgar/data/1956231/000195623126000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Nominal company press release: Founded in 2022 by engineers and operators from Anduril, Lockheed Martin, and Palantir",
+        "url": "https://www.prnewswire.com/news-releases/nominal-raises-75-million-led-by-sequoia-capital-to-modernize-hardware-testing-302479991.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR Form D exempt private placement filed by Nominal, Inc. 2026-03-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/1956231/000195623126000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Nominal - Official Site, unified software suite to test and operate hardware",
+        "url": "https://nominal.io/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Nominal - Official Site, telemetry, hardware-in-the-loop automation and live monitoring",
+        "url": "https://nominal.io/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "normai": {
+    "companyId": "normai",
+    "name": "Norm Ai",
+    "legalName": "Nomos AI, Inc.",
+    "website": "https://www.norm.ai",
+    "description": "Converts regulations, laws, corporate policies and legal obligations into AI agents that run legal and compliance workflows and govern AI agents operating in regulated environments.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2023,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Legal Tech",
+    "subsector": "regulatory and legal compliance AI agents",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Form D primary document, Nomos AI, Inc. (CIK 0002027416), filed 2026-06-24",
+        "url": "https://www.sec.gov/Archives/edgar/data/2027416/000202741626000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Norm Ai - site footer (c) 2026 Nomos Ai, Inc.",
+        "url": "https://www.norm.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Norm Ai - Official site",
+        "url": "https://www.norm.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Norm Ai - Official site",
+        "url": "https://www.norm.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "PR Newswire - Norm Ai company-issued release, About Norm Ai boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/norm-ai-secures-48-million-to-transform-regulations-into-compliance-ai-agents-302398351.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "LawSites - Norm Ai, the New York-based legal and compliance AI company",
+        "url": "https://www.lawnext.com/2026/07/norm-ai-hits-unicorn-status-with-120m-series-c-at-1-2-billion-valuation.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Nomos AI, Inc. business address, New York, NY",
+        "url": "https://data.sec.gov/submissions/CIK0002027416.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Nomos AI, Inc. business address, New York, NY",
+        "url": "https://data.sec.gov/submissions/CIK0002027416.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Norm Ai - Official site timeline (July 2023: Norm Ai Founded)",
+        "url": "https://www.norm.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Nomos AI, Inc. Regulation D Form D filings 2024, 2025 and 2026",
+        "url": "https://data.sec.gov/submissions/CIK0002027416.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "LawSites - legal and compliance AI company, agentic law",
+        "url": "https://www.lawnext.com/2026/07/norm-ai-hits-unicorn-status-with-120m-series-c-at-1-2-billion-valuation.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "PR Newswire - Norm Ai company-issued release",
+        "url": "https://www.prnewswire.com/news-releases/norm-ai-secures-48-million-to-transform-regulations-into-compliance-ai-agents-302398351.html",
         "checked": "2026-09-03"
       }
     ],
@@ -3671,6 +4441,67 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "onyxsecurity": {
+    "companyId": "onyxsecurity",
+    "name": "Onyx Security",
+    "legalName": "Onyx Security Inc",
+    "website": "https://onyx.security",
+    "description": "Security and governance platform that acts as a control plane for enterprise AI agents and models, covering AI observability, security, governance, orchestration and adoption measurement.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "security and governance control plane for enterprise AI agents",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Onyx Security - Official Site",
+        "url": "https://onyx.security/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Onyx Security - Privacy Policy, opening line Onyx Security Inc (Onyx, we, our or us)",
+        "url": "https://onyx.security/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Onyx Security - Official Site, the secure control plane for AI agents and models",
+        "url": "https://onyx.security/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Onyx Security - About page, the company building the secure AI control plane for the agentic era",
+        "url": "https://onyx.security/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Onyx Security company blog announcing 40M USD funding and exit from stealth, 2026-03-12",
+        "url": "https://www.onyx.security/blog/introducing-onyx-security-the-secure-ai-control-plane-for-enterprises",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Onyx Security - Official Site, AI Security, AI Governance and AI Observability capabilities sold to security and governance teams",
+        "url": "https://onyx.security/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Onyx Security - Official Site, secure control plane for AI agents and models",
+        "url": "https://onyx.security/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "openai": {
     "companyId": "openai",
     "name": "OpenAI",
@@ -4362,6 +5193,109 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "pearlhealth": {
+    "companyId": "pearlhealth",
+    "name": "Pearl Health",
+    "legalName": "Pearl Health, Inc.",
+    "website": "https://www.pearlhealth.com",
+    "description": "Value-based care technology company that gives primary care providers patient risk analytics, clinical prioritization, workflow tools and financial models for Medicare programs.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2020,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Digital Health",
+    "subsector": "value-based care enablement software for primary care providers in Medicare",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Pearl Health - Privacy Policy",
+        "url": "https://www.pearlhealth.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Pearl Health, Inc. Form D (CIK 0001959488)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1959488/000123191922000075/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Pearl Health - Official Site",
+        "url": "https://www.pearlhealth.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Pearl Health - Official Site",
+        "url": "https://www.pearlhealth.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Pearl Health raises $110 million - press release, 8 July 2026",
+        "url": "https://www.prnewswire.com/news-releases/pearl-health-raises-110-million-to-expand-its-ai-platform-helping-providers-deliver-better-outcomes-at-lower-cost-for-medicare-patients-302820795.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Pearl Health, Inc. Form D (CIK 0001959488)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1959488/000123191922000075/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Pearl Health - Privacy Policy",
+        "url": "https://www.pearlhealth.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Pearl Health, Inc. Form D (CIK 0001959488)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1959488/000123191922000075/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Pearl Health - Privacy Policy",
+        "url": "https://www.pearlhealth.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Pearl Health - About",
+        "url": "https://www.pearlhealth.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - Pearl Health, Inc. Form D (CIK 0001959488)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1959488/000123191922000075/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Pearl Health raises $110 million - press release, 8 July 2026",
+        "url": "https://www.prnewswire.com/news-releases/pearl-health-raises-110-million-to-expand-its-ai-platform-helping-providers-deliver-better-outcomes-at-lower-cost-for-medicare-patients-302820795.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Pearl Health - Official Site",
+        "url": "https://www.pearlhealth.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Pearl Health - Official Site",
+        "url": "https://www.pearlhealth.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "peloton": {
     "companyId": "peloton",
     "name": "Peloton",
@@ -4557,6 +5491,85 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "petual": {
+    "companyId": "petual",
+    "name": "Petual",
+    "legalName": "Petual, Inc",
+    "website": "https://www.petual.ai",
+    "description": "AI platform for internal audit and compliance teams that uses agents to perform control testing on enterprise datasets and generate audit documentation, including SOX workflows.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "agentic AI for internal audit and SOX control testing",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Petual - Official Site",
+        "url": "https://www.petual.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Petual - Official Site footer, Petual, Inc (c) 2026",
+        "url": "https://www.petual.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Petual Privacy Policy page carrying the entity line Petual, Inc (c) 2026",
+        "url": "https://www.petual.ai/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Petual - Official Site: Petual's AI agents deliver audit testing results from any dataset in minutes",
+        "url": "https://www.petual.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Petual Trust Center: Petual is a control test automation platform, supporting IA and SOX workflows",
+        "url": "https://security.petual.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Petual Privacy Policy: Petual is headquartered in San Francisco, CA in the United States",
+        "url": "https://www.petual.ai/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Petual Privacy Policy: Petual is headquartered in San Francisco, CA in the United States",
+        "url": "https://www.petual.ai/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Petual company-issued press release, 2026-04-23, describing a 20M USD private venture financing; no registration statement or exchange listing found on SEC EDGAR",
+        "url": "https://www.prnewswire.com/news-releases/petual-raises-20m-to-bring-agentic-ai-to-enterprise-audit-and-compliance-302751889.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Petual Trust Center describing an enterprise control test automation platform for internal audit and SOX",
+        "url": "https://security.petual.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Petual company-issued press release describing agentic AI brought into control testing for audit and compliance teams",
+        "url": "https://www.prnewswire.com/news-releases/petual-raises-20m-to-bring-agentic-ai-to-enterprise-audit-and-compliance-302751889.html",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
   },
   "physicalintelligence": {
     "companyId": "physicalintelligence",
@@ -5323,6 +6336,115 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "quantummotion": {
+    "companyId": "quantummotion",
+    "name": "Quantum Motion",
+    "legalName": "Quantum Motion Technologies Limited",
+    "website": "https://quantummotion.com",
+    "description": "Builds utility-scale quantum computers using scalable arrays of silicon spin qubits manufactured with standard semiconductor processes.",
+    "hqCity": "London",
+    "hqCountry": "United Kingdom",
+    "foundedYear": 2017,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Deep Tech",
+    "subsector": "silicon-based quantum computing",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Companies House - QUANTUM MOTION TECHNOLOGIES LIMITED, company number 10867089",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/10867089",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Quantum Motion - Official Site",
+        "url": "https://quantummotion.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Quantum Motion - About Quantum Motion boilerplate, Series C release, 7 May 2026",
+        "url": "https://quantummotion.com/quantum-motion-raises-160-million-series-c-to-deliver-quantum-computings-transistor-moment/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Quantum Motion - Official Site",
+        "url": "https://quantummotion.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Quantum Motion - written evidence to UK Parliament committee: London (Islington) headquarters",
+        "url": "https://committees.parliament.uk/writtenevidence/120869/pdf/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Quantum Motion - About, company timeline: opens lab and headquarters in central London",
+        "url": "https://quantummotion.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Quantum Motion - written evidence to UK Parliament committee: based in London",
+        "url": "https://committees.parliament.uk/writtenevidence/120869/pdf/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Companies House - registered office 9 Sterling Way, London N7 9HJ",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/10867089",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Quantum Motion - About, company timeline: founded by Simon Benjamin and John Morton, 2017",
+        "url": "https://quantummotion.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Companies House - incorporated 14 July 2017",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/10867089",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Companies House - company status Active, private limited company 10867089",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/10867089",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Quantum Motion - 160M USD Series C funding announcement, 7 May 2026",
+        "url": "https://quantummotion.com/quantum-motion-raises-160-million-series-c-to-deliver-quantum-computings-transistor-moment/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Quantum Motion - About Quantum Motion boilerplate describing silicon-based quantum computers",
+        "url": "https://quantummotion.com/quantum-motion-raises-160-million-series-c-to-deliver-quantum-computings-transistor-moment/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Quantum Motion - Official Site: scalable silicon-based quantum computing",
+        "url": "https://quantummotion.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Companies House - no previous company names and no change-of-name filings",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/10867089/filing-history?category=change-of-name",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "quantumscape": {
     "companyId": "quantumscape",
     "name": "QuantumScape",
@@ -5429,6 +6551,87 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "QuantumScape - official company page, solid ceramic electrolyte separator and lithium-metal batteries",
         "url": "https://www.quantumscape.com/company/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "quo": {
+    "companyId": "quo",
+    "name": "Quo",
+    "legalName": null,
+    "website": "https://www.quo.com",
+    "description": "Business phone and messaging software that combines calls, texts, contacts and AI agents in a shared workspace for small and growing businesses.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": 2018,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "business phone, messaging and shared inbox software for small businesses",
+    "tickers": [],
+    "formerNames": [
+      "OpenPhone"
+    ],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Quo - Official Site",
+        "url": "https://www.quo.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Quo - Official Site",
+        "url": "https://www.quo.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "OpenPhone Becomes Quo - press release, 23 September 2025",
+        "url": "https://www.prnewswire.com/news-releases/openphone-becomes-quo-new-name-updated-products-and-105-million-in-growth-financing-mark-major-inflection-point-for-ai-driven-front-office-solution-302562915.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Quo - About",
+        "url": "https://www.quo.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "OpenPhone Becomes Quo - press release, 23 September 2025",
+        "url": "https://www.prnewswire.com/news-releases/openphone-becomes-quo-new-name-updated-products-and-105-million-in-growth-financing-mark-major-inflection-point-for-ai-driven-front-office-solution-302562915.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Quo - Official Site",
+        "url": "https://www.quo.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Quo - Official Site",
+        "url": "https://www.quo.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Quo - OpenPhone is now Quo",
+        "url": "https://www.quo.com/blog/next-chapter/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "OpenPhone Becomes Quo - press release, 23 September 2025",
+        "url": "https://www.prnewswire.com/news-releases/openphone-becomes-quo-new-name-updated-products-and-105-million-in-growth-financing-mark-major-inflection-point-for-ai-driven-front-office-solution-302562915.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Quo - About",
+        "url": "https://www.quo.com/about",
         "checked": "2026-09-03"
       }
     ],
@@ -5876,6 +7079,67 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "SEC Form 10-K for fiscal year 2025, Item 1 Business - Recursion Operating System drug discovery platform",
         "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000039/rxrx-20251231.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "recursivesuperintelligence": {
+    "companyId": "recursivesuperintelligence",
+    "name": "Recursive Superintelligence",
+    "legalName": "Recursive Superintelligence, Inc.",
+    "website": "https://recursive.com",
+    "description": "AI research company developing self-improving AI systems, applied first to AI research itself.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "self-improving AI research",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Recursive - Privacy Policy, entity Recursive Superintelligence, Inc.",
+        "url": "https://recursive.com/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Recursive - Official Site footer, 2026 Recursive Superintelligence, Inc.",
+        "url": "https://recursive.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Recursive - Official Site",
+        "url": "https://recursive.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Recursive - Official Site: recursive self-improving superintelligence to automate knowledge discovery",
+        "url": "https://recursive.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Tech.eu - Recursive Superintelligence emerges from stealth with 650M USD raise, privately held venture round",
+        "url": "https://tech.eu/2026/05/13/recursive-superintelligence-emerges-from-stealth-with-650m-raise/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Recursive - Official Site: AI that recursively improves itself",
+        "url": "https://recursive.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Recursive - Official Site: AI that recursively improves itself, applied first to AI research",
+        "url": "https://recursive.com/",
         "checked": "2026-09-03"
       }
     ],
@@ -7761,6 +9025,103 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "runsybil": {
+    "companyId": "runsybil",
+    "name": "RunSybil",
+    "legalName": "Runsybil Corp.",
+    "website": "https://www.runsybil.com",
+    "description": "AI-powered offensive security platform that continuously tests applications and infrastructure for exploitable vulnerabilities.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2023,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "AI-driven offensive security and penetration testing",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "RunSybil - Official Site",
+        "url": "https://www.runsybil.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "RunSybil - Official Site homepage description",
+        "url": "https://www.runsybil.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "RunSybil - About / Company page",
+        "url": "https://www.runsybil.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "RunSybil - Terms of Service naming Runsybil Corp",
+        "url": "https://prod.runsybil.com/tos",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Runsybil Corp. Form D primary document (entityName)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2113497/000211349726000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Runsybil Corp. Form D, principal place of business San Francisco CA",
+        "url": "https://www.sec.gov/Archives/edgar/data/2113497/000211349726000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Runsybil Corp. Form D, principal place of business San Francisco CA",
+        "url": "https://www.sec.gov/Archives/edgar/data/2113497/000211349726000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - Runsybil Corp. Form D, Year of Incorporation 2023",
+        "url": "https://www.sec.gov/Archives/edgar/data/2113497/000211349726000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Runsybil Corp. Form D exempt (unregistered) offering, no registered offering on file",
+        "url": "https://data.sec.gov/submissions/CIK0002113497.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "RunSybil - Series A funding announcement on own blog",
+        "url": "https://www.runsybil.com/blog/runsybil-raises-40m-to-build-the-ai-native-platform-for-offensive-security",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "RunSybil - Official Site, offensive security platform",
+        "url": "https://www.runsybil.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "RunSybil - About / Company page, automating hacker intuition and exploitation",
+        "url": "https://www.runsybil.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - Runsybil Corp. Form D, issuerPreviousNameList value None",
+        "url": "https://www.sec.gov/Archives/edgar/data/2113497/000211349726000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "runway": {
     "companyId": "runway",
     "name": "Runway",
@@ -7846,6 +9207,67 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "sable": {
+    "companyId": "sable",
+    "name": "Sable",
+    "legalName": "Sable AI Inc.",
+    "website": "https://withsable.com",
+    "description": "Developer of Aidan, an AI agent that uses real-time browser control, vision and voice to run live product demonstration and onboarding calls on behalf of business customers.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "AI agent for customer-facing product demonstration and onboarding calls",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Sable - Official Site",
+        "url": "https://withsable.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Sable AI - Privacy Policy, contracting entity Sable AI Inc.",
+        "url": "https://app.withsable.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Sable AI - Privacy Policy: Sable AI Inc. provides an artificial intelligence agent that conducts live product demonstration and onboarding sessions on behalf of our business customers",
+        "url": "https://app.withsable.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Sable - Official Site, Aidan described as the first AI employee powered by real time browser use and vision",
+        "url": "https://withsable.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Sable company press release 2026-07-16 announcing a 45M USD private round from Sequoia Capital and 8VC",
+        "url": "https://www.newswire.com/news/sable-raises-45m-to-build-the-first-ai-employee-that-can-click-see-and-explain",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Sable - Official Site, AI employee product running customer calls",
+        "url": "https://withsable.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Sable company press release, About Sable boilerplate",
+        "url": "https://www.newswire.com/news/sable-raises-45m-to-build-the-first-ai-employee-that-can-click-see-and-explain",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "safesuperintelligence": {
     "companyId": "safesuperintelligence",
     "name": "Safe Superintelligence",
@@ -7902,6 +9324,109 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Safe Superintelligence Inc. - Official Site",
         "url": "https://ssi.inc/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "sambanova": {
+    "companyId": "sambanova",
+    "name": "SambaNova",
+    "legalName": "SambaNova Systems, Inc.",
+    "website": "https://sambanova.ai",
+    "description": "Designs AI chips and systems and operates an AI inference cloud platform for enterprises, AI labs and sovereign AI programmes.",
+    "hqCity": "San Jose",
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Hardware",
+    "subsector": "AI inference chips, systems and cloud services",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SambaNova - Privacy Policy, entity SambaNova Systems, Inc.",
+        "url": "https://sambanova.ai/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - submissions for CIK 0001733073, SambaNova Systems, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001733073.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "SambaNova - Official Site, About",
+        "url": "https://sambanova.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "SambaNova - company press release, About SambaNova boilerplate, 24 February 2026",
+        "url": "https://www.businesswire.com/news/home/20260224971025/en/SambaNova-Unveils-Fastest-Chip-for-Agentic-AI-Collaborates-with-Intel-and-Raises-$350M",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "SambaNova - About",
+        "url": "https://sambanova.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SambaNova - company press release: Founded in 2017 and headquartered in San Jose, Calif.",
+        "url": "https://www.businesswire.com/news/home/20260224971025/en/SambaNova-Unveils-Fastest-Chip-for-Agentic-AI-Collaborates-with-Intel-and-Raises-$350M",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SambaNova - Privacy Policy corporate address, 2460 N. First St, Suite 100, San Jose, CA 95131",
+        "url": "https://sambanova.ai/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SambaNova - company press release: headquartered in San Jose, Calif.",
+        "url": "https://www.businesswire.com/news/home/20260224971025/en/SambaNova-Unveils-Fastest-Chip-for-Agentic-AI-Collaborates-with-Intel-and-Raises-$350M",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SambaNova - About: SambaNova was founded in 2017 in Palo Alto, California",
+        "url": "https://sambanova.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SambaNova - company press release: Founded in 2017",
+        "url": "https://www.businesswire.com/news/home/20260224971025/en/SambaNova-Unveils-Fastest-Chip-for-Agentic-AI-Collaborates-with-Intel-and-Raises-$350M",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SambaNova - company press release, Series E of over 350M USD led by Vista Equity Partners and Cambium Capital, 24 February 2026",
+        "url": "https://www.businesswire.com/news/home/20260224971025/en/SambaNova-Unveils-Fastest-Chip-for-Agentic-AI-Collaborates-with-Intel-and-Raises-$350M",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "SambaNova - company press release, About SambaNova boilerplate: delivers chips, systems and cloud services",
+        "url": "https://www.businesswire.com/news/home/20260224971025/en/SambaNova-Unveils-Fastest-Chip-for-Agentic-AI-Collaborates-with-Intel-and-Raises-$350M",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "SambaNova - company press release, About SambaNova boilerplate: chips, systems and cloud services for AI inference",
+        "url": "https://www.businesswire.com/news/home/20260224971025/en/SambaNova-Unveils-Fastest-Chip-for-Agentic-AI-Collaborates-with-Intel-and-Raises-$350M",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - submissions for CIK 0001733073, formerNames array empty",
+        "url": "https://data.sec.gov/submissions/CIK0001733073.json",
         "checked": "2026-09-03"
       }
     ],
@@ -11527,6 +13052,93 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "sweetgreen": {
+    "companyId": "sweetgreen",
+    "name": "Sweetgreen",
+    "legalName": "Sweetgreen, Inc.",
+    "website": "https://www.sweetgreen.com",
+    "description": "Fast casual restaurant company serving salads, bowls and other made-to-order food. As of June 28, 2026 it owned and operated 287 restaurants in 24 states and Washington, D.C.",
+    "hqCity": "Los Angeles",
+    "hqCountry": "United States",
+    "foundedYear": 2007,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "fast casual restaurants",
+    "tickers": [
+      "NYSE:SG"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Sweetgreen, Inc. - Form 10-Q for the quarter ended June 28, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477815/000162828026054522/sg-20260628.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Sweetgreen, Inc. - Form S-1 Exhibit 3.1 certificate of incorporation, Article I name clause",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477815/000119312521306603/d104360dex31.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "sweetgreen - official site",
+        "url": "https://www.sweetgreen.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Sweetgreen, Inc. - Form 10-Q for the quarter ended June 28, 2026, Note 1 and restaurant count",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477815/000162828026054522/sg-20260628.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Sweetgreen, Inc. - Form 10-Q for the quarter ended June 28, 2026, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477815/000162828026054522/sg-20260628.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Sweetgreen, Inc. - Form 10-Q for the quarter ended June 28, 2026, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477815/000162828026054522/sg-20260628.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Sweetgreen, Inc. - Form S-1 (In 2007, we started with a 560-square-foot restaurant in Washington, D.C.)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477815/000119312521306603/d104360ds1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Sweetgreen, Inc. - Form 10-Q for the quarter ended June 28, 2026, securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477815/000162828026054522/sg-20260628.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Sweetgreen, Inc. - Form 10-Q for the quarter ended June 28, 2026, Class A Common Stock trading symbol SG on the New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477815/000162828026054522/sg-20260628.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Sweetgreen, Inc. - Form 10-Q for the quarter ended June 28, 2026, Note 1 restaurant operations and owned restaurant count",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477815/000162828026054522/sg-20260628.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Sweetgreen, Inc. - Form 10-Q for the quarter ended June 28, 2026, Note 1 restaurant operations",
+        "url": "https://www.sec.gov/Archives/edgar/data/1477815/000162828026054522/sg-20260628.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "synthesia": {
     "companyId": "synthesia",
     "name": "Synthesia",
@@ -11920,6 +13532,85 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "terrafirma": {
+    "companyId": "terrafirma",
+    "name": "TerraFirma",
+    "legalName": "TerraFirma, Inc.",
+    "website": "https://terrafirma.inc",
+    "description": "Vertically integrated construction company that builds and operates its own semi-autonomous robotics and software for earthworks and site operations, keeping skilled operators out of equipment cabs.",
+    "hqCity": "Austin",
+    "hqCountry": "United States",
+    "foundedYear": 2024,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Robotics",
+    "subsector": "semi-autonomous construction and earthworks robotics",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "TerraFirma - site footer, 2026 TerraFirma, Inc.",
+        "url": "https://terrafirma.inc/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "TerraFirma - Official site",
+        "url": "https://terrafirma.inc/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Business Wire - TerraFirma company-issued release, About TerraFirma boilerplate",
+        "url": "https://www.businesswire.com/news/home/20260714397606/en/TerraFirma-Raises-$115M-to-Accelerate-Construction-on-Earth-and-Beyond",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "TerraFirma - Official site",
+        "url": "https://terrafirma.inc/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Business Wire - TerraFirma is based in Austin, Texas",
+        "url": "https://www.businesswire.com/news/home/20260714397606/en/TerraFirma-Raises-$115M-to-Accelerate-Construction-on-Earth-and-Beyond",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Business Wire - TerraFirma is based in Austin, Texas",
+        "url": "https://www.businesswire.com/news/home/20260714397606/en/TerraFirma-Raises-$115M-to-Accelerate-Construction-on-Earth-and-Beyond",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Business Wire - Founded in 2024 by former SpaceX engineers Noah Schochet and Noah McGuinness",
+        "url": "https://www.businesswire.com/news/home/20260714397606/en/TerraFirma-Raises-$115M-to-Accelerate-Construction-on-Earth-and-Beyond",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Business Wire - private 115M USD financing round",
+        "url": "https://www.businesswire.com/news/home/20260714397606/en/TerraFirma-Raises-$115M-to-Accelerate-Construction-on-Earth-and-Beyond",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Business Wire - robotic earthworks and site operations",
+        "url": "https://www.businesswire.com/news/home/20260714397606/en/TerraFirma-Raises-$115M-to-Accelerate-Construction-on-Earth-and-Beyond",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Business Wire - About TerraFirma boilerplate",
+        "url": "https://www.businesswire.com/news/home/20260714397606/en/TerraFirma-Raises-$115M-to-Accelerate-Construction-on-Earth-and-Beyond",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
   },
   "tesla": {
     "companyId": "tesla",
@@ -12765,6 +14456,109 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "twelvelabs": {
+    "companyId": "twelvelabs",
+    "name": "TwelveLabs",
+    "legalName": "Twelve Labs, Inc.",
+    "website": "https://www.twelvelabs.io",
+    "description": "Video AI company building multimodal video foundation models and APIs that let software search, analyse and understand video across vision, audio and language.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2021,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "multimodal video understanding foundation models and APIs",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "TwelveLabs - Official Site",
+        "url": "https://www.twelvelabs.io/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR Form D primary document filed 2024-06-12, entityName Twelve Labs, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1952506/000195250624000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "TwelveLabs Privacy Policy naming Twelve Labs Inc. and address 55 Green St, San Francisco, CA 94111",
+        "url": "https://www.twelvelabs.io/legal/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "TwelveLabs - Official Site, enterprise video AI platform to search, analyze, and understand video across vision, audio, and language",
+        "url": "https://www.twelvelabs.io/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "TwelveLabs - About Us, pioneering video-native multimodal AI, building foundation models",
+        "url": "https://www.twelvelabs.io/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR Form D 2024-06-12, primary issuer principal place of business 55 Green Street, SAN FRANCISCO, CA 94111",
+        "url": "https://www.sec.gov/Archives/edgar/data/1952506/000195250624000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "TwelveLabs - About Us, San Francisco office 55 Green Street, San Francisco, CA 94111",
+        "url": "https://www.twelvelabs.io/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR Form D 2024-06-12, issuer address in San Francisco, CA, United States",
+        "url": "https://www.sec.gov/Archives/edgar/data/1952506/000195250624000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR Form D 2022-12-15 and 2024-06-12, yearOfInc withinFiveYears value 2021",
+        "url": "https://www.sec.gov/Archives/edgar/data/1952506/000195250622000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR Form D 2024-06-12, yearOfInc value 2021",
+        "url": "https://www.sec.gov/Archives/edgar/data/1952506/000195250624000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR Form D Regulation D private placements 2022, 2023 and 2024; no registration statement or exchange listing on EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1952506/000195250624000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions record for CIK 0001952506, entityType other, no periodic reporting filings",
+        "url": "https://data.sec.gov/submissions/CIK0001952506.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "TwelveLabs - About Us, building video-native multimodal AI foundation models",
+        "url": "https://www.twelvelabs.io/about-us",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "TwelveLabs - Official Site, multimodal video intelligence platform for search, analysis and understanding of video",
+        "url": "https://www.twelvelabs.io/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "twilio": {
     "companyId": "twilio",
     "name": "Twilio",
@@ -13286,6 +15080,85 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "upwind": {
+    "companyId": "upwind",
+    "name": "Upwind",
+    "legalName": null,
+    "website": "https://www.upwind.io",
+    "description": "Cloud and AI security platform that combines agentless scanning with runtime sensors for cloud posture management, vulnerability prioritization, and threat detection and response.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2022,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "cloud-native application protection platform with runtime sensors",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Upwind - Official Site",
+        "url": "https://www.upwind.io/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Upwind - Official Site",
+        "url": "https://www.upwind.io/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Cloud Security Unicorn Upwind Secures $250 Million Series B - company press release, 26 January 2026",
+        "url": "https://www.businesswire.com/news/home/20260126965572/en/Cloud-Security-Unicorn-Upwind-Secures-$250-Million-Series-B",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Cloud Security Unicorn Upwind Secures $250 Million Series B - company press release, 26 January 2026",
+        "url": "https://www.businesswire.com/news/home/20260126965572/en/Cloud-Security-Unicorn-Upwind-Secures-$250-Million-Series-B",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Cloud Security Unicorn Upwind Secures $250 Million Series B - company press release, 26 January 2026",
+        "url": "https://www.businesswire.com/news/home/20260126965572/en/Cloud-Security-Unicorn-Upwind-Secures-$250-Million-Series-B",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Cloud Security Unicorn Upwind Secures $250 Million Series B - company press release, 26 January 2026",
+        "url": "https://www.businesswire.com/news/home/20260126965572/en/Cloud-Security-Unicorn-Upwind-Secures-$250-Million-Series-B",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Upwind reels in $300M for its automated cloud security platform - SiliconANGLE, 3 September 2026",
+        "url": "https://siliconangle.com/2026/09/03/upwind-reels-in-300m-for-its-automated-cloud-security-platform/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Cloud Security Unicorn Upwind Secures $250 Million Series B - company press release, 26 January 2026",
+        "url": "https://www.businesswire.com/news/home/20260126965572/en/Cloud-Security-Unicorn-Upwind-Secures-$250-Million-Series-B",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Upwind - Official Site",
+        "url": "https://www.upwind.io/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Upwind - Official Site",
+        "url": "https://www.upwind.io/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "vanta": {
     "companyId": "vanta",
     "name": "Vanta",
@@ -13740,6 +15613,97 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "wayfair": {
+    "companyId": "wayfair",
+    "name": "Wayfair",
+    "legalName": "Wayfair Inc.",
+    "website": "https://www.wayfair.com",
+    "description": "Online retailer of furniture, decor and other home goods, operating an e-commerce platform for home products.",
+    "hqCity": "Boston",
+    "hqCountry": "United States",
+    "foundedYear": 2002,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Ecommerce",
+    "subsector": "online retail of furniture and home goods",
+    "tickers": [
+      "NYSE:W"
+    ],
+    "formerNames": [
+      "Smart Tech Toys, Inc.",
+      "CSN Stores, Inc.",
+      "CSN Stores LLC"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Wayfair Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1616707/000161670726000150/w-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Wayfair - official site",
+        "url": "https://www.wayfair.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Wayfair Inc. - Form 10-K for fiscal 2025, Item 1 Business overview",
+        "url": "https://www.sec.gov/Archives/edgar/data/1616707/000161670726000027/w-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Wayfair Inc. - Form 10-Q for the quarter ended June 30, 2026, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1616707/000161670726000150/w-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Wayfair Inc. - Form 10-Q for the quarter ended June 30, 2026, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1616707/000161670726000150/w-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Wayfair Inc. - Form 424B4 IPO prospectus (began operating as Smart Tech Toys, Inc., a Massachusetts corporation, in May 2002)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1616707/000104746914008030/a2221633z424b4.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Wayfair Inc. - Form 10-Q for the quarter ended June 30, 2026, securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1616707/000161670726000150/w-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Wayfair Inc. - Form 10-Q for the quarter ended June 30, 2026, Class A Common Stock trading symbol W on The New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1616707/000161670726000150/w-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Wayfair Inc. - Form 10-K for fiscal 2025, Item 1 Business (e-commerce platform for the home)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1616707/000161670726000027/w-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Wayfair Inc. - Form 10-K for fiscal 2025, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1616707/000161670726000027/w-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Wayfair Inc. - Form 424B4 IPO prospectus, Company Information and Reorganization (Smart Tech Toys, Inc.; CSN Stores, Inc.; CSN Stores LLC renamed Wayfair LLC)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1616707/000104746914008030/a2221633z424b4.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
   },
   "waymo": {
     "companyId": "waymo",
@@ -14477,6 +16441,85 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "wispr": {
+    "companyId": "wispr",
+    "name": "Wispr",
+    "legalName": "Wispr AI, Inc.",
+    "website": "https://wisprflow.ai",
+    "description": "Voice interface company that develops Wispr Flow, a dictation product that turns speech into written text inside other applications, together with a meeting notetaker.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2023,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "voice dictation and voice-native computing interfaces",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Wispr Flow - Official Site",
+        "url": "https://wisprflow.ai/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Wispr Flow Terms of Service opening paragraph naming Wispr AI, Inc. (Wispr)",
+        "url": "https://wisprflow.ai/terms-of-service",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Wispr Flow Help Center, Security and compliance FAQ: Wispr AI, Inc. is a privately held Delaware C-corporation",
+        "url": "https://docs.wisprflow.ai/articles/3467817258-security-and-compliance-faq",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Wispr Flow About page: Flow makes writing quick and clear with seamless voice dictation; Wispr Flow Dictation and Wispr Flow Notetaker products",
+        "url": "https://wisprflow.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Wispr Flow Help Center, Security and compliance FAQ: Headquarters 444 Townsend Street, San Francisco, CA 94107, United States",
+        "url": "https://docs.wisprflow.ai/articles/3467817258-security-and-compliance-faq",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Wispr Flow Help Center, Security and compliance FAQ: 444 Townsend Street, San Francisco, CA 94107, United States",
+        "url": "https://docs.wisprflow.ai/articles/3467817258-security-and-compliance-faq",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Wispr Flow Help Center, Security and compliance FAQ: Wispr AI, Inc. ... founded in 2023",
+        "url": "https://docs.wisprflow.ai/articles/3467817258-security-and-compliance-faq",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Wispr Flow Help Center, Security and compliance FAQ: a privately held Delaware C-corporation",
+        "url": "https://docs.wisprflow.ai/articles/3467817258-security-and-compliance-faq",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Wispr Flow About page describing AI researchers and engineers rethinking how humans interact with technology through voice",
+        "url": "https://wisprflow.ai/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Wispr Flow About page, the voice-to-text AI that turns speech into clear, polished writing in every app",
+        "url": "https://wisprflow.ai/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
   },
   "wiz": {
     "companyId": "wiz",
@@ -15304,6 +17347,73 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Zendesk Newsroom - press release with About Zendesk boilerplate",
         "url": "https://www.zendesk.com/newsroom/press-releases/alliants-secures-investment-from-zendesk/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "zenity": {
+    "companyId": "zenity",
+    "name": "Zenity",
+    "legalName": "Zenity Ltd.",
+    "website": "https://zenity.io",
+    "description": "Security and governance platform for AI agents and low-code and no-code development, covering AI security posture management, observability, and detection and response.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": 2021,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "security and governance for AI agents and low-code and no-code platforms",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Zenity - Official Site company page",
+        "url": "https://zenity.io/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Zenity - Privacy Policy naming Zenity Ltd.",
+        "url": "https://zenity.io/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Zenity - Official Site company page, platform capabilities",
+        "url": "https://zenity.io/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Zenity - Series C announcement on own newsroom",
+        "url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Zenity - About Zenity boilerplate, Established in 2021",
+        "url": "https://www.prnewswire.com/news-releases/zenity-raises-38m-series-b-funding-round-to-secure-agentic-ai-302289584.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Zenity - own newsroom, 125M USD Series C led by Norwest Venture Partners",
+        "url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Zenity - Official Site company page, AI security and governance platform",
+        "url": "https://zenity.io/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Zenity - Official Site company page, securing AI agents and low-code and no-code development",
+        "url": "https://zenity.io/company",
         "checked": "2026-09-03"
       }
     ],
