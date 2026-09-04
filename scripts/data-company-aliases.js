@@ -176,6 +176,36 @@ const COMPANY_ALIASES = [
          listings, and Craft Ventures links its entry to quo.com. Quora
          appears separately under its own name in the same dataset.
          quo.com still needs an entity record. */
+
+  /* Added 2026-09-04 from company batch 7. SIX CONFIRMED COLLISIONS.
+     Each of these strings is TWO real operating companies, each
+     verified from the investing firm's own portfolio page, and both
+     normalise to the same companyId. No suffix was invented and no
+     entity was created for either side.
+
+     They are held rather than split because our datasets join on the
+     NAME, not on an id. We know which company each individual row
+     means - the investor tells us - but a row cannot yet point at one
+     of two entities. Until evidence rows carry a companyId, the honest
+     state is that the bare string does not resolve. cmpResolve returns
+     held-for-review, cmpBuildBackIndex keys these under review: so the
+     two companies' investor lists never merge, and no company page is
+     published on a name we cannot pin down.
+
+     This is the same machinery already holding EDGE, &Open and Epic!,
+     applied to cases that are now proven rather than suspected. */
+  { canonicalCompanyId: "paladin",         alias: "Paladin",             normalizedAlias: "paladin",         aliasType: "COMMON_NAME",     status: "NEEDS_REVIEW",  reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-04",
+    canonicalName: "Paladin",               note: "TWO COMPANIES. Paladin Drones at paladindrones.io, autonomous drones dispatched to 911 calls, Houston, is the Gradient Ventures row reading 'AI for emergency response'. Paladin, PBC at joinpaladin.com, pro bono legal work management, NYC, is the angel row reading 'Legal Tech'. Different domains, entities, founders, cities and sectors. Not merged." },
+  { canonicalCompanyId: "casa",            alias: "Casa",                normalizedAlias: "casa",            aliasType: "COMMON_NAME",     status: "NEEDS_REVIEW",  reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-04",
+    canonicalName: "Casa",                  note: "TWO COMPANIES. Casa at getcasa.com, membership home maintenance, is the 2026-04-30 Proptech deal row; confirmed from lead investor Forerunner's own post, which links the domain and names founders York and Mizrahi. Casa at casa.io, bitcoin self-custody, is the Acrew Capital row tagged Crypto; Acrew led its 21M Series A. Forerunner is in one round and not the other, and Acrew the reverse. Not merged." },
+  { canonicalCompanyId: "pie",             alias: "Pie",                 normalizedAlias: "pie",             aliasType: "COMMON_NAME",     status: "NEEDS_REVIEW",  reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-04",
+    canonicalName: "Pie",                   note: "TWO COMPANIES, and the sector labels would NOT have separated them: an insurer is plausibly Fintech. Decided on investors instead. Pie at getpie.com, AI growth for local merchants, is the 2026-06-30 Series A; Acrew is not in that round. Pie Insurance at pieinsurance.com names Acrew on its own investors page and Acrew co-led its Series C, so the Acrew row is Pie Insurance, which calls itself 'Pie'. Not merged." },
+  { canonicalCompanyId: "liquid",          alias: "Liquid",              normalizedAlias: "liquid",          aliasType: "COMMON_NAME",     status: "NEEDS_REVIEW",  reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-04",
+    canonicalName: "Liquid",                note: "TWO COMPANIES. Liquid at liquid.trade, 24/7 multi-asset trading, legal entity LiquidX AI, Inc., New York, is the 2026-04-21 Fintech deal row. Flourish Ventures' own portfolio page at the slug 'liquid' is a Brazilian real estate credit infrastructure company at beliquid.ai, which is the bare Flourish row. Flourish is not a liquid.trade investor. A third Liquid AI, the MIT liquid-neural-network company, is neither. Not merged." },
+  { canonicalCompanyId: "enigma",          alias: "Enigma",              normalizedAlias: "enigma",          aliasType: "COMMON_NAME",     status: "NEEDS_REVIEW",  reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-04",
+    canonicalName: "Enigma",                note: "TWO COMPANIES. Enigma at enigma.inc, robotic foundation models, entity Enigma AI Labs, Inc., is the 2026-07-27 Robotics seed with Index, Ribbit and Conviction. Kindred Ventures' own company page under the slug 'enigma' is headed 'Enigma Labs', the UAP sightings platform at enigmalabs.io, which is the bare Kindred row; Kindred is not in the robotics round and that company was founded in 2025. Enigma Technologies, the better-known business-data company, is neither row. Not merged." },
+  { canonicalCompanyId: "ellis",           alias: "Ellis",               normalizedAlias: "ellis",           aliasType: "COMMON_NAME",     status: "NEEDS_REVIEW",  reviewedBy: "nicholas-baksht", reviewedAt: "2026-09-04",
+    canonicalName: "Ellis",                 note: "TWO COMPANIES. Ellis at ellis.ai, private credit operations software founded by Ryan Williams, is the 2026-07-31 Seed row. Kindred Ventures' own portfolio page for 'ellis' describes a modern immigration-tech company, which is Ellis at ellis.com, entity Ellis Technologies, Inc. Kindred is not among the ellis.ai seed investors. Not merged." },
 ];
 
 if (typeof module !== 'undefined' && module.exports) {
