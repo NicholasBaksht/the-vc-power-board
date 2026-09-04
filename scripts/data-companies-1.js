@@ -1,5 +1,5 @@
 /* data-companies shard 1 of 2 - generated, do not hand-edit.
-   161 records, 2109 source rows. */
+   185 records, 2360 source rows. */
 Object.assign(COMPANIES, {
   "1password": {
     "companyId": "1password",
@@ -1705,6 +1705,67 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "appliedcompute": {
+    "companyId": "appliedcompute",
+    "name": "Applied Compute",
+    "legalName": null,
+    "website": "https://www.appliedcompute.com",
+    "description": "Company that trains, serves and continuously improves custom AI models for enterprises on their own data, through its AC2 platform, with its researchers working alongside customer engineering teams.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "custom model training and reinforcement learning for enterprises",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Applied Compute - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.appliedcompute.com/"
+      },
+      {
+        "field": "description",
+        "label": "Applied Compute - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.appliedcompute.com/"
+      },
+      {
+        "field": "description",
+        "label": "Applied Compute - It's time to get specific (company launch post)",
+        "checked": "2026-09-03",
+        "url": "https://www.appliedcompute.com/company/its-time-to-get-specific"
+      },
+      {
+        "field": "status",
+        "label": "TechCrunch - new unicorns list, Applied Compute entry (privately held, venture rounds)",
+        "checked": "2026-09-03",
+        "url": "https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are/"
+      },
+      {
+        "field": "sector",
+        "label": "Applied Compute - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.appliedcompute.com/"
+      },
+      {
+        "field": "sector",
+        "label": "Applied Compute - It's time to get specific",
+        "checked": "2026-09-03",
+        "url": "https://www.appliedcompute.com/company/its-time-to-get-specific"
+      },
+      {
+        "field": "subsector",
+        "label": "Applied Compute - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.appliedcompute.com/"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "appliedintuition": {
     "companyId": "appliedintuition",
     "name": "Applied Intuition",
@@ -2072,6 +2133,67 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "asecurity": {
+    "companyId": "asecurity",
+    "name": "A Security",
+    "legalName": null,
+    "website": "https://a.security",
+    "description": "Autonomous offensive security platform that continuously runs attacks to discover, chain and validate exploitable attack paths across an environment and then remediates them.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": 2025,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "autonomous offensive security and remediation",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "A Security - Official site",
+        "url": "https://a.security/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "GlobeNewswire - A Security company-issued release, About A Security boilerplate",
+        "url": "https://www.globenewswire.com/news-release/2026/06/08/3308079/0/en/A-Security-Emerges-from-Stealth-with-37M-in-Funding-to-Outpace-Weaponized-AI.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "A Security - Official site (Platform, How It Works)",
+        "url": "https://a.security/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "GlobeNewswire - Founded in 2025, A Security is backed by Lightspeed and Cyberstarts",
+        "url": "https://www.globenewswire.com/news-release/2026/06/08/3308079/0/en/A-Security-Emerges-from-Stealth-with-37M-in-Funding-to-Outpace-Weaponized-AI.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "GlobeNewswire - emerged from stealth with private 37M USD funding from Lightspeed and Cyberstarts",
+        "url": "https://www.globenewswire.com/news-release/2026/06/08/3308079/0/en/A-Security-Emerges-from-Stealth-with-37M-in-Funding-to-Outpace-Weaponized-AI.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "SecurityWeek - A Security Raises 37 Million for Autonomous Offensive Security Platform",
+        "url": "https://www.securityweek.com/a-security-raises-37-million-for-autonomous-offensive-security-platform/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "GlobeNewswire - autonomous offensive security and remediation platform",
+        "url": "https://www.globenewswire.com/news-release/2026/06/08/3308079/0/en/A-Security-Emerges-from-Stealth-with-37M-in-Funding-to-Outpace-Weaponized-AI.html",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
   },
   "astranis": {
     "companyId": "astranis",
@@ -2607,6 +2729,97 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Axiom Space - About",
         "url": "https://www.axiomspace.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "basepower": {
+    "companyId": "basepower",
+    "name": "Base Power",
+    "legalName": "Base Power, Inc",
+    "website": "https://www.basepowercompany.com",
+    "description": "Energy company that installs home battery systems and sells retail electricity in Texas, using its distributed battery fleet to provide whole-home backup during outages and to support the grid.",
+    "hqCity": "Austin",
+    "hqCountry": "United States",
+    "foundedYear": 2023,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Climate & Energy",
+    "subsector": "home battery backup and retail electricity service",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Base Power Company - Official Site",
+        "url": "https://www.basepowercompany.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Base Power Company - Official Site footer naming Base Power, Inc and its regulated subsidiaries",
+        "url": "https://www.basepowercompany.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Base Power Company - Official Site product description",
+        "url": "https://www.basepowercompany.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Base Power company press release 2026-08-03, About Base Power boilerplate",
+        "url": "https://www.businesswire.com/news/home/20260803203117/en/Base-Power-Announces-$1B-Series-D-and-Launches-Base-Core-First-of-its-Kind-Home-Battery-Built-in-the-United-States",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Base Power Company careers page: Our headquarters in Austin puts us at the center of America's energy transition",
+        "url": "https://www.basepowercompany.com/careers",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Base Power company press release: Founded in 2023 and headquartered in Austin, Texas",
+        "url": "https://www.businesswire.com/news/home/20260803203117/en/Base-Power-Announces-$1B-Series-D-and-Launches-Base-Core-First-of-its-Kind-Home-Battery-Built-in-the-United-States",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Base Power company press release: headquartered in Austin, Texas",
+        "url": "https://www.businesswire.com/news/home/20260803203117/en/Base-Power-Announces-$1B-Series-D-and-Launches-Base-Core-First-of-its-Kind-Home-Battery-Built-in-the-United-States",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Base Power company press release: Founded in 2023 and headquartered in Austin, Texas",
+        "url": "https://www.businesswire.com/news/home/20260803203117/en/Base-Power-Announces-$1B-Series-D-and-Launches-Base-Core-First-of-its-Kind-Home-Battery-Built-in-the-United-States",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Base Power Company careers page stat block, Founded in Austin, TX, 2023",
+        "url": "https://www.basepowercompany.com/careers",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Base Power company press release 2026-08-03 announcing a 1B USD private Series D",
+        "url": "https://www.businesswire.com/news/home/20260803203117/en/Base-Power-Announces-$1B-Series-D-and-Launches-Base-Core-First-of-its-Kind-Home-Battery-Built-in-the-United-States",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Base Power company press release: Base Power is an energy company building a grid for the future",
+        "url": "https://www.businesswire.com/news/home/20260803203117/en/Base-Power-Announces-$1B-Series-D-and-Launches-Base-Core-First-of-its-Kind-Home-Battery-Built-in-the-United-States",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Base Power Company - Official Site, home battery backup plus fixed rate electricity service and the Base Texas REP, LLC retail electric provider licence PUCT #10338",
+        "url": "https://www.basepowercompany.com/",
         "checked": "2026-09-03"
       }
     ],
@@ -3776,6 +3989,154 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "braintrust": {
+    "companyId": "braintrust",
+    "name": "Braintrust",
+    "legalName": "Braintrust Data, Inc.",
+    "website": "https://www.braintrust.dev",
+    "description": "AI evaluation and observability platform used to trace AI applications in production, run evaluations against defined quality criteria and catch regressions before release. Provides SDKs for Python, TypeScript, Go, Ruby and C#.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "evaluation and observability tooling for AI applications",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Braintrust - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.braintrust.dev/"
+      },
+      {
+        "field": "legalName",
+        "label": "Braintrust - Official Site footer (Copyright 2026 Braintrust Data, Inc.)",
+        "checked": "2026-09-03",
+        "url": "https://www.braintrust.dev/"
+      },
+      {
+        "field": "legalName",
+        "label": "Braintrust - Terms of Service (Braintrust Data, Inc.)",
+        "checked": "2026-09-03",
+        "url": "https://www.braintrust.dev/legal/msa"
+      },
+      {
+        "field": "description",
+        "label": "Braintrust - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.braintrust.dev/"
+      },
+      {
+        "field": "status",
+        "label": "Braintrust Blog - Braintrust's series B",
+        "checked": "2026-09-03",
+        "url": "https://www.braintrust.dev/blog/announcing-series-b"
+      },
+      {
+        "field": "sector",
+        "label": "Braintrust - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.braintrust.dev/"
+      },
+      {
+        "field": "subsector",
+        "label": "Braintrust - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.braintrust.dev/"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "branch": {
+    "companyId": "branch",
+    "name": "Branch",
+    "legalName": "Branch Metrics, Inc.",
+    "website": "https://branch.io",
+    "description": "Mobile linking and measurement platform providing deep linking and marketing attribution across apps and the web.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": 2013,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "mobile deep linking and marketing attribution",
+    "tickers": [],
+    "formerNames": [
+      "Pawprint Labs, Inc."
+    ],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Branch - Official Site About page",
+        "url": "https://branch.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Branch - Privacy Policy naming Branch Metrics, Inc.",
+        "url": "https://legal.branch.io/saas/privacy-policy/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Branch Metrics, Inc. Form D primary document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1636615/000163661517000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Branch - Official Site About page, omnichannel linking and measurement solutions",
+        "url": "https://branch.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Branch - Official Site About page, Headquarters: United States",
+        "url": "https://branch.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - Branch Metrics, Inc. Form D, Year of Incorporation 2013",
+        "url": "https://www.sec.gov/Archives/edgar/data/1636615/000163661517000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Branch Metrics, Inc. filing history shows only Form D exempt offerings, no registration statement or periodic reports",
+        "url": "https://data.sec.gov/submissions/CIK0001636615.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Branch - Official Site About page, linking and measurement for user journeys and campaign insights",
+        "url": "https://branch.io/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Branch - Privacy Policy, Branch Metrics, Inc. offers a linking and analytics platform",
+        "url": "https://legal.branch.io/saas/privacy-policy/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - Branch Metrics, Inc. 2017 Form D, issuer previous name Pawprint Labs, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1636615/000163661517000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - Branch Metrics, Inc. 2022 Form D, issuer previous name Pawprint Labs, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1636615/000163661522000002/primary_doc.xml",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "braze": {
     "companyId": "braze",
     "name": "Braze",
@@ -3992,6 +4353,73 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "buildforever": {
+    "companyId": "buildforever",
+    "name": "BuildForever",
+    "legalName": "BuildForever, Inc.",
+    "website": "https://buildforever.com",
+    "description": "Consumer software company. Its first product is Extra, an email application that organises the inbox around a user's activities rather than folders.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "consumer email application",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Apple App Store - Extra, Seller: BuildForever, Inc.; copyright 2026 BuildForever Inc.",
+        "url": "https://apps.apple.com/us/app/extra-your-lifes-inbox/id6742712791",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "BuildForever - Official Site",
+        "url": "https://buildforever.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "BuildForever - About: a small team of creative builders crafting consumer products, starting with extra.email",
+        "url": "https://buildforever.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "TechCrunch - Former Pinterest team redesigns email with Extra",
+        "url": "https://techcrunch.com/2026/04/21/former-pinterest-team-redesigns-email-with-extra-and-its-actually-good/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "BuildForever - Team: based in San Francisco and New York",
+        "url": "https://buildforever.com/team",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "TechCrunch - BuildForever seed round, April 2026, privately held",
+        "url": "https://techcrunch.com/2026/04/21/former-pinterest-team-redesigns-email-with-extra-and-its-actually-good/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "BuildForever - About: consumer products",
+        "url": "https://buildforever.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "BuildForever - Official Site: starting with extra.email",
+        "url": "https://buildforever.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "buzzfeed": {
     "companyId": "buzzfeed",
     "name": "BuzzFeed",
@@ -4108,6 +4536,91 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "cambridgeaerospace": {
+    "companyId": "cambridgeaerospace",
+    "name": "Cambridge Aerospace",
+    "legalName": "Cambridge Aerospace Limited",
+    "website": "https://www.cambridgeaerospace.com",
+    "description": "British defence company developing low-cost air-defence interceptors, including the Skyhammer counter-drone interceptor.",
+    "hqCity": null,
+    "hqCountry": "United Kingdom",
+    "foundedYear": 2024,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Defense Tech",
+    "subsector": "low-cost interceptors for counter-drone and air defence",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Cambridge Aerospace - Official Site",
+        "url": "https://www.cambridgeaerospace.com",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Companies House - CAMBRIDGE AEROSPACE LIMITED, company number 15935962",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/15935962",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Companies House - CAMBRIDGE AEROSPACE LIMITED registered in England, company number 15935962",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/15935962",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Axios - describes Cambridge Aerospace as a British air defense tech startup",
+        "url": "https://www.axios.com/2026/08/10/anti-drone-defense-cambridge-aerospace",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Companies House - CAMBRIDGE AEROSPACE LIMITED incorporated on 4 September 2024",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/15935962",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Companies House - company type Private limited Company, status Active",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/15935962",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Axios - Cambridge Aerospace is developing low-cost interceptor systems for drones and cruise missiles",
+        "url": "https://www.axios.com/2026/08/10/anti-drone-defense-cambridge-aerospace",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Companies House - SIC 30300 manufacture of air and spacecraft and related machinery",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/15935962",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Axios - British air defense tech startup building interceptor systems",
+        "url": "https://www.axios.com/2026/08/10/anti-drone-defense-cambridge-aerospace",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "TNW - first product Skyhammer, a radar-guided interceptor with a range over 30 km",
+        "url": "https://thenextweb.com/news/cambridge-aerospace-300m-series-c-skyhammer-air-defence",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Companies House - no previous company names section on the company record",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/15935962",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
   },
   "canva": {
     "companyId": "canva",
@@ -5296,6 +5809,73 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "clairhealth": {
+    "companyId": "clairhealth",
+    "name": "Clair Health",
+    "legalName": "Clair Health, Inc.",
+    "website": "https://wearclair.com",
+    "description": "Developing a wrist-worn, noninvasive continuous hormone monitor for women that tracks hormones including estrogen, progesterone, LH, FSH and PdG using a stack of biosensors.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Consumer Health",
+    "subsector": "noninvasive continuous hormone-monitoring wearable",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Clair Health - site footer (c) 2026 Clair Health, Inc.",
+        "url": "https://wearclair.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Clair Health - Privacy Policy",
+        "url": "https://wearclair.com/policies/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Clair Health - Official site",
+        "url": "https://wearclair.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Clair Health - Official site and About page",
+        "url": "https://wearclair.com/pages/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "TechCrunch - Two Stanford grads raise 11M for noninvasive hormone wearable",
+        "url": "https://techcrunch.com/2026/06/17/two-stanford-grads-raise-11m-to-build-a-noninvasive-wearable-for-hormone-tracking/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "TechCrunch - private seed round led by Khosla Ventures",
+        "url": "https://techcrunch.com/2026/06/17/two-stanford-grads-raise-11m-to-build-a-noninvasive-wearable-for-hormone-tracking/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Clair Health - Official site (wearable for hormone-aware health, designed for women)",
+        "url": "https://wearclair.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Clair Health - Official site",
+        "url": "https://wearclair.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "classdojo": {
     "companyId": "classdojo",
     "name": "ClassDojo",
@@ -6040,6 +6620,91 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "clubhouse": {
+    "companyId": "clubhouse",
+    "name": "Clubhouse",
+    "legalName": "Alpha Exploration Co.",
+    "website": "https://www.clubhouse.com",
+    "description": "Social network based on voice, operating iOS and Android apps and a website for live audio rooms, group chats and voice messages.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": 2020,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "social audio, live voice chat social network",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Clubhouse - Official Site",
+        "url": "https://www.clubhouse.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Clubhouse Terms of Service naming Alpha Exploration Co. dba Clubhouse",
+        "url": "https://tos.clubhouse.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Clubhouse Privacy Policy naming Alpha Exploration Co. (doing business as Clubhouse)",
+        "url": "https://privacy.clubhouse.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Clubhouse Terms of Service: Clubhouse is a social network based on voice, covering iOS and Android apps and the website, with Chats, Live Rooms and voice messages",
+        "url": "https://tos.clubhouse.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Clubhouse Google Play listing, developer Alpha Exploration Co., live audio rooms",
+        "url": "https://play.google.com/store/apps/details?id=com.clubhouse.app&hl=en_US",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Clubhouse Privacy Policy, company address given as 548 Market Street PMB 72878, San Francisco, California 94104, USA",
+        "url": "https://privacy.clubhouse.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "CNBC, 2020-05-20: the founders Paul Davison and Rohan Seth started Alpha Exploration Co., the parent company of Clubhouse, earlier this year",
+        "url": "https://www.cnbc.com/2020/05/20/clubhouse-app-is-where-mc-hammer-and-jared-leto-chat-with-vcs.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Clubhouse Google Play listing, developer Alpha Exploration Co., app Updated on Aug 21, 2026, showing the business is operating",
+        "url": "https://play.google.com/store/apps/details?id=com.clubhouse.app&hl=en_US",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR Form D 2020-07-29, Clubhouse Series A Investors, a series of Alpha Exploration Co SPV LLC, Regulation D private placement",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819019/000181901920000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Clubhouse Terms of Service describing a consumer social network based on voice",
+        "url": "https://tos.clubhouse.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Clubhouse Terms of Service, Conversations comprising Chats, Live Rooms and voice messages",
+        "url": "https://tos.clubhouse.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "coalition": {
     "companyId": "coalition",
     "name": "Coalition",
@@ -6224,6 +6889,79 @@ Object.assign(COMPANIES, {
         "label": "Cockroach Labs - About",
         "url": "https://www.cockroachlabs.com/about/",
         "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "cognition": {
+    "companyId": "cognition",
+    "name": "Cognition",
+    "legalName": "Cognition AI, Inc.",
+    "website": "https://cognition.com",
+    "description": "AI software engineering company that builds Devin, an autonomous agent that plans, writes, tests and ships production code inside a customer's existing codebase and tools. It also operates the Windsurf agentic IDE.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "AI software engineering agents",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Cognition - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://cognition.com/"
+      },
+      {
+        "field": "website",
+        "label": "Cognition - Privacy Policy (names cognition.com as the operated website)",
+        "checked": "2026-09-03",
+        "url": "https://cognition.com/legal/privacy-policy"
+      },
+      {
+        "field": "legalName",
+        "label": "Cognition - Privacy Policy (Cognition AI, Inc)",
+        "checked": "2026-09-03",
+        "url": "https://cognition.com/legal/privacy-policy"
+      },
+      {
+        "field": "description",
+        "label": "Cognition - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://cognition.com/"
+      },
+      {
+        "field": "description",
+        "label": "Fiserv - Fiserv and Cognition Partner (About Cognition boilerplate)",
+        "checked": "2026-09-03",
+        "url": "https://investors.fiserv.com/news-releases/news-release-details/fiserv-and-cognition-partner-modernize-banking-technology-and"
+      },
+      {
+        "field": "status",
+        "label": "Cognition Blog - Funding, growth, and the next frontier of AI coding agents",
+        "checked": "2026-09-03",
+        "url": "https://cognition.com/blog/funding-growth-and-the-next-frontier-of-ai-coding-agents"
+      },
+      {
+        "field": "sector",
+        "label": "Cognition - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://cognition.com/"
+      },
+      {
+        "field": "sector",
+        "label": "Fiserv - About Cognition boilerplate",
+        "checked": "2026-09-03",
+        "url": "https://investors.fiserv.com/news-releases/news-release-details/fiserv-and-cognition-partner-modernize-banking-technology-and"
+      },
+      {
+        "field": "subsector",
+        "label": "Cognition - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://cognition.com/"
       }
     ],
     "lastChecked": "2026-09-03"
@@ -6772,6 +7510,85 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "convex": {
+    "companyId": "convex",
+    "name": "Convex",
+    "legalName": "Convex, Inc.",
+    "website": "https://www.convex.dev",
+    "description": "Reactive backend platform for application developers, combining a database, server functions, workflow, sync, search and file storage in TypeScript.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2021,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "reactive backend platform with database, functions and realtime sync",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Convex - Official Site",
+        "url": "https://www.convex.dev/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Convex - Official Site footer, copyright 2026 Convex, Inc.",
+        "url": "https://www.convex.dev/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Convex - Official Site, the reactive backend platform that keeps up with you and your agents",
+        "url": "https://www.convex.dev/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Convex company press release 2026-08-04, About Convex boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/convex-raises-57m-series-b-led-by-insight-partners-to-scale-the-reliable-backend-for-the-ai-era-302841686.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Convex company press release: Founded by early Dropbox infrastructure engineers, Convex is SOC 2 Type II certified and HIPAA compliant, and is headquartered in San Francisco",
+        "url": "https://www.prnewswire.com/news-releases/convex-raises-57m-series-b-led-by-insight-partners-to-scale-the-reliable-backend-for-the-ai-era-302841686.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Convex company press release: headquartered in San Francisco",
+        "url": "https://www.prnewswire.com/news-releases/convex-raises-57m-series-b-led-by-insight-partners-to-scale-the-reliable-backend-for-the-ai-era-302841686.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Convex company press release: Convex was founded in 2021 by early Dropbox infrastructure engineers, including Turner and CTO James Cowling",
+        "url": "https://www.prnewswire.com/news-releases/convex-raises-57m-series-b-led-by-insight-partners-to-scale-the-reliable-backend-for-the-ai-era-302841686.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Convex company press release 2026-08-04 announcing a 57M USD private Series B led by Insight Partners",
+        "url": "https://www.prnewswire.com/news-releases/convex-raises-57m-series-b-led-by-insight-partners-to-scale-the-reliable-backend-for-the-ai-era-302841686.html",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Convex - Official Site, backend platform for developers with database, functions, workflow, sync, search and file storage",
+        "url": "https://www.convex.dev/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Convex - Official Site, ACID transactions, end-to-end type safety and realtime sync in TypeScript",
+        "url": "https://www.convex.dev/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
   },
   "coreweave": {
     "companyId": "coreweave",
@@ -7492,6 +8309,123 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "cyberark": {
+    "companyId": "cyberark",
+    "name": "CyberArk",
+    "legalName": "CyberArk Software Ltd.",
+    "website": "https://www.cyberark.com",
+    "description": "Identity security software company providing privileged access management and intelligent privilege controls for human and machine identities across hybrid environments.",
+    "hqCity": "Petach Tikva",
+    "hqCountry": "Israel",
+    "foundedYear": 1999,
+    "status": "acquired",
+    "statusDetail": "Acquired by Palo Alto Networks in 2026",
+    "sector": "Cybersecurity",
+    "subsector": "identity security and privileged access management",
+    "tickers": [],
+    "formerNames": [
+      "Cyber-Ark Software Ltd."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "CyberArk Software Ltd. - Form 20-F for fiscal 2024, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1598110/000117891325000811/zk2532806.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "CyberArk Software Ltd. - Form F-1, Corporate Information (states website address www.cyberark.com)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1598110/000119312514247215/d692893df1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "CyberArk Software Ltd. - Form 20-F for fiscal 2024, business description",
+        "url": "https://www.sec.gov/Archives/edgar/data/1598110/000117891325000811/zk2532806.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "CyberArk Software Ltd. - Form 424B4 filed 2024-12-06, principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1598110/000117891324003927/zk2432437.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "CyberArk Software Ltd. - Form 20-F for fiscal 2024, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1598110/000117891325000811/zk2532806.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "CyberArk Software Ltd. - Form 20-F for fiscal 2024, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1598110/000117891325000811/zk2532806.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "CyberArk Software Ltd. - Form 424B4 filed 2024-12-06, principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1598110/000117891324003927/zk2432437.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "CyberArk Software Ltd. - Form 424B4 filed 2024-12-06 (CyberArk Software Ltd. was founded in 1999)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1598110/000117891324003927/zk2432437.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Palo Alto Networks Inc - Form 8-K Exhibit 99.1, Palo Alto Networks Completes Acquisition of CyberArk, 2026-02-11",
+        "url": "https://www.sec.gov/Archives/edgar/data/1327567/000119312526045600/d40626dex991.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "CyberArk Software Ltd. - Form 25-NSE, Nasdaq notification of delisting, filed 2026-02-11",
+        "url": "https://www.sec.gov/Archives/edgar/data/1598110/000135445726000164/xslF25X02/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Palo Alto Networks Inc - Form 8-K Exhibit 99.1, completion of acquisition of CyberArk, dated February 11, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1327567/000119312526045600/d40626dex991.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Palo Alto Networks Inc - Form 8-K filed 2026-02-11 naming CyberArk Software Ltd. and the Closing Date",
+        "url": "https://www.sec.gov/Archives/edgar/data/1327567/000119312526045600/d40626d8k.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "CyberArk Software Ltd. - Form 20-F for fiscal 2024, identity security solutions description",
+        "url": "https://www.sec.gov/Archives/edgar/data/1598110/000117891325000811/zk2532806.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "CyberArk Software Ltd. - Form 20-F for fiscal 2024, identity security centered on intelligent privilege controls",
+        "url": "https://www.sec.gov/Archives/edgar/data/1598110/000117891325000811/zk2532806.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions record for CIK 0001598110 - formerNames entry Cyber-Ark Software Ltd.",
+        "url": "https://data.sec.gov/submissions/CIK0001598110.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "CyberArk - Form F-1 filed 2014-06-24 referring to Cyber-Ark Software Ltd. and its subsidiaries",
+        "url": "https://www.sec.gov/Archives/edgar/data/1598110/000119312514247215/d692893df1.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "cyera": {
     "companyId": "cyera",
     "name": "Cyera",
@@ -7856,6 +8790,91 @@ Object.assign(COMPANIES, {
         "label": "dbt Labs - Fishtown Analytics Rebrands as dbt Labs",
         "url": "https://www.getdbt.com/blog/fishtown-analytics-rebrands-as-dbt-labs-closes-150m-to-develop-open-source-analytics-engineering-software",
         "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "decagon": {
+    "companyId": "decagon",
+    "name": "Decagon",
+    "legalName": "Decagon AI, Inc.",
+    "website": "https://decagon.ai",
+    "description": "Conversational AI platform that enterprises use to build, test and run AI customer service agents across chat, voice and email, configured through natural-language Agent Operating Procedures.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2023,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "AI customer support agents",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Decagon - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://decagon.ai/"
+      },
+      {
+        "field": "legalName",
+        "label": "Decagon - Privacy Policy (Decagon AI, Inc.)",
+        "checked": "2026-09-03",
+        "url": "https://decagon.ai/privacy"
+      },
+      {
+        "field": "description",
+        "label": "Decagon - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://decagon.ai/"
+      },
+      {
+        "field": "description",
+        "label": "Decagon press release - About Decagon boilerplate",
+        "checked": "2026-09-03",
+        "url": "https://www.businesswire.com/news/home/20250623894798/en/Decagon-Raises-$131M-at-$1.5B-Valuation-to-Deliver-Concierge-Customer-Experience-with-AI-Agents"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC Form D - Decagon AI, Inc. principal place of business",
+        "checked": "2026-09-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/2043374/000204337424000001/primary_doc.xml"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC Form D - Decagon AI, Inc. principal place of business",
+        "checked": "2026-09-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/2043374/000204337424000001/primary_doc.xml"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC Form D - Decagon AI, Inc. year of incorporation 2023",
+        "checked": "2026-09-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/2043374/000204337424000001/primary_doc.xml"
+      },
+      {
+        "field": "status",
+        "label": "Decagon press release - $131M private financing at $1.5B valuation",
+        "checked": "2026-09-03",
+        "url": "https://www.businesswire.com/news/home/20250623894798/en/Decagon-Raises-$131M-at-$1.5B-Valuation-to-Deliver-Concierge-Customer-Experience-with-AI-Agents"
+      },
+      {
+        "field": "sector",
+        "label": "Decagon - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://decagon.ai/"
+      },
+      {
+        "field": "sector",
+        "label": "Decagon press release - About Decagon boilerplate",
+        "checked": "2026-09-03",
+        "url": "https://www.businesswire.com/news/home/20250623894798/en/Decagon-Raises-$131M-at-$1.5B-Valuation-to-Deliver-Concierge-Customer-Experience-with-AI-Agents"
+      },
+      {
+        "field": "subsector",
+        "label": "Decagon - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://decagon.ai/"
       }
     ],
     "lastChecked": "2026-09-03"
@@ -8989,6 +10008,91 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "drivenets": {
+    "companyId": "drivenets",
+    "name": "DriveNets",
+    "legalName": "DriveNets Ltd.",
+    "website": "https://drivenets.com",
+    "description": "Networking software company providing disaggregated, cloud-native routing and Ethernet fabric for service provider networks and large-scale AI infrastructure.",
+    "hqCity": "Ra'anana",
+    "hqCountry": "Israel",
+    "foundedYear": 2015,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "disaggregated networking software for service providers and AI infrastructure",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "DriveNets - Terms of Use",
+        "url": "https://drivenets.com/terms-of-use/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "DriveNets - Official Site",
+        "url": "https://drivenets.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "DriveNets - Official Site",
+        "url": "https://drivenets.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "DriveNets Secures $410M Series D - company press release, 1 June 2026",
+        "url": "https://drivenets.com/news-and-events/press-release/drivenets-secures-410m-series-d-to-meet-surging-demand-for-ethernet-fabric-in-large-scale-ai-deployments/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "DriveNets - Company",
+        "url": "https://drivenets.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "DriveNets Secures $410M Series D - company press release, 1 June 2026",
+        "url": "https://drivenets.com/news-and-events/press-release/drivenets-secures-410m-series-d-to-meet-surging-demand-for-ethernet-fabric-in-large-scale-ai-deployments/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "DriveNets - Company",
+        "url": "https://drivenets.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "DriveNets - Company",
+        "url": "https://drivenets.com/company/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "DriveNets Secures $410M Series D - company press release, 1 June 2026",
+        "url": "https://drivenets.com/news-and-events/press-release/drivenets-secures-410m-series-d-to-meet-surging-demand-for-ethernet-fabric-in-large-scale-ai-deployments/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "DriveNets Secures $410M Series D - company press release, 1 June 2026",
+        "url": "https://drivenets.com/news-and-events/press-release/drivenets-secures-410m-series-d-to-meet-surging-demand-for-ethernet-fabric-in-large-scale-ai-deployments/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "DriveNets Secures $410M Series D - company press release, 1 June 2026",
+        "url": "https://drivenets.com/news-and-events/press-release/drivenets-secures-410m-series-d-to-meet-surging-demand-for-ethernet-fabric-in-large-scale-ai-deployments/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "dropbox": {
     "companyId": "dropbox",
     "name": "Dropbox",
@@ -9780,6 +10884,91 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "eliyan": {
+    "companyId": "eliyan",
+    "name": "Eliyan",
+    "legalName": "Eliyan Corporation",
+    "website": "https://eliyan.com",
+    "description": "Develops die-to-die and chip-to-chip interconnect PHY technology (NuLink) and chiplet products for multi-die semiconductor architectures.",
+    "hqCity": "Santa Clara",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Hardware",
+    "subsector": "chiplet die-to-die interconnect PHY and chiplets",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Eliyan - press release, About Eliyan boilerplate: Eliyan Corporation",
+        "url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Eliyan - Official Site footer, 2026 Eliyan Corp",
+        "url": "https://eliyan.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Eliyan - Official Site",
+        "url": "https://eliyan.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Eliyan - press release, About Eliyan boilerplate on NuLink PHY and chiplet offerings, 28 January 2026",
+        "url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Eliyan - About",
+        "url": "https://eliyan.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Eliyan - Series B press release, About Eliyan boilerplate: It is based in Santa Clara, California",
+        "url": "https://eliyan.com/press-release/eliyan-closes-60-million-series-b-funding-round/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Eliyan - VentureTech Alliance press release, About Eliyan boilerplate: It is based in Santa Clara, California",
+        "url": "https://eliyan.com/press-release/strategic-investment-from-venturetech-alliance/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Eliyan - Series B press release, About Eliyan boilerplate: It is based in Santa Clara, California",
+        "url": "https://eliyan.com/press-release/eliyan-closes-60-million-series-b-funding-round/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Eliyan - press release, 50M USD strategic investments, 28 January 2026, privately held",
+        "url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Eliyan - press release, About Eliyan boilerplate on interconnect solutions for multi-die architectures",
+        "url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Eliyan - Official Site: PHY technologies and chiplet products for die-to-die and chip-to-chip connections",
+        "url": "https://eliyan.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "enphaseenergy": {
     "companyId": "enphaseenergy",
     "name": "Enphase Energy",
@@ -10145,6 +11334,79 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Eventbrite, Inc. Form 10-K for FY2025 - Item 1 Business",
         "url": "https://www.sec.gov/Archives/edgar/data/1475115/000147511526000005/eb-20251231.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "exaforce": {
+    "companyId": "exaforce",
+    "name": "Exaforce",
+    "legalName": "Exaforce Inc.",
+    "website": "https://www.exaforce.com",
+    "description": "Security operations company whose platform combines a real-time security knowledge graph with AI agents called Exabots, supported by a managed detection and response service, to detect, triage, investigate and respond to threats across identity, cloud, endpoint and SaaS.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "agentic security operations platform and MDR service",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Exaforce - Privacy Policy (Exaforce Inc.)",
+        "url": "https://www.exaforce.com/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Exaforce - site footer (c) 2026 Exaforce Inc.",
+        "url": "https://www.exaforce.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Exaforce - Official site",
+        "url": "https://www.exaforce.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Exaforce - Series B release, About Exaforce boilerplate",
+        "url": "https://www.businesswire.com/news/home/20260512993333/en/Exaforce-Raises-$125M-Series-B-to-Combat-AI-Powered-Attacks-with-Real-Time-Security-Reasoning",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Exaforce - Official site product description",
+        "url": "https://www.exaforce.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Exaforce - Series B release (headquartered in the Bay Area)",
+        "url": "https://www.businesswire.com/news/home/20260512993333/en/Exaforce-Raises-$125M-Series-B-to-Combat-AI-Powered-Attacks-with-Real-Time-Security-Reasoning",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Exaforce - Series B private financing release naming private investors",
+        "url": "https://www.businesswire.com/news/home/20260512993333/en/Exaforce-Raises-$125M-Series-B-to-Combat-AI-Powered-Attacks-with-Real-Time-Security-Reasoning",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Exaforce - Series B release, About Exaforce boilerplate",
+        "url": "https://www.businesswire.com/news/home/20260512993333/en/Exaforce-Raises-$125M-Series-B-to-Combat-AI-Powered-Attacks-with-Real-Time-Security-Reasoning",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Exaforce - Official site",
+        "url": "https://www.exaforce.com/",
         "checked": "2026-09-03"
       }
     ],
@@ -11338,6 +12600,73 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "framesecurity": {
+    "companyId": "framesecurity",
+    "name": "Frame Security",
+    "legalName": "Frame, Inc.",
+    "website": "https://framesecurity.com",
+    "description": "Human risk security platform that uses AI to generate personalised security awareness training, phishing simulations and deepfake attack scenarios for employees.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "human risk management and security awareness training",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Frame Security - Official Site",
+        "url": "https://framesecurity.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Frame Security - Official Site homepage",
+        "url": "https://framesecurity.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Frame Security - About page",
+        "url": "https://framesecurity.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Frame Security - About page footer naming Frame, Inc.",
+        "url": "https://framesecurity.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Frame Security - Official Site footer naming Frame, Inc.",
+        "url": "https://framesecurity.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Frame Security - own launch announcement of a 50M USD venture round led by Team8, Index Ventures and Picture Capital",
+        "url": "https://framesecurity.com/articles/frame-security-launches-with-50m-to-build-the-future-of-human-security",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Frame Security - Official Site, security awareness and human risk platform",
+        "url": "https://framesecurity.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Frame Security - About page product areas: phishing and deepfake simulations, security awareness training, human risk reduction",
+        "url": "https://framesecurity.com/about",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "freenome": {
     "companyId": "freenome",
     "name": "Freenome",
@@ -11785,6 +13114,105 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Generate Biomedicines, Inc. - Form 10-Q for quarter ended June 30, 2026, Note 1 Organization and IPO closing (SEC EDGAR)",
         "url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526336437/ck0002100782-20260630.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "ginkgobioworks": {
+    "companyId": "ginkgobioworks",
+    "name": "Ginkgo Bioworks",
+    "legalName": "Ginkgo Bioworks Holdings, Inc.",
+    "website": "https://www.ginkgo.bio",
+    "description": "Synthetic biology company that engineers cells and builds automated laboratory platforms used to accelerate bioengineering for biopharma, agriculture and industrial biotechnology customers.",
+    "hqCity": "Boston",
+    "hqCountry": "United States",
+    "foundedYear": 2008,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Biotech",
+    "subsector": "synthetic biology and cell programming platform",
+    "tickers": [
+      "NYSE:DNA"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Ginkgo Bioworks Holdings, Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026054298/dna-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Ginkgo Bioworks Holdings, Inc. - Amended and Restated Certificate of Incorporation filed as Exhibit 3.1 to Form 8-K, 2024-08-19, Article I",
+        "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828024037685/ex31.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Ginkgo Bioworks - official site",
+        "url": "https://www.ginkgo.bio/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Ginkgo Bioworks - official site, description of autonomous labs accelerating bioengineering across biopharma, agriculture and industrial biotech",
+        "url": "https://www.ginkgo.bio/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Ginkgo Bioworks Holdings, Inc. - Form 10-K for fiscal 2025, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026012346/dna-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Ginkgo Bioworks Holdings, Inc. - Form 10-Q for the quarter ended June 30, 2026, address of principal executive offices (27 Drydock Avenue, Boston, MA)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026054298/dna-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Ginkgo Bioworks Holdings, Inc. - Form 10-Q for the quarter ended June 30, 2026, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026054298/dna-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Ginkgo Bioworks - Form 425 filed 2021-05-27, company transcript in which Ginkgo SVP Corporate Development states the company was founded in 2008",
+        "url": "https://www.sec.gov/Archives/edgar/data/1830214/000119312521175467/d163130d425.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Ginkgo Bioworks Holdings, Inc. - Form 10-Q for the quarter ended June 30, 2026, securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026054298/dna-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Ginkgo Bioworks Holdings, Inc. - Form 10-Q for the quarter ended June 30, 2026, Class A common stock trading symbol DNA on NYSE",
+        "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026054298/dna-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "Ginkgo Bioworks Holdings, Inc. - Form 10-K for fiscal 2025, cover page securities registered table",
+        "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026012346/dna-20251231.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Ginkgo Bioworks - official site, cell programming and bioengineering for biopharma, agriculture and industrial biotech",
+        "url": "https://www.ginkgo.bio/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Ginkgo Bioworks Holdings, Inc. - Form 10-K for fiscal 2025, Item 1 Business (mission to make biology easier to engineer)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1830214/000162828026012346/dna-20251231.htm",
         "checked": "2026-09-03"
       }
     ],
@@ -12564,6 +13992,103 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "granola": {
+    "companyId": "granola",
+    "name": "Granola",
+    "legalName": "Granola, Inc.",
+    "website": "https://www.granola.ai",
+    "description": "AI notepad that captures and writes up meeting notes from computer audio without joining meetings as a bot, with an AI chat over a user's notes. Available on macOS, Windows, iOS and Android.",
+    "hqCity": "London",
+    "hqCountry": "United Kingdom",
+    "foundedYear": 2023,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "AI meeting notes and transcription",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Granola - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.granola.ai/"
+      },
+      {
+        "field": "legalName",
+        "label": "Granola - Privacy Policy (Granola, Inc.)",
+        "checked": "2026-09-03",
+        "url": "https://docs.granola.ai/help-center/policies/privacy-policy"
+      },
+      {
+        "field": "legalName",
+        "label": "Granola - Official Site footer (Granola, Inc. 2026)",
+        "checked": "2026-09-03",
+        "url": "https://www.granola.ai/"
+      },
+      {
+        "field": "description",
+        "label": "Granola - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.granola.ai/"
+      },
+      {
+        "field": "hqCity",
+        "label": "Sifted - Granola hits unicorn status (the London-based company)",
+        "checked": "2026-09-03",
+        "url": "https://sifted.eu/articles/ai-notetaking-startup-granola-hits-unicorn-status"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC Form D 2023 - Granola, Inc. principal place of business, London",
+        "checked": "2026-09-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/1969640/000196964023000002/primary_doc.xml"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Sifted - Granola hits unicorn status (the London-based company)",
+        "checked": "2026-09-03",
+        "url": "https://sifted.eu/articles/ai-notetaking-startup-granola-hits-unicorn-status"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC Form D 2023 - Granola, Inc. principal place of business, London",
+        "checked": "2026-09-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/1969640/000196964023000002/primary_doc.xml"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Granola press release - About Granola (founded in March 2023)",
+        "checked": "2026-09-03",
+        "url": "https://finance.yahoo.com/news/granola-launches-ai-workspace-teams-154200059.html"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC Form D 2023 - Granola, Inc. year of incorporation 2023",
+        "checked": "2026-09-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/1969640/000196964023000002/primary_doc.xml"
+      },
+      {
+        "field": "status",
+        "label": "Granola press release - $43M Series B private financing",
+        "checked": "2026-09-03",
+        "url": "https://finance.yahoo.com/news/granola-launches-ai-workspace-teams-154200059.html"
+      },
+      {
+        "field": "sector",
+        "label": "Granola - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.granola.ai/"
+      },
+      {
+        "field": "subsector",
+        "label": "Granola - Official Site",
+        "checked": "2026-09-03",
+        "url": "https://www.granola.ai/"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "groq": {
     "companyId": "groq",
     "name": "Groq",
@@ -13262,6 +14787,103 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "hermeus": {
+    "companyId": "hermeus",
+    "name": "Hermeus",
+    "legalName": "Hermeus Corp",
+    "website": "https://www.hermeus.com",
+    "description": "Defense aviation company developing high-speed and hypersonic uncrewed aircraft, including the Quarterhorse and Darkhorse programs and its Chimera engine, using rapid iterative hardware prototyping.",
+    "hqCity": "El Segundo",
+    "hqCountry": "United States",
+    "foundedYear": 2018,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Defense Tech",
+    "subsector": "high-speed and hypersonic military aircraft",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Hermeus - Company page footer (HERMEUS CORP.)",
+        "url": "https://www.hermeus.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Hermeus Corp submissions (CIK 0001831988)",
+        "url": "https://data.sec.gov/submissions/CIK0001831988.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Hermeus - Company",
+        "url": "https://www.hermeus.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Hermeus - Company (Mission and Our Story)",
+        "url": "https://www.hermeus.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Hermeus - Series C announcement (About Hermeus boilerplate)",
+        "url": "https://www.hermeus.com/newsroom-content/series-c",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Hermeus - Series C announcement (new headquarters in El Segundo, California)",
+        "url": "https://www.hermeus.com/newsroom-content/series-c",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Hermeus - Careers (Los Angeles, CA - Hermeus Headquarters ... in El Segundo)",
+        "url": "https://www.hermeus.com/careers",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Hermeus - Series C announcement",
+        "url": "https://www.hermeus.com/newsroom-content/series-c",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Hermeus - Company (In 2018, AJ Piplica, Glenn Case, Skyler Shuford, and Michael Smayda founded Hermeus)",
+        "url": "https://www.hermeus.com/company",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Hermeus - Series C private financing announcement",
+        "url": "https://www.hermeus.com/newsroom-content/series-c",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Hermeus Corp Regulation D Form D filings, most recent 2026-04-14",
+        "url": "https://data.sec.gov/submissions/CIK0001831988.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Hermeus - Series C announcement (venture-backed defense aviation company)",
+        "url": "https://www.hermeus.com/newsroom-content/series-c",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Hermeus - Aircraft programs",
+        "url": "https://www.hermeus.com/aircraft",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "heroku": {
     "companyId": "heroku",
     "name": "Heroku",
@@ -13354,6 +14976,85 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Heroku - Official Site (fully managed app hosting platform)",
         "url": "https://www.heroku.com/",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "higharc": {
+    "companyId": "higharc",
+    "name": "Higharc",
+    "legalName": "Higharc, Inc.",
+    "website": "https://www.higharc.com",
+    "description": "Cloud software platform for homebuilders covering home design, sales and construction workflows.",
+    "hqCity": "Durham",
+    "hqCountry": "United States",
+    "foundedYear": 2018,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Real Estate Tech",
+    "subsector": "cloud platform for homebuilding design, sales and construction",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Higharc - Official Site",
+        "url": "https://www.higharc.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Higharc - Privacy Policy naming Higharc, Inc., 619 Broad St, Durham NC 27705",
+        "url": "https://www.higharc.com/legal/privacy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Higharc - own Series B press release, Headquartered in Durham, North Carolina",
+        "url": "https://www.higharc.com/newsroom/higharc-announces-53m-series-b-investment",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Higharc - own Series B press release, Headquartered in Durham, North Carolina",
+        "url": "https://www.higharc.com/newsroom/higharc-announces-53m-series-b-investment",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Higharc - own Series B press release, Founded in 2018",
+        "url": "https://www.higharc.com/newsroom/higharc-announces-53m-series-b-investment",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Higharc - own Series B press release, connected platform helping homebuilders design, sell and build new homes",
+        "url": "https://www.higharc.com/newsroom/higharc-announces-53m-series-b-investment",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Higharc - About page",
+        "url": "https://www.higharc.com/about",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Higharc - own Series B press release announcing a 53M USD private venture round",
+        "url": "https://www.higharc.com/newsroom/higharc-announces-53m-series-b-investment",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Higharc - own Series B press release, cloud software for the US homebuilding industry",
+        "url": "https://www.higharc.com/newsroom/higharc-announces-53m-series-b-investment",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Higharc - own Series B press release, The Homebuilding Cloud for design, sales and build",
+        "url": "https://www.higharc.com/newsroom/higharc-announces-53m-series-b-investment",
         "checked": "2026-09-03"
       }
     ],
@@ -13754,6 +15455,97 @@ Object.assign(COMPANIES, {
         "field": "website",
         "label": "Hippo official site hippo.com, footer copyright \"2026 Hippo Holdings Inc.\"",
         "url": "https://www.hippo.com",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "homage": {
+    "companyId": "homage",
+    "name": "Homage",
+    "legalName": "Homage Co. Pte. Ltd.",
+    "website": "https://www.homage.sg",
+    "description": "Home and community based care provider operating in Singapore, Malaysia and Australia, matching trained care professionals and nurses with clients for personal care, home nursing and home rehabilitation including physiotherapy, occupational therapy and speech therapy.",
+    "hqCity": "Singapore",
+    "hqCountry": "Singapore",
+    "foundedYear": 2016,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Healthcare",
+    "subsector": "home and community based care services for seniors and adults",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Homage - Official Site",
+        "url": "https://www.homage.sg/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "Homage Terms of Use: Homage Co. Pte. Ltd., a company incorporated under the laws of Singapore with a registered office at 12 Kallang Ave, #03-20/21, Singapore 339511",
+        "url": "https://www.homage.sg/terms-of-use/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Homage - Official Site, licensed and trained caregivers and nurses for holistic health, caregiving, nursing and rehabilitation needs across Singapore, Malaysia and Australia",
+        "url": "https://www.homage.sg/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Homage - About page, a caregiving and health solution combining curated and trained Care Professionals with technology to provide on-demand holistic home and community-based care",
+        "url": "https://www.homage.sg/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Homage - About page, address 12 Kallang Avenue, #03-19/20, Singapore 339511",
+        "url": "https://www.homage.sg/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Homage Terms of Use, registered office at 12 Kallang Ave, #03-20/21, Singapore 339511",
+        "url": "https://www.homage.sg/terms-of-use/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Homage Terms of Use, a company incorporated under the laws of Singapore",
+        "url": "https://www.homage.sg/terms-of-use/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Homage first-party resources page: Homage was founded in 2016, after Gillian returned to Singapore",
+        "url": "https://www.homage.sg/resources/gillian-tee-founder-story/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Homage first-party seed funding announcement page stating the company was founded in 2016",
+        "url": "https://www.homage.sg/resources/modern-home-care-solutions-for-an-elderly-population/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Homage Terms of Use, contracting entity Homage Co. Pte. Ltd., a Singapore private limited company",
+        "url": "https://www.homage.sg/terms-of-use/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Homage - About page describing delivery of home nursing, personal care and home rehabilitation by Care Professionals",
+        "url": "https://www.homage.sg/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Homage - Official Site listing home personal care, home nursing, home therapy and condition-specific care services",
+        "url": "https://www.homage.sg/",
         "checked": "2026-09-03"
       }
     ],
@@ -14221,6 +16013,111 @@ Object.assign(COMPANIES, {
         "field": "website",
         "label": "Impinj - Official Site",
         "url": "https://www.impinj.com",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
+  "impulsespace": {
+    "companyId": "impulsespace",
+    "name": "Impulse Space",
+    "legalName": "Impulse Space, Inc.",
+    "website": "https://www.impulsespace.com",
+    "description": "In-space mobility company that builds orbital transfer vehicles and in-space propulsion systems to move payloads from low Earth orbit to other orbits and destinations, including its Mira and Helios vehicles.",
+    "hqCity": "Redondo Beach",
+    "hqCountry": "United States",
+    "foundedYear": 2021,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Space",
+    "subsector": "in-space transportation, orbital transfer vehicles and propulsion",
+    "tickers": [],
+    "formerNames": [
+      "Impulse Space Propulsion, Inc."
+    ],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Impulse Space - Official Site",
+        "url": "https://www.impulsespace.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR Form D primary document, entityName Impulse Space, Inc., filed 2026-06-02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1920171/000192017126000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions record CIK 0001920171, current name Impulse Space, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001920171.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Impulse Space - Official Site: We provide efficient in-space mobility that moves payloads from low Earth orbit to any destination",
+        "url": "https://www.impulsespace.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "Impulse Space company update, Impulse Space Relocates Headquarters to Redondo Beach, California",
+        "url": "https://www.impulsespace.com/updates/impulse-space-relocates-headquarters-to-redondo-beach-california",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR Form D 2026-06-02, issuer principal place of business 2651 Manhattan Beach Boulevard, Redondo Beach, CA",
+        "url": "https://www.sec.gov/Archives/edgar/data/1920171/000192017126000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR Form D 2026-06-02, issuer address in Redondo Beach, CA, United States",
+        "url": "https://www.sec.gov/Archives/edgar/data/1920171/000192017126000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR Form D 2026-06-02, Year of Incorporation 2021",
+        "url": "https://www.sec.gov/Archives/edgar/data/1920171/000192017126000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Impulse Space company boilerplate: Founded in 2021, Impulse Space is a Space 2.0 pioneer providing agile, economical space logistics services",
+        "url": "https://www.impulsespace.com/updates/impulse-space-relocates-headquarters-to-redondo-beach-california",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR Form D exempt private placement filed by Impulse Space, Inc. 2026-06-02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1920171/000192017126000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions record CIK 0001920171, formerNames entry Impulse Space Propulsion, Inc. dated 04/04/2022",
+        "url": "https://data.sec.gov/submissions/CIK0001920171.json",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR Form D 2026-06-02 previous names list inside the filing document naming Impulse Space Propulsion, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1920171/000192017126000001/primary_doc.xml",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Impulse Space - Official Site, in-space mobility and orbital transportation vehicles",
+        "url": "https://www.impulsespace.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Impulse Space - Official Site describing the Helios and Mira vehicles and GEO rideshare",
+        "url": "https://www.impulsespace.com/",
         "checked": "2026-09-03"
       }
     ],
@@ -14950,6 +16847,93 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "jfrog": {
+    "companyId": "jfrog",
+    "name": "JFrog",
+    "legalName": "JFrog Ltd.",
+    "website": "https://jfrog.com",
+    "description": "Provider of a DevOps platform for managing, securing and distributing software binaries and artifacts across the software build, release and deployment lifecycle.",
+    "hqCity": "Sunnyvale",
+    "hqCountry": "United States",
+    "foundedYear": 2008,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "software artifact management and DevOps platform",
+    "tickers": [
+      "NASDAQ:FROG"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "JFrog Ltd. - Form 10-Q for the quarter ended June 30, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312526340294/frog-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "legalName",
+        "label": "JFrog Ltd. - Form 10-Q cover page XBRL rendering, Entity Registrant Name",
+        "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312526340294/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "JFrog - official site",
+        "url": "https://jfrog.com/about/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "JFrog Ltd. - Form S-1 filed 2020-08-24, business description of the end-to-end DevOps Platform",
+        "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312520228195/d841831ds1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCity",
+        "label": "JFrog Ltd. - Form 10-Q for the quarter ended June 30, 2026, address of principal executive offices (270 E. Caribbean Drive, Sunnyvale, California)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312526340294/frog-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "JFrog Ltd. - Form 10-Q for the quarter ended June 30, 2026, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312526340294/frog-20260630.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "foundedYear",
+        "label": "JFrog Ltd. - Form S-1, Corporate Information (incorporated under the laws of the State of Israel on April 28, 2008)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312520228195/d841831ds1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "JFrog Ltd. - Form 10-Q for the quarter ended June 30, 2026, cover page XBRL security exchange name",
+        "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312526340294/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "tickers",
+        "label": "JFrog Ltd. - Form 10-Q cover page XBRL rendering, Trading Symbol FROG, Security Exchange Name NASDAQ",
+        "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312526340294/R1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "JFrog Ltd. - Form S-1, description of the DevOps Platform for software release management",
+        "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312520228195/d841831ds1.htm",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "JFrog Ltd. - Form S-1, description of binary and artifact management across the software release lifecycle",
+        "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312520228195/d841831ds1.htm",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "jobyaviation": {
     "companyId": "jobyaviation",
     "name": "Joby Aviation",
@@ -15489,6 +17473,87 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "legora": {
+    "companyId": "legora",
+    "name": "Legora",
+    "legalName": "Legora AB",
+    "website": "https://legora.com",
+    "description": "AI platform for legal work, used by law firms and in-house legal teams for research, document review, drafting and agentic legal workflows.",
+    "hqCity": null,
+    "hqCountry": "Sweden",
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Legal Tech",
+    "subsector": "AI platform for legal research, document review and drafting",
+    "tickers": [],
+    "formerNames": [
+      "Leya"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Legora - Privacy Policy",
+        "url": "https://legora.com/legal/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "website",
+        "label": "Legora - Official Site",
+        "url": "https://legora.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Legora - Official Site",
+        "url": "https://legora.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "description",
+        "label": "Legora raises $550 million Series D - company newsroom, 10 March 2026",
+        "url": "https://legora.com/newsroom/legora-raises-550-million-series-d-to-fuel-us-growth",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Legora - Privacy Policy",
+        "url": "https://legora.com/legal/privacy-policy",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Legora - Security",
+        "url": "https://legora.com/security",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "status",
+        "label": "Legora raises $550 million Series D - company newsroom, 10 March 2026",
+        "url": "https://legora.com/newsroom/legora-raises-550-million-series-d-to-fuel-us-growth",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "sector",
+        "label": "Legora - Official Site",
+        "url": "https://legora.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "subsector",
+        "label": "Legora - Official Site",
+        "url": "https://legora.com/",
+        "checked": "2026-09-03"
+      },
+      {
+        "field": "formerNames",
+        "label": "Top Legal AI Platform Leya Rebrands as Legora - company press release, 19 February 2025",
+        "url": "https://www.businesswire.com/news/home/20250219690496/en/Top-Legal-AI-Platform-Leya-Rebrands-as-Legora-Unveils-Agentic-Research-and-Product-Upgrades",
+        "checked": "2026-09-03"
+      }
+    ],
+    "lastChecked": "2026-09-03"
+  },
   "lemonade": {
     "companyId": "lemonade",
     "name": "Lemonade",
@@ -15852,99 +17917,6 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Linear - About",
         "url": "https://linear.app/about",
-        "checked": "2026-09-03"
-      }
-    ],
-    "lastChecked": "2026-09-03"
-  },
-  "linkedin": {
-    "companyId": "linkedin",
-    "name": "LinkedIn",
-    "legalName": "LinkedIn Corporation",
-    "website": "https://www.linkedin.com",
-    "description": "Operates an online professional network used by members to connect with contacts and by employers and marketers to reach them.",
-    "hqCity": "Mountain View",
-    "hqCountry": "United States",
-    "foundedYear": 2003,
-    "status": "acquired",
-    "statusDetail": "Acquired by Microsoft Corporation in 2016",
-    "sector": "Consumer",
-    "subsector": "online professional networking platform",
-    "tickers": [],
-    "formerNames": [
-      "LinkedIn, Ltd."
-    ],
-    "sources": [
-      {
-        "field": "legalName",
-        "label": "LinkedIn Corporation Form 10-K FY2015 cover page - SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "legalName",
-        "label": "Microsoft Corporation Form 8-K filed 8 December 2016, Item 2.01 - names LinkedIn Corporation",
-        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516788575/d259484d8k.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "website",
-        "label": "LinkedIn Corporation Form 10-K FY2015 - company website given as www.linkedin.com",
-        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "description",
-        "label": "LinkedIn Corporation Form 10-K FY2015, Item 1 Business: 'We are the world's largest professional network on the Internet'",
-        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "hqCity",
-        "label": "LinkedIn Corporation Form 10-K FY2015 cover page - principal executive offices, 2029 Stierlin Court, Mountain View, CA 94043",
-        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "hqCountry",
-        "label": "LinkedIn Corporation Form 10-K FY2015 cover page - Mountain View, CA 94043",
-        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "foundedYear",
-        "label": "LinkedIn Corporation Form 10-K FY2015: 'We were incorporated in Delaware in March 2003 under the name LinkedIn, Ltd.'",
-        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "status",
-        "label": "Microsoft Corporation Form 8-K filed 8 December 2016, Item 2.01 Completion of Acquisition",
-        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516788575/d259484d8k.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "statusDetail",
-        "label": "Microsoft Corporation Form 8-K filed 8 December 2016, Item 2.01 - merger completed 8 December 2016, LinkedIn became a wholly owned Microsoft subsidiary",
-        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312516788575/d259484d8k.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "sector",
-        "label": "LinkedIn Corporation Form 10-K FY2015, Item 1 Business - professional network with over 400 million members",
-        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "subsector",
-        "label": "LinkedIn Corporation Form 10-K FY2015, Item 1 Business - professional network with over 400 million members",
-        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "formerNames",
-        "label": "LinkedIn Corporation Form 10-K FY2015: 'We were incorporated in Delaware in March 2003 under the name LinkedIn, Ltd. and changed our name to LinkedIn Corporation in January 2005.'",
-        "url": "https://www.sec.gov/Archives/edgar/data/1271024/000127102416000035/a20151231-10xkdocument.htm",
         "checked": "2026-09-03"
       }
     ],
