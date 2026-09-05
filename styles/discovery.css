@@ -284,8 +284,32 @@ body.gs-open { overflow: hidden; }
 .scr-modal-foot { display: flex; justify-content: flex-end; gap: 8px;
   padding: 10px 14px; border-top: 1px solid var(--hairline); }
 
+/* A grid item defaults to min-width:auto, which stops it shrinking
+   below its content - so the table forced the whole layout to its own
+   width instead of scrolling inside .scr-tablewrap. minmax(0, 1fr) on
+   both the single and two column cases, plus min-width:0 on the
+   column itself, is what lets overflow-x actually engage. */
+.scr-main { min-width: 0; }
+
 @media (max-width: 900px) {
-  .scr-layout { grid-template-columns: 1fr; }
+  .scr-layout { grid-template-columns: minmax(0, 1fr); }
   .scr-filters { position: static; }
   .scr-opts { max-height: 150px; }
 }
+
+/* ---------- saved views (Phase 2E) ---------- */
+.sv-newrow { display: flex; gap: 8px; padding: 10px 14px 12px; border-bottom: 1px solid var(--hairline); }
+.sv-newrow .scr-text { flex: 1 1 auto; }
+.sv-row { display: flex; align-items: center; gap: 8px; padding: 7px 14px; }
+.sv-row:hover { background: var(--surface); }
+.sv-row.is-confirm { background: var(--surface); }
+.sv-load { flex: 1 1 auto; text-align: left; background: none; border: 0; padding: 0;
+  cursor: pointer; min-width: 0; }
+.sv-name { display: block; font-size: .84rem; color: var(--ink); }
+.sv-meta { display: block; font-family: var(--mono); font-size: 9.5px; color: var(--ink-dim); margin-top: 1px; }
+.sv-acts { display: flex; gap: 4px; flex: 0 0 auto; }
+.sv-acts button { font-family: var(--mono); font-size: 9.5px; color: var(--ink-dim);
+  background: var(--surface); border: 1px solid var(--hairline); border-radius: 3px;
+  padding: 2px 6px; cursor: pointer; }
+.sv-acts button:hover { color: var(--ink); border-color: var(--accent); }
+.sv-none { padding: 14px; font-size: .82rem; line-height: 1.55; color: var(--ink-dim); }
