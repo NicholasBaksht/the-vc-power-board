@@ -216,6 +216,8 @@ document.getElementById('portfolioView').style.display = 'none';
   if (scView) scView.style.display = 'none';
   const acView = document.getElementById('alertsView');
   if (acView) acView.style.display = 'none';
+  const frView = document.getElementById('raiseView');
+  if (frView) frView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -383,6 +385,15 @@ document.getElementById('powerSignalsView').style.display = 'none';
     document.getElementById('screenerView').style.display = 'block';
     if (typeof renderScreener === 'function') renderScreener();
     if (typeof pbTrack === 'function') pbTrack('screener_opened');
+    window.scrollTo(0, 0);
+  } else if (slug === 'raise') {
+    /* The private fundraising workspace. Signed-out visitors reach the
+       route and get an explanation rather than a redirect, the same as
+       #alerts: the page has to be able to say what a Raise is before
+       asking anyone to sign up for one. renderFundraise handles both
+       states itself. */
+    document.getElementById('raiseView').style.display = 'block';
+    if (typeof renderFundraise === 'function') renderFundraise();
     window.scrollTo(0, 0);
   } else if (slug === 'alerts') {
     /* The monitoring inbox. Signed-out visitors still reach the route
@@ -912,6 +923,15 @@ function pbhInstallNav() {
     const signedIn = typeof isSignedIn === 'function' && isSignedIn();
     cta.setAttribute('href', signedIn ? '#shortlist' : '#signin');
     cta.textContent = signedIn ? 'My shortlist' : 'Get Started';
+  }
+  /* The Raise workspace is account-scoped, so its header control is
+     hidden entirely when signed out rather than shown and refused.
+     Same reasoning as the alerts bell beside it. "My shortlist" is
+     left exactly as it is - Phase 4 adds a surface, it does not take
+     one away. */
+  const raiseBtn = document.querySelector('.pb-raise-btn');
+  if (raiseBtn) {
+    raiseBtn.style.display = (typeof isSignedIn === 'function' && isSignedIn()) ? '' : 'none';
   }
   if (typeof syncActiveNav === 'function') syncActiveNav();
   pbhFitNav();
