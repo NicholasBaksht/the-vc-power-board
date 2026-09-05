@@ -450,12 +450,22 @@ function ssShowResults(s) {
 }
 
 /* The hook power-screener.js already calls. saved-views.js owns the
-   Views button; this owns the Saved searches one. */
+   Views button; this owns the Saved searches one, and hands anything
+   else back down the chain.
+
+   ASSIGNED, NOT DECLARED, and that distinction is the whole bug this
+   replaced. A function DECLARATION is hoisted to the top of the
+   script, so the name was already rebound to this function before the
+   line below it ran to capture "the previous hook". It captured
+   itself, and every click that was not Saved searches recursed until
+   the stack blew - which also meant saved-views.js never received a
+   click, so the Views button did nothing. A function expression binds
+   at its own line, so the capture sees the real predecessor. */
 const _ssPrevHook = (typeof scrSavedViewClick === 'function') ? scrSavedViewClick : null;
-function scrSavedViewClick(e, st) {
+window.scrSavedViewClick = function (e, st) {
   if (e.target.closest('[data-ss-open]')) { ssOpenPanel(); return true; }
   return _ssPrevHook ? _ssPrevHook(e, st) : false;
-}
+};
 
 window.addEventListener('hashchange', function () { setTimeout(ssInstall, 40); });
 if (document.readyState === 'loading') {
