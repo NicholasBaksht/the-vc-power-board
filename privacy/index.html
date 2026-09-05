@@ -62,7 +62,7 @@
     </div>
     <div class="legal-meta-item">
       <span class="legal-meta-label">Last revised</span>
-      <span class="legal-meta-value">September 2, 2026</span>
+           <span class="legal-meta-value">September 5, 2026</span>
     </div>
     <div class="legal-meta-item">
       <span class="legal-meta-label">Accounts</span>
@@ -85,6 +85,7 @@
       <li><strong>If you do create an account, the only thing collected is your email address.</strong> There is no password to steal - sign-in works by a one-time link sent to your inbox.</li>
       <li><strong>An account exists to save your Shortlist across devices.</strong> That is the entire feature.</li>
       <li><strong>No advertising software runs on this site.</strong> No Google Analytics, no tag manager, no advertising pixel, and no third-party analytics vendor. The Operator does record a small number of first-party product events in its own database, so it can tell whether Power Match is actually helping founders find investors. Your Power Match answers, searches and notes are never part of that record, and a Do Not Track or Global Privacy Control signal switches it off entirely. Section 3 sets out exactly what is and is not recorded.</li>
+            <li><strong>Your pitch deck never leaves your browser.</strong> Conflict Check reads the file on your own machine and compares it against data already on the page. There is no upload endpoint on this Site to send it to, so the Operator cannot read your deck and could not produce it if asked. Section 3 sets out exactly what happens to it.</li>
       <li><strong>Your account is never used to profile, target, or market to you</strong>, and your email is never sold, rented, or shared.</li>
       <li><strong>If you are pictured on the Site and would rather not be, ask and the photograph comes down.</strong> No reason required. Most profiles carry no photograph at all: one appears only where a licence permits it, and everyone else is shown a tile with their initials. No image is ever run through facial recognition. Section 9 sets out the whole practice.</li>
       <li><strong>You can delete your account and everything in it at any time</strong>, from your account page, without emailing anyone.</li>
@@ -183,8 +184,15 @@
       <li>behavioural, advertising, demographic, or interest profiles;</li>
       <li>precise or approximate geolocation data;</li>
       <li>contact lists, social media profiles, or data purchased from brokers;</li>
+            <li>the contents of any pitch deck or document you analyse with Conflict Check, and the description of your company you type into it.</li>
       <li>biometric data, or any special category of sensitive personal data.</li>
     </ul>
+    
+    <h3>Pitch decks and Conflict Check</h3>
+    <p>Conflict Check compares a description of your company, or a pitch deck you choose to open, against the portfolio companies recorded on this Site. It is the most sensitive thing anyone hands the Site, so it is worth being exact about what happens to it.</p>
+    <p><strong>The file never leaves your browser.</strong> When you choose a deck, it is read by your own browser using the standard file-reading interface, and the text is compared against data already downloaded to the page. Nothing is uploaded, because there is nowhere to upload it to: the Site is a set of static files with no server that accepts a file, no upload endpoint, and no storage bucket. The Operator cannot read your deck, and could not produce it if asked to.</p>
+    <p>The extracted text is held in the page's memory for as long as the tab is open and is discarded when you close or reload it. Neither the file, its name, its text, nor the description you type is written to your device, sent to the Operator's database, or transmitted to any third party. The results shown to you are produced entirely on your own machine.</p>
+    <p>The only thing recorded is that the Conflict Check page was opened and that a check finished running, as two counts with no content attached. Neither carries the deck, the description, or the result. That is set out in the table below.</p>
     <p>The Site contains no third-party analytics software, no tag manager, no advertising or conversion pixel, no session recording or heatmap tool, no A/B testing tool, and no third-party marketing script. No outside company receives any record of your use of the Site.</p>
 
     <h3>Product measurement</h3>
@@ -207,8 +215,16 @@
             <td>Which firm pages you opened, by firm identifier</td>
             <td>The text of your searches, filters or notes</td>
           </tr>
+                    <tr>
+            <td>That the Conflict Check page was opened, and that a check finished running</td>
+            <td>Your pitch deck, its file name, its text, the description you typed, or which companies the check matched</td>
+          </tr>
           <tr>
-            <td>Whether you saved, followed, or recorded a private outcome for a firm</td>
+            <td>That a strategic angel recommendation was shown, opened, saved, followed or messaged</td>
+            <td>The content of any message you send, which is covered by Section 17</td>
+          </tr>
+          <tr>
+               <p>The Site uses your browser's local storage for the following, and nothing else. Everything here stays on the device that wrote it unless the row says otherwise.</p>
             <td>The private outcome itself, which remains visible only to you as described in Section 2</td>
           </tr>
           <tr>
@@ -234,6 +250,21 @@
             <th>Applies to</th>
           </tr>
         </thead>
+                  <tr>
+            <td>Power Match answers</td>
+            <td>The stage, sector and needs you selected, kept so that returning to Power Match does not make you answer again. It stays on this device and is not sent to the Operator; only the fact that a step was completed is counted, as Section 3 describes</td>
+            <td>Everyone who uses Power Match</td>
+          </tr>
+          <tr>
+            <td>Where to return after sign-in</td>
+            <td>The page you were on when you asked for a sign-in link, so the link returns you there instead of to the homepage. Cleared as soon as it is used</td>
+            <td>Anyone requesting a sign-in link</td>
+          </tr>
+          <tr>
+            <td>Dismissal flags</td>
+            <td>Whether you closed the profile prompt or the signals banner, so they are not shown again. Each is a single yes or no</td>
+            <td>Everyone</td>
+          </tr>
         <tbody>
           <tr>
             <td>Shortlist</td>
