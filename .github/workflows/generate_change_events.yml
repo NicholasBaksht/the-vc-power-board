@@ -1,0 +1,88 @@
+name: Generate Change Events
+
+# Phase 3B. Diffs this commit's data files against the previous one and
+# writes scripts/data-change-events.js. Git is the snapshot store: there
+# is no server and no job runner, but every data change is a real commit
+# with a real timestamp.
+#
+# Runs AFTER a data change lands, never on a schedule, so an event is
+# only ever produced by an actual difference between two revisions.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/data-partners*.js'
+      - 'scripts/data-deals.js'
+      - 'scripts/data-companies*.js'
+      - 'scripts/data-company-aliases.js'
+      - 'scripts/data-firms.js'
+      - 'scripts/data-capital-sources.js'
+      - 'scripts/data-team-snapshots.js'
+      - 'tools/generate-change-events.js'
+  workflow_dispatch: {}
+
+# One at a time. Two overlapping runs would diff against different
+# baselines and could emit the same change twice.
+concurrency:
+  group: change-events
+  cancel-in-progress: false
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          # Needs the previous revision to diff against.
+          fetch-depth: 2
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Materialise the previous revision
+        id: prev
+        run: |
+          mkdir -p /tmp/prev
+          if git rev-parse HEAD~1 >/dev/null 2>&1; then
+            git archive HEAD~1 | tar -x -C /tmp/prev
+            echo "have_prev=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "No previous commit. Baseline only, no events."
+            echo "have_prev=0" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Detect changes
+        run: |
+          DETECTED_AT="$(git show -s --format=%cI HEAD)"
+          echo "Commit timestamp used as detectedAt: $DETECTED_AT"
+          if [ "${{ steps.prev.outputs.have_prev }}" = "1" ]; then
+            node tools/generate-change-events.js /tmp/prev . "$DETECTED_AT"
+          else
+            node tools/generate-change-events.js "" . "$DETECTED_AT"
+          fi
+
+      - name: Commit if events changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/data-change-events.js
+          git diff --staged --quiet && { echo "No new events."; exit 0; }
+          git commit -m "Update change events [skip ci]"
+          # Same rebase-and-retry as the SEO workflow: a bare push loses
+          # the race whenever main moved while this job was running.
+          for attempt in 1 2 3; do
+            if git push; then echo "Pushed on attempt $attempt."; exit 0; fi
+            echo "Push rejected on attempt $attempt; rebasing."
+            if ! git pull --rebase origin "${GITHUB_REF_NAME}"; then
+              git rebase --abort || true
+              echo "Rebase conflicted. Re-run once the branch is settled."
+              exit 1
+            fi
+          done
+          echo "Could not push after 3 attempts."
+          exit 1
