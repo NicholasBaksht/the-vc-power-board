@@ -1113,7 +1113,19 @@ const data = loadCombinedScripts(['data-meta.js', 'data-capital-sources.js', 'da
     console.log(`  company pages: ${published.length} published of ${Object.keys(backIdx).length} company references`);
   }
 
-  const sitemapUrls = [{ url: `${SITE_URL}/`, priority: '1.0' }, ...allGeneratedUrls];
+  /* Privacy and Terms are hand-maintained pages, not generated ones, so
+     nothing above pushes them and they were missing from the sitemap
+     entirely. They are linked from the header on every page, so they
+     were reachable, but a legal page a search engine cannot enumerate
+     is a page nobody can check you against. Listed at low priority:
+     they should be indexed, not ranked. */
+  const STATIC_PAGES = [
+    { url: `${SITE_URL}/privacy/`, priority: '0.3' },
+    { url: `${SITE_URL}/terms/`,   priority: '0.3' },
+  ];
+
+  const sitemapUrls = [{ url: `${SITE_URL}/`, priority: '1.0' },
+                       ...allGeneratedUrls, ...STATIC_PAGES];
   writeFile('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls.map(u => `  <url>\n    <loc>${u.url}</loc>\n    <lastmod>${RUN_DATE}</lastmod>\n    <priority>${u.priority}</priority>\n  </url>`).join('\n')}\n</urlset>`);
   writeFile('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
