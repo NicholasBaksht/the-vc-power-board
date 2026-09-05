@@ -197,6 +197,8 @@ document.getElementById('portfolioView').style.display = 'none';
   document.getElementById('companyView').style.display = 'none';
   const ciView = document.getElementById('companiesIndexView');
   if (ciView) ciView.style.display = 'none';
+  const sView = document.getElementById('searchView');
+  if (sView) sView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -357,6 +359,14 @@ document.getElementById('powerSignalsView').style.display = 'none';
   } else if (slug === 'people') {
     document.getElementById('peopleView').style.display = 'block';
     renderPeople();
+    window.scrollTo(0, 0);
+  } else if (slug === 'search' || slug.indexOf('search?') === 0) {
+    /* Query lives in the hash after "?", so the route match has to
+       tolerate it: #search?q=fintech&type=firm. State is read by
+       renderSearchResults via dscDecodeState, which ignores unknown
+       keys rather than throwing on a hand-edited URL. */
+    document.getElementById('searchView').style.display = 'block';
+    if (typeof renderSearchResults === 'function') renderSearchResults();
     window.scrollTo(0, 0);
   } else if (slug === 'companies') {
     /* The index of company profiles. Cards link out to the static
