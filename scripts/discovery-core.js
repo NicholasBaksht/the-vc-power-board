@@ -66,7 +66,11 @@ const DSC_MATCH = {
   TOKEN_NAME: 55,
   EXACT_COMPANY_ASSOCIATION: 40,
   FIELD_MATCH: 25,
-  DESCRIPTION_MATCH: 10
+  DESCRIPTION_MATCH: 10,
+  /* Scored below every other match type on purpose. It only ever
+     adds results where a query previously found none, so it cannot
+     reorder anything that already matched. */
+  MULTI_TERM_FIELD: 5
 };
 
 const DSC_MATCH_LABEL = {
@@ -75,6 +79,7 @@ const DSC_MATCH_LABEL = {
   PREFIX_NAME: 'Name starts with your query',
   TOKEN_NAME: 'Name contains your query',
   EXACT_COMPANY_ASSOCIATION: 'Invested in a matching company',
+  MULTI_TERM_FIELD: 'Matches all of your terms',
   FIELD_MATCH: 'Matching sector, stage or role',
   DESCRIPTION_MATCH: 'Mentioned in the description'
 };
@@ -323,6 +328,26 @@ function dscScoreDoc(doc, q) {
   }
   if (doc._text.indexOf(q.toLowerCase()) !== -1) {
     return { type: 'DESCRIPTION_MATCH', score: DSC_MATCH.DESCRIPTION_MATCH };
+  }
+
+  /* Multi-word queries across the structured fields.
+     Names already get token-AND treatment above, but keywords and
+     description text were only ever matched as one contiguous phrase.
+     That made a natural query like "fintech seed" return nothing at
+     all, even though many records carry both terms, because that
+     exact string appears in none of them.
+
+     Restricted to multi-word queries, so single-word behaviour is
+     unchanged, and scored below every existing match type, so it can
+     only add results where there were none. */
+  if (qt.length > 1) {
+    const allTermsPresent = qt.every(function (t) {
+      if (doc._text.indexOf(t) !== -1) return true;
+      return doc._kw.some(function (k) { return k.indexOf(t) !== -1; });
+    });
+    if (allTermsPresent) {
+      return { type: 'MULTI_TERM_FIELD', score: DSC_MATCH.MULTI_TERM_FIELD };
+    }
   }
   return null;
 }
