@@ -1,0 +1,172 @@
+/* ============================================================
+   FUNDRAISE.CSS
+   Phase 4 private fundraising workspace.
+
+   Kept in its own file rather than appended to discovery.css because
+   this is a different surface with a different lifetime: discovery is
+   public research, this is private workflow. They will diverge, and
+   one stylesheet growing without limit is how cascade collisions
+   start.
+
+   The visual language is the existing one and deliberately so. A
+   founder should not feel they have left the research product and
+   entered a CRM. Thin borders, restrained green, high density, data
+   as the design. No pipeline confetti.
+   ============================================================ */
+
+.fr-wrap { max-width: 940px; }
+
+/* Header entry point, beside the alerts bell. Account-scoped, so it
+   is hidden entirely when signed out - an empty workspace nobody can
+   open is a dead control, the same reasoning as the bell. */
+.pb-raise-btn {
+  position: relative; display: none; align-items: center; justify-content: center;
+  width: 34px; height: 34px; margin-left: 6px; flex: 0 0 auto;
+  border: 1px solid var(--hairline-strong); border-radius: 8px;
+  background: var(--bg); color: var(--ink-dim); text-decoration: none;
+}
+.pb-raise-btn:hover { color: var(--ink); border-color: var(--accent); }
+.pb-raise-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pb-raise-btn svg {
+  width: 15px; height: 15px; fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* ---- list ---- */
+
+.fr-bar {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  margin: 22px 0 14px; padding-bottom: 12px; border-bottom: 1px solid var(--hairline);
+}
+.fr-bar-count {
+  font: 500 12.5px/1 var(--sans); color: var(--ink-dim);
+  font-variant-numeric: tabular-nums;
+}
+
+.fr-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+
+.fr-card {
+  border: 1px solid var(--hairline-strong); background: var(--bg);
+  padding: 16px 18px;
+}
+/* The active raise is marked with a single left rule, not a coloured
+   panel. One signal, the same device the unread alert rail uses. */
+.fr-card.is-active { border-left: 3px solid var(--accent); padding-left: 15px; }
+.fr-card.is-archived { background: var(--surface); border-color: var(--hairline); }
+.fr-card.is-archived .fr-name { color: var(--ink-dim); }
+
+.fr-card-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px; }
+.fr-name {
+  font: 600 17px/1.3 var(--sans); color: var(--ink); letter-spacing: -0.01em;
+}
+.fr-flag {
+  font: 600 9.5px/1 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+  padding: 3px 6px; border-radius: 3px;
+  background: var(--accent-pale); color: var(--accent-bright);
+}
+.fr-flag-quiet { background: var(--surface-raised); color: var(--ink-muted); }
+
+.fr-company {
+  display: flex; align-items: baseline; gap: 8px; margin-top: 4px;
+  font: 500 13px/1.4 var(--sans); color: var(--ink-dim);
+}
+.fr-linked {
+  font: 600 9px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent); border: 1px solid var(--hairline-strong);
+  border-radius: 3px; padding: 2px 5px;
+}
+
+/* Facts read as a data strip, not as cards. Tabular figures so the
+   amounts line up down a list of raises. */
+.fr-facts {
+  display: flex; flex-wrap: wrap; gap: 0 26px; margin: 12px 0 0;
+}
+.fr-facts div { display: flex; flex-direction: column; gap: 2px; }
+.fr-facts dt {
+  font: 600 9.5px/1 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.fr-facts dd {
+  margin: 0; font: 600 14px/1.3 var(--sans); color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.fr-facts-none {
+  margin-top: 10px; font: 400 13px/1.5 var(--sans); color: var(--ink-muted);
+}
+
+.fr-desc {
+  margin: 12px 0 0; font: 400 13.5px/1.55 var(--sans); color: var(--ink-dim);
+  max-width: 66ch;
+}
+.fr-ctx {
+  margin-top: 10px; font: 400 12.5px/1.4 var(--sans); color: var(--ink-muted);
+  padding-left: 10px; border-left: 2px solid var(--hairline-strong);
+}
+
+.fr-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; }
+
+.fr-archived { margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--hairline); }
+.fr-sub {
+  font: 600 10px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-muted); margin: 0 0 6px;
+}
+.fr-sub-note {
+  font: 400 13px/1.5 var(--sans); color: var(--ink-dim);
+  margin: 0 0 14px; max-width: 64ch;
+}
+
+/* ---- empty state ---- */
+
+.fr-empty {
+  border: 1px solid var(--hairline-strong); background: var(--surface);
+  padding: 24px; margin-top: 20px; max-width: 62ch;
+}
+.fr-empty strong { display: block; font: 600 16px/1.4 var(--sans); color: var(--ink); }
+.fr-empty p {
+  margin: 8px 0 16px; font: 400 14px/1.55 var(--sans); color: var(--ink-dim);
+}
+
+/* ---- form ---- */
+
+.fr-field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
+.fr-field-wide { flex: 1 1 auto; }
+.fr-label {
+  font: 600 10px/1 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--ink-dim);
+}
+.fr-optional {
+  font-family: var(--sans); letter-spacing: 0; text-transform: none;
+  font-weight: 400; color: var(--ink-muted); margin-left: 6px; font-size: 11px;
+}
+/* minmax(0) so a long select cannot push the row wider than the
+   panel; 1fr alone is minmax(auto,1fr) and will not shrink. */
+.fr-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 14px; }
+.fr-textarea { resize: vertical; min-height: 68px; font-family: var(--sans); }
+
+.fr-note {
+  margin: -8px 0 14px; font: 400 12px/1.5 var(--sans); color: var(--ink-muted);
+  max-width: 58ch;
+}
+
+.fr-ctx-box {
+  border: 1px solid var(--hairline); background: var(--surface);
+  padding: 12px 14px; margin-bottom: 16px;
+}
+.fr-ctx-val {
+  margin-top: 5px; font: 500 13px/1.45 var(--sans); color: var(--ink);
+}
+.fr-ctx-box .fr-note { margin: 6px 0 0; }
+
+.fr-form-actions { display: flex; align-items: center; gap: 16px; margin-top: 6px; }
+.fr-form-err {
+  margin-top: 10px; font: 500 13px/1.5 var(--sans); color: var(--red);
+  min-height: 0;
+}
+.fr-form-err:empty { display: none; }
+
+@media (max-width: 640px) {
+  .fr-row { grid-template-columns: minmax(0, 1fr); }
+  .fr-facts { gap: 0 18px; }
+  .fr-card { padding: 14px; }
+  .fr-card.is-active { padding-left: 11px; }
+}
