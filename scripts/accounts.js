@@ -613,7 +613,7 @@ function renderAccount() {
       </div>
 
       <h2 class="acct-h2">Your data</h2>
-      <p class="acct-lead">Everything above is the data held about you, and the export below contains all of it: your profile, Shortlist, followed firms, pipeline outcomes, alert settings and any claims or corrections you have sent in.</p>
+      <p class="acct-lead">Everything above is the data held about you, and the export below contains all of it: your profile, Shortlist, followed firms, pipeline outcomes, saved views and searches, Power Alerts and their settings, saved people, your private fundraising records, and any claims or corrections you have sent in.</p>
 
       <div class="acct-actions">
         <button class="acct-btn acct-btn-ghost" id="acctExport">Export my data</button>
@@ -745,7 +745,22 @@ function wireAccountControls() {
         supabaseClient.from('alert_state').select('*'),
         supabaseClient.from('profiles').select('*'),
         supabaseClient.from('firm_claims').select('firm_slug, status, created_at').eq('claimant_id', uid),
-        supabaseClient.from('firm_update_requests').select('firm_slug, field, proposed_value, status, created_at').eq('submitted_by', uid)
+        supabaseClient.from('firm_update_requests').select('firm_slug, field, proposed_value, status, created_at').eq('submitted_by', uid),
+
+        /* Phase 2 and 3 shipped seven owned tables that never reached
+           this list, so the export has been quietly incomplete since
+           Saved Views. The Privacy Policy calls this "all of it", which
+           makes an omission here a false statement in a published
+           document rather than a missing feature. Phase 4A adds the
+           eighth. */
+        supabaseClient.from('saved_views').select('*'),
+        supabaseClient.from('saved_searches').select('*'),
+        supabaseClient.from('user_alerts').select('*'),
+        supabaseClient.from('notification_prefs').select('*'),
+        supabaseClient.from('alert_mutes').select('*'),
+        supabaseClient.from('alert_feedback').select('*'),
+        supabaseClient.from('saved_people').select('*'),
+        supabaseClient.from('fundraises').select('*')
       ];
 
       const rows = function (r) { return (r && !r.error && r.data) ? r.data : []; };
@@ -762,7 +777,15 @@ function wireAccountControls() {
           alert_settings: rows(res[3]),
           profile: rows(res[4]),
           listing_claims: rows(res[5]),
-          correction_requests: rows(res[6])
+          correction_requests: rows(res[6]),
+          saved_views: rows(res[7]),
+          saved_searches: rows(res[8]),
+          alerts: rows(res[9]),
+          notification_preferences: rows(res[10]),
+          alert_mutes: rows(res[11]),
+          alert_feedback: rows(res[12]),
+          saved_people: rows(res[13]),
+          fundraises: rows(res[14])
         };
         const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
