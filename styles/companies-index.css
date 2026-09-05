@@ -1,0 +1,75 @@
+/* ============================================================
+   COMPANIES-INDEX.CSS
+   The #companies route: the browsable list of company profiles.
+
+   Deliberately built from the same measurements as
+   capital-sources.css. Companies and Angels are the same kind of
+   surface - a kicker, a thesis line, a stats strip, a card grid -
+   and two index pages that look subtly different for no reason
+   read as an accident rather than a decision.
+
+   What is genuinely different here is volume: 40 angels fit on a
+   screen and 260 companies do not, so this page carries a search
+   field and a live count that the angels page has no need for.
+   ============================================================ */
+
+.ci-wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 64px; }
+.ci-kicker { font-size: 0.68rem; letter-spacing: 0.11em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 6px; }
+.ci-h1 { font-size: 1.9rem; color: var(--ink); margin: 0 0 10px; line-height: 1.2;
+  text-wrap: balance; }
+.ci-h2 { font-size: 1.1rem; color: var(--ink); margin: 40px 0 8px; line-height: 1.25; }
+.ci-sub { font-size: 0.9rem; color: var(--ink-dim); line-height: 1.6; max-width: 68ch;
+  margin: 0 0 26px; }
+
+.ci-stats { display: flex; flex-wrap: wrap; gap: 26px; padding: 14px 0;
+  border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline);
+  margin-bottom: 20px; }
+.ci-stat .n { font-size: 1.25rem; color: var(--ink); font-variant-numeric: tabular-nums; }
+.ci-stat .l { font-size: 0.7rem; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--ink-dim); margin-top: 2px; }
+
+/* Search sits with the count rather than above it, so the number
+   the reader is filtering is next to the control that filters it. */
+.ci-toolbar { display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  margin-bottom: 18px; }
+.ci-search { flex: 1 1 260px; max-width: 380px; padding: 8px 11px;
+  border: 1px solid var(--hairline); border-radius: 6px; background: var(--surface);
+  color: var(--ink); font-size: 0.85rem; font-family: inherit; }
+.ci-search:focus { outline: 2px solid var(--accent); outline-offset: 1px;
+  border-color: var(--accent); }
+.ci-search::placeholder { color: var(--ink-dim); }
+.ci-count { font-size: 0.75rem; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--ink-dim); font-variant-numeric: tabular-nums; }
+
+.ci-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px; }
+.ci-card { display: block; padding: 14px 16px; border: 1px solid var(--hairline);
+  border-radius: 6px; text-decoration: none; background: var(--surface); }
+.ci-card:hover { border-color: var(--accent); }
+.ci-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ci-card-sector { font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 6px; }
+.ci-card-name { font-size: 1rem; color: var(--ink); margin-bottom: 3px; }
+.ci-card-meta { font-size: 0.75rem; color: var(--ink-dim); }
+.ci-card-status { font-size: 0.68rem; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--ink-dim); margin-top: 7px; }
+
+.ci-empty { padding: 15px; background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 6px; font-size: 0.85rem; line-height: 1.6; color: var(--ink-dim); }
+
+/* Held names carry no link, so they must not look like cards a
+   reader is failing to click. Flat chips, no hover, no border
+   colour change. */
+.ci-held { display: flex; flex-wrap: wrap; gap: 8px; }
+.ci-held-item { display: inline-flex; align-items: baseline; gap: 7px; padding: 6px 11px;
+  border: 1px dashed var(--hairline); border-radius: 6px; font-size: 0.85rem;
+  color: var(--ink); }
+.ci-held-n { font-size: 0.68rem; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--ink-dim); font-variant-numeric: tabular-nums; }
+
+@media (max-width: 560px) {
+  .ci-stats { gap: 18px; }
+  .ci-grid { grid-template-columns: 1fr; }
+  .ci-search { max-width: none; }
+}
