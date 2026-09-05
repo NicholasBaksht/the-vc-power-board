@@ -170,3 +170,12 @@
   .fr-card { padding: 14px; }
   .fr-card.is-active { padding-left: 11px; }
 }
+
+/* ---- Add to Raise toast action (Phase 4B) ----
+   The toast carries a link because "already in this raise" is only
+   useful if you can get to the thing it is talking about. */
+.ss-toast-act {
+  margin-left: 14px; color: var(--accent); font-weight: 600;
+  text-decoration: none; border-bottom: 1px solid currentColor;
+}
+.ss-toast-act:hover { color: var(--accent-bright); }
