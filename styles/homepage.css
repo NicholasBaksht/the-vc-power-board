@@ -59,13 +59,25 @@ body .pb-nav {
   flex: 1 1 auto;
   justify-content: flex-start;
   gap: 0;
-  margin: 0 0 0 var(--s6);
+  /* var(--s5), not var(--s6). At 1366 - the most common laptop width
+     after 1440 - the header was overflowing by exactly 8px with a
+     signed-in account chip, which is the difference between these two
+     steps. Eight pixels of separation from the wordmark is not worth
+     a second header row. */
+  margin: 0 0 0 var(--s5);
   min-width: 0;
   flex-wrap: nowrap;
 }
 body .pb-header-actions { order: 3; flex: 0 0 auto; gap: var(--s3); }
+/* Horizontal padding is var(--s2), not var(--s3). With nine
+   destinations the nav needs about 72px less than 12px sides allow,
+   and padding is the honest place to find it: the rule below this
+   block is that LABELS are never shortened to buy space, and this
+   does not shorten one. It is also the padding the stacked state has
+   always used, so the two states now look the same rather than
+   subtly different. */
 body .pb-nav .nav-link {
-  padding: var(--s2) var(--s3);
+  padding: var(--s2);
   font-size: 14.5px;
   font-weight: 500;
   color: var(--ink-dim);
