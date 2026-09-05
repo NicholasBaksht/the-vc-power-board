@@ -334,6 +334,10 @@ async function almEvaluate(opts) {
     const prefs = await almPrefs(c);
     if (prefs && prefs.in_app === false) return { skipped: 'in-app alerts off' };
 
+    /* Phase 3F. Mutes are loaded before anything is generated so a
+       muted change type never consumes the run budget. */
+    if (typeof aqLoadMutes === 'function') await aqLoadMutes();
+
     const searches = (typeof ssAll === 'function') ? await ssAll() : [];
     const active = searches.filter(function (s) { return s.alertsEnabled !== false; });
 
@@ -346,7 +350,26 @@ async function almEvaluate(opts) {
         const s = active[i];
         const members = (typeof ssEvaluate === 'function') ? ssEvaluate(s) : [];
         memberMap[s.id] = members;
-        alerts = alerts.concat(almMembershipAlerts(s, members));
+        const mAlerts = almMembershipAlerts(s, members);
+
+        /* Phase 3F breadth guard. A search that moves by dozens in one
+           run is too broad to be a watch list. Report it once and pause
+           it rather than truncating silently and letting the user think
+           they are watching something precise. */
+        let broad = null;
+        if (typeof aqBreadthCheck === 'function') {
+          const entered = mAlerts.filter(function (a) {
+            return a.event_type === 'SAVED_SEARCH_ENTITY_ENTERED';
+          }).length;
+          const exited = mAlerts.length - entered;
+          broad = aqBreadthCheck(s, entered, exited);
+        }
+        if (broad && broad.alert) {
+          alerts.push(broad.alert);
+          if (typeof aqPauseSearch === 'function') await aqPauseSearch(s.id);
+        } else {
+          alerts = alerts.concat(mAlerts);
+        }
         /* Advance the baseline so the same entry is never reported
            twice, even if alert insertion later fails. */
         try {
@@ -374,6 +397,11 @@ async function almEvaluate(opts) {
     const byKey = {};
     alerts.forEach(function (a) { if (!byKey[a.dedupe_key]) byKey[a.dedupe_key] = a; });
     alerts = Object.keys(byKey).map(function (k) { return byKey[k]; });
+
+    /* Phase 3F. Mutes, then rollup. Order matters: muted noise must
+       not consume the run budget, and the cap below should count
+       stories rather than rows. */
+    if (typeof aqRefine === 'function') alerts = aqRefine(alerts);
 
     const recent = await almRecent(c);
     alerts = almApplyCooldown(alerts, recent);
