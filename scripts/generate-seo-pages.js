@@ -273,22 +273,62 @@ function renderCompanyPage(c, slug, ctx) {
     `<div class="firm"><div class="firm-meta">${escapeHtml(f[0])}</div>`
     + `<div class="firm-name">${escapeHtml(String(f[1]))}</div></div>`).join('') + `</div>`;
 
-  /* Tracked funding history, newest first. A deal with no amount simply
-     omits it rather than printing a dash. */
+  /* Tracked funding history, newest first.
+
+     ONE ROUND PER FINANCING, NOT ONE PER INVESTOR. FIRM_DEALS stores a
+     row per firm's participation, so a round with three firms is three
+     rows. Rendering rows directly made Saronic claim five funding rounds
+     when it had one, and put the same Series B extension on Nominal's
+     page three times - 35 pages overstated their round count, 60 phantom
+     rounds in total.
+
+     Rows are grouped by date and round label, which is the closest thing
+     to a Deal identity the data carries today. Grouping is presentation
+     only: no row is dropped, and the participating firms and the sources
+     from every row in a group are carried onto the single entry, so
+     nothing is lost by merging. Two genuinely different financings that
+     share a date and a label would merge, which is why the co-investor
+     and source lists stay visible rather than being summarised away. */
   let funding = '';
   if (c.deals.length) {
-    const sorted = c.deals.slice().sort((a, b) =>
-      String(b.announcedDate || '').localeCompare(String(a.announcedDate || '')));
+    const byEvent = new Map();
+    c.deals.forEach(d => {
+      const key = (d.announcedDate || '?') + '|' + (d.round || '?');
+      if (!byEvent.has(key)) byEvent.set(key, []);
+      byEvent.get(key).push(d);
+    });
+    const events = Array.from(byEvent.values()).sort((a, b) =>
+      String(b[0].announcedDate || '').localeCompare(String(a[0].announcedDate || '')));
+
     funding = `<h2 class="seo-h2">Tracked funding history</h2>`
-      + `<p class="seo-intro">${c.deals.length} tracked round${c.deals.length === 1 ? '' : 's'}. `
-      + `This is what Power Board has sourced, not a complete funding record.</p>`
-      + `<div class="firms">` + sorted.map(d => {
+      + `<p class="seo-intro">${events.length} tracked round${events.length === 1 ? '' : 's'}`
+      + (c.deals.length !== events.length
+          ? `, recorded across ${c.deals.length} firm participations`
+          : '')
+      + `. This is what Power Board has sourced, not a complete funding record.</p>`
+      + `<div class="firms">` + events.map(rows => {
+          const d = rows[0];
           const bits = [d.round, d.announcedDate, d.sector].filter(Boolean).join(' - ');
-          const co = (d.coInvestors || []).slice(0, 6).join(', ');
+          /* Union of everyone named across the rows for this financing:
+             the firms whose own rows these are, plus the co-investors
+             each row listed. */
+          const named = new Set();
+          rows.forEach(r => {
+            const fm = ctx.firmsBySlug && ctx.firmsBySlug[r.firmSlug];
+            if (fm && fm.name) named.add(fm.name);
+            (r.coInvestors || []).forEach(x => named.add(x));
+          });
+          const co = Array.from(named).slice(0, 8).join(', ');
+          const srcs = [];
+          rows.forEach(r => { if (r.sourceUrl && srcs.indexOf(r.sourceUrl) === -1) srcs.push(r.sourceUrl); });
           return `<div class="firm"><div class="firm-name">${escapeHtml(d.round || 'Round')}</div>`
             + (bits ? `<div class="firm-meta">${escapeHtml(bits)}</div>` : '')
             + (co ? `<div class="firm-meta">Named alongside: ${escapeHtml(co)}</div>` : '')
-            + (d.sourceUrl ? `<div class="firm-meta"><a class="firm-link" href="${escapeHtml(d.sourceUrl)}" rel="noopener nofollow" target="_blank">Source</a></div>` : '')
+            + (srcs.length
+                ? `<div class="firm-meta">` + srcs.map((u, i) =>
+                    `<a class="firm-link" href="${escapeHtml(u)}" rel="noopener nofollow" target="_blank">Source${srcs.length > 1 ? ' ' + (i + 1) : ''}</a>`
+                  ).join(' ') + `</div>`
+                : '')
             + `</div>`;
         }).join('') + `</div>`;
   }
@@ -339,8 +379,17 @@ function renderCompanyPage(c, slug, ctx) {
         `<div class="firm"><div class="firm-name"><a class="firm-link" href="${escapeHtml(u)}" rel="noopener nofollow" target="_blank">${escapeHtml(srcMap[u])}</a></div></div>`).join('') + `</div>`
     : '';
 
+  /* Rounds, not participation rows - the same grouping the funding
+     section uses. This string is the page description and the summary
+     line, so counting rows here was the other half of the same error. */
+  const roundCount = (function () {
+    const seen = new Set();
+    c.deals.forEach(d => seen.add((d.announcedDate || '?') + '|' + (d.round || '?')));
+    return seen.size;
+  })();
+
   const counts = [
-    c.deals.length ? `${c.deals.length} tracked funding round${c.deals.length === 1 ? '' : 's'}` : null,
+    roundCount ? `${roundCount} tracked funding round${roundCount === 1 ? '' : 's'}` : null,
     c.firms.length ? `${c.firms.length} participating firm${c.firms.length === 1 ? '' : 's'}` : null,
     (c.partners.length + c.angels.length) ? `${c.partners.length + c.angels.length} person-level attribution${(c.partners.length + c.angels.length) === 1 ? '' : 's'}` : null,
   ].filter(Boolean).join(' - ');
