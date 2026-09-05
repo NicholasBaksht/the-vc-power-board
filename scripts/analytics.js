@@ -85,6 +85,11 @@ const PBA_EVENTS = [
   'alert_search_clicked',
   'alert_subscription_paused',
   'alert_subscription_resumed',
+  /* Phase 3F quality signals. Only explicit verdicts are recorded.
+     An unread alert is not evidence of a bad alert. */
+  'alert_muted',
+  'alert_unmuted',
+  'alert_marked_not_useful',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
