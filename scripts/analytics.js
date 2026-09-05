@@ -99,6 +99,15 @@ const PBA_EVENTS = [
   'fundraise_archived',
   'fundraise_restored',
   'fundraise_activated',
+  /* Phase 4B: investor targets. Slugs, firm names and partner names
+     are never sent - only that a target was added, and from which
+     surface, so it is possible to tell which discovery product
+     actually produces pipeline. */
+  'pipeline_target_added',
+  'pipeline_target_removed',
+  'pipeline_partner_added',
+  'pipeline_partner_removed',
+  'pipeline_duplicate_prevented',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
