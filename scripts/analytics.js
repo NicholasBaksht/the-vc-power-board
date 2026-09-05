@@ -69,6 +69,22 @@ const PBA_EVENTS = [
   'power_alert_opened',
   'signup_started',
   'signup_completed',
+  /* Phase 3: Saved Searches and Power Alerts. Behaviour only - a
+     saved search's name, query and filter values are never sent.
+     What is measured is whether alerts get opened and acted on,
+     because an alert nobody clicks is noise regardless of how
+     correct it was. */
+  'saved_search_created',
+  'saved_search_updated',
+  'saved_search_deleted',
+  'saved_search_run',
+  'alert_generated',
+  'alert_opened',
+  'alert_marked_read',
+  'alert_entity_clicked',
+  'alert_search_clicked',
+  'alert_subscription_paused',
+  'alert_subscription_resumed',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
