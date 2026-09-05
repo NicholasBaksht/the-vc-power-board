@@ -90,6 +90,15 @@ const PBA_EVENTS = [
   'alert_muted',
   'alert_unmuted',
   'alert_marked_not_useful',
+  /* Phase 4A: the Raise itself. Behaviour only - no raise name, no
+     target amount, no description and no company name is ever sent as
+     a property. What is measured is whether founders create and keep
+     using a raise, not what they are raising. */
+  'fundraise_created',
+  'fundraise_updated',
+  'fundraise_archived',
+  'fundraise_restored',
+  'fundraise_activated',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
