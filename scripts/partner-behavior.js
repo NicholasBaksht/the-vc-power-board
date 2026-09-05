@@ -189,6 +189,26 @@ function pbehAliasKeys(name) {
   push(raw);
   const m = raw.match(/^(.*?)\s*\(([^)]+)\)\s*$/);   // "Base (Alias)"
   if (m) { push(m[1]); push(m[2]); }
+
+  /* CANONICAL IDENTITY, from the reviewed registry rather than from the
+     shape of the string. Without it this join was pure normalised-name
+     equality, and the audit found ten companies it split that the
+     registry says are one: Block was four separate companies here
+     ("Block", "Square", "Square (Block)", "Block (Square)"), and
+     Grammarly and Superhuman were two. A partner credited with the same
+     position under two spellings counted it twice.
+
+     Only an APPROVED alias adds a key. cmpResolve returns unresolved for
+     a held name, so Paladin and the other NEEDS_REVIEW strings add
+     nothing here and keep exactly the behaviour they had - this cannot
+     merge two companies the registry has refused to merge.
+
+     Guarded on typeof because partner-behavior.js is also loaded by
+     tooling that does not pull in the registry. */
+  if (typeof cmpResolve === 'function') {
+    const r = cmpResolve(raw);
+    if (r && r.resolved && r.id) push(r.id);
+  }
   return keys;
 }
 
