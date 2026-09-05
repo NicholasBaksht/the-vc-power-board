@@ -883,16 +883,37 @@ function pbhFitNav() {
   const acts   = document.querySelector('.pb-header-actions');
   if (!header || !brand || !nav || !acts) return;
 
-  /* Measure the nav's natural width with wrapping off, which is what
-     scrollWidth reports once it is not already stacked. */
+  /* ASK THE BROWSER, DO NOT ADD UP THE PARTS.
+
+     This used to be brand + nav.scrollWidth + actions + 72 for gaps,
+     and it could not report a comfortable fit. The nav is a flex-grow
+     item, so its box always fills whatever space is left over, and
+     scrollWidth returns max(box, content). Once the links were
+     narrower than the space they were given - which is exactly the
+     case where the nav fits - scrollWidth kept reporting the box
+     instead of the content. Measured at 1440 the links needed 836px
+     and scrollWidth insisted on 902, so the header sat 2px from the
+     edge and any signed-in username tipped it onto a second row.
+     The 72 was a guess at the gaps as well.
+
+     Instead: pin the nav to its content width, stop the brand
+     shrinking to absorb the overflow, and ask whether the header
+     overflows. That counts every gap and margin exactly, with no
+     constant to keep in sync with the CSS. */
   const stacked = document.body.classList.contains('is-nav-stacked');
   document.body.classList.remove('is-nav-stacked');
 
-  const cs = getComputedStyle(header);
-  const inner = header.clientWidth -
-                parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
-  const needed = brand.offsetWidth + nav.scrollWidth + acts.offsetWidth + 72; // gaps
-  const fits = needed <= inner;
+  const navFlex = nav.style.flex;
+  const brandShrink = brand.style.flexShrink;
+  nav.style.flex = '0 0 auto';
+  brand.style.flexShrink = '0';
+
+  /* +1 absorbs sub-pixel rounding; without it a header that fits
+     exactly flickers between the two layouts on resize. */
+  const fits = header.scrollWidth <= header.clientWidth + 1;
+
+  nav.style.flex = navFlex;
+  brand.style.flexShrink = brandShrink;
 
   document.body.classList.toggle('is-nav-stacked', !fits);
   if (!fits !== stacked) { /* state changed; nothing else to do */ }
