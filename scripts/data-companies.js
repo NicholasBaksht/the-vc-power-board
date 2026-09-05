@@ -1,6 +1,6 @@
 /* ============================================================
    DATA-COMPANIES.JS
-   Canonical Company entities. 369 companies.
+   Canonical Company entities. 432 companies.
 
    SHARDED DATA FILE. The records themselves live in
    data-companies-1.js and data-companies-2.js, each of which does
