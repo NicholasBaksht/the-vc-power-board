@@ -313,3 +313,20 @@ body.gs-open { overflow: hidden; }
   padding: 2px 6px; cursor: pointer; }
 .sv-acts button:hover { color: var(--ink); border-color: var(--accent); }
 .sv-none { padding: 14px; font-size: .82rem; line-height: 1.55; color: var(--ink-dim); }
+
+/* ---------- saved searches (Phase 3A) ---------- */
+.ss-explain { padding: 12px 14px 0; margin: 0; font-size: .8rem; line-height: 1.55;
+  color: var(--ink-dim); }
+.ss-explain em { color: var(--ink); font-style: normal; }
+.ss-none { padding: 14px; font-size: .82rem; line-height: 1.55; color: var(--ink-dim); }
+.ss-none strong { color: var(--ink); }
+.ss-paused { font-family: var(--mono); font-size: 9.5px; letter-spacing: .05em;
+  color: var(--ink-dim); border: 1px solid var(--hairline); border-radius: 3px; padding: 1px 5px; }
+.ss-toast {
+  position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%) translateY(8px);
+  background: var(--ink); color: #fff; font-size: .82rem; padding: 9px 15px;
+  border-radius: 6px; opacity: 0; pointer-events: none; transition: opacity .18s ease, transform .18s ease;
+  z-index: 980; max-width: calc(100% - 32px);
+}
+.ss-toast.is-on { opacity: 1; transform: translateX(-50%) translateY(0); }
+@media (prefers-reduced-motion: reduce) { .ss-toast { transition: none; } }
