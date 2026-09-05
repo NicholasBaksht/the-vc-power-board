@@ -183,6 +183,19 @@ function router() {
   if (byTheNumbersEl) byTheNumbersEl.style.display = 'none';
    const powerAlertsEl = document.getElementById('powerAlerts');
   if (powerAlertsEl) powerAlertsEl.style.display = isAlerts ? '' : 'none';
+  /* Methodology & Sources is homepage content that sits outside every
+     view container, so nothing ever gated it and it rendered
+     underneath the Screener, Companies, Alerts and every other route.
+     Same root cause as homeIntro and By the Numbers above.
+
+     The nav links to #methodologyAnchor, which is not a route slug, so
+     it lands in the unknown-slug branch at the end of this function
+     and falls back to Home. That branch re-shows this section, which
+     is what keeps the nav link working: the page returns to the
+     homepage and collapseMethodology's own hashchange listener then
+     scrolls to the anchor and expands it. */
+  const methodologyEl = document.getElementById('methodologyAnchor');
+  if (methodologyEl) methodologyEl.style.display = isHomepage ? '' : 'none';
   document.getElementById('listView').style.display = 'none';
   document.getElementById('detailView').style.display = 'none';
   document.getElementById('compareView').style.display = 'none';
@@ -427,7 +440,13 @@ document.getElementById('powerSignalsView').style.display = 'none';
   } else {
     // Unknown slug falls back to Home rather than a bare firm list.
     if (homeIntroEl) homeIntroEl.style.display = '';
-    if (byTheNumbersEl) byTheNumbersEl.style.display = '';
+    /* byTheNumbersEl is deliberately NOT re-shown here. The rebuilt
+       homepage carries its own statistics strip, so restoring the old
+       one put two different stat sections on the same page - which is
+       exactly what the comment above says must not happen. It was
+       hidden on every route and then turned back on in this one
+       branch. */
+    if (methodologyEl) methodologyEl.style.display = '';
     document.body.classList.add('is-home');
     if (typeof renderHomepage === 'function') renderHomepage();
     window.scrollTo(0, 0);
