@@ -199,6 +199,8 @@ document.getElementById('portfolioView').style.display = 'none';
   if (ciView) ciView.style.display = 'none';
   const sView = document.getElementById('searchView');
   if (sView) sView.style.display = 'none';
+  const scView = document.getElementById('screenerView');
+  if (scView) scView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -359,6 +361,13 @@ document.getElementById('powerSignalsView').style.display = 'none';
   } else if (slug === 'people') {
     document.getElementById('peopleView').style.display = 'block';
     renderPeople();
+    window.scrollTo(0, 0);
+  } else if (slug === 'screener' || slug.indexOf('screener?') === 0) {
+    /* Same hash-with-query pattern as search. renderScreener reads
+       its own state so back/forward and a copied URL both work. */
+    document.getElementById('screenerView').style.display = 'block';
+    if (typeof renderScreener === 'function') renderScreener();
+    if (typeof pbTrack === 'function') pbTrack('screener_opened');
     window.scrollTo(0, 0);
   } else if (slug === 'search' || slug.indexOf('search?') === 0) {
     /* Query lives in the hash after "?", so the route match has to
@@ -844,6 +853,7 @@ const PBH_NAV = [
   ['#people', 'Partner Intelligence'],
   ['#capital-sources', 'Angels'],
   ['#companies', 'Companies'],
+  ['#screener', 'Screener'],
   /* The route stays #network: #people already resolves to Partner
      Intelligence, and re-pointing it would break every existing link. */
   ['#network', 'Network'],
