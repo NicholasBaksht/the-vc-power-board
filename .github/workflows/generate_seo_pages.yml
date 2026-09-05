@@ -17,6 +17,20 @@ on:
       - 'scripts/page-copy.js'
       - 'scripts/generate-seo-pages.js'
   workflow_dispatch: {}
+
+# Uploading several data files in a row through the web UI starts a run
+# per commit, and each takes about 16 minutes. They then finish at the
+# same time and fight over the push. Only the last one is worth running,
+# because it is the only one that sees all the new data - so supersede
+# the earlier ones instead of letting them race.
+#
+# cancel-in-progress is safe here: the job only writes generated pages,
+# so a cancelled run leaves nothing half-applied. A manual dispatch gets
+# its own group and is never cancelled by a push.
+concurrency:
+  group: seo-pages-${{ github.event_name == 'workflow_dispatch' && 'manual' || 'push' }}
+  cancel-in-progress: true
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -25,6 +39,11 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
+        with:
+          # checkout defaults to a depth-1 shallow clone, which cannot be
+          # rebased. The push step below rebases when main has moved, so
+          # it needs real history.
+          fetch-depth: 0
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
@@ -45,4 +64,30 @@ jobs:
                   methodology/ pricing/ company/ \
                   sitemap.xml robots.txt
           git diff --staged --quiet || git commit -m "Auto-regenerate SEO pages [skip ci]"
-          git push
+
+          # A bare push fails whenever main has moved since checkout, and
+          # generation takes about 16 minutes, so that window is wide. Runs
+          # 442 to 445 all died here: three fired within 42 seconds of each
+          # other while files were being committed through the web UI, and
+          # every one of them lost the race. The pages were generated
+          # correctly each time and then thrown away.
+          #
+          # Rebase and retry. --rebase replays this commit on top of
+          # whatever landed meanwhile; the generated files are the only
+          # thing this job touches, so there is nothing for a human commit
+          # to conflict with. If a rebase somehow does conflict, abort and
+          # fail loudly rather than force-push over someone's work.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected on attempt $attempt; main has moved. Rebasing."
+            if ! git pull --rebase origin "${GITHUB_REF_NAME}"; then
+              git rebase --abort || true
+              echo "Rebase conflicted. Refusing to force. Re-run this workflow once the branch is settled."
+              exit 1
+            fi
+          done
+          echo "Still could not push after 3 attempts."
+          exit 1
