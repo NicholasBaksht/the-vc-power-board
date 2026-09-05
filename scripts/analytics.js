@@ -88,7 +88,21 @@ const PBA_EVENTS = [
   'linkedin_post_added',
   'following_feed_viewed',
   'profile_edit_started',
-  'profile_updated'
+  'profile_updated',
+
+  /* Phase 2 discovery. Same two-gate rule as the note above: these
+     must also be listed in the product_events CHECK constraint in
+     Postgres, or the insert is rejected and the event is lost. */
+  'global_search_started',
+  'global_search_result_clicked',
+  'search_zero_results',
+  'screener_opened',
+  'screener_filter_applied',
+  'screener_filter_removed',
+  'screener_result_opened',
+  'screener_shortlist_saved',
+  'saved_view_created',
+  'saved_view_loaded',
 ];
 
 /* ---------- opt out ---------- */
