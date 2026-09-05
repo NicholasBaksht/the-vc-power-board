@@ -252,6 +252,7 @@ function acRow(a) {
     '</div>' +
     '<div class="ac-summary">' + acEsc(a.summary) + '</div>' +
     (a.reason ? '<div class="ac-reason">' + acEsc(a.reason) + '</div>' : '') +
+    acRollupList(a) +
     '<div class="ac-actions">' +
       (a.link ? '<a class="ac-act" href="' + acEsc(a.link) + '" data-ac-open="' + acEsc(a.id) + '">' +
         acEsc(acOpenLabel(a.entity_type)) + '</a>' : '') +
@@ -263,8 +264,27 @@ function acRow(a) {
         : '') +
       (a.read_at ? '' : '<button type="button" class="ac-act ac-act-quiet" data-ac-read="' +
         acEsc(a.id) + '">Mark read</button>') +
+      '<button type="button" class="ac-act ac-act-quiet" data-ac-nu="' + acEsc(a.id) +
+        '">Not useful</button>' +
+      '<button type="button" class="ac-act ac-act-quiet" data-ac-mute="' + acEsc(a.id) +
+        '">Mute ' + acEsc(a.entity_name || 'this') + '</button>' +
     '</div>' +
   '</li>';
+}
+
+/* A rollup has to stay as informative as the rows it replaced. The
+   collapsed changes are listed in full rather than summarised again,
+   because "5 changes" on its own is exactly the vague notification
+   this product refuses to send. */
+function acRollupList(a) {
+  const items = Array.isArray(a.rollup_items) ? a.rollup_items : [];
+  if (!items.length) return '';
+  return '<ul class="ac-rollup">' + items.map(function (it) {
+    const label = acEsc(it.summary || '');
+    return '<li>' + (it.link
+      ? '<a href="' + acEsc(it.link) + '">' + label + '</a>'
+      : label) + '</li>';
+  }).join('') + '</ul>';
 }
 
 function acKindLabel(t) {
@@ -277,7 +297,9 @@ function acKindLabel(t) {
     PARTNER_ROLE_CHANGED: 'Role changed',
     COMPANY_STATUS_CHANGED: 'Status changed',
     FIRM_TEAM_MEMBER_ADDED: 'Team change',
-    COMPANY_ALIAS_REVIEWED: 'Identity reviewed'
+    COMPANY_ALIAS_REVIEWED: 'Identity reviewed',
+    ENTITY_MULTI_CHANGE: 'Several changes',
+    SAVED_SEARCH_TOO_BROAD: 'Search too broad'
   };
   return map[t] || String(t || '').toLowerCase().replace(/_/g, ' ');
 }
@@ -337,6 +359,32 @@ function acBind(host) {
 
     if (e.target.closest('[data-ac-prefs]')) { acOpenPrefs(); return; }
 
+    /* Quality feedback. Both actions are the user's own judgement,
+       recorded as given. Nothing is inferred from an alert simply
+       going unread. */
+    const nu = e.target.closest('[data-ac-nu]');
+    if (nu) {
+      const a = acById(nu.getAttribute('data-ac-nu'));
+      if (a && typeof aqNotUseful === 'function') {
+        const res = await aqNotUseful(a);
+        await acMarkRead([a.id]);
+        if (res && res.autoMuted) acToast(res.message);
+        else acToast('Recorded. This will not change what you have already received.');
+      }
+      acPaint(host); return;
+    }
+
+    const mu = e.target.closest('[data-ac-mute]');
+    if (mu) {
+      const a = acById(mu.getAttribute('data-ac-mute'));
+      if (a && typeof aqMute === 'function') {
+        await aqMute('entity', a.entity_id, 'user');
+        acToast('Muted ' + (a.entity_name || 'this entity') +
+                '. Existing alerts stay in your history.');
+      }
+      acPaint(host); return;
+    }
+
     const open = e.target.closest('[data-ac-open]');
     if (open) {
       /* Opening an alert marks it read: acting on it IS reading it. */
@@ -356,6 +404,21 @@ function acBind(host) {
       return;
     }
   });
+}
+
+function acById(id) {
+  return (acState.alerts || []).filter(function (a) { return a.id === id; })[0] || null;
+}
+
+function acToast(msg) {
+  const t = document.createElement('div');
+  t.className = 'ss-toast';
+  t.setAttribute('role', 'status');
+  t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(function () { t.classList.add('is-on'); }, 10);
+  setTimeout(function () { t.classList.remove('is-on'); }, 4200);
+  setTimeout(function () { t.remove(); }, 4800);
 }
 
 /* ---------- preferences (3E, in-app) ---------- */
@@ -382,16 +445,56 @@ function acOpenPrefs() {
         '<span class="ac-pref-note">Unavailable. This product has no mail infrastructure, so a ' +
         'digest switch here would do nothing. The preference is kept for when one exists.</span></div>' +
       '</div>' +
+      acMutedSection() +
+      acQualitySection() +
     '</div></div>';
   document.body.appendChild(el);
   el.addEventListener('click', async function (e) {
     if (e.target.closest('[data-ac-close]')) { el.remove(); acPaint(document.getElementById('alertsView')); return; }
+    const un = e.target.closest('[data-ac-unmute]');
+    if (un && typeof aqUnmute === 'function') {
+      await aqUnmute(un.getAttribute('data-ac-unmute'), un.getAttribute('data-ac-target'));
+      el.remove();
+      acOpenPrefs();
+      return;
+    }
     const t = e.target.closest('[data-ac-pref]');
     if (t) {
       const key = t.getAttribute('data-ac-pref');
       await acSetPref(key, t.checked);
     }
   });
+}
+
+/* Anything muted is listed with a way back. A silent permanent mute
+   is indistinguishable from a bug: the user stops seeing something
+   and has no way to find out why. */
+function acMutedSection() {
+  const m = (typeof aqMutes === 'function') ? aqMutes() : { entities: [], types: [] };
+  const rows = []
+    .concat(m.types.map(function (t) { return ['event_type', t, acKindLabel(t)]; }))
+    .concat(m.entities.map(function (e) { return ['entity', e, e]; }));
+  if (!rows.length) return '';
+  return '<div class="ac-muted"><div class="ac-muted-head">Muted</div>' +
+    rows.map(function (r) {
+      return '<div class="ac-muted-row"><span>' + acEsc(r[2]) + '</span>' +
+        '<button type="button" class="ac-act" data-ac-unmute="' + acEsc(r[0]) +
+        '" data-ac-target="' + acEsc(r[1]) + '">Unmute</button></div>';
+    }).join('') + '</div>';
+}
+
+/* Three counts from the user's own inbox. No invented benchmark and
+   no relevance percentage - there is no ground truth for one, and
+   inventing it would be the fabrication this product refuses. */
+function acQualitySection() {
+  const st = (typeof aqQualityStats === 'function') ? aqQualityStats(acState.alerts) : null;
+  if (!st) return '';
+  return '<div class="ac-muted"><div class="ac-muted-head">Your alerts so far</div>' +
+    '<div class="ac-muted-row"><span>Received</span><strong>' + st.total + '</strong></div>' +
+    '<div class="ac-muted-row"><span>Opened</span><strong>' + st.read +
+      ' (' + st.readShare + ' per cent)</strong></div>' +
+    '<div class="ac-muted-row"><span>Marked not useful</span><strong>' + st.dismissed + '</strong></div>' +
+    '</div>';
 }
 
 function acToggle(key, label, on, note) {
