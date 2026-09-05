@@ -195,6 +195,8 @@ function router() {
   if (netView) netView.style.display = 'none';
 document.getElementById('portfolioView').style.display = 'none';
   document.getElementById('companyView').style.display = 'none';
+  const ciView = document.getElementById('companiesIndexView');
+  if (ciView) ciView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -355,6 +357,13 @@ document.getElementById('powerSignalsView').style.display = 'none';
   } else if (slug === 'people') {
     document.getElementById('peopleView').style.display = 'block';
     renderPeople();
+    window.scrollTo(0, 0);
+  } else if (slug === 'companies') {
+    /* The index of company profiles. Cards link out to the static
+       /company/<slug>/ pages rather than to #company/<slug>, because
+       that in-app route only covers companies held as public stock. */
+    document.getElementById('companiesIndexView').style.display = 'block';
+    if (typeof renderCompaniesIndex === 'function') renderCompaniesIndex();
     window.scrollTo(0, 0);
  } else if (slug === 'portfolio') {
     document.getElementById('portfolioView').style.display = 'block';
@@ -813,13 +822,18 @@ if (document.readyState === 'loading') {
    - pbhInstallNav() rewrites the header links for the same reason.
    ============================================================ */
 
-/* The seven destinations, each an existing route. Rewritten from here
+/* The nine destinations, each an existing route. Rewritten from here
    rather than from markup so the header cannot drift out of sync with
-   the homepage that depends on it. */
+   the homepage that depends on it. The markup copy in index.html is
+   what crawlers read, so BOTH have to be updated together.
+
+   Order groups the four things Power Board tracks - firms, partners,
+   angels, companies - ahead of the tools that act on them. */
 const PBH_NAV = [
   ['#firms', 'Firms'],
   ['#people', 'Partner Intelligence'],
   ['#capital-sources', 'Angels'],
+  ['#companies', 'Companies'],
   /* The route stays #network: #people already resolves to Partner
      Intelligence, and re-pointing it would break every existing link. */
   ['#network', 'Network'],
