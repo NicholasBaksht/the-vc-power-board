@@ -1,0 +1,164 @@
+/* ============================================================
+   DISCOVERY.CSS
+   Phase 2. Shared surface for Global Power Search and, from 2C,
+   Power Screener.
+
+   Built from the tokens already in main.css - the same hairline,
+   surface, ink and accent the rest of the product uses. Nothing
+   here introduces a gradient, a glow, a large radius or a
+   decorative badge. Density is the point: this is meant to read
+   like a research terminal, so rows are short, type is small and
+   the dividers are thin.
+   ============================================================ */
+
+/* ---------- command palette ---------- */
+
+.gs-overlay { position: fixed; inset: 0; z-index: 900; }
+.gs-overlay[hidden] { display: none; }
+.gs-backdrop { position: absolute; inset: 0; background: rgba(18, 22, 20, .38); }
+body.gs-open { overflow: hidden; }
+
+.gs-panel {
+  position: relative; margin: 9vh auto 0; max-width: 680px; width: calc(100% - 32px);
+  background: var(--bg, #fff); border: 1px solid var(--hairline); border-radius: 8px;
+  box-shadow: 0 18px 48px rgba(18, 22, 20, .16);
+  display: flex; flex-direction: column; max-height: 74vh;
+}
+
+.gs-inputrow {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 14px; border-bottom: 1px solid var(--hairline);
+}
+.gs-icon { width: 17px; height: 17px; flex: 0 0 auto; fill: none;
+  stroke: var(--ink-dim); stroke-width: 2; stroke-linecap: round; }
+.gs-input {
+  flex: 1 1 auto; border: 0; outline: 0; background: transparent;
+  font-family: inherit; font-size: 15px; color: var(--ink); min-width: 0;
+}
+.gs-input::placeholder { color: var(--ink-dim); }
+.gs-input::-webkit-search-cancel-button { -webkit-appearance: none; }
+.gs-esc {
+  flex: 0 0 auto; font-family: var(--mono); font-size: 10.5px; letter-spacing: .04em;
+  color: var(--ink-dim); background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 4px; padding: 3px 7px; cursor: pointer;
+}
+.gs-esc:hover { color: var(--ink); }
+
+.gs-results { overflow-y: auto; padding: 6px 0; }
+
+.gs-group { padding: 4px 0 6px; }
+.gs-group + .gs-group { border-top: 1px solid var(--hairline); }
+.gs-group-head {
+  display: flex; align-items: baseline; gap: 7px;
+  padding: 6px 14px 4px; font-family: var(--mono); font-size: 10px;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--ink-dim);
+}
+.gs-group-n { font-size: 10px; color: var(--ink-dim); }
+
+.gs-row { padding: 6px 14px; cursor: pointer; border-left: 2px solid transparent; }
+.gs-row:hover { background: var(--surface); }
+.gs-row.is-active { background: var(--surface); border-left-color: var(--accent); }
+.gs-row-main { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.gs-row-name { font-size: 13.5px; color: var(--ink); }
+.gs-row-alias, .gs-row-why {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-dim);
+}
+.gs-row-sub { font-size: 11.5px; color: var(--ink-dim); margin-top: 1px; }
+.gs-row-why { margin-top: 2px; }
+
+.gs-more, .gs-viewall {
+  padding: 7px 14px; font-size: 12px; color: var(--accent); cursor: pointer;
+}
+.gs-more:hover, .gs-viewall:hover { background: var(--surface); }
+.gs-viewall { border-top: 1px solid var(--hairline); }
+.gs-fuzzy { font-family: var(--mono); font-size: 10px; color: var(--ink-dim); }
+
+.gs-hint { padding: 16px 14px 18px; }
+.gs-hint-label {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--ink-dim); margin-bottom: 8px;
+}
+.gs-hint-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.gs-chip {
+  font-size: 11.5px; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--hairline); border-radius: 4px; padding: 3px 8px;
+}
+.gs-hint-note { font-size: 12px; line-height: 1.55; color: var(--ink-dim);
+  margin: 10px 0 0; max-width: 56ch; }
+.gs-zero { font-size: 13.5px; color: var(--ink); }
+
+.gs-foot {
+  display: flex; gap: 14px; padding: 8px 14px;
+  border-top: 1px solid var(--hairline); font-size: 11px; color: var(--ink-dim);
+}
+.gs-foot kbd {
+  font-family: var(--mono); font-size: 10px; border: 1px solid var(--hairline);
+  border-radius: 3px; padding: 1px 4px; margin-right: 3px; background: var(--surface);
+}
+
+/* header trigger: deliberately small, the header had 74px spare */
+.pb-search-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; flex: 0 0 auto;
+  border: 1px solid var(--hairline); border-radius: 6px; background: transparent;
+  color: var(--ink-dim); cursor: pointer; padding: 0;
+}
+.pb-search-btn:hover { color: var(--ink); border-color: var(--accent); }
+.pb-search-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pb-search-btn svg { width: 15px; height: 15px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; }
+
+/* ---------- shared discovery page furniture ---------- */
+
+.ds-wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 64px; }
+.ds-kicker { font-size: .68rem; letter-spacing: .11em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 6px; }
+.ds-h1 { font-size: 1.9rem; color: var(--ink); margin: 0 0 10px; line-height: 1.2;
+  text-wrap: balance; }
+.ds-sub { font-size: .9rem; color: var(--ink-dim); line-height: 1.6; max-width: 68ch;
+  margin: 0 0 22px; }
+.ds-sub kbd, .ds-h1 kbd {
+  font-family: var(--mono); font-size: 11px; border: 1px solid var(--hairline);
+  border-radius: 3px; padding: 1px 5px; background: var(--surface); color: var(--ink);
+}
+.ds-btn {
+  font-family: inherit; font-size: .85rem; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--hairline); border-radius: 6px; padding: 8px 14px; cursor: pointer;
+}
+.ds-btn:hover { border-color: var(--accent); }
+
+.ds-tabs { display: flex; flex-wrap: wrap; gap: 2px; border-bottom: 1px solid var(--hairline);
+  margin-bottom: 16px; }
+.ds-tab {
+  display: inline-flex; align-items: baseline; gap: 6px; padding: 8px 12px;
+  font-size: .82rem; color: var(--ink-dim); text-decoration: none;
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+.ds-tab:hover { color: var(--ink); }
+.ds-tab.is-active { color: var(--ink); border-bottom-color: var(--accent); }
+.ds-tab-n { font-family: var(--mono); font-size: 10.5px; color: var(--ink-dim);
+  font-variant-numeric: tabular-nums; }
+
+.ds-list { display: flex; flex-direction: column; }
+.ds-item {
+  display: block; padding: 11px 2px; text-decoration: none;
+  border-bottom: 1px solid var(--hairline);
+}
+.ds-item:hover { background: var(--surface); }
+.ds-item-top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.ds-item-name { font-size: .95rem; color: var(--ink); }
+.ds-item-type { font-family: var(--mono); font-size: 10px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-dim); }
+.ds-item-sub { font-size: .8rem; color: var(--ink-dim); margin-top: 2px; }
+.ds-item-why { font-family: var(--mono); font-size: 10.5px; color: var(--ink-dim); margin-top: 3px; }
+
+.ds-empty {
+  padding: 15px; background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 6px; font-size: .85rem; line-height: 1.6; color: var(--ink-dim);
+}
+
+@media (max-width: 560px) {
+  .gs-panel { margin-top: 4vh; max-height: 86vh; }
+  .gs-foot { display: none; }
+  .ds-wrap { padding: 20px 16px 48px; }
+}
