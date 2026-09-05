@@ -1,5 +1,5 @@
 /* data-companies shard 1 of 2 - generated, do not hand-edit.
-   185 records, 2360 source rows. */
+   216 records, 2751 source rows. */
 Object.assign(COMPANIES, {
   "1password": {
     "companyId": "1password",
@@ -381,6 +381,105 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "aeva": {
+    "companyId": "aeva",
+    "name": "Aeva",
+    "legalName": "Aeva Technologies, Inc.",
+    "website": "https://www.aeva.com",
+    "description": "Developer of frequency modulated continuous wave 4D lidar sensors and perception software that measure range and velocity simultaneously, for automated driving, industrial automation, robotics and smart infrastructure.",
+    "hqCity": "Mountain View",
+    "hqCountry": "United States",
+    "foundedYear": 2017,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Hardware",
+    "subsector": "FMCW 4D lidar sensors and perception software",
+    "tickers": [
+      "NASDAQ:AEVA"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Aeva Technologies, Inc. - Form 10-K fiscal year 2025, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1789029/000119312526116518/aeva-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Aeva - official site",
+        "url": "https://www.aeva.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Aeva - official site",
+        "url": "https://www.aeva.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Aeva Technologies, Inc. - Form 10-K fiscal year 2025, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1789029/000119312526116518/aeva-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Aeva Technologies, Inc. - Form 10-K fiscal year 2025, cover page: 555 Ellis Street, Mountain View, CA 94043",
+        "url": "https://www.sec.gov/Archives/edgar/data/1789029/000119312526116518/aeva-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Aeva Technologies, Inc. - Form 10-K fiscal year 2025, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1789029/000119312526116518/aeva-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Aeva Technologies, Inc. - Form 10-K fiscal year 2025: Founded in 2017 by former Apple engineers Soroush Salehian and Mina Rezk",
+        "url": "https://www.sec.gov/Archives/edgar/data/1789029/000119312526116518/aeva-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Aeva Technologies, Inc. - Form 10-K fiscal year 2025, cover page securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1789029/000119312526116518/aeva-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Aeva Technologies, Inc. - Form 10-K fiscal year 2025, cover page: common stock, AEVA, The Nasdaq Stock Market LLC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1789029/000119312526116518/aeva-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR company submissions for CIK 0001789029: tickers AEVA, exchanges Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001789029.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Aeva announces transfer of stock exchange listing to the Nasdaq Global Select Market",
+        "url": "https://investors.aeva.com/news-releases/news-release-details/aeva-announces-transfer-stock-exchange-listing-nasdaq-global",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Aeva Technologies, Inc. - Form 10-K fiscal year 2025, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1789029/000119312526116518/aeva-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Aeva Technologies, Inc. - Form 10-K fiscal year 2025, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1789029/000119312526116518/aeva-20251231.htm",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "affirm": {
     "companyId": "affirm",
     "name": "Affirm",
@@ -479,6 +578,107 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-03"
+  },
+  "agiospharmaceuticals": {
+    "companyId": "agiospharmaceuticals",
+    "name": "Agios Pharmaceuticals",
+    "legalName": "Agios Pharmaceuticals, Inc.",
+    "website": "https://www.agios.com",
+    "description": "Commercial-stage biopharmaceutical company developing medicines for rare diseases, built on expertise in cellular metabolism, with a near-term focus on hemolytic and acquired anemias.",
+    "hqCity": "Cambridge",
+    "hqCountry": "United States",
+    "foundedYear": 2007,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Biotech",
+    "subsector": "rare disease medicines targeting cellular metabolism",
+    "tickers": [
+      "NASDAQ:AGIO"
+    ],
+    "formerNames": [
+      "Cancer Metabolism Therapeutics, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Agios Pharmaceuticals, Inc. - Form 10-K for the year ended December 31, 2025, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1439222/000143922226000025/agio-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Agios Pharmaceuticals, Inc. - Form 10-K FY2025 cover page and Section 12(b) table",
+        "url": "https://www.sec.gov/Archives/edgar/data/1439222/000143922226000025/agio-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Agios Pharmaceuticals, Inc. - Form 10-K FY2025 Section 12(b) table (Common Stock, AGIO, Nasdaq Global Select Market)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1439222/000143922226000025/agio-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Agios Pharmaceuticals, Inc. - Form 10-K FY2025 cover page, principal executive offices 88 Sidney Street, Cambridge, MA 02139",
+        "url": "https://www.sec.gov/Archives/edgar/data/1439222/000143922226000025/agio-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Agios Pharmaceuticals, Inc. - Form 10-K FY2025 cover page, principal executive offices in Massachusetts",
+        "url": "https://www.sec.gov/Archives/edgar/data/1439222/000143922226000025/agio-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Agios Pharmaceuticals, Inc. - Form 10-K FY2025 Item 1 Business (commercial-stage biopharmaceutical company dedicated to redefining the future of rare disease treatment)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1439222/000143922226000025/agio-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Agios Pharmaceuticals, Inc. - Form 10-K FY2025 Item 1 Business (biopharmaceutical company developing medicines for rare diseases)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1439222/000143922226000025/agio-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Agios - Official Site (pioneering leader in cellular metabolism; therapies for people with rare diseases, with a near-term focus on hemolytic and acquired anemias)",
+        "url": "https://www.agios.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Agios - Official Site (pioneering leader in cellular metabolism; rare diseases)",
+        "url": "https://www.agios.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Agios - Official Site",
+        "url": "https://www.agios.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "Agios Pharmaceuticals, Inc. - Restated Certificate of Incorporation, Exhibit 3.3 to Form S-1/A filed 2013-06-24 (The Corporation was originally incorporated under the name Cancer Metabolism Therapeutics, Inc.)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1439222/000119312513269075/d538215dex33.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "Agios Pharmaceuticals, Inc. - Certificate of Incorporation, Exhibit 3.1 to Form 8-K filed 2013-07-30 (originally incorporated under the name Cancer Metabolism Therapeutics, Inc.)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1439222/000119312513307909/d574969dex31.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Agios Pharmaceuticals, Inc. - Certificate of Incorporation recital (original Certificate of Incorporation filed with the Secretary of State of the State of Delaware on August 7, 2007)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1439222/000119312513307909/d574969dex31.htm",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
   },
   "airbnb": {
     "companyId": "airbnb",
@@ -951,6 +1151,107 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "allbirds": {
+    "companyId": "allbirds",
+    "name": "Smartbird",
+    "legalName": "Smartbird, Inc.",
+    "website": null,
+    "description": "Nasdaq-listed company operating in the artificial intelligence infrastructure market, including the acquisition and monetisation of graphics processing units and related high-performance computing infrastructure. Until June 2026 it operated as Allbirds, selling footwear and apparel, and sold those assets.",
+    "hqCity": "Palo Alto",
+    "hqCountry": "United States",
+    "foundedYear": null,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "AI infrastructure and GPU compute",
+    "tickers": [
+      "NASDAQ:BIRD"
+    ],
+    "formerNames": [
+      "Allbirds, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Smartbird, Inc. Form 10-Q for the quarter ended June 30, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1653909/000143774926028446/bird20260630_10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - submissions data for CIK 0001653909, entity name Smartbird, Inc.",
+        "url": "https://data.sec.gov/submissions/CIK0001653909.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "SEC EDGAR - Smartbird, Inc. Form 10-Q June 30, 2026, description of business note",
+        "url": "https://www.sec.gov/Archives/edgar/data/1653909/000143774926028446/bird20260630_10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Smartbird, Inc. Form 10-Q June 30, 2026, principal executive offices 425 Page Mill Road, Suite 200, Palo Alto, CA 94306",
+        "url": "https://www.sec.gov/Archives/edgar/data/1653909/000143774926028446/bird20260630_10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - submissions data for CIK 0001653909, business address Palo Alto, CA",
+        "url": "https://data.sec.gov/submissions/CIK0001653909.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Smartbird, Inc. Form 10-Q June 30, 2026, cover page address in California",
+        "url": "https://www.sec.gov/Archives/edgar/data/1653909/000143774926028446/bird20260630_10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Smartbird, Inc. Form 10-Q June 30, 2026, cover page, Class A Common Stock registered on The Nasdaq Global Select Market",
+        "url": "https://www.sec.gov/Archives/edgar/data/1653909/000143774926028446/bird20260630_10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR - Smartbird, Inc. Form 10-Q June 30, 2026, cover page, trading symbol BIRD on The Nasdaq Global Select Market",
+        "url": "https://www.sec.gov/Archives/edgar/data/1653909/000143774926028446/bird20260630_10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR - submissions data for CIK 0001653909, ticker BIRD, exchange Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001653909.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - submissions data for CIK 0001653909, formerNames: Allbirds, Inc. (2016-03-11 to 2026-06-15)",
+        "url": "https://data.sec.gov/submissions/CIK0001653909.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - Smartbird, Inc. Form 10-Q June 30, 2026, cover page former name Allbirds, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1653909/000143774926028446/bird20260630_10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "SEC EDGAR - Smartbird, Inc. Form 10-Q June 30, 2026, \"Smartbird operates within the Artificial Intelligence (AI) infrastructure market\"",
+        "url": "https://www.sec.gov/Archives/edgar/data/1653909/000143774926028446/bird20260630_10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "SEC EDGAR - Smartbird, Inc. Form 10-Q June 30, 2026, acquisition and monetization of GPUs and high-performance computing infrastructure",
+        "url": "https://www.sec.gov/Archives/edgar/data/1653909/000143774926028446/bird20260630_10q.htm",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "alloy": {
     "companyId": "alloy",
     "name": "Alloy",
@@ -1071,6 +1372,101 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-03"
+  },
+  "amazon": {
+    "companyId": "amazon",
+    "name": "Amazon",
+    "legalName": "Amazon.com, Inc.",
+    "website": "https://www.amazon.com",
+    "description": "Ecommerce and technology company that sells goods through its online and physical stores, operates a third-party seller marketplace, provides cloud computing through Amazon Web Services, sells advertising services and makes consumer devices. It reports three segments: North America, International and AWS.",
+    "hqCity": "Seattle",
+    "hqCountry": "United States",
+    "foundedYear": 1994,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Ecommerce",
+    "subsector": "online and physical stores, third-party seller marketplace, AWS cloud computing, advertising and devices",
+    "tickers": [
+      "NASDAQ:AMZN"
+    ],
+    "formerNames": [
+      "Cadabra Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Amazon.com, Inc. Form 10-K for fiscal year 2025 - cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Amazon.com, Inc. Form 10-K for fiscal year 2025 - Available Information",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Amazon.com, Inc. Form 10-K for fiscal year 2025 - Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Amazon.com, Inc. Form 10-K for fiscal year 2025 - address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Amazon.com, Inc. Form 10-K for fiscal year 2025 - address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Amazon.com, Inc. Form 10-Q for the quarter ended June 30, 2026 - XBRL cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/R1.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Amazon.com, Inc. Form 10-Q for the quarter ended June 30, 2026 - XBRL cover page (AMZN, Nasdaq)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/R1.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Amazon.com, Inc. Form 10-K for fiscal year 2025 - securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Amazon.com, Inc. Form S-1 (1997) - \"The Company was incorporated in Washington in July 1994\"",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/0000891020-97-000603.txt",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Amazon.com, Inc. Form 10-K for fiscal year 2025 - Item 1 Business and segment description",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Amazon.com, Inc. Form 10-K for fiscal year 2025 - Item 1 Business and segment description",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "The Seattle Times - Amazon at 25: The magic that changed everything",
+        "url": "https://www.seattletimes.com/business/amazon/amazon-25-the-magic-that-changed-everything/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
   },
   "amplitude": {
     "companyId": "amplitude",
@@ -2411,6 +2807,61 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "attunedintelligence": {
+    "companyId": "attunedintelligence",
+    "name": "Attuned Intelligence",
+    "legalName": null,
+    "website": "https://www.attuned-intelligence.com",
+    "description": "Voice AI company providing supervised AI agents that answer patient telephone calls for hospitals and health systems, integrated with electronic health record systems.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "supervised voice AI agents for hospital call centres",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Attuned Intelligence - Official Site",
+        "url": "https://www.attuned-intelligence.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Attuned Intelligence - Official Site, \"AI healthcare call center automation\" and \"EHR-integrated voice AI\"",
+        "url": "https://www.attuned-intelligence.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Attuned Intelligence company release - About Attuned Intelligence boilerplate",
+        "url": "https://www.prnewswire.com/news-releases/advancing-patient-access-with-ai-commonwealth-purchasing-group-partners-with-attuned-intelligence-302716274.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Attuned Intelligence company release - $13M private seed round, October 2025",
+        "url": "https://www.prnewswire.com/news-releases/attuned-intelligence-raises-13m-to-transform-hospital-call-centers-with-supervised-ai-302576027.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Attuned Intelligence - Official Site, supervised voice AI answering patient calls",
+        "url": "https://www.attuned-intelligence.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Attuned Intelligence company release - \"Attuned's supervised voice AI safely handles the full spectrum of calls\"",
+        "url": "https://www.prnewswire.com/news-releases/advancing-patient-access-with-ai-commonwealth-purchasing-group-partners-with-attuned-intelligence-302716274.html",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "auth0": {
     "companyId": "auth0",
     "name": "Auth0",
@@ -2734,6 +3185,307 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "axle": {
+    "companyId": "axle",
+    "name": "Axle",
+    "legalName": "Axle Labs, Inc.",
+    "website": "https://www.axle.insure",
+    "description": "AI-native clearinghouse for property and casualty insurance, providing infrastructure and AI agents that automate insurance verification, monitoring and policy updates for third parties such as rental car companies, dealerships and mortgage lenders.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": 2022,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "AI-native clearinghouse for insurance",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Axle - Official Site",
+        "url": "https://www.axle.insure/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Axle - Official Site",
+        "url": "https://www.axle.insure/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Axle - About",
+        "url": "https://www.axle.insure/about",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "Axle - Official Site footer: Axle Labs, Inc.",
+        "url": "https://www.axle.insure/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC Form D 2022 - entityName Axle Labs, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1951844/000195184422000001/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Axle - About: we are a growing organization based in New York and Atlanta",
+        "url": "https://www.axle.insure/about",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR submissions - Axle Labs, Inc. business address Atlanta, GA (CIK 0001951844)",
+        "url": "https://data.sec.gov/submissions/CIK0001951844.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC Form D 2022 - yearOfInc value 2022",
+        "url": "https://www.sec.gov/Archives/edgar/data/1951844/000195184422000001/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions - no tickers and no exchanges recorded for CIK 0001951844",
+        "url": "https://data.sec.gov/submissions/CIK0001951844.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Axle - Official Site",
+        "url": "https://www.axle.insure/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Axle - Official Site",
+        "url": "https://www.axle.insure/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
+  "baidu": {
+    "companyId": "baidu",
+    "name": "Baidu",
+    "legalName": "Baidu, Inc.",
+    "website": "https://www.baidu.com",
+    "description": "Chinese internet company operating the Baidu search platform and AI products and services; it describes itself as a leading AI company with a strong internet foundation.",
+    "hqCity": "Beijing",
+    "hqCountry": "China",
+    "foundedYear": 2000,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "AI",
+    "subsector": "internet search platform and AI products and services",
+    "tickers": [
+      "NASDAQ:BIDU",
+      "HKEX:9888",
+      "HKEX:89888"
+    ],
+    "formerNames": [
+      "Baidu.com, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Baidu, Inc. - Form 20-F for FY2025, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312526109289/d38065d20f.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Baidu, Inc. - Form 20-F for FY2025, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312526109289/d38065d20f.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Baidu, Inc. - Form 20-F for FY2025, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312526109289/d38065d20f.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Baidu, Inc. - Form 20-F for FY2025, securities registered under Section 12(b): ADSs symbol BIDU on Nasdaq Global Select Market; Class A ordinary shares symbol 9888 on The Stock Exchange of Hong Kong Limited",
+        "url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312526109289/d38065d20f.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Baidu, Inc. - Form 20-F for FY2025, securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312526109289/d38065d20f.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR entity submissions for CIK 0001329099 - formerNames: Baidu.com, Inc. (to 12 December 2008)",
+        "url": "https://data.sec.gov/submissions/CIK0001329099.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Baidu, Inc. company release, 31 August 2026 - '(Nasdaq: BIDU; HKEX: 9888 (HKD Counter) and 89888 (RMB Counter))', dual-primary listing effective",
+        "url": "https://www.prnewswire.com/news-releases/baidu-announces-dual-primary-listing-on-the-main-board-of-the-stock-exchange-of-hong-kong-limited-302865038.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Baidu, Inc. company release - About Baidu, 'Founded in 2000'",
+        "url": "https://www.prnewswire.com/news-releases/baidu-announces-dual-primary-listing-on-the-main-board-of-the-stock-exchange-of-hong-kong-limited-302865038.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Baidu, Inc. company release - About Baidu boilerplate, 'a leading AI company with strong Internet foundation'",
+        "url": "https://www.prnewswire.com/news-releases/baidu-announces-dual-primary-listing-on-the-main-board-of-the-stock-exchange-of-hong-kong-limited-302865038.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Baidu, Inc. company release - About Baidu, 'a leading AI company with strong Internet foundation'",
+        "url": "https://www.prnewswire.com/news-releases/baidu-announces-dual-primary-listing-on-the-main-board-of-the-stock-exchange-of-hong-kong-limited-302865038.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Baidu, Inc. company release - About Baidu, search and AI",
+        "url": "https://www.prnewswire.com/news-releases/baidu-announces-dual-primary-listing-on-the-main-board-of-the-stock-exchange-of-hong-kong-limited-302865038.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Baidu, Inc. investor relations, 22 July 2026 - update on voluntary conversion to dual-primary listing, HKEX 9888 (HKD Counter) and 89888 (RMB Counter)",
+        "url": "https://ir.baidu.com/news-releases/news-release-details/baidu-provides-update-voluntary-conversion-dual-primary-listing",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Baidu - official corporate site (home.baidu.com), footer '\u00a9 Baidu \u4eacICP\u8bc1030173\u53f7'",
+        "url": "https://home.baidu.com/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
+  "bark": {
+    "companyId": "bark",
+    "name": "BARK",
+    "legalName": "BARK, Inc.",
+    "website": "https://bark.co",
+    "description": "Dog products company that designs proprietary toys, treats, chews and food under the BarkBox and Super Chewer brands, sold through monthly subscriptions, its own site and retail partners.",
+    "hqCity": "Brooklyn",
+    "hqCountry": "United States",
+    "foundedYear": 2011,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "dog toys, treats and subscription boxes",
+    "tickers": [
+      "NYSE:BARK"
+    ],
+    "formerNames": [
+      "The Original BARK Company"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - BARK, Inc. Form 10-K for fiscal year ended March 31, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026042242/bark-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - BARK, Inc. Form 8-K dated April 1, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026023158/bark-20260401.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "BARK - official site",
+        "url": "https://bark.co/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "SEC EDGAR - BARK, Inc. Form 10-K FY2026, Item 1 Business, two key brands BarkBox and Super Chewer",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026042242/bark-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "BARK - official site, monthly subscription boxes of toys and treats",
+        "url": "https://bark.co/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - BARK, Inc. Form 10-K FY2026, principal executive offices 20 Jay Street, Suite 940, Brooklyn, NY 11201",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026042242/bark-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - BARK, Inc. Form 8-K dated April 1, 2026, principal executive offices in Brooklyn, NY",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026023158/bark-20260401.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - BARK, Inc. Form 10-K FY2026, cover page address in New York",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026042242/bark-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - BARK, Inc. Form 10-K FY2026, Item 1, \"Since our founding in 2011\"",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026042242/bark-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - BARK, Inc. Form 10-K FY2026, cover page, Common Stock registered on the New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026042242/bark-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR - BARK, Inc. Form 10-K FY2026, cover page, trading symbol BARK on the New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026042242/bark-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR - BARK, Inc. Form 8-K dated April 1, 2026, split-adjusted trading under the existing symbol BARK on the NYSE",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026023158/bark-20260401.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - Form 8-K dated November 23, 2021, Item 5.03, name changed from The Original BARK Company to BARK, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000181957421000081/bark-20211123.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "SEC EDGAR - BARK, Inc. Form 10-K FY2026, Item 1 Business, omnichannel brand designing proprietary products for dogs",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026042242/bark-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "SEC EDGAR - BARK, Inc. Form 10-K FY2026, Item 1 Business, subscription toys, treats and chews plus retail distribution",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819574/000162828026042242/bark-20260331.htm",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "basepower": {
     "companyId": "basepower",
     "name": "Base Power",
@@ -2824,6 +3576,103 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-03"
+  },
+  "baseten": {
+    "companyId": "baseten",
+    "name": "Baseten",
+    "legalName": "Baseten Labs, Inc.",
+    "website": "https://www.baseten.co",
+    "description": "AI inference platform for serving and scaling open-source and custom AI models, providing GPU infrastructure, autoscaling, observability and developer tooling for production AI workloads.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2019,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "AI model inference and deployment infrastructure",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Baseten - Official Site",
+        "url": "https://www.baseten.co/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "Baseten Terms and Conditions - \"Baseten Labs, Inc., a U.S. corporation\"",
+        "url": "https://www.baseten.co/terms-and-conditions/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR Form D primary document - entityName Baseten Labs, Inc. (CIK 0001865393)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1865393/000186539326000004/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Baseten - Official Site homepage",
+        "url": "https://www.baseten.co/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Baseten company release - About Baseten boilerplate",
+        "url": "https://www.businesswire.com/news/home/20260622645563/en/Baseten-Raises-$1.5-Billion-to-Power-the-Next-Era-of-AI-Inference",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Baseten company release - \"Founded in 2019 and based in San Francisco\"",
+        "url": "https://www.businesswire.com/news/home/20260622645563/en/Baseten-Raises-$1.5-Billion-to-Power-the-Next-Era-of-AI-Inference",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR Form D 2026 - issuer address 560 Davis Street, Suite 250, San Francisco, CA",
+        "url": "https://www.sec.gov/Archives/edgar/data/1865393/000186539326000004/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Baseten company release - \"Founded in 2019 and based in San Francisco\"",
+        "url": "https://www.businesswire.com/news/home/20260622645563/en/Baseten-Raises-$1.5-Billion-to-Power-the-Next-Era-of-AI-Inference",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR Form D - yearOfInc value 2019",
+        "url": "https://www.sec.gov/Archives/edgar/data/1865393/000186539321000002/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Baseten company release - \"Founded in 2019 and based in San Francisco\"",
+        "url": "https://www.businesswire.com/news/home/20260622645563/en/Baseten-Raises-$1.5-Billion-to-Power-the-Next-Era-of-AI-Inference",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR Form D filed 2026-06-30 - Regulation D exempt private offering by Baseten Labs, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1865393/000186539326000004/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Baseten company release - \"builds systems software that runs the entire workload for AI applications - from GPUs and autoscaling to observability, billing, and developer tools\"",
+        "url": "https://www.businesswire.com/news/home/20260622645563/en/Baseten-Raises-$1.5-Billion-to-Power-the-Next-Era-of-AI-Inference",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Baseten - Official Site homepage, inference platform for open-source and custom AI models",
+        "url": "https://www.baseten.co/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
   },
   "beamtherapeutics": {
     "companyId": "beamtherapeutics",
@@ -3232,6 +4081,100 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "bilibili": {
+    "companyId": "bilibili",
+    "name": "Bilibili",
+    "legalName": "Bilibili Inc.",
+    "website": "https://www.bilibili.com",
+    "description": "Chinese online video community for young audiences, offering video content, live broadcasting, mobile games, advertising and IP derivatives, known for its bullet chatting live comment feature.",
+    "hqCity": "Shanghai",
+    "hqCountry": "China",
+    "foundedYear": 2009,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "online video community with live broadcasting, advertising and mobile games",
+    "tickers": [
+      "NASDAQ:BILI",
+      "HKEX:9626"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Bilibili Inc. - Form 20-F for FY2025, cover page (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1723690/000119312526157842/d91984d20f.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Bilibili Inc. - Form 20-F for FY2025, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1723690/000119312526157842/d91984d20f.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Bilibili Inc. - Form 20-F for FY2025, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1723690/000119312526157842/d91984d20f.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Bilibili Inc. - Form 20-F for FY2025, securities registered under Section 12(b): ADSs symbol BILI on Nasdaq Global Select Market; Class Z ordinary shares symbol 9626 on The Stock Exchange of Hong Kong Limited",
+        "url": "https://www.sec.gov/Archives/edgar/data/1723690/000119312526157842/d91984d20f.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Bilibili Inc. - Form 20-F for FY2025, securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1723690/000119312526157842/d91984d20f.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Bilibili Inc. Form F-1 2018 - 'Our website was first launched in June 2009 and was officially named \"bilibili\" in January 2010.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1723690/000104746918001244/a2234546zf-1.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Bilibili Inc. company release, 16 April 2026 - '(NASDAQ: BILI and HKEX: 9626)'",
+        "url": "https://www.globenewswire.com/news-release/2026/04/16/3275139/0/en/bilibili-inc-files-its-2025-annual-report-on-form-20-f.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Bilibili Inc. company release, 16 April 2026 - About Bilibili Inc. boilerplate",
+        "url": "https://www.globenewswire.com/news-release/2026/04/16/3275139/0/en/bilibili-inc-files-its-2025-annual-report-on-form-20-f.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Bilibili Inc. company release - 'an iconic brand and a leading video community for young generations in China'",
+        "url": "https://www.globenewswire.com/news-release/2026/04/16/3275139/0/en/bilibili-inc-files-its-2025-annual-report-on-form-20-f.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Bilibili Inc. company release - video-based content community with bullet chatting",
+        "url": "https://www.globenewswire.com/news-release/2026/04/16/3275139/0/en/bilibili-inc-files-its-2025-annual-report-on-form-20-f.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Bilibili Inc. HKEX announcement, 29 September 2022 - voluntary conversion of secondary listing status to primary listing effective 3 October 2022, stock code 9626",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2022/0929/2022092900013.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "bilibili - official site, footer copyright \u54d4\u54e9\u54d4\u54e9",
+        "url": "https://www.bilibili.com/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "billcom": {
     "companyId": "billcom",
     "name": "BILL",
@@ -3350,6 +4293,182 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-03"
+  },
+  "blacksky": {
+    "companyId": "blacksky",
+    "name": "BlackSky",
+    "legalName": "BlackSky Technology Inc.",
+    "website": "https://www.blacksky.com",
+    "description": "Space-based intelligence company that operates a constellation of Earth observation satellites and delivers real-time imagery, analytics and high-frequency monitoring of strategic locations, economic assets and events.",
+    "hqCity": "Herndon",
+    "hqCountry": "United States",
+    "foundedYear": 2014,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Space",
+    "subsector": "Earth observation satellite imagery and geospatial analytics",
+    "tickers": [
+      "NYSE:BKSY"
+    ],
+    "formerNames": [
+      "Spaceflight Industries, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "BlackSky Technology Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000124/bksy-20260630.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "BlackSky - official site",
+        "url": "https://www.blacksky.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "BlackSky Technology Inc. - Form 10-K fiscal year 2025, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000032/bksy-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "BlackSky Technology Inc. - Form 10-Q June 30, 2026, cover page: 2411 Dulles Corner Park, Suite 300, Herndon, Virginia 20171",
+        "url": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000124/bksy-20260630.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "BlackSky Technology Inc. - Form 10-Q June 30, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000124/bksy-20260630.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "BlackSky Technology Inc. - Form 10-K fiscal year 2025: Founded in 2014, BlackSky Technology Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000032/bksy-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "BlackSky Technology Inc. - Form 10-Q June 30, 2026, cover page securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000124/bksy-20260630.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "BlackSky Technology Inc. - Form 10-Q June 30, 2026, cover page: Class A common stock, BKSY, The New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000124/bksy-20260630.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "BlackSky Technology Inc. - Form 10-K fiscal year 2025, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000032/bksy-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "BlackSky Technology Inc. - Form 10-K fiscal year 2025, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1753539/000175353926000032/bksy-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "BlackSky Technology Inc. - Form 424(b)(3): BlackSky Holdings, Inc. (f/k/a Spaceflight Industries, Inc.), a Delaware corporation (Legacy BlackSky)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1753539/000162828022022262/blacksky424b3.htm",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
+  "blend": {
+    "companyId": "blend",
+    "name": "Blend",
+    "legalName": "Blend Labs, Inc.",
+    "website": "https://blend.com",
+    "description": "Cloud-based software platform for banks and lenders that powers consumer banking and mortgage application, origination and account opening workflows.",
+    "hqCity": "Novato",
+    "hqCountry": "United States",
+    "foundedYear": 2012,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "cloud software for mortgage and consumer banking origination",
+    "tickers": [
+      "NYSE:BLND"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Blend Labs, Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1855747/000185574726000057/blnd-20260630.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Blend Labs, Inc. - Form 10-Q for the quarter ended June 30, 2026, Section 12(b) securities table",
+        "url": "https://www.sec.gov/Archives/edgar/data/1855747/000185574726000057/blnd-20260630.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Blend Labs, Inc. - Form 10-Q for the quarter ended June 30, 2026, Section 12(b) table listing Class A common stock, BLND, New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1855747/000185574726000057/blnd-20260630.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions record for CIK 0001855747 showing ticker BLND on NYSE",
+        "url": "https://data.sec.gov/submissions/CIK0001855747.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Blend Labs, Inc. - Form 10-K for fiscal year 2025, 'Our principal executive offices are located at 7250 Redwood Blvd., Suite 300, Novato, California 94945'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1855747/000185574726000016/blnd-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Blend Labs, Inc. - Form 10-K for fiscal year 2025, principal executive offices in Novato, California",
+        "url": "https://www.sec.gov/Archives/edgar/data/1855747/000185574726000016/blnd-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Blend Labs, Inc. - Form 10-K for fiscal year 2025, 'We were founded in 2012'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1855747/000185574726000016/blnd-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Blend Labs, Inc. - Form 10-Q for the quarter ended June 30, 2026, 'The Company offers a cloud-based software platform for financial services firms that is designed to power the end-to-end consumer journey for banking products.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1855747/000185574726000057/blnd-20260630.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Blend Labs, Inc. - Form 10-K for fiscal year 2025, Item 1 Business describing a mission to transform the financial services industry by making obtaining a loan or opening an account seamless",
+        "url": "https://www.sec.gov/Archives/edgar/data/1855747/000185574726000016/blnd-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Blend Labs, Inc. - Form 10-K for fiscal year 2025, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1855747/000185574726000016/blnd-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Blend official company About page",
+        "url": "https://blend.com/company/about-us/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
   },
   "block": {
     "companyId": "block",
@@ -4906,6 +6025,97 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "cazoo": {
+    "companyId": "cazoo",
+    "name": "Cazoo",
+    "legalName": null,
+    "website": null,
+    "description": "Online used-car retailer in the United Kingdom that bought, reconditioned and sold used cars direct to consumers with home delivery, before shifting to a marketplace model in 2024.",
+    "hqCity": "London",
+    "hqCountry": "United Kingdom",
+    "foundedYear": 2018,
+    "status": "closed",
+    "statusDetail": "Ceased selling motor vehicles directly to the public in April 2024; Cazoo Ltd, Cazoo Holdings Limited and Cazoo Properties Limited were placed into administration on 21 May 2024 with Teneo appointed joint administrators and 59 staff retained for an orderly wind-down, and Cazoo Group Ltd began steps into voluntary liquidation. The Cazoo brand alone was bought by Motors.co.uk Limited in June 2024 and is now a trading name of that separate company.",
+    "sector": "Ecommerce",
+    "subsector": "online used car retail",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "description",
+        "label": "SEC EDGAR - Cazoo Group Ltd 6-K exhibit 99.1, 21 May 2024 (\"Following its transition to a Marketplace model, Cazoo ceased selling motor vehicles directly to the public in April 2024.\")",
+        "url": "https://www.sec.gov/Archives/edgar/data/1859639/000121390024045404/ea020659301ex99-1_cazoo.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Companies House - CL 1 REALISATIONS LTD (formerly CAZOO LTD), SIC 45112 Sale of used cars and light motor vehicles",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/11624245",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Cazoo Group Ltd Form 20-F for FY2022, cover page: address of principal executive offices 41 Chalton Street, London, NW1 1JD, United Kingdom",
+        "url": "https://www.sec.gov/Archives/edgar/data/1859639/000121390023024678/f20f2022_cazoogroup.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Cazoo Group Ltd Form 20-F for FY2022, cover page principal executive offices in the United Kingdom",
+        "url": "https://www.sec.gov/Archives/edgar/data/1859639/000121390023024678/f20f2022_cazoogroup.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Companies House - CL 1 REALISATIONS LTD (previous name CAZOO LTD), incorporated 15 October 2018",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/11624245",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Cazoo Group Ltd 6-K exhibit 99.1, 21 May 2024 (administration of Cazoo Ltd, Cazoo Holdings Limited and Cazoo Properties Limited; 728 redundancies; 59 employees retained for orderly wind-down; Cazoo Group Ltd into voluntary liquidation)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1859639/000121390024045404/ea020659301ex99-1_cazoo.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Companies House - CL 1 REALISATIONS LTD, company status \"In Administration\", previous name CAZOO LTD to 08 Jul 2024",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/11624245",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "statusDetail",
+        "label": "SEC EDGAR - Cazoo Group Ltd 6-K exhibit 99.1, 21 May 2024",
+        "url": "https://www.sec.gov/Archives/edgar/data/1859639/000121390024045404/ea020659301ex99-1_cazoo.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Cazoo - About us, operated by Motors.co.uk Limited (\"From 27 June 2024, the Cazoo brand has been owned by Motors.co.uk Limited.\"; \"Cazoo is a trading name of Motors.co.uk Limited.\")",
+        "url": "https://www.cazoo.co.uk/about-us/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Willkie Farr & Gallagher - MOTORS acquisition of the Cazoo brand from Cazoo Ltd, which fell into administration in May 2024",
+        "url": "https://www.willkie.com/news/2024/07/willkie-advises-motors-on-acquisition-of-cazoo-brand",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "SEC EDGAR - Cazoo Group Ltd 20-F filings, SIC 5500 (auto dealers and gasoline stations)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1859639/000121390023024678/f20f2022_cazoogroup.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Companies House - CL 1 REALISATIONS LTD, SIC 45112 Sale of used cars and light motor vehicles",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/11624245",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "cerebrassystems": {
     "companyId": "cerebrassystems",
     "name": "Cerebras Systems",
@@ -5193,6 +6403,101 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "chargepoint": {
+    "companyId": "chargepoint",
+    "name": "ChargePoint",
+    "legalName": "ChargePoint Holdings, Inc.",
+    "website": "https://www.chargepoint.com",
+    "description": "Provider of electric vehicle charging technology, operating a networked EV charging platform with charging hardware, software subscriptions and related services for commercial, fleet and residential customers.",
+    "hqCity": "Campbell",
+    "hqCountry": "United States",
+    "foundedYear": 2007,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Climate & Energy",
+    "subsector": "electric vehicle charging network, hardware and software",
+    "tickers": [
+      "NYSE:CHPT"
+    ],
+    "formerNames": [
+      "Coulomb Technologies, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "ChargePoint Holdings, Inc. - Form 10-Q for the quarter ended April 30, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1777393/000177739326000044/chpt-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "ChargePoint - official site",
+        "url": "https://www.chargepoint.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "ChargePoint Holdings, Inc. - Form 10-K for fiscal year ended January 31, 2026, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1777393/000177739326000013/chpt-20260131.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "ChargePoint Holdings, Inc. - Form 10-Q April 30, 2026, cover page: 240 East Hacienda Avenue, Campbell, CA 95008",
+        "url": "https://www.sec.gov/Archives/edgar/data/1777393/000177739326000044/chpt-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "ChargePoint Holdings, Inc. - Form 10-Q April 30, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1777393/000177739326000044/chpt-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "ChargePoint Holdings, Inc. - Form 10-K fiscal year ended January 31, 2026: An industry pioneer since 2007",
+        "url": "https://www.sec.gov/Archives/edgar/data/1777393/000177739326000013/chpt-20260131.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "ChargePoint - About page: Since 2007, we have focused solely on offering the best electric vehicle charging experience",
+        "url": "https://www.chargepoint.com/about",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "ChargePoint Holdings, Inc. - Form 10-Q April 30, 2026, cover page securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1777393/000177739326000044/chpt-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "ChargePoint Holdings, Inc. - Form 10-Q April 30, 2026, cover page: Common Stock, CHPT, New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1777393/000177739326000044/chpt-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "ChargePoint Holdings, Inc. - Form 10-K fiscal year ended January 31, 2026, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1777393/000177739326000013/chpt-20260131.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "ChargePoint Holdings, Inc. - Form 10-K fiscal year ended January 31, 2026, Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1777393/000177739326000013/chpt-20260131.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "ChargePoint official news release, December 12, 2012: the Company has officially changed its name to ChargePoint, Inc. from Coulomb Technologies, Inc.",
+        "url": "https://www.chargepoint.com/about/news/chargepoint-announces-ev-charging-station-milestone-history-official-company-name-change",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "checkoutcom": {
     "companyId": "checkoutcom",
     "name": "Checkout.com",
@@ -5289,6 +6594,93 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-03"
+  },
+  "checkpointsoftware": {
+    "companyId": "checkpointsoftware",
+    "name": "Check Point Software",
+    "legalName": "Check Point Software Technologies Ltd.",
+    "website": "https://www.checkpoint.com",
+    "description": "Cybersecurity company providing threat prevention and security products for enterprise networks, cloud, endpoints and email.",
+    "hqCity": "Tel Aviv",
+    "hqCountry": "Israel",
+    "foundedYear": 1993,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "enterprise network, cloud and endpoint security software",
+    "tickers": [
+      "NASDAQ:CHKP"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Check Point Software Technologies Ltd. - Form 20-F for fiscal year 2025, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326001932/zk2634942.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Check Point Software Technologies Ltd. - Form 20-F for fiscal year 2025, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326001932/zk2634942.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Check Point Software Technologies Ltd. - Form 20-F for fiscal year 2025, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326001932/zk2634942.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Check Point Software Technologies Ltd. - Form 20-F for fiscal year 2025, securities registered under Section 12(b)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326001932/zk2634942.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Check Point Software Technologies Ltd. - Form 20-F for fiscal year 2025, Section 12(b) table listing Ordinary shares, CHKP, NASDAQ Global Select Market",
+        "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326001932/zk2634942.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions record for CIK 0001015922 showing ticker CHKP on Nasdaq",
+        "url": "https://data.sec.gov/submissions/CIK0001015922.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Check Point Software Technologies Ltd. - Form 20-F, 'We were incorporated as a company under the laws of the State of Israel in 1993 under the name of Check Point Software Technologies Ltd.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1015922/000119312516564301/d121681d20f.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Check Point Software Technologies Ltd. - Form 6-K, About Check Point boilerplate describing the company as a global cyber security company",
+        "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326003696/zk2635799.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Check Point Software Technologies Ltd. - Form 6-K, About Check Point boilerplate describing the company as a global cyber security company",
+        "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326003696/zk2635799.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Check Point Software Technologies Ltd. - Form 6-K, About Check Point boilerplate",
+        "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326003696/zk2635799.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Check Point Software Technologies Ltd. - Form 6-K, About Check Point boilerplate citing www.checkpoint.com",
+        "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326003696/zk2635799.htm",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
   },
   "chime": {
     "companyId": "chime",
@@ -6893,6 +8285,107 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "cogentcommunications": {
+    "companyId": "cogentcommunications",
+    "name": "Cogent Communications",
+    "legalName": "Cogent Communications Holdings, Inc.",
+    "website": "https://www.cogentco.com",
+    "description": "Facilities-based provider of internet access and IP data transport over its own fiber optic network, together with colocation services in its internet data centers.",
+    "hqCity": "Washington",
+    "hqCountry": "United States",
+    "foundedYear": 1999,
+    "status": "public",
+    "statusDetail": null,
+    "sector": null,
+    "subsector": null,
+    "tickers": [
+      "NASDAQ:CCOI"
+    ],
+    "formerNames": [
+      "Cogent Communications Group, Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Cogent Communications Holdings, Inc. - Form 10-Q for the quarter ended June 30, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1158324/000110465926091790/ccoi-20260630x10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Cogent Communications Holdings, Inc. - Form 10-Q for the quarter ended June 30, 2026, principal executive offices at 2450 N Street N.W., Washington, D.C.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1158324/000110465926091790/ccoi-20260630x10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Cogent Communications official About page, 'Cogent is headquartered in Washington, DC, United States of America.'",
+        "url": "https://www.cogentco.com/en/about-cogent",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Cogent Communications official About page, 'Cogent is headquartered in Washington, DC, United States of America.'",
+        "url": "https://www.cogentco.com/en/about-cogent",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Cogent Communications official About page, 'Established in 1999'",
+        "url": "https://www.cogentco.com/en/about-cogent",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Cogent Communications official About page describing internet access and data transport over its fiber optic IP network plus colocation in its internet data centers",
+        "url": "https://www.cogentco.com/en/about-cogent",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Cogent Communications official About page",
+        "url": "https://www.cogentco.com/en/about-cogent",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Cogent Communications official About page, 'Cogent Communications is a public company trading on the NASDAQ with the symbol CCOI'",
+        "url": "https://www.cogentco.com/en/about-cogent",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Cogent Communications official About page stating NASDAQ symbol CCOI",
+        "url": "https://www.cogentco.com/en/about-cogent",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "SEC EDGAR submissions record for CIK 0001158324 showing ticker CCOI on Nasdaq with filings through 2026",
+        "url": "https://data.sec.gov/submissions/CIK0001158324.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions record for CIK 0001158324 showing continuing Exchange Act filings through 2026",
+        "url": "https://data.sec.gov/submissions/CIK0001158324.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "Cogent Communications Holdings, Inc. Form 8-K12G3 filed May 15, 2014 describing the holding company reorganization in which Cogent Communications Group, Inc. became a wholly owned subsidiary of Cogent Communications Holdings, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1158324/000110465914045604/a14-15289_18k12g3.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions record for CIK 0001158324 listing former name COGENT COMMUNICATIONS GROUP INC (2001 to 2014)",
+        "url": "https://data.sec.gov/submissions/CIK0001158324.json",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "cognition": {
     "companyId": "cognition",
     "name": "Cognition",
@@ -7691,6 +9184,97 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "corgi": {
+    "companyId": "corgi",
+    "name": "Corgi",
+    "legalName": "Corgi Insurance Services, Inc.",
+    "website": "https://www.corgi.insure",
+    "description": "AI-native, full-stack insurance carrier for startups. As a licensed carrier it designs and manages insurance end to end, covering underwriting, policy management and claims.",
+    "hqCity": "San Francisco",
+    "hqCountry": "United States",
+    "foundedYear": 2024,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "AI-native full-stack business insurance carrier for startups",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Corgi Insurance Services, Inc. - SEC Form D primary document",
+        "url": "https://www.sec.gov/Archives/edgar/data/2074564/000207456426000003/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "Corgi Terms of Service (PDF)",
+        "url": "https://www.corgi.insure/docs/Corgi%20Terms%20of%20Service.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Corgi - official site",
+        "url": "https://www.corgi.insure/press-releases/series-b",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Corgi Raises $160M Series B - About Corgi",
+        "url": "https://www.corgi.insure/press-releases/series-b",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC Form D issuer address - 425 Bush St, Ste 500, San Francisco, CA 94104",
+        "url": "https://www.sec.gov/Archives/edgar/data/2074564/000207456426000003/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Corgi Terms of Service - 425 Bush Street, San Francisco, California 94104",
+        "url": "https://www.corgi.insure/docs/Corgi%20Terms%20of%20Service.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC Form D issuer address - San Francisco, CALIFORNIA",
+        "url": "https://www.sec.gov/Archives/edgar/data/2074564/000207456426000003/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC Form D yearOfInc value 2024",
+        "url": "https://www.sec.gov/Archives/edgar/data/2074564/000207456426000003/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "SEC Form D - Regulation D exempt private offering by Corgi Insurance Services, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/2074564/000207456426000003/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Corgi Raises $160M Series B (privately held, venture funded)",
+        "url": "https://www.corgi.insure/press-releases/series-b",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Corgi Raises $160M Series B - About Corgi",
+        "url": "https://www.corgi.insure/press-releases/series-b",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Corgi Raises $160M Series B - About Corgi",
+        "url": "https://www.corgi.insure/press-releases/series-b",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "coupang": {
     "companyId": "coupang",
     "name": "Coupang",
@@ -8218,6 +9802,214 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "curevac": {
+    "companyId": "curevac",
+    "name": "CureVac",
+    "legalName": "CureVac N.V.",
+    "website": "https://www.curevac.com",
+    "description": "Biotechnology company developing messenger RNA (mRNA) based medicines, including cancer immunotherapy candidates and prophylactic vaccines.",
+    "hqCity": "T\u00fcbingen",
+    "hqCountry": "Germany",
+    "foundedYear": 2000,
+    "status": "acquired",
+    "statusDetail": "Acquired by BioNTech SE in 2025 - BioNTech announced the closing of its exchange offer for CureVac N.V. on 18 December 2025; the post-offer reorganisation completed on 6 January 2026 and Nasdaq delisting became effective on 16 January 2026.",
+    "sector": "Biotech",
+    "subsector": "mRNA-based vaccines and therapeutics",
+    "tickers": [],
+    "formerNames": [
+      "CureVac B.V."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "CureVac N.V. - Form 15 Certification and Notice of Termination of Registration, filed 16 January 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1809122/000119312526014663/d44631d1512g.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "CureVac N.V. - Form 15 filed 16 January 2026, address of principal executive offices (Friedrich-Miescher-Strasse 15, 72076 T\u00fcbingen, Germany)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1809122/000119312526014663/d44631d1512g.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "CureVac N.V. - Form 15 filed 16 January 2026, address of principal executive offices in Germany",
+        "url": "https://www.sec.gov/Archives/edgar/data/1809122/000119312526014663/d44631d1512g.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "BioNTech SE - BioNTech Closes Acquisition of CureVac N.V. Including Subsequent Offering Period, Mainz, Germany, December 18, 2025",
+        "url": "https://investors.biontech.de/news-releases/news-release-details/biontech-closes-acquisition-curevac-nv-including-subsequent",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "statusDetail",
+        "label": "BioNTech SE - BioNTech Closes Acquisition of CureVac N.V., December 18, 2025 (closing of its acquisition of CureVac N.V.; approximately 86.75% of CureVac shares tendered)",
+        "url": "https://investors.biontech.de/news-releases/news-release-details/biontech-closes-acquisition-curevac-nv-including-subsequent",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "statusDetail",
+        "label": "CureVac Merger B.V., as successor by merger to CureVac N.V. - Form 6-K dated January 6, 2026 (post-offer reorganization completed; Nasdaq trading suspended; Form 25 to be filed; delisting expected effective January 16, 2026)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1809122/000119312526003387/d24025d6k.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "CureVac Merger B.V. - Form 6-K dated January 6, 2026 confirming completion of the post-offer reorganization and Nasdaq delisting",
+        "url": "https://www.sec.gov/Archives/edgar/data/1809122/000119312526003387/d24025d6k.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "CureVac - About CureVac boilerplate in company press release exhibit 99.1 (pioneering multinational biotech company ... messenger RNA (mRNA) technology for application in human medicine)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1809122/000110465925075352/tm2522930d1_ex99-1.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "CureVac - About CureVac boilerplate (founded in 2000)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1809122/000110465925075352/tm2522930d1_ex99-1.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "CureVac - About CureVac boilerplate (headquartered in T\u00fcbingen, Germany)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1809122/000110465925075352/tm2522930d1_ex99-1.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "CureVac - About CureVac boilerplate (headquartered in T\u00fcbingen, Germany)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1809122/000110465925075352/tm2522930d1_ex99-1.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "CureVac - About CureVac boilerplate (biotech company advancing mRNA technology for human medicine)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1809122/000110465925075352/tm2522930d1_ex99-1.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "CureVac - About CureVac boilerplate (mRNA-based cancer immunotherapy candidates, prophylactic vaccines and protein therapies)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1809122/000110465925075352/tm2522930d1_ex99-1.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR submissions data for CIK 0001809122 - formerNames CureVac B.V. (2020-04-29 to 2020-08-14)",
+        "url": "https://data.sec.gov/submissions/CIK0001809122.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "CureVac - Official Site, About Us page (now carrying the BioNTech acquisition notice)",
+        "url": "https://www.curevac.com/en/about-us/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
+  "current": {
+    "companyId": "current",
+    "name": "Current",
+    "legalName": "FinCo Services, Inc.",
+    "website": "https://current.com",
+    "description": "Consumer financial technology platform offering mobile spending accounts, debit and secured charge cards, early paycheck access, fee-free overdraft, savings and cryptocurrency trading, with banking services provided by partner banks.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2015,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "consumer financial technology platform",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Current - Official Site",
+        "url": "https://current.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Current - About",
+        "url": "https://current.com/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Current - Official Site footer disclosures",
+        "url": "https://current.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "Current - Privacy Policy naming Finco Services, Inc.",
+        "url": "https://current.com/privacy_policy/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR submissions - FinCo Services, Inc. (CIK 0001720840)",
+        "url": "https://data.sec.gov/submissions/CIK0001720840.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC Form D 2017 - FinCo Services, Inc., principal place of business NEW YORK",
+        "url": "https://www.sec.gov/Archives/edgar/data/1720840/000172084017000001/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Current - Privacy Policy address 393 Canal Street, New York, NY",
+        "url": "https://current.com/privacy_policy/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC Form D 2017 - FinCo Services, Inc., principal place of business NEW YORK",
+        "url": "https://www.sec.gov/Archives/edgar/data/1720840/000172084017000001/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC Form D 2017 - yearOfInc value 2015, jurisdiction DELAWARE",
+        "url": "https://www.sec.gov/Archives/edgar/data/1720840/000172084017000001/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR submissions - no tickers and no exchanges recorded for CIK 0001720840",
+        "url": "https://data.sec.gov/submissions/CIK0001720840.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "SEC Form D 2026-06-25 - exempt private placement by FinCo Services, Inc.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1720840/000172084026000002/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Current - About",
+        "url": "https://current.com/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Current - About",
+        "url": "https://current.com/about/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "cuspai": {
     "companyId": "cuspai",
     "name": "CuspAI",
@@ -8426,6 +10218,141 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "cybozu": {
+    "companyId": "cybozu",
+    "name": "Cybozu",
+    "legalName": "Cybozu, Inc.",
+    "website": "https://cybozu.co.jp",
+    "description": "Japanese software company that develops, sells and operates groupware, including the Kintone application platform, Garoon, Cybozu Office and Mailwise.",
+    "hqCity": "Tokyo",
+    "hqCountry": "Japan",
+    "foundedYear": 1997,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "groupware and no-code business application platform",
+    "tickers": [
+      "TSE:4776"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Cybozu, Inc. - Company Overview page, company name and business",
+        "url": "https://cybozu.co.jp/en/company/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Cybozu, Inc. - Company Overview page, founded 08/08/1997",
+        "url": "https://cybozu.co.jp/en/company/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Cybozu, Inc. - Company Overview page, Tokyo Stock Exchange, stock code 4776",
+        "url": "https://cybozu.co.jp/en/company/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Cybozu, Inc. - Company Overview page, listed on the Tokyo Stock Exchange under stock code 4776",
+        "url": "https://cybozu.co.jp/en/company/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Cybozu, Inc. - Company Overview page, 'Development, sales and operation of groupware'",
+        "url": "https://cybozu.co.jp/en/company/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Cybozu, Inc. - official corporate site",
+        "url": "https://cybozu.co.jp/en/company/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Cybozu, Inc. - company history page, founded 8 August 1997",
+        "url": "https://cybozu.co.jp/en/company/history/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "Cybozu, Inc. - company history page; the only rename recorded is of the US subsidiary Cybozu Corporation to Kintone Corporation in 2016, not of the listed parent",
+        "url": "https://cybozu.co.jp/en/company/history/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Cybozu, Inc. - FY2024 results briefing materials, 'Tokyo Stock Exchange, Prime Section', securities code 4776",
+        "url": "https://cybozu.co.jp/en/company/assets/pdf/Cybozu_ResultsBriefingMaterials_for_FY2024_Presentation.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Cybozu, Inc. - FY2024 results briefing materials, listed on the Tokyo Stock Exchange Prime Section",
+        "url": "https://cybozu.co.jp/en/company/assets/pdf/Cybozu_ResultsBriefingMaterials_for_FY2024_Presentation.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Cybozu, Inc. - FY2024 results briefing materials, headquarters 2-7-1 Nihombashi, Chuo-ku, Tokyo",
+        "url": "https://cybozu.co.jp/en/company/assets/pdf/Cybozu_ResultsBriefingMaterials_for_FY2024_Presentation.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Cybozu, Inc. - FY2024 results briefing materials, headquarters in Tokyo, Japan",
+        "url": "https://cybozu.co.jp/en/company/assets/pdf/Cybozu_ResultsBriefingMaterials_for_FY2024_Presentation.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Cybozu, Inc. - FY2024 results briefing materials, groupware portfolio including Kintone, Garoon, Cybozu Office and Mailwise",
+        "url": "https://cybozu.co.jp/en/company/assets/pdf/Cybozu_ResultsBriefingMaterials_for_FY2024_Presentation.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Cybozu, Inc. - FY2024 results briefing materials, product portfolio",
+        "url": "https://cybozu.co.jp/en/company/assets/pdf/Cybozu_ResultsBriefingMaterials_for_FY2024_Presentation.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Cybozu, Inc. - FY2024 results briefing materials, business software sold to companies",
+        "url": "https://cybozu.co.jp/en/company/assets/pdf/Cybozu_ResultsBriefingMaterials_for_FY2024_Presentation.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Cybozu, Inc. IR release, 28 September 2021 - head office \u6771\u4eac\u90fd\u4e2d\u592e\u533a\u65e5\u672c\u6a4b 2-7-1 \u6771\u4eac\u65e5\u672c\u6a4b\u30bf\u30ef\u30fc 27\u968e, securities code 4776, Prime Market selection",
+        "url": "https://topics.cybozu.co.jp/news/2021/09/28-9117.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "Cybozu, Inc. IR release, 28 September 2021 - \u30b5\u30a4\u30dc\u30a6\u30ba\u682a\u5f0f\u4f1a\u793e, securities code 4776",
+        "url": "https://topics.cybozu.co.jp/news/2021/09/28-9117.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Cybozu, Inc. IR release, 28 September 2021 - board resolution to select the Tokyo Stock Exchange Prime Market, securities code 4776",
+        "url": "https://topics.cybozu.co.jp/news/2021/09/28-9117.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Cybozu, Inc. IR release, 14 May 2025 - quarterly results disclosure continuing as a listed company, securities code 4776",
+        "url": "https://topics.cybozu.co.jp/news/2025/05/14-19114.html",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "cyera": {
     "companyId": "cyera",
     "name": "Cyera",
@@ -8480,6 +10407,103 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "dapperlabs": {
+    "companyId": "dapperlabs",
+    "name": "Dapper Labs",
+    "legalName": "Dapper Labs Inc.",
+    "website": "https://www.dapperlabs.com",
+    "description": "Venture studio building consumer products around blockchain-based digital ownership, including NBA Top Shot, Disney Pinnacle, NFL ALL DAY and CryptoKitties, and the original creator of the Flow blockchain.",
+    "hqCity": "Vancouver",
+    "hqCountry": "Canada",
+    "foundedYear": 2018,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Crypto",
+    "subsector": "blockchain-based digital collectibles and the Flow blockchain network",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Dapper Labs Inc. Form D 2022-11-21, entityName",
+        "url": "https://www.sec.gov/Archives/edgar/data/1735169/000156761922020680/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "NBA Top Shot Terms of Use (\"Dapper Labs, Inc. (\u201cDLI\u201d, \u201cwe\u201d, or \u201cus\u201d)\")",
+        "url": "https://nbatopshot.com/terms",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Dapper Labs - official site",
+        "url": "https://www.dapperlabs.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Dapper Labs - official site (products and FAQ)",
+        "url": "https://www.dapperlabs.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Dapper Labs Inc. Form D 2022-11-21, Principal Place of Business: 600 - 565 Great Northern Way, Vancouver, British Columbia, Canada",
+        "url": "https://www.sec.gov/Archives/edgar/data/1735169/000156761922020680/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Dapper Labs Inc. Form D 2022-11-21, Principal Place of Business in British Columbia, Canada",
+        "url": "https://www.sec.gov/Archives/edgar/data/1735169/000156761922020680/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "NBA Top Shot Terms of Use - governing law is the Province of British Columbia and the federal laws of Canada",
+        "url": "https://nbatopshot.com/terms",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - Dapper Labs Inc. Form D 2022-11-21, Year of Incorporation 2018",
+        "url": "https://www.sec.gov/Archives/edgar/data/1735169/000156761922020680/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Dapper Labs - official site (\"Est. 2018\"; FAQ: \"Founded by Roham Gharegozlou and Dieter Shirley in 2018, spun out of Axiom Zen\")",
+        "url": "https://www.dapperlabs.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Dapper Labs Inc. filing history: eleven Regulation D private placements, no registered public offering and no periodic reports",
+        "url": "https://www.sec.gov/Archives/edgar/data/1735169/000156761922020680/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Dapper Labs - official site (\"Over $500M raised across 127 investors since 2018\", live consumer products, copyright 2026)",
+        "url": "https://www.dapperlabs.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Dapper Labs - official site (digital ownership products on the Flow blockchain)",
+        "url": "https://www.dapperlabs.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Dapper Labs - official site (NBA Top Shot, Disney Pinnacle, NFL ALL DAY, Flow)",
+        "url": "https://www.dapperlabs.com/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
   },
   "databricks": {
     "companyId": "databricks",
@@ -9455,6 +11479,111 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "dlocal": {
+    "companyId": "dlocal",
+    "name": "dLocal",
+    "legalName": "DLocal Limited",
+    "website": "https://www.dlocal.com",
+    "description": "Cross-border payment platform that lets global merchants accept and disburse local payment methods and currencies in emerging markets.",
+    "hqCity": "Montevideo",
+    "hqCountry": "Uruguay",
+    "foundedYear": 2016,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Fintech",
+    "subsector": "cross-border payment processing for emerging markets",
+    "tickers": [
+      "NASDAQ:DLO"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "DLocal Limited - Form 20-F for the year ended December 31, 2025, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846832/000207097926000113/dlo-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "DLocal Limited - Form 20-F for the year ended December 31, 2025, Section 12(b) securities table",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846832/000207097926000113/dlo-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "DLocal Limited - Form 20-F for the year ended December 31, 2025, Section 12(b) securities table (Class A common shares, DLO, Nasdaq Global Select Market)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846832/000207097926000113/dlo-20251231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "dLocal Investor Relations FAQs - Our shares are listed and traded on Nasdaq under the ticker symbol DLO",
+        "url": "https://investor.dlocal.com/faqs/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "dLocal Investor Relations FAQs",
+        "url": "https://investor.dlocal.com/faqs/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "dLocal Investor Relations FAQs - Our operational headquarters is located at Dr. Luis Bonavita 1294, Montevideo, Uruguay 11300",
+        "url": "https://investor.dlocal.com/faqs/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "dLocal Investor Relations FAQs - operational headquarters in Montevideo, Uruguay",
+        "url": "https://investor.dlocal.com/faqs/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "DLocal Limited - Form 20-F for the year ended December 31, 2024, cover page address of principal executive offices (Dr. Luis Bonavita 1294, Montevideo, Uruguay 11300)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846832/000095017025058197/dlo-20241231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "DLocal Limited - Form 20-F for the year ended December 31, 2024, cover page address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1846832/000095017025058197/dlo-20241231.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "dLocal Investor Relations FAQs - dLocal was founded in 2016",
+        "url": "https://investor.dlocal.com/faqs/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "dLocal - Official Site",
+        "url": "https://www.dlocal.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "dLocal - Official Site (accept and disburse the local payment methods and currencies billions of consumers prefer, emerging markets)",
+        "url": "https://www.dlocal.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "dLocal - Official Site (Financial technology for markets of the future; emerging market payments)",
+        "url": "https://www.dlocal.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "dLocal - Official Site (one platform for local payment methods and currencies in emerging markets)",
+        "url": "https://www.dlocal.com/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "docker": {
     "companyId": "docker",
     "name": "Docker",
@@ -9789,6 +11918,101 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "doubleverify": {
+    "companyId": "doubleverify",
+    "name": "DoubleVerify",
+    "legalName": "DoubleVerify Holdings, Inc.",
+    "website": "https://www.doubleverify.com",
+    "description": "Digital media measurement and verification company whose platform uses artificial intelligence to measure the quality and performance of digital advertising, including ad fraud, brand safety, viewability and attention, for brands, publishers and platforms.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2008,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "digital media measurement, ad verification and fraud prevention",
+    "tickers": [
+      "NYSE:DV"
+    ],
+    "formerNames": [
+      "Pixel Group Holdings Inc."
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "DoubleVerify Holdings, Inc. Form 10-Q for the quarter ended June 30, 2026 - cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819928/000110465926092375/dv-20260630x10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "DoubleVerify Holdings, Inc. Form 10-Q for the quarter ended June 30, 2026 - address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819928/000110465926092375/dv-20260630x10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "DoubleVerify Holdings, Inc. Form 10-Q for the quarter ended June 30, 2026 - address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819928/000110465926092375/dv-20260630x10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "DoubleVerify Holdings, Inc. Form 10-Q for the quarter ended June 30, 2026 - cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819928/000110465926092375/dv-20260630x10q.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "DoubleVerify Holdings, Inc. Form 10-K for fiscal year 2023 - securities registered under Section 12(b) (DV, New York Stock Exchange)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819928/000155837024002008/dv-20231231x10k.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "DoubleVerify Holdings, Inc. Form 10-K for fiscal year 2023 - Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819928/000155837024002008/dv-20231231x10k.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "DoubleVerify Holdings, Inc. Form 10-K for fiscal year 2023 - Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819928/000155837024002008/dv-20231231x10k.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "DoubleVerify Holdings, Inc. Form 10-K for fiscal year 2023 - Item 1 Business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819928/000155837024002008/dv-20231231x10k.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "DoubleVerify Holdings, Inc. Form 10-K for fiscal year 2023 - \"Our company was founded in 2008\"",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819928/000155837024002008/dv-20231231x10k.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "DoubleVerify Holdings, Inc. Form 10-K for fiscal year 2023 - \"DoubleVerify and its subsidiary DoubleVerify MidCo, Inc. changed their names from Pixel Group Holdings Inc. and Pixel Parent Inc., respectively\"",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819928/000155837024002008/dv-20231231x10k.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "DoubleVerify Holdings, Inc. Form S-1 (November 2021) - same name-change statement",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819928/000110465921139146/dv-20211115xs1.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "DoubleVerify - official site",
+        "url": "https://www.doubleverify.com/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
   },
   "doximity": {
     "companyId": "doximity",
@@ -10440,6 +12664,124 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "eightsleep": {
+    "companyId": "eightsleep",
+    "name": "Eight Sleep",
+    "legalName": "Eight Sleep Inc.",
+    "website": "https://www.eightsleep.com",
+    "description": "Sleep technology company that makes the Pod, a mattress cover with built-in biometric sensors and a hub that heats, cools and tracks sleep on both sides of the bed, sold with a software subscription.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2014,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Hardware",
+    "subsector": "connected sleep hardware: a sensor-equipped thermoregulating mattress cover with a software subscription",
+    "tickers": [],
+    "formerNames": [
+      "Morphy Inc.",
+      "Morphy LLC"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "SEC EDGAR - Eight Sleep Inc. Form D, 2021-07-15, entityName",
+        "url": "https://www.sec.gov/Archives/edgar/data/1686351/000168635121000001/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "Eight Sleep - Warranty (\"Eight Sleep Inc.\", 915 Broadway, #1301, New York, NY 10010)",
+        "url": "https://www.eightsleep.com/warranty/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "Eight Sleep - EU Privacy Policy (\"Eight Sleep, Inc.\")",
+        "url": "https://www.eightsleep.com/eu/legal/privacy/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Eight Sleep - official site",
+        "url": "https://www.eightsleep.com/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Eight Sleep - About (\"An intelligent mattress Cover\" that \"Cools, heats, tracks, and responds on both sides with built-in biometric sensors\")",
+        "url": "https://www.eightsleep.com/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "SEC EDGAR - Eight Sleep Inc. Form D, 2021-07-15, Principal Place of Business 25 W. 26th Street, 6th Floor, New York, NY 10010",
+        "url": "https://www.sec.gov/Archives/edgar/data/1686351/000168635121000001/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Built In NYC, 2025-08-21 (\"The New York-based company integrates AI with hardware, software and supplements\")",
+        "url": "https://www.builtinnyc.com/articles/eight-sleep-raises-100m-20250821",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "SEC EDGAR - Eight Sleep Inc. Form D, 2021-07-15, Principal Place of Business in New York, NY, United States",
+        "url": "https://www.sec.gov/Archives/edgar/data/1686351/000168635121000001/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "SEC EDGAR - Eight Sleep Inc. Form D, 2016-10-05, yearOfInc value 2014",
+        "url": "https://www.sec.gov/Archives/edgar/data/1686351/000168635116000001/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Eight Sleep press release, 2021-08-30, About Eight Sleep boilerplate (\"Founded in 2014\")",
+        "url": "https://www.businesswire.com/news/home/20210830005405/en/Eight-Sleep-Raises-%2486M-Series-C-to-Scale-Sleep-Fitness-Movement",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "SEC EDGAR - Eight Sleep Inc. filing history: five Regulation D exempt private placements and no registered offering or periodic reports",
+        "url": "https://data.sec.gov/submissions/CIK0001686351.json",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Built In NYC, 2025-08-21 - privately raised $100 million",
+        "url": "https://www.builtinnyc.com/articles/eight-sleep-raises-100m-20250821",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Eight Sleep - About (designs and sells a connected physical sleep device and hub)",
+        "url": "https://www.eightsleep.com/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Eight Sleep - About",
+        "url": "https://www.eightsleep.com/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - Eight Sleep Inc. Form D, 2021-07-15, issuerPreviousNameList: <previousName>Morphy Inc.</previousName>",
+        "url": "https://www.sec.gov/Archives/edgar/data/1686351/000168635121000001/primary_doc.xml",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "SEC EDGAR - Eight Sleep Inc. Form D, 2016-10-05, issuerPreviousNameList: <previousName>Morphy LLC</previousName> and <previousName>Morphy Inc.</previousName>",
+        "url": "https://www.sec.gov/Archives/edgar/data/1686351/000168635116000001/primary_doc.xml",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "eikontherapeutics": {
     "companyId": "eikontherapeutics",
     "name": "Eikon Therapeutics",
@@ -10969,6 +13311,111 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "elliptic": {
+    "companyId": "elliptic",
+    "name": "Elliptic",
+    "legalName": "Elliptic Enterprises Limited",
+    "website": "https://www.elliptic.co",
+    "description": "Blockchain analytics provider offering cryptoasset transaction and wallet screening, monitoring and investigation tools used for financial crime compliance and risk management by banks, crypto businesses, governments and law enforcement.",
+    "hqCity": "London",
+    "hqCountry": "United Kingdom",
+    "foundedYear": 2013,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Crypto",
+    "subsector": "blockchain analytics for financial crime compliance and risk management",
+    "tickers": [],
+    "formerNames": [
+      "Bitxchange Ltd"
+    ],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Elliptic - Official Site",
+        "url": "https://www.elliptic.co/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "Elliptic Privacy Policy - \"Elliptic Enterprises Limited is registered in England and Wales (company number 08458210)\"",
+        "url": "https://www.elliptic.co/privacy-policy",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "UK Companies House - ELLIPTIC ENTERPRISES LIMITED, company number 08458210",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08458210",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Elliptic - Official Site, blockchain analytics for financial crime risk management and compliance",
+        "url": "https://www.elliptic.co/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Elliptic company release - \"Founded in 2013, Elliptic is headquartered in London with offices in New York, Washington D.C., Miami, Dubai, Singapore and Tokyo.\"",
+        "url": "https://www.businesswire.com/news/home/20260512331518/en/Elliptic-Secures-$120-Million-Investment-From-Nasdaq-Ventures-Deutsche-Bank-One-Peak-and-the-British-Business-Bank",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "UK Companies House - registered office Office 7 35-37 Ludgate Hill, London, England, EC4M 7JN",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08458210",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Elliptic company release - \"Elliptic is headquartered in London\"",
+        "url": "https://www.businesswire.com/news/home/20260512331518/en/Elliptic-Secures-$120-Million-Investment-From-Nasdaq-Ventures-Deutsche-Bank-One-Peak-and-the-British-Business-Bank",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Elliptic - Official Site About page, \"Elliptic was founded in 2013\"",
+        "url": "https://www.elliptic.co/about",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "UK Companies House - incorporated 22 March 2013",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08458210",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Elliptic company newsroom - $120 million private investment round, May 2026",
+        "url": "https://www.elliptic.co/newsroom/elliptic-secures-120-million-investment/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "UK Companies House - company status Active, private limited company",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08458210",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Elliptic - Official Site, cryptoasset data and intelligence across blockchains",
+        "url": "https://www.elliptic.co/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Elliptic - Official Site, screening, monitoring and investigation of on-chain risk",
+        "url": "https://www.elliptic.co/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "UK Companies House - Previous company names: BITXCHANGE LTD, 22 Mar 2013 to 10 Dec 2013",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08458210",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "enphaseenergy": {
     "companyId": "enphaseenergy",
     "name": "Enphase Energy",
@@ -11069,6 +13516,140 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-03"
+  },
+  "ent": {
+    "companyId": "ent",
+    "name": "Ent",
+    "legalName": null,
+    "website": "https://www.ent.ai",
+    "description": "Intent-aware workspace security platform. It reads human, AI agent and application activity in real time and intervenes at the moment of risk, extending endpoint prevention across human and AI-driven work.",
+    "hqCity": null,
+    "hqCountry": null,
+    "foundedYear": null,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Cybersecurity",
+    "subsector": "intent-aware workspace and endpoint security for human and AI agent activity",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "Ent - official site",
+        "url": "https://www.ent.ai/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Ent company page - self-description",
+        "url": "https://www.ent.ai/company",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Ent Emerges from Stealth - About Ent",
+        "url": "https://secure.businesswire.com/news/home/20260616680280/en/Ent-Emerges-from-Stealth-to-Bring-Prevention-Back-to-Cybersecurity",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Ent Emerges from Stealth - $100M seed round, venture backed",
+        "url": "https://secure.businesswire.com/news/home/20260616680280/en/Ent-Emerges-from-Stealth-to-Bring-Prevention-Back-to-Cybersecurity",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Ent Emerges from Stealth - About Ent",
+        "url": "https://secure.businesswire.com/news/home/20260616680280/en/Ent-Emerges-from-Stealth-to-Bring-Prevention-Back-to-Cybersecurity",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Ent Emerges from Stealth - About Ent",
+        "url": "https://secure.businesswire.com/news/home/20260616680280/en/Ent-Emerges-from-Stealth-to-Bring-Prevention-Back-to-Cybersecurity",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
+  "eon": {
+    "companyId": "eon",
+    "name": "Eon",
+    "legalName": "Eon.io, Inc.",
+    "website": "https://www.eon.io",
+    "description": "Cloud backup posture management platform. It automates multi-cloud backups and converts them into a unified, queryable data lake for recovery, compliance and analytics, and makes backup data available to AI workloads.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2024,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Developer Tools & Infrastructure",
+    "subsector": "cloud backup posture management and multi-cloud data protection",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Eon Terms of Use - 'Eon.io, Inc. and its affiliates'",
+        "url": "https://www.eon.io/terms-of-use",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Eon - official site",
+        "url": "https://www.eon.io/about",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Eon Series D announcement - About Eon",
+        "url": "https://www.eon.io/news-and-events/series-d-funding",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Eon Terms of Use - 245 Fifth Avenue, New York, NY 10016",
+        "url": "https://www.eon.io/terms-of-use",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Eon - About page address block, 245 Fifth Avenue, New York, NY 10016",
+        "url": "https://www.eon.io/about",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Eon Terms of Use - New York, NY, USA",
+        "url": "https://www.eon.io/terms-of-use",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Eon newsroom - 'Founded in January 2024'",
+        "url": "https://www.eon.io/news-and-events/eon-launches-out-of-stealth-with-127-million-to-reinvent-cloud-infrastructure-backup",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Eon Series D announcement - $300M private round, venture backed",
+        "url": "https://www.eon.io/news-and-events/series-d-funding",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Eon Series D announcement - About Eon",
+        "url": "https://www.eon.io/news-and-events/series-d-funding",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Eon Series D announcement - About Eon",
+        "url": "https://www.eon.io/news-and-events/series-d-funding",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
   },
   "etched": {
     "companyId": "etched",
@@ -12416,6 +14997,129 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-02"
   },
+  "forecoffee": {
+    "companyId": "forecoffee",
+    "name": "Fore Coffee",
+    "legalName": "PT Fore Kopi Indonesia Tbk",
+    "website": "https://fore.coffee",
+    "description": "Indonesian coffee chain operating Fore-branded coffee outlets in Indonesia and Singapore, selling roasted coffee drinks in store and through app-based ordering and delivery.",
+    "hqCity": "Jakarta",
+    "hqCountry": "Indonesia",
+    "foundedYear": 2018,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "coffee shop chain",
+    "tickers": [
+      "IDX:FORE"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Fore Coffee - Investors FAQ (own investor relations page)",
+        "url": "https://fore.coffee/investors-faq/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "e-IPO (Indonesia Stock Exchange official electronic IPO system) - PT Fore Kopi Indonesia Tbk",
+        "url": "https://e-ipo.co.id/en/ipo/334/fore-pt-fore-kopi-indonesia-tbk",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Fore Coffee - official site press release",
+        "url": "https://fore.coffee/press-release-fore-coffee-announces-initial-public-offering-on-the-indonesia-stock-exchange/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "e-IPO (IDX official electronic IPO system) - business description, roasted coffee outlets",
+        "url": "https://e-ipo.co.id/en/ipo/334/fore-pt-fore-kopi-indonesia-tbk",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Fore Coffee - IPO press release, outlets across Indonesia and Singapore",
+        "url": "https://fore.coffee/press-release-fore-coffee-announces-initial-public-offering-on-the-indonesia-stock-exchange/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Fore Coffee - Investors FAQ, head office Gedung Graha Ganesha, Jl. Hayam Wuruk No. 28, Central Jakarta",
+        "url": "https://fore.coffee/investors-faq/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "e-IPO (IDX official electronic IPO system) - company address, Jakarta Pusat",
+        "url": "https://e-ipo.co.id/en/ipo/334/fore-pt-fore-kopi-indonesia-tbk",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Fore Coffee - Investors FAQ, incorporated in Jakarta, Indonesia",
+        "url": "https://fore.coffee/investors-faq/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Fore Coffee - Investors FAQ, established 2018",
+        "url": "https://fore.coffee/investors-faq/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Fore Coffee - IPO press release, founded 2018",
+        "url": "https://fore.coffee/press-release-fore-coffee-announces-initial-public-offering-on-the-indonesia-stock-exchange/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Fore Coffee - Investors FAQ, listed on the Indonesia Stock Exchange, ticker FORE, listing date 14 April 2025",
+        "url": "https://fore.coffee/investors-faq/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "e-IPO (IDX official electronic IPO system) - stock code FORE, listing date 14 Apr 2025",
+        "url": "https://e-ipo.co.id/en/ipo/334/fore-pt-fore-kopi-indonesia-tbk",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Fore Coffee - Investors FAQ, IDX ticker FORE",
+        "url": "https://fore.coffee/investors-faq/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "e-IPO (IDX official electronic IPO system) - stock code FORE on the Indonesia Stock Exchange",
+        "url": "https://e-ipo.co.id/en/ipo/334/fore-pt-fore-kopi-indonesia-tbk",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Fore Coffee - IPO listing day press release, IDX ticker FORE",
+        "url": "https://fore.coffee/press-release-fore-coffees-ipo-oversubscribed-by-200-63-times-and-hits-upper-auto-reject-ara-on-debut-day/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "e-IPO (IDX official electronic IPO system) - food and beverage enterprise operating coffee outlets",
+        "url": "https://e-ipo.co.id/en/ipo/334/fore-pt-fore-kopi-indonesia-tbk",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "e-IPO (IDX official electronic IPO system) - 217 coffee outlets under the Fore brand",
+        "url": "https://e-ipo.co.id/en/ipo/334/fore-pt-fore-kopi-indonesia-tbk",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "formenergy": {
     "companyId": "formenergy",
     "name": "Form Energy",
@@ -12902,6 +15606,93 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-03"
+  },
+  "fubotv": {
+    "companyId": "fubotv",
+    "name": "fuboTV",
+    "legalName": "FuboTV Inc.",
+    "website": "https://www.fubo.tv",
+    "description": "Live TV streaming company operating the Fubo service in the United States, Canada and Spain, Molotov in France, and Hulu + Live TV in the United States.",
+    "hqCity": "New York",
+    "hqCountry": "United States",
+    "foundedYear": 2015,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Consumer",
+    "subsector": "live TV streaming service (virtual multichannel video programming distributor)",
+    "tickers": [
+      "NYSE:FUBO"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "FuboTV Inc. - Form 10-Q for the quarter ended March 31, 2026, cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1484769/000162828026031265/fubo-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "FuboTV Inc. - Form 10-Q for the quarter ended March 31, 2026, address of principal executive offices, 1290 Avenue of the Americas, New York, NY",
+        "url": "https://www.sec.gov/Archives/edgar/data/1484769/000162828026031265/fubo-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "FuboTV Inc. - Form 10-Q for the quarter ended March 31, 2026, address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1484769/000162828026031265/fubo-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "FuboTV Inc. - Form 10-Q for the quarter ended March 31, 2026, Section 12(b) securities table",
+        "url": "https://www.sec.gov/Archives/edgar/data/1484769/000162828026031265/fubo-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "FuboTV Inc. - Form 10-Q for the quarter ended March 31, 2026, Section 12(b) table listing Class A Common Stock, FUBO, New York Stock Exchange",
+        "url": "https://www.sec.gov/Archives/edgar/data/1484769/000162828026031265/fubo-20260331.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Fubo investor relations overview page describing the company and naming Hulu + Live TV, Fubo and Molotov",
+        "url": "https://ir.fubo.tv/overview/default.aspx",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Fubo investor relations overview page describing a consumer-first live TV streaming company",
+        "url": "https://ir.fubo.tv/overview/default.aspx",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "fuboTV Inc. Form S-1 describing the company as a virtual multichannel video programming distributor (vMVPD)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1484769/000149315220015153/forms-1.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Fubo investor relations site on the fubo.tv domain",
+        "url": "https://ir.fubo.tv/overview/default.aspx",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "fuboTV Inc. Form S-1, 'fuboTV launched in 2015 and today is a leading independent virtual multichannel video programming distributor, or vMVPD, in the United States.'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1484769/000149315220015153/forms-1.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "fuboTV Inc. Form 8-K exhibit 99.1 dated February 2024, 'Fubo was founded nine years ago to offer consumers a sports-first package of live TV streaming channels'",
+        "url": "https://www.sec.gov/Archives/edgar/data/1484769/000149315224007217/ex99-1.htm",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
   },
   "functionhealth": {
     "companyId": "functionhealth",
@@ -14261,6 +17052,99 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "guidewire": {
+    "companyId": "guidewire",
+    "name": "Guidewire",
+    "legalName": "Guidewire Software, Inc.",
+    "website": "https://www.guidewire.com",
+    "description": "Provider of a technology platform for property and casualty insurers that combines core systems of record with digital, analytics and artificial intelligence applications.",
+    "hqCity": "San Mateo",
+    "hqCountry": "United States",
+    "foundedYear": 2001,
+    "status": "public",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "core systems, digital, data and analytics platform for property and casualty insurers",
+    "tickers": [
+      "NYSE:GWRE"
+    ],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Guidewire Software, Inc. Form 10-Q for the quarter ended April 30, 2026 - cover page and description of business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1528396/000152839626000027/gwre-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Guidewire Software, Inc. Form 10-Q for the quarter ended April 30, 2026 - address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1528396/000152839626000027/gwre-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Guidewire Software, Inc. Form 10-Q for the quarter ended April 30, 2026 - address of principal executive offices",
+        "url": "https://www.sec.gov/Archives/edgar/data/1528396/000152839626000027/gwre-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Guidewire Software, Inc. Form 10-Q for the quarter ended April 30, 2026 - cover page",
+        "url": "https://www.sec.gov/Archives/edgar/data/1528396/000152839626000027/gwre-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Guidewire Software, Inc. Form 10-Q for the quarter ended April 30, 2026 - securities registered under Section 12(b) (GWRE, New York Stock Exchange)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1528396/000152839626000027/gwre-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "tickers",
+        "label": "Guidewire Software, Inc. Investor Relations - NYSE: GWRE",
+        "url": "https://ir.guidewire.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Guidewire Software, Inc. Form 10-Q for the quarter ended April 30, 2026 - description of business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1528396/000152839626000027/gwre-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Guidewire Software, Inc. Form 10-Q for the quarter ended April 30, 2026 - description of business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1528396/000152839626000027/gwre-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Guidewire Software, Inc. Form 10-Q for the quarter ended April 30, 2026 - description of business",
+        "url": "https://www.sec.gov/Archives/edgar/data/1528396/000152839626000027/gwre-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Guidewire Software, Inc. Form 10-Q for the quarter ended April 30, 2026 - \"Guidewire Software, Inc., a Delaware corporation, was incorporated on September 20, 2001\"",
+        "url": "https://www.sec.gov/Archives/edgar/data/1528396/000152839626000027/gwre-20260430.htm",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Guidewire - official site, About page company timeline (founded 2001)",
+        "url": "https://www.guidewire.com/about",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Guidewire - official site, About page",
+        "url": "https://www.guidewire.com/about",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "gusto": {
     "companyId": "gusto",
     "name": "Gusto",
@@ -14981,6 +17865,91 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "hex": {
+    "companyId": "hex",
+    "name": "Hex",
+    "legalName": "Hex Technologies Inc.",
+    "website": "https://hex.tech",
+    "description": "Data analytics platform combining notebooks, conversational querying and interactive data apps for data teams.",
+    "hqCity": null,
+    "hqCountry": "United States",
+    "foundedYear": 2020,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Enterprise Software",
+    "subsector": "data analytics and notebook workspace for data teams",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Hex - official site footer (\"\u00a9 2026 Hex Technologies Inc.\")",
+        "url": "https://hex.tech/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "Hex - About page footer (\"\u00a9 2026 Hex Technologies Inc.\")",
+        "url": "https://hex.tech/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Hex - official site",
+        "url": "https://hex.tech/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Hex - official site (AI analytics platform: agentic notebooks, conversational self-serve, interactive data apps)",
+        "url": "https://hex.tech/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Hex - About",
+        "url": "https://hex.tech/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Hex - Careers (\"We're hiring in San Francisco, New York, and remote. We have beautiful offices in both cities\")",
+        "url": "https://hex.tech/careers/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Hex press release, 2025-05-28 (\"Hex was founded in 2020 by a team that had worked together at Palantir\")",
+        "url": "https://www.businesswire.com/news/home/20250528505112/en/Hex-Lands-$70M-to-Transform-Data-Science-and-Analytics-With-AI",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Hex - About (\"now, 6 years in, our system supports over 2,000 customers globally\")",
+        "url": "https://hex.tech/about/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Hex press release, 2025-05-28, announcing a $70M private Series C round",
+        "url": "https://www.businesswire.com/news/home/20250528505112/en/Hex-Lands-$70M-to-Transform-Data-Science-and-Analytics-With-AI",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Hex - official site (workspace for data analytics sold to data teams at organisations)",
+        "url": "https://hex.tech/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Hex - official site",
+        "url": "https://hex.tech/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "higharc": {
     "companyId": "higharc",
     "name": "Higharc",
@@ -15460,6 +18429,117 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "holvi": {
+    "companyId": "holvi",
+    "name": "Holvi",
+    "legalName": "Holvi Payment Services Oy",
+    "website": "https://www.holvi.com",
+    "description": "Finnish business banking service for the self-employed and small businesses, combining a digital payment account with invoicing, expense management and bookkeeping tools.",
+    "hqCity": "Helsinki",
+    "hqCountry": "Finland",
+    "foundedYear": 2011,
+    "status": "acquired",
+    "statusDetail": "Acquired by Keru Fintech Investments Oy in 2021",
+    "sector": "Fintech",
+    "subsector": "business banking and payment accounts for the self-employed",
+    "tickers": [],
+    "formerNames": [
+      "Scred Oy"
+    ],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "Finnish Patent and Registration Office (PRH) open data - business ID 2193756-4",
+        "url": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=2193756-4",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "Holvi - Imprint (own help centre)",
+        "url": "https://support.holvi.com/hc/en-gb/articles/202271182-Imprint",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "Holvi - official site",
+        "url": "https://www.holvi.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Holvi acquired by Keru Fintech Investments - company press release, About Holvi",
+        "url": "https://www.holvi.com/press/holvi-acquired-by-keru-fintech-investments/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "Holvi - official site",
+        "url": "https://www.holvi.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Finnish Patent and Registration Office (PRH) open data - domicile Helsinki, Kaikukatu 2 C, 00530 Helsinki",
+        "url": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=2193756-4",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Holvi - Imprint, registered address Kaikukatu 2 C, 00530 Helsinki",
+        "url": "https://support.holvi.com/hc/en-gb/articles/202271182-Imprint",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "Finnish Patent and Registration Office (PRH) open data - business ID 2193756-4, Finland",
+        "url": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=2193756-4",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Holvi acquired by Keru Fintech Investments - company press release, \"Holvi was founded in Helsinki in 2011\"",
+        "url": "https://www.holvi.com/press/holvi-acquired-by-keru-fintech-investments/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Holvi acquired by Keru Fintech Investments - company press release, Keru \"has acquired all Holvi shares ... with immediate effect\"",
+        "url": "https://www.holvi.com/press/holvi-acquired-by-keru-fintech-investments/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Holvi acquired by Keru Fintech Investments - company press release, 2 February 2021",
+        "url": "https://www.holvi.com/press/holvi-acquired-by-keru-fintech-investments/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "statusDetail",
+        "label": "BBVA accepts an offer to sell Holvi to Keru Fintech Investments - seller announcement",
+        "url": "https://www.bbva.com/en/bbva-accepts-an-offer-to-sell-holvi-to-keru-fintech-investments/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "formerNames",
+        "label": "Finnish Patent and Registration Office (PRH) open data - names array: \"Scred Oy\" registered 2008-05-09, endDate 2011-12-21; \"Holvi Payment Services Oy\" registered 2011-12-22",
+        "url": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=2193756-4",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "Holvi acquired by Keru Fintech Investments - company press release, About Holvi, authorised payment institution",
+        "url": "https://www.holvi.com/press/holvi-acquired-by-keru-fintech-investments/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "Holvi acquired by Keru Fintech Investments - company press release, About Holvi",
+        "url": "https://www.holvi.com/press/holvi-acquired-by-keru-fintech-investments/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "homage": {
     "companyId": "homage",
     "name": "Homage",
@@ -15825,6 +18905,91 @@ Object.assign(COMPANIES, {
       }
     ],
     "lastChecked": "2026-09-02"
+  },
+  "iceye": {
+    "companyId": "iceye",
+    "name": "ICEYE",
+    "legalName": "ICEYE Oy",
+    "website": "https://www.iceye.com",
+    "description": "Owner and operator of a synthetic aperture radar (SAR) satellite constellation, providing Earth observation and continuous monitoring data to defence and intelligence, insurance, environmental monitoring and emergency management customers, and building sovereign constellations for governments.",
+    "hqCity": "Espoo",
+    "hqCountry": "Finland",
+    "foundedYear": 2014,
+    "status": "private",
+    "statusDetail": null,
+    "sector": "Space",
+    "subsector": "synthetic aperture radar satellite constellation and Earth observation data",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "website",
+        "label": "ICEYE - Official Site",
+        "url": "https://www.iceye.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "Finnish Patent and Registration Office (PRH) open data - ICEYE Oy, business ID 2639822-1, company form Osakeyhtio / Limited company",
+        "url": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=2639822-1",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "ICEYE - Official Site homepage and About ICEYE boilerplate",
+        "url": "https://www.iceye.com/newsroom/press-releases/iceye-leads-a-new-era-of-sovereign-intelligence-from-space-with-1b-funding-round",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "ICEYE - Official Site contact page, \"ICEYE Maarintie 6 02150 Espoo Finland\"",
+        "url": "https://www.iceye.com/contact",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "Finnish Patent and Registration Office (PRH) open data - registered address Maarintie 6, 02150 Espoo",
+        "url": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=2639822-1&addresses=true",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "ICEYE - Official Site contact page, \"ICEYE Maarintie 6 02150 Espoo Finland\"",
+        "url": "https://www.iceye.com/contact",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "ICEYE company press release - \"Natively European, founded in Finland.\"",
+        "url": "https://www.iceye.com/newsroom/press-releases/iceye-leads-a-new-era-of-sovereign-intelligence-from-space-with-1b-funding-round",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "Finnish Patent and Registration Office (PRH) open data - business ID registration 2014-09-04, trade register registration 2014-09-16",
+        "url": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=2639822-1",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "ICEYE company press release - EUR 1B private funding round, August 2026",
+        "url": "https://www.iceye.com/newsroom/press-releases/iceye-leads-a-new-era-of-sovereign-intelligence-from-space-with-1b-funding-round",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "ICEYE - Official Site, \"ICEYE owns the world's largest and most advanced SAR (synthetic aperture radar) satellite constellation\"",
+        "url": "https://www.iceye.com/",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "ICEYE - Official Site, SAR satellite constellation and continuous monitoring capabilities",
+        "url": "https://www.iceye.com/",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
   },
   "illumina": {
     "companyId": "illumina",
@@ -16762,6 +19927,121 @@ Object.assign(COMPANIES, {
     ],
     "lastChecked": "2026-09-03"
   },
+  "iyzico": {
+    "companyId": "iyzico",
+    "name": "iyzico",
+    "legalName": "\u0130yzi \u00d6deme ve Elektronik Para Hizmetleri A.\u015e.",
+    "website": "https://www.iyzico.com",
+    "description": "Turkish payment services and electronic money institution providing online payment processing and payment system management for merchants, and virtual cards and wallets for end users.",
+    "hqCity": "Istanbul",
+    "hqCountry": "Turkey",
+    "foundedYear": 2013,
+    "status": "acquired",
+    "statusDetail": "Acquired by PayU Global B.V. in 2019",
+    "sector": "Fintech",
+    "subsector": "online payment processing and electronic money services",
+    "tickers": [],
+    "formerNames": [],
+    "sources": [
+      {
+        "field": "legalName",
+        "label": "iyzico - audited TFRS financial statements 2024 (company-hosted), title page",
+        "url": "https://www.iyzico.com/assets/uploads/pdf/iyzico-tfrs-2024.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "legalName",
+        "label": "iyzico - audited TFRS financial statements 2023 (company-hosted), title page",
+        "url": "https://www.iyzico.com/assets/uploads/pdf/iyzico-tfrs-2023.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "website",
+        "label": "iyzico - official site, About Us",
+        "url": "https://www.iyzico.com/en/about-us",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "iyzico - audited TFRS financial statements 2024, field of activity note",
+        "url": "https://www.iyzico.com/assets/uploads/pdf/iyzico-tfrs-2024.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "description",
+        "label": "iyzico - official site, About Us",
+        "url": "https://www.iyzico.com/en/about-us",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "iyzico - audited TFRS financial statements 2023, registered office Altunizade Mahallesi, \u00dcsk\u00fcdar, \u0130stanbul",
+        "url": "https://www.iyzico.com/assets/uploads/pdf/iyzico-tfrs-2023.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCity",
+        "label": "iyzico - audited TFRS financial statements 2024, registered office \u00dcsk\u00fcdar \u0130stanbul",
+        "url": "https://www.iyzico.com/assets/uploads/pdf/iyzico-tfrs-2024.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "hqCountry",
+        "label": "iyzico - audited TFRS financial statements 2024, registered office \u0130stanbul/T\u00fcrkiye",
+        "url": "https://www.iyzico.com/assets/uploads/pdf/iyzico-tfrs-2024.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "iyzico - audited TFRS financial statements 2023, \"9 May\u0131s 2013 tarihinde kurulmu\u015ftur\"",
+        "url": "https://www.iyzico.com/assets/uploads/pdf/iyzico-tfrs-2023.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "foundedYear",
+        "label": "iyzico - audited TFRS financial statements 2024, establishment 9 May 2013",
+        "url": "https://www.iyzico.com/assets/uploads/pdf/iyzico-tfrs-2024.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "status",
+        "label": "Vostok Emerging Finance completes iyzico exit - seller completion announcement, 16 December 2019",
+        "url": "https://www.globenewswire.com/news-release/2019/12/16/1961189/0/en/Vostok-Emerging-Finance-completes-iyzico-exit.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "statusDetail",
+        "label": "Vostok Emerging Finance completes iyzico exit - \"following the acquisition of the company by PayU Global B.V.\", 16 December 2019",
+        "url": "https://www.globenewswire.com/news-release/2019/12/16/1961189/0/en/Vostok-Emerging-Finance-completes-iyzico-exit.html",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "statusDetail",
+        "label": "PayU acquires Turkish digital payments provider iyzico - acquirer's own announcement",
+        "url": "https://corporate.payu.com/press/payu-acquires-turkish-digital-payments-provider-iyzico-journey-becoming-worlds-number-one",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "statusDetail",
+        "label": "iyzico - audited TFRS financial statements 2024, controlled by PayU Fintech Holdings B.V., ultimate control Prosus N.V. and Naspers Limited",
+        "url": "https://www.iyzico.com/assets/uploads/pdf/iyzico-tfrs-2024.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "sector",
+        "label": "iyzico - audited TFRS financial statements 2024, payment and electronic money services under Law No. 6493",
+        "url": "https://www.iyzico.com/assets/uploads/pdf/iyzico-tfrs-2024.pdf",
+        "checked": "2026-09-04"
+      },
+      {
+        "field": "subsector",
+        "label": "iyzico - audited TFRS financial statements 2024, payment and electronic money services under Law No. 6493",
+        "url": "https://www.iyzico.com/assets/uploads/pdf/iyzico-tfrs-2024.pdf",
+        "checked": "2026-09-04"
+      }
+    ],
+    "lastChecked": "2026-09-04"
+  },
   "jdcom": {
     "companyId": "jdcom",
     "name": "JD.com",
@@ -17630,293 +20910,6 @@ Object.assign(COMPANIES, {
         "field": "subsector",
         "label": "Lemonade Inc. - official investor page on lemonade.com",
         "url": "https://www.lemonade.com/investor",
-        "checked": "2026-09-03"
-      }
-    ],
-    "lastChecked": "2026-09-03"
-  },
-  "lendingclub": {
-    "companyId": "lendingclub",
-    "name": "Happen",
-    "legalName": "Happen, Inc.",
-    "website": "https://www.happen.com",
-    "description": "Bank holding company that operates a nationally chartered digital marketplace bank through its wholly owned subsidiary Happen Bank, National Association, providing consumer credit and deposit products in the United States. The company was named LendingClub Corporation until June 2026.",
-    "hqCity": "San Francisco",
-    "hqCountry": "United States",
-    "foundedYear": 2006,
-    "status": "public",
-    "statusDetail": null,
-    "sector": "Fintech",
-    "subsector": "digital marketplace bank and consumer lending",
-    "tickers": [
-      "NASDAQ:HAPN"
-    ],
-    "formerNames": [
-      "LendingClub Corporation",
-      "LendingClub"
-    ],
-    "sources": [
-      {
-        "field": "legalName",
-        "label": "Happen, Inc. Form 10-Q for the quarter ended June 30, 2026 - cover page, registrant Happen, Inc.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1409970/000140997026000163/hapn-20260630.htm",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "status",
-        "label": "Happen, Inc. Form 10-Q for the quarter ended June 30, 2026 - cover page",
-        "url": "https://www.sec.gov/Archives/edgar/data/1409970/000140997026000163/hapn-20260630.htm",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "tickers",
-        "label": "Happen, Inc. Form 10-Q for the quarter ended June 30, 2026 - Securities registered pursuant to Section 12(b): Common stock, HAPN, The Nasdaq Stock Market LLC",
-        "url": "https://www.sec.gov/Archives/edgar/data/1409970/000140997026000163/hapn-20260630.htm",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "hqCity",
-        "label": "Happen, Inc. Form 10-Q for the quarter ended June 30, 2026 - principal executive offices, 88 Kearny Street, Suite 600, San Francisco, CA",
-        "url": "https://www.sec.gov/Archives/edgar/data/1409970/000140997026000163/hapn-20260630.htm",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "hqCountry",
-        "label": "Happen, Inc. Form 10-Q for the quarter ended June 30, 2026 - principal executive offices, San Francisco, CA",
-        "url": "https://www.sec.gov/Archives/edgar/data/1409970/000140997026000163/hapn-20260630.htm",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "description",
-        "label": "Happen, Inc. Form 10-Q for the quarter ended June 30, 2026 - 'Happen, Inc. is registered as a bank holding company and operates the vast majority of its business through its wholly-owned subsidiary, Happen Bank.'",
-        "url": "https://www.sec.gov/Archives/edgar/data/1409970/000140997026000163/hapn-20260630.htm",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "sector",
-        "label": "Happen, Inc. Form 10-Q for the quarter ended June 30, 2026 - 'operates a leading, nationally chartered, digital marketplace bank that leverages data and technology'",
-        "url": "https://www.sec.gov/Archives/edgar/data/1409970/000140997026000163/hapn-20260630.htm",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "subsector",
-        "label": "Happen, Inc. Form 10-Q for the quarter ended June 30, 2026 - 'nationally chartered, digital marketplace bank'",
-        "url": "https://www.sec.gov/Archives/edgar/data/1409970/000140997026000163/hapn-20260630.htm",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "foundedYear",
-        "label": "Happen, Inc. Form 10-Q for the quarter ended June 30, 2026 - 'The Company was founded in 2006'",
-        "url": "https://www.sec.gov/Archives/edgar/data/1409970/000140997026000163/hapn-20260630.htm",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "foundedYear",
-        "label": "LendingClub Corporation Form 10-K for fiscal year 2025 - 'Since our founding in 2006, more than five million individuals have become members'",
-        "url": "https://www.sec.gov/Archives/edgar/data/1409970/000140997026000018/lc-20251231.htm",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "formerNames",
-        "label": "Happen, Inc. Form 10-Q for the quarter ended June 30, 2026 - 'On June 22, 2026, LendingClub Corporation changed its corporate name to Happen, Inc.'",
-        "url": "https://www.sec.gov/Archives/edgar/data/1409970/000140997026000163/hapn-20260630.htm",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "formerNames",
-        "label": "SEC EDGAR submissions record for CIK 0001409970 - formerNames 'LendingClub Corp' to 2026-06-18, current name Happen, Inc.",
-        "url": "https://data.sec.gov/submissions/CIK0001409970.json",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "formerNames",
-        "label": "Happen Bank official site - page title 'Happen Bank, formerly LendingClub'",
-        "url": "https://www.happen.com/",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "tickers",
-        "label": "SEC EDGAR submissions record for CIK 0001409970 - tickers HAPN, exchanges Nasdaq",
-        "url": "https://data.sec.gov/submissions/CIK0001409970.json",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "status",
-        "label": "SEC EDGAR submissions record for CIK 0001409970 - entityType operating, listed on Nasdaq",
-        "url": "https://data.sec.gov/submissions/CIK0001409970.json",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "website",
-        "label": "Happen Bank official site - 'All credit and deposit products are provided by Happen Bank, N.A., Member FDIC ... a wholly-owned subsidiary of Happen, Inc.'",
-        "url": "https://www.happen.com/",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "description",
-        "label": "Happen Bank official site - bank subsidiary and holding company disclosure",
-        "url": "https://www.happen.com/",
-        "checked": "2026-09-02"
-      },
-      {
-        "field": "legalName",
-        "label": "Happen, Inc. Investor Relations (ir.happen.com), to which ir.lendingclub.com now redirects",
-        "url": "https://ir.happen.com/",
-        "checked": "2026-09-02"
-      }
-    ],
-    "lastChecked": "2026-09-02"
-  },
-  "life360": {
-    "companyId": "life360",
-    "name": "Life360",
-    "legalName": "Life360, Inc.",
-    "website": "https://www.life360.com",
-    "description": "Technology platform providing a family safety and location sharing mobile app, including driving safety, crash detection and item tracking.",
-    "hqCity": "San Mateo",
-    "hqCountry": "United States",
-    "foundedYear": null,
-    "status": "public",
-    "statusDetail": null,
-    "sector": "Consumer",
-    "subsector": "family location sharing and safety mobile app",
-    "tickers": [
-      "NASDAQ:LIF",
-      "ASX:360"
-    ],
-    "formerNames": [],
-    "sources": [
-      {
-        "field": "legalName",
-        "label": "Life360, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page and Item 1 Business (SEC EDGAR)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1581760/000158176026000016/lifx-20251231.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "hqCity",
-        "label": "Life360, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page and Item 1 Business (SEC EDGAR)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1581760/000158176026000016/lifx-20251231.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "hqCountry",
-        "label": "Life360, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page and Item 1 Business (SEC EDGAR)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1581760/000158176026000016/lifx-20251231.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "status",
-        "label": "Life360, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page and Item 1 Business (SEC EDGAR)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1581760/000158176026000016/lifx-20251231.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "tickers",
-        "label": "Life360, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page and Item 1 Business (SEC EDGAR)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1581760/000158176026000016/lifx-20251231.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "description",
-        "label": "Life360, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page and Item 1 Business (SEC EDGAR)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1581760/000158176026000016/lifx-20251231.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "sector",
-        "label": "Life360, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page and Item 1 Business (SEC EDGAR)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1581760/000158176026000016/lifx-20251231.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "subsector",
-        "label": "Life360, Inc. - Form 10-K for fiscal year ended December 31, 2025, cover page and Item 1 Business (SEC EDGAR)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1581760/000158176026000016/lifx-20251231.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "tickers",
-        "label": "Life360, Inc. - Investor FAQs (official investor relations site)",
-        "url": "https://investors.life360.com/ir-resources/investor-faqs",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "tickers",
-        "label": "Life360, Inc. - Definitive Proxy Statement (DEF 14A) filed April 16, 2026 (SEC EDGAR)",
-        "url": "https://www.sec.gov/Archives/edgar/data/1581760/000158176026000063/lif-20260416.htm",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "website",
-        "label": "Life360 - About (official site)",
-        "url": "https://www.life360.com/about/",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "description",
-        "label": "Life360 - About (official site)",
-        "url": "https://www.life360.com/about/",
-        "checked": "2026-09-03"
-      }
-    ],
-    "lastChecked": "2026-09-03"
-  },
-  "linear": {
-    "companyId": "linear",
-    "name": "Linear",
-    "legalName": "Linear Orbit, Inc.",
-    "website": "https://linear.app",
-    "description": "Software company that builds Linear, a project and issue tracking system used by software product development teams.",
-    "hqCity": null,
-    "hqCountry": null,
-    "foundedYear": 2019,
-    "status": "private",
-    "statusDetail": null,
-    "sector": "Enterprise Software",
-    "subsector": "project and issue tracking software for product development teams",
-    "tickers": [],
-    "formerNames": [],
-    "sources": [
-      {
-        "field": "legalName",
-        "label": "Linear - Terms of Service",
-        "url": "https://linear.app/terms",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "website",
-        "label": "Linear - About",
-        "url": "https://linear.app/about",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "description",
-        "label": "Linear - About",
-        "url": "https://linear.app/about",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "foundedYear",
-        "label": "Linear - About",
-        "url": "https://linear.app/about",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "status",
-        "label": "Linear - Building our way: Announcing our Series C",
-        "url": "https://linear.app/now/building-our-way",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "sector",
-        "label": "Linear - About",
-        "url": "https://linear.app/about",
-        "checked": "2026-09-03"
-      },
-      {
-        "field": "subsector",
-        "label": "Linear - About",
-        "url": "https://linear.app/about",
         "checked": "2026-09-03"
       }
     ],
