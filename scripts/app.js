@@ -201,6 +201,8 @@ document.getElementById('portfolioView').style.display = 'none';
   if (sView) sView.style.display = 'none';
   const scView = document.getElementById('screenerView');
   if (scView) scView.style.display = 'none';
+  const acView = document.getElementById('alertsView');
+  if (acView) acView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -368,6 +370,14 @@ document.getElementById('powerSignalsView').style.display = 'none';
     document.getElementById('screenerView').style.display = 'block';
     if (typeof renderScreener === 'function') renderScreener();
     if (typeof pbTrack === 'function') pbTrack('screener_opened');
+    window.scrollTo(0, 0);
+  } else if (slug === 'alerts') {
+    /* The monitoring inbox. Signed-out visitors still reach the route
+       and get an explanation rather than a redirect - the page has to
+       be able to say what alerts are before asking anyone to sign up
+       for them. renderAlertCenter handles both states itself. */
+    document.getElementById('alertsView').style.display = 'block';
+    if (typeof renderAlertCenter === 'function') renderAlertCenter();
     window.scrollTo(0, 0);
   } else if (slug === 'search' || slug.indexOf('search?') === 0) {
     /* Query lives in the hash after "?", so the route match has to
