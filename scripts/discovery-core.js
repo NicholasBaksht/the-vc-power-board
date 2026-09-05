@@ -547,3 +547,29 @@ if (typeof module !== 'undefined' && module.exports) {
     DSC_TYPE_ORDER: DSC_TYPE_ORDER, DSC_TYPE_LABEL: DSC_TYPE_LABEL
   };
 }
+
+
+/* ============================================================
+   MODAL ESCAPE (shared)
+
+   Every dialog in the discovery surfaces - Saved searches, Saved
+   views, Columns, Alert preferences - renders a button labelled
+   "Esc", but nothing was listening for the key. Someone who trusts
+   the label and presses Escape is left staring at a dimmed page
+   with no obvious way out. A control that names a key has to
+   honour that key.
+
+   One listener on the document rather than one per dialog: the
+   dialogs are built by four different files, and a shared trap
+   here means a fifth cannot forget to add it. Closes only the
+   topmost dialog, so nested cases unwind one layer at a time.
+   ============================================================ */
+
+document.addEventListener('keydown', function (e) {
+  if (e.key !== 'Escape' && e.key !== 'Esc') return;
+  const open = document.querySelectorAll('.scr-modal');
+  if (!open.length) return;
+  const top = open[open.length - 1];
+  top.remove();
+  e.stopPropagation();
+});
