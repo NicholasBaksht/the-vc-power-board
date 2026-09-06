@@ -117,6 +117,18 @@ const PBA_EVENTS = [
   'pipeline_target_committed',
   'pipeline_target_passed',
   'pipeline_filtered',
+  /* Phase 4D: private workflow context. Note bodies, tag labels and
+     intro-source names are NEVER sent. Only that a note was written,
+     a tag applied, a priority set. */
+  'pipeline_note_created',
+  'pipeline_note_updated',
+  'pipeline_note_deleted',
+  'pipeline_tag_created',
+  'pipeline_tag_applied',
+  'pipeline_tag_removed',
+  'pipeline_priority_set',
+  'pipeline_intro_source_set',
+  'pipeline_target_opened',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
