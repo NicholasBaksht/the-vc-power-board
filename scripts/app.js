@@ -218,6 +218,8 @@ document.getElementById('portfolioView').style.display = 'none';
   if (acView) acView.style.display = 'none';
   const frView = document.getElementById('raiseView');
   if (frView) frView.style.display = 'none';
+  const plView = document.getElementById('pipelineView');
+  if (plView) plView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -385,6 +387,13 @@ document.getElementById('powerSignalsView').style.display = 'none';
     document.getElementById('screenerView').style.display = 'block';
     if (typeof renderScreener === 'function') renderScreener();
     if (typeof pbTrack === 'function') pbTrack('screener_opened');
+    window.scrollTo(0, 0);
+  } else if (slug === 'pipeline') {
+    /* The pipeline belongs to a raise, so this route explains that and
+       links to creating one rather than 404ing when there is none.
+       renderPipeline handles signed out, no raise, and empty raise. */
+    document.getElementById('pipelineView').style.display = 'block';
+    if (typeof renderPipeline === 'function') renderPipeline();
     window.scrollTo(0, 0);
   } else if (slug === 'raise') {
     /* The private fundraising workspace. Signed-out visitors reach the
