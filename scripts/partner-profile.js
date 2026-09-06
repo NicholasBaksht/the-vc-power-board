@@ -249,6 +249,7 @@ function renderPartnerProfile(slug) {
         <p class="partner-bio">${p.biography || 'No biography on file.'}</p>
 
         ${typeof pbehHtml === 'function' ? pbehHtml(slug) : ''}
+        ${typeof renderPartnerOutcomes === 'function' ? renderPartnerOutcomes(slug) : ''}
 
         <div class="pg-side-label">Previous Experience</div>
         <ul class="partner-list">${experienceHTML || '<li>Not publicly disclosed.</li>'}</ul>
