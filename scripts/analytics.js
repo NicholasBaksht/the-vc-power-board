@@ -198,6 +198,13 @@ const PBA_EVENTS = [
   'workspace_member_removed',
   'workspace_role_changed',
   'workspace_ownership_transferred',
+  /* Phase 7C. The shared raise. Never the raise, the workspace, the
+     investors, the note text, an amount, or who was assigned what.
+     Only that sharing and assignment are being used at all. */
+  'workspace_raise_shared',
+  'workspace_raise_unshared',
+  'workspace_target_assigned',
+  'workspace_action_assigned',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
