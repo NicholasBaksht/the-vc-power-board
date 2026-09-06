@@ -146,6 +146,9 @@ const PBA_EVENTS = [
   'add_to_raise_from_screener',
   'add_to_raise_from_power_match',
   'add_to_raise_from_shortlist',
+  /* Phase 5: fund intelligence. Which fund was opened is never sent -
+     only that a fund page was viewed. */
+  'fund_profile_viewed',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
