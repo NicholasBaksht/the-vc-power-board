@@ -230,6 +230,8 @@ document.getElementById('portfolioView').style.display = 'none';
   if (pmapView) pmapView.style.display = 'none';
   const raView = document.getElementById('raiseAnalyticsView');
   if (raView) raView.style.display = 'none';
+  const xpView = document.getElementById('exportView');
+  if (xpView) xpView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -433,6 +435,16 @@ document.getElementById('powerSignalsView').style.display = 'none';
     if (rav) {
       rav.style.display = 'block';
       if (typeof renderRaiseAnalytics === 'function') renderRaiseAnalytics();
+    }
+    window.scrollTo(0, 0);
+  } else if (slug === 'export') {
+    /* Distinct from the Account page's "Export my data", which is the
+       whole-account JSON copy. This is one raise, as a spreadsheet,
+       with the sensitive groups off until asked for. */
+    const xv = document.getElementById('exportView');
+    if (xv) {
+      xv.style.display = 'block';
+      if (typeof renderExportCenter === 'function') renderExportCenter();
     }
     window.scrollTo(0, 0);
   } else if (slug.indexOf('fund/') === 0) {
