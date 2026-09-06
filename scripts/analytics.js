@@ -155,6 +155,11 @@ const PBA_EVENTS = [
   'fund_screener_opened',
   'firm_fund_opened',
   'outcome_context_viewed',
+  /* Phase 6. Which section was opened is recorded, never any figure
+     or filter value. */
+  'analytics_opened',
+  'analytics_filter_changed',
+  'analytics_entity_clicked',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
