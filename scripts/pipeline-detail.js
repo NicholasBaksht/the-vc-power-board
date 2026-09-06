@@ -291,13 +291,15 @@ async function pdOpen(targetId) {
   el.__target = target;
   document.body.appendChild(el);
 
-  const [notes, tags] = [await pdNotes(targetId), await pdAllTags(true)];
-  pdPaint(el, target, notes, tags);
+  const notes = await pdNotes(targetId);
+  const tags = await pdAllTags(true);
+  const activities = await pdActivities(targetId);
+  pdPaint(el, target, notes, tags, activities);
 
   el.addEventListener('click', function (e) { pdClick(e, el, target); });
 }
 
-function pdPaint(el, target, notes, allTags) {
+function pdPaint(el, target, notes, allTags, activities) {
   const name = (typeof ptDisplayName === 'function') ? ptDisplayName(target) : target.id;
   const contacts = (typeof plState !== 'undefined' && plState.contacts[target.id]) || [];
   const applied = pdTagsByTarget[target.id] || [];
@@ -379,6 +381,19 @@ function pdPaint(el, target, notes, allTags) {
       '</div>' +
     '</section>' +
 
+    /* ---- next action ---- */
+    '<section class="pd-sec"><h3 class="pd-h">Next action</h3>' +
+      (typeof paEditorHtml === 'function' ? paEditorHtml(target) : '') +
+    '</section>' +
+
+    /* ---- activity ---- */
+    '<section class="pd-sec"><h3 class="pd-h">Activity</h3>' +
+      (typeof paLogFormHtml === 'function' ? paLogFormHtml() : '') +
+      '<div class="pd-timeline">' +
+        (typeof paTimelineHtml === 'function' ? paTimelineHtml(activities) : '') +
+      '</div>' +
+    '</section>' +
+
     /* ---- notes ---- */
     '<section class="pd-sec"><h3 class="pd-h">Notes</h3>' +
       '<textarea class="scr-text fr-textarea" data-pd-notebody rows="3" maxlength="5000" ' +
@@ -413,7 +428,23 @@ function pdNoteRow(n) {
 async function pdRefresh(el, target) {
   const notes = await pdNotes(target.id);
   const tags = await pdAllTags();
-  pdPaint(el, target, notes, tags);
+  const activities = await pdActivities(target.id);
+  pdPaint(el, target, notes, tags, activities);
+}
+
+/* The timeline for one investor. Read here rather than sliced out of
+   the raise-wide cache, because the panel is where a founder looks
+   for the full history and the cache is capped for the table. */
+async function pdActivities(targetId) {
+  const c = pdClient();
+  if (!c) return [];
+  try {
+    const { data, error } = await c.from('pipeline_activities')
+      .select('*').eq('target_id', targetId)
+      .order('occurred_at', { ascending: false }).limit(100);
+    if (error) throw error;
+    return data || [];
+  } catch (e) { return null; }
 }
 
 function pdErr(el, msg) {
@@ -488,6 +519,47 @@ async function pdClick(e, el, target) {
   if (del) {
     if (!window.confirm('Delete this note? This cannot be undone.')) return;
     await pdDeleteNote(del.getAttribute('data-pd-delnote'));
+    await pdRefresh(el, target);
+    return;
+  }
+
+  /* ---- next action ---- */
+  if (e.target.closest('[data-pa-save]')) {
+    const body = el.querySelector('[data-pa-body]').value;
+    const due = paDueFromInput(el.querySelector('[data-pa-due]').value);
+    const res = await paSetNextAction(target, body, due);
+    if (res.error) { pdErr(el, res.error); return; }
+    pdErr(el, '');
+    await pdRefresh(el, target);
+    return;
+  }
+  const done = e.target.closest('[data-pa-complete]');
+  if (done) {
+    const res = await paCompleteAction(target, done.getAttribute('data-pa-complete'));
+    if (res.error) { pdErr(el, res.error); return; }
+    await pdRefresh(el, target);
+    return;
+  }
+  const clr = e.target.closest('[data-pa-clear]');
+  if (clr) {
+    await paClearAction(target, clr.getAttribute('data-pa-clear'));
+    await pdRefresh(el, target);
+    return;
+  }
+
+  /* ---- log an activity ---- */
+  if (e.target.closest('[data-pa-log]')) {
+    const type = el.querySelector('[data-pa-type]').value;
+    const title = el.querySelector('[data-pa-title]').value;
+    const when = el.querySelector('[data-pa-date]').value;
+    const att = el.querySelector('[data-pa-attendees]');
+    const res = await paLogManual(target, type, {
+      title: title,
+      attendees: att ? att.value : null,
+      occurredAt: when ? new Date(when + 'T12:00:00').toISOString() : null
+    });
+    if (res.error) { pdErr(el, res.error); return; }
+    pdErr(el, '');
     await pdRefresh(el, target);
     return;
   }
