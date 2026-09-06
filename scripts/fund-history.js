@@ -114,7 +114,10 @@ function fhHeadline(latest, companions) {
   return '<div class="fh-latest">' +
     '<div class="fh-latest-top">' +
       '<span class="fh-latest-label">Latest tracked fund</span>' +
-      '<span class="fh-latest-name">' + fhEsc(name) + '</span>' +
+      '<span class="fh-latest-name">' +
+        ((typeof fundRouteFor === 'function' && fundRouteFor(latest))
+          ? '<a href="' + fhEsc(fundRouteFor(latest)) + '">' + fhEsc(name) + '</a>'
+          : fhEsc(name)) + '</span>' +
       (latest.isFlagship ? '<span class="fh-flag">Flagship</span>' : '') +
     '</div>' +
     (facts.length
@@ -162,8 +165,16 @@ function fhRow(f) {
      dash is the honest answer to "what size was it". */
   const dash = '<span class="fh-null">-</span>';
 
+  /* Links to the fund page when one can be addressed. A fund whose
+     id cannot be split into firm and vehicle has no valid URL, so it
+     renders as plain text rather than a broken link. */
+  const route = (typeof fundRouteFor === 'function') ? fundRouteFor(f) : null;
+  const nameHtml = route
+    ? '<a href="' + fhEsc(route) + '">' + fhEsc(name) + '</a>'
+    : fhEsc(name);
+
   return '<tr' + (f.isFlagship ? ' class="is-flagship"' : '') + '>' +
-    '<td class="fh-name">' + fhEsc(name) +
+    '<td class="fh-name">' + nameHtml +
       (f.combinedVehicles
         ? '<span class="fh-note" title="Closed together with another vehicle; only a combined total was disclosed">combined</span>'
         : '') +
