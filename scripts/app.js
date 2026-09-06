@@ -220,6 +220,8 @@ document.getElementById('portfolioView').style.display = 'none';
   if (frView) frView.style.display = 'none';
   const plView = document.getElementById('pipelineView');
   if (plView) plView.style.display = 'none';
+  const mbView = document.getElementById('myBoardView');
+  if (mbView) mbView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -387,6 +389,13 @@ document.getElementById('powerSignalsView').style.display = 'none';
     document.getElementById('screenerView').style.display = 'block';
     if (typeof renderScreener === 'function') renderScreener();
     if (typeof pbTrack === 'function') pbTrack('screener_opened');
+    window.scrollTo(0, 0);
+  } else if (slug === 'my') {
+    /* My Power Board: the private workspace home. Signed out it
+       explains itself rather than redirecting, and with no raise it
+       shows how to start one. renderPowerBoard handles all three. */
+    document.getElementById('myBoardView').style.display = 'block';
+    if (typeof renderPowerBoard === 'function') renderPowerBoard();
     window.scrollTo(0, 0);
   } else if (slug === 'pipeline') {
     /* The pipeline belongs to a raise, so this route explains that and
@@ -938,6 +947,12 @@ function pbhInstallNav() {
      Same reasoning as the alerts bell beside it. "My shortlist" is
      left exactly as it is - Phase 4 adds a surface, it does not take
      one away. */
+  /* The header control points at the workspace home, not the raise
+     list. My Power Board is where a founder wants to land: it answers
+     what needs attention, and links on to the raise and the pipeline.
+     One header control for the whole workspace, not three. */
+  const homeLink = document.querySelector('.pb-raise-btn');
+  if (homeLink) homeLink.setAttribute('href', '#my');
   const raiseBtn = document.querySelector('.pb-raise-btn');
   if (raiseBtn) {
     raiseBtn.style.display = (typeof isSignedIn === 'function' && isSignedIn()) ? '' : 'none';
