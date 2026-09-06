@@ -205,6 +205,16 @@ const PBA_EVENTS = [
   'workspace_raise_unshared',
   'workspace_target_assigned',
   'workspace_action_assigned',
+  /* Phase 7D. Shared discovery. Never the view, the search, its query
+     text, its filters, or who subscribed. Only that sharing and
+     subscribing happen at all, which is what tells you whether the
+     opt-in default is right. */
+  'workspace_view_shared',
+  'workspace_view_unshared',
+  'workspace_search_shared',
+  'workspace_search_unshared',
+  'workspace_search_subscribed',
+  'workspace_search_unsubscribed',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
