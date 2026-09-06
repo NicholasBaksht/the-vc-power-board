@@ -61,7 +61,10 @@ const DATA_FILES = [
   'data-companies.js', 'data-companies-1.js', 'data-companies-2.js',
   'data-company-aliases.js',
   'data-partners.js', 'data-partners-1.js', 'data-partners-2.js', 'data-partners-3.js',
-  'data-partners-4.js', 'data-partners-5.js', 'data-partners-6.js'
+  'data-partners-4.js', 'data-partners-5.js', 'data-partners-6.js',
+  /* Phase 5. Without this, a firm announcing a fund produced no
+     event at all: the file was never diffed. */
+  'data-funds.js'
 ];
 
 /* ---------- deterministic identity ---------- */
@@ -358,6 +361,116 @@ function detectFirmTeam(oldG, newG, at) {
   return events;
 }
 
+/* ------------------------------------------------------------
+   FUNDS (Phase 5)
+
+   THE HARD PART IS NOT DETECTING A NEW FUND. It is telling a firm
+   announcing a fund apart from Power Board finally researching one
+   it raised in 2016. Both look identical in a diff: a record that
+   was not there yesterday.
+
+   The vintage year decides. A fund appearing with a vintage in the
+   current or previous year is plausibly a real announcement. One
+   appearing with a 2016 vintage is research catching up, and saying
+   "Firm X announced Fund II" about a nine-year-old vehicle would be
+   a false claim about the world.
+
+   isDiscovery carries that distinction into the alert layer, which
+   Phase 3 already uses to choose between "Added" and a real date.
+   ------------------------------------------------------------ */
+
+function fundKeyOf(firmSlug, f) {
+  if (f.name) {
+    return firmSlug + '::' + String(f.name).toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  }
+  return firmSlug + '::' + String(f.series || 'unnamed').toLowerCase().replace(/[^a-z0-9]+/g, '-') +
+    (f.vintageYear != null ? '-' + f.vintageYear : '');
+}
+
+function detectFunds(oldG, newG, at) {
+  const events = [];
+  const o = oldG.FIRM_FUNDS, n = newG.FIRM_FUNDS;
+  if (!o || !n) return events;
+
+  const thisYear = new Date().getFullYear();
+
+  Object.keys(n).forEach(function (firmSlug) {
+    const oldList = (o[firmSlug] && o[firmSlug].funds) || [];
+    const newList = (n[firmSlug] && n[firmSlug].funds) || [];
+    const oldByKey = {};
+    oldList.forEach(function (f) { oldByKey[fundKeyOf(firmSlug, f)] = f; });
+
+    newList.forEach(function (f) {
+      const key = fundKeyOf(firmSlug, f);
+      const prev = oldByKey[key];
+
+      if (!prev) {
+        /* A recent vintage is plausibly news. Anything older is
+           Power Board catching up, and must not be phrased as an
+           announcement. */
+        const recent = f.vintageYear != null && f.vintageYear >= thisYear - 1;
+        events.push(mkEvent({
+          eventType: 'NEW_FUND_ANNOUNCED',
+          entityType: 'firm', entityId: firmSlug, entityName: firmSlug,
+          occurredAt: recent && f.announcedDate ? f.announcedDate : null,
+          detectedAt: at,
+          isDiscovery: !recent,
+          beforeValue: null,
+          afterValue: f.name || ('vintage ' + (f.vintageYear || 'unknown')),
+          importance: recent ? 'HIGH' : 'MEDIUM',
+          source: f.source || null,
+          summary: recent
+            ? 'A new fund is recorded for this firm: ' + (f.name || 'an unnamed vehicle') +
+              (f.vintageYear ? ', vintage ' + f.vintageYear : '')
+            : 'Power Board added a previously untracked fund: ' +
+              (f.name || 'an unnamed vehicle') +
+              (f.vintageYear ? ', vintage ' + f.vintageYear : ''),
+          metadata: { fundKey: key, vintageYear: f.vintageYear || null,
+                      sizeUSD: f.sizeUSD != null ? f.sizeUSD : null }
+        }));
+        return;
+      }
+
+      /* A size that changed is either a correction or a later close.
+         Neither is inferred: the event states both figures and lets
+         the reader see which it was. */
+      if (prev.sizeUSD !== f.sizeUSD && f.sizeUSD != null) {
+        events.push(mkEvent({
+          eventType: 'FUND_SIZE_UPDATED',
+          entityType: 'firm', entityId: firmSlug, entityName: firmSlug,
+          occurredAt: null, detectedAt: at, isDiscovery: true,
+          beforeValue: prev.sizeUSD == null ? null : String(prev.sizeUSD),
+          afterValue: String(f.sizeUSD),
+          importance: 'MEDIUM',
+          source: f.source || null,
+          summary: 'Recorded size changed for ' + (f.name || 'an unnamed fund') +
+                   ' at this firm',
+          metadata: { fundKey: key }
+        }));
+      }
+
+      if (prev.status !== f.status && f.status) {
+        /* Reaching a final close IS a real-world event, so it is not
+           marked as a discovery. */
+        const closed = f.status === 'closed';
+        events.push(mkEvent({
+          eventType: 'FUND_STATUS_CHANGED',
+          entityType: 'firm', entityId: firmSlug, entityName: firmSlug,
+          occurredAt: closed && f.announcedDate ? f.announcedDate : null,
+          detectedAt: at, isDiscovery: !closed,
+          beforeValue: prev.status || null, afterValue: f.status,
+          importance: closed ? 'HIGH' : 'MEDIUM',
+          source: f.source || null,
+          summary: (f.name || 'A fund') + ' at this firm is now recorded as ' + f.status,
+          metadata: { fundKey: key }
+        }));
+      }
+    });
+  });
+
+  return events;
+}
+
 function detectAliasReviews(oldG, newG, at) {
   const events = [];
   const o = oldG.COMPANY_ALIASES, n = newG.COMPANY_ALIASES;
@@ -405,7 +518,8 @@ function main() {
     console.log('monitoring starts from this commit forward rather than inventing history.');
   } else {
     [detectPartnerInvestments, detectPartnerFirmChange, detectPartnerRoleChange,
-     detectNewDeals, detectCompanyStatus, detectAliasReviews].forEach(function (fn) {
+     detectNewDeals, detectCompanyStatus, detectAliasReviews,
+     detectFunds].forEach(function (fn) {
       try { events = events.concat(fn(oldG, newG, at) || []); }
       catch (e) { console.error('detector failed, skipped: ' + fn.name + ' - ' + e.message); }
     });
