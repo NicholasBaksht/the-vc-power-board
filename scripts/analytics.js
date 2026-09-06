@@ -160,6 +160,11 @@ const PBA_EVENTS = [
   'analytics_opened',
   'analytics_filter_changed',
   'analytics_entity_clicked',
+  /* Phase 6D. That the co-investment map was opened, and that a pair
+     was drilled into. Which firms are never sent: a founder mapping
+     a specific investor is exactly the thing not to record. */
+  'power_map_opened',
+  'coinvestor_evidence_opened',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
