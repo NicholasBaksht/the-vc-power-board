@@ -243,6 +243,7 @@ ${renderWhyThisVC(firm)}
       ${renderPowerSignalsSection(firm)}
       ${renderGenome(firm)}
       ${renderPerformanceDashboard(firm)}
+      ${typeof renderFirmFunds === 'function' ? renderFirmFunds(firm) : ''}
       ${renderGeographicHeatmap(firm)}
       ${leadershipHTML}
       ${timelineHTML}
