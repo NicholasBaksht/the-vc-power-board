@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API Documentation | The VC Power Board</title>
+<meta name="description" content="The Power Board API: authentication with API keys, scopes, cursor pagination, rate limits, error codes, and the resources available today. Documentation that matches the implementation.">
+<link rel="canonical" href="https://thevcpowerboard.com/api/">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="API Documentation | The VC Power Board">
+<meta property="og:description" content="API keys, scopes, pagination, rate limits and errors.">
+<meta property="og:url" content="https://thevcpowerboard.com/api/">
+<meta property="og:site_name" content="The VC Power Board">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="API Documentation | The VC Power Board">
+<meta name="twitter:description" content="API keys, scopes, pagination, rate limits and errors.">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220'%3E%3Ccircle cx='110' cy='110' r='104' fill='%230C0F14' stroke='%232F6FED' stroke-width='6'/%3E%3Ctext x='110' y='130' font-family='Inter,sans-serif' font-size='90' font-weight='600' text-anchor='middle'%3E%3Ctspan fill='%23EDF1F8'%3EP%3C/tspan%3E%3Ctspan fill='%235B8DEF'%3EB%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../styles/main.css">
+<link rel="stylesheet" href="../styles/legal.css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://thevcpowerboard.com/"},{"@type":"ListItem","position":2,"name":"API Documentation","item":"https://thevcpowerboard.com/api/"}]}</script>
+</head>
+<body>
+
+<div class="byline-bar">
+  <svg class="site-logo" width="44" height="44" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="110" cy="110" r="104" fill="none" stroke="#2F6FED" stroke-width="4"/>
+    <text x="110" y="130" font-family="Inter, sans-serif" font-size="90" font-weight="600" text-anchor="middle">
+      <tspan fill="#EDF1F8">P</tspan><tspan fill="#5B8DEF">B</tspan>
+    </text>
+    <rect x="82" y="150" width="10" height="14" fill="#2F6FED"/>
+    <rect x="96" y="142" width="10" height="22" fill="#2F6FED"/>
+    <rect x="110" y="132" width="10" height="32" fill="#2F6FED"/>
+    <rect x="124" y="122" width="10" height="42" fill="#2F6FED"/>
+  </svg>
+  <div class="byline">Created by Nicholas Baksht</div>
+</div>
+
+<div class="legal-wrap">
+
+  <div class="legal-breadcrumb">
+    <a href="../">Home</a><span class="crumb-sep">/</span>API Documentation
+  </div>
+
+  <div class="legal-doc-head">
+    <div class="legal-doc-kicker">The VC Power Board</div>
+    <h1 class="legal-doc-title">API Documentation</h1>
+  </div>
+
+  <div class="legal-meta">
+    <div class="legal-meta-item">
+      <span class="legal-meta-label">Version</span>
+      <span class="legal-meta-value">v1</span>
+    </div>
+    <div class="legal-meta-item">
+      <span class="legal-meta-label">Last revised</span>
+      <span class="legal-meta-value">September 6, 2026</span>
+    </div>
+  </div>
+
+  <section class="legal-section" id="s1">
+    <h2><span class="sec-num">1</span> What This Documents</h2>
+    <p>This page describes what the API does today. Where something is not built, it says so and gives the status code you will actually receive. Nothing here is aspirational: if a resource is listed as available, you can call it now.</p>
+    <p>The API reads the same data the product reads, through the same permission rules. It cannot see anything you cannot see in the product, and it has no way to bypass those rules. That is a property of how it is built rather than a promise: every request is evaluated by the database against the identity of the key that made it.</p>
+  </section>
+
+  <section class="legal-section" id="s2">
+    <h2><span class="sec-num">2</span> Base URL and Versioning</h2>
+    <pre class="legal-pre">https://&lt;your-project&gt;.functions.supabase.co/api/v1/</pre>
+    <p>Every endpoint lives under <code>/v1/</code>. The version is part of the path and will not change meaning: if a breaking change is needed, it will appear under a new version and <code>v1</code> will keep behaving as documented here.</p>
+  </section>
+
+  <section class="legal-section" id="s3">
+    <h2><span class="sec-num">3</span> Authentication</h2>
+    <p>Create a key in the product, then send it as a bearer token.</p>
+    <pre class="legal-pre">curl https://&lt;your-project&gt;.functions.supabase.co/api/v1/raises \
+  -H "Authorization: Bearer pb_live_YOUR_KEY_HERE"</pre>
+    <p>A key is displayed once, when it is created. Only a hash of it is stored, so it cannot be shown again, recovered, or read out of the database by anyone. If you lose one, revoke it and make another.</p>
+    <p>An invalid key and a revoked key return the same <code>401</code> with the same message. That is deliberate: distinguishing them would confirm which guesses were once real keys.</p>
+  </section>
+
+  <section class="legal-section" id="s4">
+    <h2><span class="sec-num">4</span> Scopes</h2>
+    <p>A key carries explicit scopes and can do nothing outside them. A key created without specifying scopes receives <code>research:read</code> only.</p>
+    <ul class="legal-list">
+      <li><code>research:read</code> Firms, partners, companies, funds and deals.</li>
+      <li><code>search:read</code> The search endpoint.</li>
+      <li><code>workspace:read</code> Workspaces you belong to.</li>
+      <li><code>raise:read</code> Raises, targets and next actions.</li>
+      <li><code>raise:write</code> Updating a target stage or a next action.</li>
+      <li><code>notes:read</code> Private notes. <strong>Not granted by <code>raise:read</code>.</strong> A note is the most sensitive thing in the product and needs to be asked for by name.</li>
+      <li><code>exports:read</code> Programmatic exports.</li>
+      <li><code>webhooks:manage</code> Creating and removing webhook endpoints.</li>
+    </ul>
+    <p>A key can never read more than the person who created it. A key issued for a Workspace is additionally confined to that one Workspace, and stops working if its creator leaves.</p>
+  </section>
+
+  <section class="legal-section" id="s5">
+    <h2><span class="sec-num">5</span> Response Shape</h2>
+    <p>Every successful response has the same envelope. Data is always under <code>data</code>, and never appears alongside an error.</p>
+    <pre class="legal-pre">{
+  "data": [ ... ],
+  "meta": {
+    "request_id": "req_a1b2c3d4e5f6g7h8i9j0",
+    "version": "v1",
+    "pagination": { "limit": 25, "has_more": true,
+                    "next_cursor": "cmFpc2VfMDA5", "total": null }
+  }
+}</pre>
+    <p>A field that is unknown is <code>null</code> and present, never omitted, so you can tell "we do not know" from "this endpoint forgot to include it".</p>
+    <p><code>total</code> is always <code>null</code>. Counting the whole set on every page is a query you did not ask for, and an exact total is stale the moment it is returned.</p>
+  </section>
+
+  <section class="legal-section" id="s6">
+    <h2><span class="sec-num">6</span> Pagination</h2>
+    <p>Cursor based. Pass <code>limit</code> up to 100, default 25. When <code>has_more</code> is true, pass <code>next_cursor</code> back as <code>cursor</code>.</p>
+    <pre class="legal-pre">GET /v1/raise_targets?limit=50
+GET /v1/raise_targets?limit=50&amp;cursor=cmFpc2VfMDA5</pre>
+    <p>Offset paging is not offered. An offset page shifts underneath you when a row is inserted, so page two silently skips records. A cursor is the ordering key of the last row you saw, which is stable.</p>
+  </section>
+
+  <section class="legal-section" id="s7">
+    <h2><span class="sec-num">7</span> Rate Limits</h2>
+    <p>120 requests per key per minute, counted in a fixed window. Exceeding it returns <code>429</code>. The counter is incremented in the same transaction that validates your key, so concurrent requests cannot both slip under the limit.</p>
+  </section>
+
+  <section class="legal-section" id="s8">
+    <h2><span class="sec-num">8</span> Errors</h2>
+    <pre class="legal-pre">{
+  "error": { "code": "insufficient_scope", "message": "...", "status": 403 },
+  "meta": { "request_id": "req_...", "version": "v1" }
+}</pre>
+    <ul class="legal-list">
+      <li><code>400 invalid_request</code> The request or its body is malformed.</li>
+      <li><code>401 unauthenticated</code> Missing, invalid or revoked key.</li>
+      <li><code>403 forbidden</code> The key lacks the required scope.</li>
+      <li><code>404 not_found</code> No such resource, <em>or</em> one you may not see. These are deliberately the same answer: telling you a raise exists but is not yours confirms it exists.</li>
+      <li><code>409 conflict</code> The change conflicts with the current state.</li>
+      <li><code>429 rate_limited</code> Too many requests.</li>
+      <li><code>501 not_implemented</code> A reserved route that is not built yet. See Section 10.</li>
+      <li><code>500 server_error</code> Something went wrong at our end.</li>
+    </ul>
+    <p>Error messages never contain stack traces, SQL, or internal identifiers. Quote the <code>request_id</code> when reporting a problem.</p>
+  </section>
+
+  <section class="legal-section" id="s9">
+    <h2><span class="sec-num">9</span> Resources Available Now</h2>
+    <p>All are read-only unless marked otherwise.</p>
+    <ul class="legal-list">
+      <li><code>GET /v1/workspaces</code> and <code>/v1/workspaces/{id}</code></li>
+      <li><code>GET /v1/raises</code> and <code>/v1/raises/{id}</code></li>
+      <li><code>GET /v1/raise_targets</code>, optional <code>?raise_id=</code>, and <code>/v1/raise_targets/{id}</code></li>
+      <li><code>PATCH /v1/raise_targets/{id}</code> Writable fields: <code>stage</code>, <code>relationship</code>, <code>priority</code>, <code>assignee_user_id</code>. Any other field in the body is ignored.</li>
+      <li><code>GET /v1/next_actions</code>, optional <code>?raise_id=</code>, and <code>/v1/next_actions/{id}</code></li>
+      <li><code>PATCH /v1/next_actions/{id}</code> Writable fields: <code>body</code>, <code>due_at</code>, <code>completed_at</code>, <code>assignee_user_id</code>.</li>
+      <li><code>GET /v1/saved_views</code> and <code>/v1/saved_searches</code></li>
+    </ul>
+    <p>Objects use canonical identifiers. A firm is <code>firm_id</code>, a person is <code>person_id</code>; display names are never identity and can change.</p>
+    <pre class="legal-pre">{
+  "id": "pt_9f2c",
+  "object": "raise_target",
+  "raise_id": "fr_31a8",
+  "target_type": "FIRM",
+  "firm_id": "a16z",
+  "person_id": null,
+  "stage": "MEETING",
+  "relationship": "WARM_PATH",
+  "priority": "HIGH",
+  "assignee_user_id": null,
+  "added_from": "screener",
+  "created_at": "2026-01-14T09:22:11Z",
+  "updated_at": "2026-02-03T17:40:02Z"
+}</pre>
+  </section>
+
+  <section class="legal-section" id="s10">
+    <h2><span class="sec-num">10</span> Not Available Yet</h2>
+    <p>These routes are reserved and return <code>501</code> with an explanation. They are listed so that you know the shape they will take, and so that nobody builds against an endpoint that silently returns an empty list.</p>
+    <ul class="legal-list">
+      <li><code>/v1/firms</code>, <code>/v1/partners</code>, <code>/v1/angels</code>, <code>/v1/companies</code>, <code>/v1/funds</code>, <code>/v1/deals</code></li>
+      <li><code>/v1/search</code></li>
+    </ul>
+    <p>The reason is architectural rather than a matter of effort: Power Board's research is authored and reviewed as files in a repository, not as database rows, and the API cannot read it from there. A synchronisation from the repository into a queryable copy exists and must run before these endpoints can return anything real.</p>
+    <p>When they ship, observed metrics will carry their denominators. A sector share will be returned as a count and a denominator, never as a bare percentage, because a share of an unknown is not a share of anything.</p>
+  </section>
+
+  <section class="legal-section" id="s11">
+    <h2><span class="sec-num">11</span> Webhooks</h2>
+    <p>Register an <code>https</code> endpoint to receive events from your own Workspace. Plain <code>http</code>, private and link-local addresses, bare IP literals, and credentials in the URL are all rejected when the endpoint is created.</p>
+    <p>Events available now:</p>
+    <ul class="legal-list">
+      <li><code>raise.target_added</code></li>
+      <li><code>raise.stage_changed</code></li>
+      <li><code>raise.target_committed</code></li>
+      <li><code>raise.target_passed</code></li>
+      <li><code>workspace.member_joined</code>, <code>workspace.member_removed</code></li>
+    </ul>
+    <p>Two groups are accepted by the subscription schema but do not fire yet, and are therefore not listed above. Research events (<code>firm.updated</code>, <code>partner.updated</code>, <code>company.updated</code>, <code>fund.updated</code>, <code>deal.added</code>, <code>outcome.updated</code>) wait on the synchronisation described in Section 10. <code>raise.next_action_due</code> waits on a scheduled check for actions falling due, which does not exist yet. Subscribing to any of them is accepted and will simply deliver nothing until they ship.</p>
+    <h3>Verifying a signature</h3>
+    <p>Each delivery carries these headers:</p>
+    <pre class="legal-pre">X-PowerBoard-Event:      raise.stage_changed
+X-PowerBoard-Delivery:   evt_pa1a2b3c4d
+X-PowerBoard-Timestamp:  1789012345
+X-PowerBoard-Signature:  v1=3a7f...</pre>
+    <p>The signature is <code>HMAC-SHA256</code> over <code>timestamp + "." + raw_body</code>, using your endpoint's secret, hex encoded. Sign the timestamp as well as the body, and reject anything older than a few minutes, or an old capture can be replayed against you forever.</p>
+    <pre class="legal-pre">const crypto = require('crypto');
+
+function verify(rawBody, headers, secret) {
+  const ts  = headers['x-powerboard-timestamp'];
+  const sig = (headers['x-powerboard-signature'] || '').replace(/^v1=/, '');
+  if (Math.abs(Date.now() / 1000 - Number(ts)) &gt; 300) return false;
+
+  const expected = crypto.createHmac('sha256', secret)
+                         .update(ts + '.' + rawBody).digest('hex');
+  // Constant time. A plain === leaks the answer through timing.
+  const a = Buffer.from(sig, 'hex'), b = Buffer.from(expected, 'hex');
+  return a.length === b.length &amp;&amp; crypto.timingSafeEqual(a, b);
+}</pre>
+    <h3>Retries</h3>
+    <p>Five attempts, at roughly 1, 5, 25 and 125 minute intervals, then the delivery is marked dead. An endpoint that fails five times in a row is disabled automatically.</p>
+    <p>Deliveries are idempotent: one event produces one delivery per endpoint, and a retry reuses the same <code>X-PowerBoard-Delivery</code> value. Deduplicate on that id, because a network failure can mean you received something we recorded as failed.</p>
+  </section>
+
+  <section class="legal-section" id="s12">
+    <h2><span class="sec-num">12</span> What the API Will Not Do</h2>
+    <ul class="legal-list">
+      <li>It will not return another account's or another Workspace's data, under any key.</li>
+      <li>It will not return private notes without <code>notes:read</code>.</li>
+      <li>It will not act as a bulk export of the research dataset. Rate limits and page caps apply, and Section 20 of the Terms governs use.</li>
+      <li>It will not return a computed metric without the denominator that makes it interpretable.</li>
+    </ul>
+  </section>
+
+  <div class="legal-footer-links">
+    <a href="../">Return to The VC Power Board</a>
+    <a href="../terms/">Terms of Service</a>
+    <a href="../privacy/">Privacy Policy</a>
+  </div>
+
+</div>
+
+</body>
+</html>
