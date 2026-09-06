@@ -1,0 +1,75 @@
+# ============================================================
+# SYNC RESEARCH TO POSTGRES
+# Phase 7E. Goes in .github/workflows/sync_research.yml
+#
+# Projects data-*.js into the research_* tables so the API can filter,
+# page and search over real SQL. One direction only: this reads the
+# repository and writes the database, never the reverse.
+#
+# TWO SECRETS ARE REQUIRED, and the service role key is one of them.
+# Add them at Settings, Secrets and variables, Actions:
+#
+#     SUPABASE_URL
+#     SUPABASE_SERVICE_ROLE_KEY
+#
+# The service role key bypasses RLS entirely. It belongs in exactly
+# two places: this workflow's secrets, and nowhere else. It must never
+# reach a script the browser loads, the Edge Function, or a commit.
+# ============================================================
+
+name: Sync research to Postgres
+
+on:
+  push:
+    branches: [main]
+    # Only when the research itself changes. A CSS commit should not
+    # spend a sync, and more importantly should not put the database
+    # through a write it does not need.
+    paths:
+      - 'scripts/data-firms.js'
+      - 'scripts/data-partners*.js'
+      - 'scripts/data-companies*.js'
+      - 'scripts/data-funds.js'
+      - 'scripts/data-deals.js'
+      - 'scripts/taxonomy.js'
+      - 'tools/sync-research.js'
+  # So a failed run can be retried without an empty commit.
+  workflow_dispatch:
+
+# One at a time. Two concurrent syncs would interleave upserts and
+# deletes against the same tables, and the delete pass of an older run
+# could remove rows a newer run had just added.
+concurrency:
+  group: sync-research
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sync
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node tools/sync-research.js
+
+      # A sync that half-finished is worse than one that failed loudly,
+      # so the recorded counts are read back and printed. The job does
+      # not pass silently on a partial write.
+      - name: Report what landed
+        if: always()
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          curl -s \
+            -H "apikey: $SUPABASE_SERVICE_ROLE_KEY" \
+            -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" \
+            "$SUPABASE_URL/rest/v1/research_sync?select=table_name,row_count,synced_at&order=table_name"
