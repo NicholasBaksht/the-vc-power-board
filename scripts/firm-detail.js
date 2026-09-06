@@ -244,6 +244,7 @@ ${renderWhyThisVC(firm)}
       ${renderGenome(firm)}
       ${renderPerformanceDashboard(firm)}
       ${typeof renderFirmFunds === 'function' ? renderFirmFunds(firm) : ''}
+      ${typeof renderFirmOutcomes === 'function' ? renderFirmOutcomes(firm) : ''}
       ${renderGeographicHeatmap(firm)}
       ${leadershipHTML}
       ${timelineHTML}
