@@ -129,6 +129,14 @@ const PBA_EVENTS = [
   'pipeline_priority_set',
   'pipeline_intro_source_set',
   'pipeline_target_opened',
+  /* Phase 4E: activities and next actions. Action text, meeting
+     titles and attendee names are NEVER sent - only that a meeting
+     was logged, an action created, an action completed. */
+  'pipeline_next_action_created',
+  'pipeline_next_action_completed',
+  'pipeline_next_action_cleared',
+  'pipeline_meeting_logged',
+  'pipeline_activity_logged',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
