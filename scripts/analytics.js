@@ -165,6 +165,12 @@ const PBA_EVENTS = [
      a specific investor is exactly the thing not to record. */
   'power_map_opened',
   'coinvestor_evidence_opened',
+  /* Phase 6E. That the founder opened their own raise analytics and
+     moved between sections. Never the raise, the amount, the stage
+     counts, or any investor: this page is about one person's private
+     pipeline and none of it leaves the browser. */
+  'raise_analytics_opened',
+  'raise_analytics_section_changed',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
