@@ -312,3 +312,89 @@
   .pl-stat-n { font-size: 16px; }
   .pl-count { margin-left: 0; width: 100%; }
 }
+
+/* ---- Tags, priority and the detail panel (Phase 4D) ---- */
+
+.pl-tag {
+  display: inline-block; margin: 0 4px 2px 0; padding: 2px 6px;
+  border: 1px solid var(--hairline-strong); border-radius: 3px;
+  font: 500 11px/1.3 var(--sans); color: var(--ink-dim); background: var(--bg);
+}
+.pl-tags { max-width: 190px; }
+
+/* Priority is a small mark, not a coloured row. A pipeline where four
+   rows are shouting is a pipeline nobody scans. */
+.pl-pri {
+  display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  margin-right: 7px; vertical-align: middle; flex: 0 0 auto;
+}
+.pl-pri-high   { background: var(--accent); }
+.pl-pri-medium { background: var(--ink-muted); }
+.pl-pri-low    { background: var(--hairline-strong); }
+
+.pd-panel { max-width: 620px; }
+.pd-head { display: flex; gap: 10px; align-items: center; margin-bottom: 4px; }
+.pd-type, .pd-stage {
+  font: 600 9.5px/1 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+  padding: 3px 6px; border-radius: 3px;
+  background: var(--surface-raised); color: var(--ink-muted);
+}
+.pd-stage { background: var(--accent-pale); color: var(--accent-bright); }
+
+.pd-sec { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--hairline); }
+.pd-sec:first-of-type { border-top: 0; padding-top: 0; }
+.pd-h {
+  font: 600 10px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-muted); margin: 0 0 12px;
+}
+.pd-empty { font: 400 13px/1.5 var(--sans); color: var(--ink-muted); margin: 0; max-width: 56ch; }
+
+.pd-contacts { list-style: none; margin: 0; padding: 0; }
+.pd-contacts li {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px;
+  padding: 8px 0; border-bottom: 1px solid var(--hairline);
+  font: 400 13.5px/1.4 var(--sans);
+}
+.pd-contacts li:last-child { border-bottom: 0; }
+.pd-contacts a { font-weight: 600; color: var(--ink); text-decoration: none; }
+.pd-contacts a:hover { color: var(--accent-bright); }
+.pd-title { color: var(--ink-muted); font-size: 12.5px; }
+.pd-primary {
+  font: 600 9px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent-bright); background: var(--accent-pale);
+  padding: 3px 5px; border-radius: 3px;
+}
+
+.pd-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.pd-tag {
+  display: inline-flex; align-items: center; gap: 6px; padding: 3px 6px 3px 8px;
+  border: 1px solid var(--hairline-strong); border-radius: 3px;
+  font: 500 12px/1.3 var(--sans); color: var(--ink);
+}
+.pd-tag button {
+  background: none; border: 0; padding: 0; cursor: pointer; line-height: 1;
+  color: var(--ink-muted); font-size: 13px;
+}
+.pd-tag button:hover { color: var(--red); }
+.pd-tag button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pd-tagadd { display: flex; gap: 8px; align-items: center; }
+.pd-tagadd input { flex: 1 1 auto; min-width: 0; }
+
+.pd-notes { list-style: none; margin: 16px 0 0; padding: 0; }
+.pd-note { padding: 12px 0; border-bottom: 1px solid var(--hairline); }
+.pd-note:last-child { border-bottom: 0; }
+.pd-note-body {
+  font: 400 13.5px/1.6 var(--sans); color: var(--ink);
+  white-space: pre-wrap; word-break: break-word; max-width: 62ch;
+}
+.pd-note-foot {
+  display: flex; align-items: baseline; gap: 14px; margin-top: 7px;
+  font: 400 11.5px/1 var(--sans); color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+.pd-err { margin-top: 12px; font: 500 13px/1.5 var(--sans); color: var(--red); }
+.pd-err:empty { display: none; }
+
+@media (max-width: 640px) {
+  .pl-tags { max-width: 130px; }
+}
