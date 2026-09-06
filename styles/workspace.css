@@ -203,3 +203,23 @@
   color: var(--accent);
 }
 .wr-note-vis.is-private { color: var(--ink-muted); }
+
+/* ---------- shared discovery (7D) ---------- */
+
+/* Every saved object says whose it is, right where it is listed. The
+   failure this phase risks is editing something you think is yours
+   and changing it for four other people. */
+.wd-scope {
+  font: 600 9.5px/1 var(--mono); letter-spacing: .07em; text-transform: uppercase;
+  color: var(--accent);
+}
+.wd-scope.is-personal { color: var(--ink-muted); }
+
+.wd-sub {
+  display: inline-flex; align-items: center; gap: 7px;
+  font: 400 12.5px/1.4 var(--sans); color: var(--ink-dim); cursor: pointer;
+}
+.wd-sub input { accent-color: var(--accent); }
+.wd-sub input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wd-note { font: 400 12px/1.5 var(--sans); color: var(--ink-muted); }
