@@ -370,6 +370,12 @@ function renderCapitalSource(slug) {
       'was last checked against its sources on ' + csEsc(e.lastChecked) + '.</p>' : '') +
     '</details>';
 
+  /* Phase 5F built this panel and only the partner page called it.
+     Three angels clear the three-outcome floor; everyone else
+     renders nothing, which is the correct result rather than an
+     empty section. */
+  if (typeof renderAngelOutcomes === 'function') h += renderAngelOutcomes(slug);
+
   h += '</div>';
   host.innerHTML = h;
 }
