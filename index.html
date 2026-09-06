@@ -72,6 +72,7 @@
 <link rel="stylesheet" href="styles/analytics-view.css">
 <link rel="stylesheet" href="styles/raise-analytics.css">
 <link rel="stylesheet" href="styles/export.css">
+ <link rel="stylesheet" href="styles/workspace.css">
 <link rel="stylesheet" href="styles/power-map.css">
 
 </head>
@@ -117,6 +118,7 @@
   <a href="#alerts" class="pb-alerts-btn" aria-label="Power Alerts" title="Power Alerts"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.7 21a2 2 0 0 1-3.4 0"></path></svg></a>
   <a href="#raise" class="pb-raise-btn" aria-label="My Raise" title="My Raise"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4"></circle><line x1="12" y1="1" x2="12" y2="4"></line></svg></a>
   <div class="pb-header-actions">
+       <span class="ws-switcher" id="wsSwitcher" hidden></span>
     <a href="#signin" class="pb-signin">Sign in</a>
     <a href="#find-investors" class="pb-cta">Find your investors</a>
   </div>
@@ -315,6 +317,7 @@
 <div id="sectorReportView" style="display: none;"></div>
 <div id="familyTreeView" style="display: none;"></div>
 <div id="ecosystemGraphView" style="display: none;"></div>
+<div id="workspacesView" style="display: none;"></div>
 <div id="exportView" style="display: none;"></div>
 <div id="powerMapView" style="display: none;"></div>
 <div id="raiseAnalyticsView" style="display: none;"></div>
@@ -584,6 +587,7 @@
 <script src="scripts/add-to-raise.js"></script>
 <script src="scripts/companies-index.js"></script>
 <script src="scripts/export-core.js"></script>
+<script src="scripts/workspace.js"></script>
  <script src="scripts/export-center.js"></script>
 <script src="scripts/power-map.js"></script>
 <script src="scripts/partner-behavior.js"></script>
