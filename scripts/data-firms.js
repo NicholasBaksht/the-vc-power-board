@@ -12013,5 +12013,626 @@ holdings: []
       { year: "2023", event: "Portfolio company Soylent was acquired by Starco Brands." }
     ],
     holdings: []
+  },
+
+  /* ---- Firm batch 1, added 6 September 2026: 20 firms. Their partner
+     records are in data-partners-6.js and their field-level provenance
+     is in data-evidence.js, added in the same batch. Checked against all
+     441 pre-existing firms for slug, name, historical-name and parent-brand
+     collisions before insertion; none found. ---- */
+  {
+    rank: null,
+    name: "Animoca Brands",
+    sectors: ["Gaming", "Web3", "Blockchain", "Infrastructure", "Consumer", "Media"],
+    signatureExit: null,
+    slug: "animoca-brands",
+    website: "https://www.animocabrands.com",
+    short: "Animoca Brands",
+    founded: 2014,
+    hq: "Hong Kong",
+    aum: null,
+    thesis: "Animoca Brands is primarily an OPERATING COMPANY that also invests, not a venture firm. Its own site describes it as \"a global digital assets leader building and investing in impactful technologies and ecosystems to reimagine future economies\" and as \"an active ecosystem architect\" that moves \"beyond traditional investment to build and accelerate consumer and institutional projects\". It builds and operates products and platforms in its own right, including The Sandbox, Moca Network, Open Campus, Anichess, NUVA, Anchorpoint Financial and Minds by Animoca Brands, and it reported US$280 million of bookings and US$246 million of operating expenses for the twelve months ended 31 December 2023. Alongside that operating business it runs one of the larger investment programmes in its sector, stated on its own investment overview page as \"600+ high-growth portfolio companies across 20+ verticals\" grouped under five headings: Web2, Infrastructure, Gaming, RWA and Culture. Its portfolio page shows that it holds limited partnership interests in other funds as well as direct company positions. Investing is carried out under named vehicles as well as by the parent: the company's own leadership page describes Robby Yung as \"CEO of investments\" and \"partner at Animoca Capital\", and a 2024 PR Newswire release describes a \"strategic investment from Animoca Capital\". A separate site, animoca.ventures, describes itself in its page metadata as \"The venture investment arm of Animoca Brands\". The company's own boilerplate describes the portfolio as \"over 600 companies and altcoin assets\", so a substantial part of it is token positions rather than equity.",
+    leadership: [
+      { name: "Yat Siu", role: "Co-Founder, Executive Chairman, and Managing Director", profileSlug: "yat-siu" },
+      { name: "Evan Auyang", role: "Group President", profileSlug: "evan-auyang" },
+      { name: "Brian Chan", role: "Chief Development Officer", profileSlug: "brian-chan" },
+      { name: "Minh Do", role: "Chief Operating Officer", profileSlug: "minh-do" },
+      { name: "Shaun Kraft", role: "Chief Financial Officer", profileSlug: "shaun-kraft" },
+      { name: "Jamii Quoc", role: "General Counsel", profileSlug: "jamii-quoc" },
+      { name: "Robby Yung", role: "CEO of Investments", profileSlug: "robby-yung" },
+      { name: "Chris Whiteman", role: "Non-Executive Director", profileSlug: "chris-whiteman" },
+      { name: "John Madden", role: "Non-Executive Director and Company Secretary", profileSlug: "john-madden" }
+    ],
+    timeline: [
+      { year: "2014", event: "Animoca Brands is created as a company incubated by Outblaze, per Yat Siu's biography on the company's own leadership page." },
+      { year: "2015", event: "Animoca Brands Corporation Limited is admitted to the Australian Securities Exchange under the code AB1 (Wikipedia gives 23 January 2015); the company's own leadership page records that Robby Yung became its first CEO \"after taking the group public in 2015\"." },
+      { year: "2018", event: "Animoca Brands Limited is issued up to 25 million fully paid ordinary shares in iCandy Interactive Limited (ASX: ICI) following approval by iCandy shareholders on 24 May 2018." },
+      { year: "2020", event: "ASX removes Animoca Brands Corporation Limited (AB1) from the Official List on 9 March 2020, stating that the company \"lacks adequate resources, systems and controls to comply with its obligations under the Listing Rules\". The company has been unlisted ever since." },
+      { year: "2024", event: "Animoca Brands publishes an investor update for the fiscal year ended 31 December 2023 on 10 July 2024, reporting US$280 million of bookings, US$246 million of operating expenses, US$175 million of cash and stablecoin balances, US$203 million of digital assets on balance sheet and over 450 portfolio companies." },
+      { year: "2025", event: "Currenc Group Inc. (Nasdaq: CURR) and Animoca Brands Corporation Limited announce a non-binding term sheet for a proposed reverse merger on 3 November 2025, under which Animoca Brands shareholders would hold approximately 95 per cent of the merged company." },
+      { year: "2026", event: "Republic launches tokenization of Animoca Brands equity on Solana, announced 5 May 2026." },
+      { year: "2026", event: "Currenc Group announces on 6 May 2026 that the exclusivity period for the proposed reverse merger has been extended to 30 June 2026; the transaction remained a non-binding term sheet at that date." },
+      { year: "2026", event: "Alpha Compute Corp (Nasdaq: ALP, formerly AlphaTON Capital Corp) completes its majority acquisition of Animoca Brands subsidiary GAMEE on 27 May 2026 for US$1.5 million in cash and approximately US$2 million in Alpha Compute shares and pre-funded warrants." },
+      { year: "2026", event: "Animoca Brands announces key executive appointments on 2 June 2026: Shaun Kraft becomes Chief Financial Officer effective 11 June 2026, Brian Chan becomes Chief Development Officer, Jared Shaw moves from Chief Financial Officer to a strategic advisory role and Alan Lau moves from Chief Business Officer to Chairman of GROW Digital Wealth." },
+      { year: "2026", event: "Animoca Brands releases its FY2023 annual report on 17 July 2026." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Artesian Venture Partners",
+    sectors: ["Food & Agriculture", "Healthcare", "Climate", "Defense Tech", "AI", "Autonomy", "Infrastructure", "Deep Tech"],
+    signatureExit: null,
+    slug: "artesian-vc",
+    website: "https://www.artesianinvest.com",
+    short: "Artesian",
+    founded: 2004,
+    hq: "Sydney, Australia",
+    aum: "$1.5B (firm homepage, 2026; Debt $815M and Venture $660M - the site prints no currency code, so the currency is unresolved and no conversion has been applied)",
+    thesis: "Artesian describes itself as a global alternative asset manager specialising in debt and venture capital. Its venture business is carried on by Artesian Venture Partners Pty Ltd (ACN 112 089 488), which holds Australian Financial Services Licence No. 284492 and is owned by Artesian Capital Management Pty Ltd (ACN 136 833 192), a corporate authorised representative (No. 339915) of Artesian Funds Management Pty Ltd (ACN 089 486 445, AFSL No. 259457). The firm states it backs ventures across six investment themes - Agrifood, Health, Climate and Energy, Defence, AI and Autonomy, and Frontier - and reports 600+ ventures backed. Alongside its own funds it runs a Venture Capital as a Service (VCaaS) business, established in 2019, which operates sole-limited-partner venture mandates for institutions and government-linked programmes, including the South Australian Venture Capital Fund, GrainInnovate for the GRDC with GrainCorp, SproutX, and mandates announced in 2025 for Hort Innovation, the Western Australia Government and HBF. The firm reports 9 offices across 5 countries - Adelaide, Austin, London, Melbourne, New York, Perth, Shanghai, Singapore and Sydney - and 43 people. It states it is a certified B Corporation and a PRI signatory.",
+    leadership: [
+      { name: "Jeremy Colless", role: "Partner & CEO", profileSlug: "jeremy-colless" },
+      { name: "Matt Clunies-Ross", role: "Partner & CIO ACM", profileSlug: "matt-clunies-ross" },
+      { name: "John McCartney", role: "Partner, Debt & VC Americas", profileSlug: "john-mccartney" },
+      { name: "Ali Clunies-Ross", role: "Partner & Co-Head of VC", profileSlug: "ali-clunies-ross" },
+      { name: "Rohan Gray", role: "Partner & Co-Head of VC", profileSlug: "rohan-gray" },
+      { name: "Mei Lee", role: "Partner, Head of Ops", profileSlug: "mei-lee" }
+    ],
+    timeline: [
+      { year: "2004", event: "Artesian founded by Jeremy Colless, Matt Clunies-Ross and John McCartney, spun out of ANZ Banking Group's Capital Markets business, launching a credit-arbitrage hedge fund with offices in Sydney, Melbourne, New York and London." },
+      { year: "2010", event: "Expansion into venture capital with proprietary seed investments across Asia-Pacific including China, and first external VC funds investing in startups emerging from accelerators, incubators, university programs and angel groups." },
+      { year: "2016", event: "Hostplus commits as the first Australian superannuation fund to invest in Artesian venture, and Artesian launches what it describes as Australia's first climate and clean energy seed fund with CEFC, Australian Ethical and Future Super as cornerstone investors." },
+      { year: "2019", event: "Sole-LP venture fund model launched in Australia with the South Australian VC Fund and GrainInnovate for the GRDC, and Venture Capital as a Service (VCaaS) established as venture infrastructure for institutional mandates." },
+      { year: "2023", event: "Female Leaders Fund launched with Hostplus and Legalsuper as cornerstone investors." },
+      { year: "2025", event: "New sole-LP venture capital mandates announced for Hort Innovation, the Western Australia Government and HBF." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "CDP Venture Capital Sgr S.p.A.",
+    sectors: ["AI", "Cybersecurity", "Agritech", "Clean Energy", "Space", "Healthcare", "Life Sciences", "Industrial Tech", "Infrastructure", "Mobility"],
+    signatureExit: null,
+    slug: "cdp-venture-capital",
+    website: "https://www.cdpventurecapital.it",
+    short: "CDP Venture Capital",
+    founded: 2020,
+    hq: "Rome, Italy",
+    aum: "€4.9B (stated as \"Asset Under Management\" on cdpventurecapital.it, 2026)",
+    thesis: "CDP Venture Capital Sgr S.p.A. is an Italian regulated asset management company (societa di gestione del risparmio, SGR), entered on the Albo dei gestori di FIA at number 59. It is owned 70% by CDP Equity, the holding company of the Cassa Depositi e Prestiti group, and 30% by Invitalia. Its stated purpose is to support the infrastructure of Italian venture capital through investments in new companies at pre-seed, seed, early stage and late stage, and through investments in venture capital funds managed by third parties. It therefore operates as all three of an SGR, a direct investor and a fund-of-funds: the firm's own site reports 15 direct and indirect funds, 47 third-party-manager funds in its portfolio, 20 programmes across a national accelerator network and 6 national technology transfer hubs. Its stated priority sectors for 2024-2028 are AI and cybersecurity, agrifoodtech, cleantech, spacetech, healthcare and life science, industrytech, and infratech and mobility. The firm describes itself on its strategy page as the largest venture capital operator in Italy. Offices are in Rome (Piazza Giuseppe Verdi 10) and Milan (Via S. Marco 21/A).",
+    leadership: [
+      { name: "Anna Lambiase", role: "Presidente", profileSlug: "anna-lambiase" },
+      { name: "Emanuele Levi", role: "Amministratore Delegato e Direttore Generale", profileSlug: "emanuele-levi" },
+      { name: "Alessandro Scortecci", role: "Direttore Investimenti Diretti", profileSlug: "alessandro-scortecci" },
+      { name: "Cristina Bini", role: "Direttore Investimenti Indiretti", profileSlug: "cristina-bini" }
+    ],
+    timeline: [
+      { year: "2020", event: "On 21 January 2020 the shareholders' meeting of Invitalia Ventures SGR (70% CDP Equity, 30% Invitalia) changed the company name to CDP Venture Capital Sgr S.p.A., appointed a new board and named Francesca Bria President and Enrico Resmini Chief Executive Officer and General Manager; the company is also referred to as Fondo Nazionale Innovazione." },
+      { year: "2025", event: "On 30 May 2025 Emanuele Levi was appointed Amministratore Delegato e Direttore Generale of CDP Venture Capital Sgr S.p.A., having resigned from 360 Capital." }
+    ],
+    holdings: [
+      { name: "Genenta Science S.p.A.", ticker: "GNTA", historicalPrice: null, price: null },
+      { name: "Vection Technologies Ltd", ticker: "VR1.AX", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Coinbase Ventures",
+    sectors: ["Crypto", "Blockchain", "Web3", "DeFi", "Infrastructure", "Developer Tooling", "Fintech"],
+    signatureExit: null,
+    slug: "coinbase-ventures",
+    website: "https://www.coinbase.com/ventures",
+    short: "Coinbase Ventures",
+    founded: 2018,
+    hq: "New York, NY",
+    aum: null,
+    thesis: "Coinbase Ventures is the corporate venture arm of Coinbase Global, Inc. (Nasdaq: COIN). Its own page states that it backs entrepreneurs \"working to advance the crypto/Web3 ecosystem and support Coinbase's mission of creating more economic freedom for the world\", and that it invests \"broadly across all categories within the cryptoeconomy\", listing layer 1 protocols, Web3 infrastructure, centralized on-ramps, decentralized finance, NFTs, metaverse technologies and developer tooling. Global Venturing reported in June 2025 that the unit \"invests off the Coinbase balance sheet\" rather than from a limited-partner fund, that it began in 2018 as an experimental effort staffed by Coinbase volunteers, and that it has since made more than 500 investments in nearly 50 countries. Fortune reported in October 2024 that initial investments typically range from US$1 million to US$5 million. Its 25 November 2025 outlook post names four areas for 2026: RWA perpetuals; specialized exchanges and trading terminals; next-generation DeFi; and AI and robotics. A related vehicle, the Base Ecosystem Fund, is described on base.org as investing in pre-seed and seed startups building on Base \"in partnership with Coinbase Ventures\".",
+    leadership: [
+      { name: "Hoolie Tejwani", role: "Head of Coinbase Ventures", profileSlug: "hoolie-tejwani" }
+    ],
+    timeline: [
+      { year: "2018", event: "Coinbase announces the formation of Coinbase Ventures in a company blog post by Emilie Choi dated 5 April 2018." },
+      { year: "2021", event: "Parent company Coinbase Global, Inc. begins trading on Nasdaq under the ticker COIN; Coinbase Ventures invests this parent's balance sheet and is not itself a listed or separately capitalised entity." },
+      { year: "2023", event: "Coinbase announces the Base Ecosystem Fund on 23 February 2023 alongside the launch of the Base network; base.org describes the fund as investing in partnership with Coinbase Ventures." },
+      { year: "2025", event: "Global Venturing reports on 17 June 2025 that Coinbase Ventures has made more than 500 investments in nearly 50 countries and invests off the Coinbase balance sheet." },
+      { year: "2025", event: "Coinbase Ventures publishes \"Ideas we are excited for in 2026\" on 25 November 2025, bylined \"Coinbase Ventures Team\" with contributions attributed to four named individuals." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Everywhere Ventures",
+    sectors: ["Pre-Seed", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "everywhere-ventures",
+    website: "https://www.everywhere.vc",
+    short: "Everywhere",
+    founded: 2018,
+    hq: "New York, NY",
+    aum: "$100M (stated as \"$100M ASSETS UNDER MANAGEMENT\" on everywhere.vc, 2026)",
+    thesis: "Everywhere Ventures describes itself on its own homepage as \"A global pre-seed venture capital fund for founders, by founders\" and states that it invests \"$250k into pre-seed rounds.\" The homepage displays four figures: \"$100M ASSETS UNDER MANAGEMENT\", \"500 Founder LPs\", \"300 Portfolio Companies\" and \"INVESTED ACROSS 30 COUNTRIES\". The firm was previously named The Fund, and its April 2023 rebrand post says it is \"a fund made up of founders and operators\" and names London, LA, Denver, Chicago, Austin and Sydney among the founder communities it serves. Its most recent fund vehicle, Everywhere Ventures III, LP, is described in its SEC Form D as a Venture Capital Fund.",
+    leadership: [
+      { name: "Jenny Fielding", role: "Co-Founder & General Partner", profileSlug: "jenny-fielding" },
+      { name: "Scott Hartley", role: "Co-Founder & General Partner", profileSlug: "scott-hartley" },
+      { name: "Anna Barber", role: "General Partner", profileSlug: "anna-barber" }
+    ],
+    timeline: [
+      { year: "2018", event: "The firm is founded as The Fund, with $3.5 million in initial capital." },
+      { year: "2023", event: "The firm announces its rebrand from The Fund to Everywhere Ventures in a post titled \"The Fund is Now Everywhere\" published on its own site on 5 April 2023." },
+      { year: "2026", event: "Anna Barber joins as a third general partner, announced by the firm on 25 February 2026." },
+      { year: "2026", event: "A Form D for Everywhere Ventures III, LP and QP-Everywhere Ventures III, LP is filed with the SEC on 11 March 2026, signed by Jenny Fielding on 10 March 2026, reporting a $25,000,000 offering with $4,425,000 sold to 19 investors." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Global Brain Corporation",
+    sectors: ["Fintech", "Blockchain", "Healthcare", "AI", "Enterprise", "Commerce", "Climate", "IoT", "Agritech", "Foodtech", "Mobility", "Space"],
+    signatureExit: "Timee, Inc. (IPO, Tokyo Stock Exchange Growth Market, 26 July 2024)",
+    slug: "global-brain",
+    website: "https://globalbrains.com/en",
+    short: "Global Brain",
+    founded: 1998,
+    hq: "Tokyo, Japan",
+    aum: "$2.7B+ (the firm's own AUM figure, 2026; the Japanese site prints 運用総額 ¥400B+)",
+    thesis: "Global Brain describes itself as an independent venture capital firm that aims to bring new industries to society through hands-on support for startups and open innovation with large corporations. It states that it invests in startups from seed to later stage in various fields, with an investment range of JPY 30M to JPY 5B, and says it can decide and execute an investment in one month at the earliest. Its stated geographic coverage is startups worldwide with a focus on Asia including Japan, North America and Europe, and it reports a portfolio split of Japan 56.3 percent, USA 17.2 percent, Asia 10.9 percent, Europe 7.8 percent and others 7.8 percent. Alongside its own flagship fund series, the firm states that it manages corporate venture capital funds and co-investment vehicles on behalf of Japanese corporates as general partner, naming among others KDDI, Mitsui Fudosan, Sony Financial Ventures, Yamato Holdings, SEIKO EPSON, The Norinchukin Bank, Kirin Holdings, JGC Group, Mitsubishi Electric, TOKYU CONSTRUCTION, Mitsui Chemicals, Meiji Yasuda Life Insurance Company, Shimadzu Corporation, Fukoku Mutual Life Insurance Company, SMBC Group, Canon Marketing Japan, Kyocera, ANA HOLDINGS, Niterra and TOHO HOLDINGS. It operates from Tokyo with further offices listed in Kyoto, San Francisco, New York, London, Berlin, Hong Kong, Bangalore, Seoul and Singapore.",
+    leadership: [
+      { name: "Yasuhiko Yurimoto", role: "General Partner, Founder / CEO", profileSlug: "yasuhiko-yurimoto" },
+      { name: "Isao Yasuda", role: "Senior Partner", profileSlug: "isao-yasuda" },
+      { name: "Akeo Ito", role: "Platform Group Managing Partner" },
+      { name: "Masamune Shin", role: "Platform Group Managing Partner" },
+      { name: "Shohei Hirota", role: "Platform Group Managing Partner" },
+      { name: "Ayu Shinoyama", role: "Corporate Management Group Managing Partner" },
+      { name: "Hiroshi Shimazu", role: "Corporate Management Group Managing Partner" },
+      { name: "Takahiro Mizuno", role: "Corporate Management Group Managing Partner" },
+      { name: "Harue Hayashi", role: "Fund Management Group Managing Partner" },
+      { name: "Noriko Usui", role: "Fund Management Group Managing Partner" }
+    ],
+    timeline: [
+      { year: "1998", event: "Global Brain Corporation is established in January 1998, per the firm's own company page." },
+      { year: "2012", event: "KDDI and Global Brain establish the KDDI Open Innovation Fund L.P., sized at 5.0 billion yen (planned) with Global Brain as fund manager, announced 1 February 2012; Global Brain describes it as its first corporate venture capital fund." },
+      { year: "2022", event: "Mitsubishi Electric and Global Brain launch the 5 billion yen ME Innovation Fund L.P. on 12 January 2022, with Global Brain as General Partner and Mitsubishi Electric as Limited Partner." },
+      { year: "2024", event: "Timee, Inc., which Global Brain names as a portfolio company, lists on the Tokyo Stock Exchange Growth Market on 26 July 2024 under securities code 215A." },
+      { year: "2024", event: "Global Brain announces on 6 December 2024 the final closing of Global Brain Flagship Fund IX at approximately JPY 32.5 billion." },
+      { year: "2025", event: "Axelspace Holdings, which Global Brain names as a portfolio company, lists on the Tokyo Stock Exchange Growth Market, announced by the firm on 13 August 2025." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Goodwater Capital",
+    sectors: ["Consumer Tech", "Fintech", "Healthcare", "Proptech", "Foodtech", "Transportation", "Education", "Media"],
+    signatureExit: null,
+    slug: "goodwater-capital",
+    website: "https://www.goodwatercap.com",
+    short: "Goodwater",
+    founded: 2014,
+    hq: "Burlingame, CA",
+    aum: "Over $5B (the firm's own press-release boilerplate, June 2026)",
+    thesis: "Goodwater Capital describes itself as a consumer-focused venture capital firm and as a \"next generation venture capital firm\" whose mission is to \"empower exceptional entrepreneurs who are changing the world.\" It states that it invests in consumer technology platforms and utilities that people cannot live without across housing, healthcare, food, financial services, transportation, education and entertainment, and it has described itself as 100% focused on consumer tech. It runs early stage and growth stage funds, and it publishes consumer research, including an annual US consumer survey. It operates from Burlingame, California.",
+    leadership: [
+      { name: "Chi-Hua Chien", role: "Co-Founder & Managing Partner", profileSlug: "chi-hua-chien" },
+      { name: "Eric Kim", role: "Co-Founder & Managing Partner", profileSlug: "eric-kim" }
+    ],
+    timeline: [
+      { year: "2014", event: "Goodwater Capital is founded by Chi-Hua Chien and Eric Kim; the first Form D for Goodwater Capital I, L.P. is filed with the SEC in 2014." },
+      { year: "2023", event: "On 25 July 2023 the firm announces it has raised over $1 billion across its family of early and growth stage funds and states it then managed over $3.3B in committed capital." },
+      { year: "2026", event: "On 8 June 2026 the firm releases its 2026 U.S. Consumer Survey and states in the release that it has over $5 billion in assets under management." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "GSR Ventures",
+    sectors: ["AI", "Enterprise Software", "Consumer Internet", "Consumer", "Healthtech"],
+    signatureExit: null,
+    slug: "gsr-ventures",
+    website: "https://gsrventuresglobal.com",
+    short: "GSR Ventures",
+    founded: 2004,
+    hq: "Beijing, China",
+    aum: "US$3.7B (firm homepage, \"Under Management $3.7B\" / 管理资本 37亿美元, 2026; the firm's About page gives a lower figure, over US$3.0B)",
+    thesis: "GSR Ventures, known in Chinese as 金沙江创业投资基金 or 金沙江创投, describes itself as a global investment firm focused on early stage technology companies. Its own sites state that it was founded in 2004, that it invests in early-stage companies developing AI-enabled enterprise software, consumer platforms and healthcare technology, and that it manages both US dollar and RMB funds. The homepage states eight USD funds and four RMB funds. It lists offices in Beijing, Hong Kong and Singapore.",
+    leadership: [
+      { name: "朱啸虎 (Allen Zhu)", role: "主管合伙人 / Managing Director", profileSlug: "allen-zhu" },
+      { name: "Carla Newell", role: "主管合伙人｜首席运营官 / Managing Director | COO", profileSlug: "carla-newell" },
+      { name: "丁健 (James Ding)", role: "主管合伙人 / Managing Director", profileSlug: "james-ding" },
+      { name: "林仁俊 (Richard Lim)", role: "主管合伙人 / Managing Director", profileSlug: "richard-lim" },
+      { name: "叶淑芬 (Ryann Yap)", role: "主管合伙人｜首席财务官 / Managing Director | CFO", profileSlug: "ryann-yap" },
+      { name: "陈斓杰 (Jefferson Chen)", role: "主管合伙人 / Managing Director", profileSlug: "jefferson-chen" },
+      { name: "江澜 (Daisy Jiang)", role: "合伙人 / Partner", profileSlug: "daisy-jiang" },
+      { name: "刘佳 (Jia Liu)", role: "合伙人 / Partner", profileSlug: "jia-liu" },
+      { name: "周雨桐 (Yutong Zhou)", role: "合伙人 / Partner", profileSlug: "yutong-zhou" },
+      { name: "蒋艺 (Miranda)", role: "合伙人 / Partner", profileSlug: "miranda-gsr" },
+      { name: "张金铭 (Jim)", role: "合伙人 / Partner", profileSlug: "jim-gsr" },
+      { name: "乔钦彧 (Kenway)", role: "合伙人 / Partner", profileSlug: "kenway-gsr" }
+    ],
+    timeline: [
+      { year: "2004", event: "GSR Ventures is founded, per the firm's own homepage ('创立于：2004年' and 'Founded In 2004')." },
+      { year: "2019", event: "A US subsidiary is set up under the name GSR Ventures US, per Sina Tech's 17 March 2025 report." },
+      { year: "2025", event: "In March 2025 the US business is presented publicly under the separate brand Informed Ventures; Allen Zhu is quoted saying '不是分拆，分开品牌避免误解' (not a split, separating the brands to avoid misunderstanding)." }
+    ],
+    holdings: [
+      { name: "Horizon Robotics", ticker: "9660.HK", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "HSG",
+    sectors: ["Technology", "Healthcare", "Consumer"],
+    signatureExit: null,
+    slug: "hsg",
+    website: "https://www.hsgcap.com",
+    short: "HSG",
+    founded: 2005,
+    hq: "Hong Kong, China",
+    aum: "Over US$61B (assets for institutional investors as of 30 June 2026, per hsgcap.com/about-us)",
+    thesis: "HSG describes itself on its own About Us page as a venture capital and private equity firm, formerly known as Sequoia China, investing globally across technology, healthcare and consumer sectors. Its Chinese-language site describes the same three areas as 科技, 医疗 and 消费, and lists its investment stages as seed-stage, growth-stage, buyout, new-infrastructure and public-market investing (种子期投资, 成长期投资, 并购投资, 新基建投资, 公开市场投资). The firm states it has backed more than 1,800 companies, that over 190 of them have gone public and that over 140 have become unicorns. It states offices in Hong Kong, Shanghai, Beijing, Shenzhen, London, Tokyo and Singapore.",
+    leadership: [
+      { name: "Neil Shen (沈南鹏)", role: "红杉中国创始及执行合伙人 (Founding and Managing Partner)", profileSlug: "neil-shen" },
+      { name: "Eva Ip (叶小慧)", role: "合伙人及首席财务官 (Partner and Chief Financial Officer)", profileSlug: "eva-ip" },
+      { name: "Robert Zhang (张联庆)", role: "合伙人及总法律顾问 (Partner and General Counsel)", profileSlug: "robert-zhang" },
+      { name: "Steve Jia (贾沁)", role: "合伙人，并购业务 (Partner, Head of Buyout)", profileSlug: "steve-jia" },
+      { name: "Chris Miao (缪海源)", role: "合伙人，人力资本负责人 (Partner, Head of Human Capital)", profileSlug: "chris-miao" }
+    ],
+    timeline: [
+      { year: "2005", event: "Sequoia Capital China is founded; HSG's own About Us page dates the firm's founding to 2005, and Wikipedia records Neil Shen and Zhang Fan as co-founders." },
+      { year: "2022", event: "Sequoia China raises about $9 billion across four funds for technology and healthcare investment, reported 5 July 2022." },
+      { year: "2023", event: "On 6 June 2023 Sequoia Capital announces a three-way separation into Sequoia Capital (US and Europe), Peak XV Partners (India and Southeast Asia) and HongShan (China), to take effect by March 2024." },
+      { year: "2024", event: "HongShan is reported to have closed a renminbi-denominated fund of about $2.5 billion in March 2024, backed in part by Chinese state and insurance capital." },
+      { year: "2025", event: "On 19 December 2025 HSG announces an investment in the Italian brand Golden Goose alongside Temasek and Permira." },
+      { year: "2026", event: "HSG states on its About Us page that it manages over US$61 billion in assets for institutional investors as of 30 June 2026." }
+    ],
+    holdings: [
+      { name: "Alibaba Group Holding Ltd", ticker: "BABA", historicalPrice: null, price: null },
+      { name: "JD.com, Inc.", ticker: "JD", historicalPrice: null, price: null },
+      { name: "PDD Holdings Inc.", ticker: "PDD", historicalPrice: null, price: null },
+      { name: "XPeng Inc.", ticker: "XPEV", historicalPrice: null, price: null },
+      { name: "NIO Inc.", ticker: "NIO", historicalPrice: null, price: null },
+      { name: "Zai Lab Limited", ticker: "ZLAB", historicalPrice: null, price: null },
+      { name: "Futu Holdings Limited", ticker: "FUTU", historicalPrice: null, price: null },
+      { name: "Full Truck Alliance Co. Ltd", ticker: "YMM", historicalPrice: null, price: null },
+      { name: "KE Holdings Inc. (Beike)", ticker: "BEKE", historicalPrice: null, price: null },
+      { name: "ZTO Express (Cayman) Inc.", ticker: "ZTO", historicalPrice: null, price: null },
+      { name: "Amer Sports, Inc.", ticker: "AS", historicalPrice: null, price: null },
+      { name: "Roivant Sciences Ltd.", ticker: "ROIV", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Icehouse Ventures",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "icehouse-ventures",
+    website: "https://www.icehouseventures.co.nz",
+    short: "Icehouse Ventures",
+    founded: 2019,
+    hq: "Auckland, New Zealand",
+    aum: "NZ$454M (total funds under management, January 2025, per RNZ; New Zealand dollars, no conversion applied)",
+    thesis: "Icehouse Ventures is a New Zealand venture investor that backs Kiwi-founded technology companies from angel and pre-seed stage through to late stage. Its own site states that since 2003 it has invested over $800m into 390+ Kiwi-founded companies, that it operates a co-investor network of more than 3,000 investors, and that it runs a suite of funds rather than a single vehicle. It describes itself as New Zealand's most active venture investor. It does not publish a list of target sectors, so the sectors array is left empty rather than being inferred from its portfolio.",
+    leadership: [
+      { name: "Robbie Paul", role: "CEO", profileSlug: "robbie-paul" },
+      { name: "Jack McQuire", role: "Partner", profileSlug: "jack-mcquire" },
+      { name: "Barnaby Marshall", role: "Partner", profileSlug: "barnaby-marshall" },
+      { name: "Jo Wickham", role: "Partner", profileSlug: "jo-wickham" },
+      { name: "Jason Wang", role: "Partner", profileSlug: "jason-wang" }
+    ],
+    timeline: [
+      { year: "2003", event: "Ice Angels, described by the firm as New Zealand's first angel network, is formed; the firm's About page dates its own origins to this event." },
+      { year: "2013", event: "The firm raises its first fund." },
+      { year: "2019", event: "Icehouse Ventures is launched as the investment arm of The Icehouse, bringing together the Ice Angels and ArcAngels investor networks, Tuhua Ventures, Eden Ventures, First Cut Ventures, a variety of passive funds and the Flux Accelerator, with $3m of investment from Simplicity KiwiSaver, FNZC and Sir Stephen Tindall's K1W1 and a further $1m from angel investors in its community." },
+      { year: "2025", event: "Growth Fund II closes at NZ$122M, which RNZ reports on 30 January 2025 brings total funds under management at Icehouse Ventures to NZ$454M." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "K5 Global",
+    sectors: ["Technology", "Media", "Healthcare", "Life Sciences", "Consumer"],
+    signatureExit: null,
+    slug: "k5-global",
+    website: "https://www.k5global.com",
+    short: "K5",
+    founded: 2018,
+    hq: "Miami Beach, FL",
+    aum: null,
+    thesis: "K5 Global's own site states that it is \"an investment firm that partners with founders and operators across the business lifecycle\" and that \"The firm, founded in 2018 by Michael Kives and Bryan Baum, invests across sectors and funding stages, from inception to IPO and beyond.\" It states that \"The firm operates Early-Stage, Growth and pre-IPO Funds along with K5 Sports,\" names its sectors as Technology, Sports & Entertainment, Healthcare & Life Sciences and Consumer, and says that \"With long-standing positions in frontier technology, AI, data analytics and infrastructure, the firm supports companies scaling at the intersection of emerging technology, sports & entertainment, and global commerce.\" Its homepage displays 32 exits and 300 direct investments. Its portfolio page carries the caveat that \"the list of investments is updated quarterly and as such may not reflect the most recent K5 Global investments.\"",
+    leadership: [
+      { name: "Bryan Baum", role: "Co-Founder & Managing Partner", profileSlug: "bryan-baum" },
+      { name: "Michael Kives", role: "Co-Founder & Managing Partner", profileSlug: "michael-kives" },
+      { name: "Keenan Rice", role: "General Partner", profileSlug: "keenan-rice" }
+    ],
+    timeline: [
+      { year: "2018", event: "K5 Global is founded by Michael Kives and Bryan Baum, per the firm's own homepage." },
+      { year: "2018", event: "The earliest K5 Form D found in SEC EDGAR is filed on 12 March 2018 for K5 Global Technology Fund, LP - Series CB." },
+      { year: "2023", event: "The most recent K5 Form D found in SEC EDGAR is filed on 28 February 2023 for K5 Global Technology Fund, LP - Series 007; a full-text search of EDGAR for K5 Global filings dated 1 January 2024 onward returns no Form D." },
+      { year: "2026", event: "K5 Global Advisor LLC files its first Form 13F-HR on 27 August 2026 for the quarter ended 30 June 2026, reporting three positions with a total value of $6,587,910,944." }
+    ],
+    holdings: [
+      { name: "ODDITY Tech Ltd", ticker: "ODD", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Korea Investment Partners",
+    sectors: [],
+    signatureExit: null,
+    slug: "korea-investment-partners",
+    website: "https://partners.koreainvestment.com",
+    short: "KIP",
+    founded: 1986,
+    hq: "Seoul, South Korea",
+    aum: "$2.7B (approx.; the firm's figure is ₩3.8017 trillion net assets under management at year-end 2025, per 딜사이트's VC league table - no USD figure is published by the firm)",
+    thesis: "Korea Investment Partners is the venture capital subsidiary of 한국투자금융지주 (Korea Investment Holdings), listed by the group as one of its direct subsidiaries alongside 한국투자증권, 한국투자프라이빗에쿼티 and others. It runs both venture investment partnerships (벤처조합) and private equity funds, and its own semi-annual REVIEW reporting states a portfolio balance on a principal basis of about 2.45 trillion won for 2023. Its own website is a JavaScript application that served no readable content in this session, so no statement of stage, sector or geographic focus could be taken from the firm's own words, and none has been invented here.",
+    leadership: [
+      { name: "황만순 (Hwang Man-soon)", role: "대표이사 (Representative Director, chief executive)", profileSlug: "hwang-man-soon" },
+      { name: "허진 (Heo Jin)", role: "상무 / 투자1그룹장", profileSlug: "heo-jin" },
+      { name: "정화목 (Jeong Hwa-mok)", role: "상무보 / 투자1그룹", profileSlug: "jeong-hwa-mok" },
+      { name: "남태우 (Nam Tae-woo)", role: "상무보 / PE본부", profileSlug: "nam-tae-woo" }
+    ],
+    timeline: [
+      { year: "1986", event: "The company is incorporated, per THE VC's company record giving 25 November 1986, and 원티드's company record giving 40 years of operating history as at 2026. This is not corroborated by the firm's own site, which is unrenderable." },
+      { year: "2020", event: "황만순 is designated 대표이사 in December 2020, succeeding 백여현 after twelve years, per 딜사이트 and the group's 16 December 2020 personnel announcement." },
+      { year: "2025", event: "The firm ends 2025 with net assets under management of 3조8017억원, the only Korean venture capital firm above 3조원 in 딜사이트's league table." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "MPCi (Matrix Partners China)",
+    sectors: ["Deep Tech", "Industrial Tech", "Healthcare", "Frontier Technologies", "Consumer Products", "Enterprise Software"],
+    signatureExit: null,
+    slug: "matrix-partners-china",
+    website: "https://www.matrixpartners.com.cn",
+    short: "MPCi",
+    founded: 2008,
+    hq: "Beijing, China",
+    aum: "US$9.5B+ (approx.; the firm's figure is RMB 70B+ 管理规模 on its own About page, undated, checked 2026 - no USD figure is published by the firm)",
+    thesis: "MPCi, known in Chinese as 经纬创投, describes itself on its own About page as a venture capital firm founded in 2008 and focused on early stage and early growth deals in China. It states that it mainly invests in new economy, deep technology, industrial digitalization, healthcare, frontier technology and new consumer brands, and that it manages over RMB 70 billion. The firm states it has over 40 investment professionals and that more than 80 professionals sit in ten post-investment functions including strategy and operations consulting, recruiting and healthcare services, provided as value-added services to founders. It operates from Beijing and Shanghai.",
+    leadership: [
+      { name: "Huadong Wang (王华东)", role: "Managing Partner / 管理合伙人", profileSlug: "huadong-wang" },
+      { name: "David Zhang (张颖)", role: "Founding Partner (English team page only)", profileSlug: "david-zhang" },
+      { name: "David Su (徐传陞)", role: "Founding Managing Partner (English team page only)", profileSlug: "david-su" },
+      { name: "Michael Zuo (左凌烨)", role: "合伙人 / Partner", profileSlug: "michael-zuo" },
+      { name: "Ti Tong (童倜)", role: "Partner / 合伙人", profileSlug: "ti-tong" },
+      { name: "谢义平 (Yiping Xie)", role: "合伙人 / Partner", profileSlug: "yiping-xie" },
+      { name: "Harry Man (万浩基)", role: "Partner (English team page only)", profileSlug: "harry-man" }
+    ],
+    timeline: [
+      { year: "2008", event: "The firm is founded in China, per its own About page, which states 'Founded in 2008'; its site footer carries the copyright range 2008-2026." },
+      { year: "2024", event: "On 1 July 2024 the firm drops the Matrix Partners China name and renames itself MPC, presented on its own site as MPCi, while Matrix Partners India rebrands to Z47 and the US firm retains the Matrix Partners name." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Mitsubishi UFJ Capital Co., Ltd.",
+    sectors: ["Sector-Agnostic", "Life Sciences", "Biotech", "Pharmaceuticals", "Therapeutics", "Medical Devices"],
+    signatureExit: null,
+    slug: "mitsubishi-ufj-capital",
+    website: "https://www.mucap.co.jp",
+    short: "Mitsubishi UFJ Capital",
+    founded: 1974,
+    hq: "Tokyo, Japan",
+    aum: "1,700億円 (approx. JPY 170bn; the firm's stated total across the funds it manages, MUFG Bank and Mitsubishi UFJ Capital joint release, 28 May 2025)",
+    thesis: "Mitsubishi UFJ Capital is the venture capital company of the Mitsubishi UFJ Financial Group, established in 1974 and headquartered in Nihonbashi, Tokyo, with branch offices in Osaka and Nagoya. Its shareholders are MUFG Bank, Mitsubishi UFJ Trust and Banking and other Mitsubishi group and Japanese financial and industrial companies, per the firm's own 会社概要 page. The firm runs two parallel fund lines and states the mandate of each in its joint fund announcements with MUFG Bank. Its numbered general funds state an investment target of 全般（除くライフサイエンス分野）, that is, all sectors other than life sciences: this applies to 三菱UFJキャピタル9号投資事業有限責任組合 (MUC-9, 30.0 billion yen, announced April 2023) and 三菱UFJキャピタル10号投資事業有限責任組合 (MUC-10, 30.0 billion yen, announced May 2025). Its life science funds state an investment target of 創薬、創薬基盤、再生医療、医療機器などを中心としたライフサイエンス分野, that is, life sciences centred on drug discovery, drug discovery platforms, regenerative medicine and medical devices: this applies to 三菱UFJライフサイエンス4号投資事業有限責任組合 (LS-4, 20.0 billion yen, announced April 2023). In the May 2025 MUC-10 announcement the firm says it will also work on secondary transactions and on diversifying exits (セカンダリー取引やExitの多様化にも挑戦していく). The firm is an approved 事業プロモーター (business promoter) unit of the Japan Science and Technology Agency's START programme for creating new industries from universities; JST's page for the unit states that the unit specialises within life sciences in drug discovery (ライフサイエンス（LS）分野のうち創薬分野に特化します), covers the whole of Japan, and has since 2017 deployed 30.0 billion yen across the first, second and third Mitsubishi UFJ Life Science funds, branded MUFGメディカルファンド. The firm organises its investment staff into four numbered investment departments (投資第一部 to 投資第四部), a life science department (ライフサイエンス部), a strategic research department (戦略調査部), and the Osaka and Nagoya branch offices.",
+    leadership: [
+      { name: "小島 拓朗", role: "代表取締役社長 (President and Representative Director)", profileSlug: "kojima-takuro" },
+      { name: "宝子山 真史", role: "代表取締役副社長 (Deputy President and Representative Director)", profileSlug: "hokoyama-masashi" },
+      { name: "小林 禎", role: "常務取締役 (Managing Director)", profileSlug: "kobayashi-tadashi" },
+      { name: "塚原 伸介", role: "常務取締役 (Managing Director)", profileSlug: "tsukahara-shinsuke" },
+      { name: "九鬼 隆成", role: "取締役執行役員　投資第一部長 (Director and Executive Officer, General Manager of Investment Department 1); listed as 取締役 on the 会社概要 page", profileSlug: "kuki-takanari" },
+      { name: "松田 康文", role: "取締役 (Director)", profileSlug: "matsuda-yasufumi" },
+      { name: "長谷川 宏之", role: "常務執行役員　ライフサイエンス部長 (Senior Managing Executive Officer, General Manager of the Life Science Department)", profileSlug: "hasegawa-hiroyuki-mucap" },
+      { name: "田口 順一", role: "執行役員　投資第二部長 (Executive Officer, General Manager of Investment Department 2)", profileSlug: "taguchi-junichi" },
+      { name: "西尾 祐一", role: "執行役員　投資第三部長 (Executive Officer, General Manager of Investment Department 3)", profileSlug: "nishio-yuichi" },
+      { name: "関 寛明", role: "執行役員　投資第四部長 (Executive Officer, General Manager of Investment Department 4)", profileSlug: "seki-hiroaki" },
+      { name: "光安 哲夫", role: "執行役員　大阪支社長兼名古屋支社長 (Executive Officer, General Manager of the Osaka Branch and the Nagoya Branch)", profileSlug: "mitsuyasu-tetsuo" },
+      { name: "湯木 将生", role: "執行役員　戦略調査部長 (Executive Officer, General Manager of the Strategic Research Department)", profileSlug: "yuki-masao" },
+      { name: "仙田 裕昭", role: "取締役（非常勤） (Non-executive Director); 株式会社三菱UFJ銀行 常務執行役員" },
+      { name: "大塚 浩一", role: "取締役（非常勤） (Non-executive Director); 三菱UFJ信託銀行株式会社 専務執行役員" },
+      { name: "武元 忠雄", role: "取締役（非常勤） (Non-executive Director); 東京海上日動火災保険株式会社 常務執行役員" },
+      { name: "大西 忠", role: "取締役（非常勤） (Non-executive Director); 明治安田ビルマネジメント株式会社 代表取締役会長" },
+      { name: "熊田 智明", role: "常勤監査役 (Full-time Statutory Auditor)" },
+      { name: "糸川 伸哉", role: "常勤監査役 (Full-time Statutory Auditor)" },
+      { name: "佐藤 友", role: "監査役（非常勤） (Non-executive Statutory Auditor); 株式会社三菱UFJ銀行 執行役員" }
+    ],
+    timeline: [
+      { year: "1974", event: "ダイヤモンドキャピタル株式会社 (Diamond Capital Co., Ltd.), the predecessor of the present company, is established; the firm's own 会社概要 page gives its 設立 as 昭和49年8月1日 (1 August 1974)." },
+      { year: "2005", event: "ダイヤモンドキャピタル株式会社 merges with 株式会社UFJキャピタル (UFJ Capital Co., Ltd.) and the combined company takes its present name, 三菱UFJキャピタル株式会社." },
+      { year: "2017", event: "The firm begins investing through the Mitsubishi UFJ Life Science funds; JST states that the first, second and third Life Science funds, branded MUFGメディカルファンド, total 30.0 billion yen and have been deployed since 2017." },
+      { year: "2023", event: "MUFG Bank and Mitsubishi UFJ Capital announce two funds totalling 50.0 billion yen on 14 April 2023: 三菱UFJキャピタル9号投資事業有限責任組合 (MUC-9, 30.0 billion yen) and 三菱UFJライフサイエンス4号投資事業有限責任組合 (LS-4, 20.0 billion yen); the release states the total of funds the firm manages reaches 142.8 billion yen." },
+      { year: "2025", event: "MUFG Bank and Mitsubishi UFJ Capital announce 三菱UFJキャピタル10号投資事業有限責任組合 (MUC-10) with 30.0 billion yen of commitments on 28 May 2025; the release states the total of funds the firm manages becomes 170.0 billion yen." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "みずほキャピタル株式会社 (Mizuho Capital Co., Ltd.)",
+    sectors: ["Life Sciences", "Fintech", "Agriculture"],
+    signatureExit: null,
+    slug: "mizuho-capital",
+    website: "https://www.mizuho-vc.co.jp",
+    short: "Mizuho Capital",
+    founded: 1983,
+    hq: "Tokyo, Japan",
+    aum: "Not publicly disclosed (no firm-wide 運用総額 is published; the largest single fund is 150億円, established 31 October 2023, and the firm states a cumulative 400億円 across the 成長支援ファンド series as of that date)",
+    thesis: "みずほキャピタル is the venture capital company of the Mizuho Financial Group; its own 会社概要 gives its 株主 as みずほ銀行 その他 and describes it as having started as the group's integrated venture capital company (みずほフィナンシャルグループにおける統合ベンチャーキャピタルとしてスタート) after the April 2002 reorganisation of the three predecessor banks' venture capital companies. Its stated business, per the reference-work entry, is 未上場会社の株式・社債への投資、投資事業組合の運営・管理、株式公開に関するコンサルティング - investment in unlisted companies' shares and bonds, operation and management of investment partnerships, and IPO consulting. The president's message states the company was founded in 1983 and has supported close to 1,000 portfolio companies to listing (創業以来1,000社に迫る投資先の上場を支援), and gives the firm's purpose as ともに挑む。ともに実る。 The firm organises itself around seven named fund families rather than a single thesis: 成長支援ファンド (its stated main fund, for companies aiming at rapid growth), ライフサイエンスファンド, グロースファンド (hands-on support for growth-stage startups), ベンチャーデットファンド (debt financing for growth companies), FinTechファンド, 事業承継・資本戦略ファンド (business succession and capital strategy for mid-sized and small companies), and 6次産業化ファンド (supporting the industrialisation of agriculture, forestry and fisheries). Its own portfolio-composition page breaks its book down by 業種, 成長ステージ (アーリー, ミドル, レイター) and 地域 (首都圏, 関西, その他国内, 海外) as of the end of March 2025, but publishes those only as composition, not as a stated focus.",
+    leadership: [
+      { name: "半田 邦雄", role: "代表取締役社長 (President and Representative Director)", profileSlug: "handa-kunio" },
+      { name: "小原 久忠", role: "専務取締役 (Senior Managing Director)", profileSlug: "obara-hisatada" },
+      { name: "堀 克也", role: "常務取締役 (Managing Director)", profileSlug: "hori-katsuya" },
+      { name: "小土井 善章", role: "常務取締役 (Managing Director)", profileSlug: "kodoi-yoshiaki" },
+      { name: "鶴岡 健一", role: "取締役（非常勤） (Director (non-executive))" },
+      { name: "佐藤 健介", role: "取締役（非常勤） (Director (non-executive))" },
+      { name: "青山 宏明", role: "監査役 (Statutory Auditor)" },
+      { name: "吉村 伸郎", role: "監査役 (Statutory Auditor)" },
+      { name: "籔田 太郎", role: "監査役（非常勤） (Statutory Auditor (non-executive))" }
+    ],
+    timeline: [
+      { year: "1983", event: "The firm's own 会社概要 states 1983年7月27日に設立 - established on 27 July 1983." },
+      { year: "2002", event: "On 1 April 2002 the venture capital companies of the three predecessor banks are split and merged (旧3行系列のベンチャーキャピタル会社が分割・合併) and the company starts as the Mizuho Financial Group's integrated venture capital company. The reference work デジタル大辞泉 records this as 富士銀キャピタル株式会社 merging 東京ベンチャーキャピタル株式会社 and 興銀インベストメント株式会社 and taking the present name." },
+      { year: "2013", event: "みずほ成長支援投資事業有限責任組合, the first fund in the firm's main 成長支援 series, is established on 31 January 2013 with 100億円." },
+      { year: "2016", event: "みずほFinTech投資事業有限責任組合 is established on 16 March 2016 with 11億円." },
+      { year: "2019", event: "THE FUND投資事業有限責任組合 is established on 26 June 2019 with 200億円." },
+      { year: "2020", event: "みずほライフサイエンス第1号投資事業有限責任組合 is established on 6 January 2020 with 100億円." },
+      { year: "2022", event: "みずほグロースパートナーズ1号投資事業有限責任組合 is established on 20 October 2022 with 100億円." },
+      { year: "2023", event: "みずほベンチャーデットファンド投資事業有限責任組合 is established on 30 August 2023 with 100億円, and みずほ成長支援第5号投資事業有限責任組合 on 31 October 2023 with 150億円, the firm's largest single fund." },
+      { year: "2025", event: "みずほ事業承継・資本戦略投資事業有限責任組合 is established on 24 January 2025 with 出資金総額 100億円, announced jointly by みずほフィナンシャルグループ, みずほ銀行 and みずほキャピタル." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "ニッセイ・キャピタル株式会社 (Nissay Capital Co., Ltd.)",
+    sectors: ["Seed-Stage", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "nissay-capital",
+    website: "https://www.nissay-cap.co.jp",
+    short: "Nissay Capital",
+    founded: 1991,
+    hq: "Tokyo, Japan",
+    aum: null,
+    thesis: "ニッセイ・キャピタル is the venture capital company of the Nippon Life group; Nippon Life's own group-companies page lists it as ニッセイ・キャピタル㈱（ベンチャーキャピタル業務）, and the company profile block the firm publishes with its own press releases states that it is wholly owned by 日本生命保険相互会社. The clearest statement of its approach comes from the official page for Japan Science and Technology Agency's START programme, on which it serves as a 事業プロモーター: 現在８本のベンチャーファンドの無限責任組合員として投資・育成活動を展開しており、シード・アーリーステージの企業に対するリード投資に力を入れております - it acts as general partner of eight venture funds and emphasises lead investment in seed and early-stage companies - and 年間投資額のおよそ６～７割は、シード・アーリー企業への投資です, that roughly 60 to 70 per cent of its annual investment amount goes to seed and early-stage companies. One named vehicle is ニッセイ・キャピタル サステナビリティ課題解決ファンド1号投資事業有限責任組合, from which it has invested in the Kyushu University originated ESG analysis startup aiESG. NOTE THAT THIS THESIS IS ASSEMBLED FROM SOURCES OTHER THAN THE FIRM'S OWN WEBSITE, which was unreachable throughout this session; the firm's own statement of its investment policy at nissay-cap.co.jp/feature/policy.html could not be read and no attempt was made to reach it by any indirect route.",
+    leadership: [
+      { name: "上田 宏介", role: "代表取締役社長 (President and Representative Director)", profileSlug: "ueda-kosuke" },
+      { name: "髙田 実", role: "取締役 (Director); named as 代表事業プロモーター on the JST START programme page", profileSlug: "takada-minoru" }
+    ],
+    timeline: [
+      { year: "1991", event: "ニッセイ・キャピタル株式会社 is established in April 1991, per the 設立 field of the company profile block the firm publishes with its own press releases (設立 1991年04月)." },
+      { year: "2023", event: "ニッセイ・キャピタル サステナビリティ課題解決ファンド1号投資事業有限責任組合 is established in May 2023, and later invests in the Kyushu University originated ESG analysis company aiESG." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Rebel Fund",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "rebel-fund",
+    website: "https://www.rebelfund.vc",
+    short: "Rebel",
+    founded: null,
+    hq: "San Francisco, CA",
+    aum: null,
+    thesis: "Rebel Fund invests in companies that have been through the Y Combinator accelerator. Its own site states \"Rebel aims to invest in the top 10% of startups (top 0.06% of applicants) from Y Combinator\" and that it \"has unique access to top Y Combinator startups with a nearly 100% deal win rate\". On method, the site states \"Rebel utilizes a proprietary machine-learning algorithm called Rebel Theorem 5.0 to help validate and screen potential investments, building a diversified portfolio of Y Combinator startups that is statistically powered to outperform.\" On its relationship to Y Combinator, the same page carries the disclaimer \"This website is not sponsored or endorsed by Y Combinator.\" Rebel is therefore an independent outside fund that invests in YC-accelerated companies and whose partner group is drawn largely from YC alumni founders; it is not part of Y Combinator, not an affiliate of it, and does not claim to be. The firm does not state a sector focus on its site; one partner, Jonathan Hirsch, is labelled on the team listing as covering non-YC biotech.",
+    leadership: [
+      { name: "Jared Heyman", role: "Managing Partner", profileSlug: "jared-heyman" },
+      { name: "Luis Fortuño", role: "Managing Director", profileSlug: "luis-fortuno" }
+    ],
+    timeline: [
+      { year: "2023", event: "Rebel Fund II LP is organised; its Form D reports a year of incorporation of 2023 and a principal place of business in San Francisco, California." },
+      { year: "2024", event: "Rebel Fund II LP records a first sale on 15 February 2024 and reports $12,470,340 sold under an indefinite offering in its Form D/A filed 28 March 2024, alongside parallel filings for Rebel Fund II QP LP and Rebel Fund II Offshore, LP." },
+      { year: "2026", event: "Rebel Fund III LP, Rebel Fund III QP LP and Rebel Fund III Offshore LP each file a Form D on 19 March 2026; the Fund III filing lists Rebel Management, LLC as management company, Jared Heyman and Luis R Fortuno as related persons, and reports no first sale yet and zero sold." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Right Side Capital Management",
+    sectors: ["Software", "AI", "Marketplaces"],
+    signatureExit: null,
+    slug: "right-side-capital-management",
+    website: "https://www.rightsidecapital.com",
+    short: "RSCM",
+    founded: 2012,
+    hq: "San Francisco, CA",
+    aum: "$55M (Fund VI close, 2025; RSCM publishes no firm-wide AUM figure)",
+    thesis: "RSCM publishes explicit mechanical criteria rather than a general thesis. Its homepage states: \"We write $150k - $300k checks into $150k - $500k round sizes.\" \"We typically invest at $1.5M - $4M valuations in companies with $5k - $30k+ MRR.\" \"We primarily invest in US and Canadian startups.\" Its FAQ states a round size of \"$150K - $500K, with rare exceptions up to $1M for companies with extreme traction\" and a valuation range of \"$1.5M - $4M, with a soft limit of $3M. We make rare exceptions up to $6M for companies with extreme traction\", adds \"Typical MRR at the time of investment is $5K - $30K+. We look for companies with a revenue-generating product and paying customers\", and states \"RSCM invests in US and Canadian founders. We do not currently invest outside of the United States and Canada.\" The FAQ describes the core product requirement as proprietary engineering, typically software, AI-driven platforms, or marketplace technology, and the revenue model as subscription, high recurring transactional, or two-sided marketplace. The firm describes itself on its homepage as a \"quantitative, data-driven\" investor in \"capital efficient tech startups\" and says it usually gives a yes/no decision \"in about a week\". On volume, the firm's 2025 blog post states \"We continue to focus on capital-efficient tech companies with revenue-generating products, investing in over 150 startups each year\", and its FAQ states \"RSCM has made 2,000+ investments since its founding in 2012\". Numeric ranges above are reproduced with spaced hyphens in place of the dashes used on the source pages, per house style.",
+    leadership: [
+      { name: "Kevin Dick", role: "Managing Director", profileSlug: "kevin-dick" },
+      { name: "Dave Lambert", role: "Managing Director", profileSlug: "dave-lambert" },
+      { name: "Jeff Pomeranz", role: "Managing Director", profileSlug: "jeff-pomeranz" }
+    ],
+    timeline: [
+      { year: "2010", event: "Right Side Capital Management, LLC (CIK 0001504756, Delaware) and RSCM Angel Fund I, L.P. (CIK 0001504754) each file a Form D with the SEC on 4 November 2010." },
+      { year: "2012", event: "RSCM states on its own site that it was founded in 2012: \"RSCM was founded in 2012 and is based in San Francisco, CA.\"" },
+      { year: "2014", event: "RSCM Fund II, L.P. (CIK 0001625574) files a Form D on 19 November 2014." },
+      { year: "2017", event: "RSCM Fund III, L.P. (CIK 0001710310) files a Form D on 27 June 2017." },
+      { year: "2019", event: "RSCM Fund IV, L.P. (CIK 0001790711) files a Form D on 18 October 2019." },
+      { year: "2021", event: "RSCM Fund V, L.P. (CIK 0001897002) files a Form D on 2 December 2021." },
+      { year: "2023", event: "RSCM Fund VI, L.P. (CIK 0001988354) files a Form D on 2 August 2023." },
+      { year: "2025", event: "RSCM states it closed Fund VI with $55 million in committed capital, describing it as 50% larger than Fund V and its largest fund to date." },
+      { year: "2026", event: "RSCM Fund VII, L.P. (CIK 0002131993) files a Form D on 27 April 2026, listing 649 Mission Street, 5th Floor, San Francisco, CA 94105." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "SMBCベンチャーキャピタル株式会社 (SMBC Venture Capital Co., Ltd.)",
+    sectors: ["Sector-Agnostic"],
+    signatureExit: "BASE株式会社 (IPO on the Tokyo Stock Exchange Mothers market, 25 October 2019, per the firm's own 投資実績 page)",
+    slug: "smbc-venture-capital",
+    website: "https://www.smbc-vc.co.jp",
+    short: "SMBC Venture Capital",
+    founded: 2005,
+    hq: "Tokyo, Japan",
+    aum: "Not publicly disclosed (no 運用総額 is published; the firm's own 投資実績 page states a cumulative 834億円 invested across 1,168 companies as of 2025)",
+    thesis: "SMBCベンチャーキャピタル is the venture capital company of the Sumitomo Mitsui Financial Group, wholly within the 三井住友銀行グループ per its own 会社概要. It states that it does not limit itself by industry or stage - 業種やステージを限定せず、景気動向や市況にも動じない投資を継続しております - and describes its business simply as プライベート・エクイティ投資事業. Its stated philosophy is to provide capital to growth companies aiming at 人々の生活向上・社会的課題の解決, and it says it supports portfolio companies by connecting them to the SMBC Group network of large corporates, talent and experts. Its published fund lineup shows three vehicle types: a 基幹ファンド investing in high-growth unlisted companies (SMBCベンチャーキャピタル8号投資事業有限責任組合, established 1 November 2024), a 産学連携ファンド for commercialising university and research-institute results (SMBCベンチャーキャピタル産学連携3号投資事業有限責任組合, established 20 June 2022), and a 領域特化型ファンド for potentially disruptive technology companies (イノベーティブ・ベンチャー投資事業有限責任組合, established 25 April 2012). No sectors are recorded in the sectors field because the firm explicitly states it does not restrict by industry.",
+    leadership: [
+      { name: "神林 直樹", role: "代表取締役社長 (President and Representative Director)", profileSlug: "kanbayashi-naoki" },
+      { name: "清水 浩徳", role: "専務取締役 (Senior Managing Director)", profileSlug: "shimizu-hironori" },
+      { name: "中村 理之", role: "常務取締役 (Managing Director)", profileSlug: "nakamura-masayuki" },
+      { name: "荒井 隆志", role: "常務取締役 (Managing Director)", profileSlug: "arai-takashi" },
+      { name: "川舟 史晃", role: "取締役（非常勤） (Director (non-executive))" },
+      { name: "島田 潤史", role: "監査役 (Statutory Auditor)" },
+      { name: "村田 有機", role: "監査役（非常勤） (Statutory Auditor (non-executive))" },
+      { name: "黒崎 ひろむ", role: "常務執行役員 (Senior Executive Officer)", profileSlug: "kurosaki-hiromu" },
+      { name: "児玉 一郎", role: "常務執行役員 投資営業第三部担当 (Senior Executive Officer, investment sales division responsibility per the firm's team page)", profileSlug: "kodama-ichiro" },
+      { name: "深井 康司", role: "常務執行役員 (Senior Executive Officer)", profileSlug: "fukai-koji" },
+      { name: "松下 克俊", role: "執行役員 投資営業第一部・投資営業第二部・投資営業第四部担当 (Executive Officer, investment sales division responsibility per the firm's team page)", profileSlug: "matsushita-katsutoshi" },
+      { name: "入江 浩一", role: "執行役員 (Executive Officer)", profileSlug: "irie-koichi" },
+      { name: "新井 雅治", role: "執行役員 (Executive Officer)", profileSlug: "arai-masaharu" },
+      { name: "今西 裕之", role: "執行役員 (Executive Officer)", profileSlug: "imanishi-hiroyuki" },
+      { name: "甲田 真也", role: "執行役員 (Executive Officer)", profileSlug: "koda-shinya" },
+      { name: "中野 哲治", role: "投資営業第一部長 (department head, per the firm's team page)", profileSlug: "nakano-tetsuji" },
+      { name: "山内 心吾", role: "投資営業第二部長 (department head, per the firm's team page)", profileSlug: "yamauchi-shingo" },
+      { name: "駒橋 政和", role: "投資営業第三部長 (department head, per the firm's team page)", profileSlug: "komabashi-masakazu" },
+      { name: "山村 聡", role: "投資営業第三部 部付部長 (department head, per the firm's team page)", profileSlug: "yamamura-satoshi" },
+      { name: "安田 純也", role: "投資営業第四部長 (department head, per the firm's team page)", profileSlug: "yasuda-junya" },
+      { name: "池田 一生", role: "関西投資営業部長 (department head, per the firm's team page)", profileSlug: "ikeda-kazuo" },
+      { name: "髙橋 照樹", role: "投資戦略部長 (department head, per the firm's team page)", profileSlug: "takahashi-teruki" },
+      { name: "大津 寛淑", role: "投資戦略部 部付部長 (department head, per the firm's team page)", profileSlug: "otsu-hirotoshi" },
+      { name: "中島 泰生", role: "投資戦略部 部付部長 (department head, per the firm's team page)", profileSlug: "nakajima-yasuo" }
+    ],
+    timeline: [
+      { year: "1992", event: "さくらキャピタル株式会社 is established in March 1992 by transferring the venture capital businesses of 三井ファイナンスサービス and 太陽神戸抵当証券; it is the earliest predecessor in the present company's lineage." },
+      { year: "2001", event: "さくらキャピタル merges 住銀インベストメント株式会社 in April 2001 and changes its name to SMBCキャピタル株式会社." },
+      { year: "2005", event: "エヌ・アイ・エフ ベンチャーズ absorbs SMBCキャピタル on 1 October 2005 and the combined company is renamed エヌ・アイ・エフSMBCベンチャーズ株式会社. The firm's own 会社概要 gives its 設立 as 2005年9月22日." },
+      { year: "2008", event: "The company is renamed 大和SMBCキャピタル株式会社 on 1 October 2008." },
+      { year: "2010", event: "The Daiwa and SMBC joint venture is dissolved and the company is split in two on 1 July 2010: the Daiwa side is renamed 大和企業投資株式会社 and the SMBC side is renamed SMBCベンチャーキャピタル株式会社, the present entity." },
+      { year: "2012", event: "イノベーティブ・ベンチャー投資事業有限責任組合, the firm's sector-focused technology fund, is established on 25 April 2012." },
+      { year: "2022", event: "SMBCベンチャーキャピタル産学連携3号投資事業有限責任組合, the firm's university-industry collaboration fund, is established on 20 June 2022." },
+      { year: "2023", event: "SMBC-GBグロース1号投資事業有限責任組合 is established on 12 July 2023 with a 運用総額 of 300億円, co-managed by グローバル・ブレイン株式会社 and SMBCベンチャーキャピタル・マネジメント株式会社." },
+      { year: "2024", event: "SMBCベンチャーキャピタル8号投資事業有限責任組合, the firm's current 基幹ファンド, is established on 1 November 2024." },
+      { year: "2025", event: "ジャパン・ブーストアップ1号投資事業有限責任組合 is established on 26 February 2025 with a 運用総額 of 50億円, co-managed by Bee Alternatives Japan 合同会社 and SMBCベンチャーキャピタル・マネジメント株式会社." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Team Ignite Ventures",
+    sectors: ["Pre-Seed", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "team-ignite-ventures",
+    website: "https://www.teamignite.vc",
+    short: "Team Ignite",
+    founded: 2020,
+    hq: "Folsom, CA",
+    aum: "$4.96M (Team Ignite Fund I, LP - Form D/A offering fully sold, 20 November 2025; no firm-wide AUM figure is published)",
+    thesis: "Team Ignite Ventures describes itself on its own site as \"a pre-seed and seed venture fund manager built around access, velocity, and the power of the network\", under the line \"Venture capital is a team sport.\" Its stated activities are finding founders with \"uncommon velocity, sharp insight\", building broad access to maximise deal flow, and activating networks of \"founders, operators, advisors, LPs, and co-investors\". Its portfolio page states the approach as \"Backing builders before it's obvious\" at the pre-seed stage, emphasising \"access plus structured coverage\" over \"false precision\". The site states \"PitchBook ranked Team Ignite the #3 most active early-stage investor in the world for Q2 2026, behind only Andreessen Horowitz and Y Combinator.\" The firm states no sector focus of its own, so sectors is left empty rather than inferred from portfolio companies.",
+    leadership: [
+      { name: "Brian Bell", role: "Founder & Managing Partner", profileSlug: "brian-bell" },
+      { name: "Simon Hayhurst", role: "General Partner", profileSlug: "simon-hayhurst" },
+      { name: "Renata Bell", role: "Operating Partner", profileSlug: "renata-bell" }
+    ],
+    timeline: [
+      { year: "2020", event: "Brian Bell founds Team Ignite Ventures; the firm's team page states \"Brian founded Team Ignite Ventures in 2020\" and its homepage carries the line \"Est. 2020\"." },
+      { year: "2022", event: "Team Ignite Fund I, LP (CIK 0001956766) is organised, reporting a year of incorporation of 2022 and a principal place of business in Folsom, California; its Form D records a first sale on 21 December 2022 and it was filed on 13 December 2022." },
+      { year: "2024", event: "Team Ignite YC Fund II, LP (CIK 0002024160) is organised, reporting a year of incorporation of 2024, a $10,000,000 offering and a first sale on 28 June 2024, with $760,000 sold as at its Form D/A of 3 July 2024." },
+      { year: "2025", event: "Team Ignite Fund I, LP reports its $4,964,247 offering fully sold with nothing remaining, in a Form D/A filed 20 November 2025." },
+      { year: "2026", event: "The firm states that PitchBook ranked Team Ignite the third most active early-stage investor in the world for the second quarter of 2026." }
+    ],
+    holdings: []
   }
 ];
