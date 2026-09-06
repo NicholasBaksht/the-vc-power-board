@@ -137,6 +137,9 @@ const PBA_EVENTS = [
   'pipeline_next_action_cleared',
   'pipeline_meeting_logged',
   'pipeline_activity_logged',
+  /* Phase 4F: the workspace home. Counts only - never a raise name,
+     a target amount, or which investors are in the pipeline. */
+  'my_power_board_viewed',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
