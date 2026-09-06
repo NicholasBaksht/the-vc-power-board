@@ -179,6 +179,15 @@ const PBA_EVENTS = [
   'export_center_opened',
   'pipeline_exported',
   'export_included_private_notes',
+  /* Phase 7A. Workspaces. The workspace name, its members, the
+     startup it is raising for and anything inside it are never sent.
+     These record that the collaboration layer is being used, not who
+     is collaborating with whom. */
+  'workspaces_opened',
+  'workspace_created',
+  'workspace_switched',
+  'workspace_archived',
+  'workspace_restored',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
