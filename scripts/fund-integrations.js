@@ -58,6 +58,19 @@ function renderAngelOutcomes(personId) {
   return occPanel(res, { title: 'Tracked portfolio outcomes' });
 }
 
+/* Firm outcome context. Renders nothing today: firm outcomes are
+   counted from tracked PARTICIPATIONS, and those are recent deals
+   that have not reached an outcome, so the floor of three is never
+   met. Wired anyway because it turns itself on the moment deal
+   research matures, rather than needing to be remembered later. */
+function renderFirmOutcomes(firm) {
+  if (!firm || typeof occForFirm !== 'function' || typeof occPanel !== 'function') return '';
+  const res = occForFirm(firm.slug);
+  if (!res || !occHasEnough(res)) return '';
+  if (typeof pbTrack === 'function') pbTrack('outcome_context_viewed');
+  return occPanel(res, { title: 'Tracked portfolio outcomes' });
+}
+
 /* ------------------------------------------------------------
    COMPACT FUND CONTEXT
 
@@ -178,6 +191,7 @@ if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     renderPartnerOutcomes: renderPartnerOutcomes,
     renderAngelOutcomes: renderAngelOutcomes,
+    renderFirmOutcomes: renderFirmOutcomes,
     fiFundLine: fiFundLine,
     fiFundContextHtml: fiFundContextHtml,
     fiPipelineFundHtml: fiPipelineFundHtml
