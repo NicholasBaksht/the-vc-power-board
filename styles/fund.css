@@ -1,0 +1,109 @@
+/* ============================================================
+   FUND.CSS
+   Phase 5 Fund Intelligence.
+
+   Its own file because funds are a new research surface with a
+   different lifetime from the private workspace in fundraise.css.
+   The visual language is the existing institutional one: thin
+   borders, restrained green, dense rows, data as the design. No
+   fund cards, no gauges, no performance dials - there is no
+   performance data here to put in one.
+   ============================================================ */
+
+.fh-sec {
+  margin: 34px 0; padding-top: 22px; border-top: 1px solid var(--hairline);
+}
+.fh-h {
+  font: 600 10px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-muted); margin: 0 0 16px;
+}
+
+/* The headline vehicle. One left rule, the same device the rest of
+   the product uses for "this is the one that matters". */
+.fh-latest {
+  border: 1px solid var(--hairline-strong); border-left: 3px solid var(--accent);
+  padding: 16px 18px; margin-bottom: 18px;
+}
+.fh-latest-top {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px;
+}
+.fh-latest-label {
+  font: 600 9.5px/1 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.fh-latest-name {
+  font: 600 17px/1.3 var(--sans); color: var(--ink); letter-spacing: -0.01em;
+}
+.fh-flag {
+  font: 600 9px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent-bright); background: var(--accent-pale);
+  padding: 3px 6px; border-radius: 3px;
+}
+
+.fh-facts { display: flex; flex-wrap: wrap; gap: 0 28px; margin: 14px 0 0; }
+.fh-facts div { display: flex; flex-direction: column; gap: 2px; }
+.fh-facts dt {
+  font: 600 9.5px/1 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.fh-facts dd {
+  margin: 0; font: 600 14px/1.3 var(--sans); color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Body text, not fine print. It is the sentence that stops "latest"
+   being read as "currently investing". */
+.fh-caveat {
+  margin: 14px 0 0; font: 400 13px/1.55 var(--sans); color: var(--ink-dim);
+  max-width: 64ch;
+}
+.fh-companions {
+  margin: 8px 0 0; font: 400 12.5px/1.5 var(--sans); color: var(--ink-muted);
+  max-width: 64ch;
+}
+
+.fh-tablewrap { overflow-x: auto; border: 1px solid var(--hairline-strong); }
+.fh-table {
+  width: 100%; border-collapse: collapse; min-width: 780px;
+  font: 400 13px/1.4 var(--sans);
+}
+.fh-table thead th {
+  text-align: left; padding: 9px 12px; background: var(--surface);
+  border-bottom: 1px solid var(--hairline-strong);
+  font: 600 9.5px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ink-muted); white-space: nowrap;
+}
+.fh-table tbody td {
+  padding: 9px 12px; border-bottom: 1px solid var(--hairline); vertical-align: top;
+}
+.fh-table tbody tr:last-child td { border-bottom: 0; }
+.fh-table tbody tr:hover td { background: var(--surface); }
+/* The flagship is marked with a hairline, not a highlight. */
+.fh-table tr.is-flagship .fh-name { box-shadow: inset 2px 0 0 var(--accent); padding-left: 10px; }
+
+.fh-name { font-weight: 600; color: var(--ink); min-width: 190px; }
+.fh-num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.fh-null { color: var(--ink-muted); }
+.fh-note {
+  display: inline-block; margin-left: 7px; padding: 2px 5px; border-radius: 3px;
+  font: 600 9px/1.3 var(--mono); letter-spacing: .06em; text-transform: uppercase;
+  background: var(--surface-raised); color: var(--ink-muted); font-weight: 500;
+}
+.fh-note-warn { color: var(--red); background: var(--bg); border: 1px solid var(--hairline-strong); }
+.fh-orig, .fh-conf {
+  display: block; margin-top: 2px;
+  font: 400 10.5px/1.3 var(--sans); color: var(--ink-muted);
+}
+.fh-src a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+.fh-src a:hover { border-bottom-color: var(--accent); }
+.fh-src a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.fh-coverage {
+  margin: 12px 0 0; font: 400 12.5px/1.55 var(--sans); color: var(--ink-dim);
+  max-width: 68ch;
+}
+
+@media (max-width: 640px) {
+  .fh-facts { gap: 0 18px; }
+  .fh-latest { padding: 14px; }
+}
