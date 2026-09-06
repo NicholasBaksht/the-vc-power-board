@@ -127,7 +127,17 @@ const DISCOVERY_FUND_TIER_CHECK = {
   large: num => num >= 20 && num < 50,
   small: num => num > 0 && num < 5
 };
-const DISCOVERY_FUND_TIER_LABEL = { mega: 'Mega Fund ($50B+)', large: 'Large Fund ($20B–$50B)', small: 'Boutique / Small Fund (Under $5B)' };
+/* These tiers are computed from parseAumNum(firm.aum) - the firm's
+   assets under management, not the size of any one fund. The labels
+   used to read "Mega Fund ($50B+)", which stated a fund size while
+   measuring AUM. Phase 5 put real fund sizes on the same firms
+   (a16z: $175B AUM, most recent tracked fund $1.3B), so the two
+   would have contradicted each other.
+
+   The PARSER still accepts "mega fund" and "large fund" as queries,
+   because that is the shorthand founders actually type. Only the
+   label changed, so it says what it measures. */
+const DISCOVERY_FUND_TIER_LABEL = { mega: 'Mega Firm ($50B+ AUM)', large: 'Large Firm ($20B–$50B AUM)', small: 'Boutique Firm (Under $5B AUM)' };
 
 /**
  * Scores every firm against parsed criteria. Same philosophy as
@@ -334,7 +344,7 @@ function runDiscoverySearch() {
   if (discoveryCriteria.sectors.length) parsedSummary.push(`Sector: ${discoveryCriteria.sectors.map(s => SECTOR_MAP[s].label).join(discoveryCriteria.sectorMode === 'all' ? ' AND ' : ', ')}`);
   if (discoveryCriteria.stages.length) parsedSummary.push(`Stage: ${discoveryCriteria.stages.join(', ')}`);
   if (discoveryCriteria.locations.length) parsedSummary.push(`Location: ${discoveryCriteria.locations.map(l => LOCATION_MAP[l].label).join(', ')}`);
-  if (discoveryCriteria.fundTier) parsedSummary.push(`Fund Size: ${DISCOVERY_FUND_TIER_LABEL[discoveryCriteria.fundTier]}`);
+  if (discoveryCriteria.fundTier) parsedSummary.push(`Firm scale: ${DISCOVERY_FUND_TIER_LABEL[discoveryCriteria.fundTier]}`);
   if (discoveryCriteria.focus) parsedSummary.push(`Focus: ${discoveryCriteria.focus === 'enterprise' ? 'Enterprise' : 'Consumer'}`);
   if (discoveryCriteria.connectedToFirmName) parsedSummary.push(`Connected to: ${discoveryCriteria.connectedToFirmName}`);
   if (discoveryCriteria.companyNames.length) parsedSummary.push(`Mentions: ${discoveryCriteria.companyNames.join(', ')}`);
