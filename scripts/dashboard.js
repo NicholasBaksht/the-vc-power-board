@@ -120,7 +120,12 @@ function computeGenomeScores(firm) {
   const fundSizeScore = Math.round(Math.sqrt(fundSizeRatio) * 100);
 
 const dimensions = [
-    { key: 'fundSize', label: 'Fund Size', value: fundSizeScore, color: '#2F6FED' },
+    /* Labelled Capital Scale, which is what it is: a curve over the
+       firm's AUM. It read "Fund Size" while measuring assets under
+       management across the whole organisation. The key stays
+       fundSize so nothing downstream breaks; only what the reader
+       sees changed. */
+    { key: 'fundSize', label: 'Capital Scale', value: fundSizeScore, color: '#2F6FED' },
     { key: 'portfolio', label: 'Portfolio Breadth', value: Math.round((firm.holdings.length / maxHoldings) * 100), color: '#6389C4' },
     { key: 'stageBreadth', label: 'Stage Breadth', value: Math.round(((firmStages[firm.slug] || []).length / 6) * 100), color: '#7CA8F7' },
     { key: 'sectorBreadth', label: 'Sector Breadth', value: Math.round((firm.sectors.length / maxSectors) * 100), color: '#1E4FBF' },
@@ -459,7 +464,7 @@ function renderSimilarFirms(firm) {
   return `
     <div class="similar-firms">
       <div class="similar-firms-label">Similar Firms</div>
-      <div class="similar-firms-sub">Firms with the closest overall investment profile to ${firm.short}, based on real fund size, portfolio breadth, stage, sector, and geographic data.</div>
+      <div class="similar-firms-sub">Firms with the closest overall investment profile to ${firm.short}, based on real capital scale, portfolio breadth, stage, sector, and geographic data.</div>
       <div class="similar-firms-grid">${cardsHTML}</div>
     </div>
   `;
