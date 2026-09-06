@@ -381,6 +381,9 @@ function pdPaint(el, target, notes, allTags, activities) {
       '</div>' +
     '</section>' +
 
+    /* ---- fund context (Phase 5H) ---- */
+    (typeof fiPipelineFundHtml === 'function' ? fiPipelineFundHtml(target) : '') +
+
     /* ---- next action ---- */
     '<section class="pd-sec"><h3 class="pd-h">Next action</h3>' +
       (typeof paEditorHtml === 'function' ? paEditorHtml(target) : '') +
