@@ -230,3 +230,26 @@
   max-width: 68ch;
 }
 .occ-note-strong { color: var(--ink-muted); }
+
+/* ---- Fund context inside other products (Phase 5H) ---- */
+
+.fi-fund {
+  display: flex; flex-direction: column; gap: 3px;
+  padding: 10px 12px; margin-top: 12px;
+  border: 1px solid var(--hairline); background: var(--surface);
+}
+.fi-fund.is-compact { padding: 9px 11px; margin-top: 0; }
+.fi-fund-label {
+  font: 600 9px/1 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.fi-fund-val {
+  font: 500 13px/1.4 var(--sans); color: var(--ink);
+  text-decoration: none; font-variant-numeric: tabular-nums;
+}
+a.fi-fund-val { border-bottom: 1px solid transparent; }
+a.fi-fund-val:hover { color: var(--accent-bright); border-bottom-color: var(--accent); }
+.fi-note {
+  margin: 8px 0 0; font: 400 12px/1.5 var(--sans); color: var(--ink-muted);
+  max-width: 60ch;
+}
