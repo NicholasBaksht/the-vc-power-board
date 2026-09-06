@@ -167,3 +167,39 @@
   .wm-roles { grid-template-columns: minmax(0, 1fr); gap: 2px 0; }
   .wm-roles dd { margin-bottom: 8px; }
 }
+
+/* ---------- shared raise (7C) ---------- */
+
+/* The most important element in the phase: it answers "who can see
+   this" without the founder having to go and look. Bordered, never
+   tinted, because a shared raise is a normal state and not a warning. */
+.wr-scope {
+  border: 1px solid var(--hairline-strong); border-left: 3px solid var(--accent);
+  padding: 11px 14px; margin: 0 0 16px;
+  font: 400 13px/1.6 var(--sans); color: var(--ink-dim); max-width: 78ch;
+}
+.wr-scope strong { color: var(--ink); font-weight: 600; }
+/* Personal gets a quiet rule rather than the accent: it is the
+   default state and does not need announcing. */
+.wr-scope.is-personal { border-left-color: var(--ink-muted); }
+
+.wr-assignee {
+  padding: 4px 8px; border: 1px solid var(--hairline-strong); border-radius: 4px;
+  background: var(--bg); color: var(--ink); font: 500 12px/1.2 var(--sans);
+}
+.wr-assignee:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wr-vis {
+  display: flex; align-items: flex-start; gap: 8px; margin: 8px 0 0;
+  font: 400 12.5px/1.5 var(--sans); color: var(--ink-dim); cursor: pointer;
+}
+.wr-vis input { margin-top: 2px; accent-color: var(--accent); }
+.wr-vis input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Written out on every note. The one risk this phase introduces is a
+   founder mistaking a shared note for a private one. */
+.wr-note-vis {
+  font: 600 9.5px/1 var(--mono); letter-spacing: .07em; text-transform: uppercase;
+  color: var(--accent);
+}
+.wr-note-vis.is-private { color: var(--ink-muted); }
