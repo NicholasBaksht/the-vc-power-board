@@ -388,7 +388,12 @@ async function renderWorkspaces() {
   const archived = wsState.memberships.filter(function (m) { return m.archivedAt; });
   const cur = wsCurrent();
 
-  let h = '<div class="ws-scope"><strong>Personal stays personal.</strong> ' +
+  /* Invitations first. Someone arriving because a cofounder invited
+     them should see that before anything else on the page. */
+  if (typeof wmLoadInvites === 'function') await wmLoadInvites();
+  let h = (typeof wmInvitesHtml === 'function') ? wmInvitesHtml() : '';
+
+  h += '<div class="ws-scope"><strong>Personal stays personal.</strong> ' +
     'Your existing raise, pipeline, notes, saved searches and shortlist belong to you and ' +
     'were not moved anywhere. Creating a workspace does not share them. Nothing becomes ' +
     'visible to a teammate until you explicitly put it in a workspace.</div>';
@@ -414,6 +419,7 @@ async function renderWorkspaces() {
           '<div class="ws-row-acts">' +
             (isCur ? '<span class="ws-current-tag">Current</span>'
                    : '<button type="button" class="ws-mini" data-ws-go="' + wsEsc(m.id) + '">Switch to</button>') +
+            (isCur ? '<a class="ws-mini" href="#members">People</a>' : '') +
             (wsCanAdmin(m.id)
               ? '<button type="button" class="ws-mini" data-ws-rename="' + wsEsc(m.id) + '">Rename</button>' +
                 '<button type="button" class="ws-mini" data-ws-archive="' + wsEsc(m.id) + '">Archive</button>'
@@ -452,6 +458,7 @@ async function renderWorkspaces() {
 
   host.innerHTML = wsShell(h);
   wsBindPage(host);
+  if (typeof wmBindInvites === 'function') wmBindInvites(host);
   if (typeof pbTrack === 'function') pbTrack('workspaces_opened');
 }
 
