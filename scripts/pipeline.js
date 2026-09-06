@@ -69,7 +69,7 @@ const PL_PASSED_REASONS = [
 
 let plState = {
   raise: null, targets: null, contacts: {}, activities: {},
-  filters: { stage: '', type: '', relationship: '', q: '' },
+  filters: { stage: '', type: '', relationship: '', q: '', tag: '' },
   sort: 'added', dir: 'desc', showPassed: false
 };
 
@@ -272,6 +272,10 @@ function plVisible(targets) {
     if (f.stage && t.stage !== f.stage) return false;
     if (f.type && t.targetType !== f.type) return false;
     if (f.relationship && t.relationship !== f.relationship) return false;
+    if (f.tag) {
+      const applied = (typeof pdTagsByTarget !== 'undefined' && pdTagsByTarget[t.id]) || [];
+      if (applied.indexOf(f.tag) === -1) return false;
+    }
     if (q) {
       const name = ((typeof ptDisplayName === 'function') ? ptDisplayName(t) : '') || '';
       const contacts = (plState.contacts[t.id] || [])
@@ -375,6 +379,13 @@ async function renderPipeline() {
   plState.contacts = (typeof ptContactsForRaise === 'function')
     ? await ptContactsForRaise(raise.id) : {};
   plState.activities = await plActivitiesForRaise(raise.id);
+  /* Tags for the whole raise in one query, and the tag vocabulary
+     once. Per-row lookups here would be the N+1 that makes a large
+     pipeline crawl. */
+  if (typeof pdTagsForRaise === 'function') {
+    await pdTagsForRaise((targets || []).map(function (t) { return t.id; }));
+    await pdAllTags(true);
+  }
 
   plPaint(host);
   if (typeof pbTrack === 'function') pbTrack('pipeline_viewed');
@@ -435,6 +446,7 @@ function plPaint(host) {
           (plState.filters.relationship === r.key ? ' selected' : '') + '>' + r.label + '</option>';
       }).join('') +
     '</select>' +
+    plTagFilter() +
     (passedCount
       ? '<label class="pl-toggle"><input type="checkbox" data-pl-showpassed' +
         (plState.showPassed ? ' checked' : '') + '> Show passed (' + passedCount + ')</label>'
@@ -457,6 +469,7 @@ function plPaint(host) {
     plTh('stage', 'Stage') +
     '<th scope="col">Relationship</th>' +
     '<th scope="col">Best-fit partner</th>' +
+    '<th scope="col">Tags</th>' +
     plTh('activity', 'Last activity') +
     '<th scope="col"><span class="pl-sr">Actions</span></th>' +
   '</tr></thead><tbody>' + rows.map(plRow).join('') + '</tbody></table></div>';
@@ -464,6 +477,28 @@ function plPaint(host) {
   h += '</div>';
   host.innerHTML = h;
   plBind(host);
+}
+
+/* Only offers tags the founder has actually created. An empty
+   vocabulary shows no control rather than an empty dropdown. */
+function plTagFilter() {
+  const tags = (typeof pdTagCache !== 'undefined' && pdTagCache) ? pdTagCache : [];
+  if (!tags.length) return '';
+  return '<select class="scr-text pl-sel" data-pl-filter="tag" aria-label="Tag">' +
+    '<option value="">Any tag</option>' +
+    tags.map(function (t) {
+      return '<option value="' + plEsc(t.id) + '"' +
+        (plState.filters.tag === t.id ? ' selected' : '') + '>' + plEsc(t.label) + '</option>';
+    }).join('') + '</select>';
+}
+
+function plTagCells(t) {
+  const ids = (typeof pdTagsByTarget !== 'undefined' && pdTagsByTarget[t.id]) || [];
+  if (!ids.length) return '<span class="pl-none">-</span>';
+  return ids.map(function (id) {
+    const lb = (typeof pdTagLabel === 'function') ? pdTagLabel(id) : null;
+    return lb ? '<span class="pl-tag">' + plEsc(lb) + '</span>' : '';
+  }).join('');
 }
 
 function plTh(key, label) {
@@ -490,7 +525,11 @@ function plRow(t) {
     : '#capital-source/' + plEsc(t.personId);
 
   return '<tr class="pl-row' + (t.stage === 'PASSED' ? ' is-passed' : '') + '" data-pl-id="' + plEsc(t.id) + '">' +
-    '<td class="pl-name"><a href="' + href + '">' + plEsc(name) + '</a>' +
+    '<td class="pl-name">' +
+      (t.priority ? '<span class="pl-pri pl-pri-' + plEsc(t.priority.toLowerCase()) +
+        '" title="' + plEsc(t.priority) + ' priority" aria-label="' +
+        plEsc(t.priority) + ' priority"></span>' : '') +
+      '<a href="' + href + '">' + plEsc(name) + '</a>' +
       (money ? '<span class="pl-committed">' + plEsc(money) + '</span>' : '') +
       (t.stage === 'PASSED' && t.passedReason
         ? '<span class="pl-reason">' + plEsc(plLabel(PL_PASSED_REASONS, t.passedReason)) + '</span>'
@@ -508,8 +547,10 @@ function plRow(t) {
     '<td class="pl-fit">' +
       (fit && fit.partnerName ? plEsc(fit.partnerName) : '<span class="pl-none">-</span>') +
     '</td>' +
+    '<td class="pl-tags">' + plTagCells(t) + '</td>' +
     '<td class="pl-last">' + (lastLabel ? plEsc(lastLabel) : '<span class="pl-none">-</span>') + '</td>' +
     '<td class="pl-actions">' +
+      '<button type="button" class="ac-act" data-pl-open="' + plEsc(t.id) + '">Open</button>' +
       '<button type="button" class="ac-act ac-act-quiet" data-pl-remove="' + plEsc(t.id) + '">Remove</button>' +
     '</td>' +
   '</tr>';
@@ -608,6 +649,9 @@ function plBind(host) {
       plPaint(host);
       return;
     }
+    const op = e.target.closest('[data-pl-open]');
+    if (op && typeof pdOpen === 'function') { pdOpen(op.getAttribute('data-pl-open')); return; }
+
     const rm = e.target.closest('[data-pl-remove]');
     if (rm) {
       const t = plFind(rm.getAttribute('data-pl-remove'));
