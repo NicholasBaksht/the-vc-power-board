@@ -9581,5 +9581,4691 @@ Object.assign(partnerProfiles, {
       { label: "ZhenFund - Team (English)", url: "https://en.zhenfund.com/Team" },
       { label: "ZhenFund - Team (Chinese)", url: "https://www.zhenfund.com/Team" }
     ]
+  },
+
+/* ---- Firm batch 1, added 6 September 2026: 200 partner records across the
+   20 firms appended to data-firms.js in the same batch. Appended to shard 6
+   per the convention in data-partners.js, so no new <script> tag is needed.
+   Checked against all 1,483 pre-existing partner records for slug and name
+   collisions before insertion; none found. ---- */
+"yat-siu": {
+    name: "Yat Siu",
+    firm: "Animoca Brands",
+    firmSlug: "animoca-brands",
+    title: "Co-Founder, Executive Chairman, and Managing Director",
+    joinedYear: 2014,
+    investmentFocus: ["Digital assets", "Web3", "Agentic AI", "Real-world asset tokenization"],
+    education: [],
+    previousExperience: [
+      "Atari Germany (from 1990)",
+      "Hong Kong Cybercity/Freenation - founder (1995)",
+      "Outblaze - founder (1998), sold its messaging unit to IBM in 2009",
+      "Dalton Learning Lab - founder (2017)",
+      "ThinkBlaze, the research arm of Outblaze - founder"
+    ],
+    boardSeats: [
+      "Animoca Brands Corporation Limited - Executive Chairman and Managing Director",
+      "BAFTA (British Academy of Film and Television Arts) - member of the advisory board",
+      "Asian Youth Orchestra - director"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1990, event: "Starts his career in technology working for Atari Germany." },
+      { year: 1995, event: "Moves to Hong Kong to establish Hong Kong Cybercity/Freenation, described on the company's site as the first free web page and email provider in Asia." },
+      { year: 1998, event: "Sets up Outblaze, a provider of multilingual white label web services." },
+      { year: 2009, event: "Sells Outblaze's messaging unit to IBM and pivots Outblaze into an incubator of digital entertainment projects and companies." },
+      { year: 2014, event: "Animoca Brands is created as one of the companies incubated by Outblaze." },
+      { year: 2017, event: "Sets up the Dalton Learning Lab, an afterschool digital lab." },
+      { year: 2018, event: "Begins advocating blockchain as a means for users to own their virtual assets, data and equity, per his own company biography." }
+    ],
+    biography: "Yat Siu is co-founder, Executive Chairman and Managing Director of Animoca Brands. His biography on the company's own leadership page states that he started his career in technology at Atari Germany in 1990, moved to Hong Kong in 1995 to establish Hong Kong Cybercity/Freenation, set up Outblaze in 1998, sold Outblaze's messaging unit to IBM in 2009 and pivoted Outblaze into an incubator, and that Animoca Brands was one of the companies it incubated, created in 2014. He set up the Dalton Learning Lab in 2017 and founded ThinkBlaze, the research arm of Outblaze. The same page states that Animoca Brands \"has invested in over 600 companies and projects related to digital assets\", and lists among his recognitions Global Leader of Tomorrow at the World Economic Forum, Young Entrepreneur of the Year at the DHL/SCMP Awards, and inclusion in the Cointelegraph top 100 notable people in blockchain. He is a member of the advisory board of BAFTA and a director of the Asian Youth Orchestra. He is the public face of the company's investment activity but Animoca Brands does not identify him as holding a partner title in any fund vehicle.",
+    notableInvestments: [],
+    sources: [
+      { label: "Animoca Brands - Leadership and Board of Directors (official page, checked 6 Sep 2026)", url: "https://www.animocabrands.com/leadership" },
+      { label: "Animoca Brands - Who we are", url: "https://www.animocabrands.com/who-we-are" },
+      { label: "Animoca Brands - Announcements and news coverage index (checked 6 Sep 2026)", url: "https://www.animocabrands.com/news" }
+    ]
+  },
+"evan-auyang": {
+    name: "Evan Auyang",
+    firm: "Animoca Brands",
+    firmSlug: "animoca-brands",
+    title: "Group President",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Gerson Lehrman Group (GLG) - Managing Director and Head of GLG International",
+      "Kowloon Motor Bus Co. (1933) Ltd. - Deputy Managing Director",
+      "Transport International Holdings Limited - board director",
+      "McKinsey & Company - Associate Partner",
+      "Citigroup - derivatives unit"
+    ],
+    boardSeats: [
+      "Sun Hung Kai & Co. Ltd. - Independent Non-Executive Director",
+      "Asia Financial Holdings Limited - Independent Non-Executive Director",
+      "Innovation City Authority of Ras Al Khaimah, United Arab Emirates - Board Director"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Evan Auyang is Group President of Animoca Brands. The company's own leadership page describes him as \"the group president of Animoca Brands, a global digital asset leader that harnesses tokenization and AI to power consumer-facing and institutional ventures\", and records that he was previously Managing Director and Head of GLG International (Gerson Lehrman Group), Deputy Managing Director of the Kowloon Motor Bus Co. (1933) Ltd. and a board director of its parent Transport International Holdings Limited, and an Associate Partner at McKinsey & Company, with earlier experience in Citigroup's derivatives unit. The same page states that he is currently an Independent Non-Executive Director of two listed companies, Sun Hung Kai & Co. Ltd. and Asia Financial Holdings Limited, and a Board Director of the Innovation City Authority of Ras Al Khaimah in the United Arab Emirates. He is a company executive rather than a partner in an investment vehicle, and no join year is published.",
+    notableInvestments: [],
+    sources: [
+      { label: "Animoca Brands - Leadership and Board of Directors (official page, checked 6 Sep 2026)", url: "https://www.animocabrands.com/leadership" }
+    ]
+  },
+"brian-chan": {
+    name: "Brian Chan",
+    firm: "Animoca Brands",
+    firmSlug: "animoca-brands",
+    title: "Chief Development Officer",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "McKinsey & Company - advised financial institutions on digital transformation",
+      "DBS Bank - debt capital markets and corporate banking",
+      "Citibank - debt capital markets and corporate banking",
+      "Animoca Brands - Deputy Chief Operating Officer (until June 2026)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Appointed Chief Development Officer of Animoca Brands, announced 2 June 2026, having previously been Deputy Chief Operating Officer." }
+    ],
+    biography: "Brian Chan is Chief Development Officer of Animoca Brands and a member of its Executive Committee. The company announced his appointment to the role on 2 June 2026, moving him from Deputy Chief Operating Officer. Its leadership page states that he leads growth initiatives and has \"built out its institutional portfolio and shaped product and strategy across NUVA\", and that he previously worked at McKinsey & Company advising financial institutions on digital transformation and held roles at DBS Bank and Citibank across debt capital markets and corporate banking. No join year, education or board seat is published.",
+    notableInvestments: [],
+    sources: [
+      { label: "Animoca Brands - Leadership and Board of Directors (official page, checked 6 Sep 2026)", url: "https://www.animocabrands.com/leadership" },
+      { label: "Animoca Brands - Animoca Brands announces key executive appointments, 2 Jun 2026", url: "https://www.animocabrands.com/announcement/animoca-brands-announces-key-executive-appointments" }
+    ]
+  },
+"minh-do": {
+    name: "Minh Do",
+    firm: "Animoca Brands",
+    firmSlug: "animoca-brands",
+    title: "Chief Operating Officer",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Gerson Lehrman Group (GLG) - led the Greater China businesses",
+      "Linklaters LLP - started his career"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Minh Do is Chief Operating Officer of Animoca Brands. The company's leadership page states that as COO he builds \"the global organisation that supports Animoca Brands' strategy to innovate, explore and build the underlying infrastructure for Web3\", that he previously led the Greater China businesses at Gerson Lehrman Group (GLG), that he started his career at Linklaters LLP, and that he is a dual-qualified attorney in Hong Kong and New York. No degrees, institutions, join year or board seats are published, so education is left empty rather than inferred from the qualification statement.",
+    notableInvestments: [],
+    sources: [
+      { label: "Animoca Brands - Leadership and Board of Directors (official page, checked 6 Sep 2026)", url: "https://www.animocabrands.com/leadership" }
+    ]
+  },
+"shaun-kraft": {
+    name: "Shaun Kraft",
+    firm: "Animoca Brands",
+    firmSlug: "animoca-brands",
+    title: "Chief Financial Officer",
+    joinedYear: 2026,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "MoneyHero Group - Chief Financial Officer and Chief Operating Officer",
+      "CMCC Global - Chief Operating Officer and Chief Financial Officer",
+      "Lazard",
+      "Perella Weinberg Partners"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Appointed Chief Financial Officer of Animoca Brands effective 11 June 2026, announced 2 June 2026; the announcement records that he had been running an independent strategic advisory practice." }
+    ],
+    biography: "Shaun Kraft is Chief Financial Officer of Animoca Brands, appointed effective 11 June 2026 and announced by the company on 2 June 2026, succeeding Jared Shaw who moved to a strategic advisory role. The company's leadership page describes him as \"a seasoned finance executive and strategic operator with extensive experience scaling high-growth technology and financial services businesses across Asia-Pacific and globally\", and records that he was previously chief financial officer and chief operating officer of MoneyHero Group, chief operating officer and chief financial officer at the digital asset investment firm CMCC Global, and worked at Lazard and Perella Weinberg Partners. No education or board seats are published.",
+    notableInvestments: [],
+    sources: [
+      { label: "Animoca Brands - Leadership and Board of Directors (official page, checked 6 Sep 2026)", url: "https://www.animocabrands.com/leadership" },
+      { label: "Animoca Brands - Animoca Brands announces key executive appointments, 2 Jun 2026", url: "https://www.animocabrands.com/announcement/animoca-brands-announces-key-executive-appointments" }
+    ]
+  },
+"jamii-quoc": {
+    name: "Jamii Quoc",
+    firm: "Animoca Brands",
+    firmSlug: "animoca-brands",
+    title: "General Counsel",
+    joinedYear: 2022,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Meridian Capital - General Counsel",
+      "Kirkland & Ellis - Partner in the M&A practice"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Joins Animoca Brands, per the company's own leadership page." }
+    ],
+    biography: "Jamii Quoc is General Counsel of Animoca Brands and a member of its Executive Committee. The company's leadership page states that she joined Animoca Brands in 2022, has built its legal and compliance team, participates in shaping the Web3 regulatory ecosystem through involvement with the Hong Kong Government, and brings over 25 years of legal experience including roles as General Counsel at Meridian Capital and Partner in the M&A practice at Kirkland & Ellis. She is a legal officer rather than an investing decision-maker, and no education or board seats are published.",
+    notableInvestments: [],
+    sources: [
+      { label: "Animoca Brands - Leadership and Board of Directors (official page, checked 6 Sep 2026)", url: "https://www.animocabrands.com/leadership" }
+    ]
+  },
+"robby-yung": {
+    name: "Robby Yung",
+    firm: "Animoca Brands",
+    firmSlug: "animoca-brands",
+    title: "CEO of Investments",
+    joinedYear: null,
+    investmentFocus: ["Blockchain gaming", "Digital assets"],
+    education: [],
+    previousExperience: [
+      "Animoca Brands - first Chief Executive Officer, from 2015",
+      "One Media Group - co-founder",
+      "Redgate Media Group - founder"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Becomes the first CEO of Animoca Brands after taking the group public in 2015, per the company's own leadership page." },
+      { year: 2018, event: "Has been active in blockchain gaming since 2018, per the company's own leadership page." },
+      { year: 2026, event: "Listed as \"CEO of Investments\" at Animoca Brands and \"CEO of the Sandbox\" on the Consensus Hong Kong 2026 speaker programme." }
+    ],
+    biography: "Robby Yung is CEO of Investments at Animoca Brands and is the senior investing decision-maker the company itself identifies. Animoca Brands' own leadership page describes him as \"Animoca Brands' CEO of investments, partner at Animoca Capital\", which is the only partner-level title the company publishes for anyone and the only place Animoca Capital is named on the leadership page. The same page states that he has been in gaming since 2012 and blockchain gaming since 2018, that he served as the first CEO of Animoca Brands after taking the group public in 2015, that he co-founded the magazine publisher One Media Group and that he founded the Chinese television and outdoor media concern Redgate Media Group. His Consensus Hong Kong 2026 speaker profile gives his title as \"CEO of Investments\" at Animoca Brands and adds that he is also \"CEO of the Sandbox\". His role at The Sandbox is an executive role at an Animoca Brands platform and is not recorded as a board seat. No education or join year is published.",
+    notableInvestments: [],
+    sources: [
+      { label: "Animoca Brands - Leadership and Board of Directors (official page, checked 6 Sep 2026)", url: "https://www.animocabrands.com/leadership" },
+      { label: "Consensus Hong Kong 2026 - Robby Yung speaker profile (CEO of Investments, Animoca Brands; CEO of The Sandbox)", url: "https://consensus-hongkong.coindesk.com/agenda/speaker/-robby-yung" }
+    ]
+  },
+"chris-whiteman": {
+    name: "Chris Whiteman",
+    firm: "Animoca Brands",
+    firmSlug: "animoca-brands",
+    title: "Non-Executive Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Degrees in Economics and Applied Finance (institutions not stated on the company's page)"
+    ],
+    previousExperience: [],
+    boardSeats: [
+      "Animoca Brands Corporation Limited - Non-Executive Director",
+      "iCandy Interactive Limited - non-executive director"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Chris Whiteman is a Non-Executive Director of Animoca Brands Corporation Limited. The company's own board section describes him as \"an executive with over twenty years of experience in commercial management, finance, and strategic advisory roles across various industries including gaming and app development\", states that he holds degrees in Economics and Applied Finance without naming the institutions, and records that he is a non-executive director of iCandy Interactive Limited. iCandy Interactive Limited was removed from the ASX Official List on 1 April 2026, so that directorship is a seat at a company that is no longer listed. He is a board member rather than an investing decision-maker, and no join year or prior employers are published.",
+    notableInvestments: [],
+    sources: [
+      { label: "Animoca Brands - Leadership and Board of Directors (official page, checked 6 Sep 2026)", url: "https://www.animocabrands.com/leadership" },
+      { label: "Listcorp - iCandy Interactive Limited (ASX:ICI) confirms 1 April 2026 delisting, announcement 31 Mar 2026", url: "https://www.listcorp.com/asx/ici/icandy-interactive-limited/news/icandy-confirms-1-april-2026-delisting-3334565.html" },
+      { label: "deListed Australia - iCandy Interactive Limited (ASX.ICI) is now delisted", url: "https://www.delisted.com.au/company/icandy-interactive-limited/" }
+    ]
+  },
+"john-madden": {
+    name: "John Madden",
+    firm: "Animoca Brands",
+    firmSlug: "animoca-brands",
+    title: "Non-Executive Director and Company Secretary",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Rio Tinto - 24 years in various disciplines"
+    ],
+    boardSeats: [
+      "Animoca Brands Corporation Limited - Non-Executive Director and Company Secretary"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "John Madden is a Non-Executive Director and Company Secretary of Animoca Brands Corporation Limited. The company's own board section states that he has \"considerable experience leading work programmes on compliance, due diligence, governance and finance\", that he worked at Rio Tinto for 24 years in various disciplines, and that he subsequently worked with small market capitalization companies, listing entities on multiple exchanges. He is a governance officer rather than an investing decision-maker. No education, join year or other current board seats are published.",
+    notableInvestments: [],
+    sources: [
+      { label: "Animoca Brands - Leadership and Board of Directors (official page, checked 6 Sep 2026)", url: "https://www.animocabrands.com/leadership" }
+    ]
+  },
+"jeremy-colless": {
+    name: "Jeremy Colless",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Partner & CEO",
+    joinedYear: 2004,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "SG Warburg - fixed income and credit markets, New York and Hong Kong",
+      "Lehman Brothers - fixed income and credit markets, New York and Hong Kong",
+      "ANZ, Sydney - Global Head of Securities Trading and Institutional Sales"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2004, event: "Co-founded Artesian, which the firm's history page says was spun out of ANZ Banking Group's Capital Markets business." }
+    ],
+    biography: "Jeremy Colless is Partner and CEO of Artesian, which he co-founded in 2004 and where he established the firm's venture capital business. Before founding Artesian he spent 15 years in fixed income and credit markets at SG Warburg and Lehman Brothers in New York and Hong Kong, and at ANZ in Sydney where he was Global Head of Securities Trading and Institutional Sales. Artesian's history page names him as one of three co-founders alongside Matt Clunies-Ross and John McCartney. No education is published on his firm profile.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Jeremy Colless profile", url: "https://www.artesianinvest.com/team/jeremy-colless" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"matt-clunies-ross": {
+    name: "Matt Clunies-Ross",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Partner & CIO ACM",
+    joinedYear: 2004,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Bachelor of Economics, Monash University",
+      "Graduate Diploma in Financial Planning, Deakin University"
+    ],
+    previousExperience: [
+      "Macquarie Bank - investment banking",
+      "HSBC - investment banking",
+      "ANZ - investment banking"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2004, event: "Co-founded Artesian." }
+    ],
+    biography: "Matt Clunies-Ross co-founded Artesian in 2004 and is Chief Investment Officer of Artesian Capital Management. His firm profile states he is responsible for the firm's global fixed income business and also sits on the investment committee of several Artesian VC funds. He previously worked in investment banking at Macquarie Bank, HSBC and ANZ. He holds a Bachelor of Economics from Monash University and a Graduate Diploma in Financial Planning from Deakin University.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Matt Clunies-Ross profile", url: "https://www.artesianinvest.com/team/matthew-clunies-ross" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"john-mccartney": {
+    name: "John McCartney",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Partner, Debt & VC Americas",
+    joinedYear: 2004,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "ANZ Banking Group - Director, credit and fixed income trading across global markets"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2004, event: "Named on Artesian's history page as one of the firm's three co-founders in 2004." }
+    ],
+    biography: "John McCartney is a co-founder of Artesian and Partner, Debt and VC Americas, heading the firm's US operations from New York and leading its global credit investment activities. Before Artesian he was a Director at ANZ Banking Group, trading credit and fixed income products across global markets. His joined year is taken from Artesian's history page, which names him as a 2004 co-founder; his individual profile page does not state a year. No education is published on his firm profile.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - John McCartney profile", url: "https://www.artesianinvest.com/team/john-mccartney" },
+      { label: "Artesian - Company history timeline (2004 co-founders)", url: "https://www.artesianinvest.com/#our-history" }
+    ]
+  },
+"mei-lee": {
+    name: "Mei Lee",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Partner, Head of Ops",
+    joinedYear: 2006,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Bachelor of Commerce, Melbourne University",
+      "Bachelor of Information Systems, Melbourne University"
+    ],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2006, event: "Joined Artesian as a fund accountant." }
+    ],
+    biography: "Mei Lee is Partner and Head of Operations at Artesian, where her profile says she is Head of Operations and Fund Administration, managing the daily operations of administering Artesian's fixed income and venture capital funds, providing investor services to limited partners and managing the funds' investments. She joined Artesian as a fund accountant in 2006. She holds a Bachelor of Commerce and a Bachelor of Information Systems from Melbourne University, with specialisations in accounting and finance and in business information systems.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Mei Lee profile", url: "https://www.artesianinvest.com/team/mei-lee" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"ali-clunies-ross": {
+    name: "Ali Clunies-Ross",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Partner & Co-Head of VC",
+    joinedYear: 2017,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Bachelor of Commerce, University of NSW",
+      "Master of Business Law, University of NSW"
+    ],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2017, event: "Joined Artesian, working as an analyst for three years and portfolio manager for four years." },
+      { year: 2022, event: "Awarded Australian Clean Tech Investor of the Year." },
+      { year: 2023, event: "Her profile states she was instrumental in the launch of Artesian's Female Leaders Fund." },
+      { year: 2024, event: "Promoted to Partner." }
+    ],
+    biography: "Ali Clunies-Ross is Partner and Co-Head of VC at Artesian, responsible for investment strategy, sourcing and portfolio management across early and growth-stage companies. She joined Artesian in 2017, worked as an analyst for three years and portfolio manager for four years, and was promoted to Partner in 2024. Her profile records that she was awarded Australian Clean Tech Investor of the Year in 2022 and was instrumental in the launch of Artesian's Female Leaders Fund in 2023. She completed a Bachelor of Commerce and a Master of Business Law at the University of NSW.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Ali Clunies-Ross profile", url: "https://www.artesianinvest.com/team/ali-clunies-ross" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"gilles-plante": {
+    name: "Gilles Plante",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Partner, Head of VCaaS",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Master of Computer Science Engineering (M.Sc), ESME, Paris",
+      "Executive leadership programmes, Duke University",
+      "Executive leadership programmes, MIT Sloan School of Management"
+    ],
+    previousExperience: [
+      "ANZ Banking Group - roles including CEO Asia Pacific, Deputy CEO Institutional & International Banking, and Global Head of Markets",
+      "Credit Suisse"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Gilles Plante is a Partner at Artesian responsible for the firm's Venture Capital as a Service (VCaaS) business. His profile states he manages venture capital funds and investments for partners including GrainCorp, Coca-Cola EuroPacific Partners and InvoCare, and serves on investment committees. Before Artesian he spent over 25 years in financial markets and international banking, holding positions including CEO Asia Pacific, Deputy CEO Institutional and International Banking, and Global Head of Markets across ANZ Banking Group and Credit Suisse. He holds a Master of Computer Science Engineering from ESME in Paris and has completed executive leadership programmes at Duke University and the MIT Sloan School of Management. No join year is published.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Gilles Plante profile", url: "https://www.artesianinvest.com/team/gilles-plante" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"rohan-gray": {
+    name: "Rohan Gray",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Partner & Co-Head of VC",
+    joinedYear: 2016,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Bachelor of Commerce (double major in Accounting and Finance), Monash University"
+    ],
+    previousExperience: [
+      "UBS - Global Equities Trader specialising in special situation opportunities"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Joined Artesian, working as an analyst for five years and portfolio manager for three years." },
+      { year: 2024, event: "Promoted to Partner." }
+    ],
+    biography: "Rohan Gray is Partner and Co-Head of VC at Artesian, responsible for investment strategy, sourcing and portfolio management across early and growth-stage companies. He joined Artesian in 2016, worked as an analyst for five years and portfolio manager for three years, and was promoted to Partner in 2024. He previously worked at UBS as a Global Equities Trader specialising in special situation opportunities, and holds a Bachelor of Commerce from Monash University with a double major in accounting and finance. His firm profile places him in Austin.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Rohan Gray profile", url: "https://www.artesianinvest.com/team/rohan-gray" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"vicky-lay": {
+    name: "Vicky Lay",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Partner, VCaaS North America",
+    joinedYear: 2015,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Bachelor of Business (Economics & Management), University of Technology Sydney",
+      "Bachelor of Arts in International Studies (Contemporary China), University of Technology Sydney"
+    ],
+    previousExperience: [
+      "Zookal - co-founder and Chief Operating Officer"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Joined Artesian's venture capital business." },
+      { year: 2017, event: "Named in Forbes Asia 30 Under 30, April 2017, per her firm profile." }
+    ],
+    biography: "Vicky Lay is a Partner at Artesian, VCaaS North America, and is described on her firm profile as Head of Impact, based in New York. She joined Artesian's venture capital business in 2015 and her profile says she is focused on directing Artesian's and its investors' capital, innovation and human endeavour towards positive social and environmental outcomes. She previously co-founded the edtech venture Zookal, where she was Chief Operating Officer. She holds a Bachelor of Business in Economics and Management and a Bachelor of Arts of International Studies in Contemporary China, both from the University of Technology, Sydney.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Vicky Lay profile", url: "https://www.artesianinvest.com/team/vicky-lay" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"tim-heasley": {
+    name: "Tim Heasley",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Partner, VCaaS Asia & MENA",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Master of Banking and Financial Services Law, University of Melbourne",
+      "Bachelor of Laws, University of Canterbury, New Zealand",
+      "Bachelor of Science (Biology), University of Canterbury, New Zealand",
+      "Graduate of the Australian Institute of Company Directors"
+    ],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tim Heasley is Partner, VCaaS Asia and MENA at Artesian, based in Singapore. His profile states he is responsible for Artesian's business in South East Asia and the Middle East and is closely involved with capital raising, new business development, strategy and the overall direction of the Artesian group, and that he was previously based in Artesian's Shanghai office managing Artesian's China VC Fund. It records more than 25 years of funds management and financial services experience as a lawyer and senior executive, without naming prior employers. He holds a Master of Banking and Financial Services Law from the University of Melbourne, and a Bachelor of Laws and a Bachelor of Science in Biology from the University of Canterbury, New Zealand, and is a graduate of the Australian Institute of Company Directors.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Tim Heasley profile", url: "https://www.artesianinvest.com/team/tim-heasley" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"robert-williams": {
+    name: "Robert Williams",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Partner, VCaaS",
+    joinedYear: 2017,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: ["Agrifood"],
+    education: [
+      "Bachelor of Arts / Bachelor of Commerce, Australian National University"
+    ],
+    previousExperience: [
+      "Macquarie Infrastructure and Real Assets - agricultural investment team manager"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2017, event: "Joined Artesian." }
+    ],
+    biography: "Robert Williams is a Partner at Artesian in the VCaaS business, based in Sydney, and joined the firm in 2017. His profile states he leads Artesian's agrifood venture capital investment activities and is a portfolio manager for the GrainInnovate Fund and the SproutX VC Fund. He previously managed an agricultural investment team at Macquarie Infrastructure and Real Assets. He holds a Bachelor of Arts and Bachelor of Commerce from the Australian National University.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Robert Williams profile", url: "https://www.artesianinvest.com/team/robert-williams" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"david-gallagher": {
+    name: "David Gallagher",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Partner, Head of Aust. Fixed Income",
+    joinedYear: 2013,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Master of Applied Finance, Kaplan (formerly Securities Institute of Australia)"
+    ],
+    previousExperience: [
+      "Deutsche Bank, United Kingdom",
+      "RBS, United Kingdom"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2013, event: "Joined Artesian." }
+    ],
+    biography: "David Gallagher joined Artesian in 2013 and is Partner, Head of Australian Fixed Income. His profile states he is portfolio manager of the Artesian Corporate Bond Fund and the Artesian Green & Sustainable Bond Fund. Before joining Artesian he spent nine years in the United Kingdom working for Deutsche Bank and RBS. He holds a Master of Applied Finance from Kaplan, formerly the Securities Institute of Australia, where he received the Macquarie Bank Dux Award as top graduating student. He is included here because he holds a Partner title at the firm; his responsibilities are in fixed income rather than venture.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - David Gallagher profile", url: "https://www.artesianinvest.com/team/david-gallagher" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"felix-zhang": {
+    name: "Felix Zhang",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Venture Partner",
+    joinedYear: 2005,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: ["China venture capital"],
+    education: [
+      "BSc in Applied Mathematics, Computer Science and Business, University of Wisconsin",
+      "MBA, Carlson School of Management, University of Minnesota",
+      "Master in Finance, London Business School"
+    ],
+    previousExperience: [
+      "Banco Comercial Portugues - investment banking",
+      "Rand Merchant Bank - investment banking",
+      "Morgan Stanley - investment banking",
+      "CIBC - investment banking"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2005, event: "Joined Artesian." }
+    ],
+    biography: "Felix Zhang is listed as Venture Partner on Artesian's team page and runs the firm's Shanghai-based China venture capital business, handling later-stage venture analysis and investments for Artesian's Australian and Asian funds. He joined Artesian in 2005. Before that he spent five years in investment banking at Banco Comercial Portugues, Rand Merchant Bank, Morgan Stanley and CIBC, in roles spanning alternative investments, quantitative research, equity research and derivatives trading and risk management. He holds a BSc in Applied Mathematics, Computer Science and Business from the University of Wisconsin, an MBA from the Carlson School of Management at the University of Minnesota, and a Master in Finance from London Business School. Note that his own profile page describes him as \"a Partner of Artesian Capital Management\" while the team page title is Venture Partner; the team page title is recorded here.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Felix Zhang profile", url: "https://www.artesianinvest.com/team/felix-zhang" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"stuart-fox": {
+    name: "Stuart Fox",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Venture Partner",
+    joinedYear: 2012,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Bachelor of Economics, Macquarie University",
+      "Masters in Applied Finance, University of Wollongong",
+      "Senior Fellow, Financial Services Institute of Australia"
+    ],
+    previousExperience: [
+      "UBS - Managing Director, Head of Asia Commodities, Hong Kong; previously Co-head of Global Hedge Fund distribution, London"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2012, event: "Joined Artesian as a Managing Partner and equity owner, per his firm profile." }
+    ],
+    biography: "Stuart Fox is listed as Venture Partner on Artesian's team page. His profile states he joined Artesian in 2012 as a Managing Partner and equity owner and has been involved in all aspects of the venture capital business from capital raising to investing and external partnerships, with a current focus on business strategy, management accountability, external partnerships and community development. He spent 25 years in finance across fixed income, commodities, foreign exchange and alternatives, including 15 years at UBS, most recently as Managing Director, Head of Asia Commodities in Hong Kong and previously as Co-head of Global Hedge Fund distribution in London. He holds a Bachelor of Economics from Macquarie University and a Masters in Applied Finance from the University of Wollongong, and is a Senior Fellow of the Financial Services Institute of Australia. He is based in Sydney.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Stuart Fox profile", url: "https://www.artesianinvest.com/team/stuart-fox" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"david-rohrsheim": {
+    name: "David Rohrsheim",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Venture Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Bachelor of Engineering (1st Class Honours), Adelaide University",
+      "Bachelor of Finance, Adelaide University",
+      "MBA, Stanford University"
+    ],
+    previousExperience: [
+      "Bain & Company - Senior Associate Consultant, Sydney and London",
+      "Draper Fisher Jurvetson - Analyst (2008 to 2010)",
+      "Uber - General Manager, Australia & New Zealand"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2008, event: "Began his venture capital career as an Analyst at Draper Fisher Jurvetson, a role he held until 2010." },
+      { year: 2012, event: "Opened Uber's operations in Australia, later serving as General Manager for Uber Australia and New Zealand." }
+    ],
+    biography: "David Rohrsheim is a Venture Partner at Artesian, focused on assisting startups that have received investment from the South Australian Venture Capital Fund. His profile states he also sits on the investment committee for Galileo Ventures. He was previously General Manager for Uber Australia and New Zealand, after opening Uber's operations in Australia in 2012. His first venture capital experience was as an Analyst at Draper Fisher Jurvetson from 2008 to 2010, and before that he was a Senior Associate Consultant at Bain & Company working in Sydney and London. He holds a Bachelor of Engineering with first class honours and a Bachelor of Finance from Adelaide University, and an MBA from Stanford University. He is based in Adelaide. His investment committee role at Galileo Ventures is not recorded as a board seat because a fund investment committee seat is not a company directorship.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - David Rohrsheim profile", url: "https://www.artesianinvest.com/team/david-rohrsheim" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"luke-fay": {
+    name: "Luke Fay",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Venture Partner",
+    joinedYear: 2015,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: ["Late-stage investments"],
+    education: [
+      "Bachelor of Commerce in Finance and Economics, University of Melbourne",
+      "Program for Leadership Development, Harvard University",
+      "Chartered Alternative Investment Analyst (CAIA)"
+    ],
+    previousExperience: [
+      "UBS - Managing Director, investment bank, New York, responsible for UBS America's US telecom, media/cable and technology trading business"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Joined Artesian." }
+    ],
+    biography: "Luke Fay is a Venture Partner at Artesian supporting the firm's venture capital business with a focus on select late-stage investments and board roles. He joined Artesian in 2015 and is based in Sydney. He was previously a Managing Director at the UBS investment bank in New York, responsible for UBS America's US telecom, media and cable, and technology trading business. He holds a Bachelor of Commerce in Finance and Economics from the University of Melbourne, completed the Program for Leadership Development at Harvard University, and holds the Chartered Alternative Investment Analyst designation. His profile refers to board roles in general terms but names no company, so no board seats are recorded.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Luke Fay profile", url: "https://www.artesianinvest.com/team/luke-fay" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"nayoko-wicaksono": {
+    name: "Nayoko Wicaksono",
+    firm: "Artesian Venture Partners",
+    firmSlug: "artesian-vc",
+    title: "Venture Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: ["Indonesia"],
+    education: [
+      "Bachelor of Arts in Economics & Commerce, University of British Columbia"
+    ],
+    previousExperience: [
+      "Plug and Play Tech Center - Accelerator Director",
+      "Plug and Play Indonesia - Venture Partner"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Nayoko Wicaksono is a Venture Partner and analyst at Artesian based in Jakarta, responsible for the firm's venture capital activities in Indonesia. His profile states he is also co-founder and Managing Director of Algoritma, a data science education startup, and that he previously held the position of Venture Partner at Plug and Play Indonesia and served as Accelerator Director for the Plug and Play Tech Center. He holds a Bachelor of Arts in Economics and Commerce from the University of British Columbia. No join year is published.",
+    notableInvestments: [],
+    sources: [
+      { label: "Artesian - Nayoko Wicaksono profile", url: "https://www.artesianinvest.com/team/nayoko-wicaksono" },
+      { label: "Artesian - Team page", url: "https://www.artesianinvest.com/team" }
+    ]
+  },
+"emanuele-levi": {
+    name: "Emanuele Levi",
+    firm: "CDP Venture Capital Sgr S.p.A.",
+    firmSlug: "cdp-venture-capital",
+    title: "Amministratore Delegato e Direttore Generale",
+    joinedYear: 2025,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Degree in Business Administration, Turin",
+      "Corporate Finance programme, London Business School"
+    ],
+    previousExperience: [
+      "Credito Italiano Group, London (from 1993)",
+      "Bain & Company, Milan",
+      "Lazard, Investment Banking, Milan",
+      "Pino Venture",
+      "360 Capital, General Partner (until 2025)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1993, event: "Began his career with the Credito Italiano Group in London, per the firm's 30 May 2025 appointment release." },
+      { year: 2000, event: "Focused on venture capital from 2000, initially at Pino Venture, per the firm's 30 May 2025 appointment release." },
+      { year: 2025, event: "Appointed Amministratore Delegato e Direttore Generale of CDP Venture Capital Sgr S.p.A. with effect from 30 May 2025, having resigned from 360 Capital where he was General Partner." }
+    ],
+    biography: "Emanuele Levi has been Amministratore Delegato e Direttore Generale (Chief Executive Officer and General Manager) of CDP Venture Capital Sgr S.p.A. since 30 May 2025, per the firm's own appointment release. He holds a degree in Business Administration from Turin and completed a corporate finance programme at London Business School. His career began in 1993 with the Credito Italiano Group in London, followed by Bain & Company and Lazard investment banking in Milan. He has worked in venture capital since 2000, first at Pino Venture and then at 360 Capital, where he was General Partner until 2025.",
+    notableInvestments: [],
+    sources: [
+      { label: "CDP Venture Capital SGR - Emanuele Levi named Chief Executive Officer and General Manager (30 May 2025)", url: "https://www.cdpventurecapital.it/en/news.page?contentId=COM39430" },
+      { label: "CDP Venture Capital - Management page (current title, Italian)", url: "https://www.cdpventurecapital.it/it/management.page" },
+      { label: "CDP Venture Capital - Governance page (current title, Italian)", url: "https://www.cdpventurecapital.it/it/governance.page" }
+    ]
+  },
+"anna-lambiase": {
+    name: "Anna Lambiase",
+    firm: "CDP Venture Capital Sgr S.p.A.",
+    firmSlug: "cdp-venture-capital",
+    title: "Presidente",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Anna Lambiase is listed as Presidente of CDP Venture Capital Sgr S.p.A. on the firm's current Governance and Management pages, and is named as Chairwoman in the firm's 30 May 2025 release announcing the appointment of Emanuele Levi. The firm's site publishes no biography for her, and no education, prior employment or appointment date could be verified from an acceptable source, so those fields are left empty.",
+    notableInvestments: [],
+    sources: [
+      { label: "CDP Venture Capital - Governance page (Presidente)", url: "https://www.cdpventurecapital.it/it/governance.page" },
+      { label: "CDP Venture Capital - Management page (Presidente)", url: "https://www.cdpventurecapital.it/it/management.page" },
+      { label: "CDP Venture Capital SGR - Emanuele Levi named Chief Executive Officer and General Manager (names Anna Lambiase as Chairwoman, 30 May 2025)", url: "https://www.cdpventurecapital.it/en/news.page?contentId=COM39430" }
+    ]
+  },
+"alessandro-scortecci": {
+    name: "Alessandro Scortecci",
+    firm: "CDP Venture Capital Sgr S.p.A.",
+    firmSlug: "cdp-venture-capital",
+    title: "Direttore Investimenti Diretti",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Alessandro Scortecci is listed as Direttore Investimenti Diretti (Director of Direct Investments) on the CDP Venture Capital management page, checked 6 September 2026. The firm's site publishes names, titles and LinkedIn links on that page but no biography text, and no education, prior employment or join year for him could be verified from an acceptable source.",
+    notableInvestments: [],
+    sources: [
+      { label: "CDP Venture Capital - Management page (Italian, Direttore Investimenti Diretti)", url: "https://www.cdpventurecapital.it/it/management.page" },
+      { label: "CDP Venture Capital - Management page (English, Director of Direct Investments)", url: "https://www.cdpventurecapital.it/en/management.page" }
+    ]
+  },
+"cristina-bini": {
+    name: "Cristina Bini",
+    firm: "CDP Venture Capital Sgr S.p.A.",
+    firmSlug: "cdp-venture-capital",
+    title: "Direttore Investimenti Indiretti",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Cristina Bini is listed as Direttore Investimenti Indiretti (Director of Indirect Investments) on the CDP Venture Capital management page, checked 6 September 2026. The indirect investment activity is the firm's fund-of-funds programme, which its Chi Siamo page describes as 47 third-party-manager funds in portfolio. The firm's site publishes no biography text for her, and no education, prior employment or join year could be verified from an acceptable source.",
+    notableInvestments: [],
+    sources: [
+      { label: "CDP Venture Capital - Management page (Italian, Direttore Investimenti Indiretti)", url: "https://www.cdpventurecapital.it/it/management.page" },
+      { label: "CDP Venture Capital - Management page (English, Director of Indirect Investments)", url: "https://www.cdpventurecapital.it/en/management.page" }
+    ]
+  },
+"hoolie-tejwani": {
+    name: "Hoolie Tejwani",
+    firm: "Coinbase Ventures",
+    firmSlug: "coinbase-ventures",
+    title: "Head of Coinbase Ventures",
+    joinedYear: null,
+    investmentFocus: ["Stablecoin payments and infrastructure", "Crypto and AI", "Consumer applications of crypto including gaming", "Proof of humanity"],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Interviewed as \"Head of Coinbase Ventures\" on the Castle Island Ventures podcast (episode 610, 7 April 2025)." },
+      { year: 2025, event: "Profiled by Global Venturing on 17 June 2025 in its 2025 Powerlist under the title \"head, Coinbase Ventures\"." },
+      { year: 2025, event: "Named as one of four contributors to the Coinbase Ventures post \"Ideas we are excited for in 2026\" (25 November 2025), credited on the \"Proof of Humanity\" section." }
+    ],
+    biography: "Hoolie Tejwani leads Coinbase Ventures, the corporate venture arm of Coinbase Global, Inc. His ETHDenver speaker profile gives his title as \"Head of Coinbase Ventures\" and states that he \"leads the global venture arm of Coinbase, investing in 500+ companies shaping the onchain economy\" and that his \"experience spans M&A, strategic partnerships, and high-impact investments across the crypto ecosystem\". Global Venturing's June 2025 profile gives his title as \"head, Coinbase Ventures\" and says he worked for Wall Street firms before Coinbase, without naming them; it quotes him saying Coinbase Ventures invests off the Coinbase balance sheet and that the unit has made more than 500 investments in nearly 50 countries. Cointelegraph identified him as \"head of Coinbase Ventures\" in November 2025. No named prior employers, education or join year could be sourced from an acceptable source, and Coinbase does not publish a Coinbase Ventures team page.",
+    notableInvestments: [],
+    sources: [
+      { label: "ETHDenver - Hoolie Tejwani speaker page", url: "https://ethdenver.com/speakers/hoolie-tejwani/" },
+      { label: "Global Venturing - Powerlist 2025: Hoolie Tejwani, 17 Jun 2025", url: "https://globalventuring.com/corporate/awards/powerlist-2025-hoolie-tejwani/" },
+      { label: "Castle Island Ventures - EP.610, 7 Apr 2025", url: "https://castleisland.vc/hoolie-tejwani-coinbase-on-the-evolution-of-coinbase-ventures-ep-610/" },
+      { label: "Coinbase blog - Ideas we are excited for in 2026, 25 Nov 2025", url: "https://www.coinbase.com/blog/Coinbase-Ventures-Ideas-we-are-excited-for-in-2026" },
+      { label: "Cointelegraph - Coinbase Ventures' 9 crypto investment bets for 2026, 26 Nov 2025", url: "https://cointelegraph.com/news/coinbase-venture-arm-shares-9-crypto-innovations-it-seeks-support-2026" }
+    ]
+  },
+"jonathan-king": {
+    name: "Jonathan King",
+    firm: "Coinbase Ventures",
+    firmSlug: "coinbase-ventures",
+    title: "Investor",
+    joinedYear: null,
+    investmentFocus: ["Prediction market trading terminals", "Unsecured lending and onchain credit", "AI for onchain development and security"],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Named as a contributor to the Coinbase Ventures post \"Ideas we are excited for in 2026\" (25 November 2025), credited on the \"Trading Terminals for Prediction Markets\", \"Unsecured Lending / Credit\" and \"AI for Onchain Development & Security\" sections." }
+    ],
+    biography: "Jonathan King is named as one of four contributors to Coinbase Ventures' 25 November 2025 outlook post \"Ideas we are excited for in 2026\", where he is credited by name and X handle (@jonathankingvc) on the sections covering prediction market trading terminals, unsecured onchain lending and credit, and AI for onchain development and security. Cointelegraph's 26 November 2025 write-up of that post refers to him as \"Coinbase Ventures investor Jonathan King\". Coinbase publishes no Coinbase Ventures team page and no formal job title for him; \"Investor\" here is taken from the Cointelegraph descriptor and should be confirmed before use. No education, prior employers or join year could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "Coinbase blog - Ideas we are excited for in 2026, 25 Nov 2025", url: "https://www.coinbase.com/blog/Coinbase-Ventures-Ideas-we-are-excited-for-in-2026" },
+      { label: "Cointelegraph - Coinbase Ventures' 9 crypto investment bets for 2026, 26 Nov 2025", url: "https://cointelegraph.com/news/coinbase-venture-arm-shares-9-crypto-innovations-it-seeks-support-2026" }
+    ]
+  },
+"ethan-oak": {
+    name: "Ethan Oak",
+    firm: "Coinbase Ventures",
+    firmSlug: "coinbase-ventures",
+    title: "Investor",
+    joinedYear: null,
+    investmentFocus: ["Perpetual markets composability", "Onchain privacy"],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Named as a contributor to the Coinbase Ventures post \"Ideas we are excited for in 2026\" (25 November 2025), credited on the \"Perp Markets Composability\" and \"Onchain Privacy\" sections." }
+    ],
+    biography: "Ethan Oak is named as one of four contributors to Coinbase Ventures' 25 November 2025 outlook post \"Ideas we are excited for in 2026\", credited by name and X handle (@0xNoroc) on the sections covering perpetual markets composability and onchain privacy. Cointelegraph's 26 November 2025 write-up refers to him as \"Coinbase Ventures investor Ethan Oak\". Coinbase publishes no Coinbase Ventures team page and no formal job title for him; \"Investor\" here is taken from the Cointelegraph descriptor and should be confirmed before use. No education, prior employers or join year could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "Coinbase blog - Ideas we are excited for in 2026, 25 Nov 2025", url: "https://www.coinbase.com/blog/Coinbase-Ventures-Ideas-we-are-excited-for-in-2026" },
+      { label: "Cointelegraph - Coinbase Ventures' 9 crypto investment bets for 2026, 26 Nov 2025", url: "https://cointelegraph.com/news/coinbase-venture-arm-shares-9-crypto-innovations-it-seeks-support-2026" }
+    ]
+  },
+"kinji-steimetz": {
+    name: "Kinji Steimetz",
+    firm: "Coinbase Ventures",
+    firmSlug: "coinbase-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: ["Real-world asset perpetuals", "Alternative proprietary AMMs", "Robotics and humanoid data collection"],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Named as a contributor to the Coinbase Ventures post \"Ideas we are excited for in 2026\" (25 November 2025), credited on the \"RWA Perpetuals\", \"Alternative Prop AMMs\" and \"Robotics & Humanoid Data Collection\" sections." }
+    ],
+    biography: "Kinji Steimetz is named as one of four contributors to Coinbase Ventures' 25 November 2025 outlook post \"Ideas we are excited for in 2026\", credited by name and X handle (@kinjisteimetz) on the sections covering real-world asset perpetuals, alternative proprietary AMMs, and robotics and humanoid data collection. Cointelegraph's 26 November 2025 write-up refers to \"Coinbase Ventures' Kinji Steimetz\" without giving a job title. No job title is published for him by Coinbase or by any acceptable secondary source, so the title field is left blank rather than guessed. No education, prior employers or join year could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "Coinbase blog - Ideas we are excited for in 2026, 25 Nov 2025", url: "https://www.coinbase.com/blog/Coinbase-Ventures-Ideas-we-are-excited-for-in-2026" },
+      { label: "Cointelegraph - Coinbase Ventures' 9 crypto investment bets for 2026, 26 Nov 2025", url: "https://cointelegraph.com/news/coinbase-venture-arm-shares-9-crypto-innovations-it-seeks-support-2026" }
+    ]
+  },
+"jenny-fielding": {
+    name: "Jenny Fielding",
+    firm: "Everywhere Ventures",
+    firmSlug: "everywhere-ventures",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2018,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Techstars - Managing Director, 7.5 years",
+      "Founder of two mobile software companies (companies not named by the sources reached)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Co-founds the firm, then named The Fund, with Scott Hartley." },
+      { year: 2026, event: "Signs the Form D for Everywhere Ventures III, LP on 10 March 2026 and is named in it as a related person of the issuer with the relationship Executive Officer." }
+    ],
+    biography: "Jenny Fielding is a co-founder of Everywhere Ventures, which the firm's homepage lists her under as a co-founder and general partner. Her own site and her Cornell Tech profile both state that she \"spent 7.5 years as the Managing Director of Techstars where she invested in a portfolio of companies with a current market cap over $10B\", that she is a 2x founder and a lawyer by training, and that she is an adjunct professor at Columbia University and Cornell Tech. Her Cornell Tech profile also gives her a current role there as Co-Head of Startup Studio. She signed the SEC Form D for Everywhere Ventures III, LP on 10 March 2026, where she is named as a related person of the issuer with the relationship Executive Officer. Neither her own site nor the Cornell Tech profile names the institution at which she trained in law or the two companies she founded, so education is left empty and those companies are not named.",
+    notableInvestments: [],
+    sources: [
+      { label: "Everywhere Ventures - Homepage team section", url: "https://www.everywhere.vc/" },
+      { label: "Jenny Fielding - About page on her own site", url: "https://www.jennyfielding.com/about-jenny-fielding" },
+      { label: "Cornell Tech - Jenny Fielding profile", url: "https://tech.cornell.edu/people/jenny-fielding" },
+      { label: "SEC Form D, Everywhere Ventures III, LP, filed 11 March 2026, signed by Jenny Fielding", url: "https://www.sec.gov/Archives/edgar/data/2096556/000209655626000002/primary_doc.xml" }
+    ]
+  },
+"scott-hartley": {
+    name: "Scott Hartley",
+    firm: "Everywhere Ventures",
+    firmSlug: "everywhere-ventures",
+    title: "Co-Founder & General Partner",
+    joinedYear: 2018,
+    investmentFocus: [],
+    education: [
+      "Stanford University - BA, Political Science (2005)",
+      "Columbia Business School - MBA",
+      "Columbia University School of International and Public Affairs - MIA, International Economic Policy"
+    ],
+    previousExperience: [
+      "Google, including Google.org",
+      "Facebook",
+      "Berkman Klein Center for Internet and Society",
+      "The White House - Presidential Innovation Fellow",
+      "Mohr Davidow Ventures - partner"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2005, event: "Completes a BA in Political Science at Stanford University." },
+      { year: 2018, event: "Co-founds the firm, then named The Fund, with Jenny Fielding." }
+    ],
+    biography: "Scott Hartley is a co-founder of Everywhere Ventures, which the firm's homepage lists him under as a co-founder and general partner. Before the firm he worked at Google, including Google.org, and at Facebook, was associated with the Berkman Klein Center for Internet and Society, served as a Presidential Innovation Fellow at the White House, and was a partner at Mohr Davidow Ventures. He finished a BA in Political Science at Stanford in 2005 and later took an MBA at Columbia Business School and an MIA in International Economic Policy at Columbia University's School of International and Public Affairs. The career and education facts here come from his Wikipedia article, which also states that the firm was founded in 2018 with $3.5 million in initial capital and was formerly known as The Fund.",
+    notableInvestments: [],
+    sources: [
+      { label: "Everywhere Ventures - Homepage team section", url: "https://www.everywhere.vc/" },
+      { label: "Wikipedia - Scott Hartley", url: "https://en.wikipedia.org/wiki/Scott_Hartley" },
+      { label: "The Fund is Now Everywhere - the firm's own rebrand announcement naming Jenny Fielding and Scott Hartley as co-founders and general partners, 5 April 2023", url: "https://ideas.everywhere.vc/p/the-fund-is-now-everywhere" }
+    ]
+  },
+"anna-barber": {
+    name: "Anna Barber",
+    firm: "Everywhere Ventures",
+    firmSlug: "everywhere-ventures",
+    title: "General Partner",
+    joinedYear: 2026,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "McKinsey & Company",
+      "petstore.com - joined in 1999",
+      "Talent manager in Hollywood, six years",
+      "Scribble Press - founder (kids' education company)",
+      "Techstars LA - Managing Director",
+      "M13 - Partner"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1999, event: "Leaves McKinsey to join petstore.com." },
+      { year: 2026, event: "Announced by Everywhere Ventures on 25 February 2026 as \"a third general partner\"." }
+    ],
+    biography: "Anna Barber was announced by Everywhere Ventures on 25 February 2026 as \"a third general partner\". The firm's announcement describes her as a former managing director at Techstars LA and most recently a partner at M13, and says she founded Scribble Press, a kids' education company, worked as a talent manager in Hollywood for six years, and left McKinsey to join petstore.com in 1999. No degrees or institutions were stated in the sources reached, so education is left empty. The firm's homepage groups all three general partners under a single heading that reads co-founders and general partners; because the firm's own February 2026 announcement describes her as joining as a third general partner rather than as a co-founder, her title is recorded here as General Partner and the discrepancy is flagged in the notes.",
+    notableInvestments: [],
+    sources: [
+      { label: "Everywhere Ventures - Homepage team section", url: "https://www.everywhere.vc/" },
+      { label: "Anna is Everywhere - the firm's own announcement, 25 February 2026", url: "https://medium.com/@everywhere.vc/anna-is-everywhere-anna-barber-with-scott-hartley-and-jenny-fielding-bc4d07b24f85" }
+    ]
+  },
+"yasuhiko-yurimoto": {
+    name: "Yasuhiko Yurimoto",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Faculty of Law, Kyoto University"
+    ],
+    previousExperience: [
+      "Fuji Bank (current Mizuho Bank)",
+      "Citibank N.A."
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1998, event: "Global Brain Corporation, of which he is listed as Founder / CEO, was established in January 1998 according to the firm's own company page." }
+    ],
+    biography: "Yasuhiko Yurimoto is listed on Global Brain Corporation's official members page with the title \"General Partner\". His or her individual profile page on globalbrains.com states the fuller form of the title: the profile page gives his title as \"General Partner, Founder / CEO\". The firm's members page places Yasuhiko in Tokyo. Global Brain's profile page lists education at: Faculty of Law, Kyoto University. The same page lists prior affiliations with Fuji Bank (current Mizuho Bank), Citibank N.A., without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Yasuhiko Yurimoto (official member profile)", url: "https://globalbrains.com/en/members/yasuhiko.yurimoto" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"isao-yasuda": {
+    name: "Isao Yasuda",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Senior Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Faculty of Economics, Keio University"
+    ],
+    previousExperience: [
+      "Japan Securities Dealers Association"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Isao Yasuda is listed on Global Brain Corporation's official members page with the title \"Senior Partner\". The firm's members page places Isao in Tokyo. Global Brain's profile page lists education at: Faculty of Economics, Keio University. The same page lists prior affiliations with Japan Securities Dealers Association, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Isao Yasuda (official member profile)", url: "https://globalbrains.com/en/members/isao.yasuda" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"hajime-furuya": {
+    name: "Hajime Furuya",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: ["GR"],
+    education: [],
+    previousExperience: [
+      "Ministry of Economy, Trade and Industry (METI)",
+      "Bain & Company",
+      "UBS Securities",
+      "Advantage Partners",
+      "Marunouchi Capital"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Hajime Furuya is listed on Global Brain Corporation's official members page with the title \"Venture Partner\". The same page lists prior affiliations with Ministry of Economy, Trade and Industry (METI), Bain & Company, UBS Securities, Advantage Partners, Marunouchi Capital, without job titles or dates. The page lists focus areas of GR. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Hajime Furuya (official member profile)", url: "https://globalbrains.com/en/members/hajime.furuya" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"kyunghun-lee": {
+    name: "KyungHun Lee",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: ["Metaverse", "Robotics"],
+    education: [
+      "Faculty of Engineering, Kyoto University"
+    ],
+    previousExperience: [
+      "Nomura Research Institute",
+      "BCG"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "KyungHun Lee is listed on Global Brain Corporation's official members page with the title \"Venture Partner\". The firm's members page places KyungHun in South Korea. Global Brain's profile page lists education at: Faculty of Engineering, Kyoto University. The same page lists prior affiliations with Nomura Research Institute, BCG, without job titles or dates. The page lists focus areas of Metaverse, Robotics. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - KyungHun Lee (official member profile)", url: "https://globalbrains.com/en/members/kyunghun.lee" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"masao-yamada": {
+    name: "Masao Yamada",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Keio University, Faculty of Law"
+    ],
+    previousExperience: [
+      "Mitsubishi Corporation",
+      "Bridgestone Corporation"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Masao Yamada is listed on Global Brain Corporation's official members page with the title \"Venture Partner\". The firm's members page places Masao in Tokyo. Global Brain's profile page lists education at: Keio University, Faculty of Law. The same page lists prior affiliations with Mitsubishi Corporation, Bridgestone Corporation, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Masao Yamada (official member profile)", url: "https://globalbrains.com/en/members/masao.yamada" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"naoki-sadakuni": {
+    name: "Naoki Sadakuni",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: ["Value Up"],
+    education: [],
+    previousExperience: [
+      "Yamaha Motor",
+      "McKinsey & Company",
+      "Google",
+      "Square",
+      "Pinterest"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Naoki Sadakuni is listed on Global Brain Corporation's official members page with the title \"Venture Partner\". The same page lists prior affiliations with Yamaha Motor, McKinsey & Company, Google, Square, Pinterest, without job titles or dates. The page lists focus areas of Value Up. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Naoki Sadakuni (official member profile)", url: "https://globalbrains.com/en/members/naoki.sadakuni" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"daisuke-kashiro": {
+    name: "Daisuke Kashiro",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "NIFTY",
+      "ORIX"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Daisuke Kashiro is listed on Global Brain Corporation's official members page with the title \"Investment Group General Partner\". The firm's members page places Daisuke in Tokyo. The same page lists prior affiliations with NIFTY, ORIX, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Daisuke Kashiro (official member profile)", url: "https://globalbrains.com/en/members/daisuke.kashiro" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"daisuke-nishida": {
+    name: "Daisuke Nishida",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group General Partner",
+    joinedYear: null,
+    investmentFocus: ["CVC Support", "MaaS"],
+    education: [
+      "Department of Law, School of Law, Meiji University"
+    ],
+    previousExperience: [
+      "Hitachi Medical Corporation",
+      "Toyota Motor Corporation"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Daisuke Nishida is listed on Global Brain Corporation's official members page with the title \"Investment Group General Partner\". The firm's members page places Daisuke in Tokyo. Global Brain's profile page lists education at: Department of Law, School of Law, Meiji University. The same page lists prior affiliations with Hitachi Medical Corporation, Toyota Motor Corporation, without job titles or dates. The page lists focus areas of CVC Support, MaaS. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Daisuke Nishida (official member profile)", url: "https://globalbrains.com/en/members/daisuke.nishida" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"hogil-doh": {
+    name: "Hogil Doh",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group General Partner",
+    joinedYear: null,
+    investmentFocus: ["Metaverse"],
+    education: [
+      "BS in Corporate Finance and Financial Services, San Francisco State University"
+    ],
+    previousExperience: [
+      "Rakuten Group",
+      "Z Holdings"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Hogil Doh is listed on Global Brain Corporation's official members page with the title \"Investment Group General Partner\". The firm's members page places Hogil in Tokyo. Global Brain's profile page lists education at: BS in Corporate Finance and Financial Services, San Francisco State University. The same page lists prior affiliations with Rakuten Group, Z Holdings, without job titles or dates. The page lists focus areas of Metaverse. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Hogil Doh (official member profile)", url: "https://globalbrains.com/en/members/hogil.doh" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"jiro-kumakura": {
+    name: "Jiro Kumakura",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group General Partner",
+    joinedYear: null,
+    investmentFocus: ["AI / Generative AI", "Cloud Tech", "Cyber Security", "Edge Tech", "IoT Hardware", "Network Communication"],
+    education: [
+      "Department of Electrical Engineering, Faculty of Engineering, Doshisha University"
+    ],
+    previousExperience: [
+      "CSK (current SCSK)",
+      "Digital Design"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jiro Kumakura is listed on Global Brain Corporation's official members page with the title \"Investment Group General Partner\". The firm's members page places Jiro in Tokyo. Global Brain's profile page lists education at: Department of Electrical Engineering, Faculty of Engineering, Doshisha University. The same page lists prior affiliations with CSK (current SCSK), Digital Design, without job titles or dates. The page lists focus areas of AI / Generative AI, Cloud Tech, Cyber Security, Edge Tech, IoT Hardware, Network Communication. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Jiro Kumakura (official member profile)", url: "https://globalbrains.com/en/members/jiro.kumakura" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"kazuhiko-miyama": {
+    name: "Kazuhiko Miyama",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Master's degree, Graduate School of International Social Sciences, Yokohama National University"
+    ],
+    previousExperience: [
+      "NTT",
+      "CCC / TSUTAYA online",
+      "Recruit"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kazuhiko Miyama is listed on Global Brain Corporation's official members page with the title \"Investment Group General Partner\". The firm's members page places Kazuhiko in Tokyo. Global Brain's profile page lists education at: Master's degree, Graduate School of International Social Sciences, Yokohama National University. The same page lists prior affiliations with NTT, CCC / TSUTAYA online, Recruit, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Kazuhiko Miyama (official member profile)", url: "https://globalbrains.com/en/members/kazuhiko.miyama" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"ken-kajii": {
+    name: "Ken Kajii",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "MBA, Harvard Business School"
+    ],
+    previousExperience: [
+      "McKinsey & Company",
+      "NTT Group"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ken Kajii is listed on Global Brain Corporation's official members page with the title \"Investment Group General Partner\". The firm's members page places Ken in Tokyo. Global Brain's profile page lists education at: MBA, Harvard Business School. The same page lists prior affiliations with McKinsey & Company, NTT Group, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Ken Kajii (official member profile)", url: "https://globalbrains.com/en/members/ken.kajii" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"kenta-kitsuka": {
+    name: "Kenta Kitsuka",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group General Partner",
+    joinedYear: null,
+    investmentFocus: ["Food Tech"],
+    education: [
+      "Ph.D in material science and physical chemistry"
+    ],
+    previousExperience: [
+      "SANYO Electric",
+      "NIHON L'OREAL"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kenta Kitsuka is listed on Global Brain Corporation's official members page with the title \"Investment Group General Partner\". The firm's members page places Kenta in Tokyo. Global Brain's profile page lists education at: Ph.D in material science and physical chemistry. The same page lists prior affiliations with SANYO Electric, NIHON L'OREAL, without job titles or dates. The page lists focus areas of Food Tech. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Kenta Kitsuka (official member profile)", url: "https://globalbrains.com/en/members/kenta.kitsuka" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"miku-yoshio": {
+    name: "Miku Yoshio",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Faculty of Letters and Education, Ochanomizu University"
+    ],
+    previousExperience: [
+      "Accenture",
+      "Boston Consulting Group"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Miku Yoshio is listed on Global Brain Corporation's official members page with the title \"Investment Group General Partner\". The firm's members page places Miku in Tokyo. Global Brain's profile page lists education at: Faculty of Letters and Education, Ochanomizu University. The same page lists prior affiliations with Accenture, Boston Consulting Group, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Miku Yoshio (official member profile)", url: "https://globalbrains.com/en/members/miku.yoshio" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"sachiko-sakamoto": {
+    name: "Sachiko Sakamoto",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Faculty of Economics, Keio University"
+    ],
+    previousExperience: [
+      "NTT DOCOMO",
+      "Rakuten"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Sachiko Sakamoto is listed on Global Brain Corporation's official members page with the title \"Investment Group General Partner\". The firm's members page places Sachiko in Tokyo. Global Brain's profile page lists education at: Faculty of Economics, Keio University. The same page lists prior affiliations with NTT DOCOMO, Rakuten, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Sachiko Sakamoto (official member profile)", url: "https://globalbrains.com/en/members/sachiko.sakamoto" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"shohei-ichimiya": {
+    name: "Shohei Ichimiya",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group General Partner",
+    joinedYear: null,
+    investmentFocus: ["Blockchain", "Fintech"],
+    education: [
+      "BA in Rhetoric, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "Sony"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Shohei Ichimiya is listed on Global Brain Corporation's official members page with the title \"Investment Group General Partner\". The firm's members page places Shohei in San Francisco. Global Brain's profile page lists education at: BA in Rhetoric, University of California, Berkeley. The same page lists prior affiliations with Sony, without job titles or dates. The page lists focus areas of Blockchain, Fintech. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Shohei Ichimiya (official member profile)", url: "https://globalbrains.com/en/members/shohei.ichimiya" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"hidetaka-aoki": {
+    name: "Hidetaka Aoki",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner / Fellow",
+    joinedYear: null,
+    investmentFocus: ["Robotics", "Space"],
+    education: [
+      "MS in Aerospace Engineering, Auburn University",
+      "MBA, Keio Business School"
+    ],
+    previousExperience: [
+      "Mitsubishi Electric",
+      "Dream Incubator"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Hidetaka Aoki is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner / Fellow\". His or her individual profile page on globalbrains.com states the fuller form of the title: the profile page gives his title as \"Partner / Fellow, Chief of Space Lab, Investment Group\". The firm's members page places Hidetaka in Tokyo. Global Brain's profile page lists education at: MS in Aerospace Engineering, Auburn University; MBA, Keio Business School. The same page lists prior affiliations with Mitsubishi Electric, Dream Incubator, without job titles or dates. The page lists focus areas of Robotics, Space. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Hidetaka Aoki (official member profile)", url: "https://globalbrains.com/en/members/hidetaka.aoki" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"brian-flucht": {
+    name: "Brian Flucht",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "MBA, University of Southern California",
+      "BS in Material Science & Engineering, Northwestern University"
+    ],
+    previousExperience: [
+      "Third Horizon Venture Partners",
+      "Nike",
+      "Blade Ventures",
+      "Shepherd Ventures",
+      "SAIC",
+      "NSA"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Brian Flucht is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". His or her individual profile page on globalbrains.com states the fuller form of the title: the profile page gives his title as \"Partner, US Division Head, Investment Group\". The firm's members page places Brian in San Francisco. Global Brain's profile page lists education at: MBA, University of Southern California; BS in Material Science & Engineering, Northwestern University. The same page lists prior affiliations with Third Horizon Venture Partners, Nike, Blade Ventures, Shepherd Ventures, SAIC, NSA, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Brian Flucht (official member profile)", url: "https://globalbrains.com/en/members/brian.flucht" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"hajime-hasegawa": {
+    name: "Hajime Hasegawa",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: ["IPO Strategy"],
+    education: [
+      "Economics, Keio University"
+    ],
+    previousExperience: [
+      "Daiwa Securities Group"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Hajime Hasegawa is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Hajime in Tokyo. Global Brain's profile page lists education at: Economics, Keio University. The same page lists prior affiliations with Daiwa Securities Group, without job titles or dates. The page lists focus areas of IPO Strategy. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Hajime Hasegawa (official member profile)", url: "https://globalbrains.com/en/members/hajime.hasegawa" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"hiroki-takai": {
+    name: "Hiroki Takai",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: ["Life Science"],
+    education: [
+      "PhD, The University of Tokyo",
+      "MBA, London Business School"
+    ],
+    previousExperience: [
+      "Harvard Medical School, Boston Children's Hospital",
+      "Eli Lilly and Company"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Hiroki Takai is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Hiroki in London. Global Brain's profile page lists education at: PhD, The University of Tokyo; MBA, London Business School. The same page lists prior affiliations with Harvard Medical School, Boston Children's Hospital, Eli Lilly and Company, without job titles or dates. The page lists focus areas of Life Science. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Hiroki Takai (official member profile)", url: "https://globalbrains.com/en/members/hiroki.takai" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"hirotaka-togashi": {
+    name: "Hirotaka Togashi",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: ["Biz Dev"],
+    education: [
+      "Department of Electronics and Information Engineering, Faculty of Engineering, Tokyo Metropolitan University"
+    ],
+    previousExperience: [
+      "Nomura Research Institute"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Hirotaka Togashi is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Hirotaka in Tokyo. Global Brain's profile page lists education at: Department of Electronics and Information Engineering, Faculty of Engineering, Tokyo Metropolitan University. The same page lists prior affiliations with Nomura Research Institute, without job titles or dates. The page lists focus areas of Biz Dev. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Hirotaka Togashi (official member profile)", url: "https://globalbrains.com/en/members/hirotaka.togashi" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"joopyo-hong": {
+    name: "Joopyo Hong",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Faculty of Economics, Keio University"
+    ],
+    previousExperience: [
+      "Skylake Investment",
+      "Kakao"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Joopyo Hong is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Joopyo in South Korea. Global Brain's profile page lists education at: Faculty of Economics, Keio University. The same page lists prior affiliations with Skylake Investment, Kakao, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Joopyo Hong (official member profile)", url: "https://globalbrains.com/en/members/joopyo.hong" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"kazunori-yamaguchi": {
+    name: "Kazunori Yamaguchi",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Department of Management, Faculty of Economics, The University of Tokyo"
+    ],
+    previousExperience: [
+      "Boston Consulting Group",
+      "AAIC Japan"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kazunori Yamaguchi is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Kazunori in Tokyo. Global Brain's profile page lists education at: Department of Management, Faculty of Economics, The University of Tokyo. The same page lists prior affiliations with Boston Consulting Group, AAIC Japan, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Kazunori Yamaguchi (official member profile)", url: "https://globalbrains.com/en/members/kazunori.yamaguchi" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"marika-tazaki": {
+    name: "Marika Tazaki",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Faculty of Law, Keio University"
+    ],
+    previousExperience: [
+      "P&G"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Marika Tazaki is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Marika in Tokyo. Global Brain's profile page lists education at: Faculty of Law, Keio University. The same page lists prior affiliations with P&G, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Marika Tazaki (official member profile)", url: "https://globalbrains.com/en/members/marika.tazaki" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"nagisa-shigetomi": {
+    name: "Nagisa Shigetomi",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: ["ESG"],
+    education: [
+      "Faculty of Policy Management, Keio University"
+    ],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Nagisa Shigetomi is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Nagisa in Tokyo. Global Brain's profile page lists education at: Faculty of Policy Management, Keio University. The page lists focus areas of ESG. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Nagisa Shigetomi (official member profile)", url: "https://globalbrains.com/en/members/nagisa.shigetomi" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"rina-obi": {
+    name: "Rina Obi",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Google",
+      "Henkel AG & Co. KGaA"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Rina Obi is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Rina in Berlin. The same page lists prior affiliations with Google, Henkel AG & Co. KGaA, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Rina Obi (official member profile)", url: "https://globalbrains.com/en/members/rina.obi" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"ryozo-yamamoto": {
+    name: "Ryozo Yamamoto",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: ["MaaS", "Mechatronics", "Robotics"],
+    education: [
+      "M.Eng, Department of Energy Sciences, Interdisciplinary Graduate School of Science and Engineering, Tokyo Institute of Technology"
+    ],
+    previousExperience: [
+      "Honda R&D",
+      "Dream Incubator",
+      "Deloitte Tohmatsu Consulting"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ryozo Yamamoto is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Ryozo in Tokyo. Global Brain's profile page lists education at: M.Eng, Department of Energy Sciences, Interdisciplinary Graduate School of Science and Engineering, Tokyo Institute of Technology. The same page lists prior affiliations with Honda R&D, Dream Incubator, Deloitte Tohmatsu Consulting, without job titles or dates. The page lists focus areas of MaaS, Mechatronics, Robotics. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Ryozo Yamamoto (official member profile)", url: "https://globalbrains.com/en/members/ryozo.yamamoto" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"shigeru-mitarai": {
+    name: "Shigeru Mitarai",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Shigeru Mitarai is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". No individual profile page could be resolved for this person on globalbrains.com in either the English or Japanese site, so no education, prior employment or focus areas are recorded here. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"shingo-otaki": {
+    name: "Shingo Otaki",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "College of Business, Rikkyo University"
+    ],
+    previousExperience: [
+      "NTT DOCOMO"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Shingo Otaki is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Shingo in Tokyo. Global Brain's profile page lists education at: College of Business, Rikkyo University. The same page lists prior affiliations with NTT DOCOMO, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Shingo Otaki (official member profile)", url: "https://globalbrains.com/en/members/shingo.otaki" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"shohei-hayashi": {
+    name: "Shohei Hayashi",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: ["Value Up"],
+    education: [
+      "Department of Political Science, Faculty of Law, Doshisha University",
+      "MS in Public Policy and Management, Carnegie Mellon University"
+    ],
+    previousExperience: [
+      "JPMorgan Securities Japan",
+      "Japan International Cooperation Agency (JICA)",
+      "Deloitte Tohmatsu Consulting"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Shohei Hayashi is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Shohei in Tokyo. Global Brain's profile page lists education at: Department of Political Science, Faculty of Law, Doshisha University; MS in Public Policy and Management, Carnegie Mellon University. The same page lists prior affiliations with JPMorgan Securities Japan, Japan International Cooperation Agency (JICA), Deloitte Tohmatsu Consulting, without job titles or dates. The page lists focus areas of Value Up. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Shohei Hayashi (official member profile)", url: "https://globalbrains.com/en/members/shohei.hayashi" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"takashi-moriguchi": {
+    name: "Takashi Moriguchi",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: ["Life Science"],
+    education: [],
+    previousExperience: [
+      "Kao",
+      "Deloitte Tohmatsu Consulting"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Takashi Moriguchi is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Takashi in Tokyo. The same page lists prior affiliations with Kao, Deloitte Tohmatsu Consulting, without job titles or dates. The page lists focus areas of Life Science. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Takashi Moriguchi (official member profile)", url: "https://globalbrains.com/en/members/takashi.moriguchi" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"takeru-shigemura": {
+    name: "Takeru Shigemura",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: ["Healthcare", "Life Science"],
+    education: [
+      "MS, Graduate School of Human Development and Environment, Kobe University"
+    ],
+    previousExperience: [
+      "FUJIFILM",
+      "SoftBank"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Takeru Shigemura is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Takeru in Tokyo. Global Brain's profile page lists education at: MS, Graduate School of Human Development and Environment, Kobe University. The same page lists prior affiliations with FUJIFILM, SoftBank, without job titles or dates. The page lists focus areas of Healthcare, Life Science. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Takeru Shigemura (official member profile)", url: "https://globalbrains.com/en/members/takeru.shigemura" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"takuya-hosomura": {
+    name: "Takuya Hosomura",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "BS in Economics, Waseda University",
+      "MS of Bond-BBT Global Leadership Business Administration, Bond University"
+    ],
+    previousExperience: [
+      "Sumitomo Corporation",
+      "Rakuten Capital",
+      "Salesforce Ventures"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Takuya Hosomura is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Takuya in Tokyo. Global Brain's profile page lists education at: BS in Economics, Waseda University; MS of Bond-BBT Global Leadership Business Administration, Bond University. The same page lists prior affiliations with Sumitomo Corporation, Rakuten Capital, Salesforce Ventures, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Takuya Hosomura (official member profile)", url: "https://globalbrains.com/en/members/takuya.hosomura" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"tasuke-nakagawa": {
+    name: "Tasuke Nakagawa",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: ["M&A"],
+    education: [],
+    previousExperience: [
+      "Ernst & Young ShinNihon LLC"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tasuke Nakagawa is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Tasuke in Tokyo. The same page lists prior affiliations with Ernst & Young ShinNihon LLC, without job titles or dates. The page lists focus areas of M&A. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Tasuke Nakagawa (official member profile)", url: "https://globalbrains.com/en/members/tasuke.nakagawa" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"tatsunori-arai": {
+    name: "Tatsunori Arai",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Bachelor of Economics, The University of Tokyo"
+    ],
+    previousExperience: [
+      "Development Bank of Japan"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tatsunori Arai is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". Global Brain's profile page lists education at: Bachelor of Economics, The University of Tokyo. The same page lists prior affiliations with Development Bank of Japan, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Tatsunori Arai (official member profile)", url: "https://globalbrains.com/en/members/tatsunori.arai" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"tatsuya-matsumoto": {
+    name: "Tatsuya Matsumoto",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Graduate school of The University of Tokyo"
+    ],
+    previousExperience: [
+      "UBS",
+      "Innovation Network Corporation of Japan (INCJ)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tatsuya Matsumoto is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". His or her individual profile page on globalbrains.com states the fuller form of the title: the profile page gives his title as \"Partner, Investment Group; Singapore Office Representative\". The firm's members page places Tatsuya in Singapore. Global Brain's profile page lists education at: Graduate school of The University of Tokyo. The same page lists prior affiliations with UBS, Innovation Network Corporation of Japan (INCJ), without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Tatsuya Matsumoto (official member profile)", url: "https://globalbrains.com/en/members/tatsuya.matsumoto" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"tomoaki-ishikure": {
+    name: "Tomoaki Ishikure",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Bachelor's degree in Management Science and Engineering, College of Policy and Planning Sciences, School of Science and Engineering, University of Tsukuba",
+      "Master's degree in management science, Graduate School of Management Science and Public Policy Studies, University of Tsukuba"
+    ],
+    previousExperience: [
+      "Recruit"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tomoaki Ishikure is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Tomoaki in Tokyo. Global Brain's profile page lists education at: Bachelor's degree in Management Science and Engineering, College of Policy and Planning Sciences, School of Science and Engineering, University of Tsukuba; Master's degree in management science, Graduate School of Management Science and Public Policy Studies, University of Tsukuba. The same page lists prior affiliations with Recruit, without job titles or dates. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Tomoaki Ishikure (official member profile)", url: "https://globalbrains.com/en/members/tomoaki.ishikure" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"ying-jian-ng": {
+    name: "Ying Jian Ng",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ying Jian Ng is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". No individual profile page could be resolved for this person on globalbrains.com in either the English or Japanese site, so no education, prior employment or focus areas are recorded here. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"yukari-nishiyama": {
+    name: "Yukari Nishiyama",
+    firm: "Global Brain Corporation",
+    firmSlug: "global-brain",
+    title: "Investment Group Partner",
+    joinedYear: null,
+    investmentFocus: ["Healthcare"],
+    education: [
+      "Master's degree, Department of Chemistry & Biotechnology, School of Engineering, The University of Tokyo"
+    ],
+    previousExperience: [
+      "Panasonic",
+      "PwC Strategy&"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Yukari Nishiyama is listed on Global Brain Corporation's official members page with the title \"Investment Group Partner\". The firm's members page places Yukari in Tokyo. Global Brain's profile page lists education at: Master's degree, Department of Chemistry & Biotechnology, School of Engineering, The University of Tokyo. The same page lists prior affiliations with Panasonic, PwC Strategy&, without job titles or dates. The page lists focus areas of Healthcare. No joining year, board seat, IPO count or exit count is stated by the firm, and none has been inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Global Brain - Yukari Nishiyama (official member profile)", url: "https://globalbrains.com/en/members/yukari.nishiyama" },
+      { label: "Global Brain - Members (official team page, checked 6 September 2026)", url: "https://globalbrains.com/en/members" }
+    ]
+  },
+"chi-hua-chien": {
+    name: "Chi-Hua Chien",
+    firm: "Goodwater Capital",
+    firmSlug: "goodwater-capital",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2014,
+    investmentFocus: [],
+    education: [
+      "Stanford University - BS, Industrial Engineering",
+      "Stanford University - BA, Economics",
+      "Stanford University - MS, Industrial Engineering",
+      "Stanford University - MBA"
+    ],
+    previousExperience: [
+      "Coremetrics - early employee; marketing, inside sales and interim CFO",
+      "Accel Partners - Associate",
+      "Kleiner Perkins Caufield & Byers - General Partner"
+    ],
+    boardSeats: [
+      "charity: water - board member (non-profit)"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Co-founds Goodwater Capital with Eric Kim." }
+    ],
+    biography: "Chi-Hua Chien is Co-Founder and Managing Partner of Goodwater Capital, the consumer-focused venture firm he started with Eric Kim in 2014. Before launching Goodwater he was a General Partner at Kleiner Perkins Caufield & Byers, and earlier an Associate at Accel Partners. He was an early employee at Coremetrics, where the firm's team page says he worked in marketing and inside sales and served as interim CFO. Goodwater's team page lists Facebook, Fever, Monzo, musically / TikTok, Spotify, Square, Twitter, Toss, Weee! and Zepto among his investments, without stating which were made at Goodwater and which at prior firms. He holds a BS in Industrial Engineering, a BA in Economics, an MS in Industrial Engineering and an MBA, all from Stanford University, and serves on the board of charity: water.",
+    notableInvestments: [
+      { name: "Facebook", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] },
+      { name: "Fever", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] },
+      { name: "Monzo", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] },
+      { name: "musically / TikTok", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] },
+      { name: "Spotify", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] },
+      { name: "Square", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] },
+      { name: "Twitter", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] },
+      { name: "Toss", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] },
+      { name: "Weee!", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] },
+      { name: "Zepto", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] }
+    ],
+    sources: [
+      { label: "Goodwater Capital - Team", url: "https://www.goodwatercap.com/team" },
+      { label: "Goodwater Raises Over $1 Billion (PR Newswire, 25 July 2023) - names Chi-Hua Chien as co-founder", url: "https://www.prnewswire.com/news-releases/goodwater-raises-over-1-billion-to-support-consumer-technology-startups-globally-301885840.html" }
+    ]
+  },
+"eric-kim": {
+    name: "Eric Kim",
+    firm: "Goodwater Capital",
+    firmSlug: "goodwater-capital",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2014,
+    investmentFocus: [],
+    education: [
+      "Yale University - BA, Cognitive Science",
+      "Stanford University Graduate School of Business - MBA"
+    ],
+    previousExperience: [
+      "Maverick Capital - Managing Director"
+    ],
+    boardSeats: [
+      "Johns Hopkins Alliance for Science and Technology - board member",
+      "San Francisco Friends of Chamber Music - non-profit board member"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2014, event: "Co-founds Goodwater Capital with Chi-Hua Chien." }
+    ],
+    biography: "Eric Kim is Co-Founder and Managing Partner of Goodwater Capital, which he started with Chi-Hua Chien in 2014. Before Goodwater he served as a Managing Director at Maverick Capital. Goodwater's team page lists Kakao, Musical.ly, Zenefits and Upsight among his investments, without stating which were made at Goodwater and which earlier. He majored in Cognitive Science at Yale University and holds an MBA from Stanford University's Graduate School of Business. He serves on the board of the Johns Hopkins Alliance for Science and Technology and on the non-profit board of the San Francisco Friends of Chamber Music. The firm's press release of 25 July 2023 also refers to him as Eric J. Kim.",
+    notableInvestments: [
+      { name: "Kakao", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] },
+      { name: "Musical.ly", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] },
+      { name: "Zenefits", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] },
+      { name: "Upsight", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.goodwatercap.com/team", type: "firm-team-page", checked: "2026-09-06" }] }
+    ],
+    sources: [
+      { label: "Goodwater Capital - Team", url: "https://www.goodwatercap.com/team" },
+      { label: "Goodwater Raises Over $1 Billion (PR Newswire, 25 July 2023) - names Eric Kim as co-founder", url: "https://www.prnewswire.com/news-releases/goodwater-raises-over-1-billion-to-support-consumer-technology-startups-globally-301885840.html" }
+    ]
+  },
+"coddy-johnson": {
+    name: "Coddy Johnson",
+    firm: "Goodwater Capital",
+    firmSlug: "goodwater-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Stanford Graduate School of Business - MBA, graduated with honors as an Arjay Miller Scholar"
+    ],
+    previousExperience: [
+      "Bain & Company - consultant",
+      "AltSchool - co-founder and COO",
+      "Activision Blizzard - President and COO"
+    ],
+    boardSeats: [
+      "Environmental Defense Action Fund - board member (non-profit)"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Coddy Johnson is a Partner at Goodwater Capital. He was formerly President and COO of Activision Blizzard, and co-founder and COO of AltSchool. He consulted at Bain & Company and holds an MBA from the Stanford Graduate School of Business, where the firm's team page says he graduated with honors as an Arjay Miller Scholar. He serves on the board of the Environmental Defense Action Fund. He was named as one of Goodwater's investing partners in the firm's 25 July 2023 fundraising announcement.",
+    notableInvestments: [],
+    sources: [
+      { label: "Goodwater Capital - Team", url: "https://www.goodwatercap.com/team" },
+      { label: "Goodwater Raises Over $1 Billion (PR Newswire, 25 July 2023) - names Coddy Johnson as an investing partner", url: "https://www.prnewswire.com/news-releases/goodwater-raises-over-1-billion-to-support-consumer-technology-startups-globally-301885840.html" }
+    ]
+  },
+"jin-oh": {
+    name: "Jin Oh",
+    firm: "Goodwater Capital",
+    firmSlug: "goodwater-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Boston University - attended; recruited as a Division I Varsity Men's Soccer Team member (no degree stated on the firm's team page)"
+    ],
+    previousExperience: [
+      "MergerTech Advisors",
+      "BMO Capital Markets - investment banker",
+      "NamuCorp - Principal",
+      "Toss - executive, corporate development and investor relations"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jin Oh is a Partner at Goodwater Capital. The firm's team page states that he joined Goodwater from the portfolio company Toss, the South Korean fintech platform, where he was an executive working in corporate development and investor relations. Earlier he was a Principal at NamuCorp and an investment banker at BMO Capital Markets, and he worked at MergerTech Advisors. He attended Boston University, where he was recruited as a Division I Varsity Men's Soccer Team member; the page does not state a degree. He was named as one of Goodwater's investing partners in the firm's 25 July 2023 fundraising announcement.",
+    notableInvestments: [],
+    sources: [
+      { label: "Goodwater Capital - Team", url: "https://www.goodwatercap.com/team" },
+      { label: "Goodwater Raises Over $1 Billion (PR Newswire, 25 July 2023) - names Jin Oh as an investing partner", url: "https://www.prnewswire.com/news-releases/goodwater-raises-over-1-billion-to-support-consumer-technology-startups-globally-301885840.html" }
+    ]
+  },
+"vivek-subramanian": {
+    name: "Vivek Subramanian",
+    firm: "Goodwater Capital",
+    firmSlug: "goodwater-capital",
+    title: "Partner & Chief Product Officer",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "BITS Pilani - BS, Computer Science",
+      "BITS Pilani - Masters, Chemistry",
+      "University of Texas at Austin - Masters, Computer Science",
+      "University of California, Berkeley - MBA"
+    ],
+    previousExperience: [
+      "CalmSea - co-founder",
+      "Coupang - Head of Product",
+      "Sonder"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Vivek Subramanian is Partner and Chief Product Officer at Goodwater Capital. Before Goodwater he worked at Sonder, was Head of Product at Coupang, and co-founded CalmSea. He holds an MBA from UC Berkeley, a Masters in Computer Science from the University of Texas at Austin, and a BS in Computer Science and a Masters in Chemistry from BITS Pilani in India. He was named as one of Goodwater's investing partners in the firm's 25 July 2023 fundraising announcement.",
+    notableInvestments: [],
+    sources: [
+      { label: "Goodwater Capital - Team", url: "https://www.goodwatercap.com/team" },
+      { label: "Goodwater Raises Over $1 Billion (PR Newswire, 25 July 2023) - names Vivek Subramanian as an investing partner", url: "https://www.prnewswire.com/news-releases/goodwater-raises-over-1-billion-to-support-consumer-technology-startups-globally-301885840.html" }
+    ]
+  },
+"scott-james": {
+    name: "Scott James",
+    firm: "Goodwater Capital",
+    firmSlug: "goodwater-capital",
+    title: "Partner & Chief Operating Officer",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Gunderson Dettmer - began his legal career; legal advisor to startups and venture funds"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Scott James is Partner and Chief Operating Officer at Goodwater Capital. The firm's team page states that he began his legal career at Gunderson Dettmer, advising startups and venture funds. The page states no degrees or institutions for him. His role is an operating and firm-management role rather than an investing role, but the firm gives him a Partner title.",
+    notableInvestments: [],
+    sources: [
+      { label: "Goodwater Capital - Team", url: "https://www.goodwatercap.com/team" }
+    ]
+  },
+"brooke-beck": {
+    name: "Brooke Beck",
+    firm: "Goodwater Capital",
+    firmSlug: "goodwater-capital",
+    title: "Partner & Head of Investor Relations",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Penn State University - BA"
+    ],
+    previousExperience: [
+      "GoldenTree Asset Management",
+      "Och-Ziff / Sculptor",
+      "Marcato Capital - Partner",
+      "Coatue - investor relations",
+      "Balyasny Asset Management - Head of Client Relationships and Fundraising"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Brooke Beck is Partner and Head of Investor Relations at Goodwater Capital. The firm's team page states that she served as Head of Client Relationships and Fundraising at Balyasny Asset Management, and that she previously worked in investor relations at Coatue and at Marcato Capital, Och-Ziff / Sculptor and GoldenTree Asset Management. She holds a BA from Penn State University. Her role is an investor relations role rather than an investing role, but the firm gives her a Partner title. The exact chronological order of her prior roles is not fully stated on the page.",
+    notableInvestments: [],
+    sources: [
+      { label: "Goodwater Capital - Team", url: "https://www.goodwatercap.com/team" }
+    ]
+  },
+"allen-zhu": {
+    name: "朱啸虎 (Allen Zhu)",
+    firm: "GSR Ventures",
+    firmSlug: "gsr-ventures",
+    title: "主管合伙人 (Managing Director)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "朱啸虎, shown in English as Allen Zhu, is listed as 主管合伙人 in the 主管合伙人 group at the head of the GSR Ventures team page on the firm's Chinese site, and as Managing Director on the English-language team page, as of 6 September 2026. GSR Ventures publishes no biography text for its team members on either the Chinese or the English version of its team page, so no education, prior employment, join year, board seats or person-attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "金沙江创投 (GSR Ventures) - 团队 (Chinese site, richer; checked 6 Sep 2026)", url: "https://gsrventureschina.com/team" },
+      { label: "GSR Ventures - Team (English/global site, checked 6 Sep 2026)", url: "https://gsrventuresglobal.com/team" }
+    ]
+  },
+"carla-newell": {
+    name: "Carla Newell",
+    firm: "GSR Ventures",
+    firmSlug: "gsr-ventures",
+    title: "主管合伙人｜首席运营官 (Managing Director | COO)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Carla Newell is listed in the 主管合伙人 group on the GSR Ventures Chinese team page with the additional role 首席运营官 (Chief Operating Officer), and the English-language team page carries a card titled 'Managing Director | COO'. Her name does not render on the English page. GSR Ventures publishes no biography text for its team members on either the Chinese or the English version of its team page, so no education, prior employment, join year, board seats or person-attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "金沙江创投 (GSR Ventures) - 团队 (Chinese site, richer; checked 6 Sep 2026)", url: "https://gsrventureschina.com/team" },
+      { label: "GSR Ventures - Team (English/global site, checked 6 Sep 2026)", url: "https://gsrventuresglobal.com/team" }
+    ]
+  },
+"james-ding": {
+    name: "丁健 (James Ding)",
+    firm: "GSR Ventures",
+    firmSlug: "gsr-ventures",
+    title: "主管合伙人 (Managing Director)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "丁健, shown in English as James Ding, is listed as 主管合伙人 on the GSR Ventures Chinese team page and as Managing Director on the English-language team page as of 6 September 2026. Wikipedia names him as one of the firm's founders in 2004, alongside Richard Lim, Sunny Wu and Robert Yeung; that founder claim rests on Wikipedia alone and was not confirmed on the firm's own site, which publishes no biographies. GSR Ventures publishes no biography text for its team members on either the Chinese or the English version of its team page, so no education, prior employment, join year, board seats or person-attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "金沙江创投 (GSR Ventures) - 团队 (Chinese site, richer; checked 6 Sep 2026)", url: "https://gsrventureschina.com/team" },
+      { label: "GSR Ventures - Team (English/global site, checked 6 Sep 2026)", url: "https://gsrventuresglobal.com/team" },
+      { label: "Wikipedia - GSR Ventures (used only for founder names and legal entity name)", url: "https://en.wikipedia.org/wiki/GSR_Ventures" }
+    ]
+  },
+"richard-lim": {
+    name: "林仁俊 (Richard Lim)",
+    firm: "GSR Ventures",
+    firmSlug: "gsr-ventures",
+    title: "主管合伙人 (Managing Director)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Described by Sina Tech, in its 17 March 2025 report on the separation, as Managing Director of Informed Ventures, the newly branded US entity." }
+    ],
+    biography: "林仁俊, shown in English as Richard Lim, is listed as 主管合伙人 on the GSR Ventures Chinese team page and as Managing Director on the English-language team page as of 6 September 2026. He is separately identified in Sina Tech's 17 March 2025 report as Managing Director of Informed Ventures, the separately branded US entity that took over the business previously carried under the name GSR Ventures US; in that report he explains that the 2019 'GSR Ventures US' naming had caused confusion. Wikipedia names him as one of the firm's 2004 founders; that claim rests on Wikipedia alone. GSR Ventures publishes no biography text for its team members on either the Chinese or the English version of its team page, so no education, prior employment, join year, board seats or person-attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "金沙江创投 (GSR Ventures) - 团队 (Chinese site, richer; checked 6 Sep 2026)", url: "https://gsrventureschina.com/team" },
+      { label: "GSR Ventures - Team (English/global site, checked 6 Sep 2026)", url: "https://gsrventuresglobal.com/team" },
+      { label: "新浪科技 - 朱啸虎回应「金沙江创投」分拆传闻 (17 March 2025)", url: "https://finance.sina.com.cn/tech/roll/2025-03-17/doc-inepxywh0573008.shtml" },
+      { label: "Wikipedia - GSR Ventures (used only for founder names and legal entity name)", url: "https://en.wikipedia.org/wiki/GSR_Ventures" }
+    ]
+  },
+"ryann-yap": {
+    name: "叶淑芬 (Ryann Yap)",
+    firm: "GSR Ventures",
+    firmSlug: "gsr-ventures",
+    title: "主管合伙人｜首席财务官 (Managing Director | CFO)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "叶淑芬, shown in English as Ryann Yap, is listed in the 主管合伙人 group on the GSR Ventures Chinese team page with the additional role 首席财务官 (Chief Financial Officer). The English-language team page carries a matching card titled 'Managing Director | CFO' whose name does not render. GSR Ventures publishes no biography text for its team members on either the Chinese or the English version of its team page, so no education, prior employment, join year, board seats or person-attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "金沙江创投 (GSR Ventures) - 团队 (Chinese site, richer; checked 6 Sep 2026)", url: "https://gsrventureschina.com/team" },
+      { label: "GSR Ventures - Team (English/global site, checked 6 Sep 2026)", url: "https://gsrventuresglobal.com/team" }
+    ]
+  },
+"jefferson-chen": {
+    name: "陈斓杰 (Jefferson Chen)",
+    firm: "GSR Ventures",
+    firmSlug: "gsr-ventures",
+    title: "主管合伙人 (Managing Director)",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "Title conflict between the firm's two sites: 主管合伙人 (Managing Director group) on gsrventureschina.com, but shown under the Partner heading on gsrventuresglobal.com. Both are partner level; the Chinese page was taken as authoritative.",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "陈斓杰, shown in English as Jefferson Chen, is listed in the 主管合伙人 group on the GSR Ventures Chinese team page as of 6 September 2026. The English-language team page places him under the Partner heading instead; the Chinese page is the richer and apparently more current of the two and its title is the one recorded here. GSR Ventures publishes no biography text for its team members on either the Chinese or the English version of its team page, so no education, prior employment, join year, board seats or person-attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "金沙江创投 (GSR Ventures) - 团队 (Chinese site, richer; checked 6 Sep 2026)", url: "https://gsrventureschina.com/team" },
+      { label: "GSR Ventures - Team (English/global site, checked 6 Sep 2026)", url: "https://gsrventuresglobal.com/team" }
+    ]
+  },
+"daisy-jiang": {
+    name: "江澜 (Daisy Jiang)",
+    firm: "GSR Ventures",
+    firmSlug: "gsr-ventures",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "江澜, shown in English as Daisy Jiang, is listed as 合伙人 (Partner) on the GSR Ventures Chinese team page and as Partner on the English-language team page as of 6 September 2026. GSR Ventures publishes no biography text for its team members on either the Chinese or the English version of its team page, so no education, prior employment, join year, board seats or person-attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "金沙江创投 (GSR Ventures) - 团队 (Chinese site, richer; checked 6 Sep 2026)", url: "https://gsrventureschina.com/team" },
+      { label: "GSR Ventures - Team (English/global site, checked 6 Sep 2026)", url: "https://gsrventuresglobal.com/team" }
+    ]
+  },
+"jia-liu": {
+    name: "刘佳 (Jia Liu)",
+    firm: "GSR Ventures",
+    firmSlug: "gsr-ventures",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "刘佳, shown in English as Jia Liu, is listed as 合伙人 (Partner) on the GSR Ventures Chinese team page and as Partner on the English-language team page as of 6 September 2026. GSR Ventures publishes no biography text for its team members on either the Chinese or the English version of its team page, so no education, prior employment, join year, board seats or person-attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "金沙江创投 (GSR Ventures) - 团队 (Chinese site, richer; checked 6 Sep 2026)", url: "https://gsrventureschina.com/team" },
+      { label: "GSR Ventures - Team (English/global site, checked 6 Sep 2026)", url: "https://gsrventuresglobal.com/team" }
+    ]
+  },
+"yutong-zhou": {
+    name: "周雨桐 (Yutong Zhou)",
+    firm: "GSR Ventures",
+    firmSlug: "gsr-ventures",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "周雨桐, shown in English as Yutong Zhou on the firm's Chinese team page, is listed as 合伙人 (Partner) as of 6 September 2026. The English-language team page carries a Partner card whose image slug reads 'Michelle-zhou'; the strings 'Yutong' and 'Michelle' each appear on only one of the two pages, so the two renderings could not be reconciled from the firm's own sources. GSR Ventures publishes no biography text for its team members on either the Chinese or the English version of its team page, so no education, prior employment, join year, board seats or person-attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "金沙江创投 (GSR Ventures) - 团队 (Chinese site, richer; checked 6 Sep 2026)", url: "https://gsrventureschina.com/team" },
+      { label: "GSR Ventures - Team (English/global site, checked 6 Sep 2026)", url: "https://gsrventuresglobal.com/team" }
+    ]
+  },
+"miranda-gsr": {
+    name: "蒋艺 (Miranda)",
+    firm: "GSR Ventures",
+    firmSlug: "gsr-ventures",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "蒋艺, shown in English as Miranda on the firm's Chinese team page, is listed as 合伙人 (Partner) as of 6 September 2026. The English-language team page carries a Partner card whose image slug reads 'Mandy'; 'Miranda' appears only on the Chinese page and 'Mandy' only on the English page, and the two could not be reconciled from the firm's own sources. No surname is published in English. GSR Ventures publishes no biography text for its team members on either the Chinese or the English version of its team page, so no education, prior employment, join year, board seats or person-attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "金沙江创投 (GSR Ventures) - 团队 (Chinese site, richer; checked 6 Sep 2026)", url: "https://gsrventureschina.com/team" },
+      { label: "GSR Ventures - Team (English/global site, checked 6 Sep 2026)", url: "https://gsrventuresglobal.com/team" }
+    ]
+  },
+"jim-gsr": {
+    name: "张金铭 (Jim)",
+    firm: "GSR Ventures",
+    firmSlug: "gsr-ventures",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "张金铭, shown in English as Jim on the firm's Chinese team page, is listed as 合伙人 (Partner) as of 6 September 2026. He does not appear on the English-language team page, which lists fewer partners than the Chinese one. No surname is published in English. GSR Ventures publishes no biography text for its team members on either the Chinese or the English version of its team page, so no education, prior employment, join year, board seats or person-attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "金沙江创投 (GSR Ventures) - 团队 (Chinese site, richer; checked 6 Sep 2026)", url: "https://gsrventureschina.com/team" }
+    ]
+  },
+"kenway-gsr": {
+    name: "乔钦彧 (Kenway)",
+    firm: "GSR Ventures",
+    firmSlug: "gsr-ventures",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "乔钦彧, shown in English as Kenway on the firm's Chinese team page, is listed as 合伙人 (Partner) as of 6 September 2026. He does not appear on the English-language team page. No surname is published in English. GSR Ventures publishes no biography text for its team members on either the Chinese or the English version of its team page, so no education, prior employment, join year, board seats or person-attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "金沙江创投 (GSR Ventures) - 团队 (Chinese site, richer; checked 6 Sep 2026)", url: "https://gsrventureschina.com/team" }
+    ]
+  },
+"neil-shen": {
+    name: "Neil Shen (沈南鹏)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "红杉中国创始及执行合伙人 (Founding and Managing Partner)",
+    joinedYear: 2005,
+    investmentFocus: [],
+    education: [
+      "BSc, Applied Mathematics, Shanghai Jiao Tong University (1989)",
+      "Master's degree in management, Yale School of Management (1992)"
+    ],
+    previousExperience: [
+      "Employee (United States), Citibank (c. 1992-1994)",
+      "Investment banker, Hong Kong, Lehman Brothers (from 1994)",
+      "Director of China capital markets, Deutsche Bank (from 1996)",
+      "Co-founder, Ctrip.com (now Trip.com Group) (from 1999)",
+      "Co-founder, Home Inn (from 2002)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1989, event: "Graduates from Shanghai Jiao Tong University with a bachelor's degree in applied mathematics." },
+      { year: 1992, event: "Graduates from the Yale School of Management with a master's degree in management." },
+      { year: 1994, event: "Moves to Hong Kong to work as an investment banker at Lehman Brothers." },
+      { year: 1996, event: "Joins Deutsche Bank as director of China capital markets." },
+      { year: 1999, event: "Co-founds Ctrip.com in June 1999." },
+      { year: 2002, event: "Co-founds Home Inn." },
+      { year: 2005, event: "Co-founds Sequoia Capital China, the firm that is now HSG." },
+      { year: 2023, event: "Named among the regional leaders in Sequoia Capital's 6 June 2023 announcement that the partnership would separate into three firms, with the China business becoming HongShan." }
+    ],
+    biography: "Neil Shen (沈南鹏) is listed on HSG's Chinese-language team page (hongshan.com/team) as 红杉中国创始及执行合伙人, checked 6 September 2026; HSG's own English profile page at https://www.hsgcap.com/people/neil-shen/ renders this as \"Founding and Managing Partner\". He co-founded the firm in 2005 as Sequoia Capital China, alongside Zhang Fan, who left in 2009. Before founding the firm he graduated from Shanghai Jiao Tong University in applied mathematics in 1989 and from the Yale School of Management in 1992, worked at Citibank in the United States, moved to Hong Kong as an investment banker at Lehman Brothers in 1994, and joined Deutsche Bank as director of China capital markets in 1996. He co-founded Ctrip.com in June 1999 and Home Inn in 2002. He was one of the three regional leaders named in Sequoia Capital's 6 June 2023 announcement that the partnership would separate into Sequoia Capital, Peak XV Partners and HongShan. Career and education details before 2005 are taken from Wikipedia and were not confirmed against a primary source; no currently held board seats were confirmed.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Neil Shen (沈南鹏)", url: "https://www.hongshan.com/people/neil-shen/" },
+      { label: "HSG - English individual profile page for Neil Shen", url: "https://www.hsgcap.com/people/neil-shen/" },
+      { label: "Wikipedia - Neil Shen (education and pre-2005 career)", url: "https://en.wikipedia.org/wiki/Neil_Shen" },
+      { label: "TechCrunch - Sequoia splits China and India arms from US mothership (6 June 2023)", url: "https://techcrunch.com/2023/06/06/sequoia-rebrands-china-india-and-southeast-asia-units/" }
+    ]
+  },
+"angela-dong": {
+    name: "Angela Dong (董炜)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "投资合伙人 (Venture Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Angela Dong (董炜) is listed on HSG's Chinese-language team page (hongshan.com/team) as 投资合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/%e8%91%a3%e7%82%9c/ gives the Chinese name 董炜 and the English name Angela Dong, and carries a title only, with no biography text. No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Angela Dong (董炜)", url: "https://www.hongshan.com/people/%e8%91%a3%e7%82%9c/" }
+    ]
+  },
+"caroline-fu": {
+    name: "Caroline Fu (富欣)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Caroline Fu (富欣) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/caroline-fu/ gives the Chinese name 富欣 and the English name Caroline Fu, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/caroline-fu/ renders the title as \"Partner\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Caroline Fu (富欣)", url: "https://www.hongshan.com/people/caroline-fu/" },
+      { label: "HSG - English individual profile page for Caroline Fu", url: "https://www.hsgcap.com/people/caroline-fu/" }
+    ]
+  },
+"yuan-gong": {
+    name: "Yuan Gong (公元)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Yuan Gong (公元) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/yuan-gong/ gives the Chinese name 公元 and the English name Yuan Gong, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/yuan-gong/ shows the title \"Managing Director\", which differs from the Chinese team page; the Chinese team page has been taken as current. No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Yuan Gong (公元)", url: "https://www.hongshan.com/people/yuan-gong/" },
+      { label: "HSG - English individual profile page for Yuan Gong", url: "https://www.hsgcap.com/people/yuan-gong/" }
+    ]
+  },
+"colin-guo": {
+    name: "Colin Guo (郭山汕)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "投资合伙人 (Venture Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Colin Guo (郭山汕) is listed on HSG's Chinese-language team page (hongshan.com/team) as 投资合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/colin-guo/ gives the Chinese name 郭山汕 and the English name Colin Guo, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/colin-guo/ renders the title as \"Venture Partner\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Colin Guo (郭山汕)", url: "https://www.hongshan.com/people/colin-guo/" },
+      { label: "HSG - English individual profile page for Colin Guo", url: "https://www.hsgcap.com/people/colin-guo/" }
+    ]
+  },
+"tiantian-he": {
+    name: "Tiantian He (何田田)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tiantian He (何田田) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/tiantian-he/ gives the Chinese name 何田田 and the English name Tiantian He, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/tiantian-he/ shows the title \"Managing Director\", which differs from the Chinese team page; the Chinese team page has been taken as current. No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Tiantian He (何田田)", url: "https://www.hongshan.com/people/tiantian-he/" },
+      { label: "HSG - English individual profile page for Tiantian He", url: "https://www.hsgcap.com/people/tiantian-he/" }
+    ]
+  },
+"ruodi-hu": {
+    name: "Ruodi Hu (胡若笛)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ruodi Hu (胡若笛) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/ruodi-hu/ gives the Chinese name 胡若笛 and the English name Ruodi Hu, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/ruodi-hu/ renders the title as \"Partner\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Ruodi Hu (胡若笛)", url: "https://www.hongshan.com/people/ruodi-hu/" },
+      { label: "HSG - English individual profile page for Ruodi Hu", url: "https://www.hsgcap.com/people/ruodi-hu/" }
+    ]
+  },
+"steven-ji": {
+    name: "Steven Ji (计越)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "投资合伙人 (Venture Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Steven Ji (计越) is listed on HSG's Chinese-language team page (hongshan.com/team) as 投资合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/steven-ji/ gives the Chinese name 计越 and the English name Steven Ji, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/steven-ji/ renders the title as \"Venture Partner\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Steven Ji (计越)", url: "https://www.hongshan.com/people/steven-ji/" },
+      { label: "HSG - English individual profile page for Steven Ji", url: "https://www.hsgcap.com/people/steven-ji/" }
+    ]
+  },
+"steve-jia": {
+    name: "Steve Jia (贾沁)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人，并购业务 (Partner, Head of Buyout)",
+    joinedYear: null,
+    investmentFocus: ["Buyout"],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Steve Jia (贾沁) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人，并购业务, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/steve-jia/ gives the Chinese name 贾沁 and the English name Steve Jia, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/steve-jia/ renders the title as \"Partner, Head of Buyout\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Steve Jia (贾沁)", url: "https://www.hongshan.com/people/steve-jia/" },
+      { label: "HSG - English individual profile page for Steve Jia", url: "https://www.hsgcap.com/people/steve-jia/" }
+    ]
+  },
+"annie-lee": {
+    name: "Annie Lee (李安妮)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人，医疗并购 (Partner, Healthcare M&A)",
+    joinedYear: null,
+    investmentFocus: ["Healthcare", "M&A"],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Annie Lee (李安妮) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人，医疗并购, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/%e6%9d%8e%e5%ae%89%e5%a6%ae/ gives the Chinese name 李安妮 and the English name Annie Lee, and carries a title only, with no biography text. No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Annie Lee (李安妮)", url: "https://www.hongshan.com/people/%e6%9d%8e%e5%ae%89%e5%a6%ae/" }
+    ]
+  },
+"xing-liu": {
+    name: "Xing Liu (刘星)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Xing Liu (刘星) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/xing-liu/ gives the Chinese name 刘星 and the English name Xing Liu, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/xing-liu/ renders the title as \"Partner\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Xing Liu (刘星)", url: "https://www.hongshan.com/people/xing-liu/" },
+      { label: "HSG - English individual profile page for Xing Liu", url: "https://www.hsgcap.com/people/xing-liu/" }
+    ]
+  },
+"chris-miao": {
+    name: "Chris Miao (缪海源)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人，人力资本负责人 (Partner, Head of Human Capital)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Chris Miao (缪海源) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人，人力资本负责人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/chris-miao/ gives the Chinese name 缪海源 and the English name Chris Miao, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/chris-miao/ renders the title as \"Partner, Head of Human Capital\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Chris Miao (缪海源)", url: "https://www.hongshan.com/people/chris-miao/" },
+      { label: "HSG - English individual profile page for Chris Miao", url: "https://www.hsgcap.com/people/chris-miao/" }
+    ]
+  },
+"enita-pu": {
+    name: "Enita Pu (浦晓燕)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Enita Pu (浦晓燕) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/enita-pu/ gives the Chinese name 浦晓燕 and the English name Enita Pu, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/enita-pu/ renders the title as \"Partner\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Enita Pu (浦晓燕)", url: "https://www.hongshan.com/people/enita-pu/" },
+      { label: "HSG - English individual profile page for Enita Pu", url: "https://www.hsgcap.com/people/enita-pu/" }
+    ]
+  },
+"kevin-su": {
+    name: "Kevin Su (苏凯)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kevin Su (苏凯) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/kevin-su/ gives the Chinese name 苏凯 and the English name Kevin Su, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/kevin-su/ renders the title as \"Partner\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Kevin Su (苏凯)", url: "https://www.hongshan.com/people/kevin-su/" },
+      { label: "HSG - English individual profile page for Kevin Su", url: "https://www.hsgcap.com/people/kevin-su/" }
+    ]
+  },
+"glen-sun": {
+    name: "Glen Sun (孙谦)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Glen Sun (孙谦) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/glen-sun/ gives the Chinese name 孙谦 and the English name Glen Sun, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/glen-sun/ renders the title as \"Partner\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Glen Sun (孙谦)", url: "https://www.hongshan.com/people/glen-sun/" },
+      { label: "HSG - English individual profile page for Glen Sun", url: "https://www.hsgcap.com/people/glen-sun/" }
+    ]
+  },
+"rock-wang": {
+    name: "Rock Wang (王恺)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Rock Wang (王恺) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/rock-wang/ gives the Chinese name 王恺 and the English name Rock Wang, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/rock-wang/ shows the title \"Managing Director\", which differs from the Chinese team page; the Chinese team page has been taken as current. No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Rock Wang (王恺)", url: "https://www.hongshan.com/people/rock-wang/" },
+      { label: "HSG - English individual profile page for Rock Wang", url: "https://www.hsgcap.com/people/rock-wang/" }
+    ]
+  },
+"phairy-wu": {
+    name: "Phairy Wu (吴茗)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Phairy Wu (吴茗) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/phairy-wu/ gives the Chinese name 吴茗 and the English name Phairy Wu, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/phairy-wu/ shows the title \"Venture Partner\", which differs from the Chinese team page; the Chinese team page has been taken as current. No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Phairy Wu (吴茗)", url: "https://www.hongshan.com/people/phairy-wu/" },
+      { label: "HSG - English individual profile page for Phairy Wu", url: "https://www.hsgcap.com/people/phairy-wu/" }
+    ]
+  },
+"tony-xiang": {
+    name: "Tony Xiang (项晓骁)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tony Xiang (项晓骁) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/tony-xiang/ gives the Chinese name 项晓骁 and the English name Tony Xiang, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/tony-xiang/ renders the title as \"Partner\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Tony Xiang (项晓骁)", url: "https://www.hongshan.com/people/tony-xiang/" },
+      { label: "HSG - English individual profile page for Tony Xiang", url: "https://www.hsgcap.com/people/tony-xiang/" }
+    ]
+  },
+"qing-xu": {
+    name: "Qing Xu (徐青)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人，基础设施投资 (Partner, Infrastructure Investments)",
+    joinedYear: null,
+    investmentFocus: ["Infrastructure"],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Qing Xu (徐青) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人，基础设施投资, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/qing-xu/ gives the Chinese name 徐青 and the English name Qing Xu, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/qing-xu/ renders the title as \"Partner, Infrastructure Investments\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Qing Xu (徐青)", url: "https://www.hongshan.com/people/qing-xu/" },
+      { label: "HSG - English individual profile page for Qing Xu", url: "https://www.hsgcap.com/people/qing-xu/" }
+    ]
+  },
+"jim-yang": {
+    name: "Jim Yang (杨钧)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "投资合伙人 (Venture Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jim Yang (杨钧) is listed on HSG's Chinese-language team page (hongshan.com/team) as 投资合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/%e6%9d%a8%e9%92%a7/ gives the Chinese name 杨钧, and carries a title only, with no biography text. The English form of the name is taken from the photograph filename on the team page (杨钧Jim-Yang) rather than from body text, and no individual English-language profile page was found. No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Jim Yang (杨钧)", url: "https://www.hongshan.com/people/%e6%9d%a8%e9%92%a7/" }
+    ]
+  },
+"lynn-yang": {
+    name: "Lynn Yang (杨云霞)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Lynn Yang (杨云霞) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/lynn-yang/ gives the Chinese name 杨云霞 and the English name Lynn Yang, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/lynn-yang/ renders the title as \"Partner\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Lynn Yang (杨云霞)", url: "https://www.hongshan.com/people/lynn-yang/" },
+      { label: "HSG - English individual profile page for Lynn Yang", url: "https://www.hsgcap.com/people/lynn-yang/" }
+    ]
+  },
+"zhaoguo-yang": {
+    name: "Zhaoguo Yang (杨兆国)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "投资合伙人 (Venture Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Zhaoguo Yang (杨兆国) is listed on HSG's Chinese-language team page (hongshan.com/team) as 投资合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/zhaoguo-yang/ gives the Chinese name 杨兆国 and the English name Zhaoguo Yang, and carries a title only, with no biography text. The Chinese profile page shows no English name; the English form is taken from HSG's own profile URL https://www.hsgcap.com/people/zhaoguo-yang/. HSG's English-language profile page at https://www.hsgcap.com/people/zhaoguo-yang/ renders the title as \"Venture Partner\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Zhaoguo Yang (杨兆国)", url: "https://www.hongshan.com/people/zhaoguo-yang/" },
+      { label: "HSG - English individual profile page for Zhaoguo Yang", url: "https://www.hsgcap.com/people/zhaoguo-yang/" }
+    ]
+  },
+"eva-ip": {
+    name: "Eva Ip (叶小慧)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人及首席财务官 (Partner and Chief Financial Officer)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Eva Ip (叶小慧) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人及首席财务官, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/eva-ip/ gives the Chinese name 叶小慧 and the English name Eva Ip, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/eva-ip/ renders the title as \"Partner and Chief Financial Officer\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Eva Ip (叶小慧)", url: "https://www.hongshan.com/people/eva-ip/" },
+      { label: "HSG - English individual profile page for Eva Ip", url: "https://www.hsgcap.com/people/eva-ip/" }
+    ]
+  },
+"hanqing-yu": {
+    name: "Hanqing Yu (于瀚清)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人，并购业务 (Partner, M&A)",
+    joinedYear: null,
+    investmentFocus: ["M&A"],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Hanqing Yu (于瀚清) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人，并购业务, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/hanqing-yu/ gives the Chinese name 于瀚清 and the English name Hanqing Yu, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/hanqing-yu/ renders the title as \"Partner, M&A\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Hanqing Yu (于瀚清)", url: "https://www.hongshan.com/people/hanqing-yu/" },
+      { label: "HSG - English individual profile page for Hanqing Yu", url: "https://www.hsgcap.com/people/hanqing-yu/" }
+    ]
+  },
+"reggie-zhang": {
+    name: "Reggie Zhang (张涵)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Reggie Zhang (张涵) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/reggie-zhang/ gives the Chinese name 张涵 and the English name Reggie Zhang, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/reggie-zhang/ renders the title as \"Partner\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Reggie Zhang (张涵)", url: "https://www.hongshan.com/people/reggie-zhang/" },
+      { label: "HSG - English individual profile page for Reggie Zhang", url: "https://www.hsgcap.com/people/reggie-zhang/" }
+    ]
+  },
+"robert-zhang": {
+    name: "Robert Zhang (张联庆)",
+    firm: "HSG",
+    firmSlug: "hsg",
+    title: "合伙人及总法律顾问 (Partner and General Counsel)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Robert Zhang (张联庆) is listed on HSG's Chinese-language team page (hongshan.com/team) as 合伙人及总法律顾问, checked 6 September 2026. The individual profile page at https://www.hongshan.com/people/robert-zhang/ gives the Chinese name 张联庆 and the English name Robert Zhang, and carries a title only, with no biography text. HSG's English-language profile page at https://www.hsgcap.com/people/robert-zhang/ renders the title as \"Partner and General Counsel\". No education, prior employment, board seats or individually attributed investments could be sourced for this person.",
+    notableInvestments: [],
+    sources: [
+      { label: "HongShan - 红杉团队 team page (roster of record, checked 6 September 2026)", url: "https://www.hongshan.com/team/" },
+      { label: "HongShan - individual profile page for Robert Zhang (张联庆)", url: "https://www.hongshan.com/people/robert-zhang/" },
+      { label: "HSG - English individual profile page for Robert Zhang", url: "https://www.hsgcap.com/people/robert-zhang/" }
+    ]
+  },
+"robbie-paul": {
+    name: "Robbie Paul",
+    firm: "Icehouse Ventures",
+    firmSlug: "icehouse-ventures",
+    title: "CEO",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Robbie Paul is CEO of Icehouse Ventures. The firm's team page states verbatim that he \"Has been with Icehouse Ventures from its angel network, to its first fund, to over $500m in FUM and the largest portfolio of NZ's most promising tech companies.\" The firm's own 2019 launch post, written by him, says he had joined The Icehouse a decade before writing it, which would place his start around 2009, but no explicit join year is published so joinedYear is left null. No education or prior employers are published on the firm's site. He is included in this roster as the firm's most senior investing decision-maker even though his title is CEO rather than Partner.",
+    notableInvestments: [],
+    sources: [
+      { label: "Icehouse Ventures - Team page", url: "https://www.icehouseventures.co.nz/team" },
+      { label: "Icehouse Ventures - The Launch of Icehouse Ventures (authored by Robbie Paul)", url: "https://resources.icehouseventures.co.nz/blog/the-launch-of-icehouse-ventures" }
+    ]
+  },
+"jack-mcquire": {
+    name: "Jack McQuire",
+    firm: "Icehouse Ventures",
+    firmSlug: "icehouse-ventures",
+    title: "Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jack McQuire is a Partner at Icehouse Ventures. The firm's team page carries only a one-line description for him: \"Drawn to the optimism of founders tackling seemingly insurmountable global problems, a three-month internship has become a career spanning over a decade.\" That indicates he started at the firm as an intern and has been there more than ten years, but no join year, education or prior employer is published, so those fields are left empty rather than being derived.",
+    notableInvestments: [],
+    sources: [
+      { label: "Icehouse Ventures - Team page", url: "https://www.icehouseventures.co.nz/team" }
+    ]
+  },
+"barnaby-marshall": {
+    name: "Barnaby Marshall",
+    firm: "Icehouse Ventures",
+    firmSlug: "icehouse-ventures",
+    title: "Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: ["Early stage"],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Barnaby Marshall is a Partner at Icehouse Ventures. The firm's team page describes him verbatim as \"Involved in the NZ startup ecosystem for over a decade as both a founder and investor. Discovers and supports New Zealand's most ambitious early-stage entrepreneurs to achieve global scale.\" The firm publishes no join year, education or named prior employer for him.",
+    notableInvestments: [],
+    sources: [
+      { label: "Icehouse Ventures - Team page", url: "https://www.icehouseventures.co.nz/team" }
+    ]
+  },
+"jo-wickham": {
+    name: "Jo Wickham",
+    firm: "Icehouse Ventures",
+    firmSlug: "icehouse-ventures",
+    title: "Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Private equity and corporate lawyer at a London Magic Circle firm and at top-tier Auckland firms",
+      "Senior executive at a globally listed New Zealand technology company",
+      "Senior executive at a data-driven marketing startup"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jo Wickham is a Partner at Icehouse Ventures. The firm's team page describes her verbatim as \"Passionate about taking NZ tech to the world. Was a private equity/corporate lawyer at London Magic Circle and Auckland law firms, before a becoming a senior exec for a globally listed NZ tech company and a data driven marketing startup.\" The firm does not name the specific employers, so her previous experience is recorded exactly as described without naming firms that were not stated. No join year or education is published.",
+    notableInvestments: [],
+    sources: [
+      { label: "Icehouse Ventures - Team page", url: "https://www.icehouseventures.co.nz/team" }
+    ]
+  },
+"jason-wang": {
+    name: "Jason Wang",
+    firm: "Icehouse Ventures",
+    firmSlug: "icehouse-ventures",
+    title: "Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2016, event: "Raised his first fund, per the firm's team page." }
+    ],
+    biography: "Jason Wang is a Partner at Icehouse Ventures. The firm's team page describes him verbatim as \"An EHF fellow. Raised his first fund in 2016, has established a vibrant Chinese investor community. Positioning Icehouse Ventures to build the most diverse and impactful investor network in the country.\" No join year, education or prior employer is published for him.",
+    notableInvestments: [],
+    sources: [
+      { label: "Icehouse Ventures - Team page", url: "https://www.icehouseventures.co.nz/team" }
+    ]
+  },
+"tim-brown": {
+    name: "Tim Brown",
+    firm: "Icehouse Ventures",
+    firmSlug: "icehouse-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Allbirds - co-founder"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tim Brown is a Venture Partner at Icehouse Ventures. The firm's team page describes him verbatim as \"Allbirds co-founder and former All Whites captain. Bringing his wealth of experience to Kiwi founders looking to transform our future.\" No join year or education is published. Allbirds is recorded as prior experience because the firm states he co-founded it; no investment by him through Icehouse Ventures is attributed to him by any source found, so notableInvestments is empty.",
+    notableInvestments: [],
+    sources: [
+      { label: "Icehouse Ventures - Team page", url: "https://www.icehouseventures.co.nz/team" }
+    ]
+  },
+"tom-furlong": {
+    name: "Tom Furlong",
+    firm: "Icehouse Ventures",
+    firmSlug: "icehouse-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Corporate law in Silicon Valley - 15 years",
+      "Granite Ventures - venture capitalist, 15 years"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tom Furlong is a Venture Partner at Icehouse Ventures. The firm's team page describes him verbatim as \"Spent 15 years in corporate law in Silicon Valley and 15 years as a venture capitalist at Granite Ventures, with $1b FUM and a number of unicorns to its credit.\" Note that the $1b funds-under-management figure in that sentence refers to Granite Ventures and not to Icehouse Ventures. No join year or education is published.",
+    notableInvestments: [],
+    sources: [
+      { label: "Icehouse Ventures - Team page", url: "https://www.icehouseventures.co.nz/team" }
+    ]
+  },
+"bryan-baum": {
+    name: "Bryan Baum",
+    firm: "K5 Global",
+    firmSlug: "k5-global",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2018,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Co-founds K5 Global with Michael Kives, per the firm's own homepage." },
+      { year: 2023, event: "Named in the SEC Form D for K5 Global Technology Fund, LP - Series 007, filed 28 February 2023, as a related person with the relationship Director and as Managing Member of the General Partner." }
+    ],
+    biography: "Bryan Baum is listed on K5 Global's current team page as Co-Founder & Managing Partner. The firm's homepage states that K5 Global was founded in 2018 by Michael Kives and Bryan Baum. He is named in K5's SEC Form D filing of 28 February 2023 for K5 Global Technology Fund, LP - Series 007 as a related person, described as a Director and as Managing Member of the General Partner. K5's team page carries no biography text, and no education or prior employer for him could be established from a primary source, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "K5 Global - Team", url: "https://www.k5global.com/team" },
+      { label: "K5 Global - Homepage (founders and founding year)", url: "https://www.k5global.com/" },
+      { label: "SEC Form D, K5 Global Technology Fund, LP - Series 007, filed 28 February 2023", url: "https://www.sec.gov/Archives/edgar/data/1867774/000189025723000023/primary_doc.xml" }
+    ]
+  },
+"michael-kives": {
+    name: "Michael Kives",
+    firm: "K5 Global",
+    firmSlug: "k5-global",
+    title: "Co-Founder & Managing Partner",
+    joinedYear: 2018,
+    investmentFocus: [],
+    education: [
+      "Stanford University - graduated Phi Beta Kappa (degree not stated)"
+    ],
+    previousExperience: [
+      "Office of former President Bill Clinton, Harlem - interim spokesperson",
+      "Office of Senator Hillary Clinton, Washington DC - aide",
+      "Creative Artists Agency (CAA) - fifteen years, rising to agent"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Co-founds K5 Global with Bryan Baum, per the firm's own homepage." }
+    ],
+    biography: "Michael Kives is listed on K5 Global's current team page as Co-Founder & Managing Partner, and the firm's homepage states that K5 Global was founded in 2018 by Michael Kives and Bryan Baum. Before K5 he spent fifteen years at Creative Artists Agency, rising to agent, and earlier worked as an aide in Senator Hillary Clinton's Washington DC office and as an interim spokesperson at former President Bill Clinton's Harlem office. He attended Stanford University and graduated Phi Beta Kappa. K5's team page carries no biography text; the career and education facts here are drawn from his Wikipedia article and should be confirmed against a primary source before insertion.",
+    notableInvestments: [],
+    sources: [
+      { label: "K5 Global - Team", url: "https://www.k5global.com/team" },
+      { label: "K5 Global - Homepage (founders and founding year)", url: "https://www.k5global.com/" },
+      { label: "Wikipedia - Michael Kives", url: "https://en.wikipedia.org/wiki/Michael_Kives" }
+    ]
+  },
+"keenan-rice": {
+    name: "Keenan Rice",
+    firm: "K5 Global",
+    firmSlug: "k5-global",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Keenan Rice is listed on K5 Global's current team page as General Partner, verified across three separate transcriptions of that page on 6 September 2026. The team page carries no biography text and the individual profile URLs on the site render no content, so no join year, education, prior employer or investment attribution could be sourced. Those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "K5 Global - Team", url: "https://www.k5global.com/team" }
+    ]
+  },
+"jessica-bixby": {
+    name: "Jessica Bixby",
+    firm: "K5 Global",
+    firmSlug: "k5-global",
+    title: "Associate Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jessica Bixby is listed on K5 Global's current team page as Associate Partner, verified across three separate transcriptions of that page on 6 September 2026. Associate Partner is the exact title the firm uses and is retained here rather than normalised. The team page carries no biography text, so no join year, education, prior employer or investment attribution could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "K5 Global - Team", url: "https://www.k5global.com/team" }
+    ]
+  },
+"f-myles-nuzzi": {
+    name: "F Myles Nuzzi",
+    firm: "K5 Global",
+    firmSlug: "k5-global",
+    title: "Head of IR, Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "F Myles Nuzzi is listed on K5 Global's current team page as \"Head of IR, Partner\", verified across three separate transcriptions of that page on 6 September 2026. The name is printed without a period after the initial F and is reproduced here exactly as the firm writes it. This is an investor relations role rather than an investing role, but the firm attaches a Partner title to it, so a record is created. The team page carries no biography text, so no join year, education or prior employer could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "K5 Global - Team", url: "https://www.k5global.com/team" }
+    ]
+  },
+"hwang-man-soon": {
+    name: "황만순 (Hwang Man-soon)",
+    firm: "Korea Investment Partners",
+    firmSlug: "korea-investment-partners",
+    title: "대표이사 (Representative Director, chief executive)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Reported on 9 December 2020 as the incoming 대표이사 of Korea Investment Partners, succeeding 백여현; described as then serving as 상무 and chief investment officer." },
+      { year: 2020, event: "Listed as [신임] 대표이사 in the Korea Investment Holdings group personnel announcement of 16 December 2020." },
+      { year: 2025, event: "Interviewed by 한국금융신문 in March 2025 as 한국투자파트너스 대표이사." }
+    ],
+    biography: "황만순 is Korea Investment Partners' 대표이사, the firm's representative director and chief executive. 딜사이트 reported on 9 December 2020 that he had been designated incoming 대표이사, succeeding 백여현 after twelve years, and that he had until then been 상무 and the firm's chief investment officer; the report also notes he was the first venture capitalist in the industry to come from a pharmacy background. The Korea Investment Holdings group personnel announcement of 16 December 2020 lists him under [신임] as 대표이사. 한국금융신문 interviewed him in March 2025 in that role. No education, board seats, exit counts or person-attributed investments could be sourced to the standard this project requires. The romanisation of this person's name in Latin script is a standard transliteration and is not published by the firm, whose own site could not be rendered; the Korean form is the sourced one.",
+    notableInvestments: [],
+    sources: [
+      { label: "딜사이트 - 한투파, 12년 만에 수장 교체…황만순 신임 대표 내정 (9 Dec 2020)", url: "https://dealsite.co.kr/articles/68255" },
+      { label: "독서신문 - [인사] 한국투자금융지주 그룹 외 (16 Dec 2020)", url: "https://www.readersnews.com/news/articleView.html?idxno=101523" },
+      { label: "한국금융신문 - 황만순 한국투자파트너스 대표 인터뷰 (March 2025)", url: "https://www.fntimes.com/html/view.php?ud=202503171954141180957e88cdd5_18" },
+      { label: "THE VC - 한국투자파트너스 기업정보 (registry-style data: incorporation date, CEO)", url: "https://thevc.kr/koreainvestmentpartners" }
+    ]
+  },
+"heo-jin": {
+    name: "허진 (Heo Jin)",
+    firm: "Korea Investment Partners",
+    firmSlug: "korea-investment-partners",
+    title: "상무 (투자1그룹장)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Promoted to 상무 as 투자1그룹장 in the Korea Investment Holdings group personnel round announced 31 December 2025." }
+    ],
+    biography: "허진 was promoted to 상무 and is identified as 투자1그룹장, head of Investment Group 1, in the Korea Investment Holdings group reorganisation and executive personnel announcement reported on 31 December 2025. 상무 is an executive-officer rank at this firm, above 상무보 and below 전무. No further career information could be sourced. The romanisation of this person's name in Latin script is a standard transliteration and is not published by the firm, whose own site could not be rendered; the Korean form is the sourced one.",
+    notableInvestments: [],
+    sources: [
+      { label: "데일리한국 - 한국투자금융지주 계열사 조직개편·임원인사 (31 Dec 2025)", url: "https://daily.hankooki.com/news/articleView.html?idxno=1316800" }
+    ]
+  },
+"jeong-hwa-mok": {
+    name: "정화목 (Jeong Hwa-mok)",
+    firm: "Korea Investment Partners",
+    firmSlug: "korea-investment-partners",
+    title: "상무보 (투자1그룹)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Promoted to 투자이사 in 투자2그룹, per the group personnel announcement of 30 December 2020." },
+      { year: 2026, event: "Promoted to 상무보 in 투자1그룹, per the group personnel announcement reported 1 January 2026." }
+    ],
+    biography: "정화목 was promoted to 상무보 in 투자1그룹 in the Korea Investment Holdings group personnel announcement reported on 1 January 2026. An earlier group announcement of 30 December 2020 records a promotion to 투자이사 in 투자2그룹 for the same name. 상무보 is the entry rank of the firm's executive-officer tier. No further career information could be sourced. The romanisation of this person's name in Latin script is a standard transliteration and is not published by the firm, whose own site could not be rendered; the Korean form is the sourced one.",
+    notableInvestments: [],
+    sources: [
+      { label: "파이낸셜투데이 - [인사] 한국투자금융지주 그룹 정기인사 (1 Jan 2026)", url: "https://www.ftoday.co.kr/news/articleView.html?idxno=352849" },
+      { label: "독서신문 - [인사] 한국투자금융그룹 외 (30 Dec 2020)", url: "https://readersnews.com/news/articleView.html?idxno=101701" }
+    ]
+  },
+"nam-tae-woo": {
+    name: "남태우 (Nam Tae-woo)",
+    firm: "Korea Investment Partners",
+    firmSlug: "korea-investment-partners",
+    title: "상무보 (PE본부)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Promoted to 상무보 in PE본부, per the group personnel announcement reported 1 January 2026." }
+    ],
+    biography: "남태우 was promoted to 상무보 in PE본부, the private equity division, in the Korea Investment Holdings group personnel announcement reported on 1 January 2026. 상무보 is the entry rank of the firm's executive-officer tier. No further career information could be sourced. The romanisation of this person's name in Latin script is a standard transliteration and is not published by the firm, whose own site could not be rendered; the Korean form is the sourced one.",
+    notableInvestments: [],
+    sources: [
+      { label: "파이낸셜투데이 - [인사] 한국투자금융지주 그룹 정기인사 (1 Jan 2026)", url: "https://www.ftoday.co.kr/news/articleView.html?idxno=352849" }
+    ]
+  },
+"david-zhang": {
+    name: "David Zhang (张颖)",
+    firm: "MPCi (Matrix Partners China)",
+    firmSlug: "matrix-partners-china",
+    title: "Founding Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "Shown with this title in the main investment-team listing on the firm's ENGLISH-language team page (matrixpartners.com.cn/en/matrix-team) as of 6 September 2026. He is NOT in the main 投资团队 listing on the Chinese-language version of the same page (matrixpartners.com.cn/matrix-team, and the identical page on the firm's mpc.vc domain), which shows twelve people and does not include him; his name appears there only in the team navigation dropdown, which also still carries people who left the firm years ago. No departure announcement was found. Recorded as current on the strength of the firm's own English page, with the English/Chinese conflict unresolved and flagged for the client.",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "David Zhang (张颖) is listed as Founding Partner in the investment-team listing on the English-language version of the MPCi (Matrix Partners China) team page as of 6 September 2026. He is not listed in the main 投资团队 grid on the Chinese-language version of that page. No education, prior employment, board seats, exit counts or person-attributed investments could be sourced from the firm's own site, which publishes no biography text for any team member.",
+    notableInvestments: [],
+    sources: [
+      { label: "MPCi (Matrix Partners China) - Investment Team, English version (checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/en/matrix-team" },
+      { label: "经纬创投 - 投资团队 (Chinese version, checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/matrix-team" }
+    ]
+  },
+"david-su": {
+    name: "David Su (徐传陞)",
+    firm: "MPCi (Matrix Partners China)",
+    firmSlug: "matrix-partners-china",
+    title: "Founding Managing Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "Shown with this title in the main investment-team listing on the firm's ENGLISH-language team page (matrixpartners.com.cn/en/matrix-team) as of 6 September 2026. He is NOT in the main 投资团队 listing on the Chinese-language version of the same page (matrixpartners.com.cn/matrix-team, and the identical page on the firm's mpc.vc domain), which shows twelve people and does not include him; his name appears there only in the team navigation dropdown, which also still carries people who left the firm years ago. No departure announcement was found. Recorded as current on the strength of the firm's own English page, with the English/Chinese conflict unresolved and flagged for the client.",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "David Su (徐传陞) is listed as Founding Managing Partner in the investment-team listing on the English-language version of the MPCi (Matrix Partners China) team page as of 6 September 2026. He is not listed in the main 投资团队 grid on the Chinese-language version of that page. The firm's site publishes no biography text for any team member, so no education, prior employment, board seats or person-attributed investments could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "MPCi (Matrix Partners China) - Investment Team, English version (checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/en/matrix-team" },
+      { label: "经纬创投 - 投资团队 (Chinese version, checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/matrix-team" }
+    ]
+  },
+"huadong-wang": {
+    name: "Huadong Wang (王华东)",
+    firm: "MPCi (Matrix Partners China)",
+    firmSlug: "matrix-partners-china",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Huadong Wang (王华东) is listed as Managing Partner on the English-language MPCi investment-team page and as 管理合伙人, the same title in Chinese, at the head of the 投资团队 listing on the Chinese-language page, as of 6 September 2026. He is the only partner-level person who appears in the main listing of both language versions. The firm's site publishes no biography text for any team member, so no education, prior employment, board seats or person-attributed investments could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "MPCi (Matrix Partners China) - Investment Team, English version (checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/en/matrix-team" },
+      { label: "经纬创投 - 投资团队 (Chinese version, checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/matrix-team" },
+      { label: "MPC - 投资团队 on the firm's mpc.vc domain (checked 6 Sep 2026)", url: "https://www.mpc.vc/matrix-team" }
+    ]
+  },
+"michael-zuo": {
+    name: "Michael Zuo (左凌烨)",
+    firm: "MPCi (Matrix Partners China)",
+    firmSlug: "matrix-partners-china",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "Shown with this title in the main 投资团队 listing on the firm's CHINESE-language team page (matrixpartners.com.cn/matrix-team, and the identical page on mpc.vc) as of 6 September 2026. He does not appear anywhere on the English-language version of the same page, which appears not to have been updated. The Chinese page is the richer and apparently more current of the two.",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Michael Zuo (左凌烨) is listed as 合伙人 (Partner) in the main 投资团队 listing on the Chinese-language MPCi team page as of 6 September 2026. His name also appears in the team navigation of the English-language version of the site, but not in that page's main listing. The firm's site publishes no biography text for any team member.",
+    notableInvestments: [],
+    sources: [
+      { label: "经纬创投 - 投资团队 (Chinese version, checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/matrix-team" },
+      { label: "MPC - 投资团队 on the firm's mpc.vc domain (checked 6 Sep 2026)", url: "https://www.mpc.vc/matrix-team" },
+      { label: "MPCi (Matrix Partners China) - Investment Team, English version (checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/en/matrix-team" }
+    ]
+  },
+"ti-tong": {
+    name: "Ti Tong (童倜)",
+    firm: "MPCi (Matrix Partners China)",
+    firmSlug: "matrix-partners-china",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ti Tong (童倜) is listed as Partner on the English-language MPCi investment-team page and as 合伙人, the same title in Chinese, on the Chinese-language version, as of 6 September 2026. The firm's site publishes no biography text for any team member, so no education, prior employment, board seats or person-attributed investments could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "MPCi (Matrix Partners China) - Investment Team, English version (checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/en/matrix-team" },
+      { label: "经纬创投 - 投资团队 (Chinese version, checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/matrix-team" },
+      { label: "MPC - 投资团队 on the firm's mpc.vc domain (checked 6 Sep 2026)", url: "https://www.mpc.vc/matrix-team" }
+    ]
+  },
+"yiping-xie": {
+    name: "谢义平 (Yiping Xie)",
+    firm: "MPCi (Matrix Partners China)",
+    firmSlug: "matrix-partners-china",
+    title: "合伙人 (Partner)",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "Shown with this title in the main 投资团队 listing on the firm's CHINESE-language team page (matrixpartners.com.cn/matrix-team, and the identical page on mpc.vc) as of 6 September 2026. He does not appear anywhere on the English-language version of the same page, which appears not to have been updated. The Chinese page is the richer and apparently more current of the two.",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "谢义平 is listed as 合伙人 (Partner) in the main 投资团队 listing on the Chinese-language MPCi team page as of 6 September 2026, confirmed on three separate fetches and on the identical page served from the firm's mpc.vc domain. He does not appear anywhere on the English-language version of the page, so the firm publishes no English rendering of his name; 'Yiping Xie' here is the standard pinyin romanisation and is not taken from a source. The firm's site publishes no biography text for any team member.",
+    notableInvestments: [],
+    sources: [
+      { label: "经纬创投 - 投资团队 (Chinese version, checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/matrix-team" },
+      { label: "MPC - 投资团队 on the firm's mpc.vc domain (checked 6 Sep 2026)", url: "https://www.mpc.vc/matrix-team" }
+    ]
+  },
+"harry-man": {
+    name: "Harry Man (万浩基)",
+    firm: "MPCi (Matrix Partners China)",
+    firmSlug: "matrix-partners-china",
+    title: "Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "Shown with this title in the main investment-team listing on the firm's ENGLISH-language team page (matrixpartners.com.cn/en/matrix-team) as of 6 September 2026. He is NOT in the main 投资团队 listing on the Chinese-language version of the same page (matrixpartners.com.cn/matrix-team, and the identical page on the firm's mpc.vc domain), which shows twelve people and does not include him; his name appears there only in the team navigation dropdown, which also still carries people who left the firm years ago. No departure announcement was found. Recorded as current on the strength of the firm's own English page, with the English/Chinese conflict unresolved and flagged for the client.",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Harry Man (万浩基) is listed as Partner in the investment-team listing on the English-language version of the MPCi team page as of 6 September 2026. He is not in the main 投资团队 grid on the Chinese-language version of that page, where his name appears only in the navigation dropdown. The firm's site publishes no biography text for any team member.",
+    notableInvestments: [],
+    sources: [
+      { label: "MPCi (Matrix Partners China) - Investment Team, English version (checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/en/matrix-team" },
+      { label: "经纬创投 - 投资团队 (Chinese version, checked 6 Sep 2026)", url: "https://www.matrixpartners.com.cn/matrix-team" }
+    ]
+  },
+"kojima-takuro": {
+    name: "小島 拓朗",
+    firm: "Mitsubishi UFJ Capital Co., Ltd.",
+    firmSlug: "mitsubishi-ufj-capital",
+    title: "代表取締役社長 (President and Representative Director)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Named as 代表取締役 of 三菱UFJキャピタル in the MUFG Bank and Mitsubishi UFJ Capital joint release of 28 May 2025 announcing the MUC-10 fund." }
+    ],
+    biography: "小島 拓朗 is listed as 代表取締役社長 (President and Representative Director) of 三菱UFJキャピタル株式会社 at the head of the officer table on the firm's own 会社概要 page. Mitsubishi UFJ Capital is a Japanese joint-stock company with a board of directors rather than a partnership, and uses no Partner title anywhere on its site. He is named as the firm's 代表取締役 in the joint MUFG Bank and Mitsubishi UFJ Capital release of 28 May 2025 announcing 三菱UFJキャピタル10号投資事業有限責任組合 (MUC-10), which reads 三菱UFJキャピタル株式会社（代表取締役 小島 拓朗、以下 三菱UFJキャピタル）. The firm's earlier joint release of 14 April 2023, announcing MUC-9 and LS-4, named 安岡隆一 as 代表取締役, so his tenure as representative director is evidenced from at latest May 2025; no appointment date is published and none has been inferred. The firm publishes no education, prior employment, joining year, board seat, IPO count or exit count for this person, and none has been inferred. The firm publishes staff names only in Japanese and gives no official romanisation, so the name is recorded exactly as the firm writes it.",
+    notableInvestments: [],
+    sources: [
+      { label: "三菱UFJキャピタル - 会社概要 (official company profile, officer list, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/corporateinfo/overview/" },
+      { label: "株式会社三菱UFJ銀行・三菱UFJキャピタル株式会社 - スタートアップの成長を支援する300億円のベンチャーキャピタルファンドの設立について (28 May 2025, MUC-10)", url: "https://www.bk.mufg.jp/info/pdf/20250528_muc10_release.pdf" },
+      { label: "株式会社三菱UFJ銀行・三菱UFJキャピタル株式会社 - 総額500億円のベンチャーキャピタルファンドの設立について (14 April 2023, MUC-9 and LS-4)", url: "https://www.bk.mufg.jp/news/news2023/pdf/news0414_1.pdf" }
+    ]
+  },
+"hokoyama-masashi": {
+    name: "宝子山 真史",
+    firm: "Mitsubishi UFJ Capital Co., Ltd.",
+    firmSlug: "mitsubishi-ufj-capital",
+    title: "代表取締役副社長 (Deputy President and Representative Director)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "宝子山 真史 is listed as 代表取締役副社長 (Deputy President and Representative Director) of 三菱UFJキャピタル株式会社 on the firm's own 会社概要 page, second in the officer table after the president. Mitsubishi UFJ Capital is a Japanese joint-stock company with a board of directors rather than a partnership, and uses no Partner title anywhere on its site. The firm publishes no education, prior employment, joining year, board seat, IPO count or exit count for this person, and none has been inferred. The firm publishes staff names only in Japanese and gives no official romanisation, so the name is recorded exactly as the firm writes it.",
+    notableInvestments: [],
+    sources: [
+      { label: "三菱UFJキャピタル - 会社概要 (official company profile, officer list, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/corporateinfo/overview/" }
+    ]
+  },
+"kobayashi-tadashi": {
+    name: "小林 禎",
+    firm: "Mitsubishi UFJ Capital Co., Ltd.",
+    firmSlug: "mitsubishi-ufj-capital",
+    title: "常務取締役 (Managing Director)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "小林 禎 is listed as 常務取締役 (Managing Director) of 三菱UFJキャピタル株式会社 on the firm's own 会社概要 page. Mitsubishi UFJ Capital is a Japanese joint-stock company with a board of directors rather than a partnership, and uses no Partner title anywhere on its site. The firm publishes no education, prior employment, joining year, board seat, IPO count or exit count for this person, and none has been inferred. The firm publishes staff names only in Japanese and gives no official romanisation, so the name is recorded exactly as the firm writes it.",
+    notableInvestments: [],
+    sources: [
+      { label: "三菱UFJキャピタル - 会社概要 (official company profile, officer list, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/corporateinfo/overview/" }
+    ]
+  },
+"tsukahara-shinsuke": {
+    name: "塚原 伸介",
+    firm: "Mitsubishi UFJ Capital Co., Ltd.",
+    firmSlug: "mitsubishi-ufj-capital",
+    title: "常務取締役 (Managing Director)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "塚原 伸介 is listed as 常務取締役 (Managing Director) of 三菱UFJキャピタル株式会社 on the firm's own 会社概要 page. Mitsubishi UFJ Capital is a Japanese joint-stock company with a board of directors rather than a partnership, and uses no Partner title anywhere on its site. The firm publishes no education, prior employment, joining year, board seat, IPO count or exit count for this person, and none has been inferred. The firm publishes staff names only in Japanese and gives no official romanisation, so the name is recorded exactly as the firm writes it.",
+    notableInvestments: [],
+    sources: [
+      { label: "三菱UFJキャピタル - 会社概要 (official company profile, officer list, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/corporateinfo/overview/" }
+    ]
+  },
+"kuki-takanari": {
+    name: "九鬼 隆成",
+    firm: "Mitsubishi UFJ Capital Co., Ltd.",
+    firmSlug: "mitsubishi-ufj-capital",
+    title: "取締役執行役員　投資第一部長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "九鬼 隆成 appears on both of the firm's own current listings of its senior people. The 会社概要 officer table lists him as 取締役 (Director). The firm's team page for キャピタリスト gives the fuller form of his title, 取締役執行役員　投資第一部長 (Director and Executive Officer, General Manager of Investment Department 1), which is the title recorded here. He is the only person on the firm's team pages who holds a board seat as well as an executive officer role. Mitsubishi UFJ Capital is a Japanese joint-stock company with a board of directors rather than a partnership, and uses no Partner title anywhere on its site. The firm publishes no education, prior employment, joining year, board seat, IPO count or exit count for this person, and none has been inferred. The firm publishes staff names only in Japanese and gives no official romanisation, so the name is recorded exactly as the firm writes it.",
+    notableInvestments: [],
+    sources: [
+      { label: "三菱UFJキャピタル - 会社概要 (official company profile, officer list, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/corporateinfo/overview/" },
+      { label: "三菱UFJキャピタル - チーム / キャピタリスト (official team page, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/team/Capitalist/" }
+    ]
+  },
+"matsuda-yasufumi": {
+    name: "松田 康文",
+    firm: "Mitsubishi UFJ Capital Co., Ltd.",
+    firmSlug: "mitsubishi-ufj-capital",
+    title: "取締役 (Director)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "松田 康文 is listed as 取締役 (Director) of 三菱UFJキャピタル株式会社 on the firm's own 会社概要 page. He is one of the two 取締役 in the officer table who are not marked 非常勤 (non-executive), the other being 九鬼 隆成. He does not appear with a title on any of the firm's three team pages. Mitsubishi UFJ Capital is a Japanese joint-stock company with a board of directors rather than a partnership, and uses no Partner title anywhere on its site. The firm publishes no education, prior employment, joining year, board seat, IPO count or exit count for this person, and none has been inferred. The firm publishes staff names only in Japanese and gives no official romanisation, so the name is recorded exactly as the firm writes it.",
+    notableInvestments: [],
+    sources: [
+      { label: "三菱UFJキャピタル - 会社概要 (official company profile, officer list, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/corporateinfo/overview/" },
+      { label: "三菱UFJキャピタル - チーム / キャピタリスト (official team page, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/team/Capitalist/" },
+      { label: "三菱UFJキャピタル - チーム / キャピタリスト（ライフサイエンス） (official team page, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/team/Capitalist%20(Life%20Science)/" },
+      { label: "三菱UFJキャピタル - チーム / Business Development 戦略開発 (official team page, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/team/Business%20Development/" }
+    ]
+  },
+"hasegawa-hiroyuki-mucap": {
+    name: "長谷川 宏之",
+    firm: "Mitsubishi UFJ Capital Co., Ltd.",
+    firmSlug: "mitsubishi-ufj-capital",
+    title: "常務執行役員　ライフサイエンス部長",
+    joinedYear: null,
+    investmentFocus: ["創薬（医薬品・再生医療等製品） / drug discovery, covering pharmaceuticals and regenerative medicine products, per the JST START business promoter unit page"],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Presented as 上席執行役員ライフサイエンス部長 of 三菱UFJキャピタル at the FIRM venture booster session of 27 February 2025." },
+      { year: null, event: "Listed as 代表事業プロモーター of the Mitsubishi UFJ Capital business promoter unit on the JST START programme site, with the title 上席執行役員・ライフサイエンス部長." }
+    ],
+    biography: "長谷川 宏之 is listed on the firm's own team page for キャピタリスト（ライフサイエンス） as 常務執行役員　ライフサイエンス部長 (Senior Managing Executive Officer, General Manager of the Life Science Department), and is the only person on that page carrying a title. He is the 代表事業プロモーター (lead business promoter) of Mitsubishi UFJ Capital's approved unit under the Japan Science and Technology Agency's START programme for creating new industries from universities; JST's page for the unit gives his title as 上席執行役員・ライフサイエンス部長 and states that the unit specialises within life sciences in drug discovery covering the whole of Japan. He presented as 上席執行役員ライフサイエンス部長 at a FIRM venture booster session on 27 February 2025, so the 常務執行役員 title on the firm's current site reflects a change after that date; the precise date of the change is not published. Mitsubishi UFJ Capital is a Japanese joint-stock company with a board of directors rather than a partnership, and uses no Partner title anywhere on its site. The firm publishes no education, prior employment, joining year, board seat, IPO count or exit count for this person, and none has been inferred. The firm publishes staff names only in Japanese and gives no official romanisation, so the name is recorded exactly as the firm writes it.",
+    notableInvestments: [],
+    sources: [
+      { label: "三菱UFJキャピタル - チーム / キャピタリスト（ライフサイエンス） (official team page, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/team/Capitalist%20(Life%20Science)/" },
+      { label: "JST 大学発新産業創出プログラム START - 事業プロモーターユニット 三菱UFJキャピタル株式会社", url: "https://www.jst.go.jp/start/promoter/unit/mucap.html" },
+      { label: "一般社団法人ファーマ・アンド・バイオIRミーティング (FIRM) ベンチャーブースター発表資料 - 長谷川宏之 (27 Feb 2025)", url: "https://firm.or.jp/wp-content/uploads/2025/03/FIRM%E3%83%99%E3%83%B3%E3%83%81%E3%83%A3%E3%83%BC%E3%83%96%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC%E7%99%BA%E8%A1%A8%E8%B3%87%E6%96%99_%E9%95%B7%E8%B0%B7%E5%B7%9D%E5%AE%8F%E4%B9%8B%E5%85%88%E7%94%9F.pdf" }
+    ]
+  },
+"taguchi-junichi": {
+    name: "田口 順一",
+    firm: "Mitsubishi UFJ Capital Co., Ltd.",
+    firmSlug: "mitsubishi-ufj-capital",
+    title: "執行役員　投資第二部長 (Executive Officer, General Manager of Investment Department 2)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "田口 順一 is listed on the firm's own team page for キャピタリスト as 執行役員　投資第二部長 (Executive Officer, General Manager of Investment Department 2). He is not listed in the officer table on the firm's 会社概要 page, which shows only 取締役 and 監査役 ranks and no standalone 執行役員 rows. Mitsubishi UFJ Capital is a Japanese joint-stock company with a board of directors rather than a partnership, and uses no Partner title anywhere on its site. The firm publishes no education, prior employment, joining year, board seat, IPO count or exit count for this person, and none has been inferred. The firm publishes staff names only in Japanese and gives no official romanisation, so the name is recorded exactly as the firm writes it.",
+    notableInvestments: [],
+    sources: [
+      { label: "三菱UFJキャピタル - チーム / キャピタリスト (official team page, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/team/Capitalist/" },
+      { label: "三菱UFJキャピタル - 会社概要 (official company profile, officer list, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/corporateinfo/overview/" }
+    ]
+  },
+"nishio-yuichi": {
+    name: "西尾 祐一",
+    firm: "Mitsubishi UFJ Capital Co., Ltd.",
+    firmSlug: "mitsubishi-ufj-capital",
+    title: "執行役員　投資第三部長 (Executive Officer, General Manager of Investment Department 3)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "西尾 祐一 is listed on the firm's own team page for キャピタリスト as 執行役員　投資第三部長 (Executive Officer, General Manager of Investment Department 3). He is not listed in the officer table on the firm's 会社概要 page, which shows only 取締役 and 監査役 ranks and no standalone 執行役員 rows. Mitsubishi UFJ Capital is a Japanese joint-stock company with a board of directors rather than a partnership, and uses no Partner title anywhere on its site. The firm publishes no education, prior employment, joining year, board seat, IPO count or exit count for this person, and none has been inferred. The firm publishes staff names only in Japanese and gives no official romanisation, so the name is recorded exactly as the firm writes it.",
+    notableInvestments: [],
+    sources: [
+      { label: "三菱UFJキャピタル - チーム / キャピタリスト (official team page, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/team/Capitalist/" },
+      { label: "三菱UFJキャピタル - 会社概要 (official company profile, officer list, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/corporateinfo/overview/" }
+    ]
+  },
+"seki-hiroaki": {
+    name: "関 寛明",
+    firm: "Mitsubishi UFJ Capital Co., Ltd.",
+    firmSlug: "mitsubishi-ufj-capital",
+    title: "執行役員　投資第四部長 (Executive Officer, General Manager of Investment Department 4)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "関 寛明 is listed on the firm's own team page for キャピタリスト as 執行役員　投資第四部長 (Executive Officer, General Manager of Investment Department 4). He is not listed in the officer table on the firm's 会社概要 page, which shows only 取締役 and 監査役 ranks and no standalone 執行役員 rows. Mitsubishi UFJ Capital is a Japanese joint-stock company with a board of directors rather than a partnership, and uses no Partner title anywhere on its site. The firm publishes no education, prior employment, joining year, board seat, IPO count or exit count for this person, and none has been inferred. The firm publishes staff names only in Japanese and gives no official romanisation, so the name is recorded exactly as the firm writes it.",
+    notableInvestments: [],
+    sources: [
+      { label: "三菱UFJキャピタル - チーム / キャピタリスト (official team page, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/team/Capitalist/" },
+      { label: "三菱UFJキャピタル - 会社概要 (official company profile, officer list, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/corporateinfo/overview/" }
+    ]
+  },
+"mitsuyasu-tetsuo": {
+    name: "光安 哲夫",
+    firm: "Mitsubishi UFJ Capital Co., Ltd.",
+    firmSlug: "mitsubishi-ufj-capital",
+    title: "執行役員　大阪支社長兼名古屋支社長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "光安 哲夫 is listed on the firm's own team page for キャピタリスト as 執行役員　大阪支社長兼名古屋支社長 (Executive Officer, General Manager of the Osaka Branch and concurrently of the Nagoya Branch). The firm's 会社概要 page gives the addresses of both branches, in Fushimimachi, Chuo-ku, Osaka and in Nishiki, Naka-ku, Nagoya. He is not listed in the officer table on the 会社概要 page. Mitsubishi UFJ Capital is a Japanese joint-stock company with a board of directors rather than a partnership, and uses no Partner title anywhere on its site. The firm publishes no education, prior employment, joining year, board seat, IPO count or exit count for this person, and none has been inferred. The firm publishes staff names only in Japanese and gives no official romanisation, so the name is recorded exactly as the firm writes it.",
+    notableInvestments: [],
+    sources: [
+      { label: "三菱UFJキャピタル - チーム / キャピタリスト (official team page, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/team/Capitalist/" },
+      { label: "三菱UFJキャピタル - 会社概要 (official company profile, officer list, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/corporateinfo/overview/" }
+    ]
+  },
+"yuki-masao": {
+    name: "湯木 将生",
+    firm: "Mitsubishi UFJ Capital Co., Ltd.",
+    firmSlug: "mitsubishi-ufj-capital",
+    title: "執行役員　戦略調査部長 (Executive Officer, General Manager of the Strategic Research Department)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "湯木 将生 is listed on the firm's own team page for Business Development 戦略開発 as 執行役員　戦略調査部長 (Executive Officer, General Manager of the Strategic Research Department), and is the only person on that page carrying a title. He is not listed in the officer table on the firm's 会社概要 page. The firm does not state whether the 戦略調査部 makes investment decisions; he is recorded here because he holds the same 執行役員 rank as the firm's investment department heads and appears on a team page the firm presents alongside its capitalist pages. Mitsubishi UFJ Capital is a Japanese joint-stock company with a board of directors rather than a partnership, and uses no Partner title anywhere on its site. The firm publishes no education, prior employment, joining year, board seat, IPO count or exit count for this person, and none has been inferred. The firm publishes staff names only in Japanese and gives no official romanisation, so the name is recorded exactly as the firm writes it.",
+    notableInvestments: [],
+    sources: [
+      { label: "三菱UFJキャピタル - チーム / Business Development 戦略開発 (official team page, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/team/Business%20Development/" },
+      { label: "三菱UFJキャピタル - 会社概要 (official company profile, officer list, checked 6 Sep 2026)", url: "https://www.mucap.co.jp/corporateinfo/overview/" }
+    ]
+  },
+"handa-kunio": {
+    name: "半田 邦雄",
+    firm: "みずほキャピタル株式会社",
+    firmSlug: "mizuho-capital",
+    title: "代表取締役社長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "半田 邦雄 is 代表取締役社長 of みずほキャピタル株式会社, listed first in the 役員 table on the firm's own 会社概要 page and named as the signatory of the firm's ご挨拶 (president's message) page under that same title. In that message he states that the company was founded in 1983, that it has supported close to 1,000 portfolio companies to listing (創業以来1,000社に迫る投資先の上場を支援), that it carries the group's core role in equity supply and IPO support, and that the firm operates under the purpose ともに挑む。ともに実る。 The firm publishes no biography, education or prior employment for him, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "みずほキャピタル - 会社概要 (役員 table)", url: "https://www.mizuho-vc.co.jp/company/company_profile.html" },
+      { label: "みずほキャピタル - ご挨拶 (president's message)", url: "https://www.mizuho-vc.co.jp/company/top_message.html" }
+    ]
+  },
+"obara-hisatada": {
+    name: "小原 久忠",
+    firm: "みずほキャピタル株式会社",
+    firmSlug: "mizuho-capital",
+    title: "専務取締役",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "小原 久忠 is listed as 専務取締役 of みずほキャピタル株式会社 in the 役員 table on the firm's own 会社概要 page, which is the only place the firm publishes any named individual. みずほキャピタル publishes NO team page, NO investment-professional listing and NO individual biographies anywhere on its site, and its 組織図 page is a single image file with no names in it, so no education, prior employment, board seats or attributed investments could be sourced for this person. Those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "みずほキャピタル - 会社概要 (役員 table)", url: "https://www.mizuho-vc.co.jp/company/company_profile.html" }
+    ]
+  },
+"hori-katsuya": {
+    name: "堀 克也",
+    firm: "みずほキャピタル株式会社",
+    firmSlug: "mizuho-capital",
+    title: "常務取締役",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "堀 克也 is listed as 常務取締役 of みずほキャピタル株式会社 in the 役員 table on the firm's own 会社概要 page, which is the only place the firm publishes any named individual. みずほキャピタル publishes NO team page, NO investment-professional listing and NO individual biographies anywhere on its site, and its 組織図 page is a single image file with no names in it, so no education, prior employment, board seats or attributed investments could be sourced for this person. Those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "みずほキャピタル - 会社概要 (役員 table)", url: "https://www.mizuho-vc.co.jp/company/company_profile.html" }
+    ]
+  },
+"kodoi-yoshiaki": {
+    name: "小土井 善章",
+    firm: "みずほキャピタル株式会社",
+    firmSlug: "mizuho-capital",
+    title: "常務取締役",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "小土井 善章 is listed as 常務取締役 of みずほキャピタル株式会社 in the 役員 table on the firm's own 会社概要 page, which is the only place the firm publishes any named individual. みずほキャピタル publishes NO team page, NO investment-professional listing and NO individual biographies anywhere on its site, and its 組織図 page is a single image file with no names in it, so no education, prior employment, board seats or attributed investments could be sourced for this person. Those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "みずほキャピタル - 会社概要 (役員 table)", url: "https://www.mizuho-vc.co.jp/company/company_profile.html" }
+    ]
+  },
+"ueda-kosuke": {
+    name: "上田 宏介",
+    firm: "ニッセイ・キャピタル株式会社",
+    firmSlug: "nissay-capital",
+    title: "代表取締役社長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "上田 宏介 is named as the 代表者 of ニッセイ・キャピタル株式会社 in the company profile block that the firm publishes alongside its own press releases on PR TIMES, and the string 代表取締役社長 appears on that same page. A negative-control pass over the page confirmed 上田 宏介, 代表取締役社長, 日本生命保険相互会社, 1991年04月 and 30億円 are all PRESENT and that a control name is NOT PRESENT. The firm's own website, including its ご挨拶 and 会社概要 pages, was unreachable throughout this session, so no biography, education, prior employment, board seats or attributed investments could be sourced for him and every such field is left empty rather than estimated. A recruiting site gives a different and evidently stale president for the firm; that name was not used and the conflict is recorded in the notes.",
+    notableInvestments: [],
+    sources: [
+      { label: "ニッセイ・キャピタル株式会社 - press release with the firm's own 会社概要 block on PR TIMES", url: "https://prtimes.jp/main/html/rd/p/000000027.000043106.html" },
+      { label: "ニッセイ・キャピタル株式会社 - PR TIMES company page", url: "https://prtimes.jp/main/html/searchrlp/company_id/43106" }
+    ]
+  },
+"takada-minoru": {
+    name: "髙田 実",
+    firm: "ニッセイ・キャピタル株式会社",
+    firmSlug: "nissay-capital",
+    title: "取締役",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "髙田 実 is named on the Japan Science and Technology Agency's official START programme page for ニッセイ・キャピタル株式会社 as its 代表事業プロモーター (lead business promoter), printed verbatim as 代表事業プロモーター 髙田 実（取締役）, which gives his company title as 取締役. A negative-control pass over that page confirmed 髙田 実 and 取締役 are PRESENT. The same page states that the firm acts as general partner of eight venture funds and concentrates on lead investment at seed and early stage. The firm's own website was unreachable throughout this session, so no biography, education, prior employment, board seats or attributed investments could be sourced for him and every such field is left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "JST START - ニッセイ・キャピタル株式会社 事業プロモーター page", url: "https://www.jst.go.jp/start/jigyo_p/nissay.html" }
+    ]
+  },
+"jared-heyman": {
+    name: "Jared Heyman",
+    firm: "Rebel Fund",
+    firmSlug: "rebel-fund",
+    title: "Managing Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Business degree, University of Texas"
+    ],
+    previousExperience: [
+      "Founder, Infosurv (from 1998)",
+      "Founder and Chief Executive Officer, CrowdMed (from April 2013)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1998, event: "Founded Infosurv in Atlanta, Georgia." },
+      { year: 2013, event: "Founded CrowdMed, established April 2013, and served as its chief executive officer." },
+      { year: 2024, event: "Named as a related person on the Form D filings of Rebel Fund II LP, filed 27 and 28 March 2024." },
+      { year: 2026, event: "Named as a related person on the Form D of Rebel Fund III LP, filed 19 March 2026." }
+    ],
+    biography: "Jared Heyman is listed as Managing Partner of Rebel Fund on the firm's site. He is named as a related person on the Form D filings of Rebel Fund II LP (filed 27 and 28 March 2024) and Rebel Fund III LP (filed 19 March 2026), both of which list Rebel Management, LLC as management company and a principal place of business in San Francisco, California. Before Rebel Fund he founded Infosurv in 1998 in Atlanta, Georgia, an internet survey company for employee and customer market research, and he was founder and chief executive officer of CrowdMed, established April 2013, a crowdsourcing platform for medical case diagnosis. He holds a business degree from the University of Texas. No board seat, IPO count or exit count for him could be sourced, and no individual investment is attributed to him by name in an acceptable source, so notableInvestments is empty.",
+    notableInvestments: [],
+    sources: [
+      { label: "Wikipedia - Jared Heyman (Infosurv, CrowdMed, University of Texas business degree)", url: "https://en.wikipedia.org/wiki/Jared_Heyman" },
+      { label: "SEC EDGAR - Rebel Fund III LP Form D, 19 March 2026 (related person)", url: "https://www.sec.gov/Archives/edgar/data/2066540/000149315226011557/primary_doc.xml" },
+      { label: "SEC EDGAR - Rebel Fund II LP Form D/A, 28 March 2024 (related person)", url: "https://www.sec.gov/Archives/edgar/data/2007942/000149315224011649/primary_doc.xml" },
+      { label: "Rebel Fund - Homepage team listing (exact title, checked 6 September 2026)", url: "https://www.rebelfund.vc/" }
+    ]
+  },
+"luis-fortuno": {
+    name: "Luis Fortuño",
+    firm: "Rebel Fund",
+    firmSlug: "rebel-fund",
+    title: "Managing Director",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Named as a related person on the Form D of Rebel Fund III LP, filed 19 March 2026." }
+    ],
+    biography: "Luis Fortuño is listed as Managing Director on the Rebel Fund site. He is named as \"Luis R Fortuno\" among the related persons on the Form D of Rebel Fund III LP filed 19 March 2026, alongside Jared Heyman, Rebel Fund III GP, LP and Rebel Management, LLC. He is not named on the Rebel Fund II Form D/A of 28 March 2024, which lists only Rebel Fund II GP, LP, Rebel Management, LLC and Jared Heyman. No education, prior employer, board seat, IPO count, exit count or join year for him could be sourced from Rebel Fund or another acceptable source, so those fields are empty or null.",
+    notableInvestments: [],
+    sources: [
+      { label: "SEC EDGAR - Rebel Fund III LP Form D, 19 March 2026 (related person Luis R Fortuno)", url: "https://www.sec.gov/Archives/edgar/data/2066540/000149315226011557/primary_doc.xml" },
+      { label: "Rebel Fund - Homepage team listing (exact title, checked 6 September 2026)", url: "https://www.rebelfund.vc/" }
+    ]
+  },
+"steve-huffman": {
+    name: "Steve Huffman",
+    firm: "Rebel Fund",
+    firmSlug: "rebel-fund",
+    title: "Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Steve Huffman is listed as a Partner on the Rebel Fund site, where the entry beside his name reads \"Reddit\" and \"YC S05\". The site presents this partner group as Y Combinator alumni founders who invest alongside the fund. The page prints only the company name and the Y Combinator batch label beside each partner; it gives no title, no dates and no role at that company, so previousExperience is left empty rather than asserting a role or a tense the source does not support. No education, board seat, IPO count, exit count or person-attributed investment could be sourced for him in connection with Rebel Fund, so those fields are empty or null.",
+    notableInvestments: [],
+    sources: [
+      { label: "Rebel Fund - Homepage team listing (exact title, checked 6 September 2026)", url: "https://www.rebelfund.vc/" }
+    ]
+  },
+"daniel-kan": {
+    name: "Daniel Kan",
+    firm: "Rebel Fund",
+    firmSlug: "rebel-fund",
+    title: "Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Daniel Kan is listed as a Partner on the Rebel Fund site, where the entry beside his name reads \"Cruise\" and \"YC W14\". The site presents this partner group as Y Combinator alumni founders who invest alongside the fund. The page prints only the company name and the Y Combinator batch label beside each partner; it gives no title, no dates and no role at that company, so previousExperience is left empty rather than asserting a role or a tense the source does not support. No education, board seat, IPO count, exit count or person-attributed investment could be sourced for him in connection with Rebel Fund, so those fields are empty or null.",
+    notableInvestments: [],
+    sources: [
+      { label: "Rebel Fund - Homepage team listing (exact title, checked 6 September 2026)", url: "https://www.rebelfund.vc/" }
+    ]
+  },
+"max-mullen": {
+    name: "Max Mullen",
+    firm: "Rebel Fund",
+    firmSlug: "rebel-fund",
+    title: "Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Max Mullen is listed as a Partner on the Rebel Fund site, where the entry beside his name reads \"Instacart\" and \"YC S12\". The site presents this partner group as Y Combinator alumni founders who invest alongside the fund. The page prints only the company name and the Y Combinator batch label beside each partner; it gives no title, no dates and no role at that company, so previousExperience is left empty rather than asserting a role or a tense the source does not support. No education, board seat, IPO count, exit count or person-attributed investment could be sourced for him in connection with Rebel Fund, so those fields are empty or null.",
+    notableInvestments: [],
+    sources: [
+      { label: "Rebel Fund - Homepage team listing (exact title, checked 6 September 2026)", url: "https://www.rebelfund.vc/" }
+    ]
+  },
+"trip-adler": {
+    name: "Trip Adler",
+    firm: "Rebel Fund",
+    firmSlug: "rebel-fund",
+    title: "Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Trip Adler is listed as a Partner on the Rebel Fund site, where the entry beside his name reads \"Scribd\" and \"YC S06\". The site presents this partner group as Y Combinator alumni founders who invest alongside the fund. The page prints only the company name and the Y Combinator batch label beside each partner; it gives no title, no dates and no role at that company, so previousExperience is left empty rather than asserting a role or a tense the source does not support. No education, board seat, IPO count, exit count or person-attributed investment could be sourced for him in connection with Rebel Fund, so those fields are empty or null.",
+    notableInvestments: [],
+    sources: [
+      { label: "Rebel Fund - Homepage team listing (exact title, checked 6 September 2026)", url: "https://www.rebelfund.vc/" }
+    ]
+  },
+"sebastian-mejia": {
+    name: "Sebastian Mejia",
+    firm: "Rebel Fund",
+    firmSlug: "rebel-fund",
+    title: "Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Sebastian Mejia is listed as a Partner on the Rebel Fund site, where the entry beside his name reads \"Rappi\" and \"YC W16\". The site presents this partner group as Y Combinator alumni founders who invest alongside the fund. The page prints only the company name and the Y Combinator batch label beside each partner; it gives no title, no dates and no role at that company, so previousExperience is left empty rather than asserting a role or a tense the source does not support. No education, board seat, IPO count, exit count or person-attributed investment could be sourced for him in connection with Rebel Fund, so those fields are empty or null.",
+    notableInvestments: [],
+    sources: [
+      { label: "Rebel Fund - Homepage team listing (exact title, checked 6 September 2026)", url: "https://www.rebelfund.vc/" }
+    ]
+  },
+"dan-siroker": {
+    name: "Dan Siroker",
+    firm: "Rebel Fund",
+    firmSlug: "rebel-fund",
+    title: "Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Dan Siroker is listed as a Partner on the Rebel Fund site, where the entry beside his name reads \"Optimizely\" and \"YC W10\". The site presents this partner group as Y Combinator alumni founders who invest alongside the fund. The page prints only the company name and the Y Combinator batch label beside each partner; it gives no title, no dates and no role at that company, so previousExperience is left empty rather than asserting a role or a tense the source does not support. No education, board seat, IPO count, exit count or person-attributed investment could be sourced for him in connection with Rebel Fund, so those fields are empty or null.",
+    notableInvestments: [],
+    sources: [
+      { label: "Rebel Fund - Homepage team listing (exact title, checked 6 September 2026)", url: "https://www.rebelfund.vc/" }
+    ]
+  },
+"jonathan-hirsch": {
+    name: "Jonathan Hirsch",
+    firm: "Rebel Fund",
+    firmSlug: "rebel-fund",
+    title: "Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jonathan Hirsch is listed as a Partner on the Rebel Fund site, where the entry beside his name reads \"Paradigm\" and labels him as the non-Y Combinator biotech partner, distinguishing him from the other partners in the group who are labelled with Y Combinator batches. The page prints only the company name and that label; it gives no title, no dates and no role at Paradigm, so previousExperience is left empty rather than asserting a role the source does not support. No education, board seat, IPO count, exit count or person-attributed investment could be sourced for him in connection with Rebel Fund.",
+    notableInvestments: [],
+    sources: [
+      { label: "Rebel Fund - Homepage team listing (exact title, checked 6 September 2026)", url: "https://www.rebelfund.vc/" }
+    ]
+  },
+"kevin-dick": {
+    name: "Kevin Dick",
+    firm: "Right Side Capital Management",
+    firmSlug: "right-side-capital-management",
+    title: "Managing Director",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Founder and CEO, Network Resonance"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kevin Dick is listed as a Managing Director on the Right Side Capital Management team page. The firm's team page credits him with \"12 years at Right Side Capital\" and \"20 years experience\" in \"mathematical, data and process modeling\", and names him as \"Founder and CEO of Network Resonance\". The firm's own wording about his standing in that field is promotional and is not reproduced here. No degree, institution, board seat, IPO count or exit count for him could be sourced from RSCM or another acceptable source, so those fields are left empty or null. The \"12 years at Right Side Capital\" phrasing on the team page is not dated and is not an explicit join year, so joinedYear is null rather than derived from it.",
+    notableInvestments: [],
+    sources: [
+      { label: "Right Side Capital Management - Team page (title and bio line, checked 6 September 2026)", url: "https://www.rightsidecapital.com/team" }
+    ]
+  },
+"dave-lambert": {
+    name: "Dave Lambert",
+    firm: "Right Side Capital Management",
+    firmSlug: "right-side-capital-management",
+    title: "Managing Director",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "CEO and Founder, Acorn Computer",
+      "CEO and Founder, WorkMetro"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Dave Lambert is listed as a Managing Director on the Right Side Capital Management team page. The firm's team page describes him as having \"12 years at Right Side Capital, 16 years as CEO and Founder of 2 technology startups Acorn Computer, WorkMetro\". The team page does not state which years he led either company, so previousExperience carries no year ranges. No degree, institution, board seat, IPO count or exit count for him could be sourced from RSCM or another acceptable source.",
+    notableInvestments: [],
+    sources: [
+      { label: "Right Side Capital Management - Team page (title and bio line, checked 6 September 2026)", url: "https://www.rightsidecapital.com/team" }
+    ]
+  },
+"jeff-pomeranz": {
+    name: "Jeff Pomeranz",
+    firm: "Right Side Capital Management",
+    firmSlug: "right-side-capital-management",
+    title: "Managing Director",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "President and Founder, Hotovec, Pomeranz & Co"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jeff Pomeranz is listed as a Managing Director on the Right Side Capital Management team page. The firm's team page describes him as having \"12 years at Right Side Capital, 20 years experience financial services, President & Founder of Hotovec, Pomeranz & Co\". No degree, institution, board seat, IPO count or exit count for him could be sourced from RSCM or another acceptable source.",
+    notableInvestments: [],
+    sources: [
+      { label: "Right Side Capital Management - Team page (title and bio line, checked 6 September 2026)", url: "https://www.rightsidecapital.com/team" }
+    ]
+  },
+"curt-pabst": {
+    name: "Curt Pabst",
+    firm: "Right Side Capital Management",
+    firmSlug: "right-side-capital-management",
+    title: "Venture Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Kidder Peabody",
+      "Merrill Lynch",
+      "Eagle Global Advisors"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Curt Pabst is listed as Venture Partner on the Right Side Capital Management team page, under the page's \"Operations Staff\" heading rather than its \"Managing Directors\" heading. The firm's team page describes him as having \"40 years in public and private market investments, Kidder Peabody, Merrill Lynch, Eagle Global Advisors\". The team page names those three employers without giving his title or dates at any of them, so previousExperience carries company names only. No degree, institution, board seat, IPO count or exit count for him could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "Right Side Capital Management - Team page (title and bio line, checked 6 September 2026)", url: "https://www.rightsidecapital.com/team" }
+    ]
+  },
+"john-eng": {
+    name: "John Eng",
+    firm: "Right Side Capital Management",
+    firmSlug: "right-side-capital-management",
+    title: "Funding Ecosystem Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Microsoft",
+      "LinkedIn",
+      "Parallels"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "John Eng is listed as Funding Ecosystem Partner on the Right Side Capital Management team page, under the page's \"Operations Staff\" heading rather than its \"Managing Directors\" heading. The firm's team page describes him as having \"25 years in B2B marketing & partnerships leadership, Microsoft, LinkedIn & Parallels\". The team page names those three employers without giving his title or dates at any of them. His title contains the word Partner but the firm's own page places him among operations staff and describes his background as marketing and partnerships rather than investing, so he is recorded here with his exact title and no investing attribution.",
+    notableInvestments: [],
+    sources: [
+      { label: "Right Side Capital Management - Team page (title and bio line, checked 6 September 2026)", url: "https://www.rightsidecapital.com/team" }
+    ]
+  },
+"paul-swiencicki": {
+    name: "Paul Swiencicki",
+    firm: "Right Side Capital Management",
+    firmSlug: "right-side-capital-management",
+    title: "Growth Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Paul Swiencicki is listed as Growth Partner on the Right Side Capital Management team page, under the page's \"Operations Staff\" heading rather than its \"Managing Directors\" heading. The firm's team page describes him as having \"Six years financial services and client service, Managed operations for venture arm of $1B RIA\". The team page does not name the registered investment adviser referred to, so previousExperience is empty rather than carrying an unnamed employer. His title contains the word Partner but the firm's own page places him among operations staff, so he is recorded with his exact title and no investing attribution.",
+    notableInvestments: [],
+    sources: [
+      { label: "Right Side Capital Management - Team page (title and bio line, checked 6 September 2026)", url: "https://www.rightsidecapital.com/team" }
+    ]
+  },
+"kanbayashi-naoki": {
+    name: "神林 直樹",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "代表取締役社長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "神林 直樹 is listed as 代表取締役社長 of SMBCベンチャーキャピタル株式会社 in the 役員 table on the firm's own 会社情報 page, which is dated 2026年6月23日. No education, prior employment, board seats or attributed investments for this person could be sourced from the firm's site or from any other acceptable source, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - 会社情報 (役員 roster dated 2026年6月23日)", url: "https://www.smbc-vc.co.jp/about/" }
+    ]
+  },
+"shimizu-hironori": {
+    name: "清水 浩徳",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "専務取締役",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "清水 浩徳 is listed as 専務取締役 of SMBCベンチャーキャピタル株式会社 in the 役員 table on the firm's own 会社情報 page, which is dated 2026年6月23日. No education, prior employment, board seats or attributed investments for this person could be sourced from the firm's site or from any other acceptable source, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - 会社情報 (役員 roster dated 2026年6月23日)", url: "https://www.smbc-vc.co.jp/about/" }
+    ]
+  },
+"nakamura-masayuki": {
+    name: "中村 理之",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "常務取締役",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "中村 理之 is listed as 常務取締役 of SMBCベンチャーキャピタル株式会社 in the 役員 table on the firm's own 会社情報 page, which is dated 2026年6月23日. No education, prior employment, board seats or attributed investments for this person could be sourced from the firm's site or from any other acceptable source, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - 会社情報 (役員 roster dated 2026年6月23日)", url: "https://www.smbc-vc.co.jp/about/" }
+    ]
+  },
+"arai-takashi": {
+    name: "荒井 隆志",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "常務取締役",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "荒井 隆志 is listed as 常務取締役 of SMBCベンチャーキャピタル株式会社 in the 役員 table on the firm's own 会社情報 page, which is dated 2026年6月23日. No education, prior employment, board seats or attributed investments for this person could be sourced from the firm's site or from any other acceptable source, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - 会社情報 (役員 roster dated 2026年6月23日)", url: "https://www.smbc-vc.co.jp/about/" }
+    ]
+  },
+"kurosaki-hiromu": {
+    name: "黒崎 ひろむ",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "常務執行役員",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "黒崎 ひろむ is listed as 常務執行役員 of SMBCベンチャーキャピタル株式会社 in the 役員 table on the firm's own 会社情報 page, which is dated 2026年6月23日. No education, prior employment, board seats or attributed investments for this person could be sourced from the firm's site or from any other acceptable source, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - 会社情報 (役員 roster dated 2026年6月23日)", url: "https://www.smbc-vc.co.jp/about/" }
+    ]
+  },
+"kodama-ichiro": {
+    name: "児玉 一郎",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "常務執行役員 投資営業第三部担当",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "児玉 一郎 is listed as 常務執行役員 in the 役員 table on the firm's own 会社情報 page, dated 2026年6月23日, and also appears on the firm's メンバー page under the fuller title 常務執行役員 投資営業第三部担当, which states the divisions he is responsible for. No education, prior employment, board seats or attributed investments could be sourced, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - 会社情報 (役員 roster dated 2026年6月23日)", url: "https://www.smbc-vc.co.jp/about/" },
+      { label: "SMBCベンチャーキャピタル - メンバー (team page)", url: "https://www.smbc-vc.co.jp/team/" }
+    ]
+  },
+"fukai-koji": {
+    name: "深井 康司",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "常務執行役員",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "深井 康司 is listed as 常務執行役員 of SMBCベンチャーキャピタル株式会社 in the 役員 table on the firm's own 会社情報 page, which is dated 2026年6月23日. No education, prior employment, board seats or attributed investments for this person could be sourced from the firm's site or from any other acceptable source, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - 会社情報 (役員 roster dated 2026年6月23日)", url: "https://www.smbc-vc.co.jp/about/" }
+    ]
+  },
+"matsushita-katsutoshi": {
+    name: "松下 克俊",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "執行役員 投資営業第一部・投資営業第二部・投資営業第四部担当",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "松下 克俊 is listed as 執行役員 in the 役員 table on the firm's own 会社情報 page, dated 2026年6月23日, and also appears on the firm's メンバー page under the fuller title 執行役員 投資営業第一部・投資営業第二部・投資営業第四部担当, which states the divisions he is responsible for. No education, prior employment, board seats or attributed investments could be sourced, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - 会社情報 (役員 roster dated 2026年6月23日)", url: "https://www.smbc-vc.co.jp/about/" },
+      { label: "SMBCベンチャーキャピタル - メンバー (team page)", url: "https://www.smbc-vc.co.jp/team/" }
+    ]
+  },
+"irie-koichi": {
+    name: "入江 浩一",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "執行役員",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "入江 浩一 is listed as 執行役員 of SMBCベンチャーキャピタル株式会社 in the 役員 table on the firm's own 会社情報 page, which is dated 2026年6月23日. No education, prior employment, board seats or attributed investments for this person could be sourced from the firm's site or from any other acceptable source, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - 会社情報 (役員 roster dated 2026年6月23日)", url: "https://www.smbc-vc.co.jp/about/" }
+    ]
+  },
+"arai-masaharu": {
+    name: "新井 雅治",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "執行役員",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "新井 雅治 is listed as 執行役員 of SMBCベンチャーキャピタル株式会社 in the 役員 table on the firm's own 会社情報 page, which is dated 2026年6月23日. No education, prior employment, board seats or attributed investments for this person could be sourced from the firm's site or from any other acceptable source, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - 会社情報 (役員 roster dated 2026年6月23日)", url: "https://www.smbc-vc.co.jp/about/" }
+    ]
+  },
+"imanishi-hiroyuki": {
+    name: "今西 裕之",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "執行役員",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "今西 裕之 is listed as 執行役員 of SMBCベンチャーキャピタル株式会社 in the 役員 table on the firm's own 会社情報 page, which is dated 2026年6月23日. No education, prior employment, board seats or attributed investments for this person could be sourced from the firm's site or from any other acceptable source, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - 会社情報 (役員 roster dated 2026年6月23日)", url: "https://www.smbc-vc.co.jp/about/" }
+    ]
+  },
+"koda-shinya": {
+    name: "甲田 真也",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "執行役員",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "甲田 真也 is listed as 執行役員 of SMBCベンチャーキャピタル株式会社 in the 役員 table on the firm's own 会社情報 page, which is dated 2026年6月23日. No education, prior employment, board seats or attributed investments for this person could be sourced from the firm's site or from any other acceptable source, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - 会社情報 (役員 roster dated 2026年6月23日)", url: "https://www.smbc-vc.co.jp/about/" }
+    ]
+  },
+"nakano-tetsuji": {
+    name: "中野 哲治",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "投資営業第一部長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "中野 哲治 is listed as 投資営業第一部長 on the firm's own メンバー (team) page, which is the firm's published roster of its investment and strategy staff. This person does not appear in the 役員 table on the firm's 会社情報 page, so the team page is the sole source for the title. No education, prior employment, board seats or attributed investments could be sourced, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - メンバー (team page)", url: "https://www.smbc-vc.co.jp/team/" }
+    ]
+  },
+"yamauchi-shingo": {
+    name: "山内 心吾",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "投資営業第二部長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "山内 心吾 is listed as 投資営業第二部長 on the firm's own メンバー (team) page, which is the firm's published roster of its investment and strategy staff. This person does not appear in the 役員 table on the firm's 会社情報 page, so the team page is the sole source for the title. No education, prior employment, board seats or attributed investments could be sourced, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - メンバー (team page)", url: "https://www.smbc-vc.co.jp/team/" }
+    ]
+  },
+"komabashi-masakazu": {
+    name: "駒橋 政和",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "投資営業第三部長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "駒橋 政和 is listed as 投資営業第三部長 on the firm's own メンバー (team) page, which is the firm's published roster of its investment and strategy staff. This person does not appear in the 役員 table on the firm's 会社情報 page, so the team page is the sole source for the title. No education, prior employment, board seats or attributed investments could be sourced, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - メンバー (team page)", url: "https://www.smbc-vc.co.jp/team/" }
+    ]
+  },
+"yamamura-satoshi": {
+    name: "山村 聡",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "投資営業第三部 部付部長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "山村 聡 is listed as 投資営業第三部 部付部長 on the firm's own メンバー (team) page, which is the firm's published roster of its investment and strategy staff. This person does not appear in the 役員 table on the firm's 会社情報 page, so the team page is the sole source for the title. No education, prior employment, board seats or attributed investments could be sourced, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - メンバー (team page)", url: "https://www.smbc-vc.co.jp/team/" }
+    ]
+  },
+"yasuda-junya": {
+    name: "安田 純也",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "投資営業第四部長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "安田 純也 is listed as 投資営業第四部長 on the firm's own メンバー (team) page, which is the firm's published roster of its investment and strategy staff. This person does not appear in the 役員 table on the firm's 会社情報 page, so the team page is the sole source for the title. No education, prior employment, board seats or attributed investments could be sourced, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - メンバー (team page)", url: "https://www.smbc-vc.co.jp/team/" }
+    ]
+  },
+"ikeda-kazuo": {
+    name: "池田 一生",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "関西投資営業部長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "池田 一生 is listed as 関西投資営業部長 on the firm's own メンバー (team) page, which is the firm's published roster of its investment and strategy staff. This person does not appear in the 役員 table on the firm's 会社情報 page, so the team page is the sole source for the title. No education, prior employment, board seats or attributed investments could be sourced, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - メンバー (team page)", url: "https://www.smbc-vc.co.jp/team/" }
+    ]
+  },
+"takahashi-teruki": {
+    name: "髙橋 照樹",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "投資戦略部長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "髙橋 照樹 is listed as 投資戦略部長 on the firm's own メンバー (team) page, which is the firm's published roster of its investment and strategy staff. This person does not appear in the 役員 table on the firm's 会社情報 page, so the team page is the sole source for the title. No education, prior employment, board seats or attributed investments could be sourced, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - メンバー (team page)", url: "https://www.smbc-vc.co.jp/team/" }
+    ]
+  },
+"otsu-hirotoshi": {
+    name: "大津 寛淑",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "投資戦略部 部付部長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "大津 寛淑 is listed as 投資戦略部 部付部長 on the firm's own メンバー (team) page, which is the firm's published roster of its investment and strategy staff. This person does not appear in the 役員 table on the firm's 会社情報 page, so the team page is the sole source for the title. No education, prior employment, board seats or attributed investments could be sourced, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - メンバー (team page)", url: "https://www.smbc-vc.co.jp/team/" }
+    ]
+  },
+"nakajima-yasuo": {
+    name: "中島 泰生",
+    firm: "SMBCベンチャーキャピタル株式会社",
+    firmSlug: "smbc-venture-capital",
+    title: "投資戦略部 部付部長",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "中島 泰生 is listed as 投資戦略部 部付部長 on the firm's own メンバー (team) page, which is the firm's published roster of its investment and strategy staff. This person does not appear in the 役員 table on the firm's 会社情報 page, so the team page is the sole source for the title. No education, prior employment, board seats or attributed investments could be sourced, so those fields are left empty rather than estimated.",
+    notableInvestments: [],
+    sources: [
+      { label: "SMBCベンチャーキャピタル - メンバー (team page)", url: "https://www.smbc-vc.co.jp/team/" }
+    ]
+  },
+"brian-bell": {
+    name: "Brian Bell",
+    firm: "Team Ignite Ventures",
+    firmSlug: "team-ignite-ventures",
+    title: "Founder & Managing Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [
+      "Finance degree, University of Washington",
+      "MBA, University of California, Berkeley"
+    ],
+    previousExperience: [
+      "Microsoft",
+      "Amazon Web Services"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Founded Team Ignite Ventures." },
+      { year: 2022, event: "Named as a related person on the Form D of Team Ignite Fund I, LP, whose first sale was 21 December 2022." },
+      { year: 2024, event: "Named as a related person on the Form D/A of Team Ignite YC Fund II, LP, filed 3 July 2024." }
+    ],
+    biography: "Brian Bell is Founder and Managing Partner of Team Ignite Ventures. The firm's team page states \"Brian founded Team Ignite Ventures in 2020 after building products and businesses across Microsoft, Amazon Web Services, startups, and financial services\", and notes that at Amazon Web Services he assisted with launching the SageMaker AI Marketplace. The same page gives his education as a Finance degree from the University of Washington and an MBA from the University of California, Berkeley, and states that he hosts the Ignite Podcast. He is named as \"Brian Robert Bell\" among the related persons on the Form D filings of Team Ignite Fund I, LP and Team Ignite YC Fund II, LP, alongside Team Ignite Management, LLC and the respective general partner entities. No board seat, IPO count or exit count could be sourced, and no individual portfolio investment is attributed to him by name in an acceptable source, so notableInvestments is empty.",
+    notableInvestments: [],
+    sources: [
+      { label: "SEC EDGAR - Team Ignite Fund I, LP Form D/A (related person Brian Robert Bell)", url: "https://www.sec.gov/Archives/edgar/data/1956766/000195676625000002/primary_doc.xml" },
+      { label: "SEC EDGAR - Team Ignite YC Fund II, LP Form D/A (related person Brian Robert Bell)", url: "https://www.sec.gov/Archives/edgar/data/2024160/000202416024000002/primary_doc.xml" },
+      { label: "Team Ignite Ventures - Homepage (Est. 2020)", url: "https://www.teamignite.vc/" },
+      { label: "Team Ignite Ventures - Team page (exact title and biography, checked 6 September 2026)", url: "https://www.teamignite.vc/team" }
+    ]
+  },
+"simon-hayhurst": {
+    name: "Simon Hayhurst",
+    firm: "Team Ignite Ventures",
+    firmSlug: "team-ignite-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Simon Hayhurst is listed as General Partner on the Team Ignite Ventures team page, which states \"Simon brings more than two decades of product leadership across AI and enterprise software. A four-time Chief Product Officer, he has guided companies through rapid growth, acquisitions, and both public-market and private-equity exits.\" The team page does not name any of the companies at which he held those roles and gives no dates, so previousExperience is empty rather than carrying unnamed employers, and no exit count is recorded because the page gives none. No education, board seat, IPO count or person-attributed investment could be sourced for him.",
+    notableInvestments: [],
+    sources: [
+      { label: "Team Ignite Ventures - Team page (exact title and biography, checked 6 September 2026)", url: "https://www.teamignite.vc/team" }
+    ]
+  },
+"renata-bell": {
+    name: "Renata Bell",
+    firm: "Team Ignite Ventures",
+    firmSlug: "team-ignite-ventures",
+    title: "Operating Partner",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "LinkedIn"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Renata Bell is listed as Operating Partner on the Team Ignite Ventures team page. The page describes her as specialising in go-to-market strategy and expansion, with prior experience at high-growth startups and at LinkedIn, where it says she directed go-to-market initiatives across major product lines, and states that she supports early-stage founders with growth engines and network expansion. Her title is partner-level in the firm's own taxonomy but the role as the firm describes it is operating and go-to-market rather than investing, so no investing attribution is made here. No education, dates, board seat, IPO count or exit count could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "Team Ignite Ventures - Team page (exact title and biography, checked 6 September 2026)", url: "https://www.teamignite.vc/team" }
+    ]
   }
 });
