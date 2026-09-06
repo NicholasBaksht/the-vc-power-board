@@ -613,7 +613,7 @@ function renderAccount() {
       </div>
 
       <h2 class="acct-h2">Your data</h2>
-      <p class="acct-lead">Everything above is the data held about you, and the export below contains all of it: your profile, Shortlist, followed firms, pipeline outcomes, saved views and searches, Power Alerts and their settings, saved people, your private fundraising records, and any claims or corrections you have sent in.</p>
+      <p class="acct-lead">Everything above is the data held about you, and the export below contains all of it: your profile, Shortlist, followed firms, pipeline outcomes, saved views and searches, Power Alerts and their settings, saved people, your private fundraising records including every raise, pipeline target, note, tag, activity and next action, and any claims or corrections you have sent in.</p>
 
       <div class="acct-actions">
         <button class="acct-btn acct-btn-ghost" id="acctExport">Export my data</button>
@@ -760,7 +760,23 @@ function wireAccountControls() {
         supabaseClient.from('alert_mutes').select('*'),
         supabaseClient.from('alert_feedback').select('*'),
         supabaseClient.from('saved_people').select('*'),
-        supabaseClient.from('fundraises').select('*')
+
+        /* The private fundraising workspace. THE EXPORT IS THE
+           PRIVACY POLICY'S PROMISE MADE GOOD, and it has now drifted
+           twice: once when Phase 2 and 3 shipped tables that never
+           reached this list, and again across Phase 4B to 4E when
+           seven more were added and only the first was listed here.
+           Every one of these holds something a founder would expect
+           to get back: who they pitched, what was said, what they
+           committed. */
+        supabaseClient.from('fundraises').select('*'),
+        supabaseClient.from('pipeline_targets').select('*'),
+        supabaseClient.from('pipeline_contacts').select('*'),
+        supabaseClient.from('pipeline_activities').select('*'),
+        supabaseClient.from('pipeline_notes').select('*'),
+        supabaseClient.from('pipeline_tags').select('*'),
+        supabaseClient.from('pipeline_target_tags').select('*'),
+        supabaseClient.from('pipeline_next_actions').select('*')
       ];
 
       const rows = function (r) { return (r && !r.error && r.data) ? r.data : []; };
@@ -785,7 +801,14 @@ function wireAccountControls() {
           alert_mutes: rows(res[11]),
           alert_feedback: rows(res[12]),
           saved_people: rows(res[13]),
-          fundraises: rows(res[14])
+          fundraises: rows(res[14]),
+          pipeline_targets: rows(res[15]),
+          pipeline_contacts: rows(res[16]),
+          pipeline_activities: rows(res[17]),
+          pipeline_notes: rows(res[18]),
+          pipeline_tags: rows(res[19]),
+          pipeline_target_tags: rows(res[20]),
+          pipeline_next_actions: rows(res[21])
         };
         const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
