@@ -472,3 +472,155 @@
   .pa-item { grid-template-columns: minmax(0, 1fr); }
   .pa-when { grid-column: 1; grid-row: auto; }
 }
+
+/* ============================================================
+   MY POWER BOARD (Phase 4F)
+
+   Five answers in reading order, each a plain section. No cards with
+   shadows, no charts where a number will do. A founder opening this
+   at 9am should be able to act in about ten seconds.
+   ============================================================ */
+
+.mb-wrap { max-width: 1000px; }
+
+.mb-raise {
+  border: 1px solid var(--hairline-strong); border-left: 3px solid var(--accent);
+  padding: 18px 20px; margin-bottom: 26px;
+}
+.mb-raise-top {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 14px; flex-wrap: wrap;
+}
+.mb-raise-name {
+  font: 600 20px/1.25 var(--sans); color: var(--ink);
+  letter-spacing: -0.015em; margin: 0;
+}
+
+.mb-commit {
+  margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--hairline);
+}
+.mb-commit-row {
+  display: flex; align-items: baseline; gap: 12px; padding: 3px 0;
+}
+.mb-commit-label {
+  font: 600 9.5px/1 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--ink-muted); min-width: 128px;
+}
+.mb-commit-n, .mb-commit-amt {
+  font: 600 15px/1.3 var(--sans); color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.mb-commit-amt { color: var(--accent-bright); }
+/* The caveat is body text, not fine print. It is the sentence that
+   stops the number above being misread. */
+.mb-commit-note {
+  margin: 8px 0 0; font: 400 13px/1.5 var(--sans); color: var(--ink-dim);
+  max-width: 64ch;
+}
+.mb-bar {
+  height: 6px; background: var(--surface-raised); margin-top: 12px;
+  border-radius: 3px; overflow: hidden;
+}
+.mb-bar span { display: block; height: 100%; background: var(--accent); }
+
+.mb-sec { margin-bottom: 30px; }
+.mb-sec-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 12px; padding-bottom: 9px; margin-bottom: 14px;
+  border-bottom: 1px solid var(--hairline);
+}
+.mb-h {
+  font: 600 10px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-muted); margin: 0;
+}
+.mb-overdue-n {
+  font: 600 11.5px/1 var(--sans); color: var(--red);
+  font-variant-numeric: tabular-nums;
+}
+.mb-empty {
+  font: 400 13.5px/1.55 var(--sans); color: var(--ink-muted);
+  margin: 0; max-width: 64ch;
+}
+
+.mb-summary { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
+.mb-summary .pl-stat { text-decoration: none; }
+
+.mb-att-group { margin-bottom: 16px; }
+.mb-att-group:last-child { margin-bottom: 0; }
+.mb-att-label {
+  font: 600 9.5px/1 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--ink-muted); margin-bottom: 7px;
+}
+.mb-att-group.is-overdue .mb-att-label { color: var(--red); }
+.mb-att-list { list-style: none; margin: 0; padding: 0; }
+.mb-att-list li {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 14px;
+  padding: 7px 0; border-bottom: 1px solid var(--hairline);
+}
+.mb-att-list li:last-child { border-bottom: 0; }
+.mb-att-list a {
+  display: flex; align-items: baseline; gap: 12px; min-width: 0;
+  text-decoration: none; flex-wrap: wrap;
+}
+.mb-att-who { font: 600 13.5px/1.4 var(--sans); color: var(--ink); }
+.mb-att-what {
+  font: 400 13px/1.4 var(--sans); color: var(--ink-dim);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 46ch;
+}
+.mb-att-list a:hover .mb-att-who { color: var(--accent-bright); }
+.mb-att-due {
+  font: 500 11.5px/1 var(--mono); color: var(--ink-muted);
+  white-space: nowrap; font-variant-numeric: tabular-nums;
+}
+.mb-att-group.is-overdue .mb-att-due { color: var(--red); font-weight: 600; }
+.mb-att-more { font: 400 12px/1 var(--sans); color: var(--ink-muted); padding-top: 6px; }
+
+.mb-activity, .mb-alerts { list-style: none; margin: 0; padding: 0; }
+.mb-activity li, .mb-alerts li {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 14px;
+  padding: 7px 0; border-bottom: 1px solid var(--hairline);
+}
+.mb-activity li:last-child, .mb-alerts li:last-child { border-bottom: 0; }
+.mb-act-sum, .mb-alert-sum {
+  font: 400 13.5px/1.45 var(--sans); color: var(--ink); min-width: 0;
+}
+.mb-act-when {
+  font: 400 11.5px/1 var(--sans); color: var(--ink-muted);
+  white-space: nowrap; font-variant-numeric: tabular-nums;
+}
+.mb-alerts a {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 12px; width: 100%; text-decoration: none; flex-wrap: wrap;
+}
+.mb-alert-tag {
+  font: 600 9px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent-bright); background: var(--accent-pale);
+  padding: 3px 5px; border-radius: 3px; white-space: nowrap;
+}
+
+.mb-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.mb-link {
+  display: flex; flex-direction: column; gap: 3px; flex: 1 1 200px; min-width: 0;
+  border: 1px solid var(--hairline-strong); padding: 13px 15px;
+  text-decoration: none; background: var(--bg);
+}
+.mb-link:hover { border-color: var(--accent); }
+.mb-link-n {
+  font: 600 20px/1 var(--sans); color: var(--ink); font-variant-numeric: tabular-nums;
+}
+.mb-link-l { font: 600 12.5px/1.3 var(--sans); color: var(--ink); }
+.mb-link-h { font: 400 12px/1.4 var(--sans); color: var(--ink-muted); }
+
+.mb-steps {
+  margin: 22px 0 0; padding-left: 20px; max-width: 62ch;
+}
+.mb-steps li {
+  font: 400 14px/1.6 var(--sans); color: var(--ink-dim); margin-bottom: 7px;
+}
+.mb-steps strong { color: var(--ink); font-weight: 600; }
+
+@media (max-width: 640px) {
+  .mb-commit-label { min-width: 0; }
+  .mb-commit-row { flex-direction: column; gap: 2px; }
+  .mb-att-what { max-width: 100%; }
+}
