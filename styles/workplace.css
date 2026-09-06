@@ -132,3 +132,38 @@
   .ws-menu { right: auto; left: 0; min-width: 232px; }
   .ws-row-acts { width: 100%; }
 }
+
+/* ---------- members page (7B) ---------- */
+
+/* A native select. The role list is four items that never changes,
+   and a custom dropdown would cost keyboard support to gain nothing. */
+.wm-role {
+  padding: 6px 9px; border: 1px solid var(--hairline-strong); border-radius: 4px;
+  background: var(--bg); color: var(--ink); font: 500 12.5px/1.2 var(--sans);
+}
+.wm-role:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Roles explained in sentences beside the control that sets them. */
+.wm-roles {
+  display: grid; grid-template-columns: max-content minmax(0, 1fr);
+  gap: 6px 16px; margin: 18px 0 0; max-width: 68ch;
+}
+.wm-roles dt { font: 600 12.5px/1.5 var(--sans); color: var(--ink); }
+.wm-roles dd { margin: 0; font: 400 12.5px/1.5 var(--sans); color: var(--ink-muted); }
+
+.wm-audit {
+  width: 100%; border-collapse: collapse;
+  font: 400 12.5px/1.5 var(--sans); color: var(--ink-dim);
+}
+.wm-audit th {
+  text-align: left; font: 600 9.5px/1 var(--mono); letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-muted);
+  border-bottom: 1px solid var(--hairline-strong); padding: 0 10px 7px 0;
+}
+.wm-audit td { padding: 7px 10px 7px 0; border-bottom: 1px solid var(--hairline); }
+.wm-audit td:first-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+@media (max-width: 640px) {
+  .wm-roles { grid-template-columns: minmax(0, 1fr); gap: 2px 0; }
+  .wm-roles dd { margin-bottom: 8px; }
+}
