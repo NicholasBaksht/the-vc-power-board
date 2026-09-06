@@ -224,6 +224,8 @@ document.getElementById('portfolioView').style.display = 'none';
   if (mbView) mbView.style.display = 'none';
   const fpView = document.getElementById('fundView');
   if (fpView) fpView.style.display = 'none';
+  const panView = document.getElementById('analyticsView');
+  if (panView) panView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -391,6 +393,13 @@ document.getElementById('powerSignalsView').style.display = 'none';
     document.getElementById('screenerView').style.display = 'block';
     if (typeof renderScreener === 'function') renderScreener();
     if (typeof pbTrack === 'function') pbTrack('screener_opened');
+    window.scrollTo(0, 0);
+  } else if (slug === 'power-analytics') {
+    /* Distinct from #analytics, which is the existing firm dashboard.
+       This is the researched-universe view: distributions across
+       everything Power Board has researched, with denominators. */
+    document.getElementById('analyticsView').style.display = 'block';
+    if (typeof renderPowerAnalytics === 'function') renderPowerAnalytics();
     window.scrollTo(0, 0);
   } else if (slug.indexOf('fund/') === 0) {
     /* #fund/<firmSlug>/<fund>. The firm is in the path on purpose:
