@@ -228,6 +228,8 @@ document.getElementById('portfolioView').style.display = 'none';
   if (panView) panView.style.display = 'none';
   const pmapView = document.getElementById('powerMapView');
   if (pmapView) pmapView.style.display = 'none';
+  const raView = document.getElementById('raiseAnalyticsView');
+  if (raView) raView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -420,6 +422,17 @@ document.getElementById('powerSignalsView').style.display = 'none';
           pm && pm[2] ? decodeURIComponent(pm[2]) : null
         );
       }
+    }
+    window.scrollTo(0, 0);
+  } else if (slug === 'raise-analytics') {
+    /* The founder's OWN raise, not the researched universe. Kept off
+       #power-analytics deliberately: one is public research and the
+       other is private pipeline, and they must never be read as two
+       tabs of the same thing. */
+    const rav = document.getElementById('raiseAnalyticsView');
+    if (rav) {
+      rav.style.display = 'block';
+      if (typeof renderRaiseAnalytics === 'function') renderRaiseAnalytics();
     }
     window.scrollTo(0, 0);
   } else if (slug.indexOf('fund/') === 0) {
