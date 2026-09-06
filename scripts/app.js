@@ -232,6 +232,8 @@ document.getElementById('portfolioView').style.display = 'none';
   if (raView) raView.style.display = 'none';
   const xpView = document.getElementById('exportView');
   if (xpView) xpView.style.display = 'none';
+  const wsView = document.getElementById('workspacesView');
+  if (wsView) wsView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -445,6 +447,15 @@ document.getElementById('powerSignalsView').style.display = 'none';
     if (xv) {
       xv.style.display = 'block';
       if (typeof renderExportCenter === 'function') renderExportCenter();
+    }
+    window.scrollTo(0, 0);
+  } else if (slug === 'workspaces') {
+    /* Managing teams, not a team dashboard. A solo founder never has
+       to come here and nothing routes them here. */
+    const wv = document.getElementById('workspacesView');
+    if (wv) {
+      wv.style.display = 'block';
+      if (typeof renderWorkspaces === 'function') renderWorkspaces();
     }
     window.scrollTo(0, 0);
   } else if (slug.indexOf('fund/') === 0) {
