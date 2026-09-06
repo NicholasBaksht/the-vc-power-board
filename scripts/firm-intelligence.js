@@ -1,12 +1,27 @@
 /**
  * FIRM-INTELLIGENCE.JS
- * Real co-investment patterns for a firm - other firms that hold
- * at least one of the same public company, ranked by how many
- * companies they share. This is the one genuinely new signal not
- * already shown elsewhere on the firm detail page (sectors already
- * appear in the "For Founders" callout, and similar firms are
- * already handled by renderSimilarFirms) - see conversation notes
- * for why the other originally-planned dimensions were skipped.
+ *
+ * PHASE 6D CORRECTION - WHAT THIS SECTION USED TO CLAIM
+ *
+ * This file used to head the list below "Frequent Co-Investors".
+ * It was computed from shared NOTABLE HOLDINGS: two firms appeared
+ * as co-investors when both listed the same public company. That is
+ * a different fact wearing the wrong label. holdings is a curated
+ * list of companies a firm is proud of, carrying no round, no date
+ * and no source, so two firms sharing one had never been shown to
+ * put money in together.
+ *
+ * Measured against the 573 sourced financing rows: of the 331 pairs
+ * this produced, 278 - 84% - had no tracked round in which both
+ * firms participated. The 331 came from only 59 companies, because
+ * every firm listing Uber was joined to every other firm listing
+ * Uber. That is a fame clique, not a network.
+ *
+ * The pairs were not wrong, the label was. Deal research covers 24
+ * firms of 441, so a missing round is missing evidence rather than
+ * proof of no relationship. So the section is kept and renamed to
+ * the fact it actually reports, and real co-investment now comes
+ * from power-map.js, which reads financing evidence only.
  */
 function getCoInvestors(firm) {
   const counts = {};
@@ -23,8 +38,14 @@ function getCoInvestors(firm) {
 }
 
 function renderFirmIntelligence(firm) {
+  /* Evidence first. This is the section that reports co-investment,
+     and it renders only where a sourced financing names both firms.
+     Most firms have nothing here, because deal research covers 24 of
+     441 - that is an honest blank rather than a filled one. */
+  const evidence = (typeof pmapFirmPanel === 'function') ? pmapFirmPanel(firm) : '';
+
   const coInvestors = getCoInvestors(firm);
-  if (coInvestors.length === 0) return ''; // nothing to show, skip the section entirely
+  if (coInvestors.length === 0) return evidence; // nothing else to show
 
   const rowsHTML = coInvestors.map(c => `
     <a href="#${c.firm.slug}" class="fi-row">
@@ -33,9 +54,19 @@ function renderFirmIntelligence(firm) {
     </a>
   `).join('');
 
+  /* Renamed from "Frequent Co-Investors". The heading now states the
+     fact the data supports: both firms list the same company among
+     their notable holdings. The note says what that does and does
+     not mean, because a reader who saw the old heading would
+     otherwise carry the old reading over. */
   return `
-    <div class="detail-subhead">Frequent Co-Investors</div>
+    ${evidence}
+    <div class="detail-subhead">Shared notable holdings</div>
     <div class="fi-list">${rowsHTML}</div>
+    <p class="fi-note">Firms that list the same company among their notable public
+    holdings. This is not evidence of investing together: these lists carry no round
+    and no date, and two firms can hold the same company from different rounds years
+    apart. Rounds where both firms are named appear under tracked co-investors above.</p>
   `;
 }
 const INTEL_FOLLOW_KEY = 'vcpb_follows';
