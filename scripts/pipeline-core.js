@@ -135,6 +135,12 @@ function ptRowToDef(r) {
     stage: r.stage || 'RESEARCHING',
     relationship: r.relationship || 'UNKNOWN',
     priority: r.priority || null,
+    introSourceName: r.intro_source_name || null,
+    introSourcePersonId: r.intro_source_person_id || null,
+    passedReason: r.passed_reason || null,
+    committedAmount: r.committed_amount == null ? null : r.committed_amount,
+    committedCurrency: r.committed_currency || null,
+    committedAt: r.committed_at || null,
     addedFrom: r.added_from || null,
     createdAt: r.created_at,
     updatedAt: r.updated_at
