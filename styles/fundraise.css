@@ -179,3 +179,136 @@
   text-decoration: none; border-bottom: 1px solid currentColor;
 }
 .ss-toast-act:hover { color: var(--accent-bright); }
+
+/* ============================================================
+   RAISE PIPELINE (Phase 4C)
+
+   An institutional table. Density is the product: a founder should
+   see stage, contact, relationship and last activity for twenty
+   investors without scrolling. No stage colours, no card shadows,
+   no progress bars - the stage IS the data, and a select states it
+   more precisely than a colour ever could.
+   ============================================================ */
+
+.pl-wrap { max-width: 1180px; }
+
+.pl-raise-line {
+  font: 500 14px/1.4 var(--sans); color: var(--ink-dim);
+  margin: 0 0 20px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+}
+.pl-dot { color: var(--ink-muted); }
+
+/* Stage counts double as filters. One click narrows to that stage,
+   a second clears it. */
+.pl-summary {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;
+  padding-bottom: 16px; border-bottom: 1px solid var(--hairline);
+}
+.pl-stat {
+  display: flex; flex-direction: column; gap: 3px; align-items: flex-start;
+  padding: 8px 12px; min-width: 82px; cursor: pointer;
+  border: 1px solid var(--hairline-strong); background: var(--bg);
+  border-radius: 3px;
+}
+.pl-stat:hover { border-color: var(--ink-muted); }
+.pl-stat:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pl-stat.is-on { border-color: var(--accent); background: var(--accent-pale); }
+.pl-stat-n {
+  font: 600 19px/1 var(--sans); color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.pl-stat-l {
+  font: 500 10.5px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.pl-stat.is-on .pl-stat-l { color: var(--accent-bright); }
+
+.pl-bar {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px;
+}
+.pl-search { flex: 1 1 220px; min-width: 0; max-width: 320px; }
+.pl-sel { flex: 0 0 auto; }
+.pl-toggle {
+  display: inline-flex; align-items: center; gap: 7px;
+  font: 400 13px/1 var(--sans); color: var(--ink-dim); cursor: pointer;
+}
+.pl-toggle input { accent-color: var(--accent); }
+.pl-count {
+  margin-left: auto; font: 500 12.5px/1 var(--sans); color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* The table scrolls inside its own box so the page never scrolls
+   sideways on a narrow screen. */
+.pl-tablewrap { overflow-x: auto; border: 1px solid var(--hairline-strong); }
+.pl-table {
+  width: 100%; border-collapse: collapse; min-width: 940px;
+  font: 400 13.5px/1.4 var(--sans);
+}
+.pl-table thead th {
+  text-align: left; padding: 10px 12px; background: var(--surface);
+  border-bottom: 1px solid var(--hairline-strong);
+  font: 600 10px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ink-muted); white-space: nowrap;
+}
+.pl-sort {
+  background: none; border: 0; padding: 0; cursor: pointer; color: inherit;
+  font: inherit; letter-spacing: inherit; text-transform: inherit;
+}
+.pl-sort:hover { color: var(--ink); }
+.pl-sort.is-on { color: var(--accent-bright); }
+.pl-sort:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pl-sr {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+.pl-table tbody td {
+  padding: 9px 12px; border-bottom: 1px solid var(--hairline); vertical-align: middle;
+}
+.pl-row:hover td { background: var(--surface); }
+.pl-row.is-passed td { color: var(--ink-muted); }
+.pl-row.is-passed .pl-name a { color: var(--ink-dim); }
+
+.pl-name { min-width: 200px; }
+.pl-name a {
+  font-weight: 600; color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.pl-name a:hover { border-bottom-color: var(--accent); color: var(--accent-bright); }
+.pl-committed {
+  display: inline-block; margin-left: 8px;
+  font: 600 11px/1 var(--mono); color: var(--accent-bright);
+  font-variant-numeric: tabular-nums;
+}
+.pl-reason {
+  display: block; margin-top: 3px;
+  font: 400 11.5px/1.3 var(--sans); color: var(--ink-muted);
+}
+.pl-type, .pl-last { white-space: nowrap; color: var(--ink-dim); }
+.pl-last { font-variant-numeric: tabular-nums; }
+.pl-contact, .pl-fit { color: var(--ink-dim); }
+.pl-more {
+  margin-left: 6px; font: 600 10.5px/1 var(--mono); color: var(--ink-muted);
+}
+.pl-none { color: var(--ink-muted); }
+
+/* Selects sit flush in the cell so the table stays dense, and grow a
+   border only on interaction. */
+.pl-stage-sel, .pl-rel-sel {
+  font: 500 12.5px/1.2 var(--sans); color: var(--ink);
+  background: var(--bg); border: 1px solid transparent; border-radius: 3px;
+  padding: 4px 6px; max-width: 150px; cursor: pointer;
+}
+.pl-stage-sel:hover, .pl-rel-sel:hover { border-color: var(--hairline-strong); }
+.pl-stage-sel:focus-visible, .pl-rel-sel:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 1px;
+}
+.pl-actions { white-space: nowrap; text-align: right; }
+
+@media (max-width: 640px) {
+  .pl-summary { gap: 6px; }
+  .pl-stat { min-width: 68px; padding: 7px 9px; }
+  .pl-stat-n { font-size: 16px; }
+  .pl-count { margin-left: 0; width: 100%; }
+}
