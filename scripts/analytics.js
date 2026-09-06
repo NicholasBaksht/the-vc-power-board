@@ -108,6 +108,15 @@ const PBA_EVENTS = [
   'pipeline_partner_added',
   'pipeline_partner_removed',
   'pipeline_duplicate_prevented',
+  /* Phase 4C: the pipeline itself. Stage and relationship changes are
+     counted, never the investor they applied to, and never a
+     commitment amount or a pass reason. */
+  'pipeline_viewed',
+  'pipeline_stage_changed',
+  'pipeline_relationship_changed',
+  'pipeline_target_committed',
+  'pipeline_target_passed',
+  'pipeline_filtered',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
