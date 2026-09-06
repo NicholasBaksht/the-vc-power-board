@@ -226,6 +226,8 @@ document.getElementById('portfolioView').style.display = 'none';
   if (fpView) fpView.style.display = 'none';
   const panView = document.getElementById('analyticsView');
   if (panView) panView.style.display = 'none';
+  const pmapView = document.getElementById('powerMapView');
+  if (pmapView) pmapView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -400,6 +402,25 @@ document.getElementById('powerSignalsView').style.display = 'none';
        everything Power Board has researched, with denominators. */
     document.getElementById('analyticsView').style.display = 'block';
     if (typeof renderPowerAnalytics === 'function') renderPowerAnalytics();
+    window.scrollTo(0, 0);
+  } else if (slug === 'power-map' || slug.indexOf('power-map/') === 0) {
+    /* #power-map                  chooser, because there is no global map
+       #power-map/<firm>           that firm's co-investors
+       #power-map/<firm>/<other>   the shared rounds for one pair
+
+       Deliberately not #map: that reads as the geographic world map,
+       which already exists at #world-map. */
+    const pmv = document.getElementById('powerMapView');
+    if (pmv) {
+      pmv.style.display = 'block';
+      const pm = slug.match(/^power-map\/([^/]+)(?:\/([^/]+))?$/);
+      if (typeof renderPowerMap === 'function') {
+        renderPowerMap(
+          pm ? decodeURIComponent(pm[1]) : null,
+          pm && pm[2] ? decodeURIComponent(pm[2]) : null
+        );
+      }
+    }
     window.scrollTo(0, 0);
   } else if (slug.indexOf('fund/') === 0) {
     /* #fund/<firmSlug>/<fund>. The firm is in the path on purpose:
