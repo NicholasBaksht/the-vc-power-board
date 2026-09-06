@@ -188,6 +188,16 @@ const PBA_EVENTS = [
   'workspace_switched',
   'workspace_archived',
   'workspace_restored',
+  /* Phase 7B. Membership. No email address, no member name, no
+     workspace name and no role of any identifiable person is sent.
+     These say the collaboration layer is being administered, and
+     nothing about who by or to whom. */
+  'workspace_members_opened',
+  'workspace_invite_sent',
+  'workspace_member_joined',
+  'workspace_member_removed',
+  'workspace_role_changed',
+  'workspace_ownership_transferred',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
