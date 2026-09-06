@@ -222,6 +222,8 @@ document.getElementById('portfolioView').style.display = 'none';
   if (plView) plView.style.display = 'none';
   const mbView = document.getElementById('myBoardView');
   if (mbView) mbView.style.display = 'none';
+  const fpView = document.getElementById('fundView');
+  if (fpView) fpView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -389,6 +391,14 @@ document.getElementById('powerSignalsView').style.display = 'none';
     document.getElementById('screenerView').style.display = 'block';
     if (typeof renderScreener === 'function') renderScreener();
     if (typeof pbTrack === 'function') pbTrack('screener_opened');
+    window.scrollTo(0, 0);
+  } else if (slug.indexOf('fund/') === 0) {
+    /* #fund/<firmSlug>/<fund>. The firm is in the path on purpose:
+       22 firms have a "Fund III", so a fund URL without its firm
+       would be a lie about identity. renderFundPage handles an
+       unknown id by explaining that scoping rather than 404ing. */
+    document.getElementById('fundView').style.display = 'block';
+    if (typeof renderFundPage === 'function') renderFundPage();
     window.scrollTo(0, 0);
   } else if (slug === 'my') {
     /* My Power Board: the private workspace home. Signed out it
