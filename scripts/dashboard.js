@@ -285,7 +285,14 @@ function renderPerformanceDashboard(firm) {
     { label: 'Acquisitions', value: perf.acquisitions ? `${perf.acquisitions}+` : null },
   { label: 'Power Score™', value: computePowerScore(firm) },
     { label: 'Years Active', value: yearsActive },
-    { label: 'Current Fund Size', value: firm.aum, isText: true },
+    /* This value is firm.aum - assets under management across the
+       whole organisation. It was labelled "Current Fund Size", which
+       is a different quantity entirely: a16z manages $175B in
+       platform assets and its most recent tracked fund is $1.3B.
+       Phase 5 put a real fund section on this same page, so the two
+       labels sat inches apart contradicting each other. A firm's AUM
+       is never one of its funds. */
+    { label: 'Assets Under Management', value: firm.aum, isText: true },
     { label: 'Most Valuable Holding', value: mostValuable ? `${mostValuable.name} (${mostValuable.ticker})` : null, isText: true }
   ].filter(m => m.value !== null && m.value !== undefined);
 
