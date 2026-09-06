@@ -62,7 +62,7 @@
     </div>
     <div class="legal-meta-item">
       <span class="legal-meta-label">Last revised</span>
-           <span class="legal-meta-value">September 5, 2026</span>
+           <span class="legal-meta-value">September 6, 2026</span>
     </div>
     <div class="legal-meta-item">
       <span class="legal-meta-label">Accounts</span>
@@ -115,8 +115,12 @@
       <li><a href="#s17"><span class="toc-num">17</span> Following, Saving, and Messages</a></li>
       <li><a href="#s18"><span class="toc-num">18</span> Blocking, Reporting, and Moderation</a></li>
       <li><a href="#s19"><span class="toc-num">19</span> Deleting Network Data</a></li>
-      <li><a href="#s20"><span class="toc-num">20</span> Changes</a></li>
-      <li><a href="#s21"><span class="toc-num">21</span> Contact</a></li>
+      <li><a href="#s20"><span class="toc-num">20</span> Workspaces and Shared Fundraising</a></li>
+      <li><a href="#s21"><span class="toc-num">21</span> The Power Board API</a></li>
+      <li><a href="#s22"><span class="toc-num">22</span> Webhooks</a></li>
+      <li><a href="#s23"><span class="toc-num">23</span> Connected Third-Party Services</a></li>
+      <li><a href="#s24"><span class="toc-num">24</span> Changes</a></li>
+      <li><a href="#s25"><span class="toc-num">25</span> Contact</a></li>
     </ol>
   </nav>
 
@@ -316,15 +320,15 @@
     <h3>Cloudflare (cdnjs) and jsDelivr</h3>
     <p>The D3.js visualisation library and the Supabase browser client are loaded from public code delivery networks operated by Cloudflare, Inc. and jsDelivr. They receive only the technical metadata inherent in serving a file, and no information about what you do on the Site.</p>
   </section>
-      <li><strong>See what is held.</strong> Your account page shows your email address, the date the account was created, and your full saved Shortlist. Your private fundraising workspace is visible to you inside the product, and the export below contains all of it. Together these are the complete set of data associated with you.</li>
-       <li><strong>Export it.</strong> You can download a single file at any time containing your Shortlist, followed firms, saved views and searches, alerts and alert settings, and your entire private fundraising workspace including every raise, investor target, note, tag, activity and next action.</li>
+
+  <section class="legal-section" id="s8">
     <h2><span class="sec-num">8</span> Managing Your Account</h2>
-         <li><strong>Delete it.</strong> Deleting your account removes your email address, your account identifier, your entire Shortlist, and your entire private fundraising workspace from the database. Deletion is immediate and permanent; there is no soft-delete or hidden archive, and the Operator cannot restore a deleted account.</li>
     <ul class="legal-list">
-      <li><strong>See what is held.</strong> Your account page shows your email address, the date the account was created, and your full saved Shortlist. That is the complete set of data associated with you.</li>
-      <li><strong>Export it.</strong> You can download your Shortlist as a file at any time.</li>
+      <li><strong>See what is held.</strong> Your account page shows your email address, the date the account was created, and your full saved Shortlist. Your private fundraising workspace is visible to you inside the product, and the export below contains all of it. Together these are the complete set of data associated with you.</li>
+      <li><strong>Export it.</strong> You can download a single file at any time containing your Shortlist, followed firms, saved views and searches, alerts and alert settings, and your entire private fundraising workspace including every raise, investor target, note, tag, activity and next action.</li>
       <li><strong>Correct it.</strong> You can change your email address, and add, edit, or remove any Shortlist entry.</li>
-      <li><strong>Delete it.</strong> Deleting your account removes your email address, your account identifier, and your entire Shortlist from the database. Deletion is immediate and permanent; there is no soft-delete or hidden archive, and the Operator cannot restore a deleted account.</li>
+      <li><strong>Delete it.</strong> Deleting your account removes your email address, your account identifier, your entire Shortlist, and your entire private fundraising workspace from the database. Deletion is immediate and permanent; there is no soft-delete or hidden archive, and the Operator cannot restore a deleted account.</li>
+      <li><strong>Workspaces you belong to.</strong> Deleting your account also removes your membership of any Workspace, your API keys and your webhooks. Work you contributed to a shared raise remains with that Workspace, because it belongs to the team rather than to you alone, and the record of who did it is retained. A Workspace you own must have its ownership transferred to another member before your account can be deleted.</li>
     </ul>
     <p>If you stop using an account it simply remains until you delete it. The Operator does not mine dormant accounts, and holds no data about you beyond what Section 2 lists.</p>
   </section>
@@ -337,7 +341,7 @@
     <h3>Photographs</h3>
     <p>Most profiles carry no photograph. Where one does appear, it is published because a specific licence permits it: a firm's own press or media kit granting editorial use, or a portrait released by its copyright holder under terms that allow republication. The credit and the licence are printed beneath every photograph on the page itself, so the basis for showing it can be checked where it appears rather than merely asserted here.</p>
     <p>Where no such licence exists, the Site displays a plain tile bearing the person's initials. That tile is not a placeholder for a photograph the Operator intends to acquire later. It is what the Site shows for anyone whose likeness it has no right to publish, which is the great majority of the people described.</p>
-    <p>No image on the Site is processed biometrically. The Operator does not perform facial recognition, does not create or store face templates, faceprints, or any other biometric identifier, does not match photographs against any other image or dataset, and does not use any image to train a model. A photograph is displayed as a picture beside a name and is used for nothing else. Nothing in this policy permits the Operator to begin doing any of those things; each would be a change of purpose requiring its own notice under Section 20.</p>
+    <p>No image on the Site is processed biometrically. The Operator does not perform facial recognition, does not create or store face templates, faceprints, or any other biometric identifier, does not match photographs against any other image or dataset, and does not use any image to train a model. A photograph is displayed as a picture beside a name and is used for nothing else. Nothing in this policy permits the Operator to begin doing any of those things; each would be a change of purpose requiring its own notice under Section 24.</p>
 
     <h3>What is not published</h3>
     <p>Beyond the limits on photographs above, the Site does not publish home addresses, personal telephone numbers, personal email addresses, dates of birth, government identifiers, family or relationship information, health information, financial account information, compensation, or any special category of personal data.</p>
@@ -353,7 +357,7 @@
 
   <section class="legal-section" id="s10">
     <h2><span class="sec-num">10</span> Correction and Removal</h2>
-    <p>If you are described on the Site and something about your entry is wrong, out of date, or you believe should not appear, write to the address in Section 21.</p>
+    <p>If you are described on the Site and something about your entry is wrong, out of date, or you believe should not appear, write to the address in Section 25.</p>
     <p>This section concerns the professional facts in a profile. A request to take down a <em>photograph</em> is not weighed in the way described below and is simply honoured; see "Removing a photograph" in Section 9.</p>
     <p>A request is handled fastest when it includes the page address, the specific field at issue, the correct value, and where available a public source confirming it. The Operator will acknowledge and review every such request in good faith and will correct any demonstrable factual error promptly. Where the Operator declines to remove information - for example because it is accurate, publicly sourced, and concerns a public professional role - the Operator will say so and explain why, and will inform you of your right to complain to a supervisory authority if one has jurisdiction.</p>
     <p>You do not need to invoke any statute for a correction request to be taken seriously. Accuracy is the Site's stated purpose, and a correction is useful to the Operator regardless of who asks.</p>
@@ -361,7 +365,7 @@
 
   <section class="legal-section" id="s11">
     <h2><span class="sec-num">11</span> Children's Privacy</h2>
-    <p>The Site is a professional research tool intended for adults. It is not directed to children, and accounts are not knowingly offered to anyone under 16. The Operator does not knowingly collect personal data from children. If you believe a child has created an account, write to the address in Section 21 and it will be deleted.</p>
+    <p>The Site is a professional research tool intended for adults. It is not directed to children, and accounts are not knowingly offered to anyone under 16. The Operator does not knowingly collect personal data from children. If you believe a child has created an account, write to the address in Section 25 and it will be deleted.</p>
   </section>
 
   <section class="legal-section" id="s12">
@@ -374,7 +378,7 @@
     <h2><span class="sec-num">13</span> Rights in the EEA and United Kingdom</h2>
     <p>If you are in the European Economic Area, the United Kingdom, or Switzerland, data protection law gives you rights of access, rectification, erasure, restriction, objection, and portability, and the right to lodge a complaint with your supervisory authority.</p>
     <p><strong>As a visitor without an account</strong>, the Operator holds no personal data about you and has nothing to disclose, correct, delete, or export. Data arising from your visit is held by GitHub as described in Section 6, and requests concerning it should be directed there.</p>
-    <p><strong>As an account holder</strong>, these rights apply to your email address and Shortlist. Section 8 lets you exercise access, portability, rectification and erasure yourself, immediately, without making a request. You may also write to the address in Section 21, and the Operator will respond within one month.</p>
+    <p><strong>As an account holder</strong>, these rights apply to your email address and Shortlist. Section 8 lets you exercise access, portability, rectification and erasure yourself, immediately, without making a request. You may also write to the address in Section 25, and the Operator will respond within one month.</p>
     <p><strong>As an individual described in the Site's data</strong>, these rights apply to your published profile, and Section 10 sets out how to exercise them. You may object to the processing described in Section 9 at any time on grounds relating to your particular situation.</p>
     <p>The Site is operated from the United States. Account data is stored in the region stated in Section 5, and accessing the Site involves an international transfer of the technical request data described in Sections 6 and 7.</p>
   </section>
@@ -424,7 +428,7 @@
     <h3>Reporting</h3>
     <p>You can report a profile or a message. A report records what you reported, the reason you gave, and that you were the person who made it. Reports are read by the Operator in order to act on them. Your identity as reporter is not disclosed to the person you reported.</p>
     <h3>Moderation</h3>
-    <p>Every profile carries a moderation state. A profile that is being reviewed, or that has been removed for breaching the Terms of Service, stops appearing anywhere in the Service. Moderation decisions are made by the Operator, a single person, and are not automated. If your profile is moderated you may ask why, and you may ask for the decision to be reconsidered, using the contact address in Section 21.</p>
+    <p>Every profile carries a moderation state. A profile that is being reviewed, or that has been removed for breaching the Terms of Service, stops appearing anywhere in the Service. Moderation decisions are made by the Operator, a single person, and are not automated. If your profile is moderated you may ask why, and you may ask for the decision to be reconsidered, using the contact address in Section 25.</p>
   </section>
 
   <section class="legal-section" id="s19">
@@ -436,16 +440,51 @@
     <p>Deleting your profile removes the profile record, your uploaded photograph, your education and experience entries, your follows, and your saved items. Your account remains, and you can create a new profile later.</p>
     <h3>Deleting an account</h3>
     <p>Deleting your account removes everything above and the account itself. What survives is narrow and is listed here rather than left vague: messages you already sent remain readable by the people who received them, because those messages are their data as well as yours; and a report you filed remains, without your profile attached to it, so that a moderation decision made about somebody else does not silently reverse itself.</p>
-    <p>Product measurement events described in Section 3 are not tied to your profile and are not affected. To delete an account, use the account settings on the Site, or write to the address in Section 21 and it will be done for you.</p>
+    <p>Product measurement events described in Section 3 are not tied to your profile and are not affected. To delete an account, use the account settings on the Site, or write to the address in Section 25 and it will be done for you.</p>
   </section>
 
   <section class="legal-section" id="s20">
-    <h2><span class="sec-num">20</span> Changes</h2>
-    <p>This Policy may be revised. The "Last revised" date at the top records when the current version took effect. If the Site begins collecting a category of data not listed here - analytics, payments, or anything else - this Policy will be updated before that change goes live, and the summary at the top will be corrected to reflect it. The Operator will not quietly begin collecting data under a policy that says otherwise.</p>
+    <h2><span class="sec-num">20</span> Workspaces and Shared Fundraising</h2>
+    <p><strong>REQUIRES LEGAL REVIEW.</strong> This section describes behaviour that is implemented in the product. It has not been reviewed by a lawyer, and should be before launch.</p>
+    <p>A Workspace is a shared space that a founder can create and invite people into. Creating one does not move or share anything you already had. Your existing raise, pipeline, notes, saved searches and shortlist remain yours alone unless you explicitly move or share them, and each of those is a separate, deliberate action.</p>
+    <p>When you share a raise with a Workspace, the people in that Workspace can see the investors in it, the stage of each conversation, the relationship context, partner contacts, tags, activity history, next actions, commitment amounts and pass reasons. They cannot see your notes. Notes are private to their author by default and stay private through a move; sharing an individual note is a separate choice you make for that note.</p>
+    <p>Activity in a shared raise records which member performed it, so a team can tell who did what. That record is retained after a member leaves, because removing it would misattribute work that person actually did.</p>
+    <p>Workspace administrators can see the email addresses of members and pending invitees of that Workspace, and an administrative history of membership, role and ownership changes. That history is written by the database and cannot be edited by anyone, including administrators.</p>
+    <p>An invitation grants no access until it is accepted. Before acceptance, an invited person can see only the name of the Workspace they were invited to.</p>
   </section>
 
   <section class="legal-section" id="s21">
-    <h2><span class="sec-num">21</span> Contact</h2>
+    <h2><span class="sec-num">21</span> The Power Board API</h2>
+    <p><strong>REQUIRES LEGAL REVIEW.</strong></p>
+    <p>You can create API keys to read data programmatically. A key is shown to you once, at creation, and only a cryptographic hash of it is stored. It cannot be recovered afterwards by anyone, including the Operator. If you lose a key, revoke it and create another.</p>
+    <p>A key can never read more than the person who created it can read in the product. Keys carry explicit scopes, and access to private notes requires a separate scope that general access does not grant. A key issued for a Workspace stops working if its creator leaves that Workspace.</p>
+    <p>Key creation, revocation, and the time a key was last used are recorded. The content of API requests is not logged. Request volume is counted per key for rate limiting and is not associated with the data returned.</p>
+  </section>
+
+  <section class="legal-section" id="s22">
+    <h2><span class="sec-num">22</span> Webhooks</h2>
+    <p><strong>REQUIRES LEGAL REVIEW.</strong></p>
+    <p>You can register a URL to receive notifications about events in your own Workspace. Doing so sends data to a destination you choose, operated by you or by a third party, and once it leaves the Site it is governed by whatever handles it there.</p>
+    <p>Webhook payloads carry identifiers, event types and timestamps. They do not carry note content, commitment amounts, email addresses, or the names of investors. A recipient that needs more detail must request it through the API using a key with the appropriate scope.</p>
+    <p>Delivery attempts, response codes and failures are recorded so a failing endpoint can be diagnosed. Endpoints that fail repeatedly are disabled automatically.</p>
+  </section>
+
+  <section class="legal-section" id="s23">
+    <h2><span class="sec-num">23</span> Connected Third-Party Services</h2>
+    <p><strong>REQUIRES LEGAL REVIEW.</strong> No third-party integration is enabled at the time of writing. This section describes how one will behave when enabled.</p>
+    <p>Connecting an outside service such as a calendar or CRM uses that provider's own authorisation flow. You are never asked for a password for another service, and none is ever stored. The access and refresh tokens the provider issues are held encrypted and are not readable by the Site's front end or through the API.</p>
+    <p>A connection requests the narrowest permissions that make the feature work. Data brought in from a connected service is treated as your private workflow information. It never alters Power Board's published research: an outside system's opinion about an investor does not change what the research records.</p>
+    <p>Disconnecting a service deletes the stored tokens and the record of which external objects were linked to which Power Board records, and stops any scheduled synchronisation. Where the provider supports it, the token is also revoked with the provider. Data already brought into your Workspace before disconnection remains there until you remove it.</p>
+    <p>A history of synchronisation runs is kept, recording when a run happened, whether it succeeded, and how many records it touched. It does not retain the content of records exchanged with the provider.</p>
+  </section>
+
+  <section class="legal-section" id="s24">
+    <h2><span class="sec-num">24</span> Changes</h2>
+    <p>This Policy may be revised. The "Last revised" date at the top records when the current version took effect. If the Site begins collecting a category of data not listed here - analytics, payments, or anything else - this Policy will be updated before that change goes live, and the summary at the top will be corrected to reflect it. The Operator will not quietly begin collecting data under a policy that says otherwise.</p>
+  </section>
+
+  <section class="legal-section" id="s25">
+    <h2><span class="sec-num">25</span> Contact</h2>
     <p>Privacy questions, account enquiries, requests concerning information about a named individual, and data protection matters may be sent to:</p>
     <div class="legal-contact">
       The VC Power Board<br>
