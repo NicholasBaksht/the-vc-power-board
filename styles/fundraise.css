@@ -398,3 +398,77 @@
 @media (max-width: 640px) {
   .pl-tags { max-width: 130px; }
 }
+
+/* ---- Next actions and activity timeline (Phase 4E) ---- */
+
+.pl-next { max-width: 210px; }
+.pl-next-body {
+  display: block; font: 400 12.5px/1.35 var(--sans); color: var(--ink);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+/* Overdue is the only state that gets a colour, because it is the
+   only one a founder scans this column for. */
+.pl-next-due {
+  display: inline-block; margin-top: 2px;
+  font: 500 11px/1 var(--mono); color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+.pl-next-due.is-overdue { color: var(--red); font-weight: 600; }
+
+.pa-new, .pa-log { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.pa-new input[data-pa-body] { flex: 1 1 220px; min-width: 0; }
+.pa-log input[data-pa-title] { flex: 1 1 180px; min-width: 0; }
+.pa-date { flex: 0 0 auto; width: 152px; }
+.pa-att-in { margin-top: 8px; width: 100%; }
+
+.pa-open {
+  border: 1px solid var(--hairline-strong); border-left: 3px solid var(--accent);
+  padding: 12px 14px; background: var(--bg);
+}
+.pa-open.is-overdue { border-left-color: var(--red); }
+.pa-open-body {
+  font: 500 14px/1.45 var(--sans); color: var(--ink); max-width: 56ch;
+}
+.pa-open-foot {
+  display: flex; align-items: baseline; gap: 14px; margin-top: 8px;
+}
+.pa-due {
+  font: 500 11.5px/1 var(--mono); color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+.pa-due.is-overdue { color: var(--red); font-weight: 600; }
+
+.pd-timeline { margin-top: 16px; }
+.pa-timeline { list-style: none; margin: 0; padding: 0; }
+.pa-item {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 14px;
+  padding: 9px 0 9px 13px; border-bottom: 1px solid var(--hairline);
+  border-left: 2px solid var(--hairline-strong);
+}
+.pa-item:last-child { border-bottom: 0; }
+/* Manually logged events are marked so the founder can tell what they
+   asserted from what the system recorded. */
+.pa-item.is-manual { border-left-color: var(--accent); }
+.pa-kind {
+  grid-column: 1; font: 600 9.5px/1.4 var(--mono); letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-muted);
+}
+.pa-when {
+  grid-column: 2; grid-row: 1 / span 2; align-self: center;
+  font: 400 11.5px/1.4 var(--sans); color: var(--ink-muted);
+  white-space: nowrap; font-variant-numeric: tabular-nums;
+}
+.pa-sum {
+  grid-column: 1; font: 400 13.5px/1.5 var(--sans); color: var(--ink);
+  word-break: break-word;
+}
+.pa-att {
+  grid-column: 1; font: 400 12px/1.4 var(--sans); color: var(--ink-muted);
+}
+
+@media (max-width: 640px) {
+  .pl-next { max-width: 150px; }
+  .pa-date { width: 100%; }
+  .pa-item { grid-template-columns: minmax(0, 1fr); }
+  .pa-when { grid-column: 1; grid-row: auto; }
+}
