@@ -234,6 +234,8 @@ document.getElementById('portfolioView').style.display = 'none';
   if (xpView) xpView.style.display = 'none';
   const wsView = document.getElementById('workspacesView');
   if (wsView) wsView.style.display = 'none';
+  const wmView = document.getElementById('membersView');
+  if (wmView) wmView.style.display = 'none';
 document.getElementById('shortlistView').style.display = 'none';
   document.getElementById('worldMapView').style.display = 'none';
   document.getElementById('comparePartnersView').style.display = 'none';
@@ -456,6 +458,16 @@ document.getElementById('powerSignalsView').style.display = 'none';
     if (wv) {
       wv.style.display = 'block';
       if (typeof renderWorkspaces === 'function') renderWorkspaces();
+    }
+    window.scrollTo(0, 0);
+  } else if (slug === 'members') {
+    /* Scoped to the CURRENT workspace rather than taking an id in the
+       address. A people page addressed by id invites the habit of
+       trying someone else's. */
+    const mv = document.getElementById('membersView');
+    if (mv) {
+      mv.style.display = 'block';
+      if (typeof renderWorkspaceMembers === 'function') renderWorkspaceMembers();
     }
     window.scrollTo(0, 0);
   } else if (slug.indexOf('fund/') === 0) {
