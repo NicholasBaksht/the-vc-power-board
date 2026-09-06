@@ -69,7 +69,7 @@ const PL_PASSED_REASONS = [
 
 let plState = {
   raise: null, targets: null, contacts: {}, activities: {},
-  filters: { stage: '', type: '', relationship: '', q: '', tag: '' },
+  filters: { stage: '', type: '', relationship: '', q: '', tag: '', action: '' },
   sort: 'added', dir: 'desc', showPassed: false
 };
 
@@ -272,6 +272,12 @@ function plVisible(targets) {
     if (f.stage && t.stage !== f.stage) return false;
     if (f.type && t.targetType !== f.type) return false;
     if (f.relationship && t.relationship !== f.relationship) return false;
+    /* "Needs attention" filters. Overdue is computed, so this is
+       always current without a job keeping a flag true. */
+    if (f.action === 'overdue' && !(typeof paIsOverdue === 'function' &&
+        paIsOverdue(paOpenFor(t.id)))) return false;
+    if (f.action === 'has' && !(typeof paOpenFor === 'function' && paOpenFor(t.id))) return false;
+    if (f.action === 'none' && (typeof paOpenFor === 'function' && paOpenFor(t.id))) return false;
     if (f.tag) {
       const applied = (typeof pdTagsByTarget !== 'undefined' && pdTagsByTarget[t.id]) || [];
       if (applied.indexOf(f.tag) === -1) return false;
@@ -386,6 +392,7 @@ async function renderPipeline() {
     await pdTagsForRaise((targets || []).map(function (t) { return t.id; }));
     await pdAllTags(true);
   }
+  if (typeof paLoadForRaise === 'function') await paLoadForRaise(raise.id);
 
   plPaint(host);
   if (typeof pbTrack === 'function') pbTrack('pipeline_viewed');
@@ -447,6 +454,12 @@ function plPaint(host) {
       }).join('') +
     '</select>' +
     plTagFilter() +
+    '<select class="scr-text pl-sel" data-pl-filter="action" aria-label="Next action">' +
+      '<option value="">Any next action</option>' +
+      '<option value="overdue"' + (plState.filters.action === 'overdue' ? ' selected' : '') + '>Overdue</option>' +
+      '<option value="has"' + (plState.filters.action === 'has' ? ' selected' : '') + '>Has one</option>' +
+      '<option value="none"' + (plState.filters.action === 'none' ? ' selected' : '') + '>Needs one</option>' +
+    '</select>' +
     (passedCount
       ? '<label class="pl-toggle"><input type="checkbox" data-pl-showpassed' +
         (plState.showPassed ? ' checked' : '') + '> Show passed (' + passedCount + ')</label>'
@@ -470,6 +483,7 @@ function plPaint(host) {
     '<th scope="col">Relationship</th>' +
     '<th scope="col">Best-fit partner</th>' +
     '<th scope="col">Tags</th>' +
+    '<th scope="col">Next action</th>' +
     plTh('activity', 'Last activity') +
     '<th scope="col"><span class="pl-sr">Actions</span></th>' +
   '</tr></thead><tbody>' + rows.map(plRow).join('') + '</tbody></table></div>';
@@ -490,6 +504,20 @@ function plTagFilter() {
       return '<option value="' + plEsc(t.id) + '"' +
         (plState.filters.tag === t.id ? ' selected' : '') + '>' + plEsc(t.label) + '</option>';
     }).join('') + '</select>';
+}
+
+/* The one thing a founder scans this column for is what is late, so
+   overdue is the only state that gets a colour. Everything else is
+   plain text. */
+function plNextCell(t) {
+  if (typeof paOpenFor !== 'function') return '<span class="pl-none">-</span>';
+  const a = paOpenFor(t.id);
+  if (!a) return '<span class="pl-none">-</span>';
+  const overdue = paIsOverdue(a);
+  const due = paDueLabel(a);
+  return '<span class="pl-next-body">' + plEsc(a.body) + '</span>' +
+    (due ? '<span class="pl-next-due' + (overdue ? ' is-overdue' : '') + '">' +
+      plEsc(due) + '</span>' : '');
 }
 
 function plTagCells(t) {
@@ -548,6 +576,7 @@ function plRow(t) {
       (fit && fit.partnerName ? plEsc(fit.partnerName) : '<span class="pl-none">-</span>') +
     '</td>' +
     '<td class="pl-tags">' + plTagCells(t) + '</td>' +
+    '<td class="pl-next">' + plNextCell(t) + '</td>' +
     '<td class="pl-last">' + (lastLabel ? plEsc(lastLabel) : '<span class="pl-none">-</span>') + '</td>' +
     '<td class="pl-actions">' +
       '<button type="button" class="ac-act" data-pl-open="' + plEsc(t.id) + '">Open</button>' +
