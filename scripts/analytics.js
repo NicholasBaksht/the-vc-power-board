@@ -171,6 +171,14 @@ const PBA_EVENTS = [
      pipeline and none of it leaves the browser. */
   'raise_analytics_opened',
   'raise_analytics_section_changed',
+  /* Phase 6F. That an export happened, and whether private notes were
+     included. Never the raise, the investors, the note text, the
+     amounts, or the file. The second name exists so the default can
+     be checked against reality: if most exports include notes, the
+     default is wrong. */
+  'export_center_opened',
+  'pipeline_exported',
+  'export_included_private_notes',
   /* Power Network. This array is the client half of the allowlist;
      the other half is the CHECK constraint on product_events, and
      both must list a name for it to be recorded. No message body,
