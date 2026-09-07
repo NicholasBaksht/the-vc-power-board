@@ -13940,5 +13940,663 @@ holdings: []
       { year: "2026", event: "Village Capital launches the VilCap Innovative Capital Facility NWA for early-stage companies in Northwest Arkansas, announced 20 July 2026, planning roughly five investments of USD 100K to USD 150K each." }
     ],
     holdings: []
+  },
+
+  /* ---- Firm batch 3, added 7 September 2026: 20 firms. Their partner records
+     are in data-partners-1.js (not shard 6 - see that file's banner) and
+     their field-level provenance is in data-evidence.js, added in the same
+     batch. Checked against all 501 pre-existing firms for slug, name,
+     historical-name and parent-brand collisions; none found. ---- */
+  {
+    rank: null,
+    name: "6th Man Ventures",
+    sectors: ["Crypto", "Web3", "Blockchain", "Infrastructure", "DeFi", "Consumer"],
+    signatureExit: null,
+    slug: "6th-man-ventures",
+    website: "https://6thman.ventures",
+    short: "6MV",
+    founded: null,
+    hq: "New York, NY",
+    aum: "Not publicly disclosed (no AUM figure is published; a $145M second crypto fund was formed in 2022, per the Lowenstein Sandler announcement of 12 May 2022)",
+    thesis: "6th Man Ventures, which brands itself 6MV, describes itself on its own site as 'Builder-First Capital For The World's Most Tenacious Founders' and as 'a team of company founders and builders, partnering with leaders courageous enough to create the future'. It states that it invests at Seed and Series A as a high conviction lead or co-lead, with an average cheque of $2M to $5M and the ability to flex, and that it does not index on pedigree but seeks 'N of 1 founders building N of 1 companies'. Its portfolio page groups holdings under the firm's own labels Consumer, Developer, Money, AI, DePin, DeFi and Other. The 2022 fund was described by the fund's counsel as focused on play-to-earn gaming and metaverse projects, web3 networks and DAOs, and infrastructure. In a Solana Breakpoint 2025 keynote the firm was reported as putting about 50 per cent of its deal flow into the Solana ecosystem. The firm publishes a research blog under 'Writing' covering tokenisation, DePIN, airdrops, token unlocks and stablecoins.",
+    leadership: [
+      { name: "Mike Dudas", role: "Managing Partner", profileSlug: "mike-dudas" },
+      { name: "Serge Kassardjian", role: "Managing Partner", profileSlug: "serge-kassardjian" },
+      { name: "Carl Vogel", role: "General Partner", profileSlug: "carl-vogel" },
+      { name: "Aaron Kern", role: "General Partner", profileSlug: "aaron-kern" },
+      { name: "Emilio Maglione-Fulco", role: "Head of Operations" }
+    ],
+    timeline: [
+      { year: "2022", event: "CoinDesk reports on 12 May 2022 that 6th Man Ventures' first fund held $7.4 million and invested in 75 projects at an average cheque of $100,000." },
+      { year: "2022", event: "The firm's counsel Lowenstein Sandler announces on 12 May 2022 that it represented 6th Man Ventures, 'a venture capital firm founded by Mike Dudas and Serge Kassardjian', in the formation of a $145 million second crypto fund." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Big Idea Ventures",
+    sectors: ["Foodtech", "Agritech", "Food & Agriculture", "Synthetic Biology", "Sustainability", "Advanced Manufacturing"],
+    signatureExit: null,
+    slug: "big-idea-ventures",
+    website: "https://bigideaventures.com",
+    short: "BIV",
+    founded: null,
+    hq: "Miami Beach, FL",
+    aum: "Over $150M (the firm's own word is \"managing\", from its 20 May 2025 Vevolution acquisition release; it does not use the phrase \"assets under management\", and this is not a fund close)",
+    thesis: "Big Idea Ventures is an accelerator-and-fund hybrid in food and agriculture technology. It states that it runs two vehicles and an accelerator programme. Global Food Innovation Fund II (GFIF II) \"invests in and supports the best companies around the world focused on proteins, fats, ingredients, sweeteners, flavorings, and mono-crops both directly and through its accelerator program\". The Generation Food Rural Partners fund (GFRP) \"commercializes university-developed intellectual property focused on food, protein, and agriculture innovation\", holds a Rural Business Investment Company licence from the USDA, works with partner universities and creates and launches new companies headquartered in rural communities near those universities rather than only backing existing ones. The accelerator is a five-month programme run twice a year from New York, Paris and Singapore, and the firm states its terms are fixed: \"We invest USD$200K ($125K USD cash and $75K USD of in-kind value-adds)\", of which $125,000 is cash, and it has said it may invest up to $3.5 million in top-performing companies afterwards. Accelerator participation and portfolio membership are the same thing at this firm by its own account: its cohort announcements are headed \"Big Idea Ventures Invests in\" and quote its founder saying \"We invested in these five companies\", and cohort companies are described as joining the GFIF II portfolio. The firm also runs corporate innovation programmes and challenges that are not investments, including the Next Generation Pet Food Program with Mars Petcare (which offers selected startups $15,000 and a summit slot) and the Golden Crisp Innovation Challenge with McCain Foods.",
+    leadership: [
+      { name: "Andrew D. Ive", role: "Founder/Managing General Partner", profileSlug: "andrew-d-ive" },
+      { name: "Tom Mastrobuoni", role: "Chief Investment Officer", profileSlug: "tom-mastrobuoni" },
+      { name: "Frank Klemens", role: "Managing Director, GFRP Fund", profileSlug: "frank-klemens" }
+    ],
+    timeline: [
+      { year: "2019", event: "New Protein Fund I LP is incorporated in Delaware and files its Form D with the SEC, reporting a first sale on 5 March 2019, with Big Idea Ventures GP I LLC as general partner and Andrew D. Ive as its managing member." },
+      { year: "2019", event: "Big Idea Ventures Asia Pte. Ltd. is incorporated in Singapore on 10 May 2019 (UEN 201915063E)." },
+      { year: "2019", event: "A first close of $50 million on the New Protein Fund is reported in May 2019, with backing from Temasek and Tyson Foods." },
+      { year: "2019", event: "Tom Mastrobuoni is appointed a venture partner in December 2019 and tasked with leading the firm's second fund." },
+      { year: "2022", event: "Frank Klemens is appointed Managing Director of the Generation Food Rural Partners fund (announced 15 February 2022)." },
+      { year: "2022", event: "Generation Food Rural Partners I, LP is formed in Delaware, with a first sale on 23 December 2022 per its SEC Form D." },
+      { year: "2023", event: "The Generation Food Rural Partners fund receives a Rural Business Investment Company licence from the USDA (announced 19 January 2023)." },
+      { year: "2023", event: "New Protein Fund II LP files its SEC Form D on 5 May 2023; a first close is announced on 23 May 2023 with a stated $75 million target." },
+      { year: "2023", event: "Generation Food Rural Partners launches its first portfolio company, TerraSafe Materials, and appoints Scott Bolin chief executive (announced 1 August 2023)." },
+      { year: "2023", event: "Generation Food Rural Partners launches Nexture Bio and appoints Teryn Wolfe chief executive (announced 5 December 2023)." },
+      { year: "2024", event: "New Protein Fund II LP is renamed Global Food Innovation Fund II LP: the amended Form D filed 21 February 2024 carries the new name on the same SEC filer, CIK 0001975927 and file number 021-480992, and reports $12,500,000 sold." },
+      { year: "2025", event: "Big Idea Ventures acquires the assets of Vevolution, an agrifoodtech investment platform, and states in the same release that it is \"managing over $150M and with over 150 portfolio companies\" (announced 20 May 2025)." },
+      { year: "2025", event: "The Generation Food Rural Partners I, LP Form D amendment of 14 February 2025 reports a $53,760,000 offering, fully sold, with Andrew D. Ive, Thomas A. Mastrobuoni and Frank Klemens listed as directors." },
+      { year: "2026", event: "The firm states in its own boilerplate of 22 January 2026 that it has made more than 160 investments across 30 countries and has teams in New York, Paris and Asia." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Bonfire Ventures",
+    sectors: ["B2B Software", "Enterprise Software", "SaaS", "AI"],
+    signatureExit: "MNTN (NYSE IPO, 22 May 2025)",
+    slug: "bonfire-ventures",
+    website: "https://www.bonfirevc.com",
+    short: "Bonfire",
+    founded: 2017,
+    hq: "Los Angeles, CA",
+    aum: "Over $1B (in assets including the funds at its predecessor firms, February 2025; Bonfire IV closed with $245M in commitments)",
+    thesis: "Bonfire Ventures is a seed-stage venture capital firm that invests only in B2B software, and says it backs founders building AI-native B2B software companies. The firm states that it leads nearly every round it does, invests $2M to $6M at seed, makes about ten to twelve new investments a year, and continues to invest as companies grow. Its team page describes an initial cheque of $2M to $4M as the first institutional cheque. It says it leads roughly 95 percent of its rounds with a board seat. It runs two fund families: the numbered Bonfire Ventures core seed funds and the Bonfire Ventures Select opportunity funds. It operates from Los Angeles.",
+    leadership: [
+      { name: "Mark Mullen", role: "Co-Founder & Managing Director", profileSlug: "mark-mullen" },
+      { name: "Jim Andelman", role: "Co-Founder & Managing Director", profileSlug: "jim-andelman" },
+      { name: "Brett Queener", role: "Managing Director", profileSlug: "brett-queener" },
+      { name: "Tyler Churchill", role: "Partner", profileSlug: "tyler-churchill" }
+    ],
+    timeline: [
+      { year: "2017", event: "Jim Andelman and Mark Mullen found Bonfire Ventures in Los Angeles, bringing together Andelman's Rincon Venture Partners and Mullen's Double M Partners after a run of co-investments." },
+      { year: "2018", event: "Bonfire Ventures closes its first core seed fund at $60M, reported by TechCrunch on 29 January 2018." },
+      { year: "2018", event: "Bonfire Ventures Select I, LP files its first Form D on 20 September 2018, establishing the firm's separate opportunity fund family." },
+      { year: "2022", event: "The firm announces on 31 May 2022 that it has raised its third core seed fund at $168M and its second opportunity fund, Bonfire Ventures Select II, at $63M, for a combined total of over $230M." },
+      { year: "2025", event: "MNTN, a company whose 2011 seed round Jim Andelman led at predecessor firm Rincon Venture Partners, goes public on the NYSE on 22 May 2025; Andelman resigned from the MNTN board on 23 February 2025 per the company's 2026 proxy statement." },
+      { year: "2025", event: "Bonfire Ventures IV, LP files a Form D on 19 February 2025 reporting $240.3M sold, and the firm announces Bonfire IV at $245M in commitments on 20 February 2025, stating it now manages over $1 billion in assets including predecessor-firm funds." },
+      { year: "2025", event: "Tyler Churchill is announced as the firm's newest Partner in a post dated 30 July 2025 that also marks the activation of Fund IV." }
+    ],
+    holdings: [
+      { name: "MNTN, Inc.", ticker: "MNTN", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Cultivation Capital",
+    sectors: ["Life Sciences", "Health Tech", "Software", "Technology", "Food & Agriculture", "Agritech", "Data", "Fintech"],
+    signatureExit: "Label Insight (acquired by NielsenIQ, 2021)",
+    slug: "cultivation-capital",
+    website: "https://www.cultivationcapital.com",
+    short: "Cultivation",
+    founded: 2012,
+    hq: "St. Louis, MO",
+    aum: null,
+    thesis: "Cultivation Capital is a venture capital firm founded in St. Louis in 2012 that says it invests in young companies whose ideas have potential to transform the way we live and work. It writes initial cheques of $100k to $3.5M from Series Seed through Series B. Rather than one blended fund it runs five named investment strategies, each with its own fund family and its own partners: Life Sciences and Health Tech (therapeutics, diagnostics, research tools and reagents, medical devices and healthcare information technology); Software and IT (early-stage technology companies with product, revenue and traction); Agriculture and Food Tech (crops, animal health, precision agriculture, sustainability, logistics and food ingredients); Midwest Seed Stage (fintech, healthcare and agtech companies active in St. Louis or the greater Midwest); and Geospatial Tech (early-stage companies using location intelligence). It has also run a separate Fintech Fund. The firm operates from St. Louis with additional offices in Greenville, Philadelphia and Chicago.",
+    leadership: [
+      { name: "Cliff Holekamp", role: "Cofounder & General Partner", profileSlug: "cliff-holekamp" },
+      { name: "Brian Matthews", role: "Cofounder & General Partner", profileSlug: "brian-matthews" },
+      { name: "Kyle Welborn", role: "Cofounder & General Partner", profileSlug: "kyle-welborn" }
+    ],
+    timeline: [
+      { year: "2012", event: "Cultivation Capital launches in St. Louis and holds its first investment committee meeting on 17 April 2012; Techli names Rick Holton Jr., Brian Matthews, Peter Esparrago and Jim McKelvey as general partners and Kyle Welborn and Israel Vicars as associate partners." },
+      { year: "2012", event: "Missouri Founders Technology Fund, LLC files a Form D from St. Louis on 25 July 2012 naming Brian Matthews, Peter Esparrage and Jim McKelvey as managers, with a first sale on 28 March 2012." },
+      { year: "2013", event: "Cultivation Capital Life Sciences Fund, LLC files its first Form D on 18 June 2013, opening the firm's life sciences fund family." },
+      { year: "2015", event: "Cultivation Capital Tech Fund II, LLC files its Form D on 28 January 2015." },
+      { year: "2016", event: "The firm opens two further fund families in the same year: Cultivation Capital Fintech Fund, L.P. (Form D filed 30 September 2016) and Cultivation Capital Life Sciences Fund II, LLC (Form D filed 1 November 2016)." },
+      { year: "2018", event: "Cultivation Capital Tech Fund III, L.P. files its Form D on 24 August 2018." },
+      { year: "2021", event: "Cultivation Capital Geospatial Tech Fund I, L.P. begins selling on 7 May 2021 and reports $22,650,000 sold against a $50,000,000 offering in its amended Form D of 29 April 2022." },
+      { year: "2021", event: "Cultivation Twain Seed Fund II, L.P. files a Form D on 9 August 2021 naming Cultivation Capital, LLC as management company and Twain Financial Partners as sub management company, a jointly branded vehicle." },
+      { year: "2022", event: "Cultivation Capital Tech Fund IV, LP begins selling on 16 February 2022 and reports $54,750,000 sold against a $100,000,000 offering in its amended Form D of 19 April 2023." },
+      { year: "2024", event: "Cultivation Capital Seed Fund III, L.P. begins selling on 9 May 2024 and reports $14,030,500 sold in its amended Form D of 8 May 2025; Cultivation Capital AgTech Fund IV, L.P. begins selling on 26 June 2024 with a $20,000,000 offering, reported by Global AgInvesting on 17 July 2024." },
+      { year: "2025", event: "Cultivation Capital Life Sciences Fund IV, LP begins selling on 4 April 2025 against a $40,000,000 offering, reporting $6,500,000 sold in its amended Form D of 26 March 2026." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "CyberAgent Capital",
+    sectors: ["AI", "B2B", "Ecommerce", "Media", "Fintech", "Future of Work", "Consumer", "Robotics"],
+    signatureExit: "note (Piece of Cake, Inc.) - IPO. Listed under the IPO heading on CyberAgent Capital's own profile page for Yuya Takegawa; no date is given there.",
+    slug: "cyberagent-capital",
+    website: "https://www.cyberagentcapital.com",
+    short: "CAC",
+    founded: 2006,
+    hq: "Tokyo, Japan",
+    aum: "Not publicly disclosed (no AUM figure is published; the firm's own page lists three managed funds totalling 160億円 of committed fund size - 50億円, 60億円 and 50億円 - which is fund size, not AUM)",
+    thesis: "CyberAgent Capital is a venture capital firm investing at seed and early stage. Its stated policy is to invest in startups led by entrepreneurs with strong leadership running internet related businesses with high potential that aim at global expansion (ポテンシャルの高いインターネット関連ビジネスでグローバル展開を志す、リーダーシップに秀でた起業家が率いるスタートアップへの投資を行います). It states it invests in principle as First Investor, providing early stage startups not only the capital needed to launch but practical knowledge and its global network. It runs a growth team offering technical, HR, PR, sales and marketing, and government relations support, and describes a global co-creation network across five country bases. Its own site states it supports seed and early stage startups across Japan, the United States, Indonesia, Vietnam and Thailand in collaboration with CyberAgent Group professionals. Its own portfolio page categorises companies as AI, B2B, E-Commerce, Entertainment, Fintech, HR, LifeStyle, Media, Robotics and Other, and by region as Africa, America, China, Japan, Korea and Southeast Asia. It runs a monthly pitch event, Monthly Pitch, held since 2016. CyberAgent Capital is a subsidiary of the listed company CyberAgent, Inc.; it is the general partner of the CA Startups Internet Fund partnerships and CyberAgent, Inc. is the limited partner.",
+    leadership: [
+      { name: "Hirofumi Kondo (近藤 裕文)", role: "代表取締役社長 (Representative Director and President); also 執行役員 of CyberAgent, Inc. with responsibility for the investment and incubation business" },
+      { name: "Yuya Takegawa (竹川 祐也)", role: "取締役 パートナー (Director, Partner)" },
+      { name: "Susumu Fujita (藤田 晋)", role: "取締役 (Director); 代表取締役会長 of the parent CyberAgent, Inc. Listed in CyberAgent Capital's 会社概要 but not on its team page." },
+      { name: "Hideaki Sekiguchi (関口 秀明)", role: "監査役 (Statutory Auditor). Listed in the 会社概要 but not on the team page." },
+      { name: "Rikuo Hayami (速水 陸生)", role: "執行役員 (Executive Officer) per the 会社概要; テクニカル・マネージャー (Technical Manager) on the team page." },
+      { name: "Daisuke Minamide (南出 大介)", role: "海外投資責任者・アメリカオフィス代表 (Head of International Investment and Representative of the US office)" }
+    ],
+    timeline: [
+      { year: "2006", event: "株式会社サイバーエージェント・ベンチャーズ (CyberAgent Ventures, Inc.) is established on 3 April 2006, the establishment date CyberAgent Capital still gives for itself in its own 会社概要." },
+      { year: "2019", event: "RENAME: the company changes its name from 株式会社サイバーエージェント・ベンチャーズ to 株式会社サイバーエージェント・キャピタル (CyberAgent Capital) with effect from 1 January 2019, announced on its own site on 7 January 2019. The announcement names Hirofumi Kondo as Representative Director and President at the time of the change." },
+      { year: "2021", event: "CA Startups Internet Fund 3 Investment Limited Partnership is announced on 19 April 2021 at 60億円 (JPY 6.0 billion); the same release describes CyberAgent Capital as operating in 8 countries and 10 cities, listing Beijing, Shanghai, Shenzhen, Taipei, Seoul, Ho Chi Minh City, Jakarta and Bangkok offices." },
+      { year: "2025", event: "CA Startups Internet Fund 4 Investment Limited Partnership is formed on 8 August 2025 with a commitment of 50億円（上限）, JPY 5.0 billion maximum, drawn by capital call. Parent CyberAgent, Inc. (TSE Prime, code 4751) disclosed it as a specified subsidiary change: CyberAgent, Inc. holds 99.8 per cent as limited partner and CyberAgent Capital holds 0.2 per cent as general partner." },
+      { year: "2026", event: "CyberAgent Capital's Monthly Pitch event passes its 100th edition, announced on 11 March 2026; the firm states 791 cumulative presenting companies (743 domestic, 48 overseas) which have raised 2,044億円 (JPY 204.4 billion) in total after presenting. That figure is capital raised by third party startups after pitching and is not a CyberAgent Capital fund or AUM figure." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Deciens Capital",
+    sectors: ["Fintech", "Financial Technology"],
+    signatureExit: null,
+    slug: "deciens-capital",
+    website: "https://deciens.com",
+    short: "Deciens",
+    founded: 2017,
+    hq: "Albuquerque, NM",
+    aum: "$290M (total assets under management, per the firm's own Fund III close announcement, 5 August 2025)",
+    thesis: "Deciens Capital describes itself on its own homepage as \"a venture capital firm that supports early-stage founders building the next generation of financial services\", and says it aims to be \"the first material capital invested into companies of consequence\". It states that it leads investments and has \"invested in over twenty early-stage fintech companies\" across industries and geographies. Its Fund III close announcement of 5 August 2025 says the firm expects to back 12 to 15 companies from that fund, and quotes Dan Kimerling saying the firm is \"investing early, going deep, and supporting founders with the insight only sustained focus makes possible\" and Ishan Sachdev saying \"we partner early, stay close, and operate as a true extension of the founding team\". The firm publishes no cheque size, ownership target or stage definition beyond early stage, so none is recorded here. It has never filed a Form 13F and its published portfolio is private fintech companies.",
+    leadership: [
+      { name: "Daniel Kimerling", role: "Managing Partner", profileSlug: "daniel-kimerling" },
+      { name: "Ishan Sachdev", role: "General Partner", profileSlug: "ishan-sachdev" },
+      { name: "Vishal Rana", role: "Partner, Portfolio & Operations", profileSlug: "vishal-rana" }
+    ],
+    timeline: [
+      { year: "2012", event: "A Delaware limited liability company named Deciens Capital, LLC files a Form D on 19 September 2012, reporting a first sale on 10 September 2012, an indefinite offering amount and $150,000 sold, and naming Daniel Kimerling and Zachary Townsend as Managing Members in San Francisco. The firm's own material dates its founding to 2017, so this earlier entity is recorded as a fact of the filing record rather than as the firm's founding." },
+      { year: "2017", event: "Deciens is founded, per the firm's own statement \"Since founding Deciens in 2017\" in its Team Spotlight post on Dan Kimerling and \"Founded in 2017\" in its Fund III close announcement." },
+      { year: "2018", event: "Deciens Capital Fund 2018, L.P. (Delaware) records its first sale on 16 February 2018. Its Form D/A of 8 March 2019 reports an $80,000,000 offering with $13,512,000 sold, naming Daniel Kimerling and Zachary Townsend as Managing Members of the general partner." },
+      { year: "2020", event: "Deciens Capital Fund 2020, L.P. (Delaware) records its first sale on 29 October 2020. Its Form D/A of 11 February 2022 reports a $97,090,000 offering with $87,090,000 sold, naming Daniel Kimerling alone as Managing Member of the general partner." },
+      { year: "2022", event: "Deciens Capital Fund 2023, L.P. and Deciens Capital Fund 2023-A, L.P. (both Delaware, year of incorporation 2022) each record a first sale on 16 December 2022. Their Form D/A filings of 7 June 2024 each report a $125,000,000 offering with $63,795,000 sold, naming Daniel Kimerling and Ishan Sachdev as Managing Members of the general partner." },
+      { year: "2025", event: "Deciens announces on 5 August 2025 that it has closed Fund III at $93.33M in limited partner commitments, \"bringing total assets under management to $290 million\", and says it expects to back 12 to 15 companies from the fund." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Eight Roads Ventures",
+    sectors: ["Consumer", "Health", "Enterprise", "Fintech", "Healthcare IT", "Healthcare", "Medtech", "Pharmaceuticals", "Therapeutics"],
+    signatureExit: "Ujala Cygnus (full exit on General Atlantic's acquisition of a significant majority stake, 2024)",
+    slug: "eight-roads-ventures",
+    website: "https://eightroads.com",
+    short: "Eight Roads",
+    founded: 1969,
+    hq: null,
+    aum: "$5B+ (the firm's own homepage figure, checked 2026; its About page states \"$8 billion of assets under management\" on the same date - the two first-party figures conflict and are not reconciled here, so the lower is taken)",
+    thesis: "Eight Roads is the investment arm associated with Fidelity rather than an independent partnership. Its own About page says \"Eight Roads has one of the largest venture platforms in the world, with $8 billion of assets under management and teams investing across Asia, Europe, Israel and the US\", that it has been investing since 1969 when it operated as Fidelity Ventures, and that \"our Fidelity backing allows us to be more focused and flexible when it comes to supporting our portfolio companies\". The Chinese-language version of the same page says the firm is backed by the Fidelity group. It states it partners with technology and healthcare founders. Its own portfolio filters are Consumer, Consumer Health, Enterprise, Fintech, Healthcare IT, Healthcare Services, Med Tech and Pharma & Therapeutics, and its own team and portfolio filters cover four investing regions: China, Europe & Israel, India and Japan. The US is covered by a separate sister fund, F-Prime Capital, which the Eight Roads site links to as \"our sister fund\". The firm's homepage states 350+ portfolio companies globally and 35+ IPOs.",
+    leadership: [
+      { name: "Alex Emery", role: "President" },
+      { name: "Davor Hebel", role: "Managing Partner, Head of Europe", profileSlug: "davor-hebel" },
+      { name: "David Milstein", role: "Managing Partner, Head of Japan", profileSlug: "david-milstein" },
+      { name: "Prem Pavoor", role: "Managing Partner, Head of India Ventures", profileSlug: "prem-pavoor" },
+      { name: "Shweta Bhatia", role: "Senior Partner, Head of India TCF Ventures", profileSlug: "shweta-bhatia" },
+      { name: "Rebecca Lin", role: "Senior Partner and Co-Head of Eight Roads Ventures China Healthcare", profileSlug: "rebecca-lin" },
+      { name: "Lei Shi", role: "Senior Partner and Co-Head of Eight Roads Ventures China Healthcare", profileSlug: "lei-shi" },
+      { name: "Daniel Auerbach", role: "Founding Partner Emeritus", profileSlug: "daniel-auerbach" }
+    ],
+    timeline: [
+      { year: "1969", event: "Fidelity Ventures, described by the firm's own Japanese-language About page as Fidelity's first principal investment business, is established; the English About page says the firm first started investing out of Boston in 1969 operating as Fidelity Ventures and backing MCI, Continental Cablevision and ATARI." },
+      { year: "1994", event: "Daniel Auerbach joins Fidelity International Limited as Senior Managing Director to establish Asian investing capabilities across China, India and Japan, the business the firm says is now Eight Roads Ventures." },
+      { year: "2015", event: "The Fidelity Growth Partners funds are rebranded Eight Roads Ventures; the firm's UK advisory company was renamed from FIL Capital Management (UK) Limited to Eight Roads Capital Advisors (UK) Limited on 18 June 2015 per Companies House." },
+      { year: "2024", event: "Ujala Cygnus partners with General Atlantic, which acquires a significant majority stake; Eight Roads' India Ventures team takes a full exit (firm announcement, 4 April 2024)." },
+      { year: "2024", event: "Bicara Therapeutics, backed by Eight Roads Ventures India, debuts on Nasdaq under BCAX (firm announcement, 27 September 2024)." },
+      { year: "2024", event: "Northern Arc Capital, in which Eight Roads Ventures India invested in 2016, lists in India (firm announcement, 27 September 2024)." },
+      { year: "2025", event: "Alex Emery is announced as President of Eight Roads on 13 January 2025, based in Hong Kong, overseeing the firm's global operations." },
+      { year: "2025", event: "Portfolio company Insilico Medicine lists on the Hong Kong Stock Exchange (firm news index, December 2025)." },
+      { year: "2026", event: "Portfolio company Shadowfax completes its IPO in India (firm news index, February 2026)." },
+      { year: "2026", event: "Portfolio company J-Pharma lists on the Tokyo Stock Exchange Growth market (firm news index, March 2026)." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Elevate Ventures",
+    sectors: ["Software", "Life Sciences", "Hard Tech", "Consumer Products"],
+    signatureExit: "Adranos (acquired by Anduril Industries, announced 25 June 2023)",
+    slug: "elevate-ventures",
+    website: "https://elevateventures.com",
+    short: "Elevate Ventures",
+    founded: 2011,
+    hq: "Indianapolis, IN",
+    aum: "$222M (published by the firm on its own team page, read 2026, in the words \"To date we have $222 million AUM\"; the page gives no as-of date)",
+    thesis: "Elevate Ventures describes itself as an Indiana-based nonprofit venture development organization that invests in high-potential, cross-sector innovation-driven companies at Pre-Seed, Seed, Series A and growth stages. It states cheque sizes of $20,000 to $2 million per round and up to $8 million per company, invested through convertible notes or equity, and says it excludes real estate, insurance, oil and gas exploration, SME businesses and professional services. It organises its work under three stated pillars - Community, Capital and Acceleration - and its own portfolio filters group companies as Software, Life Science, Product and HardTech. It operates under a professional services contract with the State of Indiana and the Indiana Economic Development Corporation, and alongside its own investing it manages state and federally funded programmes including the Indiana 21st Century Research and Technology Fund (21 Fund) and the Indiana Angel Network Fund vehicles capitalised by the federal State Small Business Credit Initiative.",
+    leadership: [
+      { name: "Toph Day", role: "CEO", profileSlug: "toph-day" },
+      { name: "Matt Tyner", role: "Managing Partner", profileSlug: "matt-tyner" },
+      { name: "Myles Grote", role: "Partner", profileSlug: "myles-grote" },
+      { name: "Jacob Schpok", role: "Partner and Head of Platform", profileSlug: "jacob-schpok" },
+      { name: "Chris Huxhold", role: "CFO" },
+      { name: "Phil Lodato", role: "General Counsel and Chief Compliance Officer" },
+      { name: "Muhammad Yasin", role: "CMO" },
+      { name: "Erica Schweyer", role: "Chief of Staff" }
+    ],
+    timeline: [
+      { year: "2011", event: "Elevate Ventures is established by Governor Mitch Daniels through a spin out from the Indiana Economic Development Corporation, according to Elevate Ventures' own team page." },
+      { year: "2011", event: "The IRS recognises Elevate Ventures Inc (EIN 27-4118692) as a 501(c)(3) tax-exempt organisation; the ruling date recorded in IRS data is September 2011." },
+      { year: "2020", event: "Elevate Ventures awards $164,000 in Elevate Nexus grants to 19 Indiana organisations on 25 August 2020, funded by the U.S. Economic Development Administration and the 21st Century Research and Technology Fund." },
+      { year: "2022", event: "The Indiana Angel Network Fund III investment policy is adopted on 30 June 2022 for a fund whose sole source of capital is the federal State Small Business Credit Initiative, managed by Elevate Ventures, Inc. through its subsidiary Elevate Advisors, LLC." },
+      { year: "2023", event: "On 19 December 2023 the IEDC announces a 40 percent increase in annual funding to Elevate Ventures and a $3 million pre-seed fund, and states Elevate Ventures will narrow its focus to making, maintaining and managing investments, realigning certain grant programmes to the Applied Research Institute." },
+      { year: "2023", event: "Anduril Industries acquires Adranos, a solid rocket motor manufacturer with an Indiana fuel-production facility that Elevate Ventures lists on its portfolio page as Acquired; the companies announced the deal on 25 June 2023." },
+      { year: "2024", event: "On 23 May 2024 the State of Indiana and Elevate Ventures announce a $100 million growth-stage fund anchored by a $25 million initial investment from Elevate Ventures, with the balance to be raised from private markets." },
+      { year: "2024", event: "Dr Ari Landon joins Elevate Ventures as Vice President of Life Sciences and Healthcare, announced 26 November 2024." },
+      { year: "2025", event: "Elevate Ventures Growth Fund I, L.P. files a Form D with the SEC on 22 January 2025 reporting a $200,000,000 total offering with $0 sold and a first sale yet to occur, with Christopher L. Day named as executive officer, director and promoter of the fund's general partner." },
+      { year: "2025", event: "The IEDC Board approves an amended Indiana Angel Network Fund III investment policy on 25 June 2025." },
+      { year: "2025", event: "On 3 October 2025 Elevate Ventures publishes that an FTI Consulting review commissioned by the IEDC found no evidence of illegal activity by Elevate Ventures." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Inflection Point Ventures",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "inflection-point-ventures",
+    website: "https://ipventures.in",
+    short: "IPV",
+    founded: 2018,
+    hq: "Gurgaon, India",
+    aum: null,
+    thesis: "Inflection Point Ventures describes itself on its own site as a startup investing platform that connects startups with angel investors, and as 'a 24000+ strong members angel investing firm which supports new-age entrepreneurs, providing them monetary & experiential capital by connecting them with a diverse group of investors'. It is an angel network and syndication platform rather than a conventional single-fund partnership: members invest alongside each other deal by deal, with a stated minimum of 'as low as INR 1 Lakh ($1333) per startup'. Its stated selection principle is 'We invest first in the Founder, later in the Startup'. The same founders separately run Physis Capital, described on its own site as 'A $50m VC Fund by the founders of Inflection Point Ventures', investing pre-Series A to Series B; Physis is a distinct vehicle and its fund size is not an IPV figure. IPV's head office is in Gurgaon with branch offices in Mumbai and Bengaluru, and the site's legal entity name is IPV Advisors Pvt. Ltd.",
+    leadership: [
+      { name: "Vinay Bansal", role: "Founder - IPV", profileSlug: "vinay-bansal" },
+      { name: "Ankur Mittal", role: "Co-Founder - IPV", profileSlug: "ankur-mittal" },
+      { name: "Mitesh Shah", role: "Co-Founder - IPV", profileSlug: "mitesh-shah" },
+      { name: "Vinod Bansal", role: "Co-Founder & CFO - IPV", profileSlug: "vinod-bansal" },
+      { name: "Ruchi Pandiya", role: "Chief Relationship Officer" },
+      { name: "Dimple Mirchandani", role: "Principal - FirstPort Ventures" },
+      { name: "Gaurav Nayak", role: "Sr. Vice President, BD & Human Resources" },
+      { name: "Minal Shah", role: "Principal South East Asia" },
+      { name: "Rushabh Desai", role: "Strategic Advisor, Asia Pacific" }
+    ],
+    timeline: [
+      { year: "2018", event: "Inflection Point Ventures is founded; the firm's own about page states 'Founded in 2018' and dates its first funded startup to July 2018." },
+      { year: "2019", event: "The firm's own about page dates its first exit to October 2019." },
+      { year: "2022", event: "The founders launch Physis Capital, a separate $50 million venture fund with a $25 million greenshoe targeting pre-Series A to Series B, reported by Entrackr on 21 March 2022 and described on the fund's own site as 'A $50m VC Fund by the founders of Inflection Point Ventures'." },
+      { year: "2022", event: "IPV announces 13 exits from 2021 at a stated IRR of 190 per cent, in a release dated 15 April 2022 on its own site." },
+      { year: "2025", event: "Co-founder Ankur Mittal tells Business Standard on 12 September 2025 that IPV had made 33 investments so far in calendar 2025 and expected around 50 for the year, and that its portfolio then covered over 250 startups." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "K2 Global",
+    sectors: ["Artificial Intelligence", "Robotics", "Defense Tech", "Semiconductors", "Infrastructure", "Healthcare", "Software"],
+    signatureExit: "Spotify (public listing, 2018)",
+    slug: "k2-global",
+    website: "https://k2global.co",
+    short: "K2 Global",
+    founded: 2015,
+    hq: "Singapore",
+    aum: null,
+    thesis: "K2 Global describes itself as a venture capital firm focused on private companies, investing from seed to growth in Internet, software and technology-enabled companies, and says it seeks to partner with founders to build long term economic value through creative software. In its 11 August 2026 announcement of $200 million in capital commitments it states a frontier-technology focus: backing founders across artificial intelligence, autonomy, defense systems, robotics, semiconductors, compute infrastructure and healthcare, with the K2 Global AI Fund making early-stage investments and building high-conviction, concentrated positions in companies spanning large language models, autonomous systems, humanoid robotics, defense technology, compute infrastructure, brain-computer interfaces, semiconductors and preventive healthcare. The firm was founded in Singapore and Silicon Valley in 2015 and describes a cross-border investor base: it says its limited partners are leaders in industry in Singapore, the United States, India, Indonesia, Japan, Hong Kong, Thailand, Malaysia and Australia, and that its investor and partner base includes entrepreneurs, family offices, foundations, institutional investors, sovereign wealth funds, banks and strategic operators across the United States, Asia, Europe, Latin America and the Middle East. It states that it sees its world through the IPO journey of its portfolio companies.",
+    leadership: [
+      { name: "Ozi Amanat", role: "Founder", profileSlug: "ozi-amanat" }
+    ],
+    timeline: [
+      { year: "2015", event: "K2 Global is founded in Singapore and Silicon Valley, per the firm's About us page; Ozi Amanat launches the firm to invest in private technology companies, per its About Team page." },
+      { year: "2015", event: "K2 GLOBAL, L.P., a Cayman Islands limited partnership with year of incorporation 2015 and a Saratoga, California business address, files a Form D with the SEC on 11 August 2015 as a venture capital pooled investment fund; the filing is signed by Minal Hasan as Director." },
+      { year: "2017", event: "K2 Global is reported on 24 February 2017 (e27, via Yahoo News Singapore) to have closed a US$183 million fund, with Ozi Amanat and Minal Hasan both named as founders." },
+      { year: "2018", event: "Spotify's public listing; DealStreetAsia reports on 4 April 2018 that Ozi Amanat said the listing gave K2 well over 300 per cent returns on the investment and would help return capital to K2's LPs." },
+      { year: "2025", event: "K2 Global XI LLC, a Delaware entity with a Singapore business address at 16 Raffles Quay, files a Form D with the SEC on 31 March 2025 naming Ozi Amanat as Director and sole related person." },
+      { year: "2026", event: "On 11 August 2026 K2 Global announces $200 million in capital commitments for the K2 Global AI Fund, describing Ozi Amanat as a solo venture capitalist and Founder of K2 Global." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Maven Capital Partners",
+    sectors: ["Software", "Technology", "Cybersecurity", "Financial Technology", "Manufacturing", "B2B", "Media", "Healthcare", "Life Sciences", "Consumer", "Real Estate"],
+    signatureExit: "McKenzie Intelligence Services (sale to Verisk, announced 29 July 2026; 3.0x money multiple for the Maven VCTs)",
+    slug: "maven-capital-partners",
+    website: "https://www.mavencp.com",
+    short: "Maven",
+    founded: 2009,
+    hq: "Glasgow, United Kingdom",
+    aum: null,
+    thesis: "Maven Capital Partners UK LLP is a UK private equity and property manager formed in 2009 by a management buyout of the private equity business of Aberdeen Asset Management PLC. It describes itself as \"a leading private equity and property manager\" and states it invests up to GBP 20 million of equity in a single company, backing management buyouts, growth capital, buy-and-build projects, equity value release and pre-IPO financing, as well as property development funding. It runs several distinct kinds of vehicle rather than one fund family. On the retail and tax-efficient side it manages five VCTs (Maven Income and Growth VCT, Maven Income and Growth VCT 3, Maven Income and Growth VCT 4, Maven Income and Growth VCT 5 and Maven Renovar VCT), an EIS offering, and the Maven Investor Partners deal-by-deal co-investment network for private equity and property. On the institutional side it manages the Maven UK Regional Buyout Fund and Maven UK Regional Buyout Fund II, which target businesses with an enterprise value between GBP 10 million and GBP 50 million. It also manages publicly backed regional mandates on behalf of partners such as the British Business Bank: Finance Durham Fund, IFS Maven Equity Finance (Investment Fund for Scotland), MEIF II Debt Finance East and South East Midlands, NPIF II Maven Equity Finance (Northern Powerhouse Investment Fund II), SWIF Maven Equity Finance (South West Investment Fund) and the North East Development Capital Fund. Maven says it works from a network of regional offices and its site lists offices in Aberdeen, Birmingham, Bristol, Durham, Edinburgh, Glasgow, Lancashire, Liverpool, London, Manchester, Newcastle, Nottingham and Reading, with Glasgow as its headquarters. It is authorised and regulated by the Financial Conduct Authority and is registered in England and Wales as OC339387. Since 2021 it has been part of the Mattioli Woods group.",
+    leadership: [
+      { name: "Ewan MacKinnon", role: "Managing Partner", profileSlug: "ewan-mackinnon" },
+      { name: "Bill Nixon", role: "Chair", profileSlug: "bill-nixon" },
+      { name: "David McCrory", role: "Operations Partner", profileSlug: "david-mccrory" },
+      { name: "Claire Speirs", role: "Compliance Partner", profileSlug: "claire-speirs" },
+      { name: "Tom Mullard", role: "Strategy Partner", profileSlug: "tom-mullard" }
+    ],
+    timeline: [
+      { year: "2009", event: "Maven is established following a management buyout of the private equity business of Aberdeen Asset Management PLC, led by Bill Nixon." },
+      { year: "2021", event: "Mattioli Woods completes the acquisition of Maven Capital Partners UK LLP on 1 July 2021; Companies House records Mattioli Woods Limited as a person with significant control of the LLP from 30 June 2021, and Bill Nixon's own significant-control entry ceases on the same date." },
+      { year: "2024", event: "Mattioli Woods shareholders approve the acquisition of the group by Pollen Street Capital on 25 April 2024; Mattioli Woods' own history page records that it was acquired by Pollen Street Capital in 2024 and delisted from AIM." },
+      { year: "2026", event: "Bill Nixon moves from Managing Partner to Chair in early 2026 after 17 years as Managing Partner, and Ewan MacKinnon is Managing Partner." },
+      { year: "2026", event: "Maven exits McKenzie Intelligence Services following its acquisition by Verisk, delivering a 3.0x money multiple for the Maven VCTs (announced 29 July 2026)." },
+      { year: "2026", event: "Maven exits WaterBear Education, returning a 3.0x money multiple to the Maven Income and Growth VCTs and 1.6x to NPIF Maven Equity Finance including deferred consideration (announced 19 August 2026)." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Plum Ventures",
+    sectors: ["Clean Energy", "Semiconductors", "Defense Tech", "Technology", "Advanced Manufacturing", "Aerospace"],
+    signatureExit: null,
+    slug: "plum-ventures",
+    website: "https://www.plumventures.cn",
+    short: "Plum Ventures",
+    founded: 2014,
+    hq: null,
+    aum: "US$1.5B+ (approx.; the firm's own homepage states approximately RMB 10 billion across its RMB funds plus a US$100 million fund, undated, read 2026 - no USD total is published by the firm)",
+    thesis: "Plum Ventures (梅花创投) describes itself on its own site as one of China's most active early-stage investment institutions, established in 2014, whose aim is to help entrepreneurs with 心力 (mental strength) and 自适力 (adaptability) become entrepreneurs. The site states the firm manages approximately RMB 10 billion in RMB funds and a USD 100 million fund. Its stated focus is summarised by the firm as 新、半、军、数、智、航, which the site expands as new energy, semiconductors, defence industry, digitalisation, intelligent manufacturing and commercial aerospace. The site states the firm has covered more than 600 companies and that 13 portfolio companies have completed listings.",
+    leadership: [
+      { name: "Wu Shichun (吴世春)", role: "创始合伙人 (Founding Partner)" }
+    ],
+    timeline: [
+      { year: "2014", event: "The firm's own site states that Plum Ventures (梅花创投) was established in 2014." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Salica Investments",
+    sectors: ["Software", "Hardware", "Advanced Manufacturing", "Deep Tech"],
+    signatureExit: null,
+    slug: "salica-investments",
+    website: "https://salicainvestments.com",
+    short: "Salica",
+    founded: 2013,
+    hq: "London, United Kingdom",
+    aum: null,
+    thesis: "Salica Investments is the renamed Hambro Perks: Companies House records SALICA INVESTMENTS LIMITED, company 08760647, as having been HAMBRO PERKS LTD from its incorporation on 4 November 2013 until 20 June 2024. The firm's 1 October 2025 announcement of its Growth Debt Fund II first close, carried by the British Business Bank, describes Salica as \"a UK-focused investment firm\" that manages \"a unique set of private market funds investing in equity and debt across multiple sectors and stages, predominantly across the UK\". It runs several distinct and separately named vehicles rather than one strategy: Salica Growth Debt Fund I and Fund II, the second of which held a GBP 150m first close on 1 October 2025 and provides senior secured loans to high-growth UK companies in software, IP-rich hardware and advanced manufacturing, with Barclays as cornerstone investor announced on 12 November 2025; a venture debt practice led by a Venture Debt Partner; Salica Oryx Fund LP, a Qualified Investor Fund registered in Abu Dhabi Global Market on 24 September 2020 under fund manager Salica Ventures Limited; the Access Fund II and Access Fund III venture secondaries vehicles, into which Connection Capital clients invested in August 2021 and September 2022; and Special Opportunities Fund I, a June 2021 secondaries vehicle acquiring a sixteen-company life science and technology portfolio divested by Invesco. The sectors field lists only the three sectors the firm names for its growth debt mandate, because that is the only stage-and-sector statement in the firm's own words that could be retrieved; the firm describes itself overall as multi-sector and multi-stage. The named vehicles are listed rather than blended, and their sizes are fund sizes, not assets under management.",
+    leadership: [
+      { name: "Andrew Wyke", role: "LLP Designated Member, Salica Investments Advisory LLP; described by Private Equity Wire in June 2024 as leading the firm", profileSlug: "andrew-wyke" },
+      { name: "Andrew Noyons", role: "Managing Partner", profileSlug: "andrew-noyons" },
+      { name: "Tom Bradley", role: "Managing Partner", profileSlug: "tom-bradley" },
+      { name: "David Hayers", role: "Head of Growth Debt", profileSlug: "david-hayers" },
+      { name: "Stephen Fahy", role: "Venture Debt Partner", profileSlug: "stephen-fahy" },
+      { name: "John Foley", role: "Director, SALICA INVESTMENTS LIMITED, appointed 19 September 2024 (Companies House)" }
+    ],
+    timeline: [
+      { year: "2013", event: "HAMBRO PERKS LTD is incorporated in England on 4 November 2013 (company 08760647), the entity that is now SALICA INVESTMENTS LIMITED." },
+      { year: "2020", event: "Salica Oryx Fund LP is registered as a Qualified Investor Fund at Abu Dhabi Global Market on 24 September 2020, fund manager Salica Ventures Limited (ADGM public register, F-0029)." },
+      { year: "2021", event: "Special Opportunities Fund I, a secondaries vehicle acquiring a sixteen-company life science and technology portfolio divested by Invesco, takes Connection Capital client money in June 2021." },
+      { year: "2021", event: "Access Fund II, a venture secondaries vehicle, takes Connection Capital client money in August 2021." },
+      { year: "2022", event: "Access Fund III, a venture secondaries vehicle, takes Connection Capital client money in September 2022." },
+      { year: "2023", event: "Co-founder Dominic Perks resigns as a director of the firm on 14 April 2023 (Companies House) and as a designated member of the advisory LLP on the same date." },
+      { year: "2024", event: "The firm is renamed: HAMBRO PERKS LTD becomes SALICA INVESTMENTS LIMITED on 20 June 2024 per Companies House; Private Equity Wire reported the coming rebrand on 17 June 2024." },
+      { year: "2025", event: "Salica Growth Debt Fund II holds a GBP 150m first close on 1 October 2025." },
+      { year: "2025", event: "Barclays is announced as cornerstone investor in the GBP 150m Growth Debt Fund II (12 November 2025)." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Samsara BioCapital",
+    sectors: ["Healthcare", "Biotech", "Therapeutics", "Life Sciences"],
+    signatureExit: "Chinook Therapeutics (acquired by Novartis for $3.5 billion, per Samsara BioCapital's own team page; Chinook is listed on the firm's portfolio page)",
+    slug: "samsara-biocapital",
+    website: "https://www.samsaracap.com",
+    short: "Samsara BioCapital",
+    founded: 2017,
+    hq: "Palo Alto, CA",
+    aum: null,
+    thesis: "Samsara BioCapital is a healthcare investment manager in Palo Alto, California, whose stated purpose on its own homepage is \"Investing to create transformative therapeutics for patients.\" Its Culture page states that the firm takes \"a long term, patient, company-build perspective\" and that it will \"provide capital through a company's full risk cycle and over many years, whether the company is private or public\", that its people actively engage as board members, that it uses data-driven decision making, and that unmet medical need and patient benefit are its guiding principles. The firm accordingly runs both private and public-company strategies: it is an SEC-registered investment adviser (SEC number 801-113741) and files quarterly Form 13F-HR reports on its US-listed long positions, and its investment team includes a Principal, Public Investing. The homepage states that the firm brings together \"scientists, physicians, drug developers, and business leaders with over 500 years of combined experience to back the next generation of therapeutic breakthroughs.\" The firm publishes no stage, cheque-size or geographic mandate of its own, so none is recorded here.",
+    leadership: [
+      { name: "Srini Akkaraju", role: "Founder & Managing Partner", profileSlug: "srini-akkaraju" },
+      { name: "Mike Dybbs", role: "Partner", profileSlug: "mike-dybbs" },
+      { name: "Abe Bassan", role: "Partner", profileSlug: "abe-bassan" }
+    ],
+    timeline: [
+      { year: "2017", event: "Samsara BioCapital, L.P. is organised in Delaware and files its first Form D on 21 March 2017 for a $300,000,000 venture capital fund offering, naming Samsara BioCapital GP, LLC, Srinivas Akkaraju and Michael Dybbs as related persons; the filing records the first sale as yet to occur." },
+      { year: "2017", event: "First sale in the fund occurs on 22 March 2017, per the later Form D/A." },
+      { year: "2018", event: "Form D/A filed 20 April 2018 reports the Samsara BioCapital, L.P. offering at $310,090,000 with $310,090,000 sold and nothing remaining. This is a fund close, not an AUM figure." },
+      { year: "2019", event: "The firm files its first Form 13F-HR on 14 February 2019, covering the quarter ended 31 December 2018, beginning its public-equity reporting history." },
+      { year: "2020", event: "A further Form D is filed on 31 December 2020 under the same Samsara BioCapital, L.P. entity for a $500,000,000 offering, recorded with no sales at the time of filing." },
+      { year: "2022", event: "Scholar Rock announces on 26 July 2022 that Srinivas Akkaraju, M.D., Ph.D. has joined its Board of Directors." },
+      { year: "2026", event: "Form 13F-HR for the quarter ended 30 June 2026, filed 14 August 2026, reports 24 positions with a total value of $1,217,462,122." }
+    ],
+    holdings: [
+      { name: "ABIVAX SA (sponsored ADS)", ticker: "ABVX", historicalPrice: null, price: null },
+      { name: "Agomab Therapeutics NV (sponsored ADS)", ticker: "AGMB", historicalPrice: null, price: null },
+      { name: "Alamar Biosciences, Inc.", ticker: "ALMR", historicalPrice: null, price: null },
+      { name: "Alumis Inc.", ticker: "ALMS", historicalPrice: null, price: null },
+      { name: "Aquestive Therapeutics, Inc.", ticker: "AQST", historicalPrice: null, price: null },
+      { name: "Artiva Biotherapeutics, Inc.", ticker: "ARTV", historicalPrice: null, price: null },
+      { name: "Coherus Oncology, Inc.", ticker: "CHRS", historicalPrice: null, price: null },
+      { name: "Eloxx Pharmaceuticals, Inc.", ticker: "ELOX", historicalPrice: null, price: null },
+      { name: "Gossamer Bio, Inc.", ticker: "GOSS", historicalPrice: null, price: null },
+      { name: "Inventiva S.A. (ADS)", ticker: "IVA", historicalPrice: null, price: null },
+      { name: "Jade Biosciences, Inc.", ticker: "JBIO", historicalPrice: null, price: null },
+      { name: "Kalaris Therapeutics, Inc.", ticker: "KLRS", historicalPrice: null, price: null },
+      { name: "Mineralys Therapeutics, Inc.", ticker: "MLYS", historicalPrice: null, price: null },
+      { name: "Neurogene Inc.", ticker: "NGNE", historicalPrice: null, price: null },
+      { name: "Nkarta, Inc.", ticker: "NKTX", historicalPrice: null, price: null },
+      { name: "Parabilis Medicines, Inc.", ticker: "PBLS", historicalPrice: null, price: null },
+      { name: "Rani Therapeutics Holdings, Inc. (Class A)", ticker: "RANI", historicalPrice: null, price: null },
+      { name: "Scholar Rock Holding Corp", ticker: "SRRK", historicalPrice: null, price: null },
+      { name: "Septerna, Inc.", ticker: "SEPN", historicalPrice: null, price: null },
+      { name: "SpyGlass Pharma, Inc.", ticker: "SGP", historicalPrice: null, price: null },
+      { name: "Sutro Biopharma, Inc.", ticker: "STRO", historicalPrice: null, price: null },
+      { name: "Upstream Bio, Inc.", ticker: "UPB", historicalPrice: null, price: null },
+      { name: "vTv Therapeutics Inc. (Class A)", ticker: "VTVT", historicalPrice: null, price: null },
+      { name: "X4 Pharmaceuticals, Inc.", ticker: "XFOR", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "SBXi",
+    sectors: ["Pre-Seed", "Sector-Agnostic"],
+    signatureExit: "Farmwise Labs (labelled \"Acquired\" on SBXi's own homepage portfolio; SBXi does not state an acquirer or a date)",
+    slug: "sbxi",
+    website: "https://www.sbxi.com",
+    short: "SBXi",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "SBXi is an early-stage investor that states it invests exclusively in founders who graduated from MIT, and that its fund is open to graduates of any MIT degree program. It states its mission is to empower MIT alumni founders with resources and capital to create large, impactful companies across any sector, and it does not publish a sector focus. It states it writes $10K-$100K checks on SAFEs and $100K-$1M checks when there is a qualifying term-sheet it can match, matching the same terms as the lead investor in a priced round. It states it is jointly backed by eight firms - Accel, Polaris Partners, GETTYLAB, General Catalyst, Pillar, Danaher, Underscore VC and Glasswing Ventures - which it calls the eight sponsoring funds, and that pitches are shared only with those sponsoring funds and their voting partners. Its stated process is one application and one recorded pitch followed by a decision, with SAFE notes evaluated in as little as 7 days and priced rounds taking on average a couple of weeks, and it states that every eligible company that applies receives a decision.",
+    leadership: [
+      { name: "Robert Harrington", role: "Director", profileSlug: "robert-harrington" }
+    ],
+    timeline: [
+      { year: "2023", event: "Robert Harrington joins SBXi as Director of Operations, per the firm's About page." },
+      { year: "2023", event: "SBXi publishes the first issue of its newsletter, the SBXi Newsletter, on 11 August 2023." },
+      { year: "2023", event: "SBXi's 1 November 2023 newsletter update lists 77 pre-seed and seed investments made by SBXi, alongside term-sheet matches in Channing St. Copper Company and GATACA." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Second Century Ventures",
+    sectors: ["Proptech", "Real Estate", "Artificial Intelligence", "Fintech", "Insurtech"],
+    signatureExit: null,
+    slug: "second-century-ventures",
+    website: "https://www.scv.vc",
+    short: "SCV",
+    founded: null,
+    hq: "Chicago, IL",
+    aum: null,
+    thesis: "Second Century Ventures is the strategic investment arm of the National Association of REALTORS and, per NAR's own technology page, a wholly owned subsidiary of the association operated by NAR's Strategic Business, Innovation and Technology group. It describes itself as an early to mid-stage technology fund investing across real estate, financial, insurance and home tech verticals, and names its stated focus areas as AI and real estate, digital platforms and marketplaces, fintech and insurtech applied to real estate, and technologies with utility across multiple verticals; its About page groups these as Digital Experience, Artificial Intelligence and Security. It states that its portfolio companies gain direct access to NAR's membership channels, Realtor Benefits, education programmes and the Realtors Property Resource. Alongside investing it created and operates REACH, a technology scale-up programme, which runs in eight named regional programmes: US Residential, US Commercial, Canada, Latin America, United Kingdom, Israel, Australia and New Zealand, and the Middle East. REACH is a programme, not a fund, and selection into a REACH cohort is not stated by the firm to be an investment.",
+    leadership: [
+      { name: "Tyler Thompson", role: "Managing Partner", profileSlug: "tyler-thompson" },
+      { name: "Dave Garland", role: "Managing Partner", profileSlug: "dave-garland" },
+      { name: "Mark Birschbach", role: "Managing Director", profileSlug: "mark-birschbach" }
+    ],
+    timeline: [
+      { year: "2013", event: "Second Century Ventures creates REACH, its technology scale-up programme; the SCV homepage states \"In 2013, SCV created REACH\" and NAR's REACH page dates the programme to 2013." },
+      { year: "2019", event: "REACH expands beyond US residential to add a US commercial programme and begins its international expansion, per SCV's 14 May 2025 announcement, which states \"Since 2019, REACH has expanded to offer a program focused on the U.S. commercial market, and six global programs\"." },
+      { year: "2022", event: "REACH Labs launches for REALTOR associations and MLS teams, per NAR's REACH page." },
+      { year: "2022", event: "On 6 December 2022 Second Century Ventures announces that Ashley Stinton has been appointed executive director of the NAR REACH programme." },
+      { year: "2024", event: "Second Century Ventures Fund I, LP records its date of first sale as 17 July 2024 and files a SEC Form D on 31 July 2024 reporting a $300,000,000 total offering with $75,000,000 sold; the Delaware limited partnership gives NAR's 430 N Michigan Avenue, Chicago address and names Dave Garland, Mark Birschbach and Tyler Thompson as Managing Directors of the general partner, Second Century Ventures GP I, LLC." },
+      { year: "2026", event: "REACH Middle East launches in Dubai on 12 February 2026 with the Dubai Land Department, coinciding with Dubai's PropTech Connect 2026." },
+      { year: "2026", event: "On 11 June 2026 Second Century Ventures and the Confederacion Inmobiliaria Latinoamericana announce a strategic partnership to accelerate proptech adoption across Latin American real estate." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Seventure Partners",
+    sectors: ["Life Sciences", "Biotech", "Foodtech", "Medical Devices", "Digital Health", "Pharmaceuticals", "Synthetic Biology", "Sustainability", "Technology", "Fintech", "Retail", "Hardware", "Consumer"],
+    signatureExit: "Santaris (sold to Roche for USD 450 million, August 2014)",
+    slug: "seventure-partners",
+    website: "https://www.seventure.fr",
+    short: "Seventure",
+    founded: 1997,
+    hq: "Paris, France",
+    aum: "€779M (under management as at 30 June 2026, per the Natixis Investment Managers affiliate page; Seventure's own About page states 1 Md EUR under management as at 30 June 2024)",
+    thesis: "Seventure Partners is a French venture capital manager that finances innovative companies \"depuis l'amorcage jusqu'au capital-developpement\" (from seed through development capital). Its stated expertise is organised in two departments, Sciences de la vie (life sciences) and Technologies digitales (digital technologies), with a third Sport & bien-etre theme. Life sciences sub-sectors it names are microbiome, nutrition, foodtech and wellbeing, medical devices, digital and connected health, pharmaceuticals, industrial biotechnology, the blue economy and animal health and nutrition. Digital sub-sectors it names are fintech, retailtech, hardware and telecom and other innovative digital solutions. The firm says it looks for companies addressing a significant market and holding a technology or know-how that gives a durable competitive advantage, that it stays in the capital for periods that can exceed 10 years, and that it generally takes a seat on the board or supervisory board of the companies it finances. Its shareholder engagement policy states that Seventure generally asks for a seat on governance bodies of unlisted holdings depending on the weight of the investment, the stage and the geography. It runs several distinct fund ranges rather than a single flagship series: Health For Life Capital and Health for Life Capital II (microbiome, health and nutrition), Digital Opportunities Fund (fintech, insurtech, regtech, retailtech in France and Germany), Sport & Performance Capital (sport and wellbeing), Quadrivium 1 Seed Fund (seed, from twelve academic partners), the AVF fund (animal health, feed and nutrition, cornerstoned by Adisseo), Blue Forward Fund (blue economy) and retail FCPI vehicles. It is headquartered in Paris; its Venture Partners are described on the team pages as based in Geneva, London, Munich, Basel, Berlin and Paris.",
+    leadership: [
+      { name: "Isabelle de Cremoux", role: "CEO and Managing Partner (Presidente du directoire et Directrice du departement Sciences de la vie)", profileSlug: "isabelle-de-cremoux" },
+      { name: "Emmanuel Fiessinger", role: "Senior Partner in the Lifesciences team", profileSlug: "emmanuel-fiessinger" },
+      { name: "David Manjarres", role: "Senior Partner - head of Digital Technologies team", profileSlug: "david-manjarres" },
+      { name: "Bruno Rivet", role: "Senior Partner in the Digital Technologies/Sport", profileSlug: "bruno-rivet" },
+      { name: "Pierre Aumeunier", role: "Chief Financial Officer" }
+    ],
+    timeline: [
+      { year: "1997", event: "Seventure Partners is created (\"Creee en 1997\", per the firm's own Notre histoire page)." },
+      { year: "2001", event: "Isabelle de Cremoux joins Seventure to establish the Life Sciences division." },
+      { year: "2012", event: "Seventure Partners acquires Masseran Gestion in July 2012; David Manjarres and Thibault Canton join the firm as part of that acquisition." },
+      { year: "2013", event: "The Fonds d'amorcage Quadrivium 1 seed fund is created in November 2013 (EUR 56m), investing alongside twelve academic partners." },
+      { year: "2014", event: "Santaris, a Seventure portfolio company, is sold to Roche for USD 450 million in August 2014." },
+      { year: "2019", event: "Health for Life Capital II announces its first close on 5 March 2019." },
+      { year: "2019", event: "Sport & Performance Capital announces its first close on 11 July 2019." },
+      { year: "2021", event: "MaaT Pharma, a Seventure portfolio company, lists on the Euronext Paris regulated market on 8 November 2021 (ticker MAAT)." },
+      { year: "2022", event: "Seventure Partners announces the first close of Blue Forward Fund on 11 February 2022, a blue-economy fund with a EUR 130 million target backed by the Banque Populaire banks." },
+      { year: "2026", event: "Seventure Partners takes a stake in the French sailboat refurbishment company Reboat through the Blue Forward Fund (announced 23 July 2026)." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Third Derivative",
+    sectors: ["Climate Technology", "Clean Energy", "Energy", "Proptech", "Transportation", "Industrial Tech", "Carbon Removal", "Agriculture"],
+    signatureExit: null,
+    slug: "third-derivative",
+    website: "https://www.third-derivative.org",
+    short: "D3",
+    founded: 2020,
+    hq: null,
+    aum: null,
+    thesis: "Third Derivative (D3) is a climate tech accelerator programme, not a venture fund. Its own About page states it was \"Founded by RMI and New Energy Nexus\" and that it \"launched in December 2020 with 46 companies\"; RMI's own launch announcement of 4 June 2020 described it as \"a new joint venture called Third Derivative (or D3, for short)\". RMI's current boilerplate describes it simply as \"RMI's global climate tech accelerator\". The programme runs a flexible, remote, roughly 18-month accelerator with two general cohorts a year plus focused programmes (Industrial Innovation cohorts for steel, cement and chemicals; First Gigaton Captured for carbon dioxide removal; the Clean Mobile Power Initiative; and cooling), and states it connects startups to corporate partners, investor partners and RMI's technical network rather than acting as the primary source of capital itself. RMI's 2020 launch announcement described an optional $100,000 seed investment made with investor partners providing the capital. An affiliated investment vehicle does exist: RMI's staff bio for Pilar Carvajo Lucena states that she oversees \"the investments of the D3 Accelerator Funds\", and D3's Head of Operations bio lists \"investment fund operations\" among his responsibilities. No size, vintage or assets-under-management figure is published for those funds. D3 says its portfolio numbered 286 climate tech startups from 27 countries as of August 2025 and states that those companies have raised over $3.7 billion since joining; that is capital raised by portfolio companies, not capital managed by D3.",
+    leadership: [
+      { name: "Rushad Nanavatty", role: "Managing Director", profileSlug: "rushad-nanavatty" },
+      { name: "Roy Torbert", role: "Head of Programs", profileSlug: "roy-torbert" },
+      { name: "Chetan Krishna", role: "Head of Research & Diligence", profileSlug: "chetan-krishna" },
+      { name: "Claude Rosen", role: "Head of Operations", profileSlug: "claude-rosen" },
+      { name: "Pilar Carvajo Lucena", role: "Investments & Fund Partnerships Principal", profileSlug: "pilar-carvajo-lucena" },
+      { name: "Carie Davis", role: "Partnerships Principal", profileSlug: "carie-davis" }
+    ],
+    timeline: [
+      { year: "2020", event: "RMI announces Third Derivative (D3) on 4 June 2020 as a joint venture with New Energy Nexus, describing a soft launch on 19 May 2020 and five committed investor partners representing over $300 million in capital." },
+      { year: "2020", event: "D3's own About page states the programme launched in December 2020 with 46 companies." },
+      { year: "2022", event: "Brant Richards, who had joined D3 as its first chief operating officer in early 2021, is promoted to managing director (announced 27 April 2022)." },
+      { year: "2022", event: "RMI appoints Rushad Nanavatty managing director of Third Derivative (announced 22 November 2022)." },
+      { year: "2023", event: "Netflix and The Walt Disney Company launch the Clean Mobile Power Initiative with RMI and Third Derivative (announced 22 June 2023)." },
+      { year: "2024", event: "Third Derivative and RMI launch Industrial Innovation cohorts for steel, cement and chemicals (announced 26 August 2024)." },
+      { year: "2024", event: "RMI, Deep Science Ventures and Third Derivative launch Mark1, a project-development entity for first-of-a-kind climate tech projects, with Builders Vision as founding partner (announced 17 September 2024)." },
+      { year: "2025", event: "D3 states its portfolio has reached 286 climate tech startups from 27 countries, which have raised over $3.7 billion since joining (announced 26 August 2025)." },
+      { year: "2025", event: "RMI and Third Derivative announce a cooling innovation effort seeking passive daytime radiative cooling manufacturers (announced 17 November 2025)." },
+      { year: "2026", event: "Third Derivative announces a 26-startup cohort focused on hard tech and deployment (announced 20 May 2026)." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "UTEC - The University of Tokyo Edge Capital Partners",
+    sectors: ["Life Sciences", "Healthcare", "Technology", "Deep Tech", "Hardware"],
+    signatureExit: "TIER IV, Inc. (IPO on the Tokyo Stock Exchange Growth Market, 22 July 2026, code 593A)",
+    slug: "utec",
+    website: "https://www.ut-ec.co.jp",
+    short: "UTEC",
+    founded: 2004,
+    hq: "Tokyo, Japan",
+    aum: "1,300億円 (approx. JPY 130bn; UTEC's own cumulative total across six flagship funds as of June 2026, which is cumulative and not AUM. The most recent, UTEC6, is approximately 460.8億円)",
+    thesis: "UTEC is a seed and early stage venture capital firm investing on the basis of science and technology. Its stated policy is to invest in seed and early stage startups including before incorporation (会社設立前を含むシード/アーリー段階のスタートアップ), and to follow on into middle and later stages. It states it acts as lead or co-lead investor as standard practice, with initial cheques of roughly tens of millions to a few hundred million yen (数千万円から数億円程度) and follow-on totalling roughly JPY 1 billion to JPY 3 billion (10～30億円程度). It says it works with the University of Tokyo as its core axis plus other universities, research institutions, companies and government in Japan and overseas, and that it has invested in more than 30 startups in the United States, Europe, India, Southeast Asia and Africa. It describes itself as a technology transfer related business operator approved by the University of Tokyo (東京大学が承認する「技術移転関連事業者」として). Its own portfolio categories are Life Science & Healthcare, IT and Physical Science & Engineering.",
+    leadership: [
+      { name: "Tomotaka Goji", role: "代表取締役社長CEO マネージングパートナー (Representative Director, President and CEO, Managing Partner)", profileSlug: "tomotaka-goji" },
+      { name: "Noriaki Sakamoto", role: "代表取締役COO マネージングパートナー (Representative Director, COO, Managing Partner)", profileSlug: "noriaki-sakamoto" },
+      { name: "Atsushi Usami", role: "取締役 パートナー (Director, Partner)", profileSlug: "atsushi-usami" },
+      { name: "Keisuke Ide", role: "パートナー (Partner)", profileSlug: "keisuke-ide" },
+      { name: "Hiroaki Kobayashi", role: "パートナー (Partner)", profileSlug: "hiroaki-kobayashi" },
+      { name: "Kiran Mysore", role: "パートナー (Partner)", profileSlug: "kiran-mysore" },
+      { name: "Hiroyuki Sakita", role: "管理部長 パートナー (Head of Administration, Partner)", profileSlug: "hiroyuki-sakita" }
+    ],
+    timeline: [
+      { year: "2004", event: "株式会社東京大学エッジキャピタル (The University of Tokyo Edge Capital), the predecessor entity, is established in April 2004; UTEC dates its founding to 2004 and Tomotaka Goji describes himself as a co-founder from April 2004." },
+      { year: "2004", event: "The first fund, ユーテック一号投資事業有限責任組合 (UTEC1), is established on 1 July 2004 at approximately JPY 8.3 billion (約83億円)." },
+      { year: "2009", event: "UTEC2 Investment Limited Partnership is established on 31 July 2009 at approximately JPY 7.15 billion (約71.5億円)." },
+      { year: "2013", event: "UTEC3 Investment Limited Partnership is established on 15 October 2013 at approximately JPY 14.57 billion (約145.7億円)." },
+      { year: "2018", event: "UTEC4 Investment Limited Partnership is established on 17 January 2018 at approximately JPY 24.31 billion (約243.1億円). In the same year the current operating entity 株式会社東京大学エッジキャピタルパートナーズ is established by UTEC Partners LLP and signs a memorandum of understanding with the University of Tokyo (per the Japanese Wikipedia history section; not stated on UTEC's own site)." },
+      { year: "2020", event: "The predecessor 株式会社東京大学エッジキャピタル is dissolved in June 2020 and the business is consolidated into 株式会社東京大学エッジキャピタルパートナーズ (per the Japanese Wikipedia history section; not stated on UTEC's own site)." },
+      { year: "2020", event: "株式会社東京大学エッジキャピタル (the 2004 entity) is dissolved and consolidated into 株式会社東京大学エッジキャピタルパートナーズ. UTEC's own 沿革 records this at 2020.06: 株式会社東京大学エッジキャピタル解散、株式会社東京大学エッジキャピタルパートナーズへ一本化." },
+      { year: "2021", event: "UTEC5 Investment Limited Partnership is established on 7 May 2021 at approximately JPY 30.41 billion (約304.1億円)." },
+      { year: "2021", event: "The University of Tokyo receives a donation of shares in 株式会社東京大学エッジキャピタルパートナーズ from 一般社団法人東京大学産学連携支援基金, recorded in UTEC's own 沿革 at 2021.02." },
+      { year: "2025", event: "UTEC6 Investment Limited Partnership is established on 30 April 2025 at approximately JPY 46.08 billion (約460.8億円); UTEC announced the formation on 11 July 2025 and described the investor base as institutional investors centred on domestic and overseas pension funds, insurance companies and sovereign wealth funds, plus financial institutions." },
+      { year: "2025", event: "Shimon Sakaguchi, founder of UTEC portfolio company RegCell, Inc., is awarded the Nobel Prize in Physiology or Medicine; UTEC published the announcement on 6 October 2025." },
+      { year: "2026", event: "Portfolio company TIER IV, Inc. (株式会社ティアフォー) lists on the Tokyo Stock Exchange Growth Market on 22 July 2026 under code 593A." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Vivo Capital",
+    sectors: ["Healthcare", "Biotech", "Pharmaceuticals", "Life Sciences", "Healthtech"],
+    signatureExit: "Soleno Therapeutics (SLNO), a position Vivo Opportunity Fund Holdings, L.P. reported on Schedule 13D, subject of a $2.9 billion acquisition by Neurocrine Biosciences announced April 2026",
+    slug: "vivo-capital",
+    website: "https://vivocapital.com",
+    short: "Vivo",
+    founded: 1996,
+    hq: "Palo Alto, CA",
+    aum: "$6.1B (\"Active AUM\" as of Q4 2025, the label the firm uses on its own homepage; it separately stated approximately $5.3B of regulatory assets under management in its 7 May 2025 fund-close announcement)",
+    thesis: "Vivo Capital describes itself as a global healthcare specialist running a multi-strategy investment platform that covers venture capital, private equity and public equity. Its investment strategy page names three distinct strategies: the Vivo Innovation Fund, which invests in venture-stage companies developing healthcare technologies or products; Vivo Capital Private Equity, which combines growth capital for companies at commercial inflection points with a buyout strategy covering leveraged buyouts, management buyouts, spin-offs and restructurings; and the Vivo Opportunity Fund, a long-only strategy investing primarily in global public equities of small and mid-cap biotechnology, pharmaceutical, healthcare and life science companies through follow-ons, PIPEs, registered directs and IPOs. The firm states it has invested in over 460 healthcare companies and operates from Palo Alto with offices in China and a presence in Singapore.",
+    leadership: [
+      { name: "Frank Kung, Ph.D., M.B.A.", role: "Managing Partner", profileSlug: "frank-kung-ph-d-m-b-a" },
+      { name: "Edgar G. Engleman, M.D.", role: "Managing Partner, Chief Scientific Advisor", profileSlug: "edgar-g-engleman-m-d" },
+      { name: "Shan Fu, M.A.", role: "Managing Partner", profileSlug: "shan-fu-m-a" },
+      { name: "Gaurav Aggarwal, M.D.", role: "Managing Partner", profileSlug: "gaurav-aggarwal-m-d" },
+      { name: "Michael Chang, M.B.A.", role: "Managing Partner", profileSlug: "michael-chang-m-b-a" },
+      { name: "Cinthia Sheu, M.B.A., C.P.A.", role: "Partner, Chief Operating Officer", profileSlug: "cinthia-sheu-m-b-a-c-p-a" },
+      { name: "Zhanping Wu, J.D.", role: "Partner, General Counsel", profileSlug: "zhanping-wu-j-d" }
+    ],
+    timeline: [
+      { year: "1996", event: "BDF Fund, described by Vivo as the predecessor of Vivo Capital, is formed by Dr. Frank Kung and Dr. Edgar Engleman in Palo Alto, focused on biotech venture investments." },
+      { year: "2000", event: "The firm makes its early explorations in the Asia healthcare market, per its own history page." },
+      { year: "2007", event: "Vivo establishes its office in China." },
+      { year: "2013", event: "Shan Fu joins Vivo as Managing Partner, Co-CEO and CEO of Greater China." },
+      { year: "2014", event: "Vivo Capital, LLC registration as an SEC investment adviser becomes effective on 19 June 2014 (CRD 159868, SEC file 801-79829)." },
+      { year: "2015", event: "Vivo raises its first standalone venture capital fund, Vivo Innovation Fund I, also called the Vivo PANDA Fund." },
+      { year: "2016", event: "Vivo raises its first private equity fund, Vivo Capital Fund VIII, focused on growth and buyout investments." },
+      { year: "2018", event: "Vivo spins out a dedicated Opportunity Fund focused on biotech public equity investments." },
+      { year: "2023", event: "Vivo establishes a presence in Singapore." },
+      { year: "2025", event: "On 7 May 2025 Vivo announces the close of the third cycle of the Vivo Opportunity Fund with commitments of over $740 million, and states approximately $5.3 billion in regulatory assets under management." },
+      { year: "2025", event: "Managing Partner Jack B. Nielsen dies on 5 June 2025; Vivo publishes an In Memoriam notice the same day." },
+      { year: "2026", event: "On 3 February 2026 LBO France announces the sale of Dutscher Group to Vivo Capital, with Managing Partner Michael Chang quoted; Vivo's own news index dates the completed acquisition 1 July 2026." },
+      { year: "2026", event: "On 8 April 2026 co-founders Ed Engleman and Frank Kung publish a 30th anniversary letter stating the firm was originally named BioAsia Investments before being renamed Vivo Capital." },
+      { year: "2026", event: "On 14 July 2026 Vivo announces the Vivo Capital Donor Fund, a philanthropic initiative funded by a contribution from Vivo's management company." }
+    ],
+    holdings: [
+      { name: "Trevi Therapeutics, Inc.", ticker: "TRVI", historicalPrice: null, price: null },
+      { name: "Praxis Precision Medicines, Inc.", ticker: "PRAX", historicalPrice: null, price: null },
+      { name: "Erasca, Inc.", ticker: "ERAS", historicalPrice: null, price: null },
+      { name: "ArriVent BioPharma, Inc.", ticker: "AVBP", historicalPrice: null, price: null },
+      { name: "Abivax S.A. (sponsored ADS)", ticker: "ABVX", historicalPrice: null, price: null },
+      { name: "Tango Therapeutics, Inc.", ticker: "TNGX", historicalPrice: null, price: null },
+      { name: "Corvus Pharmaceuticals, Inc.", ticker: "CRVS", historicalPrice: null, price: null },
+      { name: "Sinovac Biotech Ltd.", ticker: "SVA", historicalPrice: null, price: null },
+      { name: "Tenax Therapeutics, Inc.", ticker: "TENX", historicalPrice: null, price: null },
+      { name: "Aclaris Therapeutics, Inc.", ticker: "ACRS", historicalPrice: null, price: null },
+      { name: "Dyne Therapeutics, Inc.", ticker: "DYN", historicalPrice: null, price: null },
+      { name: "Dianthus Therapeutics, Inc.", ticker: "DNTH", historicalPrice: null, price: null },
+      { name: "Alto Neuroscience, Inc.", ticker: "ANRO", historicalPrice: null, price: null },
+      { name: "DBV Technologies S.A. (sponsored ADS)", ticker: "DBVT", historicalPrice: null, price: null }
+    ]
   }
 ];
