@@ -13293,5 +13293,652 @@ holdings: []
       { year: "2026", event: "Venture Catalysts exits the hygiene brand Pee Safe at a reported 9.6x return and 30.53 percent XIRR in January 2026, nine years after a 2017 pre-Series investment." }
     ],
     holdings: []
+  },
+
+  /* ---- Firm batch 3, added 7 September 2026: 20 firms. Their partner records
+     are in data-partners-1.js (not shard 6 - see that file's banner) and
+     their field-level provenance is in data-evidence.js, added in the same
+     batch. Checked against all 481 pre-existing firms for slug, name,
+     historical-name and parent-brand collisions; none found. ---- */
+  {
+    rank: null,
+    name: "AltaIR Capital",
+    sectors: ["Future of Work", "SaaS", "Fintech", "Insurtech", "AI", "Digital Health"],
+    signatureExit: null,
+    slug: "altair-capital",
+    website: "https://altair.vc",
+    short: "AltaIR",
+    founded: 2005,
+    hq: "San Francisco, CA",
+    aum: "$600M (the firm's own homepage label \"Under management $600M\", checked 2026; the site does not use the words \"assets under management\". A 20 November 2025 VCWire interview reports over $600M across multiple funds)",
+    thesis: "AltaIR Capital describes itself on its own site as \"An international early-stage venture investment company\" and, in its footer, as \"An international venture investment company\". Its investment page states that it looks for \"startups with great and motivated teams which have a strong product vision/implementation, scalable business model and big potential market ($ 1B+ is a must)\" and names its focus areas as \"productivity tools/future of work, SaaS, Fintech, Insuretech, AI, Digital Health\". The homepage states the firm operates across \"US, Europe, Israel\" and reports over 400 portfolio companies and 7 unicorns. A 20 November 2025 VCWire interview with founder Igor Ryabenkiy describes an average check size of \"$500K to $1M, with flexibility to follow on\". A separate investor-facing club, AltaClub, is the route by which the firm says private investors can participate, and AltaLab is described on the site as \"AltaIR Capital's new hands-on program for founders\".",
+    leadership: [
+      { name: "Dr. Igor Ryabenkiy", role: "Founder and Managing Partner", profileSlug: "dr-igor-ryabenkiy" },
+      { name: "Dmitriy Firskin", role: "Partner", profileSlug: "dmitriy-firskin" }
+    ],
+    timeline: [
+      { year: "2005", event: "Igor Ryabenkiy founds AltaIR Capital, per his own personal site, which states he \"founded AltaIR Capital in 2005 to support early stage companies across the US, Europe and Israel\"." },
+      { year: "2012", event: "AltaIR Capital Fund I, $20 million, per Wikipedia." },
+      { year: "2014", event: "AltaIR Capital Fund II, $100 million, per Wikipedia." },
+      { year: "2015", event: "Globes reports in April 2015 that AltaIR Capital is raising $30 million for investment in Israeli high tech, having made 80 investments worldwide to date including more than 13 in Israel." },
+      { year: "2015", event: "AltaClub, described by the firm as an investor community, is founded, per Wikipedia and the founder's personal site." },
+      { year: "2019", event: "AltaIR Capital Fund III, $200 million, per Wikipedia." },
+      { year: "2021", event: "AltaIR ABO, $300 million for late-stage investments, per Wikipedia." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Big Brain Holdings",
+    sectors: ["Artificial Intelligence", "Robotics", "Infrastructure", "Consumer", "Deep Tech", "Crypto"],
+    signatureExit: null,
+    slug: "big-brain-holdings",
+    website: "https://www.bigbrain.holdings",
+    short: "Big Brain",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "Big Brain Holdings describes itself on its own site as a 'Multi-Strategy Investment Firm' and as 'a global multi-stage investment firm backing funds and founders accelerating emerging frontiers in technology', adding 'Rooted in cypherpunk, we back conviction and visionaries pursuing radical ideas'. It says it invests in funds as well as directly in companies. Its four stated focus areas are Artificial Intelligence, Robotics, Decentralized Infra and Consumer & Deeptech, and its portfolio filter also carries Crypto, Advanced Compute and Data/AI Infra. The site states 120+ portfolio companies, 60+ funds invested, 8+ years active and 40+ countries. Boilerplate the firm supplied for a September 2024 portfolio company announcement described it as 'a Web3 fund with investments in Solana, The Graph, and Arweave', so the current AI and robotics framing is a broadening of an originally crypto-focused mandate.",
+    leadership: [
+      { name: "Sam Kim", role: "General Partner", profileSlug: "sam-kim" }
+    ],
+    timeline: [
+      { year: "2024", event: "Big Brain Holdings co-leads Hemi Labs' $15 million funding round alongside Binance Labs and Breyer Capital, announced 17 September 2024, with Sam Kim quoted on behalf of the firm." },
+      { year: "2025", event: "Named as lead investor in Upexi, Inc.'s approximately $150 million private placement of secured convertible notes, in a press release dated 17 July 2025 and filed with the SEC as an exhibit to Upexi's Form 8-K." },
+      { year: "2025", event: "Listed among the investors in Forward Industries, Inc.'s approximately $1.65 billion PIPE financing, in a press release dated 11 September 2025 and filed with the SEC as an exhibit to Forward Industries' Form 8-K." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Capital Factory",
+    sectors: ["Space", "Energy", "Defense", "Healthcare", "Biotech", "AI", "Robotics", "Hardware"],
+    signatureExit: "Firefly Aerospace (Nasdaq IPO, 2025)",
+    slug: "capital-factory",
+    website: "https://www.capitalfactory.com",
+    short: "Capital Factory",
+    founded: 2009,
+    hq: "Austin, TX",
+    aum: "Not publicly disclosed (no AUM figure is published; the largest first-party fund figure is Texas Fund II, LP, a $50M offering with $7.2M sold per its Form D of 24 February 2026 - an offering size, not AUM)",
+    thesis: "Capital Factory is a multi-activity organisation in Austin rather than a single fund. It began in 2009 as a mentorship-driven software accelerator and now describes itself on its own site as the venture firm at the center of Texas. Alongside investing it runs membership and coworking space and a programme and events business across Austin, Dallas, Houston, San Antonio, Bentonville and Washington DC, including Fed Supernova, the Defense Academy, and sector centers such as the Center for Defense Innovation (rebranded Center for Dual-Use Innovation), the Center for Health Innovation in Dallas and the Center for Autonomous Robotics. Its stated investing focus is deep and frontier technology across space, energy, bio and health, and defense, described on the Texas Fund page as autonomy, robotics, space, defense, neurotech and energy, from seed through Series C. Two investing routes are named publicly: the Texas Fund, its stated flagship venture fund, and All Access, an annual-series vehicle offering broader exposure to the network. Since 2025 and 2026 the community, programming and workspace activity has been moved into separate 501(c)(3) non-profits branded STATION (STATION TEXAS, STATION NWA and STATION Austin), so the brand now spans for-profit investment partnerships and non-profit entities.",
+    leadership: [
+      { name: "Bryan Chambers", role: "Co-Founder & President", profileSlug: "bryan-chambers" },
+      { name: "Gordon Daugherty", role: "Co-Founder & Chairman", profileSlug: "gordon-daugherty" },
+      { name: "Jamie Serio", role: "Vice President, Ventures", profileSlug: "jamie-serio" },
+      { name: "Nick Spiller", role: "Managing Director, All Access Fund", profileSlug: "nick-spiller" },
+      { name: "Morgan Odell", role: "Director of Ventures", profileSlug: "morgan-odell" },
+      { name: "Nina Shelat", role: "Director of Government Ventures", profileSlug: "nina-shelat" },
+      { name: "Luis Martinez, Ph.D.", role: "Venture Principal", profileSlug: "luis-martinez-ph-d" }
+    ],
+    timeline: [
+      { year: "2009", event: "Joshua Baer founds Capital Factory in Austin as a mentorship-driven software accelerator taking five companies a year." },
+      { year: "2013", event: "Capital Factory relocates to the Omni building in downtown Austin." },
+      { year: "2017", event: "Capital Factory publishes the Texas Startup Manifesto." },
+      { year: "2019", event: "Capital Factory opens the Center for Defense Innovation, a 23,000 square foot space." },
+      { year: "2021", event: "Capital Factory launches the Texas Fund; the first Capital Factory Ventures, LP series vehicle files a Form D on 12 May 2021." },
+      { year: "2023", event: "Capital Factory launches the Fellowship Fund; portfolio company Intuitive Machines lists on Nasdaq under LUNR." },
+      { year: "2025", event: "Portfolio companies Voyager Technologies (NYSE: VOYG) and Firefly Aerospace (Nasdaq: FLY) complete initial public offerings." },
+      { year: "2025", event: "STATION TEXAS, a 501(c)(3) non-profit, names Riffat Manasia founding Executive Director (announced 20 May 2025)." },
+      { year: "2026", event: "STATION NWA launches in Bentonville, Arkansas as a 501(c)(3) with $1.5 million in founding support from the Walton Family Foundation (13 January 2026)." },
+      { year: "2026", event: "Texas Fund II, LP files a Form D on 24 February 2026 reporting a $50,000,000 offering with $7,200,000 sold and a first sale on 19 February 2026." },
+      { year: "2026", event: "Capital Factory launches STATION Austin as a non-profit carrying its community, programming and workspace activity (10 March 2026)." },
+      { year: "2026", event: "Founder and CEO Joshua Baer dies in a plane crash near Laredo, Texas on the night of 16 June 2026, at the age of 50." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Deerfield Management",
+    sectors: ["Therapeutics", "Medical Devices", "Healthcare", "Diagnostics", "Digital Health", "Life Sciences"],
+    signatureExit: "Nuvalent, Inc. (acquired by GSK, completed 15 July 2026, approximately $10.6 billion aggregate equity value)",
+    slug: "deerfield-management",
+    website: "https://deerfield.com",
+    short: "Deerfield",
+    founded: 1994,
+    hq: "New York, NY",
+    aum: "More than $16B (in assets as of December 2025, per the firm's own About page; the figure could not be checked against Form ADV Item 5.F)",
+    thesis: "Deerfield describes itself as an investment firm dedicated to advancing healthcare through investment, intelligence and philanthropy, and says it holds a portfolio of more than two hundred private and public investments spanning therapeutics, medical devices, healthcare services, diagnostics and digital health. It states that it invests across capital structures and across company stages, from early-stage startups to mature companies, and that it offers structured finance solutions and customised financing for entrepreneurs and corporate partners in both public and private markets. Alongside the funds it runs an in-house research and data organisation: Deerfield Intelligence is described as the firm's data, technology and AI arm, and Deerfield Discovery and Development (3DC) as its internal R&D engine, taking early-stage therapeutics from discovery through preclinical proof of concept into clinical development. Deerfield also builds companies with academic and health-system partners through named discovery alliances. It is an SEC-registered investment adviser (CRD 157876, SEC file 801-73284) and files quarterly 13F reports covering listed equities, ADSs and convertible notes, so its public-market activity sits alongside its private investing rather than replacing it.",
+    leadership: [
+      { name: "Jim Flynn", role: "Managing Partner", profileSlug: "jim-flynn" },
+      { name: "Bryan Sendrowski", role: "Partner and Chief Financial Officer", profileSlug: "bryan-sendrowski" },
+      { name: "Robert Snetiker", role: "Partner, General Counsel & Chief Compliance Officer", profileSlug: "robert-snetiker" },
+      { name: "Jonathan Isler", role: "Partner and Chief Financial Officer, Funds", profileSlug: "jonathan-isler" },
+      { name: "Karen Heidelberger", role: "Partner and Chief Partnerships Officer", profileSlug: "karen-heidelberger" },
+      { name: "Frank Nestle, M.D.", role: "Partner and Chief Executive Officer, 3DC", profileSlug: "frank-nestle-m-d" },
+      { name: "Mark Michalski, M.D.", role: "Chief Information Officer" },
+      { name: "Jennifer Pearson", role: "Chief Human Resources Officer and Employment Counsel" },
+      { name: "Angelo Stornello", role: "Chief Technology Officer" },
+      { name: "Karen Arnone", role: "Chief Property and Development Officer" },
+      { name: "Alexis Caze", role: "President, The Deerfield Foundation" }
+    ],
+    timeline: [
+      { year: "1994", event: "Deerfield Management Company is launched, per the firm's own About page." },
+      { year: "2000", event: "Jim Flynn joins Deerfield; he is now Managing Partner and, per his firm profile, responsible for the management of the firm." },
+      { year: "2005", event: "The Deerfield Foundation, the firm's New York City-based not-for-profit, is founded." },
+      { year: "2020", event: "Deerfield announces the close of Deerfield Healthcare Innovations Fund II at $840 million on 6 April 2020." },
+      { year: "2021", event: "Deerfield announces Deerfield Private Design Fund V, a $1.4 billion private investment fund, on 4 August 2021." },
+      { year: "2023", event: "Deerfield announces a $25M grant from New York State and Empire State Development to build a lab at its healthcare innovation campus, Cure, on 29 March 2023." },
+      { year: "2024", event: "Frank Nestle, M.D., FMedSci, joins from Sanofi as Partner and Chief Executive Officer of Deerfield Discovery and Development (3DC), announced 5 June 2024." },
+      { year: "2025", event: "Deerfield announces a collaboration with the Qatar Investment Authority as part of its fund of funds VC programme and the opening of a regional office in Doha, on 23 February 2025." },
+      { year: "2025", event: "Deerfield announces the close of a healthcare venture fund of over $600 million, named on the release as Healthcare Innovations Fund III, on 5 May 2025." },
+      { year: "2025", event: "Deerfield announces the sale of Melinta Therapeutics on 5 September 2025." },
+      { year: "2026", event: "Deerfield Strategic Growth Fund, L.P., a Delaware limited partnership formed in 2026, reports $121,500,000 sold in a Form D filed 13 April 2026." },
+      { year: "2026", event: "GSK completes its acquisition of Deerfield portfolio company Nuvalent, Inc. on 15 July 2026 for approximately $10.6 billion in aggregate equity value." }
+    ],
+    holdings: [
+      { name: "Revolution Medicines, Inc.", ticker: "RVMD", historicalPrice: null, price: null },
+      { name: "Praxis Precision Medicines, Inc.", ticker: "PRAX", historicalPrice: null, price: null },
+      { name: "Viatris Inc.", ticker: "VTRS", historicalPrice: null, price: null },
+      { name: "Centene Corporation", ticker: "CNC", historicalPrice: null, price: null },
+      { name: "United Therapeutics Corporation", ticker: "UTHR", historicalPrice: null, price: null },
+      { name: "Legend Biotech Corporation", ticker: "LEGN", historicalPrice: null, price: null },
+      { name: "Cogent Biosciences, Inc.", ticker: "COGT", historicalPrice: null, price: null },
+      { name: "Genmab A/S", ticker: "GMAB", historicalPrice: null, price: null },
+      { name: "Ionis Pharmaceuticals, Inc.", ticker: "IONS", historicalPrice: null, price: null },
+      { name: "Celcuity Inc.", ticker: "CELC", historicalPrice: null, price: null },
+      { name: "Arrowhead Pharmaceuticals, Inc.", ticker: "ARWR", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Digital Currency Group",
+    sectors: ["Crypto", "Blockchain", "Web3", "DeFi", "Fintech", "Regtech", "Infrastructure", "Data & Analytics", "Security", "Enterprise", "Gaming"],
+    signatureExit: "CoinDesk (sold to Bullish Global, announced 20 November 2023; terms not disclosed)",
+    slug: "digital-currency-group",
+    website: "https://dcg.co",
+    short: "DCG",
+    founded: 2015,
+    hq: "Stamford, CT",
+    aum: null,
+    thesis: "Digital Currency Group is a privately held holding company, not a conventional venture partnership investing out of a closed fund. In its own current boilerplate it describes itself as \"a global investor, builder, and incubator committed to advancing decentralized ecosystems built on blockchain technology\", and states it has \"backed over 250 early-stage technology companies across 40 countries\" and \"holds more than 70 token and digital asset investments\". Alongside that portfolio it is the parent company of wholly-owned operating subsidiaries; the subsidiaries named in DCG's own June 2026 boilerplate are Grayscale, Fortitude Mining, Foundry, Luno and Yuma. Its own site describes stage coverage across Seed, Venture, Token Launch, Growth, Late Stage and Public Markets, and states that \"broad exposure with the optionality to concentrate our focus is a winning strategy\". DCG does not publish a team page, a partner roster, a news index or an assets-under-management figure.",
+    leadership: [
+      { name: "Barry Silbert", role: "Founder and CEO", profileSlug: "barry-silbert" },
+      { name: "Mark Murphy", role: "President", profileSlug: "mark-murphy" },
+      { name: "Mark Shifke", role: "Chief Financial Officer", profileSlug: "mark-shifke" },
+      { name: "Aimie Killeen", role: "Chief Legal Officer", profileSlug: "aimie-killeen" },
+      { name: "Julie Stitzel", role: "Chief Policy Officer", profileSlug: "julie-stitzel" },
+      { name: "Tonya M. Evans", role: "Member, Board of Directors", profileSlug: "tonya-m-evans" }
+    ],
+    timeline: [
+      { year: "2015", event: "Barry Silbert launches Digital Currency Group on 27 October 2015 at Money 20/20, days after selling SecondMarket to Nasdaq, with backing reported from Bain Capital Ventures, Transamerica Ventures, FirstMark Capital, MasterCard and New York Life; its two initial wholly-owned subsidiaries are Genesis Global Trading and Grayscale Investments." },
+      { year: "2016", event: "The Digital Currency Group, Inc. 2016 Stock Option and Grant Plan is approved by the board of directors and stockholders on 5 January 2016, with the company's address then given as 636 Avenue of the Americas, New York, NY." },
+      { year: "2020", event: "DCG publicly launches Foundry on 27 August 2020 as a wholly-owned bitcoin mining and digital asset financing subsidiary, having quietly formed it in 2019, and commits $100 million to it through 2021." },
+      { year: "2020", event: "DCG acquires Luno on 9 September 2020, having first invested in Luno's seed round in 2014; financial terms were not disclosed." },
+      { year: "2021", event: "DCG relocates its headquarters from Manhattan to Stamford, Connecticut in November 2021." },
+      { year: "2023", event: "Genesis Global Holdco, LLC and affiliated DCG subsidiaries file for Chapter 11 bankruptcy protection in the Southern District of New York (Case No. 23-10063) in January 2023." },
+      { year: "2023", event: "Bullish Global announces on 20 November 2023 that it has acquired CoinDesk from DCG; terms of the transaction were not disclosed." },
+      { year: "2024", event: "The Genesis Chapter 11 plan becomes effective on 2 August 2024, after which the estates are administered by a Plan Administrator under a Wind-Down Oversight Committee and a Litigation Oversight Committee." },
+      { year: "2024", event: "DCG launches Yuma on 20 November 2024 as a subsidiary supporting development on the Bittensor network, with Barry Silbert serving as Yuma's CEO while continuing to lead DCG." },
+      { year: "2025", event: "DCG launches Fortitude Mining on 29 January 2025 as a wholly-owned venture mining subsidiary spun out of Foundry's self-mining division, with Andrea Childs appointed CEO." },
+      { year: "2025", event: "Grayscale Investments, Inc., which DCG's registration statement describes as controlled by DCG, publicly files a Form S-1 on 13 November 2025 for a proposed initial public offering under the ticker GRAY; the offering had not priced as of 7 September 2026." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Dragonfly",
+    sectors: ["Crypto", "DeFi", "Blockchain", "Infrastructure", "Web3", "Fintech"],
+    signatureExit: null,
+    slug: "dragonfly",
+    website: "https://www.dragonfly.xyz",
+    short: "Dragonfly",
+    founded: 2018,
+    hq: "New York, NY",
+    aum: "$650M (Dragonfly Ventures IV close announced February 2026; no firm-wide AUM figure is published)",
+    thesis: "Dragonfly is a global crypto investment firm. Its own ethos statement says it is 'a team of deeply technical crypto-natives', that it invests across stages 'from seed to Series B and beyond', that its checks go 'anywhere from $3M to $30M+', and that it invests globally with offices in New York City and Singapore. Its homepage says it backs 'the best researchers and builders who will push the entire crypto ecosystem forward' and that it backs teams 'from protocols to exchanges to apps and beyond' across sectors and stages. The firm groups its own portfolio under CeFi, DeFi, Infrastructure, L1/L2s, NFT and Stablecoin. Since 2022 the firm has described itself as comprising three parts: Dragonfly Ventures, Dragonfly Liquid and MetaStable.",
+    leadership: [
+      { name: "Haseeb Qureshi", role: "Managing Partner", profileSlug: "haseeb-qureshi" },
+      { name: "Bo Feng", role: "Managing Partner", profileSlug: "bo-feng" },
+      { name: "Tom Schmidt", role: "General Partner", profileSlug: "tom-schmidt" },
+      { name: "Rob Hadick", role: "General Partner", profileSlug: "rob-hadick" },
+      { name: "Gengmo Qi", role: "Partner", profileSlug: "gengmo-qi" },
+      { name: "Lindsay Lin", role: "COO" },
+      { name: "Sylvia Liu", role: "CFO" },
+      { name: "Scott Hershorin", role: "CCO" },
+      { name: "Chen Yuan", role: "General Counsel" }
+    ],
+    timeline: [
+      { year: "2018", event: "Dragonfly Capital Partners announces a $100 million inaugural crypto fund on 9 October 2018, founded by managing partners Alexander Pack (previously of Bain Capital Ventures) and Bo Feng (founding partner of Ceyuan Ventures), with the firm described in the release as based in San Francisco." },
+      { year: "2019", event: "Haseeb Qureshi joins Dragonfly, per Fortune's February 2026 profile of the firm." },
+      { year: "2020", event: "Dragonfly Ventures II, L.P. files its Form D with the SEC on 16 December 2020; Fortune reports the second fund at $225 million, closed in late 2020." },
+      { year: "2022", event: "Dragonfly closes its third venture fund, Dragonfly Ventures III, with $650 million in capital commitments, announced 27 to 28 April 2022 after an initial $500 million target." },
+      { year: "2022", event: "Dragonfly acquires the crypto hedge fund MetaStable and rebrands, dropping 'Capital' from the name and moving to dragonfly.xyz, announced by Haseeb Qureshi on 15 August 2022." },
+      { year: "2026", event: "Dragonfly closes its fourth venture fund at $650 million, reported 17 February 2026." },
+      { year: "2026", event: "Avalanche Treasury Corp lists on Nasdaq as AVAT on 11 June 2026 after merging with Mountain Lake Acquisition Corp; Dragonfly Digital Management, LLC and the Dragonfly Ventures funds contributed 1,960,040 AVAX for 5,805,639 units and Dragonfly General Partner Rob Hadick joined the board." }
+    ],
+    holdings: [
+      { name: "Avalanche Treasury Corp", ticker: "AVAT", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Flex Capital",
+    sectors: ["Sector-Agnostic"],
+    signatureExit: null,
+    slug: "flex-capital",
+    website: "https://www.flexcapital.com",
+    short: "Flex Capital",
+    founded: 2018,
+    hq: "San Francisco, CA",
+    aum: "Not publicly disclosed (no AUM figure is published; Flex Capital Fund II, L.P. reported $149,025,000 sold of a $300M offering in its Form D/A of 13 February 2023)",
+    thesis: "Flex Capital is a seed-stage venture firm that says it is run by the founding CEOs of LiveRamp, BrightRoll, Lemonaid, SafeGraph and Pipedream. Its stated approach is 'Generalists with conviction', backing founders across sectors and geographies, investing at seed with a first check of $500K to $2M and holding significant follow-on reserves in Fund II. On governance it states that it pledges its voting shares back to founders, that its terms are founder-aligned, and that it takes 'No board seats unless you want one'. It describes its support as direct access to the founding partners as operators plus introductions across a network it counts as 240+ portfolio founders, 300+ strategic LPs, 100+ venture partners and 600+ angel investors, and follow-on capital through Series A and beyond. It operates from San Francisco, with one team member based in New York.",
+    leadership: [
+      { name: "Auren Hoffman", role: "Partner", profileSlug: "auren-hoffman" },
+      { name: "Paul Johnson", role: "Partner", profileSlug: "paul-johnson" },
+      { name: "Rajal Patel", role: "Partner", profileSlug: "rajal-patel" },
+      { name: "Tod Sacerdoti", role: "Partner", profileSlug: "tod-sacerdoti" }
+    ],
+    timeline: [
+      { year: "2018", event: "Flex Capital Fund I, L.P., a Delaware limited partnership, files a Form D with the SEC on 25 October 2018 from a San Francisco address, naming Tod Sacerdoti and Auren Hoffman as managing members of the general partner, for a $100,000,000 offering." },
+      { year: "2019", event: "Flex Capital Management, L.L.C. becomes an SEC exempt reporting adviser with effect from 2 January 2019." },
+      { year: "2021", event: "The firm publishes 'Flex: Flexible Capital by Founders, For Founders' on 6 May 2021, setting out its operator-investor model." },
+      { year: "2022", event: "Flex Capital Fund II, L.P. is incorporated in Delaware and files its first Form D on 1 February 2022 from a San Francisco address; Rajal Patel joins the firm." },
+      { year: "2023", event: "A Form D/A for Flex Capital Fund II, L.P. filed 13 February 2023 reports $149,025,000 sold of a $300,000,000 offering, and adds Jeffrey Lu alongside Tod Sacerdoti and Auren Hoffman as a managing member of the general partner." },
+      { year: "2024", event: "Flex Capital Management, L.L.C. registers as an exempt reporting adviser in California and withdraws its Nevada exempt reporting adviser status, both with effect from 7 March 2024." },
+      { year: "2025", event: "The firm announces Paul Johnson, founder and CEO of Lemonaid Health, as its new General Partner on 18 February 2025." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Genesia Ventures, Inc.",
+    sectors: ["Technology", "Industrial Tech", "Consumer", "Infrastructure"],
+    signatureExit: null,
+    slug: "genesia-ventures",
+    website: "https://www.genesiaventures.com",
+    short: "Genesia Ventures",
+    founded: 2016,
+    hq: "Tokyo, Japan",
+    aum: null,
+    thesis: "Genesia Ventures, Inc. is an independent Japanese venture capital firm that invests at the seed round and states it will consider additional investment beyond Series A in its existing portfolio. Its stated geographies are Japan, Southeast Asia and India. The firm states its focus is the digital transformation of lifestyle infrastructure and of industry, and that it aims to build a space for new industry creation and co-creation between the Japanese and Southeast Asian markets. It operates offices in Tokyo, Jakarta, Ho Chi Minh City and Bengaluru, and manages the Genesia Venture Fund limited partnership series.",
+    leadership: [
+      { name: "Soichi Tajima", role: "代表取締役／General Partner (Representative Director / General Partner)", profileSlug: "soichi-tajima" },
+      { name: "Takahiro Suzuki", role: "General Partner, Southeast Asia", profileSlug: "takahiro-suzuki" },
+      { name: "Yuto Kono", role: "Principal", profileSlug: "yuto-kono" },
+      { name: "Shun Sagara", role: "Country Director of India", profileSlug: "shun-sagara" },
+      { name: "Hoang Thi Kim Dung", role: "Country Director of Vietnam", profileSlug: "hoang-thi-kim-dung" },
+      { name: "Elsha Eliasa Kwee", role: "Country Director of Indonesia", profileSlug: "elsha-eliasa-kwee" }
+    ],
+    timeline: [
+      { year: "2016", event: "Genesia Ventures, Inc. (株式会社ジェネシア・ベンチャーズ) is established on 31 August 2016 by Soichi Tajima, previously Representative Director of CyberAgent Ventures." },
+      { year: "2017", event: "Genesia Venture Fund 1号投資事業有限責任組合 (Fund I) is listed by the firm at 40億円 (4 billion yen)." },
+      { year: "2018", event: "Takahiro Suzuki, previously Indonesia representative of CyberAgent Ventures, joins Genesia Ventures in September 2018." },
+      { year: "2020", event: "Genesia Venture Fund 2号投資事業有限責任組合 (Fund II) completes its final close at a total of approximately 80億円 (8 billion yen)." },
+      { year: "2023", event: "Genesia Venture Fund 3号投資事業有限責任組合 (Fund III) completes its final close; the firm announces the fund in English as $110M and in Japanese as 150億円 (15 billion yen)." },
+      { year: "2023", event: "Genesiaventures India Private Limited is established in Bengaluru in November 2023, with Shunsuke Sagara as its representative." },
+      { year: "2026", event: "On 27 May 2026 Genesia Ventures announces the final close of Genesia Venture Fund 4号投資事業有限責任組合 (Fund IV) at approximately 180億円 (18 billion yen), stated in the firm's English release as $113M." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "GTMfund",
+    sectors: ["B2B Software", "SaaS", "AI"],
+    signatureExit: null,
+    slug: "gtmfund",
+    website: "https://gtmfund.com",
+    short: "GTMfund",
+    founded: 2020,
+    hq: "Austin, TX",
+    aum: "$76M (the figure the firm's own homepage carries under the literal label \"AUM\", checked 2026; an unaudited self-description with no stated measurement date)",
+    thesis: "GTMfund describes itself on its homepage as \"An exclusive network of GTM leaders investing in the next wave of SaaS start-ups\" and says \"We invest in early-stage B2B software and AI companies, and support them with a network of 350+ GTM leaders across sales, marketing, growth and more.\" The homepage states an average check size of $1-3M and carries the line \"Now investing - Series A\". Reporting on the Fund II close (TechCrunch, 4 February 2025) states the goal was to back about 40 early-stage companies at pre-seed, seed and the occasional Series A with checks of $0.5M to $1.5M, so the stage focus has moved later between Fund II and the current fund. The firm operates a media arm, GTMnow, which publishes a newsletter and a podcast; gtmnow.com describes itself as \"a media platform to help you scale your company and career\" and its footer carries the same GTMfund LLC copyright. The limited partner base is described by the firm as operators: TechCrunch reports about 250 operator LPs in Fund I and 300 operator LPs plus six institutions in Fund II.",
+    leadership: [
+      { name: "Max Altschuler", role: "Founder & General Partner", profileSlug: "max-altschuler" },
+      { name: "Paul Irving", role: "General Partner", profileSlug: "paul-irving" },
+      { name: "Jason Demant", role: "Partner & Head of Networks", profileSlug: "jason-demant" }
+    ],
+    timeline: [
+      { year: "2020", event: "GTMfund, LP - A1, the first GTMfund pooled vehicle to file with the SEC, is incorporated in Delaware; its Form D gives a year of incorporation of 2020." },
+      { year: "2021", event: "First sale in GTMfund, LP - A1 recorded as 4 January 2021 on the Form D filed 13 January 2021; Belltower Fund Group, Ltd is named as manager of the general partner. TechCrunch reports the first fund launched in 2021 with about 250 operator LPs and raised $22 million." },
+      { year: "2022", event: "GTMfund files Form D for four further serial vehicles, GTMfund, LP - B1 through B4, plus matching QP vehicles, all with a Seattle, WA principal place of business." },
+      { year: "2023", event: "GTMfund II, LP files its Form D on 2 February 2023 with a $60,000,000 total offering amount and a first sale of 19 January 2023; Max Altschuler is the only natural person named on the related persons list." },
+      { year: "2025", event: "TechCrunch reports on 4 February 2025 that GTMfund raised a second fund of $54 million against a $50 million target, with 300 operator LPs and six institutions including Bain Capital Ventures, HarbourVest, Inovia Capital and Franklin Park." },
+      { year: "2026", event: "GTMfund III, LP files Form D on 3 February 2026, incorporated in Delaware in 2025, with an $85,000,000 total offering amount, a first sale of 26 January 2026 and a Paradise Valley, AZ principal place of business; the 29 April 2026 amendment reports $20,907,862 sold." },
+      { year: "2026", event: "GTMfund Opportunities Fund I, LP and its QP feeder file Form D on 5 February 2026." },
+      { year: "2026", event: "GTMfund announces Jason Demant as Partner & Head of Networks on 24 March 2026; the announcement quotes him saying he invested in over 100 venture firms over six years at Foundation." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Haatch",
+    sectors: ["B2B Software", "Enterprise Software", "Fintech", "Vertical SaaS"],
+    signatureExit: "Native Teams (exit; Haatch's largest fund exit at a 7.4x multiple, per Haatch's own 2025 review)",
+    slug: "haatch",
+    website: "https://haatch.com",
+    short: "Haatch",
+    founded: 2013,
+    hq: "Stamford, United Kingdom",
+    aum: "Not publicly disclosed (no AUM figure is published; the firm's investors page states \"Raised to date: £155m\" and its 2025 review states £103m raised lifetime with £24.5m deployed during 2025 - capital raised, not AUM)",
+    thesis: "Haatch is a UK early-stage manager whose homepage says \"We back UK founders early, bringing real operator support to help you accelerate at pace\" and states its focus as \"B2B Software across future of enterprise, fintech & vertical saas\". Its stated thesis rests on three published claims: that deep pain drives purchasing decisions and creates sticky recurring revenue, that go-to-market and sales define a seed-stage company's success, and that hands-on 0-to-1 operating experience is fundamental to guiding founders. The manager runs distinct vehicles rather than one blended pool. Its own investors page describes the SEIS Fund as lead investor, 10 to 15 investments per fund, up to £250k per company, aimed at getting founders to product-market fit, and the EIS Fund as co-investor, 4 to 7 investments per fund, £500k or more per company, aimed at scaling from early traction to multi-million pound ARR. Its regulatory footer names six managed vehicles: the Haatch SEIS Fund, Haatch EIS Fund, Haatch BBB Syndicate Fund, Blue Earth Syndicate, Loughborough Venture Investor Network Fund and Haatch D2N2 ESAIF. It also runs Haatch Direct. The firm states it has been on the journey with over 200 companies and shows 197 active portfolio companies. It publishes a stated fee model of charging investors rather than portfolio companies, in place since October 2018.",
+    leadership: [
+      { name: "Scott Weavers-Wright OBE", role: "Co-Founder & General Partner", profileSlug: "scott-weavers-wright-obe" },
+      { name: "Fred Soneya", role: "Co-Founder & General Partner", profileSlug: "fred-soneya" },
+      { name: "Elaine Weavers-Wright", role: "Co-Founder", profileSlug: "elaine-weavers-wright" },
+      { name: "Mark Bennett", role: "Partner", profileSlug: "mark-bennett" },
+      { name: "Jonathan Keeling", role: "Partner", profileSlug: "jonathan-keeling" },
+      { name: "Jeremy Luzinda", role: "Partner", profileSlug: "jeremy-luzinda" }
+    ],
+    timeline: [
+      { year: "2013", event: "Fred Soneya's own Haatch team-page biography states \"Since co-founding Haatch in 2013\"." },
+      { year: "2014", event: "HAATCH LIMITED, company number 08900719, is incorporated at Companies House on 18 February 2014 at The Hub, Blackfriars Street, Stamford." },
+      { year: "2018", event: "HAATCH VENTURES LLP, company number OC421829, is incorporated on 5 April 2018; it is the FCA-authorised entity, FCA registration number 916959. Fred Soneya's biography states he launched the firm's tax-efficient funds in 2018, and Haatch's April 2026 EIS article states it has charged fees to investors rather than portfolio companies since October 2018." },
+      { year: "2022", event: "Fred Soneya's biography states he launched Haatch's institutional funds in 2022. British Business Investments commits up to £10m to Haatch Ventures." },
+      { year: "2024", event: "HAATCH D2N2 ESAIF LP is registered on 22 March 2024 alongside its general partner, founder partner, investment advisor and nominee companies, following Haatch's collaboration with the D2N2 LEP on an £8m fund for Nottinghamshire and Derbyshire." },
+      { year: "2025", event: "Haatch reports five profitable exits during 2025, £24.5m deployed, ten funds closed and £103m of capital raised to date; the largest exit multiple is 7.4x, on Native Teams. The British Business Bank commits an initial £7m to a Haatch-managed co-investment platform for emerging angel syndicates." },
+      { year: "2026", event: "On 25 February 2026 the British Business Bank commits an additional £25m to the Haatch-managed angel syndicate platform, taking that platform to £32m and the Bank's total commitment to Haatch to £52m." },
+      { year: "2026", event: "Haatch reports a record EIS close for the 2025/26 UK tax year in an article published 2 April 2026." },
+      { year: "2026", event: "HAATCH SEED FUND III LP is registered at Companies House on 22 July 2026, with its GP, founder partner and nominee entities incorporated in June 2026." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Kickstart",
+    sectors: ["AI", "Enterprise Software", "SaaS", "Fintech", "Healthtech", "Marketplaces", "Frontier Technologies", "Physical AI", "Ecommerce", "Consumer"],
+    signatureExit: "Angel Studios (NYSE: ANGX, listed via SPAC merger with Southport Acquisition Corporation, September 2025); listed under the \"Exits\" heading on Kickstart's own partner biography pages.",
+    slug: "kickstart-fund",
+    website: "https://kickstart.com",
+    short: "Kickstart",
+    founded: 2008,
+    hq: "Salt Lake City, UT",
+    aum: "$500M+ (the firm's own FAQ Quick Facts line \"Assets under management: $500M+\", checked 2026; earlier dated figures were over $250M in April 2020 and nearly $500M in March 2023)",
+    thesis: "Kickstart is an early-stage venture firm that states it leads pre-seed and seed rounds, occasionally investing at Series A, with initial checks of $500K to $4M. Its stated geography is Utah, Colorado and the wider Mountain West, including Idaho, Wyoming, Montana, Arizona and New Mexico. The firm says it was founded in 2008 as the first dedicated seed fund in the Mountain West, that it has over $500 million across six dedicated pre-seed and seed funds and one co-investment fund, and that it has 150+ active portfolio companies. Its stated sector coverage is AI, B2B SaaS, frontier tech and physical AI, fintech, healthtech, marketplaces and consumer tech, and it describes itself as generalist. It operates from Salt Lake City and Denver.",
+    leadership: [
+      { name: "Gavin Christensen", role: "Founder & General Partner", profileSlug: "gavin-christensen" },
+      { name: "Kat Kennedy", role: "General Partner", profileSlug: "kat-kennedy" },
+      { name: "Dalton Wright", role: "General Partner", profileSlug: "dalton-wright" },
+      { name: "Alex Soffe", role: "General Partner & CFO", profileSlug: "alex-soffe" },
+      { name: "Tanner Potter", role: "Partner", profileSlug: "tanner-potter" }
+    ],
+    timeline: [
+      { year: "2008", event: "Gavin Christensen founds Kickstart, which the firm's own pages describe as the first dedicated seed fund in the Mountain West; KICKSTART SEED FUND LP is registered with the SEC under CIK 0001441370." },
+      { year: "2015", event: "TechCrunch reports on 30 January 2015 that Utah-based Kickstart Seed Fund has raised $39.2 million." },
+      { year: "2020", event: "Kickstart announces the close of its $110 million Fund V on 29 April 2020, stating the close raised its total assets under management to over $250 million." },
+      { year: "2022", event: "Kickstart Seed Fund VI, L.P. files its Form D on 2 February 2022, naming Gavin Christensen and Kickstart Capital, LLC as executive officers." },
+      { year: "2023", event: "Deseret News reports on 30 March 2023 that Kickstart has closed a $230 million fund, more than double its 2020 fund, and plans to open a Colorado office to be run by Dalton Wright." },
+      { year: "2025", event: "Angel Studios, Inc., a Kickstart portfolio company, completes its business combination with Southport Acquisition Corporation on 10 September 2025 and begins trading on the NYSE under the ticker ANGX." },
+      { year: "2026", event: "Kickstart Seed Fund VII, L.P. files its Form D on 23 April 2026, an indefinite offering with no sales yet recorded, from the firm's Cottonwood Heights, Utah address." },
+      { year: "2026", event: "NVCA announces on 14 May 2026 that Gavin Christensen has been appointed 2026-2027 Chair of its Board of Directors." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Latitud Ventures",
+    sectors: ["Fintech", "Vertical SaaS", "Healthtech", "Marketplaces", "Ecommerce", "Proptech"],
+    signatureExit: null,
+    slug: "latitud",
+    website: "https://www.latitud.com",
+    short: "Latitud",
+    founded: 2020,
+    hq: null,
+    aum: "Not publicly disclosed (no source calls any Latitud figure AUM; Fund I invested USD 13M across 100+ early-stage startups and Fund II targets USD 25M with a USD 12M first close announced September 2023)",
+    thesis: "Latitud Ventures is the venture capital vehicle of Latitud, a Latin American technology entrepreneurship platform founded in 2020 by Brian Requarth, Gina Gotthilf and Yuri Danilchenko. The fund invests at pre-seed across Latin America and states it is comfortable leading a pre-seed round, investing alongside angel investors or even before them. Its published First Round Manifesto states an average check size of USD 200K targeting a 5 percent ownership stake, and says that although the fund is sector agnostic it tends to have a bias towards fintech, vertical SaaS, healthtech, marketplaces, e-commerce enablers and proptech. The Fund II announcement states an intention to lead roughly 40 pre-seed rounds over three years with checks of about USD 250K and to co-invest in roughly 20 seed rounds, with particular focus on Brazil and Mexico. Latitud separately runs the Latitud Fellowship, an eight-week remote plus one-week San Francisco programme, and Latitud the company has operated other product lines including Latitud Go (incorporation and back office) and Meridian by Latitud (fintech). Forbes Chile reported in April 2024 that Latitud Ventures operates separately from Latitud the company.",
+    leadership: [
+      { name: "Brian Requarth", role: "General Partner, Latitud Ventures; co-founder and CEO of Latitud", profileSlug: "brian-requarth" },
+      { name: "Tomas Roggio", role: "General Partner, Head of Ventures at Latitud", profileSlug: "tomas-roggio" },
+      { name: "Gina Gotthilf", role: "General Partner, Latitud Ventures; co-founder of Latitud", profileSlug: "gina-gotthilf" }
+    ],
+    timeline: [
+      { year: "2020", event: "Latitud is founded by Brian Requarth, Gina Gotthilf and Yuri Danilchenko as a technology entrepreneurship platform for Latin America." },
+      { year: "2022", event: "Latitud the company raises an USD 11.5M seed round led by Andreessen Horowitz and NFX, announced 28 March 2022; at that date its business lines are described as Latitud Go, Latitud Fellowships and Latitud Ventures, the last led by Tomas Roggio and already invested in more than 80 companies." },
+      { year: "2023", event: "Latitud Ventures announces the first closing of Fund II at a Latitud event in Sao Paulo on 28-29 September 2023; the fund has a target size of USD 25M and follows a first rolling fund that invested USD 13M in 100+ startups." },
+      { year: "2024", event: "Forbes Chile reports on 3 April 2024 that Latitud Ventures has emerged as a venture capital firm operating separately from Latitud the company, with Brian Requarth, Tomas Roggio and Gina Gotthilf as its general partners, USD 13M in its first fund and USD 12M in the first close of its second." },
+      { year: "2026", event: "Latitud publishes an investment note on 16 June 2026 stating it wrote the first check into Taste Labs at inception, ahead of an USD 18.5M Series A co-led by Amplify and CRV." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Left Lane Capital",
+    sectors: ["Artificial Intelligence", "Ecommerce", "Edtech", "Fintech", "Foodtech", "Healthtech", "Marketplaces", "Software", "Media", "Consumer"],
+    signatureExit: "Jackpocket (acquired by DraftKings, completed 22 May 2024)",
+    slug: "left-lane-capital",
+    website: "https://www.leftlane.com",
+    short: "Left Lane",
+    founded: 2019,
+    hq: "Brooklyn, NY",
+    aum: "$3.8B (approximately, stated by the firm in its own 4 August 2026 announcement; its 8 January 2026 announcement stated approximately $2.5B)",
+    thesis: "Left Lane describes itself on its own site as a New York based venture capital firm investing in high-growth consumer and internet technology companies that are fundamental to the lives of customers, and in its own announcements as a global venture capital and growth equity firm investing in hyper-growth consumer and internet technology businesses with enduring customer relationships. The homepage names three stated themes: the digitization of offline spend; AI moving technology from do it yourself to done for you; and digital-first brands crossing into the physical world. The firm states a specialization and data driven approach and says it supports portfolio companies with talent recruitment, operational guidance and access to capital through a team it calls Accelerate. It operates from New York and London.",
+    leadership: [
+      { name: "Harley Miller", role: "Managing Partner & CEO", profileSlug: "harley-miller" },
+      { name: "Vinny Pujji", role: "Managing Partner", profileSlug: "vinny-pujji" },
+      { name: "Dan Ahrens", role: "Managing Partner", profileSlug: "dan-ahrens" },
+      { name: "Matthew Miller", role: "Managing Partner", profileSlug: "matthew-miller" },
+      { name: "Henry Toole", role: "Partner", profileSlug: "henry-toole" },
+      { name: "Laura Sillman", role: "Partner", profileSlug: "laura-sillman" },
+      { name: "Magnus Karnehm", role: "Partner", profileSlug: "magnus-karnehm" },
+      { name: "Kin Lam", role: "Venture Partner", profileSlug: "kin-lam" },
+      { name: "Alex Wu", role: "Partner of Talent", profileSlug: "alex-wu" },
+      { name: "Erica Amatori", role: "Partner of Platform", profileSlug: "erica-amatori" },
+      { name: "Jason Fiedler", role: "Venture Adviser", profileSlug: "jason-fiedler" }
+    ],
+    timeline: [
+      { year: "2019", event: "Harley Miller founds Left Lane Capital, per EquipmentShare.com Inc's Form 8-K exhibit of 10 June 2026; Left Lane Capital Partners I LP records 2019 as its year of incorporation on its Form D." },
+      { year: "2020", event: "Left Lane Capital Partners I LP, I-B LP and I-C LP file Forms D with the SEC on 3 March 2020 from 134 North 4th Street, Brooklyn, New York, naming Harley Miller as the sole related person." },
+      { year: "2021", event: "Left Lane Capital Partners II LP, II-B LP and II-C LP file Forms D on 10 September 2021." },
+      { year: "2022", event: "Left Lane's second fund, Left Lane Capital Partners II LP, is reported by Wikipedia to have closed with a total of $1.4 billion, following a first fund reported at $630 million." },
+      { year: "2023", event: "Left Lane Capital LLC's SEC investment adviser registration becomes effective on 8 November 2023 under SEC file number 801-129035, having previously been an exempt reporting adviser, a status withdrawn on 9 October 2023." },
+      { year: "2024", event: "DraftKings completes its acquisition of Left Lane portfolio company Jackpocket on 22 May 2024; five Left Lane fund entities are listed as selling stockholders of 737,481 DraftKings shares in DraftKings' Rule 424(b)(7) resale prospectus filed 7 June 2024." },
+      { year: "2025", event: "Left Lane Capital Partners III LP and Left Lane Capital Partners III-B LP file Forms D on 10 July 2025, with a Form D/A for III-B on 15 July 2025." },
+      { year: "2026", event: "Left Lane announces on 8 January 2026 that Laura Sillman, Henry Toole and Magnus Karnehm have been promoted to Partner, with Magnus Karnehm the firm's first Partner in London." },
+      { year: "2026", event: "Harley Miller is appointed to the board of directors of EquipmentShare.com Inc (Nasdaq: EQPT) effective 8 June 2026." },
+      { year: "2026", event: "Left Lane announces a further round of senior promotions and hires on 4 August 2026 and states that it manages approximately $3.8 billion in assets under management." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Long Journey Ventures",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "long-journey-ventures",
+    website: "https://www.longjourney.vc",
+    short: "Long Journey",
+    founded: 2020,
+    hq: "San Francisco, CA",
+    aum: "$181.8M (Long Journey IV close, March 2025; no total AUM figure is published - the firm says only that Fund IV doubled its AUM)",
+    thesis: "Long Journey Ventures is an early-stage venture firm. It describes itself on its own site as the second believers in the magically weird, meaning the early supporter who backs a founder after the founder's own first act of belief, and states four values on its homepage: chase the magically weird, be a bubbe, chaotic good, and it is not Monopoly money. Its 2021 founding post describes the partnership as a federation of angels and operators who keep the fund small and remain active operators themselves. The firm publishes no stated sector focus and no stated geographic mandate, so no sectors are recorded here. Its Form D filings place its funds in San Francisco.",
+    leadership: [
+      { name: "Lee Jacobs", role: "Co-Founder & Managing Partner", profileSlug: "lee-jacobs" },
+      { name: "Cyan Banister", role: "Co-Founder & General Partner", profileSlug: "cyan-banister" },
+      { name: "Arielle Zuckerberg", role: "General Partner", profileSlug: "arielle-zuckerberg" },
+      { name: "Jonathan Bruck", role: "Venture Partner", profileSlug: "jonathan-bruck" },
+      { name: "Justin Mares", role: "Venture Partner", profileSlug: "justin-mares" },
+      { name: "Pascal Levy-Garboua", role: "Venture Partner", profileSlug: "pascal-levy-garboua" },
+      { name: "Scott Banister", role: "Venture Partner", profileSlug: "scott-banister" }
+    ],
+    timeline: [
+      { year: "2020", event: "The predecessor micro-fund Edelweiss, which Lee Jacobs raised with Brian Balfour, Elaine Wherry and Jonathan Bruck, is renamed Long Journey Ventures, and Pascal Levy-Garboua and Cyan Banister join as partners, per the firm's own post 'Long Journey: The Beginning'." },
+      { year: "2020", event: "Cyan Banister leaves Founders Fund in March 2020 to join Long Journey Ventures, per her Wikipedia article; the firm's own post states she came from Founders Fund." },
+      { year: "2020", event: "LJ Ventures Fund II, L.P. records a date of first sale of 2 January 2020; its Form D, filed 17 June 2021, reports $35,295,500 sold and names Lee Jacobs as Managing Director of the general partner." },
+      { year: "2022", event: "Arielle Zuckerberg leaves Coatue Management to become a partner at Long Journey Ventures, reported by Axios on 15 February 2022." },
+      { year: "2022", event: "LJV Fund III, L.P. and LJV Opportunity Fund I, L.P. file Forms D on 4 August 2022; LJV Fund III reports $75,775,000 sold against an $85,000,000 offering, with a first sale on 31 January 2022." },
+      { year: "2024", event: "Long Journey Fund IV, L.P. files a Form D on 29 March 2024 reporting a $175,000,000 total offering amount, from 447 Sutter Street, Suite 405, San Francisco." },
+      { year: "2025", event: "Long Journey announces the close of Long Journey IV on 19 March 2025, a fund of approximately $181.8 million, and says the close doubled the firm's AUM." },
+      { year: "2026", event: "Long Journey Fund V, L.P. files a Form D on 6 March 2026 reporting a $236,000,000 total offering amount, with Lee Jacobs named as Managing Director of the general partner." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "MassVentures",
+    sectors: ["Deep Tech", "Advanced Manufacturing", "AI", "Robotics", "Hardware", "Semiconductors", "Clean Energy", "Medical Devices", "Biotech", "Cybersecurity"],
+    signatureExit: "JetCool Technologies (acquired, November 2024)",
+    slug: "massventures",
+    website: "https://www.mass-ventures.com",
+    short: "MassVentures",
+    founded: 1978,
+    hq: "Waltham, MA",
+    aum: "Not publicly disclosed (an evergreen fund that reinvests the proceeds of its investments; its own releases state over $115 million invested in more than 185 companies since 1978, which is cumulative capital deployed, not AUM)",
+    thesis: "MassVentures is a quasi-public corporation created by the Legislature of the Commonwealth of Massachusetts in 1978, not a private partnership. Its own relaunch announcement states it was formed in 1978 as a quasi-public corporation by the Legislature and is governed by an independent Board of Directors, and its public records page cites Section 10 of M.G.L. c. 40G as its enabling legislation and treats the organisation as subject to the state public records law and to the Open Meeting Law at M.G.L. c. 30A. Board members are appointed by the Governor, and the board is chaired by the state Economic Development Secretary. It carries out at least three distinct activities that should not be blended. MV Capital combines equity investment through a Deep Tech Venture Fund with non-dilutive grant programmes, principally the SBIR START grants for Massachusetts SBIR Phase II companies, plus Clean Energy Catalyst grants and THRiVE grants. MV Accelerate provides commercialisation support, founder education, SBIR coaching and mentoring, including the Founders School. MV Spinouts works with Massachusetts academic institutions to convert research and intellectual property into companies, through the Mass Academic Spinouts Center. Its stated investment focus is seed-stage deep tech companies and academic spinouts based in Massachusetts, across advanced manufacturing, advanced materials, artificial intelligence, robotics, photonics, electronics, quantum computing, cleantech, medical devices, biotechnology, internet of things, health security and cyber security, with a stated emphasis on diverse founding teams and on geographies across the Commonwealth rather than only Boston and Cambridge. It describes itself as an evergreen fund which has funded its own operations by recycling investment proceeds.",
+    leadership: [
+      { name: "Charlie Hipwood", role: "President & CEO", profileSlug: "charlie-hipwood" },
+      { name: "Vinit Nijhawan", role: "Managing Director", profileSlug: "vinit-nijhawan" },
+      { name: "Priya Yadav", role: "Vice President Investments", profileSlug: "priya-yadav" },
+      { name: "Stacy Swider", role: "Vice President Investments", profileSlug: "stacy-swider" },
+      { name: "Myron Kassaraba", role: "Vice President Investments", profileSlug: "myron-kassaraba" },
+      { name: "Whitney Leslie", role: "Vice President Portfolio Analytics & IR", profileSlug: "whitney-leslie" }
+    ],
+    timeline: [
+      { year: "1978", event: "Formed as the Massachusetts Technology Development Corporation (MTDC), a quasi-public corporation created by the Legislature of the Commonwealth of Massachusetts." },
+      { year: "2012", event: "MTDC announces on 14 June 2012 that it is now operating under the new name MassVentures." },
+      { year: "2012", event: "The SBIR START grant programme begins; firm releases date the programme's cumulative totals from 2012." },
+      { year: "2024", event: "Portfolio company JetCool Technologies is acquired in November 2024, recorded in the firm's FY2025 year in review." },
+      { year: "2025", event: "Launches the Mass Academic Spinouts Center on 9 January 2025, a rebranding of the Mass Tech Transfer Center, with Myron Kassaraba named as its Director." },
+      { year: "2025", event: "The Healey-Driscoll administration releases a MassVentures economic impact report prepared by the UMass Donahue Institute, reporting $112 million invested in 186 companies since 1978 against $8.5 million of state taxpayer capital (29 May 2025)." },
+      { year: "2025", event: "Governor Healey appoints four new members to the MassVentures Board of Directors, which is chaired by Economic Development Secretary Eric Paley (21 November 2025)." },
+      { year: "2026", event: "Announces $4.5 million in START grants to 26 Massachusetts startups on 13 August 2026, taking the programme to $46.2 million awarded to 157 companies since 2012." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Play Ventures",
+    sectors: ["Gaming", "Consumer", "B2B", "Infrastructure"],
+    signatureExit: "Reworks (acquired by Playtika, 2021)",
+    slug: "play-ventures",
+    website: "https://www.play.vc",
+    short: "Play Ventures",
+    founded: 2018,
+    hq: "Singapore, Singapore",
+    aum: "$450M (total assets under management, November 2024, per GamesBeat reporting the Fund III close; the firm's own homepage still carries the older figure of $175M across two funds from 2021)",
+    thesis: "Play Ventures describes itself as a gaming and consumer apps venture capital firm and states it invests in game studios, consumer apps, and B2B infrastructure and services startups. It states that it invests early, identifying teams and investing even before they have products, and that it backs founders from across the globe under the line 'For founders by founders'. It operates from Singapore and Helsinki through two entities, Play Ventures Pte Ltd and Play Ventures Oy, and manages five distinct vehicles: Fund I, Fund II, Fund III, the Play Future Fund and the Play Opportunity Fund.",
+    leadership: [
+      { name: "Henric Suuronen", role: "Founding Partner", profileSlug: "henric-suuronen" },
+      { name: "Harri Manninen", role: "Founding Partner", profileSlug: "harri-manninen" },
+      { name: "Phylicia Koh", role: "General Partner", profileSlug: "phylicia-koh" },
+      { name: "Anton Backman", role: "General Partner", profileSlug: "anton-backman" },
+      { name: "Kenrick Drijkoningen", role: "General Partner", profileSlug: "kenrick-drijkoningen" }
+    ],
+    timeline: [
+      { year: "2018", event: "Play Ventures is founded and announces it will invest $30M in game startups globally; Modern Times Group announces an investment in the new fund in December 2018." },
+      { year: "2019", event: "Play Ventures' first fund closes oversubscribed at $40M; Rovio Entertainment Corporation announces an investment in the Play Ventures fund in March 2019." },
+      { year: "2021", event: "Play Ventures announces the closing of Fund II at $135M and states this brings its total assets under management to $175M across both funds." },
+      { year: "2021", event: "The Play Future Fund and the Play Opportunity Fund are launched, both carrying a 2021 vintage in the firm's own fund performance update; Kenrick Drijkoningen becomes partner of the Play Future Fund from July 2021." },
+      { year: "2021", event: "Portfolio company Reworks is acquired by Playtika, reported by Bloomberg at up to $600M including earn-out." },
+      { year: "2023", event: "Fund III holds its initial close in June 2023; in August 2023 the firm announces Fund I returned 1.5x DPI to investors in under four years." },
+      { year: "2024", event: "Play Ventures announces the close of Fund III at $140M in November 2024, its largest fund to date, bringing its total assets under management to $450M." },
+      { year: "2025", event: "Portfolio company INCRMNTAL is acquired by Smartly." },
+      { year: "2026", event: "The firm publishes a fund performance update on 7 July 2026 reporting net IRR and DPI for all five of its vehicles, including 39.5% net IRR and 1.58x DPI for Fund I." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Redstone",
+    sectors: ["Fintech", "Deep Tech", "Industrial Tech", "Energy", "Infrastructure", "Climate", "Health", "Sustainability"],
+    signatureExit: null,
+    slug: "redstone",
+    website: "https://redstone.vc",
+    short: "Redstone",
+    founded: 2014,
+    hq: "Berlin, Germany",
+    aum: "Approximately €650M (across 15 funds, reported 31 August 2026 by EU-Startups; the firm's own Redstone Global Ventures ELTIF page states 600m \"Assets Under Mangement\" [sic] but carries no date)",
+    thesis: "Redstone describes itself as a European venture capital firm that follows selected investment strategies, run by specialised investment teams for each strategy. Its own strategy page names eight of them: FinTech, DeepTech, Industrial, Energy & Infrastructure, Blue Economy, Social Impact, Health and Venture Debt. The firm says it invests early in startups it considers to make a meaningful societal contribution, and reports 200+ portfolio firms, 8 sector strategies and 30+ employees on its Our Way page. It operates a proprietary in-house data platform it calls SOFIA, which it says it uses across fund initiation, sourcing, screening and portfolio support to make evidence-based investment decisions. Redstone runs multiple separate vehicles rather than a single flagship fund, including sector funds, regional funds in the Nordics and Switzerland, a venture debt activity branded Bridge to Growth, and the Redstone Global Ventures ELTIF for private investors. It has offices in Berlin, Helsinki and Zurich and a team in Hong Kong.",
+    leadership: [
+      { name: "Samuli Siren", role: "General Partner & Founder", profileSlug: "samuli-siren" },
+      { name: "Michael Brehm", role: "General Partner & Founder", profileSlug: "michael-brehm" },
+      { name: "Lars Haerle", role: "General Partner", profileSlug: "lars-haerle" },
+      { name: "Lukas Andre", role: "General Partner", profileSlug: "lukas-andre" },
+      { name: "Mickael Bellaiche", role: "General Partner", profileSlug: "mickael-bellaiche" },
+      { name: "Kaj Hagros", role: "Managing Partner Nordics", profileSlug: "kaj-hagros" },
+      { name: "Robert Shan", role: "Managing Partner Redstone Hong Kong", profileSlug: "robert-shan" },
+      { name: "Niklas Grunewald", role: "Fund Managing Partner", profileSlug: "niklas-grunewald" }
+    ],
+    timeline: [
+      { year: "2013", event: "Samuli Siren states on his own Redstone profile page that in the summer of 2013 he contacted Michael Brehm, who became his co-founder, and that they launched Redstone." },
+      { year: "2014", event: "Redstone's profile page for Niklas Grunewald says he co-founded Redstone in 2014, and EU-Startups reports the firm was founded in 2014." },
+      { year: "2016", event: "Lukas Andre joins Redstone and takes responsibility for the firm's activities in Switzerland, according to his Redstone profile page." },
+      { year: "2022", event: "Human Impact Capital, a EUR 50 million social impact fund, is launched by Redstone together with EnjoyVenture (announced 27 October 2022)." },
+      { year: "2023", event: "Redstone launches the Redstone Quantum Fund at CHF 50 million, announced 28 September 2023, with a first closing that summer and initial investments in four companies." },
+      { year: "2025", event: "Management of Helen Ventures' corporate venture capital portfolio is transferred to Redstone Nordics with effect from 1 June 2025." },
+      { year: "2026", event: "Redstone launches North Karelia Growth Fund II at EUR 10 million, targeting DeepTech, defence and the energy transition in Finland (announced 31 August 2026)." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Titan Capital",
+    sectors: ["Consumer Internet", "Consumer Products", "SaaS", "Fintech", "Healthtech", "B2B", "Consumer Tech"],
+    signatureExit: "Urban Company (exit reported July 2024; Rs 111 crore aggregate proceeds on a Rs 57 lakh investment made in 2015)",
+    slug: "titan-capital",
+    website: "https://www.titancapital.vc",
+    short: "Titan Capital",
+    founded: 2011,
+    hq: "Gurugram, India",
+    aum: "Not publicly disclosed (no AUM figure is published; Titan Capital Winners Fund announced a final close at Rs 333 crore, about $40M, in October 2024)",
+    thesis: "Titan Capital describes itself as \"Operator-led early stage capital\" and says it \"invests behind world class entrepreneurs looking to create wide-scale positive impact on India and the World.\" Its portfolio page states \"Our portfolio includes 200+ companies worldwide across consumer internet, direct to consumer brands, SaaS, Fintech and Healthtech.\" The brand covers two distinct vehicles that the firm staffs separately on its own team page: a seed activity (Titan Capital Seed) funded by co-founders Kunal Bahl and Rohit Bansal rather than by an outside corpus, and Titan Capital Winners Fund, which the firm states is \"an SEBI registered CAT-II AIF which invests in the early stages of technology-enabled startups across sectors\" and which \"invests in pre-Series A, Series A and Series B rounds of the portfolio companies showing high potential.\"",
+    leadership: [
+      { name: "Kunal Bahl", role: "Co-founder", profileSlug: "kunal-bahl" },
+      { name: "Rohit Bansal", role: "Co-founder", profileSlug: "rohit-bansal" },
+      { name: "Chetan Rana", role: "CFO" }
+    ],
+    timeline: [
+      { year: "2011", event: "Entrackr reports that \"Since 2011, Titan Capital has backed more than 250 companies\", dating the start of the founders' investing activity under the Titan Capital name to 2011." },
+      { year: "2015", event: "Kunal Bahl and Rohit Bansal invest Rs 57 lakh in Urban Company through Titan Capital, per Business Standard." },
+      { year: "2022", event: "Honasa Consumer (Mamaearth) files draft IPO papers in December 2022; Kunal Bahl and Rohit Kumar Bansal are named among the selling shareholders in the offer for sale." },
+      { year: "2024", event: "Business Standard reports in July 2024 that Bahl and Bansal exited Urban Company for aggregate proceeds of Rs 111 crore on their Rs 57 lakh 2015 investment." },
+      { year: "2024", event: "Titan Capital Winners Fund announces a final close at Rs 333 crore (about $40M) in October 2024." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "NC Tweener Fund",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "triangle-tweener-fund",
+    website: "https://www.tweenerfund.com",
+    short: "NC Tweener Fund",
+    founded: 2022,
+    hq: null,
+    aum: null,
+    thesis: "The NC Tweener Fund, styled \"NC Tweener Fund, Powered by NC IDEA\", is a rolling fund run on the AngelList Rolling Fund platform and is, in its own words, \"always open to new accredited investors\". Its stated strategy is to build an index rather than to pick winners: \"smaller investments in a relatively large number of NC-based companies\", which it says translates to 10-15 investments a quarter, or 40-60 a year, at an average of about $50,000 per company. The minimum LP commitment is $30,000, taken as four quarterly investments of $7,500. It invests only in North Carolina-headquartered companies and, since February 2026, across the whole state in seven named regions rather than the Triangle alone. Its targets are what it calls Tweeners and Pre-Tweeners: North Carolina technology companies with either $1M+ in annual revenue or 10+ employees, which the firm describes as \"the 'Goldilocks' companies\" that are \"not too small and not too large\" and which its own tracking says have more good outcomes and fewer closures than other cohorts. Companies graduate off its Tweener List at $80M+ revenue or 500 employees. The fund states no sector focus; its selection criterion is geography, size and stage.",
+    leadership: [
+      { name: "Scot Wingo", role: "General Partner", profileSlug: "scot-wingo" },
+      { name: "Robbie Allen", role: "General Partner", profileSlug: "robbie-allen" }
+    ],
+    timeline: [
+      { year: "2015", event: "Scot Wingo launches the Triangle Tweener List, a directory of Triangle-area technology companies meeting a defined size threshold, which later becomes the fund's sourcing universe." },
+      { year: "2022", event: "The Triangle Tweener Fund launches as an AngelList rolling fund; the fund's own about page says \"In 2022, we launched the Triangle Tweener Fund\", and the first Form D, for Triangle Tweener Fund, LP - A1 (CIK 0001899495), was filed on 4 January 2022." },
+      { year: "2026", event: "NC IDEA announces on 20 February 2026 a $4 million five-year limited partner investment in the fund, which broadens its mandate from the Triangle to the whole of North Carolina and rebrands it \"NC Tweener Fund, Powered by NC IDEA\"." },
+      { year: "2026", event: "NC IDEA announces on 13 April 2026 the fund's first statewide investments: $700,000 across 14 startups in the first quarter of 2026, seven of them new companies in Winston-Salem, Cary, Charlotte, Wilmington and Carolina Beach." },
+      { year: "2026", event: "NC IDEA announces on 22 April 2026 the launch of the first statewide NC Tweener List, the expanded successor to the Triangle Tweener List." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Village Capital",
+    sectors: ["Sustainability", "Fintech", "Health", "Climate Technology", "Food & Agriculture", "Workforce Development", "Social-Impact Software"],
+    signatureExit: null,
+    slug: "village-capital",
+    website: "https://vilcap.com",
+    short: "Village Capital",
+    founded: 2009,
+    hq: "Houston, TX",
+    aum: "Not publicly disclosed (no source uses the words \"assets under management\" about Village Capital; VilCap Investments closed USD 17.7M in commitments and reports $17M invested across 116 early-stage startups)",
+    thesis: "Village Capital is a nonprofit that supports early-stage impact startups and manages affiliated investment vehicles. Its own boilerplate states that it 'unlocks critical social and financial capital for early-stage startups to maximize business and impact growth' and that its founders build solutions 'across economic mobility, environmental sustainability, and access to essential services'. Its distinguishing method is peer selection: cohort founders rank one another and the top-ranked companies receive investment, a model it calls peer due diligence and which it publishes at vilcap.com/peer-due-diligence-and-selection-model. It runs accelerator programmes worldwide, partners with locally led entrepreneur support organisations, publishes tools including the Smarter Systems toolkit and Capital Explorer, and states that it designs and manages funds offering flexible financing such as equity, debt and hybrid structures. Its investing is carried out through affiliated vehicles rather than a single fund: VilCap Investments plus named facilities including the Financial Health Innovation Fund, the Africa Ecosystem Catalysts Facility, the VilCap Innovative Capital Facility NWA, the Reducing Inequalities Facility and the Women in Tech Financing Facility. Checks disclosed in its own 2026 announcements are small, in the USD 75K to USD 200K range.",
+    leadership: [
+      { name: "Ellen Brooks", role: "Chief Executive Officer", profileSlug: "ellen-brooks" },
+      { name: "Heather Matranga", role: "Managing Director of Venture and Investments", profileSlug: "heather-matranga" },
+      { name: "Michael Davis", role: "Managing Director, VilCap Investments", profileSlug: "michael-davis" },
+      { name: "Robert Pryor", role: "Finance Director" },
+      { name: "Christine Aquino", role: "Head of Team & Organizational Development" }
+    ],
+    timeline: [
+      { year: "2009", event: "Village Capital begins from an idea of Ross Baird and Bob Pattillo, with the pilot programme co-designed by Sean Foote, and launches its first accelerator in New Orleans." },
+      { year: "2010", event: "Village Capital incorporates as a 501(c)(3) nonprofit organization and its peer-selected methodology expands internationally, per the firm's own story page. The IRS records the ruling date for VilCap, Inc.'s tax-exempt status as January 2012." },
+      { year: "2012", event: "VilCap Investments launches, with Victoria Fram as co-founder." },
+      { year: "2016", event: "Village Capital launches VilCap Communities." },
+      { year: "2018", event: "VilCap Investments marks its 100th peer-selected investment, in Wexus Technologies." },
+      { year: "2023", event: "Village Capital introduces the Smarter Systems toolkit and launches Capital Explorer." },
+      { year: "2025", event: "Village Capital announces on 6 August 2025 the appointment of Ellen Brooks as Chief Executive Officer effective September 2025, succeeding Allie Burns after 6.5 years as CEO." },
+      { year: "2026", event: "The Africa Ecosystem Catalysts Facility, a USD 4M pilot facility funded by FMO and RVO and managed by Village Capital, announces its first Ghana investments in May 2026 and a further USD 500K in August 2026, taking deployment in Ghana to USD 850K across five companies." },
+      { year: "2026", event: "Village Capital launches the VilCap Innovative Capital Facility NWA for early-stage companies in Northwest Arkansas, announced 20 July 2026, planning roughly five investments of USD 100K to USD 150K each." }
+    ],
+    holdings: []
   }
 ];
