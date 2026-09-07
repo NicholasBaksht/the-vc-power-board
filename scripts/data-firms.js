@@ -12634,5 +12634,664 @@ holdings: []
       { year: "2026", event: "The firm states that PitchBook ranked Team Ignite the third most active early-stage investor in the world for the second quarter of 2026." }
     ],
     holdings: []
+  },
+
+  /* ---- Firm batch 2, added 7 September 2026: 20 firms. Their partner records
+     are in data-partners-6.js and their field-level provenance is in
+     data-evidence.js, added in the same batch. Checked against all 461
+     pre-existing firms for slug, name, historical-name and parent-brand
+     collisions before insertion; none found. ---- */
+  {
+    rank: null,
+    name: "Acequia Capital",
+    sectors: ["AI", "Machine Learning", "Commerce", "Industrial Tech", "Infrastructure", "Logistics", "Life Sciences", "Gaming", "Software", "Financial Technology"],
+    signatureExit: null,
+    slug: "acequia-capital",
+    website: "https://www.acecap.com",
+    short: "AceCap",
+    founded: 2010,
+    hq: "Seattle, WA",
+    aum: null,
+    thesis: "Acequia Capital is an early-stage global technology investor. Its own About page states: \"Founded in 2010 by Microsoft senior executive, Hank Vigil, we have invested in more than 350 technology companies and have achieved more than a decade of consistent, top quartile returns.\" The homepage describes the firm as an early-stage investment platform sitting \"at the center of a global ecosystem that attracts and fuels the technical founders and product teams building the next wave of global businesses\", and the About page emphasises operating help on product roadmap and technology strategy alongside capital. The team is organised into a deal team, a finance and operations group, and a set of venture partners covering new industrials, intelligence and defense, onshoring and energy policy, and media. In September 2023 the firm published a two-part statement of its New Industrials strategy for what it calls the reindustrial age. Its SEC filings show it operating both single-company vehicles and pooled funds, including an SBIC-designated fund, from Seattle.",
+    leadership: [
+      { name: "Hank Vigil", role: "Founder & Managing Partner", profileSlug: "hank-vigil" },
+      { name: "Leif Danielsen", role: "General Partner", profileSlug: "leif-danielsen" },
+      { name: "Marc Jalabert", role: "European Partner", profileSlug: "marc-jalabert" },
+      { name: "Todd Hooper", role: "Partner, AI, ML & Software", profileSlug: "todd-hooper" },
+      { name: "Mack Hopen", role: "Partner, Hardware, Industrials", profileSlug: "mack-hopen" },
+      { name: "Rauten Hofmeyr", role: "Chief Operating Officer" },
+      { name: "Chris Strand", role: "Chief Financial Officer" }
+    ],
+    timeline: [
+      { year: "2010", event: "Acequia Capital is founded by Hank Vigil, a Microsoft senior executive, per the firm's own About page." },
+      { year: "2012", event: "Acequia Capital Pinterest LLC files a Form D on 23 July 2012 reporting $2,650,000 offered and sold, signed by Henry Vigil, with Acequia Capital Management LLC as management company; this is the earliest Acequia Capital filing returned by EDGAR full-text search." },
+      { year: "2014", event: "Acequia Capital ClassPass LLC files its first Form D on 21 August 2014." },
+      { year: "2023", event: "The firm publishes a two-part essay, \"New Industrials: An Investment Strategy for the Reindustrial Age\", on its Perspectives blog in September 2023." },
+      { year: "2025", event: "Acequia Capital Origin SBIC LP files a Form D on 24 September 2025 from 1215 4th Avenue, 15th Floor, Seattle, reporting $70,000,000 sold against an indefinite offering, signed by Leif Danielsen, with Henry Vigil and Leif Danielsen named as managing members of the ultimate general partner." },
+      { year: "2026", event: "Acequia Capital OCN LP files a Form D on 21 August 2026 reporting $2,870,000 sold against an indefinite offering, signed by Henry P. Vigil." }
+    ],
+    holdings: [
+      { name: "Pinterest, Inc.", ticker: "PINS", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Blackbird Ventures",
+    sectors: ["Software", "Space", "Technology"],
+    signatureExit: "Zoox (acquired by Amazon, 2020)",
+    slug: "blackbird-ventures",
+    website: "https://www.blackbird.vc",
+    short: "Blackbird",
+    founded: 2012,
+    hq: "Sydney, Australia",
+    aum: "A$1.05B (sixth fund, final close announced 25 August 2026; Blackbird publishes no firm-wide AUM or funds-under-management figure)",
+    thesis: "Blackbird describes itself as an Australasian investment firm backing startups founded in Australia and New Zealand. It states that it invests in founders, not sectors or stages, and that it invests in every type of technology from software to space. Its investors page describes two fund types in each vintage: a Core Fund investing in the very first rounds, before revenue and product, and a Follow-On Fund investing at the growth stages from Series B onward in companies already in the portfolio. It also states that it manages a number of direct co-investment vehicles for its investors alongside its discretionary funds. Its people are based in Sydney, Melbourne and Auckland, with the New Zealand operation known as Blackbird Aotearoa and a local team established in Auckland in 2020.",
+    leadership: [
+      { name: "Rick Baker", role: "Partner (identified as Founder and Partner in the firm's 25 August 2026 media release)", profileSlug: "rick-baker" },
+      { name: "Niki Scevak", role: "Partner (co-founder)", profileSlug: "niki-scevak" },
+      { name: "Samantha Wong", role: "Partner", profileSlug: "samantha-wong" },
+      { name: "Nick Crocker", role: "Partner", profileSlug: "nick-crocker" },
+      { name: "Phoebe Harrop", role: "Partner", profileSlug: "phoebe-harrop" },
+      { name: "Michael Tolo", role: "Partner", profileSlug: "michael-tolo" },
+      { name: "Tom Humphrey", role: "Partner", profileSlug: "tom-humphrey" },
+      { name: "Alex Apoifis", role: "Partner, Chief Operating Officer", profileSlug: "alex-apoifis" },
+      { name: "Robyn Denholm", role: "Board Member" }
+    ],
+    timeline: [
+      { year: "2012", event: "Blackbird Ventures is founded by Niki Scevak and Rick Baker, per Wikipedia; Blackbird's own August 2026 post says the firm began almost fifteen years earlier." },
+      { year: "2013", event: "Blackbird's investors page records a 2013 vintage with A$29M of committed capital across 20 core investments." },
+      { year: "2014", event: "Blackbird invests in Zoox, the California autonomous mobility company, per its own portfolio page which gives 2014 as the year invested." },
+      { year: "2015", event: "Blackbird's investors page records a 2015 vintage with A$193M of committed capital across 31 core investments." },
+      { year: "2018", event: "Blackbird's investors page records a 2018 vintage with A$261M of committed capital across 35 core investments." },
+      { year: "2020", event: "Amazon announces on 26 June 2020 that it has signed an agreement to acquire Zoox." },
+      { year: "2020", event: "Blackbird establishes a local team in Auckland, the operation it calls Blackbird Aotearoa; its investors page records a 2020 vintage with A$647M of committed capital across 58 core investments." },
+      { year: "2022", event: "Blackbird's investors page records a 2022 vintage with A$1,032M of committed capital across 85 core investments." },
+      { year: "2024", event: "Blackbird announces in April 2024 that Phoebe Harrop takes over leadership of Blackbird Aotearoa, and states it has raised $140M in funds solely for New Zealand founders." },
+      { year: "2025", event: "Blackbird states in its 2025 year in review that it returned $728M to investors during the year, bringing the total returned to over $2.3B, and invested $357M into 20 new and 31 follow-on rounds." },
+      { year: "2026", event: "Blackbird announces on 25 August 2026 the close of its sixth fund at A$1.05 billion, presented to the New Zealand market as more than NZ$1.25 billion, and states it has invested more than A$3 billion across 190 companies with a portfolio valued at over A$12.5 billion." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "CMT Digital",
+    sectors: ["Blockchain", "DeFi", "Crypto", "Fintech", "Infrastructure"],
+    signatureExit: "Circle Internet Group, Inc. (IPO June 2025; NYSE ticker CRCL)",
+    slug: "cmt-digital",
+    website: "https://cmt.digital",
+    short: "CMT Digital. CMT's own 2023 release calls it a division of the trading firm CMT Group.",
+    founded: null,
+    hq: "Chicago, IL",
+    aum: "$136M (Fund IV close, October 2025, per Fortune; CMT Digital publishes no firm-wide AUM figure - prior funds were $25.5M, $130M and $100M)",
+    thesis: "CMT Digital describes itself as a venture capital firm focused on early-stage investments that accelerate the adoption of blockchain technology, and says it has invested in over 150 blockchain and crypto-focused businesses, protocols and tokens across four global funds. Its about page states that it is an early-stage web3 venture firm with the backing of the CMT Group, the trading and investment firm established in 1997 by its two co-founders, and that the group's expertise across trading, investing, risk management and technology complements the venture fund. The firm describes its approach as multi-generational, multi-disciplinary and globally diverse, pairing the founders' trading experience with younger investors who have worked through crypto cycles, and it emphasises operations and regulatory work, noting that it was one of the first crypto managers registered with the SEC through CMT Asset Management LLC. Its portfolio taxonomy covers DAO, Data, DeFi, Financial Services, Fintech, Fund, Gaming, Infrastructure, Mining and NFT/Social.",
+    leadership: [
+      { name: "Scott Casto", role: "Co-Founder", profileSlug: "scott-casto" },
+      { name: "Jan-Dirk Lueders", role: "Co-Founder", profileSlug: "jan-dirk-lueders" },
+      { name: "Sam Hallene", role: "Investment Partner", profileSlug: "sam-hallene" },
+      { name: "Charlie Sandor", role: "Investment Partner", profileSlug: "charlie-sandor" },
+      { name: "Augie Ilag", role: "Investment Partner", profileSlug: "augie-ilag" }
+    ],
+    timeline: [
+      { year: "1997", event: "Scott Casto and Jan-Dirk Lueders establish the CMT Group, described by CMT Digital as a global electronic trading firm focused on low-latency electronic trading infrastructure." },
+      { year: "2015", event: "CMT's own release of 28 June 2023 describes the firm as investing in blockchain and digital asset ventures 'since 2015' and states 'Founded in 2015'. The firm's homepage says 2017. The conflict is unresolved and founded is left null." },
+      { year: "2017", event: "CMT Digital is founded as the CMT Group's digital assets and blockchain venture arm, per the founding statement on its homepage." },
+      { year: "2018", event: "CMT Digital Ventures Fund I LLC files its Form D with the SEC on 16 October 2018." },
+      { year: "2021", event: "CMT Digital Ventures Fund II LLC and CMT Digital Ventures Fund II (QP) LLC file Form D with the SEC on 26 April 2021." },
+      { year: "2023", event: "Augustus 'Augie' Ilag is appointed Head of Asia and Erik Ellingson Head of Business Development, announced 28 June 2023." },
+      { year: "2024", event: "CMT Digital Ventures Fund IV LLC and CMT Digital Ventures Offshore Fund IV Ltd. file Form D with the SEC on 30 September 2024; the firm tells Fortune in June 2024 it is targeting $150 million for the fund." },
+      { year: "2025", event: "CMT Digital closes its fourth venture fund at $136 million in early October 2025." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Cormorant Asset Management",
+    sectors: ["Biotech", "Life Sciences", "Healthcare", "Medtech"],
+    signatureExit: null,
+    slug: "cormorant-asset-management",
+    website: "https://cormorant-asset.com",
+    short: "Cormorant",
+    founded: 2013,
+    hq: "Boston, MA",
+    aum: "Over $2.4B (assets under management as of 30 September 2025, as stated in the Helix Acquisition Corp. III IPO prospectus, Form 424B4 filed 23 January 2026; the firm's Form ADV Item 5.F figure could not be read)",
+    thesis: "Cormorant Asset Management, LP describes itself as a life sciences and healthcare focused investment firm, founded by Bihua Chen in 2013, that primarily invests in biotechnology companies across the public and private markets. It says it employs a long-term, fundamental and research-intensive approach grounded in deep scientific and therapeutic analysis, and that it seeks to understand drugs, technologies, business models and competitive landscapes. The IPO prospectus of Helix Acquisition Corp. III, a special purpose acquisition company whose sponsor is a Cormorant affiliate, states that since its inception in 2013 Cormorant has focused on the healthcare industry and invests, throughout their growth cycle, in companies that discover and develop therapeutic drugs or medical technology. The firm is registered with the SEC as an investment adviser, files quarterly Form 13F-HR reports on its US-listed long positions, and runs a series of private funds alongside its public strategy: Cormorant Global Healthcare Master Fund, LP and Cormorant Private Healthcare Fund II, III, IV, V and VI, LP.",
+    leadership: [
+      { name: "Bihua Chen", role: "Chief Executive Officer / Chief Investment Officer", profileSlug: "bihua-chen" },
+      { name: "Raymond Kelleher", role: "Managing Director", profileSlug: "raymond-kelleher" },
+      { name: "Caleb Tripp", role: "Chief Financial Officer / Chief Operating Officer", profileSlug: "caleb-tripp" },
+      { name: "Neb Obradovic", role: "General Counsel / Chief Compliance Officer", profileSlug: "neb-obradovic" }
+    ],
+    timeline: [
+      { year: "2013", event: "Bihua Chen founds Cormorant Asset Management in Boston." },
+      { year: "2017", event: "The firm's SEC filings change from Cormorant Asset Management, LLC to Cormorant Asset Management, LP: the 13F-HR for the quarter ended 31 March 2017 was filed under the LLC name and the 13F-HR for the quarter ended 30 September 2017 under the LP name." },
+      { year: "2026", event: "Helix Acquisition Corp. III, a special purpose acquisition company whose sponsor is a Cormorant affiliate and whose Chairperson and CEO is Bihua Chen, completes its IPO (Form 424B4 filed 23 January 2026); the prospectus states Cormorant had over $2.4 billion in assets under management as of 30 September 2025." }
+    ],
+    holdings: [
+      { name: "Praxis Precision Medicines, Inc.", ticker: "PRAX", historicalPrice: null, price: null },
+      { name: "BridgeBio Oncology Therapeutics, Inc.", ticker: "BBOT", historicalPrice: null, price: null },
+      { name: "Parabilis Medicines, Inc.", ticker: "PBLS", historicalPrice: null, price: null },
+      { name: "Rapport Therapeutics, Inc.", ticker: "RAPP", historicalPrice: null, price: null },
+      { name: "Erasca, Inc.", ticker: "ERAS", historicalPrice: null, price: null },
+      { name: "Edgewise Therapeutics, Inc.", ticker: "EWTX", historicalPrice: null, price: null },
+      { name: "EyePoint, Inc.", ticker: "EYPT", historicalPrice: null, price: null },
+      { name: "Alumis Inc.", ticker: "ALMS", historicalPrice: null, price: null },
+      { name: "Abivax S.A.", ticker: "ABVX", historicalPrice: null, price: null },
+      { name: "MoonLake Immunotherapeutics", ticker: "MLTX", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "First Star Ventures",
+    sectors: ["Deep Tech", "Artificial Intelligence", "Robotics", "Biotech", "Life Sciences"],
+    signatureExit: null,
+    slug: "first-star-ventures",
+    website: "https://firststar.vc",
+    short: "First Star",
+    founded: 2014,
+    hq: "Cambridge, MA",
+    aum: null,
+    thesis: "First Star Ventures is a pre-seed fund. Its own About page states its focus as \"Pre-traction, Research-driven, on the Evolutionary Edge of Computing\" and describes it as a \"deep tech AI fund\" that invests \"with conviction at the earliest stages in visionary, technical founders\", backing researcher founders and helping them scale from zero to Series A and beyond. Its homepage names robotics, biotechnology, AI and genomics as the fields it works in. The About page states three partners, 53 startups backed across three funds, and $3B in cumulative exit value generated by the partners as founders, executives and investors. The fund operates from 245 Main Street, Cambridge, Massachusetts.",
+    leadership: [
+      { name: "Drew Volpe", role: "Founding Partner", profileSlug: "drew-volpe" },
+      { name: "Millie Liu", role: "Founding Partner", profileSlug: "millie-liu" },
+      { name: "Teddy Blank", role: "Partner", profileSlug: "teddy-blank" }
+    ],
+    timeline: [
+      { year: "2014", event: "The firm launches a debut $10 million fund under a different name, Procyon Ventures, according to TechCrunch's 16 September 2022 report." },
+      { year: "2017", event: "First Star Venture Fund II LP is organised in Delaware and files its first Form D on 3 March 2017 from a Boston, MA address, the first appearance of the First Star name in EDGAR." },
+      { year: "2019", event: "First Star Venture Fund II LP files a Form D/A on 20 August 2019, signed by Ruiyi Liu, reporting a $25,000,000 offering fully sold, from 245 Main Street, Cambridge, MA." },
+      { year: "2022", event: "First Star Venture Fund III LP files a Form D on 16 September 2022, signed by Andrew Volpe, for a $40,000,000 offering with $0 sold at the date of filing; First Star Ventures LLC is named as the management company." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Fuel Ventures",
+    sectors: ["SaaS", "Fintech", "Marketplaces", "Technology"],
+    signatureExit: "ContentCal (exited to Adobe, per Fuel Ventures' own homepage; the firm states no year)",
+    slug: "fuel-ventures",
+    website: "https://www.fuel.ventures",
+    short: "Fuel Ventures",
+    founded: 2014,
+    hq: null,
+    aum: "Not publicly disclosed (no AUM or funds-under-management figure is published; the firm states the funds have invested over £280m across 230+ companies, which is cumulative capital invested)",
+    thesis: "Fuel Ventures is a UK venture capital manager investing from pre-seed to Series A in technology companies with early commercial traction. Its site states cheque sizes of £150k to £3m and around 30 new first-cheque investments a year. It is not a single-fund partnership: it runs several distinct UK tax-advantaged vehicles, and its investors page names four - a Pre-Seed SEIS Fund writing up to £250,000, a Scale-up EIS Fund writing £1m to £3m, a Follow On EIS Fund writing £500k to £2m, and a VCT Fund writing £250k to £1m. The firm's own page describing its model refers to five separate funds, and its sitemap additionally carries a Seed EIS fund page. The SEIS fund is stated to invest in a diversified portfolio of 20 to 30 early-stage technology companies a year, with a minimum of ten companies per investor. Fuel Ventures Limited is an appointed representative of Palace Ventures Limited, which is authorised and regulated by the Financial Conduct Authority under firm reference number 433291; Fuel Ventures is not itself the FCA-authorised entity. Its founder Mark Pearson has written that the firm deploys around £70m a year and names SaaS, fintech and marketplaces as focus areas.",
+    leadership: [
+      { name: "Mark Pearson", role: "Managing Partner (founder of Fuel Ventures)", profileSlug: "mark-pearson" },
+      { name: "Michael Burnett", role: "Managing Partner", profileSlug: "michael-burnett" },
+      { name: "Jing Jing Xu", role: "Partner", profileSlug: "jing-jing-xu" },
+      { name: "Shiv Patel", role: "Partner", profileSlug: "shiv-patel" },
+      { name: "Oliver Hammond", role: "Partner", profileSlug: "oliver-hammond" }
+    ],
+    timeline: [
+      { year: "2014", event: "Fuel Ventures begins, on its own account: 'Fuel Ventures technically started back in 2014 when we started raising our first fund.'" },
+      { year: "2024", event: "Mark Pearson writes in Maddyness UK on 2 December 2024 that Fuel Ventures invests £250K to £3M, deploys around £70m a year and has backed over 170 companies." },
+      { year: "2025", event: "Fuel Ventures announces investments including Community Wolf (£340,000, January 2025), Jack Fertility (over £500,000, January 2025) and Intelligent Core (£2m)." },
+      { year: "2026", event: "Fuel Ventures announces Deaku's £480,000 pre-seed round on 13 March 2026 and states across its site that its funds have invested over £280m into 230+ companies." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "FundersClub",
+    sectors: ["Media", "Data", "Crypto", "Consumer", "Ecommerce", "Enterprise", "Fintech", "Foodtech", "Hardware", "Healthcare", "Marketplaces", "Mobile"],
+    signatureExit: "Coinbase (Nasdaq direct listing, 2021)",
+    slug: "fundersclub",
+    website: "https://fundersclub.com",
+    short: "FundersClub",
+    founded: 2012,
+    hq: "San Francisco, CA",
+    aum: null,
+    thesis: "FundersClub is an online investment platform and a manager of venture funds, not a conventional venture partnership. Its own homepage describes it as an online venture capital platform and states that \"FundersClub became the first online VC firm in March 2012\". Accredited investors join as members and subscribe to individual investment vehicles offered through the site, alongside pooled funds the firm manages. The firm's own about page states that it uses \"software and community to source, vet, fund, and support\" startups, that it accepts fewer than 2 per cent of the companies it reviews, that it runs an internal investment committee plus a panel review by hand-picked members, and that it \"does not provide investment advice to investors\". Its stated stage focus is Early Stage, Seed and Series A, and its stated geographies are Asia, Canada, Europe, Latin America and the United States. FundersClub Inc. is registered with the SEC and with California as an EXEMPT REPORTING ADVISER, not as a registered investment adviser and not as a broker-dealer: SEC staff granted FundersClub Inc. and FundersClub Management LLC no-action relief from broker-dealer registration under Section 15(a)(1) of the Exchange Act on 26 March 2013. Its Regulation D offerings are made through a large number of single-purpose \"FundersClub [XXX] LLC\" vehicles that each file their own Form D, and it also manages pooled funds filed as FCVC Fund II L.P. and FCVC Fund III L.P.",
+    leadership: [
+      { name: "Alex Mittal", role: "Co-Founder and CEO", profileSlug: "alex-mittal" },
+      { name: "Boris Silver", role: "Co-Founder and President", profileSlug: "boris-silver" }
+    ],
+    timeline: [
+      { year: "2012", event: "FundersClub launches as an online venture capital platform; the firm's homepage states it \"became the first online VC firm in March 2012\" and its press page states it was founded in 2012." },
+      { year: "2012", event: "FundersClub Inc. (CIK 0001560729) files its first Form D with the SEC on 22 October 2012, from a Palo Alto, CA address." },
+      { year: "2013", event: "SEC staff issue a no-action letter on 26 March 2013 stating they will not recommend enforcement action under Section 15(a)(1) of the Exchange Act if FundersClub Inc. and FundersClub Management LLC conduct the described platform activities without registering as broker-dealers." },
+      { year: "2013", event: "FundersClub Inc. is recorded by IAPD as an Exempt Reporting Adviser with the State of California, effective 2 January 2013." },
+      { year: "2014", event: "FundersClub launches Partnerships, allowing outside venture firms, accelerators and angel investors to raise and run funds on the platform; TechCrunch covers the launch on 25 July 2014 and the firm announces it on its own blog on 18 July 2014." },
+      { year: "2016", event: "FundersClub Inc. is recorded by IAPD as an Exempt Reporting Adviser with the SEC, effective 31 March 2016, under SEC file number 802-107655." },
+      { year: "2022", event: "FCVC Fund III L.P. files a Form D on 16 June 2022 for an offering of up to $100,000,000; the filing names FCVC Advisors III LLC as general partner, FundersClub Inc. as manager of the general partner, Alexander Mittal as its CEO and Boris Silver as its President." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Hack VC",
+    sectors: ["Crypto", "AI", "Web3", "Infrastructure", "DeFi"],
+    signatureExit: "Rail (acquired by Ripple for $200M, 2025)",
+    slug: "hack-vc",
+    website: "https://hack.vc",
+    short: "Hack VC",
+    founded: 2014,
+    hq: "Palo Alto, CA",
+    aum: "~$700M (firm-stated AUM as of Q3 2025, with ~$550M of committed capital at year-end 2025, per the firm's own \"Hack VC 2025 Wrapped\", 7 January 2026)",
+    thesis: "Hack VC describes itself as a thesis-driven venture capital firm that partners at the earliest stages with founders building the future of the Internet across crypto, AI and other frontier technologies. Its about page says it has been one of the first institutional investors in frontier technologies such as Web3 and AI, supporting founders from idea to global scale since 2014, and that it is a team of VCs, founders, developers and researchers who build alongside the founders they back. The firm runs hack.labs(), described as its internal R&D arm, and hack.summit(), described as a Web3 developer community of more than 130,000 engineers from 157 countries. Its portfolio page groups investments under AI, (DE)FI and Web3 Infrastructure. The firm reported deploying about $50M across 29 deals in 2025 and said 26 of its portfolio companies launched public tokens that year.",
+    leadership: [
+      { name: "Alexander Pack", role: "Managing Partner", profileSlug: "alexander-pack" },
+      { name: "Harrison Dahme", role: "Partner, CTO", profileSlug: "harrison-dahme" },
+      { name: "Daniel Bulaevsky", role: "Partner, GC, COO", profileSlug: "daniel-bulaevsky" },
+      { name: "Peter Hans", role: "Partner, Global Head of Business Development", profileSlug: "peter-hans" },
+      { name: "Ed Roman", role: "Special Advisor" }
+    ],
+    timeline: [
+      { year: "2014", event: "Hack VC's about page states the firm has supported founders from idea to global scale since 2014; it also runs the hack.summit() Web3 developer community." },
+      { year: "2022", event: "Hack VC closes its initial $200 million crypto fund in February 2022, per Decrypt's February 2024 report." },
+      { year: "2024", event: "Hack VC raises $150 million for its first venture fund, announced 21 February 2024, taking total assets under management above $425 million at that date." },
+      { year: "2025", event: "Harrison Dahme joins as Partner and Chief Technology Officer, announced on the firm's blog on 18 August 2025." },
+      { year: "2025", event: "Portfolio company Rail, a global payments infrastructure company Hack VC says it backed at pre-seed in 2021, is acquired by Ripple for $200 million." },
+      { year: "2025", event: "Hack VC reports approximately $700 million in AUM as of Q3 2025 and approximately $550 million in committed capital at year-end." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Hashed",
+    sectors: ["Blockchain", "Crypto", "Web3", "AI", "Gaming", "DeFi"],
+    signatureExit: null,
+    slug: "hashed",
+    website: "https://www.hashed.com",
+    short: "Hashed",
+    founded: 2017,
+    hq: "Seoul, South Korea",
+    aum: "Not publicly disclosed (no firm-wide AUM figure is published; sourced Korean fund closes for Hashed Ventures Inc. are 1,122억원 in 2020 and 2,403억원 in 2021, with a third association formed in 2024)",
+    thesis: "Hashed describes itself on its own site as a global, early stage venture fund backing founders who are pioneering the future of blockchain and cryptocurrency, and on its homepage as backing founders building the next paradigm in AI, crypto and frontier tech. It says it is a team of blockchain experts and builders based in Seoul, Singapore, San Francisco and Abu Dhabi, and its homepage also lists Bangalore. Alongside investing it runs ecosystem programmes and events, and it operates or is associated with separate brands including Hashed Emergent for India and emerging markets, Hashed Labs as an acceleration programme for decentralised applications and blockchain games, Hashed Open Research for regulation and policy research, UNOPND, Factomind, ShardLab and KODA. Korean coverage in April 2026 reported that the firm has been widening beyond blockchain into AI, including a January 2026 programme called Vibe Labs for AI native early stage founders.",
+    leadership: [
+      { name: "Simon Seojoon Kim", role: "CEO & Managing Partner", profileSlug: "simon-seojoon-kim" },
+      { name: "Ryan Sungho Kim", role: "Cofounder & Partner", profileSlug: "ryan-sungho-kim" },
+      { name: "Ethan Kyuntae Kim", role: "Cofounder & Partner", profileSlug: "ethan-kyuntae-kim" },
+      { name: "Sean Hong", role: "CFO & Partner", profileSlug: "sean-hong" },
+      { name: "Baek Kim", role: "Partner", profileSlug: "baek-kim" },
+      { name: "Edward Hong", role: "CPO & Partner", profileSlug: "edward-hong" },
+      { name: "Tak Lee", role: "Venture Partner", profileSlug: "tak-lee" }
+    ],
+    timeline: [
+      { year: "2017", event: "Hashed is founded; the firm's own site carries the copyright line for Hashed, Inc. from 2017 and Hashed Emergent's about page describes Hashed as founded in 2017." },
+      { year: "2018", event: "The Korean corporate entity 주식회사 해시드 (Hashed Inc.), registered as an accelerator (액셀러레이팅) with 김서준 (Kim Seo-jun, Simon Seojoon Kim) as representative, is established on 2 March 2018 per THE VC's company record." },
+      { year: "2020", event: "A second Korean entity, 주식회사 해시드벤처스 (Hashed Ventures Inc.), is established on 25 September 2020 to run the licensed Korean venture funds." },
+      { year: "2020", event: "Hashed Venture Investment Association No. 1 (해시드 벤처투자조합1호) is formed on 12 November 2020 at KRW 112.2 billion (1,122억원)." },
+      { year: "2021", event: "Hashed Venture Investment Association No. 2 (해시드 벤처투자조합2호) is formed on 3 December 2021 at KRW 240.3 billion (2,403억원), reported at the time as a 2,400억원 fund." },
+      { year: "2021", event: "Hashed Emergent is established as the India and emerging markets vehicle, led by Tak Lee, with teams described as spanning Bangalore, Seoul, Singapore, Lagos and Dubai." },
+      { year: "2024", event: "Hashed Venture Investment Association No. 3 (해시드 벤처투자조합3호) is formed on 29 April 2024, first closing at about KRW 30 billion with Japan's SMBC Nikko Securities among the limited partners." },
+      { year: "2026", event: "Dealsite reports on 10 February 2026 that Fund No. 3 has held a second close at about KRW 50 billion, with a plan to add KRW 30 billion to 40 billion within the quarter to reach KRW 90 billion to 100 billion." },
+      { year: "2026", event: "Hecto Innovation and Hecto Financial make a combined KRW 3 billion (30억원) strategic commitment to Hashed Venture Investment Association No. 3, reported 20 April 2026." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Inveready",
+    sectors: ["Technology", "Life Sciences", "Biotech", "Healthcare", "Industrial Tech", "Energy", "Infrastructure"],
+    signatureExit: "PasswordBank Technologies, S.L. (acquired by Symantec)",
+    slug: "inveready",
+    website: "https://inveready.com",
+    short: "Inveready",
+    founded: 2008,
+    hq: "San Sebastián, Spain",
+    aum: "More than €1B (Inveready company profile via Tech Barcelona, undated, checked 2026; an earlier dated figure of more than €400M was published as at 28 December 2019)",
+    thesis: "Inveready is a Spanish investment group that manages a large number of separate regulated vehicles rather than a single fund family, and the vehicles pursue distinct strategies that should not be blended. Its regulated manager is INVEREADY ASSET MANAGEMENT, S.G.E.I.C., S.A. (NIF A65696007), entered in the CNMV register of managers of closed-ended investment entities as official register number 94 on 20 January 2012, with a registered office at Zuatzu Kalea 7, 20018 Donostia-San Sebastián. As at 7 September 2026 the CNMV register attributes 19 managed FUNDS and 24 managed COMPANIES to it. The distinct strategies visible in those vehicle names and in the firm's own communications are: VENTURE and seed technology investing (Inveready First Capital II and III, Inveready Biotech III and IV and their parallel vehicles); VENTURE DEBT (Inveready Venture Finance II, III and IV Trainera, and Trainera Venture Finance I, all structured as FCR-PYME); CONVERTIBLE BONDS and hybrid financing (Inveready Convertible Finance I and II, Inveready Convertible Finance Capital, and Inveready Innvierte Convertible Tech Notes I); LISTED and alternative-market investing (Inveready Alternative Markets, FCR, and the Inveready Growth Opportunities series, several of which are S.I.C.C. closed-ended investment companies); GROWTH and structured finance (Inveready Growth Opportunities I to XII, Inveready Structured Finance III, Inveready Industrial Growth I and Inveready Industrial Growth Opportunities Plus I); PRIVATE EQUITY co-invested with the state programme Innvierte (Inveready Innvierte Private Equity II); INFRASTRUCTURE (Inveready Health, Tech & Energy Infrastructures I and its parallel vehicle); a SEARCH FUND vehicle (Inveready Searchers I); and technology transfer and innovation consulting, carried on through Inveready Innovation Consulting. In a 2019 statement the group described itself as operating \"4 verticales especializadas (Tecnologias de la informacion, Ciencias de la Vida, Venture Debt y Financiacion hibrida)\". A CNMV prospectus for one of its growth funds states the target sectors as \"empresas centradas en los sectores de salud y productos saludables, tecnologia, telecomunicaciones, industrial, energia e infraestructuras\", with a geography of Europe, emphasising the Iberian Peninsula, and the United States. The group is headquartered in San Sebastián with further offices in Barcelona and Madrid. Because several vehicles invest in convertible bonds of, and take stakes in, companies quoted on BME Growth and the Spanish continuous market, part of the portfolio is in listed securities.",
+    leadership: [
+      { name: "Josep Maria Echarri", role: "Managing Partner", profileSlug: "josep-maria-echarri" },
+      { name: "Ignacio Fonts", role: "Managing Partner", profileSlug: "ignacio-fonts" },
+      { name: "Roger Piqué", role: "General Partner", profileSlug: "roger-pique" },
+      { name: "Carlos Conti", role: "General Partner", profileSlug: "carlos-conti" },
+      { name: "Angel Bou", role: "Operating Partner & Digital Tech Investment Director", profileSlug: "angel-bou" },
+      { name: "Sara Secall", role: "Operating Partner & Life Sciences Investment Director", profileSlug: "sara-secall" },
+      { name: "Eduard Feliu", role: "Operating Partner & CFO", profileSlug: "eduard-feliu" }
+    ],
+    timeline: [
+      { year: "2008", event: "Inveready is founded. Its company profile states \"Fundada en 2008, Inveready es una de las gestoras de Capital Riesgo lideres en Espana\" and, in English, \"Founded in 2008\"." },
+      { year: "2010", event: "Ignacio Fonts is named consejero delegado of Inveready First Capital, reported in October 2010." },
+      { year: "2012", event: "INVEREADY ASSET MANAGEMENT, S.G.E.I.C., S.A. is entered in the CNMV register of managers of closed-ended investment entities as official register number 94 on 20 January 2012, with share capital of EUR 300,000." },
+      { year: "2016", event: "Josep Maria Echarri is first appointed to the board of directors of the listed Spanish energy company Audax Renovables, S.A. on 14 November 2016." },
+      { year: "2019", event: "Inveready states it closed 2019 with more than EUR 400M under management and distributed a further EUR 11M dividend to its limited partners, in a statement dated 28 December 2019 naming Inveready Biotech III, Inveready First III, Inveready Venture Finance III, Gaea Inversion, Inveready Venture Finance I, Inveready Biotech II and Inveready First Capital II." },
+      { year: "2021", event: "Josep Maria Echarri is appointed a proprietary director (consejero dominical) of the listed healthcare company Atrys Health, S.A. on 22 July 2021, representing Inveready Civilon BI, S.C.R., S.A." },
+      { year: "2026", event: "Andorra Banc Agricol Reig (Andbank) assigns to Inveready Growth Opportunities VII, S.I.C.C., S.A. its contractual position in a EUR 25M credit facility to the BME Growth-listed solar company Enerside Energy, with economic effect from 1 April 2026, making Inveready Enerside's principal lender." },
+      { year: "2026", event: "On 3 August 2026 Inveready notifies Enerside Energy that Grupo Inveready has reached a combined 15.892 per cent holding, 6,986,688 shares, making it Enerside's largest shareholder; Enerside announces this on 7 August 2026." }
+    ],
+    holdings: [
+      { name: "Atrys Health, S.A.", ticker: "ATRY.MC", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "KB Investment",
+    sectors: ["AI", "Data", "Robotics", "SaaS", "Gaming", "Biotech", "Healthcare", "Aerospace", "Media", "Commerce", "Advanced Manufacturing", "Climate Technology", "Energy"],
+    signatureExit: "Synap Soft (사이냅소프트) - KOSDAQ listing, November 2024",
+    slug: "kb-investment",
+    website: "http://www.kbic.co.kr",
+    short: "KB Investment",
+    founded: 1990,
+    hq: "Seoul, South Korea",
+    aum: "$2.3B (approx.; the firm's figure is ₩3.236 trillion stated as 운용자산(AUM) across 45 funds, per Asia Economy, 26 August 2026 - no USD figure is published by the firm)",
+    thesis: "KB Investment is the venture capital and private equity arm of South Korea's KB Financial Group, which owns it outright. It describes itself as an investment partner that accompanies company growth. Its investment organisation is split into seven investment divisions, with one chief investment officer covering growth investment and another covering deep tech investment, and a chief risk officer heading a risk screening division kept separate from the investment divisions. As a registered TIPS operating organisation it states focus areas of AI and big data, robotics, SaaS, metaverse and gaming, secondary batteries, advanced materials and components, bio, healthcare, aerospace, content, commerce, platform, clean technology and energy. Reported deployment in 2025 concentrated on ICT services and on bio and medical. It runs several funds in the hundreds of billions of won, including a KRW 300bn digital platform fund, a KRW 250bn second global platform fund, a KRW 220bn global platform fund, a KRW 200bn smart scale-up fund, a KRW 185bn deep tech scale-up fund formed in February 2026 and a KRW 100bn AX digital asset fund funded by KB group affiliates. It also invests outside Korea, with a Boston office targeting global biotech and co-general-partner arrangements in Southeast Asia and India.",
+    leadership: [
+      { name: "윤법렬 (Yoon Beop-ryeol)", role: "대표이사 (Representative Director and Chief Executive Officer)", profileSlug: "yoon-beop-ryeol" },
+      { name: "김형준 (Kim Hyung-jun)", role: "최고투자책임자 (Chief Investment Officer), growth investment", profileSlug: "kim-hyung-jun" },
+      { name: "국찬우 (Kook Chan-woo)", role: "최고투자책임자 (Chief Investment Officer), deep tech investment", profileSlug: "kook-chan-woo" }
+    ],
+    timeline: [
+      { year: "1990", event: "Founded in March 1990 as 장은창업투자 (Jangeun Venture Capital), one of Korea's first-generation venture capital firms, per FETV of 11 December 2025 and Asia Economy of 26 August 2026." },
+      { year: "1998", event: "Renamed 국민창업투자 (Kookmin Venture Capital), per FETV of 11 December 2025." },
+      { year: "2002", event: "Merges with 국민기술금융 (Kookmin Technology Finance), per FETV of 11 December 2025." },
+      { year: "2004", event: "Renamed KB창업투자 (KB Venture Capital), per FETV of 11 December 2025." },
+      { year: "2008", event: "Becomes a subsidiary of KB Financial Group Holdings (KB금융지주), per Asia Economy of 26 August 2026." },
+      { year: "2009", event: "Renamed KB인베스트먼트 (KB Investment) in July 2009, the name it still uses." },
+      { year: "2024", event: "Portfolio company 사이냅소프트 (Synap Soft), an AI-based digital document SaaS company, lists on KOSDAQ in November 2024." },
+      { year: "2025", event: "윤법렬, previously head of the equity management division at KB Securities, takes office as chief executive on 1 April 2025, succeeding 송영석, who resigned after about a year." },
+      { year: "2025", event: "The firm converts its entire staff to fixed-term professional contracts of two years renewable on performance and abolishes the chief investment officer post, shifting decision weight to the investment divisions, per Etoday." },
+      { year: "2026", event: "Forms the KRW 185bn (1850억원) KB Deep Tech Scale-up Fund in February 2026 and takes on management of the KRW 100bn (1000억원) KB AX Digital Asset Fund funded by KB Financial Group affiliates." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Mana Ventures",
+    sectors: ["Artificial Intelligence", "Software", "Space", "Healthtech", "Biotech", "Robotics", "Autonomy"],
+    signatureExit: null,
+    slug: "mana-ventures",
+    website: "https://www.manaventures.vc",
+    short: "Mana Ventures",
+    founded: null,
+    hq: "San Francisco, CA",
+    aum: null,
+    thesis: "Mana Ventures states its focus areas on its own homepage as \"Artificial Intelligence, Software, Space, HealthTech, BioTech, Robotics, Autonomy\" and frames itself around \"Technologies that redefine industries. Founders that shape the future.\" It says it is democratizing venture capital and deploying evangelism at scale through the Collective, which it describes as \"A robust LP network of value-add founders, investors, executive, operators & specialists.\" Alongside its funds it runs a scout program. Its SEC filings show the structure: an exempt reporting adviser trading as Mana Ventures whose legal entity is MV Funds, LLC, a long series of Delaware fund vehicles administered through Belltower Fund Group, and named single-company vehicles such as Rubrik Mana Ventures, LP and Mana Ventures Flock Safety, LP. The firm publishes no stage focus, no fund size and no AUM.",
+    leadership: [
+      { name: "Morgan Schwanke", role: "General Partner & Founder", profileSlug: "morgan-schwanke" },
+      { name: "Parker Hughes", role: "Principal", profileSlug: "parker-hughes" },
+      { name: "Jared Van Ryne", role: "Associate", profileSlug: "jared-van-ryne" }
+    ],
+    timeline: [
+      { year: "2020", event: "Mana Ventures, LP - A1 files a Form D on 6 November 2020, the earliest Mana Ventures filing found in EDGAR full-text search." },
+      { year: "2023", event: "MV Funds Attentive, LP files a Form D on 27 June 2023, signed by Morgan Schwanke, reporting $230,398 offered and sold." },
+      { year: "2023", event: "Rubrik Mana Ventures, LP files a Form D on 11 September 2023, signed by Morgan Schwanke, reporting $244,500 offered and sold." },
+      { year: "2023", event: "Mana Anduril 2, LP files a Form D on 4 October 2023, signed by Morgan Schwanke, reporting $200,022 offered and sold." },
+      { year: "2024", event: "Mana Ventures Flock Safety, LP files a Form D on 22 April 2024, signed by Morgan Schwanke, reporting $87,300 offered and sold." },
+      { year: "2026", event: "Mana Ventures, LP - F3 files a Form D on 1 April 2026 from 2006 196th St SW, Suite 114, Lynnwood, WA, reporting $468,000 offered and $390,500 sold; the filing is signed by an authorised person of Belltower Fund Group as agent of the fund's general partner." }
+    ],
+    holdings: [
+      { name: "Rubrik, Inc.", ticker: "RBRK", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "MITSUI SUMITOMO INSURANCE Venture Capital",
+    sectors: ["AI", "Space", "Climate Technology", "Technology", "Internet", "Manufacturing"],
+    signatureExit: "Money Forward (株式会社マネーフォワード) - IPO, September 2017, listed on the firm's own IPO results page",
+    slug: "mitsui-sumitomo-insurance-venture-capital",
+    website: "https://www.msivc.co.jp",
+    short: "MSIVC",
+    founded: 1990,
+    hq: "Tokyo, Japan",
+    aum: "589億円 (approx. JPY 58.9bn; combined commitments across 13 partnerships as at March 2026 - the firm publishes no AUM figure, and its stated investment balance is 308億円 across 206 companies)",
+    thesis: "MSIVC is the corporate venture capital arm of Japan's MS&AD Insurance Group, wholly owned by MS&AD Insurance Group Holdings. It states that it invests in startups at every stage from seed to later stage, selecting them through three stated lenses: uniqueness (独自性), innovation (革新性) and foresight (先見性). Its stated investment scope is broad by industry, covering internet-related businesses, services and manufacturing. The firm's president states that its historical focus was on driving digital transformation across industries through IT, and that it has more recently extended into AI, space technology and Climate Tech. It invests in both Japanese and overseas startups, and runs a five-step process of deal sourcing, evaluation and screening, a founder presentation, an investment committee and execution. It has also raised a series of university-origin venture funds, a buyout fund and an Asia fund alongside its main MSIVC vintage funds.",
+    leadership: [
+      { name: "森本 卓 (Takashi Morimoto)", role: "取締役社長 (Representative Director and President)", profileSlug: "takashi-morimoto" },
+      { name: "今戸 唯人 (Yuito Imato)", role: "常務取締役 (Managing Director)", profileSlug: "yuito-imato" },
+      { name: "真野 智典 (Tomonori Mano)", role: "取締役 (Director)", profileSlug: "tomonori-mano" },
+      { name: "雨宮 貴之 (Takayuki Amemiya)", role: "取締役 (Director)", profileSlug: "takayuki-amemiya" },
+      { name: "高橋 宏司 (Koji Takahashi)", role: "常勤監査役 (Full-time Statutory Auditor)" },
+      { name: "垣口 友二 (Yuji Kakiguchi)", role: "監査役 (Statutory Auditor)" }
+    ],
+    timeline: [
+      { year: "1990", event: "Founded on 6 December 1990 as 株式会社大正海上キャピタル (Taisho Marine Capital Co., Ltd.) with capital of 500 million yen, described by the firm as the first venture capital firm established by the Japanese non-life insurance industry." },
+      { year: "1991", event: "Renamed 株式会社三井海上キャピタル (Mitsui Marine Capital) in April 1991; its first fund, 三井海上キャピタル1号投資事業組合, of 10億円 (1.0 billion yen) is formed in June 1991." },
+      { year: "1999", event: "Becomes a wholly owned subsidiary of 三井海上火災保険株式会社 (Mitsui Marine and Fire Insurance, now Mitsui Sumitomo Insurance) in December 1999." },
+      { year: "2001", event: "Renamed 三井住友海上キャピタル株式会社 (MITSUI SUMITOMO INSURANCE Venture Capital Co., Ltd.) in October 2001, the name it still uses." },
+      { year: "2004", event: "Forms its first university-origin venture fund, 三井住友海上Cキャンパス1号投資事業有限責任組合, of 7億円 (700 million yen) in July 2004 with backing from the Organization for Small and Medium Enterprises and Regional Innovation." },
+      { year: "2005", event: "Capital increased from 500 million yen to 1.0 billion yen in May 2005; a buyout fund, MSIVCバイアウト投資事業有限責任組合, of 30億円 (3.0 billion yen) is formed in September 2005." },
+      { year: "2010", event: "Forms MSIVCアジアファンド投資事業組合 of 20億円 (2.0 billion yen) in August 2010 to invest in ventures and SMEs expanding across Asia." },
+      { year: "2011", event: "Enters business alliances with Aureos Capital of the UK in January 2011 and with Industrial Technology Investment Corporation of Taiwan in December 2011 to share deal information." },
+      { year: "2016", event: "Moves its head office to Kyobashi, Chuo-ku, Tokyo in November 2016." },
+      { year: "2017", event: "Portfolio company 株式会社マネーフォワード (Money Forward) lists in September 2017, per the firm's IPO results page." },
+      { year: "2020", event: "Forms MSIVC2020V投資事業有限責任組合 of 100億円 (10 billion yen) in March 2020; portfolio company 株式会社プレイド (PLAID) lists in December 2020." },
+      { year: "2021", event: "Forms MSIVC2021V投資事業有限責任組合 of 100億円 (10 billion yen) in November 2021." },
+      { year: "2023", event: "Forms MSIVC2023V投資事業有限責任組合 of 100億円 (10 billion yen) and MSイノベーション投資事業有限責任組合2号 of 10億円 (1.0 billion yen) in June 2023; portfolio company 株式会社QPS研究所 lists in December 2023." },
+      { year: "2025", event: "Forms MSIVC2025V投資事業有限責任組合 of 100億円 (10 billion yen) on 6 June 2025, and marks its 35th anniversary on 6 December 2025." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "NGC Ventures",
+    sectors: ["Blockchain", "Web3", "Infrastructure", "DeFi", "Artificial Intelligence", "Crypto"],
+    signatureExit: null,
+    slug: "ngc-ventures",
+    website: "https://ngc.fund",
+    short: "NGC",
+    founded: 2017,
+    hq: "Singapore",
+    aum: "Over $500M (stated by the firm on its own About page, undated, checked 2026)",
+    thesis: "NGC Ventures describes itself on its own site as an early stage venture fund that has invested in web 3.0 infrastructure startups and projects since 2017, backing teams building the next generation of decentralised technologies and looking for ventures that address blockchain challenges with new solutions. It says its team includes seasoned entrepreneurs and fund managers as well as, in its own word, degens of the blockchain space, and that it offers portfolio companies expertise in token design and go to market strategy. Rather than a single headquarters the About page says team members are present in Singapore, San Francisco, California, Texas, London, Shanghai and Taipei. The firm's own portfolio page groups investments under fourteen headings including Artificial Intelligence, Blockchains (L1s, L2s), Data-related, Decentralized Computing, DeFi, DePin, Financial Services, Infrastructure, Intent, Metaverse, Multichain / Interchain, Storage, Tooling and SDKs, and Wallet and related. It also runs a staking and validating service called NGC StakeX.",
+    leadership: [
+      { name: "Roger Lim", role: "General Partner", profileSlug: "roger-lim" },
+      { name: "Tony Gu", role: "General Partner", profileSlug: "tony-gu" },
+      { name: "Wayne Zhu", role: "General Partner", profileSlug: "wayne-zhu" }
+    ],
+    timeline: [
+      { year: "2017", event: "NGC Ventures is founded, per the firm's own About page: 'Founded in 2017, NGC Ventures manages over 500M in AUM.'" },
+      { year: "2018", event: "A 20 September 2018 press release issued over PR Newswire describes NEO Global Capital as the strategic investment vehicle of the NEO foundation, based in Singapore, and names Tony Gu as Founder of NEO Global Capital." },
+      { year: "2022", event: "Venture Capital Journal reports on 25 May 2022 under the headline 'NGC Ventures gathers $100m for third blockchain fund' that backers of NGC Metaverse Ventures include Babel Finance, Altonomy, Huobi Ventures, Nexo Ventures and GBIC. The body of the article is behind a registration wall; only the headline, date and that investor list were readable." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Novo Holdings",
+    sectors: ["Pharmaceuticals", "Biotech", "Medtech", "Healthcare", "Synthetic Biology", "Climate", "Deep Tech", "Real Estate", "Infrastructure"],
+    signatureExit: "Merus N.V. (acquired by Genmab for $8 billion, 2025)",
+    slug: "novo-holdings",
+    website: "https://novoholdings.dk",
+    short: "Novo Holdings",
+    founded: 1999,
+    hq: "Hellerup, Denmark",
+    aum: "€93B (approx.; DKK 694bn total assets under management at 31 December 2025, per the Novo Holdings Annual Report 2025, of which DKK 407bn is the holding in Novo Nordisk)",
+    thesis: "Novo Holdings A/S is the holding and investment company of the Novo Nordisk Foundation, responsible for managing the Foundation's assets and wealth. Its stated purpose is to improve people's health and the sustainability of society and the planet by generating long-term returns on the Foundation's assets. Its work splits into two parts. First, it is the controlling shareholder of the Novo Group companies Novo Nordisk A/S and Novonesis A/S, holding more than 25 per cent of the ordinary share capital of each, including all the preferred A shares, and more than 70 per cent of the votes; the firm states its strategy is to be a stable and supportive owner of the Novo Group. Second, it runs an investment portfolio in two parts: Life Science Investments, made up of the Seed, Venture, Principal Investments, Planetary Health Investments and Asia teams, and Capital Investments, which manages equities, bonds, real estate, infrastructure and private equity, builds relationships with external equity and fixed income fund managers, and makes direct public equity and bond investments. The firm says it invests in almost all life science segments including pharmaceuticals, biotechnology, medical technology, healthcare services and industrial biosolutions, across North America, Europe and Asia. It is headquartered in Hellerup, Denmark, with offices in Boston, San Francisco, London, Singapore, Shanghai and Mumbai, and states that it employs more than 200 people and has made 180-plus direct investments.",
+    leadership: [
+      { name: "Kasim Kutay", role: "Chief Executive Officer" },
+      { name: "Nigel Govett", role: "CFO" },
+      { name: "Helle Bach", role: "Chief People Officer" },
+      { name: "Kasper Sobfeldt Jahn", role: "Chief Strategy Officer" },
+      { name: "Barbara Fiorini", role: "General Counsel, Executive Director" },
+      { name: "Morten Beck Jørgensen", role: "Managing Partner, Capital Investments", profileSlug: "morten-beck-j-rgensen" },
+      { name: "Christoffer Søderberg", role: "Managing Partner, Principal Investments", profileSlug: "christoffer-s-derberg" },
+      { name: "Lars Green", role: "Chair, Board of Directors" },
+      { name: "Britt Meelby Jensen", role: "Vice Chair, Board of Directors" }
+    ],
+    timeline: [
+      { year: "1999", event: "Novo A/S, the predecessor entity of Novo Holdings A/S, is established as the Novo Nordisk Foundation's holding and investment company; the founding year is taken from Wikipedia and was not confirmed on the firm's own site." },
+      { year: "2017", event: "Novo Holdings takes the public shareholdings in Convatec and in Evotec that it would hold until 2025, per the Annual Report 2025." },
+      { year: "2017", event: "Novo A/S is renamed Novo Holdings A/S. The firm's own release of 23 June 2017 is headed 'Novo A/S renamed Novo Holdings A/S' and opens 'Novo A/S, the holding company for the companies in the Novo Group, is changing its name to Novo Holdings A/S.'" },
+      { year: "2024", event: "Novo Holdings completes its acquisition of Catalent on 18 December 2024." },
+      { year: "2025", event: "Novo Holdings sells its approximately 20 per cent public shareholding in Convatec and its approximately 8 per cent public shareholding in Evotec, both held since 2017." },
+      { year: "2025", event: "Total assets under management end the year at DKK 694bn, down from DKK 1,060bn a year earlier, with total income and investment returns of DKK 21bn." },
+      { year: "2026", event: "Novo Holdings commits EUR 500 million to the Scaleup Europe Fund, announced 4 June 2026." }
+    ],
+    holdings: [
+      { name: "Novo Nordisk A/S", ticker: "NOVO-B.CO", historicalPrice: null, price: null },
+      { name: "Novonesis A/S", ticker: "NSIS-B.CO", historicalPrice: null, price: null },
+      { name: "Oxford Biomedica plc", ticker: "OXB.L", historicalPrice: null, price: null },
+      { name: "Apogee Therapeutics, Inc.", ticker: "APGE", historicalPrice: null, price: null },
+      { name: "BridgeBio Oncology Therapeutics", ticker: "BBOT", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Operator Partners",
+    sectors: ["Pre-Seed", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "operator-partners",
+    website: "https://www.operatorpartners.com",
+    short: "Operator Partners",
+    founded: 2020,
+    hq: "New York, NY",
+    aum: null,
+    thesis: "Operator Partners describes itself on its own site as \"operators funding operators\" and states \"No outside investors, just our own capital.\" It invests at pre-seed, seed and Series A and says it stays engaged from inception and early product and customer work through Series B and beyond. The site states plainly: \"We don't lead rounds or take board seats. If there's not already a lead, we'll help find one.\" The firm publishes no sector focus list, no fund size and no AUM figure. Its SEC Form D describes the issuer as a Venture Capital Fund and reports the offering was sold to five accredited investors.",
+    leadership: [
+      { name: "Amit Avner", role: "General Partner", profileSlug: "amit-avner" },
+      { name: "Olivia Benjamin", role: "Partner", profileSlug: "olivia-benjamin" },
+      { name: "Gil Shklarski", role: "General Partner", profileSlug: "gil-shklarski" },
+      { name: "Zach Goldstein", role: "Partner", profileSlug: "zach-goldstein" },
+      { name: "Nat Turner", role: "General Partner", profileSlug: "nat-turner" },
+      { name: "Zach Weinberg", role: "General Partner", profileSlug: "zach-weinberg" }
+    ],
+    timeline: [
+      { year: "2020", event: "Operator Partners LLC is organised in Delaware in 2020 with a business address at 180 Varick Street, Suite 1220, New York, NY, and reports its first sale of securities on 13 May 2020 in its SEC Form D." },
+      { year: "2020", event: "Zach Goldstein joins Operator Partners in March 2020 from USV, per his bio page on the firm's own site." },
+      { year: "2020", event: "Gil Shklarski joins Operator Partners as a General Partner in 2020, per his bio page on the firm's own site." },
+      { year: "2022", event: "A Form D/A filed 13 April 2022 and signed by Zachary Weinberg reports a total offering amount of $41,366,666, the same amount sold, and five accredited investors." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Perceptive Advisors",
+    sectors: ["Biotech", "Life Sciences", "Medical Devices", "Diagnostics", "Digital Health", "Healthcare IT"],
+    signatureExit: null,
+    slug: "perceptive-advisors",
+    website: "https://www.perceptivelife.com",
+    short: "Perceptive Advisors",
+    founded: 1999,
+    hq: "New York, NY",
+    aum: "Approximately $11B (across its strategies as of 30 June 2026, per the firm's own About page; the firm's Form ADV Item 5.F figure could not be read)",
+    thesis: "Perceptive Advisors is a life sciences investment manager registered with the SEC as an investment adviser (CRD 154703, SEC registration effective 4 October 2010). It says it runs four strategies. The Perceptive Life Sciences Fund invests globally in public and private companies developing biotechnology products, drugs, medical devices and diagnostics, with the majority of investments in publicly traded small and mid cap companies, and participates in growth rounds, crossover rounds, IPOs and public follow-ons. Credit Opportunities, launched with its first closed-end fund in 2014, lends to healthcare companies across biopharma, medical devices, diagnostics, digital health, women's health, life sciences research and healthcare IT, and states a range of $20M to $300M per investment and approximately $3.5B of capital raised for private credit. Capital Solutions provides structured capital to later-stage and commercial-stage life sciences companies. The venture strategy, run through the Perceptive Xontogeny Venture Funds, invests primarily at seed and Series A in biotechnology, medtech, healthtech, digital health and healthcare tools and services, states investments of $10M to $50M when leading or co-leading a Series A, states over $700M across its venture funds, and says its people take board seats. The firm describes its team as scientists, technologists, molecular biologists, MDs and PhDs.",
+    leadership: [
+      { name: "Joseph Edelman", role: "Chief Executive Officer & Portfolio Manager", profileSlug: "joseph-edelman" },
+      { name: "Adam Stone", role: "Chief Investment Officer", profileSlug: "adam-stone" },
+      { name: "James Mannix", role: "Chief Operating Officer" },
+      { name: "Peter Fierro", role: "Chief Financial Officer" },
+      { name: "Marcel Rosner", role: "General Counsel" },
+      { name: "Alexander Rakitin", role: "Chief Compliance Officer" }
+    ],
+    timeline: [
+      { year: "1999", event: "Joseph Edelman founds Perceptive Advisors in New York as a hedge fund specialising in biotechnology stocks." },
+      { year: "2010", event: "SEC registration as an investment adviser becomes effective on 4 October 2010 (CRD 154703, SEC file 801-71841)." },
+      { year: "2014", event: "The firm launches its Credit Opportunities strategy with its first closed-end credit fund." },
+      { year: "2018", event: "Perceptive Xontogeny Venture Fund, LP is established." },
+      { year: "2021", event: "Perceptive Xontogeny Venture Fund II, LP closes." },
+      { year: "2024", event: "Perceptive Capital Solutions Corp, a special purpose acquisition company, completes its IPO (Form 424B4 filed 12 June 2024)." },
+      { year: "2026", event: "Perceptive Capital Solutions Corp is renamed Freenome, Inc. on 15 July 2026 following its business combination with Freenome Holdings, and trades on Nasdaq as FRNM." }
+    ],
+    holdings: [
+      { name: "Praxis Precision Medicines, Inc.", ticker: "PRAX", historicalPrice: null, price: null },
+      { name: "Spyre Therapeutics, Inc.", ticker: "SYRE", historicalPrice: null, price: null },
+      { name: "Ascendis Pharma A/S", ticker: "ASND", historicalPrice: null, price: null },
+      { name: "Rhythm Pharmaceuticals, Inc.", ticker: "RYTM", historicalPrice: null, price: null },
+      { name: "Roivant Sciences Ltd.", ticker: "ROIV", historicalPrice: null, price: null },
+      { name: "Relay Therapeutics, Inc.", ticker: "RLAY", historicalPrice: null, price: null },
+      { name: "Travere Therapeutics, Inc.", ticker: "TVTX", historicalPrice: null, price: null },
+      { name: "Kardigan, Inc.", ticker: "KARD", historicalPrice: null, price: null },
+      { name: "Nuvalent, Inc.", ticker: "NUVL", historicalPrice: null, price: null },
+      { name: "Edgewise Therapeutics, Inc.", ticker: "EWTX", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Shenzhen Capital Group",
+    sectors: ["Semiconductors", "Technology", "Robotics", "Industrial Manufacturing", "Advanced Manufacturing", "Clean Energy", "Biotech", "Pharmaceuticals", "Infrastructure Software"],
+    signatureExit: null,
+    slug: "shenzhen-capital-group",
+    website: "https://www.szvc.com.cn/",
+    short: "SCGC",
+    founded: 1999,
+    hq: "Shenzhen, China",
+    aum: "US$50B+ (approx.; the firm's figure is RMB 360.273bn of paid-in capital across all funds it and its subsidiaries manage at 31 December 2024, per its 2025 bond credit rating report - paid-in fund scale, not net asset value)",
+    thesis: "Shenzhen Capital Group describes itself on its own site as a state-owned comprehensive investment group whose core business is venture capital, and says its business spans venture capital, real estate investment, public mutual funds and asset securitisation. Within venture capital it says it manages venture funds, funds of funds, S funds and buyout funds, and it has managed government guidance funds since setting up China's first government guidance sub-fund with the Suzhou municipal government in 2007 and taking on entrusted management of the Shenzhen municipal guidance fund from 2016. Chairman Zuo Ding stated in a 25 February 2026 article on the group's site that more than 85 per cent of the 1,800 plus companies the group has directly invested in are start-up stage or growth stage, that more than 90 per cent are hard technology companies, and that the focus areas cover semiconductors, robotics, new materials, biopharmaceuticals and industrial software. The group's investment departments are organised by both sector (information technology, high-end equipment, general equipment, new materials, new energy, biopharmaceuticals) and region (Greater Bay Area, North China, Northeast, Central China, Southeast, Jiangsu, Shanghai, West China). Its wholly owned subsidiary Red Soil Innovation Fund Management, set up in June 2014, was the first public mutual fund management company in China established by a private equity institution.",
+    leadership: [
+      { name: "Zuo Ding (左丁)", role: "Party Secretary and Chairman (党委书记、董事长)", profileSlug: "zuo-ding" },
+      { name: "Zhang Jian (张键)", role: "Director and Deputy Party Secretary (董事、党委副书记)", profileSlug: "zhang-jian" },
+      { name: "Wang Xindong (王新东)", role: "Party Committee Member and Vice President (党委委员、副总裁)", profileSlug: "wang-xindong" },
+      { name: "Liu Bo (刘波)", role: "Party Committee Member and Vice President (党委委员、副总裁)", profileSlug: "liu-bo" },
+      { name: "Cao Yu (曹宇)", role: "Party Committee Member and Secretary of the Discipline Inspection Commission (党委委员、纪委书记)", profileSlug: "cao-yu" },
+      { name: "Zhang Zhonghua (张中华)", role: "Party Committee Member and Vice President (党委委员、副总裁)", profileSlug: "zhang-zhonghua" },
+      { name: "Ma Nan (马楠)", role: "Vice President (副总裁)", profileSlug: "ma-nan" },
+      { name: "Xie Jian (谢健)", role: "Director and Chief Financial Officer (董事、财务总监)", profileSlug: "xie-jian" }
+    ],
+    timeline: [
+      { year: "1999", event: "Shenzhen Innovation Technology Investment Co., Ltd. (深圳市创新科技投资有限公司) is formally established on 25 August 1999, shortly before the first China Hi-Tech Fair; the group's 2025 credit rating report states it was formed in August 1999 with cash contributions from Shenzhen Investment Management Corporation acting for the Shenzhen municipal government together with seven entities including Shenzhen Expressway Development Corporation." },
+      { year: "2002", event: "The company is renamed Shenzhen Capital Group (深圳市创新投资集团), per the group's own 发展历程 timeline." },
+      { year: "2007", event: "The group sets up China's first government guidance sub-fund, the Suzhou Guofa fund (苏州国发基金), in cooperation with the Suzhou municipal government." },
+      { year: "2014", event: "Red Soil Innovation Fund Management (红土创新基金管理公司) is established on 18 June 2014 as a wholly owned subsidiary, the first public mutual fund management company in China approved by the CSRC to be founded by a private equity institution." },
+      { year: "2016", event: "The group takes on entrusted management of the Shenzhen municipal guidance fund." },
+      { year: "2017", event: "Sinovatio (中新赛克, Shenzhen Stock Exchange 002912), in which the group invested in 2012, lists on the Shenzhen Stock Exchange." },
+      { year: "2020", event: "Shenzhen Capital Red Soil Asset Management (深创投红土资产管理) is established on 7 September 2020 for infrastructure asset-backed securities; on 25 November 2020 the group's registered capital is increased from capital reserves to RMB 10.0 billion (100.00亿元)." },
+      { year: "2024", event: "At a board meeting on 29 January 2024 Zuo Ding is elected chairman and Liu Suhua is appointed general manager; Ni Zewang (倪泽望) retires as chairman at the statutory age. The group also becomes entrusted manager of the National Social Security Fund's Greater Bay Area science and technology innovation special fund and is named to the SASAC 双百企业 list." },
+      { year: "2025", event: "In December 2025 the group brings the national venture capital guidance fund's Guangdong-Hong Kong-Macao Greater Bay Area fund, with a total size of RMB 50.45 billion (504.5亿元), to Shenzhen, according to chairman Zuo Ding." },
+      { year: "2026", event: "Liu Suhua ceases to be a director and general manager of the group on transfer, taking up the roles of deputy party secretary, director and general manager at Shenzhen Investment Holdings (深投控) as reported on 1 July 2026." },
+      { year: "2026", event: "ROKAE Robotics (珞石机器人, 03752.HK) lists on the main board of the Hong Kong Stock Exchange on 9 July 2026, which the group's own announcement describes as the 300th listed company among its direct investments." }
+    ],
+    holdings: [
+      { name: "Sinovatio (深圳市中新赛克科技股份有限公司)", ticker: "002912.SZ", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "SVG Ventures",
+    sectors: ["Foodtech", "Agritech", "Food & Agriculture", "Climate Resilience", "Energy", "Synthetic Biology"],
+    signatureExit: null,
+    slug: "svg-ventures",
+    website: "https://www.svgventures.com",
+    short: "SVG Ventures | THRIVE",
+    founded: 2010,
+    hq: "Los Gatos, CA",
+    aum: "Not publicly disclosed (no AUM figure is published; the Pioneer Fund was reported targeting C$75M in 2023, and a $50M Sunrise Fund was established with Kagome in September 2024)",
+    thesis: "SVG Ventures is the investing entity and THRIVE is the innovation and venture-development platform it operates; the two are branded together as \"SVG Ventures | THRIVE\" in the firm's own announcements, and the firm's homepage states \"Founded in 2014, THRIVE operates as our global innovation platform\". THRIVE is not a separate manager: it runs the accelerator, academy, studio and immersion programmes, the Global Impact Challenge, the Food 50 and Ag 50 report series, a corporate innovation practice and a database the firm describes as over 12,000 AgTech companies, while capital is deployed by SVG Ventures' funds. The firm states it invests at \"Seed, Series A and beyond\" across \"Food & Nutrition, Next Gen Agriculture, Climate Resilience, Energy & Water, Industrial Life Sciences & Bioeconomy\" in North America, Europe and Asia. Named fund vehicles are the SVG Ventures Pioneer Fund, described by the firm and by BetaKit as its third fund with a $75M CAD target and Farm Credit Canada as anchor limited partner, and the Sunrise Fund, a $50M corporate venture capital fund established with Kagome Co., Ltd. in September 2024. SVG Ventures says it is headquartered in Silicon Valley with offices in Canada, Australia, Ireland and the UK, and it established a Canadian subsidiary, SVG Ventures Thrive, in Calgary in 2021.",
+    leadership: [
+      { name: "John Hartnett", role: "Managing Partner", profileSlug: "john-hartnett" },
+      { name: "Helen Hartnett", role: "Managing Partner", profileSlug: "helen-hartnett" },
+      { name: "Greg Young", role: "Venture Partner", profileSlug: "greg-young" },
+      { name: "John Cassidy", role: "Venture Partner", profileSlug: "john-cassidy" },
+      { name: "Marion Meyer", role: "Venture Partner", profileSlug: "marion-meyer" },
+      { name: "Peter Eckes", role: "Venture Partner", profileSlug: "peter-eckes" },
+      { name: "Danny O'Brien", role: "Venture Partner", profileSlug: "danny-obrien" }
+    ],
+    timeline: [
+      { year: "2010", event: "SVG Ventures is formed in Silicon Valley, according to BetaKit's 2023 report on the firm." },
+      { year: "2014", event: "SVG Ventures states on its homepage that THRIVE, its global innovation platform, was founded in this year." },
+      { year: "2020", event: "THRIVE launches the Global Impact Initiative, described by SVG Ventures as a 10-year commitment." },
+      { year: "2021", event: "SVG Ventures establishes its Canadian subsidiary, SVG Ventures Thrive, in Calgary." },
+      { year: "2023", event: "SVG Ventures Thrive raises the Pioneer Fund, its third fund, targeting $75M CAD for seed to Series A agrifood companies." },
+      { year: "2023", event: "Pairtree Intelligence secures a Pioneer Fund investment following the inaugural THRIVE APAC Accelerator, announced 6 December 2023." },
+      { year: "2024", event: "SVG Ventures and Kagome Co., Ltd. establish the $50M Sunrise Fund, a corporate venture capital fund announced in September 2024." },
+      { year: "2025", event: "Manitoba First Fund announces a limited partner commitment to the SVG Ventures | THRIVE Pioneer Fund, announced 8 December 2025." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Venture Catalysts",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: "Pee Safe (full exit, January 2026, reported 9.6x return)",
+    slug: "venture-catalysts",
+    website: "https://www.venturecatalysts.in",
+    short: "Venture Catalysts++",
+    founded: 2016,
+    hq: "Mumbai, India",
+    aum: "Over $450M (group-wide, reported September 2022 on the launch of the Elev8 fund, Business Standard)",
+    thesis: "Venture Catalysts, which brands itself Venture Catalysts++, is a Mumbai-based early-stage investment platform that began in 2016 as an angel network and describes itself as a multi-stage investment platform combining incubation, funding, acceleration and business development support. This record is for the angel-network and investing entity, Venture Catalysts Private Limited, trading as VCAT, which its own site names as the fund manager of the Venture Catalyst Angel Fund. The firm publishes two SEBI-registered Category I Alternative Investment Funds in the Venture Catalysts name: the Venture Catalyst Angel Growth Fund (Category I AIF, Venture Capital Fund, Angel Fund; SEBI registration IN/AIF1/18-19/0653; fund manager Venture Catalysts Angel Growth Fund Manager LLP) and the Venture Catalyst Angel Fund (Category I AIF, Venture Capital Fund, Angel Fund; SEBI registration IN/AIF1/22-23/1157; fund manager Venture Catalyst Pvt. Ltd.). Separate but related brands sit alongside it and are NOT part of this record: 100Unicorns, the accelerator fund launched as 9Unicorns in August 2019 and rebranded to 100Unicorns; Beams Fintech Fund, a growth-stage fintech fund; Elev8 Venture Partners, a growth fund; Spyre, a proptech venture fund; and VCGrid. The firm states it looks for team, target market, tenacity, traction and technology rather than publishing a list of target sectors, and it says it is bullish on India and on Indian entrepreneurs.",
+    leadership: [
+      { name: "Apoorva Ranjan Sharma", role: "Founder", profileSlug: "apoorva-ranjan-sharma" },
+      { name: "Anuj B Golecha", role: "Co-Founder", profileSlug: "anuj-b-golecha" },
+      { name: "Anil G Jain", role: "Co-Founder", profileSlug: "anil-g-jain" },
+      { name: "Gaurav Jain", role: "Co-Founder", profileSlug: "gaurav-jain-venture-catalysts" },
+      { name: "Rishabh Golchha", role: "Managing Director", profileSlug: "rishabh-golchha" },
+      { name: "Arisht Jain", role: "Founding Member & Managing Partner", profileSlug: "arisht-jain" }
+    ],
+    timeline: [
+      { year: "2015", event: "Venture Catalysts Private Limited is incorporated in Mumbai on 23 September 2015, CIN U74999MH2015PTC268665, at Times Square, Andheri East." },
+      { year: "2016", event: "Venture Catalysts is founded as an angel network, per Business Standard's September 2025 report; Forbes India dates the founding to January 2016." },
+      { year: "2019", event: "Venture Catalysts launches 9Unicorns, an accelerator fund, in August 2019." },
+      { year: "2021", event: "The 100Unicorns first fund is launched with a $100M corpus, per Outlook Business." },
+      { year: "2022", event: "Beams Fintech Fund, backed by Venture Catalysts, announces a first close at Rs 270 crore (Rs 2.7 billion, reported as $36 million) in April 2022." },
+      { year: "2022", event: "Elev8 Venture Partners announces a $200M growth fund, described by Business Standard as the fourth fund backed by Venture Catalysts, taking the group's total assets under management to over $450 million." },
+      { year: "2024", event: "9Unicorns rebrands as 100Unicorns and launches a second fund with a $200M corpus and a $100M green shoe option." },
+      { year: "2025", event: "Spyre PropTech Venture Fund is launched with $50M, per Outlook Business." },
+      { year: "2025", event: "Venture Catalysts raises Rs 150 crore (Rs 1.5 billion) in a mix of primary and secondary transactions, announced 8 September 2025." },
+      { year: "2026", event: "Venture Catalysts exits the hygiene brand Pee Safe at a reported 9.6x return and 30.53 percent XIRR in January 2026, nine years after a 2017 pre-Series investment." }
+    ],
+    holdings: []
   }
 ];
