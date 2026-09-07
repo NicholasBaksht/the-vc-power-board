@@ -276,6 +276,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/deerfield-management/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/norwest-venture-partners/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.6</priority>
@@ -562,6 +567,11 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/third-rock-ventures/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/left-lane-capital/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.6</priority>
   </url>
@@ -1331,6 +1341,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/dragonfly/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/redstone/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/seraphim-space/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.6</priority>
@@ -1342,6 +1362,11 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/stellaris-venture-partners/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/altair-capital/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.6</priority>
   </url>
@@ -1426,6 +1451,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/kickstart-fund/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/airbus-ventures/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.6</priority>
@@ -1457,6 +1487,11 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/venture-catalysts/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/play-ventures/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.6</priority>
   </url>
@@ -1756,6 +1791,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/long-journey-ventures/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/canary/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.6</priority>
@@ -2032,6 +2072,11 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/firms/animo-ventures/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/gtmfund/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.6</priority>
   </url>
@@ -2596,9 +2641,69 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/firms/big-brain-holdings/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/capital-factory/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/digital-currency-group/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/flex-capital/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/genesia-ventures/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/haatch/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/latitud/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/massventures/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/titan-capital/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/triangle-tweener-fund/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/firms/village-capital/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/firms/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/deerfield-management-vs-hsg/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/hsg-vs-novo-holdings/</loc>
@@ -2627,6 +2732,36 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/hsg-vs-nea/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/deerfield-management-vs-novo-holdings/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/deerfield-management-vs-perceptive-advisors/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/cormorant-asset-management-vs-deerfield-management/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/bessemer-vs-deerfield-management/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/deerfield-management-vs-shenzhen-capital-group/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/compare/deerfield-management-vs-nea/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.5</priority>
   </url>
@@ -2827,11 +2962,6 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/compare/gv-vs-kleiner-perkins/</loc>
-    <lastmod>2026-09-07</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thevcpowerboard.com/compare/battery-ventures-vs-lightspeed/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.5</priority>
   </url>
@@ -3967,6 +4097,736 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/people/niklas-adalberth/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/dr-igor-ryabenkiy/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/dmitriy-firskin/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/mike-zakharov/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/dr-sergey-konkin/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/alfred-augustin/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/sam-kim/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/joshua-baer/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/bryan-chambers/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/gordon-daugherty/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jamie-serio/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/nick-spiller/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/morgan-odell/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/nina-shelat/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/luis-martinez-ph-d/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jim-flynn/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/sumner-anderson/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/konstantinos-aprilakis-m-d/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/lawrence-atinsky/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/nicholas-bishop-ph-d/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/brian-bizoza-m-d/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/anne-daub/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/andrew-elbardissi-m-d/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/terence-fox-karnal/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jason-fuller-ph-d/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/howard-furst-m-d/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/julian-harris-m-d/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/karen-heidelberger/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/leslie-henshaw/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jonathan-isler/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/abraham-kometz-m-d/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/timothy-leahy/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jonathan-leff/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/vincent-mellet/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/frank-nestle-m-d/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/david-neustaedter-ph-d/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/elliot-press/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/richard-rubino/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/bryan-sendrowski/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/william-slattery/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/robert-snetiker/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/paul-takats/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/cameron-wheeler-ph-d/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/barry-silbert/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/mark-murphy/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/mark-shifke/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/aimie-killeen/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/julie-stitzel/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/tonya-m-evans/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/haseeb-qureshi/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/bo-feng/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/tom-schmidt/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/rob-hadick/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/gengmo-qi/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/elton-chang/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/casey-taylor/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/tony-li/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/auren-hoffman/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/paul-johnson/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/rajal-patel/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/tod-sacerdoti/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/soichi-tajima/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/takahiro-suzuki/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/yuto-kono/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/shun-sagara/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/hoang-thi-kim-dung/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/elsha-eliasa-kwee/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/max-altschuler/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/paul-irving/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jason-demant/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/scott-weavers-wright-obe/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/fred-soneya/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/elaine-weavers-wright/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/mark-bennett/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jonathan-keeling/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jeremy-luzinda/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/marcel-hedman/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/david-ola/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/matt-smith/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jim-hawker/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/james-brooke/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/emma-kisby/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/roei-samuel/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/nick-bygate/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/richard-illingworth/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/gavin-christensen/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/kat-kennedy/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/dalton-wright/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/alex-soffe/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/tanner-potter/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/brian-requarth/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/tomas-roggio/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/gina-gotthilf/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/harley-miller/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/vinny-pujji/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/dan-ahrens/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/matthew-miller/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/henry-toole/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/laura-sillman/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/magnus-karnehm/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/kin-lam/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/alex-wu/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/erica-amatori/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jason-fiedler/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/lee-jacobs/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/cyan-banister/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/arielle-zuckerberg/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/jonathan-bruck/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/justin-mares/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/pascal-levy-garboua/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/scott-banister/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/charlie-hipwood/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/vinit-nijhawan/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/priya-yadav/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/stacy-swider/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/myron-kassaraba/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/sienna-leis/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/whitney-leslie/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/matt-snow/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/henric-suuronen/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/harri-manninen/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/phylicia-koh/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/anton-backman/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/kenrick-drijkoningen/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/samuli-siren/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/michael-brehm/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/lars-haerle/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/lukas-andre/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/mickael-bellaiche/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/ben-scheidt/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/mohamed-foulser/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/marco-stutz/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/martin-scherrer/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/niklas-grunewald/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/kaj-hagros/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/robert-shan/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/timo-fleig/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/kunal-bahl/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/rohit-bansal/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/manik-pasricha/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/utpal-sharma/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/shiv-kapoor/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/scot-wingo/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/robbie-allen/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/ellen-brooks/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/heather-matranga/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/people/michael-davis/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.5</priority>
   </url>
@@ -12841,6 +13701,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/company/circle/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/company/citymapper/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.5</priority>
@@ -13416,6 +14281,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thevcpowerboard.com/company/nuvalent-inc/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thevcpowerboard.com/company/olo/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.5</priority>
@@ -13502,6 +14372,11 @@
   </url>
   <url>
     <loc>https://thevcpowerboard.com/company/prenetics-global-limited/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thevcpowerboard.com/company/protege/</loc>
     <lastmod>2026-09-07</lastmod>
     <priority>0.5</priority>
   </url>
