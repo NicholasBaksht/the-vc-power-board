@@ -14598,5 +14598,648 @@ holdings: []
       { name: "Alto Neuroscience, Inc.", ticker: "ANRO", historicalPrice: null, price: null },
       { name: "DBV Technologies S.A. (sponsored ADS)", ticker: "DBVT", historicalPrice: null, price: null }
     ]
+  },
+
+  /* ---- Firm batch 3, added 7 September 2026: 20 firms. Their partner records
+     are in data-partners-1.js (not shard 6 - see that file's banner) and
+     their field-level provenance is in data-evidence.js, added in the same
+     batch. Checked against all 521 pre-existing firms for slug, name,
+     historical-name and parent-brand collisions; none found. ---- */
+  {
+    rank: null,
+    name: "2048 Ventures",
+    sectors: ["AI", "Deep Tech", "Health", "Biotech"],
+    signatureExit: "Aerodome (acquired by Flock Safety, 2024)",
+    slug: "2048-ventures",
+    website: "https://www.2048.vc",
+    short: "2048 Ventures",
+    founded: 2018,
+    hq: "New York, NY",
+    aum: null,
+    thesis: "2048 Ventures describes itself on its own homepage as \"a thesis-driven early stage venture capital firm based in NYC and Boston\" that invests in Vertical AI, Deep Tech, Health and Bio. It leads pre-seed and seed rounds with checks the firm states as $500K to $3M. It runs a published process called the Pre-Seed Fast Track, which the firm says takes no more than 10 business days from first meeting to money in the bank. At the time of its first fund the firm told TechCrunch it looked for founders with \"genuinely differentiated technology\" and for first-time founders or serial entrepreneurs who still have the \"first-time founder mindset\", and described itself as geography-agnostic within the United States and Canada.",
+    leadership: [
+      { name: "Alex Iskold", role: "Founder and Partner", profileSlug: "alex-iskold" },
+      { name: "Zann Ali", role: "Partner", profileSlug: "zann-ali" },
+      { name: "Julie Wolf, PhD", role: "Partner", profileSlug: "julie-wolf-phd" }
+    ],
+    timeline: [
+      { year: "2018", event: "2048 Ventures is founded, according to the boilerplate in Cooley's January 2022 note on the firm's Fund II close, which reads \"Founded in 2018, 2048 Ventures is a thesis-driven, earliest-stage venture capital firm\". The firm's own website states no founding year." },
+      { year: "2019", event: "Form D for 2048 Ventures I, LP is filed on 14 January 2019, naming Alex Iskold and Paul Sethi as Managing Partners of the general partner and reporting a $25,000,000 offering with no sales yet made." },
+      { year: "2019", event: "TechCrunch reports on 8 May 2019 that the firm has raised a first fund of $27 million and is writing first checks of $300,000 to $500,000." },
+      { year: "2022", event: "Fund II closes. Cooley states on 26 January 2022 that it advised the firm on the closing of its oversubscribed Fund II at $67 million; the Form D filed 20 January 2022 reports $66,235,000 sold." },
+      { year: "2024", event: "Portfolio company Aerodome is acquired by Flock Safety, per the firm's own investments index entry of 18 October 2024 and its Fund III announcement, which lists \"Aerodome (acquired by Flock)\"." },
+      { year: "2025", event: "Form D for 2048 Ventures III, LP is filed on 20 February 2025 with a date of first sale of 20 February 2025." },
+      { year: "2026", event: "The firm announces on 29 January 2026 that it raised an oversubscribed $82,048,000 Fund III; the Form D/A of 2 March 2026 reports $82,048,000 offered and $82,048,000 sold, with nothing remaining." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "b2venture",
+    sectors: ["Technology", "Consumer", "Energy", "Foodtech", "Automation", "Industrial Tech", "Internet", "Manufacturing", "Life Sciences", "Healthcare"],
+    signatureExit: "Navan (IPO, 2025)",
+    slug: "b2venture",
+    website: "https://www.b2venture.vc",
+    short: "b2venture",
+    founded: 2000,
+    hq: "St. Gallen, Switzerland",
+    aum: "€500m (capital under management, self-reported on the firm's SECA member profile, undated, checked 2026; the firm publishes no AUM figure of its own. Its largest fund is Fund V at €150m, closed at hard cap and announced 28 January 2026)",
+    thesis: "b2venture is a European early-stage venture firm that states it invests primarily at pre-seed and seed, with the ability to invest in later stages through its Direct Investments track. Its site gives Pre-Seed, Seed and Series A rounds with tickets from EUR 250,000 to EUR 5,000,000 and an average ticket of EUR 1,000,000. It states it is focused on Europe with an emphasis on the German-speaking area (DACH), and invests outside Europe on a case-by-case basis where it has a trusted local lead investor. The firm describes a two-track model: dedicated funds run by dedicated fund teams, and a Direct Investments track staffed by an independent investment team, alongside a community of angel investors that the January 2026 Fund V announcement puts at more than 350 people.",
+    leadership: [
+      { name: "Florian Schweitzer", role: "Founding Partner", profileSlug: "florian-schweitzer" },
+      { name: "Andreas Goeldi", role: "Partner", profileSlug: "andreas-goeldi" },
+      { name: "Christian Schütz", role: "Partner", profileSlug: "christian-schutz" },
+      { name: "Dr. Friederike Hoffmann", role: "Partner", profileSlug: "dr-friederike-hoffmann" },
+      { name: "Gerrit Jurilj", role: "Partner", profileSlug: "gerrit-jurilj" },
+      { name: "Jan-Hendrik Bürk", role: "Partner", profileSlug: "jan-hendrik-burk" },
+      { name: "Mathias Ockenfels", role: "Partner", profileSlug: "mathias-ockenfels" },
+      { name: "Sven Eppert", role: "Partner & CFO", profileSlug: "sven-eppert" }
+    ],
+    timeline: [
+      { year: "2000", event: "Florian Schweitzer co-founds the firm as BrainsToVentures, an online platform for entrepreneurs and business angels, at the end of his studies at the University of St. Gallen." },
+      { year: "2007", event: "The firm launches its first venture capital fund, under the name btov Partners." },
+      { year: "2019", event: "Andreas Goeldi joins as Partner; Sven Eppert returns to the firm after leaving in 2013." },
+      { year: "2023", event: "The firm rebrands from btov Partners to b2venture, announced by founding partner Florian Schweitzer on 20 March 2023 and reported by Startbase on 24 March 2023." },
+      { year: "2025", event: "Portfolio company Navan lists publicly and the firm reports seven further portfolio sales during the year, including Araris Biotech, Beekeeper and Neptune to OpenAI." },
+      { year: "2026", event: "Dr. Friederike Hoffmann joins as Partner in the Direct Investments team as of January 2026, announced by the firm on 17 June 2026." },
+      { year: "2026", event: "b2venture announces on 28 January 2026 that it has closed Fund V at its EUR 150m hard cap, its largest fund to date, intended for around 35 early-stage European companies." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Blu Venture Investors",
+    sectors: ["Cybersecurity", "Enterprise"],
+    signatureExit: "LKC Technologies (acquired by AMETEK, announced 3 February 2026)",
+    slug: "blu-venture-investors",
+    website: "https://www.bluventureinvestors.com",
+    short: "Blu Ventures",
+    founded: 2010,
+    hq: "Arlington, VA",
+    aum: null,
+    thesis: "Blu Venture Investors, which brands itself on its current website as Blu Ventures, is an early-stage venture investor in the Washington, D.C. area. Its about page says the firm began in 2010 as a group of former operators and has evolved from its angel-group roots into a venture firm operating through a dedicated fund model, and describes its focus as cybersecurity and enterprise technology. Its homepage describes it as an early-stage venture capital fund focused on cybersecurity companies, built by former operators, under the line \"Where Venture Capital Meets Operator DNA\". The about page names three fund structures: sector-focused micro-funds, a $25M early-stage cyber fund launched in 2021, and a next-generation fund strategy targeting $50M. Alongside the funds the firm invests through single-deal series vehicles, filed with the SEC as numbered quarterly series of Blu Venture Investors Core, LLC, and it runs an Associate Investor Program and an annual Cyber Venture Forum.",
+    leadership: [
+      { name: "J.S. Gamble", role: "Managing Partner, Executive Committee, Cyber Fund Administrative Committee", profileSlug: "j-s-gamble" },
+      { name: "PK Malhotra", role: "Operating Partner, Executive Committee, Cyber Fund 2021 & 2026 Investment Committee", profileSlug: "pk-malhotra" },
+      { name: "Eric Adler", role: "Operating Partner, Executive Committee", profileSlug: "eric-adler" }
+    ],
+    timeline: [
+      { year: "2010", event: "The firm's about page states \"Blu Ventures began in 2010 as a group of former operators who believed early-stage founders deserved more than capital\"." },
+      { year: "2021", event: "Blu Venture Investors Cyber Fund, LP is formed in Delaware and files its Form D on 3 June 2021 for a $25,000,000 offering, with a first sale on 20 May 2021, from 1577 Spring Hill Road, Suite 405, Vienna, VA." },
+      { year: "2021", event: "An amended Form D filed 14 July 2021 reports $17,300,000 sold in the Cyber Fund." },
+      { year: "2022", event: "The firm announces on 13 June 2022 the closing of its Cyber Fund at just under $25M, and states in the same release that it has deployed over $97MM to date." },
+      { year: "2024", event: "The firm announces on 26 April 2024 the addition of five new Venture Partners: Bill Fields, Howard Horowitz, Ted Olsen, Tom Perkins and Howard Roth." },
+      { year: "2026", event: "Blu Venture Investors Cyber Fund 2026-A, LP and Blu Venture Investors Cyber Fund 2026-B, LP each file a Form D on 24 June 2026 from 1550 Crystal Drive, Suite 200, Arlington, VA, each stating an indefinite offering amount and nothing sold at the filing date." },
+      { year: "2026", event: "AMETEK announces on 3 February 2026 its acquisition of LKC Technologies, a Blu portfolio company." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Bosch Ventures",
+    sectors: ["AI", "Machine Learning", "Automation", "Semiconductors", "Advanced Manufacturing", "Mobility", "Climate Technology", "Healthcare"],
+    signatureExit: "Arduino (acquired by Qualcomm, 2025)",
+    slug: "bosch-ventures",
+    website: "https://bosch.ventures",
+    short: "Bosch Ventures",
+    founded: 2007,
+    hq: "Stuttgart, Germany",
+    aum: null,
+    thesis: "Bosch Ventures is the corporate venture capital company of the Bosch Group, operated by the legal entity Robert Bosch Venture Capital GmbH. It is a corporate arm rather than an independent venture partnership: the Bosch Group is its sole capital provider and the unit describes itself in its own press material as \"the corporate venture capital company of the Bosch Group\". The firm states its investment sweet spot is early stage, while also looking at later-stage companies and, in selected cases, seed stage. It states investments of up to EUR 25m per company and equity positions of up to 25 percent. Its printed focus areas are AI / Deep Learning, Automation & Digitalization, Semiconductor & Next Generation Computer, Advanced Manufacturing and Mobility Solutions, organised into search clusters it names Automation & Electrification, Enabling Technologies, Climate Tech and Healthcare. It invests in deep-tech companies worldwide from offices in Stuttgart and Frankfurt in Germany, Sunnyvale and Boston in the United States, Shanghai in China and Tel Aviv in Israel. The unit also runs Open Bosch, a startup-engagement programme that connects portfolio and other startups with Bosch business units.",
+    leadership: [
+      { name: "Dr. Ingo Ramesohl", role: "Managing Director", profileSlug: "dr-ingo-ramesohl" },
+      { name: "Philipp Rose", role: "Managing Director", profileSlug: "philipp-rose" }
+    ],
+    timeline: [
+      { year: "2007", event: "Bosch establishes its venture capital subsidiary; the Bosch Group states it has made more than 100 investments worldwide since its establishment in 2007." },
+      { year: "2014", event: "Philipp Rose joins RBVC as Managing Director after General Manager and CFO roles in Bosch subsidiaries." },
+      { year: "2015", event: "Ingo Ramesohl joins RBVC at the beginning of 2015 after 16 years with Bosch in Germany, Korea and China." },
+      { year: "2018", event: "Xiaoguang Sun joins RBVC in March 2018 as Investment Partner and Head for China." },
+      { year: "2023", event: "On 15 May 2023, alongside its investment in AutoCore.ai, Robert Bosch Venture Capital announces a unification of its branding under the name Bosch Ventures." },
+      { year: "2025", event: "On 8 May 2025 Bosch announces a sixth venture capital fund of about EUR 250 million (about USD 270 million), with a stated emphasis on North America." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Catalio Capital Management",
+    sectors: ["Healthcare", "Biotech", "Medical Devices", "Diagnostics", "Life Sciences", "Data"],
+    signatureExit: "Hyperfine (Nasdaq: HYPR), which became publicly traded through HealthCor Catalio Acquisition Corp. (Nasdaq: HCAQ), the special purpose acquisition company of which Catalio co-founder George Petrocheilos was President; the SPAC and Hyperfine share SEC CIK 0001833769.",
+    slug: "catalio-capital-management",
+    website: "https://www.cataliocapital.com",
+    short: "Catalio",
+    founded: 2020,
+    hq: "New York, NY",
+    aum: "$2B (the homepage prints \"$2B In assets under management *as of 10/01/2025\"; the raw date form is carried here because for a US filer 10/01/2025 reads as 1 October 2025)",
+    thesis: "Catalio Capital Management is an SEC-registered investment adviser (CRD 310374, SEC file 801-121976) that describes itself as focused on the full lifecycle of innovative healthcare investing, across private, public and credit markets. It runs four stated strategies: Private Equity and Venture Capital, investing in privately held innovative healthcare companies at all stages from inception to IPO; Structured Opportunities, providing senior-secured financing to healthcare innovators; Public Equities, a fundamental equity long/short strategy investing in global healthcare equities across innovative drugs, devices, diagnostics and data; and Co-Investments offering limited partners direct access to selected deals. The firm operates from New York, Washington DC and London, and states that it works with a network of more than 45 Venture Partners who hold equity interests across all Catalio strategies. It is a multi-strategy healthcare investment manager rather than a pure venture partnership.",
+    leadership: [
+      { name: "George C. Petrocheilos", role: "Co-Founder & Managing Partner", profileSlug: "george-c-petrocheilos" },
+      { name: "R. Jacob Vogelstein, Ph.D.", role: "Co-Founder & Managing Partner", profileSlug: "r-jacob-vogelstein-ph-d" },
+      { name: "John Henry Iucker, CFA", role: "Partner & Head of Credit", profileSlug: "john-henry-iucker-cfa" },
+      { name: "Olga Maltseva", role: "Partner & Head of Operations", profileSlug: "olga-maltseva" },
+      { name: "Ben Snedeker", role: "Partner & Head of Public Equities", profileSlug: "ben-snedeker" },
+      { name: "Diamantis Xylas, M.D.", role: "Partner & Head of Research", profileSlug: "diamantis-xylas-m-d" },
+      { name: "Isaac Ro", role: "Partner", profileSlug: "isaac-ro" },
+      { name: "Ajay Mantha", role: "Partner", profileSlug: "ajay-mantha" },
+      { name: "Tom Brooks", role: "Partner", profileSlug: "tom-brooks" },
+      { name: "Hai Yan, Ph.D.", role: "Partner", profileSlug: "hai-yan-ph-d" }
+    ],
+    timeline: [
+      { year: "2020", event: "Catalio Capital Management is founded, per the firm's own July 2025 fund announcement, which describes Catalio as 'founded in 2020'." },
+      { year: "2021", event: "Catalio Capital Management, LP is approved as an SEC-registered investment adviser with effect from 30 July 2021 (SEC file 801-121976, CRD 310374)." },
+      { year: "2022", event: "Catalio closes its third life sciences fund at $381 million on 2 May 2022." },
+      { year: "2022", event: "Chau Khuong joins Catalio as General Partner, announced 25 May 2022. He is not listed on the firm's team page as of 7 September 2026." },
+      { year: "2025", event: "Catalio Nexus Fund IV closes with over $400 million in commitments including co-investment vehicles, announced 1 July 2025, at which point the firm states $2 billion across private equity, private credit and public equities." },
+      { year: "2026", event: "Catalio Structured Opportunities Fund II closes with more than $325 million in commitments, announced 7 January 2026; the strategy is stated to have completed 21 investments to date." },
+      { year: "2026", event: "Catalio files a Form 13F-HR for the quarter ended 30 June 2026 reporting 39 positions with a total value of $532,102,416." }
+    ],
+    holdings: [
+      { name: "Ascendis Pharma A/S", ticker: "ASND", historicalPrice: null, price: null },
+      { name: "atai Beckley", ticker: "ATAI", historicalPrice: null, price: null },
+      { name: "Avalyn Pharma", ticker: "AVLN", historicalPrice: null, price: null },
+      { name: "Axsome Therapeutics", ticker: "AXSM", historicalPrice: null, price: null },
+      { name: "BridgeBio Pharma", ticker: "BBIO", historicalPrice: null, price: null },
+      { name: "BridgeBio Oncology Therapeutics", ticker: "BBOT", historicalPrice: null, price: null },
+      { name: "Bristol-Myers Squibb", ticker: "BMY", historicalPrice: null, price: null },
+      { name: "Corvus Pharmaceuticals", ticker: "CRVS", historicalPrice: null, price: null },
+      { name: "Definium Therapeutics", ticker: "DFTX", historicalPrice: null, price: null },
+      { name: "Dianthus Therapeutics", ticker: "DNTH", historicalPrice: null, price: null },
+      { name: "Dyne Therapeutics", ticker: "DYN", historicalPrice: null, price: null },
+      { name: "Eledon Pharmaceuticals", ticker: "ELDN", historicalPrice: null, price: null },
+      { name: "Edwards Lifesciences", ticker: "EW", historicalPrice: null, price: null },
+      { name: "4D Molecular Therapeutics", ticker: "FDMT", historicalPrice: null, price: null },
+      { name: "Faeth Therapeutics", ticker: "FTH", historicalPrice: null, price: null },
+      { name: "Gilead Sciences", ticker: "GILD", historicalPrice: null, price: null },
+      { name: "Structure Therapeutics", ticker: "GPCR", historicalPrice: null, price: null },
+      { name: "Fractyl Health", ticker: "GUTS", historicalPrice: null, price: null },
+      { name: "Heartflow", ticker: "HTFL", historicalPrice: null, price: null },
+      { name: "Hyperfine", ticker: "HYPR", historicalPrice: null, price: null },
+      { name: "Immunocore Holdings", ticker: "IMCR", historicalPrice: null, price: null },
+      { name: "Incyte", ticker: "INCY", historicalPrice: null, price: null },
+      { name: "Disc Medicine", ticker: "IRON", historicalPrice: null, price: null },
+      { name: "Johnson & Johnson", ticker: "JNJ", historicalPrice: null, price: null },
+      { name: "Kardigan", ticker: "KARD", historicalPrice: null, price: null },
+      { name: "Kailera Therapeutics", ticker: "KLRA", historicalPrice: null, price: null },
+      { name: "Karyopharm Therapeutics", ticker: "KPTI", historicalPrice: null, price: null },
+      { name: "Veradermics", ticker: "MANE", historicalPrice: null, price: null },
+      { name: "Metagenomi Therapeutics", ticker: "MGX", historicalPrice: null, price: null },
+      { name: "Mineralys Therapeutics", ticker: "MLYS", historicalPrice: null, price: null },
+      { name: "Natera", ticker: "NTRA", historicalPrice: null, price: null },
+      { name: "Odyssey Therapeutics", ticker: "ODTX", historicalPrice: null, price: null },
+      { name: "Outset Medical", ticker: "OM", historicalPrice: null, price: null },
+      { name: "Parabilis Medicines", ticker: "PBLS", historicalPrice: null, price: null },
+      { name: "Protagonist Therapeutics", ticker: "PTGX", historicalPrice: null, price: null },
+      { name: "Ultragenyx Pharmaceutical", ticker: "RARE", historicalPrice: null, price: null },
+      { name: "Septerna", ticker: "SEPN", historicalPrice: null, price: null },
+      { name: "Syndax Pharmaceuticals", ticker: "SNDX", historicalPrice: null, price: null },
+      { name: "Protara Therapeutics", ticker: "TARA", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "CDH Investments",
+    sectors: ["Consumer", "Healthcare", "Hard Tech", "B2B", "Infrastructure", "AI", "Semiconductors", "Clean Energy", "Real Estate"],
+    signatureExit: "WH Group (万洲国际), the combination of Shuanghui and Smithfield, IPO on the Hong Kong Stock Exchange, August 2014",
+    slug: "cdh-investments",
+    website: "https://www.cdhfund.com",
+    short: "CDH",
+    founded: 2002,
+    hq: "Beijing, China",
+    aum: "US$16.26B (RMB 114.322bn / ￥1143.22亿 of assets under management as of end-2025, stated by the firm on its own About page in both Chinese and English)",
+    thesis: "CDH Investments (鼎晖投资) describes itself as one of the first China focused alternative asset managers, founded in 2002 by investment and finance professionals together with institutional backers including GIC. It is not a single venture partnership: its own site divides the platform into six separately branded and separately staffed businesses. Private Equity (私募股权投资) does large growth, restructuring and buyout deals in Consumer, Healthcare, Hard Technology and Business Services & New Infrastructure. Venture and Growth Capital, branded CDH VGC (创新与成长投资) and founded in 2015, is the venture arm and states it has invested in over 90 innovative companies in healthcare, hard technology, AI and AI+, enterprise solutions and consumer. Private Credit (夹层与信用投资) states RMB 23 billion of AUM against a strategy it calls \"三新一特\": new infrastructure, new energy, new industrial assets and special situations. Real Assets (不动产投资) states $15bn of asset value invested across China, the United States, Japan and Asia Pacific. Cephei Capital (润晖投资), founded in 2006, is a bottom-up value public-equities manager and states $3.5bn of AUM as of January 2026. CDH Baifu (鼎晖百孚), founded in 2012, is described as a boutique technology fund investment platform. The firm states it has invested in over 350 companies and that more than 100 of them have listed.",
+    leadership: [
+      { name: "Wu Shangzhi (吴尚志)", role: "Chairman", profileSlug: "wu-shangzhi" },
+      { name: "Hu Xiaoling (胡晓玲)", role: "Managing Partner, Private Equity (Head of PE)", profileSlug: "hu-xiaoling" },
+      { name: "Wang Lin (王霖)", role: "Managing Partner, Venture and Growth Capital (Head of VGC)", profileSlug: "wang-lin" },
+      { name: "Wang Mei (王嵋)", role: "Head of RA, Managing Partner (Real Assets)", profileSlug: "wang-mei" },
+      { name: "Ying Wei (应伟)", role: "Managing Partner, Baifu", profileSlug: "ying-wei" },
+      { name: "Li Gang (李刚)", role: "Executive Chairman, Cephei Capital", profileSlug: "li-gang" }
+    ],
+    timeline: [
+      { year: "2002", event: "Wu Shangzhi founds CDH Investments (鼎晖投资), which the firm's About page describes as established by investment and finance professionals together with institutional backers including GIC; Hu Xiaoling and Wang Lin are among the founding partners." },
+      { year: "2005", event: "CDH makes its first investment in footwear retailer Belle (百丽), which it had first met in 2003." },
+      { year: "2006", event: "Li Gang founds Cephei (润晖投资), CDH's public equities platform." },
+      { year: "2007", event: "CDH becomes the controlling shareholder of Shuanghui (双汇), and separately makes its first investment in Joyoung (九阳股份) and assists Belle's Hong Kong IPO." },
+      { year: "2012", event: "Ying Wei founds CDH Baifu (鼎晖百孚), the group's technology-focused boutique fund investment platform." },
+      { year: "2013", event: "CDH backs Shuanghui's US$7.1 billion acquisition of Smithfield Foods." },
+      { year: "2014", event: "WH Group (万洲国际), formed from the reorganisation of Shuanghui and Smithfield, completes its IPO in Hong Kong in August 2014." },
+      { year: "2015", event: "CDH VGC, the firm's venture and growth capital arm, is founded." },
+      { year: "2019", event: "Belle spins off its sportswear business Topsports (滔搏), which lists on the Hong Kong Stock Exchange in December 2019." },
+      { year: "2020", event: "Trina Solar (天合光能), in which CDH invested in 2017, lists on the Shanghai STAR Market in June 2020." },
+      { year: "2022", event: "SVOLT Energy (蜂巢能源) raises a RMB 6 billion (60亿) B+ round on 11 December 2022 from investors including CDH." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Chalmers Ventures",
+    sectors: ["Deep Tech"],
+    signatureExit: "Halon (acquired by Intera, 2024)",
+    slug: "chalmers-ventures",
+    website: "https://chalmersventures.com",
+    short: "Chalmers Ventures",
+    founded: 2015,
+    hq: "Gothenburg, Sweden",
+    aum: null,
+    thesis: "Chalmers Ventures describes itself as a tech investor and venture builder in the Nordics, taking deep tech from lab to market, and as the deep-tech investor within the Chalmers entrepreneurial ecosystem. It is university-linked in a specific and verifiable way: it is a wholly owned company inside the Chalmers group, formed in 2015 when Chalmers consolidated the incubators Encubator and Chalmers Innovation together with Chalmersinvest into one new subsidiary, backed by SEK 300 million of investment capital over ten years plus almost SEK 150 million of operating funds from the Chalmers University of Technology Foundation. Its stated investment stages are pre-seed of up to SEK 1 million, seed capital of up to SEK 5 million and growth capital of up to SEK 25 million, with a stated maximum total investment of SEK 25 million per company across all phases. It states it invests in early startups in Sweden with a unique innovative knowledge-based or research-based technology, international scalability, an entrepreneurial team and sustainability or impact potential, and that companies should normally have links to Chalmers or have taken part in its venture creation programmes, though externally originated ideas are also considered. Alongside investing it runs a separate programme and venture-building arm, publishing named tracks including a Venture Building Program, a Mentorship Program, Track: Tech Transfer, Track: Tech Matching for Encubation, Startup Camp Deep Tech and Open Coaching. Programme cohort and participation numbers belong to that arm and are not fund figures.",
+    leadership: [
+      { name: "Pontus Ottosson", role: "CEO & Head of Investments", profileSlug: "pontus-ottosson" },
+      { name: "Jenny Dahlberg", role: "CFO - Chief Financial Officer" },
+      { name: "Annica Andersson", role: "CCMO - Chief Communication & Marketing Officer" },
+      { name: "Helena Ribbefors", role: "General Counsel" },
+      { name: "Ana Maria Popescu", role: "Head of Venture Creation, Pre-seed Investment Director", profileSlug: "ana-maria-popescu" }
+    ],
+    timeline: [
+      { year: "1999", event: "Predecessor organisation Chalmers Innovation begins operating; the firm's own about page states it worked with over 200 projects and started more than 130 companies from 1999." },
+      { year: "2015", event: "On 24 February 2015 Chalmers University of Technology announces the consolidation of Encubator, Chalmers Innovation and Chalmersinvest into a new wholly owned subsidiary, with SEK 300 million of investment capital over ten years and almost SEK 150 million of operating funds from the Chalmers University of Technology Foundation; Chalmers Ventures AB is registered in the Swedish company register on 22 January 2015 under organisation number 559001-3941." },
+      { year: "2021", event: "On 14 December 2021 Stiftelsen Chalmers tekniska högskola transfers its shareholdings in the listed companies Acosense AB (2,933,632 shares, largest owner) and LC-Tec Holding AB (1,605,926 shares, third largest owner) to its wholly owned subsidiary Chalmers Ventures AB, disclosed in Swedish major-shareholder notifications by both issuers." },
+      { year: "2023", event: "Portfolio company Acosense AB is declared bankrupt at Göteborg district court and delisted from Spotlight Stock Market with last trading day 27 February 2023." },
+      { year: "2024", event: "Pontus Ottosson, Head of Investments since 2017, becomes CEO on 1 January 2024." },
+      { year: "2024", event: "On 2 October 2024 Chalmers Ventures exits Halon, which is acquired by Intera; terms not disclosed." },
+      { year: "2025", event: "LC-Tec Holding AB, in which Chalmers Ventures held shares as of the 2021 notification, changes its name to AB Sperrung (publ) on NGM Nordic SME effective 20 March 2025, and subsequently to Synexo Group AB after a reverse acquisition." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Company Ventures",
+    sectors: ["AI", "Data Infrastructure", "Healthcare"],
+    signatureExit: null,
+    slug: "company-ventures",
+    website: "https://www.companyventures.com",
+    short: "Company Ventures",
+    founded: 2014,
+    hq: "New York, NY",
+    aum: null,
+    thesis: "Company Ventures states on its homepage that it is \"a first check venture firm\" that provides \"founders daily access to a community of excellence, embedded in world class physical space\", and that it \"pioneered the Residency model with Grand Central Tech in 2014\". Its stated current interest is \"founders focused on building generational AI companies at the application and data infrastructure / model augmentation layers\". It is more than an investor: alongside its funds it runs the Grand Central Tech Residency (four months full time, a $10K per month stipend, six to eight founders a year), the Boost Founder Fellowship, and, from February 2025, Terrarium, which the firm describes as an embedded healthcare incubation studio and which is separately incorporated as Terrarium Inc. and separately funded through Company Ventures Terrarium Fund I, LP. In a Tech:NYC interview its Managing Partner said the firm invests at pre-seed and seed and typically invests $1 million.",
+    leadership: [
+      { name: "Matt Harrigan", role: "Co-founder & Managing Partner", profileSlug: "matt-harrigan" },
+      { name: "Nelson Schubart", role: "Managing Partner", profileSlug: "nelson-schubart" },
+      { name: "Michael Milstein", role: "Co-founder & Exec Chair", profileSlug: "michael-milstein" },
+      { name: "Hunter Hillenmeyer", role: "General Partner", profileSlug: "hunter-hillenmeyer" },
+      { name: "Mark Rosenblum", role: "Partner", profileSlug: "mark-rosenblum" }
+    ],
+    timeline: [
+      { year: "2014", event: "Grand Central Tech begins. The firm's homepage states \"We pioneered the Residency model with Grand Central Tech in 2014\", and its October 2024 cohort post states \"This year marks the 10 year anniversary of the Company Ventures Founder Residency program!\"" },
+      { year: "2017", event: "The firm partnered with Milstein Properties to launch Company and The Company Building at 335 Madison Avenue, per its own 17 February 2021 post." },
+      { year: "2018", event: "Company Ventures raised a $34M Fund I, per its own 17 February 2021 post; the vehicle Company Venture Capital Fund I, LP filed a Form D on 13 September 2018." },
+      { year: "2021", event: "The firm published \"From GCT to Company Ventures\" on 17 February 2021, marking the move from the Grand Central Tech brand to the Company Ventures brand." },
+      { year: "2022", event: "Company Ventures Fund II, LP filed a Form D on 9 March 2022; its 8 March 2023 amendment reports $16,375,000 sold against a $50,000,000 offering, with a first sale on 10 March 2022." },
+      { year: "2025", event: "Terrarium launched on 19 February 2025 as a healthcare venture studio; Terrarium Inc. filed a Form D on 30 January 2025 reporting $2,750,000 sold against a $5,500,000 offering." },
+      { year: "2026", event: "Company Ventures Fund III, LP filed a Form D on 9 January 2026 for an $80,000,000 offering, signed by Matthew Harrigan, with nothing sold at the filing date." },
+      { year: "2026", event: "The amended Form D for Company Ventures Terrarium Fund I, LP filed 23 January 2026 reports $13,662,500 sold against a $25,000,000 offering." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "ff Venture Capital",
+    sectors: ["AI", "Manufacturing", "Energy", "Robotics", "Security"],
+    signatureExit: null,
+    slug: "ff-venture-capital",
+    website: "https://ffvc.com",
+    short: "ffVC",
+    founded: 2008,
+    hq: "New York, NY",
+    aum: null,
+    thesis: "ff Venture Capital describes itself on its own homepage as a technology venture capital firm in New York City operating since 2008, and on its about page as \"a global family of funds\" investing across emerging industries with a stated focus on AI, Manufacturing, Energy, Robotics and Security. The firm states an initial investment of $300,000 to $700,000 for 8 to 10 percent of a company at a targeted post-money valuation under $10 million, says it leads rounds and takes board participation, and says it follows on through pre-money valuations of about $50 million. It states four investment criteria: fit with its thematic view, a path to a $100 million revenue run rate, industry expertise and ability to lead, and strong defensive moats. It says it invests in about 5 percent of the roughly 3,000 deals it reviews a year. Alongside capital it offers portfolio companies a platform team, a talent network, roundtable learning communities and access to what it calls its exclusive accounting firm, which it does not name. Its European operation, ffVC Europe, is based in Warsaw and funds Tech and Gaming companies from Series Seed through Series B with investments of PLN 1m to PLN 12m.",
+    leadership: [
+      { name: "Alex Katz", role: "Partner / US", profileSlug: "alex-katz" },
+      { name: "John Frankel", role: "Partner / US", profileSlug: "john-frankel" },
+      { name: "Katie Weiss", role: "Principal / US" },
+      { name: "Maciej Skarul", role: "Partner / PL", profileSlug: "maciej-skarul" },
+      { name: "Mariusz Adamski", role: "Partner / PL", profileSlug: "mariusz-adamski" },
+      { name: "Masayuki Ohta", role: "Partner / JP", profileSlug: "masayuki-ohta" },
+      { name: "Michael J. Woods", role: "Partner / US", profileSlug: "michael-j-woods" },
+      { name: "Taro Hizume", role: "Partner / JP", profileSlug: "taro-hizume" }
+    ],
+    timeline: [
+      { year: "2008", event: "John Frankel founds ff Venture Capital, according to his biography on the firm's own team page, which reads \"He founded ff Venture Capital in 2008\". The homepage carries the line \"The most engaged technology venture capital firm in New York City since 2008.\"" },
+      { year: "2014", event: "TechCrunch reports on 14 January 2014 that the firm's third fund, ff Rose, and a sister fund, ff Rose Innovate, total $52 million combined." },
+      { year: "2016", event: "TechCrunch reports on 5 May 2016 that the firm has raised $53.8 million for its fourth seed-stage venture fund; the Form D for ff Sapphire (IV) Venture Capital Fund, LP was filed the previous day, 4 May 2016." },
+      { year: "2016", event: "Form D filings are made for ff Select Opportunity Fund, L.P. on 1 June 2016 and for ff Graphite (V) Venture Capital Fund, L.P. on 30 November 2016." },
+      { year: "2018", event: "The Form D/A for ff Graphite (V) Venture Capital Fund, L.P., filed 30 November 2018, reports a $150,000,000 offering with $24,367,500 sold and a date of first sale of 3 January 2017." },
+      { year: "2022", event: "Form D for ff Burgundy Venture Capital Fund LP is filed on 27 January 2022, naming ff Venture Capital LLC as sole member of the general partner and John Frankel, Adam Plotkin and Alex Katz as members of the management company." },
+      { year: "2022", event: "Form D for ff Blue and Yellow Heritage Fund, L.P. is filed on 13 September 2022, with a D/A one year later; the general partner is ff Blue and Yellow Heritage Fund GP, LLC and the sole member of the general partner is ff Venture Capital LLC." },
+      { year: "2023", event: "The firm announces on 1 June 2023 that it has launched ff Red & White, a new 60 million euro fund for Series A and late seed investments in Central European enterprise startups across Germany, Austria, Poland, Czechia, Slovakia, Romania and Hungary, backed by JBIC IG Partners, the Japan Bank for International Cooperation and Japanese multinational corporations." },
+      { year: "2023", event: "The firm opens its first Upstate New York office inside CenterState CEO's The Tech Garden in downtown Syracuse on 12 September 2023, as that location's first in-residence investor alongside the GENIUS NY accelerator; the announcement says the firm had already invested in two GENIUS NY companies, CivRobotics and CarScanner." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Green Pine Capital Partners",
+    sectors: ["Technology", "Artificial Intelligence", "Healthcare", "Life Sciences", "Advanced Manufacturing", "Robotics", "Automotive", "Autonomy", "Clean Energy"],
+    signatureExit: null,
+    slug: "green-pine-capital-partners",
+    website: "http://www.pinevc.com.cn",
+    short: "Green Pine",
+    founded: 2007,
+    hq: "Shenzhen, China",
+    aum: null,
+    thesis: "Green Pine Capital Partners (松禾资本, legal name 深圳市松禾资本管理有限公司) is a Shenzhen-based technology venture capital manager. 36Kr reported in 2017 that it was set up in 2007 by 深港产学研创业投资有限公司 as a specialised venture capital management company, and co-founder 厉伟 has described 2007 as the year the 松禾 brand was created. Managing Partner 汪洋 described the firm's approach in 2023 as a \"2+2+N\" strategy built on two layers of underlying infrastructure, hardware such as chips and computing power and software such as algorithms, AI and cloud, with additional sectors on top. The firm states its priority areas as digital technology centred on artificial intelligence, precision medicine centred on gene testing, and innovative materials, and in interviews describes its style as investing early, investing small and investing in technology. It also runs regional funds set up with local government partners, including its first Anhui fund in 2025.",
+    leadership: [
+      { name: "Li Wei (厉伟)", role: "Founding Partner (创始合伙人)", profileSlug: "li-wei" },
+      { name: "Luo Fei (罗飞)", role: "Founding Partner (创始合伙人)", profileSlug: "luo-fei" },
+      { name: "Wang Yang (汪洋)", role: "Managing Partner (管理合伙人)", profileSlug: "wang-yang" }
+    ],
+    timeline: [
+      { year: "2007", event: "深圳市松禾资本管理有限公司 (Green Pine Capital Partners) is set up by 深港产学研创业投资有限公司 as a specialised venture capital management company; co-founder 厉伟 describes it as the year the firm adopted the new 松禾 brand." },
+      { year: "2009", event: "深圳市松禾资本管理有限公司 files the combined Chinese and English trademark 松禾资本 GREEN PINE CAPITAL PARTNERS in class 36 on 15 September 2009 (registration number 7698962)." },
+      { year: "2010", event: "深圳市松禾成长关爱基金会, the founders' charitable foundation, is established." },
+      { year: "2017", event: "36Kr reports the firm had raised 18 funds totalling over RMB 8 billion (80亿元) and recorded 19 IPO exits, 14 trade-sale exits, 3 equity-transfer exits and 16 buyback exits." },
+      { year: "2025", event: "安庆松禾创智成长创业投资合伙企业, the firm's first fund in Anhui province, is set up with a target size of RMB 1 billion (10亿元) and a first close of RMB 500 million (5亿元), focused on high-end equipment manufacturing." },
+      { year: "2025", event: "安徽松禾长风瑞合创业投资合伙企业 (松禾长风基金), a RMB 300 million (3亿元) fund run on a one-fund-two-cities model with government partners in Wuhu and Changchun, completes its AMAC registration in March 2025." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "HashKey Capital",
+    sectors: ["Blockchain", "Infrastructure", "Crypto", "AI", "Data", "Fintech", "Consumer Tech"],
+    signatureExit: null,
+    slug: "hashkey-capital",
+    website: "https://hashkey.capital",
+    short: "HashKey Capital",
+    founded: 2015,
+    hq: "Singapore, Singapore",
+    aum: "Not publicly disclosed (no dated current AUM figure; the firm's April 2026 announcement gives ~HK$8bn as \"Assets under management since inception\" at 30 September 2025, and its boilerplate says over US$1bn managed since inception - both cumulative. Fund III closed at US$500M in January 2023)",
+    thesis: "HashKey Capital describes itself as the investment arm of HashKey Group and as an asset manager investing exclusively in blockchain technology and digital assets. It says its venture investments team oversees a portfolio of over 600 projects across institutional services, infrastructure, data, AI and consumer services and technology, and that it invests in blockchain infrastructure, tooling and applications with potential for mass adoption, with an emphasis on emerging markets. Alongside venture investing it runs regulated liquid-fund products, including an actively managed fund, index funds and the Bosera HashKey Bitcoin (3008.HK) and Ether (3009.HK) spot ETFs listed on HKEX, and a digital-asset wealth management business. Its Hong Kong operating entity, HashKey Capital Limited, is SFC-licensed for Type 1, Type 4 and Type 9 regulated activities under CE number BOP237.",
+    leadership: [
+      { name: "Deng Chao", role: "CEO", profileSlug: "deng-chao" },
+      { name: "Ryan Chen", role: "Managing Partner", profileSlug: "ryan-chen" },
+      { name: "Xiao Xiao", role: "Partner", profileSlug: "xiao-xiao" },
+      { name: "Mia Mai", role: "Partner", profileSlug: "mia-mai" },
+      { name: "Vincent Lau", role: "Partner, Operations", profileSlug: "vincent-lau" }
+    ],
+    timeline: [
+      { year: "2015", event: "HashKey Capital is established, focusing on early-stage blockchain venture investments, per HashKey Group's own compliance timeline." },
+      { year: "2018", event: "HashKey Group officially launches as a digital asset financial services group, with HashKey Capital as its investment arm." },
+      { year: "2020", event: "HashKey Capital Limited receives a Type 9 licence from the Hong Kong Securities and Futures Commission." },
+      { year: "2022", event: "HashKey Capital Limited secures SFC consent to upgrade its Type 9 licence to manage portfolios composed of up to 100 percent virtual assets, announced 12 September 2022; the same year the group obtains a Capital Markets Services licence from the Monetary Authority of Singapore." },
+      { year: "2023", event: "HashKey Capital closes HashKey FinTech Investment Fund III with US$500 million in total commitments, announced from Singapore on 17 January 2023." },
+      { year: "2024", event: "HashKey Capital Limited secures a Type 4 licence from the SFC under licence number BOP237, announced 13 May 2024, alongside a Type 9 licence upgrade." },
+      { year: "2025", event: "HashKey Capital secures a Type 1 licence from the SFC, announced 18 March 2025." },
+      { year: "2025", event: "HashKey Holdings Limited, the group parent, lists on the Main Board of the Hong Kong Stock Exchange under stock code 3887 on 17 December 2025." },
+      { year: "2025", event: "HashKey Capital announces a US$250 million first closing of Fund IV from Singapore on 24 December 2025, against a stated US$500 million target." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Invus",
+    sectors: ["Consumer", "Healthcare", "Biotech", "Hospitality"],
+    signatureExit: "Cava Group (NYSE: CAVA) listed on the New York Stock Exchange on 15 June 2023; Invus states that its affiliate Artal remained Cava's largest shareholder after the offering, so this is a public listing rather than a realised exit.",
+    slug: "invus",
+    website: "https://www.invus.com",
+    short: "Invus",
+    founded: 1985,
+    hq: "New York, NY",
+    aum: "Over $10B (under management, stated on the firm's Who We Are page and homepage, checked 2026; Invus Opportunities is separately stated at more than $2B)",
+    thesis: "Invus is not a venture partnership. It describes itself as a global equity investment firm with an evergreen capital structure that invests in both private and public equity and is 'not forced to quickly realize investments in order to raise the next fund'. Its capital comes from a European family group, principally through the Artal vehicle. The firm organises itself by strategy and geography rather than by fund: Invus Private Equity teams in the United States, Europe and Asia, Invus Public Equity teams in the same three regions, and the sister fund Invus Opportunities. Its stated operating principles are that all key executives must be owners, that management runs the company rather than Invus, and that value is built on fundamental customer insights. It operates from New York, Paris and Hong Kong. The regulated adviser in the group is Invus Financial Advisors, LLC (SEC CRD 161603, file 801-73756), whose relying advisers are The Invus Group, LLC and Avicenna Management LP.",
+    leadership: [
+      { name: "Raymond Debbane", role: "President and CEO", profileSlug: "raymond-debbane" },
+      { name: "Khalil Barrage", role: "Managing Director, Public Equity, United States", profileSlug: "khalil-barrage" },
+      { name: "David Van Zandt", role: "Global General Counsel" },
+      { name: "Philip Bafundo", role: "Chief Financial Officer" },
+      { name: "Arshaad Yar", role: "Chief Information Officer" }
+    ],
+    timeline: [
+      { year: "1985", event: "Raymond Debbane forms Invus, having previously been a manager at The Boston Consulting Group in Paris." },
+      { year: "2007", event: "Raymond Debbane, Christopher J. Sobecki and Philippe J. Amouyal all become directors of Lexicon Pharmaceuticals in August 2007, Amouyal as a designee of Invus, L.P. under a stockholders' agreement." },
+      { year: "2012", event: "Raymond Debbane becomes chairman of the Lexicon Pharmaceuticals board of directors in February 2012." },
+      { year: "2015", event: "Invus becomes a partner of Cava at Cava's Series A round, through its affiliate Artal International S.C.A." },
+      { year: "2018", event: "Philippe Amouyal and Benjamin Felt both join the Cava Group board of directors in November 2018." },
+      { year: "2023", event: "Cava Group lists on the New York Stock Exchange on 15 June 2023; Invus states that Artal remained Cava's largest shareholder following the offering." },
+      { year: "2026", event: "Artal Group S.A. files a Form 13F-HR for the quarter ended 30 June 2026 reporting two positions, Cava Group and Lexicon Pharmaceuticals, with a total value of $931,121,604, filed jointly with five other Artal entities." },
+      { year: "2026", event: "Invus Financial Advisors, LLC files a Form 13F-NT notice for the quarter ended 30 June 2026, reporting no holdings of its own." }
+    ],
+    holdings: [
+      { name: "Cava Group", ticker: "CAVA", historicalPrice: null, price: null },
+      { name: "Lexicon Pharmaceuticals", ticker: "LXRX", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "MANTIS Venture Capital",
+    sectors: ["AI/ML", "Enterprise", "Frontier Technologies", "Healthcare", "Cybersecurity", "Gaming", "Fintech", "Logistics", "Consumer", "Ecommerce", "Sustainability"],
+    signatureExit: "Superhuman (Grammarly announced its intent to acquire it on 1 July 2025; Mantis lists Superhuman under Acquisitions on its own portfolio page)",
+    slug: "mantis-venture-capital",
+    website: "https://mantisvc.com",
+    short: "Mantis VC",
+    founded: 2019,
+    hq: "Santa Monica, CA",
+    aum: null,
+    thesis: "Mantis VC states on its About page that it is \"a partnership between Alex Pall and Drew Taggart, otherwise known as The Chainsmokers, and experienced Venture Capital professionals and entrepreneurs Milan Koch and Jeffrey Evans\". The same page states the firm invests in \"Seed & Series A technology-enabled startups\" and refers to \"our 130+ investments\". The support the firm says it offers founders runs from \"branding and storytelling to warm introductions to closing customers and candidates\". Its funds are managed from Santa Monica, California, per the business address on the Form D filings of Mantis Capital Fund III, LP and Fund IV, LP.",
+    leadership: [
+      { name: "Alex Pall", role: "General Partner", profileSlug: "alex-pall" },
+      { name: "Drew Taggart", role: "General Partner", profileSlug: "drew-taggart" },
+      { name: "Jeffrey Evans", role: "General Partner", profileSlug: "jeffrey-evans" },
+      { name: "Milan Koch", role: "General Partner", profileSlug: "milan-koch" }
+    ],
+    timeline: [
+      { year: "2019", event: "Mantis Capital Fund I, LP gives 2019 as its year of incorporation on its Form D, filed 9 June 2020 and signed by Milan Koch as Principal." },
+      { year: "2020", event: "The firm's debut fund closed at $35 million, reported by TechCrunch on 15 September 2020." },
+      { year: "2023", event: "Mantis Capital Fund III, LP reports a date of first sale of 31 March 2023 on its Form D." },
+      { year: "2024", event: "The amended Form D for Mantis Capital Fund III, LP filed 29 March 2024 reports $79,450,000 sold." },
+      { year: "2025", event: "Grammarly announced on 1 July 2025 its intent to acquire Superhuman, a company Mantis lists under the Acquisitions category of its portfolio page." },
+      { year: "2025", event: "TechCrunch reported on 15 July 2025 that Mantis closed a $100 million third fund, bringing assets under management to $225 million." },
+      { year: "2026", event: "Mantis Capital Fund IV, LP filed a Form D on 20 May 2026, signed by Jeffrey Evans, with an indefinite offering amount and nothing sold at the filing date." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "One Way Ventures",
+    sectors: ["AI/ML", "SaaS", "Fintech", "Deep Tech", "Consumer"],
+    signatureExit: null,
+    slug: "one-way-ventures",
+    website: "https://www.onewayvc.com",
+    short: "One Way",
+    founded: 2017,
+    hq: "Boston, MA",
+    aum: "Not publicly disclosed (no AUM figure is published; the Form D figures are $16.3M sold on a $50M Fund I offering, $56.4M sold on Fund II, and $31.35M sold on a $60M Fund III as at January 2026 - offering and sold figures, not AUM, and not summed)",
+    thesis: "One Way Ventures states it is \"on a mission to back exceptional immigrant founders building high-impact global companies\" and invests at the pre-seed and seed stage. Its stated rationale is that \"immigrant success is not priced into the market\": the firm cites that immigrants are 13% of the U.S. population but start 24% of high-tech startups and have founded or co-founded 55% of America's billion-dollar startups, and argues that immigration self-selects for the entrepreneurial minded. Its stated core belief is that \"People should be given the opportunity to succeed regardless of birth location.\" The firm's own portfolio page groups its investments under the categories AI/ML, SaaS, Fintech, Deep tech and Consumer.",
+    leadership: [
+      { name: "Semyon Dukach", role: "Founding Partner", profileSlug: "semyon-dukach" },
+      { name: "Lex Zhao", role: "Managing Partner", profileSlug: "lex-zhao" },
+      { name: "Eugene Malobrodsky", role: "Managing Partner", profileSlug: "eugene-malobrodsky" },
+      { name: "Rhie Lim", role: "Partner, Global Strategy", profileSlug: "rhie-lim" }
+    ],
+    timeline: [
+      { year: "2017", event: "One Way Ventures is founded in Boston. Fund I, L.P. files its Form D on 13 November 2017 reporting a first sale of 1 November 2017, a $50,000,000 offering and $16,316,281 sold, with Semyon Dukach and Eveline Buchatskiy named as executive officers." },
+      { year: "2021", event: "Fund II, L.P. and Fund II-B, L.P. file a Form D on 4 January 2021 reporting $56,415,000 offered and $56,415,000 sold; TechCrunch reports the same day that the firm closed a $57.5M second fund following a $28M first fund." },
+      { year: "2025", event: "Fund III, L.P. and Fund III-B, L.P. file Forms D on 29 January 2025 for a $60,000,000 offering, first sale 30 January 2025, from 131 Dartmouth Street, Boston." },
+      { year: "2026", event: "Fund III, L.P. files a Form D/A on 29 January 2026 reporting $31,350,000 sold of the $60,000,000 offering." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Orbit Startups",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "orbit-startups",
+    website: "https://orbitventures.com",
+    short: "Orbit",
+    founded: 2022,
+    hq: null,
+    aum: "Not publicly disclosed (no AUM figure is published for Orbit; its own homepage states \"$125M Total Value Managed\", which is the firm's own label and is not called AUM. The $1.5B figure on the same site is SOSV's AUM, not Orbit's)",
+    thesis: "Orbit describes itself as \"Scaling breakthrough technologies across emerging and frontier markets.\" Its stated geography is Southeast and South Asia, the Middle East, Africa and Latin America, and it frames this on the basis of having invested in high-growth markets such as China and India for the last two decades and seeing the same wave of technology adoption in those regions. Orbit runs an accelerator programme alongside its investing: at launch under SOSV the programme invested $150,000 per company at early stage up to Series A, in roughly four cohorts a year. Its current named programme is the Sanabil Accelerator by Orbit, a joint initiative with Sanabil Investments that gives each participating company $100,000 in initial funding with access to follow-on investment, alongside a four-month programme centred on sales growth, go-to-market execution and product acceleration. Orbit states it works with a network of mentors and corporate partners and runs Growth Summits, business development trips and demo days. The firm's own pages state no sector focus; its stated focus is geographic and stage-based rather than sectoral.",
+    leadership: [
+      { name: "William Bao Bean", role: "Managing General Partner", profileSlug: "william-bao-bean" },
+      { name: "Oscar Ramos", role: "Managing General Partner", profileSlug: "oscar-ramos" },
+      { name: "Ching-Ping Lin", role: "Partner & COO", profileSlug: "ching-ping-lin" },
+      { name: "Minjia Wu", role: "Partner", profileSlug: "minjia-wu" },
+      { name: "TR Harrington", role: "Partner & Director of Growth", profileSlug: "tr-harrington" },
+      { name: "Jenne Wong", role: "Partner & Business Development Director", profileSlug: "jenne-wong" }
+    ],
+    timeline: [
+      { year: "2022", event: "SOSV announces the launch of Orbit Startups on 13 July 2022, described as \"a new brand unifying the established SOSV programs dedicated to startups with vast growth potential in emerging and frontier markets\", encompassing SOSV's MOX (Taipei) and Chinaccelerator (Shanghai) programmes." },
+      { year: "2022", event: "Oscar Ramos, previously director of the Chinaccelerator programme, is promoted to SOSV general partner and managing director of Orbit." },
+      { year: "2024", event: "SOSV states: \"As of January 1, 2024, Orbit became an independent fund with SOSV as its anchor limited partner.\"" },
+      { year: "2026", event: "Sanabil Accelerator by Orbit, a joint initiative with Sanabil Investments, holds its Batch 3 demo day on 15 January 2026 with eleven startups; each participating company receives $100,000 in initial funding." },
+      { year: "2026", event: "Orbit Ventures announces participation in the seed round of Egyptian e-commerce infrastructure company Fincart, which raised US$2.8M co-led by Launch Africa and Antler MENAP (11 August 2026)." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Puhua Capital",
+    sectors: ["Hard Tech", "Healthcare", "Consumer", "Media", "Clean Energy", "Advanced Manufacturing"],
+    signatureExit: null,
+    slug: "puhua-capital",
+    website: "http://www.puhuacapital.com",
+    short: "Puhua",
+    founded: 2004,
+    hq: "Hangzhou, China",
+    aum: "US$3.8B+ (approx.; the firm's figure is over RMB 27 billion of managed asset scale, 管理资产规模超270亿元, reported April 2024 - no USD figure is published by the firm)",
+    thesis: "Puhua Capital is a Chinese venture and private equity manager operating under the legal entity 浙江普华天勤股权投资管理有限公司 (Zhejiang Puhua Tianqin Equity Investment Management Co., Ltd.) and based in Hangzhou. Chinese-language coverage of the firm's 20th anniversary describes it as organised into investment groups created in 2015 for technology, healthcare and culture/consumer (the last run under the 头头是道 fund brand), with a new energy and new materials group added later. PEDaily's institution profile describes a continuing focus on new technology, healthcare, new consumption and new energy. The firm is reported to invest from early stages onward; partner 吴晓丰 is quoted saying that for early-stage projects it takes 15-20 percent in principle. This thesis is assembled from Chinese media and database profiles because the firm's own website was unreachable from this session - see notes.accessLimits.",
+    leadership: [
+      { name: "曹国熊 (Cao Guoxiong)", role: "董事长 (Chairman)", profileSlug: "cao-guoxiong" },
+      { name: "沈琴华 (Shen Qinhua)", role: "创始人、管理合伙人 (Founder and Managing Partner)", profileSlug: "shen-qinhua" },
+      { name: "蒋纯 (Jiang Chun)", role: "管理合伙人 (Managing Partner)", profileSlug: "jiang-chun" },
+      { name: "周密 (Zhou Mi)", role: "管理合伙人 (Managing Partner)", profileSlug: "zhou-mi" },
+      { name: "姚臻 (Yao Zhen)", role: "管理合伙人 (Managing Partner)", profileSlug: "yao-zhen" },
+      { name: "吴一晖 (Wu Yihui)", role: "管理合伙人 (Managing Partner)", profileSlug: "wu-yihui" },
+      { name: "许维 (Xu Wei)", role: "合伙人 (Partner)", profileSlug: "xu-wei" },
+      { name: "吴晓丰 (Wu Xiaofeng)", role: "合伙人 (Partner)", profileSlug: "wu-xiaofeng" }
+    ],
+    timeline: [
+      { year: "2004", event: "Cao Guoxiong and founding managing partner Shen Qinhua start the business on 8 April 2004 in Hangzhou under the name 普华投资 (Puhua Investment), per Tencent News' 20th-anniversary feature." },
+      { year: "2011", event: "The management company 普华天勤 (Zhejiang Puhua Tianqin Equity Investment Management Co., Ltd.) is established; 36Kr records 2011 as the organisation's establishment year." },
+      { year: "2015", event: "Investment teams are split into technology, healthcare and culture/consumer groups, and 头头是道 (Toutoushidao) is set up with financial author 吴晓波 (Wu Xiaobo) to cover culture and new consumption." },
+      { year: "2019", event: "浙能普华 (Zheneng Puhua) is formed through the mixed-ownership reform of Zhejiang Energy Power (浙能电力)." },
+      { year: "2024", event: "At its 20th anniversary the firm is reported to have managed asset scale of over RMB 27 billion (超270亿元) across 450 projects under management." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Silverton Partners",
+    sectors: ["Consumer", "Enterprise", "Fintech", "Healthcare"],
+    signatureExit: "Vacasa (Nasdaq: VCSA) - Silverton Partners IV, L.P. reported a position on a Schedule 13G filed 14 February 2022; Casago completed its acquisition of Vacasa in 2025.",
+    slug: "silverton-partners",
+    website: "https://www.silvertonpartners.com",
+    short: "Silverton",
+    founded: 2006,
+    hq: "Austin, TX",
+    aum: "$844M+ (the homepage statistics block prints \"$844M+ / ASSETS MANAGED\" and does not date it; the phrase \"assets under management\" does not appear there. The firm's own Fund VII announcement of 6 July 2022 said it \"manages more than $950 million in assets\")",
+    thesis: "Silverton Partners is an early-stage venture firm based in Austin, Texas. Its philosophy page states that it focuses on Seed and Series A financing rounds, that it funds and mentors early-stage startups, and that it invests where technology can be used to build significant barriers over time. The firm describes itself as the most active venture capital investor in Texas and says all of its partners are former entrepreneurs with experience as both operators and investors. Its homepage states it is typically the first institutional investor and the lead investor. The firm sorts its portfolio into four categories on its own site: consumer, enterprise, fintech and healthcare.",
+    leadership: [
+      { name: "Morgan Flager", role: "Managing Partner", profileSlug: "morgan-flager" },
+      { name: "Kip McClanahan", role: "General Partner", profileSlug: "kip-mcclanahan" },
+      { name: "Mike Dodd", role: "General Partner", profileSlug: "mike-dodd" },
+      { name: "Roger Chen", role: "Partner", profileSlug: "roger-chen" },
+      { name: "Alyssa Dadoly", role: "CFO & Partner", profileSlug: "alyssa-dadoly" }
+    ],
+    timeline: [
+      { year: "2006", event: "Silverton Partners is founded in Austin, Texas; the firm's philosophy page states \"Since our founding in 2006\"." },
+      { year: "2013", event: "Silverton Partners IV, L.P. files its Form D with the SEC on 26 August 2013." },
+      { year: "2017", event: "Silverton Partners V, L.P. files its Form D with the SEC on 27 February 2017." },
+      { year: "2019", event: "Silverton Partners VI, L.P. and Silverton Partners Entrepreneurs VI, L.P. file Form D with the SEC on 26 September 2019." },
+      { year: "2022", event: "Silverton Partners IV, L.P. files a Schedule 13G on 14 February 2022 reporting a position in Vacasa, Inc. (Nasdaq: VCSA)." },
+      { year: "2022", event: "The firm announces on 6 July 2022 that Fund VII closed at $248M, its largest fund to date." },
+      { year: "2025", event: "Casago completes its acquisition of Vacasa, ending Vacasa's listing on Nasdaq." },
+      { year: "2026", event: "Silverton Partners VIII, L.P. files a Form D with the SEC on 30 March 2026 for a $160,000,000 offering, listing Michael J. Dodd, Morgan L. Flager, Kip R. McClanahan and Roger Chen as managers of the upper-tier general partner." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Strong Ventures",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "strong-ventures",
+    website: "https://www.strongvc.com",
+    short: "Strong",
+    founded: 2012,
+    hq: "Los Angeles, CA",
+    aum: null,
+    thesis: "Strong Ventures' own site states, in full, that it is \"a generalist VC firm based in LA and Seoul, backing early-stage startups with a focus on Korean founders\". The site is a single landing page carrying three links only: an English portfolio page, a Korean portfolio page and a pitch-submission page. Because the firm publishes no stated sector focus, sectors is left empty rather than inferred from portfolio companies. The structure is two jurisdictions: a set of Delaware-incorporated funds and general partners administered from Los Angeles and filing Form D with the SEC, and a separate Korean operating company, 유한회사 스트롱벤처스, in Seoul.",
+    leadership: [
+      { name: "Kihong Bae (배기홍)", role: "Co-Founder; Manager of Strong Ventures V GP, LLC per SEC Form D", profileSlug: "kihong-bae" }
+    ],
+    timeline: [
+      { year: "2012", event: "Strong Ventures is founded. The first SEC Form D for Strong Seed Fund I LP, a Delaware fund with a Los Angeles business address, is filed on 6 September 2012; the Korean company 유한회사 스트롱벤처스 is recorded with an establishment date of January 2012." },
+      { year: "2015", event: "Strong Seed Fund II is formed on 6 May 2015, per THE VC's fund listing for the Korean entity." },
+      { year: "2018", event: "Strong Seed Fund III is formed on 17 July 2018, per THE VC's fund listing for the Korean entity." },
+      { year: "2023", event: "Strong Ventures V, L.P. reports its first sale on 15 September 2023 against an $80,000,000 offering." },
+      { year: "2024", event: "An amended Form D for Strong Ventures V, L.P. filed 4 December 2024 reports $38,000,000 sold of the $80,000,000 offering, with a $1,000,000 minimum investment." },
+      { year: "2026", event: "A Form D is filed on 31 March 2026 for Series 2026, A Series of Strong Ventures Nova IV, L.P., a Delaware venture capital fund with an indefinite offering amount and no sales yet." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "The Spartan Group",
+    sectors: ["Web3", "Crypto", "Blockchain"],
+    signatureExit: null,
+    slug: "the-spartan-group",
+    website: "https://www.spartangroup.io",
+    short: "Spartan Group",
+    founded: 2017,
+    hq: "Singapore, Singapore",
+    aum: "US$500M (the group's own homepage shows \"$500M / Assets Under Management\", undated, checked 2026; the firm's 29 September 2025 release attributes the figure to Spartan Capital, the group's asset-management arm, across long/short, market neutral and venture strategies - a firm-wide asset-management figure, not a venture fund close)",
+    thesis: "The Spartan Group describes itself as a crypto-native digital asset advisor, asset manager and Web3 venture studio that advises, invests and builds with entrepreneurs in Web3. It states it has backed crypto companies and networks, and that it also works on Web3 mergers and acquisitions and capital raises. The firm runs three stated divisions: Spartan Advisory for M&A, token deals, restructuring, strategic financing and capital raising; Spartan Capital, which manages over $500 million across long/short, market neutral and venture strategies; and Spartan Labs, a venture studio and incubator. Spartan Advisory states its mission is to bring together best practices from traditional finance with the innovation and creativity of the wider Web3 community, and it serves accredited, expert and institutional investors only.",
+    leadership: [
+      { name: "Melody He", role: "Co-founder & Partner, Co-Head of Spartan Advisory", profileSlug: "melody-he" },
+      { name: "Casper B. Johansen", role: "Co-founder & Partner, Co-Head of Spartan Advisory", profileSlug: "casper-b-johansen" },
+      { name: "Kelvin Koh", role: "Co-founder & Partner, CIO, Spartan Capital", profileSlug: "kelvin-koh" },
+      { name: "Leeor Groen", role: "Partner, Spartan Advisory", profileSlug: "leeor-groen" }
+    ],
+    timeline: [
+      { year: "2017", event: "The Spartan Group is founded by Goldman Sachs alumni Melody He, Kelvin Koh and Casper B. Johansen." },
+      { year: "2019", event: "Kelvin Koh publicly introduces The Spartan Group on 4 January 2019, describing an advisory business, a digital asset management business running the Spartan Global Blockchain Opportunity Fund, and a compliance services arm." },
+      { year: "2025", event: "Leeor Groen, who joined in 2021 as Executive Director, is promoted to Partner on 29 September 2025, described by the firm as its first new Partner since its 2017 founding." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "ZAKA VC",
+    sectors: ["Health", "Biotech", "Industrial Tech"],
+    signatureExit: null,
+    slug: "zaka-vc",
+    website: "https://zaka.vc",
+    short: "ZAKA",
+    founded: 2019,
+    hq: "Prague, Czech Republic",
+    aum: "Not publicly disclosed (no AUM figure is published; Fund I was announced in July 2024 at €15M with a €10.5M first close, and the homepage states a current fund size of 17M without naming a currency)",
+    thesis: "ZAKA VC states it is a seed and pre-seed venture fund investing mainly in the US and Europe, and that it seeks entrepreneurs with global ambition wherever they are, supporting them by creating a bridge between North America and Europe. Its homepage says it is especially looking for startups in the Health & Biotech and Industrial Tech verticals. It lists Silicon Valley, London, Prague and Bratislava as its locations. Fund I is structured as an alternative investment fund under Sec. 15 of Czech Act No. 240/2013 Coll. on Management Companies and Investment Funds, open to qualified investors only with a minimum LP ticket of EUR 130k. The firm began in 2019 as the family office of two entrepreneurial families and states it has operated in a VC fund structure since 2024.",
+    leadership: [
+      { name: "Jan Kasper", role: "Co-Founder & Managing Partner", profileSlug: "jan-kasper" },
+      { name: "Peter Zalesak", role: "Co-Founder & Partner", profileSlug: "peter-zalesak" },
+      { name: "Andrej Petrus", role: "Partner & Head of Investment Committee", profileSlug: "andrej-petrus" },
+      { name: "Jan Buza", role: "Partner", profileSlug: "jan-buza" },
+      { name: "Richard Kopunik", role: "COO" }
+    ],
+    timeline: [
+      { year: "2019", event: "Ján Kasper and Peter Zálešák turn their attention to venture capital and establish ZAKA as a family office." },
+      { year: "2022", event: "By November 2022 the firm is seated in Prague, having moved from Bratislava, and CzechCrunch reports a portfolio of 28 companies." },
+      { year: "2024", event: "ZAKA VC I, osoba rizikového kapitálu, a.s. is entered in the Czech business register on 25 April 2024 under IČO 21514992." },
+      { year: "2024", event: "ZAKA announces Fund I on 19 July 2024, sized EUR 15M with a EUR 10.5M first close, an alternative investment fund under Sec. 15 of Czech Act No. 240/2013 Coll. for qualified investors with a minimum LP ticket of EUR 130k." }
+    ],
+    holdings: []
   }
 ];
