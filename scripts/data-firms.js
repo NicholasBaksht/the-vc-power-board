@@ -17372,5 +17372,493 @@ holdings: []
       { year: "2018", event: "Trade publication FX News Group reports that XTX Markets \"appointed former Deutsche Bank corporate strategy executive and LSE graduate Ekaterina Holt as Head of XTX Ventures in 2018, and started making investments\". This is a secondary source and was not corroborated on a first-party page." }
     ],
     holdings: []
+  },
+
+  /* ---- Firm batch 3, added 7 September 2026: 20 firms. Their partner records
+     are in data-partners-1.js (not shard 6 - see that file's banner) and
+     their field-level provenance is in data-evidence.js, added in the same
+     batch. Checked against all 620 pre-existing firms for slug, name,
+     historical-name and parent-brand collisions; none found. ---- */
+  {
+    rank: null,
+    name: ".406 Ventures",
+    sectors: ["Healthcare", "Data & AI", "Cybersecurity"],
+    signatureExit: null,
+    slug: "406-ventures",
+    website: "https://www.406ventures.com",
+    short: ".406 Ventures",
+    founded: null,
+    hq: "Boston, MA",
+    aum: null,
+    thesis: ".406 Ventures is a Boston early-stage venture firm that states it backs \"early-stage companies as they raise their seed and series A financings\". Its three stated focus areas are healthcare, data and AI, and cybersecurity. The firm describes its team as having \"over 100 years of collective experience as founders, operators, and investors\", which is the firm's own claim. It operates from Independence Wharf, 470 Atlantic Avenue, Boston.",
+    leadership: [
+      { name: "Liam Donohue", role: "Co-Founder and Managing Partner", profileSlug: "liam-donohue" },
+      { name: "Graham Brooks", role: "Partner", profileSlug: "graham-brooks" },
+      { name: "Payal Agrawal Divakaran", role: "Partner", profileSlug: "payal-agrawal-divakaran" },
+      { name: "Greg Dracon", role: "Partner", profileSlug: "greg-dracon" }
+    ],
+    timeline: [
+      { year: "2024", event: "TechCrunch reports on 15 February 2024 that .406 Ventures secured $265 million for its fifth fund, and that the firm has more than $1.4 billion across its five core funds and three opportunity funds." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Beringea",
+    sectors: [],
+    signatureExit: null,
+    slug: "beringea",
+    website: "https://www.beringea.com",
+    short: "Beringea",
+    founded: null,
+    hq: "London, United Kingdom, with a United States office in Farmington Hills, Michigan",
+    aum: "Over £300M (across the ProVen VCTs combined, per the firm's Funds & Services page, checked 2026; this is the VCT total, not a firm-wide figure, and Beringea publishes no combined transatlantic AUM number)",
+    thesis: "Beringea is a transatlantic venture and growth investor operating from London and Farmington Hills, Michigan. In the United Kingdom it is the manager of the ProVen venture capital trusts - the ProVen Venture Capital Trust, launched in 2000, and the ProVen Growth & Income VCT, launched in 2001 - which invest in VCT-qualifying private companies, and of the ProVen Estate Planning Service, which invests in private trading companies expected to qualify for Business Relief. Its United States funds invest at Series A, growth or later stage, writing $2-10 million per investment into quickly scaling companies with a stated preference for the Midwest. The UK business is authorised and regulated by the Financial Conduct Authority under firm reference number 496358; the US business, Beringea, LLC, is an SEC-registered investment adviser.",
+    leadership: [
+      { name: "Michael Gross", role: "Managing Partner", profileSlug: "michael-gross" },
+      { name: "Stuart Veale", role: "Managing Partner", profileSlug: "stuart-veale" },
+      { name: "Malcolm Moss", role: "Founding Partner", profileSlug: "malcolm-moss" },
+      { name: "Charles Rothstein", role: "Founding Partner", profileSlug: "charles-rothstein" },
+      { name: "William Blake III", role: "Partner", profileSlug: "william-blake-iii" },
+      { name: "Shane Elliott", role: "Partner", profileSlug: "shane-elliott" },
+      { name: "Vanessa Evanson-Goddard", role: "Partner and General Counsel", profileSlug: "vanessa-evanson-goddard" },
+      { name: "Harry Thomas", role: "Partner and Head of Portfolio", profileSlug: "harry-thomas" },
+      { name: "Karen McCormick", role: "Chief Investment Officer", profileSlug: "karen-mccormick" }
+    ],
+    timeline: [
+      { year: "2000", event: "ProVen Venture Capital Trust launched, per the Beringea Funds & Services page." },
+      { year: "2001", event: "ProVen Growth & Income VCT launched, per the Beringea Funds & Services page." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Fabric Ventures",
+    sectors: ["Crypto", "Blockchain", "Web3", "Fintech"],
+    signatureExit: null,
+    slug: "fabric-ventures",
+    website: "https://www.fabric.vc",
+    short: "Fabric",
+    founded: 2012,
+    hq: "London, United Kingdom",
+    aum: null,
+    thesis: "Fabric Ventures is a venture firm backing what its about page calls open economy founders, investing across crypto networks, blockchain infrastructure and digital assets alongside earlier fintech and consumer positions. The about page states the firm began in 2012 as Firestartr, co-founded by Anil, Alain and Richard, and describes a later shift into blockchain driven by Max, Anastasiya and Christina. It says the firm is \"a team of 15 people made up of founders, operators and engineers\" and claims a portfolio containing \"1 centicorn, 3 decacorns, 10 unicorn companies\", naming Wise, MetaMask, Monzo, Revolut, Near, Polkadot, Sorare, Kraken, Coinbase, Immutable, 1inch and Sky Mavis among its investments; those counts and the portfolio framing are the firm's own claim. The management entity is named on the site as Fabric Ventures Fund Management S.a r.l. in Luxembourg, with further offices in London and Dubai.",
+    leadership: [
+      { name: "Richard Muirhead", role: "Managing Partner", profileSlug: "richard-muirhead" },
+      { name: "Anil Hansjee", role: "General Partner", profileSlug: "anil-hansjee" },
+      { name: "Christina Frankopan", role: "Venture Partner", profileSlug: "christina-frankopan" },
+      { name: "Max Mersch", role: "Venture Partner", profileSlug: "max-mersch" },
+      { name: "Camilla McFarland", role: "Venture Partner", profileSlug: "camilla-mcfarland" }
+    ],
+    timeline: [
+      { year: "2012", event: "The firm is founded as Firestartr, co-founded by Anil Hansjee, Alain Falys and Richard Muirhead, per the Fabric Ventures about page." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "FINTOP Capital",
+    sectors: ["Fintech", "B2B Software", "SaaS", "Financial Technology", "Banking Infrastructure"],
+    signatureExit: null,
+    slug: "fintop-capital",
+    website: "https://www.fintopcapital.com",
+    short: "FINTOP",
+    founded: null,
+    hq: "Nashville, TN",
+    aum: null,
+    thesis: "FINTOP Capital is a fintech-focused venture capital firm based in Nashville, Tennessee. Its own site describes the team as \"industry specialists with pressured-tested playbooks focused on B2B fintech\". Its July 2022 fund announcement describes the strategy as backing B2B SaaS companies in the financial technology space. Alongside its three flagship FINTOP funds it operates two JAM FINTOP network funds, JAM FINTOP Banktech and JAM FINTOP Blockchain, and stated in July 2022 that across all five vehicles it had \"raised over $700 million aimed at this industry\". That is capital raised, which the firm itself states, and not an assets-under-management figure.",
+    leadership: [
+      { name: "Joe Maxwell", role: "Managing Partner", profileSlug: "joe-maxwell" },
+      { name: "Rick Kushel", role: "Managing Partner", profileSlug: "rick-kushel" },
+      { name: "Rick Holton", role: "Co-Founder", profileSlug: "rick-holton" },
+      { name: "John Philpott", role: "Partner", profileSlug: "john-philpott" },
+      { name: "Adam Aspes", role: "Partner", profileSlug: "adam-aspes" }
+    ],
+    timeline: [
+      { year: "2022", event: "FINTOP Capital announces on 27 July 2022 that its third fund closed at $220 million, surpassing a $200 million goal; the release names Jared Winegrad as promoted to partner and Chris Haley as a new partner." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Genesis Ventures",
+    sectors: ["Clean Energy", "Energy", "Climate Technology"],
+    signatureExit: null,
+    slug: "genesis-ventures",
+    website: "https://genesisventures.vc",
+    short: "Genesis Ventures",
+    founded: null,
+    hq: "Santiago, Chile",
+    aum: null,
+    thesis: "Genesis Ventures is a Chile-based investor operating from Santiago with teams it lists in Miami and London. The firm states on its own site that it invests in \"bold and committed entrepreneur teams with a proven and innovative technology enabled business model that dream to expand their companies globally\" (the firm's claim). Its site names four vehicles: Genesis Ventures I, Genesis Ventures II, a Cleantech Fund and a Green H2 Fund, so the strategy spans technology venture investing and energy transition. The site states investment in revenue-generating companies at seed, Series A and growth rounds, and says the firm follows the Principles for Responsible Investment. No assets under management figure is published on the site.",
+    leadership: [
+      { name: "Andres Meirovich", role: "Managing Partner", profileSlug: "andres-meirovich" },
+      { name: "Rodrigo Castro", role: "Managing Partner", profileSlug: "rodrigo-castro" },
+      { name: "Jose Luis Barrientos", role: "Managing Partner", profileSlug: "jose-luis-barrientos" }
+    ],
+    timeline: [
+      { year: "2006", event: "Bloomberg Linea reports that Genesis Ventures \"started as a consulting firm in 2006\"." },
+      { year: "2021", event: "Bloomberg Linea reports in August 2021 that managing partner Andres Meirovich \"recently moved to Miami to set up operations\", opening the firm's Miami office, and that a new $100 million fund would be called Excel Ventures." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Icebreaker.vc",
+    sectors: ["Software", "Technology"],
+    signatureExit: null,
+    slug: "icebreaker-vc",
+    website: "https://www.icebreaker.vc",
+    short: "Icebreaker",
+    founded: 2017,
+    hq: null,
+    aum: null,
+    thesis: "Icebreaker.vc is an early-stage Nordic and Baltic venture capital firm that backs teams from the idea stage. Its About page states \"We invest up to 1.5M€ first tickets in Estonia, Finland and Sweden.\" and that the firm has supported more than 130 idea-stage teams across its two funds. The team page describes the firm as \"Founded by previous entrepreneurs who have built and scaled software startups\", which is the firm's own claim about itself.",
+    leadership: [
+      { name: "Lasse Lehtinen", role: "Co-founder & General Partner", profileSlug: "lasse-lehtinen" },
+      { name: "Aleksi Partanen", role: "Co-founder & General Partner", profileSlug: "aleksi-partanen" },
+      { name: "Riku Seppälä", role: "Co-founder & General Partner", profileSlug: "riku-seppala" },
+      { name: "Jesse Tinell", role: "Partner", profileSlug: "jesse-tinell" },
+      { name: "Teddie Wardi", role: "Co-founder & Special Advisor", profileSlug: "teddie-wardi" }
+    ],
+    timeline: [
+      { year: "2017", event: "Icebreaker.vc is founded, per the firm's About page." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Illuminate Financial",
+    sectors: ["Fintech", "Enterprise AI", "Fintech Infrastructure"],
+    signatureExit: null,
+    slug: "illuminate-financial",
+    website: "https://www.illuminatefinancial.com",
+    short: "Illuminate",
+    founded: 2014,
+    hq: "London, United Kingdom",
+    aum: "$500M+ (assets under management, per the firm's own homepage, checked 2026)",
+    thesis: "Illuminate Financial is an early-stage venture firm investing in enterprise AI and fintech companies serving financial services, founded in 2014 and operating from London, New York and Singapore. Its homepage states 58 portfolio companies, 15 exits, a target stake of 15% and more than 2,000 client introductions made for portfolio companies, and names BNP Paribas, HSBC, BNY Mellon, Deutsche Börse, Euroclear, Barclays, Jefferies and TD Bank among its strategic investors. Illuminate Financial Management Ltd is authorised and regulated by the Financial Conduct Authority under firm reference number 652957, as an appointed representative of Suntera Advisers (UK) Limited (FRN 692447).",
+    leadership: [
+      { name: "Mark Beeston", role: "Founder & Managing Partner", profileSlug: "mark-beeston" },
+      { name: "Alexander Ross", role: "General Partner & Head of New York", profileSlug: "alexander-ross" },
+      { name: "Rezso Szabo", role: "General Partner & Head of London", profileSlug: "rezso-szabo" },
+      { name: "Luca Zorzino", role: "General Partner & Head of Singapore", profileSlug: "luca-zorzino" },
+      { name: "Rachel Townend", role: "General Partner & Chief of Staff", profileSlug: "rachel-townend" }
+    ],
+    timeline: [
+      { year: "2014", event: "Illuminate Financial founded, per the founding year stated on illuminatefinancial.com." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Indico Capital Partners",
+    sectors: ["SaaS", "AI", "Deep Tech", "Space", "Healthtech", "Sustainability", "Fintech", "Consumer"],
+    signatureExit: null,
+    slug: "indico-capital-partners",
+    website: "https://www.indicocapital.com",
+    short: "Indico",
+    founded: 2018,
+    hq: "Lisbon, Portugal",
+    aum: "€244M (stated as \"€244M of AUM\" on the firm's own homepage, checked 2026; no as-of date is given for the figure)",
+    thesis: "Indico Capital Partners is a Lisbon-based venture capital manager backing tech and sustainable companies of Portuguese, Spanish and Italian origin scaling globally. Its homepage states \"€244M of AUM\", \"€157M deployed since 2019\", \"59 companies invested since 2019\" and \"4 funds\", and says companies in the portfolio have raised \"€2.5B\". Tech investments are described as ranging \"mostly, from Pre-Seed to Series A (from 500k to 10M euros)\", and ocean sustainability investments as \"between 100k and 5M Euros per company\". The about page names Indico VC Fund I (€54 million, closed), Indico Opportunity Fund I (€25 million, closed), Indico Acceleration Fund I (€12 million, closed), Indico Blue Fund (€50 million, closed), Indico Venture Capital Fund II (up to €102 million, active) and Indico VC Fund III (active). Its funds are registered with the Portuguese regulator CMVM, and the firm cites institutional investors, funds of funds, corporates, education institutions, family offices and individuals including Golden Visa participants.",
+    leadership: [
+      { name: "Stephan de Moraes", role: "Managing General Partner", profileSlug: "stephan-de-moraes" },
+      { name: "Ricardo Torgal", role: "General Partner and CFO", profileSlug: "ricardo-torgal" },
+      { name: "Cristina Fonseca", role: "General Partner", profileSlug: "cristina-fonseca" },
+      { name: "Rui Rodrigues", role: "Partner", profileSlug: "rui-rodrigues" },
+      { name: "Sofia Egídio", role: "Partner and General Counsel", profileSlug: "sofia-egidio" },
+      { name: "André Almeida Santos", role: "Partner", profileSlug: "andre-almeida-santos" }
+    ],
+    timeline: [
+      { year: "2018", event: "Indico Capital Partners is founded, per the firm's about page." },
+      { year: "2019", event: "The firm begins deploying capital; its homepage counts \"59 companies invested since 2019\" and \"€157M deployed since 2019\"." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Industrifonden",
+    sectors: ["Deep Tech", "Life Sciences", "New Technology"],
+    signatureExit: null,
+    slug: "industrifonden",
+    website: "https://industrifonden.com",
+    short: "Industrifonden",
+    founded: 1979,
+    hq: "Stockholm, Sweden",
+    aum: "$470M (approx.; the firm states \"5 billion SEK in assets\" on its homepage and \"assets of over 7 billion SEK\" on its About us page, both undated and unreconciled on the same date, so the lower is taken)",
+    thesis: "Industrifonden is a Swedish early-stage investor structured as an independent foundation rather than as a conventional limited-partner fund manager. Its About us page states that \"the Swedish government established a novel mechanism to fund radical innovation\" and that Industrifonden \"was, in 1979, given a donation of 1.7 billion SEK\", and it describes the effect of the structure in the firm's own words: \"Being an independent foundation has meant that Industrifonden has been able to adapt to changing technological landscapes\". The organisation invests from its own balance sheet across three published practices, Deep Tech, Life Science and Transformative Tech, and its About us page states it has made more than 1000 investments in its 40 year history.",
+    leadership: [
+      { name: "Peter Wolpert", role: "CEO", profileSlug: "peter-wolpert" },
+      { name: "Jonas Jendi", role: "COO, Practice Lead Life Science and Senior Investment Director", profileSlug: "jonas-jendi" },
+      { name: "Patrik Sobocki", role: "Practice Lead Deep Tech and Senior Investment Director", profileSlug: "patrik-sobocki" },
+      { name: "Per Anell", role: "Practice Lead Transformative Tech and Senior Investment Director", profileSlug: "per-anell" },
+      { name: "Caroline Murray", role: "CFO" },
+      { name: "Birgitta Stymne Göransson", role: "Chair of the board" }
+    ],
+    timeline: [
+      { year: "1979", event: "The Swedish government establishes the mechanism behind Industrifonden and the foundation is given a donation of 1.7 billion SEK, per the firm's About us page." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Innovestor",
+    sectors: ["Life Sciences", "Real Estate", "Clean Energy", "Energy"],
+    signatureExit: null,
+    slug: "innovestor",
+    website: "https://innovestorgroup.com",
+    short: "Innovestor",
+    founded: 2014,
+    hq: "Helsinki, Finland",
+    aum: null,
+    thesis: "Innovestor is a Helsinki-based Finnish investment manager that runs several distinct vehicles and one services line rather than a single venture fund. Its homepage describes it in its own words as \"a leading Nordic investment company specializing in venture capital, real estate, and energy storage\", a claim by the firm about itself. The named business lines are Innovestor Venture Capital, Innovestor Life Science, Real Estate and Energy Storage, alongside a Corporate Venturing services practice; the vehicles named on the homepage are a Life Science & Health Fund, a Technology Fund and an Angel CoFund. The homepage states 400M EUR of capital commitments, a team of 30 professionals and more than 100 portfolio companies and assets.",
+    leadership: [
+      { name: "Tommi Äijälä", role: "Managing Partner, Innovestor Group", profileSlug: "tommi-aijala" },
+      { name: "Wilhelm Lindholm", role: "Partner, Innovestor Group", profileSlug: "wilhelm-lindholm" },
+      { name: "Tomi Asanti", role: "Managing Partner, Real Estate", profileSlug: "tomi-asanti" },
+      { name: "Matti Härkönen", role: "Partner, Corporate Venturing", profileSlug: "matti-harkonen" }
+    ],
+    timeline: [
+      { year: "2014", event: "Innovestor is founded, per the firm's homepage." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "ISAI",
+    sectors: ["Sector-Agnostic", "Technology"],
+    signatureExit: null,
+    slug: "isai",
+    website: "https://www.isai.fr",
+    short: "ISAI",
+    founded: 2009,
+    hq: "Paris, France",
+    aum: "Nearly €1.1B (under management across four investment strategies, per the firm's own announcement of the ISAI Venture IV first closing, 3 December 2025)",
+    thesis: "ISAI is a French investment firm founded in 2009 and based in Paris, backed by more than 500 entrepreneur-subscribers. It runs four investment strategies covering venture capital, growth and buyout, growth lending and a New York activity, and manages close to 1.1 billion euros. Its ISAI Venture IV fund held a first closing at 75 million euros in December 2025 against a 100 million euro target, writing tickets of 1 to 3 million euros with about 10% of the fund allocated to pre-seed cheques of 0.1 to 0.5 million euros; more than 80% of the fund is to be invested in France, with additional exposure to French-founded startups in the United States.",
+    leadership: [
+      { name: "Jean-David Chamboredon", role: "Président-exécutif et cofondateur", profileSlug: "jean-david-chamboredon" },
+      { name: "Jean-Patrice Anciaux", role: "General Partner", profileSlug: "jean-patrice-anciaux" },
+      { name: "François Collet", role: "General Partner", profileSlug: "francois-collet" }
+    ],
+    timeline: [
+      { year: "2009", event: "ISAI founded, per the firm's 3 December 2025 ISAI Venture IV announcement." },
+      { year: "2025", event: "First closing of ISAI Venture IV at 75 million euros against a 100 million euro target, announced 3 December 2025." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "LoftyInc Capital Management",
+    sectors: ["Fintech", "Retail", "Logistics", "Healthcare", "Climate Technology", "Artificial Intelligence"],
+    signatureExit: null,
+    slug: "loftyinc-capital",
+    website: "https://loftyinc.vc",
+    short: "LoftyInc",
+    founded: 2017,
+    hq: null,
+    aum: null,
+    thesis: "LoftyInc Capital Management is a pan-African early-stage venture firm investing across Nigeria, Egypt, Kenya and Francophone Africa. Its firm announcements name a sequence of funds: the LoftyInc Afropreneurs Funds (LAF2 and LAF3, the latter closing at $14.2 million after a $10 million target) and the LoftyInc Alpha Fund, announced with a $43 million first close. The same announcement records that the firm's principals launched the Wennovation Hub in 2010 and established the Afropreneur Angel Group and the Lagos Angel Network; those angel bodies are investor networks, not firm staff. LoftyInc Allied Partners is named as the parent of LoftyInc Capital Management. Stated focus areas are financial services, retail enablement, logistics, healthcare, climate tech and artificial intelligence.",
+    leadership: [
+      { name: "Idris Bello", role: "Founding Partner", profileSlug: "idris-bello" },
+      { name: "Marsha Wulff", role: "Founding Partner", profileSlug: "marsha-wulff" },
+      { name: "Michael Oluwagbemi", role: "Founding Partner", profileSlug: "michael-oluwagbemi" },
+      { name: "Mariam Kamel", role: "General Partner", profileSlug: "mariam-kamel" },
+      { name: "Kevin Simmons", role: "General Partner", profileSlug: "kevin-simmons" }
+    ],
+    timeline: [
+      { year: "2010", event: "The Wennovation Hub is launched, per LoftyInc Capital's own announcement of the LoftyInc Alpha Fund." },
+      { year: "2017", event: "LoftyInc Capital is founded, per the firm's announcement of the LoftyInc Alpha Fund first close." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Maki.vc",
+    sectors: ["Deep Tech", "Consumer Products", "Software", "Technology"],
+    signatureExit: null,
+    slug: "maki-vc",
+    website: "https://maki.vc",
+    short: "Maki.vc",
+    founded: 2018,
+    hq: "Helsinki, Finland",
+    aum: "€260M (stated as \"260M€ Assets under management\" on the firm's own About page, checked 2026; the page gives no as-of date)",
+    thesis: "Maki.vc is a Helsinki-based Nordic venture capital firm investing at pre-seed and seed. Its About page states the firm was founded in 2018, manages three funds, has backed over 50 portfolio companies, and invests in pre-seed and seed rounds up to 5M EUR. It describes a limited partner base of more than 150 people including founders associated with Skype, Wise, Supercell, Small Giant Games and Smartly.",
+    leadership: [
+      { name: "Pauliina Martikainen", role: "Managing Partner", profileSlug: "pauliina-martikainen" },
+      { name: "Pirkka Palomäki", role: "Founding Partner", profileSlug: "pirkka-palomaki" },
+      { name: "Paavo Räisänen", role: "General Partner", profileSlug: "paavo-raisanen" },
+      { name: "Ilkka Kivimäki", role: "Founding Partner & Advisor of Maki.vc", profileSlug: "ilkka-kivimaki" }
+    ],
+    timeline: [
+      { year: "2018", event: "Maki.vc is founded, per the firm's About page." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Par Equity",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "par-equity",
+    website: "https://www.pxnventures.co.uk",
+    short: "Par Equity",
+    founded: 2008,
+    hq: "Edinburgh, Scotland",
+    aum: "£760m+ (assets under management within the PXN Group as at 30 June 2026; this is the merged group total after the Par Equity and Praetura combination, not a Par Equity standalone figure, and no standalone Par Equity number is published)",
+    thesis: "Par Equity was an Edinburgh-based venture capital firm founded in 2008, investing in early-stage and scale-up companies largely outside London. In 2025 it merged with Praetura Ventures to form PXN Group; the venture business now trades as PXN Ventures and the Business Relief business as PXN Investments, with offices in Manchester, Leeds, Edinburgh and London. The group's named vehicles include the PXN Growth VCT (previously the Praetura Growth VCT), an £85m scale-up fund, a £100m NPIF II fund and a £20m GMC Life Sciences fund. Two regulated entities sit behind the group: PXN Asset Management Limited (FCA firm reference number 817345, Companies House 08668345) and Par Fund Management Limited (FCA firm reference number 485668, Companies House SC301459).",
+    leadership: [
+      { name: "Paul Atkinson", role: "Partner", profileSlug: "paul-atkinson" },
+      { name: "Andrew Castell", role: "Partner", profileSlug: "andrew-castell" },
+      { name: "Robert Higginson", role: "Partner", profileSlug: "robert-higginson" },
+      { name: "Paul Munn", role: "Executive Chair, PXN Group", profileSlug: "paul-munn" },
+      { name: "Andy Barrow", role: "Managing Director, PXN Ventures", profileSlug: "andy-barrow" }
+    ],
+    timeline: [
+      { year: "2008", event: "Par Equity founded, per the founding years stated on pxninvestments.co.uk/about." },
+      { year: "2025", event: "Par Equity and Praetura Ventures merge to form PXN Group, per pxninvestments.co.uk/about." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Portland Seed Fund",
+    sectors: ["Technology", "Consumer Products", "Climate Technology", "Healthtech", "Deep Tech"],
+    signatureExit: "Auth0 (acquired by Okta)",
+    slug: "portland-seed-fund",
+    website: "https://www.portlandseedfund.com",
+    short: "Portland Seed Fund",
+    founded: 2011,
+    hq: "Portland, OR",
+    aum: null,
+    thesis: "Portland Seed Fund is a Portland, Oregon pre-seed and seed investor founded in 2011. Its team page states the fund has backed \"200+ pre-seed and seed stage startups since inception in 2011\" across technology, consumer products, cleantech, healthtech and deep technology. The same page identifies Intrepid Oregon Fund as the firm's \"deeptech sister\" fund. Named outcomes on the team page include Auth0, acquired by Okta, Hubb, acquired by Intrado, ESS Inc, which trades on the NYSE as GWH, and Sightbox, acquired by Johnson & Johnson. The firm publishes no assets under management figure.",
+    leadership: [
+      { name: "Jim Huston", role: "Managing Director Emeritus, Founder", profileSlug: "jim-huston" },
+      { name: "Angela Jackson", role: "Managing Director, Founder", profileSlug: "angela-jackson" },
+      { name: "Jenn Lynch", role: "Managing Director", profileSlug: "jenn-lynch" },
+      { name: "Steve Eichenlaub", role: "Managing Director", profileSlug: "steve-eichenlaub" },
+      { name: "Shashi Jain", role: "Venture Partner", profileSlug: "shashi-jain" }
+    ],
+    timeline: [
+      { year: "2011", event: "Portland Seed Fund is founded in Portland, Oregon by Jim Huston and Angela Jackson, both listed as Founder on the firm's team page, which dates inception to 2011." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Sanofi Ventures",
+    sectors: ["Biotech", "Digital Health", "Therapeutics", "Pharmaceuticals", "Life Sciences", "Data Science", "Healthcare"],
+    signatureExit: null,
+    slug: "sanofi-ventures",
+    website: "https://www.sanofiventures.com",
+    short: "Sanofi Ventures",
+    founded: null,
+    hq: "Cambridge, MA (US) and Paris, France (EU)",
+    aum: null,
+    thesis: "Sanofi Ventures describes itself as \"the corporate venture capital arm of Sanofi\" and states that it invests \"across all stages of the private company lifecycle, from Seed to Series B and beyond\" in \"biotech and digital health companies\". Its stated interest areas are rare diseases, immunology and inflammation, oncology, cell and gene therapy, vaccines, and digital health and data science. The firm says it offers portfolio companies \"select access to Sanofi's expertise and capabilities in science, preclinical and clinical development, regulatory, data analytics, manufacturing, market access, and commercialization\". Its team page describes its focus as \"biotherapeutic and digital health entrepreneurs who focus on helping patients and transforming the healthcare system\". These are the firm's own claims. It operates from Cambridge, Massachusetts in the US and Paris, France in the EU.",
+    leadership: [
+      { name: "Jason P. Hafler", role: "Managing Director", profileSlug: "jason-p-hafler" },
+      { name: "Laia Crespo", role: "Partner", profileSlug: "laia-crespo" },
+      { name: "Cris De Luca", role: "Partner", profileSlug: "cris-de-luca" },
+      { name: "Paulina Hill", role: "Partner", profileSlug: "paulina-hill" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "TA Ventures",
+    sectors: ["Healthtech", "Fintech", "B2B Software", "Deep Tech", "Consumer"],
+    signatureExit: null,
+    slug: "ta-ventures",
+    website: "https://taventures.vc",
+    short: "TA Ventures",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "TA Ventures is an early-stage venture firm investing at pre-seed, seed and Series A. Its about page states \"15 YEARS OF EXPERIENCE\" and \"280 INVESTMENTS\", says the firm reviews \"3,000+ opportunities\" a year and backs \"20-30 new companies\", and describes ticket sizes of $100k to $1m; the homepage states a range of \"$500K-5M Pre-Seed, Seed\". The about page states \"We have a global team spread across North America, Europe, Southeast Asia, and MENA\" and describes deal flow as roughly half North America and 30-40 percent Europe, with the remainder in Southeast Asia, MENA and Latin America. It allocates about 80 percent to software and deep tech across health and bio, fintech and enterprise, and about 20 percent to consumer including direct-to-consumer brands.",
+    leadership: [
+      { name: "Viktoriya Tigipko", role: "Founder and Managing Partner", profileSlug: "viktoriya-tigipko" },
+      { name: "Oleg Malenkov", role: "Partner", profileSlug: "oleg-malenkov" },
+      { name: "Stepan Naumov", role: "Partner", profileSlug: "stepan-naumov" },
+      { name: "Richard Armstrong", role: "Partner", profileSlug: "richard-armstrong" },
+      { name: "Andrew Verbitsky", role: "Partner", profileSlug: "andrew-verbitsky" },
+      { name: "Colin McSwiggen", role: "Venture Partner", profileSlug: "colin-mcswiggen" },
+      { name: "Igor Buchatskiy", role: "Venture Partner", profileSlug: "igor-buchatskiy" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Tau Ventures",
+    sectors: ["AI", "Digital Health", "Enterprise Software", "Automation"],
+    signatureExit: null,
+    slug: "tau-ventures",
+    website: "https://www.tauventures.com",
+    short: "Tau Ventures",
+    founded: 2019,
+    hq: "Palo Alto, CA",
+    aum: null,
+    thesis: "Tau Ventures states on its homepage that it was \"Established in 2019\" and backs \"80 companies through every stage of growth\", investing at pre-seed, seed and growth in AI-driven technologies across healthcare, enterprise and automation. Its team page describes the firm's people as \"founders and builders first, investors second\" and says it backs \"early-stage visionaries redefining the future\" (the firm's claims). It operates from Palo Alto with stated presence in New York and San Francisco.",
+    leadership: [
+      { name: "Amit Garg", role: "Founding Partner", profileSlug: "amit-garg" },
+      { name: "Sanjay Rao", role: "Founding Partner", profileSlug: "sanjay-rao" },
+      { name: "Gary Ang", role: "Venture Partner", profileSlug: "gary-ang" },
+      { name: "Larry Augustin", role: "Venture Partner", profileSlug: "larry-augustin" },
+      { name: "Ravi Varma", role: "Venture Partner", profileSlug: "ravi-varma" },
+      { name: "Sonal Panda", role: "Advisory Partner", profileSlug: "sonal-panda" }
+    ],
+    timeline: [
+      { year: "2019", event: "Tau Ventures is \"Established in 2019\", per the firm's homepage." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "TCG Crossover",
+    sectors: ["Biotech", "Life Sciences", "Therapeutics", "Healthcare"],
+    signatureExit: null,
+    slug: "tcg-crossover",
+    website: "https://tcgcrossover.com",
+    short: "TCGX",
+    founded: 2021,
+    hq: "Palo Alto, CA",
+    aum: null,
+    thesis: "TCG Crossover, which brands itself TCGX, describes itself as \"an investment firm focused on innovative biotech companies\" that aims to \"invest in visionary entrepreneurs leveraging recent scientific breakthroughs to develop transformative medicines\", with emphasis on the \"translation of cutting-edge science into products that will make a meaningful difference for patients\". It states that it runs \"closed-end funds which means we do not face redemption pressure\", and that it helps companies with \"pipeline opportunities, navigate the capital markets, execute geographic expansions\". It maintains a Science Network the firm says includes \"Nobel Prize and Lasker Award recipients\", and its stated philosophy is that \"drug development is a team sport\". These are the firm's own claims. It has offices in Palo Alto, San Francisco and New York City and says it has supported companies in North America, Europe and China. Its 2021 launch release framed the strategy as \"investing in companies seeking crossover or public financing\".",
+    leadership: [
+      { name: "Chen Yu", role: "Managing Partner", profileSlug: "chen-yu" },
+      { name: "Cariad Chester", role: "Managing Partner", profileSlug: "cariad-chester" },
+      { name: "Giuliano Marostica", role: "Managing Partner", profileSlug: "giuliano-marostica" },
+      { name: "Dandan Dong", role: "Managing Partner", profileSlug: "dandan-dong" }
+    ],
+    timeline: [
+      { year: "2021", event: "TCG Crossover (TCG X) announces its inaugural fund, described in the firm's April 2021 release as an \"$824 million fund\", raised in partnership with The Column Group; Dr. Chen Yu is named Founding Managing Partner." },
+      { year: "2025", event: "TCGX announces an oversubscribed $1.3 billion TCGX Fund III on 6 October 2025, bringing capital raised since inception to more than $3.1 billion; Giuliano Marostica is promoted to Managing Partner in the same announcement." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Yunqi Partners",
+    sectors: ["Deep Tech", "AI", "Physical AI", "Enterprise Software", "Data Infrastructure"],
+    signatureExit: "MiniMax (Hong Kong Stock Exchange listing, January 2026)",
+    slug: "yunqi-partners",
+    website: "https://yunqi.vc",
+    short: "Yunqi",
+    founded: null,
+    hq: "Shanghai, China",
+    aum: null,
+    thesis: "Yunqi Partners, which publishes the Chinese name 云启资本, is an early-stage technology investor operating from Shanghai and Beijing. Its stated positioning is \"Empowering the Growth of Tech Innovators\" through a \"multi-tiered Industry-Academia ecosystem\", and its site states that \"Innovation starts at the frontiers of academia & industry\" (the firm's claims). The site names three vehicles: the Yunqi Main Fund, the SJTU - Yunqi AI Angel Fund run with Shanghai Jiao Tong University, and Y Transformers. Named portfolio companies on the site include MiniMax, Manycore Technology, PingCAP, X Square and ASTRONSTONE. The firm publishes no assets under management figure.",
+    leadership: [
+      { name: "Michael Mao", role: "Co-founder and Managing Partner", profileSlug: "michael-mao" },
+      { name: "Yubin Huang", role: "Co-founder and Managing Partner", profileSlug: "yubin-huang" },
+      { name: "Yu Chen", role: "Managing Partner", profileSlug: "yu-chen" }
+    ],
+    timeline: [
+      { year: "2026", event: "Portfolio company MiniMax, founded by Junjie Yan, lists on the Hong Kong Stock Exchange on 9 January 2026, per Yunqi's own about page." },
+      { year: "2026", event: "Portfolio company Manycore Technology, co-founded by Xiaohuang Huang, lists on the Hong Kong Stock Exchange on 17 April 2026, per Yunqi's own about page." }
+    ],
+    holdings: []
   }
 ];
