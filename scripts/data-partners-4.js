@@ -14552,5 +14552,2060 @@ Object.assign(partnerProfiles, {
     sources: [
       { label: "XRC Ventures - Team", url: "https://www.xrcventures.com/team" }
     ]
+  },
+
+/* ---- Firm batch 11, added 7 September 2026: 99 partner records across the 20
+   firms appended to data-firms.js in the same batch. Shards rotate by size;
+   this batch goes into shard 4, the smallest. Shard order does not matter -
+   every shard Object.assigns into the same partnerProfiles - and shard 4 is
+   already registered in index.html and both generator load lists, so no
+   <script> tag or wiring changes. SevenX Ventures publishes its team as
+   bare handles, so those four keys carry a firm suffix rather than taking
+   /people/jon and the like. Checked against all 3,050 pre-existing partner
+   records for slug and name collisions; none found. ---- */
+"thomas-wilke": {
+    name: "Thomas Wilke",
+    firm: "42CAP",
+    firmSlug: "42cap",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as General Partner on the 42CAP site, checked 2026-09-08. He is also named as a managing director of the management company in the firm's German legal notice, which lists \"Alexander Meyer, Thomas Wilke, Moritz Zimmermann\" for 42CAP Manager GmbH, Seitzstr. 14, 80538 München, registered at Amtsgericht München under \"HRB 235050\". The legal notice spells his given name Thomas Wilke. The site's team listing carries name and title only, with no biography, joining year, education, prior employers or board seats, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "42CAP - Homepage", url: "https://www.42cap.com/" },
+      { label: "42CAP - Legal Notice (Impressum)", url: "https://www.42cap.com/legal-notice" }
+    ]
+  },
+"alex-meyer": {
+    name: "Alex Meyer",
+    firm: "42CAP",
+    firmSlug: "42cap",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as General Partner on the 42CAP site, checked 2026-09-08. He is also named as a managing director of the management company in the firm's German legal notice, which lists \"Alexander Meyer, Thomas Wilke, Moritz Zimmermann\" for 42CAP Manager GmbH, Seitzstr. 14, 80538 München, registered at Amtsgericht München under \"HRB 235050\". The legal notice spells his given name Alexander Meyer, while the team listing uses the short form. The site's team listing carries name and title only, with no biography, joining year, education, prior employers or board seats, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "42CAP - Homepage", url: "https://www.42cap.com/" },
+      { label: "42CAP - Legal Notice (Impressum)", url: "https://www.42cap.com/legal-notice" }
+    ]
+  },
+"julian-von-fischer": {
+    name: "Julian von Fischer",
+    firm: "42CAP",
+    firmSlug: "42cap",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as General Partner on the 42CAP site, checked 2026-09-08. The site's team listing carries name and title only, with no biography, joining year, education, prior employers or board seats, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "42CAP - Homepage", url: "https://www.42cap.com/" }
+    ]
+  },
+"moritz-zimmermann": {
+    name: "Moritz Zimmermann",
+    firm: "42CAP",
+    firmSlug: "42cap",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as General Partner on the 42CAP site, checked 2026-09-08. He is also named as a managing director of the management company in the firm's German legal notice, which lists \"Alexander Meyer, Thomas Wilke, Moritz Zimmermann\" for 42CAP Manager GmbH, Seitzstr. 14, 80538 München, registered at Amtsgericht München under \"HRB 235050\". The legal notice spells his given name Moritz Zimmermann. The site's team listing carries name and title only, with no biography, joining year, education, prior employers or board seats, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "42CAP - Homepage", url: "https://www.42cap.com/" },
+      { label: "42CAP - Legal Notice (Impressum)", url: "https://www.42cap.com/legal-notice" }
+    ]
+  },
+"josh-cohen": {
+    name: "Josh Cohen",
+    firm: "City Light Capital",
+    firmSlug: "city-light-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Josh Cohen is listed as Partner on the City Light team page (citylight.vc/team) as of 8 September 2026. The team page publishes names and titles only, with no biography, education, prior employment or board seats, and no further pages were opened under this batch's budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "CityLight - Team", url: "https://citylight.vc/team/" }
+    ]
+  },
+"jeff-rinehart": {
+    name: "Jeff Rinehart",
+    firm: "City Light Capital",
+    firmSlug: "city-light-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jeff Rinehart is listed as Partner on the City Light team page (citylight.vc/team) as of 8 September 2026. The team page publishes names and titles only, with no biography, education, prior employment or board seats, and no further pages were opened under this batch's budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "CityLight - Team", url: "https://citylight.vc/team/" }
+    ]
+  },
+"michael-szalontay": {
+    name: "Michael Szalontay",
+    firm: "Flashpoint Venture Capital",
+    firmSlug: "flashpoint-venture-capital",
+    title: "Co-founder & Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "MSIIR - advanced BA in Economics (honours)",
+      "CFA charterholder"
+    ],
+    previousExperience: [
+      "PricewaterhouseCoopers",
+      "Renaissance Capital",
+      "Renaissance Private Equity / Elbrus Capital"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Quoted as Co-founder and General Partner in Flashpoint's 4 August 2022 announcement of the US$105 million close of its VC III fund." }
+    ],
+    biography: "Michael Szalontay is Co-founder and Managing Partner of Flashpoint. His firm profile records an advanced BA in Economics with honours from MSIIR, a CFA charter, and a career that ran from Audit Consultant at PricewaterhouseCoopers through Analyst and Associate roles at Renaissance Capital to Vice President and then Director at Renaissance Private Equity / Elbrus Capital. In the firm's August 2022 announcement of the US$105 million VC III close he is styled Co-founder and General Partner, a variant of the title his current profile carries.",
+    notableInvestments: [],
+    sources: [
+      { label: "Flashpoint - Michael Szalontay", url: "https://flashpoint.capital/team/michael-szalontay" },
+      { label: "Flashpoint - VC III close (4 August 2022)", url: "https://flashpoint.capital/post/flashpoint-announces-us102-million-close-of-its-vciii-fund-having-secured-its-first-institutional-investment-limited-partner" }
+    ]
+  },
+"alex-konoplyasty": {
+    name: "Alex Konoplyasty",
+    firm: "Flashpoint Venture Capital",
+    firmSlug: "flashpoint-venture-capital",
+    title: "Co-founder & Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Master's degree in International Economic Relations"
+    ],
+    previousExperience: [
+      "UBS",
+      "Morgan Stanley",
+      "PricewaterhouseCoopers"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Quoted as Co-founder and General Partner, and Managing Partner for VC III, in Flashpoint's 4 August 2022 VC III close announcement." }
+    ],
+    biography: "Alex Konoplyasty is Co-founder and Managing Partner of Flashpoint. His firm profile records a Master's degree in International Economic Relations and prior roles as Director and Associate in Investment Banking at UBS covering media, telecom and financial services in the CIS region with over 20 transactions completed, Investment Banking Analyst at Morgan Stanley in European TMT and leveraged finance, and Consultant in Transaction Support at PricewaterhouseCoopers. His profile ties him to Guesty, Chess.com, MarketMan, ChiliPiper, OfficeRnD and Mize. In the firm's August 2022 VC III announcement he is styled Co-founder and General Partner and Managing Partner for VC III. He is named in that release as the source of the firm's claim about expat founders from Eastern Europe and Israel being more cost-efficient than the average US startup.",
+    notableInvestments: [
+      { name: "Guesty", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Software", subsector: "property management software", role: null, evidence: [{ url: "https://flashpoint.capital/team/alex-konoplyasty", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Chess.com", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer Internet", subsector: "online chess platform", role: null, evidence: [{ url: "https://flashpoint.capital/team/alex-konoplyasty", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "MarketMan", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Software", subsector: "restaurant back-office software", role: null, evidence: [{ url: "https://flashpoint.capital/team/alex-konoplyasty", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "ChiliPiper", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Software", subsector: "revenue and scheduling software", role: null, evidence: [{ url: "https://flashpoint.capital/team/alex-konoplyasty", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "OfficeRnD", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Software", subsector: "workspace management software", role: null, evidence: [{ url: "https://flashpoint.capital/team/alex-konoplyasty", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Mize", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://flashpoint.capital/team/alex-konoplyasty", type: "partner-bio", checked: "2026-09-08" }] }
+    ],
+    sources: [
+      { label: "Flashpoint - Alex Konoplyasty", url: "https://flashpoint.capital/team/alex-konoplyasty" },
+      { label: "Flashpoint - VC III close (4 August 2022)", url: "https://flashpoint.capital/post/flashpoint-announces-us102-million-close-of-its-vciii-fund-having-secured-its-first-institutional-investment-limited-partner" }
+    ]
+  },
+"denis-mosolov": {
+    name: "Denis Mosolov",
+    firm: "Flashpoint Venture Capital",
+    firmSlug: "flashpoint-venture-capital",
+    title: "Managing Partner",
+    joinedYear: 2021,
+    investmentFocus: [],
+    education: [
+      "Bachelor's degree in Commerce and Actuarial Studies"
+    ],
+    previousExperience: [
+      "Macquarie Group"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Joins Flashpoint as Managing Partner of the Growth Debt Fund." }
+    ],
+    biography: "Denis Mosolov is Managing Partner at Flashpoint, having joined in 2021 as Managing Partner of the Growth Debt Fund, where his profile says he oversees strategy, deal sourcing, execution and portfolio oversight across the CEE, Baltic, Finnish and Israeli markets. Before Flashpoint he spent thirteen years at Macquarie Group as Managing Director and Head of South East Europe for its Infrastructure and Real Assets division. He holds a Bachelor's degree in Commerce and Actuarial Studies. His profile names no board seats or individual portfolio companies.",
+    notableInvestments: [],
+    sources: [
+      { label: "Flashpoint - Denis Mosolov (team profile)", url: "https://flashpoint.capital/team/denis-mosolov" }
+    ]
+  },
+"anton-fedorov": {
+    name: "Anton Fedorov",
+    firm: "Flashpoint Venture Capital",
+    firmSlug: "flashpoint-venture-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Bachelor's and Master's degrees in Mathematics and Physics"
+    ],
+    previousExperience: [
+      "KPMG",
+      "family office (equity research)",
+      "European emerging-market public fund manager"
+    ],
+    boardSeats: [
+      "Board member, Comeet",
+      "Board member, TraceAir",
+      "Board member, Gaviti",
+      "Board member, Particula"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Anton Fedorov is a Partner at Flashpoint; his profile page also carries the strategy-specific styling Venture Growth Partner. His firm profile records Bachelor's and Master's degrees in Mathematics and Physics, corporate finance work at KPMG, a role as capital markets analyst for a European emerging-market public fund manager, and equity research leadership at a family office. The profile names him as a board member for Comeet, TraceAir, Gaviti and Particula, lists Guesty and Borzo Delivery among his investments, and cites MarketMan, Chess.com and Getintent as exits. His individual profile URL uses the form tony-fedorov while the page heading reads ANTON FEDOROV.",
+    notableInvestments: [
+      { name: "Comeet", ticker: null, stage: null, year: null, yearPrecision: null, sector: "HR Tech", subsector: "recruitment software", role: null, evidence: [{ url: "https://flashpoint.capital/team/tony-fedorov", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "TraceAir", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Construction Tech", subsector: "construction site analytics", role: null, evidence: [{ url: "https://flashpoint.capital/team/tony-fedorov", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Gaviti", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "accounts receivable automation", role: null, evidence: [{ url: "https://flashpoint.capital/team/tony-fedorov", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Particula", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://flashpoint.capital/team/tony-fedorov", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Guesty", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Software", subsector: "property management software", role: null, evidence: [{ url: "https://flashpoint.capital/team/tony-fedorov", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Borzo Delivery", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Logistics", subsector: "on-demand delivery", role: null, evidence: [{ url: "https://flashpoint.capital/team/tony-fedorov", type: "partner-bio", checked: "2026-09-08" }] }
+    ],
+    sources: [
+      { label: "Flashpoint - Anton Fedorov (team profile)", url: "https://flashpoint.capital/team/tony-fedorov" }
+    ]
+  },
+"lukas-harustiak": {
+    name: "Lukas Harustiak",
+    firm: "Flashpoint Venture Capital",
+    firmSlug: "flashpoint-venture-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "ESCP Europe, Paris - Master's in Management with distinction",
+      "CFA charterholder"
+    ],
+    previousExperience: [
+      "Valiance",
+      "RBS / ABN Amro"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Lukas Harustiak is a Partner at Flashpoint and, per his profile, an Investment Committee member for the Direct Secondary Fund, where he evaluates Series B and later opportunities. He holds a Master's in Management with distinction from ESCP Europe in Paris and is a CFA charterholder. His prior experience covers corporate finance and operations roles at technology companies, growth equity transactions at the London investment firm Valiance, and M&A and capital structure advisory at RBS / ABN Amro. No board seats or named portfolio companies appear on his profile.",
+    notableInvestments: [],
+    sources: [
+      { label: "Flashpoint - Lukas Harustiak (team profile)", url: "https://flashpoint.capital/team/lukas-harustiak" }
+    ]
+  },
+"igor-bilous": {
+    name: "Igor Bilous",
+    firm: "Flashpoint Venture Capital",
+    firmSlug: "flashpoint-venture-capital",
+    title: "Partner",
+    joinedYear: 2021,
+    investmentFocus: [],
+    education: [
+      "University of Northumbria at Newcastle - B.Sc. in International Finance and Accounting",
+      "Kyiv National University of Economics - Master's in International Economics"
+    ],
+    previousExperience: [
+      "UBS Bank Ukraine",
+      "Renaissance Capital",
+      "Government of Ukraine",
+      "Altius Capital"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Joins Flashpoint, per his firm profile, leading fundraising and investor relations." }
+    ],
+    biography: "Igor Bilous is a Partner at Flashpoint leading fundraising and investor relations. His firm profile states that he oversees roughly $670M in assets under management across the firm's seven funds and a base of 220 limited partners; that figure is the source of the firm-level AUM recorded here. He holds a B.Sc. in International Finance and Accounting from the University of Northumbria at Newcastle and a Master's in International Economics from Kyiv National University of Economics. Before Flashpoint he headed M&A, ECM, fixed income and wealth management at UBS Bank Ukraine from 2005 to 2011, was Co-CEO and Head of Investment Banking for Ukraine and CEE at Renaissance Capital, served in the Ukrainian government from 2014 to 2017 as First Deputy Minister of Revenues and Duties, Head of the State Fiscal Service and Head of the State Property Fund of Ukraine, and was Managing Partner at Altius Capital. His profile cites Shazam, Chess.com, OfficeRnD, Comeet, Marketman and Gurushots among Flashpoint-linked companies.",
+    notableInvestments: [
+      { name: "Chess.com", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer Internet", subsector: "online chess platform", role: null, evidence: [{ url: "https://flashpoint.capital/team/igor-bilous", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "OfficeRnD", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Software", subsector: "workspace management software", role: null, evidence: [{ url: "https://flashpoint.capital/team/igor-bilous", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Comeet", ticker: null, stage: null, year: null, yearPrecision: null, sector: "HR Tech", subsector: "recruitment software", role: null, evidence: [{ url: "https://flashpoint.capital/team/igor-bilous", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Marketman", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Software", subsector: "restaurant back-office software", role: null, evidence: [{ url: "https://flashpoint.capital/team/igor-bilous", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Gurushots", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Consumer Internet", subsector: "photography platform", role: null, evidence: [{ url: "https://flashpoint.capital/team/igor-bilous", type: "partner-bio", checked: "2026-09-08" }] }
+    ],
+    sources: [
+      { label: "Flashpoint - Igor Bilous (team profile)", url: "https://flashpoint.capital/team/igor-bilous" }
+    ]
+  },
+"stephen-polakoff": {
+    name: "Stephen Polakoff",
+    firm: "Flashpoint Venture Capital",
+    firmSlug: "flashpoint-venture-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Georgetown University Law School - law degree"
+    ],
+    previousExperience: [
+      "Deutsche Bank (UFG)",
+      "Integra Group",
+      "Clifford Chance",
+      "Damac Properties"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Stephen Polakoff is a Partner at Flashpoint. His firm profile describes over 25 years of legal and financial experience across joint ventures, M&A, capital markets, debt and equity financing and infrastructure development, with roles as General Counsel and legal adviser at Deutsche Bank (UFG), Integra Group, Clifford Chance and Damac Properties, and work in New York, Moscow, Dubai and Barcelona. He holds a law degree from Georgetown University Law School. The profile says he has served on boards of listed entities and private equity funds but names none, so boardSeats is left empty.",
+    notableInvestments: [],
+    sources: [
+      { label: "Flashpoint - Stephen Polakoff (team profile)", url: "https://flashpoint.capital/team/stephen-polakoff" }
+    ]
+  },
+"maria-savelieva": {
+    name: "Maria Savelieva",
+    firm: "Flashpoint Venture Capital",
+    firmSlug: "flashpoint-venture-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "Concord University - dual degrees in accounting and finance",
+      "CPA"
+    ],
+    previousExperience: [
+      "Elbrus Capital",
+      "Kodiak Venture Partners",
+      "Deloitte"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Maria Savelieva is a Partner at Flashpoint. Her firm profile records that she has served as Chief Financial Officer at both Flashpoint and Elbrus Capital, managed financial accounting and reporting at Kodiak Venture Partners, and worked as a senior auditor in Deloitte's audit and assurance practice in Boston. She is a CPA with dual undergraduate degrees in accounting and finance from Concord University. No board seats or portfolio companies appear on her profile.",
+    notableInvestments: [],
+    sources: [
+      { label: "Flashpoint - Maria Savelieva (team profile)", url: "https://flashpoint.capital/team/maria-savelieva" }
+    ]
+  },
+"erik-allebest": {
+    name: "Erik Allebest",
+    firm: "Flashpoint Venture Capital",
+    firmSlug: "flashpoint-venture-capital",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Erik Allebest is listed as Venture Partner on the Flashpoint team. His profile page carries only his name, this title and an external profile link, with no bio, education or prior employment published, so every other field is left null or empty.",
+    notableInvestments: [],
+    sources: [
+      { label: "Flashpoint - Erik Allebest (team profile)", url: "https://flashpoint.capital/team/erik-allebest" }
+    ]
+  },
+"vital-laptenok": {
+    name: "Vital Laptenok",
+    firm: "Flyer One Ventures",
+    firmSlug: "flyer-one-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Genesis"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Co-founds Flyer One Ventures, the year the firm's own Fund V announcement gives as its founding." }
+    ],
+    biography: "Vital Laptenok is listed as General Partner on the Flyer One Ventures team page. The firm's Fund V announcement describes him as a co-founder who previously founded the technology company Genesis. Genesis is a separate operating group and its figures are not attributed to Flyer One Ventures here. No education detail is published on the firm's team page.",
+    notableInvestments: [],
+    sources: [
+      { label: "Flyer One Ventures - Team", url: "https://flyerone.vc/team" },
+      { label: "Flyer One Ventures - Fund V announcement", url: "https://flyerone.vc/post/posts/backed-by-ifc-and-ebrd-flyer-one-ventures-announces-50m-new-fund-to-invest-in-ukrainian-cee-founders" }
+    ]
+  },
+"oleksii-yermolenko": {
+    name: "Oleksii Yermolenko",
+    firm: "Flyer One Ventures",
+    firmSlug: "flyer-one-ventures",
+    title: "Co-founder and Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Co-founds Flyer One Ventures, the year the firm's own Fund V announcement gives as its founding." }
+    ],
+    biography: "Oleksii Yermolenko is listed as Co-founder and Partner on the Flyer One Ventures team page. He is quoted as co-founder and partner in the firm's own Fund V announcement, where he argues that founders across CEE, and Ukrainians in particular, have shown they can build strong products under hard conditions; that is the firm's own framing rather than a verified claim. No education or prior employment is published on the team page.",
+    notableInvestments: [],
+    sources: [
+      { label: "Flyer One Ventures - Team", url: "https://flyerone.vc/team" },
+      { label: "Flyer One Ventures - Fund V announcement", url: "https://flyerone.vc/post/posts/backed-by-ifc-and-ebrd-flyer-one-ventures-announces-50m-new-fund-to-invest-in-ukrainian-cee-founders" }
+    ]
+  },
+"elena-mazhuha": {
+    name: "Elena Mazhuha",
+    firm: "Flyer One Ventures",
+    firmSlug: "flyer-one-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Elena Mazhuha is listed as Partner on the Flyer One Ventures team page. The firm's Fund V announcement lists the same person in its leadership block under the spelling Olena Mazhuha, also as Partner. No education, prior employment or board seats are published on the pages read.",
+    notableInvestments: [],
+    sources: [
+      { label: "Flyer One Ventures - Team", url: "https://flyerone.vc/team" }
+    ]
+  },
+"ksenia-novikova": {
+    name: "Ksenia Novikova",
+    firm: "Flyer One Ventures",
+    firmSlug: "flyer-one-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ksenia Novikova is listed as Partner on the Flyer One Ventures team page. She does not appear in the leadership block of the firm's Fund V announcement. No education, prior employment or board seats are published on the pages read.",
+    notableInvestments: [],
+    sources: [
+      { label: "Flyer One Ventures - Team", url: "https://flyerone.vc/team" }
+    ]
+  },
+"alexandra-brown": {
+    name: "Alexandra Brown",
+    firm: "Graph Ventures",
+    firmSlug: "graph-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Alexandra Brown is one of seven people Graph Ventures shows on graph.vc under the heading \"We are active founders and operators.\" as of 8 September 2026. The firm publishes no job titles, biographies, education or prior-employer detail for any of them, and the site's Team navigation link resolves to a section of the homepage rather than a separate page (graph.vc/team returns HTTP 404). No title is asserted here because the firm asserts none.",
+    notableInvestments: [],
+    sources: [
+      { label: "Graph Ventures - Homepage (team section)", url: "https://graph.vc/" }
+    ]
+  },
+"brian-truong": {
+    name: "Brian Truong",
+    firm: "Graph Ventures",
+    firmSlug: "graph-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Brian Truong is one of seven people Graph Ventures shows on graph.vc under the heading \"We are active founders and operators.\" as of 8 September 2026. The firm publishes no job titles, biographies, education or prior-employer detail for any of them, and the site's Team navigation link resolves to a section of the homepage rather than a separate page (graph.vc/team returns HTTP 404). No title is asserted here because the firm asserts none.",
+    notableInvestments: [],
+    sources: [
+      { label: "Graph Ventures - Homepage (team section)", url: "https://graph.vc/" }
+    ]
+  },
+"julio-vasconcellos": {
+    name: "Julio Vasconcellos",
+    firm: "Graph Ventures",
+    firmSlug: "graph-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Julio Vasconcellos is one of seven people Graph Ventures shows on graph.vc under the heading \"We are active founders and operators.\" as of 8 September 2026. The firm publishes no job titles, biographies, education or prior-employer detail for any of them, and the site's Team navigation link resolves to a section of the homepage rather than a separate page (graph.vc/team returns HTTP 404). No title is asserted here because the firm asserts none.",
+    notableInvestments: [],
+    sources: [
+      { label: "Graph Ventures - Homepage (team section)", url: "https://graph.vc/" }
+    ]
+  },
+"matt-wyndowe": {
+    name: "Matt Wyndowe",
+    firm: "Graph Ventures",
+    firmSlug: "graph-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Matt Wyndowe is one of seven people Graph Ventures shows on graph.vc under the heading \"We are active founders and operators.\" as of 8 September 2026. The firm publishes no job titles, biographies, education or prior-employer detail for any of them, and the site's Team navigation link resolves to a section of the homepage rather than a separate page (graph.vc/team returns HTTP 404). No title is asserted here because the firm asserts none.",
+    notableInvestments: [],
+    sources: [
+      { label: "Graph Ventures - Homepage (team section)", url: "https://graph.vc/" }
+    ]
+  },
+"omar-siddiqui": {
+    name: "Omar Siddiqui",
+    firm: "Graph Ventures",
+    firmSlug: "graph-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Omar Siddiqui is one of seven people Graph Ventures shows on graph.vc under the heading \"We are active founders and operators.\" as of 8 September 2026. The firm publishes no job titles, biographies, education or prior-employer detail for any of them, and the site's Team navigation link resolves to a section of the homepage rather than a separate page (graph.vc/team returns HTTP 404). No title is asserted here because the firm asserts none.",
+    notableInvestments: [],
+    sources: [
+      { label: "Graph Ventures - Homepage (team section)", url: "https://graph.vc/" }
+    ]
+  },
+"razmig-hovaghimian": {
+    name: "Razmig Hovaghimian",
+    firm: "Graph Ventures",
+    firmSlug: "graph-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Razmig Hovaghimian is one of seven people Graph Ventures shows on graph.vc under the heading \"We are active founders and operators.\" as of 8 September 2026. The firm publishes no job titles, biographies, education or prior-employer detail for any of them, and the site's Team navigation link resolves to a section of the homepage rather than a separate page (graph.vc/team returns HTTP 404). No title is asserted here because the firm asserts none.",
+    notableInvestments: [],
+    sources: [
+      { label: "Graph Ventures - Homepage (team section)", url: "https://graph.vc/" }
+    ]
+  },
+"sebastien-de-halleux": {
+    name: "Sebastien de Halleux",
+    firm: "Graph Ventures",
+    firmSlug: "graph-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Sebastien de Halleux is one of seven people Graph Ventures shows on graph.vc under the heading \"We are active founders and operators.\" as of 8 September 2026. The firm publishes no job titles, biographies, education or prior-employer detail for any of them, and the site's Team navigation link resolves to a section of the homepage rather than a separate page (graph.vc/team returns HTTP 404). No title is asserted here because the firm asserts none.",
+    notableInvestments: [],
+    sources: [
+      { label: "Graph Ventures - Homepage (team section)", url: "https://graph.vc/" }
+    ]
+  },
+"dr-henric-hungerhoff": {
+    name: "Dr. Henric Hungerhoff",
+    firm: "HEARTFELT",
+    firmSlug: "heartfelt-capital",
+    title: "Authorised representative (managing director) of Heartfelt Capital Management GmbH",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Named on the HEARTFELT legal notice at heartfelt.vc/contact-legals/legal-notice, checked 2026-09-08, as an authorised representative of Heartfelt Capital Management GmbH, Zimmerstraße 50, 10888 Berlin, registered at the local court of Charlottenburg under \"HRB 245369 B\". HEARTFELT publishes no team page - heartfelt.vc/team returns HTTP 404 and no team link appears in the site navigation - so this record rests on the legal notice alone. The legal notice gives no investing title, no joining year, no biography, no education and no prior employers, and none was inferred. This is a floor rather than a confirmed partner title: the homepage states the firm has \"9 full-time investment professionals\", none of whom is named anywhere on the site.",
+    notableInvestments: [],
+    sources: [
+      { label: "HEARTFELT - Legal Notice (Impressum)", url: "https://heartfelt.vc/contact-legals/legal-notice" },
+      { label: "HEARTFELT - Homepage", url: "https://www.heartfelt.vc/" }
+    ]
+  },
+"jorg-rheinboldt": {
+    name: "Jörg Rheinboldt",
+    firm: "HEARTFELT",
+    firmSlug: "heartfelt-capital",
+    title: "Authorised representative (managing director) of Heartfelt Capital Management GmbH",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Named on the HEARTFELT legal notice at heartfelt.vc/contact-legals/legal-notice, checked 2026-09-08, as an authorised representative of Heartfelt Capital Management GmbH, Zimmerstraße 50, 10888 Berlin, registered at the local court of Charlottenburg under \"HRB 245369 B\". HEARTFELT publishes no team page - heartfelt.vc/team returns HTTP 404 and no team link appears in the site navigation - so this record rests on the legal notice alone. The legal notice gives no investing title, no joining year, no biography, no education and no prior employers, and none was inferred. This is a floor rather than a confirmed partner title: the homepage states the firm has \"9 full-time investment professionals\", none of whom is named anywhere on the site.",
+    notableInvestments: [],
+    sources: [
+      { label: "HEARTFELT - Legal Notice (Impressum)", url: "https://heartfelt.vc/contact-legals/legal-notice" },
+      { label: "HEARTFELT - Homepage", url: "https://www.heartfelt.vc/" }
+    ]
+  },
+"alex-gorsky": {
+    name: "Alex Gorsky",
+    firm: "ICONIQ Capital",
+    firmSlug: "iconiq-capital",
+    title: "General Partner",
+    joinedYear: 2024,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Chairman and CEO, Johnson & Johnson (former)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2024, event: "Announced on 8 May 2024 as \"Alex Gorsky, General Partner, ICONIQ Growth\"." },
+      { year: 2024, event: "Named among the new partners in ICONIQ's 22 July 2024 seventh flagship fund announcement, described there as former Chairman and CEO of Johnson & Johnson." }
+    ],
+    biography: "Alex Gorsky is named as \"General Partner, ICONIQ Growth\" in ICONIQ's own announcement of 8 May 2024. ICONIQ's July 2024 fund announcement describes him as the former Chairman and CEO of Johnson & Johnson. ICONIQ publishes no team page, so no further first-party detail on his focus areas, education or board seats could be verified.",
+    notableInvestments: [],
+    sources: [
+      { label: "ICONIQ Growth Welcomes Alex Gorsky as our new general partner (8 May 2024)", url: "https://www.iconiq.com/news/iconiq-growth-welcomes-alex-gorsky" },
+      { label: "ICONIQ - Announcing our Seventh Flagship Fund (22 July 2024)", url: "https://www.iconiq.com/news/iconiq-growth-raises-5-75b-to-support-the-next-generation-of-exceptional-founders" }
+    ]
+  },
+"divesh-makan": {
+    name: "Divesh Makan",
+    firm: "ICONIQ Capital",
+    firmSlug: "iconiq-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2024, event: "Quoted in ICONIQ's 8 May 2024 announcement of Alex Gorsky, identified there as \"Divesh Makan, Partner, ICONIQ Capital\"." }
+    ],
+    biography: "Divesh Makan is identified as \"Divesh Makan, Partner, ICONIQ Capital\" in the firm's own announcement of 8 May 2024. ICONIQ publishes no team page, so his joining year, focus areas, education and board seats could not be verified from first-party sources.",
+    notableInvestments: [],
+    sources: [
+      { label: "ICONIQ Growth Welcomes Alex Gorsky as our new general partner (8 May 2024)", url: "https://www.iconiq.com/news/iconiq-growth-welcomes-alex-gorsky" }
+    ]
+  },
+"robert-toan": {
+    name: "Robert Toan",
+    firm: "InterVest capital partners",
+    firmSlug: "intervest",
+    title: "Executive Chairman",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Robert Toan is listed as Executive Chairman on the InterVest capital partners people page (intervest.com/people/), checked 8 September 2026, in the firm's New York office. InterVest capital partners is a New York-headquartered alternative investment manager focused on specialty finance and real estate; it uses no Partner titles, so this record covers its Managing Director-and-above tier. No education, prior employment or biographical detail is published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "InterVest capital partners - People", url: "https://intervest.com/people/" }
+    ]
+  },
+"michael-gontar": {
+    name: "Michael Gontar",
+    firm: "InterVest capital partners",
+    firmSlug: "intervest",
+    title: "Chief Executive Officer",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Michael Gontar is listed as Chief Executive Officer on the InterVest capital partners people page (intervest.com/people/), checked 8 September 2026, in the firm's New York office. InterVest capital partners is a New York-headquartered alternative investment manager focused on specialty finance and real estate; it uses no Partner titles, so this record covers its Managing Director-and-above tier. No education, prior employment or biographical detail is published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "InterVest capital partners - People", url: "https://intervest.com/people/" }
+    ]
+  },
+"steven-tenenbayev": {
+    name: "Steven Tenenbayev",
+    firm: "InterVest capital partners",
+    firmSlug: "intervest",
+    title: "Chief Investment Officer",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Steven Tenenbayev is listed as Chief Investment Officer on the InterVest capital partners people page (intervest.com/people/), checked 8 September 2026, in the firm's New York office. InterVest capital partners is a New York-headquartered alternative investment manager focused on specialty finance and real estate; it uses no Partner titles, so this record covers its Managing Director-and-above tier. No education, prior employment or biographical detail is published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "InterVest capital partners - People", url: "https://intervest.com/people/" }
+    ]
+  },
+"david-tipple": {
+    name: "David Tipple",
+    firm: "InterVest capital partners",
+    firmSlug: "intervest",
+    title: "Chief Operating Officer",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "David Tipple is listed as Chief Operating Officer on the InterVest capital partners people page (intervest.com/people/), checked 8 September 2026, in the firm's New York office. InterVest capital partners is a New York-headquartered alternative investment manager focused on specialty finance and real estate; it uses no Partner titles, so this record covers its Managing Director-and-above tier. No education, prior employment or biographical detail is published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "InterVest capital partners - People", url: "https://intervest.com/people/" }
+    ]
+  },
+"joseph-cipolla": {
+    name: "Joseph Cipolla",
+    firm: "InterVest capital partners",
+    firmSlug: "intervest",
+    title: "Managing Director, General Counsel",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Joseph Cipolla is listed as Managing Director, General Counsel on the InterVest capital partners people page (intervest.com/people/), checked 8 September 2026, in the firm's New York office. InterVest capital partners is a New York-headquartered alternative investment manager focused on specialty finance and real estate; it uses no Partner titles, so this record covers its Managing Director-and-above tier. No education, prior employment or biographical detail is published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "InterVest capital partners - People", url: "https://intervest.com/people/" }
+    ]
+  },
+"ari-rosenberg": {
+    name: "Ari Rosenberg",
+    firm: "InterVest capital partners",
+    firmSlug: "intervest",
+    title: "Managing Director, Investment",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ari Rosenberg is listed as Managing Director, Investment on the InterVest capital partners people page (intervest.com/people/), checked 8 September 2026, in the firm's New York office. InterVest capital partners is a New York-headquartered alternative investment manager focused on specialty finance and real estate; it uses no Partner titles, so this record covers its Managing Director-and-above tier. No education, prior employment or biographical detail is published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "InterVest capital partners - People", url: "https://intervest.com/people/" }
+    ]
+  },
+"robert-rothschild": {
+    name: "Robert Rothschild",
+    firm: "InterVest capital partners",
+    firmSlug: "intervest",
+    title: "Managing Director, Investment",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Robert Rothschild is listed as Managing Director, Investment on the InterVest capital partners people page (intervest.com/people/), checked 8 September 2026, in the firm's New York office. InterVest capital partners is a New York-headquartered alternative investment manager focused on specialty finance and real estate; it uses no Partner titles, so this record covers its Managing Director-and-above tier. No education, prior employment or biographical detail is published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "InterVest capital partners - People", url: "https://intervest.com/people/" }
+    ]
+  },
+"manhar-khanna": {
+    name: "Manhar Khanna",
+    firm: "InterVest capital partners",
+    firmSlug: "intervest",
+    title: "Managing Director, Investment",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Manhar Khanna is listed as Managing Director, Investment on the InterVest capital partners people page (intervest.com/people/), checked 8 September 2026, in the firm's New York office. InterVest capital partners is a New York-headquartered alternative investment manager focused on specialty finance and real estate; it uses no Partner titles, so this record covers its Managing Director-and-above tier. No education, prior employment or biographical detail is published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "InterVest capital partners - People", url: "https://intervest.com/people/" }
+    ]
+  },
+"hazem-rasbeih": {
+    name: "Hazem Rasbeih",
+    firm: "InterVest capital partners",
+    firmSlug: "intervest",
+    title: "Managing Director, Business Development and Investor Relations",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Hazem Rasbeih is listed as Managing Director, Business Development and Investor Relations on the InterVest capital partners people page (intervest.com/people/), checked 8 September 2026, in the firm's London office. InterVest capital partners is a New York-headquartered alternative investment manager focused on specialty finance and real estate; it uses no Partner titles, so this record covers its Managing Director-and-above tier. No education, prior employment or biographical detail is published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "InterVest capital partners - People", url: "https://intervest.com/people/" }
+    ]
+  },
+"rachid-ouaich": {
+    name: "Rachid Ouaïch",
+    firm: "InterVest capital partners",
+    firmSlug: "intervest",
+    title: "Managing Director, Head of Europe",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Rachid Ouaïch is listed as Managing Director, Head of Europe on the InterVest capital partners people page (intervest.com/people/), checked 8 September 2026, in the firm's Luxembourg office. InterVest capital partners is a New York-headquartered alternative investment manager focused on specialty finance and real estate; it uses no Partner titles, so this record covers its Managing Director-and-above tier. No education, prior employment or biographical detail is published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "InterVest capital partners - People", url: "https://intervest.com/people/" }
+    ]
+  },
+"vedran-blagus": {
+    name: "Vedran Blagus",
+    firm: "LAUNCHub Ventures",
+    firmSlug: "launchub-ventures",
+    title: "Associate Partner",
+    joinedYear: 2026,
+    investmentFocus: ["AI Security", "AI Infrastructure", "Health & Longevity Diagnostics", "B2B Software"],
+    education: [],
+    previousExperience: [
+      "South Central Ventures"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Joins LAUNCHub Ventures as Associate Partner, based in Zagreb and leading the Western Balkans, announced by the firm on 26 May 2026." }
+    ],
+    biography: "Vedran Blagus joined LAUNCHub Ventures as Associate Partner in May 2026, based in Zagreb and covering Croatia, Slovenia and the wider Western Balkans. The firm's announcement says he was previously at South Central Ventures, where he backed SplxAI early, and that his LAUNCHub mandate is first cheques of 300K to 3M euro with board engagement in AI security, AI-native infrastructure, health and longevity diagnostics and B2B software for the European mid-market. No education detail was published in that announcement and the firm's team page could not be read.",
+    notableInvestments: [
+      { name: "SplxAI", ticker: null, stage: null, year: null, yearPrecision: null, sector: "AI", subsector: "AI security", role: null, evidence: [{ url: "https://medium.com/launchub-ventures/vedran-blagus-joins-launchub-ventures-as-associate-partner-leading-the-western-balkans-5a227de4110d", type: "firm-announcement", checked: "2026-09-08" }] }
+    ],
+    sources: [
+      { label: "LAUNCHub Ventures - Vedran Blagus joins LAUNCHub Ventures as Associate Partner (26 May 2026)", url: "https://medium.com/launchub-ventures/vedran-blagus-joins-launchub-ventures-as-associate-partner-leading-the-western-balkans-5a227de4110d" }
+    ]
+  },
+"melissa-widner": {
+    name: "Melissa Widner",
+    firm: "Lighter Capital",
+    firmSlug: "lighter-capital",
+    title: "CEO",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2023, event: "Quoted as \"Melissa Widner, CEO\" of Lighter Capital in TechCrunch's 29 August 2023 report on the company's $130 million credit facility." }
+    ],
+    biography: "Melissa Widner is the chief executive of Lighter Capital, identified as \"Melissa Widner, CEO\" in TechCrunch's 29 August 2023 report on the company's $130 million credit facility, and listed first among the people shown on lightercapital.com/about, which publishes names without titles. Lighter Capital is a revenue-based lender rather than an equity investor, so she holds no investing partner title, no portfolio board seats and no exits of the kind recorded for venture partners. No education or prior employment was published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Lighter Capital - About", url: "https://www.lightercapital.com/about" },
+      { label: "TechCrunch - Lighter Capital raises $130M credit facility to ignite revenue-based financing for startups (29 August 2023)", url: "https://techcrunch.com/2023/08/29/lighter-capital-130m-revenue-based-financing-startups/" }
+    ]
+  },
+"otello-stampacchia": {
+    name: "Otello Stampacchia",
+    firm: "Omega Funds",
+    firmSlug: "omega-funds",
+    title: "Founder and Managing Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Quoted in the 17 December 2021 Fund VII close announcement as \"Otello Stampacchia, Ph.D., Founder and Managing Director\" of Omega Funds." }
+    ],
+    biography: "Otello Stampacchia is listed under the heading Management on the Omega Funds team page, which prints no individual titles. His title here is taken verbatim from the firm's 17 December 2021 Fund VII announcement, which identifies him as \"Otello Stampacchia, Ph.D., Founder and Managing Director\". In that release he said: \"We appreciate the trust from both our longstanding and new investors and their support of our differentiated model, which leverages our broad investment toolkit and data-driven approach to target transformative innovation.\" Omega Funds was founded in 2004. No education or prior employment for him was published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Omega Funds - Our Team", url: "https://omegafunds.com/team/" },
+      { label: "Omega Funds Closes Oversubscribed $650 Million Fund VII (PR Newswire, 17 December 2021)", url: "https://www.prnewswire.com/news-releases/omega-funds-closes-oversubscribed-650-million-fund-vii-to-invest-in-transformative-life-science-companies-301446687.html" }
+    ]
+  },
+"francesco-draetta": {
+    name: "Francesco Draetta",
+    firm: "Omega Funds",
+    firmSlug: "omega-funds",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [
+      "Chord Therapeutics (per the firm's 17 December 2021 announcement)"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2021, event: "Announced as promoted to Partner alongside the Fund VII close on 17 December 2021, identified as \"Francesco Draetta, CFA, CAIA, Partner\"; the release states he served on the board of Chord Therapeutics and as Chief Financial Officer of Omega Alpha SPAC (NASDAQ: OMEG)." }
+    ],
+    biography: "Francesco Draetta is listed under the heading Management on the Omega Funds team page, which prints no individual titles. His title here is taken verbatim from the firm's 17 December 2021 Fund VII announcement, which names him \"Francesco Draetta, CFA, CAIA, Partner\" and states he was promoted to Partner at that time. The same release states he served on the board of Chord Therapeutics and as Chief Financial Officer of Omega Alpha SPAC (NASDAQ: OMEG). That title is from December 2021 and was not re-confirmed on the current team page, which publishes no titles.",
+    notableInvestments: [],
+    sources: [
+      { label: "Omega Funds - Our Team", url: "https://omegafunds.com/team/" },
+      { label: "Omega Funds Closes Oversubscribed $650 Million Fund VII (PR Newswire, 17 December 2021)", url: "https://www.prnewswire.com/news-releases/omega-funds-closes-oversubscribed-650-million-fund-vii-to-invest-in-transformative-life-science-companies-301446687.html" }
+    ]
+  },
+"eric-cooper": {
+    name: "Eric Cooper",
+    firm: "Omega Funds",
+    firmSlug: "omega-funds",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Eric Cooper is listed under the heading Management on the Omega Funds team page at omegafunds.com/team, checked 8 September 2026. The team page publishes names and photographs grouped by department only and prints no individual job titles, so no title is recorded here rather than one being inferred. No education, prior employment or board seats for this person could be sourced from a first-party Omega Funds page within the research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Omega Funds - Our Team", url: "https://omegafunds.com/team/" }
+    ]
+  },
+"deirdre-cunnane": {
+    name: "Deirdre Cunnane",
+    firm: "Omega Funds",
+    firmSlug: "omega-funds",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Deirdre Cunnane is listed under the heading Management on the Omega Funds team page at omegafunds.com/team, checked 8 September 2026. The team page publishes names and photographs grouped by department only and prints no individual job titles, so no title is recorded here rather than one being inferred. No education, prior employment or board seats for this person could be sourced from a first-party Omega Funds page within the research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Omega Funds - Our Team", url: "https://omegafunds.com/team/" }
+    ]
+  },
+"claudio-nessi": {
+    name: "Claudio Nessi",
+    firm: "Omega Funds",
+    firmSlug: "omega-funds",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Claudio Nessi is listed under the heading Management on the Omega Funds team page at omegafunds.com/team, checked 8 September 2026. The team page publishes names and photographs grouped by department only and prints no individual job titles, so no title is recorded here rather than one being inferred. No education, prior employment or board seats for this person could be sourced from a first-party Omega Funds page within the research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Omega Funds - Our Team", url: "https://omegafunds.com/team/" }
+    ]
+  },
+"bernard-davitian": {
+    name: "Bernard Davitian",
+    firm: "Omega Funds",
+    firmSlug: "omega-funds",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Bernard Davitian is listed under the heading Investment Professionals on the Omega Funds team page at omegafunds.com/team, checked 8 September 2026. The team page publishes names and photographs grouped by department only and prints no individual job titles, so no title is recorded here rather than one being inferred. No education, prior employment or board seats for this person could be sourced from a first-party Omega Funds page within the research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Omega Funds - Our Team", url: "https://omegafunds.com/team/" }
+    ]
+  },
+"michelle-doig": {
+    name: "Michelle Doig",
+    firm: "Omega Funds",
+    firmSlug: "omega-funds",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Michelle Doig is listed under the heading Investment Professionals on the Omega Funds team page at omegafunds.com/team, checked 8 September 2026. The team page publishes names and photographs grouped by department only and prints no individual job titles, so no title is recorded here rather than one being inferred. No education, prior employment or board seats for this person could be sourced from a first-party Omega Funds page within the research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Omega Funds - Our Team", url: "https://omegafunds.com/team/" }
+    ]
+  },
+"saoussen-ben-halima": {
+    name: "Saoussen Ben Halima",
+    firm: "Omega Funds",
+    firmSlug: "omega-funds",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Saoussen Ben Halima is listed under the heading Investment Professionals on the Omega Funds team page at omegafunds.com/team, checked 8 September 2026. The team page publishes names and photographs grouped by department only and prints no individual job titles, so no title is recorded here rather than one being inferred. No education, prior employment or board seats for this person could be sourced from a first-party Omega Funds page within the research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Omega Funds - Our Team", url: "https://omegafunds.com/team/" }
+    ]
+  },
+"noelle-hutchins": {
+    name: "Noelle Hutchins",
+    firm: "Omega Funds",
+    firmSlug: "omega-funds",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Noelle Hutchins is listed under the heading Investment Professionals on the Omega Funds team page at omegafunds.com/team, checked 8 September 2026. The team page publishes names and photographs grouped by department only and prints no individual job titles, so no title is recorded here rather than one being inferred. No education, prior employment or board seats for this person could be sourced from a first-party Omega Funds page within the research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Omega Funds - Our Team", url: "https://omegafunds.com/team/" }
+    ]
+  },
+"kurt-kongtong-gallagher": {
+    name: "Kurt Kongtong-Gallagher",
+    firm: "Omega Funds",
+    firmSlug: "omega-funds",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kurt Kongtong-Gallagher is listed under the heading Investment Professionals on the Omega Funds team page at omegafunds.com/team, checked 8 September 2026. The team page publishes names and photographs grouped by department only and prints no individual job titles, so no title is recorded here rather than one being inferred. No education, prior employment or board seats for this person could be sourced from a first-party Omega Funds page within the research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Omega Funds - Our Team", url: "https://omegafunds.com/team/" }
+    ]
+  },
+"vincent-ossipow": {
+    name: "Vincent Ossipow",
+    firm: "Omega Funds",
+    firmSlug: "omega-funds",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Vincent Ossipow is listed under the heading Investment Professionals on the Omega Funds team page at omegafunds.com/team, checked 8 September 2026. The team page publishes names and photographs grouped by department only and prints no individual job titles, so no title is recorded here rather than one being inferred. No education, prior employment or board seats for this person could be sourced from a first-party Omega Funds page within the research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Omega Funds - Our Team", url: "https://omegafunds.com/team/" }
+    ]
+  },
+"boris-bogaert": {
+    name: "Boris Bogaert",
+    firm: "Pitchdrive",
+    firmSlug: "pitchdrive",
+    title: "Co-founder & Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Quoted as Managing Partner in Pitchdrive's 9 June 2026 announcement of its oversubscribed 60M euro Fund IV." }
+    ],
+    biography: "Boris Bogaert is listed among Pitchdrive's Co-founders and Managing Partners on the firm's homepage, and is named as Managing Partner in the firm's June 2026 Fund IV announcement. Pitchdrive publishes no individual bio pages, so no education or prior employment could be sourced first-party.",
+    notableInvestments: [],
+    sources: [
+      { label: "Pitchdrive - Homepage (team listing)", url: "https://www.pitchdrive.com/" },
+      { label: "Pitchdrive - Fund IV announcement", url: "https://content.pitchdrive.com/stories/pitchdrive-closes-oversubscribed-eu60m-fund-iv-to-back-europes-ai-native-founders" }
+    ]
+  },
+"koen-christiaens": {
+    name: "Koen Christiaens",
+    firm: "Pitchdrive",
+    firmSlug: "pitchdrive",
+    title: "Co-founder & Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Rydoo"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Koen Christiaens is listed among Pitchdrive's Co-founders and Managing Partners on the firm's homepage. The firm's June 2026 Fund IV announcement styles him Founding Partner and identifies him as ex-Rydoo; Rydoo is the company formerly named Xpenditure, which Pitchdrive's Our Story page refers to as Xpenditure (later Rydoo). The homepage grouping has been taken as the current title and the release variant recorded as a conflict.",
+    notableInvestments: [],
+    sources: [
+      { label: "Pitchdrive - Homepage (team listing)", url: "https://www.pitchdrive.com/" },
+      { label: "Pitchdrive - Fund IV announcement", url: "https://content.pitchdrive.com/stories/pitchdrive-closes-oversubscribed-eu60m-fund-iv-to-back-europes-ai-native-founders" },
+      { label: "Pitchdrive - Our Story", url: "https://www.pitchdrive.com/our-story" }
+    ]
+  },
+"wim-derkinderen": {
+    name: "Wim Derkinderen",
+    firm: "Pitchdrive",
+    firmSlug: "pitchdrive",
+    title: "Co-founder & Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2026, event: "Quoted as Managing Partner in Pitchdrive's 9 June 2026 announcement of its oversubscribed 60M euro Fund IV." }
+    ],
+    biography: "Wim Derkinderen is listed among Pitchdrive's Co-founders and Managing Partners on the firm's homepage and is named as Managing Partner in the firm's June 2026 Fund IV announcement. The firm's Our Story page gives wim@pitchdrive.com as its contact address. No education or prior employment is published first-party.",
+    notableInvestments: [],
+    sources: [
+      { label: "Pitchdrive - Homepage (team listing)", url: "https://www.pitchdrive.com/" },
+      { label: "Pitchdrive - Fund IV announcement", url: "https://content.pitchdrive.com/stories/pitchdrive-closes-oversubscribed-eu60m-fund-iv-to-back-europes-ai-native-founders" },
+      { label: "Pitchdrive - Our Story", url: "https://www.pitchdrive.com/our-story" }
+    ]
+  },
+"jonas-dhaenens": {
+    name: "Jonas Dhaenens",
+    firm: "Pitchdrive",
+    firmSlug: "pitchdrive",
+    title: "Co-founder & Board Member",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "team.blue"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jonas Dhaenens is listed among Pitchdrive's Co-founders and Board Members on the firm's homepage. The firm's June 2026 Fund IV announcement describes him as Chairman and as the founder of team.blue. The homepage grouping has been taken as the current title and the release variant recorded as a conflict.",
+    notableInvestments: [],
+    sources: [
+      { label: "Pitchdrive - Homepage (team listing)", url: "https://www.pitchdrive.com/" },
+      { label: "Pitchdrive - Fund IV announcement", url: "https://content.pitchdrive.com/stories/pitchdrive-closes-oversubscribed-eu60m-fund-iv-to-back-europes-ai-native-founders" }
+    ]
+  },
+"lorenz-bogaert": {
+    name: "Lorenz Bogaert",
+    firm: "Pitchdrive",
+    firmSlug: "pitchdrive",
+    title: "Co-founder & Board Member",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Netlog",
+      "Twoo"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Lorenz Bogaert is listed among Pitchdrive's Co-founders and Board Members on the firm's homepage. The firm's June 2026 Fund IV announcement lists him under its operator bench rather than as a board member. Pitchdrive's Our Story page refers to the founders of Netlog and Twoo among the entrepreneurs behind the fund, and the Fund IV release attaches Netlog and Twoo to Toon Coppens rather than to him, so no prior-company attribution has been made here beyond what is listed.",
+    notableInvestments: [],
+    sources: [
+      { label: "Pitchdrive - Homepage (team listing)", url: "https://www.pitchdrive.com/" },
+      { label: "Pitchdrive - Fund IV announcement", url: "https://content.pitchdrive.com/stories/pitchdrive-closes-oversubscribed-eu60m-fund-iv-to-back-europes-ai-native-founders" },
+      { label: "Pitchdrive - Our Story", url: "https://www.pitchdrive.com/our-story" }
+    ]
+  },
+"emily-kegels": {
+    name: "Emily Kegels",
+    firm: "Pitchdrive",
+    firmSlug: "pitchdrive",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Emily Kegels is listed as a Partner on Pitchdrive's homepage team listing. Pitchdrive publishes no individual bio pages and she is not named in the Fund IV announcement, so no education, prior employment, board seats or investments could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "Pitchdrive - Homepage (team listing)", url: "https://www.pitchdrive.com/" }
+    ]
+  },
+"alexine-capiau": {
+    name: "Alexine Capiau",
+    firm: "Pitchdrive",
+    firmSlug: "pitchdrive",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Alexine Capiau is listed as a Partner on Pitchdrive's homepage team listing. Pitchdrive publishes no individual bio pages and she is not named in the Fund IV announcement, so no education, prior employment, board seats or investments could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "Pitchdrive - Homepage (team listing)", url: "https://www.pitchdrive.com/" }
+    ]
+  },
+"federico-pirzio-biroli": {
+    name: "Federico Pirzio-Biroli",
+    firm: "Playfair",
+    firmSlug: "playfair-capital",
+    title: "Founding Partner & Chairman",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Founding Partner & Chairman on the Playfair team page, checked 2026-09-08. The team page places this person under an Investment Committee and Advisors grouping, separate from the operating team above it. The page shows name and title only, with no biography, joining year, education, prior employers or board seats, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Playfair - Team", url: "https://playfair.vc/team.php" }
+    ]
+  },
+"chris-smith": {
+    name: "Chris Smith",
+    firm: "Playfair",
+    firmSlug: "playfair-capital",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Managing Partner on the Playfair team page, checked 2026-09-08. The page shows name and title only, with no biography, joining year, education, prior employers or board seats, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Playfair - Team", url: "https://playfair.vc/team.php" }
+    ]
+  },
+"henrik-wetter-sanchez": {
+    name: "Henrik Wetter Sanchez",
+    firm: "Playfair",
+    firmSlug: "playfair-capital",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as General Partner on the Playfair team page, checked 2026-09-08. The page shows name and title only, with no biography, joining year, education, prior employers or board seats, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Playfair - Team", url: "https://playfair.vc/team.php" }
+    ]
+  },
+"simon-blakey": {
+    name: "Simon Blakey",
+    firm: "Playfair",
+    firmSlug: "playfair-capital",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Venture Partner on the Playfair team page, checked 2026-09-08. The team page places this person under an Investment Committee and Advisors grouping, separate from the operating team above it. The page shows name and title only, with no biography, joining year, education, prior employers or board seats, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Playfair - Team", url: "https://playfair.vc/team.php" }
+    ]
+  },
+"jon-sevenx": {
+    name: "Jon",
+    firm: "SevenX Ventures",
+    firmSlug: "sevenx-ventures",
+    title: "Founding Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jon is published as Founding Partner on the SevenX Ventures site (7xvc.com), checked 8 September 2026. SevenX publishes its team under single-word first names or handles and does not give a full legal name, education or prior employment for this person. No further first-party detail was recorded within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "SevenX Ventures - Homepage", url: "https://www.7xvc.com/" }
+    ]
+  },
+"eraser-sevenx": {
+    name: "Eraser",
+    firm: "SevenX Ventures",
+    firmSlug: "sevenx-ventures",
+    title: "Founding Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Eraser is published as Founding Partner on the SevenX Ventures site (7xvc.com), checked 8 September 2026. SevenX publishes its team under single-word first names or handles and does not give a full legal name, education or prior employment for this person. No further first-party detail was recorded within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "SevenX Ventures - Homepage", url: "https://www.7xvc.com/" }
+    ]
+  },
+"fc-sevenx": {
+    name: "FC",
+    firm: "SevenX Ventures",
+    firmSlug: "sevenx-ventures",
+    title: "Founding Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "FC is published as Founding Partner on the SevenX Ventures site (7xvc.com), checked 8 September 2026. SevenX publishes its team under single-word first names or handles and does not give a full legal name, education or prior employment for this person. No further first-party detail was recorded within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "SevenX Ventures - Homepage", url: "https://www.7xvc.com/" }
+    ]
+  },
+"louis-sevenx": {
+    name: "Louis",
+    firm: "SevenX Ventures",
+    firmSlug: "sevenx-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Louis is published as Managing Partner on the SevenX Ventures site (7xvc.com), checked 8 September 2026. SevenX publishes its team under single-word first names or handles and does not give a full legal name, education or prior employment for this person. No further first-party detail was recorded within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "SevenX Ventures - Homepage", url: "https://www.7xvc.com/" }
+    ]
+  },
+"mike-edelhart": {
+    name: "Mike Edelhart",
+    firm: "Social Starts",
+    firmSlug: "social-starts",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Named \"Mike Edelhart, Managing Partner\" in the firm's 21 March 2018 press release announcing the launch of Joyance Partners." }
+    ],
+    biography: "Mike Edelhart is listed first on the Social Starts team page with the title Managing Partner, and is named as \"Mike Edelhart, Managing Partner\" in the firm's own 21 March 2018 press release announcing Joyance Partners. He holds a role at Joyance Partners as well as at Social Starts, per the team page. No education or prior employment was published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Social Starts - Team", url: "https://www.socialstarts.com/team" },
+      { label: "Social Starts Launches New Venture Capital Fund Focused on the Technological Vectors of Happiness (21 March 2018)", url: "https://www.socialstarts.com/blog/press-release-social-starts-launches-new-venture-capital-fund-focused-on-the-technological-vectors-of-happiness" }
+    ]
+  },
+"andrew-nealon": {
+    name: "Andrew Nealon",
+    firm: "Social Starts",
+    firmSlug: "social-starts",
+    title: "Partner & CTO",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Andrew Nealon is listed on the Social Starts team page with the title \"Partner & CTO\", verbatim. No education, prior employment or board seats were published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Social Starts - Team", url: "https://www.socialstarts.com/team" }
+    ]
+  },
+"bradley-welch": {
+    name: "Bradley Welch",
+    firm: "Social Starts",
+    firmSlug: "social-starts",
+    title: "Investment Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Bradley Welch is listed on the Social Starts team page with the title Investment Partner, verbatim. No education, prior employment or board seats were published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Social Starts - Team", url: "https://www.socialstarts.com/team" }
+    ]
+  },
+"charles-c-smith": {
+    name: "Charles C. Smith",
+    firm: "Social Starts",
+    firmSlug: "social-starts",
+    title: "Investment Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Charles C. Smith is listed on the Social Starts team page with the title Investment Partner, verbatim. No education, prior employment or board seats were published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Social Starts - Team", url: "https://www.socialstarts.com/team" }
+    ]
+  },
+"william-lohse": {
+    name: "William Lohse",
+    firm: "Social Starts",
+    firmSlug: "social-starts",
+    title: "Founder Emeritus",
+    joinedYear: null,
+    departedYear: null,
+    departedNote: "Listed on the Social Starts team page as \"Founder Emeritus\" as of 8 September 2026, which indicates an emeritus rather than active role. The firm's own 21 March 2018 press release named him \"William Lohse, Founding Partner\". No departure was announced and no departure year is published, so departedYear is null.",
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2018, event: "Named \"William Lohse, Founding Partner\" in the firm's 21 March 2018 press release announcing Joyance Partners." }
+    ],
+    biography: "William Lohse is listed on the Social Starts team page as Founder Emeritus. The firm's own 21 March 2018 press release announcing Joyance Partners named him \"William Lohse, Founding Partner\", so the title appears to have changed to emeritus at an unpublished later date. No education or prior employment was published on the pages opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Social Starts - Team", url: "https://www.socialstarts.com/team" },
+      { label: "Social Starts Launches New Venture Capital Fund Focused on the Technological Vectors of Happiness (21 March 2018)", url: "https://www.socialstarts.com/blog/press-release-social-starts-launches-new-venture-capital-fund-focused-on-the-technological-vectors-of-happiness" }
+    ]
+  },
+"paul-bassat": {
+    name: "Paul Bassat",
+    firm: "Square Peg Capital",
+    firmSlug: "square-peg-capital",
+    title: "Co-Founder & Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Co-Founder & Partner on the Square Peg team page, checked 2026-09-08. The team page shows name and title only; it carries no biography, joining year, education, prior employers or board seats for him or her, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Square Peg - Team", url: "https://www.squarepeg.vc/team" }
+    ]
+  },
+"tony-holt": {
+    name: "Tony Holt",
+    firm: "Square Peg Capital",
+    firmSlug: "square-peg-capital",
+    title: "Co-Founder & Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Co-Founder & Partner on the Square Peg team page, checked 2026-09-08. The team page shows name and title only; it carries no biography, joining year, education, prior employers or board seats for him or her, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Square Peg - Team", url: "https://www.squarepeg.vc/team" }
+    ]
+  },
+"dan-krasnostein": {
+    name: "Dan Krasnostein",
+    firm: "Square Peg Capital",
+    firmSlug: "square-peg-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Partner on the Square Peg team page, checked 2026-09-08. The team page shows name and title only; it carries no biography, joining year, education, prior employers or board seats for him or her, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Square Peg - Team", url: "https://www.squarepeg.vc/team" }
+    ]
+  },
+"tushar-roy": {
+    name: "Tushar Roy",
+    firm: "Square Peg Capital",
+    firmSlug: "square-peg-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Partner on the Square Peg team page, checked 2026-09-08. The team page shows name and title only; it carries no biography, joining year, education, prior employers or board seats for him or her, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Square Peg - Team", url: "https://www.squarepeg.vc/team" }
+    ]
+  },
+"piruze-sabuncu": {
+    name: "Piruze Sabuncu",
+    firm: "Square Peg Capital",
+    firmSlug: "square-peg-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Partner on the Square Peg team page, checked 2026-09-08. The team page shows name and title only; it carries no biography, joining year, education, prior employers or board seats for him or her, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Square Peg - Team", url: "https://www.squarepeg.vc/team" }
+    ]
+  },
+"philippe-schwartz": {
+    name: "Philippe Schwartz",
+    firm: "Square Peg Capital",
+    firmSlug: "square-peg-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Partner on the Square Peg team page, checked 2026-09-08. The team page shows name and title only; it carries no biography, joining year, education, prior employers or board seats for him or her, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Square Peg - Team", url: "https://www.squarepeg.vc/team" }
+    ]
+  },
+"yonatan-sela": {
+    name: "Yonatan Sela",
+    firm: "Square Peg Capital",
+    firmSlug: "square-peg-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Partner on the Square Peg team page, checked 2026-09-08. The team page shows name and title only; it carries no biography, joining year, education, prior employers or board seats for him or her, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Square Peg - Team", url: "https://www.squarepeg.vc/team" }
+    ]
+  },
+"leila-lee": {
+    name: "Leila Lee",
+    firm: "Square Peg Capital",
+    firmSlug: "square-peg-capital",
+    title: "Partner & Head of Distribution",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Partner & Head of Distribution on the Square Peg team page, checked 2026-09-08. The team page shows name and title only; it carries no biography, joining year, education, prior employers or board seats for him or her, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Square Peg - Team", url: "https://www.squarepeg.vc/team" }
+    ]
+  },
+"amanda-hjorring": {
+    name: "Amanda Hjorring",
+    firm: "Square Peg Capital",
+    firmSlug: "square-peg-capital",
+    title: "Partner & COO",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Partner & COO on the Square Peg team page, checked 2026-09-08. The team page shows name and title only; it carries no biography, joining year, education, prior employers or board seats for him or her, and no individual profile page was opened within this batch's page budget, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Square Peg - Team", url: "https://www.squarepeg.vc/team" }
+    ]
+  },
+"barry-brott": {
+    name: "Barry Brott",
+    firm: "Square Peg Capital",
+    firmSlug: "square-peg-capital",
+    title: "Co-founder",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Co-founder in the venture capital team section of the Square Peg team page, checked 2026-09-08. The page gives no biography, no joining year and no company attributions for him, and no further page was opened within this batch's page budget, so every other field is null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Square Peg - Team", url: "https://www.squarepeg.vc/team" }
+    ]
+  },
+"justin-liberman": {
+    name: "Justin Liberman",
+    firm: "Square Peg Capital",
+    firmSlug: "square-peg-capital",
+    title: "Co-founder",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Listed as Co-founder in the venture capital team section of the Square Peg team page, checked 2026-09-08. The page gives no biography, no joining year and no company attributions for him, and no further page was opened within this batch's page budget, so every other field is null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Square Peg - Team", url: "https://www.squarepeg.vc/team" }
+    ]
+  },
+"john-francis": {
+    name: "John Francis",
+    firm: "Stout Street Capital",
+    firmSlug: "stout-street-capital",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "John Francis is listed as General Partner in the team section of the Stout Street Capital site as of 8 September 2026. The site publishes his name and title only, with no biography, education, prior employment or board seats; it describes the firm as \"a small team, deeply involved\". No further pages were opened under this batch's budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Stout Street Capital - Homepage (overview, thesis, team, portfolio, exits)", url: "https://www.stoutstreetcapital.com/" },
+      { label: "Stout Street Capital - Team section", url: "https://www.stoutstreetcapital.com/#team" }
+    ]
+  },
+"clay-gordon": {
+    name: "Clay Gordon",
+    firm: "Stout Street Capital",
+    firmSlug: "stout-street-capital",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Clay Gordon is listed as General Partner in the team section of the Stout Street Capital site as of 8 September 2026. The site publishes his name and title only, with no biography, education, prior employment or board seats. No further pages were opened under this batch's budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Stout Street Capital - Homepage (overview, thesis, team, portfolio, exits)", url: "https://www.stoutstreetcapital.com/" },
+      { label: "Stout Street Capital - Team section", url: "https://www.stoutstreetcapital.com/#team" }
+    ]
+  },
+"avnish-bajaj": {
+    name: "Avnish Bajaj",
+    firm: "Z47",
+    firmSlug: "z47",
+    title: "Founder and Investor",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Avnish Bajaj is listed as Founder and Investor in the Investments group on Z47's own team page (z47.com/team), checked 8 September 2026. Z47 was named Matrix Partners India until Matrix renamed the unit Z47 with effect from 1 July 2024. No further first-party biographical detail was recorded for this person within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Z47 - Team", url: "https://www.z47.com/team" }
+    ]
+  },
+"vikram-vaidyanathan": {
+    name: "Vikram Vaidyanathan",
+    firm: "Z47",
+    firmSlug: "z47",
+    title: "Managing Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Vikram Vaidyanathan is listed as Managing Director in the Investments group on Z47's own team page (z47.com/team), checked 8 September 2026. Z47 was named Matrix Partners India until Matrix renamed the unit Z47 with effect from 1 July 2024. No further first-party biographical detail was recorded for this person within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Z47 - Team", url: "https://www.z47.com/team" }
+    ]
+  },
+"tarun-davda": {
+    name: "Tarun Davda",
+    firm: "Z47",
+    firmSlug: "z47",
+    title: "Managing Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tarun Davda is listed as Managing Director in the Investments group on Z47's own team page (z47.com/team), checked 8 September 2026. Z47 was named Matrix Partners India until Matrix renamed the unit Z47 with effect from 1 July 2024. No further first-party biographical detail was recorded for this person within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Z47 - Team", url: "https://www.z47.com/team" }
+    ]
+  },
+"rajinder-balaraman": {
+    name: "Rajinder Balaraman",
+    firm: "Z47",
+    firmSlug: "z47",
+    title: "Managing Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Rajinder Balaraman is listed as Managing Director in the Investments group on Z47's own team page (z47.com/team), checked 8 September 2026. Z47 was named Matrix Partners India until Matrix renamed the unit Z47 with effect from 1 July 2024. No further first-party biographical detail was recorded for this person within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Z47 - Team", url: "https://www.z47.com/team" }
+    ]
+  },
+"rajat-agarwal": {
+    name: "Rajat Agarwal",
+    firm: "Z47",
+    firmSlug: "z47",
+    title: "Managing Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Rajat Agarwal is listed as Managing Director in the Investments group on Z47's own team page (z47.com/team), checked 8 September 2026. Z47 was named Matrix Partners India until Matrix renamed the unit Z47 with effect from 1 July 2024. No further first-party biographical detail was recorded for this person within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Z47 - Team", url: "https://www.z47.com/team" }
+    ]
+  },
+"aakash-kumar": {
+    name: "Aakash Kumar",
+    firm: "Z47",
+    firmSlug: "z47",
+    title: "Managing Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Aakash Kumar is listed as Managing Director in the Investments group on Z47's own team page (z47.com/team), checked 8 September 2026. Z47 was named Matrix Partners India until Matrix renamed the unit Z47 with effect from 1 July 2024. No further first-party biographical detail was recorded for this person within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Z47 - Team", url: "https://www.z47.com/team" }
+    ]
+  },
+"sandeep-singh-kohli": {
+    name: "Sandeep Singh Kohli",
+    firm: "Z47",
+    firmSlug: "z47",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Sandeep Singh Kohli is listed as Venture Partner in the Investments group on Z47's own team page (z47.com/team), checked 8 September 2026. Z47 was named Matrix Partners India until Matrix renamed the unit Z47 with effect from 1 July 2024. No further first-party biographical detail was recorded for this person within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Z47 - Team", url: "https://www.z47.com/team" }
+    ]
+  },
+"pete-soderling": {
+    name: "Pete Soderling",
+    firm: "Zero Prime Ventures",
+    firmSlug: "zero-prime-ventures",
+    title: "Founding Partner",
+    joinedYear: 2023,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2023, event: "Founds Zero Prime Ventures. The firm's homepage quotes him: \"We founded Zero Prime in 2023 to support the most technical minds in AI and data.\"" },
+      { year: 2024, event: "Named as Founder of Zero Prime Ventures in the firm's 19 March 2024 announcement of its $48 million Fund II." }
+    ],
+    biography: "Pete Soderling is listed as Founding Partner on the Zero Prime Ventures team page. The firm's homepage quotes him saying \"We founded Zero Prime in 2023 to support the most technical minds in AI and data.\" He is named as Founder of the firm in its 19 March 2024 Business Wire announcement of a $48 million second fund. That announcement's boilerplate states that Zero Prime Ventures was \"formerly Data Community Fund\". No education or prior employment for him could be sourced from the firm's own pages within this batch's search budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Zero Prime Ventures - Team", url: "https://www.zeroprime.vc/team" },
+      { label: "Zero Prime Ventures - Homepage", url: "https://www.zeroprime.vc/" },
+      { label: "Zero Prime Ventures Raises Second Fund to Back Even More Engineer-Founders From Company Inception (Business Wire, 19 March 2024)", url: "https://www.businesswire.com/news/home/20240319152582/en/Zero-Prime-Ventures-Raises-Second-Fund-to-Back-Even-More-Engineer-Founders-From-Company-Inception" }
+    ]
+  },
+"yang-tran": {
+    name: "Yang Tran",
+    firm: "Zero Prime Ventures",
+    firmSlug: "zero-prime-ventures",
+    title: "Partner",
+    joinedYear: 2024,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Speedinvest - Principal"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2024, event: "Announced as Partner at Zero Prime Ventures on 19 March 2024, joining from Speedinvest where she was a Principal." }
+    ],
+    biography: "Yang Tran is listed as Partner on the Zero Prime Ventures team page. She was announced as the firm's new Partner in its 19 March 2024 Business Wire release on its $48 million Fund II, which identifies her as formerly a Principal at Speedinvest. No education detail was sourced within this batch's search budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Zero Prime Ventures - Team", url: "https://www.zeroprime.vc/team" },
+      { label: "Zero Prime Ventures - Homepage", url: "https://www.zeroprime.vc/" },
+      { label: "Zero Prime Ventures Raises Second Fund to Back Even More Engineer-Founders From Company Inception (Business Wire, 19 March 2024)", url: "https://www.businesswire.com/news/home/20240319152582/en/Zero-Prime-Ventures-Raises-Second-Fund-to-Back-Even-More-Engineer-Founders-From-Company-Inception" }
+    ]
+  },
+"charles-zedlewski": {
+    name: "Charles Zedlewski",
+    firm: "Zero Prime Ventures",
+    firmSlug: "zero-prime-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Charles Zedlewski is listed as Venture Partner on the Zero Prime Ventures team page (zeroprime.vc/team) as of 8 September 2026. The firm publishes no biography, education or prior-employer detail for the venture partners on that page, and no further pages were opened under this batch's budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Zero Prime Ventures - Team", url: "https://www.zeroprime.vc/team" }
+    ]
+  },
+"angela-winegar": {
+    name: "Angela Winegar",
+    firm: "Zero Prime Ventures",
+    firmSlug: "zero-prime-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Angela Winegar is listed as Venture Partner on the Zero Prime Ventures team page (zeroprime.vc/team) as of 8 September 2026. The firm publishes no biography, education or prior-employer detail for the venture partners on that page, and no further pages were opened under this batch's budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Zero Prime Ventures - Team", url: "https://www.zeroprime.vc/team" }
+    ]
+  },
+"jordan-tigani": {
+    name: "Jordan Tigani",
+    firm: "Zero Prime Ventures",
+    firmSlug: "zero-prime-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jordan Tigani is listed as Venture Partner on the Zero Prime Ventures team page (zeroprime.vc/team) as of 8 September 2026. The firm publishes no biography, education or prior-employer detail for the venture partners on that page, and no further pages were opened under this batch's budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Zero Prime Ventures - Team", url: "https://www.zeroprime.vc/team" }
+    ]
+  },
+"isaac-roth": {
+    name: "Isaac Roth",
+    firm: "Zero Prime Ventures",
+    firmSlug: "zero-prime-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Isaac Roth is listed as Venture Partner on the Zero Prime Ventures team page (zeroprime.vc/team) as of 8 September 2026. The firm publishes no biography, education or prior-employer detail for the venture partners on that page, and no further pages were opened under this batch's budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Zero Prime Ventures - Team", url: "https://www.zeroprime.vc/team" }
+    ]
   }
 });
