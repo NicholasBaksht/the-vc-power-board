@@ -84,6 +84,13 @@ const RESEARCH_EVIDENCE = {
     timeline: { status: "verified", checked: "2026-08-23", sources: [{ url: "https://agfundernews.com/about", type: "press", note: "Founded in 2013" }, { url: "https://www.prnewswire.com/news-releases/john-deere-acquires-bear-flag-robotics-to-accelerate-autonomous-technology-on-the-farm-301349496.html", type: "firm-release", note: "John Deere acquired Bear Flag Robotics for $250 million, announced August 2021" }, { url: "https://www.businesswire.com/news/home/20210826005103/en/AgFunder-Closes-$21-Million-Alternative-Protein-Fund-Oversubscribed", type: "firm-release", note: "$21 million New Carnivore alternative protein fund closed oversubscribed, August 26, 2021" }, { url: "https://techcrunch.com/2022/03/21/to-raise-a-fund-this-agtech-outfit-built-a-content-company-first-now-it-has-60-million-to-put-to-work", type: "press", note: "$60 million in commitments raised toward a fund targeting $100 million, March 2022; article also covers conten" }] },
     website: { status: "verified", checked: "2026-08-23", sources: [{ url: "https://agfunder.com", type: "own-site", note: "https://agfunder.com (verified loads)" }] }
   },
+  "albionvc": {
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://albion.vc/legal/", type: "own-site", note: "Legal" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://albion.vc/team/", type: "own-site", note: "Team" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://albion.vc/", type: "own-site", note: "Homepage" }, { url: "https://albion.vc/legal/", type: "own-site", note: "Legal" }, { url: "https://albion.vc/our-philosophy/", type: "own-site", note: "Our philosophy" }] },
+    timeline: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://www.venturecapitaljournal.com/albion-ventures-changes-name-to-albion-capital/", type: "press", note: "Albion Ventures changes name to Albion Capital (12 June 2017)" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://albion.vc/", type: "own-site", note: "Homepage" }] }
+  },
   "altair-capital": {
     aum: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://altair.vc/", type: "own-site", note: "Homepage (\"Under management $600M\", US/Europe/Israel, 400+ portfolio)" }] },
     founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ryabenkiy.com/", type: "press", note: "personal site (founded AltaIR Capital in 2005; AltaClub and AltaLab)" }] },
@@ -103,6 +110,14 @@ const RESEARCH_EVIDENCE = {
     thesis: { status: "verified", checked: "2026-09-06", sources: [{ url: "https://www.animocabrands.com/who-we-are", type: "own-site", note: "Who we are" }, { url: "https://www.animocabrands.com/investment-overview", type: "own-site", note: "Investment overview" }, { url: "https://www.animocabrands.com/our-portfolio", type: "own-site", note: "Our portfolio" }, { url: "https://www.animocabrands.com/animoca-brands-investor-update-for-the-fiscal-year-ended-on-31-december-2023", type: "own-site", note: "Investor update for the fiscal year ended 31 December 2023 (10 Jul 2024)" }] },
     timeline: { status: "verified", checked: "2026-09-06", sources: [{ url: "https://announcements.asx.com.au/asxpdf/20200309/pdf/44fvt9mhm1ff56.pdf", type: "regulatory", note: "Removal of Animoca Brands Corporation Limited (AB1) from the Official List, 9 Mar 2020" }, { url: "https://www.animocabrands.com/announcement/currenc-group-announces-proposed-reverse-merger-with-animoca-brands-corporation-limited", type: "own-site", note: "Currenc Group announces proposed reverse merger with Animoca Brands Corporation Limited, 3 Nov 2025" }, { url: "https://www.animocabrands.com/announcement/icandy-interactive-shareholders-approve-share-issue-to-animoca-brands-asx-release", type: "own-site", note: "iCandy Interactive shareholders approve share issue to Animoca Brands (ASX release), 24 May 2018" }, { url: "https://en.wikipedia.org/wiki/Animoca_Brands", type: "press", note: "Animoca Brands (used only for the 23 January 2015 ASX admission date and early subsidiary names)" }] },
     website: { status: "verified", checked: "2026-09-06", sources: [{ url: "https://www.animocabrands.com/who-we-are", type: "own-site", note: "Who we are" }] }
+  },
+  "anorak-ventures": {
+    founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.gregcastle.org/", type: "press", note: "personal site" }] },
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.anorak.vc/about-us", type: "own-site", note: "About Us (team)" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.anorak.vc/about-us", type: "own-site", note: "About Us (team)" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.anorak.vc/", type: "own-site", note: "Homepage" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.anorak.vc/", type: "own-site", note: "Homepage" }, { url: "https://www.anorak.vc/about-us", type: "own-site", note: "About Us (team)" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.anorak.vc/", type: "own-site", note: "Homepage" }] }
   },
   "aqua-spark": {
     aum: { status: "reported", checked: "2026-08-23", sources: [{ url: "https://www.undercurrentnews.com/2025/10/30/aqua-spark-report-reveals-assets-nearly-halved-by-efishery-fraud-case/", type: "press", note: "€260m: 'assets under management have shrunk from €500m to €260m this year', reporting Aqua-Spark's own impact " }] },
@@ -274,6 +289,16 @@ const RESEARCH_EVIDENCE = {
     timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.capitalfactory.com/about", type: "own-site", note: "About (history, milestones, funds)" }, { url: "https://news.capitalfactory.com/release/56d81ac2-2bce-4ff3-855f-daee4c37fc56", type: "own-site", note: "Capital Factory Launches STATION Austin (10 March 2026)" }, { url: "https://news.capitalfactory.com/release/9a92a07b-c7f6-430e-bac2-e175e9b1ecd3", type: "own-site", note: "Capital Factory Launches STATION NWA (13 January 2026)" }, { url: "https://news.capitalfactory.com/release/9bc9f967-9935-4281-9f3f-18e151d67f71", type: "own-site", note: "NightDragon and Capital Factory Partner (18 August 2025)" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.capitalfactory.com/", type: "own-site", note: "Homepage" }] }
   },
+  "capnamic-ventures": {
+    aum: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://capnamic.com/about", type: "own-site", note: "About us" }] },
+    founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://capnamic.com/about", type: "own-site", note: "About us" }] },
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://capnamic.com/imprint", type: "own-site", note: "Imprint" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://capnamic.com/team", type: "own-site", note: "Team" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://capnamic.com/", type: "own-site", note: "Homepage" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://capnamic.com/about", type: "own-site", note: "About us" }, { url: "https://capnamic.com/", type: "own-site", note: "Homepage" }] },
+    timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://capnamic.com/about", type: "own-site", note: "About us" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://capnamic.com/", type: "own-site", note: "Homepage" }] }
+  },
   "cas-star": {
     aum: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.casstar.com.cn/about-us/", type: "own-site", note: "关于我们 (official about page: thesis, sectors, dual HQ, fund list, 累计总规模超100亿元, portfolio as at April 2024)" }, { url: "https://www.huxiu.com/article/4839203.html", type: "press", note: "独家对话米磊 (11 Mar 2026): 中科创星作为国内首个专注硬科技投资机构，12年间投资570余家企业，管理规模超160亿元" }] },
     founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://holdings.cas.cn/kjjrpt/gqrz/jjgs/202210/t20221025_4574601.html", type: "press", note: "中科创星 entry: 中科创星由中科院西安光机所联合社会资本发起创办" }, { url: "https://www.xiopmh.com/2927.html", type: "press", note: "中科创星获评清科中国早期投资机构第一名 (states 西科控股 co-founded 中科创星 in 2013; names 米磊, 李浩 as 创始合伙人 and 袁博 as 合伙人)" }] },
@@ -417,6 +442,15 @@ const RESEARCH_EVIDENCE = {
     timeline: { status: "verified", checked: "2026-08-23", sources: [{ url: "https://www.crainsdetroit.com/article/20160111/NEWS/160119974/heavyweight-investors-join-dan-gilbert-in-new-vc-fund-in-detroit", type: "press", note: "$35M fund backed by Dan Gilbert, Bruin Sports Capital, WPP; Detroit Madison Building HQ, NY office" }, { url: "https://www.prnewswire.com/news-releases/courtside-ventures-announces-first-year-investment-portfolio-leads-seed-round-in-y-combinator-alum-the-athletic-300387918.html", type: "firm-release", note: "First-year portfolio announced; led seed in The Athletic" }, { url: "https://www.cnbc.com/2022/01/06/new-york-times-announces-plans-to-buy-the-athletic-for-550-million.html", type: "press", note: "The Athletic acquired by The New York Times for $550M" }, { url: "https://www.prnewswire.com/news-releases/courtside-ventures-announces-100-million-fund-iii-with-participation-from-global-industry-leaders-301725479.html", type: "firm-release", note: "$100M Fund III with Ressler, Gilbert, Blitzer, O'Neal, Fitzgerald, Dick's Sporting Goods, Superbet" }] },
     website: { status: "verified", checked: "2026-08-23", sources: [{ url: "https://courtsidevc.com", type: "own-site", note: "https://courtsidevc.com" }] }
   },
+  "credo-ventures": {
+    founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.credoventures.com/", type: "own-site", note: "Homepage" }] },
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.credoventures.com/", type: "own-site", note: "Homepage" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.credoventures.com/team/", type: "own-site", note: "Team" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.credoventures.com/", type: "own-site", note: "Homepage" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.credoventures.com/", type: "own-site", note: "Homepage" }] },
+    timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.credoventures.com/", type: "own-site", note: "Homepage" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.credoventures.com/", type: "own-site", note: "Homepage" }] }
+  },
   "cultivation-capital": {
     founded: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://techli.com/cultivation-capitol-st-louis/3760/", type: "press", note: "Early Stage VC Fund Cultivation Capital Launches in St. Louis (16 Apr 2012)" }] },
     hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://api.adviserinfo.sec.gov/search/firm?query=cultivation%20capital&start=0&hits=10", type: "regulatory", note: "CULTIVATION CAPITAL, LLC, SEC file 801-135893, St. Louis office address" }] },
@@ -482,6 +516,19 @@ const RESEARCH_EVIDENCE = {
     timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://deerfield.com/news/deerfield-management-closes-over-600-million-healthcare-venture-fund", type: "own-site", note: "Deerfield Management Closes Over $600 Million Healthcare Venture Fund (5 May 2025)" }, { url: "https://deerfield.com/news/deerfield-closes-840-million-healthcare-venture-fund", type: "own-site", note: "Deerfield Closes $840 Million Healthcare Venture Fund (6 April 2020)" }, { url: "https://deerfield.com/news/deerfield-announces-new-1-4-billion-private-investment-fund", type: "own-site", note: "Deerfield Announces New $1.4 Billion Private Investment Fund (4 August 2021)" }, { url: "https://deerfield.com/news/deerfield-management-announces-sale-of-melinta-therapeutics", type: "own-site", note: "Deerfield Management Announces Sale of Melinta Therapeutics (5 September 2025)" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://deerfield.com/", type: "own-site", note: "Homepage" }] }
   },
+  "delta-blockchain-fund": {
+    aum: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://deltafund.io/about-us/", type: "own-site", note: "About Us" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://deltafund.io/team/", type: "own-site", note: "Team" }, { url: "https://deltafund.io/kavita-gupta/", type: "own-site", note: "Kavita Gupta profile" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://deltafund.io/about-us/", type: "own-site", note: "About Us" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://deltafund.io/team/", type: "own-site", note: "Team" }, { url: "https://deltafund.io/about-us/", type: "own-site", note: "About Us" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://deltafund.io/about-us/", type: "own-site", note: "About Us" }] }
+  },
+  "demeter-ventures": {
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.demeterventures.co/investments", type: "own-site", note: "Investments" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://demeterventures.co/", type: "own-site", note: "Homepage" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://demeterventures.co/", type: "own-site", note: "Homepage" }, { url: "https://www.demeterventures.co/investments", type: "own-site", note: "Investments" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://demeterventures.co/", type: "own-site", note: "Homepage" }] }
+  },
   "digital-currency-group": {
     founded: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://techcrunch.com/2015/10/27/barry-silbert-launches-digital-currency-group-with-funding-from-mastercard-others/", type: "press", note: "Barry Silbert Launches Digital Currency Group With Funding From MasterCard, Others (27 Oct 2015)" }] },
     hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://data.sec.gov/submissions/CIK0001652536.json", type: "regulatory", note: "Digital Currency Group, Inc. submissions (CIK 0001652536): business address 290 Harbor Dr, 4th Fl, Stamford, CT 06902; Delaware incorporation; Form 144 filin..." }] },
@@ -545,6 +592,22 @@ const RESEARCH_EVIDENCE = {
     thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://elevateventures.com/about/", type: "own-site", note: "Who We Are (cheque sizes, Indianapolis address)" }, { url: "https://elevateventures.com/programs/", type: "own-site", note: "Programs (three pillars, excluded sectors)" }, { url: "https://elevateventures.com/wp-content/uploads/2025/06/2025.06.25-IANF-III_Investment-Policy-1.pdf", type: "own-site", note: "Indiana Angel Network Fund III investment policy, IEDC Board approved 25 June 2025 (nonprofit status, Elevate Advisors LLC, SSBCI, State of Indiana contract)" }] },
     timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.iedc.in.gov/events/news/details/2024/05/23/indiana-partners-with-elevate-ventures-to-launch-first-100m-growth-stage-fund", type: "press", note: "Indiana partners with Elevate Ventures to launch first $100M growth-stage fund (23 May 2024)" }, { url: "https://iedc.in.gov/events/news/details/2023/12/19/indiana-commits-increased-funding-resources-to-catalyze-entrepreneurship-innovation", type: "press", note: "Indiana commits increased funding, resources to catalyze entrepreneurship, innovation (19 December 2023)" }, { url: "https://projects.propublica.org/nonprofits/organizations/274118692", type: "press", note: "Elevate Ventures Inc, EIN 27-4118692, 501(c)(3), ruling September 2011" }, { url: "https://elevateventures.com/anduril-acquires-solid-rocket-motor-manufacturer-adranos/", type: "own-site", note: "Anduril acquires solid rocket motor manufacturer Adranos (25 June 2023)" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://elevateventures.com/about/", type: "own-site", note: "Who We Are (cheque sizes, Indianapolis address)" }] }
+  },
+  "eleven-ventures": {
+    founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.11.vc/who-we-are/", type: "own-site", note: "Who we are" }] },
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.11.vc/who-we-are/", type: "own-site", note: "Who we are" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.11.vc/who-we-are/", type: "own-site", note: "Who we are" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.11.vc/who-we-are/", type: "own-site", note: "Who we are" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.11.vc/who-we-are/", type: "own-site", note: "Who we are" }] },
+    timeline: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://elevencapital.bg/en/about-us/", type: "press", note: "About us (separate Bulgarian entity)" }, { url: "https://www.trendingtopics.eu/eleven-ventures-funding-2/", type: "press", note: "Everything You Need to Know About Eleven Ventures" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.11.vc/who-we-are/", type: "own-site", note: "Who we are" }] }
+  },
+  "elkstone": {
+    hq: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://techcrunch.com/2023/05/18/with-government-backing-irelands-elkstone-closes-first-vc-fund-at-108m-for-early-stage-startups", type: "press", note: "With government backing, Ireland's Elkstone closes first VC fund at $108M for early-stage startups (18 May 2023)" }] },
+    leadership: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://techcrunch.com/2023/05/18/with-government-backing-irelands-elkstone-closes-first-vc-fund-at-108m-for-early-stage-startups", type: "press", note: "With government backing, Ireland's Elkstone closes first VC fund at $108M for early-stage startups (18 May 2023)" }] },
+    thesis: { status: "reported", checked: "2026-09-07", sources: [{ url: "http://registers.centralbank.ie/FundRegisterDataPage.aspx?fundReferenceNumber=C474450&register=9", type: "press", note: "Elkstone Ireland Ventures I (C474450)" }, { url: "https://techcrunch.com/2023/05/18/with-government-backing-irelands-elkstone-closes-first-vc-fund-at-108m-for-early-stage-startups", type: "press", note: "With government backing, Ireland's Elkstone closes first VC fund at $108M for early-stage startups (18 May 2023)" }] },
+    timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "http://registers.centralbank.ie/FundRegisterDataPage.aspx?fundReferenceNumber=C474450&register=9", type: "press", note: "Elkstone Ireland Ventures I (C474450)" }] },
+    website: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://techcrunch.com/2023/05/18/with-government-backing-irelands-elkstone-closes-first-vc-fund-at-108m-for-early-stage-startups", type: "press", note: "With government backing, Ireland's Elkstone closes first VC fund at $108M for early-stage startups (18 May 2023)" }] }
   },
   "energy-environment-investment": {
     aum: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://prtimes.jp/main/html/rd/p/000000004.000151860.html", type: "firm-release", note: "corporate rebranding at 20 years; 累計690億円 / 約180社; 5号ファンド 300億円; representative portfolio names" }, { url: "https://prtimes.jp/main/html/rd/p/000000003.000151860.html", type: "firm-release", note: "first public release of its impact report; EEI4号 152億円 and EEI5号 300億円" }] },
@@ -631,6 +694,13 @@ const RESEARCH_EVIDENCE = {
     timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.globenewswire.com/news-release/2024/11/14/2981038/0/en/Founderful-defies-European-VC-consolidation-trend-with-oversubscribed-140m-Fund-II.html", type: "firm-release", note: "Founderful defies European VC consolidation trend with oversubscribed $140m Fund II (14 Nov 2024)" }, { url: "https://www.nasdaq.com/press-release/wingman-ventures-rebrands-as-founderful-gains-momentum-for-$120m-fund-ii-for-swiss", type: "regulatory", note: "Wingman Ventures rebrands as Founderful, gains momentum for $120m Fund II (13 Feb 2024)" }, { url: "https://www.moneyhouse.ch/en/company/founderful-ag-12787345531", type: "press", note: "Founderful AG, CHE-492.933.597, former name Wingman AG changed 01.03.2024" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.founderful.com/", type: "own-site", note: "Homepage" }] }
   },
+  "frontline-ventures": {
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.frontline.vc/team", type: "own-site", note: "Team" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.frontline.vc/team", type: "own-site", note: "Team" }, { url: "https://frontline.vc/people/shay-garvey/", type: "own-site", note: "Shay Garvey" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.frontline.vc/about", type: "own-site", note: "About" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.frontline.vc/about", type: "own-site", note: "About" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.frontline.vc/team", type: "own-site", note: "Team" }] }
+  },
   "fuel-ventures": {
     aum: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.fuel.ventures/investors", type: "own-site", note: "Investors (four named fund vehicles; £280m invested in 230+ companies)" }] },
     founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.fuel.ventures/fueling-the-growth-of-early-stage-companies", type: "own-site", note: "Fueling the growth of early-stage companies (2014 start; five separate funds)" }] },
@@ -707,6 +777,12 @@ const RESEARCH_EVIDENCE = {
     thesis: { status: "verified", checked: "2026-09-06", sources: [{ url: "https://www.goodwatercap.com/", type: "own-site", note: "Homepage" }, { url: "https://www.goodwatercap.com/portfolio", type: "own-site", note: "Portfolio" }] },
     timeline: { status: "verified", checked: "2026-09-06", sources: [{ url: "https://www.prnewswire.com/news-releases/goodwater-raises-over-1-billion-to-support-consumer-technology-startups-globally-301885840.html", type: "firm-release", note: "Goodwater Raises Over $1 Billion to Support Consumer Technology Startups Globally (PR Newswire, 25 July 2023) - founding year 2014 and $3.3B committed capital" }, { url: "https://techcrunch.com/2021/03/10/how-coupang-is-out-amazoning-even-amazon-according-to-goodwater-capital/", type: "press", note: "states Goodwater had no holdings in Coupang and released its Coupang work as third-party research" }] },
     website: { status: "verified", checked: "2026-09-06", sources: [{ url: "https://www.goodwatercap.com/", type: "own-site", note: "Homepage" }] }
+  },
+  "greatpoint-ventures": {
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://gpv.com/", type: "own-site", note: "Homepage" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://gpv.com/team", type: "own-site", note: "Team" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://gpv.com/", type: "own-site", note: "Homepage" }, { url: "https://gpv.com/philosophy", type: "own-site", note: "Philosophy" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://gpv.com/", type: "own-site", note: "Homepage" }] }
   },
   "green-pine-capital-partners": {
     founded: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://36kr.com/p/1722103365633", type: "press", note: "南派PE大佬：低调的松禾资本与19个IPO的项目 (20 Dec 2017)" }] },
@@ -1304,6 +1380,15 @@ const RESEARCH_EVIDENCE = {
     timeline: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://pitchhub.36kr.com/organization/1678203992028164", type: "press", note: "梅花创投 institution profile (third-party database; conflicting AUM and additional partner names)" }, { url: "https://finance.sina.com.cn/wm/2026-05-16/doc-inhyahat4632438.shtml", type: "press", note: "吴世春 interview, 16 May 2026" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.plumventures.cn/", type: "own-site", note: "official site, homepage including 关于我们, 团队介绍, 投资案例, 业界荣誉 and 梅花动态 sections" }] }
   },
+  "presto-ventures": {
+    founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.prestoventures.com/", type: "own-site", note: "Homepage" }] },
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.prestoventures.com/", type: "own-site", note: "Homepage" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.prestoventures.com/team", type: "own-site", note: "Team" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.prestoventures.com/", type: "own-site", note: "Homepage" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.prestoventures.com/", type: "own-site", note: "Homepage" }] },
+    timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.prestoventures.com/", type: "own-site", note: "Homepage" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.prestoventures.com/", type: "own-site", note: "Homepage" }] }
+  },
   "prime-movers-lab": {
     aum: { status: "verified", checked: "2026-08-23", sources: [{ url: "https://www.prnewswire.com/news-releases/prime-movers-lab-raises-245-million-early-stage-fund-to-advance-breakthrough-science-startups-301886276.html", type: "firm-release", note: "'more than $1.2 billion' AUM stated in the firm's July 2023 Fund III release" }] },
     founded: { status: "verified", checked: "2026-08-23", sources: [{ url: "https://www.prnewswire.com/news-releases/prime-movers-lab-raises-245-million-early-stage-fund-to-advance-breakthrough-science-startups-301886276.html", type: "firm-release", note: "Founded in 2018 by Dakin Sloss, per the firm's own Fund III press release" }] },
@@ -1383,6 +1468,14 @@ const RESEARCH_EVIDENCE = {
     timeline: { status: "verified", checked: "2026-09-06", sources: [{ url: "https://www.rightsidecapital.com/blog/rscm-named-one-of-times-top-vc-firms-of-2025", type: "own-site", note: "blog, RSCM Named to TIME's Top VC Firms of 2025 (150+ startups per year, Fund VI $55M, HQ address)" }, { url: "https://data.sec.gov/submissions/CIK0001504756.json", type: "regulatory", note: "Right Side Capital Management, LLC, CIK 0001504756 (entity name, DE, Form D 4 Nov 2010)" }, { url: "https://data.sec.gov/submissions/CIK0002131993.json", type: "regulatory", note: "RSCM Fund VII, L.P., CIK 0002131993 (Form D 27 Apr 2026; 649 Mission Street, 5th Floor, San Francisco)" }] },
     website: { status: "verified", checked: "2026-09-06", sources: [{ url: "https://www.rightsidecapital.com/", type: "own-site", note: "Homepage (check size, valuation, MRR, geography)" }] }
   },
+  "ring-capital": {
+    aum: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ringcp.com/", type: "own-site", note: "Homepage" }] },
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ringcp.com/contact/", type: "own-site", note: "Contact" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ringcp.com/", type: "own-site", note: "Homepage" }, { url: "https://www.ringcp.com/team/", type: "own-site", note: "Meet the Ring Team" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ringcp.com/vision", type: "own-site", note: "Vision" }, { url: "https://www.ringcp.com/ring-mission/", type: "own-site", note: "Ring Mission (Venture Capital)" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ringcp.com/", type: "own-site", note: "Homepage" }, { url: "https://www.ringcp.com/vision", type: "own-site", note: "Vision" }, { url: "https://www.ringcp.com/ring-mission/", type: "own-site", note: "Ring Mission (Venture Capital)" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ringcp.com/", type: "own-site", note: "Homepage" }] }
+  },
   "riot-ventures": {
     holdings: { status: "verified", checked: "2026-08-23", sources: [{ url: "https://www.riot.vc", type: "own-site", note: "Toast shown on riot.vc portfolio grid; trades on NYSE as TOST" }] },
     hq: { status: "verified", checked: "2026-08-23", sources: [{ url: "https://www.riot.vc", type: "own-site", note: "1632 Abbot Kinney Blvd, Venice, CA 90291 on firm site; Boston and Los Angeles offices per MIT Sloan" }] },
@@ -1451,6 +1544,14 @@ const RESEARCH_EVIDENCE = {
     timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://sbxi.substack.com/p/sbxi-investing-in-mit-founders", type: "press", note: "sbxi investing in mit founders (11 August 2023, first issue)" }, { url: "https://sbxi.substack.com/p/sbxi-update-november-1-2023", type: "press", note: "SBXi Update: November 1, 2023 (77 pre-seed and seed investments)" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.sbxi.com/", type: "own-site", note: "Homepage (We Back MIT Founders)" }] }
   },
+  "scribble-ventures": {
+    founded: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://www.forbes.com/sites/alexkonrad/2021/02/04/twitter-alum-elizabeth-weils-vc-firm-debuts-with-42-million-to-bring-back-old-venture-collaboration/", type: "press", note: "Twitter Alum Elizabeth Weil's VC Firm Debuts With $42 Million (4 Feb 2021)" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.scribble.vc/team", type: "own-site", note: "Team" }, { url: "https://www.scribble.vc/elizabeth-weil", type: "own-site", note: "Elizabeth Weil" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.scribble.vc/", type: "own-site", note: "Homepage" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.scribble.vc/", type: "own-site", note: "Homepage" }] },
+    timeline: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://www.forbes.com/sites/alexkonrad/2021/02/04/twitter-alum-elizabeth-weils-vc-firm-debuts-with-42-million-to-bring-back-old-venture-collaboration/", type: "press", note: "Twitter Alum Elizabeth Weil's VC Firm Debuts With $42 Million (4 Feb 2021)" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.scribble.vc/", type: "own-site", note: "Homepage" }] }
+  },
   "second-century-ventures": {
     founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.nar.realtor/technology/second-century-ventures", type: "press", note: "Second Century Ventures (\"a wholly owned subsidiary and the strategic investment arm\")" }, { url: "https://www.nar.realtor/programs/second-century-initiatives", type: "press", note: "Second Century Initiatives (describes Second Century Ventures, LLC)" }] },
     hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.scv.vc/approach", type: "own-site", note: "Approach (stated investment focus, Chicago address)" }] },
@@ -1499,6 +1600,15 @@ const RESEARCH_EVIDENCE = {
     thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.silvertonpartners.com/philosophy/", type: "own-site", note: "Philosophy (founding year 2006, stage, statistics block)" }] },
     timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.businesswire.com/news/home/20220706005270/en/Silverton-Partners-Raises-Largest-Fund-to-Date-at-$248M-to-Support-Austins-Rapidly-Expanding-Tech-Scene", type: "firm-release", note: "Silverton Partners Raises Largest Fund to Date at $248M (6 July 2022)" }, { url: "https://www.sec.gov/Archives/edgar/data/2124880/000123191926000291/primary_doc.xml", type: "regulatory", note: "Silverton Partners VIII, L.P. Form D (filed 30 March 2026)" }, { url: "https://www.sec.gov/Archives/edgar/data/1922162/000192216222000001/primary_doc.xml", type: "regulatory", note: "Silverton Partners VII, L.P. Form D (filed 8 April 2022)" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.silvertonpartners.com/", type: "own-site", note: "Homepage" }] }
+  },
+  "sky9-capital": {
+    aum: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.sky9capital.com/about/", type: "own-site", note: "About Us" }, { url: "https://www.sky9.vc/", type: "press", note: "Chinese-language site homepage" }] },
+    founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.sky9capital.com/about/", type: "own-site", note: "About Us" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.sky9capital.com/team/", type: "own-site", note: "Team" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.sky9.vc/", type: "press", note: "Chinese-language site homepage" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.sky9capital.com/about/", type: "own-site", note: "About Us" }, { url: "https://www.sky9.vc/", type: "press", note: "Chinese-language site homepage" }] },
+    timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.sky9capital.com/about/", type: "own-site", note: "About Us" }, { url: "https://www.sky9.vc/", type: "press", note: "Chinese-language site homepage" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.sky9capital.com/team/", type: "own-site", note: "Team" }] }
   },
   "smbc-venture-capital": {
     aum: { status: "verified", checked: "2026-09-06", sources: [{ url: "https://www.smbc-vc.co.jp/portfolio/", type: "own-site", note: "投資実績 (cumulative investment and IPO figures, IPO company list)" }] },
@@ -1576,6 +1686,14 @@ const RESEARCH_EVIDENCE = {
     timeline: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://betakit.com/svg-ventures-thrive-aims-to-raise-75-million-cad-for-third-agrifood-fund/", type: "press", note: "SVG Ventures Thrive aims to raise $75 million CAD for third agrifood fund" }, { url: "https://globalaginvesting.com/qa-silicon-valleys-svg-ventures-partners-with-japans-kagome-for-50m-sunrise-fund/", type: "press", note: "SVG Ventures partners with Japan's Kagome for $50M Sunrise Fund (26 Sept 2024)" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.svgventures.com/", type: "own-site", note: "Homepage" }] }
   },
+  "swen-capital-partners": {
+    founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.swen-cp.fr/en/about/", type: "own-site", note: "About us" }] },
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.swen-cp.fr/en/legal-information/", type: "own-site", note: "Legal information (mentions legales)" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.swen-cp.fr/en/about/", type: "own-site", note: "About us" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.swen-cp.fr/en/about/", type: "own-site", note: "About us" }, { url: "https://www.swen-cp.fr/en/regulatory-information/", type: "own-site", note: "Regulatory information" }] },
+    timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.swen-cp.fr/en/about/", type: "own-site", note: "About us" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.swen-cp.fr/en/about/", type: "own-site", note: "About us" }] }
+  },
   "team-ignite-ventures": {
     aum: { status: "verified", checked: "2026-09-06", sources: [{ url: "https://www.sec.gov/Archives/edgar/data/1956766/000195676625000002/primary_doc.xml", type: "regulatory", note: "Team Ignite Fund I, LP Form D/A, filed 20 November 2025 (Folsom, California; incorporated 2022; $4,964,247 offered and sold; Brian Robert Bell)" }] },
     founded: { status: "verified", checked: "2026-09-06", sources: [{ url: "https://www.teamignite.vc/", type: "own-site", note: "Homepage (Est. 2020, stage, PitchBook ranking)" }] },
@@ -1593,6 +1711,14 @@ const RESEARCH_EVIDENCE = {
     thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.techstart.vc/", type: "own-site", note: "Home" }, { url: "https://www.techstart.vc/approach", type: "own-site", note: "Approach" }, { url: "https://www.techstart.vc/investment", type: "own-site", note: "Investment" }] },
     timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://find-and-update.company-information.service.gov.uk/company/NC001436", type: "regulatory", note: "TECHSTART VENTURES LLP (NC001436), overview" }, { url: "https://www.investni.com/sites/default/files/documents/static/library/invest-ni/documents/access-to-finance-techstart-ni.pdf", type: "press", note: "Access to Finance: Techstart Ventures / Techstart III (PDF)" }, { url: "https://www.economy-ni.gov.uk/news/three-tech-startups-receive-over-ps18m-accelerate-growth", type: "government", note: "Three tech startups receive over GBP 1.8m to accelerate growth (2 March 2026)" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.techstart.vc/", type: "own-site", note: "Home" }] }
+  },
+  "tesi": {
+    aum: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://tesi.fi/en/about-tesi/", type: "own-site", note: "About Tesi" }, { url: "https://tesi.fi/en/about-tesi/financial-figures/", type: "own-site", note: "Financial figures" }] },
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://tesi.fi/en/about-tesi/contact/", type: "own-site", note: "Contact" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://tesi.fi/en/about-tesi/governance/", type: "own-site", note: "Governance (board and management team)" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://tesi.fi/en/about-tesi/", type: "own-site", note: "About Tesi" }] },
+    timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://tesi.fi/en/about-tesi/history/", type: "own-site", note: "History" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://tesi.fi/en/about-tesi/", type: "own-site", note: "About Tesi" }] }
   },
   "the-legaltech-fund": {
     aum: { status: "verified", checked: "2026-08-23", sources: [{ url: "https://www.legaltech.com/post/the-legaltech-fund-closes-110-million-second-fund-to-power-the-next-generation-of-legal-innovation", type: "own-site", note: "$110M Fund II close Nov 2025; $28.5M Fund I 2022" }] },
@@ -1657,6 +1783,13 @@ const RESEARCH_EVIDENCE = {
     timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.tweenerfund.com/about-2", type: "own-site", note: "About (roster, Tweener definition, 2022 launch)" }, { url: "https://ncidea.org/press-release/nc-idea-and-triangle-tweener-fund-form-strategic-investor-relationship-rebranding-as-nc-tweener-fund-powered-by-nc-idea/", type: "press", note: "NC IDEA and Triangle Tweener Fund Form Strategic Investor Relationship; Rebranding as \"NC Tweener Fund, Powered by NC IDEA\" (20 February 2026)" }, { url: "https://ncidea.org/press-release/nc-idea-foundation-announces-first-statewide-investments-by-nc-tweener-fund-powered-by-nc-idea/", type: "press", note: "NC IDEA Foundation Announces First Statewide Investments by NC Tweener Fund (13 April 2026)" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.tweenerfund.com/", type: "own-site", note: "Homepage" }] }
   },
+  "triple-point-ventures": {
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.triplepoint.vc/", type: "own-site", note: "Homepage" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.triplepoint.vc/team/", type: "own-site", note: "Team" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.triplepoint.vc/", type: "own-site", note: "Homepage" }, { url: "https://www.triplepoint.co.uk/about-us/", type: "press", note: "About us" }] },
+    timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.triplepoint.co.uk/about-us/", type: "press", note: "About us" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.triplepoint.vc/", type: "own-site", note: "Homepage" }] }
+  },
   "trucks-venture-capital": {
     founded: { status: "reported", checked: "2026-08-23", sources: [{ url: "https://www.esgtoday.com/trucks-vc-raises-70-million-to-invest-in-startups-making-transportation-safer-cleaner-and-more-accessible/", type: "press", note: "2015" }] },
     holdings: { status: "verified", checked: "2026-08-23", sources: [{ url: "https://www.trucks.vc", type: "own-site", note: "Joby Aviation listed on firm homepage portfolio with NYSE: JOBY; ticker live" }] },
@@ -1682,6 +1815,15 @@ const RESEARCH_EVIDENCE = {
     timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.sec.gov/Archives/edgar/data/2060254/000206025426000004/primary_doc.xml", type: "regulatory", note: "TSVC Fund VI, LP (filed 13 April 2026, CIK 0002060254)" }, { url: "https://www.sec.gov/Archives/edgar/data/1898411/000189841123000001/primary_doc.xml", type: "regulatory", note: "TSVC Fund V LP (filed 21 August 2023, CIK 0001898411)" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.tsvcap.com/", type: "own-site", note: "Homepage (stated focus areas, portfolio statistics)" }] }
   },
+  "ui-investissement": {
+    aum: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ui-investissement.com/nos-metiers/", type: "own-site", note: "Nos metiers" }, { url: "https://www.ui-investissement.com/", type: "own-site", note: "Homepage" }] },
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ui-investissement.com/mentions-legales-conditions-dutilisations/", type: "own-site", note: "Mentions legales et conditions d'utilisation" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ui-investissement.com/nos-equipes/", type: "own-site", note: "Nos equipes" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ui-investissement.com/nos-metiers/", type: "own-site", note: "Nos metiers" }, { url: "https://www.ui-investissement.com/notre-philosophie/", type: "own-site", note: "Notre philosophie" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ui-investissement.com/notre-philosophie/", type: "own-site", note: "Notre philosophie" }, { url: "https://www.ui-investissement.com/", type: "own-site", note: "Homepage" }] },
+    timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ui-investissement.com/notre-actualite/ui-gestion-devient-ui-investissement/", type: "own-site", note: "UI Gestion modernise son image de marque et devient UI Investissement" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ui-investissement.com/", type: "own-site", note: "Homepage" }] }
+  },
   "untrod-capital": {
     aum: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://untrod.inc/en/solution/", type: "own-site", note: "Our Solutions (fund vehicles, AUM and portfolio count)" }, { url: "https://untrod.inc/en/news/1158/", type: "own-site", note: "Real Tech Holdings Relaunches as UntroD (3 June 2024)" }] },
     founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://untrod.inc/about/", type: "own-site", note: "About Us (Japanese roster and 会社概要)" }] },
@@ -1701,6 +1843,12 @@ const RESEARCH_EVIDENCE = {
     thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ut-ec.co.jp/about_us/investment_policy/", type: "own-site", note: "Investment Policy / 投資方針" }, { url: "https://www.ut-ec.co.jp/english/", type: "own-site", note: "English site (full English legal name, University of Tokyo relationship)" }] },
     timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ut-ec.co.jp/about_us/news/utec6/", type: "own-site", note: "UTEC6 fund formation announcement (11 July 2025)" }, { url: "https://www.ut-ec.co.jp/about_us/news/tier4_ipo/", type: "own-site", note: "TIER IV listing announcement (22 July 2026)" }, { url: "https://www.ut-ec.co.jp/about_us/news/20251006/", type: "own-site", note: "RegCell founder Nobel Prize announcement (6 October 2025)" }, { url: "https://www.ut-ec.co.jp/about_us/history/", type: "own-site", note: "沿革 (corporate history, first-party; consolidation of the 2004 entity, June 2020, and the February 2021 UTokyo share donation)" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.ut-ec.co.jp/english/", type: "own-site", note: "English site (full English legal name, University of Tokyo relationship)" }] }
+  },
+  "venrex": {
+    founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://venrex.partners/", type: "own-site", note: "Home" }] },
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://venrex.partners/wp-content/uploads/2025/10/Venrex-Terms-of-Use-10.2025.pdf", type: "own-site", note: "Terms of Use (October 2025)" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://venrex.partners/", type: "own-site", note: "Home" }, { url: "https://venrex.partners/the-minerva-code/", type: "own-site", note: "The Minerva Code" }, { url: "https://venrex.partners/wp-content/uploads/2025/10/Venrex-Terms-of-Use-10.2025.pdf", type: "own-site", note: "Terms of Use (October 2025)" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://venrex.partners/", type: "own-site", note: "Home" }] }
   },
   "venture-catalysts": {
     aum: { status: "reported", checked: "2026-09-07", sources: [{ url: "https://www.business-standard.com/article/companies/venture-catalysts-backed-elev8-announces-200-mn-fund-to-invest-in-startups-122092900862_1.html", type: "press", note: "Venture Catalysts-backed Elev8 announces $200 mn fund (29 Sept 2022)" }] },
@@ -1732,6 +1880,15 @@ const RESEARCH_EVIDENCE = {
     thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://vivocapital.com/about/", type: "own-site", note: "About (firm history timeline, BDF Fund predecessor, offices)" }, { url: "https://vivocapital.com/investment-strategy/", type: "own-site", note: "Investment Strategy (Vivo Innovation Fund, Vivo Capital Private Equity, Vivo Opportunity Fund)" }] },
     timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://vivocapital.com/a-letter-from-our-co-founders-celebrating-vivo-capitals-30th-anniversary/", type: "own-site", note: "A Letter From Our Co-Founders, 8 April 2026 (BioAsia Investments original name)" }, { url: "https://vivocapital.com/vivo-capital-closes-its-public-fund-with-commitments-of-over-740-million/", type: "own-site", note: "Closes Its Public Fund with Commitments of Over $740 Million, 7 May 2025 (approximately $5.3B regulatory AUM)" }, { url: "https://vivocapital.com/vivo-capital-marks-30th-anniversary-with-new-philanthropic-initiative/", type: "own-site", note: "Marks 30th Anniversary with New Philanthropic Initiative, 14 July 2026" }] },
     website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://vivocapital.com/", type: "own-site", note: "Homepage (Active AUM figure, checked 7 September 2026)" }] }
+  },
+  "xrc-ventures": {
+    founded: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.xrcventures.com/", type: "own-site", note: "Homepage" }, { url: "https://medium.com/xrc-ventures/welcome-to-xrc-labs-a5cb4a6cf332", type: "press", note: "Welcome to XRC Labs (15 July 2015)" }] },
+    hq: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.xrcventures.com/", type: "own-site", note: "Homepage" }] },
+    leadership: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.xrcventures.com/team", type: "own-site", note: "Team" }] },
+    sectors: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.xrcventures.com/", type: "own-site", note: "Homepage" }] },
+    thesis: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.xrcventures.com/", type: "own-site", note: "Homepage" }] },
+    timeline: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://medium.com/xrc-ventures/welcome-to-xrc-labs-a5cb4a6cf332", type: "press", note: "Welcome to XRC Labs (15 July 2015)" }] },
+    website: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://www.xrcventures.com/", type: "own-site", note: "Homepage" }] }
   },
   "zaka-vc": {
     aum: { status: "verified", checked: "2026-09-07", sources: [{ url: "https://zaka.vc/unveiling-zaka-fund-i-15m-for-bridging-the-us-with-the-eu-market/", type: "own-site", note: "Unveiling ZAKA Fund I: 15M for bridging the US with the EU market, 19 July 2024" }] },
