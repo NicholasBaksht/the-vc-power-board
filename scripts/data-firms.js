@@ -18341,5 +18341,454 @@ holdings: []
       { year: "2024", event: "On 19 March 2024 the firm announces a $48 million Fund II and Yang Tran as Partner, joining from Speedinvest where she was a Principal." }
     ],
     holdings: []
+  },
+  {
+    rank: null,
+    name: "50 Partners",
+    sectors: ["Technology", "Impact", "Health", "Web3"],
+    signatureExit: null,
+    slug: "50-partners",
+    website: "https://www.50partners.fr",
+    short: "50 Partners",
+    founded: null,
+    hq: "Paris, France",
+    aum: null,
+    thesis: "50 Partners is a Paris organisation that runs both a set of accelerator programmes and investment funds. Its site presents four accelerator programmes - Tech (Digital), Impact, Health and Web3 - and its tagline is, in the firm's own words, \"50 entrepreneurs accompagnent les success stories de demain\". The site navigation refers to a \"Fonds 3\", indicating a third fund, but publishes no fund size. The regulated management entity is 50 Partners Gestion, a SAS at 62, rue Jean-Jacques Rousseau, 75001 Paris, authorised by the Autorite des Marches Financiers. Investment teams are organised by vertical, each with its own directeurs d'investissement.",
+    leadership: [
+      { name: "Jérome Masurel", role: "Fondateur de 50 Partners" },
+      { name: "Joanne Courbon", role: "Managing Director" },
+      { name: "Lucile Brachet", role: "Managing Director Impact" },
+      { name: "Karine Brana", role: "Head of funds" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Autotech Ventures",
+    sectors: ["Mobility", "Transportation", "AI", "Deep Tech", "Automotive"],
+    signatureExit: null,
+    slug: "autotech-ventures",
+    website: "https://www.autotechvc.com",
+    short: "Autotech",
+    founded: 2015,
+    hq: "Menlo Park, CA",
+    aum: "Firm states it 'manages nearly $600 million' (Autotech Ventures press release, 17 December 2025). The release does not use the term assets under management, so this is recorded as the firm's own wording rather than a stated AUM figure.",
+    thesis: "Autotech Ventures is a Menlo Park venture firm founded in 2015 that invests in ground transportation and mobility technology. Its own December 2025 tenth-anniversary release states the firm 'manages nearly $600 million' and has 'invested in more than 60 companies', and says it is doubling down on AI and deep tech. The firm's team page is organised into an Investment Team, a Strategic Partnerships Team, a Portfolio Success Team, an Operations Team and Advisors, which reflects a model combining investment with corporate-partner relationships.",
+    leadership: [
+      { name: "Quin Garcia", role: "Co-founder and Managing Director" },
+      { name: "Alexei Andreev", role: "Co-founder and Managing Director" },
+      { name: "Burak Cendek", role: "Managing Director" }
+    ],
+    timeline: [
+      { year: "2015", event: "Autotech Ventures is founded; the firm's December 2025 release marks a decade since founding in 2015." },
+      { year: "2025", event: "On 17 December 2025 the firm announces Mike Abbott as Venture Partner, the promotion of Burak Cendek to Managing Director and David Le to Senior Operating Partner, and states it manages nearly $600 million across more than 60 companies." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Axon Partners Group",
+    sectors: ["Technology", "Innovation"],
+    signatureExit: null,
+    slug: "axon-partners-group",
+    website: "https://axonpartnersgroup.com",
+    short: "Axon",
+    founded: 2006,
+    hq: null,
+    aum: null,
+    thesis: "Axon Partners Group is not a pure venture fund. Its about page describes it as \"a global firm focused on technology and innovation with a two-dimensional approach: investment and consulting\", operating \"Since 2006\". The investment side runs several strategies, including funds of VC funds, growth and ClimaTech; the consulting side is led by a dedicated Managing Partner Consulting. The parent company itself is a publicly traded Spanish company: the about page states the firm is \"listed in the Madrid Stock Exchange [BME: APG]\". That listing is a fact about Axon as an issuer of its own shares, not a portfolio holding. The legal entity named in the site footer is Axon Partners Group SA.",
+    leadership: [
+      { name: "Francisco Velázquez", role: "Chairman and Managing Partner" },
+      { name: "Alfonso de León", role: "Board Member and Managing Partner" },
+      { name: "Dimitri Kallinis", role: "Board Member and Managing Partner" },
+      { name: "Alfons Oliver", role: "Managing Partner Consulting" }
+    ],
+    timeline: [
+      { year: "2006", event: "The firm's about page states it has operated \"Since 2006\"." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Blockchange Ventures",
+    sectors: ["Blockchain", "Crypto", "Web3"],
+    signatureExit: null,
+    slug: "blockchange-ventures",
+    website: "https://blockchange.vc",
+    short: "Blockchange",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "Blockchange Ventures is an early-stage venture firm investing in blockchain companies, protocols and applications. The firm states on its site that \"Our fund is designed to invest in the early rounds of the largest blockchain outcomes\" and that \"The Blockchain is a generational technology shift that will allow companies to do things never before possible\" (the firm's own claim). Its published portfolio page shows more than seventy logos including Audius, Figure, Filecoin, Flow, Mina, Near, Polkadot, Skale and Solana. The site publishes no team page, no headquarters statement, no founding year and no fund or AUM figure.",
+    leadership: [
+      { name: "Ken Seiff", role: "General Partner" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Bynd Venture Capital",
+    sectors: ["AI", "Software", "Consumer Products", "Sustainability"],
+    signatureExit: null,
+    slug: "bynd-venture-capital",
+    website: "https://www.bynd.vc",
+    short: "Bynd",
+    founded: 2010,
+    hq: "Lisbon, Portugal",
+    aum: null,
+    thesis: "Bynd Venture Capital is an Iberian pre-seed and seed investor. Its homepage states it has been investing \"Since 2010, investing in 70+ pre-seed and seed tech startups in Iberia across sectors and verticals\", names its focus as \"AI & software, consumer goods and sustainability tech\", and gives a first ticket of 250-600k EUR with total investment per company of 1.2M EUR. The site says the firm has 5 investment vehicles under management and 10+ exits, and lists offices in Lisbon, Porto, Barcelona and Madrid. The firm describes itself as \"a leading Iberian Venture Capital firm\" (the firm's own claim).",
+    leadership: [
+      { name: "Santiago Salazar", role: "Chairman & Partner" },
+      { name: "Lurdes Gramaxo", role: "Partner" },
+      { name: "Francisco Ferreira Pinto", role: "Partner" },
+      { name: "Tomás Penaguião", role: "Partner" }
+    ],
+    timeline: [
+      { year: "2010", event: "The firm's own account says it \"started as a group of business angels, in 2010, and soon evolved to a venture capital with two funds under management\", operating as Busy Angels." },
+      { year: "2019", event: "Busy Angels rebrands to Bynd Venture Capital; the firm announces the change in a post on its own Medium publication dated 23 October 2019, explaining that \"Bynd joins the words 'bind' - based on our strong relations with our stakeholders - and 'beyond'\"." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Cogitent Ventures",
+    sectors: ["Crypto", "DeFi", "NFTs", "Metaverse", "GameFi"],
+    signatureExit: null,
+    slug: "cogitent-ventures",
+    website: "https://cogitent.ventures",
+    short: "Cogitent",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "Cogitent Ventures presents itself as a \"VC supporting early stage projects in Crypto field\" and states that it promotes \"the growth of the global economy by investing intellectual and financial capital in emerging companies within any field, with special emphasis on the world of blockchain, cryptocurrencies, and disruptive technologies\" (the firm's own claims). Its stated coverage spans layer 1 blockchains, DeFi, NFTs, metaverse, GameFi and cross-chain protocols. The site says its \"core team of alumni from the UCLA Anderson School of Management\" comes from commercial and investment banking and technological innovation, but names no individual. Being crypto-native, any token positions the firm holds are not equity holdings.",
+    leadership: [],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "DEPO Ventures",
+    sectors: ["Defense", "Space", "Fintech", "Industrial Tech", "Energy"],
+    signatureExit: null,
+    slug: "depo-ventures",
+    website: "https://depoventures.com",
+    short: "DEPO",
+    founded: 2016,
+    hq: "Prague, Czech Republic",
+    aum: null,
+    thesis: "DEPO Ventures is a Czech pre-seed investor operating from Plynarni 10 in Prague 7, backing early-stage founders since 2016 through the legal entity DEPO VENTURES s.r.o. Its site places it at inception and pre-seed stage across Europe, CEE and the diaspora, in defence, space, fintech, Industry 4.0 and energy. The site states a ticket size of EUR 250K to 500K, a maximum entry valuation of about EUR 7M, 53 portfolio companies, EUR 9M of capital deployed and a 62 percent follow-on rate. The about page presents a EUR 20 million fund and calls it the largest in the CEE region. A fund size is not assets under management, so aum is null.",
+    leadership: [
+      { name: "Michal Ciffra", role: "Managing partner, co-founder" },
+      { name: "Petr Šíma", role: "Managing partner, co-founder" }
+    ],
+    timeline: [
+      { year: "2016", event: "DEPO Ventures begins backing early-stage founders, per the firm's own statement 'Backing early-stage founders since 2016'." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "EPIC Ventures",
+    sectors: ["Technology", "Ecommerce", "Consumer", "Security"],
+    signatureExit: null,
+    slug: "epic-ventures",
+    website: "https://www.epicvc.com",
+    short: "EPIC",
+    founded: 1994,
+    hq: null,
+    aum: null,
+    thesis: "EPIC Ventures is an early-stage venture firm investing primarily at Series A across the IT stack, ecommerce, consumer applications and security. Its site says the firm has \"roots in Silicon Valley\" and describes a \"mission for two decades\" of partnering with entrepreneurs at early stages and bringing capital outside the Bay Area (the firm's own claim). It invests nationally with an emphasis on companies outside Silicon Valley, and names Instructure, Mozy and Signal among its portfolio.",
+    leadership: [
+      { name: "Kent Madsen", role: "Co-founder & Managing Partner" },
+      { name: "Nick Efstratis", role: "Co-founder & Managing Partner" },
+      { name: "Jack Boren", role: "Managing Partner" },
+      { name: "Geoff Swindle", role: "Venture Partner" },
+      { name: "Ryan WestWood", role: "Venture Partner" }
+    ],
+    timeline: [
+      { year: "1994", event: "The firm is founded by Zions Bank as Wasatch Venture Fund, described by the Deseret News as \"a primarily local, Utah-centric firm when it was founded by Zions Bank in 1994\"." },
+      { year: "2007", event: "On 1 December 2007 the Deseret News reports that Wasatch Venture has changed its name to EPIC Ventures, the change presented as reflecting the firm's growth from a Utah-centric fund into a regional one." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Evolem Start",
+    sectors: [],
+    signatureExit: null,
+    slug: "evolem-start",
+    website: "https://evolem.com",
+    short: "Evolem Start",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "Evolem Start is presented in search listings as the start-up investing activity of Evolem. No first-party page could be read: every evolem.com URL, including the Evolem Start activity page and the Evolem brochure hosted on lyon-finance.org, was refused by robots exclusion. Nothing about the firm's team, founding year, headquarters, fund size, ticket sizes or portfolio is asserted here, because nothing was confirmed in a source that was actually fetched.",
+    leadership: [],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Firebolt Ventures",
+    sectors: ["AI", "Infrastructure", "Enterprise Software"],
+    signatureExit: null,
+    slug: "firebolt-ventures",
+    website: "https://www.fireboltventures.com",
+    short: "Firebolt",
+    founded: null,
+    hq: "Palo Alto, CA",
+    aum: null,
+    thesis: "Firebolt Ventures is an early-stage venture firm operating from Palo Alto and San Francisco, its site giving its location as \"Palo Alto - San Francisco\". The firm says it helps \"extraordinary founders build enduring companies\" by partnering early and backing companies through every stage, and describes sharing its \"operator network, market intelligence, and pattern recognition\" across what it states are 400+ investments (the firm's own claims). Its published focus areas are Functional Trends, Vertical AI and Infrastructure. The firm also describes an \"Extended Team\" of Firebolt LPs and post-exit founders who are leaders at technology companies, but names no individuals in that group. No fund size or assets-under-management figure is published.",
+    leadership: [
+      { name: "Cherian Mathew", role: "Partner" },
+      { name: "Vineet Buch", role: "Partner" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Georgian",
+    sectors: ["AI", "Enterprise Software", "Growth Equity"],
+    signatureExit: "Shopify (named on Georgian's own profile of Justin LaFayette as one of the Growth Fund exits he was involved in; the firm gives no date)",
+    slug: "georgian",
+    website: "https://georgian.io",
+    short: "Georgian",
+    founded: 2008,
+    hq: null,
+    aum: null,
+    thesis: "Georgian is a growth-stage technology investor whose site is headed \"Growth Equity for AI\" and which describes itself as \"Investing in tomorrow's technology leaders today. Backing disruptive AI-powered companies that shape the future.\" (the firm's own claim). Its co-founder page states that as Lead Investor Justin LaFayette \"directs Georgian's investment approach targeting market-leading AI software enterprises across the U.S., Canada, and EMEA\", and that the firm runs an internal AI Lab alongside its Growth Fund. Partner profiles describe partner involvement in \"deal selection, due diligence, post-investment support and board governance\".",
+    leadership: [
+      { name: "Justin LaFayette", role: "Co-Founder, Lead Investor, Head of Firm" },
+      { name: "Simon Chong", role: "Founder, Head of Customer Operations, Lead Investor" },
+      { name: "John Berton", role: "Co-Founder" },
+      { name: "Emily Walsh", role: "Partner" },
+      { name: "Margaret Wu", role: "Partner" }
+    ],
+    timeline: [
+      { year: "2008", event: "John Berton establishes Georgian, then named Georgian Partners, and joins its Investment Committee; Justin LaFayette's profile dates his work on the firm's strategy and growth from the same year." },
+      { year: "2016", event: "Emily Walsh joins the firm, per her profile on georgian.io." },
+      { year: "2017", event: "Margaret Wu joins the firm, per her profile on georgian.io." },
+      { year: "2018", event: "Emily Walsh is promoted to Partner, per her profile on georgian.io." },
+      { year: "2020", event: "Margaret Wu is promoted to Lead Investor, per her profile on georgian.io." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Good Growth Capital",
+    sectors: ["Life Sciences", "Data Science", "Clean Energy", "Medical Devices", "Deep Tech"],
+    signatureExit: null,
+    slug: "good-growth-capital",
+    website: "https://www.goodgrowthvc.com",
+    short: "Good Growth",
+    founded: null,
+    hq: "Charleston, SC",
+    aum: null,
+    thesis: "Good Growth Capital is an early-stage venture capital firm with offices in Charleston, South Carolina and Boston, Massachusetts. The firm describes itself, in its own words, as 'an early-stage venture capital firm known for its expertise in finding, assessing and cultivating complex science and technology' and says it has 'a majority women-owned team of entrepreneurs, financial experts, technologists, and visionaries' (both are the firm's claims, quoted from its homepage). It groups its investing into Life Sciences (medical devices, therapeutics, diagnostics), Data Sciences (analytics including AI, NLP and machine learning, SaaS and big data) and GreenTech (clean energy and efficiency, battery technology, renewables, advanced materials, chemistry and physics). Its about page states that '75%+ of our teams have a diverse founder', that '30%+ of the portfolio CEOs are women' and that '30%+ of our Portfolio CEOS are People of Color'.",
+    leadership: [
+      { name: "Maureen Stancik Boyce, PhD", role: "Managing Partner" },
+      { name: "Amy Salzhauer", role: "Managing Partner" },
+      { name: "Carolyne LaSala", role: "Managing Partner" },
+      { name: "David Mendez", role: "Managing Partner" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Moonfire Ventures",
+    sectors: ["Security", "Infrastructure", "Future of Work", "Fintech", "Gaming", "Health"],
+    signatureExit: null,
+    slug: "moonfire-ventures",
+    website: "https://www.moonfire.com",
+    short: "Moonfire",
+    founded: null,
+    hq: "London, United Kingdom",
+    aum: null,
+    thesis: "Moonfire is a European pre-seed and seed investor that describes itself as being \"powered by data and technology allowing us to hone and optimise everything we do\" (the firm's own claim, from its launch post). Its site states a focus on \"pre-seed and seed companies\" and names five areas: \"Security, Infrastructure & Tooling\", \"Work & Knowledge\", \"Capital & Finance\", \"Gaming, Community & Leisure\" and \"Health & Wellbeing\", targeting companies \"where our sectors of focus intersect with global technological disruption\". Its 2021 launch post described the first fund as \"first money in\". The team page shows engineers, a Head of AI & ML and a Site Reliability Engineer alongside the investors, consistent with the stated in-house technology approach.",
+    leadership: [
+      { name: "Mattias Ljungman", role: "Founder & Managing Partner" },
+      { name: "Mike Arpaia", role: "Managing Partner" },
+      { name: "Akshat Goenka", role: "Partner" },
+      { name: "Andrea Gurnari", role: "Partner" }
+    ],
+    timeline: [
+      { year: "2021", event: "Moonfire publicly launches on 5 June 2021 with what its own announcement calls a \"$60 million fund\" for pre-seed and seed investment in European tech; the same post says the team \"have been working away in the background over the last year\"." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Sfermion",
+    sectors: ["NFTs", "Metaverse", "Web3", "Gaming", "AI"],
+    signatureExit: null,
+    slug: "sfermion",
+    website: "https://www.sfermion.io",
+    short: "Sfermion",
+    founded: 2019,
+    hq: "Chicago, IL",
+    aum: null,
+    thesis: "Sfermion describes itself as \"An investment firm focused on the metaverse\" and a \"multi-strategy investment firm focused on the immersive internet\" (the firm's own claim). Its about page states: \"We invest in the founders, companies, and assets that are accelerating the emergence of the metaverse\", with a stated focus on organisations building products using web3, artificial intelligence, augmented reality and virtual reality. The firm's 2021 fund announcement boilerplate describes it as \"an investment firm focused on the non-fungible token (NFT) ecosystem\" whose goal is \"to accelerate the emergence of the metaverse by investing in the founders, companies, and entities creating the infrastructure and environments that will form the foundations of our digital future.\" Because the firm is crypto-native, its NFT and token positions are not equity holdings.",
+    leadership: [
+      { name: "Andrew Steinwold", role: "Managing Partner" },
+      { name: "Dan Patterson", role: "Managing Partner" }
+    ],
+    timeline: [
+      { year: "2019", event: "Sfermion is founded, per the firm's own \"About Sfermion\" boilerplate: \"Founded in 2019, Sfermion is an investment firm focused on the non-fungible token (NFT) ecosystem.\"" },
+      { year: "2021", event: "Sfermion announces a $100M second fund on 1 November 2021, backed by investors named in the release including Alan Howard, Chris Dixon, Marc Andreessen, Cameron and Tyler Winklevoss, Matthew Roszak, Digital Currency Group, CMT Digital and Animoca Brands." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Shilling VC",
+    sectors: [],
+    signatureExit: null,
+    slug: "shilling-vc",
+    website: "https://shilling.vc",
+    short: "Shilling",
+    founded: 2011,
+    hq: null,
+    aum: null,
+    thesis: "Shilling is a Portuguese early-stage venture firm. Its homepage describes it as \"early-stage VC for entrepreneurs who want to go far and scale fast\" and as \"a leading €52M early-stage VC\" (the firm's own claim), and states \"Our typical investment runs between €100K and €1M.\" The team page states \"Shilling was founded in 2011 and this is the crew steering the VC forward. We have been investing together for over 10 years, combining real-world, practical expertise of founders with fundraising and experience in scaling and exits.\" The firm operates a Founders Fund model with 35+ LP founders. No sector focus is published on the pages opened.",
+    leadership: [
+      { name: "Ricardo Jacinto", role: "Managing Partner" },
+      { name: "Pedro Ramalho Carlos", role: "General Partner" },
+      { name: "Hugo Gonçalves Pereira", role: "Founder, Venture Partner & IC Member" },
+      { name: "Miguel Santo Amaro", role: "Venture Partner & IC Member" },
+      { name: "Maria Villas-Boas", role: "Operating Partner" }
+    ],
+    timeline: [
+      { year: "2011", event: "The firm's team page states \"Shilling was founded in 2011 and this is the crew steering the VC forward.\"" }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Skyland Ventures",
+    sectors: ["AI", "Media", "Travel", "Consumer Internet", "Web3"],
+    signatureExit: null,
+    slug: "skyland-ventures",
+    website: "https://www.skyland.vc",
+    short: "Skyland Ventures",
+    founded: 2012,
+    hq: "Shibuya, Tokyo, Japan",
+    aum: null,
+    thesis: "Skyland Ventures (スカイランドベンチャーズ株式会社) is a Tokyo venture capital firm founded in 2012 and led by representative Yoshihiko Kinoshita (木下 慶彦). Its own site places it at the pre-seed, seed and early stage (プレシード・シード・アーリーステージ) and states emphasis on generative AI, entertainment and inbound tourism. The site says the firm has invested in over 200 startups. No fund size or assets-under-management figure was published on the pages read, so aum is null.",
+    leadership: [
+      { name: "Yoshihiko Kinoshita", role: "GENERAL PARTNER" },
+      { name: "Hiroaki Miyoshi", role: "GENERAL PARTNER" },
+      { name: "Xiaohang Yuan", role: "VENTURE PARTNER" },
+      { name: "Hiroki Yamada", role: "VENTURE PARTNER" },
+      { name: "Shun Sakurai", role: "DX PARTNER" }
+    ],
+    timeline: [
+      { year: "2012", event: "Skyland Ventures is founded in Tokyo; Yoshihiko Kinoshita is listed as representative on the firm's own site." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Superhero Capital",
+    sectors: ["Software"],
+    signatureExit: null,
+    slug: "superhero-capital",
+    website: "https://superherocapital.com",
+    short: "Superhero",
+    founded: 2015,
+    hq: "Helsinki, Finland",
+    aum: null,
+    thesis: "Superhero Capital is an early-stage investor in \"software-driven startups in the New Nordics (Finland and the Baltics)\", investing occasionally outside that region. Its site says it is currently investing from its \"2024 fund\" with initial tickets of \"50K - 1M\" euros, and reports 60 startups in the portfolio, 37 of them with follow-on funding, and 218 founders backed. The firm's stated posture toward founders is \"We will not run your business for you but we do understand what it is to be a Founder. No BS, just focus on building a business.\" (the firm's own claim). Its transparency disclosure describes it as a Finnish limited liability company \"wholly owned and managed by the partners of the firm\", registered with FIN-FSA as an alternative investment fund manager and as a EuVECA manager.",
+    leadership: [
+      { name: "Juha Ruohonen", role: "General Partner, Finland" },
+      { name: "Jakob Storå", role: "General Partner, Finland" },
+      { name: "Gytenis Galkis", role: "Partner, Lithuania" },
+      { name: "Audrius Milukas", role: "Partner, Lithuania" },
+      { name: "Ivo Remmelg", role: "Venture Partner, Estonia" }
+    ],
+    timeline: [
+      { year: "2015", event: "Superhero Capital Oy is founded, per the firm's transparency disclosure: \"Superhero Capital Oy (\"Superhero\") was founded in 2015.\" Its first fund, SVF2015, holds EUR 20,000,000 in committed capital." },
+      { year: "2020", event: "Funds SVF2020 and SVF2020F are raised, with EUR 38,450,000 and EUR 3,500,000 in committed capital respectively, per the transparency disclosure." },
+      { year: "2022", event: "Fund SOF2022 is raised with EUR 8,000,000 in committed capital, per the transparency disclosure." },
+      { year: "2024", event: "Funds SVF2024 and SVF2024F are raised, with EUR 39,000,000 and EUR 3,750,000 in committed capital respectively, and the firm opens an office in Vilnius, Lithuania, per the transparency disclosure." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "VentureFriends",
+    sectors: [],
+    signatureExit: null,
+    slug: "venturefriends",
+    website: "https://www.venturefriends.vc",
+    short: "VentureFriends",
+    founded: null,
+    hq: null,
+    aum: "€300m+ (labelled \"AUM\" in the statistics block on venturefriends.vc homepage, checked 8 September 2026)",
+    thesis: "VentureFriends is an early-stage venture firm investing at \"Pre Seed & Seed\" with first tickets of \"€500k - €3m\" and a stated initial to follow-on ratio of \"1:2\". Its geographic focus is \"Europe & MENA\". The homepage statistics block reports \"4 Funds raised\", latest fund raised 2025, and \"€300m+\" AUM, and the firm reports \"80+ investments\" across \"200+ founders\" in \"20+ countries\". The site says the firm backs \"founders with the ambition to build category defining companies\" (the firm's own claim) and that \"we keep things simple, move quickly, and back founders who do the same.\" No sector restriction is published.",
+    leadership: [
+      { name: "Apostolos Apostolakis", role: "Founding Partner" },
+      { name: "George Dimopoulos", role: "Founding Partner" },
+      { name: "Pavlos Pavlakis", role: "Partner" },
+      { name: "Lily Joo", role: "Venture Partner" }
+    ],
+    timeline: [
+      { year: "2025", event: "The homepage statistics block records \"4 Funds raised\" with \"Latest fund raised 2025\"." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "VMG Partners",
+    sectors: ["Consumer Products", "Consumer", "Technology"],
+    signatureExit: null,
+    slug: "vmg-partners",
+    website: "https://www.vmgpartners.com",
+    short: "VMG",
+    founded: 2005,
+    hq: "San Francisco, CA",
+    aum: null,
+    thesis: "VMG Partners is a San Francisco investment firm founded in 2005. Its own January 2026 announcement describes the firm as running two core investment funds, a consumer fund and a technology fund, rather than a single blended strategy; the firm's team page groups its people under Consumer, Technology, Ecosystem and Firm Operations. The consumer strategy backs consumer brands and the technology strategy is led separately, with Mike Mauze and Robin Tsai co-leading the firm as Managing Partners. No further fund families were confirmed on first-party pages, so any additional growth or catalyst vehicles are recorded as unverified rather than named.",
+    leadership: [
+      { name: "Mike Mauze", role: "Co-Founder and Managing Partner" },
+      { name: "Robin Tsai", role: "Managing Partner" },
+      { name: "McConnell Smith", role: "General Partner, Consumer" },
+      { name: "Angad Hira", role: "Partner, Chief Financial Officer and Chief Operating Officer" },
+      { name: "Carle Stenmark", role: "General Partner" },
+      { name: "Wayne Wu", role: "General Partner" },
+      { name: "Indy Guha", role: "General Partner" }
+    ],
+    timeline: [
+      { year: "2005", event: "VMG Partners is founded, per the firm's January 2026 announcement which states the firm was 'founded in 2005'." },
+      { year: "2026", event: "On 20 January 2026 the firm announces that Robin Tsai is elevated to Managing Partner to co-lead alongside co-founder Mike Mauze, that McConnell Smith is promoted to General Partner, Consumer, and that Angad Hira is promoted to Partner, Chief Financial Officer and Chief Operating Officer." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Western Technology Investment",
+    sectors: ["Venture Debt", "Venture Lending", "Technology", "Life Sciences"],
+    signatureExit: null,
+    slug: "western-technology-investment",
+    website: "https://www.westerntech.com",
+    short: "WTI",
+    founded: 1980,
+    hq: "Portola Valley, CA",
+    aum: null,
+    thesis: "Western Technology Investment is a venture DEBT lender, not an equity venture capital firm. It makes secured loans to venture-capital-backed companies rather than taking equity positions as its primary business, and says of itself: 'Our firm pioneered the concept of venture debt to fill a significant capital gap in the market' and that this is 'a flexible and founder-friendly form of capital that supports their growth with less dilution' (the firm's own claims, quoted from its homepage). The homepage states the firm was founded in 1980, has financed 'more than 1,500 companies', has committed '$7B+' and is investing from its 11th institutional fund, supported by 'institutional LPs including endowments, non-profits, academic institutions, and select family offices'. Its lending funds have historically been business development companies named Venture Lending & Leasing, with later vehicles named WTI Fund; two WTI Equity Opportunity Fund partnerships also exist, so equity exposure is a secondary activity alongside the loan business.",
+    leadership: [
+      { name: "David Wanek", role: "Investment Partner, CEO" },
+      { name: "Maurice Werdegar", role: "Investment Partner, Chairman" },
+      { name: "Jared Thear", role: "CFO & CCO" }
+    ],
+    timeline: [
+      { year: "1980", event: "Western Technology Investment is founded; the firm's homepage states it was founded in 1980 and pioneered venture debt." },
+      { year: "2018", event: "The Venture Lending & Leasing funds state in an SEC filing that they 'have originated $6 billion in venture loan commitments through September 30, 2018'." },
+      { year: "2019", event: "Venture Lending & Leasing VII, VIII and IX, Inc., six Venture Lending & Leasing LLCs, WTI Equity Opportunity Fund I, LP and WTI Equity Opportunity Fund II, LP apply to the SEC together with their adviser Westech Investment Advisors, LLC." }
+    ],
+    holdings: []
   }
 ];
