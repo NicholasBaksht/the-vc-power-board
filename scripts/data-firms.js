@@ -17860,5 +17860,486 @@ holdings: []
       { year: "2026", event: "Portfolio company Manycore Technology, co-founded by Xiaohuang Huang, lists on the Hong Kong Stock Exchange on 17 April 2026, per Yunqi's own about page." }
     ],
     holdings: []
+  },
+
+  /* ---- Firm batch 3, added 7 September 2026: 20 firms. Their partner records
+     are in data-partners-1.js (not shard 6 - see that file's banner) and
+     their field-level provenance is in data-evidence.js, added in the same
+     batch. Checked against all 640 pre-existing firms for slug, name,
+     historical-name and parent-brand collisions; none found. Z47 is the
+     former Matrix Partners India, renamed 1 July 2024; the repo already
+     carries the US and China arms as separate rows. ---- */
+  {
+    rank: null,
+    name: "42CAP",
+    sectors: ["B2B Software", "Enterprise Software", "AI", "Data"],
+    signatureExit: null,
+    slug: "42cap",
+    website: "https://www.42cap.com",
+    short: "42CAP",
+    founded: null,
+    hq: "Munich, Germany (Seitzstr. 14, 80538 München, per the legal notice)",
+    aum: null,
+    thesis: "42CAP is a Munich seed investor that states it invests \"€ 0.5 to 3m in seed-stage tech- and data-driven B2B software companies across Europe\" and that \"We focus on companies originating out of Europe with global ambition.\" Its investment thesis page describes targeting both product-market-fit bets, which it calls post-product but pre- or early-revenue, and scaling bets with initial revenues, and sets out criteria including companies with the potential to reach a valuation above €500m within seven to eight years and addressable markets above €1b in recurring revenues at high gross margins. The site says the firm is on its fourth fund generation and describes its partners as founders turned investors who built European software companies during the first internet wave. The thesis page notes support from InnovFin Equity with European Union backing through Horizon 2020 and EFSI.",
+    leadership: [
+      { name: "Thomas Wilke", role: "General Partner", profileSlug: "thomas-wilke" },
+      { name: "Alex Meyer", role: "General Partner", profileSlug: "alex-meyer" },
+      { name: "Julian von Fischer", role: "General Partner", profileSlug: "julian-von-fischer" },
+      { name: "Moritz Zimmermann", role: "General Partner", profileSlug: "moritz-zimmermann" }
+    ],
+    timeline: [
+      { year: "2025", event: "Law firm YPOG announces on 17 April 2025 that it advised 42CAP on the structuring of its fourth fund generation. No fund name or size is disclosed in the announcement." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "City Light Capital",
+    sectors: ["Education", "Climate", "Healthcare"],
+    signatureExit: null,
+    slug: "city-light-capital",
+    website: "https://citylight.vc",
+    short: "City Light",
+    founded: null,
+    hq: "New York, NY",
+    aum: null,
+    thesis: "City Light Capital is an impact-oriented venture firm investing at seed stage and beyond in education, climate and care. Its site states, as the firm's own claim: \"We only invest in companies where there is a direct relationship between financial outcomes and measurable social impact. For City Light companies, the primary impact comes from their core products or solutions.\" The firm gives its address as 150 East 52nd Street, 24th Floor, New York, NY 10022. Its current site brands the firm as \"CityLight\" at citylight.vc, with the older citylightcap.com domain redirecting there.",
+    leadership: [
+      { name: "Josh Cohen", role: "Partner", profileSlug: "josh-cohen" },
+      { name: "Jeff Rinehart", role: "Partner", profileSlug: "jeff-rinehart" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Flashpoint Venture Capital",
+    sectors: ["Sector-Agnostic", "Technology"],
+    signatureExit: "Chess.com (acquired by General Atlantic)",
+    slug: "flashpoint-venture-capital",
+    website: "https://flashpoint.capital",
+    short: "Flashpoint",
+    founded: null,
+    hq: "London, United Kingdom",
+    aum: "~$670M (assets under management across the firm's seven funds, stated on a team profile at flashpoint.capital, checked 2026; the firm runs several separate strategies and their fund sizes should not be blended)",
+    thesis: "Flashpoint is a London-headquartered investment firm running several distinct strategies rather than a single fund line. Its own team page names four: Venture Growth, Growth Debt, Direct Secondary and a Co-invest Community. The fund entities named on that page include Flashpoint Venture Growth Fund III L.P., Flashpoint Venture Equity II L.P., Flashpoint Venture Debt Fund I L.P., Flashpoint Growth Debt Fund (Cayman) II L.P. and Flashpoint Secondary Fund I L.P. These are separate vehicles and their sizes should not be blended. The firm has offices in London, New York, Tel Aviv and Riga, with its London address given as 53 New Cavendish Street. Its stated focus is founders from Emerging Europe and Israel; in the VC III close announcement co-founder Alexander Konoplyasty framed the thesis around expat founders from Eastern Europe and Israel being more capital-efficient than the average US startup, which is the firm's own claim.",
+    leadership: [
+      { name: "Michael Szalontay", role: "Co-founder & Managing Partner", profileSlug: "michael-szalontay" },
+      { name: "Alex Konoplyasty", role: "Co-founder & Managing Partner", profileSlug: "alex-konoplyasty" },
+      { name: "Denis Mosolov", role: "Managing Partner", profileSlug: "denis-mosolov" },
+      { name: "Anton Fedorov", role: "Partner", profileSlug: "anton-fedorov" },
+      { name: "Lukas Harustiak", role: "Partner", profileSlug: "lukas-harustiak" },
+      { name: "Igor Bilous", role: "Partner", profileSlug: "igor-bilous" },
+      { name: "Stephen Polakoff", role: "Partner", profileSlug: "stephen-polakoff" },
+      { name: "Maria Savelieva", role: "Partner", profileSlug: "maria-savelieva" },
+      { name: "Erik Allebest", role: "Venture Partner", profileSlug: "erik-allebest" }
+    ],
+    timeline: [
+      { year: "2021", event: "Denis Mosolov joins Flashpoint as Managing Partner of the Growth Debt Fund, per his firm profile." },
+      { year: "2021", event: "Igor Bilous joins Flashpoint, per his firm profile, leading fundraising and investor relations." },
+      { year: "2022", event: "Flashpoint announces the US$105 million close of its VC III fund on 4 August 2022, having secured Szechenyi Funds as its first institutional limited partner with a US$20 million commitment." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Flyer One Ventures",
+    sectors: ["Software"],
+    signatureExit: "VOCHI (acquired by Pinterest)",
+    slug: "flyer-one-ventures",
+    website: "https://flyerone.vc",
+    short: "F1V",
+    founded: 2018,
+    hq: null,
+    aum: null,
+    thesis: "Flyer One Ventures, which uses the short form F1V, is an early-stage venture fund investing in software companies built by founders from Ukraine and the wider CEE region. Its own FAQ states that F1V invests in CEE and Ukrainian founders who build global software companies, that the majority of the fund's portfolio startups are at the seed stage, and that it does not invest in hardware, crypto, web3, game development studios, capital-intensive businesses or deep tech. The stated average cheque is 500K euro within a range of 350K to 1.5M euro, and the firm says 55% of its companies have reached Series A. Alongside the investment team the firm publishes an in-house support team it describes as 15+ digital marketing, product, financial, legal, PR, branding and hiring professionals. In 2025 the firm announced a 50M euro Fund V backed by the IFC and the EBRD, saying it had invested nearly 45M dollars to date across more than 90 startups.",
+    leadership: [
+      { name: "Vital Laptenok", role: "General Partner", profileSlug: "vital-laptenok" },
+      { name: "Oleksii Yermolenko", role: "Co-founder and Partner", profileSlug: "oleksii-yermolenko" },
+      { name: "Elena Mazhuha", role: "Partner", profileSlug: "elena-mazhuha" },
+      { name: "Ksenia Novikova", role: "Partner", profileSlug: "ksenia-novikova" }
+    ],
+    timeline: [
+      { year: "2018", event: "Flyer One Ventures is founded, per the firm's own Fund V announcement." },
+      { year: "2018", event: "Co-founder Vital Laptenok, who had previously founded the technology company Genesis, is among the firm's founders." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Graph Ventures",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "graph-ventures",
+    website: "https://graph.vc",
+    short: "Graph",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "Graph Ventures is an early-stage venture fund. Its site states, as the firm's own claims, \"We are an early-stage fund for founders, by founders\" and \"We invest in companies when they are starting out.\" It presents its team under the heading \"We are active founders and operators.\" and says of its most recent fund: \"In our latest fund, 70% of our portfolio had at least 1 woman or BIPOC founder. More than a third of our investments were outside of the US.\" The site publishes no titles for its team, no office address and no fund size. Its footer reads \"(c)2024 Graph Ventures\".",
+    leadership: [
+      { name: "Alexandra Brown", role: "Title not published", profileSlug: "alexandra-brown" },
+      { name: "Brian Truong", role: "Title not published", profileSlug: "brian-truong" },
+      { name: "Julio Vasconcellos", role: "Title not published", profileSlug: "julio-vasconcellos" },
+      { name: "Matt Wyndowe", role: "Title not published", profileSlug: "matt-wyndowe" },
+      { name: "Omar Siddiqui", role: "Title not published", profileSlug: "omar-siddiqui" },
+      { name: "Razmig Hovaghimian", role: "Title not published", profileSlug: "razmig-hovaghimian" },
+      { name: "Sebastien de Halleux", role: "Title not published", profileSlug: "sebastien-de-halleux" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "HEARTFELT",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "heartfelt-capital",
+    website: "https://www.heartfelt.vc",
+    short: "HEARTFELT",
+    founded: null,
+    hq: "Berlin, Germany (Zimmerstraße 50, 10888 Berlin, per the legal notice)",
+    aum: null,
+    thesis: "HEARTFELT is a Berlin first-cheque venture investor. Its homepage describes it as \"Europe's First Cheque Fund\" and states \"We are the first investors for exceptional founders building transformative companies across Europe and the US.\" The page gives an initial ticket of \"€100-400k\" at seed and pre-Series A and says the firm has \"9 full-time investment professionals\", though it names none of them. The homepage lists N26, DeepL, Colossyan, Charles, Greenlyte, getquin and Qualifyze among portfolio companies. No sector focus is declared, so the sectors list is left empty rather than back-fitted from those portfolio names. The management company is Heartfelt Capital Management GmbH and the legal notice names the Federal Financial Supervisory Authority (BaFin) as the relevant supervisory authority. All descriptive statements above are the firm's own claims.",
+    leadership: [
+      { name: "Dr. Henric Hungerhoff", role: "Authorised representative (managing director) of Heartfelt Capital Management GmbH", profileSlug: "dr-henric-hungerhoff" },
+      { name: "Jörg Rheinboldt", role: "Authorised representative (managing director) of Heartfelt Capital Management GmbH", profileSlug: "jorg-rheinboldt" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "ICONIQ Capital",
+    sectors: ["Technology", "Enterprise Software", "Real Estate", "Infrastructure", "Sustainability"],
+    signatureExit: "Snowflake (IPO)",
+    slug: "iconiq-capital",
+    website: "https://www.iconiq.com",
+    short: "ICONIQ",
+    founded: null,
+    hq: null,
+    aum: "Over $100B (the homepage states \"With over $100B assets under management\"; the firm's own footer defines that as net asset value plus uncalled capital commitments across all ICONIQ accounts and funds, approximate, unaudited and subject to change, with no as-of date given)",
+    thesis: "ICONIQ is not a venture partnership. It is a multi-strategy investment firm that describes itself, in its own words, as \"a global investment firm catalyzing opportunity through extraordinary community\" (the firm's claim, quoted from its homepage). Its homepage organises the business into four lines: Investment Management (covering investment portfolios and family advisory), Venture & Growth, Impact, and Real Assets (accommodations and digital infrastructure). The venture arm is a distinct brand, ICONIQ Growth, which the firm says was launched in 2013 to invest in next-generation technology leaders and which partners with companies \"from the early inflection point of product-market fit to IPO and beyond\". Offices named on the homepage are San Francisco, London, Palo Alto, Singapore and New York. The firm publishes no team, people or leadership page, so its investment roster is not enumerable from first-party sources.",
+    leadership: [
+      { name: "Divesh Makan", role: "Partner, ICONIQ Capital", profileSlug: "divesh-makan" },
+      { name: "Alex Gorsky", role: "General Partner, ICONIQ Growth", profileSlug: "alex-gorsky" }
+    ],
+    timeline: [
+      { year: "2013", event: "ICONIQ Growth is launched to invest in next-generation technology leaders, per the firm's July 2024 Fund VII announcement." },
+      { year: "2024", event: "Alex Gorsky, former Chairman and CEO of Johnson & Johnson, is announced as General Partner, ICONIQ Growth on 8 May 2024." },
+      { year: "2024", event: "On 22 July 2024 ICONIQ announces its seventh flagship fund with $5.75 billion in committed capital, and states that as of 28 June 2024 the strategy had more than 140 business partnerships and 27 IPOs including direct listings and SPACs." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "InterVest capital partners",
+    sectors: ["Real Estate", "Financial Technology"],
+    signatureExit: null,
+    slug: "intervest",
+    website: "https://intervest.com",
+    short: "InterVest",
+    founded: null,
+    hq: "New York, NY",
+    aum: null,
+    thesis: "InterVest capital partners describes itself on its own site as \"an alternative investment manager focused on specialty finance and real estate\" (the firm's own claim). It is not a venture capital firm on the evidence of its own pages. The operating entity is InterVest capital partners LLC, an SEC-registered investment adviser, with a Luxembourg entity InterVest Capital Partners S.à.r.l; the firm publishes offices in New York, London and Luxembourg. Its people page organises staff by office and uses Executive Chairman, Chief Executive Officer, Chief Investment Officer, Chief Operating Officer and Managing Director rather than Partner titles.",
+    leadership: [
+      { name: "Robert Toan", role: "Executive Chairman", profileSlug: "robert-toan" },
+      { name: "Michael Gontar", role: "Chief Executive Officer", profileSlug: "michael-gontar" },
+      { name: "Steven Tenenbayev", role: "Chief Investment Officer", profileSlug: "steven-tenenbayev" },
+      { name: "David Tipple", role: "Chief Operating Officer", profileSlug: "david-tipple" },
+      { name: "Rachid Ouaïch", role: "Managing Director, Head of Europe", profileSlug: "rachid-ouaich" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "LAUNCHub Ventures",
+    sectors: ["AI Security", "AI Infrastructure", "Health", "B2B Software"],
+    signatureExit: null,
+    slug: "launchub-ventures",
+    website: "https://launchub.com",
+    short: "LAUNCHub",
+    founded: null,
+    hq: "Sofia, Bulgaria",
+    aum: null,
+    thesis: "LAUNCHub Ventures is a seed-stage venture capital fund investing in Central and Eastern Europe, described on its own site as a seed-stage VC fund for Central and Eastern Europe with 90+ companies backed and an initial ticket of up to 3M euro. In a May 2026 post on its own Medium publication the firm set out its focus areas as AI security, AI-native infrastructure, health and longevity diagnostics, B2B software for the European mid-market, and founders with domain expertise in regulated or under-digitalised European industries, and described first cheques of 300K to 3M euro with board engagement. The firm's Fund II closed at 74M euro in December 2021. The website's team page is rendered client-side and its roster could not be read, so the leadership list below is a floor rather than a complete roster.",
+    leadership: [
+      { name: "Vedran Blagus", role: "Associate Partner", profileSlug: "vedran-blagus" }
+    ],
+    timeline: [
+      { year: "2021", event: "LAUNCHub Ventures announces the oversubscribed final closing of its 74M euro Fund II for startups in Southeast Europe, reported 10 December 2021." },
+      { year: "2026", event: "Vedran Blagus joins LAUNCHub Ventures as Associate Partner, based in Zagreb and leading the Western Balkans, announced by the firm on 26 May 2026." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Lighter Capital",
+    sectors: ["SaaS", "Technology"],
+    signatureExit: null,
+    slug: "lighter-capital",
+    website: "https://www.lightercapital.com",
+    short: "Lighter Capital",
+    founded: 2010,
+    hq: null,
+    aum: null,
+    thesis: "Lighter Capital is a revenue-based lender, not an equity investor. It provides non-dilutive debt financing and takes no ownership. Its homepage states: \"Startup capital doesn't have to cost you equity. Lighter Capital can provide up to $10M of growth capital to qualified tech startups, on founder-friendly terms\" and \"Get up to $10M in founder-friendly financing that fits your business. No equity, board seats, or personal guarantees.\" Its About page describes providing \"non-dilutive financing to help grow their companies without giving up equity, board seats or personal guarantees\" (the firm's claims, quoted from its site). Because it takes no equity and no board seats, the venture-partnership shape does not apply: it has no investment partners, no portfolio equity stakes and no exits. Its 2012 announcement says the company pioneered revenue-based financing. It lends in the United States, Canada and Australia, and its funding comes from credit facilities: in August 2023 it announced $130 million in capital commitments for a credit facility backed by Apollo Global Management, i80 Group, Invest Victoria and iPartners, financing deals from $50,000 to $4 million.",
+    leadership: [
+      { name: "Melissa Widner", role: "CEO", profileSlug: "melissa-widner" }
+    ],
+    timeline: [
+      { year: "2010", event: "Lighter Capital is established, per its About page and its own press-release boilerplate." },
+      { year: "2012", event: "On 19 July 2012 the company announces BJ Lackland as CEO, with founder Andy Sack moving to Executive Chairman." },
+      { year: "2023", event: "On 29 August 2023 the company announces $130 million in capital commitments for a credit facility backed by Apollo Global Management, i80 Group, Invest Victoria and iPartners, for deals of $50,000 to $4 million." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Omega Funds",
+    sectors: ["Life Sciences", "Biotech", "Therapeutics", "Healthcare", "Pharmaceuticals"],
+    signatureExit: null,
+    slug: "omega-funds",
+    website: "https://omegafunds.com",
+    short: "Omega Funds",
+    founded: 2004,
+    hq: "Boston, MA",
+    aum: null,
+    thesis: "Omega Funds is a life sciences venture firm. Its own Purpose page states: \"Founded in 2004, Omega Funds is a global leader in healthcare investing\" and describes its work as \"Creating and investing in life sciences companies that target our world's most urgent medical needs\" across \"oncology, immunology, rare diseases, precision medicine and others\" (the firm's claims, quoted from its site). It both creates and invests in companies. It operates from 888 Boylston Street, Suite 1111, Boston, MA 02199 and Place du Molard 7, 1204 Geneva, Switzerland. Its December 2021 Fund VII announcement stated the firm had raised close to $2 billion since inception and that its portfolio companies had brought 46 products to market with 39 public listings and 35 M&A exits.",
+    leadership: [
+      { name: "Otello Stampacchia", role: "Founder and Managing Director", profileSlug: "otello-stampacchia" },
+      { name: "Francesco Draetta", role: "Partner", profileSlug: "francesco-draetta" },
+      { name: "Eric Cooper", role: "Title not published", profileSlug: "eric-cooper" },
+      { name: "Deirdre Cunnane", role: "Title not published", profileSlug: "deirdre-cunnane" },
+      { name: "Claudio Nessi", role: "Title not published", profileSlug: "claudio-nessi" }
+    ],
+    timeline: [
+      { year: "2004", event: "Omega Funds is founded, per the firm's Purpose page: \"Founded in 2004, Omega Funds is a global leader in healthcare investing\"." },
+      { year: "2021", event: "On 17 December 2021 Omega Funds announces the close of an oversubscribed $650 million Fund VII, above a $500 million target, and states it has raised close to $2 billion since inception." },
+      { year: "2021", event: "Francesco Draetta is promoted to Partner and Mike Powell joins as Executive Partner, announced alongside the Fund VII close on 17 December 2021." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Pitchdrive",
+    sectors: ["AI"],
+    signatureExit: "Henchman (acquired by LexisNexis)",
+    slug: "pitchdrive",
+    website: "https://www.pitchdrive.com",
+    short: "Pitchdrive",
+    founded: 2020,
+    hq: "Antwerp, Belgium",
+    aum: null,
+    thesis: "Pitchdrive is an operator-led pre-seed and seed venture fund, not a syndicate or a self-service platform: it raises and deploys its own fund vehicles and has now run four of them, Funds I to IV. Its homepage describes it as an operator-led pre-seed and seed VC backing Europe's boldest founders, states a first-cheque range of 250K to 2M euro from day one, and claims more than 70 startups backed globally and top-decile performance globally for Funds I to III; the performance line is the firm's own claim. The model is built around former founders and operators who invest and then work alongside portfolio companies, which is why the firm publishes a separate operator bench beside its partners. Fund IV closed oversubscribed at 60M euro in June 2026 with an explicit focus on AI-native founders in Europe. The firm is headquartered in Antwerp and lists further locations in Ghent, Amsterdam, Berlin, Barcelona, London and New York.",
+    leadership: [
+      { name: "Boris Bogaert", role: "Co-founder & Managing Partner", profileSlug: "boris-bogaert" },
+      { name: "Koen Christiaens", role: "Co-founder & Managing Partner", profileSlug: "koen-christiaens" },
+      { name: "Wim Derkinderen", role: "Co-founder & Managing Partner", profileSlug: "wim-derkinderen" },
+      { name: "Jonas Dhaenens", role: "Co-founder & Board Member", profileSlug: "jonas-dhaenens" },
+      { name: "Lorenz Bogaert", role: "Co-founder & Board Member", profileSlug: "lorenz-bogaert" },
+      { name: "Emily Kegels", role: "Partner", profileSlug: "emily-kegels" },
+      { name: "Alexine Capiau", role: "Partner", profileSlug: "alexine-capiau" }
+    ],
+    timeline: [
+      { year: "2020", event: "Pitchdrive is founded, per its own Fund IV announcement." },
+      { year: "2026", event: "Pitchdrive closes an oversubscribed 60M euro Fund IV to back Europe's AI-native founders, announced 9 June 2026." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Playfair",
+    sectors: ["Sector-Agnostic", "Pre-Seed"],
+    signatureExit: null,
+    slug: "playfair-capital",
+    website: "https://playfair.vc",
+    short: "Playfair",
+    founded: 2013,
+    hq: "London, England",
+    aum: null,
+    thesis: "Playfair is a London pre-seed venture firm investing, in its own words, \"exclusively in UK & Europe\" and describing itself as sector agnostic. Its homepage states a \"£57m Fund 3\", a cheque range of \"£100k to £1.5m\", roughly six investments a year, about 60 percent of the fund reserved for follow-on support through Series A and up to £5m of capacity per company. The firm's own performance claims on that page include \"pre-seed to Series A graduation rate is 78% - ~4x the industry average\" and \"Since 2013, our founders have raised >$3bn of follow-on capital\"; both are the firm's claims and are not independently verified here. The team page footer states \"Playfair Capital is a Registered Trademark of Playfair Capital LLP\" and gives the address 8 Warner Yard, London, EC1R 5EY, England.",
+    leadership: [
+      { name: "Federico Pirzio-Biroli", role: "Founding Partner & Chairman", profileSlug: "federico-pirzio-biroli" },
+      { name: "Chris Smith", role: "Managing Partner", profileSlug: "chris-smith" },
+      { name: "Henrik Wetter Sanchez", role: "General Partner", profileSlug: "henrik-wetter-sanchez" },
+      { name: "Simon Blakey", role: "Venture Partner", profileSlug: "simon-blakey" }
+    ],
+    timeline: [
+      { year: "2013", event: "PLAYFAIR CAPITAL LLP is incorporated on 21 February 2013 at 8 Warner Yard, Clerkenwell, London, per Companies House record OC382714. The firm's homepage separately dates its activity from 2013." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "s16vc",
+    sectors: [],
+    signatureExit: null,
+    slug: "s16vc",
+    website: "https://www.s16vc.com",
+    short: "s16vc",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "s16vc presents itself as an early-stage, founders-for-founders venture fund backed by a large community of founders and operators. Its site is rendered from Notion and the pages fetched returned navigation and metadata rather than body text, so no sentence of the firm's own prose could be quoted and no team page could be reached. Sectors, stage detail, fund size, location and founding year are therefore left null rather than inferred.",
+    leadership: [],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "SevenX Ventures",
+    sectors: ["Crypto", "Blockchain", "Infrastructure", "DeFi", "AI", "Gaming", "Media"],
+    signatureExit: null,
+    slug: "sevenx-ventures",
+    website: "https://www.7xvc.com",
+    short: "SevenX",
+    founded: 2020,
+    hq: null,
+    aum: null,
+    thesis: "SevenX Ventures is a crypto venture firm that describes itself on its site as \"A research-driven crypto venture\" (the firm's own claim). The site gives 2020 as the founding year and names infrastructure, DeFi, decentralized AI, gaming and social/content as its areas. The team is published under single-word first names and handles rather than full legal names, and the senior tier is Founding Partner and Managing Partner.",
+    leadership: [
+      { name: "Jon", role: "Founding Partner", profileSlug: "jon-sevenx" },
+      { name: "Eraser", role: "Founding Partner", profileSlug: "eraser-sevenx" },
+      { name: "FC", role: "Founding Partner", profileSlug: "fc-sevenx" },
+      { name: "Louis", role: "Managing Partner", profileSlug: "louis-sevenx" }
+    ],
+    timeline: [
+      { year: "2020", event: "SevenX Ventures' own site gives 2020 as the year the firm was founded." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Social Starts",
+    sectors: ["SaaS", "Deep Tech", "Life Sciences"],
+    signatureExit: null,
+    slug: "social-starts",
+    website: "https://www.socialstarts.com",
+    short: "Social Starts",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "Social Starts is an early-stage venture partnership. Its team page states: \"We bring long experience of tech revolutions, deep science, SAAS platforms, and research to our intense early-stage investment approach\" (the firm's claim, quoted from its site). Its own 21 March 2018 press release describes it as \"a $60M+ venture capital partnership and one of the most active moment-of-investment investors in the US\". The same release announced Joyance Partners, described as \"a new $20M venture capital fund focused on emerging technologies that can help individuals feel happier, healthier, calmer, more confident, less anxious or subject to pain\", and said the two would \"cooperate on early-stage investments regularly, with Joyance expanding the Social Starts moment-of-inception startup discovery methodology via access to more than 2,000 new company evaluations each year\". Joyance shares senior people with Social Starts and is the more recently active of the two brands. Cities named on the team page include San Francisco, New York, Los Angeles, Tokyo, London, Austin, Boston and Singapore, with no single headquarters designated.",
+    leadership: [
+      { name: "Mike Edelhart", role: "Managing Partner", profileSlug: "mike-edelhart" },
+      { name: "Patrick Nicoll", role: "General Counsel and Chief Operating Officer" },
+      { name: "Andrew Nealon", role: "Partner & CTO", profileSlug: "andrew-nealon" },
+      { name: "Bradley Welch", role: "Investment Partner", profileSlug: "bradley-welch" },
+      { name: "Charles C. Smith", role: "Investment Partner", profileSlug: "charles-c-smith" },
+      { name: "William Lohse", role: "Founder Emeritus", profileSlug: "william-lohse" }
+    ],
+    timeline: [
+      { year: "2017", event: "Joyance Partners begins investing; the March 2018 press release states that \"Since its initiation in October 2017, Joyance has made 14 investments\"." },
+      { year: "2018", event: "On 21 March 2018 Social Starts, described in the release as \"a $60M+ venture capital partnership\", announces the launch of Joyance Partners, \"a new $20M venture capital fund\"." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Square Peg Capital",
+    sectors: ["AI", "Fintech", "SaaS"],
+    signatureExit: null,
+    slug: "square-peg-capital",
+    website: "https://www.squarepeg.vc",
+    short: "Square Peg",
+    founded: 2012,
+    hq: "Australia (offices listed as Melbourne, Sydney, Singapore, Tel Aviv and San Francisco)",
+    aum: "US$4.3B (in assets across the firm's venture capital and public equities funds, per its own About page, checked 2026; the page says \"assets\", not \"assets under management\")",
+    thesis: "Square Peg is an Australian technology investment firm operating two distinct fund families rather than a single strategy: a venture capital business, which the team page groups under a venture capital team, and a public equities business, the Global Tech Fund, which the team page staffs separately with a portfolio manager and investors. The about page states \"Founded in 2012 in Australia\" and \"Six funds in with US$4.3 billion in assets across our venture capital and public equities funds\" (the firm's own claim). Offices are listed in Melbourne, Sydney, Singapore, Tel Aviv and San Francisco, so the venture business spans Australia, Southeast Asia and Israel. The team page names Canva, Airwallex and Rokt among the portfolio. The firm's footer states it is an \"Authorised Representative of Victoria Capital Pty Ltd (ACN 159 228 314) AFSL 428989\".",
+    leadership: [
+      { name: "Paul Bassat", role: "Co-Founder & Partner", profileSlug: "paul-bassat" },
+      { name: "Tony Holt", role: "Co-Founder & Partner", profileSlug: "tony-holt" },
+      { name: "Dan Krasnostein", role: "Partner", profileSlug: "dan-krasnostein" },
+      { name: "Tushar Roy", role: "Partner", profileSlug: "tushar-roy" },
+      { name: "Piruze Sabuncu", role: "Partner", profileSlug: "piruze-sabuncu" },
+      { name: "Philippe Schwartz", role: "Partner", profileSlug: "philippe-schwartz" },
+      { name: "Yonatan Sela", role: "Partner", profileSlug: "yonatan-sela" },
+      { name: "Leila Lee", role: "Partner & Head of Distribution", profileSlug: "leila-lee" },
+      { name: "Amanda Hjorring", role: "Partner & COO", profileSlug: "amanda-hjorring" },
+      { name: "Barry Brott", role: "Co-founder", profileSlug: "barry-brott" },
+      { name: "Justin Liberman", role: "Co-founder", profileSlug: "justin-liberman" }
+    ],
+    timeline: [
+      { year: "2012", event: "Square Peg is founded in Australia, per the firm's about page statement \"Founded in 2012 in Australia\"." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Stout Street Capital",
+    sectors: ["Deep Tech", "Aerospace", "Biotech", "Energy", "AI", "Advanced Manufacturing", "Robotics", "Autonomy"],
+    signatureExit: "Left Hand Robotics (acquired by Toro)",
+    slug: "stout-street-capital",
+    website: "https://www.stoutstreetcapital.com",
+    short: "Stout Street",
+    founded: 2017,
+    hq: "Denver, CO",
+    aum: null,
+    thesis: "Stout Street Capital is a pre-seed and seed deep tech firm in Denver. Its site states, as the firm's own claim: \"We write the first institutional check for founders building in Colorado and across the Rocky Mountain region.\" Its thesis section frames a deep tech market convergence in which five enabling technologies (AI, quantum, alternative energy, advanced materials, and autonomy and robotics) intersect four verticals (aerospace, biotech, energy and quantum tech). The site describes the firm as \"a small team, deeply involved\" and says it has backed more than 30 companies across three funds.",
+    leadership: [
+      { name: "John Francis", role: "General Partner", profileSlug: "john-francis" },
+      { name: "Clay Gordon", role: "General Partner", profileSlug: "clay-gordon" },
+      { name: "Duncan McBranch", role: "Chief Science Officer" }
+    ],
+    timeline: [
+      { year: "2017", event: "Firm established in Denver; its site carries \"Est. 2017\"." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Z47",
+    sectors: ["AI", "Software", "Fintech", "Consumer", "Deep Tech", "Manufacturing"],
+    signatureExit: null,
+    slug: "z47",
+    website: "https://www.z47.com",
+    short: "Z47",
+    founded: 2006,
+    hq: null,
+    aum: "$3.5B (shown under the label \"AUM\" in the \"Z47 by the Numbers\" section of the firm's own homepage, checked 2026; the page carries no as-of date)",
+    thesis: "Z47 is an India-focused venture firm that invests from early stages and describes itself on its homepage as \"early partners to missionary founders\", with a team it describes as \"former founders and operators turned investors\" (the firm's own claim). Its homepage names four focus areas: AI & Software, Fintech, Consumer, and Deeptech & Manufacturing, and states \"Since 2006\". The firm was named Matrix Partners India until a rename to Z47 that Matrix said took effect on 1 July 2024. The team page separates an Investments group from an Operations group.",
+    leadership: [
+      { name: "Avnish Bajaj", role: "Founder and Investor", profileSlug: "avnish-bajaj" },
+      { name: "Vikram Vaidyanathan", role: "Managing Director", profileSlug: "vikram-vaidyanathan" },
+      { name: "Tarun Davda", role: "Managing Director", profileSlug: "tarun-davda" },
+      { name: "Rajinder Balaraman", role: "Managing Director", profileSlug: "rajinder-balaraman" },
+      { name: "Rajat Agarwal", role: "Managing Director", profileSlug: "rajat-agarwal" },
+      { name: "Aakash Kumar", role: "Managing Director", profileSlug: "aakash-kumar" },
+      { name: "Sandeep Singh Kohli", role: "Venture Partner", profileSlug: "sandeep-singh-kohli" }
+    ],
+    timeline: [
+      { year: "2006", event: "Z47's homepage states \"Since 2006\"; the firm operated as Matrix Partners India from that year." },
+      { year: "2024", event: "Matrix announced on 29 June 2024 that Matrix Partners India would be renamed Z47 and Matrix Partners China renamed MPC, effective 1 July 2024, to reflect what Matrix called \"the organizational independence of each team\"." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Zero Prime Ventures",
+    sectors: ["AI", "Data Infrastructure", "Developer Tools", "Machine Learning", "Data & Analytics"],
+    signatureExit: null,
+    slug: "zero-prime-ventures",
+    website: "https://www.zeroprime.vc",
+    short: "Zero Prime",
+    founded: 2023,
+    hq: "San Francisco, CA",
+    aum: null,
+    thesis: "Zero Prime Ventures is an early-stage firm backing what it calls \"deeply technical teams building the infrastructure, platforms and applications behind AI\", and it describes what it offers as \"Day zero support for engineer founders\" (the firm's own claims, from its homepage). Its team page describes the partners as \"engineers turned investors\". The firm's Business Wire boilerplate states that it \"invests in Day Zero data-oriented companies launched by deeply technical founders\" with \"a clear technical differentiation in data science, ML, AI, deep learning, analytics and data infrastructure\". It is based in San Francisco and closed a $48 million second fund in March 2024.",
+    leadership: [
+      { name: "Pete Soderling", role: "Founding Partner", profileSlug: "pete-soderling" },
+      { name: "Yang Tran", role: "Partner", profileSlug: "yang-tran" },
+      { name: "Charles Zedlewski", role: "Venture Partner", profileSlug: "charles-zedlewski" },
+      { name: "Angela Winegar", role: "Venture Partner", profileSlug: "angela-winegar" },
+      { name: "Jordan Tigani", role: "Venture Partner", profileSlug: "jordan-tigani" },
+      { name: "Isaac Roth", role: "Venture Partner", profileSlug: "isaac-roth" }
+    ],
+    timeline: [
+      { year: "2023", event: "Pete Soderling founds the firm. Its homepage quotes him: \"We founded Zero Prime in 2023 to support the most technical minds in AI and data.\"" },
+      { year: "2024", event: "On 19 March 2024 the firm announces a $48 million Fund II and Yang Tran as Partner, joining from Speedinvest where she was a Principal." }
+    ],
+    holdings: []
   }
 ];
