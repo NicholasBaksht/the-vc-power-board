@@ -15241,5 +15241,603 @@ holdings: []
       { year: "2024", event: "ZAKA announces Fund I on 19 July 2024, sized EUR 15M with a EUR 10.5M first close, an alternative investment fund under Sec. 15 of Czech Act No. 240/2013 Coll. for qualified investors with a minimum LP ticket of EUR 130k." }
     ],
     holdings: []
+  },
+
+  /* ---- Firm batch 3, added 7 September 2026: 20 firms. Their partner records
+     are in data-partners-1.js (not shard 6 - see that file's banner) and
+     their field-level provenance is in data-evidence.js, added in the same
+     batch. Checked against all 541 pre-existing firms for slug, name,
+     historical-name and parent-brand collisions; none found. ---- */
+  {
+    rank: null,
+    name: "Builders VC",
+    sectors: ["Agriculture", "Construction Tech", "Real Estate", "Consumer", "Healthcare", "Industrial Tech", "Life Sciences"],
+    signatureExit: "Fieldwire (labelled Acquired on the Builders VC companies page)",
+    slug: "builders-vc",
+    website: "https://builders.vc",
+    short: "Builders VC",
+    founded: 2016,
+    hq: "San Francisco, CA",
+    aum: null,
+    thesis: "Builders VC is an early-stage venture capital firm in San Francisco. Its own site says it is \"backing founders solving complex, mission-critical problems with tech that transforms legacy systems and reshapes essential industries\" and that \"We go deep in sectors where complexity is the norm and legacy systems dominate. We bet on technologies that turn chaos into clarity, and the status quo into opportunity.\" Its companies page groups investments under Agriculture, Construction and Real Estate, Consumer, Healthcare, Industrials and Life Sciences, and labels each as Early, Growth, Incubation or Acquired. Alongside the funds the firm runs a company-building arm: the bio of Mark Goldstein on the firm's site says he \"oversees the Venture Builders Studio\" and aims to launch new companies with first-time founders in health and wellness. At launch in December 2016 the founders described the approach as thesis driven and said they would write $3 million to $10 million cheques.",
+    leadership: [
+      { name: "Jim Kim", role: "General Partner", profileSlug: "jim-kim" },
+      { name: "Mike Rosengarten", role: "General Partner", profileSlug: "mike-rosengarten" },
+      { name: "Jocelyn Doe", role: "General Partner", profileSlug: "jocelyn-doe" },
+      { name: "Amit Mehta", role: "General Partner", profileSlug: "amit-mehta" },
+      { name: "Alex Kinnier", role: "General Partner", profileSlug: "alex-kinnier" },
+      { name: "Mark Goldstein", role: "Venture Builder", profileSlug: "mark-goldstein" },
+      { name: "Mark Blackwell", role: "Chief Operating Officer" },
+      { name: "Tarik Sultan", role: "Partner, Head of MENA", profileSlug: "tarik-sultan" }
+    ],
+    timeline: [
+      { year: "2016", event: "Jim Kim and Paul Lee launch the firm as Builders; Builders VC Fund I, L.P. is incorporated in 2016 and files its Form D on 28 November 2016 with a $200,000,000 target and a first sale of 29 November 2016. Contemporaneous coverage places the firm in San Francisco and Chicago." },
+      { year: "2016", event: "Roniin, the Chicago startup studio Paul Lee launched after leaving Lightbank in 2014, is rebranded as Builder Studios to support the fund's portfolio companies, per TechCrunch, 9 December 2016." },
+      { year: "2018", event: "The Form D/A for Builders VC Fund I, L.P. filed 29 June 2018 records $115,520,000 sold against the $200,000,000 target, with Jim Kim and Paul Lee named as the Managing Members of the General Partner. Builders VC Entrepreneurs Fund I, L.P. files its Form D the same day." },
+      { year: "2018", event: "Alberta Enterprise Corporation and BDC Capital invest US$22.5 million in Builders VC Fund I; the firm is described as having offices in San Francisco, Calgary and Chicago. Builders VC Fund I (Canada), L.P. files its Form D on 6 November 2018." },
+      { year: "2020", event: "Builders VC Fund II, L.P. is incorporated and files its Form D on 28 October 2020 with a $250,000,000 target and a first sale of 30 October 2020; the Form D/A of 28 October 2021 records $235,930,000 sold." },
+      { year: "2023", event: "Builders VC Fund I (Canada), L.P. files a Schedule 13D on Notable Labs, Ltd. (Nasdaq: NTBL) on 19 October 2023." },
+      { year: "2024", event: "Builders VC Fund III, L.P., incorporated in 2023, files its Form D on 26 January 2024 with an indefinite offering amount, nil sold and the date of first sale recorded as \"Yet to occur\". No amendment had been filed as of 8 September 2026 and no close figure has been published." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Cleveland Avenue",
+    sectors: ["Agritech", "Foodtech", "Hospitality", "Robotics", "AI", "Software", "Consumer Products", "Sustainability", "Health"],
+    signatureExit: null,
+    slug: "cleveland-avenue",
+    website: "https://www.clevelandavenue.com",
+    short: "Cleveland Avenue",
+    founded: 2015,
+    hq: "Chicago, IL",
+    aum: null,
+    thesis: "Cleveland Avenue, LLC describes itself on its own site as \"a global venture capital firm that invests in lifestyle consumer brands and technology companies that positively disrupt large and growing markets\", and says it provides \"financial resources, expertise, and holistic business support to help unlock the value of our investments\". Its stated opportunity areas are Agritech, Food & Beverage, Restaurant & Food Tech, Robotics/AI, Software Services, Consumer Goods & Services, and Lifestyles of Health & Sustainability. It is an operator-led firm founded by former McDonald's President and CEO Don Thompson and Liz Thompson, and it runs a hands-on services model covering business strategy, finance, organisational development, operations, marketing, supply chain, concept development, facilities management and \"Product & Experience Showcases\" that bring culinary and consumer solutions to market. It invests through named vehicles including the Cleveland Avenue Food & Beverage Funds, the Cleveland Avenue State Treasurers Urban Success Fund (CAST US) and a CA Tech Fund focused on AI, robotics and digital experience.",
+    leadership: [
+      { name: "Don Thompson", role: "CEO, Cleveland Avenue", profileSlug: "don-thompson" },
+      { name: "Joseph Q. McCoy", role: "President & General Counsel" },
+      { name: "Harry Coaxum", role: "Chief Operating Officer" },
+      { name: "Keith Kravcik", role: "Chief Investment Officer", profileSlug: "keith-kravcik" },
+      { name: "Andy Zopp", role: "Managing Partner, CAST US", profileSlug: "andy-zopp" },
+      { name: "Mingu Lee", role: "Managing Partner, Tech Fund", profileSlug: "mingu-lee" },
+      { name: "Randall Lewis, CPA", role: "Managing Partner, Portfolio", profileSlug: "randall-lewis-cpa" },
+      { name: "Ryan Tlusty", role: "Chief Financial Officer" }
+    ],
+    timeline: [
+      { year: "2015", event: "Don Thompson and Liz Thompson found Cleveland Avenue, LLC in Chicago; the firm's own site says \"Founded in 2015\" and its Chief Investment Officer's bio dates the firm's inception to September 2015. The Thompsons concurrently form The Cleveland Avenue Foundation for Education." },
+      { year: "2017", event: "Cleveland Avenue, described in contemporaneous reporting as an \"accelerator for remarkable food and beverage concepts\", opens Taste222, a combination restaurant and food concept showcase at its 222 N. Canal Street building in Chicago's West Loop." },
+      { year: "2020", event: "Cleveland Avenue State Treasurers Urban Success Fund, LP (CAST US) is organised in Delaware and files a Form D on 14 October 2020; its March 2021 amendment reports a $73,000,000 offering fully sold. Cleveland Avenue Food & Beverage Fund II, LP is organised in Delaware and files a Form D on 9 October 2020 reporting a $500,000,000 offering with $0 sold at the time of filing." },
+      { year: "2022", event: "Presto Automation Inc., formerly the SPAC Ventoux CCM Acquisition Corp., becomes a public company on 21 September 2022; Cleveland Avenue Food and Beverage Fund II, LP subsequently reports beneficial ownership of 10,000,000 shares, or 17.3% of the class, on a Schedule 13D." },
+      { year: "2023", event: "Cleveland Avenue Food and Beverage Fund II, LP files a Schedule 13D/A on 20 December 2023 reporting 11,500,000 shares of Presto Automation Inc., 17.1% of the class, following anti-dilution provisions triggered on 21 November 2023." },
+      { year: "2024", event: "Presto Automation Inc. files a Form 15-12G on 19 September 2024 deregistering its securities; the company is no longer a reporting public issuer." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Climate Capital",
+    sectors: ["Climate Technology", "Energy", "Infrastructure", "Climate Resilience"],
+    signatureExit: null,
+    slug: "climate-capital",
+    website: "https://www.climatecapital.co",
+    short: "Climate Capital",
+    founded: 2015,
+    hq: null,
+    aum: null,
+    thesis: "Climate Capital describes itself in its own site metadata as an early stage climate VC fund making 'Diversified investments in the most promising early stage climate startups backed by top tier VCs'. Its own newsletter describes it as an early-stage climate tech investor with 500+ portfolio companies, and its 12 December 2025 year in review states it made 76 investments in that year across a Seed Fund, a Network Fund and syndicates, grouping its portfolio under Energy Abundance, Physical Infrastructure, and Resilience & Adaptation. Its October 2024 'Climate Capital 5.0' post sets out its current vehicle structure: CC Seed as the flagship fund, CC Micro (formerly CC Index Fund, writing $10k to $25k cheques), Juniper (Climate Capital Bio, described as spinning out), and Climate Capital Programs covering the Syndicate, a Scout Fund and an Angels Program. The firm also runs a newsletter and a podcast under the Climate Capital name. Note that syndicate and programme deal counts are not fund figures and no assets under management figure has been published.",
+    leadership: [
+      { name: "Sundeep Ahuja", role: "Founder and General Partner", profileSlug: "sundeep-ahuja" }
+    ],
+    timeline: [
+      { year: "2015", event: "Sundeep Ahuja buys the climatecapital.co domain and launches the first climate SPV, described in the firm's own 'Climate Capital 5.0' post as CC 1.0." },
+      { year: "2019", event: "First microfund, described in the firm's own 'Climate Capital 5.0' post as CC 2.0. Ahuja's personal site separately dates the founding of Climate Capital to 2019." },
+      { year: "2021", event: "Climate Capital Syndicate launches, described in the firm's 'Climate Capital 5.0' post as CC 3.0 and as deploying $18 million." },
+      { year: "2023", event: "CC 4.0, described in the firm's own post as adding a podcast, newsletters and specialised funds." },
+      { year: "2023", event: "'Fund I, a series of Climate Capital Seed, LP' files a Form D on 12 December 2023 reporting a $10,000,000 offering with a first sale on 7 December 2023. Note: this entity's Form D names only its fund administrator, not Climate Capital's principals, so the link to this firm rests on the name alone and is not confirmed." },
+      { year: "2024", event: "The firm publishes 'Climate Capital 5.0' on 11 October 2024, setting out CC Seed, CC Micro, the Juniper spin-out and Climate Capital Programs." },
+      { year: "2025", event: "The firm's year in review of 12 December 2025 states it made 76 investments across the Seed Fund, Network Fund and syndicates that year." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "CoinFund",
+    sectors: ["Fintech", "Infrastructure", "AI", "Crypto", "Blockchain", "Web3"],
+    signatureExit: null,
+    slug: "coinfund",
+    website: "https://www.coinfund.io",
+    short: "CoinFund",
+    founded: 2015,
+    hq: "New York, NY",
+    aum: null,
+    thesis: "CoinFund invests in founders building on decentralized networks. Its homepage states the firm is \"Partnering with founders building on decentralized networks across finance, infra, and AI\" and that \"We aim to create more durable and equitable technology across finance, infra, and AI through the companies we fund and partner with.\" The site records the firm as EST. 2015 with locations in NYC and Miami, and says CoinFund started in 2015 as a Slack channel among private investors. The manager entity, CoinFund Management LLC, is an SEC-registered investment adviser, SEC file number 801-124872, registration approved 3 May 2022, with its office at 287 Park Avenue South, Suite 520, New York. The firm runs distinct vehicle families rather than one blended pool: early-stage venture funds (CoinFund Ventures I, a $300M early-stage venture capital fund announced August 2022, and the $158M CoinFund Seed IV Fund LP closed July 2023) alongside liquid-token vehicles filed with the SEC as CoinFund Liquid Opportunities LP, CoinFund Liquid Opportunities Onshore LP and CoinFund Liquid Opportunities Offshore Ltd. Token positions held by those vehicles are not equity holdings and are not recorded here.",
+    leadership: [
+      { name: "Jake Brukhman", role: "Founder, CEO, and Managing Partner", profileSlug: "jake-brukhman" },
+      { name: "Alex Felix", role: "Managing Partner, Co-Founder and CIO", profileSlug: "alex-felix" },
+      { name: "David Pakman", role: "Managing Partner, Head of Venture Investing", profileSlug: "david-pakman" },
+      { name: "Abbey Hamstra", role: "Partner, Head of Investor Relations and Operations", profileSlug: "abbey-hamstra" },
+      { name: "Stewart Eichner", role: "Partner, Chief Legal Officer & Chief Compliance Officer", profileSlug: "stewart-eichner" }
+    ],
+    timeline: [
+      { year: "2015", event: "CoinFund starts in 2015 as a Slack channel among private investors, per the firm's own homepage, which also carries a 2015 quotation attributed to \"Jake Brukhman, CoinFund Founder, 2015\"." },
+      { year: "2021", event: "CoinFund appoints David Pakman, previously thirteen years at Venrock, as Managing Partner, announced 22 September 2021." },
+      { year: "2022", event: "CoinFund Management LLC's SEC investment adviser registration is approved on 3 May 2022, SEC file number 801-124872." },
+      { year: "2022", event: "CoinFund announces CoinFund Ventures I, a $300M early-stage venture capital fund, on 17 August 2022, and the addition of Einar Braathen from Accel to the CoinFund Venture Investing Team." },
+      { year: "2023", event: "CoinFund closes the $158 million CoinFund Seed IV Fund LP, announced 18 July 2023." },
+      { year: "2026", event: "CoinFund Management LLC's Form 13F-HR for the quarter ended 30 June 2026 states that, subsequent to 31 March 2026, it spun out all of the investment funds it previously advised that hold Section 13(f) securities, and that it does not hold any Section 13(f) securities as of the date of the report." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Connect Ventures",
+    sectors: ["AI", "Cybersecurity", "Deep Tech", "Data", "Infrastructure", "Fintech", "Health", "Marketplaces"],
+    signatureExit: null,
+    slug: "connect-ventures",
+    website: "https://www.connectventures.co",
+    short: "Connect Ventures",
+    founded: 2012,
+    hq: "London, United Kingdom",
+    aum: null,
+    thesis: "Connect Ventures is a London-based venture firm that has invested in pre-seed and seed stage product companies since 2012. It describes itself on its own site as \"a partner-only, Europe-wide, high conviction investment team\" and states that it leads or co-leads rounds between $500k-$5m, invests across the seed spectrum supporting companies to go from pre-product to product market fit, and is a product specialist investing in the categories it lists as AI, cybersecurity, deep tech, data & infrastructure, fintech, health, and vertical networks. It runs a founder community programme and an annual product summit called Built By Few.",
+    leadership: [
+      { name: "Pietro Bezza", role: "Managing Partner", profileSlug: "pietro-bezza" },
+      { name: "Sitar Teli", role: "Managing Partner", profileSlug: "sitar-teli" },
+      { name: "Rory Stirling", role: "General Partner", profileSlug: "rory-stirling" },
+      { name: "Mark Pettit", role: "CFO" }
+    ],
+    timeline: [
+      { year: "2011", event: "Connect Ventures LLP is incorporated in England and Wales on 24 August 2011 with registered number OC367566." },
+      { year: "2012", event: "Connect Ventures launches with a $22m first fund, per TechCrunch's launch report; the firm's own site dates its investing to 2012." },
+      { year: "2016", event: "Connect Ventures raises its second fund, reported by TechCrunch as \"around $62 million based on today's exchange rate\"." },
+      { year: "2019", event: "Rory Stirling, previously a founding partner at BGF Ventures and a partner at MMC Ventures, joins Connect Ventures as partner (TechCrunch, 24 January 2019); Companies House records his appointment as a designated member of Connect Ventures LLP on 5 March 2019." },
+      { year: "2020", event: "Connect Ventures announces its third fund at $80m (GBP 65m) on 25 June 2020." },
+      { year: "2023", event: "Connect Ventures' fourth fund reaches the $80 million mark with a final close to come later in the year (TechCrunch, 5 September 2023); British Patient Capital announces a GBP 20m commitment to the fund." },
+      { year: "2024", event: "Molten Ventures announces on 3 October 2024 that it has acquired approximately 97% of Connect Ventures Fund I in a secondary transaction for around GBP 18.6 million." },
+      { year: "2025", event: "Connect Ventures Five (England) Limited and Connect Ventures Five (Scotland) Limited are incorporated at Companies House in September 2025 as general partner vehicles; no fund close for a fifth fund has been announced." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "DEEPCORE Inc.",
+    sectors: ["AI", "Machine Learning", "Applied AI", "Robotics", "Deep Tech"],
+    signatureExit: null,
+    slug: "deepcore",
+    website: "https://deepcore.jp",
+    short: "DEEPCORE",
+    founded: 2014,
+    hq: "Tokyo, Japan",
+    aum: null,
+    thesis: "DEEPCORE is a Japanese venture capital firm investing in startups in AI and advanced technology fields. In its own 10 June 2026 announcement of a third fund it states that it has invested in more than 140 companies cumulatively since 2018 and that the new fund invests mainly from pre-seed to Series A in AI and advanced technology. Its second fund, closed in May 2023 at 117 oku-yen (11.7 billion yen), was described by the firm as investing in seed and early-stage AI startups with generative AI and robotics as focus areas. Alongside investing the firm runs KERNEL, a Hongo-based startup community for founders, CxOs, researchers and engineers, through which it says it supports organisation building and the matching of technology seeds with management talent. Its 7 April 2025 announcement states more than 700 people have been supported through KERNEL.",
+    leadership: [
+      { name: "Katsumasa Niki", role: "代表取締役 (Representative Director)", profileSlug: "katsumasa-niki" }
+    ],
+    timeline: [
+      { year: "2014", event: "The legal entity behind DEEPCORE is incorporated in July 2014; the company's own profile block in its press releases gives its 設立 (establishment) as 2014年07月." },
+      { year: "2017", event: "The company changes its trade name from 汐留事業4号株式会社 to 株式会社ディープコア on 12 September 2017, according to the Japanese national corporate-number record." },
+      { year: "2018", event: "DEEPCORE announces on 1 February 2018 that it is recruiting the first members for KERNEL, an AI incubation facility it plans to open in Hongo, Bunkyo-ku, Tokyo in spring 2018." },
+      { year: "2018", event: "DEEPCORE establishes DEEPCORE TOKYO1号 投資事業有限責任組合 with a stated target size of 60億円 (6 billion yen) and announces VAAK, invested in April 2018, as the fund's first deal." },
+      { year: "2019", event: "The registered head office moves on 7 February 2019 from 東京都港区東新橋1丁目9番1号 to Hongo, Bunkyo-ku, Tokyo, according to the national corporate-number record." },
+      { year: "2023", event: "DEEPCORE announces on 31 May 2023 the close of DEEPCORE TOKYO 2号投資事業有限責任組合 at 117億円 (11.7 billion yen), reporting 39 portfolio companies as of the end of April 2023." },
+      { year: "2025", event: "DEEPCORE announces on 7 April 2025 a rebuild of KERNEL membership into KERNEL Advanced, KERNEL Base and KERNEL Community, citing a record of supporting more than 700 people." },
+      { year: "2026", event: "DEEPCORE announces on 10 June 2026 that it has established a third fund for AI and advanced technology startups; the announcement does not disclose the fund's size." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Energy & Environment Investment, Inc.",
+    sectors: ["Clean Energy", "Energy", "Mobility", "Transportation", "Smart Cities", "Carbon Removal", "Climate Resilience"],
+    signatureExit: null,
+    slug: "energy-environment-investment",
+    website: "https://ee-investment.jp",
+    short: "EEI",
+    founded: 2006,
+    hq: "Tokyo, Japan",
+    aum: "300億円 (approx. JPY 30bn; the current flagship fund EEI 5号イノベーション＆インパクト投資事業有限責任組合, which the firm said on 15 July 2026 it is managing. The firm separately states a cumulative 690億円 across all funds since 2006 and about 180 investments, which is cumulative and not current AUM)",
+    thesis: "EEI is a Japanese venture capital firm investing in the environment and energy sectors, which its own English site describes as the only Japanese venture capital firm focused exclusively on those sectors. It states three investment areas: Energy Transition (next-generation energy and decarbonization technologies), Mobility & Transportation (battery storage, EV infrastructure and community solutions) and Smart Society (digital technology for resource efficiency and climate adaptation). Its fourth and fifth funds are named イノベーション＆インパクト (Innovation & Impact) funds; the firm says it assesses impact and ESG achievement at the point of investment and monitors them afterwards, and states the belief Impact drives performance. In its July 2026 rebranding statement it said it intends to extend beyond its existing environment and energy focus into climate change adaptation and resilience, and that it works alongside founders from business conception through growth rather than providing capital alone.",
+    leadership: [
+      { name: "Shuichiro Kawamura (河村 修一郎)", role: "代表取締役 (Representative Director); shown as President on the firm's English members page" },
+      { name: "Ryusuke Hayashi (林 隆介)", role: "Head of Mobility Business Innovation / モビリティ事業創造室長" }
+    ],
+    timeline: [
+      { year: "2006", event: "株式会社環境エネルギー投資 is established on 3 March 2006; its founder Shuichiro Kawamura is its Representative Director." },
+      { year: "2007", event: "環境エネルギー1号投資事業有限責任組合 is formed in September 2007 at 35.0億円 (3.5 billion yen); the firm reports 18 portfolio companies for it." },
+      { year: "2011", event: "EEIクリーンテック投資事業有限責任組合 is formed in September 2011 at 60.7億円 (6.07 billion yen); the firm reports 39 portfolio companies for it." },
+      { year: "2015", event: "EEIスマートエナジー投資事業有限責任組合 is formed in April 2015 at 96.5億円 (9.65 billion yen); the firm reports 40 portfolio companies for it." },
+      { year: "2018", event: "EEI4号イノベーション＆インパクト投資事業有限責任組合 is formed in June 2018 at 152億円 (15.2 billion yen); Kyushu Electric Power invests in it as a strategic partner." },
+      { year: "2022", event: "EEI5号イノベーション＆インパクト投資事業有限責任組合 is formed in September 2022 at 300億円 (30 billion yen); the firm reports 34 portfolio companies for it as of December 2024." },
+      { year: "2024", event: "The Japan Investment Corporation for Carbon Neutrality (株式会社脱炭素化支援機構, JICN) decides on 5 July 2024 to invest in EEI Booster1号投資事業有限責任組合, a new fund being formed by the firm." },
+      { year: "2026", event: "The firm carries out a corporate rebranding announced on 15 July 2026, renewing its logo and corporate website at the twenty-year mark since its founding; the company name is unchanged. The announcement states 累計690億円を運用し約180社への投資を行ってきました (cumulative 69 billion yen managed and investment in approximately 180 companies)." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Founderful",
+    sectors: ["Robotics", "Automation", "Artificial Intelligence", "Machine Learning", "Advanced Manufacturing", "Climate Technology", "Construction Tech", "Deep Tech"],
+    signatureExit: "Insightness (acquired by Sony)",
+    slug: "founderful",
+    website: "https://www.founderful.com",
+    short: "Founderful",
+    founded: 2019,
+    hq: "Zurich, Switzerland",
+    aum: null,
+    thesis: "Founderful is a Swiss pre-seed venture fund. Its own site states it is 'a venture fund based in Switzerland' that partners with Swiss startups and offers 'companionship and support as the first institutional investor'. Its November 2024 Fund II release describes it as 'Switzerland's leading pre-seed fund, backing founder teams building tech companies with the potential to become global market leaders'. At the February 2024 rebrand the firm said it would continue to 'double down on Switzerland, investing in the 10 most ambitious founder teams each year as their lead investor'. The firm's rebrand release lists its investment areas as robotics, industrial automation, artificial intelligence, machine learning, computer vision and materials sciences including clean tech, climate tech and construction tech. It operates from Zurich (Founderful AG) with a Luxembourg entity, Founderful Sàrl, and runs a separate non-profit student programme, Founderful Campus.",
+    leadership: [
+      { name: "Alex Stöckl", role: "Founding Partner", profileSlug: "alex-stockl" },
+      { name: "Lukas Weder", role: "Founding Partner", profileSlug: "lukas-weder" },
+      { name: "Pascal Mathis", role: "Co-founder; member of the board of Founderful AG", profileSlug: "pascal-mathis" }
+    ],
+    timeline: [
+      { year: "2016", event: "Wingman AG is entered in the Swiss commercial register on 24 June 2016 under UID CHE-492.933.597, at Badenerstrasse 60, 8004 Zurich." },
+      { year: "2019", event: "The firm is founded as Wingman Ventures by GetYourGuide co-founder Pascal Mathis, former Creathor Ventures Switzerland Lead Alex Stöckl, and EAT.ch co-founder Lukas Weder." },
+      { year: "2020", event: "The firm raises its first fund of $90 million; Alex Stöckl states it was Switzerland's first independent venture capital firm to invest only at the pre-seed stage." },
+      { year: "2024", event: "On 13 February 2024 Wingman Ventures rebrands as Founderful, announcing $85 million raised toward a $120 million Fund II target." },
+      { year: "2024", event: "The legal entity Wingman AG is renamed Founderful AG in the Swiss commercial register on 1 March 2024." },
+      { year: "2024", event: "The student programme Wingman Campus Fund is renamed Founderful Campus." },
+      { year: "2024", event: "On 14 November 2024 Founderful announces the close of an oversubscribed $140 million Fund II." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Galaxy Digital",
+    sectors: ["Infrastructure Software", "Fintech", "Blockchain", "Crypto", "Consumer", "AI", "Gaming", "Web3"],
+    signatureExit: null,
+    slug: "galaxy-digital",
+    website: "https://www.galaxy.com",
+    short: "Galaxy",
+    founded: 2018,
+    hq: "New York, NY",
+    aum: null,
+    thesis: "Galaxy Digital Inc. is a publicly listed operating company, not a venture partnership. Its Class A common stock trades on Nasdaq under GLXY and it files with the SEC as an operating company under CIK 0001859392, with its principal office at 300 Vesey Street, 13th Floor, New York. Its own site describes it as \"a digital assets and AI infrastructure company\" built around two engines, Digital Assets and Data Centers; its 5 August 2026 quarterly release reports three operating segments, Digital Assets, Data Centers and Treasury & Corporate. Venture investing is one activity inside that company and is run through two named arms. Galaxy Ventures says it \"is a crypto-native venture team\" that \"invests in software infrastructure, financialized applications, protocols, and consumer use cases\" at early stages, and closed Galaxy Ventures Fund I at over $175 million in June 2025. Galaxy Interactive says it invests \"at the intersection of next-gen infrastructure and human creativity\", naming immersive technology, AI, spatial computing and blockchain. The trading, asset management, custody, staking, tokenization, investment banking, GalaxyOne and data centre businesses sit alongside the venture arms and are separate from them.",
+    leadership: [
+      { name: "Michael Novogratz", role: "Founder and CEO" },
+      { name: "Christopher Ferraro", role: "President and Chief Investment Officer" },
+      { name: "Erin Brown", role: "Chief Operating Officer" },
+      { name: "Matt Friedrich", role: "Chief Legal Officer" },
+      { name: "Tony Paquette", role: "Chief Financial Officer" },
+      { name: "Steve Kurz", role: "Global Co-Head, Digital Assets" },
+      { name: "Jason Urban", role: "Global Co-Head, Digital Assets" },
+      { name: "Thomas Harrop", role: "Chief Risk Officer" },
+      { name: "Michael Ashe", role: "Chief Strategy Officer" },
+      { name: "Rob Cornish", role: "Chief Technology Officer" },
+      { name: "Andrew Taubman", role: "Deputy Chief Operations Officer" },
+      { name: "William Nuelle", role: "General Partner, Ventures", profileSlug: "william-nuelle" },
+      { name: "Mike Giampapa", role: "General Partner, Ventures", profileSlug: "mike-giampapa" },
+      { name: "Sam Englebardt", role: "Founding General Partner, Galaxy Interactive", profileSlug: "sam-englebardt" }
+    ],
+    timeline: [
+      { year: "2018", event: "Galaxy's own About page states that in 2018 Mike Novogratz \"launched Galaxy with a simple idea: Bring institutions into the blockchain revolution\"." },
+      { year: "2018", event: "Galaxy Digital goes public on the Toronto Stock Exchange, per Wikipedia; no first-party page confirming the 2018 TSX listing was located in this session." },
+      { year: "2024", event: "Galaxy Ventures publishes \"Announcing $113M Initial Close for Galaxy Ventures Fund I\", authored by William Nuelle, on 25 July 2024." },
+      { year: "2025", event: "Galaxy announces the final close of Galaxy Ventures Fund I at over $175 million in capital commitments on 26 June 2025." },
+      { year: "2025", event: "Galaxy completes a reorganisation and its Class A common stock begins trading on the Nasdaq Global Select Market under GLXY in May 2025, per Wikipedia; SEC submissions data for CIK 0001859392 independently shows Nasdaq as the exchange and Delaware as the state of incorporation." },
+      { year: "2026", event: "Galaxy completes its voluntary delisting from the Toronto Stock Exchange in March 2026, per Wikipedia, leaving Nasdaq as its sole listing." }
+    ],
+    holdings: [
+      { name: "Cipher Digital Inc.", ticker: "CIFR", historicalPrice: null, price: null },
+      { name: "Riot Platforms, Inc.", ticker: "RIOT", historicalPrice: null, price: null },
+      { name: "TeraWulf Inc.", ticker: "WULF", historicalPrice: null, price: null },
+      { name: "Robinhood Markets, Inc.", ticker: "HOOD", historicalPrice: null, price: null },
+      { name: "Block, Inc.", ticker: "XYZ", historicalPrice: null, price: null },
+      { name: "Figure Technology Solutions, Inc.", ticker: "FIGR", historicalPrice: null, price: null },
+      { name: "Affirm Holdings, Inc.", ticker: "AFRM", historicalPrice: null, price: null },
+      { name: "Virtu Financial, Inc.", ticker: "VIRT", historicalPrice: null, price: null },
+      { name: "Forgent Power Solutions, Inc.", ticker: "FPS", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "High Alpha",
+    sectors: ["B2B Software", "SaaS", "Enterprise Software"],
+    signatureExit: "Logik.ai (acquired by ServiceNow, 2025)",
+    slug: "high-alpha",
+    website: "https://highalpha.com",
+    short: "High Alpha",
+    founded: 2015,
+    hq: "Indianapolis, IN",
+    aum: "Over $385M (total assets under management, per the firm's own 11 June 2024 announcement, \"High Alpha IV brings total assets under management to over $385M\"; the same announcement gives High Alpha IV as a $125M fund, which is a fund size)",
+    thesis: "High Alpha is an Indianapolis venture organisation that says it was founded in 2015 to reinvent the way B2B software companies are founded and funded. Its own homepage separates two named activities. High Alpha Studio co-creates companies with founders through phases it labels Explore, Build and Scale, and supplies embedded brand design, product design, marketing, go-to-market guidance, finance and legal counsel, and HR and talent services. High Alpha Capital invests in enterprise software companies, and its capital page states seed to Series A and Series A and Series B investing across North America. The firm's about page counts 40+ studio company starts, 100+ founders backed and 900+ jobs created; those are studio and company-building counts, not fund figures. Its June 2024 fund announcement describes High Alpha IV as bringing company building and investing into a single entity.",
+    leadership: [
+      { name: "Scott Dorsey", role: "Co-Founder and Managing Partner", profileSlug: "scott-dorsey" },
+      { name: "Kristian Andersen", role: "Co-Founder and Partner", profileSlug: "kristian-andersen" },
+      { name: "Mike Fitzgerald", role: "Co-Founder and Partner", profileSlug: "mike-fitzgerald" },
+      { name: "Eric Tobias", role: "Co-Founder and Operating Partner", profileSlug: "eric-tobias" },
+      { name: "Blake Koriath", role: "Partner and Chief Financial Officer", profileSlug: "blake-koriath" }
+    ],
+    timeline: [
+      { year: "2015", event: "High Alpha is founded in Indianapolis in April 2015 by Scott Dorsey, Eric Tobias, Kristian Andersen and Mike Fitzgerald; the firm announces Fund I in June 2015 and starts with Lessonly, Octiv and Visible." },
+      { year: "2015", event: "Form D filings dated 21 May 2015 register two separate legal entities in Indianapolis: High Alpha Studio, LLC (the studio, $8,450,000 offering, $4,225,000 sold, first sale 11 May 2015) and High Alpha Seed Fund, L.P. (the fund)." },
+      { year: "2018", event: "High Alpha announces Fund II in July 2018; High Alpha Capital Fund II, L.P. filed a Form D on 9 March 2018 and High Alpha Studio II, LLC filed one on 16 July 2018." },
+      { year: "2020", event: "High Alpha moves to the Bottleworks District in Indianapolis in June 2020; High Alpha Capital Fund III, L.P. filed a Form D on 31 December 2020." },
+      { year: "2021", event: "High Alpha announces Fund III and launches its third venture studio in October 2021, saying it has raised $260M in funding across three venture studios, with Emergence Capital and Foundry Group named as backers; High Alpha Studio III, LLC filed a Form D on 19 July 2021." },
+      { year: "2023", event: "High Alpha announces a strategic partnership with Purdue University in June 2023, with business and startup programmes to be housed at Bottleworks." },
+      { year: "2024", event: "High Alpha announces High Alpha IV on 11 June 2024 at $125 million, above a $110 million target; the Form D/A for High Alpha Capital Fund IV, L.P. filed 5 June 2024 records $125,000,000 offered and $125,000,000 sold, with a first sale of 3 January 2024." },
+      { year: "2025", event: "High Alpha's studio company Logik.ai is acquired by ServiceNow, announced by the firm on 30 June 2025." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Lilly Asia Ventures",
+    sectors: ["Pharmaceuticals", "Biotech", "Therapeutics", "Medical Devices", "Diagnostics", "Life Sciences"],
+    signatureExit: null,
+    slug: "lilly-asia-ventures",
+    website: "https://www.lavfund.com/",
+    short: "LAV",
+    founded: 2008,
+    hq: "Shanghai, China",
+    aum: null,
+    thesis: "LAV describes itself on its About Us page as follows: \"LAV is a global biomedical venture capital firm with offices in Hong Kong, Shanghai, and Palo Alto. Originated in 2008 as a corporate venture subsidiary of Eli Lilly, we spun off to become an independent investment management company in 2011.\" The same page states \"Our team of over 50 distinguished professionals, experienced in science, medicine, investment, and operations, embraces a culture of integrity, teamwork, diligence, and scientific rigor\" and \"Our vision is to become the trusted partner for exceptional entrepreneurs seeking smart capital, and to help build great companies that develop breakthrough products to treat diseases and improve human health.\" The homepage states the focus as biopharmaceuticals, human therapeutics, medical devices and diagnostics, and the firm's stated philosophy is to bet on people and products, to favour quality science and to think long term. The Chinese site writes the firm's name as 礼来亚洲基金 and its sectors as 生物医药、医疗技术、医疗器械和诊断.",
+    leadership: [],
+    timeline: [
+      { year: "2008", event: "LAV originates as a corporate venture subsidiary of Eli Lilly, per the firm's own About Us page." },
+      { year: "2011", event: "LAV spins off from Eli Lilly to become an independent investment management company, per the firm's own About Us page." },
+      { year: "2013", event: "LAV Management Company, Limited becomes an active SEC exempt reporting adviser (802-77620) with an effective date of 30 January 2013." },
+      { year: "2026", event: "IMPACT Therapeutics, Inc. lists on the Main Board of The Stock Exchange of Hong Kong Limited on 13 May 2026 under stock code 07630.HK, with LAV among the cornerstone investors named in the firm's own news post." },
+      { year: "2026", event: "Alebund Pharmaceuticals (09637.HK) debuts on the HKEx Main Board on 29 June 2026, per the firm's own news post." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "LongHash Ventures",
+    sectors: ["AI", "Robotics", "Crypto", "Blockchain", "Web3"],
+    signatureExit: "Kakarot (acquired by Zama; the firm states it co-led Kakarot's seed round in 2023, and published on the acquisition on 6 November 2025)",
+    slug: "longhash-ventures",
+    website: "https://www.longhash.vc",
+    short: "LongHash",
+    founded: 2018,
+    hq: "Singapore, Singapore",
+    aum: "Not publicly disclosed (no AUM figure is published; fund sizes only - Fund I launched in 2021 at $15M, and Fund II was announced on 10 August 2022 as a $100M fund at a first close, with no amount disclosed and no final close found)",
+    thesis: "LongHash Ventures describes itself on its own site as “a frontier tech venture firm investing at the convergence of AI, robotics, and digital assets, with partners across Singapore, the US, and China.” Its portfolio page filters holdings into three stated categories, AI, Digital Assets and Robotics, and labels each position by stage from Pre-Seed to Series C plus Strategic, with lead and co-lead roles marked. The firm operates a named accelerator alongside the fund: the LongHashX Accelerator, which the About page describes as “one of the world's leading Web3 accelerators with the strongest network in Asia” and which it states has “accelerated 130+ early-stage projects across 16 cohorts and helped them raise over $200m in funding.” Those are accelerator cohort figures and are separate from, and not additive to, the fund figures. LONGHASH VENTURES PTE. LTD. holds a Capital Markets Services Licence for Venture Capital Fund Management from the Monetary Authority of Singapore.",
+    leadership: [
+      { name: "Shi Khai Wei", role: "Co-Founder and Managing Partner", profileSlug: "shi-khai-wei" },
+      { name: "Emma Cui", role: "Co-Founder and Founding Managing Partner", profileSlug: "emma-cui" }
+    ],
+    timeline: [
+      { year: "2018", event: "LONGHASH VENTURES PTE. LTD. incorporated in Singapore, UEN 201821626D, registered 26 June 2018 under SSIC 66305 Venture Capital Activities." },
+      { year: "2018", event: "LongHashX Accelerator begins; the firm's own Fund II press release states the accelerator's inception was 2018 and The Block reports the same." },
+      { year: "2021", event: "Fund I launched at $15 million, per The Block's 11 August 2022 report." },
+      { year: "2022", event: "Fund II announced on 10 August 2022 as a $100 million Web3 venture fund with a successful first close; named first-close investors include Hashkey Capital, NGC Ventures, Protocol Labs, Gnosis Safe, MEXC, Synthetix founders Kain and Jordan Warwick, Qiming VC founding partner Duane Kuang, and Astar founder Sota Watanabe." },
+      { year: "2022", event: "LongHashX Accelerator itself takes investment at an undisclosed valuation from Superscrypt, a Temasek-founded firm, and NGC, per the firm's own Fund II press release." },
+      { year: "2023", event: "LongHash Ventures co-leads Kakarot's seed round; the firm's own post of 6 November 2025 states “LongHash Ventures co-led Kakarot's seed round in 2023”." },
+      { year: "2025", event: "Portfolio company Kakarot is acquired by Zama; the firm publishes “The Proof is in the Phone: Why Zama Acquired Kakarot” on 6 November 2025." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Maverick Ventures",
+    sectors: ["Healthcare", "Technology", "Consumer"],
+    signatureExit: null,
+    slug: "maverick-ventures",
+    website: "https://maverickcapital.com/ventures",
+    short: "Maverick Ventures",
+    founded: 2015,
+    hq: "San Francisco, CA",
+    aum: null,
+    thesis: "Maverick Ventures is the early-stage venture effort of Maverick Capital, Ltd. Its own page states \"We lead Seed through Series B rounds, partnering with a select group of founders each year\" and describes the arm as \"partners with founders from inception through IPO and beyond, leading Seed through Series B rounds in healthcare, technology, and consumer sectors.\" It describes itself as part of a multi-stage platform: \"As part of a multi-stage platform, we collaborate across private and public strategies to support companies from inception through IPO and beyond.\" On alignment the page states \"30% of our capital is committed by Maverick partners and employees, representing the largest single LP in the fund.\" The investment team is based in San Francisco; the manager of the general partner, Maverick Capital Ventures, LLC, files from Maverick Capital's Dallas address.",
+    leadership: [
+      { name: "Lee Ainslie", role: "Managing Partner", profileSlug: "lee-ainslie" },
+      { name: "David B. Singer", role: "Managing Partner", profileSlug: "david-b-singer" }
+    ],
+    timeline: [
+      { year: "1993", event: "Maverick Capital, the parent manager, is founded, per its own history timeline entry \"Maverick Capital is founded\"." },
+      { year: "2004", event: "Per the parent's history timeline, \"Maverick formalizes a dedicated private investing platform\"." },
+      { year: "2015", event: "Per the parent's history timeline, \"Maverick Ventures launches\"." },
+      { year: "2024", event: "Maverick Ventures Cycle 4 Serial Fund, L.P. reports a first sale on 21 February 2024 and, in its January 2025 Form D/A, $102,939,698 sold; Maverick Capital Ventures, LLC is named as manager of the general partner." },
+      { year: "2024", event: "The parent's history timeline records \"Maverick Silicon launches\", a separate investment effort from Maverick Ventures." },
+      { year: "2026", event: "Infleqtion, Inc. completes its business combination with Churchill Capital Corp X on 13 February 2026; David B. Singer files a Form 3 as a director, and Maverick entities including Maverick Ventures Investment Fund, L.P. file a Schedule 13D." }
+    ],
+    holdings: [
+      { name: "Infleqtion, Inc.", ticker: "INFQ", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Rally Ventures",
+    sectors: ["Media", "Cybersecurity", "AI", "AI/ML", "Fintech", "SaaS", "Enterprise Software"],
+    signatureExit: "Braze (IPO, Nasdaq: BRZE, 2021)",
+    slug: "rally-ventures",
+    website: "https://www.rallyventures.com",
+    short: "Rally",
+    founded: 2012,
+    hq: "Minneapolis, MN",
+    aum: "Over $1B (total assets under management, per the firm's own Fund V announcement of 19 December 2023)",
+    thesis: "Rally Ventures invests in early-stage business technology companies and says business technology is its sole focus. Its Our Focus page names three focus areas: SportsTech, Cybersecurity and AI+, which it describes as AI-native platforms that add products and revenue streams for the provider. The About page describes a nationwide portfolio spanning AI/ML, cybersecurity, fintech and SaaS+. The firm's Fund IV announcement describes the fund as investing in Seed and Series A companies. Rally runs a Tech Partners network of industry operators alongside the fund, and its Fund V announcement states that over 100 Tech Partners have collectively invested more than $130 million in the firm and sourced over 60 percent of portfolio companies. The firm works from offices in Minneapolis and Menlo Park; the Minneapolis address is the principal office of business on its SEC exempt reporting adviser record.",
+    leadership: [
+      { name: "Jeff Hinck", role: "Managing Director", profileSlug: "jeff-hinck" },
+      { name: "Justin Kaufenberg", role: "Managing Director", profileSlug: "justin-kaufenberg" },
+      { name: "Stephanie McCoy", role: "Chief Financial Officer" }
+    ],
+    timeline: [
+      { year: "2012", event: "Charles Beeler and Jeff Hinck co-found Rally Ventures; the About page states the firm was founded in 2012." },
+      { year: "2013", event: "Rally Ventures Management, LLC becomes an SEC exempt reporting adviser effective 15 May 2013 (CRD 167687, SEC file 802-78093)." },
+      { year: "2016", event: "Portfolio company SportsEngine is acquired by NBC Sports, per the firm's investments page." },
+      { year: "2018", event: "Rally closes its third fund at $150 million, as stated in the firm's December 2020 Fund IV press release." },
+      { year: "2020", event: "Rally announces the close of Rally IV at $250 million on 9 December 2020, bringing total committed capital raised since inception to nearly $600 million." },
+      { year: "2021", event: "Portfolio company Braze goes public on Nasdaq under the ticker BRZE, per the firm's investments page." },
+      { year: "2023", event: "Rally announces the close of Rally Fund V at $240 million on 19 December 2023 and states the raise puts the firm over $1 billion in total assets under management." },
+      { year: "2024", event: "Co-founder Charles Beeler dies in September 2024, as stated in the firm's In Memoriam post." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "SEEDS Capital",
+    sectors: ["Advanced Manufacturing", "Agritech", "Foodtech", "Health", "Life Sciences", "Logistics", "Smart Cities", "Sustainability"],
+    signatureExit: null,
+    slug: "seeds-capital",
+    website: "https://www.seedscapital.sg",
+    short: "SEEDS",
+    founded: null,
+    hq: "Singapore, Singapore",
+    aum: null,
+    thesis: "SEEDS Capital, which brands itself as SEEDS, is a Singapore government co-investment vehicle rather than an independent venture partnership. Its site carries the Singapore Government Agency Website banner and the footer notice \"© 2026 Government of Singapore\", and is built on Isomer by Open Government Products. Its own About page states that \"SEEDS operates under SG Growth Capital, the investment platform of the Singapore Economic Development Board (EDB) and Enterprise Singapore.\" SEEDS states that it \"co-invests with venture capital firms to support early-stage tech startups in Singapore\" and that it \"is one of the appointed fund managers for the Startup SG Equity (SSGE) scheme\". Under that scheme it publishes investment caps of S$2 million from SEEDS per general tech startup and S$12 million from SEEDS per deep tech startup, with published co-investment ratios of 7:3 up to the first S$250,000 then 1:1 up to S$2 million for general tech, and 2:1 up to the first S$1 million for a first institutional round then stepping down through 1:1, 1:2 and 1:3 up to S$12 million for deep tech. Co-investments with appointed partners are reviewed by an Investment Committee; co-investments with non-appointed third-party partners go to the SEEDS Investment Panel for final assessment. Its five stated investment themes are Advanced Manufacturing and Engineering, Agritech and Foodtech, Health and Biomedical Sciences, Maritime Tech, and Urban Solutions and Sustainability.",
+    leadership: [
+      { name: "Choo Heng Tong", role: "Chief Executive Officer, SG Growth Capital (parent platform); member, SEEDS Investment Panel", profileSlug: "choo-heng-tong" },
+      { name: "Cindy Khoo", role: "Deputy Chairman, SG Growth Capital (parent platform); member, SEEDS Investment Panel", profileSlug: "cindy-khoo" },
+      { name: "Lee Kheng Nam", role: "Chairman, SEEDS Investment Panel", profileSlug: "lee-kheng-nam" },
+      { name: "Jacqueline CHIA", role: "Deputy General Manager", profileSlug: "jacqueline-chia" }
+    ],
+    timeline: [
+      { year: "2017", event: "A SPRING Singapore media release dated 14 July 2017 describes \"SPRING SEEDS Capital (SSC), an investment arm of SPRING Singapore\" and its co-investment programme with appointed co-investment partners; the SEEDS website today dates its published impact figures to \"Our Impact Since 2017\"." },
+      { year: "2024", event: "Enterprise Singapore media release 026/24, first published 2 August 2024, states \"EDBI and SEEDS Capital (SEEDS) will be merged to form a new Government investment entity called SG Growth Capital Pte Ltd.\"" },
+      { year: "2024", event: "Joint media release of 28 October 2024 announces an additional S$440 million for the Startup SG Equity scheme and raises the co-investment cap per deep tech startup from S$8 million to S$12 million; SEEDS Capital is named in a footnote as one of three appointed fund managers under the scheme, alongside EDBI and SGInnovate." },
+      { year: "2025", event: "The EDBI and SEEDS merger into SG Growth Capital Pte Ltd takes effect: \"The change will take place on 1 April 2025.\"" },
+      { year: "2025", event: "SEEDS publishes a notice dated 30 June 2025 on unauthorised use of the SEEDS name and branding by a group operating primarily in China, stating that \"SEEDS does not operate in Greater China\"." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Streamlined Ventures",
+    sectors: ["AI", "Infrastructure", "Robotics", "Marketplaces", "Blockchain", "Crypto", "Ecommerce", "Logistics", "Fintech", "Insurtech", "Defense Tech", "Space", "Healthtech", "Proptech", "Foodtech"],
+    signatureExit: "DoorDash (IPO, Nasdaq: DASH)",
+    slug: "streamlined-ventures",
+    website: "https://www.streamlined.vc",
+    short: "Streamlined",
+    founded: 2013,
+    hq: "Palo Alto, CA",
+    aum: null,
+    thesis: "Streamlined Ventures states that it partners with seed-stage founders and that it leads or co-leads seed-stage investments across horizontal technologies and vertical markets. Its Focus Areas page separates technologies of interest (AI applications and agents, AI and tech infrastructure, next gen computing, robotics, APIs, marketplaces, blockchain and crypto) from vertical markets of interest (ecommerce and logistics, fintech and insuretech, defense, space and government, healthtech and longevity, proptech and real estate tech, adtech and martech, and foodtech). The firm sets out four stated principles on its homepage: operational excellence, authenticity and candor, scalability with limited capital, and founder confidant. It works from Palo Alto, California, and alongside its main funds it has raised a series of Streamlined Opportunity Funds and single-company special purpose vehicles.",
+    leadership: [
+      { name: "Ullas Naik", role: "Founder and General Partner", profileSlug: "ullas-naik" }
+    ],
+    timeline: [
+      { year: "2013", event: "Streamlined Ventures I, L.P. files its first Form D on 27 June 2013 for a $25,000,000 offering from 1825 Emerson Street, Palo Alto, naming Ullas Naik as Managing Member of the General Partner." },
+      { year: "2013", event: "Streamlined Ventures becomes an exempt reporting adviser in California effective 4 September 2013 (CRD 168844)." },
+      { year: "2017", event: "Streamlined Ventures II, L.P. files a Form D on 4 January 2017 for a $40,000,000 offering." },
+      { year: "2019", event: "Streamlined Ventures III, L.P. files a Form D on 19 August 2019 for a $75,000,000 offering." },
+      { year: "2021", event: "Streamlined Ventures becomes an SEC exempt reporting adviser effective 23 March 2021." },
+      { year: "2022", event: "Streamlined Ventures IV, L.P. reports $100,000,000 offered and $100,000,000 sold in a Form D/A filed 26 May 2022, with a first sale date of 1 September 2021." },
+      { year: "2025", event: "Streamlined Ventures V, L.P. reports $100,000,000 offered and $90,985,000 sold in a Form D/A filed 12 March 2025, with a first sale date of 24 January 2024." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Supernova Invest",
+    sectors: ["Deep Tech", "Healthcare", "Industrial Technology", "Technology", "Energy", "Climate", "Clean Energy"],
+    signatureExit: "Gleamer (sale to RadNet, 2026)",
+    slug: "supernova-invest",
+    website: "https://supernovainvest.com",
+    short: "Supernova Invest",
+    founded: 2017,
+    hq: "Paris, France",
+    aum: "More than €800M (under management, October 2025, per the firm's own site: \"From 200 million euros under management at its creation, the company now manages more than 800 million\"; an earlier firm release of 21 March 2024 said more than €750 million)",
+    thesis: "Supernova Invest is a French deeptech venture capital manager, authorised by the Autorite des Marches Financiers as a portfolio management company under number GP-17000008 and registered at 97 rue Saint Lazare, 75009 Paris (SIREN 828 628 586, societe par actions simplifiee). Its own site describes it as \"Leader and pioneer in DeepTech investment\", investing \"From inception to maturity\" and providing \"unparalleled expertise and patient capital in the fields of Industrial Technologies, Digital, Healthcare, and Cleantech\". It states that it is \"an independent management company, investing mainly across Europe\" and that \"Investment decisions are made by the Partners on the Investment Committee\". Its investment team is organised by sector into Healthcare, Industry 4.0, Digital Technologies and Energy & Environment. It operates from Paris and Grenoble and reports \"a total of about 100 investments and more than 70 portfolio companies\" with \"30+ successful trade exits\".",
+    leadership: [
+      { name: "Pierre-Emmanuel Struyven", role: "Managing Partner", profileSlug: "pierre-emmanuel-struyven" },
+      { name: "Régis Saleur", role: "Managing Partner", profileSlug: "regis-saleur" },
+      { name: "Celia Hart", role: "General Partner", profileSlug: "celia-hart" },
+      { name: "François Breniaux", role: "General Partner", profileSlug: "francois-breniaux" },
+      { name: "Grégoire Viot", role: "Chief Financial Officer" },
+      { name: "Aladin Zeghbib", role: "General Counsel" }
+    ],
+    timeline: [
+      { year: "2017", event: "Amundi and the CEA announce on 28 March 2017 the creation of Supernova Invest, held 40 percent by CEA Investissement, 40 percent by Amundi Private Equity Funds and 20 percent by the team from CEA Investissement; it takes over the existing CEA Investissement funds and manages the new Credit Agricole Innovations et Territoires fund." },
+      { year: "2017", event: "Supernova Invest is authorised by the Autorite des Marches Financiers as a portfolio management company under number GP-17000008." },
+      { year: "2021", event: "On 26 November 2021 Supernova Invest announces the 145 million euro late-stage deeptech fund Ambition Industrie, backed by the CEA, the Credit Agricole group, portfolio founders, industrial players, institutions and family offices." },
+      { year: "2023", event: "In June 2023 the Supernova Innovation 3 seed fund reaches a first closing of 75 million euros against a 100 million euro target." },
+      { year: "2023", event: "In November 2023 Supernova Invest and Credit Agricole launch an agri and agrotech innovation capital fund with 60 million euros at first closing and a 100 million euro target." },
+      { year: "2024", event: "On 21 March 2024 Orano and Supernova Invest launch the 50 million euro Orano Venture Fund, managed by Supernova Invest, for startups in the circular economy and advanced industrial technologies." },
+      { year: "2025", event: "In January 2025 Supernova Invest announces the successful closing of the Supernova Innovation 3 seed fund at its 100 million euro target, with the CEA, regional Credit Agricole banks, VINCI, Michelin, bioMérieux, the French National Seed Fund 2 managed by Bpifrance, Orano, MACSF, Agir a Dom and Groupe Seb as investors." },
+      { year: "2026", event: "In March 2026 Supernova Invest exits Gleamer following its sale to RadNet." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Techstart Ventures",
+    sectors: ["Pre-Seed", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "techstart-ventures",
+    website: "https://www.techstart.vc",
+    short: "Techstart",
+    founded: 2014,
+    hq: "Belfast, United Kingdom",
+    aum: null,
+    thesis: "Techstart Ventures is an early-stage venture capital manager operating from Edinburgh and Belfast. It says on its own site: \"Techstart Ventures invests at inception to pre-seed stage. First cheques up to GBP 750k with capacity for follow-on. We are a venture capital fund that invest in teams with unique insights, global ambition & an obsessive approach to iteration.\" Its approach page states that it backs \"Founders pursuing uncapped global opportunities from a base in Scotland or Northern Ireland\", that it will lead, co-lead or selectively co-invest, that it typically writes first rounds of up to GBP 1 million and can participate meaningfully in rounds of up to GBP 2 million, and that it regards unique insights as more important than revenue and speed of learning as more important than customer numbers. It states no sector focus of its own, so sectors is left empty. The manager runs public-sector mandates rather than a single blended pool: Invest NI states that it \"has appointed Techstart Ventures LLP to manage Techstart III\", which comprises \"A GBP 48m SME Equity Fund with initial investments up to GBP 1m and up to GBP 4m over a series of funding rounds\" and \"A GBP 7.2m Proof of Concept Grant Fund provides grants of up to GBP 40k\"; separately, Techstart Ventures Equity Finance is described by the Scottish Government's Find Business Support service as equity finance of up to GBP 2 million per business managed on behalf of the Scottish Government under the Scottish Growth Scheme. Techstart Ventures LLP is authorised and regulated by the Financial Conduct Authority and its privacy policy identifies the data controller as \"Techstart Ventures LLP (registered number NC001436)\".",
+    leadership: [
+      { name: "Hal Wilson", role: "Partner", profileSlug: "hal-wilson" },
+      { name: "Mark Hogarth", role: "Partner", profileSlug: "mark-hogarth" },
+      { name: "Jamie Andrews", role: "LLP Designated Member, Techstart Ventures LLP", profileSlug: "jamie-andrews" }
+    ],
+    timeline: [
+      { year: "2014", event: "Invest NI states that Techstart Ventures LLP \"has been working with technology entrepreneurs since 2014\"; the Techstart NI vehicles, including TECHSTART NI SME EQUITY LIMITED PARTNERSHIP (NL000078), were registered in June 2014." },
+      { year: "2017", event: "TECHSTART VENTURES LLP is incorporated in Northern Ireland on 12 May 2017 with company number NC001436; James Robert John Andrews and Henry Richard Ernest Wilson are appointed LLP Designated Members on the same date, and PENTECH VENTURES LLP is recorded as an LLP Member from 30 June 2017." },
+      { year: "2018", event: "SCOTTISH GROWTH SCHEME - TECHSTART VENTURES EQUITY FINANCE LP (SL033425) is registered on 7 December 2018, the vehicle behind the Techstart Ventures Equity Finance mandate managed on behalf of the Scottish Government." },
+      { year: "2019", event: "Mark Stephen Hogarth is appointed an LLP Designated Member on 1 January 2019; TECHSTART VENTURES II LIMITED PARTNERSHIP (NL000738) is registered on 26 July 2019." },
+      { year: "2025", event: "TECHSTART VENTURES III LIMITED PARTNERSHIP (NL000921) is registered on 4 April 2025; Invest NI states that it \"has appointed Techstart Ventures LLP to manage Techstart III\" and that \"Techstart III is now operational\", comprising a GBP 48m SME Equity Fund and a GBP 7.2m Proof of Concept Grant Fund." },
+      { year: "2026", event: "TECHSTART SCOTLAND HOLDINGS LTD (SC882362) is incorporated in Scotland on 13 March 2026." },
+      { year: "2026", event: "The Department for the Economy announces on 2 March 2026 that Optik AI, farmdrive and Foresight received over GBP 1.8m in equity investment through Techstart Ventures, part of Invest NI's Access to Finance programme." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Third Sphere",
+    sectors: ["Clean Energy", "Smart Cities", "Industrial Tech", "Infrastructure", "Sustainability", "Transportation", "Logistics", "Climate", "Climate Technology"],
+    signatureExit: "Rachio (acquisition by Rain Bird, announced 2025)",
+    slug: "third-sphere",
+    website: "https://thirdsphere.com",
+    short: "Third Sphere",
+    founded: 2013,
+    hq: "Los Angeles, CA",
+    aum: "$50-99M (total assets under management, the range as published in the ImpactAssets IA 50 2023 manager profile; the firm publishes no point AUM figure of its own)",
+    thesis: "Third Sphere describes itself as a climate-focused venture fund investing at pre-seed and seed, typically writing initial cheques of $250,000 to $1 million and reserving follow-on capital. It says about 80 percent of its portfolio is hardware-enabled, usually with a software component, and that roughly two-thirds of the portfolio is focused on mitigation, mostly via electrification, with one-third on resilience and adaptation. It states it is primarily US-focused while having backed teams in Switzerland, Germany, Israel, the United Kingdom and South Africa. It runs a stated 'seedstrapping' model in which it invests $250k to $1m, earmarks up to $2m more for a following round, and works with founders over six months toward $1m ARR or $10m in pre-orders. It says it holds some board seats but generally prefers board observer and information rights.",
+    leadership: [
+      { name: "Shaun Abrahamson", role: "Co-Founder", profileSlug: "shaun-abrahamson" },
+      { name: "Stonly Baptiste Blue", role: "Co-Founder", profileSlug: "stonly-baptiste-blue" },
+      { name: "Shilpi Kumar", role: "Partner", profileSlug: "shilpi-kumar" },
+      { name: "Miela Mayer", role: "Investor and Operating Partner", profileSlug: "miela-mayer" },
+      { name: "Yana Andrea Klimova", role: "Chief Financial Officer" }
+    ],
+    timeline: [
+      { year: "2013", event: "The firm begins as Urban Us, in its own words to 'combat climate change by reimagining and upgrading our cities'." },
+      { year: "2016", event: "Urban Us Fund II, LP files a Form D from a Miami Beach, FL address on 26 January 2016." },
+      { year: "2017", event: "The firm builds and operates the URBAN-X accelerator, which it ran from 2017 to 2021." },
+      { year: "2019", event: "Urban Us Fund III, LP files a Form D from a Brooklyn, NY address reporting a $45,000,000 offering with a first sale on 18 March 2019." },
+      { year: "2021", event: "URBAN-X concluded in December 2021, per the firm's own funds page." },
+      { year: "2022", event: "Urban Us renames itself Third Sphere, announced by co-founder Shaun Abrahamson on 27 February 2022 and reported by TechCrunch on 1 March 2022." },
+      { year: "2022", event: "Third Sphere Fund IV, LP files a Form D from a Los Angeles, CA address on 20 May 2022 reporting a $100,000,000 offering, $9,875,000 sold, first sale 6 May 2022." },
+      { year: "2025", event: "The firm reports three portfolio M&A exits in its 9 October 2025 update: Firmus to Bluebeam, Rachio to Rain Bird, and Urbint to Itron." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "TSVC",
+    sectors: ["AI", "Robotics", "Advanced Manufacturing", "Energy", "Deep Tech"],
+    signatureExit: "Zoom (IPO, 2019)",
+    slug: "tsvc",
+    website: "https://www.tsvcap.com",
+    short: "TSVC",
+    founded: 2010,
+    hq: "Los Altos, CA",
+    aum: "Not publicly disclosed (no AUM figure is published; fund sizes only - TSVC Fund V reported a $57.36M offering fully sold in August 2023, and Fund VI a $120M offering with $19.6M sold as at April 2026)",
+    thesis: "TSVC, whose full name on its own About page is TSV Capital, is a Silicon Valley seed-stage venture firm. Its About page states it was \"founded in 2010 and formerly known as TEEC Angel Fund\" and describes itself as \"a Silicon Valley seed-stage venture firm focused on backing exceptional technical founders at the earliest stages of company building.\" The same page states the firm is focused on \"the next wave of innovation at the intersection of AI, robotics, advanced manufacturing, and energy systems.\" The homepage foregrounds Physical AI, Deep Tech and immigrant founders. Alongside the fund the firm runs two named non-fund programmes described on its Community page: TSVC Experiences, an intern, scout and fellow track for students and young professionals, and The Alpha Program, a pre-seed programme co-founded by TSVC and SAF (Sinovel Angel Fund). It also describes a TSVC Giving Fund formed from a portion of investment profit. None of these programme figures are fund figures.",
+    leadership: [
+      { name: "Eugene Zhang", role: "Founding Partner", profileSlug: "eugene-zhang" },
+      { name: "Chun Xia", role: "Founding Partner", profileSlug: "chun-xia" },
+      { name: "Charles Shao", role: "General Partner", profileSlug: "charles-shao" },
+      { name: "Spencer Greene", role: "General Partner", profileSlug: "spencer-greene" },
+      { name: "Lisheng Wang", role: "General Partner", profileSlug: "lisheng-wang" }
+    ],
+    timeline: [
+      { year: "2010", event: "Firm founded as TEEC Angel Fund by Eugene Zhang (张于庆) and Chun Xia (夏淳); 21st Century Business Herald states “2010年和‘上铺的兄弟’夏淳共同创办 TEEC Angel Fund” and the TSVC About page states the firm was “founded in 2010 and formerly known as TEEC Angel Fund”." },
+      { year: "2011", event: "Seed investment in Zoom. Forbes (5 December 2022) states “His firm, TSVC, was the first institutional investor in the initial round of funding for Zoom in 2011. Its check for $250,000 garnered a 200x return.”" },
+      { year: "2018", event: "TEEC Angel Fund renamed TSVC; 21st Century Business Herald states verbatim “2018年，TAF更名为TSVC。” and quotes co-founder Zhang Yuqing (Eugene Zhang) as saying “TEEC作为清华校友企业家组织是非营利性的，我们作为营利性的企业不适合再用这个名字”." },
+      { year: "2018", event: "Spencer Greene joins as Venture Partner, announced in the firm's own Medium post “Spencer Greene has joined TSVC as a Venture Partner” dated 24 May 2018." },
+      { year: "2021", event: "TSVC Fund V LP begins selling; Form D records a first sale of 15 November 2021." },
+      { year: "2023", event: "TSVC Fund V LP Form D/A filed 21 August 2023 records the $57,360,000 offering as fully sold, with $0 remaining." },
+      { year: "2026", event: "TSVC Fund VI, LP files a Form D on 13 April 2026 for a $120,000,000 offering, $19,600,000 sold, first sale 31 March 2026." }
+    ],
+    holdings: []
   }
 ];
