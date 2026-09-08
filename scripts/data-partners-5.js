@@ -12864,5 +12864,2272 @@ Object.assign(partnerProfiles, {
     sources: [
       { label: "UntroD - About Us (team page, roster and biography, checked 8 September 2026)", url: "https://untrod.inc/en/about/" }
     ]
+  },
+
+/* ---- Firm batch 9, added 7 September 2026: 108 partner records across the 20
+   firms appended to data-firms.js in the same batch. Shards rotate by size;
+   this batch goes into shard 5, the smallest. Shard order does not matter -
+   every shard Object.assigns into the same partnerProfiles - and shard 5 is
+   already registered in index.html and both generator load lists, so no
+   <script> tag or wiring changes. firmSlug values follow the two slug
+   corrections made in data-firms.js: salt-vc and primo-capital. Checked
+   against all 2,827 pre-existing partner records for slug and name
+   collisions; none found. ---- */
+"danielle-strachman": {
+    name: "Danielle Strachman",
+    firm: "1517 Fund",
+    firmSlug: "1517-fund",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Danielle Strachman is listed as a General Partner on the 1517 Fund team page. 1517's homepage identifies her as a co-founder of the fund and states that 1517's founders co-founded the Thiel Fellowship in 2010. No further biographical detail was gathered within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "1517 Fund - Team", url: "https://www.1517fund.com/team" },
+      { label: "1517 Fund - Homepage", url: "https://www.1517fund.com/" }
+    ]
+  },
+"michael-gibson": {
+    name: "Michael Gibson",
+    firm: "1517 Fund",
+    firmSlug: "1517-fund",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Michael Gibson is listed as a General Partner on the 1517 Fund team page. 1517's homepage identifies him as a co-founder of the fund and states that 1517's founders co-founded the Thiel Fellowship in 2010. No further biographical detail was gathered within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "1517 Fund - Team", url: "https://www.1517fund.com/team" },
+      { label: "1517 Fund - Homepage", url: "https://www.1517fund.com/" }
+    ]
+  },
+"nick-arnett": {
+    name: "Nick Arnett",
+    firm: "1517 Fund",
+    firmSlug: "1517-fund",
+    title: "Principal",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Nick Arnett is listed as a Principal on the 1517 Fund team page. The 1517 homepage separately lists him with the title Partner; the dedicated team page was taken as authoritative. No further biographical detail was gathered within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "1517 Fund - Team", url: "https://www.1517fund.com/team" }
+    ]
+  },
+"zak-slayback": {
+    name: "Zak Slayback",
+    firm: "1517 Fund",
+    firmSlug: "1517-fund",
+    title: "Principal",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Zak Slayback is listed as a Principal on the 1517 Fund team page. The 1517 homepage separately lists him with the title Partner; the dedicated team page was taken as authoritative. No further biographical detail was gathered within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "1517 Fund - Team", url: "https://www.1517fund.com/team" }
+    ]
+  },
+"andrew-j-scott": {
+    name: "Andrew J Scott",
+    firm: "7percent Ventures",
+    firmSlug: "7percent-ventures",
+    title: "Founding Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "BritishPathe.com - founder",
+      "playtxt - founder",
+      "Rummble - founder",
+      "ICE - co-founder (2009)",
+      "DragonChasers - Co-Founder and Chair"
+    ],
+    boardSeats: [
+      "Universal Quantum",
+      "Aerovolt",
+      "Greenjets",
+      "UnLtd World (former)"
+    ],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2009, event: "Co-founds ICE, the not-for-profit founder community, per his page on the 7percent Ventures site." }
+    ],
+    biography: "Andrew J Scott is Founding Partner of 7percent Ventures. His page on the firm's site says he is a \"Serial entrepreneur turned Founding Partner 7percent Ventures\" who \"has been investing in deeptech for >10 years\", and that as a founder he built \"the world's first online digital news archive (BritishPathe.com), world's first location based mobile social network (playtxt) and an early personalisation AI startup (Rummble)\". The same page says he \"previously sat on the board of UnLtd World (sold to Guardian Media Group), the Silicon Valley Advisory group to the EU Commission and SVB's Early Stage Advisory Board\", that in 2009 he co-founded ICE, a not-for-profit founder community, and that he is Co-Founder and Chair of DragonChasers, a GP and LP community. It states that he currently sits on the boards of Universal Quantum, Aerovolt and Greenjets. No education is given on the firm's site.",
+    notableInvestments: [],
+    sources: [
+      { label: "7percent Ventures - Andrew J Scott investor page", url: "https://www.7pc.vc/investor/andrewjscott" },
+      { label: "7percent Ventures - Team", url: "https://www.7pc.vc/team" }
+    ]
+  },
+"dylan-bourguignon": {
+    name: "Dylan Bourguignon",
+    firm: "7percent Ventures",
+    firmSlug: "7percent-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Dylan Bourguignon is listed as Partner on the 7percent Ventures team page. His individual investor page was not opened within this firm's page budget, so no education, prior employment, board seat or investment attribution is recorded.",
+    notableInvestments: [],
+    sources: [
+      { label: "7percent Ventures - Team", url: "https://www.7pc.vc/team" }
+    ]
+  },
+"jose-bonchristiano": {
+    name: "Jose Bonchristiano",
+    firm: "7percent Ventures",
+    firmSlug: "7percent-ventures",
+    title: "Partner Advisor, LPAC Chair",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jose Bonchristiano is listed on the 7percent Ventures team page as \"Partner Advisor, LPAC Chair\". The title is recorded exactly as the firm writes it; he is an advisor to the partnership and chair of the limited partner advisory committee rather than a full partner. No further detail was recorded within this firm's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "7percent Ventures - Team", url: "https://www.7pc.vc/team" }
+    ]
+  },
+"duncan-grierson": {
+    name: "Duncan Grierson",
+    firm: "7percent Ventures",
+    firmSlug: "7percent-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Duncan Grierson is listed as Venture Partner on the 7percent Ventures team page. His individual investor page was not opened within this firm's page budget, so no education, prior employment, board seat or investment attribution is recorded.",
+    notableInvestments: [],
+    sources: [
+      { label: "7percent Ventures - Team", url: "https://www.7pc.vc/team" }
+    ]
+  },
+"wayne-gibbins": {
+    name: "Wayne Gibbins",
+    firm: "7percent Ventures",
+    firmSlug: "7percent-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Wayne Gibbins is listed as Venture Partner on the 7percent Ventures team page. His individual investor page was not opened within this firm's page budget, so no education, prior employment, board seat or investment attribution is recorded.",
+    notableInvestments: [],
+    sources: [
+      { label: "7percent Ventures - Team", url: "https://www.7pc.vc/team" }
+    ]
+  },
+"steve-sarracino": {
+    name: "Steve Sarracino",
+    firm: "Activant Capital",
+    firmSlug: "activant-capital",
+    title: "Founder, Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Steve Sarracino is listed on the Activant team page under the leadership grouping with the title 'Founder, Partner'. The team page carries only a name, a title and a short personal quote for each person; it publishes no education, prior employers or board seats, and the individual page for the firm's founder carries the same limited content, so those fields are left unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Activant - Team", url: "https://activantcapital.com/team" },
+      { label: "Activant - Steve Sarracino", url: "https://activantcapital.com/team/steven-sarracino" }
+    ]
+  },
+"andrew-steele": {
+    name: "Andrew Steele",
+    firm: "Activant Capital",
+    firmSlug: "activant-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Andrew Steele is listed on the Activant team page under the leadership grouping with the title 'Partner'. The team page carries only a name, a title and a short personal quote for each person; it publishes no education, prior employers or board seats, and the individual page for the firm's founder carries the same limited content, so those fields are left unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Activant - Team", url: "https://activantcapital.com/team" }
+    ]
+  },
+"kevin-widmaier": {
+    name: "Kevin Widmaier",
+    firm: "Activant Capital",
+    firmSlug: "activant-capital",
+    title: "President, Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kevin Widmaier is listed on the Activant team page under the leadership grouping with the title 'President, Partner'. The team page carries only a name, a title and a short personal quote for each person; it publishes no education, prior employers or board seats, and the individual page for the firm's founder carries the same limited content, so those fields are left unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Activant - Team", url: "https://activantcapital.com/team" }
+    ]
+  },
+"maximilian-mayer": {
+    name: "Maximilian Mayer",
+    firm: "Activant Capital",
+    firmSlug: "activant-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Maximilian Mayer is listed on the Activant team page under the leadership grouping with the title 'Partner'. The team page carries only a name, a title and a short personal quote for each person; it publishes no education, prior employers or board seats, and the individual page for the firm's founder carries the same limited content, so those fields are left unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Activant - Team", url: "https://activantcapital.com/team" }
+    ]
+  },
+"aubrie-pagano": {
+    name: "Aubrie Pagano",
+    firm: "Alpaca VC",
+    firmSlug: "alpaca-vc",
+    title: "General Partner, Managing Member",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Aubrie Pagano is listed on the Alpaca VC team page as General Partner, Managing Member. No further biographical detail was gathered within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Alpaca VC - Team", url: "https://alpaca.vc/team" }
+    ]
+  },
+"ryan-freedman": {
+    name: "Ryan Freedman",
+    firm: "Alpaca VC",
+    firmSlug: "alpaca-vc",
+    title: "Co-Founder, Executive Chairman",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Quoted as General Partner of Alpaca in the firm's 15 September 2020 announcement of its rebrand from Corigin Ventures." }
+    ],
+    biography: "Ryan Freedman is listed on the Alpaca VC team page as Co-Founder, Executive Chairman. He was quoted as 'General Partner of Alpaca' in the firm's 15 September 2020 rebrand announcement, saying: 'Simply put, our name didn't reflect who we have grown to become, and we found that it was creating confusion relating to our investment strategy and areas of expertise.'",
+    notableInvestments: [],
+    sources: [
+      { label: "Alpaca VC - Team", url: "https://alpaca.vc/team" },
+      { label: "Corigin Ventures Rebrands as Alpaca VC (press release, 15 September 2020)", url: "https://www.fintechfutures.com/press-releases/corigin-ventures-rebrands-as-alpaca-vc" }
+    ]
+  },
+"josh-jagota": {
+    name: "Josh Jagota",
+    firm: "Alpaca VC",
+    firmSlug: "alpaca-vc",
+    title: "Principal",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Josh Jagota is listed on the Alpaca VC team page as Principal. No further biographical detail was gathered within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Alpaca VC - Team", url: "https://alpaca.vc/team" }
+    ]
+  },
+"david-goldberg": {
+    name: "David Goldberg",
+    firm: "Alpaca VC",
+    firmSlug: "alpaca-vc",
+    title: "Board Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "David Goldberg is listed on the Alpaca VC team page as Board Partner. No further biographical detail was gathered within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Alpaca VC - Team", url: "https://alpaca.vc/team" }
+    ]
+  },
+"daniel-fetner": {
+    name: "Daniel Fetner",
+    firm: "Alpaca VC",
+    firmSlug: "alpaca-vc",
+    title: "Board Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Daniel Fetner is listed on the Alpaca VC team page as Board Partner. No further biographical detail was gathered within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Alpaca VC - Team", url: "https://alpaca.vc/team" }
+    ]
+  },
+"philip-oconnor": {
+    name: "Philip O'Connor",
+    firm: "Blackhorn Ventures",
+    firmSlug: "blackhorn-ventures",
+    title: "Co-Founder and Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Philip O'Connor is listed on the Blackhorn Ventures team page as Co-Founder and Managing Partner. No further biographical detail was gathered within this batch's page budget; the individual profile page at https://www.blackhornvc.com/team/philip-oconnor was not opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Blackhorn Ventures - Our Team", url: "https://www.blackhornvc.com/team" }
+    ]
+  },
+"melissa-cheong": {
+    name: "Melissa Cheong",
+    firm: "Blackhorn Ventures",
+    firmSlug: "blackhorn-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Melissa Cheong is listed on the Blackhorn Ventures team page as Managing Partner. No further biographical detail was gathered within this batch's page budget; the individual profile page at https://www.blackhornvc.com/team/melissa-cheong was not opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Blackhorn Ventures - Our Team", url: "https://www.blackhornvc.com/team" }
+    ]
+  },
+"micah-kotch": {
+    name: "Micah Kotch",
+    firm: "Blackhorn Ventures",
+    firmSlug: "blackhorn-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Micah Kotch is listed on the Blackhorn Ventures team page as Partner. No further biographical detail was gathered within this batch's page budget; the individual profile page at https://www.blackhornvc.com/team/micah-kotch was not opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Blackhorn Ventures - Our Team", url: "https://www.blackhornvc.com/team" }
+    ]
+  },
+"stephan-cizmar": {
+    name: "Stephan Cizmar",
+    firm: "Blackhorn Ventures",
+    firmSlug: "blackhorn-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Stephan Cizmar is listed on the Blackhorn Ventures team page as Partner. No further biographical detail was gathered within this batch's page budget; the individual profile page at https://www.blackhornvc.com/team/stephan-cizmar was not opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Blackhorn Ventures - Our Team", url: "https://www.blackhornvc.com/team" }
+    ]
+  },
+"jack-fuchs": {
+    name: "Jack Fuchs",
+    firm: "Blackhorn Ventures",
+    firmSlug: "blackhorn-ventures",
+    title: "Co-Founder and Operating Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jack Fuchs is listed on the Blackhorn Ventures team page as Co-Founder and Operating Partner. No further biographical detail was gathered within this batch's page budget; the individual profile page at https://www.blackhornvc.com/team/jack-fuchs was not opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Blackhorn Ventures - Our Team", url: "https://www.blackhornvc.com/team" }
+    ]
+  },
+"eric-lamb": {
+    name: "Eric Lamb",
+    firm: "Blackhorn Ventures",
+    firmSlug: "blackhorn-ventures",
+    title: "Operating Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Eric Lamb is listed on the Blackhorn Ventures team page as Operating Partner. No further biographical detail was gathered within this batch's page budget; the individual profile page at https://www.blackhornvc.com/team/eric-lamb was not opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Blackhorn Ventures - Our Team", url: "https://www.blackhornvc.com/team" }
+    ]
+  },
+"rodolfo-dieck": {
+    name: "Rodolfo Dieck",
+    firm: "Blackhorn Ventures",
+    firmSlug: "blackhorn-ventures",
+    title: "Operating Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Rodolfo Dieck is listed on the Blackhorn Ventures team page as Operating Partner. No further biographical detail was gathered within this batch's page budget; the individual profile page at https://www.blackhornvc.com/team/rodolfo-dieck was not opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Blackhorn Ventures - Our Team", url: "https://www.blackhornvc.com/team" }
+    ]
+  },
+"enrique-zambrano": {
+    name: "Enrique Zambrano",
+    firm: "Blackhorn Ventures",
+    firmSlug: "blackhorn-ventures",
+    title: "Operating Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Enrique Zambrano is listed on the Blackhorn Ventures team page as Operating Partner. No further biographical detail was gathered within this batch's page budget; the individual profile page at https://www.blackhornvc.com/team/enrique-zambrano was not opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Blackhorn Ventures - Our Team", url: "https://www.blackhornvc.com/team" }
+    ]
+  },
+"amanda-rohrer": {
+    name: "Amanda Rohrer",
+    firm: "Blackhorn Ventures",
+    firmSlug: "blackhorn-ventures",
+    title: "Principal",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Amanda Rohrer is listed on the Blackhorn Ventures team page as Principal. No further biographical detail was gathered within this batch's page budget; the individual profile page at https://www.blackhornvc.com/team/amanda-rohrer was not opened.",
+    notableInvestments: [],
+    sources: [
+      { label: "Blackhorn Ventures - Our Team", url: "https://www.blackhornvc.com/team" }
+    ]
+  },
+"eric-lagier": {
+    name: "Eric Lagier",
+    firm: "byFounders",
+    firmSlug: "byfounders",
+    title: "Founding Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2017, event: "Co-founds byFounders and introduces the fund in a post on the firm's site dated 4 September 2017." }
+    ],
+    biography: "Eric Lagier is listed as Founding Partner on the byFounders team page. He is named with Tommy Andersen as a founding partner in the firm's own introduction post dated 4 September 2017. No education, prior employment, board seat or investment attribution is recorded; individual biography pages were not opened within this firm's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "byFounders - Team", url: "https://www.byfounders.vc/team" },
+      { label: "byFounders - Introducing: For Founders byFounders (4 September 2017)", url: "https://www.byfounders.vc/insights/introducing-byfounders" }
+    ]
+  },
+"tommy-andersen": {
+    name: "Tommy Andersen",
+    firm: "byFounders",
+    firmSlug: "byfounders",
+    title: "Founding Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2017, event: "Co-founds byFounders and introduces the fund in a post on the firm's site dated 4 September 2017." }
+    ],
+    biography: "Tommy Andersen is listed as Founding Partner on the byFounders team page. He is named with Eric Lagier as a founding partner in the firm's own introduction post dated 4 September 2017. No education, prior employment, board seat or investment attribution is recorded; individual biography pages were not opened within this firm's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "byFounders - Team", url: "https://www.byfounders.vc/team" },
+      { label: "byFounders - Introducing: For Founders byFounders (4 September 2017)", url: "https://www.byfounders.vc/insights/introducing-byfounders" }
+    ]
+  },
+"magnus-hambleton": {
+    name: "Magnus Hambleton",
+    firm: "byFounders",
+    firmSlug: "byfounders",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Magnus Hambleton is listed as Partner on the byFounders team page. No education, prior employment, board seat or investment attribution is recorded; individual biography pages were not opened within this firm's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "byFounders - Team", url: "https://www.byfounders.vc/team" }
+    ]
+  },
+"martin-krag": {
+    name: "Martin Krag",
+    firm: "byFounders",
+    firmSlug: "byfounders",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Martin Krag is listed as Partner on the byFounders team page. No education, prior employment, board seat or investment attribution is recorded; individual biography pages were not opened within this firm's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "byFounders - Team", url: "https://www.byfounders.vc/team" }
+    ]
+  },
+"sara-rywe": {
+    name: "Sara Rywe",
+    firm: "byFounders",
+    firmSlug: "byfounders",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Sara Rywe is listed as Partner on the byFounders team page. No education, prior employment, board seat or investment attribution is recorded; individual biography pages were not opened within this firm's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "byFounders - Team", url: "https://www.byfounders.vc/team" }
+    ]
+  },
+"matt-gorin": {
+    name: "Matt Gorin",
+    firm: "Contour Venture Partners",
+    firmSlug: "contour-venture-partners",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: ["Financial Services", "Enterprise SaaS", "B2B Vertical SaaS"],
+    education: [
+      "MBA, Harvard Business School",
+      "BA in Economics and American Studies, Brandeis University"
+    ],
+    previousExperience: [
+      "Promontory Financial Group (merchant banking)",
+      "Promontory Interfinancial Network / IntraFI (launch team member)",
+      "Red Hat, Strategic Planning and Corporate Development",
+      "Morgan Stanley venture capital fund",
+      "PricewaterhouseCoopers (turnaround consultant)",
+      "Founder, StreetWise Partners (nonprofit)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2005, event: "Co-founds Contour Venture Partners in New York." }
+    ],
+    biography: "Matt Gorin is a Managing Partner and co-founder of Contour Venture Partners. His firm bio states \"twenty six years of experience as an operator, entrepreneur and seed stage venture capitalist\". Before Contour he worked in merchant banking at Promontory Financial Group and was a launch team member at Promontory Interfinancial Network, later IntraFI; he had earlier roles in Red Hat's strategic planning and corporate development group, at a Morgan Stanley venture capital fund and as a turnaround consultant at PricewaterhouseCoopers. He founded the nonprofit StreetWise Partners. He holds an MBA from Harvard Business School and a BA in Economics and American Studies from Brandeis University. The firm's team page ties him to portfolio companies including Datadog, Pendo, OnDeck, Movable Ink, ShopKeep, LeagueApps, SmartAsset, Octane, Cutover, Compyl, Felix Pago, OnRamp, Routehappy, SwapDrive, Ticketfly, Wunderkind, YellowJacket and Yhat. The page does not state board seats, so none are recorded.",
+    notableInvestments: [
+      { name: "Datadog", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "cloud monitoring and observability", role: null, evidence: [{ url: "https://www.contourventures.com/team/", type: "firm-team-page", checked: "2026-09-08" }] },
+      { name: "Pendo", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "product analytics", role: null, evidence: [{ url: "https://www.contourventures.com/team/", type: "firm-team-page", checked: "2026-09-08" }] },
+      { name: "OnDeck", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Fintech", subsector: "small business lending", role: null, evidence: [{ url: "https://www.contourventures.com/team/", type: "firm-team-page", checked: "2026-09-08" }] },
+      { name: "Movable Ink", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "marketing personalisation", role: null, evidence: [{ url: "https://www.contourventures.com/team/", type: "firm-team-page", checked: "2026-09-08" }] }
+    ],
+    sources: [
+      { label: "Contour Venture Partners - Team", url: "https://www.contourventures.com/team/" },
+      { label: "Contour Venture Partners - Homepage", url: "https://www.contourventures.com/" }
+    ]
+  },
+"bob-greene": {
+    name: "Bob Greene",
+    firm: "Contour Venture Partners",
+    firmSlug: "contour-venture-partners",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: ["Financial Services", "Enterprise SaaS", "B2B Vertical SaaS"],
+    education: [
+      "BS, Wharton School of Business",
+      "MBA, MIT Sloan School of Management"
+    ],
+    previousExperience: [
+      "Flatiron Partners (one of three managing partners)",
+      "Chase Capital Partners (General Partner)",
+      "Prudential Equity Investors / Cornerstone Equity Partners",
+      "First Boston",
+      "Fleet Financial",
+      "President, New York Venture Capital Association",
+      "Guest lecturer, MIT Sloan and Wharton"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1988, event: "Joins Prudential Equity Investors, later Cornerstone Equity Partners." },
+      { year: 1996, event: "Leads the launch of Flatiron Partners in New York, and of Pitango in Israel." },
+      { year: 1997, event: "Leads the launch of Techfund in Silicon Valley." },
+      { year: 1999, event: "Becomes a General Partner at Chase Capital Partners." },
+      { year: 2005, event: "Co-founds Contour Venture Partners in New York." }
+    ],
+    biography: "Bob Greene is a Managing Partner and co-founder of Contour Venture Partners. His firm bio describes him as a \"venture capitalist since the late 1980's\". He was one of three managing partners at Flatiron Partners, which his bio says backed more than 50 companies with over $500M of capital, and a General Partner at Chase Capital Partners from 1999. He led the launch of Flatiron in New York in 1996, Pitango in Israel in 1996 and Techfund in Silicon Valley in 1997, and joined Prudential Equity Investors, later Cornerstone Equity Partners, in 1988, after five years as a banker at First Boston and Fleet Financial. He has served as President of the New York Venture Capital Association and lectures at MIT Sloan and Wharton. He holds a BS from the Wharton School of Business and an MBA from the MIT Sloan School of Management. The team page ties him to Simpli.fi, Wunderkind, Dstillery, Slice, Syndio, Punchbowl, Scripta Insights, Pathgather/Degreed, Radius Networks, WaveBL, Kidas, Overalls, Pelicargo, Source3 and SwapDrive. The page does not state board seats, so none are recorded.",
+    notableInvestments: [
+      { name: "Simpli.fi", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Adtech", subsector: "programmatic advertising", role: null, evidence: [{ url: "https://www.contourventures.com/team/", type: "firm-team-page", checked: "2026-09-08" }] },
+      { name: "Wunderkind", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Adtech", subsector: "performance marketing", role: null, evidence: [{ url: "https://www.contourventures.com/team/", type: "firm-team-page", checked: "2026-09-08" }] },
+      { name: "Dstillery", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Adtech", subsector: "audience data and targeting", role: null, evidence: [{ url: "https://www.contourventures.com/team/", type: "firm-team-page", checked: "2026-09-08" }] },
+      { name: "Syndio", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "workplace pay equity analytics", role: null, evidence: [{ url: "https://www.contourventures.com/team/", type: "firm-team-page", checked: "2026-09-08" }] }
+    ],
+    sources: [
+      { label: "Contour Venture Partners - Team", url: "https://www.contourventures.com/team/" },
+      { label: "Contour Venture Partners - Homepage", url: "https://www.contourventures.com/" }
+    ]
+  },
+"owen-davis": {
+    name: "Owen Davis",
+    firm: "Contour Venture Partners",
+    firmSlug: "contour-venture-partners",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: ["Financial Services", "Enterprise SaaS", "B2B Vertical SaaS"],
+    education: [
+      "MBA, Columbia Business School",
+      "Bachelor's degree, Brown University"
+    ],
+    previousExperience: [
+      "NYC Seed (Managing Director, 2008-2016)",
+      "NYC Seedstart accelerator (founder)",
+      "Thinking Media (founder)",
+      "Sonata (co-founder, 1999)",
+      "Petal Computing (co-founder)",
+      "Adjunct professor, Columbia Business School and Columbia Law School",
+      "Past adjunct engineering professor, New York University"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 1999, event: "Co-founds Sonata, a wireless and location-based services company." },
+      { year: 2008, event: "Becomes Managing Director of NYC Seed, a role held to 2016, and founds the NYC Seedstart accelerator." }
+    ],
+    biography: "Owen Davis is a General Partner at Contour Venture Partners. His firm bio states he was \"Managing Director of NYC Seed\" from 2008 to 2016 and founded the NYC Seedstart accelerator. Earlier he founded the online marketing firm Thinking Media, co-founded the wireless and location-based services company Sonata in 1999, and co-founded Petal Computing. He holds patents in Internet methods and technologies, wrote 'Instant Java Applets' for Ziff-Davis Press, is an adjunct professor at Columbia Business School and Columbia Law School and was previously an adjunct engineering professor at New York University. He was an original member and board member of the World Wide Web Artists Consortium. He holds an MBA from Columbia Business School and a bachelor's degree from Brown University. The team page does not tie specific portfolio companies to him, so none are recorded.",
+    notableInvestments: [],
+    sources: [
+      { label: "Contour Venture Partners - Team", url: "https://www.contourventures.com/team/" },
+      { label: "Contour Venture Partners - Homepage", url: "https://www.contourventures.com/" }
+    ]
+  },
+"hsu-ken-ooi": {
+    name: "Hsu Ken Ooi",
+    firm: "Iterative",
+    firmSlug: "iterative",
+    title: "Founder, General Partner",
+    joinedYear: null,
+    investmentFocus: ["Southeast Asia", "Early stage"],
+    education: [
+      "University of Washington - degree in mathematics and statistics"
+    ],
+    previousExperience: [
+      "Chief Product Officer, Workmate",
+      "VP of Product, Weave",
+      "Co-founder, Decide.com"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Iterative's first accelerator batch starts on 1 June 2020." }
+    ],
+    biography: "Hsu Ken Ooi is listed on Iterative's team page as Founder, General Partner. Iterative's own Fund II announcement describes his background as Chief Product Officer at Workmate and VP of Product at Weave, and as a co-founder of Decide.com, and says he holds a mathematics and statistics degree from the University of Washington and is originally from Penang, Malaysia. He is named alongside Brian Ma and Hsu Han Ooi as one of the three founders in the firm's post Starting Iterative.",
+    notableInvestments: [],
+    sources: [
+      { label: "Iterative - Team", url: "https://www.iterative.vc/team" },
+      { label: "Iterative - Iterative Closes $55M Fund II", url: "https://www.iterative.vc/post/iterative-closes-55m-fund-ii-to-back-100-more-companies-with-up-to-500k-usd" },
+      { label: "Iterative - Starting Iterative", url: "https://www.iterative.vc/post/starting-iterative" }
+    ]
+  },
+"brian-ma": {
+    name: "Brian Ma",
+    firm: "Iterative",
+    firmSlug: "iterative",
+    title: "Founder, General Partner",
+    joinedYear: null,
+    investmentFocus: ["Southeast Asia", "Early stage"],
+    education: [
+      "Computer science and electrical engineering"
+    ],
+    previousExperience: [
+      "Co-founder, Divvy Homes",
+      "Co-founder, Weave (Y Combinator S14)",
+      "Co-founder, Decide.com",
+      "Early product manager, Zillow"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2013, event: "Decide.com, which he co-founded, is acquired by eBay, per Iterative's Fund II post." },
+      { year: 2020, event: "Iterative's first accelerator batch starts on 1 June 2020." }
+    ],
+    biography: "Brian Ma is listed on Iterative's team page as Founder, General Partner. Iterative's own Fund II announcement describes him as a co-founder of Divvy Homes, of Weave (Y Combinator S14) and of Decide.com, which was acquired by eBay in 2013, and says he held an early product management role at Zillow and studied computer science and electrical engineering. He is named alongside Hsu Ken Ooi and Hsu Han Ooi as one of the three founders in the firm's post Starting Iterative.",
+    notableInvestments: [],
+    sources: [
+      { label: "Iterative - Team", url: "https://www.iterative.vc/team" },
+      { label: "Iterative - Iterative Closes $55M Fund II", url: "https://www.iterative.vc/post/iterative-closes-55m-fund-ii-to-back-100-more-companies-with-up-to-500k-usd" },
+      { label: "Iterative - Starting Iterative", url: "https://www.iterative.vc/post/starting-iterative" }
+    ]
+  },
+"hsu-han-ooi": {
+    name: "Hsu Han Ooi",
+    firm: "Iterative",
+    firmSlug: "iterative",
+    title: "Founder, Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Hsu Han Ooi is listed on Iterative's team page under Iterative Capital with the title Founder, Partner, and is named as one of the three founders in the firm's post Starting Iterative. No education, prior employment or individual investments for him were found on the pages consulted.",
+    notableInvestments: [],
+    sources: [
+      { label: "Iterative - Team", url: "https://www.iterative.vc/team" },
+      { label: "Iterative - Starting Iterative", url: "https://www.iterative.vc/post/starting-iterative" }
+    ]
+  },
+"tharald-nustad": {
+    name: "Tharald Nustad",
+    firm: "Katapult",
+    firmSlug: "katapult",
+    title: "Founder",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tharald Nustad is named on Katapult's About and Team pages as the founder who established Katapult in Oslo in 2015. He is the only person named on any Katapult page that could be read: the team page's roster does not render to a plain fetch, so no further Katapult partner-level people could be enumerated and no education, prior employment or investments for him could be sourced.",
+    notableInvestments: [],
+    sources: [
+      { label: "Katapult - About", url: "https://katapult.vc/about/" },
+      { label: "Katapult - Team", url: "https://katapult.vc/about/team/" }
+    ]
+  },
+"bill-bartee": {
+    name: "Bill Bartee",
+    firm: "Main Sequence",
+    firmSlug: "main-sequence-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Bill Bartee is listed on Main Sequence's team page with the title Managing Partner. Main Sequence is a deep tech venture firm founded in 2017 and described on its own About page as co-founded by CSIRO, Australia's national science agency. No education, prior employment, board seats or individual investments for this person were available from the pages consulted within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Main Sequence - Team", url: "https://www.mseq.vc/team" }
+    ]
+  },
+"gabrielle-munzer": {
+    name: "Gabrielle Munzer",
+    firm: "Main Sequence",
+    firmSlug: "main-sequence-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Gabrielle Munzer is listed on Main Sequence's team page with the title Partner. Main Sequence is a deep tech venture firm founded in 2017 and described on its own About page as co-founded by CSIRO, Australia's national science agency. No education, prior employment, board seats or individual investments for this person were available from the pages consulted within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Main Sequence - Team", url: "https://www.mseq.vc/team" }
+    ]
+  },
+"martin-duursma": {
+    name: "Martin Duursma",
+    firm: "Main Sequence",
+    firmSlug: "main-sequence-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Martin Duursma is listed on Main Sequence's team page with the title Partner. Main Sequence is a deep tech venture firm founded in 2017 and described on its own About page as co-founded by CSIRO, Australia's national science agency. No education, prior employment, board seats or individual investments for this person were available from the pages consulted within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Main Sequence - Team", url: "https://www.mseq.vc/team" }
+    ]
+  },
+"mike-nicholls": {
+    name: "Mike Nicholls",
+    firm: "Main Sequence",
+    firmSlug: "main-sequence-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Mike Nicholls is listed on Main Sequence's team page with the title Partner. Main Sequence is a deep tech venture firm founded in 2017 and described on its own About page as co-founded by CSIRO, Australia's national science agency. No education, prior employment, board seats or individual investments for this person were available from the pages consulted within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Main Sequence - Team", url: "https://www.mseq.vc/team" }
+    ]
+  },
+"mike-zimmerman": {
+    name: "Mike Zimmerman",
+    firm: "Main Sequence",
+    firmSlug: "main-sequence-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Mike Zimmerman is listed on Main Sequence's team page with the title Partner. Main Sequence is a deep tech venture firm founded in 2017 and described on its own About page as co-founded by CSIRO, Australia's national science agency. No education, prior employment, board seats or individual investments for this person were available from the pages consulted within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Main Sequence - Team", url: "https://www.mseq.vc/team" }
+    ]
+  },
+"phil-morle": {
+    name: "Phil Morle",
+    firm: "Main Sequence",
+    firmSlug: "main-sequence-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Phil Morle is listed on Main Sequence's team page with the title Partner. Main Sequence is a deep tech venture firm founded in 2017 and described on its own About page as co-founded by CSIRO, Australia's national science agency. No education, prior employment, board seats or individual investments for this person were available from the pages consulted within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Main Sequence - Team", url: "https://www.mseq.vc/team" }
+    ]
+  },
+"nick-moran": {
+    name: "Nick Moran",
+    firm: "New Stack Ventures",
+    firmSlug: "new-stack-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Nick Moran is listed as General Partner on the New Stack Ventures site, where he is the senior investing decision-maker named. The firm invests at angel, pre-seed and seed with stated checks of $500K to $1.5M across Vertical AI, Fintech, Healthcare and Industrials. No education, prior employment or board seats for him are published on the firm's site, and New Stack Ventures publishes no separate team or bio pages, so none are recorded here.",
+    notableInvestments: [],
+    sources: [
+      { label: "New Stack Ventures - Homepage (team, thesis and check sizes)", url: "https://www.newstack.com/" }
+    ]
+  },
+"nate-pierotti": {
+    name: "Nate Pierotti",
+    firm: "New Stack Ventures",
+    firmSlug: "new-stack-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Nate Pierotti is listed as Venture Partner on the New Stack Ventures site. The firm publishes no individual bio page for him, so no education, prior employment, board seats or named investments are recorded here.",
+    notableInvestments: [],
+    sources: [
+      { label: "New Stack Ventures - Homepage (team, thesis and check sizes)", url: "https://www.newstack.com/" }
+    ]
+  },
+"mike-smerklo": {
+    name: "Mike Smerklo",
+    firm: "Next Coast Ventures",
+    firmSlug: "next-coast-ventures",
+    title: "Co-Founder and Managing Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Co-founds Next Coast Ventures." }
+    ],
+    biography: "Mike Smerklo is Co-Founder and Managing Director of Next Coast Ventures, which he co-founded in 2015 with Thomas Ball. He is one of the two people the firm lists under its Investment Team heading. The firm's people page carries no education, prior employment, board seat or named-investment detail for him, so none is recorded here.",
+    notableInvestments: [],
+    sources: [
+      { label: "Next Coast Ventures - People", url: "https://www.nextcoastventures.com/people" }
+    ]
+  },
+"thomas-ball": {
+    name: "Thomas Ball",
+    firm: "Next Coast Ventures",
+    firmSlug: "next-coast-ventures",
+    title: "Co-Founder and Managing Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2015, event: "Co-founds Next Coast Ventures." }
+    ],
+    biography: "Thomas Ball is Co-Founder and Managing Director of Next Coast Ventures, which he co-founded in 2015 with Mike Smerklo. He is one of the two people the firm lists under its Investment Team heading. The firm's people page carries no education, prior employment, board seat or named-investment detail for him, so none is recorded here.",
+    notableInvestments: [],
+    sources: [
+      { label: "Next Coast Ventures - People", url: "https://www.nextcoastventures.com/people" }
+    ]
+  },
+"kaitlyn-debernardo": {
+    name: "Kaitlyn DeBernardo",
+    firm: "Next Coast Ventures",
+    firmSlug: "next-coast-ventures",
+    title: "Partner, COO & Head of Platform",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kaitlyn DeBernardo is listed as \"Partner, COO & Head of Platform\" under the Operations Team heading on the Next Coast Ventures people page. She holds a partner title at the firm, so a record is created, but her role as printed is operations and platform rather than investing. The page carries no education, prior employment or board seat detail for her.",
+    notableInvestments: [],
+    sources: [
+      { label: "Next Coast Ventures - People", url: "https://www.nextcoastventures.com/people" }
+    ]
+  },
+"adam-rogers": {
+    name: "Adam Rogers",
+    firm: "Next Coast Ventures",
+    firmSlug: "next-coast-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Adam Rogers is listed under the Venture Partners heading on the Next Coast Ventures people page, and is the only person in that section whose printed descriptor is a Next Coast role: \"Partner at Next Coast Ventures\". The title recorded here is that printed title and has not been upgraded. No education, prior employment, board seat or named-investment detail is published for him.",
+    notableInvestments: [],
+    sources: [
+      { label: "Next Coast Ventures - People", url: "https://www.nextcoastventures.com/people" }
+    ]
+  },
+"julie-dodd": {
+    name: "Julie Dodd",
+    firm: "Next Coast Ventures",
+    firmSlug: "next-coast-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Julie Dodd is listed under the Venture Partners heading on the Next Coast Ventures people page, where the descriptor printed beside the name is \"Operating Partner at Welsh, Carson, Anderson & Stowe\". The firm publishes no further bio, education or board seat detail for its Venture Partners, so none is recorded here.",
+    notableInvestments: [],
+    sources: [
+      { label: "Next Coast Ventures - People", url: "https://www.nextcoastventures.com/people" }
+    ]
+  },
+"paul-rogers": {
+    name: "Paul Rogers",
+    firm: "Next Coast Ventures",
+    firmSlug: "next-coast-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Paul Rogers is listed under the Venture Partners heading on the Next Coast Ventures people page, where the descriptor printed beside the name is \"CTO at Equipment Share\". The firm publishes no further bio, education or board seat detail for its Venture Partners, so none is recorded here.",
+    notableInvestments: [],
+    sources: [
+      { label: "Next Coast Ventures - People", url: "https://www.nextcoastventures.com/people" }
+    ]
+  },
+"brian-sharples": {
+    name: "Brian Sharples",
+    firm: "Next Coast Ventures",
+    firmSlug: "next-coast-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Brian Sharples is listed under the Venture Partners heading on the Next Coast Ventures people page, where the descriptor printed beside the name is \"Co-founder and CEO of HomeAway\". The firm publishes no further bio, education or board seat detail for its Venture Partners, so none is recorded here.",
+    notableInvestments: [],
+    sources: [
+      { label: "Next Coast Ventures - People", url: "https://www.nextcoastventures.com/people" }
+    ]
+  },
+"cotter-cunningham": {
+    name: "Cotter Cunningham",
+    firm: "Next Coast Ventures",
+    firmSlug: "next-coast-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Cotter Cunningham is listed under the Venture Partners heading on the Next Coast Ventures people page, where the descriptor printed beside the name is \"Consumer Internet and Marketplace Executive\". The firm publishes no further bio, education or board seat detail for its Venture Partners, so none is recorded here.",
+    notableInvestments: [],
+    sources: [
+      { label: "Next Coast Ventures - People", url: "https://www.nextcoastventures.com/people" }
+    ]
+  },
+"julian-castelli": {
+    name: "Julian Castelli",
+    firm: "Next Coast Ventures",
+    firmSlug: "next-coast-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Julian Castelli is listed under the Venture Partners heading on the Next Coast Ventures people page, where the descriptor printed beside the name is \"Senior Technology + SaaS executive\". The firm publishes no further bio, education or board seat detail for its Venture Partners, so none is recorded here.",
+    notableInvestments: [],
+    sources: [
+      { label: "Next Coast Ventures - People", url: "https://www.nextcoastventures.com/people" }
+    ]
+  },
+"jason-dorsey": {
+    name: "Jason Dorsey",
+    firm: "Next Coast Ventures",
+    firmSlug: "next-coast-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jason Dorsey is listed under the Venture Partners heading on the Next Coast Ventures people page, where the descriptor printed beside the name is \"Gen Z and Millennial Expert\". The firm publishes no further bio, education or board seat detail for its Venture Partners, so none is recorded here.",
+    notableInvestments: [],
+    sources: [
+      { label: "Next Coast Ventures - People", url: "https://www.nextcoastventures.com/people" }
+    ]
+  },
+"michael-steed": {
+    name: "Michael Steed",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Founder and Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Michael Steed is listed on the Paladin Capital Group team page under the 'Management' heading with the title 'Founder and Managing Partner'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"mark-maloney": {
+    name: "Mark Maloney",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Co-Founder and Managing Director and Chief Compliance Officer",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Mark Maloney is listed on the Paladin Capital Group team page under the 'Management' heading with the title 'Co-Founder and Managing Director and Chief Compliance Officer'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"christopher-steed": {
+    name: "Christopher Steed",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Chief Investment Officer and Managing Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Christopher Steed is listed on the Paladin Capital Group team page under the 'Investment Professionals' heading with the title 'Chief Investment Officer and Managing Director'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"nazo-moosa": {
+    name: "Nazo Moosa",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Managing Director and European Manager",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Nazo Moosa is listed on the Paladin Capital Group team page under the 'Investment Professionals' heading with the title 'Managing Director and European Manager'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"paul-conley-phd": {
+    name: "Paul Conley, PhD",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Managing Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Paul Conley, PhD is listed on the Paladin Capital Group team page under the 'Investment Professionals' heading with the title 'Managing Director'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"mourad-yesayan": {
+    name: "Mourad Yesayan",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Managing Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Mourad Yesayan is listed on the Paladin Capital Group team page under the 'Investment Professionals' heading with the title 'Managing Director'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"e-kenneth-pentimonti": {
+    name: "E. Kenneth Pentimonti",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Managing Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "E. Kenneth Pentimonti is listed on the Paladin Capital Group team page under the 'Investment Professionals' heading with the title 'Managing Director'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"chris-inglis": {
+    name: "Chris Inglis",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Managing Director and Strategic Advisor",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Chris Inglis is listed on the Paladin Capital Group team page under the 'Strategic Advisory Group' heading with the title 'Managing Director and Strategic Advisor'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"ciaran-martin": {
+    name: "Ciaran Martin",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Managing Director and Strategic Advisor",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ciaran Martin is listed on the Paladin Capital Group team page under the 'Strategic Advisory Group' heading with the title 'Managing Director and Strategic Advisor'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"general-ret-mike-minihan": {
+    name: "General (Ret.) Mike Minihan",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Managing Director and Strategic Advisor",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "General (Ret.) Mike Minihan is listed on the Paladin Capital Group team page under the 'Strategic Advisory Group' heading with the title 'Managing Director and Strategic Advisor'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"jamil-jaffer": {
+    name: "Jamil Jaffer",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Venture Partner and Strategic Advisor",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jamil Jaffer is listed on the Paladin Capital Group team page under the 'Venture Partners' heading with the title 'Venture Partner and Strategic Advisor'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"peter-okeefe": {
+    name: "Peter O'Keefe",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Peter O'Keefe is listed on the Paladin Capital Group team page under the 'Venture Partners' heading with the title 'Venture Partner'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"william-reinisch": {
+    name: "William Reinisch",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "William Reinisch is listed on the Paladin Capital Group team page under the 'Venture Partners' heading with the title 'Venture Partner'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"tim-richardson": {
+    name: "Tim Richardson",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tim Richardson is listed on the Paladin Capital Group team page under the 'Venture Partners' heading with the title 'Venture Partner'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"keith-mason": {
+    name: "Keith Mason",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Keith Mason is listed on the Paladin Capital Group team page under the 'Venture Partners' heading with the title 'Venture Partner'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"rich-earley": {
+    name: "Rich Earley",
+    firm: "Paladin Capital Group",
+    firmSlug: "paladin-capital-group",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Rich Earley is listed on the Paladin Capital Group team page under the 'Venture Partners' heading with the title 'Venture Partner'. No further biographical detail for this person was verified within this research pass; education, prior employers and board seats are recorded as unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Paladin Capital Group - Team", url: "https://www.paladincapgroup.com/team/" }
+    ]
+  },
+"ben-capell": {
+    name: "Ben Capell",
+    firm: "Salt VC",
+    firmSlug: "salt-vc",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "MBA, Brigham Young University (Hawes Scholar)",
+      "B.S. in Finance, Brigham Young University"
+    ],
+    previousExperience: [
+      "Charles River Associates",
+      "First employee at an enterprise technology startup in Northern Virginia"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ben Capell is a General Partner at Salt VC, the firm formerly named Peterson Ventures. His firm bio states he \"has been with Salt VC since inception, raising over $300 million in capital and overseeing investments in over 100 deals in his 10+ years of experience\". Before the firm he worked at Charles River Associates and was the first employee at an enterprise technology startup in Northern Virginia. He holds an MBA and a B.S. in Finance from Brigham Young University, where he was a Hawes Scholar. His bio says he led investments in six unicorns, naming Allbirds (BIRD), Ethos Life, Lucid Software and Nomi Health. He was quoted in Utah Business on the September 2026 rebrand saying \"While our name has changed, our team, funds, strategy and commitment to founders and LPs remain the same\". The team page does not state board seats, so none are recorded.",
+    notableInvestments: [
+      { name: "Allbirds", ticker: "BIRD", stage: null, year: null, yearPrecision: null, sector: "Consumer", subsector: "footwear and apparel", role: "led investment", evidence: [{ url: "https://salt.vc/team", type: "firm-team-page", checked: "2026-09-08" }] },
+      { name: "Ethos Life", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Insurtech", subsector: "life insurance", role: "led investment", evidence: [{ url: "https://salt.vc/team", type: "firm-team-page", checked: "2026-09-08" }] },
+      { name: "Lucid Software", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Enterprise Software", subsector: "visual collaboration and diagramming", role: "led investment", evidence: [{ url: "https://salt.vc/team", type: "firm-team-page", checked: "2026-09-08" }] },
+      { name: "Nomi Health", ticker: null, stage: null, year: null, yearPrecision: null, sector: "Healthcare", subsector: "direct healthcare payments and services", role: "led investment", evidence: [{ url: "https://salt.vc/team", type: "firm-team-page", checked: "2026-09-08" }] }
+    ],
+    sources: [
+      { label: "Salt VC - Team", url: "https://salt.vc/team" },
+      { label: "Salt VC - Homepage", url: "https://salt.vc/" },
+      { label: "Utah Business - Peterson Ventures spins out of Peterson Partners, Salt VC rebrand (3 September 2026)", url: "https://www.utahbusiness.com/industry/2026/09/03/peterson-ventures-rebrands-salt-vc-slc-utah-seed-stage-strategy-intact/" }
+    ]
+  },
+"ilana-stern": {
+    name: "Ilana Stern",
+    firm: "Salt VC",
+    firmSlug: "salt-vc",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "MBA, Stanford Graduate School of Business",
+      "University of Pennsylvania, summa cum laude"
+    ],
+    previousExperience: [
+      "Founder and CEO, Weddington Way (acquired by Gap Inc.)",
+      "Lecturer in entrepreneurship, Stanford Graduate School of Business"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ilana Stern is a General Partner at Salt VC, the firm formerly named Peterson Ventures. Her firm bio says she joined as a General Partner after the firm had backed her at seed stage as a founder. She founded and was CEO of Weddington Way, which was acquired by Gap Inc., and is a \"lecturer in entrepreneurship at Stanford GSB\". She holds an MBA from the Stanford Graduate School of Business and graduated summa cum laude from the University of Pennsylvania. The team page does not state board seats or name portfolio companies for her, so none are recorded.",
+    notableInvestments: [],
+    sources: [
+      { label: "Salt VC - Team", url: "https://salt.vc/team" },
+      { label: "Salt VC - Homepage", url: "https://salt.vc/" },
+      { label: "Utah Business - Peterson Ventures spins out of Peterson Partners, Salt VC rebrand (3 September 2026)", url: "https://www.utahbusiness.com/industry/2026/09/03/peterson-ventures-rebrands-salt-vc-slc-utah-seed-stage-strategy-intact/" }
+    ]
+  },
+"taylor-jones": {
+    name: "Taylor Jones",
+    firm: "Salt VC",
+    firmSlug: "salt-vc",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "MBA, Harvard Business School",
+      "B.S. in Accounting, Brigham Young University"
+    ],
+    previousExperience: [
+      "Chief Operating Officer, Blue Matador",
+      "Google",
+      "American Express"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Taylor Jones is a General Partner at Salt VC, the firm formerly named Peterson Ventures. Before the firm he was Chief Operating Officer of Blue Matador, a cloud infrastructure monitoring company, and held roles at Google and American Express. He holds an MBA from Harvard Business School and a B.S. in Accounting from Brigham Young University. The team page does not state board seats or name portfolio companies for him, so none are recorded.",
+    notableInvestments: [],
+    sources: [
+      { label: "Salt VC - Team", url: "https://salt.vc/team" },
+      { label: "Salt VC - Homepage", url: "https://salt.vc/" },
+      { label: "Utah Business - Peterson Ventures spins out of Peterson Partners, Salt VC rebrand (3 September 2026)", url: "https://www.utahbusiness.com/industry/2026/09/03/peterson-ventures-rebrands-salt-vc-slc-utah-seed-stage-strategy-intact/" }
+    ]
+  },
+"marco-neves": {
+    name: "Marco Neves",
+    firm: "Portugal Ventures",
+    firmSlug: "portugal-ventures",
+    title: "Chief Executive Officer",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Named President (CEO) of Portugal Ventures for the 2025-2027 triennium, per the firm's own announcement." }
+    ],
+    biography: "Marco Neves is listed as Chief Executive Officer on the Portugal Ventures team page. The firm's announcement of its leadership for the 2025-2027 triennium names him as President (CEO) of Portugal Ventures, the venture capital company of the Banco Portugues de Fomento Group. No education, prior employment or investment attribution for him was recorded from the pages opened for this record.",
+    notableInvestments: [],
+    sources: [
+      { label: "Portugal Ventures - Team", url: "https://www.portugalventures.pt/en/team/" },
+      { label: "Portugal Ventures - New leadership for the 2025-2027 triennium", url: "https://www.portugalventures.pt/en/news/new-leadership-for-the-2025-2027-triennium/" }
+    ]
+  },
+"joao-paulo-miranda": {
+    name: "Joao Paulo Miranda",
+    firm: "Portugal Ventures",
+    firmSlug: "portugal-ventures",
+    title: "Executive Vice-President",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Named Vice-President of Portugal Ventures for the 2025-2027 triennium, per the firm's own announcement." }
+    ],
+    biography: "Joao Paulo Miranda is listed as Executive Vice-President on the Portugal Ventures team page, and is named as Vice-President in the firm's announcement of its leadership for the 2025-2027 triennium. No education, prior employment or investment attribution for him was recorded from the pages opened for this record.",
+    notableInvestments: [],
+    sources: [
+      { label: "Portugal Ventures - Team", url: "https://www.portugalventures.pt/en/team/" },
+      { label: "Portugal Ventures - New leadership for the 2025-2027 triennium", url: "https://www.portugalventures.pt/en/news/new-leadership-for-the-2025-2027-triennium/" }
+    ]
+  },
+"carla-areias": {
+    name: "Carla Areias",
+    firm: "Portugal Ventures",
+    firmSlug: "portugal-ventures",
+    title: "Executive Board Member",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2025, event: "Named Executive Board Member of Portugal Ventures for the 2025-2027 triennium, per the firm's own announcement." }
+    ],
+    biography: "Carla Areias is listed as Executive Board Member on the Portugal Ventures team page, and is named in the same role in the firm's announcement of its leadership for the 2025-2027 triennium. No education, prior employment or investment attribution for her was recorded from the pages opened for this record.",
+    notableInvestments: [],
+    sources: [
+      { label: "Portugal Ventures - Team", url: "https://www.portugalventures.pt/en/team/" },
+      { label: "Portugal Ventures - New leadership for the 2025-2027 triennium", url: "https://www.portugalventures.pt/en/news/new-leadership-for-the-2025-2027-triennium/" }
+    ]
+  },
+"filomena-pastor": {
+    name: "Filomena Pastor",
+    firm: "Portugal Ventures",
+    firmSlug: "portugal-ventures",
+    title: "Investment Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Filomena Pastor is listed as Investment Director on the Portugal Ventures team page. Portugal Ventures does not use Partner titles; Investment Director is the most senior investing title below the executive board. No education, prior employment or investment attribution for her was recorded from the pages opened for this record.",
+    notableInvestments: [],
+    sources: [
+      { label: "Portugal Ventures - Team", url: "https://www.portugalventures.pt/en/team/" },
+      { label: "Portugal Ventures - New leadership for the 2025-2027 triennium", url: "https://www.portugalventures.pt/en/news/new-leadership-for-the-2025-2027-triennium/" }
+    ]
+  },
+"miguel-barbosa": {
+    name: "Miguel Barbosa",
+    firm: "Portugal Ventures",
+    firmSlug: "portugal-ventures",
+    title: "Investment Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Miguel Barbosa is listed as Investment Director on the Portugal Ventures team page. Portugal Ventures does not use Partner titles; Investment Director is the most senior investing title below the executive board. No education, prior employment or investment attribution for him was recorded from the pages opened for this record.",
+    notableInvestments: [],
+    sources: [
+      { label: "Portugal Ventures - Team", url: "https://www.portugalventures.pt/en/team/" },
+      { label: "Portugal Ventures - New leadership for the 2025-2027 triennium", url: "https://www.portugalventures.pt/en/news/new-leadership-for-the-2025-2027-triennium/" }
+    ]
+  },
+"miguel-botto": {
+    name: "Miguel Botto",
+    firm: "Portugal Ventures",
+    firmSlug: "portugal-ventures",
+    title: "Investment Director",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Miguel Botto is listed as Investment Director on the Portugal Ventures team page. Portugal Ventures does not use Partner titles; Investment Director is the most senior investing title below the executive board. No education, prior employment or investment attribution for him was recorded from the pages opened for this record.",
+    notableInvestments: [],
+    sources: [
+      { label: "Portugal Ventures - Team", url: "https://www.portugalventures.pt/en/team/" },
+      { label: "Portugal Ventures - New leadership for the 2025-2027 triennium", url: "https://www.portugalventures.pt/en/news/new-leadership-for-the-2025-2027-triennium/" }
+    ]
+  },
+"gianluca-dettori": {
+    name: "Gianluca Dettori",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "Chairman & General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2024, event: "Named by BeBeez on 6 November 2024 as founder and chairman of the SGR at the point it renamed from Primo Ventures SGR to Primo Capital SGR." }
+    ],
+    biography: "Gianluca Dettori is listed as \"Chairman & General Partner\" on the Primo Capital team page. He is described by BeBeez in November 2024 as the founder and chairman of the SGR: \"Primo Ventures sgr, fondata e presieduta da Gianluca Dettori\". Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" },
+      { label: "BeBeez - Primo Venture sgr si ribattezza Primo Capital (6 November 2024)", url: "https://bebeez.it/private-equity/primo-venture-sgr-amplia-lattivita-al-private-equity-e-si-ribattezza-primo-capital-al-via-il-fondo-primo-health/" }
+    ]
+  },
+"antonio-concolino": {
+    name: "Antonio Concolino",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "CEO & General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Antonio Concolino is listed as \"CEO & General Partner\" on the Primo Capital team page. Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" }
+    ]
+  },
+"franco-gonella": {
+    name: "Franco Gonella",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "Director & General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Franco Gonella is listed as \"Director & General Partner\" on the Primo Capital team page. Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" }
+    ]
+  },
+"giorgio-minola": {
+    name: "Giorgio Minola",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "Director & General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Giorgio Minola is listed as \"Director & General Partner\" on the Primo Capital team page. Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" }
+    ]
+  },
+"simone-molteni": {
+    name: "Simone Molteni",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Simone Molteni is listed as \"General Partner\" on the Primo Capital team page. Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" }
+    ]
+  },
+"ezio-ravaccia": {
+    name: "Ezio Ravaccia",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "Director & General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ezio Ravaccia is listed as \"Director & General Partner\" on the Primo Capital team page. Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" }
+    ]
+  },
+"niccolo-sanarico": {
+    name: "Niccolo Sanarico",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "CTO & General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Niccolo Sanarico is listed as \"CTO & General Partner\" on the Primo Capital team page. Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" }
+    ]
+  },
+"raffaele-mauro": {
+    name: "Raffaele Mauro",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Raffaele Mauro is listed as \"General Partner\" on the Primo Capital team page. Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" }
+    ]
+  },
+"matteo-cascinari": {
+    name: "Matteo Cascinari",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Matteo Cascinari is listed as \"General Partner\" on the Primo Capital team page. Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" }
+    ]
+  },
+"emiliano-tonelli": {
+    name: "Emiliano Tonelli",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Emiliano Tonelli is listed as \"General Partner\" on the Primo Capital team page. Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" }
+    ]
+  },
+"carlo-vanoli": {
+    name: "Carlo Vanoli",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Carlo Vanoli is listed as \"General Partner\" on the Primo Capital team page. Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" }
+    ]
+  },
+"andrea-pavero": {
+    name: "Andrea Pavero",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "Director & General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Andrea Pavero is listed as \"Director & General Partner\" on the Primo Capital team page. Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" }
+    ]
+  },
+"giusy-cannone": {
+    name: "Giusy Cannone",
+    firm: "Primo Capital",
+    firmSlug: "primo-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Giusy Cannone is listed as \"Partner\" on the Primo Capital team page. Primo Capital was named Primo Ventures SGR until late 2024. No education, prior employment or investment attribution was recorded for this person; individual biography pages were not opened within the page budget for this firm.",
+    notableInvestments: [],
+    sources: [
+      { label: "Primo Capital - Team", url: "https://www.primo.capital/team" }
+    ]
+  },
+"wisam-abdulla": {
+    name: "Wisam Abdulla",
+    firm: "Spacecadet",
+    firmSlug: "spacecadet-ventures",
+    title: "Co-Founder & GP",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Quoted by BetaKit on 25 April 2022 as a co-founder of Spacecadet describing the firm's pre-fundraise marketing model." }
+    ],
+    biography: "Wisam Abdulla is listed on the Spacecadet crew page as 'Wiz - Co-Founder & GP'; BetaKit gives his full name as Wisam 'Wiz' Abdulla and quotes him saying of Spacecadet's model: \"We'll come in ahead of your next fundraise and help you nail the story for that fundraise.\" No further biographical detail was gathered within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Spacecadet - Crew", url: "https://spacecadet.ventures/crew" },
+      { label: "BetaKit - Meet the Canadian marketing VCs that help vet Marc Andreessen's memes (25 April 2022)", url: "https://betakit.com/meet-the-canadian-marketing-vcs-that-help-vet-marc-andreessens-memes/" }
+    ]
+  },
+"daniel-eckler": {
+    name: "Daniel Eckler",
+    firm: "Spacecadet",
+    firmSlug: "spacecadet-ventures",
+    title: "Co-Founder & CMO",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2022, event: "Quoted by BetaKit on 25 April 2022 as a co-founder of Spacecadet on the gap in marketing support among VCs." }
+    ],
+    biography: "Daniel Eckler is listed on the Spacecadet crew page as 'Eckler - Co-Founder & CMO'; BetaKit gives his full name as Daniel Eckler and quotes him saying: \"We recognized that there were very few VCs that are actually equipped to help startups with marketing.\" His title is a marketing role rather than an investing one, but he is one of only two people on the firm's crew page. No further biographical detail was gathered within this batch's page budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Spacecadet - Crew", url: "https://spacecadet.ventures/crew" },
+      { label: "BetaKit - Meet the Canadian marketing VCs that help vet Marc Andreessen's memes (25 April 2022)", url: "https://betakit.com/meet-the-canadian-marketing-vcs-that-help-vet-marc-andreessens-memes/" }
+    ]
+  },
+"jonathan-keidan": {
+    name: "Jonathan Keidan",
+    firm: "Torch Capital",
+    firmSlug: "torch-capital",
+    title: "Founder & Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [
+      "MBA, Columbia Business School",
+      "BA, Washington University in St. Louis"
+    ],
+    previousExperience: [
+      "McKinsey and Company",
+      "Co-founder, InsideHook",
+      "JWMI (Jack Welch Management Institute)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jonathan Keidan is the Founder and Managing Partner of Torch Capital. His page on the firm's site records that he began his career running a music talent management company, worked at McKinsey and Company, worked for Jack Welch at JWMI, and co-founded the digital media publication InsideHook. It states he holds an MBA from Columbia Business School and a BA from Washington University in St. Louis, and that he is a life member of the Council on Foreign Relations and a co-trustee for the George Gershwin Estate. His page does not give the year he founded Torch Capital and names no portfolio companies.",
+    notableInvestments: [],
+    sources: [
+      { label: "Torch Capital - Jonathan Keidan", url: "https://www.torchcapital.vc/team-core-team/jonathan-keidan" },
+      { label: "Torch Capital - Team", url: "https://www.torchcapital.vc/team" }
+    ]
+  },
+"sam-jones": {
+    name: "Sam Jones",
+    firm: "Torch Capital",
+    firmSlug: "torch-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Sam Jones is listed on the Torch Capital team page with the title 'Partner'. The individual bio page for this person was not opened under this batch's page budget, so education, prior employers, board seats and investments are left unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Torch Capital - Team", url: "https://www.torchcapital.vc/team" }
+    ]
+  },
+"katie-peykar": {
+    name: "Katie Peykar",
+    firm: "Torch Capital",
+    firmSlug: "torch-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Katie Peykar is listed on the Torch Capital team page with the title 'Partner'. The individual bio page for this person was not opened under this batch's page budget, so education, prior employers, board seats and investments are left unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Torch Capital - Team", url: "https://www.torchcapital.vc/team" }
+    ]
+  },
+"chris-harper": {
+    name: "Chris Harper",
+    firm: "Torch Capital",
+    firmSlug: "torch-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Chris Harper is listed on the Torch Capital team page with the title 'Partner'. The individual bio page for this person was not opened under this batch's page budget, so education, prior employers, board seats and investments are left unverified rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Torch Capital - Team", url: "https://www.torchcapital.vc/team" }
+    ]
+  },
+"eddie-wu": {
+    name: "Eddie Wu",
+    firm: "Vision Plus Capital",
+    firmSlug: "vision-plus-capital",
+    title: "Chairman/Founding Partner",
+    joinedYear: null,
+    investmentFocus: ["Digital Technology"],
+    education: [],
+    previousExperience: [
+      "Co-founder and Partner, Alibaba Group"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Eddie Wu (吴泳铭) is listed on Vision Plus Capital's team page as Chairman/Founding Partner and described there as a co-founder and Partner of Alibaba Group who led several of its key business segments. He founded Vision Plus Capital in 2015. The team page credits him with leading investments in UC Web, AutoNavi, Momo, Tuya and Minieye; the page does not separate which of those were made through Vision Plus Capital and which through Alibaba, so no individual investment records were created.",
+    notableInvestments: [],
+    sources: [
+      { label: "Vision Plus Capital - Team", url: "https://www.visionpluscapital.com/en/list.php?pid=1" },
+      { label: "Vision Plus Capital - English homepage", url: "https://www.visionpluscapital.com/en/" }
+    ]
+  },
+"yiran-liu": {
+    name: "Yiran Liu",
+    firm: "Vision Plus Capital",
+    firmSlug: "vision-plus-capital",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: ["Technology", "Cross-Border"],
+    education: [
+      "PhD in Electrical Engineering, University of Cambridge"
+    ],
+    previousExperience: [
+      "Temasek Holdings"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Yiran Liu is listed on Vision Plus Capital's team page as Managing Partner, focused on Technology and Cross-Border investments including LI Auto and Advance Group. The page says he previously worked at Temasek Holdings on Xiaomi, Meituan and Didi, and holds a PhD in Electrical Engineering from the University of Cambridge.",
+    notableInvestments: [],
+    sources: [
+      { label: "Vision Plus Capital - Team", url: "https://www.visionpluscapital.com/en/list.php?pid=1" },
+      { label: "Vision Plus Capital - English homepage", url: "https://www.visionpluscapital.com/en/" }
+    ]
+  },
+"james-wang": {
+    name: "James Wang",
+    firm: "Vision Plus Capital",
+    firmSlug: "vision-plus-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: ["Cross-Border", "Consumer"],
+    education: [
+      "Bachelor's degree, Fudan University"
+    ],
+    previousExperience: [
+      "Qiming Ventures",
+      "ACNielsen",
+      "Abbott"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "James Wang is listed on Vision Plus Capital's team page as Partner, working on Cross-Border themes and consumer applications, with Tantan and Fordeal named among his portfolio. The page says he previously worked at Qiming Ventures and held roles at ACNielsen and Abbott, and holds a bachelor's degree from Fudan University.",
+    notableInvestments: [],
+    sources: [
+      { label: "Vision Plus Capital - Team", url: "https://www.visionpluscapital.com/en/list.php?pid=1" },
+      { label: "Vision Plus Capital - English homepage", url: "https://www.visionpluscapital.com/en/" }
+    ]
+  },
+"archer-chen": {
+    name: "Archer Chen",
+    firm: "Vision Plus Capital",
+    firmSlug: "vision-plus-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: ["Hard Tech", "Enterprise Services"],
+    education: [
+      "PhD in Computer Graphics, Zhejiang University"
+    ],
+    previousExperience: [
+      "Alibaba",
+      "UTStarcom"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Archer Chen is listed on Vision Plus Capital's team page as Partner, focused on Hard Tech and Enterprise Services, with JST and Fadada named among his deals. The page says he previously worked at Alibaba and UTStarcom and holds a PhD in Computer Graphics from Zhejiang University.",
+    notableInvestments: [],
+    sources: [
+      { label: "Vision Plus Capital - Team", url: "https://www.visionpluscapital.com/en/list.php?pid=1" },
+      { label: "Vision Plus Capital - English homepage", url: "https://www.visionpluscapital.com/en/" }
+    ]
+  },
+"terry-tian": {
+    name: "Terry Tian",
+    firm: "Vision Plus Capital",
+    firmSlug: "vision-plus-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: ["Digital Healthcare", "Health Tech"],
+    education: [
+      "MBA, UCLA"
+    ],
+    previousExperience: [
+      "GGV Capital"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Terry Tian is listed on Vision Plus Capital's team page as Partner. The page states: \"Focus area include Digital Healthcare and Health Tech.\" Fourier Intelligence is named among his portfolio. The page says he previously held roles at GGV Capital and in consulting, and holds an MBA from UCLA.",
+    notableInvestments: [],
+    sources: [
+      { label: "Vision Plus Capital - Team", url: "https://www.visionpluscapital.com/en/list.php?pid=1" },
+      { label: "Vision Plus Capital - English homepage", url: "https://www.visionpluscapital.com/en/" }
+    ]
+  },
+"wang-kai": {
+    name: "Wang Kai",
+    firm: "Vision Plus Capital",
+    firmSlug: "vision-plus-capital",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: ["Automotive technology"],
+    education: [],
+    previousExperience: [
+      "Chief Technology Officer, Li Auto",
+      "Chief Architect, Visteon"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Wang Kai is listed on Vision Plus Capital's team page as Venture Partner, described there as a specialist in automotive electronic and intelligent technologies with more than twenty years of experience. The page says he was Chief Technology Officer of Li Auto and, earlier, Chief Architect at Visteon.",
+    notableInvestments: [],
+    sources: [
+      { label: "Vision Plus Capital - Team", url: "https://www.visionpluscapital.com/en/list.php?pid=1" },
+      { label: "Vision Plus Capital - English homepage", url: "https://www.visionpluscapital.com/en/" }
+    ]
+  },
+"nic-zhang": {
+    name: "Nic Zhang",
+    firm: "Vision Plus Capital",
+    firmSlug: "vision-plus-capital",
+    title: "Operating Partner",
+    joinedYear: null,
+    investmentFocus: ["Venture relations", "Industry research"],
+    education: [
+      "BS in Computer Science, Peking University",
+      "MBA, CEIBS"
+    ],
+    previousExperience: [
+      "Vice President, Alibaba Group"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Nic Zhang is listed on Vision Plus Capital's team page as Operating Partner, leading venture relations and industry research. The page says he was previously a Vice President at Alibaba Group, and holds a BS in Computer Science from Peking University and an MBA from CEIBS.",
+    notableInvestments: [],
+    sources: [
+      { label: "Vision Plus Capital - Team", url: "https://www.visionpluscapital.com/en/list.php?pid=1" },
+      { label: "Vision Plus Capital - English homepage", url: "https://www.visionpluscapital.com/en/" }
+    ]
   }
 });
