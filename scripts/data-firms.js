@@ -15839,5 +15839,616 @@ holdings: []
       { year: "2026", event: "TSVC Fund VI, LP files a Form D on 13 April 2026 for a $120,000,000 offering, $19,600,000 sold, first sale 31 March 2026." }
     ],
     holdings: []
+  },
+
+  /* ---- Firm batch 3, added 7 September 2026: 20 firms. Their partner records
+     are in data-partners-1.js (not shard 6 - see that file's banner) and
+     their field-level provenance is in data-evidence.js, added in the same
+     batch. Checked against all 561 pre-existing firms for slug, name,
+     historical-name and parent-brand collisions. The batch also carried
+     Galaxy Interactive; it is held out because it is already represented
+     inside the galaxy-digital record added in batch 6. ---- */
+  {
+    rank: null,
+    name: "Archetype",
+    sectors: ["Crypto", "Blockchain", "Infrastructure", "DeFi", "Web3", "Consumer", "AI"],
+    signatureExit: null,
+    slug: "archetype",
+    website: "https://www.archetype.fund",
+    short: "Archetype",
+    founded: 2021,
+    hq: "New York, NY",
+    aum: "Not publicly disclosed (no AUM figure is published; sourced fund sizes only - Archetype I at $55M, Archetype II at $150M, and Archetype III announced 22 September 2025 with over $100M in total capital commitments)",
+    thesis: "Archetype describes itself as an early-stage venture fund focused on accelerating the programmable future, and elsewhere on its own site as focused on accelerating the decentralized future. It says it collaborates with founders at the earliest stages, including pre-idea, and backs them \"From first check to Series A\", with a stated mission of helping builders scale \"from 0x to 1\" across a range it describes as \"defi to consumer\". Its own long-form about page places the firm in New York City. Partner-level focus areas the firm states on its team page are crypto-native infrastructure, DePin and DeFi (Dmitriy Berenzon) and AI research and investments (Danny Sursock). At the time of its February 2022 coverage the firm was reported to invest between $500,000 and $1.5 million into early-stage crypto startups.",
+    leadership: [
+      { name: "Ash Egan", role: "Founder and General Partner", profileSlug: "ash-egan" },
+      { name: "Dmitriy Berenzon", role: "Partner", profileSlug: "dmitriy-berenzon" },
+      { name: "Danny Sursock", role: "Partner", profileSlug: "danny-sursock" },
+      { name: "Katherine Wu", role: "Venture Partner", profileSlug: "katherine-wu" },
+      { name: "Ben Tenenbaum", role: "Chief Financial Officer" }
+    ],
+    timeline: [
+      { year: "2021", event: "Acrylic I LP files a Form D with the SEC on 27 May 2021 from 305 Union Avenue, Brooklyn, naming Ash Egan as a member of the general partner of the issuer." },
+      { year: "2021", event: "The firm raises $55 million for its first fund from limited partners including Cendana Capital, Accolade Partners, Accomplice and Digital Currency Group, per TechCrunch." },
+      { year: "2022", event: "TechCrunch reports on 25 February 2022 that the firm is \"Archetype, formerly known as Acrylic\", and that Katherine Wu has joined as venture partner from Coinbase Ventures." },
+      { year: "2024", event: "Archetype Crypto III LP files a Form D with the SEC on 19 September 2024 from 113 Spring Street, 4F, New York, naming Ash Egan as a member of the general partner." },
+      { year: "2025", event: "Archetype announces over $100 million in total capital commitments for its third fund, Archetype III, on 22 September 2025." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Atlantic Bridge",
+    sectors: ["Technology", "Deep Tech"],
+    signatureExit: "Movidius (acquired by Intel, 2016), named as an Atlantic Bridge portfolio exit in Elaine Coughlan's and Brian Long's bios on the firm's team page and covered in the firm's own news index entry \"Intel to acquire Movidius\" dated 6 September 2016",
+    slug: "atlantic-bridge",
+    website: "https://www.abven.com",
+    short: "Atlantic Bridge",
+    founded: 2004,
+    hq: "Dublin, Ireland",
+    aum: "Over €1B (of assets under management across eight funds, stated on the firm's own About Us page and homepage, checked 2026)",
+    thesis: "Atlantic Bridge describes itself on its own about page as \"a Global Growth Equity Technology Firm with over EUR 1 billion of assets under management across eight Funds, investing in technology companies in Europe and the US.\" The firm states that it operates \"a platform of cross-border technology Funds spanning key markets that are essential for the execution of the Cross Border Value add Bridge Model\", that it invests in entrepreneurs with the ambition to create companies of scale, and that it invests \"in defensible sectors with fast growth potential where we bring deep domain expertise, knowledge and experience.\" Its University Bridge Fund pages describe a growth equity firm with a cross border value add strategy investing in deep technology companies in Europe, the UK and the US. It has offices and staff in Dublin, London, Paris, Munich and Palo Alto.",
+    leadership: [
+      { name: "Brian Long", role: "Managing Partner", profileSlug: "brian-long" },
+      { name: "Elaine Coughlan", role: "Managing Partner", profileSlug: "elaine-coughlan" },
+      { name: "Kevin Dillon", role: "Managing Partner", profileSlug: "kevin-dillon" },
+      { name: "Gerry Maguire", role: "Managing Partner", profileSlug: "gerry-maguire" },
+      { name: "Peter McManamon", role: "Chairman", profileSlug: "peter-mcmanamon" },
+      { name: "Paul Murray", role: "Partner", profileSlug: "paul-murray" },
+      { name: "Dr. Helen McBreen", role: "Partner", profileSlug: "dr-helen-mcbreen" },
+      { name: "Helen Ryan", role: "Operating Partner", profileSlug: "helen-ryan" },
+      { name: "Osman Kent", role: "Venture Partner", profileSlug: "osman-kent" },
+      { name: "Thomas Alt", role: "Venture Partner", profileSlug: "thomas-alt" }
+    ],
+    timeline: [
+      { year: "2004", event: "Brian Long's Atlantic Bridge bio states he \"is co-founder and Managing Partner of Atlantic Bridge Capital from 2004 to present time\"; Navitas Semiconductor's Form 10-K/A repeats that he has served as Managing Partner of Atlantic Bridge Capital since 2004." },
+      { year: "2013", event: "Atlantic Bridge Ventures GP Ltd, described in the filing as \"an Irish company limited by shares\" at c/o Atlantic Bridge Ventures, 31 Kildare Street, Dublin 2, files a Schedule 13G on Envivio, Inc. reporting approximately 5 percent of the class as of 31 December 2012." },
+      { year: "2016", event: "Atlantic Bridge announces Atlantic Bridge III, a EUR 140 million fund, on 31 March 2016, with the Ireland Strategic Investment Fund, Enterprise Ireland, the European Investment Fund, British Business Bank Investments Limited and AIB among the investors." },
+      { year: "2016", event: "The University Bridge Fund is launched at UCD, per the firm's own news index entry dated 19 September 2016." },
+      { year: "2018", event: "ISIF and CIC Capital announce a EUR 150 million fund on 16 March 2018 that is \"co-managed by Dublin-based Atlantic Bridge and Beijing-based WestSummit Capital\"." },
+      { year: "2021", event: "University Bridge Fund II, an EUR 80m fund, is launched on 12 May 2021, backed by the European Investment Fund, Enterprise Ireland and AIB together with Trinity College Dublin, University College Dublin and University College Cork." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Axeleo Capital",
+    sectors: ["Cybersecurity", "AI", "Data Infrastructure", "Fintech", "Deep Tech", "Energy", "Advanced Manufacturing", "Food & Agriculture", "Mobility"],
+    signatureExit: "Trustpair (acquired by Basware, announced by Axeleo Capital on 26 August 2026)",
+    slug: "axeleo-capital",
+    website: "https://www.axeleo.com",
+    short: "Axeleo Capital",
+    founded: 2017,
+    hq: "Lyon, France",
+    aum: null,
+    thesis: "Axeleo Capital is a French AIF management company licensed by the Autorite des marches financiers (licence GP-17000006) that runs two stated strategies. Its Digital Venture strategy enters at pre-seed and seed with initial tickets of €0.5M to €3M and up to €10M including follow-ons, in France and Europe, across cybersecurity, data sovereignty, cloud-native resilience and high-performance systems; AI Ops, LLM orchestration, engineering productivity and intelligent workflows; embedded finance, real-time rails, autonomous treasury and vertical OS; and deeptech computing, Bio-AI, sensing and autonomous systems. Its Greentech Industry strategy enters at Series A and B at the industrialisation stage with initial tickets of €3M to €10M and follow-on capacity above €15M, financing what the firm calls the first industrial plants (FOAK) of post-R&D greentech companies in energy, chemicals and materials, food and agriculture, and mobility. The firm states it was born from a carve-out of Axeleo, a B2B tech startup accelerator launched in Lyon in 2013, and that it is independent and employee owned.",
+    leadership: [
+      { name: "Eric Burdier", role: "Founding Partner", profileSlug: "eric-burdier" },
+      { name: "Mathieu Viallard", role: "Founding Partner", profileSlug: "mathieu-viallard" },
+      { name: "Virginie Lucchini", role: "Partner, Head of Middle Office", profileSlug: "virginie-lucchini" },
+      { name: "Marc Lechantre", role: "Partner", profileSlug: "marc-lechantre" },
+      { name: "Brice Lapouble", role: "Partner", profileSlug: "brice-lapouble" },
+      { name: "Guillaume Sarlat", role: "Venture Partner", profileSlug: "guillaume-sarlat" }
+    ],
+    timeline: [
+      { year: "2013", event: "Axeleo, a B2B tech startup accelerator co-founded by Eric Burdier and backed by the French Tech Acceleration Fund, is launched in Lyon; the firm states its management company was later born from a carve-out of it." },
+      { year: "2017", event: "Axeleo Capital is founded in January 2017 by Eric Burdier and Mathieu Viallard, and is licensed as a manager of Alternative Investment Funds by the French Autorite des marches financiers in March 2017 under licence number GP-17000006." },
+      { year: "2019", event: "Axeleo Capital's first fund closes at $51 million (€45 million), reported by TechCrunch on 18 March 2019, with LPs including Bpifrance through French Tech Acceleration, the Auvergne-Rhone-Alpes region, Vinci Energies, Credit Agricole, BNP Paribas and Caisse d'Epargne Rhone-Alpes." },
+      { year: "2021", event: "Cyber Booster, a cybersecurity startup studio funded by the Programme d'investissements d'avenir and operated by Bpifrance, is announced on 15 December 2021; the French government states it is carried by four structures: Axeleo, Axeleo Capital, le Poool and Go Capital." },
+      { year: "2023", event: "AXC2 holds its final closing at €73 million in December 2023." },
+      { year: "2024", event: "Axeleo GreenTech Industry I holds a first closing at €125 million in November 2024 against a €250 million target, with Veolia investing €30 million alongside Bpifrance and Credit Mutuel Alliance Federale." },
+      { year: "2026", event: "The firm publishes a new visual identity and website on 11 June 2026, stating \"The identity is new. The website is new.\" with no change of legal name." },
+      { year: "2026", event: "Portfolio company Trustpair is acquired by Basware, announced on the firm's blog on 26 August 2026." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Baidu Ventures",
+    sectors: ["Artificial Intelligence", "Healthcare", "Life Sciences", "Industrial Technology", "Energy", "Transportation", "Agriculture"],
+    signatureExit: null,
+    slug: "baidu-ventures",
+    website: "https://www.baidu-venture.com",
+    short: "BV",
+    founded: 2016,
+    hq: "Beijing, China",
+    aum: null,
+    thesis: "Baidu Ventures, which brands itself BV百度风投 and in English as Baidu Venture or Baidu Ventures, is a corporate-backed venture capital firm initiated by Baidu. It is a corporate venture arm rather than an independent partnership in origin: China Daily reported on 16 September 2016 that Baidu was setting up the fund with an initial $200 million and with Baidu co-founder Robin Li as chairman of the venture capital firm, and the firm's own boilerplate describes it as 由百度发起、专业团队管理的独立风险投资机构 (an independent venture capital institution initiated by Baidu and managed by a professional team) whose limited partners include Baidu together with other industrial and financial institutions. It runs separately from Baidu's own investment and M&A team, a distinction the firm's CEO restated in February 2025. Its stated focus at launch was early-stage artificial intelligence, augmented reality and virtual reality. Its CEO described it in a November 2023 interview as an artificial-intelligence themed fund, verbatim: 我们是以人工智能为主题的基金, with holdings across industry, agriculture, energy, transport and healthcare in addition to generative AI. It has raised both US dollar and RMB funds and its own boilerplate has described simultaneous operation from Beijing and San Francisco.",
+    leadership: [
+      { name: "高雪 (Gao Xue)", role: "CEO、管理合伙人 (CEO and Managing Partner)", profileSlug: "gao-xue" }
+    ],
+    timeline: [
+      { year: "2016", event: "Baidu announces at Baidu World on 16 September 2016 that it is setting up a venture capital firm, Baidu Venture, with an initial $200 million fund focused on early-stage artificial intelligence, augmented reality and virtual reality, with Robin Li as its chairman and operating independently of Baidu's existing investment and M&A team." },
+      { year: "2016", event: "The operating entity 北京百度投资管理有限公司 (Beijing Baidu Investment Management Co., Ltd.) is registered on 18 March 2016, per the 36氪创投平台 institution profile." },
+      { year: "2017", event: "Baidu announces on 6 February 2017 that former Legend Star partner 刘维 (Liu Wei) joins Baidu as a vice president and becomes CEO of Baidu Ventures, alongside partners 齐玉杰 (Qi Yujie), a co-founder and former CEO of Domob, and 蔡薇 (Cai Wei), formerly an executive director at Goldman Sachs and a partner at TA Associates; Sina reported this completed the core team." },
+      { year: "2018", event: "钛媒体 reports that in 2018 Baidu Ventures raised a second fund of nearly RMB 2 billion, verbatim: 2018年，百度风投成功募集到近20亿人民币的二期基金 (20亿 = 20 x 100,000,000 = RMB 2,000,000,000)." },
+      { year: "2019", event: "The firm's boilerplate, as carried in a 20 September 2019 Forbes China piece republished on 163.com, states it manages three US dollar and RMB funds totalling US$500 million, verbatim: 目前，BV百度风投管理着五亿美元规模的三支美元和人民币基金 (5亿美元 = 5 x 100,000,000 = US$500,000,000)." },
+      { year: "2020", event: "钛媒体 reports that at the end of 2020 高雪 (Gao Xue) took over as CEO and managing partner while founding CEO 刘维 (Liu Wei) moved to build the AI life-science company 百图生科 (BioMap)." },
+      { year: "2025", event: "CEO 高雪 (Gao Xue) publicly explains on 9 February 2025 why the firm did not invest in DeepSeek and states, verbatim: 百度风投是 BV 百度风投，不是百度投资部门." },
+      { year: "2026", event: "The firm continues to invest: 投资界 lists ten Baidu Ventures investment events between March and July 2026, and Sina Finance reported on 10 April 2026 that 百度BV风投 followed on as an existing shareholder in 生数科技's near RMB 2 billion Series B (近20亿元, that is 20 x 100,000,000 = RMB 2,000,000,000), led by Alibaba Cloud with RMB 700 million (7亿元 = 7 x 100,000,000)." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "CAS Star",
+    sectors: ["Semiconductors", "Artificial Intelligence", "Aerospace", "Biotech", "Technology", "Advanced Manufacturing", "Clean Energy", "Manufacturing"],
+    signatureExit: "源杰科技 (Yuanjie Semiconductor Technology, Shanghai STAR Market, 688498.SH), which the firm's own 关于我们 page names first among the hard-technology companies it has invested in and incubated. Recorded as a portfolio listing, not as a realised exit; no source states the firm has sold the position.",
+    slug: "cas-star",
+    website: "https://www.casstar.com.cn",
+    short: "CAS Star",
+    founded: 2013,
+    hq: "Xi'an, China",
+    aum: "US$1.4B+ (approx.; the firm's figure is 累计总规模超100亿元, over RMB 10bn of cumulative fund scale under management, on its own About page - undated, with accompanying portfolio data as at end-April 2024. A March 2026 huxiu article puts it at 管理规模超160亿元)",
+    thesis: "CAS Star (中科创星) describes itself on its own site as an early-stage investment institution focused on 硬科技 (hard technology), as the originator of the 硬科技 concept, and as building a hard-technology startup ecosystem combining 研究机构 (research institutes), 早期投资 (early-stage investment), 创业平台 (venture platform) and 投后服务 (post-investment services). It states that it invests mainly in start-up and early-stage technology SMEs with growth potential and independent innovation capability, across optoelectronic chips, AI, aerospace, biotechnology, information technology, new materials, new energy and smart manufacturing, and that its purpose is to move technology out of the laboratory and combine research-institute resources with social capital. The firm states it has dual headquarters in Xi'an and Beijing, and describes a Shanghai unit doing 超前孵化, engaging at the principle and paper stage and then selectively deep-incubating through what it calls a PI-IDEA-IP-IPO process. China Academy of Sciences Holdings describes it as China's first professional platform specialising in hard-tech venture investment and incubation.",
+    leadership: [
+      { name: "米磊 (Mi Lei)", role: "创始合伙人 (Founding Partner)", profileSlug: "mi-lei" },
+      { name: "李浩 (Li Hao)", role: "创始合伙人、联席CEO (Founding Partner and Co-CEO)", profileSlug: "li-hao" },
+      { name: "袁博 (Yuan Bo)", role: "合伙人 (Partner)", profileSlug: "yuan-bo" },
+      { name: "郭鑫 (Guo Xin)", role: "合伙人 (Partner)", profileSlug: "guo-xin" }
+    ],
+    timeline: [
+      { year: "2013", event: "中科创星 is established, jointly initiated by 西科控股 and the founding team as a market-oriented early-stage hard-technology venture investment institution, per 西科控股's own site: 2013年，西科控股与创始团队共同发起成立市场化硬科技早期创投机构中科创星。" },
+      { year: "2018", event: "郭鑫 joins 中科创星 to work on hard-technology commercialisation and investment, per the firm's promotion announcement reported by 界面新闻, which dates his joining to 2015; the 2015 date is the one recorded in his profile." },
+      { year: "2020", event: "On 10 November 2020 the 北京硬科技二期基金 is formally launched at the 2020硬科技生态战略发展大会暨硬科技金融实验室成立仪式 in Beijing's 中关村壹号, alongside the establishment of a 硬科技金融实验室, per the firm's own 关于我们 page." },
+      { year: "2021", event: "中科创星 announces the promotion of 董事总经理 郭鑫 to 合伙人, per 界面新闻." },
+      { year: "2024", event: "As at the end of April 2024 the firm states it has invested in and incubated more than 470 hard-technology companies (已投资孵化超过470家硬科技企业), per its own 关于我们 page." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "E14 Fund",
+    sectors: ["Deep Tech", "AI", "Climate Technology", "Automation", "Digital Health", "Life Sciences", "Mobility", "Developer Tools"],
+    signatureExit: null,
+    slug: "e14-fund",
+    website: "https://www.e14.vc",
+    short: "E14",
+    founded: 2017,
+    hq: "Cambridge, MA",
+    aum: null,
+    thesis: "E14 Fund is an early-stage venture firm that invests only in startups with key contributors from MIT. Its own About page states it is \"Officially affiliated with MIT\" and that it \"invests in the MIT founders, whether recent graduates, faculty or long time alumni\", and it describes its targets as \"scalable, deep-tech startups tackling big, meaningful missions\" with \"core, differentiated science or engineering\". The firm says it is typically the company's first institutional investor, with a core first check the FAQ page puts at \"somewhere between $500k and $5M\" plus reserves for later rounds, alongside an E14 Fellows programme of $50k to $100k investments on founder-friendly terms. It states no geographic restriction - \"E14 Fund invests in great, world-changing MIT companies wherever they may be\" - and says it will not invest before founders have left MIT. MIT Media Lab's own page describes E14 as investing \"in early-stage deep tech startups in many areas, including climate tech, industrial automation, digital health, life sciences, mobility, development tools, and more\". The firm also states on its About page: \"We donate a large portion of our profits to MIT.\"",
+    leadership: [
+      { name: "Habib Haddad", role: "Managing Partner", profileSlug: "habib-haddad" },
+      { name: "Calvin Chin", role: "Managing Partner", profileSlug: "calvin-chin" },
+      { name: "Shin Chen", role: "Venture Investor" },
+      { name: "Michael Black", role: "Senior Advisor" },
+      { name: "Andrea Porras", role: "Head of Community" }
+    ],
+    timeline: [
+      { year: "2013", event: "MIT Media Lab launches the experiment from which E14 Fund originated; the firm's About page dates the origin to 2013 and MIT News describes an initial prototype fund of $2 million that year." },
+      { year: "2017", event: "E14 2017 Fund, LP is formed in Delaware; its SEC Form D records a first sale on 14 September 2017 and, in the February 2019 amendment, $37,250,000 sold, with Habib Haddad and Calvin Chin as Managing Members of the general partner E14 GP, LLC." },
+      { year: "2020", event: "E14 2020 Fund, LP files a Form D showing an $80,000,000 offering and a first sale on 17 August 2020; the November 2020 amendment records $24,650,000 sold at that date." },
+      { year: "2023", event: "E14 Fund 3 Limited Partnership records a first sale on 25 January 2023; its April 2024 Form D/A reports $117,713,000 sold." },
+      { year: "2025", event: "E14 Fund 4 Limited Partnership files a Form D on 30 December 2025 for a $100,000,000 offering, with $0 sold and the first sale yet to occur at that date." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Fortune Venture Capital",
+    sectors: [],
+    signatureExit: null,
+    slug: "fortune-venture-capital",
+    website: "https://www.fortunevc.com",
+    short: "Fortune Venture Capital",
+    founded: 2000,
+    hq: "Shenzhen, China",
+    aum: "US$8.3B+ (approx.; the figure is RMB 60bn+ of total fund scale under management as at 30 June 2025, from the 2025 interim report of listed parent 湖南电广传媒, SZSE 000917 - total committed fund scale, not an audited AUM statement by the firm itself)",
+    thesis: "Fortune Venture Capital (达晨财智) is a Shenzhen-based Chinese venture capital and private equity manager. Its listed parent 湖南电广传媒 (Hunan TV & Broadcast Intermediary Co., Ltd., SZSE 000917) told investors on 20 January 2026 that 达晨财智 is a controlling subsidiary in which it holds 55 per cent, and its 2024 annual report names 达晨财智 and 达晨创投 as the company's investment business entities. The parent's 2025 interim report states that 达晨财智 manages funds with a total scale of over RMB 60bn, has invested in more than 800 companies, has exited 301, of which 143 companies have listed and 104 have been quoted on the New Third Board. The parent's 2024 annual report records the substantial completion of the RMB 8bn 达晨创程综合基金, signed commitments of over RMB 3bn for the second RMB 3bn SME technology fund, and an entrusted mandate to manage the RMB 10bn Beijing commercial space and low-altitude economy fund. The firm's own website was not reachable from this session, so no first-party statement of stage, sector focus or investment approach could be read, and none is asserted here.",
+    leadership: [
+      { name: "刘昼 (Liu Zhou)", role: "创始合伙人、董事长 (Founding Partner and Chairman)", profileSlug: "liu-zhou" },
+      { name: "肖冰 (Xiao Bing)", role: "执行合伙人、首席投资官 (Executive Partner and Chief Investment Officer)", profileSlug: "xiao-bing" },
+      { name: "齐慎 (Qi Shen)", role: "合伙人、执行总裁 (Partner and Executive President)", profileSlug: "qi-shen" }
+    ],
+    timeline: [
+      { year: "2000", event: "Fortune Venture Capital is founded in Shenzhen on 19 April 2000, according to the English Wikipedia article on the firm; the firm's own site could not be reached to confirm the date first-party." },
+      { year: "2009", event: "The group raises its first market-raised fund, 达晨创富, having previously been funded entirely from Hunan broadcasting group money, per a 3 November 2018 21财经 article." },
+      { year: "2024", event: "Parent 电广传媒's 2024 annual report records fund scale under management of nearly RMB 60bn (近 600 亿元), 780-plus companies invested and 143 listed, substantial completion of the RMB 8bn 达晨创程综合基金, and an entrusted mandate over the RMB 10bn Beijing commercial space and low-altitude economy fund." },
+      { year: "2025", event: "Parent 电广传媒's 2025 interim report states fund scale under management of over RMB 60bn, more than 800 companies invested, 301 exits, 143 listed companies and 104 New Third Board quotations, with 达晨财智 revenue of RMB 249.20m and net profit of RMB 137.17m for the half year." },
+      { year: "2026", event: "On 20 January 2026 电广传媒 tells investors that 达晨财智 is a controlling subsidiary in which it holds 55 per cent, as reported by 证券日报." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Golden Ventures",
+    sectors: ["Sector-Agnostic", "Software"],
+    signatureExit: "Wattpad (acquired by Naver)",
+    slug: "golden-ventures",
+    website: "https://golden.ventures",
+    short: "Golden Ventures",
+    founded: 2011,
+    hq: "Toronto, Canada",
+    aum: "Not publicly disclosed (no AUM figure is published; Golden Ventures V closed at just over $100M USD per the firm's 22 February 2024 announcement, and the FAQ states it is currently investing out of Fund V, a $100M USD fund)",
+    thesis: "Golden Ventures is a seed-stage venture firm investing at pre-seed, seed and seed extension, and into rounds bridging to Series A. It invests across North America with a core Canadian focus on Toronto, Kitchener/Waterloo, Montreal, Vancouver and the Prairie provinces, and is active in the San Francisco Bay Area, New York, Los Angeles and Boston. The firm states it is sector and business model agnostic but skews toward software-differentiated solutions, and its site lists its sector as Sector Agnostic. It targets initial commitments of $500K to $2.5M for 8 to 15 percent ownership, and models 25 to 30 core investments per fund over three to four years, roughly eight new core investments a year. The firm describes itself as one of the first seed-stage micro-VC funds, started in 2011 on the view that early stage founders in North America, and especially in Canada, were underserved by financing options. It runs a post-investment team covering talent, platform and operations alongside the investment team.",
+    leadership: [
+      { name: "Matt Golden", role: "Founder and Managing Partner", profileSlug: "matt-golden" },
+      { name: "Ameet Shah", role: "General Partner", profileSlug: "ameet-shah" },
+      { name: "Bert Amato", role: "Venture Partner", profileSlug: "bert-amato" },
+      { name: "Jamie Rosenblatt", role: "Partner", profileSlug: "jamie-rosenblatt" },
+      { name: "Nick Chen", role: "partner", profileSlug: "nick-chen" },
+      { name: "Alison Kaizer", role: "Partner, Talent", profileSlug: "alison-kaizer" }
+    ],
+    timeline: [
+      { year: "2011", event: "Matt Golden begins investing in June 2011 as a solo general partner, under the name Golden Venture Partners; the firm's own account calls it one of the first seed-stage micro-VC funds." },
+      { year: "2014", event: "Golden Venture Partners II closes at $40 million with the Northleaf Venture Catalyst Fund and BDC Capital, announced on the firm's Medium on 19 November 2014 and reported by BetaKit on 20 November 2014; the same report states the first fund raised $17 million." },
+      { year: "2015", event: "Ameet Shah joins as Partner and Bert Amato as Venture Partner, announced by Matt Golden on 8 April 2015." },
+      { year: "2018", event: "The third fund closes at $72 million CAD ($57.5 million USD) in May 2018 and the firm shortens its name: The Globe and Mail reports the American LPs' investments in \"Golden (which will be known simply as \"Golden Ventures\" from now on)\"." },
+      { year: "2021", event: "Golden Ventures IV, a US$100M seed vehicle, and the Golden Ventures Opportunities Fund, a US$20M vehicle for later-stage follow-ons, are announced on 23 June 2021, and Jamie Rosenblatt is promoted to Partner." },
+      { year: "2023", event: "Nick Chen joins as Principal on the investment team, announced by Ameet Shah on 7 September 2023." },
+      { year: "2024", event: "Golden Ventures V closes at just over US$100 million on 22 February 2024, with LPs including BDC Capital, ECMC Group, Foundry, HarbourVest Partners, Kensington Capital Partners, Northleaf Capital Partners, RBC, Teralys Capital, University of Chicago, Vintage Investment Partners and new LP Deloitte Ventures." },
+      { year: "2025", event: "Nick Chen is promoted to partner after two years at the firm, reported by BetaKit on 19 June 2025." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Highland Europe",
+    sectors: ["Software", "Consumer"],
+    signatureExit: "Wolt (acquired by DoorDash), listed as an exited investment on the Highland Europe profile pages of David Blyghton, Irena Goldenberg and Helena Richardson",
+    slug: "highland-europe",
+    website: "https://www.highlandeurope.com",
+    short: "Highland Europe",
+    founded: 2012,
+    hq: "London, United Kingdom",
+    aum: "$4B+ (assets under management, stated on the firm's own homepage, checked 2026)",
+    thesis: "Highland Europe is a growth-stage technology investor. Its homepage states that it backs \"growth-stage, product-led companies across software and consumer sectors\" that are typically raising EUR 20 to 80 million to accelerate expansion. The firm's about page states \"We spun off from Highland Capital Partners in 2012 to focus entirely on European-rooted scale-ups.\" It operates from London and Geneva. Its 29 July 2026 announcement of Fund VI states \"Since 2012, Highland has raised EUR 3.75 billion across six funds, invested in more than 80 companies, and guided 30 exits.\"",
+    leadership: [
+      { name: "Fergal Mullen", role: "Partner", profileSlug: "fergal-mullen" },
+      { name: "Laurence Garrett", role: "Partner", profileSlug: "laurence-garrett" },
+      { name: "Tony Zappalà", role: "Partner", profileSlug: "tony-zappala" },
+      { name: "Jacob Bernstein", role: "Partner", profileSlug: "jacob-bernstein" },
+      { name: "David Blyghton", role: "Partner", profileSlug: "david-blyghton" },
+      { name: "Sam Brooks", role: "Partner", profileSlug: "sam-brooks" },
+      { name: "Irena Goldenberg", role: "Partner", profileSlug: "irena-goldenberg" },
+      { name: "Stan Laurent", role: "Partner", profileSlug: "stan-laurent" },
+      { name: "Jean Tardy-Joubert", role: "Partner", profileSlug: "jean-tardy-joubert" },
+      { name: "Helena Richardson", role: "Partner", profileSlug: "helena-richardson" },
+      { name: "Gajan Rajanathan", role: "Partner", profileSlug: "gajan-rajanathan" },
+      { name: "Ronan Shally", role: "Partner & CFO", profileSlug: "ronan-shally" }
+    ],
+    timeline: [
+      { year: "2007", event: "Fergal Mullen recruits Irena Goldenberg to launch Highland Capital Partners in Europe, per her Highland Europe profile page." },
+      { year: "2012", event: "Highland Europe (UK) LLP is incorporated at Companies House on 1 June 2012 under the name Highland Capital Partners (UK) LLP; the firm's about page states it spun off from Highland Capital Partners in 2012." },
+      { year: "2012", event: "The firm is authorised by the Financial Conduct Authority on 28 November 2012 under firm reference number 583383, per its own disclosures page." },
+      { year: "2016", event: "The LLP changes its name from Highland Capital Partners (UK) LLP to Highland Europe (UK) LLP, certificate issued 26 February 2016, per the Companies House filing history." },
+      { year: "2026", event: "Highland Europe announces the close of Fund VI at EUR 1.1 billion on 29 July 2026, stating that it has raised EUR 3.75 billion across six funds since 2012." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "MassMutual Ventures",
+    sectors: ["Enterprise Software", "SaaS", "Climate Technology", "Fintech", "Cybersecurity", "Healthtech"],
+    signatureExit: "Recorded Future (acquired by Insight Partners, as stated on MassMutual Ventures' own bio for Mark Goodman)",
+    slug: "massmutual-ventures",
+    website: "https://massmutualventures.com",
+    short: "MMV",
+    founded: 2014,
+    hq: "Boston, MA",
+    aum: "Over $1B (of investment capital under management, per the firm's own boilerplate of 16 November 2022; no more recent firm-stated figure was found, and this excludes parent MassMutual's own assets)",
+    thesis: "MassMutual Ventures is the corporate venture capital arm of Massachusetts Mutual Life Insurance Company (MassMutual), which its website states is its sole limited partner. It describes itself as a multistage, global venture capital firm investing in enterprise software, cybersecurity, financial technology and digital health companies, and its homepage adds climate technology to that list. It runs two named fund families: a Climate Tech fund line, and an Enterprise SaaS, Fintech, Cybersecurity and HealthTech fund line. The Climate Tech fund invests in the United States and Canada, is centred on Series A and B with openness to seed, writes initial cheques of $2 million to $5 million, and targets four to six investments a year across climate intelligence, sustainable cities and clean power. The firm states it does not seek or solicit investment funds from individuals.",
+    leadership: [
+      { name: "Doug Russell", role: "Managing Partner & Head of MassMutual Ventures (MMV)", profileSlug: "doug-russell" },
+      { name: "Eric Emmons", role: "Managing Partner", profileSlug: "eric-emmons" },
+      { name: "Mark Goodman", role: "Managing Partner", profileSlug: "mark-goodman" },
+      { name: "Tim Krysiek", role: "Managing Partner", profileSlug: "tim-krysiek" },
+      { name: "Charles Svirk", role: "Partner", profileSlug: "charles-svirk" },
+      { name: "Karl Beinkampen", role: "Venture Partner", profileSlug: "karl-beinkampen" }
+    ],
+    timeline: [
+      { year: "2014", event: "MassMutual forms MassMutual Ventures in July 2014 as its corporate venture arm, with Doug Russell as head." },
+      { year: "2020", event: "MMV announces a second $100 million fund for Southeast Asia on 20 January 2020, taking total capital under management to $350 million across four funds, two $100 million US funds and $150 million in Southeast Asia across two funds." },
+      { year: "2022", event: "On 27 April 2022 MMV's Asia-Pacific and Europe team launches a $300 million fund covering Europe and APAC, led by Ryan Collins in London and Anvesh Ramineni in Singapore." },
+      { year: "2022", event: "On 29 June 2022 MMV announces a $100 million fund focused on North America and Israel, taking the Boston-based team to $400 million under management." },
+      { year: "2022", event: "On 16 November 2022 MMV launches a $100 million Climate Technology Fund and states it manages over $1 billion in investment capital across teams in Boston, Singapore and London." },
+      { year: "2025", event: "Global Corporate Venturing reports on 18 February 2025 that Europe and APAC managing partners Ryan Collins and Anvesh Ramineni will leave in the second quarter of 2025, with oversight of those regions consolidating under Doug Russell." },
+      { year: "2026", event: "On 25 August 2026 MMV commits to launch a $150 million Climate Technology Fund II for early-stage North American companies, bringing total climate technology commitments to $300 million." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Matchstick Ventures",
+    sectors: ["Technology"],
+    signatureExit: "Optera (acquired by Green Project Technologies, announced 14 July 2026; Optera is listed on Matchstick's own portfolio page and the acquisition is carried on Matchstick's own news index)",
+    slug: "matchstick-ventures",
+    website: "https://www.matchstick.vc",
+    short: "Matchstick",
+    founded: 2015,
+    hq: "Minneapolis, MN",
+    aum: "Not publicly disclosed (no firm-level AUM figure; the current fund is stated first-party as a $75M fourth fund, July 2026. Earlier vintages were $55M in 2021, $30M and $5M)",
+    thesis: "Matchstick Ventures is a pre-seed and seed stage technology investor. Its own site states that the firm invests \"capital, time and resources in the most ambitious entrepreneurs 'between the coasts' - teaming up at the pre-seed and seed stage\", and describes the aim of being the \"Most impactful early-stage, technology investor focused between the coasts\", with an emphasis on the North and the Rockies and on diverse founders. The about page states a cheque range of $500k to $1.5M at pre-seed and seed. The firm is physically based in Colorado and Minnesota, with the team split between Boulder, CO and Minneapolis, MN, and it says it is founder-first because its partners were founders first. It publicises a network of Matchstick Strikers, subject-matter experts made available to portfolio founders, and it is a member of Pledge 1%.",
+    leadership: [
+      { name: "Ryan Broshar", role: "General Partner", profileSlug: "ryan-broshar" },
+      { name: "Natty Zola", role: "General Partner", profileSlug: "natty-zola" },
+      { name: "Nicole Glaros", role: "General Partner", profileSlug: "nicole-glaros" },
+      { name: "Shannon Shroyer", role: "Head of Network and Operations" }
+    ],
+    timeline: [
+      { year: "2015", event: "Ryan Broshar founds the firm; his own post states \"When I founded Matchstick Ventures in 2015 the intent was to \"help startups strike in the North.\"\"" },
+      { year: "2018", event: "Natty Zola, then Managing Director of the Techstars Boulder program, joins as a partner, announced 26 July 2018." },
+      { year: "2019", event: "Second fund of $30 million reported closed, following a first fund of $5 million." },
+      { year: "2021", event: "Third fund of $55 million closed, announced 14 September 2021." },
+      { year: "2024", event: "Matchstick Ventures Fund IV, L.P. files its Form D with the SEC on 12 July 2024, naming MV GP IV, LLC as general partner and Matchstick Ventures, LLC as management company." },
+      { year: "2025", event: "Nicole Glaros, previously a Partner and Chief Investment Strategy Officer at Techstars, joins the firm, announced 12 May 2025." },
+      { year: "2026", event: "The firm states on 17 July 2026 that Matchstick Ventures is a $75M fund and that this is its fourth fund." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Mirae Asset Venture Investment",
+    sectors: ["Biotech", "Technology", "Gaming", "Semiconductors", "Foodtech", "Clean Energy", "Education", "Media", "Consumer"],
+    signatureExit: "SEMIFIVE (세미파이브) - IPO on 29 December 2025. Numbers reported in January 2026 that Mirae Asset Venture Investment had invested a total of 363억원 (KRW 36.3 billion) and booked 292억747만원 (KRW 29.21 billion) of investment gains after selling on-market post-IPO, while still holding 2,362,710 shares (7.01%) under lock-up.",
+    slug: "mirae-asset-venture-investment",
+    website: "http://venture.miraeasset.co.kr/",
+    short: "Mirae Asset Venture Investment",
+    founded: 1999,
+    hq: "Seongnam, South Korea",
+    aum: "$1.1B (approx.; the firm's figure is ₩1.58 trillion / 15,800억원 of assets under management as of 31 March 2026, stated on its own company page under the label \"Asset Under Management\")",
+    thesis: "Mirae Asset Venture Investment is a Korean venture capital and private equity manager registered as a 창업투자회사 (small and medium business start-up investment company). Its own company page states that it invests in companies with innovative ideas and technology in 바이오 (bio), ICT, 게임 (gaming) and 반도체 (semiconductors) as sectors that can lead the fourth industrial revolution, and that it is progressively widening its investment scope into 친환경식품 (eco-friendly food), 대체에너지 (alternative energy), 교육 (education), 엔터 (entertainment) and 레저 (leisure). The firm invests through venture investment partnerships (투자조합) and private equity vehicles (사모투자합자회사), and organises its investment staff into four venture investment divisions (벤처투자1-4본부), a PE division (PE본부) and an investment strategy division (투자전략본부). It reports 38 funds and KRW 1.58 trillion under management as of 31 March 2026. The firm is itself listed on the KOSDAQ market and is part of the Mirae Asset group.",
+    leadership: [
+      { name: "Kim Eung-seok (김응석)", role: "대표이사 (Representative Director / CEO); described in Korean press as 부회장 (Vice Chairman)", profileSlug: "kim-eung-seok" },
+      { name: "Han Jung-soo (한정수)", role: "벤처투자1본부 본부장/전무 (Head of Venture Investment Division 1, Managing Director)", profileSlug: "han-jung-soo" },
+      { name: "Kim Jae-jun (김재준)", role: "벤처투자2본부 본부장/전무 (Head of Venture Investment Division 2, Managing Director)", profileSlug: "kim-jae-jun" },
+      { name: "Kim Kyung-mo (김경모)", role: "벤처투자3본부 본부장/전무 (Head of Venture Investment Division 3, Managing Director)", profileSlug: "kim-kyung-mo" },
+      { name: "Kim Min-kyum (김민겸)", role: "벤처투자4본부 본부장/상무 (Head of Venture Investment Division 4, Executive Director)", profileSlug: "kim-min-kyum" },
+      { name: "Hong Dong-hee (홍동희)", role: "PE본부 본부장/전무 (Head of PE Division, Managing Director)", profileSlug: "hong-dong-hee" },
+      { name: "Joo Yong-seok (주용석)", role: "투자전략본부 본부장/상무 (Head of Investment Strategy Division, Executive Director)", profileSlug: "joo-yong-seok" },
+      { name: "Park Jun-yeop (박준엽)", role: "경영관리본부 본부장/상무 (Head of Management Administration Division, Executive Director)" },
+      { name: "Yoon Sung-beom (윤성범)", role: "상근감사 (Full-time Auditor)" },
+      { name: "Chu Yeon-woo (추연우)", role: "준법감시인 (Compliance Officer)" }
+    ],
+    timeline: [
+      { year: "1999", event: "Founded on 8 June 1999 as 한국드림캐피탈(주) (Korea Dream Capital Co., Ltd.) with paid-in capital of 100억원 (KRW 10 billion), and registered as a 창업투자회사 with the Small and Medium Business Administration on 28 June 1999." },
+      { year: "2000", event: "Renamed twice: from 한국드림캐피탈(주) to 미래에셋 Venture Accelerator(주) at the first annual general meeting on 17 May 2000, and from 미래에셋 Venture Accelerator(주) to 미래에셋벤처투자(주) on 5 December 2000." },
+      { year: "2015", event: "Seoul branch (서울지점) established on 9 May 2015; 미래에셋글로벌투자조합 formed on 10 July 2015 at 400억원 (KRW 40 billion) and 코스콤-미래에셋핀테크투자조합1호 formed on 16 November 2015 at 200억원 (KRW 20 billion)." },
+      { year: "2019", event: "Listed on the KOSDAQ market on 15 March 2019 (코스닥 시장 상장)." },
+      { year: "2019", event: "에스케이에스미래에셋 기업재무안정 사모투자 합자회사 established on 29 October 2019 at 2,070억원 (KRW 207 billion), and 미래에셋 넥스트 코리아 지능정보 벤처투자조합 formed on 30 December 2019 at 1,000억원 (KRW 100 billion)." },
+      { year: "2024", event: "미래에셋 AI 프론티어 투자조합 formed on 20 December 2024 at 1,220억원 (KRW 122 billion)." },
+      { year: "2025", event: "SEMIFIVE (세미파이브), a portfolio company, completed its IPO on 29 December 2025." },
+      { year: "2026", event: "에스엔엠(SNM) 기술혁신전문펀드 formed on 13 March 2026 at 550억원 (KRW 55 billion)." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Nina Capital",
+    sectors: ["Health Tech", "Digital Health", "Data", "AI", "Healthcare IT", "Medical Devices"],
+    signatureExit: "Replica Analytics (acquired by Aetion; named as an exit in Nina Capital's own 16 February 2022 press release)",
+    slug: "nina-capital",
+    website: "https://www.nina.capital",
+    short: "Nina",
+    founded: 2019,
+    hq: "Barcelona, Spain",
+    aum: "Over €100M (total assets under management, February 2025, reported at the first close of the €50M Fund III)",
+    thesis: "Nina Capital describes itself on its homepage as \"a specialized venture capital firm investing exclusively at the intersection of healthcare and technology\", investing in \"healthcare transformation powered by information technology led by need-driven founders\". Its stated scope is health technology built on data, computing and networks, and it states plainly what it does not do: \"( what we don't do: drugs and vaccines )\". The firm invests at pre-seed and seed, with follow-on reserved for portfolio companies reaching Series A readiness, at \"ticket sizes from 200k EUR to 1500k EUR\", and says it can lead rounds or coinvest. Its approach page says the method is informed by Stanford's Biodesign methodology and that its \"sweet spot\" is \"seeding founders who are marrying in-depth understanding of the complex network of healthcare system participants with meaningful engineering innovation\". Geography is pan-European with international reach including the United Kingdom, United States, Canada, Israel and Australia. The homepage states \"3 funds currently under management since 2019\" and \"58 companies invested into by our managed funds\"; the firm's July 2026 press-release boilerplate says \"Since 2019, Nina Capital has invested in over 50 companies across nearly 20 countries\".",
+    leadership: [
+      { name: "Marta G. Zanchi", role: "founder, managing partner", profileSlug: "marta-g-zanchi" },
+      { name: "Marc Subirats", role: "general partner", profileSlug: "marc-subirats" },
+      { name: "Sebastian Anastassiou", role: "partner", profileSlug: "sebastian-anastassiou" },
+      { name: "Yahel Halamish", role: "partner", profileSlug: "yahel-halamish" },
+      { name: "Jordi Pedrol", role: "head of finance" },
+      { name: "Bob Schulz", role: "chief partnership officer" },
+      { name: "Kyle Sherrill", role: "investment manager" },
+      { name: "Fiorela Kapllanaj", role: "senior analyst" }
+    ],
+    timeline: [
+      { year: "2019", event: "NINA CAPITAL SGEIC, S.A. is entered on the CNMV register of venture capital management companies as number 148 on 19 July 2019, at C/ Tuset 20, 5a planta, 08006 Barcelona, with share capital of 150,000.00 euros." },
+      { year: "2019", event: "NINA CAPITAL FUND I, FCRE is registered with the CNMV as number 14 on 30 July 2019; a July 2021 firm press release gives Fund I a size of EUR 18 million." },
+      { year: "2021", event: "NINA CAPITAL FUND II, FCRE is registered with the CNMV as number 39 on 4 June 2021; on 28 July 2021 the firm announces five more investments and the launch of a second fund set to reach EUR 40 million." },
+      { year: "2022", event: "On 16 February 2022 the firm announces that Fund II closed oversubscribed, stating it \"eclipsed its target size of EUR40 million in just four months\", and names its first four Fund II investments." },
+      { year: "2024", event: "NINA CAPITAL FUND III, FCRE is registered with the CNMV as number 139 on 16 February 2024." },
+      { year: "2025", event: "In February 2025 the firm announces the first close of its EUR 50 million Fund III, reported as taking total assets under management to over EUR 100 million." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Nippon Venture Capital",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: "ANYCOLOR Inc. (IPO, Tokyo Stock Exchange Growth Market, 8 June 2022)",
+    slug: "nippon-venture-capital",
+    website: "https://www.nvcc.co.jp",
+    short: "NVCC",
+    founded: 1996,
+    hq: "Tokyo, Japan",
+    aum: "1,110.7億円 (approx. JPY 111.07bn; the firm's own English Corporate Profile prints \"Total Asset under Management JPY 111,070,000,000 for 29 funds\" as of 16 June 2026. That aggregates fund vintage sizes across the firm's whole history: its own Japanese table shows only 7 of 30 funds marked 運用中, summing to 345.7億円 or about JPY 34.6bn, roughly 31 per cent of the headline)",
+    thesis: "Nippon Venture Capital Co., Ltd. (NVCC) describes itself in Japanese as an independent and neutral venture capital firm (独立中立型のベンチャーキャピタル) and a support-type venture capital firm (支援型の本格ベンチャーキャピタル), and positions itself as an \"Open Innovation Platformer\" mediating between startups, large corporations and academia (スタートアップ×大手企業×アカデミア). Its English Corporate Profile states its investment focus is \"Japanese early-stage companies\". The firm says it applies a network centred on large corporations together with the experience it has built running university-linked funds through industry-academia collaboration, and its published fund list includes named university and regional vehicles for Kyoto University, Osaka University, Doshisha University, the Nagoya University and Tokai-area universities, ATR in Keihanna, and several prefectural programmes. It is headquartered in Marunouchi, Tokyo, with a Nihonbashi annex and a West Japan office in Osaka.",
+    leadership: [
+      { name: "Shuichi Okuhara", role: "代表取締役会長 (Chairman)" },
+      { name: "Minoru Tagaya", role: "代表取締役社長 (President)" },
+      { name: "Takeshi Kurioka", role: "取締役副会長 (Executive Vice Chairman)" },
+      { name: "Hiroyuki Kuwazono", role: "取締役 副社長執行役員 (Director Executive Vice President)" },
+      { name: "Reiko Mizushima", role: "取締役 専務執行役員 (Director Senior Managing Executive Officer)" },
+      { name: "Wataru Sato", role: "取締役 常務執行役員 (Director Managing Executive Officer)" },
+      { name: "Hiroyuki Endo", role: "取締役 常務執行役員 (Director Managing Executive Officer)" }
+    ],
+    timeline: [
+      { year: "1996", event: "Nippon Venture Capital Co., Ltd. is established on 1 February 1996; the firm's own 代表挨拶 page says the founding members were entrepreneurs who had themselves built successful ventures and executives of large companies committed to supporting ventures." },
+      { year: "1996", event: "NVCC1号投資事業組合, the firm's first fund, is formed on 1 May 1996 at 141億円 (JPY 14.1bn); the fund list records it as 清算結了 (wound up)." },
+      { year: "2006", event: "NVCC6号投資事業有限責任組合 is formed on 1 July 2006 at 138億円 (JPY 13.8bn), the largest fund in the published list after the first." },
+      { year: "2009", event: "Shuichi Okuhara, who joined NVCC in 1998 and became 取締役投資部長 in 2008, is appointed 代表取締役 in April 2009." },
+      { year: "2019", event: "Minoru Tagaya, who joined NVCC in 2000, is appointed 代表取締役社長." },
+      { year: "2022", event: "Portfolio company ANYCOLOR Inc. lists on the Tokyo Stock Exchange Growth Market on 8 June 2022, announced on NVCC's news page." },
+      { year: "2024", event: "NVCC10号投資事業有限責任組合 is established on 28 June 2024 with a stated ファンド総額 of 90億円 (90 x JPY 100 million = JPY 9.0bn)." },
+      { year: "2025", event: "NVCC states a cumulative IPO total of 174 portfolio companies (IPO累計社数 174) as of 24 December 2025, the date PRONI Inc. listed on the Tokyo Stock Exchange Growth Market." },
+      { year: "2026", event: "The firm's English Corporate Profile, dated AS OF JUNE 16th, 2026, states total assets under management of JPY 111,070,000,000 across 29 funds and 20 employees." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "OIF Ventures",
+    sectors: ["B2B Software", "SaaS", "Fintech", "Marketplaces", "Hardware", "Cybersecurity", "Construction Tech", "Future of Work", "Defense"],
+    signatureExit: "Instaclustr (acquired by NetApp, NASDAQ: NTAP, for more than $500 million, April 2022)",
+    slug: "oif-ventures",
+    website: "https://www.oifventures.com.au",
+    short: "OIF",
+    founded: 2016,
+    hq: "Sydney, Australia",
+    aum: "$500M+ (the homepage stat block reads \"$500m+ / Assets / We manage over $500 million in assets\"; the currency is not stated anywhere on the page - negative controls for \"A$500 million\" and \"AUD\" both returned not present - and the figure is undated. The firm is Australian but the currency is not asserted here)",
+    thesis: "OIF Ventures is an Australian venture capital firm founded in 2016 by Geoff Levy, David Shein and Jerry Stesel, and based in Sydney. Its approach page states: \"We typically invest at the Seed, Pre-Series A and Series A stages through our earlier stage funds. We also invest in companies at the Series B stage through our later stage fund.\" On sector it states: \"We are sector and technology agnostic and look to invest in exceptional founders building companies in large markets with a competitive advantage and tailwinds\", and separately: \"We have invested in founders leading businesses in B2B SaaS, FinTech, digital marketplaces and even hardware across industries like cyber security, construction tech, HR tech, FinTech, defense and even a D2C digital-first cremation business.\" The sectors array above is drawn from that sentence and should be read alongside the firm's own agnostic statement rather than as a stated thesis restriction. On geography the firm says: \"We will actively work with you to expand internationally, taking advantage of our strong US network\", and describes actively working with founders to expand to the US and secure their next round of capital from US venture firms. The firm has raised four funds: three early-stage funds and a later-stage Opportunity Fund launched in 2023.",
+    leadership: [
+      { name: "Geoff Levy AO", role: "Investment Team (co-founder, 2016)", profileSlug: "geoff-levy-ao" },
+      { name: "David Shein", role: "Investment Team (co-founder, 2016)", profileSlug: "david-shein" },
+      { name: "Jerry Stesel", role: "Investment Team (co-founder, 2016; described as \"OIF founding partner\" in press releases and articles carried on the firm's own site)", profileSlug: "jerry-stesel" },
+      { name: "Laurence Schwartz", role: "Investment Team (described as \"Partner\" in articles carried on the firm's own site)", profileSlug: "laurence-schwartz" },
+      { name: "Kevin Wilson", role: "Investment Team (\"Kevin joins as Partner\" per the firm's own BLAST OIF newsletter, April 2023)", profileSlug: "kevin-wilson" },
+      { name: "Isabella Rich", role: "Investment Team", profileSlug: "isabella-rich" },
+      { name: "Andrew Yeo", role: "Investment Team", profileSlug: "andrew-yeo" },
+      { name: "Oliver Darwin", role: "Investment Team", profileSlug: "oliver-darwin" },
+      { name: "Adam Goldschmidt", role: "Investment Team (\"Adam joins as an investment analyst\" per the firm's own BLAST OIF newsletter, April 2023)", profileSlug: "adam-goldschmidt" },
+      { name: "Peter Lilley", role: "Investment Committee Member", profileSlug: "peter-lilley" },
+      { name: "Mark Schubert", role: "Chief Financial & Operations Officer" },
+      { name: "Jess Heffernan", role: "Head of Distribution and Investor Relations" },
+      { name: "Sophie Mao", role: "Head of Legal" },
+      { name: "Pam Stevenson", role: "Head of Talent & People" },
+      { name: "Keren Dorfan", role: "Community Manager" }
+    ],
+    timeline: [
+      { year: "2016", event: "Founded as Our Innovation Fund by Geoff Levy, David Shein and Jerry Stesel. Stesel's own bio on the firm's site: \"Then in 2016, I was lucky enough to team up with Geoff Levy and David Shein to establish OIF Ventures.\"" },
+      { year: "2020", event: "Second fund banks $60 million of a $75 million target in its first tranche, per the Australian Financial Review article of 4 August 2020 republished on the firm's site: \"Local venture capital outfit Our Innovation Fund has closed the first tranche of capital for its second fund, banking $60 million from a mix of high net worth investors, family offices\"; the same article says the first fund was $50 million." },
+      { year: "2021", event: "The business name \"OIF Ventures\" is registered on ABN 68 154 200 996 on 15 November 2021, per the Australian Business Register." },
+      { year: "2022", event: "Portfolio company Instaclustr is acquired by NASDAQ-listed NetApp for more than $500 million (April 2022). The AFR article republished on the firm's site states: \"It is also a significant win for local investors such as OIF Ventures (formerly called Our Innovation Fund).\"" },
+      { year: "2022", event: "Fund III closes oversubscribed at $140 million in September 2022, above a $100 million target; Startup Daily reported Fund I at a 45 percent IRR and 3x net multiple and Fund II at an 89 percent net IRR." },
+      { year: "2023", event: "The OIF Ventures Opportunity Fund, a later-stage vehicle, raises $55 million in its first week against a $75 million target (July 2023). Instaclustr co-founder Peter Lilley joins the firm's investment committee." },
+      { year: "2023", event: "Kevin Wilson joins as Partner from Xero and Adam Goldschmidt joins as an investment analyst from UBS, per the firm's own BLAST OIF Edition VI newsletter dated 5 April 2023." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Pegasus Tech Ventures",
+    sectors: ["Artificial Intelligence", "Automotive", "Fintech", "Deep Tech", "Food & Agriculture", "Healthcare", "Robotics", "Automation", "Energy"],
+    signatureExit: null,
+    slug: "pegasus-tech-ventures",
+    website: "https://www.pegasustechventures.com",
+    short: "Pegasus",
+    founded: 2011,
+    hq: "San Jose, CA",
+    aum: "Over US$2B (in assets under management, per the firm's own boilerplate of 16 September 2025; its 28 July 2026 release states it manages over 40 funds and over US$2B in assets. An earlier dated figure was US$1.5B as at 10 March 2021)",
+    thesis: "Pegasus Tech Ventures is a Silicon Valley based venture capital firm that partners with corporations to invest in and engage with high-growth technology companies. Its stated model is Venture Capital-as-a-Service (VCaaS): it raises and manages separate funds on behalf of individual global corporations, sources and vets investment opportunities for those corporate partners, manages the investments, and then connects portfolio companies to its network of corporate partners. Its stated investment focus areas are artificial intelligence, automotive, fintech, deep tech, food and agriculture, healthcare, robotics and automation, and energy. The firm states it manages over 40 funds, has invested in more than 300 startups globally, and reports 88 exits and 29 IPOs on its homepage. It also runs the Startup World Cup competition and the Pegasus University and HAE Accelerator programmes.",
+    leadership: [
+      { name: "Anis Uzzaman", role: "Founder and CEO", profileSlug: "anis-uzzaman" },
+      { name: "Bill Reichert", role: "Partner & Chief Evangelist", profileSlug: "bill-reichert" },
+      { name: "Harumi Akimoto", role: "Partner & COO", profileSlug: "harumi-akimoto" },
+      { name: "John Lim", role: "Partner & CSO", profileSlug: "john-lim" },
+      { name: "Ayaka Unno", role: "Partner & CAO", profileSlug: "ayaka-unno" },
+      { name: "Eri Ueda", role: "Partner & CCO", profileSlug: "eri-ueda" },
+      { name: "Toshitada Nagumo", role: "Partner & Pegasus Japan CEO", profileSlug: "toshitada-nagumo" },
+      { name: "Fujiyo Ishiguro", role: "Board Director" }
+    ],
+    timeline: [
+      { year: "2011", event: "The firm is founded as Fenox Venture Capital, raising its funds from corporate limited partners only, per TechCrunch's October 2016 report." },
+      { year: "2014", event: "Fenox Venture Capital announces a US$200 million fund for Bangladesh startups from San Jose on 1 December 2014." },
+      { year: "2019", event: "Pegasus Tech Ventures launches publicly under that name on 2 May 2019, presenting its Venture Capital-as-a-Service model, a team of over 90 people and investments in more than 140 startups." },
+      { year: "2021", event: "Pegasus and Japanet Holdings launch a US$50 million corporate venture capital fund, announced 10 March 2021, when the firm stated US$1.5 billion in assets under management and over 35 corporate partners including ASUS, Aisin, SEGA, Sojitz and Omron." },
+      { year: "2025", event: "Pegasus announces a strategic partnership with Mitsubishi Materials Corporation on 16 September 2025, stating over US$2 billion in assets under management." },
+      { year: "2026", event: "Pegasus announces on 28 July 2026 that it has surpassed US$300 million in new corporate venture capital commitments across five funds established in the first half of 2026." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Pelion Venture Partners",
+    sectors: ["Technology", "AI", "Marketplaces", "Security", "Infrastructure", "Fintech"],
+    signatureExit: "Aumni (acquired by J.P. Morgan, announced on Pelion's own news index dated 6 April 2023)",
+    slug: "pelion-venture-partners",
+    website: "https://pelionvp.com",
+    short: "Pelion",
+    founded: 1986,
+    hq: "Salt Lake City, UT",
+    aum: "Not publicly disclosed (no firm-level AUM figure is published; the firm's own 28 January 2025 post states it raised $500m for its eighth venture fund, filed on EDGAR across Pelion Ventures VIII, VIII-A, VIII-C and an Entrepreneurs Fund)",
+    thesis: "Pelion is an early-stage technology venture firm based in Utah. Its own January 2025 fund post states that \"Fund 8 will focus on leading series A rounds in exceptional startups. We also have a seed program to support founders at the earliest stages, and we will invest at the Series B and C round as well.\" Its August 2024 post on the seed programme states \"our Seed Program will make $1-3m investments into much earlier-stage companies\", that \"We are generalists both geographically and by sector\" and that the firm \"will invest in any geo in the US, with a particular emphasis on Utah\", while being \"particularly excited about vertical AI applications, marketplaces, security/infrastructure, and fintech\". The same post names Chad Packard, Sterling Snow and Tyler Hogge as the leads of the seed programme. The firm states that about 50 percent of its recent investments have a Utah tie. Pelion also acts, through Pelion MV GP, L.L.C., as general partner of the former Medici Ventures portfolio, a separate blockchain-focused limited partnership in which Overstock.com is the limited partner.",
+    leadership: [
+      { name: "Ben Lambert", role: "Partner", profileSlug: "ben-lambert" },
+      { name: "Blake Modersitzki", role: "Partner", profileSlug: "blake-modersitzki" },
+      { name: "Chad Packard", role: "Partner", profileSlug: "chad-packard" },
+      { name: "Chris Cooper", role: "Partner", profileSlug: "chris-cooper" },
+      { name: "Jeff Kearl", role: "Partner", profileSlug: "jeff-kearl" },
+      { name: "Matt Mosman", role: "Partner", profileSlug: "matt-mosman" }
+    ],
+    timeline: [
+      { year: "1986", event: "Jim Dreyfous founds the firm; Pelion's own account states \"Pelion was actually founded by Jim Dreyfous in 1986 as \"Utah Ventures.\"\"" },
+      { year: "2010", event: "The firm rebrands to Pelion; its own account states \"It wasn't until 2010 that we rebranded to Pelion.\"" },
+      { year: "2013", event: "Pelion Venture Partners V closes at $194 million against a $175 million target, announced 30 May 2013." },
+      { year: "2021", event: "Overstock.com's Medici Ventures subsidiary is converted into a limited partnership on 26 April 2021, with Pelion MV GP, LLC as general partner holding sole authority over the fund's investment decisions." },
+      { year: "2023", event: "First Form D for Pelion Ventures VIII, L.P. is filed with the SEC on 18 April 2023, with a first sale dated 25 April 2023." },
+      { year: "2025", event: "Pelion announces on 28 January 2025 that it has raised $500m for its eighth venture fund." }
+    ],
+    holdings: [
+      { name: "Weave Communications, Inc.", ticker: "WEAV", historicalPrice: null, price: null }
+    ]
+  },
+  {
+    rank: null,
+    name: "Spiral Capital",
+    sectors: ["AI", "Infrastructure", "Smart Cities", "Fintech", "Healthcare"],
+    signatureExit: null,
+    slug: "spiral-capital",
+    website: "https://spiral-cap.com",
+    short: "Spiral Capital",
+    founded: 2016,
+    hq: "Tokyo, Japan",
+    aum: "1,030億円 (approx. JPY 103bn; cumulative group AUM stated by the firm on 15 July 2026 on the close of the ninth fund run by SIP)",
+    thesis: "Spiral Capital describes itself as an independent venture capital firm founded in 2016 whose mission is \"Spiral into Growth\". Its own release for the third general fund states that it invests mainly by leading seed and early-stage rounds while also placing a set proportion into mid and later-stage rounds during business expansion (「シード・アーリーステージへのリード投資をメインとしつつ、事業拡大期のミドル・レイターステージにも一定割合の投資を行います。」), that it targets domestic Japanese startups (国内のスタートアップ企業), that the third fund concentrates on what it calls the BIG4 areas of AI, Smart Infrastructure, FinTech and Healthcare, and that its cheque size is 1件あたり5,000万円～5億円 with follow-on capacity up to 20億円 (JPY 50m to JPY 500m per deal, up to JPY 2bn including follow-ons). The group is made up of two companies: Spiral Capital, which runs the general funds, and Spiral Innovation Partners, which runs the CVC funds for corporate limited partners and carries the group's corporate functions. Its support page offers management, HR and PR support to portfolio companies and open-innovation matchmaking with large corporations, plus startup introductions and advisory services to limited partners.",
+    leadership: [
+      { name: "Tomokazu Okuno (奥野 友和)", role: "General Partner, CEO (Spiral Capital)", profileSlug: "tomokazu-okuno" },
+      { name: "Takashi Chiba (千葉 貴史)", role: "General Partner (Spiral Capital)", profileSlug: "takashi-chiba" },
+      { name: "Hiroshi Oka (岡 洋)", role: "General Partner (Spiral Innovation Partners)", profileSlug: "hiroshi-oka" },
+      { name: "Kazuhiro Kamada (鎌田 和博)", role: "General Partner (Spiral Innovation Partners)", profileSlug: "kazuhiro-kamada" },
+      { name: "Shinichiro Maeda (前田 信一郎)", role: "Managing Director / Corporate & Compliance Officer (Spiral Innovation Partners)" }
+    ],
+    timeline: [
+      { year: "2012", event: "IMJ Investment Partners, a Singapore entity, is established under IMJ (「IMJの傘下でIMJ Investment Partners（シンガポール法人）を設立」)." },
+      { year: "2013", event: "Culture Convenience Club (CCC) acquires IMJ (「CCCによるIMJの買収」)." },
+      { year: "2016", event: "IMJ Investment Partners Japan, the Japanese entity, is established and begins operating IMJIP Japan Fund 1; the firm's own history page marks this year グループ創業 (founding of the group)." },
+      { year: "2016", event: "Spiral Capital Japan Fund 1号投資事業有限責任組合, 70億円 (70 x JPY 100 million = JPY 7.0bn), vintage 2016 on the firm's fund page." },
+      { year: "2017", event: "A management buyout is carried out at the time of Accenture's acquisition of IMJ, and the business restarts as the Spiral Ventures group (「アクセンチュアによるIMJ買収時にMBOを実施、Spiral Venturesグループとして再スタート」)." },
+      { year: "2019", event: "Spiral Ventures Japan dissolves its joint venture with the Singapore entity, becomes independent and is RENAMED Spiral Capital; Spiral Innovation Partners is established (「Spiral Ventures JapanがシンガポールFC法人との合弁を解消し独立、Spiral Capitalに名称変更。Spiral Innovation Partnersを設立」)." },
+      { year: "2019", event: "Spiral Capital Japan Fund 2号投資事業有限責任組合, 120億円 (JPY 12.0bn), vintage 2019 on the firm's fund page." },
+      { year: "2022", event: "T&D Innovation Fund is formed with T&D Holdings on 21 July 2022; the fund is reported at ファンド規模は50億円 (50 x JPY 100 million = JPY 5.0bn)." },
+      { year: "2023", event: "全国保証イノベーション投資事業有限責任組合 is established on 31 July 2023 at 50億円 (JPY 5.0bn), with Spiral Innovation Partners LLP as 無限責任組合員 and Zenkoku Hosho Co., Ltd. as 有限責任組合員." },
+      { year: "2025", event: "Spiral Capital announces on 26 December 2025 that Spiral Capital Japan Fund 3号投資事業有限責任組合 has completed fundraising at 総額150億円 (JPY 15.0bn)." },
+      { year: "2026", event: "SEINO Alliance Fund投資事業有限責任組合 is formed with Seino Holdings on 15 July 2026, described in the release as a 100億円規模 fund with 運用総額 80億円 (JPY 8.0bn) at formation; the release states it is the ninth fund run by Spiral Innovation Partners and that group cumulative AUM reached 1,030億円 (JPY 103bn)." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "UntroD Capital",
+    sectors: ["Deep Tech"],
+    signatureExit: "QD Laser (IPO on the Tokyo Stock Exchange Mothers market), named in the firm's own bio for Executive Director Sou Yanbe as one of his major portfolio companies. The listing year is not stated on that page and has not been added here.",
+    slug: "untrod-capital",
+    website: "https://untrod.inc/en/",
+    short: "UntroD",
+    founded: 2014,
+    hq: "Tokyo, Japan",
+    aum: "300億円以上 (over JPY 30bn managed across multiple funds, stated in the firm's own 3 June 2024 rebranding release and repeated in its 26 July 2024 Global Fund II release)",
+    thesis: "UntroD Capital is a Japanese deep tech venture manager that operates the Real Tech Fund family. It says it coined the term 'real tech' before 'deep tech' was in use, and defines it as innovative technology that addresses societal and environmental challenges. It states that it invests in R&D-oriented startups at seed and early stage, and describes its purpose as directing capital into areas society needs but that investors have overlooked, then demonstrating economic viability so that capital keeps flowing. The firm organises its vehicles as the Real Tech Fund Japan (seed and early stage deep tech across Japan), the Real Tech Fund Global (Southeast Asian environmental and social challenges), the Crossover Impact Fund (late stage, IPO-focused impact companies) and the UntroD Real Tech Debt Fund (debt financing for middle stage deep tech companies). It operates from Tokyo, Singapore and Malaysia.",
+    leadership: [
+      { name: "Akihiko Nagata", role: "CEO, UntroD Capital Japan, Inc.", profileSlug: "akihiko-nagata" },
+      { name: "Yukihiro Maru", role: "Managing Director, UntroD, Inc. / UntroD Capital Asia Pte. Ltd.", profileSlug: "yukihiro-maru" },
+      { name: "Akitaka Wilhelm Fujii", role: "Executive Director, UntroD Capital Japan, Inc. / UntroD Capital Asia Pte. Ltd.", profileSlug: "akitaka-wilhelm-fujii" },
+      { name: "Sou Yanbe", role: "Executive Director, UntroD Capital Japan, Inc.", profileSlug: "sou-yanbe" },
+      { name: "Naoki Higashizono", role: "Executive Director, UntroD Capital Japan, Inc. / Managing Director, UntroD Bridge Capital, Inc.", profileSlug: "naoki-higashizono" },
+      { name: "Satoshi Uejima", role: "Executive Director, UntroD Capital Japan, Inc.", profileSlug: "satoshi-uejima" },
+      { name: "Daiki Kumamoto", role: "Executive Director, UntroD Capital Asia Pte. Ltd.", profileSlug: "daiki-kumamoto" },
+      { name: "Henry Tao", role: "Executive Director, UntroD Capital Asia Pte. Ltd.", profileSlug: "henry-tao" },
+      { name: "Shinji Oshige", role: "Head of Investment, UntroD Capital Japan, Inc.", profileSlug: "shinji-oshige" }
+    ],
+    timeline: [
+      { year: "2014", event: "The company is established in December 2014 as Real Tech Holdings Co., Ltd., per the 設立 line of its own corporate profile block." },
+      { year: "2015", event: "Akihiko Nagata founds the Real Tech Fund to direct deep tech investment at societal and environmental challenges; Yukihiro Maru co-founds it the same year." },
+      { year: "2020", event: "Sou Yanbe leads the creation of the Glocal Deeptech Fund, which invests in local Japanese real tech startups alongside regional financial institutions and operating companies; the firm also states it established the first deep-tech-specialised impact investment fund in 2020." },
+      { year: "2024", event: "Akihiko Nagata returns as President and CEO effective 1 April 2024, and the head office relocates to Sumitomo Realty & Development Toranomon Tower 17F, Minato-ku, Tokyo." },
+      { year: "2024", event: "Real Tech Holdings Co., Ltd. changes its company name to UntroD Capital Japan Co., Ltd. effective 3 June 2024, and moves its website to untrod.inc." },
+      { year: "2024", event: "UntroD announces the first closing of Global Fund II on 26 July 2024, its second global deep tech fund, with investors from Japan and Southeast Asia." },
+      { year: "2026", event: "UntroD Capital Asia announces the final close of Real Tech Global Fund 2 on 14 August 2026, with limited partners including SMBC Nikko Securities, The 77 Bank, Iwatani Corporation, MOL PLUS, Wismettac Ventures and Leave a Nest." }
+    ],
+    holdings: []
   }
 ];
