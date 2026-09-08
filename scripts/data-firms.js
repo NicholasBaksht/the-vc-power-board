@@ -16450,5 +16450,462 @@ holdings: []
       { year: "2026", event: "UntroD Capital Asia announces the final close of Real Tech Global Fund 2 on 14 August 2026, with limited partners including SMBC Nikko Securities, The 77 Bank, Iwatani Corporation, MOL PLUS, Wismettac Ventures and Leave a Nest." }
     ],
     holdings: []
+  },
+
+  /* ---- Firm batch 3, added 7 September 2026: 20 firms. Their partner records
+     are in data-partners-1.js (not shard 6 - see that file's banner) and
+     their field-level provenance is in data-evidence.js, added in the same
+     batch. Checked against all 580 pre-existing firms for slug, name,
+     historical-name and parent-brand collisions; none found. ---- */
+  {
+    rank: null,
+    name: "AlbionVC",
+    sectors: [],
+    signatureExit: null,
+    slug: "albionvc",
+    website: "https://albion.vc",
+    short: "AlbionVC",
+    founded: null,
+    hq: "London, United Kingdom",
+    aum: null,
+    thesis: "AlbionVC is the venture capital arm of the London investment manager Albion Capital, operating through the entity AlbionVC LLP. Its legal notice states that \"AlbionVC LLP is authorised and regulated by the Financial Conduct Authority\" and gives \"Registered in England No. OC341254\" with a registered office at 1 Benjamin St, Farringdon, London, EC1M 5QL. Its philosophy page says the firm is \"now in our fourth decade as a VC firm\" and its homepage claims \"100+ exits from first concept to global scale\" and \"£1bn in funds\". The team page lists 29 people, of whom 18 hold partner-level or chair titles, including a Managing Partner, a Deputy Managing Partner, a Chairman and several Operating Partners.",
+    leadership: [
+      { name: "Will Fraser-Allen", role: "Managing Partner", profileSlug: "will-fraser-allen" },
+      { name: "Andrew Elder", role: "Deputy Managing Partner", profileSlug: "andrew-elder" },
+      { name: "Patrick Reeve", role: "Chairman", profileSlug: "patrick-reeve" },
+      { name: "Vikash Hansrani", role: "Operations Partner", profileSlug: "vikash-hansrani" },
+      { name: "Ed Lascelles", role: "Partner", profileSlug: "ed-lascelles" }
+    ],
+    timeline: [
+      { year: "2017", event: "Albion Ventures rebrands as Albion Capital, reported by Venture Capital Journal on 12 June 2017; AlbionVC is the venture arm operating under that group." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Anorak Ventures",
+    sectors: ["New Technology", "Deep Tech"],
+    signatureExit: null,
+    slug: "anorak-ventures",
+    website: "https://www.anorak.vc",
+    short: "Anorak",
+    founded: 2016,
+    hq: "Los Angeles, CA",
+    aum: null,
+    thesis: "Anorak Ventures is a seed-stage venture firm investing at pre-seed and seed in companies \"building differentiated technology\". The firm takes its name from the dictionary sense it quotes on its own site - \"A person who has a very strong interest, perhaps obsessive, in niche subjects\" - and says \"We invest in Anoraks!\", meaning highly specialised founders working in niches that fall inside the fund's areas. The firm's claim. It says it looks for \"teams trying to solve these problems and leverage our own knowledge and connections to help them succeed\", and states it has made over 120 seed-stage investments. It operates from Los Angeles and San Francisco.",
+    leadership: [
+      { name: "Greg Castle", role: "Managing Partner", profileSlug: "greg-castle" },
+      { name: "Charlie Leggate", role: "Partner", profileSlug: "charlie-leggate" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Capnamic Ventures",
+    sectors: ["Technology"],
+    signatureExit: null,
+    slug: "capnamic-ventures",
+    website: "https://capnamic.com",
+    short: "Capnamic",
+    founded: 2013,
+    hq: "Cologne, Germany",
+    aum: "€350M (the about page states \"350 million EUR of capital under management\", checked 2026; the firm's own wording is capital under management rather than assets under management)",
+    thesis: "Capnamic is an early-stage venture capital firm operating out of Cologne, Berlin and Munich. Its homepage states \"Capnamic is a Venture Capital firm supporting ambitious founders in the German-speaking regions\" and \"Our focus is on the early stages, from (Pre-)Seed to Series A\". The about page states \"Since our foundation in 2013\", \"350 million EUR of capital under management\", \"44 active Capnamic investments\" and \"900 million EUR of funds raised by our portfolio companies\", and describes the firm as \"a multi-corporate VC with LPs from some of the biggest national and international corporations\" (the firm's own claim). It states it gets in early, \"from Pre-Seed to Series A\", with people on the ground in Cologne, Berlin and Munich, and emphasis on Germany and the German-speaking regions.",
+    leadership: [
+      { name: "Joerg Binnenbruecker", role: "Managing Partner" },
+      { name: "Olaf Jacobi", role: "Managing Partner", profileSlug: "olaf-jacobi" },
+      { name: "Christian Knott", role: "Managing Partner", profileSlug: "christian-knott" },
+      { name: "Christian Siegele", role: "Managing Partner", profileSlug: "christian-siegele" },
+      { name: "Prof. Dr. Christian Horneber", role: "Managing Partner Bremen", profileSlug: "prof-dr-christian-horneber" }
+    ],
+    timeline: [
+      { year: "2013", event: "Capnamic's about page states \"Since our foundation in 2013\", placing the firm's founding in that year." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Credo Ventures",
+    sectors: ["Sector-Agnostic", "Early-Stage Technology"],
+    signatureExit: "UiPath (IPO, 2021)",
+    slug: "credo-ventures",
+    website: "https://www.credoventures.com",
+    short: "Credo",
+    founded: 2009,
+    hq: "Prague, Czech Republic",
+    aum: null,
+    thesis: "Credo Ventures is an early-stage venture firm backing founders from Central and Eastern Europe. Its own site describes it as the fund of choice for CEE founders building generational companies, says it backs exceptional people rather than working to a sector thesis, and says it writes the first check before product and before revenue. The homepage states the firm manages 5 funds, invests at pre-seed and early stage with checks of $1M to $5M, and has backed more than 100 companies. It operates from Prague and Krakow.",
+    leadership: [
+      { name: "Ondrej Bartos", role: "Founding Partner", profileSlug: "ondrej-bartos" },
+      { name: "Jan Habermann", role: "Founding Partner", profileSlug: "jan-habermann" },
+      { name: "Guillaume Fournier", role: "Board Partner", profileSlug: "guillaume-fournier" },
+      { name: "Maciej Gnutek", role: "General Partner", profileSlug: "maciej-gnutek" },
+      { name: "Jakub Krikava", role: "General Partner", profileSlug: "jakub-krikava" },
+      { name: "Michal Cernocky", role: "General Partner, Credo Crossover", profileSlug: "michal-cernocky" },
+      { name: "Lukas Hurych", role: "General Partner, Credo Crossover", profileSlug: "lukas-hurych" },
+      { name: "Matej Micek", role: "Tech Partner", profileSlug: "matej-micek" },
+      { name: "Max Kolowrat", role: "General Partner", profileSlug: "max-kolowrat" }
+    ],
+    timeline: [
+      { year: "2009", event: "Credo Ventures begins investing in Central and Eastern Europe; the firm's own site dates its conviction in the region to 2009." },
+      { year: "2021", event: "UiPath, named on the Credo homepage as a company Credo was first investor in, completes an IPO the homepage describes as a $35B IPO." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Delta Blockchain Fund",
+    sectors: ["Blockchain", "DeFi", "Crypto", "Gaming", "Infrastructure", "Security"],
+    signatureExit: null,
+    slug: "delta-blockchain-fund",
+    website: "https://deltafund.io",
+    short: "Delta",
+    founded: null,
+    hq: null,
+    aum: "$150M (one named vehicle only - \"Delta Liquid Fund has an AUM of $150 million\", deltafund.io/about-us, checked 2026. No firm-level AUM is published)",
+    thesis: "Delta Blockchain Fund describes itself as \"A native crypto venture-hedge fund, investing in pathbreaking blockchain builders.\" The firm's claim. It invests at pre-seed and seed stage across decentralised technologies including DeFi, NFTs, gaming, scaling solutions and identity projects, and states a mission to \"Catalyze the transformation of decentralized technologies from aspirational concepts into tangible realities\". Its team page describes the group as \"a powerhouse collective of thought leaders helping shape the future of blockchain since 2013\" - the firm's own wording, and a claim about the people rather than a founding date for the fund. The firm says it has made over 100 investments, naming Polygon, Starkware, Quantstamp and Sorare, and runs a separate Delta Liquid Fund launched alongside the venture vehicle.",
+    leadership: [
+      { name: "Kavita Gupta", role: "Founder & GP", profileSlug: "kavita-gupta" },
+      { name: "Mudit Gupta", role: "Technical Partner", profileSlug: "mudit-gupta" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Demeter Ventures",
+    sectors: ["Sector-Agnostic"],
+    signatureExit: null,
+    slug: "demeter-ventures",
+    website: "https://www.demeterventures.co",
+    short: "Demeter",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "Demeter Ventures is a London-based investment firm that describes its approach as \"Innovative Growth Capital\" and \"Sector-Agnostic\", and says it acts as a \"long-term steward of capital\" in companies with sustainable models. The firm's own site sets out five stated principles - integrity and transparency, innovation-driven investing, uniquely positioned enterprises, collaborative growth, and flexibility - and says it looks for technological or business-model innovation alongside positive social and environmental impact. The firm's claim. No fund size, vintage or assets under management figure is published on the site, and the site publishes no team page: only one individual, Tarun Reddy, is named anywhere on it.",
+    leadership: [
+      { name: "Tarun Reddy", role: "Founding Partner and CEO", profileSlug: "tarun-reddy" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Eleven Ventures",
+    sectors: ["Fintech", "Healthcare", "Future of Work", "Climate", "Sustainability"],
+    signatureExit: null,
+    slug: "eleven-ventures",
+    website: "https://www.11.vc",
+    short: "Eleven",
+    founded: 2012,
+    hq: "Sofia, Bulgaria",
+    aum: null,
+    thesis: "Eleven Ventures is a pre-seed and seed investor in Central and Eastern Europe and South East Europe, operating from Sofia with offices listed in Athens and Amsterdam. Its site states initial tickets of EUR 300K to EUR 1M and capacity to invest up to EUR 6M in a single company across its lifecycle, and says it has backed more than 150 companies since 2012, naming Payhawk, Nitropack and SMSBump. Stated focus areas are fintech, healthcare, future of work, and climate and sustainability, with opportunistic investments alongside. The site says the firm is backed by more than 80 tech and industrial entrepreneurs from CEE and beyond. Eleven began in 2012 as an accelerator programme: Trending Topics reports a first fund of EUR 12M drawn largely from public capital via the EIF JEREMIE programme and backing 116 projects on an acceleration model, followed by a EUR 6M second fund of entirely private capital on a per-company rather than batch model. Eleven also runs the Visa Innovation Program Europe, launched in 2018, and the Elevate accelerator, launched in 2019 with AUBG.",
+    leadership: [
+      { name: "Daniel Tomov", role: "Partner", profileSlug: "daniel-tomov" },
+      { name: "Ivaylo Simov", role: "Partner", profileSlug: "ivaylo-simov" },
+      { name: "Svetozar Georgiev", role: "Partner", profileSlug: "svetozar-georgiev" },
+      { name: "Valeri Petrov", role: "Partner", profileSlug: "valeri-petrov" },
+      { name: "Martin Ouzounov", role: "Partner", profileSlug: "martin-ouzounov" }
+    ],
+    timeline: [
+      { year: "2012", event: "Eleven begins operating in Bulgaria as an accelerator, with a first fund Trending Topics reports at EUR 12M sourced largely from the EIF JEREMIE programme." },
+      { year: "2018", event: "Visa Innovation Program Europe launched." },
+      { year: "2019", event: "Elevate accelerator launched with the American University in Bulgaria." },
+      { year: "2019", event: "Eleven Capital AD, a separate Bulgarian joint-stock company, is established with initial capital of BGN 10 million and subsequently acquires Eleven Fund Cooperatief U.A., taking over a portfolio of startups invested in between 2012 and 2015." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Elkstone",
+    sectors: [],
+    signatureExit: null,
+    slug: "elkstone",
+    website: "https://www.elkstonepartners.com",
+    short: "Elkstone",
+    founded: null,
+    hq: "Dublin, Ireland",
+    aum: null,
+    thesis: "Elkstone is an Irish private markets and wealth business rather than a pure venture firm. TechCrunch described it in May 2023 as \"a wealth management firm that for the past decade has invested privately at the seed stage in future unicorns\"; that is TechCrunch's characterisation, not the firm's own words. Its venture activity runs through separately constituted funds. The Central Bank of Ireland fund register records Elkstone Ireland Ventures I, reference C474450, authorised on 21 February 2022 as an approved sub-fund of a designated investment company, with its umbrella recorded as Elkstone Opportunities Fund ILP, reference C471782. TechCrunch reported the firm closed its first venture capital fund at EUR 100 million, backed by Enterprise Ireland and the Ireland Strategic Investment Fund alongside entrepreneurs and private capital. The firm has since publicised a second, all-island venture fund. Elkstone's own website could not be opened during this research pass, so no first-party description of its business lines, no team roster and no assets under management figure could be recorded.",
+    leadership: [
+      { name: "Alan Merriman", role: "Chief Executive Officer", profileSlug: "alan-merriman" }
+    ],
+    timeline: [
+      { year: "2022", event: "Elkstone Ireland Ventures I authorised by the Central Bank of Ireland on 21 February 2022, reference C474450, as an approved sub-fund of a designated investment company under the Elkstone Opportunities Fund ILP umbrella (C471782)." },
+      { year: "2023", event: "TechCrunch reports on 18 May 2023 that Elkstone closed its first venture capital fund at EUR 100 million, with backing from Enterprise Ireland and the Ireland Strategic Investment Fund." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Frontline Ventures",
+    sectors: ["B2B", "B2B Software"],
+    signatureExit: null,
+    slug: "frontline-ventures",
+    website: "https://www.frontline.vc",
+    short: "Frontline",
+    founded: null,
+    hq: "Dublin, Ireland",
+    aum: null,
+    thesis: "Frontline Ventures invests in early-stage B2B companies across Europe and specialises in transatlantic expansion. Its about page states: \"We bridge the technical and the human, providing both capital and experience to help shorten our founders' learning curves.\" The firm runs two distinct and separately named fund families rather than a single pool. Frontline Seed backs European founders at pre-seed and seed who intend to make the US their biggest market. Frontline Growth backs US companies at Series B to D that are ready to make Europe their next growth engine. The about page states that half the portfolio has US offices and 55 percent has US investors on the cap table, and that the team spends 20 percent of its time on US-based activity. The team page shows people in Dublin, London, New York and Palo Alto.",
+    leadership: [
+      { name: "Brennan O'Donnell", role: "Partner", profileSlug: "brennan-odonnell" },
+      { name: "Stephen McIntyre", role: "Partner", profileSlug: "stephen-mcintyre" },
+      { name: "Will Prendergast", role: "Partner", profileSlug: "will-prendergast" },
+      { name: "William McQuillan", role: "Partner", profileSlug: "william-mcquillan" },
+      { name: "Zoe Chambers", role: "Partner", profileSlug: "zoe-chambers" },
+      { name: "George Radford", role: "Partner", profileSlug: "george-radford" },
+      { name: "Shay Garvey", role: "Partner (Emeritus)", profileSlug: "shay-garvey" },
+      { name: "David Clarke", role: "Venture Partner", profileSlug: "david-clarke" },
+      { name: "Steve Collins", role: "Venture Partner", profileSlug: "steve-collins" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "GreatPoint Ventures",
+    sectors: [],
+    signatureExit: null,
+    slug: "greatpoint-ventures",
+    website: "https://gpv.com",
+    short: "GPV",
+    founded: null,
+    hq: "San Francisco, CA",
+    aum: null,
+    thesis: "GreatPoint Ventures is an early-stage venture capital firm based in San Francisco. Its homepage describes it as \"a venture capital firm founded by entrepreneurs and company-builders\" and states \"20 Companies we've founded\", \"$300B Enterprise value created\" and \"100+ Years as operators\" (the firm's own claims). Its philosophy page states \"We make fewer than ten new investments each year.\" No sector list, fund size or assets-under-management figure is published on the pages opened, so those are left null. The firm now uses the domain gpv.com; greatpointventures.com redirects to it.",
+    leadership: [
+      { name: "Andrew Perlman", role: "Managing Partner", profileSlug: "andrew-perlman" },
+      { name: "Ashok Krishnamurthi", role: "Managing Partner", profileSlug: "ashok-krishnamurthi" },
+      { name: "Ray Lane", role: "Partner Emeritus", profileSlug: "ray-lane" },
+      { name: "Gautam Krishnamurthi", role: "General Partner", profileSlug: "gautam-krishnamurthi" },
+      { name: "Avi Goldberg", role: "Partner", profileSlug: "avi-goldberg" },
+      { name: "Joseph Tuchman", role: "Partner", profileSlug: "joseph-tuchman" },
+      { name: "David Resnekov", role: "Partner", profileSlug: "david-resnekov" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Presto Ventures",
+    sectors: ["Security", "Defense", "Aerospace", "Defense & Dual-Use"],
+    signatureExit: null,
+    slug: "presto-ventures",
+    website: "https://www.prestoventures.com",
+    short: "Presto",
+    founded: null,
+    hq: "Prague, Czech Republic",
+    aum: null,
+    thesis: "Presto Ventures is a Czech venture capital firm based in Prague. Its homepage states \"Since 2016, we've invested €40M from two funds. Our new €150M fund targets the best of security, defense, and aerospace tech, with focus on dual-use.\" It gives its focus as \"Security, defense, and aerospace. Cutting-edge and dual-use solutions, both software and hardware, capable of solving the most pressing global challenges.\" and says it invests in companies \"with foundations or a significant operational focus in the countries of NATO, its allies, and the startup nation of Israel\". On stage and cheque size the homepage states \"Mostly post-revenue companies raising a €800k to €8M financing round\" and \"Tickets ranging from €500k to €5M.\", and it claims \"A portfolio of 60+ early-stage startups across two funds.\" The €150M figure is a fund and not assets under management, and the €40M is capital deployed, so the aum field is null. The firm's address is Slovansky dum, Senovazne namesti 869/28, 110 00 Prague 1.",
+    leadership: [
+      { name: "Přemysl Rubeš", role: "Founder & Managing Partner", profileSlug: "premysl-rubes" },
+      { name: "Vojta Rošek", role: "Partner", profileSlug: "vojta-rosek" },
+      { name: "Eduard Kučera", role: "Partner | Fund II", profileSlug: "eduard-kucera" },
+      { name: "Michal Šperka, CFA", role: "CFO" }
+    ],
+    timeline: [
+      { year: "2016", event: "The firm's homepage states \"Since 2016, we've invested €40M from two funds.\", dating its investing activity to 2016." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Ring Capital",
+    sectors: ["Technology", "Sustainability", "Social-Impact Software", "Climate"],
+    signatureExit: null,
+    slug: "ring-capital",
+    website: "https://www.ringcp.com",
+    short: "Ring",
+    founded: null,
+    hq: "Paris, France",
+    aum: "€470M (the homepage body states \"€470M assets under management\", checked 2026)",
+    thesis: "Ring Capital is a Paris-based impact investment manager operating five strategies under one platform: Altitude (growth buy-out), Mission (venture capital), Generations (pre-seed and seed), Africa (early-stage) and Foundation (venture philanthropy). Its vision page states the firm directs \"capital towards vital solutions tackling major social and environmental challenges\" (the firm's own claim) and that it is a mission-driven company under the 2019 French PACTE law as well as a certified B Corporation. The Mission venture strategy states tickets of €0.5m to €3m, a target portfolio of 25 companies, companies up to €5m revenues with more than 100% yearly growth, minority stakes, and support from the European Union under the InvestEU Fund. The homepage states \"100% funds dedicated to impact\", \"60+ portfolio companies\" and \"9 countries we've invested in\".",
+    leadership: [
+      { name: "Elisabeth Moreno", role: "Chairwoman of Ring Capital", profileSlug: "elisabeth-moreno" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Scribble Ventures",
+    sectors: ["AI"],
+    signatureExit: "Statsig (acquired by OpenAI)",
+    slug: "scribble-ventures",
+    website: "https://www.scribble.vc",
+    short: "Scribble",
+    founded: 2020,
+    hq: null,
+    aum: null,
+    thesis: "Scribble Ventures invests at pre-seed and seed in what its site calls \"AI native companies\", looking for founders able to \"do things that are extremely unlikely\" who are either \"reinventing an existing market, or creating a totally new one\". The firm's claim. It states typical initial checks of $750k to $1.5M and says it right-sizes checks to what the company needs, and that decisions usually come within one to two weeks of a first meeting, after several team meetings, without requiring consensus. Its site describes the team as product and go-to-market leaders from OpenAI, Meta, Twitter and a16z. Named portfolio companies on the site include Whatnot, Baseten, Figma, Abridge, Statsig, Poolside, Sunday Robotics, SpaceX, Varda, Whoop, Hadrian, Peregrine and Motherduck.",
+    leadership: [
+      { name: "Elizabeth Weil", role: "Founder & Partner", profileSlug: "elizabeth-weil" },
+      { name: "Kevin Weil", role: "Operator in Residence" },
+      { name: "Todd Forrest", role: "CFO" },
+      { name: "Stu Smith", role: "Partner", profileSlug: "stu-smith" }
+    ],
+    timeline: [
+      { year: "2020", event: "Elizabeth Weil founds Scribble Ventures in March 2020, per Forbes." },
+      { year: "2021", event: "Scribble closes its first fund of about $42 million, reported by Forbes on 4 February 2021, with Elizabeth Weil and Annelies Gamble as its two full-time partners." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Sky9 Capital",
+    sectors: ["Deep Tech", "AI", "Internet", "Consumer", "Enterprise", "Healthcare"],
+    signatureExit: null,
+    slug: "sky9-capital",
+    website: "https://www.sky9capital.com",
+    short: "Sky9",
+    founded: 2016,
+    hq: null,
+    aum: "~$2B (the firm's About Us page states \"AUM of ~$2 billion since 2011 across seven USD funds\", checked 2026; the Chinese-language site states 资产管理规模近20亿美元, which agrees)",
+    thesis: "Sky9 Capital is a venture firm operating across China and the United States, using the Chinese name \"云九资本\". Its About Us page states \"Sky9 Capital was founded in 2016 by partners who had been collaborating since 2011\" and gives its remit as \"to back exceptional technical founders solving hard problems with AI and frontier technologies\". The Chinese-language site describes the sector remit as \"深科技、互联网、消费、企业服务和医疗健康等领域的创新主题\", that is deep tech, internet, consumer, enterprise services and healthcare. The English About Us page states \"AUM of ~$2 billion since 2011 across seven USD funds\", and the Chinese site states \"资产管理规模近20亿美元\"; 20亿 is 20 x 100 million, so this is close to US$2 billion and the two statements agree. The Chinese site also states \"2011年至今，团队共管理多支美元和人民币基金\", that the team has managed multiple USD and RMB funds since 2011. The English About Us page lists a presence in San Francisco, Boston, Paris, Abu Dhabi, Beijing, Shanghai, Hong Kong, Singapore and Sao Paulo, with specific addresses for San Francisco, Shanghai, Singapore and Paris.",
+    leadership: [
+      { name: "Ron Cao", role: "Founder and Partner", profileSlug: "ron-cao" },
+      { name: "Wei Hao", role: "Partner", profileSlug: "wei-hao" },
+      { name: "Yu Yuan", role: "Partner", profileSlug: "yu-yuan" },
+      { name: "Matthew Tabbiner", role: "Partner", profileSlug: "matthew-tabbiner" },
+      { name: "Davy Shen", role: "Partner", profileSlug: "davy-shen" }
+    ],
+    timeline: [
+      { year: "2011", event: "The Chinese-language site states \"2011年至今，团队共管理多支美元和人民币基金\": since 2011 the team has managed multiple USD and RMB funds. The English About Us page dates the partners' collaboration to the same year." },
+      { year: "2016", event: "The About Us page states \"Sky9 Capital was founded in 2016 by partners who had been collaborating since 2011.\"" }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "SWEN Capital Partners",
+    sectors: ["Infrastructure", "Climate", "Sustainability", "Energy"],
+    signatureExit: null,
+    slug: "swen-capital-partners",
+    website: "https://www.swen-cp.fr",
+    short: "SWEN CP",
+    founded: 2008,
+    hq: "Paris, France",
+    aum: null,
+    thesis: "SWEN Capital Partners is a French asset management company regulated by the AMF under approval number GP-14000047, not a venture capital firm in the ordinary sense. Its about page describes activity in \"private equity, unlisted infrastructure and private debt\", which it pursues largely as a multi-strategy private-markets manager investing through funds, co-investments and secondaries, alongside dedicated impact strategies covering the ocean and blue economy, climate and mezzanine debt financing. Its about page states it was \"Founded in 2008 as part of the OFI group\". Ownership is institutional: the about page states it is held by OFI Invest, whose own main shareholders are companies in the Aema group (Macif, the Abeille Assurances holding company and Aesio Mutuelle), together with Credit Mutuel Arkea, along with some of its employees. Direct startup venture investing is at most one part of a much broader private-markets platform.",
+    leadership: [],
+    timeline: [
+      { year: "2008", event: "SWEN Capital Partners' about page states the business was \"Founded in 2008 as part of the OFI group\"." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Tesi",
+    sectors: ["Sector-Agnostic"],
+    signatureExit: null,
+    slug: "tesi",
+    website: "https://tesi.fi",
+    short: "Tesi",
+    founded: null,
+    hq: "Helsinki, Finland",
+    aum: "€3.2B (investments under management, per Tesi's own key figures for 2025)",
+    thesis: "Tesi is the Finnish state-owned investment company that trades under the name Tesi and whose legal name is Finnish Industry Investment Ltd. Its own about page describes it as \"a state-owned investment company with an industrial policy mission\" that invests \"in funds and directly in companies\" across venture capital and private equity. It reports EUR 3.2 billion of investments under management for 2025, 137 VC and PE funds invested in and 1,463 portfolio companies reached through funds and direct holdings, of which 576 are domestic and 887 international. The group comprises the parent company and four wholly owned subsidiaries: FEFSI Management Oy, Tesi AIFM Oy, Tesi Industrial Management Oy and Industrial Subsidy Oy. Its head office is at Porkkalankatu 1, Helsinki, and its business ID is 1007806-3.",
+    leadership: [
+      { name: "Pia Santavirta", role: "CEO", profileSlug: "pia-santavirta" },
+      { name: "Juha Lehtola", role: "Director, Venture and Growth Investments, Tesi AIFM Oy", profileSlug: "juha-lehtola" },
+      { name: "Samuel Wendelin", role: "Director, Fund Investments, Tesi AIFM Oy", profileSlug: "samuel-wendelin" },
+      { name: "Jussi Hattula", role: "Director, Industrial Investments, Tesi AIFM Oy", profileSlug: "jussi-hattula" },
+      { name: "Andreas Tallberg", role: "Chair" }
+    ],
+    timeline: [
+      { year: "1995", event: "Tesi's own history page places the establishment and capitalisation of Tesi in its 1990 to 1995 block: \"Sales proceeds from state assets used to pay down state debts, invest in R&D, and to establish and capitalise Tesi.\"" },
+      { year: "1996", event: "Investment operations start, per the history page section headed 1995 to 2000, \"Birth of Tesi\"." },
+      { year: "1997", event: "Technology Fund (Teknologiarahasto) co-founded with Sitra." },
+      { year: "2003", event: "Finnvera's and Sitra's fund units transferred to Tesi." },
+      { year: "2025", event: "Key figures for 2025 report EUR 3.2 billion of investments under management, shareholders' equity of EUR 2,571 million and a balance sheet total of EUR 2,750 million." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Triple Point Ventures",
+    sectors: [],
+    signatureExit: null,
+    slug: "triple-point-ventures",
+    website: "https://www.triplepoint.vc",
+    short: "Triple Point Ventures",
+    founded: null,
+    hq: "London, United Kingdom",
+    aum: null,
+    thesis: "Triple Point Ventures is the early-stage venture arm of Triple Point, the London investment manager, and is not a standalone firm. Its site states the mission \"Backing bold founders from day one\" and gives its address as 1 King William Street, London, EC4N 7AF. Its footer places it within \"Triple Point Group which includes the following companies and associated entities\", among them Triple Point Investment Management LLP, which is \"authorised and regulated by the Financial Conduct Authority no. 456597\" and registered at Companies House as \"no. OC321250\". Triple Point's own about page dates the parent to 2004, when \"Triple Point is founded, launching with its first VCT\". The ventures team page lists eleven people across an investment and portfolio team and an investment committee, and publishes no job titles.",
+    leadership: [
+      { name: "Claire Ainsworth", role: "Partner", profileSlug: "claire-ainsworth" },
+      { name: "Michael Bayer", role: "Partner", profileSlug: "michael-bayer" }
+    ],
+    timeline: [
+      { year: "2004", event: "Parent firm founded: Triple Point's about page records \"Triple Point is founded, launching with its first VCT\" in 2004." },
+      { year: "2024", event: "Triple Point's about page records \"Private Credit passes £1bn deployed\", a parent-level deployment milestone rather than a Ventures figure." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "UI Investissement",
+    sectors: ["Healthcare", "Foodtech", "Agriculture", "B2B"],
+    signatureExit: null,
+    slug: "ui-investissement",
+    website: "https://www.ui-investissement.com",
+    short: "UI",
+    founded: null,
+    hq: "Paris, France",
+    aum: "€1.7B (the nos-metiers page refers to \"1,7 milliard d'euros d'actifs sous gestion\" and the homepage shows \"1,7 md€\" as its assets-under-management figure, checked 2026)",
+    thesis: "UI Investissement is a French private equity manager, not a venture capital firm in the narrow sense: its philosophy page states \"Acteur independant et pionnier du capital investissement en France, UI invest dans des PME et ETI francaises non cotees\" (the firm's own claim, quoted here in the site's own words), and its homepage states \"UI accompagne la croissance de PME et ETI non cotees, partout en France et a tous les stades de leur developpement\". Its business lines are capital developpement and transmission (LBO), capital innovation, and consolidation, with stated areas of expertise in health and nutrition, agriculture and services. The homepage publishes \"1,7 md€\" of assets under management, \"1 md€\" invested and \"300 (dont 80 en Cap Dev/LBO)\" companies supported. The firm runs a proprietary ESG programme it calls Trajectoire ESG built on 27 indicators, an impact fund named CAP AUTREMENT for business succession and transformation, and regional vehicles including Breizh Up, and it operates from Paris with a network of regional offices.",
+    leadership: [
+      { name: "Michel Déprez", role: "Associé gérant", profileSlug: "michel-deprez" },
+      { name: "Olivier Jarrousse", role: "Associé gérant", profileSlug: "olivier-jarrousse" }
+    ],
+    timeline: [
+      { year: "2020", event: "The firm's own news page, dated 27 September 2020, announces that UI Gestion has modernised its brand and become UI Investissement." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Venrex",
+    sectors: [],
+    signatureExit: null,
+    slug: "venrex",
+    website: "https://venrex.partners",
+    short: "Venrex",
+    founded: 2006,
+    hq: "London, United Kingdom",
+    aum: null,
+    thesis: "Venrex is a London-based early-stage investment firm that its own site says was \"Founded in 2006\" and that references London and New York offices. Its legal entity is Venrex Investment Management LLP, a limited liability partnership incorporated in England and Wales, registered number OC318273, registered office 7th & 8th Floor 22 Percy Street, London W1T 2BU, and its terms of use state that \"Venrex is authorised and regulated by the UK Financial Conduct Authority (FCA) in respect of their activities in or from the United Kingdom\" under firm reference number 449474. The site publishes a founder-assessment framework it calls the Minerva Code, which it says \"reflects our belief that great companies are built not only on capital, ideas or business models, but on the distinct strengths of their founders\" and which it derived from surveying nearly 200 founders. The site publishes no team page, no fund size and no assets under management figure.",
+    leadership: [],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "XRC Ventures",
+    sectors: ["Ecommerce", "Commerce", "Health", "Fintech", "Retail", "Supply Chain", "Consumer Products"],
+    signatureExit: null,
+    slug: "xrc-ventures",
+    website: "https://www.xrcventures.com",
+    short: "XRC",
+    founded: 2015,
+    hq: "New York, NY",
+    aum: null,
+    thesis: "XRC Ventures is an early-stage venture firm focused on retail and consumer commerce, describing its remit on its homepage as \"Investing in the future of retail & commerce\" across six areas: Digital Commerce, Workforce Health & Wellness, Payment Infrastructure, Store Operations & Experiences, Supply Chain & Forecasting, and Consumer Brands. The homepage states the firm has backed \"140+ pre-seed through Series A startups\" \"Since 2015\", and claims it provides \"founders and partners with direct access to an extensive consumer and retail ecosystem, driving commercial sales and partnerships\" (the firm's own claim). The team page names at least two distinct vehicles by title: a Brand Capital Fund (Diana Melencio is \"General Partner, Brand Capital Fund\") and, by way of the firm's newsletters listed on the homepage, an XRC tech fund. No fund size or assets-under-management figure is published on the pages opened. The firm operates from New York, NY and Los Angeles, CA.",
+    leadership: [
+      { name: "Pano Anthos", role: "Founder & Managing Partner", profileSlug: "pano-anthos" },
+      { name: "Diana Melencio", role: "General Partner, Brand Capital Fund", profileSlug: "diana-melencio" },
+      { name: "Andrew Ross", role: "Senior Advisor and Venture Partner", profileSlug: "andrew-ross" },
+      { name: "Rob Hull", role: "Senior Advisor and Venture Partner", profileSlug: "rob-hull" },
+      { name: "Al Sambar", role: "Senior Advisor and Venture Partner", profileSlug: "al-sambar" }
+    ],
+    timeline: [
+      { year: "2015", event: "The firm's own Medium publication, now titled XRC Ventures, publishes \"Welcome to XRC Labs\" on 15 July 2015, describing XRC Labs as \"A specialist venture fund that invests at the intersection of consumer behavior and technology\" and identifying Pano Anthos as Managing Director of XRC Labs and XRC Fund." },
+      { year: "2015", event: "XRC's homepage dates its investing activity to \"Since 2015\"." }
+    ],
+    holdings: []
   }
 ];
