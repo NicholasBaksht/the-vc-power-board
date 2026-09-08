@@ -12159,5 +12159,2398 @@ Object.assign(partnerProfiles, {
     sources: [
       { label: "TSVC - Team (exact printed title and one-line biography, checked 8 September 2026)", url: "https://www.tsvcap.com/team" }
     ]
+  },
+
+/* ---- Firm batch 8, added 7 September 2026: 120 partner records across the 20
+   firms appended to data-firms.js in the same batch. Shards now rotate by
+   size: batches 1-2 went into shard 6, then 3 into 1, 4 into 2, 5 into 3,
+   6 into 4 and 7 into 5; this batch returns to shard 4, again the
+   smallest. Shard order does not matter - every shard Object.assigns into
+   the same partnerProfiles - and shard 4 is already registered in
+   index.html and both generator load lists, so no <script> tag or wiring
+   changes. Checked against all 2,707 pre-existing partner records for
+   slug and name collisions; none found. ---- */
+"adam-chirkowski": {
+    name: "Adam Chirkowski",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Adam Chirkowski is listed on the AlbionVC team page as Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"andrew-elder": {
+    name: "Andrew Elder",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Deputy Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Andrew Elder is listed on the AlbionVC team page as Deputy Managing Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"cat-mcdonald": {
+    name: "Cat McDonald",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Cat McDonald is listed on the AlbionVC team page as Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"christoph-ruedig": {
+    name: "Christoph Ruedig",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Christoph Ruedig is listed on the AlbionVC team page as Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"david-grimm": {
+    name: "David Grimm",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "David Grimm is listed on the AlbionVC team page as Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"ed-lascelles": {
+    name: "Ed Lascelles",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ed Lascelles is listed on the AlbionVC team page as Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"dave-wascha": {
+    name: "Dave Wascha",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Operating Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Dave Wascha is listed on the AlbionVC team page as Operating Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"jay-wilson": {
+    name: "Jay Wilson",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jay Wilson is listed on the AlbionVC team page as Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"jane-reddin": {
+    name: "Jane Reddin",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Partner, Platform & Talent",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jane Reddin is listed on the AlbionVC team page as Partner, Platform & Talent. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"janie-links": {
+    name: "Janie Links",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Operating Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Janie Links is listed on the AlbionVC team page as Operating Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"julian-johnson": {
+    name: "Julian Johnson",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Operating Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Julian Johnson is listed on the AlbionVC team page as Operating Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"nadine-torbey": {
+    name: "Nadine Torbey",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Nadine Torbey is listed on the AlbionVC team page as Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"paul-lehair": {
+    name: "Paul Lehair",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Paul Lehair is listed on the AlbionVC team page as Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"patrick-reeve": {
+    name: "Patrick Reeve",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Chairman",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Patrick Reeve is listed on the AlbionVC team page as Chairman. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"robert-whitby-smith": {
+    name: "Robert Whitby-Smith",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Robert Whitby-Smith is listed on the AlbionVC team page as Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"simon-goldman": {
+    name: "Simon Goldman",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Simon Goldman is listed on the AlbionVC team page as Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"will-fraser-allen": {
+    name: "Will Fraser-Allen",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Will Fraser-Allen is listed on the AlbionVC team page as Managing Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"vikash-hansrani": {
+    name: "Vikash Hansrani",
+    firm: "AlbionVC",
+    firmSlug: "albionvc",
+    title: "Operations Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Vikash Hansrani is listed on the AlbionVC team page as Operations Partner. AlbionVC is the venture arm of Albion Capital and operates through AlbionVC LLP, registered in England No. OC341254 and regulated by the Financial Conduct Authority. No education, prior employment or board seat for this person was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "AlbionVC - Team", url: "https://albion.vc/team/" }
+    ]
+  },
+"greg-castle": {
+    name: "Greg Castle",
+    firm: "Anorak Ventures",
+    firmSlug: "anorak-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: ["Emerging technologies", "Seed-stage differentiated technology"],
+    education: [
+      "University of Maryland - Bachelor's degree in International Business and Marketing"
+    ],
+    previousExperience: [
+      "Pure (retail chain he founded and co-led)",
+      "Scaleform",
+      "Autodesk",
+      "Glassdoor"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Greg Castle is Managing Partner of Anorak Ventures, listed first on the firm's About Us page. His own site describes him as \"managing partner of Anorak Ventures, a seed-stage venture firm focused on emerging technologies\". Before venture he founded and co-led the retail chain Pure, and his site lists Scaleform, Autodesk and Glassdoor among his prior associations. He holds a bachelor's degree in International Business and Marketing from the University of Maryland. His site names Oculus, Rec Room, Anduril, Flock Safety and Mux among his seed-stage investments and says he has worked with and invested in over 90 startups. No board seat was stated on either page opened, and no joining year is published; Anorak itself dates to 2016 per the firm's homepage.",
+    notableInvestments: [
+      { name: "Oculus", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.gregcastle.org/", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Rec Room", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.gregcastle.org/", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Anduril", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.gregcastle.org/", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Flock Safety", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.gregcastle.org/", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Mux", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.gregcastle.org/", type: "partner-bio", checked: "2026-09-08" }] }
+    ],
+    sources: [
+      { label: "Anorak Ventures - About Us", url: "https://www.anorak.vc/about-us" },
+      { label: "Greg Castle - personal site", url: "https://www.gregcastle.org/" }
+    ]
+  },
+"charlie-leggate": {
+    name: "Charlie Leggate",
+    firm: "Anorak Ventures",
+    firmSlug: "anorak-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Charlie Leggate is listed as Partner on the Anorak Ventures About Us page, the second and only other named member of the firm's team. The page gives his title but no biography, education, prior employment or joining year, and no other first-party Anorak page opened names him, so those fields are null rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Anorak Ventures - About Us", url: "https://www.anorak.vc/about-us" }
+    ]
+  },
+"christian-knott": {
+    name: "Christian Knott",
+    firm: "Capnamic Ventures",
+    firmSlug: "capnamic-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Christian Knott is listed on the Capnamic team page as \"Managing Partner\" (capnamic.com/team, checked 2026-09-08). No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no further page was opened for this person under this batch's research budget. The Capnamic imprint names the managing directors (Geschaeftsfuehrer) of Capnamic Ventures Management GmbH as Joerg Binnenbruecker, Olaf Jacobi, Christian Knott and Christian Siegele, so this person is also a statutory managing director of the management company.",
+    notableInvestments: [],
+    sources: [
+      { label: "Capnamic - Team", url: "https://capnamic.com/team" },
+      { label: "Capnamic - Imprint", url: "https://capnamic.com/imprint" }
+    ]
+  },
+"christian-siegele": {
+    name: "Christian Siegele",
+    firm: "Capnamic Ventures",
+    firmSlug: "capnamic-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Christian Siegele is listed on the Capnamic team page as \"Managing Partner\" (capnamic.com/team, checked 2026-09-08). No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no further page was opened for this person under this batch's research budget. The Capnamic imprint names the managing directors (Geschaeftsfuehrer) of Capnamic Ventures Management GmbH as Joerg Binnenbruecker, Olaf Jacobi, Christian Knott and Christian Siegele, so this person is also a statutory managing director of the management company.",
+    notableInvestments: [],
+    sources: [
+      { label: "Capnamic - Team", url: "https://capnamic.com/team" },
+      { label: "Capnamic - Imprint", url: "https://capnamic.com/imprint" }
+    ]
+  },
+"dr-nils-eiteneyer": {
+    name: "Dr. Nils Eiteneyer",
+    firm: "Capnamic Ventures",
+    firmSlug: "capnamic-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Dr. Nils Eiteneyer is listed on the Capnamic team page as \"Partner\" (capnamic.com/team, checked 2026-09-08). No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no further page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Capnamic - Team", url: "https://capnamic.com/team" }
+    ]
+  },
+"frederik-von-bossel": {
+    name: "Frederik von Bossel",
+    firm: "Capnamic Ventures",
+    firmSlug: "capnamic-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Frederik von Bossel is listed on the Capnamic team page as \"Partner\" (capnamic.com/team, checked 2026-09-08). No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no further page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Capnamic - Team", url: "https://capnamic.com/team" }
+    ]
+  },
+"jorg-binnenbrucker": {
+    name: "Jörg Binnenbrücker",
+    firm: "Capnamic Ventures",
+    firmSlug: "capnamic-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jörg Binnenbrücker is listed on the Capnamic team page as \"Managing Partner\" (capnamic.com/team, checked 2026-09-08). No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no further page was opened for this person under this batch's research budget. The Capnamic imprint names the managing directors (Geschaeftsfuehrer) of Capnamic Ventures Management GmbH as Joerg Binnenbruecker, Olaf Jacobi, Christian Knott and Christian Siegele, so this person is also a statutory managing director of the management company.",
+    notableInvestments: [],
+    sources: [
+      { label: "Capnamic - Team", url: "https://capnamic.com/team" },
+      { label: "Capnamic - Imprint", url: "https://capnamic.com/imprint" }
+    ]
+  },
+"nathalie-konig": {
+    name: "Nathalie König",
+    firm: "Capnamic Ventures",
+    firmSlug: "capnamic-ventures",
+    title: "Operating Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Nathalie König is listed on the Capnamic team page as \"Operating Partner\" (capnamic.com/team, checked 2026-09-08). No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no further page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Capnamic - Team", url: "https://capnamic.com/team" }
+    ]
+  },
+"niklas-raberg": {
+    name: "Niklas Raberg",
+    firm: "Capnamic Ventures",
+    firmSlug: "capnamic-ventures",
+    title: "Partner Specialty Funds",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Niklas Raberg is listed on the Capnamic team page as \"Partner Specialty Funds\" (capnamic.com/team, checked 2026-09-08). No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no further page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Capnamic - Team", url: "https://capnamic.com/team" }
+    ]
+  },
+"olaf-jacobi": {
+    name: "Olaf Jacobi",
+    firm: "Capnamic Ventures",
+    firmSlug: "capnamic-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Olaf Jacobi is listed on the Capnamic team page as \"Managing Partner\" (capnamic.com/team, checked 2026-09-08). No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no further page was opened for this person under this batch's research budget. The Capnamic imprint names the managing directors (Geschaeftsfuehrer) of Capnamic Ventures Management GmbH as Joerg Binnenbruecker, Olaf Jacobi, Christian Knott and Christian Siegele, so this person is also a statutory managing director of the management company.",
+    notableInvestments: [],
+    sources: [
+      { label: "Capnamic - Team", url: "https://capnamic.com/team" },
+      { label: "Capnamic - Imprint", url: "https://capnamic.com/imprint" }
+    ]
+  },
+"prof-dr-christian-horneber": {
+    name: "Prof. Dr. Christian Horneber",
+    firm: "Capnamic Ventures",
+    firmSlug: "capnamic-ventures",
+    title: "Managing Partner Bremen",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Prof. Dr. Christian Horneber is listed on the Capnamic team page as \"Managing Partner Bremen\" (capnamic.com/team, checked 2026-09-08). No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no further page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Capnamic - Team", url: "https://capnamic.com/team" }
+    ]
+  },
+"ondrej-bartos": {
+    name: "Ondrej Bartos",
+    firm: "Credo Ventures",
+    firmSlug: "credo-ventures",
+    title: "Founding Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ondrej Bartos is listed as Founding Partner on the Credo Ventures team page as of 8 September 2026. Credo Ventures is a Prague-headquartered early-stage firm active in Central and Eastern Europe since 2009, with a second office in Krakow. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Credo Ventures - Team", url: "https://www.credoventures.com/team/" },
+      { label: "Credo Ventures - Homepage", url: "https://www.credoventures.com/" }
+    ]
+  },
+"jan-habermann": {
+    name: "Jan Habermann",
+    firm: "Credo Ventures",
+    firmSlug: "credo-ventures",
+    title: "Founding Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jan Habermann is listed as Founding Partner on the Credo Ventures team page as of 8 September 2026. Credo Ventures is a Prague-headquartered early-stage firm active in Central and Eastern Europe since 2009, with a second office in Krakow. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Credo Ventures - Team", url: "https://www.credoventures.com/team/" },
+      { label: "Credo Ventures - Homepage", url: "https://www.credoventures.com/" }
+    ]
+  },
+"guillaume-fournier": {
+    name: "Guillaume Fournier",
+    firm: "Credo Ventures",
+    firmSlug: "credo-ventures",
+    title: "Board Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Guillaume Fournier is listed as Board Partner on the Credo Ventures team page as of 8 September 2026. Credo Ventures is a Prague-headquartered early-stage firm active in Central and Eastern Europe since 2009, with a second office in Krakow. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Credo Ventures - Team", url: "https://www.credoventures.com/team/" },
+      { label: "Credo Ventures - Homepage", url: "https://www.credoventures.com/" }
+    ]
+  },
+"maciej-gnutek": {
+    name: "Maciej Gnutek",
+    firm: "Credo Ventures",
+    firmSlug: "credo-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Maciej Gnutek is listed as General Partner on the Credo Ventures team page as of 8 September 2026. Credo Ventures is a Prague-headquartered early-stage firm active in Central and Eastern Europe since 2009, with a second office in Krakow. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Credo Ventures - Team", url: "https://www.credoventures.com/team/" },
+      { label: "Credo Ventures - Homepage", url: "https://www.credoventures.com/" }
+    ]
+  },
+"jakub-krikava": {
+    name: "Jakub Krikava",
+    firm: "Credo Ventures",
+    firmSlug: "credo-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jakub Krikava is listed as General Partner on the Credo Ventures team page as of 8 September 2026. Credo Ventures is a Prague-headquartered early-stage firm active in Central and Eastern Europe since 2009, with a second office in Krakow. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Credo Ventures - Team", url: "https://www.credoventures.com/team/" },
+      { label: "Credo Ventures - Homepage", url: "https://www.credoventures.com/" }
+    ]
+  },
+"michal-cernocky": {
+    name: "Michal Cernocky",
+    firm: "Credo Ventures",
+    firmSlug: "credo-ventures",
+    title: "General Partner, Credo Crossover",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Michal Cernocky is listed as General Partner, Credo Crossover on the Credo Ventures team page as of 8 September 2026. Credo Ventures is a Prague-headquartered early-stage firm active in Central and Eastern Europe since 2009, with a second office in Krakow. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Credo Ventures - Team", url: "https://www.credoventures.com/team/" },
+      { label: "Credo Ventures - Homepage", url: "https://www.credoventures.com/" }
+    ]
+  },
+"lukas-hurych": {
+    name: "Lukas Hurych",
+    firm: "Credo Ventures",
+    firmSlug: "credo-ventures",
+    title: "General Partner, Credo Crossover",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Lukas Hurych is listed as General Partner, Credo Crossover on the Credo Ventures team page as of 8 September 2026. Credo Ventures is a Prague-headquartered early-stage firm active in Central and Eastern Europe since 2009, with a second office in Krakow. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Credo Ventures - Team", url: "https://www.credoventures.com/team/" },
+      { label: "Credo Ventures - Homepage", url: "https://www.credoventures.com/" }
+    ]
+  },
+"matej-micek": {
+    name: "Matej Micek",
+    firm: "Credo Ventures",
+    firmSlug: "credo-ventures",
+    title: "Tech Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Matej Micek is listed as Tech Partner on the Credo Ventures team page as of 8 September 2026. Credo Ventures is a Prague-headquartered early-stage firm active in Central and Eastern Europe since 2009, with a second office in Krakow. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Credo Ventures - Team", url: "https://www.credoventures.com/team/" },
+      { label: "Credo Ventures - Homepage", url: "https://www.credoventures.com/" }
+    ]
+  },
+"max-kolowrat": {
+    name: "Max Kolowrat",
+    firm: "Credo Ventures",
+    firmSlug: "credo-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Max Kolowrat is listed as General Partner on the Credo Ventures team page as of 8 September 2026. Credo Ventures is a Prague-headquartered early-stage firm active in Central and Eastern Europe since 2009, with a second office in Krakow. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Credo Ventures - Team", url: "https://www.credoventures.com/team/" },
+      { label: "Credo Ventures - Homepage", url: "https://www.credoventures.com/" }
+    ]
+  },
+"kavita-gupta": {
+    name: "Kavita Gupta",
+    firm: "Delta Blockchain Fund",
+    firmSlug: "delta-blockchain-fund",
+    title: "Founder & GP",
+    joinedYear: null,
+    investmentFocus: ["Blockchain", "DeFi", "Pre-seed and seed crypto"],
+    education: [],
+    previousExperience: [
+      "The World Bank",
+      "IFC",
+      "Eric Schmidt Family Office",
+      "ConsenSys Ventures (founder)",
+      "Tachyon accelerator (founder)"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Kavita Gupta is listed first on the Delta Blockchain Fund team page as \"Founder & GP\". Her own profile page on the firm's site states: \"Kavita Gupta is the Founder and General Partner of Delta Blockchain Fund. She has over 18 years of investment experience via The World Bank, IFC, and Eric Schmidt Family office and started one of the first Blockchain early-stage funds, ConsenSys Ventures, and accelerator Tachyon.\" The same page describes her as a first-check investor in Polygon, Starkware, Quantstamp and Sorare among more than 100 companies, and lists her as a Visiting Scholar at Stanford University teaching a class called \"Beyond Bitcoin\", an advisor to the Hus Institute, the UNICEF Giga project, the Katapult investment fund and the International Emmys, and the recipient of a 2015 UN Innovation Award for work on green and social impact bonds. Her ConsenSys Ventures role is the strongest firm-history link on this record. No education institution or joining year is published on the firm's site.",
+    notableInvestments: [
+      { name: "Polygon", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://deltafund.io/kavita-gupta/", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Starkware", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://deltafund.io/kavita-gupta/", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Quantstamp", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://deltafund.io/kavita-gupta/", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Sorare", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://deltafund.io/kavita-gupta/", type: "partner-bio", checked: "2026-09-08" }] }
+    ],
+    sources: [
+      { label: "Delta Blockchain Fund - Team", url: "https://deltafund.io/team/" },
+      { label: "Delta Blockchain Fund - Kavita Gupta profile", url: "https://deltafund.io/kavita-gupta/" }
+    ]
+  },
+"mudit-gupta": {
+    name: "Mudit Gupta",
+    firm: "Delta Blockchain Fund",
+    firmSlug: "delta-blockchain-fund",
+    title: "Technical Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Mudit Gupta is listed second on the Delta Blockchain Fund team page with the title \"Technical Partner\", the only other Partner-level title the firm publishes. No education, prior employment or joining year for him could be sourced from the firm's own pages within budget, so those fields are null rather than inferred. He is a distinct person from Kavita Gupta despite the shared surname; the team page lists them as separate entries with separate roles.",
+    notableInvestments: [],
+    sources: [
+      { label: "Delta Blockchain Fund - Team", url: "https://deltafund.io/team/" }
+    ]
+  },
+"tarun-reddy": {
+    name: "Tarun Reddy",
+    firm: "Demeter Ventures",
+    firmSlug: "demeter-ventures",
+    title: "Founding Partner and CEO",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Tarun Reddy is named on the Demeter Ventures site as Founding Partner and CEO, and is the only individual named anywhere on it; the site gives a contact address for him at the demeterventures.co domain. The firm publishes no team page and no biography for him, so no education, prior employer, joining year or board seat could be sourced. The site describes the wider group only as \"a seasoned collective of investors, entrepreneurs, and business leaders\" without naming anyone else.",
+    notableInvestments: [],
+    sources: [
+      { label: "Demeter Ventures - Investments (Tarun Reddy named as Founding Partner and CEO)", url: "https://www.demeterventures.co/investments" }
+    ]
+  },
+"daniel-tomov": {
+    name: "Daniel Tomov",
+    firm: "Eleven Ventures",
+    firmSlug: "eleven-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2012, event: "Named by Eleven Capital AD as a co-founder of the Eleven Ventures venture capital fund in 2012." }
+    ],
+    biography: "Daniel Tomov is listed as Partner on the Eleven Ventures team page as of 8 September 2026. Trending Topics describes him as having been involved with startups since 2000 across software and cleantech. The Bulgarian company Eleven Capital AD names him as representative of its Executive Director and describes him as a co-founder of the Eleven Ventures fund in 2012.",
+    notableInvestments: [],
+    sources: [
+      { label: "Eleven Ventures - Who we are", url: "https://www.11.vc/who-we-are/" },
+      { label: "Eleven Capital AD - About us (separate Bulgarian entity)", url: "https://elevencapital.bg/en/about-us/" },
+      { label: "Trending Topics - Everything You Need to Know About Eleven Ventures", url: "https://www.trendingtopics.eu/eleven-ventures-funding-2/" }
+    ]
+  },
+"ivaylo-simov": {
+    name: "Ivaylo Simov",
+    firm: "Eleven Ventures",
+    firmSlug: "eleven-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ivaylo Simov is listed as Partner on the Eleven Ventures team page as of 8 September 2026. Trending Topics describes him as having around twenty years in venture capital and private equity.",
+    notableInvestments: [],
+    sources: [
+      { label: "Eleven Ventures - Who we are", url: "https://www.11.vc/who-we-are/" },
+      { label: "Eleven Capital AD - About us (separate Bulgarian entity)", url: "https://elevencapital.bg/en/about-us/" },
+      { label: "Trending Topics - Everything You Need to Know About Eleven Ventures", url: "https://www.trendingtopics.eu/eleven-ventures-funding-2/" }
+    ]
+  },
+"svetozar-georgiev": {
+    name: "Svetozar Georgiev",
+    firm: "Eleven Ventures",
+    firmSlug: "eleven-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Svetozar Georgiev is listed as Partner on the Eleven Ventures team page as of 8 September 2026. No further biographical detail was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Eleven Ventures - Who we are", url: "https://www.11.vc/who-we-are/" },
+      { label: "Eleven Capital AD - About us (separate Bulgarian entity)", url: "https://elevencapital.bg/en/about-us/" },
+      { label: "Trending Topics - Everything You Need to Know About Eleven Ventures", url: "https://www.trendingtopics.eu/eleven-ventures-funding-2/" }
+    ]
+  },
+"valeri-petrov": {
+    name: "Valeri Petrov",
+    firm: "Eleven Ventures",
+    firmSlug: "eleven-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Valeri Petrov is listed as Partner on the Eleven Ventures team page as of 8 September 2026. The separate Bulgarian entity Eleven Capital AD names a Valeri Petrov as Chairman of its Board of Directors; the two were not confirmed to be the same person within this pass.",
+    notableInvestments: [],
+    sources: [
+      { label: "Eleven Ventures - Who we are", url: "https://www.11.vc/who-we-are/" },
+      { label: "Eleven Capital AD - About us (separate Bulgarian entity)", url: "https://elevencapital.bg/en/about-us/" },
+      { label: "Trending Topics - Everything You Need to Know About Eleven Ventures", url: "https://www.trendingtopics.eu/eleven-ventures-funding-2/" }
+    ]
+  },
+"martin-ouzounov": {
+    name: "Martin Ouzounov",
+    firm: "Eleven Ventures",
+    firmSlug: "eleven-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Martin Ouzounov is listed as Partner on the Eleven Ventures team page as of 8 September 2026. No further biographical detail was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Eleven Ventures - Who we are", url: "https://www.11.vc/who-we-are/" },
+      { label: "Eleven Capital AD - About us (separate Bulgarian entity)", url: "https://elevencapital.bg/en/about-us/" },
+      { label: "Trending Topics - Everything You Need to Know About Eleven Ventures", url: "https://www.trendingtopics.eu/eleven-ventures-funding-2/" }
+    ]
+  },
+"alan-merriman": {
+    name: "Alan Merriman",
+    firm: "Elkstone",
+    firmSlug: "elkstone",
+    title: "Chief Executive Officer",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2023, event: "Quoted as Elkstone's Chief Executive Officer in TechCrunch's 18 May 2023 report on the close of the firm's first venture capital fund at EUR 100 million." }
+    ],
+    biography: "Alan Merriman was identified as Elkstone's Chief Executive Officer in TechCrunch's 18 May 2023 report on the close of the firm's first venture capital fund, where he commented that the fund's investor base of entrepreneurs and private capital alongside Enterprise Ireland and the Ireland Strategic Investment Fund is a key edge in bringing value to Irish founders. Elkstone's own site could not be opened during this research pass, so this record is a floor drawn from one media source rather than a profile taken from the firm's own team page. No education, prior employers, board seats or joining year were verified.",
+    notableInvestments: [],
+    sources: [
+      { label: "Central Bank of Ireland Fund Register - Elkstone Ireland Ventures I (C474450)", url: "http://registers.centralbank.ie/FundRegisterDataPage.aspx?fundReferenceNumber=C474450&register=9" },
+      { label: "TechCrunch - With government backing, Ireland's Elkstone closes first VC fund at $108M for early-stage startups (18 May 2023)", url: "https://techcrunch.com/2023/05/18/with-government-backing-irelands-elkstone-closes-first-vc-fund-at-108m-for-early-stage-startups" }
+    ]
+  },
+"brennan-odonnell": {
+    name: "Brennan O'Donnell",
+    firm: "Frontline Ventures",
+    firmSlug: "frontline-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Brennan O'Donnell is listed as Partner, Palo Alto on the Frontline Ventures team page as of 8 September 2026. Frontline is an early-stage B2B venture firm operating from Dublin and London and running two fund families, Frontline Seed and Frontline Growth. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Frontline Ventures - Team", url: "https://www.frontline.vc/team" },
+      { label: "Frontline Ventures - About", url: "https://www.frontline.vc/about" }
+    ]
+  },
+"stephen-mcintyre": {
+    name: "Stephen McIntyre",
+    firm: "Frontline Ventures",
+    firmSlug: "frontline-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Stephen McIntyre is listed as Partner, Dublin on the Frontline Ventures team page as of 8 September 2026. Frontline is an early-stage B2B venture firm operating from Dublin and London and running two fund families, Frontline Seed and Frontline Growth. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Frontline Ventures - Team", url: "https://www.frontline.vc/team" },
+      { label: "Frontline Ventures - About", url: "https://www.frontline.vc/about" }
+    ]
+  },
+"will-prendergast": {
+    name: "Will Prendergast",
+    firm: "Frontline Ventures",
+    firmSlug: "frontline-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Will Prendergast is listed as Partner, Dublin on the Frontline Ventures team page as of 8 September 2026. Frontline is an early-stage B2B venture firm operating from Dublin and London and running two fund families, Frontline Seed and Frontline Growth. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Frontline Ventures - Team", url: "https://www.frontline.vc/team" },
+      { label: "Frontline Ventures - About", url: "https://www.frontline.vc/about" }
+    ]
+  },
+"william-mcquillan": {
+    name: "William McQuillan",
+    firm: "Frontline Ventures",
+    firmSlug: "frontline-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "William McQuillan is listed as Partner, London on the Frontline Ventures team page as of 8 September 2026. Frontline is an early-stage B2B venture firm operating from Dublin and London and running two fund families, Frontline Seed and Frontline Growth. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Frontline Ventures - Team", url: "https://www.frontline.vc/team" },
+      { label: "Frontline Ventures - About", url: "https://www.frontline.vc/about" }
+    ]
+  },
+"zoe-chambers": {
+    name: "Zoe Chambers",
+    firm: "Frontline Ventures",
+    firmSlug: "frontline-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Zoe Chambers is listed as Partner, London on the Frontline Ventures team page as of 8 September 2026. Frontline is an early-stage B2B venture firm operating from Dublin and London and running two fund families, Frontline Seed and Frontline Growth. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Frontline Ventures - Team", url: "https://www.frontline.vc/team" },
+      { label: "Frontline Ventures - About", url: "https://www.frontline.vc/about" }
+    ]
+  },
+"george-radford": {
+    name: "George Radford",
+    firm: "Frontline Ventures",
+    firmSlug: "frontline-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "George Radford is listed as Partner, London on the Frontline Ventures team page as of 8 September 2026. Frontline is an early-stage B2B venture firm operating from Dublin and London and running two fund families, Frontline Seed and Frontline Growth. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Frontline Ventures - Team", url: "https://www.frontline.vc/team" },
+      { label: "Frontline Ventures - About", url: "https://www.frontline.vc/about" }
+    ]
+  },
+"shay-garvey": {
+    name: "Shay Garvey",
+    firm: "Frontline Ventures",
+    firmSlug: "frontline-ventures",
+    title: "Partner (Emeritus)",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [
+      "Exxon",
+      "Corning",
+      "strategy consultant, McKinsey",
+      "co-founder, Glentara Foods",
+      "co-founder, Irish Seafood Producers Group",
+      "Chair, The Irish Times Media Group",
+      "investment committee member, EBRD Venture Capital investment programme"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Shay Garvey is listed as Partner (Emeritus), Dublin on the Frontline Ventures team page as of 8 September 2026. His Frontline profile page states he was a co-founder of Frontline. Before venture capital he worked at Exxon and Corning, was a strategy consultant at McKinsey, and co-founded Glentara Foods and the Irish Seafood Producers Group. His Frontline page says he has been a member of investment teams that have raised 12 VC funds since the mid 90s and has personally invested in over 40 early-stage European tech companies. It also lists him as Chair of the Irish Times Media Group and a member of the investment committee of the EBRD Venture Capital investment programme. The page names no portfolio companies, gives no education and gives no founding date for Frontline, so those fields are left empty.",
+    notableInvestments: [],
+    sources: [
+      { label: "Frontline Ventures - Team", url: "https://www.frontline.vc/team" },
+      { label: "Frontline Ventures - About", url: "https://www.frontline.vc/about" },
+      { label: "Frontline Ventures - Shay Garvey", url: "https://frontline.vc/people/shay-garvey/" }
+    ]
+  },
+"david-clarke": {
+    name: "David Clarke",
+    firm: "Frontline Ventures",
+    firmSlug: "frontline-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "David Clarke is listed as Venture Partner, Dublin on the Frontline Ventures team page as of 8 September 2026. Frontline is an early-stage B2B venture firm operating from Dublin and London and running two fund families, Frontline Seed and Frontline Growth. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Frontline Ventures - Team", url: "https://www.frontline.vc/team" },
+      { label: "Frontline Ventures - About", url: "https://www.frontline.vc/about" }
+    ]
+  },
+"steve-collins": {
+    name: "Steve Collins",
+    firm: "Frontline Ventures",
+    firmSlug: "frontline-ventures",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Steve Collins is listed as Venture Partner, London on the Frontline Ventures team page as of 8 September 2026. Frontline is an early-stage B2B venture firm operating from Dublin and London and running two fund families, Frontline Seed and Frontline Growth. No further biographical detail for this person was verified within this research pass, so education, prior employers and board seats are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Frontline Ventures - Team", url: "https://www.frontline.vc/team" },
+      { label: "Frontline Ventures - About", url: "https://www.frontline.vc/about" }
+    ]
+  },
+"ray-lane": {
+    name: "Ray Lane",
+    firm: "GreatPoint Ventures",
+    firmSlug: "greatpoint-ventures",
+    title: "Partner Emeritus",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ray Lane is listed on the GreatPoint Ventures team page as \"Partner Emeritus\", under the Leadership grouping, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "GreatPoint Ventures - Team", url: "https://gpv.com/team" }
+    ]
+  },
+"andrew-perlman": {
+    name: "Andrew Perlman",
+    firm: "GreatPoint Ventures",
+    firmSlug: "greatpoint-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Andrew Perlman is listed on the GreatPoint Ventures team page as \"Managing Partner\", under the Leadership grouping, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "GreatPoint Ventures - Team", url: "https://gpv.com/team" }
+    ]
+  },
+"ashok-krishnamurthi": {
+    name: "Ashok Krishnamurthi",
+    firm: "GreatPoint Ventures",
+    firmSlug: "greatpoint-ventures",
+    title: "Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ashok Krishnamurthi is listed on the GreatPoint Ventures team page as \"Managing Partner\", under the Leadership grouping, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "GreatPoint Ventures - Team", url: "https://gpv.com/team" }
+    ]
+  },
+"gautam-krishnamurthi": {
+    name: "Gautam Krishnamurthi",
+    firm: "GreatPoint Ventures",
+    firmSlug: "greatpoint-ventures",
+    title: "General Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Gautam Krishnamurthi is listed on the GreatPoint Ventures team page as \"General Partner\", under the Investment Partners grouping, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "GreatPoint Ventures - Team", url: "https://gpv.com/team" }
+    ]
+  },
+"avi-goldberg": {
+    name: "Avi Goldberg",
+    firm: "GreatPoint Ventures",
+    firmSlug: "greatpoint-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Avi Goldberg is listed on the GreatPoint Ventures team page as \"Partner\", under the Investment Partners grouping, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "GreatPoint Ventures - Team", url: "https://gpv.com/team" }
+    ]
+  },
+"joseph-tuchman": {
+    name: "Joseph Tuchman",
+    firm: "GreatPoint Ventures",
+    firmSlug: "greatpoint-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Joseph Tuchman is listed on the GreatPoint Ventures team page as \"Partner\", under the Investment Partners grouping, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "GreatPoint Ventures - Team", url: "https://gpv.com/team" }
+    ]
+  },
+"david-resnekov": {
+    name: "David Resnekov",
+    firm: "GreatPoint Ventures",
+    firmSlug: "greatpoint-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "David Resnekov is listed on the GreatPoint Ventures team page as \"Partner\", under the Investment Partners grouping, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "GreatPoint Ventures - Team", url: "https://gpv.com/team" }
+    ]
+  },
+"premysl-rubes": {
+    name: "Přemysl Rubeš",
+    firm: "Presto Ventures",
+    firmSlug: "presto-ventures",
+    title: "Founder & Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Přemysl Rubeš is listed on the Presto Ventures team page as \"Founder & Managing Partner\", checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Presto Ventures - Team", url: "https://www.prestoventures.com/team" }
+    ]
+  },
+"vojta-rosek": {
+    name: "Vojta Rošek",
+    firm: "Presto Ventures",
+    firmSlug: "presto-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Vojta Rošek is listed on the Presto Ventures team page as \"Partner\", checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Presto Ventures - Team", url: "https://www.prestoventures.com/team" }
+    ]
+  },
+"eduard-kucera": {
+    name: "Eduard Kučera",
+    firm: "Presto Ventures",
+    firmSlug: "presto-ventures",
+    title: "Partner | Fund II",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Eduard Kučera is listed on the Presto Ventures team page as \"Partner | Fund II\", checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Presto Ventures - Team", url: "https://www.prestoventures.com/team" }
+    ]
+  },
+"elisabeth-moreno": {
+    name: "Elisabeth Moreno",
+    firm: "Ring Capital",
+    firmSlug: "ring-capital",
+    title: "Chairwoman of Ring Capital",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Elisabeth Moreno is described on the Ring Capital homepage as \"Chairwoman of Ring Capital\", where she is the only individual named anywhere on the firm's public pages that could be rendered without JavaScript. The firm's team page (ringcp.com/team) is titled \"Meet the Ring Team\" but its roster does not appear in the served HTML, so no other individual, title, joining date or investment attribution could be verified from a first-party source within this batch. No education, prior employment or board seats are stated on the pages consulted.",
+    notableInvestments: [],
+    sources: [
+      { label: "Ring Capital - Homepage (Chairwoman attribution)", url: "https://www.ringcp.com/" }
+    ]
+  },
+"elizabeth-weil": {
+    name: "Elizabeth Weil",
+    firm: "Scribble Ventures",
+    firmSlug: "scribble-ventures",
+    title: "Founder & Partner",
+    joinedYear: 2020,
+    investmentFocus: ["AI native companies", "Pre-seed and seed"],
+    firmHistory: [
+      { firmSlug: "a16z", role: "Partner", startYear: null, endYear: null },
+      { firmSlug: "ivp", role: null, startYear: null, endYear: null },
+      { firmSlug: "menlo-ventures", role: null, startYear: null, endYear: null }
+    ],
+    education: [
+      "Stanford University - BA in Economics",
+      "Stanford University - Masters in Engineering"
+    ],
+    previousExperience: [
+      "Twitter - early executive",
+      "Andreessen Horowitz - Partner",
+      "137 Ventures - Managing Director",
+      "IVP",
+      "Menlo Ventures",
+      "Radar Partners",
+      "Paperwheel - founder"
+    ],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [
+      { year: 2020, event: "Founds Scribble Ventures in March 2020, per Forbes." },
+      { year: 2021, event: "Closes Scribble's first fund of about $42 million, reported by Forbes on 4 February 2021; Forbes names her and Annelies Gamble as the firm's two full-time partners." }
+    ],
+    biography: "Elizabeth Weil is Founder & Partner of Scribble Ventures, which she started in March 2020 and which closed a first fund of about $42 million reported by Forbes in February 2021. Her page on the firm's site records a BA in Economics and a Masters in Engineering from Stanford University, where she has also taught in the engineering department, the Graduate School of Business and the Hasso Plattner Institute of Design. Before founding Scribble she was an early executive at Twitter, a Partner at Andreessen Horowitz, and spent four years as Managing Director at 137 Ventures focused on late-stage secondary opportunities, with earlier investing roles at IVP, Menlo Ventures and Radar Partners. She also founded Paperwheel, a design and letterpress company. Her page names Whatnot, Certn, Titan, Luminai, Checkmate, NCX and DigitalBrain among her investments and states more than 100 angel investments including Slack, SpaceX, Figma, Coinbase, Superplastic, Gusto, Tipalti, Envoy, Daily.co and Carta. No board seat is stated on any page opened, so boardSeats is empty.",
+    notableInvestments: [
+      { name: "Whatnot", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.scribble.vc/elizabeth-weil", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Certn", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.scribble.vc/elizabeth-weil", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Titan", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.scribble.vc/elizabeth-weil", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Luminai", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.scribble.vc/elizabeth-weil", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "Checkmate", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.scribble.vc/elizabeth-weil", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "NCX", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.scribble.vc/elizabeth-weil", type: "partner-bio", checked: "2026-09-08" }] },
+      { name: "DigitalBrain", ticker: null, stage: null, year: null, yearPrecision: null, sector: null, subsector: null, role: null, evidence: [{ url: "https://www.scribble.vc/elizabeth-weil", type: "partner-bio", checked: "2026-09-08" }] }
+    ],
+    sources: [
+      { label: "Scribble Ventures - Elizabeth Weil", url: "https://www.scribble.vc/elizabeth-weil" },
+      { label: "Scribble Ventures - Team", url: "https://www.scribble.vc/team" },
+      { label: "Forbes - Scribble debuts with $42 million (4 Feb 2021)", url: "https://www.forbes.com/sites/alexkonrad/2021/02/04/twitter-alum-elizabeth-weils-vc-firm-debuts-with-42-million-to-bring-back-old-venture-collaboration/" }
+    ]
+  },
+"stu-smith": {
+    name: "Stu Smith",
+    firm: "Scribble Ventures",
+    firmSlug: "scribble-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Stu Smith is listed as Partner on the Scribble Ventures team page, the firm's only Partner-titled person other than founder Elizabeth Weil. His individual profile page could not be retrieved - the path following the site's own pattern returns HTTP 404 - so no biography, education, prior employment, joining year or board seat could be sourced, and those fields are null rather than inferred. The firm's homepage states in general terms that its team comes from OpenAI, Meta, Twitter and a16z, but that sentence names no one and was not attached to him.",
+    notableInvestments: [],
+    sources: [
+      { label: "Scribble Ventures - Team", url: "https://www.scribble.vc/team" }
+    ]
+  },
+"ron-cao": {
+    name: "Ron Cao",
+    firm: "Sky9 Capital",
+    firmSlug: "sky9-capital",
+    title: "Founder and Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ron Cao is listed on the Sky9 Capital team page as \"Founder and Partner\" under the Investment Team heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Sky9 Capital - Team", url: "https://www.sky9capital.com/team/" }
+    ]
+  },
+"wei-hao": {
+    name: "Wei Hao",
+    firm: "Sky9 Capital",
+    firmSlug: "sky9-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Wei Hao is listed on the Sky9 Capital team page as \"Partner\" under the Investment Team heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Sky9 Capital - Team", url: "https://www.sky9capital.com/team/" }
+    ]
+  },
+"yu-yuan": {
+    name: "Yu Yuan",
+    firm: "Sky9 Capital",
+    firmSlug: "sky9-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Yu Yuan is listed on the Sky9 Capital team page as \"Partner\" under the Investment Team heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Sky9 Capital - Team", url: "https://www.sky9capital.com/team/" }
+    ]
+  },
+"matthew-tabbiner": {
+    name: "Matthew Tabbiner",
+    firm: "Sky9 Capital",
+    firmSlug: "sky9-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Matthew Tabbiner is listed on the Sky9 Capital team page as \"Partner\" under the Investment Team heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Sky9 Capital - Team", url: "https://www.sky9capital.com/team/" }
+    ]
+  },
+"davy-shen": {
+    name: "Davy Shen",
+    firm: "Sky9 Capital",
+    firmSlug: "sky9-capital",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Davy Shen is listed on the Sky9 Capital team page as \"Partner\" under the Investment Team heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Sky9 Capital - Team", url: "https://www.sky9capital.com/team/" }
+    ]
+  },
+"matthew-sechrest": {
+    name: "Matthew Sechrest",
+    firm: "Sky9 Capital",
+    firmSlug: "sky9-capital",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Matthew Sechrest is listed on the Sky9 Capital team page as \"Venture Partner\" under the Investment Team heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Sky9 Capital - Team", url: "https://www.sky9capital.com/team/" }
+    ]
+  },
+"eric-guo": {
+    name: "Eric Guo",
+    firm: "Sky9 Capital",
+    firmSlug: "sky9-capital",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Eric Guo is listed on the Sky9 Capital team page as \"Venture Partner\" under the Investment Team heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Sky9 Capital - Team", url: "https://www.sky9capital.com/team/" }
+    ]
+  },
+"fan-liu": {
+    name: "Fan Liu",
+    firm: "Sky9 Capital",
+    firmSlug: "sky9-capital",
+    title: "Venture Partner/AI4Science Scientist",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Fan Liu is listed on the Sky9 Capital team page as \"Venture Partner/AI4Science Scientist\" under the Investment Team heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Sky9 Capital - Team", url: "https://www.sky9capital.com/team/" }
+    ]
+  },
+"mars-ren": {
+    name: "Mars Ren",
+    firm: "Sky9 Capital",
+    firmSlug: "sky9-capital",
+    title: "Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Mars Ren is listed on the Sky9 Capital team page as \"Venture Partner\" under the Investment Team heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "Sky9 Capital - Team", url: "https://www.sky9capital.com/team/" }
+    ]
+  },
+"pia-santavirta": {
+    name: "Pia Santavirta",
+    firm: "Tesi",
+    firmSlug: "tesi",
+    title: "CEO",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Pia Santavirta is listed as CEO on Tesi's governance page, at the head of the management team of the Finnish state-owned investment company Finnish Industry Investment Ltd. No education or prior employment for her was verified from Tesi's own pages within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Tesi - Governance", url: "https://tesi.fi/en/about-tesi/governance/" }
+    ]
+  },
+"juha-lehtola": {
+    name: "Juha Lehtola",
+    firm: "Tesi",
+    firmSlug: "tesi",
+    title: "Director, Venture and Growth Investments, Tesi AIFM Oy",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Juha Lehtola is listed on Tesi's governance page as Director, Venture and Growth Investments, Tesi AIFM Oy, one of Tesi's four wholly owned subsidiaries and its AIFM entity. He is one of the three investment directors on the management team, alongside the heads of fund investments and industrial investments. No education or prior employment was verified from Tesi's own pages within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Tesi - Governance", url: "https://tesi.fi/en/about-tesi/governance/" }
+    ]
+  },
+"samuel-wendelin": {
+    name: "Samuel Wendelin",
+    firm: "Tesi",
+    firmSlug: "tesi",
+    title: "Director, Fund Investments, Tesi AIFM Oy",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Samuel Wendelin is listed on Tesi's governance page as Director, Fund Investments, Tesi AIFM Oy. Tesi reports investing in 137 VC and PE funds as at its 2025 key figures. No education or prior employment was verified from Tesi's own pages within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Tesi - Governance", url: "https://tesi.fi/en/about-tesi/governance/" }
+    ]
+  },
+"jussi-hattula": {
+    name: "Jussi Hattula",
+    firm: "Tesi",
+    firmSlug: "tesi",
+    title: "Director, Industrial Investments, Tesi AIFM Oy",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jussi Hattula is listed on Tesi's governance page as Director, Industrial Investments, Tesi AIFM Oy. Industrial investments reflect the industrial policy mission Tesi states on its about page. No education or prior employment was verified from Tesi's own pages within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Tesi - Governance", url: "https://tesi.fi/en/about-tesi/governance/" }
+    ]
+  },
+"seb-wallace": {
+    name: "Seb Wallace",
+    firm: "Triple Point Ventures",
+    firmSlug: "triple-point-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Seb Wallace is listed on the Triple Point Ventures team page under Investment & portfolio teams. The page publishes names and photographs but no job titles, so no title is recorded rather than one being inferred. Triple Point Ventures is the venture arm of Triple Point, whose manager entity Triple Point Investment Management LLP is FCA authorised under number 456597. No education, prior employment or board seat was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Triple Point Ventures - Team", url: "https://www.triplepoint.vc/team/" }
+    ]
+  },
+"jamie-tomalin": {
+    name: "Jamie Tomalin",
+    firm: "Triple Point Ventures",
+    firmSlug: "triple-point-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jamie Tomalin is listed on the Triple Point Ventures team page under Investment & portfolio teams. The page publishes names and photographs but no job titles, so no title is recorded rather than one being inferred. Triple Point Ventures is the venture arm of Triple Point, whose manager entity Triple Point Investment Management LLP is FCA authorised under number 456597. No education, prior employment or board seat was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Triple Point Ventures - Team", url: "https://www.triplepoint.vc/team/" }
+    ]
+  },
+"sam-stone": {
+    name: "Sam Stone",
+    firm: "Triple Point Ventures",
+    firmSlug: "triple-point-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Sam Stone is listed on the Triple Point Ventures team page under Investment & portfolio teams. The page publishes names and photographs but no job titles, so no title is recorded rather than one being inferred. Triple Point Ventures is the venture arm of Triple Point, whose manager entity Triple Point Investment Management LLP is FCA authorised under number 456597. No education, prior employment or board seat was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Triple Point Ventures - Team", url: "https://www.triplepoint.vc/team/" }
+    ]
+  },
+"max-thieler": {
+    name: "Max Thieler",
+    firm: "Triple Point Ventures",
+    firmSlug: "triple-point-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Max Thieler is listed on the Triple Point Ventures team page under Investment & portfolio teams. The page publishes names and photographs but no job titles, so no title is recorded rather than one being inferred. Triple Point Ventures is the venture arm of Triple Point, whose manager entity Triple Point Investment Management LLP is FCA authorised under number 456597. No education, prior employment or board seat was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Triple Point Ventures - Team", url: "https://www.triplepoint.vc/team/" }
+    ]
+  },
+"ethan-mitchell": {
+    name: "Ethan Mitchell",
+    firm: "Triple Point Ventures",
+    firmSlug: "triple-point-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ethan Mitchell is listed on the Triple Point Ventures team page under Investment & portfolio teams. The page publishes names and photographs but no job titles, so no title is recorded rather than one being inferred. Triple Point Ventures is the venture arm of Triple Point, whose manager entity Triple Point Investment Management LLP is FCA authorised under number 456597. No education, prior employment or board seat was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Triple Point Ventures - Team", url: "https://www.triplepoint.vc/team/" }
+    ]
+  },
+"chris-lascelles": {
+    name: "Chris Lascelles",
+    firm: "Triple Point Ventures",
+    firmSlug: "triple-point-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Chris Lascelles is listed on the Triple Point Ventures team page under Investment & portfolio teams. The page publishes names and photographs but no job titles, so no title is recorded rather than one being inferred. Triple Point Ventures is the venture arm of Triple Point, whose manager entity Triple Point Investment Management LLP is FCA authorised under number 456597. No education, prior employment or board seat was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Triple Point Ventures - Team", url: "https://www.triplepoint.vc/team/" }
+    ]
+  },
+"freddie-kimber": {
+    name: "Freddie Kimber",
+    firm: "Triple Point Ventures",
+    firmSlug: "triple-point-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Freddie Kimber is listed on the Triple Point Ventures team page under Investment & portfolio teams. The page publishes names and photographs but no job titles, so no title is recorded rather than one being inferred. Triple Point Ventures is the venture arm of Triple Point, whose manager entity Triple Point Investment Management LLP is FCA authorised under number 456597. No education, prior employment or board seat was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Triple Point Ventures - Team", url: "https://www.triplepoint.vc/team/" }
+    ]
+  },
+"ian-mclennan": {
+    name: "Ian McLennan",
+    firm: "Triple Point Ventures",
+    firmSlug: "triple-point-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Ian McLennan is listed on the Triple Point Ventures team page under Investment committee. The page publishes names and photographs but no job titles, so no title is recorded rather than one being inferred. Triple Point Ventures is the venture arm of Triple Point, whose manager entity Triple Point Investment Management LLP is FCA authorised under number 456597. No education, prior employment or board seat was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Triple Point Ventures - Team", url: "https://www.triplepoint.vc/team/" }
+    ]
+  },
+"justin-hubble": {
+    name: "Justin Hubble",
+    firm: "Triple Point Ventures",
+    firmSlug: "triple-point-ventures",
+    title: null,
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Justin Hubble is listed on the Triple Point Ventures team page under Investment committee. The page publishes names and photographs but no job titles, so no title is recorded rather than one being inferred. Triple Point Ventures is the venture arm of Triple Point, whose manager entity Triple Point Investment Management LLP is FCA authorised under number 456597. No education, prior employment or board seat was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Triple Point Ventures - Team", url: "https://www.triplepoint.vc/team/" }
+    ]
+  },
+"claire-ainsworth": {
+    name: "Claire Ainsworth",
+    firm: "Triple Point Ventures",
+    firmSlug: "triple-point-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Claire Ainsworth is listed on the Triple Point Ventures team page under Investment committee. The ventures team page publishes no job titles; the title recorded here, \"Partner\", is the title given for this person on Triple Point's about page. Triple Point Ventures is the venture arm of Triple Point, whose manager entity Triple Point Investment Management LLP is FCA authorised under number 456597. No education, prior employment or board seat was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Triple Point Ventures - Team", url: "https://www.triplepoint.vc/team/" },
+      { label: "Triple Point - About us", url: "https://www.triplepoint.co.uk/about-us/" }
+    ]
+  },
+"michael-bayer": {
+    name: "Michael Bayer",
+    firm: "Triple Point Ventures",
+    firmSlug: "triple-point-ventures",
+    title: "Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Michael Bayer is listed on the Triple Point Ventures team page under Investment committee. The ventures team page publishes no job titles; the title recorded here, \"Partner\", is the title given for this person on Triple Point's about page. Triple Point Ventures is the venture arm of Triple Point, whose manager entity Triple Point Investment Management LLP is FCA authorised under number 456597. No education, prior employment or board seat was verified from a first-party page within this research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "Triple Point Ventures - Team", url: "https://www.triplepoint.vc/team/" },
+      { label: "Triple Point - About us", url: "https://www.triplepoint.co.uk/about-us/" }
+    ]
+  },
+"antoine-bertin": {
+    name: "Antoine Bertin",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Antoine Bertin is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"guillaume-blanchet": {
+    name: "Guillaume Blanchet",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Guillaume Blanchet is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"patrick-blasselle": {
+    name: "Patrick Blasselle",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Patrick Blasselle is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"isabelle-bou-antoun": {
+    name: "Isabelle Bou Antoun",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directrice associée",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Isabelle Bou Antoun is listed on the UI Investissement team page as \"Directrice associée\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"sebastien-boulard": {
+    name: "Sébastien Boulard",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Sébastien Boulard is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"pauline-de-breteuil": {
+    name: "Pauline de Breteuil",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directrice associée",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Pauline de Breteuil is listed on the UI Investissement team page as \"Directrice associée\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"benedicte-de-chevigny": {
+    name: "Bénédicte de Chevigny",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directrice associée",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Bénédicte de Chevigny is listed on the UI Investissement team page as \"Directrice associée\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"come-de-lamberterie": {
+    name: "Côme de Lamberterie",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Côme de Lamberterie is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"michel-deprez": {
+    name: "Michel Déprez",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Associé gérant",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Michel Déprez is listed on the UI Investissement team page as \"Associé gérant\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"francois-gressant": {
+    name: "François Gressant",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "François Gressant is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"julien-huberson": {
+    name: "Julien Huberson",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Julien Huberson is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"olivier-jarrousse": {
+    name: "Olivier Jarrousse",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Associé gérant",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Olivier Jarrousse is listed on the UI Investissement team page as \"Associé gérant\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"robert-le-roux": {
+    name: "Robert Le Roux",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Robert Le Roux is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"valerie-lutt": {
+    name: "Valérie Lutt",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directrice associée",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Valérie Lutt is listed on the UI Investissement team page as \"Directrice associée\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"quentin-matillon": {
+    name: "Quentin Matillon",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Quentin Matillon is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"fabien-patillaud": {
+    name: "Fabien Patillaud",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Fabien Patillaud is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"nicolas-penet": {
+    name: "Nicolas Penet",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Nicolas Penet is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"stephanie-pepineau": {
+    name: "Stéphanie Pépineau",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directrice associée",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Stéphanie Pépineau is listed on the UI Investissement team page as \"Directrice associée\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"emmanuel-tissier": {
+    name: "Emmanuel Tissier",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Emmanuel Tissier is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"sebastien-touvron": {
+    name: "Sébastien Touvron",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Sébastien Touvron is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"edouard-vilmer": {
+    name: "Edouard Vilmer",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Edouard Vilmer is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"jean-philippe-zoghbi": {
+    name: "Jean-Philippe Zoghbi",
+    firm: "UI Investissement",
+    firmSlug: "ui-investissement",
+    title: "Directeur associé",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Jean-Philippe Zoghbi is listed on the UI Investissement team page as \"Directeur associé\" (ui-investissement.com/nos-equipes/, checked 2026-09-08). \"Associé gérant\" is the firm's managing-partner tier and \"Directeur associé\" / \"Directrice associée\" its partner tier; the title is reproduced here exactly as the firm writes it and has not been translated or promoted. No joining year, education, prior employer, board seat or individual investment attribution is published on the pages consulted, and no individual profile page was opened for this person under this batch's research budget.",
+    notableInvestments: [],
+    sources: [
+      { label: "UI Investissement - Nos equipes", url: "https://www.ui-investissement.com/nos-equipes/" }
+    ]
+  },
+"pano-anthos": {
+    name: "Pano Anthos",
+    firm: "XRC Ventures",
+    firmSlug: "xrc-ventures",
+    title: "Founder & Managing Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Pano Anthos is listed on the XRC Ventures team page as \"Founder & Managing Partner\" under the Investments heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "XRC Ventures - Team", url: "https://www.xrcventures.com/team" }
+    ]
+  },
+"diana-melencio": {
+    name: "Diana Melencio",
+    firm: "XRC Ventures",
+    firmSlug: "xrc-ventures",
+    title: "General Partner, Brand Capital Fund",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Diana Melencio is listed on the XRC Ventures team page as \"General Partner, Brand Capital Fund\" under the Investments heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "XRC Ventures - Team", url: "https://www.xrcventures.com/team" }
+    ]
+  },
+"andrew-ross": {
+    name: "Andrew Ross",
+    firm: "XRC Ventures",
+    firmSlug: "xrc-ventures",
+    title: "Senior Advisor and Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Andrew Ross is listed on the XRC Ventures team page as \"Senior Advisor and Venture Partner\" under the Investments heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "XRC Ventures - Team", url: "https://www.xrcventures.com/team" }
+    ]
+  },
+"rob-hull": {
+    name: "Rob Hull",
+    firm: "XRC Ventures",
+    firmSlug: "xrc-ventures",
+    title: "Senior Advisor and Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Rob Hull is listed on the XRC Ventures team page as \"Senior Advisor and Venture Partner\" under the Investments heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "XRC Ventures - Team", url: "https://www.xrcventures.com/team" }
+    ]
+  },
+"al-sambar": {
+    name: "Al Sambar",
+    firm: "XRC Ventures",
+    firmSlug: "xrc-ventures",
+    title: "Senior Advisor and Venture Partner",
+    joinedYear: null,
+    investmentFocus: [],
+    education: [],
+    previousExperience: [],
+    boardSeats: [],
+    ipoCount: null,
+    majorExits: null,
+    careerTimeline: [],
+    biography: "Al Sambar is listed on the XRC Ventures team page as \"Senior Advisor and Venture Partner\" under the Investments heading, checked 2026-09-08. No individual biography page, education, prior employment or board seat was opened for this profile within the research budget for this batch, so those fields are left empty rather than inferred.",
+    notableInvestments: [],
+    sources: [
+      { label: "XRC Ventures - Team", url: "https://www.xrcventures.com/team" }
+    ]
   }
 });
