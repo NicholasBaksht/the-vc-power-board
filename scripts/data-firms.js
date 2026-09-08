@@ -16907,5 +16907,470 @@ holdings: []
       { year: "2015", event: "XRC's homepage dates its investing activity to \"Since 2015\"." }
     ],
     holdings: []
+  },
+
+  /* ---- Firm batch 3, added 7 September 2026: 20 firms. Their partner records
+     are in data-partners-1.js (not shard 6 - see that file's banner) and
+     their field-level provenance is in data-evidence.js, added in the same
+     batch. Checked against all 600 pre-existing firms for slug, name,
+     historical-name and parent-brand collisions; none found. Two slugs
+     were realigned to the firms' current names - salt-vc (was filed as
+     peterson-ventures) and primo-capital (was primo-ventures) - because
+     the stated reason for the old slugs, that they already existed here,
+     is not the case. ---- */
+  {
+    rank: null,
+    name: "1517 Fund",
+    sectors: ["Deep Tech", "Frontier Technologies", "Software", "Hard Tech"],
+    signatureExit: null,
+    slug: "1517-fund",
+    website: "https://www.1517fund.com",
+    short: "1517",
+    founded: 2015,
+    hq: null,
+    aum: null,
+    thesis: "1517 Fund is a pre-seed and seed venture firm that backs young founders outside conventional credentialing paths, describing its focus as college dropouts, renegade students and deep tech scientists. The firm's homepage states an average pre-seed check of $400,000 and first checks ranging from $50,000 to $1,000,000, and says it has more than $175mm in capital committed across four flagship funds plus more than 15 SPVs for follow-on investments. It also runs the Medici Project, which the firm says deploys more than 200 grants a year at a $1k minimum. The partners previously helped run the Thiel Fellowship, which the homepage says they co-founded in 2010.",
+    leadership: [
+      { name: "Danielle Strachman", role: "General Partner", profileSlug: "danielle-strachman" },
+      { name: "Michael Gibson", role: "General Partner", profileSlug: "michael-gibson" },
+      { name: "Nick Arnett", role: "Principal", profileSlug: "nick-arnett" },
+      { name: "Zak Slayback", role: "Principal", profileSlug: "zak-slayback" }
+    ],
+    timeline: [
+      { year: "2010", event: "1517's homepage states its founders co-founded the Thiel Fellowship in 2010." },
+      { year: "2015", event: "1517 Fund's homepage gives 2015 as the fund's founding year." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "7percent Ventures",
+    sectors: ["Deep Tech", "Space", "Frontier Technologies"],
+    signatureExit: null,
+    slug: "7percent-ventures",
+    website: "https://www.7pc.vc",
+    short: "7percent",
+    founded: null,
+    hq: "London, United Kingdom",
+    aum: null,
+    thesis: "7percent Ventures is a London early-stage venture firm investing in what it calls transformative technology, with spacetech, quantum and deeptech named on its own site. Its stated approach, in the firm's words, is: \"We seek the 200x winners and pass on the less risky, less ambitious opportunities.\" The site says the firm's name comes from Paul Graham's observation that \"A good early stage growth rate is 5-7% a week.\" Across its first two funds the homepage claims \"150 startups invested in\", \"240 founders in our portfolio\" and \"$2.3bn raised by our portfolio in follow-on capital\"; none of those is an assets under management figure. The legal entity is 7percent Ventures Ltd of 59 St. Martin's Lane, Unit 107, London WC2N 4JS, FCA firm reference number 827438, an appointed representative of Kin Capital LLP (FCA reference 656789). The site also lists a 7EVN advisor network and a portfolio founder community as support resources.",
+    leadership: [
+      { name: "Andrew J Scott", role: "Founding Partner", profileSlug: "andrew-j-scott" },
+      { name: "Dylan Bourguignon", role: "Partner", profileSlug: "dylan-bourguignon" },
+      { name: "Duncan Grierson", role: "Venture Partner", profileSlug: "duncan-grierson" },
+      { name: "Wayne Gibbins", role: "Venture Partner", profileSlug: "wayne-gibbins" }
+    ],
+    timeline: [
+      { year: "2009", event: "Andrew J Scott co-founds ICE, a not-for-profit founder community, before 7percent Ventures, per his page on the firm's site." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Activant Capital",
+    sectors: ["Fintech", "Artificial Intelligence", "Logistics", "Healthcare", "Enterprise Software", "Commerce", "Infrastructure"],
+    signatureExit: "Deliverr (acquired by Shopify)",
+    slug: "activant-capital",
+    website: "https://activantcapital.com",
+    short: "Activant",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "Activant describes itself as \"a research-led venture growth firm\" that partners \"with relentless founders through their most defining stages of growth\" (the firm's own claim). It invests at growth stage across fintech, AI, logistics, healthcare and enterprise software, and its structure reflects the research claim: alongside its partners the published team includes a Director of Research, research vice presidents, research analysts and an executive in residence. The site lists offices in New York, San Francisco, Cape Town and Darien, Connecticut, but does not designate one of them as the headquarters. Named exits on its site include Deliverr (acquired by Shopify), Metronome (acquired by Stripe), Shopkeep (acquired by Lightspeed), Hybris (acquired by SAP) and /dev/agents (acquired by Meta).",
+    leadership: [
+      { name: "Steve Sarracino", role: "Founder, Partner", profileSlug: "steve-sarracino" },
+      { name: "Kevin Widmaier", role: "President, Partner", profileSlug: "kevin-widmaier" },
+      { name: "Andrew Steele", role: "Partner", profileSlug: "andrew-steele" },
+      { name: "Maximilian Mayer", role: "Partner", profileSlug: "maximilian-mayer" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Alpaca VC",
+    sectors: ["AI", "Energy", "Manufacturing", "Logistics", "Real Estate"],
+    signatureExit: null,
+    slug: "alpaca-vc",
+    website: "https://alpaca.vc",
+    short: "Alpaca",
+    founded: 2012,
+    hq: null,
+    aum: null,
+    thesis: "Alpaca VC is an early-stage venture firm. Its current site describes it as an 'AI-native seed fund' focused on what it calls the 'Aquarius Economy: energy abundance, foundational industry resilience, and agent-to-human coordination' (the firm's own claim). The firm was known as Corigin Ventures from 2012 until September 2020, when it rebranded to Alpaca; its own rebrand post says the Corigin name was 'pigeonholing us in, real estate and PropTech, despite our success in investing in other categories.'",
+    leadership: [
+      { name: "Aubrie Pagano", role: "General Partner, Managing Member", profileSlug: "aubrie-pagano" },
+      { name: "Ryan Freedman", role: "Co-Founder, Executive Chairman", profileSlug: "ryan-freedman" },
+      { name: "David Goldberg", role: "Board Partner", profileSlug: "david-goldberg" },
+      { name: "Daniel Fetner", role: "Board Partner", profileSlug: "daniel-fetner" }
+    ],
+    timeline: [
+      { year: "2012", event: "The firm's own rebrand post states: 'Since 2012, we've been known as Corigin Ventures.' It emerged from Corigin, a private real estate holding company." },
+      { year: "2020", event: "On 15 September 2020 Corigin Ventures announced its rebrand to Alpaca VC." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Blackhorn Ventures",
+    sectors: ["Industrial Technology", "Energy", "Mobility", "Construction Tech", "Robotics", "AI"],
+    signatureExit: null,
+    slug: "blackhorn-ventures",
+    website: "https://www.blackhornvc.com",
+    short: "Blackhorn",
+    founded: 2017,
+    hq: "Denver, CO",
+    aum: null,
+    thesis: "Blackhorn Ventures invests in startups applying data, AI and robotics to physical infrastructure and industrial transformation. The firm's homepage says it partners with founders 'unleashing the power of data to reimagine how we build, power, and move our world' and backs companies using 'data, AI and robotics in our biggest industries crucial to national security and economic stability' (the firm's own claims). It closed a $150M Industrial Impact Fund II announced in June 2024, and keeps offices in Denver and New York.",
+    leadership: [
+      { name: "Philip O'Connor", role: "Co-Founder and Managing Partner", profileSlug: "philip-oconnor" },
+      { name: "Melissa Cheong", role: "Managing Partner", profileSlug: "melissa-cheong" },
+      { name: "Micah Kotch", role: "Partner", profileSlug: "micah-kotch" },
+      { name: "Stephan Cizmar", role: "Partner", profileSlug: "stephan-cizmar" },
+      { name: "Jack Fuchs", role: "Co-Founder and Operating Partner", profileSlug: "jack-fuchs" }
+    ],
+    timeline: [
+      { year: "2017", event: "Blackhorn's own boilerplate in the June 2024 fund release says it has been partnering with founders 'transforming how we build, power, and move our world since 2017'." },
+      { year: "2024", event: "Blackhorn announces the close of $150M in commitments for Industrial Impact Fund II on 27 June 2024, with Mercuria among the limited partners." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "byFounders",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "byfounders",
+    website: "https://www.byfounders.vc",
+    short: "byFounders",
+    founded: 2017,
+    hq: "Copenhagen, Denmark",
+    aum: null,
+    thesis: "byFounders is an early-stage venture firm operating from Copenhagen and Stockholm and, in its own words, \"investing in globally ambitious teams connected to the Nordic and Baltic countries\". The firm was introduced in a post on its own site dated 4 September 2017 by founding partners Eric Lagier and Tommy Andersen, which describes a \"for founders by founders\" fund covering Denmark, Iceland, Norway, Sweden, Finland, Estonia, Latvia and Lithuania. Its distinguishing structure is the Collective, which the homepage says \"consists of 40+ of some of the most accomplished Nordic and Baltic founders and operators\". The homepage states that the firm \"takes an impact-aware approach to investing and working with the broader startup ecosystem\" and that, \"Known for our founder-friendly terms, we first and foremost invest in you as a founder\". It refers to an \"8T Framework\" for investment decisions without setting out its contents. Its two listed offices are Kanonbadsvej 2, 1437 Copenhagen, Denmark and Barnhusgatan 3, 111 23 Stockholm, Sweden.",
+    leadership: [
+      { name: "Eric Lagier", role: "Founding Partner", profileSlug: "eric-lagier" },
+      { name: "Tommy Andersen", role: "Founding Partner", profileSlug: "tommy-andersen" },
+      { name: "Magnus Hambleton", role: "Partner", profileSlug: "magnus-hambleton" },
+      { name: "Martin Krag", role: "Partner", profileSlug: "martin-krag" },
+      { name: "Sara Rywe", role: "Partner", profileSlug: "sara-rywe" }
+    ],
+    timeline: [
+      { year: "2017", event: "byFounders is introduced on 4 September 2017 by founding partners Eric Lagier and Tommy Andersen, as a Nordic and Baltic fund backed by a collective of founders." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Contour Venture Partners",
+    sectors: ["Financial Technology", "Enterprise Software", "SaaS", "Vertical SaaS", "B2B"],
+    signatureExit: "Datadog (IPO)",
+    slug: "contour-venture-partners",
+    website: "https://www.contourventures.com",
+    short: "Contour",
+    founded: 2005,
+    hq: "New York, NY",
+    aum: null,
+    thesis: "Contour Venture Partners is a seed-stage venture firm founded in 2005 and based at 475 Park Avenue South in New York. It invests in financial services, enterprise SaaS and vertical B2B SaaS, with a stated geographic focus on the New York City technology ecosystem. The firm's own site describes it as \"the most seasoned seed stage venture capital firm focused on the New York City technology ecosystem\" (the firm's claim, not an independent assessment). The homepage reports seven funds under management, 105 companies invested and 33 liquidity events; none of those is an AUM figure.",
+    leadership: [
+      { name: "Matt Gorin", role: "Managing Partner", profileSlug: "matt-gorin" },
+      { name: "Bob Greene", role: "Managing Partner", profileSlug: "bob-greene" },
+      { name: "Owen Davis", role: "General Partner", profileSlug: "owen-davis" }
+    ],
+    timeline: [
+      { year: "2005", event: "Matt Gorin and Bob Greene co-found Contour Venture Partners in New York as a seed-stage firm." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Iterative",
+    sectors: ["Early-Stage Technology", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "iterative",
+    website: "https://www.iterative.vc",
+    short: "Iterative",
+    founded: null,
+    hq: "Singapore",
+    aum: null,
+    thesis: "Iterative runs a twice-yearly accelerator batch for early-stage Southeast Asian startups alongside its venture funds. The firm's homepage states: \"We invest US $150K to $500K each in a batch of startups, twice a year\" and that on admission it invests the full amount then works with founders on their idea for three months. Its own announcement post states: \"Iterative has closed its second fund at $55M to invest in startups across Southeast Asia.\" That $55M is a fund size and not an assets-under-management figure, and the per-company batch cheque of $150K to $500K is a programme term that is separate from the fund total. The firm is described on its own site as Singapore-based, and its team page splits the organisation into the Iterative team, Visiting Partners who are outside founders, and Iterative Capital.",
+    leadership: [
+      { name: "Hsu Ken Ooi", role: "Founder, General Partner", profileSlug: "hsu-ken-ooi" },
+      { name: "Brian Ma", role: "Founder, General Partner", profileSlug: "brian-ma" },
+      { name: "Hsu Han Ooi", role: "Founder, Partner", profileSlug: "hsu-han-ooi" }
+    ],
+    timeline: [
+      { year: "2020", event: "Iterative's first accelerator batch starts on 1 June 2020, per the firm's own post Starting Iterative; the firm's Fund II post says it made its first investment in June 2020." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Katapult",
+    sectors: ["Sustainability", "Climate", "Climate Technology"],
+    signatureExit: null,
+    slug: "katapult",
+    website: "https://katapult.vc",
+    short: "Katapult",
+    founded: 2015,
+    hq: "Oslo, Norway",
+    aum: null,
+    thesis: "Katapult is an impact investor founded in Oslo in 2015 by Tharald Nustad. Its About page presents the organisation as four pillars: Katapult Ocean, the investing arm, which the site describes as an ocean impact investor; Katapult Impact Platform, described as a platform supporting the early stage impact ecosystem, under which the accelerator programmes sit; Katapult Foundation, the non-profit arm; and Katapult Future Fest, an annual gathering. The firm states it has backed more than 200 portfolio companies across its funds and accelerators, with founders from more than 50 countries, over more than ten years of operating. Those cohort and portfolio counts are programme figures and are not fund sizes; Katapult publishes no fund size or assets-under-management figure on the pages that could be read.",
+    leadership: [
+      { name: "Tharald Nustad", role: "Founder", profileSlug: "tharald-nustad" }
+    ],
+    timeline: [
+      { year: "2015", event: "Tharald Nustad founds Katapult in Oslo, per the firm's About page." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Main Sequence",
+    sectors: ["Deep Tech", "Space", "Climate", "Energy", "Artificial Intelligence", "Food & Agriculture", "Healthcare", "Industrial Technology"],
+    signatureExit: "Cylite (acquisition, 2024)",
+    slug: "main-sequence-ventures",
+    website: "https://www.mseq.vc",
+    short: "Main Sequence",
+    founded: 2017,
+    hq: null,
+    aum: "Over $1B (under management, per the firm's own About page, checked 2026; the same page lists Fund 1 at $240M, Fund 2 at $310M and Fund 3 at $450M, which sum to $1B, so the figure tracks cumulative fund capital rather than a dated mark-to-market AUM)",
+    thesis: "Main Sequence is a deep tech venture firm founded in 2017 that invests from seed to Series B in companies built on scientific research. Its About page describes the firm as co-founded by CSIRO, Australia's national science agency, and the firm's brand assets pair its logo with CSIRO's; the page does not describe CSIRO as an owner or shareholder of the manager, so the relationship is best read as a founding and continuing institutional association rather than ownership. The firm organises its investing around six challenge areas it names as: bridge the gap to space, decarbonise the planet, enable the next intelligence leap, feed 10 billion people, reach humanity scale healthcare, and supercharge industrial productivity. Its About page reports Fund 1 at $240 million, Fund 2 at $310 million, Fund 3 at $450 million commencing in 2023, and 51 companies across Funds 1 and 2.",
+    leadership: [
+      { name: "Bill Bartee", role: "Managing Partner", profileSlug: "bill-bartee" },
+      { name: "Gabrielle Munzer", role: "Partner", profileSlug: "gabrielle-munzer" },
+      { name: "Martin Duursma", role: "Partner", profileSlug: "martin-duursma" },
+      { name: "Mike Nicholls", role: "Partner", profileSlug: "mike-nicholls" },
+      { name: "Mike Zimmerman", role: "Partner", profileSlug: "mike-zimmerman" },
+      { name: "Phil Morle", role: "Partner", profileSlug: "phil-morle" }
+    ],
+    timeline: [
+      { year: "2017", event: "Main Sequence is founded, co-founded by CSIRO, Australia's national science agency, per the firm's About page." },
+      { year: "2023", event: "Fund 3 commences at $450 million, per the firm's About page." },
+      { year: "2024", event: "The acquisition of portfolio company Cylite is described by the firm as the first material return for its investors." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "New Stack Ventures",
+    sectors: ["AI", "Fintech", "Healthcare", "Industrial Tech"],
+    signatureExit: null,
+    slug: "new-stack-ventures",
+    website: "https://www.newstack.com",
+    short: "New Stack",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "New Stack Ventures is an early-stage venture firm that invests at angel, pre-seed and seed. Its stated position is that most venture capital goes to Silicon Valley insiders, and that it backs founders who did not attend Stanford, did not work for Big Tech and do not live in the Bay Area. The site states check sizes of $500K to $1.5M and names Vertical AI, Fintech, Healthcare and Industrials as focus areas. The firm publishes no founding year, headquarters address or AUM figure on its site.",
+    leadership: [
+      { name: "Nick Moran", role: "General Partner", profileSlug: "nick-moran" },
+      { name: "Nate Pierotti", role: "Venture Partner", profileSlug: "nate-pierotti" },
+      { name: "Luke Skertich", role: "Principal" },
+      { name: "J.R. Moran", role: "Chief Operating Officer" },
+      { name: "Brenna Kyper", role: "Director of Platform" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Next Coast Ventures",
+    sectors: [],
+    signatureExit: null,
+    slug: "next-coast-ventures",
+    website: "https://www.nextcoastventures.com",
+    short: "Next Coast",
+    founded: 2015,
+    hq: null,
+    aum: null,
+    thesis: "Next Coast Ventures is a venture firm founded in 2015 by Mike Smerklo and Thomas Ball, both Co-Founder and Managing Director. Its own site states it was \"Built by entrepreneurs, for entrepreneurs\" and puts serving entrepreneurs at the centre of the firm. Alongside the investment and operations teams it publishes a group of Venture Partners drawn largely from operating roles at other companies, and says founders get access to an expert network of more than 150 individuals. The site publishes no AUM figure, no fund sizes and no stated sector list.",
+    leadership: [
+      { name: "Mike Smerklo", role: "Co-Founder and Managing Director", profileSlug: "mike-smerklo" },
+      { name: "Thomas Ball", role: "Co-Founder and Managing Director", profileSlug: "thomas-ball" },
+      { name: "Kaitlyn DeBernardo", role: "Partner, COO & Head of Platform", profileSlug: "kaitlyn-debernardo" }
+    ],
+    timeline: [
+      { year: "2015", event: "Next Coast Ventures is founded by Mike Smerklo and Thomas Ball." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Paladin Capital Group",
+    sectors: ["Cybersecurity", "Artificial Intelligence", "Deep Tech", "Synthetic Biology", "National Security"],
+    signatureExit: null,
+    slug: "paladin-capital-group",
+    website: "https://www.paladincapgroup.com",
+    short: "Paladin",
+    founded: 2001,
+    hq: "Washington, DC",
+    aum: null,
+    thesis: "Paladin Capital Group is a Washington, DC based investment firm founded in 2001 that backs cyber, AI and deep tech companies. Its About page describes the firm as \"a leading global investor that supports and grows the world's most innovative AI, cyber and deep tech companies through venture investment, expansion and growth capital\" (the firm's own claim), and its homepage describes it as \"a multi-stage investment firm that pursues compelling technology, product, and service opportunities\" (the firm's own claim). It is therefore not a single early-stage venture partnership: it invests across venture, expansion and growth capital through multiple funds and investment vehicles, and its published team is organised into investment professionals, management, operations, capital development, venture partners, and a large Strategic Advisory Group drawn largely from national-security and intelligence backgrounds. The firm also runs the Paladin Global Institute, a policy arm with its own president and staff. Offices are listed in Washington DC, New York City, Silicon Valley, London and Luxembourg.",
+    leadership: [
+      { name: "Michael Steed", role: "Founder and Managing Partner", profileSlug: "michael-steed" },
+      { name: "Mark Maloney", role: "Co-Founder and Managing Director and Chief Compliance Officer", profileSlug: "mark-maloney" },
+      { name: "Christopher Steed", role: "Chief Investment Officer and Managing Director", profileSlug: "christopher-steed" },
+      { name: "Nazo Moosa", role: "Managing Director and European Manager", profileSlug: "nazo-moosa" },
+      { name: "Ed Albrigo", role: "Chief Operating Officer" }
+    ],
+    timeline: [
+      { year: "2001", event: "Paladin Capital Group is founded; the firm's About page gives 2001 as its founding year and Washington, DC as its headquarters." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Salt VC",
+    sectors: ["Pre-Seed", "Sector-Agnostic"],
+    signatureExit: null,
+    slug: "salt-vc",
+    website: "https://salt.vc",
+    short: "Salt VC",
+    founded: 2012,
+    hq: "San Francisco, CA and Lehi, UT",
+    aum: null,
+    thesis: "Salt VC is the firm formerly known as Peterson Ventures. It backs pre-seed and seed rounds and says on its own site that it often invests before the round, the deck or the company exists. It was founded in 2012 as the venture arm of the Salt Lake City investment platform Peterson Partners, and on 2 September 2026 it spun out as an independent company and renamed itself Salt VC, with Utah Business reporting that its team, funds and strategy were unchanged. It is led by three General Partners, Ben Capell, Ilana Stern and Taylor Jones, and lists offices in San Francisco and Lehi, Utah.",
+    leadership: [
+      { name: "Ben Capell", role: "General Partner", profileSlug: "ben-capell" },
+      { name: "Ilana Stern", role: "General Partner", profileSlug: "ilana-stern" },
+      { name: "Taylor Jones", role: "General Partner", profileSlug: "taylor-jones" }
+    ],
+    timeline: [
+      { year: "2012", event: "Peterson Ventures is founded as the venture strategy of Peterson Partners, the Salt Lake City investment platform established in 1995." },
+      { year: "2026", event: "On 2 September 2026 the firm spins out of Peterson Partners as an independent company and rebrands as Salt VC; petersonventures.com now redirects to salt.vc." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Portugal Ventures",
+    sectors: ["Technology", "Manufacturing", "Therapeutics", "Health Tech", "Travel"],
+    signatureExit: null,
+    slug: "portugal-ventures",
+    website: "https://www.portugalventures.pt",
+    short: "Portugal Ventures",
+    founded: 2012,
+    hq: null,
+    aum: null,
+    thesis: "Portugal Ventures is a Portuguese venture capital company that describes itself as \"the venture capital company of the Banco Portugues de Fomento Group\" (the firm's own words, in its 2025 leadership announcement). Its about page states that it was \"Created in June 2012\" out of the merger of three earlier Portuguese venture capital firms, AICEP Capital, InovCapital and Turismo Capital, that it operates as Portugal Ventures SCR, SA, that it is \"part of the public business sector, operating under the same terms as private companies\", and that it operates \"under the supervision of the Portuguese Securities Market Commission (CMVM)\". The same page gives share capital of \"EUR 40,412,650.00\", represented by 8,082,530 shares of EUR 5.00 par value; that is share capital and not assets under management. The team page states: \"With over 20 years' experience in managing venture capital investment, our investment teams are split into 4 sectors and monitor each of our portfolio companies, providing specialised industry know-how.\" The four investment teams shown on the team page are Digital & Technology, Manufacturing & Technology, Therapeutics & Health Tech and Tourism.",
+    leadership: [
+      { name: "Marco Neves", role: "Chief Executive Officer", profileSlug: "marco-neves" },
+      { name: "Joao Paulo Miranda", role: "Executive Vice-President", profileSlug: "joao-paulo-miranda" },
+      { name: "Carla Areias", role: "Executive Board Member", profileSlug: "carla-areias" }
+    ],
+    timeline: [
+      { year: "2012", event: "Portugal Ventures is created in June 2012 from the merger of AICEP Capital, InovCapital and Turismo Capital, per the firm's about page." },
+      { year: "2025", event: "The firm announces new leadership for the 2025-2027 triennium: Marco Neves as President (CEO), Joao Paulo Miranda as Vice-President and Carla Areias as Executive Board Member." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Primo Capital",
+    sectors: [],
+    signatureExit: null,
+    slug: "primo-capital",
+    website: "https://www.primo.capital",
+    short: "Primo Capital",
+    founded: null,
+    hq: "Milan, Italy",
+    aum: null,
+    thesis: "Primo Capital is an Italian asset manager whose legal name on its own site is \"Primo Capital SGR S.p.A.\". It was called Primo Ventures SGR until late 2024: the Italian trade outlet BeBeez reported on 6 November 2024 that \"Primo Ventures sgr, fondata e presieduta da Gianluca Dettori, uno dei veterani del venture capital italiano, si trasforma in Primo Capital sgr\", alongside the launch of its first private equity fund, Primo Health, which the same report put at a first closing of EUR 64 million against a EUR 120 million target with backing from the European Investment Fund, the Italian Investment Fund and the ENPAM Foundation. The firm's own homepage states \"Investment Strategies: 4\", \"Funds: 6\" and \"Committed Capital: 514M\"; committed capital is not the same as assets under management and has not been recorded as AUM. Its footer gives a registered office at Piazza Borromeo 14, Milan, share capital of \"Cap. Soc. EUR 500.000 i.v.\", tax code and VAT number 09168310960, Milan Chamber of Commerce R.E.A. number 2073779, and registration \"all'Albo dei gestori di FIA al n. 151\" (the Italian register of alternative investment fund managers). It also lists offices at Viale Majno 18 in Milan and Via del Consolato 6 in Rome.",
+    leadership: [
+      { name: "Gianluca Dettori", role: "Chairman & General Partner", profileSlug: "gianluca-dettori" },
+      { name: "Antonio Concolino", role: "CEO & General Partner", profileSlug: "antonio-concolino" },
+      { name: "Niccolo Sanarico", role: "CTO & General Partner", profileSlug: "niccolo-sanarico" }
+    ],
+    timeline: [
+      { year: "2024", event: "BeBeez reports on 6 November 2024 that Primo Ventures SGR, founded and chaired by Gianluca Dettori, becomes Primo Capital SGR and extends its activity into private equity." },
+      { year: "2024", event: "The firm's first private equity fund, Primo Health, reaches a first closing of EUR 64 million against a EUR 120 million target, backed by the European Investment Fund, the Italian Investment Fund and the ENPAM Foundation, per BeBeez." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Spacecadet",
+    sectors: ["Space", "AI", "Biotech", "Energy", "Robotics"],
+    signatureExit: null,
+    slug: "spacecadet-ventures",
+    website: "https://spacecadet.ventures",
+    short: "Spacecadet",
+    founded: null,
+    hq: "New York",
+    aum: null,
+    thesis: "Spacecadet is a hybrid of an early-stage venture fund and a marketing practice, branding itself as 'The Marketing VC' with the tagline 'We Bring Startups Stardom' (the firm's own claims). Its fund page describes a $15 million Pre/Seed fund; its mission page says it invests $100-500K at pre-seed and seed across space, AI, bio, energy and robotics, and that the money comes with marketing work, including 'story sprints that boost growth, hiring, raising, and exit value'. It also runs a 'Collective' membership model in which limited partners, founders, scouts and other contributors share 5% of carry. BetaKit described it in April 2022 as operating as both a venture fund and a marketing advisor. Its crew page separately lists backers including Marc Andreessen, Chris Dixon, Alexis Ohanian and Stewart Butterfield.",
+    leadership: [
+      { name: "Wisam Abdulla", role: "Co-Founder & GP", profileSlug: "wisam-abdulla" },
+      { name: "Daniel Eckler", role: "Co-Founder & CMO", profileSlug: "daniel-eckler" }
+    ],
+    timeline: [
+      { year: "2022", event: "BetaKit reports on 25 April 2022 that the New York-based Spacecadet, co-founded by Daniel Eckler and Wisam 'Wiz' Abdulla, has a $12.5 million USD fund." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Torch Capital",
+    sectors: ["Consumer", "Consumer Internet", "Artificial Intelligence", "Healthcare", "Marketplaces"],
+    signatureExit: null,
+    slug: "torch-capital",
+    website: "https://www.torchcapital.vc",
+    short: "Torch",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "Torch Capital is a venture firm founded by Jonathan Keidan, who remains its Founder and Managing Partner. Its site states it backs \"AI-powered companies that transform how consumers and businesses operate\" (the firm's own claim). The published team is small: four partner-level people, a head of finance, a principal, a senior associate, an associate and an executive assistant. The firm does not publish a founding year, a headquarters or any fund size on the pages examined; its portfolio page shows company logos including Zocdoc and Sweetgreen but no holding or ownership detail.",
+    leadership: [
+      { name: "Jonathan Keidan", role: "Founder & Managing Partner", profileSlug: "jonathan-keidan" },
+      { name: "Sam Jones", role: "Partner", profileSlug: "sam-jones" },
+      { name: "Katie Peykar", role: "Partner", profileSlug: "katie-peykar" },
+      { name: "Chris Harper", role: "Partner", profileSlug: "chris-harper" }
+    ],
+    timeline: [],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "Vision Plus Capital",
+    sectors: ["Technology", "Hard Tech", "Health Tech"],
+    signatureExit: null,
+    slug: "vision-plus-capital",
+    website: "https://www.visionpluscapital.com",
+    short: "Vision Plus",
+    founded: 2015,
+    hq: "Hangzhou, China",
+    aum: "Near US$2B (total AUM, per the firm's own English site, checked 2026; its Chinese site states 总管理规模超150亿人民币, over RMB 15 billion, which is consistent)",
+    thesis: "Vision Plus Capital, Chinese name 元璟资本, is a venture firm founded in 2015 by Alibaba co-founder Eddie Wu (吴泳铭), who is listed as Founder and Chairman. The firm states its focus areas as Digital Technology, Hard Tech, Health Tech and Cross-Border, says it is rooted in Asia and invests across Asia, the Americas and EMEA, and names LI Auto, Tuya, Advance Intelligence Group, Stori, UniUni, JST and Fourier Intelligence among its portfolio. It publishes near US$2 billion of total AUM in English and over RMB 15 billion (150亿) on its Chinese site. It runs offices in Hangzhou, Beijing and Shanghai.",
+    leadership: [
+      { name: "Eddie Wu", role: "Chairman/Founding Partner", profileSlug: "eddie-wu" },
+      { name: "Yiran Liu", role: "Managing Partner", profileSlug: "yiran-liu" },
+      { name: "James Wang", role: "Partner", profileSlug: "james-wang" },
+      { name: "Archer Chen", role: "Partner", profileSlug: "archer-chen" },
+      { name: "Terry Tian", role: "Partner", profileSlug: "terry-tian" },
+      { name: "Wang Kai", role: "Venture Partner", profileSlug: "wang-kai" },
+      { name: "Nic Zhang", role: "Operating Partner", profileSlug: "nic-zhang" }
+    ],
+    timeline: [
+      { year: "2015", event: "Eddie Wu, a co-founder of Alibaba Group, founds Vision Plus Capital (元璟资本), per the firm's own team page and Chinese homepage." }
+    ],
+    holdings: []
+  },
+  {
+    rank: null,
+    name: "XTX Ventures",
+    sectors: ["Artificial Intelligence", "Machine Learning", "Enterprise Software", "Fintech", "Healthcare", "Infrastructure"],
+    signatureExit: null,
+    slug: "xtx-ventures",
+    website: "https://www.xtxmarkets.com/ventures/",
+    short: "XTX Ventures",
+    founded: null,
+    hq: null,
+    aum: null,
+    thesis: "XTX Ventures is the venture investment arm of XTX Markets, the algorithmic trading firm, and not a standalone venture partnership; it has no separate website and is published as a section of xtxmarkets.com. Its own page says it looks for \"technical founders who combine deep AI and machine learning expertise with a clear vision\" and that it concentrates investment \"between initial product validation and scale\" (the firm's own claims), across areas it lists as \"infrastructure to healthcare, enterprise software to financial markets\". The page names no investment team, no fund size and no portfolio companies. Any capital, headcount, office or revenue figure published for XTX Markets belongs to the parent trading business and is deliberately not recorded in this firm's fields.",
+    leadership: [],
+    timeline: [
+      { year: "2018", event: "Trade publication FX News Group reports that XTX Markets \"appointed former Deutsche Bank corporate strategy executive and LSE graduate Ekaterina Holt as Head of XTX Ventures in 2018, and started making investments\". This is a secondary source and was not corroborated on a first-party page." }
+    ],
+    holdings: []
   }
 ];
